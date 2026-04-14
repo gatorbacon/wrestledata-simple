@@ -13,6 +13,11 @@ def parse_args():
     """Parse command line arguments."""
     parser = argparse.ArgumentParser(description='Apply name aliases to wrestler data.')
     parser.add_argument('season', type=str, help='Season year (e.g. 2015)')
+    parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
+                        help='League type: ncaa (default) or hs')
+    parser.add_argument('-state', type=str, help='State code (required when league=hs, currently only KY supported)')
+    parser.add_argument('-gender', type=str, choices=['boys', 'girls'],
+                        help='Gender: boys or girls (required when league=hs)')
     return parser.parse_args()
 
 def load_aliases(season):
@@ -121,11 +126,30 @@ def apply_aliases_to_file(file_path, aliases, output_dir):
         print(f"Error processing {file_path}: {e}")
         return 0
 
-def process_season(season):
+def process_season(season, league='ncaa', state=None, gender=None):
     """Process all team files for a season."""
-    # Setup directories
-    in_dir = os.path.join("mt", "data", season)
-    out_dir = os.path.join("mt", "data_alias", season)
+    # Validate HS parameters
+    if league == 'hs':
+        if not state:
+            raise ValueError("-state is required when -league=hs")
+        state_upper = state.upper()
+        if state_upper != 'KY':
+            raise ValueError(f"Only KY is currently supported for HS. Got: {state}")
+        if not gender:
+            raise ValueError("-gender is required when -league=hs")
+        if gender not in ['boys', 'girls']:
+            raise ValueError(f"-gender must be 'boys' or 'girls'. Got: {gender}")
+    
+    # Setup directories based on league type
+    if league == 'hs':
+        # HS data directories: mt/data/hs_ky_boys/{season}/ or mt/data/hs_ky_girls/{season}/
+        in_dir = os.path.join("mt", "data", f"hs_{state_upper.lower()}_{gender}", str(season))
+        out_dir = os.path.join("mt", "data_alias", f"hs_{state_upper.lower()}_{gender}", str(season))
+    else:  # ncaa
+        # NCAA data directories: mt/data/{season}/ and mt/data_alias/{season}/
+        in_dir = os.path.join("mt", "data", season)
+        out_dir = os.path.join("mt", "data_alias", season)
+    
     os.makedirs(out_dir, exist_ok=True)
     
     # Load aliases for this season
@@ -154,8 +178,9 @@ def process_season(season):
 
 def main():
     args = parse_args()
-    print(f"Starting name alias processing for season {args.season}")
-    process_season(args.season)
+    league_label = f"{args.league.upper()}" if args.league == 'ncaa' else f"{args.state} HS {args.gender.capitalize()}" if args.league == 'hs' else args.league
+    print(f"Starting name alias processing for season {args.season} ({league_label})")
+    process_season(args.season, league=args.league, state=args.state, gender=args.gender)
     
 if __name__ == "__main__":
     main() 

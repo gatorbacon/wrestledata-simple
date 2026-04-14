@@ -1,0 +1,20 @@
+---
+globs: *.html
+alwaysApply: false
+---
+ANALYTICS STANDARD (DO NOT DEVIATE)
+
+We use Google Analytics 4 with Measurement ID: G-LF2J4B0JKW.
+
+Analytics must be loaded via a shared file:
+- frontend/js/analytics.js
+
+That file contains the GA4 gtag snippet.
+All HTML pages MUST include:
+<script src="/js/analytics.js"></script>
+
+No page should embed GA inline directly.
+No future page should omit this script.
+
+Any new HTML page added to the site must include analytics.js.
+This ensures analytics is automatically applied to all current and future pages.

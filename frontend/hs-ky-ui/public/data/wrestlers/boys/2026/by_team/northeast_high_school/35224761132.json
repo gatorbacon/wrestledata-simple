@@ -1,0 +1,80 @@
+{
+  "wrestler_id": "35224761132",
+  "name": "Shamar Jones",
+  "team": "Northeast High School",
+  "team_slug": "northeast_high_school",
+  "team_rank": null,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35521775132",
+      "opponent_rank": 98,
+      "opponent_name": "Enrique Messer Cruz",
+      "method": "MD 19-11"
+    },
+    "worst_loss": {
+      "opponent_id": "35049061132",
+      "opponent_rank": 81,
+      "opponent_name": "Idris Qamar",
+      "method": "Fall 1:10"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35521775132",
+      "opponent_name": "Enrique Messer Cruz",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 79,
+      "opponent_weight": 157,
+      "opponent_rank": 98,
+      "weight_class": "165",
+      "result": "W",
+      "method": "MD",
+      "score": "19-11",
+      "duration": "7:00",
+      "event": "Coyote Classic Wrestling Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35049061132",
+      "opponent_name": "Idris Qamar",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": 87,
+      "opponent_weight": 157,
+      "opponent_rank": 81,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:10",
+      "event": "Coyote Classic Wrestling Invitational"
+    }
+  ],
+  "profile_generated_at": "2026-04-04"
+}

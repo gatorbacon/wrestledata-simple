@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e3a5f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c5282;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bgGradient)"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1080" height="140" fill="url(#headerGradient)"/>
+  <text x="540" y="60" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle" inkscape:label="title">RANKED MIDDLE SCHOOLERS</text>
+  <text x="540" y="100" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#ffd700" text-anchor="middle" inkscape:label="weightclass">AT 106 POUNDS</text>
+  <text x="540" y="130" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" inkscape:label="date">01.15.2026</text>
+  
+  <!-- List area -->
+  <g inkscape:label="listArea">
+    <!-- Row 1 -->
+    <rect x="40" y="180" width="1000" height="36" fill="#ffffff" opacity="0.7" rx="4"/>
+    <text x="60" y="205" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e3a5f" inkscape:label="rank1">1</text>
+    <text x="120" y="205" font-family="Arial, sans-serif" font-size="20" fill="#2c3e50" inkscape:label="name1">John Smith (7)</text>
+    <text x="700" y="205" font-family="Arial, sans-serif" font-size="18" fill="#5a6c7d" inkscape:label="team1">Team Name</text>
+    
+    <!-- Row 2 -->
+    <rect x="40" y="230" width="1000" height="36" fill="#ffffff" opacity="0.7" rx="4"/>
+    <text x="60" y="255" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e3a5f" inkscape:label="rank2">2</text>
+    <text x="120" y="255" font-family="Arial, sans-serif" font-size="20" fill="#2c3e50" inkscape:label="name2">Jane Doe (8)</text>
+    <text x="700" y="255" font-family="Arial, sans-serif" font-size="18" fill="#5a6c7d" inkscape:label="team2">Team Name</text>
+    
+    <!-- Row 3 -->
+    <rect x="40" y="280" width="1000" height="36" fill="#ffffff" opacity="0.7" rx="4"/>
+    <text x="60" y="305" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e3a5f" inkscape:label="rank3">3</text>
+    <text x="120" y="305" font-family="Arial, sans-serif" font-size="20" fill="#2c3e50" inkscape:label="name3">Bob Johnson (7)</text>
+    <text x="700" y="305" font-family="Arial, sans-serif" font-size="18" fill="#5a6c7d" inkscape:label="team3">Team Name</text>
+    
+    <!-- Row 4 -->
+    <rect x="40" y="330" width="1000" height="36" fill="#ffffff" opacity="0.7" rx="4"/>
+    <text x="60" y="355" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e3a5f" inkscape:label="rank4">4</text>
+    <text x="120" y="355" font-family="Arial, sans-serif" font-size="20" fill="#2c3e50" inkscape:label="name4">Alice Brown (8)</text>
+    <text x="700" y="355" font-family="Arial, sans-serif" font-size="18" fill="#5a6c7d" inkscape:label="team4">Team Name</text>
+    
+    <!-- Row 5 -->
+    <rect x="40" y="380" width="1000" height="36" fill="#ffffff" opacity="0.7" rx="4"/>
+    <text x="60" y="405" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e3a5f" inkscape:label="rank5">5</text>
+    <text x="120" y="405" font-family="Arial, sans-serif" font-size="20" fill="#2c3e50" inkscape:label="name5">Charlie Wilson (7)</text>
+    <text x="700" y="405" font-family="Arial, sans-serif" font-size="18" fill="#5a6c7d" inkscape:label="team5">Team Name</text>
+    
+    <!-- Row 6 -->
+    <rect x="40" y="430" width="1000" height="36" fill="#ffffff" opacity="0.7" rx="4"/>
+    <text x="60" y="455" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e3a5f" inkscape:label="rank6">6</text>
+    <text x="120" y="455" font-family="Arial, sans-serif" font-size="20" fill="#2c3e50" inkscape:label="name6">Diana Lee (8)</text>
+    <text x="700" y="455" font-family="Arial, sans-serif" font-size="18" fill="#5a6c7d" inkscape:label="team6">Team Name</text>
+    
+    <!-- Row 7 -->
+    <rect x="40" y="480" width="1000" height="36" fill="#ffffff" opacity="0.7" rx="4"/>
+    <text x="60" y="505" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e3a5f" inkscape:label="rank7">7</text>
+    <text x="120" y="505" font-family="Arial, sans-serif" font-size="20" fill="#2c3e50" inkscape:label="name7">Edward Davis (7)</text>
+    <text x="700" y="505" font-family="Arial, sans-serif" font-size="18" fill="#5a6c7d" inkscape:label="team7">Team Name</text>
+    
+    <!-- Row 8 -->
+    <rect x="40" y="530" width="1000" height="36" fill="#ffffff" opacity="0.7" rx="4"/>
+    <text x="60" y="555" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e3a5f" inkscape:label="rank8">8</text>
+    <text x="120" y="555" font-family="Arial, sans-serif" font-size="20" fill="#2c3e50" inkscape:label="name8">Fiona Miller (8)</text>
+    <text x="700" y="555" font-family="Arial, sans-serif" font-size="18" fill="#5a6c7d" inkscape:label="team8">Team Name</text>
+    
+    <!-- Row 9 -->
+    <rect x="40" y="580" width="1000" height="36" fill="#ffffff" opacity="0.7" rx="4"/>
+    <text x="60" y="605" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e3a5f" inkscape:label="rank9">9</text>
+    <text x="120" y="605" font-family="Arial, sans-serif" font-size="20" fill="#2c3e50" inkscape:label="name9">George Taylor (7)</text>
+    <text x="700" y="605" font-family="Arial, sans-serif" font-size="18" fill="#5a6c7d" inkscape:label="team9">Team Name</text>
+    
+    <!-- Row 10 -->
+    <rect x="40" y="630" width="1000" height="36" fill="#ffffff" opacity="0.7" rx="4"/>
+    <text x="60" y="655" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e3a5f" inkscape:label="rank10">10</text>
+    <text x="120" y="655" font-family="Arial, sans-serif" font-size="20" fill="#2c3e50" inkscape:label="name10">Hannah White (8)</text>
+    <text x="700" y="655" font-family="Arial, sans-serif" font-size="18" fill="#5a6c7d" inkscape:label="team10">Team Name</text>
+    
+    <!-- Row 11 -->
+    <rect x="40" y="680" width="1000" height="36" fill="#ffffff" opacity="0.7" rx="4"/>
+    <text x="60" y="705" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e3a5f" inkscape:label="rank11">11</text>
+    <text x="120" y="705" font-family="Arial, sans-serif" font-size="20" fill="#2c3e50" inkscape:label="name11">Ian Harris (7)</text>
+    <text x="700" y="705" font-family="Arial, sans-serif" font-size="18" fill="#5a6c7d" inkscape:label="team11">Team Name</text>
+    
+    <!-- Row 12 -->
+    <rect x="40" y="730" width="1000" height="36" fill="#ffffff" opacity="0.7" rx="4"/>
+    <text x="60" y="755" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e3a5f" inkscape:label="rank12">12</text>
+    <text x="120" y="755" font-family="Arial, sans-serif" font-size="20" fill="#2c3e50" inkscape:label="name12">Julia Clark (8)</text>
+    <text x="700" y="755" font-family="Arial, sans-serif" font-size="18" fill="#5a6c7d" inkscape:label="team12">Team Name</text>
+    
+    <!-- Row 13 -->
+    <rect x="40" y="780" width="1000" height="36" fill="#ffffff" opacity="0.7" rx="4"/>
+    <text x="60" y="805" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e3a5f" inkscape:label="rank13">13</text>
+    <text x="120" y="805" font-family="Arial, sans-serif" font-size="20" fill="#2c3e50" inkscape:label="name13">Kevin Lewis (7)</text>
+    <text x="700" y="805" font-family="Arial, sans-serif" font-size="18" fill="#5a6c7d" inkscape:label="team13">Team Name</text>
+    
+    <!-- Row 14 -->
+    <rect x="40" y="830" width="1000" height="36" fill="#ffffff" opacity="0.7" rx="4"/>
+    <text x="60" y="855" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e3a5f" inkscape:label="rank14">14</text>
+    <text x="120" y="855" font-family="Arial, sans-serif" font-size="20" fill="#2c3e50" inkscape:label="name14">Laura Walker (8)</text>
+    <text x="700" y="855" font-family="Arial, sans-serif" font-size="18" fill="#5a6c7d" inkscape:label="team14">Team Name</text>
+    
+    <!-- Row 15 -->
+    <rect x="40" y="880" width="1000" height="36" fill="#ffffff" opacity="0.7" rx="4"/>
+    <text x="60" y="905" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e3a5f" inkscape:label="rank15">15</text>
+    <text x="120" y="905" font-family="Arial, sans-serif" font-size="20" fill="#2c3e50" inkscape:label="name15">Michael Young (7)</text>
+    <text x="700" y="905" font-family="Arial, sans-serif" font-size="18" fill="#5a6c7d" inkscape:label="team15">Team Name</text>
+    
+    <!-- Row 16 -->
+    <rect x="40" y="930" width="1000" height="36" fill="#ffffff" opacity="0.7" rx="4"/>
+    <text x="60" y="955" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e3a5f" inkscape:label="rank16">16</text>
+    <text x="120" y="955" font-family="Arial, sans-serif" font-size="20" fill="#2c3e50" inkscape:label="name16">Nancy Hall (8)</text>
+    <text x="700" y="955" font-family="Arial, sans-serif" font-size="18" fill="#5a6c7d" inkscape:label="team16">Team Name</text>
+    
+    <!-- Row 17 -->
+    <rect x="40" y="980" width="1000" height="36" fill="#ffffff" opacity="0.7" rx="4"/>
+    <text x="60" y="1005" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e3a5f" inkscape:label="rank17">17</text>
+    <text x="120" y="1005" font-family="Arial, sans-serif" font-size="20" fill="#2c3e50" inkscape:label="name17">Oliver Allen (7)</text>
+    <text x="700" y="1005" font-family="Arial, sans-serif" font-size="18" fill="#5a6c7d" inkscape:label="team17">Team Name</text>
+    
+    <!-- Row 18 -->
+    <rect x="40" y="1030" width="1000" height="36" fill="#ffffff" opacity="0.7" rx="4"/>
+    <text x="60" y="1055" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e3a5f" inkscape:label="rank18">18</text>
+    <text x="120" y="1055" font-family="Arial, sans-serif" font-size="20" fill="#2c3e50" inkscape:label="name18">Patricia King (8)</text>
+    <text x="700" y="1055" font-family="Arial, sans-serif" font-size="18" fill="#5a6c7d" inkscape:label="team18">Team Name</text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="540" y="1070" font-family="Arial, sans-serif" font-size="14" fill="#5a6c7d" text-anchor="middle" inkscape:label="footer">@ky.wrestling.ranks</text>
+</svg>

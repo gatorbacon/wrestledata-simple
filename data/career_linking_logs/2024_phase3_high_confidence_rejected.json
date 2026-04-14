@@ -1,0 +1,91 @@
+{
+  "phase": "2024_phase3_high_confidence",
+  "rejected": [
+    {
+      "wrestler_2024": {
+        "name": "LJ Braunm",
+        "season_wrestler_id": "24928320132",
+        "team": "Great Crossing",
+        "grade": 10
+      },
+      "career_id": "career_001050",
+      "rule": "confidence_score",
+      "confidence": 80,
+      "reasons": [
+        "same_team",
+        "exact_last_name",
+        "plausible_grade",
+        "similar_weight"
+      ]
+    },
+    {
+      "wrestler_2024": {
+        "name": "William Braunm",
+        "season_wrestler_id": "24928252132",
+        "team": "Great Crossing",
+        "grade": 10
+      },
+      "career_id": "career_001050",
+      "rule": "confidence_score",
+      "confidence": 80,
+      "reasons": [
+        "same_team",
+        "exact_last_name",
+        "plausible_grade",
+        "similar_weight"
+      ]
+    },
+    {
+      "wrestler_2024": {
+        "name": "Treson English",
+        "season_wrestler_id": "24773819132",
+        "team": "Moore",
+        "grade": 8
+      },
+      "career_id": "career_001785",
+      "rule": "confidence_score",
+      "confidence": 90,
+      "reasons": [
+        "same_team",
+        "exact_last_name",
+        "fuzzy_name_match",
+        "plausible_grade",
+        "similar_weight"
+      ]
+    },
+    {
+      "wrestler_2024": {
+        "name": "Trey Hall",
+        "season_wrestler_id": "25293946132",
+        "team": "Trinity (Louisville)",
+        "grade": 10
+      },
+      "career_id": "career_002782",
+      "rule": "confidence_score",
+      "confidence": 80,
+      "reasons": [
+        "same_team",
+        "exact_last_name",
+        "plausible_grade",
+        "similar_weight"
+      ]
+    },
+    {
+      "wrestler_2024": {
+        "name": "Chase Hamilton",
+        "season_wrestler_id": "24661830132",
+        "team": "Western Hills",
+        "grade": 9
+      },
+      "career_id": "career_002985",
+      "rule": "confidence_score",
+      "confidence": 80,
+      "reasons": [
+        "same_team",
+        "exact_last_name",
+        "plausible_grade",
+        "similar_weight"
+      ]
+    }
+  ]
+}

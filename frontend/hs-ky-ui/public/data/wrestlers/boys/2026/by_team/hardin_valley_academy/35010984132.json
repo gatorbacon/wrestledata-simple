@@ -1,0 +1,80 @@
+{
+  "wrestler_id": "35010984132",
+  "name": "Jacob Barber",
+  "team": "Hardin Valley Academy",
+  "team_slug": "hardin_valley_academy",
+  "team_rank": null,
+  "weight_class": 120,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35433273132",
+      "opponent_rank": 77,
+      "opponent_name": "Derrick Watkins",
+      "method": "Fall 0:35"
+    },
+    "worst_loss": {
+      "opponent_id": "35225528132",
+      "opponent_rank": 80,
+      "opponent_name": "Joshua Klose",
+      "method": "MD 10-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35225528132",
+      "opponent_name": "Joshua Klose",
+      "opponent_team": "Frederick Douglass",
+      "opponent_team_rank": 83,
+      "opponent_weight": 126,
+      "opponent_rank": 80,
+      "weight_class": "120",
+      "result": "L",
+      "method": "MD",
+      "score": "10-2",
+      "duration": "7:00",
+      "event": "vs. Hardin Valley Academy"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35433273132",
+      "opponent_name": "Derrick Watkins",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": 99,
+      "opponent_weight": 113,
+      "opponent_rank": 77,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:35",
+      "event": "Fandetti-Richardson Brawl 2026-Boys"
+    }
+  ],
+  "profile_generated_at": "2026-04-04"
+}

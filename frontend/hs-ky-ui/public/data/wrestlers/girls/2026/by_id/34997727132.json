@@ -1,0 +1,95 @@
+{
+  "wrestler_id": "34997727132",
+  "name": "Cathlynn Smith",
+  "team": "Franklin County",
+  "team_slug": "franklin_county",
+  "team_rank": null,
+  "weight_class": 152,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35448802132",
+      "opponent_rank": 13,
+      "opponent_name": "Chelsea Pelayo",
+      "method": "TF 20-4 4:19"
+    },
+    "worst_loss": {
+      "opponent_id": "35613108132",
+      "opponent_rank": 1,
+      "opponent_name": "Emma Hood",
+      "method": "Dec 6-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35448802132",
+      "opponent_name": "Chelsea Pelayo",
+      "opponent_team": "Danville",
+      "opponent_team_rank": 35,
+      "opponent_weight": 152,
+      "opponent_rank": 13,
+      "weight_class": "152",
+      "result": "W",
+      "method": "TF",
+      "score": "20-4",
+      "duration": "4:19",
+      "event": "MUSTANG CLASSIC"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35333687132",
+      "opponent_name": "Analiah Parga Lujan",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": null,
+      "opponent_weight": 152,
+      "opponent_rank": 44,
+      "weight_class": "152",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "MUSTANG CLASSIC"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35613108132",
+      "opponent_name": "Emma Hood",
+      "opponent_team": "Highlands",
+      "opponent_team_rank": null,
+      "opponent_weight": 152,
+      "opponent_rank": 1,
+      "weight_class": "152",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-0",
+      "duration": "7:00",
+      "event": "MUSTANG CLASSIC"
+    }
+  ],
+  "profile_generated_at": "2026-04-05"
+}

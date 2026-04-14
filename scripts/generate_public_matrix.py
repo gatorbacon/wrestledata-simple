@@ -252,9 +252,14 @@ def determine_relationship_type(
     return None
 
 
-def load_relationships(season: int, weight: int, relationships_dir: str = "mt/rankings_data") -> Dict:
+def load_relationships(season: int, weight: int, relationships_dir: str = "mt/rankings_data", league: str = 'ncaa', state: str = None, gender: str = None) -> Dict:
     """Load relationships JSON file."""
-    rel_file = Path(relationships_dir) / str(season) / f"relationships_{weight}.json"
+    if league == 'hs':
+        # For HS, relationships_dir already includes the full path (e.g., mt/rankings_data/hs_ky_boys/2026)
+        # Just add the filename
+        rel_file = Path(relationships_dir) / f"relationships_{weight}.json"
+    else:
+        rel_file = Path(relationships_dir) / str(season) / f"relationships_{weight}.json"
     
     if not rel_file.exists():
         raise FileNotFoundError(f"Relationships file not found: {rel_file}")
@@ -263,10 +268,22 @@ def load_relationships(season: int, weight: int, relationships_dir: str = "mt/ra
         return json.load(f)
 
 
-def load_rankings(season: int, weight: int, data_dir: str = "mt/rankings_data", starters_only: bool = False) -> Dict:
+def load_rankings(season: int, weight: int, data_dir: str = "mt/rankings_data", starters_only: bool = False, league: str = 'ncaa', state: str = None, gender: str = None) -> Dict:
     """Load rankings JSON file."""
-    filename = f"rankings_starters_{weight}.json" if starters_only else f"rankings_{weight}.json"
-    rankings_file = Path(data_dir) / str(season) / filename
+    if league == 'hs':
+        # For HS, data_dir already includes gender (e.g., frontend/hs-ky-ui/public/data/rankings/boys)
+        # Just add season and filename
+        if starters_only:
+            filename = f"rankings_starters_{weight}.json"
+            rankings_file = Path(data_dir) / str(season) / filename
+        else:
+            # Try regular rankings first, fall back to starters if not found
+            rankings_file = Path(data_dir) / str(season) / f"rankings_{weight}.json"
+            if not rankings_file.exists():
+                rankings_file = Path(data_dir) / str(season) / f"rankings_starters_{weight}.json"
+    else:
+        filename = f"rankings_starters_{weight}.json" if starters_only else f"rankings_{weight}.json"
+        rankings_file = Path(data_dir) / str(season) / filename
     
     if not rankings_file.exists():
         raise FileNotFoundError(f"Rankings file not found: {rankings_file}")
@@ -406,7 +423,10 @@ def generate_public_matrix(
     rankings_dir: str = "frontend/wrestledata-ui/public/data/rankings",
     relationships_dir: str = "mt/rankings_data",
     output_dir: str = "frontend/wrestledata-ui/public/data/matrix",
-    starters_only: bool = False
+    starters_only: bool = False,
+    league: str = 'ncaa',
+    state: str = None,
+    gender: str = None
 ) -> Dict:
     """
     Generate public matrix JSON for a single weight class.
@@ -422,12 +442,23 @@ def generate_public_matrix(
     Returns: The matrix data dictionary
     """
     # Load data
-    relationships_data = load_relationships(season, weight, relationships_dir)
-    rankings_data = load_rankings(season, weight, rankings_dir, starters_only)
+    relationships_data = load_relationships(season, weight, relationships_dir, league=league, state=state, gender=gender)
+    rankings_data = load_rankings(season, weight, rankings_dir, starters_only, league=league, state=state, gender=gender)
+
+    # Resolve injured reserve (IR) status for HS
+    ir_active_ids = set()
+    if league == 'hs' and gender:
+        from rankings.ir_utils import resolve_active_ir
+        wrestlers_by_id = relationships_data.get('wrestlers', {})
+        ir_active_ids = resolve_active_ir(season, gender, wrestlers_by_id)
     
     # Build wrestler list (ordered by rank)
     # If starters_only, exclude all non-starters
     wrestler_list = build_wrestler_list(rankings_data, relationships_data, starters_only)
+
+    # Add injured reserve flag for HS
+    for w in wrestler_list:
+        w['is_injured_reserve'] = w['id'] in ir_active_ids
     
     # Build matrix
     matrix = build_matrix(relationships_data, wrestler_list)
@@ -449,10 +480,17 @@ def save_public_matrix(
     season: int,
     weight: int,
     output_dir: str = "frontend/wrestledata-ui/public/data/matrix",
-    starters_only: bool = False
+    starters_only: bool = False,
+    league: str = 'ncaa',
+    gender: str = None
 ) -> Path:
     """Save public matrix JSON to file."""
-    output_path = Path(output_dir) / str(season)
+    if league == 'hs':
+        # For HS, output_dir already includes gender (e.g., frontend/hs-ky-ui/public/data/matrix/boys)
+        # Just add season
+        output_path = Path(output_dir) / str(season)
+    else:
+        output_path = Path(output_dir) / str(season)
     output_path.mkdir(parents=True, exist_ok=True)
     
     # Use weight as filename: <weight>.json
@@ -500,49 +538,134 @@ def main():
         action='store_true',
         help='Use rankings_starters files instead of rankings files (generates starters-only matrix)'
     )
+    parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
+                        help='League type: ncaa (default) or hs')
+    parser.add_argument('-state', type=str, help='State code (required when league=hs, currently only KY supported)')
+    parser.add_argument('-gender', type=str, choices=['boys', 'girls'],
+                        help='Gender: boys or girls (optional when league=hs, defaults to processing both)')
     
     args = parser.parse_args()
     
-    weights = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
-    
-    if args.weight:
-        weights = [args.weight]
-    
-    mode_str = "starters-only" if args.starters_only else "all wrestlers"
-    print(f"Generating public matrices for season {args.season} ({mode_str})...")
-    
-    for weight in weights:
-        try:
-            print(f"\nProcessing weight {weight}...")
-            matrix_data = generate_public_matrix(
-                args.season,
-                weight,
-                args.rankings_dir,
-                args.relationships_dir,
-                args.output_dir,
-                args.starters_only
-            )
+    # For HS, process both genders if gender not specified
+    if args.league == 'hs':
+        if not args.state:
+            raise ValueError("For HS league, --state is required.")
+        
+        genders_to_process = [args.gender] if args.gender else ['boys', 'girls']
+        
+        for gender in genders_to_process:
+            print(f"\n{'=' * 80}")
+            print(f"Generating public matrices for season {args.season} ({args.league.upper()} {args.state} {gender})...")
+            print(f"{'=' * 80}\n")
             
-            output_file = save_public_matrix(
-                matrix_data,
-                args.season,
-                weight,
-                args.output_dir,
-                args.starters_only
-            )
+            if gender == 'boys':
+                weights = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
+            else:
+                weights = [100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235]
             
-            wrestler_count = len(matrix_data['wrestlers'])
-            matrix_cells = sum(len(row) for row in matrix_data['matrix'].values())
+            if args.weight:
+                weights = [args.weight]
             
-            print(f"  ✓ Saved to {output_file}")
-            print(f"    {wrestler_count} wrestlers, {matrix_cells} matrix cells")
+            # Setup HS-specific paths (use defaults unless explicitly overridden)
+            # Check if user explicitly provided these args by comparing to defaults
+            if args.rankings_dir != 'frontend/wrestledata-ui/public/data/rankings':
+                rankings_dir = Path(args.rankings_dir)
+            else:
+                rankings_dir = Path("frontend/hs-ky-ui/public/data/rankings") / gender
             
-        except FileNotFoundError as e:
-            print(f"  ✗ Skipping {weight}: {e}")
-        except Exception as e:
-            print(f"  ✗ Error processing {weight}: {e}")
-            import traceback
-            traceback.print_exc()
+            if args.relationships_dir != 'mt/rankings_data':
+                relationships_dir = Path(args.relationships_dir)
+            else:
+                relationships_dir = Path("mt/rankings_data") / f"hs_{args.state.lower()}_{gender}" / str(args.season)
+            
+            if args.output_dir != 'frontend/wrestledata-ui/public/data/matrix':
+                output_dir = Path(args.output_dir)
+            else:
+                output_dir = Path("frontend/hs-ky-ui/public/data/matrix") / gender
+            
+            mode_str = "starters-only" if args.starters_only else "all wrestlers"
+            print(f"Generating public matrices for season {args.season} ({mode_str})...")
+            
+            for weight in weights:
+                try:
+                    print(f"\nProcessing weight {weight}...")
+                    matrix_data = generate_public_matrix(
+                        args.season,
+                        weight,
+                        str(rankings_dir),
+                        str(relationships_dir),
+                        str(output_dir),
+                        args.starters_only,
+                        league=args.league,
+                        state=args.state,
+                        gender=gender
+                    )
+                    
+                    output_file = save_public_matrix(
+                        matrix_data,
+                        args.season,
+                        weight,
+                        str(output_dir),
+                        args.starters_only,
+                        league=args.league,
+                        gender=gender
+                    )
+                    
+                    wrestler_count = len(matrix_data['wrestlers'])
+                    matrix_cells = sum(len(row) for row in matrix_data['matrix'].values())
+                    
+                    print(f"  ✓ Saved to {output_file}")
+                    print(f"    {wrestler_count} wrestlers, {matrix_cells} matrix cells")
+                    
+                except FileNotFoundError as e:
+                    print(f"  ✗ Skipping {weight}: {e}")
+                except Exception as e:
+                    print(f"  ✗ Error processing {weight}: {e}")
+                    import traceback
+                    traceback.print_exc()
+    else:  # ncaa
+        weights = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
+        
+        if args.weight:
+            weights = [args.weight]
+        
+        mode_str = "starters-only" if args.starters_only else "all wrestlers"
+        print(f"Generating public matrices for season {args.season} ({mode_str})...")
+        
+        for weight in weights:
+            try:
+                print(f"\nProcessing weight {weight}...")
+                matrix_data = generate_public_matrix(
+                    args.season,
+                    weight,
+                    args.rankings_dir,
+                    args.relationships_dir,
+                    args.output_dir,
+                    args.starters_only,
+                    league=args.league
+                )
+                
+                output_file = save_public_matrix(
+                    matrix_data,
+                    args.season,
+                    weight,
+                    args.output_dir,
+                    args.starters_only,
+                    league=args.league
+                )
+                
+                wrestler_count = len(matrix_data['wrestlers'])
+                matrix_cells = sum(len(row) for row in matrix_data['matrix'].values())
+                
+                print(f"  ✓ Saved to {output_file}")
+                print(f"    {wrestler_count} wrestlers, {matrix_cells} matrix cells")
+                
+            except FileNotFoundError as e:
+                print(f"  ✗ Skipping {weight}: {e}")
+            except Exception as e:
+                print(f"  ✗ Error processing {weight}: {e}")
+                import traceback
+                traceback.print_exc()
     
     print("\n✓ Public matrix generation complete!")
 

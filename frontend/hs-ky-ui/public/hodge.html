@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <title>Hodge Trophy Watch — MatSavant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+  <script src="/js/analytics.js"></script>
+</head>
+<body>
+  <script src="/header.js"></script>
+  <div class="page-container">
+    <header class="header">
+      <h1>Hodge Trophy Watch</h1>
+      <div class="header-subline" id="season-info">Season 2026</div>
+      <div class="header-explainer" id="description"></div>
+    </header>
+
+    <section class="section">
+      <div class="table-wrapper">
+        <table id="hodge-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>Wt</th>
+              <th>Record<br/>(W–L)</th>
+              <th>Record<br/>Score</th>
+              <th>Ranked<br/>Wins</th>
+              <th>Quality<br/>Score</th>
+              <th>Avg<br/>TP</th>
+              <th>Dominance<br/>Score</th>
+              <th>Pin<br/>%</th>
+              <th>Pin<br/>Score</th>
+              <th>Hodge<br/>Score</th>
+            </tr>
+          </thead>
+          <tbody id="eligible-tbody"></tbody>
+        </table>
+      </div>
+      
+      <h2 style="margin-top: 2em; margin-bottom: 0.5em; font-size: 1rem; color: var(--muted);">Not Yet Eligible</h2>
+      <div class="table-wrapper">
+        <table id="hodge-table-ineligible">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>Wt</th>
+              <th>Record<br/>(W–L)</th>
+              <th>Record<br/>Score</th>
+              <th>Ranked<br/>Wins</th>
+              <th>Quality<br/>Score</th>
+              <th>Avg<br/>TP</th>
+              <th>Dominance<br/>Score</th>
+              <th>Pin<br/>%</th>
+              <th>Pin<br/>Score</th>
+              <th>Hodge<br/>Score</th>
+            </tr>
+          </thead>
+          <tbody id="ineligible-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="/hodge.js"></script>
+  <script src="/footer.js"></script>
+</body>
+</html>
+

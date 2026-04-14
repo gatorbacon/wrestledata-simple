@@ -12,6 +12,11 @@ This script generates:
 IMPORTANT: This script uses starter-only rankings (rankings_starters_*.json)
 for determining opponent ranks. Run build_starter_rankings.py first.
 
+Pipeline order (for hybrid current_rank on wrestler + team pages):
+  calculate_elo_ratings.py → build_wrestler_profiles.py → build_team_profiles.py
+Then optionally: create_rankings_release.py --archive, build_team_metrics.py,
+generate_search_index.py, build_leaderboards.py.
+
 Usage:
     python scripts/rankings/build_starter_rankings.py -season 2026
     python scripts/rankings/build_wrestler_profiles.py -season 2026
@@ -22,6 +27,7 @@ import json
 import re
 import shutil
 from collections import defaultdict
+from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional, Set, Tuple
 
@@ -33,22 +39,113 @@ from matches_and_diff_by_rank import estimate_match_duration_seconds
 from scoringbyrank import _parse_score_from_result
 
 
-def _load_starter_rank_map(season: int, data_dir: str = "mt/rankings_data") -> Dict[str, int]:
+def _load_full_rank_map(season: int, data_dir: str = "mt/rankings_data", league: str = 'ncaa', gender: str = None) -> Dict[str, int]:
+    """
+    Load FULL rankings (all ranked wrestlers, not just starters) and create a map from wrestler_id -> best (lowest) rank.
+    
+    Uses rankings_*.json files from mt/rankings_data which contain ALL ranked wrestlers.
+    This ensures non-starters also get their current_rank set correctly.
+    
+    For HS: Loads from mt/rankings_data/hs_ky_{gender}/{season}/rankings_*.json
+    For NCAA: Loads from mt/rankings_data/{season}/rankings_*.json
+    Falls back to starter-only rankings if full rankings are not available.
+    """
+    # Determine rankings directory based on league
+    if league == 'hs':
+        state_lower = 'ky'  # Assuming KY for HS
+        rankings_dir = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season)
+    else:
+        rankings_dir = Path(data_dir) / str(season)
+    
+    if not rankings_dir.exists():
+        print(f"  ⚠ No rankings directory for {season} — opponent ranks will be omitted")
+        return {}
+
+    rank_by_id: Dict[str, int] = {}
+
+    # Load from FULL rankings files (rankings_*.json, not rankings_starters_*.json)
+    full_rankings_files = [p for p in sorted(rankings_dir.glob("rankings_*.json")) 
+                          if "starters" not in p.name and "archive" not in str(p)]
+    
+    if not full_rankings_files:
+        # Fallback: If no full rankings files found, try starter-only files
+        # (This handles NCAA case where full rankings might not exist)
+        print(f"Warning: No full rankings files found in {rankings_dir}, falling back to starter-only rankings")
+        return _load_starter_rank_map(season, data_dir, league=league, gender=gender)
+    
+    for p in full_rankings_files:
+        try:
+            with p.open("r", encoding="utf-8") as f:
+                data = json.load(f)
+        except Exception:
+            continue
+        
+        for r in data.get("rankings", []):
+            wid = str(r.get("wrestler_id") or "")
+            raw_rank = r.get("rank")
+            if not wid or raw_rank is None:
+                continue
+            try:
+                rk = int(raw_rank)
+            except Exception:
+                continue
+            
+            # Keep best (lowest) rank across all weights
+            if wid not in rank_by_id or rk < rank_by_id[wid]:
+                rank_by_id[wid] = rk
+    
+    return rank_by_id
+
+
+def _load_hybrid_rank_map(season: int, gender: str, data_dir: str = "mt/elo_ratings") -> Dict[str, int]:
+    """
+    Load hybrid ranks from ELO output (wrestler_id -> best hybrid rank).
+    Used for current_rank on wrestler/team profiles so we display hybrid everywhere.
+    Returns empty dict if file missing (fallback to matrix rank).
+    """
+    path = Path(data_dir) / gender / str(season) / "elo_ratings.json"
+    if not path.exists():
+        return {}
+    try:
+        with path.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception:
+        return {}
+    out: Dict[str, int] = {}
+    for entry in data:
+        wid = entry.get("wrestler_id")
+        hr = entry.get("hybrid_rank")
+        if wid is not None and hr is not None:
+            try:
+                out[str(wid)] = int(hr)
+            except (TypeError, ValueError):
+                continue
+    return out
+
+
+def _load_starter_rank_map(season: int, data_dir: str = "mt/rankings_data", league: str = 'ncaa', gender: str = None) -> Dict[str, int]:
     """
     Load starter-only rankings and create a map from wrestler_id -> best (lowest) starter rank.
     
     Uses rankings_starters_*.json files which contain only starters with re-numbered ranks.
     
-    NOTE: Always reads from the public data location (frontend/wrestledata-ui/public/data/rankings)
+    NOTE: Always reads from the public data location (frontend/wrestledata-ui or frontend/hs-ky-ui)
     regardless of data_dir parameter, since rankings_starters files are stored there.
+    
+    DEPRECATED: Use _load_full_rank_map() instead to include all ranked wrestlers.
     """
-    # Always read from public location - rankings_starters files are stored there
-    rankings_dir = Path("frontend/wrestledata-ui/public/data/rankings") / str(season)
+    # Determine rankings directory based on league
+    if league == 'hs':
+        rankings_dir = Path("frontend/hs-ky-ui/public/data/rankings") / gender / str(season)
+    else:
+        rankings_dir = Path("frontend/wrestledata-ui/public/data/rankings") / str(season)
+    
     if not rankings_dir.exists():
-        raise FileNotFoundError(f"Rankings directory not found: {rankings_dir}")
-    
+        print(f"  ⚠ No starter rankings directory for {season} — opponent ranks will be omitted")
+        return {}
+
     rank_by_id: Dict[str, int] = {}
-    
+
     # Load from starter-only rankings files
     for p in sorted(rankings_dir.glob("rankings_starters_*.json")):
         try:
@@ -85,16 +182,36 @@ def parse_args() -> argparse.Namespace:
         help="Season year (e.g., 2026)",
     )
     parser.add_argument(
+        "-league",
+        type=str,
+        choices=["ncaa", "hs"],
+        default="ncaa",
+        help="League: 'ncaa' (default) or 'hs' for high school",
+    )
+    parser.add_argument(
+        "-state",
+        type=str,
+        default=None,
+        help="State code (required when league=hs, e.g., 'KY')",
+    )
+    parser.add_argument(
+        "-gender",
+        type=str,
+        required=True,
+        choices=["boys", "girls", "both"],
+        help="Gender: 'boys', 'girls', or 'both' (required)",
+    )
+    parser.add_argument(
         "-data_dir",
         type=str,
-        default="mt/rankings_data",
-        help="Directory containing rankings data (default: mt/rankings_data)",
+        default=None,
+        help="Directory containing rankings data (auto-determined if not specified)",
     )
     parser.add_argument(
         "-output_dir",
         type=str,
-        default="frontend/wrestledata-ui/public/data/wrestlers",
-        help="Output directory for wrestler profiles (default: frontend/wrestledata-ui/public/data/wrestlers)",
+        default=None,
+        help="Output directory for wrestler profiles (auto-determined if not specified)",
     )
     return parser.parse_args()
 
@@ -131,6 +248,47 @@ def calculate_team_rankings(
     return team_rank_by_name, team_scores
 
 
+def load_supplemental_opponent_info(season: int, gender: str) -> Dict[str, Dict]:
+    """Build a name/team lookup for opponents not found in the weight class wrestlers dicts.
+
+    Reads mt/processed_data/hs_ky_{gender}/{season}/*.json (roster format with
+    winner_name/loser_name/winner_team/loser_team per match) and maps
+    opponent_id → {name, team} so out-of-state wrestlers who appear in matches
+    but not in all_wrestlers can still be resolved.
+    """
+    processed_dir = Path(f"mt/processed_data/hs_ky_{gender}/{season}")
+    if not processed_dir.exists():
+        return {}
+
+    lookup: Dict[str, Dict] = {}
+    for team_file in processed_dir.glob("*.json"):
+        try:
+            with team_file.open(encoding="utf-8") as f:
+                team_data = json.load(f)
+        except Exception:
+            continue
+
+        for wrestler in team_data.get("roster", []):
+            ky_wrestler_name = wrestler.get("name", "")
+            for match in wrestler.get("matches", []):
+                opp_id = match.get("opponent_id")
+                if not opp_id or opp_id in lookup:
+                    continue
+                winner_name = match.get("winner_name", "")
+                loser_name = match.get("loser_name", "")
+                winner_team = match.get("winner_team", "")
+                loser_team = match.get("loser_team", "")
+                if winner_name == ky_wrestler_name:
+                    # KY wrestler won → opponent is loser
+                    if loser_name and loser_name.upper() != "UNKNOWN":
+                        lookup[opp_id] = {"name": loser_name, "team": loser_team or "Unknown"}
+                elif loser_name == ky_wrestler_name:
+                    # KY wrestler lost → opponent is winner
+                    if winner_name and winner_name.upper() != "UNKNOWN":
+                        lookup[opp_id] = {"name": winner_name, "team": winner_team or "Unknown"}
+    return lookup
+
+
 def load_all_wrestler_info(season: int, data_dir: str) -> Dict[str, Dict]:
     """Load all wrestler info from weight class files."""
     data_path = Path(data_dir) / str(season)
@@ -162,29 +320,49 @@ def load_all_wrestler_info(season: int, data_dir: str) -> Dict[str, Dict]:
     return wrestlers
 
 
+def _match_identity_key(match: Dict) -> Optional[Tuple]:
+    """Return a hashable key for deduplicating the same match across weight class files."""
+    w1_id = match.get("wrestler1_id")
+    w2_id = match.get("wrestler2_id")
+    if not w1_id or not w2_id:
+        return None
+    date = match.get("date", "")
+    result = (match.get("result") or "").strip()
+    return (date, tuple(sorted([str(w1_id), str(w2_id)])), result)
+
+
 def load_all_matches_from_weight_classes(
     season: int, data_dir: str
 ) -> Dict[str, List[Dict]]:
-    """Load all matches from weight class files, organized by wrestler_id."""
+    """Load all matches from weight class files, organized by wrestler_id.
+    Deduplicates by match identity so the same bout is not counted twice
+    when it appears in multiple weight class files."""
     data_path = Path(data_dir) / str(season)
     matches_by_wrestler = defaultdict(list)
-    
+    seen_by_wrestler = defaultdict(set)  # wrestler_id -> set of match_identity_key
+
     for wc_file in sorted(data_path.glob("weight_class_*.json")):
         try:
             with wc_file.open("r", encoding="utf-8") as f:
                 wc_data = json.load(f)
         except Exception:
             continue
-        
+
         for match in wc_data.get("matches", []):
             w1_id = match.get("wrestler1_id")
             w2_id = match.get("wrestler2_id")
-            
+            key = _match_identity_key(match)
+            if key is None:
+                continue
+
             if w1_id:
-                matches_by_wrestler[w1_id].append(match)
-            if w2_id:
-                matches_by_wrestler[w2_id].append(match)
-    
+                if key not in seen_by_wrestler[w1_id]:
+                    seen_by_wrestler[w1_id].add(key)
+                    matches_by_wrestler[w1_id].append(match)
+            if w2_id and w2_id != w1_id:
+                if key not in seen_by_wrestler[w2_id]:
+                    seen_by_wrestler[w2_id].add(key)
+                    matches_by_wrestler[w2_id].append(match)
     return dict(matches_by_wrestler)
 
 
@@ -226,6 +404,9 @@ def classify_result_type(result: str) -> str:
         return "DQ"
     if "MFF" in s or "MEDICAL" in s:
         return "MFF"
+    # Check for forfeit - must check "For." pattern before "FF" to catch "(For.)" format
+    if "FOR." in s or s.endswith("FOR.") or " FOR " in s:
+        return "FF"
     if "FF" in s or "FORFEIT" in s:
         return "FF"
     
@@ -277,6 +458,7 @@ def calculate_records(
 ) -> Dict[str, any]:
     """Calculate win/loss records (overall, vs_ranked, vs_top10, vs_top25)."""
     wins = 0
+    forfeit_wins = 0
     losses = 0
     ranked_wins = 0
     ranked_losses = 0
@@ -309,6 +491,8 @@ def calculate_records(
         
         if is_winner:
             wins += 1
+            if classify_result_type(result) == "FF":
+                forfeit_wins += 1
             opp_rank = rank_by_id.get(opp_id)
             if opp_rank:
                 ranked_wins += 1
@@ -332,6 +516,7 @@ def calculate_records(
         "vs_top10": f"{top10_wins}-{top10_losses}",
         "vs_top25": f"{top25_wins}-{top25_losses}",
         "wins": wins,
+        "forfeit_wins": forfeit_wins,
         "losses": losses,
         "ranked_wins": ranked_wins,
         "ranked_losses": ranked_losses,
@@ -407,17 +592,23 @@ def find_best_win_and_worst_loss(
     return best_win, worst_loss
 
 
-def load_match_mv_impact(season: int) -> Dict[str, Dict]:
+def load_match_mv_impact(season: int, league: str = 'ncaa', gender: str = None) -> Dict[str, Dict]:
     """
     Load per-match MV impact cache.
     
     Returns dict mapping (wrestler_id, opponent_id, date, result) -> mv_impact
     
-    NOTE: Always reads from the public data location (frontend/wrestledata-ui/public/data/mat_value)
+    NOTE: Always reads from the public data location (frontend/wrestledata-ui or frontend/hs-ky-ui)
     regardless of other parameters, since match_mv_impact files are stored there.
     """
+    # Determine mat_value directory based on league
+    if league == 'hs':
+        base_dir = Path("frontend/hs-ky-ui/public/data/mat_value") / gender / str(season)
+    else:
+        base_dir = Path("frontend/wrestledata-ui/public/data/mat_value") / str(season)
+    
     # Always read from public location - match_mv_impact files are stored there
-    match_impact_file = Path(f"frontend/wrestledata-ui/public/data/mat_value/{season}/match_mv_impact_{season}.json")
+    match_impact_file = base_dir / f"match_mv_impact_{season}.json"
     if not match_impact_file.exists():
         return {}
     
@@ -450,6 +641,7 @@ def build_match_list(
     all_wrestlers: Dict[str, Dict],
     team_rank_by_name: Dict[str, int],
     match_mv_impact_lookup: Optional[Dict] = None,
+    supplemental_opponent_info: Optional[Dict] = None,
 ) -> List[Dict]:
     """Build formatted match list for JSON output."""
     match_list = []
@@ -484,11 +676,27 @@ def build_match_list(
         seen_match_keys.add(match_key)
         
         opp_info = all_wrestlers.get(opp_id, {})
+        if not opp_info and supplemental_opponent_info:
+            opp_info = supplemental_opponent_info.get(opp_id, {})
         opp_name = opp_info.get("name", "Unknown")
         opp_team = opp_info.get("team", "Unknown")
         opp_weight = opp_info.get("weight_class", None)
         opp_rank = rank_by_id.get(opp_id)
         opp_team_rank = team_rank_by_name.get(opp_team)
+        
+        # For forfeit matches, if opponent_team is "Unknown", try to extract from event field
+        # This ensures team names are displayed even if they weren't stored correctly in synthetic opponent
+        # Check if this is a forfeit match (check result type early)
+        result_type = classify_result_type(result)
+        if result_type == "FF" and (not opp_team or opp_team == "Unknown"):
+            if event:
+                event_match = re.search(r'vs\.?\s+([^(]+)', event, re.IGNORECASE)
+                if event_match:
+                    extracted_team = event_match.group(1).strip()
+                    if extracted_team:
+                        opp_team = extracted_team
+                        # Update team rank if we found a valid team
+                        opp_team_rank = team_rank_by_name.get(opp_team)
         
         # Determine result (W/L)
         is_winner = (winner_id == wrestler_id)
@@ -497,8 +705,6 @@ def build_match_list(
         # Extract method and score
         method = "DEC"  # default
         score = None
-        
-        result_type = classify_result_type(result)
         result_upper = result.upper()
         
         if result_type == "F":
@@ -513,6 +719,10 @@ def build_match_list(
             method = "DFLT"
         elif result_type == "MFF":
             method = "MFF"
+        elif result_type == "FF":
+            method = "FF"
+        elif result_type == "DQ":
+            method = "DQ"
         elif result_type == "D":
             # Check for SV-* or TB-* to preserve the prefix for display
             if result_upper.startswith("SV-"):
@@ -561,6 +771,9 @@ def build_match_list(
         except Exception:
             pass
         
+        # Get weight class from match data
+        match_weight = match.get("weight_class")
+        
         match_entry = {
             "date": date_formatted,
             "opponent_id": opp_id if opp_id else None,
@@ -569,6 +782,7 @@ def build_match_list(
             "opponent_team_rank": opp_team_rank,
             "opponent_weight": opp_weight,
             "opponent_rank": opp_rank,
+            "weight_class": match_weight,  # Weight class the match was wrestled at
             "result": result_code,
             "method": method,
             "score": score,
@@ -597,20 +811,26 @@ def build_match_list(
     return match_list
 
 
-def load_mv_data(season: int) -> Dict[str, Dict]:
+def load_mv_data(season: int, league: str = 'ncaa', gender: str = None) -> Dict[str, Dict]:
     """
     Load Mat Value data from season-wide file (includes rankings).
     
     Returns dict mapping wrestler_id -> MV data with ranks.
     
-    NOTE: Always reads from the public data location (frontend/wrestledata-ui/public/data/mat_value)
+    NOTE: Always reads from the public data location (frontend/wrestledata-ui or frontend/hs-ky-ui)
     regardless of other parameters, since mat_value files are stored there.
     """
+    # Determine mat_value directory based on league
+    if league == 'hs':
+        base_dir = Path("frontend/hs-ky-ui/public/data/mat_value") / gender / str(season)
+    else:
+        base_dir = Path("frontend/wrestledata-ui/public/data/mat_value") / str(season)
+    
     # Always read from public location - mat_value files are stored there
-    mv_file = Path(f"frontend/wrestledata-ui/public/data/mat_value/{season}/mat_value_{season}.json")
+    mv_file = base_dir / f"mat_value_{season}.json"
     if not mv_file.exists():
         # Fallback to cache file if season-wide file doesn't exist
-        cache_file = Path(f"frontend/wrestledata-ui/public/data/mat_value/{season}/mv_cache_{season}.json")
+        cache_file = base_dir / f"mv_cache_{season}.json"
         if cache_file.exists():
             try:
                 with cache_file.open("r", encoding="utf-8") as f:
@@ -649,6 +869,218 @@ def load_mv_data(season: int) -> Dict[str, Dict]:
         return {}
 
 
+def load_careers_lookup(careers_dir: Path = Path("data/careers")) -> Dict[str, str]:
+    """
+    Load all career files and build a lookup: season_wrestler_id -> career_id.
+    
+    Returns:
+        Dictionary mapping season_wrestler_id -> career_id
+    """
+    lookup = {}
+    if not careers_dir.exists():
+        return lookup
+    
+    for career_file in careers_dir.glob("career_*.json"):
+        try:
+            with career_file.open("r", encoding="utf-8") as f:
+                career_data = json.load(f)
+                career_id = career_data.get("career_id")
+                seasons = career_data.get("seasons", {})
+                
+                if career_id and isinstance(seasons, dict):
+                    for season_wrestler_id in seasons.values():
+                        if season_wrestler_id:
+                            lookup[str(season_wrestler_id)] = career_id
+        except Exception as e:
+            print(f"Warning: Could not load career file {career_file}: {e}")
+    
+    return lookup
+
+
+def load_career(career_id: str, careers_dir: Path = Path("data/careers")) -> Optional[Dict]:
+    """
+    Load a single career JSON file.
+    
+    Returns:
+        Career dictionary or None if not found
+    """
+    career_file = careers_dir / f"{career_id}.json"
+    if not career_file.exists():
+        return None
+    
+    try:
+        with career_file.open("r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception as e:
+        print(f"Warning: Could not load career {career_id}: {e}")
+        return None
+
+
+def load_season_accomplishments(season: int, gender: str) -> Dict[str, Dict]:
+    """
+    Load season accomplishments for a given season and gender.
+    
+    Returns:
+        Dictionary mapping season_wrestler_id -> wrestler accomplishment data
+    """
+    file_path = Path(f"data/season_accomplishments/{gender}/{season}/season_accomplishments.json")
+    
+    if not file_path.exists():
+        return {}
+    
+    try:
+        with file_path.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+        
+        lookup = {}
+        for wrestler in data.get("wrestlers", []):
+            season_wrestler_id = wrestler.get("season_wrestler_id")
+            if season_wrestler_id:
+                lookup[str(season_wrestler_id)] = wrestler
+        
+        return lookup
+    except Exception as e:
+        print(f"Warning: Could not load season accomplishments for {season}/{gender}: {e}")
+        return {}
+
+
+def calculate_career_record(season_summary: List[Dict]) -> Optional[Dict]:
+    """
+    Calculate career totals (wins, losses, win percentage) from season summary.
+    
+    Args:
+        season_summary: List of season summary dictionaries with 'record' field (e.g., "37-2")
+    
+    Returns:
+        Dictionary with wins, losses, and win_pct, or None if no valid records found
+    """
+    total_wins = 0
+    total_losses = 0
+    
+    for season_data in season_summary:
+        record_str = season_data.get("record", "")
+        if not record_str:
+            continue
+        
+        # Parse record string (e.g., "37-2" or "58-8")
+        try:
+            parts = record_str.split("-")
+            if len(parts) == 2:
+                wins = int(parts[0].strip())
+                losses = int(parts[1].strip())
+                total_wins += wins
+                total_losses += losses
+        except (ValueError, IndexError):
+            # Skip invalid record formats
+            continue
+    
+    # Only return if we have at least one match
+    if total_wins == 0 and total_losses == 0:
+        return None
+    
+    # Calculate win percentage
+    total_matches = total_wins + total_losses
+    if total_matches > 0:
+        win_pct = round(total_wins / total_matches, 3)
+    else:
+        win_pct = 0.0
+    
+    return {
+        "wins": total_wins,
+        "losses": total_losses,
+        "win_pct": win_pct
+    }
+
+
+def build_season_summary(
+    career: Dict,
+    gender: str
+) -> List[Dict]:
+    """
+    Build season_summary array from career and season accomplishments.
+    
+    Args:
+        career: Career dictionary with seasons mapping
+        gender: Gender ('boys' or 'girls')
+    
+    Returns:
+        List of season summary dictionaries, sorted descending by season
+    """
+    season_summary = []
+    seasons = career.get("seasons", {})
+    
+    if not isinstance(seasons, dict):
+        return season_summary
+    
+    # Get list of seasons and sort descending
+    season_years = []
+    for season_str in seasons.keys():
+        try:
+            season_years.append(int(season_str))
+        except ValueError:
+            continue
+    
+    season_years.sort(reverse=True)
+    
+    # Build summary for each season
+    for season_year in season_years:
+        season_str = str(season_year)
+        season_wrestler_id = seasons.get(season_str)
+        
+        if not season_wrestler_id:
+            continue
+        
+        # Load season accomplishments for this season
+        accomplishments_lookup = load_season_accomplishments(season_year, gender)
+        wrestler_data = accomplishments_lookup.get(str(season_wrestler_id))
+        
+        if not wrestler_data:
+            print(f"Warning: Season accomplishment not found for season_wrestler_id {season_wrestler_id} in season {season_year}")
+            continue
+        
+        # Extract data from accomplishments
+        record_data = wrestler_data.get("record", {})
+        wins = record_data.get("wins", 0)
+        losses = record_data.get("losses", 0)
+        record_str = f"{wins}-{losses}"
+        
+        grade = wrestler_data.get("grade")
+        # Ensure grade is integer or null
+        if grade is not None:
+            try:
+                grade = int(grade)
+            except (ValueError, TypeError):
+                grade = None
+        
+        team = wrestler_data.get("team", "")
+        regional_place = wrestler_data.get("regional_place")
+        state_place = wrestler_data.get("state_place")
+        
+        # Ensure placements are integer or null
+        if regional_place is not None:
+            try:
+                regional_place = int(regional_place)
+            except (ValueError, TypeError):
+                regional_place = None
+        
+        if state_place is not None:
+            try:
+                state_place = int(state_place)
+            except (ValueError, TypeError):
+                state_place = None
+        
+        season_summary.append({
+            "season": season_year,
+            "grade": grade,
+            "team": team,
+            "record": record_str,
+            "regional_place": regional_place,
+            "state_place": state_place,
+        })
+    
+    return season_summary
+
+
 def build_wrestler_profile(
     wrestler_id: str,
     season: int,
@@ -659,6 +1091,11 @@ def build_wrestler_profile(
     matches: List[Dict],
     mv_data: Optional[Dict[str, Dict]] = None,
     match_mv_impact_lookup: Optional[Dict] = None,
+    gender: Optional[str] = None,
+    career_lookup: Optional[Dict[str, str]] = None,
+    careers_dir: Optional[Path] = None,
+    hybrid_rank_by_id: Optional[Dict[str, int]] = None,
+    supplemental_opponent_info: Optional[Dict] = None,
 ) -> Dict:
     """Build complete wrestler profile JSON."""
     wrestler_info = all_wrestlers.get(wrestler_id, {})
@@ -669,7 +1106,11 @@ def build_wrestler_profile(
     
     team_slug = team_name_to_slug(team)
     team_rank = team_rank_by_name.get(team)
-    current_rank = rank_by_id.get(wrestler_id)
+    # Use hybrid rank for display when available (HS); otherwise matrix rank
+    if hybrid_rank_by_id:
+        current_rank = hybrid_rank_by_id.get(wrestler_id) or rank_by_id.get(wrestler_id)
+    else:
+        current_rank = rank_by_id.get(wrestler_id)
     
     # Get advanced metrics
     metrics_data = metrics_by_id.get(wrestler_id, {})
@@ -691,9 +1132,12 @@ def build_wrestler_profile(
     
     # Calculate rates
     wins = records["wins"]
+    forfeit_wins = records.get("forfeit_wins", 0)
     bonus_wins = majors + techs + pins
-    bonus_rate = (bonus_wins / wins) if wins > 0 else 0.0
-    pin_rate = (pins / wins) if wins > 0 else 0.0
+    # Bonus/pin rate: exclude forfeit wins from denominator (you can't earn bonus in a forfeit)
+    wins_actual = max(0, wins - forfeit_wins)
+    bonus_rate = (bonus_wins / wins_actual) if wins_actual > 0 else 0.0
+    pin_rate = (pins / wins_actual) if wins_actual > 0 else 0.0
     
     # Find best win and worst loss
     best_win, worst_loss = find_best_win_and_worst_loss(
@@ -702,7 +1146,8 @@ def build_wrestler_profile(
     
     # Build match list
     match_list = build_match_list(
-        matches, wrestler_id, rank_by_id, all_wrestlers, team_rank_by_name, match_mv_impact_lookup
+        matches, wrestler_id, rank_by_id, all_wrestlers, team_rank_by_name, match_mv_impact_lookup,
+        supplemental_opponent_info=supplemental_opponent_info,
     )
     
     # Get Mat Value data if available
@@ -764,177 +1209,488 @@ def build_wrestler_profile(
         "match_list": match_list,
     }
     
+    # Add career and season_summary if career lookup is available and gender is provided
+    if career_lookup and gender:
+        career_id = career_lookup.get(wrestler_id)
+        if career_id:
+            career = load_career(career_id, careers_dir or Path("data/careers"))
+            if career:
+                # Build career metadata
+                seasons_dict = career.get("seasons", {})
+                season_years = []
+                for season_str in seasons_dict.keys():
+                    try:
+                        season_years.append(int(season_str))
+                    except ValueError:
+                        continue
+                season_years.sort(reverse=True)  # Descending order
+                
+                profile["career"] = {
+                    "career_id": career_id,
+                    "canonical_name": career.get("canonical_name", ""),
+                    "seasons": season_years,
+                }
+                
+                # Build season_summary
+                season_summary = build_season_summary(career, gender)
+                if season_summary:
+                    profile["season_summary"] = season_summary
+                    
+                    # Calculate career record totals
+                    career_record = calculate_career_record(season_summary)
+                    if career_record:
+                        profile["career_record"] = career_record
+
+                    # Use season accomplishments record for current season so it matches
+                    # Career Summary and is consistent everywhere (Season Stats, leaderboards).
+                    for entry in season_summary:
+                        if entry.get("season") == season:
+                            acc_record = entry.get("record", "").strip()
+                            if acc_record:
+                                profile["record"]["overall"] = acc_record
+                            break
     return profile
 
 
 def main() -> None:
     args = parse_args()
     season = args.season
-    data_dir = args.data_dir
-    output_dir = Path(args.output_dir)
+    league = args.league
+    state = args.state
     
-    print(f"Building wrestler profiles for season {season}...")
-    print(f"Data directory: {data_dir}")
-    print(f"Output directory: {output_dir}")
+    # Validate HS parameters
+    if league == "hs":
+        if not state:
+            raise ValueError("State is required when league=hs (e.g., -state KY)")
+        if state != "KY":
+            raise ValueError(f"Only KY is currently supported for HS. Got: {state}")
     
-    # Load data
-    print("\nLoading wrestler data...")
-    all_wrestlers = load_all_wrestler_info(season, data_dir)
-    print(f"Loaded {len(all_wrestlers)} wrestlers")
+    # Determine data and output directories
+    if league == "hs":
+        # Determine which genders to process based on argument
+        if args.gender == "both":
+            genders = ["boys", "girls"]
+        else:
+            genders = [args.gender]
+        
+        # Determine data directories
+        if args.data_dir:
+            base_data_dir = Path(args.data_dir)
+        else:
+            base_data_dir = Path("mt/rankings_data")
+        
+        # Determine output directory
+        if args.output_dir:
+            base_output_dir = Path(args.output_dir)
+        else:
+            base_output_dir = Path("frontend/hs-ky-ui/public/data/wrestlers")
+        
+        # Process specified gender(s)
+        for gender in genders:
+            print(f"\n{'=' * 80}")
+            print(f"Processing {gender}...")
+            print(f"{'=' * 80}")
+            
+            data_dir = f"{base_data_dir}/hs_ky_{gender}"
+            output_dir = base_output_dir / gender
+            
+            print(f"Building wrestler profiles for season {season} ({gender})...")
+            print(f"Data directory: {data_dir}")
+            print(f"Output directory: {output_dir}")
+            
+            # Load data
+            print("\nLoading wrestler data...")
+            all_wrestlers = load_all_wrestler_info(season, data_dir)
+            print(f"Loaded {len(all_wrestlers)} wrestlers")
+            
+            print("\nLoading full rankings (all ranked wrestlers)...")
+            rank_by_id = _load_full_rank_map(season, base_data_dir, league=league, gender=gender)
+            print(f"Loaded full rankings for {len(rank_by_id)} wrestlers")
+            
+            print("\nLoading hybrid ranks (for current_rank display)...")
+            hybrid_rank_by_id = _load_hybrid_rank_map(season, gender)
+            if hybrid_rank_by_id:
+                print(f"Loaded hybrid ranks for {len(hybrid_rank_by_id)} wrestlers")
+            else:
+                print("No hybrid ranks (elo_ratings.json missing); using matrix rank for current_rank")
+            
+            print("\nCalculating team rankings...")
+            team_rank_by_name, team_scores = calculate_team_rankings(season, data_dir)
+            print(f"Calculated rankings for {len(team_rank_by_name)} teams")
+            
+            # Skip advanced metrics calculation for HS (not used, saves significant time)
+            print("\nSkipping advanced metrics calculation for HS (SI+, DF+, PE+ not used)...")
+            metrics_by_id = {}  # Empty dict - defaults will be used (100.0 for SI+/DF+/PE+, 0.0 for PF7/PA7)
+            
+            print("\nLoading matches from weight class files...")
+            matches_by_wrestler = load_all_matches_from_weight_classes(season, data_dir)
+            print(f"Loaded matches for {len(matches_by_wrestler)} wrestlers")
+            
+            # Load Mat Value data if available
+            print("\nLoading Mat Value data...")
+            mv_data = load_mv_data(season, league=league, gender=gender)
+            if mv_data:
+                print(f"Loaded MV data for {len(mv_data)} wrestlers")
+            else:
+                print("No MV data found (run compute_all_mat_values.py first)")
+            
+            # Load per-match MV impact cache if available
+            print("\nLoading per-match MV impact data...")
+            match_mv_impact_lookup = load_match_mv_impact(season, league=league, gender=gender)
+            if match_mv_impact_lookup:
+                print(f"Loaded MV impact data for {len(match_mv_impact_lookup)} match entries")
+            else:
+                print("No per-match MV impact data found (run compute_all_mat_values.py first)")
+                match_mv_impact_lookup = {}
+            
+            # Load boys inactive mask (if boys) - for filtering indexes only
+            masked_wrestler_ids = set()
+            if gender == 'boys':
+                mask_file = base_data_dir / f"hs_ky_boys/{season}/boys_inactive_wrestlers.json"
+                if mask_file.exists():
+                    try:
+                        with mask_file.open("r", encoding="utf-8") as f:
+                            mask_data = json.load(f)
+                        for wrestler in mask_data.get("masked_wrestlers", []):
+                            wrestler_id = wrestler.get("boys_wrestler_id")
+                            if wrestler_id:
+                                masked_wrestler_ids.add(str(wrestler_id))
+                        if masked_wrestler_ids:
+                            print(f"Loaded mask for {len(masked_wrestler_ids)} inactive boys wrestlers (will exclude from indexes)")
+                    except Exception as e:
+                        print(f"Warning: Could not load boys inactive mask: {e}")
+            
+            # Load career lookup for embedding career data
+            print("\nLoading career lookup...")
+            careers_dir = Path("data/careers") if gender == "boys" else Path("data/careers/girls")
+            career_lookup = load_careers_lookup(careers_dir)
+            print(f"Loaded career lookup for {len(career_lookup)} season_wrestler_ids")
+
+            # Load supplemental opponent info (names/teams for out-of-state opponents)
+            print("\nLoading supplemental opponent info from processed data...")
+            supplemental_opponent_info = load_supplemental_opponent_info(season, gender)
+            print(f"Loaded supplemental info for {len(supplemental_opponent_info)} opponent IDs")
+
+            # Create output directories
+            season_dir = output_dir / str(season)
+            by_id_dir = season_dir / "by_id"
+            by_team_dir = season_dir / "by_team"
+            
+            # Delete existing directories
+            if by_id_dir.exists():
+                shutil.rmtree(by_id_dir)
+            if by_team_dir.exists():
+                shutil.rmtree(by_team_dir)
+            
+            # Create directories
+            by_id_dir.mkdir(parents=True, exist_ok=True)
+            by_team_dir.mkdir(parents=True, exist_ok=True)
+            
+            # Build profiles
+            print("\nBuilding wrestler profiles...")
+            index_wrestlers = []
+            index_teams = defaultdict(list)
+            index_search = []
+            
+            processed = 0
+            for wrestler_id in all_wrestlers.keys():
+                if processed % 100 == 0:
+                    print(f"  Processed {processed}/{len(all_wrestlers)}...")
+                
+                # Get matches for this wrestler
+                matches = matches_by_wrestler.get(wrestler_id, [])
+                
+                # Build profile
+                profile = build_wrestler_profile(
+                    wrestler_id,
+                    season,
+                    all_wrestlers,
+                    rank_by_id,
+                    team_rank_by_name,
+                    metrics_by_id,
+                    matches,
+                    mv_data,
+                    match_mv_impact_lookup,
+                    gender=gender,
+                    career_lookup=career_lookup,
+                    careers_dir=careers_dir,
+                    hybrid_rank_by_id=hybrid_rank_by_id,
+                    supplemental_opponent_info=supplemental_opponent_info,
+                )
+                
+                # Preserve existing bonus data if it exists
+                output_file = by_id_dir / f"{wrestler_id}.json"
+                if output_file.exists():
+                    try:
+                        with output_file.open("r", encoding="utf-8") as f:
+                            existing_profile = json.load(f)
+                            existing_bonus = existing_profile.get("bonus")
+                            if existing_bonus:
+                                profile["bonus"] = existing_bonus
+                    except Exception:
+                        # If we can't read existing file, continue without preserving bonus
+                        pass
+                
+                # Timestamp when this profile was generated (for "last updated" note on profile page)
+                profile["profile_generated_at"] = datetime.now().strftime("%Y-%m-%d")
+                
+                # Write to by_id
+                with output_file.open("w", encoding="utf-8") as f:
+                    json.dump(profile, f, indent=2, ensure_ascii=False)
+                
+                # Write to by_team
+                team_slug = profile["team_slug"]
+                team_dir = by_team_dir / team_slug
+                team_dir.mkdir(parents=True, exist_ok=True)
+                team_file = team_dir / f"{wrestler_id}.json"
+                with team_file.open("w", encoding="utf-8") as f:
+                    json.dump(profile, f, indent=2, ensure_ascii=False)
+                
+                # Skip masked wrestlers from indexes (boys only) - but keep full profiles
+                if masked_wrestler_ids and str(wrestler_id) in masked_wrestler_ids:
+                    processed += 1
+                    continue
+                
+                # Add to indexes
+                index_wrestlers.append({
+                    "wrestler_id": wrestler_id,
+                    "name": profile["name"],
+                    "team": profile["team"],
+                    "team_slug": team_slug,
+                    "weight_class": profile["weight_class"],
+                    "current_rank": profile["current_rank"],
+                })
+                
+                index_teams[profile["team"]].append(wrestler_id)
+                
+                index_search.append({
+                    "wrestler_id": wrestler_id,
+                    "name": profile["name"],
+                    "team": profile["team"],
+                    "weight_class": profile["weight_class"],
+                })
+                
+                processed += 1
+            
+            print(f"\nProcessed {processed} wrestlers")
+            
+            # Build team index
+            print("\nBuilding index files...")
+            index_teams_list = []
+            for team_name, roster in sorted(index_teams.items()):
+                team_slug = team_name_to_slug(team_name)
+                team_rank = team_rank_by_name.get(team_name)
+                index_teams_list.append({
+                    "team": team_name,
+                    "team_slug": team_slug,
+                    "team_rank": team_rank,
+                    "roster": sorted(roster),
+                })
+            
+            # Write index files
+            index_wrestlers_file = season_dir / "index_wrestlers.json"
+            with index_wrestlers_file.open("w", encoding="utf-8") as f:
+                json.dump(index_wrestlers, f, indent=2, ensure_ascii=False)
+            
+            index_teams_file = season_dir / "index_teams.json"
+            with index_teams_file.open("w", encoding="utf-8") as f:
+                json.dump(index_teams_list, f, indent=2, ensure_ascii=False)
+            
+            index_search_file = season_dir / "index_search.json"
+            with index_search_file.open("w", encoding="utf-8") as f:
+                json.dump(index_search, f, indent=2, ensure_ascii=False)
+            
+            print(f"\nDone! Generated:")
+            print(f"  - {len(index_wrestlers)} wrestler profiles")
+            print(f"  - {len(index_teams_list)} team entries")
+            print(f"  - Index files in {season_dir}")
     
-    print("\nLoading starter-only rankings...")
-    rank_by_id = _load_starter_rank_map(season, data_dir)
-    print(f"Loaded starter-only rankings for {len(rank_by_id)} wrestlers")
-    
-    print("\nCalculating team rankings...")
-    team_rank_by_name, team_scores = calculate_team_rankings(season, data_dir)
-    print(f"Calculated rankings for {len(team_rank_by_name)} teams")
-    
-    print("\nCalculating advanced metrics...")
-    metrics_by_id, _ = _compute_plus_metrics_for_all(season, 999)  # Use high max_rank to get all
-    print(f"Calculated metrics for {len(metrics_by_id)} wrestlers")
-    
-    print("\nLoading matches from weight class files...")
-    matches_by_wrestler = load_all_matches_from_weight_classes(season, data_dir)
-    print(f"Loaded matches for {len(matches_by_wrestler)} wrestlers")
-    
-    # Load Mat Value data if available
-    print("\nLoading Mat Value data...")
-    mv_data = load_mv_data(season)
-    if mv_data:
-        print(f"Loaded MV data for {len(mv_data)} wrestlers")
     else:
-        print("No MV data found (run compute_all_mat_values.py first)")
-    
-    # Load per-match MV impact cache if available
-    print("\nLoading per-match MV impact data...")
-    match_mv_impact_lookup = load_match_mv_impact(season)
-    if match_mv_impact_lookup:
-        print(f"Loaded MV impact data for {len(match_mv_impact_lookup)} match entries")
-    else:
-        print("No per-match MV impact data found (run compute_all_mat_values.py first)")
-        match_mv_impact_lookup = {}
-    
-    # Create output directories
-    season_dir = output_dir / str(season)
-    by_id_dir = season_dir / "by_id"
-    by_team_dir = season_dir / "by_team"
-    
-    # Delete existing directories
-    if by_id_dir.exists():
-        shutil.rmtree(by_id_dir)
-    if by_team_dir.exists():
-        shutil.rmtree(by_team_dir)
-    
-    # Create directories
-    by_id_dir.mkdir(parents=True, exist_ok=True)
-    by_team_dir.mkdir(parents=True, exist_ok=True)
-    
-    # Build profiles
-    print("\nBuilding wrestler profiles...")
-    index_wrestlers = []
-    index_teams = defaultdict(list)
-    index_search = []
-    
-    processed = 0
-    for wrestler_id in all_wrestlers.keys():
-        if processed % 100 == 0:
-            print(f"  Processed {processed}/{len(all_wrestlers)}...")
+        # NCAA mode
+        if args.data_dir:
+            data_dir = args.data_dir
+        else:
+            data_dir = "mt/rankings_data"
         
-        # Get matches for this wrestler
-        matches = matches_by_wrestler.get(wrestler_id, [])
+        if args.output_dir:
+            output_dir = Path(args.output_dir)
+        else:
+            output_dir = Path("frontend/wrestledata-ui/public/data/wrestlers")
         
-        # Build profile
-        profile = build_wrestler_profile(
-            wrestler_id,
-            season,
-            all_wrestlers,
-            rank_by_id,
-            team_rank_by_name,
-            metrics_by_id,
-            matches,
-            mv_data,
-            match_mv_impact_lookup,
-        )
+        print(f"Building wrestler profiles for season {season}...")
+        print(f"Data directory: {data_dir}")
+        print(f"Output directory: {output_dir}")
         
-        # Preserve existing bonus data if it exists
-        output_file = by_id_dir / f"{wrestler_id}.json"
-        if output_file.exists():
-            try:
-                with output_file.open("r", encoding="utf-8") as f:
-                    existing_profile = json.load(f)
-                    existing_bonus = existing_profile.get("bonus")
-                    if existing_bonus:
-                        profile["bonus"] = existing_bonus
-            except Exception:
-                # If we can't read existing file, continue without preserving bonus
-                pass
+        # Load data
+        print("\nLoading wrestler data...")
+        all_wrestlers = load_all_wrestler_info(season, data_dir)
+        print(f"Loaded {len(all_wrestlers)} wrestlers")
         
-        # Write to by_id
-        with output_file.open("w", encoding="utf-8") as f:
-            json.dump(profile, f, indent=2, ensure_ascii=False)
+        print("\nLoading starter-only rankings...")
+        rank_by_id = _load_full_rank_map(season, data_dir, league=league)
+        print(f"Loaded full rankings for {len(rank_by_id)} wrestlers")
         
-        # Write to by_team
-        team_slug = profile["team_slug"]
-        team_dir = by_team_dir / team_slug
-        team_dir.mkdir(parents=True, exist_ok=True)
-        team_file = team_dir / f"{wrestler_id}.json"
-        with team_file.open("w", encoding="utf-8") as f:
-            json.dump(profile, f, indent=2, ensure_ascii=False)
+        print("\nCalculating team rankings...")
+        team_rank_by_name, team_scores = calculate_team_rankings(season, data_dir)
+        print(f"Calculated rankings for {len(team_rank_by_name)} teams")
         
-        # Add to indexes
-        index_wrestlers.append({
-            "wrestler_id": wrestler_id,
-            "name": profile["name"],
-            "team": profile["team"],
-            "team_slug": team_slug,
-            "weight_class": profile["weight_class"],
-            "current_rank": profile["current_rank"],
-        })
+        print("\nCalculating advanced metrics...")
+        metrics_by_id, _ = _compute_plus_metrics_for_all(season, 999)  # Use high max_rank to get all
+        print(f"Calculated metrics for {len(metrics_by_id)} wrestlers")
         
-        index_teams[profile["team"]].append(wrestler_id)
+        print("\nLoading matches from weight class files...")
+        matches_by_wrestler = load_all_matches_from_weight_classes(season, data_dir)
+        print(f"Loaded matches for {len(matches_by_wrestler)} wrestlers")
         
-        index_search.append({
-            "wrestler_id": wrestler_id,
-            "name": profile["name"],
-            "team": profile["team"],
-            "weight_class": profile["weight_class"],
-        })
+        # Load Mat Value data if available
+        print("\nLoading Mat Value data...")
+        mv_data = load_mv_data(season)
+        if mv_data:
+            print(f"Loaded MV data for {len(mv_data)} wrestlers")
+        else:
+            print("No MV data found (run compute_all_mat_values.py first)")
         
-        processed += 1
-    
-    print(f"\nProcessed {processed} wrestlers")
-    
-    # Build team index
-    print("\nBuilding index files...")
-    index_teams_list = []
-    for team_name, roster in sorted(index_teams.items()):
-        team_slug = team_name_to_slug(team_name)
-        team_rank = team_rank_by_name.get(team_name)
-        index_teams_list.append({
-            "team": team_name,
-            "team_slug": team_slug,
-            "team_rank": team_rank,
-            "roster": sorted(roster),
-        })
-    
-    # Write index files
-    index_wrestlers_file = season_dir / "index_wrestlers.json"
-    with index_wrestlers_file.open("w", encoding="utf-8") as f:
-        json.dump(index_wrestlers, f, indent=2, ensure_ascii=False)
-    
-    index_teams_file = season_dir / "index_teams.json"
-    with index_teams_file.open("w", encoding="utf-8") as f:
-        json.dump(index_teams_list, f, indent=2, ensure_ascii=False)
-    
-    index_search_file = season_dir / "index_search.json"
-    with index_search_file.open("w", encoding="utf-8") as f:
-        json.dump(index_search, f, indent=2, ensure_ascii=False)
-    
-    print(f"\nDone! Generated:")
-    print(f"  - {len(index_wrestlers)} wrestler profiles")
-    print(f"  - {len(index_teams_list)} team entries")
-    print(f"  - Index files in {season_dir}")
+        # Load per-match MV impact cache if available
+        print("\nLoading per-match MV impact data...")
+        match_mv_impact_lookup = load_match_mv_impact(season)
+        if match_mv_impact_lookup:
+            print(f"Loaded MV impact data for {len(match_mv_impact_lookup)} match entries")
+        else:
+            print("No per-match MV impact data found (run compute_all_mat_values.py first)")
+            match_mv_impact_lookup = {}
+        
+        # Create output directories
+        season_dir = output_dir / str(season)
+        by_id_dir = season_dir / "by_id"
+        by_team_dir = season_dir / "by_team"
+        
+        # Delete existing directories
+        if by_id_dir.exists():
+            shutil.rmtree(by_id_dir)
+        if by_team_dir.exists():
+            shutil.rmtree(by_team_dir)
+        
+        # Create directories
+        by_id_dir.mkdir(parents=True, exist_ok=True)
+        by_team_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Build profiles
+        print("\nBuilding wrestler profiles...")
+        index_wrestlers = []
+        index_teams = defaultdict(list)
+        index_search = []
+        
+        processed = 0
+        for wrestler_id in all_wrestlers.keys():
+            if processed % 100 == 0:
+                print(f"  Processed {processed}/{len(all_wrestlers)}...")
+            
+            # Get matches for this wrestler
+            matches = matches_by_wrestler.get(wrestler_id, [])
+            
+            # Build profile
+            profile = build_wrestler_profile(
+                wrestler_id,
+                season,
+                all_wrestlers,
+                rank_by_id,
+                team_rank_by_name,
+                metrics_by_id,
+                matches,
+                mv_data,
+                match_mv_impact_lookup,
+                gender=None,  # NCAA doesn't use gender-based careers
+                career_lookup=None,  # NCAA doesn't use careers
+            )
+            
+            # Preserve existing bonus data if it exists
+            output_file = by_id_dir / f"{wrestler_id}.json"
+            if output_file.exists():
+                try:
+                    with output_file.open("r", encoding="utf-8") as f:
+                        existing_profile = json.load(f)
+                        existing_bonus = existing_profile.get("bonus")
+                        if existing_bonus:
+                            profile["bonus"] = existing_bonus
+                except Exception:
+                    # If we can't read existing file, continue without preserving bonus
+                    pass
+            
+            profile["profile_generated_at"] = datetime.now().strftime("%Y-%m-%d")
+            
+            # Write to by_id
+            with output_file.open("w", encoding="utf-8") as f:
+                json.dump(profile, f, indent=2, ensure_ascii=False)
+            
+            # Write to by_team
+            team_slug = profile["team_slug"]
+            team_dir = by_team_dir / team_slug
+            team_dir.mkdir(parents=True, exist_ok=True)
+            team_file = team_dir / f"{wrestler_id}.json"
+            with team_file.open("w", encoding="utf-8") as f:
+                json.dump(profile, f, indent=2, ensure_ascii=False)
+            
+            # Add to indexes
+            index_wrestlers.append({
+                "wrestler_id": wrestler_id,
+                "name": profile["name"],
+                "team": profile["team"],
+                "team_slug": team_slug,
+                "weight_class": profile["weight_class"],
+                "current_rank": profile["current_rank"],
+            })
+            
+            index_teams[profile["team"]].append(wrestler_id)
+            
+            index_search.append({
+                "wrestler_id": wrestler_id,
+                "name": profile["name"],
+                "team": profile["team"],
+                "weight_class": profile["weight_class"],
+            })
+            
+            processed += 1
+        
+        print(f"\nProcessed {processed} wrestlers")
+        
+        # Build team index
+        print("\nBuilding index files...")
+        index_teams_list = []
+        for team_name, roster in sorted(index_teams.items()):
+            team_slug = team_name_to_slug(team_name)
+            team_rank = team_rank_by_name.get(team_name)
+            index_teams_list.append({
+                "team": team_name,
+                "team_slug": team_slug,
+                "team_rank": team_rank,
+                "roster": sorted(roster),
+            })
+        
+        # Write index files
+        index_wrestlers_file = season_dir / "index_wrestlers.json"
+        with index_wrestlers_file.open("w", encoding="utf-8") as f:
+            json.dump(index_wrestlers, f, indent=2, ensure_ascii=False)
+        
+        index_teams_file = season_dir / "index_teams.json"
+        with index_teams_file.open("w", encoding="utf-8") as f:
+            json.dump(index_teams_list, f, indent=2, ensure_ascii=False)
+        
+        index_search_file = season_dir / "index_search.json"
+        with index_search_file.open("w", encoding="utf-8") as f:
+            json.dump(index_search, f, indent=2, ensure_ascii=False)
+        
+        print(f"\nDone! Generated:")
+        print(f"  - {len(index_wrestlers)} wrestler profiles")
+        print(f"  - {len(index_teams_list)} team entries")
+        print(f"  - Index files in {season_dir}")
+        
+        # Reminder to regenerate search index
+        if args.league == 'hs':
+            print(f"\n⚠️  REMINDER: Regenerate search index for HS:")
+            print(f"   .venv/bin/python scripts/generate_search_index.py -league hs -gender both -season {season}")
+        else:
+            print(f"\n⚠️  REMINDER: Regenerate search index for NCAA:")
+            print(f"   .venv/bin/python scripts/generate_search_index.py -league ncaa -season {season}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,80 @@
+{
+  "wrestler_id": "36423456132",
+  "name": "Nathan Bates",
+  "team": "Thomas Worthington High School",
+  "team_slug": "thomas_worthington_high_school",
+  "team_rank": null,
+  "weight_class": 150,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35488553132",
+      "opponent_rank": 146,
+      "opponent_name": "Paxton Jones",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35271153132",
+      "opponent_rank": 21,
+      "opponent_name": "Parker Smith",
+      "method": "TF 18-0 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35488553132",
+      "opponent_name": "Paxton Jones",
+      "opponent_team": "Covington Catholic",
+      "opponent_team_rank": 41,
+      "opponent_weight": 150,
+      "opponent_rank": 146,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Dixie Invitational"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35271153132",
+      "opponent_name": "Parker Smith",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": 35,
+      "opponent_weight": 150,
+      "opponent_rank": 21,
+      "weight_class": "150",
+      "result": "L",
+      "method": "TF",
+      "score": "18-0",
+      "duration": "0:00",
+      "event": "Dixie Invitational"
+    }
+  ],
+  "profile_generated_at": "2026-04-04"
+}

@@ -1,0 +1,174 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": "girls",
+  "team_id": "cooper",
+  "team_name": "Cooper",
+  "name": "Cooper",
+  "abbreviation": "COOP",
+  "governing_body": "Kentucky High School Athletic Association",
+  "division": "HS Girls",
+  "conference": null,
+  "location": {
+    "state": "KY",
+    "region": "3"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981172150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
+    "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-03-04T23:14:55.346063Z",
+  "starters": {
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35383763132",
+      "name": "Ayden Wilson",
+      "current_rank": 86,
+      "grade": null,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "wins": 0,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35383812132",
+      "name": "Aaliyah Svec",
+      "current_rank": 1,
+      "grade": null,
+      "xtp": 22.39,
+      "xtp_p": 12.83,
+      "xtp_a": 3.73,
+      "xtp_b": 5.83,
+      "xtp_simple": 28.0,
+      "top10_record": {
+        "wins": 6,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 9,
+        "losses": 0
+      },
+      "wins": 14,
+      "losses": 0,
+      "top25_wins": 7,
+      "bonus_rate": 1.0
+    },
+    "152": {
+      "weight": 152,
+      "wrestler_id": "35383872132",
+      "name": "Jasmin Vieyra",
+      "current_rank": 15,
+      "grade": null,
+      "xtp": 4.69,
+      "xtp_p": 0.7,
+      "xtp_a": 1.18,
+      "xtp_b": 2.81,
+      "xtp_simple": 0.5,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 6
+      },
+      "wins": 9,
+      "losses": 8,
+      "top25_wins": 1,
+      "bonus_rate": 1.0
+    },
+    "235": {
+      "weight": 235,
+      "wrestler_id": "35383830132",
+      "name": "Fanta Mariko",
+      "current_rank": 3,
+      "grade": null,
+      "xtp": 16.79,
+      "xtp_p": 8.02,
+      "xtp_a": 3.12,
+      "xtp_b": 5.65,
+      "xtp_simple": 20.0,
+      "top10_record": {
+        "wins": 4,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 6,
+        "losses": 2
+      },
+      "wins": 10,
+      "losses": 3,
+      "top25_wins": 5,
+      "bonus_rate": 0.889
+    }
+  },
+  "remaining": [
+    {
+      "weight": 152,
+      "wrestler_id": "35383800132",
+      "name": "Josslyn Heringer",
+      "grade": null,
+      "wins": 3,
+      "losses": 10,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    }
+  ],
+  "team_xTP_simple": 48.5,
+  "team_metrics": {
+    "projected_state_points": 48.5,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": 33,
+      "losses": 15
+    },
+    "top33": {
+      "wins": 16,
+      "losses": 11
+    },
+    "top10": {
+      "wins": 10,
+      "losses": 4
+    },
+    "bonus_rate": {
+      "value": 0.968,
+      "rank": 34,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.742,
+      "rank": 104,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.194,
+      "rank": 1,
+      "rank_scope": "league"
+    }
+  }
+}

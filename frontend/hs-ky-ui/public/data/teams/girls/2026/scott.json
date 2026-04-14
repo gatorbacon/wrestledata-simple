@@ -1,0 +1,91 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": "girls",
+  "team_id": "scott",
+  "team_name": "Scott",
+  "name": "Scott",
+  "abbreviation": "SCOT",
+  "governing_body": "Kentucky High School Athletic Association",
+  "division": "HS Girls",
+  "conference": null,
+  "location": {
+    "state": "KY",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981228150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
+    "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-03-04T23:14:55.679864Z",
+  "starters": {
+    "107": {
+      "weight": 107,
+      "wrestler_id": "39086048132",
+      "name": "Macey Wasson",
+      "current_rank": 41,
+      "grade": null,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 4
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 5
+      },
+      "wins": 4,
+      "losses": 6,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    }
+  },
+  "remaining": [],
+  "team_xTP_simple": 0.0,
+  "team_metrics": {
+    "projected_state_points": 0.0,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": 4,
+      "losses": 6
+    },
+    "top33": {
+      "wins": 0,
+      "losses": 5
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 4
+    },
+    "bonus_rate": {
+      "value": 1.0,
+      "rank": 19,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 1.0,
+      "rank": 14,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.0,
+      "rank": 107,
+      "rank_scope": "league"
+    }
+  }
+}

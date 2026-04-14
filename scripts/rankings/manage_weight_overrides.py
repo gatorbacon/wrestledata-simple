@@ -123,16 +123,39 @@ def main() -> None:
         default=5,
         help="Matches-equivalent weight (default: 5)",
     )
+    parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
+                        help='League type: ncaa (default) or hs')
+    parser.add_argument('-state', type=str, help='State code (required when league=hs, currently only KY supported)')
+    parser.add_argument('-gender', type=str, choices=['boys', 'girls'],
+                        help='Gender: boys or girls (required when league=hs)')
 
     args = parser.parse_args()
 
-    overrides_path = Path("mt/rankings_data") / "weight_overrides.json"
+    # Validate HS parameters
+    if args.league == 'hs':
+        if not args.state:
+            raise ValueError("-state is required when -league=hs")
+        state_upper = args.state.upper()
+        if state_upper != 'KY':
+            raise ValueError(f"Only KY is currently supported for HS. Got: {args.state}")
+        if not args.gender:
+            raise ValueError("-gender is required when -league=hs")
+        if args.gender not in ['boys', 'girls']:
+            raise ValueError(f"-gender must be 'boys' or 'girls'. Got: {args.gender}")
+
+    # Setup overrides path based on league type
+    if args.league == 'hs':
+        state_lower = args.state.lower()
+        overrides_path = Path("mt/rankings_data") / f"hs_{state_lower}_{args.gender}" / str(args.season) / "weight_overrides.json"
+    else:  # ncaa
+        overrides_path = Path("mt/rankings_data") / str(args.season) / "weight_overrides.json"
 
     # Load all teams once for faster interactive searching
-    teams = load_team_data(args.season)
+    teams = load_team_data(args.season, league=args.league, state=args.state, gender=args.gender)
 
+    league_label = f"{args.league.upper()}" if args.league == 'ncaa' else f"{args.state} HS {args.gender.capitalize()}" if args.league == 'hs' else args.league
     print(
-        f"Interactive weight override tool for season {args.season}.\n"
+        f"Interactive weight override tool for season {args.season} ({league_label}).\n"
         "Enter a name fragment to search (case-insensitive), or just press "
         "Enter to quit.\n"
     )

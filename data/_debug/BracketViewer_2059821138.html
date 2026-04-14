@@ -1,0 +1,827 @@
+
+
+
+
+
+ 
+
+
+
+
+<html>
+<head>
+<script>console.log('ngwMode: optional');</script>
+<script src='https://cmp.osano.com/AzyWAQS5NWEEWkU9/df34419d-698a-4f5c-9dd9-72cd58fa57d7/osano.js?language=en'></script><style>.osano-cm-widget{display:none;}</style><script language='javascript' src='https://www.trackwrestling.com/google_tag_manager.js?version=46'></script>
+<script>dataLayer = [];</script>
+<!-- Begin comScore Tag --><script>window.addEventListener('load', () => {if (typeof _comscore === 'undefined' && window.self === window.top){(function() {window._comscore = window._comscore || [];_comscore.push({ c1: '2', c2: '10037191' });var s = document.createElement('script'), el = document.getElementsByTagName('script')[0]; s.async = true;s.src = 'https://sb.scorecardresearch.com/cs/10037191/beacon.js';el.parentNode.insertBefore(s, el);})();}});</script><noscript><img src='https://sb.scorecardresearch.com/p?c1=2&amp;c2=10037191&amp;cv=3.6.0&amp;cj=1'></noscript><!-- End comScore Tag --><script language='javascript' src='/segment.jsp?twSessionId=aelwwujdey'></script>
+<script language='javascript' src='/jquery.min.js'></script>
+
+
+
+
+<title>
+Brackets
+</title>
+
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel='stylesheet' type='text/css' href='../twIconSet.css'></link>
+<link rel='stylesheet' type='text/css' href='../tw.css'></link>
+
+<!--[if lt IE 9]>
+	<script src='../html5.js'></script>
+<![endif]-->
+
+<script language='javascript' src='../jquery.min.js'></script>
+
+<script language='javascript' src='../Pile.js'></script>
+<script language='javascript' src='../Ajax.js'></script>
+<script language='javascript' src='../FormatFormFields.js'></script>
+<script language='javascript' src='../Essentials.js'></script>
+
+<script language='javascript' src='../TWPage.js'></script>
+<link rel='stylesheet' type='text/css' href='../tw_page.css'></link>
+<!--[if lt IE 9]>
+	<link rel='stylesheet' type='text/css' href='../ie-tw_page.css'></link>
+<![endif]-->
+
+<link rel="stylesheet" type="text/css" href="../stylesheet.css"></link>
+<link rel="stylesheet" type="text/css" href="../bracketviewer.css"></link>
+
+<script language="javascript">
+
+
+try {
+	Object.assign(gtmObject, {"slots": ["footer","bracket-sidebar"], "adUnit": "event"});
+	Object.assign(gtmObject.targeting, {
+		"zone": ["events"],
+		"state_id": ["36"],
+		"governing_body_id": ["3"],
+		"year": ["2026"],
+		"month": ["03"],
+		"event_id": ["P-931299132"]
+	});
+} catch(e) {
+	console.log(e);
+}
+
+function viewProfile(twId){
+	openPage("../membership/ViewProfile.jsp?TIM=1774212908637&twSessionId=aelwwujdey&twId=" + twId, 500, 1000, "maximize=yes,scrollbars=yes,resizable=yes,menubar=yes", "TWProfileWindow");
+}
+
+function viewClub(cId){
+	openPage("../membership/ViewClub.jsp?TIM=1774212908637&twSessionId=aelwwujdey&clubId=" + cId, 500, 1000, "maximize=yes,scrollbars=yes,resizable=yes,menubar=yes", "TWClubWindow");
+}
+
+function watchVideo(mId){
+	window.open("../VideoPlayer.jsp?TIM=1774212908637&twSessionId=aelwwujdey&matchId=" + mId, "_blank");
+}
+
+
+var lastGroupId = "";
+
+function openBoutSheet(boutNumber,prelimInd){
+	try{
+		if(prelimInd==null){
+			prelimInd = "N";
+		}
+		if("Y"=="Y"){
+			openPage("PBPBoutCheck.jsp?TIM=1774212908637&twSessionId=aelwwujdey&groupId=" + lastGroupId + "&boutNumber=" + boutNumber + "&prelimInd=" + prelimInd,.5,.5,"maximize=yes,scrollbars=yes,resizable=yes,menubar=yes","TextCam_open_931299132");
+		}else{
+			alert("There is no additional information available for this bout.");
+		}
+	}catch(error){
+		alert("An error occurred and below is the error message.\n\n" + error.message);
+	}
+}
+
+function verifyUser(){
+	try{
+		if("true"=="false"){
+			location.href = "../Login.jsp?TIM=1774212908637&twSessionId=aelwwujdey";
+		}
+	}catch(error){
+		alert("An error occurred and below is the error message.\n\n" + error.message);
+	}
+}
+
+var weights = new Pile();
+var templates = new Pile();
+var bracketTypes = new Pile();
+
+var defaultBF = "";
+var emptyBF = "";
+
+$(window).resize(function() {
+	setContentFrameHeight();
+});
+
+function startUp(){
+
+	verifyUser();
+
+	var str;
+	var arr;
+	var a;
+	var p;
+
+	str = "54~0~Default Template~700~590~8~0,Prelims,2,Championship Bracket,3,Consolation Bracket~54~660206132~Changes~900~600~10~0,Prelims,2,Championship Bracket,3,Consolation Bracket~54~660207132~IMG~710~950~7~0,Prelims,2,Championship Bracket,3,Consolation Bracket";
+	var ndx = 0;
+
+	if(str != ""){
+
+		arr	= str.split("~");
+
+		var pageShown = false;
+		var showPage = false;
+
+		for(var i=0;i<arr.length;i+=7){
+
+			a = arr[i+6].split(",");
+
+			p = new Pile();
+			pageShown = false;
+			showPage = false;
+			for(var j=0;j<a.length;j+=2){
+				pId = parseInt(a[j]);
+				showPage = false;
+				if(pId==1 || pId==2 || pId==4 || pId==6){
+					showPage = true;
+					pageShown = true;
+				}
+				p.add(new BracketPage(j/2, pId, a[j+1], showPage));
+			}
+
+			templates.add( new Template( ndx++, parseInt(arr[i+0]), parseInt(arr[i+1]), arr[i+2], arr[i+3], arr[i+4], arr[i+5], p) );
+
+		}
+
+	}
+
+	str = "2059817138~125~54~2059818138~133~54~2059819138~141~54~2059820138~149~54~2059821138~157~54~2059822138~165~54~2059823138~174~54~2059824138~184~54~2059825138~197~54~2059826138~285~54";
+
+	ndx = 0;
+
+	if(str!=null){
+
+		arr = str.split("~");
+
+		var w;
+
+		for(var i=0;i<arr.length;i+=3){
+
+			w = new Weight(ndx++, parseInt(arr[i+0]), arr[i+1], parseInt(arr[i+2]));
+
+			weights.add( w );
+
+		}
+
+	}
+
+	str = "54";
+
+	if(str!=null){
+		arr = str.split(",");
+		for(var i=0;i<arr.length;i++){
+			bracketTypes.add(new BracketType(arr[i]));
+		}
+	}
+
+	drawWeights();
+	
+	defaultBF += "<div class='message bracket-message' onclick='foucsSidebarBox()'>";
+	defaultBF += "	<i aria-hidden='true' class='message-icon icon-bracket'></i>";
+	defaultBF += "	<h1>View Brackets</h1>";
+	defaultBF += "	<h2>Use the <span style='color: #0070BB; text-decoration: none;'><i aria-hidden='true' class='icon-bracket' style='vertical-align: text-top;'></i>Bracket Menu</span> to select a bracket</h2>";
+	defaultBF += "</div>";
+	
+	emptyBF += "<div class='message bracket-message'>";
+	emptyBF += "	<i aria-hidden='true' class='message-icon icon-notification'></i>";
+	emptyBF += "	<h1>Whoah!</h1>";
+	emptyBF += "	<h2>Nothing to see here...</h2>";
+	emptyBF += "</div>";
+		
+	document.getElementById("bracket-frame").innerHTML = defaultBF;
+
+	var newWindowFrame = document.getElementById("newWindowFrame");
+	var newWindowBox = document.getElementById("bracketNewWindow");
+	if(window.location!==window.parent.location){
+	
+		if(localStorage.getItem("tw_bracket_newWindow") !== null){
+			newWindowBox.checked = localStorage["tw_bracket_newWindow"]=="true";
+		}
+		
+	}else{
+	
+		newWindowFrame.hidden = true;
+		newWindowBox.checked = false;
+		newWindowBox.disabled = true;
+		
+		if(true){
+			if(true){
+				try{
+					var html = "<div class='ad-slot-frame lg-ad-slot'><div id='div-ad-slot-1' class='div-ad-slot'></div></div>";
+					document.getElementById("fixed-ad-frame").innerHTML = html;
+					document.getElementById("PageFrame").setAttribute("onload", "try { refreshAds(); } catch(e) {}");
+				}catch(e){}
+			}
+		}
+		
+	}
+	
+	setContentFrameHeight();
+
+	
+	attachBracketsAnalytic();
+}
+
+function drawWeights(){
+
+	var s = document.createElement("select");
+	s.id = "weightBox"; s.name = "weightBox";
+	s.className = "tw-box";
+	s.onchange = function(){ weightChanged(this.value); };
+	var placeholder = document.createElement("option");
+	placeholder.label = "Weight Class";
+	placeholder.text = "Weight Class";
+	placeholder.value = "";
+	placeholder.disabled = true;
+	placeholder.selected = true;
+	s.appendChild(placeholder);
+	
+	var o,w;
+	for(var i=0;i<weights.size();i++){
+		w = weights.get(i);
+		o = document.createElement("option");
+		o.value = w.weightIndex;
+		o.label = w.weightName;
+		o.text = w.weightName;
+		if(w.weightId == "2059821138") o.selected = "true";
+		s.appendChild(o);
+	}
+
+	document.getElementById("weightFrame").innerHTML = "";
+	document.getElementById("weightFrame").appendChild(s);
+
+	document.getElementById("templateFrame").innerHTML = "";
+
+	document.getElementById("settingsFrame").innerHTML = "";
+	
+	if(s.value != "") s.onchange();
+
+}
+
+function weightChanged(wNdx){
+
+	var html = "";
+
+	var w = null;
+
+	if(wNdx!=""){
+
+		w = weights.get(parseInt(wNdx));
+
+		html += "<select id='templateBox' name='templateBox' class='tw-box' onchange='templateChanged(this.value)'>";
+		var t;
+
+		for(var i=0;i<templates.size();i++){
+
+			t = templates.get(i);
+
+			if(t.bracketId==w.bracketId){
+
+				html += "<option value='" + t.templateIndex + "'>" + t.templateName + "</option>";
+
+			}
+
+		}
+
+		html += "</select>";
+
+	}
+
+	document.getElementById("templateFrame").innerHTML = html;
+
+	if(w!=null){
+		var bt;
+		for(var i=0;i<bracketTypes.size();i++){
+			bt = bracketTypes.get(i);
+			if(bt.bracketId==w.bracketId){
+				changeSelectBoxValue(document.getElementById("templateBox"), bt.defaultTemplateIndex+"");
+			}
+		}
+	}
+
+	templateChanged();
+}
+
+function templateChanged(){
+
+	with(window.document.theForm){
+
+		var html = ""
+		var p;
+		var t = templates.get( parseInt(templateBox.value) );
+		
+		html += "<div class='table'>";
+		html += "	<div class='row'>";
+		html += "		<div class='col-header'><div>Width</div></div>";
+		html += "		<div class='col-header'><div>Height</div></div>";
+		html += "		<div class='col-header'><div>Font</div></div>";
+		html += "	</div>";
+		html += "	<div class='row'>";
+		html += "		<div class='cell'><div class='sidebar-input'><input type='text' id='bracketWidth' name='bracketWidth' value='" + t.bracketWidth + "' class='tw-box'></input></div></div>";
+		html += "		<div class='cell'><div class='sidebar-input'><input type='text' id='bracketHeight' name='bracketHeight' value='" + t.bracketHeight + "' class='tw-box'></input></div></div>";
+		html += "		<div class='cell'><div class='sidebar-input'><input type='text' id='bracketFont' name='bracketFont' value='" + t.bracketFont + "' class='tw-box'></input></div></div>";
+		html += "	</div>";
+		html += "</div>";
+
+		document.getElementById("settingsFrame").innerHTML = html;
+		document.getElementById("pages-menu").innerHTML = getPagesHTML(t);
+
+		updateViewportString();
+		if(!mobile && viewportString!="mobile") viewBracket();
+
+	}
+
+}
+
+function pageChanged(pId){
+	with(window.document.theForm){
+		var t = templates.get( parseInt(templateBox.value) );
+		viewBracket();
+	}
+}
+
+function getPagesHTML(t){
+	var html = "";	
+	var p;
+
+	var pmWidth = document.getElementById("pages-menu").offsetWidth;
+	var maxChar = 12;
+	if((t.pages.size()*180) > pmWidth) maxChar = 5;
+
+	html += "	<ul class='bracket-pages'>";
+	for(var i=0;i<t.pages.size();i++){
+		p = t.pages.get(i);
+		html += "		<li class='bracket-page-item' style='max-width: " + 100/t.pages.size() + "%;'>";
+		html += " 		<input type='radio' id='bracket-page-item_"+p.pageId+"' name='bracket-pages' " + (p.showPage ? "checked" : "") + " onchange='pageChanged(" + p.pageId + ")'></input>";
+		html += "			<label class='bracket-header-text' for='bracket-page-item_"+p.pageId+"' title='" + p.pageName + "'>" + p.pageAbbr(maxChar) + "</label>";
+		html += "		</li>";
+	}
+	html += "	</ul>";
+	return html;
+}
+
+function printBracket(){
+	with(window.document.theForm){
+		if(weightBox.value==""){
+			alert("You must select a weight class to view the bracket for.");
+		}else{
+
+			var w = weights.get(parseInt(weightBox.value));
+			var t = templates.get(parseInt(templateBox.value));
+			t.bracketWidth = bracketWidth.value;
+			t.bracketHeight = bracketHeight.value;
+			t.bracketFont = bracketFont.value;
+
+			var bt;
+			for(var i=0;i<bracketTypes.size();i++){
+				bt = bracketTypes.get(i);
+				if(bt.bracketId==w.bracketId){
+					bt.defaultTemplateIndex = t.templateIndex;
+				}
+			}
+
+			var p;
+			pStr = "";
+			for(var i=0;i<t.pages.size();i++){
+				p = t.pages.get(i);
+				if(document.getElementById("bracket-page-item_" + p.pageId).checked){
+					if(pStr!="") pStr += ",";
+					pStr += p.pageId;
+					p.showPage = true;
+				}else{
+					p.showPage = false;
+				}
+			}
+
+			var loc = "Bracket.jsp?TIM=1774212908637&twSessionId=aelwwujdey";
+			loc += "&groupId=" + w.weightId;
+			loc += "&bracketWidth=" + t.bracketWidth;
+			loc += "&bracketHeight=" + t.bracketHeight;
+			loc += "&bracketFontSize=" + t.bracketFont;
+			loc += "&includePages=" + pStr;
+			loc += "&templateId=" + (t.templateId==0 ? "" : t.templateId);
+
+			openPage(loc, .75, .75, "resizable=yes,scrollbars=yes,menubar=yes", "Bracket_" + w.weightId);
+
+		}
+	}
+}
+
+var ajaxRequests = new AjaxQueue(1, "AjaxQueue", 15000, 4, 0 );
+
+function viewBracket(){
+	with(window.document.theForm){
+		if(weightBox.value==""){
+			alert("You must select a weight class to view the bracket for.");
+		}else{
+
+			var w = weights.get(parseInt(weightBox.value));
+			var t = templates.get(parseInt(templateBox.value));
+			t.bracketWidth = bracketWidth.value;
+			t.bracketHeight = bracketHeight.value;
+			t.bracketFont = bracketFont.value;
+
+			var bt;
+			for(var i=0;i<bracketTypes.size();i++){
+				bt = bracketTypes.get(i);
+				if(bt.bracketId==w.bracketId){
+					bt.defaultTemplateIndex = t.templateIndex;
+				}
+			}
+
+			var p;
+			pStr = "";
+			for(var i=0;i<t.pages.size();i++){
+				p = t.pages.get(i);
+				if(document.getElementById("bracket-page-item_" + p.pageId).checked){
+					if(pStr!="") pStr += ",";
+					pStr += p.pageId;
+					p.showPage = true;
+				}else{
+					p.showPage = false;
+				}
+			}
+			
+			Object.assign(gtmObject.targeting, {
+				"bracket_id": [w.weightId],
+				"bracket_name": [w.weightName]
+			});
+
+			var loc = "AjaxFunctions.jsp?TIM=1774212908637&twSessionId=aelwwujdey&function=getBracket";
+			var parms = "";
+			parms += "&groupId=" + w.weightId;
+			parms += "&width=" + t.bracketWidth;
+			parms += "&height=" + t.bracketHeight;
+			parms += "&font=" + t.bracketFont;
+			parms += "&includePages=" + pStr;
+			parms += "&templateId=" + t.templateId;
+
+			if(ajaxRequests.requests.size()==0){
+				lastGroupId = w.weightId;
+				ajaxRequests.enqueue(loc+parms, receivedBracket, null);
+			}else{
+				alert("We are waiting to retreive the last bracket you selected.");
+			}
+			
+			if(window.location!==window.parent.location){
+				localStorage["tw_bracket_newWindow"] = bracketNewWindow.checked;
+				if(bracketNewWindow.checked){
+					window.open(location.href+"&"+parms);
+				}
+			}
+
+		}
+	}
+}
+
+function receivedBracket(req){
+	var str = trim(req.responseText);
+	drawBracket(str);
+
+	refreshAds();
+	if (window !== window.parent) {
+		parent.refreshAds();
+	}
+}
+
+function drawBracket(str){
+
+	var arr = str.split("<div class='pageBreak'></div>");
+
+	var html = "";
+
+	for(var i=0;i<arr.length;i++){
+		if(arr[i]!=""){
+			html += "<div class='bracket-page' id='page_" + i + "' style='position:relative;top:" + (i*50) + "'>" + arr[i] + "</div>";
+		}else{
+			html += emptyBF;
+		}
+	}
+	
+	resetScroll("bracket-content");
+	closeMobileSidebar();
+	
+	document.getElementById("bracket-frame").innerHTML = html;
+	attachSelectAnalytic();
+	
+	/*************************************
+	------------ TEAM TRACKER ------------
+	*************************************/
+	var jsonMyTrackEvent = "";
+	if( jsonMyTrackEvent != ""){
+		var myTrackEvent = null;
+		try{ myTrackEvent = JSON.parse(jsonMyTrackEvent); }catch(e){}
+		if(myTrackEvent){
+			var cssArr = {
+				background: "yellow",
+				display: "inline-block",
+				padding: "0 .125em"
+			};
+			if(myTrackEvent.teams){
+				var arr = myTrackEvent.teams;
+				var eArr = [];
+				for(var i=0;i<arr.length;i++){
+					$("[data-team-id='" + arr[i].id + "']").css(cssArr);
+				}
+			}
+			if(myTrackEvent.wrestlers){
+				var arr = myTrackEvent.wrestlers;
+				var eArr = [];
+				for(var i=0;i<arr.length;i++){
+					$("[data-wrestler-id='" + arr[i].id + "']").css(cssArr);
+				}
+			}
+		}
+	}
+
+}
+
+function Weight(wNdx, wId, wName, bId){
+	this.weightIndex = wNdx;
+	this.weightId = wId;
+	this.weightName = wName;
+	this.bracketId = bId;
+}
+
+function Template(tNdx, bId, tId, tName, bw, bh, bf, p){
+	this.templateIndex = tNdx;
+	this.bracketId = bId;
+	this.templateId = tId;
+	this.templateName = tName;
+	this.bracketWidth = bw;
+	this.bracketHeight = bh;
+	this.bracketFont = bf;
+	this.pages = p;
+}
+
+function BracketPage(pNdx, pId, pName, sp){
+	this.pageIndex = pNdx;
+	this.pageId = pId;
+	this.pageName = pName;
+	this.showPage = sp;
+	
+	this.pageAbbr = pageAbbr;
+	
+	function pageAbbr(n){
+	
+		var str = this.pageName.replace(" Bracket", "");
+		var a = str.split(" ");
+		var s;
+		var t = "";
+		var c;
+		
+		if(a!=null){
+			for(var i=0;i<a.length;i++){
+			
+				s = a[i].trim();
+				c = -1;
+				
+				if(s!=""){
+
+					if(s.toLowerCase() == "bottom"){
+						c = (i==0 ? s.length : 3);
+					}else if(s.toLowerCase() == "championship"){
+						c = 5;
+					}else if(s.toLowerCase() == "consolation"){
+						c = 4;
+					}else if(s.toLowerCase() == "cross"){
+						c = s.length;
+					}else if(s.toLowerCase() == "entire"){
+						c = s.length;
+					}else if(s.toLowerCase() == "page"){
+						s = "Pg";
+						c = s.length;
+					}else if(s.toLowerCase() == "prelims"){
+						c = 6;
+					}else if(s.toLowerCase() == "pool"){
+						c = s.length;
+					}else if(s.toLowerCase() == "top"){
+						c = s.length;
+					}
+				}
+
+				if(t!="") t += " ";
+				t += s.substring(0, (s.length>n ? c : n));
+				
+			}
+		}
+		
+		return t;
+		
+	}
+}
+
+function BracketType(bId){
+	this.bracketId = bId;
+	this.defaultTemplateIndex = 0;
+}
+
+function setContentFrameHeight(){
+  $(".scroll-box").outerHeight($(document.getElementById("content-frame")).outerHeight()+"px");
+}
+
+function foucsSidebarBox(){
+	var e = "bracket-body";
+	var c = "active-sidebar";
+	if(!$(document.getElementById(e)).hasClass(c)){
+		toggleElementClass(e,c);
+	}
+	document.getElementById("weightBox").focus();
+}
+
+function resetScroll(d){
+	var e = document.getElementById(d);
+	e.scrollTop = 0;
+	e.scrollLeft = 0;
+}
+
+function openMyTrackMember(){
+
+	var html = "";
+	
+	if(parent.isGoldMember){
+	
+		openPage("./Charts.jsp?TIM=1774212908637&twSessionId=aelwwujdey&twId=", 600, 1075, "maximize=yes,scrollbars=yes,resizable=yes,menubar=yes", "Brackets")
+	
+		html += "<div class='message bracket-message gold-message'>";
+		html += "	<i aria-hidden='true' class='message-icon icon-bracket'></i>";
+		html += "	<h1>Multiple Brackets</h1>";
+		html += "	<h2>View multiple brackets at a time</h2>";
+		html += "</div>";
+		html += "<div class='message-buttons'>";
+		html += "	<input class='plain-button' type='button' value='View Brackets' onclick=\"openPage('./Charts.jsp?TIM=1774212908637&twSessionId=aelwwujdey&twId=', 600, 1075, 'maximize=yes,scrollbars=yes,resizable=yes,menubar=yes', 'Brackets')\"></input>";
+		html += "</div>";
+	}else{
+		html += "<div class='message bracket-message gold-message'>";
+		html += "	<i aria-hidden='true' class='message-icon icon-hawk-red-white'></i>";
+		html += "	<h1>Upgrade to FloPRO</h1>";
+		html += "	<h2>View multiple brackets, follow wrestlers, and more!</h2>";
+		html += "</div>";
+		html += "<div class='message-buttons'>";
+		html += "	<input class='plain-button' type='button' value='Upgrade' onclick='openGoldSubscribe()'></input>";
+		html += "</div>";
+		openGoldSubscribe();
+	}
+	
+	if(html==""){
+	
+		html = emptyBF;
+		
+	}else{
+	
+		html += "<div class='message blue-message message-list-frame'>";
+		html += "	<h1>Benefits FloPRO</h1>";
+		html += "	<ul class='message-list'>";
+		html += "	 <li><i aria-hidden='true' class='icon-history'></i><span>More in Recent</span></li>";
+		html += "	 <li><i aria-hidden='true' class='icon-numbered-list'></i><span>Filter Rankings</span></li>";
+		html += "	 <li><i aria-hidden='true' class='icon-plus'></i><span>More Time</span></li>";
+		html += "	 <li><i aria-hidden='true' class='icon-ticket'></i><span>Coupons</span></li>";
+		html += "	 <li><i aria-hidden='true' class='icon-bracket'></i><span>View Brackets</span></li>";
+		html += "	 <li><i aria-hidden='true' class='icon-bars'></i><span>Follow Wrestlers</span></li>";
+		html += "	 <li><a href=\"javascript:goToFloProUrl('https://accounts.trackwrestling.com', 'aelwwujdey')\"><i aria-hidden='true' class='icon-more'></i><span>View More</span></a></li>";
+		html += "	</ul>";
+		html += "</div>";
+		
+	}
+	
+	document.getElementById("bracket-frame").innerHTML = html;
+	
+	closeMobileSidebar();
+	
+}
+
+function closeMobileSidebar(){
+	updateViewportString();
+	var e = "bracket-body";
+	var c = "active-sidebar";
+	if((mobile || viewportString=="mobile") && $(document.getElementById(e)).hasClass(c)){
+		toggleElementClass(e,c);
+	}
+}
+
+function openGoldSubscribe(){
+	goToFloProUrl('https://accounts.trackwrestling.com', 'aelwwujdey');
+}
+
+</script>
+
+<link rel='canonical' href='https://www.trackwrestling.com/predefinedtournaments/BracketViewer.jsp?tournamentId=931299132&groupId=2059821138'/>
+
+<script type='text/javascript'>var SSPstring = 'rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAADB3CAAAAEAAAAAjdAAJU1NfVGVhbUlkdAAAdAAEV29yZHB0AAtTU19Vc2VyTmFtZXB0AAtPcmRlck51bWJlcnB0AAlteVRyYWNrSWRxAH4AA3QADXBhcnRpY2lwYW50SWRxAH4AA3QAEVRvdXJuYW1lbnRHcm91cElkcHQACGxlYWd1ZUlkcQB+AAN0AAhzdFRlYW1JZHEAfgADdAAIcG9ydGFsSWRxAH4AA3QADHRvdXJuYW1lbnRJZHQACTkzMTI5OTEzMnQABXB3b3JkcQB+AAN0AA10cmFuc0RldGFpbElkcQB+AAN0AA1TU19Vc2VyVHlwZUlkcHQACndyZXN0bGVySWRxAH4AA3QACFBhc3N3b3JkcQB+AAN0AAdldmVudElkcQB+AAN0AAZBVU5hbWVwdAAGQVBXb3JkcHQACFVzZXJOYW1ldAAAdAAFdW5hbWVxAH4AA3QADXRyYW5zYWN0aW9uSWRxAH4AA3QADlRvdXJuYW1lbnRUeXBldAABMXQABmR1YWxJZHEAfgADdAAHU1NfR0JJZHB0ABNTeXN0ZW1BZG1pblBhc3N3b3JkcHQABlVzZXJJZHB0AAZ0ZWFtSWRxAH4AA3QAClNTUF9leHBpcmV0AA0xNzc0MjE2NTA4Njg3dAAMVG91cm5hbWVudElkcQB+AA50AAlyYW5raW5nSWRxAH4AA3QACHVzZXJUeXBldAAGdmlld2VydAALU1NfU2Vhc29uSWRwdAAIVXNlclR5cGVxAH4AJ3QABVNTX1BXcHg=';</script>
+</head>
+
+
+
+<body onload="startUp();">
+<script language='javascript'>
+try{ initGoogleTagManager(1); }catch(gtmError){}
+</script>
+
+
+<form id="theForm" name="theForm" method="post">
+<table style='position:absolute;z-index:200;' width='100%' border='0' cellspacing='0' cellpadding='0'><tr height='0'><td align='center'><div id='loadingMessage' class='loading'>LOADING...</div></td></tr></table>
+
+
+<iframe style="position:absolute" id="MethodCallerFrame" name="MethodCallerFrame" src="MethodCaller.jsp" width="1px" height="1px" frameborder="0"></iframe>
+
+<div class="table vertical-fill bracket-body active-sidebar" id="bracket-body">
+
+	<div class="row">
+		<div class="cell">
+			
+			<div class="table row-header">
+			
+				<div class="col-header sidebar-column bracket-header bracket-sidebar-header">
+					<div class="sidebar-menu-button">
+						<a href="javascript:toggleElementClass('bracket-body','active-sidebar');" class="bracket-header-text">
+							<i aria-hidden="true" class="sidebar-menu-icon icon-bracket"></i>
+							<span class="sidebar-menu-title">Bracket Menu</span>
+						</a>
+					</div>
+
+				</div>
+				<div class="col-header bracket-header">
+					<div id="pages-menu">&nbsp;</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="row vertical-fill" id="content-frame">
+		<div class="cell">
+			
+			<div class="table vertical-fill">
+				<div class="cell sidebar-column sidebar-content-frame">
+					<div class="scroll-box sidebar-box">
+						<div class="sidebar-content" id="sidebar-content">
+							<div class="sidebar-input" id="weightFrame"></div>
+							<div class="sidebar-input" id="newWindowFrame"><label for="bracketNewWindow">New Window</label><input type="checkbox" id="bracketNewWindow" class="tw-box"></input></div>
+							<div class="sidebar-input" id="templateFrame"></div>
+							<div class="sidebar-input settings-frame" id="settingsFrame"></div>
+							<div class="sidebar-buttons">
+								<input type="button" value="View" onclick="viewBracket()" class="tw-box"></input>
+								<input type="button" value="Print" onclick="printBracket()" class="tw-box"></input>
+							</div>
+
+							
+								<div>
+									<div id="div-ad-slot-bracket-sidebar"></div>
+								</div>
+							
+
+							<div>
+								<div class="message sidebar-message gold-message" onclick="openMyTrackMember();">
+									<i aria-hidden="true" class="message-icon icon-bracket"></i>
+									<h1>FloPRO Subscribers</h1>
+									<h2>Click here to <span style="display: inline-block;">upgrade to FloPRO</span></h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cell bracket-content-frame">
+					<div class="scroll-box bracket-content" id="bracket-content">
+						
+							<div id="div-ad-slot-bracket"></div>
+						
+						<div class="bracket-frame" id="bracket-frame"></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="row">
+		<div id="fixed-ad-frame" class="fixed-ad-frame"></div>
+	</div>
+	
+</div>
+
+</form>
+
+<script language="javascript" src="../Footer.js"></script>
+
+</body>
+
+
+</html>
+
+

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KY HS Boys Wrestling — Wrestlers & Matches by Season</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0f0f1a;
+      color: #e8e8f0;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #c8d8f8;
+      margin-bottom: 6px;
+      letter-spacing: 0.03em;
+    }
+    .subtitle {
+      font-size: 0.85rem;
+      color: #7888a8;
+      margin-bottom: 36px;
+    }
+    .chart-wrap {
+      background: #1a1a2e;
+      border-radius: 12px;
+      padding: 32px 40px 24px 20px;
+      width: 100%;
+      max-width: 860px;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.4);
+    }
+    svg { overflow: visible; display: block; }
+    .legend {
+      display: flex;
+      gap: 28px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      color: #aab8d0;
+    }
+    .legend-swatch {
+      width: 28px;
+      height: 3px;
+      border-radius: 2px;
+    }
+    .legend-area {
+      width: 28px;
+      height: 12px;
+      border-radius: 3px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Kentucky HS Boys Wrestling</h1>
+<p class="subtitle">Wrestlers &amp; Matches per Season — 2020 to 2026</p>
+
+<div class="chart-wrap">
+  <svg id="chart" viewBox="0 0 780 340" width="100%"></svg>
+  <div class="legend">
+    <div class="legend-item">
+      <div class="legend-area" style="background:#4a90d9;"></div>
+      <span>Matches (left axis)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-swatch" style="background:#f0a030;"></div>
+      <span>Wrestlers (right axis)</span>
+    </div>
+  </div>
+</div>
+
+<script>
+const data = [
+  { season: 2020, wrestlers: 2449, matches: 43922 },
+  { season: 2021, wrestlers: 1710, matches: 26099 },
+  { season: 2022, wrestlers: 2732, matches: 42288 },
+  { season: 2023, wrestlers: 3275, matches: 61127 },
+  { season: 2024, wrestlers: 3565, matches: 55332 },
+  { season: 2025, wrestlers: 3923, matches: 62999 },
+  { season: 2026, wrestlers: 3741, matches: 60677 },
+];
+
+const svg = document.getElementById('chart');
+const W = 780, H = 340;
+const pad = { top: 20, right: 70, bottom: 50, left: 70 };
+const innerW = W - pad.left - pad.right;
+const innerH = H - pad.top - pad.bottom;
+
+// Scales
+const seasons = data.map(d => d.season);
+const nPoints = seasons.length;
+const xStep = innerW / (nPoints - 1);
+const xOf = i => pad.left + i * xStep;
+
+const maxMatches = 70000;
+const minMatches = 0;
+const yMatches = v => pad.top + innerH - ((v - minMatches) / (maxMatches - minMatches)) * innerH;
+
+const maxWrestlers = 4500;
+const minWrestlers = 0;
+const yWrestlers = v => pad.top + innerH - ((v - minWrestlers) / (maxWrestlers - minWrestlers)) * innerH;
+
+function ns(tag) {
+  return document.createElementNS('http://www.w3.org/2000/svg', tag);
+}
+
+function makeLine(points, color, width = 2) {
+  const d = points.map((p, i) => `${i === 0 ? 'M' : 'L'}${p[0]},${p[1]}`).join(' ');
+  const path = ns('path');
+  path.setAttribute('d', d);
+  path.setAttribute('fill', 'none');
+  path.setAttribute('stroke', color);
+  path.setAttribute('stroke-width', width);
+  path.setAttribute('stroke-linejoin', 'round');
+  path.setAttribute('stroke-linecap', 'round');
+  return path;
+}
+
+function makeArea(points, color) {
+  const baseY = pad.top + innerH;
+  const top = points.map((p, i) => `${i === 0 ? 'M' : 'L'}${p[0]},${p[1]}`).join(' ');
+  const bottom = [...points].reverse().map((p, i) => `L${p[0]},${baseY}`).join(' ') + ` L${points[0][0]},${baseY} Z`;
+  const path = ns('path');
+  path.setAttribute('d', top + ' ' + bottom);
+  path.setAttribute('fill', color);
+  path.setAttribute('fill-opacity', '0.18');
+  path.setAttribute('stroke', 'none');
+  return path;
+}
+
+// Grid lines (matches axis)
+const matchTicks = [0, 10000, 20000, 30000, 40000, 50000, 60000, 70000];
+matchTicks.forEach(v => {
+  const y = yMatches(v);
+  const line = ns('line');
+  line.setAttribute('x1', pad.left);
+  line.setAttribute('x2', pad.left + innerW);
+  line.setAttribute('y1', y);
+  line.setAttribute('y2', y);
+  line.setAttribute('stroke', '#2a2a44');
+  line.setAttribute('stroke-width', '1');
+  svg.appendChild(line);
+});
+
+// Left axis labels (matches)
+matchTicks.forEach(v => {
+  const y = yMatches(v);
+  const t = ns('text');
+  t.setAttribute('x', pad.left - 8);
+  t.setAttribute('y', y + 4);
+  t.setAttribute('text-anchor', 'end');
+  t.setAttribute('fill', '#4a90d9');
+  t.setAttribute('font-size', '11');
+  t.textContent = v === 0 ? '0' : (v / 1000) + 'k';
+  svg.appendChild(t);
+});
+
+// Left axis label
+const leftLabel = ns('text');
+leftLabel.setAttribute('transform', `rotate(-90)`);
+leftLabel.setAttribute('x', -(pad.top + innerH / 2));
+leftLabel.setAttribute('y', 16);
+leftLabel.setAttribute('text-anchor', 'middle');
+leftLabel.setAttribute('fill', '#4a90d9');
+leftLabel.setAttribute('font-size', '12');
+leftLabel.textContent = 'Matches';
+svg.appendChild(leftLabel);
+
+// Right axis labels (wrestlers)
+const wrestlerTicks = [0, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500];
+wrestlerTicks.forEach(v => {
+  const y = yWrestlers(v);
+  const t = ns('text');
+  t.setAttribute('x', pad.left + innerW + 8);
+  t.setAttribute('y', y + 4);
+  t.setAttribute('text-anchor', 'start');
+  t.setAttribute('fill', '#f0a030');
+  t.setAttribute('font-size', '11');
+  t.textContent = v === 0 ? '0' : v >= 1000 ? (v / 1000).toFixed(1) + 'k' : v;
+  svg.appendChild(t);
+});
+
+// Right axis label
+const rightLabel = ns('text');
+rightLabel.setAttribute('transform', `rotate(90)`);
+rightLabel.setAttribute('x', pad.top + innerH / 2);
+rightLabel.setAttribute('y', -(W - pad.right + 52));
+rightLabel.setAttribute('text-anchor', 'middle');
+rightLabel.setAttribute('fill', '#f0a030');
+rightLabel.setAttribute('font-size', '12');
+rightLabel.textContent = 'Wrestlers';
+svg.appendChild(rightLabel);
+
+// X axis labels
+data.forEach((d, i) => {
+  const x = xOf(i);
+  const t = ns('text');
+  t.setAttribute('x', x);
+  t.setAttribute('y', pad.top + innerH + 22);
+  t.setAttribute('text-anchor', 'middle');
+  t.setAttribute('fill', '#7888a8');
+  t.setAttribute('font-size', '12');
+  t.textContent = d.season;
+  svg.appendChild(t);
+
+  // tick
+  const tick = ns('line');
+  tick.setAttribute('x1', x);
+  tick.setAttribute('x2', x);
+  tick.setAttribute('y1', pad.top + innerH);
+  tick.setAttribute('y2', pad.top + innerH + 5);
+  tick.setAttribute('stroke', '#3a3a5a');
+  svg.appendChild(tick);
+});
+
+// Axes
+const xAxis = ns('line');
+xAxis.setAttribute('x1', pad.left); xAxis.setAttribute('x2', pad.left + innerW);
+xAxis.setAttribute('y1', pad.top + innerH); xAxis.setAttribute('y2', pad.top + innerH);
+xAxis.setAttribute('stroke', '#3a3a5a'); xAxis.setAttribute('stroke-width', '1');
+svg.appendChild(xAxis);
+
+// Match points
+const matchPts = data.map((d, i) => [xOf(i), yMatches(d.matches)]);
+const wrestlerPts = data.map((d, i) => [xOf(i), yWrestlers(d.wrestlers)]);
+
+// Area + line for matches
+svg.appendChild(makeArea(matchPts, '#4a90d9'));
+svg.appendChild(makeLine(matchPts, '#4a90d9', 2.5));
+
+// Line for wrestlers
+svg.appendChild(makeLine(wrestlerPts, '#f0a030', 2.5));
+
+// Dots + value labels
+data.forEach((d, i) => {
+  // Match dot
+  const c1 = ns('circle');
+  c1.setAttribute('cx', xOf(i)); c1.setAttribute('cy', yMatches(d.matches));
+  c1.setAttribute('r', '4'); c1.setAttribute('fill', '#4a90d9');
+  svg.appendChild(c1);
+
+  // Match label
+  const t1 = ns('text');
+  t1.setAttribute('x', xOf(i));
+  t1.setAttribute('y', yMatches(d.matches) - 9);
+  t1.setAttribute('text-anchor', 'middle');
+  t1.setAttribute('fill', '#4a90d9');
+  t1.setAttribute('font-size', '10');
+  t1.textContent = (d.matches / 1000).toFixed(1) + 'k';
+  svg.appendChild(t1);
+
+  // Wrestler dot
+  const c2 = ns('circle');
+  c2.setAttribute('cx', xOf(i)); c2.setAttribute('cy', yWrestlers(d.wrestlers));
+  c2.setAttribute('r', '4'); c2.setAttribute('fill', '#f0a030');
+  svg.appendChild(c2);
+
+  // Wrestler label
+  const t2 = ns('text');
+  t2.setAttribute('x', xOf(i));
+  t2.setAttribute('y', yWrestlers(d.wrestlers) - 9);
+  t2.setAttribute('text-anchor', 'middle');
+  t2.setAttribute('fill', '#f0a030');
+  t2.setAttribute('font-size', '10');
+  t2.textContent = d.wrestlers.toLocaleString();
+  svg.appendChild(t2);
+});
+
+// COVID annotation for 2021
+const covidX = xOf(1);
+const covidLine = ns('line');
+covidLine.setAttribute('x1', covidX); covidLine.setAttribute('x2', covidX);
+covidLine.setAttribute('y1', pad.top); covidLine.setAttribute('y2', pad.top + innerH);
+covidLine.setAttribute('stroke', '#ff6060');
+covidLine.setAttribute('stroke-width', '1');
+covidLine.setAttribute('stroke-dasharray', '4,3');
+covidLine.setAttribute('opacity', '0.5');
+svg.appendChild(covidLine);
+
+const covidLabel = ns('text');
+covidLabel.setAttribute('x', covidX + 5);
+covidLabel.setAttribute('y', pad.top + 14);
+covidLabel.setAttribute('fill', '#ff6060');
+covidLabel.setAttribute('font-size', '10');
+covidLabel.setAttribute('opacity', '0.8');
+covidLabel.textContent = 'COVID';
+svg.appendChild(covidLabel);
+</script>
+</body>
+</html>

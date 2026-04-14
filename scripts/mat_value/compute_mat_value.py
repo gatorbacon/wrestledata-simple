@@ -118,7 +118,7 @@ def result_to_signed(result_type: str, is_winner: bool) -> Optional[int]:
 _rankings_cache: Dict[Tuple[int, int], Dict[str, int]] = {}
 _tier_averages_cache: Dict[Tuple[int, int], Dict[Tuple[int, int], float]] = {}
 
-def load_rankings(season: int, weight: int, data_dir: str, use_cache: bool = True) -> Dict[str, int]:
+def load_rankings(season: int, weight: int, data_dir: str, use_cache: bool = True, league: str = 'ncaa', gender: str = None) -> Dict[str, int]:
     """
     Load rankings and return dict mapping wrestler_id -> rank. Uses cache for performance.
     
@@ -127,12 +127,17 @@ def load_rankings(season: int, weight: int, data_dir: str, use_cache: bool = Tru
     - Opponent ranks are found in the full list
     - Tier averages are calculated from the full list
     """
-    cache_key = (season, weight)
+    cache_key = (season, weight, league, gender)
     
     if use_cache and cache_key in _rankings_cache:
         return _rankings_cache[cache_key]
     
-    data_path = Path(data_dir) / str(season)
+    # Setup data path based on league type
+    if league == 'hs':
+        state_lower = 'ky'  # Assuming KY for HS
+        data_path = Path(data_dir) / str(season)
+    else:  # ncaa
+        data_path = Path(data_dir) / str(season)
     
     # ALWAYS use full rankings file (contains all wrestlers)
     rankings_file = data_path / f"rankings_{weight}.json"
@@ -169,7 +174,9 @@ def find_opponent_weight_and_rank(
     opponent_id: str,
     season: int,
     primary_weight: int,
-    data_dir: str
+    data_dir: str,
+    league: str = 'ncaa',
+    gender: str = None,
 ) -> Tuple[int, int]:
     """
     Find opponent's weight class and rank using flexible search.
@@ -184,7 +191,14 @@ def find_opponent_weight_and_rank(
     Returns: (opponent_weight, opponent_rank)
     Raises: ValueError if opponent not found in any weight class
     """
-    weights = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
+    # Determine weight classes based on league and gender
+    if league == 'hs':
+        if gender == 'boys':
+            weights = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
+        else:  # girls
+            weights = [100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235]
+    else:  # ncaa
+        weights = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
     data_path = Path(data_dir) / str(season)
     
     # Build search order: primary, adjacent, then rest
@@ -227,7 +241,7 @@ def find_opponent_weight_and_rank(
     )
 
 
-def load_wrestler_matches(season: int, weight: int, wrestler_id: str, data_dir: str) -> List[Dict]:
+def load_wrestler_matches(season: int, weight: int, wrestler_id: str, data_dir: str, league: str = 'ncaa', gender: str = None) -> List[Dict]:
     """
     Load all matches for a wrestler from ALL weight class files.
     
@@ -235,7 +249,14 @@ def load_wrestler_matches(season: int, weight: int, wrestler_id: str, data_dir: 
     """
     data_path = Path(data_dir) / str(season)
     matches = []
-    weights = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
+    # Determine weight classes based on league and gender
+    if league == 'hs':
+        if gender == 'boys':
+            weights = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
+        else:  # girls
+            weights = [100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235]
+    else:  # ncaa
+        weights = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
     
     # Search all weight classes
     for w in weights:
@@ -267,7 +288,9 @@ def get_opponent_info(
     wrestler_id: str,
     season: int,
     primary_weight: int,
-    data_dir: str
+    data_dir: str,
+    league: str = 'ncaa',
+    gender: str = None,
 ) -> Tuple[Optional[str], int, int]:
     """
     Get opponent ID, weight class, and rank from a match using flexible search.
@@ -289,7 +312,7 @@ def get_opponent_info(
         return None, None, None
     
     # Find opponent's weight class and rank using flexible search
-    opp_weight, opp_rank = find_opponent_weight_and_rank(opp_id, season, primary_weight, data_dir)
+    opp_weight, opp_rank = find_opponent_weight_and_rank(opp_id, season, primary_weight, data_dir, league=league, gender=gender)
     
     return opp_id, opp_weight, opp_rank
 
@@ -297,7 +320,9 @@ def get_opponent_info(
 def load_all_matches_for_opponents(
     season: int,
     opponent_weight_map: Dict[str, int],
-    data_dir: str
+    data_dir: str,
+    league: str = 'ncaa',
+    gender: str = None,
 ) -> Dict[str, List[Dict]]:
     """
     Load all matches for a set of opponents from their respective weight classes.
@@ -306,6 +331,8 @@ def load_all_matches_for_opponents(
         season: Season year
         opponent_weight_map: Dict mapping opponent_id -> weight_class
         data_dir: Data directory path
+        league: League type ('ncaa' or 'hs')
+        gender: Gender ('boys' or 'girls', required for HS)
     
     Returns:
         Dict mapping opponent_id -> list of matches

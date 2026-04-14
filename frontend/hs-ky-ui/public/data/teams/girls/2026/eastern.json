@@ -1,0 +1,160 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": "girls",
+  "team_id": "eastern",
+  "team_name": "Eastern",
+  "name": "Eastern",
+  "abbreviation": "EAST",
+  "governing_body": "Kentucky High School Athletic Association",
+  "division": "HS Girls",
+  "conference": null,
+  "location": {
+    "state": "KY",
+    "region": "2"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981180150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
+    "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-03-04T23:14:55.381718Z",
+  "starters": {
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35333690132",
+      "name": "Sonia Tarley",
+      "current_rank": 6,
+      "grade": null,
+      "xtp": 10.78,
+      "xtp_p": 4.26,
+      "xtp_a": 2.33,
+      "xtp_b": 4.19,
+      "xtp_simple": 11.0,
+      "top10_record": {
+        "wins": 6,
+        "losses": 9
+      },
+      "top33_record": {
+        "wins": 19,
+        "losses": 9
+      },
+      "wins": 24,
+      "losses": 10,
+      "top25_wins": 17,
+      "bonus_rate": 0.917
+    },
+    "152": {
+      "weight": 152,
+      "wrestler_id": "35333687132",
+      "name": "Analiah Parga Lujan",
+      "current_rank": 52,
+      "grade": null,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 9
+      },
+      "wins": 4,
+      "losses": 16,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    "235": {
+      "weight": 235,
+      "wrestler_id": "35333686132",
+      "name": "Kaidence Payne",
+      "current_rank": 39,
+      "grade": null,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "wins": 3,
+      "losses": 4,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    }
+  },
+  "remaining": [
+    {
+      "weight": 138,
+      "wrestler_id": "35284469132",
+      "name": "Sonia Tarley",
+      "grade": null,
+      "wins": 1,
+      "losses": 1,
+      "top25_wins": 1,
+      "bonus_rate": 1.0
+    },
+    {
+      "weight": 152,
+      "wrestler_id": "35284451132",
+      "name": "Analiah Parga Lujan",
+      "grade": null,
+      "wins": 0,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_xTP_simple": 11.0,
+  "team_metrics": {
+    "projected_state_points": 11.0,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": 31,
+      "losses": 30
+    },
+    "top33": {
+      "wins": 19,
+      "losses": 21
+    },
+    "top10": {
+      "wins": 6,
+      "losses": 10
+    },
+    "bonus_rate": {
+      "value": 0.933,
+      "rank": 59,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.767,
+      "rank": 99,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.1,
+      "rank": 13,
+      "rank_scope": "league"
+    }
+  }
+}

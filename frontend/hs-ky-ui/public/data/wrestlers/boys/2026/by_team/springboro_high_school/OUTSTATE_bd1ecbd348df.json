@@ -1,0 +1,80 @@
+{
+  "wrestler_id": "OUTSTATE_bd1ecbd348df",
+  "name": "Khary McCall",
+  "team": "Springboro High School",
+  "team_slug": "springboro_high_school",
+  "team_rank": null,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35640359132",
+      "opponent_rank": 18,
+      "opponent_name": "Jeremy Marks",
+      "method": "MD 15-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34992803132",
+      "opponent_rank": 1,
+      "opponent_name": "Micah Thompson",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "34992803132",
+      "opponent_name": "Micah Thompson",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 165,
+      "opponent_rank": 1,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "GMVWA Invitational"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35640359132",
+      "opponent_name": "Jeremy Marks",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": 43,
+      "opponent_weight": 165,
+      "opponent_rank": 18,
+      "weight_class": "165",
+      "result": "W",
+      "method": "MD",
+      "score": "15-3",
+      "duration": "7:00",
+      "event": "GMVWA Invitational"
+    }
+  ],
+  "profile_generated_at": "2026-04-04"
+}

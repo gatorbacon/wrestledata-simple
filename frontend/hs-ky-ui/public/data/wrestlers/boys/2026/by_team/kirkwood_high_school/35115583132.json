@@ -1,0 +1,80 @@
+{
+  "wrestler_id": "35115583132",
+  "name": "Montgomery Wydra",
+  "team": "Kirkwood High School",
+  "team_slug": "kirkwood_high_school",
+  "team_rank": null,
+  "weight_class": 126,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35002889132",
+      "opponent_rank": 57,
+      "opponent_name": "Kieran Pauley",
+      "method": "Fall 1:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35031565132",
+      "opponent_rank": 8,
+      "opponent_name": "Jacob Ramsey",
+      "method": "Fall 4:23"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35031565132",
+      "opponent_name": "Jacob Ramsey",
+      "opponent_team": "Union County",
+      "opponent_team_rank": 17,
+      "opponent_weight": 126,
+      "opponent_rank": 8,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:23",
+      "event": "Johnny Drennan Memorial"
+    },
+    {
+      "date": "2025-12-27",
+      "opponent_id": "35002889132",
+      "opponent_name": "Kieran Pauley",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 79,
+      "opponent_weight": 126,
+      "opponent_rank": 57,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "Maher/Garstin Battle for Indy BOYS 2025"
+    }
+  ],
+  "profile_generated_at": "2026-04-04"
+}

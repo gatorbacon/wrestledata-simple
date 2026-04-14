@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+  <defs>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="#ffffff"/>
+  
+  <!-- Header (MAX 90px tall, tight line spacing ~1.05) -->
+  <text x="540" y="50" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="#000000" text-anchor="middle" inkscape:label="title">KENTUCKY STATE WRESTLING — REGION SCORING</text>
+  <text x="540" y="72" font-family="Arial, sans-serif" font-size="22" fill="#666666" text-anchor="middle" inkscape:label="subtitle">Top 3 Teams by Region | Boys State Tournament</text>
+  <text x="540" y="88" font-family="Arial, sans-serif" font-size="16" fill="#999999" text-anchor="middle" inkscape:label="note">Regions ranked by total points</text>
+  
+  <!-- Region rows container -->
+  <g inkscape:label="regions">
+    <!-- Regions will be populated dynamically -->
+  </g>
+  
+  <!-- Footer -->
+  <text x="540" y="1070" font-family="Arial, sans-serif" font-size="10" fill="#999999" text-anchor="middle" inkscape:label="footer">@ky.wrestling.ranks</text>
+</svg>

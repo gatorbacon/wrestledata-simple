@@ -1,0 +1,236 @@
+
+
+
+
+
+ 
+
+
+
+
+<html>
+<head>
+<script>console.log('ngwMode: optional');</script>
+<script src='https://cmp.osano.com/AzyWAQS5NWEEWkU9/df34419d-698a-4f5c-9dd9-72cd58fa57d7/osano.js?language=en'></script><style>.osano-cm-widget{display:none;}</style><script language='javascript' src='https://www.trackwrestling.com/google_tag_manager.js?version=46'></script>
+<script>dataLayer = [];</script>
+<!-- Begin comScore Tag --><script>window.addEventListener('load', () => {if (typeof _comscore === 'undefined' && window.self === window.top){(function() {window._comscore = window._comscore || [];_comscore.push({ c1: '2', c2: '10037191' });var s = document.createElement('script'), el = document.getElementsByTagName('script')[0]; s.async = true;s.src = 'https://sb.scorecardresearch.com/cs/10037191/beacon.js';el.parentNode.insertBefore(s, el);})();}});</script><noscript><img src='https://sb.scorecardresearch.com/p?c1=2&amp;c2=10037191&amp;cv=3.6.0&amp;cj=1'></noscript><!-- End comScore Tag --><script language='javascript' src='/segment.jsp?twSessionId=rorcubrsyk'></script>
+<script language='javascript' src='/jquery.min.js'></script>
+
+
+
+
+<title>
+Weight Classes
+</title>
+
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel='stylesheet' type='text/css' href='../twIconSet.css'></link>
+<link rel='stylesheet' type='text/css' href='../tw.css'></link>
+
+<!--[if lt IE 9]>
+	<script src='../html5.js'></script>
+<![endif]-->
+
+<script language='javascript' src='../jquery.min.js'></script>
+
+<script language='javascript' src='../Pile.js'></script>
+<script language='javascript' src='../Ajax.js'></script>
+<script language='javascript' src='../FormatFormFields.js'></script>
+<script language='javascript' src='../Essentials.js'></script>
+
+<script language='javascript' src='../TWPage.js'></script>
+<link rel='stylesheet' type='text/css' href='../tw_page.css'></link>
+<!--[if lt IE 9]>
+	<link rel='stylesheet' type='text/css' href='../ie-tw_page.css'></link>
+<![endif]-->
+
+<link rel="stylesheet" type="text/css" href="../stylesheet.css"></link>
+
+<style>
+
+
+
+table.tw-table {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.tw-box {
+	width: 100%;
+	max-width: 300px;
+}
+
+@media all and (max-width: 640px){
+
+	table.tw-table {
+		font-size: 12px;
+	}
+	
+	th[data-short-title] > span { display: none; }
+	th[data-short-title]:after { content: attr(data-short-title); }
+	
+}
+
+</style>
+
+<script language="javascript">
+
+function startUp(){
+	try{
+
+		verifyUser();
+	
+		if(true){
+		
+			drawPageHeader("106");
+
+			if(false) drawPageMessages("<div class='messageIcon'>Some features on this page have been disabled because this tournament is locked down</div>");
+
+			var jsonStr = "";
+			jsonStr += "[";
+			jsonStr += "	{\"linkName\":\"Wrestlers\",\"linkURL\":\"javascript:displayLoadingMessage();location.href='ViewWeightClass.jsp?TIM=1775266052652&twSessionId=rorcubrsyk&groupId=2103784138'\"},";
+			jsonStr += "	{\"linkName\":\"Bracket Type\",\"linkURL\":\"javascript:displayLoadingMessage();location.href='BracketType.jsp?TIM=1775266052652&twSessionId=rorcubrsyk&groupId=2103784138'\"},";
+			jsonStr += "	{\"linkName\":\"Seeds\",\"linkURL\":\"javascript:displayLoadingMessage();location.href='SortedGroup.jsp?TIM=1775266052652&twSessionId=rorcubrsyk&groupId=2103784138'\"},";
+			if(true){
+				if(false){
+					jsonStr += "	{\"linkName\":\"Bouts\",\"linkURL\":\"javascript:displayLoadingMessage();location.href='QuickBoutEntry.jsp?TIM=1775266052652&twSessionId=rorcubrsyk&groupId=2103784138'\"},";
+				}
+				jsonStr += "	{\"linkName\":\"Bracket\",\"linkURL\":\"javascript:openPage('Bracket.jsp?TIM=1775266052652&twSessionId=rorcubrsyk&groupId=2103784138',.75,.75,'resizable=yes,scrollbars=yes,menubar=yes','bracket_2103784138')\"},";
+			}
+			jsonStr += "	{\"linkName\":\"Wrestlers Detail\",\"linkURL\":\"javascript:openPage('PrintableWeightClassInfo.jsp?TIM=1775266052652&twSessionId=rorcubrsyk&groupId=2103784138',.75,.75,'resizable=yes,scrollbars=yes,menubar=yes','WeightClassDetailWin')\"}";
+			jsonStr += "]";
+
+			drawPageTopLinksFromJSON(jsonStr);
+
+			if(false){
+				if(true){
+					addPageFunction("Change Weight Class Name","changeGroupName()");
+					addPageFunction("Delete Weight Class","deleteWeightClass()");
+				}
+				
+				drawPageFunctions();
+			}
+			
+		}
+
+	}catch(error){
+		alert("An error occurred and below is the error message.\n\n" + error.message);
+	}
+}
+
+function verifyUser(){
+	try{
+		if("true"=="false"){
+			location.href="../Login.jsp?TIM=1775266052652&twSessionId=rorcubrsyk";
+		}
+	}catch(error){
+		alert("An error occurred and below is the error message.\n\n" + error.message);
+	}
+}
+
+function editParticipant(participantId){
+	try{
+		displayLoadingMessage();
+	  location.href = "EditParticipant.jsp?twSessionId=rorcubrsyk&pageFrom=ViewWeightClass.jsp;groupId=2103784138:TIM=1775266052652:twSessionId=rorcubrsyk&participantId="+participantId;
+	}catch(error){
+		alert("An error occurred and below is the error message.\n\n" + error.message);
+	}
+}
+
+function viewTeamMembers(teamId){
+	try{
+		displayLoadingMessage();
+	  location.href = "ViewTeamMembers.jsp?TIM=1775266052652&twSessionId=rorcubrsyk&teamId="+teamId;
+	}catch(error){
+		alert("An error occurred and below is the error message.\n\n" + error.message);
+	}
+}
+
+function orderParticipantsBy(id){
+	try{
+		var newOrder = "";
+		var co = "1,-2,-3,-4,-5,-6,-7";
+		var coArr = co.split(",");
+		for(var i=0;i<coArr.length;i++){
+			if(id==coArr[i]){
+				newOrder = "-"+id + "," + newOrder;
+			}else if("-"+id==coArr[i]){
+				newOrder = id + "," + newOrder;
+			}else{
+				newOrder += coArr[i] + ",";
+			}
+		}
+		newOrder = newOrder.substring(0,newOrder.length-1);
+		location.href = "ViewWeightClass.jsp?TIM=1775266052652&twSessionId=rorcubrsyk&groupId=2103784138&orderBy="+newOrder+"&tableOnly=";
+	}catch(error){
+		alert("An error occurred and below is the error message.\n\n" + error.message);
+	}
+}
+
+</script>
+
+
+
+<link rel='canonical' href='https://www.trackwrestling.com/predefinedtournaments/ViewWeightClass.jsp?tournamentId=932915132&groupId=2103784138'/>
+
+<script type='text/javascript'>var SSPstring = 'rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAADB3CAAAAEAAAAAjdAAJU1NfVGVhbUlkdAAAdAAEV29yZHB0AAtTU19Vc2VyTmFtZXB0AAtPcmRlck51bWJlcnB0AAlteVRyYWNrSWRxAH4AA3QADXBhcnRpY2lwYW50SWRxAH4AA3QAEVRvdXJuYW1lbnRHcm91cElkcHQACGxlYWd1ZUlkcQB+AAN0AAhzdFRlYW1JZHEAfgADdAAIcG9ydGFsSWRxAH4AA3QADHRvdXJuYW1lbnRJZHQACTkzMjkxNTEzMnQABXB3b3JkcQB+AAN0AA10cmFuc0RldGFpbElkcQB+AAN0AA1TU19Vc2VyVHlwZUlkcHQACndyZXN0bGVySWRxAH4AA3QACFBhc3N3b3JkcQB+AAN0AAdldmVudElkcQB+AAN0AAZBVU5hbWVwdAAGQVBXb3JkcHQACFVzZXJOYW1ldAAAdAAFdW5hbWVxAH4AA3QADXRyYW5zYWN0aW9uSWRxAH4AA3QADlRvdXJuYW1lbnRUeXBldAABMXQABmR1YWxJZHEAfgADdAAHU1NfR0JJZHB0ABNTeXN0ZW1BZG1pblBhc3N3b3JkcHQABlVzZXJJZHB0AAZ0ZWFtSWRxAH4AA3QAClNTUF9leHBpcmV0AA0xNzc1MjY5NjUyNjU5dAAMVG91cm5hbWVudElkcQB+AA50AAlyYW5raW5nSWRxAH4AA3QACHVzZXJUeXBldAAGdmlld2VydAALU1NfU2Vhc29uSWRwdAAIVXNlclR5cGVxAH4AJ3QABVNTX1BXcHg=';</script>
+</head>
+
+
+
+<body onload="startUp();">
+<script language='javascript'>
+try{ initGoogleTagManager(1); }catch(gtmError){}
+</script>
+
+
+<form id="theForm" name="theForm" method="post">
+<table style='position:absolute;z-index:200;' width='100%' border='0' cellspacing='0' cellpadding='0'><tr height='0'><td align='center'><div id='loadingMessage' class='loading'>LOADING...</div></td></tr></table>
+
+
+<iframe style="position:absolute" id="MethodCallerFrame" name="MethodCallerFrame" src="MethodCaller.jsp" width="1px" height="1px" frameborder="0"></iframe>
+
+<div id='assignFrame' class='modalFrame'>
+	<h1>Assign teams by weight class</h1>
+	<i aria-hidden='true' class='icon-close' onclick="hideModal()"></i>
+	<div class='modalFrameContent'>
+		<div class='itemRow inputLabel'>
+			<div>Weights</div>
+			<div>
+				<select id='weightBox' name='weightBox' multiple='multiple' size=5 ><option value=''></option><option value="2103784138">106</option><option value="2103785138">113</option><option value="2103786138">120</option><option value="2103787138">126</option><option value="2103788138">132</option><option value="2103789138">138</option><option value="2103790138">144</option><option value="2103791138">150</option><option value="2103792138">157</option><option value="2103793138">165</option><option value="2103794138">175</option><option value="2103795138">190</option><option value="2103796138">215</option><option value="2103797138">285</option></select>
+			</div>
+		</div>
+	</div>
+	<div class='buttonRow inputButton'>
+		<div>
+			<input type='button' value='Assign' onclick="assignTeams()"></input>
+		</div>
+	</div>
+</div>
+
+<div id="pageContent">
+
+	<div class='modalFrame recordModal' id='recordModal'></div><div class='toolTipFrame' id='toolTipFrame'></div><div class='pageAlertFrame' id='pageAlertFrame'></div><div class='pageHeaderFrame' id='pageHeaderFrame'></div><div class='pageModalFrame' id='pageModalFrame'></div><div class='functionsAndLinksFrame'>	<div class='pageTopLinksFrame' id='pageTopLinksFrame'></div>	<div class='pageFunctionsFrame' id='pageFunctionsFrame'></div></div><div class='pageMessagesFrame' id='pageMessagesFrame'></div><div class='pageGridFrame' id='pageGridFrame'></div><div class='pageFooterFrame' id='pageFooterFrame'></div>
+
+	
+		<center style='position: relative;'>
+			<div id='table-wrapper' style='overflow: auto; margin: 1em 0; width: 100%; position: absolute; padding-bottom: 5em;'>
+				<table width='100%' border='0' cellspacing='0' cellpadding='2' class='tw-table'><tr ><th style='cursor: pointer; cursor: hand' onclick='orderParticipantsBy(5)'>Seed</th><th style='cursor: pointer; cursor: hand' onclick='orderParticipantsBy(1)'>Name</th><th style='cursor: pointer; cursor: hand' onclick='orderParticipantsBy(2)'>Team</th><th style='cursor: pointer; cursor: hand' onclick='orderParticipantsBy(3)'>Grade</th><th style='cursor: pointer; cursor: hand' onclick='orderParticipantsBy(4)'>Record</th><th nowrap>Scoring</th></tr><tr class=''><td style='font-weight:bold;'>3.</td><td><a href='javascript:editParticipant(1627217164)'>Brooks, Mason</a></td><td><a href='javascript:viewTeamMembers(1076288150)'>Somerset</a></td><td>7</td><td>12-0</td><td>Yes</td></tr><tr class=''><td style='font-weight:bold;'>6.</td><td><a href='javascript:editParticipant(482777166)'>Cochran, Carter</a></td><td><a href='javascript:viewTeamMembers(1076278150)'>Danville</a></td><td>10</td><td>11-11</td><td>Yes</td></tr><tr class=''><td style='font-weight:bold;'>10.</td><td><a href='javascript:editParticipant(519559166)'>Cruse, Lucian</a></td><td><a href='javascript:viewTeamMembers(1076276150)'>Campbellsville</a></td><td>7</td><td>0-3</td><td>Yes</td></tr><tr class=''><td style='font-weight:bold;'>2.</td><td><a href='javascript:editParticipant(521056166)'>Gilreath, Max</a></td><td><a href='javascript:viewTeamMembers(1076285150)'>Mccreary Central</a></td><td>11</td><td>17-5</td><td>Yes</td></tr><tr class=''><td style='font-weight:bold;'>9.</td><td><a href='javascript:editParticipant(432345166)'>Greiwe, Asa</a></td><td><a href='javascript:viewTeamMembers(1076277150)'>Corbin</a></td><td>7</td><td>13-17</td><td>Yes</td></tr><tr class=''><td style='font-weight:bold;'>11.</td><td><a href='javascript:editParticipant(463188166)'>Hargrove, Mason</a></td><td><a href='javascript:viewTeamMembers(1624051150)'>Russell County</a></td><td>11</td><td>0-0</td><td>Yes</td></tr><tr class=''><td style='font-weight:bold;'>4.</td><td><a href='javascript:editParticipant(1627273164)'>Holt, Xzander</a></td><td><a href='javascript:viewTeamMembers(1076292150)'>Whitley County</a></td><td>9</td><td>25-8</td><td>Yes</td></tr><tr class=''><td style='font-weight:bold;'>8.</td><td><a href='javascript:editParticipant(486390166)'>Hughes, Jared</a></td><td><a href='javascript:viewTeamMembers(1624048150)'>Adair County</a></td><td>8</td><td>1-0</td><td>Yes</td></tr><tr class=''><td style='font-weight:bold;'>5.</td><td><a href='javascript:editParticipant(538604166)'>Keeton, Kale</a></td><td><a href='javascript:viewTeamMembers(1076291150)'>Wayne County</a></td><td>7</td><td>18-18</td><td>Yes</td></tr><tr class=''><td style='font-weight:bold;'>7.</td><td><a href='javascript:editParticipant(636608166)'>Lawson, Camron</a></td><td><a href='javascript:viewTeamMembers(1076286150)'>Pineville</a></td><td>10</td><td>9-5</td><td>Yes</td></tr><tr class=''><td style='font-weight:bold;'>12.</td><td><a href='javascript:editParticipant(438867166)'>Martinez, Avery</a></td><td><a href='javascript:viewTeamMembers(1076274150)'>Bell County</a></td><td>7</td><td>0-5</td><td>Yes</td></tr><tr class=''><td style='font-weight:bold;'>1.</td><td><a href='javascript:editParticipant(483469166)'>Sanderlyn, Talon</a></td><td><a href='javascript:viewTeamMembers(1076275150)'>Boyle County</a></td><td>11</td><td>34-6</td><td>Yes</td></tr></table>
+			</div>
+		</center>
+	
+	
+</div>
+
+</form>
+
+<script language="javascript" src="../Footer.js"></script>
+
+</body>
+
+
+</html>
+

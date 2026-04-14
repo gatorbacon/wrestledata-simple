@@ -1,0 +1,1660 @@
+diff --git a/wrestle_scraper_raw_mt_locked.py b/wrestle_scraper_raw_mt_locked.py
+index b96cb6cea..b4202273f 100644
+--- a/wrestle_scraper_raw_mt_locked.py
++++ b/wrestle_scraper_raw_mt_locked.py
+@@ -1621,822 +1621,822 @@ class WrestlingScraper:
+                         if stale_retry_attempts > 0:
+                             print(f"\n🔄 Retry attempt #{stale_retry_attempts} for wrestler {info['name']} after stale element error...")
+                         
+-                        print(f"\n=== Processing wrestler: {info['name']} ({info['weight_class']}) - Grade: {info['grade']} ===")
+-                        
+-                        # Re-find the dropdown each time
+-                        print("Re-finding wrestler dropdown...")
+-                        wrestler_select = self.wait.until(
+-                            EC.presence_of_element_located((By.ID, "wrestler"))
+-                        )
+-                        print("Found dropdown, selecting wrestler...")
+-                        
+-                        # Select the wrestler
+-                        try:
+-                            old_table = self.driver.find_element(By.CSS_SELECTOR, "table.dataGrid")
+-                        except Exception:
+-                            old_table = None
+-                        Select(wrestler_select).select_by_value(info["id"])
+-                        print(f"Selected wrestler: {info['name']}")
+-                        
+-                        # Wait for the previous table to go stale to ensure re-render
+-                        try:
+-                            if old_table is not None:
+-                                self.wait.until(EC.staleness_of(old_table))
+-                        except Exception:
+-                            pass
++                    print(f"\n=== Processing wrestler: {info['name']} ({info['weight_class']}) - Grade: {info['grade']} ===")
++                    
++                    # Re-find the dropdown each time
++                    print("Re-finding wrestler dropdown...")
++                    wrestler_select = self.wait.until(
++                        EC.presence_of_element_located((By.ID, "wrestler"))
++                    )
++                    print("Found dropdown, selecting wrestler...")
++                    
++                    # Select the wrestler
++                    try:
++                        old_table = self.driver.find_element(By.CSS_SELECTOR, "table.dataGrid")
++                    except Exception:
++                        old_table = None
++                    Select(wrestler_select).select_by_value(info["id"])
++                    print(f"Selected wrestler: {info['name']}")
++                    
++                    # Wait for the previous table to go stale to ensure re-render
++                    try:
++                        if old_table is not None:
++                            self.wait.until(EC.staleness_of(old_table))
++                    except Exception:
++                        pass
++                    
++                    # Give the data grid a brief moment to refresh before inspecting rows.
++                    # This helps avoid reading an intermediate "empty" state before matches load.
++                    time.sleep(1.2)
++                    
++                    # Lightweight hydration check; empties are handled explicitly below
++                    status = self._verify_wrestler_table_hydrated(info["id"], timeout_sec=8.0)
++                    if status == "timeout":
++                        print("⚠️ Could not positively confirm table hydration for this wrestler — proceeding with explicit checks")
++                    else:
++                        print("Table appears hydrated for this wrestler")
++
++                    # Ensure we have a table element to work with
++                    table = self.wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "table.dataGrid")))
++                    print("Found match table")
++                    
++                    # DIAGNOSTIC: Print raw HTML of the match table section
++                    print(f"\n=== DIAGNOSTIC HTML for {info['name']} ===")
++                    try:
++                        table_html = table.get_attribute('outerHTML')
++                        print(f"Table HTML (first 500 chars): {table_html[:500]}")
+                         
+-                        # Give the data grid a brief moment to refresh before inspecting rows.
+-                        # This helps avoid reading an intermediate "empty" state before matches load.
+-                        time.sleep(1.2)
++                        # Check for "no matches" text
++                        page_text = self.driver.find_element(By.TAG_NAME, "body").text
++                        if "no matches" in page_text.lower():
++                            print(f"'No matches' text found on page: {page_text[:200]}")
+                         
+-                        # Lightweight hydration check; empties are handled explicitly below
+-                        status = self._verify_wrestler_table_hydrated(info["id"], timeout_sec=8.0)
+-                        if status == "timeout":
+-                            print("⚠️ Could not positively confirm table hydration for this wrestler — proceeding with explicit checks")
++                        # Check for where wrestler name might appear
++                        name_variants = self._get_name_variants(info['name'], team_info['name'], self.season_year)
++                        if self._text_has_any(page_text, name_variants):
++                            print(f"Wrestler name (alias-aware) found in page text")
++                            # Try to locate where in the text
++                            # Use the first matching variant for context
++                            variant = next((v for v in name_variants if v.lower() in page_text.lower()), None)
++                            name_pos = page_text.lower().find(variant.lower()) if variant else -1
++                            context = page_text[max(0, name_pos-50):min(len(page_text), name_pos+150)]
++                            print(f"Name context: {context}")
+                         else:
+-                            print("Table appears hydrated for this wrestler")
+-
+-                        # Ensure we have a table element to work with
+-                        table = self.wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "table.dataGrid")))
+-                        print("Found match table")
+-                        
+-                        # DIAGNOSTIC: Print raw HTML of the match table section
+-                        print(f"\n=== DIAGNOSTIC HTML for {info['name']} ===")
+-                        try:
+-                            table_html = table.get_attribute('outerHTML')
+-                            print(f"Table HTML (first 500 chars): {table_html[:500]}")
++                            print(f"WARNING: Wrestler name (alias-aware) NOT found in page text")
+                             
+-                            # Check for "no matches" text
+-                            page_text = self.driver.find_element(By.TAG_NAME, "body").text
+-                            if "no matches" in page_text.lower():
+-                                print(f"'No matches' text found on page: {page_text[:200]}")
+-                            
+-                            # Check for where wrestler name might appear
+-                            name_variants = self._get_name_variants(info['name'], team_info['name'], self.season_year)
+-                            if self._text_has_any(page_text, name_variants):
+-                                print(f"Wrestler name (alias-aware) found in page text")
+-                                # Try to locate where in the text
+-                                # Use the first matching variant for context
+-                                variant = next((v for v in name_variants if v.lower() in page_text.lower()), None)
+-                                name_pos = page_text.lower().find(variant.lower()) if variant else -1
+-                                context = page_text[max(0, name_pos-50):min(len(page_text), name_pos+150)]
+-                                print(f"Name context: {context}")
++                    except Exception as e:
++                        print(f"Error during HTML diagnostics: {e}")
++                    print("=== END DIAGNOSTIC ===\n")
++                    
++                    # Get all rows from the table
++                    rows = table.find_elements(By.TAG_NAME, "tr")
++                    print(f"Found {len(rows)} total rows in table")
++                    
++                    # Skip the first row (dropdown) and the two header rows
++                    match_rows = [row for row in rows[3:] if row.get_attribute("class") == "dataGridRow"]
++                    print(f"Found {len(match_rows)} match rows after filtering")
++                    
++                    # Initialize matches list and tracking variables outside the if statement
++                    matches = []
++                    wrestler_verified = False
++                    skipped_rows = 0
++                    
++                    # Special handling for wrestlers with no matches
++                    if len(match_rows) == 0:
++                        no_matches_message = "There are no matches associated with this wrestler"
++                        try:
++                            grid_text = table.text or ""
++                        except Exception:
++                            grid_text = ""
++                        has_no_matches_banner = no_matches_message.lower() in grid_text.lower()
++
++                        if has_no_matches_banner:
++                            # Case 1: previous wrestler had matches (or this is the first wrestler)
++                            if prev_had_matches is True or prev_had_matches is None:
++                                print(f"No matches found for {info['name']} - message: '{no_matches_message}' - recording as verified (previous wrestler had matches or none).")
++                                wrestler_verified = True
++                                matches = []  # Empty matches list
++                                prev_had_matches = False
+                             else:
+-                                print(f"WARNING: Wrestler name (alias-aware) NOT found in page text")
+-                                
+-                        except Exception as e:
+-                            print(f"Error during HTML diagnostics: {e}")
+-                        print("=== END DIAGNOSTIC ===\n")
+-                        
+-                        # Get all rows from the table
+-                        rows = table.find_elements(By.TAG_NAME, "tr")
+-                        print(f"Found {len(rows)} total rows in table")
+-                        
+-                        # Skip the first row (dropdown) and the two header rows
+-                        match_rows = [row for row in rows[3:] if row.get_attribute("class") == "dataGridRow"]
+-                        print(f"Found {len(match_rows)} match rows after filtering")
+-                        
+-                        # Initialize matches list and tracking variables outside the if statement
+-                        matches = []
+-                        wrestler_verified = False
+-                        skipped_rows = 0
+-                        
+-                        # Special handling for wrestlers with no matches
+-                        if len(match_rows) == 0:
+-                            no_matches_message = "There are no matches associated with this wrestler"
+-                            try:
+-                                grid_text = table.text or ""
+-                            except Exception:
+-                                grid_text = ""
+-                            has_no_matches_banner = no_matches_message.lower() in grid_text.lower()
+-
+-                            if has_no_matches_banner:
+-                                # Case 1: previous wrestler had matches (or this is the first wrestler)
+-                                if prev_had_matches is True or prev_had_matches is None:
+-                                    print(f"No matches found for {info['name']} - message: '{no_matches_message}' - recording as verified (previous wrestler had matches or none).")
+-                                    wrestler_verified = True
+-                                    matches = []  # Empty matches list
+-                                    prev_had_matches = False
+-                                else:
+-                                    # Case 2: consecutive 'no matches' wrestlers — re-click Matches tab
+-                                    # to fully reset the page, then treat this wrestler like the first
+-                                    # one after a fresh load.
+-                                    print(f"Consecutive 'no matches' wrestlers detected (previous also had no matches). Re-clicking Matches tab and reloading {info['name']}...")
+-                                    try:
+-                                        # Click the Matches tab again to reload WrestlerMatches.jsp
+-                                        matches_link = self.wait.until(
+-                                            EC.element_to_be_clickable(
+-                                                (By.CSS_SELECTOR, "#pageTopLinksFrame a[href*='WrestlerMatches.jsp']")
+-                                            )
++                                # Case 2: consecutive 'no matches' wrestlers — re-click Matches tab
++                                # to fully reset the page, then treat this wrestler like the first
++                                # one after a fresh load.
++                                print(f"Consecutive 'no matches' wrestlers detected (previous also had no matches). Re-clicking Matches tab and reloading {info['name']}...")
++                                try:
++                                    # Click the Matches tab again to reload WrestlerMatches.jsp
++                                    matches_link = self.wait.until(
++                                        EC.element_to_be_clickable(
++                                            (By.CSS_SELECTOR, "#pageTopLinksFrame a[href*='WrestlerMatches.jsp']")
+                                         )
+-                                        matches_link.click()
+-                                        print("Clicked Matches tab to reset matches page.")
+-                                    except Exception as e:
+-                                        print(f"Error while clicking Matches tab to reset page: {e}")
++                                    )
++                                    matches_link.click()
++                                    print("Clicked Matches tab to reset matches page.")
++                                except Exception as e:
++                                    print(f"Error while clicking Matches tab to reset page: {e}")
+ 
+-                                    # Wait briefly for the base "You must select a wrestler..." state
+-                                    base_confirmed = False
+-                                    try:
+-                                        deadline = time.time() + 10.0
+-                                        while time.time() < deadline:
+-                                            try:
+-                                                base_table = self.driver.find_element(By.CSS_SELECTOR, "table.dataGrid")
+-                                                base_text = (base_table.text or "").lower()
+-                                                if "you must select a wrestler to view matches for." in base_text:
+-                                                    base_confirmed = True
+-                                                    break
+-                                            except Exception:
+-                                                pass
+-                                            time.sleep(0.5)
+-                                    except Exception:
+-                                        pass
++                                # Wait briefly for the base "You must select a wrestler..." state
++                                base_confirmed = False
++                                try:
++                                    deadline = time.time() + 10.0
++                                    while time.time() < deadline:
++                                        try:
++                                            base_table = self.driver.find_element(By.CSS_SELECTOR, "table.dataGrid")
++                                            base_text = (base_table.text or "").lower()
++                                            if "you must select a wrestler to view matches for." in base_text:
++                                                base_confirmed = True
++                                                break
++                                        except Exception:
++                                            pass
++                                        time.sleep(0.5)
++                                except Exception:
++                                    pass
+ 
+-                                    if base_confirmed:
+-                                        print("Confirmed base Matches state ('You must select a wrestler to view matches for.'). Treating this wrestler like the first after a fresh load.")
+-                                    else:
+-                                        print("Warning: Did not see base 'You must select a wrestler to view matches for.' message after clicking Matches; proceeding cautiously.")
++                                if base_confirmed:
++                                    print("Confirmed base Matches state ('You must select a wrestler to view matches for.'). Treating this wrestler like the first after a fresh load.")
++                                else:
++                                    print("Warning: Did not see base 'You must select a wrestler to view matches for.' message after clicking Matches; proceeding cautiously.")
+ 
+-                                    # Re-select the current wrestler and re-evaluate rows/banner
+-                                    try:
+-                                        wrestler_select_reload = self.wait.until(
+-                                            EC.presence_of_element_located((By.ID, "wrestler"))
+-                                        )
+-                                        Select(wrestler_select_reload).select_by_value(info["id"])
+-                                        print(f"Re-selected wrestler after Matches reset: {info['name']}")
++                                # Re-select the current wrestler and re-evaluate rows/banner
++                                try:
++                                    wrestler_select_reload = self.wait.until(
++                                        EC.presence_of_element_located((By.ID, "wrestler"))
++                                    )
++                                    Select(wrestler_select_reload).select_by_value(info["id"])
++                                    print(f"Re-selected wrestler after Matches reset: {info['name']}")
+ 
+-                                        table = self.wait.until(
+-                                            EC.presence_of_element_located((By.CSS_SELECTOR, "table.dataGrid"))
+-                                        )
+-                                        rows = table.find_elements(By.TAG_NAME, "tr")
+-                                        match_rows = [
+-                                            row for row in rows[3:] if row.get_attribute("class") == "dataGridRow"
+-                                        ]
+-                                        print(f"After Matches reset, found {len(match_rows)} match rows")
++                                    table = self.wait.until(
++                                        EC.presence_of_element_located((By.CSS_SELECTOR, "table.dataGrid"))
++                                    )
++                                    rows = table.find_elements(By.TAG_NAME, "tr")
++                                    match_rows = [
++                                        row for row in rows[3:] if row.get_attribute("class") == "dataGridRow"
++                                    ]
++                                    print(f"After Matches reset, found {len(match_rows)} match rows")
+ 
+-                                        try:
+-                                            grid_text = table.text or ""
+-                                        except Exception:
+-                                            grid_text = ""
+-                                        if len(match_rows) == 0 and no_matches_message.lower() in grid_text.lower():
+-                                            # After a full Matches reload and re-selection, treat this like
+-                                            # the first wrestler: trust the banner as accurate.
+-                                            print(f"No matches found for {info['name']} after Matches reset - message: '{no_matches_message}' - recording as verified.")
+-                                            wrestler_verified = True
+-                                            matches = []  # Empty matches list
+-                                            prev_had_matches = False
+-                                        else:
+-                                            # If we now see real matches, or the banner disappeared, update prev_had_matches accordingly
+-                                            prev_had_matches = bool(match_rows)
+-                                    except Exception as e:
+-                                        print(f"Error while re-selecting wrestler after Matches reset: {e}")
+-                            # If there are no match rows and no banner, leave wrestler_verified as-is;
+-                            # downstream verification / re-navigation logic will handle ambiguous states.
+-                        
+-                        # Hard-coded exception for specific wrestlers with known bad data
+-                        if self.season_year == 2014 and (
+-                            info['name'] == "Calvin Campbell" or 
+-                            info['name'] == "Garett Hammond"):
+-                            
+-                            # Check if known bad wrestler data is visible
+-                            page_text = self.driver.find_element(By.TAG_NAME, "body").text
+-                            
+-                            if info['name'] == "Calvin Campbell" and "Vito Pasone" in page_text:
+-                                warning_msg = f"Known data issue: Skipping verification for {info['name']} (showing Vito Pasone) in team {team_info['name']}"
+-                                self._log_error("verification_override", warning_msg)
+-                                print(f"⚠️ {warning_msg}")
+-                                wrestler_verified = True  # Skip verification
+-                                
+-                            elif info['name'] == "Garett Hammond" and "Garrett Hildebrand" in page_text:
+-                                warning_msg = f"Known data issue: Skipping verification for {info['name']} (showing Garett Hildebrand) in team {team_info['name']}"
+-                                self._log_error("verification_override", warning_msg)
+-                                print(f"⚠️ {warning_msg}")
+-                                wrestler_verified = True  # Skip verification
++                                    try:
++                                        grid_text = table.text or ""
++                                    except Exception:
++                                        grid_text = ""
++                                    if len(match_rows) == 0 and no_matches_message.lower() in grid_text.lower():
++                                        # After a full Matches reload and re-selection, treat this like
++                                        # the first wrestler: trust the banner as accurate.
++                                        print(f"No matches found for {info['name']} after Matches reset - message: '{no_matches_message}' - recording as verified.")
++                                        wrestler_verified = True
++                                        matches = []  # Empty matches list
++                                        prev_had_matches = False
++                                    else:
++                                        # If we now see real matches, or the banner disappeared, update prev_had_matches accordingly
++                                        prev_had_matches = bool(match_rows)
++                                except Exception as e:
++                                    print(f"Error while re-selecting wrestler after Matches reset: {e}")
++                        # If there are no match rows and no banner, leave wrestler_verified as-is;
++                        # downstream verification / re-navigation logic will handle ambiguous states.
++                    
++                    # Hard-coded exception for specific wrestlers with known bad data
++                    if self.season_year == 2014 and (
++                        info['name'] == "Calvin Campbell" or 
++                        info['name'] == "Garett Hammond"):
+                         
+-                        # Joe Lemmon/Dane Lemmon exception for Navy in 2015 season
+-                        elif self.season_year == 2015 and info['name'] == "Joe Lemmon" and team_info['name'] == "Navy":
+-                            warning_msg = f"Known data issue: Skipping verification for {info['name']} (listed as Dane Lemmon) in team {team_info['name']}"
+-                            self._log_error("verification_override", warning_msg)
+-                            print(f"⚠️ {warning_msg}")
+-                            wrestler_verified = True  # Skip verification
++                        # Check if known bad wrestler data is visible
++                        page_text = self.driver.find_element(By.TAG_NAME, "body").text
+                         
+-                        # Eric Hess/Eric Ness exception for Navy in 2015 season
+-                        elif self.season_year == 2015 and info['name'] == "Eric Hess" and team_info['name'] == "Navy":
+-                            warning_msg = f"Known data issue: Skipping verification for {info['name']} (listed as Eric Ness) in team {team_info['name']}"
+-                            self._log_error("verification_override", warning_msg)
+-                            print(f"⚠️ {warning_msg}")
+-                            wrestler_verified = True  # Skip verification
+-
+-                        # Eric Hess/Eric Ness exception for Navy in 2015 season
+-                        elif self.season_year == 2017 and info['name'] == "Jeremy Nurnberger" and team_info['name'] == "Centenary University(NJ)":
+-                            warning_msg = f"Known data issue: Skipping verification for {info['name']} (listed as Jeremy Nurnberger) in team {team_info['name']}"
++                        if info['name'] == "Calvin Campbell" and "Vito Pasone" in page_text:
++                            warning_msg = f"Known data issue: Skipping verification for {info['name']} (showing Vito Pasone) in team {team_info['name']}"
+                             self._log_error("verification_override", warning_msg)
+                             print(f"⚠️ {warning_msg}")
+                             wrestler_verified = True  # Skip verification
+-
+-                        # Eric Hess/Eric Ness exception for Navy in 2015 season
+-                        elif self.season_year == 2017 and info['name'] == "Christian Messick" and team_info['name'] == "Central (IA)":
+-                            warning_msg = f"Known data issue: Skipping verification for {info['name']} (listed as Christian Messick) in team {team_info['name']}"
+-                            self._log_error("verification_override", warning_msg)
+-                            print(f"⚠️ {warning_msg}")
+-                            wrestler_verified = True  # Skip verification       
+-
+-                        # Eric Hess/Eric Ness exception for Navy in 2015 season
+-                        elif self.season_year == 2018 and info['name'] == "Araad Fisher" and team_info['name'] == "Duke":
+-                            warning_msg = f"Known data issue: Skipping verification for {info['name']} (listed as Araad Fisher) in team {team_info['name']}"
++                            
++                        elif info['name'] == "Garett Hammond" and "Garrett Hildebrand" in page_text:
++                            warning_msg = f"Known data issue: Skipping verification for {info['name']} (showing Garett Hildebrand) in team {team_info['name']}"
+                             self._log_error("verification_override", warning_msg)
+                             print(f"⚠️ {warning_msg}")
+                             wrestler_verified = True  # Skip verification
++                    
++                    # Joe Lemmon/Dane Lemmon exception for Navy in 2015 season
++                    elif self.season_year == 2015 and info['name'] == "Joe Lemmon" and team_info['name'] == "Navy":
++                        warning_msg = f"Known data issue: Skipping verification for {info['name']} (listed as Dane Lemmon) in team {team_info['name']}"
++                        self._log_error("verification_override", warning_msg)
++                        print(f"⚠️ {warning_msg}")
++                        wrestler_verified = True  # Skip verification
++                    
++                    # Eric Hess/Eric Ness exception for Navy in 2015 season
++                    elif self.season_year == 2015 and info['name'] == "Eric Hess" and team_info['name'] == "Navy":
++                        warning_msg = f"Known data issue: Skipping verification for {info['name']} (listed as Eric Ness) in team {team_info['name']}"
++                        self._log_error("verification_override", warning_msg)
++                        print(f"⚠️ {warning_msg}")
++                        wrestler_verified = True  # Skip verification
++
++                    # Eric Hess/Eric Ness exception for Navy in 2015 season
++                    elif self.season_year == 2017 and info['name'] == "Jeremy Nurnberger" and team_info['name'] == "Centenary University(NJ)":
++                        warning_msg = f"Known data issue: Skipping verification for {info['name']} (listed as Jeremy Nurnberger) in team {team_info['name']}"
++                        self._log_error("verification_override", warning_msg)
++                        print(f"⚠️ {warning_msg}")
++                        wrestler_verified = True  # Skip verification
++
++                    # Eric Hess/Eric Ness exception for Navy in 2015 season
++                    elif self.season_year == 2017 and info['name'] == "Christian Messick" and team_info['name'] == "Central (IA)":
++                        warning_msg = f"Known data issue: Skipping verification for {info['name']} (listed as Christian Messick) in team {team_info['name']}"
++                        self._log_error("verification_override", warning_msg)
++                        print(f"⚠️ {warning_msg}")
++                        wrestler_verified = True  # Skip verification       
++
++                    # Eric Hess/Eric Ness exception for Navy in 2015 season
++                    elif self.season_year == 2018 and info['name'] == "Araad Fisher" and team_info['name'] == "Duke":
++                        warning_msg = f"Known data issue: Skipping verification for {info['name']} (listed as Araad Fisher) in team {team_info['name']}"
++                        self._log_error("verification_override", warning_msg)
++                        print(f"⚠️ {warning_msg}")
++                        wrestler_verified = True  # Skip verification
++
++                    # Eric Hess/Eric Ness exception for Navy in 2015 season
++                    elif self.season_year == 2018 and info['name'] == "Brendan O`Hara" and team_info['name'] == "Princeton":
++                        warning_msg = f"Known data issue: Skipping verification for {info['name']} (listed as Brendan O`Hara) in team {team_info['name']}"
++                        self._log_error("verification_override", warning_msg)
++                        print(f"⚠️ {warning_msg}")
++                        wrestler_verified = True  # Skip verification   
+ 
+-                        # Eric Hess/Eric Ness exception for Navy in 2015 season
+-                        elif self.season_year == 2018 and info['name'] == "Brendan O`Hara" and team_info['name'] == "Princeton":
+-                            warning_msg = f"Known data issue: Skipping verification for {info['name']} (listed as Brendan O`Hara) in team {team_info['name']}"
+-                            self._log_error("verification_override", warning_msg)
+-                            print(f"⚠️ {warning_msg}")
+-                            wrestler_verified = True  # Skip verification   
+-
++                    
++                    if match_rows:
++                        # We have concrete matches for this wrestler
++                        prev_had_matches = True
++                        print("\nProcessing match rows...")
+                         
+-                        if match_rows:
+-                            # We have concrete matches for this wrestler
+-                            prev_had_matches = True
+-                            print("\nProcessing match rows...")
+-                            
+-                            for i, row in enumerate(match_rows):
+-                                try:
+-                                    print(f"\nProcessing match row {i+1}:")
+-                                    cols = row.find_elements(By.TAG_NAME, "td")
+-                                    print(f"Found {len(cols)} columns in row")
++                        for i, row in enumerate(match_rows):
++                            try:
++                                print(f"\nProcessing match row {i+1}:")
++                                cols = row.find_elements(By.TAG_NAME, "td")
++                                print(f"Found {len(cols)} columns in row")
+                                 
+-                                    if len(cols) < 5:
+-                                        print("Skipping row - not enough columns")
+-                                        continue
++                                if len(cols) < 5:
++                                    print("Skipping row - not enough columns")
++                                    continue
+                                     
+-                                    summary = cols[4].text.strip()
+-                                    print(f"Raw summary: {summary}")
++                                summary = cols[4].text.strip()
++                                print(f"Raw summary: {summary}")
+                                 
+-                                    # Skip double forfeit matches
+-                                    if "Double Forfeit" in summary:
+-                                        print("Match is a double forfeit - skipping this match")
+-                                        continue
++                                # Skip double forfeit matches
++                                if "Double Forfeit" in summary:
++                                    print("Match is a double forfeit - skipping this match")
++                                    continue
+                                 
+-                                    # Check if this match contains the wrestler's name (alias-aware)
+-                                    name_variants = self._get_name_variants(info['name'], team_info['name'], self.season_year)
++                                # Check if this match contains the wrestler's name (alias-aware)
++                                name_variants = self._get_name_variants(info['name'], team_info['name'], self.season_year)
+                                 
+-                                    # Alias-aware check: for byes/forfeits, still verify name appears
+-                                    lower_summary = summary.lower()
+-                                    is_bye_or_forfeit = ("received a bye" in lower_summary or
+-                                                        "forfeit" in lower_summary or
+-                                                        "(for.)" in lower_summary or
+-                                                        "(ff)" in lower_summary)
++                                # Alias-aware check: for byes/forfeits, still verify name appears
++                                lower_summary = summary.lower()
++                                is_bye_or_forfeit = ("received a bye" in lower_summary or
++                                                    "forfeit" in lower_summary or
++                                                    "(for.)" in lower_summary or
++                                                    "(ff)" in lower_summary)
+                                 
+-                                    if is_bye_or_forfeit:
+-                                        # For byes/forfeits, verify the wrestler's name appears in the summary
+-                                        if self._text_has_any(summary, name_variants):
+-                                            print("Detected bye/forfeit with wrestler name — marking as verified for this row")
+-                                            wrestler_verified = True
+-                                        else:
+-                                            print(f"⚠️ WARNING: Bye/forfeit summary does not contain wrestler (alias-aware) '{info['name']}': '{summary}'")
++                                if is_bye_or_forfeit:
++                                    # For byes/forfeits, verify the wrestler's name appears in the summary
++                                    if self._text_has_any(summary, name_variants):
++                                        print("Detected bye/forfeit with wrestler name — marking as verified for this row")
++                                        wrestler_verified = True
++                                    else:
++                                        print(f"⚠️ WARNING: Bye/forfeit summary does not contain wrestler (alias-aware) '{info['name']}': '{summary}'")
+                                 
+-                                    if not wrestler_verified and not self._text_has_any(summary, name_variants):
+-                                        # Only start passive waiting if we haven't verified the wrestler yet
+-                                        if not wrestler_verified:
+-                                            print(f"⚠️ WARNING: Match summary does not contain wrestler (alias-aware) '{info['name']}'")
++                                if not wrestler_verified and not self._text_has_any(summary, name_variants):
++                                    # Only start passive waiting if we haven't verified the wrestler yet
++                                    if not wrestler_verified:
++                                        print(f"⚠️ WARNING: Match summary does not contain wrestler (alias-aware) '{info['name']}'")
+                                         
+-                                            # Quick scan of all match rows to see if the wrestler's name appears in any of them
+-                                            matches_with_name = 0
++                                        # Quick scan of all match rows to see if the wrestler's name appears in any of them
++                                        matches_with_name = 0
+                                         
+-                                            print(f"Scanning all {len(match_rows)} matches to see if wrestler name appears in at least two...")
+-                                            for scan_row in match_rows:
+-                                                try:
+-                                                    scan_cols = scan_row.find_elements(By.TAG_NAME, "td")
+-                                                    if len(scan_cols) >= 5:
+-                                                        scan_summary = scan_cols[4].text.strip()
+-                                                        if self._text_has_any(scan_summary, name_variants):
+-                                                            matches_with_name += 1
+-                                                            print(f"✅ Found wrestler (alias-aware) in match summary: '{scan_summary}'")
+-                                                            if matches_with_name >= 2:
+-                                                                break
+-                                                except Exception as e:
+-                                                    print(f"Error during match row scan: {e}")
+-                                                    continue
++                                        print(f"Scanning all {len(match_rows)} matches to see if wrestler name appears in at least two...")
++                                        for scan_row in match_rows:
++                                            try:
++                                                scan_cols = scan_row.find_elements(By.TAG_NAME, "td")
++                                                if len(scan_cols) >= 5:
++                                                    scan_summary = scan_cols[4].text.strip()
++                                                    if self._text_has_any(scan_summary, name_variants):
++                                                        matches_with_name += 1
++                                                        print(f"✅ Found wrestler (alias-aware) in match summary: '{scan_summary}'")
++                                                        if matches_with_name >= 2:
++                                                            break
++                                            except Exception as e:
++                                                print(f"Error during match row scan: {e}")
++                                                continue
+                                         
+-                                            # If name found in at least two matches, mark as verified and continue
+-                                            if matches_with_name >= 2:
+-                                                print(f"Wrestler '{info['name']}' appears in {matches_with_name} matches. Continuing without retry.")
+-                                                wrestler_verified = True
+-                                                # Continue processing all matches, including those without the wrestler's name
+-                                            else:
+-                                                # Name not found in any match, proceed with original retry logic
+-                                                print(f"Wrestler (alias-aware) '{info['name']}' not found in any match summaries.")
+-                                                print(f"DEBUG: Full summary text: '{summary}'")
++                                        # If name found in at least two matches, mark as verified and continue
++                                        if matches_with_name >= 2:
++                                            print(f"Wrestler '{info['name']}' appears in {matches_with_name} matches. Continuing without retry.")
++                                            wrestler_verified = True
++                                            # Continue processing all matches, including those without the wrestler's name
++                                        else:
++                                            # Name not found in any match, proceed with original retry logic
++                                            print(f"Wrestler (alias-aware) '{info['name']}' not found in any match summaries.")
++                                            print(f"DEBUG: Full summary text: '{summary}'")
+                                             
+-                                                # Check for name variants or encoding issues
+-                                                for variant in [
+-                                                    info['name'].replace("'", "`"),
+-                                                    info['name'].replace("'", "'"),
+-                                                    info['name'].replace("'", "&#39;"),
+-                                                    info['name'].replace(" ", "")
+-                                                ]:
+-                                                    if variant in summary:
+-                                                        print(f"DEBUG: Found variant '{variant}' in summary")
++                                            # Check for name variants or encoding issues
++                                            for variant in [
++                                                info['name'].replace("'", "`"),
++                                                info['name'].replace("'", "'"),
++                                                info['name'].replace("'", "&#39;"),
++                                                info['name'].replace(" ", "")
++                                            ]:
++                                                if variant in summary:
++                                                    print(f"DEBUG: Found variant '{variant}' in summary")
+                                             
+-                                                print("Page may not have fully loaded. Waiting for data to update...")
++                                            print("Page may not have fully loaded. Waiting for data to update...")
+                                         
+-                                            # Begin passive waiting loop
+-                                            retry_count = 1
+-                                            max_retries = 3  # Will wait for about 15 seconds (3 * 5 seconds)
+-                                            wrestler_found = False
++                                        # Begin passive waiting loop
++                                        retry_count = 1
++                                        max_retries = 3  # Will wait for about 15 seconds (3 * 5 seconds)
++                                        wrestler_found = False
+                                         
+-                                            while not wrestler_found and retry_count <= max_retries:
+-                                                try:
+-                                                    print(f"Passive wait attempt #{retry_count}...")
+-                                                    # Wait for 5 seconds and check again
+-                                                    time.sleep(5)
++                                        while not wrestler_found and retry_count <= max_retries:
++                                            try:
++                                                print(f"Passive wait attempt #{retry_count}...")
++                                                # Wait for 5 seconds and check again
++                                                time.sleep(5)
+                                                 
+-                                                    # Get updated data from the current row without reselecting
+-                                                    updated_summary = cols[4].text.strip()
++                                                # Get updated data from the current row without reselecting
++                                                updated_summary = cols[4].text.strip()
+                                                 
+-                                                    # Check if we found the wrestler now (alias-aware)
+-                                                    if self._text_has_any(updated_summary, name_variants):
+-                                                        print(f"✅ SUCCESS: Found wrestler (alias-aware) in match summary after {retry_count} retries")
+-                                                        summary = updated_summary  # Update the summary with the correct one
+-                                                        wrestler_found = True
+-                                                        wrestler_verified = True
+-                                                        break
+-                                                    else:
+-                                                        # Still not found
+-                                                        print(f"⚠️ Retry #{retry_count}: Still can't find wrestler (alias-aware) in summary: '{updated_summary}'")
+-                                                        retry_count += 1
+-                                                except Exception as e:
+-                                                    print(f"❌ Error during passive wait: {e}")
++                                                # Check if we found the wrestler now (alias-aware)
++                                                if self._text_has_any(updated_summary, name_variants):
++                                                    print(f"✅ SUCCESS: Found wrestler (alias-aware) in match summary after {retry_count} retries")
++                                                    summary = updated_summary  # Update the summary with the correct one
++                                                    wrestler_found = True
++                                                    wrestler_verified = True
++                                                    break
++                                                else:
++                                                    # Still not found
++                                                    print(f"⚠️ Retry #{retry_count}: Still can't find wrestler (alias-aware) in summary: '{updated_summary}'")
+                                                     retry_count += 1
++                                            except Exception as e:
++                                                print(f"❌ Error during passive wait: {e}")
++                                                retry_count += 1
+                                         
+-                                            # If we didn't find the wrestler after max retries and this is our first check
+-                                            if not wrestler_found and not wrestler_verified:
+-                                                # Try re-navigating to the team up to 3 times
+-                                                renavigation_attempts = 0
+-                                                renavigation_success = False
++                                        # If we didn't find the wrestler after max retries and this is our first check
++                                        if not wrestler_found and not wrestler_verified:
++                                            # Try re-navigating to the team up to 3 times
++                                            renavigation_attempts = 0
++                                            renavigation_success = False
+                                             
+-                                                while renavigation_attempts < 3 and not renavigation_success:
+-                                                    renavigation_attempts += 1
+-                                                    print(f"\n⏳ Attempt #{renavigation_attempts} to re-navigate to team {team_info['name']} and find wrestler {info['name']}...")
++                                            while renavigation_attempts < 3 and not renavigation_success:
++                                                renavigation_attempts += 1
++                                                print(f"\n⏳ Attempt #{renavigation_attempts} to re-navigate to team {team_info['name']} and find wrestler {info['name']}...")
+                                                 
+-                                                    try:
+-                                                        # Instead of trying to navigate through the UI, use direct URL navigation
+-                                                        print("Directly navigating back to the team page via URL...")
++                                                try:
++                                                    # Instead of trying to navigate through the UI, use direct URL navigation
++                                                    print("Directly navigating back to the team page via URL...")
+                                                     
+-                                                        # First get the current URL to extract the session ID
+-                                                        current_url = self.driver.current_url
+-                                                        parsed_url = urlparse(current_url)
+-                                                        query_params = parse_qs(parsed_url.query)
+-                                                        session_id = query_params.get('twSessionId', [''])[0]
++                                                    # First get the current URL to extract the session ID
++                                                    current_url = self.driver.current_url
++                                                    parsed_url = urlparse(current_url)
++                                                    query_params = parse_qs(parsed_url.query)
++                                                    session_id = query_params.get('twSessionId', [''])[0]
+                                                     
+-                                                        if not session_id:
+-                                                            print("⚠️ Could not extract session ID from current URL. Using original team URL.")
++                                                    if not session_id:
++                                                        print("⚠️ Could not extract session ID from current URL. Using original team URL.")
++                                                        team_page_url = team_url
++                                                    else:
++                                                        # Extract team ID from the team URL
++                                                        team_parsed_url = urlparse(team_url)
++                                                        team_params = parse_qs(team_parsed_url.query)
++                                                        team_id = team_params.get('teamId', [''])[0]
++                                                        
++                                                        if not team_id:
++                                                            print("⚠️ Could not extract team ID from team URL. Using original team URL.")
+                                                             team_page_url = team_url
+                                                         else:
+-                                                            # Extract team ID from the team URL
+-                                                            team_parsed_url = urlparse(team_url)
+-                                                            team_params = parse_qs(team_parsed_url.query)
+-                                                            team_id = team_params.get('teamId', [''])[0]
+-                                                        
+-                                                            if not team_id:
+-                                                                print("⚠️ Could not extract team ID from team URL. Using original team URL.")
+-                                                                team_page_url = team_url
+-                                                            else:
+-                                                                # Construct URL with session ID and team ID
+-                                                                team_page_url = f"{BASE_URL}/seasons/TeamSchedule.jsp?twSessionId={session_id}&teamId={team_id}"
++                                                            # Construct URL with session ID and team ID
++                                                            team_page_url = f"{BASE_URL}/seasons/TeamSchedule.jsp?twSessionId={session_id}&teamId={team_id}"
+                                                     
+-                                                        # Navigate directly to the team page
+-                                                        print(f"Navigating to team page: {team_page_url}")
+-                                                        self.driver.get(team_page_url)
+-                                                        time.sleep(3)  # Wait for page to load
++                                                    # Navigate directly to the team page
++                                                    print(f"Navigating to team page: {team_page_url}")
++                                                    self.driver.get(team_page_url)
++                                                    time.sleep(3)  # Wait for page to load
+                                                     
+-                                                        # Click on the Matches tab
+-                                                        print("Clicking on Matches tab...")
+-                                                        matches_link = self.wait.until(
+-                                                            EC.element_to_be_clickable((By.CSS_SELECTOR, "#pageTopLinksFrame a[href*='WrestlerMatches.jsp']"))
+-                                                        )
+-                                                        matches_link.click()
+-                                                        time.sleep(3)  # Wait for matches page to load
++                                                    # Click on the Matches tab
++                                                    print("Clicking on Matches tab...")
++                                                    matches_link = self.wait.until(
++                                                        EC.element_to_be_clickable((By.CSS_SELECTOR, "#pageTopLinksFrame a[href*='WrestlerMatches.jsp']"))
++                                                    )
++                                                    matches_link.click()
++                                                    time.sleep(3)  # Wait for matches page to load
+                                                     
+-                                                        # Find the wrestler dropdown
+-                                                        print("Finding wrestler dropdown...")
+-                                                        wrestler_select = self.wait.until(
+-                                                            EC.presence_of_element_located((By.ID, "wrestler"))
+-                                                        )
++                                                    # Find the wrestler dropdown
++                                                    print("Finding wrestler dropdown...")
++                                                    wrestler_select = self.wait.until(
++                                                        EC.presence_of_element_located((By.ID, "wrestler"))
++                                                    )
+                                                     
+-                                                        # Select the wrestler
+-                                                        print(f"Selecting wrestler: {info['name']}...")
+-                                                        try:
+-                                                            prev_table = self.driver.find_element(By.CSS_SELECTOR, "table.dataGrid")
+-                                                        except Exception:
+-                                                            prev_table = None
+-                                                        Select(wrestler_select).select_by_value(info["id"])
+-                                                        # Prefer staleness to ensure re-render
+-                                                        try:
+-                                                            if prev_table is not None:
+-                                                                self.wait.until(EC.staleness_of(prev_table))
+-                                                        except Exception:
+-                                                            pass
+-                                                        # Verify hydration for this wrestler before proceeding
+-                                                        status = self._verify_wrestler_table_hydrated(info["id"], timeout_sec=8.0)
+-                                                        if status == "timeout":
+-                                                            print("⚠️ Retry: Table did not hydrate after selection; will retry re-navigation")
+-                                                            continue
++                                                    # Select the wrestler
++                                                    print(f"Selecting wrestler: {info['name']}...")
++                                                    try:
++                                                        prev_table = self.driver.find_element(By.CSS_SELECTOR, "table.dataGrid")
++                                                    except Exception:
++                                                        prev_table = None
++                                                    Select(wrestler_select).select_by_value(info["id"])
++                                                    # Prefer staleness to ensure re-render
++                                                    try:
++                                                        if prev_table is not None:
++                                                            self.wait.until(EC.staleness_of(prev_table))
++                                                    except Exception:
++                                                        pass
++                                                    # Verify hydration for this wrestler before proceeding
++                                                    status = self._verify_wrestler_table_hydrated(info["id"], timeout_sec=8.0)
++                                                    if status == "timeout":
++                                                        print("⚠️ Retry: Table did not hydrate after selection; will retry re-navigation")
++                                                        continue
+                                                     
+-                                                        # Wait for the table to be present and visible
+-                                                        print("Looking for match table...")
+-                                                        table = self.wait.until(
+-                                                            EC.presence_of_element_located((By.CSS_SELECTOR, "table.dataGrid"))
+-                                                        )
++                                                    # Wait for the table to be present and visible
++                                                    print("Looking for match table...")
++                                                    table = self.wait.until(
++                                                        EC.presence_of_element_located((By.CSS_SELECTOR, "table.dataGrid"))
++                                                    )
+                                                     
+-                                                        # DIAGNOSTIC: Print HTML after renavigation
+-                                                        print(f"\n=== RETRY {renavigation_attempts} DIAGNOSTIC HTML for {info['name']} ===")
+-                                                        try:
+-                                                            retry_table_html = table.get_attribute('outerHTML')
+-                                                            print(f"Retry Table HTML (first 500 chars): {retry_table_html[:500]}")
++                                                    # DIAGNOSTIC: Print HTML after renavigation
++                                                    print(f"\n=== RETRY {renavigation_attempts} DIAGNOSTIC HTML for {info['name']} ===")
++                                                    try:
++                                                        retry_table_html = table.get_attribute('outerHTML')
++                                                        print(f"Retry Table HTML (first 500 chars): {retry_table_html[:500]}")
+                                                         
+-                                                            retry_page_text = self.driver.find_element(By.TAG_NAME, "body").text
+-                                                            if "no matches" in retry_page_text.lower():
+-                                                                print(f"Retry: 'No matches' text found on page: {retry_page_text[:200]}")
++                                                        retry_page_text = self.driver.find_element(By.TAG_NAME, "body").text
++                                                        if "no matches" in retry_page_text.lower():
++                                                            print(f"Retry: 'No matches' text found on page: {retry_page_text[:200]}")
+                                                         
+-                                                            # Check for wrestler name in page text (alias-aware)
+-                                                            name_variants = self._get_name_variants(info['name'], team_info['name'], self.season_year)
+-                                                            if self._text_has_any(retry_page_text, name_variants):
+-                                                                print(f"Retry: Wrestler name (alias-aware) found in page text")
+-                                                                variant = next((v for v in name_variants if v.lower() in retry_page_text.lower()), None)
+-                                                                name_pos = retry_page_text.lower().find(variant.lower()) if variant else -1
+-                                                                context = retry_page_text[max(0, name_pos-50):min(len(retry_page_text), name_pos+150)]
+-                                                                print(f"Retry Name context: {context}")
+-                                                            else:
+-                                                                print(f"Retry WARNING: Wrestler name (alias-aware) NOT found in page text")
++                                                        # Check for wrestler name in page text (alias-aware)
++                                                        name_variants = self._get_name_variants(info['name'], team_info['name'], self.season_year)
++                                                        if self._text_has_any(retry_page_text, name_variants):
++                                                            print(f"Retry: Wrestler name (alias-aware) found in page text")
++                                                            variant = next((v for v in name_variants if v.lower() in retry_page_text.lower()), None)
++                                                            name_pos = retry_page_text.lower().find(variant.lower()) if variant else -1
++                                                            context = retry_page_text[max(0, name_pos-50):min(len(retry_page_text), name_pos+150)]
++                                                            print(f"Retry Name context: {context}")
++                                                        else:
++                                                            print(f"Retry WARNING: Wrestler name (alias-aware) NOT found in page text")
+                                                             
+-                                                                # Try different variants of the name
+-                                                                for variant in [
+-                                                                    info['name'].replace("'", "`"),
+-                                                                    info['name'].replace("'", "'"),
+-                                                                    info['name'].replace(" ", ""),
+-                                                                    info['name'].lower()
+-                                                                ]:
+-                                                                    if variant != info['name'] and variant in retry_page_text:
+-                                                                        print(f"Retry: Found name VARIANT '{variant}' in page text")
+-                                                        except Exception as e:
+-                                                            print(f"Error during retry diagnostics: {e}")
+-                                                        print(f"=== END RETRY {renavigation_attempts} DIAGNOSTIC ===\n")
++                                                            # Try different variants of the name
++                                                            for variant in [
++                                                                info['name'].replace("'", "`"),
++                                                                info['name'].replace("'", "'"),
++                                                                info['name'].replace(" ", ""),
++                                                                info['name'].lower()
++                                                            ]:
++                                                                if variant != info['name'] and variant in retry_page_text:
++                                                                    print(f"Retry: Found name VARIANT '{variant}' in page text")
++                                                    except Exception as e:
++                                                        print(f"Error during retry diagnostics: {e}")
++                                                    print(f"=== END RETRY {renavigation_attempts} DIAGNOSTIC ===\n")
+                                                     
+-                                                        # Get all match rows again
+-                                                        all_rows = table.find_elements(By.TAG_NAME, "tr")
+-                                                        new_match_rows = [row for row in all_rows[3:] if row.get_attribute("class") == "dataGridRow"]
+-                                                        print(f"Found {len(new_match_rows)} match rows after re-navigation")
++                                                    # Get all match rows again
++                                                    all_rows = table.find_elements(By.TAG_NAME, "tr")
++                                                    new_match_rows = [row for row in all_rows[3:] if row.get_attribute("class") == "dataGridRow"]
++                                                    print(f"Found {len(new_match_rows)} match rows after re-navigation")
+                                                     
+-                                                        # Verify at least some match has the wrestler's name (alias-aware)
+-                                                        if len(new_match_rows) > 0:
+-                                                            verification_success = False
+-                                                            # Check multiple rows to ensure we load the correct data
+-                                                            for check_row in new_match_rows[:min(3, len(new_match_rows))]:
+-                                                                check_cols = check_row.find_elements(By.TAG_NAME, "td")
+-                                                                if len(check_cols) >= 5:
+-                                                                    check_summary = check_cols[4].text.strip()
+-                                                                    name_variants = self._get_name_variants(info['name'], team_info['name'], self.season_year)
+-                                                                    if self._text_has_any(check_summary, name_variants):
+-                                                                        verification_success = True
+-                                                                        break
++                                                    # Verify at least some match has the wrestler's name (alias-aware)
++                                                    if len(new_match_rows) > 0:
++                                                        verification_success = False
++                                                        # Check multiple rows to ensure we load the correct data
++                                                        for check_row in new_match_rows[:min(3, len(new_match_rows))]:
++                                                            check_cols = check_row.find_elements(By.TAG_NAME, "td")
++                                                            if len(check_cols) >= 5:
++                                                                check_summary = check_cols[4].text.strip()
++                                                                name_variants = self._get_name_variants(info['name'], team_info['name'], self.season_year)
++                                                                if self._text_has_any(check_summary, name_variants):
++                                                                    verification_success = True
++                                                                    break
+                                                         
+-                                                            if verification_success:
+-                                                                print(f"✅ Successfully verified wrestler {info['name']} after re-navigation!")
++                                                        if verification_success:
++                                                            print(f"✅ Successfully verified wrestler {info['name']} after re-navigation!")
+                                                             
+-                                                                # Reset the match processing from the beginning with these new rows
+-                                                                match_rows = new_match_rows
+-                                                                renavigation_success = True
+-                                                                wrestler_verified = True
++                                                            # Reset the match processing from the beginning with these new rows
++                                                            match_rows = new_match_rows
++                                                            renavigation_success = True
++                                                            wrestler_verified = True
+                                                             
+-                                                                # Clear existing matches to start fresh
+-                                                                matches = []
++                                                            # Clear existing matches to start fresh
++                                                            matches = []
+                                                             
+-                                                                # Process all the match rows with the new data
+-                                                                print("\nProcessing match rows after re-navigation...")
+-                                                                for i, row in enumerate(match_rows):
+-                                                                    try:
+-                                                                        print(f"\nProcessing match row {i+1} after re-navigation:")
+-                                                                        cols = row.find_elements(By.TAG_NAME, "td")
+-                                                                        print(f"Found {len(cols)} columns in row")
++                                                            # Process all the match rows with the new data
++                                                            print("\nProcessing match rows after re-navigation...")
++                                                            for i, row in enumerate(match_rows):
++                                                                try:
++                                                                    print(f"\nProcessing match row {i+1} after re-navigation:")
++                                                                    cols = row.find_elements(By.TAG_NAME, "td")
++                                                                    print(f"Found {len(cols)} columns in row")
+                                                                     
+-                                                                        if len(cols) < 5:
+-                                                                            print("Skipping row - not enough columns")
+-                                                                            continue
++                                                                    if len(cols) < 5:
++                                                                        print("Skipping row - not enough columns")
++                                                                        continue
+                                                                         
+-                                                                        summary = cols[4].text.strip()
+-                                                                        print(f"Raw summary: {summary}")
++                                                                    summary = cols[4].text.strip()
++                                                                    print(f"Raw summary: {summary}")
++                                                                    
++                                                                    # Skip double forfeit matches
++                                                                    if "Double Forfeit" in summary:
++                                                                        print("Match is a double forfeit - skipping this match")
++                                                                        continue
+                                                                     
+-                                                                        # Skip double forfeit matches
+-                                                                        if "Double Forfeit" in summary:
+-                                                                            print("Match is a double forfeit - skipping this match")
+-                                                                            continue
++                                                                    # Skip verification check - we already verified the wrestler above
+                                                                     
+-                                                                        # Skip verification check - we already verified the wrestler above
++                                                                    # Extract opponent ID from links in the row if available
++                                                                    opponent_id = None
+                                                                     
+-                                                                        # Extract opponent ID from links in the row if available
++                                                                    # Check if this is a bye or forfeit before trying to extract opponent ID
++                                                                    if "received a bye" in summary:
++                                                                        print("Match is a bye - setting opponent_id to null")
+                                                                         opponent_id = None
+-                                                                    
+-                                                                        # Check if this is a bye or forfeit before trying to extract opponent ID
+-                                                                        if "received a bye" in summary:
+-                                                                            print("Match is a bye - setting opponent_id to null")
+-                                                                            opponent_id = None
+-                                                                        elif "forfeit" in summary.lower() or "(for.)" in summary.lower() or "(ff)" in summary.lower() or "received a forfeit" in summary.lower():
+-                                                                            print("Match is a forfeit - setting opponent_id to null")
+-                                                                            opponent_id = None
+-                                                                        else:
+-                                                                            # For normal matches, try to extract opponent ID from links
+-                                                                            links = cols[4].find_elements(By.TAG_NAME, "a")
++                                                                    elif "forfeit" in summary.lower() or "(for.)" in summary.lower() or "(ff)" in summary.lower() or "received a forfeit" in summary.lower():
++                                                                        print("Match is a forfeit - setting opponent_id to null")
++                                                                        opponent_id = None
++                                                                    else:
++                                                                        # For normal matches, try to extract opponent ID from links
++                                                                        links = cols[4].find_elements(By.TAG_NAME, "a")
+                                                                         
+-                                                                            # If there are multiple links, we need to find the one that's NOT the current wrestler
+-                                                                            current_wrestler_id = info["id"]
++                                                                        # If there are multiple links, we need to find the one that's NOT the current wrestler
++                                                                        current_wrestler_id = info["id"]
+                                                                         
+-                                                                            for link in links:
+-                                                                                href = link.get_attribute("href")
+-                                                                                if href and "wrestlerId=" in href:
+-                                                                                    extracted_id = self.get_wrestler_id_from_url(href)
++                                                                        for link in links:
++                                                                            href = link.get_attribute("href")
++                                                                            if href and "wrestlerId=" in href:
++                                                                                extracted_id = self.get_wrestler_id_from_url(href)
+                                                                                 
+-                                                                                    # Only use ID if it's not the current wrestler's ID
+-                                                                                    if extracted_id != current_wrestler_id:
+-                                                                                        opponent_id = extracted_id
+-                                                                                        print(f"Found opponent ID: {opponent_id}")
+-                                                                                        break
++                                                                                # Only use ID if it's not the current wrestler's ID
++                                                                                if extracted_id != current_wrestler_id:
++                                                                                    opponent_id = extracted_id
++                                                                                    print(f"Found opponent ID: {opponent_id}")
++                                                                                    break
+                                                                         
+-                                                                            if opponent_id is None:
+-                                                                                print("Could not find opponent ID in links")
++                                                                        if opponent_id is None:
++                                                                            print("Could not find opponent ID in links")
+                                                                     
+-                                                                        # Store only raw match data without winner/loser processing
+-                                                                        match_data = {
+-                                                                            "date": cols[1].text.strip(),
+-                                                                            "event": cols[2].text.strip(),
+-                                                                            "weight": cols[3].text.strip(),
+-                                                                            "summary": summary,
+-                                                                            "opponent_id": opponent_id  # Store opponent ID from URL
+-                                                                        }
++                                                                    # Store only raw match data without winner/loser processing
++                                                                    match_data = {
++                                                                        "date": cols[1].text.strip(),
++                                                                        "event": cols[2].text.strip(),
++                                                                        "weight": cols[3].text.strip(),
++                                                                        "summary": summary,
++                                                                        "opponent_id": opponent_id  # Store opponent ID from URL
++                                                                    }
+                                                                     
+-                                                                        # Handle date ranges
+-                                                                        date = match_data["date"]
+-                                                                        if " - " in date:
+-                                                                            # Take the end date from the range
+-                                                                            match_data["date"] = date.split(" - ")[1].strip()
++                                                                    # Handle date ranges
++                                                                    date = match_data["date"]
++                                                                    if " - " in date:
++                                                                        # Take the end date from the range
++                                                                        match_data["date"] = date.split(" - ")[1].strip()
+                                                                     
+-                                                                        matches.append(match_data)
++                                                                    matches.append(match_data)
+                                                                     
+-                                                                    except Exception as e:
+-                                                                        print(f"Error processing match row after re-navigation: {e}")
+-                                                                        continue
++                                                                except Exception as e:
++                                                                    print(f"Error processing match row after re-navigation: {e}")
++                                                                    continue
+                                                             
+-                                                                # We've successfully processed all matches, break out of renavigation loop
+-                                                                break
+-                                                            else:
+-                                                                print(f"❌ Still could not verify wrestler {info['name']} after re-navigation. Trying again...")
++                                                            # We've successfully processed all matches, break out of renavigation loop
++                                                            break
++                                                        else:
++                                                            print(f"❌ Still could not verify wrestler {info['name']} after re-navigation. Trying again...")
++                                                    else:
++                                                        # Special handling for wrestlers with no matches during renavigation
++                                                        page_text = self.driver.find_element(By.TAG_NAME, "body").text
++                                                        no_matches_message = "There are no matches associated with this wrestler"
++                                                        if no_matches_message in page_text and info['name'] in page_text:
++                                                            print(f"No matches found for {info['name']} during renavigation - message: '{no_matches_message}' - marking as verified")
++                                                            verification_success = True
++                                                            renavigation_success = True
++                                                            wrestler_verified = True
++                                                            matches = []  # Empty matches list
++                                                            break  # Exit renavigation loop successfully
+                                                         else:
+-                                                            # Special handling for wrestlers with no matches during renavigation
+-                                                            page_text = self.driver.find_element(By.TAG_NAME, "body").text
+-                                                            no_matches_message = "There are no matches associated with this wrestler"
+-                                                            if no_matches_message in page_text and info['name'] in page_text:
+-                                                                print(f"No matches found for {info['name']} during renavigation - message: '{no_matches_message}' - marking as verified")
+-                                                                verification_success = True
+-                                                                renavigation_success = True
+-                                                                wrestler_verified = True
+-                                                                matches = []  # Empty matches list
+-                                                                break  # Exit renavigation loop successfully
+-                                                            else:
+-                                                                print(f"❌ No match rows found after re-navigation. Trying again...")
++                                                            print(f"❌ No match rows found after re-navigation. Trying again...")
+                                                 
+-                                                    except Exception as e:
+-                                                        print(f"❌ Error during re-navigation attempt #{renavigation_attempts}: {e}")
++                                                except Exception as e:
++                                                    print(f"❌ Error during re-navigation attempt #{renavigation_attempts}: {e}")
+                                             
+-                                                # If all renavigation attempts failed, log error and skip team
+-                                                if not renavigation_success:
+-                                                    error_msg = f"Failed to verify wrestler {info['name']} (ID: {info['id']}) for team {team_info['name']} after {renavigation_attempts} re-navigation attempts. Skipping team."
+-                                                    self._log_error("wrestler_verification", error_msg)
+-                                                    print(f"❌ {error_msg}")
+-                                                    # Ensure log is saved before returning
+-                                                    self._save_scrape_log()
+-                                                    # Return None to indicate the team scraping failed
+-                                                    return None
+-                                                else:
+-                                                    # Successfully renavigated and processed matches, continue to next wrestler
+-                                                    break
++                                            # If all renavigation attempts failed, log error and skip team
++                                            if not renavigation_success:
++                                                error_msg = f"Failed to verify wrestler {info['name']} (ID: {info['id']}) for team {team_info['name']} after {renavigation_attempts} re-navigation attempts. Skipping team."
++                                                self._log_error("wrestler_verification", error_msg)
++                                                print(f"❌ {error_msg}")
++                                                # Ensure log is saved before returning
++                                                self._save_scrape_log()
++                                                # Return None to indicate the team scraping failed
++                                                return None
++                                            else:
++                                                # Successfully renavigated and processed matches, continue to next wrestler
++                                                break
+                                 
+-                                    # Extract opponent ID from links in the row if available
+-                                    opponent_id = None
++                                # Extract opponent ID from links in the row if available
++                                opponent_id = None
+                                 
+-                                    # Check if this is a bye or forfeit before trying to extract opponent ID
+-                                    if "received a bye" in summary:
+-                                        print("Match is a bye - setting opponent_id to null")
+-                                        opponent_id = None
+-                                    elif "forfeit" in summary.lower() or "(for.)" in summary.lower() or "(ff)" in summary.lower() or "received a forfeit" in summary.lower():
+-                                        print("Match is a forfeit - setting opponent_id to null")
+-                                        opponent_id = None
+-                                    else:
+-                                        # For normal matches, try to extract opponent ID from links
+-                                        links = cols[4].find_elements(By.TAG_NAME, "a")
++                                # Check if this is a bye or forfeit before trying to extract opponent ID
++                                if "received a bye" in summary:
++                                    print("Match is a bye - setting opponent_id to null")
++                                    opponent_id = None
++                                elif "forfeit" in summary.lower() or "(for.)" in summary.lower() or "(ff)" in summary.lower() or "received a forfeit" in summary.lower():
++                                    print("Match is a forfeit - setting opponent_id to null")
++                                    opponent_id = None
++                                else:
++                                    # For normal matches, try to extract opponent ID from links
++                                    links = cols[4].find_elements(By.TAG_NAME, "a")
+                                     
+-                                        # If there are multiple links, we need to find the one that's NOT the current wrestler
+-                                        current_wrestler_id = info["id"]
++                                    # If there are multiple links, we need to find the one that's NOT the current wrestler
++                                    current_wrestler_id = info["id"]
+                                     
+-                                        for link in links:
+-                                            href = link.get_attribute("href")
+-                                            if href and "wrestlerId=" in href:
+-                                                extracted_id = self.get_wrestler_id_from_url(href)
++                                    for link in links:
++                                        href = link.get_attribute("href")
++                                        if href and "wrestlerId=" in href:
++                                            extracted_id = self.get_wrestler_id_from_url(href)
+                                             
+-                                                # Only use ID if it's not the current wrestler's ID
+-                                                if extracted_id != current_wrestler_id:
+-                                                    opponent_id = extracted_id
+-                                                    print(f"Found opponent ID: {opponent_id}")
+-                                                    break
++                                            # Only use ID if it's not the current wrestler's ID
++                                            if extracted_id != current_wrestler_id:
++                                                opponent_id = extracted_id
++                                                print(f"Found opponent ID: {opponent_id}")
++                                                break
+                                 
+-                                    if opponent_id is None:
+-                                        print("Could not find opponent ID in links")
++                                if opponent_id is None:
++                                    print("Could not find opponent ID in links")
+                                 
+-                                    # Store only raw match data without winner/loser processing
+-                                    match_data = {
+-                                        "date": cols[1].text.strip(),
+-                                        "event": cols[2].text.strip(),
+-                                        "weight": cols[3].text.strip(),
+-                                        "summary": summary,
+-                                        "opponent_id": opponent_id  # Store opponent ID from URL
+-                                    }
++                                # Store only raw match data without winner/loser processing
++                                match_data = {
++                                    "date": cols[1].text.strip(),
++                                    "event": cols[2].text.strip(),
++                                    "weight": cols[3].text.strip(),
++                                    "summary": summary,
++                                    "opponent_id": opponent_id  # Store opponent ID from URL
++                                }
+                                 
+-                                    # Handle date ranges
+-                                    date = match_data["date"]
+-                                    if " - " in date:
+-                                        # Take the end date from the range
+-                                        match_data["date"] = date.split(" - ")[1].strip()
++                                # Handle date ranges
++                                date = match_data["date"]
++                                if " - " in date:
++                                    # Take the end date from the range
++                                    match_data["date"] = date.split(" - ")[1].strip()
+                                 
+-                                    matches.append(match_data)
++                                matches.append(match_data)
+                                 
+-                                except Exception as e:
+-                                    print(f"Error processing match row: {e}")
+-                                    continue
+-                        else:
+-                            print("No match rows found")
+-                            matches = []
++                            except Exception as e:
++                                print(f"Error processing match row: {e}")
++                                continue
++                    else:
++                        print("No match rows found")
++                        matches = []
+                         
+-                            # If wrestler previously had matches, try re-navigation before declaring regression
+-                            wrestler_id = info["id"]
+-                            if "wrestlers" in self.wrestler_match_tracking:
+-                                wrestler_entry = self.wrestler_match_tracking["wrestlers"].get(wrestler_id)
+-                                if wrestler_entry and wrestler_entry.get("has_ever_had_matches", False):
+-                                    print(f"⚠️ Wrestler {info['name']} previously had matches but now shows zero. Attempting re-navigation retry...")
++                        # If wrestler previously had matches, try re-navigation before declaring regression
++                        wrestler_id = info["id"]
++                        if "wrestlers" in self.wrestler_match_tracking:
++                            wrestler_entry = self.wrestler_match_tracking["wrestlers"].get(wrestler_id)
++                            if wrestler_entry and wrestler_entry.get("has_ever_had_matches", False):
++                                print(f"⚠️ Wrestler {info['name']} previously had matches but now shows zero. Attempting re-navigation retry...")
+                                 
+-                                    renavigation_attempts = 0
+-                                    renavigation_success = False
+-                                    max_renavigation_attempts = 3
++                                renavigation_attempts = 0
++                                renavigation_success = False
++                                max_renavigation_attempts = 3
+                                 
+-                                    while renavigation_attempts < max_renavigation_attempts and not renavigation_success:
+-                                        renavigation_attempts += 1
+-                                        print(f"\n⏳ Zero-match re-navigation attempt #{renavigation_attempts} for {info['name']}...")
++                                while renavigation_attempts < max_renavigation_attempts and not renavigation_success:
++                                    renavigation_attempts += 1
++                                    print(f"\n⏳ Zero-match re-navigation attempt #{renavigation_attempts} for {info['name']}...")
+                                     
+-                                        try:
+-                                            # Navigate back to team page
+-                                            current_url = self.driver.current_url
+-                                            parsed_url = urlparse(current_url)
+-                                            query_params = parse_qs(parsed_url.query)
+-                                            session_id = query_params.get('twSessionId', [''])[0]
++                                    try:
++                                        # Navigate back to team page
++                                        current_url = self.driver.current_url
++                                        parsed_url = urlparse(current_url)
++                                        query_params = parse_qs(parsed_url.query)
++                                        session_id = query_params.get('twSessionId', [''])[0]
+                                         
+-                                            if not session_id:
++                                        if not session_id:
++                                            team_page_url = team_url
++                                        else:
++                                            team_parsed_url = urlparse(team_url)
++                                            team_params = parse_qs(team_parsed_url.query)
++                                            team_id = team_params.get('teamId', [''])[0]
++                                            
++                                            if not team_id:
+                                                 team_page_url = team_url
+                                             else:
+-                                                team_parsed_url = urlparse(team_url)
+-                                                team_params = parse_qs(team_parsed_url.query)
+-                                                team_id = team_params.get('teamId', [''])[0]
+-                                            
+-                                                if not team_id:
+-                                                    team_page_url = team_url
+-                                                else:
+-                                                    team_page_url = f"{BASE_URL}/seasons/TeamSchedule.jsp?twSessionId={session_id}&teamId={team_id}"
++                                                team_page_url = f"{BASE_URL}/seasons/TeamSchedule.jsp?twSessionId={session_id}&teamId={team_id}"
+                                         
+-                                            print(f"Navigating to team page: {team_page_url}")
+-                                            self.driver.get(team_page_url)
+-                                            time.sleep(3)
++                                        print(f"Navigating to team page: {team_page_url}")
++                                        self.driver.get(team_page_url)
++                                        time.sleep(3)
+                                         
+-                                            # Click Matches tab
+-                                            matches_link = self.wait.until(
+-                                                EC.element_to_be_clickable((By.CSS_SELECTOR, "#pageTopLinksFrame a[href*='WrestlerMatches.jsp']"))
+-                                            )
+-                                            matches_link.click()
+-                                            time.sleep(3)
++                                        # Click Matches tab
++                                        matches_link = self.wait.until(
++                                            EC.element_to_be_clickable((By.CSS_SELECTOR, "#pageTopLinksFrame a[href*='WrestlerMatches.jsp']"))
++                                        )
++                                        matches_link.click()
++                                        time.sleep(3)
+                                         
+-                                            # Re-select wrestler
+-                                            wrestler_select = self.wait.until(
+-                                                EC.presence_of_element_located((By.ID, "wrestler"))
+-                                            )
++                                        # Re-select wrestler
++                                        wrestler_select = self.wait.until(
++                                            EC.presence_of_element_located((By.ID, "wrestler"))
++                                        )
+                                         
+-                                            try:
+-                                                prev_table = self.driver.find_element(By.CSS_SELECTOR, "table.dataGrid")
+-                                            except Exception:
+-                                                prev_table = None
++                                        try:
++                                            prev_table = self.driver.find_element(By.CSS_SELECTOR, "table.dataGrid")
++                                        except Exception:
++                                            prev_table = None
+                                         
+-                                            Select(wrestler_select).select_by_value(info["id"])
++                                        Select(wrestler_select).select_by_value(info["id"])
+                                         
+-                                            try:
+-                                                if prev_table is not None:
+-                                                    self.wait.until(EC.staleness_of(prev_table))
+-                                            except Exception:
+-                                                pass
++                                        try:
++                                            if prev_table is not None:
++                                                self.wait.until(EC.staleness_of(prev_table))
++                                        except Exception:
++                                            pass
+                                         
+-                                            # Verify hydration
+-                                            status = self._verify_wrestler_table_hydrated(info["id"], timeout_sec=8.0)
+-                                            if status == "timeout":
+-                                                print("⚠️ Table did not hydrate after re-navigation; will retry")
+-                                                continue
++                                        # Verify hydration
++                                        status = self._verify_wrestler_table_hydrated(info["id"], timeout_sec=8.0)
++                                        if status == "timeout":
++                                            print("⚠️ Table did not hydrate after re-navigation; will retry")
++                                            continue
+                                         
+-                                            # Check for matches
+-                                            table = self.wait.until(
+-                                                EC.presence_of_element_located((By.CSS_SELECTOR, "table.dataGrid"))
+-                                            )
+-                                            rows = table.find_elements(By.TAG_NAME, "tr")
+-                                            retry_match_rows = [row for row in rows[3:] if row.get_attribute("class") == "dataGridRow"]
++                                        # Check for matches
++                                        table = self.wait.until(
++                                            EC.presence_of_element_located((By.CSS_SELECTOR, "table.dataGrid"))
++                                        )
++                                        rows = table.find_elements(By.TAG_NAME, "tr")
++                                        retry_match_rows = [row for row in rows[3:] if row.get_attribute("class") == "dataGridRow"]
+                                         
+-                                            print(f"After re-navigation, found {len(retry_match_rows)} match rows")
++                                        print(f"After re-navigation, found {len(retry_match_rows)} match rows")
+                                         
+-                                            if len(retry_match_rows) > 0:
+-                                                # Found matches! Process them
+-                                                print(f"✅ Successfully found matches after re-navigation!")
+-                                                match_rows = retry_match_rows
+-                                                renavigation_success = True
+-                                                matches = []
++                                        if len(retry_match_rows) > 0:
++                                            # Found matches! Process them
++                                            print(f"✅ Successfully found matches after re-navigation!")
++                                            match_rows = retry_match_rows
++                                            renavigation_success = True
++                                            matches = []
+                                             
+-                                                # Process all match rows
+-                                                for i, row in enumerate(match_rows):
+-                                                    try:
+-                                                        cols = row.find_elements(By.TAG_NAME, "td")
+-                                                        if len(cols) < 5:
+-                                                            continue
++                                            # Process all match rows
++                                            for i, row in enumerate(match_rows):
++                                                try:
++                                                    cols = row.find_elements(By.TAG_NAME, "td")
++                                                    if len(cols) < 5:
++                                                        continue
+                                                     
+-                                                        summary = cols[4].text.strip()
++                                                    summary = cols[4].text.strip()
+                                                     
+-                                                        if "Double Forfeit" in summary:
+-                                                            continue
++                                                    if "Double Forfeit" in summary:
++                                                        continue
+                                                     
+-                                                        # Extract opponent ID
++                                                    # Extract opponent ID
++                                                    opponent_id = None
++                                                    if "received a bye" in summary:
+                                                         opponent_id = None
+-                                                        if "received a bye" in summary:
+-                                                            opponent_id = None
+-                                                        elif "forfeit" in summary.lower() or "(for.)" in summary.lower() or "(ff)" in summary.lower() or "received a forfeit" in summary.lower():
+-                                                            opponent_id = None
+-                                                        else:
+-                                                            links = cols[4].find_elements(By.TAG_NAME, "a")
+-                                                            current_wrestler_id = info["id"]
+-                                                            for link in links:
+-                                                                href = link.get_attribute("href")
+-                                                                if href and "wrestlerId=" in href:
+-                                                                    extracted_id = self.get_wrestler_id_from_url(href)
+-                                                                    if extracted_id != current_wrestler_id:
+-                                                                        opponent_id = extracted_id
+-                                                                        break
++                                                    elif "forfeit" in summary.lower() or "(for.)" in summary.lower() or "(ff)" in summary.lower() or "received a forfeit" in summary.lower():
++                                                        opponent_id = None
++                                                    else:
++                                                        links = cols[4].find_elements(By.TAG_NAME, "a")
++                                                        current_wrestler_id = info["id"]
++                                                        for link in links:
++                                                            href = link.get_attribute("href")
++                                                            if href and "wrestlerId=" in href:
++                                                                extracted_id = self.get_wrestler_id_from_url(href)
++                                                                if extracted_id != current_wrestler_id:
++                                                                    opponent_id = extracted_id
++                                                                    break
+                                                     
+-                                                        match_data = {
+-                                                            "date": cols[1].text.strip(),
+-                                                            "event": cols[2].text.strip(),
+-                                                            "weight": cols[3].text.strip(),
+-                                                            "summary": summary,
+-                                                            "opponent_id": opponent_id
+-                                                        }
++                                                    match_data = {
++                                                        "date": cols[1].text.strip(),
++                                                        "event": cols[2].text.strip(),
++                                                        "weight": cols[3].text.strip(),
++                                                        "summary": summary,
++                                                        "opponent_id": opponent_id
++                                                    }
+                                                     
+-                                                        date = match_data["date"]
+-                                                        if " - " in date:
+-                                                            match_data["date"] = date.split(" - ")[1].strip()
++                                                    date = match_data["date"]
++                                                    if " - " in date:
++                                                        match_data["date"] = date.split(" - ")[1].strip()
+                                                     
+-                                                        matches.append(match_data)
+-                                                    except Exception as e:
+-                                                        print(f"Error processing match row after re-navigation: {e}")
+-                                                        continue
++                                                    matches.append(match_data)
++                                                except Exception as e:
++                                                    print(f"Error processing match row after re-navigation: {e}")
++                                                    continue
+                                             
+-                                                # Break out of renavigation loop - we found matches
+-                                                break
++                                            # Break out of renavigation loop - we found matches
++                                            break
++                                        else:
++                                            # Still zero matches - check for "no matches" banner
++                                            page_text = self.driver.find_element(By.TAG_NAME, "body").text
++                                            no_matches_message = "There are no matches associated with this wrestler"
++                                            if no_matches_message in page_text and info['name'] in page_text:
++                                                print(f"No matches confirmed after re-navigation attempt #{renavigation_attempts}")
++                                                # Continue to next attempt or will fall through to validation
+                                             else:
+-                                                # Still zero matches - check for "no matches" banner
+-                                                page_text = self.driver.find_element(By.TAG_NAME, "body").text
+-                                                no_matches_message = "There are no matches associated with this wrestler"
+-                                                if no_matches_message in page_text and info['name'] in page_text:
+-                                                    print(f"No matches confirmed after re-navigation attempt #{renavigation_attempts}")
+-                                                    # Continue to next attempt or will fall through to validation
+-                                                else:
+-                                                    print(f"⚠️ Ambiguous state after re-navigation attempt #{renavigation_attempts}")
++                                                print(f"⚠️ Ambiguous state after re-navigation attempt #{renavigation_attempts}")
+                                     
+-                                        except Exception as e:
+-                                            print(f"❌ Error during zero-match re-navigation attempt #{renavigation_attempts}: {e}")
++                                    except Exception as e:
++                                        print(f"❌ Error during zero-match re-navigation attempt #{renavigation_attempts}: {e}")
+                                 
+-                                    if renavigation_success:
+-                                        print(f"✅ Re-navigation successful - found {len(matches)} matches for {info['name']}")
++                                if renavigation_success:
++                                    print(f"✅ Re-navigation successful - found {len(matches)} matches for {info['name']}")
+                     
+-                        # VALIDATION: Check for match count regression before adding to team_data
+-                        validation_status, validation_message = self._validate_wrestler_match_count(
+-                            info["id"],
+-                            info["name"],
+-                            matches
+-                        )
++                    # VALIDATION: Check for match count regression before adding to team_data
++                    validation_status, validation_message = self._validate_wrestler_match_count(
++                        info["id"],
++                        info["name"],
++                        matches
++                    )
+                     
+-                        if validation_status == "REGRESSION_DETECTED":
++                    if validation_status == "REGRESSION_DETECTED":
+                             # REGRESSION DETECTED - prompt user for action
+-                            error_msg = validation_message
+-                            print(f"\n❌ {error_msg}")
+-                            self._log_error("match_regression", error_msg)
++                        error_msg = validation_message
++                        print(f"\n❌ {error_msg}")
++                        self._log_error("match_regression", error_msg)
+                             
+                             # Prompt user for action
+                             print("\n" + "="*60)
+@@ -2458,20 +2458,20 @@ class WrestlingScraper:
+                                     if choice == "1":
+                                         # Abort team scrape
+                                         print("\n❌ Aborting team scrape. Please retry the scrape.")
+-                                        
+-                                        # Save tracking file before aborting
+-                                        try:
+-                                            self._save_wrestler_match_tracking()
+-                                        except Exception as e:
+-                                            print(f"Warning: Error saving tracking file before abort: {e}")
+-                                        
+-                                        # Save log state before aborting
+-                                        try:
+-                                            self._save_scrape_log()
+-                                        except Exception:
+-                                            pass
+-                                        
+-                                        return None  # Abort team scrape (no data written)
++                        
++                        # Save tracking file before aborting
++                        try:
++                            self._save_wrestler_match_tracking()
++                        except Exception as e:
++                            print(f"Warning: Error saving tracking file before abort: {e}")
++                        
++                        # Save log state before aborting
++                        try:
++                            self._save_scrape_log()
++                        except Exception:
++                            pass
++                        
++                        return None  # Abort team scrape (no data written)
+                                     
+                                     elif choice == "2":
+                                         # Accept zero matches - update tracking to reflect this
+@@ -2500,43 +2500,43 @@ class WrestlingScraper:
+                             
+                             # If we get here, user chose to continue - wrestler will be processed with zero matches
+                     
+-                        # Validation passed - update tracking and continue
+-                        # (tracking is updated in _validate_wrestler_match_count)
++                    # Validation passed - update tracking and continue
++                    # (tracking is updated in _validate_wrestler_match_count)
+                     
+-                        # Add wrestler data to roster
+-                        wrestler_data = {
+-                            "season_wrestler_id": info["id"],
+-                            "name": info["name"],
+-                            "weight_class": info["weight_class"],
+-                            "grade": info["grade"],
+-                            "matches": matches
+-                        }
++                    # Add wrestler data to roster
++                    wrestler_data = {
++                        "season_wrestler_id": info["id"],
++                        "name": info["name"],
++                        "weight_class": info["weight_class"],
++                        "grade": info["grade"],
++                        "matches": matches
++                    }
+                     
+-                        # Append wrestler data to the team's roster
+-                        team_data["roster"].append(wrestler_data)
++                    # Append wrestler data to the team's roster
++                    team_data["roster"].append(wrestler_data)
+                     
+-                        # Log processing summary including skipped rows if any
+-                        if skipped_rows > 0:
+-                            print(f"\nProcessed {len(matches)} matches for {info['name']} (Grade: {info['grade']}) - Skipped {skipped_rows} problematic rows")
+-                            # Add to log with team name for easier searching
+-                            skip_summary = f"Team {team_info['name']}: Processed wrestler {info['name']} with {skipped_rows} skipped match rows out of {len(matches) + skipped_rows} total"
+-                            self._log_error("match_processing_summary", skip_summary)
+-                        else:
+-                            success_msg = f"Processed {len(matches)} matches for {info['name']} (Grade: {info['grade']}) - All rows verified"
+-                            print(f"\n{success_msg}")
+-                            self._log_success("wrestler_processing", f"Team {team_info['name']}: {success_msg}")
++                    # Log processing summary including skipped rows if any
++                    if skipped_rows > 0:
++                        print(f"\nProcessed {len(matches)} matches for {info['name']} (Grade: {info['grade']}) - Skipped {skipped_rows} problematic rows")
++                        # Add to log with team name for easier searching
++                        skip_summary = f"Team {team_info['name']}: Processed wrestler {info['name']} with {skipped_rows} skipped match rows out of {len(matches) + skipped_rows} total"
++                        self._log_error("match_processing_summary", skip_summary)
++                    else:
++                        success_msg = f"Processed {len(matches)} matches for {info['name']} (Grade: {info['grade']}) - All rows verified"
++                        print(f"\n{success_msg}")
++                        self._log_success("wrestler_processing", f"Team {team_info['name']}: {success_msg}")
+                     
+                         # Wrestler processed successfully - exit retry loop
+                         wrestler_processed = True
+                     
+-                    except Exception as e:
+-                        print(f"Error processing wrestler {info['name']}: {e}")
+-                        # Log error with team name
+-                        error_msg = f"Error processing wrestler {info['name']} for team {team_info['name']}: {e}"
+-                        self._log_error("wrestler_processing", error_msg)
++                except Exception as e:
++                    print(f"Error processing wrestler {info['name']}: {e}")
++                    # Log error with team name
++                    error_msg = f"Error processing wrestler {info['name']} for team {team_info['name']}: {e}"
++                    self._log_error("wrestler_processing", error_msg)
+                         
+                         # If this looks like a stale element error, attempt re-navigation and retry
+-                        if "stale element reference" in str(e).lower():
++                    if "stale element reference" in str(e).lower():
+                             stale_retry_attempts += 1
+                             print(f"⚠️ Stale element error detected (attempt {stale_retry_attempts}/{max_stale_retries})")
+                             
+@@ -2584,18 +2584,18 @@ class WrestlingScraper:
+                                     continue
+                             else:
+                                 # All retry attempts exhausted
+-                                fatal_msg = (
+-                                    f"Fatal stale element error while processing wrestler {info['name']} "
++                        fatal_msg = (
++                            f"Fatal stale element error while processing wrestler {info['name']} "
+                                     f"for team {team_info['name']} after {max_stale_retries} retry attempts. Marking team scrape as failed."
+-                                )
+-                                print(f"❌ {fatal_msg}")
+-                                self._log_error("team_scraping", fatal_msg)
+-                                # Save log state before aborting this team
+-                                try:
+-                                    self._save_scrape_log()
+-                                except Exception:
+-                                    pass
+-                                return None
++                        )
++                        print(f"❌ {fatal_msg}")
++                        self._log_error("team_scraping", fatal_msg)
++                        # Save log state before aborting this team
++                        try:
++                            self._save_scrape_log()
++                        except Exception:
++                            pass
++                        return None
+                         else:
+                             # Not a stale element error - break out of retry loop and continue to next wrestler
+                             break

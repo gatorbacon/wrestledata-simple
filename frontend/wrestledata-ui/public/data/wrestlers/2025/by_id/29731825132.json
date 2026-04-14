@@ -1,0 +1,95 @@
+{
+  "wrestler_id": "29731825132",
+  "name": "Joe Haynes",
+  "team": "Virginia",
+  "team_slug": "virginia",
+  "team_rank": 78,
+  "weight_class": 133,
+  "year": 2025,
+  "current_rank": 87,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.0,
+    "pa7": 12.33,
+    "pd7": -9.33,
+    "si_plus": 93.9,
+    "df_plus": 98.5,
+    "apr_plus": 103.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "29684828132",
+      "opponent_rank": 88,
+      "opponent_name": "Brycen Arbogast",
+      "method": "MD 9-0"
+    },
+    "worst_loss": {
+      "opponent_id": "29672323132",
+      "opponent_rank": 81,
+      "opponent_name": "Scott Johnson",
+      "method": "TF 15-0 1:29"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2024-12-20",
+      "opponent_id": "29672323132",
+      "opponent_name": "Scott Johnson",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 47,
+      "opponent_weight": 133,
+      "opponent_rank": 81,
+      "weight_class": "133",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "1:29",
+      "event": "Kent State Open"
+    },
+    {
+      "date": "2024-12-20",
+      "opponent_id": "29672306132",
+      "opponent_name": "Joey Fischer",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 47,
+      "opponent_weight": 133,
+      "opponent_rank": 59,
+      "weight_class": "133",
+      "result": "L",
+      "method": "MD",
+      "score": "12-0",
+      "duration": "7:00",
+      "event": "Kent State Open"
+    },
+    {
+      "date": "2024-12-20",
+      "opponent_id": "29684828132",
+      "opponent_name": "Brycen Arbogast",
+      "opponent_team": "West Virginia",
+      "opponent_team_rank": 22,
+      "opponent_weight": 133,
+      "opponent_rank": 88,
+      "weight_class": "133",
+      "result": "W",
+      "method": "MD",
+      "score": "9-0",
+      "duration": "7:00",
+      "event": "Kent State Open"
+    }
+  ],
+  "profile_generated_at": "2026-04-03"
+}

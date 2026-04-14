@@ -982,6 +982,9 @@ def _run_wrestler_mode(season: int, max_rank: int) -> None:
 
     def _build_pin_history(
         season_: int,
+        league_: str = 'ncaa',
+        state_: str = None,
+        gender_: str = None,
     ) -> tuple[dict[str, list[dict]], float]:
         """
         Build per-wrestler pin histories and league pin rate (LPR).
@@ -989,7 +992,7 @@ def _run_wrestler_mode(season: int, max_rank: int) -> None:
         Uses raw team data (load_team_data), dedups bouts across team files,
         infers winner/loser and fall status from the summary string.
         """
-        teams = load_team_data(season_)
+        teams = load_team_data(season_, league=league_, state=state_, gender=gender_)
         pin_matches: dict[str, list[dict]] = _dd(list)
         seen_keys = set()
         total_bouts = 0
@@ -1068,7 +1071,7 @@ def _run_wrestler_mode(season: int, max_rank: int) -> None:
         lpr = (total_pin_losses / float(total_bouts)) if total_bouts > 0 else 0.0
         return pin_matches, lpr
 
-    pin_matches_by_wrestler, LPR = _build_pin_history(season)
+    pin_matches_by_wrestler, LPR = _build_pin_history(season, league_=league, state_=state, gender_=gender)
 
     if DEBUG_APR:
         print("APR breakdown (per match):")
@@ -1329,7 +1332,7 @@ def _run_wrestler_mode(season: int, max_rank: int) -> None:
 
 
 def _compute_plus_metrics_for_all(
-    season: int, max_rank: int
+    season: int, max_rank: int, league: str = 'ncaa', state: str = None, gender: str = None
 ) -> Tuple[Dict[str, Dict[str, float]], Dict[str, float]]:
     """
     Compute APS7/APG7/APR and corresponding SI+/DF+/PE+/DI_raw for ALL wrestlers.
@@ -1353,7 +1356,7 @@ def _compute_plus_metrics_for_all(
         pa7_sum_by_wt,
         pa7_cnt_by_wt,
         _excluded_invalid_matches,
-    ) = build_all_matches(season, {})
+    ) = build_all_matches(season, {}, league=league, state=state, gender=gender)
 
     # League-wide PA7/PF7/PD7 (LSR) from all valid match sides.
     pa7_avg_by_weight: Dict[str, float] = {}
@@ -1409,7 +1412,11 @@ def _compute_plus_metrics_for_all(
         if not wc:
             continue
         # Load rankings for this weight class
-        rankings_path = Path("mt/rankings_data") / str(season) / f"rankings_{wc}.json"
+        if league == 'hs':
+            state_lower = state.lower() if state else 'ky'
+            rankings_path = Path("mt/rankings_data") / f"hs_{state_lower}_{gender}" / str(season) / f"rankings_{wc}.json"
+        else:  # ncaa
+            rankings_path = Path("mt/rankings_data") / str(season) / f"rankings_{wc}.json"
         if not rankings_path.exists():
             # Fallback to league averages
             for q in range(1, 6):
@@ -1631,8 +1638,11 @@ def _compute_plus_metrics_for_all(
 
     def _build_pin_history_all(
         season_: int,
+        league_: str = 'ncaa',
+        state_: str = None,
+        gender_: str = None,
     ) -> tuple[dict[str, list[dict]], float]:
-        teams = load_team_data(season_)
+        teams = load_team_data(season_, league=league_, state=state_, gender=gender_)
         pin_matches: dict[str, list[dict]] = _dd(list)
         seen_keys = set()
         total_bouts = 0
@@ -1704,7 +1714,7 @@ def _compute_plus_metrics_for_all(
         lpr = (total_pin_losses / float(total_bouts)) if total_bouts > 0 else 0.0
         return pin_matches, lpr
 
-    pin_matches_all, LPR_all = _build_pin_history_all(season)
+    pin_matches_all, LPR_all = _build_pin_history_all(season, league_=league, state_=state, gender_=gender)
     apr_by_id: Dict[str, float] = {}
     apr_vals_pop: List[float] = []
     k_pin = 12.0
@@ -2107,6 +2117,9 @@ def is_invalid_result_for_anppm(result: str, summary: str) -> bool:
 def build_all_matches(
     season: int,
     rank_by_id: Dict[str, int],
+    league: str = 'ncaa',
+    state: str = None,
+    gender: str = None,
 ) -> Tuple[
     Dict[str, Dict],
     Dict[str, List[Dict]],
@@ -2135,7 +2148,7 @@ def build_all_matches(
       - pa7_count_by_weight: weight -> number of pa7 entries
       - excluded_invalid_count: number of matches skipped as invalid
     """
-    teams = load_team_data(season)
+    teams = load_team_data(season, league=league, state=state, gender=gender)
 
     # Basic roster info by wrestler_id
     wrestlers: Dict[str, Dict] = {}

@@ -49,6 +49,8 @@ def compute_mv_for_wrestler(
     tier_avgs: Dict[Tuple[int, int], float],
     max_rank: int,
     all_matches: List[Dict],
+    league: str = 'ncaa',
+    gender: str = None,
 ) -> Tuple[Optional[Dict], List[Dict]]:
     """
     Compute MV for a single wrestler and per-match MV impact.
@@ -61,7 +63,7 @@ def compute_mv_for_wrestler(
         - matches_with_impact: list of match dicts with mv_impact field added
     """
     # Load wrestler's matches from ALL weight classes
-    wrestler_matches = load_wrestler_matches(season, weight, wrestler_id, data_dir)
+    wrestler_matches = load_wrestler_matches(season, weight, wrestler_id, data_dir, league=league, gender=gender)
     
     if not wrestler_matches:
         return None, []
@@ -73,7 +75,7 @@ def compute_mv_for_wrestler(
     for match in wrestler_matches:
         try:
             opp_id, opp_weight, opp_rank = get_opponent_info(
-                match, wrestler_id, season, weight, data_dir
+                match, wrestler_id, season, weight, data_dir, league=league, gender=gender
             )
             if opp_id:
                 opponent_weight_map[opp_id] = opp_weight
@@ -89,7 +91,7 @@ def compute_mv_for_wrestler(
     
     # Load all matches for opponents from their respective weight classes
     opponent_matches = load_all_matches_for_opponents(
-        season, opponent_weight_map, data_dir
+        season, opponent_weight_map, data_dir, league=league, gender=gender
     )
     
     # Build rank maps for each weight class that appears
@@ -97,7 +99,7 @@ def compute_mv_for_wrestler(
     for opp_id, opp_weight in opponent_weight_map.items():
         if opp_weight not in weight_rank_maps:
             weight_rank_maps[opp_weight] = load_rankings(
-                season, opp_weight, data_dir, use_cache=True
+                season, opp_weight, data_dir, use_cache=True, league=league, gender=gender
             )
     
     # Compute raw opponent averages using correct rank map for each opponent
@@ -162,7 +164,7 @@ def compute_mv_for_wrestler(
         # Get opponent info (with weight class)
         try:
             opp_id, opp_weight, opp_rank = get_opponent_info(
-                match, wrestler_id, season, weight, data_dir
+                match, wrestler_id, season, weight, data_dir, league=league, gender=gender
             )
         except ValueError as e:
             raise ValueError(
@@ -227,7 +229,7 @@ def compute_mv_for_wrestler(
     return mv_data, matches_with_impact
 
 
-def compute_all_mv(season: int, data_dir: str, output_file: Optional[Path] = None) -> Tuple[Dict[str, Dict], Dict[str, List[Dict]]]:
+def compute_all_mv(season: int, data_dir: str, output_file: Optional[Path] = None, league: str = 'ncaa', state: str = None, gender: str = None) -> Tuple[Dict[str, Dict], Dict[str, List[Dict]]]:
     """
     Compute MV for all wrestlers across all weights and per-match MV impact.
     
@@ -236,11 +238,24 @@ def compute_all_mv(season: int, data_dir: str, output_file: Optional[Path] = Non
         - all_mv_data: dict mapping wrestler_id -> MV data
         - match_impact_cache: dict mapping wrestler_id -> list of matches with mv_impact
     """
-    data_path = Path(data_dir) / str(season)
+    # Setup data path based on league type
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        data_path = Path(data_dir) / str(season)
+    else:  # ncaa
+        data_path = Path(data_dir) / str(season)
+    
     all_mv_data = {}
     match_impact_cache = {}
     
-    weights = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
+    # Determine weight classes based on league and gender
+    if league == 'hs':
+        if gender == 'boys':
+            weights = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
+        else:  # girls
+            weights = [100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235]
+    else:  # ncaa
+        weights = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
     
     print(f"Computing Mat Value for all wrestlers in season {season}...")
     print("=" * 80)
@@ -250,7 +265,7 @@ def compute_all_mv(season: int, data_dir: str, output_file: Optional[Path] = Non
         
         # Load rankings for this weight (for getting wrestler list)
         try:
-            rank_map = load_rankings(season, weight, data_dir, use_cache=True)
+            rank_map = load_rankings(season, weight, data_dir, use_cache=True, league=league, gender=gender)
             max_rank = rank_map.get("__max_rank__", 200)
         except FileNotFoundError:
             print(f"  Skipping weight {weight} (rankings file not found)")
@@ -274,6 +289,8 @@ def compute_all_mv(season: int, data_dir: str, output_file: Optional[Path] = Non
                     {},  # tier_avgs no longer used (computed per opponent weight)
                     max_rank,
                     [],  # all_matches no longer used (loaded per opponent weight)
+                    league=league,
+                    gender=gender,
                 )
                 
                 if mv_data:
@@ -404,10 +421,23 @@ def parse_args() -> argparse.Namespace:
         help="Season year (e.g., 2026)",
     )
     parser.add_argument(
+        "-league",
+        type=str,
+        choices=["ncaa", "hs"],
+        default="ncaa",
+        help="League: 'ncaa' (default) or 'hs' for high school",
+    )
+    parser.add_argument(
+        "-state",
+        type=str,
+        default=None,
+        help="State code (required when league=hs, e.g., 'KY')",
+    )
+    parser.add_argument(
         "--data_dir",
         type=str,
-        default="mt/rankings_data",
-        help="Directory containing rankings and match data",
+        default=None,
+        help="Directory containing rankings and match data (auto-determined if not specified)",
     )
     parser.add_argument(
         "--output",
@@ -420,33 +450,113 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
+    league = args.league
+    state = args.state
     
-    output_file = None
-    if args.output:
-        output_file = Path(args.output)
+    # Validate HS parameters
+    if league == "hs":
+        if not state:
+            raise ValueError("State is required when league=hs (e.g., -state KY)")
+        if state != "KY":
+            raise ValueError(f"Only KY is currently supported for HS. Got: {state}")
+    
+    # Determine data directory
+    if args.data_dir:
+        data_dir = args.data_dir
     else:
-        # Default output location - write directly to public data directory
-        output_file = Path(f"frontend/wrestledata-ui/public/data/mat_value/{args.season}/mat_value_{args.season}.json")
+        if league == "hs":
+            # Will be set per gender below
+            data_dir = None
+        else:
+            data_dir = "mt/rankings_data"
     
-    mv_data, match_impact_cache = compute_all_mv(args.season, args.data_dir, output_file)
+    # Determine output directory base
+    if league == "hs":
+        output_base = Path("frontend/hs-ky-ui/public/data/mat_value")
+    else:
+        output_base = Path("frontend/wrestledata-ui/public/data/mat_value")
     
-    # Write MV cache file that can be loaded by build_wrestler_profiles.py
-    cache_file = Path(f"frontend/wrestledata-ui/public/data/mat_value/{args.season}/mv_cache_{args.season}.json")
-    cache_file.parent.mkdir(parents=True, exist_ok=True)
-    with cache_file.open("w", encoding="utf-8") as f:
-        json.dump(mv_data, f, indent=2)
+    # Process HS (both boys and girls) or NCAA
+    if league == "hs":
+        genders = ["boys", "girls"]
+        all_mv_data_combined = {}
+        all_match_impact_combined = {}
+        
+        for gender in genders:
+            print(f"\n{'=' * 80}")
+            print(f"Processing {gender}...")
+            print(f"{'=' * 80}")
+            
+            # Set data directory for this gender
+            gender_data_dir = f"mt/rankings_data/hs_ky_{gender}"
+            
+            # Output files for this gender
+            gender_output_file = output_base / gender / str(args.season) / f"mat_value_{args.season}.json"
+            gender_output_file.parent.mkdir(parents=True, exist_ok=True)
+            
+            mv_data, match_impact_cache = compute_all_mv(
+                args.season, gender_data_dir, gender_output_file, league=league, state=state, gender=gender
+            )
+            
+            # Write gender-specific output files
+            if mv_data:
+                with gender_output_file.open("w", encoding="utf-8") as f:
+                    json.dump(mv_data, f, indent=2)
+                print(f"\nWrote MV data: {gender_output_file}")
+                print(f"  {len(mv_data)} wrestlers")
+            
+            # Write MV cache file
+            cache_file = output_base / gender / str(args.season) / f"mv_cache_{args.season}.json"
+            cache_file.parent.mkdir(parents=True, exist_ok=True)
+            with cache_file.open("w", encoding="utf-8") as f:
+                json.dump(mv_data, f, indent=2)
+            print(f"\nWrote MV cache: {cache_file}")
+            
+            # Write match-level MV impact cache
+            match_impact_file = output_base / gender / str(args.season) / f"match_mv_impact_{args.season}.json"
+            match_impact_file.parent.mkdir(parents=True, exist_ok=True)
+            with match_impact_file.open("w", encoding="utf-8") as f:
+                json.dump(match_impact_cache, f, indent=2)
+            print(f"\nWrote match MV impact cache: {match_impact_file}")
+            print(f"  {len(match_impact_cache)} wrestlers with match-level data")
+            
+            # Combine data for overall summary
+            all_mv_data_combined.update(mv_data)
+            all_match_impact_combined.update(match_impact_cache)
+        
+        print(f"\n{'=' * 80}")
+        print(f"Total across both genders:")
+        print(f"  {len(all_mv_data_combined)} wrestlers with MV data")
+        print(f"  {len(all_match_impact_combined)} wrestlers with match-level data")
+        print(f"{'=' * 80}")
     
-    print(f"\nWrote MV cache: {cache_file}")
-    print(f"  {len(mv_data)} wrestlers")
-    
-    # Write match-level MV impact cache
-    match_impact_file = Path(f"frontend/wrestledata-ui/public/data/mat_value/{args.season}/match_mv_impact_{args.season}.json")
-    match_impact_file.parent.mkdir(parents=True, exist_ok=True)
-    with match_impact_file.open("w", encoding="utf-8") as f:
-        json.dump(match_impact_cache, f, indent=2)
-    
-    print(f"\nWrote match MV impact cache: {match_impact_file}")
-    print(f"  {len(match_impact_cache)} wrestlers with match-level data")
+    else:
+        # NCAA mode
+        output_file = None
+        if args.output:
+            output_file = Path(args.output)
+        else:
+            output_file = output_base / str(args.season) / f"mat_value_{args.season}.json"
+        
+        mv_data, match_impact_cache = compute_all_mv(args.season, data_dir, output_file, league=league, state=state, gender=None)
+        
+        # Write MV cache file that can be loaded by build_wrestler_profiles.py
+        cache_file = output_base / str(args.season) / f"mv_cache_{args.season}.json"
+        cache_file.parent.mkdir(parents=True, exist_ok=True)
+        with cache_file.open("w", encoding="utf-8") as f:
+            json.dump(mv_data, f, indent=2)
+        
+        print(f"\nWrote MV cache: {cache_file}")
+        print(f"  {len(mv_data)} wrestlers")
+        
+        # Write match-level MV impact cache
+        match_impact_file = output_base / str(args.season) / f"match_mv_impact_{args.season}.json"
+        match_impact_file.parent.mkdir(parents=True, exist_ok=True)
+        with match_impact_file.open("w", encoding="utf-8") as f:
+            json.dump(match_impact_cache, f, indent=2)
+        
+        print(f"\nWrote match MV impact cache: {match_impact_file}")
+        print(f"  {len(match_impact_cache)} wrestlers with match-level data")
 
 
 if __name__ == "__main__":

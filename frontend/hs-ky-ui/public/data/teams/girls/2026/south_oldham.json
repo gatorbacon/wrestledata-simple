@@ -1,0 +1,126 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": "girls",
+  "team_id": "south_oldham",
+  "team_name": "South Oldham",
+  "name": "South Oldham",
+  "abbreviation": "SOLD",
+  "governing_body": "Kentucky High School Athletic Association",
+  "division": "HS Girls",
+  "conference": null,
+  "location": {
+    "state": "KY",
+    "region": "2"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981233150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
+    "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-03-04T23:14:55.705274Z",
+  "starters": {
+    "100": {
+      "weight": 100,
+      "wrestler_id": "35481347132",
+      "name": "Lexi Proudfoot",
+      "current_rank": 11,
+      "grade": null,
+      "xtp": 6.74,
+      "xtp_p": 1.69,
+      "xtp_a": 1.58,
+      "xtp_b": 3.47,
+      "xtp_simple": 2.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "top33_record": {
+        "wins": 8,
+        "losses": 4
+      },
+      "wins": 12,
+      "losses": 6,
+      "top25_wins": 5,
+      "bonus_rate": 1.0
+    },
+    "107": {
+      "weight": 107,
+      "wrestler_id": "35443111132",
+      "name": "Nadine Riggins",
+      "current_rank": 62,
+      "grade": null,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 4
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 7
+      },
+      "wins": 1,
+      "losses": 9,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  },
+  "remaining": [
+    {
+      "weight": 100,
+      "wrestler_id": "35443156132",
+      "name": "Bella Kimery",
+      "grade": null,
+      "wins": 0,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_xTP_simple": 2.0,
+  "team_metrics": {
+    "projected_state_points": 2.0,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": 13,
+      "losses": 15
+    },
+    "top33": {
+      "wins": 8,
+      "losses": 11
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 7
+    },
+    "bonus_rate": {
+      "value": 0.923,
+      "rank": 68,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.846,
+      "rank": 72,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.0,
+      "rank": 93,
+      "rank_scope": "league"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "wrestler_id": "35863863132",
+  "name": "Bentlee Hines",
+  "team": "Nicholas County",
+  "team_slug": "nicholas_county",
+  "team_rank": null,
+  "weight_class": 120,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35751400132",
+      "opponent_rank": 22,
+      "opponent_name": "Noah Clouse",
+      "method": "Fall 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "35688292132",
+      "opponent_rank": 22,
+      "opponent_name": "Jett Stull",
+      "method": "Fall 0:32"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-31",
+      "opponent_id": "35688292132",
+      "opponent_name": "Jett Stull",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": 110,
+      "opponent_weight": 120,
+      "opponent_rank": 22,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:32",
+      "event": "WSAZ Invitational"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35751400132",
+      "opponent_name": "Noah Clouse",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": 2,
+      "opponent_weight": 113,
+      "opponent_rank": 22,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Fallen Heroes"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34993520132",
+      "opponent_name": "Jacob Abadi",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 126,
+      "opponent_weight": 120,
+      "opponent_rank": 59,
+      "weight_class": "120",
+      "result": "W",
+      "method": "DEC",
+      "score": "11-6",
+      "duration": "7:00",
+      "event": "Fallen Heroes"
+    }
+  ],
+  "profile_generated_at": "2026-04-04"
+}

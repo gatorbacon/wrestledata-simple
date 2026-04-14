@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <title>Freshman of the Year Watch — MatSavant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+  <script src="/js/analytics.js"></script>
+</head>
+<body>
+  <script src="/header.js"></script>
+  <div class="page-container">
+    <header class="header">
+      <h1>Freshman of the Year Watch</h1>
+      <div class="header-subline" id="season-info">Season 2026</div>
+      <div class="header-explainer" id="description"></div>
+    </header>
+
+    <section class="section">
+      <div class="table-wrapper">
+        <table id="freshman-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>Wt</th>
+              <th>W–L</th>
+              <th class="score-col">Win%</th>
+              <th class="score-col">Bonus%</th>
+              <th class="score-col">Pin%</th>
+              <th class="score-col"># Ranked<br/>Wins</th>
+              <th class="score-col"># Top 10<br/>Wins</th>
+              <th class="score-col">Ranked<br/>Bonus%</th>
+              <th class="score-col">Fresh<br/>Score</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="/freshman.js"></script>
+  <script src="/footer.js"></script>
+</body>
+</html>
+

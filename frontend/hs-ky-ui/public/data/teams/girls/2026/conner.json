@@ -1,0 +1,115 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": "girls",
+  "team_id": "conner",
+  "team_name": "Conner",
+  "name": "Conner",
+  "abbreviation": "CONN",
+  "governing_body": "Kentucky High School Athletic Association",
+  "division": "HS Girls",
+  "conference": null,
+  "location": {
+    "state": "KY",
+    "region": "3"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981171150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
+    "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-03-04T23:14:55.343114Z",
+  "starters": {
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35375763132",
+      "name": "Razan Salhi",
+      "current_rank": 83,
+      "grade": null,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "wins": 0,
+      "losses": 3,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35375761132",
+      "name": "Cambri Parker",
+      "current_rank": 36,
+      "grade": null,
+      "xtp": 1.27,
+      "xtp_p": 0.03,
+      "xtp_a": 0.3,
+      "xtp_b": 0.94,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 3,
+        "losses": 4
+      },
+      "wins": 10,
+      "losses": 8,
+      "top25_wins": 2,
+      "bonus_rate": 1.0
+    }
+  },
+  "remaining": [],
+  "team_xTP_simple": 0.0,
+  "team_metrics": {
+    "projected_state_points": 0.0,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": 10,
+      "losses": 11
+    },
+    "top33": {
+      "wins": 3,
+      "losses": 5
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 2
+    },
+    "bonus_rate": {
+      "value": 1.0,
+      "rank": 13,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 1.0,
+      "rank": 8,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.0,
+      "rank": 98,
+      "rank_scope": "league"
+    }
+  }
+}

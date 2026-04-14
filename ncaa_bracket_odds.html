@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NCAA D1 Wrestling — Bracket Odds</title>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #f4f6f9;
+  color: #222;
+}
+.top-nav {
+  background: #1a1a2e;
+  padding: 0 32px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  height: 48px;
+}
+.nav-link {
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 5px;
+  transition: background 0.15s;
+}
+.nav-link:hover { background: rgba(255,255,255,0.1); color: #fff; }
+.nav-link.active { background: rgba(255,255,255,0.15); color: #fff; }
+.nav-dropdown { position: relative; display: flex; align-items: center; }
+.nav-dropdown-trigger { cursor: default; user-select: none; }
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #1a1a2e;
+  border-top: 2px solid rgba(255,255,255,0.12);
+  min-width: 210px;
+  z-index: 200;
+  border-radius: 0 0 7px 7px;
+  padding: 4px 0;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+.nav-dropdown:hover .dropdown-menu { display: block; }
+.dropdown-item {
+  display: block;
+  padding: 9px 18px;
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.dropdown-item:hover { background: rgba(255,255,255,0.08); color: #fff; }
+.dropdown-item.active { color: #fff; background: rgba(255,255,255,0.13); }
+.page-body { padding: 32px 24px; }
+.report-header { text-align: center; margin-bottom: 40px; }
+.report-header h1 {
+  font-size: 2rem; font-weight: 700; color: #1a1a2e; letter-spacing: -0.5px;
+}
+.report-header p { color: #666; margin-top: 6px; font-size: 0.95rem; }
+.section {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  padding: 28px 32px;
+  margin-bottom: 32px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section h2 {
+  font-size: 1.35rem; font-weight: 600; color: #1a1a2e;
+  margin-bottom: 6px; border-bottom: 2px solid #e8ecf0; padding-bottom: 10px;
+}
+.section .subtitle { color: #666; font-size: 0.9rem; margin-bottom: 20px; }
+.two-col {
+  display: grid; grid-template-columns: 1fr 2fr; gap: 28px; align-items: start;
+}
+.data-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+.data-table thead th {
+  background: #1a1a2e; color: #fff; padding: 9px 14px;
+  text-align: left; font-weight: 500; letter-spacing: 0.3px;
+}
+.data-table tbody tr:nth-child(even) { background: #f7f9fb; }
+.data-table tbody tr:hover { background: #eef2f7; }
+.data-table tbody td { padding: 7px 14px; border-bottom: 1px solid #ebebeb; }
+.chart-container { width: 100%; }
+</style>
+</head>
+<body>
+<nav class="top-nav">
+  <a href="index.html" class="nav-link">Home</a>
+  <a href="ncaa_live.html" class="nav-link">Live Tracker</a>
+  <div class="nav-dropdown">
+    <span class="nav-link nav-dropdown-trigger active">Reports &#9662;</span>
+    <div class="dropdown-menu">
+<a href="ncaa_report.html" class="dropdown-item">Overall Report</a>
+<a href="ncaa_team_report.html" class="dropdown-item">Team Analysis</a>
+<a href="ncaa_team_leaderboard.html" class="dropdown-item">Team Leaderboard</a>
+<a href="ncaa_scoring_trends.html" class="dropdown-item">Scoring Trends</a>
+<a href="ncaa_conf_analysis.html" class="dropdown-item">Conference Analysis</a>
+<a href="ncaa_conf_leaderboard.html" class="dropdown-item">Conference Leaderboard</a>
+<a href="ncaa_bracket_odds.html" class="dropdown-item active">Bracket Odds</a>
+    </div>
+  </div>
+</nav>
+<div class="page-body">
+
+<div class="section">
+  <h2 style="margin-bottom:6px">Bracket Odds by Seed</h2>
+  <p style="color:#555;font-size:14px;margin-bottom:18px">
+    Percentage of wrestlers at each seed who reached each championship bracket round.
+    Only merit-based seeds included: top 12 in 2013, top 16 in 2014–2018, all 33 from 2019.
+    Gray cells = zero occurrences. Hover for exact ratio.
+  </p>
+  <div id="heatmap-chart" style="width:100%;height:880px"></div>
+</div>
+
+<div class="section" style="margin-top:24px">
+  <h2 style="margin-bottom:6px">Bracket Survival Curves</h2>
+  <p style="color:#555;font-size:14px;margin-bottom:18px">
+    Each line shows one seed's survival rate through the championship bracket.
+    Color gradient: <span style="color:#27ae60;font-weight:600">green = seed 1</span>
+    → <span style="color:#c83232;font-weight:600">red = seed 33</span>.
+  </p>
+  <div id="curve-chart" style="width:100%;height:520px"></div>
+</div>
+
+
+<script>
+(function() {
+
+const zVals      = [[-1, -1, -1, -1, -1], [-1, -1, -1, -1, -1], [1.4, -1, -1, -1, -1], [-1, -1, -1, -1, -1], [4.3, 2.9, -1, -1, -1], [5.7, 4.3, -1, -1, -1], [4.3, 4.3, -1, -1, -1], [18.6, 2.9, 1.4, -1, -1], [15.7, 4.3, -1, -1, -1], [12.9, 4.3, -1, -1, -1], [20.0, 2.9, -1, -1, -1], [21.4, 2.9, -1, -1, -1], [32.9, 7.1, 1.4, -1, -1], [42.9, 5.7, 2.9, -1, -1], [37.1, -1, -1, -1, -1], [32.9, -1, -1, -1, -1], [42.9, 1.4, -1, -1, -1], [58.3, -1, -1, -1, -1], [67.5, 10.8, 5.8, 1.7, -1], [74.2, 9.2, 4.2, 0.8, -1], [62.5, 10.8, 5.0, 0.8, 0.8], [71.5, 27.7, 6.9, -1, -1], [74.6, 25.4, 6.9, 1.5, 0.8], [79.2, 31.5, 6.2, 3.1, 0.8], [82.3, 33.1, 2.3, 1.5, 0.8], [85.4, 55.4, 6.2, 3.8, 2.3], [87.7, 61.5, 11.5, 3.8, -1], [93.8, 65.4, 22.3, 7.7, 1.5], [91.5, 63.1, 32.3, 6.9, 2.3], [95.4, 82.3, 51.5, 13.1, 6.2], [96.2, 88.5, 65.4, 28.5, 15.4], [96.2, 88.5, 74.6, 52.3, 21.5], [100.0, 99.2, 91.5, 73.1, 47.7]];
+const textVals   = [["0%", "0%", "0%", "0%", "0%"], ["0%", "0%", "0%", "0%", "0%"], ["1%", "0%", "0%", "0%", "0%"], ["0%", "0%", "0%", "0%", "0%"], ["4%", "3%", "0%", "0%", "0%"], ["6%", "4%", "0%", "0%", "0%"], ["4%", "4%", "0%", "0%", "0%"], ["19%", "3%", "1%", "0%", "0%"], ["16%", "4%", "0%", "0%", "0%"], ["13%", "4%", "0%", "0%", "0%"], ["20%", "3%", "0%", "0%", "0%"], ["21%", "3%", "0%", "0%", "0%"], ["33%", "7%", "1%", "0%", "0%"], ["43%", "6%", "3%", "0%", "0%"], ["37%", "0%", "0%", "0%", "0%"], ["33%", "0%", "0%", "0%", "0%"], ["43%", "1%", "0%", "0%", "0%"], ["58%", "0%", "0%", "0%", "0%"], ["68%", "11%", "6%", "2%", "0%"], ["74%", "9%", "4%", "1%", "0%"], ["62%", "11%", "5%", "1%", "1%"], ["72%", "28%", "7%", "0%", "0%"], ["75%", "25%", "7%", "2%", "1%"], ["79%", "32%", "6%", "3%", "1%"], ["82%", "33%", "2%", "2%", "1%"], ["85%", "55%", "6%", "4%", "2%"], ["88%", "62%", "12%", "4%", "0%"], ["94%", "65%", "22%", "8%", "2%"], ["92%", "63%", "32%", "7%", "2%"], ["95%", "82%", "52%", "13%", "6%"], ["96%", "88%", "65%", "28%", "15%"], ["96%", "88%", "75%", "52%", "22%"], ["100%", "99%", "92%", "73%", "48%"]];
+const customVals = [[[0, 68, ""], [0, 68, ""], [0, 68, ""], [0, 68, ""], [0, 68, ""]], [[0, 70, ""], [0, 70, ""], [0, 70, ""], [0, 70, ""], [0, 70, ""]], [[1, 70, "<br>Owen Pentz (North Dakota State, 2021)"], [0, 70, ""], [0, 70, ""], [0, 70, ""], [0, 70, ""]], [[0, 70, ""], [0, 70, ""], [0, 70, ""], [0, 70, ""], [0, 70, ""]], [[3, 70, "<br>Caleb Fish (Michigan State, 2023)<br>Jack Gioffre (Virginia, 2025)<br>Colton Hawks (Arizona State, 2026)"], [2, 70, "<br>Caleb Fish (Michigan State, 2023)<br>Colton Hawks (Arizona State, 2026)"], [0, 70, ""], [0, 70, ""], [0, 70, ""]], [[4, 70, "<br>Sam Stoll (Iowa, 2019)<br>Killian Cardinale (West Virginia, 2023)<br>Diego Sotelo (Harvard, 2024)<br>Jared Simma (Northern Iowa, 2024)"], [3, 70, "<br>Sam Stoll (Iowa, 2019)<br>Killian Cardinale (West Virginia, 2023)<br>Jared Simma (Northern Iowa, 2024)"], [0, 70, ""], [0, 70, ""], [0, 70, ""]], [[3, 70, "<br>Eddie Ventresca (Virginia Tech, 2023)<br>EJ Parco (Stanford, 2026)<br>Hunter Catka (Rutgers, 2026)"], [3, 70, "<br>Eddie Ventresca (Virginia Tech, 2023)<br>EJ Parco (Stanford, 2026)<br>Hunter Catka (Rutgers, 2026)"], [0, 70, ""], [0, 70, ""], [0, 70, ""]], [[13, 70, ""], [2, 70, "<br>Jake Woodley (Oklahoma, 2021)<br>Vance Vombaur (Minnesota, 2024)"], [1, 70, "<br>Jake Woodley (Oklahoma, 2021)"], [0, 70, ""], [0, 70, ""]], [[11, 70, ""], [3, 70, "<br>Yahya Thomas (Northwestern, 2021)<br>Brian Courtney (Virginia, 2022)<br>David Key (Navy, 2024)"], [0, 70, ""], [0, 70, ""], [0, 70, ""]], [[9, 70, ""], [3, 70, "<br>Sam Latona (Virginia Tech, 2022)<br>Lennox Wolak (Virginia Tech, 2025)<br>Gabe Sollars (Indiana, 2025)"], [0, 70, ""], [0, 70, ""], [0, 70, ""]], [[14, 70, ""], [2, 70, "<br>Jacob Wright (Wyoming, 2021)<br>Seth Shumate (Ohio State, 2025)"], [0, 70, ""], [0, 70, ""], [0, 70, ""]], [[15, 70, ""], [2, 70, "<br>Max Murin (Iowa, 2019)<br>Ben Harvey (Army, 2019)"], [0, 70, ""], [0, 70, ""], [0, 70, ""]], [[23, 70, ""], [5, 70, "<br>Thomas Lane (Cal Poly, 2019)<br>Real Woods (Stanford, 2021)<br>Gavin Hoffman (Ohio State, 2022)<br>Angelo Rini (Indiana, 2025)<br>Juan Mora (Oklahoma, 2026)"], [1, 70, "<br>Gavin Hoffman (Ohio State, 2022)"], [0, 70, ""], [0, 70, ""]], [[30, 70, ""], [4, 70, "<br>Graham Rooks (Indiana, 2023)<br>Trevor Chumbley (Northwestern, 2025)<br>Chance Lamer (Nebraska, 2026)<br>Brian Soldano (Oklahoma, 2026)"], [2, 70, "<br>Trevor Chumbley (Northwestern, 2025)<br>Chance Lamer (Nebraska, 2026)"], [0, 70, ""], [0, 70, ""]], [[26, 70, ""], [0, 70, ""], [0, 70, ""], [0, 70, ""], [0, 70, ""]], [[23, 70, ""], [0, 70, ""], [0, 70, ""], [0, 70, ""], [0, 70, ""]], [[30, 70, ""], [1, 70, "<br>Hunter Willits (Oregon State, 2022)"], [0, 70, ""], [0, 70, ""], [0, 70, ""]], [[70, 120, ""], [0, 120, ""], [0, 120, ""], [0, 120, ""], [0, 120, ""]], [[81, 120, ""], [13, 120, ""], [7, 120, ""], [2, 120, "<br>Ronald Perry (Lock Haven, 2018)<br>Kizhan Clarke (North Carolina, 2022)"], [0, 120, ""]], [[89, 120, ""], [11, 120, ""], [5, 120, "<br>Chris Penny (Virginia Tech, 2014)<br>Bryce Meredith (Wyoming, 2016)<br>Willie Miklus (Missouri, 2016)<br>Zan Fugitt (Wisconsin, 2025)<br>Jacob Moran (Indiana, 2026)"], [1, 120, "<br>Bryce Meredith (Wyoming, 2016)"], [0, 120, ""]], [[75, 120, ""], [13, 120, ""], [6, 120, ""], [1, 120, "<br>Cody Brewer (Oklahoma, 2015)"], [1, 120, "<br>Cody Brewer (Oklahoma, 2015)"]], [[93, 130, ""], [36, 130, ""], [9, 130, ""], [0, 130, ""], [0, 130, ""]], [[97, 130, ""], [33, 130, ""], [9, 130, ""], [2, 130, "<br>Joshua Kindig (Oklahoma State, 2014)<br>Myles Martin (Ohio State, 2016)"], [1, 130, "<br>Myles Martin (Ohio State, 2016)"]], [[103, 130, ""], [41, 130, ""], [8, 130, ""], [4, 130, "<br>Ridge Lovett (Nebraska, 2022)<br>Lucas Davison (Michigan, 2024)<br>Marc-Anthony McGowan (Princeton, 2026)<br>Aden Valencia (Stanford, 2026)"], [1, 130, "<br>Aden Valencia (Stanford, 2026)"]], [[107, 130, ""], [43, 130, ""], [3, 130, "<br>Evan Henderson (North Carolina, 2014)<br>Dylan Ness (Minnesota, 2014)<br>Carter Starocci (Penn State, 2024)"], [2, 130, "<br>Dylan Ness (Minnesota, 2014)<br>Carter Starocci (Penn State, 2024)"], [1, 130, "<br>Carter Starocci (Penn State, 2024)"]], [[111, 130, ""], [72, 130, ""], [8, 130, ""], [5, 130, "<br>Tyler Wilps (Pittsburgh, 2015)<br>Mekhi Lewis (Virginia Tech, 2019)<br>Shane Griffith (Stanford, 2021)<br>Richard Figueroa (Arizona State, 2024)<br>Joey Blaze (Purdue, 2025)"], [3, 130, "<br>Mekhi Lewis (Virginia Tech, 2019)<br>Shane Griffith (Stanford, 2021)<br>Richard Figueroa (Arizona State, 2024)"]], [[114, 130, ""], [80, 130, ""], [15, 130, ""], [5, 130, "<br>Nathaniel Brown (Lehigh, 2015)<br>Timothy Dudley (Nebraska, 2016)<br>Tanner Sloan (South Dakota State, 2023)<br>Troy Spratley (Oklahoma State, 2025)<br>Cody Merrill (Oklahoma State, 2026)"], [0, 130, ""]], [[122, 130, ""], [85, 130, ""], [29, 130, ""], [10, 130, ""], [2, 130, "<br>Drew Foster (Northern Iowa, 2019)<br>Vito Arujau (Cornell, 2024)"]], [[119, 130, ""], [82, 130, ""], [42, 130, ""], [9, 130, ""], [3, 130, "<br>Jason Tsirtsis (Northwestern, 2014)<br>Mark Hall (Penn State, 2017)<br>Landon Robideau (Oklahoma State, 2026)"]], [[124, 130, ""], [107, 130, ""], [67, 130, ""], [17, 130, ""], [8, 130, ""]], [[125, 130, ""], [115, 130, ""], [85, 130, ""], [37, 130, ""], [20, 130, ""]], [[125, 130, ""], [115, 130, ""], [97, 130, ""], [68, 130, ""], [28, 130, ""]], [[130, 130, ""], [129, 130, ""], [119, 130, ""], [95, 130, ""], [62, 130, ""]]];
+const yLabels    = ["Seed 33 (n=68)", "Seed 32 (n=70)", "Seed 31 (n=70)", "Seed 30 (n=70)", "Seed 29 (n=70)", "Seed 28 (n=70)", "Seed 27 (n=70)", "Seed 26 (n=70)", "Seed 25 (n=70)", "Seed 24 (n=70)", "Seed 23 (n=70)", "Seed 22 (n=70)", "Seed 21 (n=70)", "Seed 20 (n=70)", "Seed 19 (n=70)", "Seed 18 (n=70)", "Seed 17 (n=70)", "Seed 16 (n=120)", "Seed 15 (n=120)", "Seed 14 (n=120)", "Seed 13 (n=120)", "Seed 12 (n=130)", "Seed 11 (n=130)", "Seed 10 (n=130)", "Seed 9 (n=130)", "Seed 8 (n=130)", "Seed 7 (n=130)", "Seed 6 (n=130)", "Seed 5 (n=130)", "Seed 4 (n=130)", "Seed 3 (n=130)", "Seed 2 (n=130)", "Seed 1 (n=130)"];
+const rounds     = ["R16", "QF", "SF", "Final", "Champ"];
+const colorscale = [[0.0, "#d0d0d0"], [0.0098, "#d0d0d0"], [0.0099, "#f0a500"], [0.35, "#e8c840"], [0.65, "#a8d860"], [1.0, "#27ae60"]];
+
+const hmTrace = {
+  type: "heatmap",
+  x: rounds,
+  y: yLabels,
+  z: zVals,
+  text: textVals,
+  customdata: customVals,
+  texttemplate: "%{text}",
+  textfont: { size: 12, color: "#222" },
+  colorscale: colorscale,
+  zmin: -1,
+  zmax: 100,
+  showscale: true,
+  colorbar: {
+    title: "% Reaching Round",
+    titleside: "right",
+    tickvals: [0, 25, 50, 75, 100],
+    ticktext: ["0%", "25%", "50%", "75%", "100%"],
+    len: 0.6
+  },
+  hovertemplate: "%{y}<br>%{x}: %{customdata[0]}/%{customdata[1]}%{customdata[2]}<extra></extra>"
+};
+
+Plotly.newPlot("heatmap-chart", [hmTrace], {
+  margin: { t: 50, b: 20, l: 170, r: 120 },
+  xaxis: { side: "top", fixedrange: true },
+  yaxis: { fixedrange: true, automargin: true },
+  plot_bgcolor: "#ffffff",
+  paper_bgcolor: "#ffffff"
+}, { responsive: true, displayModeBar: false });
+
+// ---- Survival Curve ----
+const curveData = [{"seed": 1, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [100.0, 99.2, 91.5, 73.1, 47.7], "color": "rgb(39,174,96)", "n": 130}, {"seed": 2, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [96.2, 88.5, 74.6, 52.3, 21.5], "color": "rgb(44,170,93)", "n": 130}, {"seed": 3, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [96.2, 88.5, 65.4, 28.5, 15.4], "color": "rgb(49,166,90)", "n": 130}, {"seed": 4, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [95.4, 82.3, 51.5, 13.1, 6.2], "color": "rgb(54,162,87)", "n": 130}, {"seed": 5, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [91.5, 63.1, 32.3, 6.9, 2.3], "color": "rgb(59,158,84)", "n": 130}, {"seed": 6, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [93.8, 65.4, 22.3, 7.7, 1.5], "color": "rgb(64,154,81)", "n": 130}, {"seed": 7, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [87.7, 61.5, 11.5, 3.8, 0.0], "color": "rgb(69,150,78)", "n": 130}, {"seed": 8, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [85.4, 55.4, 6.2, 3.8, 2.3], "color": "rgb(74,146,75)", "n": 130}, {"seed": 9, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [82.3, 33.1, 2.3, 1.5, 0.8], "color": "rgb(79,143,72)", "n": 130}, {"seed": 10, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [79.2, 31.5, 6.2, 3.1, 0.8], "color": "rgb(84,139,69)", "n": 130}, {"seed": 11, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [74.6, 25.4, 6.9, 1.5, 0.8], "color": "rgb(89,135,66)", "n": 130}, {"seed": 12, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [71.5, 27.7, 6.9, 0.0, 0.0], "color": "rgb(94,131,63)", "n": 130}, {"seed": 13, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [62.5, 10.8, 5.0, 0.8, 0.8], "color": "rgb(99,127,60)", "n": 120}, {"seed": 14, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [74.2, 9.2, 4.2, 0.8, 0.0], "color": "rgb(104,123,57)", "n": 120}, {"seed": 15, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [67.5, 10.8, 5.8, 1.7, 0.0], "color": "rgb(109,119,54)", "n": 120}, {"seed": 16, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [58.3, 0.0, 0.0, 0.0, 0.0], "color": "rgb(114,115,51)", "n": 120}, {"seed": 17, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [42.9, 1.4, 0.0, 0.0, 0.0], "color": "rgb(119,112,48)", "n": 70}, {"seed": 18, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [32.9, 0.0, 0.0, 0.0, 0.0], "color": "rgb(124,108,45)", "n": 70}, {"seed": 19, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [37.1, 0.0, 0.0, 0.0, 0.0], "color": "rgb(129,104,42)", "n": 70}, {"seed": 20, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [42.9, 5.7, 2.9, 0.0, 0.0], "color": "rgb(134,100,39)", "n": 70}, {"seed": 21, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [32.9, 7.1, 1.4, 0.0, 0.0], "color": "rgb(139,96,36)", "n": 70}, {"seed": 22, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [21.4, 2.9, 0.0, 0.0, 0.0], "color": "rgb(144,92,33)", "n": 70}, {"seed": 23, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [20.0, 2.9, 0.0, 0.0, 0.0], "color": "rgb(149,88,30)", "n": 70}, {"seed": 24, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [12.9, 4.3, 0.0, 0.0, 0.0], "color": "rgb(154,84,27)", "n": 70}, {"seed": 25, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [15.7, 4.3, 0.0, 0.0, 0.0], "color": "rgb(159,81,24)", "n": 70}, {"seed": 26, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [18.6, 2.9, 1.4, 0.0, 0.0], "color": "rgb(164,77,21)", "n": 70}, {"seed": 27, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [4.3, 4.3, 0.0, 0.0, 0.0], "color": "rgb(169,73,18)", "n": 70}, {"seed": 28, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [5.7, 4.3, 0.0, 0.0, 0.0], "color": "rgb(174,69,15)", "n": 70}, {"seed": 29, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [4.3, 2.9, 0.0, 0.0, 0.0], "color": "rgb(179,65,12)", "n": 70}, {"seed": 30, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [0.0, 0.0, 0.0, 0.0, 0.0], "color": "rgb(184,61,9)", "n": 70}, {"seed": 31, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [1.4, 0.0, 0.0, 0.0, 0.0], "color": "rgb(189,57,6)", "n": 70}, {"seed": 32, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [0.0, 0.0, 0.0, 0.0, 0.0], "color": "rgb(194,53,3)", "n": 70}, {"seed": 33, "x": ["R16", "QF", "SF", "Final", "Champ"], "y": [0.0, 0.0, 0.0, 0.0, 0.0], "color": "rgb(200,50,0)", "n": 68}];
+
+const traces = curveData.map(d => ({
+  type: "scatter",
+  mode: "lines+markers",
+  name: "Seed " + d.seed,
+  x: d.x,
+  y: d.y,
+  line: { color: d.color, width: d.seed <= 8 ? 2.5 : 1.5 },
+  marker: { color: d.color, size: 5 },
+  hovertemplate: "Seed " + d.seed + " (n=" + d.n + ")<br>%{x}: %{y:.1f}%<extra></extra>"
+}));
+
+Plotly.newPlot("curve-chart", traces, {
+  margin: { t: 20, b: 60, l: 60, r: 20 },
+  xaxis: {
+    title: "Championship Round",
+    categoryorder: "array",
+    categoryarray: rounds,
+    fixedrange: true
+  },
+  yaxis: {
+    title: "% Reaching Round",
+    range: [0, 105],
+    ticksuffix: "%",
+    fixedrange: true
+  },
+  legend: {
+    orientation: "h",
+    y: -0.18,
+    x: 0.5,
+    xanchor: "center",
+    font: { size: 10 },
+    tracegroupgap: 2
+  },
+  showlegend: true,
+  plot_bgcolor: "#f9f9f9",
+  paper_bgcolor: "#ffffff"
+}, { responsive: true, displayModeBar: false });
+
+})();
+</script>
+
+
+</div>
+</body>
+</html>

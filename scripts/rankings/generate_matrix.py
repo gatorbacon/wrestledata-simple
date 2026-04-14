@@ -11,7 +11,7 @@ import re
 import shutil
 from datetime import datetime, date, timedelta
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Set
 
 
 def abbreviate_name(full_name: str) -> str:
@@ -39,13 +39,22 @@ def parse_match_date(date_str: str) -> date | None:
         return None
 
 
-def is_recent_date(date_str: str, today: date, days: int = 7) -> bool:
+def is_recent_date(date_str: str, today: date, days: int = 7, cutoff_date: Optional[date] = None) -> bool:
     """
-    Return True if date_str is within the last `days` days relative to `today`.
+    Return True if date_str is after cutoff_date (if provided), or within the last `days` days relative to `today`.
+    
+    For HS archive system: cutoff_date should be the last published_at date from archive index.
+    Matches after the last publication are highlighted for editorial review.
     """
     d = parse_match_date(date_str)
     if not d:
         return False
+    
+    # If cutoff_date is provided (archive system), check if match is after that date
+    if cutoff_date:
+        return d > cutoff_date
+    
+    # Otherwise, use the old "last 7 days" logic
     delta = today - d
     return timedelta(0) <= delta <= timedelta(days=days)
 
@@ -118,8 +127,9 @@ def classify_best_win(matches: List[Dict], winner_id: str) -> str:
         "MD": 4,
         "TB": 5,
         "D": 6,
-        "NC": 7,
-        "O": 8
+        "M": 7,  # Manual override - lowest priority
+        "NC": 8,
+        "O": 9
     }
     
     best_code = "O"
@@ -128,7 +138,13 @@ def classify_best_win(matches: List[Dict], winner_id: str) -> str:
     for m in matches:
         if m.get("winner_id") != winner_id:
             continue
-        code = classify_result_type(m.get("result", ""))
+        
+        # Check if this is a manual match
+        if m.get("is_manual", False) or m.get("result") == "M":
+            code = "M"
+        else:
+            code = classify_result_type(m.get("result", ""))
+        
         rank = rank_order.get(code, rank_order["O"])
         if rank < best_rank:
             best_code = code
@@ -143,7 +159,7 @@ def severity_for_result_code(code: str) -> str:
     
     - strong : Fall / Technical Fall
     - medium : Major Decision
-    - light  : Decision / Other
+    - light  : Decision / Other / Manual (M)
     - co     : Injury (INJ), styled like common opponents
     - nc     : No contest (NC) / Medical Forfeit (MFF), neutral grey for both wrestlers
     """
@@ -155,7 +171,7 @@ def severity_for_result_code(code: str) -> str:
         return "strong"
     if code == "MD":
         return "medium"
-    # Regular decisions and TB tiebreakers share the same light decision shading
+    # Regular decisions, TB tiebreakers, and Manual (M) share the same light decision shading
     return "light"
 
 
@@ -198,7 +214,10 @@ def format_result_for_tooltip(result: str) -> str:
 
 
 def build_matrix_data(
-    relationships_data: Dict, placement_notes: Optional[Dict[str, str]] = None
+    relationships_data: Dict, 
+    placement_notes: Optional[Dict[str, str]] = None,
+    cutoff_date: Optional[date] = None,
+    ir_active_ids: Optional[Set[str]] = None,
 ) -> Dict:
     """
     Build matrix data structure from relationships.
@@ -219,13 +238,21 @@ def build_matrix_data(
     starter_map: Dict[str, bool] = relationships_data.get("starter_map", {})
     placement_notes = placement_notes or {}
 
+    # Filter out synthetic opponents (out-of-state) - they exist only for common opponent analysis
+    # Synthetic opponents have IDs starting with "OUTSTATE_"
+    rankable_wrestlers = {
+        wid: winfo for wid, winfo in wrestlers.items()
+        if not winfo.get('is_synthetic', False) and not str(wid).startswith('OUTSTATE_')
+    }
+    
     if ranking_order:
         # Use saved ranking order where available
         wrestler_list = []
         seen = set()
         for wid in ranking_order:
-            if wid in wrestlers and wid not in seen:
-                info = dict(wrestlers[wid])
+            # Only include if wrestler exists and is rankable (not synthetic)
+            if wid in rankable_wrestlers and wid not in seen:
+                info = dict(rankable_wrestlers[wid])
                 info['is_unranked'] = False
                 note = placement_notes.get(wid)
                 if note:
@@ -233,7 +260,7 @@ def build_matrix_data(
                 wrestler_list.append((wid, info))
                 seen.add(wid)
         # Append any wrestlers not present in the ranking file
-        for wid, winfo in sorted(wrestlers.items(), key=lambda x: x[0]):
+        for wid, winfo in sorted(rankable_wrestlers.items(), key=lambda x: x[0]):
             if wid not in seen:
                 info = dict(winfo)
                 info['is_unranked'] = True
@@ -254,7 +281,7 @@ def build_matrix_data(
             return (-win_pct, -wins, wid)
 
         wrestler_list = []
-        for wid, winfo in sorted(wrestlers.items(), key=_win_key):
+        for wid, winfo in sorted(rankable_wrestlers.items(), key=_win_key):
             info = dict(winfo)
             info['is_unranked'] = True
             note = placement_notes.get(wid)
@@ -285,9 +312,36 @@ def build_matrix_data(
         else:
             winfo["is_starter"] = False
     
+    # Mark wrestlers as inactive if 30+ days since last match (but not 0-0)
+    # last_match_date is calculated in load_data.py across ALL weight classes
+    today = datetime.today().date()
+    
+    for wid, winfo in wrestler_list:
+        wins = winfo.get("wins", 0) or 0
+        losses = winfo.get("losses", 0) or 0
+        has_no_matches = (wins == 0 and losses == 0)
+        
+        # Get last_match_date from wrestler info (calculated in load_data.py across all weight classes)
+        last_match_date_str = winfo.get('last_match_date')
+        if not has_no_matches and last_match_date_str:
+            try:
+                # Parse ISO format date (YYYY-MM-DD)
+                last_match_date = datetime.fromisoformat(last_match_date_str).date()
+                days_since_last_match = (today - last_match_date).days
+                winfo["is_inactive"] = days_since_last_match >= 30
+            except (ValueError, TypeError):
+                # If date parsing fails, default to not inactive
+                winfo["is_inactive"] = False
+        else:
+            winfo["is_inactive"] = False
+
+    # Mark wrestlers on injured reserve (IR) - dark red highlight
+    ir_ids = ir_active_ids or set()
+    for wid, winfo in wrestler_list:
+        winfo["is_injured_reserve"] = str(wid) in ir_ids
+    
     # Build matrix
     matrix = {}
-    today = datetime.today().date()
     
     for i, (w1_id, w1_info) in enumerate(wrestler_list):
         for j, (w2_id, w2_info) in enumerate(wrestler_list):
@@ -312,6 +366,7 @@ def build_matrix_data(
                 matches = rel.get('matches', [])
                 total_matches = wins_1 + wins_2
                 has_wins_both = wins_1 > 0 and wins_2 > 0
+                is_manual = rel.get('is_manual', False)
                 
                 # Even series where both wrestlers have wins (e.g. 1-1, 2-2):
                 # show neutral split "S" cell in both directions (yellow).
@@ -324,7 +379,7 @@ def build_matrix_data(
                     )
                     cell_data['matches'] = matches
                     cell_data['recent'] = any(
-                        is_recent_date(m.get('date', ''), today) for m in matches
+                        is_recent_date(m.get('date', ''), today, cutoff_date=cutoff_date) for m in matches
                     )
                 else:
                     # Non-even series.
@@ -335,16 +390,18 @@ def build_matrix_data(
                     #   show an "S" in the advantaged direction, with green/red shading based on
                     #   the best win.
                     use_series_S = total_matches >= 3 and has_wins_both and wins_1 != wins_2
+                    is_manual = rel.get('is_manual', False)
                     if w1_id == rel['wrestler1_id']:
                         if wins_1 > wins_2:
                             # w1 has direct advantage
                             code = classify_best_win(matches, w1_id)
                             cell_data['type'] = 'direct_win'
                             cell_data['value'] = 'S' if use_series_S else code
-                            cell_data['tooltip'] = (
-                                f"{w1_info['name']} leads head-to-head over "
-                                f"{w2_info['name']} ({wins_1}-{wins_2})"
-                            )
+                            tooltip_base = f"{w1_info['name']} leads head-to-head over {w2_info['name']} ({wins_1}-{wins_2})"
+                            if is_manual:
+                                cell_data['tooltip'] = f"{tooltip_base} [Manual Override]"
+                            else:
+                                cell_data['tooltip'] = tooltip_base
                             cell_data['severity'] = severity_for_result_code(code)
                             cell_data['matches'] = matches
                             # Recent highlight: direct matches within the last week
@@ -356,10 +413,11 @@ def build_matrix_data(
                             code = classify_best_win(matches, rel['wrestler2_id'])
                             cell_data['type'] = 'direct_loss'
                             cell_data['value'] = 'S' if use_series_S else code
-                            cell_data['tooltip'] = (
-                                f"{w2_info['name']} leads head-to-head over "
-                                f"{w1_info['name']} ({wins_2}-{wins_1})"
-                            )
+                            tooltip_base = f"{w2_info['name']} leads head-to-head over {w1_info['name']} ({wins_2}-{wins_1})"
+                            if is_manual:
+                                cell_data['tooltip'] = f"{tooltip_base} [Manual Override]"
+                            else:
+                                cell_data['tooltip'] = tooltip_base
                             cell_data['severity'] = severity_for_result_code(code)
                             cell_data['matches'] = matches
                             cell_data['recent'] = any(
@@ -372,10 +430,11 @@ def build_matrix_data(
                             code = classify_best_win(matches, w1_id)
                             cell_data['type'] = 'direct_win'
                             cell_data['value'] = 'S' if use_series_S else code
-                            cell_data['tooltip'] = (
-                                f"{w1_info['name']} leads head-to-head over "
-                                f"{w2_info['name']} ({wins_2}-{wins_1})"
-                            )
+                            tooltip_base = f"{w1_info['name']} leads head-to-head over {w2_info['name']} ({wins_2}-{wins_1})"
+                            if is_manual:
+                                cell_data['tooltip'] = f"{tooltip_base} [Manual Override]"
+                            else:
+                                cell_data['tooltip'] = tooltip_base
                             cell_data['severity'] = severity_for_result_code(code)
                             cell_data['matches'] = matches
                             cell_data['recent'] = any(
@@ -386,10 +445,11 @@ def build_matrix_data(
                             code = classify_best_win(matches, rel['wrestler1_id'])
                             cell_data['type'] = 'direct_loss'
                             cell_data['value'] = 'S' if use_series_S else code
-                            cell_data['tooltip'] = (
-                                f"{w2_info['name']} leads head-to-head over "
-                                f"{w1_info['name']} ({wins_1}-{wins_2})"
-                            )
+                            tooltip_base = f"{w2_info['name']} leads head-to-head over {w1_info['name']} ({wins_1}-{wins_2})"
+                            if is_manual:
+                                cell_data['tooltip'] = f"{tooltip_base} [Manual Override]"
+                            else:
+                                cell_data['tooltip'] = tooltip_base
                             cell_data['severity'] = severity_for_result_code(code)
                             cell_data['matches'] = matches
                             cell_data['recent'] = any(
@@ -453,8 +513,8 @@ def build_matrix_data(
                 for detail in cell_data['co_details']:
                     wm = detail.get('winner_match', {})
                     lm = detail.get('loser_match', {})
-                    if is_recent_date(wm.get('date', ''), today) or is_recent_date(
-                        lm.get('date', ''), today
+                    if is_recent_date(wm.get('date', ''), today, cutoff_date=cutoff_date) or is_recent_date(
+                        lm.get('date', ''), today, cutoff_date=cutoff_date
                     ):
                         recent_any = True
                         break
@@ -781,6 +841,19 @@ def generate_html_matrix(
             padding: 2px 4px;
             border-radius: 3px;
         }}
+        /* Wrestlers who haven't wrestled in 30+ days (inactive) - takes priority over rank-out-of-band */
+        .inactive-row .wrestler-name {{
+            background-color: #ffb366;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }}
+        /* Injured reserve (IR) - dark red until they wrestle again */
+        .ir-row .wrestler-name {{
+            background-color: #8B0000;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }}
         /* Non-starters: clearly muted compared to starters */
         .non-starter-row .wrestler-name {{
             color: #888888;
@@ -803,6 +876,12 @@ def generate_html_matrix(
         }}
         .matrix-cell[data-tooltip-id] {{
             cursor: help;
+        }}
+        .matrix-cell.cell-highlighted {{
+            outline: 3px solid #0066ff;
+            outline-offset: -3px;
+            background-color: rgba(0, 102, 255, 0.15) !important;
+            cursor: pointer;
         }}
         .tooltip-header {{
             font-weight: bold;
@@ -929,6 +1008,11 @@ def generate_html_matrix(
             row_classes.append("unranked-row")
         if has_no_matches:
             row_classes.append("no-matches-row")
+        # Inactive highlighting (30+ days) - only if not already 0-0 (blue takes priority)
+        elif wrestler.get('is_inactive', False):
+            row_classes.append("inactive-row")
+        if wrestler.get('is_injured_reserve', False):
+            row_classes.append("ir-row")
         if is_out_of_band:
             row_classes.append("rank-out-of-band-row")
         if not wrestler.get('is_starter', True):
@@ -955,7 +1039,8 @@ def generate_html_matrix(
                                     <span class="rank-arrow" onclick="moveUp(this)" title="Move up">↑</span>
                                     <span class="rank-arrow" onclick="moveDown(this)" title="Move down">↓</span>
                                 </div>"""
-        if has_no_matches:
+        is_inactive = wrestler.get('is_inactive', False)
+        if has_no_matches or is_inactive:
             html_content += f"""
                                 <div class="rank-setter">
                                     <input type="number" min="1" max="{total_wrestlers}" class="rank-set-input" value="{total_wrestlers}" />
@@ -1093,7 +1178,10 @@ def generate_html_matrix(
                 if cell_data.get('severity'):
                     severity_class = f" severity-{cell_data['severity']}"
                 recent_class = ' recent' if cell_data.get('recent') else ''
-                html_content += f"""                        <td class="matrix-cell {cell_data['type']}{severity_class}{recent_class}{rank_band_class}" title="{simple_tooltip}"{tooltip_data_attr}>
+                # Add data attributes for row and column indices for click-to-move feature
+                row_index = i
+                col_index = j
+                html_content += f"""                        <td class="matrix-cell {cell_data['type']}{severity_class}{recent_class}{rank_band_class}" title="{simple_tooltip}"{tooltip_data_attr} data-row-index="{row_index}" data-col-index="{col_index}">
                             {cell_data['value']}
                         </td>
 """
@@ -1221,8 +1309,65 @@ def generate_html_matrix(
             });
         }
 
+        // Track last clicked cell for double-click-to-move feature
+        let lastClickedCell = null;
+        
+        function handleCellClick(event) {
+            const cell = event.target.closest('.matrix-cell');
+            if (!cell) return;
+            
+            // Skip if clicking on diagonal (same wrestler) cells
+            if (cell.classList.contains('same-wrestler')) return;
+            
+            // Get current row index from DOM (not data attribute, since rows can move)
+            const row = cell.closest('tr');
+            if (!row) return;
+            const table = document.getElementById('ranking-table');
+            const tbody = table.querySelector('tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+            const rowIndex = rows.indexOf(row);
+            
+            const colIndex = parseInt(cell.getAttribute('data-col-index'), 10);
+            
+            if (rowIndex < 0 || isNaN(colIndex)) return;
+            
+            // Check if this is the same cell as last click
+            if (lastClickedCell === cell) {
+                // Second click on same cell - move row to column rank
+                const targetRank = colIndex + 1; // Column index is 0-based, rank is 1-based
+                
+                if (rowIndex >= 0 && rowIndex < rows.length) {
+                    moveRowToRank(row, targetRank);
+                }
+                
+                // Clear highlight and reset
+                cell.classList.remove('cell-highlighted');
+                lastClickedCell = null;
+            } else {
+                // First click - highlight this cell
+                // Remove highlight from previous cell
+                if (lastClickedCell) {
+                    lastClickedCell.classList.remove('cell-highlighted');
+                }
+                
+                // Add highlight to current cell
+                cell.classList.add('cell-highlighted');
+                lastClickedCell = cell;
+            }
+        }
+        
+        function attachCellClickHandlers() {
+            document.querySelectorAll('.matrix-cell').forEach(cell => {
+                // Remove existing click handler if any (to avoid duplicates)
+                cell.removeEventListener('click', handleCellClick);
+                // Add click handler
+                cell.addEventListener('click', handleCellClick);
+            });
+        }
+        
         function initializeMatrixInteractions() {
             attachTooltipHandlers();
+            attachCellClickHandlers();
             recomputeAnchors();
         }
 
@@ -1369,6 +1514,12 @@ def generate_html_matrix(
             
             if (currentIndex === -1 || targetIndex < 0 || targetIndex >= rows.length) {
                 return;
+            }
+            
+            // Clear any highlighted cell when moving rows
+            if (lastClickedCell) {
+                lastClickedCell.classList.remove('cell-highlighted');
+                lastClickedCell = null;
             }
             
             // Move step-by-step using swapRows so headers and cells stay in sync
@@ -1528,7 +1679,10 @@ def generate_matrix_for_weight_class(
     weight_class: str,
     season: int,
     data_dir: str = "mt/rankings_data",
-    output_dir: str = "mt/rankings_html"
+    output_dir: str = "mt/rankings_html",
+    league: str = 'ncaa',
+    state: str = None,
+    gender: str = None,
 ) -> Path:
     """
     Generate HTML matrix for a single weight class.
@@ -1538,12 +1692,22 @@ def generate_matrix_for_weight_class(
         season: Season year
         data_dir: Directory containing relationship files
         output_dir: Directory to save HTML files
+        league: League type ('ncaa' or 'hs')
+        state: State code (required for HS)
+        gender: Gender ('boys' or 'girls', required for HS)
         
     Returns:
         Path to generated HTML file
     """
+    # Setup data path based on league type
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        data_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season)
+    else:  # ncaa
+        data_path = Path(data_dir) / str(season)
+    
     # Load relationships
-    rel_file = Path(data_dir) / str(season) / f"relationships_{weight_class}.json"
+    rel_file = data_path / f"relationships_{weight_class}.json"
     
     if not rel_file.exists():
         raise FileNotFoundError(f"Relationship file not found: {rel_file}")
@@ -1554,7 +1718,7 @@ def generate_matrix_for_weight_class(
     # If a manual rankings file exists, load it, attach ordering, and
     # derive starter status per wrestler (best-ranked per team),
     # honoring any season-wide starter overrides.
-    rankings_file = Path(data_dir) / str(season) / f"rankings_{weight_class}.json"
+    rankings_file = data_path / f"rankings_{weight_class}.json"
     # Default: no forced backups unless overrides/rankings exist.
     force_backup_ids = set()
     if rankings_file.exists():
@@ -1566,7 +1730,7 @@ def generate_matrix_for_weight_class(
             relationships_data['ranking_order'] = ranking_ids
 
             # Load global starter overrides for this season, if present.
-            overrides_path = Path(data_dir) / str(season) / "starter_overrides.json"
+            overrides_path = data_path / "starter_overrides.json"
             if overrides_path.exists():
                 try:
                     with open(overrides_path, 'r', encoding='utf-8') as of:
@@ -1612,8 +1776,8 @@ def generate_matrix_for_weight_class(
         except Exception as e:
             print(f"Warning: Failed to load rankings file {rankings_file}: {e}")
 
-    # Load placement notes (season-agnostic, keyed by wrestler_id)
-    placement_notes_path = Path(data_dir) / "placement_notes.json"
+    # Load placement notes from league-specific directory
+    placement_notes_path = data_path / "placement_notes.json"
     placement_notes_map: Dict[str, str] = {}
     if placement_notes_path.exists():
         try:
@@ -1628,7 +1792,7 @@ def generate_matrix_for_weight_class(
             print(f"Warning: Failed to load placement notes from {placement_notes_path}: {e}")
     
     # Load ranking bands data (hard_min, hard_max, soft_min, soft_max, recommended_rank)
-    ranking_bands_path = Path(data_dir) / str(season) / f"ranking_bands_{weight_class}.json"
+    ranking_bands_path = data_path / f"ranking_bands_{weight_class}.json"
     ranking_bands_map: Dict[str, Dict[str, int]] = {}
     if ranking_bands_path.exists():
         try:
@@ -1647,8 +1811,48 @@ def generate_matrix_for_weight_class(
         except Exception as e:
             print(f"Warning: Failed to load ranking bands from {ranking_bands_path}: {e}")
     
+    # Load archive index to get latest published_at date (for HS only)
+    cutoff_date = None
+    if league == 'hs' and gender:
+        archive_index_path = Path("data/rankings") / gender / str(season) / "index.json"
+        if archive_index_path.exists():
+            try:
+                with open(archive_index_path, 'r', encoding='utf-8') as f:
+                    index_data = json.load(f)
+                latest_drop_id = index_data.get('latest')
+                if latest_drop_id:
+                    # Load meta.json to get published_at
+                    meta_path = Path("data/rankings") / gender / str(season) / latest_drop_id / "meta.json"
+                    if meta_path.exists():
+                        with open(meta_path, 'r', encoding='utf-8') as f:
+                            meta_data = json.load(f)
+                        published_at_str = meta_data.get('published_at', '')
+                        if published_at_str:
+                            # Parse ISO date (e.g., "2026-01-02T00:00:00Z")
+                            try:
+                                cutoff_date = datetime.fromisoformat(published_at_str.replace('Z', '+00:00')).date()
+                                print(f"Using archive cutoff date: {cutoff_date} (from drop {latest_drop_id})")
+                            except Exception as e:
+                                print(f"Warning: Failed to parse published_at '{published_at_str}': {e}")
+            except Exception as e:
+                print(f"Warning: Failed to load archive index: {e}")
+
+    # Resolve injured reserve (IR) status - active until wrestler has match after IR date
+    ir_active_ids = set()
+    if league == 'hs' and gender:
+        from ir_utils import resolve_active_ir
+        wrestlers_by_id = relationships_data.get('wrestlers', {})
+        ir_active_ids = resolve_active_ir(season, gender, wrestlers_by_id)
+        if ir_active_ids:
+            print(f"IR active for this weight: {len(ir_active_ids)} wrestler(s)")
+    
     # Build matrix data
-    matrix_data = build_matrix_data(relationships_data, placement_notes=placement_notes_map)
+    matrix_data = build_matrix_data(
+        relationships_data,
+        placement_notes=placement_notes_map,
+        cutoff_date=cutoff_date,
+        ir_active_ids=ir_active_ids,
+    )
     
     # Generate HTML, passing starter overrides and ranking bands so the JS "Save Rankings"
     # button can honor them when computing is_starter flags.
@@ -1660,8 +1864,12 @@ def generate_matrix_for_weight_class(
         ranking_bands_map=ranking_bands_map,
     )
     
-    # Save HTML file
-    output_path = Path(output_dir) / str(season)
+    # Setup output path based on league type
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        output_path = Path(output_dir) / f"hs_{state_lower}_{gender}" / str(season)
+    else:  # ncaa
+        output_path = Path(output_dir) / str(season)
     output_path.mkdir(parents=True, exist_ok=True)
     
     html_file = output_path / f"matrix_{weight_class}.html"
@@ -1674,12 +1882,20 @@ def generate_matrix_for_weight_class(
 def archive_rankings_snapshot(
     season: int,
     data_dir: str = "mt/rankings_data",
+    league: str = 'ncaa',
+    state: str = None,
+    gender: str = None,
 ) -> Path | None:
     """
     Archive current rankings_{weight}.json files for a season into a
     timestamped folder so we can analyze movement over time later.
     """
-    base_dir = Path(data_dir) / str(season)
+    # Setup base directory based on league type
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        base_dir = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season)
+    else:  # ncaa
+        base_dir = Path(data_dir) / str(season)
     if not base_dir.exists():
         print(f"No rankings directory found to archive for season {season}: {base_dir}")
         return None
@@ -1706,7 +1922,10 @@ def archive_rankings_snapshot(
 def generate_all_matrices(
     season: int,
     data_dir: str = "mt/rankings_data",
-    output_dir: str = "mt/rankings_html"
+    output_dir: str = "mt/rankings_html",
+    league: str = 'ncaa',
+    state: str = None,
+    gender: str = None,
 ) -> List[Path]:
     """
     Generate HTML matrices for all weight classes.
@@ -1715,11 +1934,19 @@ def generate_all_matrices(
         season: Season year
         data_dir: Directory containing relationship files
         output_dir: Directory to save HTML files
+        league: League type ('ncaa' or 'hs')
+        state: State code (required for HS)
+        gender: Gender ('boys' or 'girls', required for HS)
         
     Returns:
         List of paths to generated HTML files
     """
-    data_path = Path(data_dir) / str(season)
+    # Setup data path based on league type
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        data_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season)
+    else:  # ncaa
+        data_path = Path(data_dir) / str(season)
     
     if not data_path.exists():
         raise FileNotFoundError(f"Data directory not found: {data_path}")
@@ -1733,7 +1960,7 @@ def generate_all_matrices(
         
         try:
             html_file = generate_matrix_for_weight_class(
-                weight_class, season, data_dir, output_dir
+                weight_class, season, data_dir, output_dir, league=league, state=state, gender=gender
             )
             html_files.append(html_file)
             print(f"  Saved to {html_file}")
@@ -1751,19 +1978,40 @@ if __name__ == "__main__":
     parser.add_argument('-weight-class', help='Specific weight class to generate (default: all)')
     parser.add_argument('-data-dir', default='mt/rankings_data', help='Directory containing relationship data')
     parser.add_argument('-output-dir', default='mt/rankings_html', help='Directory to save HTML files')
+    parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
+                        help='League type: ncaa (default) or hs')
+    parser.add_argument('-state', type=str, help='State code (required when league=hs, currently only KY supported)')
+    parser.add_argument('-gender', type=str, choices=['boys', 'girls'],
+                        help='Gender: boys or girls (required when league=hs)')
     args = parser.parse_args()
     
+    # Validate HS parameters
+    if args.league == 'hs':
+        if not args.state:
+            raise ValueError("-state is required when -league=hs")
+        state_upper = args.state.upper()
+        if state_upper != 'KY':
+            raise ValueError(f"Only KY is currently supported for HS. Got: {args.state}")
+        if not args.gender:
+            raise ValueError("-gender is required when -league=hs")
+        if args.gender not in ['boys', 'girls']:
+            raise ValueError(f"-gender must be 'boys' or 'girls'. Got: {args.gender}")
+    
     # Archive current rankings JSON files before generating matrices
-    archive_rankings_snapshot(args.season, args.data_dir)
+    archive_rankings_snapshot(args.season, args.data_dir, league=args.league, state=args.state, gender=args.gender)
     
     if args.weight_class:
         # Generate single weight class
         html_file = generate_matrix_for_weight_class(
-            args.weight_class, args.season, args.data_dir, args.output_dir
+            args.weight_class, args.season, args.data_dir, args.output_dir,
+            league=args.league, state=args.state, gender=args.gender
         )
         print(f"Generated matrix: {html_file}")
     else:
         # Generate all weight classes
-        html_files = generate_all_matrices(args.season, args.data_dir, args.output_dir)
+        html_files = generate_all_matrices(
+            args.season, args.data_dir, args.output_dir,
+            league=args.league, state=args.state, gender=args.gender
+        )
         print(f"\nGenerated {len(html_files)} matrix files")
 

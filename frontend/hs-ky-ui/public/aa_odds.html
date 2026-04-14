@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <title>All-American & Title Odds</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+  <script src="/js/analytics.js"></script>
+</head>
+<body>
+  <script src="/header.js"></script>
+  <div class="page-container">
+    <header class="header">
+      <div class="header-top">
+        <div>
+          <h1>All-American & Title Odds</h1>
+          <div class="header-subline" id="season-info"></div>
+          <p class="header-explainer">
+            Probability of finishing Top 8 (All-American), reaching the finals, or winning the NCAA title.
+          </p>
+          <p class="header-explainer">
+            Calculation is based on rank, MatSavant MatchIndex Score, and seed (once seeds come out).  
+          </p>
+        </div>
+        <div class="view-toggle-container">
+          <button class="view-toggle-btn active" data-view="table" id="view-toggle-table">Table View</button>
+          <button class="view-toggle-btn" data-view="stacked" id="view-toggle-stacked">Stacked View</button>
+        </div>
+      </div>
+      <p class="view-helper-text" id="view-helper-text" style="display: none;">
+        Stacked view shows how a wrestler's tournament equity is distributed across outcomes.
+      </p>
+    </header>
+
+    <section class="section">
+      <div id="weight-tabs-container" class="weight-tabs-container" role="tablist" aria-label="Weight class filter">
+        <!-- Tabs will be inserted here by JS -->
+      </div>
+      <div class="stacked-odds-legend" id="stacked-odds-legend" style="display: none;">
+        <!-- Legend will be inserted here by JS -->
+      </div>
+      <div class="table-wrapper">
+        <!-- Table View -->
+        <table id="aa-odds-table" class="view-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>Team</th>
+              <th class="sortable" data-sort="champ_prob">
+                Champion %
+              </th>
+              <th class="sortable" data-sort="final_prob">
+                Finalist %
+              </th>
+              <th class="sortable" data-sort="aa_prob">
+                AA %
+              </th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        
+        <!-- Stacked View -->
+        <table id="aa-odds-stacked-table" class="view-stacked" style="display: none;">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>Team</th>
+              <th class="sortable" data-sort="champ_prob" id="odds-breakdown-header">
+                Odds Breakdown (Cumulative Path to AA)
+                <span class="tooltip-icon" data-tooltip="cumulative-path">→</span>
+                <span class="sort-indicator">▲</span>
+              </th>
+              <th>Champion %</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="/tooltips.js"></script>
+  <script src="/aa_odds.js"></script>
+  <script src="/footer.js"></script>
+</body>
+</html>
+

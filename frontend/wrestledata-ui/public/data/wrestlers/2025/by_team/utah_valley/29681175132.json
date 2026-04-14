@@ -1,0 +1,80 @@
+{
+  "wrestler_id": "29681175132",
+  "name": "Jacob Meyers",
+  "team": "Utah Valley",
+  "team_slug": "utah_valley",
+  "team_rank": 76,
+  "weight_class": 133,
+  "year": 2025,
+  "current_rank": 116,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 11.81,
+    "pa7": 11.13,
+    "pd7": 0.68,
+    "si_plus": 89.0,
+    "df_plus": 78.1,
+    "apr_plus": 91.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "29723012132",
+      "opponent_rank": 158,
+      "opponent_name": "Josiah Sandoval",
+      "method": "TF 17-1 5:19"
+    },
+    "worst_loss": {
+      "opponent_id": "29681147132",
+      "opponent_rank": 57,
+      "opponent_name": "Kase Mauger",
+      "method": "TF 17-1 5:41"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2024-11-02",
+      "opponent_id": "29723012132",
+      "opponent_name": "Josiah Sandoval",
+      "opponent_team": "CSU Bakersfield",
+      "opponent_team_rank": 43,
+      "opponent_weight": 133,
+      "opponent_rank": 158,
+      "weight_class": "133",
+      "result": "W",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "5:19",
+      "event": "Menlo Invite"
+    },
+    {
+      "date": "2024-11-02",
+      "opponent_id": "29681147132",
+      "opponent_name": "Kase Mauger",
+      "opponent_team": "Utah Valley",
+      "opponent_team_rank": 76,
+      "opponent_weight": 133,
+      "opponent_rank": 57,
+      "weight_class": "133",
+      "result": "L",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "5:41",
+      "event": "Menlo Invite"
+    }
+  ],
+  "profile_generated_at": "2026-04-03"
+}

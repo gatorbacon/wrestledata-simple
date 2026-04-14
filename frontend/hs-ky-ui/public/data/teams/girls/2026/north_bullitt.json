@@ -1,0 +1,91 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": "girls",
+  "team_id": "north_bullitt",
+  "team_name": "North Bullitt",
+  "name": "North Bullitt",
+  "abbreviation": "NBUL",
+  "governing_body": "Kentucky High School Athletic Association",
+  "division": "HS Girls",
+  "conference": null,
+  "location": {
+    "state": "KY",
+    "region": "2"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981213150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
+    "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-03-04T23:14:55.591415Z",
+  "starters": {
+    "138": {
+      "weight": 138,
+      "wrestler_id": "35681459132",
+      "name": "Celia Sweatt",
+      "current_rank": 25,
+      "grade": null,
+      "xtp": 2.35,
+      "xtp_p": 0.22,
+      "xtp_a": 0.64,
+      "xtp_b": 1.49,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 2
+      },
+      "top33_record": {
+        "wins": 1,
+        "losses": 2
+      },
+      "wins": 2,
+      "losses": 2,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    }
+  },
+  "remaining": [],
+  "team_xTP_simple": 0.0,
+  "team_metrics": {
+    "projected_state_points": 0.0,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": 2,
+      "losses": 2
+    },
+    "top33": {
+      "wins": 1,
+      "losses": 2
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 2
+    },
+    "bonus_rate": {
+      "value": 1.0,
+      "rank": 24,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 1.0,
+      "rank": 19,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.0,
+      "rank": 114,
+      "rank_scope": "league"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <title>Pins Leaderboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+  <script src="/js/analytics.js"></script>
+</head>
+<body>
+  <script src="/header.js"></script>
+  <div class="page-container">
+    <header class="header">
+      <h1>Pins Leaderboard</h1>
+      <div class="header-subline" id="season-info"></div>
+    </header>
+
+    <section class="section">
+      <div id="weight-tabs-container" class="weight-tabs-container" role="tablist" aria-label="Weight class filter">
+        <!-- Tabs will be inserted here by JS -->
+      </div>
+      <div class="table-wrapper">
+        <table id="leaderboard-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>Team</th>
+              <th>Weight</th>
+              <th>Pins</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="/leaderboards/simple_leaderboard.js"></script>
+  <script>
+    // Initialize pins leaderboard
+    initSimpleLeaderboard({
+      statType: 'pins',
+      title: 'Pins Leaderboard',
+      tableId: 'leaderboard-table',
+      containerId: 'weight-tabs-container',
+      seasonInfoId: 'season-info'
+    });
+  </script>
+  <script src="/footer.js"></script>
+</body>
+</html>
+

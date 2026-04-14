@@ -1,0 +1,95 @@
+{
+  "wrestler_id": "35394902132",
+  "name": "Colin Crouch",
+  "team": "Triad",
+  "team_slug": "triad",
+  "team_rank": null,
+  "weight_class": 120,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
+    "vs_top25": "1-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35122073132",
+      "opponent_rank": 19,
+      "opponent_name": "Xander Fontana",
+      "method": "Fall 4:34"
+    },
+    "worst_loss": {
+      "opponent_id": "35031551132",
+      "opponent_rank": 3,
+      "opponent_name": "Jaxson Mayberry",
+      "method": "MD 11-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35208209132",
+      "opponent_name": "KaShaun Taylor",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": 44,
+      "opponent_weight": 120,
+      "opponent_rank": 54,
+      "weight_class": "120",
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "1:48",
+      "event": "vs. Triad"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35122073132",
+      "opponent_name": "Xander Fontana",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": 113,
+      "opponent_weight": 120,
+      "opponent_rank": 19,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:34",
+      "event": "vs. Triad"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35031551132",
+      "opponent_name": "Jaxson Mayberry",
+      "opponent_team": "Union County",
+      "opponent_team_rank": 17,
+      "opponent_weight": 120,
+      "opponent_rank": 3,
+      "weight_class": "120",
+      "result": "L",
+      "method": "MD",
+      "score": "11-2",
+      "duration": "7:00",
+      "event": "vs. Triad"
+    }
+  ],
+  "profile_generated_at": "2026-04-04"
+}

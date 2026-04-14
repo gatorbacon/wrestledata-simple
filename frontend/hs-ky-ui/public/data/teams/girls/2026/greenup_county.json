@@ -1,0 +1,160 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": "girls",
+  "team_id": "greenup_county",
+  "team_name": "Greenup County",
+  "name": "Greenup County",
+  "abbreviation": "GRUP",
+  "governing_body": "Kentucky High School Athletic Association",
+  "division": "HS Girls",
+  "conference": null,
+  "location": {
+    "state": "KY",
+    "region": "4"
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=npvhymiidt&teamId=981273150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/hs_ky_girls/2026",
+    "starter_overrides_file": "mt/rankings_data/hs_ky_girls/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-03-04T23:14:55.434811Z",
+  "starters": {
+    "120": {
+      "weight": 120,
+      "wrestler_id": "35635841132",
+      "name": "Abbie Howard",
+      "current_rank": 34,
+      "grade": null,
+      "xtp": 0.91,
+      "xtp_p": 0.04,
+      "xtp_a": 0.31,
+      "xtp_b": 0.56,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 6
+      },
+      "wins": 6,
+      "losses": 8,
+      "top25_wins": 0,
+      "bonus_rate": 1.0
+    },
+    "126": {
+      "weight": 126,
+      "wrestler_id": "35635824132",
+      "name": "Violet Brown",
+      "current_rank": 58,
+      "grade": null,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 1
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 6
+      },
+      "wins": 4,
+      "losses": 8,
+      "top25_wins": 0,
+      "bonus_rate": 0.75
+    },
+    "132": {
+      "weight": 132,
+      "wrestler_id": "35635835132",
+      "name": "Bonnie Baldridge",
+      "current_rank": 75,
+      "grade": null,
+      "xtp": 0.0,
+      "xtp_p": 0.0,
+      "xtp_a": 0.0,
+      "xtp_b": 0.0,
+      "xtp_simple": 0.0,
+      "top10_record": {
+        "wins": 0,
+        "losses": 0
+      },
+      "top33_record": {
+        "wins": 0,
+        "losses": 3
+      },
+      "wins": 0,
+      "losses": 7,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  },
+  "remaining": [
+    {
+      "weight": 132,
+      "wrestler_id": "36734630132",
+      "name": "Kendra Longstreth",
+      "grade": null,
+      "wins": 0,
+      "losses": 0,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    },
+    {
+      "weight": 132,
+      "wrestler_id": "35635808132",
+      "name": "Mattie Westfall",
+      "grade": null,
+      "wins": 0,
+      "losses": 6,
+      "top25_wins": 0,
+      "bonus_rate": 0.0
+    }
+  ],
+  "team_xTP_simple": 0.0,
+  "team_metrics": {
+    "projected_state_points": 0.0,
+    "team_rank": {
+      "value": null,
+      "rank": null,
+      "rank_scope": "league"
+    },
+    "placement_points": null,
+    "advancement_points": null,
+    "bonus_points": null,
+    "overall": {
+      "wins": 10,
+      "losses": 23
+    },
+    "top33": {
+      "wins": 0,
+      "losses": 15
+    },
+    "top10": {
+      "wins": 0,
+      "losses": 2
+    },
+    "bonus_rate": {
+      "value": 0.9,
+      "rank": 86,
+      "rank_scope": "league"
+    },
+    "pin_rate": {
+      "value": 0.9,
+      "rank": 41,
+      "rank_scope": "league"
+    },
+    "tech_rate": {
+      "value": 0.0,
+      "rank": 89,
+      "rank_scope": "league"
+    }
+  }
+}

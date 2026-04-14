@@ -1,0 +1,95 @@
+{
+  "wrestler_id": "OUTSTATE_a1c0b3c64522",
+  "name": "Nathan Dubon",
+  "team": "Jasper",
+  "team_slug": "jasper",
+  "team_rank": null,
+  "weight_class": 175,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 2
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "35214931132",
+      "opponent_rank": 64,
+      "opponent_name": "Asher Pattison",
+      "method": "Fall 3:41"
+    },
+    "worst_loss": {
+      "opponent_id": "35202490132",
+      "opponent_rank": 8,
+      "opponent_name": "Gavin Becker",
+      "method": "Fall 0:32"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35214931132",
+      "opponent_name": "Asher Pattison",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": 7,
+      "opponent_weight": 165,
+      "opponent_rank": 64,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:41",
+      "event": "Tommy Castle Classic"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "34997573132",
+      "opponent_name": "Sam Allen",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": 42,
+      "opponent_weight": 165,
+      "opponent_rank": 151,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:19",
+      "event": "Tommy Castle Classic"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35202490132",
+      "opponent_name": "Gavin Becker",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": 20,
+      "opponent_weight": 165,
+      "opponent_rank": 8,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:32",
+      "event": "Tommy Castle Classic"
+    }
+  ],
+  "profile_generated_at": "2026-04-04"
+}

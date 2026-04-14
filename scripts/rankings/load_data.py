@@ -9,21 +9,164 @@ wrestlers and matches by weight class for ranking purposes.
 import json
 import os
 from pathlib import Path
-from typing import Dict, List, Set, Tuple
+from typing import Dict, List, Set, Tuple, Optional
 from collections import defaultdict
+import re
+import hashlib
+from datetime import datetime
 
 
-def load_team_data(season: int) -> List[Dict]:
+# Standard weight classes for KY HS Boys
+KY_HS_BOYS_WEIGHTS = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
+
+# Standard weight classes for KY HS Girls
+KY_HS_GIRLS_WEIGHTS = [100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235]
+
+
+def normalize_weight_class_hs_boys(weight_str: str) -> Optional[str]:
+    """
+    Normalize weight class for KY HS Boys to one of the 14 standard weights.
+    
+    Rules:
+    1. Strip prefixes (F, JV, M, etc.) and extract numeric weight
+    2. Map to nearest standard weight class
+    3. Standard weights: 106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285
+    
+    Args:
+        weight_str: Weight class string (e.g., "F145", "215 JV", "f100", "M190")
+        
+    Returns:
+        Normalized weight class string (e.g., "144", "215", "106", "190") or None if invalid
+    """
+    if not weight_str:
+        return None
+    
+    # Strip whitespace and convert to string
+    weight_str = str(weight_str).strip()
+    
+    # Remove common prefixes (F, JV, M, etc.) - case insensitive
+    # Pattern: optional letter(s) at start, then numbers, then optional " JV" or other suffix
+    weight_str = re.sub(r'^[A-Za-z]+', '', weight_str)  # Remove leading letters
+    weight_str = re.sub(r'\s+JV.*$', '', weight_str, flags=re.IGNORECASE)  # Remove " JV" suffix
+    weight_str = re.sub(r'\s+.*$', '', weight_str)  # Remove any remaining suffix
+    
+    # Extract numeric weight
+    try:
+        weight_num = int(weight_str)
+    except ValueError:
+        return None
+    
+    # Map to nearest standard weight
+    # Find the closest standard weight
+    closest_weight = min(KY_HS_BOYS_WEIGHTS, key=lambda x: abs(x - weight_num))
+    
+    return str(closest_weight)
+
+
+def create_synthetic_opponent_id(opponent_name: str, opponent_team: str) -> str:
+    """
+    Create a synthetic ID for an out-of-state opponent based on name and team.
+    This allows us to track out-of-state wrestlers for common opponent analysis.
+    
+    Args:
+        opponent_name: Opponent's name
+        opponent_team: Opponent's team/school
+        
+    Returns:
+        Synthetic ID string (e.g., "OUTSTATE_abc123...")
+    """
+    # Create a hash from name+team to ensure consistency
+    key = f"{opponent_name}|{opponent_team}".lower().strip()
+    hash_obj = hashlib.md5(key.encode('utf-8'))
+    hash_hex = hash_obj.hexdigest()[:12]  # Use first 12 chars of hash
+    return f"OUTSTATE_{hash_hex}"
+
+
+def normalize_weight_class_hs_girls(weight_str: str) -> Optional[str]:
+    """
+    Normalize weight class for KY HS Girls to one of the 12 standard weights.
+    
+    Rules:
+    1. Strip prefixes (F, JV, M, etc.) and extract numeric weight
+    2. Map to nearest standard weight class
+    3. Standard weights: 100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235
+    
+    Args:
+        weight_str: Weight class string (e.g., "F145", "185 JV", "f100", "M152")
+        
+    Returns:
+        Normalized weight class string (e.g., "145", "185", "100", "152") or None if invalid
+    """
+    if not weight_str:
+        return None
+    
+    # Strip whitespace and convert to string
+    weight_str = str(weight_str).strip()
+    
+    # Remove common prefixes (F, JV, M, etc.) - case insensitive
+    # Pattern: optional letter(s) at start, then numbers, then optional " JV" or other suffix
+    weight_str = re.sub(r'^[A-Za-z]+', '', weight_str)  # Remove leading letters
+    weight_str = re.sub(r'\s+JV.*$', '', weight_str, flags=re.IGNORECASE)  # Remove " JV" suffix
+    weight_str = re.sub(r'\s+.*$', '', weight_str)  # Remove any remaining suffix
+    
+    # Extract numeric weight
+    try:
+        weight_num = int(weight_str)
+    except ValueError:
+        return None
+    
+    # Map to nearest standard weight
+    # Find the closest standard weight
+    closest_weight = min(KY_HS_GIRLS_WEIGHTS, key=lambda x: abs(x - weight_num))
+    
+    return str(closest_weight)
+
+
+def normalize_weight_class(weight_str: str, league: str = 'ncaa', state: str = None, gender: str = None) -> Optional[str]:
+    """
+    Normalize weight class based on league type.
+    
+    For KY HS Boys, applies special normalization to map to 14 standard weights.
+    For KY HS Girls, applies special normalization to map to 12 standard weights.
+    For other leagues, returns weight as-is (or with minimal normalization).
+    
+    Args:
+        weight_str: Weight class string
+        league: League type ('ncaa' or 'hs')
+        state: State code (for HS)
+        gender: Gender ('boys' or 'girls', for HS)
+        
+    Returns:
+        Normalized weight class string or None if invalid
+    """
+    if league == 'hs' and state and state.upper() == 'KY' and gender == 'boys':
+        return normalize_weight_class_hs_boys(weight_str)
+    elif league == 'hs' and state and state.upper() == 'KY' and gender == 'girls':
+        return normalize_weight_class_hs_girls(weight_str)
+    else:
+        # For NCAA and other leagues, return as-is (or with basic normalization)
+        return str(weight_str).strip() if weight_str else None
+
+
+def load_team_data(season: int, league: str = 'ncaa', state: str = None, gender: str = None) -> List[Dict]:
     """
     Load all team data files for a season.
     
     Args:
         season: Season year (e.g., 2026)
+        league: League type ('ncaa' or 'hs')
+        state: State code (required for HS)
+        gender: Gender ('boys' or 'girls', required for HS)
         
     Returns:
         List of team data dictionaries
     """
-    data_dir = Path(f"mt/processed_data/{season}")
+    # Setup directory based on league type
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        data_dir = Path(f"mt/processed_data/hs_{state_lower}_{gender}") / str(season)
+    else:  # ncaa
+        data_dir = Path(f"mt/processed_data/{season}")
     
     if not data_dir.exists():
         raise FileNotFoundError(f"Data directory not found: {data_dir}")
@@ -42,14 +185,88 @@ def load_team_data(season: int) -> List[Dict]:
     return teams
 
 
-def load_match_overrides(season: int, data_dir: str = "mt/rankings_data") -> Dict[Tuple[str, str, str], Dict]:
+def normalize_result_type(result: str) -> str:
+    """
+    Normalize a result string to just the result type for deduplication purposes.
+    
+    Examples:
+    - "Fall 4:45" -> "Fall"
+    - "Fall 0:00" -> "Fall"
+    - "Dec 10-4" -> "Dec"
+    - "MD 14-1" -> "MD"
+    - "TF 15-0 4:02" -> "TF"
+    - "M. For." -> "MFF"
+    - "MFF" -> "MFF"
+    - "For." -> "FF"
+    
+    This allows deduplication to work correctly:
+    - Same match in both team files with minor time/score differences -> deduplicated
+    - Different matches with different result types -> kept separate
+    """
+    if not result:
+        return "UNKNOWN"
+    
+    result_upper = result.upper().strip()
+    
+    # Check for medical forfeit first (before regular forfeit)
+    if "M. FOR" in result_upper or "MFF" in result_upper or "MEDICAL" in result_upper:
+        return "MFF"
+    
+    # Check for injury
+    if "INJ" in result_upper or "INJURY" in result_upper:
+        return "INJ"
+    
+    # Check for default/forfeit
+    if "DEF" in result_upper or "DEFAULT" in result_upper:
+        return "DEF"
+    
+    # Check for tech fall (before fall/pin to avoid misclassification)
+    if "TF" in result_upper or "TECH" in result_upper or "TECHNICAL" in result_upper:
+        return "TF"
+    
+    # Check for fall/pin (but exclude if "TF" appears anywhere)
+    if ("PIN" in result_upper or "FALL" in result_upper) and "TF" not in result_upper:
+        return "Fall"
+    
+    # Check for major decision
+    if "MD" in result_upper or "MAJOR" in result_upper:
+        return "MD"
+    
+    # Check for SV-* or TB-* (sudden victory or tiebreaker)
+    if result_upper.startswith("SV-") or result_upper.startswith("TB-"):
+        return "Dec"  # Treat as decision for deduplication
+    
+    # Check for decision
+    if "DEC" in result_upper or "DECISION" in result_upper:
+        return "Dec"
+    
+    # Check for disqualification
+    if "DQ" in result_upper or "DISQUAL" in result_upper:
+        return "DQ"
+    
+    # Check for forfeit (must check "For." pattern before "FF" to catch "(For.)" format)
+    if "FOR." in result_upper or result_upper.endswith("FOR.") or " FOR " in result_upper:
+        return "FF"
+    if "FF" in result_upper or "FORFEIT" in result_upper:
+        return "FF"
+    
+    # Default: return original (normalized to uppercase, stripped)
+    return result_upper
+
+
+def load_match_overrides(season: int, data_dir: str = "mt/rankings_data", league: str = 'ncaa', state: str = None, gender: str = None) -> Dict[Tuple[str, str, str], Dict]:
     """
     Load match overrides for a season.
     
     Returns a dictionary mapping (w1_id, w2_id, date) -> override_dict
     where IDs are normalized (smaller ID first).
     """
-    overrides_path = Path(data_dir) / str(season) / "match_overrides.json"
+    # Setup override path based on league type
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        overrides_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season) / "match_overrides.json"
+    else:  # ncaa
+        overrides_path = Path(data_dir) / str(season) / "match_overrides.json"
     override_map = {}
     
     if overrides_path.exists():
@@ -71,7 +288,84 @@ def load_match_overrides(season: int, data_dir: str = "mt/rankings_data") -> Dic
     return override_map
 
 
-def apply_match_overrides(data: Dict[str, Dict], season: int, data_dir: str = "mt/rankings_data") -> None:
+def load_match_removal_specs(season: int, data_dir: str = "mt/rankings_data", league: str = 'ncaa', state: str = None, gender: str = None) -> List[Dict]:
+    """
+    Load match removal specs from match_overrides.json (entries with "remove": true).
+    Returns list of dicts with w1_norm, w2_norm, date, and optional "result".
+    When "result" is present, only the match with that exact result is removed (disambiguates
+    same-day same-opponent pairs, e.g. Varsity vs Exhibition).
+    """
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        overrides_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season) / "match_overrides.json"
+    else:
+        overrides_path = Path(data_dir) / str(season) / "match_overrides.json"
+    specs = []
+    if not overrides_path.exists():
+        return specs
+    try:
+        with overrides_path.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+        for ov in data.get("overrides", []):
+            if not ov.get("remove"):
+                continue
+            w1 = ov.get("wrestler1_id")
+            w2 = ov.get("wrestler2_id")
+            date = ov.get("date")
+            if w1 and w2 and date:
+                w1_norm, w2_norm = tuple(sorted([w1, w2]))
+                spec = {"w1_norm": w1_norm, "w2_norm": w2_norm, "date": date}
+                if ov.get("result") is not None and str(ov.get("result", "")).strip():
+                    spec["result"] = str(ov["result"]).strip()
+                specs.append(spec)
+    except Exception as e:
+        print(f"Warning: Could not load match removals: {e}")
+    return specs
+
+
+def apply_match_removals(data: Dict[str, Dict], removal_specs: List[Dict]) -> None:
+    """
+    Remove matches from data that match any removal spec.
+    Each spec is (w1_norm, w2_norm, date) with optional "result". When result is present,
+    only the match with that exact result is removed (so you can remove one of two
+    same-day same-opponent matches, e.g. the Exhibition with "Fall 0:00").
+    """
+    if not removal_specs:
+        return
+    removed_count = 0
+    for wc, wc_data in data.items():
+        matches = wc_data.get("matches", [])
+        new_matches = []
+        for match in matches:
+            w1 = match.get("wrestler1_id")
+            w2 = match.get("wrestler2_id")
+            date = match.get("date")
+            if not w1 or not w2 or not date:
+                new_matches.append(match)
+                continue
+            w1_norm, w2_norm = tuple(sorted([w1, w2]))
+            match_result = (match.get("result") or "").strip()
+            removed = False
+            for spec in removal_specs:
+                if w1_norm != spec["w1_norm"] or w2_norm != spec["w2_norm"] or date != spec["date"]:
+                    continue
+                if "result" in spec:
+                    if match_result == spec["result"]:
+                        removed_count += 1
+                        removed = True
+                    break
+                else:
+                    removed_count += 1
+                    removed = True
+                    break
+            if not removed:
+                new_matches.append(match)
+        wc_data["matches"] = new_matches
+    if removed_count > 0:
+        print(f"Removed {removed_count} match(es) via match removal overrides")
+
+
+def apply_match_overrides(data: Dict[str, Dict], season: int, data_dir: str = "mt/rankings_data", league: str = 'ncaa', state: str = None, gender: str = None) -> None:
     """
     Apply match overrides to deduplicated match data.
     
@@ -83,8 +377,11 @@ def apply_match_overrides(data: Dict[str, Dict], season: int, data_dir: str = "m
         data: Dictionary mapping weight_class -> {wrestlers: {}, matches: []}
         season: Season year
         data_dir: Directory containing match_overrides.json
+        league: League type ('ncaa' or 'hs')
+        state: State code (required for HS)
+        gender: Gender ('boys' or 'girls', required for HS)
     """
-    match_overrides = load_match_overrides(season, data_dir)
+    match_overrides = load_match_overrides(season, data_dir, league=league, state=state, gender=gender)
     
     if not match_overrides:
         return
@@ -107,6 +404,9 @@ def apply_match_overrides(data: Dict[str, Dict], season: int, data_dir: str = "m
             override = match_overrides.get(override_key)
             
             if override:
+                # Skip applying result/winner for removal overrides (they are dropped in apply_match_removals)
+                if override.get("remove"):
+                    continue
                 # Apply override: replace winner_id and result
                 match["winner_id"] = override.get("winner_id", match.get("winner_id"))
                 match["result"] = override.get("result", match.get("result"))
@@ -125,7 +425,7 @@ def apply_match_overrides(data: Dict[str, Dict], season: int, data_dir: str = "m
         print(f"Applied {override_count} match override(s)")
 
 
-def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_dir: str = "mt/rankings_data") -> Dict[str, Dict]:
+def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_dir: str = "mt/rankings_data", league: str = 'ncaa', state: str = None, gender: str = None) -> Dict[str, Dict]:
     """
     Extract all wrestlers and their matches, organized by weight class.
     
@@ -165,11 +465,15 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
             
             # Get or create wrestler info (use ID as key)
             if wrestler_id not in all_wrestlers:
+                # Normalize primary weight class
+                primary_wc = wrestler.get('weight_class', '')
+                normalized_primary_wc = normalize_weight_class(primary_wc, league, state, gender) if primary_wc else ''
+                
                 all_wrestlers[wrestler_id] = {
                     'id': wrestler_id,
                     'name': wrestler_name,
                     'team': team_name,
-                    'weight_class': wrestler.get('weight_class', ''),
+                    'weight_class': normalized_primary_wc or primary_wc,  # Use normalized if available, fallback to original
                     'grade': wrestler.get('grade', ''),
                     'wins': 0,
                     'losses': 0,
@@ -208,56 +512,146 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
                 if result in ('BYE', 'NoResult') or 'received a bye' in match.get('summary', '').lower():
                     continue
                 
-                # Get opponent ID - CRITICAL: must have valid ID
+                # Get opponent ID and identify opponent from match
                 opponent_id = match.get('opponent_id')
-                
-                # Skip if opponent doesn't have a valid ID
-                if not opponent_id or opponent_id == 'null' or opponent_id == '':
-                    continue
-                
-                # If opponent is not in our D1 wrestler list, we still want the
-                # record (wins/losses) for THIS wrestler to be accurate, but we
-                # cannot use the match for D1 relationships or opponent stats.
-                if opponent_id not in all_wrestlers:
-                    # Build a key so we don't double-count if this match appears
-                    # multiple times in the source data.
-                    match_date = match.get('date', '')
-                    local_key = ('nonD1', wrestler_id, opponent_id, match_date, result)
-                    if local_key not in processed_matches_for_stats:
-                        if (match.get('winner_name') == wrestler_name and
-                                match.get('winner_team') == team_name):
-                            wrestler_info['wins'] += 1
-                        elif (match.get('loser_name') == wrestler_name and
-                                match.get('loser_team') == team_name):
-                            wrestler_info['losses'] += 1
-                        wrestler_info['matches_count'] += 1
-                        processed_matches_for_stats.add(local_key)
-                    # Do not include this match in wrestler_matches or global
-                    # match lists used for relationships.
-                    continue
-                
-                # Get the weight class for this match
-                match_weight = match.get('weight', '') or primary_weight_class
-                if not match_weight:
-                    continue
-                
-                # Store match info for weight-class determination for BOTH wrestlers.
-                # Even if we cannot later determine the winner/loser reliably, these
-                # entries still help with weight assignment based on where they wrestled.
-                match_date = match.get('date', '')
-                wrestler_matches[wrestler_id].append((match, match_weight, match_date))
-                wrestler_matches[opponent_id].append((match, match_weight, match_date))
-                
-                # Determine if this wrestler won or lost (using ID-based matching)
                 winner_name = match.get('winner_name', '')
                 loser_name = match.get('loser_name', '')
                 winner_team = match.get('winner_team', '')
                 loser_team = match.get('loser_team', '')
                 
-                # Match using ID, not name
+                # Determine opponent name and team
+                if winner_name == wrestler_name and winner_team == team_name:
+                    # This wrestler won, opponent is the loser
+                    opponent_name = loser_name
+                    opponent_team = loser_team
+                elif loser_name == wrestler_name and loser_team == team_name:
+                    # This wrestler lost, opponent is the winner
+                    opponent_name = winner_name
+                    opponent_team = winner_team
+                else:
+                    # Can't determine opponent reliably, skip
+                    continue
+                
+                # For HS: Handle matches with null opponent_id by creating synthetic opponents
+                # For NCAA: Skip matches with null opponent_id (unchanged behavior)
+                if not opponent_id or opponent_id == 'null' or opponent_id == '':
+                    if league == 'hs':
+                        # Create synthetic opponent ID for out-of-state wrestlers or forfeits
+                        # For forfeits, allow "Unknown" as valid opponent_name/team
+                        result = match.get('result', '')
+                        is_forfeit = result and ('For.' in result or 'FF' in result.upper() or 'FORFEIT' in result.upper())
+                        
+                        if not opponent_name or not opponent_team:
+                            if is_forfeit:
+                                # For forfeits, try to extract opponent team from event field
+                                # Event format is typically "vs. Team Name" or "vs Team Name"
+                                event = match.get('event', '')
+                                if event and (not opponent_team or opponent_team == '' or opponent_team == 'Unknown'):
+                                    # Try to extract team name from event
+                                    # Patterns: "vs. Team Name", "vs Team Name", "vs Team Name (details)"
+                                    event_match = re.search(r'vs\.?\s+([^(]+)', event, re.IGNORECASE)
+                                    if event_match:
+                                        extracted_team = event_match.group(1).strip()
+                                        if extracted_team:
+                                            opponent_team = extracted_team
+                                
+                                # Use "Unknown" as fallback if still missing
+                                opponent_name = opponent_name or 'Unknown'
+                                opponent_team = opponent_team or 'Unknown'
+                            else:
+                                # Can't create synthetic opponent without name/team for non-forfeits
+                                continue
+                        elif is_forfeit and (not opponent_team or opponent_team == '' or opponent_team == 'Unknown'):
+                            # Even if opponent_name exists, try to extract team from event for forfeits
+                            # This handles cases where opponent_name is set but opponent_team is Unknown
+                            event = match.get('event', '')
+                            if event:
+                                event_match = re.search(r'vs\.?\s+([^(]+)', event, re.IGNORECASE)
+                                if event_match:
+                                    extracted_team = event_match.group(1).strip()
+                                    if extracted_team:
+                                        opponent_team = extracted_team
+                        opponent_id = create_synthetic_opponent_id(opponent_name, opponent_team)
+                        
+                        # Add synthetic opponent to all_wrestlers if not already present
+                        if opponent_id not in all_wrestlers:
+                            all_wrestlers[opponent_id] = {
+                                'id': opponent_id,
+                                'name': opponent_name,
+                                'team': opponent_team,
+                                'weight_class': '',  # Will be determined from matches
+                                'grade': '',
+                                'wins': 0,
+                                'losses': 0,
+                                'matches_count': 0,
+                                'is_synthetic': True  # Mark as synthetic for reference
+                            }
+                    else:
+                        # NCAA: Skip matches with null opponent_id (unchanged behavior)
+                        continue
+                
+                # Get the weight class for this match (before checking if opponent is in all_wrestlers)
+                # This ensures we can use match weight for weight assignment even for out-of-state opponents
+                match_weight_raw = match.get('weight', '') or primary_weight_class
+                if not match_weight_raw:
+                    continue
+                
+                # Normalize weight class for HS Boys
+                match_weight = normalize_weight_class(match_weight_raw, league, state, gender) or match_weight_raw
+                match_date = match.get('date', '')
+                
+                # If opponent is not in our wrestler list (for NCAA with valid ID but not in dataset)
+                # For HS, synthetic opponents are already added to all_wrestlers above (for null opponent_id)
+                # But out-of-state opponents with valid IDs may not be in all_wrestlers
+                if opponent_id not in all_wrestlers:
+                    # This happens for:
+                    # - NCAA: opponent has valid ID but isn't in dataset
+                    # - HS: out-of-state opponent with valid ID (not null, so no synthetic ID created)
+                    
+                    if league == 'hs':
+                        # For HS: Add out-of-state opponent to all_wrestlers as synthetic opponent
+                        # This allows the match to be included in weight class files and profiles
+                        if not opponent_name or not opponent_team:
+                            # Can't create synthetic opponent without name/team
+                            continue
+                        
+                        # Add synthetic opponent to all_wrestlers if not already present
+                        all_wrestlers[opponent_id] = {
+                            'id': opponent_id,
+                            'name': opponent_name,
+                            'team': opponent_team,
+                            'weight_class': '',  # Will be determined from matches
+                            'grade': '',
+                            'wins': 0,
+                            'losses': 0,
+                            'matches_count': 0,
+                            'is_synthetic': True  # Mark as synthetic for reference
+                        }
+                        # Now opponent is in all_wrestlers, so continue with normal processing below
+                    else:
+                        # NCAA: Update stats but don't add match to weight class files
+                        # Build a key so we don't double-count if this match appears
+                        # multiple times in the source data.
+                        local_key = ('nonD1', wrestler_id, opponent_id, match_date, result)
+                        if local_key not in processed_matches_for_stats:
+                            if (winner_name == wrestler_name and winner_team == team_name):
+                                wrestler_info['wins'] += 1
+                            elif (loser_name == wrestler_name and loser_team == team_name):
+                                wrestler_info['losses'] += 1
+                            wrestler_info['matches_count'] += 1
+                            processed_matches_for_stats.add(local_key)
+                        
+                        # Do not include this match in global match lists used for relationships
+                        continue
+                
+                # Store match info for weight-class determination for BOTH wrestlers.
+                # Even if we cannot later determine the winner/loser reliably, these
+                # entries still help with weight assignment based on where they wrestled.
+                wrestler_matches[wrestler_id].append((match, match_weight, match_date))
+                wrestler_matches[opponent_id].append((match, match_weight, match_date))
+                
+                # Get opponent info (may be synthetic for HS out-of-state opponents)
                 opponent_info = all_wrestlers[opponent_id]
-                opponent_name = opponent_info['name']
-                opponent_team = opponent_info['team']
                 
                 # Determine winner using ID and, as a fallback, name+team.
                 is_winner = (wrestler_id == match.get('winner_id', '') or 
@@ -287,9 +681,12 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
                 }
                 
                 # Create unique match key for deduplication
-                # Use (w1, w2, date) as the base key - this identifies the match uniquely
-                # regardless of which team's file it came from or what the original result was
-                match_identity_key = (w1_id_normalized, w2_id_normalized, match_date)
+                # Use (w1, w2, date, normalized_result_type) as the key
+                # This allows multiple matches between same wrestlers on same date with different result types
+                # (e.g., Fall vs M. For.), while still deduplicating the same match appearing in both team files
+                # with minor time/score differences (e.g., "Fall 4:45" vs "Fall 4:54")
+                normalized_result = normalize_result_type(result)
+                match_identity_key = (w1_id_normalized, w2_id_normalized, match_date, normalized_result)
                 
                 # Store match by key to avoid duplicates
                 if match_weight not in weight_classes:
@@ -297,10 +694,10 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
                 elif 'match_keys' not in weight_classes[match_weight]:
                     weight_classes[match_weight]['match_keys'] = set()
                 
-                # Only add if we haven't seen this match before (by identity, not by result)
+                # Only add if we haven't seen this match before (by identity and normalized result type)
                 # This ensures that if a match appears in both team files, we only add it once
-                # The override is applied before this check, so both instances will have the
-                # same overridden result and will be deduplicated correctly
+                # (even if times/scores differ slightly), while allowing multiple matches with
+                # different result types (e.g., Fall vs M. For.) on the same date
                 if match_identity_key not in weight_classes[match_weight]['match_keys']:
                     weight_classes[match_weight]['matches'].append(match_record)
                     weight_classes[match_weight]['match_keys'].add(match_identity_key)
@@ -323,8 +720,365 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
     # Third pass: determine weight class assignment for each wrestler
     wrestler_weight_class = {}  # wrestler_id -> assigned weight_class
 
+    # ========================================================================
+    # NEW HS WEIGHT CHANGE LOGIC (Threshold + Confirmation System)
+    # ========================================================================
+    
+    def evaluate_weight_threshold(matches: List[Tuple], current_weight: str, league: str, state: str, gender: str) -> Optional[str]:
+        """
+        Evaluate weight change threshold based on last 7 matches.
+        
+        Returns:
+            Proposed weight if threshold met, None otherwise
+        """
+        if not matches:
+            return None
+        
+        # Sort matches by date (most recent first)
+        sorted_matches = sorted(matches, key=lambda x: parse_date(x[2]), reverse=True)
+        
+        # Take last 7 matches (or fewer if <7 exist)
+        recent_matches = sorted_matches[:7]
+        
+        if len(recent_matches) < 7:
+            # Simple majority if <7 matches
+            weight_counts = defaultdict(int)
+            for _, match_weight, _ in recent_matches:
+                normalized = normalize_weight_class(match_weight, league, state, gender) or match_weight
+                weight_counts[normalized] += 1
+            
+            if weight_counts:
+                most_common = max(weight_counts.items(), key=lambda x: x[1])[0]
+                if most_common != current_weight:
+                    return most_common
+            return None
+        
+        # Count weights in last 7 matches
+        weight_counts = defaultdict(int)
+        for _, match_weight, _ in recent_matches:
+            normalized = normalize_weight_class(match_weight, league, state, gender) or match_weight
+            weight_counts[normalized] += 1
+        
+        if not weight_counts:
+            return None
+        
+        # Get current weight as integer for comparison
+        try:
+            current_weight_int = int(current_weight) if current_weight else None
+        except (ValueError, TypeError):
+            current_weight_int = None
+        
+        # Get all weight classes for comparison
+        if league == 'hs' and state and state.upper() == 'KY':
+            if gender == 'boys':
+                valid_weights = KY_HS_BOYS_WEIGHTS
+            elif gender == 'girls':
+                valid_weights = KY_HS_GIRLS_WEIGHTS
+            else:
+                valid_weights = []
+        else:
+            valid_weights = []
+        
+        # Check for moving DOWN (to lower weight)
+        # Check ALL lower weights, not just adjacent
+        if current_weight_int and valid_weights:
+            current_idx = valid_weights.index(current_weight_int) if current_weight_int in valid_weights else -1
+            if current_idx > 0:
+                # Check all weights below current weight
+                best_lower_weight = None
+                best_lower_count = 0
+                
+                for i in range(current_idx - 1, -1, -1):  # Check from adjacent down to lowest
+                    lower_weight = str(valid_weights[i])
+                    count_at_lower = weight_counts.get(lower_weight, 0)
+                    if count_at_lower >= 3:  # Threshold met
+                        # Prefer the weight with highest count, or closest if tied
+                        if count_at_lower > best_lower_count:
+                            best_lower_weight = lower_weight
+                            best_lower_count = count_at_lower
+                        elif count_at_lower == best_lower_count and best_lower_weight:
+                            # If tied, prefer the one closer to current weight (higher weight)
+                            if int(lower_weight) > int(best_lower_weight):
+                                best_lower_weight = lower_weight
+                
+                if best_lower_weight:
+                    return best_lower_weight
+        
+        # Check for moving UP (to higher weight)
+        # Check ALL higher weights, not just adjacent
+        if current_weight_int and valid_weights:
+            current_idx = valid_weights.index(current_weight_int) if current_weight_int in valid_weights else -1
+            if current_idx >= 0 and current_idx < len(valid_weights) - 1:
+                # Check all weights above current weight
+                best_higher_weight = None
+                best_higher_count = 0
+                
+                for i in range(current_idx + 1, len(valid_weights)):  # Check from adjacent up to highest
+                    higher_weight = str(valid_weights[i])
+                    count_at_higher = weight_counts.get(higher_weight, 0)
+                    if count_at_higher >= 6:  # Threshold met
+                        # Prefer the weight with highest count, or closest if tied
+                        if count_at_higher > best_higher_count:
+                            best_higher_weight = higher_weight
+                            best_higher_count = count_at_higher
+                        elif count_at_higher == best_higher_count and best_higher_weight:
+                            # If tied, prefer the one closer to current weight (lower weight)
+                            if int(higher_weight) < int(best_higher_weight):
+                                best_higher_weight = higher_weight
+                
+                if best_higher_weight:
+                    return best_higher_weight
+        
+        # No threshold met
+        return None
+    
+    def is_wrestler_ranked(wrestler_id: str, weight: str, season: int, league: str, state: str, gender: str, data_dir: str) -> bool:
+        """
+        Check if wrestler is ranked in top 40 (boys) or top 24 (girls) at their current weight.
+        
+        Note: Rankings files may not exist on first run of load_data (before rankings are generated).
+        In that case, returns False (unranked), which means weight changes will be auto-applied.
+        On subsequent runs after rankings are generated, this will correctly identify ranked wrestlers.
+        
+        Returns:
+            True if ranked, False otherwise (including if rankings file doesn't exist)
+        """
+        if league != 'hs':
+            return False  # Only applies to HS
+        
+        # Determine top N based on gender
+        top_n = 24 if gender == 'girls' else 40
+        
+        # Load rankings for this weight
+        state_lower = state.lower() if state else 'ky'
+        rankings_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season) / f"rankings_{weight}.json"
+        
+        if not rankings_path.exists():
+            # Rankings don't exist yet (first run) - treat as unranked
+            return False
+        
+        try:
+            with open(rankings_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            rankings = data.get('rankings', [])
+            
+            # Check if wrestler is in top N
+            for entry in rankings[:top_n]:
+                if entry.get('wrestler_id') == wrestler_id:
+                    rank = entry.get('rank')
+                    if rank and isinstance(rank, int) and rank <= top_n:
+                        return True
+            
+            return False
+        except Exception:
+            # Error reading rankings - treat as unranked to be safe
+            return False
+    
+    def load_weight_confirmations(season: int, league: str, state: str, gender: str, data_dir: str) -> Dict[str, Dict]:
+        """
+        Load weight confirmation state from weight_confirmation.json.
+        
+        Returns:
+            Dict mapping wrestler_id -> {confirmed_weight, last_reviewed_match_date}
+        """
+        if league != 'hs':
+            return {}
+        
+        state_lower = state.lower() if state else 'ky'
+        confirmations_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season) / "weight_confirmation.json"
+        
+        if not confirmations_path.exists():
+            return {}
+        
+        try:
+            with open(confirmations_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            return data.get('confirmations', {})
+        except Exception:
+            return {}
+    
+    def save_weight_confirmations(confirmations: Dict[str, Dict], season: int, league: str, state: str, gender: str, data_dir: str) -> None:
+        """Save weight confirmation state to weight_confirmation.json."""
+        if league != 'hs':
+            return
+        
+        state_lower = state.lower() if state else 'ky'
+        confirmations_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season) / "weight_confirmation.json"
+        confirmations_path.parent.mkdir(parents=True, exist_ok=True)
+        
+        data = {
+            'confirmations': confirmations,
+            'last_updated': datetime.now().isoformat()
+        }
+        
+        with open(confirmations_path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2)
+    
+    def get_most_recent_match_date(matches: List[Tuple]) -> Optional[str]:
+        """Get the most recent match date from a list of matches."""
+        if not matches:
+            return None
+        
+        sorted_matches = sorted(matches, key=lambda x: parse_date(x[2]), reverse=True)
+        return sorted_matches[0][2] if sorted_matches else None
+    
+    def compare_dates(date1: str, date2: str) -> int:
+        """
+        Compare two dates in MM/DD/YYYY format.
+        Returns: -1 if date1 < date2, 0 if equal, 1 if date1 > date2
+        """
+        d1_tuple = parse_date(date1)
+        d2_tuple = parse_date(date2)
+        if d1_tuple < d2_tuple:
+            return -1
+        elif d1_tuple > d2_tuple:
+            return 1
+        return 0
+    
+    def prompt_weight_confirmation(
+        wrestler_info: Dict,
+        current_weight: str,
+        proposed_weight: str,
+        matches: List[Tuple],
+        team_wrestlers: Dict[str, Dict],
+        league: str,
+        state: str,
+        gender: str,
+        season: int,
+        data_dir: str
+    ) -> Tuple[str, str]:
+        """
+        Interactive prompt for weight change confirmation.
+        
+        Returns:
+            Tuple of (confirmed_weight, last_reviewed_match_date)
+        """
+        wrestler_id = wrestler_info['id']
+        name = wrestler_info.get('name', 'Unknown')
+        team = wrestler_info.get('team', 'Unknown')
+        
+        print(f"\n{'='*80}")
+        print(f"WEIGHT CHANGE PROPOSAL - RANKED WRESTLER")
+        print(f"{'='*80}")
+        print(f"Wrestler: {name} ({team})")
+        print(f"Current confirmed weight: {current_weight}")
+        print(f"Proposed weight: {proposed_weight}")
+        
+        # Count matches at proposed weight
+        sorted_matches = sorted(matches, key=lambda x: parse_date(x[2]), reverse=True)
+        recent_7 = sorted_matches[:7]
+        count_at_proposed = sum(1 for _, w, _ in recent_7 if normalize_weight_class(w, league, state, gender) == proposed_weight)
+        print(f"Threshold reason: {count_at_proposed} of last 7 matches at {proposed_weight}")
+        
+        # Show last 10 matches
+        print(f"\nLast 10 matches (most recent first):")
+        print(f"{'Date':<12} {'Weight':<8} {'Result':<20}")
+        print(f"{'-'*40}")
+        for _, match_weight, match_date in sorted_matches[:10]:
+            normalized_weight = normalize_weight_class(match_weight, league, state, gender) or match_weight
+            # Try to get result from match if available
+            result = "—"
+            print(f"{match_date:<12} {normalized_weight:<8} {result:<20}")
+        
+        # Show team context
+        print(f"\nTeam context:")
+        team_name = team
+        current_weight_int = int(current_weight) if current_weight.isdigit() else None
+        
+        if league == 'hs' and state and state.upper() == 'KY':
+            if gender == 'boys':
+                valid_weights = KY_HS_BOYS_WEIGHTS
+            elif gender == 'girls':
+                valid_weights = KY_HS_GIRLS_WEIGHTS
+            else:
+                valid_weights = []
+        else:
+            valid_weights = []
+        
+        weights_to_show = []
+        if current_weight_int and current_weight_int in valid_weights:
+            current_idx = valid_weights.index(current_weight_int)
+            if current_idx > 0:
+                weights_to_show.append(str(valid_weights[current_idx - 1]))
+            weights_to_show.append(str(current_weight_int))
+            if current_idx < len(valid_weights) - 1:
+                weights_to_show.append(str(valid_weights[current_idx + 1]))
+        
+        # Helper function to find wrestler's rank across all weight classes
+        def find_wrestler_rank(wid: str, all_weights: List[int]) -> Optional[Tuple[int, int]]:
+            """
+            Find wrestler's rank across all weight classes.
+            Returns: (weight, rank) if found, None otherwise
+            """
+            state_lower = state.lower() if state else 'ky'
+            top_n = 24 if gender == 'girls' else 40
+            
+            for weight in all_weights:
+                rankings_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season) / f"rankings_{weight}.json"
+                if not rankings_path.exists():
+                    continue
+                
+                try:
+                    with open(rankings_path, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                    rankings = data.get('rankings', [])
+                    
+                    # Check top N only
+                    for entry in rankings[:top_n]:
+                        if entry.get('wrestler_id') == wid:
+                            rank = entry.get('rank')
+                            if rank and isinstance(rank, int) and rank <= top_n:
+                                return (weight, rank)
+                except Exception:
+                    continue
+            
+            return None
+        
+        # Build map of wrestlers by their RANKED weight (not roster weight)
+        wrestlers_by_ranked_weight = defaultdict(list)  # weight -> [(wid, winfo, rank)]
+        
+        for wid, winfo in team_wrestlers.items():
+            rank_info = find_wrestler_rank(wid, valid_weights)
+            if rank_info:
+                rank_weight, rank = rank_info
+                wrestlers_by_ranked_weight[rank_weight].append((wid, winfo, rank))
+            else:
+                # Unranked wrestlers - check if they have a confirmed weight from weight_confirmations
+                # (This helps show unranked wrestlers at their confirmed weight)
+                # For now, we'll only show ranked wrestlers in team context
+                pass
+        
+        # Display wrestlers grouped by their RANKED weight
+        for w in weights_to_show:
+            w_int = int(w)
+            wrestlers_at_weight = wrestlers_by_ranked_weight.get(w_int, [])
+            
+            if wrestlers_at_weight:
+                print(f"\n  Weight {w}:")
+                # Sort by rank
+                wrestlers_at_weight.sort(key=lambda x: x[2])  # Sort by rank
+                for wid, winfo, rank in wrestlers_at_weight:
+                    print(f"    - {winfo.get('name', 'Unknown')} (#{rank})")
+        
+        # Prompt for decision
+        while True:
+            response = input(f"\nAccept weight change to {proposed_weight}? [a]ccept / [r]eject: ").strip().lower()
+            if response in ['a', 'accept']:
+                most_recent_date = get_most_recent_match_date(matches)
+                return proposed_weight, most_recent_date or ''
+            elif response in ['r', 'reject']:
+                most_recent_date = get_most_recent_match_date(matches)
+                return current_weight, most_recent_date or ''
+            else:
+                print("Invalid response. Please enter 'a' to accept or 'r' to reject.")
+    
+    # Load weight confirmations
+    weight_confirmations = load_weight_confirmations(season, league, state, gender, data_dir) if league == 'hs' else {}
+    
     # Load manual weight overrides (virtual match hints) if present.
-    # File format (mt/rankings_data/{season}/weight_overrides.json):
+    # File format (mt/rankings_data/{season}/weight_overrides.json for NCAA or
+    # mt/rankings_data/hs_{state}_{gender}/weight_overrides.json for HS):
     # {
     #   "overrides": [
     #     {
@@ -340,7 +1094,12 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
     # These overrides do NOT create real matches; they only influence the
     # weight-assignment algorithm by adding virtual entries to wrestler_matches.
     overrides_by_wrestler: Dict[str, List[Tuple[str, str, int]]] = defaultdict(list)
-    overrides_path = Path("mt/rankings_data") / "weight_overrides.json"
+    # Setup weight overrides path based on league type
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        overrides_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season) / "weight_overrides.json"
+    else:  # ncaa
+        overrides_path = Path(data_dir) / str(season) / "weight_overrides.json"
     if overrides_path.exists():
         try:
             with open(overrides_path, "r", encoding="utf-8") as f:
@@ -352,7 +1111,9 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
                 count = int(o.get("matches_equivalent", 5))
                 if not (wid and date and weight):
                     continue
-                overrides_by_wrestler[wid].append((weight, date, count))
+                # Normalize weight before storing
+                normalized_weight = normalize_weight_class(weight, league, state, gender) or weight
+                overrides_by_wrestler[wid].append((normalized_weight, date, count))
         except Exception as e:
             print(f"Warning: Failed to load weight_overrides.json: {e}")
     
@@ -373,44 +1134,149 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
         
         # Apply any weight overrides as virtual matches (no effect on stats).
         # Each override adds N synthetic matches at the given weight/date.
+        # Normalize override weights before adding
         for weight, date, count in overrides_by_wrestler.get(wrestler_id, []):
+            normalized_weight = normalize_weight_class(weight, league, state, gender) or weight
             for _ in range(max(0, count)):
-                matches.append((None, weight, date))
+                matches.append((None, normalized_weight, date))
+        
         primary_weight = wrestler_info['weight_class']
         
-        if len(matches) == 0:
-            # No matches: use primary weight
-            assigned_weight = primary_weight
-        elif len(matches) < 5:
-            # Less than 5 matches: use most recent weight
-            # Sort by date (most recent first)
-            sorted_matches = sorted(matches, key=lambda x: parse_date(x[2]), reverse=True)
-            assigned_weight = sorted_matches[0][1] if sorted_matches else primary_weight
-        else:
-            # 5 or more matches: use most common weight in last 5 matches
-            # Sort by date (most recent first) and take last 5
-            sorted_matches = sorted(matches, key=lambda x: parse_date(x[2]), reverse=True)
-            last_5 = sorted_matches[:5]
+        # NEW HS WEIGHT CHANGE LOGIC
+        if league == 'hs' and state and state.upper() == 'KY':
+            # Get current confirmed weight from confirmations, or use primary weight
+            confirmation = weight_confirmations.get(wrestler_id, {})
+            current_confirmed_weight = confirmation.get('confirmed_weight', primary_weight)
+            last_reviewed_date = confirmation.get('last_reviewed_match_date', '')
             
-            # Count weights in last 5 matches
-            weight_counts = defaultdict(int)
-            for _, match_weight, _ in last_5:
-                weight_counts[match_weight] += 1
+            # Normalize current confirmed weight
+            current_confirmed_weight = normalize_weight_class(current_confirmed_weight, league, state, gender) or current_confirmed_weight
             
-            # Get most common weight
-            if weight_counts:
-                assigned_weight = max(weight_counts.items(), key=lambda x: x[1])[0]
+            # Evaluate weight threshold
+            proposed_weight = None
+            if matches:
+                proposed_weight = evaluate_weight_threshold(matches, current_confirmed_weight, league, state, gender)
+            
+            # Determine if weight change is needed
+            if proposed_weight and proposed_weight != current_confirmed_weight:
+                # Check if wrestler is ranked
+                is_ranked = is_wrestler_ranked(wrestler_id, current_confirmed_weight, season, league, state, gender, data_dir)
+                
+                if is_ranked:
+                    # Ranked wrestler: check if new match exists
+                    most_recent_match_date = get_most_recent_match_date(matches)
+                    
+                    # Check if we need to prompt (new match exists OR never reviewed)
+                    needs_prompt = False
+                    if not last_reviewed_date:
+                        needs_prompt = True
+                    elif most_recent_match_date:
+                        # Compare dates properly
+                        if compare_dates(most_recent_match_date, last_reviewed_date) > 0:
+                            needs_prompt = True
+                    
+                    if needs_prompt:
+                        # Prompt for confirmation
+                        # Get team wrestlers for context
+                        team_name = wrestler_info.get('team', '')
+                        team_wrestlers_dict = {
+                            wid: info for wid, info in all_wrestlers.items()
+                            if info.get('team') == team_name
+                        }
+                        
+                        confirmed_weight, reviewed_date = prompt_weight_confirmation(
+                            wrestler_info,
+                            current_confirmed_weight,
+                            proposed_weight,
+                            matches,
+                            team_wrestlers_dict,
+                            league,
+                            state,
+                            gender,
+                            season,
+                            data_dir
+                        )
+                        
+                        # Update confirmation state
+                        weight_confirmations[wrestler_id] = {
+                            'confirmed_weight': confirmed_weight,
+                            'last_reviewed_match_date': reviewed_date
+                        }
+                        
+                        # Save immediately after confirmation to preserve state if interrupted
+                        save_weight_confirmations(weight_confirmations, season, league, state, gender, data_dir)
+                        
+                        assigned_weight = confirmed_weight
+                    else:
+                        # No new match, keep current confirmed weight
+                        assigned_weight = current_confirmed_weight
+                else:
+                    # Unranked wrestler: auto-apply weight change
+                    assigned_weight = proposed_weight
+                    # Update confirmation state
+                    most_recent_match_date = get_most_recent_match_date(matches)
+                    weight_confirmations[wrestler_id] = {
+                        'confirmed_weight': proposed_weight,
+                        'last_reviewed_match_date': most_recent_match_date or ''
+                    }
+                    # Save immediately for unranked auto-applies too (in case of interruption)
+                    save_weight_confirmations(weight_confirmations, season, league, state, gender, data_dir)
             else:
+                # No threshold met or no change needed
+                assigned_weight = current_confirmed_weight
+        else:
+            # NCAA or non-HS: use original logic
+            if len(matches) == 0:
+                # No matches: use primary weight (already normalized)
                 assigned_weight = primary_weight
+            elif len(matches) < 5:
+                # Less than 5 matches: use most recent weight
+                # Sort by date (most recent first)
+                sorted_matches = sorted(matches, key=lambda x: parse_date(x[2]), reverse=True)
+                assigned_weight = sorted_matches[0][1] if sorted_matches else primary_weight
+            else:
+                # 5 or more matches: use most common weight in last 5 matches
+                # Sort by date (most recent first) and take last 5
+                sorted_matches = sorted(matches, key=lambda x: parse_date(x[2]), reverse=True)
+                last_5 = sorted_matches[:5]
+                
+                # Count weights in last 5 matches
+                weight_counts = defaultdict(int)
+                for _, match_weight, _ in last_5:
+                    weight_counts[match_weight] += 1
+                
+                # Get most common weight
+                if weight_counts:
+                    assigned_weight = max(weight_counts.items(), key=lambda x: x[1])[0]
+                else:
+                    assigned_weight = primary_weight
         
-        # Temporary debug for Evan Mougalian
-        if wrestler_info.get("name") == "Evan Mougalian":
-            debug_list = [(mw, d) for _, mw, d in matches]
-            print(f"[DEBUG] Evan Mougalian: primary={primary_weight}, assigned={assigned_weight}, matches={debug_list}")
+        # Normalize assigned weight one more time to ensure consistency
+        assigned_weight = normalize_weight_class(assigned_weight, league, state, gender) or assigned_weight
 
         wrestler_weight_class[wrestler_id] = assigned_weight
+        
+        # Calculate last match date across ALL weight classes for inactive detection
+        # This is stored in wrestler_info so it's available in relationships and matrix
+        most_recent_match_date_str = get_most_recent_match_date(matches)
+        if most_recent_match_date_str:
+            # Parse MM/DD/YYYY string to date object
+            try:
+                most_recent_date = datetime.strptime(most_recent_match_date_str, "%m/%d/%Y").date()
+                # Store as ISO format string (YYYY-MM-DD) for consistency
+                wrestler_info['last_match_date'] = most_recent_date.isoformat()
+            except (ValueError, TypeError):
+                wrestler_info['last_match_date'] = None
+        else:
+            wrestler_info['last_match_date'] = None
+    
+    # Save weight confirmations (HS only)
+    if league == 'hs':
+        save_weight_confirmations(weight_confirmations, season, league, state, gender, data_dir)
     
     # Add wrestlers to their assigned weight classes
+    # Note: Synthetic opponents are included here for relationship building (common opponent analysis)
+    # but will be filtered out when generating rankings matrices
     for wrestler_id, assigned_weight in wrestler_weight_class.items():
         if assigned_weight:
             if assigned_weight not in weight_classes:
@@ -428,7 +1294,9 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
         for match in wc_data['matches']:
             match_wc = match['weight_class']  # The weight class the match was at
             # Create unique key for deduplication across weight classes
-            match_key = (match['wrestler1_id'], match['wrestler2_id'], match['date'], match['winner_id'])
+            # Use normalized result type to allow different result types while deduplicating minor variations
+            normalized_result = normalize_result_type(match.get('result', ''))
+            match_key = (match['wrestler1_id'], match['wrestler2_id'], match['date'], normalized_result)
             
             # Only add if we haven't seen this match before
             if match_key not in all_matches_unique:
@@ -458,7 +1326,10 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
                 # Include match if at least one wrestler is assigned to this weight class
                 if w1_id in wrestler_ids_in_wc or w2_id in wrestler_ids_in_wc:
                     # Create a unique match ID to avoid duplicates
-                    match_id = f"{w1_id}_{w2_id}_{match.get('date', '')}_{match.get('result', '')}"
+                    # Use normalized IDs (min/max) to match the format used when storing matches
+                    w1_norm = min(w1_id, w2_id)
+                    w2_norm = max(w1_id, w2_id)
+                    match_id = f"{w1_norm}_{w2_norm}_{match.get('date', '')}_{match.get('result', '')}"
                     
                     if match_id not in seen_match_ids:
                         filtered_weight_classes[assigned_wc]['matches'].append(match)
@@ -467,31 +1338,53 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
     weight_classes = filtered_weight_classes
     
     # Convert defaultdict to regular dict and filter out empty weight classes
+    # For HS Boys and Girls, only keep the standard weight classes
     result = {}
     for wc, data in weight_classes.items():
         if data['wrestlers']:  # Only include weight classes with wrestlers
+            # For KY HS Boys, filter to only standard weights
+            if league == 'hs' and state and state.upper() == 'KY' and gender == 'boys':
+                if wc not in [str(w) for w in KY_HS_BOYS_WEIGHTS]:
+                    # Skip non-standard weights for HS Boys
+                    continue
+            # For KY HS Girls, filter to only standard weights
+            elif league == 'hs' and state and state.upper() == 'KY' and gender == 'girls':
+                if wc not in [str(w) for w in KY_HS_GIRLS_WEIGHTS]:
+                    # Skip non-standard weights for HS Girls
+                    continue
             result[wc] = {
                 'wrestlers': data['wrestlers'],
                 'matches': data['matches']
             }
     
     # Print summary
+    # Count only non-synthetic wrestlers for summary (these are the rankable wrestlers)
+    non_synthetic_count = sum(1 for w in all_wrestlers.values() if not w.get('is_synthetic', False))
+    synthetic_count = sum(1 for w in all_wrestlers.values() if w.get('is_synthetic', False))
     print(f"\nData Summary:")
-    print(f"Total wrestlers: {len(all_wrestlers)}")
+    print(f"Total wrestlers: {non_synthetic_count} (rankable)")
+    if synthetic_count > 0:
+        print(f"Out-of-state opponents: {synthetic_count} (included in relationships for common opponent analysis, excluded from rankings)")
+    
+    # Count rankable wrestlers per weight class (excluding synthetic)
     for wc in sorted(result.keys()):
-        wrestler_count = len(result[wc]['wrestlers'])
+        rankable_wrestlers = [w for w in result[wc]['wrestlers'].values() if not w.get('is_synthetic', False)]
+        wrestler_count = len(rankable_wrestlers)
         match_count = len(result[wc]['matches'])
         print(f"  {wc}: {wrestler_count} wrestlers, {match_count} matches")
     
     return result
 
 
-def load_season_data(season: int) -> Dict[str, Dict]:
+def load_season_data(season: int, league: str = 'ncaa', state: str = None, gender: str = None) -> Dict[str, Dict]:
     """
     Main function to load all data for a season.
     
     Args:
         season: Season year (e.g., 2026)
+        league: League type ('ncaa' or 'hs')
+        state: State code (required for HS)
+        gender: Gender ('boys' or 'girls', required for HS)
         
     Returns:
         Dictionary mapping weight_class -> {
@@ -499,43 +1392,46 @@ def load_season_data(season: int) -> Dict[str, Dict]:
             'matches': [match_info]
         }
     """
-    print(f"Loading data for season {season}...")
+    league_label = f"{league.upper()}" if league == 'ncaa' else f"{state} HS {gender.capitalize()}" if league == 'hs' else league
+    print(f"Loading data for season {season} ({league_label})...")
     
     # Load team data
-    teams = load_team_data(season)
+    teams = load_team_data(season, league=league, state=state, gender=gender)
     
     if not teams:
-        raise ValueError(f"No team data found for season {season}")
+        raise ValueError(f"No team data found for season {season} ({league_label})")
     
-    # Extract wrestlers and matches (pass season for match overrides)
-    data_by_weight = extract_wrestlers_and_matches(teams, season=season)
+    # Extract wrestlers and matches (pass season and league info for match overrides)
+    data_by_weight = extract_wrestlers_and_matches(teams, season=season, league=league, state=state, gender=gender)
     
     return data_by_weight
 
 
 def dedupe_matches_across_weights(data: Dict[str, Dict]) -> None:
     """
-    Remove duplicate matches that appear in multiple weight classes.
+    Remove duplicate matches WITHIN each weight class, but allow the same match
+    to appear in multiple weight classes if it involves wrestlers from different classes.
+
+    This is important for common opponent analysis - we need cross-weight-class matches
+    to appear in all relevant weight classes.
 
     Deduplication key is based on:
       - date
       - unordered pair of wrestler IDs
+      - normalized result type
 
-    Note: We use (date, pair) as the identity key, not including winner_id or result,
-    because the same match (same wrestlers, same date) should only appear once,
-    regardless of which weight class file it's in or what the result was.
-    
-    This ensures that if a match appears in multiple weight classes (which shouldn't
-    happen but could due to data issues), or if it appears in both team files with
-    different original results that get unified by an override, we only keep one copy.
+    Note: We use (date, pair, normalized_result_type) as the identity key to allow
+    multiple matches between the same wrestlers on the same date with different result types
+    (e.g., Fall vs M. For.), while still deduplicating the same match appearing multiple
+    times within the SAME weight class (e.g., from both team files with minor variations).
 
-    This keeps the first occurrence encountered and drops later duplicates,
-    so downstream tools that scan all weight_class_*.json files don't
-    double-count the same bout.
+    IMPORTANT: We do NOT deduplicate across weight classes - the same match can and should
+    appear in multiple weight classes if it involves wrestlers from different classes.
+    This allows common opponent relationships to work across weight classes.
     """
-    seen = set()
     for wc, wc_data in data.items():
         matches = wc_data.get("matches", [])
+        seen = set()  # Track seen matches WITHIN this weight class only
         new_matches = []
         for m in matches:
             w1 = m.get("wrestler1_id")
@@ -543,20 +1439,22 @@ def dedupe_matches_across_weights(data: Dict[str, Dict]) -> None:
             if not w1 or not w2:
                 continue
             pair = tuple(sorted([w1, w2]))
-            # Use just (date, pair) as the identity key
+            # Use (date, pair, normalized_result_type) as the identity key
             # This matches the identity key used in extract_wrestlers_and_matches
+            normalized_result = normalize_result_type(m.get("result", ""))
             key = (
                 m.get("date"),
                 pair,
+                normalized_result,
             )
             if key in seen:
-                continue
+                continue  # Skip duplicate within this weight class
             seen.add(key)
             new_matches.append(m)
         wc_data["matches"] = new_matches
 
 
-def save_loaded_data(data: Dict[str, Dict], season: int, output_dir: str = "mt/rankings_data"):
+def save_loaded_data(data: Dict[str, Dict], season: int, output_dir: str = "mt/rankings_data", league: str = 'ncaa', state: str = None, gender: str = None):
     """
     Save the loaded data to JSON files for inspection.
     
@@ -564,8 +1462,16 @@ def save_loaded_data(data: Dict[str, Dict], season: int, output_dir: str = "mt/r
         data: Data dictionary from load_season_data
         season: Season year
         output_dir: Directory to save files
+        league: League type ('ncaa' or 'hs')
+        state: State code (required for HS)
+        gender: Gender ('boys' or 'girls', required for HS)
     """
-    output_path = Path(output_dir) / str(season)
+    # Setup output path based on league type
+    if league == 'hs':
+        state_lower = state.lower() if state else 'ky'
+        output_path = Path(output_dir) / f"hs_{state_lower}_{gender}" / str(season)
+    else:  # ncaa
+        output_path = Path(output_dir) / str(season)
     output_path.mkdir(parents=True, exist_ok=True)
     
     # First, de-duplicate matches across all weight classes so that any given
@@ -574,8 +1480,11 @@ def save_loaded_data(data: Dict[str, Dict], season: int, output_dir: str = "mt/r
     
     # Apply match overrides AFTER deduplication
     # This ensures overrides are applied to the final deduplicated matches
-    apply_match_overrides(data, season, output_dir)
-    
+    apply_match_overrides(data, season, output_dir, league=league, state=state, gender=gender)
+    # Remove matches that have a removal override (so they disappear from matrix and profiles)
+    removal_specs = load_match_removal_specs(season, output_dir, league=league, state=state, gender=gender)
+    apply_match_removals(data, removal_specs)
+
     # Save summary file
     summary = {
         'season': season,
@@ -613,9 +1522,26 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Load wrestling data from processed JSON files')
     parser.add_argument('-season', type=int, required=True, help='Season year (e.g., 2026)')
     parser.add_argument('-save', action='store_true', help='Save loaded data to JSON files for inspection')
+    parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
+                        help='League type: ncaa (default) or hs')
+    parser.add_argument('-state', type=str, help='State code (required when league=hs, currently only KY supported)')
+    parser.add_argument('-gender', type=str, choices=['boys', 'girls'],
+                        help='Gender: boys or girls (required when league=hs)')
     args = parser.parse_args()
     
-    data = load_season_data(args.season)
+    # Validate HS parameters
+    if args.league == 'hs':
+        if not args.state:
+            raise ValueError("-state is required when -league=hs")
+        state_upper = args.state.upper()
+        if state_upper != 'KY':
+            raise ValueError(f"Only KY is currently supported for HS. Got: {args.state}")
+        if not args.gender:
+            raise ValueError("-gender is required when -league=hs")
+        if args.gender not in ['boys', 'girls']:
+            raise ValueError(f"-gender must be 'boys' or 'girls'. Got: {args.gender}")
+    
+    data = load_season_data(args.season, league=args.league, state=args.state, gender=args.gender)
     
     # Print a sample of the data structure
     if data:
@@ -648,5 +1574,5 @@ if __name__ == "__main__":
     
     # Save data if requested
     if args.save:
-        save_loaded_data(data, args.season)
+        save_loaded_data(data, args.season, league=args.league, state=args.state, gender=args.gender)
 

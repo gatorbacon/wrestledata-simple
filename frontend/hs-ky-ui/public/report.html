@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact KentuckyMat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+  <script src="/js/analytics.js"></script>
+</head>
+<body>
+  <script src="/header.js"></script>
+  <div class="page-container">
+    <header class="header">
+      <h1>Contact KentuckyMat</h1>
+    </header>
+
+    <section class="section">
+      <div id="form-success" style="display: none; padding: 2em; background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 4px; text-align: center;">
+        <h2 style="color: var(--text-main); margin-bottom: 0.5em;">Thank You</h2>
+        <p style="color: var(--text-secondary); line-height: 1.6;">
+          Your submission has been received. We'll review it and get back to you if needed.
+        </p>
+      </div>
+
+      <p id="form-intro" style="margin-bottom: 2em; color: var(--text-secondary); line-height: 1.6;">
+        Use this form to report a missing match, ask about a ranking, or get in touch.
+        Rankings are based on recorded match data from TrackWrestling.
+      </p>
+
+      <!-- Form submits to Formspree; replace YOUR_FORMSPREE_FORM_ID with your form ID from https://formspree.io -->
+      <form
+        id="report-form"
+        action="https://formspree.io/f/xzdappzg"
+        method="POST"
+        style="max-width: 600px;"
+      >
+        <input type="hidden" name="_next" id="formspree-next" value="" />
+
+        <!-- Required Fields -->
+        <div style="margin-bottom: 1.5em;">
+          <label for="name" style="display: block; margin-bottom: 0.5em; font-weight: 600; color: var(--text-main);">
+            Your Name (required)
+          </label>
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            required 
+            style="width: 100%; padding: 0.75em; border: 1px solid var(--border-light); border-radius: 4px; font-size: 1em; background: var(--bg-card); color: var(--text-main);"
+          />
+        </div>
+
+        <div style="margin-bottom: 1.5em;">
+          <label for="reason" style="display: block; margin-bottom: 0.5em; font-weight: 600; color: var(--text-main);">
+            Reason for Contact (required)
+          </label>
+          <select 
+            id="reason" 
+            name="reason" 
+            required 
+            style="width: 100%; padding: 0.75em; border: 1px solid var(--border-light); border-radius: 4px; font-size: 1em; background: var(--bg-card); color: var(--text-main);"
+          >
+            <option value="">— Select —</option>
+            <option value="Missing match result">Missing match result</option>
+            <option value="Ranking clarification">Ranking clarification</option>
+            <option value="Data correction">Data correction</option>
+            <option value="General question">General question</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div style="margin-bottom: 1.5em;">
+          <label for="wrestler-names" style="display: block; margin-bottom: 0.5em; font-weight: 600; color: var(--text-main);">
+            Wrestler Name(s) (if applicable)
+          </label>
+          <input 
+            type="text" 
+            id="wrestler-names" 
+            name="wrestler-names" 
+            placeholder="e.g. John Smith or John Smith vs Jane Doe"
+            style="width: 100%; padding: 0.75em; border: 1px solid var(--border-light); border-radius: 4px; font-size: 1em; background: var(--bg-card); color: var(--text-main);"
+          />
+        </div>
+
+        <div style="margin-bottom: 1.5em;">
+          <label for="schools" style="display: block; margin-bottom: 0.5em; font-weight: 600; color: var(--text-main);">
+            School(s) (if applicable)
+          </label>
+          <input 
+            type="text" 
+            id="schools" 
+            name="schools" 
+            placeholder="e.g. Ballard, Union County"
+            style="width: 100%; padding: 0.75em; border: 1px solid var(--border-light); border-radius: 4px; font-size: 1em; background: var(--bg-card); color: var(--text-main);"
+          />
+        </div>
+
+        <!-- Match Details (only if reporting a match) -->
+        <p style="margin: 1.5em 0 0.75em; font-size: 0.9375rem; font-weight: 600; color: var(--text-secondary);">
+          Match Details (only if reporting a match)
+        </p>
+        <div style="margin-bottom: 1.5em;">
+          <label for="match-date" style="display: block; margin-bottom: 0.5em; font-weight: 600; color: var(--text-main);">
+            Match Date <span style="color: var(--text-secondary); font-weight: normal;">(optional)</span>
+          </label>
+          <input 
+            type="date" 
+            id="match-date" 
+            name="match-date" 
+            style="width: 100%; padding: 0.75em; border: 1px solid var(--border-light); border-radius: 4px; font-size: 1em; background: var(--bg-card); color: var(--text-main);"
+          />
+        </div>
+
+        <div style="margin-bottom: 1.5em;">
+          <label for="event" style="display: block; margin-bottom: 0.5em; font-weight: 600; color: var(--text-main);">
+            Event / Tournament <span style="color: var(--text-secondary); font-weight: normal;">(optional)</span>
+          </label>
+          <input 
+            type="text" 
+            id="event" 
+            name="event" 
+            placeholder="e.g., State Tournament, Regional Championship"
+            style="width: 100%; padding: 0.75em; border: 1px solid var(--border-light); border-radius: 4px; font-size: 1em; background: var(--bg-card); color: var(--text-main);"
+          />
+        </div>
+
+        <div style="margin-bottom: 1.5em;">
+          <label for="result" style="display: block; margin-bottom: 0.5em; font-weight: 600; color: var(--text-main);">
+            Result <span style="color: var(--text-secondary); font-weight: normal;">(optional)</span>
+          </label>
+          <input 
+            type="text" 
+            id="result" 
+            name="result" 
+            placeholder="e.g., Fall 3:45, Decision 8-3"
+            style="width: 100%; padding: 0.75em; border: 1px solid var(--border-light); border-radius: 4px; font-size: 1em; background: var(--bg-card); color: var(--text-main);"
+          />
+        </div>
+
+        <div style="margin-bottom: 1.5em;">
+          <label for="message" style="display: block; margin-bottom: 0.5em; font-weight: 600; color: var(--text-main);">
+            Message / Explanation (optional)
+          </label>
+          <textarea 
+            id="message" 
+            name="message" 
+            rows="5" 
+            placeholder="Provide any additional details or context..."
+            style="width: 100%; padding: 0.75em; border: 1px solid var(--border-light); border-radius: 4px; font-size: 1em; background: var(--bg-card); color: var(--text-main); font-family: inherit; resize: vertical;"
+          ></textarea>
+        </div>
+
+        <div style="margin-bottom: 1.5em;">
+          <label for="email" style="display: block; margin-bottom: 0.5em; font-weight: 600; color: var(--text-main);">
+            Your Email (optional, for follow-up)
+          </label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="you@email.com"
+            style="width: 100%; padding: 0.75em; border: 1px solid var(--border-light); border-radius: 4px; font-size: 1em; background: var(--bg-card); color: var(--text-main);"
+          />
+        </div>
+
+        <button 
+          type="submit" 
+          style="padding: 0.875em 2em; background: var(--accent-primary); color: white; border: none; border-radius: 4px; font-size: 1em; font-weight: 600; cursor: pointer; transition: background 0.2s;"
+          onmouseover="this.style.background='var(--accent-primary-hover)'"
+          onmouseout="this.style.background='var(--accent-primary)'"
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+  </div>
+  <script src="/footer.js"></script>
+  <script>
+    // Redirect back to this page with ?success=true after Formspree submission
+    (function() {
+      var next = document.getElementById('formspree-next');
+      if (next) next.value = window.location.origin + '/report.html?success=true';
+    })();
+    // Show in-page thank you when redirected with ?success=true
+    if (window.location.search.includes('success=true')) {
+      const successDiv = document.getElementById('form-success');
+      const introP = document.getElementById('form-intro');
+      const form = document.getElementById('report-form');
+      if (successDiv && introP && form) {
+        successDiv.style.display = 'block';
+        introP.style.display = 'none';
+        form.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>
+

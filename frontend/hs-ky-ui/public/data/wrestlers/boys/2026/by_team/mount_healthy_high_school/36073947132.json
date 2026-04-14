@@ -1,0 +1,80 @@
+{
+  "wrestler_id": "36073947132",
+  "name": "Prince Walker",
+  "team": "Mount Healthy High School",
+  "team_slug": "mount_healthy_high_school",
+  "team_rank": null,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": null,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 100.0,
+    "df_plus": 100.0,
+    "apr_plus": 100.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "35528793132",
+      "opponent_rank": 92,
+      "opponent_name": "Jackson Turner",
+      "method": "Fall 0:59"
+    },
+    "worst_loss": {
+      "opponent_id": "35035536132",
+      "opponent_rank": 122,
+      "opponent_name": "Charles Hall",
+      "method": "Fall 0:56"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35035536132",
+      "opponent_name": "Charles Hall",
+      "opponent_team": "Boone County",
+      "opponent_team_rank": 60,
+      "opponent_weight": 157,
+      "opponent_rank": 122,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:56",
+      "event": "Sycamore Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35528793132",
+      "opponent_name": "Jackson Turner",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": 7,
+      "opponent_weight": 190,
+      "opponent_rank": 92,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:59",
+      "event": "Derrick Davidson Invitational"
+    }
+  ],
+  "profile_generated_at": "2026-04-04"
+}
