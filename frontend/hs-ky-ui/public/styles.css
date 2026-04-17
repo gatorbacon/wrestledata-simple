@@ -6200,14 +6200,32 @@ table a:hover {
   text-align: center;
   padding-top: 0.5em;
 }
-.home-specialty-link {
+.home-description {
+  text-align: center;
+  padding: 2em 1em 1em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.home-description p {
   font-size: 0.875rem;
   color: var(--text-secondary);
+  line-height: 1.6;
+}
+.home-specialty-link {
+  display: inline-block;
+  padding: 0.65em 2em;
+  border-radius: 3px;
+  border: 1px solid #b0bac8;
+  background: #f0f3f7;
+  color: #374151;
+  font-size: 0.875rem;
+  font-weight: 500;
   text-decoration: none;
+  transition: filter 0.15s;
 }
 .home-specialty-link:hover {
-  color: var(--text-main);
-  text-decoration: underline;
+  filter: brightness(0.95);
+  text-decoration: none;
 }
 
 /* Mobile */

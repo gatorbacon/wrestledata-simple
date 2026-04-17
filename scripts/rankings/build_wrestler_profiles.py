@@ -642,6 +642,7 @@ def build_match_list(
     team_rank_by_name: Dict[str, int],
     match_mv_impact_lookup: Optional[Dict] = None,
     supplemental_opponent_info: Optional[Dict] = None,
+    career_lookup: Optional[Dict[str, str]] = None,
 ) -> List[Dict]:
     """Build formatted match list for JSON output."""
     match_list = []
@@ -774,9 +775,12 @@ def build_match_list(
         # Get weight class from match data
         match_weight = match.get("weight_class")
         
+        opp_career_id = career_lookup.get(str(opp_id)) if career_lookup and opp_id else None
+
         match_entry = {
             "date": date_formatted,
             "opponent_id": opp_id if opp_id else None,
+            "opponent_career_id": opp_career_id,
             "opponent_name": opp_name,
             "opponent_team": opp_team,
             "opponent_team_rank": opp_team_rank,
@@ -1148,6 +1152,7 @@ def build_wrestler_profile(
     match_list = build_match_list(
         matches, wrestler_id, rank_by_id, all_wrestlers, team_rank_by_name, match_mv_impact_lookup,
         supplemental_opponent_info=supplemental_opponent_info,
+        career_lookup=career_lookup,
     )
     
     # Get Mat Value data if available

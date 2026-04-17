@@ -48,6 +48,7 @@
     {
       "date": "2026-02-12",
       "opponent_id": "35398469132",
+      "opponent_career_id": "career_000359",
       "opponent_name": "Alexandra Cortez",
       "opponent_team": "Henry Clay",
       "opponent_team_rank": 1,
@@ -63,6 +64,7 @@
     {
       "date": "2026-02-07",
       "opponent_id": "35599269132",
+      "opponent_career_id": "career_000520",
       "opponent_name": "Kaylee Parriman",
       "opponent_team": "Mccreary Central",
       "opponent_team_rank": 46,
@@ -78,6 +80,7 @@
     {
       "date": "2025-12-19",
       "opponent_id": "35333477132",
+      "opponent_career_id": "career_000457",
       "opponent_name": "ERYAH REESE",
       "opponent_team": "Madison Central",
       "opponent_team_rank": 22,
@@ -93,6 +96,7 @@
     {
       "date": "2025-12-19",
       "opponent_id": "35404896132",
+      "opponent_career_id": "career_000433",
       "opponent_name": "Elene Niyogoshima",
       "opponent_team": "Lafayette",
       "opponent_team_rank": 41,
@@ -108,6 +112,7 @@
     {
       "date": "2025-12-13",
       "opponent_id": "35668842132",
+      "opponent_career_id": "career_000165",
       "opponent_name": "Kymani Ealom",
       "opponent_team": "Central",
       "opponent_team_rank": 14,
@@ -123,6 +128,7 @@
     {
       "date": "2025-12-13",
       "opponent_id": "35668839132",
+      "opponent_career_id": "career_000166",
       "opponent_name": "Fatou Gueye",
       "opponent_team": "Central",
       "opponent_team_rank": 14,
@@ -138,6 +144,7 @@
     {
       "date": "2025-12-13",
       "opponent_id": "35404896132",
+      "opponent_career_id": "career_000433",
       "opponent_name": "Elene Niyogoshima",
       "opponent_team": "Lafayette",
       "opponent_team_rank": 41,
@@ -153,6 +160,7 @@
     {
       "date": "2025-12-13",
       "opponent_id": "OUTSTATE_4d2e029dd0de",
+      "opponent_career_id": null,
       "opponent_name": "Daytona Tripp",
       "opponent_team": "Jeffersonville",
       "opponent_team_rank": null,
@@ -170,7 +178,9 @@
     "career_id": "career_000434",
     "canonical_name": "Camila Velasco",
     "seasons": [
-      2026
+      2026,
+      2025,
+      2024
     ]
   },
   "season_summary": [
@@ -181,12 +191,28 @@
       "record": "5-3",
       "regional_place": null,
       "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Lafayette",
+      "record": "23-9",
+      "regional_place": 2,
+      "state_place": 7
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Lafayette",
+      "record": "2-1",
+      "regional_place": 2,
+      "state_place": 7
     }
   ],
   "career_record": {
-    "wins": 5,
-    "losses": 3,
-    "win_pct": 0.625
+    "wins": 30,
+    "losses": 13,
+    "win_pct": 0.698
   },
-  "profile_generated_at": "2026-04-05"
+  "profile_generated_at": "2026-04-16"
 }

@@ -648,7 +648,9 @@ function safe(value, formatter) {
         oppTd.className = "name-cell";
         if (match.opponent_ky && match.opponent_id) {
           const a = document.createElement("a");
-          a.href = buildPageURL("wrestler.html", gender, { id: match.opponent_id, season: match.season });
+          a.href = match.opponent_career_id
+            ? buildPageURL("wrestler.html", gender, { career_id: match.opponent_career_id })
+            : buildPageURL("wrestler.html", gender, { id: match.opponent_id, season: match.season });
           a.textContent = safe(match.opponent_name || "Unknown");
           oppTd.appendChild(a);
         } else {
@@ -738,7 +740,9 @@ function safe(value, formatter) {
         nameSpan.className = "match-card-name";
         if (match.opponent_ky && match.opponent_id) {
           const a = document.createElement("a");
-          a.href = buildPageURL("wrestler.html", gender, { id: match.opponent_id, season: match.season });
+          a.href = match.opponent_career_id
+            ? buildPageURL("wrestler.html", gender, { career_id: match.opponent_career_id })
+            : buildPageURL("wrestler.html", gender, { id: match.opponent_id, season: match.season });
           a.textContent = safe(match.opponent_name || "Unknown");
           nameSpan.appendChild(a);
         } else {
