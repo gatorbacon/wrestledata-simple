@@ -133,6 +133,13 @@ def main():
         help="State code (required when league=hs, e.g., 'KY')",
     )
     parser.add_argument(
+        "-gender",
+        type=str,
+        default=None,
+        choices=["men", "women"],
+        help="Gender for NCAA: men or women (default: men). Not used for HS.",
+    )
+    parser.add_argument(
         "--rankings-dir",
         type=str,
         default=None,
@@ -248,10 +255,11 @@ def main():
     
     else:
         # NCAA mode
+        ncaa_gender = args.gender or 'men'
         if args.rankings_dir:
             rankings_dir = args.rankings_dir
         else:
-            rankings_dir = "mt/rankings_data"
+            rankings_dir = f"mt/rankings_data/ncaa_{ncaa_gender}"
         
         if args.wrestlers_dir:
             wrestlers_dir = args.wrestlers_dir

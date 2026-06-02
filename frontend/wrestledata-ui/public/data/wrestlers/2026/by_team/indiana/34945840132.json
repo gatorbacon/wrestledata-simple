@@ -1,0 +1,107 @@
+{
+  "wrestler_id": "34945840132",
+  "name": "Nick Pavlechko",
+  "team": "Indiana",
+  "team_slug": "indiana",
+  "team_rank": 25,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": 152,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.5,
+    "pa7": 4.0,
+    "pd7": -0.5,
+    "si_plus": 91.0,
+    "df_plus": 106.7,
+    "apr_plus": 93.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.965,
+      "matches": 2,
+      "rank_weight": 105,
+      "rank_overall": 1170,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34937323132",
+      "opponent_rank": 168,
+      "opponent_name": "Daniel Bittner",
+      "method": "Dec 5-4"
+    },
+    "worst_loss": {
+      "opponent_id": "34934407132",
+      "opponent_rank": 73,
+      "opponent_name": "BJ Russell",
+      "method": "M. For."
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34934407132",
+      "opponent_career_id": null,
+      "opponent_name": "BJ Russell",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 49,
+      "opponent_weight": 285,
+      "opponent_rank": 73,
+      "weight_class": "285",
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic"
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34937323132",
+      "opponent_career_id": null,
+      "opponent_name": "Daniel Bittner",
+      "opponent_team": "Harvard",
+      "opponent_team_rank": 58,
+      "opponent_weight": 285,
+      "opponent_rank": 168,
+      "weight_class": "285",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": 0.28
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34985676132",
+      "opponent_career_id": null,
+      "opponent_name": "Kade Sottolano",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 36,
+      "opponent_weight": 285,
+      "opponent_rank": 63,
+      "weight_class": "285",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "vs. Lock Haven",
+      "mv_impact": -2.2
+    }
+  ],
+  "profile_generated_at": "2026-06-02"
+}

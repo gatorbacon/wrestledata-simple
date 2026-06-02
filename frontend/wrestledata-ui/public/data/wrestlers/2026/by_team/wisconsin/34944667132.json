@@ -1,0 +1,107 @@
+{
+  "wrestler_id": "34944667132",
+  "name": "Julian George",
+  "team": "Wisconsin",
+  "team_slug": "wisconsin",
+  "team_rank": 38,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": 157,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 8.0,
+    "pa7": 2.0,
+    "pd7": 6.0,
+    "si_plus": 96.9,
+    "df_plus": 109.5,
+    "apr_plus": 98.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.207,
+      "matches": 3,
+      "rank_weight": 136,
+      "rank_overall": 1252,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34934624132",
+      "opponent_rank": 177,
+      "opponent_name": "Tyler Secoy",
+      "method": "Dec 8-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34970820132",
+      "opponent_rank": 76,
+      "opponent_name": "Tavius Hosley",
+      "method": "M. For."
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34941556132",
+      "opponent_career_id": null,
+      "opponent_name": "Brock Woodcock",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 47,
+      "opponent_weight": 165,
+      "opponent_rank": 28,
+      "weight_class": "165",
+      "result": "L",
+      "method": "INJ",
+      "score": null,
+      "duration": "5:42",
+      "event": "Cyclone Invitational",
+      "mv_impact": -4.22
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34970820132",
+      "opponent_career_id": null,
+      "opponent_name": "Tavius Hosley",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 47,
+      "opponent_weight": 165,
+      "opponent_rank": 76,
+      "weight_class": "165",
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Cyclone Invitational"
+    },
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34934624132",
+      "opponent_career_id": null,
+      "opponent_name": "Tyler Secoy",
+      "opponent_team": "North Dakota State",
+      "opponent_team_rank": 39,
+      "opponent_weight": 174,
+      "opponent_rank": 177,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-2",
+      "duration": "7:00",
+      "event": "vs. Wisconsin",
+      "mv_impact": 0.3
+    }
+  ],
+  "profile_generated_at": "2026-06-02"
+}

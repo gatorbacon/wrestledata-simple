@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": null,
+  "team_id": "maryland",
+  "team_name": "Maryland",
+  "name": "Maryland",
+  "abbreviation": "MD",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": null,
+  "location": {
+    "state": "MD",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gfafbpxdhg&teamId=758850150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-06-02T13:15:41.778538Z",
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34957603132",
+      "133": "34957585132",
+      "141": "34957650132",
+      "149": "34957645132",
+      "157": "34957589132",
+      "165": "34957598132",
+      "174": "34957583132",
+      "184": "34957586132",
+      "197": "34957597132",
+      "285": "34957601132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  }
+}

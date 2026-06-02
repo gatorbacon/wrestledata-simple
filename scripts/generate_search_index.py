@@ -290,8 +290,8 @@ def main():
         output_file = script_dir / "frontend/hs-ky-ui/public/search_index.js"
 
     else:  # ncaa — unchanged logic
-        wrestlers_index = script_dir / f"frontend/wrestledata-ui/public/wrestlers/{args.season}/index_wrestlers.json"
-        teams_index = script_dir / f"frontend/wrestledata-ui/public/wrestlers/{args.season}/index_teams.json"
+        wrestlers_index = script_dir / f"frontend/wrestledata-ui/public/data/wrestlers/{args.season}/index_wrestlers.json"
+        teams_index = script_dir / f"frontend/wrestledata-ui/public/data/wrestlers/{args.season}/index_teams.json"
         output_file = script_dir / "frontend/wrestledata-ui/public/search_index.js"
 
         print(f"Loading wrestlers from {wrestlers_index}...")
@@ -337,7 +337,7 @@ def main():
                     "name": team_name,
                     "secondary": "D1",
                     "url": team_slug_to_url(team_slug),
-                    "searchTokens": generate_search_tokens(team_name, team_slug=team_slug),
+                    "searchTokens": generate_search_tokens(team_name),
                 })
 
     print(f"\nTotal items: {len(search_index)}")

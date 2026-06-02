@@ -1,0 +1,69 @@
+{
+  "wrestler_id": "34935447132",
+  "name": "Brayden Leach",
+  "team": "Chattanooga",
+  "team_slug": "chattanooga",
+  "team_rank": 54,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 250,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.0,
+    "pa7": 6.0,
+    "pd7": -3.0,
+    "si_plus": 93.6,
+    "df_plus": 103.5,
+    "apr_plus": 97.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.653,
+      "matches": 1,
+      "rank_weight": 244,
+      "rank_overall": 2197,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34933365132",
+      "opponent_rank": 190,
+      "opponent_name": "Luke Robie",
+      "method": "Dec 6-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-04",
+      "opponent_id": "34933365132",
+      "opponent_career_id": null,
+      "opponent_name": "Luke Robie",
+      "opponent_team": "Virginia Tech",
+      "opponent_team_rank": 9,
+      "opponent_weight": 157,
+      "opponent_rank": 190,
+      "weight_class": "157",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-3",
+      "duration": "7:00",
+      "event": "Southern Scuffle",
+      "mv_impact": -5.65
+    }
+  ],
+  "profile_generated_at": "2026-06-02"
+}

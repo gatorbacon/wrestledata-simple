@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": null,
+  "team_id": "iowa",
+  "team_name": "Iowa",
+  "name": "Iowa",
+  "abbreviation": "IOWA",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": null,
+  "location": {
+    "state": "IA",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gfafbpxdhg&teamId=758830150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-06-02T13:15:41.763625Z",
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34962220132",
+      "133": "34962153132",
+      "141": "34962192132",
+      "149": "34962160132",
+      "157": "34962162132",
+      "165": "34962161132",
+      "174": "34962152132",
+      "184": "34962169132",
+      "197": "34962196132",
+      "285": "34962165132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  }
+}

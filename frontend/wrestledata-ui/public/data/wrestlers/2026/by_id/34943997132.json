@@ -1,0 +1,120 @@
+{
+  "wrestler_id": "34943997132",
+  "name": "Sampson Stillwell",
+  "team": "Missouri",
+  "team_slug": "missouri",
+  "team_rank": 13,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": 127,
+  "record": {
+    "overall": "0-4",
+    "vs_ranked": "0-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 3.43,
+    "pa7": 11.67,
+    "pd7": -8.23,
+    "si_plus": 97.3,
+    "df_plus": 98.1,
+    "apr_plus": 98.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.249,
+      "matches": 4,
+      "rank_weight": 162,
+      "rank_overall": 1814,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34934615132",
+      "opponent_rank": 87,
+      "opponent_name": "Drew Blackburn-Forst",
+      "method": "Fall 1:09"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-02-22",
+      "opponent_id": "34940702132",
+      "opponent_career_id": null,
+      "opponent_name": "Yonger Bastida",
+      "opponent_team": "Iowa State",
+      "opponent_team_rank": 8,
+      "opponent_weight": 285,
+      "opponent_rank": 2,
+      "weight_class": "285",
+      "result": "L",
+      "method": "TF",
+      "score": "22-6",
+      "duration": "5:45",
+      "event": "vs. Missouri",
+      "mv_impact": -1.49
+    },
+    {
+      "date": "2026-01-18",
+      "opponent_id": "34934615132",
+      "opponent_career_id": null,
+      "opponent_name": "Drew Blackburn-Forst",
+      "opponent_team": "North Dakota State",
+      "opponent_team_rank": 39,
+      "opponent_weight": 285,
+      "opponent_rank": 87,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:09",
+      "event": "Cyclone Open",
+      "mv_impact": -6.75
+    },
+    {
+      "date": "2026-01-04",
+      "opponent_id": "34955792132",
+      "opponent_career_id": null,
+      "opponent_name": "Koy Hopke",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 10,
+      "opponent_weight": 285,
+      "opponent_rank": 18,
+      "weight_class": "285",
+      "result": "L",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "2026 Soldier Salute",
+      "mv_impact": -1.57
+    },
+    {
+      "date": "2026-01-04",
+      "opponent_id": "34963120132",
+      "opponent_career_id": null,
+      "opponent_name": "Bradley Hill",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 30,
+      "opponent_weight": 285,
+      "opponent_rank": 71,
+      "weight_class": "285",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-3",
+      "duration": "7:00",
+      "event": "2026 Soldier Salute",
+      "mv_impact": -3.19
+    }
+  ],
+  "profile_generated_at": "2026-06-02"
+}

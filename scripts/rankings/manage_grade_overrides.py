@@ -40,6 +40,12 @@ from typing import Dict, List
 from load_data import load_team_data
 
 
+def league_dir_key(league, gender, state=None):
+    if league == 'hs':
+        return f"hs_{state.lower()}_{gender}"
+    return f"ncaa_{gender}"
+
+
 def search_wrestlers(teams: List[Dict], query: str) -> List[Dict]:
     """Return wrestlers whose names contain the query (case-insensitive)."""
     query_lower = query.lower()
@@ -119,13 +125,33 @@ def main() -> None:
         required=True,
         help="Season year (e.g., 2026)",
     )
+    parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
+                        help='League type: ncaa (default) or hs')
+    parser.add_argument('-state', type=str, help='State code (required when league=hs)')
+    parser.add_argument('-gender', type=str, choices=['boys', 'girls', 'men', 'women'],
+                        help='Gender: boys/girls (HS) or men/women (NCAA)')
 
     args = parser.parse_args()
 
-    overrides_path = Path("mt/rankings_data") / "grade_overrides.json"
+    if args.league == 'hs':
+        if not args.state:
+            raise ValueError("-state is required when -league=hs")
+        if args.state.upper() != 'KY':
+            raise ValueError(f"Only KY is currently supported for HS. Got: {args.state}")
+        if not args.gender:
+            raise ValueError("-gender is required when -league=hs")
+        if args.gender not in ['boys', 'girls']:
+            raise ValueError(f"-gender must be 'boys' or 'girls' for HS. Got: {args.gender}")
+    else:  # ncaa
+        if not args.gender:
+            raise ValueError("-gender is required when -league=ncaa")
+        if args.gender not in ['men', 'women']:
+            raise ValueError(f"-gender must be 'men' or 'women' for NCAA. Got: {args.gender}")
+
+    overrides_path = Path("mt/rankings_data") / league_dir_key(args.league, args.gender, args.state) / "grade_overrides.json"
 
     # Load all teams once for faster interactive searching
-    teams = load_team_data(args.season)
+    teams = load_team_data(args.season, league=args.league, state=args.state, gender=args.gender)
 
     print(
         f"Interactive grade override tool for season {args.season}.\n"

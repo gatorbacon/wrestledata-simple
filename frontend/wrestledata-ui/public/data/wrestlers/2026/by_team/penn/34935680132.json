@@ -1,0 +1,142 @@
+{
+  "wrestler_id": "34935680132",
+  "name": "Matthew Cruise",
+  "team": "Penn",
+  "team_slug": "penn",
+  "team_rank": 20,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": 144,
+  "record": {
+    "overall": "1-4",
+    "vs_ranked": "1-4",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.25,
+    "pa7": 7.5,
+    "pd7": -3.25,
+    "si_plus": 88.5,
+    "df_plus": 96.7,
+    "apr_plus": 97.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.969,
+      "matches": 5,
+      "rank_weight": 183,
+      "rank_overall": 1969,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34936039132",
+      "opponent_rank": 182,
+      "opponent_name": "Talan Hogan",
+      "method": "MD 13-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34948131132",
+      "opponent_rank": 155,
+      "opponent_name": "Sebastian Garibaldi",
+      "method": "Fall 6:21"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-09",
+      "opponent_id": "34952697132",
+      "opponent_career_id": null,
+      "opponent_name": "Calvin Lachman",
+      "opponent_team": "Lehigh",
+      "opponent_team_rank": 12,
+      "opponent_weight": 285,
+      "opponent_rank": 145,
+      "weight_class": "285",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-4",
+      "duration": "7:00",
+      "event": "David H. Lehman F&M Open",
+      "mv_impact": -4.61
+    },
+    {
+      "date": "2026-01-09",
+      "opponent_id": "34948131132",
+      "opponent_career_id": null,
+      "opponent_name": "Sebastian Garibaldi",
+      "opponent_team": "Princeton",
+      "opponent_team_rank": 32,
+      "opponent_weight": 285,
+      "opponent_rank": 155,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:21",
+      "event": "David H. Lehman F&M Open",
+      "mv_impact": -7.67
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "34936039132",
+      "opponent_career_id": null,
+      "opponent_name": "Talan Hogan",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 36,
+      "opponent_weight": 285,
+      "opponent_rank": 182,
+      "weight_class": "285",
+      "result": "W",
+      "method": "MD",
+      "score": "13-2",
+      "duration": "7:00",
+      "event": "Wilkes Open",
+      "mv_impact": 0.96
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34935961132",
+      "opponent_career_id": null,
+      "opponent_name": "Ethan Miller",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 36,
+      "opponent_weight": 285,
+      "opponent_rank": 147,
+      "weight_class": "285",
+      "result": "L",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "Keystone Classic",
+      "mv_impact": -5.33
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34985676132",
+      "opponent_career_id": null,
+      "opponent_name": "Kade Sottolano",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 36,
+      "opponent_weight": 285,
+      "opponent_rank": 63,
+      "weight_class": "285",
+      "result": "L",
+      "method": "MD",
+      "score": "12-0",
+      "duration": "7:00",
+      "event": "Keystone Classic",
+      "mv_impact": -3.2
+    }
+  ],
+  "profile_generated_at": "2026-06-02"
+}

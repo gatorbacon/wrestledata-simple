@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": null,
+  "team_id": "drexel",
+  "team_name": "Drexel",
+  "name": "Drexel",
+  "abbreviation": "DREX",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": null,
+  "location": {
+    "state": "PA",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gfafbpxdhg&teamId=758808150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-06-02T13:15:41.742468Z",
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34971895132",
+      "133": "34971892132",
+      "141": "34971900132",
+      "149": "34971917132",
+      "157": "34971891132",
+      "165": "34971896132",
+      "174": "34971902132",
+      "184": "34971901132",
+      "197": "34971903132",
+      "285": "34971914132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  }
+}

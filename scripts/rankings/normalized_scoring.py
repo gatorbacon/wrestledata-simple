@@ -47,6 +47,8 @@ from __future__ import annotations
 import argparse
 import math
 import re
+import sys
+import time
 from collections import defaultdict
 import json
 from pathlib import Path
@@ -1490,7 +1492,17 @@ def _compute_plus_metrics_for_all(
     effective_matches_APR_by_id: Dict[str, float] = {}  # Effective match weights for APR
 
     # v2: Compute APS7/APG7/APD7 using Weight-Q baselines, shrinkage, and match weights
+    _total_pop = len(matches_by_wrestler)
+    _done_pop = 0
+    _last_print = time.time()
+    print(f"  Computing metrics for {_total_pop} wrestlers...", flush=True)
     for wid_pop, mlist_pop in matches_by_wrestler.items():
+        _done_pop += 1
+        _now = time.time()
+        if _now - _last_print >= 10:
+            pct = 100 * _done_pop / _total_pop
+            print(f"  {_done_pop}/{_total_pop} wrestlers ({pct:.0f}%)...", flush=True)
+            _last_print = _now
         # Weighted contributions for v2
         aps7_weighted_sum = 0.0
         aps7_weight_sum = 0.0

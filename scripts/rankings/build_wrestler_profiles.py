@@ -197,9 +197,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "-gender",
         type=str,
-        required=True,
-        choices=["boys", "girls", "both"],
-        help="Gender: 'boys', 'girls', or 'both' (required)",
+        default=None,
+        choices=["boys", "girls", "both", "men", "women"],
+        help="Gender: boys/girls/both (HS) or men/women (NCAA, default: men)",
     )
     parser.add_argument(
         "-data_dir",
@@ -1512,11 +1512,12 @@ def main() -> None:
     
     else:
         # NCAA mode
+        ncaa_gender = args.gender or 'men'
         if args.data_dir:
             data_dir = args.data_dir
         else:
-            data_dir = "mt/rankings_data"
-        
+            data_dir = f"mt/rankings_data/ncaa_{ncaa_gender}"
+
         if args.output_dir:
             output_dir = Path(args.output_dir)
         else:

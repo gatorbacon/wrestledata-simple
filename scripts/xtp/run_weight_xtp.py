@@ -75,31 +75,63 @@ XTP_SIMPLE_POINTS_GIRLS = {
     16: 0.5,
 }
 
+# NCAA xTP_simple (FlowWrestling rank-based scoring, includes bonus)
+XTP_SIMPLE_POINTS_NCAA = {
+    1: 20.0,
+    2: 16.0,
+    3: 13.5,
+    4: 12.5,
+    5: 10.0,
+    6: 9.0,
+    7: 6.5,
+    8: 5.5,
+    9: 2.0,
+    10: 2.0,
+    11: 2.0,
+    12: 2.0,
+    13: 1.5,
+    14: 1.5,
+    15: 1.5,
+    16: 1.5,
+    17: 0.5,
+    18: 0.5,
+    19: 0.5,
+    20: 0.5,
+    21: 0.5,
+    22: 0.5,
+    23: 0.5,
+    24: 0.5,
+}
 
-def get_xtp_simple(rank: int, gender: str = None) -> float:
+
+def get_xtp_simple(rank: int, gender: str = None, league: str = 'ncaa') -> float:
     """
     Get xTP_simple points for a given starter rank.
-    
-    Uses gender-specific scoring tables:
-    - Boys (32-man bracket): Rank 1 = 30.0, Rank 2 = 24.0, etc.
-    - Girls (16-man bracket): Rank 1 = 28.0, Rank 2 = 24.0, etc.
-    
+
+    Uses league/gender-specific scoring tables:
+    - NCAA (33-man bracket): Rank 1 = 16.0, Rank 2 = 12.0, etc.
+    - HS Boys (32-man bracket): Rank 1 = 30.0, Rank 2 = 24.0, etc.
+    - HS Girls (16-man bracket): Rank 1 = 28.0, Rank 2 = 24.0, etc.
+
     Args:
-        rank: Starter-only statewide rank (1-based)
-        gender: Gender ('boys' or 'girls'). If None, defaults to boys table.
-    
+        rank: Starter-only rank (1-based)
+        gender: Gender ('boys' or 'girls'). Used for HS only.
+        league: League type ('ncaa' or 'hs'). Defaults to 'ncaa'.
+
     Returns:
         xTP_simple points
     """
     if rank is None or rank < 1:
         return 0.0
-    
-    # Select scoring table based on gender
-    if gender == 'girls':
+
+    # Select scoring table based on league and gender
+    if league == 'ncaa':
+        points_table = XTP_SIMPLE_POINTS_NCAA
+        max_rank = 24
+    elif gender == 'girls':
         points_table = XTP_SIMPLE_POINTS_GIRLS
         max_rank = 16
     else:
-        # Default to boys table (also used for NCAA/unspecified)
         points_table = XTP_SIMPLE_POINTS_BOYS
         max_rank = 24
     
@@ -407,9 +439,9 @@ def compute_xtp_for_weight(
         champ_prob = round(comps.get("champion_probability", 0.0), 3)
         final_prob = round(comps.get("finalist_probability", 0.0), 3)
         
-        # Calculate xTP_simple based on starter rank and gender
+        # Calculate xTP_simple based on starter rank, league, and gender
         rank = data["rank"]
-        xTP_simple = get_xtp_simple(rank, gender=gender)
+        xTP_simple = get_xtp_simple(rank, gender=gender, league=league)
         
         results.append({
             "wrestler_id": wrestler_id,
@@ -620,7 +652,7 @@ def main():
     parser.add_argument(
         "--rankings-dir",
         type=str,
-        default="mt/rankings_data",
+        default="frontend/wrestledata-ui/public/data/rankings",
         help="Directory containing rankings files"
     )
     parser.add_argument(

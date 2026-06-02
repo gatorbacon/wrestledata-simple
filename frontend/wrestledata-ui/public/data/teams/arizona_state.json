@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": null,
+  "team_id": "arizona_state",
+  "team_name": "Arizona State",
+  "name": "Arizona State",
+  "abbreviation": "ASU",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": null,
+  "location": {
+    "state": "AZ",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gfafbpxdhg&teamId=758764150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-06-02T13:15:41.704877Z",
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34943751132",
+      "133": "34944528132",
+      "141": "34943753132",
+      "149": "34943748132",
+      "157": "34943749132",
+      "165": "34943752132",
+      "174": "34943741132",
+      "184": "34943742132",
+      "197": "34944596132",
+      "285": "34944541132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  }
+}

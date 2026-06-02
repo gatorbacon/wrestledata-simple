@@ -1,0 +1,86 @@
+{
+  "wrestler_id": "34964877132",
+  "name": "Carlos Stanton",
+  "team": "Northern Colorado",
+  "team_slug": "northern_colorado",
+  "team_rank": 60,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": 304,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 2.0,
+    "pa7": 7.0,
+    "pd7": -5.0,
+    "si_plus": 89.9,
+    "df_plus": 102.6,
+    "apr_plus": 108.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.011,
+      "matches": 2,
+      "rank_weight": 237,
+      "rank_overall": 1978,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34941569132",
+      "opponent_rank": 206,
+      "opponent_name": "Donavon Allen",
+      "method": "Dec 7-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34936418132",
+      "opponent_career_id": null,
+      "opponent_name": "Casey Swiderski",
+      "opponent_team": "Oklahoma State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 149,
+      "opponent_rank": 10,
+      "weight_class": "149",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:43",
+      "event": "Cougar Clash",
+      "mv_impact": -4.49
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34941569132",
+      "opponent_career_id": null,
+      "opponent_name": "Donavon Allen",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 47,
+      "opponent_weight": 149,
+      "opponent_rank": 206,
+      "weight_class": "149",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-2",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": -3.53
+    }
+  ],
+  "profile_generated_at": "2026-06-02"
+}

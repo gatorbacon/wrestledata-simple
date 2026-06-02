@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NCAA Wrestling: 2025 Spend vs 2026 Tournament Points</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0f1117; color: #e2e8f0; padding: 24px; }
+  h1 { font-size: 22px; font-weight: 700; color: #f8fafc; margin-bottom: 6px; }
+  .subtitle { font-size: 13px; color: #94a3b8; margin-bottom: 8px; }
+  .note { font-size: 12px; color: #64748b; margin-bottom: 28px; }
+  .note span { color: #f59e0b; }
+  .chart-wrap { background: #1e2230; border-radius: 12px; padding: 24px; margin-bottom: 32px; }
+  canvas { max-height: 520px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { background: #1e2230; color: #94a3b8; font-weight: 600; text-align: left; padding: 10px 14px; border-bottom: 1px solid #2d3748; position: sticky; top: 0; }
+  th.num, td.num { text-align: right; }
+  tr:nth-child(even) { background: #161a24; }
+  tr:hover { background: #1e2230; }
+  td { padding: 9px 14px; border-bottom: 1px solid #1a1f2e; }
+  .zero { color: #475569; }
+  .cpp { font-weight: 600; }
+  .good  { color: #34d399; }
+  .ok    { color: #a3e635; }
+  .fair  { color: #fbbf24; }
+  .poor  { color: #f97316; }
+  .bad   { color: #f43f5e; }
+  .rank-badge { display: inline-block; width: 24px; text-align: center; font-weight: 700; color: #64748b; }
+  .section-header { font-size: 14px; font-weight: 700; color: #94a3b8; padding: 12px 14px; background: #0f1117; border-bottom: 1px solid #2d3748; }
+</style>
+</head>
+<body>
+
+<h1>NCAA Men's Wrestling — 2025 Program Spend vs 2026 Tournament Points</h1>
+<p class="subtitle">Total expenses (EADA 2025) vs team points scored at 2026 NCAA Championships</p>
+<p class="note">Only teams in the top-49 spenders are shown. <span>19 teams that scored points are missing expense data</span> (Stanford 67.5, Missouri 33.0, Lehigh 26.5, Columbia 25.0, Cornell 21.5, Penn 21.0, Princeton 20.0, American 16.0, Pitt 13.0, Rider 12.5, and others — mostly Ivy/small private).</p>
+
+<div class="chart-wrap">
+  <canvas id="chart"></canvas>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Team</th>
+      <th class="num">2025 Expenses</th>
+      <th class="num">2026 Pts</th>
+      <th class="num">Cost / Point</th>
+    </tr>
+  </thead>
+  <tbody id="tbody"></tbody>
+</table>
+
+<script>
+const DATA = [
+  { team: "Penn State",        expenses: 7865075, points: 181.5 },
+  { team: "Oklahoma State",    expenses: 5059818, points: 131.0 },
+  { team: "Nebraska",          expenses: 3064466, points: 100.5 },
+  { team: "Iowa",              expenses: 4023452, points: 92.5  },
+  { team: "Ohio State",        expenses: 3184904, points: 84.5  },
+  { team: "Virginia Tech",     expenses: 3011021, points: 41.5  },
+  { team: "Michigan",          expenses: 2980269, points: 66.0  },
+  { team: "Iowa State",        expenses: 2686013, points: 52.0  },
+  { team: "Arizona State",     expenses: 2664667, points: 36.5  },
+  { team: "Minnesota",         expenses: 2238647, points: 48.5  },
+  { team: "Oklahoma",          expenses: 2236975, points: 9.0   },
+  { team: "Oregon State",      expenses: 2168539, points: 4.0   },
+  { team: "NC State",          expenses: 2097474, points: 44.5  },
+  { team: "Illinois",          expenses: 2081420, points: 28.0  },
+  { team: "North Carolina",    expenses: 2016090, points: 9.5   },
+  { team: "Wisconsin",         expenses: 1901607, points: 6.5   },
+  { team: "Purdue",            expenses: 1858585, points: 10.5  },
+  { team: "Indiana",           expenses: 1805052, points: 19.5  },
+  { team: "Virginia",          expenses: 1753154, points: 0.5   },
+  { team: "Michigan State",    expenses: 1676351, points: 0.0   },
+  { team: "West Virginia",     expenses: 1555961, points: 17.0  },
+  { team: "Appalachian State", expenses: 1461595, points: 0.5   },
+  { team: "Wyoming",           expenses: 1354039, points: 38.0  },
+  { team: "Navy",              expenses: 1227414, points: 11.5  },
+  { team: "Morgan State",      expenses: 1209493, points: 0.5   },
+  { team: "Northern Iowa",     expenses: 1163345, points: 9.5   },
+  { team: "South Dakota State",expenses: 1120646, points: 5.0   },
+  { team: "Buffalo",           expenses: 1070945, points: 1.5   },
+  { team: "Northern Colorado", expenses: 1066185, points: 1.0   },
+  { team: "Chattanooga",       expenses: 1050906, points: 1.0   },
+  { team: "Cal Poly",          expenses: 1053457, points: 0.5   },
+  { team: "Ohio",              expenses: 1038810, points: 3.0   },
+  { team: "Binghamton",        expenses: 1004080, points: 2.5   },
+  { team: "Army",              expenses: 998515,  points: 3.0   },
+  { team: "North Dakota State",expenses: 992789,  points: 6.0   },
+  { team: "Utah Valley",       expenses: 903064,  points: 6.0   },
+  { team: "Little Rock",       expenses: 880355,  points: 17.5  },
+  { team: "George Mason",      expenses: 961485,  points: 7.0   },
+  { team: "Little Rock",       expenses: 880355,  points: 17.5  },
+  { team: "Central Michigan",  expenses: 780188,  points: 0.5   },
+  { team: "The Citadel",       expenses: 778036,  points: 2.0   },
+  { team: "Air Force",         expenses: 756235,  points: 16.0  },
+  { team: "Northern Illinois", expenses: 742144,  points: 3.0   },
+  { team: "Kent State",        expenses: 732301,  points: 0.0   },
+  { team: "VMI",               expenses: 633552,  points: 0.0   },
+  { team: "SIU Edwardsville",  expenses: 590443,  points: 3.5   },
+  { team: "Cal State Bakersfield", expenses: 574699, points: 0.0},
+  { team: "Cleveland State",   expenses: 332244,  points: 0.0   },
+  { team: "Maryland",          expenses: 1949408, points: 8.5   },
+  { team: "Rutgers",           expenses: 3015804, points: 7.0   },
+];
+
+// Dedupe (Little Rock appeared twice)
+const seen = new Set();
+const data = DATA.filter(d => { if (seen.has(d.team)) return false; seen.add(d.team); return true; });
+
+// Sort: first by points desc, zero-scorers at bottom sorted by expenses desc
+const scored = data.filter(d => d.points > 0).sort((a, b) => a.expenses / a.points - b.expenses / b.points);
+const zeroes = data.filter(d => d.points === 0).sort((a, b) => b.expenses - a.expenses);
+const sorted = [...scored, ...zeroes];
+
+// Cost-per-point color
+function cppColor(cpp) {
+  if (cpp === null) return 'var(--zero)';
+  if (cpp < 45000)  return '#34d399';  // great
+  if (cpp < 80000)  return '#a3e635';  // good
+  if (cpp < 150000) return '#fbbf24';  // ok
+  if (cpp < 350000) return '#f97316';  // poor
+  return '#f43f5e';                    // bad
+}
+function cppClass(cpp) {
+  if (cpp === null) return 'zero';
+  if (cpp < 45000)  return 'good';
+  if (cpp < 80000)  return 'ok';
+  if (cpp < 150000) return 'fair';
+  if (cpp < 350000) return 'poor';
+  return 'bad';
+}
+
+// Build table
+const tbody = document.getElementById('tbody');
+let rank = 1;
+sorted.forEach(d => {
+  const cpp = d.points > 0 ? Math.round(d.expenses / d.points) : null;
+  const tr = document.createElement('tr');
+  tr.innerHTML = `
+    <td><span class="rank-badge">${d.points > 0 ? rank++ : '—'}</span></td>
+    <td>${d.team}</td>
+    <td class="num">${d.expenses.toLocaleString('en-US', {style:'currency', currency:'USD', maximumFractionDigits:0})}</td>
+    <td class="num ${d.points === 0 ? 'zero' : ''}">${d.points > 0 ? d.points.toFixed(1) : '0'}</td>
+    <td class="num cpp ${cppClass(cpp)}">${cpp ? cpp.toLocaleString('en-US', {style:'currency', currency:'USD', maximumFractionDigits:0}) : '—'}</td>
+  `;
+  tbody.appendChild(tr);
+});
+
+// Chart — scatter plot
+const scoredForChart = data.filter(d => d.points > 0);
+const zeroForChart   = data.filter(d => d.points === 0);
+
+Chart.register(ChartDataLabels);
+
+// Overall aggregate ratio: total dollars / total points (all 49 teams in dataset)
+const totalExpenses = data.reduce((s, d) => s + d.expenses, 0);
+const totalPoints   = data.reduce((s, d) => s + d.points, 0);
+const overallCPP    = totalExpenses / totalPoints;  // $/pt
+const overallSlope  = 1 / overallCPP;               // pts per dollar
+
+// Inject ratio into subtitle
+const maxSpendM = Math.max(...data.map(d => d.expenses)) / 1e6;
+document.querySelector('.subtitle').innerHTML +=
+  `&ensp;|&ensp; Overall: <strong style="color:#818cf8">$${Math.round(overallCPP).toLocaleString()} / pt</strong> across ${data.length} programs`;
+
+// Expected-return line: from (0,0) to (maxSpend, maxSpend * slope)
+const lineData = [
+  { x: 0,          y: 0 },
+  { x: maxSpendM,  y: maxSpendM * 1e6 * overallSlope },
+];
+
+new Chart(document.getElementById('chart'), {
+  type: 'scatter',
+  data: {
+    datasets: [
+      {
+        label: `Expected return (~$${Math.round(overallCPP/1000)}K / pt)`,
+        type: 'line',
+        data: lineData,
+        borderColor: 'rgba(129,140,248,0.7)',
+        borderWidth: 2,
+        borderDash: [6, 4],
+        pointRadius: 0,
+        backgroundColor: 'transparent',
+        datalabels: { display: false },
+        order: 10,
+      },
+      {
+        label: 'Scored points',
+        data: scoredForChart.map(d => ({ x: d.expenses / 1e6, y: d.points, team: d.team })),
+        backgroundColor: scoredForChart.map(d => {
+          const cpp = d.expenses / d.points;
+          if (cpp < 45000)  return 'rgba(52,211,153,0.85)';
+          if (cpp < 80000)  return 'rgba(163,230,53,0.85)';
+          if (cpp < 150000) return 'rgba(251,191,36,0.85)';
+          if (cpp < 350000) return 'rgba(249,115,22,0.85)';
+          return 'rgba(244,63,94,0.85)';
+        }),
+        borderColor: 'transparent',
+        pointRadius: 7,
+        pointHoverRadius: 10,
+        datalabels: {
+          display: ctx => {
+            const d = scoredForChart[ctx.dataIndex];
+            return d.points >= 9 || d.expenses > 2500000;
+          },
+          formatter: (val, ctx) => scoredForChart[ctx.dataIndex].team,
+          color: '#e2e8f0',
+          font: { size: 11 },
+          anchor: 'end',
+          align: 'top',
+          offset: 4,
+        }
+      },
+      {
+        label: 'No points scored',
+        data: zeroForChart.map(d => ({ x: d.expenses / 1e6, y: 0, team: d.team })),
+        backgroundColor: 'rgba(100,116,139,0.5)',
+        borderColor: 'transparent',
+        pointRadius: 5,
+        pointHoverRadius: 8,
+        datalabels: { display: false }
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        labels: { color: '#94a3b8', font: { size: 12 } }
+      },
+      tooltip: {
+        callbacks: {
+          label: ctx => {
+            const raw = ctx.raw;
+            const pts = raw.y;
+            const exp = (raw.x * 1e6);
+            const cpp = pts > 0 ? `  •  $${Math.round(exp/pts).toLocaleString()} / pt` : '  •  0 pts';
+            return `${raw.team}   $${(raw.x).toFixed(2)}M  →  ${pts} pts${cpp}`;
+          }
+        },
+        backgroundColor: '#1e2230',
+        titleColor: '#f8fafc',
+        bodyColor: '#94a3b8',
+        borderColor: '#2d3748',
+        borderWidth: 1,
+        padding: 12,
+      }
+    },
+    scales: {
+      x: {
+        title: { display: true, text: '2025 Total Expenses ($M)', color: '#94a3b8', font: { size: 13 } },
+        ticks: { color: '#64748b', callback: v => `$${v}M` },
+        grid: { color: '#1e2230' }
+      },
+      y: {
+        title: { display: true, text: '2026 NCAA Tournament Points', color: '#94a3b8', font: { size: 13 } },
+        ticks: { color: '#64748b' },
+        grid: { color: '#1e2230' }
+      }
+    }
+  }
+});
+</script>
+
+<p style="margin-top:28px; font-size:12px; color:#475569;">
+  Color key — Cost per tournament point:
+  <span style="color:#34d399">■ &lt;$45K (excellent)</span> &nbsp;
+  <span style="color:#a3e635">■ $45K–$80K (good)</span> &nbsp;
+  <span style="color:#fbbf24">■ $80K–$150K (fair)</span> &nbsp;
+  <span style="color:#f97316">■ $150K–$350K (poor)</span> &nbsp;
+  <span style="color:#f43f5e">■ &gt;$350K (very poor)</span> &nbsp;
+  <span style="color:#64748b">■ 0 pts scored</span>
+</p>
+
+</body>
+</html>

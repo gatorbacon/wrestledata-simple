@@ -16,6 +16,12 @@ import hashlib
 from datetime import datetime
 
 
+def league_dir_key(league, gender, state=None):
+    if league == 'hs':
+        return f"hs_{state.lower()}_{gender}"
+    return f"ncaa_{gender or 'men'}"
+
+
 # Standard weight classes for KY HS Boys
 KY_HS_BOYS_WEIGHTS = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
 
@@ -161,12 +167,7 @@ def load_team_data(season: int, league: str = 'ncaa', state: str = None, gender:
     Returns:
         List of team data dictionaries
     """
-    # Setup directory based on league type
-    if league == 'hs':
-        state_lower = state.lower() if state else 'ky'
-        data_dir = Path(f"mt/processed_data/hs_{state_lower}_{gender}") / str(season)
-    else:  # ncaa
-        data_dir = Path(f"mt/processed_data/{season}")
+    data_dir = Path("mt/processed_data") / league_dir_key(league, gender, state) / str(season)
     
     if not data_dir.exists():
         raise FileNotFoundError(f"Data directory not found: {data_dir}")
@@ -261,12 +262,7 @@ def load_match_overrides(season: int, data_dir: str = "mt/rankings_data", league
     Returns a dictionary mapping (w1_id, w2_id, date) -> override_dict
     where IDs are normalized (smaller ID first).
     """
-    # Setup override path based on league type
-    if league == 'hs':
-        state_lower = state.lower() if state else 'ky'
-        overrides_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season) / "match_overrides.json"
-    else:  # ncaa
-        overrides_path = Path(data_dir) / str(season) / "match_overrides.json"
+    overrides_path = Path(data_dir) / league_dir_key(league, gender, state) / str(season) / "match_overrides.json"
     override_map = {}
     
     if overrides_path.exists():
@@ -295,11 +291,7 @@ def load_match_removal_specs(season: int, data_dir: str = "mt/rankings_data", le
     When "result" is present, only the match with that exact result is removed (disambiguates
     same-day same-opponent pairs, e.g. Varsity vs Exhibition).
     """
-    if league == 'hs':
-        state_lower = state.lower() if state else 'ky'
-        overrides_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season) / "match_overrides.json"
-    else:
-        overrides_path = Path(data_dir) / str(season) / "match_overrides.json"
+    overrides_path = Path(data_dir) / league_dir_key(league, gender, state) / str(season) / "match_overrides.json"
     specs = []
     if not overrides_path.exists():
         return specs
@@ -1094,12 +1086,7 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
     # These overrides do NOT create real matches; they only influence the
     # weight-assignment algorithm by adding virtual entries to wrestler_matches.
     overrides_by_wrestler: Dict[str, List[Tuple[str, str, int]]] = defaultdict(list)
-    # Setup weight overrides path based on league type
-    if league == 'hs':
-        state_lower = state.lower() if state else 'ky'
-        overrides_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season) / "weight_overrides.json"
-    else:  # ncaa
-        overrides_path = Path(data_dir) / str(season) / "weight_overrides.json"
+    overrides_path = Path(data_dir) / league_dir_key(league, gender, state) / str(season) / "weight_overrides.json"
     if overrides_path.exists():
         try:
             with open(overrides_path, "r", encoding="utf-8") as f:
@@ -1466,12 +1453,7 @@ def save_loaded_data(data: Dict[str, Dict], season: int, output_dir: str = "mt/r
         state: State code (required for HS)
         gender: Gender ('boys' or 'girls', required for HS)
     """
-    # Setup output path based on league type
-    if league == 'hs':
-        state_lower = state.lower() if state else 'ky'
-        output_path = Path(output_dir) / f"hs_{state_lower}_{gender}" / str(season)
-    else:  # ncaa
-        output_path = Path(output_dir) / str(season)
+    output_path = Path(output_dir) / league_dir_key(league, gender, state) / str(season)
     output_path.mkdir(parents=True, exist_ok=True)
     
     # First, de-duplicate matches across all weight classes so that any given
@@ -1525,21 +1507,24 @@ if __name__ == "__main__":
     parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
                         help='League type: ncaa (default) or hs')
     parser.add_argument('-state', type=str, help='State code (required when league=hs, currently only KY supported)')
-    parser.add_argument('-gender', type=str, choices=['boys', 'girls'],
-                        help='Gender: boys or girls (required when league=hs)')
+    parser.add_argument('-gender', type=str, choices=['boys', 'girls', 'men', 'women'],
+                        help='Gender: boys/girls (HS) or men/women (NCAA)')
     args = parser.parse_args()
-    
-    # Validate HS parameters
+
     if args.league == 'hs':
         if not args.state:
             raise ValueError("-state is required when -league=hs")
-        state_upper = args.state.upper()
-        if state_upper != 'KY':
+        if args.state.upper() != 'KY':
             raise ValueError(f"Only KY is currently supported for HS. Got: {args.state}")
         if not args.gender:
             raise ValueError("-gender is required when -league=hs")
         if args.gender not in ['boys', 'girls']:
-            raise ValueError(f"-gender must be 'boys' or 'girls'. Got: {args.gender}")
+            raise ValueError(f"-gender must be 'boys' or 'girls' for HS. Got: {args.gender}")
+    else:  # ncaa
+        if not args.gender:
+            raise ValueError("-gender is required when -league=ncaa")
+        if args.gender not in ['men', 'women']:
+            raise ValueError(f"-gender must be 'men' or 'women' for NCAA. Got: {args.gender}")
     
     data = load_season_data(args.season, league=args.league, state=args.state, gender=args.gender)
     

@@ -1,0 +1,108 @@
+{
+  "wrestler_id": "34934180132",
+  "name": "Bradlee Farrer",
+  "team": "Wyoming",
+  "team_slug": "wyoming",
+  "team_rank": 14,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": 85,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 5.0,
+    "pa7": 11.33,
+    "pd7": -6.33,
+    "si_plus": 98.9,
+    "df_plus": 96.5,
+    "apr_plus": 96.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.129,
+      "matches": 3,
+      "rank_weight": 170,
+      "rank_overall": 1535,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34964909132",
+      "opponent_rank": 219,
+      "opponent_name": "Logan Glynn",
+      "method": "Dec 11-6"
+    },
+    "worst_loss": {
+      "opponent_id": "34944195132",
+      "opponent_rank": 78,
+      "opponent_name": "Jake Wood",
+      "method": "Dec 7-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-22",
+      "opponent_id": "34935613132",
+      "opponent_career_id": null,
+      "opponent_name": "Jagger Condomitti",
+      "opponent_team": "Nebraska",
+      "opponent_team_rank": 3,
+      "opponent_weight": 165,
+      "opponent_rank": 41,
+      "weight_class": "165",
+      "result": "L",
+      "method": "TF",
+      "score": "21-3",
+      "duration": "7:00",
+      "event": "Younes Hospitality Open",
+      "mv_impact": -3.67
+    },
+    {
+      "date": "2025-11-22",
+      "opponent_id": "34964909132",
+      "opponent_career_id": null,
+      "opponent_name": "Logan Glynn",
+      "opponent_team": "Northern Colorado",
+      "opponent_team_rank": 60,
+      "opponent_weight": 165,
+      "opponent_rank": 219,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "11-6",
+      "duration": "7:00",
+      "event": "Younes Hospitality Open",
+      "mv_impact": 0.1
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34944195132",
+      "opponent_career_id": null,
+      "opponent_name": "Jake Wood",
+      "opponent_team": "Air Force",
+      "opponent_team_rank": 48,
+      "opponent_weight": 165,
+      "opponent_rank": 78,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-1",
+      "duration": "7:00",
+      "event": "Mines Rookie Open",
+      "mv_impact": -2.82
+    }
+  ],
+  "profile_generated_at": "2026-06-02"
+}

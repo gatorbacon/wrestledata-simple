@@ -1,0 +1,91 @@
+{
+  "wrestler_id": "34950411132",
+  "name": "Dash Hort",
+  "team": "Duke",
+  "team_slug": "duke",
+  "team_rank": 55,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": 97,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 9.0,
+    "pa7": 7.0,
+    "pd7": 2.0,
+    "si_plus": 103.5,
+    "df_plus": 100.8,
+    "apr_plus": 101.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.897,
+      "matches": 2,
+      "rank_weight": 108,
+      "rank_overall": 1148,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34941677132",
+      "opponent_rank": 170,
+      "opponent_name": "Brant Cracraft",
+      "method": "MD 13-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34935929132",
+      "opponent_rank": 93,
+      "opponent_name": "cody kirk",
+      "method": "Dec 12-5"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-02-22",
+      "opponent_id": "34941677132",
+      "opponent_career_id": null,
+      "opponent_name": "Brant Cracraft",
+      "opponent_team": "Campbell",
+      "opponent_team_rank": 66,
+      "opponent_weight": 184,
+      "opponent_rank": 170,
+      "weight_class": "184",
+      "result": "W",
+      "method": "MD",
+      "score": "13-2",
+      "duration": "7:00",
+      "event": "Wildcat Open",
+      "mv_impact": 1.73
+    },
+    {
+      "date": "2026-02-22",
+      "opponent_id": "34935929132",
+      "opponent_career_id": null,
+      "opponent_name": "cody kirk",
+      "opponent_team": "Davidson",
+      "opponent_team_rank": 69,
+      "opponent_weight": 184,
+      "opponent_rank": 93,
+      "weight_class": "184",
+      "result": "L",
+      "method": "DEC",
+      "score": "12-5",
+      "duration": "7:00",
+      "event": "Wildcat Open",
+      "mv_impact": -3.53
+    }
+  ],
+  "profile_generated_at": "2026-06-02"
+}

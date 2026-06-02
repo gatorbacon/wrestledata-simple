@@ -1,0 +1,125 @@
+{
+  "wrestler_id": "34934765132",
+  "name": "McKinley Robbins",
+  "team": "Oregon State",
+  "team_slug": "oregon_state",
+  "team_rank": 46,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": 74,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "2-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.33,
+    "pa7": 7.0,
+    "pd7": -0.67,
+    "si_plus": 97.0,
+    "df_plus": 104.8,
+    "apr_plus": 116.4,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 0.019,
+      "matches": 4,
+      "rank_weight": 102,
+      "rank_overall": 831,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34934317132",
+      "opponent_rank": 161,
+      "opponent_name": "Cole Stone",
+      "method": "Fall 2:07"
+    },
+    "worst_loss": {
+      "opponent_id": "34934315132",
+      "opponent_rank": 160,
+      "opponent_name": "Shane Percelay",
+      "method": "Dec 5-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934315132",
+      "opponent_career_id": null,
+      "opponent_name": "Shane Percelay",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 49,
+      "opponent_weight": 149,
+      "opponent_rank": 160,
+      "weight_class": "149",
+      "result": "L",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": -3.88
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934317132",
+      "opponent_career_id": null,
+      "opponent_name": "Cole Stone",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 49,
+      "opponent_weight": 149,
+      "opponent_rank": 161,
+      "weight_class": "149",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:07",
+      "event": "Princeton Open",
+      "mv_impact": 4.77
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34948515132",
+      "opponent_career_id": null,
+      "opponent_name": "Eli Carr",
+      "opponent_team": "Brown",
+      "opponent_team_rank": 50,
+      "opponent_weight": 149,
+      "opponent_rank": 73,
+      "weight_class": "149",
+      "result": "L",
+      "method": "DEC",
+      "score": "10-8",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": -3.08
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34948185132",
+      "opponent_career_id": null,
+      "opponent_name": "Blase Mele",
+      "opponent_team": "Princeton",
+      "opponent_team_rank": 32,
+      "opponent_weight": 149,
+      "opponent_rank": 239,
+      "weight_class": "149",
+      "result": "W",
+      "method": "DEC",
+      "score": "10-6",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": 2.26
+    }
+  ],
+  "profile_generated_at": "2026-06-02"
+}

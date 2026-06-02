@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": null,
+  "team_id": "george_mason",
+  "team_name": "George Mason",
+  "name": "George Mason",
+  "abbreviation": "GMU",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": null,
+  "location": {
+    "state": "VA",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gfafbpxdhg&teamId=758821150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-06-02T13:15:41.753079Z",
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34938480132",
+      "133": "34938514132",
+      "141": "34938512132",
+      "149": "34938481132",
+      "157": "34938485132",
+      "165": "34938486132",
+      "174": "34938483132",
+      "184": "34938482132",
+      "197": "34938484132",
+      "285": "34938491132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  }
+}

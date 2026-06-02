@@ -1,0 +1,86 @@
+{
+  "wrestler_id": "34944170132",
+  "name": "Nico Tocci",
+  "team": "Air Force",
+  "team_slug": "air_force",
+  "team_rank": 48,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": 150,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 1.12,
+    "pa7": 3.8,
+    "pd7": -2.67,
+    "si_plus": 89.3,
+    "df_plus": 108.2,
+    "apr_plus": 98.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.843,
+      "matches": 3,
+      "rank_weight": 173,
+      "rank_overall": 1942,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34952958132",
+      "opponent_rank": 91,
+      "opponent_name": "Max Elton",
+      "method": "TB-2 (RT) 6-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34952958132",
+      "opponent_career_id": null,
+      "opponent_name": "Max Elton",
+      "opponent_team": "Buffalo",
+      "opponent_team_rank": 52,
+      "opponent_weight": 133,
+      "opponent_rank": 91,
+      "weight_class": "125",
+      "result": "L",
+      "method": "TB-2",
+      "score": "6-2",
+      "duration": "10:00",
+      "event": "Clarion Open",
+      "mv_impact": -4.65
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34964389132",
+      "opponent_career_id": null,
+      "opponent_name": "Marcello Milani",
+      "opponent_team": "Cornell",
+      "opponent_team_rank": 15,
+      "opponent_weight": 125,
+      "opponent_rank": 35,
+      "weight_class": "125",
+      "result": "L",
+      "method": "SV-3",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "Clarion Open",
+      "mv_impact": -2.22
+    }
+  ],
+  "profile_generated_at": "2026-06-02"
+}

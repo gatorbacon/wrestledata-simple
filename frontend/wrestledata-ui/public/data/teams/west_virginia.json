@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": null,
+  "team_id": "west_virginia",
+  "team_name": "West Virginia",
+  "name": "West Virginia",
+  "abbreviation": "WVU",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": null,
+  "location": {
+    "state": "WV",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gfafbpxdhg&teamId=758947150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-06-02T13:15:41.860189Z",
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34946728132",
+      "133": "34948546132",
+      "141": "34946823132",
+      "149": "34946813132",
+      "157": "34946729132",
+      "165": "34946734132",
+      "174": "34946723132",
+      "184": "34946720132",
+      "197": "34946733132",
+      "285": "34946806132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  }
+}

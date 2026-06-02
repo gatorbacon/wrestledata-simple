@@ -1,0 +1,120 @@
+{
+  "wrestler_id": "34937484132",
+  "name": "Hunter Jones",
+  "team": "Gardner-Webb",
+  "team_slug": "gardnerwebb",
+  "team_rank": 57,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 206,
+  "record": {
+    "overall": "0-4",
+    "vs_ranked": "0-4",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.19,
+    "pa7": 23.05,
+    "pd7": -19.87,
+    "si_plus": 91.0,
+    "df_plus": 75.9,
+    "apr_plus": 99.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.733,
+      "matches": 4,
+      "rank_weight": 232,
+      "rank_overall": 2098,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34950401132",
+      "opponent_rank": 195,
+      "opponent_name": "Peter Chacon",
+      "method": "TF 20-3 4:50"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-02-22",
+      "opponent_id": "34950401132",
+      "opponent_career_id": null,
+      "opponent_name": "Peter Chacon",
+      "opponent_team": "Duke",
+      "opponent_team_rank": 55,
+      "opponent_weight": 157,
+      "opponent_rank": 195,
+      "weight_class": "157",
+      "result": "L",
+      "method": "TF",
+      "score": "20-3",
+      "duration": "4:50",
+      "event": "Wildcat Open",
+      "mv_impact": -7.89
+    },
+    {
+      "date": "2026-02-22",
+      "opponent_id": "34946250132",
+      "opponent_career_id": null,
+      "opponent_name": "Brady Campbell",
+      "opponent_team": "The Citadel",
+      "opponent_team_rank": 61,
+      "opponent_weight": 157,
+      "opponent_rank": 41,
+      "weight_class": "157",
+      "result": "L",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "6:05",
+      "event": "Wildcat Open",
+      "mv_impact": -3.55
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "34935908132",
+      "opponent_career_id": null,
+      "opponent_name": "Tyler-Xavier McKnight",
+      "opponent_team": "Davidson",
+      "opponent_team_rank": 69,
+      "opponent_weight": 157,
+      "opponent_rank": 49,
+      "weight_class": "157",
+      "result": "L",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "4:47",
+      "event": "Braves Open",
+      "mv_impact": -3.94
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34946250132",
+      "opponent_career_id": null,
+      "opponent_name": "Brady Campbell",
+      "opponent_team": "The Citadel",
+      "opponent_team_rank": 61,
+      "opponent_weight": 157,
+      "opponent_rank": 41,
+      "weight_class": "157",
+      "result": "L",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "5:00",
+      "event": "Southeast Open",
+      "mv_impact": -3.55
+    }
+  ],
+  "profile_generated_at": "2026-06-02"
+}

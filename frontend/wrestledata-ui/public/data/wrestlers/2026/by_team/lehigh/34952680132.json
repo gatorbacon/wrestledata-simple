@@ -1,0 +1,108 @@
+{
+  "wrestler_id": "34952680132",
+  "name": "Dontae Hoose",
+  "team": "Lehigh",
+  "team_slug": "lehigh",
+  "team_rank": 12,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": 112,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 5.08,
+    "pa7": 23.12,
+    "pd7": -18.04,
+    "si_plus": 100.6,
+    "df_plus": 76.1,
+    "apr_plus": 106.3,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -2.117,
+      "matches": 4,
+      "rank_weight": 122,
+      "rank_overall": 1533,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34948146132",
+      "opponent_rank": 225,
+      "opponent_name": "Anderson Olcott",
+      "method": "Fall 1:43"
+    },
+    "worst_loss": {
+      "opponent_id": "34948184132",
+      "opponent_rank": 182,
+      "opponent_name": "Conor McCloskey",
+      "method": "TF 17-0 5:36"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934833132",
+      "opponent_career_id": null,
+      "opponent_name": "Brock Zurawski",
+      "opponent_team": "Rider",
+      "opponent_team_rank": 33,
+      "opponent_weight": 197,
+      "opponent_rank": 24,
+      "weight_class": "197",
+      "result": "L",
+      "method": "TF",
+      "score": "25-9",
+      "duration": "6:12",
+      "event": "Princeton Open",
+      "mv_impact": -2.93
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34948184132",
+      "opponent_career_id": null,
+      "opponent_name": "Conor McCloskey",
+      "opponent_team": "Princeton",
+      "opponent_team_rank": 32,
+      "opponent_weight": 197,
+      "opponent_rank": 182,
+      "weight_class": "197",
+      "result": "L",
+      "method": "TF",
+      "score": "17-0",
+      "duration": "5:36",
+      "event": "Princeton Open",
+      "mv_impact": -8.29
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34948146132",
+      "opponent_career_id": null,
+      "opponent_name": "Anderson Olcott",
+      "opponent_team": "Princeton",
+      "opponent_team_rank": 32,
+      "opponent_weight": 285,
+      "opponent_rank": 225,
+      "weight_class": "197",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:43",
+      "event": "Princeton Open",
+      "mv_impact": 1.37
+    }
+  ],
+  "profile_generated_at": "2026-06-02"
+}

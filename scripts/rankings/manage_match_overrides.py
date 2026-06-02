@@ -38,6 +38,12 @@ from typing import Dict, List, Optional
 from datetime import datetime
 
 
+def league_dir_key(league, gender, state=None):
+    if league == 'hs':
+        return f"hs_{state.lower()}_{gender}"
+    return f"ncaa_{gender}"
+
+
 def load_overrides(season: int, data_dir: str = "mt/rankings_data") -> Dict:
     """Load match overrides for a season."""
     overrides_path = Path(data_dir) / str(season) / "match_overrides.json"
@@ -408,6 +414,11 @@ def main() -> None:
         default="mt/rankings_data",
         help="Directory containing rankings data"
     )
+    parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
+                        help='League type: ncaa (default) or hs')
+    parser.add_argument('-state', type=str, help='State code (required when league=hs)')
+    parser.add_argument('-gender', type=str, choices=['boys', 'girls', 'men', 'women'],
+                        help='Gender: boys/girls (HS) or men/women (NCAA)')
     parser.add_argument(
         "-list",
         action="store_true",
@@ -419,15 +430,33 @@ def main() -> None:
         help="Remove override by index (use with -list to see indices)"
     )
     args = parser.parse_args()
-    
+
+    if args.league == 'hs':
+        if not args.state:
+            raise ValueError("-state is required when -league=hs")
+        if args.state.upper() != 'KY':
+            raise ValueError(f"Only KY is currently supported for HS. Got: {args.state}")
+        if not args.gender:
+            raise ValueError("-gender is required when -league=hs")
+        if args.gender not in ['boys', 'girls']:
+            raise ValueError(f"-gender must be 'boys' or 'girls' for HS. Got: {args.gender}")
+    else:  # ncaa
+        if not args.gender:
+            raise ValueError("-gender is required when -league=ncaa")
+        if args.gender not in ['men', 'women']:
+            raise ValueError(f"-gender must be 'men' or 'women' for NCAA. Got: {args.gender}")
+
+    # Bake league/gender into data_dir so all internal functions work unchanged
+    data_dir = str(Path(args.data_dir) / league_dir_key(args.league, args.gender, args.state))
+
     if args.list:
-        list_overrides(args.season, args.data_dir)
+        list_overrides(args.season, data_dir)
         return
-    
+
     if args.remove:
-        remove_override(args.season, args.remove, args.data_dir)
+        remove_override(args.season, args.remove, data_dir)
         return
-    
+
     # Interactive mode
     while True:
         print(f"\nMatch Override Manager - Season {args.season}")
@@ -439,14 +468,14 @@ def main() -> None:
         choice = input("\nChoice: ").strip()
         
         if choice == "1":
-            list_overrides(args.season, args.data_dir)
+            list_overrides(args.season, data_dir)
         elif choice == "2":
-            interactive_add_override(args.season, args.data_dir)
+            interactive_add_override(args.season, data_dir)
         elif choice == "3":
-            list_overrides(args.season, args.data_dir)
+            list_overrides(args.season, data_dir)
             idx_str = input("\nEnter index to remove (or 'q' to cancel): ").strip()
             if idx_str.lower() != 'q' and idx_str.isdigit():
-                remove_override(args.season, int(idx_str), args.data_dir)
+                remove_override(args.season, int(idx_str), data_dir)
         elif choice == "4" or choice.lower() == "q":
             break
         else:

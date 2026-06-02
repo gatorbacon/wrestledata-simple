@@ -43,6 +43,13 @@ def parse_args() -> argparse.Namespace:
         help="State code (required when league=hs, e.g., 'KY')",
     )
     parser.add_argument(
+        "-gender",
+        type=str,
+        default=None,
+        choices=["men", "women", "boys", "girls"],
+        help="Gender: men/women (NCAA) or boys/girls (HS). Defaults to 'men' for NCAA.",
+    )
+    parser.add_argument(
         "-data_dir",
         type=str,
         default=None,
@@ -264,10 +271,11 @@ def main() -> None:
     
     else:
         # NCAA mode: original behavior
+        ncaa_gender = args.gender or 'men'
         if args.data_dir:
             data_dir = Path(args.data_dir) / str(season)
         else:
-            data_dir = Path("mt/rankings_data") / str(season)
+            data_dir = Path("mt/rankings_data") / f"ncaa_{ncaa_gender}" / str(season)
         
         if not data_dir.exists():
             raise FileNotFoundError(f"Rankings directory not found: {data_dir}")

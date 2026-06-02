@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": null,
+  "team_id": "wisconsin",
+  "team_name": "Wisconsin",
+  "name": "Wisconsin",
+  "abbreviation": "WIS",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": null,
+  "location": {
+    "state": "WI",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gfafbpxdhg&teamId=758954150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-06-02T13:15:41.862355Z",
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34944672132",
+      "133": "34944666132",
+      "141": "34944679132",
+      "149": "34944675132",
+      "157": "34944670132",
+      "165": "34944668132",
+      "174": "34944664132",
+      "184": "34944662132",
+      "197": "34944680132",
+      "285": "34944677132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  }
+}

@@ -11,6 +11,8 @@ This repo contains **two separate websites** that share a codebase but are on di
 
 **Active development is on `hsky-dev`.** The two sites are partially entangled and a full separation or merge is a known future priority. Do not mix changes between them.
 
+**MatSavant full reference:** See [`docs/matsavant.md`](docs/matsavant.md) for the complete MatSavant/NCAA pipeline, page inventory, and stat calculation formulas (TPAR, SI+, DF+, PE+, DI+, xTP, bonus EV).
+
 **Architecture: 100% static.** No backend, no API, no DynamoDB. Everything is pre-computed JSON files served to plain HTML/JS pages. The DynamoDB/Heroku/`api/` infrastructure is legacy and unused — do not reference it as active.
 
 ---

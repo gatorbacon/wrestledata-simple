@@ -38,8 +38,8 @@
                       <span class="dropdown-item-label">Rankings Matrix</span>
                     </a>
                     <a href="/leaderboards/mat_value.html" class="dropdown-item">
-                      <span class="dropdown-item-label">Mat Value (MV)</span>
-                      <span class="dropdown-item-subtext">Individual performance vs expectation</span>
+                      <span class="dropdown-item-label">TPAR</span>
+                      <span class="dropdown-item-subtext">Team Points Above Replacement</span>
                     </a>
                   </div>
                 </div>
@@ -64,10 +64,10 @@
                 Profiles <span class="dropdown-arrow">▾</span>
               </button>
               <div class="dropdown-menu" id="profiles-menu">
-                <a href="/wrestlers" class="dropdown-item">
+                <a href="/leaderboards/mat_value.html" class="dropdown-item">
                   <span class="dropdown-item-label">Wrestlers</span>
                 </a>
-                <a href="/teams" class="dropdown-item">
+                <a href="/leaderboards/xtp/teams.html" class="dropdown-item">
                   <span class="dropdown-item-label">Teams</span>
                 </a>
               </div>

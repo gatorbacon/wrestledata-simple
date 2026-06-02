@@ -1,0 +1,108 @@
+{
+  "wrestler_id": "34943137132",
+  "name": "Jayden Scott",
+  "team": "North Carolina",
+  "team_slug": "north_carolina",
+  "team_rank": 27,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": 72,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 1.85,
+    "pa7": 2.36,
+    "pd7": -0.52,
+    "si_plus": 88.1,
+    "df_plus": 112.8,
+    "apr_plus": 98.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.687,
+      "matches": 3,
+      "rank_weight": 62,
+      "rank_overall": 586,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34945532132",
+      "opponent_rank": 227,
+      "opponent_name": "Joe Fongaro",
+      "method": "Dec 4-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34934447132",
+      "opponent_rank": 63,
+      "opponent_name": "Bryce Kresho",
+      "method": "SV-3 4-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34945532132",
+      "opponent_career_id": null,
+      "opponent_name": "Joe Fongaro",
+      "opponent_team": "Appalachian State",
+      "opponent_team_rank": 51,
+      "opponent_weight": 141,
+      "opponent_rank": 227,
+      "weight_class": "141",
+      "result": "W",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": 2.41
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934447132",
+      "opponent_career_id": null,
+      "opponent_name": "Bryce Kresho",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 44,
+      "opponent_weight": 141,
+      "opponent_rank": 63,
+      "weight_class": "141",
+      "result": "L",
+      "method": "SV-3",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "Southeast Open",
+      "mv_impact": -2.83
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34954509132",
+      "opponent_career_id": null,
+      "opponent_name": "Ryan Luna",
+      "opponent_team": "Presbyterian",
+      "opponent_team_rank": 76,
+      "opponent_weight": 141,
+      "opponent_rank": 261,
+      "weight_class": "141",
+      "result": "W",
+      "method": "TB-2",
+      "score": "1-1",
+      "duration": "10:00",
+      "event": "Southeast Open",
+      "mv_impact": 2.48
+    }
+  ],
+  "profile_generated_at": "2026-06-02"
+}

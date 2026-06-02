@@ -43,6 +43,12 @@ from datetime import date
 from load_data import load_team_data
 
 
+def league_dir_key(league, gender, state=None):
+    if league == 'hs':
+        return f"hs_{state.lower()}_{gender}"
+    return f"ncaa_{gender}"
+
+
 def search_wrestlers(teams: List[Dict], query: str) -> List[Dict]:
     """Return wrestlers whose names contain the query (case-insensitive)."""
     query_lower = query.lower()
@@ -126,29 +132,27 @@ def main() -> None:
     parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
                         help='League type: ncaa (default) or hs')
     parser.add_argument('-state', type=str, help='State code (required when league=hs, currently only KY supported)')
-    parser.add_argument('-gender', type=str, choices=['boys', 'girls'],
-                        help='Gender: boys or girls (required when league=hs)')
+    parser.add_argument('-gender', type=str, choices=['boys', 'girls', 'men', 'women'],
+                        help='Gender: boys/girls (HS) or men/women (NCAA)')
 
     args = parser.parse_args()
 
-    # Validate HS parameters
     if args.league == 'hs':
         if not args.state:
             raise ValueError("-state is required when -league=hs")
-        state_upper = args.state.upper()
-        if state_upper != 'KY':
+        if args.state.upper() != 'KY':
             raise ValueError(f"Only KY is currently supported for HS. Got: {args.state}")
         if not args.gender:
             raise ValueError("-gender is required when -league=hs")
         if args.gender not in ['boys', 'girls']:
-            raise ValueError(f"-gender must be 'boys' or 'girls'. Got: {args.gender}")
-
-    # Setup overrides path based on league type
-    if args.league == 'hs':
-        state_lower = args.state.lower()
-        overrides_path = Path("mt/rankings_data") / f"hs_{state_lower}_{args.gender}" / str(args.season) / "weight_overrides.json"
+            raise ValueError(f"-gender must be 'boys' or 'girls' for HS. Got: {args.gender}")
     else:  # ncaa
-        overrides_path = Path("mt/rankings_data") / str(args.season) / "weight_overrides.json"
+        if not args.gender:
+            raise ValueError("-gender is required when -league=ncaa")
+        if args.gender not in ['men', 'women']:
+            raise ValueError(f"-gender must be 'men' or 'women' for NCAA. Got: {args.gender}")
+
+    overrides_path = Path("mt/rankings_data") / league_dir_key(args.league, args.gender, args.state) / str(args.season) / "weight_overrides.json"
 
     # Load all teams once for faster interactive searching
     teams = load_team_data(args.season, league=args.league, state=args.state, gender=args.gender)

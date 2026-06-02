@@ -102,6 +102,12 @@ from pathlib import Path
 from typing import Dict, List, Tuple, Any, Set
 
 
+def league_dir_key(league, gender, state=None):
+    if league == 'hs':
+        return f"hs_{state.lower()}_{gender}"
+    return f"ncaa_{gender}"
+
+
 def load_rankings_for_season(season: int, data_dir: str, league: str = 'ncaa', state: str = None, gender: str = None) -> Dict[str, Dict[str, Any]]:
     """
     Load rankings_<weight>.json for all weight classes for a season.
@@ -116,13 +122,7 @@ def load_rankings_for_season(season: int, data_dir: str, league: str = 'ncaa', s
     Returns:
         { weight_class: rankings_json_dict }
     """
-    # Setup base path based on league type
-    if league == 'hs':
-        state_lower = state.lower() if state else 'ky'
-        base = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season)
-    else:  # ncaa
-        base = Path(data_dir) / str(season)
-    
+    base = Path(data_dir) / league_dir_key(league, gender, state) / str(season)
     if not base.exists():
         raise FileNotFoundError(f"Rankings directory not found: {base}")
 
@@ -153,13 +153,7 @@ def load_relationships_for_season(season: int, data_dir: str, league: str = 'nca
     Returns:
         { weight_class: relationships_json_dict }
     """
-    # Setup base path based on league type
-    if league == 'hs':
-        state_lower = state.lower() if state else 'ky'
-        base = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season)
-    else:  # ncaa
-        base = Path(data_dir) / str(season)
-    
+    base = Path(data_dir) / league_dir_key(league, gender, state) / str(season)
     if not base.exists():
         raise FileNotFoundError(f"Relationships directory not found: {base}")
 
@@ -567,13 +561,7 @@ def save_bands_for_weight(
         state: State code (required for HS)
         gender: Gender ('boys' or 'girls', required for HS)
     """
-    # Setup base path based on league type
-    if league == 'hs':
-        state_lower = state.lower() if state else 'ky'
-        base = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season)
-    else:  # ncaa
-        base = Path(data_dir) / str(season)
-    
+    base = Path(data_dir) / league_dir_key(league, gender, state) / str(season)
     base.mkdir(parents=True, exist_ok=True)
     out_path = base / f"ranking_bands_{weight_class}.json"
     with out_path.open("w", encoding="utf-8") as f:
@@ -599,21 +587,24 @@ def main():
     parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
                         help='League type: ncaa (default) or hs')
     parser.add_argument('-state', type=str, help='State code (required when league=hs, currently only KY supported)')
-    parser.add_argument('-gender', type=str, choices=['boys', 'girls'],
-                        help='Gender: boys or girls (required when league=hs)')
+    parser.add_argument('-gender', type=str, choices=['boys', 'girls', 'men', 'women'],
+                        help='Gender: boys/girls (HS) or men/women (NCAA)')
     args = parser.parse_args()
 
-    # Validate HS parameters
     if args.league == 'hs':
         if not args.state:
             raise ValueError("-state is required when -league=hs")
-        state_upper = args.state.upper()
-        if state_upper != 'KY':
+        if args.state.upper() != 'KY':
             raise ValueError(f"Only KY is currently supported for HS. Got: {args.state}")
         if not args.gender:
             raise ValueError("-gender is required when -league=hs")
         if args.gender not in ['boys', 'girls']:
-            raise ValueError(f"-gender must be 'boys' or 'girls'. Got: {args.gender}")
+            raise ValueError(f"-gender must be 'boys' or 'girls' for HS. Got: {args.gender}")
+    else:  # ncaa
+        if not args.gender:
+            raise ValueError("-gender is required when -league=ncaa")
+        if args.gender not in ['men', 'women']:
+            raise ValueError(f"-gender must be 'men' or 'women' for NCAA. Got: {args.gender}")
 
     season = args.season
     data_dir = args.data_dir

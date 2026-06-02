@@ -1,0 +1,142 @@
+{
+  "wrestler_id": "34955742132",
+  "name": "Chase Van Hoven",
+  "team": "Lehigh",
+  "team_slug": "lehigh",
+  "team_rank": 12,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": 88,
+  "record": {
+    "overall": "4-1",
+    "vs_ranked": "4-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 10.12,
+    "pa7": 4.64,
+    "pd7": 5.47,
+    "si_plus": 117.1,
+    "df_plus": 105.6,
+    "apr_plus": 98.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.25,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.703,
+      "matches": 5,
+      "rank_weight": 34,
+      "rank_overall": 315,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 4,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34944785132",
+      "opponent_rank": 36,
+      "opponent_name": "Conner Harer",
+      "method": "SV-3 13-10"
+    },
+    "worst_loss": {
+      "opponent_id": "34935972132",
+      "opponent_rank": 65,
+      "opponent_name": "Ousamane Duncanson",
+      "method": "Dec 10-5"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-02-15",
+      "opponent_id": "34944785132",
+      "opponent_career_id": null,
+      "opponent_name": "Conner Harer",
+      "opponent_team": "Rutgers",
+      "opponent_team_rank": 31,
+      "opponent_weight": 165,
+      "opponent_rank": 36,
+      "weight_class": "165",
+      "result": "W",
+      "method": "SV-3",
+      "score": "13-10",
+      "duration": "8:15",
+      "event": "Lock Haven Open II",
+      "mv_impact": 4.61
+    },
+    {
+      "date": "2026-02-15",
+      "opponent_id": "34955049132",
+      "opponent_career_id": null,
+      "opponent_name": "Michael Murphy",
+      "opponent_team": "Virginia",
+      "opponent_team_rank": 79,
+      "opponent_weight": 165,
+      "opponent_rank": 126,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-1",
+      "duration": "7:00",
+      "event": "Lock Haven Open II",
+      "mv_impact": 2.34
+    },
+    {
+      "date": "2026-02-15",
+      "opponent_id": "34935977132",
+      "opponent_career_id": null,
+      "opponent_name": "Wyatt Lazzar",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 36,
+      "opponent_weight": 165,
+      "opponent_rank": 225,
+      "weight_class": "165",
+      "result": "W",
+      "method": "TF",
+      "score": "18-2",
+      "duration": "5:08",
+      "event": "Lock Haven Open II",
+      "mv_impact": 2.78
+    },
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34935972132",
+      "opponent_career_id": null,
+      "opponent_name": "Ousamane Duncanson",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 36,
+      "opponent_weight": 165,
+      "opponent_rank": 65,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "10-5",
+      "duration": "7:00",
+      "event": "Lock Haven Open I",
+      "mv_impact": -2.37
+    },
+    {
+      "date": "2025-11-30",
+      "opponent_id": "34955045132",
+      "opponent_career_id": null,
+      "opponent_name": "Mason Stefanelli",
+      "opponent_team": "Virginia",
+      "opponent_team_rank": 79,
+      "opponent_weight": 165,
+      "opponent_rank": 179,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "7:00",
+      "event": "Lock Haven Open I",
+      "mv_impact": 1.16
+    }
+  ],
+  "profile_generated_at": "2026-06-02"
+}

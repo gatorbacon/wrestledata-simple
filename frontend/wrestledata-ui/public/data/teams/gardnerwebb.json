@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": null,
+  "team_id": "gardnerwebb",
+  "team_name": "Gardner-Webb",
+  "name": "Gardner-Webb",
+  "abbreviation": "GW",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": null,
+  "location": {
+    "state": "NC",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gfafbpxdhg&teamId=758820150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-06-02T13:15:41.750916Z",
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34937478132",
+      "133": "34937481132",
+      "141": "34937473132",
+      "149": "34937488132",
+      "157": "34937483132",
+      "165": "34939079132",
+      "174": "34939075132",
+      "184": "34939074132",
+      "197": "34937479132",
+      "285": "34937494132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  }
+}

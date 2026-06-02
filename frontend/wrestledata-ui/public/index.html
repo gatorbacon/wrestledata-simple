@@ -2,7 +2,7 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <title>WrestleData — Wrestling Analytics</title>
+  <title>MatSavant — College Wrestling Analytics</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/styles.css" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
@@ -11,167 +11,116 @@
 
 <body>
   <script src="/header.js"></script>
-  
+
   <div class="page-container">
-    <!-- POSITIONING STATEMENT -->
+
     <div class="positioning-statement">
       MatSavant analyzes college wrestling at the match level — not just wins and losses. We evaluate scoring rates, dominance, quality of opponents, consistency, and team point impact to identify real performance signals.
     </div>
-    
-    <!-- SECTION 1: HERO ROW - MATRIX + MI -->
-    <section class="homepage-hero">
-      <!-- SHARED WEIGHT SELECTOR -->
-      <div class="shared-weight-selector-container">
-        <div class="shared-weight-tabs" id="shared-weight-tabs">
-          <button class="weight-tab active" data-weight="125">125</button>
-          <button class="weight-tab" data-weight="133">133</button>
-          <button class="weight-tab" data-weight="141">141</button>
-          <button class="weight-tab" data-weight="149">149</button>
-          <button class="weight-tab active" data-weight="157">157</button>
-          <button class="weight-tab" data-weight="165">165</button>
-          <button class="weight-tab" data-weight="174">174</button>
-          <button class="weight-tab" data-weight="184">184</button>
-          <button class="weight-tab" data-weight="197">197</button>
-          <button class="weight-tab" data-weight="285">285</button>
-        </div>
-      </div>
-      
-      <div class="hero-grid">
-        <!-- LEFT: Ranking Matrix -->
-        <div class="hero-matrix-section">
-          <div class="hero-header">
-            <h1 class="hero-title"><a href="/matrix.html" class="hero-title-link">Rankings Matrix</a></h1>
-            <div class="hero-divider"></div>
+
+    <!-- 2×2 PANEL GRID -->
+    <section class="hp-grid">
+
+      <!-- Panel 1: TPAR Leaders -->
+      <div class="hp-panel">
+        <div class="hp-panel-head">
+          <div class="hp-panel-title-row">
+            <h2 class="hp-panel-title"><a href="/leaderboards/mat_value.html">TPAR Leaders</a></h2>
+            <a href="/leaderboards/mat_value.html" class="hp-panel-link">See all →</a>
           </div>
-          <div class="hero-matrix-wrapper">
-            <a href="/matrix.html?weight=157" class="hero-matrix-link" id="hero-matrix-link">
-              <div class="matrix-grid-static" id="hero-matrix-grid">
-                <!-- Matrix will be populated by JavaScript -->
-              </div>
-            </a>
+          <div class="hp-panel-tabs" id="tpar-weight-tabs">
+            <button class="hp-tab active" data-weight="all">All</button>
+            <button class="hp-tab" data-weight="125">125</button>
+            <button class="hp-tab" data-weight="133">133</button>
+            <button class="hp-tab" data-weight="141">141</button>
+            <button class="hp-tab" data-weight="149">149</button>
+            <button class="hp-tab" data-weight="157">157</button>
+            <button class="hp-tab" data-weight="165">165</button>
+            <button class="hp-tab" data-weight="174">174</button>
+            <button class="hp-tab" data-weight="184">184</button>
+            <button class="hp-tab" data-weight="197">197</button>
+            <button class="hp-tab" data-weight="285">285</button>
           </div>
         </div>
-
-        <!-- RIGHT: TPAR Leaders -->
-        <div class="hero-mi-section">
-          <div class="hero-header">
-            <h1 class="hero-title"><a href="/leaderboards/mat_value.html" class="hero-title-link">TPAR Leaders</a></h1>
-            <div class="hero-divider"></div>
-          </div>
-          <div class="hero-mi-wrapper">
-            <div class="mi-list-container" id="hero-mi-list">
-              <!-- MI list will be populated by JavaScript -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 2: SECOND ROW - THREE CARDS -->
-    <section class="homepage-second-row">
-      <!-- LEFT: NCAA Expected Scoring (xTP) -->
-      <div class="glance-block">
-        <div class="glance-header">
-          <h2 class="glance-title"><a href="/leaderboards/xtp/teams.html" class="glance-title-link">NCAA Expected Scoring (xTP)</a></h2>
-        </div>
-        <div class="glance-table-wrapper">
-          <table class="glance-table" id="xtp-glance-table">
-            <thead>
-              <tr>
-                <th>Rank</th>
-                <th>Team</th>
-                <th class="num">xTP</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
+        <div id="tpar-list" class="hp-panel-body"></div>
       </div>
 
-      <!-- MIDDLE: Stat Leaders (Tabbed) -->
-      <div class="glance-block">
-        <div class="glance-header">
-          <h2 class="glance-title"><a href="/leaderboards/leaderboard_pins.html" class="glance-title-link" id="stat-leaders-link">Stat Leaders</a></h2>
-          <div class="glance-divider"></div>
-          <div class="stats-tabs" id="stats-tabs">
-            <button class="stats-tab active" data-stat="pins">Pins</button>
-            <button class="stats-tab" data-stat="techs">Techs</button>
-            <button class="stats-tab" data-stat="majors">Majors</button>
-            <button class="stats-tab" data-stat="wins">Wins</button>
+      <!-- Panel 2: NCAA Tournament Projections (xTP) -->
+      <div class="hp-panel">
+        <div class="hp-panel-head">
+          <div class="hp-panel-title-row">
+            <h2 class="hp-panel-title">NCAA Tournament Projections</h2>
+            <a href="/ncaa_live.html" class="hp-panel-link">Full Dashboard →</a>
+          </div>
+          <div class="hp-panel-tabs">
+            <span class="hp-tab hp-tab--static" id="season-badge">2026 Archive</span>
           </div>
         </div>
-        <div class="glance-table-wrapper">
-          <table class="glance-table" id="stats-table">
-            <thead>
-              <tr>
-                <th>Rank</th>
-                <th>Wrestler</th>
-                <th>Team</th>
-                <th class="num">Stat</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
+        <div id="xtp-teams-list" class="hp-panel-body"></div>
       </div>
 
-      <!-- RIGHT: Hodge Trophy Watch -->
-      <div class="glance-block">
-        <div class="glance-header">
-          <h2 class="glance-title"><a href="/hodge.html" class="glance-title-link">Hodge Trophy Watch</a></h2>
-          <div class="glance-divider"></div>
+      <!-- Panel 3: Rankings -->
+      <div class="hp-panel">
+        <div class="hp-panel-head">
+          <div class="hp-panel-title-row">
+            <h2 class="hp-panel-title">Rankings</h2>
+            <a href="/rankings.html" class="hp-panel-link" id="rankings-all-link">See all →</a>
+          </div>
+          <div class="hp-panel-tabs" id="rankings-weight-tabs">
+            <button class="hp-tab active" data-weight="all">All</button>
+            <button class="hp-tab" data-weight="125">125</button>
+            <button class="hp-tab" data-weight="133">133</button>
+            <button class="hp-tab" data-weight="141">141</button>
+            <button class="hp-tab" data-weight="149">149</button>
+            <button class="hp-tab" data-weight="157">157</button>
+            <button class="hp-tab" data-weight="165">165</button>
+            <button class="hp-tab" data-weight="174">174</button>
+            <button class="hp-tab" data-weight="184">184</button>
+            <button class="hp-tab" data-weight="197">197</button>
+            <button class="hp-tab" data-weight="285">285</button>
+          </div>
         </div>
-        <div class="glance-table-wrapper">
-          <table class="glance-table" id="hodge-glance-table">
-            <thead>
-              <tr>
-                <th>Rank</th>
-                <th>Wrestler</th>
-                <th>Team</th>
-                <th class="num">Hodge Score</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
+        <div id="rankings-list" class="hp-panel-body"></div>
       </div>
-    </section>
 
-    <!-- SECTION 3: TRENDING / DISCOVERY -->
-    <section class="homepage-trending">
-      <div class="trending-header">
-        <h2 class="trending-title">Biggest TPAR Risers (Last 7 Days)</h2>
-      </div>
-      <div class="trending-content">
-        <table class="trending-table" id="trending-table">
+      <!-- Panel 4: Stat Leaders -->
+      <div class="hp-panel">
+        <div class="hp-panel-head">
+          <div class="hp-panel-title-row">
+            <h2 class="hp-panel-title"><a href="#" id="stat-leaders-title-link">Stat Leaders</a></h2>
+            <span></span>
+          </div>
+          <div class="hp-panel-tabs" id="stats-tabs">
+            <button class="hp-tab active" data-stat="pins">Pins</button>
+            <button class="hp-tab" data-stat="techs">Techs</button>
+            <button class="hp-tab" data-stat="majors">Majors</button>
+            <button class="hp-tab" data-stat="wins">Wins</button>
+          </div>
+        </div>
+        <table class="glance-table" id="stats-table">
           <thead>
             <tr>
+              <th style="width:28px">#</th>
               <th>Wrestler</th>
               <th>Team</th>
-              <th class="num">ΔTPAR</th>
+              <th class="num">Count</th>
             </tr>
           </thead>
-          <tbody>
-            <!-- Placeholder rows -->
-            <tr>
-              <td colspan="3" style="text-align: center; padding: 2em; color: var(--muted);">
-                Coming soon — Recent movement tracking
-              </td>
-            </tr>
-          </tbody>
+          <tbody></tbody>
         </table>
       </div>
+
     </section>
 
-    <!-- SECTION 4: FEATURED CONTENT -->
+    <!-- FEATURED CONTENT -->
     <section class="homepage-featured">
       <div class="featured-grid">
-        <a href="/ncaa_live.html" class="featured-card" style="border-color: var(--accent); background: linear-gradient(135deg, var(--card), #1e2240);">
+        <a href="/ncaa_live.html" class="featured-card featured-card-accent">
           <div class="featured-card-header">
             <h3 class="featured-card-title">🏆 NCAA Tournament Dashboard</h3>
             <span class="featured-card-arrow">→</span>
           </div>
-          <p class="featured-card-desc">Live score projections, team leaderboard, and bracket analysis from the 2026 NCAA Championships</p>
+          <p class="featured-card-desc">Score projections, team leaderboard, and bracket analysis from the 2026 NCAA Championships</p>
         </a>
         <a href="/freshman.html" class="featured-card">
           <div class="featured-card-header">
@@ -183,18 +132,12 @@
       </div>
     </section>
 
-    <!-- SECTION 5: FOOTER / TRUST SIGNAL -->
+    <!-- FOOTER -->
     <section class="homepage-footer">
-      <div class="footer-content">
-        <p class="footer-text">
-          Analytics-first college wrestling rankings built from match-level data. 
-          Updated regularly with comprehensive dual meet and tournament results.
-        </p>
-        <p class="footer-text footer-text-muted">
-          TPAR — Team Points Above Replacement — estimates how many team points a wrestler contributes above a replacement-level starter, using match-level scoring and dominance signals.
-        </p>
-      </div>
+      <p class="footer-text">Analytics-first college wrestling rankings built from match-level data. Updated regularly with comprehensive dual meet and tournament results.</p>
+      <p class="footer-text footer-text-muted">TPAR — Team Points Above Replacement — estimates how many team points a wrestler contributes above a replacement-level starter, using match-level scoring and dominance signals.</p>
     </section>
+
   </div>
 
   <script src="/tooltips.js"></script>

@@ -16,8 +16,8 @@ def parse_args():
     parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
                         help='League type: ncaa (default) or hs')
     parser.add_argument('-state', type=str, help='State code (required when league=hs, currently only KY supported)')
-    parser.add_argument('-gender', type=str, choices=['boys', 'girls'],
-                        help='Gender: boys or girls (required when league=hs)')
+    parser.add_argument('-gender', type=str, choices=['boys', 'girls', 'men', 'women'],
+                        help='Gender: boys/girls (HS) or men/women (NCAA)')
     return parser.parse_args()
 
 def load_aliases(season):
@@ -126,29 +126,32 @@ def apply_aliases_to_file(file_path, aliases, output_dir):
         print(f"Error processing {file_path}: {e}")
         return 0
 
+def league_dir_key(league, gender, state=None):
+    if league == 'hs':
+        return f"hs_{state.lower()}_{gender}"
+    return f"ncaa_{gender}"
+
+
 def process_season(season, league='ncaa', state=None, gender=None):
     """Process all team files for a season."""
-    # Validate HS parameters
     if league == 'hs':
         if not state:
             raise ValueError("-state is required when -league=hs")
-        state_upper = state.upper()
-        if state_upper != 'KY':
+        if state.upper() != 'KY':
             raise ValueError(f"Only KY is currently supported for HS. Got: {state}")
         if not gender:
             raise ValueError("-gender is required when -league=hs")
         if gender not in ['boys', 'girls']:
-            raise ValueError(f"-gender must be 'boys' or 'girls'. Got: {gender}")
-    
-    # Setup directories based on league type
-    if league == 'hs':
-        # HS data directories: mt/data/hs_ky_boys/{season}/ or mt/data/hs_ky_girls/{season}/
-        in_dir = os.path.join("mt", "data", f"hs_{state_upper.lower()}_{gender}", str(season))
-        out_dir = os.path.join("mt", "data_alias", f"hs_{state_upper.lower()}_{gender}", str(season))
+            raise ValueError(f"-gender must be 'boys' or 'girls' for HS. Got: {gender}")
     else:  # ncaa
-        # NCAA data directories: mt/data/{season}/ and mt/data_alias/{season}/
-        in_dir = os.path.join("mt", "data", season)
-        out_dir = os.path.join("mt", "data_alias", season)
+        if not gender:
+            raise ValueError("-gender is required when -league=ncaa")
+        if gender not in ['men', 'women']:
+            raise ValueError(f"-gender must be 'men' or 'women' for NCAA. Got: {gender}")
+
+    key = league_dir_key(league, gender, state)
+    in_dir = os.path.join("mt", "data", key, str(season))
+    out_dir = os.path.join("mt", "data_alias", key, str(season))
     
     os.makedirs(out_dir, exist_ok=True)
     

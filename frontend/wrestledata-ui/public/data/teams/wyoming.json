@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": null,
+  "team_id": "wyoming",
+  "team_name": "Wyoming",
+  "name": "Wyoming",
+  "abbreviation": "WYO",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": null,
+  "location": {
+    "state": "WY",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gfafbpxdhg&teamId=758963150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-06-02T13:15:41.864455Z",
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34934178132",
+      "133": "34934220132",
+      "141": "34933453132",
+      "149": "34933449132",
+      "157": "34933456132",
+      "165": "34933447132",
+      "174": "34933444132",
+      "184": "34933454132",
+      "197": "34933446132",
+      "285": "34934175132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  }
+}

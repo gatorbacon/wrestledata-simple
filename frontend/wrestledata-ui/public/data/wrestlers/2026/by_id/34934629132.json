@@ -1,0 +1,120 @@
+{
+  "wrestler_id": "34934629132",
+  "name": "Javier Berg",
+  "team": "North Dakota State",
+  "team_slug": "north_dakota_state",
+  "team_rank": 39,
+  "weight_class": 133,
+  "year": 2026,
+  "current_rank": 136,
+  "record": {
+    "overall": "0-4",
+    "vs_ranked": "0-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 7.04,
+    "pa7": 14.0,
+    "pd7": -6.96,
+    "si_plus": 111.3,
+    "df_plus": 79.6,
+    "apr_plus": 104.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.95,
+      "matches": 6,
+      "rank_weight": 191,
+      "rank_overall": 1962,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34944687132",
+      "opponent_rank": 185,
+      "opponent_name": "Devin Bobzien",
+      "method": "Dec 7-5"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-02-07",
+      "opponent_id": "34943247132",
+      "opponent_career_id": null,
+      "opponent_name": "Kenton Cooke",
+      "opponent_team": "South Dakota State",
+      "opponent_team_rank": 41,
+      "opponent_weight": 133,
+      "opponent_rank": 170,
+      "weight_class": "133",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-4",
+      "duration": "7:00",
+      "event": "Don Parker Open",
+      "mv_impact": -4.95
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "34944687132",
+      "opponent_career_id": null,
+      "opponent_name": "Devin Bobzien",
+      "opponent_team": "Wisconsin",
+      "opponent_team_rank": 38,
+      "opponent_weight": 133,
+      "opponent_rank": 185,
+      "weight_class": "133",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-5",
+      "duration": "7:00",
+      "event": "Don Parker Open",
+      "mv_impact": -3.98
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34955800132",
+      "opponent_career_id": null,
+      "opponent_name": "Jore Volk",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 10,
+      "opponent_weight": 125,
+      "opponent_rank": 9,
+      "weight_class": "125",
+      "result": "L",
+      "method": "TF",
+      "score": "22-5",
+      "duration": "3:49",
+      "event": "Bison Open 2025",
+      "mv_impact": -3.13
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34935784132",
+      "opponent_career_id": null,
+      "opponent_name": "Abdi Unle",
+      "opponent_team": "Nebraska",
+      "opponent_team_rank": 3,
+      "opponent_weight": 125,
+      "opponent_rank": 107,
+      "weight_class": "125",
+      "result": "L",
+      "method": "DEC",
+      "score": "17-10",
+      "duration": "7:00",
+      "event": "Bison Open 2025",
+      "mv_impact": -4.26
+    }
+  ],
+  "profile_generated_at": "2026-06-02"
+}

@@ -1,0 +1,69 @@
+{
+  "wrestler_id": "34933523132",
+  "name": "Christian Tanefeu",
+  "team": "Michigan",
+  "team_slug": "michigan",
+  "team_rank": 6,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": 57,
+  "record": {
+    "overall": "1-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 103.6,
+    "df_plus": 104.2,
+    "apr_plus": 172.6,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 5.37,
+      "matches": 1,
+      "rank_weight": 1,
+      "rank_overall": 7,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34933977132",
+      "opponent_rank": 59,
+      "opponent_name": "Nick Corday",
+      "method": "Fall 5:56"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2026-01-09",
+      "opponent_id": "34933977132",
+      "opponent_career_id": null,
+      "opponent_name": "Nick Corday",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 74,
+      "opponent_weight": 125,
+      "opponent_rank": 59,
+      "weight_class": "125",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:56",
+      "event": "vs. Michigan State",
+      "mv_impact": 5.37
+    }
+  ],
+  "profile_generated_at": "2026-06-02"
+}

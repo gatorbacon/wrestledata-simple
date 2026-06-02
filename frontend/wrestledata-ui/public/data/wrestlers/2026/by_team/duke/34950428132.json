@@ -1,0 +1,86 @@
+{
+  "wrestler_id": "34950428132",
+  "name": "Eddie radecki",
+  "team": "Duke",
+  "team_slug": "duke",
+  "team_rank": 55,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": 253,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 11.5,
+    "pa7": 4.5,
+    "pd7": 7.0,
+    "si_plus": 116.8,
+    "df_plus": 108.9,
+    "apr_plus": 106.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 2.044,
+      "matches": 2,
+      "rank_weight": 29,
+      "rank_overall": 250,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34941681132",
+      "opponent_rank": 108,
+      "opponent_name": "Ryan Phillips",
+      "method": "MD 13-2"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2026-02-22",
+      "opponent_id": "34941681132",
+      "opponent_career_id": null,
+      "opponent_name": "Ryan Phillips",
+      "opponent_team": "Campbell",
+      "opponent_team_rank": 66,
+      "opponent_weight": 149,
+      "opponent_rank": 108,
+      "weight_class": "149",
+      "result": "W",
+      "method": "MD",
+      "score": "13-2",
+      "duration": "7:00",
+      "event": "Wildcat Open",
+      "mv_impact": 3.17
+    },
+    {
+      "date": "2026-02-22",
+      "opponent_id": "34935435132",
+      "opponent_career_id": null,
+      "opponent_name": "Hayden Hughes",
+      "opponent_team": "Chattanooga",
+      "opponent_team_rank": 54,
+      "opponent_weight": 149,
+      "opponent_rank": 172,
+      "weight_class": "149",
+      "result": "W",
+      "method": "DEC",
+      "score": "10-7",
+      "duration": "7:00",
+      "event": "Wildcat Open",
+      "mv_impact": 0.92
+    }
+  ],
+  "profile_generated_at": "2026-06-02"
+}

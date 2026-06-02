@@ -1,0 +1,120 @@
+{
+  "wrestler_id": "34943909132",
+  "name": "Joshua Medina",
+  "team": "Bellarmine",
+  "team_slug": "bellarmine",
+  "team_rank": 62,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": 214,
+  "record": {
+    "overall": "0-4",
+    "vs_ranked": "0-4",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.15,
+    "pa7": 19.0,
+    "pd7": -15.85,
+    "si_plus": 88.6,
+    "df_plus": 83.2,
+    "apr_plus": 101.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.922,
+      "matches": 5,
+      "rank_weight": 223,
+      "rank_overall": 2124,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34943261132",
+      "opponent_rank": 208,
+      "opponent_name": "Liam Neitzel",
+      "method": "TF 16-0 3:27"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-04",
+      "opponent_id": "34964937132",
+      "opponent_career_id": null,
+      "opponent_name": "Max Brady",
+      "opponent_team": "Northern Iowa",
+      "opponent_team_rank": 29,
+      "opponent_weight": 141,
+      "opponent_rank": 52,
+      "weight_class": "141",
+      "result": "L",
+      "method": "TF",
+      "score": "19-3",
+      "duration": "3:11",
+      "event": "2026 Soldier Salute",
+      "mv_impact": -5.45
+    },
+    {
+      "date": "2026-01-04",
+      "opponent_id": "34943261132",
+      "opponent_career_id": null,
+      "opponent_name": "Liam Neitzel",
+      "opponent_team": "South Dakota State",
+      "opponent_team_rank": 41,
+      "opponent_weight": 141,
+      "opponent_rank": 208,
+      "weight_class": "141",
+      "result": "L",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "3:27",
+      "event": "2026 Soldier Salute",
+      "mv_impact": -5.63
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34944029132",
+      "opponent_career_id": null,
+      "opponent_name": "Nick Molchak",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 71,
+      "opponent_weight": 133,
+      "opponent_rank": 65,
+      "weight_class": "133",
+      "result": "L",
+      "method": "MD",
+      "score": "11-2",
+      "duration": "7:00",
+      "event": "Kent State Open 2",
+      "mv_impact": -3.97
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34938685132",
+      "opponent_career_id": null,
+      "opponent_name": "Aiden Beimel",
+      "opponent_team": "Clarion",
+      "opponent_team_rank": 68,
+      "opponent_weight": 141,
+      "opponent_rank": 189,
+      "weight_class": "133",
+      "result": "L",
+      "method": "MD",
+      "score": "15-4",
+      "duration": "7:00",
+      "event": "Kent State Open 2",
+      "mv_impact": -5.59
+    }
+  ],
+  "profile_generated_at": "2026-06-02"
+}

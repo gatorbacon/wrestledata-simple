@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": null,
+  "team_id": "north_carolina",
+  "team_name": "North Carolina",
+  "name": "North Carolina",
+  "abbreviation": "UNC",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": null,
+  "location": {
+    "state": "NC",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gfafbpxdhg&teamId=758877150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-06-02T13:15:41.799993Z",
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34943168132",
+      "133": "34943162132",
+      "141": "34943158132",
+      "149": "34943161132",
+      "157": "34943155132",
+      "165": "34943164132",
+      "174": "34943145132",
+      "184": "34943148132",
+      "197": "34943154132",
+      "285": "34943150132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  }
+}

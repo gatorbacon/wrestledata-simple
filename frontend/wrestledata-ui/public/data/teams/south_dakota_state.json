@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": null,
+  "team_id": "south_dakota_state",
+  "team_name": "South Dakota State",
+  "name": "South Dakota State",
+  "abbreviation": "SDSU",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": null,
+  "location": {
+    "state": "SD",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gfafbpxdhg&teamId=758917150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-06-02T13:15:41.845031Z",
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34943238132",
+      "133": "34943249132",
+      "141": "34943245132",
+      "149": "34943228132",
+      "157": "34943229132",
+      "165": "34943239132",
+      "174": "34943240132",
+      "184": "34943232132",
+      "197": "34943230132",
+      "285": "34943234132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  }
+}

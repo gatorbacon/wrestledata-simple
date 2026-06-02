@@ -367,7 +367,7 @@ def main():
     parser.add_argument(
         "--rankings-dir",
         type=str,
-        default="mt/rankings_data",
+        default=None,
         help="Directory containing rankings files (for rebuild)"
     )
     parser.add_argument(
@@ -390,8 +390,8 @@ def main():
     parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
                         help='League type: ncaa (default) or hs')
     parser.add_argument('-state', type=str, help='State code (required when league=hs, currently only KY supported)')
-    parser.add_argument('-gender', type=str, choices=['boys', 'girls'],
-                        help='Gender: boys or girls (optional when league=hs, defaults to processing both)')
+    parser.add_argument('-gender', type=str, choices=['boys', 'girls', 'men', 'women'],
+                        help='Gender: boys/girls (HS, optional, defaults to both) or men/women (NCAA, default: men)')
     
     args = parser.parse_args()
     
@@ -470,8 +470,9 @@ def main():
         print(f"{'=' * 80}\n")
         
         weights = NCAA_WEIGHTS
+        ncaa_gender = args.gender or 'men'
         data_dir = Path(args.data_dir) if args.data_dir else Path("frontend/wrestledata-ui/public/data/xtp")
-        rankings_dir = Path(args.rankings_dir) if args.rankings_dir else Path("mt/rankings_data")
+        rankings_dir = Path(args.rankings_dir) if args.rankings_dir else Path("frontend/wrestledata-ui/public/data/rankings")
         wrestlers_dir = Path(args.wrestlers_dir) if args.wrestlers_dir else Path("frontend/wrestledata-ui/public/data/wrestlers")
         
         # Rebuild weights if requested

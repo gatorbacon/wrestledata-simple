@@ -9,6 +9,7 @@ This script processes all wrestlers and outputs:
 
 import argparse
 import json
+import subprocess
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -229,7 +230,7 @@ def compute_mv_for_wrestler(
     return mv_data, matches_with_impact
 
 
-def compute_all_mv(season: int, data_dir: str, output_file: Optional[Path] = None, league: str = 'ncaa', state: str = None, gender: str = None) -> Tuple[Dict[str, Dict], Dict[str, List[Dict]]]:
+def compute_all_mv(season: int, data_dir: str, output_file: Optional[Path] = None, league: str = 'ncaa', state: str = None, gender: str = None, weight_filter: Optional[int] = None) -> Tuple[Dict[str, Dict], Dict[str, List[Dict]]]:
     """
     Compute MV for all wrestlers across all weights and per-match MV impact.
     
@@ -256,7 +257,13 @@ def compute_all_mv(season: int, data_dir: str, output_file: Optional[Path] = Non
             weights = [100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235]
     else:  # ncaa
         weights = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
-    
+
+    if weight_filter is not None:
+        weights = [w for w in weights if w == weight_filter]
+        if not weights:
+            print(f"WARNING: Weight {weight_filter} not valid for this league/gender.")
+            return {}, {}
+
     print(f"Computing Mat Value for all wrestlers in season {season}...")
     print("=" * 80)
     
@@ -434,6 +441,13 @@ def parse_args() -> argparse.Namespace:
         help="State code (required when league=hs, e.g., 'KY')",
     )
     parser.add_argument(
+        "-gender",
+        type=str,
+        default=None,
+        choices=["men", "women"],
+        help="Gender for NCAA: men or women (default: men). Not used for HS.",
+    )
+    parser.add_argument(
         "--data_dir",
         type=str,
         default=None,
@@ -444,6 +458,20 @@ def parse_args() -> argparse.Namespace:
         type=str,
         default=None,
         help="Output file for season-wide dataset (optional)",
+    )
+    parser.add_argument(
+        "-weight",
+        type=int,
+        default=None,
+        help="Only process a single weight class (e.g., -weight 125)",
+    )
+    parser.add_argument(
+        "-display",
+        type=int,
+        default=None,
+        metavar="N",
+        help="After computing, show detailed TPAR breakdown for top N wrestlers. "
+             "Requires -weight when used alone; shows top N per weight if -weight omitted.",
     )
     return parser.parse_args()
 
@@ -468,7 +496,8 @@ def main() -> None:
             # Will be set per gender below
             data_dir = None
         else:
-            data_dir = "mt/rankings_data"
+            ncaa_gender = args.gender or 'men'
+            data_dir = f"mt/rankings_data/ncaa_{ncaa_gender}"
     
     # Determine output directory base
     if league == "hs":
@@ -538,7 +567,11 @@ def main() -> None:
         else:
             output_file = output_base / str(args.season) / f"mat_value_{args.season}.json"
         
-        mv_data, match_impact_cache = compute_all_mv(args.season, data_dir, output_file, league=league, state=state, gender=None)
+        mv_data, match_impact_cache = compute_all_mv(
+            args.season, data_dir, output_file,
+            league=league, state=state, gender=None,
+            weight_filter=args.weight,
+        )
         
         # Write MV cache file that can be loaded by build_wrestler_profiles.py
         cache_file = output_base / str(args.season) / f"mv_cache_{args.season}.json"
@@ -557,6 +590,46 @@ def main() -> None:
         
         print(f"\nWrote match MV impact cache: {match_impact_file}")
         print(f"  {len(match_impact_cache)} wrestlers with match-level data")
+
+        # -display N: show per-match breakdown for top N wrestlers
+        if args.display:
+            weights_to_display = [args.weight] if args.weight else [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
+            compute_mv_script = Path(__file__).parent / "compute_mat_value.py"
+
+            # Read the written output file — it has full fields (name, team, weight, mv_avg)
+            try:
+                with output_file.open() as f:
+                    full_mv_list = json.load(f)
+            except Exception:
+                full_mv_list = []
+
+            for wt in weights_to_display:
+                wrestlers_at_weight = [
+                    e for e in full_mv_list
+                    if e.get("weight") == wt and e.get("matches", 0) >= 5
+                ]
+                top_n = sorted(wrestlers_at_weight, key=lambda x: x.get("mv_avg", 0), reverse=True)[:args.display]
+
+                if not top_n:
+                    continue
+
+                print(f"\n{'='*80}")
+                print(f"TPAR DETAIL — {wt} lbs  (top {len(top_n)})")
+                print(f"{'='*80}")
+
+                for rank, entry in enumerate(top_n, 1):
+                    wid = entry["wrestler_id"]
+                    print(f"\n{'─'*80}")
+                    print(f"#{rank}  {entry['name']} ({entry['team']})  TPAR={entry['mv_avg']:+.3f}  matches={entry['matches']}")
+                    print(f"{'─'*80}")
+                    subprocess.run(
+                        [sys.executable, str(compute_mv_script),
+                         "--season", str(args.season),
+                         "--wrestler_id", wid,
+                         "--weight", str(wt),
+                         "--data_dir", data_dir],
+                        check=False,
+                    )
 
 
 if __name__ == "__main__":

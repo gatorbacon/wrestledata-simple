@@ -1,0 +1,140 @@
+{
+  "wrestler_id": "34952677132",
+  "name": "Owen Quinn",
+  "team": "Lehigh",
+  "team_slug": "lehigh",
+  "team_rank": 12,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": 208,
+  "record": {
+    "overall": "1-4",
+    "vs_ranked": "1-4",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.67,
+    "pa7": 7.0,
+    "pd7": -4.33,
+    "si_plus": 92.1,
+    "df_plus": 103.3,
+    "apr_plus": 99.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.284,
+      "matches": 4,
+      "rank_weight": 139,
+      "rank_overall": 1279,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34935970132",
+      "opponent_rank": 193,
+      "opponent_name": "Wyatt Dillon",
+      "method": "Dec 5-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34948516132",
+      "opponent_rank": 79,
+      "opponent_name": "Max Norman",
+      "method": "MD 11-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-24",
+      "opponent_id": "34935970132",
+      "opponent_career_id": null,
+      "opponent_name": "Wyatt Dillon",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 36,
+      "opponent_weight": 165,
+      "opponent_rank": 193,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "Bloomsburg Open",
+      "mv_impact": 1.09
+    },
+    {
+      "date": "2026-01-24",
+      "opponent_id": "34957648132",
+      "opponent_career_id": null,
+      "opponent_name": "Jared Goldberg",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 28,
+      "opponent_weight": 165,
+      "opponent_rank": 59,
+      "weight_class": "165",
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Bloomsburg Open"
+    },
+    {
+      "date": "2026-01-24",
+      "opponent_id": "34935976132",
+      "opponent_career_id": null,
+      "opponent_name": "Nick Kunstek",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 36,
+      "opponent_weight": 165,
+      "opponent_rank": 52,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DFLT",
+      "score": null,
+      "duration": "7:00",
+      "event": "Bloomsburg Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34948516132",
+      "opponent_career_id": null,
+      "opponent_name": "Max Norman",
+      "opponent_team": "Brown",
+      "opponent_team_rank": 50,
+      "opponent_weight": 165,
+      "opponent_rank": 79,
+      "weight_class": "165",
+      "result": "L",
+      "method": "MD",
+      "score": "11-1",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": -3.08
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34948150132",
+      "opponent_career_id": null,
+      "opponent_name": "Holden Garcia",
+      "opponent_team": "Princeton",
+      "opponent_team_rank": 32,
+      "opponent_weight": 174,
+      "opponent_rank": 29,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-2",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": -1.57
+    }
+  ],
+  "profile_generated_at": "2026-06-02"
+}

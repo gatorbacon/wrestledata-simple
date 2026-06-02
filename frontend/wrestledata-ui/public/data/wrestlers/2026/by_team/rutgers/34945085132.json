@@ -1,0 +1,142 @@
+{
+  "wrestler_id": "34945085132",
+  "name": "Sebastiano Nini",
+  "team": "Rutgers",
+  "team_slug": "rutgers",
+  "team_rank": 31,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 217,
+  "record": {
+    "overall": "1-4",
+    "vs_ranked": "1-4",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.0,
+    "pa7": 10.5,
+    "pd7": -4.5,
+    "si_plus": 91.1,
+    "df_plus": 91.1,
+    "apr_plus": 92.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.728,
+      "matches": 5,
+      "rank_weight": 231,
+      "rank_overall": 2097,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34949310132",
+      "opponent_rank": 261,
+      "opponent_name": "Antonio Jimenez",
+      "method": "MD 15-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34952971132",
+      "opponent_rank": 199,
+      "opponent_name": "Max Nevlin",
+      "method": "Fall 0:34"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-03-01",
+      "opponent_id": "34934455132",
+      "opponent_career_id": null,
+      "opponent_name": "Luke Bender",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 44,
+      "opponent_weight": 157,
+      "opponent_rank": 163,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MD",
+      "score": "16-3",
+      "duration": "7:00",
+      "event": "Zingo Nationals",
+      "mv_impact": -5.06
+    },
+    {
+      "date": "2026-03-01",
+      "opponent_id": "34938519132",
+      "opponent_career_id": null,
+      "opponent_name": "Tyson Rakers",
+      "opponent_team": "George Mason",
+      "opponent_team_rank": 34,
+      "opponent_weight": 157,
+      "opponent_rank": 177,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "Zingo Nationals",
+      "mv_impact": -5.58
+    },
+    {
+      "date": "2026-01-09",
+      "opponent_id": "34952971132",
+      "opponent_career_id": null,
+      "opponent_name": "Max Nevlin",
+      "opponent_team": "Buffalo",
+      "opponent_team_rank": 52,
+      "opponent_weight": 157,
+      "opponent_rank": 199,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:34",
+      "event": "David H. Lehman F&M Open",
+      "mv_impact": -8.03
+    },
+    {
+      "date": "2026-01-09",
+      "opponent_id": "34938495132",
+      "opponent_career_id": null,
+      "opponent_name": "Jackson Albert",
+      "opponent_team": "George Mason",
+      "opponent_team_rank": 34,
+      "opponent_weight": 157,
+      "opponent_rank": 146,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MD",
+      "score": "15-6",
+      "duration": "7:00",
+      "event": "David H. Lehman F&M Open",
+      "mv_impact": -5.07
+    },
+    {
+      "date": "2026-01-09",
+      "opponent_id": "34949310132",
+      "opponent_career_id": null,
+      "opponent_name": "Antonio Jimenez",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 77,
+      "opponent_weight": 157,
+      "opponent_rank": 261,
+      "weight_class": "157",
+      "result": "W",
+      "method": "MD",
+      "score": "15-3",
+      "duration": "7:00",
+      "event": "David H. Lehman F&M Open",
+      "mv_impact": 0.1
+    }
+  ],
+  "profile_generated_at": "2026-06-02"
+}

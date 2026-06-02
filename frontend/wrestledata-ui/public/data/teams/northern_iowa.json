@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": null,
+  "team_id": "northern_iowa",
+  "team_name": "Northern Iowa",
+  "name": "Northern Iowa",
+  "abbreviation": "UNI",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": null,
+  "location": {
+    "state": "IA",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gfafbpxdhg&teamId=758884150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-06-02T13:15:41.808497Z",
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34964075132",
+      "133": "34964062132",
+      "141": "34964073132",
+      "149": "34964063132",
+      "157": "34964065132",
+      "165": "34964074132",
+      "174": "34964070132",
+      "184": "34964077132",
+      "197": "34964071132",
+      "285": "34964072132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  }
+}

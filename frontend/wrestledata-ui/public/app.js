@@ -186,7 +186,7 @@ function safe(value, formatter) {
   // ===============================
   
   function loadWrestlerProfile(id) {
-    const url = `/wrestlers/2026/by_id/${id}.json`;
+    const url = `/data/wrestlers/2026/by_id/${id}.json`;
   
     fetch(url)
       .then(res => {
@@ -247,7 +247,7 @@ function safe(value, formatter) {
     headerRow.className = "section-header";
     
     const title = document.createElement("h2");
-    title.textContent = "Mat Value (MV)";
+    title.textContent = "TPAR";
     const tooltipIcon = document.createElement("span");
     tooltipIcon.className = "tooltip-icon";
     tooltipIcon.setAttribute("data-tooltip", "mv");
@@ -815,7 +815,7 @@ function safe(value, formatter) {
     const indicator = document.createElement("div");
     indicator.className = `mv-trend-indicator ${trendClass}`;
     indicator.textContent = trendText;
-    indicator.setAttribute("title", "Based on last 5 matches vs season average Mat Value");
+    indicator.setAttribute("title", "Based on last 5 matches vs season average TPAR");
     container.appendChild(indicator);
   }
   
@@ -1156,7 +1156,7 @@ function safe(value, formatter) {
       }
     });
     
-    // Calculate rolling average (last 5 matches) - season average MV line
+    // Rolling 5-match average (for the trend line)
     const rollingAverages = [];
     for (let i = 0; i < matchData.length; i++) {
       const startIdx = Math.max(0, i - 4);
@@ -1198,7 +1198,22 @@ function safe(value, formatter) {
       svg.appendChild(bar);
     });
     
-    // Draw rolling average line AFTER bars (so it appears in front)
+    // Draw flat season average reference line (thin, dashed)
+    if (seasonMV !== null && seasonMV !== undefined) {
+      const flatY = zeroY - (seasonMV / chartMaxValue) * (plotHeight / 2);
+      const flatLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
+      flatLine.setAttribute("x1", padding.left);
+      flatLine.setAttribute("x2", padding.left + plotWidth);
+      flatLine.setAttribute("y1", flatY);
+      flatLine.setAttribute("y2", flatY);
+      flatLine.setAttribute("stroke", "rgba(255, 200, 80, 0.6)");
+      flatLine.setAttribute("stroke-width", "1.5");
+      flatLine.setAttribute("stroke-dasharray", "5 4");
+      flatLine.setAttribute("class", "season-avg-line");
+      svg.appendChild(flatLine);
+    }
+
+    // Draw rolling 5-match average line on top (thicker)
     if (rollingAverages.length > 1) {
       const avgPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
       let pathData = "";
@@ -1212,8 +1227,8 @@ function safe(value, formatter) {
         }
       });
       avgPath.setAttribute("d", pathData);
-      avgPath.setAttribute("stroke", "rgba(255,255,255,0.6)");
-      avgPath.setAttribute("stroke-width", "1.5");
+      avgPath.setAttribute("stroke", "rgba(255,255,255,0.75)");
+      avgPath.setAttribute("stroke-width", "2");
       avgPath.setAttribute("fill", "none");
       avgPath.setAttribute("class", "rolling-avg-line");
       svg.appendChild(avgPath);
@@ -1268,22 +1283,24 @@ function safe(value, formatter) {
       const activeMatch = matchData[activeIndex];
       const activeBar = bars[activeIndex];
       if (activeMatch && activeBar) {
-        // Get season average MV at this index
-        const seasonAvgMV = rollingAverages[activeIndex];
-        
+        // Get rolling 5-match avg at this index
+        const rolling5Avg = rollingAverages[activeIndex];
+
         // Format date as YYYY-MM-DD
         const dateStr = activeMatch.date || "";
-        
-        // Build tooltip with 4 lines
+
+        // Build tooltip with 5 lines
         const impactValue = activeMatch.mvImpact.toFixed(1);
         const impactSign = activeMatch.mvImpact > 0 ? '+' : '';
-        const seasonAvgStr = seasonAvgMV !== undefined ? seasonAvgMV.toFixed(1) : '—';
-        
+        const rolling5Str = rolling5Avg !== undefined ? rolling5Avg.toFixed(1) : '—';
+        const seasonAvgStr = seasonMV !== null && seasonMV !== undefined ? seasonMV.toFixed(1) : '—';
+
         const tooltipLines = [
           dateStr,
           activeMatch.opponent,
-          `MV Impact: ${impactSign}${impactValue}`,
-          `Season Avg MV: ${seasonAvgStr}`
+          `TPAR Impact: ${impactSign}${impactValue}`,
+          `5-match avg: ${rolling5Str}`,
+          `Season TPAR: ${seasonAvgStr}`
         ];
         const tooltipText = tooltipLines.join('\n');
         
@@ -1335,13 +1352,13 @@ function safe(value, formatter) {
       const lineEl = document.createElement("div");
       
       // Color MV Impact line based on sign
-      if (line.startsWith("MV Impact:")) {
+      if (line.startsWith("TPAR Impact:")) {
         lineEl.innerHTML = line.replace(
-          /MV Impact: ([\+\-]?[\d\.]+)/,
+          /TPAR Impact: ([\+\-]?[\d\.]+)/,
           (match, value) => {
             const isPositive = mvImpact >= 0;
             const color = isPositive ? "rgba(0, 194, 168, 0.9)" : "rgba(220, 90, 90, 0.9)";
-            return `MV Impact: <span style="color: ${color}">${value}</span>`;
+            return `TPAR Impact: <span style="color: ${color}">${value}</span>`;
           }
         );
       } else {

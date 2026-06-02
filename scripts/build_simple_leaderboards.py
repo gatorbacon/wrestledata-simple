@@ -90,7 +90,7 @@ def load_d1_wrestler_ids(season: int, data_dir: str = "mt/rankings_data", league
         state_lower = state.lower() if state else 'ky'
         data_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season)
     else:
-        data_path = Path(data_dir) / str(season)
+        data_path = Path(data_dir) / "ncaa_men" / str(season)
     
     if not data_path.exists():
         print(f"Warning: Rankings directory not found: {data_path}")
@@ -133,8 +133,8 @@ def process_weight_class_files(season: int, data_dir: str, d1_wrestler_ids: Set[
         state_lower = state.lower() if state else 'ky'
         data_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season)
     else:
-        data_path = Path(data_dir) / str(season)
-    
+        data_path = Path(data_dir) / "ncaa_men" / str(season)
+
     if not data_path.exists():
         raise FileNotFoundError(f"Data directory not found: {data_path}")
     

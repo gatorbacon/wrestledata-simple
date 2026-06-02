@@ -1,0 +1,69 @@
+{
+  "wrestler_id": "34952683132",
+  "name": "Liam Gil-Swiger",
+  "team": "Lehigh",
+  "team_slug": "lehigh",
+  "team_rank": 12,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": 208,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 1.01,
+    "pa7": 16.23,
+    "pd7": -15.22,
+    "si_plus": 84.8,
+    "df_plus": 83.8,
+    "apr_plus": 99.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.259,
+      "matches": 1,
+      "rank_weight": 199,
+      "rank_overall": 2165,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34948498132",
+      "opponent_rank": 98,
+      "opponent_name": "Drew Clearie",
+      "method": "TF 16-1 6:54"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34948498132",
+      "opponent_career_id": null,
+      "opponent_name": "Drew Clearie",
+      "opponent_team": "Brown",
+      "opponent_team_rank": 50,
+      "opponent_weight": 174,
+      "opponent_rank": 98,
+      "weight_class": "174",
+      "result": "L",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "6:54",
+      "event": "Princeton Open",
+      "mv_impact": -5.26
+    }
+  ],
+  "profile_generated_at": "2026-06-02"
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": null,
+  "team_id": "oklahoma",
+  "team_name": "Oklahoma",
+  "name": "Oklahoma",
+  "abbreviation": "OU",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": null,
+  "location": {
+    "state": "OK",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gfafbpxdhg&teamId=758891150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-06-02T13:15:41.817076Z",
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34963114132",
+      "133": "34963118132",
+      "141": "34963811132",
+      "149": "34963121132",
+      "157": "34963129132",
+      "165": "34963105132",
+      "174": "34963125132",
+      "184": "34963170132",
+      "197": "34963117132",
+      "285": "34963115132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  }
+}

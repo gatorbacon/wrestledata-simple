@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": null,
+  "team_id": "purdue",
+  "team_name": "Purdue",
+  "name": "Purdue",
+  "abbreviation": "PUR",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": null,
+  "location": {
+    "state": "IN",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gfafbpxdhg&teamId=758904150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-06-02T13:15:41.834304Z",
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34945148132",
+      "133": "34945193132",
+      "141": "34945147132",
+      "149": "34945149132",
+      "157": "34945134132",
+      "165": "34945145132",
+      "174": "34945140132",
+      "184": "34945144132",
+      "197": "34945139132",
+      "285": "34945135132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  }
+}

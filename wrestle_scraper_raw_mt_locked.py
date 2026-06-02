@@ -78,11 +78,13 @@ def acquire_tracking_lock(season_year, league, state=None, gender=None):
             raise ValueError("state and gender are required for HS tracking lock")
         lock_file = TRACKING_LOCK_DIR / f"tracking_{season_year}_hs_{state.lower()}_{gender}.lock"
     else:  # ncaa
-        lock_file = TRACKING_LOCK_DIR / f"tracking_{season_year}_ncaa.lock"
-    
+        if not gender:
+            raise ValueError("gender is required for NCAA tracking lock")
+        lock_file = TRACKING_LOCK_DIR / f"tracking_{season_year}_ncaa_{gender}.lock"
+
     max_attempts = 5
     attempt = 0
-    
+
     while attempt < max_attempts:
         if not lock_file.exists():
             try:
@@ -92,9 +94,9 @@ def acquire_tracking_lock(season_year, league, state=None, gender=None):
                 time.sleep(0.5)
         else:
             time.sleep(0.5)
-        
+
         attempt += 1
-    
+
     return False
 
 def release_tracking_lock(season_year, league, state=None, gender=None):
@@ -104,7 +106,9 @@ def release_tracking_lock(season_year, league, state=None, gender=None):
             raise ValueError("state and gender are required for HS tracking lock")
         lock_file = TRACKING_LOCK_DIR / f"tracking_{season_year}_hs_{state.lower()}_{gender}.lock"
     else:  # ncaa
-        lock_file = TRACKING_LOCK_DIR / f"tracking_{season_year}_ncaa.lock"
+        if not gender:
+            raise ValueError("gender is required for NCAA tracking lock")
+        lock_file = TRACKING_LOCK_DIR / f"tracking_{season_year}_ncaa_{gender}.lock"
     try:
         lock_file.unlink()
     except FileNotFoundError:
@@ -119,9 +123,6 @@ from typing import Dict, List, Optional
 from urllib.parse import parse_qs, urlparse
 import platform
 import argparse
-import boto3
-from boto3.dynamodb.conditions import Attr
-
 from fake_useragent import UserAgent
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -142,10 +143,6 @@ SCRAPE_LOG_FILE = lambda season: LOGS_DIR / f"scrape_log_{season}.json"
 DATA_DIR.mkdir(exist_ok=True, parents=True)
 LOGS_DIR.mkdir(exist_ok=True)
 
-# DynamoDB setup
-db = boto3.resource('dynamodb', endpoint_url='http://localhost:8001')
-teams_table = db.Table('teams')  # Keep this for reference but we won't use it to add teams
-
 def parse_args():
     """Parse command line arguments."""
     parser = argparse.ArgumentParser(description='Scrape wrestling team data.')
@@ -155,8 +152,8 @@ def parse_args():
     parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
                         help='League type: ncaa (default) or hs')
     parser.add_argument('-state', type=str, help='State code (required when league=hs, currently only KY supported)')
-    parser.add_argument('-gender', type=str, choices=['boys', 'girls'],
-                        help='Gender: boys or girls (required when league=hs)')
+    parser.add_argument('-gender', type=str, choices=['boys', 'girls', 'men', 'women'],
+                        help='Gender: boys/girls (HS) or men/women (NCAA)')
     parser.add_argument('-force', action='store_true',
                         help='Force complete re-scrape: archive logs and delete all team data files')
     return parser.parse_args()
@@ -175,28 +172,29 @@ class WrestlingScraper:
         self.state = state
         self.gender = gender
         
-        # Validate HS parameters
+        # Validate parameters per league
         if self.league == 'hs':
             if not self.state:
                 raise ValueError("-state is required when -league=hs")
-            # Normalize state to uppercase for comparison
             state_upper = self.state.upper()
             if state_upper != 'KY':
                 raise ValueError(f"Only KY is currently supported for HS. Got: {self.state}")
-            # Store normalized state
             self.state = state_upper
             if not self.gender:
                 raise ValueError("-gender is required when -league=hs")
             if self.gender not in ['boys', 'girls']:
-                raise ValueError(f"-gender must be 'boys' or 'girls'. Got: {self.gender}")
-        
+                raise ValueError(f"-gender must be 'boys' or 'girls' for HS. Got: {self.gender}")
+        else:  # ncaa
+            if not self.gender:
+                raise ValueError("-gender is required when -league=ncaa")
+            if self.gender not in ['men', 'women']:
+                raise ValueError(f"-gender must be 'men' or 'women' for NCAA. Got: {self.gender}")
+
         # Create season-specific data directory
         if self.league == 'hs':
-            # HS data goes to season-specific subdirectories: mt/data/hs_ky_boys/{season}/ or mt/data/hs_ky_girls/{season}/
             self.season_data_dir = DATA_DIR / f"hs_{self.state.lower()}_{self.gender}" / str(season_year)
         else:  # ncaa
-            # NCAA data goes to season-specific directory: mt/data/{season_year}/
-            self.season_data_dir = DATA_DIR / str(season_year)
+            self.season_data_dir = DATA_DIR / f"ncaa_{self.gender}" / str(season_year)
         self.season_data_dir.mkdir(exist_ok=True, parents=True)
         
         # Load scrape log AFTER league/state/gender are set (needed for log file path)
@@ -213,7 +211,7 @@ class WrestlingScraper:
         if self.league == 'hs':
             filename = f"wrestler_match_history_{self.season_year}_hs_{self.state.lower()}_{self.gender}.json"
         else:  # ncaa
-            filename = f"wrestler_match_history_{self.season_year}_ncaa.json"
+            filename = f"wrestler_match_history_{self.season_year}_ncaa_{self.gender}.json"
         
         return tracking_dir / filename
     
@@ -486,13 +484,11 @@ class WrestlingScraper:
     def _get_log_file_path(self) -> Path:
         """Get the log file path based on league type."""
         if self.league == 'hs':
-            # HS logs: mt/logs/hs_ky_boys/scrape_log_2026.json or mt/logs/hs_ky_girls/scrape_log_2026.json
             log_dir = LOGS_DIR / f"hs_{self.state.lower()}_{self.gender}"
-            log_dir.mkdir(exist_ok=True, parents=True)
-            return log_dir / f"scrape_log_{self.season_year}.json"
         else:  # ncaa
-            # NCAA logs: mt/logs/scrape_log_{season_year}.json (unchanged)
-            return SCRAPE_LOG_FILE(self.season_year)
+            log_dir = LOGS_DIR / f"ncaa_{self.gender}"
+        log_dir.mkdir(exist_ok=True, parents=True)
+        return log_dir / f"scrape_log_{self.season_year}.json"
     
     def _load_scrape_log(self) -> Dict:
         """Load or create the scrape log file."""
@@ -855,10 +851,13 @@ class WrestlingScraper:
                     f"{start_year}-{short_end} HS Girls"
                 ]
         else:  # ncaa
-            return [
-                f"{start_year}-{short_end} College Men",
-                f"{start_year}-{short_end} College"
-            ]
+            if self.gender == 'women':
+                return [f"{start_year}-{short_end} College Women"]
+            else:  # men
+                return [
+                    f"{start_year}-{short_end} College Men",
+                    f"{start_year}-{short_end} College",
+                ]
 
     def navigate_to_season(self) -> bool:
         """Navigate to the wrestling season page.
@@ -1165,11 +1164,9 @@ class WrestlingScraper:
         try:
             # Determine team list file path based on league type
             if self.league == 'hs':
-                # HS teams: data/team_lists/hs_ky_boys/teams.json or data/team_lists/hs_ky_girls/teams.json
-                team_list_file = Path(f"data/team_lists/hs_{self.state.lower()}_{self.gender}/teams.json")
+                team_list_file = Path(f"data/team_lists/hs_{self.state.lower()}_{self.gender}/{self.season_year}/teams.json")
             else:  # ncaa
-                # NCAA teams: data/team_lists/{season_year}/ncaa_d1_teams.json
-                team_list_file = Path(f"data/team_lists/{self.season_year}/ncaa_d1_teams.json")
+                team_list_file = Path(f"data/team_lists/ncaa_{self.gender}/{self.season_year}/teams.json")
             
             if team_list_file.exists():
                 league_label = f"{self.league.upper()}" if self.league == 'ncaa' else f"{self.state} HS {self.gender.capitalize()}"
@@ -2900,22 +2897,28 @@ def archive_scrape_logs(season: int, league: str, state: str = None, gender: str
             log_file.unlink()  # Delete the original file
             print(f"  Archived and deleted: {log_file.name} -> {archive_path.name}")
     else:
-        # NCAA logs: mt/logs/scrape_log_*.json
-        log_files = list(LOGS_DIR.glob(f"scrape_log_{season}.json"))
-        if not log_files:
-            print(f"  No scrape log file found for season {season}")
+        if not gender:
+            print("  Error: gender is required for NCAA log archiving")
             return
-        
-        # Create archive directory
-        archive_dir = LOGS_DIR / "archived"
+        # NCAA logs: mt/logs/ncaa_{gender}/scrape_log_{season}.json
+        log_dir = LOGS_DIR / f"ncaa_{gender}"
+        if not log_dir.exists():
+            print(f"  No log directory found: {log_dir}")
+            return
+
+        log_files = list(log_dir.glob(f"scrape_log_{season}.json"))
+        if not log_files:
+            print(f"  No scrape log file found for season {season} in {log_dir}")
+            return
+
+        archive_dir = log_dir / "archived"
         archive_dir.mkdir(exist_ok=True, parents=True)
-        
-        # Archive the log file, then delete the original
+
         for log_file in log_files:
             archive_name = f"{log_file.stem}_{timestamp}.json"
             archive_path = archive_dir / archive_name
             shutil.copy2(log_file, archive_path)
-            log_file.unlink()  # Delete the original file
+            log_file.unlink()
             print(f"  Archived and deleted: {log_file.name} -> {archive_path.name}")
 
 
@@ -2925,8 +2928,11 @@ def delete_team_data_files(season: int, league: str, state: str = None, gender: 
         # HS data: mt/data/hs_ky_<gender>/<season>/
         data_dir = DATA_DIR / f"hs_{state.lower()}_{gender}" / str(season)
     else:
-        # NCAA data: mt/data/<season>/
-        data_dir = DATA_DIR / str(season)
+        if not gender:
+            print("  Error: gender is required for NCAA data deletion")
+            return
+        # NCAA data: mt/data/ncaa_{gender}/{season}/
+        data_dir = DATA_DIR / f"ncaa_{gender}" / str(season)
     
     if not data_dir.exists():
         print(f"  No data directory found: {data_dir}")

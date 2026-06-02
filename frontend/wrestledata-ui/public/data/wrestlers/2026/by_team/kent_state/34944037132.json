@@ -1,0 +1,69 @@
+{
+  "wrestler_id": "34944037132",
+  "name": "Steven Duffy",
+  "team": "Kent State",
+  "team_slug": "kent_state",
+  "team_rank": 71,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": 206,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.88,
+    "pa7": 23.26,
+    "pd7": -19.38,
+    "si_plus": 88.5,
+    "df_plus": 70.7,
+    "apr_plus": 99.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.186,
+      "matches": 1,
+      "rank_weight": 203,
+      "rank_overall": 2254,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34943860132",
+      "opponent_rank": 129,
+      "opponent_name": "Tristin Greene",
+      "method": "TF 18-3 5:25"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-18",
+      "opponent_id": "34943860132",
+      "opponent_career_id": null,
+      "opponent_name": "Tristin Greene",
+      "opponent_team": "Bellarmine",
+      "opponent_team_rank": 62,
+      "opponent_weight": 184,
+      "opponent_rank": 129,
+      "weight_class": "184",
+      "result": "L",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "5:25",
+      "event": "Purple Raider Open",
+      "mv_impact": -6.19
+    }
+  ],
+  "profile_generated_at": "2026-06-02"
+}

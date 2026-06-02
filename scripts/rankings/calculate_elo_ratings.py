@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
-Calculate Elo ratings for boys wrestling (review only).
+Calculate Elo ratings for wrestling (review only).
 
 This script implements an Elo rating system for analysis purposes only.
 It does NOT modify existing matrix rankings, dual rankings, or website behavior.
 
 Usage:
-    python scripts/rankings/calculate_elo_ratings.py -season 2026
+    python scripts/rankings/calculate_elo_ratings.py -season 2026 --gender boys
+    python scripts/rankings/calculate_elo_ratings.py -season 2026 --league ncaa --gender men
 """
 
 import argparse
@@ -15,6 +16,26 @@ from collections import defaultdict
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
+
+
+def league_dir_key(league: str, gender: str, state: str = None) -> str:
+    if league == 'hs':
+        return f"hs_{state.lower()}_{gender}"
+    return f"ncaa_{gender}"
+
+
+def get_weights(league: str, gender: str) -> list:
+    if league == 'ncaa':
+        return [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
+    if gender == 'boys':
+        return [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
+    return [100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235]
+
+
+def get_manual_rank_cutoff(league: str, gender: str) -> int:
+    if league == 'ncaa':
+        return 33
+    return 60 if gender == 'boys' else 36
 
 
 # Elo constants
@@ -78,14 +99,14 @@ def parse_match_date(date_str: str) -> Optional[datetime]:
     return None
 
 
-def load_all_matches(season: int, state: str = 'ky', gender: str = 'boys') -> List[Dict]:
+def load_all_matches(season: int, state: str = 'ky', gender: str = 'boys', league: str = 'hs') -> List[Dict]:
     """
     Load all matches from processed team data files.
-    
+
     Returns:
         List of match dictionaries with wrestler IDs, dates, and results
     """
-    data_dir = Path(f"mt/processed_data/hs_{state}_{gender}") / str(season)
+    data_dir = Path("mt/processed_data") / league_dir_key(league, gender, state) / str(season)
     
     if not data_dir.exists():
         raise FileNotFoundError(f"Processed data directory not found: {data_dir}")
@@ -175,28 +196,23 @@ def load_all_matches(season: int, state: str = 'ky', gender: str = 'boys') -> Li
     return all_matches
 
 
-def load_matrix_top_60(season: int, state: str = 'ky', gender: str = 'boys') -> set:
+def load_matrix_top_60(season: int, state: str = 'ky', gender: str = 'boys', league: str = 'hs') -> set:
     """
-    Load matrix top 60 wrestlers across all weight classes.
-    
+    Load manually-ranked wrestlers across all weight classes (top 60/36 for HS, top 33 for NCAA).
+
     Returns:
-        Set of wrestler IDs in the top 60
+        Set of wrestler IDs in the manually-ranked group
     """
-    data_dir = Path(f"mt/rankings_data/hs_{state}_{gender}") / str(season)
-    
+    data_dir = Path("mt/rankings_data") / league_dir_key(league, gender, state) / str(season)
+
     if not data_dir.exists():
         print(f"Warning: Rankings directory not found: {data_dir}")
         return set()
-    
+
     top_ids = set()
-    cutoff = 60 if gender == 'boys' else 36
-    
-    # Get weight classes for gender
-    if gender == 'boys':
-        weights = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
-    else:  # girls
-        weights = [100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235]
-    
+    cutoff = get_manual_rank_cutoff(league, gender)
+    weights = get_weights(league, gender)
+
     for weight in weights:
         rankings_file = data_dir / f"rankings_{weight}.json"
         if not rankings_file.exists():
@@ -217,18 +233,18 @@ def load_matrix_top_60(season: int, state: str = 'ky', gender: str = 'boys') -> 
             print(f"Warning: Error loading {rankings_file}: {e}")
             continue
     
-    print(f"Found {len(top_ids)} wrestlers in matrix top {cutoff}")
+    print(f"Found {len(top_ids)} wrestlers in manually-ranked top {cutoff}")
     return top_ids
 
 
-def load_wrestler_info(season: int, state: str = 'ky', gender: str = 'boys') -> Dict[str, Dict]:
+def load_wrestler_info(season: int, state: str = 'ky', gender: str = 'boys', league: str = 'hs') -> Dict[str, Dict]:
     """
     Load wrestler information (name, team) from processed data.
-    
+
     Returns:
         Dict mapping wrestler_id -> {name, team}
     """
-    data_dir = Path(f"mt/processed_data/hs_{state}_{gender}") / str(season)
+    data_dir = Path("mt/processed_data") / league_dir_key(league, gender, state) / str(season)
     
     if not data_dir.exists():
         return {}
@@ -257,21 +273,21 @@ def load_wrestler_info(season: int, state: str = 'ky', gender: str = 'boys') -> 
     return wrestler_info
 
 
-def calculate_elo_ratings(season: int, state: str = 'ky', gender: str = 'boys') -> Dict:
+def calculate_elo_ratings(season: int, state: str = 'ky', gender: str = 'boys', league: str = 'hs') -> Dict:
     """
     Calculate Elo ratings for all wrestlers in a season.
-    
+
     Returns:
         Dictionary with Elo data for each wrestler
     """
     print(f"\n{'='*80}")
-    print(f"ELO RATING CALCULATION - Season {season} ({gender.upper()})")
+    print(f"ELO RATING CALCULATION - Season {season} ({league.upper()} {gender.upper()})")
     print(f"{'='*80}\n")
-    
+
     # Load data
-    all_matches = load_all_matches(season, state, gender)
-    top_60_ids = load_matrix_top_60(season, state, gender)
-    wrestler_info = load_wrestler_info(season, state, gender)
+    all_matches = load_all_matches(season, state, gender, league)
+    top_60_ids = load_matrix_top_60(season, state, gender, league)
+    wrestler_info = load_wrestler_info(season, state, gender, league)
     
     # Initialize wrestler tracking
     wrestlers: Dict[str, Dict] = defaultdict(lambda: {
@@ -399,24 +415,21 @@ def calculate_elo_ratings(season: int, state: str = 'ky', gender: str = 'boys') 
     return wrestlers
 
 
-def load_matrix_ranks(season: int, state: str = 'ky', gender: str = 'boys') -> Dict[str, int]:
+def load_matrix_ranks(season: int, state: str = 'ky', gender: str = 'boys', league: str = 'hs') -> Dict[str, int]:
     """
     Load matrix ranks for all wrestlers across all weight classes.
-    
+
     Returns:
         Dict mapping wrestler_id -> rank (None if unranked)
     """
-    data_dir = Path(f"mt/rankings_data/hs_{state}_{gender}") / str(season)
-    
+    data_dir = Path("mt/rankings_data") / league_dir_key(league, gender, state) / str(season)
+
     if not data_dir.exists():
         return {}
-    
+
     wrestler_to_rank = {}
-    if gender == 'boys':
-        weights = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
-    else:
-        weights = [100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235]
-    
+    weights = get_weights(league, gender)
+
     for weight in weights:
         rankings_file = data_dir / f"rankings_{weight}.json"
         if not rankings_file.exists():
@@ -441,24 +454,21 @@ def load_matrix_ranks(season: int, state: str = 'ky', gender: str = 'boys') -> D
     return wrestler_to_rank
 
 
-def load_matrix_ranks_by_weight(season: int, state: str = 'ky', gender: str = 'boys') -> Dict[int, Dict[str, int]]:
+def load_matrix_ranks_by_weight(season: int, state: str = 'ky', gender: str = 'boys', league: str = 'hs') -> Dict[int, Dict[str, int]]:
     """
     Load matrix ranks organized by weight class.
-    
+
     Returns:
         Dict mapping weight -> {wrestler_id -> rank}
     """
-    data_dir = Path(f"mt/rankings_data/hs_{state}_{gender}") / str(season)
-    
+    data_dir = Path("mt/rankings_data") / league_dir_key(league, gender, state) / str(season)
+
     if not data_dir.exists():
         return {}
-    
+
     ranks_by_weight = {}
-    if gender == 'boys':
-        weights = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
-    else:
-        weights = [100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235]
-    
+    weights = get_weights(league, gender)
+
     for weight in weights:
         rankings_file = data_dir / f"rankings_{weight}.json"
         if not rankings_file.exists():
@@ -487,20 +497,18 @@ def calculate_hybrid_ranks_by_weight(
     wrestlers: Dict,
     elo_by_id: Dict[str, Dict],
     ranks_by_weight: Dict[int, Dict[str, int]],
-    gender: str = 'boys'
+    gender: str = 'boys',
+    league: str = 'hs',
 ) -> Dict[int, Dict[str, int]]:
     """
     Calculate hybrid ranks for each weight class.
-    
+
     Returns:
         Dict mapping weight -> {wrestler_id -> hybrid_rank}
     """
-    tier_a_cutoff = 60 if gender == 'boys' else 36
+    tier_a_cutoff = get_manual_rank_cutoff(league, gender)
     hybrid_ranks_by_weight = {}
-    if gender == 'boys':
-        weights = [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285]
-    else:
-        weights = [100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235]
+    weights = get_weights(league, gender)
     
     for weight in weights:
         weight_ranks = ranks_by_weight.get(weight, {})
@@ -578,17 +586,17 @@ def calculate_hybrid_ranks_by_weight(
     return hybrid_ranks_by_weight
 
 
-def build_output_table(wrestlers: Dict, top_60_ids: set, season: int, state: str = 'ky', gender: str = 'boys') -> List[Dict]:
+def build_output_table(wrestlers: Dict, top_60_ids: set, season: int, state: str = 'ky', gender: str = 'boys', league: str = 'hs') -> List[Dict]:
     """
     Build output table with all required fields, including hybrid_rank.
-    
+
     Returns:
         List of wrestler dictionaries sorted by Elo score
     """
     # Load matrix ranks (global and by weight)
-    wrestler_to_rank = load_matrix_ranks(season, state, gender)
-    ranks_by_weight = load_matrix_ranks_by_weight(season, state, gender)
-    
+    wrestler_to_rank = load_matrix_ranks(season, state, gender, league)
+    ranks_by_weight = load_matrix_ranks_by_weight(season, state, gender, league)
+
     # Build elo_by_id for hybrid rank calculation
     elo_by_id = {}
     for wrestler_id, data in wrestlers.items():
@@ -596,7 +604,7 @@ def build_output_table(wrestlers: Dict, top_60_ids: set, season: int, state: str
         losses = data.get("losses", 0)
         match_count = data.get("match_count", 0)
         record_string = f"{wins}-{losses}" if match_count > 0 else "0-0"
-        
+
         elo_by_id[wrestler_id] = {
             "elo_score": round(data.get("elo", INITIAL_ELO), 2),
             "record_string": record_string,
@@ -606,10 +614,10 @@ def build_output_table(wrestlers: Dict, top_60_ids: set, season: int, state: str
             "losses": losses,
             "match_count": match_count
         }
-    
+
     # Calculate hybrid ranks by weight
     hybrid_ranks_by_weight = calculate_hybrid_ranks_by_weight(
-        wrestlers, elo_by_id, ranks_by_weight, gender
+        wrestlers, elo_by_id, ranks_by_weight, gender, league
     )
     
     # Build output with hybrid_rank (use best hybrid_rank across all weights)
@@ -674,43 +682,57 @@ def main():
         help="Season year (e.g., 2026)"
     )
     parser.add_argument(
+        "--league",
+        choices=["hs", "ncaa"],
+        default="hs",
+        help="League: 'hs' or 'ncaa' (default: hs)"
+    )
+    parser.add_argument(
         "--gender",
-        choices=["boys", "girls"],
+        choices=["boys", "girls", "men", "women"],
         default="boys",
-        help="Gender: 'boys' or 'girls' (default: boys)"
+        help="Gender: boys/girls (HS) or men/women (NCAA)"
     )
     parser.add_argument(
         "--state",
         type=str,
         default="ky",
-        help="State code (default: ky)"
+        help="State code for HS (default: ky)"
     )
     parser.add_argument(
         "--output",
         type=str,
-        help="Output JSON file path (default: mt/elo_ratings/{gender}/{season}/elo_ratings.json)"
+        help="Output JSON file path (default: mt/elo_ratings/{league_key}/{season}/elo_ratings.json)"
     )
-    
+
     args = parser.parse_args()
-    
+
     if args.season < 2020 or args.season > 2030:
         print(f"Error: Invalid season {args.season}")
         return
-    
+
+    if args.league == 'ncaa' and args.gender not in ('men', 'women'):
+        print("Error: --gender must be 'men' or 'women' for --league ncaa")
+        return
+    if args.league == 'hs' and args.gender not in ('boys', 'girls'):
+        print("Error: --gender must be 'boys' or 'girls' for --league hs")
+        return
+
     # Calculate Elo ratings
-    wrestlers = calculate_elo_ratings(args.season, args.state, args.gender)
-    
-    # Load top 60/36 for inactive flag calculation (60 for boys, 36 for girls)
-    top_60_ids = load_matrix_top_60(args.season, args.state, args.gender)
-    
+    wrestlers = calculate_elo_ratings(args.season, args.state, args.gender, args.league)
+
+    # Load manually-ranked group for inactive flag calculation
+    top_60_ids = load_matrix_top_60(args.season, args.state, args.gender, args.league)
+
     # Build output table
-    output_table = build_output_table(wrestlers, top_60_ids, args.season, args.state, args.gender)
-    
+    output_table = build_output_table(wrestlers, top_60_ids, args.season, args.state, args.gender, args.league)
+
     # Set output path
     if args.output:
         output_path = Path(args.output)
     else:
-        output_path = Path(f"mt/elo_ratings/{args.gender}/{args.season}/elo_ratings.json")
+        key = league_dir_key(args.league, args.gender, args.state)
+        output_path = Path(f"mt/elo_ratings/{key}/{args.season}/elo_ratings.json")
     
     output_path.parent.mkdir(parents=True, exist_ok=True)
     

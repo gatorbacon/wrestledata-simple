@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": null,
+  "team_id": "liu",
+  "team_name": "LIU",
+  "name": "LIU",
+  "abbreviation": "LIU",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": null,
+  "location": {
+    "state": "NY",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gfafbpxdhg&teamId=758969150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-06-02T13:15:41.770041Z",
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34953917132",
+      "133": "34953919132",
+      "141": "34953843132",
+      "149": "34953927132",
+      "157": "34953922132",
+      "165": "34953846132",
+      "174": "34953876132",
+      "184": "34953899132",
+      "197": "34953904132",
+      "285": "34953920132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  }
+}

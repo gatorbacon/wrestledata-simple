@@ -12,6 +12,12 @@ from typing import Dict, List, Set, Tuple, Optional
 from collections import defaultdict
 
 
+def league_dir_key(league, gender, state=None):
+    if league == 'hs':
+        return f"hs_{state.lower()}_{gender}"
+    return f"ncaa_{gender}"
+
+
 def load_manual_matches(season: int, data_dir: str = "mt/rankings_data",
                        league: str = 'ncaa', state: str = None, gender: str = None) -> List[Dict]:
     """
@@ -23,11 +29,7 @@ def load_manual_matches(season: int, data_dir: str = "mt/rankings_data",
     Returns:
         List of manual match dictionaries with winner_id, loser_id, optional date/note
     """
-    if league == 'hs' and state and gender:
-        # HS path format: hs_{state}_{gender}/{season}
-        manual_file = Path(data_dir) / f"hs_{state}_{gender}" / str(season) / "manual_matches.json"
-    else:
-        manual_file = Path(data_dir) / str(season) / "manual_matches.json"
+    manual_file = Path(data_dir) / league_dir_key(league, gender, state) / str(season) / "manual_matches.json"
     
     if not manual_file.exists():
         return []
@@ -494,12 +496,7 @@ def load_data_from_files(season: int, data_dir: str = "mt/rankings_data", league
     Returns:
         Dictionary mapping weight_class -> weight_class_data
     """
-    # Setup data path based on league type
-    if league == 'hs':
-        state_lower = state.lower() if state else 'ky'
-        data_path = Path(data_dir) / f"hs_{state_lower}_{gender}" / str(season)
-    else:  # ncaa
-        data_path = Path(data_dir) / str(season)
+    data_path = Path(data_dir) / league_dir_key(league, gender, state) / str(season)
     
     if not data_path.exists():
         raise FileNotFoundError(f"Data directory not found: {data_path}")
@@ -575,12 +572,7 @@ def save_relationships(relationships_by_weight: Dict[str, Dict], season: int, ou
         state: State code (required for HS)
         gender: Gender ('boys' or 'girls', required for HS)
     """
-    # Setup output path based on league type
-    if league == 'hs':
-        state_lower = state.lower() if state else 'ky'
-        output_path = Path(output_dir) / f"hs_{state_lower}_{gender}" / str(season)
-    else:  # ncaa
-        output_path = Path(output_dir) / str(season)
+    output_path = Path(output_dir) / league_dir_key(league, gender, state) / str(season)
     output_path.mkdir(parents=True, exist_ok=True)
     
     # Convert tuple keys to strings for JSON serialization
@@ -618,21 +610,24 @@ if __name__ == "__main__":
     parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
                         help='League type: ncaa (default) or hs')
     parser.add_argument('-state', type=str, help='State code (required when league=hs, currently only KY supported)')
-    parser.add_argument('-gender', type=str, choices=['boys', 'girls'],
-                        help='Gender: boys or girls (required when league=hs)')
+    parser.add_argument('-gender', type=str, choices=['boys', 'girls', 'men', 'women'],
+                        help='Gender: boys/girls (HS) or men/women (NCAA)')
     args = parser.parse_args()
-    
-    # Validate HS parameters
+
     if args.league == 'hs':
         if not args.state:
             raise ValueError("-state is required when -league=hs")
-        state_upper = args.state.upper()
-        if state_upper != 'KY':
+        if args.state.upper() != 'KY':
             raise ValueError(f"Only KY is currently supported for HS. Got: {args.state}")
         if not args.gender:
             raise ValueError("-gender is required when -league=hs")
         if args.gender not in ['boys', 'girls']:
-            raise ValueError(f"-gender must be 'boys' or 'girls'. Got: {args.gender}")
+            raise ValueError(f"-gender must be 'boys' or 'girls' for HS. Got: {args.gender}")
+    else:  # ncaa
+        if not args.gender:
+            raise ValueError("-gender is required when -league=ncaa")
+        if args.gender not in ['men', 'women']:
+            raise ValueError(f"-gender must be 'men' or 'women' for NCAA. Got: {args.gender}")
     
     relationships = build_all_relationships(args.season, args.data_dir, league=args.league, state=args.state, gender=args.gender)
     

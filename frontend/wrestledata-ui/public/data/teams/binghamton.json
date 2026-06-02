@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": null,
+  "team_id": "binghamton",
+  "team_name": "Binghamton",
+  "name": "Binghamton",
+  "abbreviation": "BING",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": null,
+  "location": {
+    "state": "NY",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gfafbpxdhg&teamId=758772150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-06-02T13:15:41.711217Z",
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34947807132",
+      "133": "34947816132",
+      "141": "34947809132",
+      "149": "34947799132",
+      "157": "34947803132",
+      "165": "34947812132",
+      "174": "34947800132",
+      "184": "34947801132",
+      "197": "34947834132",
+      "285": "34947804132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  }
+}

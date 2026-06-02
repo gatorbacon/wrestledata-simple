@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "season": 2026,
+  "gender": null,
+  "team_id": "rider",
+  "team_name": "Rider",
+  "name": "Rider",
+  "abbreviation": "RID",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": null,
+  "location": {
+    "state": "NJ",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=gfafbpxdhg&teamId=758906150",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/2026",
+    "starter_overrides_file": "mt/rankings_data/2026/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-06-02T13:15:41.836484Z",
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "34934822132",
+      "133": "34934831132",
+      "141": "34936032132",
+      "149": "34937348132",
+      "157": "34934842132",
+      "165": "34936023132",
+      "174": "34934840132",
+      "184": "34934841132",
+      "197": "34934833132",
+      "285": "35572032132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  }
+}

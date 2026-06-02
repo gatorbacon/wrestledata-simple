@@ -1,0 +1,103 @@
+{
+  "wrestler_id": "34963796132",
+  "name": "Travis Browning",
+  "team": "Mercyhurst",
+  "team_slug": "mercyhurst",
+  "team_rank": 73,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": 110,
+  "record": {
+    "overall": "0-3",
+    "vs_ranked": "0-3",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.9,
+    "pa7": 15.0,
+    "pd7": -12.1,
+    "si_plus": 84.7,
+    "df_plus": 80.1,
+    "apr_plus": 105.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.497,
+      "matches": 3,
+      "rank_weight": 197,
+      "rank_overall": 2185,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 3,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34951031132",
+      "opponent_rank": 169,
+      "opponent_name": "Eamonn Jimenez",
+      "method": "Dec 4-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-02-19",
+      "opponent_id": "34951031132",
+      "opponent_career_id": null,
+      "opponent_name": "Eamonn Jimenez",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 56,
+      "opponent_weight": 125,
+      "opponent_rank": 169,
+      "weight_class": "125",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-0",
+      "duration": "7:00",
+      "event": "vs. Mercyhurst",
+      "mv_impact": -4.97
+    },
+    {
+      "date": "2026-02-13",
+      "opponent_id": "34944010132",
+      "opponent_career_id": null,
+      "opponent_name": "Nico Calello",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 71,
+      "opponent_weight": 125,
+      "opponent_rank": 76,
+      "weight_class": "125",
+      "result": "L",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "4:08",
+      "event": "vs. Mercyhurst",
+      "mv_impact": -5.57
+    },
+    {
+      "date": "2025-11-22",
+      "opponent_id": "34934207132",
+      "opponent_career_id": null,
+      "opponent_name": "Waylon Rogers",
+      "opponent_team": "VMI",
+      "opponent_team_rank": 78,
+      "opponent_weight": 125,
+      "opponent_rank": 111,
+      "weight_class": "125",
+      "result": "L",
+      "method": "MD",
+      "score": "16-7",
+      "duration": "7:00",
+      "event": "vs. VMI",
+      "mv_impact": -5.96
+    }
+  ],
+  "profile_generated_at": "2026-06-02"
+}
