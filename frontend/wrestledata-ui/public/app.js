@@ -256,7 +256,7 @@ function safe(value, formatter) {
     headerRow.appendChild(title);
     
     // MV leaderboard URL (used by rank badge link only)
-    let leaderboardUrl = "/leaderboards/mat_value.html";
+    let leaderboardUrl = "/leaderboards/tpar.html";
     if (weightClass) {
       leaderboardUrl += `?weight=${weightClass}`;
     }
