@@ -26,7 +26,7 @@ function getMinMatchThreshold() {
 async function computeFilteredMVRankAndPercentile(wrestlerId, weight, season) {
   try {
     // Load the full MV dataset
-    const url = `/mat_value/${season}/mat_value_${season}.json`;
+    const url = `/data/mat_value/${season}/mat_value_${season}.json`;
     const res = await fetch(url);
     if (!res.ok) return null;
     
@@ -72,6 +72,18 @@ async function computeFilteredMVRankAndPercentile(wrestlerId, weight, season) {
 async function computeFilteredMVRank(wrestlerId, weight, season) {
   const result = await computeFilteredMVRankAndPercentile(wrestlerId, weight, season);
   return result ? result.rank : null;
+}
+
+// Rolling MBT trajectory cache (keyed by season string)
+const _rollingMbtCache = {};
+
+async function fetchRollingMbt(season) {
+  if (_rollingMbtCache[season]) return _rollingMbtCache[season];
+  const res = await fetch(`/data/mat_value/${season}/rolling_mbt_${season}.json`);
+  if (!res.ok) throw new Error(`Could not load rolling MBT data for ${season}`);
+  const data = await res.json();
+  _rollingMbtCache[season] = data;
+  return data;
 }
 
 // Define MV tier based on percentile
@@ -472,7 +484,7 @@ function safe(value, formatter) {
     // ========================================
     // MATCH IMPACT TIMELINE (PROMOTED - BEFORE CONTEXT)
     // ========================================
-    renderMatchImpactTimeline(data, mv.mv_avg);
+    renderRollingMbtTimeline(data, mv.mv_avg);
     
     // ========================================
     // MV CONTEXT (COMPRESSED, BELOW TIMELINE)
@@ -1051,7 +1063,7 @@ function safe(value, formatter) {
       // 6. MV Impact (right-aligned, tabular, color-coded)
       const impactTd = document.createElement("td");
       impactTd.className = "num";
-      const mvImpact = match.mv_impact;
+      const mvImpact = match.mv_impact_v1 !== undefined ? match.mv_impact_v1 : match.mv_impact;
       if (mvImpact !== null && mvImpact !== undefined) {
         const impactText = mvImpact > 0 ? `+${mvImpact.toFixed(1)}` : mvImpact.toFixed(1);
         impactTd.textContent = impactText;
@@ -1076,262 +1088,251 @@ function safe(value, formatter) {
   // directly in the match JSON as match.mv_impact. The frontend displays this
   // value verbatim without any calculations or heuristics.
   
-  function renderMatchImpactTimeline(data, seasonMV) {
+  function renderRollingMbtTimeline(data, seasonMV) {
     const container = document.getElementById("match-impact-chart-container");
-    container.innerHTML = "";
-    
-    const matches = data.match_list || [];
+    container.innerHTML = '<span style="opacity:0.4;font-size:0.85em;padding:8px;display:block">Loading…</span>';
+
+    const season = String(data.year || "2026");
+    const wrestlerId = String(data.wrestler_id);
+
+    // Bars use v1 per-match impact (mv_impact_v1 if MBT migration ran, else mv_impact).
+    // MBT deltas are too small (~0.1) to drive bars on a ±6 scale — v1 gives +3–+6
+    // for quality wins which is the right visual. MBT shows up in the headline and
+    // dashed reference line (seasonMV). Trajectory line uses rolling MBT.
+    const matches = (data.match_list || [])
+      .map(m => {
+        const impact = m.mv_impact_v1 !== undefined ? m.mv_impact_v1 : m.mv_impact;
+        return { date: m.date || "", mvImpact: impact, opponent: m.opponent_name, opponentRank: m.opponent_rank, result: m.result, method: m.method };
+      })
+      .filter(m => m.mvImpact !== null && m.mvImpact !== undefined)
+      .sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+
     if (matches.length === 0) {
+      container.innerHTML = "";
       container.textContent = "No match data available";
       return;
     }
-    
-    // Sort matches chronologically (oldest first)
-    const sortedMatches = [...matches].sort((a, b) => (a.date || "").localeCompare(b.date || ""));
-    
-    // Use stored mv_impact from JSON (computed in Python)
-    const matchData = sortedMatches.map(match => {
-      const mvImpact = match.mv_impact;
-      return {
-        date: match.date,
-        opponent: match.opponent_name,
-        opponentRank: match.opponent_rank,
-        result: match.result,
-        method: match.method,
-        mvImpact: mvImpact,
+
+    fetchRollingMbt(season).then(allTimelines => {
+      container.innerHTML = "";
+
+      // Build a date → MBT TPAR lookup from the rolling trajectory
+      // rolling_mbt uses MM/DD/YYYY; match_list uses YYYY-MM-DD — normalize both to YYYY-MM-DD
+      const toISO = s => {
+        if (!s) return s;
+        if (s.includes('-')) return s; // already YYYY-MM-DD
+        const [m, d, y] = s.split('/');
+        return `${y}-${m.padStart(2,'0')}-${d.padStart(2,'0')}`;
       };
-    }).filter(m => m.mvImpact !== null && m.mvImpact !== undefined);
-    
-    if (matchData.length === 0) {
-      container.textContent = "No valid match data for visualization";
-      return;
-    }
-    
-    // Create SVG chart (increased height for prominence)
-    const chartHeight = 250;
-    // Make chart width responsive to available container width to avoid clipping
-    const containerWidth = container.clientWidth || 600;
-    const chartWidth = containerWidth;
-    const padding = { top: 30, right: 20, bottom: 30, left: 20 };
-    const plotWidth = chartWidth - padding.left - padding.right;
-    const plotHeight = chartHeight - padding.top - padding.bottom;
-    
-    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-    svg.setAttribute("width", chartWidth);
-    svg.setAttribute("height", chartHeight);
-    svg.setAttribute("class", "match-impact-chart");
-    svg.style.display = "block";
-    
-    // Find max absolute value for scaling
-    const maxAbsValue = Math.max(...matchData.map(m => Math.abs(m.mvImpact || 0)), 1);
-    const chartMaxValue = Math.max(6, maxAbsValue); // Use at least 6 for fixed gridlines
-    const zeroY = padding.top + plotHeight / 2;
-    
-    // Draw horizontal gridlines at fixed MV values: +6, +4, +2, 0, -2, -4, -6
-    const gridValues = [6, 4, 2, 0, -2, -4, -6];
-    
-    gridValues.forEach(gridValue => {
-      const gridY = zeroY - (gridValue / chartMaxValue) * (plotHeight / 2);
-      
-      // Only draw if within chart bounds
-      if (gridY >= padding.top && gridY <= padding.top + plotHeight) {
-        const gridline = document.createElementNS("http://www.w3.org/2000/svg", "line");
-        gridline.setAttribute("x1", padding.left);
-        gridline.setAttribute("y1", gridY);
-        gridline.setAttribute("x2", padding.left + plotWidth);
-        gridline.setAttribute("y2", gridY);
-        
-        if (gridValue === 0) {
-          // Zero line slightly more prominent
-          gridline.setAttribute("stroke", "rgba(255,255,255,0.12)");
-          gridline.setAttribute("stroke-width", "1");
-        } else {
-          // Other gridlines subtle
-          gridline.setAttribute("stroke", "rgba(255,255,255,0.06)");
-          gridline.setAttribute("stroke-width", "1");
-        }
-        
-        gridline.setAttribute("class", "chart-gridline");
-        svg.appendChild(gridline);
-      }
-    });
-    
-    // Rolling 5-match average (for the trend line)
-    const rollingAverages = [];
-    for (let i = 0; i < matchData.length; i++) {
-      const startIdx = Math.max(0, i - 4);
-      const window = matchData.slice(startIdx, i + 1);
-      const avg = window.reduce((sum, m) => sum + (m.mvImpact || 0), 0) / window.length;
-      rollingAverages.push(avg);
-    }
-    
-    // Draw bars with default opacity (drawn first so white line appears on top)
-    const bars = [];
-    matchData.forEach((match, idx) => {
-      const x = padding.left + (idx / (matchData.length - 1)) * plotWidth;
-      const barWidth = Math.max(3, plotWidth / matchData.length - 2);
-      const barHeight = Math.abs(match.mvImpact) / chartMaxValue * (plotHeight / 2);
-      const isPositive = match.mvImpact >= 0;
-      
-      const bar = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-      bar.setAttribute("x", x - barWidth / 2);
-      bar.setAttribute("y", isPositive ? zeroY - barHeight : zeroY);
-      bar.setAttribute("width", barWidth);
-      bar.setAttribute("height", barHeight);
-      bar.setAttribute("fill", isPositive ? "rgba(0, 194, 168, 1)" : "rgba(220, 90, 90, 1)");
-      bar.setAttribute("opacity", "0.55"); // Default opacity (DataGolf-style)
-      bar.setAttribute("class", "match-impact-bar");
-      bar.setAttribute("data-index", idx);
-      bar.setAttribute("data-x", x);
-      bar.setAttribute("data-is-positive", isPositive);
-      bar.setAttribute("data-bar-height", barHeight);
-      
-      bars.push({
-        element: bar,
-        index: idx,
-        x: x,
-        match: match,
-        isPositive: isPositive,
-        barHeight: barHeight
+      const mbtByDate = {};
+      const timeline = allTimelines[wrestlerId] || [];
+      timeline.forEach(pt => { mbtByDate[toISO(pt.date)] = pt.tpar; });
+
+      // Build the white trajectory line points: for each match (in order),
+      // look up the MBT TPAR at that date (carry forward if not found).
+      let lastMbt = null;
+      const matchMbt = matches.map(m => {
+        const key = toISO(m.date);
+        if (mbtByDate[key] !== undefined) lastMbt = mbtByDate[key];
+        return lastMbt;
       });
-      
+
+      const chartHeight = 250;
+      const containerWidth = container.clientWidth || 600;
+      const padding = { top: 30, right: 20, bottom: 30, left: 20 };
+      const plotWidth = containerWidth - padding.left - padding.right;
+      const plotHeight = chartHeight - padding.top - padding.bottom;
+
+      const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      svg.setAttribute("width", containerWidth);
+      svg.setAttribute("height", chartHeight);
+      svg.setAttribute("class", "match-impact-chart");
+      svg.style.display = "block";
+
+      const maxAbsImpact = Math.max(...matches.map(m => Math.abs(m.mvImpact || 0)), 1);
+      const chartMaxValue = Math.max(6, maxAbsImpact);
+      const zeroY = padding.top + plotHeight / 2;
+
+      const yOf = v => zeroY - (Math.max(-chartMaxValue, Math.min(chartMaxValue, v)) / chartMaxValue) * (plotHeight / 2);
+      const xOf = i => matches.length === 1
+        ? padding.left + plotWidth / 2
+        : padding.left + (i / (matches.length - 1)) * plotWidth;
+
+      // Gridlines
+      [6, 4, 2, 0, -2, -4, -6].forEach(gv => {
+        const gy = yOf(gv);
+        if (gy < padding.top - 1 || gy > padding.top + plotHeight + 1) return;
+        const gl = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        gl.setAttribute("x1", padding.left); gl.setAttribute("x2", padding.left + plotWidth);
+        gl.setAttribute("y1", gy); gl.setAttribute("y2", gy);
+        gl.setAttribute("stroke", gv === 0 ? "rgba(255,255,255,0.12)" : "rgba(255,255,255,0.06)");
+        gl.setAttribute("stroke-width", "1");
+        gl.setAttribute("class", "chart-gridline");
+        svg.appendChild(gl);
+      });
+
+      // Season TPAR reference line (dashed yellow) — uses MBT final value
+      if (seasonMV !== null && seasonMV !== undefined) {
+        const flatY = yOf(seasonMV);
+        const flat = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        flat.setAttribute("x1", padding.left); flat.setAttribute("x2", padding.left + plotWidth);
+        flat.setAttribute("y1", flatY); flat.setAttribute("y2", flatY);
+        flat.setAttribute("stroke", "rgba(255,200,80,0.6)");
+        flat.setAttribute("stroke-width", "1.5");
+        flat.setAttribute("stroke-dasharray", "5 4");
+        flat.setAttribute("class", "season-avg-line");
+        svg.appendChild(flat);
+      }
+
+      // Bars: v1 per-match impact (one per match)
+      const barWidth = Math.max(3, plotWidth / matches.length - 2);
+      const bars = matches.map((m, idx) => {
+        const impact = m.mvImpact;
+        const x = xOf(idx);
+        const barHeight = Math.abs(impact) / chartMaxValue * (plotHeight / 2);
+        const isPositive = impact >= 0;
+
+        const bar = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        bar.setAttribute("x", x - barWidth / 2);
+        bar.setAttribute("y", isPositive ? zeroY - barHeight : zeroY);
+        bar.setAttribute("width", barWidth);
+        bar.setAttribute("height", barHeight);
+        bar.setAttribute("fill", isPositive ? "rgba(0,194,168,1)" : "rgba(220,90,90,1)");
+        bar.setAttribute("opacity", "0.55");
+        bar.setAttribute("class", "match-impact-bar");
+        svg.appendChild(bar);
+        return { element: bar, x, barHeight, isPositive, match: m, mbt: matchMbt[idx] };
+      });
+
+      // 5-match rolling average of per-match impacts (same reactive behavior as old chart)
+      const rollingMbt = matches.map((_, i) => {
+        const window = matches.slice(Math.max(0, i - 4), i + 1);
+        return window.reduce((s, m) => s + (m.mvImpact || 0), 0) / window.length;
+      });
+
+      if (rollingMbt.length > 1) {
+        let pathData = "";
+        rollingMbt.forEach((v, i) => {
+          const x = xOf(i);
+          const y = yOf(v);
+          pathData += pathData === "" ? `M ${x} ${y}` : ` L ${x} ${y}`;
+        });
+        const trajPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        trajPath.setAttribute("d", pathData);
+        trajPath.setAttribute("stroke", "rgba(255,255,255,0.75)");
+        trajPath.setAttribute("stroke-width", "2");
+        trajPath.setAttribute("fill", "none");
+        trajPath.setAttribute("class", "rolling-avg-line");
+        svg.appendChild(trajPath);
+      }
+
+      // Hover dot on trajectory line
+      const lineDot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      lineDot.setAttribute("r", "3");
+      lineDot.setAttribute("fill", "rgba(255,255,255,0.9)");
+      lineDot.setAttribute("class", "rolling-avg-dot");
+      lineDot.setAttribute("opacity", "0");
+      svg.appendChild(lineDot);
+
+      container.appendChild(svg);
+
+      // Hover: snap to nearest bar by X
+      let activeIndex = -1;
+
+      svg.addEventListener("mousemove", (e) => {
+        const svgRect = svg.getBoundingClientRect();
+        const mouseX = e.clientX - svgRect.left;
+        const relX = mouseX - padding.left;
+        const normX = Math.max(0, Math.min(1, relX / plotWidth));
+        let index = Math.round(normX * (matches.length - 1));
+        index = Math.max(0, Math.min(matches.length - 1, index));
+
+        if (index !== activeIndex) {
+          activeIndex = index;
+          bars.forEach((b, i) => b.element.setAttribute("opacity", i === activeIndex ? "1.0" : "0.55"));
+        }
+
+        const b = bars[activeIndex];
+        const m = b.match;
+        const impactSign = m.mvImpact >= 0 ? '+' : '';
+        const rollingVal = rollingMbt[activeIndex];
+        const rollingStr = rollingVal !== null ? `${rollingVal >= 0 ? '+' : ''}${rollingVal.toFixed(2)}` : '—';
+        const seasonAvgStr = seasonMV !== null && seasonMV !== undefined ? seasonMV.toFixed(2) : '—';
+        const tooltipLines = [
+          m.date,
+          m.opponent || '',
+          `TPAR Impact: ${impactSign}${m.mvImpact.toFixed(1)}`,
+          `5-match avg TPAR: ${rollingStr}`,
+          `Season TPAR: ${seasonAvgStr}`,
+        ];
+        const tooltipY = b.isPositive ? zeroY - b.barHeight - 12 : zeroY + b.barHeight + 12;
+        showChartTooltip(e, tooltipLines.join('\n'), svg, b.x, tooltipY, m.mvImpact);
+
+        lineDot.setAttribute("cx", b.x);
+        lineDot.setAttribute("cy", yOf(rollingMbt[activeIndex]));
+        lineDot.setAttribute("opacity", "1");
+      });
+
+      svg.addEventListener("mouseleave", () => {
+        bars.forEach(b => b.element.setAttribute("opacity", "0.55"));
+        lineDot.setAttribute("opacity", "0");
+        activeIndex = -1;
+        hideChartTooltip();
+      });
+
+    }).catch(() => {
+      // Rolling MBT failed — fall back to bars only with season avg line
+      container.innerHTML = "";
+      _renderBarsOnly(data, seasonMV, container);
+    });
+  }
+
+  function _renderBarsOnly(data, seasonMV, container) {
+    const matches = (data.match_list || [])
+      .map(m => ({ date: m.date || "", mvImpact: m.mv_impact_v1 !== undefined ? m.mv_impact_v1 : m.mv_impact, opponent: m.opponent_name }))
+      .filter(m => m.mvImpact !== null && m.mvImpact !== undefined)
+      .sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+    if (matches.length === 0) { container.textContent = "No match data available"; return; }
+
+    const chartHeight = 250;
+    const containerWidth = container.clientWidth || 600;
+    const padding = { top: 30, right: 20, bottom: 30, left: 20 };
+    const plotWidth = containerWidth - padding.left - padding.right;
+    const plotHeight = chartHeight - padding.top - padding.bottom;
+    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("width", containerWidth); svg.setAttribute("height", chartHeight);
+    svg.setAttribute("class", "match-impact-chart"); svg.style.display = "block";
+    const maxAbs = Math.max(...matches.map(m => Math.abs(m.mvImpact || 0)), 1);
+    const chartMaxValue = Math.max(6, maxAbs);
+    const zeroY = padding.top + plotHeight / 2;
+    const yOf = v => zeroY - (Math.max(-chartMaxValue, Math.min(chartMaxValue, v)) / chartMaxValue) * (plotHeight / 2);
+    const xOf = i => matches.length === 1 ? padding.left + plotWidth / 2 : padding.left + (i / (matches.length - 1)) * plotWidth;
+    [6,4,2,0,-2,-4,-6].forEach(gv => {
+      const gy = yOf(gv); if (gy < padding.top-1 || gy > padding.top+plotHeight+1) return;
+      const gl = document.createElementNS("http://www.w3.org/2000/svg","line");
+      gl.setAttribute("x1",padding.left); gl.setAttribute("x2",padding.left+plotWidth);
+      gl.setAttribute("y1",gy); gl.setAttribute("y2",gy);
+      gl.setAttribute("stroke",gv===0?"rgba(255,255,255,0.12)":"rgba(255,255,255,0.06)"); gl.setAttribute("stroke-width","1");
+      svg.appendChild(gl);
+    });
+    if (seasonMV !== null && seasonMV !== undefined) {
+      const flatY = yOf(seasonMV);
+      const flat = document.createElementNS("http://www.w3.org/2000/svg","line");
+      flat.setAttribute("x1",padding.left); flat.setAttribute("x2",padding.left+plotWidth);
+      flat.setAttribute("y1",flatY); flat.setAttribute("y2",flatY);
+      flat.setAttribute("stroke","rgba(255,200,80,0.6)"); flat.setAttribute("stroke-width","1.5"); flat.setAttribute("stroke-dasharray","5 4");
+      svg.appendChild(flat);
+    }
+    const barWidth = Math.max(3, plotWidth / matches.length - 2);
+    matches.forEach((m, idx) => {
+      const x = xOf(idx); const bh = Math.abs(m.mvImpact)/chartMaxValue*(plotHeight/2); const pos = m.mvImpact >= 0;
+      const bar = document.createElementNS("http://www.w3.org/2000/svg","rect");
+      bar.setAttribute("x",x-barWidth/2); bar.setAttribute("y",pos?zeroY-bh:zeroY);
+      bar.setAttribute("width",barWidth); bar.setAttribute("height",bh);
+      bar.setAttribute("fill",pos?"rgba(0,194,168,1)":"rgba(220,90,90,1)"); bar.setAttribute("opacity","0.55");
       svg.appendChild(bar);
     });
-    
-    // Draw flat season average reference line (thin, dashed)
-    if (seasonMV !== null && seasonMV !== undefined) {
-      const flatY = zeroY - (seasonMV / chartMaxValue) * (plotHeight / 2);
-      const flatLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
-      flatLine.setAttribute("x1", padding.left);
-      flatLine.setAttribute("x2", padding.left + plotWidth);
-      flatLine.setAttribute("y1", flatY);
-      flatLine.setAttribute("y2", flatY);
-      flatLine.setAttribute("stroke", "rgba(255, 200, 80, 0.6)");
-      flatLine.setAttribute("stroke-width", "1.5");
-      flatLine.setAttribute("stroke-dasharray", "5 4");
-      flatLine.setAttribute("class", "season-avg-line");
-      svg.appendChild(flatLine);
-    }
-
-    // Draw rolling 5-match average line on top (thicker)
-    if (rollingAverages.length > 1) {
-      const avgPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      let pathData = "";
-      rollingAverages.forEach((avg, idx) => {
-        const x = padding.left + (idx / (matchData.length - 1)) * plotWidth;
-        const y = zeroY - (avg / chartMaxValue) * (plotHeight / 2);
-        if (idx === 0) {
-          pathData = `M ${x} ${y}`;
-        } else {
-          pathData += ` L ${x} ${y}`;
-        }
-      });
-      avgPath.setAttribute("d", pathData);
-      avgPath.setAttribute("stroke", "rgba(255,255,255,0.75)");
-      avgPath.setAttribute("stroke-width", "2");
-      avgPath.setAttribute("fill", "none");
-      avgPath.setAttribute("class", "rolling-avg-line");
-      svg.appendChild(avgPath);
-    }
-    
-    // Create dot element for white line (will be positioned on hover)
-    const lineDot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-    lineDot.setAttribute("r", "3");
-    lineDot.setAttribute("fill", "rgba(255,255,255,0.9)");
-    lineDot.setAttribute("class", "rolling-avg-dot");
-    lineDot.setAttribute("opacity", "0");
-    svg.appendChild(lineDot);
-    
     container.appendChild(svg);
-    
-    // Store match data and bars for hover interaction
-    container.dataset.matchData = JSON.stringify(matchData);
-    container.dataset.bars = JSON.stringify(bars.map(b => ({
-      index: b.index,
-      x: b.x,
-      match: b.match
-    })));
-    
-    // DataGolf-style hover snap: single mousemove listener on SVG
-    let activeIndex = -1;
-    
-    svg.addEventListener("mousemove", (e) => {
-      const svgRect = svg.getBoundingClientRect();
-      const mouseX = e.clientX - svgRect.left;
-      
-      // Convert mouse X to nearest match index (global hover zone)
-      const relativeX = mouseX - padding.left;
-      const normalizedX = Math.max(0, Math.min(1, relativeX / plotWidth));
-      let index = Math.round(normalizedX * (matchData.length - 1));
-      index = Math.max(0, Math.min(matchData.length - 1, index));
-      
-      // Only update if index changed
-      if (index !== activeIndex) {
-        activeIndex = index;
-        
-        // Update bar opacities (no color change, only opacity)
-        bars.forEach((bar, idx) => {
-          if (idx === activeIndex) {
-            bar.element.setAttribute("opacity", "1.0");
-          } else {
-            bar.element.setAttribute("opacity", "0.55");
-          }
-        });
-      }
-      
-      // Always update tooltip and dot position
-      const activeMatch = matchData[activeIndex];
-      const activeBar = bars[activeIndex];
-      if (activeMatch && activeBar) {
-        // Get rolling 5-match avg at this index
-        const rolling5Avg = rollingAverages[activeIndex];
-
-        // Format date as YYYY-MM-DD
-        const dateStr = activeMatch.date || "";
-
-        // Build tooltip with 5 lines
-        const impactValue = activeMatch.mvImpact.toFixed(1);
-        const impactSign = activeMatch.mvImpact > 0 ? '+' : '';
-        const rolling5Str = rolling5Avg !== undefined ? rolling5Avg.toFixed(1) : '—';
-        const seasonAvgStr = seasonMV !== null && seasonMV !== undefined ? seasonMV.toFixed(1) : '—';
-
-        const tooltipLines = [
-          dateStr,
-          activeMatch.opponent,
-          `TPAR Impact: ${impactSign}${impactValue}`,
-          `5-match avg: ${rolling5Str}`,
-          `Season TPAR: ${seasonAvgStr}`
-        ];
-        const tooltipText = tooltipLines.join('\n');
-        
-        // Tooltip positioning: above for positive, below for negative
-        const tooltipY = activeBar.isPositive 
-          ? zeroY - activeBar.barHeight - 12  // Above bar
-          : zeroY + activeBar.barHeight + 12;  // Below bar
-        
-        showChartTooltip(e, tooltipText, svg, activeBar.x, tooltipY, activeMatch.mvImpact);
-        
-        // Update white line dot position
-        if (rollingAverages.length > activeIndex) {
-          const dotX = activeBar.x;
-          const dotY = zeroY - (seasonAvgMV / chartMaxValue) * (plotHeight / 2);
-          lineDot.setAttribute("cx", dotX);
-          lineDot.setAttribute("cy", dotY);
-          lineDot.setAttribute("opacity", "1");
-        }
-      }
-    });
-    
-    svg.addEventListener("mouseleave", () => {
-      // Reset all bars to default opacity
-      bars.forEach(bar => {
-        bar.element.setAttribute("opacity", "0.55");
-      });
-      // Hide dot
-      lineDot.setAttribute("opacity", "0");
-      activeIndex = -1;
-      hideChartTooltip();
-    });
   }
   
   function showChartTooltip(event, text, svgElement, svgX, svgY, mvImpact) {

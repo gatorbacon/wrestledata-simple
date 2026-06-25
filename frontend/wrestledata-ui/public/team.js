@@ -60,7 +60,7 @@ async function loadTeam(teamId) {
     let allWrestlerIds = new Set();
     
     try {
-      const processedData = await fetchJSON(`/data/processed_data/2026/${processedDataFilename}.json`);
+      const processedData = await fetchJSON(`/data/processed_data/ncaa_men/2026/${processedDataFilename}.json`);
       if (processedData.roster && Array.isArray(processedData.roster)) {
         processedData.roster.forEach(wrestler => {
           if (wrestler.season_wrestler_id) {
@@ -460,31 +460,17 @@ function renderRemainingRosterTable(remaining) {
   const tbody = document.querySelector("#remaining-roster-table tbody");
   tbody.innerHTML = "";
 
-  // Sort: Weight asc, Bonus Rate desc, Wins desc
+  // Sort: weight asc, then rank asc (unranked last), then TPAR desc
   remaining.sort((a, b) => {
     const weightA = a.weight || 999;
     const weightB = b.weight || 999;
     if (weightA !== weightB) return weightA - weightB;
-    
-    // Secondary: Bonus Rate desc
-    const bonusA = a.profile.metrics?.bonus_rate ?? 0;
-    const bonusB = b.profile.metrics?.bonus_rate ?? 0;
-    if (bonusB !== bonusA) return bonusB - bonusA;
-    
-    // Tertiary: Wins desc (parse from record.overall)
-    const parseWins = (profile) => {
-      const overall = profile?.record?.overall;
-      if (overall && typeof overall === "string") {
-        const parts = overall.split("-");
-        if (parts.length === 2) {
-          return parseInt(parts[0], 10) || 0;
-        }
-      }
-      return 0;
-    };
-    const winsA = parseWins(a.profile);
-    const winsB = parseWins(b.profile);
-    return winsB - winsA;
+    const rankA = a.profile?.current_rank ?? 9999;
+    const rankB = b.profile?.current_rank ?? 9999;
+    if (rankA !== rankB) return rankA - rankB;
+    const mvA = a.profile?.metrics?.mat_value?.mv_avg ?? -999;
+    const mvB = b.profile?.metrics?.mat_value?.mv_avg ?? -999;
+    return mvB - mvA;
   });
 
   remaining.forEach(({ weight, profile }) => {
@@ -495,105 +481,46 @@ function renderRemainingRosterTable(remaining) {
     weightTd.textContent = weight || "—";
     tr.appendChild(weightTd);
 
-    // Wrestler name (linked)
+    // Name (linked)
     const nameTd = document.createElement("td");
-    if (profile && profile.wrestler_id) {
-    const a = document.createElement("a");
-    a.href = `/wrestler.html?id=${profile.wrestler_id}`;
+    if (profile?.wrestler_id) {
+      const a = document.createElement("a");
+      a.href = `/wrestler.html?id=${profile.wrestler_id}`;
       a.textContent = profile.name || "Unknown";
-    nameTd.appendChild(a);
+      nameTd.appendChild(a);
     } else {
       nameTd.textContent = "—";
     }
     tr.appendChild(nameTd);
 
-    // Record: Format as "W–L" (no percentage)
-    // Parse from record.overall string (format: "W-L") or calculate from match_list
-    const recordTd = document.createElement("td");
-    let wins = 0;
-    let losses = 0;
-    
-    const overallRecord = profile?.record?.overall;
-    if (overallRecord && typeof overallRecord === "string") {
-      // Parse "W-L" format
-      const parts = overallRecord.split("-");
-      if (parts.length === 2) {
-        wins = parseInt(parts[0], 10) || 0;
-        losses = parseInt(parts[1], 10) || 0;
-      }
+    // Rank
+    const rankTd = document.createElement("td");
+    const rank = profile?.current_rank;
+    if (rank !== null && rank !== undefined) {
+      rankTd.appendChild(createRankBadge(rank));
     } else {
-      // Fallback: count from match_list
-      const matchList = profile?.match_list;
-      if (matchList && Array.isArray(matchList)) {
-        matchList.forEach(match => {
-          const result = match.result || "";
-          const isWin = result.includes("WIN") || result.includes("W");
-          if (isWin) wins++;
-          else if (result && !result.includes("MFF")) losses++;
-        });
-      }
+      rankTd.textContent = "—";
     }
-    
-    recordTd.textContent = `${wins}–${losses}`;
-    tr.appendChild(recordTd);
-    
-    // MV - numeric value only (no bar, typographic thresholds) - identical to Starting Roster
+    tr.appendChild(rankTd);
+
+    // TPAR
     const mvTd = document.createElement("td");
     mvTd.className = "num mv-value-cell";
-    
-    if (profile?.metrics?.mat_value?.mv_avg !== null && profile?.metrics?.mat_value?.mv_avg !== undefined) {
-      const mv = profile.metrics.mat_value.mv_avg;
+    const mv = profile?.metrics?.mat_value?.mv_avg;
+    if (mv !== null && mv !== undefined) {
       const mvSpan = document.createElement("span");
       mvSpan.className = "mv-numeric";
-      
-      // Apply typographic thresholds
-      if (mv >= 4.5) {
-        mvSpan.classList.add("mv-high");
-      } else if (mv >= 3.0) {
-        mvSpan.classList.add("mv-mid");
-      } else if (mv >= 0) {
-        mvSpan.classList.add("mv-low");
-      } else {
-        // MV < 0: muted red, normal weight, slightly reduced opacity
-        mvSpan.classList.add("mv-negative");
-      }
-      
-      // Format with leading + for positive values
+      if (mv >= 4.5) mvSpan.classList.add("mv-high");
+      else if (mv >= 3.0) mvSpan.classList.add("mv-mid");
+      else if (mv >= 0) mvSpan.classList.add("mv-low");
+      else mvSpan.classList.add("mv-negative");
       const sign = mv >= 0 ? "+" : "";
       mvSpan.textContent = `${sign}${mv.toFixed(1)}`;
-      
-      // Add tooltip using tooltip system
-      const tooltipText = `TPAR: ${sign}${mv.toFixed(1)}. Team Points Above Replacement relative to a replacement-level Division I starter at ${weight} lbs.`;
-      addTooltip(mvSpan, tooltipText);
-      
       mvTd.appendChild(mvSpan);
     } else {
       mvTd.textContent = "—";
     }
     tr.appendChild(mvTd);
-    
-    // Bonus Rate: Display as percentage (e.g., 75.0%)
-    const bonusTd = document.createElement("td");
-    const bonusRate = profile?.metrics?.bonus_rate;
-    if (bonusRate !== null && bonusRate !== undefined) {
-      bonusTd.textContent = percent(bonusRate);
-    } else {
-      bonusTd.textContent = "0.0%";
-    }
-    tr.appendChild(bonusTd);
-
-    // Matches Wrestled: Count from match_list if available
-    const matchesTd = document.createElement("td");
-    matchesTd.className = "num";
-    const matchList = profile?.match_list;
-    if (matchList && Array.isArray(matchList)) {
-      matchesTd.textContent = matchList.length.toString();
-    } else {
-      // Fallback: calculate from wins + losses
-      const totalMatches = wins + losses;
-      matchesTd.textContent = totalMatches > 0 ? totalMatches.toString() : "0";
-    }
-    tr.appendChild(matchesTd);
 
     tbody.appendChild(tr);
   });
