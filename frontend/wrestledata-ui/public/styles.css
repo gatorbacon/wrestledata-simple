@@ -10,16 +10,59 @@
    CSS VARIABLES / DESIGN TOKENS
    ======================================== */
 
-/* Light mode (placeholder) */
+/* Light mode ("Every Final Score" cream palette -- now the site default) */
 :root {
-  --bg: #ffffff;
-  --panel: #f9fafb;
-  --panel-2: #f3f4f6;
-  --border: #e5e7eb;
+  --bg: #f7f5f0;
+  --panel: #ffffff;
+  --panel-2: #f1ede4;
+  --border: #e7e1d5;
 
-  --text: #111827;
-  --muted: #6b7280;
-  --muted-2: #9ca3af;
+  --text: #211c16;
+  --muted: #6b6153;
+  --muted-2: #8f8574;
+
+  --accent: #2b6cb0;
+  --accent-2: #4a80c4;
+  --accent-rgb: 43, 108, 176;
+  --link: var(--accent);
+
+  --good: #38a169;
+  --bad: #c53030;
+  --warn: #ed8936;
+
+  --pill-1: #ed8936;
+  --pill-2: #38a169;
+  --pill-3: #2b6cb0;
+  --pill-4: #8a6fae;
+
+  --bar-neutral: #f1ede4;
+
+  /* Era-coded chart palette (rule-change eras, e.g. final_scores.js) --
+     categorical, not a light/dark chrome color, so it's the same in both
+     themes below. */
+  --era-1: #9aa5b1;
+  --era-2: #2b6cb0;
+  --era-3: #ed8936;
+
+  --r-sm: 6px;
+  --r-md: 10px;
+  --pad-sm: 8px;
+  --pad-md: 12px;
+  --pad-lg: 16px;
+}
+
+/* Dark mode (kept dormant for a possible future toggle -- not rendered
+   anywhere today since no page carries data-theme="dark" after the
+   sitewide re-theme). */
+[data-theme="dark"] {
+  --bg: #0b0f14;
+  --panel: #0f1620;
+  --panel-2: #111b26;
+  --border: #1f2a37;
+
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --muted-2: #6b7280;
 
   --accent: #00c2a8;
   --accent-2: #1fe3c6;
@@ -35,40 +78,11 @@
   --pill-3: #60a5fa;
   --pill-4: #a78bfa;
 
-  --bar-neutral: #e5e7eb;
-
-  --r-sm: 6px;
-  --r-md: 10px;
-  --pad-sm: 8px;
-  --pad-md: 12px;
-  --pad-lg: 16px;
-}
-
-/* Dark mode (default) */
-[data-theme="dark"] {
-  --bg: #0b0f14;
-  --panel: #0f1620;
-  --panel-2: #111b26;
-  --border: #1f2a37;
-
-  --text: #e5e7eb;
-  --muted: #9ca3af;
-  --muted-2: #6b7280;
-
-  --accent: #00c2a8;
-  --accent-2: #1fe3c6;
-  --link: var(--accent);
-
-  --good: #22c55e;
-  --bad: #ef4444;
-  --warn: #f59e0b;
-
-  --pill-1: #fbbf24;
-  --pill-2: #34d399;
-  --pill-3: #60a5fa;
-  --pill-4: #a78bfa;
-
   --bar-neutral: #233041;
+
+  --era-1: #9aa5b1;
+  --era-2: #2b6cb0;
+  --era-3: #ed8936;
 
   --r-sm: 6px;
   --r-md: 10px;
@@ -115,7 +129,7 @@ a:hover {
 
 .site-header {
   background: var(--panel-2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(33, 28, 22, 0.06);
   position: static;
   top: auto;
   width: 100%;
@@ -546,7 +560,7 @@ a:hover {
   left: 0;
   right: 0;
   height: 1px;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(33, 28, 22, 0.06);
   z-index: 0;
 }
 
@@ -606,7 +620,7 @@ a:hover {
   letter-spacing: 0.05em;
   padding: 6px 8px;
   text-align: left;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(33, 28, 22, 0.06);
   position: relative;
 }
 
@@ -616,7 +630,7 @@ a:hover {
 
 .preview-table tbody td {
   padding: 6px 8px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(33, 28, 22, 0.03);
   color: var(--text);
 }
 
@@ -625,7 +639,7 @@ a:hover {
 }
 
 .preview-table tbody tr:hover {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(33, 28, 22, 0.02);
 }
 
 .preview-table td.name {
@@ -724,7 +738,7 @@ a:hover {
   display: flex;
   gap: 14px;
   padding: 10px 0 12px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(33, 28, 22, 0.06);
   margin-bottom: 12px;
   overflow-x: auto;
   white-space: nowrap;
@@ -733,7 +747,7 @@ a:hover {
 .weight-tab {
   font-size: 13px;
   letter-spacing: 0.4px;
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(33, 28, 22, 0.55);
   text-decoration: none;
   padding: 4px 6px;
   border-bottom: 2px solid transparent;
@@ -741,7 +755,7 @@ a:hover {
 }
 
 .weight-tab:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(33, 28, 22, 0.8);
 }
 
 .weight-tab.active {
@@ -790,7 +804,7 @@ a:hover {
 }
 
 .legend-item.co::before {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(33, 28, 22, 0.25);
 }
 
 .legend-item.split::before {
@@ -825,10 +839,10 @@ a:hover {
   top: 0;
   left: 0;
   z-index: 11;
-  background: rgba(10, 14, 18, 0.95);
+  background: var(--panel);
   backdrop-filter: blur(6px);
-  border-right: 1px solid rgba(255, 255, 255, 0.06);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-right: 1px solid rgba(33, 28, 22, 0.06);
+  border-bottom: 1px solid rgba(33, 28, 22, 0.06);
   width: 240px;
   height: 32px;
 }
@@ -844,13 +858,13 @@ a:hover {
   padding: 0 var(--pad-sm);
   width: 240px;
   height: 32px;
-  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  border-right: 1px solid rgba(33, 28, 22, 0.06);
   cursor: pointer;
   transition: background 0.12s ease;
 }
 
 .matrix-row-header:hover {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(33, 28, 22, 0.03);
 }
 
 .matrix-row-header .rank {
@@ -875,9 +889,9 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(10, 14, 18, 0.95);
+  background: var(--panel);
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(33, 28, 22, 0.06);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -891,7 +905,7 @@ a:hover {
 }
 
 .matrix-col-header.highlighted {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(33, 28, 22, 0.05);
 }
 
 .matrix-cell {
@@ -906,12 +920,12 @@ a:hover {
   background: transparent;
   transition: opacity 0.12s ease;
   cursor: pointer;
-  border-right: 1px solid rgba(255, 255, 255, 0.03);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  border-right: 1px solid rgba(33, 28, 22, 0.03);
+  border-bottom: 1px solid rgba(33, 28, 22, 0.03);
 }
 
 .matrix-cell {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(33, 28, 22, 0.9);
 }
 
 .matrix-cell.empty {
@@ -919,7 +933,7 @@ a:hover {
 }
 
 .matrix-cell.cell-self {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(33, 28, 22, 0.02);
   pointer-events: none;
   cursor: default;
   position: relative;
@@ -937,15 +951,15 @@ a:hover {
     135deg,
     transparent,
     transparent 2px,
-    rgba(255, 255, 255, 0.08) 2px,
-    rgba(255, 255, 255, 0.08) 4px
+    rgba(33, 28, 22, 0.08) 2px,
+    rgba(33, 28, 22, 0.08) 4px
   );
   pointer-events: none;
 }
 
 /* Cell hover outline (ONLY affects the hovered cell itself - no descendant selectors) */
 .matrix-cell:hover {
-  outline: 1px solid rgba(255, 255, 255, 0.6);
+  outline: 1px solid rgba(33, 28, 22, 0.6);
   outline-offset: -1px;
 }
 
@@ -953,10 +967,10 @@ a:hover {
 .matrix-cell.self {
   background: repeating-linear-gradient(
     45deg,
-    rgba(255, 255, 255, 0.08),
-    rgba(255, 255, 255, 0.08) 4px,
-    rgba(255, 255, 255, 0.02) 4px,
-    rgba(255, 255, 255, 0.02) 8px
+    rgba(33, 28, 22, 0.08),
+    rgba(33, 28, 22, 0.08) 4px,
+    rgba(33, 28, 22, 0.02) 4px,
+    rgba(33, 28, 22, 0.02) 8px
   );
   pointer-events: none;
 }
@@ -975,7 +989,7 @@ a:hover {
 }
 
 .matrix-cell.cell-co {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(33, 28, 22, 0.25);
 }
 
 .matrix-cell.cell-split {
@@ -1464,7 +1478,7 @@ table thead th {
   position: sticky;
   top: 0;
   z-index: 5;
-  background: rgba(10, 14, 18, 0.95);
+  background: var(--panel);
   backdrop-filter: blur(6px);
 }
 
@@ -2380,8 +2394,8 @@ th.tooltip-trigger .tooltip {
 }
 
 .profile-summary-col--timeline {
-  border-left: 1px solid rgba(255,255,255,0.06);
-  border-right: 1px solid rgba(255,255,255,0.06);
+  border-left: 1px solid rgba(33,28,22,0.06);
+  border-right: 1px solid rgba(33,28,22,0.06);
   padding: 0 20px;
 }
 
@@ -2413,7 +2427,7 @@ th.tooltip-trigger .tooltip {
   border: none;
   border-radius: 0;
   padding: 0;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(33,28,22,0.06);
   padding-bottom: 24px;
   margin-bottom: 24px;
 }
@@ -2479,7 +2493,7 @@ th.tooltip-trigger .tooltip {
   width: 100%;
   max-width: 200px;
   height: 4px;
-  background: rgba(255,255,255,0.06);
+  background: rgba(33,28,22,0.06);
   border-radius: 999px;
   overflow: hidden;
   position: relative;
@@ -2502,20 +2516,20 @@ th.tooltip-trigger .tooltip {
 
 .profile-panel--mv .mv-rank-label {
   font-size: 0.875rem;
-  color: rgba(255,255,255,0.7);
+  color: rgba(33,28,22,0.7);
   font-weight: 500;
 }
 
 .profile-panel--mv .mv-sublabel {
   font-size: 0.8125rem;
-  color: rgba(255,255,255,0.6);
+  color: rgba(33,28,22,0.6);
   margin-top: 4px;
   font-weight: 500;
 }
 
 .profile-panel--mv .mv-description {
   font-size: 0.8125rem;
-  color: rgba(255,255,255,0.5); /* Reduced opacity from 0.65 */
+  color: rgba(33,28,22,0.5); /* Reduced opacity from 0.65 */
   line-height: 1.4;
   margin-bottom: 16px;
 }
@@ -2581,7 +2595,7 @@ th.tooltip-trigger .tooltip {
   font-size: 0.8125rem; /* Match leaderboard label size */
   letter-spacing: 0;
   text-transform: none; /* No uppercase for dual-format */
-  color: rgba(255,255,255,0.7); /* Slightly lighter */
+  color: rgba(33,28,22,0.7); /* Slightly lighter */
   font-weight: 500;
 }
 
@@ -2595,7 +2609,7 @@ th.tooltip-trigger .tooltip {
 
 .skill-bar {
   height: 10px; /* Same as leaderboard value bars */
-  background: rgba(255,255,255,0.06);
+  background: rgba(33,28,22,0.06);
   border-radius: 999px;
   overflow: hidden;
   width: 100%;
@@ -2621,13 +2635,13 @@ th.tooltip-trigger .tooltip {
   display: flex;
   justify-content: space-between;
   font-size: 0.75rem; /* Smaller font - reduced visual weight */
-  color: rgba(255,255,255,0.5); /* More muted - reduced visual weight */
+  color: rgba(33,28,22,0.5); /* More muted - reduced visual weight */
   padding: 2px 0;
 }
 
 .quick-stat-value {
   font-weight: 500; /* Reduced from 600 */
-  color: rgba(255,255,255,0.7); /* More muted */
+  color: rgba(33,28,22,0.7); /* More muted */
   font-variant-numeric: tabular-nums;
 }
 
@@ -2637,7 +2651,7 @@ th.tooltip-trigger .tooltip {
   gap: 8px;
   margin-top: 12px;
   padding-top: 12px;
-  border-top: 1px solid rgba(255,255,255,0.06);
+  border-top: 1px solid rgba(33,28,22,0.06);
 }
 
 .mini-badge {
@@ -2645,8 +2659,8 @@ th.tooltip-trigger .tooltip {
   border-radius: 6px;
   font-size: 0.75rem; /* Smaller font - reduced visual weight */
   background: rgba(0,0,0,0.15); /* More subtle */
-  border: 1px solid rgba(255,255,255,0.05); /* More subtle */
-  color: rgba(255,255,255,0.6); /* More muted */
+  border: 1px solid rgba(33,28,22,0.05); /* More subtle */
+  color: rgba(33,28,22,0.6); /* More muted */
 }
 
 /* Ensure MV panel visually outweighs Skill Profile */
@@ -2691,7 +2705,7 @@ th.tooltip-trigger .tooltip {
 
 .section-divider {
   height: 1px;
-  background: rgba(255,255,255,0.06);
+  background: rgba(33,28,22,0.06);
   margin-bottom: 20px;
 }
 
@@ -2707,14 +2721,14 @@ th.tooltip-trigger .tooltip {
 
 .profile-section--mv .mv-sublabel {
   font-size: 0.875rem;
-  color: rgba(255,255,255,0.6);
+  color: rgba(33,28,22,0.6);
   margin-top: 6px;
   font-weight: 400;
 }
 
 .profile-section--mv .mv-description {
   font-size: 0.8125rem;
-  color: rgba(255,255,255,0.5);
+  color: rgba(33,28,22,0.5);
   line-height: 1.5;
   margin-top: 12px;
 }
@@ -2766,7 +2780,7 @@ th.tooltip-trigger .tooltip {
 .mv-percentile-bar {
   width: 160px;
   height: 6px;
-  background: rgba(255,255,255,0.1);
+  background: rgba(33,28,22,0.1);
   border-radius: 3px;
   overflow: hidden;
   position: relative;
@@ -2879,7 +2893,7 @@ th.tooltip-trigger .tooltip {
   position: relative;
   flex: 1;
   height: 10px;
-  background: rgba(255,255,255,0.06);
+  background: rgba(33,28,22,0.06);
   border-radius: 6px;
   overflow: hidden;
 }
@@ -2900,8 +2914,8 @@ th.tooltip-trigger .tooltip {
 }
 
 .skill-bar.neutral {
-  background: rgba(255,255,255,0.3);
-  border-left: 2px solid rgba(255,255,255,0.5);
+  background: rgba(33,28,22,0.3);
+  border-left: 2px solid rgba(33,28,22,0.5);
 }
 
 .skill-bar.high {
@@ -2915,7 +2929,7 @@ th.tooltip-trigger .tooltip {
   top: -2px;
   bottom: -2px;
   width: 2px;
-  background: rgba(255,255,255,.85);
+  background: rgba(33,28,22,.85);
   pointer-events: none;
   z-index: 2;
   
@@ -2926,7 +2940,7 @@ th.tooltip-trigger .tooltip {
 }
 
 .skill-value-neutral {
-  color: rgba(255,255,255,0.7);
+  color: rgba(33,28,22,0.7);
 }
 
 .skill-value-high {
@@ -2935,7 +2949,7 @@ th.tooltip-trigger .tooltip {
 
 .skill-profile-description {
   font-size: 0.875rem;
-  color: rgba(255,255,255,0.7);
+  color: rgba(33,28,22,0.7);
   font-style: italic;
   margin-top: 12px;
   margin-bottom: 12px;
@@ -2955,7 +2969,7 @@ th.tooltip-trigger .tooltip {
   gap: 6px;
   margin-top: 12px;
   padding-top: 12px;
-  border-top: 1px solid rgba(255,255,255,0.06);
+  border-top: 1px solid rgba(33,28,22,0.06);
 }
 
 /* Match Impact Timeline (promoted) */
@@ -2984,12 +2998,12 @@ th.tooltip-trigger .tooltip {
 .match-impact-label:last-child::before {
   width: 2px;
   height: 16px;
-  background: rgba(255,255,255,0.5);
+  background: rgba(33,28,22,0.5);
   border-radius: 0;
 }
 
 .chart-zero-line {
-  stroke: rgba(255,255,255,0.3) !important;
+  stroke: rgba(33,28,22,0.3) !important;
   stroke-width: 2 !important;
 }
 
@@ -3028,7 +3042,7 @@ th.tooltip-trigger .tooltip {
   align-items: baseline;
   font-size: 0.875rem;
   padding-top: 12px;
-  border-top: 1px solid rgba(255,255,255,0.06);
+  border-top: 1px solid rgba(33,28,22,0.06);
 }
 
 /* ========================================
@@ -3736,7 +3750,7 @@ th.tooltip-trigger .tooltip {
 
 .featured-card-accent {
   border-color: var(--accent);
-  background: linear-gradient(135deg, var(--panel), #0f1f2e);
+  background: linear-gradient(135deg, var(--panel), var(--panel-2));
 }
 
 .featured-card-header {
