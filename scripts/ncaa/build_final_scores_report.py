@@ -37,6 +37,15 @@ against a known-correct total and getting the wrong answer without it:
   - unique_combos counts distinct EXACT (uncapped) scores seen, not distinct
     populated cells in the capped 25/15 grid (capping merges some distinct
     raw scores into the same cell).
+  - "MFFL" (a whole match forfeited outright, e.g. a bracket-line no-show)
+    is a distinct code from "For." (a bout that started then ended in
+    forfeit) -- both are legitimate, differently-labeled no-score results,
+    not variants of the same thing.
+  - A sudden-victory/tiebreaker period can end in a fall instead of running
+    to its own score, e.g. "SV-1 (Fall) 7:53" -- the leading code matches a
+    GRID_CODES entry but the trailing group is a time, not "N-N". These are
+    pins and get counted as such (stoppage["Fall"], pin_rate), not dropped
+    into "other".
 
 Usage:
   python scripts/ncaa/build_final_scores_report.py                  # rebuild every season
@@ -62,14 +71,21 @@ PTS_CAP = 17
 # letter class would eat only "SV-"/"TB-" and strand the digit).
 KNOWN_CODES = [
     "Min-TF", "SV-1", "SV-2", "SV-3", "TB-1", "TB-2", "TB-3",
-    "MD", "TF", "Dec", "Fall", "Inj.", "M.", "NC", "For.", "Def.", "DQ",
+    "MD", "TF", "Dec", "Fall", "Inj.", "M.", "NC", "For.", "MFFL", "Def.", "DQ",
 ]
 CODE_SCORE_RE = re.compile(
-    r'^(' + "|".join(re.escape(c) for c in KNOWN_CODES) + r')(?:\s*\([^)]*\))?(?:\s+(\d+)\s*-\s*(\d+))?'
+    r'^(' + "|".join(re.escape(c) for c in KNOWN_CODES) + r')(?:\s*\([^)]*\))?(?:\s+(\d+)\s*-+\s*(\d+))?'
 )
 
 GRID_CODES = {"Dec", "MD", "TF", "SV-1", "SV-2", "SV-3", "TB-1", "TB-2", "TB-3", "Min-TF"}
-NO_SCORE_LABELS = {"Fall", "M.", "Inj.", "NC", "For.", "Def.", "DQ"}
+# MFFL = a whole match forfeited outright (e.g. a bracket-line no-show),
+# distinct from "For." (a bout that started then ended in forfeit).
+NO_SCORE_LABELS = {"Fall", "M.", "Inj.", "NC", "For.", "MFFL", "Def.", "DQ"}
+# A sudden-victory/tiebreaker period can end in a fall instead of running to
+# its own score (e.g. "SV-1 (Fall) 7:53") -- the code matches a GRID_CODES
+# entry but carries no "N-N" score, just a time. Recognize that annotation
+# and count it as a pin rather than dropping it into "other".
+OVERTIME_FALL_RE = re.compile(r'\(\s*Fall\s*\)')
 
 
 def split_trailing_paren(s):
@@ -177,6 +193,10 @@ def compute_season_stats(season: str) -> dict:
 
                     points_wins[min(wscore, PTS_CAP)] += 1
                     points_losses[min(lscore, PTS_CAP)] += 1
+                elif code in GRID_CODES and OVERTIME_FALL_RE.search(code_score):
+                    # Overtime period ended in a pin, not a running score.
+                    stoppage["Fall"] += 1
+                    pin_count += 1
                 elif code in NO_SCORE_LABELS:
                     stoppage[code] += 1
                     if code == "Fall":
@@ -266,6 +286,11 @@ def main():
     ordered = sorted(trend_entries.items(), key=lambda kv: kv[0])  # oldest first
     trend_out = {
         "seasons": [e["label"] for _, e in ordered],
+        # 4-digit season year alongside the display label, so the frontend
+        # can derive era/rule-change boundaries (e.g. season >= 2024) from
+        # real data instead of a hardcoded array index -- keeps working
+        # unmodified as new seasons (2027+) are added.
+        "season_years": [int(s) for s, _ in ordered],
         "winner": [e["winner"] for _, e in ordered],
         "loser": [e["loser"] for _, e in ordered],
         "tech_fall_rate": [e["tech_fall_rate"] for _, e in ordered],
