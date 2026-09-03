@@ -3,8 +3,8 @@
   "canonical_name": "Chance Neace",
   "career_record": {
     "wins": 15,
-    "losses": 8,
-    "win_pct": 0.652
+    "losses": 12,
+    "win_pct": 0.556
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 150,
       "record": "15-8",
       "regional_place": 3,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -484,6 +485,106 @@
           "duration": "0:59",
           "event": "Rumble on the Hilltop",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000210",
+      "grade": 11,
+      "team": "Perry County Central",
+      "weight_class": 145,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000209",
+          "opponent_career_id": "career_016724",
+          "opponent_name": "Eric Spencer",
+          "opponent_team": "Anderson County",
+          "opponent_team_rank": null,
+          "opponent_weight": 145,
+          "opponent_rank": null,
+          "weight_class": "145",
+          "result": "L",
+          "method": "FALL",
+          "score": "1:34",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000212",
+          "opponent_career_id": "career_014029",
+          "opponent_name": "Mikey Smith",
+          "opponent_team": "Moore",
+          "opponent_team_rank": null,
+          "opponent_weight": 145,
+          "opponent_rank": null,
+          "weight_class": "145",
+          "result": "L",
+          "method": "FALL",
+          "score": "0:34",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2011,
+      "wrestler_id": "HW_B_000629",
+      "grade": 10,
+      "team": "Perry County Central",
+      "weight_class": 130,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2011-02-19",
+          "opponent_id": "HW_B_000628",
+          "opponent_career_id": "career_016690",
+          "opponent_name": "Lazaro Berenguer",
+          "opponent_team": "Southern",
+          "opponent_team_rank": null,
+          "opponent_weight": 130,
+          "opponent_rank": null,
+          "weight_class": "130",
+          "result": "L",
+          "method": "FALL",
+          "score": "4:53",
+          "duration": null,
+          "event": "2011 KHSAA State Championship",
+          "season": 2011,
+          "opponent_ky": true
+        },
+        {
+          "date": "2011-02-19",
+          "opponent_id": "HW_B_000630",
+          "opponent_career_id": "career_016942",
+          "opponent_name": "Russell Nyitrai",
+          "opponent_team": "Eastern",
+          "opponent_team_rank": null,
+          "opponent_weight": 130,
+          "opponent_rank": null,
+          "weight_class": "130",
+          "result": "L",
+          "method": "FALL",
+          "score": "1:52",
+          "duration": null,
+          "event": "2011 KHSAA State Championship",
+          "season": 2011,
           "opponent_ky": true
         }
       ]

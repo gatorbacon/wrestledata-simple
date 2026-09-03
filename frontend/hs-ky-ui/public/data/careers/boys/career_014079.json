@@ -2,9 +2,9 @@
   "career_id": "career_014079",
   "canonical_name": "Dale Hensley",
   "career_record": {
-    "wins": 68,
-    "losses": 32,
-    "win_pct": 0.68
+    "wins": 69,
+    "losses": 34,
+    "win_pct": 0.67
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 132,
       "record": "33-9",
       "regional_place": 3,
+      "regional_data_tracked": true,
       "state_place": 7,
       "current_rank": null,
       "matches": [
@@ -730,6 +731,7 @@
       "weight_class": 120,
       "record": "11-7",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1121,6 +1123,7 @@
       "weight_class": 113,
       "record": "24-16",
       "regional_place": 4,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1950,6 +1953,74 @@
           "duration": "7:00",
           "event": "gladiator",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000055",
+      "grade": 9,
+      "team": "Scott",
+      "weight_class": 113,
+      "record": "1-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000056",
+          "opponent_career_id": "career_016665",
+          "opponent_name": "Chris Abernathy",
+          "opponent_team": "Meade County",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "L",
+          "method": "FALL",
+          "score": "0:55",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000054",
+          "opponent_career_id": "career_015207",
+          "opponent_name": "Wyatt Kirk",
+          "opponent_team": "Ashland Blazer",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "W",
+          "method": "DEC",
+          "score": "7-0",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000044",
+          "opponent_career_id": "career_016662",
+          "opponent_name": "Juan Ramirez",
+          "opponent_team": "Western",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "L",
+          "method": "MD",
+          "score": "21-8",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

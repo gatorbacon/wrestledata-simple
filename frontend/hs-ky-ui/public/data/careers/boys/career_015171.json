@@ -2,9 +2,9 @@
   "career_id": "career_015171",
   "canonical_name": "Daniel Ingram",
   "career_record": {
-    "wins": 47,
-    "losses": 16,
-    "win_pct": 0.746
+    "wins": 48,
+    "losses": 18,
+    "win_pct": 0.727
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 138,
       "record": "20-6",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -694,6 +695,7 @@
       "weight_class": 138,
       "record": "27-10",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1542,6 +1544,74 @@
           "event": "vs. Eastern",
           "season": 2013,
           "opponent_ky": false
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000102",
+      "grade": 10,
+      "team": "Trigg County",
+      "weight_class": 126,
+      "record": "1-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000101",
+          "opponent_career_id": "career_015014",
+          "opponent_name": "Colton Elkins",
+          "opponent_team": "Desales",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "DEC",
+          "score": "6-1",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000104",
+          "opponent_career_id": "career_016684",
+          "opponent_name": "Patrick Coots",
+          "opponent_team": "Perry County Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "W",
+          "method": "MD",
+          "score": "15-5",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000121",
+          "opponent_career_id": "career_016576",
+          "opponent_name": "Trevor Smith",
+          "opponent_team": "Southern",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "DEC",
+          "score": "10-9",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
         }
       ]
     }

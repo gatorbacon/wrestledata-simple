@@ -1,0 +1,1153 @@
+<title>2026-27 NCAA D1 Wrestling Championship Odds</title>
+<style>
+:root {
+  --bg: #F2F6F4;
+  --surface: #FFFFFF;
+  --surface-2: #EAF0EE;
+  --ink: #12211D;
+  --ink-dim: #55685F;
+  --border: #D9E3DE;
+  --teal: #1E4A44;
+  --teal-ink: #EAF3F0;
+  --gold: #B9832A;
+  --gold-soft: #F3E4C6;
+  --heat-rgb: 30, 74, 68;
+  --shadow: 0 1px 2px rgba(18,33,29,0.06), 0 8px 24px rgba(18,33,29,0.06);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0B1512;
+    --surface: #13211D;
+    --surface-2: #182C26;
+    --ink: #E7F1ED;
+    --ink-dim: #91A79E;
+    --border: #223832;
+    --teal: #143430;
+    --teal-ink: #E7F1ED;
+    --gold: #E0B15C;
+    --gold-soft: #3A2E15;
+    --heat-rgb: 224, 177, 92;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0B1512; --surface: #13211D; --surface-2: #182C26; --ink: #E7F1ED; --ink-dim: #91A79E;
+  --border: #223832; --teal: #143430; --teal-ink: #E7F1ED; --gold: #E0B15C; --gold-soft: #3A2E15;
+  --heat-rgb: 224, 177, 92; --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+}
+:root[data-theme="light"] {
+  --bg: #F2F6F4; --surface: #FFFFFF; --surface-2: #EAF0EE; --ink: #12211D; --ink-dim: #55685F;
+  --border: #D9E3DE; --teal: #1E4A44; --teal-ink: #EAF3F0; --gold: #B9832A; --gold-soft: #F3E4C6;
+  --heat-rgb: 30, 74, 68; --shadow: 0 1px 2px rgba(18,33,29,0.06), 0 8px 24px rgba(18,33,29,0.06);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.45;
+}
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px 64px; }
+
+.header {
+  background: linear-gradient(180deg, var(--teal), color-mix(in srgb, var(--teal) 82%, black));
+  color: var(--teal-ink);
+  padding: 40px 20px 32px;
+  margin-bottom: 28px;
+}
+.header-inner { max-width: 1100px; margin: 0 auto; }
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--gold);
+  margin: 0 0 10px;
+}
+h1 {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0 0 10px;
+  text-wrap: balance;
+}
+.header-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 22px;
+  font-size: 14px;
+  color: color-mix(in srgb, var(--teal-ink) 78%, transparent);
+  margin-top: 14px;
+}
+.header-meta strong { color: var(--teal-ink); font-variant-numeric: tabular-nums; }
+
+.caveat {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  border-radius: 6px;
+  padding: 14px 18px;
+  font-size: 13.5px;
+  color: var(--ink-dim);
+  margin-bottom: 28px;
+}
+.caveat strong { color: var(--ink); }
+
+.table-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.table-scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; min-width: 800px; }
+thead th {
+  position: sticky; top: 0;
+  background: var(--surface-2);
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-dim);
+  font-weight: 700;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+th.col-pct, th.col-rank { text-align: center; }
+tbody td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+  vertical-align: middle;
+}
+tbody tr:last-child td { border-bottom: none; }
+tbody tr:hover td { background: color-mix(in srgb, var(--surface-2) 60%, transparent); }
+tr.leader td { background: color-mix(in srgb, var(--gold-soft) 55%, transparent); }
+tr.leader:hover td { background: var(--gold-soft); }
+
+.col-rank {
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-dim);
+  font-size: 13px;
+  width: 36px;
+}
+.col-team { font-weight: 600; min-width: 150px; }
+.crown { color: var(--gold); }
+.team-name { font-weight: 600; }
+
+.lineup-chip {
+  font-family: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink-dim);
+  font-variant-numeric: tabular-nums;
+}
+.lineup-of10 { color: color-mix(in srgb, var(--ink-dim) 60%, transparent); font-weight: 500; }
+
+.col-range { min-width: 190px; }
+.rangebar { position: relative; height: 6px; margin: 4px 0 5px; }
+.rangebar-track {
+  position: absolute; inset: 0;
+  background: var(--surface-2);
+  border-radius: 3px;
+}
+.rangebar-fill {
+  position: absolute; top: 0; bottom: 0;
+  background: color-mix(in srgb, var(--teal) 55%, var(--surface-2));
+  border-radius: 3px;
+}
+.rangebar-tick {
+  position: absolute; top: -3px;
+  width: 2px; height: 12px;
+  background: var(--gold);
+  transform: translateX(-1px);
+  border-radius: 1px;
+}
+.range-labels {
+  display: flex; justify-content: space-between;
+  font-family: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+  font-size: 11px;
+  color: var(--ink-dim);
+  font-variant-numeric: tabular-nums;
+}
+.range-expected { color: var(--ink); font-weight: 700; }
+
+.col-pct {
+  text-align: center;
+  font-family: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  min-width: 78px;
+}
+.heat {
+  background: rgba(var(--heat-rgb), calc(var(--heat) * 0.42));
+}
+
+.legend {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 12px; color: var(--ink-dim);
+  margin: 14px 2px 0;
+}
+.legend-swatch {
+  display: inline-block; width: 60px; height: 8px; border-radius: 4px;
+  background: linear-gradient(90deg, rgba(var(--heat-rgb),0), rgba(var(--heat-rgb),0.42));
+}
+
+footer {
+  margin-top: 28px;
+  font-size: 12.5px;
+  color: var(--ink-dim);
+}
+footer code {
+  font-family: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+  background: var(--surface-2);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+@media (max-width: 640px) {
+  .header { padding: 28px 16px 24px; }
+  .col-range { min-width: 150px; }
+}
+</style>
+
+<div class="header">
+  <div class="header-inner">
+    <p class="eyebrow">Preseason Projection</p>
+    <h1>2026&ndash;27 NCAA D1 Wrestling &mdash; Team Championship Odds</h1>
+    <div class="header-meta">
+      <span>Rankings snapshot: <strong>2026-08-26</strong> (Sep touch point)</span>
+      <span>Simulated trials: <strong>10,000</strong></span>
+      <span>Teams tracked: <strong>59</strong></span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="caveat">
+    <strong>How to read this:</strong> each team's score range comes from 10,000 Monte&nbsp;Carlo simulated tournaments, drawing from the actual historical scoring distribution of wrestlers ranked at each weight&nbsp;class position (2023&ndash;2026 NCAA results). Weight classes where a team has no nationally-ranked wrestler use a generic low-rank fallback &mdash; teams with strong unranked depth (like perennial contenders replacing an injured starter) are likely underrated here until that's modeled directly.
+  </div>
+
+  <div class="table-card">
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th class="col-rank">#</th>
+            <th class="col-team">Team</th>
+            <th class="col-lineup">Ranked</th>
+            <th class="col-range">Score range (min &middot; expected &middot; max)</th>
+            <th class="col-pct">1st</th>
+            <th class="col-pct">Top&nbsp;3</th>
+            <th class="col-pct">Top&nbsp;5</th>
+            <th class="col-pct">Top&nbsp;10</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+    <tr class="leader">
+      <td class="col-rank">1</td>
+      <td class="col-team"><span class="crown" aria-hidden="true">&#9819;</span> <span class="team-name">Penn State</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="10 of 10 weight classes have a nationally-ranked wrestler">10<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 37.7 to 196.6, expected 121.2">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:19.18%;width:80.82%"></div>
+      <div class="rangebar-tick" style="left:61.65%"></div>
+    </div><div class="range-labels"><span>38</span><span class="range-expected">121</span><span>197</span></div></td>
+      <td class="col-pct heat" style="--heat:0.779">77.9%</td>
+      <td class="col-pct heat" style="--heat:0.986">98.6%</td>
+      <td class="col-pct heat" style="--heat:0.997">99.7%</td>
+      <td class="col-pct heat" style="--heat:1.000">100.0%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">2</td>
+      <td class="col-team"><span class="team-name">OK State</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="9 of 10 weight classes have a nationally-ranked wrestler">9<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 16.2 to 165.7, expected 96.9">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:8.24%;width:76.04%"></div>
+      <div class="rangebar-tick" style="left:49.29%"></div>
+    </div><div class="range-labels"><span>16</span><span class="range-expected">97</span><span>166</span></div></td>
+      <td class="col-pct heat" style="--heat:0.203">20.3%</td>
+      <td class="col-pct heat" style="--heat:0.900">90.0%</td>
+      <td class="col-pct heat" style="--heat:0.967">96.7%</td>
+      <td class="col-pct heat" style="--heat:0.997">99.7%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">3</td>
+      <td class="col-team"><span class="team-name">Nebraska</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="9 of 10 weight classes have a nationally-ranked wrestler">9<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 8.5 to 128.8, expected 61.9">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:4.32%;width:61.19%"></div>
+      <div class="rangebar-tick" style="left:31.49%"></div>
+    </div><div class="range-labels"><span>8</span><span class="range-expected">62</span><span>129</span></div></td>
+      <td class="col-pct heat" style="--heat:0.006">0.6%</td>
+      <td class="col-pct heat" style="--heat:0.273">27.3%</td>
+      <td class="col-pct heat" style="--heat:0.573">57.3%</td>
+      <td class="col-pct heat" style="--heat:0.913">91.3%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">4</td>
+      <td class="col-team"><span class="team-name">Ohio State</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="8 of 10 weight classes have a nationally-ranked wrestler">8<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 10.2 to 125.8, expected 58.4">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:5.19%;width:58.80%"></div>
+      <div class="rangebar-tick" style="left:29.70%"></div>
+    </div><div class="range-labels"><span>10</span><span class="range-expected">58</span><span>126</span></div></td>
+      <td class="col-pct heat" style="--heat:0.004">0.4%</td>
+      <td class="col-pct heat" style="--heat:0.200">20.0%</td>
+      <td class="col-pct heat" style="--heat:0.486">48.6%</td>
+      <td class="col-pct heat" style="--heat:0.872">87.2%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">5</td>
+      <td class="col-team"><span class="team-name">Virginia Tech</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="10 of 10 weight classes have a nationally-ranked wrestler">10<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 8.6 to 119.4, expected 57.3">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:4.37%;width:56.36%"></div>
+      <div class="rangebar-tick" style="left:29.15%"></div>
+    </div><div class="range-labels"><span>9</span><span class="range-expected">57</span><span>119</span></div></td>
+      <td class="col-pct heat" style="--heat:0.002">0.2%</td>
+      <td class="col-pct heat" style="--heat:0.176">17.6%</td>
+      <td class="col-pct heat" style="--heat:0.463">46.3%</td>
+      <td class="col-pct heat" style="--heat:0.863">86.3%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">6</td>
+      <td class="col-team"><span class="team-name">Iowa</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="9 of 10 weight classes have a nationally-ranked wrestler">9<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 8.5 to 117.0, expected 55.5">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:4.32%;width:55.19%"></div>
+      <div class="rangebar-tick" style="left:28.23%"></div>
+    </div><div class="range-labels"><span>8</span><span class="range-expected">56</span><span>117</span></div></td>
+      <td class="col-pct heat" style="--heat:0.002">0.2%</td>
+      <td class="col-pct heat" style="--heat:0.145">14.5%</td>
+      <td class="col-pct heat" style="--heat:0.413">41.3%</td>
+      <td class="col-pct heat" style="--heat:0.839">83.9%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">7</td>
+      <td class="col-team"><span class="team-name">Stanford</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="9 of 10 weight classes have a nationally-ranked wrestler">9<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 5.4 to 115.9, expected 54.3">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:2.75%;width:56.21%"></div>
+      <div class="rangebar-tick" style="left:27.62%"></div>
+    </div><div class="range-labels"><span>5</span><span class="range-expected">54</span><span>116</span></div></td>
+      <td class="col-pct heat" style="--heat:0.002">0.2%</td>
+      <td class="col-pct heat" style="--heat:0.136">13.6%</td>
+      <td class="col-pct heat" style="--heat:0.387">38.7%</td>
+      <td class="col-pct heat" style="--heat:0.810">81.0%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">8</td>
+      <td class="col-team"><span class="team-name">Missouri</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="8 of 10 weight classes have a nationally-ranked wrestler">8<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 9.6 to 113.6, expected 53.2">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:4.88%;width:52.90%"></div>
+      <div class="rangebar-tick" style="left:27.06%"></div>
+    </div><div class="range-labels"><span>10</span><span class="range-expected">53</span><span>114</span></div></td>
+      <td class="col-pct heat" style="--heat:0.002">0.2%</td>
+      <td class="col-pct heat" style="--heat:0.125">12.5%</td>
+      <td class="col-pct heat" style="--heat:0.354">35.4%</td>
+      <td class="col-pct heat" style="--heat:0.786">78.6%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">9</td>
+      <td class="col-team"><span class="team-name">Iowa State</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="7 of 10 weight classes have a nationally-ranked wrestler">7<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 3.8 to 105.6, expected 42.2">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:1.93%;width:51.78%"></div>
+      <div class="rangebar-tick" style="left:21.46%"></div>
+    </div><div class="range-labels"><span>4</span><span class="range-expected">42</span><span>106</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.026">2.6%</td>
+      <td class="col-pct heat" style="--heat:0.127">12.7%</td>
+      <td class="col-pct heat" style="--heat:0.540">54.0%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">10</td>
+      <td class="col-team"><span class="team-name">Minnesota</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="7 of 10 weight classes have a nationally-ranked wrestler">7<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 2.1 to 89.0, expected 37.9">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:1.07%;width:44.20%"></div>
+      <div class="rangebar-tick" style="left:19.28%"></div>
+    </div><div class="range-labels"><span>2</span><span class="range-expected">38</span><span>89</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.010">1.0%</td>
+      <td class="col-pct heat" style="--heat:0.065">6.5%</td>
+      <td class="col-pct heat" style="--heat:0.420">42.0%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">11</td>
+      <td class="col-team"><span class="team-name">Lehigh</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="5 of 10 weight classes have a nationally-ranked wrestler">5<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.7 to 82.5, expected 33.0">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.36%;width:41.61%"></div>
+      <div class="rangebar-tick" style="left:16.79%"></div>
+    </div><div class="range-labels"><span>1</span><span class="range-expected">33</span><span>82</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.004">0.4%</td>
+      <td class="col-pct heat" style="--heat:0.024">2.4%</td>
+      <td class="col-pct heat" style="--heat:0.265">26.5%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">12</td>
+      <td class="col-team"><span class="team-name">NC State</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="7 of 10 weight classes have a nationally-ranked wrestler">7<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 2.1 to 96.2, expected 32.7">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:1.07%;width:47.86%"></div>
+      <div class="rangebar-tick" style="left:16.63%"></div>
+    </div><div class="range-labels"><span>2</span><span class="range-expected">33</span><span>96</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.006">0.6%</td>
+      <td class="col-pct heat" style="--heat:0.042">4.2%</td>
+      <td class="col-pct heat" style="--heat:0.272">27.2%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">13</td>
+      <td class="col-team"><span class="team-name">Little Rock</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="3 of 10 weight classes have a nationally-ranked wrestler">3<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 4.5 to 81.0, expected 32.7">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:2.29%;width:38.91%"></div>
+      <div class="rangebar-tick" style="left:16.63%"></div>
+    </div><div class="range-labels"><span>4</span><span class="range-expected">33</span><span>81</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.004">0.4%</td>
+      <td class="col-pct heat" style="--heat:0.024">2.4%</td>
+      <td class="col-pct heat" style="--heat:0.249">24.9%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">14</td>
+      <td class="col-team"><span class="team-name">Michigan</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="5 of 10 weight classes have a nationally-ranked wrestler">5<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.8 to 87.3, expected 30.6">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.41%;width:44.00%"></div>
+      <div class="rangebar-tick" style="left:15.56%"></div>
+    </div><div class="range-labels"><span>1</span><span class="range-expected">31</span><span>87</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.002">0.2%</td>
+      <td class="col-pct heat" style="--heat:0.020">2.0%</td>
+      <td class="col-pct heat" style="--heat:0.203">20.3%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">15</td>
+      <td class="col-team"><span class="team-name">Oklahoma</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="7 of 10 weight classes have a nationally-ranked wrestler">7<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.5 to 94.1, expected 30.5">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.25%;width:47.61%"></div>
+      <div class="rangebar-tick" style="left:15.51%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">30</span><span>94</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.004">0.4%</td>
+      <td class="col-pct heat" style="--heat:0.024">2.4%</td>
+      <td class="col-pct heat" style="--heat:0.204">20.4%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">16</td>
+      <td class="col-team"><span class="team-name">Arizona State</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="4 of 10 weight classes have a nationally-ranked wrestler">4<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.7 to 75.3, expected 27.6">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.36%;width:37.95%"></div>
+      <div class="rangebar-tick" style="left:14.04%"></div>
+    </div><div class="range-labels"><span>1</span><span class="range-expected">28</span><span>75</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.001">0.1%</td>
+      <td class="col-pct heat" style="--heat:0.007">0.7%</td>
+      <td class="col-pct heat" style="--heat:0.124">12.4%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">17</td>
+      <td class="col-team"><span class="team-name">North Carolina</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="6 of 10 weight classes have a nationally-ranked wrestler">6<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.7 to 72.3, expected 24.3">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.36%;width:36.42%"></div>
+      <div class="rangebar-tick" style="left:12.36%"></div>
+    </div><div class="range-labels"><span>1</span><span class="range-expected">24</span><span>72</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.001">0.1%</td>
+      <td class="col-pct heat" style="--heat:0.004">0.4%</td>
+      <td class="col-pct heat" style="--heat:0.087">8.7%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">18</td>
+      <td class="col-team"><span class="team-name">Wyoming</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="4 of 10 weight classes have a nationally-ranked wrestler">4<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 73.6, expected 24.3">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:37.44%"></div>
+      <div class="rangebar-tick" style="left:12.36%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">24</span><span>74</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.003">0.3%</td>
+      <td class="col-pct heat" style="--heat:0.069">6.9%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">19</td>
+      <td class="col-team"><span class="team-name">Purdue</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="2 of 10 weight classes have a nationally-ranked wrestler">2<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 3.4 to 65.6, expected 23.6">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:1.73%;width:31.64%"></div>
+      <div class="rangebar-tick" style="left:12.00%"></div>
+    </div><div class="range-labels"><span>3</span><span class="range-expected">24</span><span>66</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.001">0.1%</td>
+      <td class="col-pct heat" style="--heat:0.043">4.3%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">20</td>
+      <td class="col-team"><span class="team-name">Cornell</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="6 of 10 weight classes have a nationally-ranked wrestler">6<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 70.4, expected 21.6">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:35.81%"></div>
+      <div class="rangebar-tick" style="left:10.99%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">22</span><span>70</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.002">0.2%</td>
+      <td class="col-pct heat" style="--heat:0.051">5.1%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">21</td>
+      <td class="col-team"><span class="team-name">Penn</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="6 of 10 weight classes have a nationally-ranked wrestler">6<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 1.1 to 57.8, expected 21.6">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.56%;width:28.84%"></div>
+      <div class="rangebar-tick" style="left:10.99%"></div>
+    </div><div class="range-labels"><span>1</span><span class="range-expected">22</span><span>58</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.001">0.1%</td>
+      <td class="col-pct heat" style="--heat:0.038">3.8%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">22</td>
+      <td class="col-team"><span class="team-name">Princeton</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="4 of 10 weight classes have a nationally-ranked wrestler">4<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 68.8, expected 21.4">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:34.99%"></div>
+      <div class="rangebar-tick" style="left:10.89%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">21</span><span>69</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.001">0.1%</td>
+      <td class="col-pct heat" style="--heat:0.043">4.3%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">23</td>
+      <td class="col-team"><span class="team-name">Maryland</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="2 of 10 weight classes have a nationally-ranked wrestler">2<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.6 to 69.6, expected 20.8">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.31%;width:35.10%"></div>
+      <div class="rangebar-tick" style="left:10.58%"></div>
+    </div><div class="range-labels"><span>1</span><span class="range-expected">21</span><span>70</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.002">0.2%</td>
+      <td class="col-pct heat" style="--heat:0.036">3.6%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">24</td>
+      <td class="col-team"><span class="team-name">Pittsburgh</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="9 of 10 weight classes have a nationally-ranked wrestler">9<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 2.0 to 77.8, expected 20.7">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:1.02%;width:38.56%"></div>
+      <div class="rangebar-tick" style="left:10.53%"></div>
+    </div><div class="range-labels"><span>2</span><span class="range-expected">21</span><span>78</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.003">0.3%</td>
+      <td class="col-pct heat" style="--heat:0.050">5.0%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">25</td>
+      <td class="col-team"><span class="team-name">Illinois</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="5 of 10 weight classes have a nationally-ranked wrestler">5<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 70.8, expected 20.2">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:36.01%"></div>
+      <div class="rangebar-tick" style="left:10.27%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">20</span><span>71</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.001">0.1%</td>
+      <td class="col-pct heat" style="--heat:0.035">3.5%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">26</td>
+      <td class="col-team"><span class="team-name">West Virginia</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="4 of 10 weight classes have a nationally-ranked wrestler">4<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 68.1, expected 19.5">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:34.64%"></div>
+      <div class="rangebar-tick" style="left:9.92%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">20</span><span>68</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.002">0.2%</td>
+      <td class="col-pct heat" style="--heat:0.035">3.5%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">27</td>
+      <td class="col-team"><span class="team-name">Rutgers</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="4 of 10 weight classes have a nationally-ranked wrestler">4<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.5 to 77.8, expected 19.5">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.25%;width:39.32%"></div>
+      <div class="rangebar-tick" style="left:9.92%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">20</span><span>78</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.002">0.2%</td>
+      <td class="col-pct heat" style="--heat:0.037">3.7%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">28</td>
+      <td class="col-team"><span class="team-name">UNI</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="5 of 10 weight classes have a nationally-ranked wrestler">5<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 73.8, expected 16.0">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:37.54%"></div>
+      <div class="rangebar-tick" style="left:8.14%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">16</span><span>74</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.001">0.1%</td>
+      <td class="col-pct heat" style="--heat:0.019">1.9%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">29</td>
+      <td class="col-team"><span class="team-name">Navy</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="5 of 10 weight classes have a nationally-ranked wrestler">5<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.6 to 58.4, expected 15.2">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.31%;width:29.40%"></div>
+      <div class="rangebar-tick" style="left:7.73%"></div>
+    </div><div class="range-labels"><span>1</span><span class="range-expected">15</span><span>58</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.010">1.0%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">30</td>
+      <td class="col-team"><span class="team-name">Oregon State</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="4 of 10 weight classes have a nationally-ranked wrestler">4<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 52.1, expected 14.6">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:26.50%"></div>
+      <div class="rangebar-tick" style="left:7.43%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">15</span><span>52</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.006">0.6%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">31</td>
+      <td class="col-team"><span class="team-name">Indiana</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="6 of 10 weight classes have a nationally-ranked wrestler">6<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 58.5, expected 13.8">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:29.76%"></div>
+      <div class="rangebar-tick" style="left:7.02%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">14</span><span>58</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.010">1.0%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">32</td>
+      <td class="col-team"><span class="team-name">Bucknell</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="3 of 10 weight classes have a nationally-ranked wrestler">3<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 64.5, expected 13.4">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:32.81%"></div>
+      <div class="rangebar-tick" style="left:6.82%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">13</span><span>64</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.001">0.1%</td>
+      <td class="col-pct heat" style="--heat:0.007">0.7%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">33</td>
+      <td class="col-team"><span class="team-name">Utah Valley</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="3 of 10 weight classes have a nationally-ranked wrestler">3<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 61.5, expected 13.4">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:31.28%"></div>
+      <div class="rangebar-tick" style="left:6.82%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">13</span><span>62</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.009">0.9%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">34</td>
+      <td class="col-team"><span class="team-name">Wisconsin</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="3 of 10 weight classes have a nationally-ranked wrestler">3<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 55.1, expected 13.1">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:28.03%"></div>
+      <div class="rangebar-tick" style="left:6.66%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">13</span><span>55</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.007">0.7%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">35</td>
+      <td class="col-team"><span class="team-name">ND State</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="4 of 10 weight classes have a nationally-ranked wrestler">4<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 61.1, expected 12.7">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:31.08%"></div>
+      <div class="rangebar-tick" style="left:6.46%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">13</span><span>61</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.006">0.6%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">36</td>
+      <td class="col-team"><span class="team-name">American</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="1 of 10 weight classes have a nationally-ranked wrestler">1<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 51.7, expected 12.6">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:26.30%"></div>
+      <div class="rangebar-tick" style="left:6.41%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">13</span><span>52</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.002">0.2%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">37</td>
+      <td class="col-team"><span class="team-name">SD State</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="3 of 10 weight classes have a nationally-ranked wrestler">3<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 49.8, expected 12.5">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:25.33%"></div>
+      <div class="rangebar-tick" style="left:6.36%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">12</span><span>50</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.003">0.3%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">38</td>
+      <td class="col-team"><span class="team-name">Cal Poly</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="2 of 10 weight classes have a nationally-ranked wrestler">2<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.2 to 59.5, expected 12.4">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.10%;width:30.16%"></div>
+      <div class="rangebar-tick" style="left:6.31%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">12</span><span>60</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.004">0.4%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">39</td>
+      <td class="col-team"><span class="team-name">Columbia</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="3 of 10 weight classes have a nationally-ranked wrestler">3<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.3 to 55.2, expected 12.0">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.15%;width:27.92%"></div>
+      <div class="rangebar-tick" style="left:6.10%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">12</span><span>55</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.003">0.3%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">40</td>
+      <td class="col-team"><span class="team-name">Air Force</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="2 of 10 weight classes have a nationally-ranked wrestler">2<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 48.9, expected 11.9">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:24.87%"></div>
+      <div class="rangebar-tick" style="left:6.05%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">12</span><span>49</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.002">0.2%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">41</td>
+      <td class="col-team"><span class="team-name">Gardner-Webb</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="1 of 10 weight classes have a nationally-ranked wrestler">1<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 55.2, expected 11.7">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:28.08%"></div>
+      <div class="rangebar-tick" style="left:5.95%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">12</span><span>55</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.002">0.2%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">42</td>
+      <td class="col-team"><span class="team-name">Rider</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="1 of 10 weight classes have a nationally-ranked wrestler">1<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 55.8, expected 10.8">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:28.38%"></div>
+      <div class="rangebar-tick" style="left:5.49%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">11</span><span>56</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.002">0.2%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">43</td>
+      <td class="col-team"><span class="team-name">Army</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="3 of 10 weight classes have a nationally-ranked wrestler">3<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 63.2, expected 10.7">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:32.15%"></div>
+      <div class="rangebar-tick" style="left:5.44%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">11</span><span>63</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.004">0.4%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">44</td>
+      <td class="col-team"><span class="team-name">Chattanooga</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="1 of 10 weight classes have a nationally-ranked wrestler">1<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 51.2, expected 10.7">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:26.04%"></div>
+      <div class="rangebar-tick" style="left:5.44%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">11</span><span>51</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.002">0.2%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">45</td>
+      <td class="col-team"><span class="team-name">Virginia</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="3 of 10 weight classes have a nationally-ranked wrestler">3<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 51.3, expected 10.3">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:26.09%"></div>
+      <div class="rangebar-tick" style="left:5.24%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">10</span><span>51</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.003">0.3%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">46</td>
+      <td class="col-team"><span class="team-name">Northern Illinois</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="1 of 10 weight classes have a nationally-ranked wrestler">1<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 54.1, expected 10.2">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:27.52%"></div>
+      <div class="rangebar-tick" style="left:5.19%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">10</span><span>54</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.001">0.1%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">47</td>
+      <td class="col-team"><span class="team-name">Michigan State</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="1 of 10 weight classes have a nationally-ranked wrestler">1<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 53.8, expected 10.0">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:27.37%"></div>
+      <div class="rangebar-tick" style="left:5.09%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">10</span><span>54</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.002">0.2%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">48</td>
+      <td class="col-team"><span class="team-name">Brown</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="2 of 10 weight classes have a nationally-ranked wrestler">2<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 46.6, expected 9.9">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:23.70%"></div>
+      <div class="rangebar-tick" style="left:5.04%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">10</span><span>47</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.001">0.1%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">49</td>
+      <td class="col-team"><span class="team-name">George Mason</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="1 of 10 weight classes have a nationally-ranked wrestler">1<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 57.9, expected 9.9">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:29.45%"></div>
+      <div class="rangebar-tick" style="left:5.04%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">10</span><span>58</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.003">0.3%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">50</td>
+      <td class="col-team"><span class="team-name">App State</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="3 of 10 weight classes have a nationally-ranked wrestler">3<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 50.3, expected 9.8">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:25.58%"></div>
+      <div class="rangebar-tick" style="left:4.98%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">10</span><span>50</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.001">0.1%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">51</td>
+      <td class="col-team"><span class="team-name">SIUE</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="1 of 10 weight classes have a nationally-ranked wrestler">1<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 55.5, expected 9.7">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:28.23%"></div>
+      <div class="rangebar-tick" style="left:4.93%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">10</span><span>56</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.001">0.1%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">52</td>
+      <td class="col-team"><span class="team-name">Lock Haven</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="1 of 10 weight classes have a nationally-ranked wrestler">1<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 48.6, expected 9.7">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:24.72%"></div>
+      <div class="rangebar-tick" style="left:4.93%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">10</span><span>49</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.001">0.1%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">53</td>
+      <td class="col-team"><span class="team-name">West Virgnia</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="1 of 10 weight classes have a nationally-ranked wrestler">1<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 44.9, expected 9.7">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:22.84%"></div>
+      <div class="rangebar-tick" style="left:4.93%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">10</span><span>45</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.001">0.1%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">54</td>
+      <td class="col-team"><span class="team-name">Davidson</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="1 of 10 weight classes have a nationally-ranked wrestler">1<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 45.6, expected 9.6">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:23.19%"></div>
+      <div class="rangebar-tick" style="left:4.88%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">10</span><span>46</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.001">0.1%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">55</td>
+      <td class="col-team"><span class="team-name">Ohio</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="1 of 10 weight classes have a nationally-ranked wrestler">1<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 46.5, expected 9.6">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:23.65%"></div>
+      <div class="rangebar-tick" style="left:4.88%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">10</span><span>46</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.001">0.1%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">56</td>
+      <td class="col-team"><span class="team-name">N. Colorado</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="1 of 10 weight classes have a nationally-ranked wrestler">1<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 53.4, expected 9.5">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:27.16%"></div>
+      <div class="rangebar-tick" style="left:4.83%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">10</span><span>53</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.001">0.1%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">57</td>
+      <td class="col-team"><span class="team-name">Drexel</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="1 of 10 weight classes have a nationally-ranked wrestler">1<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 50.3, expected 9.5">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:25.58%"></div>
+      <div class="rangebar-tick" style="left:4.83%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">10</span><span>50</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.001">0.1%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">58</td>
+      <td class="col-team"><span class="team-name">Binghamton</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="1 of 10 weight classes have a nationally-ranked wrestler">1<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 46.2, expected 9.0">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:23.50%"></div>
+      <div class="rangebar-tick" style="left:4.58%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">9</span><span>46</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.001">0.1%</td>
+    </tr>
+
+    <tr class="">
+      <td class="col-rank">59</td>
+      <td class="col-team"><span class="team-name">Northwestern</span></td>
+      <td class="col-lineup"><span class="lineup-chip" title="2 of 10 weight classes have a nationally-ranked wrestler">2<span class="lineup-of10">/10</span></span></td>
+      <td class="col-range"><div class="rangebar" role="img" aria-label="Score range 0.0 to 55.6, expected 8.6">
+      <div class="rangebar-track"></div>
+      <div class="rangebar-fill" style="left:0.00%;width:28.28%"></div>
+      <div class="rangebar-tick" style="left:4.37%"></div>
+    </div><div class="range-labels"><span>0</span><span class="range-expected">9</span><span>56</span></div></td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.000">0.0%</td>
+      <td class="col-pct heat" style="--heat:0.001">0.1%</td>
+    </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="legend">
+    <span class="legend-swatch" aria-hidden="true"></span>
+    <span>Cell shading = probability intensity (darker = more likely)</span>
+  </div>
+
+  <footer>
+    Built from FloWrestling's 2026-08-26 rankings snapshot and 2023&ndash;2026 NCAA D1 Championship results.
+    Simulation: <code>scripts/analysis/simulate_team_scores.py</code> &middot;
+    Distributions: <code>scripts/analysis/build_rank_score_distributions.py</code> (recentered &plusmn;1-rank blend).
+  </footer>
+</div>

@@ -2,9 +2,9 @@
   "career_id": "career_014050",
   "canonical_name": "Zach Farris",
   "career_record": {
-    "wins": 122,
-    "losses": 13,
-    "win_pct": 0.904
+    "wins": 124,
+    "losses": 15,
+    "win_pct": 0.892
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 215,
       "record": "50-3",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 3,
       "current_rank": null,
       "matches": [
@@ -964,6 +965,7 @@
       "weight_class": 215,
       "record": "40-2",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": 3,
       "current_rank": null,
       "matches": [
@@ -1805,6 +1807,7 @@
       "weight_class": 215,
       "record": "32-8",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -2652,6 +2655,92 @@
           "duration": "1:59",
           "event": "vs. Woodford County",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000420",
+      "grade": 9,
+      "team": "Ohio County",
+      "weight_class": 220,
+      "record": "2-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000421",
+          "opponent_career_id": "career_015517",
+          "opponent_name": "Daylon Whaley",
+          "opponent_team": "Moore",
+          "opponent_team_rank": null,
+          "opponent_weight": 220,
+          "opponent_rank": null,
+          "weight_class": "220",
+          "result": "W",
+          "method": "FALL",
+          "score": "2:14",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000422",
+          "opponent_career_id": "career_013914",
+          "opponent_name": "Austin Myers",
+          "opponent_team": "Campbell County",
+          "opponent_team_rank": null,
+          "opponent_weight": 220,
+          "opponent_rank": null,
+          "weight_class": "220",
+          "result": "L",
+          "method": "FALL",
+          "score": "0:44",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000441",
+          "opponent_career_id": "career_016849",
+          "opponent_name": "Chase Cannon",
+          "opponent_team": "Dupont Manual",
+          "opponent_team_rank": null,
+          "opponent_weight": 220,
+          "opponent_rank": null,
+          "weight_class": "220",
+          "result": "W",
+          "method": "FALL",
+          "score": "2:42",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000416",
+          "opponent_career_id": "career_016835",
+          "opponent_name": "Brandon Roeder",
+          "opponent_team": "Western",
+          "opponent_team_rank": null,
+          "opponent_weight": 220,
+          "opponent_rank": null,
+          "weight_class": "220",
+          "result": "L",
+          "method": "FALL",
+          "score": "2:18",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

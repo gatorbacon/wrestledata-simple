@@ -38,11 +38,15 @@ Usage:
 import argparse
 import json
 import re
+import sys
 import time
 from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from scripts.common import weight_class_eras as era_weight_classes  # noqa: E402
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -72,19 +76,10 @@ REGION_SEARCH_TERMS = {
 # Gender — overridden in main() via --gender arg
 GENDER = "boys"
 
-# KHSAA boys weight classes (varies slightly by era, use superset)
-KY_WEIGHT_CLASSES_BY_ERA = {
-    # 2013-2018: older class structure
-    "old": [103, 112, 119, 125, 130, 135, 141, 148, 160, 171, 189, 215, 285],
-    # 2019+: current class structure
-    "new": [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285],
-}
-
 
 def get_weight_classes_for_season(season: int) -> list[int]:
-    if season >= 2019:
-        return KY_WEIGHT_CLASSES_BY_ERA["new"]
-    return KY_WEIGHT_CLASSES_BY_ERA["old"]
+    """Delegates to the shared, era-aware table in data/weight_class_eras/hs_ky_{gender}.json."""
+    return era_weight_classes.get_weight_classes_for_season(GENDER, season)
 
 
 # ---------------------------------------------------------------------------

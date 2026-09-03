@@ -23,6 +23,7 @@
 
   --accent: #00c2a8;
   --accent-2: #1fe3c6;
+  --accent-rgb: 0, 194, 168;
   --link: var(--accent);
 
   --good: #22c55e;
@@ -1675,6 +1676,148 @@ tbody tr:last-child td {
   display: inline-block;
   /* Ensure text is readable on top of bar */
   color: var(--text);
+}
+
+/* Trophy-tier (1st-4th place) probability bars use medal colors instead of
+   the default accent teal -- shared by the homepage preview and the full
+   team-odds page. */
+.place-medal-gold .metric-bar-fill { background: #fbbf24; opacity: 0.35; }
+.place-medal-silver .metric-bar-fill { background: #94a3b8; opacity: 0.35; }
+.place-medal-bronze .metric-bar-fill { background: #cd7f32; opacity: 0.35; }
+
+/* Single continuous "median finish" band spanning the whole 1st-10th grid,
+   instead of ten separate per-cell bars. Filled from the right edge (10th)
+   leftward, stopping where cumulative placement probability first crosses
+   50% -- so a dominant team's band reaches almost the full row width (their
+   50% point sits deep in 1st), while a middling team's band is short (their
+   50% point is close to the right edge already). Teams whose cumulative
+   top-10 odds never reach 50% get no band at all -- their true median lies
+   past 10th, off the visible grid. */
+.place-grid-cell { padding: 0 !important; position: relative; }
+.place-grid-wrap { position: relative; min-height: 2.6em; }
+.median-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: var(--accent);
+  opacity: 0.28;
+  border-radius: 4px 0 0 4px;
+}
+.median-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  background: var(--accent);
+  opacity: 0.9;
+}
+.place-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  height: 100%;
+}
+.place-cell-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9em;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+  border-left: 1px solid var(--border);
+}
+.place-cell-label.dim { color: var(--muted); font-size: 0.8em; }
+
+/* Scoring-range bar: fixed 0-200 scale so every team's 90% confidence band
+   sits at a directly comparable horizontal position across rows/pages. The
+   expected value gets its own large label above the bar (positioned via
+   inline `left`); the band itself is a per-row gradient (set inline in JS,
+   see htoRangeBar) that peaks in opacity at the expected value and fades
+   toward the p5/p95 edges, rather than one flat opacity across the range. */
+.rangebar-container { position: relative; padding-top: 1.3em; }
+.range-expected-big {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  font-size: 1.15em;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.rangebar { position: relative; height: 8px; margin: 4px 0 20px; min-width: 230px; }
+.rangebar-track {
+  position: absolute; inset: 0; background: var(--panel-2); border-radius: 3px;
+  background-image: repeating-linear-gradient(90deg, var(--border) 0 1px, transparent 1px 25%);
+}
+.rangebar-band { position: absolute; top: 0; bottom: 0; border-radius: 3px; }
+.rangebar-tick { position: absolute; top: -3px; width: 2px; height: 12px; background: var(--accent); transform: translateX(-1px); }
+/* Light marker line + label at the p5/p95 edges, positioned at their true
+   spot on the bar (not just flush with the container's own left/right). */
+.rangebar-edge-tick {
+  position: absolute; top: -2px; bottom: -2px; width: 1px;
+  background: var(--muted); opacity: 0.5; transform: translateX(-0.5px);
+}
+.range-edge-label {
+  position: absolute; top: 100%; margin-top: 3px;
+  transform: translateX(-50%);
+  font-size: 0.75rem; color: var(--muted); font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* Click-to-expand team rows (per-wrestler breakdown) -- shared by the
+   homepage preview table and the full /team_odds.html page. */
+.expandable-row { cursor: pointer; }
+.expand-icon {
+  display: inline-block;
+  width: 12px;
+  text-align: center;
+  margin-right: 8px;
+  color: var(--muted);
+}
+.expanded .expand-icon::before { content: "▼"; }
+.collapsed .expand-icon::before { content: "▶"; }
+.weight-breakdown { display: none; }
+.weight-breakdown.expanded { display: table-row; }
+.weight-breakdown td {
+  padding: 12px 12px 12px 42px;
+  background-color: var(--panel);
+  border-left: 2px solid var(--border);
+}
+.weight-breakdown table { width: 100%; border-collapse: collapse; margin: 0; }
+.weight-breakdown th, .weight-breakdown td.wd-cell {
+  padding: 6px 12px;
+  text-align: left;
+  border-bottom: 1px dashed var(--border);
+  font-size: 0.8125rem;
+}
+.weight-breakdown th {
+  font-weight: 600;
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: var(--panel-2);
+}
+.weight-breakdown tbody tr:last-child td { border-bottom: none; }
+.wd-name { color: var(--text); }
+.unranked-note { color: var(--muted); font-style: italic; }
+
+/* Team-name links in the team-odds tables are white/plain text, not the
+   default teal link color, to keep the row's team name visually primary. */
+#team-odds-preview-table .name a,
+#team-odds-table .name a {
+  color: var(--text);
+}
+#team-odds-preview-table .name a:hover,
+#team-odds-table .name a:hover {
+  color: var(--text);
+  text-decoration: underline;
 }
 
 /* Table explainer text - removed, using .header-explainer instead */

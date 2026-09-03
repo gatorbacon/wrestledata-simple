@@ -2,9 +2,9 @@
   "career_id": "career_014026",
   "canonical_name": "Bobby Poynter",
   "career_record": {
-    "wins": 114,
-    "losses": 21,
-    "win_pct": 0.844
+    "wins": 116,
+    "losses": 23,
+    "win_pct": 0.835
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 126,
       "record": "35-5",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 2,
       "current_rank": null,
       "matches": [
@@ -748,6 +749,7 @@
       "weight_class": 120,
       "record": "37-5",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 3,
       "current_rank": null,
       "matches": [
@@ -1571,6 +1573,7 @@
       "weight_class": 120,
       "record": "42-11",
       "regional_place": 3,
+      "regional_data_tracked": true,
       "state_place": 5,
       "current_rank": null,
       "matches": [
@@ -2581,6 +2584,92 @@
           "event": "vs. Holmes",
           "season": 2013,
           "opponent_ky": false
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000093",
+      "grade": 9,
+      "team": "Moore",
+      "weight_class": 120,
+      "record": "2-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000094",
+          "opponent_career_id": "career_013103",
+          "opponent_name": "Angel Vasquez",
+          "opponent_team": "Lafayette",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "W",
+          "method": "DEC",
+          "score": "13-8",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000096",
+          "opponent_career_id": "career_016625",
+          "opponent_name": "Jeff Wurth",
+          "opponent_team": "Union County",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "L",
+          "method": "TF",
+          "score": "16-0",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000067",
+          "opponent_career_id": "career_016670",
+          "opponent_name": "Asa Odoms",
+          "opponent_team": "Christian County",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "W",
+          "method": "DEC",
+          "score": "8-3",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000090",
+          "opponent_career_id": "career_016651",
+          "opponent_name": "John Siler",
+          "opponent_team": "Whitley County",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "L",
+          "method": "MD",
+          "score": "14-4",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
         }
       ]
     }

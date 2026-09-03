@@ -2,9 +2,9 @@
   "career_id": "career_016210",
   "canonical_name": "Wyatt Overman",
   "career_record": {
-    "wins": 37,
-    "losses": 8,
-    "win_pct": 0.822
+    "wins": 38,
+    "losses": 10,
+    "win_pct": 0.792
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 132,
       "record": "37-8",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": 5,
       "current_rank": null,
       "matches": [
@@ -898,6 +899,74 @@
           "duration": "5:48",
           "event": "vs. Woodford County",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000105",
+      "grade": 11,
+      "team": "Central Hardin",
+      "weight_class": 126,
+      "record": "1-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000106",
+          "opponent_career_id": "career_015521",
+          "opponent_name": "Jacob Brett",
+          "opponent_team": "Newport",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "W",
+          "method": "DEC",
+          "score": "14-8",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000107",
+          "opponent_career_id": "career_016629",
+          "opponent_name": "Wade Willen",
+          "opponent_team": "University Heights",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "FALL",
+          "score": "4:47",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000119",
+          "opponent_career_id": "career_016688",
+          "opponent_name": "Dylan Vish",
+          "opponent_team": "St. Xavier",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "DEC",
+          "score": "9-4",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

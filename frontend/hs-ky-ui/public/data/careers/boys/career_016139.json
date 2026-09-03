@@ -3,8 +3,8 @@
   "canonical_name": "Slater Swift",
   "career_record": {
     "wins": 16,
-    "losses": 6,
-    "win_pct": 0.727
+    "losses": 8,
+    "win_pct": 0.667
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 165,
       "record": "16-6",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -502,6 +503,56 @@
           "duration": "0:00",
           "event": "vs. Ashland Blazer",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000326",
+      "grade": 11,
+      "team": "Ashland Blazer",
+      "weight_class": 182,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000325",
+          "opponent_career_id": "career_015176",
+          "opponent_name": "Bryan Carter",
+          "opponent_team": "Union County",
+          "opponent_team_rank": null,
+          "opponent_weight": 182,
+          "opponent_rank": null,
+          "weight_class": "182",
+          "result": "L",
+          "method": "FALL",
+          "score": "1:57",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000327",
+          "opponent_career_id": "career_015066",
+          "opponent_name": "Andre Farris",
+          "opponent_team": "John Hardin",
+          "opponent_team_rank": null,
+          "opponent_weight": 182,
+          "opponent_rank": null,
+          "weight_class": "182",
+          "result": "L",
+          "method": "FALL",
+          "score": "3:59",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

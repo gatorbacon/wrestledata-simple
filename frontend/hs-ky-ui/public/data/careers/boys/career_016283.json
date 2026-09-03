@@ -2,9 +2,9 @@
   "career_id": "career_016283",
   "canonical_name": "Brennan Boykin",
   "career_record": {
-    "wins": 14,
-    "losses": 6,
-    "win_pct": 0.7
+    "wins": 16,
+    "losses": 8,
+    "win_pct": 0.667
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 165,
       "record": "14-6",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -556,6 +557,92 @@
           "duration": "1:10",
           "event": "vs. Seneca",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000299",
+      "grade": 11,
+      "team": "Eastern",
+      "weight_class": 170,
+      "record": "2-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000300",
+          "opponent_career_id": "career_016775",
+          "opponent_name": "David Jean",
+          "opponent_team": "Western",
+          "opponent_team_rank": null,
+          "opponent_weight": 170,
+          "opponent_rank": null,
+          "weight_class": "170",
+          "result": "W",
+          "method": "DEC",
+          "score": "15-8",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000297",
+          "opponent_career_id": "career_016774",
+          "opponent_name": "Charlie Courtney",
+          "opponent_team": "Calloway County",
+          "opponent_team_rank": null,
+          "opponent_weight": 170,
+          "opponent_rank": null,
+          "weight_class": "170",
+          "result": "W",
+          "method": "FALL",
+          "score": "0:40",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000304",
+          "opponent_career_id": "career_016560",
+          "opponent_name": "Hiero Chamblee",
+          "opponent_team": "Simon Kenton",
+          "opponent_team_rank": null,
+          "opponent_weight": 170,
+          "opponent_rank": null,
+          "weight_class": "170",
+          "result": "L",
+          "method": "FALL",
+          "score": "1:17",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000292",
+          "opponent_career_id": "career_016769",
+          "opponent_name": "Rhodes Bell",
+          "opponent_team": "Danville",
+          "opponent_team_rank": null,
+          "opponent_weight": 170,
+          "opponent_rank": null,
+          "weight_class": "170",
+          "result": "L",
+          "method": "DEC",
+          "score": "9-5",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

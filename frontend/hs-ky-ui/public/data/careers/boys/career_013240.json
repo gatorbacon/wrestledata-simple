@@ -2,9 +2,9 @@
   "career_id": "career_013240",
   "canonical_name": "Tucker Hurst",
   "career_record": {
-    "wins": 140,
-    "losses": 30,
-    "win_pct": 0.824
+    "wins": 141,
+    "losses": 32,
+    "win_pct": 0.815
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 120,
       "record": "36-8",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": 4,
       "current_rank": null,
       "matches": [
@@ -766,6 +767,7 @@
       "weight_class": 113,
       "record": "29-6",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 4,
       "current_rank": null,
       "matches": [
@@ -1409,6 +1411,7 @@
       "weight_class": 106,
       "record": "46-3",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 1,
       "current_rank": null,
       "matches": [
@@ -2376,6 +2379,7 @@
       "weight_class": 120,
       "record": "29-13",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -3223,6 +3227,74 @@
           "duration": "2:42",
           "event": "vs. Oldham County",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000014",
+      "grade": 10,
+      "team": "Woodford County",
+      "weight_class": 106,
+      "record": "1-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000013",
+          "opponent_career_id": "career_014173",
+          "opponent_name": "Cecil Nevels",
+          "opponent_team": "Wayne County",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "W",
+          "method": "FALL",
+          "score": "5:23",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000016",
+          "opponent_career_id": "career_014916",
+          "opponent_name": "Kyle Edlin",
+          "opponent_team": "LaRue County",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "L",
+          "method": "MD",
+          "score": "13-4",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000019",
+          "opponent_career_id": "career_014027",
+          "opponent_name": "Tim Poynter",
+          "opponent_team": "Moore",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "L",
+          "method": "DEC",
+          "score": "4-3",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

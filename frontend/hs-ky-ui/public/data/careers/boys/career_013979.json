@@ -2,9 +2,9 @@
   "career_id": "career_013979",
   "canonical_name": "Colton Mott",
   "career_record": {
-    "wins": 37,
-    "losses": 22,
-    "win_pct": 0.627
+    "wins": 38,
+    "losses": 24,
+    "win_pct": 0.613
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 132,
       "record": "8-2",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -208,6 +209,7 @@
       "weight_class": 132,
       "record": "19-13",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -761,6 +763,7 @@
       "weight_class": 126,
       "record": "10-7",
       "regional_place": 3,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1068,6 +1071,74 @@
           "duration": "0:55",
           "event": "Rumble on the Hilltop",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000110",
+      "grade": 9,
+      "team": "Harrison County",
+      "weight_class": 126,
+      "record": "1-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000109",
+          "opponent_career_id": "career_015685",
+          "opponent_name": "Ian Kahl",
+          "opponent_team": "Trinity (Louisville)",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "FALL",
+          "score": "0:16",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000112",
+          "opponent_career_id": "career_015713",
+          "opponent_name": "Zach Bybee",
+          "opponent_team": "Wayne County",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "W",
+          "method": "FALL",
+          "score": "2:42",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000116",
+          "opponent_career_id": "career_015321",
+          "opponent_name": "Daniel Lannum",
+          "opponent_team": "Danville",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "MD",
+          "score": "12-0",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

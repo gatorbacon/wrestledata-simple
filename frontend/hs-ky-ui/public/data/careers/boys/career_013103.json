@@ -2,9 +2,9 @@
   "career_id": "career_013103",
   "canonical_name": "Angel Vasquez",
   "career_record": {
-    "wins": 136,
-    "losses": 17,
-    "win_pct": 0.889
+    "wins": 139,
+    "losses": 19,
+    "win_pct": 0.88
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 138,
       "record": "26-2",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 2,
       "current_rank": null,
       "matches": [
@@ -640,6 +641,7 @@
       "weight_class": 138,
       "record": "40-2",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 1,
       "current_rank": null,
       "matches": [
@@ -1445,6 +1447,7 @@
       "weight_class": 138,
       "record": "37-5",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 2,
       "current_rank": null,
       "matches": [
@@ -2286,6 +2289,7 @@
       "weight_class": 126,
       "record": "33-8",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 6,
       "current_rank": null,
       "matches": [
@@ -3188,6 +3192,110 @@
           "event": "vs. Walton Verona",
           "season": 2013,
           "opponent_ky": false
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000094",
+      "grade": 7,
+      "team": "Lafayette",
+      "weight_class": 120,
+      "record": "3-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000093",
+          "opponent_career_id": "career_014026",
+          "opponent_name": "Bobby Poynter",
+          "opponent_team": "Moore",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "L",
+          "method": "DEC",
+          "score": "13-8",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000095",
+          "opponent_career_id": "career_016206",
+          "opponent_name": "Jared Coffell",
+          "opponent_team": "Central Hardin",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "W",
+          "method": "DEC",
+          "score": "8-3",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000066",
+          "opponent_career_id": "career_016669",
+          "opponent_name": "Corbin Nye",
+          "opponent_team": "Spencer County",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "W",
+          "method": "FALL",
+          "score": "3:45",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000070",
+          "opponent_career_id": "career_015103",
+          "opponent_name": "Wade Beeler",
+          "opponent_team": "Meade County",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "W",
+          "method": "DEC",
+          "score": null,
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000086",
+          "opponent_career_id": "career_016679",
+          "opponent_name": "Clay Brown",
+          "opponent_team": "Walton Verona",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "L",
+          "method": "MD",
+          "score": "11-3",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
         }
       ]
     }

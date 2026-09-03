@@ -3,8 +3,8 @@
   "canonical_name": "Dekeevious Matlock",
   "career_record": {
     "wins": 39,
-    "losses": 12,
-    "win_pct": 0.765
+    "losses": 14,
+    "win_pct": 0.736
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 144,
       "record": "14-6",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 4,
       "current_rank": null,
       "matches": [
@@ -460,6 +461,7 @@
       "weight_class": 138,
       "record": "25-6",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1074,6 +1076,56 @@
           "event": "Harpeth Invitational",
           "season": 2013,
           "opponent_ky": false
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000180",
+      "grade": 10,
+      "team": "Christian County",
+      "weight_class": 138,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000179",
+          "opponent_career_id": "career_014109",
+          "opponent_name": "Dominic Lampe",
+          "opponent_team": "St. Xavier",
+          "opponent_team_rank": null,
+          "opponent_weight": 138,
+          "opponent_rank": null,
+          "weight_class": "138",
+          "result": "L",
+          "method": "MD",
+          "score": "11-2",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000178",
+          "opponent_career_id": "career_016071",
+          "opponent_name": "Kevin Roberts",
+          "opponent_team": "Simon Kenton",
+          "opponent_team_rank": null,
+          "opponent_weight": 138,
+          "opponent_rank": null,
+          "weight_class": "138",
+          "result": "L",
+          "method": "DEC",
+          "score": "9-3",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
         }
       ]
     }

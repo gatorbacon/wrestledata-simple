@@ -3,8 +3,8 @@
   "canonical_name": "Francisco Rodriguez",
   "career_record": {
     "wins": 2,
-    "losses": 2,
-    "win_pct": 0.5
+    "losses": 6,
+    "win_pct": 0.25
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 126,
       "record": "2-2",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -124,6 +125,106 @@
           "duration": "7:00",
           "event": "vs. Western",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000114",
+      "grade": 11,
+      "team": "Western",
+      "weight_class": 126,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000113",
+          "opponent_career_id": "career_016435",
+          "opponent_name": "Clyde Newcommer",
+          "opponent_team": "Montgomery County",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "FALL",
+          "score": "4:49",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000115",
+          "opponent_career_id": "career_015996",
+          "opponent_name": "Sean Burke",
+          "opponent_team": "Male",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "FALL",
+          "score": "2:44",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2011,
+      "wrestler_id": "HW_B_000574",
+      "grade": 10,
+      "team": "Western",
+      "weight_class": 119,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2011-02-19",
+          "opponent_id": "HW_B_000575",
+          "opponent_career_id": "career_015536",
+          "opponent_name": "Mitch Rusch",
+          "opponent_team": "North Oldham",
+          "opponent_team_rank": null,
+          "opponent_weight": 119,
+          "opponent_rank": null,
+          "weight_class": "119",
+          "result": "L",
+          "method": "FALL",
+          "score": "3:17",
+          "duration": null,
+          "event": "2011 KHSAA State Championship",
+          "season": 2011,
+          "opponent_ky": true
+        },
+        {
+          "date": "2011-02-19",
+          "opponent_id": "HW_B_000573",
+          "opponent_career_id": "career_016908",
+          "opponent_name": "Frederick Agyeman",
+          "opponent_team": "Franklin County",
+          "opponent_team_rank": null,
+          "opponent_weight": 119,
+          "opponent_rank": null,
+          "weight_class": "119",
+          "result": "L",
+          "method": "FALL",
+          "score": "4:26",
+          "duration": null,
+          "event": "2011 KHSAA State Championship",
+          "season": 2011,
           "opponent_ky": true
         }
       ]

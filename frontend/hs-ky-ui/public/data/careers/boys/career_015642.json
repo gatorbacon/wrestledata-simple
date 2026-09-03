@@ -2,9 +2,9 @@
   "career_id": "career_015642",
   "canonical_name": "Christian Bautista",
   "career_record": {
-    "wins": 17,
-    "losses": 17,
-    "win_pct": 0.5
+    "wins": 18,
+    "losses": 19,
+    "win_pct": 0.486
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 138,
       "record": "1-2",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -136,6 +137,7 @@
       "weight_class": 113,
       "record": "16-15",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -767,6 +769,74 @@
           "duration": "1:01",
           "event": "vs. Southern",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000038",
+      "grade": 10,
+      "team": "Southern",
+      "weight_class": 113,
+      "record": "1-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000037",
+          "opponent_career_id": "career_013140",
+          "opponent_name": "Andrew Ackley",
+          "opponent_team": "Nelson County",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "L",
+          "method": "DEC",
+          "score": "9-4",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000040",
+          "opponent_career_id": "career_012389",
+          "opponent_name": "J.D. Criswell",
+          "opponent_team": "Wayne County",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "W",
+          "method": "DEC",
+          "score": "11-8",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000059",
+          "opponent_career_id": "career_015946",
+          "opponent_name": "Coty Hunt",
+          "opponent_team": "Franklin County",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "L",
+          "method": "DEC",
+          "score": "6-3",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

@@ -2,9 +2,9 @@
   "career_id": "career_014987",
   "canonical_name": "Stephen Maggard",
   "career_record": {
-    "wins": 39,
-    "losses": 20,
-    "win_pct": 0.661
+    "wins": 42,
+    "losses": 22,
+    "win_pct": 0.656
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 132,
       "record": "17-5",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": 4,
       "current_rank": null,
       "matches": [
@@ -514,6 +515,7 @@
       "weight_class": 113,
       "record": "22-15",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 6,
       "current_rank": null,
       "matches": [
@@ -1289,6 +1291,110 @@
           "duration": "7:00",
           "event": "vs. Campbell County",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000026",
+      "grade": 10,
+      "team": "Campbell County",
+      "weight_class": 106,
+      "record": "3-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000025",
+          "opponent_career_id": "career_013153",
+          "opponent_name": "Brady Emerson",
+          "opponent_team": "Oldham County",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "L",
+          "method": "DEC",
+          "score": "7-5",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000027",
+          "opponent_career_id": "career_015418",
+          "opponent_name": "Hunter Baum",
+          "opponent_team": "Holy Cross (Louisville)",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "W",
+          "method": "FALL",
+          "score": "4:50",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000006",
+          "opponent_career_id": "career_015706",
+          "opponent_name": "Colin Roth",
+          "opponent_team": "Walton Verona",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "W",
+          "method": "DEC",
+          "score": "10-4",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000001",
+          "opponent_career_id": "career_013916",
+          "opponent_name": "Davon Adams",
+          "opponent_team": "Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "W",
+          "method": "DEC",
+          "score": "10-8",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000022",
+          "opponent_career_id": "career_015002",
+          "opponent_name": "Caleb Austin",
+          "opponent_team": "Christian County",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "L",
+          "method": "MD",
+          "score": "15-4",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

@@ -2,9 +2,9 @@
   "career_id": "career_013140",
   "canonical_name": "Andrew Ackley",
   "career_record": {
-    "wins": 118,
-    "losses": 9,
-    "win_pct": 0.929
+    "wins": 120,
+    "losses": 13,
+    "win_pct": 0.902
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 157,
       "record": "46-2",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 3,
       "current_rank": null,
       "matches": [
@@ -946,6 +947,7 @@
       "weight_class": 150,
       "record": "26-1",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 2,
       "current_rank": null,
       "matches": [
@@ -1481,6 +1483,7 @@
       "weight_class": 150,
       "record": "30-1",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 3,
       "current_rank": null,
       "matches": [
@@ -2268,6 +2271,7 @@
       "weight_class": 138,
       "record": "16-5",
       "regional_place": 3,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -2917,6 +2921,142 @@
           "duration": "7:00",
           "event": "vs. Simon Kenton",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000037",
+      "grade": 8,
+      "team": "Nelson County",
+      "weight_class": 113,
+      "record": "2-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000038",
+          "opponent_career_id": "career_015642",
+          "opponent_name": "Christian Bautista",
+          "opponent_team": "Southern",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "W",
+          "method": "DEC",
+          "score": "9-4",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000039",
+          "opponent_career_id": "career_016660",
+          "opponent_name": "Jake Bargo",
+          "opponent_team": "Spencer County",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "W",
+          "method": "FALL",
+          "score": "3:38",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000036",
+          "opponent_career_id": "career_016659",
+          "opponent_name": "J.J. Killebrew",
+          "opponent_team": "Christian County",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "L",
+          "method": "DEC",
+          "score": "5-3",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000056",
+          "opponent_career_id": "career_016665",
+          "opponent_name": "Chris Abernathy",
+          "opponent_team": "Meade County",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "L",
+          "method": "MD",
+          "score": "9-0",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2011,
+      "wrestler_id": "HW_B_000505",
+      "grade": 7,
+      "team": "Nelson County",
+      "weight_class": 103,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2011-02-19",
+          "opponent_id": "HW_B_000504",
+          "opponent_career_id": "career_016672",
+          "opponent_name": "Garth Yenter",
+          "opponent_team": "Campbell County",
+          "opponent_team_rank": null,
+          "opponent_weight": 103,
+          "opponent_rank": null,
+          "weight_class": "103",
+          "result": "L",
+          "method": "FALL",
+          "score": "2:40",
+          "duration": null,
+          "event": "2011 KHSAA State Championship",
+          "season": 2011,
+          "opponent_ky": true
+        },
+        {
+          "date": "2011-02-19",
+          "opponent_id": "HW_B_000506",
+          "opponent_career_id": "career_015002",
+          "opponent_name": "Caleb Austin",
+          "opponent_team": "Christian County",
+          "opponent_team_rank": null,
+          "opponent_weight": 103,
+          "opponent_rank": null,
+          "weight_class": "103",
+          "result": "L",
+          "method": "DEC",
+          "score": "11-4",
+          "duration": null,
+          "event": "2011 KHSAA State Championship",
+          "season": 2011,
           "opponent_ky": true
         }
       ]

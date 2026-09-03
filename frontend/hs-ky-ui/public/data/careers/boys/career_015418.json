@@ -3,8 +3,8 @@
   "canonical_name": "Hunter Baum",
   "career_record": {
     "wins": 33,
-    "losses": 12,
-    "win_pct": 0.733
+    "losses": 14,
+    "win_pct": 0.702
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 120,
       "record": "13-6",
       "regional_place": 3,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -388,6 +389,7 @@
       "weight_class": 106,
       "record": "20-6",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -965,6 +967,56 @@
           "duration": "4:54",
           "event": "vs. North Oldham",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000027",
+      "grade": 10,
+      "team": "Holy Cross (Louisville)",
+      "weight_class": 106,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000028",
+          "opponent_career_id": "career_013879",
+          "opponent_name": "Tyler Ward",
+          "opponent_team": "Apollo",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "L",
+          "method": "FALL",
+          "score": "0:16",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000026",
+          "opponent_career_id": "career_014987",
+          "opponent_name": "Stephen Maggard",
+          "opponent_team": "Campbell County",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "L",
+          "method": "FALL",
+          "score": "4:50",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

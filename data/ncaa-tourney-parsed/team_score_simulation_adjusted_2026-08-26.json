@@ -1,0 +1,6852 @@
+{
+  "rankings_file": "data/2027/flo-preseason-rankings/2026-08-26.json",
+  "ranking_date": "2026-08-26",
+  "month": "Sep",
+  "trials": 10000,
+  "teams": [
+    {
+      "team": "Penn State",
+      "lineup_size": 10,
+      "program_offset": 1.46,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 1,
+          "name": "Luke Lilledahl",
+          "individual_modifier": 0.75,
+          "expected": 18.5,
+          "p5": 4.2,
+          "p95": 28.3
+        },
+        {
+          "weight": 133,
+          "rank": 4,
+          "name": "Marcus Blaze",
+          "individual_modifier": 0.0,
+          "expected": 12.6,
+          "p5": 2.0,
+          "p95": 24.6
+        },
+        {
+          "weight": 141,
+          "rank": 12,
+          "name": "Braeden Davis",
+          "individual_modifier": 0.0,
+          "expected": 3.9,
+          "p5": 1.5,
+          "p95": 14.0
+        },
+        {
+          "weight": 149,
+          "rank": 3,
+          "name": "Shayne Van Ness",
+          "individual_modifier": 4.43,
+          "expected": 16.1,
+          "p5": 5.9,
+          "p95": 26.7
+        },
+        {
+          "weight": 157,
+          "rank": 2,
+          "name": "Tyler Kasak",
+          "individual_modifier": 0.0,
+          "expected": 14.8,
+          "p5": 1.5,
+          "p95": 25.2
+        },
+        {
+          "weight": 165,
+          "rank": 1,
+          "name": "PJ Duke",
+          "individual_modifier": 0.59,
+          "expected": 18.4,
+          "p5": 4.0,
+          "p95": 28.2
+        },
+        {
+          "weight": 174,
+          "rank": 1,
+          "name": "Mitchell Mesenbrink",
+          "individual_modifier": 2.46,
+          "expected": 20.2,
+          "p5": 5.9,
+          "p95": 30.0
+        },
+        {
+          "weight": 184,
+          "rank": 2,
+          "name": "Rocco Welsh",
+          "individual_modifier": 1.75,
+          "expected": 16.5,
+          "p5": 3.2,
+          "p95": 27.0
+        },
+        {
+          "weight": 197,
+          "rank": 1,
+          "name": "Josh Barr",
+          "individual_modifier": 2.0,
+          "expected": 19.7,
+          "p5": 5.4,
+          "p95": 29.6
+        },
+        {
+          "weight": 285,
+          "rank": 5,
+          "name": "Cole Mirasola",
+          "individual_modifier": 0.0,
+          "expected": 9.2,
+          "p5": 1.5,
+          "p95": 18.8
+        }
+      ],
+      "min": 65.2,
+      "max": 235.5,
+      "p5": 111.4,
+      "p95": 188.2,
+      "expected": 150.1,
+      "p_1st": 87.0,
+      "p_top3": 99.9,
+      "p_top5": 100.0,
+      "p_top10": 100.0,
+      "p_place": {
+        "1": 87.0,
+        "2": 12.0,
+        "3": 0.9,
+        "4": 0.1,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "team": "OK State",
+      "lineup_size": 9,
+      "program_offset": 0.68,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 6,
+          "name": "Troy Spratley",
+          "individual_modifier": 0.0,
+          "expected": 5.7,
+          "p5": 0.7,
+          "p95": 16.7
+        },
+        {
+          "weight": 133,
+          "rank": 1,
+          "name": "Jax Forrest",
+          "individual_modifier": 2.32,
+          "expected": 19.3,
+          "p5": 4.9,
+          "p95": 29.1
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.5,
+          "p5": 0.7,
+          "p95": 4.1
+        },
+        {
+          "weight": 149,
+          "rank": 1,
+          "name": "Sergio Vega",
+          "individual_modifier": 1.06,
+          "expected": 18.0,
+          "p5": 3.7,
+          "p95": 27.9
+        },
+        {
+          "weight": 157,
+          "rank": 1,
+          "name": "Landon Robideau",
+          "individual_modifier": 0.44,
+          "expected": 17.4,
+          "p5": 3.1,
+          "p95": 27.2
+        },
+        {
+          "weight": 165,
+          "rank": 4,
+          "name": "LaDarion Lockett",
+          "individual_modifier": 0.0,
+          "expected": 11.8,
+          "p5": 1.2,
+          "p95": 23.8
+        },
+        {
+          "weight": 174,
+          "rank": 14,
+          "name": "Alex Facundo",
+          "individual_modifier": 0.0,
+          "expected": 4.0,
+          "p5": 0.7,
+          "p95": 13.2
+        },
+        {
+          "weight": 184,
+          "rank": 8,
+          "name": "Zack Ryder",
+          "individual_modifier": 0.0,
+          "expected": 4.3,
+          "p5": 0.7,
+          "p95": 15.0
+        },
+        {
+          "weight": 197,
+          "rank": 2,
+          "name": "Cody Merrill",
+          "individual_modifier": 0.97,
+          "expected": 15.0,
+          "p5": 1.7,
+          "p95": 25.4
+        },
+        {
+          "weight": 285,
+          "rank": 1,
+          "name": "Konner Doucet",
+          "individual_modifier": 0.0,
+          "expected": 17.0,
+          "p5": 2.6,
+          "p95": 26.8
+        }
+      ],
+      "min": 33.7,
+      "max": 190.2,
+      "p5": 78.4,
+      "p95": 148.5,
+      "expected": 113.8,
+      "p_1st": 12.4,
+      "p_top3": 94.7,
+      "p_top5": 99.0,
+      "p_top10": 99.9,
+      "p_place": {
+        "1": 12.4,
+        "2": 71.4,
+        "3": 10.9,
+        "4": 3.3,
+        "5": 1.0,
+        "6": 0.5,
+        "7": 0.3,
+        "8": 0.1,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "team": "Nebraska",
+      "lineup_size": 9,
+      "program_offset": 0.83,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 4,
+          "name": "Vincent Robinson",
+          "individual_modifier": 0.0,
+          "expected": 12.0,
+          "p5": 1.3,
+          "p95": 24.0
+        },
+        {
+          "weight": 133,
+          "rank": 7,
+          "name": "Jacob Van Dee",
+          "individual_modifier": 0.0,
+          "expected": 5.7,
+          "p5": 0.8,
+          "p95": 16.4
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.7,
+          "p5": 0.8,
+          "p95": 4.3
+        },
+        {
+          "weight": 149,
+          "rank": 6,
+          "name": "Anthony Echemendia",
+          "individual_modifier": 0.0,
+          "expected": 5.9,
+          "p5": 0.8,
+          "p95": 16.8
+        },
+        {
+          "weight": 157,
+          "rank": 3,
+          "name": "Antrell Taylor",
+          "individual_modifier": 3.72,
+          "expected": 14.8,
+          "p5": 4.5,
+          "p95": 25.4
+        },
+        {
+          "weight": 165,
+          "rank": 9,
+          "name": "LJ Araujo",
+          "individual_modifier": 0.0,
+          "expected": 6.2,
+          "p5": 0.8,
+          "p95": 17.5
+        },
+        {
+          "weight": 174,
+          "rank": 2,
+          "name": "Christopher Minto",
+          "individual_modifier": 1.91,
+          "expected": 16.1,
+          "p5": 2.7,
+          "p95": 26.5
+        },
+        {
+          "weight": 184,
+          "rank": 15,
+          "name": "Lucas Cochran",
+          "individual_modifier": 0.0,
+          "expected": 3.5,
+          "p5": 0.8,
+          "p95": 12.5
+        },
+        {
+          "weight": 197,
+          "rank": 5,
+          "name": "Camden McDanel",
+          "individual_modifier": 0.0,
+          "expected": 8.6,
+          "p5": 0.8,
+          "p95": 18.1
+        },
+        {
+          "weight": 285,
+          "rank": 11,
+          "name": "Cade Ziola",
+          "individual_modifier": 0.0,
+          "expected": 4.4,
+          "p5": 0.8,
+          "p95": 15.4
+        }
+      ],
+      "min": 21.5,
+      "max": 177.0,
+      "p5": 48.6,
+      "p95": 110.1,
+      "expected": 78.5,
+      "p_1st": 0.5,
+      "p_top3": 46.3,
+      "p_top5": 79.2,
+      "p_top10": 97.8,
+      "p_place": {
+        "1": 0.5,
+        "2": 9.1,
+        "3": 36.7,
+        "4": 20.0,
+        "5": 12.9,
+        "6": 7.9,
+        "7": 5.0,
+        "8": 2.7,
+        "9": 1.9,
+        "10": 1.1
+      }
+    },
+    {
+      "team": "Stanford",
+      "lineup_size": 9,
+      "program_offset": 0.93,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 3,
+          "name": "Nico Provo",
+          "individual_modifier": 2.07,
+          "expected": 13.2,
+          "p5": 3.0,
+          "p95": 23.8
+        },
+        {
+          "weight": 133,
+          "rank": 6,
+          "name": "Tyler Knox",
+          "individual_modifier": 0.0,
+          "expected": 6.0,
+          "p5": 0.9,
+          "p95": 16.9
+        },
+        {
+          "weight": 141,
+          "rank": 8,
+          "name": "Jack Consiglio",
+          "individual_modifier": 0.0,
+          "expected": 4.5,
+          "p5": 0.9,
+          "p95": 15.3
+        },
+        {
+          "weight": 149,
+          "rank": 2,
+          "name": "Aden Valencia",
+          "individual_modifier": 1.88,
+          "expected": 16.1,
+          "p5": 2.8,
+          "p95": 26.6
+        },
+        {
+          "weight": 157,
+          "rank": 11,
+          "name": "Daniel Cardenas",
+          "individual_modifier": 0.0,
+          "expected": 4.5,
+          "p5": 0.9,
+          "p95": 15.5
+        },
+        {
+          "weight": 165,
+          "rank": 8,
+          "name": "EJ Parco",
+          "individual_modifier": 0.0,
+          "expected": 4.5,
+          "p5": 0.9,
+          "p95": 15.3
+        },
+        {
+          "weight": 174,
+          "rank": 9,
+          "name": "Hunter Garvin",
+          "individual_modifier": 0.0,
+          "expected": 6.3,
+          "p5": 0.9,
+          "p95": 17.6
+        },
+        {
+          "weight": 184,
+          "rank": 21,
+          "name": "Abraham Wojcikiewicz",
+          "individual_modifier": 0.0,
+          "expected": 2.6,
+          "p5": 0.9,
+          "p95": 9.4
+        },
+        {
+          "weight": 197,
+          "rank": 6,
+          "name": "Angelo Posada",
+          "individual_modifier": 0.0,
+          "expected": 6.0,
+          "p5": 0.9,
+          "p95": 16.9
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.8,
+          "p5": 0.9,
+          "p95": 4.4
+        }
+      ],
+      "min": 15.8,
+      "max": 132.8,
+      "p5": 37.7,
+      "p95": 96.3,
+      "expected": 65.8,
+      "p_1st": 0.1,
+      "p_top3": 18.7,
+      "p_top5": 53.7,
+      "p_top10": 91.7,
+      "p_place": {
+        "1": 0.1,
+        "2": 2.8,
+        "3": 15.9,
+        "4": 18.4,
+        "5": 16.6,
+        "6": 12.4,
+        "7": 10.3,
+        "8": 6.9,
+        "9": 4.8,
+        "10": 3.5
+      }
+    },
+    {
+      "team": "Iowa",
+      "lineup_size": 9,
+      "program_offset": 0.68,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 17,
+          "name": "Leo DeLuca",
+          "individual_modifier": 0.0,
+          "expected": 2.2,
+          "p5": 0.7,
+          "p95": 9.9
+        },
+        {
+          "weight": 133,
+          "rank": 5,
+          "name": "Ryan Crookham",
+          "individual_modifier": 0.0,
+          "expected": 8.4,
+          "p5": 0.7,
+          "p95": 18.0
+        },
+        {
+          "weight": 141,
+          "rank": 4,
+          "name": "Nasir Bailey",
+          "individual_modifier": 0.0,
+          "expected": 11.8,
+          "p5": 1.2,
+          "p95": 23.8
+        },
+        {
+          "weight": 149,
+          "rank": 8,
+          "name": "Ryder Block",
+          "individual_modifier": 0.0,
+          "expected": 4.3,
+          "p5": 0.7,
+          "p95": 15.0
+        },
+        {
+          "weight": 157,
+          "rank": 13,
+          "name": "Jordan Williams",
+          "individual_modifier": 0.0,
+          "expected": 2.5,
+          "p5": 0.7,
+          "p95": 11.2
+        },
+        {
+          "weight": 165,
+          "rank": 13,
+          "name": "Carter Schubert",
+          "individual_modifier": 0.0,
+          "expected": 2.5,
+          "p5": 0.7,
+          "p95": 11.2
+        },
+        {
+          "weight": 174,
+          "rank": 7,
+          "name": "Gabe Arnold",
+          "individual_modifier": 0.0,
+          "expected": 5.6,
+          "p5": 0.7,
+          "p95": 16.2
+        },
+        {
+          "weight": 184,
+          "rank": 3,
+          "name": "Angelo Ferrari",
+          "individual_modifier": 0.0,
+          "expected": 10.9,
+          "p5": 0.7,
+          "p95": 21.5
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.5,
+          "p5": 0.7,
+          "p95": 4.1
+        },
+        {
+          "weight": 285,
+          "rank": 2,
+          "name": "Ben Kueter",
+          "individual_modifier": 0.0,
+          "expected": 14.0,
+          "p5": 0.7,
+          "p95": 24.4
+        }
+      ],
+      "min": 13.4,
+      "max": 138.9,
+      "p5": 35.4,
+      "p95": 93.4,
+      "expected": 63.7,
+      "p_1st": 0.1,
+      "p_top3": 16.1,
+      "p_top5": 48.6,
+      "p_top10": 89.7,
+      "p_place": {
+        "1": 0.1,
+        "2": 2.4,
+        "3": 13.6,
+        "4": 17.2,
+        "5": 15.3,
+        "6": 13.6,
+        "7": 10.4,
+        "8": 7.6,
+        "9": 5.1,
+        "10": 4.3
+      }
+    },
+    {
+      "team": "Virginia Tech",
+      "lineup_size": 10,
+      "program_offset": -0.72,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 5,
+          "name": "Eddie Ventresca",
+          "individual_modifier": 0.0,
+          "expected": 7.1,
+          "p5": 0.0,
+          "p95": 16.6
+        },
+        {
+          "weight": 133,
+          "rank": 3,
+          "name": "Aaron Seidel",
+          "individual_modifier": 3.19,
+          "expected": 12.7,
+          "p5": 2.5,
+          "p95": 23.3
+        },
+        {
+          "weight": 141,
+          "rank": 2,
+          "name": "Bo Bassett",
+          "individual_modifier": 0.0,
+          "expected": 12.7,
+          "p5": 0.0,
+          "p95": 23.0
+        },
+        {
+          "weight": 149,
+          "rank": 4,
+          "name": "Caleb Henson",
+          "individual_modifier": 0.0,
+          "expected": 10.5,
+          "p5": 0.0,
+          "p95": 22.4
+        },
+        {
+          "weight": 157,
+          "rank": 7,
+          "name": "Collin Gaj",
+          "individual_modifier": 0.0,
+          "expected": 4.3,
+          "p5": 0.0,
+          "p95": 14.8
+        },
+        {
+          "weight": 165,
+          "rank": 21,
+          "name": "Noah Nininger",
+          "individual_modifier": 0.0,
+          "expected": 1.3,
+          "p5": 0.0,
+          "p95": 7.8
+        },
+        {
+          "weight": 174,
+          "rank": 17,
+          "name": "Ryan Burton",
+          "individual_modifier": 0.0,
+          "expected": 1.3,
+          "p5": 0.0,
+          "p95": 8.5
+        },
+        {
+          "weight": 184,
+          "rank": 16,
+          "name": "Jaden Bullock",
+          "individual_modifier": 0.0,
+          "expected": 2.1,
+          "p5": 0.0,
+          "p95": 9.3
+        },
+        {
+          "weight": 197,
+          "rank": 9,
+          "name": "Sonny Sasso",
+          "individual_modifier": 0.0,
+          "expected": 4.8,
+          "p5": 0.0,
+          "p95": 16.0
+        },
+        {
+          "weight": 285,
+          "rank": 15,
+          "name": "Jimmy Mullen",
+          "individual_modifier": 0.0,
+          "expected": 2.2,
+          "p5": 0.0,
+          "p95": 11.0
+        }
+      ],
+      "min": 6.3,
+      "max": 128.1,
+      "p5": 30.8,
+      "p95": 88.6,
+      "expected": 59.2,
+      "p_1st": 0.0,
+      "p_top3": 10.7,
+      "p_top5": 38.9,
+      "p_top10": 83.2,
+      "p_place": {
+        "1": 0.0,
+        "2": 1.2,
+        "3": 9.5,
+        "4": 13.7,
+        "5": 14.5,
+        "6": 13.3,
+        "7": 10.9,
+        "8": 8.9,
+        "9": 6.6,
+        "10": 4.6
+      }
+    },
+    {
+      "team": "Ohio State",
+      "lineup_size": 8,
+      "program_offset": 0.58,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 8,
+          "name": "Nic Bouzakis",
+          "individual_modifier": 0.0,
+          "expected": 4.2,
+          "p5": 0.6,
+          "p95": 14.9
+        },
+        {
+          "weight": 133,
+          "rank": 2,
+          "name": "Ben Davino",
+          "individual_modifier": 1.62,
+          "expected": 15.5,
+          "p5": 2.2,
+          "p95": 25.9
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.4,
+          "p5": 0.6,
+          "p95": 4.0
+        },
+        {
+          "weight": 149,
+          "rank": 19,
+          "name": "Kade Brown",
+          "individual_modifier": 0.0,
+          "expected": 1.9,
+          "p5": 0.6,
+          "p95": 8.1
+        },
+        {
+          "weight": 157,
+          "rank": 5,
+          "name": "Brandon Cannon",
+          "individual_modifier": 0.0,
+          "expected": 8.3,
+          "p5": 0.6,
+          "p95": 17.9
+        },
+        {
+          "weight": 165,
+          "rank": 15,
+          "name": "Ethan Stiles",
+          "individual_modifier": 0.0,
+          "expected": 3.2,
+          "p5": 0.6,
+          "p95": 12.3
+        },
+        {
+          "weight": 174,
+          "rank": 10,
+          "name": "Jaxon Smith",
+          "individual_modifier": 0.0,
+          "expected": 6.3,
+          "p5": 0.6,
+          "p95": 18.1
+        },
+        {
+          "weight": 184,
+          "rank": 11,
+          "name": "Dylan Fishback",
+          "individual_modifier": 0.0,
+          "expected": 4.2,
+          "p5": 0.6,
+          "p95": 15.2
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.4,
+          "p5": 0.6,
+          "p95": 4.0
+        },
+        {
+          "weight": 285,
+          "rank": 3,
+          "name": "Nick Feldman",
+          "individual_modifier": 0.0,
+          "expected": 10.8,
+          "p5": 0.6,
+          "p95": 21.4
+        }
+      ],
+      "min": 9.1,
+      "max": 122.5,
+      "p5": 30.7,
+      "p95": 85.4,
+      "expected": 57.5,
+      "p_1st": 0.0,
+      "p_top3": 7.9,
+      "p_top5": 34.4,
+      "p_top10": 82.8,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.8,
+        "3": 7.2,
+        "4": 12.3,
+        "5": 14.1,
+        "6": 13.9,
+        "7": 11.9,
+        "8": 9.6,
+        "9": 7.3,
+        "10": 5.8
+      }
+    },
+    {
+      "team": "Missouri",
+      "lineup_size": 8,
+      "program_offset": 0.21,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 18,
+          "name": "Mack Mauger",
+          "individual_modifier": 0.0,
+          "expected": 3.3,
+          "p5": 0.2,
+          "p95": 9.2
+        },
+        {
+          "weight": 133,
+          "rank": 12,
+          "name": "Gage Walker",
+          "individual_modifier": 0.0,
+          "expected": 2.6,
+          "p5": 0.2,
+          "p95": 12.7
+        },
+        {
+          "weight": 141,
+          "rank": 11,
+          "name": "Zan Fugitt",
+          "individual_modifier": 0.0,
+          "expected": 3.8,
+          "p5": 0.2,
+          "p95": 14.8
+        },
+        {
+          "weight": 149,
+          "rank": 10,
+          "name": "Seth Mendoza",
+          "individual_modifier": 0.0,
+          "expected": 5.9,
+          "p5": 0.2,
+          "p95": 17.7
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.2,
+          "p95": 3.6
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.2,
+          "p95": 3.6
+        },
+        {
+          "weight": 174,
+          "rank": 3,
+          "name": "Cam Steed",
+          "individual_modifier": 1.4,
+          "expected": 11.8,
+          "p5": 1.6,
+          "p95": 22.5
+        },
+        {
+          "weight": 184,
+          "rank": 4,
+          "name": "Aeoden Sinclair",
+          "individual_modifier": 0.0,
+          "expected": 11.3,
+          "p5": 0.7,
+          "p95": 23.4
+        },
+        {
+          "weight": 197,
+          "rank": 10,
+          "name": "Luke Geog",
+          "individual_modifier": 0.0,
+          "expected": 5.9,
+          "p5": 0.2,
+          "p95": 17.7
+        },
+        {
+          "weight": 285,
+          "rank": 23,
+          "name": "Jarrett Stoner",
+          "individual_modifier": 0.0,
+          "expected": 1.3,
+          "p5": 0.2,
+          "p95": 3.8
+        }
+      ],
+      "min": 4.0,
+      "max": 113.9,
+      "p5": 23.7,
+      "p95": 75.3,
+      "expected": 48.3,
+      "p_1st": 0.0,
+      "p_top3": 2.5,
+      "p_top5": 15.6,
+      "p_top10": 64.0,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.2,
+        "3": 2.4,
+        "4": 5.4,
+        "5": 7.6,
+        "6": 10.1,
+        "7": 10.9,
+        "8": 10.3,
+        "9": 8.8,
+        "10": 8.3
+      }
+    },
+    {
+      "team": "Michigan",
+      "lineup_size": 5,
+      "program_offset": 0.83,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.7,
+          "p5": 0.8,
+          "p95": 4.3
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.7,
+          "p5": 0.8,
+          "p95": 4.3
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.7,
+          "p5": 0.8,
+          "p95": 4.3
+        },
+        {
+          "weight": 149,
+          "rank": 12,
+          "name": "Sergio Lemley",
+          "individual_modifier": 0.0,
+          "expected": 3.2,
+          "p5": 0.8,
+          "p95": 13.3
+        },
+        {
+          "weight": 157,
+          "rank": 9,
+          "name": "Daniel Zepeda",
+          "individual_modifier": 0.0,
+          "expected": 6.2,
+          "p5": 0.8,
+          "p95": 17.5
+        },
+        {
+          "weight": 165,
+          "rank": 5,
+          "name": "Cam Catrabone",
+          "individual_modifier": 0.0,
+          "expected": 8.6,
+          "p5": 0.8,
+          "p95": 18.1
+        },
+        {
+          "weight": 174,
+          "rank": 4,
+          "name": "Beau Mantanona",
+          "individual_modifier": 0.0,
+          "expected": 12.0,
+          "p5": 1.3,
+          "p95": 24.0
+        },
+        {
+          "weight": 184,
+          "rank": 5,
+          "name": "Brock Mantanona",
+          "individual_modifier": 0.0,
+          "expected": 8.6,
+          "p5": 0.8,
+          "p95": 18.1
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.7,
+          "p5": 0.8,
+          "p95": 4.3
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.7,
+          "p5": 0.8,
+          "p95": 4.3
+        }
+      ],
+      "min": 10.2,
+      "max": 109.6,
+      "p5": 24.4,
+      "p95": 71.3,
+      "expected": 46.8,
+      "p_1st": 0.0,
+      "p_top3": 1.6,
+      "p_top5": 12.5,
+      "p_top10": 61.3,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.1,
+        "3": 1.4,
+        "4": 4.2,
+        "5": 6.7,
+        "6": 8.7,
+        "7": 10.2,
+        "8": 11.2,
+        "9": 10.1,
+        "10": 8.7
+      }
+    },
+    {
+      "team": "Minnesota",
+      "lineup_size": 7,
+      "program_offset": -0.2,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 7,
+          "name": "Jore Volk",
+          "individual_modifier": 0.0,
+          "expected": 4.7,
+          "p5": 0.0,
+          "p95": 15.3
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 141,
+          "rank": 5,
+          "name": "Vance VomBaur",
+          "individual_modifier": 0.0,
+          "expected": 7.6,
+          "p5": 0.0,
+          "p95": 17.1
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 157,
+          "rank": 12,
+          "name": "Charlie Millard",
+          "individual_modifier": 0.0,
+          "expected": 2.3,
+          "p5": 0.0,
+          "p95": 12.3
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 174,
+          "rank": 22,
+          "name": "Ethan Riddle",
+          "individual_modifier": 0.0,
+          "expected": 1.9,
+          "p5": 0.0,
+          "p95": 8.9
+        },
+        {
+          "weight": 184,
+          "rank": 1,
+          "name": "Max McEnelly",
+          "individual_modifier": 0.91,
+          "expected": 17.0,
+          "p5": 2.7,
+          "p95": 26.8
+        },
+        {
+          "weight": 197,
+          "rank": 23,
+          "name": "Gavin Nelson",
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 285,
+          "rank": 8,
+          "name": "Koy Hopke",
+          "individual_modifier": 0.0,
+          "expected": 3.5,
+          "p5": 0.0,
+          "p95": 14.1
+        }
+      ],
+      "min": 3.4,
+      "max": 98.4,
+      "p5": 16.7,
+      "p95": 65.5,
+      "expected": 40.3,
+      "p_1st": 0.0,
+      "p_top3": 0.7,
+      "p_top5": 6.2,
+      "p_top10": 43.0,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.7,
+        "4": 2.0,
+        "5": 3.5,
+        "6": 5.1,
+        "7": 6.9,
+        "8": 7.6,
+        "9": 9.2,
+        "10": 8.1
+      }
+    },
+    {
+      "team": "Wyoming",
+      "lineup_size": 4,
+      "program_offset": 0.53,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.4,
+          "p5": 0.5,
+          "p95": 4.0
+        },
+        {
+          "weight": 133,
+          "rank": 17,
+          "name": "Luke Willochell",
+          "individual_modifier": 0.0,
+          "expected": 2.1,
+          "p5": 0.5,
+          "p95": 9.8
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.4,
+          "p5": 0.5,
+          "p95": 4.0
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.4,
+          "p5": 0.5,
+          "p95": 4.0
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.4,
+          "p5": 0.5,
+          "p95": 4.0
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.4,
+          "p5": 0.5,
+          "p95": 4.0
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.4,
+          "p5": 0.5,
+          "p95": 4.0
+        },
+        {
+          "weight": 184,
+          "rank": 6,
+          "name": "Eddie Neitenbach",
+          "individual_modifier": 0.0,
+          "expected": 5.6,
+          "p5": 0.5,
+          "p95": 16.5
+        },
+        {
+          "weight": 197,
+          "rank": 4,
+          "name": "Joey Novak",
+          "individual_modifier": 0.0,
+          "expected": 11.7,
+          "p5": 1.0,
+          "p95": 23.7
+        },
+        {
+          "weight": 285,
+          "rank": 4,
+          "name": "Christian Carroll",
+          "individual_modifier": 0.0,
+          "expected": 11.7,
+          "p5": 1.0,
+          "p95": 23.7
+        }
+      ],
+      "min": 6.5,
+      "max": 95.1,
+      "p5": 17.9,
+      "p95": 62.5,
+      "expected": 39.2,
+      "p_1st": 0.0,
+      "p_top3": 0.4,
+      "p_top5": 4.5,
+      "p_top10": 40.3,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.4,
+        "4": 1.4,
+        "5": 2.7,
+        "6": 4.3,
+        "7": 6.1,
+        "8": 8.2,
+        "9": 8.8,
+        "10": 8.4
+      }
+    },
+    {
+      "team": "Arizona State",
+      "lineup_size": 4,
+      "program_offset": 0.6,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.5,
+          "p5": 0.6,
+          "p95": 4.0
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.5,
+          "p5": 0.6,
+          "p95": 4.0
+        },
+        {
+          "weight": 141,
+          "rank": 20,
+          "name": "Pierson Manville",
+          "individual_modifier": 0.0,
+          "expected": 1.8,
+          "p5": 0.6,
+          "p95": 7.4
+        },
+        {
+          "weight": 149,
+          "rank": 14,
+          "name": "Kyler Larkin",
+          "individual_modifier": 0.0,
+          "expected": 3.9,
+          "p5": 0.6,
+          "p95": 13.1
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.5,
+          "p5": 0.6,
+          "p95": 4.0
+        },
+        {
+          "weight": 165,
+          "rank": 2,
+          "name": "Nicco Ruiz",
+          "individual_modifier": 0.0,
+          "expected": 13.9,
+          "p5": 0.6,
+          "p95": 24.3
+        },
+        {
+          "weight": 174,
+          "rank": 5,
+          "name": "Kaleb Larkin",
+          "individual_modifier": 0.0,
+          "expected": 8.4,
+          "p5": 0.6,
+          "p95": 17.9
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.5,
+          "p5": 0.6,
+          "p95": 4.0
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.5,
+          "p5": 0.6,
+          "p95": 4.0
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.5,
+          "p5": 0.6,
+          "p95": 4.0
+        }
+      ],
+      "min": 6.2,
+      "max": 83.6,
+      "p5": 16.9,
+      "p95": 57.1,
+      "expected": 36.8,
+      "p_1st": 0.0,
+      "p_top3": 0.2,
+      "p_top5": 2.0,
+      "p_top10": 31.8,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.2,
+        "4": 0.4,
+        "5": 1.4,
+        "6": 3.0,
+        "7": 4.5,
+        "8": 6.2,
+        "9": 7.7,
+        "10": 8.5
+      }
+    },
+    {
+      "team": "Lehigh",
+      "lineup_size": 5,
+      "program_offset": -0.5,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 133,
+          "rank": 15,
+          "name": "Matty Lopes",
+          "individual_modifier": 0.0,
+          "expected": 2.4,
+          "p5": 0.0,
+          "p95": 11.2
+        },
+        {
+          "weight": 141,
+          "rank": 1,
+          "name": "Luke Stanich",
+          "individual_modifier": 0.0,
+          "expected": 15.8,
+          "p5": 1.5,
+          "p95": 25.6
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 157,
+          "rank": 18,
+          "name": "Logan Rozynski",
+          "individual_modifier": 0.0,
+          "expected": 2.6,
+          "p5": 0.0,
+          "p95": 8.5
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 184,
+          "rank": 13,
+          "name": "Rylan Rogers",
+          "individual_modifier": 0.0,
+          "expected": 1.6,
+          "p5": 0.0,
+          "p95": 10.0
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 285,
+          "rank": 7,
+          "name": "Nathan Taylor",
+          "individual_modifier": 0.0,
+          "expected": 4.5,
+          "p5": 0.0,
+          "p95": 15.0
+        }
+      ],
+      "min": 0.0,
+      "max": 78.8,
+      "p5": 9.6,
+      "p95": 50.8,
+      "expected": 30.4,
+      "p_1st": 0.0,
+      "p_top3": 0.1,
+      "p_top5": 0.7,
+      "p_top10": 15.3,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.1,
+        "4": 0.2,
+        "5": 0.4,
+        "6": 1.0,
+        "7": 1.8,
+        "8": 2.8,
+        "9": 4.0,
+        "10": 5.1
+      }
+    },
+    {
+      "team": "Iowa State",
+      "lineup_size": 7,
+      "program_offset": -0.28,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 24,
+          "name": "Ayden Smith",
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.5
+        },
+        {
+          "weight": 133,
+          "rank": 9,
+          "name": "Garrett Grice",
+          "individual_modifier": 0.0,
+          "expected": 5.2,
+          "p5": 0.0,
+          "p95": 16.4
+        },
+        {
+          "weight": 141,
+          "rank": 3,
+          "name": "Evan Frost",
+          "individual_modifier": 0.0,
+          "expected": 10.0,
+          "p5": 0.0,
+          "p95": 20.6
+        },
+        {
+          "weight": 149,
+          "rank": 11,
+          "name": "Jacob Frost",
+          "individual_modifier": 0.0,
+          "expected": 3.4,
+          "p5": 0.0,
+          "p95": 14.3
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 165,
+          "rank": 11,
+          "name": "Connor Euton",
+          "individual_modifier": 0.0,
+          "expected": 3.4,
+          "p5": 0.0,
+          "p95": 14.3
+        },
+        {
+          "weight": 174,
+          "rank": 11,
+          "name": "MJ Gaitan",
+          "individual_modifier": 0.0,
+          "expected": 3.4,
+          "p5": 0.0,
+          "p95": 14.3
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 285,
+          "rank": 22,
+          "name": "Coby Merrill",
+          "individual_modifier": 0.0,
+          "expected": 1.9,
+          "p5": 0.0,
+          "p95": 8.8
+        }
+      ],
+      "min": 0.3,
+      "max": 102.0,
+      "p5": 8.6,
+      "p95": 54.0,
+      "expected": 30.0,
+      "p_1st": 0.0,
+      "p_top3": 0.2,
+      "p_top5": 1.5,
+      "p_top10": 17.7,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.2,
+        "4": 0.3,
+        "5": 1.0,
+        "6": 1.6,
+        "7": 2.2,
+        "8": 3.8,
+        "9": 3.9,
+        "10": 4.6
+      }
+    },
+    {
+      "team": "Oklahoma",
+      "lineup_size": 7,
+      "program_offset": -0.18,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 15,
+          "name": "Conrad Hendriksen",
+          "individual_modifier": 0.0,
+          "expected": 2.5,
+          "p5": 0.0,
+          "p95": 11.5
+        },
+        {
+          "weight": 133,
+          "rank": 14,
+          "name": "Tyler Wells",
+          "individual_modifier": 0.0,
+          "expected": 3.2,
+          "p5": 0.0,
+          "p95": 12.3
+        },
+        {
+          "weight": 141,
+          "rank": 10,
+          "name": "Isaiah Powe",
+          "individual_modifier": 0.0,
+          "expected": 5.5,
+          "p5": 0.0,
+          "p95": 17.3
+        },
+        {
+          "weight": 149,
+          "rank": 13,
+          "name": "Jack Gioffre",
+          "individual_modifier": 0.0,
+          "expected": 1.8,
+          "p5": 0.0,
+          "p95": 10.3
+        },
+        {
+          "weight": 157,
+          "rank": 16,
+          "name": "Rafael Hipolito",
+          "individual_modifier": 0.0,
+          "expected": 2.5,
+          "p5": 0.0,
+          "p95": 9.8
+        },
+        {
+          "weight": 165,
+          "rank": 7,
+          "name": "Paddy Gallagher",
+          "individual_modifier": 0.0,
+          "expected": 4.7,
+          "p5": 0.0,
+          "p95": 15.4
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 184,
+          "rank": 9,
+          "name": "Brian Soldano",
+          "individual_modifier": 0.0,
+          "expected": 5.2,
+          "p5": 0.0,
+          "p95": 16.5
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        }
+      ],
+      "min": 0.3,
+      "max": 89.0,
+      "p5": 9.8,
+      "p95": 50.2,
+      "expected": 27.8,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.9,
+      "p_top10": 12.9,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.3,
+        "5": 0.6,
+        "6": 1.0,
+        "7": 1.7,
+        "8": 2.3,
+        "9": 3.3,
+        "10": 3.8
+      }
+    },
+    {
+      "team": "Princeton",
+      "lineup_size": 4,
+      "program_offset": 0.32,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 2,
+          "name": "Marc-Anthony McGowan",
+          "individual_modifier": 1.1,
+          "expected": 14.7,
+          "p5": 1.4,
+          "p95": 25.2
+        },
+        {
+          "weight": 133,
+          "rank": 19,
+          "name": "Ethan Rivera",
+          "individual_modifier": 0.0,
+          "expected": 1.7,
+          "p5": 0.3,
+          "p95": 7.8
+        },
+        {
+          "weight": 141,
+          "rank": 24,
+          "name": "Matthew Martino",
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.3,
+          "p95": 3.1
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.2,
+          "p5": 0.3,
+          "p95": 3.7
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.2,
+          "p5": 0.3,
+          "p95": 3.7
+        },
+        {
+          "weight": 165,
+          "rank": 17,
+          "name": "Ty Whalen",
+          "individual_modifier": 0.0,
+          "expected": 1.9,
+          "p5": 0.3,
+          "p95": 9.6
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.2,
+          "p5": 0.3,
+          "p95": 3.7
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.2,
+          "p5": 0.3,
+          "p95": 3.7
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.2,
+          "p5": 0.3,
+          "p95": 3.7
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.2,
+          "p5": 0.3,
+          "p95": 3.7
+        }
+      ],
+      "min": 4.3,
+      "max": 70.5,
+      "p5": 9.3,
+      "p95": 43.3,
+      "expected": 26.3,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.2,
+      "p_top10": 6.5,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.1,
+        "6": 0.3,
+        "7": 0.6,
+        "8": 0.9,
+        "9": 1.8,
+        "10": 2.7
+      }
+    },
+    {
+      "team": "Little Rock",
+      "lineup_size": 3,
+      "program_offset": -0.16,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 149,
+          "rank": 18,
+          "name": "Brock Herman",
+          "individual_modifier": 0.0,
+          "expected": 2.9,
+          "p5": 0.0,
+          "p95": 8.9
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 197,
+          "rank": 3,
+          "name": "Stephen Little",
+          "individual_modifier": 1.4,
+          "expected": 11.5,
+          "p5": 1.2,
+          "p95": 22.1
+        },
+        {
+          "weight": 285,
+          "rank": 10,
+          "name": "Massoma Endene",
+          "individual_modifier": 0.0,
+          "expected": 5.6,
+          "p5": 0.0,
+          "p95": 17.4
+        }
+      ],
+      "min": 1.2,
+      "max": 71.8,
+      "p5": 8.1,
+      "p95": 45.2,
+      "expected": 25.6,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.2,
+      "p_top10": 7.5,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.1,
+        "5": 0.1,
+        "6": 0.4,
+        "7": 0.9,
+        "8": 1.4,
+        "9": 2.0,
+        "10": 2.6
+      }
+    },
+    {
+      "team": "North Carolina",
+      "lineup_size": 6,
+      "program_offset": -0.03,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 11,
+          "name": "Brendan McCrone",
+          "individual_modifier": 0.0,
+          "expected": 3.6,
+          "p5": 0.0,
+          "p95": 14.6
+        },
+        {
+          "weight": 133,
+          "rank": 16,
+          "name": "Matt Botello",
+          "individual_modifier": 0.0,
+          "expected": 2.6,
+          "p5": 0.0,
+          "p95": 10.0
+        },
+        {
+          "weight": 141,
+          "rank": 9,
+          "name": "Luke Simcox",
+          "individual_modifier": 0.0,
+          "expected": 5.4,
+          "p5": 0.0,
+          "p95": 16.6
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 165,
+          "rank": 6,
+          "name": "Bryce Hepner",
+          "individual_modifier": 0.0,
+          "expected": 5.0,
+          "p5": 0.0,
+          "p95": 16.0
+        },
+        {
+          "weight": 174,
+          "rank": 15,
+          "name": "Joshua Ogunsanya",
+          "individual_modifier": 0.0,
+          "expected": 2.6,
+          "p5": 0.0,
+          "p95": 11.7
+        },
+        {
+          "weight": 184,
+          "rank": 12,
+          "name": "Christian Hansen",
+          "individual_modifier": 0.0,
+          "expected": 2.4,
+          "p5": 0.0,
+          "p95": 12.5
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        }
+      ],
+      "min": 0.7,
+      "max": 85.3,
+      "p5": 7.5,
+      "p95": 46.6,
+      "expected": 24.8,
+      "p_1st": 0.0,
+      "p_top3": 0.1,
+      "p_top5": 0.5,
+      "p_top10": 8.6,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.1,
+        "4": 0.2,
+        "5": 0.3,
+        "6": 0.6,
+        "7": 0.8,
+        "8": 1.6,
+        "9": 2.1,
+        "10": 2.9
+      }
+    },
+    {
+      "team": "NC State",
+      "lineup_size": 7,
+      "program_offset": -0.51,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 133,
+          "rank": 10,
+          "name": "Zach Redding",
+          "individual_modifier": 0.0,
+          "expected": 5.3,
+          "p5": 0.0,
+          "p95": 17.0
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 149,
+          "rank": 9,
+          "name": "Koy Buesgens",
+          "individual_modifier": 0.0,
+          "expected": 5.0,
+          "p5": 0.0,
+          "p95": 16.2
+        },
+        {
+          "weight": 157,
+          "rank": 8,
+          "name": "Jackson Arrington",
+          "individual_modifier": 0.0,
+          "expected": 3.3,
+          "p5": 0.0,
+          "p95": 13.8
+        },
+        {
+          "weight": 165,
+          "rank": 10,
+          "name": "Will Denny",
+          "individual_modifier": 0.0,
+          "expected": 5.3,
+          "p5": 0.0,
+          "p95": 17.0
+        },
+        {
+          "weight": 174,
+          "rank": 12,
+          "name": "Matthew Singleton",
+          "individual_modifier": 0.0,
+          "expected": 2.1,
+          "p5": 0.0,
+          "p95": 12.0
+        },
+        {
+          "weight": 184,
+          "rank": 17,
+          "name": "Jake Dailey",
+          "individual_modifier": 0.0,
+          "expected": 1.4,
+          "p5": 0.0,
+          "p95": 8.8
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 285,
+          "rank": 24,
+          "name": "Bennett Tabor",
+          "individual_modifier": 0.0,
+          "expected": 0.6,
+          "p5": 0.0,
+          "p95": 2.3
+        }
+      ],
+      "min": 0.0,
+      "max": 87.3,
+      "p5": 6.8,
+      "p95": 47.9,
+      "expected": 24.8,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.6,
+      "p_top10": 9.8,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.1,
+        "5": 0.4,
+        "6": 0.8,
+        "7": 1.2,
+        "8": 1.8,
+        "9": 2.4,
+        "10": 3.1
+      }
+    },
+    {
+      "team": "Illinois",
+      "lineup_size": 5,
+      "program_offset": -0.51,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 149,
+          "rank": 20,
+          "name": "Michael Gioffre",
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.0,
+          "p95": 6.3
+        },
+        {
+          "weight": 157,
+          "rank": 4,
+          "name": "Kannon Webster",
+          "individual_modifier": 0.0,
+          "expected": 10.6,
+          "p5": 0.0,
+          "p95": 22.6
+        },
+        {
+          "weight": 165,
+          "rank": 14,
+          "name": "Braeden Scoles",
+          "individual_modifier": 0.0,
+          "expected": 2.9,
+          "p5": 0.0,
+          "p95": 12.0
+        },
+        {
+          "weight": 174,
+          "rank": 13,
+          "name": "Colin Kelly",
+          "individual_modifier": 0.0,
+          "expected": 1.6,
+          "p5": 0.0,
+          "p95": 10.0
+        },
+        {
+          "weight": 184,
+          "rank": 14,
+          "name": "Chris Moore",
+          "individual_modifier": 0.0,
+          "expected": 2.9,
+          "p5": 0.0,
+          "p95": 12.0
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        }
+      ],
+      "min": 0.3,
+      "max": 65.9,
+      "p5": 6.1,
+      "p95": 40.9,
+      "expected": 22.3,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.1,
+      "p_top10": 4.2,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.1,
+        "6": 0.1,
+        "7": 0.3,
+        "8": 0.7,
+        "9": 1.1,
+        "10": 1.9
+      }
+    },
+    {
+      "team": "West Virginia",
+      "lineup_size": 5,
+      "program_offset": 0.27,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.3,
+          "p95": 3.7
+        },
+        {
+          "weight": 133,
+          "rank": 11,
+          "name": "Gunner Andrick",
+          "individual_modifier": 0.0,
+          "expected": 3.9,
+          "p5": 0.3,
+          "p95": 14.9
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.3,
+          "p95": 3.7
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.3,
+          "p95": 3.7
+        },
+        {
+          "weight": 157,
+          "rank": 6,
+          "name": "Ty Watters",
+          "individual_modifier": 0.0,
+          "expected": 5.3,
+          "p5": 0.3,
+          "p95": 16.3
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.3,
+          "p95": 3.7
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.3,
+          "p95": 3.7
+        },
+        {
+          "weight": 184,
+          "rank": 19,
+          "name": "Ian Bush",
+          "individual_modifier": 0.0,
+          "expected": 1.6,
+          "p5": 0.3,
+          "p95": 7.8
+        },
+        {
+          "weight": 197,
+          "rank": 14,
+          "name": "Rune Lawrence",
+          "individual_modifier": 0.0,
+          "expected": 3.6,
+          "p5": 0.3,
+          "p95": 12.8
+        },
+        {
+          "weight": 285,
+          "rank": 21,
+          "name": "Max Vanadia",
+          "individual_modifier": 0.0,
+          "expected": 2.0,
+          "p5": 0.3,
+          "p95": 8.8
+        }
+      ],
+      "min": 2.8,
+      "max": 78.7,
+      "p5": 7.6,
+      "p95": 41.3,
+      "expected": 22.0,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.1,
+      "p_top10": 4.3,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.1,
+        "6": 0.2,
+        "7": 0.4,
+        "8": 0.8,
+        "9": 1.3,
+        "10": 1.5
+      }
+    },
+    {
+      "team": "Cornell",
+      "lineup_size": 6,
+      "program_offset": -0.28,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 19,
+          "name": "Isaiah Cortez",
+          "individual_modifier": 0.0,
+          "expected": 1.2,
+          "p5": 0.0,
+          "p95": 7.2
+        },
+        {
+          "weight": 133,
+          "rank": 20,
+          "name": "Elijah Cortez",
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.0,
+          "p95": 6.5
+        },
+        {
+          "weight": 141,
+          "rank": 7,
+          "name": "Vince Cornella",
+          "individual_modifier": 0.0,
+          "expected": 4.7,
+          "p5": 0.0,
+          "p95": 15.3
+        },
+        {
+          "weight": 149,
+          "rank": 5,
+          "name": "Jaxon Joy",
+          "individual_modifier": 0.0,
+          "expected": 7.5,
+          "p5": 0.0,
+          "p95": 17.0
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 174,
+          "rank": 8,
+          "name": "Simon Ruiz",
+          "individual_modifier": 0.0,
+          "expected": 3.4,
+          "p5": 0.0,
+          "p95": 14.1
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 197,
+          "rank": 24,
+          "name": "Jude Correa",
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.5
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        }
+      ],
+      "min": 0.0,
+      "max": 73.6,
+      "p5": 5.8,
+      "p95": 41.8,
+      "expected": 21.7,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.1,
+      "p_top10": 4.6,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.1,
+        "5": 0.1,
+        "6": 0.2,
+        "7": 0.4,
+        "8": 0.8,
+        "9": 1.4,
+        "10": 1.5
+      }
+    },
+    {
+      "team": "Pittsburgh",
+      "lineup_size": 9,
+      "program_offset": -0.37,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 13,
+          "name": "Tyler Chappell",
+          "individual_modifier": 0.0,
+          "expected": 1.7,
+          "p5": 0.0,
+          "p95": 10.1
+        },
+        {
+          "weight": 133,
+          "rank": 18,
+          "name": "Evan Tallmadge",
+          "individual_modifier": 0.0,
+          "expected": 2.7,
+          "p5": 0.0,
+          "p95": 8.7
+        },
+        {
+          "weight": 141,
+          "rank": 18,
+          "name": "Briar Priest",
+          "individual_modifier": 0.0,
+          "expected": 2.7,
+          "p5": 0.0,
+          "p95": 8.7
+        },
+        {
+          "weight": 149,
+          "rank": 16,
+          "name": "Kal Miller",
+          "individual_modifier": 0.0,
+          "expected": 2.4,
+          "p5": 0.0,
+          "p95": 9.6
+        },
+        {
+          "weight": 157,
+          "rank": 23,
+          "name": "Eugene Harney",
+          "individual_modifier": 0.0,
+          "expected": 0.9,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 165,
+          "rank": 22,
+          "name": "Dylan Evans",
+          "individual_modifier": 0.0,
+          "expected": 1.8,
+          "p5": 0.0,
+          "p95": 8.7
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 184,
+          "rank": 22,
+          "name": "Chase Kranitz",
+          "individual_modifier": 0.0,
+          "expected": 1.8,
+          "p5": 0.0,
+          "p95": 8.7
+        },
+        {
+          "weight": 197,
+          "rank": 8,
+          "name": "Mac Stout",
+          "individual_modifier": 0.0,
+          "expected": 3.4,
+          "p5": 0.0,
+          "p95": 14.0
+        },
+        {
+          "weight": 285,
+          "rank": 13,
+          "name": "Dayton Pitzer",
+          "individual_modifier": 0.0,
+          "expected": 1.7,
+          "p5": 0.0,
+          "p95": 10.1
+        }
+      ],
+      "min": 0.0,
+      "max": 93.2,
+      "p5": 6.0,
+      "p95": 40.0,
+      "expected": 19.7,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.1,
+      "p_top10": 3.5,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.1,
+        "6": 0.2,
+        "7": 0.5,
+        "8": 0.7,
+        "9": 0.9,
+        "10": 1.1
+      }
+    },
+    {
+      "team": "Purdue",
+      "lineup_size": 2,
+      "program_offset": -0.09,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 165,
+          "rank": 3,
+          "name": "Joey Blaze",
+          "individual_modifier": 1.4,
+          "expected": 11.5,
+          "p5": 1.3,
+          "p95": 22.2
+        },
+        {
+          "weight": 174,
+          "rank": 21,
+          "name": "Brody Baumann",
+          "individual_modifier": 0.0,
+          "expected": 1.7,
+          "p5": 0.0,
+          "p95": 8.4
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        }
+      ],
+      "min": 1.3,
+      "max": 66.5,
+      "p5": 4.7,
+      "p95": 36.2,
+      "expected": 19.6,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.1,
+      "p_top10": 1.7,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.1,
+        "6": 0.1,
+        "7": 0.1,
+        "8": 0.2,
+        "9": 0.5,
+        "10": 0.8
+      }
+    },
+    {
+      "team": "Navy",
+      "lineup_size": 5,
+      "program_offset": -0.06,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 23,
+          "name": "Andrew Binni",
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.0,
+          "p95": 3.6
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 141,
+          "rank": 14,
+          "name": "Caedyn Ricciardi",
+          "individual_modifier": 0.0,
+          "expected": 3.3,
+          "p5": 0.0,
+          "p95": 12.4
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 157,
+          "rank": 22,
+          "name": "Jonathan Ley",
+          "individual_modifier": 0.0,
+          "expected": 2.0,
+          "p5": 0.0,
+          "p95": 9.0
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 174,
+          "rank": 6,
+          "name": "Danny Wask",
+          "individual_modifier": 0.0,
+          "expected": 5.0,
+          "p5": 0.0,
+          "p95": 15.9
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 285,
+          "rank": 14,
+          "name": "Spencer Lanosga",
+          "individual_modifier": 0.0,
+          "expected": 3.3,
+          "p5": 0.0,
+          "p95": 12.4
+        }
+      ],
+      "min": 0.5,
+      "max": 65.5,
+      "p5": 5.6,
+      "p95": 37.5,
+      "expected": 18.8,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.1,
+      "p_top10": 2.5,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.2,
+        "7": 0.2,
+        "8": 0.4,
+        "9": 0.7,
+        "10": 0.9
+      }
+    },
+    {
+      "team": "Air Force",
+      "lineup_size": 2,
+      "program_offset": 0.48,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.3,
+          "p5": 0.5,
+          "p95": 3.9
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.3,
+          "p5": 0.5,
+          "p95": 3.9
+        },
+        {
+          "weight": 141,
+          "rank": 6,
+          "name": "Carter Nogle",
+          "individual_modifier": 0.0,
+          "expected": 5.5,
+          "p5": 0.5,
+          "p95": 16.5
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.3,
+          "p5": 0.5,
+          "p95": 3.9
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.3,
+          "p5": 0.5,
+          "p95": 3.9
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.3,
+          "p5": 0.5,
+          "p95": 3.9
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.3,
+          "p5": 0.5,
+          "p95": 3.9
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.3,
+          "p5": 0.5,
+          "p95": 3.9
+        },
+        {
+          "weight": 197,
+          "rank": 22,
+          "name": "Karson Tompkins",
+          "individual_modifier": 0.0,
+          "expected": 2.6,
+          "p5": 0.5,
+          "p95": 9.6
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.3,
+          "p5": 0.5,
+          "p95": 3.9
+        }
+      ],
+      "min": 4.8,
+      "max": 61.2,
+      "p5": 8.1,
+      "p95": 34.9,
+      "expected": 18.8,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.1,
+      "p_top10": 1.6,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.1,
+        "7": 0.2,
+        "8": 0.2,
+        "9": 0.4,
+        "10": 0.7
+      }
+    },
+    {
+      "team": "Indiana",
+      "lineup_size": 6,
+      "program_offset": 0.46,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.3,
+          "p5": 0.5,
+          "p95": 3.9
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.3,
+          "p5": 0.5,
+          "p95": 3.9
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.3,
+          "p5": 0.5,
+          "p95": 3.9
+        },
+        {
+          "weight": 149,
+          "rank": 15,
+          "name": "Tom Crook",
+          "individual_modifier": 0.0,
+          "expected": 3.1,
+          "p5": 0.5,
+          "p95": 12.2
+        },
+        {
+          "weight": 157,
+          "rank": 15,
+          "name": "Kai Owen",
+          "individual_modifier": 0.0,
+          "expected": 3.1,
+          "p5": 0.5,
+          "p95": 12.2
+        },
+        {
+          "weight": 165,
+          "rank": 20,
+          "name": "Tyler Lillard",
+          "individual_modifier": 0.0,
+          "expected": 1.7,
+          "p5": 0.5,
+          "p95": 7.3
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.3,
+          "p5": 0.5,
+          "p95": 3.9
+        },
+        {
+          "weight": 184,
+          "rank": 24,
+          "name": "Sam Goin",
+          "individual_modifier": 0.0,
+          "expected": 1.3,
+          "p5": 0.5,
+          "p95": 3.2
+        },
+        {
+          "weight": 197,
+          "rank": 13,
+          "name": "Gabe Sollars",
+          "individual_modifier": 0.0,
+          "expected": 2.3,
+          "p5": 0.5,
+          "p95": 11.0
+        },
+        {
+          "weight": 285,
+          "rank": 19,
+          "name": "Connor Barket",
+          "individual_modifier": 0.0,
+          "expected": 1.8,
+          "p5": 0.5,
+          "p95": 8.0
+        }
+      ],
+      "min": 4.6,
+      "max": 64.8,
+      "p5": 7.4,
+      "p95": 35.0,
+      "expected": 18.6,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.1,
+      "p_top10": 1.6,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.1,
+        "7": 0.1,
+        "8": 0.3,
+        "9": 0.4,
+        "10": 0.6
+      }
+    },
+    {
+      "team": "Penn",
+      "lineup_size": 6,
+      "program_offset": -0.36,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 21,
+          "name": "Max Gallagher",
+          "individual_modifier": 0.0,
+          "expected": 1.5,
+          "p5": 0.0,
+          "p95": 8.1
+        },
+        {
+          "weight": 133,
+          "rank": 24,
+          "name": "Davis Motyka",
+          "individual_modifier": 0.0,
+          "expected": 0.6,
+          "p5": 0.0,
+          "p95": 2.4
+        },
+        {
+          "weight": 141,
+          "rank": 21,
+          "name": "Evan Mougalian",
+          "individual_modifier": 0.0,
+          "expected": 1.5,
+          "p5": 0.0,
+          "p95": 8.1
+        },
+        {
+          "weight": 149,
+          "rank": 7,
+          "name": "Cross Wasilewski",
+          "individual_modifier": 0.0,
+          "expected": 4.6,
+          "p5": 0.0,
+          "p95": 15.2
+        },
+        {
+          "weight": 157,
+          "rank": 10,
+          "name": "Jude Swisher",
+          "individual_modifier": 0.0,
+          "expected": 5.4,
+          "p5": 0.0,
+          "p95": 17.2
+        },
+        {
+          "weight": 165,
+          "rank": 23,
+          "name": "Sean Seefeldt",
+          "individual_modifier": 0.0,
+          "expected": 0.9,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        }
+      ],
+      "min": 0.0,
+      "max": 69.3,
+      "p5": 4.0,
+      "p95": 36.6,
+      "expected": 17.4,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 2.4,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.1,
+        "7": 0.2,
+        "8": 0.4,
+        "9": 0.7,
+        "10": 0.9
+      }
+    },
+    {
+      "team": "Maryland",
+      "lineup_size": 2,
+      "program_offset": -0.18,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 10,
+          "name": "Nicolar Rivera",
+          "individual_modifier": 0.0,
+          "expected": 5.5,
+          "p5": 0.0,
+          "p95": 17.3
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 197,
+          "rank": 7,
+          "name": "Branson John",
+          "individual_modifier": 0.0,
+          "expected": 4.7,
+          "p5": 0.0,
+          "p95": 15.4
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        }
+      ],
+      "min": 0.0,
+      "max": 74.6,
+      "p5": 4.4,
+      "p95": 34.5,
+      "expected": 16.6,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 1.2,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.1,
+        "7": 0.1,
+        "8": 0.2,
+        "9": 0.4,
+        "10": 0.4
+      }
+    },
+    {
+      "team": "ND State",
+      "lineup_size": 4,
+      "program_offset": 0.19,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 9,
+          "name": "Ezekiel Witt",
+          "individual_modifier": 0.0,
+          "expected": 5.6,
+          "p5": 0.2,
+          "p95": 16.9
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.2,
+          "p95": 3.6
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.2,
+          "p95": 3.6
+        },
+        {
+          "weight": 149,
+          "rank": 17,
+          "name": "Max Petersen",
+          "individual_modifier": 0.0,
+          "expected": 1.7,
+          "p5": 0.2,
+          "p95": 9.5
+        },
+        {
+          "weight": 157,
+          "rank": 24,
+          "name": "Gavin Drexler",
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.2,
+          "p95": 3.0
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.2,
+          "p95": 3.6
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.2,
+          "p95": 3.6
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.2,
+          "p95": 3.6
+        },
+        {
+          "weight": 197,
+          "rank": 20,
+          "name": "Devin Wasley",
+          "individual_modifier": 0.0,
+          "expected": 1.4,
+          "p5": 0.2,
+          "p95": 7.0
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.2,
+          "p95": 3.6
+        }
+      ],
+      "min": 1.9,
+      "max": 67.9,
+      "p5": 5.0,
+      "p95": 32.6,
+      "expected": 16.0,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 1.0,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.1,
+        "8": 0.2,
+        "9": 0.3,
+        "10": 0.5
+      }
+    },
+    {
+      "team": "UNI",
+      "lineup_size": 5,
+      "program_offset": -0.34,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 12,
+          "name": "Trever Anderson",
+          "individual_modifier": 0.0,
+          "expected": 2.2,
+          "p5": 0.0,
+          "p95": 12.2
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 141,
+          "rank": 13,
+          "name": "Cory Land",
+          "individual_modifier": 0.0,
+          "expected": 1.7,
+          "p5": 0.0,
+          "p95": 10.2
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 165,
+          "rank": 12,
+          "name": "Ryder Downey",
+          "individual_modifier": 0.0,
+          "expected": 2.2,
+          "p5": 0.0,
+          "p95": 12.2
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 184,
+          "rank": 20,
+          "name": "Nick Fox",
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.0,
+          "p95": 6.5
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 285,
+          "rank": 9,
+          "name": "Wyatt Voelker",
+          "individual_modifier": 0.0,
+          "expected": 5.1,
+          "p5": 0.0,
+          "p95": 16.3
+        }
+      ],
+      "min": 0.0,
+      "max": 71.3,
+      "p5": 3.5,
+      "p95": 34.3,
+      "expected": 15.9,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 1.5,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.1,
+        "7": 0.2,
+        "8": 0.2,
+        "9": 0.4,
+        "10": 0.6
+      }
+    },
+    {
+      "team": "Columbia",
+      "lineup_size": 3,
+      "program_offset": 0.22,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 22,
+          "name": "Sulayman Bah",
+          "individual_modifier": 0.0,
+          "expected": 2.3,
+          "p5": 0.2,
+          "p95": 9.3
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.2,
+          "p95": 3.6
+        },
+        {
+          "weight": 141,
+          "rank": 22,
+          "name": "Lorenzo Frezza",
+          "individual_modifier": 0.0,
+          "expected": 2.3,
+          "p5": 0.2,
+          "p95": 9.3
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.2,
+          "p95": 3.6
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.2,
+          "p95": 3.6
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.2,
+          "p95": 3.6
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.2,
+          "p95": 3.6
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.2,
+          "p95": 3.6
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.2,
+          "p95": 3.6
+        },
+        {
+          "weight": 285,
+          "rank": 18,
+          "name": "Vincent Mueller",
+          "individual_modifier": 0.0,
+          "expected": 3.3,
+          "p5": 0.2,
+          "p95": 9.3
+        }
+      ],
+      "min": 2.4,
+      "max": 64.1,
+      "p5": 6.5,
+      "p95": 30.7,
+      "expected": 15.3,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.7,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.1,
+        "8": 0.1,
+        "9": 0.2,
+        "10": 0.3
+      }
+    },
+    {
+      "team": "Rutgers",
+      "lineup_size": 4,
+      "program_offset": -0.45,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        },
+        {
+          "weight": 133,
+          "rank": 23,
+          "name": "Brett Ungar",
+          "individual_modifier": 0.0,
+          "expected": 0.9,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        },
+        {
+          "weight": 165,
+          "rank": 18,
+          "name": "Andrew Barbosa",
+          "individual_modifier": 0.0,
+          "expected": 2.7,
+          "p5": 0.0,
+          "p95": 8.6
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        },
+        {
+          "weight": 184,
+          "rank": 10,
+          "name": "Shane Cartagena-Walsh",
+          "individual_modifier": 0.0,
+          "expected": 5.3,
+          "p5": 0.0,
+          "p95": 17.1
+        },
+        {
+          "weight": 197,
+          "rank": 12,
+          "name": "Remy Cotton",
+          "individual_modifier": 0.0,
+          "expected": 2.1,
+          "p5": 0.0,
+          "p95": 12.1
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        }
+      ],
+      "min": 0.0,
+      "max": 73.7,
+      "p5": 3.8,
+      "p95": 33.0,
+      "expected": 15.1,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 1.2,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.1,
+        "7": 0.1,
+        "8": 0.2,
+        "9": 0.4,
+        "10": 0.5
+      }
+    },
+    {
+      "team": "American",
+      "lineup_size": 1,
+      "program_offset": 0.23,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.2,
+          "p95": 3.7
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.2,
+          "p95": 3.7
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.2,
+          "p95": 3.7
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.2,
+          "p95": 3.7
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.2,
+          "p95": 3.7
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.2,
+          "p95": 3.7
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.2,
+          "p95": 3.7
+        },
+        {
+          "weight": 184,
+          "rank": 7,
+          "name": "Caleb Campos",
+          "individual_modifier": 0.0,
+          "expected": 5.1,
+          "p5": 0.2,
+          "p95": 15.8
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.2,
+          "p95": 3.7
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.2,
+          "p95": 3.7
+        }
+      ],
+      "min": 2.3,
+      "max": 56.2,
+      "p5": 5.7,
+      "p95": 29.7,
+      "expected": 14.9,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.5,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.1,
+        "9": 0.1,
+        "10": 0.3
+      }
+    },
+    {
+      "team": "Wisconsin",
+      "lineup_size": 3,
+      "program_offset": 0.07,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.9,
+          "p5": 0.1,
+          "p95": 3.5
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.9,
+          "p5": 0.1,
+          "p95": 3.5
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.9,
+          "p5": 0.1,
+          "p95": 3.5
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.9,
+          "p5": 0.1,
+          "p95": 3.5
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.9,
+          "p5": 0.1,
+          "p95": 3.5
+        },
+        {
+          "weight": 165,
+          "rank": 19,
+          "name": "Cody Goebel",
+          "individual_modifier": 0.0,
+          "expected": 1.4,
+          "p5": 0.1,
+          "p95": 7.6
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.9,
+          "p5": 0.1,
+          "p95": 3.5
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.9,
+          "p5": 0.1,
+          "p95": 3.5
+        },
+        {
+          "weight": 197,
+          "rank": 17,
+          "name": "Wyatt Ingham",
+          "individual_modifier": 0.0,
+          "expected": 1.6,
+          "p5": 0.1,
+          "p95": 9.3
+        },
+        {
+          "weight": 285,
+          "rank": 6,
+          "name": "Braxton Amos",
+          "individual_modifier": 0.0,
+          "expected": 5.1,
+          "p5": 0.1,
+          "p95": 16.1
+        }
+      ],
+      "min": 0.7,
+      "max": 64.3,
+      "p5": 3.4,
+      "p95": 31.7,
+      "expected": 14.7,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.7,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.1,
+        "8": 0.1,
+        "9": 0.2,
+        "10": 0.3
+      }
+    },
+    {
+      "team": "SD State",
+      "lineup_size": 3,
+      "program_offset": 0.12,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 16,
+          "name": "Brady Roark",
+          "individual_modifier": 0.0,
+          "expected": 2.8,
+          "p5": 0.1,
+          "p95": 10.1
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.1,
+          "p95": 3.5
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.1,
+          "p95": 3.5
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.1,
+          "p95": 3.5
+        },
+        {
+          "weight": 157,
+          "rank": 20,
+          "name": "Cael Swensen",
+          "individual_modifier": 0.0,
+          "expected": 1.4,
+          "p5": 0.1,
+          "p95": 6.9
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.1,
+          "p95": 3.5
+        },
+        {
+          "weight": 174,
+          "rank": 16,
+          "name": "Drake Rhodes",
+          "individual_modifier": 0.0,
+          "expected": 2.8,
+          "p5": 0.1,
+          "p95": 10.1
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.1,
+          "p95": 3.5
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.1,
+          "p95": 3.5
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.1,
+          "p95": 3.5
+        }
+      ],
+      "min": 1.2,
+      "max": 60.9,
+      "p5": 4.9,
+      "p95": 27.7,
+      "expected": 13.9,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.3,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.1,
+        "10": 0.1
+      }
+    },
+    {
+      "team": "Utah Valley",
+      "lineup_size": 3,
+      "program_offset": -0.07,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 174,
+          "rank": 18,
+          "name": "Moses Espinoza-Owens",
+          "individual_modifier": 0.0,
+          "expected": 3.0,
+          "p5": 0.0,
+          "p95": 9.0
+        },
+        {
+          "weight": 184,
+          "rank": 18,
+          "name": "Caleb Uhlenhopp",
+          "individual_modifier": 0.0,
+          "expected": 3.0,
+          "p5": 0.0,
+          "p95": 9.0
+        },
+        {
+          "weight": 197,
+          "rank": 21,
+          "name": "Kael Bennie",
+          "individual_modifier": 0.0,
+          "expected": 1.7,
+          "p5": 0.0,
+          "p95": 8.4
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        }
+      ],
+      "min": 0.0,
+      "max": 59.9,
+      "p5": 4.7,
+      "p95": 27.9,
+      "expected": 13.4,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.4,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.1,
+        "8": 0.1,
+        "9": 0.2,
+        "10": 0.1
+      }
+    },
+    {
+      "team": "Bucknell",
+      "lineup_size": 3,
+      "program_offset": -0.3,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 165,
+          "rank": 16,
+          "name": "Noah Mulvaney",
+          "individual_modifier": 0.0,
+          "expected": 2.4,
+          "p5": 0.0,
+          "p95": 9.7
+        },
+        {
+          "weight": 174,
+          "rank": 19,
+          "name": "Myles Takats",
+          "individual_modifier": 0.0,
+          "expected": 1.2,
+          "p5": 0.0,
+          "p95": 7.2
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 197,
+          "rank": 16,
+          "name": "Dillon Bechtold",
+          "individual_modifier": 0.0,
+          "expected": 2.4,
+          "p5": 0.0,
+          "p95": 9.7
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        }
+      ],
+      "min": 0.0,
+      "max": 48.0,
+      "p5": 2.8,
+      "p95": 25.3,
+      "expected": 11.3,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.1,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "team": "Oregon State",
+      "lineup_size": 4,
+      "program_offset": -0.54,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.6,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.6,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 141,
+          "rank": 15,
+          "name": "Nash Singleton",
+          "individual_modifier": 0.0,
+          "expected": 2.3,
+          "p5": 0.0,
+          "p95": 11.1
+        },
+        {
+          "weight": 149,
+          "rank": 23,
+          "name": "Noah Tolentino",
+          "individual_modifier": 0.0,
+          "expected": 0.9,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.6,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.6,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 174,
+          "rank": 23,
+          "name": "Daschle Lamer",
+          "individual_modifier": 0.0,
+          "expected": 0.9,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.6,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 197,
+          "rank": 11,
+          "name": "Justin Rademacher",
+          "individual_modifier": 0.0,
+          "expected": 3.2,
+          "p5": 0.0,
+          "p95": 14.1
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.6,
+          "p5": 0.0,
+          "p95": 2.9
+        }
+      ],
+      "min": 0.0,
+      "max": 54.2,
+      "p5": 1.5,
+      "p95": 27.6,
+      "expected": 11.1,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.4,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.1,
+        "9": 0.1,
+        "10": 0.2
+      }
+    },
+    {
+      "team": "Lock Haven",
+      "lineup_size": 1,
+      "program_offset": 0.15,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.1,
+          "p95": 3.6
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.1,
+          "p95": 3.6
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.1,
+          "p95": 3.6
+        },
+        {
+          "weight": 149,
+          "rank": 21,
+          "name": "Lucas Kapusta",
+          "individual_modifier": 0.0,
+          "expected": 1.9,
+          "p5": 0.1,
+          "p95": 8.7
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.1,
+          "p95": 3.6
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.1,
+          "p95": 3.6
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.1,
+          "p95": 3.6
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.1,
+          "p95": 3.6
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.1,
+          "p95": 3.6
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.1,
+          "p95": 3.6
+        }
+      ],
+      "min": 1.5,
+      "max": 50.3,
+      "p5": 3.5,
+      "p95": 24.7,
+      "expected": 11.0,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.1,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.1,
+        "10": 0.0
+      }
+    },
+    {
+      "team": "Cal Poly",
+      "lineup_size": 2,
+      "program_offset": -0.49,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 14,
+          "name": "Koda Holeman",
+          "individual_modifier": 0.0,
+          "expected": 2.9,
+          "p5": 0.0,
+          "p95": 12.0
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 141,
+          "rank": 16,
+          "name": "Zeth Romney",
+          "individual_modifier": 0.0,
+          "expected": 2.3,
+          "p5": 0.0,
+          "p95": 9.5
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        }
+      ],
+      "min": 0.0,
+      "max": 46.1,
+      "p5": 2.4,
+      "p95": 23.5,
+      "expected": 10.5,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.1,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "team": "Gardner-Webb",
+      "lineup_size": 1,
+      "program_offset": -0.18,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 133,
+          "rank": 8,
+          "name": "T.K. Davis",
+          "individual_modifier": 0.0,
+          "expected": 3.5,
+          "p5": 0.0,
+          "p95": 14.2
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        }
+      ],
+      "min": 0.0,
+      "max": 52.2,
+      "p5": 1.7,
+      "p95": 25.5,
+      "expected": 10.4,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.1,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "team": "Chattanooga",
+      "lineup_size": 1,
+      "program_offset": -0.2,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 157,
+          "rank": 14,
+          "name": "Cody Chittum",
+          "individual_modifier": 0.0,
+          "expected": 3.1,
+          "p5": 0.0,
+          "p95": 12.3
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        }
+      ],
+      "min": 0.0,
+      "max": 50.9,
+      "p5": 2.3,
+      "p95": 22.6,
+      "expected": 10.1,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.1,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.1
+      }
+    },
+    {
+      "team": "Rider",
+      "lineup_size": 1,
+      "program_offset": -0.14,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 197,
+          "rank": 18,
+          "name": "Brock Zurawski",
+          "individual_modifier": 0.0,
+          "expected": 2.9,
+          "p5": 0.0,
+          "p95": 8.9
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        }
+      ],
+      "min": 0.0,
+      "max": 59.6,
+      "p5": 2.8,
+      "p95": 22.3,
+      "expected": 10.1,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.1,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "team": "Brown",
+      "lineup_size": 2,
+      "program_offset": -0.08,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 149,
+          "rank": 24,
+          "name": "Austin McBurney",
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 2.7
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 197,
+          "rank": 15,
+          "name": "Andrew Reall",
+          "individual_modifier": 0.0,
+          "expected": 2.6,
+          "p5": 0.0,
+          "p95": 11.6
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.3
+        }
+      ],
+      "min": 0.0,
+      "max": 51.8,
+      "p5": 1.9,
+      "p95": 23.1,
+      "expected": 9.9,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.1,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.1
+      }
+    },
+    {
+      "team": "Davidson",
+      "lineup_size": 1,
+      "program_offset": -0.02,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 149,
+          "rank": 22,
+          "name": "Anderson Heap",
+          "individual_modifier": 0.0,
+          "expected": 2.1,
+          "p5": 0.0,
+          "p95": 9.1
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        }
+      ],
+      "min": 0.0,
+      "max": 49.7,
+      "p5": 2.3,
+      "p95": 23.4,
+      "expected": 9.7,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.1,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.1
+      }
+    },
+    {
+      "team": "Virginia",
+      "lineup_size": 3,
+      "program_offset": -0.19,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 141,
+          "rank": 17,
+          "name": "Gable Porter",
+          "individual_modifier": 0.0,
+          "expected": 1.5,
+          "p5": 0.0,
+          "p95": 9.1
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 157,
+          "rank": 17,
+          "name": "Jimmy Harrington",
+          "individual_modifier": 0.0,
+          "expected": 1.5,
+          "p5": 0.0,
+          "p95": 9.1
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 285,
+          "rank": 20,
+          "name": "Brenan Morgan",
+          "individual_modifier": 0.0,
+          "expected": 1.1,
+          "p5": 0.0,
+          "p95": 6.6
+        }
+      ],
+      "min": 0.0,
+      "max": 55.6,
+      "p5": 1.5,
+      "p95": 23.0,
+      "expected": 9.6,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.2,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.1,
+        "10": 0.1
+      }
+    },
+    {
+      "team": "App State",
+      "lineup_size": 3,
+      "program_offset": -0.32,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 141,
+          "rank": 23,
+          "name": "Aldo Hernandez",
+          "individual_modifier": 0.0,
+          "expected": 0.9,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 184,
+          "rank": 23,
+          "name": "Tomas Brooker",
+          "individual_modifier": 0.0,
+          "expected": 0.9,
+          "p5": 0.0,
+          "p95": 3.3
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 285,
+          "rank": 16,
+          "name": "Stephan Monchery",
+          "individual_modifier": 0.0,
+          "expected": 2.4,
+          "p5": 0.0,
+          "p95": 9.7
+        }
+      ],
+      "min": 0.0,
+      "max": 64.8,
+      "p5": 1.8,
+      "p95": 23.8,
+      "expected": 9.4,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.2,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.1
+      }
+    },
+    {
+      "team": "Army",
+      "lineup_size": 3,
+      "program_offset": -0.31,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 141,
+          "rank": 19,
+          "name": "Braden Basile",
+          "individual_modifier": 0.0,
+          "expected": 1.2,
+          "p5": 0.0,
+          "p95": 7.2
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 165,
+          "rank": 24,
+          "name": "Gunner Filipowicz",
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.5
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 285,
+          "rank": 12,
+          "name": "Brady Colbert",
+          "individual_modifier": 0.0,
+          "expected": 2.2,
+          "p5": 0.0,
+          "p95": 12.2
+        }
+      ],
+      "min": 0.0,
+      "max": 51.5,
+      "p5": 1.5,
+      "p95": 22.7,
+      "expected": 9.2,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.1,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.1,
+        "9": 0.0,
+        "10": 0.1
+      }
+    },
+    {
+      "team": "Drexel",
+      "lineup_size": 1,
+      "program_offset": -0.02,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 285,
+          "rank": 17,
+          "name": "Nate Schon",
+          "individual_modifier": 0.0,
+          "expected": 1.5,
+          "p5": 0.0,
+          "p95": 9.2
+        }
+      ],
+      "min": 0.0,
+      "max": 53.0,
+      "p5": 1.7,
+      "p95": 21.8,
+      "expected": 9.2,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.0,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "team": "Northwestern",
+      "lineup_size": 2,
+      "program_offset": -0.01,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": 20,
+          "name": "Dedrick Navarro",
+          "individual_modifier": 0.0,
+          "expected": 1.2,
+          "p5": 0.0,
+          "p95": 6.8
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.9,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.9,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.9,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.9,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.9,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 174,
+          "rank": 24,
+          "name": "Eddie Enright",
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 2.8
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.9,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.9,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.9,
+          "p5": 0.0,
+          "p95": 3.4
+        }
+      ],
+      "min": 0.0,
+      "max": 51.1,
+      "p5": 1.9,
+      "p95": 20.9,
+      "expected": 8.9,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.1,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.1
+      }
+    },
+    {
+      "team": "George Mason",
+      "lineup_size": 1,
+      "program_offset": -0.02,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 157,
+          "rank": 19,
+          "name": "DJ McGee",
+          "individual_modifier": 0.0,
+          "expected": 1.3,
+          "p5": 0.0,
+          "p95": 7.5
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.4
+        }
+      ],
+      "min": 0.0,
+      "max": 53.7,
+      "p5": 1.7,
+      "p95": 21.2,
+      "expected": 8.9,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.1,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "team": "Northern Illinois",
+      "lineup_size": 1,
+      "program_offset": -0.19,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 133,
+          "rank": 13,
+          "name": "Markel Baker",
+          "individual_modifier": 0.0,
+          "expected": 1.7,
+          "p5": 0.0,
+          "p95": 10.3
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        }
+      ],
+      "min": 0.0,
+      "max": 46.1,
+      "p5": 1.4,
+      "p95": 21.1,
+      "expected": 8.8,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.1,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.1
+      }
+    },
+    {
+      "team": "SIUE",
+      "lineup_size": 1,
+      "program_offset": -0.28,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 133,
+          "rank": 21,
+          "name": "Marcel Lopez",
+          "individual_modifier": 0.0,
+          "expected": 1.5,
+          "p5": 0.0,
+          "p95": 8.2
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.1
+        }
+      ],
+      "min": 0.0,
+      "max": 45.8,
+      "p5": 1.4,
+      "p95": 21.2,
+      "expected": 8.2,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.1,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "team": "Michigan State",
+      "lineup_size": 1,
+      "program_offset": -0.18,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        },
+        {
+          "weight": 197,
+          "rank": 19,
+          "name": "Kael Wisler",
+          "individual_modifier": 0.0,
+          "expected": 1.3,
+          "p5": 0.0,
+          "p95": 7.3
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.8,
+          "p5": 0.0,
+          "p95": 3.2
+        }
+      ],
+      "min": 0.0,
+      "max": 49.8,
+      "p5": 1.4,
+      "p95": 20.1,
+      "expected": 8.2,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.0,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "team": "Ohio",
+      "lineup_size": 1,
+      "program_offset": -0.38,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        },
+        {
+          "weight": 157,
+          "rank": 21,
+          "name": "Derek Raike",
+          "individual_modifier": 0.0,
+          "expected": 1.5,
+          "p5": 0.0,
+          "p95": 8.1
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        }
+      ],
+      "min": 0.0,
+      "max": 50.1,
+      "p5": 1.2,
+      "p95": 21.4,
+      "expected": 7.9,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.1,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.1
+      }
+    },
+    {
+      "team": "N. Colorado",
+      "lineup_size": 1,
+      "program_offset": -0.48,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 133,
+          "rank": 22,
+          "name": "Carter Schmidt",
+          "individual_modifier": 0.0,
+          "expected": 1.7,
+          "p5": 0.0,
+          "p95": 8.6
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 174,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 2.9
+        }
+      ],
+      "min": 0.0,
+      "max": 43.4,
+      "p5": 1.1,
+      "p95": 21.0,
+      "expected": 7.7,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.0,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "team": "Binghamton",
+      "lineup_size": 1,
+      "program_offset": -0.38,
+      "lineup_detail": [
+        {
+          "weight": 125,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        },
+        {
+          "weight": 133,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        },
+        {
+          "weight": 141,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        },
+        {
+          "weight": 149,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        },
+        {
+          "weight": 157,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        },
+        {
+          "weight": 165,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        },
+        {
+          "weight": 174,
+          "rank": 20,
+          "name": "Carter Baer",
+          "individual_modifier": 0.0,
+          "expected": 1.0,
+          "p5": 0.0,
+          "p95": 6.4
+        },
+        {
+          "weight": 184,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        },
+        {
+          "weight": 197,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        },
+        {
+          "weight": 285,
+          "rank": null,
+          "name": null,
+          "individual_modifier": 0.0,
+          "expected": 0.7,
+          "p5": 0.0,
+          "p95": 3.0
+        }
+      ],
+      "min": 0.0,
+      "max": 42.6,
+      "p5": 1.1,
+      "p95": 18.8,
+      "expected": 7.4,
+      "p_1st": 0.0,
+      "p_top3": 0.0,
+      "p_top5": 0.0,
+      "p_top10": 0.1,
+      "p_place": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.1
+      }
+    }
+  ]
+}

@@ -3,8 +3,8 @@
   "canonical_name": "Jordan Justice",
   "career_record": {
     "wins": 79,
-    "losses": 25,
-    "win_pct": 0.76
+    "losses": 27,
+    "win_pct": 0.745
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 138,
       "record": "36-10",
       "regional_place": 3,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -856,6 +857,7 @@
       "weight_class": 132,
       "record": "24-11",
       "regional_place": 4,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1625,6 +1627,7 @@
       "weight_class": 126,
       "record": "19-4",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -2113,6 +2116,56 @@
           "event": "vs. Spring Valley",
           "season": 2013,
           "opponent_ky": false
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000082",
+      "grade": 9,
+      "team": "Sheldon Clark",
+      "weight_class": 120,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000081",
+          "opponent_career_id": "career_016677",
+          "opponent_name": "Nick Paden",
+          "opponent_team": "LaRue County",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "L",
+          "method": "FALL",
+          "score": "1:55",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000083",
+          "opponent_career_id": "career_015652",
+          "opponent_name": "Max Korfhage",
+          "opponent_team": "St. Xavier",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "L",
+          "method": "FALL",
+          "score": "2:54",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
         }
       ]
     }

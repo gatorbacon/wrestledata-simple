@@ -2,9 +2,9 @@
   "career_id": "career_016335",
   "canonical_name": "Cody Miskell",
   "career_record": {
-    "wins": 27,
-    "losses": 5,
-    "win_pct": 0.844
+    "wins": 28,
+    "losses": 7,
+    "win_pct": 0.8
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 285,
       "record": "27-5",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 4,
       "current_rank": null,
       "matches": [
@@ -970,6 +971,74 @@
           "duration": "7:00",
           "event": "Harrison County Inv.",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000466",
+      "grade": 11,
+      "team": "Grant County",
+      "weight_class": 285,
+      "record": "1-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000467",
+          "opponent_career_id": "career_016865",
+          "opponent_name": "Johnathan Beagley",
+          "opponent_team": "Perry County Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 285,
+          "opponent_rank": null,
+          "weight_class": "285",
+          "result": "L",
+          "method": "DEC",
+          "score": "3-2",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000465",
+          "opponent_career_id": "career_016864",
+          "opponent_name": "Bobby Spears",
+          "opponent_team": "Moore",
+          "opponent_team_rank": null,
+          "opponent_weight": 285,
+          "opponent_rank": null,
+          "weight_class": "285",
+          "result": "W",
+          "method": "FALL",
+          "score": "0:44",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000460",
+          "opponent_career_id": "career_016295",
+          "opponent_name": "Gabriel Lord",
+          "opponent_team": "Fern Creek",
+          "opponent_team_rank": null,
+          "opponent_weight": 285,
+          "opponent_rank": null,
+          "weight_class": "285",
+          "result": "L",
+          "method": "DEC",
+          "score": "7-4",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

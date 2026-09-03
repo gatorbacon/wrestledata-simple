@@ -2,9 +2,9 @@
   "career_id": "career_015051",
   "canonical_name": "John Hernandez",
   "career_record": {
-    "wins": 54,
-    "losses": 11,
-    "win_pct": 0.831
+    "wins": 56,
+    "losses": 13,
+    "win_pct": 0.812
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 113,
       "record": "24-4",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 2,
       "current_rank": null,
       "matches": [
@@ -586,6 +587,7 @@
       "weight_class": 113,
       "record": "30-7",
       "regional_place": 3,
+      "regional_data_tracked": true,
       "state_place": 2,
       "current_rank": null,
       "matches": [
@@ -1397,6 +1399,92 @@
           "duration": "1:00",
           "event": "King of the Bluegrass",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000041",
+      "grade": 10,
+      "team": "Henry Clay",
+      "weight_class": 113,
+      "record": "2-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000042",
+          "opponent_career_id": "career_016048",
+          "opponent_name": "Donavan Bentley",
+          "opponent_team": "Pike County Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "W",
+          "method": "FALL",
+          "score": "0:38",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000044",
+          "opponent_career_id": "career_016662",
+          "opponent_name": "Juan Ramirez",
+          "opponent_team": "Western",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "W",
+          "method": "FALL",
+          "score": "3:52",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000048",
+          "opponent_career_id": "career_016486",
+          "opponent_name": "John Shirkey",
+          "opponent_team": "Oldham County",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "L",
+          "method": "FALL",
+          "score": "3:48",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000059",
+          "opponent_career_id": "career_015946",
+          "opponent_name": "Coty Hunt",
+          "opponent_team": "Franklin County",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "L",
+          "method": "DEC",
+          "score": "4-2",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <title>Team Championship Odds — MatSavant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css?v=20260901" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+  <style>
+    .to-header-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 1em;
+    }
+    .to-date-tabs {
+      margin-bottom: 0;
+      border-bottom: none;
+      justify-content: flex-end;
+    }
+    td.col-place { min-width: 64px; }
+  </style>
+</head>
+<body>
+  <script src="/header.js"></script>
+  <div class="page-container">
+    <header class="header">
+      <div class="to-header-row">
+        <div>
+          <h1>Team Championship Odds</h1>
+          <div class="header-subline" id="season-info"></div>
+        </div>
+        <div id="date-tabs" class="weight-tabs-container to-date-tabs" role="tablist" aria-label="Rankings date"></div>
+      </div>
+      <p class="header-explainer">
+        Monte Carlo tournament simulation (10,000 trials/team) built from national rankings and each program's historical seed-relative scoring performance. Updates as new rankings are released through the season — click a team to see its wrestler-by-wrestler breakdown.
+      </p>
+    </header>
+
+    <section class="section">
+      <div class="table-wrapper">
+        <table id="team-odds-table">
+          <thead>
+            <tr>
+              <th style="width: 32px;"></th>
+              <th>Rank</th>
+              <th>Team</th>
+              <th>Scoring Range</th>
+              <th class="num col-place">1st</th>
+              <th class="num col-place">2nd</th>
+              <th class="num col-place">3rd</th>
+              <th class="num col-place">4th</th>
+              <th class="num col-place">5th</th>
+              <th class="num col-place">6th</th>
+              <th class="num col-place">7th</th>
+              <th class="num col-place">8th</th>
+              <th class="num col-place">9th</th>
+              <th class="num col-place">10th</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="/tooltips.js"></script>
+  <script src="/team_odds.js"></script>
+</body>
+</html>

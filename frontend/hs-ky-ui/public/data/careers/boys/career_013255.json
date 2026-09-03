@@ -3,8 +3,8 @@
   "canonical_name": "Alex Lee",
   "career_record": {
     "wins": 110,
-    "losses": 19,
-    "win_pct": 0.853
+    "losses": 21,
+    "win_pct": 0.84
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 126,
       "record": "51-5",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1036,6 +1037,7 @@
       "weight_class": 126,
       "record": "37-6",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1805,6 +1807,7 @@
       "weight_class": 106,
       "record": "22-8",
       "regional_place": 3,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -2383,6 +2386,56 @@
           "event": "2012 Ryle Raider Rumble",
           "season": 2013,
           "opponent_ky": false
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000002",
+      "grade": 8,
+      "team": "Meade County",
+      "weight_class": 106,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000001",
+          "opponent_career_id": "career_013916",
+          "opponent_name": "Davon Adams",
+          "opponent_team": "Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "L",
+          "method": "FALL",
+          "score": "2:51",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000003",
+          "opponent_career_id": "career_015764",
+          "opponent_name": "Cody Stephens",
+          "opponent_team": "Mccreary Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "L",
+          "method": "TF",
+          "score": "16-1",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
         }
       ]
     }

@@ -3,8 +3,8 @@
   "canonical_name": "Jacob Brett",
   "career_record": {
     "wins": 64,
-    "losses": 21,
-    "win_pct": 0.753
+    "losses": 25,
+    "win_pct": 0.719
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 138,
       "record": "26-13",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1036,6 +1037,7 @@
       "weight_class": 138,
       "record": "38-8",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -2045,6 +2047,106 @@
           "duration": "7:00",
           "event": "vs. Newport",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000106",
+      "grade": 10,
+      "team": "Newport",
+      "weight_class": 126,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000105",
+          "opponent_career_id": "career_016210",
+          "opponent_name": "Wyatt Overman",
+          "opponent_team": "Central Hardin",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "DEC",
+          "score": "14-8",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000108",
+          "opponent_career_id": "career_016685",
+          "opponent_name": "AJ Roberson",
+          "opponent_team": "Pleasure Ridge Park",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "FALL",
+          "score": "0:39",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2011,
+      "wrestler_id": "HW_B_000545",
+      "grade": 9,
+      "team": "Newport",
+      "weight_class": 119,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2011-02-19",
+          "opponent_id": "HW_B_000544",
+          "opponent_career_id": "career_016663",
+          "opponent_name": "Chase Boone",
+          "opponent_team": "Ohio County",
+          "opponent_team_rank": null,
+          "opponent_weight": 119,
+          "opponent_rank": null,
+          "weight_class": "119",
+          "result": "L",
+          "method": "FALL",
+          "score": "3:22",
+          "duration": null,
+          "event": "2011 KHSAA State Championship",
+          "season": 2011,
+          "opponent_ky": true
+        },
+        {
+          "date": "2011-02-19",
+          "opponent_id": "HW_B_000547",
+          "opponent_career_id": "career_015014",
+          "opponent_name": "Colton Elkins",
+          "opponent_team": "Desales",
+          "opponent_team_rank": null,
+          "opponent_weight": 119,
+          "opponent_rank": null,
+          "weight_class": "119",
+          "result": "L",
+          "method": "DEC",
+          "score": "7-2",
+          "duration": null,
+          "event": "2011 KHSAA State Championship",
+          "season": 2011,
           "opponent_ky": true
         }
       ]

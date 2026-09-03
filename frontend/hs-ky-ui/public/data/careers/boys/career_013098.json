@@ -3,8 +3,8 @@
   "canonical_name": "Sam Griffith",
   "career_record": {
     "wins": 153,
-    "losses": 48,
-    "win_pct": 0.761
+    "losses": 50,
+    "win_pct": 0.754
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 165,
       "record": "41-9",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 6,
       "current_rank": null,
       "matches": [
@@ -892,6 +893,7 @@
       "weight_class": 165,
       "record": "46-10",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 6,
       "current_rank": null,
       "matches": [
@@ -1823,6 +1825,7 @@
       "weight_class": 165,
       "record": "36-9",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -2754,6 +2757,7 @@
       "weight_class": 132,
       "record": "30-20",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -3638,6 +3642,56 @@
           "event": "Hayworth tire Indian classic",
           "season": 2013,
           "opponent_ky": false
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000118",
+      "grade": 7,
+      "team": "Johnson Central",
+      "weight_class": 126,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000117",
+          "opponent_career_id": "career_016687",
+          "opponent_name": "Anthony Castellano",
+          "opponent_team": "Dixie Heights",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "FALL",
+          "score": "2:59",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000119",
+          "opponent_career_id": "career_016688",
+          "opponent_name": "Dylan Vish",
+          "opponent_team": "St. Xavier",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "FALL",
+          "score": "0:48",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
         }
       ]
     }

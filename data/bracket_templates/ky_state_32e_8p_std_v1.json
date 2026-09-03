@@ -1,0 +1,938 @@
+{
+  "template_id": "ky_state_32e_8p_std_v1",
+  "bracket_size": 32,
+  "places_awarded": 8,
+  "consolation_style": "single_backside",
+  "rounds": [
+    {
+      "round_id": "champ_r1",
+      "bracket": "champ",
+      "label": "Champ. Round 1",
+      "slots": [
+        "C_CHAMP_R1_0",
+        "C_CHAMP_R1_1",
+        "C_CHAMP_R1_2",
+        "C_CHAMP_R1_3",
+        "C_CHAMP_R1_4",
+        "C_CHAMP_R1_5",
+        "C_CHAMP_R1_6",
+        "C_CHAMP_R1_7",
+        "C_CHAMP_R1_8",
+        "C_CHAMP_R1_9",
+        "C_CHAMP_R1_10",
+        "C_CHAMP_R1_11",
+        "C_CHAMP_R1_12",
+        "C_CHAMP_R1_13",
+        "C_CHAMP_R1_14",
+        "C_CHAMP_R1_15"
+      ]
+    },
+    {
+      "round_id": "champ_r2",
+      "bracket": "champ",
+      "label": "Champ. Round 2",
+      "slots": [
+        "C_CHAMP_R2_0",
+        "C_CHAMP_R2_1",
+        "C_CHAMP_R2_2",
+        "C_CHAMP_R2_3",
+        "C_CHAMP_R2_4",
+        "C_CHAMP_R2_5",
+        "C_CHAMP_R2_6",
+        "C_CHAMP_R2_7"
+      ]
+    },
+    {
+      "round_id": "champ_qf",
+      "bracket": "champ",
+      "label": "Quarterfinals",
+      "slots": [
+        "C_CHAMP_QF_0",
+        "C_CHAMP_QF_1",
+        "C_CHAMP_QF_2",
+        "C_CHAMP_QF_3"
+      ]
+    },
+    {
+      "round_id": "champ_sf",
+      "bracket": "champ",
+      "label": "Semifinals",
+      "slots": [
+        "C_CHAMP_SF_0",
+        "C_CHAMP_SF_1"
+      ]
+    },
+    {
+      "round_id": "champ_final",
+      "bracket": "champ",
+      "label": "1st Place Match",
+      "slots": [
+        "C_CHAMP_FINAL_0"
+      ]
+    },
+    {
+      "round_id": "cons_r1",
+      "bracket": "consol",
+      "label": "Cons. Round 1",
+      "slots": [
+        "CONS_R1_0",
+        "CONS_R1_1",
+        "CONS_R1_2",
+        "CONS_R1_3",
+        "CONS_R1_4",
+        "CONS_R1_5",
+        "CONS_R1_6",
+        "CONS_R1_7"
+      ]
+    },
+    {
+      "round_id": "cons_r2",
+      "bracket": "consol",
+      "label": "Cons. Round 2",
+      "slots": [
+        "CONS_M1_0",
+        "CONS_M1_1",
+        "CONS_M1_2",
+        "CONS_M1_3",
+        "CONS_M1_4",
+        "CONS_M1_5",
+        "CONS_M1_6",
+        "CONS_M1_7"
+      ]
+    },
+    {
+      "round_id": "cons_r3",
+      "bracket": "consol",
+      "label": "Cons. Round 3",
+      "slots": [
+        "CONS_P1_0",
+        "CONS_P1_1",
+        "CONS_P1_2",
+        "CONS_P1_3"
+      ]
+    },
+    {
+      "round_id": "cons_r4",
+      "bracket": "consol",
+      "label": "Cons. Round 4",
+      "slots": [
+        "CONS_M2_0",
+        "CONS_M2_1",
+        "CONS_M2_2",
+        "CONS_M2_3"
+      ]
+    },
+    {
+      "round_id": "cons_qf",
+      "bracket": "consol",
+      "label": "Cons. Quarterfinals",
+      "slots": [
+        "CONS_P2_0",
+        "CONS_P2_1"
+      ]
+    },
+    {
+      "round_id": "cons_semis",
+      "bracket": "consol",
+      "label": "Cons. Semis",
+      "slots": [
+        "CONS_M3_0",
+        "CONS_M3_1"
+      ]
+    },
+    {
+      "round_id": "cons_final",
+      "bracket": "consol",
+      "label": "3rd Place Match",
+      "slots": [
+        "CONS_P3_0"
+      ]
+    },
+    {
+      "round_id": "cons_5th_place",
+      "bracket": "consol",
+      "label": "5th Place Match",
+      "slots": [
+        "CONS_5TH"
+      ]
+    },
+    {
+      "round_id": "cons_7th_place",
+      "bracket": "consol",
+      "label": "7th Place Match",
+      "slots": [
+        "CONS_7TH"
+      ]
+    }
+  ],
+  "slots": {
+    "C_CHAMP_R1_0": {
+      "bracket": "champ",
+      "round": "champ_r1",
+      "inputs": [
+        "ENTRANT_1",
+        "ENTRANT_2"
+      ],
+      "winner_to": "C_CHAMP_R2_0",
+      "loser_to": "CONS_R1_0",
+      "win_points": 1
+    },
+    "C_CHAMP_R1_1": {
+      "bracket": "champ",
+      "round": "champ_r1",
+      "inputs": [
+        "ENTRANT_3",
+        "ENTRANT_4"
+      ],
+      "winner_to": "C_CHAMP_R2_0",
+      "loser_to": "CONS_R1_0",
+      "win_points": 1
+    },
+    "C_CHAMP_R1_2": {
+      "bracket": "champ",
+      "round": "champ_r1",
+      "inputs": [
+        "ENTRANT_5",
+        "ENTRANT_6"
+      ],
+      "winner_to": "C_CHAMP_R2_1",
+      "loser_to": "CONS_R1_1",
+      "win_points": 1
+    },
+    "C_CHAMP_R1_3": {
+      "bracket": "champ",
+      "round": "champ_r1",
+      "inputs": [
+        "ENTRANT_7",
+        "ENTRANT_8"
+      ],
+      "winner_to": "C_CHAMP_R2_1",
+      "loser_to": "CONS_R1_1",
+      "win_points": 1
+    },
+    "C_CHAMP_R1_4": {
+      "bracket": "champ",
+      "round": "champ_r1",
+      "inputs": [
+        "ENTRANT_9",
+        "ENTRANT_10"
+      ],
+      "winner_to": "C_CHAMP_R2_2",
+      "loser_to": "CONS_R1_2",
+      "win_points": 1
+    },
+    "C_CHAMP_R1_5": {
+      "bracket": "champ",
+      "round": "champ_r1",
+      "inputs": [
+        "ENTRANT_11",
+        "ENTRANT_12"
+      ],
+      "winner_to": "C_CHAMP_R2_2",
+      "loser_to": "CONS_R1_2",
+      "win_points": 1
+    },
+    "C_CHAMP_R1_6": {
+      "bracket": "champ",
+      "round": "champ_r1",
+      "inputs": [
+        "ENTRANT_13",
+        "ENTRANT_14"
+      ],
+      "winner_to": "C_CHAMP_R2_3",
+      "loser_to": "CONS_R1_3",
+      "win_points": 1
+    },
+    "C_CHAMP_R1_7": {
+      "bracket": "champ",
+      "round": "champ_r1",
+      "inputs": [
+        "ENTRANT_15",
+        "ENTRANT_16"
+      ],
+      "winner_to": "C_CHAMP_R2_3",
+      "loser_to": "CONS_R1_3",
+      "win_points": 1
+    },
+    "C_CHAMP_R1_8": {
+      "bracket": "champ",
+      "round": "champ_r1",
+      "inputs": [
+        "ENTRANT_17",
+        "ENTRANT_18"
+      ],
+      "winner_to": "C_CHAMP_R2_4",
+      "loser_to": "CONS_R1_4",
+      "win_points": 1
+    },
+    "C_CHAMP_R1_9": {
+      "bracket": "champ",
+      "round": "champ_r1",
+      "inputs": [
+        "ENTRANT_19",
+        "ENTRANT_20"
+      ],
+      "winner_to": "C_CHAMP_R2_4",
+      "loser_to": "CONS_R1_4",
+      "win_points": 1
+    },
+    "C_CHAMP_R1_10": {
+      "bracket": "champ",
+      "round": "champ_r1",
+      "inputs": [
+        "ENTRANT_21",
+        "ENTRANT_22"
+      ],
+      "winner_to": "C_CHAMP_R2_5",
+      "loser_to": "CONS_R1_5",
+      "win_points": 1
+    },
+    "C_CHAMP_R1_11": {
+      "bracket": "champ",
+      "round": "champ_r1",
+      "inputs": [
+        "ENTRANT_23",
+        "ENTRANT_24"
+      ],
+      "winner_to": "C_CHAMP_R2_5",
+      "loser_to": "CONS_R1_5",
+      "win_points": 1
+    },
+    "C_CHAMP_R1_12": {
+      "bracket": "champ",
+      "round": "champ_r1",
+      "inputs": [
+        "ENTRANT_25",
+        "ENTRANT_26"
+      ],
+      "winner_to": "C_CHAMP_R2_6",
+      "loser_to": "CONS_R1_6",
+      "win_points": 1
+    },
+    "C_CHAMP_R1_13": {
+      "bracket": "champ",
+      "round": "champ_r1",
+      "inputs": [
+        "ENTRANT_27",
+        "ENTRANT_28"
+      ],
+      "winner_to": "C_CHAMP_R2_6",
+      "loser_to": "CONS_R1_6",
+      "win_points": 1
+    },
+    "C_CHAMP_R1_14": {
+      "bracket": "champ",
+      "round": "champ_r1",
+      "inputs": [
+        "ENTRANT_29",
+        "ENTRANT_30"
+      ],
+      "winner_to": "C_CHAMP_R2_7",
+      "loser_to": "CONS_R1_7",
+      "win_points": 1
+    },
+    "C_CHAMP_R1_15": {
+      "bracket": "champ",
+      "round": "champ_r1",
+      "inputs": [
+        "ENTRANT_31",
+        "ENTRANT_32"
+      ],
+      "winner_to": "C_CHAMP_R2_7",
+      "loser_to": "CONS_R1_7",
+      "win_points": 1
+    },
+    "C_CHAMP_R2_0": {
+      "bracket": "champ",
+      "round": "champ_r2",
+      "inputs": [
+        "C_CHAMP_R1_0_WINNER",
+        "C_CHAMP_R1_1_WINNER"
+      ],
+      "winner_to": "C_CHAMP_QF_0",
+      "loser_to": "CONS_M1_7",
+      "win_points": 1
+    },
+    "C_CHAMP_R2_1": {
+      "bracket": "champ",
+      "round": "champ_r2",
+      "inputs": [
+        "C_CHAMP_R1_2_WINNER",
+        "C_CHAMP_R1_3_WINNER"
+      ],
+      "winner_to": "C_CHAMP_QF_0",
+      "loser_to": "CONS_M1_6",
+      "win_points": 1
+    },
+    "C_CHAMP_R2_2": {
+      "bracket": "champ",
+      "round": "champ_r2",
+      "inputs": [
+        "C_CHAMP_R1_4_WINNER",
+        "C_CHAMP_R1_5_WINNER"
+      ],
+      "winner_to": "C_CHAMP_QF_1",
+      "loser_to": "CONS_M1_5",
+      "win_points": 1
+    },
+    "C_CHAMP_R2_3": {
+      "bracket": "champ",
+      "round": "champ_r2",
+      "inputs": [
+        "C_CHAMP_R1_6_WINNER",
+        "C_CHAMP_R1_7_WINNER"
+      ],
+      "winner_to": "C_CHAMP_QF_1",
+      "loser_to": "CONS_M1_4",
+      "win_points": 1
+    },
+    "C_CHAMP_R2_4": {
+      "bracket": "champ",
+      "round": "champ_r2",
+      "inputs": [
+        "C_CHAMP_R1_8_WINNER",
+        "C_CHAMP_R1_9_WINNER"
+      ],
+      "winner_to": "C_CHAMP_QF_2",
+      "loser_to": "CONS_M1_3",
+      "win_points": 1
+    },
+    "C_CHAMP_R2_5": {
+      "bracket": "champ",
+      "round": "champ_r2",
+      "inputs": [
+        "C_CHAMP_R1_10_WINNER",
+        "C_CHAMP_R1_11_WINNER"
+      ],
+      "winner_to": "C_CHAMP_QF_2",
+      "loser_to": "CONS_M1_2",
+      "win_points": 1
+    },
+    "C_CHAMP_R2_6": {
+      "bracket": "champ",
+      "round": "champ_r2",
+      "inputs": [
+        "C_CHAMP_R1_12_WINNER",
+        "C_CHAMP_R1_13_WINNER"
+      ],
+      "winner_to": "C_CHAMP_QF_3",
+      "loser_to": "CONS_M1_1",
+      "win_points": 1
+    },
+    "C_CHAMP_R2_7": {
+      "bracket": "champ",
+      "round": "champ_r2",
+      "inputs": [
+        "C_CHAMP_R1_14_WINNER",
+        "C_CHAMP_R1_15_WINNER"
+      ],
+      "winner_to": "C_CHAMP_QF_3",
+      "loser_to": "CONS_M1_0",
+      "win_points": 1
+    },
+    "C_CHAMP_QF_0": {
+      "bracket": "champ",
+      "round": "champ_qf",
+      "inputs": [
+        "C_CHAMP_R2_0_WINNER",
+        "C_CHAMP_R2_1_WINNER"
+      ],
+      "winner_to": "C_CHAMP_SF_0",
+      "loser_to": "CONS_M2_1",
+      "win_points": 1
+    },
+    "C_CHAMP_QF_1": {
+      "bracket": "champ",
+      "round": "champ_qf",
+      "inputs": [
+        "C_CHAMP_R2_2_WINNER",
+        "C_CHAMP_R2_3_WINNER"
+      ],
+      "winner_to": "C_CHAMP_SF_0",
+      "loser_to": "CONS_M2_0",
+      "win_points": 1
+    },
+    "C_CHAMP_QF_2": {
+      "bracket": "champ",
+      "round": "champ_qf",
+      "inputs": [
+        "C_CHAMP_R2_4_WINNER",
+        "C_CHAMP_R2_5_WINNER"
+      ],
+      "winner_to": "C_CHAMP_SF_1",
+      "loser_to": "CONS_M2_3",
+      "win_points": 1
+    },
+    "C_CHAMP_QF_3": {
+      "bracket": "champ",
+      "round": "champ_qf",
+      "inputs": [
+        "C_CHAMP_R2_6_WINNER",
+        "C_CHAMP_R2_7_WINNER"
+      ],
+      "winner_to": "C_CHAMP_SF_1",
+      "loser_to": "CONS_M2_2",
+      "win_points": 1
+    },
+    "C_CHAMP_SF_0": {
+      "bracket": "champ",
+      "round": "champ_sf",
+      "inputs": [
+        "C_CHAMP_QF_0_WINNER",
+        "C_CHAMP_QF_1_WINNER"
+      ],
+      "winner_to": "C_CHAMP_FINAL_0",
+      "loser_to": "CONS_M3_1",
+      "win_points": 1
+    },
+    "C_CHAMP_SF_1": {
+      "bracket": "champ",
+      "round": "champ_sf",
+      "inputs": [
+        "C_CHAMP_QF_2_WINNER",
+        "C_CHAMP_QF_3_WINNER"
+      ],
+      "winner_to": "C_CHAMP_FINAL_0",
+      "loser_to": "CONS_M3_0",
+      "win_points": 1
+    },
+    "C_CHAMP_FINAL_0": {
+      "bracket": "champ",
+      "round": "champ_final",
+      "inputs": [
+        "C_CHAMP_SF_0_WINNER",
+        "C_CHAMP_SF_1_WINNER"
+      ],
+      "winner_to": "PLACE_1",
+      "loser_to": "PLACE_2",
+      "win_points": 0
+    },
+    "CONS_R1_0": {
+      "bracket": "consol",
+      "round": "cons_r1",
+      "inputs": [
+        "C_CHAMP_R1_0_LOSER",
+        "C_CHAMP_R1_1_LOSER"
+      ],
+      "winner_to": "CONS_M1_0",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_R1_1": {
+      "bracket": "consol",
+      "round": "cons_r1",
+      "inputs": [
+        "C_CHAMP_R1_2_LOSER",
+        "C_CHAMP_R1_3_LOSER"
+      ],
+      "winner_to": "CONS_M1_1",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_R1_2": {
+      "bracket": "consol",
+      "round": "cons_r1",
+      "inputs": [
+        "C_CHAMP_R1_4_LOSER",
+        "C_CHAMP_R1_5_LOSER"
+      ],
+      "winner_to": "CONS_M1_2",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_R1_3": {
+      "bracket": "consol",
+      "round": "cons_r1",
+      "inputs": [
+        "C_CHAMP_R1_6_LOSER",
+        "C_CHAMP_R1_7_LOSER"
+      ],
+      "winner_to": "CONS_M1_3",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_R1_4": {
+      "bracket": "consol",
+      "round": "cons_r1",
+      "inputs": [
+        "C_CHAMP_R1_8_LOSER",
+        "C_CHAMP_R1_9_LOSER"
+      ],
+      "winner_to": "CONS_M1_4",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_R1_5": {
+      "bracket": "consol",
+      "round": "cons_r1",
+      "inputs": [
+        "C_CHAMP_R1_10_LOSER",
+        "C_CHAMP_R1_11_LOSER"
+      ],
+      "winner_to": "CONS_M1_5",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_R1_6": {
+      "bracket": "consol",
+      "round": "cons_r1",
+      "inputs": [
+        "C_CHAMP_R1_12_LOSER",
+        "C_CHAMP_R1_13_LOSER"
+      ],
+      "winner_to": "CONS_M1_6",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_R1_7": {
+      "bracket": "consol",
+      "round": "cons_r1",
+      "inputs": [
+        "C_CHAMP_R1_14_LOSER",
+        "C_CHAMP_R1_15_LOSER"
+      ],
+      "winner_to": "CONS_M1_7",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_M1_0": {
+      "bracket": "consol",
+      "round": "cons_r2",
+      "inputs": [
+        "CONS_R1_0_WINNER",
+        "C_CHAMP_R2_7_LOSER"
+      ],
+      "winner_to": "CONS_P1_0",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_M1_1": {
+      "bracket": "consol",
+      "round": "cons_r2",
+      "inputs": [
+        "CONS_R1_1_WINNER",
+        "C_CHAMP_R2_6_LOSER"
+      ],
+      "winner_to": "CONS_P1_0",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_M1_2": {
+      "bracket": "consol",
+      "round": "cons_r2",
+      "inputs": [
+        "CONS_R1_2_WINNER",
+        "C_CHAMP_R2_5_LOSER"
+      ],
+      "winner_to": "CONS_P1_1",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_M1_3": {
+      "bracket": "consol",
+      "round": "cons_r2",
+      "inputs": [
+        "CONS_R1_3_WINNER",
+        "C_CHAMP_R2_4_LOSER"
+      ],
+      "winner_to": "CONS_P1_1",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_M1_4": {
+      "bracket": "consol",
+      "round": "cons_r2",
+      "inputs": [
+        "CONS_R1_4_WINNER",
+        "C_CHAMP_R2_3_LOSER"
+      ],
+      "winner_to": "CONS_P1_2",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_M1_5": {
+      "bracket": "consol",
+      "round": "cons_r2",
+      "inputs": [
+        "CONS_R1_5_WINNER",
+        "C_CHAMP_R2_2_LOSER"
+      ],
+      "winner_to": "CONS_P1_2",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_M1_6": {
+      "bracket": "consol",
+      "round": "cons_r2",
+      "inputs": [
+        "CONS_R1_6_WINNER",
+        "C_CHAMP_R2_1_LOSER"
+      ],
+      "winner_to": "CONS_P1_3",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_M1_7": {
+      "bracket": "consol",
+      "round": "cons_r2",
+      "inputs": [
+        "CONS_R1_7_WINNER",
+        "C_CHAMP_R2_0_LOSER"
+      ],
+      "winner_to": "CONS_P1_3",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_P1_0": {
+      "bracket": "consol",
+      "round": "cons_r3",
+      "inputs": [
+        "CONS_M1_0_WINNER",
+        "CONS_M1_1_WINNER"
+      ],
+      "winner_to": "CONS_M2_0",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_P1_1": {
+      "bracket": "consol",
+      "round": "cons_r3",
+      "inputs": [
+        "CONS_M1_2_WINNER",
+        "CONS_M1_3_WINNER"
+      ],
+      "winner_to": "CONS_M2_1",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_P1_2": {
+      "bracket": "consol",
+      "round": "cons_r3",
+      "inputs": [
+        "CONS_M1_4_WINNER",
+        "CONS_M1_5_WINNER"
+      ],
+      "winner_to": "CONS_M2_2",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_P1_3": {
+      "bracket": "consol",
+      "round": "cons_r3",
+      "inputs": [
+        "CONS_M1_6_WINNER",
+        "CONS_M1_7_WINNER"
+      ],
+      "winner_to": "CONS_M2_3",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_M2_0": {
+      "bracket": "consol",
+      "round": "cons_r4",
+      "inputs": [
+        "CONS_P1_0_WINNER",
+        "C_CHAMP_QF_1_LOSER"
+      ],
+      "winner_to": "CONS_P2_0",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_M2_1": {
+      "bracket": "consol",
+      "round": "cons_r4",
+      "inputs": [
+        "CONS_P1_1_WINNER",
+        "C_CHAMP_QF_0_LOSER"
+      ],
+      "winner_to": "CONS_P2_0",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_M2_2": {
+      "bracket": "consol",
+      "round": "cons_r4",
+      "inputs": [
+        "CONS_P1_2_WINNER",
+        "C_CHAMP_QF_3_LOSER"
+      ],
+      "winner_to": "CONS_P2_1",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_M2_3": {
+      "bracket": "consol",
+      "round": "cons_r4",
+      "inputs": [
+        "CONS_P1_3_WINNER",
+        "C_CHAMP_QF_2_LOSER"
+      ],
+      "winner_to": "CONS_P2_1",
+      "loser_to": null,
+      "win_points": 0.5
+    },
+    "CONS_P2_0": {
+      "bracket": "consol",
+      "round": "cons_qf",
+      "inputs": [
+        "CONS_M2_0_WINNER",
+        "CONS_M2_1_WINNER"
+      ],
+      "winner_to": "CONS_M3_0",
+      "loser_to": "CONS_7TH",
+      "win_points": 0.5
+    },
+    "CONS_P2_1": {
+      "bracket": "consol",
+      "round": "cons_qf",
+      "inputs": [
+        "CONS_M2_2_WINNER",
+        "CONS_M2_3_WINNER"
+      ],
+      "winner_to": "CONS_M3_1",
+      "loser_to": "CONS_7TH",
+      "win_points": 0.5
+    },
+    "CONS_M3_0": {
+      "bracket": "consol",
+      "round": "cons_semis",
+      "inputs": [
+        "CONS_P2_0_WINNER",
+        "C_CHAMP_SF_1_LOSER"
+      ],
+      "winner_to": "CONS_P3_0",
+      "loser_to": "CONS_5TH",
+      "win_points": 0.5
+    },
+    "CONS_M3_1": {
+      "bracket": "consol",
+      "round": "cons_semis",
+      "inputs": [
+        "CONS_P2_1_WINNER",
+        "C_CHAMP_SF_0_LOSER"
+      ],
+      "winner_to": "CONS_P3_0",
+      "loser_to": "CONS_5TH",
+      "win_points": 0.5
+    },
+    "CONS_P3_0": {
+      "bracket": "consol",
+      "round": "cons_final",
+      "inputs": [
+        "CONS_M3_0_WINNER",
+        "CONS_M3_1_WINNER"
+      ],
+      "winner_to": "PLACE_3",
+      "loser_to": "PLACE_4",
+      "win_points": 0
+    },
+    "CONS_5TH": {
+      "bracket": "consol",
+      "round": "cons_5th_place",
+      "inputs": [
+        "CONS_M3_0_LOSER",
+        "CONS_M3_1_LOSER"
+      ],
+      "winner_to": "PLACE_5",
+      "loser_to": "PLACE_6",
+      "win_points": 0
+    },
+    "CONS_7TH": {
+      "bracket": "consol",
+      "round": "cons_7th_place",
+      "inputs": [
+        "CONS_P2_0_LOSER",
+        "CONS_P2_1_LOSER"
+      ],
+      "winner_to": "PLACE_7",
+      "loser_to": "PLACE_8",
+      "win_points": 0
+    }
+  },
+  "placement_map": {
+    "C_CHAMP_FINAL_0": {
+      "winner": {
+        "place": 1,
+        "points": 20
+      },
+      "loser": {
+        "place": 2,
+        "points": 16
+      }
+    },
+    "CONS_P3_0": {
+      "winner": {
+        "place": 3,
+        "points": 12
+      },
+      "loser": {
+        "place": 4,
+        "points": 10
+      }
+    },
+    "CONS_5TH": {
+      "winner": {
+        "place": 5,
+        "points": 8
+      },
+      "loser": {
+        "place": 6,
+        "points": 6
+      }
+    },
+    "CONS_7TH": {
+      "winner": {
+        "place": 7,
+        "points": 4
+      },
+      "loser": {
+        "place": 8,
+        "points": 2
+      }
+    }
+  },
+  "bonus_points": {
+    "fall": 2,
+    "tech_fall": 1.5,
+    "major_decision": 1
+  },
+  "entrant_slots": [
+    "ENTRANT_1",
+    "ENTRANT_2",
+    "ENTRANT_3",
+    "ENTRANT_4",
+    "ENTRANT_5",
+    "ENTRANT_6",
+    "ENTRANT_7",
+    "ENTRANT_8",
+    "ENTRANT_9",
+    "ENTRANT_10",
+    "ENTRANT_11",
+    "ENTRANT_12",
+    "ENTRANT_13",
+    "ENTRANT_14",
+    "ENTRANT_15",
+    "ENTRANT_16",
+    "ENTRANT_17",
+    "ENTRANT_18",
+    "ENTRANT_19",
+    "ENTRANT_20",
+    "ENTRANT_21",
+    "ENTRANT_22",
+    "ENTRANT_23",
+    "ENTRANT_24",
+    "ENTRANT_25",
+    "ENTRANT_26",
+    "ENTRANT_27",
+    "ENTRANT_28",
+    "ENTRANT_29",
+    "ENTRANT_30",
+    "ENTRANT_31",
+    "ENTRANT_32"
+  ],
+  "provenance": {
+    "generated_by": "template_builder.py --entrants 32 --places 8 --consolation-style single_backside --gender boys",
+    "hand_edited": false,
+    "scoring_source": "data/team_scoring_eras/hs_ky_boys.json \u2014 edit values directly in this file to change scoring for this season/era"
+  }
+}

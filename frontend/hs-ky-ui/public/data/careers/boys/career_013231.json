@@ -3,8 +3,8 @@
   "canonical_name": "Cameron Nevels",
   "career_record": {
     "wins": 181,
-    "losses": 28,
-    "win_pct": 0.866
+    "losses": 30,
+    "win_pct": 0.858
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 132,
       "record": "51-7",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": 6,
       "current_rank": null,
       "matches": [
@@ -1090,6 +1091,7 @@
       "weight_class": 132,
       "record": "54-10",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -2255,6 +2257,7 @@
       "weight_class": 120,
       "record": "39-4",
       "regional_place": 3,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -3132,6 +3135,7 @@
       "weight_class": 113,
       "record": "37-7",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -3979,6 +3983,56 @@
           "duration": "0:25",
           "event": "vs. St. Xavier",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000069",
+      "grade": 8,
+      "team": "Wayne County",
+      "weight_class": 120,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000070",
+          "opponent_career_id": "career_015103",
+          "opponent_name": "Wade Beeler",
+          "opponent_team": "Meade County",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "L",
+          "method": "MD",
+          "score": "18-8",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000071",
+          "opponent_career_id": "career_016671",
+          "opponent_name": "Jalen Longstreet",
+          "opponent_team": "Bryan Station",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "L",
+          "method": "DEC",
+          "score": "9-7",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

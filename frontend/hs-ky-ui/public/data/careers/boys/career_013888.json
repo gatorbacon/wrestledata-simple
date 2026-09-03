@@ -2,9 +2,9 @@
   "career_id": "career_013888",
   "canonical_name": "Lucas McCain",
   "career_record": {
-    "wins": 101,
-    "losses": 27,
-    "win_pct": 0.789
+    "wins": 102,
+    "losses": 29,
+    "win_pct": 0.779
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 138,
       "record": "45-11",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1072,6 +1073,7 @@
       "weight_class": 126,
       "record": "33-6",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1949,6 +1951,7 @@
       "weight_class": 113,
       "record": "23-10",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 8,
       "current_rank": null,
       "matches": [
@@ -2796,6 +2799,74 @@
           "duration": "0:00",
           "event": "vs. Boyle County",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000021",
+      "grade": 9,
+      "team": "Boyle County",
+      "weight_class": 106,
+      "record": "1-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000022",
+          "opponent_career_id": "career_015002",
+          "opponent_name": "Caleb Austin",
+          "opponent_team": "Christian County",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "L",
+          "method": "DEC",
+          "score": "10-3",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000023",
+          "opponent_career_id": "career_014056",
+          "opponent_name": "Brad Collwell",
+          "opponent_team": "Perry County Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "W",
+          "method": "DEC",
+          "score": "14-8",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000010",
+          "opponent_career_id": "career_013202",
+          "opponent_name": "Jerimiah Kline",
+          "opponent_team": "Trigg County",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "L",
+          "method": "DEC",
+          "score": "7-4",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

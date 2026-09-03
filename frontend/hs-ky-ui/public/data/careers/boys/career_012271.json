@@ -2,9 +2,9 @@
   "career_id": "career_012271",
   "canonical_name": "Justin Torgerson",
   "career_record": {
-    "wins": 117,
-    "losses": 39,
-    "win_pct": 0.75
+    "wins": 118,
+    "losses": 41,
+    "win_pct": 0.742
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 138,
       "record": "11-4",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 6,
       "current_rank": null,
       "matches": [
@@ -280,6 +281,7 @@
       "weight_class": 132,
       "record": "30-3",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 3,
       "current_rank": null,
       "matches": [
@@ -959,6 +961,7 @@
       "weight_class": 144,
       "record": "31-9",
       "regional_place": 3,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1728,6 +1731,7 @@
       "weight_class": 126,
       "record": "26-10",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -2407,6 +2411,7 @@
       "weight_class": 120,
       "record": "19-13",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -3110,6 +3115,74 @@
           "duration": "7:00",
           "event": "vs. Walton Verona",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000034",
+      "grade": 7,
+      "team": "Lafayette",
+      "weight_class": 113,
+      "record": "1-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000033",
+          "opponent_career_id": "career_015511",
+          "opponent_name": "Jason Hall",
+          "opponent_team": "Moore",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "L",
+          "method": "FALL",
+          "score": "4:28",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000035",
+          "opponent_career_id": "career_014820",
+          "opponent_name": "Brent Taylor",
+          "opponent_team": "Boone County",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "W",
+          "method": "FALL",
+          "score": "2:38",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000061",
+          "opponent_career_id": "career_014126",
+          "opponent_name": "Steven Matheny",
+          "opponent_team": "Trinity (Louisville)",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "L",
+          "method": "DEC",
+          "score": "4-3",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

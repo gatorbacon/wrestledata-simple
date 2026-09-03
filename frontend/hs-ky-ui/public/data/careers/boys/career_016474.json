@@ -3,8 +3,8 @@
   "canonical_name": "Tyler Krebs",
   "career_record": {
     "wins": 11,
-    "losses": 10,
-    "win_pct": 0.524
+    "losses": 12,
+    "win_pct": 0.478
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 150,
       "record": "11-10",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -592,6 +593,56 @@
           "duration": "1:49",
           "event": "vs. North Oldham",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000250",
+      "grade": 10,
+      "team": "North Oldham",
+      "weight_class": 152,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000249",
+          "opponent_career_id": "career_016189",
+          "opponent_name": "Stephen Myers",
+          "opponent_team": "Campbell County",
+          "opponent_team_rank": null,
+          "opponent_weight": 152,
+          "opponent_rank": null,
+          "weight_class": "152",
+          "result": "L",
+          "method": "FALL",
+          "score": "0:10",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000252",
+          "opponent_career_id": "career_016749",
+          "opponent_name": "Ricky Caicedo",
+          "opponent_team": "Trinity (Louisville)",
+          "opponent_team_rank": null,
+          "opponent_weight": 152,
+          "opponent_rank": null,
+          "weight_class": "152",
+          "result": "L",
+          "method": "FALL",
+          "score": "1:50",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

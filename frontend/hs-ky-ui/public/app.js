@@ -367,7 +367,8 @@ function safe(value, formatter) {
 
       seasons.forEach((s, idx) => {
         const gradeStr = _gradeLabel(s.grade);
-        const regStr = s.regional_place != null ? ordinal(s.regional_place) : "—";
+        const regionalTracked = s.regional_data_tracked !== false;
+        const regStr = !regionalTracked ? "N/A" : (s.regional_place != null ? ordinal(s.regional_place) : "—");
         const stateStr = s.state_place != null ? ordinal(s.state_place) : "—";
 
         // Desktop table row
@@ -437,7 +438,7 @@ function safe(value, formatter) {
           return cell;
         };
 
-        const mkMedalOrDash = (place) => {
+        const mkMedalOrDash = (place, tracked = true) => {
           if (place != null && place >= 1 && place <= 8) {
             const img = document.createElement("img");
             img.src = `/img/medals/${place}.png`;
@@ -448,7 +449,7 @@ function safe(value, formatter) {
           }
           const dash = document.createElement("span");
           dash.className = "career-summary-place-dash";
-          dash.textContent = place != null ? ordinal(place) : "—";
+          dash.textContent = !tracked ? "N/A" : (place != null ? ordinal(place) : "—");
           return dash;
         };
 
@@ -458,7 +459,7 @@ function safe(value, formatter) {
         recVal.textContent = s.record || "—";
         cardRight.appendChild(mkLabeledCell("Record", recVal));
 
-        cardRight.appendChild(mkLabeledCell("Reg", mkMedalOrDash(s.regional_place)));
+        cardRight.appendChild(mkLabeledCell("Reg", mkMedalOrDash(s.regional_place, s.regional_data_tracked !== false)));
         cardRight.appendChild(mkLabeledCell("State", mkMedalOrDash(s.state_place)));
         card.appendChild(cardRight);
 

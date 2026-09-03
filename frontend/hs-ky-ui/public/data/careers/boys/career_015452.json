@@ -3,8 +3,8 @@
   "canonical_name": "Henry Crowdus",
   "career_record": {
     "wins": 47,
-    "losses": 20,
-    "win_pct": 0.701
+    "losses": 22,
+    "win_pct": 0.681
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 120,
       "record": "32-6",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -820,6 +821,7 @@
       "weight_class": 113,
       "record": "15-14",
       "regional_place": 4,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1343,6 +1345,56 @@
           "duration": "1:08",
           "event": "vs. John Hardin",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000007",
+      "grade": 10,
+      "team": "John Hardin",
+      "weight_class": 106,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000008",
+          "opponent_career_id": "career_015695",
+          "opponent_name": "Robb Dezember",
+          "opponent_team": "Union County",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "L",
+          "method": "FALL",
+          "score": "2:19",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000005",
+          "opponent_career_id": "career_016656",
+          "opponent_name": "Chris McKenna",
+          "opponent_team": "South Oldham",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "L",
+          "method": "DEC",
+          "score": "10-8",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

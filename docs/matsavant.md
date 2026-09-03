@@ -375,6 +375,130 @@ The engine runs both pre-tournament (full bracket simulation) and live (locking 
 
 ---
 
+## NCAA Team Championship Odds (Preseason/In-Season Team Projections)
+
+**Pages:** `index.html` (homepage preview, top 10 + expandable rows), `team_odds.html` (full table, all teams, date picker)
+**Data:** `frontend/wrestledata-ui/public/data/team_odds/{season}/{date}.json` + `index.json`
+
+### Why this exists
+
+FloWrestling's own team projection allocates points by rank. That's accurate late in the season but not in September, for two structural reasons: (1) injuries — a #1 seed has to survive a full season before scoring anything (example: Caleb Henson, #1 preseason 2025-26, vanished from the rankings by October, scored 0), and (2) freshmen — most start the season unranked even when they're about to be good (PJ Duke, Jax Forrest). This system quantifies exactly how much error that produces and corrects for it with three layers, applied in order: an empirical rank-to-score distribution that sharpens every month, a program-strength offset, and a per-wrestler track-record modifier for the top of each weight class.
+
+### Pipeline (run in order for a new rankings drop)
+
+1. `scripts/scraping/scrape_flo_preseason_rankings.py` — scrapes FloWrestling's rankings for a season/date, writes `data/{season}/flo-preseason-rankings/{date}.json`
+2. `scripts/analysis/build_rank_score_distributions.py` — builds `rank_score_distributions.json` (rerun only when a new tournament year's results are added, not every ranking drop)
+3. `scripts/analysis/compute_team_seed_offsets.py` — builds `team_seed_offsets.json` (rerun only when a new tournament year's results are added)
+4. `scripts/analysis/compute_individual_modifiers.py` — builds `{rankings_file}_individual_modifiers.json` for this specific rankings drop (rerun every time — ranks change monthly)
+5. `scripts/analysis/simulate_team_scores.py --team-offsets ... --individual-modifiers ...` — runs the Monte Carlo simulation
+6. `scripts/analysis/publish_team_odds_to_site.py` — copies the latest simulation output into the frontend's public data dir
+
+### 1. Rank-based score distributions
+
+**Script:** `scripts/analysis/build_rank_score_distributions.py`
+**Output:** `data/ncaa-tourney-parsed/rank_score_distributions.json`
+
+For each FloWrestling rank (1–33) and each touch-point month (Sep–Feb), pools that rank's own historical NCAA `total_points` across 2023–2026, then blends in the immediate neighbor ranks (rank ± 1), recentered to the target rank's own mean:
+
+```
+adjusted_neighbor_points = neighbor_points - mean(neighbor_points) + own_mean
+```
+
+This borrows a neighbor's spread (more data → a more stable variance estimate) without importing their different central tendency. All points clipped to [0, 30] — the real NCAA scoring ceiling (4.0 max advancement + 10.0 max bonus + 16.0 max placement).
+
+September only has ~1 year of real touch-point data (n_own=10 vs 40+ every other month) — too thin to trust independently, so it's aliased directly to October's distribution rather than pooled on its own.
+
+### 2. Program-strength offsets
+
+**Script:** `scripts/analysis/compute_team_seed_offsets.py`
+**Output:** `data/ncaa-tourney-parsed/team_seed_offsets.json`
+
+Computes each program's historical seed-relative over/underperformance: on average, how many more or fewer points did this program's wrestlers score than the league-wide average wrestler holding the *same seed*, 2023–2026?
+
+```
+diff = wrestler_points - league_avg_at_that_seed
+raw_offset = mean(diff) across the program's wrestler-seasons
+```
+
+Raw averages are shrunk toward 0 via empirical-Bayes weighting, since a single wrestler's tournament result is noisy (σ² ≈ 14) relative to how large real program-level effects actually are (τ² ≈ 0.51, estimated from the well-sampled programs):
+
+```
+shrinkage_weight = τ² / (τ² + σ²/n)
+offset = shrinkage_weight × raw_offset
+```
+
+Even a program with n=39 (the most any program has) only earns ~59% credit for its raw average; a program with n=5 earns as little as 15%. This replaced an earlier hard n≥5 trusted/untrusted cutoff that gave every program above that line full credit regardless of how thin its sample actually was.
+
+**Deliberately not recency-weighted.** A split-half test (2023-24 vs. 2025-26 offset per program) found the two halves barely correlate (r≈0.10) even for programs with fully stable coaching across the whole window — program performance swings substantially year to year in a way that doesn't look like smooth, recency-driven drift. Weighting recent seasons more would discard real data without reducing bias, so the full flat 4-year window is used instead.
+
+### 3. Individual wrestler track-record modifiers
+
+**Script:** `scripts/analysis/compute_individual_modifiers.py`
+**Output:** `{rankings_file}_individual_modifiers.json` (one per rankings drop)
+
+Applies to the top 3 ranked wrestlers at each weight only — the only tier this has been validated for. Two wrestlers can share the same current rank but have very different track records (one won it all last year, one took 3rd); this adds real, proven history on top of the generic rank-based projection.
+
+```
+resid = wrestler_points - league_avg_at_current_seed        (predicted quantity)
+predictor_1yr = prior year's absolute points
+predictor_2yr = average of the last 2 years' absolute points (when both exist)
+```
+
+Two linear fits (`resid ~ predictor`), one per current-seed tier (1, 2, 3), estimated separately for the 1-year and 2-year predictors from every historical wrestler-to-wrestler year transition (2013–2026):
+
+```
+beta = cov(predictor, resid) / var(predictor)
+modifier = beta × (this_wrestler's_predictor - mean_predictor_in_that_tier)
+```
+
+**Upside-only, by design.** Both `mod_1yr` and `mod_2yr` are floored at 0 before combining:
+
+```
+final_modifier = max(mod_1yr, mod_2yr, 0)
+```
+
+History is never allowed to *subtract* from the current rank's baseline. A weak prior result is much harder to interpret than a strong one — injury, a graduating senior blocking the lineup, a tough bracket, a weight-class move — and a backtest showed a naive symmetric (both-directions) version actively hurt team-level prediction accuracy for some teams versus the upside-only version, which never underperforms the no-modifier baseline. A simple 2-year *average* can also dilute a strong recent year with a weaker older one; taking the max of two independently-floored modifiers instead means more history can only ever help, never hurt.
+
+**Sequential cap within each weight class.** Rank 1 is never capped (nothing ranks above it). Rank 2's final adjusted value (base + modifier) can never exceed rank 1's; rank 3's can never exceed rank 2's. This approximates isotonic regression — it stops the modifier from ever implying a lower-ranked wrestler is secretly better than the wrestler ranked above them:
+
+```
+ceiling = None
+for wrestler in [rank1, rank2, rank3]:   # in rank order
+    adjusted = base + modifier
+    if ceiling is not None:
+        adjusted = min(adjusted, ceiling)
+    ceiling = adjusted
+```
+
+**Validated via backtest** (out-of-sample fit excluding the transition being tested, applied to the 2025-26 season's actual top-10 finishers): team-level mean absolute error dropped from 23.6 (no modifier) → 22.4 (symmetric, both directions) → 22.1 (upside-only). Upside-only matched or beat the no-modifier baseline for 9 of 10 teams; the symmetric version made 2 teams' predictions worse. At the individual level, prior *absolute* points within the same current-seed tier correlates with next season's residual at r≈0.37–0.48 (seeds 1–3 pooled) — much stronger than prior *seed-relative* residual alone (r≈0.10), meaning raw dominance (bonus points, falls, how far they placed) carries real information beyond what the seed number alone captures.
+
+**Explicitly not built:** a team-level version of this same idea (does a *team's* prior-year total predict this year's error?) tested at r≈0.56, but nearly all of that signal came from two programs (Penn State, Oklahoma State) across only 3 usable historical transitions — selecting "top teams" and then finding they beat expectations is close to circular, since they're at the top partly *because* they beat expectations. Shelved as unproven rather than built into the pipeline.
+
+### 4. Monte Carlo team simulation
+
+**Script:** `scripts/analysis/simulate_team_scores.py`
+**Output:** `data/ncaa-tourney-parsed/team_score_simulation{_adjusted}_{date}.json`
+
+For each team's 10-man lineup (best-ranked wrestler per weight, or a fallback pool of ranks 25–33 if unranked), runs 10,000 trials: each trial draws one random sample per weight slot from that wrestler's (rank-distribution + team-offset + individual-modifier) points list, sums to a team total, then ranks all teams that trial to record placement.
+
+```
+for each trial:
+    team_total = Σ random_choice(wrestler_points_list) for each of 10 weight slots
+    rank all teams this trial, tally each team's placement
+```
+
+Output per team: `min`, `max`, `p5`, `p95`, `expected` (mean), `p_1st`/`p_top3`/`p_top5`/`p_top10`, exact `p_place` odds for 1st–10th, and full `lineup_detail` (each wrestler's rank, individual modifier if any, expected/p5/p95).
+
+**Known simplification:** unranked roster slots all draw from the same generic ranks-25–33 fallback pool regardless of program. A Penn State backup replacing an injured starter likely outscores this generic stand-in — not yet modeled (open item, see Known Gotchas).
+
+### 5. Publishing
+
+**Script:** `scripts/analysis/publish_team_odds_to_site.py`
+
+Copies every `team_score_simulation_adjusted_*.json` found in `data/ncaa-tourney-parsed/` into `frontend/wrestledata-ui/public/data/team_odds/{season}/{date}.json`, and writes an `index.json` listing all available dates (newest first). The static site can't glob a directory, so the frontend fetches this index first to know what dates exist, then fetches each date's file on demand.
+
+---
+
 ## NCAA Tournament Tracker
 
 **Page:** `ncaa_live.html`
@@ -483,6 +607,12 @@ The replay is also used to build the seed analysis report (`generate_report.py`)
 | `scripts/build_simple_leaderboards.py` | Builds stat leaderboard JSON (wins, pins, techs, majors) |
 | `scripts/wrestlestat_ingest.py` | Supplemental ingestion from WrestleStat (fills gaps in TrackWrestling data) |
 | `scripts/ncaa/lazarus_award.py` | Identifies and tracks Lazarus Award candidates |
+| `scripts/scraping/scrape_flo_preseason_rankings.py` | Scrapes FloWrestling preseason/in-season rank snapshots |
+| `scripts/analysis/build_rank_score_distributions.py` | Builds rank→score empirical distributions for team projections |
+| `scripts/analysis/compute_team_seed_offsets.py` | Builds program-strength offsets (shrunk seed-relative over/underperformance) |
+| `scripts/analysis/compute_individual_modifiers.py` | Builds upside-only track-record modifiers for top-3-ranked wrestlers |
+| `scripts/analysis/simulate_team_scores.py` | Monte Carlo team championship odds simulation |
+| `scripts/analysis/publish_team_odds_to_site.py` | Publishes team odds simulation output to the frontend data dir |
 
 ---
 
@@ -518,6 +648,12 @@ The replay is also used to build the seed analysis report (`generate_report.py`)
 7. **Team penalties**: Some teams receive USC (unsportsmanlike conduct) point deductions. These are tracked in `team_penalties` in the replay JSON and shown in the Big Moments feed.
 
 8. **xTP engine constants are tunable**: `WIN_PROB_ALPHA`, `WIN_PROB_BETA`, bonus multipliers, and `BONUS_CAP` are all defined at the top of their respective scripts and can be adjusted between seasons.
+
+9. **Individual track-record modifiers only cover ranks 1-3**: this is the only tier the backtest has validated (r≈0.37-0.48). Applying the same regression to lower ranks (or generalizing to a team-level version) has *not* been validated — a team-level attempt tested well in aggregate (r≈0.56) but nearly all of it traced back to just two programs (Penn State, Oklahoma State) over 3 usable years, and was shelved rather than shipped. See "NCAA Team Championship Odds" section above.
+
+10. **`compute_individual_modifiers.py` output is per-rankings-file, not persistent**: unlike `team_seed_offsets.json` (rebuilt only when new tournament results land), the individual modifiers file must be regenerated every time a new FloWrestling rankings snapshot is scraped, since it depends on that snapshot's current ranks. It's written alongside the rankings file it was computed from (`{rankings_file}_individual_modifiers.json`), not to a fixed path.
+
+11. **Unranked-wrestler fallback is still generic (open item)**: team simulation slots with no ranked wrestler all draw from the same pooled ranks-25-33 distribution regardless of program. Stratifying this by program strength (a blue-blood program's unranked backup likely outscores a mid-major's) is a known gap, not yet built.
 
 ---
 

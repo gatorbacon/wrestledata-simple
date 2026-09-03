@@ -2,9 +2,9 @@
   "career_id": "career_015459",
   "canonical_name": "chris neice",
   "career_record": {
-    "wins": 88,
-    "losses": 21,
-    "win_pct": 0.807
+    "wins": 90,
+    "losses": 23,
+    "win_pct": 0.796
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 215,
       "record": "39-11",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1036,6 +1037,7 @@
       "weight_class": 215,
       "record": "49-10",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -2064,6 +2066,92 @@
           "event": "Hayworth tire Indian classic",
           "season": 2013,
           "opponent_ky": false
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000419",
+      "grade": 10,
+      "team": "Johnson Central",
+      "weight_class": 220,
+      "record": "2-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000418",
+          "opponent_career_id": "career_016836",
+          "opponent_name": "Chris Fitzpatrick",
+          "opponent_team": "Anderson County",
+          "opponent_team_rank": null,
+          "opponent_weight": 220,
+          "opponent_rank": null,
+          "weight_class": "220",
+          "result": "L",
+          "method": "MD",
+          "score": "10-1",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000417",
+          "opponent_career_id": "career_015649",
+          "opponent_name": "Derek Clemens",
+          "opponent_team": "Spencer County",
+          "opponent_team_rank": null,
+          "opponent_weight": 220,
+          "opponent_rank": null,
+          "weight_class": "220",
+          "result": "W",
+          "method": "FALL",
+          "score": "2:49",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000444",
+          "opponent_career_id": "career_015956",
+          "opponent_name": "Zack Cooper",
+          "opponent_team": "Henry Clay",
+          "opponent_team_rank": null,
+          "opponent_weight": 220,
+          "opponent_rank": null,
+          "weight_class": "220",
+          "result": "W",
+          "method": "FALL",
+          "score": "1:55",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000440",
+          "opponent_career_id": "career_016848",
+          "opponent_name": "Reshawd Wilkins",
+          "opponent_team": "Union County",
+          "opponent_team_rank": null,
+          "opponent_weight": 220,
+          "opponent_rank": null,
+          "weight_class": "220",
+          "result": "L",
+          "method": "FALL",
+          "score": "4:46",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
         }
       ]
     }

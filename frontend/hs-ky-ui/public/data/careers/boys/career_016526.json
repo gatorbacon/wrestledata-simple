@@ -3,8 +3,8 @@
   "canonical_name": "Brad Weber",
   "career_record": {
     "wins": 26,
-    "losses": 16,
-    "win_pct": 0.619
+    "losses": 18,
+    "win_pct": 0.591
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 285,
       "record": "26-16",
       "regional_place": 4,
+      "regional_data_tracked": true,
       "state_place": 8,
       "current_rank": null,
       "matches": [
@@ -790,6 +791,56 @@
           "duration": "1:14",
           "event": "vs. Simon Kenton",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000462",
+      "grade": 11,
+      "team": "Ryle",
+      "weight_class": 285,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000463",
+          "opponent_career_id": "career_016862",
+          "opponent_name": "Trevor Ford",
+          "opponent_team": "Desales",
+          "opponent_team_rank": null,
+          "opponent_weight": 285,
+          "opponent_rank": null,
+          "weight_class": "285",
+          "result": "L",
+          "method": "FALL",
+          "score": "2:14",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000461",
+          "opponent_career_id": "career_016861",
+          "opponent_name": "Dustin Fugate",
+          "opponent_team": "Madison Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 285,
+          "opponent_rank": null,
+          "weight_class": "285",
+          "result": "L",
+          "method": "FALL",
+          "score": "2:53",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

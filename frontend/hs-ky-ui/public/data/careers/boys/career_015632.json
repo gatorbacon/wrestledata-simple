@@ -2,9 +2,9 @@
   "career_id": "career_015632",
   "canonical_name": "tucker mueller",
   "career_record": {
-    "wins": 71,
-    "losses": 20,
-    "win_pct": 0.78
+    "wins": 72,
+    "losses": 22,
+    "win_pct": 0.766
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 215,
       "record": "41-9",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1108,6 +1109,7 @@
       "weight_class": 215,
       "record": "30-11",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": 7,
       "current_rank": null,
       "matches": [
@@ -1974,6 +1976,74 @@
           "event": "vs. Lakota East",
           "season": 2013,
           "opponent_ky": false
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000424",
+      "grade": 8,
+      "team": "Simon Kenton",
+      "weight_class": 220,
+      "record": "1-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000425",
+          "opponent_career_id": "career_016838",
+          "opponent_name": "CJ Weires",
+          "opponent_team": "Oldham County",
+          "opponent_team_rank": null,
+          "opponent_weight": 220,
+          "opponent_rank": null,
+          "weight_class": "220",
+          "result": "W",
+          "method": "DEC",
+          "score": "8-7",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000426",
+          "opponent_career_id": "career_016839",
+          "opponent_name": "Ryan Lynn",
+          "opponent_team": "Daviess County",
+          "opponent_team_rank": null,
+          "opponent_weight": 220,
+          "opponent_rank": null,
+          "weight_class": "220",
+          "result": "L",
+          "method": "FALL",
+          "score": "2:35",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000437",
+          "opponent_career_id": "career_016325",
+          "opponent_name": "Jose Rebolledo",
+          "opponent_team": "Franklin County",
+          "opponent_team_rank": null,
+          "opponent_weight": 220,
+          "opponent_rank": null,
+          "weight_class": "220",
+          "result": "L",
+          "method": "DEC",
+          "score": "6-2",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
         }
       ]
     }

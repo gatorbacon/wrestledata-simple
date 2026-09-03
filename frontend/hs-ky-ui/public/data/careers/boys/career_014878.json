@@ -2,9 +2,9 @@
   "career_id": "career_014878",
   "canonical_name": "Devin Morrow",
   "career_record": {
-    "wins": 84,
-    "losses": 5,
-    "win_pct": 0.944
+    "wins": 85,
+    "losses": 7,
+    "win_pct": 0.924
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 190,
       "record": "42-1",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 2,
       "current_rank": null,
       "matches": [
@@ -892,6 +893,7 @@
       "weight_class": 175,
       "record": "42-4",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 5,
       "current_rank": null,
       "matches": [
@@ -1811,6 +1813,74 @@
           "duration": "7:00",
           "event": "vs. St. Xavier",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000204",
+      "grade": 10,
+      "team": "Wayne County",
+      "weight_class": 145,
+      "record": "1-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000203",
+          "opponent_career_id": "career_014010",
+          "opponent_name": "Jonathan Green",
+          "opponent_team": "Lafayette",
+          "opponent_team_rank": null,
+          "opponent_weight": 145,
+          "opponent_rank": null,
+          "weight_class": "145",
+          "result": "L",
+          "method": "FALL",
+          "score": "3:47",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000202",
+          "opponent_career_id": "career_016720",
+          "opponent_name": "Alex Mack-Crittendon",
+          "opponent_team": "Fern Creek",
+          "opponent_team_rank": null,
+          "opponent_weight": 145,
+          "opponent_rank": null,
+          "weight_class": "145",
+          "result": "W",
+          "method": "MD",
+          "score": "15-4",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000213",
+          "opponent_career_id": "career_015266",
+          "opponent_name": "Kegan Agnew",
+          "opponent_team": "Caldwell County",
+          "opponent_team_rank": null,
+          "opponent_weight": 145,
+          "opponent_rank": null,
+          "weight_class": "145",
+          "result": "L",
+          "method": "FALL",
+          "score": "0:52",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

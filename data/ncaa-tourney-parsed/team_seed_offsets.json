@@ -1,0 +1,570 @@
+{
+  "years_included": [
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "sigma2_per_wrestler_noise": 14.041,
+  "tau2_between_team_variance": 0.512,
+  "tau2_estimated_from_teams_with_n_at_least": 20,
+  "team_aliases": {
+    "App State": "Appalachian State",
+    "Army": "Army West Point",
+    "N. Colorado": "Northern Colorado",
+    "ND State": "North Dakota State",
+    "OK State": "Oklahoma State",
+    "SD State": "South Dakota State",
+    "SIUE": "SIU Edwardsville",
+    "UNI": "Northern Iowa",
+    "West Virgnia": "West Virginia"
+  },
+  "offsets": {
+    "Iowa": {
+      "n": 37,
+      "raw_offset": 1.19,
+      "shrinkage_weight": 0.57,
+      "offset": 0.68,
+      "trusted": true
+    },
+    "Princeton": {
+      "n": 17,
+      "raw_offset": 0.83,
+      "shrinkage_weight": 0.38,
+      "offset": 0.32,
+      "trusted": true
+    },
+    "Nebraska": {
+      "n": 35,
+      "raw_offset": 1.48,
+      "shrinkage_weight": 0.56,
+      "offset": 0.83,
+      "trusted": true
+    },
+    "Purdue": {
+      "n": 18,
+      "raw_offset": -0.23,
+      "shrinkage_weight": 0.4,
+      "offset": -0.09,
+      "trusted": true
+    },
+    "Appalachian State": {
+      "n": 16,
+      "raw_offset": -0.87,
+      "shrinkage_weight": 0.37,
+      "offset": -0.32,
+      "trusted": true
+    },
+    "Northern Colorado": {
+      "n": 12,
+      "raw_offset": -1.58,
+      "shrinkage_weight": 0.3,
+      "offset": -0.48,
+      "trusted": true
+    },
+    "Oregon State": {
+      "n": 24,
+      "raw_offset": -1.15,
+      "shrinkage_weight": 0.47,
+      "offset": -0.54,
+      "trusted": true
+    },
+    "Lock Haven": {
+      "n": 17,
+      "raw_offset": 0.38,
+      "shrinkage_weight": 0.38,
+      "offset": 0.15,
+      "trusted": true
+    },
+    "Wisconsin": {
+      "n": 24,
+      "raw_offset": 0.14,
+      "shrinkage_weight": 0.47,
+      "offset": 0.07,
+      "trusted": true
+    },
+    "Arizona State": {
+      "n": 23,
+      "raw_offset": 1.31,
+      "shrinkage_weight": 0.46,
+      "offset": 0.6,
+      "trusted": true
+    },
+    "Minnesota": {
+      "n": 34,
+      "raw_offset": -0.36,
+      "shrinkage_weight": 0.55,
+      "offset": -0.2,
+      "trusted": true
+    },
+    "Northwestern": {
+      "n": 18,
+      "raw_offset": -0.03,
+      "shrinkage_weight": 0.4,
+      "offset": -0.01,
+      "trusted": true
+    },
+    "Rutgers": {
+      "n": 31,
+      "raw_offset": -0.84,
+      "shrinkage_weight": 0.53,
+      "offset": -0.45,
+      "trusted": true
+    },
+    "Missouri": {
+      "n": 32,
+      "raw_offset": 0.38,
+      "shrinkage_weight": 0.54,
+      "offset": 0.21,
+      "trusted": true
+    },
+    "Cornell": {
+      "n": 31,
+      "raw_offset": -0.53,
+      "shrinkage_weight": 0.53,
+      "offset": -0.28,
+      "trusted": true
+    },
+    "Michigan": {
+      "n": 30,
+      "raw_offset": 1.59,
+      "shrinkage_weight": 0.52,
+      "offset": 0.83,
+      "trusted": true
+    },
+    "Army West Point": {
+      "n": 20,
+      "raw_offset": -0.73,
+      "shrinkage_weight": 0.42,
+      "offset": -0.31,
+      "trusted": true
+    },
+    "Pennsylvania": {
+      "n": 23,
+      "raw_offset": -0.42,
+      "shrinkage_weight": 0.46,
+      "offset": -0.19,
+      "trusted": true
+    },
+    "Maryland": {
+      "n": 20,
+      "raw_offset": -0.43,
+      "shrinkage_weight": 0.42,
+      "offset": -0.18,
+      "trusted": true
+    },
+    "NC State": {
+      "n": 34,
+      "raw_offset": -0.93,
+      "shrinkage_weight": 0.55,
+      "offset": -0.51,
+      "trusted": true
+    },
+    "Wyoming": {
+      "n": 17,
+      "raw_offset": 1.38,
+      "shrinkage_weight": 0.38,
+      "offset": 0.53,
+      "trusted": true
+    },
+    "Harvard": {
+      "n": 9,
+      "raw_offset": -1.52,
+      "shrinkage_weight": 0.25,
+      "offset": -0.37,
+      "trusted": true
+    },
+    "Kent State": {
+      "n": 3,
+      "raw_offset": -0.84,
+      "shrinkage_weight": 0.1,
+      "offset": -0.08,
+      "trusted": false
+    },
+    "Columbia": {
+      "n": 22,
+      "raw_offset": 0.49,
+      "shrinkage_weight": 0.44,
+      "offset": 0.22,
+      "trusted": true
+    },
+    "Oklahoma": {
+      "n": 25,
+      "raw_offset": -0.37,
+      "shrinkage_weight": 0.48,
+      "offset": -0.18,
+      "trusted": true
+    },
+    "North Carolina": {
+      "n": 24,
+      "raw_offset": -0.07,
+      "shrinkage_weight": 0.47,
+      "offset": -0.03,
+      "trusted": true
+    },
+    "Virginia Tech": {
+      "n": 39,
+      "raw_offset": -1.22,
+      "shrinkage_weight": 0.59,
+      "offset": -0.72,
+      "trusted": true
+    },
+    "West Virginia": {
+      "n": 22,
+      "raw_offset": 0.61,
+      "shrinkage_weight": 0.44,
+      "offset": 0.27,
+      "trusted": true
+    },
+    "Stanford": {
+      "n": 27,
+      "raw_offset": 1.87,
+      "shrinkage_weight": 0.5,
+      "offset": 0.93,
+      "trusted": true
+    },
+    "Cal Poly": {
+      "n": 18,
+      "raw_offset": -1.24,
+      "shrinkage_weight": 0.4,
+      "offset": -0.49,
+      "trusted": true
+    },
+    "Oklahoma State": {
+      "n": 39,
+      "raw_offset": 1.15,
+      "shrinkage_weight": 0.59,
+      "offset": 0.68,
+      "trusted": true
+    },
+    "South Dakota State": {
+      "n": 31,
+      "raw_offset": 0.22,
+      "shrinkage_weight": 0.53,
+      "offset": 0.12,
+      "trusted": true
+    },
+    "Air Force": {
+      "n": 10,
+      "raw_offset": 1.81,
+      "shrinkage_weight": 0.27,
+      "offset": 0.48,
+      "trusted": true
+    },
+    "Penn State": {
+      "n": 39,
+      "raw_offset": 2.49,
+      "shrinkage_weight": 0.59,
+      "offset": 1.46,
+      "trusted": true
+    },
+    "Pittsburgh": {
+      "n": 29,
+      "raw_offset": -0.72,
+      "shrinkage_weight": 0.51,
+      "offset": -0.37,
+      "trusted": true
+    },
+    "Illinois": {
+      "n": 24,
+      "raw_offset": -1.1,
+      "shrinkage_weight": 0.47,
+      "offset": -0.51,
+      "trusted": true
+    },
+    "Ohio State": {
+      "n": 38,
+      "raw_offset": 1.0,
+      "shrinkage_weight": 0.58,
+      "offset": 0.58,
+      "trusted": true
+    },
+    "Iowa State": {
+      "n": 35,
+      "raw_offset": -0.49,
+      "shrinkage_weight": 0.56,
+      "offset": -0.28,
+      "trusted": true
+    },
+    "Northern Iowa": {
+      "n": 29,
+      "raw_offset": -0.65,
+      "shrinkage_weight": 0.51,
+      "offset": -0.34,
+      "trusted": true
+    },
+    "Chattanooga": {
+      "n": 10,
+      "raw_offset": -0.76,
+      "shrinkage_weight": 0.27,
+      "offset": -0.2,
+      "trusted": true
+    },
+    "Campbell": {
+      "n": 14,
+      "raw_offset": -0.59,
+      "shrinkage_weight": 0.34,
+      "offset": -0.2,
+      "trusted": true
+    },
+    "Navy": {
+      "n": 18,
+      "raw_offset": -0.16,
+      "shrinkage_weight": 0.4,
+      "offset": -0.06,
+      "trusted": true
+    },
+    "CSU Bakersfield": {
+      "n": 4,
+      "raw_offset": -0.59,
+      "shrinkage_weight": 0.13,
+      "offset": -0.08,
+      "trusted": false
+    },
+    "Bucknell": {
+      "n": 18,
+      "raw_offset": -0.76,
+      "shrinkage_weight": 0.4,
+      "offset": -0.3,
+      "trusted": true
+    },
+    "American": {
+      "n": 5,
+      "raw_offset": 1.5,
+      "shrinkage_weight": 0.15,
+      "offset": 0.23,
+      "trusted": true
+    },
+    "North Dakota State": {
+      "n": 16,
+      "raw_offset": 0.52,
+      "shrinkage_weight": 0.37,
+      "offset": 0.19,
+      "trusted": true
+    },
+    "Lehigh": {
+      "n": 25,
+      "raw_offset": -1.05,
+      "shrinkage_weight": 0.48,
+      "offset": -0.5,
+      "trusted": true
+    },
+    "Rider": {
+      "n": 18,
+      "raw_offset": -0.36,
+      "shrinkage_weight": 0.4,
+      "offset": -0.14,
+      "trusted": true
+    },
+    "SIU Edwardsville": {
+      "n": 7,
+      "raw_offset": -1.39,
+      "shrinkage_weight": 0.2,
+      "offset": -0.28,
+      "trusted": true
+    },
+    "Clarion": {
+      "n": 4,
+      "raw_offset": 2.34,
+      "shrinkage_weight": 0.13,
+      "offset": 0.3,
+      "trusted": false
+    },
+    "Bloomsburg": {
+      "n": 3,
+      "raw_offset": -0.96,
+      "shrinkage_weight": 0.1,
+      "offset": -0.09,
+      "trusted": false
+    },
+    "Central Michigan": {
+      "n": 13,
+      "raw_offset": -0.87,
+      "shrinkage_weight": 0.32,
+      "offset": -0.28,
+      "trusted": true
+    },
+    "Indiana": {
+      "n": 22,
+      "raw_offset": 1.02,
+      "shrinkage_weight": 0.44,
+      "offset": 0.46,
+      "trusted": true
+    },
+    "Edinboro": {
+      "n": 7,
+      "raw_offset": -0.51,
+      "shrinkage_weight": 0.2,
+      "offset": -0.1,
+      "trusted": true
+    },
+    "George Mason": {
+      "n": 12,
+      "raw_offset": -0.06,
+      "shrinkage_weight": 0.3,
+      "offset": -0.02,
+      "trusted": true
+    },
+    "Virginia": {
+      "n": 15,
+      "raw_offset": -0.54,
+      "shrinkage_weight": 0.35,
+      "offset": -0.19,
+      "trusted": true
+    },
+    "Ohio": {
+      "n": 13,
+      "raw_offset": -1.18,
+      "shrinkage_weight": 0.32,
+      "offset": -0.38,
+      "trusted": true
+    },
+    "Utah Valley": {
+      "n": 10,
+      "raw_offset": -0.26,
+      "shrinkage_weight": 0.27,
+      "offset": -0.07,
+      "trusted": true
+    },
+    "Michigan State": {
+      "n": 14,
+      "raw_offset": -0.52,
+      "shrinkage_weight": 0.34,
+      "offset": -0.18,
+      "trusted": true
+    },
+    "Northern Illinois": {
+      "n": 6,
+      "raw_offset": -1.04,
+      "shrinkage_weight": 0.18,
+      "offset": -0.19,
+      "trusted": true
+    },
+    "Gardner-Webb": {
+      "n": 7,
+      "raw_offset": -0.88,
+      "shrinkage_weight": 0.2,
+      "offset": -0.18,
+      "trusted": true
+    },
+    "Binghamton": {
+      "n": 11,
+      "raw_offset": -1.33,
+      "shrinkage_weight": 0.29,
+      "offset": -0.38,
+      "trusted": true
+    },
+    "Drexel": {
+      "n": 9,
+      "raw_offset": -0.08,
+      "shrinkage_weight": 0.25,
+      "offset": -0.02,
+      "trusted": true
+    },
+    "Buffalo": {
+      "n": 4,
+      "raw_offset": -0.22,
+      "shrinkage_weight": 0.13,
+      "offset": -0.03,
+      "trusted": false
+    },
+    "Hofstra": {
+      "n": 5,
+      "raw_offset": 0.24,
+      "shrinkage_weight": 0.15,
+      "offset": 0.04,
+      "trusted": true
+    },
+    "Duke": {
+      "n": 3,
+      "raw_offset": -0.28,
+      "shrinkage_weight": 0.1,
+      "offset": -0.03,
+      "trusted": false
+    },
+    "California Baptist": {
+      "n": 3,
+      "raw_offset": 1.02,
+      "shrinkage_weight": 0.1,
+      "offset": 0.1,
+      "trusted": false
+    },
+    "Brown": {
+      "n": 5,
+      "raw_offset": -0.51,
+      "shrinkage_weight": 0.15,
+      "offset": -0.08,
+      "trusted": true
+    },
+    "Little Rock": {
+      "n": 14,
+      "raw_offset": -0.49,
+      "shrinkage_weight": 0.34,
+      "offset": -0.16,
+      "trusted": true
+    },
+    "VMI": {
+      "n": 2,
+      "raw_offset": -0.46,
+      "shrinkage_weight": 0.07,
+      "offset": -0.03,
+      "trusted": false
+    },
+    "The Citadel": {
+      "n": 6,
+      "raw_offset": -0.25,
+      "shrinkage_weight": 0.18,
+      "offset": -0.05,
+      "trusted": true
+    },
+    "Franklin and Marshall": {
+      "n": 3,
+      "raw_offset": -3.17,
+      "shrinkage_weight": 0.1,
+      "offset": -0.31,
+      "trusted": false
+    },
+    "LIU": {
+      "n": 1,
+      "raw_offset": 0.05,
+      "shrinkage_weight": 0.04,
+      "offset": 0.0,
+      "trusted": false
+    },
+    "Cleveland State": {
+      "n": 3,
+      "raw_offset": -1.3,
+      "shrinkage_weight": 0.1,
+      "offset": -0.13,
+      "trusted": false
+    },
+    "Bellarmine": {
+      "n": 4,
+      "raw_offset": -0.63,
+      "shrinkage_weight": 0.13,
+      "offset": -0.08,
+      "trusted": false
+    },
+    "Penn": {
+      "n": 6,
+      "raw_offset": -1.99,
+      "shrinkage_weight": 0.18,
+      "offset": -0.36,
+      "trusted": true
+    },
+    "Morgan State": {
+      "n": 2,
+      "raw_offset": -0.74,
+      "shrinkage_weight": 0.07,
+      "offset": -0.05,
+      "trusted": false
+    },
+    "Davidson": {
+      "n": 1,
+      "raw_offset": -0.65,
+      "shrinkage_weight": 0.04,
+      "offset": -0.02,
+      "trusted": false
+    }
+  }
+}

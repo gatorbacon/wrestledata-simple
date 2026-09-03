@@ -2,9 +2,9 @@
   "career_id": "career_012264",
   "canonical_name": "GEORDAN BLANTON",
   "career_record": {
-    "wins": 212,
-    "losses": 17,
-    "win_pct": 0.926
+    "wins": 214,
+    "losses": 19,
+    "win_pct": 0.918
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 157,
       "record": "34-1",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 1,
       "current_rank": null,
       "matches": [
@@ -748,6 +749,7 @@
       "weight_class": 150,
       "record": "40-1",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 3,
       "current_rank": null,
       "matches": [
@@ -1463,6 +1465,7 @@
       "weight_class": 144,
       "record": "48-3",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 1,
       "current_rank": null,
       "matches": [
@@ -2322,6 +2325,7 @@
       "weight_class": 138,
       "record": "47-6",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -3397,6 +3401,7 @@
       "weight_class": 126,
       "record": "43-6",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -4281,6 +4286,92 @@
           "event": "Hayworth tire Indian classic",
           "season": 2013,
           "opponent_ky": false
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000032",
+      "grade": 7,
+      "team": "Johnson Central",
+      "weight_class": 106,
+      "record": "2-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000031",
+          "opponent_career_id": "career_013071",
+          "opponent_name": "Nathan Lopez",
+          "opponent_team": "Harrison County",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "W",
+          "method": "FALL",
+          "score": "1:18",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000029",
+          "opponent_career_id": "career_014125",
+          "opponent_name": "Danten Rice",
+          "opponent_team": "Trinity (Louisville)",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "W",
+          "method": "FALL",
+          "score": "1:09",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000025",
+          "opponent_career_id": "career_013153",
+          "opponent_name": "Brady Emerson",
+          "opponent_team": "Oldham County",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "L",
+          "method": "DEC",
+          "score": "10-5",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000010",
+          "opponent_career_id": "career_013202",
+          "opponent_name": "Jerimiah Kline",
+          "opponent_team": "Trigg County",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "L",
+          "method": "DEC",
+          "score": "9-7",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
         }
       ]
     }

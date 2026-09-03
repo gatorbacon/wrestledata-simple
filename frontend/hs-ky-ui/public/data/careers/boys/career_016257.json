@@ -2,9 +2,9 @@
   "career_id": "career_016257",
   "canonical_name": "Ricky Standafer",
   "career_record": {
-    "wins": 27,
-    "losses": 5,
-    "win_pct": 0.844
+    "wins": 28,
+    "losses": 7,
+    "win_pct": 0.8
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 144,
       "record": "27-5",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -683,6 +684,74 @@
           "event": "vs. Holy Cross (Louisville)",
           "season": 2013,
           "opponent_ky": false
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000144",
+      "grade": 11,
+      "team": "Desales",
+      "weight_class": 132,
+      "record": "1-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000143",
+          "opponent_career_id": "career_015071",
+          "opponent_name": "Raymundo Perez",
+          "opponent_team": "LaRue County",
+          "opponent_team_rank": null,
+          "opponent_weight": 132,
+          "opponent_rank": null,
+          "weight_class": "132",
+          "result": "L",
+          "method": "DEC",
+          "score": "8-5",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000142",
+          "opponent_career_id": "career_015742",
+          "opponent_name": "Anthony Smith",
+          "opponent_team": "Bryan Station",
+          "opponent_team_rank": null,
+          "opponent_weight": 132,
+          "opponent_rank": null,
+          "weight_class": "132",
+          "result": "W",
+          "method": "DEC",
+          "score": "4-3",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000147",
+          "opponent_career_id": "career_016696",
+          "opponent_name": "Jordan Thomas",
+          "opponent_team": "Pleasure Ridge Park",
+          "opponent_team_rank": null,
+          "opponent_weight": 132,
+          "opponent_rank": null,
+          "weight_class": "132",
+          "result": "L",
+          "method": "FALL",
+          "score": "1:42",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
         }
       ]
     }

@@ -2,9 +2,9 @@
   "career_id": "career_014147",
   "canonical_name": "Rodney Rednour",
   "career_record": {
-    "wins": 52,
-    "losses": 12,
-    "win_pct": 0.812
+    "wins": 53,
+    "losses": 14,
+    "win_pct": 0.791
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 285,
       "record": "46-11",
       "regional_place": 3,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1054,6 +1055,7 @@
       "weight_class": 285,
       "record": "4-1",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1157,6 +1159,7 @@
       "weight_class": 215,
       "record": "2-0",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1194,6 +1197,74 @@
           "duration": "2:13",
           "event": "vs. St. Xavier",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000404",
+      "grade": 9,
+      "team": "Wayne County",
+      "weight_class": 195,
+      "record": "1-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000405",
+          "opponent_career_id": "career_016827",
+          "opponent_name": "Travis Kaelin",
+          "opponent_team": "Anderson County",
+          "opponent_team_rank": null,
+          "opponent_weight": 195,
+          "opponent_rank": null,
+          "weight_class": "195",
+          "result": "L",
+          "method": "DEC",
+          "score": "9-6",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000406",
+          "opponent_career_id": "career_016828",
+          "opponent_name": "Kody Key",
+          "opponent_team": "Campbell County",
+          "opponent_team_rank": null,
+          "opponent_weight": 195,
+          "opponent_rank": null,
+          "weight_class": "195",
+          "result": "W",
+          "method": "DEC",
+          "score": "5-3",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000394",
+          "opponent_career_id": "career_014875",
+          "opponent_name": "Aaron Stevens",
+          "opponent_team": "Trigg County",
+          "opponent_team_rank": null,
+          "opponent_weight": 195,
+          "opponent_rank": null,
+          "weight_class": "195",
+          "result": "L",
+          "method": "FALL",
+          "score": "1:51",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

@@ -2,9 +2,9 @@
   "career_id": "career_016386",
   "canonical_name": "Tanner Mouser",
   "career_record": {
-    "wins": 27,
-    "losses": 13,
-    "win_pct": 0.675
+    "wins": 28,
+    "losses": 15,
+    "win_pct": 0.651
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 126,
       "record": "27-13",
       "regional_place": 3,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -862,6 +863,74 @@
           "duration": "3:53",
           "event": "vs. Oldham County",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000050",
+      "grade": 11,
+      "team": "LaRue County",
+      "weight_class": 113,
+      "record": "1-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000049",
+          "opponent_career_id": "career_015174",
+          "opponent_name": "Trae Blackwell",
+          "opponent_team": "Union County",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "L",
+          "method": "TF",
+          "score": "16-1",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000051",
+          "opponent_career_id": "career_016272",
+          "opponent_name": "Daniel Segal",
+          "opponent_team": "Dupont Manual",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "W",
+          "method": "DEC",
+          "score": "3-2",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000046",
+          "opponent_career_id": "career_016663",
+          "opponent_name": "Chase Boone",
+          "opponent_team": "Ohio County",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "L",
+          "method": "MD",
+          "score": "16-2",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

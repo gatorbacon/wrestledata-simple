@@ -3,8 +3,8 @@
   "canonical_name": "Isiah Copley",
   "career_record": {
     "wins": 20,
-    "losses": 13,
-    "win_pct": 0.606
+    "losses": 15,
+    "win_pct": 0.571
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 126,
       "record": "20-13",
       "regional_place": 3,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -665,6 +666,56 @@
           "event": "vs. Riverside Hs",
           "season": 2013,
           "opponent_ky": false
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000126",
+      "grade": 11,
+      "team": "Ashland Blazer",
+      "weight_class": 126,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000125",
+          "opponent_career_id": "career_016689",
+          "opponent_name": "Cam Bryant",
+          "opponent_team": "Oldham County",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "FALL",
+          "score": "5:51",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000127",
+          "opponent_career_id": "career_015413",
+          "opponent_name": "David Tudri",
+          "opponent_team": "Henry Clay",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "FALL",
+          "score": "4:49",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
         }
       ]
     }

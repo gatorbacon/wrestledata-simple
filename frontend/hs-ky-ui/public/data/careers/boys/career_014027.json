@@ -2,9 +2,9 @@
   "career_id": "career_014027",
   "canonical_name": "Tim Poynter",
   "career_record": {
-    "wins": 52,
-    "losses": 46,
-    "win_pct": 0.531
+    "wins": 54,
+    "losses": 48,
+    "win_pct": 0.529
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 144,
       "record": "21-16",
       "regional_place": 3,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -658,6 +659,7 @@
       "weight_class": 138,
       "record": "18-18",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1355,6 +1357,7 @@
       "weight_class": 126,
       "record": "13-12",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1842,6 +1845,92 @@
           "duration": "3:05",
           "event": "2012 Ryle Raider Rumble",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000019",
+      "grade": 9,
+      "team": "Moore",
+      "weight_class": 106,
+      "record": "2-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000020",
+          "opponent_career_id": "career_016657",
+          "opponent_name": "Nicolas Douglas",
+          "opponent_team": "Southern",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "L",
+          "method": "DEC",
+          "score": "11-4",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000018",
+          "opponent_career_id": "career_015439",
+          "opponent_name": "Jeff Moreman",
+          "opponent_team": "Jeffersontown",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "W",
+          "method": "DEC",
+          "score": "4-2",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000014",
+          "opponent_career_id": "career_013240",
+          "opponent_name": "Tucker Hurst",
+          "opponent_team": "Woodford County",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "W",
+          "method": "DEC",
+          "score": "4-3",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000010",
+          "opponent_career_id": "career_013202",
+          "opponent_name": "Jerimiah Kline",
+          "opponent_team": "Trigg County",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "L",
+          "method": "FALL",
+          "score": "4:29",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

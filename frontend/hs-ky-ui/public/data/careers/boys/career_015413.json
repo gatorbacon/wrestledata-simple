@@ -2,9 +2,9 @@
   "career_id": "career_015413",
   "canonical_name": "David Tuduri",
   "career_record": {
-    "wins": 50,
-    "losses": 15,
-    "win_pct": 0.769
+    "wins": 53,
+    "losses": 17,
+    "win_pct": 0.757
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 138,
       "record": "20-5",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -622,6 +623,7 @@
       "weight_class": 132,
       "record": "30-10",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1506,6 +1508,110 @@
           "event": "vs. Walton Verona",
           "season": 2013,
           "opponent_ky": false
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000127",
+      "grade": 11,
+      "team": "Henry Clay",
+      "weight_class": 126,
+      "record": "3-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000128",
+          "opponent_career_id": "career_016440",
+          "opponent_name": "Jesus Rosado",
+          "opponent_team": "Moore",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "FALL",
+          "score": "3:11",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000126",
+          "opponent_career_id": "career_016134",
+          "opponent_name": "Isiah Copley",
+          "opponent_team": "Ashland Blazer",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "W",
+          "method": "FALL",
+          "score": "4:49",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000099",
+          "opponent_career_id": "career_016682",
+          "opponent_name": "Karlan Groves",
+          "opponent_team": "Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "W",
+          "method": "DEC",
+          "score": "3-2 OT",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000123",
+          "opponent_career_id": "career_014941",
+          "opponent_name": "Chris McDaniel",
+          "opponent_team": "Anderson County",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "W",
+          "method": "DEC",
+          "score": "4-2 OT",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000113",
+          "opponent_career_id": "career_016435",
+          "opponent_name": "Clyde Newcommer",
+          "opponent_team": "Montgomery County",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "FALL",
+          "score": "2:03",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
         }
       ]
     }

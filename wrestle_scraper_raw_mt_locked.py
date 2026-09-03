@@ -135,6 +135,13 @@ from selenium.common.exceptions import TimeoutException, StaleElementReferenceEx
 BASE_URL = "https://www.trackwrestling.com"
 DATA_DIR = Path("mt/data")
 LOGS_DIR = Path("mt/logs")
+
+# TEMPORARY DIAGNOSTIC PIN (2026-09-02): Chrome auto-updated to 152.0.7977.75
+# and Selenium Manager's matching chromedriver build crashes intermittently
+# (native chromedriver crash, blank error message) mid-scrape. Pinning back to
+# the last known-good chromedriver to see if that's actually the cause. Remove
+# this override (and let Selenium Manager auto-select again) once resolved.
+PINNED_CHROMEDRIVER_PATH = Path.home() / ".cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver"
 #SCRAPE_LOG_FILE = LOGS_DIR / "scrape_log.json"
 SCRAPE_LOG_FILE = lambda season: LOGS_DIR / f"scrape_log_{season}.json"
 
@@ -773,8 +780,16 @@ class WrestlingScraper:
             options.add_argument('--disable-gpu')
             options.add_argument('--start-maximized')
             
-            # Let Selenium Manager handle driver installation
-            self.driver = webdriver.Chrome(options=options)
+            # TEMPORARY: use the pinned known-good chromedriver instead of
+            # letting Selenium Manager auto-select the (currently flaky)
+            # driver matching the freshly auto-updated Chrome browser.
+            if PINNED_CHROMEDRIVER_PATH.exists():
+                print(f"Using pinned chromedriver: {PINNED_CHROMEDRIVER_PATH}")
+                service = Service(executable_path=str(PINNED_CHROMEDRIVER_PATH))
+                self.driver = webdriver.Chrome(service=service, options=options)
+            else:
+                print(f"Pinned chromedriver not found at {PINNED_CHROMEDRIVER_PATH}, falling back to Selenium Manager")
+                self.driver = webdriver.Chrome(options=options)
             self.wait = WebDriverWait(self.driver, 20)  # Increase wait time
             
         except Exception as e:
@@ -2605,71 +2620,73 @@ class WrestlingScraper:
                         # Log error with team name
                         error_msg = f"Error processing wrestler {info['name']} for team {team_info['name']}: {e}"
                         self._log_error("wrestler_processing", error_msg)
-                        
-                        # If this looks like a stale element error, attempt re-navigation and retry
-                        if "stale element reference" in str(e).lower():
-                            stale_retry_attempts += 1
-                            print(f"⚠️ Stale element error detected (attempt {stale_retry_attempts}/{max_stale_retries})")
-                            
-                            if stale_retry_attempts < max_stale_retries:
-                                print(f"Attempting re-navigation to recover from stale element error...")
-                                
-                                try:
-                                    # Use the same re-navigation pattern as zero-match retry
-                                    current_url = self.driver.current_url
-                                    parsed_url = urlparse(current_url)
-                                    query_params = parse_qs(parsed_url.query)
-                                    session_id = query_params.get('twSessionId', [''])[0]
-                                    
-                                    if not session_id:
+
+                        # Any error here (stale element, blank-message WebDriver
+                        # errors, etc.) gets the same treatment: attempt
+                        # re-navigation and retry, up to max_stale_retries times.
+                        # We never silently drop a wrestler and move on -- if we
+                        # can't recover, the whole team scrape is aborted
+                        # (return None) so it gets retried on a future run
+                        # instead of being marked complete with missing data.
+                        stale_retry_attempts += 1
+                        print(f"⚠️ Wrestler processing error detected (attempt {stale_retry_attempts}/{max_stale_retries})")
+
+                        if stale_retry_attempts < max_stale_retries:
+                            print(f"Attempting re-navigation to recover from wrestler processing error...")
+
+                            try:
+                                # Use the same re-navigation pattern as zero-match retry
+                                current_url = self.driver.current_url
+                                parsed_url = urlparse(current_url)
+                                query_params = parse_qs(parsed_url.query)
+                                session_id = query_params.get('twSessionId', [''])[0]
+
+                                if not session_id:
+                                    team_page_url = team_url
+                                else:
+                                    team_parsed_url = urlparse(team_url)
+                                    team_params = parse_qs(team_parsed_url.query)
+                                    team_id = team_params.get('teamId', [''])[0]
+
+                                    if not team_id:
                                         team_page_url = team_url
                                     else:
-                                        team_parsed_url = urlparse(team_url)
-                                        team_params = parse_qs(team_parsed_url.query)
-                                        team_id = team_params.get('teamId', [''])[0]
-                                        
-                                        if not team_id:
-                                            team_page_url = team_url
-                                        else:
-                                            team_page_url = f"{BASE_URL}/seasons/TeamSchedule.jsp?twSessionId={session_id}&teamId={team_id}"
-                                    
-                                    print(f"Navigating to team page: {team_page_url}")
-                                    self.driver.get(team_page_url)
-                                    time.sleep(3)
-                                    
-                                    # Click Matches tab
-                                    matches_link = self.wait.until(
-                                        EC.presence_of_element_located((By.CSS_SELECTOR, "a[href*='WrestlerMatches.jsp']"))
-                                    )
-                                    self.driver.execute_script("arguments[0].click();", matches_link)
-                                    time.sleep(3)
+                                        team_page_url = f"{BASE_URL}/seasons/TeamSchedule.jsp?twSessionId={session_id}&teamId={team_id}"
 
-                                    print(f"✅ Re-navigation successful, retrying wrestler {info['name']}...")
-                                    # Continue the while loop to retry processing this wrestler
-                                    continue
-                                    
-                                except Exception as nav_error:
-                                    print(f"❌ Error during re-navigation attempt: {nav_error}")
-                                    # If re-navigation fails, continue the while loop to retry
-                                    # The retry counter will prevent infinite loops
-                                    continue
-                            else:
-                                # All retry attempts exhausted
-                                fatal_msg = (
-                                    f"Fatal stale element error while processing wrestler {info['name']} "
-                                    f"for team {team_info['name']} after {max_stale_retries} retry attempts. Marking team scrape as failed."
+                                print(f"Navigating to team page: {team_page_url}")
+                                self.driver.get(team_page_url)
+                                time.sleep(3)
+
+                                # Click Matches tab
+                                matches_link = self.wait.until(
+                                    EC.presence_of_element_located((By.CSS_SELECTOR, "a[href*='WrestlerMatches.jsp']"))
                                 )
-                                print(f"❌ {fatal_msg}")
-                                self._log_error("team_scraping", fatal_msg)
-                                # Save log state before aborting this team
-                                try:
-                                    self._save_scrape_log()
-                                except Exception:
-                                    pass
-                                return None
+                                self.driver.execute_script("arguments[0].click();", matches_link)
+                                time.sleep(3)
+
+                                print(f"✅ Re-navigation successful, retrying wrestler {info['name']}...")
+                                # Continue the while loop to retry processing this wrestler
+                                continue
+
+                            except Exception as nav_error:
+                                print(f"❌ Error during re-navigation attempt: {nav_error}")
+                                # If re-navigation fails, continue the while loop to retry
+                                # The retry counter will prevent infinite loops
+                                continue
                         else:
-                            # Not a stale element error - break out of retry loop and continue to next wrestler
-                            break
+                            # All retry attempts exhausted
+                            fatal_msg = (
+                                f"Fatal wrestler processing error for {info['name']} "
+                                f"on team {team_info['name']} after {max_stale_retries} retry attempts. Marking team scrape as failed."
+                            )
+                            print(f"❌ {fatal_msg}")
+                            self._log_error("team_scraping", fatal_msg)
+                            # Save log state before aborting this team
+                            try:
+                                self._save_scrape_log()
+                            except Exception:
+                                pass
+                            return None
 
             # Save tracking file after successful team scrape
             try:

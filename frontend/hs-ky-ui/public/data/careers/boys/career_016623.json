@@ -2,9 +2,9 @@
   "career_id": "career_016623",
   "canonical_name": "Steven Stickrod",
   "career_record": {
-    "wins": 30,
-    "losses": 14,
-    "win_pct": 0.682
+    "wins": 31,
+    "losses": 16,
+    "win_pct": 0.66
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 190,
       "record": "30-14",
       "regional_place": 4,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -809,6 +810,74 @@
           "event": "vs. Jeffersonville Dual",
           "season": 2013,
           "opponent_ky": false
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000307",
+      "grade": 11,
+      "team": "Trinity (Louisville)",
+      "weight_class": 170,
+      "record": "1-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000308",
+          "opponent_career_id": "career_014134",
+          "opponent_name": "Kane Morris",
+          "opponent_team": "Union County",
+          "opponent_team_rank": null,
+          "opponent_weight": 170,
+          "opponent_rank": null,
+          "weight_class": "170",
+          "result": "W",
+          "method": "FALL",
+          "score": "5:24",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000305",
+          "opponent_career_id": "career_016388",
+          "opponent_name": "Caleb Canter",
+          "opponent_team": "LaRue County",
+          "opponent_team_rank": null,
+          "opponent_weight": 170,
+          "opponent_rank": null,
+          "weight_class": "170",
+          "result": "L",
+          "method": "FALL",
+          "score": "0:21",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000302",
+          "opponent_career_id": "career_016777",
+          "opponent_name": "Cody Floyd",
+          "opponent_team": "Central Hardin",
+          "opponent_team_rank": null,
+          "opponent_weight": 170,
+          "opponent_rank": null,
+          "weight_class": "170",
+          "result": "L",
+          "method": "DEC",
+          "score": "6-0",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
         }
       ]
     }

@@ -3,8 +3,8 @@
   "canonical_name": "Michael Kollar",
   "career_record": {
     "wins": 18,
-    "losses": 12,
-    "win_pct": 0.6
+    "losses": 14,
+    "win_pct": 0.562
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 157,
       "record": "18-12",
       "regional_place": 4,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -827,6 +828,56 @@
           "event": "vs. Southern",
           "season": 2013,
           "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000389",
+      "grade": 10,
+      "team": "Fern Creek",
+      "weight_class": 195,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000388",
+          "opponent_career_id": "career_015698",
+          "opponent_name": "Devin Smith",
+          "opponent_team": "Union County",
+          "opponent_team_rank": null,
+          "opponent_weight": 195,
+          "opponent_rank": null,
+          "weight_class": "195",
+          "result": "L",
+          "method": "MD",
+          "score": "15-2",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000391",
+          "opponent_career_id": "career_016553",
+          "opponent_name": "Dakota Stepp",
+          "opponent_team": "Sheldon Clark",
+          "opponent_team_rank": null,
+          "opponent_weight": 195,
+          "opponent_rank": null,
+          "weight_class": "195",
+          "result": "L",
+          "method": "MD",
+          "score": "11-3",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": false
         }
       ]
     }

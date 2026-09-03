@@ -2,14 +2,14 @@
 
 ## Overview
 
-This repo contains **two separate websites** that share a codebase but are on different branches:
+This repo contains **two separate websites** that share a codebase and now both live on a single branch:
 
 | Site | URL | Branch | Frontend Dir |
 |---|---|---|---|
-| KentuckyMat | kentuckymat.com | `hsky-dev` | `frontend/hs-ky-ui/` |
+| KentuckyMat | kentuckymat.com | `main` | `frontend/hs-ky-ui/` |
 | MatSavant | matsavant.com | `main` | `frontend/wrestledata-ui/` |
 
-**Active development is on `hsky-dev`.** The two sites are partially entangled and a full separation or merge is a known future priority. Do not mix changes between them.
+**All active development is on `main`.** The `hsky-dev` branch is retired/no longer used — do not check it out or treat it as a deploy target. The two sites still share this one branch/codebase; don't mix unrelated changes between their frontend dirs in a single commit.
 
 **MatSavant full reference:** See [`docs/matsavant.md`](docs/matsavant.md) for the complete MatSavant/NCAA pipeline, page inventory, and stat calculation formulas (TPAR, SI+, DF+, PE+, DI+, xTP, bonus EV).
 
@@ -398,7 +398,7 @@ All pages share `hs_config.js` which is loaded first and provides:
 
 ## Future Plans (Known)
 
-- **Repo separation**: Separate kentuckymat (`hsky-dev`) and matsavant (`main`) into fully independent repositories — or fully merge them. The current halfway-shared state is a known problem.
+- **Repo separation**: kentuckymat and matsavant now share the single `main` branch (the old `hsky-dev` split was retired). Whether to eventually split them into fully independent repositories is still an open question — the current shared-codebase state is a known tradeoff.
 - **Forum**: Add a community forum to kentuckymat.com. Architecture approach TBD.
 - **Automated documentation**: Keep `CLAUDE.md` updated regularly as the codebase evolves.
 
@@ -407,7 +407,7 @@ All pages share `hs_config.js` which is loaded first and provides:
 ## What Is Legacy / Inactive
 
 - `api/` directory and `server.py` — legacy, not used
-- `frontend/wrestledata-ui/` — MatSavant site, on `main` branch only
+- `frontend/wrestledata-ui/` — MatSavant site frontend (shares `main` with the KentuckyMat frontend)
 - DynamoDB tables and `link_and_upload_season.py` upload steps — fully replaced by static files
 - `scripts/generate_public_rankings.py` — uncertain if still needed
 - `scripts/generate_public_matrix.py` — not currently needed

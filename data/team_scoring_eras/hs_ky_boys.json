@@ -1,0 +1,32 @@
+{
+  "gender": "boys",
+  "eras": [
+    {
+      "era_id": "ky_boys_scoring_current",
+      "first_season": null,
+      "last_season": null,
+      "placement_points": {
+        "1": 20,
+        "2": 16,
+        "3": 12,
+        "4": 10,
+        "5": 8,
+        "6": 6,
+        "7": 4,
+        "8": 2
+      },
+      "advancement_points": {
+        "champ_win": 1,
+        "cons_win": 0.5,
+        "medal_round_win": 0
+      },
+      "bonus_points": {
+        "fall": 2,
+        "tech_fall": 1.5,
+        "major_decision": 1
+      },
+      "source": "Placement points ported from PLACEMENT_POINTS in scripts/state/evaluate_state_predictions.py / scripts/state/run_state_predictions.py. Advancement/medal-round split confirmed directly by the user: consolation-bracket wins earn 0.5 advancement (not the 1.0 that script uses for championship wins), and the four medal-deciding matches (1st/3rd/5th/7th place matches) earn 0 advancement -- only placement points apply there, to avoid double-counting a win that's already scored via placement.",
+      "notes": "advancement_points.medal_round_win applies to every slot in the template's placement_map (both the win-for-odd-place and lose-for-even-place match), overriding champ_win/cons_win for those specific slots only."
+    }
+  ]
+}

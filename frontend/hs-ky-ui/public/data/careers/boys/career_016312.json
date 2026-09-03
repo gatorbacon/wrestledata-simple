@@ -3,8 +3,8 @@
   "canonical_name": "Jordan Diamond",
   "career_record": {
     "wins": 6,
-    "losses": 10,
-    "win_pct": 0.375
+    "losses": 12,
+    "win_pct": 0.333
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 132,
       "record": "6-10",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -430,6 +431,56 @@
           "duration": "1:41",
           "event": "King of the Bluegrass (Fairdale)",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000098",
+      "grade": 8,
+      "team": "Fort Knox",
+      "weight_class": 126,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000097",
+          "opponent_career_id": "career_016681",
+          "opponent_name": "Roy Bisenius",
+          "opponent_team": "South Oldham",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "FALL",
+          "score": "0:32",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000100",
+          "opponent_career_id": "career_013885",
+          "opponent_name": "Alex Wright",
+          "opponent_team": "Bourbon County",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "MD",
+          "score": "13-0",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

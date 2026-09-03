@@ -1,0 +1,1462 @@
+{
+  "years_included": [
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "top_n": 33,
+  "month_summary": [
+    {
+      "month": "Sep",
+      "n": 330,
+      "avg_points": 3.43,
+      "std_points": 5.94
+    },
+    {
+      "month": "Oct",
+      "n": 1050,
+      "avg_points": 4.2,
+      "std_points": 6.44
+    },
+    {
+      "month": "Nov",
+      "n": 1140,
+      "avg_points": 4.0,
+      "std_points": 6.26
+    },
+    {
+      "month": "Dec",
+      "n": 1230,
+      "avg_points": 4.04,
+      "std_points": 6.24
+    },
+    {
+      "month": "Jan",
+      "n": 1230,
+      "avg_points": 4.25,
+      "std_points": 6.26
+    },
+    {
+      "month": "Feb",
+      "n": 1230,
+      "avg_points": 4.4,
+      "std_points": 6.32
+    },
+    {
+      "month": "Seeds",
+      "n": 1319,
+      "avg_points": 4.31,
+      "std_points": 6.14
+    }
+  ],
+  "seed_baseline_by_year": {
+    "2023": 4.17,
+    "2024": 4.34,
+    "2025": 4.36,
+    "2026": 4.35
+  },
+  "seed_baseline_avg": 4.3,
+  "rank_breakdown_by_month": {
+    "Oct": {
+      "1": {
+        "n": 40,
+        "avg_points": 16.31,
+        "std_points": 8.76,
+        "cv": 0.54
+      },
+      "2": {
+        "n": 40,
+        "avg_points": 13.21,
+        "std_points": 7.7,
+        "cv": 0.58
+      },
+      "3": {
+        "n": 40,
+        "avg_points": 9.97,
+        "std_points": 7.92,
+        "cv": 0.79
+      },
+      "4": {
+        "n": 40,
+        "avg_points": 11.14,
+        "std_points": 7.72,
+        "cv": 0.69
+      },
+      "5": {
+        "n": 40,
+        "avg_points": 7.5,
+        "std_points": 7.4,
+        "cv": 0.99
+      },
+      "6": {
+        "n": 40,
+        "avg_points": 4.75,
+        "std_points": 4.66,
+        "cv": 0.98
+      },
+      "7": {
+        "n": 39,
+        "avg_points": 4.9,
+        "std_points": 6.07,
+        "cv": 1.24
+      },
+      "8": {
+        "n": 40,
+        "avg_points": 3.05,
+        "std_points": 5.04,
+        "cv": 1.65
+      },
+      "9": {
+        "n": 40,
+        "avg_points": 5.36,
+        "std_points": 6.46,
+        "cv": 1.21
+      },
+      "10": {
+        "n": 40,
+        "avg_points": 5.71,
+        "std_points": 6.49,
+        "cv": 1.14
+      },
+      "11": {
+        "n": 40,
+        "avg_points": 3.33,
+        "std_points": 5.05,
+        "cv": 1.52
+      },
+      "12": {
+        "n": 40,
+        "avg_points": 2.27,
+        "std_points": 4.13,
+        "cv": 1.82
+      },
+      "13": {
+        "n": 40,
+        "avg_points": 1.31,
+        "std_points": 2.06,
+        "cv": 1.57
+      },
+      "14": {
+        "n": 40,
+        "avg_points": 3.33,
+        "std_points": 4.55,
+        "cv": 1.37
+      },
+      "15": {
+        "n": 41,
+        "avg_points": 2.51,
+        "std_points": 4.14,
+        "cv": 1.65
+      },
+      "16": {
+        "n": 40,
+        "avg_points": 2.67,
+        "std_points": 3.43,
+        "cv": 1.28
+      },
+      "17": {
+        "n": 40,
+        "avg_points": 0.89,
+        "std_points": 1.59,
+        "cv": 1.79
+      },
+      "18": {
+        "n": 40,
+        "avg_points": 3.06,
+        "std_points": 5.11,
+        "cv": 1.67
+      },
+      "19": {
+        "n": 40,
+        "avg_points": 0.88,
+        "std_points": 1.65,
+        "cv": 1.88
+      },
+      "20": {
+        "n": 40,
+        "avg_points": 1.15,
+        "std_points": 2.02,
+        "cv": 1.76
+      },
+      "21": {
+        "n": 40,
+        "avg_points": 1.65,
+        "std_points": 3.64,
+        "cv": 2.21
+      },
+      "22": {
+        "n": 40,
+        "avg_points": 2.09,
+        "std_points": 4.77,
+        "cv": 2.28
+      },
+      "23": {
+        "n": 40,
+        "avg_points": 0.84,
+        "std_points": 2.49,
+        "cv": 2.96
+      },
+      "24": {
+        "n": 40,
+        "avg_points": 0.79,
+        "std_points": 1.01,
+        "cv": 1.28
+      },
+      "25": {
+        "n": 10,
+        "avg_points": 0.5,
+        "std_points": 0.85,
+        "cv": 1.7
+      },
+      "26": {
+        "n": 10,
+        "avg_points": 1.95,
+        "std_points": 3.76,
+        "cv": 1.93
+      },
+      "27": {
+        "n": 10,
+        "avg_points": 0.25,
+        "std_points": 0.63,
+        "cv": 2.52
+      },
+      "28": {
+        "n": 10,
+        "avg_points": 0.15,
+        "std_points": 0.34,
+        "cv": 2.27
+      },
+      "29": {
+        "n": 10,
+        "avg_points": 2.05,
+        "std_points": 4.46,
+        "cv": 2.18
+      },
+      "30": {
+        "n": 10,
+        "avg_points": 0.15,
+        "std_points": 0.47,
+        "cv": 3.13
+      },
+      "31": {
+        "n": 10,
+        "avg_points": 0.2,
+        "std_points": 0.42,
+        "cv": 2.1
+      },
+      "32": {
+        "n": 10,
+        "avg_points": 0.45,
+        "std_points": 1.26,
+        "cv": 2.8
+      },
+      "33": {
+        "n": 10,
+        "avg_points": 0.4,
+        "std_points": 0.7,
+        "cv": 1.75
+      }
+    },
+    "Nov": {
+      "1": {
+        "n": 40,
+        "avg_points": 16.18,
+        "std_points": 8.98,
+        "cv": 0.56
+      },
+      "2": {
+        "n": 40,
+        "avg_points": 13.25,
+        "std_points": 7.6,
+        "cv": 0.57
+      },
+      "3": {
+        "n": 40,
+        "avg_points": 11.16,
+        "std_points": 7.52,
+        "cv": 0.67
+      },
+      "4": {
+        "n": 40,
+        "avg_points": 10.89,
+        "std_points": 7.69,
+        "cv": 0.71
+      },
+      "5": {
+        "n": 40,
+        "avg_points": 7.51,
+        "std_points": 7.27,
+        "cv": 0.97
+      },
+      "6": {
+        "n": 40,
+        "avg_points": 3.88,
+        "std_points": 4.67,
+        "cv": 1.2
+      },
+      "7": {
+        "n": 40,
+        "avg_points": 5.1,
+        "std_points": 6.4,
+        "cv": 1.25
+      },
+      "8": {
+        "n": 40,
+        "avg_points": 3.77,
+        "std_points": 5.14,
+        "cv": 1.36
+      },
+      "9": {
+        "n": 40,
+        "avg_points": 6.36,
+        "std_points": 6.49,
+        "cv": 1.02
+      },
+      "10": {
+        "n": 40,
+        "avg_points": 3.99,
+        "std_points": 5.94,
+        "cv": 1.49
+      },
+      "11": {
+        "n": 40,
+        "avg_points": 3.48,
+        "std_points": 4.65,
+        "cv": 1.34
+      },
+      "12": {
+        "n": 40,
+        "avg_points": 1.44,
+        "std_points": 2.89,
+        "cv": 2.01
+      },
+      "13": {
+        "n": 40,
+        "avg_points": 2.59,
+        "std_points": 3.99,
+        "cv": 1.54
+      },
+      "14": {
+        "n": 40,
+        "avg_points": 3.31,
+        "std_points": 4.15,
+        "cv": 1.25
+      },
+      "15": {
+        "n": 40,
+        "avg_points": 2.1,
+        "std_points": 3.88,
+        "cv": 1.85
+      },
+      "16": {
+        "n": 40,
+        "avg_points": 2.27,
+        "std_points": 3.21,
+        "cv": 1.41
+      },
+      "17": {
+        "n": 40,
+        "avg_points": 0.96,
+        "std_points": 1.92,
+        "cv": 2.0
+      },
+      "18": {
+        "n": 40,
+        "avg_points": 3.25,
+        "std_points": 5.08,
+        "cv": 1.56
+      },
+      "19": {
+        "n": 40,
+        "avg_points": 1.35,
+        "std_points": 2.63,
+        "cv": 1.95
+      },
+      "20": {
+        "n": 40,
+        "avg_points": 1.32,
+        "std_points": 2.43,
+        "cv": 1.84
+      },
+      "21": {
+        "n": 40,
+        "avg_points": 1.16,
+        "std_points": 2.98,
+        "cv": 2.57
+      },
+      "22": {
+        "n": 40,
+        "avg_points": 2.11,
+        "std_points": 3.75,
+        "cv": 1.78
+      },
+      "23": {
+        "n": 40,
+        "avg_points": 1.74,
+        "std_points": 4.28,
+        "cv": 2.46
+      },
+      "24": {
+        "n": 40,
+        "avg_points": 0.96,
+        "std_points": 2.04,
+        "cv": 2.12
+      },
+      "25": {
+        "n": 20,
+        "avg_points": 0.62,
+        "std_points": 0.99,
+        "cv": 1.6
+      },
+      "26": {
+        "n": 20,
+        "avg_points": 1.4,
+        "std_points": 2.41,
+        "cv": 1.72
+      },
+      "27": {
+        "n": 20,
+        "avg_points": 1.23,
+        "std_points": 3.33,
+        "cv": 2.71
+      },
+      "28": {
+        "n": 20,
+        "avg_points": 1.1,
+        "std_points": 3.23,
+        "cv": 2.94
+      },
+      "29": {
+        "n": 20,
+        "avg_points": 0.93,
+        "std_points": 1.8,
+        "cv": 1.94
+      },
+      "30": {
+        "n": 20,
+        "avg_points": 0.85,
+        "std_points": 2.8,
+        "cv": 3.29
+      },
+      "31": {
+        "n": 20,
+        "avg_points": 0.68,
+        "std_points": 1.94,
+        "cv": 2.85
+      },
+      "32": {
+        "n": 20,
+        "avg_points": 0.65,
+        "std_points": 1.13,
+        "cv": 1.74
+      },
+      "33": {
+        "n": 20,
+        "avg_points": 0.3,
+        "std_points": 1.02,
+        "cv": 3.4
+      }
+    },
+    "Dec": {
+      "1": {
+        "n": 40,
+        "avg_points": 16.49,
+        "std_points": 8.68,
+        "cv": 0.53
+      },
+      "2": {
+        "n": 40,
+        "avg_points": 13.35,
+        "std_points": 7.67,
+        "cv": 0.57
+      },
+      "3": {
+        "n": 40,
+        "avg_points": 11.8,
+        "std_points": 8.16,
+        "cv": 0.69
+      },
+      "4": {
+        "n": 40,
+        "avg_points": 9.99,
+        "std_points": 7.73,
+        "cv": 0.77
+      },
+      "5": {
+        "n": 40,
+        "avg_points": 7.69,
+        "std_points": 7.05,
+        "cv": 0.92
+      },
+      "6": {
+        "n": 40,
+        "avg_points": 6.04,
+        "std_points": 5.39,
+        "cv": 0.89
+      },
+      "7": {
+        "n": 40,
+        "avg_points": 7.09,
+        "std_points": 7.07,
+        "cv": 1.0
+      },
+      "8": {
+        "n": 40,
+        "avg_points": 4.59,
+        "std_points": 5.23,
+        "cv": 1.14
+      },
+      "9": {
+        "n": 40,
+        "avg_points": 4.17,
+        "std_points": 5.62,
+        "cv": 1.35
+      },
+      "10": {
+        "n": 40,
+        "avg_points": 4.09,
+        "std_points": 5.01,
+        "cv": 1.22
+      },
+      "11": {
+        "n": 40,
+        "avg_points": 3.09,
+        "std_points": 4.09,
+        "cv": 1.32
+      },
+      "12": {
+        "n": 40,
+        "avg_points": 3.49,
+        "std_points": 4.68,
+        "cv": 1.34
+      },
+      "13": {
+        "n": 40,
+        "avg_points": 2.69,
+        "std_points": 4.06,
+        "cv": 1.51
+      },
+      "14": {
+        "n": 40,
+        "avg_points": 2.01,
+        "std_points": 4.37,
+        "cv": 2.17
+      },
+      "15": {
+        "n": 40,
+        "avg_points": 2.74,
+        "std_points": 4.36,
+        "cv": 1.59
+      },
+      "16": {
+        "n": 40,
+        "avg_points": 3.94,
+        "std_points": 5.72,
+        "cv": 1.45
+      },
+      "17": {
+        "n": 40,
+        "avg_points": 2.38,
+        "std_points": 3.59,
+        "cv": 1.51
+      },
+      "18": {
+        "n": 40,
+        "avg_points": 2.08,
+        "std_points": 3.48,
+        "cv": 1.67
+      },
+      "19": {
+        "n": 40,
+        "avg_points": 1.46,
+        "std_points": 2.04,
+        "cv": 1.4
+      },
+      "20": {
+        "n": 40,
+        "avg_points": 1.5,
+        "std_points": 3.64,
+        "cv": 2.43
+      },
+      "21": {
+        "n": 40,
+        "avg_points": 2.36,
+        "std_points": 4.07,
+        "cv": 1.72
+      },
+      "22": {
+        "n": 40,
+        "avg_points": 1.38,
+        "std_points": 2.51,
+        "cv": 1.82
+      },
+      "23": {
+        "n": 40,
+        "avg_points": 1.94,
+        "std_points": 4.05,
+        "cv": 2.09
+      },
+      "24": {
+        "n": 40,
+        "avg_points": 0.93,
+        "std_points": 1.9,
+        "cv": 2.04
+      },
+      "25": {
+        "n": 30,
+        "avg_points": 1.28,
+        "std_points": 2.97,
+        "cv": 2.32
+      },
+      "26": {
+        "n": 30,
+        "avg_points": 0.48,
+        "std_points": 1.11,
+        "cv": 2.31
+      },
+      "27": {
+        "n": 30,
+        "avg_points": 1.03,
+        "std_points": 1.61,
+        "cv": 1.56
+      },
+      "28": {
+        "n": 30,
+        "avg_points": 1.55,
+        "std_points": 3.8,
+        "cv": 2.45
+      },
+      "29": {
+        "n": 30,
+        "avg_points": 2.1,
+        "std_points": 4.93,
+        "cv": 2.35
+      },
+      "30": {
+        "n": 30,
+        "avg_points": 0.67,
+        "std_points": 1.14,
+        "cv": 1.7
+      },
+      "31": {
+        "n": 30,
+        "avg_points": 1.53,
+        "std_points": 3.64,
+        "cv": 2.38
+      },
+      "32": {
+        "n": 30,
+        "avg_points": 0.27,
+        "std_points": 0.64,
+        "cv": 2.37
+      },
+      "33": {
+        "n": 30,
+        "avg_points": 0.43,
+        "std_points": 1.21,
+        "cv": 2.81
+      }
+    },
+    "Jan": {
+      "1": {
+        "n": 40,
+        "avg_points": 17.82,
+        "std_points": 7.27,
+        "cv": 0.41
+      },
+      "2": {
+        "n": 40,
+        "avg_points": 14.93,
+        "std_points": 6.98,
+        "cv": 0.47
+      },
+      "3": {
+        "n": 40,
+        "avg_points": 12.3,
+        "std_points": 8.08,
+        "cv": 0.66
+      },
+      "4": {
+        "n": 40,
+        "avg_points": 9.68,
+        "std_points": 7.14,
+        "cv": 0.74
+      },
+      "5": {
+        "n": 40,
+        "avg_points": 7.49,
+        "std_points": 6.52,
+        "cv": 0.87
+      },
+      "6": {
+        "n": 40,
+        "avg_points": 7.7,
+        "std_points": 6.94,
+        "cv": 0.9
+      },
+      "7": {
+        "n": 40,
+        "avg_points": 6.22,
+        "std_points": 6.42,
+        "cv": 1.03
+      },
+      "8": {
+        "n": 40,
+        "avg_points": 5.42,
+        "std_points": 5.67,
+        "cv": 1.05
+      },
+      "9": {
+        "n": 40,
+        "avg_points": 5.05,
+        "std_points": 5.35,
+        "cv": 1.06
+      },
+      "10": {
+        "n": 40,
+        "avg_points": 2.88,
+        "std_points": 4.12,
+        "cv": 1.43
+      },
+      "11": {
+        "n": 40,
+        "avg_points": 3.67,
+        "std_points": 4.9,
+        "cv": 1.34
+      },
+      "12": {
+        "n": 40,
+        "avg_points": 4.9,
+        "std_points": 5.02,
+        "cv": 1.02
+      },
+      "13": {
+        "n": 40,
+        "avg_points": 3.41,
+        "std_points": 4.74,
+        "cv": 1.39
+      },
+      "14": {
+        "n": 40,
+        "avg_points": 2.88,
+        "std_points": 3.95,
+        "cv": 1.37
+      },
+      "15": {
+        "n": 40,
+        "avg_points": 3.09,
+        "std_points": 4.58,
+        "cv": 1.48
+      },
+      "16": {
+        "n": 40,
+        "avg_points": 2.36,
+        "std_points": 4.33,
+        "cv": 1.83
+      },
+      "17": {
+        "n": 40,
+        "avg_points": 2.99,
+        "std_points": 4.94,
+        "cv": 1.65
+      },
+      "18": {
+        "n": 40,
+        "avg_points": 2.85,
+        "std_points": 3.73,
+        "cv": 1.31
+      },
+      "19": {
+        "n": 40,
+        "avg_points": 1.85,
+        "std_points": 2.66,
+        "cv": 1.44
+      },
+      "20": {
+        "n": 40,
+        "avg_points": 1.66,
+        "std_points": 2.69,
+        "cv": 1.62
+      },
+      "21": {
+        "n": 40,
+        "avg_points": 1.57,
+        "std_points": 1.93,
+        "cv": 1.23
+      },
+      "22": {
+        "n": 40,
+        "avg_points": 1.24,
+        "std_points": 2.39,
+        "cv": 1.93
+      },
+      "23": {
+        "n": 40,
+        "avg_points": 2.01,
+        "std_points": 3.21,
+        "cv": 1.6
+      },
+      "24": {
+        "n": 40,
+        "avg_points": 1.15,
+        "std_points": 2.53,
+        "cv": 2.2
+      },
+      "25": {
+        "n": 30,
+        "avg_points": 0.9,
+        "std_points": 1.69,
+        "cv": 1.88
+      },
+      "26": {
+        "n": 30,
+        "avg_points": 0.82,
+        "std_points": 0.87,
+        "cv": 1.06
+      },
+      "27": {
+        "n": 30,
+        "avg_points": 0.57,
+        "std_points": 0.75,
+        "cv": 1.32
+      },
+      "28": {
+        "n": 30,
+        "avg_points": 1.6,
+        "std_points": 3.88,
+        "cv": 2.42
+      },
+      "29": {
+        "n": 30,
+        "avg_points": 1.33,
+        "std_points": 2.94,
+        "cv": 2.21
+      },
+      "30": {
+        "n": 30,
+        "avg_points": 0.65,
+        "std_points": 1.24,
+        "cv": 1.91
+      },
+      "31": {
+        "n": 30,
+        "avg_points": 0.92,
+        "std_points": 2.7,
+        "cv": 2.93
+      },
+      "32": {
+        "n": 30,
+        "avg_points": 0.13,
+        "std_points": 0.47,
+        "cv": 3.62
+      },
+      "33": {
+        "n": 30,
+        "avg_points": 0.58,
+        "std_points": 1.68,
+        "cv": 2.9
+      }
+    },
+    "Feb": {
+      "1": {
+        "n": 40,
+        "avg_points": 19.12,
+        "std_points": 6.46,
+        "cv": 0.34
+      },
+      "2": {
+        "n": 40,
+        "avg_points": 13.68,
+        "std_points": 7.94,
+        "cv": 0.58
+      },
+      "3": {
+        "n": 40,
+        "avg_points": 13.21,
+        "std_points": 7.29,
+        "cv": 0.55
+      },
+      "4": {
+        "n": 40,
+        "avg_points": 12.51,
+        "std_points": 6.48,
+        "cv": 0.52
+      },
+      "5": {
+        "n": 40,
+        "avg_points": 7.83,
+        "std_points": 6.0,
+        "cv": 0.77
+      },
+      "6": {
+        "n": 40,
+        "avg_points": 9.54,
+        "std_points": 6.52,
+        "cv": 0.68
+      },
+      "7": {
+        "n": 40,
+        "avg_points": 7.89,
+        "std_points": 6.16,
+        "cv": 0.78
+      },
+      "8": {
+        "n": 40,
+        "avg_points": 4.1,
+        "std_points": 4.19,
+        "cv": 1.02
+      },
+      "9": {
+        "n": 40,
+        "avg_points": 5.61,
+        "std_points": 5.25,
+        "cv": 0.94
+      },
+      "10": {
+        "n": 40,
+        "avg_points": 4.56,
+        "std_points": 6.13,
+        "cv": 1.34
+      },
+      "11": {
+        "n": 40,
+        "avg_points": 2.95,
+        "std_points": 4.36,
+        "cv": 1.48
+      },
+      "12": {
+        "n": 40,
+        "avg_points": 2.95,
+        "std_points": 3.39,
+        "cv": 1.15
+      },
+      "13": {
+        "n": 40,
+        "avg_points": 5.01,
+        "std_points": 4.64,
+        "cv": 0.93
+      },
+      "14": {
+        "n": 40,
+        "avg_points": 3.67,
+        "std_points": 4.95,
+        "cv": 1.35
+      },
+      "15": {
+        "n": 40,
+        "avg_points": 2.1,
+        "std_points": 3.71,
+        "cv": 1.77
+      },
+      "16": {
+        "n": 40,
+        "avg_points": 3.44,
+        "std_points": 3.98,
+        "cv": 1.16
+      },
+      "17": {
+        "n": 40,
+        "avg_points": 2.76,
+        "std_points": 4.36,
+        "cv": 1.58
+      },
+      "18": {
+        "n": 40,
+        "avg_points": 2.23,
+        "std_points": 3.06,
+        "cv": 1.37
+      },
+      "19": {
+        "n": 40,
+        "avg_points": 1.68,
+        "std_points": 2.43,
+        "cv": 1.45
+      },
+      "20": {
+        "n": 40,
+        "avg_points": 1.69,
+        "std_points": 2.13,
+        "cv": 1.26
+      },
+      "21": {
+        "n": 40,
+        "avg_points": 1.35,
+        "std_points": 2.13,
+        "cv": 1.58
+      },
+      "22": {
+        "n": 40,
+        "avg_points": 1.19,
+        "std_points": 2.19,
+        "cv": 1.84
+      },
+      "23": {
+        "n": 40,
+        "avg_points": 0.72,
+        "std_points": 0.97,
+        "cv": 1.35
+      },
+      "24": {
+        "n": 40,
+        "avg_points": 0.95,
+        "std_points": 1.34,
+        "cv": 1.41
+      },
+      "25": {
+        "n": 30,
+        "avg_points": 1.07,
+        "std_points": 2.33,
+        "cv": 2.18
+      },
+      "26": {
+        "n": 30,
+        "avg_points": 0.55,
+        "std_points": 0.76,
+        "cv": 1.38
+      },
+      "27": {
+        "n": 30,
+        "avg_points": 0.7,
+        "std_points": 1.55,
+        "cv": 2.21
+      },
+      "28": {
+        "n": 30,
+        "avg_points": 0.88,
+        "std_points": 1.23,
+        "cv": 1.4
+      },
+      "29": {
+        "n": 30,
+        "avg_points": 0.42,
+        "std_points": 0.76,
+        "cv": 1.81
+      },
+      "30": {
+        "n": 30,
+        "avg_points": 0.68,
+        "std_points": 1.57,
+        "cv": 2.31
+      },
+      "31": {
+        "n": 30,
+        "avg_points": 0.4,
+        "std_points": 0.8,
+        "cv": 2.0
+      },
+      "32": {
+        "n": 30,
+        "avg_points": 0.98,
+        "std_points": 2.74,
+        "cv": 2.8
+      },
+      "33": {
+        "n": 30,
+        "avg_points": 0.45,
+        "std_points": 0.94,
+        "cv": 2.09
+      }
+    },
+    "Sep": {
+      "1": {
+        "n": 10,
+        "avg_points": 16.7,
+        "std_points": 8.96,
+        "cv": 0.54
+      },
+      "2": {
+        "n": 10,
+        "avg_points": 11.9,
+        "std_points": 8.88,
+        "cv": 0.75
+      },
+      "3": {
+        "n": 10,
+        "avg_points": 14.8,
+        "std_points": 5.5,
+        "cv": 0.37
+      },
+      "4": {
+        "n": 10,
+        "avg_points": 6.9,
+        "std_points": 7.61,
+        "cv": 1.1
+      },
+      "5": {
+        "n": 10,
+        "avg_points": 6.3,
+        "std_points": 4.47,
+        "cv": 0.71
+      },
+      "6": {
+        "n": 10,
+        "avg_points": 3.0,
+        "std_points": 2.66,
+        "cv": 0.89
+      },
+      "7": {
+        "n": 10,
+        "avg_points": 4.6,
+        "std_points": 5.34,
+        "cv": 1.16
+      },
+      "8": {
+        "n": 10,
+        "avg_points": 3.5,
+        "std_points": 4.64,
+        "cv": 1.33
+      },
+      "9": {
+        "n": 10,
+        "avg_points": 4.0,
+        "std_points": 6.4,
+        "cv": 1.6
+      },
+      "10": {
+        "n": 10,
+        "avg_points": 9.1,
+        "std_points": 7.43,
+        "cv": 0.82
+      },
+      "11": {
+        "n": 10,
+        "avg_points": 5.95,
+        "std_points": 7.7,
+        "cv": 1.29
+      },
+      "12": {
+        "n": 10,
+        "avg_points": 0.85,
+        "std_points": 1.49,
+        "cv": 1.75
+      },
+      "13": {
+        "n": 10,
+        "avg_points": 2.15,
+        "std_points": 4.06,
+        "cv": 1.89
+      },
+      "14": {
+        "n": 10,
+        "avg_points": 2.7,
+        "std_points": 3.81,
+        "cv": 1.41
+      },
+      "15": {
+        "n": 10,
+        "avg_points": 2.15,
+        "std_points": 4.57,
+        "cv": 2.13
+      },
+      "16": {
+        "n": 10,
+        "avg_points": 2.6,
+        "std_points": 2.91,
+        "cv": 1.12
+      },
+      "17": {
+        "n": 10,
+        "avg_points": 1.1,
+        "std_points": 2.2,
+        "cv": 2.0
+      },
+      "18": {
+        "n": 10,
+        "avg_points": 2.75,
+        "std_points": 5.49,
+        "cv": 2.0
+      },
+      "19": {
+        "n": 10,
+        "avg_points": 1.75,
+        "std_points": 5.19,
+        "cv": 2.97
+      },
+      "20": {
+        "n": 10,
+        "avg_points": 0.35,
+        "std_points": 0.82,
+        "cv": 2.34
+      },
+      "21": {
+        "n": 10,
+        "avg_points": 1.65,
+        "std_points": 3.38,
+        "cv": 2.05
+      },
+      "22": {
+        "n": 10,
+        "avg_points": 1.45,
+        "std_points": 2.29,
+        "cv": 1.58
+      },
+      "23": {
+        "n": 10,
+        "avg_points": 0.25,
+        "std_points": 0.42,
+        "cv": 1.68
+      },
+      "24": {
+        "n": 10,
+        "avg_points": 0.4,
+        "std_points": 0.66,
+        "cv": 1.65
+      },
+      "25": {
+        "n": 10,
+        "avg_points": 0.6,
+        "std_points": 0.88,
+        "cv": 1.47
+      },
+      "26": {
+        "n": 10,
+        "avg_points": 2.0,
+        "std_points": 3.74,
+        "cv": 1.87
+      },
+      "27": {
+        "n": 10,
+        "avg_points": 0.3,
+        "std_points": 0.63,
+        "cv": 2.1
+      },
+      "28": {
+        "n": 10,
+        "avg_points": 0.0,
+        "std_points": 0.0,
+        "cv": null
+      },
+      "29": {
+        "n": 10,
+        "avg_points": 1.8,
+        "std_points": 4.49,
+        "cv": 2.49
+      },
+      "30": {
+        "n": 10,
+        "avg_points": 0.65,
+        "std_points": 0.91,
+        "cv": 1.4
+      },
+      "31": {
+        "n": 10,
+        "avg_points": 0.1,
+        "std_points": 0.32,
+        "cv": 3.2
+      },
+      "32": {
+        "n": 10,
+        "avg_points": 0.1,
+        "std_points": 0.32,
+        "cv": 3.2
+      },
+      "33": {
+        "n": 10,
+        "avg_points": 0.75,
+        "std_points": 1.32,
+        "cv": 1.76
+      }
+    }
+  },
+  "seed_breakdown": {
+    "1": {
+      "n": 40,
+      "avg_points": 20.32,
+      "std_points": 4.86,
+      "cv": 0.24
+    },
+    "2": {
+      "n": 40,
+      "avg_points": 15.81,
+      "std_points": 6.21,
+      "cv": 0.39
+    },
+    "3": {
+      "n": 40,
+      "avg_points": 14.32,
+      "std_points": 6.53,
+      "cv": 0.46
+    },
+    "4": {
+      "n": 40,
+      "avg_points": 11.14,
+      "std_points": 6.04,
+      "cv": 0.54
+    },
+    "5": {
+      "n": 40,
+      "avg_points": 7.75,
+      "std_points": 6.33,
+      "cv": 0.82
+    },
+    "6": {
+      "n": 40,
+      "avg_points": 7.66,
+      "std_points": 6.12,
+      "cv": 0.8
+    },
+    "7": {
+      "n": 40,
+      "avg_points": 8.0,
+      "std_points": 5.7,
+      "cv": 0.71
+    },
+    "8": {
+      "n": 40,
+      "avg_points": 6.21,
+      "std_points": 5.83,
+      "cv": 0.94
+    },
+    "9": {
+      "n": 40,
+      "avg_points": 5.99,
+      "std_points": 5.64,
+      "cv": 0.94
+    },
+    "10": {
+      "n": 40,
+      "avg_points": 5.34,
+      "std_points": 6.04,
+      "cv": 1.13
+    },
+    "11": {
+      "n": 40,
+      "avg_points": 4.86,
+      "std_points": 4.39,
+      "cv": 0.9
+    },
+    "12": {
+      "n": 40,
+      "avg_points": 4.91,
+      "std_points": 4.99,
+      "cv": 1.02
+    },
+    "13": {
+      "n": 40,
+      "avg_points": 2.85,
+      "std_points": 3.66,
+      "cv": 1.28
+    },
+    "14": {
+      "n": 40,
+      "avg_points": 3.38,
+      "std_points": 3.37,
+      "cv": 1.0
+    },
+    "15": {
+      "n": 40,
+      "avg_points": 3.24,
+      "std_points": 3.51,
+      "cv": 1.08
+    },
+    "16": {
+      "n": 40,
+      "avg_points": 1.66,
+      "std_points": 1.5,
+      "cv": 0.9
+    },
+    "17": {
+      "n": 40,
+      "avg_points": 1.75,
+      "std_points": 1.9,
+      "cv": 1.09
+    },
+    "18": {
+      "n": 40,
+      "avg_points": 2.01,
+      "std_points": 2.79,
+      "cv": 1.39
+    },
+    "19": {
+      "n": 40,
+      "avg_points": 1.43,
+      "std_points": 1.11,
+      "cv": 0.78
+    },
+    "20": {
+      "n": 40,
+      "avg_points": 2.12,
+      "std_points": 3.37,
+      "cv": 1.59
+    },
+    "21": {
+      "n": 40,
+      "avg_points": 1.11,
+      "std_points": 1.05,
+      "cv": 0.95
+    },
+    "22": {
+      "n": 40,
+      "avg_points": 1.54,
+      "std_points": 2.3,
+      "cv": 1.49
+    },
+    "23": {
+      "n": 40,
+      "avg_points": 1.29,
+      "std_points": 1.66,
+      "cv": 1.29
+    },
+    "24": {
+      "n": 40,
+      "avg_points": 0.62,
+      "std_points": 0.93,
+      "cv": 1.5
+    },
+    "25": {
+      "n": 40,
+      "avg_points": 0.99,
+      "std_points": 1.22,
+      "cv": 1.23
+    },
+    "26": {
+      "n": 40,
+      "avg_points": 0.65,
+      "std_points": 1.17,
+      "cv": 1.8
+    },
+    "27": {
+      "n": 40,
+      "avg_points": 0.79,
+      "std_points": 1.47,
+      "cv": 1.86
+    },
+    "28": {
+      "n": 40,
+      "avg_points": 0.62,
+      "std_points": 1.14,
+      "cv": 1.84
+    },
+    "29": {
+      "n": 40,
+      "avg_points": 0.57,
+      "std_points": 0.82,
+      "cv": 1.44
+    },
+    "30": {
+      "n": 40,
+      "avg_points": 1.0,
+      "std_points": 1.1,
+      "cv": 1.1
+    },
+    "31": {
+      "n": 40,
+      "avg_points": 0.17,
+      "std_points": 0.49,
+      "cv": 2.88
+    },
+    "32": {
+      "n": 40,
+      "avg_points": 0.95,
+      "std_points": 1.18,
+      "cv": 1.24
+    },
+    "33": {
+      "n": 39,
+      "avg_points": 0.96,
+      "std_points": 1.08,
+      "cv": 1.13
+    }
+  }
+}

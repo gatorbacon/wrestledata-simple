@@ -3,8 +3,8 @@
   "canonical_name": "Michael Beets",
   "career_record": {
     "wins": 79,
-    "losses": 31,
-    "win_pct": 0.718
+    "losses": 33,
+    "win_pct": 0.705
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 120,
       "record": "41-12",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": 5,
       "current_rank": null,
       "matches": [
@@ -946,6 +947,7 @@
       "weight_class": 120,
       "record": "35-12",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": 7,
       "current_rank": null,
       "matches": [
@@ -1985,6 +1987,7 @@
       "weight_class": 113,
       "record": "3-7",
       "regional_place": 3,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -2436,6 +2439,56 @@
           "duration": "1:27",
           "event": "vs. St. Xavier",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000015",
+      "grade": 9,
+      "team": "St. Xavier",
+      "weight_class": 106,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000016",
+          "opponent_career_id": "career_014916",
+          "opponent_name": "Kyle Edlin",
+          "opponent_team": "LaRue County",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "L",
+          "method": "FALL",
+          "score": "1:23",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000013",
+          "opponent_career_id": "career_014173",
+          "opponent_name": "Cecil Nevels",
+          "opponent_team": "Wayne County",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "L",
+          "method": "FALL",
+          "score": "0:16",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

@@ -153,12 +153,14 @@ def build_career_profile(career_data: dict, gender: str, ky_team_slugs: set, ove
         regional_place = None
         state_place = None
         grade = None
+        regional_data_tracked = True
         season_summary = profile.get("season_summary") or []
         for summary_entry in season_summary:
             if summary_entry.get("season") == season:
                 regional_place = summary_entry.get("regional_place")
                 state_place = summary_entry.get("state_place")
                 grade = summary_entry.get("grade")
+                regional_data_tracked = summary_entry.get("regional_data_tracked", True)
                 break
 
         if grade is None:
@@ -180,6 +182,7 @@ def build_career_profile(career_data: dict, gender: str, ky_team_slugs: set, ove
             "weight_class": profile.get("weight_class"),
             "record": record_str,
             "regional_place": regional_place,
+            "regional_data_tracked": regional_data_tracked,
             "state_place": state_place,
             "current_rank": current_rank,
             "matches": matches,

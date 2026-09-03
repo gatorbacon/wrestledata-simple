@@ -3,8 +3,8 @@
   "canonical_name": "Daylon Whaley",
   "career_record": {
     "wins": 48,
-    "losses": 26,
-    "win_pct": 0.649
+    "losses": 28,
+    "win_pct": 0.632
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 285,
       "record": "22-9",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -604,6 +605,7 @@
       "weight_class": 215,
       "record": "26-17",
       "regional_place": 3,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1451,6 +1453,56 @@
           "duration": "4:37",
           "event": "vs. St. Xavier",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000421",
+      "grade": 10,
+      "team": "Moore",
+      "weight_class": 220,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000420",
+          "opponent_career_id": "career_014050",
+          "opponent_name": "Zach Farris",
+          "opponent_team": "Ohio County",
+          "opponent_team_rank": null,
+          "opponent_weight": 220,
+          "opponent_rank": null,
+          "weight_class": "220",
+          "result": "L",
+          "method": "FALL",
+          "score": "2:14",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000423",
+          "opponent_career_id": "career_016837",
+          "opponent_name": "Jacob Purvis",
+          "opponent_team": "Montgomery County",
+          "opponent_team_rank": null,
+          "opponent_weight": 220,
+          "opponent_rank": null,
+          "weight_class": "220",
+          "result": "L",
+          "method": "FALL",
+          "score": "3:39",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

@@ -3,8 +3,8 @@
   "canonical_name": "JD Criswell",
   "career_record": {
     "wins": 195,
-    "losses": 47,
-    "win_pct": 0.806
+    "losses": 49,
+    "win_pct": 0.799
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 138,
       "record": "43-8",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -928,6 +929,7 @@
       "weight_class": 138,
       "record": "41-9",
       "regional_place": 4,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1841,6 +1843,7 @@
       "weight_class": 144,
       "record": "53-8",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -2952,6 +2955,7 @@
       "weight_class": 132,
       "record": "26-12",
       "regional_place": 4,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -3739,6 +3743,7 @@
       "weight_class": 120,
       "record": "32-10",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -4550,6 +4555,56 @@
           "duration": "1:27",
           "event": "vs. St. Xavier",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000040",
+      "grade": 7,
+      "team": "Wayne County",
+      "weight_class": 113,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000039",
+          "opponent_career_id": "career_016660",
+          "opponent_name": "Jake Bargo",
+          "opponent_team": "Spencer County",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "L",
+          "method": "FALL",
+          "score": "0:23",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000038",
+          "opponent_career_id": "career_015642",
+          "opponent_name": "Christian Bautista",
+          "opponent_team": "Southern",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "L",
+          "method": "DEC",
+          "score": "11-8",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

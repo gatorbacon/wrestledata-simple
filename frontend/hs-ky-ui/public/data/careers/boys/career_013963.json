@@ -2,9 +2,9 @@
   "career_id": "career_013963",
   "canonical_name": "Kohl Dodd",
   "career_record": {
-    "wins": 128,
-    "losses": 20,
-    "win_pct": 0.865
+    "wins": 129,
+    "losses": 22,
+    "win_pct": 0.854
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 190,
       "record": "56-5",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 1,
       "current_rank": null,
       "matches": [
@@ -1108,6 +1109,7 @@
       "weight_class": 175,
       "record": "43-8",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 4,
       "current_rank": null,
       "matches": [
@@ -2165,6 +2167,7 @@
       "weight_class": 175,
       "record": "29-7",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -3174,6 +3177,74 @@
           "duration": "7:00",
           "event": "vs. North Oldham",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000322",
+      "grade": 9,
+      "team": "Fern Creek",
+      "weight_class": 182,
+      "record": "1-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000321",
+          "opponent_career_id": "career_016081",
+          "opponent_name": "Sean Barrett",
+          "opponent_team": "Southern",
+          "opponent_team_rank": null,
+          "opponent_weight": 182,
+          "opponent_rank": null,
+          "weight_class": "182",
+          "result": "L",
+          "method": "FALL",
+          "score": "3:24",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000323",
+          "opponent_career_id": "career_016324",
+          "opponent_name": "Darius Bucerzan",
+          "opponent_team": "Franklin County",
+          "opponent_team_rank": null,
+          "opponent_weight": 182,
+          "opponent_rank": null,
+          "weight_class": "182",
+          "result": "W",
+          "method": "DEC",
+          "score": "8-5",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000349",
+          "opponent_career_id": "career_016800",
+          "opponent_name": "Matthew Leffler",
+          "opponent_team": "Fairdale",
+          "opponent_team_rank": null,
+          "opponent_weight": 182,
+          "opponent_rank": null,
+          "weight_class": "182",
+          "result": "L",
+          "method": "FALL",
+          "score": "1:43",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

@@ -1,0 +1,29 @@
+{
+  "gender": "boys",
+  "eras": [
+    {
+      "era_id": "ky_boys_2009_2011_confirmed",
+      "first_season": 2009,
+      "last_season": 2011,
+      "weight_classes": [103, 112, 119, 125, 130, 135, 140, 145, 152, 160, 171, 189, 215, 285],
+      "source": "Directly confirmed from the 2009, 2010, and 2011 KHSAA state bracket PDFs (data/{season}/bracket-pdf/*.pdf) page headers, all 14 weight classes each year. Matches scrape_khsaa_regionals.py's KY_WEIGHT_CLASSES_BY_ERA['old'] table exactly, unlike the 2012-2013 list below which matches neither of that script's assumed eras.",
+      "notes": "last_season is 2011 (era first confirmed 2011, then 2010 and 2009 checked and found identical). Whether this list extends further back before 2009 is unknown -- verify against each year's actual bracket PDF before extending, same as every other era row here."
+    },
+    {
+      "era_id": "ky_boys_2012_2013_confirmed",
+      "first_season": 2012,
+      "last_season": 2013,
+      "weight_classes": [106, 113, 120, 126, 132, 138, 145, 152, 160, 170, 182, 195, 220, 285],
+      "source": "Directly confirmed from real primary sources: (1) the full 14-weight sequence read straight out of data/hs_ky_boys/2013/placement.txt via `grep -E '^[0-9]{2,3}$'`, and (2) eight 2012 KHSAA state bracket PDFs transcribed by hand (106, 113, 120, 126, 132, 138, 145, 152 lb -- all matched this exact list). This is a THIRD distinct weight-class list, different from both scripts/scraping/scrape_khsaa_regionals.py's KY_WEIGHT_CLASSES_BY_ERA['old'] (103/112/119/...) and ['new'] (106/113/120/.../144/150/157/165/175/190/215/285) tables -- neither of those scraper assumptions matches the real data for 2012 or 2013.",
+      "notes": "last_season is set to 2013 only because that's as far as this was directly verified (via placement.txt); it is NOT confirmed that this list stops being used after 2013, only that it's confirmed correct through 2013. When the transition to the modern 106/113/120/126/132/138/144/150/157/165/175/190/215/285 list actually happened is still unknown -- check placement.txt for 2014+ seasons directly (same grep approach) before extending this era's last_season or assuming a specific cutover year. Do not trust scrape_khsaa_regionals.py's 2019 cutover claim without similarly re-verifying it against real data."
+    },
+    {
+      "era_id": "ky_boys_modern_provisional",
+      "first_season": 2014,
+      "last_season": null,
+      "weight_classes": [106, 113, 120, 126, 132, 138, 144, 150, 157, 165, 175, 190, 215, 285],
+      "source": "UNVERIFIED for 2014+ -- this is the pre-existing assumed 'current' list (matches HS_CONFIG in hs_config.js and scrape_khsaa_regionals.py's ['new'] table), kept here as a provisional placeholder starting the season immediately after the confirmed 2012-2013 list above. Not independently checked against any real placement.txt/bracket for 2014-2018.",
+      "notes": "This era's first_season boundary (2014) is a guess, not a confirmed cutover. Verify against real data (e.g. grep placement.txt for 2014-2018 seasons the same way 2013 was checked) before relying on this for anything beyond the current 2019+ seasons, which this list IS confirmed correct for via existing frontend/site usage."
+    }
+  ]
+}

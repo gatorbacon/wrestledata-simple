@@ -2,9 +2,9 @@
   "career_id": "career_016488",
   "canonical_name": "Nick McIntosh",
   "career_record": {
-    "wins": 24,
-    "losses": 4,
-    "win_pct": 0.857
+    "wins": 25,
+    "losses": 6,
+    "win_pct": 0.806
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 150,
       "record": "24-4",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 5,
       "current_rank": null,
       "matches": [
@@ -682,6 +683,74 @@
           "duration": "0:03",
           "event": "vs. John Hardin",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000190",
+      "grade": 11,
+      "team": "Oldham County",
+      "weight_class": 138,
+      "record": "1-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000189",
+          "opponent_career_id": "career_015696",
+          "opponent_name": "Chad Gahafer",
+          "opponent_team": "Union County",
+          "opponent_team_rank": null,
+          "opponent_weight": 138,
+          "opponent_rank": null,
+          "weight_class": "138",
+          "result": "L",
+          "method": "DEC",
+          "score": "8-3",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000192",
+          "opponent_career_id": "career_015747",
+          "opponent_name": "Andrew Lee",
+          "opponent_team": "Central Hardin",
+          "opponent_team_rank": null,
+          "opponent_weight": 138,
+          "opponent_rank": null,
+          "weight_class": "138",
+          "result": "W",
+          "method": "TF",
+          "score": "15-0",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000161",
+          "opponent_career_id": "career_016704",
+          "opponent_name": "Justin Wynne",
+          "opponent_team": "Paducah Tilghman",
+          "opponent_team_rank": null,
+          "opponent_weight": 138,
+          "opponent_rank": null,
+          "weight_class": "138",
+          "result": "L",
+          "method": "DEC",
+          "score": "2-0",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

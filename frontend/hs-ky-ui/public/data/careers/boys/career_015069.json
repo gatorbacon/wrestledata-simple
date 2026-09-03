@@ -3,8 +3,8 @@
   "canonical_name": "Dylan Francis",
   "career_record": {
     "wins": 50,
-    "losses": 31,
-    "win_pct": 0.617
+    "losses": 33,
+    "win_pct": 0.602
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 126,
       "record": "26-14",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -820,6 +821,7 @@
       "weight_class": 120,
       "record": "24-17",
       "regional_place": 4,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1578,6 +1580,56 @@
           "event": "vs. Eastside",
           "season": 2013,
           "opponent_ky": false
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000060",
+      "grade": 9,
+      "team": "Johnson Central",
+      "weight_class": 113,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000059",
+          "opponent_career_id": "career_015946",
+          "opponent_name": "Coty Hunt",
+          "opponent_team": "Franklin County",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "L",
+          "method": "FALL",
+          "score": "1:12",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000058",
+          "opponent_career_id": "career_016666",
+          "opponent_name": "Nick Glass",
+          "opponent_team": "Pleasure Ridge Park",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "L",
+          "method": "DEC",
+          "score": "7-3",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
         }
       ]
     }

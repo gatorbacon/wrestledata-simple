@@ -2,9 +2,9 @@
   "career_id": "career_015956",
   "canonical_name": "Zack Cooper",
   "career_record": {
-    "wins": 18,
-    "losses": 10,
-    "win_pct": 0.643
+    "wins": 19,
+    "losses": 12,
+    "win_pct": 0.613
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 215,
       "record": "18-10",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": 8,
       "current_rank": null,
       "matches": [
@@ -611,6 +612,74 @@
           "event": "vs. Turpin",
           "season": 2013,
           "opponent_ky": false
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000444",
+      "grade": 11,
+      "team": "Henry Clay",
+      "weight_class": 220,
+      "record": "1-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000445",
+          "opponent_career_id": "career_016851",
+          "opponent_name": "Rowland Walsh",
+          "opponent_team": "Desales",
+          "opponent_team_rank": null,
+          "opponent_weight": 220,
+          "opponent_rank": null,
+          "weight_class": "220",
+          "result": "W",
+          "method": "FALL",
+          "score": "1:28",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000446",
+          "opponent_career_id": "career_016852",
+          "opponent_name": "Steve Hollon",
+          "opponent_team": "Perry County Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 220,
+          "opponent_rank": null,
+          "weight_class": "220",
+          "result": "L",
+          "method": "DEC",
+          "score": "6-4",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000419",
+          "opponent_career_id": "career_015459",
+          "opponent_name": "Chris Niece",
+          "opponent_team": "Johnson Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 220,
+          "opponent_rank": null,
+          "weight_class": "220",
+          "result": "L",
+          "method": "FALL",
+          "score": "1:55",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
         }
       ]
     }

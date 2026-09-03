@@ -2,7 +2,7 @@
 """
 Parse NCAA D1 wrestling tournament match-by-match results into structured JSON.
 
-Years covered: 2013-2025 (excluding 2020, cancelled)
+Years covered: 2013-2026 (excluding 2020, cancelled)
 
 Inputs per year:
   data/{year}/ncaa-tourney/results.txt
@@ -33,7 +33,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
 COMBINED_DIR = DATA_DIR / "ncaa-tourney-parsed"
 
-YEARS = [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025]
+YEARS = [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026]
 WEIGHTS = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
 
 # ---------------------------------------------------------------------------

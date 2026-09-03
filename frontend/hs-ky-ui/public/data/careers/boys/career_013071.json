@@ -3,8 +3,8 @@
   "canonical_name": "Nathan Lopez",
   "career_record": {
     "wins": 121,
-    "losses": 39,
-    "win_pct": 0.756
+    "losses": 41,
+    "win_pct": 0.747
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 138,
       "record": "40-7",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -838,6 +839,7 @@
       "weight_class": 132,
       "record": "34-8",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1607,6 +1609,7 @@
       "weight_class": 126,
       "record": "31-13",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -2376,6 +2379,7 @@
       "weight_class": 113,
       "record": "16-11",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -2899,6 +2903,56 @@
           "duration": "3:26",
           "event": "Harrison County Inv.",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000031",
+      "grade": 8,
+      "team": "Harrison County",
+      "weight_class": 106,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000032",
+          "opponent_career_id": "career_012264",
+          "opponent_name": "Geordon Blanton",
+          "opponent_team": "Johnson Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "L",
+          "method": "FALL",
+          "score": "1:18",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000030",
+          "opponent_career_id": "career_016658",
+          "opponent_name": "Rayvin Edayan",
+          "opponent_team": "Fort Knox",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "L",
+          "method": "FALL",
+          "score": "1:37",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

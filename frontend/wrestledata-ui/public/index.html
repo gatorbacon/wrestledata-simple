@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>MatSavant — College Wrestling Analytics</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/styles.css?v=20260901" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   <script src="/search_index.js"></script>
 </head>
@@ -13,6 +13,38 @@
   <script src="/header.js"></script>
 
   <div class="page-container">
+
+    <!-- TEAM CHAMPIONSHIP ODDS (full-width feature) -->
+    <section class="section" id="team-odds-preview-section">
+      <div class="section-header">
+        <h2>NCAA Team Championship Odds</h2>
+        <a href="/team_odds.html" class="section-header-link">Full Table →</a>
+      </div>
+      <div class="header-subline" id="team-odds-preview-info" style="margin-bottom: 10px;"></div>
+      <div class="table-wrapper">
+        <table id="team-odds-preview-table">
+          <thead>
+            <tr>
+              <th style="width: 32px;"></th>
+              <th>Rank</th>
+              <th>Team</th>
+              <th>Scoring Range</th>
+              <th class="num">1st</th>
+              <th class="num">2nd</th>
+              <th class="num">3rd</th>
+              <th class="num">4th</th>
+              <th class="num">5th</th>
+              <th class="num">6th</th>
+              <th class="num">7th</th>
+              <th class="num">8th</th>
+              <th class="num">9th</th>
+              <th class="num">10th</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
 
     <div class="positioning-statement">
       MatSavant analyzes college wrestling at the match level — not just wins and losses. We evaluate scoring rates, dominance, quality of opponents, consistency, and team point impact to identify real performance signals.
@@ -142,5 +174,6 @@
 
   <script src="/tooltips.js"></script>
   <script src="/homepage.js"></script>
+  <script src="/homepage_team_odds.js"></script>
 </body>
 </html>

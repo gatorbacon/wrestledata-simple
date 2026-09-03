@@ -3,8 +3,8 @@
   "canonical_name": "BJ Miller",
   "career_record": {
     "wins": 53,
-    "losses": 22,
-    "win_pct": 0.707
+    "losses": 24,
+    "win_pct": 0.688
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 132,
       "record": "20-11",
       "regional_place": 3,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -694,6 +695,7 @@
       "weight_class": 126,
       "record": "33-11",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1559,6 +1561,56 @@
           "duration": "0:58",
           "event": "vs. Woodford County",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000087",
+      "grade": 9,
+      "team": "Ohio County",
+      "weight_class": 120,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000088",
+          "opponent_career_id": "career_016079",
+          "opponent_name": "Brian Crawley",
+          "opponent_team": "Southern",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "L",
+          "method": "FALL",
+          "score": "1:21",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000085",
+          "opponent_career_id": "career_016678",
+          "opponent_name": "Brad Milford",
+          "opponent_team": "Paul Laurence Dunbar",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "L",
+          "method": "MD",
+          "score": "19-6",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

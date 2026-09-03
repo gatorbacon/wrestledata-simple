@@ -3,8 +3,8 @@
   "canonical_name": "Evan Kenealy",
   "career_record": {
     "wins": 29,
-    "losses": 6,
-    "win_pct": 0.829
+    "losses": 8,
+    "win_pct": 0.784
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 175,
       "record": "29-6",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 8,
       "current_rank": null,
       "matches": [
@@ -754,6 +755,56 @@
           "duration": "0:48",
           "event": "vs. Woodford County",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000340",
+      "grade": 11,
+      "team": "Meade County",
+      "weight_class": 182,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000339",
+          "opponent_career_id": "career_016793",
+          "opponent_name": "Angel Gonzalez",
+          "opponent_team": "Jeffersontown",
+          "opponent_team_rank": null,
+          "opponent_weight": 182,
+          "opponent_rank": null,
+          "weight_class": "182",
+          "result": "L",
+          "method": "DQ",
+          "score": null,
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000338",
+          "opponent_career_id": "career_014825",
+          "opponent_name": "Tyler Wilson",
+          "opponent_team": "Calloway County",
+          "opponent_team_rank": null,
+          "opponent_weight": 182,
+          "opponent_rank": null,
+          "weight_class": "182",
+          "result": "L",
+          "method": "FF",
+          "score": null,
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

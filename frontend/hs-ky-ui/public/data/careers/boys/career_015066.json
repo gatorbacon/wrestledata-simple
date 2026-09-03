@@ -2,9 +2,9 @@
   "career_id": "career_015066",
   "canonical_name": "Andre Farris",
   "career_record": {
-    "wins": 59,
-    "losses": 24,
-    "win_pct": 0.711
+    "wins": 61,
+    "losses": 26,
+    "win_pct": 0.701
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 175,
       "record": "35-8",
       "regional_place": 3,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -856,6 +857,7 @@
       "weight_class": 175,
       "record": "24-16",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -1613,6 +1615,92 @@
           "duration": "7:00",
           "event": "vs. Southern",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000327",
+      "grade": 10,
+      "team": "John Hardin",
+      "weight_class": 182,
+      "record": "2-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000328",
+          "opponent_career_id": "career_016785",
+          "opponent_name": "Will Tompkins",
+          "opponent_team": "St. Xavier",
+          "opponent_team_rank": null,
+          "opponent_weight": 182,
+          "opponent_rank": null,
+          "weight_class": "182",
+          "result": "L",
+          "method": "FALL",
+          "score": "1:03",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000326",
+          "opponent_career_id": "career_016139",
+          "opponent_name": "Slater Swift",
+          "opponent_team": "Ashland Blazer",
+          "opponent_team_rank": null,
+          "opponent_weight": 182,
+          "opponent_rank": null,
+          "weight_class": "182",
+          "result": "W",
+          "method": "FALL",
+          "score": "3:59",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000345",
+          "opponent_career_id": "career_016797",
+          "opponent_name": "Drayton Simmons",
+          "opponent_team": "Fort Campbell",
+          "opponent_team_rank": null,
+          "opponent_weight": 182,
+          "opponent_rank": null,
+          "weight_class": "182",
+          "result": "W",
+          "method": "MD",
+          "score": "13-4",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000349",
+          "opponent_career_id": "career_016800",
+          "opponent_name": "Matthew Leffler",
+          "opponent_team": "Fairdale",
+          "opponent_team_rank": null,
+          "opponent_weight": 182,
+          "opponent_rank": null,
+          "weight_class": "182",
+          "result": "L",
+          "method": "DEC",
+          "score": "6-3",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]

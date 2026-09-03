@@ -2,9 +2,9 @@
   "career_id": "career_016289",
   "canonical_name": "Anthony Jennings",
   "career_record": {
-    "wins": 12,
-    "losses": 2,
-    "win_pct": 0.857
+    "wins": 15,
+    "losses": 4,
+    "win_pct": 0.789
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 215,
       "record": "12-2",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 3,
       "current_rank": null,
       "matches": [
@@ -592,6 +593,110 @@
           "duration": "7:00",
           "event": "vs. John Hardin",
           "season": 2013,
+          "opponent_ky": true
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "HW_B_000434",
+      "grade": 11,
+      "team": "Fairdale",
+      "weight_class": 220,
+      "record": "3-2",
+      "regional_place": null,
+      "regional_data_tracked": false,
+      "state_place": null,
+      "current_rank": null,
+      "matches": [
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000435",
+          "opponent_career_id": "career_016845",
+          "opponent_name": "Leon Price",
+          "opponent_team": "Jeffersontown",
+          "opponent_team_rank": null,
+          "opponent_weight": 220,
+          "opponent_rank": null,
+          "weight_class": "220",
+          "result": "W",
+          "method": "MD",
+          "score": "18-9",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000432",
+          "opponent_career_id": "career_016843",
+          "opponent_name": "Drew Newberry",
+          "opponent_team": "LaRue County",
+          "opponent_team_rank": null,
+          "opponent_weight": 220,
+          "opponent_rank": null,
+          "weight_class": "220",
+          "result": "L",
+          "method": "DEC",
+          "score": "7-1",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000431",
+          "opponent_career_id": "career_016842",
+          "opponent_name": "Austin Bradley",
+          "opponent_team": "Southern",
+          "opponent_team_rank": null,
+          "opponent_weight": 220,
+          "opponent_rank": null,
+          "weight_class": "220",
+          "result": "W",
+          "method": "FALL",
+          "score": "2:17",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000436",
+          "opponent_career_id": "career_015303",
+          "opponent_name": "Trevor Thompson",
+          "opponent_team": "Conner",
+          "opponent_team_rank": null,
+          "opponent_weight": 220,
+          "opponent_rank": null,
+          "weight_class": "220",
+          "result": "W",
+          "method": "FALL",
+          "score": "2:36",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-02-18",
+          "opponent_id": "HW_B_000418",
+          "opponent_career_id": "career_016836",
+          "opponent_name": "Chris Fitzpatrick",
+          "opponent_team": "Anderson County",
+          "opponent_team_rank": null,
+          "opponent_weight": 220,
+          "opponent_rank": null,
+          "weight_class": "220",
+          "result": "L",
+          "method": "DEC",
+          "score": "6-4 OT",
+          "duration": null,
+          "event": "2012 KHSAA State Championship",
+          "season": 2012,
           "opponent_ky": true
         }
       ]
