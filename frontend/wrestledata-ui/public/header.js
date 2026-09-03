@@ -73,9 +73,34 @@
               </div>
             </div>
 
-            <!-- Tournaments (Disabled/Placeholder) -->
-            <div class="nav-item nav-item--disabled">
-              <span class="nav-link nav-link--disabled">Tournaments</span>
+            <!-- Tournaments Dropdown -->
+            <div class="nav-item nav-item--dropdown" id="nav-tournaments">
+              <button class="nav-link nav-link--dropdown" aria-expanded="false" aria-haspopup="true">
+                Tournaments <span class="dropdown-arrow">▾</span>
+              </button>
+              <div class="dropdown-menu" id="tournaments-menu">
+                <a href="/ncaa_live.html" class="dropdown-item">
+                  <span class="dropdown-item-label">NCAA Live Dashboard</span>
+                </a>
+                <a href="/ncaa_report.html" class="dropdown-item">
+                  <span class="dropdown-item-label">Seed Analysis</span>
+                </a>
+                <a href="/ncaa_scoring_trends.html" class="dropdown-item">
+                  <span class="dropdown-item-label">Scoring Trends</span>
+                </a>
+                <a href="/ncaa_team_leaderboard.html" class="dropdown-item">
+                  <span class="dropdown-item-label">Team Leaderboard</span>
+                </a>
+                <a href="/ncaa_team_report.html" class="dropdown-item">
+                  <span class="dropdown-item-label">Team Analysis</span>
+                </a>
+                <a href="/ncaa_conf_leaderboard.html" class="dropdown-item">
+                  <span class="dropdown-item-label">Conference Leaderboard</span>
+                </a>
+                <a href="/ncaa_conf_analysis.html" class="dropdown-item">
+                  <span class="dropdown-item-label">Conference Analysis</span>
+                </a>
+              </div>
             </div>
           </div>
 
