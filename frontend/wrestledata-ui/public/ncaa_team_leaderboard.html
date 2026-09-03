@@ -4,70 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NCAA D1 Wrestling — Team Leaderboard</title>
+  <link rel="stylesheet" href="/styles.css?v=20260904" />
   <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
   <style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: #f4f6f9;
-  color: #222;
-}
-.top-nav {
-  background: #1a1a2e;
-  padding: 0 32px;
-  display: flex;
-  gap: 4px;
-  align-items: center;
-  height: 48px;
-}
-.nav-link {
-  color: rgba(255,255,255,0.65);
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
-  padding: 6px 14px;
-  border-radius: 5px;
-  transition: background 0.15s;
-}
-.nav-link:hover { background: rgba(255,255,255,0.1); color: #fff; }
-.nav-link.active { background: rgba(255,255,255,0.15); color: #fff; }
-.nav-dropdown { position: relative; display: flex; align-items: center; }
-.nav-dropdown-trigger { cursor: default; user-select: none; }
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #1a1a2e;
-  border-top: 2px solid rgba(255,255,255,0.12);
-  min-width: 210px;
-  z-index: 200;
-  border-radius: 0 0 7px 7px;
-  padding: 4px 0;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-}
-.nav-dropdown:hover .dropdown-menu { display: block; }
-.dropdown-item {
-  display: block;
-  padding: 9px 18px;
-  color: rgba(255,255,255,0.7);
-  text-decoration: none;
-  font-size: 0.875rem;
-  font-weight: 500;
-  white-space: nowrap;
-}
-.dropdown-item:hover { background: rgba(255,255,255,0.08); color: #fff; }
-.dropdown-item.active { color: #fff; background: rgba(255,255,255,0.13); }
-.page-body { padding: 32px 24px; }
 .report-header { text-align: center; margin-bottom: 40px; }
 .report-header h1 {
-  font-size: 2rem; font-weight: 700; color: #1a1a2e; letter-spacing: -0.5px;
+  font-size: 2rem; font-weight: 700; color: var(--text); letter-spacing: -0.5px;
 }
-.report-header p { color: #666; margin-top: 6px; font-size: 0.95rem; }
+.report-header p { color: var(--muted); margin-top: 6px; font-size: 0.95rem; }
 .section {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
   padding: 28px 32px;
   margin-bottom: 32px;
   max-width: 1100px;
@@ -75,54 +23,42 @@ body {
   margin-right: auto;
 }
 .section h2 {
-  font-size: 1.35rem; font-weight: 600; color: #1a1a2e;
-  margin-bottom: 6px; border-bottom: 2px solid #e8ecf0; padding-bottom: 10px;
+  font-size: 1.35rem; font-weight: 600; color: var(--text);
+  margin-bottom: 6px; border-bottom: 2px solid var(--border); padding-bottom: 10px;
 }
-.section .subtitle { color: #666; font-size: 0.9rem; margin-bottom: 20px; }
+.section .subtitle { color: var(--muted); font-size: 0.9rem; margin-bottom: 20px; }
 .two-col {
   display: grid; grid-template-columns: 1fr 2fr; gap: 28px; align-items: start;
 }
 .data-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
 .data-table thead th {
-  background: #1a1a2e; color: #fff; padding: 9px 14px;
-  text-align: left; font-weight: 500; letter-spacing: 0.3px;
+  background: var(--panel-2); color: var(--muted); padding: 9px 14px;
+  text-align: left; font-weight: 600; letter-spacing: 0.3px;
+  text-transform: uppercase; font-size: 0.75rem;
+  border-bottom: 1px solid var(--border);
 }
-.data-table tbody tr:nth-child(even) { background: #f7f9fb; }
-.data-table tbody tr:hover { background: #eef2f7; }
-.data-table tbody td { padding: 7px 14px; border-bottom: 1px solid #ebebeb; }
+.data-table tbody tr:nth-child(even) { background: var(--panel-2); }
+.data-table tbody tr:hover { background: var(--border); }
+.data-table tbody td { padding: 7px 14px; border-bottom: 1px solid var(--border); color: var(--text); }
 .chart-container { width: 100%; }
 </style>
 </head>
 <body>
-<nav class="top-nav">
-  <a href="index.html" class="nav-link">Home</a>
-  <a href="ncaa_live.html" class="nav-link">Live Tracker</a>
-  <div class="nav-dropdown">
-    <span class="nav-link nav-dropdown-trigger active">Reports &#9662;</span>
-    <div class="dropdown-menu">
-<a href="ncaa_report.html" class="dropdown-item">Seed Analysis</a>
-<a href="ncaa_scoring_trends.html" class="dropdown-item">Scoring Trends</a>
-<a href="ncaa_team_leaderboard.html" class="dropdown-item active">Team Leaderboard</a>
-<a href="ncaa_team_report.html" class="dropdown-item">Team Analysis</a>
-<a href="ncaa_conf_leaderboard.html" class="dropdown-item">Conference Leaderboard</a>
-<a href="ncaa_conf_analysis.html" class="dropdown-item">Conference Analysis</a>
-    </div>
-  </div>
-</nav>
-<div class="page-body">
+  <script src="/header.js?v=20260903"></script>
+  <div class="page-container">
 
 
 <style>
 .controls-bar {
   display: flex; align-items: center; gap: 20px; margin-bottom: 24px; flex-wrap: wrap;
 }
-.controls-bar label { font-weight: 600; color: #1a1a2e; font-size: 1rem; }
+.controls-bar label { font-weight: 600; color: #211c16; font-size: 1rem; }
 .controls-bar input[type=number] {
   width: 80px; padding: 7px 10px; border-radius: 6px;
-  border: 1px solid #ccd0d8; font-size: 0.95rem; text-align: center;
+  border: 1px solid #e7e1d5; font-size: 0.95rem; text-align: center;
 }
 .controls-bar input[type=number]:focus { outline: 2px solid #1f77b4; }
-#team-count { font-size: 0.9rem; color: #888; font-style: italic; }
+#team-count { font-size: 0.9rem; color: #8f8574; font-style: italic; }
 </style>
 
 <div class="report-header">
@@ -138,8 +74,8 @@ body {
   </div>
 
   <p class="subtitle" style="margin-bottom:20px">
-    <span style="color:#27ae60;font-weight:600">Green</span> = outperformed the field for their seeds &nbsp;·&nbsp;
-    <span style="color:#f0a500;font-weight:600">Amber</span> = underperformed &nbsp;·&nbsp;
+    <span style="color:#38a169;font-weight:600">Green</span> = outperformed the field for their seeds &nbsp;·&nbsp;
+    <span style="color:#ed8936;font-weight:600">Amber</span> = underperformed &nbsp;·&nbsp;
     Δ = how many placement spots better (+) or worse (−) than the field average at each seed
   </p>
 
@@ -154,10 +90,10 @@ body {
   <p class="subtitle" style="margin-bottom:16px">
     Both metrics on one chart. Bubble size = number of wrestlers (n).
     Color indicates quadrant:
-    <span style="color:#27ae60;font-weight:600">green</span> = consistently overperform,
-    <span style="color:#e74c3c;font-weight:600">red</span> = consistently underperform,
-    <span style="color:#f0a500;font-weight:600">amber</span> = beat avg often but slight negative delta,
-    <span style="color:#3498db;font-weight:600">blue</span> = positive avg delta but inconsistent.
+    <span style="color:#38a169;font-weight:600">green</span> = consistently overperform,
+    <span style="color:#c53030;font-weight:600">red</span> = consistently underperform,
+    <span style="color:#ed8936;font-weight:600">amber</span> = beat avg often but slight negative delta,
+    <span style="color:#2b6cb0;font-weight:600">blue</span> = positive avg delta but inconsistent.
   </p>
   <div id="quadrant-chart"></div>
 </div>
@@ -210,11 +146,11 @@ function renderLeaderboard() {
   // Labels: "Team Name (n)" — shared by both charts so they align
   const labels      = rev.map(t => t.team + "  (" + t.n + ")");
   const deltas      = rev.map(t => -t.avg_delta);   // invert: positive = outperformed
-  const deltaColors = rev.map(t => t.avg_delta <= 0 ? "#27ae60" : "#f0a500");
+  const deltaColors = rev.map(t => t.avg_delta <= 0 ? "#38a169" : "#ed8936");
   const deltaTexts  = rev.map(t => (-t.avg_delta >= 0 ? "+" : "") + (-t.avg_delta).toFixed(2));
 
   const pcts      = rev.map(t => t.pct_better);
-  const pctColors = rev.map(t => t.pct_better >= 50 ? "#27ae60" : "#f0a500");
+  const pctColors = rev.map(t => t.pct_better >= 50 ? "#38a169" : "#ed8936");
   const pctTexts  = rev.map(t => t.pct_better.toFixed(1) + "%");
 
   const chartHeight = Math.max(420, filtered.length * 26 + 120);
@@ -222,7 +158,7 @@ function renderLeaderboard() {
     height: chartHeight,
     margin: { l: 10, r: 90, t: 44, b: 50 },
     yaxis: { automargin: true, tickfont: { size: 11 } },
-    plot_bgcolor: "#fafafa",
+    plot_bgcolor: "#f1ede4",
     paper_bgcolor: "#ffffff",
     hovermode: "closest",
   };
@@ -230,7 +166,7 @@ function renderLeaderboard() {
   // --- Avg Delta chart ---
   const axisInfo = deltaAxisRange(deltas);
   const deltaTitle = "Avg Performance vs. Field  (positive = outperformed)"
-    + (axisInfo.clipped ? "  <i style='font-size:12px;color:#999'>· outlier(s) clipped — see hover for full value</i>" : "");
+    + (axisInfo.clipped ? "  <i style='font-size:12px;color:#8f8574'>· outlier(s) clipped — see hover for full value</i>" : "");
   Plotly.react("leaderboard-chart", [{
     type: "bar",
     orientation: "h",
@@ -249,11 +185,11 @@ function renderLeaderboard() {
     xaxis: {
       title: "Avg Δ vs. Field  (positive = outperformed)",
       range: axisInfo.range,
-      zeroline: true, zerolinecolor: "#888", zerolinewidth: 1.5,
-      gridcolor: "#ebebeb",
+      zeroline: true, zerolinecolor: "#8f8574", zerolinewidth: 1.5,
+      gridcolor: "#e7e1d5",
     },
     shapes: [{ type:"line", x0:0, x1:0, y0:-0.5, y1:filtered.length-0.5,
-                line:{ color:"#555", width:1, dash:"dot" } }],
+                line:{ color:"#8f8574", width:1, dash:"dot" } }],
   });
 
   // --- % Beat Average chart ---
@@ -274,10 +210,10 @@ function renderLeaderboard() {
     xaxis: {
       title: "% Beat Average",
       range: [0, 100],
-      gridcolor: "#ebebeb",
+      gridcolor: "#e7e1d5",
     },
     shapes: [{ type:"line", x0:50, x1:50, y0:-0.5, y1:filtered.length-0.5,
-                line:{ color:"#888", width:1.5, dash:"dash" } }],
+                line:{ color:"#8f8574", width:1.5, dash:"dash" } }],
   });
 
   // --- Quadrant chart ---
@@ -288,7 +224,7 @@ function renderLeaderboard() {
     const inQ2 = inv <  0 && t.pct_better >= 50;  // top-left:  often beats but thin margin
     const inQ3 = inv >= 0 && t.pct_better <  50;  // bottom-right: big wins, inconsistent
     const inQ4 = inv <  0 && t.pct_better <  50;  // bottom-left: consistently poor
-    const color = inQ1 ? "#27ae60" : inQ4 ? "#e74c3c" : inQ2 ? "#f0a500" : "#3498db";
+    const color = inQ1 ? "#38a169" : inQ4 ? "#c53030" : inQ2 ? "#ed8936" : "#2b6cb0";
     qX.push(parseFloat(inv.toFixed(3)));
     qY.push(t.pct_better);
     qColors.push(color);
@@ -309,7 +245,7 @@ function renderLeaderboard() {
                line: { color: "#fff", width: 1 } },
     text: qLabels,
     textposition: "top center",
-    textfont: { size: 9, color: "#444" },
+    textfont: { size: 9, color: "#211c16" },
     hovertext: qText,
     hoverinfo: "text",
     customdata: qLabels,
@@ -319,34 +255,34 @@ function renderLeaderboard() {
     title: { text: "Performance Matrix — Avg Δ vs. % Beat Average", font: { size: 16 } },
     xaxis: {
       title: "Avg Δ vs. Field  (positive = outperformed)",
-      zeroline: true, zerolinecolor: "#888", zerolinewidth: 1.5,
-      gridcolor: "#ebebeb",
+      zeroline: true, zerolinecolor: "#8f8574", zerolinewidth: 1.5,
+      gridcolor: "#e7e1d5",
     },
     yaxis: {
       title: "% Beat Average",
       range: [0, 100],
-      gridcolor: "#ebebeb",
+      gridcolor: "#e7e1d5",
     },
-    plot_bgcolor: "#fafafa",
+    plot_bgcolor: "#f1ede4",
     paper_bgcolor: "#ffffff",
     hovermode: "closest",
     shapes: [
       // zero vertical line
       { type:"line", x0:0, x1:0, y0:0, y1:100,
-         line:{ color:"#aaa", width:1, dash:"dot" } },
+         line:{ color:"#8f8574", width:1, dash:"dot" } },
       // 50% horizontal line
       { type:"line", x0:Math.min(...qX)-0.5, x1:Math.max(...qX)+0.5, y0:50, y1:50,
-         line:{ color:"#aaa", width:1, dash:"dot" } },
+         line:{ color:"#8f8574", width:1, dash:"dot" } },
     ],
     annotations: [
       { x: Math.max(...qX)*0.85, y: 94, text: "Consistent Overperformers",
-         showarrow: false, font: { size: 10, color: "#27ae60" }, xref:"x", yref:"y" },
+         showarrow: false, font: { size: 10, color: "#38a169" }, xref:"x", yref:"y" },
       { x: Math.min(...qX)*0.85, y: 94, text: "Often Beats, Thin Margin",
-         showarrow: false, font: { size: 10, color: "#f0a500" }, xref:"x", yref:"y" },
+         showarrow: false, font: { size: 10, color: "#ed8936" }, xref:"x", yref:"y" },
       { x: Math.max(...qX)*0.85, y:  6, text: "Big Wins, Inconsistent",
-         showarrow: false, font: { size: 10, color: "#3498db" }, xref:"x", yref:"y" },
+         showarrow: false, font: { size: 10, color: "#2b6cb0" }, xref:"x", yref:"y" },
       { x: Math.min(...qX)*0.85, y:  6, text: "Consistent Underperformers",
-         showarrow: false, font: { size: 10, color: "#e74c3c" }, xref:"x", yref:"y" },
+         showarrow: false, font: { size: 10, color: "#c53030" }, xref:"x", yref:"y" },
     ],
   });
 
@@ -355,17 +291,17 @@ function renderLeaderboard() {
   filtered.forEach((t, i) => {
     const inv   = -t.avg_delta;
     const sign  = inv >= 0 ? "+" : "";
-    const dColor = inv >= 0 ? "#27ae60" : "#c0392b";
-    const pColor = t.pct_better >= 50 ? "#27ae60" : "#c0392b";
+    const dColor = inv >= 0 ? "#38a169" : "#c53030";
+    const pColor = t.pct_better >= 50 ? "#38a169" : "#c53030";
     rows += `<tr>
       <td>${i + 1}</td>
-      <td>${t.team} <span style="color:#999;font-size:0.82em">(n=${t.n})</span></td>
+      <td>${t.team} <span style="color:#8f8574;font-size:0.82em">(n=${t.n})</span></td>
       <td style="color:${dColor};font-weight:600">${sign}${inv.toFixed(2)}</td>
       <td style="color:${pColor};font-weight:600">${t.pct_better.toFixed(1)}%</td>
     </tr>`;
   });
   document.getElementById("leaderboard-table-body").innerHTML =
-    rows || '<tr><td colspan="4" style="text-align:center;color:#aaa;padding:20px">No teams meet minimum</td></tr>';
+    rows || '<tr><td colspan="4" style="text-align:center;color:#8f8574;padding:20px">No teams meet minimum</td></tr>';
 
   document.getElementById("team-count").textContent =
     filtered.length + " team" + (filtered.length !== 1 ? "s" : "");
@@ -378,6 +314,6 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 
 
-</div>
+  </div>
 </body>
 </html>

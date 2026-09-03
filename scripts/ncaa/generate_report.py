@@ -311,13 +311,13 @@ def section_seed_vs_placement(wrestlers: list[dict]) -> tuple[str, str]:
         xaxis=dict(title="Seed", tickmode="linear", tick0=1, dtick=2, range=[0, 34]),
         yaxis=dict(title="Placement", autorange="reversed", range=[34, 0]),
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-        plot_bgcolor="#fafafa",
+        plot_bgcolor="#f1ede4",
         paper_bgcolor="#ffffff",
         height=520,
         hovermode="closest",
     )
-    fig.update_xaxes(showgrid=True, gridcolor="#ebebeb")
-    fig.update_yaxes(showgrid=True, gridcolor="#ebebeb")
+    fig.update_xaxes(showgrid=True, gridcolor="#e7e1d5")
+    fig.update_yaxes(showgrid=True, gridcolor="#e7e1d5")
 
     chart_div = pio.to_html(fig, full_html=False, include_plotlyjs=False)
     return table_html, chart_div
@@ -329,100 +329,31 @@ def section_seed_vs_placement(wrestlers: list[dict]) -> tuple[str, str]:
 
 PLOTLYJS_CDN = '<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>'
 
-REPORT_LINKS = {
-    "ncaa_report.html":            "Seed Analysis",
-    "ncaa_scoring_trends.html":    "Scoring Trends",
-    "ncaa_team_leaderboard.html":  "Team Leaderboard",
-    "ncaa_team_report.html":       "Team Analysis",
-    "ncaa_conf_leaderboard.html":  "Conference Leaderboard",
-    "ncaa_conf_analysis.html":     "Conference Analysis",
+# Single source of truth for this palette -- must match frontend/wrestledata-ui/
+# public/styles.css's :root token block exactly. Also emitted to
+# theme_colors.js so other scripts/pages can read it at runtime.
+THEME = {
+    "bg": "#f7f5f0", "panel": "#ffffff", "panel_2": "#f1ede4", "border": "#e7e1d5",
+    "text": "#211c16", "muted": "#6b6153", "muted_2": "#8f8574",
+    "accent": "#2b6cb0", "accent_2": "#4a80c4",
+    "good": "#38a169", "bad": "#c53030", "warn": "#ed8936",
+    "pill_1": "#ed8936", "pill_2": "#38a169", "pill_3": "#2b6cb0", "pill_4": "#8a6fae",
 }
 
-def nav_bar(active_file: str) -> str:
-    home_cls  = "nav-link active" if active_file == "index.html"      else "nav-link"
-    live_cls  = "nav-link active" if active_file == "ncaa_live.html"   else "nav-link"
-    in_report = active_file in REPORT_LINKS
-    rep_cls   = "nav-link nav-dropdown-trigger active" if in_report else "nav-link nav-dropdown-trigger"
-
-    items = ""
-    for fname, label in REPORT_LINKS.items():
-        cls = "dropdown-item active" if fname == active_file else "dropdown-item"
-        items += f'<a href="{fname}" class="{cls}">{label}</a>\n'
-
-    return f"""<nav class="top-nav">
-  <a href="index.html" class="{home_cls}">Home</a>
-  <a href="ncaa_live.html" class="{live_cls}">Live Tracker</a>
-  <div class="nav-dropdown">
-    <span class="{rep_cls}">Reports &#9662;</span>
-    <div class="dropdown-menu">
-{items}    </div>
-  </div>
-</nav>"""
-
-
+# Page-specific rules only -- nav/chrome now comes from the shared
+# styles.css + header.js (linked in html_shell below), same as every other
+# MatSavant page. Colors are var(...) tokens, not hex, so this stays in
+# sync automatically if styles.css's palette ever changes again.
 BASE_CSS = """
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: #f4f6f9;
-  color: #222;
-}
-.top-nav {
-  background: #1a1a2e;
-  padding: 0 32px;
-  display: flex;
-  gap: 4px;
-  align-items: center;
-  height: 48px;
-}
-.nav-link {
-  color: rgba(255,255,255,0.65);
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
-  padding: 6px 14px;
-  border-radius: 5px;
-  transition: background 0.15s;
-}
-.nav-link:hover { background: rgba(255,255,255,0.1); color: #fff; }
-.nav-link.active { background: rgba(255,255,255,0.15); color: #fff; }
-.nav-dropdown { position: relative; display: flex; align-items: center; }
-.nav-dropdown-trigger { cursor: default; user-select: none; }
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #1a1a2e;
-  border-top: 2px solid rgba(255,255,255,0.12);
-  min-width: 210px;
-  z-index: 200;
-  border-radius: 0 0 7px 7px;
-  padding: 4px 0;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-}
-.nav-dropdown:hover .dropdown-menu { display: block; }
-.dropdown-item {
-  display: block;
-  padding: 9px 18px;
-  color: rgba(255,255,255,0.7);
-  text-decoration: none;
-  font-size: 0.875rem;
-  font-weight: 500;
-  white-space: nowrap;
-}
-.dropdown-item:hover { background: rgba(255,255,255,0.08); color: #fff; }
-.dropdown-item.active { color: #fff; background: rgba(255,255,255,0.13); }
-.page-body { padding: 32px 24px; }
 .report-header { text-align: center; margin-bottom: 40px; }
 .report-header h1 {
-  font-size: 2rem; font-weight: 700; color: #1a1a2e; letter-spacing: -0.5px;
+  font-size: 2rem; font-weight: 700; color: var(--text); letter-spacing: -0.5px;
 }
-.report-header p { color: #666; margin-top: 6px; font-size: 0.95rem; }
+.report-header p { color: var(--muted); margin-top: 6px; font-size: 0.95rem; }
 .section {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
   padding: 28px 32px;
   margin-bottom: 32px;
   max-width: 1100px;
@@ -430,21 +361,23 @@ body {
   margin-right: auto;
 }
 .section h2 {
-  font-size: 1.35rem; font-weight: 600; color: #1a1a2e;
-  margin-bottom: 6px; border-bottom: 2px solid #e8ecf0; padding-bottom: 10px;
+  font-size: 1.35rem; font-weight: 600; color: var(--text);
+  margin-bottom: 6px; border-bottom: 2px solid var(--border); padding-bottom: 10px;
 }
-.section .subtitle { color: #666; font-size: 0.9rem; margin-bottom: 20px; }
+.section .subtitle { color: var(--muted); font-size: 0.9rem; margin-bottom: 20px; }
 .two-col {
   display: grid; grid-template-columns: 1fr 2fr; gap: 28px; align-items: start;
 }
 .data-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
 .data-table thead th {
-  background: #1a1a2e; color: #fff; padding: 9px 14px;
-  text-align: left; font-weight: 500; letter-spacing: 0.3px;
+  background: var(--panel-2); color: var(--muted); padding: 9px 14px;
+  text-align: left; font-weight: 600; letter-spacing: 0.3px;
+  text-transform: uppercase; font-size: 0.75rem;
+  border-bottom: 1px solid var(--border);
 }
-.data-table tbody tr:nth-child(even) { background: #f7f9fb; }
-.data-table tbody tr:hover { background: #eef2f7; }
-.data-table tbody td { padding: 7px 14px; border-bottom: 1px solid #ebebeb; }
+.data-table tbody tr:nth-child(even) { background: var(--panel-2); }
+.data-table tbody tr:hover { background: var(--border); }
+.data-table tbody td { padding: 7px 14px; border-bottom: 1px solid var(--border); color: var(--text); }
 .chart-container { width: 100%; }
 """
 
@@ -456,14 +389,15 @@ def html_shell(title: str, active_file: str, body: str) -> str:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title}</title>
+  <link rel="stylesheet" href="/styles.css?v=20260904" />
   {PLOTLYJS_CDN}
   <style>{BASE_CSS}</style>
 </head>
 <body>
-{nav_bar(active_file)}
-<div class="page-body">
+  <script src="/header.js?v=20260903"></script>
+  <div class="page-container">
 {body}
-</div>
+  </div>
 </body>
 </html>
 """
@@ -522,7 +456,7 @@ def section_seed_vs_points(wrestlers: list[dict]) -> tuple[str, str]:
     fig.add_trace(go.Scatter(
         x=all_x, y=all_y,
         mode="markers",
-        marker=dict(color="rgba(46,204,113,0.2)", size=5),
+        marker=dict(color="rgba(56,161,105,0.2)", size=5),
         name="Individual results",
         hoverinfo="skip",
     ))
@@ -530,11 +464,11 @@ def section_seed_vs_points(wrestlers: list[dict]) -> tuple[str, str]:
     fig.add_trace(go.Scatter(
         x=seeds, y=means,
         mode="lines+markers",
-        marker=dict(color="#27ae60", size=7),
-        line=dict(color="#27ae60", width=2),
+        marker=dict(color="#38a169", size=7),
+        line=dict(color="#38a169", width=2),
         error_y=dict(
             type="data", array=stdevs, visible=True,
-            color="#27ae60", thickness=1.5, width=4,
+            color="#38a169", thickness=1.5, width=4,
         ),
         name="Mean ± 1 SD",
         hovertemplate="Seed %{x}<br>Avg points: %{y:.2f}<br>±1 SD: %{error_y.array:.2f}<extra></extra>",
@@ -545,13 +479,13 @@ def section_seed_vs_points(wrestlers: list[dict]) -> tuple[str, str]:
         xaxis=dict(title="Seed", tickmode="linear", tick0=1, dtick=2, range=[0, 34]),
         yaxis=dict(title="Team Points"),
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-        plot_bgcolor="#fafafa",
+        plot_bgcolor="#f1ede4",
         paper_bgcolor="#ffffff",
         height=520,
         hovermode="closest",
     )
-    fig.update_xaxes(showgrid=True, gridcolor="#ebebeb")
-    fig.update_yaxes(showgrid=True, gridcolor="#ebebeb")
+    fig.update_xaxes(showgrid=True, gridcolor="#e7e1d5")
+    fig.update_yaxes(showgrid=True, gridcolor="#e7e1d5")
 
     chart_div = pio.to_html(fig, full_html=False, include_plotlyjs=False)
     return table_html, chart_div
@@ -702,11 +636,11 @@ def build_team_page(wrestlers: list[dict]) -> str:
         xaxis=dict(title="Seed", tickmode="linear", tick0=1, dtick=2, range=[0, 34]),
         yaxis=dict(title="Placement", autorange="reversed", range=[34, 0]),
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-        plot_bgcolor="#fafafa", paper_bgcolor="#ffffff",
+        plot_bgcolor="#f1ede4", paper_bgcolor="#ffffff",
         height=500, hovermode="closest",
     )
-    fig_bg.update_xaxes(showgrid=True, gridcolor="#ebebeb")
-    fig_bg.update_yaxes(showgrid=True, gridcolor="#ebebeb")
+    fig_bg.update_xaxes(showgrid=True, gridcolor="#e7e1d5")
+    fig_bg.update_yaxes(showgrid=True, gridcolor="#e7e1d5")
 
     overlay_div = pio.to_html(fig_bg, full_html=False, include_plotlyjs=False,
                               div_id="overlay-chart")
@@ -719,13 +653,13 @@ def build_team_page(wrestlers: list[dict]) -> str:
         title=dict(text="Team Performance vs. Average (select a team)", font=dict(size=17)),
         xaxis=dict(title="Seed", tickmode="linear", tick0=1, dtick=1, range=[0, 34]),
         yaxis=dict(title="Δ Placement vs. Average  (negative = better)"),
-        plot_bgcolor="#fafafa", paper_bgcolor="#ffffff",
+        plot_bgcolor="#f1ede4", paper_bgcolor="#ffffff",
         height=380, hovermode="x",
         shapes=[dict(type="line", x0=0, x1=34, y0=0, y1=0,
-                     line=dict(color="#999", width=1, dash="dash"))],
+                     line=dict(color="#8f8574", width=1, dash="dash"))],
     )
-    fig_delta.update_xaxes(showgrid=True, gridcolor="#ebebeb")
-    fig_delta.update_yaxes(showgrid=True, gridcolor="#ebebeb")
+    fig_delta.update_xaxes(showgrid=True, gridcolor="#e7e1d5")
+    fig_delta.update_yaxes(showgrid=True, gridcolor="#e7e1d5")
 
     delta_div = pio.to_html(fig_delta, full_html=False, include_plotlyjs=False,
                             div_id="delta-chart")
@@ -777,10 +711,10 @@ function updateCharts() {{
     const n = g.names.length;
     const om = OVERALL_STATS[g.seed] ? OVERALL_STATS[g.seed].mean : null;
     // Green = better (lower placement), amber = worse, gray = no reference
-    const color = om === null ? "#aaaaaa"
-                : g.ep < om  ? "#27ae60"
-                : g.ep > om  ? "#f0a500"
-                :               "#aaaaaa";
+    const color = om === null ? "#8f8574"
+                : g.ep < om  ? "#38a169"
+                : g.ep > om  ? "#ed8936"
+                :               "#8f8574";
     ptX.push(g.seed);
     ptY.push(g.ep);
     ptColors.push(color);
@@ -816,7 +750,7 @@ function updateCharts() {{
     const delta = om - tm;  // positive = outperformed (placed better than average)
     dX.push(s);
     dY.push(parseFloat(delta.toFixed(2)));
-    dColors.push(delta >= 0 ? "#2ecc71" : "#e05c2a");
+    dColors.push(delta >= 0 ? "#38a169" : "#c53030");
     dText.push("n=" + vals.length + " | team avg " + tm.toFixed(1) + ", overall " + om.toFixed(1));
   }};
 
@@ -831,10 +765,10 @@ function updateCharts() {{
     title: {{ text: team + " vs. Average Placement by Seed" }},
     xaxis: {{ title: "Seed", tickmode: "linear", tick0: 1, dtick: 1, range: [0,34] }},
     yaxis: {{ title: "Δ Placement (positive = outperformed average)" }},
-    plot_bgcolor: "#fafafa", paper_bgcolor: "#ffffff",
+    plot_bgcolor: "#f1ede4", paper_bgcolor: "#ffffff",
     height: 380, hovermode: "x",
     shapes: [{{ type:"line", x0:0, x1:34, y0:0, y1:0,
-                line:{{ color:"#999", width:1, dash:"dash" }} }}],
+                line:{{ color:"#8f8574", width:1, dash:"dash" }} }}],
   }});
 
   // Update stats table
@@ -847,7 +781,7 @@ function updateCharts() {{
     const om = OVERALL_STATS[s] ? OVERALL_STATS[s].mean : null;
     const delta = om !== null ? (om - tm) : null;  // positive = outperformed
     const deltaStr = delta !== null
-      ? `<span style="color:${{delta>=0?"#27ae60":"#c0392b"}};font-weight:600">${{delta>=0?"+":""}}${{delta.toFixed(2)}}</span>`
+      ? `<span style="color:${{delta>=0?"#38a169":"#c53030"}};font-weight:600">${{delta>=0?"+":""}}${{delta.toFixed(2)}}</span>`
       : "—";
     rows += `<tr><td>${{s}}</td><td>${{tm.toFixed(2)}}</td><td>${{sd.toFixed(2)}}</td><td>${{om!==null?om.toFixed(2):"—"}}</td><td>${{deltaStr}}</td><td>${{vals.length}}</td></tr>`;
   }}
@@ -861,14 +795,14 @@ function updateCharts() {{
 .team-controls {
   display: flex; align-items: center; gap: 16px; margin-bottom: 24px;
 }
-.team-controls label { font-weight: 600; color: #1a1a2e; font-size: 1rem; }
+.team-controls label { font-weight: 600; color: var(--text); font-size: 1rem; }
 .team-controls select {
-  padding: 8px 14px; border-radius: 6px; border: 1px solid #ccd0d8;
-  font-size: 0.95rem; background: #fff; color: #222; cursor: pointer;
+  padding: 8px 14px; border-radius: 6px; border: 1px solid var(--border);
+  font-size: 0.95rem; background: var(--panel); color: var(--text); cursor: pointer;
   min-width: 240px;
 }
-.team-controls select:focus { outline: 2px solid #1f77b4; }
-#team-label { font-size: 0.95rem; color: #888; font-style: italic; }
+.team-controls select:focus { outline: 2px solid var(--accent); }
+#team-label { font-size: 0.95rem; color: var(--muted-2); font-style: italic; }
 </style>
 """
 
@@ -914,7 +848,7 @@ function updateCharts() {{
       </tr>
     </thead>
     <tbody id="team-table-body">
-      <tr><td colspan="6" style="text-align:center;color:#aaa;padding:20px">Select a team above</td></tr>
+      <tr><td colspan="6" style="text-align:center;color:#8f8574;padding:20px">Select a team above</td></tr>
     </tbody>
   </table>
 </div>
@@ -1003,11 +937,11 @@ function renderLeaderboard() {{
   // Labels: "Team Name (n)" — shared by both charts so they align
   const labels      = rev.map(t => t.team + "  (" + t.n + ")");
   const deltas      = rev.map(t => -t.avg_delta);   // invert: positive = outperformed
-  const deltaColors = rev.map(t => t.avg_delta <= 0 ? "#27ae60" : "#f0a500");
+  const deltaColors = rev.map(t => t.avg_delta <= 0 ? "#38a169" : "#ed8936");
   const deltaTexts  = rev.map(t => (-t.avg_delta >= 0 ? "+" : "") + (-t.avg_delta).toFixed(2));
 
   const pcts      = rev.map(t => t.pct_better);
-  const pctColors = rev.map(t => t.pct_better >= 50 ? "#27ae60" : "#f0a500");
+  const pctColors = rev.map(t => t.pct_better >= 50 ? "#38a169" : "#ed8936");
   const pctTexts  = rev.map(t => t.pct_better.toFixed(1) + "%");
 
   const chartHeight = Math.max(420, filtered.length * 26 + 120);
@@ -1015,7 +949,7 @@ function renderLeaderboard() {{
     height: chartHeight,
     margin: {{ l: 10, r: 90, t: 44, b: 50 }},
     yaxis: {{ automargin: true, tickfont: {{ size: 11 }} }},
-    plot_bgcolor: "#fafafa",
+    plot_bgcolor: "#f1ede4",
     paper_bgcolor: "#ffffff",
     hovermode: "closest",
   }};
@@ -1023,7 +957,7 @@ function renderLeaderboard() {{
   // --- Avg Delta chart ---
   const axisInfo = deltaAxisRange(deltas);
   const deltaTitle = "Avg Performance vs. Field  (positive = outperformed)"
-    + (axisInfo.clipped ? "  <i style='font-size:12px;color:#999'>· outlier(s) clipped — see hover for full value</i>" : "");
+    + (axisInfo.clipped ? "  <i style='font-size:12px;color:#8f8574'>· outlier(s) clipped — see hover for full value</i>" : "");
   Plotly.react("leaderboard-chart", [{{
     type: "bar",
     orientation: "h",
@@ -1042,11 +976,11 @@ function renderLeaderboard() {{
     xaxis: {{
       title: "Avg Δ vs. Field  (positive = outperformed)",
       range: axisInfo.range,
-      zeroline: true, zerolinecolor: "#888", zerolinewidth: 1.5,
-      gridcolor: "#ebebeb",
+      zeroline: true, zerolinecolor: "#8f8574", zerolinewidth: 1.5,
+      gridcolor: "#e7e1d5",
     }},
     shapes: [{{ type:"line", x0:0, x1:0, y0:-0.5, y1:filtered.length-0.5,
-                line:{{ color:"#555", width:1, dash:"dot" }} }}],
+                line:{{ color:"#8f8574", width:1, dash:"dot" }} }}],
   }});
 
   // --- % Beat Average chart ---
@@ -1067,10 +1001,10 @@ function renderLeaderboard() {{
     xaxis: {{
       title: "% Beat Average",
       range: [0, 100],
-      gridcolor: "#ebebeb",
+      gridcolor: "#e7e1d5",
     }},
     shapes: [{{ type:"line", x0:50, x1:50, y0:-0.5, y1:filtered.length-0.5,
-                line:{{ color:"#888", width:1.5, dash:"dash" }} }}],
+                line:{{ color:"#8f8574", width:1.5, dash:"dash" }} }}],
   }});
 
   // --- Quadrant chart ---
@@ -1081,7 +1015,7 @@ function renderLeaderboard() {{
     const inQ2 = inv <  0 && t.pct_better >= 50;  // top-left:  often beats but thin margin
     const inQ3 = inv >= 0 && t.pct_better <  50;  // bottom-right: big wins, inconsistent
     const inQ4 = inv <  0 && t.pct_better <  50;  // bottom-left: consistently poor
-    const color = inQ1 ? "#27ae60" : inQ4 ? "#e74c3c" : inQ2 ? "#f0a500" : "#3498db";
+    const color = inQ1 ? "#38a169" : inQ4 ? "#c53030" : inQ2 ? "#ed8936" : "#2b6cb0";
     qX.push(parseFloat(inv.toFixed(3)));
     qY.push(t.pct_better);
     qColors.push(color);
@@ -1102,7 +1036,7 @@ function renderLeaderboard() {{
                line: {{ color: "#fff", width: 1 }} }},
     text: qLabels,
     textposition: "top center",
-    textfont: {{ size: 9, color: "#444" }},
+    textfont: {{ size: 9, color: "#211c16" }},
     hovertext: qText,
     hoverinfo: "text",
     customdata: qLabels,
@@ -1112,34 +1046,34 @@ function renderLeaderboard() {{
     title: {{ text: "Performance Matrix — Avg Δ vs. % Beat Average", font: {{ size: 16 }} }},
     xaxis: {{
       title: "Avg Δ vs. Field  (positive = outperformed)",
-      zeroline: true, zerolinecolor: "#888", zerolinewidth: 1.5,
-      gridcolor: "#ebebeb",
+      zeroline: true, zerolinecolor: "#8f8574", zerolinewidth: 1.5,
+      gridcolor: "#e7e1d5",
     }},
     yaxis: {{
       title: "% Beat Average",
       range: [0, 100],
-      gridcolor: "#ebebeb",
+      gridcolor: "#e7e1d5",
     }},
-    plot_bgcolor: "#fafafa",
+    plot_bgcolor: "#f1ede4",
     paper_bgcolor: "#ffffff",
     hovermode: "closest",
     shapes: [
       // zero vertical line
       {{ type:"line", x0:0, x1:0, y0:0, y1:100,
-         line:{{ color:"#aaa", width:1, dash:"dot" }} }},
+         line:{{ color:"#8f8574", width:1, dash:"dot" }} }},
       // 50% horizontal line
       {{ type:"line", x0:Math.min(...qX)-0.5, x1:Math.max(...qX)+0.5, y0:50, y1:50,
-         line:{{ color:"#aaa", width:1, dash:"dot" }} }},
+         line:{{ color:"#8f8574", width:1, dash:"dot" }} }},
     ],
     annotations: [
       {{ x: Math.max(...qX)*0.85, y: 94, text: "Consistent Overperformers",
-         showarrow: false, font: {{ size: 10, color: "#27ae60" }}, xref:"x", yref:"y" }},
+         showarrow: false, font: {{ size: 10, color: "#38a169" }}, xref:"x", yref:"y" }},
       {{ x: Math.min(...qX)*0.85, y: 94, text: "Often Beats, Thin Margin",
-         showarrow: false, font: {{ size: 10, color: "#f0a500" }}, xref:"x", yref:"y" }},
+         showarrow: false, font: {{ size: 10, color: "#ed8936" }}, xref:"x", yref:"y" }},
       {{ x: Math.max(...qX)*0.85, y:  6, text: "Big Wins, Inconsistent",
-         showarrow: false, font: {{ size: 10, color: "#3498db" }}, xref:"x", yref:"y" }},
+         showarrow: false, font: {{ size: 10, color: "#2b6cb0" }}, xref:"x", yref:"y" }},
       {{ x: Math.min(...qX)*0.85, y:  6, text: "Consistent Underperformers",
-         showarrow: false, font: {{ size: 10, color: "#e74c3c" }}, xref:"x", yref:"y" }},
+         showarrow: false, font: {{ size: 10, color: "#c53030" }}, xref:"x", yref:"y" }},
     ],
   }});
 
@@ -1148,17 +1082,17 @@ function renderLeaderboard() {{
   filtered.forEach((t, i) => {{
     const inv   = -t.avg_delta;
     const sign  = inv >= 0 ? "+" : "";
-    const dColor = inv >= 0 ? "#27ae60" : "#c0392b";
-    const pColor = t.pct_better >= 50 ? "#27ae60" : "#c0392b";
+    const dColor = inv >= 0 ? "#38a169" : "#c53030";
+    const pColor = t.pct_better >= 50 ? "#38a169" : "#c53030";
     rows += `<tr>
       <td>${{i + 1}}</td>
-      <td>${{t.team}} <span style="color:#999;font-size:0.82em">(n=${{t.n}})</span></td>
+      <td>${{t.team}} <span style="color:#8f8574;font-size:0.82em">(n=${{t.n}})</span></td>
       <td style="color:${{dColor}};font-weight:600">${{sign}}${{inv.toFixed(2)}}</td>
       <td style="color:${{pColor}};font-weight:600">${{t.pct_better.toFixed(1)}}%</td>
     </tr>`;
   }});
   document.getElementById("leaderboard-table-body").innerHTML =
-    rows || '<tr><td colspan="4" style="text-align:center;color:#aaa;padding:20px">No teams meet minimum</td></tr>';
+    rows || '<tr><td colspan="4" style="text-align:center;color:#8f8574;padding:20px">No teams meet minimum</td></tr>';
 
   document.getElementById("team-count").textContent =
     filtered.length + " team" + (filtered.length !== 1 ? "s" : "");
@@ -1176,13 +1110,13 @@ document.addEventListener("DOMContentLoaded", () => {{
 .controls-bar {
   display: flex; align-items: center; gap: 20px; margin-bottom: 24px; flex-wrap: wrap;
 }
-.controls-bar label { font-weight: 600; color: #1a1a2e; font-size: 1rem; }
+.controls-bar label { font-weight: 600; color: #211c16; font-size: 1rem; }
 .controls-bar input[type=number] {
   width: 80px; padding: 7px 10px; border-radius: 6px;
-  border: 1px solid #ccd0d8; font-size: 0.95rem; text-align: center;
+  border: 1px solid #e7e1d5; font-size: 0.95rem; text-align: center;
 }
 .controls-bar input[type=number]:focus { outline: 2px solid #1f77b4; }
-#team-count { font-size: 0.9rem; color: #888; font-style: italic; }
+#team-count { font-size: 0.9rem; color: #8f8574; font-style: italic; }
 </style>
 """
 
@@ -1201,8 +1135,8 @@ document.addEventListener("DOMContentLoaded", () => {{
   </div>
 
   <p class="subtitle" style="margin-bottom:20px">
-    <span style="color:#27ae60;font-weight:600">Green</span> = outperformed the field for their seeds &nbsp;·&nbsp;
-    <span style="color:#f0a500;font-weight:600">Amber</span> = underperformed &nbsp;·&nbsp;
+    <span style="color:#38a169;font-weight:600">Green</span> = outperformed the field for their seeds &nbsp;·&nbsp;
+    <span style="color:#ed8936;font-weight:600">Amber</span> = underperformed &nbsp;·&nbsp;
     Δ = how many placement spots better (+) or worse (−) than the field average at each seed
   </p>
 
@@ -1217,10 +1151,10 @@ document.addEventListener("DOMContentLoaded", () => {{
   <p class="subtitle" style="margin-bottom:16px">
     Both metrics on one chart. Bubble size = number of wrestlers (n).
     Color indicates quadrant:
-    <span style="color:#27ae60;font-weight:600">green</span> = consistently overperform,
-    <span style="color:#e74c3c;font-weight:600">red</span> = consistently underperform,
-    <span style="color:#f0a500;font-weight:600">amber</span> = beat avg often but slight negative delta,
-    <span style="color:#3498db;font-weight:600">blue</span> = positive avg delta but inconsistent.
+    <span style="color:#38a169;font-weight:600">green</span> = consistently overperform,
+    <span style="color:#c53030;font-weight:600">red</span> = consistently underperform,
+    <span style="color:#ed8936;font-weight:600">amber</span> = beat avg often but slight negative delta,
+    <span style="color:#2b6cb0;font-weight:600">blue</span> = positive avg delta but inconsistent.
   </p>
   <div id="quadrant-chart"></div>
 </div>
@@ -1334,11 +1268,11 @@ def build_conference_analysis_page(wrestlers: list[dict]) -> str:
         xaxis=dict(title="Seed", tickmode="linear", tick0=1, dtick=2, range=[0, 34]),
         yaxis=dict(title="Placement", autorange="reversed", range=[34, 0]),
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-        plot_bgcolor="#fafafa", paper_bgcolor="#ffffff",
+        plot_bgcolor="#f1ede4", paper_bgcolor="#ffffff",
         height=500, hovermode="closest",
     )
-    fig_bg.update_xaxes(showgrid=True, gridcolor="#ebebeb")
-    fig_bg.update_yaxes(showgrid=True, gridcolor="#ebebeb")
+    fig_bg.update_xaxes(showgrid=True, gridcolor="#e7e1d5")
+    fig_bg.update_yaxes(showgrid=True, gridcolor="#e7e1d5")
     overlay_div = pio.to_html(fig_bg, full_html=False, include_plotlyjs=False,
                               div_id="conf-overlay-chart")
 
@@ -1349,13 +1283,13 @@ def build_conference_analysis_page(wrestlers: list[dict]) -> str:
         title=dict(text="Conference Performance vs. Average (select a conference)", font=dict(size=17)),
         xaxis=dict(title="Seed", tickmode="linear", tick0=1, dtick=1, range=[0, 34]),
         yaxis=dict(title="Δ Placement vs. Average  (negative = better)"),
-        plot_bgcolor="#fafafa", paper_bgcolor="#ffffff",
+        plot_bgcolor="#f1ede4", paper_bgcolor="#ffffff",
         height=380, hovermode="x",
         shapes=[dict(type="line", x0=0, x1=34, y0=0, y1=0,
-                     line=dict(color="#999", width=1, dash="dash"))],
+                     line=dict(color="#8f8574", width=1, dash="dash"))],
     )
-    fig_delta.update_xaxes(showgrid=True, gridcolor="#ebebeb")
-    fig_delta.update_yaxes(showgrid=True, gridcolor="#ebebeb")
+    fig_delta.update_xaxes(showgrid=True, gridcolor="#e7e1d5")
+    fig_delta.update_yaxes(showgrid=True, gridcolor="#e7e1d5")
     delta_div = pio.to_html(fig_delta, full_html=False, include_plotlyjs=False,
                             div_id="conf-delta-chart")
 
@@ -1396,7 +1330,7 @@ function updateConfCharts() {{
   Object.values(groups).forEach(g => {{
     const n = g.names.length;
     const om = CONF_OVERALL_STATS[g.seed] ? CONF_OVERALL_STATS[g.seed].mean : null;
-    const color = om===null ? "#aaaaaa" : g.ep<om ? "#27ae60" : g.ep>om ? "#f0a500" : "#aaaaaa";
+    const color = om===null ? "#8f8574" : g.ep<om ? "#38a169" : g.ep>om ? "#ed8936" : "#8f8574";
     ptX.push(g.seed); ptY.push(g.ep); ptColors.push(color);
     ptSizes.push(9 + Math.sqrt(n)*5);
     const nameList = g.names.join("<br>");
@@ -1417,7 +1351,7 @@ function updateConfCharts() {{
     const vals = bySeed[s].map(d=>d.ep);
     const tm=confMean(vals), om=CONF_OVERALL_STATS[s].mean, delta=om-tm;  // positive = outperformed
     dX.push(s); dY.push(parseFloat(delta.toFixed(2)));
-    dColors.push(delta>=0?"#2ecc71":"#e05c2a");
+    dColors.push(delta>=0?"#38a169":"#c53030");
     dText.push("n="+vals.length+" | conf avg "+tm.toFixed(1)+", overall "+om.toFixed(1));
   }}
   Plotly.react("conf-delta-chart", [{{
@@ -1427,8 +1361,8 @@ function updateConfCharts() {{
     title:{{text:conf+" vs. Average Placement by Seed"}},
     xaxis:{{title:"Seed",tickmode:"linear",tick0:1,dtick:1,range:[0,34]}},
     yaxis:{{title:"Δ Placement (positive = outperformed average)"}},
-    plot_bgcolor:"#fafafa", paper_bgcolor:"#ffffff", height:380, hovermode:"x",
-    shapes:[{{type:"line",x0:0,x1:34,y0:0,y1:0,line:{{color:"#999",width:1,dash:"dash"}}}}],
+    plot_bgcolor:"#f1ede4", paper_bgcolor:"#ffffff", height:380, hovermode:"x",
+    shapes:[{{type:"line",x0:0,x1:34,y0:0,y1:0,line:{{color:"#8f8574",width:1,dash:"dash"}}}}],
   }});
 
   // Table
@@ -1439,7 +1373,7 @@ function updateConfCharts() {{
     const om=CONF_OVERALL_STATS[s]?CONF_OVERALL_STATS[s].mean:null;
     const delta=om!==null?(om-tm):null;  // positive = outperformed
     const deltaStr=delta!==null
-      ?`<span style="color:${{delta>=0?"#27ae60":"#c0392b"}};font-weight:600">${{delta>=0?"+":""}}${{delta.toFixed(2)}}</span>`
+      ?`<span style="color:${{delta>=0?"#38a169":"#c53030"}};font-weight:600">${{delta>=0?"+":""}}${{delta.toFixed(2)}}</span>`
       :"—";
     rows+=`<tr><td>${{s}}</td><td>${{tm.toFixed(2)}}</td><td>${{sd.toFixed(2)}}</td><td>${{om!==null?om.toFixed(2):"—"}}</td><td>${{deltaStr}}</td><td>${{vals.length}}</td></tr>`;
   }}
@@ -1451,13 +1385,13 @@ function updateConfCharts() {{
     conf_css = """
 <style>
 .conf-controls { display:flex; align-items:center; gap:16px; margin-bottom:24px; }
-.conf-controls label { font-weight:600; color:#1a1a2e; font-size:1rem; }
+.conf-controls label { font-weight:600; color:#211c16; font-size:1rem; }
 .conf-controls select {
-  padding:8px 14px; border-radius:6px; border:1px solid #ccd0d8;
-  font-size:0.95rem; background:#fff; color:#222; cursor:pointer; min-width:200px;
+  padding:8px 14px; border-radius:6px; border:1px solid #e7e1d5;
+  font-size:0.95rem; background:#fff; color:#211c16; cursor:pointer; min-width:200px;
 }
 .conf-controls select:focus { outline:2px solid #1f77b4; }
-#conf-label { font-size:0.95rem; color:#888; font-style:italic; }
+#conf-label { font-size:0.95rem; color:#8f8574; font-style:italic; }
 </style>
 """
 
@@ -1488,7 +1422,7 @@ function updateConfCharts() {{
       <tr><th>Seed</th><th>Conf Avg</th><th>Conf SD</th><th>Overall Avg</th><th>Delta</th><th>n</th></tr>
     </thead>
     <tbody id="conf-table-body">
-      <tr><td colspan="6" style="text-align:center;color:#aaa;padding:20px">Select a conference above</td></tr>
+      <tr><td colspan="6" style="text-align:center;color:#8f8574;padding:20px">Select a conference above</td></tr>
     </tbody>
   </table>
 </div>
@@ -1567,10 +1501,10 @@ function renderConfLeaderboard() {{
 
   const labels      = rev.map(c => c.conf + "  (" + c.n + ")");
   const deltas      = rev.map(c => -c.avg_delta);
-  const deltaColors = rev.map(c => c.avg_delta <= 0 ? "#27ae60" : "#f0a500");
+  const deltaColors = rev.map(c => c.avg_delta <= 0 ? "#38a169" : "#ed8936");
   const deltaTexts  = rev.map(c => (-c.avg_delta >= 0 ? "+" : "") + (-c.avg_delta).toFixed(2));
   const pcts        = rev.map(c => c.pct_better);
-  const pctColors   = rev.map(c => c.pct_better >= 50 ? "#27ae60" : "#f0a500");
+  const pctColors   = rev.map(c => c.pct_better >= 50 ? "#38a169" : "#ed8936");
   const pctTexts    = rev.map(c => c.pct_better.toFixed(1) + "%");
 
   const chartHeight = Math.max(300, filtered.length * 38 + 120);
@@ -1578,7 +1512,7 @@ function renderConfLeaderboard() {{
     height: chartHeight,
     margin: {{ l:10, r:90, t:44, b:50 }},
     yaxis: {{ automargin:true, tickfont:{{size:12}} }},
-    plot_bgcolor:"#fafafa", paper_bgcolor:"#ffffff", hovermode:"closest",
+    plot_bgcolor:"#f1ede4", paper_bgcolor:"#ffffff", hovermode:"closest",
   }};
 
   const axisInfo = deltaAxisRange(deltas);
@@ -1591,8 +1525,8 @@ function renderConfLeaderboard() {{
     ...sharedLayout,
     title:{{text:"Avg Performance vs. Field  (positive = outperformed)",font:{{size:15}}}},
     xaxis:{{ title:"Avg Δ vs. Field  (positive = outperformed)",
-             range:axisInfo.range, zeroline:true, zerolinecolor:"#888",
-             zerolinewidth:1.5, gridcolor:"#ebebeb" }},
+             range:axisInfo.range, zeroline:true, zerolinecolor:"#8f8574",
+             zerolinewidth:1.5, gridcolor:"#e7e1d5" }},
   }});
 
   Plotly.react("conf-pct-chart", [{{
@@ -1603,18 +1537,18 @@ function renderConfLeaderboard() {{
   }}], {{
     ...sharedLayout,
     title:{{text:"% of Appearances Beating Seed Average",font:{{size:15}}}},
-    xaxis:{{title:"% Beat Average", range:[0,100], gridcolor:"#ebebeb"}},
+    xaxis:{{title:"% Beat Average", range:[0,100], gridcolor:"#e7e1d5"}},
     shapes:[{{type:"line",x0:50,x1:50,y0:-0.5,y1:filtered.length-0.5,
-              line:{{color:"#888",width:1.5,dash:"dash"}}}}],
+              line:{{color:"#8f8574",width:1.5,dash:"dash"}}}}],
   }});
 
   // Quadrant chart
   const qX=[], qY=[], qColors=[], qSizes=[], qText=[], qLabels=[];
   filtered.forEach(c => {{
     const inv=-c.avg_delta;
-    const color = inv>=0&&c.pct_better>=50?"#27ae60"
-                : inv< 0&&c.pct_better< 50?"#e74c3c"
-                : inv< 0&&c.pct_better>=50?"#f0a500":"#3498db";
+    const color = inv>=0&&c.pct_better>=50?"#38a169"
+                : inv< 0&&c.pct_better< 50?"#c53030"
+                : inv< 0&&c.pct_better>=50?"#ed8936":"#2b6cb0";
     qX.push(parseFloat(inv.toFixed(3))); qY.push(c.pct_better);
     qColors.push(color); qSizes.push(14+Math.sqrt(c.n)*1.8);
     qLabels.push(c.conf);
@@ -1625,24 +1559,24 @@ function renderConfLeaderboard() {{
   Plotly.react("conf-quad-chart",[{{
     type:"scatter", mode:"markers+text",
     x:qX, y:qY, marker:{{color:qColors,size:qSizes,opacity:0.88,line:{{color:"#fff",width:1}}}},
-    text:qLabels, textposition:"top center", textfont:{{size:10,color:"#333"}},
+    text:qLabels, textposition:"top center", textfont:{{size:10,color:"#211c16"}},
     hovertext:qText, hoverinfo:"text",
   }}],{{
     height:480, margin:{{l:60,r:30,t:60,b:60}},
     title:{{text:"Conference Performance Matrix",font:{{size:16}}}},
     xaxis:{{title:"Avg Δ vs. Field  (positive = outperformed)",
-            zeroline:true,zerolinecolor:"#888",zerolinewidth:1.5,gridcolor:"#ebebeb"}},
-    yaxis:{{title:"% Beat Average",range:[0,100],gridcolor:"#ebebeb"}},
-    plot_bgcolor:"#fafafa", paper_bgcolor:"#ffffff", hovermode:"closest",
+            zeroline:true,zerolinecolor:"#8f8574",zerolinewidth:1.5,gridcolor:"#e7e1d5"}},
+    yaxis:{{title:"% Beat Average",range:[0,100],gridcolor:"#e7e1d5"}},
+    plot_bgcolor:"#f1ede4", paper_bgcolor:"#ffffff", hovermode:"closest",
     shapes:[
-      {{type:"line",x0:0,x1:0,y0:0,y1:100,line:{{color:"#aaa",width:1,dash:"dot"}}}},
-      {{type:"line",x0:qXmin,x1:qXmax,y0:50,y1:50,line:{{color:"#aaa",width:1,dash:"dot"}}}},
+      {{type:"line",x0:0,x1:0,y0:0,y1:100,line:{{color:"#8f8574",width:1,dash:"dot"}}}},
+      {{type:"line",x0:qXmin,x1:qXmax,y0:50,y1:50,line:{{color:"#8f8574",width:1,dash:"dot"}}}},
     ],
     annotations:[
-      {{x:qXmax*0.8,y:94,text:"Consistent Overperformers",showarrow:false,font:{{size:10,color:"#27ae60"}},xref:"x",yref:"y"}},
-      {{x:qXmin*0.8,y:94,text:"Often Beats, Thin Margin",showarrow:false,font:{{size:10,color:"#f0a500"}},xref:"x",yref:"y"}},
-      {{x:qXmax*0.8,y: 6,text:"Big Wins, Inconsistent",showarrow:false,font:{{size:10,color:"#3498db"}},xref:"x",yref:"y"}},
-      {{x:qXmin*0.8,y: 6,text:"Consistent Underperformers",showarrow:false,font:{{size:10,color:"#e74c3c"}},xref:"x",yref:"y"}},
+      {{x:qXmax*0.8,y:94,text:"Consistent Overperformers",showarrow:false,font:{{size:10,color:"#38a169"}},xref:"x",yref:"y"}},
+      {{x:qXmin*0.8,y:94,text:"Often Beats, Thin Margin",showarrow:false,font:{{size:10,color:"#ed8936"}},xref:"x",yref:"y"}},
+      {{x:qXmax*0.8,y: 6,text:"Big Wins, Inconsistent",showarrow:false,font:{{size:10,color:"#2b6cb0"}},xref:"x",yref:"y"}},
+      {{x:qXmin*0.8,y: 6,text:"Consistent Underperformers",showarrow:false,font:{{size:10,color:"#c53030"}},xref:"x",yref:"y"}},
     ],
   }});
 
@@ -1650,13 +1584,13 @@ function renderConfLeaderboard() {{
   let rows="";
   filtered.forEach((c,i) => {{
     const inv=-c.avg_delta, sign=inv>=0?"+":"";
-    const dColor=inv>=0?"#27ae60":"#c0392b", pColor=c.pct_better>=50?"#27ae60":"#c0392b";
-    rows+=`<tr><td>${{i+1}}</td><td>${{c.conf}} <span style="color:#999;font-size:0.82em">(n=${{c.n}})</span></td>`
+    const dColor=inv>=0?"#38a169":"#c53030", pColor=c.pct_better>=50?"#38a169":"#c53030";
+    rows+=`<tr><td>${{i+1}}</td><td>${{c.conf}} <span style="color:#8f8574;font-size:0.82em">(n=${{c.n}})</span></td>`
          +`<td style="color:${{dColor}};font-weight:600">${{sign}}${{inv.toFixed(2)}}</td>`
          +`<td style="color:${{pColor}};font-weight:600">${{c.pct_better.toFixed(1)}}%</td></tr>`;
   }});
   document.getElementById("conf-lb-table-body").innerHTML=
-    rows||'<tr><td colspan="4" style="text-align:center;color:#aaa;padding:20px">No data</td></tr>';
+    rows||'<tr><td colspan="4" style="text-align:center;color:#8f8574;padding:20px">No data</td></tr>';
   document.getElementById("conf-count").textContent=
     filtered.length+" conference"+(filtered.length!==1?"s":"");
 }}
@@ -1671,13 +1605,13 @@ document.addEventListener("DOMContentLoaded",()=>{{
     lb_css = """
 <style>
 .controls-bar { display:flex; align-items:center; gap:20px; margin-bottom:24px; flex-wrap:wrap; }
-.controls-bar label { font-weight:600; color:#1a1a2e; font-size:1rem; }
+.controls-bar label { font-weight:600; color:#211c16; font-size:1rem; }
 .controls-bar input[type=number] {
   width:80px; padding:7px 10px; border-radius:6px;
-  border:1px solid #ccd0d8; font-size:0.95rem; text-align:center;
+  border:1px solid #e7e1d5; font-size:0.95rem; text-align:center;
 }
 .controls-bar input[type=number]:focus { outline:2px solid #1f77b4; }
-#conf-count { font-size:0.9rem; color:#888; font-style:italic; }
+#conf-count { font-size:0.9rem; color:#8f8574; font-style:italic; }
 </style>
 """
 
@@ -1695,8 +1629,8 @@ document.addEventListener("DOMContentLoaded",()=>{{
     <span id="conf-count"></span>
   </div>
   <p class="subtitle" style="margin-bottom:20px">
-    <span style="color:#27ae60;font-weight:600">Green</span> = outperformed the field &nbsp;·&nbsp;
-    <span style="color:#f0a500;font-weight:600">Amber</span> = underperformed &nbsp;·&nbsp;
+    <span style="color:#38a169;font-weight:600">Green</span> = outperformed the field &nbsp;·&nbsp;
+    <span style="color:#ed8936;font-weight:600">Amber</span> = underperformed &nbsp;·&nbsp;
     Δ = avg spots better (+) or worse (−) than the field average at each seed
   </p>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start">
@@ -1842,12 +1776,12 @@ def _bracket_odds_content(wrestlers: list[dict]) -> tuple[str, str]:
     # position(~0) = 0.0099 → amber  (sharp jump via duplicate stop)
     # position(100) = 1.000 → green
     colorscale_json = json.dumps([
-        [0.0000, "#d0d0d0"],
-        [0.0098, "#d0d0d0"],
-        [0.0099, "#f0a500"],
-        [0.35,   "#e8c840"],
-        [0.65,   "#a8d860"],
-        [1.0000, "#27ae60"],
+        [0.0000, "#e7e1d5"],
+        [0.0098, "#e7e1d5"],
+        [0.0099, "#ed8936"],
+        [0.35,   "#ed8936"],
+        [0.65,   "#38a169"],
+        [1.0000, "#38a169"],
     ])
 
     js = f"""
@@ -1869,7 +1803,7 @@ const hmTrace = {{
   text: textVals,
   customdata: customVals,
   texttemplate: "%{{text}}",
-  textfont: {{ size: 12, color: "#222" }},
+  textfont: {{ size: 12, color: "#211c16" }},
   colorscale: colorscale,
   zmin: -1,
   zmax: 100,
@@ -1929,7 +1863,7 @@ Plotly.newPlot("curve-chart", traces, {{
     tracegroupgap: 2
   }},
   showlegend: true,
-  plot_bgcolor: "#f9f9f9",
+  plot_bgcolor: "#f1ede4",
   paper_bgcolor: "#ffffff"
 }}, {{ responsive: true, displayModeBar: false }});
 
@@ -1952,8 +1886,8 @@ Plotly.newPlot("curve-chart", traces, {{
   <h2 style="margin-bottom:6px">Bracket Survival Curves</h2>
   <p class="subtitle">
     Each line shows one seed's survival rate through the championship bracket.
-    Color gradient: <span style="color:#27ae60;font-weight:600">green = seed 1</span>
-    → <span style="color:#c83232;font-weight:600">red = seed 33</span>.
+    Color gradient: <span style="color:#38a169;font-weight:600">green = seed 1</span>
+    → <span style="color:#c53030;font-weight:600">red = seed 33</span>.
   </p>
   <div id="curve-chart" style="width:100%;height:520px"></div>
 </div>
@@ -2062,11 +1996,11 @@ def build_scoring_trends_page() -> str:
         xaxis=dict(title="Year", tickmode="linear", dtick=1),
         yaxis=dict(title="Team Points"),
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-        plot_bgcolor="#fafafa", paper_bgcolor="#ffffff",
+        plot_bgcolor="#f1ede4", paper_bgcolor="#ffffff",
         height=460, hovermode="x unified",
     )
-    fig1.update_xaxes(showgrid=True, gridcolor="#ebebeb")
-    fig1.update_yaxes(showgrid=True, gridcolor="#ebebeb")
+    fig1.update_xaxes(showgrid=True, gridcolor="#e7e1d5")
+    fig1.update_yaxes(showgrid=True, gridcolor="#e7e1d5")
     chart1_div = pio.to_html(fig1, full_html=False, include_plotlyjs=False)
 
     # -----------------------------------------------------------------------
@@ -2092,11 +2026,11 @@ def build_scoring_trends_page() -> str:
         title=dict(text="Scoring Concentration Over Time", font=dict(size=18)),
         xaxis=dict(title="Year", tickmode="linear", dtick=1),
         yaxis=dict(title="Gini Coefficient", side="left", range=[0, 0.75],
-                   showgrid=True, gridcolor="#ebebeb"),
+                   showgrid=True, gridcolor="#e7e1d5"),
         yaxis2=dict(title="Top-5 Share (%)", side="right", overlaying="y",
                     range=[0, 75], showgrid=False),
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-        plot_bgcolor="#fafafa", paper_bgcolor="#ffffff",
+        plot_bgcolor="#f1ede4", paper_bgcolor="#ffffff",
         height=400, hovermode="x", barmode="overlay",
     )
     chart2_div = pio.to_html(fig2, full_html=False, include_plotlyjs=False)
@@ -2106,11 +2040,11 @@ def build_scoring_trends_page() -> str:
     # -----------------------------------------------------------------------
     fig5 = go.Figure()
     bucket_defs = [
-        (bucket_50plus, "50+ pts",   "rgba(39,174,96,0.85)"),
-        (bucket_25_49,  "25–49 pts", "rgba(52,152,219,0.8)"),
-        (bucket_10_24,  "10–24 pts", "rgba(241,196,15,0.8)"),
-        (bucket_1_9,    "1–9 pts",   "rgba(230,126,34,0.75)"),
-        (bucket_zero,   "0 pts",     "rgba(192,57,43,0.7)"),
+        (bucket_50plus, "50+ pts",   "rgba(56,161,105,0.85)"),
+        (bucket_25_49,  "25–49 pts", "rgba(43,108,176,0.8)"),
+        (bucket_10_24,  "10–24 pts", "rgba(237,137,54,0.8)"),
+        (bucket_1_9,    "1–9 pts",   "rgba(237,137,54,0.75)"),
+        (bucket_zero,   "0 pts",     "rgba(197,48,48,0.7)"),
     ]
     for data, label, color in bucket_defs:
         fig5.add_trace(go.Bar(
@@ -2122,10 +2056,10 @@ def build_scoring_trends_page() -> str:
     fig5.update_layout(
         title=dict(text="Teams by Scoring Bucket — Is the Bottom Hollowing Out?", font=dict(size=18)),
         xaxis=dict(title="Year", tickmode="linear", dtick=1),
-        yaxis=dict(title="# Teams", showgrid=True, gridcolor="#ebebeb"),
+        yaxis=dict(title="# Teams", showgrid=True, gridcolor="#e7e1d5"),
         barmode="stack",
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-        plot_bgcolor="#fafafa", paper_bgcolor="#ffffff",
+        plot_bgcolor="#f1ede4", paper_bgcolor="#ffffff",
         height=420, hovermode="x",
     )
     chart3_div = pio.to_html(fig5, full_html=False, include_plotlyjs=False)
@@ -2137,33 +2071,33 @@ def build_scoring_trends_page() -> str:
     fig6.add_trace(go.Scatter(
         x=years, y=teams_with_aa,
         mode="lines+markers", name="Teams with ≥1 All-American",
-        line=dict(color="#27ae60", width=2.5),
+        line=dict(color="#38a169", width=2.5),
         marker=dict(size=8),
         hovertemplate="%{x}: %{y} teams with AA<extra></extra>",
     ))
     fig6.add_trace(go.Scatter(
         x=years, y=teams_no_aa,
         mode="lines+markers", name="Teams without an All-American",
-        line=dict(color="#f0a500", width=2.5),
+        line=dict(color="#ed8936", width=2.5),
         marker=dict(size=8),
         hovertemplate="%{x}: %{y} teams without AA<extra></extra>",
     ))
     fig6.add_trace(go.Scatter(
         x=years, y=teams_zero_pts,
         mode="lines+markers", name="Teams scoring 0 points",
-        line=dict(color="#c0392b", width=2.5),
+        line=dict(color="#c53030", width=2.5),
         marker=dict(size=8),
         hovertemplate="%{x}: %{y} teams with 0 pts<extra></extra>",
     ))
     fig6.update_layout(
         title=dict(text="Competitive Breadth: All-Americans vs. Scoreless Teams", font=dict(size=18)),
         xaxis=dict(title="Year", tickmode="linear", dtick=1),
-        yaxis=dict(title="# Teams", showgrid=True, gridcolor="#ebebeb"),
+        yaxis=dict(title="# Teams", showgrid=True, gridcolor="#e7e1d5"),
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-        plot_bgcolor="#fafafa", paper_bgcolor="#ffffff",
+        plot_bgcolor="#f1ede4", paper_bgcolor="#ffffff",
         height=380, hovermode="x unified",
     )
-    fig6.update_xaxes(showgrid=True, gridcolor="#ebebeb")
+    fig6.update_xaxes(showgrid=True, gridcolor="#e7e1d5")
     chart4_div = pio.to_html(fig6, full_html=False, include_plotlyjs=False)
 
     # -----------------------------------------------------------------------
@@ -2205,7 +2139,7 @@ def build_scoring_trends_page() -> str:
         "Dec":  "#1f77b4",
         "MD":   "#2ca02c",
         "TF":   "#9467bd",
-        "Fall": "#c0392b",
+        "Fall": "#c53030",
     }
 
     import statistics as _stats
@@ -2228,7 +2162,7 @@ def build_scoring_trends_page() -> str:
                     f"{b['result']}{ot_label}: {b['score']}"
                 )
                 base = b["result"] if b["result"] not in OT_TYPES else "Dec"
-                sc_color.append(DOT_COLORS.get(base, "#888888"))
+                sc_color.append(DOT_COLORS.get(base, "#8f8574"))
             else:
                 fall_x.append(year)
                 fall_y.append(-1)   # plotted on secondary axis / annotation band
@@ -2262,7 +2196,7 @@ def build_scoring_trends_page() -> str:
         x=mean_x, y=mean_y,
         mode="lines+markers",
         name="Mean",
-        line=dict(color="#1a1a2e", width=2.5),
+        line=dict(color="#211c16", width=2.5),
         marker=dict(size=7),
         hovertemplate="%{x} mean: %{y:.1f} pts<extra></extra>",
     ))
@@ -2272,7 +2206,7 @@ def build_scoring_trends_page() -> str:
         x=median_x, y=median_y,
         mode="lines+markers",
         name="Median",
-        line=dict(color="#e67e22", width=2.5, dash="dash"),
+        line=dict(color="#ed8936", width=2.5, dash="dash"),
         marker=dict(size=7),
         hovertemplate="%{x} median: %{y:.1f} pts<extra></extra>",
     ))
@@ -2283,8 +2217,8 @@ def build_scoring_trends_page() -> str:
             x=fall_x, y=[0] * len(fall_x),
             mode="markers",
             name="Fall (no score)",
-            marker=dict(color="#c0392b", size=12, symbol="x",
-                        line=dict(color="#c0392b", width=2)),
+            marker=dict(color="#c53030", size=12, symbol="x",
+                        line=dict(color="#c53030", width=2)),
             text=fall_text,
             hoverinfo="text",
         ))
@@ -2294,19 +2228,19 @@ def build_scoring_trends_page() -> str:
         xaxis=dict(title="Year", tickmode="linear", dtick=1),
         yaxis=dict(
             title="Combined Points (winner + loser)",
-            showgrid=True, gridcolor="#ebebeb",
+            showgrid=True, gridcolor="#e7e1d5",
             rangemode="tozero",
         ),
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-        plot_bgcolor="#fafafa", paper_bgcolor="#ffffff",
+        plot_bgcolor="#f1ede4", paper_bgcolor="#ffffff",
         height=480, hovermode="closest",
         annotations=[dict(
             x=0.01, y=0.02, xref="paper", yref="paper",
             text="× = Fall (score N/A)",
-            showarrow=False, font=dict(size=11, color="#c0392b"),
+            showarrow=False, font=dict(size=11, color="#c53030"),
         )],
     )
-    fig5.update_xaxes(showgrid=True, gridcolor="#ebebeb")
+    fig5.update_xaxes(showgrid=True, gridcolor="#e7e1d5")
     chart5_div = pio.to_html(fig5, full_html=False, include_plotlyjs=False)
 
     # -----------------------------------------------------------------------
@@ -2398,7 +2332,7 @@ def build_scoring_trends_page() -> str:
     Color: <span style="color:#1f77b4;font-weight:600">blue = Decision</span>,
     <span style="color:#2ca02c;font-weight:600">green = Major Decision</span>,
     <span style="color:#9467bd;font-weight:600">purple = Tech Fall</span>,
-    <span style="color:#c0392b;font-weight:600">red × = Fall</span> (no combined score available).
+    <span style="color:#c53030;font-weight:600">red × = Fall</span> (no combined score available).
     Hover any dot for match details.
   </p>
   <div class="chart-container">{chart5_div}</div>
@@ -2453,6 +2387,10 @@ def main():
     scoring_html = build_scoring_trends_page()
     DEFAULT_SCORING_OUT.write_text(scoring_html, encoding="utf-8")
     print(f"  → {DEFAULT_SCORING_OUT}")
+
+    theme_out = WEB_ROOT / "theme_colors.js"
+    theme_out.write_text(f"window.THEME = {json.dumps(THEME, indent=2)};\n", encoding="utf-8")
+    print(f"  → {theme_out}")
 
 
 if __name__ == "__main__":
