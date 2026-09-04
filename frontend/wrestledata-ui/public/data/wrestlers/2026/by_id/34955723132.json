@@ -1,1 +1,103 @@
-{"wrestler_id": "34955723132", "name": "Andre Rocker", "team": "Northwestern", "team_slug": "northwestern", "team_rank": 75, "weight_class": 174, "year": 2026, "current_rank": 210, "record": {"overall": "0-3", "vs_ranked": "0-3", "vs_top10": "0-0", "vs_top25": "0-1"}, "metrics": {"pf7": 1.49, "pa7": 23.91, "pd7": -22.42, "si_plus": 90.9, "df_plus": 75.2, "apr_plus": 99.2, "pin_rate": 0.0, "bonus_rate": 0.0, "majors": 0, "techs": 0, "pins": 0, "mat_value": {"mv_avg": -3.1875, "matches": 3, "rank_weight": 175, "rank_overall": 1867, "version": "mbt_50_50", "mv_avg_v1": -5.427, "rank_weight_v1": 202, "rank_overall_v1": 2183}}, "opponent_breakdown": {"ranked_wins": 0, "ranked_losses": 3, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": null, "worst_loss": {"opponent_id": "34934116132", "opponent_rank": 139, "opponent_name": "Nick Marienfeld", "method": "Fall 6:14"}}, "match_list": [{"date": "2026-02-15", "opponent_id": "34952085132", "opponent_career_id": null, "opponent_name": "Colin Kelly", "opponent_team": "Illinois", "opponent_team_rank": 17, "opponent_weight": 174, "opponent_rank": 11, "weight_class": "174", "result": "L", "method": "FALL", "score": null, "duration": "1:26", "event": "vs. Northwestern", "mv_impact": -0.2901, "mv_impact_v1": -4.58}, {"date": "2025-12-30", "opponent_id": "34934116132", "opponent_career_id": null, "opponent_name": "Nick Marienfeld", "opponent_team": "Central Michigan", "opponent_team_rank": 67, "opponent_weight": 174, "opponent_rank": 139, "weight_class": "174", "result": "L", "method": "FALL", "score": null, "duration": "6:14", "event": "Midlands Championships", "mv_impact": -1.4437, "mv_impact_v1": -7.5}, {"date": "2025-12-30", "opponent_id": "34945831132", "opponent_career_id": null, "opponent_name": "Derek Gilcher", "opponent_team": "Indiana", "opponent_team_rank": 25, "opponent_weight": 174, "opponent_rank": 27, "weight_class": "174", "result": "L", "method": "TF", "score": "16-1", "duration": "4:41", "event": "Midlands Championships", "mv_impact": -1.4437, "mv_impact_v1": -4.21}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34955723132",
+  "name": "Andre Rocker",
+  "team": "Northwestern",
+  "team_slug": "northwestern",
+  "team_rank": 58,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": 210,
+  "record": {
+    "overall": "0-3",
+    "vs_ranked": "0-3",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 1.49,
+    "pa7": 23.91,
+    "pd7": -22.42,
+    "si_plus": 90.9,
+    "df_plus": 75.3,
+    "apr_plus": 99.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.437,
+      "matches": 3,
+      "rank_weight": 203,
+      "rank_overall": 2183,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 3,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34934116132",
+      "opponent_rank": 139,
+      "opponent_name": "Nick Marienfeld",
+      "method": "Fall 6:14"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-02-15",
+      "opponent_id": "34952085132",
+      "opponent_career_id": null,
+      "opponent_name": "Colin Kelly",
+      "opponent_team": "Illinois",
+      "opponent_team_rank": 16,
+      "opponent_weight": 174,
+      "opponent_rank": 11,
+      "weight_class": "174",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:26",
+      "event": "vs. Northwestern",
+      "mv_impact": -4.59
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "34934116132",
+      "opponent_career_id": null,
+      "opponent_name": "Nick Marienfeld",
+      "opponent_team": "Central Michigan",
+      "opponent_team_rank": 65,
+      "opponent_weight": 174,
+      "opponent_rank": 139,
+      "weight_class": "174",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:14",
+      "event": "Midlands Championships",
+      "mv_impact": -7.49
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "34945831132",
+      "opponent_career_id": null,
+      "opponent_name": "Derek Gilcher",
+      "opponent_team": "Indiana",
+      "opponent_team_rank": 33,
+      "opponent_weight": 174,
+      "opponent_rank": 26,
+      "weight_class": "174",
+      "result": "L",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "4:41",
+      "event": "Midlands Championships",
+      "mv_impact": -4.23
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

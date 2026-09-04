@@ -1,1 +1,106 @@
-{"wrestler_id": "35563618132", "name": "Tyler Vazquez", "team": "Princeton", "team_slug": "princeton", "team_rank": 32, "weight_class": 157, "year": 2026, "current_rank": 162, "record": {"overall": "1-2", "vs_ranked": "1-2", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 18.0, "pa7": 3.0, "pd7": 15.0, "si_plus": 141.9, "df_plus": 108.1, "apr_plus": 100.5, "pin_rate": 0.0, "bonus_rate": 1.0, "majors": 0, "techs": 1, "pins": 0, "mat_value": {"mv_avg": 0.3845, "matches": 2, "rank_weight": 54, "rank_overall": 468, "version": "mbt_50_50", "mv_avg_v1": 4.656, "rank_weight_v1": 2, "rank_overall_v1": 19}}, "opponent_breakdown": {"ranked_wins": 1, "ranked_losses": 2, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34937782132", "opponent_rank": 122, "opponent_name": "Chase Hontz", "method": "TF 18-3 7:00"}, "worst_loss": {"opponent_id": "34935895132", "opponent_rank": 178, "opponent_name": "Wyatt Stout", "method": "M. For."}}, "match_list": [{"date": "2026-01-09", "opponent_id": "34937782132", "opponent_career_id": null, "opponent_name": "Chase Hontz", "opponent_team": "Hofstra", "opponent_team_rank": 70, "opponent_weight": 165, "opponent_rank": 122, "weight_class": "157", "result": "W", "method": "TF", "score": "18-3", "duration": "7:00", "event": "David H. Lehman F&M Open", "mv_impact": 0.1435, "mv_impact_v1": 4.66}, {"date": "2026-01-09", "opponent_id": "34935979132", "opponent_career_id": null, "opponent_name": "Nick Stampoulos", "opponent_team": "Lock Haven", "opponent_team_rank": 36, "opponent_weight": 157, "opponent_rank": 38, "weight_class": "157", "result": "L", "method": "DFLT", "score": null, "duration": "7:00", "event": "David H. Lehman F&M Open", "mv_impact": 0.1435}, {"date": "2026-01-09", "opponent_id": "34935895132", "opponent_career_id": null, "opponent_name": "Wyatt Stout", "opponent_team": "Penn", "opponent_team_rank": 20, "opponent_weight": 157, "opponent_rank": 178, "weight_class": "157", "result": "L", "method": "MFF", "score": null, "duration": "7:00", "event": "David H. Lehman F&M Open", "mv_impact": 0.1435}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "35563618132",
+  "name": "Tyler Vazquez",
+  "team": "Princeton",
+  "team_slug": "princeton",
+  "team_rank": 21,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 162,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 18.0,
+    "pa7": 3.0,
+    "pd7": 15.0,
+    "si_plus": 141.9,
+    "df_plus": 108.1,
+    "apr_plus": 100.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 4.656,
+      "matches": 2,
+      "rank_weight": 2,
+      "rank_overall": 18,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34937782132",
+      "opponent_rank": 122,
+      "opponent_name": "Chase Hontz",
+      "method": "TF 18-3 7:00"
+    },
+    "worst_loss": {
+      "opponent_id": "34935895132",
+      "opponent_rank": 178,
+      "opponent_name": "Wyatt Stout",
+      "method": "M. For."
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-09",
+      "opponent_id": "34937782132",
+      "opponent_career_id": null,
+      "opponent_name": "Chase Hontz",
+      "opponent_team": "Hofstra",
+      "opponent_team_rank": 70,
+      "opponent_weight": 165,
+      "opponent_rank": 122,
+      "weight_class": "157",
+      "result": "W",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "7:00",
+      "event": "David H. Lehman F&M Open",
+      "mv_impact": 4.66
+    },
+    {
+      "date": "2026-01-09",
+      "opponent_id": "34935979132",
+      "opponent_career_id": null,
+      "opponent_name": "Nick Stampoulos",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 38,
+      "opponent_weight": 157,
+      "opponent_rank": 41,
+      "weight_class": "157",
+      "result": "L",
+      "method": "DFLT",
+      "score": null,
+      "duration": "7:00",
+      "event": "David H. Lehman F&M Open"
+    },
+    {
+      "date": "2026-01-09",
+      "opponent_id": "34935895132",
+      "opponent_career_id": null,
+      "opponent_name": "Wyatt Stout",
+      "opponent_team": "Penn",
+      "opponent_team_rank": 18,
+      "opponent_weight": 157,
+      "opponent_rank": 178,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "David H. Lehman F&M Open"
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

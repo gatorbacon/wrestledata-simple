@@ -1,1 +1,142 @@
-{"wrestler_id": "34935696132", "name": "Trevor Kantor", "team": "NC State", "team_slug": "nc_state", "team_rank": 11, "weight_class": 157, "year": 2026, "current_rank": 173, "record": {"overall": "1-4", "vs_ranked": "1-4", "vs_top10": "0-0", "vs_top25": "0-1"}, "metrics": {"pf7": 6.07, "pa7": 13.8, "pd7": -7.73, "si_plus": 102.7, "df_plus": 85.2, "apr_plus": 99.4, "pin_rate": 0.0, "bonus_rate": 0.0, "majors": 0, "techs": 0, "pins": 0, "mat_value": {"mv_avg": -2.5029, "matches": 5, "rank_weight": 181, "rank_overall": 1621, "version": "mbt_50_50", "mv_avg_v1": -2.641, "rank_weight_v1": 187, "rank_overall_v1": 1662}}, "opponent_breakdown": {"ranked_wins": 1, "ranked_losses": 4, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34937475132", "opponent_rank": 247, "opponent_name": "Khamani Harrison", "method": "Dec 11-5"}, "worst_loss": {"opponent_id": "34943143132", "opponent_rank": 90, "opponent_name": "Cullen Kane", "method": "Dec 6-3"}}, "match_list": [{"date": "2026-02-22", "opponent_id": "34943157132", "opponent_career_id": null, "opponent_name": "Joey Showalter", "opponent_team": "North Carolina", "opponent_team_rank": 27, "opponent_weight": 157, "opponent_rank": 35, "weight_class": "157", "result": "L", "method": "TF", "score": "22-5", "duration": "2:49", "event": "Wildcat Open", "mv_impact": -1.1144, "mv_impact_v1": -3.27}, {"date": "2026-02-22", "opponent_id": "34946250132", "opponent_career_id": null, "opponent_name": "Brady Campbell", "opponent_team": "The Citadel", "opponent_team_rank": 61, "opponent_weight": 157, "opponent_rank": 41, "weight_class": "157", "result": "L", "method": "MD", "score": "8-0", "duration": "7:00", "event": "Wildcat Open", "mv_impact": -1.1144, "mv_impact_v1": -2.55}, {"date": "2025-11-02", "opponent_id": "34937475132", "opponent_career_id": null, "opponent_name": "Khamani Harrison", "opponent_team": "Gardner-Webb", "opponent_team_rank": 57, "opponent_weight": 157, "opponent_rank": 247, "weight_class": "157", "result": "W", "method": "DEC", "score": "11-5", "duration": "7:00", "event": "Southeast Open", "mv_impact": -0.1039, "mv_impact_v1": -0.26}, {"date": "2025-11-02", "opponent_id": "34943143132", "opponent_career_id": null, "opponent_name": "Cullen Kane", "opponent_team": "North Carolina", "opponent_team_rank": 27, "opponent_weight": 157, "opponent_rank": 90, "weight_class": "157", "result": "L", "method": "DEC", "score": "6-3", "duration": "7:00", "event": "Southeast Open", "mv_impact": -0.1039, "mv_impact_v1": -3.18}, {"date": "2025-11-02", "opponent_id": "34943155132", "opponent_career_id": null, "opponent_name": "Laird Root", "opponent_team": "North Carolina", "opponent_team_rank": 27, "opponent_weight": 157, "opponent_rank": 25, "weight_class": "157", "result": "L", "method": "TF", "score": "20-3", "duration": "5:20", "event": "Southeast Open", "mv_impact": -0.1039, "mv_impact_v1": -3.94}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34935696132",
+  "name": "Trevor Kantor",
+  "team": "NC State",
+  "team_slug": "nc_state",
+  "team_rank": 9,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 173,
+  "record": {
+    "overall": "1-4",
+    "vs_ranked": "1-4",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.07,
+    "pa7": 13.8,
+    "pd7": -7.73,
+    "si_plus": 102.7,
+    "df_plus": 85.2,
+    "apr_plus": 99.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.67,
+      "matches": 5,
+      "rank_weight": 188,
+      "rank_overall": 1670,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34937475132",
+      "opponent_rank": 247,
+      "opponent_name": "Khamani Harrison",
+      "method": "Dec 11-5"
+    },
+    "worst_loss": {
+      "opponent_id": "34943143132",
+      "opponent_rank": 90,
+      "opponent_name": "Cullen Kane",
+      "method": "Dec 6-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-02-22",
+      "opponent_id": "34943157132",
+      "opponent_career_id": null,
+      "opponent_name": "Joey Showalter",
+      "opponent_team": "North Carolina",
+      "opponent_team_rank": 26,
+      "opponent_weight": 157,
+      "opponent_rank": 38,
+      "weight_class": "157",
+      "result": "L",
+      "method": "TF",
+      "score": "22-5",
+      "duration": "2:49",
+      "event": "Wildcat Open",
+      "mv_impact": -3.32
+    },
+    {
+      "date": "2026-02-22",
+      "opponent_id": "34946250132",
+      "opponent_career_id": null,
+      "opponent_name": "Brady Campbell",
+      "opponent_team": "The Citadel",
+      "opponent_team_rank": 78,
+      "opponent_weight": 157,
+      "opponent_rank": 44,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "Wildcat Open",
+      "mv_impact": -2.6
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34937475132",
+      "opponent_career_id": null,
+      "opponent_name": "Khamani Harrison",
+      "opponent_team": "Gardner-Webb",
+      "opponent_team_rank": 43,
+      "opponent_weight": 157,
+      "opponent_rank": 247,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": "11-5",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -0.26
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34943143132",
+      "opponent_career_id": null,
+      "opponent_name": "Cullen Kane",
+      "opponent_team": "North Carolina",
+      "opponent_team_rank": 26,
+      "opponent_weight": 157,
+      "opponent_rank": 90,
+      "weight_class": "157",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-3",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -3.18
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34943155132",
+      "opponent_career_id": null,
+      "opponent_name": "Laird Root",
+      "opponent_team": "North Carolina",
+      "opponent_team_rank": 26,
+      "opponent_weight": 157,
+      "opponent_rank": 32,
+      "weight_class": "157",
+      "result": "L",
+      "method": "TF",
+      "score": "20-3",
+      "duration": "5:20",
+      "event": "Southeast Open",
+      "mv_impact": -4.0
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

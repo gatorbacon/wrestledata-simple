@@ -235,6 +235,20 @@ async function initHomepage() {
     badge.textContent = mode === 'post-season' ? `${season} Archive` : `${season} Season`;
   }
 
+  // State the season directly in each panel's own title too (not just the
+  // xTP badge above) -- these 4 panels lag behind the Team Odds preview
+  // above them, which already jumps ahead to next season once it's live, so
+  // without this the mismatch in "current-ness" between the two sections
+  // isn't obvious at a glance.
+  const tparTitle = document.getElementById('tpar-panel-title');
+  if (tparTitle) tparTitle.textContent = `${season} TPAR Leaders`;
+  const xtpTitle = document.getElementById('xtp-panel-title');
+  if (xtpTitle) xtpTitle.textContent = `${season} NCAA Tournament Projections`;
+  const rankingsTitle = document.getElementById('rankings-panel-title');
+  if (rankingsTitle) rankingsTitle.textContent = `${season} Rankings`;
+  const statLeadersTitle = document.getElementById('stat-leaders-title-link');
+  if (statLeadersTitle) statLeadersTitle.textContent = `${season} Stat Leaders`;
+
   // Load all initial data in parallel
   const [replayData, miData, rankingsData, pinsData] = await Promise.all([
     loadTournamentData(),

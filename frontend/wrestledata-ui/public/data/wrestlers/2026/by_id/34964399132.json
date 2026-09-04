@@ -1,1 +1,125 @@
-{"wrestler_id": "34964399132", "name": "Aiden Compton", "team": "Cornell", "team_slug": "cornell", "team_rank": 15, "weight_class": 285, "year": 2026, "current_rank": 58, "record": {"overall": "3-1", "vs_ranked": "3-1", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 4.75, "pa7": 1.75, "pd7": 3.0, "si_plus": 95.5, "df_plus": 111.0, "apr_plus": 97.0, "pin_rate": 0.0, "bonus_rate": 0.0, "majors": 0, "techs": 0, "pins": 0, "mat_value": {"mv_avg": -0.8434, "matches": 4, "rank_weight": 80, "rank_overall": 874, "version": "mbt_50_50", "mv_avg_v1": 0.105, "rank_weight_v1": 73, "rank_overall_v1": 809}}, "opponent_breakdown": {"ranked_wins": 3, "ranked_losses": 1, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34964527132", "opponent_rank": 62, "opponent_name": "Cy Kruse", "method": "Dec 3-1"}, "worst_loss": {"opponent_id": "34947806132", "opponent_rank": 69, "opponent_name": "Trent Sibble", "method": "Dec 5-4"}}, "match_list": [{"date": "2025-11-23", "opponent_id": "34947806132", "opponent_career_id": null, "opponent_name": "Trent Sibble", "opponent_team": "Binghamton", "opponent_team_rank": 42, "opponent_weight": 285, "opponent_rank": 69, "weight_class": "285", "result": "L", "method": "DEC", "score": "5-4", "duration": "7:00", "event": "Big Red Invitational", "mv_impact": -0.0096, "mv_impact_v1": -2.72}, {"date": "2025-11-23", "opponent_id": "34936183132", "opponent_career_id": null, "opponent_name": "Kyle Draina", "opponent_team": "Bloomsburg", "opponent_team_rank": 63, "opponent_weight": 285, "opponent_rank": 188, "weight_class": "285", "result": "W", "method": "DEC", "score": "6-1", "duration": "7:00", "event": "Big Red Invitational", "mv_impact": -0.0096, "mv_impact_v1": -0.12}, {"date": "2025-11-23", "opponent_id": "34936191132", "opponent_career_id": null, "opponent_name": "Eli Torres", "opponent_team": "Bloomsburg", "opponent_team_rank": 63, "opponent_weight": 285, "opponent_rank": 173, "weight_class": "285", "result": "W", "method": "DEC", "score": "6-0", "duration": "7:00", "event": "Big Red Invitational", "mv_impact": -0.0096, "mv_impact_v1": -0.26}, {"date": "2025-11-23", "opponent_id": "34964527132", "opponent_career_id": null, "opponent_name": "Cy Kruse", "opponent_team": "Cornell", "opponent_team_rank": 15, "opponent_weight": 285, "opponent_rank": 62, "weight_class": "285", "result": "W", "method": "DEC", "score": "3-1", "duration": "7:00", "event": "Big Red Invitational", "mv_impact": -0.0096, "mv_impact_v1": 3.52}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34964399132",
+  "name": "Aiden Compton",
+  "team": "Cornell",
+  "team_slug": "cornell",
+  "team_rank": 17,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": 59,
+  "record": {
+    "overall": "3-1",
+    "vs_ranked": "3-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.75,
+    "pa7": 1.75,
+    "pd7": 3.0,
+    "si_plus": 95.5,
+    "df_plus": 111.0,
+    "apr_plus": 97.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.105,
+      "matches": 4,
+      "rank_weight": 73,
+      "rank_overall": 804,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34964527132",
+      "opponent_rank": 63,
+      "opponent_name": "Cy Kruse",
+      "method": "Dec 3-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34947806132",
+      "opponent_rank": 70,
+      "opponent_name": "Trent Sibble",
+      "method": "Dec 5-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34947806132",
+      "opponent_career_id": null,
+      "opponent_name": "Trent Sibble",
+      "opponent_team": "Binghamton",
+      "opponent_team_rank": 51,
+      "opponent_weight": 285,
+      "opponent_rank": 70,
+      "weight_class": "285",
+      "result": "L",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
+      "event": "Big Red Invitational",
+      "mv_impact": -2.72
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34936183132",
+      "opponent_career_id": null,
+      "opponent_name": "Kyle Draina",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 61,
+      "opponent_weight": 285,
+      "opponent_rank": 188,
+      "weight_class": "285",
+      "result": "W",
+      "method": "DEC",
+      "score": "6-1",
+      "duration": "7:00",
+      "event": "Big Red Invitational",
+      "mv_impact": -0.12
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34936191132",
+      "opponent_career_id": null,
+      "opponent_name": "Eli Torres",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 61,
+      "opponent_weight": 285,
+      "opponent_rank": 173,
+      "weight_class": "285",
+      "result": "W",
+      "method": "DEC",
+      "score": "6-0",
+      "duration": "7:00",
+      "event": "Big Red Invitational",
+      "mv_impact": -0.26
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34964527132",
+      "opponent_career_id": null,
+      "opponent_name": "Cy Kruse",
+      "opponent_team": "Cornell",
+      "opponent_team_rank": 17,
+      "opponent_weight": 285,
+      "opponent_rank": 63,
+      "weight_class": "285",
+      "result": "W",
+      "method": "DEC",
+      "score": "3-1",
+      "duration": "7:00",
+      "event": "Big Red Invitational",
+      "mv_impact": 3.52
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

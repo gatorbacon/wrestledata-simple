@@ -1,1 +1,69 @@
-{"wrestler_id": "34943440132", "name": "Brook Byers", "team": "Stanford", "team_slug": "stanford", "team_rank": 7, "weight_class": 197, "year": 2026, "current_rank": 187, "record": {"overall": "0-1", "vs_ranked": "0-1", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 3.0, "pa7": 7.0, "pd7": -4.0, "si_plus": 88.0, "df_plus": 100.2, "apr_plus": 97.8, "pin_rate": 0.0, "bonus_rate": 0.0, "majors": 0, "techs": 0, "pins": 0, "mat_value": {"mv_avg": -2.1285, "matches": 1, "rank_weight": 121, "rank_overall": 1466, "version": "mbt_50_50", "mv_avg_v1": -4.886, "rank_weight_v1": 179, "rank_overall_v1": 2119}}, "opponent_breakdown": {"ranked_wins": 0, "ranked_losses": 1, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": null, "worst_loss": {"opponent_id": "34934018132", "opponent_rank": 142, "opponent_name": "Eli Sheeren", "method": "Dec 7-3"}}, "match_list": [{"date": "2025-11-15", "opponent_id": "34934018132", "opponent_career_id": null, "opponent_name": "Eli Sheeren", "opponent_team": "California Baptist", "opponent_team_rank": 65, "opponent_weight": 197, "opponent_rank": 142, "weight_class": "197", "result": "L", "method": "DEC", "score": "7-3", "duration": "7:00", "event": "vs. Stanford", "mv_impact": -1.175, "mv_impact_v1": -4.89}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34943440132",
+  "name": "Brook Byers",
+  "team": "Stanford",
+  "team_slug": "stanford",
+  "team_rank": 6,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": 187,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.0,
+    "pa7": 7.0,
+    "pd7": -4.0,
+    "si_plus": 87.9,
+    "df_plus": 100.3,
+    "apr_plus": 97.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.887,
+      "matches": 1,
+      "rank_weight": 179,
+      "rank_overall": 2118,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34934018132",
+      "opponent_rank": 142,
+      "opponent_name": "Eli Sheeren",
+      "method": "Dec 7-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34934018132",
+      "opponent_career_id": null,
+      "opponent_name": "Eli Sheeren",
+      "opponent_team": "California Baptist",
+      "opponent_team_rank": 63,
+      "opponent_weight": 197,
+      "opponent_rank": 142,
+      "weight_class": "197",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-3",
+      "duration": "7:00",
+      "event": "vs. Stanford",
+      "mv_impact": -4.89
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

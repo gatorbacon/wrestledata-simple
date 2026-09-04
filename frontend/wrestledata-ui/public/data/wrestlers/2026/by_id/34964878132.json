@@ -1,1 +1,69 @@
-{"wrestler_id": "34964878132", "name": "Joseph Ortiz", "team": "Northern Colorado", "team_slug": "northern_colorado", "team_rank": 60, "weight_class": 157, "year": 2026, "current_rank": 241, "record": {"overall": "0-1", "vs_ranked": "0-1", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 0.0, "pa7": 22.4, "pd7": -22.4, "si_plus": 74.7, "df_plus": 73.0, "apr_plus": 90.3, "pin_rate": 0.0, "bonus_rate": 0.0, "majors": 0, "techs": 0, "pins": 0, "mat_value": {"mv_avg": -2.6858, "matches": 1, "rank_weight": 190, "rank_overall": 1701, "version": "mbt_50_50", "mv_avg_v1": -6.105, "rank_weight_v1": 247, "rank_overall_v1": 2240}}, "opponent_breakdown": {"ranked_wins": 0, "ranked_losses": 1, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": null, "worst_loss": {"opponent_id": "34944176132", "opponent_rank": 134, "opponent_name": "Jake Doone", "method": "TF 16-0 5:00"}}, "match_list": [{"date": "2026-01-09", "opponent_id": "34944176132", "opponent_career_id": null, "opponent_name": "Jake Doone", "opponent_team": "Air Force", "opponent_team_rank": 48, "opponent_weight": 157, "opponent_rank": 134, "weight_class": "157", "result": "L", "method": "TF", "score": "16-0", "duration": "5:00", "event": "Western Colorado Open", "mv_impact": -2.6437, "mv_impact_v1": -6.1}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34964878132",
+  "name": "Joseph Ortiz",
+  "team": "Northern Colorado",
+  "team_slug": "northern_colorado",
+  "team_rank": 56,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 241,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 22.4,
+    "pd7": -22.4,
+    "si_plus": 74.6,
+    "df_plus": 73.0,
+    "apr_plus": 90.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.106,
+      "matches": 1,
+      "rank_weight": 247,
+      "rank_overall": 2240,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34944176132",
+      "opponent_rank": 134,
+      "opponent_name": "Jake Doone",
+      "method": "TF 16-0 5:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-09",
+      "opponent_id": "34944176132",
+      "opponent_career_id": null,
+      "opponent_name": "Jake Doone",
+      "opponent_team": "Air Force",
+      "opponent_team_rank": 40,
+      "opponent_weight": 157,
+      "opponent_rank": 134,
+      "weight_class": "157",
+      "result": "L",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "5:00",
+      "event": "Western Colorado Open",
+      "mv_impact": -6.11
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

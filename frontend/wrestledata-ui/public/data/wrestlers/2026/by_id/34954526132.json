@@ -1,1 +1,103 @@
-{"wrestler_id": "34954526132", "name": "Alex Schweitzer", "team": "Presbyterian", "team_slug": "presbyterian", "team_rank": 76, "weight_class": 141, "year": 2026, "current_rank": 262, "record": {"overall": "0-3", "vs_ranked": "0-3", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 5.09, "pa7": 25.0, "pd7": -19.91, "si_plus": 77.9, "df_plus": 66.7, "apr_plus": 95.6, "pin_rate": 0.0, "bonus_rate": 0.0, "majors": 0, "techs": 0, "pins": 0, "mat_value": {"mv_avg": -2.9804, "matches": 5, "rank_weight": 186, "rank_overall": 1808, "version": "mbt_50_50", "mv_avg_v1": -6.829, "rank_weight_v1": 243, "rank_overall_v1": 2282}}, "opponent_breakdown": {"ranked_wins": 0, "ranked_losses": 3, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": null, "worst_loss": {"opponent_id": "34939072132", "opponent_rank": 196, "opponent_name": "Charleston Baglio", "method": "Fall 4:11"}}, "match_list": [{"date": "2025-12-18", "opponent_id": "34934464132", "opponent_career_id": null, "opponent_name": "Ejiro Montoya", "opponent_team": "Franklin & Marshall", "opponent_team_rank": 44, "opponent_weight": 133, "opponent_rank": 87, "weight_class": "141", "result": "L", "method": "TF", "score": "22-6", "duration": "4:47", "event": "vs. Presbyterian", "mv_impact": -0.7157, "mv_impact_v1": -7.14}, {"date": "2025-11-23", "opponent_id": "34939072132", "opponent_career_id": null, "opponent_name": "Charleston Baglio", "opponent_team": "Gardner-Webb", "opponent_team_rank": 57, "opponent_weight": 141, "opponent_rank": 196, "weight_class": "141", "result": "L", "method": "FALL", "score": null, "duration": "4:11", "event": "Mountaineer Open", "mv_impact": -1.8652, "mv_impact_v1": -5.78}, {"date": "2025-11-02", "opponent_id": "34943436132", "opponent_career_id": null, "opponent_name": "Talon Maple", "opponent_team": "Campbell", "opponent_team_rank": 66, "opponent_weight": 165, "opponent_rank": 172, "weight_class": "149", "result": "L", "method": "TF", "score": "19-1", "duration": "5:00", "event": "Southeast Open", "mv_impact": -0.3995, "mv_impact_v1": -7.04}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34954526132",
+  "name": "Alex Schweitzer",
+  "team": "Presbyterian",
+  "team_slug": "presbyterian",
+  "team_rank": 76,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": 262,
+  "record": {
+    "overall": "0-3",
+    "vs_ranked": "0-3",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 5.09,
+    "pa7": 25.0,
+    "pd7": -19.91,
+    "si_plus": 77.9,
+    "df_plus": 66.7,
+    "apr_plus": 95.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.826,
+      "matches": 5,
+      "rank_weight": 243,
+      "rank_overall": 2282,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 3,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34939072132",
+      "opponent_rank": 196,
+      "opponent_name": "Charleston Baglio",
+      "method": "Fall 4:11"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-18",
+      "opponent_id": "34934464132",
+      "opponent_career_id": null,
+      "opponent_name": "Ejiro Montoya",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 42,
+      "opponent_weight": 133,
+      "opponent_rank": 87,
+      "weight_class": "141",
+      "result": "L",
+      "method": "TF",
+      "score": "22-6",
+      "duration": "4:47",
+      "event": "vs. Presbyterian",
+      "mv_impact": -7.13
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34939072132",
+      "opponent_career_id": null,
+      "opponent_name": "Charleston Baglio",
+      "opponent_team": "Gardner-Webb",
+      "opponent_team_rank": 43,
+      "opponent_weight": 141,
+      "opponent_rank": 196,
+      "weight_class": "141",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:11",
+      "event": "Mountaineer Open",
+      "mv_impact": -5.79
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34943436132",
+      "opponent_career_id": null,
+      "opponent_name": "Talon Maple",
+      "opponent_team": "Campbell",
+      "opponent_team_rank": 64,
+      "opponent_weight": 165,
+      "opponent_rank": 172,
+      "weight_class": "149",
+      "result": "L",
+      "method": "TF",
+      "score": "19-1",
+      "duration": "5:00",
+      "event": "Southeast Open",
+      "mv_impact": -7.04
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

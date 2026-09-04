@@ -1,1 +1,142 @@
-{"wrestler_id": "34955624132", "name": "Logan Trenary", "team": "Northern Illinois", "team_slug": "northern_illinois", "team_rank": 40, "weight_class": 149, "year": 2026, "current_rank": 275, "record": {"overall": "1-4", "vs_ranked": "1-4", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 2.07, "pa7": 17.59, "pd7": -15.52, "si_plus": 74.9, "df_plus": 80.0, "apr_plus": 111.5, "pin_rate": 1.0, "bonus_rate": 1.0, "majors": 0, "techs": 0, "pins": 1, "mat_value": {"mv_avg": -3.5578, "matches": 5, "rank_weight": 240, "rank_overall": 1975, "version": "mbt_50_50", "mv_avg_v1": -4.086, "rank_weight_v1": 242, "rank_overall_v1": 1993}}, "opponent_breakdown": {"ranked_wins": 1, "ranked_losses": 4, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34933989132", "opponent_rank": 153, "opponent_name": "Sammy Agnello", "method": "Fall 3:15"}, "worst_loss": {"opponent_id": "34951073132", "opponent_rank": 256, "opponent_name": "Dominic ferraro", "method": "Fall 0:54"}}, "match_list": [{"date": "2026-01-18", "opponent_id": "34944518132", "opponent_career_id": null, "opponent_name": "Jamar Dixon", "opponent_team": "Arizona State", "opponent_team_rank": 16, "opponent_weight": 149, "opponent_rank": 226, "weight_class": "149", "result": "L", "method": "FALL", "score": null, "duration": "3:50", "event": "Cyclone Open", "mv_impact": -1.3892, "mv_impact_v1": -6.46}, {"date": "2026-01-18", "opponent_id": "34944671132", "opponent_career_id": null, "opponent_name": "Royce Nilo", "opponent_team": "Wisconsin", "opponent_team_rank": 38, "opponent_weight": 149, "opponent_rank": 95, "weight_class": "149", "result": "L", "method": "TF", "score": "17-2", "duration": "6:46", "event": "Cyclone Open", "mv_impact": -1.3892, "mv_impact_v1": -6.36}, {"date": "2025-11-08", "opponent_id": "34951073132", "opponent_career_id": null, "opponent_name": "Dominic ferraro", "opponent_team": "Edinboro", "opponent_team_rank": 56, "opponent_weight": 149, "opponent_rank": 256, "weight_class": "149", "result": "L", "method": "FALL", "score": null, "duration": "0:54", "event": "Michigan State Open", "mv_impact": -0.3807, "mv_impact_v1": -6.06}, {"date": "2025-11-08", "opponent_id": "34933989132", "opponent_career_id": null, "opponent_name": "Sammy Agnello", "opponent_team": "Michigan State", "opponent_team_rank": 74, "opponent_weight": 149, "opponent_rank": 153, "weight_class": "149", "result": "W", "method": "FALL", "score": null, "duration": "3:15", "event": "Michigan State Open", "mv_impact": -0.3807, "mv_impact_v1": 3.99}, {"date": "2025-11-08", "opponent_id": "34934358132", "opponent_career_id": null, "opponent_name": "Evan Gosz", "opponent_team": "Michigan State", "opponent_team_rank": 74, "opponent_weight": 149, "opponent_rank": 44, "weight_class": "149", "result": "L", "method": "FALL", "score": null, "duration": "0:44", "event": "Michigan State Open", "mv_impact": -0.3807, "mv_impact_v1": -5.54}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34955624132",
+  "name": "Logan Trenary",
+  "team": "Northern Illinois",
+  "team_slug": "northern_illinois",
+  "team_rank": 57,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": 275,
+  "record": {
+    "overall": "1-4",
+    "vs_ranked": "1-4",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.07,
+    "pa7": 17.59,
+    "pd7": -15.52,
+    "si_plus": 74.9,
+    "df_plus": 80.0,
+    "apr_plus": 111.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -4.087,
+      "matches": 5,
+      "rank_weight": 242,
+      "rank_overall": 1993,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34933989132",
+      "opponent_rank": 153,
+      "opponent_name": "Sammy Agnello",
+      "method": "Fall 3:15"
+    },
+    "worst_loss": {
+      "opponent_id": "34951073132",
+      "opponent_rank": 256,
+      "opponent_name": "Dominic ferraro",
+      "method": "Fall 0:54"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-18",
+      "opponent_id": "34944518132",
+      "opponent_career_id": null,
+      "opponent_name": "Jamar Dixon",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 12,
+      "opponent_weight": 149,
+      "opponent_rank": 226,
+      "weight_class": "149",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:50",
+      "event": "Cyclone Open",
+      "mv_impact": -6.46
+    },
+    {
+      "date": "2026-01-18",
+      "opponent_id": "34944671132",
+      "opponent_career_id": null,
+      "opponent_name": "Royce Nilo",
+      "opponent_team": "Wisconsin",
+      "opponent_team_rank": 29,
+      "opponent_weight": 149,
+      "opponent_rank": 95,
+      "weight_class": "149",
+      "result": "L",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "6:46",
+      "event": "Cyclone Open",
+      "mv_impact": -6.37
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34951073132",
+      "opponent_career_id": null,
+      "opponent_name": "Dominic ferraro",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 69,
+      "opponent_weight": 149,
+      "opponent_rank": 256,
+      "weight_class": "149",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:54",
+      "event": "Michigan State Open",
+      "mv_impact": -6.06
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34933989132",
+      "opponent_career_id": null,
+      "opponent_name": "Sammy Agnello",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 74,
+      "opponent_weight": 149,
+      "opponent_rank": 153,
+      "weight_class": "149",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:15",
+      "event": "Michigan State Open",
+      "mv_impact": 3.99
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34934358132",
+      "opponent_career_id": null,
+      "opponent_name": "Evan Gosz",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 74,
+      "opponent_weight": 149,
+      "opponent_rank": 45,
+      "weight_class": "149",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:44",
+      "event": "Michigan State Open",
+      "mv_impact": -5.55
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

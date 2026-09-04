@@ -1,1 +1,142 @@
-{"wrestler_id": "34943461132", "name": "Cole Han-Lindemyer", "team": "Stanford", "team_slug": "stanford", "team_rank": 7, "weight_class": 184, "year": 2026, "current_rank": 76, "record": {"overall": "3-2", "vs_ranked": "3-2", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 8.4, "pa7": 6.0, "pd7": 2.4, "si_plus": 94.7, "df_plus": 102.1, "apr_plus": 99.2, "pin_rate": 0.0, "bonus_rate": 0.333, "majors": 0, "techs": 1, "pins": 0, "mat_value": {"mv_avg": -1.322, "matches": 5, "rank_weight": 107, "rank_overall": 1091, "version": "mbt_50_50", "mv_avg_v1": -0.799, "rank_weight_v1": 104, "rank_overall_v1": 1107}}, "opponent_breakdown": {"ranked_wins": 3, "ranked_losses": 2, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34936107132", "opponent_rank": 133, "opponent_name": "Ryan Clink", "method": "Dec 11-4"}, "worst_loss": {"opponent_id": "34955607132", "opponent_rank": 156, "opponent_name": "Caleb Roe", "method": "MD 14-5"}}, "match_list": [{"date": "2025-12-30", "opponent_id": "34955607132", "opponent_career_id": null, "opponent_name": "Caleb Roe", "opponent_team": "Northern Illinois", "opponent_team_rank": 40, "opponent_weight": 184, "opponent_rank": 156, "weight_class": "184", "result": "L", "method": "MD", "score": "14-5", "duration": "7:00", "event": "Midlands Championships", "mv_impact": -0.7819, "mv_impact_v1": -5.93}, {"date": "2025-12-30", "opponent_id": "34955419132", "opponent_career_id": null, "opponent_name": "Ian Smith", "opponent_team": "Northern Illinois", "opponent_team_rank": 40, "opponent_weight": 184, "opponent_rank": 172, "weight_class": "184", "result": "W", "method": "DEC", "score": "8-6", "duration": "7:00", "event": "Midlands Championships", "mv_impact": -0.7819, "mv_impact_v1": 0.35}, {"date": "2025-12-30", "opponent_id": "34941793132", "opponent_career_id": null, "opponent_name": "Cayaen Smith", "opponent_team": "Ohio State", "opponent_team_rank": 5, "opponent_weight": 184, "opponent_rank": 153, "weight_class": "184", "result": "W", "method": "TF", "score": "17-2", "duration": "7:00", "event": "Midlands Championships", "mv_impact": -0.7819, "mv_impact_v1": 3.01}, {"date": "2025-12-30", "opponent_id": "34934146132", "opponent_career_id": null, "opponent_name": "Luke Daly", "opponent_team": "Pittsburgh", "opponent_team_rank": 23, "opponent_weight": 184, "opponent_rank": 48, "weight_class": "184", "result": "L", "method": "DEC", "score": "4-1", "duration": "7:00", "event": "Midlands Championships", "mv_impact": -0.7819, "mv_impact_v1": -2.44}, {"date": "2025-11-01", "opponent_id": "34936107132", "opponent_career_id": null, "opponent_name": "Ryan Clink", "opponent_team": "Cal Poly", "opponent_team_rank": 53, "opponent_weight": 184, "opponent_rank": 133, "weight_class": "184", "result": "W", "method": "DEC", "score": "11-4", "duration": "7:00", "event": "Menlo Open", "mv_impact": 1.7464, "mv_impact_v1": 1.02}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34943461132",
+  "name": "Cole Han-Lindemyer",
+  "team": "Stanford",
+  "team_slug": "stanford",
+  "team_rank": 6,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": 78,
+  "record": {
+    "overall": "3-2",
+    "vs_ranked": "3-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 8.4,
+    "pa7": 6.0,
+    "pd7": 2.4,
+    "si_plus": 94.7,
+    "df_plus": 102.0,
+    "apr_plus": 99.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.333,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.819,
+      "matches": 5,
+      "rank_weight": 104,
+      "rank_overall": 1111,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34936107132",
+      "opponent_rank": 133,
+      "opponent_name": "Ryan Clink",
+      "method": "Dec 11-4"
+    },
+    "worst_loss": {
+      "opponent_id": "34955607132",
+      "opponent_rank": 156,
+      "opponent_name": "Caleb Roe",
+      "method": "MD 14-5"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-30",
+      "opponent_id": "34955607132",
+      "opponent_career_id": null,
+      "opponent_name": "Caleb Roe",
+      "opponent_team": "Northern Illinois",
+      "opponent_team_rank": 57,
+      "opponent_weight": 184,
+      "opponent_rank": 156,
+      "weight_class": "184",
+      "result": "L",
+      "method": "MD",
+      "score": "14-5",
+      "duration": "7:00",
+      "event": "Midlands Championships",
+      "mv_impact": -5.93
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "34955419132",
+      "opponent_career_id": null,
+      "opponent_name": "Ian Smith",
+      "opponent_team": "Northern Illinois",
+      "opponent_team_rank": 57,
+      "opponent_weight": 184,
+      "opponent_rank": 172,
+      "weight_class": "184",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-6",
+      "duration": "7:00",
+      "event": "Midlands Championships",
+      "mv_impact": 0.35
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "34941793132",
+      "opponent_career_id": null,
+      "opponent_name": "Cayaen Smith",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 5,
+      "opponent_weight": 184,
+      "opponent_rank": 153,
+      "weight_class": "184",
+      "result": "W",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "7:00",
+      "event": "Midlands Championships",
+      "mv_impact": 2.97
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "34934146132",
+      "opponent_career_id": null,
+      "opponent_name": "Luke Daly",
+      "opponent_team": "Pittsburgh",
+      "opponent_team_rank": 25,
+      "opponent_weight": 184,
+      "opponent_rank": 50,
+      "weight_class": "184",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "Midlands Championships",
+      "mv_impact": -2.51
+    },
+    {
+      "date": "2025-11-01",
+      "opponent_id": "34936107132",
+      "opponent_career_id": null,
+      "opponent_name": "Ryan Clink",
+      "opponent_team": "Cal Poly",
+      "opponent_team_rank": 46,
+      "opponent_weight": 184,
+      "opponent_rank": 133,
+      "weight_class": "184",
+      "result": "W",
+      "method": "DEC",
+      "score": "11-4",
+      "duration": "7:00",
+      "event": "Menlo Open",
+      "mv_impact": 1.02
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

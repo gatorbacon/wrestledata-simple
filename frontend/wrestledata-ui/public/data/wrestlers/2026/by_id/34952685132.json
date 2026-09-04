@@ -1,1 +1,108 @@
-{"wrestler_id": "34952685132", "name": "Justin Onello", "team": "Lehigh", "team_slug": "lehigh", "team_rank": 12, "weight_class": 174, "year": 2026, "current_rank": 127, "record": {"overall": "1-2", "vs_ranked": "1-2", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 6.0, "pa7": 6.67, "pd7": -0.67, "si_plus": 88.6, "df_plus": 102.1, "apr_plus": 98.2, "pin_rate": 0.0, "bonus_rate": 1.0, "majors": 1, "techs": 0, "pins": 0, "mat_value": {"mv_avg": -1.5366, "matches": 4, "rank_weight": 109, "rank_overall": 1179, "version": "mbt_50_50", "mv_avg_v1": -1.7, "rank_weight_v1": 128, "rank_overall_v1": 1420}}, "opponent_breakdown": {"ranked_wins": 1, "ranked_losses": 2, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34934838132", "opponent_rank": 159, "opponent_name": "Kevin McBride", "method": "MD 16-4"}, "worst_loss": {"opponent_id": "34934361132", "opponent_rank": 56, "opponent_name": "Gage Laplante", "method": "Dec 8-2"}}, "match_list": [{"date": "2025-11-02", "opponent_id": "34934320132", "opponent_career_id": null, "opponent_name": "Andrew Christie", "opponent_team": "Army West Point", "opponent_team_rank": 49, "opponent_weight": 174, "opponent_rank": 47, "weight_class": "174", "result": "L", "method": "MD", "score": "8-0", "duration": "7:00", "event": "Princeton Open", "mv_impact": -0.1049, "mv_impact_v1": -3.2}, {"date": "2025-11-02", "opponent_id": "34934361132", "opponent_career_id": null, "opponent_name": "Gage Laplante", "opponent_team": "Army West Point", "opponent_team_rank": 49, "opponent_weight": 184, "opponent_rank": 56, "weight_class": "174", "result": "L", "method": "DEC", "score": "8-2", "duration": "7:00", "event": "Princeton Open", "mv_impact": -0.1049, "mv_impact_v1": -2.43}, {"date": "2025-11-02", "opponent_id": "34934838132", "opponent_career_id": null, "opponent_name": "Kevin McBride", "opponent_team": "Rider", "opponent_team_rank": 33, "opponent_weight": 174, "opponent_rank": 159, "weight_class": "174", "result": "W", "method": "MD", "score": "16-4", "duration": "7:00", "event": "Princeton Open", "mv_impact": -0.1049, "mv_impact_v1": 1.27}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34952685132",
+  "name": "Justin Onello",
+  "team": "Lehigh",
+  "team_slug": "lehigh",
+  "team_rank": 13,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": 127,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.0,
+    "pa7": 6.67,
+    "pd7": -0.67,
+    "si_plus": 89.0,
+    "df_plus": 102.6,
+    "apr_plus": 98.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.713,
+      "matches": 4,
+      "rank_weight": 127,
+      "rank_overall": 1424,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34934838132",
+      "opponent_rank": 159,
+      "opponent_name": "Kevin McBride",
+      "method": "MD 16-4"
+    },
+    "worst_loss": {
+      "opponent_id": "34934361132",
+      "opponent_rank": 58,
+      "opponent_name": "Gage Laplante",
+      "method": "Dec 8-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934320132",
+      "opponent_career_id": null,
+      "opponent_name": "Andrew Christie",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 41,
+      "opponent_weight": 174,
+      "opponent_rank": 49,
+      "weight_class": "174",
+      "result": "L",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": -3.23
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934361132",
+      "opponent_career_id": null,
+      "opponent_name": "Gage Laplante",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 41,
+      "opponent_weight": 184,
+      "opponent_rank": 58,
+      "weight_class": "174",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-2",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": -2.45
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934838132",
+      "opponent_career_id": null,
+      "opponent_name": "Kevin McBride",
+      "opponent_team": "Rider",
+      "opponent_team_rank": 35,
+      "opponent_weight": 174,
+      "opponent_rank": 159,
+      "weight_class": "174",
+      "result": "W",
+      "method": "MD",
+      "score": "16-4",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": 1.27
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

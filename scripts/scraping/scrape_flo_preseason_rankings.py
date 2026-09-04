@@ -226,11 +226,14 @@ def scrape_table(driver, url: str) -> list[dict]:
     raise RuntimeError(f"Table never loaded cleanly for {url}")
 
 
-def scrape_season(season_label: str, driver, target_months=TARGET_MONTHS, force: bool = False):
+def discover_dated_base_ids(season_label: str, driver):
+    """Load the bootstrap weight's page ONCE, read its date <select>, and
+    derive every available date's base_id (the id weight 125 would have) via
+    the fixed offset table. This is the only page load needed to know what
+    dates exist -- scraping the other 9 weights only happens later, per date,
+    once a caller has decided that date is actually new."""
     cfg = SEASONS[season_label]
     event_id = cfg["event_id"]
-    tourney_year = cfg["tourney_year"]
-    start_year = cfg["start_year"]
 
     bootstrap_url = build_url(event_id, season_label, cfg["bootstrap_id"], cfg["bootstrap_weight"])
     print(f"[{season_label}] bootstrapping from {bootstrap_url}")
@@ -250,8 +253,69 @@ def scrape_season(season_label: str, driver, target_months=TARGET_MONTHS, force:
         base_id = rid - bootstrap_offset
         dated_base_ids.append((d, base_id))
 
-    out_dir = DATA_DIR / str(tourney_year) / "flo-preseason-rankings"
+    out_dir = DATA_DIR / str(cfg["tourney_year"]) / "flo-preseason-rankings"
     out_dir.mkdir(parents=True, exist_ok=True)
+    return cfg, out_dir, dated_base_ids
+
+
+def scrape_and_save_date(season_label: str, cfg: dict, out_dir: Path, date_obj: datetime,
+                          base_id: int, driver, note: str, force: bool = False) -> bool:
+    """Scrape all 10 weights for one already-chosen date and archive it.
+    Returns False (no scraping done) if the file already exists and force
+    is not set -- callers use this to decide whether anything happened."""
+    event_id = cfg["event_id"]
+    tourney_year = cfg["tourney_year"]
+    date_str = date_obj.strftime("%Y-%m-%d")
+    out_path = out_dir / f"{date_str}.json"
+    if out_path.exists() and not force:
+        print(f"  [{season_label}] {date_str}: already exists, skipping")
+        return False
+
+    print(f"  [{season_label}] scraping {date_str} (base_id={base_id})")
+    weights_out = {}
+    for w in WEIGHT_ORDER:
+        rid = base_id + WEIGHT_OFFSET[w]
+        url = build_url(event_id, season_label, rid, w)
+        try:
+            entries = scrape_table(driver, url)
+        except Exception as e:
+            print(f"    WARN weight {w}: {e}")
+            entries = []
+        weights_out[str(w)] = entries
+        print(f"    weight {w}: {len(entries)} entries")
+
+    payload = {
+        "source": "FloWrestling",
+        "rankings_url": f"https://www.flowrestling.org/rankings/{event_id}-{season_label}-ncaa-di-wrestling-rankings",
+        "ranking_date": date_str,
+        "season": tourney_year,
+        "note": note,
+        "weights": weights_out,
+    }
+    out_path.write_text(json.dumps(payload, indent=2))
+    print(f"  [{season_label}] saved {out_path}")
+    return True
+
+
+def scrape_latest(season_label: str, driver, force: bool = False) -> bool:
+    """In-season weekly pull: find whatever date FloWrestling most recently
+    posted (not a fixed preseason target month) and archive it if we don't
+    already have it. If we already have the latest date logged, this stops
+    after the single bootstrap page load -- it never touches the other 9
+    weight pages. Returns True if a new snapshot was scraped."""
+    cfg, out_dir, dated_base_ids = discover_dated_base_ids(season_label, driver)
+    if not dated_base_ids:
+        print(f"[{season_label}] no dates found on bootstrap page")
+        return False
+
+    date_obj, base_id = max(dated_base_ids, key=lambda x: x[0])
+    note = f"{season_label} season, latest available snapshot (scraped via scripts/scraping/scrape_flo_preseason_rankings.py --latest)"
+    return scrape_and_save_date(season_label, cfg, out_dir, date_obj, base_id, driver, note, force=force)
+
+
+def scrape_season(season_label: str, driver, target_months=TARGET_MONTHS, force: bool = False):
+    cfg, out_dir, dated_base_ids = discover_dated_base_ids(season_label, driver)
+    start_year = cfg["start_year"]
 
     used_dates: set[str] = set()
     for month in target_months:
@@ -267,36 +331,9 @@ def scrape_season(season_label: str, driver, target_months=TARGET_MONTHS, force:
             print(f"  [{season_label}] target month {month}: no unused dates left, skipping")
             continue
         date_obj, base_id = min(candidates, key=lambda x: abs((x[0] - target).days))
-        date_str = date_obj.strftime("%Y-%m-%d")
-        used_dates.add(date_str)
-        out_path = out_dir / f"{date_str}.json"
-        if out_path.exists() and not force:
-            print(f"  [{season_label}] {date_str}: already exists, skipping")
-            continue
-
-        print(f"  [{season_label}] target month {month} -> closest date {date_str} (base_id={base_id})")
-        weights_out = {}
-        for w in WEIGHT_ORDER:
-            rid = base_id + WEIGHT_OFFSET[w]
-            url = build_url(event_id, season_label, rid, w)
-            try:
-                entries = scrape_table(driver, url)
-            except Exception as e:
-                print(f"    WARN weight {w}: {e}")
-                entries = []
-            weights_out[str(w)] = entries
-            print(f"    weight {w}: {len(entries)} entries")
-
-        payload = {
-            "source": "FloWrestling",
-            "rankings_url": f"https://www.flowrestling.org/rankings/{event_id}-{season_label}-ncaa-di-wrestling-rankings",
-            "ranking_date": date_str,
-            "season": tourney_year,
-            "note": f"{season_label} season, {month_label(month)} touch point (scraped via scripts/scraping/scrape_flo_preseason_rankings.py)",
-            "weights": weights_out,
-        }
-        out_path.write_text(json.dumps(payload, indent=2))
-        print(f"  [{season_label}] saved {out_path}")
+        used_dates.add(date_obj.strftime("%Y-%m-%d"))
+        note = f"{season_label} season, {month_label(month)} touch point (scraped via scripts/scraping/scrape_flo_preseason_rankings.py)"
+        scrape_and_save_date(season_label, cfg, out_dir, date_obj, base_id, driver, note, force=force)
 
 
 def month_label(month: int) -> str:
@@ -319,6 +356,12 @@ def main():
         "--target-months", default="10,11,12,1,2",
         help="Comma-separated target months (1-12) to find closest snapshot for. Default: Oct-Feb.",
     )
+    parser.add_argument(
+        "--latest", action="store_true",
+        help="In-season weekly pull: grab whatever date FloWrestling most recently posted, "
+             "instead of the fixed preseason target months. Only touches the bootstrap page "
+             "(cheap) if that date is already archived -- ignores --target-months.",
+    )
     args = parser.parse_args()
 
     if not args.season and not args.all:
@@ -330,7 +373,10 @@ def main():
     driver = setup_driver(headless=args.headless)
     try:
         for season_label in seasons_to_run:
-            scrape_season(season_label, driver, target_months=target_months, force=args.force)
+            if args.latest:
+                scrape_latest(season_label, driver, force=args.force)
+            else:
+                scrape_season(season_label, driver, target_months=target_months, force=args.force)
     finally:
         driver.quit()
 

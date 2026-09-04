@@ -4,17 +4,6 @@
   "rankings": [
     {
       "rank": 1,
-      "wrestler_id": "34939039132",
-      "name": "PJ Duke",
-      "team": "Penn State",
-      "record": "23-2",
-      "tournament_points": 20.5,
-      "seed": 1,
-      "is_starter": true,
-      "original_rank": 1
-    },
-    {
-      "rank": 2,
       "wrestler_id": "34936467132",
       "name": "Landon Robideau",
       "team": "Oklahoma State",
@@ -22,6 +11,19 @@
       "tournament_points": 20.0,
       "seed": 5,
       "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 1
+    },
+    {
+      "rank": 2,
+      "wrestler_id": "34939039132",
+      "name": "PJ Duke",
+      "team": "Penn State",
+      "record": "23-2",
+      "tournament_points": 20.5,
+      "seed": 1,
+      "is_starter": true,
+      "flo_ranked": true,
       "original_rank": 2
     },
     {
@@ -33,6 +35,7 @@
       "tournament_points": 17.5,
       "seed": 2,
       "is_starter": true,
+      "flo_ranked": true,
       "original_rank": 3
     },
     {
@@ -44,6 +47,7 @@
       "tournament_points": 14.0,
       "seed": 7,
       "is_starter": true,
+      "flo_ranked": true,
       "original_rank": 4
     },
     {
@@ -55,10 +59,23 @@
       "tournament_points": 13.5,
       "seed": 8,
       "is_starter": true,
+      "flo_ranked": true,
       "original_rank": 5
     },
     {
       "rank": 6,
+      "wrestler_id": "34943748132",
+      "name": "Kaleb Larkin",
+      "team": "Arizona State",
+      "record": "25-4",
+      "tournament_points": 5.0,
+      "seed": 4,
+      "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 6
+    },
+    {
+      "rank": 7,
       "wrestler_id": "34946729132",
       "name": "Ty Watters",
       "team": "West Virginia",
@@ -66,17 +83,7 @@
       "tournament_points": 11.0,
       "seed": 11,
       "is_starter": true,
-      "original_rank": 6
-    },
-    {
-      "rank": 7,
-      "wrestler_id": "34933533132",
-      "name": "Cameron Catrabone",
-      "team": "Michigan",
-      "record": "23-10",
-      "tournament_points": 8.5,
-      "seed": 15,
-      "is_starter": true,
+      "flo_ranked": true,
       "original_rank": 7
     },
     {
@@ -88,65 +95,23 @@
       "tournament_points": 6.5,
       "seed": 3,
       "is_starter": true,
+      "flo_ranked": true,
       "original_rank": 8
     },
     {
       "rank": 9,
-      "wrestler_id": "34943748132",
-      "name": "Kaleb Larkin",
-      "team": "Arizona State",
-      "record": "25-4",
-      "tournament_points": 5.0,
-      "seed": 4,
+      "wrestler_id": "34933533132",
+      "name": "Cameron Catrabone",
+      "team": "Michigan",
+      "record": "23-10",
+      "tournament_points": 8.5,
+      "seed": 15,
       "is_starter": true,
+      "flo_ranked": true,
       "original_rank": 9
     },
     {
       "rank": 10,
-      "wrestler_id": "34943441132",
-      "name": "Daniel Cardenas",
-      "team": "Stanford",
-      "record": "20-5",
-      "tournament_points": 4.5,
-      "seed": 9,
-      "is_starter": true,
-      "original_rank": 10
-    },
-    {
-      "rank": 11,
-      "wrestler_id": "34941289132",
-      "name": "Ethen Miller",
-      "team": "Virginia Tech",
-      "record": "19-8",
-      "tournament_points": 3.5,
-      "seed": 14,
-      "is_starter": true,
-      "original_rank": 11
-    },
-    {
-      "rank": 12,
-      "wrestler_id": "34943380132",
-      "name": "Kai Owen",
-      "team": "Columbia",
-      "record": "20-10",
-      "tournament_points": 3.5,
-      "seed": 19,
-      "is_starter": true,
-      "original_rank": 12
-    },
-    {
-      "rank": 13,
-      "wrestler_id": "34945837132",
-      "name": "Bryce Lowery",
-      "team": "Indiana",
-      "record": "13-14",
-      "tournament_points": 2.5,
-      "seed": 29,
-      "is_starter": true,
-      "original_rank": 13
-    },
-    {
-      "rank": 14,
       "wrestler_id": "34935896132",
       "name": "Jude Swisher",
       "team": "Penn",
@@ -154,10 +119,11 @@
       "tournament_points": 2.0,
       "seed": 6,
       "is_starter": true,
-      "original_rank": 14
+      "flo_ranked": true,
+      "original_rank": 10
     },
     {
-      "rank": 15,
+      "rank": 11,
       "wrestler_id": "34940864132",
       "name": "Vinny Zerban",
       "team": "Iowa State",
@@ -165,28 +131,79 @@
       "tournament_points": 1.5,
       "seed": 12,
       "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 11
+    },
+    {
+      "rank": 12,
+      "wrestler_id": "34943441132",
+      "name": "Daniel Cardenas",
+      "team": "Stanford",
+      "record": "20-5",
+      "tournament_points": 4.5,
+      "seed": 9,
+      "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 12
+    },
+    {
+      "rank": 13,
+      "wrestler_id": "34941289132",
+      "name": "Ethen Miller",
+      "team": "Virginia Tech",
+      "record": "19-8",
+      "tournament_points": 3.5,
+      "seed": 14,
+      "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 13
+    },
+    {
+      "rank": 14,
+      "wrestler_id": "34955794132",
+      "name": "Charlie Millard",
+      "team": "Minnesota",
+      "record": "20-11",
+      "tournament_points": 1.0,
+      "seed": 21,
+      "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 14
+    },
+    {
+      "rank": 15,
+      "wrestler_id": "34943380132",
+      "name": "Kai Owen",
+      "team": "Columbia",
+      "record": "20-10",
+      "tournament_points": 3.5,
+      "seed": 19,
+      "is_starter": true,
+      "flo_ranked": true,
       "original_rank": 15
     },
     {
       "rank": 16,
-      "wrestler_id": "34943229132",
-      "name": "Cael Swensen",
-      "team": "South Dakota State",
-      "record": "25-9",
-      "tournament_points": 1.5,
-      "seed": 16,
+      "wrestler_id": "34934131132",
+      "name": "Dylan Evans",
+      "team": "Pittsburgh",
+      "record": "23-10",
+      "tournament_points": 1.0,
+      "seed": 27,
       "is_starter": true,
+      "flo_ranked": true,
       "original_rank": 16
     },
     {
       "rank": 17,
-      "wrestler_id": "34952954132",
-      "name": "Kaleb Burgess",
-      "team": "Buffalo",
-      "record": "18-9",
-      "tournament_points": 1.5,
-      "seed": 23,
+      "wrestler_id": "34937328132",
+      "name": "Jimmy Harrington",
+      "team": "Harvard",
+      "record": "22-11",
+      "tournament_points": 1.0,
+      "seed": 20,
       "is_starter": true,
+      "flo_ranked": true,
       "original_rank": 17
     },
     {
@@ -198,21 +215,11 @@
       "tournament_points": 1.0,
       "seed": 10,
       "is_starter": true,
+      "flo_ranked": true,
       "original_rank": 18
     },
     {
       "rank": 19,
-      "wrestler_id": "34944670132",
-      "name": "Luke Mechler",
-      "team": "Wisconsin",
-      "record": "19-10",
-      "tournament_points": 1.0,
-      "seed": 17,
-      "is_starter": true,
-      "original_rank": 19
-    },
-    {
-      "rank": 20,
       "wrestler_id": "34938485132",
       "name": "DJ McGee",
       "team": "George Mason",
@@ -220,65 +227,47 @@
       "tournament_points": 1.0,
       "seed": 18,
       "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 19
+    },
+    {
+      "rank": 20,
+      "wrestler_id": "34944670132",
+      "name": "Luke Mechler",
+      "team": "Wisconsin",
+      "record": "19-10",
+      "tournament_points": 1.0,
+      "seed": 17,
+      "is_starter": true,
+      "flo_ranked": true,
       "original_rank": 20
     },
     {
       "rank": 21,
-      "wrestler_id": "34937328132",
-      "name": "Jimmy Harrington",
-      "team": "Harvard",
-      "record": "22-11",
-      "tournament_points": 1.0,
-      "seed": 20,
+      "wrestler_id": "34943229132",
+      "name": "Cael Swensen",
+      "team": "South Dakota State",
+      "record": "25-9",
+      "tournament_points": 1.5,
+      "seed": 16,
       "is_starter": true,
+      "flo_ranked": true,
       "original_rank": 21
     },
     {
       "rank": 22,
-      "wrestler_id": "34955794132",
-      "name": "Charlie Millard",
-      "team": "Minnesota",
-      "record": "20-11",
-      "tournament_points": 1.0,
-      "seed": 21,
+      "wrestler_id": "34945837132",
+      "name": "Bryce Lowery",
+      "team": "Indiana",
+      "record": "13-14",
+      "tournament_points": 2.5,
+      "seed": 29,
       "is_starter": true,
+      "flo_ranked": true,
       "original_rank": 22
     },
     {
       "rank": 23,
-      "wrestler_id": "34945367132",
-      "name": "Jaivon Jones",
-      "team": "Little Rock",
-      "record": "20-11",
-      "tournament_points": 1.0,
-      "seed": 24,
-      "is_starter": true,
-      "original_rank": 23
-    },
-    {
-      "rank": 24,
-      "wrestler_id": "34934131132",
-      "name": "Dylan Evans",
-      "team": "Pittsburgh",
-      "record": "23-10",
-      "tournament_points": 1.0,
-      "seed": 27,
-      "is_starter": true,
-      "original_rank": 24
-    },
-    {
-      "rank": 25,
-      "wrestler_id": "34943155132",
-      "name": "Laird Root",
-      "team": "North Carolina",
-      "record": "16-12",
-      "tournament_points": 0.5,
-      "seed": 30,
-      "is_starter": true,
-      "original_rank": 25
-    },
-    {
-      "rank": 26,
       "wrestler_id": "34936210132",
       "name": "Derek Raike",
       "team": "Ohio",
@@ -286,32 +275,23 @@
       "tournament_points": 0.0,
       "seed": 13,
       "is_starter": true,
-      "original_rank": 26
+      "flo_ranked": true,
+      "original_rank": 23
     },
     {
-      "rank": 27,
-      "wrestler_id": "34955078132",
-      "name": "Colton Washleski",
-      "team": "Virginia",
-      "record": "18-12",
-      "tournament_points": 0.0,
-      "seed": 22,
+      "rank": 24,
+      "wrestler_id": "34952954132",
+      "name": "Kaleb Burgess",
+      "team": "Buffalo",
+      "record": "18-9",
+      "tournament_points": 1.5,
+      "seed": 23,
       "is_starter": true,
-      "original_rank": 27
+      "flo_ranked": true,
+      "original_rank": 24
     },
     {
-      "rank": 28,
-      "wrestler_id": "34934120132",
-      "name": "Mason Shrader",
-      "team": "Central Michigan",
-      "record": "24-12",
-      "tournament_points": 0.0,
-      "seed": 25,
-      "is_starter": true,
-      "original_rank": 28
-    },
-    {
-      "rank": 29,
+      "rank": 25,
       "wrestler_id": "34939061132",
       "name": "Jonathan Ley",
       "team": "Navy",
@@ -319,10 +299,35 @@
       "tournament_points": 0.0,
       "seed": 26,
       "is_starter": true,
-      "original_rank": 29
+      "flo_ranked": true,
+      "original_rank": 25
     },
     {
-      "rank": 30,
+      "rank": 26,
+      "wrestler_id": "34955078132",
+      "name": "Colton Washleski",
+      "team": "Virginia",
+      "record": "18-12",
+      "tournament_points": 0.0,
+      "seed": 22,
+      "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 26
+    },
+    {
+      "rank": 27,
+      "wrestler_id": "34945367132",
+      "name": "Jaivon Jones",
+      "team": "Little Rock",
+      "record": "20-11",
+      "tournament_points": 1.0,
+      "seed": 24,
+      "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 27
+    },
+    {
+      "rank": 28,
       "wrestler_id": "34934608132",
       "name": "Gavin Drexler",
       "team": "North Dakota State",
@@ -330,7 +335,32 @@
       "tournament_points": 0.0,
       "seed": 28,
       "is_starter": true,
-      "original_rank": 30
+      "flo_ranked": true,
+      "original_rank": 28
+    },
+    {
+      "rank": 29,
+      "wrestler_id": "34943155132",
+      "name": "Laird Root",
+      "team": "North Carolina",
+      "record": "16-12",
+      "tournament_points": 0.5,
+      "seed": 30,
+      "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 32
+    },
+    {
+      "rank": 30,
+      "wrestler_id": "34934120132",
+      "name": "Mason Shrader",
+      "team": "Central Michigan",
+      "record": "24-12",
+      "tournament_points": 0.0,
+      "seed": 25,
+      "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 33
     },
     {
       "rank": 31,
@@ -341,7 +371,8 @@
       "tournament_points": 0.0,
       "seed": 31,
       "is_starter": true,
-      "original_rank": 31
+      "flo_ranked": false,
+      "original_rank": 34
     },
     {
       "rank": 32,
@@ -352,7 +383,8 @@
       "tournament_points": 0.0,
       "seed": 32,
       "is_starter": true,
-      "original_rank": 32
+      "flo_ranked": false,
+      "original_rank": 35
     },
     {
       "rank": 33,
@@ -363,7 +395,8 @@
       "tournament_points": 0.0,
       "seed": 33,
       "is_starter": true,
-      "original_rank": 33
+      "flo_ranked": false,
+      "original_rank": 36
     }
   ],
   "note": "Starter-only rankings with consecutive re-ranking. Original ranks preserved in 'original_rank' field."

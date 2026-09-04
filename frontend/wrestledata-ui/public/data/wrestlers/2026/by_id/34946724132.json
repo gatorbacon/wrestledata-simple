@@ -1,1 +1,125 @@
-{"wrestler_id": "34946724132", "name": "Brian Finnerty", "team": "West Virginia", "team_slug": "west_virginia", "team_rank": 21, "weight_class": 174, "year": 2026, "current_rank": 108, "record": {"overall": "2-2", "vs_ranked": "2-2", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 2.25, "pa7": 3.25, "pd7": -1.0, "si_plus": 81.9, "df_plus": 109.5, "apr_plus": 100.0, "pin_rate": 0.0, "bonus_rate": 0.0, "majors": 0, "techs": 0, "pins": 0, "mat_value": {"mv_avg": -1.5884, "matches": 5, "rank_weight": 113, "rank_overall": 1206, "version": "mbt_50_50", "mv_avg_v1": -1.458, "rank_weight_v1": 118, "rank_overall_v1": 1328}}, "opponent_breakdown": {"ranked_wins": 2, "ranked_losses": 2, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34944022132", "opponent_rank": 141, "opponent_name": "Chris Sanchez", "method": "Dec 4-1"}, "worst_loss": {"opponent_id": "34944009132", "opponent_rank": 61, "opponent_name": "Ethan Barr", "method": "MD 8-0"}}, "match_list": [{"date": "2026-02-21", "opponent_id": "34935975132", "opponent_career_id": null, "opponent_name": "Tucker Hogan", "opponent_team": "Lock Haven", "opponent_team_rank": 36, "opponent_weight": 197, "opponent_rank": 45, "weight_class": "197", "result": "L", "method": "DEC", "score": "2-0", "duration": "7:00", "event": "vs. West Virginia", "mv_impact": -0.8417, "mv_impact_v1": -2.09}, {"date": "2025-12-06", "opponent_id": "34944009132", "opponent_career_id": null, "opponent_name": "Ethan Barr", "opponent_team": "Kent State", "opponent_team_rank": 71, "opponent_weight": 174, "opponent_rank": 61, "weight_class": "174", "result": "L", "method": "MD", "score": "8-0", "duration": "7:00", "event": "Kent State Open 1", "mv_impact": -0.2779, "mv_impact_v1": -3.3}, {"date": "2025-12-06", "opponent_id": "34944022132", "opponent_career_id": null, "opponent_name": "Chris Sanchez", "opponent_team": "Kent State", "opponent_team_rank": 71, "opponent_weight": 174, "opponent_rank": 141, "weight_class": "174", "result": "W", "method": "DEC", "score": "4-1", "duration": "7:00", "event": "Kent State Open 1", "mv_impact": -0.2779, "mv_impact_v1": 1.2}, {"date": "2025-12-06", "opponent_id": "34946735132", "opponent_career_id": null, "opponent_name": "Eric Thompson", "opponent_team": "West Virginia", "opponent_team_rank": 21, "opponent_weight": 174, "opponent_rank": 194, "weight_class": "174", "result": "W", "method": "DEC", "score": "5-2", "duration": "7:00", "event": "Kent State Open 1", "mv_impact": -0.2779, "mv_impact_v1": -1.0}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34946724132",
+  "name": "Brian Finnerty",
+  "team": "West Virginia",
+  "team_slug": "west_virginia",
+  "team_rank": 23,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": 108,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "2-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.25,
+    "pa7": 3.25,
+    "pd7": -1.0,
+    "si_plus": 81.9,
+    "df_plus": 109.5,
+    "apr_plus": 100.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.467,
+      "matches": 5,
+      "rank_weight": 118,
+      "rank_overall": 1332,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34944022132",
+      "opponent_rank": 141,
+      "opponent_name": "Chris Sanchez",
+      "method": "Dec 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "34944009132",
+      "opponent_rank": 61,
+      "opponent_name": "Ethan Barr",
+      "method": "MD 8-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-02-21",
+      "opponent_id": "34935975132",
+      "opponent_career_id": null,
+      "opponent_name": "Tucker Hogan",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 38,
+      "opponent_weight": 197,
+      "opponent_rank": 46,
+      "weight_class": "197",
+      "result": "L",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "vs. West Virginia",
+      "mv_impact": -2.12
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34944009132",
+      "opponent_career_id": null,
+      "opponent_name": "Ethan Barr",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 71,
+      "opponent_weight": 174,
+      "opponent_rank": 61,
+      "weight_class": "174",
+      "result": "L",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "Kent State Open 1",
+      "mv_impact": -3.3
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34944022132",
+      "opponent_career_id": null,
+      "opponent_name": "Chris Sanchez",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 71,
+      "opponent_weight": 174,
+      "opponent_rank": 141,
+      "weight_class": "174",
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "Kent State Open 1",
+      "mv_impact": 1.21
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34946735132",
+      "opponent_career_id": null,
+      "opponent_name": "Eric Thompson",
+      "opponent_team": "West Virginia",
+      "opponent_team_rank": 23,
+      "opponent_weight": 174,
+      "opponent_rank": 194,
+      "weight_class": "174",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "Kent State Open 1",
+      "mv_impact": -1.01
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

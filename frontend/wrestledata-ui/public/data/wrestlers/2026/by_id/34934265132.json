@@ -1,1 +1,69 @@
-{"wrestler_id": "34934265132", "name": "Caleb Patterson", "team": "VMI", "team_slug": "vmi", "team_rank": 78, "weight_class": 197, "year": 2026, "current_rank": 188, "record": {"overall": "0-1", "vs_ranked": "0-1", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 16.15, "pa7": 25.0, "pd7": -8.85, "si_plus": 135.2, "df_plus": 68.8, "apr_plus": 100.6, "pin_rate": 0.0, "bonus_rate": 0.0, "majors": 0, "techs": 0, "pins": 0, "mat_value": {"mv_avg": -2.1108, "matches": 1, "rank_weight": 120, "rank_overall": 1455, "version": "mbt_50_50", "mv_avg_v1": -4.993, "rank_weight_v1": 181, "rank_overall_v1": 2133}}, "opponent_breakdown": {"ranked_wins": 0, "ranked_losses": 1, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": null, "worst_loss": {"opponent_id": "34951035132", "opponent_rank": 82, "opponent_name": "Brody Evans", "method": "TF 21-6 2:36"}}, "match_list": [{"date": "2025-11-16", "opponent_id": "34951035132", "opponent_career_id": null, "opponent_name": "Brody Evans", "opponent_team": "Edinboro", "opponent_team_rank": 56, "opponent_weight": 197, "opponent_rank": 82, "weight_class": "197", "result": "L", "method": "TF", "score": "21-6", "duration": "2:36", "event": "vs. VMI", "mv_impact": -1.4948, "mv_impact_v1": -4.99}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34934265132",
+  "name": "Caleb Patterson",
+  "team": "VMI",
+  "team_slug": "vmi",
+  "team_rank": 79,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": 188,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 16.15,
+    "pa7": 25.0,
+    "pd7": -8.85,
+    "si_plus": 135.2,
+    "df_plus": 68.8,
+    "apr_plus": 100.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.988,
+      "matches": 1,
+      "rank_weight": 181,
+      "rank_overall": 2133,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34951035132",
+      "opponent_rank": 82,
+      "opponent_name": "Brody Evans",
+      "method": "TF 21-6 2:36"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34951035132",
+      "opponent_career_id": null,
+      "opponent_name": "Brody Evans",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 69,
+      "opponent_weight": 197,
+      "opponent_rank": 82,
+      "weight_class": "197",
+      "result": "L",
+      "method": "TF",
+      "score": "21-6",
+      "duration": "2:36",
+      "event": "vs. VMI",
+      "mv_impact": -4.99
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

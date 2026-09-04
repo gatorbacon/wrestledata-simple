@@ -292,32 +292,38 @@ def load_rankings(season: int, weight: int, data_dir: str = "mt/rankings_data", 
         return json.load(f)
 
 
-def build_wrestler_list(rankings_data: Dict, wrestlers_data: Dict, starters_only: bool = False) -> List[Dict]:
+def build_wrestler_list(rankings_data: Dict, wrestlers_data: Dict, starters_only: bool = False, flo_only: bool = False) -> List[Dict]:
     """
     Build ordered list of wrestlers from rankings.
-    
+
     Ranked wrestlers first (by rank), then unranked wrestlers.
     If starters_only is True, exclude all non-starters (including unranked).
+    If flo_only is True, exclude everyone apply_flo_rankings.py didn't itself
+    place (the "flo_ranked" tag) -- a different, unrelated cutoff from
+    starters_only: this is FloWrestling's own ranked count for that weight,
+    not roster/lineup status.
     """
     rankings = rankings_data.get('rankings', [])
     wrestlers_dict = wrestlers_data.get('wrestlers', {})
-    
+
     # Separate ranked and unranked
     ranked = []
     unranked = []
-    
+
     # Build ranked list
     for entry in rankings:
         wrestler_id = entry.get('wrestler_id')
         if not wrestler_id:
             continue
-        
+
         # If starters_only, skip non-starters
         if starters_only and not entry.get('is_starter', False):
             continue
-        
+        if flo_only and not entry.get('flo_ranked', False):
+            continue
+
         wrestler_info = wrestlers_dict.get(wrestler_id, {})
-        
+
         ranked.append({
             "id": wrestler_id,
             "name": entry.get('name') or wrestler_info.get('name', 'Unknown'),
@@ -325,10 +331,10 @@ def build_wrestler_list(rankings_data: Dict, wrestlers_data: Dict, starters_only
             "rank": entry.get('rank'),
             "starter": entry.get('is_starter', False)
         })
-    
+
     # Build unranked list (wrestlers in relationships but not in rankings)
-    # Skip this entirely if starters_only is True
-    if not starters_only:
+    # Skip this entirely if starters_only or flo_only is True
+    if not starters_only and not flo_only:
         ranked_ids = {w['id'] for w in ranked}
         
         for wrestler_id, wrestler_info in wrestlers_dict.items():
@@ -426,11 +432,12 @@ def generate_public_matrix(
     starters_only: bool = False,
     league: str = 'ncaa',
     state: str = None,
-    gender: str = None
+    gender: str = None,
+    flo_only: bool = False
 ) -> Dict:
     """
     Generate public matrix JSON for a single weight class.
-    
+
     Args:
         season: Season year
         weight: Weight class
@@ -438,7 +445,9 @@ def generate_public_matrix(
         relationships_dir: Directory containing relationships files
         output_dir: Directory to save output files
         starters_only: If True, use rankings_starters files instead of rankings files
-    
+        flo_only: If True, only include wrestlers apply_flo_rankings.py tagged
+            as Flo-ranked for this weight (see build_wrestler_list)
+
     Returns: The matrix data dictionary
     """
     # Load data
@@ -453,8 +462,8 @@ def generate_public_matrix(
         ir_active_ids = resolve_active_ir(season, gender, wrestlers_by_id)
     
     # Build wrestler list (ordered by rank)
-    # If starters_only, exclude all non-starters
-    wrestler_list = build_wrestler_list(rankings_data, relationships_data, starters_only)
+    # If starters_only, exclude all non-starters. If flo_only, exclude all non-Flo-ranked.
+    wrestler_list = build_wrestler_list(rankings_data, relationships_data, starters_only, flo_only)
 
     # Add injured reserve flag for HS
     for w in wrestler_list:
@@ -537,6 +546,12 @@ def main():
         '--starters-only',
         action='store_true',
         help='Use rankings_starters files instead of rankings files (generates starters-only matrix)'
+    )
+    parser.add_argument(
+        '--flo-only',
+        action='store_true',
+        help="NCAA only: include only wrestlers apply_flo_rankings.py tagged as Flo-ranked "
+             "(FloWrestling's own cutoff per weight, not the roster/starter concept -starters-only uses)"
     )
     parser.add_argument('-league', type=str, default='ncaa', choices=['ncaa', 'hs'],
                         help='League type: ncaa (default) or hs')
@@ -629,9 +644,9 @@ def main():
         if args.weight:
             weights = [args.weight]
         
-        mode_str = "starters-only" if args.starters_only else "all wrestlers"
+        mode_str = "starters-only" if args.starters_only else ("flo-only" if args.flo_only else "all wrestlers")
         print(f"Generating public matrices for season {args.season} ({mode_str})...")
-        
+
         for weight in weights:
             try:
                 print(f"\nProcessing weight {weight}...")
@@ -642,7 +657,8 @@ def main():
                     args.relationships_dir,
                     args.output_dir,
                     args.starters_only,
-                    league=args.league
+                    league=args.league,
+                    flo_only=args.flo_only
                 )
                 
                 output_file = save_public_matrix(

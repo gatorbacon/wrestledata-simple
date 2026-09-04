@@ -1,1 +1,69 @@
-{"wrestler_id": "34934126132", "name": "Jack Pletcher", "team": "Pittsburgh", "team_slug": "pittsburgh", "team_rank": 23, "weight_class": 157, "year": 2026, "current_rank": 79, "record": {"overall": "1-0", "vs_ranked": "1-0", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 6.79, "pa7": 4.24, "pd7": 2.55, "si_plus": 97.2, "df_plus": 107.4, "apr_plus": 114.2, "pin_rate": 0.0, "bonus_rate": 0.0, "majors": 0, "techs": 0, "pins": 0, "mat_value": {"mv_avg": -0.2328, "matches": 1, "rank_weight": 76, "rank_overall": 642, "version": "mbt_50_50", "mv_avg_v1": 0.728, "rank_weight_v1": 65, "rank_overall_v1": 569}}, "opponent_breakdown": {"ranked_wins": 1, "ranked_losses": 0, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34957646132", "opponent_rank": 196, "opponent_name": "Garrett Reece", "method": "SV-3 8-5"}, "worst_loss": null}, "match_list": [{"date": "2025-11-15", "opponent_id": "34957646132", "opponent_career_id": null, "opponent_name": "Garrett Reece", "opponent_team": "Maryland", "opponent_team_rank": 28, "opponent_weight": 157, "opponent_rank": 196, "weight_class": "157", "result": "W", "method": "SV-3", "score": "8-5", "duration": "8:15", "event": "Shorty Hitchcock Memorial Open", "mv_impact": -0.0108, "mv_impact_v1": 0.73}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34934126132",
+  "name": "Jack Pletcher",
+  "team": "Pittsburgh",
+  "team_slug": "pittsburgh",
+  "team_rank": 25,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 79,
+  "record": {
+    "overall": "1-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.79,
+    "pa7": 4.24,
+    "pd7": 2.55,
+    "si_plus": 97.3,
+    "df_plus": 107.4,
+    "apr_plus": 114.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.728,
+      "matches": 1,
+      "rank_weight": 65,
+      "rank_overall": 568,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34957646132",
+      "opponent_rank": 196,
+      "opponent_name": "Garrett Reece",
+      "method": "SV-3 8-5"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34957646132",
+      "opponent_career_id": null,
+      "opponent_name": "Garrett Reece",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 32,
+      "opponent_weight": 157,
+      "opponent_rank": 196,
+      "weight_class": "157",
+      "result": "W",
+      "method": "SV-3",
+      "score": "8-5",
+      "duration": "8:15",
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": 0.73
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

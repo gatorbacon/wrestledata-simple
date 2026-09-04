@@ -1,1 +1,69 @@
-{"wrestler_id": "34962195132", "name": "Leo DeLuca", "team": "Iowa", "team_slug": "iowa", "team_rank": 4, "weight_class": 125, "year": 2026, "current_rank": 33, "record": {"overall": "1-0", "vs_ranked": "1-0", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 2.0, "pa7": 0.0, "pd7": 2.0, "si_plus": 96.2, "df_plus": 115.1, "apr_plus": 102.0, "pin_rate": 0.0, "bonus_rate": 0.0, "majors": 0, "techs": 0, "pins": 0, "mat_value": {"mv_avg": 0.8056, "matches": 1, "rank_weight": 34, "rank_overall": 360, "version": "mbt_50_50", "mv_avg_v1": 3.751, "rank_weight_v1": 4, "rank_overall_v1": 50}}, "opponent_breakdown": {"ranked_wins": 1, "ranked_losses": 0, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34943975132", "opponent_rank": 34, "opponent_name": "Mack Mauger", "method": "Dec 2-0"}, "worst_loss": null}, "match_list": [{"date": "2025-11-15", "opponent_id": "34943975132", "opponent_career_id": null, "opponent_name": "Mack Mauger", "opponent_team": "Missouri", "opponent_team_rank": 13, "opponent_weight": 125, "opponent_rank": 34, "weight_class": "125", "result": "W", "method": "DEC", "score": "2-0", "duration": "7:00", "event": "vs. Missouri", "mv_impact": 0.935, "mv_impact_v1": 3.75}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34962195132",
+  "name": "Leo DeLuca",
+  "team": "Iowa",
+  "team_slug": "iowa",
+  "team_rank": 4,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": 36,
+  "record": {
+    "overall": "1-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.0,
+    "pa7": 0.0,
+    "pd7": 2.0,
+    "si_plus": 96.2,
+    "df_plus": 115.1,
+    "apr_plus": 102.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 3.883,
+      "matches": 1,
+      "rank_weight": 3,
+      "rank_overall": 41,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34943975132",
+      "opponent_rank": 28,
+      "opponent_name": "Mack Mauger",
+      "method": "Dec 2-0"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34943975132",
+      "opponent_career_id": null,
+      "opponent_name": "Mack Mauger",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 14,
+      "opponent_weight": 125,
+      "opponent_rank": 28,
+      "weight_class": "125",
+      "result": "W",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "vs. Missouri",
+      "mv_impact": 3.88
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

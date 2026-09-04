@@ -1,1 +1,108 @@
-{"wrestler_id": "34950481132", "name": "Colin Lutz", "team": "Duke", "team_slug": "duke", "team_rank": 55, "weight_class": 157, "year": 2026, "current_rank": 166, "record": {"overall": "1-2", "vs_ranked": "1-2", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 3.0, "pa7": 16.5, "pd7": -13.5, "si_plus": 95.1, "df_plus": 84.7, "apr_plus": 113.5, "pin_rate": 1.0, "bonus_rate": 1.0, "majors": 0, "techs": 0, "pins": 1, "mat_value": {"mv_avg": -2.119, "matches": 3, "rank_weight": 161, "rank_overall": 1462, "version": "mbt_50_50", "mv_avg_v1": -1.654, "rank_weight_v1": 162, "rank_overall_v1": 1400}}, "opponent_breakdown": {"ranked_wins": 1, "ranked_losses": 2, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34954521132", "opponent_rank": 233, "opponent_name": "Christian Hale Anderson", "method": "Fall 3:35"}, "worst_loss": {"opponent_id": "34943143132", "opponent_rank": 90, "opponent_name": "Cullen Kane", "method": "MD 13-0"}}, "match_list": [{"date": "2026-02-22", "opponent_id": "34935908132", "opponent_career_id": null, "opponent_name": "Tyler-Xavier McKnight", "opponent_team": "Davidson", "opponent_team_rank": 69, "opponent_weight": 157, "opponent_rank": 49, "weight_class": "157", "result": "L", "method": "MD", "score": "20-6", "duration": "7:00", "event": "Wildcat Open", "mv_impact": -0.6902, "mv_impact_v1": -2.94}, {"date": "2026-02-22", "opponent_id": "34954521132", "opponent_career_id": null, "opponent_name": "Christian Hale Anderson", "opponent_team": "Presbyterian", "opponent_team_rank": 76, "opponent_weight": 157, "opponent_rank": 233, "weight_class": "157", "result": "W", "method": "FALL", "score": null, "duration": "3:35", "event": "Wildcat Open", "mv_impact": -0.6902, "mv_impact_v1": 2.16}, {"date": "2026-02-22", "opponent_id": "34943143132", "opponent_career_id": null, "opponent_name": "Cullen Kane", "opponent_team": "North Carolina", "opponent_team_rank": 27, "opponent_weight": 157, "opponent_rank": 90, "weight_class": "157", "result": "L", "method": "MD", "score": "13-0", "duration": "7:00", "event": "Wildcat Open", "mv_impact": -0.6902, "mv_impact_v1": -4.18}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34950481132",
+  "name": "Colin Lutz",
+  "team": "Duke",
+  "team_slug": "duke",
+  "team_rank": 68,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 166,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.0,
+    "pa7": 16.5,
+    "pd7": -13.5,
+    "si_plus": 95.1,
+    "df_plus": 84.7,
+    "apr_plus": 113.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.653,
+      "matches": 3,
+      "rank_weight": 162,
+      "rank_overall": 1403,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34954521132",
+      "opponent_rank": 233,
+      "opponent_name": "Christian Hale Anderson",
+      "method": "Fall 3:35"
+    },
+    "worst_loss": {
+      "opponent_id": "34943143132",
+      "opponent_rank": 90,
+      "opponent_name": "Cullen Kane",
+      "method": "MD 13-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-02-22",
+      "opponent_id": "34935908132",
+      "opponent_career_id": null,
+      "opponent_name": "Tyler-Xavier McKnight",
+      "opponent_team": "Davidson",
+      "opponent_team_rank": 67,
+      "opponent_weight": 157,
+      "opponent_rank": 50,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MD",
+      "score": "20-6",
+      "duration": "7:00",
+      "event": "Wildcat Open",
+      "mv_impact": -2.94
+    },
+    {
+      "date": "2026-02-22",
+      "opponent_id": "34954521132",
+      "opponent_career_id": null,
+      "opponent_name": "Christian Hale Anderson",
+      "opponent_team": "Presbyterian",
+      "opponent_team_rank": 76,
+      "opponent_weight": 157,
+      "opponent_rank": 233,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:35",
+      "event": "Wildcat Open",
+      "mv_impact": 2.16
+    },
+    {
+      "date": "2026-02-22",
+      "opponent_id": "34943143132",
+      "opponent_career_id": null,
+      "opponent_name": "Cullen Kane",
+      "opponent_team": "North Carolina",
+      "opponent_team_rank": 26,
+      "opponent_weight": 157,
+      "opponent_rank": 90,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MD",
+      "score": "13-0",
+      "duration": "7:00",
+      "event": "Wildcat Open",
+      "mv_impact": -4.18
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

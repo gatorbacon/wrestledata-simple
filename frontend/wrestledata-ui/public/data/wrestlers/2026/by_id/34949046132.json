@@ -1,1 +1,86 @@
-{"wrestler_id": "34949046132", "name": "David Rozenblum", "team": "Sacred Heart", "team_slug": "sacred_heart", "team_rank": 77, "weight_class": 165, "year": 2026, "current_rank": 260, "record": {"overall": "0-2", "vs_ranked": "0-2", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 0.0, "pa7": 0.0, "pd7": 0.0, "si_plus": 103.6, "df_plus": 104.2, "apr_plus": 99.7, "pin_rate": 0.0, "bonus_rate": 0.0, "majors": 0, "techs": 0, "pins": 0, "mat_value": {"mv_avg": -3.3395, "matches": 2, "rank_weight": 223, "rank_overall": 1917, "version": "mbt_50_50", "mv_avg_v1": -5.888, "rank_weight_v1": 257, "rank_overall_v1": 2217}}, "opponent_breakdown": {"ranked_wins": 0, "ranked_losses": 2, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": null, "worst_loss": {"opponent_id": "34934707132", "opponent_rank": 164, "opponent_name": "Jesse Scott", "method": "Fall 2:28"}}, "match_list": [{"date": "2025-11-09", "opponent_id": "34944349132", "opponent_career_id": null, "opponent_name": "Anthony Conetta", "opponent_team": "Appalachian State", "opponent_team_rank": 51, "opponent_weight": 165, "opponent_rank": 38, "weight_class": "165", "result": "L", "method": "FALL", "score": null, "duration": "1:43", "event": "2025 Journeymen Collegiate Classic", "mv_impact": -1.2317, "mv_impact_v1": -4.49}, {"date": "2025-11-09", "opponent_id": "34934707132", "opponent_career_id": null, "opponent_name": "Jesse Scott", "opponent_team": "Franklin & Marshall", "opponent_team_rank": 44, "opponent_weight": 165, "opponent_rank": 164, "weight_class": "165", "result": "L", "method": "FALL", "score": null, "duration": "2:28", "event": "2025 Journeymen Collegiate Classic", "mv_impact": -1.2317, "mv_impact_v1": -7.29}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34949046132",
+  "name": "David Rozenblum",
+  "team": "Sacred Heart",
+  "team_slug": "sacred_heart",
+  "team_rank": 77,
+  "weight_class": 165,
+  "year": 2026,
+  "current_rank": 260,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 103.6,
+    "df_plus": 104.2,
+    "apr_plus": 99.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.909,
+      "matches": 2,
+      "rank_weight": 257,
+      "rank_overall": 2220,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34934707132",
+      "opponent_rank": 164,
+      "opponent_name": "Jesse Scott",
+      "method": "Fall 2:28"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34944349132",
+      "opponent_career_id": null,
+      "opponent_name": "Anthony Conetta",
+      "opponent_team": "Appalachian State",
+      "opponent_team_rank": 50,
+      "opponent_weight": 165,
+      "opponent_rank": 40,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:43",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -4.53
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34934707132",
+      "opponent_career_id": null,
+      "opponent_name": "Jesse Scott",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 42,
+      "opponent_weight": 165,
+      "opponent_rank": 164,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:28",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -7.29
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

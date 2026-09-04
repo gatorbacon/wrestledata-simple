@@ -14,22 +14,22 @@
     "vs_top25": "0-0"
   },
   "metrics": {
-    "pf7": 0.0,
-    "pa7": 0.0,
-    "pd7": 0.0,
-    "si_plus": 100.0,
-    "df_plus": 100.0,
-    "apr_plus": 100.0,
+    "pf7": 18.13,
+    "pa7": 1.01,
+    "pd7": 17.12,
+    "si_plus": 124.8,
+    "df_plus": 112.8,
+    "apr_plus": 93.7,
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -2.215,
+      "mv_avg": -2.224,
       "matches": 2,
       "rank_weight": 144,
-      "rank_overall": 1554,
+      "rank_overall": 1553,
       "version": "v1"
     }
   },
@@ -46,7 +46,7 @@
     },
     "worst_loss": {
       "opponent_id": "34943252132",
-      "opponent_rank": 68,
+      "opponent_rank": 70,
       "opponent_name": "Burk Blasius",
       "method": "Fall 2:05"
     }
@@ -54,28 +54,11 @@
   "match_list": [
     {
       "date": "2026-01-04",
-      "opponent_id": "34943252132",
-      "opponent_career_id": null,
-      "opponent_name": "Burk Blasius",
-      "opponent_team": "South Dakota State",
-      "opponent_team_rank": 41,
-      "opponent_weight": 184,
-      "opponent_rank": 68,
-      "weight_class": "184",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:05",
-      "event": "2026 Soldier Salute",
-      "mv_impact": -6.08
-    },
-    {
-      "date": "2026-01-04",
       "opponent_id": "34943246132",
       "opponent_career_id": null,
       "opponent_name": "Shane McConville",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 39,
       "opponent_weight": 184,
       "opponent_rank": 182,
       "weight_class": "184",
@@ -85,7 +68,24 @@
       "duration": "6:57",
       "event": "2026 Soldier Salute",
       "mv_impact": 1.65
+    },
+    {
+      "date": "2026-01-04",
+      "opponent_id": "34943252132",
+      "opponent_career_id": null,
+      "opponent_name": "Burk Blasius",
+      "opponent_team": "South Dakota State",
+      "opponent_team_rank": 39,
+      "opponent_weight": 184,
+      "opponent_rank": 70,
+      "weight_class": "184",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:05",
+      "event": "2026 Soldier Salute",
+      "mv_impact": -6.1
     }
   ],
-  "profile_generated_at": "2026-06-02"
+  "profile_generated_at": "2026-09-03"
 }

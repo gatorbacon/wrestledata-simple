@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>MatSavant — College Wrestling Analytics</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/styles.css?v=20260904" />
+  <link rel="stylesheet" href="/styles.css?v=20260912" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   <script src="/search_index.js"></script>
 </head>
@@ -17,7 +17,7 @@
     <!-- TEAM CHAMPIONSHIP ODDS (full-width feature) -->
     <section class="section" id="team-odds-preview-section">
       <div class="section-header">
-        <h2>NCAA Team Championship Odds</h2>
+        <h2 id="team-odds-preview-title">NCAA Team Championship Odds</h2>
         <a href="/team_odds.html" class="section-header-link">Full Table →</a>
       </div>
       <div class="header-subline" id="team-odds-preview-info" style="margin-bottom: 10px;"></div>
@@ -57,7 +57,7 @@
       <div class="hp-panel">
         <div class="hp-panel-head">
           <div class="hp-panel-title-row">
-            <h2 class="hp-panel-title"><a href="/leaderboards/tpar.html">TPAR Leaders</a></h2>
+            <h2 class="hp-panel-title"><a href="/leaderboards/tpar.html" id="tpar-panel-title">TPAR Leaders</a></h2>
             <a href="/leaderboards/tpar.html" class="hp-panel-link">See all →</a>
           </div>
           <div class="hp-panel-tabs" id="tpar-weight-tabs">
@@ -81,7 +81,7 @@
       <div class="hp-panel">
         <div class="hp-panel-head">
           <div class="hp-panel-title-row">
-            <h2 class="hp-panel-title">NCAA Tournament Projections</h2>
+            <h2 class="hp-panel-title" id="xtp-panel-title">NCAA Tournament Projections</h2>
             <a href="/ncaa_live.html" class="hp-panel-link">Full Dashboard →</a>
           </div>
           <div class="hp-panel-tabs">
@@ -95,7 +95,7 @@
       <div class="hp-panel">
         <div class="hp-panel-head">
           <div class="hp-panel-title-row">
-            <h2 class="hp-panel-title">Rankings</h2>
+            <h2 class="hp-panel-title" id="rankings-panel-title">Rankings</h2>
             <a href="/rankings.html" class="hp-panel-link" id="rankings-all-link">See all →</a>
           </div>
           <div class="hp-panel-tabs" id="rankings-weight-tabs">
@@ -180,7 +180,7 @@
   </div>
 
   <script src="/tooltips.js"></script>
-  <script src="/homepage.js"></script>
-  <script src="/homepage_team_odds.js"></script>
+  <script src="/homepage.js?v=20260909"></script>
+  <script src="/homepage_team_odds.js?v=20260909"></script>
 </body>
 </html>

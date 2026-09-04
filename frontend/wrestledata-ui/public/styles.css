@@ -1445,7 +1445,11 @@ a:hover {
   overflow: visible;
   border: 1px solid var(--border);
   border-radius: var(--r-md);
-  background: var(--bg);
+  /* Sitewide default: white card, not page-matching cream -- this already
+     draws its own border/radius everywhere it's used, so it always reads
+     as a distinct box; it just needs a fill color that actually looks like
+     one instead of blending into the page. */
+  background: var(--panel);
   /* Flatter tables - less heavy borders */
   box-shadow: none;
 }
@@ -1454,15 +1458,38 @@ a:hover {
 .table-wrapper table {
   min-width: 100%;
   table-layout: auto;
-  /* Table background matches page background */
-  background: var(--bg);
+  background: var(--panel);
 }
 
 /* Ensure tooltips can escape table wrapper */
 .table-wrapper table {
   overflow: visible;
   }
-  
+
+/* Homepage "NCAA Team Championship Odds" preview: give it the same white
+   pillbox treatment as the panels below it (.hp-panel) instead of sitting
+   directly on the page background. Scoped to this one section rather than
+   changing .table-wrapper globally, since that class is shared by many
+   other tables sitewide that intentionally blend with the page. The nested
+   .table-wrapper's own border/background are neutralized so there's no
+   double border inside the outer pillbox. */
+#team-odds-preview-section {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 16px 16px 4px;
+}
+#team-odds-preview-section .table-wrapper {
+  border: none;
+  background: transparent;
+}
+#team-odds-preview-section .table-wrapper table {
+  background: transparent;
+}
+/* tbody tr's sitewide default is now white (see below), matching this
+   section's pillbox automatically -- no scoped override needed here
+   anymore. */
+
   table {
     width: 100%;
     border-collapse: collapse;
@@ -1574,23 +1601,24 @@ td .rank-badge {
   vertical-align: middle;
 }
 
-/* MV Rank medal badges - pill-style with fixed width */
+/* MV Rank medal badges - pill-style with fixed width. Muted, distinct hues
+   (not the old bright saturated gold/silver/bronze) with dark text -- matches
+   the reference "Rank pills" palette rather than a literal medal-color
+   mapping, so #2 reads as a cool gray-blue and #3 as warm terracotta,
+   clearly distinct from each other and from #1's warm amber. */
 .rank-badge.medal-gold {
-  background: #fbbf24; /* gold */
-  color: var(--bg);
-  opacity: 0.9;
+  background: #e0b872;
+  color: var(--text);
 }
 
 .rank-badge.medal-silver {
-  background: #94a3b8; /* silver */
-  color: var(--bg);
-  opacity: 0.9;
+  background: #c2cad4;
+  color: var(--text);
 }
 
 .rank-badge.medal-bronze {
-  background: #cd7f32; /* bronze */
-  color: var(--bg);
-  opacity: 0.9;
+  background: #d99a72;
+  color: var(--text);
 }
 
 /* Rank #6+ uses neutral slate badge */
@@ -1617,8 +1645,15 @@ td .rank-badge {
 
 tbody tr {
   transition: background-color 0.15s ease;
-  /* Table background matches page background - no zebra striping */
-  background: var(--bg);
+  /* Sitewide default: white rows (no zebra striping), matching the card
+     look every table should have now -- .table-wrapper below already draws
+     a border/radius around every table regardless of context, so a white
+     fill reads as a proper card rather than a border-only outline blending
+     into the page. Was var(--bg) (page-matching cream); that only looked
+     right by coincidence when nothing wrapped the table in its own white
+     box -- now that white boxes are the default (see .profile-section
+     above, .hp-panel, etc.), this needs to match them everywhere. */
+  background: var(--panel);
 }
 
 tbody tr:hover {
@@ -1708,7 +1743,17 @@ tbody tr:last-child td {
    top-10 odds never reach 50% get no band at all -- their true median lies
    past 10th, off the visible grid. */
 .place-grid-cell { padding: 0 !important; position: relative; }
-.place-grid-wrap { position: relative; min-height: 2.6em; }
+/* position:absolute + inset:0 (not height:100%) so this reliably fills the
+   full row regardless of how tall the row ends up (e.g. the homepage
+   preview table, where the range-bar cell forces extra row height).
+   height:100% on a table-cell's block child does NOT reliably resolve
+   against the cell's actual (row-determined) height in browsers -- verified
+   live, it silently fell back to min-height/content size instead, which is
+   why the divider lines and label text used to sit high and short instead
+   of spanning the row. Absolute positioning against .place-grid-cell's own
+   position:relative sidesteps that percentage-height resolution entirely,
+   same technique .median-bar below already relies on successfully. */
+.place-grid-wrap { position: absolute; inset: 0; min-height: 2.6em; }
 .median-bar {
   position: absolute;
   top: 0;
@@ -1764,7 +1809,7 @@ tbody tr:last-child td {
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
-.rangebar { position: relative; height: 8px; margin: 4px 0 20px; min-width: 230px; }
+.rangebar { position: relative; height: 8px; margin: 4px 0 2px; min-width: 230px; }
 .rangebar-track {
   position: absolute; inset: 0; background: var(--panel-2); border-radius: 3px;
   background-image: repeating-linear-gradient(90deg, var(--border) 0 1px, transparent 1px 25%);
@@ -1778,7 +1823,12 @@ tbody tr:last-child td {
   background: var(--muted); opacity: 0.5; transform: translateX(-0.5px);
 }
 .range-edge-label {
-  position: absolute; top: 100%; margin-top: 3px;
+  /* Positioned relative to .rangebar (its actual parent), but pulled up by
+     the container's own padding-top so it lands in the same band above the
+     bar as .range-expected-big (a sibling of .rangebar, positioned via
+     .rangebar-container's top:0) -- moved here from below the bar so the
+     row doesn't need to reserve space on both sides of it. */
+  position: absolute; top: -1.3em;
   transform: translateX(-50%);
   font-size: 0.75rem; color: var(--muted); font-variant-numeric: tabular-nums;
   white-space: nowrap;
@@ -1821,6 +1871,14 @@ tbody tr:last-child td {
 .weight-breakdown tbody tr:last-child td { border-bottom: none; }
 .wd-name { color: var(--text); }
 .unranked-note { color: var(--muted); font-style: italic; }
+/* Expanded wrestler-by-wrestler rows deliberately reuse the collapsed team
+   row's own look (weight / "#rank Name" / range bar) so the expanded view
+   reads as a zoomed-in version of the same table, not a different one --
+   see renderLeaderboard() in team_odds.js. */
+.wd-weight { font-weight: 600; color: var(--muted); white-space: nowrap; width: 1%; }
+.wd-rank { font-weight: 700; color: var(--text); margin-right: 4px; }
+.wd-range { width: 60%; }
+.weight-breakdown .rangebar { min-width: 160px; }
 
 /* Team-name links in the team-odds tables are white/plain text, not the
    default teal link color, to keep the row's team name visually primary. */
@@ -2393,15 +2451,27 @@ th.tooltip-trigger .tooltip {
   align-items: flex-start;
 }
 
+/* Sitewide default "content card" look: white box, border, rounded corners
+   -- same treatment as .hp-panel on the homepage. Applied here to the 3
+   profile-summary boxes (TPAR / TPAR Trajectory / Skill Profile) instead of
+   the old borderless/divider-only look below. New sections following this
+   pattern should just reuse .profile-section or .section--timeline rather
+   than inventing another one-off box style. */
+.profile-section,
+.section--timeline {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: var(--pad-lg);
+}
+
 .profile-summary-col--timeline {
-  border-left: 1px solid rgba(33,28,22,0.06);
-  border-right: 1px solid rgba(33,28,22,0.06);
-  padding: 0 20px;
+  padding: 0;
 }
 
 .profile-summary-col--mv,
 .profile-summary-col--skill {
-  padding: 0 4px;
+  padding: 0;
 }
 
 @media (max-width: 900px) {
@@ -2992,13 +3062,31 @@ th.tooltip-trigger .tooltip {
   width: 12px;
   height: 12px;
   border-radius: 2px;
-  background: rgba(0,194,168,0.5);
 }
 
-.match-impact-label:last-child::before {
-  width: 2px;
-  height: 16px;
-  background: rgba(33,28,22,0.5);
+/* 3 distinct swatches, each matching its real on-chart color/style exactly
+   (see the SVG drawing in app.js) -- previously items 1 and 2 accidentally
+   shared the same default swatch (no visual distinction between "Bars" and
+   "Solid line"), and item 3's swatch color didn't match the actual gold
+   dashed line at all. */
+.match-impact-label:nth-child(1)::before {
+  /* Bars: per-match TPAR impact (green = positive) */
+  background: rgba(56,161,105,0.55);
+}
+
+.match-impact-label:nth-child(2)::before {
+  /* Solid line: TPAR trajectory */
+  width: 14px;
+  height: 2px;
+  border-radius: 1px;
+  background: rgba(43,108,176,0.85);
+}
+
+.match-impact-label:nth-child(3)::before {
+  /* Dashed line: season avg TPAR */
+  width: 14px;
+  height: 0;
+  border-top: 2px dashed rgba(200,150,40,0.85);
   border-radius: 0;
 }
 

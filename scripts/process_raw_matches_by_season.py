@@ -80,7 +80,55 @@ def update_alias_file(canonical_name, variant_name, team_name, season):
     
     print(f"✅ Added alias: {variant_name} → {canonical_name} for {team_name} in {season}")
 
-def process_match(summary, wrestler_name, team_name=None, season=None):
+def is_match_ignored(wrestler_name, team_name, season, date, summary):
+    """Check the permanent ignore list (mt/ignored_matches.json) for this
+    exact match. Keyed tight (wrestler/team/season/date/summary all must
+    match) so a loose key can never accidentally suppress a real match --
+    if the source text changes, we just re-prompt, which is fine."""
+    ignored_file_path = "mt/ignored_matches.json"
+    try:
+        with open(ignored_file_path, "r") as f:
+            ignored_data = json.load(f)
+    except FileNotFoundError:
+        return False
+
+    for entry in ignored_data.get("ignored_matches", []):
+        if (entry.get("wrestler_name") == wrestler_name and
+            entry.get("team_name") == team_name and
+            entry.get("season") == season and
+            entry.get("date") == date and
+            entry.get("summary") == summary):
+            return True
+    return False
+
+def update_ignored_matches_file(wrestler_name, team_name, season, date, summary):
+    """Permanently record a match to be skipped in all future processing
+    runs -- for cases like an open-tournament bout where a tracked team's
+    own wrestler competed under a different display name/team label (e.g.
+    "[School] Wrestling Club") than their canonical roster name, so it's
+    not a real alias, just noise that shouldn't keep re-prompting."""
+    ignored_file_path = "mt/ignored_matches.json"
+
+    try:
+        with open(ignored_file_path, "r") as f:
+            ignored_data = json.load(f)
+    except FileNotFoundError:
+        ignored_data = {"ignored_matches": []}
+
+    ignored_data["ignored_matches"].append({
+        "wrestler_name": wrestler_name,
+        "team_name": team_name,
+        "season": season,
+        "date": date,
+        "summary": summary,
+    })
+
+    with open(ignored_file_path, "w") as f:
+        json.dump(ignored_data, f, indent=2)
+
+    print(f"🚫 Permanently ignoring this match for '{wrestler_name}' ({team_name}, {season})")
+
+def process_match(summary, wrestler_name, team_name=None, season=None, date=None):
     summary = summary.strip()
     
     # Check for aliases if team_name and season are provided
@@ -126,10 +174,15 @@ def process_match(summary, wrestler_name, team_name=None, season=None):
                 break
 
     if not name_found:
+        # Already reviewed and permanently dismissed -- skip the prompts entirely.
+        if team_name and season and is_match_ignored(wrestler_name, team_name, season, date, summary):
+            return {"result": "IGNORED"}
+
         error_msg = f"❌ SCRAPER_ERROR: '{wrestler_name}' not found in match summary: '{summary}'"
         print(error_msg)
 
         # If team_name and season are provided, offer to update alias
+        alias_added = False
         if team_name and season:
             # Try to detect the team member's name from the summary automatically
             suggested_alias = None
@@ -165,18 +218,29 @@ def process_match(summary, wrestler_name, team_name=None, season=None):
                 add_suggested = input(f"Would you like to add '{suggested_alias}' as an alias for '{wrestler_name}'? (y/n): ").strip().lower()
                 if add_suggested in ('y', 'yes'):
                     update_alias_file(wrestler_name, suggested_alias, team_name, season)
+                    alias_added = True
                 else:
                     add_alias = input("Would you like to add a different alias for this wrestler? (y/n): ").strip().lower()
                     if add_alias in ('y', 'yes'):
                         variant_name = input(f"Enter the variant name for '{wrestler_name}' in this match summary: ").strip()
                         if variant_name:
                             update_alias_file(wrestler_name, variant_name, team_name, season)
+                            alias_added = True
             else:
                 add_alias = input("Would you like to add an alias for this wrestler? (y/n): ").strip().lower()
                 if add_alias in ('y', 'yes'):
                     variant_name = input(f"Enter the variant name for '{wrestler_name}' in this match summary: ").strip()
                     if variant_name:
                         update_alias_file(wrestler_name, variant_name, team_name, season)
+                        alias_added = True
+
+            if not alias_added:
+                add_ignore = input("Would you like to permanently ignore this match instead? (y/n): ").strip().lower()
+                if add_ignore in ('y', 'yes'):
+                    confirm_ignore = input("Are you sure? This will permanently exclude this match from all future processing. (y/n): ").strip().lower()
+                    if confirm_ignore in ('y', 'yes'):
+                        update_ignored_matches_file(wrestler_name, team_name, season, date, summary)
+                        return {"result": "IGNORED"}
 
         return {"result": "SCRAPER_ERROR"}
     
@@ -593,6 +657,7 @@ def process_file(input_path, output_path, season, wrestlestat_matches_by_wrestle
 
     scraper_errors = 0
     parse_errors = 0
+    ignored_matches = 0
     total_matches = 0
     team_name = data.get("team_name", "Unknown")
     
@@ -632,15 +697,18 @@ def process_file(input_path, output_path, season, wrestlestat_matches_by_wrestle
         for match in wrestler.get("matches", []):
             total_matches += 1
             # Pass team_name and season to process_match
-            parsed = process_match(match.get("summary", ""), name, team_name, season)
+            parsed = process_match(match.get("summary", ""), name, team_name, season, match.get("date", ""))
             if parsed.get("result") == "SCRAPER_ERROR":
                 scraper_errors += 1
             elif parsed.get("result") == "PARSE_ERROR":
                 parse_errors += 1
+            elif parsed.get("result") == "IGNORED":
+                ignored_matches += 1
             match.update(parsed)
-            
-            # Filter out matches with NC (No Contest) result
-            if parsed.get("result") != "NC":
+
+            # Filter out matches with NC (No Contest) result, and matches
+            # permanently ignored via mt/ignored_matches.json
+            if parsed.get("result") not in ("NC", "IGNORED"):
                 processed_matches.append(match)
                 
                 # Add to existing match keys for duplicate detection
@@ -760,6 +828,8 @@ def process_file(input_path, output_path, season, wrestlestat_matches_by_wrestle
         print(f"   ⚠️ Found {parse_errors} PARSE_ERRORS")
     if scraper_errors == 0 and parse_errors == 0:
         print(f"   ✅ No errors found")
+    if ignored_matches > 0:
+        print(f"   🚫 Skipped {ignored_matches} permanently-ignored matches")
     if wrestlestat_added > 0:
         print(f"   ➕ Added {wrestlestat_added} WrestleStat matches")
     if wrestlestat_duplicates > 0:
@@ -845,10 +915,10 @@ def build_existing_match_keys(in_dir: str, season: str) -> Set[Tuple[str, str, s
                     opponent_id = match.get("opponent_id", "")
                     
                     # Process match to get parsed winner/loser info
-                    parsed = process_match(match.get("summary", ""), name, team_name, season)
-                    
-                    # Skip if parsing failed
-                    if parsed.get("result") in ("SCRAPER_ERROR", "PARSE_ERROR"):
+                    parsed = process_match(match.get("summary", ""), name, team_name, season, date)
+
+                    # Skip if parsing failed, or the match is permanently ignored
+                    if parsed.get("result") in ("SCRAPER_ERROR", "PARSE_ERROR", "IGNORED"):
                         continue
                     
                     winner_name = parsed.get("winner_name", "")

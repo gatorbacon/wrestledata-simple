@@ -93,6 +93,29 @@ def load_rankings_starters(season: int, weight: int, rankings_dir: str, league: 
         return None
 
 
+def load_flo_only_rankings(season: int, weight: int) -> Optional[List[Dict]]:
+    """
+    NCAA only: load the live rankings file (mt/rankings_data/ncaa_men) and
+    filter to exactly the wrestlers apply_flo_rankings.py tagged
+    flo_ranked=True -- FloWrestling's own ranked count for that weight,
+    whatever it is (not always 33). This intentionally excludes is_starter
+    (an unrelated lineup concept) and the hybrid-ELO tail below Flo's own
+    cutoff, which stays internal-only for now, not on the public page.
+    """
+    rankings_path = Path("mt/rankings_data/ncaa_men") / str(season) / f"rankings_{weight}.json"
+    if not rankings_path.exists():
+        return None
+    try:
+        with rankings_path.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+        flo_only = [r for r in data.get("rankings", []) if r.get("flo_ranked")]
+        flo_only.sort(key=lambda r: r.get("rank", 10**9))
+        return flo_only
+    except Exception as e:
+        print(f"Error loading rankings file {rankings_path}: {e}")
+        return None
+
+
 def load_wrestler_profile(wrestler_id: str, season: int, wrestlers_dir: str, league: str = 'ncaa', gender: str = None) -> Optional[Dict]:
     """
     Load wrestler profile JSON.
@@ -354,9 +377,16 @@ def generate_public_rankings(
     Returns:
         True if successful, False otherwise
     """
-    # Load starter rankings (authoritative order)
-    rankings = load_rankings_starters(season, weight, rankings_dir, league=league, state=state, gender=gender)
-    
+    # NCAA: Flo-ranked wrestlers only (whatever count Flo actually ranked
+    # that week), not is_starter and not the hybrid-ELO tail. HS is
+    # unaffected -- still starter rankings, same as always.
+    if league == 'ncaa':
+        rankings = load_flo_only_rankings(season, weight)
+        source_label = f"rankings_{weight}.json (Flo-ranked only)"
+    else:
+        rankings = load_rankings_starters(season, weight, rankings_dir, league=league, state=state, gender=gender)
+        source_label = f"rankings_starters_{weight}.json"
+
     if not rankings:
         print(f"Warning: No rankings found for {season} {weight} lbs")
         return False
@@ -395,7 +425,7 @@ def generate_public_rankings(
         "season": season,
         "weight": weight,
         "generated_at": datetime.now(timezone.utc).isoformat() + "Z",
-        "source": f"rankings_starters_{weight}.json",
+        "source": source_label,
         "wrestlers": output_wrestlers
     }
     

@@ -1,1 +1,90 @@
-{"wrestler_id": "34957588132", "name": "Luke Jacobs", "team": "Maryland", "team_slug": "maryland", "team_rank": 28, "weight_class": 149, "year": 2026, "current_rank": 282, "record": {"overall": "1-1", "vs_ranked": "1-1", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 4.0, "pa7": 2.0, "pd7": 2.0, "si_plus": 86.2, "df_plus": 107.3, "apr_plus": 94.7, "pin_rate": 0.0, "bonus_rate": 0.0, "majors": 0, "techs": 0, "pins": 0, "mat_value": {"mv_avg": -0.5823, "matches": 1, "rank_weight": 96, "rank_overall": 762, "version": "mbt_50_50", "mv_avg_v1": 1.124, "rank_weight_v1": 53, "rank_overall_v1": 451}}, "opponent_breakdown": {"ranked_wins": 1, "ranked_losses": 1, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34933360132", "opponent_rank": 150, "opponent_name": "Chris Bacchioni", "method": "Dec 4-2"}, "worst_loss": {"opponent_id": "34977456132", "opponent_rank": 307, "opponent_name": "Myrin Nixon", "method": "M. For."}}, "match_list": [{"date": "2025-11-02", "opponent_id": "34977456132", "opponent_career_id": null, "opponent_name": "Myrin Nixon", "opponent_team": "Morgan State", "opponent_team_rank": 59, "opponent_weight": 149, "opponent_rank": 307, "weight_class": "149", "result": "L", "method": "MFF", "score": null, "duration": "7:00", "event": "Southeast Open", "mv_impact": 0.6596, "mv_impact_v1": 0.6596}, {"date": "2025-11-02", "opponent_id": "34933360132", "opponent_career_id": null, "opponent_name": "Chris Bacchioni", "opponent_team": "Virginia Tech", "opponent_team_rank": 9, "opponent_weight": 149, "opponent_rank": 150, "weight_class": "149", "result": "W", "method": "DEC", "score": "4-2", "duration": "7:00", "event": "Southeast Open", "mv_impact": 0.6596, "mv_impact_v1": 0.6596}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34957588132",
+  "name": "Luke Jacobs",
+  "team": "Maryland",
+  "team_slug": "maryland",
+  "team_rank": 32,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": 282,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.0,
+    "pa7": 2.0,
+    "pd7": 2.0,
+    "si_plus": 86.2,
+    "df_plus": 107.4,
+    "apr_plus": 94.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.124,
+      "matches": 1,
+      "rank_weight": 53,
+      "rank_overall": 451,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34933360132",
+      "opponent_rank": 150,
+      "opponent_name": "Chris Bacchioni",
+      "method": "Dec 4-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34977456132",
+      "opponent_rank": 307,
+      "opponent_name": "Myrin Nixon",
+      "method": "M. For."
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34977456132",
+      "opponent_career_id": null,
+      "opponent_name": "Myrin Nixon",
+      "opponent_team": "Morgan State",
+      "opponent_team_rank": 75,
+      "opponent_weight": 149,
+      "opponent_rank": 307,
+      "weight_class": "149",
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Southeast Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34933360132",
+      "opponent_career_id": null,
+      "opponent_name": "Chris Bacchioni",
+      "opponent_team": "Virginia Tech",
+      "opponent_team_rank": 8,
+      "opponent_weight": 149,
+      "opponent_rank": 150,
+      "weight_class": "149",
+      "result": "W",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": 1.12
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

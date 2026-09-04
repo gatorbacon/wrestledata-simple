@@ -1,1 +1,69 @@
-{"wrestler_id": "34933445132", "name": "Winston McBride", "team": "Wyoming", "team_slug": "wyoming", "team_rank": 14, "weight_class": 285, "year": 2026, "current_rank": 51, "record": {"overall": "1-0", "vs_ranked": "1-0", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 1.0, "pa7": 0.0, "pd7": 1.0, "si_plus": 70.6, "df_plus": 110.0, "apr_plus": 111.1, "pin_rate": 0.0, "bonus_rate": 0.0, "majors": 0, "techs": 0, "pins": 0, "mat_value": {"mv_avg": -0.7328, "matches": 1, "rank_weight": 78, "rank_overall": 829, "version": "mbt_50_50", "mv_avg_v1": -1.165, "rank_weight_v1": 110, "rank_overall_v1": 1238}}, "opponent_breakdown": {"ranked_wins": 1, "ranked_losses": 0, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34937105132", "opponent_rank": 224, "opponent_name": "Enzo Cappabianca", "method": "Dec 1-0"}, "worst_loss": null}, "match_list": [{"date": "2026-02-13", "opponent_id": "34937105132", "opponent_career_id": null, "opponent_name": "Enzo Cappabianca", "opponent_team": "Northern Colorado", "opponent_team_rank": 60, "opponent_weight": 285, "opponent_rank": 224, "weight_class": "285", "result": "W", "method": "DEC", "score": "1-0", "duration": "7:00", "event": "vs. Wyoming", "mv_impact": -0.7944, "mv_impact_v1": -1.16}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34933445132",
+  "name": "Winston McBride",
+  "team": "Wyoming",
+  "team_slug": "wyoming",
+  "team_rank": 15,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": 53,
+  "record": {
+    "overall": "1-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 1.0,
+    "pa7": 0.0,
+    "pd7": 1.0,
+    "si_plus": 70.6,
+    "df_plus": 110.0,
+    "apr_plus": 111.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.165,
+      "matches": 1,
+      "rank_weight": 110,
+      "rank_overall": 1237,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34937105132",
+      "opponent_rank": 224,
+      "opponent_name": "Enzo Cappabianca",
+      "method": "Dec 1-0"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2026-02-13",
+      "opponent_id": "34937105132",
+      "opponent_career_id": null,
+      "opponent_name": "Enzo Cappabianca",
+      "opponent_team": "Northern Colorado",
+      "opponent_team_rank": 56,
+      "opponent_weight": 285,
+      "opponent_rank": 224,
+      "weight_class": "285",
+      "result": "W",
+      "method": "DEC",
+      "score": "1-0",
+      "duration": "7:00",
+      "event": "vs. Wyoming",
+      "mv_impact": -1.16
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

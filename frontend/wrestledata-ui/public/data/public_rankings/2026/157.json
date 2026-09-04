@@ -1,28 +1,11 @@
 {
   "season": 2026,
   "weight": 157,
-  "generated_at": "2026-06-02T14:19:48.514818+00:00Z",
-  "source": "rankings_starters_157.json",
+  "generated_at": "2026-09-03T21:52:23.258613+00:00Z",
+  "source": "rankings_157.json (Flo-ranked only)",
   "wrestlers": [
     {
       "rank": 1,
-      "wrestler_id": "34939039132",
-      "name": "PJ Duke",
-      "team": "Penn State",
-      "record": {
-        "wins": 23,
-        "losses": 2,
-        "pct": 0.92
-      },
-      "record_str": "23-2 (92%)",
-      "bonus_pct": 0.739,
-      "mv": {
-        "value": 5.348,
-        "weight_rank": 1
-      }
-    },
-    {
-      "rank": 2,
       "wrestler_id": "34936467132",
       "name": "Landon Robideau",
       "team": "Oklahoma State",
@@ -34,8 +17,25 @@
       "record_str": "21-2 (91%)",
       "bonus_pct": 0.524,
       "mv": {
-        "value": 4.359,
-        "weight_rank": 5
+        "value": 4.386,
+        "weight_rank": 4
+      }
+    },
+    {
+      "rank": 2,
+      "wrestler_id": "34939039132",
+      "name": "PJ Duke",
+      "team": "Penn State",
+      "record": {
+        "wins": 23,
+        "losses": 2,
+        "pct": 0.92
+      },
+      "record_str": "23-2 (92%)",
+      "bonus_pct": 0.739,
+      "mv": {
+        "value": 5.341,
+        "weight_rank": 1
       }
     },
     {
@@ -51,8 +51,8 @@
       "record_str": "25-4 (86%)",
       "bonus_pct": 0.52,
       "mv": {
-        "value": 4.39,
-        "weight_rank": 4
+        "value": 4.379,
+        "weight_rank": 5
       }
     },
     {
@@ -68,8 +68,8 @@
       "record_str": "25-6 (81%)",
       "bonus_pct": 0.64,
       "mv": {
-        "value": 3.937,
-        "weight_rank": 8
+        "value": 3.902,
+        "weight_rank": 9
       }
     },
     {
@@ -78,19 +78,36 @@
       "name": "Brandon Cannon",
       "team": "Ohio State",
       "record": {
-        "wins": 22,
+        "wins": 24,
         "losses": 3,
-        "pct": 0.88
+        "pct": 0.8888888888888888
       },
-      "record_str": "22-3 (88%)",
-      "bonus_pct": 0.591,
+      "record_str": "24-3 (89%)",
+      "bonus_pct": 0.625,
       "mv": {
-        "value": 4.473,
+        "value": 4.592,
         "weight_rank": 3
       }
     },
     {
       "rank": 6,
+      "wrestler_id": "34943748132",
+      "name": "Kaleb Larkin",
+      "team": "Arizona State",
+      "record": {
+        "wins": 24,
+        "losses": 4,
+        "pct": 0.8571428571428571
+      },
+      "record_str": "24-4 (86%)",
+      "bonus_pct": 0.583,
+      "mv": {
+        "value": 3.874,
+        "weight_rank": 11
+      }
+    },
+    {
+      "rank": 7,
       "wrestler_id": "34946729132",
       "name": "Ty Watters",
       "team": "West Virginia",
@@ -102,25 +119,8 @@
       "record_str": "23-6 (79%)",
       "bonus_pct": 0.652,
       "mv": {
-        "value": 3.7,
-        "weight_rank": 14
-      }
-    },
-    {
-      "rank": 7,
-      "wrestler_id": "34933533132",
-      "name": "Cameron Catrabone",
-      "team": "Michigan",
-      "record": {
-        "wins": 22,
-        "losses": 10,
-        "pct": 0.6875
-      },
-      "record_str": "22-10 (69%)",
-      "bonus_pct": 0.545,
-      "mv": {
-        "value": 2.604,
-        "weight_rank": 20
+        "value": 3.738,
+        "weight_rank": 13
       }
     },
     {
@@ -136,97 +136,29 @@
       "record_str": "18-4 (82%)",
       "bonus_pct": 0.722,
       "mv": {
-        "value": 4.348,
+        "value": 4.34,
         "weight_rank": 6
       }
     },
     {
       "rank": 9,
-      "wrestler_id": "34943748132",
-      "name": "Kaleb Larkin",
-      "team": "Arizona State",
+      "wrestler_id": "34933533132",
+      "name": "Cameron Catrabone",
+      "team": "Michigan",
       "record": {
-        "wins": 24,
-        "losses": 4,
-        "pct": 0.8571428571428571
+        "wins": 22,
+        "losses": 10,
+        "pct": 0.6875
       },
-      "record_str": "24-4 (86%)",
-      "bonus_pct": 0.583,
+      "record_str": "22-10 (69%)",
+      "bonus_pct": 0.545,
       "mv": {
-        "value": 3.882,
-        "weight_rank": 10
+        "value": 2.596,
+        "weight_rank": 20
       }
     },
     {
       "rank": 10,
-      "wrestler_id": "34943441132",
-      "name": "Daniel Cardenas",
-      "team": "Stanford",
-      "record": {
-        "wins": 20,
-        "losses": 5,
-        "pct": 0.8
-      },
-      "record_str": "20-5 (80%)",
-      "bonus_pct": 0.75,
-      "mv": {
-        "value": 3.93,
-        "weight_rank": 9
-      }
-    },
-    {
-      "rank": 11,
-      "wrestler_id": "34941289132",
-      "name": "Ethen Miller",
-      "team": "Virginia Tech",
-      "record": {
-        "wins": 17,
-        "losses": 8,
-        "pct": 0.68
-      },
-      "record_str": "17-8 (68%)",
-      "bonus_pct": 0.412,
-      "mv": {
-        "value": 2.11,
-        "weight_rank": 24
-      }
-    },
-    {
-      "rank": 12,
-      "wrestler_id": "34943380132",
-      "name": "Kai Owen",
-      "team": "Columbia",
-      "record": {
-        "wins": 20,
-        "losses": 9,
-        "pct": 0.6896551724137931
-      },
-      "record_str": "20-9 (69%)",
-      "bonus_pct": 0.5,
-      "mv": {
-        "value": 2.074,
-        "weight_rank": 26
-      }
-    },
-    {
-      "rank": 13,
-      "wrestler_id": "34945837132",
-      "name": "Bryce Lowery",
-      "team": "Indiana",
-      "record": {
-        "wins": 13,
-        "losses": 14,
-        "pct": 0.48148148148148145
-      },
-      "record_str": "13-14 (48%)",
-      "bonus_pct": 0.615,
-      "mv": {
-        "value": 1.3,
-        "weight_rank": 45
-      }
-    },
-    {
-      "rank": 14,
       "wrestler_id": "34935896132",
       "name": "Jude Swisher",
       "team": "Penn",
@@ -238,12 +170,12 @@
       "record_str": "23-5 (82%)",
       "bonus_pct": 0.478,
       "mv": {
-        "value": 3.066,
+        "value": 3.065,
         "weight_rank": 15
       }
     },
     {
-      "rank": 15,
+      "rank": 11,
       "wrestler_id": "34940864132",
       "name": "Vinny Zerban",
       "team": "Iowa State",
@@ -255,97 +187,97 @@
       "record_str": "16-5 (76%)",
       "bonus_pct": 0.5,
       "mv": {
-        "value": 2.831,
+        "value": 2.85,
         "weight_rank": 18
       }
     },
     {
+      "rank": 12,
+      "wrestler_id": "34943441132",
+      "name": "Daniel Cardenas",
+      "team": "Stanford",
+      "record": {
+        "wins": 20,
+        "losses": 5,
+        "pct": 0.8
+      },
+      "record_str": "20-5 (80%)",
+      "bonus_pct": 0.75,
+      "mv": {
+        "value": 3.905,
+        "weight_rank": 8
+      }
+    },
+    {
+      "rank": 13,
+      "wrestler_id": "34941289132",
+      "name": "Ethen Miller",
+      "team": "Virginia Tech",
+      "record": {
+        "wins": 17,
+        "losses": 8,
+        "pct": 0.68
+      },
+      "record_str": "17-8 (68%)",
+      "bonus_pct": 0.412,
+      "mv": {
+        "value": 2.109,
+        "weight_rank": 24
+      }
+    },
+    {
+      "rank": 14,
+      "wrestler_id": "34955794132",
+      "name": "Charlie Millard",
+      "team": "Minnesota",
+      "record": {
+        "wins": 20,
+        "losses": 10,
+        "pct": 0.6666666666666666
+      },
+      "record_str": "20-10 (67%)",
+      "bonus_pct": 0.55,
+      "mv": {
+        "value": 2.654,
+        "weight_rank": 19
+      }
+    },
+    {
+      "rank": 15,
+      "wrestler_id": "34943380132",
+      "name": "Kai Owen",
+      "team": "Columbia",
+      "record": {
+        "wins": 20,
+        "losses": 9,
+        "pct": 0.6896551724137931
+      },
+      "record_str": "20-9 (69%)",
+      "bonus_pct": 0.5,
+      "mv": {
+        "value": 2.075,
+        "weight_rank": 26
+      }
+    },
+    {
       "rank": 16,
-      "wrestler_id": "34943229132",
-      "name": "Cael Swensen",
-      "team": "South Dakota State",
+      "wrestler_id": "34934131132",
+      "name": "Dylan Evans",
+      "team": "Pittsburgh",
       "record": {
         "wins": 23,
-        "losses": 9,
-        "pct": 0.71875
+        "losses": 10,
+        "pct": 0.696969696969697
       },
-      "record_str": "23-9 (72%)",
-      "bonus_pct": 0.522,
+      "record_str": "23-10 (70%)",
+      "bonus_pct": 0.652,
       "mv": {
-        "value": 1.88,
-        "weight_rank": 30
+        "value": 2.1,
+        "weight_rank": 25
       }
     },
     {
       "rank": 17,
-      "wrestler_id": "34952954132",
-      "name": "Kaleb Burgess",
-      "team": "Buffalo",
-      "record": {
-        "wins": 18,
-        "losses": 7,
-        "pct": 0.72
-      },
-      "record_str": "18-7 (72%)",
-      "bonus_pct": 0.389,
-      "mv": {
-        "value": 1.88,
-        "weight_rank": 31
-      }
-    },
-    {
-      "rank": 18,
-      "wrestler_id": "34952695132",
-      "name": "Logan Rozynski",
-      "team": "Lehigh",
-      "record": {
-        "wins": 14,
-        "losses": 5,
-        "pct": 0.7368421052631579
-      },
-      "record_str": "14-5 (74%)",
-      "bonus_pct": 0.429,
-      "mv": {
-        "value": 2.989,
-        "weight_rank": 17
-      }
-    },
-    {
-      "rank": 19,
-      "wrestler_id": "34944670132",
-      "name": "Luke Mechler",
-      "team": "Wisconsin",
-      "record": {
-        "wins": 18,
-        "losses": 10,
-        "pct": 0.6428571428571429
-      },
-      "record_str": "18-10 (64%)",
-      "bonus_pct": 0.278,
-      "mv": {
-        "value": 1.281,
-        "weight_rank": 47
-      }
-    },
-    {
-      "rank": 20,
-      "wrestler_id": "34938485132",
-      "name": "DJ McGee",
-      "team": "George Mason",
-      "record": {
-        "wins": 26,
-        "losses": 7,
-        "pct": 0.7878787878787878
-      },
-      "record_str": "26-7 (79%)",
-      "bonus_pct": 0.538,
-      "mv": {
-        "value": 2.447,
-        "weight_rank": 21
-      }
-    },
-    {
-      "rank": 21,
       "wrestler_id": "34937328132",
       "name": "Jimmy Harrington",
       "team": "Harvard",
@@ -362,75 +294,92 @@
       }
     },
     {
-      "rank": 22,
-      "wrestler_id": "34955794132",
-      "name": "Charlie Millard",
-      "team": "Minnesota",
+      "rank": 18,
+      "wrestler_id": "34952695132",
+      "name": "Logan Rozynski",
+      "team": "Lehigh",
       "record": {
-        "wins": 20,
-        "losses": 10,
-        "pct": 0.6666666666666666
+        "wins": 14,
+        "losses": 5,
+        "pct": 0.7368421052631579
       },
-      "record_str": "20-10 (67%)",
-      "bonus_pct": 0.55,
+      "record_str": "14-5 (74%)",
+      "bonus_pct": 0.429,
       "mv": {
-        "value": 2.671,
-        "weight_rank": 19
+        "value": 2.967,
+        "weight_rank": 17
+      }
+    },
+    {
+      "rank": 19,
+      "wrestler_id": "34938485132",
+      "name": "DJ McGee",
+      "team": "George Mason",
+      "record": {
+        "wins": 26,
+        "losses": 7,
+        "pct": 0.7878787878787878
+      },
+      "record_str": "26-7 (79%)",
+      "bonus_pct": 0.538,
+      "mv": {
+        "value": 2.432,
+        "weight_rank": 21
+      }
+    },
+    {
+      "rank": 20,
+      "wrestler_id": "34944670132",
+      "name": "Luke Mechler",
+      "team": "Wisconsin",
+      "record": {
+        "wins": 18,
+        "losses": 10,
+        "pct": 0.6428571428571429
+      },
+      "record_str": "18-10 (64%)",
+      "bonus_pct": 0.278,
+      "mv": {
+        "value": 1.303,
+        "weight_rank": 45
+      }
+    },
+    {
+      "rank": 21,
+      "wrestler_id": "34943229132",
+      "name": "Cael Swensen",
+      "team": "South Dakota State",
+      "record": {
+        "wins": 23,
+        "losses": 9,
+        "pct": 0.71875
+      },
+      "record_str": "23-9 (72%)",
+      "bonus_pct": 0.522,
+      "mv": {
+        "value": 1.888,
+        "weight_rank": 29
+      }
+    },
+    {
+      "rank": 22,
+      "wrestler_id": "34945837132",
+      "name": "Bryce Lowery",
+      "team": "Indiana",
+      "record": {
+        "wins": 13,
+        "losses": 14,
+        "pct": 0.48148148148148145
+      },
+      "record_str": "13-14 (48%)",
+      "bonus_pct": 0.615,
+      "mv": {
+        "value": 1.312,
+        "weight_rank": 44
       }
     },
     {
       "rank": 23,
-      "wrestler_id": "34945367132",
-      "name": "Jaivon Jones",
-      "team": "Little Rock",
-      "record": {
-        "wins": 19,
-        "losses": 10,
-        "pct": 0.6551724137931034
-      },
-      "record_str": "19-10 (66%)",
-      "bonus_pct": 0.316,
-      "mv": {
-        "value": 1.418,
-        "weight_rank": 42
-      }
-    },
-    {
-      "rank": 24,
-      "wrestler_id": "34934131132",
-      "name": "Dylan Evans",
-      "team": "Pittsburgh",
-      "record": {
-        "wins": 23,
-        "losses": 10,
-        "pct": 0.696969696969697
-      },
-      "record_str": "23-10 (70%)",
-      "bonus_pct": 0.652,
-      "mv": {
-        "value": 2.096,
-        "weight_rank": 25
-      }
-    },
-    {
-      "rank": 25,
-      "wrestler_id": "34943155132",
-      "name": "Laird Root",
-      "team": "North Carolina",
-      "record": {
-        "wins": 16,
-        "losses": 12,
-        "pct": 0.5714285714285714
-      },
-      "record_str": "16-12 (57%)",
-      "bonus_pct": 0.625,
-      "mv": {
-        "value": 1.272,
-        "weight_rank": 49
-      }
-    },
-    {
-      "rank": 26,
       "wrestler_id": "34936210132",
       "name": "Derek Raike",
       "team": "Ohio",
@@ -442,46 +391,29 @@
       "record_str": "21-7 (75%)",
       "bonus_pct": 0.524,
       "mv": {
-        "value": 1.77,
+        "value": 1.76,
         "weight_rank": 32
       }
     },
     {
-      "rank": 27,
-      "wrestler_id": "34955078132",
-      "name": "Colton Washleski",
-      "team": "Virginia",
+      "rank": 24,
+      "wrestler_id": "34952954132",
+      "name": "Kaleb Burgess",
+      "team": "Buffalo",
       "record": {
         "wins": 18,
-        "losses": 12,
-        "pct": 0.6
+        "losses": 7,
+        "pct": 0.72
       },
-      "record_str": "18-12 (60%)",
-      "bonus_pct": 0.278,
+      "record_str": "18-7 (72%)",
+      "bonus_pct": 0.389,
       "mv": {
-        "value": 1.245,
-        "weight_rank": 51
+        "value": 1.869,
+        "weight_rank": 31
       }
     },
     {
-      "rank": 28,
-      "wrestler_id": "34934120132",
-      "name": "Mason Shrader",
-      "team": "Central Michigan",
-      "record": {
-        "wins": 24,
-        "losses": 11,
-        "pct": 0.6857142857142857
-      },
-      "record_str": "24-11 (69%)",
-      "bonus_pct": 0.458,
-      "mv": {
-        "value": 1.44,
-        "weight_rank": 41
-      }
-    },
-    {
-      "rank": 29,
+      "rank": 25,
       "wrestler_id": "34939061132",
       "name": "Jonathan Ley",
       "team": "Navy",
@@ -493,12 +425,46 @@
       "record_str": "24-13 (65%)",
       "bonus_pct": 0.292,
       "mv": {
-        "value": 1.257,
+        "value": 1.247,
         "weight_rank": 50
       }
     },
     {
-      "rank": 30,
+      "rank": 26,
+      "wrestler_id": "34955078132",
+      "name": "Colton Washleski",
+      "team": "Virginia",
+      "record": {
+        "wins": 18,
+        "losses": 12,
+        "pct": 0.6
+      },
+      "record_str": "18-12 (60%)",
+      "bonus_pct": 0.278,
+      "mv": {
+        "value": 1.232,
+        "weight_rank": 51
+      }
+    },
+    {
+      "rank": 27,
+      "wrestler_id": "34945367132",
+      "name": "Jaivon Jones",
+      "team": "Little Rock",
+      "record": {
+        "wins": 19,
+        "losses": 11,
+        "pct": 0.6333333333333333
+      },
+      "record_str": "19-11 (63%)",
+      "bonus_pct": 0.316,
+      "mv": {
+        "value": 1.29,
+        "weight_rank": 47
+      }
+    },
+    {
+      "rank": 28,
       "wrestler_id": "34934608132",
       "name": "Gavin Drexler",
       "team": "North Dakota State",
@@ -510,59 +476,93 @@
       "record_str": "16-12 (57%)",
       "bonus_pct": 0.375,
       "mv": {
-        "value": 1.132,
+        "value": 1.131,
         "weight_rank": 54
       }
     },
     {
-      "rank": 31,
-      "wrestler_id": "34951051132",
-      "name": "Garrett McChesney",
-      "team": "Edinboro",
+      "rank": 29,
+      "wrestler_id": "36441527132",
+      "name": "Teague Travis",
+      "team": "Missouri",
       "record": {
-        "wins": 10,
-        "losses": 16,
-        "pct": 0.38461538461538464
+        "wins": 13,
+        "losses": 8,
+        "pct": 0.6190476190476191
       },
-      "record_str": "10-16 (38%)",
-      "bonus_pct": 0.2,
+      "record_str": "13-8 (62%)",
+      "bonus_pct": 0.692,
       "mv": {
-        "value": -0.9,
-        "weight_rank": 129
+        "value": 1.335,
+        "weight_rank": 43
+      }
+    },
+    {
+      "rank": 30,
+      "wrestler_id": "34962162132",
+      "name": "Victor Voinovich",
+      "team": "Iowa",
+      "record": {
+        "wins": 9,
+        "losses": 6,
+        "pct": 0.6
+      },
+      "record_str": "9-6 (60%)",
+      "bonus_pct": 0.222,
+      "mv": {
+        "value": 1.418,
+        "weight_rank": 42
+      }
+    },
+    {
+      "rank": 31,
+      "wrestler_id": "34945134132",
+      "name": "Stoney Buell",
+      "team": "Purdue",
+      "record": {
+        "wins": 12,
+        "losses": 10,
+        "pct": 0.5454545454545454
+      },
+      "record_str": "12-10 (55%)",
+      "bonus_pct": 0.167,
+      "mv": {
+        "value": 0.654,
+        "weight_rank": 66
       }
     },
     {
       "rank": 32,
-      "wrestler_id": "34943840132",
-      "name": "Jeb Prechtel",
-      "team": "Bellarmine",
+      "wrestler_id": "34943155132",
+      "name": "Laird Root",
+      "team": "North Carolina",
       "record": {
-        "wins": 14,
-        "losses": 16,
-        "pct": 0.4666666666666667
+        "wins": 16,
+        "losses": 12,
+        "pct": 0.5714285714285714
       },
-      "record_str": "14-16 (47%)",
-      "bonus_pct": 0.786,
+      "record_str": "16-12 (57%)",
+      "bonus_pct": 0.625,
       "mv": {
-        "value": -0.403,
-        "weight_rank": 108
+        "value": 1.268,
+        "weight_rank": 49
       }
     },
     {
       "rank": 33,
-      "wrestler_id": "34977455132",
-      "name": "Yannis Charles",
-      "team": "Morgan State",
+      "wrestler_id": "34934120132",
+      "name": "Mason Shrader",
+      "team": "Central Michigan",
       "record": {
-        "wins": 6,
+        "wins": 24,
         "losses": 11,
-        "pct": 0.35294117647058826
+        "pct": 0.6857142857142857
       },
-      "record_str": "6-11 (35%)",
-      "bonus_pct": 0.0,
+      "record_str": "24-11 (69%)",
+      "bonus_pct": 0.458,
       "mv": {
-        "value": -0.469,
-        "weight_rank": 112
+        "value": 1.425,
+        "weight_rank": 41
       }
     }
   ]

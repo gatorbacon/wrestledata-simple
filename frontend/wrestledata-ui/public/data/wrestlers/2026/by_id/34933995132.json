@@ -1,1 +1,108 @@
-{"wrestler_id": "34933995132", "name": "Mason Stewart", "team": "Michigan State", "team_slug": "michigan_state", "team_rank": 74, "weight_class": 157, "year": 2026, "current_rank": 155, "record": {"overall": "1-2", "vs_ranked": "1-2", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 3.0, "pa7": 10.0, "pd7": -7.0, "si_plus": 93.3, "df_plus": 96.0, "apr_plus": 107.9, "pin_rate": 1.0, "bonus_rate": 1.0, "majors": 0, "techs": 0, "pins": 1, "mat_value": {"mv_avg": -2.1778, "matches": 4, "rank_weight": 164, "rank_overall": 1484, "version": "mbt_50_50", "mv_avg_v1": -2.985, "rank_weight_v1": 193, "rank_overall_v1": 1755}}, "opponent_breakdown": {"ranked_wins": 1, "ranked_losses": 2, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34951041132", "opponent_rank": 238, "opponent_name": "Joe Clark", "method": "Fall 2:22"}, "worst_loss": {"opponent_id": "34947354132", "opponent_rank": 235, "opponent_name": "Silas Stits", "method": "Fall 0:37"}}, "match_list": [{"date": "2025-11-08", "opponent_id": "34947354132", "opponent_career_id": null, "opponent_name": "Silas Stits", "opponent_team": "Kent State", "opponent_team_rank": 71, "opponent_weight": 149, "opponent_rank": 235, "weight_class": "157", "result": "L", "method": "FALL", "score": null, "duration": "0:37", "event": "Michigan State Open", "mv_impact": -0.3485, "mv_impact_v1": -5.85}, {"date": "2025-11-08", "opponent_id": "34951041132", "opponent_career_id": null, "opponent_name": "Joe Clark", "opponent_team": "Edinboro", "opponent_team_rank": 56, "opponent_weight": 157, "opponent_rank": 238, "weight_class": "157", "result": "W", "method": "FALL", "score": null, "duration": "2:22", "event": "Michigan State Open", "mv_impact": -0.3485, "mv_impact_v1": 2.51}, {"date": "2025-11-08", "opponent_id": "34955625132", "opponent_career_id": null, "opponent_name": "Tyler Turzinski", "opponent_team": "Northern Illinois", "opponent_team_rank": 40, "opponent_weight": 157, "opponent_rank": 81, "weight_class": "157", "result": "L", "method": "DEC", "score": "10-3", "duration": "7:00", "event": "Michigan State Open", "mv_impact": -0.3485, "mv_impact_v1": -2.75}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34933995132",
+  "name": "Mason Stewart",
+  "team": "Michigan State",
+  "team_slug": "michigan_state",
+  "team_rank": 74,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 155,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.0,
+    "pa7": 10.0,
+    "pd7": -7.0,
+    "si_plus": 93.3,
+    "df_plus": 96.0,
+    "apr_plus": 107.9,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -2.982,
+      "matches": 4,
+      "rank_weight": 193,
+      "rank_overall": 1749,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34951041132",
+      "opponent_rank": 238,
+      "opponent_name": "Joe Clark",
+      "method": "Fall 2:22"
+    },
+    "worst_loss": {
+      "opponent_id": "34947354132",
+      "opponent_rank": 235,
+      "opponent_name": "Silas Stits",
+      "method": "Fall 0:37"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34947354132",
+      "opponent_career_id": null,
+      "opponent_name": "Silas Stits",
+      "opponent_team": "Kent State",
+      "opponent_team_rank": 71,
+      "opponent_weight": 149,
+      "opponent_rank": 235,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:37",
+      "event": "Michigan State Open",
+      "mv_impact": -5.85
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34951041132",
+      "opponent_career_id": null,
+      "opponent_name": "Joe Clark",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 69,
+      "opponent_weight": 157,
+      "opponent_rank": 238,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:22",
+      "event": "Michigan State Open",
+      "mv_impact": 2.51
+    },
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34955625132",
+      "opponent_career_id": null,
+      "opponent_name": "Tyler Turzinski",
+      "opponent_team": "Northern Illinois",
+      "opponent_team_rank": 57,
+      "opponent_weight": 157,
+      "opponent_rank": 81,
+      "weight_class": "157",
+      "result": "L",
+      "method": "DEC",
+      "score": "10-3",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -2.74
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

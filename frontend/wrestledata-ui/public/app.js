@@ -1165,7 +1165,7 @@ function safe(value, formatter) {
         const gl = document.createElementNS("http://www.w3.org/2000/svg", "line");
         gl.setAttribute("x1", padding.left); gl.setAttribute("x2", padding.left + plotWidth);
         gl.setAttribute("y1", gy); gl.setAttribute("y2", gy);
-        gl.setAttribute("stroke", gv === 0 ? "rgba(255,255,255,0.12)" : "rgba(255,255,255,0.06)");
+        gl.setAttribute("stroke", gv === 0 ? "rgba(33,28,22,0.15)" : "rgba(33,28,22,0.08)");
         gl.setAttribute("stroke-width", "1");
         gl.setAttribute("class", "chart-gridline");
         svg.appendChild(gl);
@@ -1177,7 +1177,7 @@ function safe(value, formatter) {
         const flat = document.createElementNS("http://www.w3.org/2000/svg", "line");
         flat.setAttribute("x1", padding.left); flat.setAttribute("x2", padding.left + plotWidth);
         flat.setAttribute("y1", flatY); flat.setAttribute("y2", flatY);
-        flat.setAttribute("stroke", "rgba(255,200,80,0.6)");
+        flat.setAttribute("stroke", "rgba(200,150,40,0.85)");
         flat.setAttribute("stroke-width", "1.5");
         flat.setAttribute("stroke-dasharray", "5 4");
         flat.setAttribute("class", "season-avg-line");
@@ -1197,7 +1197,7 @@ function safe(value, formatter) {
         bar.setAttribute("y", isPositive ? zeroY - barHeight : zeroY);
         bar.setAttribute("width", barWidth);
         bar.setAttribute("height", barHeight);
-        bar.setAttribute("fill", isPositive ? "rgba(0,194,168,1)" : "rgba(220,90,90,1)");
+        bar.setAttribute("fill", isPositive ? "rgba(56,161,105,1)" : "rgba(197,48,48,1)");
         bar.setAttribute("opacity", "0.55");
         bar.setAttribute("class", "match-impact-bar");
         svg.appendChild(bar);
@@ -1219,7 +1219,7 @@ function safe(value, formatter) {
         });
         const trajPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
         trajPath.setAttribute("d", pathData);
-        trajPath.setAttribute("stroke", "rgba(255,255,255,0.75)");
+        trajPath.setAttribute("stroke", "rgba(43,108,176,0.85)"); /* site accent blue -- was white, invisible since the light re-theme */
         trajPath.setAttribute("stroke-width", "2");
         trajPath.setAttribute("fill", "none");
         trajPath.setAttribute("class", "rolling-avg-line");
@@ -1229,7 +1229,7 @@ function safe(value, formatter) {
       // Hover dot on trajectory line
       const lineDot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
       lineDot.setAttribute("r", "3");
-      lineDot.setAttribute("fill", "rgba(255,255,255,0.9)");
+      lineDot.setAttribute("fill", "rgba(43,108,176,1)");
       lineDot.setAttribute("class", "rolling-avg-dot");
       lineDot.setAttribute("opacity", "0");
       svg.appendChild(lineDot);
@@ -1312,7 +1312,7 @@ function safe(value, formatter) {
       const gl = document.createElementNS("http://www.w3.org/2000/svg","line");
       gl.setAttribute("x1",padding.left); gl.setAttribute("x2",padding.left+plotWidth);
       gl.setAttribute("y1",gy); gl.setAttribute("y2",gy);
-      gl.setAttribute("stroke",gv===0?"rgba(255,255,255,0.12)":"rgba(255,255,255,0.06)"); gl.setAttribute("stroke-width","1");
+      gl.setAttribute("stroke",gv===0?"rgba(33,28,22,0.15)":"rgba(33,28,22,0.08)"); gl.setAttribute("stroke-width","1");
       svg.appendChild(gl);
     });
     if (seasonMV !== null && seasonMV !== undefined) {
@@ -1320,7 +1320,7 @@ function safe(value, formatter) {
       const flat = document.createElementNS("http://www.w3.org/2000/svg","line");
       flat.setAttribute("x1",padding.left); flat.setAttribute("x2",padding.left+plotWidth);
       flat.setAttribute("y1",flatY); flat.setAttribute("y2",flatY);
-      flat.setAttribute("stroke","rgba(255,200,80,0.6)"); flat.setAttribute("stroke-width","1.5"); flat.setAttribute("stroke-dasharray","5 4");
+      flat.setAttribute("stroke","rgba(200,150,40,0.85)"); flat.setAttribute("stroke-width","1.5"); flat.setAttribute("stroke-dasharray","5 4");
       svg.appendChild(flat);
     }
     const barWidth = Math.max(3, plotWidth / matches.length - 2);
@@ -1329,7 +1329,7 @@ function safe(value, formatter) {
       const bar = document.createElementNS("http://www.w3.org/2000/svg","rect");
       bar.setAttribute("x",x-barWidth/2); bar.setAttribute("y",pos?zeroY-bh:zeroY);
       bar.setAttribute("width",barWidth); bar.setAttribute("height",bh);
-      bar.setAttribute("fill",pos?"rgba(0,194,168,1)":"rgba(220,90,90,1)"); bar.setAttribute("opacity","0.55");
+      bar.setAttribute("fill",pos?"rgba(56,161,105,1)":"rgba(197,48,48,1)"); bar.setAttribute("opacity","0.55");
       svg.appendChild(bar);
     });
     container.appendChild(svg);
@@ -1358,7 +1358,7 @@ function safe(value, formatter) {
           /TPAR Impact: ([\+\-]?[\d\.]+)/,
           (match, value) => {
             const isPositive = mvImpact >= 0;
-            const color = isPositive ? "rgba(0, 194, 168, 0.9)" : "rgba(220, 90, 90, 0.9)";
+            const color = isPositive ? "rgba(56, 161, 105, 0.9)" : "rgba(197, 48, 48, 0.9)";
             return `TPAR Impact: <span style="color: ${color}">${value}</span>`;
           }
         );

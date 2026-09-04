@@ -1,1 +1,120 @@
-{"wrestler_id": "34945358132", "name": "Brock DelSignore", "team": "Little Rock", "team_slug": "little_rock", "team_rank": 19, "weight_class": 184, "year": 2026, "current_rank": 166, "record": {"overall": "0-4", "vs_ranked": "0-4", "vs_top10": "0-2", "vs_top25": "0-4"}, "metrics": {"pf7": 4.67, "pa7": 12.0, "pd7": -7.33, "si_plus": 102.5, "df_plus": 103.0, "apr_plus": 101.3, "pin_rate": 0.0, "bonus_rate": 0.0, "majors": 0, "techs": 0, "pins": 0, "mat_value": {"mv_avg": -1.3376, "matches": 4, "rank_weight": 108, "rank_overall": 1101, "version": "mbt_50_50", "mv_avg_v1": -2.004, "rank_weight_v1": 138, "rank_overall_v1": 1498}}, "opponent_breakdown": {"ranked_wins": 0, "ranked_losses": 4, "top10_wins": 0, "top10_losses": 2, "win_over_highest_rank": null, "worst_loss": {"opponent_id": "34945832132", "opponent_rank": 25, "opponent_name": "Sam Goin", "method": "Inj. 5:50"}}, "match_list": [{"date": "2025-12-07", "opponent_id": "34945832132", "opponent_career_id": null, "opponent_name": "Sam Goin", "opponent_team": "Indiana", "opponent_team_rank": 25, "opponent_weight": 184, "opponent_rank": 25, "weight_class": "184", "result": "L", "method": "INJ", "score": null, "duration": "5:50", "event": "vs. Little Rock", "mv_impact": -0.4183, "mv_impact_v1": -4.9}, {"date": "2025-12-04", "opponent_id": "34955784132", "opponent_career_id": null, "opponent_name": "Max McEnelly", "opponent_team": "Minnesota", "opponent_team_rank": 10, "opponent_weight": 184, "opponent_rank": 1, "weight_class": "184", "result": "L", "method": "MD", "score": "12-4", "duration": "7:00", "event": "vs. Minnesota", "mv_impact": -0.2457, "mv_impact_v1": -0.8}, {"date": "2025-11-15", "opponent_id": "34952078132", "opponent_career_id": null, "opponent_name": "Chris Moore", "opponent_team": "Illinois", "opponent_team_rank": 17, "opponent_weight": 184, "opponent_rank": 11, "weight_class": "184", "result": "L", "method": "DEC", "score": "9-4", "duration": "7:00", "event": "vs. Little Rock", "mv_impact": -0.5564, "mv_impact_v1": -1.74}, {"date": "2025-11-15", "opponent_id": "34943978132", "opponent_career_id": null, "opponent_name": "Aeoden Sinclair", "opponent_team": "Missouri", "opponent_team_rank": 13, "opponent_weight": 184, "opponent_rank": 3, "weight_class": "184", "result": "L", "method": "MD", "score": "15-6", "duration": "7:00", "event": "vs. Missouri", "mv_impact": -0.5564, "mv_impact_v1": -0.59}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34945358132",
+  "name": "Brock DelSignore",
+  "team": "Little Rock",
+  "team_slug": "little_rock",
+  "team_rank": 19,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": 166,
+  "record": {
+    "overall": "0-4",
+    "vs_ranked": "0-4",
+    "vs_top10": "0-2",
+    "vs_top25": "0-3"
+  },
+  "metrics": {
+    "pf7": 4.67,
+    "pa7": 12.0,
+    "pd7": -7.33,
+    "si_plus": 102.5,
+    "df_plus": 103.0,
+    "apr_plus": 101.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.078,
+      "matches": 4,
+      "rank_weight": 140,
+      "rank_overall": 1516,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 2,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34945832132",
+      "opponent_rank": 28,
+      "opponent_name": "Sam Goin",
+      "method": "Inj. 5:50"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34945832132",
+      "opponent_career_id": null,
+      "opponent_name": "Sam Goin",
+      "opponent_team": "Indiana",
+      "opponent_team_rank": 33,
+      "opponent_weight": 184,
+      "opponent_rank": 28,
+      "weight_class": "184",
+      "result": "L",
+      "method": "INJ",
+      "score": null,
+      "duration": "5:50",
+      "event": "vs. Little Rock",
+      "mv_impact": -4.93
+    },
+    {
+      "date": "2025-12-04",
+      "opponent_id": "34955784132",
+      "opponent_career_id": null,
+      "opponent_name": "Max McEnelly",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 11,
+      "opponent_weight": 184,
+      "opponent_rank": 1,
+      "weight_class": "184",
+      "result": "L",
+      "method": "MD",
+      "score": "12-4",
+      "duration": "7:00",
+      "event": "vs. Minnesota",
+      "mv_impact": -0.93
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34952078132",
+      "opponent_career_id": null,
+      "opponent_name": "Chris Moore",
+      "opponent_team": "Illinois",
+      "opponent_team_rank": 16,
+      "opponent_weight": 184,
+      "opponent_rank": 17,
+      "weight_class": "184",
+      "result": "L",
+      "method": "DEC",
+      "score": "9-4",
+      "duration": "7:00",
+      "event": "vs. Little Rock",
+      "mv_impact": -1.75
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34943978132",
+      "opponent_career_id": null,
+      "opponent_name": "Aeoden Sinclair",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 14,
+      "opponent_weight": 184,
+      "opponent_rank": 4,
+      "weight_class": "184",
+      "result": "L",
+      "method": "MD",
+      "score": "15-6",
+      "duration": "7:00",
+      "event": "vs. Missouri",
+      "mv_impact": -0.71
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

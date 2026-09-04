@@ -1,1 +1,86 @@
-{"wrestler_id": "34964385132", "name": "Eric Carlson", "team": "Cornell", "team_slug": "cornell", "team_rank": 15, "weight_class": 197, "year": 2026, "current_rank": 193, "record": {"overall": "0-2", "vs_ranked": "0-2", "vs_top10": "0-0", "vs_top25": "0-1"}, "metrics": {"pf7": 1.89, "pa7": 18.0, "pd7": -16.11, "si_plus": 90.7, "df_plus": 78.2, "apr_plus": 99.0, "pin_rate": 0.0, "bonus_rate": 0.0, "majors": 0, "techs": 0, "pins": 0, "mat_value": {"mv_avg": -3.1296, "matches": 2, "rank_weight": 159, "rank_overall": 1851, "version": "mbt_50_50", "mv_avg_v1": -5.154, "rank_weight_v1": 186, "rank_overall_v1": 2153}}, "opponent_breakdown": {"ranked_wins": 0, "ranked_losses": 2, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": null, "worst_loss": {"opponent_id": "34964400132", "opponent_rank": 154, "opponent_name": "Zahir McLean-Felix", "method": "MD 11-1"}}, "match_list": [{"date": "2025-11-02", "opponent_id": "34964400132", "opponent_career_id": null, "opponent_name": "Zahir McLean-Felix", "opponent_team": "Cornell", "opponent_team_rank": 15, "opponent_weight": 197, "opponent_rank": 154, "weight_class": "197", "result": "L", "method": "MD", "score": "11-1", "duration": "7:00", "event": "Clarion Open", "mv_impact": -0.4965, "mv_impact_v1": -6.75}, {"date": "2025-11-02", "opponent_id": "34941778132", "opponent_career_id": null, "opponent_name": "Luke Geog", "opponent_team": "Ohio State", "opponent_team_rank": 5, "opponent_weight": 197, "opponent_rank": 14, "weight_class": "197", "result": "L", "method": "TF", "score": "18-1", "duration": "2:31", "event": "Clarion Open", "mv_impact": -0.4965, "mv_impact_v1": -3.56}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34964385132",
+  "name": "Eric Carlson",
+  "team": "Cornell",
+  "team_slug": "cornell",
+  "team_rank": 17,
+  "weight_class": 197,
+  "year": 2026,
+  "current_rank": 193,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 1.89,
+    "pa7": 18.0,
+    "pd7": -16.11,
+    "si_plus": 90.3,
+    "df_plus": 78.5,
+    "apr_plus": 99.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.206,
+      "matches": 2,
+      "rank_weight": 186,
+      "rank_overall": 2158,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34964400132",
+      "opponent_rank": 154,
+      "opponent_name": "Zahir McLean-Felix",
+      "method": "MD 11-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34964400132",
+      "opponent_career_id": null,
+      "opponent_name": "Zahir McLean-Felix",
+      "opponent_team": "Cornell",
+      "opponent_team_rank": 17,
+      "opponent_weight": 197,
+      "opponent_rank": 154,
+      "weight_class": "197",
+      "result": "L",
+      "method": "MD",
+      "score": "11-1",
+      "duration": "7:00",
+      "event": "Clarion Open",
+      "mv_impact": -6.75
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34941778132",
+      "opponent_career_id": null,
+      "opponent_name": "Luke Geog",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 5,
+      "opponent_weight": 197,
+      "opponent_rank": 14,
+      "weight_class": "197",
+      "result": "L",
+      "method": "TF",
+      "score": "18-1",
+      "duration": "2:31",
+      "event": "Clarion Open",
+      "mv_impact": -3.66
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

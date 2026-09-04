@@ -1,1 +1,125 @@
-{"wrestler_id": "34936404132", "name": "Tagen Jamison", "team": "Oklahoma State", "team_slug": "oklahoma_state", "team_rank": 2, "weight_class": 149, "year": 2026, "current_rank": 183, "record": {"overall": "3-1", "vs_ranked": "3-1", "vs_top10": "0-0", "vs_top25": "0-1"}, "metrics": {"pf7": 15.25, "pa7": 5.46, "pd7": 9.79, "si_plus": 110.0, "df_plus": 111.5, "apr_plus": 97.6, "pin_rate": 0.0, "bonus_rate": 1.0, "majors": 1, "techs": 2, "pins": 0, "mat_value": {"mv_avg": 0.8771, "matches": 4, "rank_weight": 41, "rank_overall": 344, "version": "mbt_50_50", "mv_avg_v1": 2.457, "rank_weight_v1": 19, "rank_overall_v1": 168}}, "opponent_breakdown": {"ranked_wins": 3, "ranked_losses": 1, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34944671132", "opponent_rank": 95, "opponent_name": "Royce Nilo", "method": "MD 16-7"}, "worst_loss": {"opponent_id": "34943993132", "opponent_rank": 11, "opponent_name": "Seth Mendoza", "method": "Dec 5-1"}}, "match_list": [{"date": "2026-01-18", "opponent_id": "34955791132", "opponent_career_id": null, "opponent_name": "Wyatt Duchateau", "opponent_team": "Minnesota", "opponent_team_rank": 10, "opponent_weight": 149, "opponent_rank": 276, "weight_class": "149", "result": "W", "method": "TF", "score": "19-4", "duration": "4:48", "event": "Cyclone Open", "mv_impact": 0.1942, "mv_impact_v1": 3.56}, {"date": "2026-01-18", "opponent_id": "34943993132", "opponent_career_id": null, "opponent_name": "Seth Mendoza", "opponent_team": "Missouri", "opponent_team_rank": 13, "opponent_weight": 149, "opponent_rank": 11, "weight_class": "149", "result": "L", "method": "DEC", "score": "5-1", "duration": "7:00", "event": "Cyclone Open", "mv_impact": 0.1942, "mv_impact_v1": -0.85}, {"date": "2026-01-18", "opponent_id": "34943966132", "opponent_career_id": null, "opponent_name": "Nate Pulliam", "opponent_team": "Missouri", "opponent_team_rank": 13, "opponent_weight": 149, "opponent_rank": 220, "weight_class": "149", "result": "W", "method": "TF", "score": "19-4", "duration": "7:00", "event": "Cyclone Open", "mv_impact": 0.1942, "mv_impact_v1": 4.48}, {"date": "2026-01-18", "opponent_id": "34944671132", "opponent_career_id": null, "opponent_name": "Royce Nilo", "opponent_team": "Wisconsin", "opponent_team_rank": 38, "opponent_weight": 149, "opponent_rank": 95, "weight_class": "149", "result": "W", "method": "MD", "score": "16-7", "duration": "7:00", "event": "Cyclone Open", "mv_impact": 0.1942, "mv_impact_v1": 2.64}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34936404132",
+  "name": "Tagen Jamison",
+  "team": "Oklahoma State",
+  "team_slug": "oklahoma_state",
+  "team_rank": 2,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": 183,
+  "record": {
+    "overall": "3-1",
+    "vs_ranked": "3-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 15.25,
+    "pa7": 5.46,
+    "pd7": 9.79,
+    "si_plus": 110.0,
+    "df_plus": 111.5,
+    "apr_plus": 97.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 2,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 2.374,
+      "matches": 4,
+      "rank_weight": 22,
+      "rank_overall": 184,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34944671132",
+      "opponent_rank": 95,
+      "opponent_name": "Royce Nilo",
+      "method": "MD 16-7"
+    },
+    "worst_loss": {
+      "opponent_id": "34943993132",
+      "opponent_rank": 34,
+      "opponent_name": "Seth Mendoza",
+      "method": "Dec 5-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-18",
+      "opponent_id": "34955791132",
+      "opponent_career_id": null,
+      "opponent_name": "Wyatt Duchateau",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 11,
+      "opponent_weight": 149,
+      "opponent_rank": 276,
+      "weight_class": "149",
+      "result": "W",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "4:48",
+      "event": "Cyclone Open",
+      "mv_impact": 3.56
+    },
+    {
+      "date": "2026-01-18",
+      "opponent_id": "34943993132",
+      "opponent_career_id": null,
+      "opponent_name": "Seth Mendoza",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 14,
+      "opponent_weight": 149,
+      "opponent_rank": 34,
+      "weight_class": "149",
+      "result": "L",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "Cyclone Open",
+      "mv_impact": -1.18
+    },
+    {
+      "date": "2026-01-18",
+      "opponent_id": "34943966132",
+      "opponent_career_id": null,
+      "opponent_name": "Nate Pulliam",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 14,
+      "opponent_weight": 149,
+      "opponent_rank": 220,
+      "weight_class": "149",
+      "result": "W",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "7:00",
+      "event": "Cyclone Open",
+      "mv_impact": 4.48
+    },
+    {
+      "date": "2026-01-18",
+      "opponent_id": "34944671132",
+      "opponent_career_id": null,
+      "opponent_name": "Royce Nilo",
+      "opponent_team": "Wisconsin",
+      "opponent_team_rank": 29,
+      "opponent_weight": 149,
+      "opponent_rank": 95,
+      "weight_class": "149",
+      "result": "W",
+      "method": "MD",
+      "score": "16-7",
+      "duration": "7:00",
+      "event": "Cyclone Open",
+      "mv_impact": 2.63
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

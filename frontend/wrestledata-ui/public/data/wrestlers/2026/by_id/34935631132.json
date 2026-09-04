@@ -1,1 +1,157 @@
-{"wrestler_id": "34935631132", "name": "Marco Christiansen", "team": "Nebraska", "team_slug": "nebraska", "team_rank": 3, "weight_class": 184, "year": 2026, "current_rank": 185, "record": {"overall": "1-5", "vs_ranked": "1-5", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 4.5, "pa7": 7.0, "pd7": -2.5, "si_plus": 80.1, "df_plus": 101.3, "apr_plus": 96.5, "pin_rate": 0.0, "bonus_rate": 0.0, "majors": 0, "techs": 0, "pins": 0, "mat_value": {"mv_avg": -3.7681, "matches": 4, "rank_weight": 185, "rank_overall": 2029, "version": "mbt_50_50", "mv_avg_v1": -4.938, "rank_weight_v1": 194, "rank_overall_v1": 2126}}, "opponent_breakdown": {"ranked_wins": 1, "ranked_losses": 5, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34943246132", "opponent_rank": 182, "opponent_name": "Shane McConville", "method": "Dec 8-3"}, "worst_loss": {"opponent_id": "34943246132", "opponent_rank": 182, "opponent_name": "Shane McConville", "method": "MD 11-1"}}, "match_list": [{"date": "2026-02-15", "opponent_id": "34943244132", "opponent_career_id": null, "opponent_name": "Jared Thiry", "opponent_team": "South Dakota State", "opponent_team_rank": 41, "opponent_weight": 184, "opponent_rank": 72, "weight_class": "184", "result": "L", "method": "FALL", "score": null, "duration": "3:45", "event": "Jackrabbits Open", "mv_impact": -0.2103, "mv_impact_v1": -6.11}, {"date": "2026-02-15", "opponent_id": "34943252132", "opponent_career_id": null, "opponent_name": "Burk Blasius", "opponent_team": "South Dakota State", "opponent_team_rank": 41, "opponent_weight": 184, "opponent_rank": 68, "weight_class": "184", "result": "L", "method": "MFF", "score": null, "duration": "7:00", "event": "Jackrabbits Open", "mv_impact": -0.2103}, {"date": "2026-02-15", "opponent_id": "34935627132", "opponent_career_id": null, "opponent_name": "Dominic Thebeau", "opponent_team": "Nebraska", "opponent_team_rank": 3, "opponent_weight": 184, "opponent_rank": 162, "weight_class": "184", "result": "L", "method": "MFF", "score": null, "duration": "7:00", "event": "Jackrabbits Open", "mv_impact": -0.2103}, {"date": "2026-02-15", "opponent_id": "34943246132", "opponent_career_id": null, "opponent_name": "Shane McConville", "opponent_team": "South Dakota State", "opponent_team_rank": 41, "opponent_weight": 184, "opponent_rank": 182, "weight_class": "184", "result": "W", "method": "DEC", "score": "8-3", "duration": "7:00", "event": "Jackrabbits Open", "mv_impact": -0.2103, "mv_impact_v1": -0.35}, {"date": "2025-11-09", "opponent_id": "34934621132", "opponent_career_id": null, "opponent_name": "andrew mcmonagle", "opponent_team": "North Dakota State", "opponent_team_rank": 39, "opponent_weight": 184, "opponent_rank": 69, "weight_class": "184", "result": "L", "method": "FALL", "score": null, "duration": "5:57", "event": "Bison Open 2025", "mv_impact": -1.4484, "mv_impact_v1": -5.94}, {"date": "2025-11-09", "opponent_id": "34943246132", "opponent_career_id": null, "opponent_name": "Shane McConville", "opponent_team": "South Dakota State", "opponent_team_rank": 41, "opponent_weight": 184, "opponent_rank": 182, "weight_class": "184", "result": "L", "method": "MD", "score": "11-1", "duration": "7:00", "event": "Bison Open 2025", "mv_impact": -1.4484, "mv_impact_v1": -7.35}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34935631132",
+  "name": "Marco Christiansen",
+  "team": "Nebraska",
+  "team_slug": "nebraska",
+  "team_rank": 3,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": 185,
+  "record": {
+    "overall": "1-5",
+    "vs_ranked": "1-5",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.5,
+    "pa7": 7.0,
+    "pd7": -2.5,
+    "si_plus": 78.9,
+    "df_plus": 100.8,
+    "apr_plus": 96.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.947,
+      "matches": 4,
+      "rank_weight": 194,
+      "rank_overall": 2126,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 5,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34943246132",
+      "opponent_rank": 182,
+      "opponent_name": "Shane McConville",
+      "method": "Dec 8-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34943246132",
+      "opponent_rank": 182,
+      "opponent_name": "Shane McConville",
+      "method": "MD 11-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-02-15",
+      "opponent_id": "34943244132",
+      "opponent_career_id": null,
+      "opponent_name": "Jared Thiry",
+      "opponent_team": "South Dakota State",
+      "opponent_team_rank": 39,
+      "opponent_weight": 184,
+      "opponent_rank": 74,
+      "weight_class": "184",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:45",
+      "event": "Jackrabbits Open",
+      "mv_impact": -6.13
+    },
+    {
+      "date": "2026-02-15",
+      "opponent_id": "34943252132",
+      "opponent_career_id": null,
+      "opponent_name": "Burk Blasius",
+      "opponent_team": "South Dakota State",
+      "opponent_team_rank": 39,
+      "opponent_weight": 184,
+      "opponent_rank": 70,
+      "weight_class": "184",
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Jackrabbits Open"
+    },
+    {
+      "date": "2026-02-15",
+      "opponent_id": "34935627132",
+      "opponent_career_id": null,
+      "opponent_name": "Dominic Thebeau",
+      "opponent_team": "Nebraska",
+      "opponent_team_rank": 3,
+      "opponent_weight": 184,
+      "opponent_rank": 162,
+      "weight_class": "184",
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Jackrabbits Open"
+    },
+    {
+      "date": "2026-02-15",
+      "opponent_id": "34943246132",
+      "opponent_career_id": null,
+      "opponent_name": "Shane McConville",
+      "opponent_team": "South Dakota State",
+      "opponent_team_rank": 39,
+      "opponent_weight": 184,
+      "opponent_rank": 182,
+      "weight_class": "184",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-3",
+      "duration": "7:00",
+      "event": "Jackrabbits Open",
+      "mv_impact": -0.35
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34934621132",
+      "opponent_career_id": null,
+      "opponent_name": "andrew mcmonagle",
+      "opponent_team": "North Dakota State",
+      "opponent_team_rank": 48,
+      "opponent_weight": 184,
+      "opponent_rank": 71,
+      "weight_class": "184",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:57",
+      "event": "Bison Open 2025",
+      "mv_impact": -5.96
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34943246132",
+      "opponent_career_id": null,
+      "opponent_name": "Shane McConville",
+      "opponent_team": "South Dakota State",
+      "opponent_team_rank": 39,
+      "opponent_weight": 184,
+      "opponent_rank": 182,
+      "weight_class": "184",
+      "result": "L",
+      "method": "MD",
+      "score": "11-1",
+      "duration": "7:00",
+      "event": "Bison Open 2025",
+      "mv_impact": -7.35
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

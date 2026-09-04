@@ -1,1 +1,103 @@
-{"wrestler_id": "34977463132", "name": "Sincere Bailey", "team": "Morgan State", "team_slug": "morgan_state", "team_rank": 59, "weight_class": 157, "year": 2026, "current_rank": 254, "record": {"overall": "0-3", "vs_ranked": "0-3", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 1.0, "pa7": 7.33, "pd7": -6.33, "si_plus": 90.5, "df_plus": 104.7, "apr_plus": 98.3, "pin_rate": 0.0, "bonus_rate": 0.0, "majors": 0, "techs": 0, "pins": 0, "mat_value": {"mv_avg": -2.9335, "matches": 4, "rank_weight": 197, "rank_overall": 1783, "version": "mbt_50_50", "mv_avg_v1": -3.402, "rank_weight_v1": 203, "rank_overall_v1": 1861}}, "opponent_breakdown": {"ranked_wins": 0, "ranked_losses": 3, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": null, "worst_loss": {"opponent_id": "34947810132", "opponent_rank": 113, "opponent_name": "Jordan Brown", "method": "MD 11-2"}}, "match_list": [{"date": "2025-11-08", "opponent_id": "34936210132", "opponent_career_id": null, "opponent_name": "Derek Raike", "opponent_team": "Ohio", "opponent_team_rank": 45, "opponent_weight": 157, "opponent_rank": 26, "weight_class": "157", "result": "L", "method": "MD", "score": "9-0", "duration": "7:00", "event": "vs. Ohio", "mv_impact": -0.9807, "mv_impact_v1": -2.47}, {"date": "2025-11-02", "opponent_id": "34947810132", "opponent_career_id": null, "opponent_name": "Jordan Brown", "opponent_team": "Binghamton", "opponent_team_rank": 42, "opponent_weight": 165, "opponent_rank": 113, "weight_class": "157", "result": "L", "method": "MD", "score": "11-2", "duration": "7:00", "event": "Navy Classic", "mv_impact": -0.5966, "mv_impact_v1": -4.38}, {"date": "2025-11-02", "opponent_id": "34939066132", "opponent_career_id": null, "opponent_name": "Cooper Rathburn", "opponent_team": "Navy", "opponent_team_rank": 24, "opponent_weight": 157, "opponent_rank": 80, "weight_class": "157", "result": "L", "method": "DEC", "score": "2-1", "duration": "7:00", "event": "Navy Classic", "mv_impact": -0.5966, "mv_impact_v1": -2.39}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34977463132",
+  "name": "Sincere Bailey",
+  "team": "Morgan State",
+  "team_slug": "morgan_state",
+  "team_rank": 75,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 254,
+  "record": {
+    "overall": "0-3",
+    "vs_ranked": "0-3",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 1.0,
+    "pa7": 7.33,
+    "pd7": -6.33,
+    "si_plus": 90.5,
+    "df_plus": 104.7,
+    "apr_plus": 98.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.4,
+      "matches": 4,
+      "rank_weight": 202,
+      "rank_overall": 1854,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 3,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "34947810132",
+      "opponent_rank": 113,
+      "opponent_name": "Jordan Brown",
+      "method": "MD 11-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34936210132",
+      "opponent_career_id": null,
+      "opponent_name": "Derek Raike",
+      "opponent_team": "Ohio",
+      "opponent_team_rank": 36,
+      "opponent_weight": 157,
+      "opponent_rank": 23,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MD",
+      "score": "9-0",
+      "duration": "7:00",
+      "event": "vs. Ohio",
+      "mv_impact": -2.46
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34947810132",
+      "opponent_career_id": null,
+      "opponent_name": "Jordan Brown",
+      "opponent_team": "Binghamton",
+      "opponent_team_rank": 51,
+      "opponent_weight": 165,
+      "opponent_rank": 113,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MD",
+      "score": "11-2",
+      "duration": "7:00",
+      "event": "Navy Classic",
+      "mv_impact": -4.38
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34939066132",
+      "opponent_career_id": null,
+      "opponent_name": "Cooper Rathburn",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 30,
+      "opponent_weight": 157,
+      "opponent_rank": 80,
+      "weight_class": "157",
+      "result": "L",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "7:00",
+      "event": "Navy Classic",
+      "mv_impact": -2.38
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

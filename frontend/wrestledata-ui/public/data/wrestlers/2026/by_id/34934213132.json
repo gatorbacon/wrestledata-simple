@@ -1,1 +1,91 @@
-{"wrestler_id": "34934213132", "name": "Cody Phelps", "team": "Wyoming", "team_slug": "wyoming", "team_rank": 14, "weight_class": 141, "year": 2026, "current_rank": 94, "record": {"overall": "1-1", "vs_ranked": "1-1", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 15.5, "pa7": 9.9, "pd7": 5.6, "si_plus": 110.3, "df_plus": 93.8, "apr_plus": 92.1, "pin_rate": 0.0, "bonus_rate": 1.0, "majors": 0, "techs": 1, "pins": 0, "mat_value": {"mv_avg": -1.1547, "matches": 2, "rank_weight": 104, "rank_overall": 1013, "version": "mbt_50_50", "mv_avg_v1": -0.189, "rank_weight_v1": 95, "rank_overall_v1": 894}}, "opponent_breakdown": {"ranked_wins": 1, "ranked_losses": 1, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34943291132", "opponent_rank": 210, "opponent_name": "Kasey Curtis", "method": "TF 18-3 4:22"}, "worst_loss": {"opponent_id": "34950683132", "opponent_rank": 59, "opponent_name": "Richie Clementi", "method": "MD 15-6"}}, "match_list": [{"date": "2025-12-21", "opponent_id": "34950683132", "opponent_career_id": null, "opponent_name": "Richie Clementi", "opponent_team": "California Baptist", "opponent_team_rank": 65, "opponent_weight": 141, "opponent_rank": 59, "weight_class": "141", "result": "L", "method": "MD", "score": "15-6", "duration": "7:00", "event": "2025 Dollamur Reno Tournament of Champions", "mv_impact": -0.4692, "mv_impact_v1": -4.02}, {"date": "2025-12-21", "opponent_id": "34943291132", "opponent_career_id": null, "opponent_name": "Kasey Curtis", "opponent_team": "Utah Valley", "opponent_team_rank": 37, "opponent_weight": 141, "opponent_rank": 210, "weight_class": "141", "result": "W", "method": "TF", "score": "18-3", "duration": "4:22", "event": "2025 Dollamur Reno Tournament of Champions", "mv_impact": -0.4692, "mv_impact_v1": 3.64}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34934213132",
+  "name": "Cody Phelps",
+  "team": "Wyoming",
+  "team_slug": "wyoming",
+  "team_rank": 15,
+  "weight_class": 141,
+  "year": 2026,
+  "current_rank": 94,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 15.5,
+    "pa7": 9.9,
+    "pd7": 5.6,
+    "si_plus": 110.3,
+    "df_plus": 93.7,
+    "apr_plus": 92.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.203,
+      "matches": 2,
+      "rank_weight": 94,
+      "rank_overall": 899,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34943291132",
+      "opponent_rank": 210,
+      "opponent_name": "Kasey Curtis",
+      "method": "TF 18-3 4:22"
+    },
+    "worst_loss": {
+      "opponent_id": "34950683132",
+      "opponent_rank": 60,
+      "opponent_name": "Richie Clementi",
+      "method": "MD 15-6"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34950683132",
+      "opponent_career_id": null,
+      "opponent_name": "Richie Clementi",
+      "opponent_team": "California Baptist",
+      "opponent_team_rank": 63,
+      "opponent_weight": 141,
+      "opponent_rank": 60,
+      "weight_class": "141",
+      "result": "L",
+      "method": "MD",
+      "score": "15-6",
+      "duration": "7:00",
+      "event": "2025 Dollamur Reno Tournament of Champions",
+      "mv_impact": -4.04
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34943291132",
+      "opponent_career_id": null,
+      "opponent_name": "Kasey Curtis",
+      "opponent_team": "Utah Valley",
+      "opponent_team_rank": 45,
+      "opponent_weight": 141,
+      "opponent_rank": 210,
+      "weight_class": "141",
+      "result": "W",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "4:22",
+      "event": "2025 Dollamur Reno Tournament of Champions",
+      "mv_impact": 3.64
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

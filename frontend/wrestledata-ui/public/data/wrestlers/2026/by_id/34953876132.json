@@ -1,1 +1,142 @@
-{"wrestler_id": "34953876132", "name": "Braden Brown", "team": "LIU", "team_slug": "liu", "team_rank": 72, "weight_class": 174, "year": 2026, "current_rank": 166, "record": {"overall": "1-4", "vs_ranked": "1-4", "vs_top10": "0-0", "vs_top25": "0-2"}, "metrics": {"pf7": 6.6, "pa7": 14.33, "pd7": -7.74, "si_plus": 93.2, "df_plus": 87.8, "apr_plus": 98.0, "pin_rate": 0.0, "bonus_rate": 0.0, "majors": 0, "techs": 0, "pins": 0, "mat_value": {"mv_avg": -3.0257, "matches": 5, "rank_weight": 167, "rank_overall": 1822, "version": "mbt_50_50", "mv_avg_v1": -3.799, "rank_weight_v1": 177, "rank_overall_v1": 1931}}, "opponent_breakdown": {"ranked_wins": 1, "ranked_losses": 4, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34963809132", "opponent_rank": 174, "opponent_name": "Maxx Fesinger", "method": "Dec 16-9"}, "worst_loss": {"opponent_id": "34957115132", "opponent_rank": 160, "opponent_name": "Hunter Hohman", "method": "TF 18-2 5:01"}}, "match_list": [{"date": "2026-01-16", "opponent_id": "34957115132", "opponent_career_id": null, "opponent_name": "Hunter Hohman", "opponent_team": "American", "opponent_team_rank": 22, "opponent_weight": 174, "opponent_rank": 160, "weight_class": "174", "result": "L", "method": "TF", "score": "18-2", "duration": "5:01", "event": "vs. LIU", "mv_impact": -0.7622, "mv_impact_v1": -6.72}, {"date": "2026-01-04", "opponent_id": "34954154132", "opponent_career_id": null, "opponent_name": "Myles Takats", "opponent_team": "Bucknell", "opponent_team_rank": 35, "opponent_weight": 174, "opponent_rank": 15, "weight_class": "174", "result": "L", "method": "FALL", "score": null, "duration": "1:58", "event": "vs. LIU", "mv_impact": -0.3477, "mv_impact_v1": -4.22}, {"date": "2026-01-03", "opponent_id": "34943395132", "opponent_career_id": null, "opponent_name": "Nick Fine", "opponent_team": "Columbia", "opponent_team_rank": 18, "opponent_weight": 174, "opponent_rank": 18, "weight_class": "174", "result": "L", "method": "FALL", "score": null, "duration": "1:17", "event": "vs. LIU", "mv_impact": -0.884, "mv_impact_v1": -4.28}, {"date": "2025-11-16", "opponent_id": "34934320132", "opponent_career_id": null, "opponent_name": "Andrew Christie", "opponent_team": "Army West Point", "opponent_team_rank": 49, "opponent_weight": 174, "opponent_rank": 47, "weight_class": "174", "result": "L", "method": "MD", "score": "9-1", "duration": "7:00", "event": "Army Open", "mv_impact": -0.4589, "mv_impact_v1": -3.2}, {"date": "2025-11-16", "opponent_id": "34963809132", "opponent_career_id": null, "opponent_name": "Maxx Fesinger", "opponent_team": "Mercyhurst", "opponent_team_rank": 73, "opponent_weight": 174, "opponent_rank": 174, "weight_class": "174", "result": "W", "method": "DEC", "score": "16-9", "duration": "7:00", "event": "Army Open", "mv_impact": -0.4589, "mv_impact_v1": -0.57}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34953876132",
+  "name": "Braden Brown",
+  "team": "LIU",
+  "team_slug": "liu",
+  "team_rank": 72,
+  "weight_class": 174,
+  "year": 2026,
+  "current_rank": 166,
+  "record": {
+    "overall": "1-4",
+    "vs_ranked": "1-4",
+    "vs_top10": "0-0",
+    "vs_top25": "0-2"
+  },
+  "metrics": {
+    "pf7": 6.6,
+    "pa7": 14.33,
+    "pd7": -7.74,
+    "si_plus": 93.2,
+    "df_plus": 87.9,
+    "apr_plus": 98.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.813,
+      "matches": 5,
+      "rank_weight": 178,
+      "rank_overall": 1934,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34963809132",
+      "opponent_rank": 174,
+      "opponent_name": "Maxx Fesinger",
+      "method": "Dec 16-9"
+    },
+    "worst_loss": {
+      "opponent_id": "34957115132",
+      "opponent_rank": 160,
+      "opponent_name": "Hunter Hohman",
+      "method": "TF 18-2 5:01"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-16",
+      "opponent_id": "34957115132",
+      "opponent_career_id": null,
+      "opponent_name": "Hunter Hohman",
+      "opponent_team": "American",
+      "opponent_team_rank": 31,
+      "opponent_weight": 174,
+      "opponent_rank": 160,
+      "weight_class": "174",
+      "result": "L",
+      "method": "TF",
+      "score": "18-2",
+      "duration": "5:01",
+      "event": "vs. LIU",
+      "mv_impact": -6.72
+    },
+    {
+      "date": "2026-01-04",
+      "opponent_id": "34954154132",
+      "opponent_career_id": null,
+      "opponent_name": "Myles Takats",
+      "opponent_team": "Bucknell",
+      "opponent_team_rank": 37,
+      "opponent_weight": 174,
+      "opponent_rank": 19,
+      "weight_class": "174",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:58",
+      "event": "vs. LIU",
+      "mv_impact": -4.25
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34943395132",
+      "opponent_career_id": null,
+      "opponent_name": "Nick Fine",
+      "opponent_team": "Columbia",
+      "opponent_team_rank": 20,
+      "opponent_weight": 174,
+      "opponent_rank": 17,
+      "weight_class": "174",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:17",
+      "event": "vs. LIU",
+      "mv_impact": -4.3
+    },
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34934320132",
+      "opponent_career_id": null,
+      "opponent_name": "Andrew Christie",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 41,
+      "opponent_weight": 174,
+      "opponent_rank": 49,
+      "weight_class": "174",
+      "result": "L",
+      "method": "MD",
+      "score": "9-1",
+      "duration": "7:00",
+      "event": "Army Open",
+      "mv_impact": -3.23
+    },
+    {
+      "date": "2025-11-16",
+      "opponent_id": "34963809132",
+      "opponent_career_id": null,
+      "opponent_name": "Maxx Fesinger",
+      "opponent_team": "Mercyhurst",
+      "opponent_team_rank": 73,
+      "opponent_weight": 174,
+      "opponent_rank": 174,
+      "weight_class": "174",
+      "result": "W",
+      "method": "DEC",
+      "score": "16-9",
+      "duration": "7:00",
+      "event": "Army Open",
+      "mv_impact": -0.57
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

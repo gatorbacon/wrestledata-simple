@@ -1,1 +1,106 @@
-{"wrestler_id": "34952676132", "name": "Kelvin Griffin", "team": "Lehigh", "team_slug": "lehigh", "team_rank": 12, "weight_class": 149, "year": 2026, "current_rank": 114, "record": {"overall": "1-2", "vs_ranked": "1-2", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 0.0, "pa7": 0.0, "pd7": 0.0, "si_plus": 103.6, "df_plus": 104.2, "apr_plus": 119.6, "pin_rate": 1.0, "bonus_rate": 1.0, "majors": 0, "techs": 0, "pins": 1, "mat_value": {"mv_avg": 0.2818, "matches": 1, "rank_weight": 57, "rank_overall": 492, "version": "mbt_50_50", "mv_avg_v1": 4.715, "rank_weight_v1": 2, "rank_overall_v1": 16}}, "opponent_breakdown": {"ranked_wins": 1, "ranked_losses": 2, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34935956132", "opponent_rank": 175, "opponent_name": "Dashawn Farber", "method": "Fall 1:51"}, "worst_loss": {"opponent_id": "34971907132", "opponent_rank": 306, "opponent_name": "Justin Soriano", "method": "M. For."}}, "match_list": [{"date": "2025-11-02", "opponent_id": "34934335132", "opponent_career_id": null, "opponent_name": "Mason Barvitskie", "opponent_team": "Army West Point", "opponent_team_rank": 49, "opponent_weight": 149, "opponent_rank": 163, "weight_class": "149", "result": "L", "method": "DFLT", "score": null, "duration": "7:00", "event": "Princeton Open", "mv_impact": 0.5557, "mv_impact_v1": 0.5557}, {"date": "2025-11-02", "opponent_id": "34971907132", "opponent_career_id": null, "opponent_name": "Justin Soriano", "opponent_team": "Drexel", "opponent_team_rank": 43, "opponent_weight": 149, "opponent_rank": 306, "weight_class": "149", "result": "L", "method": "MFF", "score": null, "duration": "7:00", "event": "Princeton Open", "mv_impact": 0.5557, "mv_impact_v1": 0.5557}, {"date": "2025-11-02", "opponent_id": "34935956132", "opponent_career_id": null, "opponent_name": "Dashawn Farber", "opponent_team": "Lock Haven", "opponent_team_rank": 36, "opponent_weight": 149, "opponent_rank": 175, "weight_class": "149", "result": "W", "method": "FALL", "score": null, "duration": "1:51", "event": "Princeton Open", "mv_impact": 0.5557, "mv_impact_v1": 0.5557}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34952676132",
+  "name": "Kelvin Griffin",
+  "team": "Lehigh",
+  "team_slug": "lehigh",
+  "team_rank": 13,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": 114,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 103.6,
+    "df_plus": 104.2,
+    "apr_plus": 119.6,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 4.716,
+      "matches": 1,
+      "rank_weight": 2,
+      "rank_overall": 16,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34935956132",
+      "opponent_rank": 175,
+      "opponent_name": "Dashawn Farber",
+      "method": "Fall 1:51"
+    },
+    "worst_loss": {
+      "opponent_id": "34971907132",
+      "opponent_rank": 306,
+      "opponent_name": "Justin Soriano",
+      "method": "M. For."
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934335132",
+      "opponent_career_id": null,
+      "opponent_name": "Mason Barvitskie",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 41,
+      "opponent_weight": 149,
+      "opponent_rank": 163,
+      "weight_class": "149",
+      "result": "L",
+      "method": "DFLT",
+      "score": null,
+      "duration": "7:00",
+      "event": "Princeton Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34971907132",
+      "opponent_career_id": null,
+      "opponent_name": "Justin Soriano",
+      "opponent_team": "Drexel",
+      "opponent_team_rank": 54,
+      "opponent_weight": 149,
+      "opponent_rank": 306,
+      "weight_class": "149",
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Princeton Open"
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34935956132",
+      "opponent_career_id": null,
+      "opponent_name": "Dashawn Farber",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 38,
+      "opponent_weight": 149,
+      "opponent_rank": 175,
+      "weight_class": "149",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:51",
+      "event": "Princeton Open",
+      "mv_impact": 4.72
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

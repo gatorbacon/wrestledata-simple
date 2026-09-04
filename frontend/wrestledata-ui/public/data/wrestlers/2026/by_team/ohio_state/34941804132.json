@@ -14,11 +14,11 @@
     "vs_top25": "0-3"
   },
   "metrics": {
-    "pf7": 8.17,
-    "pa7": 6.81,
-    "pd7": 1.36,
-    "si_plus": 106.5,
-    "df_plus": 105.7,
+    "pf7": 7.9,
+    "pa7": 6.77,
+    "pd7": 1.13,
+    "si_plus": 105.6,
+    "df_plus": 105.6,
     "apr_plus": 98.5,
     "pin_rate": 0.0,
     "bonus_rate": 0.4,
@@ -26,10 +26,10 @@
     "techs": 2,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 0.088,
+      "mv_avg": 0.093,
       "matches": 34,
       "rank_weight": 101,
-      "rank_overall": 813,
+      "rank_overall": 809,
       "version": "v1"
     }
   },
@@ -58,16 +58,16 @@
       "opponent_career_id": null,
       "opponent_name": "Carter Young",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 32,
       "opponent_weight": 149,
-      "opponent_rank": 8,
+      "opponent_rank": 10,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "14-3",
       "duration": "7:00",
       "event": "vs. Ohio State",
-      "mv_impact": -1.96
+      "mv_impact": -2.11
     },
     {
       "date": "2026-02-13",
@@ -77,14 +77,14 @@
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 149,
-      "opponent_rank": 1,
+      "opponent_rank": 2,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "20-5",
       "duration": "6:17",
       "event": "vs. Penn State",
-      "mv_impact": -1.55
+      "mv_impact": -1.59
     },
     {
       "date": "2026-02-01",
@@ -92,7 +92,7 @@
       "opponent_career_id": null,
       "opponent_name": "Lachlan McNeil",
       "opponent_team": "Michigan",
-      "opponent_team_rank": 6,
+      "opponent_team_rank": 7,
       "opponent_weight": 149,
       "opponent_rank": 3,
       "weight_class": "149",
@@ -101,7 +101,7 @@
       "score": "15-3",
       "duration": "7:00",
       "event": "vs. Ohio State",
-      "mv_impact": -1.95
+      "mv_impact": -1.97
     },
     {
       "date": "2026-01-31",
@@ -109,7 +109,7 @@
       "opponent_career_id": null,
       "opponent_name": "Luke Satriano",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 23,
       "opponent_weight": 141,
       "opponent_rank": 64,
       "weight_class": "141",
@@ -126,7 +126,7 @@
       "opponent_career_id": null,
       "opponent_name": "Nico Fanella",
       "opponent_team": "Pittsburgh",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 25,
       "opponent_weight": 141,
       "opponent_rank": 151,
       "weight_class": "141",
@@ -160,7 +160,7 @@
       "opponent_career_id": null,
       "opponent_name": "Ramil Islamov",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 23,
       "opponent_weight": 149,
       "opponent_rank": 233,
       "weight_class": "141",
@@ -194,7 +194,7 @@
       "opponent_career_id": null,
       "opponent_name": "Ramil Islamov",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 23,
       "opponent_weight": 149,
       "opponent_rank": 233,
       "weight_class": "141",
@@ -211,7 +211,7 @@
       "opponent_career_id": null,
       "opponent_name": "Lucas Peters",
       "opponent_team": "Indiana",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 33,
       "opponent_weight": 141,
       "opponent_rank": 228,
       "weight_class": "141",
@@ -224,11 +224,28 @@
     },
     {
       "date": "2025-12-30",
+      "opponent_id": "34955746132",
+      "opponent_career_id": null,
+      "opponent_name": "Billy DeKraker",
+      "opponent_team": "Northwestern",
+      "opponent_team_rank": 58,
+      "opponent_weight": 141,
+      "opponent_rank": 45,
+      "weight_class": "141",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-3",
+      "duration": "7:00",
+      "event": "Midlands Championships",
+      "mv_impact": -2.96
+    },
+    {
+      "date": "2025-12-30",
       "opponent_id": "34934757132",
       "opponent_career_id": null,
       "opponent_name": "DJ Gillett",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 34,
       "opponent_weight": 141,
       "opponent_rank": 97,
       "weight_class": "141",
@@ -241,28 +258,11 @@
     },
     {
       "date": "2025-12-30",
-      "opponent_id": "34955746132",
-      "opponent_career_id": null,
-      "opponent_name": "Billy DeKraker",
-      "opponent_team": "Northwestern",
-      "opponent_team_rank": 75,
-      "opponent_weight": 141,
-      "opponent_rank": 43,
-      "weight_class": "141",
-      "result": "L",
-      "method": "DEC",
-      "score": "6-3",
-      "duration": "7:00",
-      "event": "Midlands Championships",
-      "mv_impact": -2.95
-    },
-    {
-      "date": "2025-12-30",
       "opponent_id": "34935275132",
       "opponent_career_id": null,
       "opponent_name": "Drew Gorman",
       "opponent_team": "Virginia Tech",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 8,
       "opponent_weight": 149,
       "opponent_rank": 171,
       "weight_class": "141",
@@ -279,7 +279,7 @@
       "opponent_career_id": null,
       "opponent_name": "Kellan Aure",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 65,
       "opponent_weight": 141,
       "opponent_rank": 69,
       "weight_class": "141",
@@ -288,7 +288,7 @@
       "score": "5-2",
       "duration": "8:15",
       "event": "Kent State Open 2",
-      "mv_impact": -3.52
+      "mv_impact": -3.51
     },
     {
       "date": "2025-12-20",
@@ -296,7 +296,7 @@
       "opponent_career_id": null,
       "opponent_name": "Cole Krutzfeldt",
       "opponent_team": "Chattanooga",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 47,
       "opponent_weight": 141,
       "opponent_rank": 162,
       "weight_class": "141",
@@ -313,7 +313,7 @@
       "opponent_career_id": null,
       "opponent_name": "Luke Satriano",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 23,
       "opponent_weight": 141,
       "opponent_rank": 64,
       "weight_class": "141",
@@ -330,16 +330,16 @@
       "opponent_career_id": null,
       "opponent_name": "Pierson Manville",
       "opponent_team": "Arizona State",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 12,
       "opponent_weight": 141,
-      "opponent_rank": 33,
+      "opponent_rank": 28,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
       "event": "Michigan State Open",
-      "mv_impact": -2.16
+      "mv_impact": -1.97
     },
     {
       "date": "2025-11-08",
@@ -347,7 +347,7 @@
       "opponent_career_id": null,
       "opponent_name": "Giosue Hickman",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 58,
       "opponent_weight": 141,
       "opponent_rank": 66,
       "weight_class": "141",
@@ -356,7 +356,7 @@
       "score": "4-2",
       "duration": "7:00",
       "event": "Michigan State Open",
-      "mv_impact": -3.76
+      "mv_impact": -3.75
     },
     {
       "date": "2025-11-02",
@@ -364,7 +364,7 @@
       "opponent_career_id": null,
       "opponent_name": "Aaron Lanster",
       "opponent_team": "Buffalo",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 53,
       "opponent_weight": 141,
       "opponent_rank": 252,
       "weight_class": "141",
@@ -381,7 +381,7 @@
       "opponent_career_id": null,
       "opponent_name": "CJ Carr",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 38,
       "opponent_weight": 141,
       "opponent_rank": 166,
       "weight_class": "141",
@@ -393,5 +393,5 @@
       "mv_impact": 1.66
     }
   ],
-  "profile_generated_at": "2026-06-02"
+  "profile_generated_at": "2026-09-03"
 }

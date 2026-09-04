@@ -104,11 +104,13 @@ function createPlaceGrid(team) {
   return cell;
 }
 
-function createRangeBar(t) {
+const INDIVIDUAL_SCALE_MAX = 30; // individual wrestlers score far fewer points per match than a team total
+
+function createRangeBar(t, scaleMax = SCALE_MAX) {
   const lo = t.p5, hi = t.p95, exp = t.expected;
-  const loPct = (100 * lo) / SCALE_MAX;
-  const hiPct = (100 * hi) / SCALE_MAX;
-  const expPct = (100 * exp) / SCALE_MAX;
+  const loPct = (100 * lo) / scaleMax;
+  const hiPct = (100 * hi) / scaleMax;
+  const expPct = (100 * exp) / scaleMax;
   const widthPct = hiPct - loPct;
   // Where the expected value sits within the lo-hi band, so the opacity
   // gradient below peaks there even when the distribution is skewed.
@@ -244,7 +246,7 @@ function renderLeaderboard() {
       const breakdownTable = document.createElement("table");
       const thead = document.createElement("thead");
       const headerRow = document.createElement("tr");
-      ["Wt", "Wrestler", "Rank", "Expected", "Min", "Max"].forEach((h) => {
+      ["Wt", "Wrestler", "Scoring Range"].forEach((h) => {
         const th = document.createElement("th");
         th.textContent = h;
         headerRow.appendChild(th);
@@ -252,42 +254,32 @@ function renderLeaderboard() {
       thead.appendChild(headerRow);
       breakdownTable.appendChild(thead);
 
+      // Same 3-column shape as the collapsed team rows (weight, rank+name,
+      // range bar) so the expanded view reads as a zoomed-in version of the
+      // same table rather than a different one -- reuses createRangeBar()
+      // directly since a wrestler entry has the same expected/p5/p95 shape
+      // a team does.
       const tbody2 = document.createElement("tbody");
       (team.lineup_detail || []).forEach((w) => {
         const row = document.createElement("tr");
         const weightTd = document.createElement("td");
-        weightTd.className = "wd-cell";
+        weightTd.className = "wd-cell wd-weight";
         weightTd.textContent = w.weight;
         row.appendChild(weightTd);
 
         const nameTd = document.createElement("td");
         nameTd.className = "wd-cell wd-name";
         if (w.rank !== null) {
-          nameTd.textContent = w.name;
+          nameTd.innerHTML = `<span class="wd-rank">#${w.rank}</span> ${w.name}`;
         } else {
           nameTd.innerHTML = '<span class="unranked-note">Unranked</span>';
         }
         row.appendChild(nameTd);
 
-        const rankTd2 = document.createElement("td");
-        rankTd2.className = "wd-cell";
-        rankTd2.textContent = w.rank !== null ? `#${w.rank}` : "—";
-        row.appendChild(rankTd2);
-
-        const expTd = document.createElement("td");
-        expTd.className = "wd-cell";
-        expTd.textContent = Math.round(w.expected);
-        row.appendChild(expTd);
-
-        const minTd = document.createElement("td");
-        minTd.className = "wd-cell";
-        minTd.textContent = Math.round(w.p5);
-        row.appendChild(minTd);
-
-        const maxTd = document.createElement("td");
-        maxTd.className = "wd-cell";
-        maxTd.textContent = Math.round(w.p95);
-        row.appendChild(maxTd);
+        const rangeTd = document.createElement("td");
+        rangeTd.className = "wd-cell wd-range";
+        rangeTd.appendChild(createRangeBar(w, INDIVIDUAL_SCALE_MAX));
+        row.appendChild(rangeTd);
 
         tbody2.appendChild(row);
       });

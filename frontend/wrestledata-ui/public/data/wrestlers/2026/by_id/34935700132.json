@@ -1,1 +1,108 @@
-{"wrestler_id": "34935700132", "name": "Gavin Linsman", "team": "NC State", "team_slug": "nc_state", "team_rank": 11, "weight_class": 149, "year": 2026, "current_rank": 93, "record": {"overall": "2-1", "vs_ranked": "2-1", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 2.92, "pa7": 1.7, "pd7": 1.23, "si_plus": 90.9, "df_plus": 107.2, "apr_plus": 109.8, "pin_rate": 0.5, "bonus_rate": 0.5, "majors": 0, "techs": 0, "pins": 1, "mat_value": {"mv_avg": -0.9868, "matches": 3, "rank_weight": 117, "rank_overall": 936, "version": "mbt_50_50", "mv_avg_v1": 0.728, "rank_weight_v1": 67, "rank_overall_v1": 568}}, "opponent_breakdown": {"ranked_wins": 2, "ranked_losses": 1, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34933360132", "opponent_rank": 150, "opponent_name": "Chris Bacchioni", "method": "Fall 6:58"}, "worst_loss": {"opponent_id": "34957594132", "opponent_rank": 283, "opponent_name": "Michael Pizzuto", "method": "SV-3 4-1"}}, "match_list": [{"date": "2025-12-07", "opponent_id": "34957594132", "opponent_career_id": null, "opponent_name": "Michael Pizzuto", "opponent_team": "Maryland", "opponent_team_rank": 28, "opponent_weight": 149, "opponent_rank": 283, "weight_class": "149", "result": "L", "method": "SV-3", "score": "4-1", "duration": "8:15", "event": "A Better Way Athletics Patriot Open", "mv_impact": -0.2867, "mv_impact_v1": -3.51}, {"date": "2025-12-07", "opponent_id": "34977456132", "opponent_career_id": null, "opponent_name": "Myrin Nixon", "opponent_team": "Morgan State", "opponent_team_rank": 59, "opponent_weight": 149, "opponent_rank": 307, "weight_class": "149", "result": "W", "method": "DEC", "score": "5-0", "duration": "7:00", "event": "A Better Way Athletics Patriot Open", "mv_impact": -0.2867, "mv_impact_v1": 1.57}, {"date": "2025-12-07", "opponent_id": "34933360132", "opponent_career_id": null, "opponent_name": "Chris Bacchioni", "opponent_team": "Virginia Tech", "opponent_team_rank": 9, "opponent_weight": 149, "opponent_rank": 150, "weight_class": "149", "result": "W", "method": "FALL", "score": null, "duration": "6:58", "event": "A Better Way Athletics Patriot Open", "mv_impact": -0.2867, "mv_impact_v1": 4.12}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34935700132",
+  "name": "Gavin Linsman",
+  "team": "NC State",
+  "team_slug": "nc_state",
+  "team_rank": 9,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": 93,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.92,
+    "pa7": 1.7,
+    "pd7": 1.23,
+    "si_plus": 90.9,
+    "df_plus": 107.3,
+    "apr_plus": 109.8,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 0.73,
+      "matches": 3,
+      "rank_weight": 67,
+      "rank_overall": 567,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34933360132",
+      "opponent_rank": 150,
+      "opponent_name": "Chris Bacchioni",
+      "method": "Fall 6:58"
+    },
+    "worst_loss": {
+      "opponent_id": "34957594132",
+      "opponent_rank": 283,
+      "opponent_name": "Michael Pizzuto",
+      "method": "SV-3 4-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34957594132",
+      "opponent_career_id": null,
+      "opponent_name": "Michael Pizzuto",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 32,
+      "opponent_weight": 149,
+      "opponent_rank": 283,
+      "weight_class": "149",
+      "result": "L",
+      "method": "SV-3",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -3.51
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34977456132",
+      "opponent_career_id": null,
+      "opponent_name": "Myrin Nixon",
+      "opponent_team": "Morgan State",
+      "opponent_team_rank": 75,
+      "opponent_weight": 149,
+      "opponent_rank": 307,
+      "weight_class": "149",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-0",
+      "duration": "7:00",
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": 1.57
+    },
+    {
+      "date": "2025-12-07",
+      "opponent_id": "34933360132",
+      "opponent_career_id": null,
+      "opponent_name": "Chris Bacchioni",
+      "opponent_team": "Virginia Tech",
+      "opponent_team_rank": 8,
+      "opponent_weight": 149,
+      "opponent_rank": 150,
+      "weight_class": "149",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:58",
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": 4.12
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

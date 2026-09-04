@@ -1,1 +1,142 @@
-{"wrestler_id": "34934844132", "name": "Jacob Zearfoss", "team": "Rider", "team_slug": "rider", "team_rank": 33, "weight_class": 157, "year": 2026, "current_rank": 204, "record": {"overall": "1-4", "vs_ranked": "1-4", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 2.37, "pa7": 10.32, "pd7": -7.95, "si_plus": 85.0, "df_plus": 92.5, "apr_plus": 98.9, "pin_rate": 0.0, "bonus_rate": 0.0, "majors": 0, "techs": 0, "pins": 0, "mat_value": {"mv_avg": -3.4543, "matches": 7, "rank_weight": 218, "rank_overall": 1951, "version": "mbt_50_50", "mv_avg_v1": -3.855, "rank_weight_v1": 212, "rank_overall_v1": 1945}}, "opponent_breakdown": {"ranked_wins": 1, "ranked_losses": 4, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34945073132", "opponent_rank": 205, "opponent_name": "Donovan Distefano", "method": "Dec 4-2"}, "worst_loss": {"opponent_id": "34957140132", "opponent_rank": 173, "opponent_name": "Gavin Cohen", "method": "Inj. 3:37"}}, "match_list": [{"date": "2025-12-14", "opponent_id": "34963129132", "opponent_career_id": null, "opponent_name": "Layton Schneider", "opponent_team": "Oklahoma", "opponent_team_rank": 30, "opponent_weight": 157, "opponent_rank": 145, "weight_class": "157", "result": "L", "method": "TF", "score": "19-4", "duration": "6:15", "event": "vs. Rider", "mv_impact": -1.0864, "mv_impact_v1": -6.21}, {"date": "2025-11-15", "opponent_id": "34957140132", "opponent_career_id": null, "opponent_name": "Gavin Cohen", "opponent_team": "American", "opponent_team_rank": 22, "opponent_weight": 165, "opponent_rank": 173, "weight_class": "157", "result": "L", "method": "INJ", "score": null, "duration": "3:37", "event": "Shorty Hitchcock Memorial Open", "mv_impact": -1.8769, "mv_impact_v1": -6.91}, {"date": "2025-11-02", "opponent_id": "34948505132", "opponent_career_id": null, "opponent_name": "Ethan Mojena", "opponent_team": "Brown", "opponent_team_rank": 50, "opponent_weight": 157, "opponent_rank": 97, "weight_class": "157", "result": "L", "method": "DEC", "score": "6-0", "duration": "7:00", "event": "Princeton Open", "mv_impact": -0.1174, "mv_impact_v1": -3.23}, {"date": "2025-11-02", "opponent_id": "34952684132", "opponent_career_id": null, "opponent_name": "Griffin Gonzalez", "opponent_team": "Lehigh", "opponent_team_rank": 12, "opponent_weight": 157, "opponent_rank": 128, "weight_class": "157", "result": "L", "method": "MD", "score": "12-1", "duration": "7:00", "event": "Princeton Open", "mv_impact": -0.1174, "mv_impact_v1": -4.81}, {"date": "2025-11-02", "opponent_id": "34945073132", "opponent_career_id": null, "opponent_name": "Donovan Distefano", "opponent_team": "Rutgers", "opponent_team_rank": 31, "opponent_weight": 165, "opponent_rank": 205, "weight_class": "157", "result": "W", "method": "DEC", "score": "4-2", "duration": "7:00", "event": "Princeton Open", "mv_impact": -0.1174, "mv_impact_v1": 0.55}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34934844132",
+  "name": "Jacob Zearfoss",
+  "team": "Rider",
+  "team_slug": "rider",
+  "team_rank": 35,
+  "weight_class": 157,
+  "year": 2026,
+  "current_rank": 204,
+  "record": {
+    "overall": "1-4",
+    "vs_ranked": "1-4",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.37,
+    "pa7": 10.32,
+    "pd7": -7.95,
+    "si_plus": 85.0,
+    "df_plus": 92.4,
+    "apr_plus": 98.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.855,
+      "matches": 7,
+      "rank_weight": 212,
+      "rank_overall": 1946,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34945073132",
+      "opponent_rank": 205,
+      "opponent_name": "Donovan Distefano",
+      "method": "Dec 4-2"
+    },
+    "worst_loss": {
+      "opponent_id": "34957140132",
+      "opponent_rank": 173,
+      "opponent_name": "Gavin Cohen",
+      "method": "Inj. 3:37"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-14",
+      "opponent_id": "34963129132",
+      "opponent_career_id": null,
+      "opponent_name": "Layton Schneider",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 28,
+      "opponent_weight": 157,
+      "opponent_rank": 145,
+      "weight_class": "157",
+      "result": "L",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "6:15",
+      "event": "vs. Rider",
+      "mv_impact": -6.21
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "34957140132",
+      "opponent_career_id": null,
+      "opponent_name": "Gavin Cohen",
+      "opponent_team": "American",
+      "opponent_team_rank": 31,
+      "opponent_weight": 165,
+      "opponent_rank": 173,
+      "weight_class": "157",
+      "result": "L",
+      "method": "INJ",
+      "score": null,
+      "duration": "3:37",
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": -6.91
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34948505132",
+      "opponent_career_id": null,
+      "opponent_name": "Ethan Mojena",
+      "opponent_team": "Brown",
+      "opponent_team_rank": 52,
+      "opponent_weight": 157,
+      "opponent_rank": 97,
+      "weight_class": "157",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-0",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": -3.23
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34952684132",
+      "opponent_career_id": null,
+      "opponent_name": "Griffin Gonzalez",
+      "opponent_team": "Lehigh",
+      "opponent_team_rank": 13,
+      "opponent_weight": 157,
+      "opponent_rank": 128,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MD",
+      "score": "12-1",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": -4.81
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34945073132",
+      "opponent_career_id": null,
+      "opponent_name": "Donovan Distefano",
+      "opponent_team": "Rutgers",
+      "opponent_team_rank": 24,
+      "opponent_weight": 165,
+      "opponent_rank": 205,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "Princeton Open",
+      "mv_impact": 0.55
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

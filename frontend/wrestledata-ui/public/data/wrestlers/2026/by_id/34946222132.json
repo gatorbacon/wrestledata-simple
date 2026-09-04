@@ -1,1 +1,69 @@
-{"wrestler_id": "34946222132", "name": "John Chesser", "team": "The Citadel", "team_slug": "the_citadel", "team_rank": 61, "weight_class": 285, "year": 2026, "current_rank": 82, "record": {"overall": "1-0", "vs_ranked": "1-0", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 22.4, "pa7": 0.0, "pd7": 22.4, "si_plus": 130.3, "df_plus": 109.7, "apr_plus": 94.4, "pin_rate": 0.0, "bonus_rate": 1.0, "majors": 0, "techs": 1, "pins": 0, "mat_value": {"mv_avg": 0.2324, "matches": 2, "rank_weight": 49, "rank_overall": 506, "version": "mbt_50_50", "mv_avg_v1": 0.635, "rank_weight_v1": 55, "rank_overall_v1": 605}}, "opponent_breakdown": {"ranked_wins": 1, "ranked_losses": 0, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34938568132", "opponent_rank": 184, "opponent_name": "Jamil Morrow", "method": "TF 16-0 5:00"}, "worst_loss": null}, "match_list": [{"date": "2025-11-08", "opponent_id": "34938568132", "opponent_career_id": null, "opponent_name": "Jamil Morrow", "opponent_team": "George Mason", "opponent_team_rank": 34, "opponent_weight": 197, "opponent_rank": 184, "weight_class": "285", "result": "W", "method": "TF", "score": "16-0", "duration": "5:00", "event": "vs. The Citadel", "mv_impact": 1.2039, "mv_impact_v1": 0.63}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34946222132",
+  "name": "John Chesser",
+  "team": "The Citadel",
+  "team_slug": "the_citadel",
+  "team_rank": 78,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": 82,
+  "record": {
+    "overall": "1-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 22.4,
+    "pa7": 0.0,
+    "pd7": 22.4,
+    "si_plus": 130.3,
+    "df_plus": 109.7,
+    "apr_plus": 94.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.634,
+      "matches": 2,
+      "rank_weight": 55,
+      "rank_overall": 606,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34938568132",
+      "opponent_rank": 184,
+      "opponent_name": "Jamil Morrow",
+      "method": "TF 16-0 5:00"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-08",
+      "opponent_id": "34938568132",
+      "opponent_career_id": null,
+      "opponent_name": "Jamil Morrow",
+      "opponent_team": "George Mason",
+      "opponent_team_rank": 44,
+      "opponent_weight": 197,
+      "opponent_rank": 184,
+      "weight_class": "285",
+      "result": "W",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "5:00",
+      "event": "vs. The Citadel",
+      "mv_impact": 0.63
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

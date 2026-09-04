@@ -1,1 +1,108 @@
-{"wrestler_id": "34944406132", "name": "Brady Conlin", "team": "Campbell", "team_slug": "campbell", "team_rank": 66, "weight_class": 184, "year": 2026, "current_rank": 137, "record": {"overall": "1-2", "vs_ranked": "1-2", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 3.5, "pa7": 5.0, "pd7": -1.5, "si_plus": 79.2, "df_plus": 103.2, "apr_plus": 93.4, "pin_rate": 0.0, "bonus_rate": 0.0, "majors": 0, "techs": 0, "pins": 0, "mat_value": {"mv_avg": -3.6047, "matches": 4, "rank_weight": 183, "rank_overall": 1991, "version": "mbt_50_50", "mv_avg_v1": -5.592, "rank_weight_v1": 200, "rank_overall_v1": 2194}}, "opponent_breakdown": {"ranked_wins": 1, "ranked_losses": 2, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34935701132", "opponent_rank": 197, "opponent_name": "Jesse Mullis", "method": "Dec 6-4"}, "worst_loss": {"opponent_id": "34954565132", "opponent_rank": 178, "opponent_name": "Kyser Kostoff", "method": "Dec 6-1"}}, "match_list": [{"date": "2025-11-02", "opponent_id": "34934465132", "opponent_career_id": null, "opponent_name": "Leo Varga", "opponent_team": "Franklin & Marshall", "opponent_team_rank": 44, "opponent_weight": 197, "opponent_rank": 140, "weight_class": "184", "result": "L", "method": "FALL", "score": null, "duration": "5:47", "event": "Southeast Open", "mv_impact": -0.1638, "mv_impact_v1": -7.62}, {"date": "2025-11-02", "opponent_id": "34954565132", "opponent_career_id": null, "opponent_name": "Kyser Kostoff", "opponent_team": "Presbyterian", "opponent_team_rank": 76, "opponent_weight": 184, "opponent_rank": 178, "weight_class": "184", "result": "L", "method": "DEC", "score": "6-1", "duration": "7:00", "event": "Southeast Open", "mv_impact": -0.1638, "mv_impact_v1": -6.06}, {"date": "2025-11-02", "opponent_id": "34935701132", "opponent_career_id": null, "opponent_name": "Jesse Mullis", "opponent_team": "NC State", "opponent_team_rank": 11, "opponent_weight": 184, "opponent_rank": 197, "weight_class": "184", "result": "W", "method": "DEC", "score": "6-4", "duration": "7:00", "event": "Southeast Open", "mv_impact": -0.1638, "mv_impact_v1": -1.06}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34944406132",
+  "name": "Brady Conlin",
+  "team": "Campbell",
+  "team_slug": "campbell",
+  "team_rank": 64,
+  "weight_class": 184,
+  "year": 2026,
+  "current_rank": 137,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.5,
+    "pa7": 5.0,
+    "pd7": -1.5,
+    "si_plus": 79.3,
+    "df_plus": 103.2,
+    "apr_plus": 93.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.593,
+      "matches": 4,
+      "rank_weight": 200,
+      "rank_overall": 2194,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34935701132",
+      "opponent_rank": 197,
+      "opponent_name": "Jesse Mullis",
+      "method": "Dec 6-4"
+    },
+    "worst_loss": {
+      "opponent_id": "34954565132",
+      "opponent_rank": 178,
+      "opponent_name": "Kyser Kostoff",
+      "method": "Dec 6-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34934465132",
+      "opponent_career_id": null,
+      "opponent_name": "Leo Varga",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 42,
+      "opponent_weight": 197,
+      "opponent_rank": 140,
+      "weight_class": "184",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:47",
+      "event": "Southeast Open",
+      "mv_impact": -7.63
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34954565132",
+      "opponent_career_id": null,
+      "opponent_name": "Kyser Kostoff",
+      "opponent_team": "Presbyterian",
+      "opponent_team_rank": 76,
+      "opponent_weight": 184,
+      "opponent_rank": 178,
+      "weight_class": "184",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-1",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -6.06
+    },
+    {
+      "date": "2025-11-02",
+      "opponent_id": "34935701132",
+      "opponent_career_id": null,
+      "opponent_name": "Jesse Mullis",
+      "opponent_team": "NC State",
+      "opponent_team_rank": 9,
+      "opponent_weight": 184,
+      "opponent_rank": 197,
+      "weight_class": "184",
+      "result": "W",
+      "method": "DEC",
+      "score": "6-4",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -1.06
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

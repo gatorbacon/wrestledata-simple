@@ -44,6 +44,62 @@ K_FACTOR_NOVICE = 40  # Matches 1-5
 K_FACTOR_INTERMEDIATE = 24  # Matches 6-15
 K_FACTOR_EXPERIENCED = 16  # Matches 16+
 
+# NCAA only: seed a Flo-ranked wrestler's starting Elo from their Flo rank
+# instead of the flat INITIAL_ELO everyone else gets. Without this, a
+# Flo-ranked wrestler who simply hasn't wrestled much yet (or dropped an
+# early match) can carry a computed Elo well below their true caliber --
+# and since that live Elo is exactly what feeds the expected-score formula
+# for anyone who beats them, the win gets under-credited. Seeding from rank
+# fixes this at the source: their trajectory starts from an honest point
+# instead of the same baseline as an unranked walk-on, and normal Elo
+# updates take over from there. Tunable like the K-factors above.
+NCAA_FLO_SEED_TOP = 2000     # Elo seed for Flo rank #1
+NCAA_FLO_SEED_BOTTOM = 1550  # Elo seed for Flo's rank == the manual cutoff (33)
+
+
+def flo_seed_elo(rank: int, cutoff: int) -> float:
+    """Linear interpolation from NCAA_FLO_SEED_TOP (rank 1) down to
+    NCAA_FLO_SEED_BOTTOM (rank == cutoff). Anchored to the fixed cutoff, not
+    however many wrestlers Flo actually ranked that week at that weight, so
+    a wrestler ranked e.g. 25th reads the same regardless of whether Flo
+    published 25 or 33 names that week."""
+    rank = max(1, min(rank, cutoff))
+    if cutoff <= 1:
+        return NCAA_FLO_SEED_TOP
+    t = (rank - 1) / (cutoff - 1)
+    return NCAA_FLO_SEED_TOP - t * (NCAA_FLO_SEED_TOP - NCAA_FLO_SEED_BOTTOM)
+
+
+def load_flo_rank_map(season: int, league: str) -> Dict[str, int]:
+    """wrestler_id -> Flo rank, for every wrestler apply_flo_rankings.py
+    tagged flo_ranked=True. NCAA only -- HS has no FloWrestling data, so
+    this returns empty and HS's Elo seeding is unaffected."""
+    rank_map: Dict[str, int] = {}
+    if league != 'ncaa':
+        return rank_map
+
+    rankings_dir = Path("mt/rankings_data/ncaa_men") / str(season)
+    if not rankings_dir.exists():
+        return rank_map
+
+    for rankings_file in sorted(rankings_dir.glob("rankings_*.json")):
+        if "starters" in rankings_file.name:
+            continue
+        try:
+            with open(rankings_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            for entry in data.get("rankings", []):
+                if entry.get("flo_ranked"):
+                    wrestler_id = entry.get("wrestler_id")
+                    rank = entry.get("rank")
+                    if wrestler_id and rank:
+                        rank_map[str(wrestler_id)] = rank
+        except Exception as e:
+            print(f"Warning: Error loading {rankings_file}: {e}")
+            continue
+
+    return rank_map
+
 
 def get_k_factor(match_count: int) -> int:
     """Get K-factor based on wrestler's match count at the time of the match."""
@@ -288,7 +344,23 @@ def calculate_elo_ratings(season: int, state: str = 'ky', gender: str = 'boys', 
     all_matches = load_all_matches(season, state, gender, league)
     top_60_ids = load_matrix_top_60(season, state, gender, league)
     wrestler_info = load_wrestler_info(season, state, gender, league)
-    
+
+    # NCAA only: seed Flo-ranked wrestlers' starting Elo from their Flo rank
+    # instead of the flat INITIAL_ELO everyone gets (see flo_seed_elo above).
+    # HS keeps today's behavior unchanged -- flo_rank_map is empty for league='hs'.
+    flo_rank_map = load_flo_rank_map(season, league)
+    flo_cutoff = get_manual_rank_cutoff(league, gender)
+
+    def initial_elo_for(wrestler_id: str) -> float:
+        flo_rank = flo_rank_map.get(wrestler_id)
+        if flo_rank is not None:
+            return flo_seed_elo(flo_rank, flo_cutoff)
+        return INITIAL_ELO
+
+    if flo_rank_map:
+        print(f"Seeding {len(flo_rank_map)} Flo-ranked wrestlers' starting Elo from rank "
+              f"({NCAA_FLO_SEED_TOP} at #1 down to {NCAA_FLO_SEED_BOTTOM} at #{flo_cutoff})")
+
     # Initialize wrestler tracking
     wrestlers: Dict[str, Dict] = defaultdict(lambda: {
         "elo": INITIAL_ELO,
@@ -297,12 +369,12 @@ def calculate_elo_ratings(season: int, state: str = 'ky', gender: str = 'boys', 
         "losses": 0,
         "matches": []  # Track matches for chronological processing
     })
-    
+
     # Add wrestler info
     for wrestler_id, info in wrestler_info.items():
         if wrestler_id not in wrestlers:
             wrestlers[wrestler_id] = {
-                "elo": INITIAL_ELO,
+                "elo": initial_elo_for(wrestler_id),
                 "match_count": 0,
                 "wins": 0,
                 "losses": 0,
@@ -332,7 +404,7 @@ def calculate_elo_ratings(season: int, state: str = 'ky', gender: str = 'boys', 
         # Initialize opponent if needed
         if opponent_id and opponent_id not in wrestlers:
             wrestlers[opponent_id] = {
-                "elo": INITIAL_ELO,
+                "elo": initial_elo_for(opponent_id),
                 "match_count": 0,
                 "wins": 0,
                 "losses": 0,

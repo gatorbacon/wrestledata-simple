@@ -1,1 +1,69 @@
-{"wrestler_id": "34944180132", "name": "Trason Oehme", "team": "Air Force", "team_slug": "air_force", "team_rank": 48, "weight_class": 149, "year": 2026, "current_rank": 224, "record": {"overall": "1-0", "vs_ranked": "1-0", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 3.39, "pa7": 0.85, "pd7": 2.55, "si_plus": 93.3, "df_plus": 113.5, "apr_plus": 92.9, "pin_rate": 0.0, "bonus_rate": 0.0, "majors": 0, "techs": 0, "pins": 0, "mat_value": {"mv_avg": 0.1156, "matches": 1, "rank_weight": 63, "rank_overall": 538, "version": "mbt_50_50", "mv_avg_v1": 2.354, "rank_weight_v1": 22, "rank_overall_v1": 188}}, "opponent_breakdown": {"ranked_wins": 1, "ranked_losses": 0, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34957802132", "opponent_rank": 56, "opponent_name": "Emilio Trujillo-Deen", "method": "SV-1 4-1"}, "worst_loss": null}, "match_list": [{"date": "2025-11-22", "opponent_id": "34957802132", "opponent_career_id": null, "opponent_name": "Emilio Trujillo-Deen", "opponent_team": "Northern Colorado", "opponent_team_rank": 60, "opponent_weight": 149, "opponent_rank": 56, "weight_class": "149", "result": "W", "method": "SV-1", "score": "4-1", "duration": "8:15", "event": "Younes Hospitality Open", "mv_impact": 0.1207, "mv_impact_v1": 2.35}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34944180132",
+  "name": "Trason Oehme",
+  "team": "Air Force",
+  "team_slug": "air_force",
+  "team_rank": 40,
+  "weight_class": 149,
+  "year": 2026,
+  "current_rank": 224,
+  "record": {
+    "overall": "1-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.39,
+    "pa7": 0.85,
+    "pd7": 2.55,
+    "si_plus": 93.3,
+    "df_plus": 113.5,
+    "apr_plus": 92.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 2.328,
+      "matches": 1,
+      "rank_weight": 24,
+      "rank_overall": 194,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34957802132",
+      "opponent_rank": 57,
+      "opponent_name": "Emilio Trujillo-Deen",
+      "method": "SV-1 4-1"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2025-11-22",
+      "opponent_id": "34957802132",
+      "opponent_career_id": null,
+      "opponent_name": "Emilio Trujillo-Deen",
+      "opponent_team": "Northern Colorado",
+      "opponent_team_rank": 56,
+      "opponent_weight": 149,
+      "opponent_rank": 57,
+      "weight_class": "149",
+      "result": "W",
+      "method": "SV-1",
+      "score": "4-1",
+      "duration": "8:15",
+      "event": "Younes Hospitality Open",
+      "mv_impact": 2.33
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

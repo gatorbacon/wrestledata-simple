@@ -4,20 +4,22 @@
   "rankings": [
     {
       "rank": 1,
-      "wrestler_id": "34939015132",
-      "name": "Shayne Van Ness",
-      "team": "Penn State",
-      "record": "25-1",
-      "is_starter": true,
-      "original_rank": 1
-    },
-    {
-      "rank": 2,
       "wrestler_id": "34943458132",
       "name": "Aden Valencia",
       "team": "Stanford",
       "record": "21-7",
       "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 1
+    },
+    {
+      "rank": 2,
+      "wrestler_id": "34939015132",
+      "name": "Shayne Van Ness",
+      "team": "Penn State",
+      "record": "25-1",
+      "is_starter": true,
+      "flo_ranked": true,
       "original_rank": 2
     },
     {
@@ -27,6 +29,7 @@
       "team": "Michigan",
       "record": "21-7",
       "is_starter": true,
+      "flo_ranked": true,
       "original_rank": 3
     },
     {
@@ -36,69 +39,77 @@
       "team": "Nebraska",
       "record": "19-10",
       "is_starter": true,
+      "flo_ranked": true,
       "original_rank": 4
     },
     {
       "rank": 5,
-      "wrestler_id": "34964522132",
-      "name": "Jaxon Joy",
-      "team": "Cornell",
-      "record": "26-3",
-      "is_starter": true,
-      "original_rank": 5
-    },
-    {
-      "rank": 6,
       "wrestler_id": "34935274132",
       "name": "Collin Gaj",
       "team": "Virginia Tech",
       "record": "26-9",
       "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 5
+    },
+    {
+      "rank": 6,
+      "wrestler_id": "34964522132",
+      "name": "Jaxon Joy",
+      "team": "Cornell",
+      "record": "26-3",
+      "is_starter": true,
+      "flo_ranked": true,
       "original_rank": 6
     },
     {
       "rank": 7,
-      "wrestler_id": "34962160132",
-      "name": "Ryder Block",
-      "team": "Iowa",
-      "record": "18-11",
-      "is_starter": true,
-      "original_rank": 7
-    },
-    {
-      "rank": 8,
-      "wrestler_id": "37205546132",
-      "name": "Carter Young",
-      "team": "Maryland",
-      "record": "17-7",
-      "is_starter": true,
-      "original_rank": 8
-    },
-    {
-      "rank": 9,
       "wrestler_id": "34935928132",
       "name": "Cross Wasilewski",
       "team": "Penn",
       "record": "28-5",
       "is_starter": true,
-      "original_rank": 9
+      "flo_ranked": true,
+      "original_rank": 7
     },
     {
-      "rank": 10,
+      "rank": 8,
+      "wrestler_id": "34962160132",
+      "name": "Ryder Block",
+      "team": "Iowa",
+      "record": "18-11",
+      "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 8
+    },
+    {
+      "rank": 9,
       "wrestler_id": "34936418132",
       "name": "Casey Swiderski",
       "team": "Oklahoma State",
       "record": "17-8",
       "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 9
+    },
+    {
+      "rank": 10,
+      "wrestler_id": "37205546132",
+      "name": "Carter Young",
+      "team": "Maryland",
+      "record": "17-7",
+      "is_starter": true,
+      "flo_ranked": true,
       "original_rank": 10
     },
     {
       "rank": 11,
-      "wrestler_id": "34943993132",
-      "name": "Seth Mendoza",
-      "team": "Missouri",
-      "record": "15-6",
+      "wrestler_id": "34935694132",
+      "name": "Koy Buesgens",
+      "team": "NC State",
+      "record": "22-5",
       "is_starter": true,
+      "flo_ranked": true,
       "original_rank": 11
     },
     {
@@ -108,178 +119,198 @@
       "team": "Iowa State",
       "record": "20-9",
       "is_starter": true,
+      "flo_ranked": true,
       "original_rank": 12
     },
     {
       "rank": 13,
-      "wrestler_id": "34941806132",
-      "name": "Ethan Stiles",
-      "team": "Ohio State",
-      "record": "15-7",
-      "is_starter": true,
-      "original_rank": 13
-    },
-    {
-      "rank": 14,
       "wrestler_id": "34933449132",
       "name": "Gabe Willochell",
       "team": "Wyoming",
       "record": "21-10",
       "is_starter": true,
-      "original_rank": 14
+      "flo_ranked": true,
+      "original_rank": 13
     },
     {
-      "rank": 15,
-      "wrestler_id": "34934609132",
-      "name": "Max Petersen",
-      "team": "North Dakota State",
-      "record": "17-10",
-      "is_starter": true,
-      "original_rank": 16
-    },
-    {
-      "rank": 16,
-      "wrestler_id": "34941549132",
-      "name": "Caleb Tyus",
-      "team": "SIU Edwardsville",
-      "record": "21-3",
-      "is_starter": true,
-      "original_rank": 17
-    },
-    {
-      "rank": 17,
-      "wrestler_id": "34935694132",
-      "name": "Koy Buesgens",
-      "team": "NC State",
-      "record": "22-5",
-      "is_starter": true,
-      "original_rank": 18
-    },
-    {
-      "rank": 18,
+      "rank": 14,
       "wrestler_id": "35025189132",
       "name": "Caleb Rathjen",
       "team": "Northern Iowa",
       "record": "11-8",
       "is_starter": true,
-      "original_rank": 19
+      "flo_ranked": true,
+      "original_rank": 14
     },
     {
-      "rank": 19,
-      "wrestler_id": "34938481132",
-      "name": "Kaden Cassidy",
-      "team": "George Mason",
-      "record": "16-5",
+      "rank": 15,
+      "wrestler_id": "34941549132",
+      "name": "Caleb Tyus",
+      "team": "SIU Edwardsville",
+      "record": "21-3",
       "is_starter": true,
-      "original_rank": 20
+      "flo_ranked": true,
+      "original_rank": 15
     },
     {
-      "rank": 20,
-      "wrestler_id": "34943301132",
-      "name": "David Evans",
-      "team": "Utah Valley",
-      "record": "21-8",
+      "rank": 16,
+      "wrestler_id": "34941806132",
+      "name": "Ethan Stiles",
+      "team": "Ohio State",
+      "record": "15-7",
       "is_starter": true,
-      "original_rank": 21
+      "flo_ranked": true,
+      "original_rank": 16
     },
     {
-      "rank": 21,
-      "wrestler_id": "34977466132",
-      "name": "Eugene Harney",
-      "team": "Morgan State",
-      "record": "29-6",
-      "is_starter": true,
-      "original_rank": 22
-    },
-    {
-      "rank": 22,
-      "wrestler_id": "34949755132",
-      "name": "Brock Herman",
-      "team": "Little Rock",
-      "record": "14-5",
-      "is_starter": true,
-      "original_rank": 23
-    },
-    {
-      "rank": 23,
-      "wrestler_id": "34936095132",
-      "name": "Andre Gonzales",
-      "team": "Cal Poly",
-      "record": "16-13",
-      "is_starter": true,
-      "original_rank": 25
-    },
-    {
-      "rank": 24,
-      "wrestler_id": "34934754132",
-      "name": "Noah Tolentino",
-      "team": "Oregon State",
-      "record": "16-10",
-      "is_starter": true,
-      "original_rank": 26
-    },
-    {
-      "rank": 25,
-      "wrestler_id": "34948504132",
-      "name": "Austin McBurney",
-      "team": "Brown",
-      "record": "23-14",
-      "is_starter": true,
-      "original_rank": 27
-    },
-    {
-      "rank": 26,
+      "rank": 17,
       "wrestler_id": "34944675132",
       "name": "Joseph Zargo",
       "team": "Wisconsin",
       "record": "18-8",
       "is_starter": true,
-      "original_rank": 28
+      "flo_ranked": true,
+      "original_rank": 17
     },
     {
-      "rank": 27,
-      "wrestler_id": "34952102132",
-      "name": "Michael Gioffre",
-      "team": "Illinois",
-      "record": "18-12",
+      "rank": 18,
+      "wrestler_id": "34934609132",
+      "name": "Max Petersen",
+      "team": "North Dakota State",
+      "record": "17-10",
       "is_starter": true,
-      "original_rank": 29
+      "flo_ranked": true,
+      "original_rank": 18
     },
     {
-      "rank": 28,
-      "wrestler_id": "34935964132",
-      "name": "Lucas Kapusta",
-      "team": "Lock Haven",
-      "record": "25-6",
+      "rank": 19,
+      "wrestler_id": "34943301132",
+      "name": "David Evans",
+      "team": "Utah Valley",
+      "record": "21-8",
       "is_starter": true,
-      "original_rank": 30
+      "flo_ranked": true,
+      "original_rank": 19
     },
     {
-      "rank": 29,
-      "wrestler_id": "34935917132",
-      "name": "Anderson Heap",
-      "team": "Davidson",
-      "record": "20-11",
+      "rank": 20,
+      "wrestler_id": "34949755132",
+      "name": "Brock Herman",
+      "team": "Little Rock",
+      "record": "14-5",
       "is_starter": true,
-      "original_rank": 31
+      "flo_ranked": true,
+      "original_rank": 20
     },
     {
-      "rank": 30,
-      "wrestler_id": "34945070132",
-      "name": "Andrew Clark",
-      "team": "Rutgers",
-      "record": "16-12",
-      "is_starter": true,
-      "original_rank": 32
-    },
-    {
-      "rank": 31,
+      "rank": 21,
       "wrestler_id": "34934137132",
       "name": "Kade Brown",
       "team": "Pittsburgh",
       "record": "14-10",
       "is_starter": true,
-      "original_rank": 33
+      "flo_ranked": true,
+      "original_rank": 21
+    },
+    {
+      "rank": 22,
+      "wrestler_id": "34952102132",
+      "name": "Michael Gioffre",
+      "team": "Illinois",
+      "record": "18-12",
+      "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 22
+    },
+    {
+      "rank": 23,
+      "wrestler_id": "34938481132",
+      "name": "Kaden Cassidy",
+      "team": "George Mason",
+      "record": "16-5",
+      "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 23
+    },
+    {
+      "rank": 24,
+      "wrestler_id": "34935964132",
+      "name": "Lucas Kapusta",
+      "team": "Lock Haven",
+      "record": "25-6",
+      "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 24
+    },
+    {
+      "rank": 25,
+      "wrestler_id": "34935917132",
+      "name": "Anderson Heap",
+      "team": "Davidson",
+      "record": "20-11",
+      "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 26
+    },
+    {
+      "rank": 26,
+      "wrestler_id": "34977466132",
+      "name": "Eugene Harney",
+      "team": "Morgan State",
+      "record": "29-6",
+      "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 27
+    },
+    {
+      "rank": 27,
+      "wrestler_id": "34955778132",
+      "name": "Drew Roberts",
+      "team": "Minnesota",
+      "record": "11-9",
+      "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 28
+    },
+    {
+      "rank": 28,
+      "wrestler_id": "34945070132",
+      "name": "Andrew Clark",
+      "team": "Rutgers",
+      "record": "16-12",
+      "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 29
+    },
+    {
+      "rank": 29,
+      "wrestler_id": "34936095132",
+      "name": "Andre Gonzales",
+      "team": "Cal Poly",
+      "record": "16-13",
+      "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 30
+    },
+    {
+      "rank": 30,
+      "wrestler_id": "34934754132",
+      "name": "Noah Tolentino",
+      "team": "Oregon State",
+      "record": "16-10",
+      "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 31
+    },
+    {
+      "rank": 31,
+      "wrestler_id": "34948504132",
+      "name": "Austin McBurney",
+      "team": "Brown",
+      "record": "23-14",
+      "is_starter": true,
+      "flo_ranked": true,
+      "original_rank": 32
     },
     {
       "rank": 32,
@@ -288,186 +319,207 @@
       "team": "Princeton",
       "record": "12-11",
       "is_starter": true,
-      "original_rank": 34
+      "flo_ranked": true,
+      "original_rank": 33
     },
     {
       "rank": 33,
+      "wrestler_id": "34943993132",
+      "name": "Seth Mendoza",
+      "team": "Missouri",
+      "record": "15-6",
+      "is_starter": true,
+      "flo_ranked": false,
+      "original_rank": 34
+    },
+    {
+      "rank": 34,
       "wrestler_id": "34943857132",
       "name": "Nate Higley",
       "team": "Bellarmine",
       "record": "15-9",
       "is_starter": true,
-      "original_rank": 35
+      "flo_ranked": false,
+      "original_rank": 37
     },
     {
-      "rank": 34,
+      "rank": 35,
       "wrestler_id": "34944347132",
       "name": "Kaden Keiser",
       "team": "Appalachian State",
       "record": "26-11",
       "is_starter": true,
-      "original_rank": 36
+      "flo_ranked": false,
+      "original_rank": 38
     },
     {
-      "rank": 35,
+      "rank": 36,
       "wrestler_id": "34955726132",
       "name": "Sam Cartella",
       "team": "Northwestern",
       "record": "11-7",
       "is_starter": true,
-      "original_rank": 37
+      "flo_ranked": false,
+      "original_rank": 39
     },
     {
-      "rank": 36,
+      "rank": 37,
       "wrestler_id": "34951043132",
       "name": "Ryan Michaels",
       "team": "Edinboro",
       "record": "25-11",
       "is_starter": true,
-      "original_rank": 38
+      "flo_ranked": false,
+      "original_rank": 40
     },
     {
-      "rank": 37,
+      "rank": 38,
       "wrestler_id": "34934358132",
       "name": "Evan Gosz",
       "team": "Michigan State",
       "record": "7-5",
       "is_starter": true,
-      "original_rank": 44
+      "flo_ranked": false,
+      "original_rank": 45
     },
     {
-      "rank": 38,
+      "rank": 39,
       "wrestler_id": "34946228132",
       "name": "Carson DesRosier",
       "team": "The Citadel",
       "record": "15-11",
       "is_starter": true,
-      "original_rank": 45
+      "flo_ranked": false,
+      "original_rank": 46
     },
     {
-      "rank": 39,
+      "rank": 40,
       "wrestler_id": "34947799132",
       "name": "Nate Lucier",
       "team": "Binghamton",
       "record": "4-3",
       "is_starter": true,
-      "original_rank": 46
+      "flo_ranked": false,
+      "original_rank": 47
     },
     {
-      "rank": 40,
+      "rank": 41,
       "wrestler_id": "34955064132",
       "name": "Wynton Denkins",
       "team": "Virginia",
       "record": "18-12",
       "is_starter": true,
-      "original_rank": 47
+      "flo_ranked": false,
+      "original_rank": 48
     },
     {
-      "rank": 41,
+      "rank": 42,
       "wrestler_id": "34943942132",
       "name": "Benji Alanis",
       "team": "Arizona State",
       "record": "5-7",
       "is_starter": true,
-      "original_rank": 49
+      "flo_ranked": false,
+      "original_rank": 50
     },
     {
-      "rank": 42,
+      "rank": 43,
       "wrestler_id": "34945168132",
       "name": "Gavin Brown",
       "team": "Purdue",
       "record": "17-13",
       "is_starter": true,
-      "original_rank": 50
+      "flo_ranked": false,
+      "original_rank": 51
     },
     {
-      "rank": 43,
+      "rank": 44,
       "wrestler_id": "34937348132",
       "name": "Dylan Layton",
       "team": "Rider",
       "record": "26-11",
       "is_starter": true,
-      "original_rank": 51
+      "flo_ranked": false,
+      "original_rank": 52
     },
     {
-      "rank": 44,
+      "rank": 45,
       "wrestler_id": "34946813132",
       "name": "Willie McDougald",
       "team": "West Virginia",
       "record": "7-11",
       "is_starter": true,
-      "original_rank": 52
+      "flo_ranked": false,
+      "original_rank": 53
     },
     {
-      "rank": 45,
+      "rank": 46,
       "wrestler_id": "34934025132",
       "name": "Paul Kelly",
       "team": "California Baptist",
       "record": "12-8",
       "is_starter": true,
-      "original_rank": 53
+      "flo_ranked": false,
+      "original_rank": 54
     },
     {
-      "rank": 46,
+      "rank": 47,
       "wrestler_id": "34957802132",
       "name": "Emilio Trujillo-Deen",
       "team": "Northern Colorado",
       "record": "7-11",
       "is_starter": true,
-      "original_rank": 56
+      "flo_ranked": false,
+      "original_rank": 57
     },
     {
-      "rank": 47,
+      "rank": 48,
       "wrestler_id": "34937671132",
       "name": "Noah Tapia",
       "team": "Hofstra",
       "record": "15-9",
       "is_starter": true,
-      "original_rank": 58
+      "flo_ranked": false,
+      "original_rank": 59
     },
     {
-      "rank": 48,
+      "rank": 49,
       "wrestler_id": "34945804132",
       "name": "Joey Buttler",
       "team": "Indiana",
       "record": "11-14",
       "is_starter": true,
-      "original_rank": 59
+      "flo_ranked": false,
+      "original_rank": 60
     },
     {
-      "rank": 49,
+      "rank": 50,
       "wrestler_id": "34952959132",
       "name": "Sam Ewing",
       "team": "Buffalo",
       "record": "18-14",
       "is_starter": true,
-      "original_rank": 60
+      "flo_ranked": false,
+      "original_rank": 61
     },
     {
-      "rank": 50,
+      "rank": 51,
       "wrestler_id": "34952678132",
       "name": "Owen Reinsel",
       "team": "Lehigh",
       "record": "6-13",
       "is_starter": true,
-      "original_rank": 61
+      "flo_ranked": false,
+      "original_rank": 62
     },
     {
-      "rank": 51,
+      "rank": 52,
       "wrestler_id": "34934118132",
       "name": "Jimmy Nugent",
       "team": "Central Michigan",
       "record": "20-13",
       "is_starter": true,
-      "original_rank": 62
-    },
-    {
-      "rank": 52,
-      "wrestler_id": "34955778132",
-      "name": "Drew Roberts",
-      "team": "Minnesota",
-      "record": "11-9",
-      "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 63
     },
     {
@@ -477,6 +529,7 @@
       "team": "Harvard",
       "record": "12-10",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 65
     },
     {
@@ -486,6 +539,7 @@
       "team": "Navy",
       "record": "10-8",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 67
     },
     {
@@ -495,6 +549,7 @@
       "team": "Columbia",
       "record": "12-14",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 68
     },
     {
@@ -504,6 +559,7 @@
       "team": "Bucknell",
       "record": "9-9",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 69
     },
     {
@@ -513,6 +569,7 @@
       "team": "Clarion",
       "record": "11-16",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 77
     },
     {
@@ -522,6 +579,7 @@
       "team": "Bloomsburg",
       "record": "21-18",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 78
     },
     {
@@ -531,6 +589,7 @@
       "team": "VMI",
       "record": "11-9",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 81
     },
     {
@@ -540,6 +599,7 @@
       "team": "Chattanooga",
       "record": "10-12",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 82
     },
     {
@@ -549,6 +609,7 @@
       "team": "Campbell",
       "record": "5-16",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 84
     },
     {
@@ -558,6 +619,7 @@
       "team": "South Dakota State",
       "record": "5-7",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 88
     },
     {
@@ -567,6 +629,7 @@
       "team": "Oklahoma",
       "record": "3-1",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 90
     },
     {
@@ -576,6 +639,7 @@
       "team": "Franklin & Marshall",
       "record": "11-19",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 96
     },
     {
@@ -585,6 +649,7 @@
       "team": "North Carolina",
       "record": "7-12",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 100
     },
     {
@@ -594,6 +659,7 @@
       "team": "American",
       "record": "6-10",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 113
     },
     {
@@ -603,6 +669,7 @@
       "team": "Presbyterian",
       "record": "1-4",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 119
     },
     {
@@ -612,6 +679,7 @@
       "team": "CSU Bakersfield",
       "record": "0-2",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 127
     },
     {
@@ -621,6 +689,7 @@
       "team": "Sacred Heart",
       "record": "0-0",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 146
     },
     {
@@ -630,6 +699,7 @@
       "team": "Army West Point",
       "record": "9-11",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 159
     },
     {
@@ -639,6 +709,7 @@
       "team": "Ohio",
       "record": "9-18",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 181
     },
     {
@@ -648,6 +719,7 @@
       "team": "Gardner-Webb",
       "record": "7-11",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 191
     },
     {
@@ -657,6 +729,7 @@
       "team": "Kent State",
       "record": "9-11",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 221
     },
     {
@@ -666,6 +739,7 @@
       "team": "Air Force",
       "record": "13-18",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 223
     },
     {
@@ -675,6 +749,7 @@
       "team": "Duke",
       "record": "6-6",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 250
     },
     {
@@ -684,6 +759,7 @@
       "team": "LIU",
       "record": "3-3",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 263
     },
     {
@@ -693,6 +769,7 @@
       "team": "Northern Illinois",
       "record": "2-3",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 271
     },
     {
@@ -702,6 +779,7 @@
       "team": "Mercyhurst",
       "record": "0-11",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 294
     },
     {
@@ -711,6 +789,7 @@
       "team": "Drexel",
       "record": "10-12",
       "is_starter": true,
+      "flo_ranked": false,
       "original_rank": 305
     }
   ],

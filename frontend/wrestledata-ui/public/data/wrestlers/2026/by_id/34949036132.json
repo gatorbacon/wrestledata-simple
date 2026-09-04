@@ -1,1 +1,107 @@
-{"wrestler_id": "34949036132", "name": "Marc Berisha", "team": "Sacred Heart", "team_slug": "sacred_heart", "team_rank": 77, "weight_class": 285, "year": 2026, "current_rank": 141, "record": {"overall": "1-2", "vs_ranked": "1-2", "vs_top10": "0-0", "vs_top25": "0-0"}, "metrics": {"pf7": 2.0, "pa7": 9.0, "pd7": -7.0, "si_plus": 92.9, "df_plus": 95.5, "apr_plus": 110.5, "pin_rate": 1.0, "bonus_rate": 1.0, "majors": 0, "techs": 0, "pins": 1, "mat_value": {"mv_avg": -1.6096, "matches": 2, "rank_weight": 112, "rank_overall": 1223, "version": "mbt_50_50", "mv_avg_v1": -0.675, "rank_weight_v1": 94, "rank_overall_v1": 1062}}, "opponent_breakdown": {"ranked_wins": 1, "ranked_losses": 2, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34954564132", "opponent_rank": 221, "opponent_name": "Anthony Brown", "method": "Fall 2:18"}, "worst_loss": {"opponent_id": "34934342132", "opponent_rank": 159, "opponent_name": "Sam Sorenson", "method": "M. For."}}, "match_list": [{"date": "2026-01-18", "opponent_id": "34954564132", "opponent_career_id": null, "opponent_name": "Anthony Brown", "opponent_team": "Presbyterian", "opponent_team_rank": 76, "opponent_weight": 285, "opponent_rank": 221, "weight_class": "285", "result": "W", "method": "FALL", "score": null, "duration": "2:18", "event": "vs. Sacred Heart", "mv_impact": 0.3424, "mv_impact_v1": 1.37}, {"date": "2025-11-09", "opponent_id": "34934342132", "opponent_career_id": null, "opponent_name": "Sam Sorenson", "opponent_team": "Army West Point", "opponent_team_rank": 49, "opponent_weight": 285, "opponent_rank": 159, "weight_class": "285", "result": "L", "method": "MFF", "score": null, "duration": "7:00", "event": "2025 Journeymen Collegiate Classic", "mv_impact": -0.7136}, {"date": "2025-11-09", "opponent_id": "34947806132", "opponent_career_id": null, "opponent_name": "Trent Sibble", "opponent_team": "Binghamton", "opponent_team_rank": 42, "opponent_weight": 285, "opponent_rank": 69, "weight_class": "285", "result": "L", "method": "DEC", "score": "9-2", "duration": "7:00", "event": "2025 Journeymen Collegiate Classic", "mv_impact": -0.7136, "mv_impact_v1": -2.72}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34949036132",
+  "name": "Marc Berisha",
+  "team": "Sacred Heart",
+  "team_slug": "sacred_heart",
+  "team_rank": 77,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": 141,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.0,
+    "pa7": 9.0,
+    "pd7": -7.0,
+    "si_plus": 92.9,
+    "df_plus": 95.5,
+    "apr_plus": 110.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -0.676,
+      "matches": 2,
+      "rank_weight": 93,
+      "rank_overall": 1059,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34954564132",
+      "opponent_rank": 221,
+      "opponent_name": "Anthony Brown",
+      "method": "Fall 2:18"
+    },
+    "worst_loss": {
+      "opponent_id": "34934342132",
+      "opponent_rank": 159,
+      "opponent_name": "Sam Sorenson",
+      "method": "M. For."
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-18",
+      "opponent_id": "34954564132",
+      "opponent_career_id": null,
+      "opponent_name": "Anthony Brown",
+      "opponent_team": "Presbyterian",
+      "opponent_team_rank": 76,
+      "opponent_weight": 285,
+      "opponent_rank": 221,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:18",
+      "event": "vs. Sacred Heart",
+      "mv_impact": 1.37
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34934342132",
+      "opponent_career_id": null,
+      "opponent_name": "Sam Sorenson",
+      "opponent_team": "Army West Point",
+      "opponent_team_rank": 41,
+      "opponent_weight": 285,
+      "opponent_rank": 159,
+      "weight_class": "285",
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic"
+    },
+    {
+      "date": "2025-11-09",
+      "opponent_id": "34947806132",
+      "opponent_career_id": null,
+      "opponent_name": "Trent Sibble",
+      "opponent_team": "Binghamton",
+      "opponent_team_rank": 51,
+      "opponent_weight": 285,
+      "opponent_rank": 70,
+      "weight_class": "285",
+      "result": "L",
+      "method": "DEC",
+      "score": "9-2",
+      "duration": "7:00",
+      "event": "2025 Journeymen Collegiate Classic",
+      "mv_impact": -2.72
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

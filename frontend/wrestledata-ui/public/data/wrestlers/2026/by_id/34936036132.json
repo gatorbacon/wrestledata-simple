@@ -1,1 +1,108 @@
-{"wrestler_id": "34936036132", "name": "Christian Garcia", "team": "Cal Poly", "team_slug": "cal_poly", "team_rank": 53, "weight_class": 125, "year": 2026, "current_rank": 124, "record": {"overall": "1-2", "vs_ranked": "1-2", "vs_top10": "0-0", "vs_top25": "0-1"}, "metrics": {"pf7": 6.33, "pa7": 8.33, "pd7": -2.0, "si_plus": 101.4, "df_plus": 92.7, "apr_plus": 104.9, "pin_rate": 0.0, "bonus_rate": 1.0, "majors": 1, "techs": 0, "pins": 0, "mat_value": {"mv_avg": -1.2455, "matches": 3, "rank_weight": 94, "rank_overall": 1052, "version": "mbt_50_50", "mv_avg_v1": -0.959, "rank_weight_v1": 110, "rank_overall_v1": 1166}}, "opponent_breakdown": {"ranked_wins": 1, "ranked_losses": 2, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34944530132", "opponent_rank": 153, "opponent_name": "Tristan Mascarenas", "method": "MD 12-3"}, "worst_loss": {"opponent_id": "34934185132", "opponent_rank": 63, "opponent_name": "Isaiah Harrison", "method": "Dec 5-2"}}, "match_list": [{"date": "2025-12-21", "opponent_id": "34944530132", "opponent_career_id": null, "opponent_name": "Tristan Mascarenas", "opponent_team": "Arizona State", "opponent_team_rank": 16, "opponent_weight": 125, "opponent_rank": 153, "weight_class": "125", "result": "W", "method": "MD", "score": "12-3", "duration": "7:00", "event": "2025 Dollamur Reno Tournament of Champions", "mv_impact": 0.0308, "mv_impact_v1": 2.32}, {"date": "2025-12-21", "opponent_id": "34934185132", "opponent_career_id": null, "opponent_name": "Isaiah Harrison", "opponent_team": "Wyoming", "opponent_team_rank": 14, "opponent_weight": 125, "opponent_rank": 63, "weight_class": "125", "result": "L", "method": "DEC", "score": "5-2", "duration": "7:00", "event": "2025 Dollamur Reno Tournament of Champions", "mv_impact": 0.0308, "mv_impact_v1": -3.07}, {"date": "2025-11-23", "opponent_id": "34934761132", "opponent_career_id": null, "opponent_name": "Maximo Renteria", "opponent_team": "Oregon State", "opponent_team_rank": 46, "opponent_weight": 125, "opponent_rank": 18, "weight_class": "125", "result": "L", "method": "MD", "score": "17-5", "duration": "7:00", "event": "Roadrunner Open", "mv_impact": -0.8274, "mv_impact_v1": -2.13}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34936036132",
+  "name": "Christian Garcia",
+  "team": "Cal Poly",
+  "team_slug": "cal_poly",
+  "team_rank": 46,
+  "weight_class": 125,
+  "year": 2026,
+  "current_rank": 124,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 6.33,
+    "pa7": 8.33,
+    "pd7": -2.0,
+    "si_plus": 101.4,
+    "df_plus": 92.8,
+    "apr_plus": 104.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.956,
+      "matches": 3,
+      "rank_weight": 110,
+      "rank_overall": 1166,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34944530132",
+      "opponent_rank": 153,
+      "opponent_name": "Tristan Mascarenas",
+      "method": "MD 12-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34934185132",
+      "opponent_rank": 63,
+      "opponent_name": "Isaiah Harrison",
+      "method": "Dec 5-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34944530132",
+      "opponent_career_id": null,
+      "opponent_name": "Tristan Mascarenas",
+      "opponent_team": "Arizona State",
+      "opponent_team_rank": 12,
+      "opponent_weight": 125,
+      "opponent_rank": 153,
+      "weight_class": "125",
+      "result": "W",
+      "method": "MD",
+      "score": "12-3",
+      "duration": "7:00",
+      "event": "2025 Dollamur Reno Tournament of Champions",
+      "mv_impact": 2.32
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "34934185132",
+      "opponent_career_id": null,
+      "opponent_name": "Isaiah Harrison",
+      "opponent_team": "Wyoming",
+      "opponent_team_rank": 15,
+      "opponent_weight": 125,
+      "opponent_rank": 63,
+      "weight_class": "125",
+      "result": "L",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "2025 Dollamur Reno Tournament of Champions",
+      "mv_impact": -3.07
+    },
+    {
+      "date": "2025-11-23",
+      "opponent_id": "34934761132",
+      "opponent_career_id": null,
+      "opponent_name": "Maximo Renteria",
+      "opponent_team": "Oregon State",
+      "opponent_team_rank": 34,
+      "opponent_weight": 125,
+      "opponent_rank": 15,
+      "weight_class": "125",
+      "result": "L",
+      "method": "MD",
+      "score": "17-5",
+      "duration": "7:00",
+      "event": "Roadrunner Open",
+      "mv_impact": -2.12
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

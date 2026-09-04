@@ -1,1 +1,125 @@
-{"wrestler_id": "34940723132", "name": "Daniel Herrera", "team": "Iowa State", "team_slug": "iowa_state", "team_rank": 8, "weight_class": 285, "year": 2026, "current_rank": 77, "record": {"overall": "2-2", "vs_ranked": "2-2", "vs_top10": "0-0", "vs_top25": "0-1"}, "metrics": {"pf7": 3.25, "pa7": 5.0, "pd7": -1.75, "si_plus": 90.0, "df_plus": 104.1, "apr_plus": 100.8, "pin_rate": 0.0, "bonus_rate": 0.0, "majors": 0, "techs": 0, "pins": 0, "mat_value": {"mv_avg": -0.5577, "matches": 4, "rank_weight": 70, "rank_overall": 756, "version": "mbt_50_50", "mv_avg_v1": -0.456, "rank_weight_v1": 87, "rank_overall_v1": 992}}, "opponent_breakdown": {"ranked_wins": 2, "ranked_losses": 2, "top10_wins": 0, "top10_losses": 0, "win_over_highest_rank": {"opponent_id": "34963120132", "opponent_rank": 71, "opponent_name": "Bradley Hill", "method": "Dec 8-3"}, "worst_loss": {"opponent_id": "34943973132", "opponent_rank": 29, "opponent_name": "Jarrett Stoner", "method": "MD 9-0"}}, "match_list": [{"date": "2026-01-04", "opponent_id": "34963120132", "opponent_career_id": null, "opponent_name": "Bradley Hill", "opponent_team": "Oklahoma", "opponent_team_rank": 30, "opponent_weight": 285, "opponent_rank": 71, "weight_class": "285", "result": "W", "method": "DEC", "score": "8-3", "duration": "7:00", "event": "2026 Soldier Salute", "mv_impact": -0.2175, "mv_impact_v1": 2.81}, {"date": "2026-01-04", "opponent_id": "34955792132", "opponent_career_id": null, "opponent_name": "Koy Hopke", "opponent_team": "Minnesota", "opponent_team_rank": 10, "opponent_weight": 285, "opponent_rank": 18, "weight_class": "285", "result": "L", "method": "DEC", "score": "5-1", "duration": "7:00", "event": "2026 Soldier Salute", "mv_impact": -0.2175, "mv_impact_v1": -1.57}, {"date": "2026-01-04", "opponent_id": "34943973132", "opponent_career_id": null, "opponent_name": "Jarrett Stoner", "opponent_team": "Missouri", "opponent_team_rank": 13, "opponent_weight": 285, "opponent_rank": 29, "weight_class": "285", "result": "L", "method": "MD", "score": "9-0", "duration": "7:00", "event": "2026 Soldier Salute", "mv_impact": -0.2175, "mv_impact_v1": -3.37}, {"date": "2025-11-15", "opponent_id": "35025185132", "opponent_career_id": null, "opponent_name": "Cameron Guether", "opponent_team": "Northern Iowa", "opponent_team_rank": 29, "opponent_weight": 285, "opponent_rank": 157, "weight_class": "285", "result": "W", "method": "DEC", "score": "4-3", "duration": "7:00", "event": "Grand View Open", "mv_impact": 0.3476, "mv_impact_v1": 0.31}], "profile_generated_at": "2026-06-02"}
+{
+  "wrestler_id": "34940723132",
+  "name": "Daniel Herrera",
+  "team": "Iowa State",
+  "team_slug": "iowa_state",
+  "team_rank": 10,
+  "weight_class": 285,
+  "year": 2026,
+  "current_rank": 77,
+  "record": {
+    "overall": "2-2",
+    "vs_ranked": "2-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 3.25,
+    "pa7": 5.0,
+    "pd7": -1.75,
+    "si_plus": 90.0,
+    "df_plus": 104.1,
+    "apr_plus": 100.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.465,
+      "matches": 4,
+      "rank_weight": 87,
+      "rank_overall": 995,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "34963120132",
+      "opponent_rank": 71,
+      "opponent_name": "Bradley Hill",
+      "method": "Dec 8-3"
+    },
+    "worst_loss": {
+      "opponent_id": "34943973132",
+      "opponent_rank": 32,
+      "opponent_name": "Jarrett Stoner",
+      "method": "MD 9-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2026-01-04",
+      "opponent_id": "34963120132",
+      "opponent_career_id": null,
+      "opponent_name": "Bradley Hill",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 28,
+      "opponent_weight": 285,
+      "opponent_rank": 71,
+      "weight_class": "285",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-3",
+      "duration": "7:00",
+      "event": "2026 Soldier Salute",
+      "mv_impact": 2.83
+    },
+    {
+      "date": "2026-01-04",
+      "opponent_id": "34955792132",
+      "opponent_career_id": null,
+      "opponent_name": "Koy Hopke",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 11,
+      "opponent_weight": 285,
+      "opponent_rank": 13,
+      "weight_class": "285",
+      "result": "L",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "2026 Soldier Salute",
+      "mv_impact": -1.53
+    },
+    {
+      "date": "2026-01-04",
+      "opponent_id": "34943973132",
+      "opponent_career_id": null,
+      "opponent_name": "Jarrett Stoner",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 14,
+      "opponent_weight": 285,
+      "opponent_rank": 32,
+      "weight_class": "285",
+      "result": "L",
+      "method": "MD",
+      "score": "9-0",
+      "duration": "7:00",
+      "event": "2026 Soldier Salute",
+      "mv_impact": -3.47
+    },
+    {
+      "date": "2025-11-15",
+      "opponent_id": "35025185132",
+      "opponent_career_id": null,
+      "opponent_name": "Cameron Guether",
+      "opponent_team": "Northern Iowa",
+      "opponent_team_rank": 27,
+      "opponent_weight": 285,
+      "opponent_rank": 157,
+      "weight_class": "285",
+      "result": "W",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "Grand View Open",
+      "mv_impact": 0.31
+    }
+  ],
+  "profile_generated_at": "2026-09-03"
+}

@@ -3,7 +3,7 @@
   "name": "Devon Deem",
   "team": "Navy",
   "team_slug": "navy",
-  "team_rank": 24,
+  "team_rank": 30,
   "weight_class": 157,
   "year": 2026,
   "current_rank": 149,
@@ -14,11 +14,11 @@
     "vs_top25": "0-1"
   },
   "metrics": {
-    "pf7": 3.0,
-    "pa7": 2.75,
-    "pd7": 0.25,
-    "si_plus": 92.6,
-    "df_plus": 109.4,
+    "pf7": 3.2,
+    "pa7": 4.6,
+    "pd7": -1.4,
+    "si_plus": 95.8,
+    "df_plus": 106.0,
     "apr_plus": 99.1,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
@@ -26,10 +26,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -1.542,
+      "mv_avg": -1.545,
       "matches": 7,
-      "rank_weight": 155,
-      "rank_overall": 1363,
+      "rank_weight": 154,
+      "rank_overall": 1360,
       "version": "v1"
     }
   },
@@ -75,7 +75,7 @@
       "opponent_career_id": null,
       "opponent_name": "Jadon Skellenger",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 13,
       "opponent_weight": 157,
       "opponent_rank": 84,
       "weight_class": "157",
@@ -92,16 +92,16 @@
       "opponent_career_id": null,
       "opponent_name": "Max Hermes",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 24,
       "opponent_weight": 165,
-      "opponent_rank": 49,
+      "opponent_rank": 50,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
       "event": "David H. Lehman F&M Open",
-      "mv_impact": -2.17
+      "mv_impact": -2.19
     },
     {
       "date": "2026-01-09",
@@ -109,7 +109,7 @@
       "opponent_career_id": null,
       "opponent_name": "Luke Robie",
       "opponent_team": "Virginia Tech",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 8,
       "opponent_weight": 157,
       "opponent_rank": 190,
       "weight_class": "157",
@@ -122,11 +122,28 @@
     },
     {
       "date": "2025-11-02",
+      "opponent_id": "34938485132",
+      "opponent_career_id": null,
+      "opponent_name": "DJ McGee",
+      "opponent_team": "George Mason",
+      "opponent_team_rank": 44,
+      "opponent_weight": 157,
+      "opponent_rank": 19,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MD",
+      "score": "12-4",
+      "duration": "7:00",
+      "event": "Navy Classic",
+      "mv_impact": -2.09
+    },
+    {
+      "date": "2025-11-02",
       "opponent_id": "34939066132",
       "opponent_career_id": null,
       "opponent_name": "Cooper Rathburn",
       "opponent_team": "Navy",
-      "opponent_team_rank": 24,
+      "opponent_team_rank": 30,
       "opponent_weight": 157,
       "opponent_rank": 80,
       "weight_class": "157",
@@ -135,24 +152,7 @@
       "score": "4-1",
       "duration": "7:00",
       "event": "Navy Classic",
-      "mv_impact": -2.39
-    },
-    {
-      "date": "2025-11-02",
-      "opponent_id": "34938485132",
-      "opponent_career_id": null,
-      "opponent_name": "DJ McGee",
-      "opponent_team": "George Mason",
-      "opponent_team_rank": 34,
-      "opponent_weight": 157,
-      "opponent_rank": 20,
-      "weight_class": "157",
-      "result": "L",
-      "method": "MD",
-      "score": "12-4",
-      "duration": "7:00",
-      "event": "Navy Classic",
-      "mv_impact": -2.08
+      "mv_impact": -2.38
     },
     {
       "date": "2025-11-02",
@@ -160,7 +160,7 @@
       "opponent_career_id": null,
       "opponent_name": "Finn Solomon",
       "opponent_team": "Pittsburgh",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 25,
       "opponent_weight": 157,
       "opponent_rank": 249,
       "weight_class": "157",
@@ -171,5 +171,5 @@
       "event": "Navy Classic"
     }
   ],
-  "profile_generated_at": "2026-06-02"
+  "profile_generated_at": "2026-09-03"
 }
