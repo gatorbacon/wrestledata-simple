@@ -1,0 +1,106 @@
+{
+  "wrestler_id": "20130887132",
+  "name": "Hunter Lewis",
+  "team": "NC State",
+  "team_slug": "nc_state",
+  "team_rank": 10,
+  "weight_class": 149,
+  "grade": "R-So.",
+  "hometown": "Stoughton, Wisc.",
+  "high_school": "Stoughton HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=100&height=100&type=webp",
+  "previous_school": null,
+  "year": 2023,
+  "current_rank": 206,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 12.0,
+    "pd7": -12.0,
+    "si_plus": 83.8,
+    "df_plus": 92.6,
+    "apr_plus": 99.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.972,
+      "matches": 1,
+      "rank_weight": 178,
+      "rank_overall": 1520,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "20130899132",
+      "opponent_rank": 34,
+      "opponent_name": "Finn Solomon",
+      "method": "MD 12-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2022-10-28",
+      "opponent_id": "20130899132",
+      "opponent_career_id": null,
+      "opponent_name": "Finn Solomon",
+      "opponent_team": "NC State",
+      "opponent_team_rank": 10,
+      "opponent_weight": 149,
+      "opponent_rank": 34,
+      "weight_class": "149",
+      "result": "L",
+      "method": "MD",
+      "score": "12-0",
+      "duration": "7:00",
+      "event": "vs. NC State",
+      "mv_impact": -1.97
+    }
+  ],
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2023,
+      "wrestler_id": "20130887132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 149,
+      "grade": "R-So.",
+      "current_rank": 206,
+      "record": "0-1"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16701889132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 149,
+      "grade": "R-Fr.",
+      "current_rank": 81,
+      "record": "12-8"
+    },
+    {
+      "season": 2021,
+      "wrestler_id": "14865899132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 149,
+      "grade": "R-Fr.",
+      "current_rank": 36,
+      "record": "6-1"
+    }
+  ]
+}

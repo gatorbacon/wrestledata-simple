@@ -1,0 +1,172 @@
+{
+  "wrestler_id": "20130823132",
+  "name": "Cutter Sheets",
+  "team": "Oklahoma State",
+  "team_slug": "oklahoma_state",
+  "team_rank": 15,
+  "weight_class": 149,
+  "grade": "Fr.",
+  "hometown": "Stilwell, Oklahoma",
+  "high_school": "Stilwell",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+  "previous_school": null,
+  "year": 2023,
+  "current_rank": 79,
+  "record": {
+    "overall": "1-3",
+    "vs_ranked": "1-3",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.0,
+    "pa7": 7.0,
+    "pd7": -1.0,
+    "si_plus": 103.5,
+    "df_plus": 100.8,
+    "apr_plus": 98.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.23,
+      "matches": 5,
+      "rank_weight": 151,
+      "rank_overall": 1259,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 3,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "20125052132",
+      "opponent_rank": 249,
+      "opponent_name": "Jaden Reynolds",
+      "method": "MD 12-4"
+    },
+    "worst_loss": {
+      "opponent_id": "20145700132",
+      "opponent_rank": 50,
+      "opponent_name": "Blaine Brenner",
+      "method": "Dec 7-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2023-01-28",
+      "opponent_id": "20124546132",
+      "opponent_career_id": null,
+      "opponent_name": "Dusty Hone",
+      "opponent_team": "Oklahoma State",
+      "opponent_team_rank": 15,
+      "opponent_weight": 149,
+      "opponent_rank": 47,
+      "weight_class": "149",
+      "result": "L",
+      "method": "DEC",
+      "score": "9-7",
+      "duration": "7:00",
+      "event": "2023 Golden Norsemen Open",
+      "mv_impact": -2.35
+    },
+    {
+      "date": "2023-01-02",
+      "opponent_id": "20145700132",
+      "opponent_career_id": null,
+      "opponent_name": "Blaine Brenner",
+      "opponent_team": "Minnesota",
+      "opponent_team_rank": 22,
+      "opponent_weight": 157,
+      "opponent_rank": 50,
+      "weight_class": "149",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-3",
+      "duration": "7:00",
+      "event": "Southern Scuffle",
+      "mv_impact": -2.28
+    },
+    {
+      "date": "2023-01-02",
+      "opponent_id": "20135043132",
+      "opponent_career_id": null,
+      "opponent_name": "Quinn Kinner",
+      "opponent_team": "Rider",
+      "opponent_team_rank": 47,
+      "opponent_weight": 149,
+      "opponent_rank": 27,
+      "weight_class": "149",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-2",
+      "duration": "7:00",
+      "event": "Southern Scuffle",
+      "mv_impact": -1.27
+    },
+    {
+      "date": "2023-01-02",
+      "opponent_id": "20125052132",
+      "opponent_career_id": null,
+      "opponent_name": "Jaden Reynolds",
+      "opponent_team": "Purdue",
+      "opponent_team_rank": 24,
+      "opponent_weight": 149,
+      "opponent_rank": 249,
+      "weight_class": "149",
+      "result": "W",
+      "method": "MD",
+      "score": "12-4",
+      "duration": "7:00",
+      "event": "Southern Scuffle",
+      "mv_impact": 2.03
+    }
+  ],
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34936402132",
+      "team": "Oklahoma State",
+      "team_slug": "oklahoma_state",
+      "weight_class": 157,
+      "grade": "R-Jr.",
+      "current_rank": 48,
+      "record": "13-6"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29678430132",
+      "team": "Oklahoma State",
+      "team_slug": "oklahoma_state",
+      "weight_class": 149,
+      "grade": "R-So.",
+      "current_rank": 101,
+      "record": "7-7"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24586776132",
+      "team": "Oklahoma State",
+      "team_slug": "oklahoma_state",
+      "weight_class": 149,
+      "grade": "R-Fr.",
+      "current_rank": 89,
+      "record": "4-6"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20130823132",
+      "team": "Oklahoma State",
+      "team_slug": "oklahoma_state",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 79,
+      "record": "1-3"
+    }
+  ]
+}

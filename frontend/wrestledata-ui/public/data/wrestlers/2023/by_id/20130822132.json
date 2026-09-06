@@ -1,0 +1,133 @@
+{
+  "wrestler_id": "20130822132",
+  "name": "Benjamin Mower",
+  "team": "Oklahoma State",
+  "team_slug": "oklahoma_state",
+  "team_rank": 15,
+  "weight_class": 174,
+  "grade": "Fr.",
+  "hometown": "Edmond, Oklahoma",
+  "high_school": "Edmond Memorial",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+  "previous_school": null,
+  "year": 2023,
+  "current_rank": 52,
+  "record": {
+    "overall": "2-0",
+    "vs_ranked": "2-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 12.0,
+    "pa7": 0.0,
+    "pd7": 12.0,
+    "si_plus": 126.7,
+    "df_plus": 114.7,
+    "apr_plus": 132.1,
+    "pin_rate": 0.5,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 2.243,
+      "matches": 2,
+      "rank_weight": 20,
+      "rank_overall": 196,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "20128097132",
+      "opponent_rank": 239,
+      "opponent_name": "Warren Hoyt",
+      "method": "MD 12-0"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2022-12-03",
+      "opponent_id": "20128097132",
+      "opponent_career_id": null,
+      "opponent_name": "Warren Hoyt",
+      "opponent_team": "Little Rock",
+      "opponent_team_rank": 74,
+      "opponent_weight": 174,
+      "opponent_rank": 239,
+      "weight_class": "174",
+      "result": "W",
+      "method": "MD",
+      "score": "12-0",
+      "duration": "7:00",
+      "event": "Drury Open",
+      "mv_impact": 1.24
+    },
+    {
+      "date": "2022-12-03",
+      "opponent_id": "20128097132",
+      "opponent_career_id": null,
+      "opponent_name": "Warren Hoyt",
+      "opponent_team": "Little Rock",
+      "opponent_team_rank": 74,
+      "opponent_weight": 174,
+      "opponent_rank": 239,
+      "weight_class": "174",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:14",
+      "event": "Drury Open",
+      "mv_impact": 3.24
+    }
+  ],
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34936401132",
+      "team": "Oklahoma State",
+      "team_slug": "oklahoma_state",
+      "weight_class": 285,
+      "grade": "R-So.",
+      "current_rank": 68,
+      "record": "5-4"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29678429132",
+      "team": "Oklahoma State",
+      "team_slug": "oklahoma_state",
+      "weight_class": 174,
+      "grade": "R-So.",
+      "current_rank": 146,
+      "record": "0-0"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24586775132",
+      "team": "Oklahoma State",
+      "team_slug": "oklahoma_state",
+      "weight_class": 174,
+      "grade": "R-Fr.",
+      "current_rank": 51,
+      "record": "8-4"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20130822132",
+      "team": "Oklahoma State",
+      "team_slug": "oklahoma_state",
+      "weight_class": 174,
+      "grade": "Fr.",
+      "current_rank": 52,
+      "record": "2-0"
+    }
+  ]
+}

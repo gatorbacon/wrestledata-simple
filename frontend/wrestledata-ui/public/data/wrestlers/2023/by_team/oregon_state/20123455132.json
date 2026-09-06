@@ -1,0 +1,128 @@
+{
+  "wrestler_id": "20123455132",
+  "name": "Christopher Hamblin",
+  "team": "Oregon State",
+  "team_slug": "oregon_state",
+  "team_rank": 27,
+  "weight_class": 165,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
+  "year": 2023,
+  "current_rank": 105,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.5,
+    "pa7": 5.0,
+    "pd7": -1.5,
+    "si_plus": 94.5,
+    "df_plus": 104.5,
+    "apr_plus": 103.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.246,
+      "matches": 2,
+      "rank_weight": 95,
+      "rank_overall": 910,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "20123401132",
+      "opponent_rank": 113,
+      "opponent_name": "Cole Zoller",
+      "method": "Dec 6-5"
+    },
+    "worst_loss": {
+      "opponent_id": "21972851132",
+      "opponent_rank": 63,
+      "opponent_name": "Garrik Fouret",
+      "method": "Dec 5-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2023-01-29",
+      "opponent_id": "21972851132",
+      "opponent_career_id": null,
+      "opponent_name": "Garrik Fouret",
+      "opponent_team": "Oregon State",
+      "opponent_team_rank": 27,
+      "opponent_weight": 165,
+      "opponent_rank": 63,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "CCC Open",
+      "mv_impact": -2.5
+    },
+    {
+      "date": "2023-01-29",
+      "opponent_id": "20123401132",
+      "opponent_career_id": null,
+      "opponent_name": "Cole Zoller",
+      "opponent_team": "Oregon State",
+      "opponent_team_rank": 27,
+      "opponent_weight": 165,
+      "opponent_rank": 113,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "6-5",
+      "duration": "7:00",
+      "event": "CCC Open",
+      "mv_impact": 2.01
+    }
+  ],
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29687536132",
+      "team": "Oregon State",
+      "team_slug": "oregon_state",
+      "weight_class": 157,
+      "grade": "",
+      "current_rank": 35,
+      "record": "8-8"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24581782132",
+      "team": "Oregon State",
+      "team_slug": "oregon_state",
+      "weight_class": 157,
+      "grade": "",
+      "current_rank": 124,
+      "record": "2-3"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20123455132",
+      "team": "Oregon State",
+      "team_slug": "oregon_state",
+      "weight_class": 165,
+      "grade": "",
+      "current_rank": 105,
+      "record": "1-1"
+    }
+  ]
+}
