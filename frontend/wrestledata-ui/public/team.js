@@ -1,6 +1,11 @@
-function getQueryParam(key) {
-  return new URLSearchParams(window.location.search).get(key);
-}
+// ========================================
+// Team profile page: reframed around 3 jobs in order -- projection (team
+// points vs. the field), lineup (who starts, what each weight is worth),
+// how they wrestle (the box-score stats). TPAR stays but is demoted to a
+// column -- the hero is team points, not TPAR.
+// ========================================
+
+const SEASON = "2026";
 
 function safe(v, fn) {
   if (v === null || v === undefined || v === "") return "—";
@@ -12,21 +17,21 @@ function percent(v) {
   return (v * 100).toFixed(1) + "%";
 }
 
-function formatDecimal(v, decimals = 2) {
+function fmtDecimal(v, decimals = 1) {
   if (v === null || v === undefined || isNaN(v)) return "—";
   return Number(v).toFixed(decimals);
 }
 
-function formatWithRank(value, rank, formatter = null) {
-  if (value === null || value === undefined || isNaN(value)) return "—";
-  let valStr;
-  if (formatter) {
-    valStr = formatter(value);
-  } else {
-    valStr = typeof value === "number" ? Number(value).toFixed(1) : String(value);
-  }
-  if (rank === null || rank === undefined) return valStr;
-  return `${valStr} (#${rank})`;
+// TPAR: no sign, same format as the rankings page ("5.8" not "+5.8").
+function fmtTpar(v) {
+  if (v === null || v === undefined || isNaN(v)) return null;
+  return v.toFixed(1);
+}
+
+function rankInParens(value, rank, formatter) {
+  const valStr = formatter ? formatter(value) : safe(value);
+  if (valStr === "—") return "—";
+  return rank !== null && rank !== undefined ? `${valStr} (#${rank})` : valStr;
 }
 
 async function fetchJSON(url) {
@@ -36,547 +41,445 @@ async function fetchJSON(url) {
 }
 
 function teamNameToProcessedDataFilename(teamName) {
-  // Convert team name to processed_data filename format
-  // e.g., "Penn State" -> "Penn_State"
   return teamName.replace(/\s+/g, "_");
 }
 
+const GRADE_ABBREV = [
+  [/redshirt.*fr|r-?fr/i, "RS Fr."],
+  [/redshirt.*so|r-?so/i, "RS So."],
+  [/redshirt.*jr|r-?jr/i, "RS Jr."],
+  [/redshirt.*sr|r-?sr/i, "RS Sr."],
+  [/fresh|^fr\.?$/i, "Fr."],
+  [/soph|^so\.?$/i, "So."],
+  [/junior|^jr\.?$/i, "Jr."],
+  [/senior|^sr\.?$/i, "Sr."],
+  [/graduate/i, "Gr."],
+];
+function abbrevGrade(grade) {
+  if (!grade) return "";
+  for (const [re, short] of GRADE_ABBREV) {
+    if (re.test(grade)) return short;
+  }
+  return grade;
+}
+
+// Unified rank-tier system for this page: #1 gold, #2-4 navy, #5-12 slate,
+// #13+ gray.
+function rankTierClass(rank) {
+  if (rank === null || rank === undefined) return "tp2-rank--unranked";
+  if (rank === 1) return "tp2-rank--gold";
+  if (rank <= 4) return "tp2-rank--navy";
+  if (rank <= 12) return "tp2-rank--slate";
+  return "tp2-rank--gray";
+}
+function rankChip(rank) {
+  const span = document.createElement("span");
+  span.className = `tp2-rank-chip ${rankTierClass(rank)}`;
+  span.textContent = rank ? `#${rank}` : "—";
+  return span;
+}
+
+function seedRisk(aaProb) {
+  if (aaProb === null || aaProb === undefined) return null;
+  if (aaProb >= 0.85) return { label: "Lock", cls: "tp2-risk-lock" };
+  if (aaProb >= 0.4) return { label: "Coin flip", cls: "tp2-risk-flip" };
+  return { label: "Bubble", cls: "tp2-risk-bubble" };
+}
+
+// ===============================
+// Fetch + orchestration
+// ===============================
+
 async function loadTeam(teamId) {
   try {
-    // 1) Load team profile (identity + starters)
-    const teamProfile = await fetchJSON(`/data/teams/${teamId}.json`);
+    const team = await fetchJSON(`/data/teams/${teamId}.json`);
+    const teamName = team.team_name || team.name;
 
-    // 2) Load team metrics (analytics)
-    const metricsData = await fetchJSON(`/data/team_metrics/2026/team_metrics.json`);
-    const teamMetrics = metricsData.teams.find(t => t.team_id === teamId);
+    const metricsFile = await fetchJSON(`/data/team_metrics/${SEASON}/team_metrics.json`);
+    const metrics = metricsFile.teams.find(t => t.team_id === teamId);
 
-    if (!teamMetrics) {
-      throw new Error(`No metrics found for team ${teamId}`);
-    }
+    const xtpFile = await fetchJSON(`/data/xtp/${SEASON}/xtp_teams_${SEASON}.json`).catch(() => null);
+    const xtpTeams = xtpFile ? (Array.isArray(xtpFile) ? xtpFile : (xtpFile.teams || [])) : [];
+    const xtpData = xtpTeams.find(t => t.team === teamName) || null;
 
-    // 3) Load processed_data to get all wrestler IDs
-    const teamName = teamProfile.team_name || teamProfile.name;
-    const processedDataFilename = teamNameToProcessedDataFilename(teamName);
     let allWrestlerIds = new Set();
-    
     try {
-      const processedData = await fetchJSON(`/data/processed_data/ncaa_men/2026/${processedDataFilename}.json`);
-      if (processedData.roster && Array.isArray(processedData.roster)) {
-        processedData.roster.forEach(wrestler => {
-          if (wrestler.season_wrestler_id) {
-            allWrestlerIds.add(wrestler.season_wrestler_id);
-          }
-        });
-      }
-    } catch (err) {
-      console.warn(`Could not load processed_data for ${teamName}:`, err);
-      // Continue with just starters if processed_data is unavailable
-    }
+      const processed = await fetchJSON(`/data/processed_data/ncaa_men/${SEASON}/${teamNameToProcessedDataFilename(teamName)}.json`);
+      (processed.roster || []).forEach(w => { if (w.season_wrestler_id) allWrestlerIds.add(w.season_wrestler_id); });
+    } catch (err) { /* remaining roster just won't have entries */ }
 
-    // 4) Extract starter IDs
-    const starters = teamProfile.roster.starters;
-    const starterIds = new Set();
-    Object.values(starters).forEach(id => {
-      if (id) starterIds.add(id);
-    });
+    const starterIds = new Set(Object.values(team.roster.starters).filter(Boolean));
+    const remainingIds = [...allWrestlerIds].filter(id => !starterIds.has(id));
 
-    // 5) Compute remaining roster IDs
-    const remainingIds = new Set();
-    allWrestlerIds.forEach(id => {
-      if (!starterIds.has(id)) {
-        remainingIds.add(id);
-      }
-    });
+    const starterEntries = Object.entries(team.roster.starters).filter(([, id]) => id);
+    const [starterProfiles, remainingProfiles] = await Promise.all([
+      Promise.all(starterEntries.map(async ([weight, id]) => {
+        try { return { weight: Number(weight), profile: await fetchJSON(`/data/wrestlers/${SEASON}/by_id/${id}.json`) }; }
+        catch { return { weight: Number(weight), profile: null }; }
+      })),
+      Promise.all(remainingIds.map(async id => {
+        try {
+          const profile = await fetchJSON(`/data/wrestlers/${SEASON}/by_id/${id}.json`);
+          return { weight: profile.weight_class ? Number(profile.weight_class) : null, profile };
+        } catch { return null; }
+      })).then(list => list.filter(Boolean)),
+    ]);
 
-    // 6) Load starter wrestler profiles
-    const starterProfiles = [];
-    for (const [weight, wrestlerId] of Object.entries(starters)) {
-      if (!wrestlerId) continue;
-      try {
-      const w = await fetchJSON(`/data/wrestlers/2026/by_id/${wrestlerId}.json`);
-      starterProfiles.push({ weight: Number(weight), profile: w });
-      } catch (err) {
-        console.warn(`Could not load wrestler profile ${wrestlerId}:`, err);
-      }
-    }
-
-    // 7) Load remaining roster wrestler profiles
-    const remainingProfiles = [];
-    for (const wrestlerId of remainingIds) {
-      try {
-        const w = await fetchJSON(`/data/wrestlers/2026/by_id/${wrestlerId}.json`);
-        const weight = w.weight_class ? Number(w.weight_class) : null;
-        remainingProfiles.push({ weight, profile: w });
-      } catch (err) {
-        console.warn(`Could not load wrestler profile ${wrestlerId}:`, err);
-      }
-    }
-
-    // 8) Load xTP data (optional, fail silently if missing)
-    let xtpData = null;
-    try {
-      const xtpFile = await fetchJSON(`/data/xtp/2026/xtp_teams_2026.json`);
-      const teamName = teamProfile.team_name || teamProfile.name;
-      // Handle both array and object with 'teams' property
-      const teamsArray = Array.isArray(xtpFile) ? xtpFile : (xtpFile.teams || []);
-      xtpData = teamsArray.find(t => t.team === teamName);
-    } catch (err) {
-      console.warn(`Could not load xTP data:`, err);
-      // Continue without xTP data
-    }
-
-    await renderTeamPage(teamProfile, teamMetrics, starterProfiles, remainingProfiles, xtpData);
+    renderTeamPage({ team, teamName, metrics, xtpData, xtpTeams, starterProfiles, remainingProfiles });
   } catch (err) {
-    document.getElementById("team-name").textContent = "Team Not Found";
-    document.getElementById("team-meta").textContent = err.message;
     console.error(err);
+    document.getElementById("team-name").textContent = "Team Not Found";
+    document.getElementById("team-resume").textContent = err.message;
   }
 }
 
-function formatWLRecord(wins, losses, winPct) {
-  if (wins === null || wins === undefined || losses === null || losses === undefined) {
-    return "—";
-  }
-  const pct = winPct !== null && winPct !== undefined ? (winPct * 100).toFixed(1) : "0.0";
-  return `${wins}–${losses} (${pct}%)`;
+function renderTeamPage({ team, teamName, metrics, xtpData, xtpTeams, starterProfiles, remainingProfiles }) {
+  renderHeader(team, metrics);
+  renderHero(teamName, xtpData, xtpTeams);
+  renderStartingRoster(starterProfiles, xtpData);
+  renderScoreCard(metrics);
+  renderFinishCard(metrics);
+  renderRemainingRoster(remainingProfiles);
 }
 
-function calculateTopRecord(starters, maxRank) {
-  let wins = 0;
-  let losses = 0;
-  
-  starters.forEach(({ profile }) => {
-    if (!profile || !profile.match_list) return;
-    
-    profile.match_list.forEach(match => {
-      const opponentRank = match.opponent_rank;
-      if (opponentRank === null || opponentRank === undefined || opponentRank > maxRank) {
-        return;
-      }
-      
-      const result = match.result || "";
-      if (result === "W") {
-        wins++;
-      } else if (result === "L") {
-        losses++;
-      }
-    });
-  });
-  
-  return { wins, losses };
-}
+// ===============================
+// Header
+// ===============================
 
-function formatTopRecord(record) {
-  const { wins, losses } = record;
-  const total = wins + losses;
-  
-  if (total === 0) {
-    return "0–0 (—)";
-  }
-  
-  const winPct = ((wins / total) * 100).toFixed(1);
-  return `${wins}–${losses} (${winPct}%)`;
-}
-
-async function computeTeamRank(teamName, season) {
-  try {
-    const url = `/data/xtp/${season}/xtp_teams_${season}.json`;
-    const data = await fetchJSON(url);
-    
-    // Handle both array and object with 'teams' property
-    const teamsData = Array.isArray(data) ? data : (data.teams || []);
-    
-    // Sort teams: xTP desc, xTP_P desc, team name asc (same as leaderboard)
-    const sorted = [...teamsData].sort((a, b) => {
-      if (b.team_xTP !== a.team_xTP) return b.team_xTP - a.team_xTP;
-      if (b.team_xTP_P !== a.team_xTP_P) return b.team_xTP_P - a.team_xTP_P;
-      return a.team.localeCompare(b.team);
-    });
-    
-    // Find team's rank
-    const rank = sorted.findIndex(t => t.team === teamName) + 1;
-    return rank > 0 ? rank : null;
-  } catch (e) {
-    console.warn("Could not compute team rank:", e);
-    return null;
-  }
-}
-
-function createMVRankBadge(rank) {
-  if (rank === null || rank === undefined || rank === "") {
-    return document.createTextNode("");
-  }
-  
-  const badge = document.createElement("span");
-  badge.className = "rank-badge";
-  
-  // Medal badge styling: #1 gold, #2 silver, #3-5 bronze, others neutral
-  if (rank === 1) {
-    badge.classList.add("medal-gold");
-  } else if (rank === 2) {
-    badge.classList.add("medal-silver");
-  } else if (rank >= 3 && rank <= 5) {
-    badge.classList.add("medal-bronze");
-  } else {
-    badge.classList.add("standard");
-  }
-  
-  badge.textContent = `#${rank}`;
-  return badge;
-}
-
-async function renderTeamPage(team, metrics, starters, remaining, xtpData) {
-  // Header
+function renderHeader(team, metrics) {
   const teamName = team.team_name || team.name;
   document.getElementById("team-name").textContent = teamName;
-  document.getElementById("team-meta").textContent =
-    `${team.conference} · ${team.division}`;
 
-  // xTP Headline (Primary Metric) - show only if data exists
-  if (xtpData) {
-    await renderXTPHeadline(xtpData, teamName);
-    document.getElementById("starting-roster-section").style.display = "block";
-  } else {
-    document.getElementById("xtp-headline-section").style.display = "none";
-    document.getElementById("starting-roster-section").style.display = "none";
+  const logo = document.getElementById("team-logo");
+  const slug = team.team_id;
+  logo.src = `/assets/team_logos/${slug}.svg`;
+  logo.alt = `${teamName} logo`;
+  logo.hidden = false;
+  logo.onerror = () => {
+    if (!logo.dataset.fb) { logo.dataset.fb = "1"; logo.src = `/assets/team_logos/${slug}.png`; }
+    else { logo.hidden = true; }
+  };
+
+  // Chips: never render a chip for missing data (conference is genuinely
+  // null for some teams, so the chip is simply omitted, not filled with a
+  // placeholder).
+  const chipsEl = document.getElementById("team-chips");
+  chipsEl.innerHTML = "";
+  if (team.conference) {
+    const c = document.createElement("span");
+    c.className = "tp2-chip";
+    c.textContent = team.conference;
+    chipsEl.appendChild(c);
   }
+  if (team.division) {
+    const d = document.createElement("span");
+    d.className = "tp2-chip";
+    d.textContent = team.division;
+    chipsEl.appendChild(d);
+  }
+  // No coach field exists in the data -- omitted entirely, same principle.
 
-  // Team Profile Metrics (Supporting)
-  const m = metrics.metrics;
-  document.getElementById("tm-pf7").textContent = formatWithRank(m.avg_pf7?.value, m.avg_pf7?.rank, formatDecimal);
-  document.getElementById("tm-pa7").textContent = formatWithRank(m.avg_pa7?.value, m.avg_pa7?.rank, formatDecimal);
-  document.getElementById("tm-pd7").textContent = formatWithRank(m.avg_pd7?.value, m.avg_pd7?.rank, formatDecimal);
-  document.getElementById("tm-bonus").textContent = formatWithRank(m.bonus_rate?.value, m.bonus_rate?.rank, percent);
-  document.getElementById("tm-pin").textContent = formatWithRank(m.pin_rate?.value, m.pin_rate?.rank, percent);
-  document.getElementById("tm-tech").textContent = formatWithRank(m.tech_rate?.value, m.tech_rate?.rank, percent);
-  
-  // Top-10 and Top-33 Records: Calculate from starter profiles
-  const top10Record = calculateTopRecord(starters, 10);
-  const top33Record = calculateTopRecord(starters, 33);
-  document.getElementById("tm-top10-record").textContent = formatTopRecord(top10Record);
-  document.getElementById("tm-top33-record").textContent = formatTopRecord(top33Record);
-  
-  // W/L Record
-  const counts = metrics.counts || {};
-  document.getElementById("tm-wl-record").textContent = formatWLRecord(
-    counts.wins_included,
-    counts.losses_included,
-    counts.win_pct
-  );
-
-  // Advanced Metrics (Supporting)
-  const am = metrics.advanced_metrics;
-  document.getElementById("tm-si-plus").textContent = formatWithRank(am.si_plus?.value, am.si_plus?.rank);
-  document.getElementById("tm-df-plus").textContent = formatWithRank(am.df_plus?.value, am.df_plus?.rank);
-  document.getElementById("tm-apr-plus").textContent = formatWithRank(am.apr_plus?.value, am.apr_plus?.rank);
-
-  renderStartersTable(starters, xtpData);
-  renderRemainingRosterTable(remaining);
+  const resumeEl = document.getElementById("team-resume");
+  const counts = (metrics && metrics.counts) || {};
+  const parts = [`${SEASON - 1}-${String(SEASON).slice(2)}`];
+  if (counts.wins_included !== undefined && counts.losses_included !== undefined) {
+    parts.push(`Overall Record ${counts.wins_included}-${counts.losses_included}`);
+  }
+  resumeEl.textContent = parts.join(" · ");
 }
 
-async function renderXTPHeadline(xtpData, teamName) {
-  const section = document.getElementById("xtp-headline-section");
-  section.style.display = "block";
-  
-  // Large xTP value
-  const total = safe(xtpData.team_xTP, v => v.toFixed(1));
-  const sign = xtpData.team_xTP >= 0 ? "+" : "";
-  document.getElementById("xtp-total").textContent = `${sign}${total}`;
-  
-  // Rank badge (computed from leaderboard)
-  const season = resolveSeason();
-  const rank = await computeTeamRank(teamName, season);
-  const rankBadgeContainer = document.getElementById("xtp-rank-badge");
-  rankBadgeContainer.innerHTML = "";
-  if (rank) {
-    rankBadgeContainer.appendChild(createMVRankBadge(rank));
+// ===============================
+// Hero: projected NCAA team points
+// ===============================
+
+function renderHero(teamName, xtpData, xtpTeams) {
+  const valueEl = document.getElementById("hero-value");
+  const rankEl = document.getElementById("hero-rank");
+  const barEl = document.getElementById("hero-segmented-bar");
+  const legendEl = document.getElementById("hero-segmented-legend");
+  const onelinerEl = document.getElementById("hero-oneliner");
+  const top5El = document.getElementById("hero-top5-rows");
+
+  if (!xtpData) {
+    valueEl.textContent = "—";
+    document.getElementById("hero-section").querySelector(".tp2-hero-label").textContent = "Projected NCAA team points not available";
+    return;
   }
-  
-  // Breakdown text
-  document.getElementById("xtp-p").textContent = safe(xtpData.team_xTP_P, v => v.toFixed(1));
-  document.getElementById("xtp-a").textContent = safe(xtpData.team_xTP_A, v => v.toFixed(1));
-  document.getElementById("xtp-b").textContent = safe(xtpData.team_xTP_B, v => v.toFixed(1));
+
+  valueEl.textContent = fmtDecimal(xtpData.team_xTP, 1);
+
+  const sorted = [...xtpTeams].sort((a, b) => {
+    if (b.team_xTP !== a.team_xTP) return b.team_xTP - a.team_xTP;
+    if (b.team_xTP_P !== a.team_xTP_P) return b.team_xTP_P - a.team_xTP_P;
+    return a.team.localeCompare(b.team);
+  });
+  const rank = sorted.findIndex(t => t.team === teamName) + 1;
+  rankEl.innerHTML = "";
+  if (rank > 0) rankEl.appendChild(rankChip(rank));
+
+  // Segmented 100% bar: this team's own placement/advancement/bonus split.
+  const p = xtpData.team_xTP_P || 0, a = xtpData.team_xTP_A || 0, b = xtpData.team_xTP_B || 0;
+  const total = p + a + b || 1;
+  barEl.innerHTML = `
+    <span class="tp2-segment tp2-segment--placement" style="width:${(p / total * 100).toFixed(1)}%"></span>
+    <span class="tp2-segment tp2-segment--advancement" style="width:${(a / total * 100).toFixed(1)}%"></span>
+    <span class="tp2-segment tp2-segment--bonus" style="width:${(b / total * 100).toFixed(1)}%"></span>
+  `;
+  legendEl.innerHTML = `
+    <span class="tp2-legend-item"><span class="tp2-legend-swatch tp2-segment--placement"></span>Placement ${fmtDecimal(p)}</span>
+    <span class="tp2-legend-item"><span class="tp2-legend-swatch tp2-segment--advancement"></span>Advancement ${fmtDecimal(a)}</span>
+    <span class="tp2-legend-item"><span class="tp2-legend-swatch tp2-segment--bonus"></span>Bonus ${fmtDecimal(b)}</span>
+  `;
+
+  // Projected finalists/champions: expected value (sum of real per-wrestler
+  // probabilities), not a hard threshold count.
+  const weights = Object.values(xtpData.weights || {});
+  const finalists = Math.round(weights.reduce((s, w) => s + (w.final_prob || 0), 0));
+  const champions = Math.round(weights.reduce((s, w) => s + (w.champ_prob || 0), 0));
+  onelinerEl.textContent = `${finalists} projected finalists · ${champions} projected champions`;
+
+  // Top 5 team comparison -- shows the gap vs the field directly.
+  const top5 = sorted.slice(0, 5);
+  const maxVal = top5[0].team_xTP;
+  top5El.innerHTML = top5.map(t => {
+    const isSelf = t.team === teamName;
+    const pct = Math.max((t.team_xTP / maxVal) * 100, 2);
+    return `<div class="tp2-top5-row ${isSelf ? "tp2-top5-row--self" : ""}">` +
+      `<span class="tp2-top5-name">${t.team}</span>` +
+      `<span class="tp2-top5-bar-track"><span class="tp2-top5-bar-fill" style="width:${pct}%"></span></span>` +
+      `<span class="tp2-top5-value">${fmtDecimal(t.team_xTP)}</span>` +
+      `</div>`;
+  }).join("");
 }
 
-function resolveSeason() {
-  return "2026"; // Or make dynamic later
-}
+// ===============================
+// Starting roster
+// ===============================
 
-function createMVRankBadge(rank) {
-  if (rank === null || rank === undefined || rank === "") {
-    return document.createTextNode("—");
-  }
-  
-  const badge = document.createElement("span");
-  badge.className = "rank-badge";
-  
-  // Medal badge styling: #1 gold, #2 silver, #3-5 bronze, others neutral
-  if (rank === 1) {
-    badge.classList.add("medal-gold");
-  } else if (rank === 2) {
-    badge.classList.add("medal-silver");
-  } else if (rank >= 3 && rank <= 5) {
-    badge.classList.add("medal-bronze");
-  } else {
-    badge.classList.add("standard");
-  }
-  
-  badge.textContent = `#${rank}`;
-  return badge;
-}
-
-function renderStartersTable(starters, xtpData) {
+function renderStartingRoster(starters, xtpData) {
   const tbody = document.querySelector("#starting-roster-table tbody");
   tbody.innerHTML = "";
-
   starters.sort((a, b) => a.weight - b.weight);
 
-  // Calculate max xTP for bar scaling (from this team's starters)
-  let maxXTP = 0;
-  starters.forEach(({ weight }) => {
-    const weightStr = String(weight);
-    const weightData = xtpData?.weights?.[weightStr];
-    if (weightData && weightData.xTP !== null && weightData.xTP !== undefined) {
-      if (weightData.xTP > maxXTP) maxXTP = weightData.xTP;
-    }
-  });
+  const maxXTP = Math.max(...starters.map(({ weight }) => (xtpData?.weights?.[String(weight)]?.xTP) || 0), 1);
 
   starters.forEach(({ weight, profile }) => {
-    const weightStr = String(weight);
-    const weightData = xtpData?.weights?.[weightStr];
-    const row = document.createElement("tr");
-    row.className = "xtp-expanded-row";
-
-    // Weight
-    const weightTd = document.createElement("td");
-    weightTd.textContent = weight;
-    row.appendChild(weightTd);
-
-    // Wrestler name (clickable) - always show if profile exists
-    const wrestlerTd = document.createElement("td");
-    if (profile && profile.wrestler_id) {
-      const wrestlerLink = document.createElement("a");
-      wrestlerLink.href = `/wrestler.html?id=${profile.wrestler_id}`;
-      wrestlerLink.textContent = profile.name || "Unknown";
-      wrestlerTd.appendChild(wrestlerLink);
-    } else {
-      wrestlerTd.textContent = "—";
-    }
-    row.appendChild(wrestlerTd);
-
-    // Rank - medal badge (use weightData rank if available, otherwise profile rank)
-    const rankTd = document.createElement("td");
-    const rank = weightData?.rank ?? profile?.current_rank;
-    if (rank !== null && rank !== undefined) {
-      rankTd.appendChild(createMVRankBadge(rank));
-    } else {
-      rankTd.textContent = "—";
-    }
-    row.appendChild(rankTd);
-
-    // MV - numeric value only (no bar, typographic thresholds) - always show if available
-    const mvTd = document.createElement("td");
-    mvTd.className = "num mv-value-cell";
-    
-    if (profile?.metrics?.mat_value?.mv_avg !== null && profile?.metrics?.mat_value?.mv_avg !== undefined) {
-      const mv = profile.metrics.mat_value.mv_avg;
-      const mvSpan = document.createElement("span");
-      mvSpan.className = "mv-numeric";
-      
-      // Apply typographic thresholds
-      if (mv >= 4.5) {
-        mvSpan.classList.add("mv-high");
-      } else if (mv >= 3.0) {
-        mvSpan.classList.add("mv-mid");
-      } else if (mv >= 0) {
-        mvSpan.classList.add("mv-low");
-      } else {
-        // MV < 0: muted red, normal weight, slightly reduced opacity
-        mvSpan.classList.add("mv-negative");
-      }
-      
-      // Format with leading + for positive values
-      const sign = mv >= 0 ? "+" : "";
-      mvSpan.textContent = `${sign}${mv.toFixed(1)}`;
-      
-      // Add tooltip using tooltip system
-      const tooltipText = `TPAR: ${sign}${mv.toFixed(1)}. Team Points Above Replacement relative to a replacement-level Division I starter at ${weight} lbs.`;
-      addTooltip(mvSpan, tooltipText);
-      
-      mvTd.appendChild(mvSpan);
-    } else {
-      mvTd.textContent = "—";
-    }
-    row.appendChild(mvTd);
-
-    // xTP (total) - primary metric with bar (show "0" if no qualifier)
-    const xtpTd = document.createElement("td");
-    xtpTd.className = "num metric-primary expanded-xtp-cell";
-
-    if (weightData && weightData.xTP !== null && weightData.xTP !== undefined && weightData.xTP > 0) {
-      // Scale bars relative to max xTP in THIS team's starters
-      xtpTd.appendChild(createMetricBar(weightData.xTP, maxXTP || 100.0));
-    } else {
-      // No qualifier - show "0"
-      xtpTd.textContent = "0";
-    }
-    row.appendChild(xtpTd);
-
-    // xTP_P - subcomponent (show "-" if no qualifier)
-    const xtpPTd = document.createElement("td");
-    xtpPTd.className = "num metric-sub expanded-component-col xtp-sub";
-    if (weightData && weightData.xTP_P !== null && weightData.xTP_P !== undefined) {
-      xtpPTd.textContent = weightData.xTP_P.toFixed(1);
-    } else {
-      xtpPTd.textContent = "—";
-    }
-    row.appendChild(xtpPTd);
-
-    // xTP_A - subcomponent (show "-" if no qualifier)
-    const xtpATd = document.createElement("td");
-    xtpATd.className = "num metric-sub expanded-component-col xtp-sub";
-    if (weightData && weightData.xTP_A !== null && weightData.xTP_A !== undefined) {
-      xtpATd.textContent = weightData.xTP_A.toFixed(1);
-    } else {
-      xtpATd.textContent = "—";
-    }
-    row.appendChild(xtpATd);
-
-    // xTP_B - subcomponent (show "-" if no qualifier)
-    const xtpBTd = document.createElement("td");
-    xtpBTd.className = "num metric-sub expanded-component-col xtp-sub";
-    if (weightData && weightData.xTP_B !== null && weightData.xTP_B !== undefined) {
-      xtpBTd.textContent = weightData.xTP_B.toFixed(1);
-    } else {
-      xtpBTd.textContent = "—";
-    }
-    row.appendChild(xtpBTd);
-
-    tbody.appendChild(row);
-  });
-}
-
-function renderRemainingRosterTable(remaining) {
-  const tbody = document.querySelector("#remaining-roster-table tbody");
-  tbody.innerHTML = "";
-
-  // Sort: weight asc, then rank asc (unranked last), then TPAR desc
-  remaining.sort((a, b) => {
-    const weightA = a.weight || 999;
-    const weightB = b.weight || 999;
-    if (weightA !== weightB) return weightA - weightB;
-    const rankA = a.profile?.current_rank ?? 9999;
-    const rankB = b.profile?.current_rank ?? 9999;
-    if (rankA !== rankB) return rankA - rankB;
-    const mvA = a.profile?.metrics?.mat_value?.mv_avg ?? -999;
-    const mvB = b.profile?.metrics?.mat_value?.mv_avg ?? -999;
-    return mvB - mvA;
-  });
-
-  remaining.forEach(({ weight, profile }) => {
+    const wd = xtpData?.weights?.[String(weight)];
     const tr = document.createElement("tr");
 
-    // Weight
     const weightTd = document.createElement("td");
-    weightTd.textContent = weight || "—";
+    weightTd.textContent = weight;
     tr.appendChild(weightTd);
 
-    // Name (linked)
     const nameTd = document.createElement("td");
+    nameTd.className = "name-cell";
     if (profile?.wrestler_id) {
       const a = document.createElement("a");
       a.href = `/wrestler.html?id=${profile.wrestler_id}`;
       a.textContent = profile.name || "Unknown";
       nameTd.appendChild(a);
+      const grade = abbrevGrade(profile.grade);
+      if (grade) {
+        const sub = document.createElement("div");
+        sub.className = "tp2-name-sub";
+        sub.textContent = grade;
+        nameTd.appendChild(sub);
+      }
     } else {
       nameTd.textContent = "—";
     }
     tr.appendChild(nameTd);
 
-    // Rank
     const rankTd = document.createElement("td");
-    const rank = profile?.current_rank;
-    if (rank !== null && rank !== undefined) {
-      rankTd.appendChild(createRankBadge(rank));
-    } else {
-      rankTd.textContent = "—";
-    }
+    const rank = wd?.rank ?? profile?.current_rank;
+    rankTd.appendChild(rankChip(rank));
     tr.appendChild(rankTd);
 
-    // TPAR
-    const mvTd = document.createElement("td");
-    mvTd.className = "num mv-value-cell";
-    const mv = profile?.metrics?.mat_value?.mv_avg;
-    if (mv !== null && mv !== undefined) {
-      const mvSpan = document.createElement("span");
-      mvSpan.className = "mv-numeric";
-      if (mv >= 4.5) mvSpan.classList.add("mv-high");
-      else if (mv >= 3.0) mvSpan.classList.add("mv-mid");
-      else if (mv >= 0) mvSpan.classList.add("mv-low");
-      else mvSpan.classList.add("mv-negative");
-      const sign = mv >= 0 ? "+" : "";
-      mvSpan.textContent = `${sign}${mv.toFixed(1)}`;
-      mvTd.appendChild(mvSpan);
+    const tparTd = document.createElement("td");
+    tparTd.className = "num";
+    const tparVal = fmtTpar(profile?.metrics?.mat_value?.mv_avg);
+    tparTd.textContent = tparVal !== null ? tparVal : "—";
+    tr.appendChild(tparTd);
+
+    const projTd = document.createElement("td");
+    projTd.className = "num tp2-proj-cell";
+    if (wd && wd.xTP !== null && wd.xTP !== undefined) {
+      const pct = Math.max((wd.xTP / maxXTP) * 100, 2);
+      const p = wd.xTP_P || 0, a = wd.xTP_A || 0, b = wd.xTP_B || 0;
+      const rowTotal = (p + a + b) || 1;
+      projTd.innerHTML =
+        `<span class="tp2-proj-value">${fmtDecimal(wd.xTP)}</span>` +
+        `<span class="tp2-proj-bar-track" style="width:${pct}%">` +
+        `<span class="tp2-segment tp2-segment--placement" style="width:${(p / rowTotal * 100).toFixed(1)}%"></span>` +
+        `<span class="tp2-segment tp2-segment--advancement" style="width:${(a / rowTotal * 100).toFixed(1)}%"></span>` +
+        `<span class="tp2-segment tp2-segment--bonus" style="width:${(b / rowTotal * 100).toFixed(1)}%"></span>` +
+        `</span>`;
     } else {
-      mvTd.textContent = "—";
+      projTd.textContent = "0";
     }
-    tr.appendChild(mvTd);
+    tr.appendChild(projTd);
+
+    const breakdownTd = document.createElement("td");
+    breakdownTd.className = "tp2-breakdown-cell";
+    if (wd) {
+      breakdownTd.textContent = `${fmtDecimal(wd.xTP_P)} pl · ${fmtDecimal(wd.xTP_A)} adv · ${fmtDecimal(wd.xTP_B)} bonus`;
+    } else {
+      breakdownTd.textContent = "—";
+    }
+    tr.appendChild(breakdownTd);
+
+    const riskTd = document.createElement("td");
+    const risk = wd ? seedRisk(wd.aa_prob) : null;
+    if (risk) {
+      const chip = document.createElement("span");
+      chip.className = `tp2-risk-chip ${risk.cls}`;
+      chip.textContent = risk.label;
+      riskTd.appendChild(chip);
+    } else {
+      riskTd.textContent = "—";
+    }
+    tr.appendChild(riskTd);
 
     tbody.appendChild(tr);
   });
 }
 
-function createRankBadge(rank) {
-  if (rank === null || rank === undefined || rank === "") {
-    return document.createTextNode("—");
-  }
-  
-  const badge = document.createElement("span");
-  badge.className = "rank-badge";
-  
-  // Top 5 get accent color, others get muted
-  if (rank <= 5) {
-    badge.classList.add("top");
-  } else {
-    badge.classList.add("standard");
-  }
-  
-  badge.textContent = `#${rank}`;
-  return badge;
+// ===============================
+// How they score / How they finish
+// ===============================
+
+function renderScoreCard(metrics) {
+  const card = document.getElementById("score-card");
+  const m = metrics.metrics || {};
+  const counts = metrics.counts || {};
+
+  card.innerHTML = `
+    <div class="tp2-subhead">How they score</div>
+    <div class="tp2-big-stat">
+      <span class="tp2-big-stat-value">${rankInParens(m.avg_pd7?.value, m.avg_pd7?.rank, v => fmtDecimal(v))}</span>
+      <span class="tp2-big-stat-label">Point differential / 7 min</span>
+    </div>
+    <div class="tp2-two-bar" id="score-two-bar"></div>
+    <div class="tp2-stat-row"><span>Overall Record</span><span>${counts.wins_included ?? "—"}–${counts.losses_included ?? "—"} (${percent(counts.win_pct)})</span></div>
+    <div class="tp2-stat-row"><span>Top-10 record</span><span>${rankInParens(m.top10_win_pct?.value, m.top10_win_pct?.rank, percent)}</span></div>
+  `;
+
+  const pf = m.avg_pf7?.value || 0, pa = m.avg_pa7?.value || 0;
+  const maxPfPa = Math.max(pf, pa, 1);
+  document.getElementById("score-two-bar").innerHTML = `
+    <div class="tp2-two-bar-row"><span class="tp2-two-bar-label">Scored</span><span class="tp2-two-bar-track"><span class="tp2-two-bar-fill tp2-two-bar-fill--scored" style="width:${(pf / maxPfPa * 100).toFixed(1)}%"></span></span><span class="tp2-two-bar-value">${fmtDecimal(pf)}</span></div>
+    <div class="tp2-two-bar-row"><span class="tp2-two-bar-label">Allowed</span><span class="tp2-two-bar-track"><span class="tp2-two-bar-fill tp2-two-bar-fill--allowed" style="width:${(pa / maxPfPa * 100).toFixed(1)}%"></span></span><span class="tp2-two-bar-value">${fmtDecimal(pa)}</span></div>
+  `;
 }
 
-function createMetricBar(value, maxValue) {
-  if (value === null || value === undefined || maxValue === 0) {
-    return document.createTextNode("—");
-  }
-  
-  // Cap width at 96%
-  const width = Math.min((value / maxValue) * 100, 96);
-  
+function createSkillRow(label, fullName, value) {
+  const row = document.createElement("div");
+  row.className = "tp2-skill-row-dense";
+  const labelEl = document.createElement("div");
+  labelEl.className = "tp2-skill-row-label";
+  labelEl.innerHTML = `${label} <span class="tp2-skill-fullname">${fullName}</span>`;
+  row.appendChild(labelEl);
+
+  const barWrapper = document.createElement("div");
+  barWrapper.className = "skill-bar-wrapper";
+  barWrapper.appendChild(Object.assign(document.createElement("div"), { className: "skill-baseline" }));
+  const SKILL_MAX = 160;
+  const barPct = Math.min((value / SKILL_MAX) * 100, 100);
   const bar = document.createElement("div");
-  bar.className = "metric-bar";
-  
-  const fill = document.createElement("div");
-  fill.className = "metric-bar-fill";
-  fill.style.width = `${width}%`;
-  
-  const valueSpan = document.createElement("span");
-  valueSpan.className = "metric-bar-value";
-  valueSpan.textContent = value.toFixed(1);
-  
-  bar.appendChild(fill);
-  bar.appendChild(valueSpan);
-  return bar;
+  bar.className = "skill-bar";
+  bar.style.width = `${barPct}%`;
+  bar.classList.add(value < 95 ? "low" : value <= 105 ? "neutral" : "high");
+  barWrapper.appendChild(bar);
+  row.appendChild(barWrapper);
+
+  const valueEl = document.createElement("div");
+  valueEl.className = "skill-value";
+  valueEl.classList.add(value < 95 ? "skill-value-low" : value > 105 ? "skill-value-high" : "skill-value-neutral");
+  valueEl.textContent = Math.round(value);
+  row.appendChild(valueEl);
+  return row;
 }
 
-// renderXTPSection removed - replaced by renderXTPHeadline
+function renderFinishCard(metrics) {
+  const card = document.getElementById("finish-card");
+  const m = metrics.metrics || {};
+  const am = metrics.advanced_metrics || {};
 
-// Init
-document.addEventListener("DOMContentLoaded", () => {
-  const teamId = getQueryParam("team");
-  if (!teamId) {
-    document.getElementById("team-name").textContent = "No team selected";
-    return;
+  card.innerHTML = `
+    <div class="tp2-subhead">How they finish</div>
+    <div class="tp2-stat-row"><span>Bonus</span><span>${rankInParens(m.bonus_rate?.value, m.bonus_rate?.rank, percent)}</span></div>
+    <div class="tp2-stat-row"><span>TF</span><span>${rankInParens(m.tech_rate?.value, m.tech_rate?.rank, percent)}</span></div>
+    <div class="tp2-stat-row"><span>Pin</span><span>${rankInParens(m.pin_rate?.value, m.pin_rate?.rank, percent)}</span></div>
+    <div class="section-divider" style="margin:12px 0"></div>
+  `;
+
+  const skillWrap = document.createElement("div");
+  if (am.si_plus?.value != null) skillWrap.appendChild(createSkillRow("SI+", "Scoring", am.si_plus.value));
+  if (am.df_plus?.value != null) skillWrap.appendChild(createSkillRow("DF+", "Defense", am.df_plus.value));
+  if (am.apr_plus?.value != null) skillWrap.appendChild(createSkillRow("APR+", "Pin Rate", am.apr_plus.value));
+  card.appendChild(skillWrap);
+}
+
+// ===============================
+// Remaining roster: next up vs. the rest
+// ===============================
+
+const NEXT_UP_RANK_CUTOFF = 40;
+const NEXT_UP_TPAR_CUTOFF = 0;
+
+function renderTparCell(profile) {
+  const mv = profile?.metrics?.mat_value?.mv_avg;
+  if (mv === null || mv === undefined) {
+    return `<span class="tp2-tpar-nodata">— <span class="tp2-nodata-label">Insufficient data</span></span>`;
   }
-  loadTeam(teamId);
-});
+  const cls = mv < 0 ? "tp2-tpar-negative" : mv >= 3.0 ? "tp2-tpar-positive" : "";
+  return `<span class="${cls}">${fmtTpar(mv)}</span>`;
+}
+
+function renderRemainingRoster(remaining) {
+  remaining.sort((a, b) => {
+    const w = (a.weight || 999) - (b.weight || 999);
+    if (w !== 0) return w;
+    const mvA = a.profile?.metrics?.mat_value?.mv_avg ?? -999;
+    const mvB = b.profile?.metrics?.mat_value?.mv_avg ?? -999;
+    return mvB - mvA;
+  });
+
+  const nextUp = [];
+  const rest = [];
+  remaining.forEach(entry => {
+    const rank = entry.profile?.current_rank;
+    const mv = entry.profile?.metrics?.mat_value?.mv_avg;
+    const isNextUp = (rank !== null && rank !== undefined && rank <= NEXT_UP_RANK_CUTOFF) ||
+      (mv !== null && mv !== undefined && mv > NEXT_UP_TPAR_CUTOFF);
+    (isNextUp ? nextUp : rest).push(entry);
+  });
+
+  const buildRows = (list) => list.map(({ weight, profile }) => {
+    const nameCell = profile?.wrestler_id
+      ? `<a href="/wrestler.html?id=${profile.wrestler_id}">${profile.name || "Unknown"}</a>`
+      : "—";
+    const rank = profile?.current_rank;
+    return `<tr>` +
+      `<td>${weight || "—"}</td>` +
+      `<td>${nameCell}</td>` +
+      `<td>${rank ? `<span class="tp2-rank-chip ${rankTierClass(rank)}">#${rank}</span>` : "—"}</td>` +
+      `<td class="num">${renderTparCell(profile)}</td>` +
+      `</tr>`;
+  }).join("");
+
+  document.getElementById("next-up-body").innerHTML = buildRows(nextUp);
+  document.getElementById("rest-body").innerHTML = buildRows(rest);
+  document.getElementById("rest-count").textContent = rest.length;
+
+  const toggleBtn = document.getElementById("toggle-rest-btn");
+  const restWrapper = document.getElementById("rest-wrapper");
+  if (rest.length === 0) {
+    toggleBtn.hidden = true;
+  } else {
+    toggleBtn.addEventListener("click", () => {
+      restWrapper.hidden = !restWrapper.hidden;
+      toggleBtn.textContent = restWrapper.hidden ? `Show the rest (${rest.length})` : "Hide";
+    });
+  }
+}

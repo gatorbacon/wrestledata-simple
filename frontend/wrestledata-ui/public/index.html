@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>MatSavant — College Wrestling Analytics</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/styles.css?v=20260912" />
+  <link rel="stylesheet" href="/styles.css?v=20260913" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   <script src="/search_index.js"></script>
 </head>
@@ -36,17 +36,30 @@
         <button class="hp-tab" data-weight="197">197</button>
         <button class="hp-tab" data-weight="285">285</button>
       </div>
+      <div class="tpar2-def-row">
+        <span class="tpar2-def-chip">
+          TPAR — how completely a wrestler wins, not just whether they win.
+          <span class="tpar2-info" title="TPAR blends bonus-point rate, pin rate, and margin of victory into one number, calibrated so 4.5+ reflects a dominant tournament wrestler.">ⓘ</span>
+        </span>
+        <span class="tpar2-sort-control">
+          Sort:
+          <select id="p4p-sort-select">
+            <option value="rank">Rank</option>
+            <option value="tpar">Highest TPAR</option>
+          </select>
+        </span>
+      </div>
       <div class="table-wrapper">
-        <table id="p4p-table">
+        <table id="p4p-table" class="tpar2-table">
           <thead>
             <tr>
-              <th style="width: 32px;"></th>
-              <th>Name</th>
+              <th style="width: 32px;">Rank</th>
+              <th>Wrestler</th>
               <th>Team</th>
+              <th class="num" title="TPAR blends bonus-point rate, pin rate, and margin of victory into one number, calibrated so 4.5+ reflects a dominant tournament wrestler.">TPAR ⓘ</th>
+              <th class="num">Bonus %</th>
+              <th class="num">Pin %</th>
               <th>Record</th>
-              <th class="num">Bonus Rate</th>
-              <th class="num">Pin Rate</th>
-              <th class="num">TPAR</th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -236,7 +249,7 @@
   <script src="/homepage.js?v=20260909"></script>
   <script src="/homepage_team_odds.js?v=20260909"></script>
   <script src="/dual_ticker.js?v=20260905"></script>
-  <script src="/p4p_rankings.js?v=20260905"></script>
+  <script src="/p4p_rankings.js?v=20260906"></script>
   <script src="/championship_widgets.js?v=20260905"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Team Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/styles.css?v=20260912" />
+  <link rel="stylesheet" href="/styles.css?v=20260913" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   <script src="/search_index.js"></script>
 </head>
@@ -12,45 +12,54 @@
 <body>
   <script src="/header.js?v=20260903"></script>
   <div class="page-container">
-    <!-- 1) TEAM HEADER -->
-    <header class="header">
-      <h1 id="team-name"></h1>
-      <div class="header-subline" id="team-meta"></div>
-      <div class="section-divider"></div>
-    </header>
 
-    <!-- 2) xTP HEADLINE (PRIMARY METRIC) -->
-    <section id="xtp-headline-section" class="xtp-headline-section" style="display: none;">
-      <div class="xtp-headline">
-        <div class="xtp-headline-main">
-          <span class="xtp-value" id="xtp-total">—</span>
-          <span class="xtp-rank-badge" id="xtp-rank-badge"></span>
-        </div>
-        <div class="xtp-headline-label">Projected NCAA Team Points</div>
-        <div class="xtp-headline-breakdown">
-          <span>Placement: <span id="xtp-p">—</span></span>
-          <span>Advancement: <span id="xtp-a">—</span></span>
-          <span>Bonus: <span id="xtp-b">—</span></span>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-row">
+        <img class="tp2-logo" id="team-logo" alt="" hidden />
+        <div class="header-text">
+          <h1 id="team-name"></h1>
+          <div class="tp2-chip-row" id="team-chips"></div>
+          <div class="tp2-resume-line" id="team-resume"></div>
         </div>
       </div>
-      <div class="section-divider"></div>
+    </header>
+
+    <!-- HERO: PROJECTED NCAA TEAM POINTS -->
+    <section class="section tp2-hero-section" id="hero-section">
+      <div class="tp2-hero-top">
+        <div class="tp2-hero-main">
+          <div class="tp2-hero-value" id="hero-value">—</div>
+          <div class="tp2-hero-label">Projected NCAA team points</div>
+        </div>
+        <div class="tp2-hero-rank" id="hero-rank"></div>
+      </div>
+
+      <div class="tp2-segmented-bar" id="hero-segmented-bar"></div>
+      <div class="tp2-segmented-legend" id="hero-segmented-legend"></div>
+
+      <div class="tp2-oneliner" id="hero-oneliner"></div>
+
+      <div class="tp2-top5" id="hero-top5">
+        <div class="tp2-top5-title">Top 5 projected teams</div>
+        <div class="tp2-top5-rows" id="hero-top5-rows"></div>
+      </div>
     </section>
 
-    <!-- 3) STARTING ROSTER TABLE (CORE CONTENT) -->
-    <section id="starting-roster-section" class="section">
+    <!-- STARTING ROSTER -->
+    <section class="section" id="starting-roster-section">
       <h2>Starting Roster</h2>
       <div class="table-wrapper">
-        <table id="starting-roster-table">
+        <table id="starting-roster-table" class="tp2-roster-table">
           <thead>
             <tr>
               <th>Weight</th>
               <th>Wrestler</th>
               <th>Rank</th>
-              <th data-tooltip="mv">TPAR</th>
-              <th data-tooltip="xtp">xTP</th>
-              <th data-tooltip="xtp-p">xTP_P</th>
-              <th data-tooltip="xtp-a">xTP_A</th>
-              <th data-tooltip="xtp-b">xTP_B</th>
+              <th class="num" data-tooltip="mv">TPAR</th>
+              <th class="num">Proj. pts</th>
+              <th>Breakdown</th>
+              <th>Seed risk</th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -58,366 +67,48 @@
       </div>
     </section>
 
-    <style>
-      /* Reuse exact styles from xTP leaderboard expanded rows */
-      .no-qualifier {
-        color: var(--muted);
-        font-style: italic;
-      }
-      
-      /* Expanded row visual hierarchy - match leaderboard exactly */
-      .xtp-expanded-row {
-        font-size: 0.88em;
-        line-height: 1.15;
-      }
-      
-      .xtp-expanded-row td {
-        padding-top: 6px;
-        padding-bottom: 6px;
-        color: var(--muted);
-      }
-      
-      .xtp-expanded-row td a {
-        color: var(--accent);
-      }
-      
-      .xtp-expanded-row td a:hover {
-        color: var(--accent);
-        text-decoration: underline;
-      }
-      
-      .xtp-expanded-row td.xtp-sub {
-        padding-top: 4px;
-        padding-bottom: 4px;
-        font-size: 0.9em;
-        color: var(--muted);
-      }
-      
-      .xtp-expanded-row:hover {
-        background: var(--panel-2);
-      }
-      
-      /* Component column widths - match leaderboard */
-      .expanded-component-col {
-        width: 60px;
-        font-size: 0.8125rem;
-        color: var(--muted);
-      }
-      
-      /* xTP column width - match leaderboard, left-aligned */
-      .expanded-xtp-cell {
-        min-width: 180px;
-        width: 180px;
-        text-align: left;
-      }
-      
-      /* xTP column header - left-aligned */
-      #starting-roster-table th:nth-child(5) {
-        text-align: left;
-      }
-      
-      /* MV column - compact, numeric only, left-aligned */
-      .mv-value-cell {
-        width: 70px;
-        text-align: left;
-        font-variant-numeric: tabular-nums;
-      }
-      
-      /* MV column header - left-aligned */
-      #starting-roster-table th:nth-child(4) {
-        text-align: left;
-      }
-      
-      /* MV typographic thresholds */
-      .mv-numeric {
-        font-size: inherit;
-        font-variant-numeric: tabular-nums;
-      }
-      
-      .mv-numeric.mv-high {
-        font-weight: 600;
-        color: var(--text);
-      }
-      
-      .mv-numeric.mv-mid {
-        font-weight: 400;
-        color: var(--text);
-      }
-      
-      .mv-numeric.mv-low {
-        font-weight: 400;
-        color: var(--muted);
-        opacity: 0.65;
-      }
-      
-      .mv-numeric.mv-negative {
-        font-weight: 400;
-        color: #dc5a5a; /* muted red */
-        opacity: 0.75; /* slightly reduced opacity */
-      }
-      
-      .mv-numeric.tooltip-trigger {
-        cursor: help;
-      }
-      
-      /* Table header tooltips - entire cell is hoverable */
-      #starting-roster-table th[data-tooltip] {
-        cursor: help;
-      }
-      
-      /* xTP Headline Section - Primary Metric */
-      .xtp-headline-section {
-        margin-top: 2em;
-        margin-bottom: 2em;
-      }
-      
-      .xtp-headline {
-        text-align: left;
-      }
-      
-      .xtp-headline-main {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        margin-bottom: 8px;
-      }
-      
-      .xtp-value {
-        font-size: 3.5em;
-        font-weight: 700;
-        color: var(--text);
-        line-height: 1;
-        font-variant-numeric: tabular-nums;
-      }
-      
-      .xtp-rank-badge {
-        display: inline-block;
-      }
-      
-      .xtp-headline-label {
-        font-size: 0.95rem;
-        color: var(--muted);
-        margin-bottom: 12px;
-      }
-      
-      .xtp-headline-breakdown {
-        font-size: 0.875rem;
-        color: var(--muted);
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-      }
-      
-      .xtp-headline-breakdown span {
-        white-space: nowrap;
-      }
-      
-      /* Metrics Sections - Supporting Information */
-      .metrics-section-title {
-        font-size: 1rem;
-        font-weight: 600;
-        color: var(--text);
-        margin-bottom: 12px;
-        margin-top: 0;
-      }
-      
-      .metrics-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px 32px;
-        margin-bottom: 2em;
-      }
-      
-      .metrics-grid--three-columns {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 12px 24px;
-        margin-bottom: 2em;
-      }
-      
-      @media (max-width: 900px) {
-        .metrics-grid--three-columns {
-          grid-template-columns: 1fr;
-        }
-      }
-      
-      .metrics-column {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-      }
-      
-      /* Divider lines between columns */
-      .metrics-grid--three-columns .metrics-column:not(:last-child) {
-        border-right: 1px solid rgba(255, 255, 255, 0.06);
-        padding-right: 24px;
-      }
-      
-      @media (max-width: 900px) {
-        .metrics-grid--three-columns .metrics-column:not(:last-child) {
-          border-right: none;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-          padding-right: 0;
-          padding-bottom: 1em;
-          margin-bottom: 1em;
-        }
-      }
-      
-      .metric-item {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        font-size: 0.875rem;
-      }
-      
-      .metric-label {
-        color: var(--muted);
-        font-weight: 400;
-      }
-      
-      .metric-value {
-        color: var(--text);
-        font-variant-numeric: tabular-nums;
-        font-weight: 500;
-      }
-      
-      /* Section Dividers */
-      .section-divider {
-        height: 1px;
-        background: var(--border);
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
-      }
-      
-      /* Remaining Roster - Visually Secondary */
-      .section--remaining-roster {
-        margin-top: 3em;
-      }
-      
-      .remaining-roster-table thead th {
-        color: var(--muted);
-        font-weight: 500;
-        font-size: 0.875rem;
-      }
-      
-      .remaining-roster-table tbody td {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-      }
-      
-      .remaining-roster-table tbody tr:hover {
-        background: var(--panel-2);
-      }
-      
-      /* Matches column - muted */
-      .remaining-roster-table td:nth-child(5) {
-        color: var(--muted);
-        font-size: 0.875rem;
-      }
-    </style>
-
-    <!-- 4) TEAM PROFILE METRICS (SUPPORTING) -->
-    <section id="team-profile-metrics-section" class="section">
-      <h3 class="metrics-section-title">Team Profile</h3>
-      <div class="metrics-grid metrics-grid--three-columns">
-        <!-- COLUMN 1 — PERFORMANCE (Scoring) -->
-        <div class="metrics-column">
-          <div class="metric-item">
-            <span class="metric-label">Points Scored (per 7 min)</span>
-            <span class="metric-value" id="tm-pf7">—</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-label">Points Allowed (per 7 min)</span>
-            <span class="metric-value" id="tm-pa7">—</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-label">Point Differential (per 7 min)</span>
-            <span class="metric-value" id="tm-pd7">—</span>
-          </div>
-        </div>
-        
-        <!-- COLUMN 2 — RESULTS -->
-        <div class="metrics-column">
-          <div class="metric-item">
-            <span class="metric-label">W–L Record</span>
-            <span class="metric-value" id="tm-wl-record">—</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-label">Top-33 Record</span>
-            <span class="metric-value" id="tm-top33-record">—</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-label">Top-10 Record</span>
-            <span class="metric-value" id="tm-top10-record">—</span>
-          </div>
-        </div>
-        
-        <!-- COLUMN 3 — STYLE / BONUS -->
-        <div class="metrics-column">
-          <div class="metric-item">
-            <span class="metric-label">Bonus Rate</span>
-            <span class="metric-value" id="tm-bonus">—</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-label">Pin Rate</span>
-            <span class="metric-value" id="tm-pin">—</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-label">Tech Fall Rate</span>
-            <span class="metric-value" id="tm-tech">—</span>
-          </div>
-        </div>
-      </div>
+    <!-- HOW THEY SCORE / HOW THEY FINISH -->
+    <section class="tp2-card-grid">
+      <div class="profile-section" id="score-card"></div>
+      <div class="profile-section" id="finish-card"></div>
     </section>
 
-    <!-- 5) ADVANCED METRICS (SUPPORTING) -->
-    <section id="advanced-metrics-section" class="section">
-      <h3 class="metrics-section-title">Advanced Metrics</h3>
-      <div class="metrics-grid--three-columns">
-        <!-- COLUMN 1 — SI+ -->
-        <div class="metrics-column">
-          <div class="metric-item">
-            <span class="metric-label">SI+</span>
-            <span class="metric-value" id="tm-si-plus">—</span>
-          </div>
-        </div>
-        
-        <!-- COLUMN 2 — DF+ -->
-        <div class="metrics-column">
-          <div class="metric-item">
-            <span class="metric-label">DF+</span>
-            <span class="metric-value" id="tm-df-plus">—</span>
-        </div>
-      </div>
-
-        <!-- COLUMN 3 — APR+ -->
-        <div class="metrics-column">
-          <div class="metric-item">
-            <span class="metric-label">APR+</span>
-            <span class="metric-value" id="tm-apr-plus">—</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!-- REMAINING ROSTER -->
     <section class="section section--remaining-roster">
       <h2>Remaining Roster</h2>
       <div class="table-wrapper">
-        <table id="remaining-roster-table" class="remaining-roster-table">
+        <table class="tp2-roster-table" id="next-up-table">
           <thead>
-            <tr>
-              <th>Weight</th>
-              <th>Wrestler</th>
-              <th>Rank</th>
-              <th data-tooltip="mv">TPAR</th>
-            </tr>
+            <tr><th>Weight</th><th>Wrestler</th><th>Rank</th><th class="num">TPAR</th></tr>
           </thead>
-          <tbody></tbody>
+          <tbody id="next-up-body"></tbody>
+        </table>
+      </div>
+      <button type="button" class="tp2-toggle-rest" id="toggle-rest-btn">Show the rest (<span id="rest-count">0</span>)</button>
+      <div class="table-wrapper" id="rest-wrapper" hidden>
+        <table class="tp2-roster-table" id="rest-table">
+          <thead>
+            <tr><th>Weight</th><th>Wrestler</th><th>Rank</th><th class="num">TPAR</th></tr>
+          </thead>
+          <tbody id="rest-body"></tbody>
         </table>
       </div>
     </section>
+
   </div>
 
+  <script src="/team.js?v=20260906"></script>
   <script src="/tooltips.js"></script>
-  <script src="/team.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const teamId = new URLSearchParams(window.location.search).get("team");
+      if (!teamId) {
+        document.getElementById("team-name").textContent = "No team selected";
+        return;
+      }
+      loadTeam(teamId);
+    });
+  </script>
 </body>
 </html>

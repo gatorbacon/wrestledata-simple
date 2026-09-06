@@ -16,12 +16,21 @@ yet since it has no matches). Showing last season's real form alongside a
 fresh 0-0 record is the intended reading, not a bug: "here's who they were
 last year," reset to zero for the year that's about to start.
 
+Also carries weight_class/grade/photo_url for the richer name-cell display,
+and prior_record/prior_season to show real season context in place of the
+meaningless preseason "0-0" (record cell falls back to this when the row's
+own record is "0-0"). If a wrestler has no 2026 TPAR at all (sat out the
+whole season -- confirmed real cases: Caleb Henson, Tyler Kasak), TPAR falls
+back to their most recent prior season via their career file, so they don't
+read as true no-history newcomers (that's reserved for wrestlers with no
+career file at all, e.g. actual true freshmen like Bo Bassett).
+
 Join key is (name, school) -- confirmed by hand that all of FloWrestling's
 2026-27 P4P entries resolve to exactly one wrestler each in the 2025-26
 index via this key, with only one school-name variant needing an alias
 ("OK State" -> "Oklahoma State"). A wrestler with no match (a true
 newcomer with no prior D1 season on file) still gets a row -- just with
-"--" for the three enriched stats -- rather than being dropped, since Flo's
+"--" for the enriched stats -- rather than being dropped, since Flo's
 own rank order is the thing this table exists to show. Same join logic is
 reused across P4P and all 10 weight classes -- one homepage widget with
 tabs, per the site's usual weight-tab convention (see e.g. the TPAR Leaders
@@ -39,7 +48,11 @@ DATE_FILENAME = re.compile(r"^\d{4}-\d{2}-\d{2}\.json$")
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 FLO_DIR = PROJECT_ROOT / "data" / "2027" / "flo-preseason-rankings"
 WRESTLERS_DIR = PROJECT_ROOT / "frontend" / "wrestledata-ui" / "public" / "data" / "wrestlers" / "2026"
+WRESTLERS_ROOT = PROJECT_ROOT / "frontend" / "wrestledata-ui" / "public" / "data" / "wrestlers"
+CAREERS_DIR = PROJECT_ROOT / "data" / "careers" / "ncaa_men"
 OUT_PATH = PROJECT_ROOT / "frontend" / "wrestledata-ui" / "public" / "data" / "p4p" / "2027.json"
+PRIOR_SEASON_LABEL = "26"  # 2026 = the season the enrichment stats are pulled from
+FALLBACK_TPAR_SEASON = "2025"  # if 2026 has no TPAR (sat out the whole season), try this one
 
 WEIGHT_ORDER = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
 
@@ -93,6 +106,35 @@ def build_wrestler_index():
     return by_name_school, by_name_only, slug_to_display
 
 
+def build_wid_to_career_index():
+    """wrestler_id (any season) -> that career's full seasons dict, so a
+    wrestler with no 2026 TPAR (sat out the whole season) can fall back to
+    their last real season instead of showing as a true no-history case."""
+    index = {}
+    if not CAREERS_DIR.exists():
+        return index
+    for f in CAREERS_DIR.glob("career_*.json"):
+        career = json.loads(f.read_text())
+        seasons = career.get("seasons", {})
+        for wid in seasons.values():
+            index[wid] = seasons
+    return index
+
+
+def fallback_tpar(wrestler_id, wid_to_career):
+    seasons = wid_to_career.get(wrestler_id)
+    if not seasons:
+        return None
+    fallback_wid = seasons.get(FALLBACK_TPAR_SEASON)
+    if not fallback_wid:
+        return None
+    path = WRESTLERS_ROOT / FALLBACK_TPAR_SEASON / "by_id" / f"{fallback_wid}.json"
+    if not path.exists():
+        return None
+    profile = json.loads(path.read_text())
+    return profile.get("metrics", {}).get("mat_value", {}).get("mv_avg")
+
+
 def load_profile(wrestler_id):
     path = WRESTLERS_DIR / "by_id" / f"{wrestler_id}.json"
     if not path.exists():
@@ -111,7 +153,7 @@ def frontend_slug(name):
     return s.strip("_")
 
 
-def enrich_entries(entries, wrestler_index, unmatched_out):
+def enrich_entries(entries, wrestler_index, unmatched_out, wid_to_career):
     by_name_school, by_name_only, slug_to_display = wrestler_index
     out = []
     for entry in entries:
@@ -133,6 +175,10 @@ def enrich_entries(entries, wrestler_index, unmatched_out):
 
         profile = load_profile(wrestler_id) if wrestler_id else None
         metrics = (profile or {}).get("metrics", {})
+        prior_record = (profile or {}).get("record", {}).get("overall")
+        tpar = metrics.get("mat_value", {}).get("mv_avg")
+        if tpar is None and wrestler_id:
+            tpar = fallback_tpar(wrestler_id, wid_to_career)
         out.append({
             "rank": entry["rank"],
             "name": name,
@@ -146,7 +192,12 @@ def enrich_entries(entries, wrestler_index, unmatched_out):
             "record": "0-0",
             "bonus_rate": metrics.get("bonus_rate"),
             "pin_rate": metrics.get("pin_rate"),
-            "tpar": metrics.get("mat_value", {}).get("mv_avg"),
+            "tpar": tpar,
+            "weight_class": (profile or {}).get("weight_class"),
+            "grade": (profile or {}).get("grade"),
+            "prior_record": prior_record,
+            "prior_season": PRIOR_SEASON_LABEL if prior_record else None,
+            "photo_url": (profile or {}).get("photo_url"),
         })
         if not profile:
             unmatched_out.append(f"{name} ({school})")
@@ -162,13 +213,14 @@ def main():
         raise SystemExit(f"{flo_path} has no 'p4p' entries -- re-scrape with the updated scraper first")
 
     wrestler_index = build_wrestler_index()
+    wid_to_career = build_wid_to_career_index()
     unmatched = []
 
-    p4p_out = enrich_entries(p4p, wrestler_index, unmatched)
+    p4p_out = enrich_entries(p4p, wrestler_index, unmatched, wid_to_career)
     weights_out = {}
     for w in WEIGHT_ORDER:
         entries = weights_raw.get(str(w), [])
-        weights_out[str(w)] = enrich_entries(entries, wrestler_index, unmatched)
+        weights_out[str(w)] = enrich_entries(entries, wrestler_index, unmatched, wid_to_career)
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(json.dumps({
