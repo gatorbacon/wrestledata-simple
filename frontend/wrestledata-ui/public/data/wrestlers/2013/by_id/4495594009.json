@@ -1,0 +1,96 @@
+{
+  "wrestler_id": "4495594009",
+  "name": "Nick Dragonette",
+  "team": "Drexel",
+  "team_slug": "drexel",
+  "team_rank": 47,
+  "weight_class": 165,
+  "grade": "R-So.",
+  "hometown": "Wyomissing, Pa.",
+  "high_school": "Wilson",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+  "previous_school": null,
+  "year": 2013,
+  "current_rank": 226,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.0,
+    "pa7": 6.0,
+    "pd7": -4.0,
+    "si_plus": 86.3,
+    "df_plus": 98.5,
+    "apr_plus": 92.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.557,
+      "matches": 1,
+      "rank_weight": 237,
+      "rank_overall": 2073,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "4497116009",
+      "opponent_rank": 224,
+      "opponent_name": "Nick Lobue",
+      "method": "Dec 6-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2013-01-26",
+      "opponent_id": "4497116009",
+      "opponent_career_id": null,
+      "opponent_name": "Nick Lobue",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 26,
+      "opponent_weight": 165,
+      "opponent_rank": 224,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-2",
+      "duration": "7:00",
+      "event": "Messiah Open",
+      "mv_impact": -5.56
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2013,
+      "wrestler_id": "4495594009",
+      "team": "Drexel",
+      "team_slug": "drexel",
+      "weight_class": 165,
+      "grade": "R-So.",
+      "current_rank": 226,
+      "record": "0-1"
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "4450465009",
+      "team": "Drexel",
+      "team_slug": "drexel",
+      "weight_class": 149,
+      "grade": "R-Fr.",
+      "current_rank": 216,
+      "record": "0-1"
+    }
+  ]
+}

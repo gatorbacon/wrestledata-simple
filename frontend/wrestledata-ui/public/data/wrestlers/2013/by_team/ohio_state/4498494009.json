@@ -1,0 +1,106 @@
+{
+  "wrestler_id": "4498494009",
+  "name": "Josh Whitt",
+  "team": "Ohio State",
+  "team_slug": "ohio_state",
+  "team_rank": 7,
+  "weight_class": 133,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
+  "year": 2013,
+  "current_rank": 219,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.0,
+    "pa7": 7.0,
+    "pd7": -4.0,
+    "si_plus": 85.3,
+    "df_plus": 96.9,
+    "apr_plus": 93.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.951,
+      "matches": 1,
+      "rank_weight": 205,
+      "rank_overall": 2001,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "4498489009",
+      "opponent_rank": 232,
+      "opponent_name": "Mike Manuche",
+      "method": "Dec 7-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2012-11-17",
+      "opponent_id": "4498489009",
+      "opponent_career_id": null,
+      "opponent_name": "Mike Manuche",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 7,
+      "opponent_weight": 133,
+      "opponent_rank": 232,
+      "weight_class": "133",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-3",
+      "duration": "7:00",
+      "event": "Harris Open",
+      "mv_impact": -4.95
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2014,
+      "wrestler_id": "4633280009",
+      "team": "Ohio State",
+      "team_slug": "ohio_state",
+      "weight_class": 125,
+      "grade": "",
+      "current_rank": 178,
+      "record": "1-2"
+    },
+    {
+      "season": 2013,
+      "wrestler_id": "4498494009",
+      "team": "Ohio State",
+      "team_slug": "ohio_state",
+      "weight_class": 133,
+      "grade": "",
+      "current_rank": 219,
+      "record": "0-1"
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "4453278009",
+      "team": "Ohio State",
+      "team_slug": "ohio_state",
+      "weight_class": 125,
+      "grade": "",
+      "current_rank": 216,
+      "record": "0-3"
+    }
+  ]
+}

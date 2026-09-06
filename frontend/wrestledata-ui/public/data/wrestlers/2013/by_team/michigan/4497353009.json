@@ -1,0 +1,125 @@
+{
+  "wrestler_id": "4497353009",
+  "name": "Jordan Smith",
+  "team": "Michigan",
+  "team_slug": "michigan",
+  "team_rank": 33,
+  "weight_class": 285,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
+  "year": 2013,
+  "current_rank": 162,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.5,
+    "pa7": 9.5,
+    "pd7": -6.0,
+    "si_plus": 90.4,
+    "df_plus": 84.9,
+    "apr_plus": 92.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.269,
+      "matches": 3,
+      "rank_weight": 117,
+      "rank_overall": 1433,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "4495723009",
+      "opponent_rank": 173,
+      "opponent_name": "Chris Eggert",
+      "method": "Inj. 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "4499031009",
+      "opponent_rank": 134,
+      "opponent_name": "Alex White",
+      "method": "MD 11-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2012-11-03",
+      "opponent_id": "4495723009",
+      "opponent_career_id": null,
+      "opponent_name": "Chris Eggert",
+      "opponent_team": "Eastern Michigan",
+      "opponent_team_rank": 69,
+      "opponent_weight": 285,
+      "opponent_rank": 173,
+      "weight_class": "285",
+      "result": "W",
+      "method": "INJ",
+      "score": null,
+      "duration": "0:00",
+      "event": "Eastern Michigan Open",
+      "mv_impact": 3.01
+    },
+    {
+      "date": "2012-11-03",
+      "opponent_id": "4499046009",
+      "opponent_career_id": null,
+      "opponent_name": "Adam Walls",
+      "opponent_team": "Purdue",
+      "opponent_team_rank": 31,
+      "opponent_weight": 285,
+      "opponent_rank": 98,
+      "weight_class": "285",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-5",
+      "duration": "7:00",
+      "event": "Eastern Michigan Open",
+      "mv_impact": -4.21
+    },
+    {
+      "date": "2012-11-03",
+      "opponent_id": "4499031009",
+      "opponent_career_id": null,
+      "opponent_name": "Alex White",
+      "opponent_team": "Purdue",
+      "opponent_team_rank": 31,
+      "opponent_weight": 285,
+      "opponent_rank": 134,
+      "weight_class": "285",
+      "result": "L",
+      "method": "MD",
+      "score": "11-2",
+      "duration": "7:00",
+      "event": "Eastern Michigan Open",
+      "mv_impact": -5.61
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2013,
+      "wrestler_id": "4497353009",
+      "team": "Michigan",
+      "team_slug": "michigan",
+      "weight_class": 285,
+      "grade": "",
+      "current_rank": 162,
+      "record": "1-2"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "wrestler_id": "4493907009",
+  "name": "Vance Hawk",
+  "team": "Air Force",
+  "team_slug": "air_force",
+  "team_rank": 36,
+  "weight_class": 184,
+  "grade": "Jr.",
+  "hometown": "Ridgway, Colo.",
+  "high_school": "Ridgway",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+  "previous_school": null,
+  "year": 2013,
+  "current_rank": 180,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.0,
+    "pa7": 7.0,
+    "pd7": -4.0,
+    "si_plus": 92.5,
+    "df_plus": 94.2,
+    "apr_plus": 91.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.329,
+      "matches": 1,
+      "rank_weight": 194,
+      "rank_overall": 2054,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "4500150009",
+      "opponent_rank": 172,
+      "opponent_name": "Derek Thomas",
+      "method": "Dec 7-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2012-11-03",
+      "opponent_id": "4500150009",
+      "opponent_career_id": null,
+      "opponent_name": "Derek Thomas",
+      "opponent_team": "Utah Valley University",
+      "opponent_team_rank": 54,
+      "opponent_weight": 184,
+      "opponent_rank": 172,
+      "weight_class": "184",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-3",
+      "duration": "7:00",
+      "event": "Cowboy Open",
+      "mv_impact": -5.33
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2014,
+      "wrestler_id": "4628683009",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 184,
+      "grade": "Sr.",
+      "current_rank": 191,
+      "record": "2-7"
+    },
+    {
+      "season": 2013,
+      "wrestler_id": "4493907009",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 184,
+      "grade": "Jr.",
+      "current_rank": 180,
+      "record": "0-1"
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "4448846009",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 165,
+      "grade": "So.",
+      "current_rank": 113,
+      "record": "0-0"
+    }
+  ]
+}

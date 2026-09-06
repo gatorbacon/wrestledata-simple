@@ -1,0 +1,145 @@
+{
+  "wrestler_id": "4495441009",
+  "name": "Michael Alexander",
+  "team": "Cornell",
+  "team_slug": "cornell",
+  "team_rank": 5,
+  "weight_class": 174,
+  "grade": "Jr.",
+  "hometown": "Findlay, Ohio",
+  "high_school": "Findlay HS",
+  "photo_url": "https://cornellbigred.com/images/2010/9/1/Alexander_web.jpg",
+  "previous_school": null,
+  "year": 2013,
+  "current_rank": 105,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 7.0,
+    "pa7": 6.5,
+    "pd7": 0.5,
+    "si_plus": 105.7,
+    "df_plus": 102.1,
+    "apr_plus": 100.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.083,
+      "matches": 3,
+      "rank_weight": 125,
+      "rank_overall": 1381,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "4494052009",
+      "opponent_rank": 79,
+      "opponent_name": "Collin Hedash",
+      "method": "Dec 7-4"
+    },
+    "worst_loss": {
+      "opponent_id": "4495125009",
+      "opponent_rank": 144,
+      "opponent_name": "Xavier Dye",
+      "method": "Dec 9-7"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2013-01-02",
+      "opponent_id": "4494052009",
+      "opponent_career_id": null,
+      "opponent_name": "Collin Hedash",
+      "opponent_team": "Appalachian State",
+      "opponent_team_rank": 63,
+      "opponent_weight": 174,
+      "opponent_rank": 79,
+      "weight_class": "174",
+      "result": "W",
+      "method": "DEC",
+      "score": "7-4",
+      "duration": "7:00",
+      "event": "The Southern Scuffle",
+      "mv_impact": 2.84
+    },
+    {
+      "date": "2013-01-02",
+      "opponent_id": "4495125009",
+      "opponent_career_id": null,
+      "opponent_name": "Xavier Dye",
+      "opponent_team": "Cleveland State",
+      "opponent_team_rank": 66,
+      "opponent_weight": 174,
+      "opponent_rank": 144,
+      "weight_class": "174",
+      "result": "L",
+      "method": "DEC",
+      "score": "9-7",
+      "duration": "7:00",
+      "event": "The Southern Scuffle",
+      "mv_impact": -3.9
+    },
+    {
+      "date": "2013-01-02",
+      "opponent_id": "4495463009",
+      "opponent_career_id": null,
+      "opponent_name": "Marshall Peppelman",
+      "opponent_team": "Cornell",
+      "opponent_team_rank": 5,
+      "opponent_weight": 174,
+      "opponent_rank": 41,
+      "weight_class": "174",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:42",
+      "event": "The Southern Scuffle",
+      "mv_impact": -5.19
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2014,
+      "wrestler_id": "4630322009",
+      "team": "Cornell",
+      "team_slug": "cornell",
+      "weight_class": 184,
+      "grade": "Sr.",
+      "current_rank": 132,
+      "record": "2-3"
+    },
+    {
+      "season": 2013,
+      "wrestler_id": "4495441009",
+      "team": "Cornell",
+      "team_slug": "cornell",
+      "weight_class": 174,
+      "grade": "Jr.",
+      "current_rank": 105,
+      "record": "1-2"
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "4450315009",
+      "team": "Cornell",
+      "team_slug": "cornell",
+      "weight_class": 174,
+      "grade": "So.",
+      "current_rank": 152,
+      "record": "2-5"
+    }
+  ]
+}
