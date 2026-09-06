@@ -2,6 +2,29 @@
 // Helpers
 // ===============================
 
+// Seasons to try when loading a wrestler by id, newest first. A wrestler_id
+// is only ever valid within the one season it was scraped under (a graduated
+// senior's id doesn't exist under the current season at all), and no
+// existing link site-wide passes season alongside id -- so on a miss we fall
+// back through every season that actually has published data, rather than
+// assuming every id is current or hardcoding a list that would need a manual
+// edit each time a season is backfilled. Written by build_wrestler_profiles.py.
+let _knownSeasonsCache = null;
+async function getKnownSeasons() {
+  if (_knownSeasonsCache) return _knownSeasonsCache;
+  try {
+    const res = await fetch('/data/wrestlers/available_seasons.json');
+    if (res.ok) {
+      _knownSeasonsCache = (await res.json()).map(String);
+      return _knownSeasonsCache;
+    }
+  } catch (err) {
+    // fall through to default below
+  }
+  _knownSeasonsCache = ["2026"];
+  return _knownSeasonsCache;
+}
+
 // Date-aware minimum match threshold (same logic as leaderboard)
 function getMinMatchThreshold() {
   const now = new Date();
@@ -197,29 +220,39 @@ function safe(value, formatter) {
   // Fetch Wrestler JSON
   // ===============================
   
-  function loadWrestlerProfile(id) {
-    const url = `/data/wrestlers/2026/by_id/${id}.json`;
-  
-    fetch(url)
-      .then(res => {
-        if (!res.ok) throw new Error("Could not load wrestler JSON");
-        return res.json();
-      })
-      .then(data => renderWrestlerProfile(data))
-      .catch(err => {
-        console.error("Error loading:", err);
-        document.getElementById("wrestler-name").textContent = "Not Found";
-        document.getElementById("wrestler-meta").textContent = err.message;
-      });
+  async function loadWrestlerProfile(id) {
+    // Try each known season (newest first) until one actually has this id --
+    // see getKnownSeasons for why this can't just assume the current season.
+    const seasons = await getKnownSeasons();
+    for (const season of seasons) {
+      try {
+        const res = await fetch(`/data/wrestlers/${season}/by_id/${id}.json`);
+        if (!res.ok) continue;
+        const data = await res.json();
+        renderWrestlerProfile(data);
+        return;
+      } catch (err) {
+        // network error on this season -- try the next one
+      }
+    }
+    console.error("Error loading: wrestler not found in any known season", id);
+    document.getElementById("wrestler-name").textContent = "Not Found";
+    document.getElementById("wrestler-tagline").textContent = "Could not load wrestler JSON";
   }
-  
+
   // ===============================
   // Rendering
   // ===============================
-  
-  function renderWrestlerProfile(data) {
+
+  // Header renders once, from whichever season the page was loaded with
+  // (always the most recent one a link points to) -- it never re-runs when
+  // a different season row is picked below, per the "rank/weight stay at
+  // current status" design. Team and grade live only in the season
+  // selector table since they change year to year; hometown/high school
+  // stay here since those don't.
+  function renderHeader(data) {
     document.getElementById("wrestler-name").textContent = safe(data.name);
-    
+
     // Wrestler tagline with rank badge
     const taglineEl = document.getElementById("wrestler-tagline");
     taglineEl.innerHTML = "";
@@ -229,23 +262,107 @@ function safe(value, formatter) {
     } else {
       taglineEl.textContent = `${safe(data.weight_class)} lbs`;
     }
-  
-    // Render team name as link
-    const metaEl = document.getElementById("wrestler-meta");
-    const teamName = safe(data.team);
-    const season = safe(data.year);
-    if (teamName && teamName !== "—") {
-      const teamSlug = teamNameToSlug(teamName);
-      const teamLink = document.createElement("a");
-      teamLink.href = `/team.html?team=${teamSlug}`;
-      teamLink.textContent = teamName;
-      metaEl.innerHTML = "";
-      metaEl.appendChild(teamLink);
-      metaEl.appendChild(document.createTextNode(` · Season ${season}`));
+
+    // Photo
+    const photoEl = document.getElementById("wrestler-photo");
+    if (data.photo_url) {
+      photoEl.src = data.photo_url;
+      photoEl.alt = `${safe(data.name)} headshot`;
+      photoEl.hidden = false;
+      photoEl.onerror = () => { photoEl.hidden = true; };
     } else {
-      metaEl.textContent = `Season ${season}`;
+      photoEl.hidden = true;
     }
-  
+
+    // Bio line: hometown · high school -- only the parts we have
+    const bioEl = document.getElementById("wrestler-bio");
+    const bioParts = [data.hometown, data.high_school].filter(Boolean);
+    bioEl.textContent = bioParts.join(" · ");
+    bioEl.hidden = bioParts.length === 0;
+  }
+
+  // Season selector: one row per season_summary entry, defaulting to
+  // whichever wrestler_id the page loaded with as "active". Clicking a
+  // different row re-renders everything renderSeasonBody covers, without
+  // touching the header.
+  function renderSeasonSelector(data) {
+    const section = document.getElementById("season-selector-section");
+    const tbody = document.getElementById("season-selector-body");
+    const summary = data.season_summary || [];
+    if (summary.length === 0) {
+      section.hidden = true;
+      return;
+    }
+    section.hidden = false;
+    tbody.innerHTML = "";
+
+    summary.forEach(s => {
+      const tr = document.createElement("tr");
+      tr.className = "season-row";
+      if (String(s.wrestler_id) === String(data.wrestler_id)) {
+        tr.classList.add("season-row--active");
+      }
+
+      const seasonCell = document.createElement("td");
+      seasonCell.textContent = safe(s.season);
+      tr.appendChild(seasonCell);
+
+      const teamCell = document.createElement("td");
+      if (s.team) {
+        const teamLink = document.createElement("a");
+        teamLink.href = `/team.html?team=${s.team_slug || teamNameToSlug(s.team)}`;
+        teamLink.textContent = s.team;
+        teamLink.addEventListener("click", ev => ev.stopPropagation());
+        teamCell.appendChild(teamLink);
+      } else {
+        teamCell.textContent = "—";
+      }
+      tr.appendChild(teamCell);
+
+      const gradeCell = document.createElement("td");
+      gradeCell.textContent = safe(s.grade);
+      tr.appendChild(gradeCell);
+
+      const rankCell = document.createElement("td");
+      rankCell.className = "num";
+      rankCell.textContent = s.current_rank ? `#${s.current_rank}` : "—";
+      tr.appendChild(rankCell);
+
+      const recordCell = document.createElement("td");
+      recordCell.className = "num";
+      recordCell.textContent = safe(s.record);
+      tr.appendChild(recordCell);
+
+      tr.addEventListener("click", () => {
+        if (tr.classList.contains("season-row--active")) return;
+        fetch(`/data/wrestlers/${s.season}/by_id/${s.wrestler_id}.json`)
+          .then(res => {
+            if (!res.ok) throw new Error("Could not load season data");
+            return res.json();
+          })
+          .then(seasonData => {
+            renderSeasonBody(seasonData);
+            tbody.querySelectorAll(".season-row--active").forEach(row => row.classList.remove("season-row--active"));
+            tr.classList.add("season-row--active");
+          })
+          .catch(err => console.error("Error switching season:", err));
+      });
+
+      tbody.appendChild(tr);
+    });
+  }
+
+  function renderWrestlerProfile(data) {
+    renderHeader(data);
+    renderSeasonSelector(data);
+    renderSeasonBody(data);
+  }
+
+  // Everything below the season selector: re-invokable per season, since a
+  // season-row click re-renders this without touching the header.
+  function renderSeasonBody(data) {
+    const season = safe(data.year);
+
     // ========================================
     // MV SECTION (DataGolf-style, no card)
     // ========================================
@@ -279,116 +396,118 @@ function safe(value, formatter) {
     divider.className = "section-divider";
     mvSection.appendChild(divider);
     
-    // B) Primary metric row
-    const primaryRow = document.createElement("div");
-    primaryRow.className = "mv-primary-row";
-    
-    // RANK BADGE (primary visual) - wraps badge in link to MV leaderboard
-    const rankBadgeLink = document.createElement("a");
-    rankBadgeLink.href = leaderboardUrl;
-    rankBadgeLink.className = "mv-rank-badge-link";
-    if (mv.rank_weight !== null && mv.rank_weight !== undefined) {
-      rankBadgeLink.appendChild(createMVRankBadge(mv.rank_weight));
-    }
-    // Add tooltip to rank badge
-    addTooltip(rankBadgeLink, "Per-match value above opponent expectation.");
-    primaryRow.appendChild(rankBadgeLink);
-    
-    // MV Number with explicit sign (smaller font, same row as badge)
-    const mvValue = document.createElement("div");
-    mvValue.className = "mv-number mv-number-inline";
-    if (mv.mv_avg !== null && mv.mv_avg !== undefined) {
+    // B) Primary metric row -- if this season has no TPAR data at all
+    // (e.g. 2025, which predates the mat_value pipeline), show one muted
+    // line instead of an empty rank badge + "—" number.
+    if (mv.mv_avg === null || mv.mv_avg === undefined) {
+      const empty = document.createElement("p");
+      empty.className = "section-empty-state";
+      empty.textContent = "TPAR not available for this season.";
+      mvSection.appendChild(empty);
+    } else {
+      const primaryRow = document.createElement("div");
+      primaryRow.className = "mv-primary-row";
+
+      // RANK BADGE (primary visual) - wraps badge in link to MV leaderboard
+      const rankBadgeLink = document.createElement("a");
+      rankBadgeLink.href = leaderboardUrl;
+      rankBadgeLink.className = "mv-rank-badge-link";
+      if (mv.rank_weight !== null && mv.rank_weight !== undefined) {
+        rankBadgeLink.appendChild(createMVRankBadge(mv.rank_weight));
+      }
+      // Add tooltip to rank badge
+      addTooltip(rankBadgeLink, "Per-match value above opponent expectation.");
+      primaryRow.appendChild(rankBadgeLink);
+
+      // MV Number with explicit sign (smaller font, same row as badge)
+      const mvValue = document.createElement("div");
+      mvValue.className = "mv-number mv-number-inline";
       const sign = mv.mv_avg >= 0 ? "+" : "";
       mvValue.textContent = `${sign}${mv.mv_avg.toFixed(3)}`;
-    } else {
-      mvValue.textContent = "—";
-    }
-    primaryRow.appendChild(mvValue);
-    
-    // Percentile bar container (below the row, will be populated after percentile is computed)
-    const percentileBarContainer = document.createElement("div");
-    percentileBarContainer.className = "mv-percentile-bar-container";
-    mvSection.appendChild(primaryRow);
-    mvSection.appendChild(percentileBarContainer);
-    
-    // Compute percentile and update display asynchronously
-    if (mv.mv_avg !== null && mv.mv_avg !== undefined && weightClass && data.wrestler_id) {
-      computeFilteredMVRankAndPercentile(data.wrestler_id, weightClass, season).then(result => {
-        if (result) {
-          const { rank, percentile, total } = result;
-          
-          // Create percentile bar
-          percentileBarContainer.innerHTML = "";
-          const barWrapper = document.createElement("div");
-          barWrapper.className = "mv-percentile-bar";
-          const barFill = document.createElement("div");
-          barFill.className = "mv-percentile-fill";
-          barFill.style.width = `${percentile}%`;
-          barWrapper.appendChild(barFill);
-          percentileBarContainer.appendChild(barWrapper);
-          
-          // Add percentile text
-          const percentileText = document.createElement("span");
-          percentileText.className = "mv-percentile-text";
-          // Top X% = (rank / total) * 100, rounded up
-          const topPercent = Math.ceil((rank / total) * 100);
-          percentileText.textContent = `Top ${topPercent}%`;
-          percentileBarContainer.appendChild(percentileText);
-          
-          // Update rank badge
-          if (rankBadgeLink) {
-            rankBadgeLink.innerHTML = "";
-            rankBadgeLink.appendChild(createMVRankBadge(rank));
-            // Re-add tooltip after updating badge
-            addTooltip(rankBadgeLink, "Per-match value above opponent expectation.");
-          }
-        } else {
-          // Fallback: use raw rank and estimate percentile
-          if (mv.rank_weight !== null && mv.rank_weight !== undefined) {
-            // Estimate percentile from rank (rough approximation)
-            let estimatedPercentile = 50;
-            if (mv.rank_weight <= 3) {
-              estimatedPercentile = 95;
-            } else if (mv.rank_weight <= 10) {
-              estimatedPercentile = 85;
-            } else if (mv.rank_weight <= 20) {
-              estimatedPercentile = 70;
-            } else if (mv.rank_weight <= 33) {
-              estimatedPercentile = 50;
-            } else {
-              estimatedPercentile = 30;
-            }
-            // Create basic percentile bar
+      primaryRow.appendChild(mvValue);
+
+      // Percentile bar container (below the row, will be populated after percentile is computed)
+      const percentileBarContainer = document.createElement("div");
+      percentileBarContainer.className = "mv-percentile-bar-container";
+      mvSection.appendChild(primaryRow);
+      mvSection.appendChild(percentileBarContainer);
+
+      // Compute percentile and update display asynchronously
+      if (weightClass && data.wrestler_id) {
+        computeFilteredMVRankAndPercentile(data.wrestler_id, weightClass, season).then(result => {
+          if (result) {
+            const { rank, percentile, total } = result;
+
+            // Create percentile bar
             percentileBarContainer.innerHTML = "";
             const barWrapper = document.createElement("div");
             barWrapper.className = "mv-percentile-bar";
             const barFill = document.createElement("div");
             barFill.className = "mv-percentile-fill";
-            barFill.style.width = `${estimatedPercentile}%`;
+            barFill.style.width = `${percentile}%`;
             barWrapper.appendChild(barFill);
             percentileBarContainer.appendChild(barWrapper);
-            
+
+            // Add percentile text
             const percentileText = document.createElement("span");
             percentileText.className = "mv-percentile-text";
-            percentileText.textContent = `Top ${100 - estimatedPercentile + 1}%`;
+            // Top X% = (rank / total) * 100, rounded up
+            const topPercent = Math.ceil((rank / total) * 100);
+            percentileText.textContent = `Top ${topPercent}%`;
             percentileBarContainer.appendChild(percentileText);
+
+            // Update rank badge
+            if (rankBadgeLink) {
+              rankBadgeLink.innerHTML = "";
+              rankBadgeLink.appendChild(createMVRankBadge(rank));
+              // Re-add tooltip after updating badge
+              addTooltip(rankBadgeLink, "Per-match value above opponent expectation.");
+            }
+          } else {
+            // Fallback: use raw rank and estimate percentile
+            if (mv.rank_weight !== null && mv.rank_weight !== undefined) {
+              // Estimate percentile from rank (rough approximation)
+              let estimatedPercentile = 50;
+              if (mv.rank_weight <= 3) {
+                estimatedPercentile = 95;
+              } else if (mv.rank_weight <= 10) {
+                estimatedPercentile = 85;
+              } else if (mv.rank_weight <= 20) {
+                estimatedPercentile = 70;
+              } else if (mv.rank_weight <= 33) {
+                estimatedPercentile = 50;
+              } else {
+                estimatedPercentile = 30;
+              }
+              // Create basic percentile bar
+              percentileBarContainer.innerHTML = "";
+              const barWrapper = document.createElement("div");
+              barWrapper.className = "mv-percentile-bar";
+              const barFill = document.createElement("div");
+              barFill.className = "mv-percentile-fill";
+              barFill.style.width = `${estimatedPercentile}%`;
+              barWrapper.appendChild(barFill);
+              percentileBarContainer.appendChild(barWrapper);
+
+              const percentileText = document.createElement("span");
+              percentileText.className = "mv-percentile-text";
+              percentileText.textContent = `Top ${100 - estimatedPercentile + 1}%`;
+              percentileBarContainer.appendChild(percentileText);
+            }
           }
-        }
-      }).catch(err => {
-        console.error("Error computing MV percentile:", err);
-        // Keep basic display on error
-        if (mv.rank_weight !== null && mv.rank_weight !== undefined) {
-          const rankSpan = rankContainer.querySelector(".mv-rank-value");
-          if (rankSpan) {
-            rankSpan.textContent = `#${mv.rank_weight}`;
+        }).catch(err => {
+          console.error("Error computing MV percentile:", err);
+          // Keep basic display on error
+          if (mv.rank_weight !== null && mv.rank_weight !== undefined) {
+            const rankSpan = rankBadgeLink.querySelector(".mv-rank-value");
+            if (rankSpan) {
+              rankSpan.textContent = `#${mv.rank_weight}`;
+            }
           }
-        }
-      });
-    } else if (mv.mv_avg !== null && mv.mv_avg !== undefined) {
-      // No wrestler_id, but we have MV - show basic display (neutral)
-      mvValue.className = "mv-number";
+        });
+      }
     }
-    
+
     // Season stats (compact text list)
     const statsHeading = document.createElement("div");
     statsHeading.className = "mv-season-heading";
@@ -451,34 +570,45 @@ function safe(value, formatter) {
     // Skill rows with bars (SI+, DF+, APR+) - baseline at 100
     const skillRowsContainer = document.createElement("div");
     skillRowsContainer.className = "skill-rows-container";
-    
+    let hasAnySkillMetric = false;
+
     // SI+ (Scoring)
     if (m.si_plus !== null && m.si_plus !== undefined) {
       const row = createSkillRowWithBaseline("SI+ (Scoring)", m.si_plus);
       skillRowsContainer.appendChild(row);
+      hasAnySkillMetric = true;
     }
-    
+
     // DF+ (Defense)
     if (m.df_plus !== null && m.df_plus !== undefined) {
       const row = createSkillRowWithBaseline("DF+ (Defense)", m.df_plus);
       skillRowsContainer.appendChild(row);
+      hasAnySkillMetric = true;
     }
-    
+
     // APR+ (Pin Rate)
     if (m.apr_plus !== null && m.apr_plus !== undefined) {
       const row = createSkillRowWithBaseline("APR+ (Pin Rate)", m.apr_plus);
       skillRowsContainer.appendChild(row);
+      hasAnySkillMetric = true;
     }
-    
-    skillSection.appendChild(skillRowsContainer);
-    
-    // Synthesized profile description
-    const profileDesc = generateSkillProfileDescription(m);
-    if (profileDesc) {
-      const descEl = document.createElement("p");
-      descEl.className = "skill-profile-description";
-      descEl.textContent = profileDesc;
-      skillSection.appendChild(descEl);
+
+    if (hasAnySkillMetric) {
+      skillSection.appendChild(skillRowsContainer);
+
+      // Synthesized profile description
+      const profileDesc = generateSkillProfileDescription(m);
+      if (profileDesc) {
+        const descEl = document.createElement("p");
+        descEl.className = "skill-profile-description";
+        descEl.textContent = profileDesc;
+        skillSection.appendChild(descEl);
+      }
+    } else {
+      const empty = document.createElement("p");
+      empty.className = "section-empty-state";
+      empty.textContent = "Skill profile not available for this season.";
+      skillSection.appendChild(empty);
     }
     
     // ========================================
@@ -1109,7 +1239,10 @@ function safe(value, formatter) {
 
     if (matches.length === 0) {
       container.innerHTML = "";
-      container.textContent = "No match data available";
+      const empty = document.createElement("p");
+      empty.className = "section-empty-state";
+      empty.textContent = "TPAR trajectory not available for this season.";
+      container.appendChild(empty);
       return;
     }
 

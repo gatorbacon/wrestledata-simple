@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Top 3 Backtest — MatSavant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Running the live Team Championship Odds model month-by-month against each season's real top-3 finishers, with an out-of-sample individual-modifier fit so no season's own result leaks into its own projection." />
+  <link rel="stylesheet" href="/styles.css?v=20260912" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+  <style>
+    .bt-chart-wrap { overflow-x: auto; }
+    .bt-chart-wrap svg { display: block; min-width: 640px; }
+    .bt-axis-label { fill: var(--muted-2); font-size: 11px; font-variant-numeric: tabular-nums; }
+    .bt-cat-label { fill: var(--muted); font-size: 12px; font-weight: 600; text-anchor: middle; }
+    .bt-badge-value { font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .bt-gridline { stroke: var(--border); stroke-width: 1; }
+    .bt-axis-line { stroke: var(--muted-2); stroke-width: 1.2; }
+    .bt-legend-row { display: flex; flex-wrap: wrap; gap: 16px; margin: 0 0 18px; }
+    .bt-legend-item { display: flex; align-items: center; gap: 8px; font-size: 0.88rem; }
+    .bt-legend-item .real { color: var(--muted-2); font-size: 0.8rem; }
+    .bt-swatch { width: 18px; height: 8px; border-radius: 3px; display: inline-block; }
+    .bt-foot-row { display: flex; justify-content: space-between; gap: 24px; padding: 12px 4px 0; font-size: 0.78rem; color: var(--muted-2); flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+  <script src="/header.js?v=20260903"></script>
+  <div class="page-container">
+    <header class="header">
+      <h1>Top 3 Backtest</h1>
+      <div class="header-subline">Running the live model on each season's real top 3, month by month</div>
+      <p class="header-explainer">
+        Same methodology powering the live <a href="/team_odds.html">Team Championship Odds</a> —
+        rank distributions, program-strength offsets, and individual track-record modifiers —
+        run against the three teams that actually finished 1st, 2nd, and 3rd each season.
+        The individual modifier is refit out-of-sample for every season shown here, excluding
+        that season's own results, so nothing is leaking the answer into its own prediction.
+      </p>
+    </header>
+
+    <section class="section">
+      <div id="season-tabs" class="weight-tabs-container" role="tablist" aria-label="Season"></div>
+
+      <div class="bt-legend-row" id="legend-row"></div>
+
+      <div class="table-wrapper bt-chart-wrap" id="chart-wrap"></div>
+      <div class="bt-foot-row">
+        <span>Shaded band = 90% confidence range (5th&ndash;95th percentile), 10,000 simulated trials/team/month</span>
+        <span>End marker = real final NCAA result</span>
+      </div>
+
+      <div class="table-wrapper" style="margin-top: 24px;">
+        <table id="results-table">
+          <thead><tr id="results-head"></tr></thead>
+          <tbody id="results-body"></tbody>
+        </table>
+      </div>
+
+      <p class="header-explainer" style="margin-top: 32px;" id="methodology"></p>
+    </section>
+  </div>
+
+  <script src="/top3_backtest.js?v=20260904"></script>
+</body>
+</html>

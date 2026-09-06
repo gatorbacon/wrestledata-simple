@@ -1170,6 +1170,33 @@ a:hover {
   margin-top: 4px;
 }
 
+.header-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1rem;
+}
+
+.wrestler-photo {
+  width: 84px;
+  height: 84px;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: top center;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  flex-shrink: 0;
+}
+
+.header-text {
+  min-width: 0;
+}
+
+.header-bio {
+  color: var(--muted);
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
 .header-explainer {
   color: var(--muted);
   font-size: 0.875rem;
@@ -1486,6 +1513,41 @@ a:hover {
 #team-odds-preview-section .table-wrapper table {
   background: transparent;
 }
+
+/* Same pillbox treatment for the homepage P4P/weight-class rankings --
+   header and tabs live inside the box too, not just the table. */
+#p4p-section {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 16px 16px 4px;
+}
+#p4p-section .table-wrapper {
+  border: none;
+  background: transparent;
+}
+#p4p-section .table-wrapper table {
+  background: transparent;
+}
+
+/* Same pillbox treatment for the two homepage championship-odds widgets --
+   header included inside the box, not just the cards/bars. */
+#title-contenders-section {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+#trophy-chances-section {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 16px;
+  margin-bottom: 28px;
+}
+
 /* tbody tr's sitewide default is now white (see below), matching this
    section's pillbox automatically -- no scoped override needed here
    anymore. */
@@ -1665,6 +1727,40 @@ tbody tr:hover {
 
 tbody tr:last-child td {
   border-bottom: none;
+}
+
+/* Season selector table (wrestler profile page) */
+.season-selector-section {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.season-row {
+  cursor: pointer;
+}
+
+.season-row--active {
+  cursor: default;
+  background: rgba(var(--accent-rgb), 0.1);
+}
+
+.season-row--active:hover {
+  background: rgba(var(--accent-rgb), 0.1);
+}
+
+.season-row--active td:first-child {
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+
+/* Muted placeholder shown in place of a section's usual content when the
+   selected season genuinely has no data for it (e.g. an older season that
+   predates a metric's pipeline) -- distinct from an empty match table,
+   which is a normal "no matches" state, not a data-availability gap. */
+.section-empty-state {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-style: italic;
+  margin: 0.5em 0;
 }
 
 /* Table utility classes */
@@ -3882,4 +3978,283 @@ th.tooltip-trigger .tooltip {
 
 .footer-text-muted {
   color: var(--muted-2);
+}
+
+/* ========================================
+   DUAL TICKER (homepage, upcoming duals)
+   ======================================== */
+
+.dual-ticker-wrap {
+  display: flex;
+  align-items: stretch;
+  gap: 6px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 6px;
+  margin-bottom: 20px;
+}
+
+.dual-ticker-track {
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.dual-ticker-track::-webkit-scrollbar {
+  display: none;
+}
+
+.dual-ticker-card {
+  flex: 0 0 auto;
+  width: 168px;
+  padding: 8px 14px;
+  border-right: 1px solid var(--border);
+}
+
+.dual-ticker-card:last-child {
+  border-right: none;
+}
+
+.dual-ticker-date {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+  margin-bottom: 4px;
+}
+
+.dual-ticker-team {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-decoration: none;
+  color: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dual-ticker-team:hover {
+  color: var(--accent);
+}
+
+.dual-ticker-crest {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+.dual-ticker-rank {
+  flex: 0 0 auto;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.dual-ticker-arrow {
+  flex: 0 0 auto;
+  width: 28px;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: var(--r-sm);
+}
+
+.dual-ticker-arrow:hover {
+  background: var(--panel-2);
+  color: var(--text);
+}
+
+.dual-ticker-empty {
+  font-size: 0.85rem;
+  color: var(--muted);
+  padding: 8px 14px;
+}
+
+/* ========================================
+   P4P RANKINGS TABLE (homepage)
+   ======================================== */
+
+#p4p-table td.rank-cell {
+  padding-right: 0;
+}
+
+.p4p-team-cell {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.p4p-team-cell:hover {
+  color: var(--accent);
+}
+
+.p4p-team-crest {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+#p4p-weight-tabs {
+  margin: 4px 0 10px;
+}
+
+/* ========================================
+   TITLE CONTENDERS (top 3, homepage)
+   ======================================== */
+
+.contenders-row {
+  display: flex;
+  gap: 14px;
+}
+
+.contender-card {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 22px 16px 18px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--border);
+  border-radius: var(--r-md);
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.contender-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.contender-gold { border-top-color: #e0b872; }
+.contender-silver { border-top-color: #c2cad4; }
+.contender-bronze { border-top-color: #d99a72; }
+
+.contender-rank {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--muted-2);
+  letter-spacing: 0.03em;
+}
+
+.contender-crest {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.contender-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.contender-pct {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.contender-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted-2);
+  margin-top: 2px;
+}
+
+/* ========================================
+   TROPHY CHANCES (top 7, homepage, full width)
+   ======================================== */
+
+.trophy-row {
+  display: flex;
+  gap: 10px;
+}
+
+.trophy-col {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 12px 8px;
+  border-radius: var(--r-sm);
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.12s ease;
+}
+
+.trophy-col:hover {
+  background: var(--panel-2);
+}
+
+.trophy-rank {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--muted-2);
+  margin-bottom: 4px;
+}
+
+.trophy-crest {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  margin-bottom: 6px;
+}
+
+.trophy-name {
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  margin-bottom: 4px;
+}
+
+.trophy-pct {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  margin-bottom: 6px;
+}
+
+.trophy-bar-track {
+  width: 100%;
+  height: 5px;
+  background: var(--bar-neutral);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.trophy-bar-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 3px;
 }

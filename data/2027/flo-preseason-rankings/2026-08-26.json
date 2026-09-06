@@ -3,7 +3,7 @@
   "rankings_url": "https://www.flowrestling.org/rankings/16146571-2026-27-ncaa-di-wrestling-rankings",
   "ranking_date": "2026-08-26",
   "season": 2027,
-  "note": "2026-27 season, September touch point (scraped via scripts/scraping/scrape_flo_preseason_rankings.py)",
+  "note": "2026-27 season, latest available snapshot (scraped via scripts/scraping/scrape_flo_preseason_rankings.py --latest)",
   "weights": {
     "125": [
       {
@@ -1225,5 +1225,107 @@
         "school": "NC State"
       }
     ]
-  }
+  },
+  "p4p": [
+    {
+      "rank": 1,
+      "name": "Mitchell Mesenbrink",
+      "school": "Penn State"
+    },
+    {
+      "rank": 2,
+      "name": "Sergio Vega",
+      "school": "OK State"
+    },
+    {
+      "rank": 3,
+      "name": "Josh Barr",
+      "school": "Penn State"
+    },
+    {
+      "rank": 4,
+      "name": "Jax Forrest",
+      "school": "OK State"
+    },
+    {
+      "rank": 5,
+      "name": "Max McEnelly",
+      "school": "Minnesota"
+    },
+    {
+      "rank": 6,
+      "name": "Luke Lilledahl",
+      "school": "Penn State"
+    },
+    {
+      "rank": 7,
+      "name": "Landon Robideau",
+      "school": "OK State"
+    },
+    {
+      "rank": 8,
+      "name": "Shayne Van Ness",
+      "school": "Penn State"
+    },
+    {
+      "rank": 9,
+      "name": "Caleb Henson",
+      "school": "Virginia Tech"
+    },
+    {
+      "rank": 10,
+      "name": "Rocco Welsh",
+      "school": "Penn State"
+    },
+    {
+      "rank": 11,
+      "name": "PJ Duke",
+      "school": "Penn State"
+    },
+    {
+      "rank": 12,
+      "name": "Tyler Kasak",
+      "school": "Penn State"
+    },
+    {
+      "rank": 13,
+      "name": "Antrell Taylor",
+      "school": "Nebraska"
+    },
+    {
+      "rank": 14,
+      "name": "Angelo Ferrari",
+      "school": "Iowa"
+    },
+    {
+      "rank": 15,
+      "name": "Aeoden Sinclair",
+      "school": "Missouri"
+    },
+    {
+      "rank": 16,
+      "name": "Aden Valencia",
+      "school": "Stanford"
+    },
+    {
+      "rank": 17,
+      "name": "Ben Davino",
+      "school": "Ohio State"
+    },
+    {
+      "rank": 18,
+      "name": "Aaron Seidel",
+      "school": "Virginia Tech"
+    },
+    {
+      "rank": 19,
+      "name": "Marcus Blaze",
+      "school": "Penn State"
+    },
+    {
+      "rank": 20,
+      "name": "Luke Stanich",
+      "school": "Lehigh"
+    }
+  ]
 }

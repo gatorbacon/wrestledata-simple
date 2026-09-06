@@ -12,8 +12,25 @@ const HTO_INDIVIDUAL_SCALE_MAX = 30; // individual wrestlers score far fewer poi
 let htoTeams = [];
 let htoExpandedTeam = null;
 
+// team_odds' own team names use short scrape-convention abbreviations for a
+// handful of teams (e.g. "OK State", "N. Colorado") that don't match the
+// frontend's fuller team-page slugs (oklahoma_state, northern_colorado) --
+// naively slugifying the short name 404s the team-page link.
+const HTO_SLUG_ALIASES = {
+  "ok state": "oklahoma_state",
+  "nd state": "north_dakota_state",
+  "sd state": "south_dakota_state",
+  "app state": "appalachian_state",
+  "uni": "northern_iowa",
+  "army": "army_west_point",
+  "siue": "siu_edwardsville",
+  "n. colorado": "northern_colorado",
+};
+
 function htoTeamNameToSlug(name) {
   if (!name) return "";
+  const alias = HTO_SLUG_ALIASES[name.trim().toLowerCase()];
+  if (alias) return alias;
   return name.toLowerCase()
     .replace(/\s+/g, "_")
     .replace(/[^\w_]/g, "")

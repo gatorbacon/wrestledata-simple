@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Wrestler Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/styles.css?v=20260912" />
+  <link rel="stylesheet" href="/styles.css?v=20260912b" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   <script src="/search_index.js"></script>
 </head>
@@ -13,10 +13,34 @@
   <script src="/header.js?v=20260903"></script>
   <div class="page-container">
     <header class="header">
-      <h1 id="wrestler-name"></h1>
-      <div class="header-subline" id="wrestler-tagline"></div>
-      <div class="header-meta" id="wrestler-meta"></div>
+      <div class="header-row">
+        <img class="wrestler-photo" id="wrestler-photo" alt="" hidden />
+        <div class="header-text">
+          <h1 id="wrestler-name"></h1>
+          <div class="header-subline" id="wrestler-tagline"></div>
+          <div class="header-bio" id="wrestler-bio"></div>
+        </div>
+      </div>
     </header>
+
+    <!-- SEASON SELECTOR: rows of season/team/grade/rank/record, click to
+         swap the sections below without touching the header -->
+    <section class="section season-selector-section" id="season-selector-section" hidden>
+      <div class="table-wrapper">
+        <table id="season-selector-table">
+          <thead>
+            <tr>
+              <th>Season</th>
+              <th>Team</th>
+              <th>Grade</th>
+              <th class="num">Rank</th>
+              <th class="num">Record</th>
+            </tr>
+          </thead>
+          <tbody id="season-selector-body"></tbody>
+        </table>
+      </div>
+    </section>
 
     <!-- PROFILE SUMMARY GRID: MV (left) • Timeline (center) • Skill (right) -->
     <section class="profile-summary-grid">
@@ -105,7 +129,7 @@
     </section>
   </div>
 
-  <script src="/app.js?v=20260912"></script>
+  <script src="/app.js?v=20260912b"></script>
   <script src="/tooltips.js"></script>
   
   <script>
@@ -115,7 +139,7 @@
     
       if (!wrestlerId) {
         document.getElementById("wrestler-name").textContent = "No wrestler selected";
-        document.getElementById("wrestler-meta").textContent = "Use ?id=<wrestler_id>";
+        document.getElementById("wrestler-tagline").textContent = "Use ?id=<wrestler_id>";
         return;
       }
     

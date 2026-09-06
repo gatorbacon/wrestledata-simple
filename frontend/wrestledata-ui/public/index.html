@@ -14,6 +14,52 @@
 
   <div class="page-container">
 
+    <!-- UPCOMING DUALS TICKER -->
+    <div id="dual-ticker-section"></div>
+
+    <!-- P4P / WEIGHT-CLASS RANKINGS -->
+    <section class="section" id="p4p-section">
+      <div class="section-header">
+        <h2 id="p4p-title">2027 Rankings</h2>
+        <a href="/rankings.html" class="section-header-link">Full Rankings →</a>
+      </div>
+      <div class="hp-panel-tabs" id="p4p-weight-tabs">
+        <button class="hp-tab active" data-weight="p4p">P4P</button>
+        <button class="hp-tab" data-weight="125">125</button>
+        <button class="hp-tab" data-weight="133">133</button>
+        <button class="hp-tab" data-weight="141">141</button>
+        <button class="hp-tab" data-weight="149">149</button>
+        <button class="hp-tab" data-weight="157">157</button>
+        <button class="hp-tab" data-weight="165">165</button>
+        <button class="hp-tab" data-weight="174">174</button>
+        <button class="hp-tab" data-weight="184">184</button>
+        <button class="hp-tab" data-weight="197">197</button>
+        <button class="hp-tab" data-weight="285">285</button>
+      </div>
+      <div class="table-wrapper">
+        <table id="p4p-table">
+          <thead>
+            <tr>
+              <th style="width: 32px;"></th>
+              <th>Name</th>
+              <th>Team</th>
+              <th>Record</th>
+              <th class="num">Bonus Rate</th>
+              <th class="num">Pin Rate</th>
+              <th class="num">TPAR</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- TOP 3 CHAMPIONSHIP CONTENDERS -->
+    <div id="title-contenders-section"></div>
+
+    <!-- TOP 7 TROPHY CHANCES -->
+    <div id="trophy-chances-section"></div>
+
     <!-- TEAM CHAMPIONSHIP ODDS (full-width feature) -->
     <section class="section" id="team-odds-preview-section">
       <div class="section-header">
@@ -168,6 +214,13 @@
           </div>
           <p class="featured-card-desc">Every decided match since 2011-12, plotted by final score and colored by how often it happened</p>
         </a>
+        <a href="/top3_backtest.html" class="featured-card">
+          <div class="featured-card-header">
+            <h3 class="featured-card-title">Top 3 Backtest</h3>
+            <span class="featured-card-arrow">→</span>
+          </div>
+          <p class="featured-card-desc">How the Team Championship Odds model would have called each season's top 3, month by month, tested out-of-sample</p>
+        </a>
       </div>
     </section>
 
@@ -182,5 +235,8 @@
   <script src="/tooltips.js"></script>
   <script src="/homepage.js?v=20260909"></script>
   <script src="/homepage_team_odds.js?v=20260909"></script>
+  <script src="/dual_ticker.js?v=20260905"></script>
+  <script src="/p4p_rankings.js?v=20260905"></script>
+  <script src="/championship_widgets.js?v=20260905"></script>
 </body>
 </html>
