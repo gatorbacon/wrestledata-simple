@@ -1,0 +1,123 @@
+{
+  "wrestler_id": "11485839009",
+  "name": "John Goettee",
+  "team": "Princeton",
+  "team_slug": "princeton",
+  "team_rank": 21,
+  "weight_class": 125,
+  "grade": "Fr.",
+  "hometown": "Houston, Texas",
+  "high_school": "Kinkaid School",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+  "previous_school": null,
+  "year": 2018,
+  "current_rank": 170,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.0,
+    "pa7": 16.0,
+    "pd7": -12.0,
+    "si_plus": 95.4,
+    "df_plus": 78.8,
+    "apr_plus": 98.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.969,
+      "matches": 2,
+      "rank_weight": 188,
+      "rank_overall": 2126,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "11445962009",
+      "opponent_rank": 114,
+      "opponent_name": "Brandon Loperfido",
+      "method": "Fall 3:31"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2018-02-25",
+      "opponent_id": "11411928009",
+      "opponent_career_id": null,
+      "opponent_name": "Zach Atencio",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 49,
+      "opponent_weight": 125,
+      "opponent_rank": 102,
+      "weight_class": "125",
+      "result": "L",
+      "method": "MD",
+      "score": "16-4",
+      "duration": "7:00",
+      "event": "National Collegiate Open",
+      "mv_impact": -5.26
+    },
+    {
+      "date": "2018-02-11",
+      "opponent_id": "11445962009",
+      "opponent_career_id": null,
+      "opponent_name": "Brandon Loperfido",
+      "opponent_team": "Lock Haven",
+      "opponent_team_rank": 17,
+      "opponent_weight": 125,
+      "opponent_rank": 114,
+      "weight_class": "125",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:31",
+      "event": "Warriors Winter Open",
+      "mv_impact": -6.68
+    }
+  ],
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2020,
+      "wrestler_id": "10491729132",
+      "team": "Princeton",
+      "team_slug": "princeton",
+      "weight_class": 141,
+      "grade": "Jr.",
+      "current_rank": 215,
+      "record": "2-3"
+    },
+    {
+      "season": 2019,
+      "wrestler_id": "4626235132",
+      "team": "Princeton",
+      "team_slug": "princeton",
+      "weight_class": 141,
+      "grade": "So.",
+      "current_rank": 256,
+      "record": "1-6"
+    },
+    {
+      "season": 2018,
+      "wrestler_id": "11485839009",
+      "team": "Princeton",
+      "team_slug": "princeton",
+      "weight_class": 125,
+      "grade": "Fr.",
+      "current_rank": 170,
+      "record": "0-2"
+    }
+  ]
+}

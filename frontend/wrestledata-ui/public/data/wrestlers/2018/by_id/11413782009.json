@@ -1,0 +1,118 @@
+{
+  "wrestler_id": "11413782009",
+  "name": "Trevor Parker",
+  "team": "Army West Point",
+  "team_slug": "army_west_point",
+  "team_rank": 58,
+  "weight_class": 197,
+  "grade": "So.",
+  "hometown": "Hilliard, Ohio",
+  "high_school": "Hilliard Darby (Marion Military Institute)",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+  "previous_school": null,
+  "year": 2018,
+  "current_rank": 104,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.0,
+    "pa7": 9.0,
+    "pd7": -3.0,
+    "si_plus": 103.9,
+    "df_plus": 91.7,
+    "apr_plus": 95.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.105,
+      "matches": 3,
+      "rank_weight": 89,
+      "rank_overall": 1063,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "11445527009",
+      "opponent_rank": 227,
+      "opponent_name": "Devin King",
+      "method": "MD 10-0"
+    },
+    "worst_loss": {
+      "opponent_id": "11446595009",
+      "opponent_rank": 173,
+      "opponent_name": "Konner Pritchard",
+      "method": "Dec 9-6"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2017-11-05",
+      "opponent_id": "11446595009",
+      "opponent_career_id": null,
+      "opponent_name": "Konner Pritchard",
+      "opponent_team": "Davidson",
+      "opponent_team_rank": 68,
+      "opponent_weight": 197,
+      "opponent_rank": 173,
+      "weight_class": "197",
+      "result": "L",
+      "method": "DEC",
+      "score": "9-6",
+      "duration": "7:00",
+      "event": "Hokie Open",
+      "mv_impact": -5.26
+    },
+    {
+      "date": "2017-11-05",
+      "opponent_id": "11445527009",
+      "opponent_career_id": null,
+      "opponent_name": "Devin King",
+      "opponent_team": "Ohio",
+      "opponent_team_rank": 73,
+      "opponent_weight": 285,
+      "opponent_rank": 227,
+      "weight_class": "197",
+      "result": "W",
+      "method": "MD",
+      "score": "10-0",
+      "duration": "7:00",
+      "event": "Hokie Open",
+      "mv_impact": 0.97
+    }
+  ],
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2018,
+      "wrestler_id": "11413782009",
+      "team": "Army West Point",
+      "team_slug": "army_west_point",
+      "weight_class": 197,
+      "grade": "So.",
+      "current_rank": 104,
+      "record": "1-1"
+    },
+    {
+      "season": 2017,
+      "wrestler_id": "9725180009",
+      "team": "Army",
+      "team_slug": "army",
+      "weight_class": 197,
+      "grade": "",
+      "current_rank": 148,
+      "record": "4-4"
+    }
+  ]
+}
