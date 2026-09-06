@@ -1,0 +1,135 @@
+{
+  "wrestler_id": "275990010",
+  "name": "Colton Emmerich",
+  "team": "Illinois",
+  "team_slug": "illinois",
+  "team_rank": 9,
+  "weight_class": 285,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
+  "year": 2016,
+  "current_rank": 164,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 14.0,
+    "pa7": 8.18,
+    "pd7": 5.82,
+    "si_plus": 115.2,
+    "df_plus": 86.2,
+    "apr_plus": 95.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.94,
+      "matches": 3,
+      "rank_weight": 148,
+      "rank_overall": 1663,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "264148013",
+      "opponent_rank": 246,
+      "opponent_name": "Mike Monaghan",
+      "method": "TF 16-1 2:05"
+    },
+    "worst_loss": {
+      "opponent_id": "415409076",
+      "opponent_rank": 104,
+      "opponent_name": "Arthur Bunce",
+      "method": "MD 13-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2015-11-21",
+      "opponent_id": "415409076",
+      "opponent_career_id": null,
+      "opponent_name": "Arthur Bunce",
+      "opponent_team": "Northern Illinois",
+      "opponent_team_rank": 59,
+      "opponent_weight": 285,
+      "opponent_rank": 104,
+      "weight_class": "285",
+      "result": "L",
+      "method": "MD",
+      "score": "13-3",
+      "duration": "7:00",
+      "event": "Joe Parisi Open",
+      "mv_impact": -5.08
+    },
+    {
+      "date": "2015-11-21",
+      "opponent_id": "294020107",
+      "opponent_career_id": null,
+      "opponent_name": "Jake McKiernan",
+      "opponent_team": "Southern Illinois Edwardsville",
+      "opponent_team_rank": 66,
+      "opponent_weight": 285,
+      "opponent_rank": 58,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:39",
+      "event": "Joe Parisi Open",
+      "mv_impact": -5.55
+    },
+    {
+      "date": "2015-11-14",
+      "opponent_id": "264148013",
+      "opponent_career_id": null,
+      "opponent_name": "Mike Monaghan",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 8,
+      "opponent_weight": 285,
+      "opponent_rank": 246,
+      "weight_class": "285",
+      "result": "W",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "2:05",
+      "event": "Maryville Kaufman/Brand Open",
+      "mv_impact": 1.81
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2016,
+      "wrestler_id": "275990010",
+      "team": "Illinois",
+      "team_slug": "illinois",
+      "weight_class": 285,
+      "grade": "",
+      "current_rank": 164,
+      "record": "1-2"
+    },
+    {
+      "season": 2015,
+      "wrestler_id": "4814791009",
+      "team": "Illinois",
+      "team_slug": "illinois",
+      "weight_class": 197,
+      "grade": "Fr.",
+      "current_rank": 78,
+      "record": "6-1"
+    }
+  ]
+}
