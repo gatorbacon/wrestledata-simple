@@ -1,0 +1,155 @@
+{
+  "wrestler_id": "10496119132",
+  "name": "Marcus Amico",
+  "team": "Air Force",
+  "team_slug": "air_force",
+  "team_rank": 65,
+  "weight_class": 157,
+  "grade": "Sr.",
+  "hometown": "Anchorage, Alaska",
+  "high_school": "Eagle River",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+  "previous_school": null,
+  "year": 2020,
+  "current_rank": 87,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 11.28,
+    "pa7": 3.81,
+    "pd7": 7.47,
+    "si_plus": 120.5,
+    "df_plus": 107.7,
+    "apr_plus": 113.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.61,
+      "matches": 3,
+      "rank_weight": 64,
+      "rank_overall": 593,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "10494848132",
+      "opponent_rank": 143,
+      "opponent_name": "Logan Jensen",
+      "method": "Dec 8-3"
+    },
+    "worst_loss": {
+      "opponent_id": "10430365132",
+      "opponent_rank": 109,
+      "opponent_name": "Jimmy Fate",
+      "method": "SV-1 5-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2020-01-10",
+      "opponent_id": "10496121132",
+      "opponent_career_id": null,
+      "opponent_name": "Jake Kurzhals",
+      "opponent_team": "Air Force",
+      "opponent_team_rank": 65,
+      "opponent_weight": 157,
+      "opponent_rank": 209,
+      "weight_class": "157",
+      "result": "W",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "5:00",
+      "event": "Western Colorado Open",
+      "mv_impact": 2.88
+    },
+    {
+      "date": "2019-11-02",
+      "opponent_id": "10430365132",
+      "opponent_career_id": null,
+      "opponent_name": "Jimmy Fate",
+      "opponent_team": "Northern Colorado",
+      "opponent_team_rank": 36,
+      "opponent_weight": 157,
+      "opponent_rank": 109,
+      "weight_class": "157",
+      "result": "L",
+      "method": "SV-1",
+      "score": "5-1",
+      "duration": "8:15",
+      "event": "Cowboy Open",
+      "mv_impact": -3.13
+    },
+    {
+      "date": "2019-11-02",
+      "opponent_id": "10494848132",
+      "opponent_career_id": null,
+      "opponent_name": "Logan Jensen",
+      "opponent_team": "Wyoming",
+      "opponent_team_rank": 37,
+      "opponent_weight": 157,
+      "opponent_rank": 143,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-3",
+      "duration": "7:00",
+      "event": "Cowboy Open",
+      "mv_impact": 2.07
+    }
+  ],
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2020,
+      "wrestler_id": "10496119132",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 157,
+      "grade": "Sr.",
+      "current_rank": 87,
+      "record": "2-1"
+    },
+    {
+      "season": 2019,
+      "wrestler_id": "4639386132",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 165,
+      "grade": "Jr.",
+      "current_rank": 81,
+      "record": "3-7"
+    },
+    {
+      "season": 2018,
+      "wrestler_id": "11447680009",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 157,
+      "grade": "So.",
+      "current_rank": 162,
+      "record": "0-3"
+    },
+    {
+      "season": 2017,
+      "wrestler_id": "523914010",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 174,
+      "grade": "Fr.",
+      "current_rank": 127,
+      "record": "0-0"
+    }
+  ]
+}
