@@ -1,0 +1,138 @@
+{
+  "wrestler_id": "16708318132",
+  "name": "Kyle Swartz",
+  "team": "Army West Point",
+  "team_slug": "army_west_point",
+  "team_rank": 50,
+  "weight_class": 197,
+  "grade": "Fr.",
+  "hometown": "Dillsburg, Pa.",
+  "high_school": "Northern York (USMAPS)",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+  "previous_school": null,
+  "year": 2022,
+  "current_rank": 150,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.0,
+    "pa7": 7.0,
+    "pd7": -3.0,
+    "si_plus": 93.4,
+    "df_plus": 95.6,
+    "apr_plus": 91.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.344,
+      "matches": 2,
+      "rank_weight": 133,
+      "rank_overall": 1601,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "16703716132",
+      "opponent_rank": 221,
+      "opponent_name": "Carsten Rawls",
+      "method": "Dec 5-4"
+    },
+    "worst_loss": {
+      "opponent_id": "16699909132",
+      "opponent_rank": 168,
+      "opponent_name": "Connor Bourne",
+      "method": "Dec 10-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2022-01-23",
+      "opponent_id": "16699909132",
+      "opponent_career_id": null,
+      "opponent_name": "Connor Bourne",
+      "opponent_team": "American",
+      "opponent_team_rank": 59,
+      "opponent_weight": 197,
+      "opponent_rank": 168,
+      "weight_class": "197",
+      "result": "L",
+      "method": "DEC",
+      "score": "10-3",
+      "duration": "7:00",
+      "event": "Army Round Robin Matches",
+      "mv_impact": -4.72
+    },
+    {
+      "date": "2022-01-23",
+      "opponent_id": "16703716132",
+      "opponent_career_id": null,
+      "opponent_name": "Carsten Rawls",
+      "opponent_team": "American",
+      "opponent_team_rank": 59,
+      "opponent_weight": 197,
+      "opponent_rank": 221,
+      "weight_class": "197",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
+      "event": "Army Round Robin Matches",
+      "mv_impact": 0.03
+    }
+  ],
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29680115132",
+      "team": "Army West Point",
+      "team_slug": "army_west_point",
+      "weight_class": 285,
+      "grade": "Sr.",
+      "current_rank": 134,
+      "record": "0-0"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584899132",
+      "team": "Army West Point",
+      "team_slug": "army_west_point",
+      "weight_class": 184,
+      "grade": "Jr.",
+      "current_rank": 101,
+      "record": "4-5"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20125355132",
+      "team": "Army West Point",
+      "team_slug": "army_west_point",
+      "weight_class": 197,
+      "grade": "So.",
+      "current_rank": 187,
+      "record": "5-15"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16708318132",
+      "team": "Army West Point",
+      "team_slug": "army_west_point",
+      "weight_class": 197,
+      "grade": "Fr.",
+      "current_rank": 150,
+      "record": "1-1"
+    }
+  ]
+}

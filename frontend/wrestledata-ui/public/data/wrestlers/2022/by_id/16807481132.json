@@ -1,0 +1,179 @@
+{
+  "wrestler_id": "16807481132",
+  "name": "Leo Maguigad",
+  "team": "North Carolina",
+  "team_slug": "north_carolina",
+  "team_rank": 23,
+  "weight_class": 149,
+  "grade": "Fr.",
+  "hometown": "Washington, D.C.",
+  "high_school": "St. Albans School",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+  "previous_school": null,
+  "year": 2022,
+  "current_rank": 301,
+  "record": {
+    "overall": "1-4",
+    "vs_ranked": "1-4",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 10.33,
+    "pa7": 12.5,
+    "pd7": -2.17,
+    "si_plus": 108.7,
+    "df_plus": 85.0,
+    "apr_plus": 89.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.956,
+      "matches": 6,
+      "rank_weight": 281,
+      "rank_overall": 2263,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "16697956132",
+      "opponent_rank": 315,
+      "opponent_name": "David Diaz",
+      "method": "TF 16-0 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "16704196132",
+      "opponent_rank": 291,
+      "opponent_name": "Jackson Stembridge",
+      "method": "Fall 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2022-02-13",
+      "opponent_id": "16697956132",
+      "opponent_career_id": null,
+      "opponent_name": "David Diaz",
+      "opponent_team": "VMI",
+      "opponent_team_rank": 78,
+      "opponent_weight": 149,
+      "opponent_rank": 315,
+      "weight_class": "149",
+      "result": "W",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "0:00",
+      "event": "2022 Newberry Open",
+      "mv_impact": 1.71
+    },
+    {
+      "date": "2022-01-29",
+      "opponent_id": "16698165132",
+      "opponent_career_id": null,
+      "opponent_name": "Logan Ferrero",
+      "opponent_team": "Duke",
+      "opponent_team_rank": 42,
+      "opponent_weight": 149,
+      "opponent_rank": 55,
+      "weight_class": "149",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:05",
+      "event": "Appalachian Open",
+      "mv_impact": -5.08
+    },
+    {
+      "date": "2022-01-29",
+      "opponent_id": "16704196132",
+      "opponent_career_id": null,
+      "opponent_name": "Jackson Stembridge",
+      "opponent_team": "The Citadel",
+      "opponent_team_rank": 58,
+      "opponent_weight": 157,
+      "opponent_rank": 291,
+      "weight_class": "149",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Appalachian Open",
+      "mv_impact": -8.59
+    },
+    {
+      "date": "2022-01-07",
+      "opponent_id": "16703841132",
+      "opponent_career_id": null,
+      "opponent_name": "Logan Sanom",
+      "opponent_team": "Bucknell",
+      "opponent_team_rank": 47,
+      "opponent_weight": 149,
+      "opponent_rank": 198,
+      "weight_class": "149",
+      "result": "L",
+      "method": "TF",
+      "score": "18-2",
+      "duration": "3:00",
+      "event": "David H. Lehman F&M Open",
+      "mv_impact": -6.39
+    },
+    {
+      "date": "2022-01-07",
+      "opponent_id": "16707019132",
+      "opponent_career_id": null,
+      "opponent_name": "Chase Caprella",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 46,
+      "opponent_weight": 149,
+      "opponent_rank": 289,
+      "weight_class": "149",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:09",
+      "event": "David H. Lehman F&M Open",
+      "mv_impact": -8.8
+    }
+  ],
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2024,
+      "wrestler_id": "24580943132",
+      "team": "North Carolina",
+      "team_slug": "north_carolina",
+      "weight_class": 141,
+      "grade": "Jr.",
+      "current_rank": 263,
+      "record": "0-2"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20124068132",
+      "team": "North Carolina",
+      "team_slug": "north_carolina",
+      "weight_class": 141,
+      "grade": "So.",
+      "current_rank": 280,
+      "record": "0-4"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16807481132",
+      "team": "North Carolina",
+      "team_slug": "north_carolina",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 301,
+      "record": "1-4"
+    }
+  ]
+}

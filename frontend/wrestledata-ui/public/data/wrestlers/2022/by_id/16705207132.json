@@ -1,0 +1,133 @@
+{
+  "wrestler_id": "16705207132",
+  "name": "Canyon Wells",
+  "team": "Cleveland State",
+  "team_slug": "cleveland_state",
+  "team_rank": 52,
+  "weight_class": 133,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
+  "year": 2022,
+  "current_rank": 217,
+  "record": {
+    "overall": "0-2",
+    "vs_ranked": "0-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.5,
+    "pa7": 12.5,
+    "pd7": -12.0,
+    "si_plus": 83.4,
+    "df_plus": 84.4,
+    "apr_plus": 93.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.241,
+      "matches": 2,
+      "rank_weight": 212,
+      "rank_overall": 2283,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "16701602132",
+      "opponent_rank": 237,
+      "opponent_name": "Conner Quinn",
+      "method": "TF 15-0 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2022-01-29",
+      "opponent_id": "16702322132",
+      "opponent_career_id": null,
+      "opponent_name": "David Campbell",
+      "opponent_team": "Rutgers",
+      "opponent_team_rank": 18,
+      "opponent_weight": 133,
+      "opponent_rank": 124,
+      "weight_class": "133",
+      "result": "L",
+      "method": "MD",
+      "score": "10-1",
+      "duration": "7:00",
+      "event": "Mat Town Open II",
+      "mv_impact": -4.66
+    },
+    {
+      "date": "2022-01-29",
+      "opponent_id": "16701602132",
+      "opponent_career_id": null,
+      "opponent_name": "Conner Quinn",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 54,
+      "opponent_weight": 133,
+      "opponent_rank": 237,
+      "weight_class": "133",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "0:00",
+      "event": "Mat Town Open II",
+      "mv_impact": -7.82
+    }
+  ],
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29685056132",
+      "team": "Cleveland State",
+      "team_slug": "cleveland_state",
+      "weight_class": 141,
+      "grade": "R-Jr.",
+      "current_rank": 243,
+      "record": "0-3"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24591885132",
+      "team": "Cleveland State",
+      "team_slug": "cleveland_state",
+      "weight_class": 133,
+      "grade": "",
+      "current_rank": 196,
+      "record": "0-5"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20125278132",
+      "team": "Cleveland State",
+      "team_slug": "cleveland_state",
+      "weight_class": 133,
+      "grade": "R-Fr.",
+      "current_rank": 212,
+      "record": "0-4"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16705207132",
+      "team": "Cleveland State",
+      "team_slug": "cleveland_state",
+      "weight_class": 133,
+      "grade": "",
+      "current_rank": 217,
+      "record": "0-2"
+    }
+  ]
+}

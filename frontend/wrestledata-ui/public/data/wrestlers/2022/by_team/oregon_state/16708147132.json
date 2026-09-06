@@ -1,0 +1,96 @@
+{
+  "wrestler_id": "16708147132",
+  "name": "Kodiak Stephens",
+  "team": "Oregon State",
+  "team_slug": "oregon_state",
+  "team_rank": 20,
+  "weight_class": 184,
+  "grade": "Fr.",
+  "hometown": "Arnold, Calif.",
+  "high_school": "Bret Harte HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+  "previous_school": null,
+  "year": 2022,
+  "current_rank": 182,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 0.0,
+    "pd7": 0.0,
+    "si_plus": 102.3,
+    "df_plus": 103.0,
+    "apr_plus": 95.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.132,
+      "matches": 1,
+      "rank_weight": 215,
+      "rank_overall": 2276,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "16709529132",
+      "opponent_rank": 68,
+      "opponent_name": "Jacob Hansen",
+      "method": "Fall 1:03"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2021-11-21",
+      "opponent_id": "16709529132",
+      "opponent_career_id": null,
+      "opponent_name": "Jacob Hansen",
+      "opponent_team": "CSU Bakersfield",
+      "opponent_team_rank": 56,
+      "opponent_weight": 184,
+      "opponent_rank": 68,
+      "weight_class": "184",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:03",
+      "event": "Roadrunner Open",
+      "mv_impact": -6.13
+    }
+  ],
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2023,
+      "wrestler_id": "20123422132",
+      "team": "Oregon State",
+      "team_slug": "oregon_state",
+      "weight_class": 184,
+      "grade": "So.",
+      "current_rank": 76,
+      "record": "5-4"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16708147132",
+      "team": "Oregon State",
+      "team_slug": "oregon_state",
+      "weight_class": 184,
+      "grade": "Fr.",
+      "current_rank": 182,
+      "record": "0-1"
+    }
+  ]
+}
