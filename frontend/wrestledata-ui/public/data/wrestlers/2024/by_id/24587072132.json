@@ -1,0 +1,140 @@
+{
+  "wrestler_id": "24587072132",
+  "name": "Mason Ayers",
+  "team": "The Citadel",
+  "team_slug": "the_citadel",
+  "team_rank": 79,
+  "weight_class": 197,
+  "grade": "Fr.",
+  "hometown": "St. George, S.C.",
+  "high_school": "Summerville HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+  "previous_school": null,
+  "year": 2024,
+  "current_rank": 236,
+  "record": {
+    "overall": "0-3",
+    "vs_ranked": "0-3",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 1.0,
+    "pa7": 19.5,
+    "pd7": -18.5,
+    "si_plus": 75.9,
+    "df_plus": 73.5,
+    "apr_plus": 96.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.432,
+      "matches": 3,
+      "rank_weight": 213,
+      "rank_overall": 2378,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 3,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "24592970132",
+      "opponent_rank": 231,
+      "opponent_name": "Edison Flores",
+      "method": "TF 16-0 4:01"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2024-01-27",
+      "opponent_id": "24592970132",
+      "opponent_career_id": null,
+      "opponent_name": "Edison Flores",
+      "opponent_team": "Gardner-Webb",
+      "opponent_team_rank": 54,
+      "opponent_weight": 197,
+      "opponent_rank": 231,
+      "weight_class": "197",
+      "result": "L",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "4:01",
+      "event": "Appalachian Open",
+      "mv_impact": -8.21
+    },
+    {
+      "date": "2023-11-05",
+      "opponent_id": "24580809132",
+      "opponent_career_id": null,
+      "opponent_name": "Liam Volk-Klos",
+      "opponent_team": "American",
+      "opponent_team_rank": 58,
+      "opponent_weight": 197,
+      "opponent_rank": 190,
+      "weight_class": "197",
+      "result": "L",
+      "method": "MD",
+      "score": "14-2",
+      "duration": "7:00",
+      "event": "Battle at The Citadel",
+      "mv_impact": -6.12
+    },
+    {
+      "date": "2023-11-05",
+      "opponent_id": "24586836132",
+      "opponent_career_id": null,
+      "opponent_name": "Gabe Sollars",
+      "opponent_team": "Indiana",
+      "opponent_team_rank": 39,
+      "opponent_weight": 197,
+      "opponent_rank": 43,
+      "weight_class": "197",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:53",
+      "event": "Battle at The Citadel",
+      "mv_impact": -4.96
+    }
+  ],
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34946236132",
+      "team": "The Citadel",
+      "team_slug": "the_citadel",
+      "weight_class": 285,
+      "grade": "R-So.",
+      "current_rank": 118,
+      "record": "5-5"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29687882132",
+      "team": "The Citadel",
+      "team_slug": "the_citadel",
+      "weight_class": 285,
+      "grade": "",
+      "current_rank": 198,
+      "record": "1-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24587072132",
+      "team": "The Citadel",
+      "team_slug": "the_citadel",
+      "weight_class": 197,
+      "grade": "Fr.",
+      "current_rank": 236,
+      "record": "0-3"
+    }
+  ]
+}

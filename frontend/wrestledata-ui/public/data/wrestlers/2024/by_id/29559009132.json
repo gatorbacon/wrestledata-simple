@@ -1,0 +1,106 @@
+{
+  "wrestler_id": "29559009132",
+  "name": "Jimmie Jones",
+  "team": "Morgan State",
+  "team_slug": "morgan_state",
+  "team_rank": 73,
+  "weight_class": 133,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
+  "year": 2024,
+  "current_rank": 162,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 19.88,
+    "pd7": -19.88,
+    "si_plus": 73.7,
+    "df_plus": 78.6,
+    "apr_plus": 91.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -7.187,
+      "matches": 1,
+      "rank_weight": 228,
+      "rank_overall": 2414,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "24584560132",
+      "opponent_rank": 189,
+      "opponent_name": "Ryan Arbeit",
+      "method": "TF 16-0 5:38"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2024-03-03",
+      "opponent_id": "24584560132",
+      "opponent_career_id": null,
+      "opponent_name": "Ryan Arbeit",
+      "opponent_team": "Hofstra",
+      "opponent_team_rank": 56,
+      "opponent_weight": 133,
+      "opponent_rank": 189,
+      "weight_class": "133",
+      "result": "L",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "5:38",
+      "event": "Zingo Nationals",
+      "mv_impact": -7.19
+    }
+  ],
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34977454132",
+      "team": "Morgan State",
+      "team_slug": "morgan_state",
+      "weight_class": 133,
+      "grade": "Jr.",
+      "current_rank": 103,
+      "record": "1-15"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29681743132",
+      "team": "Morgan State",
+      "team_slug": "morgan_state",
+      "weight_class": 133,
+      "grade": "",
+      "current_rank": 206,
+      "record": "2-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "29559009132",
+      "team": "Morgan State",
+      "team_slug": "morgan_state",
+      "weight_class": 133,
+      "grade": "",
+      "current_rank": 162,
+      "record": "0-1"
+    }
+  ]
+}
