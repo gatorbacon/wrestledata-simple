@@ -342,6 +342,21 @@ class WrestlingScraper:
                         if not is_d1:
                             continue
 
+                        # TrackWrestling's own historical data (seen in 2012-2023
+                        # snapshots, absent from current years) carries a bogus
+                        # internal test entry tagged as real D1 -- exclude by name
+                        # so it never reaches team lists/profiles/frontend again.
+                        if "testing" in name.lower():
+                            continue
+
+                        # Same for a handful of other known-bogus/non-D1 entries
+                        # found in older (2012-era) TW snapshots: "All-Star
+                        # Green"/"All-Star Red" are exhibition-team placeholders,
+                        # not real programs; Millersville is NCAA Division II and
+                        # should never have been tagged D1 in TW's own data.
+                        if name.lower() in ("all-star green", "all-star red", "millersville"):
+                            continue
+
                         division_label = f"NCAA D1 {self.gender.capitalize()}"
                         team = {
                             "name": name,

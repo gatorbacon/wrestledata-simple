@@ -513,7 +513,7 @@ def process_league(season: int, league: str, state: Optional[str], gender: str, 
             weights = [100, 107, 114, 120, 126, 132, 138, 145, 152, 165, 185, 235]
     else: # ncaa
         teams_list_path = Path(f"data/team_lists/ncaa_men/{season}/teams.json")
-        rankings_dir = Path("mt/rankings_data") / str(season)
+        rankings_dir = Path("mt/rankings_data") / "ncaa_men" / str(season)
         starter_overrides_path = rankings_dir / "starter_overrides.json"
         wrestler_profiles_dir = Path("frontend/wrestledata-ui/public/data/wrestlers") / str(season) / "by_id"
         out_file = Path("frontend/wrestledata-ui/public/data/team_metrics") / str(season) / "team_metrics.json"

@@ -74,8 +74,43 @@ def latest_flo_snapshot(season: str) -> dict:
     return json.loads(latest.read_text())
 
 
+def bootstrap_rankings_file(season: str, weight: int) -> dict:
+    """Build a placeholder rankings_<weight>.json from weight_class_<weight>.json
+    (wins/losses only -- no rank methodology yet) when nothing exists yet, e.g.
+    backfilling a season for the first time rather than the routine weekly
+    case where last run's file is already sitting on disk. Doesn't need to be
+    sophisticated: Flo immediately promotes its own wrestlers to the top of
+    this below, and calculate_elo_ratings.py rewrites the whole order by Elo
+    two pipeline steps later -- this only needs to exist so both of those have
+    a file to tag/rewrite instead of crashing on FileNotFoundError."""
+    wc_path = RANKINGS_DIR / season / f"weight_class_{weight}.json"
+    rankings = []
+    if wc_path.exists():
+        wc_data = json.loads(wc_path.read_text())
+        wrestlers = sorted(
+            wc_data.get("wrestlers", {}).values(),
+            key=lambda w: (-(w.get("wins") or 0), w.get("losses") or 0),
+        )
+        for i, w in enumerate(wrestlers, start=1):
+            rankings.append({
+                "rank": i,
+                "wrestler_id": w["id"],
+                "name": w.get("name", "Unknown"),
+                "team": w.get("team", "Unknown"),
+                "record": f"{w.get('wins', 0)}-{w.get('losses', 0)}",
+                "is_starter": False,
+                "flo_ranked": False,
+            })
+    return {"weight_class": weight, "season": int(season), "rankings": rankings}
+
+
 def load_rankings(season: str, weight: int) -> dict:
     path = RANKINGS_DIR / season / f"rankings_{weight}.json"
+    if not path.exists():
+        print(f"  No existing rankings_{weight}.json -- creating bootstrap ranking from win/loss record")
+        data = bootstrap_rankings_file(season, weight)
+        save_rankings(season, weight, data)
+        return data
     return json.loads(path.read_text())
 
 

@@ -52,6 +52,16 @@ DATA_DIR = PROJECT_ROOT / "data"
 WEIGHT_ORDER = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
 WEIGHT_OFFSET = {w: i for i, w in enumerate(WEIGHT_ORDER)}
 
+# Pound-for-pound sits immediately BEFORE the 10 weights' consecutive run of
+# ranking_ids -- confirmed empirically (not guessed) via the site's own tab
+# bar: for 2026-27, weight 125's bootstrap_id is 56563 and the "Pound-for-
+# pound" tab resolves to ranking_id 56562 (base_id - 1); same -1 relationship
+# holds for 2025-26 (54619 -> 54618). Uses the exact same table markup/parser
+# as the weight pages (scrape_table() already detects columns by header text,
+# and P4P pages have their own layout quirks -- e.g. a "WT" column instead of
+# "Year" in some seasons -- so no parsing changes needed, just the offset).
+P4P_OFFSET = -1
+
 # season label -> (event_id, bootstrap ranking_id, bootstrap weight, tourney_year,
 #                   calendar year the season STARTS in -- Oct/Nov/Dec targets use
 #                   this year, Jan/Feb targets use start_year + 1)
@@ -260,9 +270,10 @@ def discover_dated_base_ids(season_label: str, driver):
 
 def scrape_and_save_date(season_label: str, cfg: dict, out_dir: Path, date_obj: datetime,
                           base_id: int, driver, note: str, force: bool = False) -> bool:
-    """Scrape all 10 weights for one already-chosen date and archive it.
-    Returns False (no scraping done) if the file already exists and force
-    is not set -- callers use this to decide whether anything happened."""
+    """Scrape all 10 weights plus pound-for-pound for one already-chosen date
+    and archive it. Returns False (no scraping done) if the file already
+    exists and force is not set -- callers use this to decide whether
+    anything happened."""
     event_id = cfg["event_id"]
     tourney_year = cfg["tourney_year"]
     date_str = date_obj.strftime("%Y-%m-%d")
@@ -284,6 +295,15 @@ def scrape_and_save_date(season_label: str, cfg: dict, out_dir: Path, date_obj: 
         weights_out[str(w)] = entries
         print(f"    weight {w}: {len(entries)} entries")
 
+    p4p_rid = base_id + P4P_OFFSET
+    p4p_url = build_url(event_id, season_label, p4p_rid, "p4p")
+    try:
+        p4p_out = scrape_table(driver, p4p_url)
+    except Exception as e:
+        print(f"    WARN p4p: {e}")
+        p4p_out = []
+    print(f"    p4p: {len(p4p_out)} entries")
+
     payload = {
         "source": "FloWrestling",
         "rankings_url": f"https://www.flowrestling.org/rankings/{event_id}-{season_label}-ncaa-di-wrestling-rankings",
@@ -291,6 +311,7 @@ def scrape_and_save_date(season_label: str, cfg: dict, out_dir: Path, date_obj: 
         "season": tourney_year,
         "note": note,
         "weights": weights_out,
+        "p4p": p4p_out,
     }
     out_path.write_text(json.dumps(payload, indent=2))
     print(f"  [{season_label}] saved {out_path}")

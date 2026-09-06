@@ -76,6 +76,30 @@ def build_steps(track, season):
             "name": "Season Scraper",
             "cmds": [[py, "wrestle_scraper_raw_mt_locked.py", *flags, "-season", season, "-headless"]],
         },
+    ]
+
+    # NCAA only -- the Season Scraper step above does a full open(path, "w")
+    # overwrite of mt/data/ncaa_men/{season}/{team}.json every run (confirmed
+    # in wrestle_scraper_raw_mt_locked.py's save_team_data(), no merge), which
+    # wipes the grade/hometown/photo_url/previous_school fields the official-
+    # roster enrichment writes onto that same file. Must re-run both scripts
+    # after every scrape, not just once, or the very next weekly scrape wipes
+    # them again. Neither takes a -season flag -- both scan whatever's on
+    # disk under mt/data/official_rosters/ and mt/data/roster_links/ across
+    # every team+season, and are safe/cheap to run every time (pure local
+    # JSON reads/writes, no network) even when this run's season isn't the
+    # one that changed.
+    if track["league"] == "ncaa":
+        steps.append({
+            "name": "Rebuild Official Roster Links",
+            "cmds": [[py, "scripts/analysis/match_official_rosters_to_trackwrestling.py"]],
+        })
+        steps.append({
+            "name": "Re-apply Roster Enrichment (grade/hometown/photo)",
+            "cmds": [[py, "scripts/enrichment/enrich_ncaa_rosters.py"]],
+        })
+
+    steps += [
         {
             "name": "Post Process #1 - Applying Aliases",
             # season is a positional arg for this one, not -season
@@ -149,6 +173,17 @@ def build_steps(track, season):
         mv_cmd = [py, "scripts/mat_value/compute_all_mat_values.py", "--season", season, "-league", "hs", "-state", state]
     steps.append({"name": "Compute Mat Value (TPAR)", "cmds": [mv_cmd]})
 
+    # Rolling per-date TPAR trajectory for the profile page's chart trendline
+    # + hover. Reads only weight_class_<weight>.json (already produced by
+    # Load Data above), independent of Mat Value / Hybrid Ranks -- safe to
+    # rerun any time, and self-contained (doesn't touch mat_value_<season>.json
+    # or any wrestler profile). NCAA-only; no HS equivalent.
+    if is_ncaa:
+        steps.append({
+            "name": "Compute Rolling TPAR Trajectory",
+            "cmds": [[py, "scripts/mat_value/compute_rolling_mbt.py", "--season", season]],
+        })
+
     # Wrestler profiles also compute SI+/DF+/PE+/DI+. HS needs a separate
     # call per gender (profiles live in gender-specific dirs); NCAA is one
     # call. Runs twice in the full flow -- see the second pass below, which
@@ -163,11 +198,27 @@ def build_steps(track, season):
         ]
     steps.append({"name": "Build Wrestler Profiles", "cmds": wrestler_profiles_cmds()})
 
-    if is_ncaa:
-        search_cmd = [py, "scripts/generate_search_index.py", "-league", "ncaa", "-season", season]
+    # NCAA's search index is a single shared, non-season-scoped file
+    # (frontend/wrestledata-ui/public/search_index.js) -- it always represents
+    # whichever season last built it, unlike HS's career-aware version. Running
+    # this for a backfill season overwrites the LIVE site's search with stale
+    # data; only ever run it for the current season (DEFAULT_SEASON).
+    if is_ncaa and season != DEFAULT_SEASON:
+        steps.append({
+            "name": "Build Search Index",
+            "cmds": [],
+            "disabled": True,
+            "note": f"Skipped for backfill season {season} -- NCAA search index is a single shared file "
+                    f"representing whatever season last built it (no per-season path). Running this for a "
+                    f"non-current season would overwrite the live site's search with stale data. Only run "
+                    f"for season {DEFAULT_SEASON}.",
+        })
     else:
-        search_cmd = [py, "scripts/generate_search_index.py", "-league", "hs", "-gender", "both", "-season", season]
-    steps.append({"name": "Build Search Index", "cmds": [search_cmd]})
+        if is_ncaa:
+            search_cmd = [py, "scripts/generate_search_index.py", "-league", "ncaa", "-season", season]
+        else:
+            search_cmd = [py, "scripts/generate_search_index.py", "-league", "hs", "-gender", "both", "-season", season]
+        steps.append({"name": "Build Search Index", "cmds": [search_cmd]})
 
     # Same "-gender not used for HS" shape as Mat Value above.
     if is_ncaa:
@@ -182,15 +233,46 @@ def build_steps(track, season):
         xtp_cmd = [py, "scripts/xtp/run_team_xtp.py", "--season", season, "--rebuild-weights", "--limit", "25", "-league", "hs", "-state", state]
     steps.append({"name": "Run Team xTP", "cmds": [xtp_cmd]})
 
+    # Backtests the live Team Championship Odds model against every
+    # completed season's real top-3 finishers. Seasons are discovered from
+    # what's on disk (needs that season's NCAAs already scraped+parsed), so
+    # this is safe/idempotent to run every time -- it only picks up a new
+    # season once one becomes eligible. NCAA-only; no HS equivalent.
+    if is_ncaa:
+        backtest_cmd = [py, "scripts/analysis/build_top3_backtest.py"]
+        steps.append({"name": "Build Top-3 Season Backtest", "cmds": [backtest_cmd]})
+
     # team_profiles/team_metrics/public_matrix/public_rankings/simple_leaderboards
     # all process BOTH HS genders in one call when -gender is omitted
     # (confirmed in each script's own argparse help text) -- matching your
     # literal commands, not a per-track split like wrestler profiles above.
+    # Same shared-non-season-scoped-path issue as the search index above --
+    # build_team_profiles.py's NCAA output (frontend/wrestledata-ui/public/data/teams/{team}.json)
+    # has no season subdirectory at all, so building it for a backfill season
+    # silently overwrites the LIVE site's team pages (confirmed: this happened
+    # while backfilling 2023, caught via git status, restored via a rerun at
+    # DEFAULT_SEASON). Skip entirely for NCAA backfills -- team.html itself
+    # also hardcodes the current season, so a historical team profile has no
+    # frontend consumer anyway.
+    ncaa_team_profiles_unsafe = is_ncaa and season != DEFAULT_SEASON
+
     def team_profiles_cmds():
         if is_ncaa:
             return [[py, "scripts/teams/build_team_profiles.py", "--season", season, "-league", "ncaa"]]
         return [[py, "scripts/teams/build_team_profiles.py", "--season", season, "-league", "hs", "-state", state]]
-    steps.append({"name": "Build Team Profiles", "cmds": team_profiles_cmds()})
+
+    def team_profiles_step(name):
+        if ncaa_team_profiles_unsafe:
+            return {
+                "name": name, "cmds": [], "disabled": True,
+                "note": f"Skipped for backfill season {season} -- NCAA team profiles share one "
+                        f"non-season-scoped path per team (no per-season path), and team.html always "
+                        f"shows the current season regardless, so a historical build has no frontend "
+                        f"consumer and would only overwrite the live {DEFAULT_SEASON} team pages.",
+            }
+        return {"name": name, "cmds": team_profiles_cmds()}
+
+    steps.append(team_profiles_step("Build Team Profiles"))
 
     if is_ncaa:
         metrics_cmd = [py, "scripts/team_metrics/build_team_metrics.py", "--season", season, "-league", "ncaa"]
@@ -282,7 +364,7 @@ def build_steps(track, season):
     # their own rollups (bonus_rate, etc.) -- confirmed via the actual
     # read/write dependencies in both scripts, not assumed.
     steps.append({"name": "Build Wrestler Profiles (2nd pass)", "cmds": wrestler_profiles_cmds()})
-    steps.append({"name": "Build Team Profiles (2nd pass)", "cmds": team_profiles_cmds()})
+    steps.append(team_profiles_step("Build Team Profiles (2nd pass)"))
 
     if is_hs:
         from datetime import date
@@ -311,14 +393,28 @@ def build_steps(track, season):
     # docstring/argparse (choices=["hs"]) and its --all-time-career-wins flag
     # depends on the HS-only career-profile system built just above -- these
     # are two separate, non-overlapping scripts, not two ways to do one thing.
-    if is_ncaa:
-        leaderboard_cmds = [[py, "scripts/build_simple_leaderboards.py", "--season", season, "-league", "ncaa"]]
+    if is_ncaa and season != DEFAULT_SEASON:
+        # Same shared-path issue again: NCAA leaderboards write to
+        # frontend/wrestledata-ui/public/data/leaderboards/*.json with no
+        # season subdirectory -- confirmed this overwrote the live 2026
+        # leaderboards while backfilling both 2023 and 2024. Only safe for
+        # the current season.
+        steps.append({
+            "name": "Generate Leaderboards", "cmds": [], "disabled": True,
+            "note": f"Skipped for backfill season {season} -- NCAA leaderboards share one "
+                    f"non-season-scoped path (no per-season path). Running this for a non-current "
+                    f"season overwrites the live site's leaderboards with stale data. Only run for "
+                    f"season {DEFAULT_SEASON}.",
+        })
     else:
-        leaderboard_cmds = [
-            [py, "scripts/build_simple_leaderboards.py", "--season", season, "-league", "hs", "-state", state],
-            [py, "scripts/build_leaderboards.py", "-season", season, "--all-time-career-wins"],
-        ]
-    steps.append({"name": "Generate Leaderboards", "cmds": leaderboard_cmds})
+        if is_ncaa:
+            leaderboard_cmds = [[py, "scripts/build_simple_leaderboards.py", "--season", season, "-league", "ncaa"]]
+        else:
+            leaderboard_cmds = [
+                [py, "scripts/build_simple_leaderboards.py", "--season", season, "-league", "hs", "-state", state],
+                [py, "scripts/build_leaderboards.py", "-season", season, "--all-time-career-wins"],
+            ]
+        steps.append({"name": "Generate Leaderboards", "cmds": leaderboard_cmds})
 
     if is_hs:
         # KentuckyMat-only (hardcodes frontend/hs-ky-ui/ and kentuckymat.com),
@@ -345,11 +441,10 @@ def choose_season():
     return season or DEFAULT_SEASON
 
 
-def print_menu(steps, done):
+def print_menu(steps, done, last_run_idx):
     print("\n" + "=" * 60)
     print("PIPELINE STEPS")
     print("=" * 60)
-    next_idx = None
     for i, step in enumerate(steps):
         if step.get("disabled"):
             mark = "🚫"
@@ -358,8 +453,18 @@ def print_menu(steps, done):
         else:
             mark = "⬜"
         print(f"  {mark} {i + 1}. {step['name']}")
-        if next_idx is None and i not in done and not step.get("disabled"):
+
+    # "Next" is positional -- whatever comes right after the step you most
+    # recently ran, not the first one you haven't done yet. Running step 7
+    # straight out of the gate recommends 8 next, not 1, even though 1-6
+    # were skipped and never marked done. Skips over any disabled step in
+    # between. First run of the session (nothing run yet) starts at step 1.
+    start = 0 if last_run_idx is None else last_run_idx + 1
+    next_idx = None
+    for i in range(start, len(steps)):
+        if not steps[i].get("disabled"):
             next_idx = i
+            break
     print("=" * 60)
     if next_idx is not None:
         print(f"Recommended next: {next_idx + 1}. {steps[next_idx]['name']}")
@@ -409,11 +514,12 @@ def main():
 
     steps = build_steps(track, season)
     done = set()
+    last_run_idx = None  # drives "recommended next" -- see print_menu()
 
     print(f"\nTrack: {track['label']}   Season: {season}")
 
     while True:
-        next_idx = print_menu(steps, done)
+        next_idx = print_menu(steps, done, last_run_idx)
         choice = input("> ").strip().lower()
 
         if choice in ("q", "quit", "exit"):
@@ -437,6 +543,7 @@ def main():
             continue
 
         success = run_step(steps[idx])
+        last_run_idx = idx
         if success:
             done.add(idx)
         else:

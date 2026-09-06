@@ -48,6 +48,114 @@ def wrestler_id_to_url(wrestler_id, gender=None):
     return f"/wrestler.html?id={wrestler_id}"
 
 
+def _wrestler_search_item(name, wrestler_id, team, weight):
+    name_parts = name.split()
+    secondary_parts = []
+    if team:
+        secondary_parts.append(team)
+    if weight:
+        secondary_parts.append(str(weight))
+    return {
+        "type": "wrestler",
+        "name": name,
+        "first_name": name_parts[0] if name_parts else "",
+        "last_name": " ".join(name_parts[1:]) if len(name_parts) > 1 else "",
+        "secondary": " · ".join(secondary_parts),
+        "url": wrestler_id_to_url(wrestler_id),
+        "searchTokens": generate_search_tokens(name, for_wrestler=True),
+    }
+
+
+def load_ncaa_career_wrestlers(script_dir, seasons):
+    """Returns [search-item, ...], one entry per real person (career), not
+    one per season. Career-linking (data/careers/ncaa_men/career_*.json)
+    already maps every season_wrestler_id to the one real person it belongs
+    to; each career gets a single search entry pointing at its most recent
+    season among `seasons` -- wrestler.html's own season-selector table
+    (built from season_summary) is what surfaces a person's other linked
+    seasons once you're on their page, so search itself no longer needs a
+    separate row per season the way index_wrestlers.json alone would give."""
+    careers_dir = script_dir / "data/careers/ncaa_men"
+    career_files = sorted(careers_dir.glob("career_*.json")) if careers_dir.exists() else []
+
+    # season -> {wrestler_id: {name, team, weight_class}}, for secondary-field lookups
+    season_index = {}
+    for season in seasons:
+        idx_path = script_dir / f"frontend/wrestledata-ui/public/data/wrestlers/{season}/index_wrestlers.json"
+        lookup = {}
+        if idx_path.exists():
+            with open(idx_path, "r", encoding="utf-8") as f:
+                for w in json.load(f):
+                    wid = w.get("wrestler_id")
+                    if wid:
+                        lookup[str(wid)] = w
+        season_index[str(season)] = lookup
+
+    claimed = set()  # (season, wrestler_id) already represented by a career entry
+    items = []
+    for cf in career_files:
+        try:
+            career = json.loads(cf.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        name = career.get("canonical_name", "")
+        career_seasons = career.get("seasons", {})
+        if not name or not career_seasons:
+            continue
+
+        candidate_seasons = [s for s in career_seasons if s in season_index]
+        if not candidate_seasons:
+            continue
+        latest_season = max(candidate_seasons, key=int)
+        for s in candidate_seasons:
+            claimed.add((s, str(career_seasons[s])))
+
+        wrestler_id = str(career_seasons[latest_season])
+        w = season_index[latest_season].get(wrestler_id, {})
+        items.append(_wrestler_search_item(name, wrestler_id, w.get("team", ""), w.get("weight_class")))
+
+    # Orphans: entries in a season index not covered by any career file at
+    # all (should be rare -- every new wrestler gets a career via Tier 3b in
+    # link_ncaa_season.py; a handful may predate that guarantee or a season
+    # that hasn't been career-linked yet). Still searchable, just standalone.
+    orphan_count = 0
+    for season, lookup in season_index.items():
+        for wid, w in lookup.items():
+            if (season, wid) in claimed:
+                continue
+            items.append(_wrestler_search_item(w.get("name", "Unknown"), wid, w.get("team", ""), w.get("weight_class")))
+            orphan_count += 1
+
+    print(f"  Careers: {len(items) - orphan_count} wrestlers (1 entry per person), {orphan_count} orphans with no career file")
+    return items
+
+
+def load_ncaa_season_teams(script_dir, season):
+    """Returns [search-item, ...] for one season's index_teams.json. Team
+    pages aren't season-specific in the URL, so callers should dedupe by
+    team_slug across seasons rather than including one row per season."""
+    teams_index = script_dir / f"frontend/wrestledata-ui/public/data/wrestlers/{season}/index_teams.json"
+    if not teams_index.exists():
+        return []
+    with open(teams_index, "r", encoding="utf-8") as f:
+        teams = json.load(f)
+    items = []
+    for team_data in teams:
+        team_name = team_data.get("team", "Unknown")
+        team_slug = team_data.get("team_slug", "")
+        if not team_slug:
+            continue
+        items.append({
+            "type": "team",
+            "name": team_name,
+            "secondary": "D1",
+            "url": team_slug_to_url(team_slug),
+            "searchTokens": generate_search_tokens(team_name),
+            "_slug": team_slug,  # only used for de-duping across seasons, stripped before writing
+        })
+    return items
+
+
 def career_id_to_url(career_id, gender=None):
     if gender:
         return f"/wrestler.html?career_id={career_id}&gender={gender}"
@@ -270,6 +378,14 @@ def main():
     parser.add_argument("-gender", choices=["boys", "girls", "both"],
                         help="Gender for HS (required if league=hs)")
     parser.add_argument("-season", type=int, default=2026)
+    parser.add_argument(
+        "--all-seasons", action="store_true",
+        help="NCAA only: merge every season listed in available_seasons.json into one "
+             "combined index instead of just -season. Use this after backfilling older "
+             "seasons so their wrestlers become searchable alongside the current one -- "
+             "running with a single -season would otherwise overwrite the whole index "
+             "with just that one season, wiping out every other season's entries.",
+    )
     args = parser.parse_args()
 
     if args.league == 'hs' and not args.gender:
@@ -289,56 +405,26 @@ def main():
 
         output_file = script_dir / "frontend/hs-ky-ui/public/search_index.js"
 
-    else:  # ncaa — unchanged logic
-        wrestlers_index = script_dir / f"frontend/wrestledata-ui/public/data/wrestlers/{args.season}/index_wrestlers.json"
-        teams_index = script_dir / f"frontend/wrestledata-ui/public/data/wrestlers/{args.season}/index_teams.json"
+    else:  # ncaa
         output_file = script_dir / "frontend/wrestledata-ui/public/search_index.js"
 
-        print(f"Loading wrestlers from {wrestlers_index}...")
-        if not wrestlers_index.exists():
-            print(f"Error: {wrestlers_index} not found")
-            return
+        if args.all_seasons:
+            seasons_path = script_dir / "frontend/wrestledata-ui/public/data/wrestlers/available_seasons.json"
+            with open(seasons_path, "r", encoding="utf-8") as f:
+                seasons = json.load(f)
+            print(f"Merging {len(seasons)} seasons: {seasons}")
+        else:
+            seasons = [args.season]
 
-        with open(wrestlers_index, 'r', encoding='utf-8') as f:
-            wrestlers = json.load(f)
-        for wrestler in wrestlers:
-            name = wrestler.get('name', 'Unknown')
-            team = wrestler.get('team', 'Unknown')
-            weight = wrestler.get('weight_class')
-            wrestler_id = wrestler.get('wrestler_id')
-            if not wrestler_id:
-                continue
-            secondary_parts = []
-            if team:
-                secondary_parts.append(team)
-            if weight:
-                secondary_parts.append(str(weight))
-            name_parts = name.split()
-            search_index.append({
-                "type": "wrestler",
-                "name": name,
-                "first_name": name_parts[0] if name_parts else "",
-                "last_name": " ".join(name_parts[1:]) if len(name_parts) > 1 else "",
-                "secondary": " · ".join(secondary_parts),
-                "url": wrestler_id_to_url(wrestler_id),
-                "searchTokens": generate_search_tokens(name, for_wrestler=True),
-            })
+        search_index.extend(load_ncaa_career_wrestlers(script_dir, seasons))
 
-        if teams_index.exists():
-            with open(teams_index, 'r', encoding='utf-8') as f:
-                teams = json.load(f)
-            for team_data in teams:
-                team_name = team_data.get('team', 'Unknown')
-                team_slug = team_data.get('team_slug', '')
-                if not team_slug:
-                    continue
-                search_index.append({
-                    "type": "team",
-                    "name": team_name,
-                    "secondary": "D1",
-                    "url": team_slug_to_url(team_slug),
-                    "searchTokens": generate_search_tokens(team_name),
-                })
+        teams_by_slug = {}  # dedupe across seasons -- team pages aren't season-specific
+        for season in seasons:
+            for t in load_ncaa_season_teams(script_dir, season):
+                teams_by_slug.setdefault(t["_slug"], t)
+        for t in teams_by_slug.values():
+            del t["_slug"]
+            search_index.append(t)
 
     print(f"\nTotal items: {len(search_index)}")
     print(f"Writing to {output_file}...")

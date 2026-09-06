@@ -743,6 +743,101 @@ def build_output_table(wrestlers: Dict, top_60_ids: set, season: int, state: str
     return output
 
 
+def write_rankings_from_elo(output_table: List[Dict], season: int, state: str, gender: str, league: str) -> None:
+    """Write/overwrite rankings_<weight>.json per weight class from the just-
+    computed Elo ratings -- this is the "hybrid Flo + modified Elo" rank
+    compute_all_mat_values.py and the profile pages need. NCAA only (HS still
+    uses the manually-curated matrix).
+
+    This is a re-rank in place, not a reset: flo_ranked is preserved from
+    whatever's already on disk (set earlier this same pipeline run by
+    apply_flo_rankings.py, which runs before this step and either found a
+    prior rankings_<weight>.json or bootstrapped one) -- Elo itself already
+    reflects Flo's opinion for those wrestlers via flo_seed_elo()'s starting-
+    rating seed above, so no separate overlay is needed here, only carrying
+    the tag through so next run's Flo-seeding can still find it.
+    """
+    if league != 'ncaa':
+        return
+
+    data_dir = Path("mt/rankings_data") / league_dir_key(league, gender, state) / str(season)
+    weights = get_weights(league, gender)
+
+    # wrestler_id -> weight_class. Elo itself is computed weight-agnostic
+    # (wins/losses/matches tracked globally, not per weight), so this is the
+    # only place that knows which weight class someone is actually at.
+    weight_by_id: Dict[str, int] = {}
+    for weight in weights:
+        wc_path = data_dir / f"weight_class_{weight}.json"
+        if not wc_path.exists():
+            continue
+        wc_data = json.loads(wc_path.read_text())
+        for wid in wc_data.get("wrestlers", {}):
+            weight_by_id[wid] = weight
+
+    elo_by_id = {str(e["wrestler_id"]): e for e in output_table}
+
+    for weight in weights:
+        existing_path = data_dir / f"rankings_{weight}.json"
+        existing_by_id = {}
+        if existing_path.exists():
+            existing_data = json.loads(existing_path.read_text())
+            existing_by_id = {e["wrestler_id"]: e for e in existing_data.get("rankings", [])}
+
+        entries = []
+        for wid, w in weight_by_id.items():
+            if w != weight:
+                continue
+            elo_entry = elo_by_id.get(wid)
+            if not elo_entry:
+                continue
+            existing = existing_by_id.get(wid, {})
+            entries.append({
+                "wrestler_id": wid,
+                "name": elo_entry["name"],
+                "team": elo_entry["team"],
+                "record": elo_entry["record_string"],
+                "elo_score": elo_entry["elo_score"],
+                "flo_ranked": existing.get("flo_ranked", False),
+            })
+
+        # Sort by Elo score descending -- Flo-ranked wrestlers already got a
+        # seeded starting Elo above, so their real match results just refine
+        # a rating that already reflects Flo's opinion.
+        entries.sort(key=lambda e: -e["elo_score"])
+
+        # is_starter: best-ranked (i.e. first, since entries are already Elo-
+        # sorted) wrestler per team -- same convention as the matrix UI's own
+        # getCurrentRankings() (generate_matrix.py), recomputed here since
+        # there's no manual matrix edit to read it from.
+        starter_ids = set()
+        seen_teams = set()
+        for e in entries:
+            if e["team"] not in seen_teams:
+                seen_teams.add(e["team"])
+                starter_ids.add(e["wrestler_id"])
+
+        rankings = [
+            {
+                "rank": i + 1,
+                "wrestler_id": e["wrestler_id"],
+                "name": e["name"],
+                "team": e["team"],
+                "record": e["record"],
+                "is_starter": e["wrestler_id"] in starter_ids,
+                "flo_ranked": e["flo_ranked"],
+            }
+            for i, e in enumerate(entries)
+        ]
+
+        existing_path.write_text(json.dumps(
+            {"weight_class": weight, "season": season, "rankings": rankings},
+            indent=2, ensure_ascii=False,
+        ))
+
+    print(f"\n✓ Wrote hybrid rankings_<weight>.json for {len(weights)} weight classes to {data_dir}")
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Calculate Elo ratings for wrestling (review only)"
@@ -779,7 +874,7 @@ def main():
 
     args = parser.parse_args()
 
-    if args.season < 2020 or args.season > 2030:
+    if args.season < 2012 or args.season > 2030:
         print(f"Error: Invalid season {args.season}")
         return
 
@@ -813,7 +908,11 @@ def main():
         json.dump(output_table, f, indent=2, ensure_ascii=False)
     
     print(f"\n✓ Elo ratings written to: {output_path}")
-    
+
+    # NCAA only: also write the per-weight hybrid rank compute_all_mat_values.py
+    # and the profile pages need -- see write_rankings_from_elo()'s docstring.
+    write_rankings_from_elo(output_table, args.season, args.state, args.gender, args.league)
+
     # Print summary
     print(f"\n{'='*80}")
     print("SUMMARY")

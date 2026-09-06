@@ -76,13 +76,12 @@ def get_tim() -> int:
 
 
 def build_session() -> requests.Session:
+    # NOTE: trackwrestling.com's WAF now rejects requests with a spoofed
+    # browser User-Agent (Chrome, etc.) with a 406 — likely a TLS/JA3
+    # fingerprint mismatch check, since curl's own default UA and requests'
+    # default UA both pass fine. Do not set a browser-looking User-Agent here.
     session = requests.Session()
     session.headers.update({
-        "User-Agent": (
-            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) "
-            "Chrome/122.0.0.0 Safari/537.36"
-        ),
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
         "Accept-Language": "en-US,en;q=0.5",
     })

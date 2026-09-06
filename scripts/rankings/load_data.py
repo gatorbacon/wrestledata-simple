@@ -467,6 +467,10 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
                     'team': team_name,
                     'weight_class': normalized_primary_wc or primary_wc,  # Use normalized if available, fallback to original
                     'grade': wrestler.get('grade', ''),
+                    'hometown': wrestler.get('hometown'),
+                    'high_school': wrestler.get('high_school'),
+                    'photo_url': wrestler.get('photo_url'),
+                    'previous_school': wrestler.get('previous_school'),
                     'wins': 0,
                     'losses': 0,
                     'matches_count': 0

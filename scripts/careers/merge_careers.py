@@ -99,7 +99,7 @@ def merge_careers(
         canonical_name = preferred_name
     else:
         # Use the name from the career with more seasons, or keep_career if equal
-        if len(merge_seasons) > len(keep_seasons):
+        if len(merge_seasons_dict) > len(keep_seasons_dict):
             canonical_name = merge_career.get('canonical_name', '')
         else:
             canonical_name = keep_career.get('canonical_name', '')
@@ -155,14 +155,23 @@ def main():
         '--gender',
         type=str,
         default='boys',
-        choices=['boys', 'girls'],
-        help='Gender (boys or girls, default: boys)'
+        choices=['boys', 'girls', 'ncaa_men'],
+        help='Gender/league (boys, girls, or ncaa_men, default: boys)'
+    )
+    parser.add_argument(
+        '--yes',
+        action='store_true',
+        help='Skip the interactive confirmation prompt (for scripted/batch merges already reviewed elsewhere)'
     )
 
     args = parser.parse_args()
 
     global _CAREERS_DIR
-    _CAREERS_DIR = Path("data/careers") if args.gender == "boys" else Path("data/careers/girls")
+    _CAREERS_DIR = {
+        "boys": Path("data/careers"),
+        "girls": Path("data/careers/girls"),
+        "ncaa_men": Path("data/careers/ncaa_men"),
+    }[args.gender]
     
     # Normalize career IDs
     keep_id = args.keep if args.keep.startswith('career_') else f"career_{args.keep.zfill(6)}"
@@ -208,7 +217,7 @@ def main():
     # Determine final name
     if args.name:
         final_name = args.name
-    elif len(merge_seasons) > len(keep_seasons):
+    elif len(merge_seasons_dict) > len(keep_seasons_dict):
         final_name = merge_career.get('canonical_name', '')
     else:
         final_name = keep_career.get('canonical_name', '')
@@ -222,10 +231,13 @@ def main():
         return 0
     
     # Confirm
-    response = input(f"\n⚠️  This will merge {merge_id} into {keep_id} and DELETE {merge_id}. Continue? [y/N]: ").strip().lower()
-    if response != 'y':
-        print("Cancelled")
-        return 0
+    if args.yes:
+        print(f"\n⚠️  --yes passed: merging {merge_id} into {keep_id} and DELETING {merge_id} without prompting.")
+    else:
+        response = input(f"\n⚠️  This will merge {merge_id} into {keep_id} and DELETE {merge_id}. Continue? [y/N]: ").strip().lower()
+        if response != 'y':
+            print("Cancelled")
+            return 0
     
     # Perform merge
     try:

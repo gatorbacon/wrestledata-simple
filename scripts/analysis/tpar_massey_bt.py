@@ -45,13 +45,7 @@ MARGIN_MAP = {
 }
 
 SEASON       = 2026
-DATA_DIR     = f"mt/rankings_data/ncaa_men/{SEASON}"
 FRONTEND_DIR = "frontend/wrestledata-ui/public/data"
-TOURNEY_FILE = f"data/{SEASON}/ncaa-tourney/parsed/matches.json"
-V1_FILE      = f"{FRONTEND_DIR}/mat_value/{SEASON}/match_mv_impact_{SEASON}.json"
-V3B_FILE     = f"{FRONTEND_DIR}/mat_value/{SEASON}/match_mv_impact_v3b_{SEASON}.json"
-INDEX_FILE   = f"{FRONTEND_DIR}/wrestlers/{SEASON}/index_wrestlers.json"
-OUT_FILE     = f"{FRONTEND_DIR}/mat_value/{SEASON}/tpar_mbt_{SEASON}.json"
 
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
@@ -292,6 +286,12 @@ def main():
                     help="Path to JSON {wrestler_id: prior_tpar} for warm-start prior")
     a = ap.parse_args()
 
+    tourney_file = f"data/{a.season}/ncaa-tourney/parsed/matches.json"
+    v1_file      = f"{FRONTEND_DIR}/mat_value/{a.season}/match_mv_impact_{a.season}.json"
+    v3b_file     = f"{FRONTEND_DIR}/mat_value/{a.season}/match_mv_impact_v3b_{a.season}.json"
+    index_file   = f"{FRONTEND_DIR}/wrestlers/{a.season}/index_wrestlers.json"
+    out_file     = f"{FRONTEND_DIR}/mat_value/{a.season}/tpar_mbt_{a.season}.json"
+
     exclude = {TOURNAMENT_DATE} if a.eval_tournament else set()
     mode    = "PREDICTIVE (tournament excluded)" if a.eval_tournament else "FULL SEASON"
 
@@ -337,11 +337,11 @@ def main():
         print(f"  Tournament accuracy — predictive test")
         print(f"{'='*65}")
 
-        with open(INDEX_FILE) as f:
+        with open(index_file) as f:
             index = json.load(f)
         by_name_wt = {(norm_name(w["name"]), int(w["weight_class"])): w["wrestler_id"] for w in index}
 
-        with open(TOURNEY_FILE) as f:
+        with open(tourney_file) as f:
             tourney = json.load(f)
 
         # Seeds baseline
@@ -349,12 +349,12 @@ def main():
         print(f"  Seeds:     {sc}/{st}  ({sp_:.1f}%)")
 
         # v1 baseline
-        tpar_v1 = load_pretourney_avg(V1_FILE)
+        tpar_v1 = load_pretourney_avg(v1_file)
         v1c, v1t, v1p, _ = evaluate_accuracy(tpar_v1, by_name_wt, tourney)
         print(f"  TPAR v1:   {v1c}/{v1t}  ({v1p:.1f}%)")
 
         # v3b baseline
-        tpar_v3b = load_pretourney_avg(V3B_FILE)
+        tpar_v3b = load_pretourney_avg(v3b_file)
         v3c, v3t, v3p, _ = evaluate_accuracy(tpar_v3b, by_name_wt, tourney)
         print(f"  TPAR v3b:  {v3c}/{v3t}  ({v3p:.1f}%)")
 
@@ -412,7 +412,7 @@ def main():
         _, _, _, scores_100 = results["100_0"]
 
         # Build wrestler lookup from index for metadata
-        with open(INDEX_FILE) as f:
+        with open(index_file) as f:
             index = json.load(f)
         idx_meta = {w["wrestler_id"]: w for w in index}
 
@@ -434,10 +434,10 @@ def main():
                 "team":        meta.get("team"),
             }
 
-        pathlib.Path(OUT_FILE).parent.mkdir(parents=True, exist_ok=True)
-        with open(OUT_FILE, "w") as f:
+        pathlib.Path(out_file).parent.mkdir(parents=True, exist_ok=True)
+        with open(out_file, "w") as f:
             json.dump(out, f, indent=2)
-        print(f"\n  Saved {len(out)} wrestlers to {OUT_FILE}")
+        print(f"\n  Saved {len(out)} wrestlers to {out_file}")
 
 
 if __name__ == "__main__":

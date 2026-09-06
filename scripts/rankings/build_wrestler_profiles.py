@@ -315,6 +315,10 @@ def load_all_wrestler_info(season: int, data_dir: str) -> Dict[str, Dict]:
                     "team": winfo.get("team", "Unknown"),
                     "weight_class": weight_class,
                     "grade": winfo.get("grade", ""),
+                    "hometown": winfo.get("hometown"),
+                    "high_school": winfo.get("high_school"),
+                    "photo_url": winfo.get("photo_url"),
+                    "previous_school": winfo.get("previous_school"),
                 }
     
     return wrestlers
@@ -920,6 +924,90 @@ def load_career(career_id: str, careers_dir: Path = Path("data/careers")) -> Opt
         return None
 
 
+def build_ncaa_season_summary_lookup(
+    careers_dir: Path = Path("data/careers/ncaa_men"),
+    wrestlers_public_dir: Path = Path("frontend/wrestledata-ui/public/data/wrestlers"),
+) -> Dict[str, List[Dict]]:
+    """
+    For every NCAA career, build season_wrestler_id -> season_summary (a list
+    of {season, wrestler_id, team, team_slug, weight_class, grade,
+    current_rank, record}, sorted most-recent-first), by reading whatever
+    per-season profile JSON is already published on disk. Every wrestler_id
+    in a career maps to the SAME summary list (their whole career), which is
+    exactly what the season-selector UI on the profile page needs.
+
+    Called as a post-processing pass after a season's profiles are written
+    (not before), so this season's own just-written files are readable too --
+    not just prior seasons'.
+
+    A career season with no published profile file (predates any pipeline
+    run, or a season simply hasn't been built) is skipped for that season
+    only, not defaulted to a fake row -- see the plan's "handle missing info
+    cleanly" requirement. Real per-field gaps in an existing profile (e.g.
+    2025 profiles predate grade/hometown enrichment) pass through as
+    missing keys; the frontend decides how to display those, not this
+    function.
+    """
+    if not careers_dir.exists():
+        return {}
+
+    # Cache loaded profile JSON by (season, wrestler_id) -- multiple wids in
+    # the same career often share reads, and this scans every career file.
+    profile_cache: Dict[Tuple[str, str], Optional[Dict]] = {}
+
+    def load_profile(season_str: str, wid: str) -> Optional[Dict]:
+        key = (season_str, wid)
+        if key not in profile_cache:
+            path = wrestlers_public_dir / season_str / "by_id" / f"{wid}.json"
+            profile_cache[key] = None
+            if path.exists():
+                try:
+                    with path.open("r", encoding="utf-8") as f:
+                        profile_cache[key] = json.load(f)
+                except Exception:
+                    pass
+        return profile_cache[key]
+
+    lookup: Dict[str, List[Dict]] = {}
+    for career_file in careers_dir.glob("career_*.json"):
+        try:
+            with career_file.open("r", encoding="utf-8") as f:
+                career = json.load(f)
+        except Exception:
+            continue
+
+        seasons = career.get("seasons", {})
+        if not isinstance(seasons, dict) or not seasons:
+            continue
+
+        summary = []
+        for season_str, wid in sorted(seasons.items(), key=lambda kv: kv[0], reverse=True):
+            if not wid:
+                continue
+            profile = load_profile(season_str, wid)
+            if not profile:
+                continue
+            record = profile.get("record") or {}
+            summary.append({
+                "season": int(season_str),
+                "wrestler_id": wid,
+                "team": profile.get("team"),
+                "team_slug": profile.get("team_slug"),
+                "weight_class": profile.get("weight_class"),
+                "grade": profile.get("grade"),
+                "current_rank": profile.get("current_rank"),
+                "record": record.get("overall"),
+            })
+
+        if not summary:
+            continue
+        for wid in seasons.values():
+            if wid:
+                lookup[wid] = summary
+
+    return lookup
+
+
 def load_season_accomplishments(season: int, gender: str) -> Dict[str, Dict]:
     """
     Load season accomplishments for a given season and gender.
@@ -1107,6 +1195,10 @@ def build_wrestler_profile(
     team = wrestler_info.get("team", "Unknown")
     weight_class = wrestler_info.get("weight_class", 0)
     grade = wrestler_info.get("grade", "")
+    hometown = wrestler_info.get("hometown")
+    high_school = wrestler_info.get("high_school")
+    photo_url = wrestler_info.get("photo_url")
+    previous_school = wrestler_info.get("previous_school")
     
     team_slug = team_name_to_slug(team)
     team_rank = team_rank_by_name.get(team)
@@ -1194,6 +1286,11 @@ def build_wrestler_profile(
         "team_slug": team_slug,
         "team_rank": team_rank,
         "weight_class": weight_class,
+        "grade": grade,
+        "hometown": hometown,
+        "high_school": high_school,
+        "photo_url": photo_url,
+        "previous_school": previous_school,
         "year": season,
         "current_rank": current_rank,
         "record": {
@@ -1658,7 +1755,49 @@ def main() -> None:
             processed += 1
         
         print(f"\nProcessed {processed} wrestlers")
-        
+
+        # Attach season_summary (backs the profile page's season selector).
+        # Post-processing pass, not part of the build loop above: it needs to
+        # read this season's own just-written by_id files for multi-season
+        # careers that include the current season, which don't exist on disk
+        # until the loop above finishes.
+        print("\nAttaching season_summary...")
+        season_summary_lookup = build_ncaa_season_summary_lookup()
+        attached = 0
+        for wrestler_id in all_wrestlers.keys():
+            profile_path = by_id_dir / f"{wrestler_id}.json"
+            if not profile_path.exists():
+                continue
+            with profile_path.open("r", encoding="utf-8") as f:
+                profile = json.load(f)
+
+            if wrestler_id in season_summary_lookup:
+                summary = season_summary_lookup[wrestler_id]
+            else:
+                record = profile.get("record") or {}
+                summary = [{
+                    "season": profile.get("year"),
+                    "wrestler_id": wrestler_id,
+                    "team": profile.get("team"),
+                    "team_slug": profile.get("team_slug"),
+                    "weight_class": profile.get("weight_class"),
+                    "grade": profile.get("grade"),
+                    "current_rank": profile.get("current_rank"),
+                    "record": record.get("overall"),
+                }]
+            profile["season_summary"] = summary
+
+            with profile_path.open("w", encoding="utf-8") as f:
+                json.dump(profile, f, indent=2, ensure_ascii=False)
+
+            team_slug = profile["team_slug"]
+            team_file = by_team_dir / team_slug / f"{wrestler_id}.json"
+            if team_file.exists():
+                with team_file.open("w", encoding="utf-8") as f:
+                    json.dump(profile, f, indent=2, ensure_ascii=False)
+            attached += 1
+        print(f"Attached season_summary to {attached} profiles")
+
         # Build team index
         print("\nBuilding index files...")
         index_teams_list = []
@@ -1684,7 +1823,19 @@ def main() -> None:
         index_search_file = season_dir / "index_search.json"
         with index_search_file.open("w", encoding="utf-8") as f:
             json.dump(index_search, f, indent=2, ensure_ascii=False)
-        
+
+        # Manifest of every season that actually has published profiles, newest
+        # first -- lets the frontend discover seasons instead of hardcoding a
+        # list that needs a manual edit every time a season is backfilled
+        # (2023, 2022, ...). Regenerated on every run, from whatever's on disk.
+        available_seasons = sorted(
+            (int(p.name) for p in output_dir.iterdir() if p.is_dir() and p.name.isdigit() and (p / "index_wrestlers.json").exists()),
+            reverse=True,
+        )
+        with (output_dir / "available_seasons.json").open("w", encoding="utf-8") as f:
+            json.dump(available_seasons, f)
+        print(f"Wrote available_seasons.json: {available_seasons}")
+
         print(f"\nDone! Generated:")
         print(f"  - {len(index_wrestlers)} wrestler profiles")
         print(f"  - {len(index_teams_list)} team entries")

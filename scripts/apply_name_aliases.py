@@ -38,7 +38,7 @@ def load_aliases(season):
         print(f"Error loading aliases: {e}")
         return []
 
-def apply_aliases_to_file(file_path, aliases, output_dir):
+def apply_aliases_to_file(file_path, aliases, output_dir, league='ncaa'):
     """Apply aliases to a single JSON file."""
     try:
         # Load the team data
@@ -74,6 +74,43 @@ def apply_aliases_to_file(file_path, aliases, output_dir):
                             replacements.append(f"Changed wrestler name: {old_name} → {canonical_name}")
                             changes_made = True
         
+        # TrackWrestling occasionally labels a heavyweight bracket "HWT" or
+        # "235" (the girls' HS heavyweight label -- never valid for NCAA men)
+        # instead of "285" for a specific tournament (seen recurring across
+        # backfilled seasons). Either splits that wrestler's record across a
+        # phantom weight_class_*.json and breaks opponent lookups downstream,
+        # so normalize here rather than hand-fixing it every time. NCAA-only:
+        # "235" is a real, valid girls' HS weight class elsewhere.
+        STANDARD_WEIGHTS = {'125', '133', '141', '149', '157', '165', '174', '184', '197', '285'}
+        if league == 'ncaa':
+            for wrestler in roster:
+                for match in wrestler.get('matches', []):
+                    if match.get('weight') in ('HWT', '235'):
+                        bad = match['weight']
+                        match['weight'] = '285'
+                        replacements.append(f"Normalized weight label: {bad} → 285 for {wrestler.get('name', '')}")
+                        changes_made = True
+
+            # The COVID-shortened 2020-21 season saw at least one regional
+            # tournament run in lettered/paired "pod" brackets (Air Force,
+            # Northern Colorado, Utah Valley), producing weight labels like
+            # "125A", "141-149", "165 (9th)", "165 True", or a blank string --
+            # none of which are a real weight class, and some of which don't
+            # even numerically match the wrestler's own weight. Rather than
+            # adjudicate each pod label, trust the wrestler's own roster-level
+            # weight_class as ground truth (same principle as the HWT/235 fix
+            # above) and normalize any non-standard match weight to it.
+            for wrestler in roster:
+                own_weight = wrestler.get('weight_class')
+                if not own_weight:
+                    continue
+                for match in wrestler.get('matches', []):
+                    wt = match.get('weight')
+                    if wt not in STANDARD_WEIGHTS:
+                        match['weight'] = own_weight
+                        replacements.append(f"Normalized non-standard weight label {wt!r} → {own_weight} for {wrestler.get('name', '')}")
+                        changes_made = True
+
         # Next, scan through all matches in all wrestlers to find name variants
         for wrestler in roster:
             for match in wrestler.get('matches', []):
@@ -87,12 +124,23 @@ def apply_aliases_to_file(file_path, aliases, output_dir):
                     # Check each variant of the name
                     for variant in alias.get('name_variants', []):
                         if variant in summary:
-                            # Need to verify if this is for the correct team
-                            # This is challenging since we need to check if the team is mentioned in the summary
-                            
-                            # Simple approach: if team name appears in summary near the variant
-                            # or we've confirmed this team has this wrestler
-                            if alias_team in summary or any(w['name'] == variant for w in roster):
+                            # Only apply if the alias's own target team is the
+                            # one actually named alongside this variant in the
+                            # match text. The previous fallback here --
+                            # "or any(w['name'] == variant for w in roster)" --
+                            # checked the CURRENT team's own roster, which is
+                            # wrong: it fires whenever some OTHER, unrelated
+                            # real wrestler on the current team happens to
+                            # share the exact variant name, silently
+                            # corrupting their name into a different alias's
+                            # canonical_name (confirmed: an alias scoped to
+                            # "Holy Cross (Louisville)"'s "Tyler Hunt" variant
+                            # was overwriting North Carolina State's own real,
+                            # unrelated "Tyler Hunt" in 2013 data). Team scope
+                            # must be confirmed via the alias's own team
+                            # appearing in the summary text, not the current
+                            # roster's contents.
+                            if alias_team in summary:
                                 # Replace the variant with canonical name in the summary
                                 new_summary = summary.replace(variant, canonical_name)
                                 if new_summary != summary:
@@ -171,7 +219,7 @@ def process_season(season, league='ncaa', state=None, gender=None):
     print(f"Found {len(team_files)} team files to process")
     
     for file_path in team_files:
-        replacements = apply_aliases_to_file(file_path, aliases, out_dir)
+        replacements = apply_aliases_to_file(file_path, aliases, out_dir, league=league)
         total_replacements += replacements
     
     print(f"\nProcessing complete for season {season}:")
