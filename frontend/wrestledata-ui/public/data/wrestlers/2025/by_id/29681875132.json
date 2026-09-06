@@ -3,15 +3,20 @@
   "name": "Ryan Bennett",
   "team": "Illinois",
   "team_slug": "illinois",
-  "team_rank": 2,
+  "team_rank": 10,
   "weight_class": 157,
+  "grade": "Fr.",
+  "hometown": "Avon, Ohio",
+  "high_school": "Saint Edward",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Ffightingillini.com%2Fimages%2F2024%2F9%2F16%2FBennett_Ryan_WEB_20240825_WRES_Headshot_KS_0428.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 192,
   "record": {
     "overall": "4-6",
-    "vs_ranked": "0-0",
+    "vs_ranked": "4-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 3.22,
@@ -19,172 +24,231 @@
     "pd7": -5.62,
     "si_plus": 89.0,
     "df_plus": 97.4,
-    "apr_plus": 102.2,
+    "apr_plus": 102.0,
     "pin_rate": 0.25,
     "bonus_rate": 0.25,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.625,
+      "matches": 12,
+      "rank_weight": 173,
+      "rank_overall": 1406,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29684493132",
+      "opponent_rank": 139,
+      "opponent_name": "Braxton Strick",
+      "method": "Dec 8-2"
+    },
+    "worst_loss": {
+      "opponent_id": "29676493132",
+      "opponent_rank": 153,
+      "opponent_name": "Pablo Macias",
+      "method": "Dec 6-4"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-09",
       "opponent_id": "29676493132",
+      "opponent_career_id": null,
       "opponent_name": "Pablo Macias",
       "opponent_team": "Campbell",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 55,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 153,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
-      "event": "Greyhound Open"
+      "event": "Greyhound Open",
+      "mv_impact": -3.94
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29683822132",
+      "opponent_career_id": null,
       "opponent_name": "Cade Wirnsberger",
       "opponent_team": "Bucknell",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 43,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 87,
       "weight_class": "157",
       "result": "L",
       "method": "TB-1",
       "score": "8-2",
       "duration": "10:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -3.24
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29684086132",
+      "opponent_career_id": null,
       "opponent_name": "Jude Swisher",
       "opponent_team": "Pennsylvania",
-      "opponent_team_rank": 24,
+      "opponent_team_rank": 20,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 12,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "12-1",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -2.09
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29682552132",
+      "opponent_career_id": null,
       "opponent_name": "Kade Law",
       "opponent_team": "Purdue",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 12,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 277,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "7-4",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": 0.73
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29679956132",
+      "opponent_career_id": null,
       "opponent_name": "Gray Ortis",
       "opponent_team": "Bellarmine",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 60,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 252,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": 0.13
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29684493132",
+      "opponent_career_id": null,
       "opponent_name": "Braxton Strick",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 139,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": 2.01
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29677991132",
+      "opponent_career_id": null,
       "opponent_name": "James Conway",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 29,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "13-1",
       "duration": "7:00",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": -3.41
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29687558132",
+      "opponent_career_id": null,
       "opponent_name": "Bronson Baxter",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 15,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 150,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:30",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": 5.24
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29678001132",
+      "opponent_career_id": null,
       "opponent_name": "Joel Mylin",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 130,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "11-1",
       "duration": "7:00",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": -5.47
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29723401132",
+      "opponent_career_id": null,
       "opponent_name": "Landen Johnson",
       "opponent_team": "Northern Illinois",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 49,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 39,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "16-1",
       "duration": "4:22",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": -4.14
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34952083132",
+      "team": "Illinois",
+      "team_slug": "illinois",
+      "weight_class": 157,
+      "grade": "R-Fr.",
+      "current_rank": 94,
+      "record": "6-7"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29681875132",
+      "team": "Illinois",
+      "team_slug": "illinois",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 192,
+      "record": "4-6"
+    }
+  ]
 }

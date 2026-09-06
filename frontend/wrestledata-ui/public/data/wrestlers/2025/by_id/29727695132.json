@@ -3,13 +3,18 @@
   "name": "Jack Desena",
   "team": "Stanford",
   "team_slug": "stanford",
-  "team_rank": 21,
+  "team_rank": 25,
   "weight_class": 149,
+  "grade": "Freshman",
+  "hometown": "Pittsfield, Vt.",
+  "high_school": "Lake Highland Prep",
+  "photo_url": "https://gostanford.com/imgproxy/i6hLqQH_bU7BRO-b5TOOhon-vzLswyZmfP3A_MxubNc/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3N0YW5mb3JkLXByb2QvMjAyNC8xMS8wMS91b1YyMlRnaWZFV3dOUkp6U1J5QTFSTjRVU2szV2w3Mjl1c3FCY3hoLmpwZw.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 218,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,67 +24,112 @@
     "pd7": 0.67,
     "si_plus": 93.8,
     "df_plus": 109.8,
-    "apr_plus": 95.0,
+    "apr_plus": 95.1,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.935,
+      "matches": 3,
+      "rank_weight": 174,
+      "rank_overall": 1505,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29681170132",
+      "opponent_rank": 79,
+      "opponent_name": "Tanner Frothinger",
+      "method": "Dec 9-2"
+    },
+    "worst_loss": {
+      "opponent_id": "29687564132",
+      "opponent_rank": 183,
+      "opponent_name": "Moses Mirabal",
+      "method": "Dec 4-0"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-24",
       "opponent_id": "29687850132",
+      "opponent_career_id": null,
       "opponent_name": "Jagger French",
       "opponent_team": "Cal Poly",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 19,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 138,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": -3.76
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29687564132",
+      "opponent_career_id": null,
       "opponent_name": "Moses Mirabal",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 41,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 183,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "4-0",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": -5.07
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29681170132",
+      "opponent_career_id": null,
       "opponent_name": "Tanner Frothinger",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 79,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "9-2",
       "duration": "7:00",
-      "event": "Menlo Invite"
+      "event": "Menlo Invite",
+      "mv_impact": 3.03
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34943464132",
+      "team": "Stanford",
+      "team_slug": "stanford",
+      "weight_class": 157,
+      "grade": "Redshirt Freshman",
+      "current_rank": 133,
+      "record": "2-4"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29727695132",
+      "team": "Stanford",
+      "team_slug": "stanford",
+      "weight_class": 149,
+      "grade": "Freshman",
+      "current_rank": 218,
+      "record": "1-2"
+    }
+  ]
 }

@@ -3,13 +3,18 @@
   "name": "Tyler Berish",
   "team": "VMI",
   "team_slug": "vmi",
-  "team_rank": 77,
+  "team_rank": 79,
   "weight_class": 157,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 294,
   "record": {
     "overall": "0-6",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-6",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,107 +29,163 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.019,
+      "matches": 7,
+      "rank_weight": 261,
+      "rank_overall": 2245,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29673110132",
+      "opponent_rank": 254,
+      "opponent_name": "Dominic Wheatley",
+      "method": "TF 19-2 5:00"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-16",
       "opponent_id": "29687885132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler Badgett",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 61,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "4:26",
-      "event": "vs. VMI"
+      "event": "vs. VMI",
+      "mv_impact": -3.9
     },
     {
       "date": "2025-02-14",
       "opponent_id": "29677496132",
+      "opponent_career_id": null,
       "opponent_name": "Anderson Heap",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 146,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "11-1",
       "duration": "7:00",
-      "event": "vs. VMI"
+      "event": "vs. VMI",
+      "mv_impact": -4.39
     },
     {
       "date": "2025-02-09",
       "opponent_id": "29672744132",
+      "opponent_career_id": null,
       "opponent_name": "Chris Earnest",
       "opponent_team": "Campbell",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 55,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 51,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "16-1",
       "duration": "6:35",
-      "event": "vs. VMI"
+      "event": "vs. VMI",
+      "mv_impact": -4.17
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29681669132",
+      "opponent_career_id": null,
       "opponent_name": "Noah Castillo",
       "opponent_team": "Chattanooga",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 51,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 34,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "10-1",
       "duration": "7:00",
-      "event": "vs. VMI"
+      "event": "vs. VMI",
+      "mv_impact": -2.41
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29673110132",
+      "opponent_career_id": null,
       "opponent_name": "Dominic Wheatley",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 254,
       "weight_class": "174",
       "result": "L",
       "method": "TF",
       "score": "19-2",
       "duration": "5:00",
-      "event": "vs. VMI"
+      "event": "vs. VMI",
+      "mv_impact": -6.94
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29673104132",
+      "opponent_career_id": null,
       "opponent_name": "Luke Bender",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 243,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "20-5",
       "duration": "6:28",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -6.4
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34934194132",
+      "team": "VMI",
+      "team_slug": "vmi",
+      "weight_class": 157,
+      "grade": "Jr.",
+      "current_rank": 252,
+      "record": "0-3"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29672622132",
+      "team": "VMI",
+      "team_slug": "vmi",
+      "weight_class": 157,
+      "grade": "",
+      "current_rank": 294,
+      "record": "0-6"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24580490132",
+      "team": "VMI",
+      "team_slug": "vmi",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 190,
+      "record": "4-5"
+    }
+  ]
 }

@@ -3,15 +3,20 @@
   "name": "Lucas Peters",
   "team": "Indiana",
   "team_slug": "indiana",
-  "team_rank": 16,
+  "team_rank": 36,
   "weight_class": 141,
+  "grade": "Fr.",
+  "hometown": "Kaukauna, Wis.",
+  "high_school": "Kaukauna High School",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fiuhoosiers.com%2Fimages%2F2024%2F11%2F1%2FVert_21_Peters.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 111,
   "record": {
     "overall": "3-6",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "3-6",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 6.63,
@@ -19,157 +24,214 @@
     "pd7": -4.92,
     "si_plus": 103.2,
     "df_plus": 97.6,
-    "apr_plus": 98.1,
+    "apr_plus": 98.2,
     "pin_rate": 0.0,
     "bonus_rate": 0.667,
     "majors": 2,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.992,
+      "matches": 9,
+      "rank_weight": 123,
+      "rank_overall": 1202,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29723893132",
+      "opponent_rank": 90,
+      "opponent_name": "Mason Tieffel",
+      "method": "Dec 4-3"
+    },
+    "worst_loss": {
+      "opponent_id": "29685069132",
+      "opponent_rank": 129,
+      "opponent_name": "Landen Duncan",
+      "method": "Dec 6-2"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-09",
       "opponent_id": "29676290132",
+      "opponent_career_id": null,
       "opponent_name": "Jesse Mendez",
       "opponent_team": "Ohio State",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 5,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 1,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "19-3",
       "duration": "3:42",
-      "event": "vs. Ohio State"
+      "event": "vs. Ohio State",
+      "mv_impact": -1.59
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29685920132",
+      "opponent_career_id": null,
       "opponent_name": "Gaven Suica",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 108,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "9-2",
       "duration": "7:00",
-      "event": "Purple Raider Open"
+      "event": "Purple Raider Open",
+      "mv_impact": -3.04
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29672621132",
+      "opponent_career_id": null,
       "opponent_name": "Phoenix Alyea",
       "opponent_team": "VMI",
-      "opponent_team_rank": 77,
+      "opponent_team_rank": 79,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 235,
       "weight_class": "141",
       "result": "W",
       "method": "MD",
       "score": "12-3",
       "duration": "7:00",
-      "event": "Purple Raider Open"
+      "event": "Purple Raider Open",
+      "mv_impact": 2.25
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29723893132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Tieffel",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 90,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "Purple Raider Open"
+      "event": "Purple Raider Open",
+      "mv_impact": 3.47
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29673096132",
+      "opponent_career_id": null,
       "opponent_name": "Bryce Kresho",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 27,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "21-15",
       "duration": "7:00",
-      "event": "Sheridan invite"
+      "event": "Sheridan invite",
+      "mv_impact": -1.26
     },
     {
       "date": "2024-12-20",
       "opponent_id": "30660665132",
+      "opponent_career_id": null,
       "opponent_name": "Pat Phillips",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 69,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Sheridan invite"
+      "event": "Sheridan invite",
+      "mv_impact": -2.12
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29685069132",
+      "opponent_career_id": null,
       "opponent_name": "Landen Duncan",
       "opponent_team": "Cleveland State",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 56,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 129,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "6-2",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": -4.31
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29685062132",
+      "opponent_career_id": null,
       "opponent_name": "Michael Markulin",
       "opponent_team": "Cleveland State",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 56,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 292,
       "weight_class": "141",
       "result": "W",
       "method": "MD",
       "score": "17-8",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": 0.95
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29676280132",
+      "opponent_career_id": null,
       "opponent_name": "Andre Gonzales",
       "opponent_team": "Ohio State",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 5,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 35,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "3:47",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": -3.27
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34945841132",
+      "team": "Indiana",
+      "team_slug": "indiana",
+      "weight_class": 141,
+      "grade": "R-Fr.",
+      "current_rank": 228,
+      "record": "8-8"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29681476132",
+      "team": "Indiana",
+      "team_slug": "indiana",
+      "weight_class": 141,
+      "grade": "Fr.",
+      "current_rank": 111,
+      "record": "3-6"
+    }
+  ]
 }

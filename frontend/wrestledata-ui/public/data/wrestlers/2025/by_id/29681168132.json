@@ -3,10 +3,15 @@
   "name": "Talen Eck",
   "team": "Utah Valley",
   "team_slug": "utah_valley",
-  "team_rank": 76,
+  "team_rank": 29,
   "weight_class": 125,
+  "grade": "Fr.",
+  "hometown": "Idaho Falls, Idaho",
+  "high_school": "Thunder Ridge HS",
+  "photo_url": "https://gouvu.com/images/2024/10/28/Talen_Eck.png",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 73,
+  "current_rank": 77,
   "record": {
     "overall": "1-2",
     "vs_ranked": "1-2",
@@ -19,12 +24,19 @@
     "pd7": -1.33,
     "si_plus": 93.5,
     "df_plus": 108.2,
-    "apr_plus": 106.2,
+    "apr_plus": 106.1,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.941,
+      "matches": 3,
+      "rank_weight": 106,
+      "rank_overall": 1187,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -33,13 +45,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29687553132",
-      "opponent_rank": 94,
+      "opponent_rank": 96,
       "opponent_name": "Hunter Taylor",
       "method": "Dec 4-2"
     },
     "worst_loss": {
       "opponent_id": "29681177132",
-      "opponent_rank": 104,
+      "opponent_rank": 70,
       "opponent_name": "Bridger Ricks",
       "method": "Dec 8-4"
     }
@@ -48,48 +60,76 @@
     {
       "date": "2024-12-22",
       "opponent_id": "29687553132",
+      "opponent_career_id": null,
       "opponent_name": "Hunter Taylor",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 41,
       "opponent_weight": 125,
-      "opponent_rank": 94,
+      "opponent_rank": 96,
       "weight_class": "125",
       "result": "W",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": 2.27
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29687549132",
+      "opponent_career_id": null,
       "opponent_name": "Maximo Renteria",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 41,
       "opponent_weight": 125,
-      "opponent_rank": 17,
+      "opponent_rank": 19,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
-      "event": "vs. Utah Valley"
+      "event": "vs. Utah Valley",
+      "mv_impact": -1.96
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29681177132",
+      "opponent_career_id": null,
       "opponent_name": "Bridger Ricks",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 125,
-      "opponent_rank": 104,
+      "opponent_rank": 70,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "8-4",
       "duration": "7:00",
-      "event": "Menlo Invite"
+      "event": "Menlo Invite",
+      "mv_impact": -3.13
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34943292132",
+      "team": "Utah Valley",
+      "team_slug": "utah_valley",
+      "weight_class": 133,
+      "grade": "R-Fr.",
+      "current_rank": 172,
+      "record": "1-6"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29681168132",
+      "team": "Utah Valley",
+      "team_slug": "utah_valley",
+      "weight_class": 125,
+      "grade": "Fr.",
+      "current_rank": 77,
+      "record": "1-2"
+    }
+  ]
 }

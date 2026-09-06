@@ -3,13 +3,18 @@
   "name": "Joseph Chiappazzi",
   "team": "West Virginia",
   "team_slug": "west_virginia",
-  "team_rank": 22,
+  "team_rank": 18,
   "weight_class": 165,
+  "grade": "R-So.",
+  "hometown": "Poquoson, Va.",
+  "high_school": "Poquoson HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fwvuni.sidearmsports.com%2Fimages%2F2024%2F9%2F26%2FChiappazzi_Joseph_f8sYT.png&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 264,
   "record": {
     "overall": "2-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,122 +29,195 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.22,
+      "matches": 8,
+      "rank_weight": 198,
+      "rank_overall": 1861,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29685916132",
+      "opponent_rank": 233,
+      "opponent_name": "Damon Michaels",
+      "method": "Dec 12-5"
+    },
+    "worst_loss": {
+      "opponent_id": "29733382132",
+      "opponent_rank": 200,
+      "opponent_name": "Anwar Alli",
+      "method": "Dec 4-2"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-01",
       "opponent_id": "29686125132",
+      "opponent_career_id": null,
       "opponent_name": "Lucas Schell",
       "opponent_team": "Buffalo",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 63,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 283,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": 0.01
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29685880132",
+      "opponent_career_id": null,
       "opponent_name": "Maxwell Kirby",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 134,
       "weight_class": "165",
       "result": "L",
       "method": "MD",
       "score": "11-1",
       "duration": "7:00",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": -4.58
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29686071132",
+      "opponent_career_id": null,
       "opponent_name": "Robert Gaylord",
       "opponent_team": "Ohio",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 46,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 108,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": -3.17
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29735023132",
+      "opponent_career_id": null,
       "opponent_name": "Nick Marienfeld",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 45,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 132,
       "weight_class": "165",
       "result": "L",
       "method": "MD",
       "score": "13-4",
       "duration": "7:00",
-      "event": "Kent State Open"
+      "event": "Kent State Open",
+      "mv_impact": -4.94
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29685916132",
+      "opponent_career_id": null,
       "opponent_name": "Damon Michaels",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 233,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": "12-5",
       "duration": "7:00",
-      "event": "Kent State Open"
+      "event": "Kent State Open",
+      "mv_impact": 1.33
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29733382132",
+      "opponent_career_id": null,
       "opponent_name": "Anwar Alli",
       "opponent_team": "Virginia",
-      "opponent_team_rank": 78,
+      "opponent_team_rank": 42,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 200,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Kent State Open"
+      "event": "Kent State Open",
+      "mv_impact": -5.34
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29685065132",
+      "opponent_career_id": null,
       "opponent_name": "Tate Geiser",
       "opponent_team": "Cleveland State",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 56,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 81,
       "weight_class": "165",
       "result": "L",
       "method": "INJ",
       "score": null,
       "duration": "1:18",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": -5.91
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34946721132",
+      "team": "West Virginia",
+      "team_slug": "west_virginia",
+      "weight_class": 184,
+      "grade": "R-Jr.",
+      "current_rank": 242,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29684775132",
+      "team": "West Virginia",
+      "team_slug": "west_virginia",
+      "weight_class": 165,
+      "grade": "R-So.",
+      "current_rank": 264,
+      "record": "2-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24592370132",
+      "team": "West Virginia",
+      "team_slug": "west_virginia",
+      "weight_class": 165,
+      "grade": "R-Fr.",
+      "current_rank": 293,
+      "record": "0-6"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20124764132",
+      "team": "West Virginia",
+      "team_slug": "west_virginia",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 291,
+      "record": "1-4"
+    }
+  ]
 }

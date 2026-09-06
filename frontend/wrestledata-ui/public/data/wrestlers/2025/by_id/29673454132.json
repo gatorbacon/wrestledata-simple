@@ -3,15 +3,20 @@
   "name": "Lorenzo Frezza",
   "team": "Columbia",
   "team_slug": "columbia",
-  "team_rank": 49,
+  "team_rank": 52,
   "weight_class": 141,
+  "grade": "So.",
+  "hometown": "Buffalo Grove, Ill.",
+  "high_school": "Stevenson",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgocolumbialions.com%2Fimages%2F2024%2F9%2F23%2FLorenzo_Frezza.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 50,
   "record": {
     "overall": "5-4",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "5-4",
+    "vs_top10": "0-1",
+    "vs_top25": "1-2"
   },
   "metrics": {
     "pf7": 7.6,
@@ -24,152 +29,219 @@
     "bonus_rate": 0.6,
     "majors": 2,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.403,
+      "matches": 9,
+      "rank_weight": 31,
+      "rank_overall": 405,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 5,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29683808132",
+      "opponent_rank": 16,
+      "opponent_name": "Dylan Chappell",
+      "method": "SV-1 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "29681752132",
+      "opponent_rank": 44,
+      "opponent_name": "Briar Priest",
+      "method": "Dec 5-0"
+    }
   },
   "match_list": [
     {
       "date": "2025-03-22",
       "opponent_id": "29687540132",
+      "opponent_career_id": null,
       "opponent_name": "Nash Singleton",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 41,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 43,
       "weight_class": "141",
       "result": "L",
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
-      "event": "2025 NCAA Division I Championships"
+      "event": "2025 NCAA Division I Championships",
+      "mv_impact": -3.19
     },
     {
       "date": "2025-03-22",
       "opponent_id": "29681752132",
+      "opponent_career_id": null,
       "opponent_name": "Briar Priest",
       "opponent_team": "Pittsburgh",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 21,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 44,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "5-0",
       "duration": "7:00",
-      "event": "2025 NCAA Division I Championships"
+      "event": "2025 NCAA Division I Championships",
+      "mv_impact": -2.49
     },
     {
       "date": "2025-03-09",
       "opponent_id": "29686572132",
+      "opponent_career_id": null,
       "opponent_name": "Ian Oswalt",
       "opponent_team": "Brown",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 62,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 49,
       "weight_class": "141",
       "result": "W",
       "method": "MD",
       "score": "11-2",
       "duration": "7:00",
-      "event": "2025 Ivy League Wrestling Tournament"
+      "event": "2025 Ivy League Wrestling Tournament",
+      "mv_impact": 5.35
     },
     {
       "date": "2025-03-09",
       "opponent_id": "29680478132",
+      "opponent_career_id": null,
       "opponent_name": "Joshua Saunders",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 19,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "8-4",
       "duration": "7:00",
-      "event": "2025 Ivy League Wrestling Tournament"
+      "event": "2025 Ivy League Wrestling Tournament",
+      "mv_impact": -1.49
     },
     {
       "date": "2025-03-09",
       "opponent_id": "29687491132",
+      "opponent_career_id": null,
       "opponent_name": "Dante Frinzi",
       "opponent_team": "Harvard",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 71,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 171,
       "weight_class": "141",
       "result": "W",
       "method": "MD",
       "score": "12-3",
       "duration": "7:00",
-      "event": "2025 Ivy League Wrestling Tournament"
+      "event": "2025 Ivy League Wrestling Tournament",
+      "mv_impact": 2.64
     },
     {
       "date": "2025-03-09",
       "opponent_id": "29684080132",
+      "opponent_career_id": null,
       "opponent_name": "CJ Composto",
       "opponent_team": "Pennsylvania",
-      "opponent_team_rank": 24,
+      "opponent_team_rank": 20,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 6,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "8-3",
       "duration": "7:00",
-      "event": "2025 Ivy League Wrestling Tournament"
+      "event": "2025 Ivy League Wrestling Tournament",
+      "mv_impact": -0.47
     },
     {
       "date": "2025-02-21",
       "opponent_id": "29683808132",
+      "opponent_career_id": null,
       "opponent_name": "Dylan Chappell",
       "opponent_team": "Bucknell",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 43,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 16,
       "weight_class": "141",
       "result": "W",
       "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
-      "event": "vs. Columbia"
+      "event": "vs. Columbia",
+      "mv_impact": 4.28
     },
     {
       "date": "2025-02-16",
       "opponent_id": "29686572132",
+      "opponent_career_id": null,
       "opponent_name": "Ian Oswalt",
       "opponent_team": "Brown",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 62,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 49,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "10-5",
       "duration": "7:00",
-      "event": "vs. Columbia"
+      "event": "vs. Columbia",
+      "mv_impact": 4.35
     },
     {
       "date": "2025-02-15",
       "opponent_id": "29687491132",
+      "opponent_career_id": null,
       "opponent_name": "Dante Frinzi",
       "opponent_team": "Harvard",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 71,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 171,
       "weight_class": "141",
       "result": "W",
       "method": "TF",
       "score": "17-2",
       "duration": "4:23",
-      "event": "vs. Harvard"
+      "event": "vs. Harvard",
+      "mv_impact": 3.64
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34943387132",
+      "team": "Columbia",
+      "team_slug": "columbia",
+      "weight_class": 141,
+      "grade": "Jr.",
+      "current_rank": 29,
+      "record": "24-10"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29673454132",
+      "team": "Columbia",
+      "team_slug": "columbia",
+      "weight_class": 141,
+      "grade": "So.",
+      "current_rank": 50,
+      "record": "5-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24590974132",
+      "team": "Columbia",
+      "team_slug": "columbia",
+      "weight_class": 141,
+      "grade": "FY",
+      "current_rank": 127,
+      "record": "4-6"
+    }
+  ]
 }

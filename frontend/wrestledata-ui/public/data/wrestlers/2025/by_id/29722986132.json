@@ -3,15 +3,20 @@
   "name": "Devyn Flores-Che",
   "team": "CSU Bakersfield",
   "team_slug": "csu_bakersfield",
-  "team_rank": 43,
+  "team_rank": 22,
   "weight_class": 157,
+  "grade": "R-So.",
+  "hometown": "Long Beach, Calif.",
+  "high_school": "Calvary Chapel HS",
+  "photo_url": "https://gorunners.com/images/2024/10/8/Devyn_Flores-Che_DD___1_.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 274,
   "record": {
     "overall": "1-8",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-8",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 4.26,
@@ -24,152 +29,229 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.954,
+      "matches": 9,
+      "rank_weight": 241,
+      "rank_overall": 2035,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29684527132",
+      "opponent_rank": 220,
+      "opponent_name": "Lucas Libby",
+      "method": "MD 14-6"
+    },
+    "worst_loss": {
+      "opponent_id": "29672285132",
+      "opponent_rank": 253,
+      "opponent_name": "Braden Stauffenberg",
+      "method": "Dec 6-5"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-02",
       "opponent_id": "29687536132",
+      "opponent_career_id": null,
       "opponent_name": "Christopher Hamblin",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 41,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 35,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:20",
-      "event": "vs. Oregon State"
+      "event": "vs. Oregon State",
+      "mv_impact": -5.21
     },
     {
       "date": "2025-01-26",
       "opponent_id": "29682280132",
+      "opponent_career_id": null,
       "opponent_name": "Jack Nies",
       "opponent_team": "American",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 59,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 198,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "19-3",
       "duration": "7:00",
-      "event": "vs. CSU Bakersfield"
+      "event": "vs. CSU Bakersfield",
+      "mv_impact": -6.32
     },
     {
       "date": "2025-01-26",
       "opponent_id": "29672744132",
+      "opponent_career_id": null,
       "opponent_name": "Chris Earnest",
       "opponent_team": "Campbell",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 55,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 51,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "19-0",
       "duration": "3:34",
-      "event": "vs. Campbell"
+      "event": "vs. Campbell",
+      "mv_impact": -4.17
     },
     {
       "date": "2025-01-26",
       "opponent_id": "29735013132",
+      "opponent_career_id": null,
       "opponent_name": "Johnny Lovett",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 45,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 13,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "19-3",
       "duration": "4:20",
-      "event": "vs. Central Michigan"
+      "event": "vs. Central Michigan",
+      "mv_impact": -2.96
     },
     {
       "date": "2024-12-21",
       "opponent_id": "29681669132",
+      "opponent_career_id": null,
       "opponent_name": "Noah Castillo",
       "opponent_team": "Chattanooga",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 51,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 34,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "20-2",
       "duration": "0:00",
-      "event": "vs. Chattanooga"
+      "event": "vs. Chattanooga",
+      "mv_impact": -3.41
     },
     {
       "date": "2024-12-15",
       "opponent_id": "29672285132",
+      "opponent_career_id": null,
       "opponent_name": "Braden Stauffenberg",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 253,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "6-5",
       "duration": "7:00",
-      "event": "vs. Michigan State"
+      "event": "vs. Michigan State",
+      "mv_impact": -5.06
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29684527132",
+      "opponent_career_id": null,
       "opponent_name": "Lucas Libby",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 220,
       "weight_class": "157",
       "result": "W",
       "method": "MD",
       "score": "14-6",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": 1.4
     },
     {
       "date": "2024-11-01",
       "opponent_id": "29681171132",
+      "opponent_career_id": null,
       "opponent_name": "Ryker Fullmer",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 137,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "9-1",
       "duration": "7:00",
-      "event": "vs. Utah Valley"
+      "event": "vs. Utah Valley",
+      "mv_impact": -4.89
     },
     {
       "date": "2024-11-01",
       "opponent_id": "29685290132",
+      "opponent_career_id": null,
       "opponent_name": "Grigor Cholakyan",
       "opponent_team": "Stanford",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 25,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 43,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:21",
-      "event": "vs. Stanford"
+      "event": "vs. Stanford",
+      "mv_impact": -4.98
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34962138132",
+      "team": "CSU Bakersfield",
+      "team_slug": "csu_bakersfield",
+      "weight_class": 157,
+      "grade": "R-Jr.",
+      "current_rank": 211,
+      "record": "4-16"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29722986132",
+      "team": "CSU Bakersfield",
+      "team_slug": "csu_bakersfield",
+      "weight_class": 157,
+      "grade": "R-So.",
+      "current_rank": 274,
+      "record": "1-8"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24595470132",
+      "team": "CSU Bakersfield",
+      "team_slug": "csu_bakersfield",
+      "weight_class": 157,
+      "grade": "R-Fr.",
+      "current_rank": 258,
+      "record": "3-14"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20130249132",
+      "team": "CSU Bakersfield",
+      "team_slug": "csu_bakersfield",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 227,
+      "record": "1-3"
+    }
+  ]
 }

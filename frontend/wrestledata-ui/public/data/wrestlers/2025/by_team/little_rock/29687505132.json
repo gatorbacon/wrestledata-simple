@@ -3,10 +3,15 @@
   "name": "Tyson Roach",
   "team": "Little Rock",
   "team_slug": "little_rock",
-  "team_rank": 28,
+  "team_rank": 15,
   "weight_class": 125,
+  "grade": "FRESHMAN",
+  "hometown": "Lake Charles, La.",
+  "high_school": "Sam Houston HS",
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 110,
+  "current_rank": 127,
   "record": {
     "overall": "5-5",
     "vs_ranked": "5-5",
@@ -24,7 +29,14 @@
     "bonus_rate": 0.4,
     "majors": 1,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.6,
+      "matches": 10,
+      "rank_weight": 118,
+      "rank_overall": 1399,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 5,
@@ -32,14 +44,14 @@
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "29681739132",
-      "opponent_rank": 147,
-      "opponent_name": "Julian Dawson",
-      "method": "TF 17-2 4:53"
+      "opponent_id": "29681684132",
+      "opponent_rank": 179,
+      "opponent_name": "Tyler Tice",
+      "method": "MD 14-6"
     },
     "worst_loss": {
       "opponent_id": "29678016132",
-      "opponent_rank": 134,
+      "opponent_rank": 135,
       "opponent_name": "Luqman Masud",
       "method": "Dec 16-14"
     }
@@ -48,153 +60,195 @@
     {
       "date": "2025-01-17",
       "opponent_id": "29686569132",
+      "opponent_career_id": null,
       "opponent_name": "Jared Brunner",
       "opponent_team": "Brown",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 62,
       "opponent_weight": 125,
-      "opponent_rank": 194,
+      "opponent_rank": 209,
       "weight_class": "125",
       "result": "W",
       "method": "DEC",
       "score": "5-3",
       "duration": "7:00",
-      "event": "vs. Little Rock"
+      "event": "vs. Little Rock",
+      "mv_impact": -0.44
     },
     {
       "date": "2025-01-17",
       "opponent_id": "29677467132",
+      "opponent_career_id": null,
       "opponent_name": "Luke Passarelli",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 125,
-      "opponent_rank": 160,
+      "opponent_rank": 192,
       "weight_class": "125",
       "result": "W",
       "method": "DEC",
       "score": "8-6",
       "duration": "7:00",
-      "event": "vs. Little Rock"
+      "event": "vs. Little Rock",
+      "mv_impact": 0.3
     },
     {
       "date": "2025-01-17",
       "opponent_id": "29681739132",
+      "opponent_career_id": null,
       "opponent_name": "Julian Dawson",
       "opponent_team": "Morgan State",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 75,
       "opponent_weight": 125,
-      "opponent_rank": 147,
+      "opponent_rank": 184,
       "weight_class": "125",
       "result": "W",
       "method": "TF",
       "score": "17-2",
       "duration": "4:53",
-      "event": "vs. Morgan State"
+      "event": "vs. Morgan State",
+      "mv_impact": 2.41
     },
     {
       "date": "2024-12-22",
       "opponent_id": "29686894132",
+      "opponent_career_id": null,
       "opponent_name": "Carson Wagner",
       "opponent_team": "Binghamton",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 32,
       "opponent_weight": 125,
-      "opponent_rank": 51,
+      "opponent_rank": 32,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "11-6",
       "duration": "7:00",
-      "event": "vs. Little Rock"
+      "event": "vs. Little Rock",
+      "mv_impact": -2.06
     },
     {
       "date": "2024-12-22",
       "opponent_id": "29678029132",
+      "opponent_career_id": null,
       "opponent_name": "Gage Walker",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 125,
-      "opponent_rank": 97,
+      "opponent_rank": 58,
       "weight_class": "125",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "6:29",
-      "event": "vs. Missouri"
+      "event": "vs. Missouri",
+      "mv_impact": -4.65
     },
     {
       "date": "2024-12-16",
       "opponent_id": "29681684132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler Tice",
       "opponent_team": "Chattanooga",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 51,
       "opponent_weight": 125,
-      "opponent_rank": 168,
+      "opponent_rank": 179,
       "weight_class": "125",
       "result": "W",
       "method": "MD",
       "score": "14-6",
       "duration": "7:00",
-      "event": "vs. Little Rock"
+      "event": "vs. Little Rock",
+      "mv_impact": 1.7
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29734990132",
+      "opponent_career_id": null,
       "opponent_name": "Kaden Chinavare",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 45,
       "opponent_weight": 125,
-      "opponent_rank": 123,
+      "opponent_rank": 112,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "9-6",
       "duration": "7:00",
-      "event": "vs. Little Rock"
+      "event": "vs. Little Rock",
+      "mv_impact": -3.92
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29678508132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler Garvin",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 17,
       "opponent_weight": 125,
-      "opponent_rank": 186,
+      "opponent_rank": 201,
       "weight_class": "125",
       "result": "W",
       "method": "DEC",
       "score": "7-4",
       "duration": "7:00",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": 0.23
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29678029132",
+      "opponent_career_id": null,
       "opponent_name": "Gage Walker",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 125,
-      "opponent_rank": 97,
+      "opponent_rank": 58,
       "weight_class": "125",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "5:42",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": -4.65
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29678016132",
+      "opponent_career_id": null,
       "opponent_name": "Luqman Masud",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 125,
-      "opponent_rank": 134,
+      "opponent_rank": 135,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "16-14",
       "duration": "7:00",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": -4.93
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34945356132",
+      "team": "Little Rock",
+      "team_slug": "little_rock",
+      "weight_class": 125,
+      "grade": "SOPHOMORE",
+      "current_rank": 70,
+      "record": "5-14"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29687505132",
+      "team": "Little Rock",
+      "team_slug": "little_rock",
+      "weight_class": 125,
+      "grade": "FRESHMAN",
+      "current_rank": 127,
+      "record": "5-5"
+    }
+  ]
 }

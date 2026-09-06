@@ -3,13 +3,18 @@
   "name": "Stone Pomeroy",
   "team": "Kent State",
   "team_slug": "kent_state",
-  "team_rank": 60,
+  "team_rank": 72,
   "weight_class": 149,
+  "grade": "Fr.",
+  "hometown": "Random Lake, Wis.",
+  "high_school": "Random Lake",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fkentstatesports.com%2Fimages%2F2024%2F12%2F6%2FStone_Pomeroy.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 294,
   "record": {
     "overall": "0-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,52 +24,80 @@
     "pd7": -1.0,
     "si_plus": 86.6,
     "df_plus": 102.2,
-    "apr_plus": 96.2,
+    "apr_plus": 96.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.824,
+      "matches": 2,
+      "rank_weight": 271,
+      "rank_overall": 2328,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29687122132",
+      "opponent_rank": 290,
+      "opponent_name": "Thomas Bock",
+      "method": "Dec 7-6"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-20",
       "opponent_id": "29685883132",
+      "opponent_career_id": null,
       "opponent_name": "Nick Schaukowitsch",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 271,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "Kent State Open"
+      "event": "Kent State Open",
+      "mv_impact": -5.78
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29687122132",
+      "opponent_career_id": null,
       "opponent_name": "Thomas Bock",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 290,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "7-6",
       "duration": "7:00",
-      "event": "Kent State Open"
+      "event": "Kent State Open",
+      "mv_impact": -5.87
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29687134132",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 294,
+      "record": "0-2"
+    }
+  ]
 }

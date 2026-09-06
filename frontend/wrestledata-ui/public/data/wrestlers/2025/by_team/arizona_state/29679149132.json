@@ -3,15 +3,20 @@
   "name": "Carter Dibert",
   "team": "Arizona State",
   "team_slug": "arizona_state",
-  "team_rank": 25,
+  "team_rank": 27,
   "weight_class": 133,
+  "grade": "Junior",
+  "hometown": "Murraysville, Pa.",
+  "high_school": "Franklin Regional",
+  "photo_url": "https://thesundevils.com/imgproxy/QFTVlmlSUbc4XflsdqCH63E3rtq8mTNXy4FZPVtvfpY/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3RoZXN1bmRldmlscy1jb20tcHJvZC8yMDI1LzA1LzEzL3YyR1pzZEVFN1NmNmhQU05Da1Jmd1htSVlHd3hFNUlpZjFZa1FZTmIud2VicA.webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 107,
+  "current_rank": 124,
   "record": {
     "overall": "3-5",
-    "vs_ranked": "2-5",
+    "vs_ranked": "3-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 6.98,
@@ -19,152 +24,217 @@
     "pd7": -0.48,
     "si_plus": 102.0,
     "df_plus": 99.8,
-    "apr_plus": 108.0,
+    "apr_plus": 107.8,
     "pin_rate": 0.333,
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 1,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.399,
+      "matches": 10,
+      "rank_weight": 151,
+      "rank_overall": 1333,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 3,
     "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29673831132",
-      "opponent_rank": 126,
+      "opponent_rank": 112,
       "opponent_name": "Hayden Mills",
       "method": "TF 15-0 3:00"
     },
     "worst_loss": {
-      "opponent_id": "29679139132",
-      "opponent_rank": 193,
-      "opponent_name": "Julian Chlebove",
-      "method": "MD 14-3"
+      "opponent_id": "29721845132",
+      "opponent_rank": 129,
+      "opponent_name": "Tucker Owens",
+      "method": "SV-3 11-8"
     }
   },
   "match_list": [
     {
       "date": "2024-11-24",
       "opponent_id": "29678432132",
+      "opponent_career_id": null,
       "opponent_name": "Cael Hughes",
       "opponent_team": "Oklahoma State",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 4,
       "opponent_weight": 133,
-      "opponent_rank": 17,
+      "opponent_rank": 30,
       "weight_class": "133",
       "result": "L",
       "method": "TF",
       "score": "18-1",
       "duration": "6:41",
-      "event": "vs. Oklahoma State"
+      "event": "vs. Oklahoma State",
+      "mv_impact": -3.15
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29721845132",
+      "opponent_career_id": null,
       "opponent_name": "Tucker Owens",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 125,
-      "opponent_rank": 154,
+      "opponent_rank": 129,
       "weight_class": "133",
       "result": "L",
       "method": "SV-3",
       "score": "11-8",
       "duration": "8:15",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -4.41
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29675740132",
+      "opponent_career_id": null,
       "opponent_name": "Cale Seaton",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 24,
       "opponent_weight": 133,
-      "opponent_rank": 51,
+      "opponent_rank": 49,
       "weight_class": "133",
       "result": "L",
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -2.61
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29675677132",
+      "opponent_career_id": null,
       "opponent_name": "Kenton Cooke",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 24,
       "opponent_weight": 133,
-      "opponent_rank": 138,
+      "opponent_rank": 204,
       "weight_class": "133",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:40",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": 2.59
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29673831132",
+      "opponent_career_id": null,
       "opponent_name": "Hayden Mills",
       "opponent_team": "Nebraska",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 2,
       "opponent_weight": 133,
-      "opponent_rank": 126,
+      "opponent_rank": 112,
       "weight_class": "133",
       "result": "W",
       "method": "TF",
       "score": "15-0",
       "duration": "3:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": 4.29
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29680467132",
+      "opponent_career_id": null,
       "opponent_name": "Foster Cardinale",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 133,
-      "opponent_rank": 94,
+      "opponent_rank": 111,
       "weight_class": "133",
       "result": "L",
       "method": "DEC",
       "score": "7-1",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -3.42
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29676754132",
+      "opponent_career_id": null,
       "opponent_name": "Clayton Carr",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 280,
       "weight_class": "133",
       "result": "W",
       "method": "MD",
       "score": "12-1",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 1.09
     },
     {
       "date": "2024-11-01",
       "opponent_id": "29679139132",
+      "opponent_career_id": null,
       "opponent_name": "Julian Chlebove",
       "opponent_team": "Arizona State",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 27,
       "opponent_weight": 133,
-      "opponent_rank": 193,
+      "opponent_rank": 128,
       "weight_class": "133",
       "result": "L",
       "method": "MD",
       "score": "14-3",
       "duration": "7:00",
-      "event": "Maroon and Gold"
+      "event": "Maroon and Gold",
+      "mv_impact": -5.05
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34943743132",
+      "team": "Arizona State",
+      "team_slug": "arizona_state",
+      "weight_class": 133,
+      "grade": "Senior",
+      "current_rank": 176,
+      "record": "1-10"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29679149132",
+      "team": "Arizona State",
+      "team_slug": "arizona_state",
+      "weight_class": 133,
+      "grade": "Junior",
+      "current_rank": 124,
+      "record": "3-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24586090132",
+      "team": "Arizona State",
+      "team_slug": "arizona_state",
+      "weight_class": 133,
+      "grade": "Sophomore",
+      "current_rank": 119,
+      "record": "4-7"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20127748132",
+      "team": "Arizona State",
+      "team_slug": "arizona_state",
+      "weight_class": 133,
+      "grade": "Freshman",
+      "current_rank": 96,
+      "record": "4-3"
+    }
+  ]
 }

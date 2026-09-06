@@ -3,13 +3,18 @@
   "name": "Brody Oleksak",
   "team": "Cornell",
   "team_slug": "cornell",
-  "team_rank": 50,
+  "team_rank": 9,
   "weight_class": 165,
+  "grade": "Jr.",
+  "hometown": "Afton, N.Y.",
+  "high_school": "Afton Central HS",
+  "photo_url": "https://cornellbigred.com/images/2022/9/16/Oleksak_Brody_2022_crop.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 248,
   "record": {
     "overall": "0-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,7 +24,7 @@
     "pd7": 0.0,
     "si_plus": 102.6,
     "df_plus": 103.3,
-    "apr_plus": 94.5,
+    "apr_plus": 94.6,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
@@ -28,21 +33,27 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29680453132",
+      "opponent_rank": 169,
+      "opponent_name": "Gage McClenahan",
+      "method": "M. For."
+    }
   },
   "match_list": [
     {
       "date": "2024-11-10",
       "opponent_id": "29684513132",
+      "opponent_career_id": null,
       "opponent_name": "Drayden Morton",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 49,
       "weight_class": "165",
       "result": "L",
       "method": "DFLT",
@@ -53,11 +64,12 @@
     {
       "date": "2024-11-10",
       "opponent_id": "29680453132",
+      "opponent_career_id": null,
       "opponent_name": "Gage McClenahan",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 169,
       "weight_class": "165",
       "result": "L",
       "method": "MFF",
@@ -68,11 +80,12 @@
     {
       "date": "2024-11-10",
       "opponent_id": "29674045132",
+      "opponent_career_id": null,
       "opponent_name": "Luke Ahrberg",
       "opponent_team": "NC State",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 14,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 59,
       "weight_class": "165",
       "result": "L",
       "method": "MFF",
@@ -81,5 +94,47 @@
       "event": "Journeymen Collegiate Classic"
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34964382132",
+      "team": "Cornell",
+      "team_slug": "cornell",
+      "weight_class": 197,
+      "grade": "Sr.",
+      "current_rank": 211,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29680465132",
+      "team": "Cornell",
+      "team_slug": "cornell",
+      "weight_class": 165,
+      "grade": "Jr.",
+      "current_rank": 248,
+      "record": "0-3"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24603823132",
+      "team": "Cornell",
+      "team_slug": "cornell",
+      "weight_class": 165,
+      "grade": "So.",
+      "current_rank": 250,
+      "record": "0-5"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20130874132",
+      "team": "Cornell",
+      "team_slug": "cornell",
+      "weight_class": 174,
+      "grade": "Fr.",
+      "current_rank": 222,
+      "record": "0-1"
+    }
+  ]
 }

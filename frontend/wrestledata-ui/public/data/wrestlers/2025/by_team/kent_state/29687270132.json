@@ -3,13 +3,18 @@
   "name": "Javon Lewis",
   "team": "Kent State",
   "team_slug": "kent_state",
-  "team_rank": 60,
+  "team_rank": 72,
   "weight_class": 184,
+  "grade": "Fr.",
+  "hometown": "Gahanna, Ohio",
+  "high_school": "Gahanna Lincoln",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fkentstatesports.com%2Fimages%2F2024%2F12%2F6%2FJavon_Lewis.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 222,
   "record": {
     "overall": "0-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,84 +22,116 @@
     "pf7": 0.0,
     "pa7": 13.5,
     "pd7": -13.5,
-    "si_plus": 77.9,
-    "df_plus": 89.6,
-    "apr_plus": 95.9,
+    "si_plus": 76.9,
+    "df_plus": 89.4,
+    "apr_plus": 95.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.069,
+      "matches": 6,
+      "rank_weight": 208,
+      "rank_overall": 2348,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29685914132",
+      "opponent_rank": 233,
+      "opponent_name": "Vitali Daniels",
+      "method": "TF 16-0 2:26"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-16",
       "opponent_id": "29685914132",
+      "opponent_career_id": null,
       "opponent_name": "Vitali Daniels",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 233,
       "weight_class": "184",
       "result": "L",
       "method": "TF",
       "score": "16-0",
       "duration": "2:26",
-      "event": "JCU Open"
+      "event": "JCU Open",
+      "mv_impact": -7.73
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29672308132",
+      "opponent_career_id": null,
       "opponent_name": "Ayden Miller",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 174,
       "weight_class": "184",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "5:44",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": -7.3
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29723425132",
+      "opponent_career_id": null,
       "opponent_name": "Damarion Ross",
       "opponent_team": "Northern Illinois",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 49,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 107,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": -3.17
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29687009132",
+      "opponent_career_id": null,
       "opponent_name": "Waylon Wehler",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 188,
       "weight_class": "174",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:52",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": -7.52
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29687270132",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 184,
+      "grade": "Fr.",
+      "current_rank": 222,
+      "record": "0-4"
+    }
+  ]
 }

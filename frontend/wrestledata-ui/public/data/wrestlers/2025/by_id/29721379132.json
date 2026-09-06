@@ -3,13 +3,18 @@
   "name": "Justin Onello",
   "team": "Lehigh",
   "team_slug": "lehigh",
-  "team_rank": 4,
+  "team_rank": 11,
   "weight_class": 174,
+  "grade": "So.",
+  "hometown": "Closter, N.J.",
+  "high_school": "Bergen Catholic",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Flehighsports.com%2Fimages%2F2023%2F9%2F4%2FCropped_Justin_Onello-0274.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 261,
   "record": {
     "overall": "1-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,107 +29,168 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.808,
+      "matches": 6,
+      "rank_weight": 196,
+      "rank_overall": 1995,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29673108132",
+      "opponent_rank": 273,
+      "opponent_name": "Tyler Shea",
+      "method": "TF 20-3 5:00"
+    },
+    "worst_loss": {
+      "opponent_id": "29677497132",
+      "opponent_rank": 267,
+      "opponent_name": "Bodie Morgan",
+      "method": "Dec 8-1"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-23",
       "opponent_id": "29680807132",
+      "opponent_career_id": null,
       "opponent_name": "Cooper Haase",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 67,
       "weight_class": "174",
       "result": "L",
       "method": "TF",
       "score": "17-1",
       "duration": "4:18",
-      "event": "Franklin & Marshall Invitational"
+      "event": "Franklin & Marshall Invitational",
+      "mv_impact": -4.55
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29673108132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler Shea",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 273,
       "weight_class": "174",
       "result": "W",
       "method": "TF",
       "score": "20-3",
       "duration": "5:00",
-      "event": "Franklin & Marshall Invitational"
+      "event": "Franklin & Marshall Invitational",
+      "mv_impact": 1.77
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29673093132",
+      "opponent_career_id": null,
       "opponent_name": "Nick Alvarez",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 193,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Franklin & Marshall Invitational"
+      "event": "Franklin & Marshall Invitational",
+      "mv_impact": -4.85
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29677497132",
+      "opponent_career_id": null,
       "opponent_name": "Bodie Morgan",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 267,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "8-1",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -6.04
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29673093132",
+      "opponent_career_id": null,
       "opponent_name": "Nick Alvarez",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 193,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -5.85
     },
     {
       "date": "2025-01-04",
       "opponent_id": "29685885132",
+      "opponent_career_id": null,
       "opponent_name": "Brody Evans",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 160,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "12-7",
       "duration": "7:00",
-      "event": "Bobby Kauffman Open"
+      "event": "Bobby Kauffman Open",
+      "mv_impact": -3.33
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34952685132",
+      "team": "Lehigh",
+      "team_slug": "lehigh",
+      "weight_class": 174,
+      "grade": "Jr.",
+      "current_rank": 127,
+      "record": "1-2"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29721379132",
+      "team": "Lehigh",
+      "team_slug": "lehigh",
+      "weight_class": 174,
+      "grade": "So.",
+      "current_rank": 261,
+      "record": "1-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24602965132",
+      "team": "Lehigh",
+      "team_slug": "lehigh",
+      "weight_class": 174,
+      "grade": "Fy.",
+      "current_rank": 279,
+      "record": "0-7"
+    }
+  ]
 }

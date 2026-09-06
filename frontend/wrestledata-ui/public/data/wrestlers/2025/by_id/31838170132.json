@@ -3,10 +3,15 @@
   "name": "Branden Wentzel",
   "team": "Lock Haven",
   "team_slug": "lock_haven",
-  "team_rank": 29,
+  "team_rank": 38,
   "weight_class": 125,
+  "grade": "R-Fr.",
+  "hometown": "Montoursville, Pa.",
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 193,
+  "current_rank": 199,
   "record": {
     "overall": "1-8",
     "vs_ranked": "1-8",
@@ -24,7 +29,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.948,
+      "matches": 9,
+      "rank_weight": 182,
+      "rank_overall": 2033,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -33,153 +45,203 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29683840132",
-      "opponent_rank": 210,
+      "opponent_rank": 208,
       "opponent_name": "Chris Nucifora",
       "method": "Dec 6-4"
     },
     "worst_loss": {
-      "opponent_id": "29673453132",
-      "opponent_rank": 101,
-      "opponent_name": "Sulayman Bah",
-      "method": "TF 28-10 0:00"
+      "opponent_id": "29681432132",
+      "opponent_rank": 89,
+      "opponent_name": "Ben Monn",
+      "method": "Dec 4-1"
     }
   },
   "match_list": [
     {
       "date": "2025-03-08",
       "opponent_id": "29685921132",
+      "opponent_career_id": null,
       "opponent_name": "Christopher Vargo",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 125,
-      "opponent_rank": 70,
+      "opponent_rank": 74,
       "weight_class": "125",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:52",
-      "event": "2025 MAC Wrestling Championships"
+      "event": "2025 MAC Wrestling Championships",
+      "mv_impact": -5.51
     },
     {
       "date": "2025-03-08",
       "opponent_id": "29681432132",
+      "opponent_career_id": null,
       "opponent_name": "Ben Monn",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 125,
-      "opponent_rank": 86,
+      "opponent_rank": 89,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "1-0",
       "duration": "7:00",
-      "event": "2025 MAC Wrestling Championships"
+      "event": "2025 MAC Wrestling Championships",
+      "mv_impact": -2.95
     },
     {
       "date": "2025-02-20",
       "opponent_id": "29685921132",
+      "opponent_career_id": null,
       "opponent_name": "Christopher Vargo",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 125,
-      "opponent_rank": 70,
+      "opponent_rank": 74,
       "weight_class": "125",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "6:03",
-      "event": "vs. Lock Haven"
+      "event": "vs. Lock Haven",
+      "mv_impact": -5.51
     },
     {
       "date": "2025-02-13",
       "opponent_id": "29685051132",
+      "opponent_career_id": null,
       "opponent_name": "Ben Aranda",
       "opponent_team": "Cleveland State",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 56,
       "opponent_weight": 125,
-      "opponent_rank": 91,
+      "opponent_rank": 87,
       "weight_class": "125",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "4:16",
-      "event": "vs. Lock Haven"
+      "event": "vs. Lock Haven",
+      "mv_impact": -5.17
     },
     {
       "date": "2025-02-08",
       "opponent_id": "29686183132",
+      "opponent_career_id": null,
       "opponent_name": "Travis Clawson",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 125,
-      "opponent_rank": 98,
+      "opponent_rank": 81,
       "weight_class": "125",
       "result": "L",
       "method": "MD",
       "score": "12-1",
       "duration": "7:00",
-      "event": "vs. Lock Haven"
+      "event": "vs. Lock Haven",
+      "mv_impact": -4.03
     },
     {
       "date": "2025-02-06",
       "opponent_id": "29674878132",
+      "opponent_career_id": null,
       "opponent_name": "Noah Michaels",
       "opponent_team": "Rider",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 34,
       "opponent_weight": 125,
-      "opponent_rank": 87,
+      "opponent_rank": 75,
       "weight_class": "125",
       "result": "L",
       "method": "MD",
       "score": "10-0",
       "duration": "7:00",
-      "event": "vs. Rider"
+      "event": "vs. Rider",
+      "mv_impact": -3.69
     },
     {
       "date": "2025-01-30",
       "opponent_id": "29683840132",
+      "opponent_career_id": null,
       "opponent_name": "Chris Nucifora",
       "opponent_team": "Bucknell",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 43,
       "opponent_weight": 125,
-      "opponent_rank": 210,
+      "opponent_rank": 208,
       "weight_class": "125",
       "result": "W",
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
-      "event": "vs. Lock Haven"
+      "event": "vs. Lock Haven",
+      "mv_impact": -0.85
     },
     {
       "date": "2025-01-26",
       "opponent_id": "29681432132",
+      "opponent_career_id": null,
       "opponent_name": "Ben Monn",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 125,
-      "opponent_rank": 86,
+      "opponent_rank": 89,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "vs. Lock Haven"
+      "event": "vs. Lock Haven",
+      "mv_impact": -2.95
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29673453132",
+      "opponent_career_id": null,
       "opponent_name": "Sulayman Bah",
       "opponent_team": "Columbia",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 52,
       "opponent_weight": 125,
-      "opponent_rank": 101,
+      "opponent_rank": 76,
       "weight_class": "125",
       "result": "L",
       "method": "TF",
       "score": "28-10",
       "duration": "0:00",
-      "event": "vs. Lock Haven"
+      "event": "vs. Lock Haven",
+      "mv_impact": -4.87
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "37493535132",
+      "team": "Penn State",
+      "team_slug": "penn_state",
+      "weight_class": 133,
+      "grade": "Sophomore",
+      "current_rank": 116,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "31838170132",
+      "team": "Lock Haven",
+      "team_slug": "lock_haven",
+      "weight_class": 125,
+      "grade": "R-Fr.",
+      "current_rank": 199,
+      "record": "1-8"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584856132",
+      "team": "Penn State",
+      "team_slug": "penn_state",
+      "weight_class": 125,
+      "grade": "Freshman",
+      "current_rank": 100,
+      "record": "2-1"
+    }
+  ]
 }

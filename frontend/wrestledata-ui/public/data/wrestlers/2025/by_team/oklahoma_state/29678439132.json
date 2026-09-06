@@ -3,13 +3,18 @@
   "name": "Brayden Thompson",
   "team": "Oklahoma State",
   "team_slug": "oklahoma_state",
-  "team_rank": 5,
+  "team_rank": 4,
   "weight_class": 184,
+  "grade": "So.",
+  "hometown": "Frankfort, Ill.",
+  "high_school": "Lockport Township",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fokstate.com%2Fimages%2F2024%2F8%2F25%2FBrayden_Thompson.jpg&width=100&height=100&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 53,
   "record": {
     "overall": "2-0",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,52 +24,100 @@
     "pd7": 4.0,
     "si_plus": 102.3,
     "df_plus": 111.2,
-    "apr_plus": 123.1,
+    "apr_plus": 122.7,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 2.689,
+      "matches": 2,
+      "rank_weight": 16,
+      "rank_overall": 166,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "29721851132",
+      "opponent_rank": 124,
+      "opponent_name": "Joshua Cordio",
+      "method": "Dec 6-2"
+    },
     "worst_loss": null
   },
   "match_list": [
     {
       "date": "2024-12-22",
       "opponent_id": "29687559132",
+      "opponent_career_id": null,
       "opponent_name": "Jake Stacey",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 15,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 202,
       "weight_class": "184",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "6:25",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": 3.08
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29721851132",
+      "opponent_career_id": null,
       "opponent_name": "Joshua Cordio",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 124,
       "weight_class": "184",
       "result": "W",
       "method": "DEC",
       "score": "6-2",
       "duration": "7:00",
-      "event": "Bob Smith Open"
+      "event": "Bob Smith Open",
+      "mv_impact": 2.3
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34936408132",
+      "team": "Oklahoma State",
+      "team_slug": "oklahoma_state",
+      "weight_class": 197,
+      "grade": "",
+      "current_rank": 225,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29678439132",
+      "team": "Oklahoma State",
+      "team_slug": "oklahoma_state",
+      "weight_class": 184,
+      "grade": "So.",
+      "current_rank": 53,
+      "record": "2-0"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24586810132",
+      "team": "Oklahoma State",
+      "team_slug": "oklahoma_state",
+      "weight_class": 174,
+      "grade": "Fr.",
+      "current_rank": 30,
+      "record": "12-11"
+    }
+  ]
 }

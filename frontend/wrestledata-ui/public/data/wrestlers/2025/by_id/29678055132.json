@@ -3,13 +3,18 @@
   "name": "Dominic DiTullio",
   "team": "Gardner-Webb",
   "team_slug": "gardnerwebb",
-  "team_rank": 56,
+  "team_rank": 53,
   "weight_class": 149,
+  "grade": "Sr.",
+  "hometown": "Mason, Ohio",
+  "high_school": "Mason HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgwu.sidearmsports.com%2Fimages%2F2024%2F10%2F16%2FDiTullio_vrjbQ.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 225,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,97 +24,176 @@
     "pd7": -10.67,
     "si_plus": 88.6,
     "df_plus": 91.8,
-    "apr_plus": 108.8,
+    "apr_plus": 108.6,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -3.587,
+      "matches": 6,
+      "rank_weight": 224,
+      "rank_overall": 1942,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29681681132",
+      "opponent_rank": 299,
+      "opponent_name": "Yuta Otero",
+      "method": "Fall 6:06"
+    },
+    "worst_loss": {
+      "opponent_id": "29689104132",
+      "opponent_rank": 229,
+      "opponent_name": "Logan Ferrero",
+      "method": "Fall 3:24"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-04",
       "opponent_id": "29727166132",
+      "opponent_career_id": null,
       "opponent_name": "Kaden Keiser",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 41,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "12-2",
       "duration": "7:00",
-      "event": "vs. Gardner-Webb"
+      "event": "vs. Gardner-Webb",
+      "mv_impact": -2.83
     },
     {
       "date": "2025-01-31",
       "opponent_id": "29672628132",
+      "opponent_career_id": null,
       "opponent_name": "Patrick Jordon",
       "opponent_team": "VMI",
-      "opponent_team_rank": 77,
+      "opponent_team_rank": 79,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 47,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "14-2",
       "duration": "7:00",
-      "event": "vs. VMI"
+      "event": "vs. VMI",
+      "mv_impact": -2.66
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29681681132",
+      "opponent_career_id": null,
       "opponent_name": "Yuta Otero",
       "opponent_team": "Chattanooga",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 51,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 299,
       "weight_class": "149",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "6:06",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": 2.81
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29676070132",
+      "opponent_career_id": null,
       "opponent_name": "Nikolaus O`Neill",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 48,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "12-2",
       "duration": "7:00",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -2.76
     },
     {
       "date": "2025-01-14",
       "opponent_id": "29689104132",
+      "opponent_career_id": null,
       "opponent_name": "Logan Ferrero",
       "opponent_team": "Duke",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 68,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 229,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:24",
-      "event": "vs. Gardner-Webb"
+      "event": "vs. Gardner-Webb",
+      "mv_impact": -8.04
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34937473132",
+      "team": "Gardner-Webb",
+      "team_slug": "gardnerwebb",
+      "weight_class": 141,
+      "grade": "Gr.",
+      "current_rank": 179,
+      "record": "12-9"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29678055132",
+      "team": "Gardner-Webb",
+      "team_slug": "gardnerwebb",
+      "weight_class": 149,
+      "grade": "Sr.",
+      "current_rank": 225,
+      "record": "1-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24583242132",
+      "team": "Gardner-Webb",
+      "team_slug": "gardnerwebb",
+      "weight_class": 141,
+      "grade": "Jr.",
+      "current_rank": 131,
+      "record": "5-6"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20123788132",
+      "team": "Gardner-Webb",
+      "team_slug": "gardnerwebb",
+      "weight_class": 133,
+      "grade": "So.",
+      "current_rank": 111,
+      "record": "2-2"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16704257132",
+      "team": "Gardner-Webb",
+      "team_slug": "gardnerwebb",
+      "weight_class": 133,
+      "grade": "Fr.",
+      "current_rank": 109,
+      "record": "1-2"
+    }
+  ]
 }

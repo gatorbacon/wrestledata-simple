@@ -3,13 +3,18 @@
   "name": "Hayden Hughes",
   "team": "Chattanooga",
   "team_slug": "chattanooga",
-  "team_rank": 46,
+  "team_rank": 51,
   "weight_class": 149,
+  "grade": "Fr.",
+  "hometown": "Saint Paris, Ohio",
+  "high_school": "Emmanuel Christian",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Futc.sidearmsports.com%2Fimages%2F2024%2F8%2F30%2FHughes__Hayden.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 237,
   "record": {
     "overall": "2-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,92 +29,141 @@
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.036,
+      "matches": 6,
+      "rank_weight": 206,
+      "rank_overall": 1822,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29680007132",
+      "opponent_rank": 257,
+      "opponent_name": "Alexander Chirdo",
+      "method": "TF 18-0 2:49"
+    },
+    "worst_loss": {
+      "opponent_id": "29678069132",
+      "opponent_rank": 266,
+      "opponent_name": "Hunter Jones",
+      "method": "TF 15-0 2:35"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-25",
       "opponent_id": "29680007132",
+      "opponent_career_id": null,
       "opponent_name": "Alexander Chirdo",
       "opponent_team": "VMI",
-      "opponent_team_rank": 77,
+      "opponent_team_rank": 79,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 257,
       "weight_class": "149",
       "result": "W",
       "method": "TF",
       "score": "18-0",
       "duration": "2:49",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": 2.27
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29678069132",
+      "opponent_career_id": null,
       "opponent_name": "Hunter Jones",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 266,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "8-6",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -5.57
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29673255132",
+      "opponent_career_id": null,
       "opponent_name": "Adam Busiello",
       "opponent_team": "Northern Colorado",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 30,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 203,
       "weight_class": "149",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:56",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -8.2
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29673123132",
+      "opponent_career_id": null,
       "opponent_name": "Kyle Deisley",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 291,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "7-5",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": 0.43
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29678069132",
+      "opponent_career_id": null,
       "opponent_name": "Hunter Jones",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 266,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "2:35",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -7.57
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34935435132",
+      "team": "Chattanooga",
+      "team_slug": "chattanooga",
+      "weight_class": 149,
+      "grade": "R-Fr.",
+      "current_rank": 172,
+      "record": "1-10"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29681690132",
+      "team": "Chattanooga",
+      "team_slug": "chattanooga",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 237,
+      "record": "2-3"
+    }
+  ]
 }

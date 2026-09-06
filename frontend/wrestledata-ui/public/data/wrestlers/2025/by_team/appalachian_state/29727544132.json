@@ -3,15 +3,20 @@
   "name": "Pierce White",
   "team": "Appalachian State",
   "team_slug": "appalachian_state",
-  "team_rank": 36,
+  "team_rank": 47,
   "weight_class": 197,
+  "grade": "Fr.",
+  "hometown": "Wilmington, N.C.",
+  "high_school": "Hoggard",
+  "photo_url": "https://dg5crudsxv7wa.cloudfront.net/images/2024/12/4/White_Pierce_5YdgH.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 226,
   "record": {
     "overall": "1-6",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 2.04,
@@ -19,127 +24,180 @@
     "pd7": -13.86,
     "si_plus": 85.0,
     "df_plus": 89.0,
-    "apr_plus": 104.0,
+    "apr_plus": 103.9,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -4.558,
+      "matches": 7,
+      "rank_weight": 193,
+      "rank_overall": 2161,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29688441132",
+      "opponent_rank": 219,
+      "opponent_name": "George Hopkins",
+      "method": "Fall 2:26"
+    },
+    "worst_loss": {
+      "opponent_id": "29727176132",
+      "opponent_rank": 227,
+      "opponent_name": "Gunnar Pool",
+      "method": "Fall 4:38"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-25",
       "opponent_id": "29674048132",
+      "opponent_career_id": null,
       "opponent_name": "Andrew Macchiavello",
       "opponent_team": "NC State",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 14,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 101,
       "weight_class": "197",
       "result": "L",
       "method": "MD",
       "score": "11-1",
       "duration": "7:00",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -4.85
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29727176132",
+      "opponent_career_id": null,
       "opponent_name": "Gunnar Pool",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 227,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:33",
-      "event": "Wilkes Open"
+      "event": "Wilkes Open",
+      "mv_impact": -8.87
     },
     {
       "date": "2024-11-12",
       "opponent_id": "29727176132",
+      "opponent_career_id": null,
       "opponent_name": "Gunnar Pool",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 227,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:38",
-      "event": "Mountaineer Invitational"
+      "event": "Mountaineer Invitational",
+      "mv_impact": -8.87
     },
     {
       "date": "2024-11-12",
       "opponent_id": "29688441132",
+      "opponent_career_id": null,
       "opponent_name": "George Hopkins",
       "opponent_team": "Presbyterian",
-      "opponent_team_rank": 71,
+      "opponent_team_rank": 76,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 219,
       "weight_class": "197",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:26",
-      "event": "Mountaineer Invitational"
+      "event": "Mountaineer Invitational",
+      "mv_impact": 2.55
     },
     {
       "date": "2024-11-12",
       "opponent_id": "29734778132",
+      "opponent_career_id": null,
       "opponent_name": "Gabe Nagel",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 7,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 43,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:14",
-      "event": "Mountaineer Invitational"
+      "event": "Mountaineer Invitational",
+      "mv_impact": -4.83
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29689098132",
+      "opponent_career_id": null,
       "opponent_name": "Vincent Lee",
       "opponent_team": "Duke",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 68,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 82,
       "weight_class": "197",
       "result": "L",
       "method": "MD",
       "score": "12-1",
       "duration": "7:00",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -3.92
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29687876132",
+      "opponent_career_id": null,
       "opponent_name": "Patrick Brophy",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 21,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "18-3",
       "duration": "5:06",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -3.12
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34944361132",
+      "team": "Appalachian State",
+      "team_slug": "appalachian_state",
+      "weight_class": 184,
+      "grade": "R-Fr.",
+      "current_rank": 175,
+      "record": "2-8"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29727544132",
+      "team": "Appalachian State",
+      "team_slug": "appalachian_state",
+      "weight_class": 197,
+      "grade": "Fr.",
+      "current_rank": 226,
+      "record": "1-6"
+    }
+  ]
 }

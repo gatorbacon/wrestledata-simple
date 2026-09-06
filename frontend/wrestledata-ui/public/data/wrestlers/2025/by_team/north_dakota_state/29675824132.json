@@ -3,13 +3,18 @@
   "name": "Barrett Schneck",
   "team": "North Dakota State",
   "team_slug": "north_dakota_state",
-  "team_rank": 67,
+  "team_rank": 48,
   "weight_class": 174,
+  "grade": "RFr.",
+  "hometown": "Milbank, S.D.",
+  "high_school": "Milbank HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgobison.sidearmsports.com%2Fimages%2F2024%2F9%2F23%2FSchneck_Barrett.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 180,
   "record": {
     "overall": "0-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,52 +24,100 @@
     "pd7": -14.5,
     "si_plus": 84.0,
     "df_plus": 90.1,
-    "apr_plus": 106.9,
+    "apr_plus": 106.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.787,
+      "matches": 2,
+      "rank_weight": 195,
+      "rank_overall": 1993,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29735191132",
+      "opponent_rank": 86,
+      "opponent_name": "Jed Wester",
+      "method": "TF 15-0 5:00"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-09",
       "opponent_id": "29735191132",
+      "opponent_career_id": null,
       "opponent_name": "Jed Wester",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 7,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 86,
       "weight_class": "174",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "5:00",
-      "event": "Bison Open"
+      "event": "Bison Open",
+      "mv_impact": -4.77
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29675874132",
+      "opponent_career_id": null,
       "opponent_name": "Daniel Magayna",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 48,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 47,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
-      "event": "Bison Open"
+      "event": "Bison Open",
+      "mv_impact": -2.81
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34934613132",
+      "team": "North Dakota State",
+      "team_slug": "north_dakota_state",
+      "weight_class": 197,
+      "grade": "",
+      "current_rank": 219,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29675824132",
+      "team": "North Dakota State",
+      "team_slug": "north_dakota_state",
+      "weight_class": 174,
+      "grade": "RFr.",
+      "current_rank": 180,
+      "record": "0-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "28453829132",
+      "team": "North Dakota State",
+      "team_slug": "north_dakota_state",
+      "weight_class": 197,
+      "grade": "Fr.",
+      "current_rank": 150,
+      "record": "0-0"
+    }
+  ]
 }

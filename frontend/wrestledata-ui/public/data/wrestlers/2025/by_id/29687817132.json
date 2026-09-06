@@ -3,13 +3,18 @@
   "name": "Kendall La Rosa",
   "team": "Cal Poly",
   "team_slug": "cal_poly",
-  "team_rank": 9,
+  "team_rank": 19,
   "weight_class": 174,
+  "grade": "R-Jr.",
+  "hometown": "Hughson, CA",
+  "high_school": "Pitman HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgopoly.com%2Fimages%2F2025%2F1%2F3%2FKendall_La_Rosa.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 234,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,92 +29,171 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.196,
+      "matches": 5,
+      "rank_weight": 158,
+      "rank_overall": 1590,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29722993132",
+      "opponent_rank": 274,
+      "opponent_name": "Chris Neal",
+      "method": "TF 20-4 5:47"
+    },
+    "worst_loss": {
+      "opponent_id": "29686936132",
+      "opponent_rank": 103,
+      "opponent_name": "kodiak cannedy",
+      "method": "Fall 1:15"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-23",
       "opponent_id": "29722993132",
+      "opponent_career_id": null,
       "opponent_name": "Chris Neal",
       "opponent_team": "CSU Bakersfield",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 22,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 274,
       "weight_class": "174",
       "result": "W",
       "method": "TF",
       "score": "20-4",
       "duration": "5:47",
-      "event": "vs. Cal Poly"
+      "event": "vs. Cal Poly",
+      "mv_impact": 1.22
     },
     {
       "date": "2025-02-14",
       "opponent_id": "29686919132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler Brennan",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 15,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "4-0",
       "duration": "7:00",
-      "event": "vs. Little Rock"
+      "event": "vs. Little Rock",
+      "mv_impact": -1.63
     },
     {
       "date": "2024-12-19",
       "opponent_id": "29684562132",
+      "opponent_career_id": null,
       "opponent_name": "carter schmidt",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 74,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "vs. California Baptist"
+      "event": "vs. California Baptist",
+      "mv_impact": -2.83
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29686919132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler Brennan",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 15,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": -1.63
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29686936132",
+      "opponent_career_id": null,
       "opponent_name": "kodiak cannedy",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 15,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 103,
       "weight_class": "174",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:15",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": -6.11
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29687817132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 174,
+      "grade": "R-Jr.",
+      "current_rank": 234,
+      "record": "1-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24595012132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 184,
+      "grade": "R-So.",
+      "current_rank": 148,
+      "record": "7-13"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20137161132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 174,
+      "grade": "R-Fr.",
+      "current_rank": 109,
+      "record": "3-3"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16709008132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 165,
+      "grade": "Fr.",
+      "current_rank": 174,
+      "record": "1-1"
+    },
+    {
+      "season": 2021,
+      "wrestler_id": "14870053132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 165,
+      "grade": "Fr.",
+      "current_rank": 228,
+      "record": "0-3"
+    }
+  ]
 }

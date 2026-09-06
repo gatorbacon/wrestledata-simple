@@ -3,13 +3,18 @@
   "name": "Nick Olivieri",
   "team": "Brown",
   "team_slug": "brown",
-  "team_rank": 40,
+  "team_rank": 62,
   "weight_class": 184,
+  "grade": "Jr.",
+  "hometown": "Florham Park, N.J.",
+  "high_school": "Delbarton School",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fbrownuni.sidearmsports.com%2Fimages%2F2025%2F1%2F30%2FOlivieri-headshot-2025.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 192,
   "record": {
     "overall": "3-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,137 +29,212 @@
     "bonus_rate": 0.667,
     "majors": 1,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -2.741,
+      "matches": 9,
+      "rank_weight": 159,
+      "rank_overall": 1747,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29672204132",
+      "opponent_rank": 240,
+      "opponent_name": "Owen Ayotte",
+      "method": "Dec 7-3"
+    },
+    "worst_loss": {
+      "opponent_id": "29686227132",
+      "opponent_rank": 186,
+      "opponent_name": "Connor Scuilla",
+      "method": "Dec 4-3"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-20",
       "opponent_id": "29686592132",
+      "opponent_career_id": null,
       "opponent_name": "Andrew Reall",
       "opponent_team": "Brown",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 62,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 90,
       "weight_class": "184",
       "result": "L",
       "method": "MD",
       "score": "11-0",
       "duration": "7:00",
-      "event": "Sheridan invite"
+      "event": "Sheridan invite",
+      "mv_impact": -4.38
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29673114132",
+      "opponent_career_id": null,
       "opponent_name": "Pantaleo Varga",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 243,
       "weight_class": "184",
       "result": "W",
       "method": "MD",
       "score": "11-0",
       "duration": "7:00",
-      "event": "Sheridan invite"
+      "event": "Sheridan invite",
+      "mv_impact": 0.73
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29731829132",
+      "opponent_career_id": null,
       "opponent_name": "Griffin Gammell",
       "opponent_team": "Virginia",
-      "opponent_team_rank": 78,
+      "opponent_team_rank": 42,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 169,
       "weight_class": "184",
       "result": "L",
       "method": "MD",
       "score": "12-3",
       "duration": "7:00",
-      "event": "Sheridan invite"
+      "event": "Sheridan invite",
+      "mv_impact": -5.6
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29686890132",
+      "opponent_career_id": null,
       "opponent_name": "John Baker",
       "opponent_team": "Binghamton",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 32,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 241,
       "weight_class": "184",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:03",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": 2.59
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29688433132",
+      "opponent_career_id": null,
       "opponent_name": "Matt Furman",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 56,
       "weight_class": "184",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:41",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": -4.95
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29680921132",
+      "opponent_career_id": null,
       "opponent_name": "Zahir McLean-Felix",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 97,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "Big Red Invitational"
-    },
-    {
-      "date": "2024-11-24",
-      "opponent_id": "29672204132",
-      "opponent_name": "Owen Ayotte",
-      "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
-      "opponent_weight": 184,
-      "opponent_rank": null,
-      "weight_class": "184",
-      "result": "W",
-      "method": "DEC",
-      "score": "7-3",
-      "duration": "7:00",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": -3.05
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29686227132",
+      "opponent_career_id": null,
       "opponent_name": "Connor Scuilla",
       "opponent_team": "Buffalo",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 63,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 186,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": -5.07
+    },
+    {
+      "date": "2024-11-24",
+      "opponent_id": "29672204132",
+      "opponent_career_id": null,
+      "opponent_name": "Owen Ayotte",
+      "opponent_team": "Sacred Heart",
+      "opponent_team_rank": 78,
+      "opponent_weight": 184,
+      "opponent_rank": 240,
+      "weight_class": "184",
+      "result": "W",
+      "method": "DEC",
+      "score": "7-3",
+      "duration": "7:00",
+      "event": "Big Red Invitational",
+      "mv_impact": 0.12
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34948501132",
+      "team": "Brown",
+      "team_slug": "brown",
+      "weight_class": 197,
+      "grade": "Sr.",
+      "current_rank": 207,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29686577132",
+      "team": "Brown",
+      "team_slug": "brown",
+      "weight_class": 184,
+      "grade": "Jr.",
+      "current_rank": 192,
+      "record": "3-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24579684132",
+      "team": "Brown",
+      "team_slug": "brown",
+      "weight_class": 184,
+      "grade": "So.",
+      "current_rank": 239,
+      "record": "1-15"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20162753132",
+      "team": "Brown",
+      "team_slug": "brown",
+      "weight_class": 184,
+      "grade": "Fr.",
+      "current_rank": 250,
+      "record": "3-15"
+    }
+  ]
 }

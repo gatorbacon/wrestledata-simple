@@ -3,15 +3,20 @@
   "name": "Kaden Naame",
   "team": "Rider",
   "team_slug": "rider",
-  "team_rank": 72,
+  "team_rank": 34,
   "weight_class": 125,
+  "grade": "So.",
+  "hometown": "Somers Point, NJ",
+  "high_school": "St. Augustine Prep",
+  "photo_url": "https://gobroncs.com/images/2024/10/17/Naame_luw91.JPG",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 162,
+  "current_rank": 155,
   "record": {
     "overall": "4-8",
     "vs_ranked": "4-8",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 4.67,
@@ -24,7 +29,14 @@
     "bonus_rate": 0.5,
     "majors": 2,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.094,
+      "matches": 15,
+      "rank_weight": 126,
+      "rank_overall": 1558,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
@@ -33,13 +45,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29681446132",
-      "opponent_rank": 128,
+      "opponent_rank": 163,
       "opponent_name": "Gunner Chambers",
       "method": "MD 17-8"
     },
     "worst_loss": {
       "opponent_id": "29681443132",
-      "opponent_rank": 120,
+      "opponent_rank": 168,
       "opponent_name": "JB Dragovich",
       "method": "Dec 5-4"
     }
@@ -48,69 +60,95 @@
     {
       "date": "2025-01-10",
       "opponent_id": "29680342132",
+      "opponent_career_id": null,
       "opponent_name": "Kysen Terukina",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 125,
-      "opponent_rank": 39,
+      "opponent_rank": 22,
       "weight_class": "125",
       "result": "L",
       "method": "TF",
       "score": "20-3",
       "duration": "5:37",
-      "event": "vs. Rider"
+      "event": "vs. Rider",
+      "mv_impact": -3.44
     },
     {
       "date": "2025-01-04",
       "opponent_id": "29685879132",
+      "opponent_career_id": null,
       "opponent_name": "Eamonn Jimenez",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 125,
-      "opponent_rank": 164,
+      "opponent_rank": 200,
       "weight_class": "125",
       "result": "W",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "Bobby Kauffman Open"
+      "event": "Bobby Kauffman Open",
+      "mv_impact": 0.32
     },
     {
       "date": "2025-01-04",
       "opponent_id": "29681443132",
+      "opponent_career_id": null,
       "opponent_name": "JB Dragovich",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 133,
-      "opponent_rank": 120,
+      "opponent_rank": 168,
       "weight_class": "125",
       "result": "L",
       "method": "SV-3",
       "score": "4-1",
       "duration": "8:15",
-      "event": "Bobby Kauffman Open"
+      "event": "Bobby Kauffman Open",
+      "mv_impact": -3.83
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29678508132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler Garvin",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 17,
       "opponent_weight": 125,
-      "opponent_rank": 186,
+      "opponent_rank": 201,
       "weight_class": "125",
       "result": "W",
       "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
-      "event": "vs. Rider"
+      "event": "vs. Rider",
+      "mv_impact": 0.23
+    },
+    {
+      "date": "2024-12-20",
+      "opponent_id": "29681778132",
+      "opponent_career_id": null,
+      "opponent_name": "Matt Marlow",
+      "opponent_team": "Pittsburgh",
+      "opponent_team_rank": 21,
+      "opponent_weight": 133,
+      "opponent_rank": 55,
+      "weight_class": "125",
+      "result": "L",
+      "method": "DEC",
+      "score": "12-5",
+      "duration": "7:00",
+      "event": "vs. Rider",
+      "mv_impact": -2.62
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29675630132",
+      "opponent_career_id": null,
       "opponent_name": "Tanner Jordan",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 24,
       "opponent_weight": 125,
       "opponent_rank": 23,
       "weight_class": "125",
@@ -118,29 +156,16 @@
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
-      "event": "vs. South Dakota State"
-    },
-    {
-      "date": "2024-12-20",
-      "opponent_id": "29681778132",
-      "opponent_name": "Matt Marlow",
-      "opponent_team": "Pittsburgh",
-      "opponent_team_rank": 70,
-      "opponent_weight": 133,
-      "opponent_rank": 86,
-      "weight_class": "125",
-      "result": "L",
-      "method": "DEC",
-      "score": "12-5",
-      "duration": "7:00",
-      "event": "vs. Rider"
+      "event": "vs. South Dakota State",
+      "mv_impact": -2.45
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29682541132",
+      "opponent_career_id": null,
       "opponent_name": "Jay Peace",
       "opponent_team": "American",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 59,
       "opponent_weight": 125,
       "opponent_rank": 55,
       "weight_class": "125",
@@ -148,83 +173,126 @@
       "method": "MD",
       "score": "9-1",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -2.86
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29681446132",
+      "opponent_career_id": null,
       "opponent_name": "Gunner Chambers",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 125,
-      "opponent_rank": 128,
+      "opponent_rank": 163,
       "weight_class": "125",
       "result": "W",
       "method": "MD",
       "score": "17-8",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": 1.91
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29681443132",
+      "opponent_career_id": null,
       "opponent_name": "JB Dragovich",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 133,
-      "opponent_rank": 120,
+      "opponent_rank": 168,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -3.83
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29673453132",
+      "opponent_career_id": null,
       "opponent_name": "Sulayman Bah",
       "opponent_team": "Columbia",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 52,
       "opponent_weight": 125,
-      "opponent_rank": 101,
+      "opponent_rank": 76,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -2.87
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29726561132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Ziegler",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 11,
       "opponent_weight": 125,
-      "opponent_rank": 45,
+      "opponent_rank": 51,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -2.36
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29672832132",
+      "opponent_career_id": null,
       "opponent_name": "Brady Klinsky",
       "opponent_team": "Rider",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 34,
       "opponent_weight": 125,
-      "opponent_rank": 180,
+      "opponent_rank": 204,
       "weight_class": "125",
       "result": "W",
       "method": "MD",
       "score": "14-4",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": 0.67
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34934832132",
+      "team": "Rider",
+      "team_slug": "rider",
+      "weight_class": 133,
+      "grade": "Jr.",
+      "current_rank": 118,
+      "record": "0-2"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29672680132",
+      "team": "Rider",
+      "team_slug": "rider",
+      "weight_class": 125,
+      "grade": "So.",
+      "current_rank": 155,
+      "record": "4-8"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24594500132",
+      "team": "Rider",
+      "team_slug": "rider",
+      "weight_class": 125,
+      "grade": "Fr.",
+      "current_rank": 145,
+      "record": "4-4"
+    }
+  ]
 }

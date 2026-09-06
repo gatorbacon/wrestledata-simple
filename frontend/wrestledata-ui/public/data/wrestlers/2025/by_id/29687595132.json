@@ -3,15 +3,20 @@
   "name": "Cael Rahnavardi",
   "team": "Northern Iowa",
   "team_slug": "northern_iowa",
-  "team_rank": 15,
+  "team_rank": 8,
   "weight_class": 157,
+  "grade": "R-Jr.",
+  "hometown": "Cedar Falls, Iowa",
+  "high_school": "Don Bosco HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Funi.sidearmsports.com%2Fimages%2F2025%2F10%2F15%2FRahnavardi_Cael.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 75,
   "record": {
-    "overall": "5-4",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "4-4",
+    "vs_ranked": "4-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 8.14,
@@ -19,157 +24,227 @@
     "pd7": 1.14,
     "si_plus": 108.1,
     "df_plus": 102.2,
-    "apr_plus": 100.0,
+    "apr_plus": 99.7,
     "pin_rate": 0.0,
-    "bonus_rate": 0.4,
+    "bonus_rate": 0.5,
     "majors": 2,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.61,
+      "matches": 9,
+      "rank_weight": 78,
+      "rank_overall": 640,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29676072132",
+      "opponent_rank": 74,
+      "opponent_name": "Laird Root",
+      "method": "Inj. 3:00"
+    },
+    "worst_loss": {
+      "opponent_id": "29685278132",
+      "opponent_rank": 40,
+      "opponent_name": "Jonathan Ley",
+      "method": "Dec 7-4"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-08",
       "opponent_id": "29675819132",
+      "opponent_career_id": null,
       "opponent_name": "Maxwell Petersen",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 48,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 37,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "9-7",
       "duration": "7:00",
-      "event": "vs. Northern Iowa"
+      "event": "vs. Northern Iowa",
+      "mv_impact": -1.73
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29684811132",
+      "opponent_career_id": null,
       "opponent_name": "Felix Lettini",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 78,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 155,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "vs. Sacred Heart"
+      "event": "vs. Sacred Heart",
+      "mv_impact": 2.27
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29681848132",
+      "opponent_career_id": null,
       "opponent_name": "Logan Swaw",
       "opponent_team": "Illinois",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 10,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 77,
       "weight_class": "157",
       "result": "W",
       "method": "MD",
       "score": "14-3",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 3.95
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29736103132",
+      "opponent_career_id": null,
       "opponent_name": "Isaiah Fenton",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 3,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 188,
       "weight_class": "157",
       "result": "W",
       "method": "MD",
       "score": "19-5",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 2.18
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29734791132",
+      "opponent_career_id": null,
       "opponent_name": "Tommy Askey",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 7,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 8,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "7-3",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -1.08
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29685278132",
+      "opponent_career_id": null,
       "opponent_name": "Jonathan Ley",
       "opponent_team": "Navy",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 28,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "7-4",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -1.93
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29676072132",
+      "opponent_career_id": null,
       "opponent_name": "Laird Root",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 74,
       "weight_class": "157",
       "result": "W",
       "method": "INJ",
       "score": null,
       "duration": "3:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 6.36
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29688269132",
+      "opponent_career_id": null,
       "opponent_name": "Sloan Swan",
       "opponent_team": "Wyoming",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 35,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 31,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "17-5",
       "duration": "7:00",
-      "event": "Soldier Salute"
-    },
-    {
-      "date": "2024-11-16",
-      "opponent_id": "29680354132",
-      "opponent_name": "Paniro Johnson",
-      "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
-      "opponent_weight": 149,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "DEC",
-      "score": null,
-      "duration": "7:00",
-      "event": "Grand View Open"
+      "event": "Soldier Salute",
+      "mv_impact": -2.26
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34964064132",
+      "team": "Northern Iowa",
+      "team_slug": "northern_iowa",
+      "weight_class": 157,
+      "grade": "R-Sr.",
+      "current_rank": 188,
+      "record": "6-14"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29687595132",
+      "team": "Northern Iowa",
+      "team_slug": "northern_iowa",
+      "weight_class": 157,
+      "grade": "R-Jr.",
+      "current_rank": 75,
+      "record": "4-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24603316132",
+      "team": "Northern Iowa",
+      "team_slug": "northern_iowa",
+      "weight_class": 149,
+      "grade": "R-So.",
+      "current_rank": 146,
+      "record": "6-9"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20126413132",
+      "team": "Northern Iowa",
+      "team_slug": "northern_iowa",
+      "weight_class": 149,
+      "grade": "R-Fr.",
+      "current_rank": 210,
+      "record": "4-6"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16708479132",
+      "team": "Northern Iowa",
+      "team_slug": "northern_iowa",
+      "weight_class": 165,
+      "grade": "Fr.",
+      "current_rank": 72,
+      "record": "0-0"
+    }
+  ]
 }

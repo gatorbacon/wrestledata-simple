@@ -3,13 +3,18 @@
   "name": "Scott Robertson",
   "team": "Nebraska",
   "team_slug": "nebraska",
-  "team_rank": 11,
+  "team_rank": 2,
   "weight_class": 149,
+  "grade": "Redshirt Freshman",
+  "hometown": "Omaha, Neb.",
+  "high_school": "Millard South",
+  "photo_url": "https://huskers.com/imgproxy/RRpbjQkuRaBmd4ogZuo4WBftXo_-oz_-qUg_TEbGXSs/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8xMS9IaGJGZHVndFJkSkdJMXlnU25oRnc3NGJzZlN6TzlhNmNkS29Ka09rLmpwZw.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 106,
   "record": {
     "overall": "4-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "4-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,152 +29,219 @@
     "bonus_rate": 0.5,
     "majors": 2,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.704,
+      "matches": 11,
+      "rank_weight": 127,
+      "rank_overall": 1102,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29687886132",
+      "opponent_rank": 65,
+      "opponent_name": "Kyrell Leavell",
+      "method": "Dec 11-9"
+    },
+    "worst_loss": {
+      "opponent_id": "29686459132",
+      "opponent_rank": 126,
+      "opponent_name": "Mason Stewart",
+      "method": "SV-1 13-10"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-26",
       "opponent_id": "29686459132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Stewart",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 126,
       "weight_class": "157",
       "result": "L",
       "method": "SV-1",
       "score": "13-10",
       "duration": "8:15",
-      "event": "vs. Nebraska"
+      "event": "vs. Nebraska",
+      "mv_impact": -3.72
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29678005132",
+      "opponent_career_id": null,
       "opponent_name": "Nate Pulliam",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 112,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": -3.53
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29687599132",
+      "opponent_career_id": null,
       "opponent_name": "Connor Thorpe",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 8,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 88,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "8-5",
       "duration": "7:00",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": -3.28
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29684482132",
+      "opponent_career_id": null,
       "opponent_name": "Alec Peralta",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 213,
       "weight_class": "149",
       "result": "W",
       "method": "MD",
       "score": "12-0",
       "duration": "7:00",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": 1.19
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29721906132",
+      "opponent_career_id": null,
       "opponent_name": "Colby Ryan",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 144,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "10-4",
       "duration": "7:00",
-      "event": "Bob Smith Open"
+      "event": "Bob Smith Open",
+      "mv_impact": 1.86
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29686992132",
+      "opponent_career_id": null,
       "opponent_name": "Billy Meiszner",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 71,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "11-4",
       "duration": "7:00",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": -2.24
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29687004132",
+      "opponent_career_id": null,
       "opponent_name": "Nate Roth",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 102,
       "weight_class": "149",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:23",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": -5.58
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29685274132",
+      "opponent_career_id": null,
       "opponent_name": "Kaemen Smith",
       "opponent_team": "Navy",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 28,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 89,
       "weight_class": "149",
       "result": "W",
       "method": "MD",
       "score": "19-6",
       "duration": "7:00",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": 3.62
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29687886132",
+      "opponent_career_id": null,
       "opponent_name": "Kyrell Leavell",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 65,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "11-9",
       "duration": "7:00",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": 3.83
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34935625132",
+      "team": "Nebraska",
+      "team_slug": "nebraska",
+      "weight_class": 149,
+      "grade": "Sophomore",
+      "current_rank": 101,
+      "record": "4-7"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29673840132",
+      "team": "Nebraska",
+      "team_slug": "nebraska",
+      "weight_class": 149,
+      "grade": "Redshirt Freshman",
+      "current_rank": 106,
+      "record": "4-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24580376132",
+      "team": "Nebraska",
+      "team_slug": "nebraska",
+      "weight_class": 149,
+      "grade": "Freshman",
+      "current_rank": 225,
+      "record": "0-6"
+    }
+  ]
 }

@@ -3,15 +3,20 @@
   "name": "Joshua Harkey",
   "team": "Cal Poly",
   "team_slug": "cal_poly",
-  "team_rank": 9,
+  "team_rank": 19,
   "weight_class": 197,
+  "grade": "R-Jr.",
+  "hometown": "Laguna Niguel, CA",
+  "high_school": "Dana Hills HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgopoly.com%2Fimages%2F2024%2F11%2F7%2F_Josh_Harkey.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 150,
   "record": {
-    "overall": "2-3",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "overall": "2-4",
+    "vs_ranked": "2-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 5.12,
@@ -24,92 +29,178 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.499,
+      "matches": 6,
+      "rank_weight": 115,
+      "rank_overall": 1365,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29684495132",
+      "opponent_rank": 92,
+      "opponent_name": "Nick Nosler",
+      "method": "Dec 7-2"
+    },
+    "worst_loss": {
+      "opponent_id": "29687548132",
+      "opponent_rank": 47,
+      "opponent_name": "Justin Rademacher",
+      "method": "TF 19-4 5:50"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-14",
       "opponent_id": "29686937132",
+      "opponent_career_id": null,
       "opponent_name": "Stephen Little",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 15,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 9,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "4:26",
-      "event": "vs. Little Rock"
+      "event": "vs. Little Rock",
+      "mv_impact": -2.48
     },
     {
       "date": "2024-12-22",
       "opponent_id": "29687548132",
+      "opponent_career_id": null,
       "opponent_name": "Justin Rademacher",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 41,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 47,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "5:50",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": -4.4
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29684510132",
+      "opponent_career_id": null,
       "opponent_name": "Eli Sheeren",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 94,
       "weight_class": "197",
       "result": "W",
       "method": "DEC",
       "score": "7-2",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": 2.5
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29682549132",
+      "opponent_career_id": null,
       "opponent_name": "Ben Vanadia",
       "opponent_team": "Purdue",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 12,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 42,
       "weight_class": "197",
       "result": "L",
       "method": "MD",
       "score": "11-1",
       "duration": "7:00",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": -3.07
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29684495132",
+      "opponent_career_id": null,
       "opponent_name": "Nick Nosler",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 92,
       "weight_class": "197",
       "result": "W",
       "method": "DEC",
       "score": "7-2",
       "duration": "7:00",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": 2.54
+    },
+    {
+      "date": "2024-11-09",
+      "opponent_id": "29682549132",
+      "opponent_career_id": null,
+      "opponent_name": "Ben Vanadia",
+      "opponent_team": "Purdue",
+      "opponent_team_rank": 12,
+      "opponent_weight": 197,
+      "opponent_rank": 42,
+      "weight_class": "197",
+      "result": "L",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "6:07",
+      "event": "Tiger Style Invite",
+      "mv_impact": -4.07
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29687820132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 197,
+      "grade": "R-Jr.",
+      "current_rank": 150,
+      "record": "2-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24595015132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 285,
+      "grade": "R-So.",
+      "current_rank": 252,
+      "record": "0-4"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16709013132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 184,
+      "grade": "Fr.",
+      "current_rank": 204,
+      "record": "0-1"
+    },
+    {
+      "season": 2021,
+      "wrestler_id": "14870450132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 197,
+      "grade": "Fr.",
+      "current_rank": 175,
+      "record": "0-3"
+    }
+  ]
 }

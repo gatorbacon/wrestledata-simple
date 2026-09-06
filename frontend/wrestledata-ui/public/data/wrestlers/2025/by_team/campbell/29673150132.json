@@ -3,13 +3,18 @@
   "name": "Parker Lyden",
   "team": "Campbell",
   "team_slug": "campbell",
-  "team_rank": 45,
+  "team_rank": 55,
   "weight_class": 149,
+  "grade": "Fr.",
+  "hometown": "Forest Lake, Minn.",
+  "high_school": "Forest Lake Area HS",
+  "photo_url": "https://gocamels.com/images/2024/9/12/Lyden_Parker_02_.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 250,
   "record": {
     "overall": "0-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,37 +24,63 @@
     "pd7": -17.05,
     "si_plus": 92.1,
     "df_plus": 65.4,
-    "apr_plus": 88.6,
+    "apr_plus": 88.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -7.536,
+      "matches": 1,
+      "rank_weight": 278,
+      "rank_overall": 2407,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29673102132",
+      "opponent_rank": 281,
+      "opponent_name": "Brandon Sauter",
+      "method": "TF 21-6 5:17"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29673102132",
+      "opponent_career_id": null,
       "opponent_name": "Brandon Sauter",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 281,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "21-6",
       "duration": "5:17",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -7.54
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29673150132",
+      "team": "Campbell",
+      "team_slug": "campbell",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 250,
+      "record": "0-1"
+    }
+  ]
 }

@@ -3,15 +3,20 @@
   "name": "Anthony Echemendia",
   "team": "Iowa State",
   "team_slug": "iowa_state",
-  "team_rank": 17,
+  "team_rank": 26,
   "weight_class": 149,
+  "grade": "Sr.",
+  "hometown": "Cabaiguan, Cuba",
+  "high_school": "Sunnyside (Ariz.)",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fisuni.sidearmsports.com%2Fimages%2F2024%2F9%2F19%2F_0031_Echemendia__Anthony_24-25.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 38,
   "record": {
     "overall": "6-3",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "6-3",
+    "vs_top10": "0-2",
+    "vs_top25": "1-3"
   },
   "metrics": {
     "pf7": 9.0,
@@ -24,152 +29,239 @@
     "bonus_rate": 0.333,
     "majors": 1,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 2.292,
+      "matches": 9,
+      "rank_weight": 22,
+      "rank_overall": 221,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 6,
+    "ranked_losses": 3,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 2,
+    "win_over_highest_rank": {
+      "opponent_id": "29685261132",
+      "opponent_rank": 19,
+      "opponent_name": "Jaden Abas",
+      "method": "Dec 11-5"
+    },
+    "worst_loss": {
+      "opponent_id": "29685261132",
+      "opponent_rank": 19,
+      "opponent_name": "Jaden Abas",
+      "method": "Fall 1:42"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-07",
       "opponent_id": "29727166132",
+      "opponent_career_id": null,
       "opponent_name": "Kaden Keiser",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 41,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "11-4",
       "duration": "7:00",
-      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational"
+      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": 4.17
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29679141132",
+      "opponent_career_id": null,
       "opponent_name": "Jesse Vasquez",
       "opponent_team": "Arizona State",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 27,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 37,
       "weight_class": "149",
       "result": "W",
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
-      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational"
+      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": 4.99
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29685261132",
+      "opponent_career_id": null,
       "opponent_name": "Jaden Abas",
       "opponent_team": "Stanford",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 25,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 19,
       "weight_class": "149",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:42",
-      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational"
+      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -4.69
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29673820132",
+      "opponent_career_id": null,
       "opponent_name": "Ridge Lovett",
       "opponent_team": "Nebraska",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 2,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 1,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "9-6",
       "duration": "7:00",
-      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational"
+      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": 0.23
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29672240132",
+      "opponent_career_id": null,
       "opponent_name": "Cameron Catrabone",
       "opponent_team": "Michigan",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 13,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 45,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational"
+      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": 4.11
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29678426132",
+      "opponent_career_id": null,
       "opponent_name": "Carter Young",
       "opponent_team": "Oklahoma State",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 4,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational"
+      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": 3.56
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29736196132",
+      "opponent_career_id": null,
       "opponent_name": "Kyle Parco",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 3,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 6,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "vs. Iowa State"
+      "event": "vs. Iowa State",
+      "mv_impact": -0.67
     },
     {
       "date": "2024-11-15",
       "opponent_id": "29685274132",
+      "opponent_career_id": null,
       "opponent_name": "Kaemen Smith",
       "opponent_team": "Navy",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 28,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 89,
       "weight_class": "149",
       "result": "W",
       "method": "TF",
       "score": "22-7",
       "duration": "6:07",
-      "event": "vs. Navy"
+      "event": "vs. Navy",
+      "mv_impact": 4.62
     },
     {
       "date": "2024-11-08",
       "opponent_id": "29685261132",
+      "opponent_career_id": null,
       "opponent_name": "Jaden Abas",
       "opponent_team": "Stanford",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 25,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 19,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "11-5",
       "duration": "7:00",
-      "event": "vs. Stanford"
+      "event": "vs. Stanford",
+      "mv_impact": 4.31
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34940714132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 141,
+      "grade": "Sr.",
+      "current_rank": 5,
+      "record": "23-6"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29680364132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 149,
+      "grade": "Sr.",
+      "current_rank": 38,
+      "record": "6-3"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24586497132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 141,
+      "grade": "R-Jr.",
+      "current_rank": 6,
+      "record": "24-6"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16704533132",
+      "team": "Ohio State",
+      "team_slug": "ohio_state",
+      "weight_class": 141,
+      "grade": "",
+      "current_rank": 84,
+      "record": "2-1"
+    },
+    {
+      "season": 2021,
+      "wrestler_id": "14880853132",
+      "team": "Ohio State",
+      "team_slug": "ohio_state",
+      "weight_class": 141,
+      "grade": "So.",
+      "current_rank": 43,
+      "record": "4-1"
+    }
+  ]
 }

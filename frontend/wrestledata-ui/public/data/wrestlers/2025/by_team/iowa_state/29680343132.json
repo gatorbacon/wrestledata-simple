@@ -3,15 +3,20 @@
   "name": "Yonger Bastida",
   "team": "Iowa State",
   "team_slug": "iowa_state",
-  "team_rank": 17,
+  "team_rank": 26,
   "weight_class": 285,
+  "grade": "Sr.",
+  "hometown": "Trinidad, Cuba",
+  "high_school": "EIDE Lino Salabarria Pupo",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fisuni.sidearmsports.com%2Fimages%2F2024%2F9%2F19%2F_0041_Bastida__Yonger_24-25.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 53,
   "record": {
     "overall": "2-0",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "2-0",
+    "vs_top10": "1-0",
+    "vs_top25": "1-0"
   },
   "metrics": {
     "pf7": 11.0,
@@ -19,52 +24,120 @@
     "pd7": 6.5,
     "si_plus": 117.1,
     "df_plus": 107.3,
-    "apr_plus": 98.2,
+    "apr_plus": 98.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 4.48,
+      "matches": 3,
+      "rank_weight": 4,
+      "rank_overall": 22,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 2,
     "ranked_losses": 0,
-    "top10_wins": 0,
+    "top10_wins": 1,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "29736110132",
+      "opponent_rank": 8,
+      "opponent_name": "Ben Kueter",
+      "method": "Dec 7-2"
+    },
     "worst_loss": null
   },
   "match_list": [
     {
       "date": "2024-12-21",
       "opponent_id": "29676071132",
+      "opponent_career_id": null,
       "opponent_name": "Robert Platt",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 53,
       "weight_class": "285",
       "result": "W",
       "method": "MD",
       "score": "15-7",
       "duration": "7:00",
-      "event": "vs. North Carolina"
+      "event": "vs. North Carolina",
+      "mv_impact": 4.42
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29736110132",
+      "opponent_career_id": null,
       "opponent_name": "Ben Kueter",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 3,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 8,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "7-2",
       "duration": "7:00",
-      "event": "vs. Iowa State"
+      "event": "vs. Iowa State",
+      "mv_impact": 4.61
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34940702132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 285,
+      "grade": "Sr.",
+      "current_rank": 2,
+      "record": "30-1"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29680343132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 285,
+      "grade": "Sr.",
+      "current_rank": 53,
+      "record": "2-0"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24585262132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 285,
+      "grade": "Sr.",
+      "current_rank": 3,
+      "record": "25-2"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20129418132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 197,
+      "grade": "Jr.",
+      "current_rank": 15,
+      "record": "17-8"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16704825132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 197,
+      "grade": "So.",
+      "current_rank": 6,
+      "record": "22-7"
+    }
+  ]
 }

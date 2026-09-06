@@ -3,13 +3,18 @@
   "name": "Wesley Wilson",
   "team": "Cal Poly",
   "team_slug": "cal_poly",
-  "team_rank": 9,
+  "team_rank": 19,
   "weight_class": 197,
+  "grade": "R-So.",
+  "hometown": "Los Osos, CA",
+  "high_school": "Morro Bay HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgopoly.com%2Fimages%2F2024%2F11%2F7%2F_Wesley_Wilson.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 151,
   "record": {
     "overall": "3-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,97 +24,166 @@
     "pd7": -2.25,
     "si_plus": 97.7,
     "df_plus": 99.7,
-    "apr_plus": 117.0,
+    "apr_plus": 116.8,
     "pin_rate": 0.333,
     "bonus_rate": 0.333,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 0.846,
+      "matches": 6,
+      "rank_weight": 51,
+      "rank_overall": 566,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29722729132",
+      "opponent_rank": 82,
+      "opponent_name": "Ibrahim Ameer",
+      "method": "Fall 4:30"
+    },
+    "worst_loss": {
+      "opponent_id": "29684510132",
+      "opponent_rank": 94,
+      "opponent_name": "Eli Sheeren",
+      "method": "MD 12-2"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-02",
       "opponent_id": "29684495132",
+      "opponent_career_id": null,
       "opponent_name": "Nick Nosler",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 92,
       "weight_class": "197",
       "result": "L",
       "method": "MD",
       "score": "13-4",
       "duration": "7:00",
-      "event": "vs. SIU Edwardsville"
+      "event": "vs. SIU Edwardsville",
+      "mv_impact": -4.46
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29722729132",
+      "opponent_career_id": null,
       "opponent_name": "Ibrahim Ameer",
       "opponent_team": "Drexel",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 67,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 82,
       "weight_class": "197",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:30",
-      "event": "vs. Drexel"
+      "event": "vs. Drexel",
+      "mv_impact": 6.21
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29684837132",
+      "opponent_career_id": null,
       "opponent_name": "Kevin Taylor",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 78,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 242,
       "weight_class": "197",
       "result": "W",
       "method": "DEC",
       "score": "12-5",
       "duration": "7:00",
-      "event": "vs. Sacred Heart"
+      "event": "vs. Sacred Heart",
+      "mv_impact": -0.31
     },
     {
       "date": "2024-12-22",
       "opponent_id": "29681161132",
+      "opponent_career_id": null,
       "opponent_name": "Radi Stafford",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 142,
       "weight_class": "197",
       "result": "W",
       "method": "DEC",
       "score": "3-0",
       "duration": "7:00",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": 1.92
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29684510132",
+      "opponent_career_id": null,
       "opponent_name": "Eli Sheeren",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 94,
       "weight_class": "197",
       "result": "L",
       "method": "MD",
       "score": "12-2",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": -4.5
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34936110132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 197,
+      "grade": "R-Jr.",
+      "current_rank": 100,
+      "record": "6-7"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29687829132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 197,
+      "grade": "R-So.",
+      "current_rank": 151,
+      "record": "3-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24595027132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 197,
+      "grade": "R-Fr.",
+      "current_rank": 221,
+      "record": "0-4"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20143318132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 197,
+      "grade": "Fr.",
+      "current_rank": 148,
+      "record": "1-3"
+    }
+  ]
 }

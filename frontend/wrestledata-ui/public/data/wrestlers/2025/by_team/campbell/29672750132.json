@@ -3,13 +3,18 @@
   "name": "Hudson Waldrop",
   "team": "Campbell",
   "team_slug": "campbell",
-  "team_rank": 45,
+  "team_rank": 55,
   "weight_class": 141,
+  "grade": "So.",
+  "hometown": "McCalla, Ala.",
+  "high_school": "McAdory HS",
+  "photo_url": "https://gocamels.com/images/2024/9/12/Waldrop_Hudson_01_.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 263,
   "record": {
     "overall": "0-8",
-    "vs_ranked": "0-5",
+    "vs_ranked": "0-8",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,17 +29,24 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.772,
+      "matches": 13,
+      "rank_weight": 243,
+      "rank_overall": 2321,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 5,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "29688459132",
-      "opponent_rank": 211,
+      "opponent_rank": 246,
       "opponent_name": "TJ Rodier",
       "method": "Dec 4-1"
     }
@@ -43,123 +55,171 @@
     {
       "date": "2025-02-09",
       "opponent_id": "29688440132",
+      "opponent_career_id": null,
       "opponent_name": "Ryan Luna",
       "opponent_team": "Presbyterian",
-      "opponent_team_rank": 71,
+      "opponent_team_rank": 76,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 180,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "6:24",
-      "event": "vs. Presbyterian"
+      "event": "vs. Presbyterian",
+      "mv_impact": -7.4
     },
     {
       "date": "2025-02-02",
       "opponent_id": "29678138132",
+      "opponent_career_id": null,
       "opponent_name": "Ty Edwards",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 102,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "2025 Newberry Open"
+      "event": "2025 Newberry Open",
+      "mv_impact": -6.22
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29721634132",
+      "opponent_career_id": null,
       "opponent_name": "Dan Jones",
       "opponent_team": "Princeton",
-      "opponent_team_rank": 32,
+      "opponent_team_rank": 37,
       "opponent_weight": 133,
-      "opponent_rank": 69,
+      "opponent_rank": 62,
       "weight_class": "133",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "2:39",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -4.31
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29681408132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Gibson",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 31,
       "opponent_weight": 133,
-      "opponent_rank": 60,
+      "opponent_rank": 43,
       "weight_class": "133",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "5:17",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -3.6
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29688506132",
+      "opponent_career_id": null,
       "opponent_name": "Sam Cherichello",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 133,
-      "opponent_rank": 153,
+      "opponent_rank": 208,
       "weight_class": "133",
       "result": "L",
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
-      "event": "Lucha Open"
+      "event": "Lucha Open",
+      "mv_impact": -6.03
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29688459132",
+      "opponent_career_id": null,
       "opponent_name": "TJ Rodier",
       "opponent_team": "Presbyterian",
-      "opponent_team_rank": 71,
+      "opponent_team_rank": 76,
       "opponent_weight": 133,
-      "opponent_rank": 211,
+      "opponent_rank": 246,
       "weight_class": "133",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Mountaineer Open"
+      "event": "Mountaineer Open",
+      "mv_impact": -6.37
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29727540132",
+      "opponent_career_id": null,
       "opponent_name": "Jarvis Little",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 38,
       "weight_class": "133",
       "result": "L",
       "method": "MD",
       "score": "11-0",
       "duration": "7:00",
-      "event": "Mountaineer Open"
+      "event": "Mountaineer Open",
+      "mv_impact": -2.63
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29677471132",
+      "opponent_career_id": null,
       "opponent_name": "John Hager",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 133,
-      "opponent_rank": 195,
+      "opponent_rank": 202,
       "weight_class": "133",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "6:17",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -9.08
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34941680132",
+      "team": "Campbell",
+      "team_slug": "campbell",
+      "weight_class": 149,
+      "grade": "Jr.",
+      "current_rank": 207,
+      "record": "0-8"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29672750132",
+      "team": "Campbell",
+      "team_slug": "campbell",
+      "weight_class": 141,
+      "grade": "So.",
+      "current_rank": 263,
+      "record": "0-8"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584152132",
+      "team": "Campbell",
+      "team_slug": "campbell",
+      "weight_class": 133,
+      "grade": "Fr.",
+      "current_rank": 184,
+      "record": "3-6"
+    }
+  ]
 }

@@ -3,13 +3,18 @@
   "name": "Ryan Clink",
   "team": "Cal Poly",
   "team_slug": "cal_poly",
-  "team_rank": 9,
+  "team_rank": 19,
   "weight_class": 174,
+  "grade": "Fr.",
+  "hometown": "Chico, CA",
+  "high_school": "Chico HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgopoly.com%2Fimages%2F2024%2F11%2F7%2F_Ryan_Clink.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 198,
   "record": {
     "overall": "0-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,97 +24,141 @@
     "pd7": -9.75,
     "si_plus": 94.1,
     "df_plus": 87.2,
-    "apr_plus": 99.7,
+    "apr_plus": 99.5,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.031,
+      "matches": 6,
+      "rank_weight": 228,
+      "rank_overall": 2248,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29684504132",
+      "opponent_rank": 219,
+      "opponent_name": "Timothy Cowan",
+      "method": "Dec 5-4"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-01",
       "opponent_id": "29684504132",
+      "opponent_career_id": null,
       "opponent_name": "Timothy Cowan",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 219,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "Oaks Invite"
+      "event": "Oaks Invite",
+      "mv_impact": -5.58
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29684535132",
+      "opponent_career_id": null,
       "opponent_name": "David Alonso",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 127,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "13-3",
       "duration": "7:00",
-      "event": "Oaks Invite"
+      "event": "Oaks Invite",
+      "mv_impact": -5.25
     },
     {
       "date": "2024-12-22",
       "opponent_id": "29688260132",
+      "opponent_career_id": null,
       "opponent_name": "Quayin Short",
       "opponent_team": "Wyoming",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 35,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 73,
       "weight_class": "174",
       "result": "L",
       "method": "TF",
       "score": "17-0",
       "duration": "3:46",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": -5.04
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29681155132",
+      "opponent_career_id": null,
       "opponent_name": "Mark Takara",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 69,
       "weight_class": "174",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:58",
-      "event": "Menlo Invite"
+      "event": "Menlo Invite",
+      "mv_impact": -6.11
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29681146132",
+      "opponent_career_id": null,
       "opponent_name": "Tanner Lofthouse",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 101,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "9-6",
       "duration": "7:00",
-      "event": "Menlo Invite"
+      "event": "Menlo Invite",
+      "mv_impact": -3.17
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34936107132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 184,
+      "grade": "R-Fr.",
+      "current_rank": 133,
+      "record": "0-5"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29687841132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 174,
+      "grade": "Fr.",
+      "current_rank": 198,
+      "record": "0-5"
+    }
+  ]
 }

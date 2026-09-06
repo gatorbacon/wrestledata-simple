@@ -3,15 +3,20 @@
   "name": "Cole Spencer",
   "team": "Pennsylvania",
   "team_slug": "pennsylvania",
-  "team_rank": 24,
+  "team_rank": 20,
   "weight_class": 197,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 149,
   "record": {
     "overall": "0-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -24,32 +29,88 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.069,
+      "matches": 1,
+      "rank_weight": 133,
+      "rank_overall": 1551,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29680919132",
+      "opponent_rank": 23,
+      "opponent_name": "Michael Dellagatta",
+      "method": "MD 10-0"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-09",
       "opponent_id": "29680919132",
+      "opponent_career_id": null,
       "opponent_name": "Michael Dellagatta",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 23,
       "weight_class": "197",
       "result": "L",
       "method": "MD",
       "score": "10-0",
       "duration": "7:00",
-      "event": "vs. Pennsylvania"
+      "event": "vs. Pennsylvania",
+      "mv_impact": -2.07
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29684066132",
+      "team": "Pennsylvania",
+      "team_slug": "pennsylvania",
+      "weight_class": 197,
+      "grade": "",
+      "current_rank": 149,
+      "record": "0-1"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24591800132",
+      "team": "Pennsylvania",
+      "team_slug": "pennsylvania",
+      "weight_class": 165,
+      "grade": "",
+      "current_rank": 102,
+      "record": "8-6"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20123302132",
+      "team": "Pennsylvania",
+      "team_slug": "pennsylvania",
+      "weight_class": 157,
+      "grade": "",
+      "current_rank": 127,
+      "record": "8-6"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16704962132",
+      "team": "Pennsylvania",
+      "team_slug": "pennsylvania",
+      "weight_class": 197,
+      "grade": "",
+      "current_rank": 133,
+      "record": "0-0"
+    }
+  ]
 }

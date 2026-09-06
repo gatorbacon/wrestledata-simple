@@ -3,15 +3,20 @@
   "name": "Azizbek Fayzullaev",
   "team": "Arizona State",
   "team_slug": "arizona_state",
-  "team_rank": 25,
+  "team_rank": 27,
   "weight_class": 184,
+  "grade": "Junior",
+  "hometown": "Tashkent, Uzbekistan",
+  "high_school": null,
+  "photo_url": "https://thesundevils.com/imgproxy/ibAdaVS9zKBJV_dEuljOnUlA_ZR7MvsP0goO96SuDzs/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3RoZXN1bmRldmlscy1jb20tcHJvZC8yMDI1LzA1LzEzL0tKR1hoblV3Z25HcG1SWTdaUUNnWXg4bkVFRnpmNWV3b2k5bmZqQ2Mud2VicA.webp",
+  "previous_school": "Northwest College",
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 82,
   "record": {
     "overall": "2-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 8.5,
@@ -19,67 +24,112 @@
     "pd7": 1.0,
     "si_plus": 110.6,
     "df_plus": 100.4,
-    "apr_plus": 124.7,
+    "apr_plus": 124.4,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 2.429,
+      "matches": 3,
+      "rank_weight": 17,
+      "rank_overall": 193,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29672390132",
+      "opponent_rank": 62,
+      "opponent_name": "Anthony D`Alesio",
+      "method": "Fall 2:53"
+    },
+    "worst_loss": {
+      "opponent_id": "29681837132",
+      "opponent_rank": 12,
+      "opponent_name": "Edmond Ruth",
+      "method": "Dec 11-7"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-09",
       "opponent_id": "29672390132",
+      "opponent_career_id": null,
       "opponent_name": "Anthony D`Alesio",
       "opponent_team": "LIU",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 73,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 62,
       "weight_class": "184",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:53",
-      "event": "vs. LIU"
+      "event": "vs. LIU",
+      "mv_impact": 6.52
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29681837132",
+      "opponent_career_id": null,
       "opponent_name": "Edmond Ruth",
       "opponent_team": "Illinois",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 10,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 12,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "11-7",
       "duration": "7:00",
-      "event": "vs. Illinois"
+      "event": "vs. Illinois",
+      "mv_impact": -1.91
     },
     {
       "date": "2024-11-01",
       "opponent_id": "29679146132",
+      "opponent_career_id": null,
       "opponent_name": "Shay Addison",
       "opponent_team": "Arizona State",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 27,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 101,
       "weight_class": "184",
       "result": "W",
       "method": "DEC",
       "score": "10-4",
       "duration": "7:00",
-      "event": "Maroon and Gold"
+      "event": "Maroon and Gold",
+      "mv_impact": 2.68
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34943756132",
+      "team": "Arizona State",
+      "team_slug": "arizona_state",
+      "weight_class": 184,
+      "grade": "Senior",
+      "current_rank": 116,
+      "record": "4-6"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29679171132",
+      "team": "Arizona State",
+      "team_slug": "arizona_state",
+      "weight_class": 184,
+      "grade": "Junior",
+      "current_rank": 82,
+      "record": "2-1"
+    }
+  ]
 }

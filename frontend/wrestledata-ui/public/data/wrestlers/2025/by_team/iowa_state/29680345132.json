@@ -3,15 +3,20 @@
   "name": "Caden Schmidt",
   "team": "Iowa State",
   "team_slug": "iowa_state",
-  "team_rank": 17,
+  "team_rank": 26,
   "weight_class": 174,
+  "grade": "Sr.",
+  "hometown": "Norwalk, Iowa",
+  "high_school": "Norwalk",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fisuni.sidearmsports.com%2Fimages%2F2024%2F9%2F19%2F_0008_Schmidt__Carter_24-25.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 225,
   "record": {
     "overall": "0-3",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "0-3",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 2.5,
@@ -24,62 +29,112 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.216,
+      "matches": 3,
+      "rank_weight": 180,
+      "rank_overall": 1858,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 3,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29688266132",
+      "opponent_rank": 73,
+      "opponent_name": "Riley Davis",
+      "method": "MD 11-3"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-22",
       "opponent_id": "29678003132",
+      "opponent_career_id": null,
       "opponent_name": "Keegan O`Toole",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 3,
       "weight_class": "174",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "6:24",
-      "event": "vs. Missouri"
+      "event": "vs. Missouri",
+      "mv_impact": -2.67
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29681845132",
+      "opponent_career_id": null,
       "opponent_name": "Chris Moore",
       "opponent_team": "Illinois",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 10,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 71,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -2.73
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29688266132",
+      "opponent_career_id": null,
       "opponent_name": "Riley Davis",
       "opponent_team": "Wyoming",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 35,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 73,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "11-3",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -4.25
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29680345132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 174,
+      "grade": "Sr.",
+      "current_rank": 225,
+      "record": "0-3"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24585267132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 174,
+      "grade": "Jr.",
+      "current_rank": 103,
+      "record": "4-5"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20129455132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 165,
+      "grade": "So.",
+      "current_rank": 245,
+      "record": "3-9"
+    }
+  ]
 }

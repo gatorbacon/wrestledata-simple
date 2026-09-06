@@ -3,15 +3,20 @@
   "name": "Bryce Hepner",
   "team": "Ohio State",
   "team_slug": "ohio_state",
-  "team_rank": 20,
+  "team_rank": 5,
   "weight_class": 165,
+  "grade": "R-Sr.",
+  "hometown": "Avon, Ohio",
+  "high_school": "St. Edward",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fohiostatebuckeyes.com%2Fimages%2F2024%2F9%2F17%2FHepner__Bryce_003_Ngfkb.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 35,
   "record": {
     "overall": "4-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "4-1",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "1-1"
   },
   "metrics": {
     "pf7": 7.0,
@@ -19,97 +24,186 @@
     "pd7": 6.0,
     "si_plus": 102.7,
     "df_plus": 115.6,
-    "apr_plus": 128.6,
+    "apr_plus": 128.2,
     "pin_rate": 0.5,
     "bonus_rate": 0.75,
     "majors": 1,
     "techs": 0,
-    "pins": 2
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": 1.764,
+      "matches": 6,
+      "rank_weight": 32,
+      "rank_overall": 318,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29736334132",
+      "opponent_rank": 21,
+      "opponent_name": "Maxx Mayfield",
+      "method": "Dec 4-0"
+    },
+    "worst_loss": {
+      "opponent_id": "29681676132",
+      "opponent_rank": 14,
+      "opponent_name": "Sergio Desiante",
+      "method": "Inj. 0:00"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-14",
       "opponent_id": "29681676132",
+      "opponent_career_id": null,
       "opponent_name": "Sergio Desiante",
       "opponent_team": "Chattanooga",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 51,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 14,
       "weight_class": "174",
       "result": "L",
       "method": "INJ",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Ohio State"
+      "event": "vs. Ohio State",
+      "mv_impact": -3.89
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29734971132",
+      "opponent_career_id": null,
       "opponent_name": "Chandler Amaker",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 45,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 63,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:55",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": 5.91
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29723352132",
+      "opponent_career_id": null,
       "opponent_name": "Brett Smith",
       "opponent_team": "Northern Illinois",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 49,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 229,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:30",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": 4.2
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29736334132",
+      "opponent_career_id": null,
       "opponent_name": "Maxx Mayfield",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 39,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 21,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": "4-0",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": 4.34
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29687523132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Reiniche",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 41,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 74,
       "weight_class": "165",
       "result": "W",
       "method": "MD",
       "score": "10-2",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": 3.92
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34943164132",
+      "team": "North Carolina",
+      "team_slug": "north_carolina",
+      "weight_class": 165,
+      "grade": "Gr.",
+      "current_rank": 8,
+      "record": "19-6"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29676277132",
+      "team": "Ohio State",
+      "team_slug": "ohio_state",
+      "weight_class": 165,
+      "grade": "R-Sr.",
+      "current_rank": 35,
+      "record": "4-1"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24582859132",
+      "team": "Ohio State",
+      "team_slug": "ohio_state",
+      "weight_class": 165,
+      "grade": "R-Jr.",
+      "current_rank": 43,
+      "record": "13-7"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20125695132",
+      "team": "Ohio State",
+      "team_slug": "ohio_state",
+      "weight_class": 165,
+      "grade": "Jr.",
+      "current_rank": 36,
+      "record": "4-0"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16704535132",
+      "team": "Ohio State",
+      "team_slug": "ohio_state",
+      "weight_class": 157,
+      "grade": "Jr.",
+      "current_rank": 46,
+      "record": "9-6"
+    },
+    {
+      "season": 2021,
+      "wrestler_id": "14880855132",
+      "team": "Ohio State",
+      "team_slug": "ohio_state",
+      "weight_class": 157,
+      "grade": "Jr.",
+      "current_rank": 54,
+      "record": "3-1"
+    }
+  ]
 }

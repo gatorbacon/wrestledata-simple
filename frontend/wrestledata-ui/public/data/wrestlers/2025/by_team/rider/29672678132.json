@@ -3,13 +3,18 @@
   "name": "Quinn Collins",
   "team": "Rider",
   "team_slug": "rider",
-  "team_rank": 72,
+  "team_rank": 34,
   "weight_class": 197,
+  "grade": "Jr.",
+  "hometown": "Pipersville, PA",
+  "high_school": "Central Bucks East",
+  "photo_url": "https://gobroncs.com/images/2024/10/17/101124_Wrestling_072_RQyuL.JPG",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 190,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,62 +29,127 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.359,
+      "matches": 3,
+      "rank_weight": 141,
+      "rank_overall": 1641,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29731839132",
+      "opponent_rank": 95,
+      "opponent_name": "Steven Burrell Jr.",
+      "method": "Dec 8-5"
+    },
+    "worst_loss": {
+      "opponent_id": "29673443132",
+      "opponent_rank": 179,
+      "opponent_name": "Javen Jovero",
+      "method": "SV-3 5-2"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-08",
       "opponent_id": "29731839132",
+      "opponent_career_id": null,
       "opponent_name": "Steven Burrell Jr.",
       "opponent_team": "Virginia",
-      "opponent_team_rank": 78,
+      "opponent_team_rank": 42,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 95,
       "weight_class": "197",
       "result": "W",
       "method": "DEC",
       "score": "8-5",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": 2.71
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29680110132",
+      "opponent_career_id": null,
       "opponent_name": "Thomas Godbee",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 177,
       "weight_class": "197",
       "result": "L",
       "method": "SV-3",
       "score": "7-4",
       "duration": "8:15",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -4.57
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29673443132",
+      "opponent_career_id": null,
       "opponent_name": "Javen Jovero",
       "opponent_team": "Columbia",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 52,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 179,
       "weight_class": "197",
       "result": "L",
       "method": "SV-3",
       "score": "5-2",
       "duration": "8:15",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -5.22
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34934830132",
+      "team": "Rider",
+      "team_slug": "rider",
+      "weight_class": 285,
+      "grade": "Sr.",
+      "current_rank": 258,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29672678132",
+      "team": "Rider",
+      "team_slug": "rider",
+      "weight_class": 197,
+      "grade": "Jr.",
+      "current_rank": 190,
+      "record": "1-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584429132",
+      "team": "Rider",
+      "team_slug": "rider",
+      "weight_class": 197,
+      "grade": "So.",
+      "current_rank": 170,
+      "record": "4-4"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20154692132",
+      "team": "Rider",
+      "team_slug": "rider",
+      "weight_class": 184,
+      "grade": "Fr.",
+      "current_rank": 183,
+      "record": "3-6"
+    }
+  ]
 }

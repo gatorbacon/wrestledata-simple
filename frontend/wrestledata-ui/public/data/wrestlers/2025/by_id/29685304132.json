@@ -3,10 +3,15 @@
   "name": "Isaac Hampton",
   "team": "Navy",
   "team_slug": "navy",
-  "team_rank": 66,
+  "team_rank": 28,
   "weight_class": 125,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 144,
+  "current_rank": 171,
   "record": {
     "overall": "3-6",
     "vs_ranked": "3-6",
@@ -24,7 +29,14 @@
     "bonus_rate": 0.333,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.672,
+      "matches": 11,
+      "rank_weight": 150,
+      "rank_overall": 1727,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
@@ -33,13 +45,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29721382132",
-      "opponent_rank": 176,
+      "opponent_rank": 187,
       "opponent_name": "Logan Wadle",
       "method": "Dec 6-2"
     },
     "worst_loss": {
       "opponent_id": "29681760132",
-      "opponent_rank": 168,
+      "opponent_rank": 185,
       "opponent_name": "Tyler Chappell",
       "method": "Dec 9-3"
     }
@@ -48,24 +60,27 @@
     {
       "date": "2024-12-30",
       "opponent_id": "29678023132",
+      "opponent_career_id": null,
       "opponent_name": "Mack Mauger",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 125,
-      "opponent_rank": 48,
+      "opponent_rank": 37,
       "weight_class": "125",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:47",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -5.2
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29682541132",
+      "opponent_career_id": null,
       "opponent_name": "Jay Peace",
       "opponent_team": "American",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 59,
       "opponent_weight": 125,
       "opponent_rank": 55,
       "weight_class": "125",
@@ -73,113 +88,140 @@
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -1.86
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29678508132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler Garvin",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 17,
       "opponent_weight": 125,
-      "opponent_rank": 186,
+      "opponent_rank": 201,
       "weight_class": "125",
       "result": "W",
       "method": "SV-3",
       "score": "4-3",
       "duration": "8:15",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": 0.23
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29672707132",
+      "opponent_career_id": null,
       "opponent_name": "Alex Esposito",
       "opponent_team": "Rider",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 34,
       "opponent_weight": 125,
-      "opponent_rank": 195,
+      "opponent_rank": 216,
       "weight_class": "125",
       "result": "W",
       "method": "TF",
       "score": "17-2",
       "duration": "4:52",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": 1.62
     },
     {
       "date": "2024-12-01",
       "opponent_id": "29721382132",
+      "opponent_career_id": null,
       "opponent_name": "Logan Wadle",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 11,
       "opponent_weight": 125,
-      "opponent_rank": 176,
+      "opponent_rank": 187,
       "weight_class": "125",
       "result": "W",
       "method": "DEC",
       "score": "6-2",
       "duration": "7:00",
-      "event": "Mat Town Open 1"
+      "event": "Mat Town Open 1",
+      "mv_impact": -0.03
     },
     {
       "date": "2024-12-01",
       "opponent_id": "29676704132",
+      "opponent_career_id": null,
       "opponent_name": "Austin Pollard",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 133,
-      "opponent_rank": 79,
+      "opponent_rank": 84,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "8-4",
       "duration": "7:00",
-      "event": "Mat Town Open 1"
+      "event": "Mat Town Open 1",
+      "mv_impact": -3.17
     },
     {
       "date": "2024-12-01",
       "opponent_id": "29681760132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler Chappell",
       "opponent_team": "Pittsburgh",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 21,
       "opponent_weight": 133,
-      "opponent_rank": 168,
+      "opponent_rank": 185,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "9-3",
       "duration": "7:00",
-      "event": "Mat Town Open 1"
+      "event": "Mat Town Open 1",
+      "mv_impact": -4.92
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29672315132",
+      "opponent_career_id": null,
       "opponent_name": "Robert Gardner",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 125,
-      "opponent_rank": 167,
+      "opponent_rank": 166,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -5.45
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29685921132",
+      "opponent_career_id": null,
       "opponent_name": "Christopher Vargo",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 125,
-      "opponent_rank": 70,
+      "opponent_rank": 74,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "5-3",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -2.51
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29685304132",
+      "team": "Navy",
+      "team_slug": "navy",
+      "weight_class": 125,
+      "grade": "",
+      "current_rank": 171,
+      "record": "3-6"
+    }
+  ]
 }

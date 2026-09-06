@@ -3,13 +3,18 @@
   "name": "Caleb Farrar",
   "team": "Utah Valley",
   "team_slug": "utah_valley",
-  "team_rank": 76,
+  "team_rank": 29,
   "weight_class": 165,
+  "grade": "Fr.",
+  "hometown": "Las Vegas, Nev.",
+  "high_school": "Palo Verde HS",
+  "photo_url": "https://gouvu.com/images/2024/10/28/Caleb_Farrar.png",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 249,
   "record": {
     "overall": "0-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,67 +24,97 @@
     "pd7": -10.09,
     "si_plus": 98.2,
     "df_plus": 84.7,
-    "apr_plus": 98.0,
+    "apr_plus": 97.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.299,
+      "matches": 3,
+      "rank_weight": 225,
+      "rank_overall": 2103,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29673254132",
+      "opponent_rank": 172,
+      "opponent_name": "Kilian Schultz",
+      "method": "TF 21-5 5:12"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-23",
       "opponent_id": "29673254132",
+      "opponent_career_id": null,
       "opponent_name": "Kilian Schultz",
       "opponent_team": "Northern Colorado",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 30,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 172,
       "weight_class": "165",
       "result": "L",
       "method": "TF",
       "score": "21-5",
       "duration": "5:12",
-      "event": "Cowboy Shoot Out"
+      "event": "Cowboy Shoot Out",
+      "mv_impact": -6.71
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29688257132",
+      "opponent_career_id": null,
       "opponent_name": "Brett McIntosh",
       "opponent_team": "Wyoming",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 35,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 127,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
-      "event": "Cowboy Shoot Out"
+      "event": "Cowboy Shoot Out",
+      "mv_impact": -3.92
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29688269132",
+      "opponent_career_id": null,
       "opponent_name": "Sloan Swan",
       "opponent_team": "Wyoming",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 35,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 31,
       "weight_class": "165",
       "result": "L",
       "method": "MD",
       "score": "17-7",
       "duration": "7:00",
-      "event": "Cowboy Shoot Out"
+      "event": "Cowboy Shoot Out",
+      "mv_impact": -2.26
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29681169132",
+      "team": "Utah Valley",
+      "team_slug": "utah_valley",
+      "weight_class": 165,
+      "grade": "Fr.",
+      "current_rank": 249,
+      "record": "0-3"
+    }
+  ]
 }

@@ -3,15 +3,20 @@
   "name": "Tristan Lujan",
   "team": "Michigan State",
   "team_slug": "michigan_state",
-  "team_rank": 63,
+  "team_rank": 74,
   "weight_class": 133,
+  "grade": "R-Sr.",
+  "hometown": "Selma, Calif.",
+  "high_school": "Selma",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fmsuspartans.com%2Fimages%2F2024%2F10%2F7%2FWrestling_Cropped_2024-25_Lujan_Tristan_Cropped.jpg&width=100&height=100&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 96,
+  "current_rank": 100,
   "record": {
     "overall": "5-5",
     "vs_ranked": "5-5",
-    "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 5.67,
@@ -24,22 +29,29 @@
     "bonus_rate": 0.4,
     "majors": 0,
     "techs": 1,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.175,
+      "matches": 9,
+      "rank_weight": 142,
+      "rank_overall": 1264,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 5,
     "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "29684079132",
-      "opponent_rank": 97,
+      "opponent_rank": 110,
       "opponent_name": "Spencer Barnhart",
       "method": "Dec 5-3"
     },
     "worst_loss": {
       "opponent_id": "29722988132",
-      "opponent_rank": 173,
+      "opponent_rank": 172,
       "opponent_name": "Santino Sanchez",
       "method": "Dec 4-1"
     }
@@ -48,101 +60,114 @@
     {
       "date": "2025-02-07",
       "opponent_id": "29736348132",
+      "opponent_career_id": null,
       "opponent_name": "Massey Odiotti",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 39,
       "opponent_weight": 133,
-      "opponent_rank": 55,
+      "opponent_rank": 86,
       "weight_class": "133",
       "result": "L",
       "method": "MD",
       "score": "14-5",
       "duration": "7:00",
-      "event": "vs. Northwestern"
+      "event": "vs. Northwestern",
+      "mv_impact": -4.46
     },
     {
       "date": "2025-02-02",
       "opponent_id": "29672309132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Prinkey",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 133,
-      "opponent_rank": 210,
+      "opponent_rank": 239,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "7-0",
       "duration": "7:00",
-      "event": "vs. Michigan State"
+      "event": "vs. Michigan State",
+      "mv_impact": -0.3
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29684079132",
+      "opponent_career_id": null,
       "opponent_name": "Spencer Barnhart",
       "opponent_team": "Pennsylvania",
-      "opponent_team_rank": 24,
+      "opponent_team_rank": 20,
       "opponent_weight": 133,
-      "opponent_rank": 97,
+      "opponent_rank": 110,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "5-3",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": 3.1
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29685330132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler Knox",
       "opponent_team": "Stanford",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 25,
       "opponent_weight": 133,
-      "opponent_rank": 11,
+      "opponent_rank": 10,
       "weight_class": "133",
       "result": "L",
       "method": "MD",
       "score": "9-0",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -1.99
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29736348132",
+      "opponent_career_id": null,
       "opponent_name": "Massey Odiotti",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 39,
       "opponent_weight": 133,
-      "opponent_rank": 55,
+      "opponent_rank": 86,
       "weight_class": "133",
       "result": "L",
       "method": "MD",
       "score": "14-1",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -4.46
     },
     {
       "date": "2024-12-15",
       "opponent_id": "29722988132",
+      "opponent_career_id": null,
       "opponent_name": "Santino Sanchez",
       "opponent_team": "CSU Bakersfield",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 22,
       "opponent_weight": 133,
-      "opponent_rank": 173,
+      "opponent_rank": 172,
       "weight_class": "133",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "vs. Michigan State"
+      "event": "vs. Michigan State",
+      "mv_impact": -5.03
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29673465132",
+      "opponent_career_id": null,
       "opponent_name": "Boris Witmer",
       "opponent_team": "Columbia",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 52,
       "opponent_weight": 133,
-      "opponent_rank": 191,
+      "opponent_rank": 184,
       "weight_class": "133",
       "result": "W",
       "method": "MFF",
@@ -153,48 +178,106 @@
     {
       "date": "2024-11-24",
       "opponent_id": "29678066132",
+      "opponent_career_id": null,
       "opponent_name": "Takeo Davis",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 133,
-      "opponent_rank": 43,
+      "opponent_rank": 24,
       "weight_class": "133",
       "result": "L",
       "method": "DEC",
       "score": "11-4",
       "duration": "7:00",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": -1.24
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29672403132",
+      "opponent_career_id": null,
       "opponent_name": "Jared Chuquilin",
       "opponent_team": "LIU",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 73,
       "opponent_weight": 133,
-      "opponent_rank": 212,
+      "opponent_rank": 228,
       "weight_class": "133",
       "result": "W",
       "method": "TF",
       "score": "16-0",
       "duration": "5:00",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": 1.57
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29686077132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Brugh",
       "opponent_team": "Ohio",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 46,
       "opponent_weight": 133,
-      "opponent_rank": 238,
+      "opponent_rank": 240,
       "weight_class": "133",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:41",
-      "event": "vs. Ohio"
+      "event": "vs. Ohio",
+      "mv_impact": 2.23
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29672272132",
+      "team": "Michigan State",
+      "team_slug": "michigan_state",
+      "weight_class": 133,
+      "grade": "R-Sr.",
+      "current_rank": 100,
+      "record": "5-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24586472132",
+      "team": "Michigan State",
+      "team_slug": "michigan_state",
+      "weight_class": 125,
+      "grade": "Sr.",
+      "current_rank": 52,
+      "record": "16-17"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20130933132",
+      "team": "Michigan State",
+      "team_slug": "michigan_state",
+      "weight_class": 125,
+      "grade": "Jr.",
+      "current_rank": 43,
+      "record": "14-11"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16697547132",
+      "team": "Michigan State",
+      "team_slug": "michigan_state",
+      "weight_class": 125,
+      "grade": "So.",
+      "current_rank": 52,
+      "record": "12-13"
+    },
+    {
+      "season": 2021,
+      "wrestler_id": "14866503132",
+      "team": "Michigan State",
+      "team_slug": "michigan_state",
+      "weight_class": 125,
+      "grade": "Fr.",
+      "current_rank": 64,
+      "record": "2-2"
+    }
+  ]
 }

@@ -3,13 +3,18 @@
   "name": "Tristan Cotto",
   "team": "Gardner-Webb",
   "team_slug": "gardnerwebb",
-  "team_rank": 56,
+  "team_rank": 53,
   "weight_class": 141,
+  "grade": "Fr.",
+  "hometown": "Castle Haynes, N.C.",
+  "high_school": "E.A. Laney HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgwu.sidearmsports.com%2Fimages%2F2024%2F10%2F16%2FCotto_ytezW.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 283,
   "record": {
     "overall": "1-7",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-7",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,137 +29,182 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.588,
+      "matches": 8,
+      "rank_weight": 225,
+      "rank_overall": 2167,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29681734132",
+      "opponent_rank": 251,
+      "opponent_name": "Carter Nix",
+      "method": "TF 17-2 3:44"
+    },
+    "worst_loss": {
+      "opponent_id": "29681734132",
+      "opponent_rank": 251,
+      "opponent_name": "Carter Nix",
+      "method": "TF 16-1 6:06"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-23",
       "opponent_id": "29677493132",
+      "opponent_career_id": null,
       "opponent_name": "Blake Reihner Reihner",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 87,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "7:00",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": -4.69
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29677494132",
+      "opponent_career_id": null,
       "opponent_name": "Tyson Sherlock",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 61,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:21",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": -5.13
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29727540132",
+      "opponent_career_id": null,
       "opponent_name": "Jarvis Little",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 38,
       "weight_class": "141",
       "result": "L",
       "method": "MD",
       "score": "12-1",
       "duration": "7:00",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -2.63
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29783318132",
+      "opponent_career_id": null,
       "opponent_name": "Ethan Lipsey",
       "opponent_team": "Chattanooga",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 51,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 190,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "16-0",
       "duration": "5:23",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -7.18
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29727174132",
+      "opponent_career_id": null,
       "opponent_name": "Aldo Hernandez",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 82,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "2:58",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -4.84
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29672129132",
+      "opponent_career_id": null,
       "opponent_name": "Jack Bastarrika",
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 6,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 203,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "17-1",
       "duration": "5:22",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -6.95
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29681734132",
+      "opponent_career_id": null,
       "opponent_name": "Carter Nix",
       "opponent_team": "Morgan State",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 75,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 251,
       "weight_class": "141",
       "result": "W",
       "method": "TF",
       "score": "17-2",
       "duration": "3:44",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": 2.36
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29681734132",
+      "opponent_career_id": null,
       "opponent_name": "Carter Nix",
       "opponent_team": "Morgan State",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 75,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 251,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "16-1",
       "duration": "6:06",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -7.64
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29678134132",
+      "team": "Gardner-Webb",
+      "team_slug": "gardnerwebb",
+      "weight_class": 141,
+      "grade": "Fr.",
+      "current_rank": 283,
+      "record": "1-7"
+    }
+  ]
 }

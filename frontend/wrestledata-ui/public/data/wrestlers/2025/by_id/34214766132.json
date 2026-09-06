@@ -3,13 +3,18 @@
   "name": "Sincere Bailey",
   "team": "Morgan State",
   "team_slug": "morgan_state",
-  "team_rank": 65,
+  "team_rank": 75,
   "weight_class": 149,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 127,
   "record": {
     "overall": "1-0",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,37 +24,73 @@
     "pd7": 10.0,
     "si_plus": 108.8,
     "df_plus": 113.7,
-    "apr_plus": 81.5,
+    "apr_plus": 81.7,
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.018,
+      "matches": 2,
+      "rank_weight": 58,
+      "rank_overall": 512,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "29672201132",
+      "opponent_rank": 305,
+      "opponent_name": "Vincent Milazzo",
+      "method": "MD 11-1"
+    },
     "worst_loss": null
   },
   "match_list": [
     {
       "date": "2025-02-16",
       "opponent_id": "29672201132",
+      "opponent_career_id": null,
       "opponent_name": "Vincent Milazzo",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 78,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 305,
       "weight_class": "149",
       "result": "W",
       "method": "MD",
       "score": "11-1",
       "duration": "7:00",
-      "event": "vs. Sacred Heart"
+      "event": "vs. Sacred Heart",
+      "mv_impact": 1.02
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34977463132",
+      "team": "Morgan State",
+      "team_slug": "morgan_state",
+      "weight_class": 157,
+      "grade": "Sr.",
+      "current_rank": 254,
+      "record": "0-3"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "34214766132",
+      "team": "Morgan State",
+      "team_slug": "morgan_state",
+      "weight_class": 149,
+      "grade": "",
+      "current_rank": 127,
+      "record": "1-0"
+    }
+  ]
 }

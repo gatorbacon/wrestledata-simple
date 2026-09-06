@@ -3,15 +3,20 @@
   "name": "Josh LaBarbera",
   "team": "Pennsylvania",
   "team_slug": "pennsylvania",
-  "team_rank": 24,
+  "team_rank": 20,
   "weight_class": 197,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 180,
   "record": {
     "overall": "3-7",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "3-7",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 3.08,
@@ -24,55 +29,77 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.199,
+      "matches": 10,
+      "rank_weight": 137,
+      "rank_overall": 1591,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 7,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29673098132",
+      "opponent_rank": 202,
+      "opponent_name": "RJ Moore",
+      "method": "Dec 2-0"
+    },
+    "worst_loss": {
+      "opponent_id": "29685876132",
+      "opponent_rank": 193,
+      "opponent_name": "Nicholas Lodato",
+      "method": "Dec 2-0"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-13",
       "opponent_id": "29721367132",
+      "opponent_career_id": null,
       "opponent_name": "Michael Beard",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 11,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 6,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "22-5",
       "duration": "7:00",
-      "event": "vs. Pennsylvania"
+      "event": "vs. Pennsylvania",
+      "mv_impact": -2.02
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29734992132",
+      "opponent_career_id": null,
       "opponent_name": "Luke Cochran",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 45,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 35,
       "weight_class": "197",
       "result": "L",
       "method": "MD",
       "score": "18-6",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -3.09
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29681397132",
+      "opponent_career_id": null,
       "opponent_name": "PJ Casale",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 31,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 97,
       "weight_class": "197",
       "result": "L",
       "method": "MFF",
@@ -83,108 +110,134 @@
     {
       "date": "2024-12-08",
       "opponent_id": "29681730132",
+      "opponent_career_id": null,
       "opponent_name": "Cameron Johnson",
       "opponent_team": "Morgan State",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 75,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 238,
       "weight_class": "197",
       "result": "W",
       "method": "DEC",
       "score": "8-1",
       "duration": "7:00",
-      "event": "vs. Pennsylvania"
+      "event": "vs. Pennsylvania",
+      "mv_impact": -0.31
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29734992132",
+      "opponent_career_id": null,
       "opponent_name": "Luke Cochran",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 45,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 35,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "7:00",
-      "event": "2024 PRTC Keystone Classic"
+      "event": "2024 PRTC Keystone Classic",
+      "mv_impact": -4.09
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29685876132",
+      "opponent_career_id": null,
       "opponent_name": "Nicholas Lodato",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 193,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
-      "event": "2024 PRTC Keystone Classic"
+      "event": "2024 PRTC Keystone Classic",
+      "mv_impact": -4.96
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29673250132",
+      "opponent_career_id": null,
       "opponent_name": "Andrew Donahue",
       "opponent_team": "Northern Colorado",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 30,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 85,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "vs. Pennsylvania"
+      "event": "vs. Pennsylvania",
+      "mv_impact": -3.77
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29673098132",
+      "opponent_career_id": null,
       "opponent_name": "RJ Moore",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 202,
       "weight_class": "197",
       "result": "W",
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 0.53
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29672383132",
+      "opponent_career_id": null,
       "opponent_name": "Gavin Claro",
       "opponent_team": "LIU",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 73,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 108,
       "weight_class": "197",
       "result": "L",
       "method": "TB-2",
       "score": "2-1",
       "duration": "10:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -3.92
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29675195132",
+      "opponent_career_id": null,
       "opponent_name": "Rob Attwood",
       "opponent_team": "VMI",
-      "opponent_team_rank": 77,
+      "opponent_team_rank": 79,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 221,
       "weight_class": "197",
       "result": "W",
       "method": "DEC",
       "score": "3-0",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -0.05
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29684063132",
+      "team": "Pennsylvania",
+      "team_slug": "pennsylvania",
+      "weight_class": 197,
+      "grade": "",
+      "current_rank": 180,
+      "record": "3-7"
+    }
+  ]
 }

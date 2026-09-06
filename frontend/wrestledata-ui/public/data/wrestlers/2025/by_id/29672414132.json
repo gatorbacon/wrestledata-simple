@@ -3,13 +3,18 @@
   "name": "Simon Kruse",
   "team": "Wisconsin",
   "team_slug": "wisconsin",
-  "team_rank": 8,
+  "team_rank": 33,
   "weight_class": 141,
+  "grade": "R-Fr.",
+  "hometown": "St. Clair, Minn.",
+  "high_school": "St. Clair/Mankato Loyola",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fuwbadgers.com%2Fimages%2F2024%2F8%2F8%2F240729-Wstl-Simon_Kruse088_8CtQr.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 214,
   "record": {
     "overall": "0-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,47 +29,95 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.081,
+      "matches": 2,
+      "rank_weight": 233,
+      "rank_overall": 2251,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29767466132",
+      "opponent_rank": 198,
+      "opponent_name": "Giosue Hickman",
+      "method": "MD 13-3"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-09",
       "opponent_id": "29767466132",
+      "opponent_career_id": null,
       "opponent_name": "Giosue Hickman",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 39,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 198,
       "weight_class": "141",
       "result": "L",
       "method": "MD",
       "score": "13-3",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": -5.59
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29682563132",
+      "opponent_career_id": null,
       "opponent_name": "Cole Solomey",
       "opponent_team": "Purdue",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 12,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 174,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "9-3",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": -4.58
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34944669132",
+      "team": "Wisconsin",
+      "team_slug": "wisconsin",
+      "weight_class": 149,
+      "grade": "R-So.",
+      "current_rank": 110,
+      "record": "0-4"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29672414132",
+      "team": "Wisconsin",
+      "team_slug": "wisconsin",
+      "weight_class": 141,
+      "grade": "R-Fr.",
+      "current_rank": 214,
+      "record": "0-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24591317132",
+      "team": "Wisconsin",
+      "team_slug": "wisconsin",
+      "weight_class": 133,
+      "grade": "Fr.",
+      "current_rank": 164,
+      "record": "0-1"
+    }
+  ]
 }

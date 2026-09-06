@@ -3,14 +3,19 @@
   "name": "Richard Murillo",
   "team": "California Baptist",
   "team_slug": "california_baptist",
-  "team_rank": 44,
+  "team_rank": 64,
   "weight_class": 133,
+  "grade": "Fr.",
+  "hometown": "Moreno Valley, CA",
+  "high_school": "Canyon Springs HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fcalbaptist.sidearmsports.com%2Fimages%2F2024%2F9%2F10%2FRichard_Murillo.jpg&width=603&height=803&type=webp",
+  "previous_school": "Previous Team: Canyon Springs HS",
   "year": 2025,
-  "current_rank": 61,
+  "current_rank": 42,
   "record": {
     "overall": "6-1",
-    "vs_ranked": "6-0",
-    "vs_top10": "0-0",
+    "vs_ranked": "6-1",
+    "vs_top10": "1-0",
     "vs_top25": "1-0"
   },
   "metrics": {
@@ -19,132 +24,180 @@
     "pd7": 5.4,
     "si_plus": 110.7,
     "df_plus": 107.5,
-    "apr_plus": 126.5,
+    "apr_plus": 127.3,
     "pin_rate": 0.333,
     "bonus_rate": 0.667,
     "majors": 2,
     "techs": 0,
-    "pins": 2
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": 3.064,
+      "matches": 9,
+      "rank_weight": 8,
+      "rank_overall": 110,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 6,
-    "ranked_losses": 0,
-    "top10_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 1,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29684788132",
-      "opponent_rank": 12,
+      "opponent_rank": 10,
       "opponent_name": "Jett Strickenberger",
       "method": "Fall 7:41"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29681148132",
+      "opponent_rank": 26,
+      "opponent_name": "Haiden Drury",
+      "method": "Dec 3-1"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-04",
       "opponent_id": "29681148132",
+      "opponent_career_id": null,
       "opponent_name": "Haiden Drury",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 26,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "3-1",
       "duration": "7:00",
-      "event": "vs. Utah Valley"
+      "event": "vs. Utah Valley",
+      "mv_impact": -1.85
     },
     {
       "date": "2024-12-22",
       "opponent_id": "29681166132",
+      "opponent_career_id": null,
       "opponent_name": "Jake Castegneto",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 133,
-      "opponent_rank": 95,
+      "opponent_rank": 101,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "10-6",
       "duration": "7:00",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": 2.72
     },
     {
       "date": "2024-12-15",
       "opponent_id": "29684788132",
+      "opponent_career_id": null,
       "opponent_name": "Jett Strickenberger",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 125,
-      "opponent_rank": 12,
+      "opponent_rank": 10,
       "weight_class": "133",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "7:41",
-      "event": "vs. West Virginia"
+      "event": "vs. West Virginia",
+      "mv_impact": 7.56
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29687380132",
+      "opponent_career_id": null,
       "opponent_name": "Carter Schmidt",
       "opponent_team": "Oklahoma",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 40,
       "opponent_weight": 133,
-      "opponent_rank": 152,
+      "opponent_rank": 164,
       "weight_class": "133",
       "result": "W",
       "method": "MD",
       "score": "22-9",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": 2.55
     },
     {
       "date": "2024-11-22",
       "opponent_id": "29721848132",
+      "opponent_career_id": null,
       "opponent_name": "Gavin Caprella",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 133,
-      "opponent_rank": 67,
+      "opponent_rank": 97,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "7-5",
       "duration": "7:00",
-      "event": "vs. California Baptist"
+      "event": "vs. California Baptist",
+      "mv_impact": 2.92
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29686902132",
+      "opponent_career_id": null,
       "opponent_name": "Jack Kazalas",
       "opponent_team": "Binghamton",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 32,
       "opponent_weight": 133,
-      "opponent_rank": 187,
+      "opponent_rank": 197,
       "weight_class": "133",
       "result": "W",
       "method": "MD",
       "score": "11-1",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 1.42
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29679396132",
+      "opponent_career_id": null,
       "opponent_name": "Hunter Gould",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 133,
-      "opponent_rank": 72,
+      "opponent_rank": 66,
       "weight_class": "133",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:45",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 6.55
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34934022132",
+      "team": "California Baptist",
+      "team_slug": "california_baptist",
+      "weight_class": 133,
+      "grade": "R-Fr.",
+      "current_rank": 66,
+      "record": "10-9"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29684517132",
+      "team": "California Baptist",
+      "team_slug": "california_baptist",
+      "weight_class": 133,
+      "grade": "Fr.",
+      "current_rank": 42,
+      "record": "6-1"
+    }
+  ]
 }

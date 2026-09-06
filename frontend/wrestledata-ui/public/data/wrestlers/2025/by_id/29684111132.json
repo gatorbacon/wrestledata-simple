@@ -3,13 +3,18 @@
   "name": "Reed Fullmer",
   "team": "Pennsylvania",
   "team_slug": "pennsylvania",
-  "team_rank": 24,
+  "team_rank": 20,
   "weight_class": 165,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 164,
   "record": {
     "overall": "3-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,122 +29,175 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 2,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.49,
+      "matches": 8,
+      "rank_weight": 137,
+      "rank_overall": 1361,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29721384132",
+      "opponent_rank": 89,
+      "opponent_name": "Richie Grungo",
+      "method": "MD 8-0"
+    },
+    "worst_loss": {
+      "opponent_id": "29685318132",
+      "opponent_rank": 184,
+      "opponent_name": "Zach Hanson",
+      "method": "Dec 10-3"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-30",
       "opponent_id": "29687827132",
+      "opponent_career_id": null,
       "opponent_name": "Cash Stewart",
       "opponent_team": "Cal Poly",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 19,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 164,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "12-5",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -4.33
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29685318132",
+      "opponent_career_id": null,
       "opponent_name": "Zach Hanson",
       "opponent_team": "Stanford",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 25,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 184,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "10-3",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -4.83
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29672122132",
+      "opponent_career_id": null,
       "opponent_name": "Kylan Montgomery",
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 6,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 131,
       "weight_class": "165",
       "result": "L",
       "method": "SV-3",
       "score": "4-1",
       "duration": "8:15",
-      "event": "2024 PRTC Keystone Classic"
+      "event": "2024 PRTC Keystone Classic",
+      "mv_impact": -3.74
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29672119132",
+      "opponent_career_id": null,
       "opponent_name": "Jackson Spires",
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 6,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 121,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "2024 PRTC Keystone Classic"
+      "event": "2024 PRTC Keystone Classic",
+      "mv_impact": -3.45
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29672384132",
+      "opponent_career_id": null,
       "opponent_name": "James Johnston",
       "opponent_team": "LIU",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 73,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 244,
       "weight_class": "165",
       "result": "W",
       "method": "TF",
       "score": "17-2",
       "duration": "4:24",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 2.66
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29721384132",
+      "opponent_career_id": null,
       "opponent_name": "Richie Grungo",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 11,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 89,
       "weight_class": "165",
       "result": "W",
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 4.28
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29684829132",
+      "opponent_career_id": null,
       "opponent_name": "Anthony Mann",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 78,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 268,
       "weight_class": "165",
       "result": "W",
       "method": "TF",
       "score": "16-1",
       "duration": "3:40",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 1.82
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34935708132",
+      "team": "Penn",
+      "team_slug": "penn",
+      "weight_class": 165,
+      "grade": "So.",
+      "current_rank": 155,
+      "record": "1-1"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29684111132",
+      "team": "Pennsylvania",
+      "team_slug": "pennsylvania",
+      "weight_class": 165,
+      "grade": "",
+      "current_rank": 164,
+      "record": "3-4"
+    }
+  ]
 }

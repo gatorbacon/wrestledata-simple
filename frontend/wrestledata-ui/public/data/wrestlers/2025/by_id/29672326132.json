@@ -3,15 +3,20 @@
   "name": "David McClelland",
   "team": "Clarion",
   "team_slug": "clarion",
-  "team_rank": 47,
+  "team_rank": 65,
   "weight_class": 149,
+  "grade": "R-Fr.",
+  "hometown": "Columbus, Ohio",
+  "high_school": "DeSales",
+  "photo_url": "https://clariongoldeneagles.com/images/2024/11/7/_McClellandDavid.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 270,
   "record": {
     "overall": "2-9",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-9",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 6.02,
@@ -24,182 +29,253 @@
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.926,
+      "matches": 18,
+      "rank_weight": 232,
+      "rank_overall": 2027,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 9,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29685918132",
+      "opponent_rank": 235,
+      "opponent_name": "Cheaney Schoeff",
+      "method": "Dec 15-11"
+    },
+    "worst_loss": {
+      "opponent_id": "29685073132",
+      "opponent_rank": 225,
+      "opponent_name": "Ethan Mitchell",
+      "method": "Fall 1:35"
+    }
   },
   "match_list": [
     {
       "date": "2025-03-08",
       "opponent_id": "29735116132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Shrader",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 45,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 30,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "5:51",
-      "event": "2025 MAC Wrestling Championships"
+      "event": "2025 MAC Wrestling Championships",
+      "mv_impact": -3.55
     },
     {
       "date": "2025-03-08",
       "opponent_id": "29685917132",
+      "opponent_career_id": null,
       "opponent_name": "Ryan Michaels",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 73,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "18-3",
       "duration": "4:43",
-      "event": "2025 MAC Wrestling Championships"
+      "event": "2025 MAC Wrestling Championships",
+      "mv_impact": -4.79
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29680116132",
+      "opponent_career_id": null,
       "opponent_name": "Rich Treanor",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 34,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:23",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -4.71
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29678138132",
+      "opponent_career_id": null,
       "opponent_name": "Ty Edwards",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 102,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:52",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -6.22
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29686572132",
+      "opponent_career_id": null,
       "opponent_name": "Ian Oswalt",
       "opponent_team": "Brown",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 62,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 49,
       "weight_class": "141",
       "result": "L",
       "method": "MD",
       "score": "12-1",
       "duration": "7:00",
-      "event": "Kent State Open"
+      "event": "Kent State Open",
+      "mv_impact": -2.65
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29685073132",
+      "opponent_career_id": null,
       "opponent_name": "Ethan Mitchell",
       "opponent_team": "Cleveland State",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 56,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 225,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:35",
-      "event": "Kent State Open"
+      "event": "Kent State Open",
+      "mv_impact": -8.01
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29672394132",
+      "opponent_career_id": null,
       "opponent_name": "Bo Dijulius",
       "opponent_team": "LIU",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 73,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 240,
       "weight_class": "141",
       "result": "W",
       "method": "MD",
       "score": "10-0",
       "duration": "7:00",
-      "event": "Kent State Open"
+      "event": "Kent State Open",
+      "mv_impact": 1.88
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29685918132",
+      "opponent_career_id": null,
       "opponent_name": "Cheaney Schoeff",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 235,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "15-11",
       "duration": "7:00",
-      "event": "Kent State Open"
+      "event": "Kent State Open",
+      "mv_impact": 0.4
     },
     {
       "date": "2024-12-04",
       "opponent_id": "29722726132",
+      "opponent_career_id": null,
       "opponent_name": "Jordan Soriano",
       "opponent_team": "Drexel",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 67,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 25,
       "weight_class": "141",
       "result": "L",
       "method": "MD",
       "score": "17-5",
       "duration": "7:00",
-      "event": "vs. Drexel"
+      "event": "vs. Drexel",
+      "mv_impact": -2.62
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29679941132",
+      "opponent_career_id": null,
       "opponent_name": "Zac Cowan",
       "opponent_team": "Bellarmine",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 60,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 113,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "21-6",
       "duration": "6:42",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -5.44
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29686991132",
+      "opponent_career_id": null,
       "opponent_name": "Keegan Knapp",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 200,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "17-1",
       "duration": "4:11",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -6.3
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34938631132",
+      "team": "Clarion",
+      "team_slug": "clarion",
+      "weight_class": 149,
+      "grade": "R-So.",
+      "current_rank": 195,
+      "record": "3-6"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29672326132",
+      "team": "Clarion",
+      "team_slug": "clarion",
+      "weight_class": 149,
+      "grade": "R-Fr.",
+      "current_rank": 270,
+      "record": "2-9"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24579635132",
+      "team": "Clarion",
+      "team_slug": "clarion",
+      "weight_class": 141,
+      "grade": "Fr.",
+      "current_rank": 122,
+      "record": "3-4"
+    }
+  ]
 }

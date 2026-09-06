@@ -3,10 +3,15 @@
   "name": "Blake Gioimo",
   "team": "Iowa State",
   "team_slug": "iowa_state",
-  "team_rank": 17,
+  "team_rank": 26,
   "weight_class": 133,
+  "grade": "R-Fr.",
+  "hometown": "Ely, Iowa",
+  "high_school": "Cedar Rapids Prairie",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fisuni.sidearmsports.com%2Fimages%2F2024%2F9%2F19%2F_0025_Gioimo__Blake_24-25.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 132,
+  "current_rank": 123,
   "record": {
     "overall": "2-1",
     "vs_ranked": "2-1",
@@ -24,7 +29,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.416,
+      "matches": 3,
+      "rank_weight": 76,
+      "rank_overall": 693,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
@@ -33,13 +45,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29678757132",
-      "opponent_rank": 54,
+      "opponent_rank": 48,
       "opponent_name": "JJ McComas",
       "method": "SV-1 4-1"
     },
     "worst_loss": {
       "opponent_id": "29673854132",
-      "opponent_rank": 33,
+      "opponent_rank": 45,
       "opponent_name": "Omar Ayoub",
       "method": "TF 17-1 5:26"
     }
@@ -48,48 +60,76 @@
     {
       "date": "2025-01-19",
       "opponent_id": "29678757132",
+      "opponent_career_id": null,
       "opponent_name": "JJ McComas",
       "opponent_team": "Oklahoma State",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 4,
       "opponent_weight": 133,
-      "opponent_rank": 54,
+      "opponent_rank": 48,
       "weight_class": "133",
       "result": "W",
       "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": 3.78
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29687380132",
+      "opponent_career_id": null,
       "opponent_name": "Carter Schmidt",
       "opponent_team": "Oklahoma",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 40,
       "opponent_weight": 133,
-      "opponent_rank": 152,
+      "opponent_rank": 164,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "10-9",
       "duration": "7:00",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": 1.55
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29673854132",
+      "opponent_career_id": null,
       "opponent_name": "Omar Ayoub",
       "opponent_team": "Nebraska",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 2,
       "opponent_weight": 133,
-      "opponent_rank": 33,
+      "opponent_rank": 45,
       "weight_class": "133",
       "result": "L",
       "method": "TF",
       "score": "17-1",
       "duration": "5:26",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": -4.08
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29680365132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 133,
+      "grade": "R-Fr.",
+      "current_rank": 123,
+      "record": "2-1"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24586505132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 125,
+      "grade": "Fr.",
+      "current_rank": 118,
+      "record": "1-6"
+    }
+  ]
 }

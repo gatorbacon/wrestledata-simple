@@ -3,13 +3,18 @@
   "name": "Liam Finn",
   "team": "Cornell",
   "team_slug": "cornell",
-  "team_rank": 50,
+  "team_rank": 9,
   "weight_class": 184,
+  "grade": "So.",
+  "hometown": "Nashua, N.H.",
+  "high_school": "Northfield Mount Hermon School",
+  "photo_url": "https://cornellbigred.com/images/2023/8/23/Liam_Finn_23_cropped.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 230,
   "record": {
     "overall": "0-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,45 +24,60 @@
     "pd7": 0.0,
     "si_plus": 102.6,
     "df_plus": 103.3,
-    "apr_plus": 97.4,
+    "apr_plus": 97.5,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -7.303,
+      "matches": 1,
+      "rank_weight": 213,
+      "rank_overall": 2402,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29672204132",
+      "opponent_rank": 240,
+      "opponent_name": "Owen Ayotte",
+      "method": "M. For."
+    }
   },
   "match_list": [
     {
       "date": "2024-11-24",
       "opponent_id": "29672308132",
+      "opponent_career_id": null,
       "opponent_name": "Ayden Miller",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 174,
       "weight_class": "184",
       "result": "L",
       "method": "INJ",
       "score": null,
       "duration": "4:21",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": -7.3
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29672314132",
+      "opponent_career_id": null,
       "opponent_name": "Patrick Cutchember",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 114,
       "weight_class": "184",
       "result": "L",
       "method": "MFF",
@@ -68,11 +88,12 @@
     {
       "date": "2024-11-24",
       "opponent_id": "29680450132",
+      "opponent_career_id": null,
       "opponent_name": "Justin Mayes",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 72,
       "weight_class": "184",
       "result": "L",
       "method": "MFF",
@@ -83,11 +104,12 @@
     {
       "date": "2024-11-24",
       "opponent_id": "29672204132",
+      "opponent_career_id": null,
       "opponent_name": "Owen Ayotte",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 78,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 240,
       "weight_class": "184",
       "result": "L",
       "method": "MFF",
@@ -96,5 +118,27 @@
       "event": "Big Red Invitational"
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29680470132",
+      "team": "Cornell",
+      "team_slug": "cornell",
+      "weight_class": 184,
+      "grade": "So.",
+      "current_rank": 230,
+      "record": "0-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24609399132",
+      "team": "Cornell",
+      "team_slug": "cornell",
+      "weight_class": 174,
+      "grade": "Fr.",
+      "current_rank": 237,
+      "record": "1-3"
+    }
+  ]
 }

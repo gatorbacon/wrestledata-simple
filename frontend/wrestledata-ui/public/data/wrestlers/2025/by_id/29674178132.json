@@ -3,10 +3,15 @@
   "name": "Marcus Tyson",
   "team": "NC State",
   "team_slug": "nc_state",
-  "team_rank": 3,
+  "team_rank": 14,
   "weight_class": 125,
+  "grade": "R-Fr.",
+  "hometown": "Grantsboro, N.C.",
+  "high_school": "Pamlico County High School",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgopack.com%2Fimages%2F2024%2F8%2F27%2FMarcusTysonHS.png&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 156,
+  "current_rank": 169,
   "record": {
     "overall": "2-4",
     "vs_ranked": "2-4",
@@ -24,7 +29,14 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -2.507,
+      "matches": 6,
+      "rank_weight": 143,
+      "rank_overall": 1677,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
@@ -33,13 +45,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29689108132",
-      "opponent_rank": 149,
+      "opponent_rank": 164,
       "opponent_name": "Riley Rowan",
       "method": "Fall 1:31"
     },
     "worst_loss": {
       "opponent_id": "29687022132",
-      "opponent_rank": 152,
+      "opponent_rank": 156,
       "opponent_name": "Logan Dean",
       "method": "TF 23-3 7:00"
     }
@@ -48,93 +60,127 @@
     {
       "date": "2025-02-23",
       "opponent_id": "29689108132",
+      "opponent_career_id": null,
       "opponent_name": "Riley Rowan",
       "opponent_team": "Duke",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 68,
       "opponent_weight": 125,
-      "opponent_rank": 149,
+      "opponent_rank": 164,
       "weight_class": "125",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:31",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": 3.72
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29674075132",
+      "opponent_career_id": null,
       "opponent_name": "Christian Gill",
       "opponent_team": "NC State",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 14,
       "opponent_weight": 125,
-      "opponent_rank": 37,
+      "opponent_rank": 29,
       "weight_class": "125",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:34",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": -4.23
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29727265132",
+      "opponent_career_id": null,
       "opponent_name": "bradley yokum",
       "opponent_team": "NC State",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 14,
       "opponent_weight": 125,
-      "opponent_rank": 76,
+      "opponent_rank": 130,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": -3.96
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29678071132",
+      "opponent_career_id": null,
       "opponent_name": "Ty Porter",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 125,
-      "opponent_rank": 188,
+      "opponent_rank": 215,
       "weight_class": "125",
       "result": "W",
       "method": "TF",
       "score": "17-2",
       "duration": "3:57",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": 0.88
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29687022132",
+      "opponent_career_id": null,
       "opponent_name": "Logan Dean",
       "opponent_team": "Ohio",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 46,
       "opponent_weight": 125,
-      "opponent_rank": 152,
+      "opponent_rank": 156,
       "weight_class": "125",
       "result": "L",
       "method": "TF",
       "score": "23-3",
       "duration": "7:00",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -7.24
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29676076132",
+      "opponent_career_id": null,
       "opponent_name": "Cameron Stinson",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 125,
-      "opponent_rank": 58,
+      "opponent_rank": 64,
       "weight_class": "125",
       "result": "L",
       "method": "TF",
       "score": "20-3",
       "duration": "5:44",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -4.22
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34935704132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 133,
+      "grade": "R-So.",
+      "current_rank": 147,
+      "record": "0-1"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29674178132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 125,
+      "grade": "R-Fr.",
+      "current_rank": 169,
+      "record": "2-4"
+    }
+  ]
 }

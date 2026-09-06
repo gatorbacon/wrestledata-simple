@@ -3,13 +3,18 @@
   "name": "Hunter Janeczko",
   "team": "Ohio",
   "team_slug": "ohio",
-  "team_rank": 69,
+  "team_rank": 46,
   "weight_class": 197,
+  "grade": "R-Fr.",
+  "hometown": "Yorkville, Ill.",
+  "high_school": "Yorkville",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fohiobobcats.com%2Fimages%2F2024%2F10%2F17%2FJaneszcko-2.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 165,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,68 +23,123 @@
     "pa7": 10.8,
     "pd7": -3.82,
     "si_plus": 101.4,
-    "df_plus": 90.3,
-    "apr_plus": 95.3,
+    "df_plus": 90.4,
+    "apr_plus": 95.2,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.682,
+      "matches": 3,
+      "rank_weight": 177,
+      "rank_overall": 1973,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29681759132",
+      "opponent_rank": 222,
+      "opponent_name": "Daniel Gurovich",
+      "method": "SV-3 7-4"
+    },
+    "worst_loss": {
+      "opponent_id": "29676300132",
+      "opponent_rank": 168,
+      "opponent_name": "Cole Robertson",
+      "method": "Dec 17-11"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-07",
       "opponent_id": "29676300132",
+      "opponent_career_id": null,
       "opponent_name": "Cole Robertson",
       "opponent_team": "Ohio State",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 5,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 168,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "17-11",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": -5.09
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29676320132",
+      "opponent_career_id": null,
       "opponent_name": "Cayaen Smith",
       "opponent_team": "Ohio State",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 5,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 160,
       "weight_class": "197",
       "result": "L",
       "method": "MD",
       "score": "12-4",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": -5.58
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29681759132",
+      "opponent_career_id": null,
       "opponent_name": "Daniel Gurovich",
       "opponent_team": "Pittsburgh",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 21,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 222,
       "weight_class": "197",
       "result": "W",
       "method": "SV-3",
       "score": "7-4",
       "duration": "8:15",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": -0.38
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34936218132",
+      "team": "Ohio",
+      "team_slug": "ohio",
+      "weight_class": 285,
+      "grade": "R-So.",
+      "current_rank": 254,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29686091132",
+      "team": "Ohio",
+      "team_slug": "ohio",
+      "weight_class": 197,
+      "grade": "R-Fr.",
+      "current_rank": 165,
+      "record": "1-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24585563132",
+      "team": "Ohio",
+      "team_slug": "ohio",
+      "weight_class": 197,
+      "grade": "Fr.",
+      "current_rank": 106,
+      "record": "2-3"
+    }
+  ]
 }

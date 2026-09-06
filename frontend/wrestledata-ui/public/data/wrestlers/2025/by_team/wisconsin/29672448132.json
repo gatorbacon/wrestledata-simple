@@ -3,15 +3,20 @@
   "name": "Wyatt Ingham",
   "team": "Wisconsin",
   "team_slug": "wisconsin",
-  "team_rank": 8,
+  "team_rank": 33,
   "weight_class": 197,
+  "grade": "Fr.",
+  "hometown": "Amery, Wis.",
+  "high_school": "Amery",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fuwbadgers.com%2Fimages%2F2024%2F8%2F8%2F240729-Wstl-Wyatt_Ingham193_MkOMU.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 79,
   "record": {
     "overall": "3-4",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "3-4",
+    "vs_top10": "0-1",
+    "vs_top25": "1-2"
   },
   "metrics": {
     "pf7": 5.86,
@@ -19,127 +24,180 @@
     "pd7": -5.33,
     "si_plus": 102.1,
     "df_plus": 98.3,
-    "apr_plus": 108.4,
+    "apr_plus": 108.3,
     "pin_rate": 0.333,
     "bonus_rate": 0.333,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -0.003,
+      "matches": 8,
+      "rank_weight": 69,
+      "rank_overall": 837,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29672729132",
+      "opponent_rank": 24,
+      "opponent_name": "Levi Hopkins",
+      "method": "Dec 3-2"
+    },
+    "worst_loss": {
+      "opponent_id": "29684851132",
+      "opponent_rank": 46,
+      "opponent_name": "Rune Lawrence",
+      "method": "MD 17-8"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-21",
       "opponent_id": "29687603132",
+      "opponent_career_id": null,
       "opponent_name": "Wyatt Voelker",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 8,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 10,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "8-1",
       "duration": "7:00",
-      "event": "vs. Wisconsin"
+      "event": "vs. Wisconsin",
+      "mv_impact": -0.78
     },
     {
       "date": "2025-02-14",
       "opponent_id": "29736335132",
+      "opponent_career_id": null,
       "opponent_name": "Evan Bates",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 39,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 16,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "16-1",
       "duration": "6:11",
-      "event": "vs. Wisconsin"
+      "event": "vs. Wisconsin",
+      "mv_impact": -3.65
     },
     {
       "date": "2025-02-09",
       "opponent_id": "29672291132",
+      "opponent_career_id": null,
       "opponent_name": "Remy Cotton",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 54,
       "weight_class": "197",
       "result": "W",
       "method": "DEC",
       "score": "14-12",
       "duration": "7:00",
-      "event": "vs. Wisconsin"
+      "event": "vs. Wisconsin",
+      "mv_impact": 3.03
     },
     {
       "date": "2025-02-07",
       "opponent_id": "29682549132",
+      "opponent_career_id": null,
       "opponent_name": "Ben Vanadia",
       "opponent_team": "Purdue",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 12,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 42,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "10-8",
       "duration": "7:00",
-      "event": "vs. Wisconsin"
+      "event": "vs. Wisconsin",
+      "mv_impact": -2.07
     },
     {
       "date": "2024-12-21",
       "opponent_id": "29672729132",
+      "opponent_career_id": null,
       "opponent_name": "Levi Hopkins",
       "opponent_team": "Campbell",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 55,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 24,
       "weight_class": "197",
       "result": "W",
       "method": "DEC",
       "score": "3-2",
       "duration": "7:00",
-      "event": "vs. Wisconsin"
+      "event": "vs. Wisconsin",
+      "mv_impact": 4.87
     },
     {
       "date": "2024-12-21",
       "opponent_id": "29675866132",
+      "opponent_career_id": null,
       "opponent_name": "Tayshaun Glover",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 48,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 178,
       "weight_class": "197",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "6:46",
-      "event": "vs. Wisconsin"
+      "event": "vs. Wisconsin",
+      "mv_impact": 3.67
     },
     {
       "date": "2024-12-21",
       "opponent_id": "29684851132",
+      "opponent_career_id": null,
       "opponent_name": "Rune Lawrence",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 46,
       "weight_class": "197",
       "result": "L",
       "method": "MD",
       "score": "17-8",
       "duration": "7:00",
-      "event": "vs. Wisconsin"
+      "event": "vs. Wisconsin",
+      "mv_impact": -2.54
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34944680132",
+      "team": "Wisconsin",
+      "team_slug": "wisconsin",
+      "weight_class": 197,
+      "grade": "R-Fr.",
+      "current_rank": 24,
+      "record": "17-10"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29672448132",
+      "team": "Wisconsin",
+      "team_slug": "wisconsin",
+      "weight_class": 197,
+      "grade": "Fr.",
+      "current_rank": 79,
+      "record": "3-4"
+    }
+  ]
 }

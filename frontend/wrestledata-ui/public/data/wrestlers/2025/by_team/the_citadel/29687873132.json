@@ -3,13 +3,18 @@
   "name": "Dillon Roman",
   "team": "The Citadel",
   "team_slug": "the_citadel",
-  "team_rank": 75,
+  "team_rank": 50,
   "weight_class": 149,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 104,
   "record": {
     "overall": "2-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,62 +29,127 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 2,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.369,
+      "matches": 5,
+      "rank_weight": 76,
+      "rank_overall": 709,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29672615132",
+      "opponent_rank": 255,
+      "opponent_name": "Raymond Cmil",
+      "method": "TF 16-1 5:53"
+    },
+    "worst_loss": {
+      "opponent_id": "29687886132",
+      "opponent_rank": 65,
+      "opponent_name": "Kyrell Leavell",
+      "method": "MD 17-4"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-25",
       "opponent_id": "29727242132",
+      "opponent_career_id": null,
       "opponent_name": "Grant Reece",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 263,
       "weight_class": "149",
       "result": "W",
       "method": "TF",
       "score": "15-0",
       "duration": "5:40",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": 2.21
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29687886132",
+      "opponent_career_id": null,
       "opponent_name": "Kyrell Leavell",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 65,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "17-4",
       "duration": "7:00",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -3.17
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29672615132",
+      "opponent_career_id": null,
       "opponent_name": "Raymond Cmil",
       "opponent_team": "VMI",
-      "opponent_team_rank": 77,
+      "opponent_team_rank": 79,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 255,
       "weight_class": "149",
       "result": "W",
       "method": "TF",
       "score": "16-1",
       "duration": "5:53",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": 2.99
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34946231132",
+      "team": "The Citadel",
+      "team_slug": "the_citadel",
+      "weight_class": 149,
+      "grade": "",
+      "current_rank": 147,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29687873132",
+      "team": "The Citadel",
+      "team_slug": "the_citadel",
+      "weight_class": 149,
+      "grade": "",
+      "current_rank": 104,
+      "record": "2-1"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24586986132",
+      "team": "The Citadel",
+      "team_slug": "the_citadel",
+      "weight_class": 149,
+      "grade": "So.",
+      "current_rank": 229,
+      "record": "2-4"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20127980132",
+      "team": "The Citadel",
+      "team_slug": "the_citadel",
+      "weight_class": 141,
+      "grade": "Fr.",
+      "current_rank": 109,
+      "record": "9-8"
+    }
+  ]
 }

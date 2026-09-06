@@ -3,15 +3,20 @@
   "name": "Jaxtyn Frost",
   "team": "CSU Bakersfield",
   "team_slug": "csu_bakersfield",
-  "team_rank": 43,
+  "team_rank": 22,
   "weight_class": 141,
+  "grade": "Fr.",
+  "hometown": "Clovis, Calif.",
+  "high_school": "Buchanan HS",
+  "photo_url": "https://gorunners.com/images/2024/10/8/Jaxtyn_Frost_DD___1_.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 217,
   "record": {
     "overall": "0-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 1.05,
@@ -19,67 +24,97 @@
     "pd7": -16.41,
     "si_plus": 90.4,
     "df_plus": 81.6,
-    "apr_plus": 99.2,
+    "apr_plus": 99.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.119,
+      "matches": 4,
+      "rank_weight": 215,
+      "rank_overall": 2067,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29681671132",
+      "opponent_rank": 116,
+      "opponent_name": "Dayne Dalrymple",
+      "method": "MD 12-2"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-21",
       "opponent_id": "29681671132",
+      "opponent_career_id": null,
       "opponent_name": "Dayne Dalrymple",
       "opponent_team": "Chattanooga",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 51,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 116,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "12-2",
       "duration": "7:00",
-      "event": "vs. Chattanooga"
+      "event": "vs. Chattanooga",
+      "mv_impact": -4.61
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29685305132",
+      "opponent_career_id": null,
       "opponent_name": "Jason Miranda",
       "opponent_team": "Stanford",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 25,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 22,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "16-0",
       "duration": "5:23",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": -3.42
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29681148132",
+      "opponent_career_id": null,
       "opponent_name": "Haiden Drury",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 26,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "17-1",
       "duration": "6:05",
-      "event": "Menlo Invite"
+      "event": "Menlo Invite",
+      "mv_impact": -3.85
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29722997132",
+      "team": "CSU Bakersfield",
+      "team_slug": "csu_bakersfield",
+      "weight_class": 141,
+      "grade": "Fr.",
+      "current_rank": 217,
+      "record": "0-3"
+    }
+  ]
 }

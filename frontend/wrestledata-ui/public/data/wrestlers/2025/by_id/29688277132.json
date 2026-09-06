@@ -3,10 +3,15 @@
   "name": "John Braman",
   "team": "Wyoming",
   "team_slug": "wyoming",
-  "team_rank": 79,
+  "team_rank": 35,
   "weight_class": 125,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 191,
+  "current_rank": 158,
   "record": {
     "overall": "0-3",
     "vs_ranked": "0-3",
@@ -24,7 +29,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.97,
+      "matches": 4,
+      "rank_weight": 184,
+      "rank_overall": 2038,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,7 +46,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "29687511132",
-      "opponent_rank": 150,
+      "opponent_rank": 153,
       "opponent_name": "Logan Brzozowski",
       "method": "TF 17-2 7:00"
     }
@@ -43,48 +55,76 @@
     {
       "date": "2024-12-15",
       "opponent_id": "29679357132",
+      "opponent_career_id": null,
       "opponent_name": "Luke Lilledahl",
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 125,
-      "opponent_rank": 3,
+      "opponent_rank": 1,
       "weight_class": "125",
       "result": "L",
       "method": "TF",
       "score": "20-5",
       "duration": "4:25",
-      "event": "vs. Wyoming"
-    },
-    {
-      "date": "2024-12-07",
-      "opponent_id": "29682547132",
-      "opponent_name": "Matt Ramos",
-      "opponent_team": "Purdue",
-      "opponent_team_rank": 10,
-      "opponent_weight": 125,
-      "opponent_rank": 4,
-      "weight_class": "125",
-      "result": "L",
-      "method": "TF",
-      "score": "19-1",
-      "duration": "4:00",
-      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational"
+      "event": "vs. Wyoming",
+      "mv_impact": -1.94
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29687511132",
+      "opponent_career_id": null,
       "opponent_name": "Logan Brzozowski",
       "opponent_team": "Harvard",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 71,
       "opponent_weight": 133,
-      "opponent_rank": 150,
+      "opponent_rank": 153,
       "weight_class": "125",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "7:00",
-      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational"
+      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -6.03
+    },
+    {
+      "date": "2024-12-07",
+      "opponent_id": "29682547132",
+      "opponent_career_id": null,
+      "opponent_name": "Matt Ramos",
+      "opponent_team": "Purdue",
+      "opponent_team_rank": 12,
+      "opponent_weight": 125,
+      "opponent_rank": 2,
+      "weight_class": "125",
+      "result": "L",
+      "method": "TF",
+      "score": "19-1",
+      "duration": "4:00",
+      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -1.88
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29688277132",
+      "team": "Wyoming",
+      "team_slug": "wyoming",
+      "weight_class": 125,
+      "grade": "",
+      "current_rank": 158,
+      "record": "0-3"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24583183132",
+      "team": "Wyoming",
+      "team_slug": "wyoming",
+      "weight_class": 133,
+      "grade": "",
+      "current_rank": 190,
+      "record": "1-3"
+    }
+  ]
 }

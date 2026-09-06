@@ -3,15 +3,20 @@
   "name": "Branden Rozanski",
   "team": "LIU",
   "team_slug": "liu",
-  "team_rank": 61,
+  "team_rank": 73,
   "weight_class": 141,
+  "grade": "Fr.",
+  "hometown": "Pennsburg, P.A.",
+  "high_school": "Upper Perkiomen",
+  "photo_url": "https://www.liuathletics.com/images/2024/12/3/be23b268-df80-45ef-ba92-a451d72cbc05.png",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 265,
   "record": {
     "overall": "0-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 5.78,
@@ -24,77 +29,119 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.888,
+      "matches": 4,
+      "rank_weight": 211,
+      "rank_overall": 2020,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29683815132",
+      "opponent_rank": 194,
+      "opponent_name": "Stephen Lukas",
+      "method": "Dec 3-1"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29683815132",
+      "opponent_career_id": null,
       "opponent_name": "Stephen Lukas",
       "opponent_team": "Bucknell",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 43,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 194,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "3-1",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -5.43
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29721381132",
+      "opponent_career_id": null,
       "opponent_name": "Luke Stanich",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 11,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 24,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "21-6",
       "duration": "2:33",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -2.77
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29680135132",
+      "opponent_career_id": null,
       "opponent_name": "braden basile",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 46,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "6:00",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": -4.13
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29678138132",
+      "opponent_career_id": null,
       "opponent_name": "Ty Edwards",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 102,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "3-1",
       "duration": "7:00",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": -3.22
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34953925132",
+      "team": "LIU",
+      "team_slug": "liu",
+      "weight_class": 141,
+      "grade": "R-Fr.",
+      "current_rank": 257,
+      "record": "5-14"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29719884132",
+      "team": "LIU",
+      "team_slug": "liu",
+      "weight_class": 141,
+      "grade": "Fr.",
+      "current_rank": 265,
+      "record": "0-4"
+    }
+  ]
 }

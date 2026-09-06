@@ -3,13 +3,18 @@
   "name": "Samuel Hayes",
   "team": "Virginia",
   "team_slug": "virginia",
-  "team_rank": 78,
+  "team_rank": 42,
   "weight_class": 141,
+  "grade": "Junior",
+  "hometown": "Orland Park, Ill.",
+  "high_school": "Carl Sandburg",
+  "photo_url": "https://virginiasports.com/imgproxy/FlzXLwb0rJW9_v7dLInlGDyl4XICsH6QuKlOjmnTpwQ/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3Zpcmdpbmlhc3BvcnRzLWNvbS1wcm9kLzIwMjQvMTAvU2FtbWllLUhheWVzXzIwMjQxMDA5X1dSU1RfSGVhZHNob3RfSkhfMDAzNC1zY2FsZWQuanBn.jpg",
+  "previous_school": "Illinois",
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 193,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-1",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,67 +29,117 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.099,
+      "matches": 4,
+      "rank_weight": 128,
+      "rank_overall": 1237,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "29678076132",
+      "opponent_rank": 250,
+      "opponent_name": "Daniel Tierney",
+      "method": "MD 14-1"
+    },
     "worst_loss": {
-      "opponent_id": "29676068132",
-      "opponent_rank": 21,
-      "opponent_name": "Ethan Oakley",
-      "method": "MD 10-0"
+      "opponent_id": "29673096132",
+      "opponent_rank": 27,
+      "opponent_name": "Bryce Kresho",
+      "method": "Dec 6-0"
     }
   },
   "match_list": [
     {
       "date": "2024-12-08",
       "opponent_id": "29673096132",
+      "opponent_career_id": null,
       "opponent_name": "Bryce Kresho",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 27,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "6-0",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -1.26
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29678076132",
+      "opponent_career_id": null,
       "opponent_name": "Daniel Tierney",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 250,
       "weight_class": "141",
       "result": "W",
       "method": "MD",
       "score": "14-1",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": 1.37
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29676068132",
+      "opponent_career_id": null,
       "opponent_name": "Ethan Oakley",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 133,
-      "opponent_rank": 21,
+      "opponent_rank": 14,
       "weight_class": "133",
       "result": "L",
       "method": "MD",
       "score": "10-0",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -2.25
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29731841132",
+      "team": "Virginia",
+      "team_slug": "virginia",
+      "weight_class": 141,
+      "grade": "Junior",
+      "current_rank": 193,
+      "record": "1-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24601492132",
+      "team": "Virginia",
+      "team_slug": "virginia",
+      "weight_class": 125,
+      "grade": "Sophomore",
+      "current_rank": 158,
+      "record": "0-2"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20133009132",
+      "team": "Illinois",
+      "team_slug": "illinois",
+      "weight_class": 125,
+      "grade": "Fr.",
+      "current_rank": 153,
+      "record": "1-2"
+    }
+  ]
 }

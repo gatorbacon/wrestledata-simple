@@ -3,10 +3,15 @@
   "name": "Charlie Colantonio",
   "team": "Franklin & Marshall",
   "team_slug": "franklin__marshall",
-  "team_rank": 55,
+  "team_rank": 70,
   "weight_class": 133,
+  "grade": "Fy.",
+  "hometown": "Pittsburgh, Pa.",
+  "high_school": "Central Catholic",
+  "photo_url": "https://godiplomats.com/images/2024/9/24/Colantonio__Charlie.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 177,
+  "current_rank": 201,
   "record": {
     "overall": "2-6",
     "vs_ranked": "2-6",
@@ -19,12 +24,19 @@
     "pd7": -1.31,
     "si_plus": 84.9,
     "df_plus": 95.9,
-    "apr_plus": 95.5,
+    "apr_plus": 95.6,
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 2,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.296,
+      "matches": 14,
+      "rank_weight": 184,
+      "rank_overall": 1874,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
@@ -32,139 +44,177 @@
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "29719878132",
-      "opponent_rank": 215,
-      "opponent_name": "Anthony Chuquilin",
-      "method": "TF 16-1 5:20"
+      "opponent_id": "29720405132",
+      "opponent_rank": 180,
+      "opponent_name": "Christian Price",
+      "method": "TF 19-2 5:55"
     },
     "worst_loss": {
-      "opponent_id": "29681743132",
-      "opponent_rank": 197,
-      "opponent_name": "Jimmie Jones",
-      "method": "Dec 4-2"
+      "opponent_id": "29686569132",
+      "opponent_rank": 209,
+      "opponent_name": "Jared Brunner",
+      "method": "Dec 6-2"
     }
   },
   "match_list": [
     {
       "date": "2025-03-02",
       "opponent_id": "29719878132",
+      "opponent_career_id": null,
       "opponent_name": "Anthony Chuquilin",
       "opponent_team": "LIU",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 73,
       "opponent_weight": 125,
-      "opponent_rank": 215,
+      "opponent_rank": 205,
       "weight_class": "133",
       "result": "W",
       "method": "TF",
       "score": "16-1",
       "duration": "5:20",
-      "event": "Zingo Nationals (The Open)"
+      "event": "Zingo Nationals (The Open)",
+      "mv_impact": 1.4
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29673453132",
+      "opponent_career_id": null,
       "opponent_name": "Sulayman Bah",
       "opponent_team": "Columbia",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 52,
       "opponent_weight": 125,
-      "opponent_rank": 101,
+      "opponent_rank": 76,
       "weight_class": "125",
       "result": "L",
       "method": "TF",
       "score": "19-3",
       "duration": "5:49",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -4.87
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29687493132",
+      "opponent_career_id": null,
       "opponent_name": "Isaiah Adams",
       "opponent_team": "Harvard",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 71,
       "opponent_weight": 125,
-      "opponent_rank": 143,
+      "opponent_rank": 131,
       "weight_class": "125",
       "result": "L",
       "method": "MD",
       "score": "9-1",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -5.64
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29686569132",
+      "opponent_career_id": null,
       "opponent_name": "Jared Brunner",
       "opponent_team": "Brown",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 62,
       "opponent_weight": 125,
-      "opponent_rank": 194,
+      "opponent_rank": 209,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "6-2",
       "duration": "7:00",
-      "event": "Sheridan invite"
+      "event": "Sheridan invite",
+      "mv_impact": -6.44
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29673107132",
+      "opponent_career_id": null,
       "opponent_name": "Jack Parker",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 125,
-      "opponent_rank": 102,
+      "opponent_rank": 104,
       "weight_class": "125",
       "result": "L",
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
-      "event": "Sheridan invite"
-    },
-    {
-      "date": "2024-11-02",
-      "opponent_id": "29681697132",
-      "opponent_name": "Elijah Lowe",
-      "opponent_team": "Chattanooga",
-      "opponent_team_rank": 46,
-      "opponent_weight": 133,
-      "opponent_rank": 98,
-      "weight_class": "125",
-      "result": "L",
-      "method": "MD",
-      "score": "10-1",
-      "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Sheridan invite",
+      "mv_impact": -4.37
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29720405132",
+      "opponent_career_id": null,
       "opponent_name": "Christian Price",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 125,
-      "opponent_rank": 216,
+      "opponent_rank": 180,
       "weight_class": "125",
       "result": "W",
       "method": "TF",
       "score": "19-2",
       "duration": "5:55",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": 1.89
+    },
+    {
+      "date": "2024-11-02",
+      "opponent_id": "29681697132",
+      "opponent_career_id": null,
+      "opponent_name": "Elijah Lowe",
+      "opponent_team": "Chattanooga",
+      "opponent_team_rank": 51,
+      "opponent_weight": 133,
+      "opponent_rank": 96,
+      "weight_class": "125",
+      "result": "L",
+      "method": "MD",
+      "score": "10-1",
+      "duration": "7:00",
+      "event": "Southeast Open",
+      "mv_impact": -4.1
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29681743132",
+      "opponent_career_id": null,
       "opponent_name": "Jimmie Jones",
       "opponent_team": "Morgan State",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 75,
       "opponent_weight": 133,
-      "opponent_rank": 197,
+      "opponent_rank": 206,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -5.97
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34934468132",
+      "team": "Franklin & Marshall",
+      "team_slug": "franklin__marshall",
+      "weight_class": 133,
+      "grade": "So.",
+      "current_rank": 86,
+      "record": "4-12"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29673122132",
+      "team": "Franklin & Marshall",
+      "team_slug": "franklin__marshall",
+      "weight_class": 133,
+      "grade": "Fy.",
+      "current_rank": 201,
+      "record": "2-6"
+    }
+  ]
 }

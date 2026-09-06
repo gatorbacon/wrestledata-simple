@@ -3,13 +3,18 @@
   "name": "Carson Tenold",
   "team": "North Carolina",
   "team_slug": "north_carolina",
-  "team_rank": 19,
+  "team_rank": 23,
   "weight_class": 184,
+  "grade": "R-Fr.",
+  "hometown": "Gilbertville, Iowa",
+  "high_school": "Don Bosco",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Func.sidearmsports.com%2Fimages%2F2024%2F10%2F29%2FTenold_Carson.2025.wrs.2064.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 181,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,67 +24,122 @@
     "pd7": -0.5,
     "si_plus": 91.5,
     "df_plus": 108.2,
-    "apr_plus": 95.6,
+    "apr_plus": 95.5,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.569,
+      "matches": 3,
+      "rank_weight": 153,
+      "rank_overall": 1692,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29688439132",
+      "opponent_rank": 177,
+      "opponent_name": "Caleb Roe",
+      "method": "Dec 5-1"
+    },
+    "worst_loss": {
+      "opponent_id": "29727171132",
+      "opponent_rank": 81,
+      "opponent_name": "Tomas Brooker",
+      "method": "Dec 9-4"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-12",
       "opponent_id": "29727173132",
+      "opponent_career_id": null,
       "opponent_name": "Logan Eller",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 63,
       "weight_class": "184",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "5:11",
-      "event": "Mountaineer Invitational"
+      "event": "Mountaineer Invitational",
+      "mv_impact": -5.81
     },
     {
       "date": "2024-11-12",
       "opponent_id": "29727171132",
+      "opponent_career_id": null,
       "opponent_name": "Tomas Brooker",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 81,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "9-4",
       "duration": "7:00",
-      "event": "Mountaineer Invitational"
+      "event": "Mountaineer Invitational",
+      "mv_impact": -3.04
     },
     {
       "date": "2024-11-12",
       "opponent_id": "29688439132",
+      "opponent_career_id": null,
       "opponent_name": "Caleb Roe",
       "opponent_team": "Presbyterian",
-      "opponent_team_rank": 71,
+      "opponent_team_rank": 76,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 177,
       "weight_class": "184",
       "result": "W",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "Mountaineer Invitational"
+      "event": "Mountaineer Invitational",
+      "mv_impact": 1.14
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34943140132",
+      "team": "North Carolina",
+      "team_slug": "north_carolina",
+      "weight_class": 184,
+      "grade": "R-Jr.",
+      "current_rank": 98,
+      "record": "3-2"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29676014132",
+      "team": "North Carolina",
+      "team_slug": "north_carolina",
+      "weight_class": 184,
+      "grade": "R-Fr.",
+      "current_rank": 181,
+      "record": "1-2"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20124248132",
+      "team": "North Carolina",
+      "team_slug": "north_carolina",
+      "weight_class": 174,
+      "grade": "Fr.",
+      "current_rank": 191,
+      "record": "1-3"
+    }
+  ]
 }

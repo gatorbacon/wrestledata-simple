@@ -3,13 +3,18 @@
   "name": "Cole Coffin",
   "team": "Bloomsburg",
   "team_slug": "bloomsburg",
-  "team_rank": 39,
+  "team_rank": 61,
   "weight_class": 141,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 232,
   "record": {
     "overall": "0-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,39 +22,65 @@
     "pf7": 3.0,
     "pa7": 12.0,
     "pd7": -9.0,
-    "si_plus": 83.4,
+    "si_plus": 83.3,
     "df_plus": 92.5,
-    "apr_plus": 89.3,
+    "apr_plus": 89.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.297,
+      "matches": 1,
+      "rank_weight": 250,
+      "rank_overall": 2363,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29672310132",
+      "opponent_rank": 231,
+      "opponent_name": "Clayton Bashor",
+      "method": "MD 12-3"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-03",
       "opponent_id": "29672310132",
+      "opponent_career_id": null,
       "opponent_name": "Clayton Bashor",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 231,
       "weight_class": "141",
       "result": "L",
       "method": "MD",
       "score": "12-3",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -6.3
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29677588132",
+      "team": "Bloomsburg",
+      "team_slug": "bloomsburg",
+      "weight_class": 141,
+      "grade": "",
+      "current_rank": 232,
+      "record": "0-1"
+    }
+  ]
 }

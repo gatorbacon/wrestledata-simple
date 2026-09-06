@@ -3,10 +3,15 @@
   "name": "Mason Ziegler",
   "team": "Lehigh",
   "team_slug": "lehigh",
-  "team_rank": 4,
+  "team_rank": 11,
   "weight_class": 125,
+  "grade": "Fy.",
+  "hometown": "Quakertown, Pa.",
+  "high_school": "Quakertown",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Flehighsports.com%2Fimages%2F2024%2F8%2F29%2FWrestling_Mason_Ziegler_Night1_-0165.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 45,
+  "current_rank": 51,
   "record": {
     "overall": "6-3",
     "vs_ranked": "6-3",
@@ -24,7 +29,14 @@
     "bonus_rate": 0.333,
     "majors": 2,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.582,
+      "matches": 11,
+      "rank_weight": 60,
+      "rank_overall": 650,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 6,
@@ -39,7 +51,7 @@
     },
     "worst_loss": {
       "opponent_id": "29679161132",
-      "opponent_rank": 154,
+      "opponent_rank": 156,
       "opponent_name": "Damian Moreno",
       "method": "Dec 8-5"
     }
@@ -48,54 +60,78 @@
     {
       "date": "2025-02-21",
       "opponent_id": "29679161132",
+      "opponent_career_id": null,
       "opponent_name": "Damian Moreno",
       "opponent_team": "Arizona State",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 27,
       "opponent_weight": 133,
-      "opponent_rank": 154,
+      "opponent_rank": 156,
       "weight_class": "133",
       "result": "L",
       "method": "DEC",
       "score": "8-5",
       "duration": "7:00",
-      "event": "vs. Lehigh"
+      "event": "vs. Lehigh",
+      "mv_impact": -4.53
     },
     {
       "date": "2025-01-04",
       "opponent_id": "29672707132",
+      "opponent_career_id": null,
       "opponent_name": "Alex Esposito",
       "opponent_team": "Rider",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 34,
       "opponent_weight": 125,
-      "opponent_rank": 195,
+      "opponent_rank": 216,
       "weight_class": "125",
       "result": "W",
       "method": "MD",
       "score": "14-2",
       "duration": "7:00",
-      "event": "Bobby Kauffman Open"
+      "event": "Bobby Kauffman Open",
+      "mv_impact": 0.62
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29673107132",
+      "opponent_career_id": null,
       "opponent_name": "Jack Parker",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 125,
-      "opponent_rank": 102,
+      "opponent_rank": 104,
       "weight_class": "125",
       "result": "W",
       "method": "MD",
       "score": "10-2",
       "duration": "7:00",
-      "event": "Sheridan invite"
+      "event": "Sheridan invite",
+      "mv_impact": 3.63
+    },
+    {
+      "date": "2024-12-20",
+      "opponent_id": "29673112132",
+      "opponent_career_id": null,
+      "opponent_name": "James Garcia",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 70,
+      "opponent_weight": 133,
+      "opponent_rank": 120,
+      "weight_class": "125",
+      "result": "W",
+      "method": "DEC",
+      "score": "10-3",
+      "duration": "7:00",
+      "event": "Sheridan invite",
+      "mv_impact": 2.77
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29681473132",
+      "opponent_career_id": null,
       "opponent_name": "Jacob Moran",
       "opponent_team": "Indiana",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 36,
       "opponent_weight": 125,
       "opponent_rank": 13,
       "weight_class": "125",
@@ -103,83 +139,99 @@
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "Sheridan invite"
-    },
-    {
-      "date": "2024-12-20",
-      "opponent_id": "29673112132",
-      "opponent_name": "James Garcia",
-      "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
-      "opponent_weight": 133,
-      "opponent_rank": 103,
-      "weight_class": "125",
-      "result": "W",
-      "method": "DEC",
-      "score": "10-3",
-      "duration": "7:00",
-      "event": "Sheridan invite"
+      "event": "Sheridan invite",
+      "mv_impact": 4.84
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29680120132",
+      "opponent_career_id": null,
       "opponent_name": "Charlie Farmer",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 125,
-      "opponent_rank": 24,
+      "opponent_rank": 25,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "16-10",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -1.43
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29680144132",
+      "opponent_career_id": null,
       "opponent_name": "Caleb Uhorchuk",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 125,
-      "opponent_rank": 127,
+      "opponent_rank": 150,
       "weight_class": "125",
       "result": "W",
       "method": "DEC",
       "score": "3-2",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": 1.81
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29721361132",
+      "opponent_career_id": null,
       "opponent_name": "Sheldon Seymour",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 11,
       "opponent_weight": 125,
-      "opponent_rank": 6,
+      "opponent_rank": 7,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -0.71
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29672680132",
+      "opponent_career_id": null,
       "opponent_name": "Kaden Naame",
       "opponent_team": "Rider",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 34,
       "opponent_weight": 125,
-      "opponent_rank": 162,
+      "opponent_rank": 155,
       "weight_class": "125",
       "result": "W",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": 1.17
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34952698132",
+      "team": "Lehigh",
+      "team_slug": "lehigh",
+      "weight_class": 133,
+      "grade": "So.",
+      "current_rank": 94,
+      "record": "5-9"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29726561132",
+      "team": "Lehigh",
+      "team_slug": "lehigh",
+      "weight_class": 125,
+      "grade": "Fy.",
+      "current_rank": 51,
+      "record": "6-3"
+    }
+  ]
 }

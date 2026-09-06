@@ -3,15 +3,20 @@
   "name": "Luke Meyer",
   "team": "Cal Poly",
   "team_slug": "cal_poly",
-  "team_rank": 9,
+  "team_rank": 19,
   "weight_class": 285,
+  "grade": "R-So.",
+  "hometown": "Mission Viejo, CA",
+  "high_school": "Capistrano Valley HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgopoly.com%2Fimages%2F2024%2F11%2F7%2F_Luke_Meyer.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 225,
   "record": {
     "overall": "0-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 1.33,
@@ -24,62 +29,122 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.86,
+      "matches": 3,
+      "rank_weight": 165,
+      "rank_overall": 1775,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29681163132",
+      "opponent_rank": 234,
+      "opponent_name": "Elijah Stafford",
+      "method": "Dec 10-3"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-23",
       "opponent_id": "29722978132",
+      "opponent_career_id": null,
       "opponent_name": "Jake Andrews",
       "opponent_team": "CSU Bakersfield",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 22,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 18,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "7-1",
       "duration": "7:00",
-      "event": "vs. Cal Poly"
+      "event": "vs. Cal Poly",
+      "mv_impact": -1.16
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29722978132",
+      "opponent_career_id": null,
       "opponent_name": "Jake Andrews",
       "opponent_team": "CSU Bakersfield",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 22,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 18,
       "weight_class": "285",
       "result": "L",
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": -2.16
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29681163132",
+      "opponent_career_id": null,
       "opponent_name": "Elijah Stafford",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 234,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "10-3",
       "duration": "7:00",
-      "event": "Menlo Invite"
+      "event": "Menlo Invite",
+      "mv_impact": -5.26
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34936128132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 285,
+      "grade": "R-Jr.",
+      "current_rank": 232,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29687831132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 285,
+      "grade": "R-So.",
+      "current_rank": 225,
+      "record": "0-3"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24595029132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 285,
+      "grade": "R-Fr.",
+      "current_rank": 115,
+      "record": "0-1"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20143336132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 285,
+      "grade": "Fr.",
+      "current_rank": 230,
+      "record": "0-2"
+    }
+  ]
 }

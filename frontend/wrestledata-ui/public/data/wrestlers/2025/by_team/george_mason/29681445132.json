@@ -3,15 +3,20 @@
   "name": "Charlie Bunting",
   "team": "George Mason",
   "team_slug": "george_mason",
-  "team_rank": 57,
+  "team_rank": 54,
   "weight_class": 133,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 129,
+  "current_rank": 109,
   "record": {
     "overall": "5-4",
     "vs_ranked": "5-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 9.37,
@@ -19,12 +24,19 @@
     "pd7": 2.0,
     "si_plus": 97.0,
     "df_plus": 103.1,
-    "apr_plus": 95.8,
+    "apr_plus": 95.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.4,
     "majors": 0,
     "techs": 2,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.927,
+      "matches": 9,
+      "rank_weight": 127,
+      "rank_overall": 1178,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 5,
@@ -33,153 +45,203 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29684480132",
-      "opponent_rank": 68,
+      "opponent_rank": 103,
       "opponent_name": "Marcel Lopez",
       "method": "Dec 4-1"
     },
     "worst_loss": {
-      "opponent_id": "29674156132",
-      "opponent_rank": 105,
-      "opponent_name": "Draegen Orine",
-      "method": "TF 20-3 5:18"
+      "opponent_id": "29684842132",
+      "opponent_rank": 88,
+      "opponent_name": "Mason Kernan",
+      "method": "Dec 4-1"
     }
   },
   "match_list": [
     {
       "date": "2024-12-30",
       "opponent_id": "29684842132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Kernan",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 133,
-      "opponent_rank": 70,
+      "opponent_rank": 88,
       "weight_class": "133",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -3.22
     },
     {
       "date": "2024-12-19",
       "opponent_id": "29678066132",
+      "opponent_career_id": null,
       "opponent_name": "Takeo Davis",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 133,
-      "opponent_rank": 43,
+      "opponent_rank": 24,
       "weight_class": "133",
       "result": "L",
       "method": "DEC",
       "score": "7-3",
       "duration": "7:00",
-      "event": "vs. George Mason"
+      "event": "vs. George Mason",
+      "mv_impact": -1.24
     },
     {
       "date": "2024-12-06",
       "opponent_id": "29686243132",
+      "opponent_career_id": null,
       "opponent_name": "Michael Giugliano",
       "opponent_team": "Buffalo",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 63,
       "opponent_weight": 133,
-      "opponent_rank": 241,
+      "opponent_rank": 251,
       "weight_class": "133",
       "result": "W",
       "method": "TF",
       "score": "19-3",
       "duration": "2:10",
-      "event": "vs. George Mason"
+      "event": "vs. George Mason",
+      "mv_impact": 1.23
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29684480132",
+      "opponent_career_id": null,
       "opponent_name": "Marcel Lopez",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 133,
-      "opponent_rank": 68,
+      "opponent_rank": 103,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "vs. SIU Edwardsville"
+      "event": "vs. SIU Edwardsville",
+      "mv_impact": 2.77
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29672309132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Prinkey",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 133,
-      "opponent_rank": 210,
+      "opponent_rank": 239,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "9-6",
       "duration": "7:00",
-      "event": "vs. George Mason"
+      "event": "vs. George Mason",
+      "mv_impact": -0.3
     },
     {
       "date": "2024-11-15",
       "opponent_id": "29685898132",
+      "opponent_career_id": null,
       "opponent_name": "Colton Camacho",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 133,
-      "opponent_rank": 36,
+      "opponent_rank": 31,
       "weight_class": "133",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:58",
-      "event": "vs. George Mason"
+      "event": "vs. George Mason",
+      "mv_impact": -4.36
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29681468132",
+      "opponent_career_id": null,
       "opponent_name": "Geoffrey Whelan",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 133,
-      "opponent_rank": 209,
+      "opponent_rank": 245,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": 0.02
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29688505132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler Nguyen",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 133,
-      "opponent_rank": 245,
+      "opponent_rank": 205,
       "weight_class": "133",
       "result": "W",
       "method": "TF",
       "score": "18-3",
       "duration": "4:57",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": 1.5
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29674156132",
+      "opponent_career_id": null,
       "opponent_name": "Draegen Orine",
       "opponent_team": "NC State",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 14,
       "opponent_weight": 133,
-      "opponent_rank": 105,
+      "opponent_rank": 77,
       "weight_class": "133",
       "result": "L",
       "method": "TF",
       "score": "20-3",
       "duration": "5:18",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -4.74
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34938488132",
+      "team": "George Mason",
+      "team_slug": "george_mason",
+      "weight_class": 133,
+      "grade": "",
+      "current_rank": 106,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29681445132",
+      "team": "George Mason",
+      "team_slug": "george_mason",
+      "weight_class": 133,
+      "grade": "",
+      "current_rank": 109,
+      "record": "5-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24585510132",
+      "team": "George Mason",
+      "team_slug": "george_mason",
+      "weight_class": 133,
+      "grade": "",
+      "current_rank": 114,
+      "record": "2-2"
+    }
+  ]
 }

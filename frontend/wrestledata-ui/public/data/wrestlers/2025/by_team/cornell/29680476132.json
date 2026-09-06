@@ -3,13 +3,18 @@
   "name": "Benjamin Shvartsman",
   "team": "Cornell",
   "team_slug": "cornell",
-  "team_rank": 50,
+  "team_rank": 9,
   "weight_class": 165,
+  "grade": "So.",
+  "hometown": "Deerfield, Ill.",
+  "high_school": "Deerfield HS",
+  "photo_url": "https://cornellbigred.com/images/2024/8/28/Shvaytsmon_Benjamin_24_crop.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 49,
   "record": {
     "overall": "4-0",
-    "vs_ranked": "0-0",
+    "vs_ranked": "4-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,82 +24,124 @@
     "pd7": 16.64,
     "si_plus": 133.8,
     "df_plus": 109.5,
-    "apr_plus": 100.5,
+    "apr_plus": 99.7,
     "pin_rate": 0.25,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 3,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 3.308,
+      "matches": 5,
+      "rank_weight": 10,
+      "rank_overall": 85,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 4,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "29686903132",
+      "opponent_rank": 78,
+      "opponent_name": "Timur Beksultan",
+      "method": "Fall 0:27"
+    },
     "worst_loss": null
   },
   "match_list": [
     {
       "date": "2024-11-24",
       "opponent_id": "29688437132",
+      "opponent_career_id": null,
       "opponent_name": "Buzzy Bomberger",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 236,
       "weight_class": "165",
       "result": "W",
       "method": "TF",
       "score": "16-0",
       "duration": "0:00",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": 3.18
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29686903132",
+      "opponent_career_id": null,
       "opponent_name": "Timur Beksultan",
       "opponent_team": "Binghamton",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 32,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 78,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:27",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": 6.48
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29685046132",
+      "opponent_career_id": null,
       "opponent_name": "Nicholas Mackland-Rivera",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 78,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 276,
       "weight_class": "165",
       "result": "W",
       "method": "TF",
       "score": "18-2",
       "duration": "0:00",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": 1.78
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29672234132",
+      "opponent_career_id": null,
       "opponent_name": "Anthony Jacobsen",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 78,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 267,
       "weight_class": "165",
       "result": "W",
       "method": "TF",
       "score": "17-2",
       "duration": "0:00",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": 1.92
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34964393132",
+      "team": "Cornell",
+      "team_slug": "cornell",
+      "weight_class": 184,
+      "grade": "Jr.",
+      "current_rank": 219,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29680476132",
+      "team": "Cornell",
+      "team_slug": "cornell",
+      "weight_class": 165,
+      "grade": "So.",
+      "current_rank": 49,
+      "record": "4-0"
+    }
+  ]
 }

@@ -3,15 +3,20 @@
   "name": "DJ Gillett",
   "team": "Oregon State",
   "team_slug": "oregon_state",
-  "team_rank": 31,
+  "team_rank": 41,
   "weight_class": 141,
+  "grade": "R-Fr.",
+  "hometown": "Corvallis, Ore.",
+  "high_school": "Crescent Valley HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Foregonstate.sidearmsports.com%2Fimages%2F2024%2F10%2F9%2F25WRE_Headshot_Gillett_DJ_00185.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 62,
   "record": {
     "overall": "4-4",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "4-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 7.71,
@@ -19,142 +24,207 @@
     "pd7": 0.74,
     "si_plus": 101.4,
     "df_plus": 102.5,
-    "apr_plus": 99.2,
+    "apr_plus": 99.1,
     "pin_rate": 0.0,
     "bonus_rate": 0.25,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.076,
+      "matches": 9,
+      "rank_weight": 82,
+      "rank_overall": 810,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29678495132",
+      "opponent_rank": 116,
+      "opponent_name": "Clayton Gabrielson",
+      "method": "Dec 13-8"
+    },
+    "worst_loss": {
+      "opponent_id": "29687531132",
+      "opponent_rank": 119,
+      "opponent_name": "Krayle Stormer",
+      "method": "SV-1 8-5"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-22",
       "opponent_id": "29688281132",
+      "opponent_career_id": null,
       "opponent_name": "Christian Herrera",
       "opponent_team": "Wyoming",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 35,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 45,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": -2.09
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29687531132",
+      "opponent_career_id": null,
       "opponent_name": "Krayle Stormer",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 41,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 119,
       "weight_class": "141",
       "result": "L",
       "method": "SV-1",
       "score": "8-5",
       "duration": "8:15",
-      "event": "Clackamas Community College Open"
+      "event": "Clackamas Community College Open",
+      "mv_impact": -4.08
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29683817132",
+      "opponent_career_id": null,
       "opponent_name": "Trevor Nugent",
       "opponent_team": "Bucknell",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 43,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 175,
       "weight_class": "141",
       "result": "W",
       "method": "MD",
       "score": "14-3",
       "duration": "7:00",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": 1.81
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29681477132",
+      "opponent_career_id": null,
       "opponent_name": "Henry Porter",
       "opponent_team": "Indiana",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 36,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "weight_class": "141",
       "result": "L",
       "method": "MD",
       "score": "14-1",
       "duration": "7:00",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": -3.38
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29678495132",
+      "opponent_career_id": null,
       "opponent_name": "Clayton Gabrielson",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 17,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 116,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "13-8",
       "duration": "7:00",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": 2.72
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29685263132",
+      "opponent_career_id": null,
       "opponent_name": "Josh Koderhandt",
       "opponent_team": "Navy",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 28,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 5,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:45",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": -3.32
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29686082132",
+      "opponent_career_id": null,
       "opponent_name": "Paul Woo",
       "opponent_team": "Ohio",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 46,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 212,
       "weight_class": "141",
       "result": "W",
       "method": "DQ",
       "score": null,
       "duration": "7:00",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": 3.56
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29687531132",
+      "opponent_career_id": null,
       "opponent_name": "Krayle Stormer",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 41,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 119,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "11-6",
       "duration": "7:00",
-      "event": "Mike Clock open 2024 Men"
+      "event": "Mike Clock open 2024 Men",
+      "mv_impact": 1.92
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34934757132",
+      "team": "Oregon State",
+      "team_slug": "oregon_state",
+      "weight_class": 141,
+      "grade": "R-So.",
+      "current_rank": 97,
+      "record": "2-6"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29687542132",
+      "team": "Oregon State",
+      "team_slug": "oregon_state",
+      "weight_class": 141,
+      "grade": "R-Fr.",
+      "current_rank": 62,
+      "record": "4-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584159132",
+      "team": "Oregon State",
+      "team_slug": "oregon_state",
+      "weight_class": 141,
+      "grade": "Fr.",
+      "current_rank": 119,
+      "record": "0-3"
+    }
+  ]
 }

@@ -3,10 +3,15 @@
   "name": "Ky Szewizyk",
   "team": "Ohio",
   "team_slug": "ohio",
-  "team_rank": 69,
+  "team_rank": 46,
   "weight_class": 133,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fohiobobcats.com%2Fimages%2F2024%2F10%2F17%2FSzewczyk-2.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 164,
+  "current_rank": 194,
   "record": {
     "overall": "1-2",
     "vs_ranked": "1-2",
@@ -24,7 +29,14 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.935,
+      "matches": 3,
+      "rank_weight": 200,
+      "rank_overall": 2031,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -33,13 +45,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29681755132",
-      "opponent_rank": 207,
+      "opponent_rank": 223,
       "opponent_name": "Jordan Villareal",
       "method": "MD 16-8"
     },
     "worst_loss": {
       "opponent_id": "29685896132",
-      "opponent_rank": 125,
+      "opponent_rank": 121,
       "opponent_name": "Landon Bainey",
       "method": "Fall 6:34"
     }
@@ -48,48 +60,66 @@
     {
       "date": "2025-01-19",
       "opponent_id": "29685896132",
+      "opponent_career_id": null,
       "opponent_name": "Landon Bainey",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 133,
-      "opponent_rank": 125,
+      "opponent_rank": 121,
       "weight_class": "133",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "6:34",
-      "event": "Purple Raider Open"
+      "event": "Purple Raider Open",
+      "mv_impact": -6.2
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29681755132",
+      "opponent_career_id": null,
       "opponent_name": "Jordan Villareal",
       "opponent_team": "Pittsburgh",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 21,
       "opponent_weight": 133,
-      "opponent_rank": 207,
+      "opponent_rank": 223,
       "weight_class": "133",
       "result": "W",
       "method": "MD",
       "score": "16-8",
       "duration": "7:00",
-      "event": "Purple Raider Open"
+      "event": "Purple Raider Open",
+      "mv_impact": 0.77
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29686034132",
+      "opponent_career_id": null,
       "opponent_name": "Kolton Barker",
       "opponent_team": "Ohio",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 46,
       "opponent_weight": 133,
-      "opponent_rank": 104,
+      "opponent_rank": 105,
       "weight_class": "133",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:54",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": -6.37
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29687027132",
+      "team": "Ohio",
+      "team_slug": "ohio",
+      "weight_class": 133,
+      "grade": "So.",
+      "current_rank": 194,
+      "record": "1-2"
+    }
+  ]
 }

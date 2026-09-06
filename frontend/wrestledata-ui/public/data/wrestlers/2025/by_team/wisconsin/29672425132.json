@@ -3,13 +3,18 @@
   "name": "David Mitrovich",
   "team": "Wisconsin",
   "team_slug": "wisconsin",
-  "team_rank": 8,
+  "team_rank": 33,
   "weight_class": 174,
+  "grade": "R-Fr.",
+  "hometown": "Chula Vista, Calif.",
+  "high_school": "Eastlake",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fuwbadgers.com%2Fimages%2F2024%2F8%2F8%2F240729-Wstl-David_Mitrovich188_vFMxr.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 259,
   "record": {
     "overall": "0-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,77 +29,129 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.291,
+      "matches": 4,
+      "rank_weight": 211,
+      "rank_overall": 2102,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29682568132",
+      "opponent_rank": 237,
+      "opponent_name": "Ethan Popp",
+      "method": "Dec 4-2"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-01",
       "opponent_id": "29682568132",
+      "opponent_career_id": null,
       "opponent_name": "Ethan Popp",
       "opponent_team": "Purdue",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 12,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 237,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Loras Open"
+      "event": "Loras Open",
+      "mv_impact": -5.83
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29673836132",
+      "opponent_career_id": null,
       "opponent_name": "Cooper French",
       "opponent_team": "Nebraska",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 2,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 158,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "15-7",
       "duration": "7:00",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": -4.98
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29723425132",
+      "opponent_career_id": null,
       "opponent_name": "Damarion Ross",
       "opponent_team": "Northern Illinois",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 49,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 107,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "10-6",
       "duration": "7:00",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": -3.17
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29723425132",
+      "opponent_career_id": null,
       "opponent_name": "Damarion Ross",
       "opponent_team": "Northern Illinois",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 49,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 107,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "9-8",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": -3.17
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34944676132",
+      "team": "Wisconsin",
+      "team_slug": "wisconsin",
+      "weight_class": 174,
+      "grade": "R-So.",
+      "current_rank": 64,
+      "record": "0-2"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29672425132",
+      "team": "Wisconsin",
+      "team_slug": "wisconsin",
+      "weight_class": 174,
+      "grade": "R-Fr.",
+      "current_rank": 259,
+      "record": "0-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24641179132",
+      "team": "Wisconsin",
+      "team_slug": "wisconsin",
+      "weight_class": 184,
+      "grade": "Fr.",
+      "current_rank": 138,
+      "record": "0-0"
+    }
+  ]
 }

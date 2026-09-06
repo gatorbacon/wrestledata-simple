@@ -3,13 +3,18 @@
   "name": "Tyler Stoltzfus",
   "team": "Lock Haven",
   "team_slug": "lock_haven",
-  "team_rank": 29,
+  "team_rank": 38,
   "weight_class": 174,
+  "grade": "Sr.",
+  "hometown": "Mifflinburg, Pa.",
+  "high_school": null,
+  "photo_url": "https://lockhavenathletics.com/images/2024/9/26/Stoltzfus.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 49,
   "record": {
     "overall": "7-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "7-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,157 +24,234 @@
     "pd7": 9.22,
     "si_plus": 119.2,
     "df_plus": 107.6,
-    "apr_plus": 135.7,
+    "apr_plus": 135.3,
     "pin_rate": 0.571,
     "bonus_rate": 0.857,
     "majors": 0,
     "techs": 2,
-    "pins": 4
+    "pins": 4,
+    "mat_value": {
+      "mv_avg": 1.755,
+      "matches": 11,
+      "rank_weight": 29,
+      "rank_overall": 321,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 7,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29991235132",
+      "opponent_rank": 46,
+      "opponent_name": "Sam Beckett",
+      "method": "Dec 4-3"
+    },
+    "worst_loss": {
+      "opponent_id": "29679321132",
+      "opponent_rank": 89,
+      "opponent_name": "Jack Kelly",
+      "method": "Inj. 1:41"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-01",
       "opponent_id": "29991235132",
+      "opponent_career_id": null,
       "opponent_name": "Sam Beckett",
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 46,
       "weight_class": "174",
       "result": "W",
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "Mat Town Open 1"
+      "event": "Mat Town Open 1",
+      "mv_impact": 4.18
     },
     {
       "date": "2024-12-01",
       "opponent_id": "29685200132",
+      "opponent_career_id": null,
       "opponent_name": "Jonathan Sanchez",
       "opponent_team": "Navy",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 28,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 220,
       "weight_class": "174",
       "result": "W",
       "method": "TF",
       "score": "18-0",
       "duration": "4:20",
-      "event": "Mat Town Open 1"
+      "event": "Mat Town Open 1",
+      "mv_impact": 1.95
     },
     {
       "date": "2024-12-01",
       "opponent_id": "29679321132",
+      "opponent_career_id": null,
       "opponent_name": "Jack Kelly",
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 89,
       "weight_class": "174",
       "result": "L",
       "method": "INJ",
       "score": null,
       "duration": "1:41",
-      "event": "Mat Town Open 1"
+      "event": "Mat Town Open 1",
+      "mv_impact": -5.91
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29734969132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Alessio",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 45,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 81,
       "weight_class": "174",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:05",
-      "event": "2024 PRTC Keystone Classic"
+      "event": "2024 PRTC Keystone Classic",
+      "mv_impact": 6.07
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29673110132",
+      "opponent_career_id": null,
       "opponent_name": "Dominic Wheatley",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 254,
       "weight_class": "174",
       "result": "W",
       "method": "TF",
       "score": "18-3",
       "duration": "4:07",
-      "event": "2024 PRTC Keystone Classic"
+      "event": "2024 PRTC Keystone Classic",
+      "mv_impact": 3.06
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29676693132",
+      "opponent_career_id": null,
       "opponent_name": "Avery Bassett",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 26,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "11-2",
       "duration": "7:00",
-      "event": "2024 PRTC Keystone Classic"
+      "event": "2024 PRTC Keystone Classic",
+      "mv_impact": -2.39
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29680134132",
+      "opponent_career_id": null,
       "opponent_name": "Oscar Aranda",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 162,
       "weight_class": "174",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:39",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 4.72
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29679145132",
+      "opponent_career_id": null,
       "opponent_name": "Max Wilner",
       "opponent_team": "Arizona State",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 27,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 124,
       "weight_class": "174",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:14",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 5.2
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29687486132",
+      "opponent_career_id": null,
       "opponent_name": "Alex Whitworth",
       "opponent_team": "Harvard",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 71,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 205,
       "weight_class": "174",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:45",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 3.62
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29676690132",
+      "team": "Lock Haven",
+      "team_slug": "lock_haven",
+      "weight_class": 174,
+      "grade": "Sr.",
+      "current_rank": 49,
+      "record": "7-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24582234132",
+      "team": "Lock Haven",
+      "team_slug": "lock_haven",
+      "weight_class": 174,
+      "grade": "Jr.",
+      "current_rank": 77,
+      "record": "11-9"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20127813132",
+      "team": "Lock Haven",
+      "team_slug": "lock_haven",
+      "weight_class": 174,
+      "grade": "So.",
+      "current_rank": 35,
+      "record": "31-16"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16699658132",
+      "team": "Lock Haven",
+      "team_slug": "lock_haven",
+      "weight_class": 174,
+      "grade": "Fr.",
+      "current_rank": 70,
+      "record": "20-13"
+    }
+  ]
 }

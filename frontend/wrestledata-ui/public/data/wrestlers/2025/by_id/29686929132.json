@@ -3,13 +3,18 @@
   "name": "Apollo Gothard",
   "team": "Little Rock",
   "team_slug": "little_rock",
-  "team_rank": 28,
+  "team_rank": 15,
   "weight_class": 285,
+  "grade": "REDSHIRT JUNIOR",
+  "hometown": "Lemont, Ill.",
+  "high_school": "Lemont H.S.",
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 203,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,67 +24,132 @@
     "pd7": 0.0,
     "si_plus": 87.2,
     "df_plus": 107.9,
-    "apr_plus": 96.2,
+    "apr_plus": 96.3,
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.154,
+      "matches": 3,
+      "rank_weight": 144,
+      "rank_overall": 1578,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29681685132",
+      "opponent_rank": 217,
+      "opponent_name": "Ethan Vergara",
+      "method": "MD 10-2"
+    },
+    "worst_loss": {
+      "opponent_id": "29736346132",
+      "opponent_rank": 247,
+      "opponent_name": "Dirk Morley",
+      "method": "Dec 8-2"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-16",
       "opponent_id": "29681685132",
+      "opponent_career_id": null,
       "opponent_name": "Ethan Vergara",
       "opponent_team": "Chattanooga",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 51,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 217,
       "weight_class": "285",
       "result": "W",
       "method": "MD",
       "score": "10-2",
       "duration": "7:00",
-      "event": "vs. Little Rock"
+      "event": "vs. Little Rock",
+      "mv_impact": 2.09
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29734985132",
+      "opponent_career_id": null,
       "opponent_name": "Bryan Caves",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 45,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 52,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
-      "event": "vs. Little Rock"
+      "event": "vs. Little Rock",
+      "mv_impact": -2.44
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29736346132",
+      "opponent_career_id": null,
       "opponent_name": "Dirk Morley",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 39,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 247,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "vs. Northwestern"
+      "event": "vs. Northwestern",
+      "mv_impact": -6.11
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29686929132",
+      "team": "Little Rock",
+      "team_slug": "little_rock",
+      "weight_class": 285,
+      "grade": "REDSHIRT JUNIOR",
+      "current_rank": 203,
+      "record": "1-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24588150132",
+      "team": "Little Rock",
+      "team_slug": "little_rock",
+      "weight_class": 285,
+      "grade": "REDSHIRT SOPHOMORE",
+      "current_rank": 112,
+      "record": "0-0"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20128105132",
+      "team": "Little Rock",
+      "team_slug": "little_rock",
+      "weight_class": 285,
+      "grade": "REDSHIRT FRESHMAN",
+      "current_rank": 83,
+      "record": "5-4"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16705752132",
+      "team": "Little Rock",
+      "team_slug": "little_rock",
+      "weight_class": 285,
+      "grade": "FRESHMAN",
+      "current_rank": 140,
+      "record": "0-0"
+    }
+  ]
 }

@@ -3,15 +3,20 @@
   "name": "Brant Whitaker",
   "team": "Wyoming",
   "team_slug": "wyoming",
-  "team_rank": 79,
+  "team_rank": 35,
   "weight_class": 197,
+  "grade": "R-Jr.",
+  "hometown": "Booneville, Missouri",
+  "high_school": "Father Tolton Catholic High School",
+  "photo_url": "https://gowyo.com/images/2024/9/10/Whitaker.JPG?width=96&height=96&mode=crop&anchor=topcenter",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 172,
   "record": {
     "overall": "0-1",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "0-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -24,32 +29,88 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.963,
+      "matches": 1,
+      "rank_weight": 154,
+      "rank_overall": 1801,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29679329132",
+      "opponent_rank": 4,
+      "opponent_name": "Josh Barr",
+      "method": "Fall 1:48"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-15",
       "opponent_id": "29679329132",
+      "opponent_career_id": null,
       "opponent_name": "Josh Barr",
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 4,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:48",
-      "event": "vs. Wyoming"
+      "event": "vs. Wyoming",
+      "mv_impact": -2.96
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29688288132",
+      "team": "Wyoming",
+      "team_slug": "wyoming",
+      "weight_class": 197,
+      "grade": "R-Jr.",
+      "current_rank": 172,
+      "record": "0-1"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584013132",
+      "team": "Missouri",
+      "team_slug": "missouri",
+      "weight_class": 165,
+      "grade": "Redshirt Sophomore",
+      "current_rank": 209,
+      "record": "2-4"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20130991132",
+      "team": "Missouri",
+      "team_slug": "missouri",
+      "weight_class": 165,
+      "grade": "Redshirt Freshman",
+      "current_rank": 172,
+      "record": "3-6"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "18509040132",
+      "team": "Missouri",
+      "team_slug": "missouri",
+      "weight_class": 165,
+      "grade": "Freshman",
+      "current_rank": 153,
+      "record": "0-0"
+    }
+  ]
 }

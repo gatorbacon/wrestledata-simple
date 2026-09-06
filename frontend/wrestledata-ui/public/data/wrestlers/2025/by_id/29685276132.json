@@ -3,13 +3,18 @@
   "name": "Liam Kilrain",
   "team": "Navy",
   "team_slug": "navy",
-  "team_rank": 66,
+  "team_rank": 28,
   "weight_class": 174,
+  "grade": "So.",
+  "hometown": "Virginia Beach, Va.",
+  "high_school": "Blair Academy",
+  "photo_url": "https://navysports.com/images/2023/9/13/Kilrain_Liam27_7tFkI.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 209,
   "record": {
     "overall": "2-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,122 +29,185 @@
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.72,
+      "matches": 8,
+      "rank_weight": 192,
+      "rank_overall": 1980,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29685200132",
+      "opponent_rank": 220,
+      "opponent_name": "Jonathan Sanchez",
+      "method": "Dec 5-1"
+    },
+    "worst_loss": {
+      "opponent_id": "29687009132",
+      "opponent_rank": 188,
+      "opponent_name": "Waylon Wehler",
+      "method": "Dec 7-6"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-20",
       "opponent_id": "32893999132",
+      "opponent_career_id": null,
       "opponent_name": "Logan Baker",
       "opponent_team": "Bloomsburg",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 61,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 230,
       "weight_class": "174",
       "result": "W",
       "method": "MD",
       "score": "16-4",
       "duration": "7:00",
-      "event": "vs. Navy"
+      "event": "vs. Navy",
+      "mv_impact": 1.24
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29680807132",
+      "opponent_career_id": null,
       "opponent_name": "Cooper Haase",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 67,
       "weight_class": "174",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:47",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -5.55
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29687009132",
+      "opponent_career_id": null,
       "opponent_name": "Waylon Wehler",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 188,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "7-6",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -4.52
     },
     {
       "date": "2024-12-01",
       "opponent_id": "29679321132",
+      "opponent_career_id": null,
       "opponent_name": "Jack Kelly",
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 89,
       "weight_class": "174",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:13",
-      "event": "Mat Town Open 1"
+      "event": "Mat Town Open 1",
+      "mv_impact": -5.91
     },
     {
       "date": "2024-12-01",
       "opponent_id": "29685200132",
+      "opponent_career_id": null,
       "opponent_name": "Jonathan Sanchez",
       "opponent_team": "Navy",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 28,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 220,
       "weight_class": "174",
       "result": "W",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "Mat Town Open 1"
+      "event": "Mat Town Open 1",
+      "mv_impact": -0.05
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29672298132",
+      "opponent_career_id": null,
       "opponent_name": "John Worthing",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 54,
       "weight_class": "174",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:15",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -4.73
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29685885132",
+      "opponent_career_id": null,
       "opponent_name": "Brody Evans",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 160,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "9-1",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -4.33
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34939060132",
+      "team": "Navy",
+      "team_slug": "navy",
+      "weight_class": 174,
+      "grade": "Jr.",
+      "current_rank": 190,
+      "record": "3-10"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29685276132",
+      "team": "Navy",
+      "team_slug": "navy",
+      "weight_class": 174,
+      "grade": "So.",
+      "current_rank": 209,
+      "record": "2-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24585810132",
+      "team": "Navy",
+      "team_slug": "navy",
+      "weight_class": 174,
+      "grade": "Fr.",
+      "current_rank": 152,
+      "record": "0-0"
+    }
+  ]
 }

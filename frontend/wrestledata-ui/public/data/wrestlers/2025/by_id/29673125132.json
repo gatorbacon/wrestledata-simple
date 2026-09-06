@@ -3,13 +3,18 @@
   "name": "Matthew Beem",
   "team": "Campbell",
   "team_slug": "campbell",
-  "team_rank": 45,
+  "team_rank": 55,
   "weight_class": 133,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 136,
+  "current_rank": 134,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,30 +24,48 @@
     "pd7": 6.0,
     "si_plus": 92.6,
     "df_plus": 100.1,
-    "apr_plus": 93.2,
+    "apr_plus": 93.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.154,
+      "matches": 2,
+      "rank_weight": 84,
+      "rank_overall": 786,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29678155132",
+      "opponent_rank": 274,
+      "opponent_name": "Reed Walker",
+      "method": "Dec 11-5"
+    },
+    "worst_loss": {
+      "opponent_id": "29676066132",
+      "opponent_rank": 37,
+      "opponent_name": "Elias Navida",
+      "method": "Def."
+    }
   },
   "match_list": [
     {
       "date": "2024-11-02",
       "opponent_id": "29676066132",
+      "opponent_career_id": null,
       "opponent_name": "Elias Navida",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 37,
       "weight_class": "133",
       "result": "L",
       "method": "DFLT",
@@ -53,18 +76,32 @@
     {
       "date": "2024-11-02",
       "opponent_id": "29678155132",
+      "opponent_career_id": null,
       "opponent_name": "Reed Walker",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 274,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "11-5",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": 0.15
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29673125132",
+      "team": "Campbell",
+      "team_slug": "campbell",
+      "weight_class": 133,
+      "grade": "",
+      "current_rank": 134,
+      "record": "1-1"
+    }
+  ]
 }

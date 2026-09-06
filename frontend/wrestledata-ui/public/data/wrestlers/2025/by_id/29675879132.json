@@ -3,13 +3,18 @@
   "name": "Sean O`Brien",
   "team": "North Dakota State",
   "team_slug": "north_dakota_state",
-  "team_rank": 67,
+  "team_rank": 48,
   "weight_class": 133,
+  "grade": "Fr.",
+  "hometown": "White Bear Lake, Minn.",
+  "high_school": "Totino-Grace HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgobison.sidearmsports.com%2Fimages%2F2024%2F9%2F14%2FWR_HS_24-25_O_Brien_Sean.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 217,
+  "current_rank": 222,
   "record": {
     "overall": "0-3",
-    "vs_ranked": "0-1",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,67 +29,92 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.374,
+      "matches": 5,
+      "rank_weight": 232,
+      "rank_overall": 2286,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "29675631132",
-      "opponent_rank": 41,
-      "opponent_name": "Derrick Cardinal",
-      "method": "TF 16-1 3:39"
+      "opponent_id": "29675877132",
+      "opponent_rank": 187,
+      "opponent_name": "Peyton moore",
+      "method": "TF 15-0 3:27"
     }
   },
   "match_list": [
     {
       "date": "2024-12-07",
       "opponent_id": "29675741132",
+      "opponent_career_id": null,
       "opponent_name": "Logan Swensen",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 24,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 31,
       "weight_class": "133",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "2:44",
-      "event": "MSU Moorhead Dragon Open"
+      "event": "MSU Moorhead Dragon Open",
+      "mv_impact": -3.92
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29675877132",
+      "opponent_career_id": null,
       "opponent_name": "Peyton moore",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 48,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 187,
       "weight_class": "133",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "3:27",
-      "event": "Bison Open"
+      "event": "Bison Open",
+      "mv_impact": -7.29
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29675631132",
+      "opponent_career_id": null,
       "opponent_name": "Derrick Cardinal",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 24,
       "opponent_weight": 133,
-      "opponent_rank": 41,
+      "opponent_rank": 37,
       "weight_class": "133",
       "result": "L",
       "method": "TF",
       "score": "16-1",
       "duration": "3:39",
-      "event": "Bison Open"
+      "event": "Bison Open",
+      "mv_impact": -4.45
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29675879132",
+      "team": "North Dakota State",
+      "team_slug": "north_dakota_state",
+      "weight_class": 133,
+      "grade": "Fr.",
+      "current_rank": 222,
+      "record": "0-3"
+    }
+  ]
 }

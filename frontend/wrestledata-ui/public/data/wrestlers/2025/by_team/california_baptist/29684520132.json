@@ -3,13 +3,18 @@
   "name": "Dylan Guillermo",
   "team": "California Baptist",
   "team_slug": "california_baptist",
-  "team_rank": 44,
+  "team_rank": 64,
   "weight_class": 149,
+  "grade": "Fr.",
+  "hometown": "Rancho Mirage, CA",
+  "high_school": "Palm Desert HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fcalbaptist.sidearmsports.com%2Fimages%2F2024%2F9%2F10%2FDylan_Guillermo_Redone.jpg&width=603&height=803&type=webp",
+  "previous_school": "Previous Team: Palm Desert HS",
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 240,
   "record": {
     "overall": "1-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,82 +24,129 @@
     "pd7": -19.12,
     "si_plus": 81.4,
     "df_plus": 74.9,
-    "apr_plus": 115.6,
+    "apr_plus": 115.3,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -4.418,
+      "matches": 6,
+      "rank_weight": 243,
+      "rank_overall": 2127,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29722999132",
+      "opponent_rank": 199,
+      "opponent_name": "McKinnley Robbins",
+      "method": "Fall 2:37"
+    },
+    "worst_loss": {
+      "opponent_id": "29681159132",
+      "opponent_rank": 238,
+      "opponent_name": "Q`veli Quintanilla",
+      "method": "TF 19-2 5:17"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-22",
       "opponent_id": "29722999132",
+      "opponent_career_id": null,
       "opponent_name": "McKinnley Robbins",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 41,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 199,
       "weight_class": "149",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:37",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": 3.39
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29687832132",
+      "opponent_career_id": null,
       "opponent_name": "Gavin Fernandez",
       "opponent_team": "Cal Poly",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 19,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 194,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "2:12",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": -6.71
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29684509132",
+      "opponent_career_id": null,
       "opponent_name": "Darren Green",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 127,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "11-1",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": -4.48
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29681159132",
+      "opponent_career_id": null,
       "opponent_name": "Q`veli Quintanilla",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 238,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "19-2",
       "duration": "5:17",
-      "event": "Menlo Invite"
+      "event": "Menlo Invite",
+      "mv_impact": -7.51
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34934024132",
+      "team": "California Baptist",
+      "team_slug": "california_baptist",
+      "weight_class": 149,
+      "grade": "R-Fr.",
+      "current_rank": 156,
+      "record": "0-4"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29684520132",
+      "team": "California Baptist",
+      "team_slug": "california_baptist",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 240,
+      "record": "1-3"
+    }
+  ]
 }

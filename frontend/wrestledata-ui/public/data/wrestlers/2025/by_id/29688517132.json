@@ -3,15 +3,20 @@
   "name": "Owen Hendricks",
   "team": "The Citadel",
   "team_slug": "the_citadel",
-  "team_rank": 75,
+  "team_rank": 50,
   "weight_class": 174,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 227,
   "record": {
     "overall": "1-8",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-8",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 5.67,
@@ -24,152 +29,209 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.175,
+      "matches": 9,
+      "rank_weight": 230,
+      "rank_overall": 2262,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29674110132",
+      "opponent_rank": 232,
+      "opponent_name": "Jesse Mullis",
+      "method": "Dec 8-5"
+    },
+    "worst_loss": {
+      "opponent_id": "29681699132",
+      "opponent_rank": 246,
+      "opponent_name": "Charles McTorry III",
+      "method": "Fall 5:28"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-23",
       "opponent_id": "29681699132",
+      "opponent_career_id": null,
       "opponent_name": "Charles McTorry III",
       "opponent_team": "Chattanooga",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 51,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 246,
       "weight_class": "174",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "5:28",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": -8.47
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29677466132",
+      "opponent_career_id": null,
       "opponent_name": "Marc Koch",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 161,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "9-0",
       "duration": "7:00",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": -5.21
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29674110132",
+      "opponent_career_id": null,
       "opponent_name": "Jesse Mullis",
       "opponent_team": "NC State",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 14,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 232,
       "weight_class": "174",
       "result": "W",
       "method": "DEC",
       "score": "8-5",
       "duration": "7:00",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": -0.05
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29727161132",
+      "opponent_career_id": null,
       "opponent_name": "Lucas Uliano",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 28,
       "weight_class": "174",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:17",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -4.16
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29676021132",
+      "opponent_career_id": null,
       "opponent_name": "Sabino Portella",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 187,
       "weight_class": "174",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "2:58",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -7.01
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29682281132",
+      "opponent_career_id": null,
       "opponent_name": "Breon Phifer",
       "opponent_team": "American",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 59,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 206,
       "weight_class": "174",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:15",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": -8.6
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29683821132",
+      "opponent_career_id": null,
       "opponent_name": "Myles Takats",
       "opponent_team": "Bucknell",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 43,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 19,
       "weight_class": "174",
       "result": "L",
       "method": "TF",
       "score": "18-3",
       "duration": "4:32",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": -3.29
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29721833132",
+      "opponent_career_id": null,
       "opponent_name": "Jack Ganos",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 113,
       "weight_class": "174",
       "result": "L",
       "method": "TF",
       "score": "19-3",
       "duration": "5:17",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -5.31
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29681457132",
+      "opponent_career_id": null,
       "opponent_name": "Riley Hackworth",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 170,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "11-8",
       "duration": "7:00",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -4.45
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34946243132",
+      "team": "The Citadel",
+      "team_slug": "the_citadel",
+      "weight_class": 174,
+      "grade": "R-Fr.",
+      "current_rank": 148,
+      "record": "3-6"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29688517132",
+      "team": "The Citadel",
+      "team_slug": "the_citadel",
+      "weight_class": 174,
+      "grade": "",
+      "current_rank": 227,
+      "record": "1-8"
+    }
+  ]
 }

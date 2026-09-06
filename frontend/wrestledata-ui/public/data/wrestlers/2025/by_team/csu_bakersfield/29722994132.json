@@ -3,13 +3,18 @@
   "name": "Coen Quintana",
   "team": "CSU Bakersfield",
   "team_slug": "csu_bakersfield",
-  "team_rank": 43,
+  "team_rank": 22,
   "weight_class": 174,
+  "grade": "So.",
+  "hometown": "Dinuba, Calif.",
+  "high_school": "Dinuba HS",
+  "photo_url": "https://gorunners.com/images/2024/10/8/Coen_Quintana_DD___2_.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 235,
   "record": {
     "overall": "2-7",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-7",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,152 +29,219 @@
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.66,
+      "matches": 10,
+      "rank_weight": 172,
+      "rank_overall": 1722,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29684535132",
+      "opponent_rank": 127,
+      "opponent_name": "David Alonso",
+      "method": "MD 14-6"
+    },
+    "worst_loss": {
+      "opponent_id": "29721833132",
+      "opponent_rank": 113,
+      "opponent_name": "Jack Ganos",
+      "method": "TF 15-0 7:00"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-16",
       "opponent_id": "29675932132",
+      "opponent_career_id": null,
       "opponent_name": "Devin Wasley",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 48,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 62,
       "weight_class": "174",
       "result": "L",
       "method": "TF",
       "score": "16-0",
       "duration": "7:00",
-      "event": "vs. North Dakota State"
+      "event": "vs. North Dakota State",
+      "mv_impact": -4.74
     },
     {
       "date": "2025-02-16",
       "opponent_id": "29686919132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler Brennan",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 15,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "weight_class": "174",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:10",
-      "event": "vs. Little Rock"
+      "event": "vs. Little Rock",
+      "mv_impact": -4.63
     },
     {
       "date": "2025-02-09",
       "opponent_id": "29721833132",
+      "opponent_career_id": null,
       "opponent_name": "Jack Ganos",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 113,
       "weight_class": "174",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "7:00",
-      "event": "vs. CSU Bakersfield"
+      "event": "vs. CSU Bakersfield",
+      "mv_impact": -5.31
     },
     {
       "date": "2025-02-02",
       "opponent_id": "29687537132",
+      "opponent_career_id": null,
       "opponent_name": "Murphy Menke",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 41,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 52,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "16-4",
       "duration": "7:00",
-      "event": "vs. Oregon State"
+      "event": "vs. Oregon State",
+      "mv_impact": -3.48
     },
     {
       "date": "2025-01-26",
       "opponent_id": "29682536132",
+      "opponent_career_id": null,
       "opponent_name": "Austin Craft",
       "opponent_team": "American",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 59,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 165,
       "weight_class": "174",
       "result": "W",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "vs. CSU Bakersfield"
+      "event": "vs. CSU Bakersfield",
+      "mv_impact": 1.97
     },
     {
       "date": "2025-01-26",
       "opponent_id": "29672730132",
+      "opponent_career_id": null,
       "opponent_name": "Riley Augustine",
       "opponent_team": "Campbell",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 55,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 65,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "vs. Campbell"
+      "event": "vs. Campbell",
+      "mv_impact": -2.55
     },
     {
       "date": "2024-12-22",
       "opponent_id": "29681178132",
+      "opponent_career_id": null,
       "opponent_name": "Hudson Rogers",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 96,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "11-0",
       "duration": "7:00",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": -4.1
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29684514132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Espinoza",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 99,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": -3.25
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29684535132",
+      "opponent_career_id": null,
       "opponent_name": "David Alonso",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 127,
       "weight_class": "165",
       "result": "W",
       "method": "MD",
       "score": "14-6",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": 2.75
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34962145132",
+      "team": "CSU Bakersfield",
+      "team_slug": "csu_bakersfield",
+      "weight_class": 165,
+      "grade": "R-So.",
+      "current_rank": 107,
+      "record": "5-8"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29722994132",
+      "team": "CSU Bakersfield",
+      "team_slug": "csu_bakersfield",
+      "weight_class": 174,
+      "grade": "So.",
+      "current_rank": 235,
+      "record": "2-7"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24595541132",
+      "team": "CSU Bakersfield",
+      "team_slug": "csu_bakersfield",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 155,
+      "record": "1-4"
+    }
+  ]
 }

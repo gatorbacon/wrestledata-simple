@@ -3,13 +3,18 @@
   "name": "Markos Mihalopoulos",
   "team": "Campbell",
   "team_slug": "campbell",
-  "team_rank": 45,
+  "team_rank": 55,
   "weight_class": 285,
+  "grade": "Fr.",
+  "hometown": "Huntley, Ill.",
+  "high_school": "Huntley HS",
+  "photo_url": "https://gocamels.com/images/2024/9/12/Mihalopoulos_Marko_03_.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 253,
   "record": {
     "overall": "1-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,112 +24,153 @@
     "pd7": -5.5,
     "si_plus": 87.8,
     "df_plus": 100.5,
-    "apr_plus": 101.6,
+    "apr_plus": 101.5,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -4.602,
+      "matches": 6,
+      "rank_weight": 205,
+      "rank_overall": 2172,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29672624132",
+      "opponent_rank": 277,
+      "opponent_name": "Samuel Dickey",
+      "method": "Fall 3:48"
+    },
+    "worst_loss": {
+      "opponent_id": "29677478132",
+      "opponent_rank": 286,
+      "opponent_name": "DJ Spring II",
+      "method": "Dec 4-2"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-02",
       "opponent_id": "29677478132",
+      "opponent_career_id": null,
       "opponent_name": "DJ Spring II",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 286,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "2025 Newberry Open"
+      "event": "2025 Newberry Open",
+      "mv_impact": -6.34
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29721656132",
+      "opponent_career_id": null,
       "opponent_name": "Will Sather",
       "opponent_team": "Princeton",
-      "opponent_team_rank": 32,
+      "opponent_team_rank": 37,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 232,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:34",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -7.95
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29722734132",
+      "opponent_career_id": null,
       "opponent_name": "Shane Whitney",
       "opponent_team": "Drexel",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 67,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 214,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "6:20",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -7.91
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29672148132",
+      "opponent_career_id": null,
       "opponent_name": "Parker Ferrell",
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 6,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 67,
       "weight_class": "285",
       "result": "L",
       "method": "MD",
       "score": "11-2",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -3.44
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29733386132",
+      "opponent_career_id": null,
       "opponent_name": "Brenan Morgan",
       "opponent_team": "Virginia",
-      "opponent_team_rank": 78,
+      "opponent_team_rank": 42,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 55,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:23",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -4.86
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29672624132",
+      "opponent_career_id": null,
       "opponent_name": "Samuel Dickey",
       "opponent_team": "VMI",
-      "opponent_team_rank": 77,
+      "opponent_team_rank": 79,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 277,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:48",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": 2.9
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29673083132",
+      "team": "Campbell",
+      "team_slug": "campbell",
+      "weight_class": 285,
+      "grade": "Fr.",
+      "current_rank": 253,
+      "record": "1-5"
+    }
+  ]
 }

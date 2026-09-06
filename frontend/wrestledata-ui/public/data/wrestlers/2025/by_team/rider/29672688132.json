@@ -3,15 +3,20 @@
   "name": "Kevin McBride",
   "team": "Rider",
   "team_slug": "rider",
-  "team_rank": 72,
+  "team_rank": 34,
   "weight_class": 165,
+  "grade": "So.",
+  "hometown": "Morganville, NJ",
+  "high_school": "Saint John Vianney",
+  "photo_url": "https://gobroncs.com/images/2024/10/17/101124_Wrestling_082_3XtEk.JPG",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 285,
   "record": {
     "overall": "0-9",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-9",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 3.45,
@@ -24,152 +29,214 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.778,
+      "matches": 9,
+      "rank_weight": 242,
+      "rank_overall": 2324,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 9,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29672229132",
+      "opponent_rank": 281,
+      "opponent_name": "Calvin Pineda",
+      "method": "SV-3 11-8"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-16",
       "opponent_id": "29685916132",
+      "opponent_career_id": null,
       "opponent_name": "Damon Michaels",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 233,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "6:30",
-      "event": "Mat-Town Open II"
+      "event": "Mat-Town Open II",
+      "mv_impact": -7.67
     },
     {
       "date": "2025-02-16",
       "opponent_id": "29719893132",
+      "opponent_career_id": null,
       "opponent_name": "Jack Valentin",
       "opponent_team": "LIU",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 73,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 263,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "6:01",
-      "event": "Mat-Town Open II"
+      "event": "Mat-Town Open II",
+      "mv_impact": -8.41
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29687480132",
+      "opponent_career_id": null,
       "opponent_name": "Evan Gleason",
       "opponent_team": "Harvard",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 71,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 168,
       "weight_class": "165",
       "result": "L",
       "method": "MD",
       "score": "13-4",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -5.58
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29681758132",
+      "opponent_career_id": null,
       "opponent_name": "Grant Mackay",
       "opponent_team": "Pittsburgh",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 21,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 115,
       "weight_class": "165",
       "result": "L",
       "method": "MD",
       "score": "15-1",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -4.24
     },
     {
       "date": "2025-01-04",
       "opponent_id": "29677585132",
+      "opponent_career_id": null,
       "opponent_name": "Leo Hess",
       "opponent_team": "Bloomsburg",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 61,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 266,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Bobby Kauffman Open"
+      "event": "Bobby Kauffman Open",
+      "mv_impact": -5.92
     },
     {
       "date": "2025-01-04",
       "opponent_id": "29685924132",
+      "opponent_career_id": null,
       "opponent_name": "Alaa Aly",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 241,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "9-2",
       "duration": "7:00",
-      "event": "Bobby Kauffman Open"
+      "event": "Bobby Kauffman Open",
+      "mv_impact": -5.3
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29678054132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler Brignola",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 254,
       "weight_class": "165",
       "result": "L",
       "method": "MD",
       "score": "10-0",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -6.51
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29680137132",
+      "opponent_career_id": null,
       "opponent_name": "Gunner Filipowicz",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 20,
       "weight_class": "165",
       "result": "L",
       "method": "TF",
       "score": "23-4",
       "duration": "3:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -2.64
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29672229132",
+      "opponent_career_id": null,
       "opponent_name": "Calvin Pineda",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 78,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 281,
       "weight_class": "165",
       "result": "L",
       "method": "SV-3",
       "score": "11-8",
       "duration": "8:15",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -5.73
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34934838132",
+      "team": "Rider",
+      "team_slug": "rider",
+      "weight_class": 174,
+      "grade": "Jr.",
+      "current_rank": 159,
+      "record": "0-2"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29672688132",
+      "team": "Rider",
+      "team_slug": "rider",
+      "weight_class": 165,
+      "grade": "So.",
+      "current_rank": 285,
+      "record": "0-9"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24594619132",
+      "team": "Rider",
+      "team_slug": "rider",
+      "weight_class": 165,
+      "grade": "Fr.",
+      "current_rank": 297,
+      "record": "0-9"
+    }
+  ]
 }

@@ -3,13 +3,18 @@
   "name": "Noah Tocaben",
   "team": "LIU",
   "team_slug": "liu",
-  "team_rank": 61,
+  "team_rank": 73,
   "weight_class": 149,
+  "grade": "R-Fr.",
+  "hometown": "Asheville, N.C.",
+  "high_school": "Enka",
+  "photo_url": "https://www.liuathletics.com/images/2024/12/3/bce25570-924d-4eff-a8fe-82f7aebb0132.png",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 264,
   "record": {
     "overall": "0-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,47 +29,95 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.134,
+      "matches": 2,
+      "rank_weight": 263,
+      "rank_overall": 2259,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29673109132",
+      "opponent_rank": 287,
+      "opponent_name": "Billy Templeton",
+      "method": "SV-1 6-5"
+    }
   },
   "match_list": [
     {
       "date": "2025-03-02",
       "opponent_id": "29673109132",
+      "opponent_career_id": null,
       "opponent_name": "Billy Templeton",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 287,
       "weight_class": "149",
       "result": "L",
       "method": "SV-1",
       "score": "6-5",
       "duration": "8:15",
-      "event": "Zingo Nationals (The Open)"
+      "event": "Zingo Nationals (The Open)",
+      "mv_impact": -5.64
     },
     {
       "date": "2025-03-02",
       "opponent_id": "29681452132",
+      "opponent_career_id": null,
       "opponent_name": "Nicholas Villani",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 31,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 100,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "21-5",
       "duration": "4:18",
-      "event": "Zingo Nationals (The Open)"
+      "event": "Zingo Nationals (The Open)",
+      "mv_impact": -4.63
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34953927132",
+      "team": "LIU",
+      "team_slug": "liu",
+      "weight_class": 149,
+      "grade": "R-Fr.",
+      "current_rank": 265,
+      "record": "3-3"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29672400132",
+      "team": "LIU",
+      "team_slug": "liu",
+      "weight_class": 149,
+      "grade": "R-Fr.",
+      "current_rank": 264,
+      "record": "0-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24593372132",
+      "team": "LIU",
+      "team_slug": "liu",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 293,
+      "record": "1-5"
+    }
+  ]
 }

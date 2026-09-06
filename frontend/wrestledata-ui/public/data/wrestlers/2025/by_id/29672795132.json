@@ -3,15 +3,20 @@
   "name": "Seth Larson",
   "team": "Campbell",
   "team_slug": "campbell",
-  "team_rank": 45,
+  "team_rank": 55,
   "weight_class": 157,
+  "grade": "Fr.",
+  "hometown": "Flowery Branch, Ga.",
+  "high_school": "Flowery Branch HS",
+  "photo_url": "https://gocamels.com/images/2024/9/12/Larson_Seth_03_.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 234,
   "record": {
     "overall": "1-7",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "1-7",
+    "vs_top10": "0-2",
+    "vs_top25": "0-4"
   },
   "metrics": {
     "pf7": 2.54,
@@ -19,142 +24,197 @@
     "pd7": -5.59,
     "si_plus": 91.7,
     "df_plus": 100.1,
-    "apr_plus": 97.6,
+    "apr_plus": 97.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.769,
+      "matches": 9,
+      "rank_weight": 176,
+      "rank_overall": 1449,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 7,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 2,
+    "win_over_highest_rank": {
+      "opponent_id": "29684533132",
+      "opponent_rank": 88,
+      "opponent_name": "Daniel Manibog",
+      "method": "Dec 4-2"
+    },
+    "worst_loss": {
+      "opponent_id": "29684785132",
+      "opponent_rank": 92,
+      "opponent_name": "Sasha Gavronsky",
+      "method": "Dec 8-2"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-21",
       "opponent_id": "29675815132",
+      "opponent_career_id": null,
       "opponent_name": "Gabriel Schumm",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 48,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 63,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "vs. North Dakota State"
+      "event": "vs. North Dakota State",
+      "mv_impact": -2.59
     },
     {
       "date": "2024-12-21",
       "opponent_id": "29684785132",
+      "opponent_career_id": null,
       "opponent_name": "Sasha Gavronsky",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 92,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "vs. West Virginia"
+      "event": "vs. West Virginia",
+      "mv_impact": -3.29
     },
     {
       "date": "2024-12-21",
       "opponent_id": "29672415132",
+      "opponent_career_id": null,
       "opponent_name": "Luke Mechler",
       "opponent_team": "Wisconsin",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 33,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 91,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "11-2",
       "duration": "7:00",
-      "event": "vs. Wisconsin"
+      "event": "vs. Wisconsin",
+      "mv_impact": -4.36
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29734791132",
+      "opponent_career_id": null,
       "opponent_name": "Tommy Askey",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 7,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 8,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "13-1",
       "duration": "7:00",
-      "event": "vs. Minnesota"
+      "event": "vs. Minnesota",
+      "mv_impact": -2.08
     },
     {
       "date": "2024-11-15",
       "opponent_id": "29673832132",
+      "opponent_career_id": null,
       "opponent_name": "Antrell Taylor",
       "opponent_team": "Nebraska",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 2,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 2,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:10",
-      "event": "vs. Nebraska"
+      "event": "vs. Nebraska",
+      "mv_impact": -2.98
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29684533132",
+      "opponent_career_id": null,
       "opponent_name": "Daniel Manibog",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 88,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "vs. Campbell"
+      "event": "vs. Campbell",
+      "mv_impact": 3.01
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29674042132",
+      "opponent_career_id": null,
       "opponent_name": "Ed Scott",
       "opponent_team": "NC State",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 14,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 24,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:09",
-      "event": "vs. NC State"
+      "event": "vs. NC State",
+      "mv_impact": -4.55
     },
     {
       "date": "2024-10-31",
       "opponent_id": "29688285132",
+      "opponent_career_id": null,
       "opponent_name": "Jared Hill",
       "opponent_team": "Wyoming",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 35,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 18,
       "weight_class": "157",
       "result": "L",
       "method": "SV-1",
       "score": "8-5",
       "duration": "8:15",
-      "event": "vs. Wyoming"
+      "event": "vs. Wyoming",
+      "mv_impact": -2.09
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34964233132",
+      "team": "Central Michigan",
+      "team_slug": "central_michigan",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 208,
+      "record": "4-9"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29672795132",
+      "team": "Campbell",
+      "team_slug": "campbell",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 234,
+      "record": "1-7"
+    }
+  ]
 }

@@ -3,13 +3,18 @@
   "name": "Al DeSantis",
   "team": "Rutgers",
   "team_slug": "rutgers",
-  "team_rank": 13,
+  "team_rank": 31,
   "weight_class": 165,
+  "grade": "Sr.",
+  "hometown": "Oceanport, N.J.",
+  "high_school": "Shore Regional",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fscarletknights.com%2Fimages%2F2024%2F9%2F30%2FDeSantis.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 185,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,67 +24,142 @@
     "pd7": -4.67,
     "si_plus": 98.2,
     "df_plus": 98.8,
-    "apr_plus": 96.9,
+    "apr_plus": 97.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.446,
+      "matches": 4,
+      "rank_weight": 135,
+      "rank_overall": 1342,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29672664132",
+      "opponent_rank": 126,
+      "opponent_name": "Cole McComas",
+      "method": "Dec 10-8"
+    },
+    "worst_loss": {
+      "opponent_id": "29672408132",
+      "opponent_rank": 41,
+      "opponent_name": "Lucas Condon",
+      "method": "MD 14-4"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-19",
       "opponent_id": "29672408132",
+      "opponent_career_id": null,
       "opponent_name": "Lucas Condon",
       "opponent_team": "Wisconsin",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 33,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 41,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "14-4",
       "duration": "7:00",
-      "event": "vs. Wisconsin"
+      "event": "vs. Wisconsin",
+      "mv_impact": -3.49
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29672690132",
+      "opponent_career_id": null,
       "opponent_name": "Enrique Munguia",
       "opponent_team": "Rider",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 34,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 28,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -1.31
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29672664132",
+      "opponent_career_id": null,
       "opponent_name": "Cole McComas",
       "opponent_team": "Rider",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 34,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 126,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": "10-8",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": 2.49
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29681402132",
+      "team": "Rutgers",
+      "team_slug": "rutgers",
+      "weight_class": 165,
+      "grade": "Sr.",
+      "current_rank": 185,
+      "record": "1-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24582404132",
+      "team": "Rutgers",
+      "team_slug": "rutgers",
+      "weight_class": 157,
+      "grade": "Jr.",
+      "current_rank": 120,
+      "record": "8-13"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20130815132",
+      "team": "Rutgers",
+      "team_slug": "rutgers",
+      "weight_class": 165,
+      "grade": "So.",
+      "current_rank": 57,
+      "record": "13-8"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16701809132",
+      "team": "Rutgers",
+      "team_slug": "rutgers",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 74,
+      "record": "10-7"
+    },
+    {
+      "season": 2021,
+      "wrestler_id": "14863983132",
+      "team": "Rutgers",
+      "team_slug": "rutgers",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 147,
+      "record": "0-0"
+    }
+  ]
 }

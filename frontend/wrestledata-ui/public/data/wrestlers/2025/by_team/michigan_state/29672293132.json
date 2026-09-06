@@ -3,13 +3,18 @@
   "name": "Evan Herriman",
   "team": "Michigan State",
   "team_slug": "michigan_state",
-  "team_rank": 63,
+  "team_rank": 74,
   "weight_class": 141,
+  "grade": "R-Fr.",
+  "hometown": "Flint, Mich.",
+  "high_school": "Davison",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fmsuspartans.com%2Fimages%2F2024%2F10%2F7%2FWrestling_Cropped_2024-25_Herriman_Evan_Cropped.jpg&width=100&height=100&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 181,
   "record": {
     "overall": "2-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,55 +29,77 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.664,
+      "matches": 7,
+      "rank_weight": 184,
+      "rank_overall": 1724,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29686126132",
+      "opponent_rank": 248,
+      "opponent_name": "Sammy Agnello",
+      "method": "Dec 6-4"
+    },
+    "worst_loss": {
+      "opponent_id": "29681410132",
+      "opponent_rank": 179,
+      "opponent_name": "Max Hermes",
+      "method": "M. For."
+    }
   },
   "match_list": [
     {
       "date": "2025-01-19",
       "opponent_id": "29685061132",
+      "opponent_career_id": null,
       "opponent_name": "Dylan Layton",
       "opponent_team": "Cleveland State",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 56,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 60,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "12-4",
       "duration": "7:00",
-      "event": "Purple Raider Open"
+      "event": "Purple Raider Open",
+      "mv_impact": -3.1
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29684503132",
+      "opponent_career_id": null,
       "opponent_name": "Elijah Griffin",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 83,
       "weight_class": "141",
       "result": "L",
       "method": "INJ",
       "score": null,
       "duration": "0:54",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -5.31
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29681410132",
+      "opponent_career_id": null,
       "opponent_name": "Max Hermes",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 31,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 179,
       "weight_class": "141",
       "result": "L",
       "method": "MFF",
@@ -83,63 +110,103 @@
     {
       "date": "2024-12-15",
       "opponent_id": "29722995132",
+      "opponent_career_id": null,
       "opponent_name": "Hayden Zinkin",
       "opponent_team": "CSU Bakersfield",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 22,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 278,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "3-0",
       "duration": "7:00",
-      "event": "vs. Michigan State"
+      "event": "vs. Michigan State",
+      "mv_impact": 0.3
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29734982132",
+      "opponent_career_id": null,
       "opponent_name": "Nick Blackburn",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 45,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 56,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "11-5",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": -2.14
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29686126132",
+      "opponent_career_id": null,
       "opponent_name": "Sammy Agnello",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 248,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": 0.28
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29682563132",
+      "opponent_career_id": null,
       "opponent_name": "Cole Solomey",
       "opponent_team": "Purdue",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 12,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 174,
       "weight_class": "141",
       "result": "L",
       "method": "MD",
       "score": "11-0",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": -5.58
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34933984132",
+      "team": "Michigan State",
+      "team_slug": "michigan_state",
+      "weight_class": 157,
+      "grade": "R-So.",
+      "current_rank": 202,
+      "record": "2-8"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29672293132",
+      "team": "Michigan State",
+      "team_slug": "michigan_state",
+      "weight_class": 141,
+      "grade": "R-Fr.",
+      "current_rank": 181,
+      "record": "2-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24586515132",
+      "team": "Michigan State",
+      "team_slug": "michigan_state",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 195,
+      "record": "3-6"
+    }
+  ]
 }

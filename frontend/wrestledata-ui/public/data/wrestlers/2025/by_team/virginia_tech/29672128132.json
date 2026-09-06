@@ -5,13 +5,18 @@
   "team_slug": "virginia_tech",
   "team_rank": 6,
   "weight_class": 149,
+  "grade": "Redshirt Freshman",
+  "hometown": "Wayne, NJ",
+  "high_school": "Bergen Catholic",
+  "photo_url": "https://hokiesports.com/imgproxy/bsJ25-ctDEeR9iui-tpcMnCgsXNZQYvhAYMGWjtrXy8/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3ZpcmdpbmlhdGVjaC1wcm9kLzIwMjQvMTAvMjQvbjc1ZUxTWHl1aE1Pc2xpYm9HT2hycGw5OU42R0JwRDNXd1FDZDV3cC5qcGc.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 205,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "1-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 5.0,
@@ -24,62 +29,117 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.833,
+      "matches": 3,
+      "rank_weight": 228,
+      "rank_overall": 2001,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29681744132",
+      "opponent_rank": 253,
+      "opponent_name": "Bretli Reyna",
+      "method": "Dec 5-4"
+    },
+    "worst_loss": {
+      "opponent_id": "29689060132",
+      "opponent_rank": 256,
+      "opponent_name": "Sean O`Donnell",
+      "method": "Fall 3:43"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-24",
       "opponent_id": "29689060132",
+      "opponent_career_id": null,
       "opponent_name": "Sean O`Donnell",
       "opponent_team": "Duke",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 68,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 256,
       "weight_class": "149",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:43",
-      "event": "vs. Virginia Tech"
+      "event": "vs. Virginia Tech",
+      "mv_impact": -8.14
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29681744132",
+      "opponent_career_id": null,
       "opponent_name": "Bretli Reyna",
       "opponent_team": "Chattanooga",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 51,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 253,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": 0.29
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29676006132",
+      "opponent_career_id": null,
       "opponent_name": "Lachlan McNeil",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 5,
       "weight_class": "149",
       "result": "L",
       "method": "INJ",
       "score": null,
       "duration": "3:35",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -3.65
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34933360132",
+      "team": "Virginia Tech",
+      "team_slug": "virginia_tech",
+      "weight_class": 149,
+      "grade": "Redshirt Sophomore",
+      "current_rank": 150,
+      "record": "0-7"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29672128132",
+      "team": "Virginia Tech",
+      "team_slug": "virginia_tech",
+      "weight_class": 149,
+      "grade": "Redshirt Freshman",
+      "current_rank": 205,
+      "record": "1-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24586397132",
+      "team": "Virginia Tech",
+      "team_slug": "virginia_tech",
+      "weight_class": 141,
+      "grade": "Freshman",
+      "current_rank": 179,
+      "record": "3-3"
+    }
+  ]
 }

@@ -3,13 +3,18 @@
   "name": "Eugene Harney",
   "team": "Campbell",
   "team_slug": "campbell",
-  "team_rank": 45,
+  "team_rank": 55,
   "weight_class": 149,
+  "grade": "Fr.",
+  "hometown": "Cincinnati, Ohio",
+  "high_school": "Sycamore HS",
+  "photo_url": "https://gocamels.com/images/2024/9/12/Harney_Eugene_02_.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 197,
   "record": {
     "overall": "2-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,70 +29,94 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.822,
+      "matches": 4,
+      "rank_weight": 133,
+      "rank_overall": 1140,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29688274132",
+      "opponent_rank": 43,
+      "opponent_name": "Gabe Willochell",
+      "method": "Dec 4-0"
+    },
+    "worst_loss": {
+      "opponent_id": "32058150132",
+      "opponent_rank": 178,
+      "opponent_name": "Layton Schneider",
+      "method": "MD 13-2"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-05",
       "opponent_id": "29682295132",
+      "opponent_career_id": null,
       "opponent_name": "Gage Owen",
       "opponent_team": "American",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 59,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 254,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "11-4",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": 1.36
     },
     {
       "date": "2025-01-05",
       "opponent_id": "32058150132",
+      "opponent_career_id": null,
       "opponent_name": "Layton Schneider",
       "opponent_team": "Oklahoma",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 40,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 178,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "13-2",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -5.66
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29672301132",
+      "opponent_career_id": null,
       "opponent_name": "Kyle Schickel",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 72,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "2-1",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -2.54
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29684523132",
+      "opponent_career_id": null,
       "opponent_name": "Paul Kelly",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 56,
       "weight_class": "149",
       "result": "L",
       "method": "DFLT",
@@ -98,18 +127,42 @@
     {
       "date": "2024-10-31",
       "opponent_id": "29688274132",
+      "opponent_career_id": null,
       "opponent_name": "Gabe Willochell",
       "opponent_team": "Wyoming",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 35,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 43,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "4-0",
       "duration": "7:00",
-      "event": "vs. Wyoming"
+      "event": "vs. Wyoming",
+      "mv_impact": 3.56
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34977466132",
+      "team": "Morgan State",
+      "team_slug": "morgan_state",
+      "weight_class": 149,
+      "grade": "So.",
+      "current_rank": 27,
+      "record": "29-6"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29672756132",
+      "team": "Campbell",
+      "team_slug": "campbell",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 197,
+      "record": "2-3"
+    }
+  ]
 }

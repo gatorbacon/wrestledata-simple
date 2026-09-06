@@ -3,13 +3,18 @@
   "name": "Justin Soriano",
   "team": "Drexel",
   "team_slug": "drexel",
-  "team_rank": 52,
+  "team_rank": 67,
   "weight_class": 157,
+  "grade": "R-Fr.",
+  "hometown": "Westbury, N.Y.",
+  "high_school": "W.T. Clarke",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fdrexeldragons.com%2Fimages%2F2024%2F9%2F23%2FJustin_Soriano-Wrestling-Cropped.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 261,
   "record": {
     "overall": "2-7",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-7",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,152 +29,219 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.481,
+      "matches": 11,
+      "rank_weight": 227,
+      "rank_overall": 1915,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29722713132",
+      "opponent_rank": 276,
+      "opponent_name": "Aboubakare Diaby",
+      "method": "Dec 7-3"
+    },
+    "worst_loss": {
+      "opponent_id": "29672135132",
+      "opponent_rank": 235,
+      "opponent_name": "Luke Robie",
+      "method": "Fall 2:03"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29680125132",
+      "opponent_career_id": null,
       "opponent_name": "Trae McDaniel",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:19",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -4.61
     },
     {
       "date": "2025-01-04",
       "opponent_id": "29680473132",
+      "opponent_career_id": null,
       "opponent_name": "Benjamin Rogers",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 60,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "19-2",
       "duration": "3:00",
-      "event": "Bobby Kauffman Open"
+      "event": "Bobby Kauffman Open",
+      "mv_impact": -4.11
     },
     {
       "date": "2025-01-04",
       "opponent_id": "29684776132",
+      "opponent_career_id": null,
       "opponent_name": "Nick Cicciarelli",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 218,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "9-2",
       "duration": "7:00",
-      "event": "Bobby Kauffman Open"
+      "event": "Bobby Kauffman Open",
+      "mv_impact": -4.82
     },
     {
       "date": "2025-01-04",
       "opponent_id": "29726565132",
+      "opponent_career_id": null,
       "opponent_name": "Jadon Skellenger",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 11,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 79,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "13-0",
       "duration": "7:00",
-      "event": "Bobby Kauffman Open"
+      "event": "Bobby Kauffman Open",
+      "mv_impact": -3.6
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29672135132",
+      "opponent_career_id": null,
       "opponent_name": "Luke Robie",
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 6,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 235,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:03",
-      "event": "2024 PRTC Keystone Classic"
+      "event": "2024 PRTC Keystone Classic",
+      "mv_impact": -7.57
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29687492132",
+      "opponent_career_id": null,
       "opponent_name": "James Harrington",
       "opponent_team": "Harvard",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 71,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 41,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:57",
-      "event": "2024 PRTC Keystone Classic"
+      "event": "2024 PRTC Keystone Classic",
+      "mv_impact": -5.73
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29673109132",
+      "opponent_career_id": null,
       "opponent_name": "Billy Templeton",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 287,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "8-3",
       "duration": "7:00",
-      "event": "Shorty Hitchcock Memorial Open"
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": 0.36
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29722713132",
+      "opponent_career_id": null,
       "opponent_name": "Aboubakare Diaby",
       "opponent_team": "Drexel",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 67,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 276,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "7-3",
       "duration": "7:00",
-      "event": "Shorty Hitchcock Memorial Open"
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": 0.67
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29673127132",
+      "opponent_career_id": null,
       "opponent_name": "Jake Neill",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 199,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "Shorty Hitchcock Memorial Open"
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": -4.64
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34971907132",
+      "team": "Drexel",
+      "team_slug": "drexel",
+      "weight_class": 149,
+      "grade": "R-So.",
+      "current_rank": 306,
+      "record": "5-9"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29722733132",
+      "team": "Drexel",
+      "team_slug": "drexel",
+      "weight_class": 157,
+      "grade": "R-Fr.",
+      "current_rank": 261,
+      "record": "2-7"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24605729132",
+      "team": "Drexel",
+      "team_slug": "drexel",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 271,
+      "record": "1-4"
+    }
+  ]
 }

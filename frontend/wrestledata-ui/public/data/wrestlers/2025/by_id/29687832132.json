@@ -3,15 +3,20 @@
   "name": "Gavin Fernandez",
   "team": "Cal Poly",
   "team_slug": "cal_poly",
-  "team_rank": 9,
+  "team_rank": 19,
   "weight_class": 157,
+  "grade": "R-Fr.",
+  "hometown": "Danville, CA",
+  "high_school": "De La Salle HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgopoly.com%2Fimages%2F2024%2F11%2F7%2F_Gavin_Fernandez.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 194,
   "record": {
     "overall": "3-6",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "3-6",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 7.89,
@@ -24,152 +29,219 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 2,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.381,
+      "matches": 16,
+      "rank_weight": 163,
+      "rank_overall": 1328,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29687843132",
+      "opponent_rank": 228,
+      "opponent_name": "Hercules Windrath",
+      "method": "TF 16-0 4:12"
+    },
+    "worst_loss": {
+      "opponent_id": "29736343132",
+      "opponent_rank": 177,
+      "opponent_name": "Jacob Bostelman",
+      "method": "Dec 4-0"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-14",
       "opponent_id": "29723401132",
+      "opponent_career_id": null,
       "opponent_name": "Landen Johnson",
       "opponent_team": "Northern Illinois",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 49,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 39,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "11-0",
       "duration": "7:00",
-      "event": "vs. Northern Illinois"
+      "event": "vs. Northern Illinois",
+      "mv_impact": -3.14
     },
     {
       "date": "2025-02-14",
       "opponent_id": "29686927132",
+      "opponent_career_id": null,
       "opponent_name": "Matty Bianchi",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 15,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 4,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "16-0",
       "duration": "4:06",
-      "event": "vs. Little Rock"
+      "event": "vs. Little Rock",
+      "mv_impact": -2.56
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29687843132",
+      "opponent_career_id": null,
       "opponent_name": "Hercules Windrath",
       "opponent_team": "Cal Poly",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 19,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 228,
       "weight_class": "149",
       "result": "W",
       "method": "TF",
       "score": "16-0",
       "duration": "4:12",
-      "event": "Oaks Invite"
+      "event": "Oaks Invite",
+      "mv_impact": 2.43
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29687850132",
+      "opponent_career_id": null,
       "opponent_name": "Jagger French",
       "opponent_team": "Cal Poly",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 19,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 138,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "Oaks Invite"
+      "event": "Oaks Invite",
+      "mv_impact": -3.76
     },
     {
       "date": "2024-12-22",
       "opponent_id": "29687535132",
+      "opponent_career_id": null,
       "opponent_name": "Ayden Garver",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 41,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 61,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": -2.77
     },
     {
       "date": "2024-12-22",
       "opponent_id": "29687519132",
+      "opponent_career_id": null,
       "opponent_name": "Cade Gilbert",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 15,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 297,
       "weight_class": "149",
       "result": "W",
       "method": "MD",
       "score": "12-4",
       "duration": "7:00",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": 0.99
     },
     {
       "date": "2024-12-19",
       "opponent_id": "29736343132",
+      "opponent_career_id": null,
       "opponent_name": "Jacob Bostelman",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 39,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 177,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "4-0",
       "duration": "7:00",
-      "event": "vs. Northwestern"
+      "event": "vs. Northwestern",
+      "mv_impact": -4.88
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29684520132",
+      "opponent_career_id": null,
       "opponent_name": "Dylan Guillermo",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 240,
       "weight_class": "149",
       "result": "W",
       "method": "TF",
       "score": "15-0",
       "duration": "2:12",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": 2.49
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29685261132",
+      "opponent_career_id": null,
       "opponent_name": "Jaden Abas",
       "opponent_team": "Stanford",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 25,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 19,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "18-5",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": -2.69
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34936096132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 149,
+      "grade": "R-So.",
+      "current_rank": 177,
+      "record": "2-5"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29687832132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 157,
+      "grade": "R-Fr.",
+      "current_rank": 194,
+      "record": "3-6"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24597694132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 86,
+      "record": "2-0"
+    }
+  ]
 }

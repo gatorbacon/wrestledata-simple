@@ -3,15 +3,20 @@
   "name": "Thomas Bonasera",
   "team": "LIU",
   "team_slug": "liu",
-  "team_rank": 61,
+  "team_rank": 73,
   "weight_class": 149,
+  "grade": "So.",
+  "hometown": "Wantagh, N.Y.",
+  "high_school": "Wantagh",
+  "photo_url": "https://www.liuathletics.com/images/2024/12/3/9d4048fe-ab0c-4fd2-8e9e-d127a8ca23c2.png",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 279,
   "record": {
     "overall": "0-6",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 1.5,
@@ -24,85 +29,106 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.516,
+      "matches": 7,
+      "rank_weight": 222,
+      "rank_overall": 1925,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29681466132",
+      "opponent_rank": 151,
+      "opponent_name": "Michael Cetta",
+      "method": "Inj. 2:02"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-23",
       "opponent_id": "29672203132",
+      "opponent_career_id": null,
       "opponent_name": "Dakota Asuncion",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 78,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 125,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "6-2",
       "duration": "7:00",
-      "event": "vs. Sacred Heart"
+      "event": "vs. Sacred Heart",
+      "mv_impact": -2.94
     },
     {
       "date": "2025-01-12",
       "opponent_id": "29680140132",
+      "opponent_career_id": null,
       "opponent_name": "Dakota Morris",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 73,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "7-0",
       "duration": "7:00",
-      "event": "vs. LIU"
+      "event": "vs. LIU",
+      "mv_impact": -2.46
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29677475132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler-Xavier McKnight",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 63,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "5-3",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -2.39
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29687870132",
+      "opponent_career_id": null,
       "opponent_name": "Carson DesRosier",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 18,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "9-1",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -2.09
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29680125132",
+      "opponent_career_id": null,
       "opponent_name": "Trae McDaniel",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "weight_class": "149",
       "result": "L",
       "method": "MFF",
@@ -113,18 +139,42 @@
     {
       "date": "2024-11-24",
       "opponent_id": "29681466132",
+      "opponent_career_id": null,
       "opponent_name": "Michael Cetta",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 31,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 151,
       "weight_class": "149",
       "result": "L",
       "method": "INJ",
       "score": null,
       "duration": "2:02",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": -6.14
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29672393132",
+      "team": "LIU",
+      "team_slug": "liu",
+      "weight_class": 149,
+      "grade": "So.",
+      "current_rank": 279,
+      "record": "0-6"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24593298132",
+      "team": "LIU",
+      "team_slug": "liu",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 206,
+      "record": "3-5"
+    }
+  ]
 }

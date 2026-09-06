@@ -3,15 +3,20 @@
   "name": "Mykey Ramos",
   "team": "Arizona State",
   "team_slug": "arizona_state",
-  "team_rank": 25,
+  "team_rank": 27,
   "weight_class": 149,
+  "grade": "Senior",
+  "hometown": "Gilbert, Ariz.",
+  "high_school": "Casteel High School",
+  "photo_url": "https://thesundevils.com/imgproxy/xLaGItIFsZ60PeMKAGIyBU0KLY6ZmrEuzcgGsIkyRAs/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3RoZXN1bmRldmlscy1jb20tcHJvZC8yMDI1LzA1LzEzL2tCdGxVNjdMQWlCS1FnMDZwcUVUNDRKTGVkaVAzZlJhaUZWanY3bkUud2VicA.webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 145,
   "record": {
     "overall": "4-6",
-    "vs_ranked": "0-0",
+    "vs_ranked": "4-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 5.91,
@@ -24,167 +29,246 @@
     "bonus_rate": 0.25,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.878,
+      "matches": 11,
+      "rank_weight": 136,
+      "rank_overall": 1151,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29672628132",
+      "opponent_rank": 47,
+      "opponent_name": "Patrick Jordon",
+      "method": "TF 17-2 5:00"
+    },
+    "worst_loss": {
+      "opponent_id": "29680128132",
+      "opponent_rank": 249,
+      "opponent_name": "Shane Percelay",
+      "method": "Dec 10-6"
+    }
   },
   "match_list": [
     {
       "date": "2025-03-09",
       "opponent_id": "29675817132",
+      "opponent_career_id": null,
       "opponent_name": "Gavin Drexler",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 48,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 16,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "10-0",
       "duration": "7:00",
-      "event": "2025 Big 12 Championships"
+      "event": "2025 Big 12 Championships",
+      "mv_impact": -2.45
     },
     {
       "date": "2025-03-09",
       "opponent_id": "29687364132",
+      "opponent_career_id": null,
       "opponent_name": "Willie McDougald",
       "opponent_team": "Oklahoma",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 40,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 20,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "5-3",
       "duration": "7:00",
-      "event": "2025 Big 12 Championships"
+      "event": "2025 Big 12 Championships",
+      "mv_impact": -1.38
     },
     {
       "date": "2025-02-15",
       "opponent_id": "29680462132",
+      "opponent_career_id": null,
       "opponent_name": "Ethan Fernandez",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 23,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "20-4",
       "duration": "6:28",
-      "event": "vs. Cornell"
+      "event": "vs. Cornell",
+      "mv_impact": -3.6
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29721836132",
+      "opponent_career_id": null,
       "opponent_name": "Alec Viduya",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 244,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": 0.71
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29735189132",
+      "opponent_career_id": null,
       "opponent_name": "Jack Nelson",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 7,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 274,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "9-5",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -0.11
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29687467132",
+      "opponent_career_id": null,
       "opponent_name": "KJ Evans",
       "opponent_team": "Oklahoma",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 40,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 76,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -2.55
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29686882132",
+      "opponent_career_id": null,
       "opponent_name": "Ivan Garcia",
       "opponent_team": "Binghamton",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 32,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 80,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "5-3",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 3.34
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29672628132",
+      "opponent_career_id": null,
       "opponent_name": "Patrick Jordon",
       "opponent_team": "VMI",
-      "opponent_team_rank": 77,
+      "opponent_team_rank": 79,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 47,
       "weight_class": "149",
       "result": "W",
       "method": "TF",
       "score": "17-2",
       "duration": "5:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 6.34
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29680128132",
+      "opponent_career_id": null,
       "opponent_name": "Shane Percelay",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 249,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "10-6",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -5.38
     },
     {
       "date": "2024-11-01",
       "opponent_id": "29679141132",
+      "opponent_career_id": null,
       "opponent_name": "Jesse Vasquez",
       "opponent_team": "Arizona State",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 27,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 37,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "Maroon and Gold"
+      "event": "Maroon and Gold",
+      "mv_impact": -2.01
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29679143132",
+      "team": "Arizona State",
+      "team_slug": "arizona_state",
+      "weight_class": 149,
+      "grade": "Senior",
+      "current_rank": 145,
+      "record": "4-6"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24586084132",
+      "team": "Arizona State",
+      "team_slug": "arizona_state",
+      "weight_class": 149,
+      "grade": "Junior",
+      "current_rank": 60,
+      "record": "6-3"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20127740132",
+      "team": "Arizona State",
+      "team_slug": "arizona_state",
+      "weight_class": 149,
+      "grade": "Sophomore",
+      "current_rank": 190,
+      "record": "0-1"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16702797132",
+      "team": "Arizona State",
+      "team_slug": "arizona_state",
+      "weight_class": 141,
+      "grade": "Freshman",
+      "current_rank": 74,
+      "record": "6-8"
+    }
+  ]
 }

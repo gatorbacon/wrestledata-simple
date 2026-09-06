@@ -3,13 +3,18 @@
   "name": "Hayden Coy",
   "team": "Bloomsburg",
   "team_slug": "bloomsburg",
-  "team_rank": 39,
+  "team_rank": 61,
   "weight_class": 149,
+  "grade": "Fr.",
+  "hometown": "Jeannette, Pa.",
+  "high_school": "Penn Trafford",
+  "photo_url": "https://bloomsburgathletics.com/images/2024/10/10/_0019_Coy-Hayden.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 283,
   "record": {
     "overall": "1-6",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-6",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,122 +29,165 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.315,
+      "matches": 9,
+      "rank_weight": 216,
+      "rank_overall": 1879,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29673124132",
+      "opponent_rank": 281,
+      "opponent_name": "Seth Weaver",
+      "method": "Dec 9-5"
+    },
+    "worst_loss": {
+      "opponent_id": "29672416132",
+      "opponent_rank": 215,
+      "opponent_name": "Aidan Medora",
+      "method": "Dec 10-6"
+    }
   },
   "match_list": [
     {
       "date": "2025-03-02",
       "opponent_id": "29673124132",
+      "opponent_career_id": null,
       "opponent_name": "Seth Weaver",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 281,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "9-5",
       "duration": "7:00",
-      "event": "Zingo Nationals (The Open)"
+      "event": "Zingo Nationals (The Open)",
+      "mv_impact": 0.57
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29672416132",
+      "opponent_career_id": null,
       "opponent_name": "Aidan Medora",
       "opponent_team": "Wisconsin",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 33,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 215,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "10-6",
       "duration": "7:00",
-      "event": "vs. Wisconsin"
+      "event": "vs. Wisconsin",
+      "mv_impact": -5.43
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29680800132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Barvitskie",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 134,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "5:45",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": -5.27
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29672382132",
+      "opponent_career_id": null,
       "opponent_name": "Drew Witham",
       "opponent_team": "LIU",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 73,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 129,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "12-0",
       "duration": "7:00",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": -4.39
     },
     {
       "date": "2024-11-14",
       "opponent_id": "29676702132",
+      "opponent_career_id": null,
       "opponent_name": "Lucas Kapusta",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 32,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "18-3",
       "duration": "7:00",
-      "event": "vs. Lock Haven"
+      "event": "vs. Lock Haven",
+      "mv_impact": -3.49
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29681434132",
+      "opponent_career_id": null,
       "opponent_name": "Kaden Cassidy",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 31,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "0:51",
-      "event": "vs. George Mason"
+      "event": "vs. George Mason",
+      "mv_impact": -3.54
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29676306132",
+      "opponent_career_id": null,
       "opponent_name": "Landon Desselle",
       "opponent_team": "Ohio State",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 5,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 66,
       "weight_class": "149",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:03",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -4.43
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29677586132",
+      "team": "Bloomsburg",
+      "team_slug": "bloomsburg",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 283,
+      "record": "1-6"
+    }
+  ]
 }

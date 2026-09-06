@@ -3,13 +3,18 @@
   "name": "Logan Swaw",
   "team": "Illinois",
   "team_slug": "illinois",
-  "team_rank": 2,
+  "team_rank": 10,
   "weight_class": 157,
+  "grade": "So.",
+  "hometown": "Lockport, Ill.",
+  "high_school": "Lockport",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Ffightingillini.com%2Fimages%2F2024%2F9%2F16%2FSwaw_Logan_WEB_20240825_WRES_Headshot_KS_0400.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 77,
   "record": {
     "overall": "4-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "4-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,137 +29,202 @@
     "bonus_rate": 0.5,
     "majors": 2,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.076,
+      "matches": 9,
+      "rank_weight": 143,
+      "rank_overall": 1229,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29675647132",
+      "opponent_rank": 70,
+      "opponent_name": "Moses Espinoza-Owens",
+      "method": "SV-1 8-5"
+    },
+    "worst_loss": {
+      "opponent_id": "29684488132",
+      "opponent_rank": 83,
+      "opponent_name": "Eric Almarinez",
+      "method": "Dec 8-1"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-09",
       "opponent_id": "29684548132",
+      "opponent_career_id": null,
       "opponent_name": "PJ Murphy",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 72,
       "weight_class": "157",
       "result": "W",
       "method": "MD",
       "score": "11-1",
       "duration": "7:00",
-      "event": "Greyhound Open"
+      "event": "Greyhound Open",
+      "mv_impact": 4.25
     },
     {
       "date": "2025-02-09",
       "opponent_id": "29684488132",
+      "opponent_career_id": null,
       "opponent_name": "Eric Almarinez",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 83,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "8-1",
       "duration": "7:00",
-      "event": "Greyhound Open"
+      "event": "Greyhound Open",
+      "mv_impact": -3.13
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29687595132",
+      "opponent_career_id": null,
       "opponent_name": "Cael Rahnavardi",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 8,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 75,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "14-3",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -3.7
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29675647132",
+      "opponent_career_id": null,
       "opponent_name": "Moses Espinoza-Owens",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 24,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 70,
       "weight_class": "157",
       "result": "W",
       "method": "SV-1",
       "score": "8-5",
       "duration": "8:15",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 3.04
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29688269132",
+      "opponent_career_id": null,
       "opponent_name": "Sloan Swan",
       "opponent_team": "Wyoming",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 35,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 31,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:46",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -4.26
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29686574132",
+      "opponent_career_id": null,
       "opponent_name": "Blake Saito",
       "opponent_team": "Brown",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 62,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 26,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:59",
-      "event": "Kent State Open"
+      "event": "Kent State Open",
+      "mv_impact": -4.24
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29685878132",
+      "opponent_career_id": null,
       "opponent_name": "Gannon Jaquay",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 285,
       "weight_class": "157",
       "result": "W",
       "method": "MD",
       "score": "15-6",
       "duration": "7:00",
-      "event": "Kent State Open"
+      "event": "Kent State Open",
+      "mv_impact": 1.47
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29723346132",
+      "opponent_career_id": null,
       "opponent_name": "Brody Hallin",
       "opponent_team": "Northern Illinois",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 49,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 241,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "5-0",
       "duration": "7:00",
-      "event": "Kent State Open"
+      "event": "Kent State Open",
+      "mv_impact": 1.16
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34952081132",
+      "team": "Illinois",
+      "team_slug": "illinois",
+      "weight_class": 165,
+      "grade": "R-So.",
+      "current_rank": 194,
+      "record": "1-6"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29681848132",
+      "team": "Illinois",
+      "team_slug": "illinois",
+      "weight_class": 157,
+      "grade": "So.",
+      "current_rank": 77,
+      "record": "4-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24586686132",
+      "team": "Illinois",
+      "team_slug": "illinois",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 184,
+      "record": "5-10"
+    }
+  ]
 }

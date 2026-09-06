@@ -3,10 +3,15 @@
   "name": "Dean Houser",
   "team": "Lock Haven",
   "team_slug": "lock_haven",
-  "team_rank": 29,
+  "team_rank": 38,
   "weight_class": 133,
+  "grade": "Fr.",
+  "hometown": "Birdsboro, Pa.",
+  "high_school": null,
+  "photo_url": "https://lockhavenathletics.com/images/2024/9/26/Houser.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 143,
+  "current_rank": 180,
   "record": {
     "overall": "4-6",
     "vs_ranked": "4-6",
@@ -24,7 +29,14 @@
     "bonus_rate": 0.25,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.92,
+      "matches": 10,
+      "rank_weight": 165,
+      "rank_overall": 1500,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
@@ -33,13 +45,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29684828132",
-      "opponent_rank": 88,
+      "opponent_rank": 157,
       "opponent_name": "Brycen Arbogast",
       "method": "Dec 5-4"
     },
     "worst_loss": {
       "opponent_id": "29672742132",
-      "opponent_rank": 162,
+      "opponent_rank": 176,
       "opponent_name": "Zander Phaturos",
       "method": "MD 11-2"
     }
@@ -48,153 +60,185 @@
     {
       "date": "2025-02-23",
       "opponent_id": "29681443132",
+      "opponent_career_id": null,
       "opponent_name": "JB Dragovich",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 133,
-      "opponent_rank": 120,
+      "opponent_rank": 168,
       "weight_class": "133",
       "result": "W",
       "method": "SV-3",
       "score": "7-4",
       "duration": "8:15",
-      "event": "A Better Way Athletics Last Chance Open"
+      "event": "A Better Way Athletics Last Chance Open",
+      "mv_impact": 2.17
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29680103132",
+      "opponent_career_id": null,
       "opponent_name": "Gauge Shipp",
       "opponent_team": "Hofstra",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 57,
       "opponent_weight": 133,
-      "opponent_rank": 101,
+      "opponent_rank": 163,
       "weight_class": "133",
       "result": "L",
       "method": "TF",
       "score": "16-0",
       "duration": "2:29",
-      "event": "A Better Way Athletics Last Chance Open"
+      "event": "A Better Way Athletics Last Chance Open",
+      "mv_impact": -6.15
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29726564132",
+      "opponent_career_id": null,
       "opponent_name": "Matthew Lopes",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 11,
       "opponent_weight": 133,
-      "opponent_rank": 64,
+      "opponent_rank": 35,
       "weight_class": "133",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "2:48",
-      "event": "A Better Way Athletics Last Chance Open"
+      "event": "A Better Way Athletics Last Chance Open",
+      "mv_impact": -3.71
     },
     {
       "date": "2025-02-16",
       "opponent_id": "29686187132",
+      "opponent_career_id": null,
       "opponent_name": "Nikolas Massaro",
       "opponent_team": "Buffalo",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 63,
       "opponent_weight": 133,
-      "opponent_rank": 240,
+      "opponent_rank": 237,
       "weight_class": "133",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:28",
-      "event": "Mat-Town Open II"
+      "event": "Mat-Town Open II",
+      "mv_impact": 2.23
     },
     {
       "date": "2025-02-16",
       "opponent_id": "29679396132",
+      "opponent_career_id": null,
       "opponent_name": "Hunter Gould",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 133,
-      "opponent_rank": 72,
+      "opponent_rank": 66,
       "weight_class": "133",
       "result": "L",
       "method": "TF",
       "score": "17-0",
       "duration": "2:40",
-      "event": "Mat-Town Open II"
+      "event": "Mat-Town Open II",
+      "mv_impact": -4.45
     },
     {
       "date": "2025-02-16",
       "opponent_id": "29679328132",
+      "opponent_career_id": null,
       "opponent_name": "Karl Shindledecker",
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 133,
-      "opponent_rank": 102,
+      "opponent_rank": 158,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "9-4",
       "duration": "7:00",
-      "event": "Mat-Town Open II"
+      "event": "Mat-Town Open II",
+      "mv_impact": 1.73
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29684828132",
+      "opponent_career_id": null,
       "opponent_name": "Brycen Arbogast",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 133,
-      "opponent_rank": 88,
+      "opponent_rank": 157,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "Purple Raider Open"
+      "event": "Purple Raider Open",
+      "mv_impact": 2.14
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29684836132",
+      "opponent_career_id": null,
       "opponent_name": "Joseph Clem",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 133,
-      "opponent_rank": 84,
+      "opponent_rank": 93,
       "weight_class": "133",
       "result": "L",
       "method": "DEC",
       "score": "7-1",
       "duration": "7:00",
-      "event": "Purple Raider Open"
+      "event": "Purple Raider Open",
+      "mv_impact": -2.99
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29672742132",
+      "opponent_career_id": null,
       "opponent_name": "Zander Phaturos",
       "opponent_team": "Campbell",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 55,
       "opponent_weight": 133,
-      "opponent_rank": 162,
+      "opponent_rank": 176,
       "weight_class": "133",
       "result": "L",
       "method": "MD",
       "score": "11-2",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -6.02
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29680103132",
+      "opponent_career_id": null,
       "opponent_name": "Gauge Shipp",
       "opponent_team": "Hofstra",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 57,
       "opponent_weight": 133,
-      "opponent_rank": 101,
+      "opponent_rank": 163,
       "weight_class": "133",
       "result": "L",
       "method": "DEC",
       "score": "7-0",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -4.15
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29679398132",
+      "team": "Lock Haven",
+      "team_slug": "lock_haven",
+      "weight_class": 133,
+      "grade": "Fr.",
+      "current_rank": 180,
+      "record": "4-6"
+    }
+  ]
 }

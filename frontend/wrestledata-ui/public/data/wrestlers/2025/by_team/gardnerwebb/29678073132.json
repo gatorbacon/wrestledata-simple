@@ -3,13 +3,18 @@
   "name": "Brixan Burgess",
   "team": "Gardner-Webb",
   "team_slug": "gardnerwebb",
-  "team_rank": 56,
+  "team_rank": 53,
   "weight_class": 184,
+  "grade": "So.",
+  "hometown": "Statesville, N.C.",
+  "high_school": "North Iredell H.S.",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgwu.sidearmsports.com%2Fimages%2F2024%2F10%2F16%2FBurgess_9McIX.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 224,
   "record": {
     "overall": "0-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,62 +29,102 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.082,
+      "matches": 4,
+      "rank_weight": 209,
+      "rank_overall": 2351,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29719869132",
+      "opponent_rank": 253,
+      "opponent_name": "braden Brown",
+      "method": "TF 15-0 3:33"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-24",
       "opponent_id": "29719869132",
+      "opponent_career_id": null,
       "opponent_name": "braden Brown",
       "opponent_team": "LIU",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 73,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 253,
       "weight_class": "184",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "3:33",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": -7.67
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29680133132",
+      "opponent_career_id": null,
       "opponent_name": "Andrew Christie",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 96,
       "weight_class": "184",
       "result": "L",
       "method": "TF",
       "score": "17-0",
       "duration": "2:40",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": -4.48
     },
     {
       "date": "2024-11-01",
       "opponent_id": "29682555132",
+      "opponent_career_id": null,
       "opponent_name": "James Rowley",
       "opponent_team": "Purdue",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 12,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 36,
       "weight_class": "184",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:40",
-      "event": "vs. Purdue"
+      "event": "vs. Purdue",
+      "mv_impact": -4.52
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29678073132",
+      "team": "Gardner-Webb",
+      "team_slug": "gardnerwebb",
+      "weight_class": 184,
+      "grade": "So.",
+      "current_rank": 224,
+      "record": "0-3"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24599175132",
+      "team": "Gardner-Webb",
+      "team_slug": "gardnerwebb",
+      "weight_class": 184,
+      "grade": "Fr.",
+      "current_rank": 169,
+      "record": "0-2"
+    }
+  ]
 }

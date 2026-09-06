@@ -3,10 +3,15 @@
   "name": "Noah Tonsor",
   "team": "Army West Point",
   "team_slug": "army_west_point",
-  "team_rank": 26,
+  "team_rank": 44,
   "weight_class": 125,
+  "grade": "So.",
+  "hometown": "Slinger, Wis.",
+  "high_school": "Slinger (USMAPS)",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgoarmywestpoint.com%2Fimages%2F2024%2F10%2F2%2FTonsor_ImaPm.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 124,
+  "current_rank": 146,
   "record": {
     "overall": "4-5",
     "vs_ranked": "4-5",
@@ -24,7 +29,14 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 2,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.433,
+      "matches": 11,
+      "rank_weight": 115,
+      "rank_overall": 1337,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
@@ -33,24 +45,25 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29680818132",
-      "opponent_rank": 206,
+      "opponent_rank": 202,
       "opponent_name": "Luke Sirianni",
       "method": "TF 20-4 6:58"
     },
     "worst_loss": {
-      "opponent_id": "29681846132",
-      "opponent_rank": 175,
-      "opponent_name": "Caelan Riley",
-      "method": "TF 18-3 4:10"
+      "opponent_id": "29680106132",
+      "opponent_rank": 173,
+      "opponent_name": "Teague Strobel",
+      "method": "MD 11-0"
     }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29682541132",
+      "opponent_career_id": null,
       "opponent_name": "Jay Peace",
       "opponent_team": "American",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 59,
       "opponent_weight": 125,
       "opponent_rank": 55,
       "weight_class": "125",
@@ -58,128 +71,177 @@
       "method": "DEC",
       "score": "11-6",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -1.86
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29673471132",
+      "opponent_career_id": null,
       "opponent_name": "Connor Smith",
       "opponent_team": "Columbia",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 52,
       "opponent_weight": 133,
-      "opponent_rank": 215,
+      "opponent_rank": 252,
       "weight_class": "125",
       "result": "W",
       "method": "TF",
       "score": "16-1",
       "duration": "5:45",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": 1.4
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29685731132",
+      "opponent_career_id": null,
       "opponent_name": "Michael Baker",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 78,
       "opponent_weight": 125,
-      "opponent_rank": 211,
+      "opponent_rank": 217,
       "weight_class": "125",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:27",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 1.98
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29680460132",
+      "opponent_career_id": null,
       "opponent_name": "Joseph Sciarrone",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 125,
-      "opponent_rank": 90,
+      "opponent_rank": 110,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "8-5",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -3.36
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29681846132",
+      "opponent_career_id": null,
       "opponent_name": "Caelan Riley",
       "opponent_team": "Illinois",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 10,
       "opponent_weight": 125,
-      "opponent_rank": 175,
+      "opponent_rank": 124,
       "weight_class": "125",
       "result": "L",
       "method": "TF",
       "score": "18-3",
       "duration": "4:10",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -6.84
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29680818132",
+      "opponent_career_id": null,
       "opponent_name": "Luke Sirianni",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 125,
-      "opponent_rank": 206,
+      "opponent_rank": 202,
       "weight_class": "125",
       "result": "W",
       "method": "TF",
       "score": "20-4",
       "duration": "6:58",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": 1.48
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29680106132",
+      "opponent_career_id": null,
       "opponent_name": "Teague Strobel",
       "opponent_team": "Hofstra",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 57,
       "opponent_weight": 125,
-      "opponent_rank": 150,
+      "opponent_rank": 173,
       "weight_class": "125",
       "result": "L",
       "method": "MD",
       "score": "11-0",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -5.88
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29673453132",
+      "opponent_career_id": null,
       "opponent_name": "Sulayman Bah",
       "opponent_team": "Columbia",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 52,
       "opponent_weight": 125,
-      "opponent_rank": 101,
+      "opponent_rank": 76,
       "weight_class": "125",
       "result": "L",
       "method": "TF",
       "score": "21-5",
       "duration": "5:19",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -4.87
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29673471132",
+      "opponent_career_id": null,
       "opponent_name": "Connor Smith",
       "opponent_team": "Columbia",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 52,
       "opponent_weight": 133,
-      "opponent_rank": 215,
+      "opponent_rank": 252,
       "weight_class": "125",
       "result": "W",
       "method": "MD",
       "score": "13-5",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": 0.4
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34934330132",
+      "team": "Army West Point",
+      "team_slug": "army_west_point",
+      "weight_class": 125,
+      "grade": "Jr.",
+      "current_rank": 113,
+      "record": "4-2"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29680143132",
+      "team": "Army West Point",
+      "team_slug": "army_west_point",
+      "weight_class": 125,
+      "grade": "So.",
+      "current_rank": 146,
+      "record": "4-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24587115132",
+      "team": "Army West Point",
+      "team_slug": "army_west_point",
+      "weight_class": 125,
+      "grade": "Fr.",
+      "current_rank": 168,
+      "record": "2-6"
+    }
+  ]
 }

@@ -3,13 +3,18 @@
   "name": "Dominic Thebeau",
   "team": "Nebraska",
   "team_slug": "nebraska",
-  "team_rank": 11,
+  "team_rank": 2,
   "weight_class": 197,
+  "grade": "Redshirt Freshman",
+  "hometown": "Belleville, Ill.",
+  "high_school": "Belleville East",
+  "photo_url": "https://huskers.com/imgproxy/yOu2Sk3kyq4xmcJk4DepsEV02-peM0A6TJ3aJ47Z0xI/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8xMS9DSEVDV3NsaU9INk9aYlhJeHFwR0o2WW51bG5uV29Fall0ZU5iTnl6LmpwZw.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 173,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,67 +24,122 @@
     "pd7": 0.5,
     "si_plus": 91.8,
     "df_plus": 103.4,
-    "apr_plus": 95.3,
+    "apr_plus": 95.4,
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.234,
+      "matches": 3,
+      "rank_weight": 160,
+      "rank_overall": 1866,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29675868132",
+      "opponent_rank": 225,
+      "opponent_name": "Aiden Hight",
+      "method": "MD 11-3"
+    },
+    "worst_loss": {
+      "opponent_id": "29679152132",
+      "opponent_rank": 182,
+      "opponent_name": "Damion Schunke",
+      "method": "Dec 8-1"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-17",
       "opponent_id": "29679152132",
+      "opponent_career_id": null,
       "opponent_name": "Damion Schunke",
       "opponent_team": "Arizona State",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 27,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 182,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "8-1",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -5.66
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29734778132",
+      "opponent_career_id": null,
       "opponent_name": "Gabe Nagel",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 7,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 43,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:59",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -4.83
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29675868132",
+      "opponent_career_id": null,
       "opponent_name": "Aiden Hight",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 48,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 225,
       "weight_class": "197",
       "result": "W",
       "method": "MD",
       "score": "11-3",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": 0.79
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34935627132",
+      "team": "Nebraska",
+      "team_slug": "nebraska",
+      "weight_class": 184,
+      "grade": "Sophomore",
+      "current_rank": 162,
+      "record": "2-4"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29673842132",
+      "team": "Nebraska",
+      "team_slug": "nebraska",
+      "weight_class": 197,
+      "grade": "Redshirt Freshman",
+      "current_rank": 173,
+      "record": "1-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24580381132",
+      "team": "Nebraska",
+      "team_slug": "nebraska",
+      "weight_class": 197,
+      "grade": "Freshman",
+      "current_rank": 216,
+      "record": "0-2"
+    }
+  ]
 }

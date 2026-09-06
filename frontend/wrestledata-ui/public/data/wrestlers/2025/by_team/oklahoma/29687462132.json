@@ -3,15 +3,20 @@
   "name": "Richard Thomas",
   "team": "Oklahoma",
   "team_slug": "oklahoma",
-  "team_rank": 30,
+  "team_rank": 40,
   "weight_class": 285,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 100,
   "record": {
     "overall": "4-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "4-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 4.7,
@@ -24,152 +29,199 @@
     "bonus_rate": 0.25,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.914,
+      "matches": 9,
+      "rank_weight": 107,
+      "rank_overall": 1170,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29675830132",
+      "opponent_rank": 84,
+      "opponent_name": "Andrew Blackburn-Forst",
+      "method": "Dec 2-0"
+    },
+    "worst_loss": {
+      "opponent_id": "29686931132",
+      "opponent_rank": 258,
+      "opponent_name": "Keith Miley",
+      "method": "Fall 4:42"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-05",
       "opponent_id": "29680145132",
+      "opponent_career_id": null,
       "opponent_name": "Lucas Stoddard",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 34,
       "weight_class": "285",
       "result": "L",
       "method": "MD",
       "score": "10-1",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -2.41
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29687561132",
+      "opponent_career_id": null,
       "opponent_name": "Kaden Darwin",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 15,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 240,
       "weight_class": "285",
       "result": "W",
       "method": "TF",
       "score": "17-1",
       "duration": "6:57",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": 2.51
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29686931132",
+      "opponent_career_id": null,
       "opponent_name": "Keith Miley",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 15,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 258,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:42",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -8.6
     },
     {
       "date": "2024-12-21",
       "opponent_id": "29722978132",
+      "opponent_career_id": null,
       "opponent_name": "Jake Andrews",
       "opponent_team": "CSU Bakersfield",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 22,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 18,
       "weight_class": "285",
       "result": "L",
       "method": "TB-1",
       "score": "6-1",
       "duration": "10:00",
-      "event": "vs. Oklahoma"
+      "event": "vs. Oklahoma",
+      "mv_impact": -1.16
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29687819132",
+      "opponent_career_id": null,
       "opponent_name": "Trevor Tinker",
       "opponent_team": "Cal Poly",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 19,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 17,
       "weight_class": "285",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": -2.84
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29684568132",
+      "opponent_career_id": null,
       "opponent_name": "Tristan Kemp",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 231,
       "weight_class": "285",
       "result": "W",
       "method": "TB-1",
       "score": "4-3",
       "duration": "10:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": 1.01
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29721855132",
+      "opponent_career_id": null,
       "opponent_name": "Soren Herzog",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 112,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "5-3",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": 2.33
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29675830132",
+      "opponent_career_id": null,
       "opponent_name": "Andrew Blackburn-Forst",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 48,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 84,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": 2.41
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29675640132",
+      "opponent_career_id": null,
       "opponent_name": "Luke Rasmussen",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 24,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 25,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "6-5",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -1.47
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29687462132",
+      "team": "Oklahoma",
+      "team_slug": "oklahoma",
+      "weight_class": 285,
+      "grade": "",
+      "current_rank": 100,
+      "record": "4-5"
+    }
+  ]
 }

@@ -3,15 +3,20 @@
   "name": "Gavin Brown",
   "team": "Ohio State",
   "team_slug": "ohio_state",
-  "team_rank": 20,
+  "team_rank": 5,
   "weight_class": 149,
+  "grade": "R-So.",
+  "hometown": "Lebanon, Ohio",
+  "high_school": "Legacy Christian Academy",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fohiostatebuckeyes.com%2Fimages%2F2024%2F9%2F17%2FBrown__Gavin_002_cTFFu.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 98,
   "record": {
-    "overall": "4-4",
-    "vs_ranked": "0-0",
+    "overall": "4-3",
+    "vs_ranked": "4-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 7.14,
@@ -19,142 +24,200 @@
     "pd7": 2.86,
     "si_plus": 103.5,
     "df_plus": 109.5,
-    "apr_plus": 96.7,
+    "apr_plus": 96.6,
     "pin_rate": 0.0,
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.538,
+      "matches": 10,
+      "rank_weight": 69,
+      "rank_overall": 662,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29681751132",
+      "opponent_rank": 68,
+      "opponent_name": "Jack Pletcher",
+      "method": "MD 13-0"
+    },
+    "worst_loss": {
+      "opponent_id": "29672184132",
+      "opponent_rank": 119,
+      "opponent_name": "Zack Mattin",
+      "method": "MD 10-0"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-21",
       "opponent_id": "29676688132",
+      "opponent_career_id": null,
       "opponent_name": "Nick Stonecheck",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 277,
       "weight_class": "149",
       "result": "W",
       "method": "TF",
       "score": "20-4",
       "duration": "0:00",
-      "event": "vs. Ohio State"
+      "event": "vs. Ohio State",
+      "mv_impact": 2.15
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29687592132",
+      "opponent_career_id": null,
       "opponent_name": "Colin Realbuto",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 8,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 12,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
-      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational"
+      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -0.96
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29736344132",
+      "opponent_career_id": null,
       "opponent_name": "Sam Cartella",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 39,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 44,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "4-0",
       "duration": "7:00",
-      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational"
+      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -2.27
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29679970132",
+      "opponent_career_id": null,
       "opponent_name": "jeb prechtel",
       "opponent_team": "Bellarmine",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 60,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 209,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": 1.72
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29685917132",
+      "opponent_career_id": null,
       "opponent_name": "Ryan Michaels",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 73,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "12-6",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": 3.21
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29672184132",
+      "opponent_career_id": null,
       "opponent_name": "Zack Mattin",
       "opponent_team": "Michigan",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 13,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 119,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "10-0",
       "duration": "7:00",
-      "event": "Clarion Open"
-    },
-    {
-      "date": "2024-11-03",
-      "opponent_id": "29676295132",
-      "opponent_name": "TJ Schierl",
-      "opponent_team": "Ohio State",
-      "opponent_team_rank": 20,
-      "opponent_weight": 174,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "DEC",
-      "score": null,
-      "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -4.47
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29681751132",
+      "opponent_career_id": null,
       "opponent_name": "Jack Pletcher",
       "opponent_team": "Pittsburgh",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 21,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 68,
       "weight_class": "157",
       "result": "W",
       "method": "MD",
       "score": "13-0",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": 4.38
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34945168132",
+      "team": "Purdue",
+      "team_slug": "purdue",
+      "weight_class": 149,
+      "grade": "Redshirt Junior",
+      "current_rank": 51,
+      "record": "17-13"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29676284132",
+      "team": "Ohio State",
+      "team_slug": "ohio_state",
+      "weight_class": 149,
+      "grade": "R-So.",
+      "current_rank": 98,
+      "record": "4-3"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24582868132",
+      "team": "Ohio State",
+      "team_slug": "ohio_state",
+      "weight_class": 149,
+      "grade": "R-Fr.",
+      "current_rank": 156,
+      "record": "1-2"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20125710132",
+      "team": "Ohio State",
+      "team_slug": "ohio_state",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 123,
+      "record": "3-5"
+    }
+  ]
 }

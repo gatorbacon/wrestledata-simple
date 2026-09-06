@@ -3,15 +3,20 @@
   "name": "Jason Mara",
   "team": "Stanford",
   "team_slug": "stanford",
-  "team_rank": 21,
+  "team_rank": 25,
   "weight_class": 157,
+  "grade": "Freshman",
+  "hometown": "Meridian, Idaho",
+  "high_school": "Meridian",
+  "photo_url": "https://gostanford.com/imgproxy/8DJVr4Gf73w4x1vXpAh7BNXciQi5X-Skhja0-N9BqAA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3N0YW5mb3JkLXByb2QvMjAyNC8xMS8wMS90WWhkbTNhRkc4RDUyVUsyY2RRb29LNWVnc0JTWkNVMDRiM2x6WmlhLmpwZw.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 67,
   "record": {
     "overall": "5-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "5-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 6.37,
@@ -19,127 +24,180 @@
     "pd7": 4.14,
     "si_plus": 96.9,
     "df_plus": 112.0,
-    "apr_plus": 97.6,
+    "apr_plus": 97.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.4,
     "majors": 2,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.644,
+      "matches": 8,
+      "rank_weight": 76,
+      "rank_overall": 626,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 5,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29687460132",
+      "opponent_rank": 115,
+      "opponent_name": "Landyn Sommer",
+      "method": "SV-1 5-4"
+    },
+    "worst_loss": {
+      "opponent_id": "29681447132",
+      "opponent_rank": 42,
+      "opponent_name": "JT Chance",
+      "method": "Fall 2:59"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-30",
       "opponent_id": "29681447132",
+      "opponent_career_id": null,
       "opponent_name": "JT Chance",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 42,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:59",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -5.04
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29681439132",
+      "opponent_career_id": null,
       "opponent_name": "DJ Mcgee",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 17,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "10-3",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -1.22
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29736343132",
+      "opponent_career_id": null,
       "opponent_name": "Jacob Bostelman",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 39,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 177,
       "weight_class": "157",
       "result": "W",
       "method": "MD",
       "score": "12-0",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": 2.12
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29684494132",
+      "opponent_career_id": null,
       "opponent_name": "Brock Woodcock",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 195,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "6-0",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": 1.26
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29722991132",
+      "opponent_career_id": null,
       "opponent_name": "Jose Farias",
       "opponent_team": "CSU Bakersfield",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 22,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 296,
       "weight_class": "157",
       "result": "W",
       "method": "MD",
       "score": "11-0",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": 0.75
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29687834132",
+      "opponent_career_id": null,
       "opponent_name": "Devin Alexander",
       "opponent_team": "Cal Poly",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 19,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 154,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": 1.97
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29687460132",
+      "opponent_career_id": null,
       "opponent_name": "Landyn Sommer",
       "opponent_team": "Oklahoma",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 40,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 115,
       "weight_class": "157",
       "result": "W",
       "method": "SV-1",
       "score": "5-4",
       "duration": "8:15",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": 3.21
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34943460132",
+      "team": "Stanford",
+      "team_slug": "stanford",
+      "weight_class": 165,
+      "grade": "Redshirt Freshman",
+      "current_rank": 255,
+      "record": "0-1"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29723008132",
+      "team": "Stanford",
+      "team_slug": "stanford",
+      "weight_class": 157,
+      "grade": "Freshman",
+      "current_rank": 67,
+      "record": "5-2"
+    }
+  ]
 }

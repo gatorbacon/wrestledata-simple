@@ -3,13 +3,18 @@
   "name": "Luke Artz",
   "team": "Navy",
   "team_slug": "navy",
-  "team_rank": 66,
+  "team_rank": 28,
   "weight_class": 184,
+  "grade": "Sr.",
+  "hometown": "Candler, N.C.",
+  "high_school": "Enka",
+  "photo_url": "https://navysports.com/images/2021/9/14/Artz_Luke25.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 204,
   "record": {
     "overall": "0-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,52 +24,100 @@
     "pd7": -6.0,
     "si_plus": 85.5,
     "df_plus": 100.9,
-    "apr_plus": 94.3,
+    "apr_plus": 94.5,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.465,
+      "matches": 2,
+      "rank_weight": 190,
+      "rank_overall": 2144,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29687001132",
+      "opponent_rank": 118,
+      "opponent_name": "Holden Martin",
+      "method": "Dec 8-2"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29687001132",
+      "opponent_career_id": null,
       "opponent_name": "Holden Martin",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 118,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -3.38
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29687006132",
+      "opponent_career_id": null,
       "opponent_name": "Kyle Snider",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 84,
       "weight_class": "184",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:57",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -5.55
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29685224132",
+      "team": "Navy",
+      "team_slug": "navy",
+      "weight_class": 184,
+      "grade": "Sr.",
+      "current_rank": 204,
+      "record": "0-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24585757132",
+      "team": "Navy",
+      "team_slug": "navy",
+      "weight_class": 184,
+      "grade": "Jr.",
+      "current_rank": 189,
+      "record": "0-2"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16707038132",
+      "team": "Navy",
+      "team_slug": "navy",
+      "weight_class": 165,
+      "grade": "Fr.",
+      "current_rank": 229,
+      "record": "1-4"
+    }
+  ]
 }

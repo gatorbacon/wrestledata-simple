@@ -3,13 +3,18 @@
   "name": "Elijah Penton",
   "team": "Navy",
   "team_slug": "navy",
-  "team_rank": 66,
+  "team_rank": 28,
   "weight_class": 165,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 252,
   "record": {
     "overall": "1-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,70 +29,94 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.697,
+      "matches": 7,
+      "rank_weight": 230,
+      "rank_overall": 2188,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29721384132",
+      "opponent_rank": 89,
+      "opponent_name": "Richie Grungo",
+      "method": "M. For."
+    },
+    "worst_loss": {
+      "opponent_id": "29672304132",
+      "opponent_rank": 300,
+      "opponent_name": "John Altieri",
+      "method": "Dec 5-4"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-08",
       "opponent_id": "29682536132",
+      "opponent_career_id": null,
       "opponent_name": "Austin Craft",
       "opponent_team": "American",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 59,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 165,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -4.03
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29678144132",
+      "opponent_career_id": null,
       "opponent_name": "Grant Kress",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 182,
       "weight_class": "165",
       "result": "L",
       "method": "MD",
       "score": "13-4",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -5.69
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29681467132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler Lillard",
       "opponent_team": "Indiana",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 36,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 27,
       "weight_class": "165",
       "result": "L",
       "method": "MD",
       "score": "16-4",
       "duration": "7:00",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": -2.75
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29721384132",
+      "opponent_career_id": null,
       "opponent_name": "Richie Grungo",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 11,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 89,
       "weight_class": "165",
       "result": "W",
       "method": "MFF",
@@ -98,33 +127,49 @@
     {
       "date": "2024-11-23",
       "opponent_id": "29687550132",
+      "opponent_career_id": null,
       "opponent_name": "Steele Starren",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 41,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 214,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "5-0",
       "duration": "7:00",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": -5.3
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29672304132",
+      "opponent_career_id": null,
       "opponent_name": "John Altieri",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 300,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -5.54
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29685300132",
+      "team": "Navy",
+      "team_slug": "navy",
+      "weight_class": 165,
+      "grade": "",
+      "current_rank": 252,
+      "record": "1-5"
+    }
+  ]
 }

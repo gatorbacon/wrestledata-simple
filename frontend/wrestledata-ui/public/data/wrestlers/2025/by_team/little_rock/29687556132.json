@@ -3,13 +3,18 @@
   "name": "kyle lew",
   "team": "Little Rock",
   "team_slug": "little_rock",
-  "team_rank": 28,
+  "team_rank": 15,
   "weight_class": 149,
+  "grade": "FRESHMAN",
+  "hometown": "Missouri City, Texas",
+  "high_school": "Westside HS",
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 262,
   "record": {
     "overall": "1-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,107 +29,158 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.049,
+      "matches": 7,
+      "rank_weight": 208,
+      "rank_overall": 1824,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29687519132",
+      "opponent_rank": 297,
+      "opponent_name": "Cade Gilbert",
+      "method": "Dec 10-3"
+    },
+    "worst_loss": {
+      "opponent_id": "29673235132",
+      "opponent_rank": 123,
+      "opponent_name": "Benji Alanis",
+      "method": "Fall 2:45"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-05",
       "opponent_id": "29677475132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler-Xavier McKnight",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 63,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "5-0",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -2.39
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29673235132",
+      "opponent_career_id": null,
       "opponent_name": "Benji Alanis",
       "opponent_team": "Northern Colorado",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 30,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 123,
       "weight_class": "149",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:45",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -6.61
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29678008132",
+      "opponent_career_id": null,
       "opponent_name": "Zeke Seltzer",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 51,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "17-5",
       "duration": "7:00",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": -3.48
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29687519132",
+      "opponent_career_id": null,
       "opponent_name": "Cade Gilbert",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 15,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 297,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "10-3",
       "duration": "7:00",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": -0.01
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29684488132",
+      "opponent_career_id": null,
       "opponent_name": "Eric Almarinez",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 83,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "8-3",
       "duration": "7:00",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": -3.13
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29673238132",
+      "opponent_career_id": null,
       "opponent_name": "Rudy Lopez",
       "opponent_team": "Northern Colorado",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 30,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 69,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": -2.59
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34945361132",
+      "team": "Little Rock",
+      "team_slug": "little_rock",
+      "weight_class": 157,
+      "grade": "SOPHOMORE",
+      "current_rank": 216,
+      "record": "1-8"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29687556132",
+      "team": "Little Rock",
+      "team_slug": "little_rock",
+      "weight_class": 149,
+      "grade": "FRESHMAN",
+      "current_rank": 262,
+      "record": "1-5"
+    }
+  ]
 }

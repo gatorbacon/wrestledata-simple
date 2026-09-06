@@ -3,10 +3,15 @@
   "name": "Eziequel Vela",
   "team": "Cal Poly",
   "team_slug": "cal_poly",
-  "team_rank": 9,
+  "team_rank": 19,
   "weight_class": 125,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 130,
+  "current_rank": 153,
   "record": {
     "overall": "0-2",
     "vs_ranked": "0-2",
@@ -24,7 +29,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.61,
+      "matches": 2,
+      "rank_weight": 175,
+      "rank_overall": 1954,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,7 +46,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "29681181132",
-      "opponent_rank": 62,
+      "opponent_rank": 66,
       "opponent_name": "Will VomBaur",
       "method": "Dec 3-0"
     }
@@ -43,33 +55,49 @@
     {
       "date": "2024-11-24",
       "opponent_id": "29722979132",
+      "opponent_career_id": null,
       "opponent_name": "Richard Castro-Sandoval",
       "opponent_team": "CSU Bakersfield",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 22,
       "opponent_weight": 125,
-      "opponent_rank": 26,
+      "opponent_rank": 52,
       "weight_class": "125",
       "result": "L",
       "method": "TF",
       "score": "16-1",
       "duration": "6:52",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": -4.51
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29681181132",
+      "opponent_career_id": null,
       "opponent_name": "Will VomBaur",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 125,
-      "opponent_rank": 62,
+      "opponent_rank": 66,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "3-0",
       "duration": "7:00",
-      "event": "Menlo Invite"
+      "event": "Menlo Invite",
+      "mv_impact": -2.71
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29687853132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 125,
+      "grade": "",
+      "current_rank": 153,
+      "record": "0-2"
+    }
+  ]
 }

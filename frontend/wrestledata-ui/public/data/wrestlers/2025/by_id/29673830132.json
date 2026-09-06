@@ -3,13 +3,18 @@
   "name": "Ismael Ayoub",
   "team": "Nebraska",
   "team_slug": "nebraska",
-  "team_rank": 11,
+  "team_rank": 2,
   "weight_class": 141,
+  "grade": "Sophomore",
+  "hometown": "Dublin, Ohio",
+  "high_school": "Dublin Coffman",
+  "photo_url": "https://huskers.com/imgproxy/bj0Z-vVIq_Uy3vFrA8Gs3438AyNeq_ji9Uar7gjWto0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8xMS9raGJRdmVjcHRnbWdqMlZPYUdiZTJhSU1mb1hVSEoxRVNtZzdvWjhCLmpwZw.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 201,
   "record": {
     "overall": "2-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,107 +29,178 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.486,
+      "matches": 7,
+      "rank_weight": 139,
+      "rank_overall": 1360,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29721902132",
+      "opponent_rank": 70,
+      "opponent_name": "Carter Nogle",
+      "method": "Dec 4-3"
+    },
+    "worst_loss": {
+      "opponent_id": "29735174132",
+      "opponent_rank": 117,
+      "opponent_name": "Dawson Johnson",
+      "method": "Dec 4-2"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-19",
       "opponent_id": "29678011132",
+      "opponent_career_id": null,
       "opponent_name": "Easton Hilton",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 48,
       "weight_class": "141",
       "result": "L",
       "method": "MD",
       "score": "13-1",
       "duration": "7:00",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": -3.11
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29678010132",
+      "opponent_career_id": null,
       "opponent_name": "Owen Uhls",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 75,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "2-1",
       "duration": "7:00",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": -3.25
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29721902132",
+      "opponent_career_id": null,
       "opponent_name": "Carter Nogle",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 70,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": 3.52
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29679160132",
+      "opponent_career_id": null,
       "opponent_name": "Daniel Miranda",
       "opponent_team": "Arizona State",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 27,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 191,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": 1.11
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29735174132",
+      "opponent_career_id": null,
       "opponent_name": "Dawson Johnson",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 7,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 117,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -3.3
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29675642132",
+      "opponent_career_id": null,
       "opponent_name": "Avery Allen",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 24,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 53,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "8-1",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -2.69
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34949497132",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 141,
+      "grade": "R-Jr.",
+      "current_rank": 246,
+      "record": "6-8"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29673830132",
+      "team": "Nebraska",
+      "team_slug": "nebraska",
+      "weight_class": 141,
+      "grade": "Sophomore",
+      "current_rank": 201,
+      "record": "2-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24580353132",
+      "team": "Nebraska",
+      "team_slug": "nebraska",
+      "weight_class": 157,
+      "grade": "Redshirt Freshman",
+      "current_rank": 172,
+      "record": "0-0"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20122994132",
+      "team": "Nebraska",
+      "team_slug": "nebraska",
+      "weight_class": 141,
+      "grade": "Freshman",
+      "current_rank": 130,
+      "record": "0-2"
+    }
+  ]
 }

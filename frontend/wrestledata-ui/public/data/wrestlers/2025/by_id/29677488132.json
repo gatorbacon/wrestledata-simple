@@ -3,15 +3,20 @@
   "name": "Logan Sichelstiel",
   "team": "Davidson",
   "team_slug": "davidson",
-  "team_rank": 51,
+  "team_rank": 66,
   "weight_class": 157,
+  "grade": "Fr.",
+  "hometown": "Paulsboro, N.J.",
+  "high_school": "Paulsboro High School",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fdavidsonwildcats.com%2Fimages%2F2024%2F10%2F11%2FWRE10-2-24-088.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 265,
   "record": {
     "overall": "0-6",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "0-6",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 1.73,
@@ -24,107 +29,153 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.676,
+      "matches": 8,
+      "rank_weight": 234,
+      "rank_overall": 1969,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29681728132",
+      "opponent_rank": 272,
+      "opponent_name": "Joshua Greenwood",
+      "method": "SV-1 4-1"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-17",
       "opponent_id": "29686574132",
+      "opponent_career_id": null,
       "opponent_name": "Blake Saito",
       "opponent_team": "Brown",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 62,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 26,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "16-1",
       "duration": "4:56",
-      "event": "vs. Davidson"
+      "event": "vs. Davidson",
+      "mv_impact": -3.24
     },
     {
       "date": "2025-01-17",
       "opponent_id": "29686927132",
+      "opponent_career_id": null,
       "opponent_name": "Matty Bianchi",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 15,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 4,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "4:29",
-      "event": "vs. Little Rock"
+      "event": "vs. Little Rock",
+      "mv_impact": -2.56
     },
     {
       "date": "2025-01-17",
       "opponent_id": "29681728132",
+      "opponent_career_id": null,
       "opponent_name": "Joshua Greenwood",
       "opponent_team": "Morgan State",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 75,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 272,
       "weight_class": "157",
       "result": "L",
       "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
-      "event": "vs. Morgan State"
+      "event": "vs. Morgan State",
+      "mv_impact": -5.12
     },
     {
       "date": "2024-12-06",
       "opponent_id": "29689060132",
+      "opponent_career_id": null,
       "opponent_name": "Sean O`Donnell",
       "opponent_team": "Duke",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 68,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 256,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "4-0",
       "duration": "7:00",
-      "event": "vs. Duke"
+      "event": "vs. Duke",
+      "mv_impact": -5.14
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29677475132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler-Xavier McKnight",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 63,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "8-1",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -2.39
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29681737132",
+      "opponent_career_id": null,
       "opponent_name": "Aaron Turner",
       "opponent_team": "Morgan State",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 75,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 125,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -3.42
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34935912132",
+      "team": "Davidson",
+      "team_slug": "davidson",
+      "weight_class": 165,
+      "grade": "So.",
+      "current_rank": 276,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29677488132",
+      "team": "Davidson",
+      "team_slug": "davidson",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 265,
+      "record": "0-6"
+    }
+  ]
 }

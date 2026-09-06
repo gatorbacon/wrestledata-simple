@@ -3,10 +3,15 @@
   "name": "Brian Beers",
   "team": "Illinois",
   "team_slug": "illinois",
-  "team_rank": 2,
+  "team_rank": 10,
   "weight_class": 133,
+  "grade": "R-So.",
+  "hometown": "Barrington, Ill.",
+  "high_school": "Barrington",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Ffightingillini.com%2Fimages%2F2024%2F9%2F16%2FBeers_Brian_WEB_20240825_WRES_Headshot_KS_0412.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 208,
+  "current_rank": 227,
   "record": {
     "overall": "0-5",
     "vs_ranked": "0-5",
@@ -24,7 +29,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.13,
+      "matches": 5,
+      "rank_weight": 226,
+      "rank_overall": 2258,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -33,88 +45,130 @@
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "29679947132",
-      "opponent_rank": 170,
-      "opponent_name": "Trayce Eckman",
-      "method": "Fall 2:27"
+      "opponent_id": "29679964132",
+      "opponent_rank": 151,
+      "opponent_name": "ostin blanchard",
+      "method": "MD 11-2"
     }
   },
   "match_list": [
     {
       "date": "2025-02-09",
       "opponent_id": "29679964132",
+      "opponent_career_id": null,
       "opponent_name": "ostin blanchard",
       "opponent_team": "Bellarmine",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 60,
       "opponent_weight": 133,
-      "opponent_rank": 147,
+      "opponent_rank": 151,
       "weight_class": "133",
       "result": "L",
       "method": "MD",
       "score": "11-2",
       "duration": "7:00",
-      "event": "Greyhound Open"
+      "event": "Greyhound Open",
+      "mv_impact": -5.7
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29684079132",
+      "opponent_career_id": null,
       "opponent_name": "Spencer Barnhart",
       "opponent_team": "Pennsylvania",
-      "opponent_team_rank": 24,
+      "opponent_team_rank": 20,
       "opponent_weight": 133,
-      "opponent_rank": 97,
+      "opponent_rank": 110,
       "weight_class": "133",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:11",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -5.9
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29684842132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Kernan",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 133,
-      "opponent_rank": 70,
+      "opponent_rank": 88,
       "weight_class": "133",
       "result": "L",
       "method": "DEC",
       "score": "3-2",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -3.22
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29679947132",
+      "opponent_career_id": null,
       "opponent_name": "Trayce Eckman",
       "opponent_team": "Bellarmine",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 60,
       "opponent_weight": 133,
-      "opponent_rank": 170,
+      "opponent_rank": 132,
       "weight_class": "133",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:27",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": -6.73
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29673284132",
+      "opponent_career_id": null,
       "opponent_name": "Mikai Alirez",
       "opponent_team": "Northern Colorado",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 30,
       "opponent_weight": 133,
-      "opponent_rank": 112,
+      "opponent_rank": 104,
       "weight_class": "133",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": -4.1
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29681833132",
+      "team": "Illinois",
+      "team_slug": "illinois",
+      "weight_class": 133,
+      "grade": "R-So.",
+      "current_rank": 227,
+      "record": "0-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24586655132",
+      "team": "Illinois",
+      "team_slug": "illinois",
+      "weight_class": 141,
+      "grade": "So.",
+      "current_rank": 228,
+      "record": "0-0"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20132950132",
+      "team": "Illinois",
+      "team_slug": "illinois",
+      "weight_class": 133,
+      "grade": "Fr.",
+      "current_rank": 117,
+      "record": "3-5"
+    }
+  ]
 }

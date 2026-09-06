@@ -3,10 +3,15 @@
   "name": "Jaden Felipe",
   "team": "Navy",
   "team_slug": "navy",
-  "team_rank": 66,
+  "team_rank": 28,
   "weight_class": 125,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 184,
+  "current_rank": 181,
   "record": {
     "overall": "1-4",
     "vs_ranked": "1-4",
@@ -19,12 +24,19 @@
     "pd7": -8.17,
     "si_plus": 96.0,
     "df_plus": 83.8,
-    "apr_plus": 95.2,
+    "apr_plus": 95.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.791,
+      "matches": 6,
+      "rank_weight": 179,
+      "rank_overall": 1994,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -33,93 +45,125 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29672707132",
-      "opponent_rank": 195,
+      "opponent_rank": 216,
       "opponent_name": "Alex Esposito",
       "method": "SV-3 6-3"
     },
     "worst_loss": {
-      "opponent_id": "29687493132",
-      "opponent_rank": 143,
-      "opponent_name": "Isaiah Adams",
-      "method": "Dec 8-3"
+      "opponent_id": "29681443132",
+      "opponent_rank": 168,
+      "opponent_name": "JB Dragovich",
+      "method": "MD 16-6"
     }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29672735132",
+      "opponent_career_id": null,
       "opponent_name": "Anthony Molton",
       "opponent_team": "Campbell",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 55,
       "opponent_weight": 125,
-      "opponent_rank": 41,
+      "opponent_rank": 35,
       "weight_class": "125",
       "result": "L",
       "method": "TF",
       "score": "19-3",
       "duration": "3:45",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -3.6
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29687493132",
+      "opponent_career_id": null,
       "opponent_name": "Isaiah Adams",
       "opponent_team": "Harvard",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 71,
       "opponent_weight": 125,
-      "opponent_rank": 143,
+      "opponent_rank": 131,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "8-3",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -4.64
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29672707132",
+      "opponent_career_id": null,
       "opponent_name": "Alex Esposito",
       "opponent_team": "Rider",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 34,
       "opponent_weight": 125,
-      "opponent_rank": 195,
+      "opponent_rank": 216,
       "weight_class": "125",
       "result": "W",
       "method": "SV-3",
       "score": "6-3",
       "duration": "8:15",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -0.38
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29678061132",
+      "opponent_career_id": null,
       "opponent_name": "Jeffrey Jacome",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 125,
-      "opponent_rank": 119,
+      "opponent_rank": 102,
       "weight_class": "125",
       "result": "L",
       "method": "MD",
       "score": "12-3",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -4.46
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29681443132",
+      "opponent_career_id": null,
       "opponent_name": "JB Dragovich",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 133,
-      "opponent_rank": 120,
+      "opponent_rank": 168,
       "weight_class": "125",
       "result": "L",
       "method": "MD",
       "score": "16-6",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -4.83
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29685201132",
+      "team": "Navy",
+      "team_slug": "navy",
+      "weight_class": 125,
+      "grade": "",
+      "current_rank": 181,
+      "record": "1-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24585791132",
+      "team": "Navy",
+      "team_slug": "navy",
+      "weight_class": 125,
+      "grade": "So.",
+      "current_rank": 198,
+      "record": "0-4"
+    }
+  ]
 }

@@ -3,15 +3,20 @@
   "name": "Jaydon Robinson",
   "team": "NC State",
   "team_slug": "nc_state",
-  "team_rank": 3,
+  "team_rank": 14,
   "weight_class": 149,
+  "grade": "Fr.",
+  "hometown": "Hazel Crest, Ill.",
+  "high_school": "Winter Springs High School",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgopack.com%2Fimages%2F2024%2F8%2F27%2FJaydonRobinsonHS.png&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 109,
   "record": {
     "overall": "4-3",
-    "vs_ranked": "0-1",
+    "vs_ranked": "4-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 7.75,
@@ -24,127 +29,175 @@
     "bonus_rate": 0.25,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -0.124,
+      "matches": 11,
+      "rank_weight": 104,
+      "rank_overall": 884,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_wins": 4,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "29727159132",
+      "opponent_rank": 96,
+      "opponent_name": "Riley Edwards",
+      "method": "Dec 5-2"
+    },
     "worst_loss": {
-      "opponent_id": "29674041132",
-      "opponent_rank": 26,
-      "opponent_name": "Kai Orine",
-      "method": "Fall 3:35"
+      "opponent_id": "29689084132",
+      "opponent_rank": 195,
+      "opponent_name": "Elijah Murray",
+      "method": "Dec 11-8"
     }
   },
   "match_list": [
     {
       "date": "2025-02-23",
       "opponent_id": "29672746132",
+      "opponent_career_id": null,
       "opponent_name": "Oliver Fairchild",
       "opponent_team": "Campbell",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 55,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 285,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "8-5",
       "duration": "7:00",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": 0.16
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29689058132",
+      "opponent_career_id": null,
       "opponent_name": "Peter Chacon",
       "opponent_team": "Duke",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 68,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 114,
       "weight_class": "149",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:23",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": -6.15
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29689084132",
+      "opponent_career_id": null,
       "opponent_name": "Elijah Murray",
       "opponent_team": "Duke",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 68,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 195,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "11-8",
       "duration": "7:00",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": -5.16
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29674041132",
+      "opponent_career_id": null,
       "opponent_name": "Kai Orine",
       "opponent_team": "NC State",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 14,
       "opponent_weight": 133,
-      "opponent_rank": 26,
+      "opponent_rank": 23,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:35",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -4.61
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29727159132",
+      "opponent_career_id": null,
       "opponent_name": "Riley Edwards",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 96,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": 2.57
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29727539132",
+      "opponent_career_id": null,
       "opponent_name": "Brayden Fahrbach",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 104,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "10-3",
       "duration": "7:00",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": 2.79
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29687869132",
+      "opponent_career_id": null,
       "opponent_name": "Brayton Killiri",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 210,
       "weight_class": "141",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:57",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": 4.14
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34935702132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 141,
+      "grade": "R-Fr.",
+      "current_rank": 100,
+      "record": "2-4"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29674157132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 109,
+      "record": "4-3"
+    }
+  ]
 }

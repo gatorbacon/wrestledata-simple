@@ -3,13 +3,18 @@
   "name": "Trent Donahue",
   "team": "Presbyterian",
   "team_slug": "presbyterian",
-  "team_rank": 71,
+  "team_rank": 76,
   "weight_class": 141,
+  "grade": "Sr.",
+  "hometown": "DuBois, Pa.",
+  "high_school": "DuBois Area HS",
+  "photo_url": "https://gobluehose.com/images/2024/11/26/Donahue_f5qqt.png",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 218,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,62 +29,107 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.587,
+      "matches": 3,
+      "rank_weight": 181,
+      "rank_overall": 1698,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29672211132",
+      "opponent_rank": 277,
+      "opponent_name": "Jacob Ice",
+      "method": "TF 15-0 6:31"
+    },
+    "worst_loss": {
+      "opponent_id": "29672130132",
+      "opponent_rank": 131,
+      "opponent_name": "DJ Chavis",
+      "method": "Fall 6:03"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-12",
       "opponent_id": "29727154132",
+      "opponent_career_id": null,
       "opponent_name": "Sean Carter",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 79,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "3-1",
       "duration": "7:00",
-      "event": "Mountaineer Invitational"
+      "event": "Mountaineer Invitational",
+      "mv_impact": -3.21
     },
     {
       "date": "2024-11-12",
       "opponent_id": "29672130132",
+      "opponent_career_id": null,
       "opponent_name": "DJ Chavis",
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 6,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 131,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "6:03",
-      "event": "Mountaineer Invitational"
+      "event": "Mountaineer Invitational",
+      "mv_impact": -6.71
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29672211132",
+      "opponent_career_id": null,
       "opponent_name": "Jacob Ice",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 78,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 277,
       "weight_class": "141",
       "result": "W",
       "method": "TF",
       "score": "15-0",
       "duration": "6:31",
-      "event": "vs. Sacred Heart"
+      "event": "vs. Sacred Heart",
+      "mv_impact": 2.16
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29688452132",
+      "team": "Presbyterian",
+      "team_slug": "presbyterian",
+      "weight_class": 141,
+      "grade": "Sr.",
+      "current_rank": 218,
+      "record": "1-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24607490132",
+      "team": "Presbyterian College",
+      "team_slug": "presbyterian_college",
+      "weight_class": 149,
+      "grade": "",
+      "current_rank": 292,
+      "record": "2-12"
+    }
+  ]
 }

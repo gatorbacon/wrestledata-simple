@@ -3,13 +3,18 @@
   "name": "Oliver Graham",
   "team": "Bucknell",
   "team_slug": "bucknell",
-  "team_rank": 41,
+  "team_rank": 43,
   "weight_class": 157,
+  "grade": "So.",
+  "hometown": "Middletown, Md.",
+  "high_school": "Middletown",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fbucknellbison.com%2Fimages%2F2024%2F10%2F22%2Fgraham_oliver_web.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 308,
   "record": {
     "overall": "1-7",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-7",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,142 +24,207 @@
     "pd7": -11.33,
     "si_plus": 88.6,
     "df_plus": 84.7,
-    "apr_plus": 96.8,
+    "apr_plus": 96.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.517,
+      "matches": 11,
+      "rank_weight": 265,
+      "rank_overall": 2302,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29687002132",
+      "opponent_rank": 309,
+      "opponent_name": "Dominic Paterra",
+      "method": "TB-2 (RT) 8-7"
+    },
+    "worst_loss": {
+      "opponent_id": "29673123132",
+      "opponent_rank": 291,
+      "opponent_name": "Kyle Deisley",
+      "method": "Dec 11-10"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-16",
       "opponent_id": "29673123132",
+      "opponent_career_id": null,
       "opponent_name": "Kyle Deisley",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 291,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "11-10",
       "duration": "7:00",
-      "event": "Mat-Town Open II"
+      "event": "Mat-Town Open II",
+      "mv_impact": -5.57
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29686991132",
+      "opponent_career_id": null,
       "opponent_name": "Keegan Knapp",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 200,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "20-5",
       "duration": "5:16",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": -6.3
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29687002132",
+      "opponent_career_id": null,
       "opponent_name": "Dominic Paterra",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 309,
       "weight_class": "157",
       "result": "W",
       "method": "TB-2",
       "score": "8-7",
       "duration": "10:00",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": 0.16
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29686436132",
+      "opponent_career_id": null,
       "opponent_name": "Brodie Dominique",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 140,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "14-1",
       "duration": "7:00",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": -4.45
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29685061132",
+      "opponent_career_id": null,
       "opponent_name": "Dylan Layton",
       "opponent_team": "Cleveland State",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 56,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 60,
       "weight_class": "149",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:39",
-      "event": "Kent State Open"
+      "event": "Kent State Open",
+      "mv_impact": -5.1
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29686178132",
+      "opponent_career_id": null,
       "opponent_name": "Judah Aybar",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 223,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "17-0",
       "duration": "3:29",
-      "event": "Kent State Open"
+      "event": "Kent State Open",
+      "mv_impact": -5.92
     },
     {
       "date": "2024-12-01",
       "opponent_id": "29685271132",
+      "opponent_career_id": null,
       "opponent_name": "Venumadhava Mirel",
       "opponent_team": "Navy",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 28,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 243,
       "weight_class": "149",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:46",
-      "event": "Mat Town Open 1"
+      "event": "Mat Town Open 1",
+      "mv_impact": -8.2
     },
     {
       "date": "2024-12-01",
       "opponent_id": "29676689132",
+      "opponent_career_id": null,
       "opponent_name": "Dashawn Farber",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 132,
       "weight_class": "149",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:23",
-      "event": "Mat Town Open 1"
+      "event": "Mat Town Open 1",
+      "mv_impact": -6.0
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34954157132",
+      "team": "Bucknell",
+      "team_slug": "bucknell",
+      "weight_class": 157,
+      "grade": "Jr.",
+      "current_rank": 258,
+      "record": "0-4"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29683824132",
+      "team": "Bucknell",
+      "team_slug": "bucknell",
+      "weight_class": 157,
+      "grade": "So.",
+      "current_rank": 308,
+      "record": "1-7"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24679954132",
+      "team": "Bucknell",
+      "team_slug": "bucknell",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 306,
+      "record": "0-5"
+    }
+  ]
 }

@@ -3,15 +3,20 @@
   "name": "Connor Owens",
   "team": "Michigan",
   "team_slug": "michigan",
-  "team_rank": 62,
+  "team_rank": 13,
   "weight_class": 174,
+  "grade": "R-Fr.",
+  "hometown": "Fenton, Mich.",
+  "high_school": "Powers Catholic",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fmgoblue.com%2Fimages%2F2024%2F10%2F9%2FMGB_20240824-wrm-owens.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 90,
   "record": {
     "overall": "6-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "6-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 3.85,
@@ -24,182 +29,253 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.217,
+      "matches": 12,
+      "rank_weight": 74,
+      "rank_overall": 764,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 6,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29672282132",
+      "opponent_rank": 66,
+      "opponent_name": "Ceasar Garza",
+      "method": "SV-1 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "29723004132",
+      "opponent_rank": 87,
+      "opponent_name": "Collin Guffey",
+      "method": "Dec 4-2"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-16",
       "opponent_id": "29672282132",
+      "opponent_career_id": null,
       "opponent_name": "Ceasar Garza",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 66,
       "weight_class": "174",
       "result": "L",
       "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
-      "event": "vs. Michigan State"
+      "event": "vs. Michigan State",
+      "mv_impact": -3.27
     },
     {
       "date": "2025-01-04",
       "opponent_id": "29685885132",
+      "opponent_career_id": null,
       "opponent_name": "Brody Evans",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 160,
       "weight_class": "174",
       "result": "W",
       "method": "DEC",
       "score": "2-1",
       "duration": "7:00",
-      "event": "Bobby Kauffman Open"
+      "event": "Bobby Kauffman Open",
+      "mv_impact": 2.67
     },
     {
       "date": "2025-01-04",
       "opponent_id": "29685874132",
+      "opponent_career_id": null,
       "opponent_name": "Joseph Arnold",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 53,
       "weight_class": "174",
       "result": "L",
       "method": "TB-2",
       "score": "3-1",
       "duration": "10:00",
-      "event": "Bobby Kauffman Open"
+      "event": "Bobby Kauffman Open",
+      "mv_impact": -1.8
     },
     {
       "date": "2025-01-04",
       "opponent_id": "29991235132",
+      "opponent_career_id": null,
       "opponent_name": "Sam Beckett",
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 46,
       "weight_class": "174",
       "result": "L",
       "method": "TB-2",
       "score": "5-2",
       "duration": "10:00",
-      "event": "Bobby Kauffman Open"
+      "event": "Bobby Kauffman Open",
+      "mv_impact": -1.82
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29734996132",
+      "opponent_career_id": null,
       "opponent_name": "Alex Cramer",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 45,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 20,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -1.26
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29672282132",
+      "opponent_career_id": null,
       "opponent_name": "Ceasar Garza",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 66,
       "weight_class": "174",
       "result": "W",
       "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": 2.73
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29736337132",
+      "opponent_career_id": null,
       "opponent_name": "Aiden Vandenbush",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 39,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 242,
       "weight_class": "174",
       "result": "W",
       "method": "DEC",
       "score": "7-2",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": 0.3
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29723004132",
+      "opponent_career_id": null,
       "opponent_name": "Collin Guffey",
       "opponent_team": "Stanford",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 25,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 87,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -3.2
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29721833132",
+      "opponent_career_id": null,
       "opponent_name": "Jack Ganos",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 113,
       "weight_class": "174",
       "result": "W",
       "method": "DEC",
       "score": "10-4",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": 2.69
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29685072132",
+      "opponent_career_id": null,
       "opponent_name": "Gavin Ricketts",
       "opponent_team": "Cleveland State",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 56,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 121,
       "weight_class": "174",
       "result": "W",
       "method": "DEC",
       "score": "9-8",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": 1.76
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29681461132",
+      "opponent_career_id": null,
       "opponent_name": "Magnus Kuokkanen",
       "opponent_team": "Indiana",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 36,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 116,
       "weight_class": "174",
       "result": "W",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": 2.05
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34933530132",
+      "team": "Michigan",
+      "team_slug": "michigan",
+      "weight_class": 174,
+      "grade": "R-So.",
+      "current_rank": 114,
+      "record": "4-6"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29672197132",
+      "team": "Michigan",
+      "team_slug": "michigan",
+      "weight_class": 174,
+      "grade": "R-Fr.",
+      "current_rank": 90,
+      "record": "6-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24582402132",
+      "team": "Michigan",
+      "team_slug": "michigan",
+      "weight_class": 174,
+      "grade": "Fr.",
+      "current_rank": 78,
+      "record": "8-4"
+    }
+  ]
 }

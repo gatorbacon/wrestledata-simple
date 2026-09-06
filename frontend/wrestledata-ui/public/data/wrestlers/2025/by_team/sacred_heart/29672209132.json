@@ -3,13 +3,18 @@
   "name": "Nicolas Eboli",
   "team": "Sacred Heart",
   "team_slug": "sacred_heart",
-  "team_rank": 74,
+  "team_rank": 78,
   "weight_class": 174,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 265,
   "record": {
     "overall": "1-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,112 +24,183 @@
     "pd7": -10.0,
     "si_plus": 88.3,
     "df_plus": 89.8,
-    "apr_plus": 106.1,
+    "apr_plus": 106.0,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -3.49,
+      "matches": 8,
+      "rank_weight": 186,
+      "rank_overall": 1917,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29672216132",
+      "opponent_rank": 275,
+      "opponent_name": "Calum Price",
+      "method": "Fall 4:17"
+    },
+    "worst_loss": {
+      "opponent_id": "29673093132",
+      "opponent_rank": 193,
+      "opponent_name": "Nick Alvarez",
+      "method": "Dec 9-4"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-22",
       "opponent_id": "29686591132",
+      "opponent_career_id": null,
       "opponent_name": "Connor O`Donnell",
       "opponent_team": "Brown",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 62,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 86,
       "weight_class": "184",
       "result": "L",
       "method": "TF",
       "score": "19-3",
       "duration": "5:54",
-      "event": "vs. Sacred Heart"
+      "event": "vs. Sacred Heart",
+      "mv_impact": -4.33
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29686591132",
+      "opponent_career_id": null,
       "opponent_name": "Connor O`Donnell",
       "opponent_team": "Brown",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 62,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 86,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "12-4",
       "duration": "7:00",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": -3.33
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29672313132",
+      "opponent_career_id": null,
       "opponent_name": "Gavin Wilmoth",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 162,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "11-2",
       "duration": "7:00",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": -5.24
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29672216132",
+      "opponent_career_id": null,
       "opponent_name": "Calum Price",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 78,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 275,
       "weight_class": "174",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:17",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": 2.27
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29673093132",
+      "opponent_career_id": null,
       "opponent_name": "Nick Alvarez",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 193,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "9-4",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -4.85
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29672385132",
+      "opponent_career_id": null,
       "opponent_name": "Blake Bahna",
       "opponent_team": "LIU",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 73,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 129,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "12-3",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -4.77
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29672209132",
+      "team": "Sacred Heart",
+      "team_slug": "sacred_heart",
+      "weight_class": 174,
+      "grade": "",
+      "current_rank": 265,
+      "record": "1-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24579759132",
+      "team": "Sacred Heart",
+      "team_slug": "sacred_heart",
+      "weight_class": 184,
+      "grade": "",
+      "current_rank": 187,
+      "record": "1-4"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20122337132",
+      "team": "Sacred Heart",
+      "team_slug": "sacred_heart",
+      "weight_class": 174,
+      "grade": "",
+      "current_rank": 256,
+      "record": "1-4"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16696573132",
+      "team": "Sacred Heart",
+      "team_slug": "sacred_heart",
+      "weight_class": 165,
+      "grade": "",
+      "current_rank": 255,
+      "record": "1-2"
+    }
+  ]
 }

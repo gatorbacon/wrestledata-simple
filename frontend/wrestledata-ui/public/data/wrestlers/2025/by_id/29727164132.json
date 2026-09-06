@@ -3,15 +3,20 @@
   "name": "Kai O`Dell",
   "team": "Appalachian State",
   "team_slug": "appalachian_state",
-  "team_rank": 36,
+  "team_rank": 47,
   "weight_class": 149,
+  "grade": "R-So.",
+  "hometown": "Danbury, Conn.",
+  "high_school": "Danbury",
+  "photo_url": "https://dg5crudsxv7wa.cloudfront.net/images/2024/12/4/O_Dell_Kai_6pr36.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 131,
   "record": {
     "overall": "3-6",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 5.83,
@@ -19,157 +24,234 @@
     "pd7": -1.28,
     "si_plus": 99.2,
     "df_plus": 104.6,
-    "apr_plus": 96.7,
+    "apr_plus": 96.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.333,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.585,
+      "matches": 11,
+      "rank_weight": 123,
+      "rank_overall": 1056,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29674082132",
+      "opponent_rank": 75,
+      "opponent_name": "Gavin Linsman",
+      "method": "TB-2 (RT) 6-6"
+    },
+    "worst_loss": {
+      "opponent_id": "29734772132",
+      "opponent_rank": 137,
+      "opponent_name": "Theodore Cha",
+      "method": "SV-3 8-5"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-25",
       "opponent_id": "29674082132",
+      "opponent_career_id": null,
       "opponent_name": "Gavin Linsman",
       "opponent_team": "NC State",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 14,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 75,
       "weight_class": "149",
       "result": "W",
       "method": "TB-2",
       "score": "6-6",
       "duration": "10:00",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": 3.3
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29678494132",
+      "opponent_career_id": null,
       "opponent_name": "Kal Miller",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 17,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 25,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "10-4",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -2.04
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29681434132",
+      "opponent_career_id": null,
       "opponent_name": "Kaden Cassidy",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 31,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "12-7",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -1.54
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29685274132",
+      "opponent_career_id": null,
       "opponent_name": "Kaemen Smith",
       "opponent_team": "Navy",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 28,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 89,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "6-3",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": 2.62
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29673123132",
+      "opponent_career_id": null,
       "opponent_name": "Kyle Deisley",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 291,
       "weight_class": "149",
       "result": "W",
       "method": "MD",
       "score": "13-4",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": 1.43
     },
     {
       "date": "2024-11-12",
       "opponent_id": "29734772132",
+      "opponent_career_id": null,
       "opponent_name": "Theodore Cha",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 7,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 137,
       "weight_class": "149",
       "result": "L",
       "method": "SV-3",
       "score": "8-5",
       "duration": "8:15",
-      "event": "Mountaineer Invitational"
+      "event": "Mountaineer Invitational",
+      "mv_impact": -3.8
     },
     {
       "date": "2024-11-12",
       "opponent_id": "29677475132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler-Xavier McKnight",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 63,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "11-9",
       "duration": "7:00",
-      "event": "Mountaineer Invitational"
+      "event": "Mountaineer Invitational",
+      "mv_impact": -2.39
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29687870132",
+      "opponent_career_id": null,
       "opponent_name": "Carson DesRosier",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 18,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -1.09
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29687886132",
+      "opponent_career_id": null,
       "opponent_name": "Kyrell Leavell",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 65,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "8-3",
       "duration": "7:00",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -2.17
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34944345132",
+      "team": "Appalachian State",
+      "team_slug": "appalachian_state",
+      "weight_class": 157,
+      "grade": "R-Jr.",
+      "current_rank": 60,
+      "record": "16-10"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29727164132",
+      "team": "Appalachian State",
+      "team_slug": "appalachian_state",
+      "weight_class": 149,
+      "grade": "R-So.",
+      "current_rank": 131,
+      "record": "3-6"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24603633132",
+      "team": "Appalachian State",
+      "team_slug": "appalachian_state",
+      "weight_class": 149,
+      "grade": "R-Fr.",
+      "current_rank": 233,
+      "record": "2-5"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20139285132",
+      "team": "Appalachian State",
+      "team_slug": "appalachian_state",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 228,
+      "record": "2-4"
+    }
+  ]
 }

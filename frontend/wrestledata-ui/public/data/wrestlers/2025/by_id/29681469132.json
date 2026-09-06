@@ -3,13 +3,18 @@
   "name": "Bryce Lowery",
   "team": "Indiana",
   "team_slug": "indiana",
-  "team_rank": 16,
+  "team_rank": 36,
   "weight_class": 157,
+  "grade": "R-Fr.",
+  "hometown": "Indianapolis, Ind.",
+  "high_school": "Roncalli High School",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fiuhoosiers.com%2Fimages%2F2024%2F11%2F1%2FVert_16_Lowery.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 80,
   "record": {
     "overall": "2-0",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,47 +29,95 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 3.205,
+      "matches": 2,
+      "rank_weight": 10,
+      "rank_overall": 95,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "29687816132",
+      "opponent_rank": 57,
+      "opponent_name": "Legend Lamer",
+      "method": "Dec 10-3"
+    },
     "worst_loss": null
   },
   "match_list": [
     {
       "date": "2024-11-03",
       "opponent_id": "29687816132",
+      "opponent_career_id": null,
       "opponent_name": "Legend Lamer",
       "opponent_team": "Cal Poly",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 19,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 57,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "10-3",
       "duration": "7:00",
-      "event": "vs. Indiana"
+      "event": "vs. Indiana",
+      "mv_impact": 3.85
     },
     {
       "date": "2024-11-01",
       "opponent_id": "29684531132",
+      "opponent_career_id": null,
       "opponent_name": "Jeremy Ginter",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 128,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "10-4",
       "duration": "7:00",
-      "event": "vs. Indiana"
+      "event": "vs. Indiana",
+      "mv_impact": 2.56
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34945837132",
+      "team": "Indiana",
+      "team_slug": "indiana",
+      "weight_class": 157,
+      "grade": "R-Fr.",
+      "current_rank": 22,
+      "record": "13-14"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29681469132",
+      "team": "Indiana",
+      "team_slug": "indiana",
+      "weight_class": 157,
+      "grade": "R-Fr.",
+      "current_rank": 80,
+      "record": "2-0"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24586825132",
+      "team": "Indiana",
+      "team_slug": "indiana",
+      "weight_class": 165,
+      "grade": "Fr.",
+      "current_rank": 155,
+      "record": "0-0"
+    }
+  ]
 }

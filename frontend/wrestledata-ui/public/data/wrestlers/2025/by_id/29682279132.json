@@ -3,13 +3,18 @@
   "name": "Jack Maida",
   "team": "American",
   "team_slug": "american",
-  "team_rank": 35,
+  "team_rank": 59,
   "weight_class": 141,
+  "grade": "Sr.",
+  "hometown": "Oceanport, N.J.",
+  "high_school": "Shore Regional",
+  "photo_url": "https://aueagles.com/images/2024/10/11/Maida_Jack_AU_Wrestling_MediaDay_Oct03240016.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 173,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,47 +29,120 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.515,
+      "matches": 2,
+      "rank_weight": 140,
+      "rank_overall": 1375,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29672292132",
+      "opponent_rank": 259,
+      "opponent_name": "Jaden Crumpler",
+      "method": "Dec 6-4"
+    },
+    "worst_loss": {
+      "opponent_id": "29678496132",
+      "opponent_rank": 124,
+      "opponent_name": "Dario Lemus",
+      "method": "Dec 13-7"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-16",
       "opponent_id": "29678496132",
+      "opponent_career_id": null,
       "opponent_name": "Dario Lemus",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 17,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 124,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "13-7",
       "duration": "7:00",
-      "event": "vs. Maryland"
+      "event": "vs. Maryland",
+      "mv_impact": -3.76
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29672292132",
+      "opponent_career_id": null,
       "opponent_name": "Jaden Crumpler",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 259,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
-      "event": "vs. Michigan State"
+      "event": "vs. Michigan State",
+      "mv_impact": 0.73
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34957104132",
+      "team": "American",
+      "team_slug": "american",
+      "weight_class": 141,
+      "grade": "Gr.",
+      "current_rank": 267,
+      "record": "9-10"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29682279132",
+      "team": "American",
+      "team_slug": "american",
+      "weight_class": 141,
+      "grade": "Sr.",
+      "current_rank": 173,
+      "record": "1-1"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24580794132",
+      "team": "American",
+      "team_slug": "american",
+      "weight_class": 125,
+      "grade": "Jr.",
+      "current_rank": 38,
+      "record": "15-4"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20127487132",
+      "team": "American",
+      "team_slug": "american",
+      "weight_class": 133,
+      "grade": "So.",
+      "current_rank": 46,
+      "record": "21-16"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16703367132",
+      "team": "American",
+      "team_slug": "american",
+      "weight_class": 133,
+      "grade": "Fr.",
+      "current_rank": 54,
+      "record": "16-11"
+    }
+  ]
 }

@@ -3,13 +3,18 @@
   "name": "Jamikael Lytle",
   "team": "California Baptist",
   "team_slug": "california_baptist",
-  "team_rank": 44,
+  "team_rank": 64,
   "weight_class": 285,
+  "grade": "Jr.",
+  "hometown": "Poway, CA",
+  "high_school": "Poway HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fcalbaptist.sidearmsports.com%2Fimages%2F2024%2F9%2F10%2FJamikael_Lylte.jpg&width=603&height=803&type=webp",
+  "previous_school": "Previous Team: Queens (NC)",
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 209,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,52 +24,85 @@
     "pd7": 0.0,
     "si_plus": 102.6,
     "df_plus": 103.3,
-    "apr_plus": 114.0,
+    "apr_plus": 113.8,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -0.909,
+      "matches": 2,
+      "rank_weight": 106,
+      "rank_overall": 1168,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29687572132",
+      "opponent_rank": 106,
+      "opponent_name": "Darius Mynar",
+      "method": "Fall 4:11"
+    },
+    "worst_loss": {
+      "opponent_id": "29681150132",
+      "opponent_rank": 104,
+      "opponent_name": "Jack Forbes",
+      "method": "Fall 4:28"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-04",
       "opponent_id": "29681150132",
+      "opponent_career_id": null,
       "opponent_name": "Jack Forbes",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 104,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:28",
-      "event": "vs. Utah Valley"
+      "event": "vs. Utah Valley",
+      "mv_impact": -6.98
     },
     {
       "date": "2024-12-22",
       "opponent_id": "29687572132",
+      "opponent_career_id": null,
       "opponent_name": "Darius Mynar",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 41,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 106,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:11",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": 5.16
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29684566132",
+      "team": "California Baptist",
+      "team_slug": "california_baptist",
+      "weight_class": 285,
+      "grade": "Jr.",
+      "current_rank": 209,
+      "record": "1-1"
+    }
+  ]
 }

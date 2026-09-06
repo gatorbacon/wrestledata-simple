@@ -5,13 +5,18 @@
   "team_slug": "penn_state",
   "team_rank": 1,
   "weight_class": 174,
+  "grade": "Senior",
+  "hometown": "Evansville, Ind.",
+  "high_school": "Evansville Mater Dei",
+  "photo_url": "https://gopsusports.com/imgproxy/TEMiWEweYXzMfuwyYAQ4CQL_rRPcc4uE5tu452gyBzk/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2dvcHN1c3BvcnRzLXByb2QvMjAyNC8xMC8wMi8wN2tXWFdTQTZvbzhZekk1MFNvcGdCVGx6MFZxQnA0R1JUMlFTNm5tLmpwZw.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 63,
   "record": {
     "overall": "2-0",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "1-0"
   },
   "metrics": {
     "pf7": 12.31,
@@ -19,52 +24,120 @@
     "pd7": 9.15,
     "si_plus": 118.7,
     "df_plus": 107.8,
-    "apr_plus": 95.0,
+    "apr_plus": 95.1,
     "pin_rate": 0.0,
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 3.282,
+      "matches": 2,
+      "rank_weight": 5,
+      "rank_overall": 89,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "29680111132",
+      "opponent_rank": 23,
+      "opponent_name": "Dalton Harkins",
+      "method": "Dec 5-4"
+    },
     "worst_loss": null
   },
   "match_list": [
     {
       "date": "2024-11-24",
       "opponent_id": "29680111132",
+      "opponent_career_id": null,
       "opponent_name": "Dalton Harkins",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 23,
       "weight_class": "174",
       "result": "W",
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": 4.3
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29678058132",
+      "opponent_career_id": null,
       "opponent_name": "Andrew Wilson",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 228,
       "weight_class": "174",
       "result": "W",
       "method": "TF",
       "score": "17-2",
       "duration": "6:04",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": 2.27
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29679316132",
+      "team": "Penn State",
+      "team_slug": "penn_state",
+      "weight_class": 174,
+      "grade": "Senior",
+      "current_rank": 63,
+      "record": "2-0"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584811132",
+      "team": "Penn State",
+      "team_slug": "penn_state",
+      "weight_class": 165,
+      "grade": "Junior",
+      "current_rank": 76,
+      "record": "5-2"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20124282132",
+      "team": "Penn State",
+      "team_slug": "penn_state",
+      "weight_class": 165,
+      "grade": "Sophomore",
+      "current_rank": 61,
+      "record": "3-2"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16699223132",
+      "team": "Penn State",
+      "team_slug": "penn_state",
+      "weight_class": 165,
+      "grade": "Redshirt Freshman",
+      "current_rank": 123,
+      "record": "4-7"
+    },
+    {
+      "season": 2021,
+      "wrestler_id": "14801959132",
+      "team": "Penn State",
+      "team_slug": "penn_state",
+      "weight_class": 165,
+      "grade": "Freshman",
+      "current_rank": 149,
+      "record": "0-0"
+    }
+  ]
 }

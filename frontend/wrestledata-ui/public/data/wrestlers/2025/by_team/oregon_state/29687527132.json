@@ -3,13 +3,18 @@
   "name": "Hunter Eveland",
   "team": "Oregon State",
   "team_slug": "oregon_state",
-  "team_rank": 31,
+  "team_rank": 41,
   "weight_class": 149,
+  "grade": "R-Jr.",
+  "hometown": "Corvallis, Ore.",
+  "high_school": "Crescent Valley HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Foregonstate.sidearmsports.com%2Fimages%2F2024%2F10%2F9%2F25WRE_Headshot_EvelandHunter_00075.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 194,
   "record": {
     "overall": "0-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,37 +24,93 @@
     "pd7": -4.0,
     "si_plus": 81.4,
     "df_plus": 106.7,
-    "apr_plus": 105.2,
+    "apr_plus": 104.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.77,
+      "matches": 1,
+      "rank_weight": 196,
+      "rank_overall": 1756,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29687535132",
+      "opponent_rank": 61,
+      "opponent_name": "Ayden Garver",
+      "method": "Dec 4-0"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-10",
       "opponent_id": "29687535132",
+      "opponent_career_id": null,
       "opponent_name": "Ayden Garver",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 41,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 61,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "4-0",
       "duration": "7:00",
-      "event": "Mike Clock open 2024 Men"
+      "event": "Mike Clock open 2024 Men",
+      "mv_impact": -2.77
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29687527132",
+      "team": "Oregon State",
+      "team_slug": "oregon_state",
+      "weight_class": 149,
+      "grade": "R-Jr.",
+      "current_rank": 194,
+      "record": "0-1"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24581769132",
+      "team": "Oregon State",
+      "team_slug": "oregon_state",
+      "weight_class": 149,
+      "grade": "Jr.",
+      "current_rank": 149,
+      "record": "2-2"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20123414132",
+      "team": "Oregon State",
+      "team_slug": "oregon_state",
+      "weight_class": 149,
+      "grade": "So.",
+      "current_rank": 147,
+      "record": "0-2"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16708139132",
+      "team": "Oregon State",
+      "team_slug": "oregon_state",
+      "weight_class": 141,
+      "grade": "Fr.",
+      "current_rank": 101,
+      "record": "2-1"
+    }
+  ]
 }

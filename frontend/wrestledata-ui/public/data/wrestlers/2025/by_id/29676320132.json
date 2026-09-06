@@ -3,13 +3,18 @@
   "name": "Cayaen Smith",
   "team": "Ohio State",
   "team_slug": "ohio_state",
-  "team_rank": 20,
+  "team_rank": 5,
   "weight_class": 197,
+  "grade": "Fr.",
+  "hometown": "Lehi, Utah",
+  "high_school": "Pleasant Grove High School",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fohiostatebuckeyes.com%2Fimages%2F2024%2F9%2F17%2FSmith__Cayaen_001_ajodT.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 160,
   "record": {
     "overall": "3-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,137 +29,192 @@
     "bonus_rate": 0.667,
     "majors": 2,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.701,
+      "matches": 8,
+      "rank_weight": 119,
+      "rank_overall": 1427,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29686091132",
+      "opponent_rank": 165,
+      "opponent_name": "Hunter Janeczko",
+      "method": "MD 12-4"
+    },
+    "worst_loss": {
+      "opponent_id": "29672302132",
+      "opponent_rank": 162,
+      "opponent_name": "Ethan Wiant",
+      "method": "Dec 4-1"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-21",
       "opponent_id": "29679397132",
+      "opponent_career_id": null,
       "opponent_name": "Tucker Hogan",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 32,
       "weight_class": "197",
       "result": "L",
       "method": "MD",
       "score": "10-1",
       "duration": "7:00",
-      "event": "vs. Ohio State"
+      "event": "vs. Ohio State",
+      "mv_impact": -2.28
     },
     {
       "date": "2024-12-21",
       "opponent_id": "29676001132",
+      "opponent_career_id": null,
       "opponent_name": "Cade Lautt",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 52,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "20-5",
       "duration": "0:00",
-      "event": "vs. Ohio State"
+      "event": "vs. Ohio State",
+      "mv_impact": -4.9
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29686998132",
+      "opponent_career_id": null,
       "opponent_name": "Corey Boerio",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 230,
       "weight_class": "197",
       "result": "W",
       "method": "MD",
       "score": "17-6",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": 0.81
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29672199132",
+      "opponent_career_id": null,
       "opponent_name": "Hayden Walters",
       "opponent_team": "Michigan",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 13,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 39,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": -1.88
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29686091132",
+      "opponent_career_id": null,
       "opponent_name": "Hunter Janeczko",
       "opponent_team": "Ohio",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 46,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 165,
       "weight_class": "197",
       "result": "W",
       "method": "MD",
       "score": "12-4",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": 2.06
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29679974132",
+      "opponent_career_id": null,
       "opponent_name": "Andrew Liber",
       "opponent_team": "Bellarmine",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 60,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 60,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -2.99
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29679959132",
+      "opponent_career_id": null,
       "opponent_name": "Kennedy Wyatt",
       "opponent_team": "Bellarmine",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 60,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 229,
       "weight_class": "197",
       "result": "W",
       "method": "SV-3",
       "score": "8-5",
       "duration": "8:15",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -0.23
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29672302132",
+      "opponent_career_id": null,
       "opponent_name": "Ethan Wiant",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 162,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -4.2
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34941793132",
+      "team": "Ohio State",
+      "team_slug": "ohio_state",
+      "weight_class": 184,
+      "grade": "R-Fr.",
+      "current_rank": 153,
+      "record": "2-6"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29676320132",
+      "team": "Ohio State",
+      "team_slug": "ohio_state",
+      "weight_class": 197,
+      "grade": "Fr.",
+      "current_rank": 160,
+      "record": "3-5"
+    }
+  ]
 }

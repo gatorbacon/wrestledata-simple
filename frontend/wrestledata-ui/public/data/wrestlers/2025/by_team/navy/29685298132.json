@@ -3,10 +3,15 @@
   "name": "Jack Bergmann",
   "team": "Navy",
   "team_slug": "navy",
-  "team_rank": 66,
+  "team_rank": 28,
   "weight_class": 125,
+  "grade": "Fr.",
+  "hometown": "Haskell, N.J.",
+  "high_school": "Lakeland Regional",
+  "photo_url": "https://navysports.com/images/2024/9/10/Bergmann_Jack28.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 173,
+  "current_rank": 172,
   "record": {
     "overall": "2-6",
     "vs_ranked": "2-6",
@@ -24,7 +29,14 @@
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.756,
+      "matches": 8,
+      "rank_weight": 154,
+      "rank_overall": 1752,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
@@ -33,13 +45,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29686153132",
-      "opponent_rank": 141,
+      "opponent_rank": 178,
       "opponent_name": "Aiden Shufelt",
       "method": "Dec 8-1"
     },
     "worst_loss": {
       "opponent_id": "29687303132",
-      "opponent_rank": 165,
+      "opponent_rank": 195,
       "opponent_name": "Tyeler Hagensen",
       "method": "Dec 10-3"
     }
@@ -48,54 +60,61 @@
     {
       "date": "2024-12-08",
       "opponent_id": "29727168132",
+      "opponent_career_id": null,
       "opponent_name": "Colby McBride",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 125,
-      "opponent_rank": 57,
+      "opponent_rank": 78,
       "weight_class": "125",
       "result": "L",
       "method": "SV-3",
       "score": "4-1",
       "duration": "8:15",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -2.79
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29672707132",
+      "opponent_career_id": null,
       "opponent_name": "Alex Esposito",
       "opponent_team": "Rider",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 34,
       "opponent_weight": 125,
-      "opponent_rank": 195,
+      "opponent_rank": 216,
       "weight_class": "125",
       "result": "W",
       "method": "TF",
       "score": "15-0",
       "duration": "1:56",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": 1.62
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29674878132",
+      "opponent_career_id": null,
       "opponent_name": "Noah Michaels",
       "opponent_team": "Rider",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 34,
       "opponent_weight": 125,
-      "opponent_rank": 87,
+      "opponent_rank": 75,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "5-0",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -2.69
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29681473132",
+      "opponent_career_id": null,
       "opponent_name": "Jacob Moran",
       "opponent_team": "Indiana",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 36,
       "opponent_weight": 125,
       "opponent_rank": 13,
       "weight_class": "125",
@@ -103,68 +122,99 @@
       "method": "INJ",
       "score": null,
       "duration": "0:00",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": -4.16
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29687303132",
+      "opponent_career_id": null,
       "opponent_name": "Tyeler Hagensen",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 125,
-      "opponent_rank": 165,
+      "opponent_rank": 195,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "10-3",
       "duration": "7:00",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": -5.14
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29686153132",
+      "opponent_career_id": null,
       "opponent_name": "Aiden Shufelt",
       "opponent_team": "Buffalo",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 63,
       "opponent_weight": 125,
-      "opponent_rank": 141,
+      "opponent_rank": 178,
       "weight_class": "125",
       "result": "W",
       "method": "DEC",
       "score": "8-1",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": 0.94
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29686185132",
+      "opponent_career_id": null,
       "opponent_name": "Weston Pisarchick",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 125,
-      "opponent_rank": 145,
+      "opponent_rank": 139,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "6-3",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -4.81
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29676288132",
+      "opponent_career_id": null,
       "opponent_name": "Garett Lautzenheiser",
       "opponent_team": "Ohio State",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 5,
       "opponent_weight": 125,
-      "opponent_rank": 157,
+      "opponent_rank": 141,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "9-3",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -5.01
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34939068132",
+      "team": "Navy",
+      "team_slug": "navy",
+      "weight_class": 125,
+      "grade": "So.",
+      "current_rank": 130,
+      "record": "8-8"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29685298132",
+      "team": "Navy",
+      "team_slug": "navy",
+      "weight_class": 125,
+      "grade": "Fr.",
+      "current_rank": 172,
+      "record": "2-6"
+    }
+  ]
 }

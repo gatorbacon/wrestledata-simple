@@ -3,13 +3,18 @@
   "name": "Brendan Martin",
   "team": "Gardner-Webb",
   "team_slug": "gardnerwebb",
-  "team_rank": 56,
+  "team_rank": 53,
   "weight_class": 141,
+  "grade": "R-Fr.",
+  "hometown": "Rockville Center, N.Y.",
+  "high_school": "Uniondale HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgwu.sidearmsports.com%2Fimages%2F2024%2F10%2F16%2FMartin_n7VLo.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 260,
   "record": {
     "overall": "0-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,82 +24,124 @@
     "pd7": -18.58,
     "si_plus": 85.9,
     "df_plus": 75.1,
-    "apr_plus": 93.4,
+    "apr_plus": 93.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.776,
+      "matches": 4,
+      "rank_weight": 244,
+      "rank_overall": 2323,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29673205132",
+      "opponent_rank": 186,
+      "opponent_name": "Noah Keen",
+      "method": "TF 21-4 5:39"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-25",
       "opponent_id": "29676066132",
+      "opponent_career_id": null,
       "opponent_name": "Elias Navida",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 37,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:44",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -4.3
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29678072132",
+      "opponent_career_id": null,
       "opponent_name": "Charlie Sly",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 132,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "16-1",
       "duration": "6:08",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -5.96
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29673205132",
+      "opponent_career_id": null,
       "opponent_name": "Noah Keen",
       "opponent_team": "Campbell",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 55,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 186,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "21-4",
       "duration": "5:39",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -6.88
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29673232132",
+      "opponent_career_id": null,
       "opponent_name": "Michael Trujillo",
       "opponent_team": "Campbell",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 55,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 86,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:47",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -5.97
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34937500132",
+      "team": "Gardner-Webb",
+      "team_slug": "gardnerwebb",
+      "weight_class": 141,
+      "grade": "R-So.",
+      "current_rank": 183,
+      "record": "0-2"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29683750132",
+      "team": "Gardner-Webb",
+      "team_slug": "gardnerwebb",
+      "weight_class": 141,
+      "grade": "R-Fr.",
+      "current_rank": 260,
+      "record": "0-4"
+    }
+  ]
 }

@@ -5,13 +5,18 @@
   "team_slug": "penn_state",
   "team_rank": 1,
   "weight_class": 141,
+  "grade": "Freshman",
+  "hometown": "Williamsport, Pa.",
+  "high_school": "Williamsport",
+  "photo_url": "https://gopsusports.com/imgproxy/q-GkR1t7lZSdAwxXJ9Ngpncrz9nOvb9ybPtr7DTXUEU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2dvcHN1c3BvcnRzLXByb2QvMjAyNC8xMC8wMi83M2lxa1pvWHNEeGJ0dUlQRmFuWFhZRlJXaFZTZUl0SWdHRFo2d0p5LmpwZw.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 106,
   "record": {
     "overall": "5-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "5-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 8.7,
@@ -24,167 +29,226 @@
     "bonus_rate": 0.4,
     "majors": 1,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.385,
+      "matches": 11,
+      "rank_weight": 73,
+      "rank_overall": 704,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 5,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29685886132",
+      "opponent_rank": 53,
+      "opponent_name": "Anthony Ferraro",
+      "method": "Dec 11-5"
+    },
+    "worst_loss": {
+      "opponent_id": "29672381132",
+      "opponent_rank": 166,
+      "opponent_name": "Devin Matthews",
+      "method": "Dec 5-2"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29721902132",
+      "opponent_career_id": null,
       "opponent_name": "Carter Nogle",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 70,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -2.48
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29682296132",
+      "opponent_career_id": null,
       "opponent_name": "Cael McIntyre",
       "opponent_team": "American",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 59,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 199,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "7-4",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": 0.84
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29678495132",
+      "opponent_career_id": null,
       "opponent_name": "Clayton Gabrielson",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 17,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 116,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "11-4",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -3.28
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29679326132",
+      "opponent_career_id": null,
       "opponent_name": "Timothy Levine",
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 188,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": 1.98
     },
     {
       "date": "2025-01-04",
       "opponent_id": "29685886132",
+      "opponent_career_id": null,
       "opponent_name": "Anthony Ferraro",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 53,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "11-5",
       "duration": "7:00",
-      "event": "Bobby Kauffman Open"
+      "event": "Bobby Kauffman Open",
+      "mv_impact": 4.07
     },
     {
       "date": "2025-01-04",
       "opponent_id": "29726563132",
+      "opponent_career_id": null,
       "opponent_name": "Seamus Mack",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 11,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 105,
       "weight_class": "141",
       "result": "W",
       "method": "MD",
       "score": "14-3",
       "duration": "7:00",
-      "event": "Bobby Kauffman Open"
+      "event": "Bobby Kauffman Open",
+      "mv_impact": 3.97
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29680135132",
+      "opponent_career_id": null,
       "opponent_name": "braden basile",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 46,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "9-4",
       "duration": "7:00",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": -2.13
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29678138132",
+      "opponent_career_id": null,
       "opponent_name": "Ty Edwards",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 102,
       "weight_class": "141",
       "result": "W",
       "method": "TF",
       "score": "15-0",
       "duration": "1:41",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": 4.78
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29672381132",
+      "opponent_career_id": null,
       "opponent_name": "Devin Matthews",
       "opponent_team": "LIU",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 73,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 166,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": -3.89
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29722726132",
+      "opponent_career_id": null,
       "opponent_name": "Jordan Soriano",
       "opponent_team": "Drexel",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 67,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 25,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "11-8",
       "duration": "7:00",
-      "event": "vs. Penn State"
+      "event": "vs. Penn State",
+      "mv_impact": -1.62
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34939028132",
+      "team": "Penn State",
+      "team_slug": "penn_state",
+      "weight_class": 141,
+      "grade": "Redshirt Freshman",
+      "current_rank": 194,
+      "record": "2-5"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29679360132",
+      "team": "Penn State",
+      "team_slug": "penn_state",
+      "weight_class": 141,
+      "grade": "Freshman",
+      "current_rank": 106,
+      "record": "5-5"
+    }
+  ]
 }

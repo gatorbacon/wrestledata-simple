@@ -3,13 +3,18 @@
   "name": "Wyatt Gibbs",
   "team": "Chattanooga",
   "team_slug": "chattanooga",
-  "team_rank": 46,
+  "team_rank": 51,
   "weight_class": 174,
+  "grade": "R-Fr.",
+  "hometown": "Brentwood, Tenn.",
+  "high_school": "Brentwood",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Futc.sidearmsports.com%2Fimages%2F2024%2F8%2F30%2FGibbs__Wyatt.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 226,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,92 +29,151 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.349,
+      "matches": 7,
+      "rank_weight": 184,
+      "rank_overall": 1887,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29672733132",
+      "opponent_rank": 211,
+      "opponent_name": "Patrick Adams",
+      "method": "MD 16-5"
+    },
+    "worst_loss": {
+      "opponent_id": "29678146132",
+      "opponent_rank": 189,
+      "opponent_name": "Jackson Potts",
+      "method": "MD 13-3"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-25",
       "opponent_id": "29686591132",
+      "opponent_career_id": null,
       "opponent_name": "Connor O`Donnell",
       "opponent_team": "Brown",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 62,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 86,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "4-0",
       "duration": "7:00",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -2.33
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29676008132",
+      "opponent_career_id": null,
       "opponent_name": "Nicholas Fea",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 59,
       "weight_class": "174",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "3:31",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -4.41
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29672733132",
+      "opponent_career_id": null,
       "opponent_name": "Patrick Adams",
       "opponent_team": "Campbell",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 55,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 211,
       "weight_class": "174",
       "result": "W",
       "method": "MD",
       "score": "16-5",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": 1.18
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29678146132",
+      "opponent_career_id": null,
       "opponent_name": "Jackson Potts",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 189,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "13-3",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -5.67
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29677466132",
+      "opponent_career_id": null,
       "opponent_name": "Marc Koch",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 161,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -4.21
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34935429132",
+      "team": "Chattanooga",
+      "team_slug": "chattanooga",
+      "weight_class": 184,
+      "grade": "R-So.",
+      "current_rank": 218,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29681680132",
+      "team": "Chattanooga",
+      "team_slug": "chattanooga",
+      "weight_class": 174,
+      "grade": "R-Fr.",
+      "current_rank": 226,
+      "record": "1-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24579988132",
+      "team": "Chattanooga",
+      "team_slug": "chattanooga",
+      "weight_class": 165,
+      "grade": "Fr.",
+      "current_rank": 264,
+      "record": "1-7"
+    }
+  ]
 }

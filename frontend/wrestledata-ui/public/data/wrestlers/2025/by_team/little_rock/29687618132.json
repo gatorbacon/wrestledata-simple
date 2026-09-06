@@ -3,13 +3,18 @@
   "name": "Marco Dalakishvili",
   "team": "Little Rock",
   "team_slug": "little_rock",
-  "team_rank": 28,
+  "team_rank": 15,
   "weight_class": 141,
+  "grade": "FRESHMAN",
+  "hometown": "Parkville, Mo.",
+  "high_school": "St. Pius X",
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 284,
   "record": {
     "overall": "0-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,92 +29,136 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.643,
+      "matches": 6,
+      "rank_weight": 253,
+      "rank_overall": 2378,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29684482132",
+      "opponent_rank": 213,
+      "opponent_name": "Alec Peralta",
+      "method": "Fall 6:30"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-05",
       "opponent_id": "29678072132",
+      "opponent_career_id": null,
       "opponent_name": "Charlie Sly",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 132,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "6:05",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -6.96
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29684491132",
+      "opponent_career_id": null,
       "opponent_name": "Danny Martinez",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 36,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:22",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": -4.86
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29734784132",
+      "opponent_career_id": null,
       "opponent_name": "Rhett Koenig",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 7,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 91,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "5:52",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": -6.21
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29686933132",
+      "opponent_career_id": null,
       "opponent_name": "Brennan Van Hoecke",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 15,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 77,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "16-1",
       "duration": "7:00",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": -4.22
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29684482132",
+      "opponent_career_id": null,
       "opponent_name": "Alec Peralta",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 213,
       "weight_class": "149",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "6:30",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": -8.81
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34945366132",
+      "team": "Little Rock",
+      "team_slug": "little_rock",
+      "weight_class": 157,
+      "grade": "SOPHOMORE",
+      "current_rank": 191,
+      "record": "1-7"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29687618132",
+      "team": "Little Rock",
+      "team_slug": "little_rock",
+      "weight_class": 141,
+      "grade": "FRESHMAN",
+      "current_rank": 284,
+      "record": "0-5"
+    }
+  ]
 }

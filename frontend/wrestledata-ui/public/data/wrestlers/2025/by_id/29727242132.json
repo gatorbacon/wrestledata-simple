@@ -3,13 +3,18 @@
   "name": "Grant Reece",
   "team": "Appalachian State",
   "team_slug": "appalachian_state",
-  "team_rank": 36,
+  "team_rank": 47,
   "weight_class": 149,
+  "grade": "Fr.",
+  "hometown": "Elk Park, N.C.",
+  "high_school": "Avery County",
+  "photo_url": "https://dg5crudsxv7wa.cloudfront.net/images/2024/12/4/Reece_K44Hr.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 263,
   "record": {
     "overall": "2-6",
-    "vs_ranked": "1-0",
+    "vs_ranked": "2-6",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,147 +24,197 @@
     "pd7": -12.6,
     "si_plus": 89.7,
     "df_plus": 83.3,
-    "apr_plus": 95.0,
+    "apr_plus": 95.1,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.895,
+      "matches": 13,
+      "rank_weight": 259,
+      "rank_overall": 2221,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29689118132",
-      "opponent_rank": 199,
+      "opponent_rank": 224,
       "opponent_name": "Spencer Von Savoye",
       "method": "Dec 6-2"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29688450132",
+      "opponent_rank": 234,
+      "opponent_name": "Rey Ortiz",
+      "method": "Fall 3:32"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-25",
       "opponent_id": "29678060132",
+      "opponent_career_id": null,
       "opponent_name": "Khamani Harrison",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 302,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "12-6",
       "duration": "7:00",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": 0.03
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29674082132",
+      "opponent_career_id": null,
       "opponent_name": "Gavin Linsman",
       "opponent_team": "NC State",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 14,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 75,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "16-1",
       "duration": "4:27",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -4.7
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29687873132",
+      "opponent_career_id": null,
       "opponent_name": "Dillon Roman",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 104,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "5:40",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -4.98
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29727174132",
+      "opponent_career_id": null,
       "opponent_name": "Aldo Hernandez",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 82,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "16-0",
       "duration": "1:36",
-      "event": "Mountaineer Open"
+      "event": "Mountaineer Open",
+      "mv_impact": -4.84
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29688450132",
+      "opponent_career_id": null,
       "opponent_name": "Rey Ortiz",
       "opponent_team": "Presbyterian",
-      "opponent_team_rank": 71,
+      "opponent_team_rank": 76,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 234,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:32",
-      "event": "Mountaineer Open"
+      "event": "Mountaineer Open",
+      "mv_impact": -8.64
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29689118132",
+      "opponent_career_id": null,
       "opponent_name": "Spencer Von Savoye",
       "opponent_team": "Duke",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 68,
       "opponent_weight": 133,
-      "opponent_rank": 199,
+      "opponent_rank": 224,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "6-2",
       "duration": "7:00",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -0.25
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29727539132",
+      "opponent_career_id": null,
       "opponent_name": "Brayden Fahrbach",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 104,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:27",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -6.21
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29687865132",
+      "opponent_career_id": null,
       "opponent_name": "Thomas Termini",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 220,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "22-5",
       "duration": "5:31",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -7.05
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34944357132",
+      "team": "Appalachian State",
+      "team_slug": "appalachian_state",
+      "weight_class": 149,
+      "grade": "R-Fr.",
+      "current_rank": 225,
+      "record": "1-2"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29727242132",
+      "team": "Appalachian State",
+      "team_slug": "appalachian_state",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 263,
+      "record": "2-6"
+    }
+  ]
 }

@@ -3,13 +3,18 @@
   "name": "Adam Thomson",
   "team": "Pennsylvania",
   "team_slug": "pennsylvania",
-  "team_rank": 24,
+  "team_rank": 20,
   "weight_class": 165,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 207,
   "record": {
     "overall": "2-6",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-6",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,137 +29,212 @@
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.705,
+      "matches": 10,
+      "rank_weight": 184,
+      "rank_overall": 1735,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29722720132",
+      "opponent_rank": 178,
+      "opponent_name": "Domenic D`Agostino",
+      "method": "Dec 15-9"
+    },
+    "worst_loss": {
+      "opponent_id": "29727158132",
+      "opponent_rank": 206,
+      "opponent_name": "Oren Bost",
+      "method": "Fall 4:39"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-23",
       "opponent_id": "29722720132",
+      "opponent_career_id": null,
       "opponent_name": "Domenic D`Agostino",
       "opponent_team": "Drexel",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 67,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 178,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": "15-9",
       "duration": "7:00",
-      "event": "Franklin & Marshall Invitational"
+      "event": "Franklin & Marshall Invitational",
+      "mv_impact": 1.81
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29684116132",
+      "opponent_career_id": null,
       "opponent_name": "Paul Ognissanti",
       "opponent_team": "Pennsylvania",
-      "opponent_team_rank": 24,
+      "opponent_team_rank": 20,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 70,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "2-1",
       "duration": "7:00",
-      "event": "Franklin & Marshall Invitational"
+      "event": "Franklin & Marshall Invitational",
+      "mv_impact": -2.51
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29673127132",
+      "opponent_career_id": null,
       "opponent_name": "Jake Neill",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 199,
       "weight_class": "165",
       "result": "W",
       "method": "MD",
       "score": "16-5",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": 2.36
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29685065132",
+      "opponent_career_id": null,
       "opponent_name": "Tate Geiser",
       "opponent_team": "Cleveland State",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 56,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 81,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -2.91
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29767468132",
+      "opponent_career_id": null,
       "opponent_name": "Gunnar Myers",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 39,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 48,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:35",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -4.67
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29681748132",
+      "opponent_career_id": null,
       "opponent_name": "Jared Keslar",
       "opponent_team": "Pittsburgh",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 21,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 122,
       "weight_class": "165",
       "result": "L",
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -4.43
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29727158132",
+      "opponent_career_id": null,
       "opponent_name": "Oren Bost",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 206,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:39",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -8.12
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29678481132",
+      "opponent_career_id": null,
       "opponent_name": "Gaven Bell",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 17,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 163,
       "weight_class": "165",
       "result": "L",
       "method": "MD",
       "score": "17-4",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -5.47
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34935922132",
+      "team": "Penn",
+      "team_slug": "penn",
+      "weight_class": 165,
+      "grade": "Sr.",
+      "current_rank": 77,
+      "record": "5-3"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29684075132",
+      "team": "Pennsylvania",
+      "team_slug": "pennsylvania",
+      "weight_class": 165,
+      "grade": "",
+      "current_rank": 207,
+      "record": "2-6"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24591811132",
+      "team": "Pennsylvania",
+      "team_slug": "pennsylvania",
+      "weight_class": 165,
+      "grade": "",
+      "current_rank": 113,
+      "record": "5-4"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20131186132",
+      "team": "Pennsylvania",
+      "team_slug": "pennsylvania",
+      "weight_class": 165,
+      "grade": "",
+      "current_rank": 118,
+      "record": "7-7"
+    }
+  ]
 }

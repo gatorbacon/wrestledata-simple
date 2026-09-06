@@ -3,13 +3,18 @@
   "name": "Michael Toranzo",
   "team": "Rutgers",
   "team_slug": "rutgers",
-  "team_rank": 13,
+  "team_rank": 31,
   "weight_class": 184,
+  "grade": "Jr.",
+  "hometown": "Nutley, N.J.",
+  "high_school": "St. Joseph Regional",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fscarletknights.com%2Fimages%2F2024%2F10%2F2%2FToranzo.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 113,
   "record": {
     "overall": "1-0",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,37 +24,93 @@
     "pd7": 7.0,
     "si_plus": 107.5,
     "df_plus": 108.7,
-    "apr_plus": 87.6,
+    "apr_plus": 87.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.398,
+      "matches": 1,
+      "rank_weight": 93,
+      "rank_overall": 988,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "29673103132",
+      "opponent_rank": 237,
+      "opponent_name": "Jake Allred",
+      "method": "Dec 10-3"
+    },
     "worst_loss": null
   },
   "match_list": [
     {
       "date": "2024-11-16",
       "opponent_id": "29673103132",
+      "opponent_career_id": null,
       "opponent_name": "Jake Allred",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 237,
       "weight_class": "184",
       "result": "W",
       "method": "DEC",
       "score": "10-3",
       "duration": "7:00",
-      "event": "Shorty Hitchcock Memorial Open"
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": -0.4
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29681430132",
+      "team": "Rutgers",
+      "team_slug": "rutgers",
+      "weight_class": 184,
+      "grade": "Jr.",
+      "current_rank": 113,
+      "record": "1-0"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24582432132",
+      "team": "Rutgers",
+      "team_slug": "rutgers",
+      "weight_class": 197,
+      "grade": "So.",
+      "current_rank": 92,
+      "record": "4-3"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20131016132",
+      "team": "Rutgers",
+      "team_slug": "rutgers",
+      "weight_class": 184,
+      "grade": "Fr.",
+      "current_rank": 223,
+      "record": "3-7"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16708150132",
+      "team": "Oregon State",
+      "team_slug": "oregon_state",
+      "weight_class": 285,
+      "grade": "Fr.",
+      "current_rank": 160,
+      "record": "0-0"
+    }
+  ]
 }

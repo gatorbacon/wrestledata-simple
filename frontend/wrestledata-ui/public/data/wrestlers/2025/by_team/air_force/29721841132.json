@@ -3,10 +3,15 @@
   "name": "Nick Gonzalez",
   "team": "Air Force",
   "team_slug": "air_force",
-  "team_rank": 34,
+  "team_rank": 58,
   "weight_class": 133,
+  "grade": "Jr.",
+  "hometown": "Naperville, IL",
+  "high_school": "Montini Catholic",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgoairforcefalcons.com%2Fimages%2F2024%2F8%2F27%2FNick_Gonzalez_.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 183,
+  "current_rank": 161,
   "record": {
     "overall": "1-0",
     "vs_ranked": "1-0",
@@ -24,7 +29,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.588,
+      "matches": 2,
+      "rank_weight": 111,
+      "rank_overall": 1058,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -33,7 +45,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29677473132",
-      "opponent_rank": 179,
+      "opponent_rank": 212,
       "opponent_name": "Enis Ljikovic",
       "method": "Dec 4-0"
     },
@@ -43,18 +55,62 @@
     {
       "date": "2025-01-26",
       "opponent_id": "29677473132",
+      "opponent_career_id": null,
       "opponent_name": "Enis Ljikovic",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 125,
-      "opponent_rank": 179,
+      "opponent_rank": 212,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "4-0",
       "duration": "7:00",
-      "event": "vs. Davidson"
+      "event": "vs. Davidson",
+      "mv_impact": -0.59
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34944166132",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 125,
+      "grade": "Sr.",
+      "current_rank": 149,
+      "record": "1-1"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29721841132",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 133,
+      "grade": "Jr.",
+      "current_rank": 161,
+      "record": "1-0"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24585327132",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 125,
+      "grade": "So.",
+      "current_rank": 64,
+      "record": "4-3"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20134439132",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 125,
+      "grade": "Fr.",
+      "current_rank": 143,
+      "record": "1-5"
+    }
+  ]
 }

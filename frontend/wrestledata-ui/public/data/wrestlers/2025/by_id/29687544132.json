@@ -3,15 +3,20 @@
   "name": "Victor Jacinto",
   "team": "Oregon State",
   "team_slug": "oregon_state",
-  "team_rank": 31,
+  "team_rank": 41,
   "weight_class": 149,
+  "grade": "R-Jr.",
+  "hometown": "Hollister, Calif.",
+  "high_school": "Gilroy High School",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Foregonstate.sidearmsports.com%2Fimages%2F2024%2F10%2F9%2F25WRE_Headshot_JacintoVictor_00283.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 208,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "1-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 2.28,
@@ -24,92 +29,141 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.803,
+      "matches": 5,
+      "rank_weight": 167,
+      "rank_overall": 1463,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29681173132",
+      "opponent_rank": 189,
+      "opponent_name": "Smokey McClure",
+      "method": "SV-3 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "29681173132",
+      "opponent_rank": 189,
+      "opponent_name": "Smokey McClure",
+      "method": "MD 15-4"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-22",
       "opponent_id": "29681173132",
+      "opponent_career_id": null,
       "opponent_name": "Smokey McClure",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 189,
       "weight_class": "149",
       "result": "W",
       "method": "SV-3",
       "score": "4-1",
       "duration": "8:15",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": 1.13
     },
     {
       "date": "2024-12-22",
       "opponent_id": "29688282132",
+      "opponent_career_id": null,
       "opponent_name": "Antonio Avila",
       "opponent_team": "Wyoming",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 35,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 49,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": -2.15
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29681173132",
+      "opponent_career_id": null,
       "opponent_name": "Smokey McClure",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 189,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "15-4",
       "duration": "7:00",
-      "event": "vs. Utah Valley"
+      "event": "vs. Utah Valley",
+      "mv_impact": -5.87
     },
     {
       "date": "2024-11-08",
       "opponent_id": "29675817132",
+      "opponent_career_id": null,
       "opponent_name": "Gavin Drexler",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 48,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 16,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "9-2",
       "duration": "7:00",
-      "event": "vs. Oregon State"
+      "event": "vs. Oregon State",
+      "mv_impact": -1.45
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29736196132",
+      "opponent_career_id": null,
       "opponent_name": "Kyle Parco",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 3,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 6,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "vs. Oregon State"
+      "event": "vs. Oregon State",
+      "mv_impact": -0.67
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29687544132",
+      "team": "Oregon State",
+      "team_slug": "oregon_state",
+      "weight_class": 149,
+      "grade": "R-Jr.",
+      "current_rank": 208,
+      "record": "1-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584161132",
+      "team": "Oregon State",
+      "team_slug": "oregon_state",
+      "weight_class": 157,
+      "grade": "",
+      "current_rank": 175,
+      "record": "0-0"
+    }
+  ]
 }

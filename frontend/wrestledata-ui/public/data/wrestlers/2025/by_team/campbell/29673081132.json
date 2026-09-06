@@ -3,13 +3,18 @@
   "name": "Brock Hacker",
   "team": "Campbell",
   "team_slug": "campbell",
-  "team_rank": 45,
+  "team_rank": 55,
   "weight_class": 197,
+  "grade": "Fr.",
+  "hometown": "Johns Creek, Ga.",
+  "high_school": "Johns Creek HS",
+  "photo_url": "https://gocamels.com/images/2024/9/12/Hacker_Brock_03_.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 203,
   "record": {
     "overall": "0-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,52 +24,80 @@
     "pd7": -25.0,
     "si_plus": 78.3,
     "df_plus": 64.5,
-    "apr_plus": 92.4,
+    "apr_plus": 92.5,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -7.802,
+      "matches": 3,
+      "rank_weight": 211,
+      "rank_overall": 2413,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29681679132",
+      "opponent_rank": 246,
+      "opponent_name": "Kendrick Curtis",
+      "method": "Fall 5:40"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29681415132",
+      "opponent_career_id": null,
       "opponent_name": "Hadyn Packer",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 31,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 103,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "2:48",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -5.82
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29681679132",
+      "opponent_career_id": null,
       "opponent_name": "Kendrick Curtis",
       "opponent_team": "Chattanooga",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 51,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 246,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "5:40",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -8.79
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29673081132",
+      "team": "Campbell",
+      "team_slug": "campbell",
+      "weight_class": 197,
+      "grade": "Fr.",
+      "current_rank": 203,
+      "record": "0-2"
+    }
+  ]
 }

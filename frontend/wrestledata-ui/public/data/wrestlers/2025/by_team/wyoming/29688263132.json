@@ -3,15 +3,20 @@
   "name": "Kevin Zimmer",
   "team": "Wyoming",
   "team_slug": "wyoming",
-  "team_rank": 79,
+  "team_rank": 35,
   "weight_class": 285,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 202,
   "record": {
     "overall": "1-6",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "1-6",
+    "vs_top10": "0-3",
+    "vs_top25": "0-4"
   },
   "metrics": {
     "pf7": 6.88,
@@ -24,122 +29,195 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.944,
+      "matches": 7,
+      "rank_weight": 138,
+      "rank_overall": 1511,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 3,
+    "win_over_highest_rank": {
+      "opponent_id": "29672233132",
+      "opponent_rank": 194,
+      "opponent_name": "Brendan Gilchrist",
+      "method": "MD 12-4"
+    },
+    "worst_loss": {
+      "opponent_id": "29672728132",
+      "opponent_rank": 57,
+      "opponent_name": "Taye Ghadiali",
+      "method": "TF 20-5 5:30"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-15",
       "opponent_id": "29679317132",
+      "opponent_career_id": null,
       "opponent_name": "Greg Kerkvliet",
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 4,
       "weight_class": "285",
       "result": "L",
       "method": "TF",
       "score": "20-3",
       "duration": "3:28",
-      "event": "vs. Wyoming"
+      "event": "vs. Wyoming",
+      "mv_impact": -1.58
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29679140132",
+      "opponent_career_id": null,
       "opponent_name": "Cohlton Schultz",
       "opponent_team": "Arizona State",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 27,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 5,
       "weight_class": "285",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "7:00",
-      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational"
+      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -2.29
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29686880132",
+      "opponent_career_id": null,
       "opponent_name": "Cory Day",
       "opponent_team": "Binghamton",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 32,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 19,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:27",
-      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational"
+      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -3.84
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29672233132",
+      "opponent_career_id": null,
       "opponent_name": "Brendan Gilchrist",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 78,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 194,
       "weight_class": "285",
       "result": "W",
       "method": "MD",
       "score": "12-4",
       "duration": "7:00",
-      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational"
+      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": 2.44
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29687377132",
+      "opponent_career_id": null,
       "opponent_name": "Juan Mora",
       "opponent_team": "Oklahoma",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 40,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 37,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "7-6",
       "duration": "7:00",
-      "event": "vs. Wyoming"
+      "event": "vs. Wyoming",
+      "mv_impact": -2.27
     },
     {
       "date": "2024-11-22",
       "opponent_id": "29678756132",
+      "opponent_career_id": null,
       "opponent_name": "Wyatt Hendrickson",
       "opponent_team": "Oklahoma State",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 4,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 1,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:49",
-      "event": "vs. Wyoming"
+      "event": "vs. Wyoming",
+      "mv_impact": -1.79
     },
     {
       "date": "2024-10-31",
       "opponent_id": "29672728132",
+      "opponent_career_id": null,
       "opponent_name": "Taye Ghadiali",
       "opponent_team": "Campbell",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 55,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 57,
       "weight_class": "285",
       "result": "L",
       "method": "TF",
       "score": "20-5",
       "duration": "5:30",
-      "event": "vs. Wyoming"
+      "event": "vs. Wyoming",
+      "mv_impact": -4.27
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34941585132",
+      "team": "SIU Edwardsville",
+      "team_slug": "siu_edwardsville",
+      "weight_class": 285,
+      "grade": "R-Jr.",
+      "current_rank": 128,
+      "record": "0-2"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29688263132",
+      "team": "Wyoming",
+      "team_slug": "wyoming",
+      "weight_class": 285,
+      "grade": "",
+      "current_rank": 202,
+      "record": "1-6"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24583086132",
+      "team": "Wyoming",
+      "team_slug": "wyoming",
+      "weight_class": 285,
+      "grade": "R-Fr.",
+      "current_rank": 92,
+      "record": "6-9"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20126848132",
+      "team": "Wyoming",
+      "team_slug": "wyoming",
+      "weight_class": 285,
+      "grade": "Fr.",
+      "current_rank": 107,
+      "record": "3-6"
+    }
+  ]
 }

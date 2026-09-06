@@ -3,15 +3,20 @@
   "name": "Gage McClenahan",
   "team": "Cornell",
   "team_slug": "cornell",
-  "team_rank": 50,
+  "team_rank": 9,
   "weight_class": 165,
+  "grade": "Sr.",
+  "hometown": "Wingate, Pa.",
+  "high_school": "Bald Eagle Area HS",
+  "photo_url": "https://cornellbigred.com/images/2022/9/16/McClenahan_Gage_2022_crop.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 169,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 3.0,
@@ -24,55 +29,77 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.138,
+      "matches": 2,
+      "rank_weight": 164,
+      "rank_overall": 1572,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29680465132",
+      "opponent_rank": 248,
+      "opponent_name": "Brody Oleksak",
+      "method": "M. For."
+    },
+    "worst_loss": {
+      "opponent_id": "29680461132",
+      "opponent_rank": 61,
+      "opponent_name": "Evan Canoyer",
+      "method": "Dec 4-2"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-10",
       "opponent_id": "29680461132",
+      "opponent_career_id": null,
       "opponent_name": "Evan Canoyer",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 61,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -2.37
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29681847132",
+      "opponent_career_id": null,
       "opponent_name": "Braeden Scoles",
       "opponent_team": "Illinois",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 10,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 11,
       "weight_class": "165",
       "result": "L",
       "method": "MD",
       "score": "16-4",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -1.91
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29680465132",
+      "opponent_career_id": null,
       "opponent_name": "Brody Oleksak",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 248,
       "weight_class": "165",
       "result": "W",
       "method": "MFF",
@@ -81,5 +108,47 @@
       "event": "Journeymen Collegiate Classic"
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29680453132",
+      "team": "Cornell",
+      "team_slug": "cornell",
+      "weight_class": 165,
+      "grade": "Sr.",
+      "current_rank": 169,
+      "record": "1-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24603809132",
+      "team": "Cornell",
+      "team_slug": "cornell",
+      "weight_class": 157,
+      "grade": "Jr.",
+      "current_rank": 83,
+      "record": "4-1"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20123114132",
+      "team": "Cornell",
+      "team_slug": "cornell",
+      "weight_class": 157,
+      "grade": "So.",
+      "current_rank": 155,
+      "record": "4-7"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16696606132",
+      "team": "Cornell",
+      "team_slug": "cornell",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 69,
+      "record": "3-1"
+    }
+  ]
 }

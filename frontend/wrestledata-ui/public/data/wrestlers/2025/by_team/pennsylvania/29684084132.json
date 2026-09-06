@@ -3,15 +3,20 @@
   "name": "Kelly Dunnigan",
   "team": "Pennsylvania",
   "team_slug": "pennsylvania",
-  "team_rank": 24,
+  "team_rank": 20,
   "weight_class": 149,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 65,
   "record": {
     "overall": "7-4",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "7-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 6.62,
@@ -24,182 +29,253 @@
     "bonus_rate": 0.286,
     "majors": 1,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.22,
+      "matches": 11,
+      "rank_weight": 49,
+      "rank_overall": 449,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 7,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29735116132",
+      "opponent_rank": 30,
+      "opponent_name": "Mason Shrader",
+      "method": "Dec 9-3"
+    },
+    "worst_loss": {
+      "opponent_id": "29686581132",
+      "opponent_rank": 140,
+      "opponent_name": "Ethan Mojena",
+      "method": "Dec 4-2"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29672203132",
+      "opponent_career_id": null,
       "opponent_name": "Dakota Asuncion",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 78,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 125,
       "weight_class": "149",
       "result": "W",
       "method": "TF",
       "score": "23-6",
       "duration": "6:02",
-      "event": "vs. Sacred Heart"
+      "event": "vs. Sacred Heart",
+      "mv_impact": 5.06
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29687500132",
+      "opponent_career_id": null,
       "opponent_name": "Jaden Pepe",
       "opponent_team": "Harvard",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 71,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 289,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": 0.25
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29672198132",
+      "opponent_career_id": null,
       "opponent_name": "Dylan Gilcher",
       "opponent_team": "Michigan",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 13,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 54,
       "weight_class": "149",
       "result": "L",
       "method": "TB-1",
       "score": "2-1",
       "duration": "10:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -2.85
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29723404132",
+      "opponent_career_id": null,
       "opponent_name": "Lucan O`Brien",
       "opponent_team": "Northern Illinois",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 49,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 93,
       "weight_class": "149",
       "result": "W",
       "method": "MD",
       "score": "9-0",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": 4.11
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29736344132",
+      "opponent_career_id": null,
       "opponent_name": "Sam Cartella",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 39,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 44,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "4-0",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -2.27
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29681462132",
+      "opponent_career_id": null,
       "opponent_name": "Alex Nini",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 31,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 78,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "9-3",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": 3.5
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29686581132",
+      "opponent_career_id": null,
       "opponent_name": "Ethan Mojena",
       "opponent_team": "Brown",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 62,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 140,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -3.73
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29678068132",
+      "opponent_career_id": null,
       "opponent_name": "Joseph Giordano",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 121,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "9-3",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": 2.69
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29735116132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Shrader",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 45,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 30,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "9-3",
       "duration": "7:00",
-      "event": "2024 PRTC Keystone Classic"
+      "event": "2024 PRTC Keystone Classic",
+      "mv_impact": 4.45
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29676689132",
+      "opponent_career_id": null,
       "opponent_name": "Dashawn Farber",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 132,
       "weight_class": "149",
       "result": "W",
       "method": "SV-3",
       "score": "6-3",
       "duration": "8:15",
-      "event": "2024 PRTC Keystone Classic"
+      "event": "2024 PRTC Keystone Classic",
+      "mv_impact": 3.0
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29672126132",
+      "opponent_career_id": null,
       "opponent_name": "Caleb Henson",
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 6,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 2,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "12-0",
       "duration": "7:00",
-      "event": "2024 PRTC Keystone Classic"
+      "event": "2024 PRTC Keystone Classic",
+      "mv_impact": -0.78
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34935686132",
+      "team": "Penn",
+      "team_slug": "penn",
+      "weight_class": 149,
+      "grade": "Sr.",
+      "current_rank": 58,
+      "record": "15-8"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29684084132",
+      "team": "Pennsylvania",
+      "team_slug": "pennsylvania",
+      "weight_class": 149,
+      "grade": "",
+      "current_rank": 65,
+      "record": "7-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24593527132",
+      "team": "Pennsylvania",
+      "team_slug": "pennsylvania",
+      "weight_class": 149,
+      "grade": "",
+      "current_rank": 30,
+      "record": "14-4"
+    }
+  ]
 }

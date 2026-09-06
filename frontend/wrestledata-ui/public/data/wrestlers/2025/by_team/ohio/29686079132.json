@@ -3,15 +3,20 @@
   "name": "Dan Segura",
   "team": "Ohio",
   "team_slug": "ohio",
-  "team_rank": 69,
+  "team_rank": 46,
   "weight_class": 157,
+  "grade": "R-Jr.",
+  "hometown": "Columbus, Ohio",
+  "high_school": "Dublin Scioto",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fohiobobcats.com%2Fimages%2F2024%2F10%2F17%2FSegura-2.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 152,
   "record": {
     "overall": "3-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 6.4,
@@ -19,112 +24,183 @@
     "pd7": 1.4,
     "si_plus": 102.2,
     "df_plus": 106.5,
-    "apr_plus": 95.7,
+    "apr_plus": 95.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.667,
     "majors": 2,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.33,
+      "matches": 7,
+      "rank_weight": 160,
+      "rank_overall": 1308,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29687536132",
+      "opponent_rank": 35,
+      "opponent_name": "Christopher Hamblin",
+      "method": "Dec 5-4"
+    },
+    "worst_loss": {
+      "opponent_id": "29685917132",
+      "opponent_rank": 73,
+      "opponent_name": "Ryan Michaels",
+      "method": "Fall 1:33"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-23",
       "opponent_id": "29685064132",
+      "opponent_career_id": null,
       "opponent_name": "Nick Abounader",
       "opponent_team": "Cleveland State",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 56,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 227,
       "weight_class": "157",
       "result": "W",
       "method": "MD",
       "score": "11-0",
       "duration": "7:00",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": 1.72
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29685278132",
+      "opponent_career_id": null,
       "opponent_name": "Jonathan Ley",
       "opponent_team": "Navy",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 28,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "10-3",
       "duration": "7:00",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": -1.93
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29687536132",
+      "opponent_career_id": null,
       "opponent_name": "Christopher Hamblin",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 41,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 35,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": 3.79
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29685917132",
+      "opponent_career_id": null,
       "opponent_name": "Ryan Michaels",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 73,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:33",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": -5.79
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29723340132",
+      "opponent_career_id": null,
       "opponent_name": "Kavan Troy",
       "opponent_team": "Northern Illinois",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 49,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 288,
       "weight_class": "157",
       "result": "W",
       "method": "MD",
       "score": "11-1",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": 1.58
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29678749132",
+      "opponent_career_id": null,
       "opponent_name": "Caleb Fish",
       "opponent_team": "Oklahoma State",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 4,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 14,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "10-2",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": -2.88
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34936211132",
+      "team": "Ohio",
+      "team_slug": "ohio",
+      "weight_class": 174,
+      "grade": "R-Sr.",
+      "current_rank": 231,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29686079132",
+      "team": "Ohio",
+      "team_slug": "ohio",
+      "weight_class": 157,
+      "grade": "R-Jr.",
+      "current_rank": 152,
+      "record": "3-3"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24579315132",
+      "team": "Ohio",
+      "team_slug": "ohio",
+      "weight_class": 157,
+      "grade": "Jr.",
+      "current_rank": 85,
+      "record": "9-6"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20123038132",
+      "team": "Ohio",
+      "team_slug": "ohio",
+      "weight_class": 157,
+      "grade": "So.",
+      "current_rank": 66,
+      "record": "15-10"
+    }
+  ]
 }

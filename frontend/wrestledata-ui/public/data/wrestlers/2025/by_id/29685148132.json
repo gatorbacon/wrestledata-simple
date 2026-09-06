@@ -3,10 +3,15 @@
   "name": "Peyton Costa",
   "team": "Cleveland State",
   "team_slug": "cleveland_state",
-  "team_rank": 48,
+  "team_rank": 56,
   "weight_class": 133,
+  "grade": "Fr.",
+  "hometown": "Granville, Ohio",
+  "high_school": "Granville",
+  "photo_url": "https://csuvikings.com/images/2024/9/20/120_WRST_Peyton_TzMGu.JPG",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 178,
+  "current_rank": 218,
   "record": {
     "overall": "1-5",
     "vs_ranked": "1-5",
@@ -24,7 +29,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.577,
+      "matches": 5,
+      "rank_weight": 243,
+      "rank_overall": 2376,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -33,13 +45,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29686328132",
-      "opponent_rank": 151,
+      "opponent_rank": 174,
       "opponent_name": "Cody Phelps",
       "method": "M. For."
     },
     "worst_loss": {
       "opponent_id": "29672295132",
-      "opponent_rank": 174,
+      "opponent_rank": 215,
       "opponent_name": "Bryce Shingleton",
       "method": "TF 15-0 1:44"
     }
@@ -48,56 +60,63 @@
     {
       "date": "2025-02-16",
       "opponent_id": "29672244132",
+      "opponent_career_id": null,
       "opponent_name": "Theodore Flores",
       "opponent_team": "Michigan",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 13,
       "opponent_weight": 133,
-      "opponent_rank": 140,
+      "opponent_rank": 165,
       "weight_class": "133",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "3:30",
-      "event": "JCU Open"
+      "event": "JCU Open",
+      "mv_impact": -6.32
     },
     {
       "date": "2025-02-16",
       "opponent_id": "29684828132",
+      "opponent_career_id": null,
       "opponent_name": "Brycen Arbogast",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 133,
-      "opponent_rank": 88,
+      "opponent_rank": 157,
       "weight_class": "133",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "1:22",
-      "event": "JCU Open"
+      "event": "JCU Open",
+      "mv_impact": -5.86
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29672616132",
+      "opponent_career_id": null,
       "opponent_name": "Dyson Dunham",
       "opponent_team": "VMI",
-      "opponent_team_rank": 77,
+      "opponent_team_rank": 79,
       "opponent_weight": 133,
-      "opponent_rank": 78,
+      "opponent_rank": 122,
       "weight_class": "133",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:24",
-      "event": "Purple Raider Open"
+      "event": "Purple Raider Open",
+      "mv_impact": -6.54
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29686328132",
+      "opponent_career_id": null,
       "opponent_name": "Cody Phelps",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 133,
-      "opponent_rank": 151,
+      "opponent_rank": 174,
       "weight_class": "133",
       "result": "W",
       "method": "MFF",
@@ -108,33 +127,59 @@
     {
       "date": "2025-01-19",
       "opponent_id": "29684836132",
+      "opponent_career_id": null,
       "opponent_name": "Joseph Clem",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 133,
-      "opponent_rank": 84,
+      "opponent_rank": 93,
       "weight_class": "133",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:42",
-      "event": "Purple Raider Open"
+      "event": "Purple Raider Open",
+      "mv_impact": -5.99
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29672295132",
+      "opponent_career_id": null,
       "opponent_name": "Bryce Shingleton",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 133,
-      "opponent_rank": 174,
+      "opponent_rank": 215,
       "weight_class": "133",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "1:44",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": -8.17
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34938642132",
+      "team": "Clarion",
+      "team_slug": "clarion",
+      "weight_class": 141,
+      "grade": "R-Fr.",
+      "current_rank": 116,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29685148132",
+      "team": "Cleveland State",
+      "team_slug": "cleveland_state",
+      "weight_class": 133,
+      "grade": "Fr.",
+      "current_rank": 218,
+      "record": "1-5"
+    }
+  ]
 }

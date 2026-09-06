@@ -3,10 +3,15 @@
   "name": "Anthony Lavezzola",
   "team": "Iowa",
   "team_slug": "iowa",
-  "team_rank": 7,
+  "team_rank": 3,
   "weight_class": 125,
+  "grade": "Fr.",
+  "hometown": "Westwood, N.J.",
+  "high_school": "Bergen Academies",
+  "photo_url": "https://hawkeyesports.com/imgproxy/mHbJB1aQoCeq48aDIszjNQtVcTFqJdTnCxW6LUUnb1A/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2hhd2tleWVzcG9ydHMtcHJvZC8yMDI0LzA5LzM1YjAwMjk0LTIwMjQwOTRfbGF2ZXp6b2xhX2FudGhvbnkuanBn.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 181,
+  "current_rank": 197,
   "record": {
     "overall": "0-5",
     "vs_ranked": "0-5",
@@ -24,7 +29,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.935,
+      "matches": 6,
+      "rank_weight": 205,
+      "rank_overall": 2339,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,7 +46,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "29688283132",
-      "opponent_rank": 108,
+      "opponent_rank": 167,
       "opponent_name": "Tucker Bowen",
       "method": "Fall 1:47"
     }
@@ -43,39 +55,61 @@
     {
       "date": "2025-02-01",
       "opponent_id": "29672451132",
+      "opponent_career_id": null,
       "opponent_name": "Wyatt Skebba",
       "opponent_team": "Wisconsin",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 33,
       "opponent_weight": 125,
-      "opponent_rank": 95,
+      "opponent_rank": 109,
       "weight_class": "125",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:38",
-      "event": "Loras Open"
+      "event": "Loras Open",
+      "mv_impact": -7.12
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29736144132",
+      "opponent_career_id": null,
       "opponent_name": "Dru Ayala",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 3,
       "opponent_weight": 125,
-      "opponent_rank": 66,
+      "opponent_rank": 97,
       "weight_class": "125",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "3:29",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -5.53
+    },
+    {
+      "date": "2024-12-30",
+      "opponent_id": "29688283132",
+      "opponent_career_id": null,
+      "opponent_name": "Tucker Bowen",
+      "opponent_team": "Wyoming",
+      "opponent_team_rank": 35,
+      "opponent_weight": 133,
+      "opponent_rank": 167,
+      "weight_class": "125",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:47",
+      "event": "Soldier Salute",
+      "mv_impact": -7.39
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29687613132",
+      "opponent_career_id": null,
       "opponent_name": "garret Rinken",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 8,
       "opponent_weight": 125,
       "opponent_rank": 59,
       "weight_class": "125",
@@ -83,38 +117,48 @@
       "method": "TF",
       "score": "15-0",
       "duration": "4:22",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -4.67
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29675648132",
+      "opponent_career_id": null,
       "opponent_name": "Daniel Guanajuato",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 24,
       "opponent_weight": 125,
-      "opponent_rank": 65,
+      "opponent_rank": 60,
       "weight_class": "125",
       "result": "L",
       "method": "MD",
       "score": "18-4",
       "duration": "7:00",
-      "event": "Soldier Salute"
-    },
-    {
-      "date": "2024-12-30",
-      "opponent_id": "29688283132",
-      "opponent_name": "Tucker Bowen",
-      "opponent_team": "Wyoming",
-      "opponent_team_rank": 79,
-      "opponent_weight": 133,
-      "opponent_rank": 108,
-      "weight_class": "125",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:47",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -3.51
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34962172132",
+      "team": "Iowa",
+      "team_slug": "iowa",
+      "weight_class": 133,
+      "grade": "RS Fr.",
+      "current_rank": 222,
+      "record": "0-2"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29736195132",
+      "team": "Iowa",
+      "team_slug": "iowa",
+      "weight_class": 125,
+      "grade": "Fr.",
+      "current_rank": 197,
+      "record": "0-5"
+    }
+  ]
 }

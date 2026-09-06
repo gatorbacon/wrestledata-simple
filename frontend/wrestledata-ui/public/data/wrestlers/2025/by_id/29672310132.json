@@ -3,13 +3,18 @@
   "name": "Clayton Bashor",
   "team": "Clarion",
   "team_slug": "clarion",
-  "team_rank": 47,
+  "team_rank": 65,
   "weight_class": 141,
+  "grade": "R-Jr.",
+  "hometown": "Waterford, Calif.",
+  "high_school": "Oakdale",
+  "photo_url": "https://clariongoldeneagles.com/images/2024/11/7/_BashorClayton.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 231,
   "record": {
     "overall": "3-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,142 +24,217 @@
     "pd7": -4.43,
     "si_plus": 96.7,
     "df_plus": 90.8,
-    "apr_plus": 92.3,
+    "apr_plus": 92.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.667,
     "majors": 1,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.004,
+      "matches": 9,
+      "rank_weight": 213,
+      "rank_overall": 2049,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29677588132",
+      "opponent_rank": 232,
+      "opponent_name": "Cole Coffin",
+      "method": "MD 12-3"
+    },
+    "worst_loss": {
+      "opponent_id": "29685360132",
+      "opponent_rank": 271,
+      "opponent_name": "Andy Lucinsky",
+      "method": "Fall 1:29"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-24",
       "opponent_id": "29685360132",
+      "opponent_career_id": null,
       "opponent_name": "Andy Lucinsky",
       "opponent_team": "Buffalo",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 63,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 271,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:29",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": -8.21
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29672211132",
+      "opponent_career_id": null,
       "opponent_name": "Jacob Ice",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 78,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 277,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": 0.16
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29680931132",
+      "opponent_career_id": null,
       "opponent_name": "George Oroudjov",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 74,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "13-6",
       "duration": "7:00",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": -2.61
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29779870132",
+      "opponent_career_id": null,
       "opponent_name": "Carter Tate",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 81,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "3:56",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": -4.71
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29684832132",
+      "opponent_career_id": null,
       "opponent_name": "Anthony Cadicina",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 78,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 293,
       "weight_class": "141",
       "result": "W",
       "method": "TF",
       "score": "16-0",
       "duration": "5:46",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": 1.74
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29677588132",
+      "opponent_career_id": null,
       "opponent_name": "Cole Coffin",
       "opponent_team": "Bloomsburg",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 61,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 232,
       "weight_class": "141",
       "result": "W",
       "method": "MD",
       "score": "12-3",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": 1.37
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29685373132",
+      "opponent_career_id": null,
       "opponent_name": "Aaron Lanster",
       "opponent_team": "Buffalo",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 63,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 264,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "1:42",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -7.11
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29685877132",
+      "opponent_career_id": null,
       "opponent_name": "Amonn Ohl",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 184,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:56",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -8.33
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29672310132",
+      "team": "Clarion",
+      "team_slug": "clarion",
+      "weight_class": 141,
+      "grade": "R-Jr.",
+      "current_rank": 231,
+      "record": "3-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24579448132",
+      "team": "Clarion",
+      "team_slug": "clarion",
+      "weight_class": 133,
+      "grade": "Jr.",
+      "current_rank": 111,
+      "record": "3-1"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20123592132",
+      "team": "Clarion",
+      "team_slug": "clarion",
+      "weight_class": 133,
+      "grade": "R-Fr.",
+      "current_rank": 142,
+      "record": "4-5"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16702396132",
+      "team": "Edinboro",
+      "team_slug": "edinboro",
+      "weight_class": 133,
+      "grade": "",
+      "current_rank": 227,
+      "record": "1-11"
+    }
+  ]
 }

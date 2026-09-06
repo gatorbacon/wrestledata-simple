@@ -3,13 +3,18 @@
   "name": "Trevor Frank",
   "team": "Utah Valley",
   "team_slug": "utah_valley",
-  "team_rank": 76,
+  "team_rank": 29,
   "weight_class": 174,
+  "grade": "R-Fr.",
+  "hometown": "Santaquin, Utah",
+  "high_school": "Payson HS",
+  "photo_url": "https://gouvu.com/images/2024/10/28/Trevor_Frank.png",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 88,
   "record": {
     "overall": "4-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "4-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,107 +29,168 @@
     "bonus_rate": 0.25,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.406,
+      "matches": 8,
+      "rank_weight": 98,
+      "rank_overall": 992,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29681146132",
+      "opponent_rank": 101,
+      "opponent_name": "Tanner Lofthouse",
+      "method": "Dec 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "29688266132",
+      "opponent_rank": 73,
+      "opponent_name": "Riley Davis",
+      "method": "SV-3 4-1"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-22",
       "opponent_id": "29687846132",
+      "opponent_career_id": null,
       "opponent_name": "Jake Honey",
       "opponent_team": "Cal Poly",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 19,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 201,
       "weight_class": "174",
       "result": "W",
       "method": "MD",
       "score": "12-0",
       "duration": "7:00",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": 0.79
     },
     {
       "date": "2024-12-22",
       "opponent_id": "29688266132",
+      "opponent_career_id": null,
       "opponent_name": "Riley Davis",
       "opponent_team": "Wyoming",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 35,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 73,
       "weight_class": "174",
       "result": "L",
       "method": "SV-3",
       "score": "4-1",
       "duration": "8:15",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": -3.25
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29689063132",
+      "opponent_career_id": null,
       "opponent_name": "David Hussey",
       "opponent_team": "Duke",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 68,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 235,
       "weight_class": "174",
       "result": "W",
       "method": "DEC",
       "score": "10-4",
       "duration": "7:00",
-      "event": "vs. Utah Valley"
+      "event": "vs. Utah Valley",
+      "mv_impact": -0.19
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29687845132",
+      "opponent_career_id": null,
       "opponent_name": "Joe Buck",
       "opponent_team": "Cal Poly",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 19,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 239,
       "weight_class": "174",
       "result": "W",
       "method": "SV-1",
       "score": "9-6",
       "duration": "8:15",
-      "event": "Menlo Invite"
+      "event": "Menlo Invite",
+      "mv_impact": 0.07
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29681155132",
+      "opponent_career_id": null,
       "opponent_name": "Mark Takara",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 69,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "14-4",
       "duration": "7:00",
-      "event": "Menlo Invite"
+      "event": "Menlo Invite",
+      "mv_impact": -4.11
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29681146132",
+      "opponent_career_id": null,
       "opponent_name": "Tanner Lofthouse",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 101,
       "weight_class": "174",
       "result": "W",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Menlo Invite"
+      "event": "Menlo Invite",
+      "mv_impact": 2.83
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34943287132",
+      "team": "Utah Valley",
+      "team_slug": "utah_valley",
+      "weight_class": 174,
+      "grade": "R-So.",
+      "current_rank": 111,
+      "record": "4-4"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29681160132",
+      "team": "Utah Valley",
+      "team_slug": "utah_valley",
+      "weight_class": 174,
+      "grade": "R-Fr.",
+      "current_rank": 88,
+      "record": "4-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24582383132",
+      "team": "Utah Valley",
+      "team_slug": "utah_valley",
+      "weight_class": 165,
+      "grade": "Rs.",
+      "current_rank": 72,
+      "record": "4-4"
+    }
+  ]
 }

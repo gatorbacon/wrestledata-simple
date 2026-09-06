@@ -3,13 +3,18 @@
   "name": "Braidon Woodward",
   "team": "Buffalo",
   "team_slug": "buffalo",
-  "team_rank": 42,
+  "team_rank": 63,
   "weight_class": 174,
+  "grade": "Fr.",
+  "hometown": "Canisteo, NY",
+  "high_school": "Palmyra-Macedon",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fubbulls.com%2Fimages%2F2024%2F9%2F23%2F2024-25_Wrestling_HS-web_WOODWARD-2024-25wr-0067web.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 202,
   "record": {
     "overall": "2-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,97 +24,146 @@
     "pd7": 2.69,
     "si_plus": 101.3,
     "df_plus": 106.8,
-    "apr_plus": 95.8,
+    "apr_plus": 95.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.773,
+      "matches": 5,
+      "rank_weight": 147,
+      "rank_overall": 1452,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29683865132",
+      "opponent_rank": 248,
+      "opponent_name": "Creed Thomas",
+      "method": "TF 18-1 4:28"
+    },
+    "worst_loss": {
+      "opponent_id": "29680083132",
+      "opponent_rank": 189,
+      "opponent_name": "Eric Shindel",
+      "method": "Dec 3-1"
+    }
   },
   "match_list": [
     {
       "date": "2025-03-02",
       "opponent_id": "29680083132",
+      "opponent_career_id": null,
       "opponent_name": "Eric Shindel",
       "opponent_team": "Hofstra",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 57,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 189,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "3-1",
       "duration": "7:00",
-      "event": "Zingo Nationals (The Open)"
+      "event": "Zingo Nationals (The Open)",
+      "mv_impact": -4.97
     },
     {
       "date": "2025-02-16",
       "opponent_id": "29683865132",
+      "opponent_career_id": null,
       "opponent_name": "Creed Thomas",
       "opponent_team": "Bucknell",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 43,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 248,
       "weight_class": "174",
       "result": "W",
       "method": "TF",
       "score": "18-1",
       "duration": "4:28",
-      "event": "Mat-Town Open II"
+      "event": "Mat-Town Open II",
+      "mv_impact": 2.61
     },
     {
       "date": "2025-02-16",
       "opponent_id": "29676693132",
+      "opponent_career_id": null,
       "opponent_name": "Avery Bassett",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 26,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "14-2",
       "duration": "7:00",
-      "event": "Mat-Town Open II"
+      "event": "Mat-Town Open II",
+      "mv_impact": -2.39
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29719869132",
+      "opponent_career_id": null,
       "opponent_name": "braden Brown",
       "opponent_team": "LIU",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 73,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 253,
       "weight_class": "174",
       "result": "W",
       "method": "DEC",
       "score": "6-0",
       "duration": "7:00",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": 0.33
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29681457132",
+      "opponent_career_id": null,
       "opponent_name": "Riley Hackworth",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 170,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": -4.45
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34936203132",
+      "team": "Bloomsburg",
+      "team_slug": "bloomsburg",
+      "weight_class": 184,
+      "grade": "So.",
+      "current_rank": 126,
+      "record": "10-15"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29686189132",
+      "team": "Buffalo",
+      "team_slug": "buffalo",
+      "weight_class": 174,
+      "grade": "Fr.",
+      "current_rank": 202,
+      "record": "2-3"
+    }
+  ]
 }

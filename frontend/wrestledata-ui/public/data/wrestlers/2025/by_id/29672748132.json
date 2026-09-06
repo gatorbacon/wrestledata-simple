@@ -3,10 +3,15 @@
   "name": "Landon Reaux",
   "team": "Campbell",
   "team_slug": "campbell",
-  "team_rank": 45,
+  "team_rank": 55,
   "weight_class": 125,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 201,
+  "current_rank": 159,
   "record": {
     "overall": "0-2",
     "vs_ranked": "0-2",
@@ -24,7 +29,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.222,
+      "matches": 1,
+      "rank_weight": 201,
+      "rank_overall": 2271,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,7 +46,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "29672745132",
-      "opponent_rank": 80,
+      "opponent_rank": 114,
       "opponent_name": "Bentley Ellison",
       "method": "M. For."
     }
@@ -43,26 +55,29 @@
     {
       "date": "2024-11-02",
       "opponent_id": "29676076132",
+      "opponent_career_id": null,
       "opponent_name": "Cameron Stinson",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 125,
-      "opponent_rank": 58,
+      "opponent_rank": 64,
       "weight_class": "125",
       "result": "L",
       "method": "INJ",
       "score": null,
       "duration": "6:42",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -5.22
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29672745132",
+      "opponent_career_id": null,
       "opponent_name": "Bentley Ellison",
       "opponent_team": "Campbell",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 55,
       "opponent_weight": 125,
-      "opponent_rank": 80,
+      "opponent_rank": 114,
       "weight_class": "125",
       "result": "L",
       "method": "MFF",
@@ -71,5 +86,27 @@
       "event": "Southeast Open"
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29672748132",
+      "team": "Campbell",
+      "team_slug": "campbell",
+      "weight_class": 125,
+      "grade": "",
+      "current_rank": 159,
+      "record": "0-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584150132",
+      "team": "Campbell",
+      "team_slug": "campbell",
+      "weight_class": 125,
+      "grade": "Fr.",
+      "current_rank": 134,
+      "record": "1-2"
+    }
+  ]
 }

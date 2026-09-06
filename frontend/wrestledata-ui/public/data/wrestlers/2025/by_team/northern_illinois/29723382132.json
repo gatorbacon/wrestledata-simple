@@ -3,143 +3,201 @@
   "name": "Dominic Heim",
   "team": "Northern Illinois",
   "team_slug": "northern_illinois",
-  "team_rank": 23,
+  "team_rank": 49,
   "weight_class": 184,
+  "grade": "Fr.",
+  "hometown": "Shakopee, Minn.",
+  "high_school": "Shakopee",
+  "photo_url": "https://niuhuskies.com/images/2024/10/10/Heim-Dominic_DaLoR.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 211,
   "record": {
     "overall": "1-6",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 6.63,
     "pa7": 15.77,
     "pd7": -9.13,
-    "si_plus": 100.9,
-    "df_plus": 86.0,
-    "apr_plus": 99.3,
+    "si_plus": 101.1,
+    "df_plus": 86.3,
+    "apr_plus": 99.4,
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.158,
+      "matches": 8,
+      "rank_weight": 186,
+      "rank_overall": 2076,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29686097132",
+      "opponent_rank": 234,
+      "opponent_name": "Drew Linciome",
+      "method": "MD 14-3"
+    },
+    "worst_loss": {
+      "opponent_id": "29684126132",
+      "opponent_rank": 220,
+      "opponent_name": "Nathan Taylor",
+      "method": "Dec 12-7"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-01",
       "opponent_id": "29687609132",
+      "opponent_career_id": null,
       "opponent_name": "CJ Walrath",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 8,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 44,
       "weight_class": "184",
       "result": "L",
       "method": "TF",
       "score": "20-4",
       "duration": "5:36",
-      "event": "Loras Open"
+      "event": "Loras Open",
+      "mv_impact": -3.83
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29672449132",
+      "opponent_career_id": null,
       "opponent_name": "Matthew Jens",
       "opponent_team": "Wisconsin",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 33,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 198,
       "weight_class": "184",
       "result": "L",
       "method": "MD",
       "score": "19-10",
       "duration": "7:00",
-      "event": "Loras Open"
+      "event": "Loras Open",
+      "mv_impact": -6.8
     },
     {
       "date": "2025-01-24",
       "opponent_id": "29686096132",
+      "opponent_career_id": null,
       "opponent_name": "Jeremy Olszko",
       "opponent_team": "Ohio",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 46,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 32,
       "weight_class": "184",
       "result": "L",
       "method": "TF",
       "score": "18-1",
       "duration": "5:38",
-      "event": "vs. Ohio"
+      "event": "vs. Ohio",
+      "mv_impact": -3.83
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29681519132",
+      "opponent_career_id": null,
       "opponent_name": "Donnell Washington",
       "opponent_team": "Indiana",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 36,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 14,
       "weight_class": "184",
       "result": "L",
       "method": "TF",
       "score": "20-4",
       "duration": "4:31",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -3.79
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29684126132",
+      "opponent_career_id": null,
       "opponent_name": "Nathan Taylor",
       "opponent_team": "Pennsylvania",
-      "opponent_team_rank": 24,
+      "opponent_team_rank": 20,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 220,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "12-7",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -5.38
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29687008132",
+      "opponent_career_id": null,
       "opponent_name": "Trent Thomas",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 210,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": -5.37
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29686097132",
+      "opponent_career_id": null,
       "opponent_name": "Drew Linciome",
       "opponent_team": "Ohio",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 46,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 234,
       "weight_class": "184",
       "result": "W",
       "method": "MD",
       "score": "14-3",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": 1.14
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34955412132",
+      "team": "Northern Illinois",
+      "team_slug": "northern_illinois",
+      "weight_class": 197,
+      "grade": "R-Fr.",
+      "current_rank": 179,
+      "record": "1-15"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29723382132",
+      "team": "Northern Illinois",
+      "team_slug": "northern_illinois",
+      "weight_class": 184,
+      "grade": "Fr.",
+      "current_rank": 211,
+      "record": "1-6"
+    }
+  ]
 }

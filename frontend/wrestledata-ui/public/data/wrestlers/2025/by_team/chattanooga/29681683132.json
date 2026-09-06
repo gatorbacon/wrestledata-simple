@@ -3,13 +3,18 @@
   "name": "Kaleb Snodgrass",
   "team": "Chattanooga",
   "team_slug": "chattanooga",
-  "team_rank": 46,
+  "team_rank": 51,
   "weight_class": 285,
+  "grade": "Sr.",
+  "hometown": "Van Buren, Ohio",
+  "high_school": "Van Buren",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Futc.sidearmsports.com%2Fimages%2F2024%2F8%2F30%2FSnodgrass__Kaleb.JPG&width=603&height=803&type=webp",
+  "previous_school": "Previous School: Lock Haven",
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 90,
   "record": {
     "overall": "3-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,45 +24,65 @@
     "pd7": 2.0,
     "si_plus": 99.4,
     "df_plus": 108.5,
-    "apr_plus": 95.9,
+    "apr_plus": 95.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.009,
+      "matches": 4,
+      "rank_weight": 111,
+      "rank_overall": 1208,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29768327132",
+      "opponent_rank": 42,
+      "opponent_name": "Xavier Doolin",
+      "method": "M. For."
+    },
+    "worst_loss": {
+      "opponent_id": "29684763132",
+      "opponent_rank": 71,
+      "opponent_name": "Michael Wolfgram",
+      "method": "Dec 7-3"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-21",
       "opponent_id": "29687366132",
+      "opponent_career_id": null,
       "opponent_name": "Ryder Wiese",
       "opponent_team": "Oklahoma",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 40,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 108,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "vs. Oklahoma"
+      "event": "vs. Oklahoma",
+      "mv_impact": 2.5
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29768327132",
+      "opponent_career_id": null,
       "opponent_name": "Xavier Doolin",
       "opponent_team": "Morgan State",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 75,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 42,
       "weight_class": "285",
       "result": "W",
       "method": "MFF",
@@ -68,48 +93,96 @@
     {
       "date": "2024-11-02",
       "opponent_id": "29684763132",
+      "opponent_career_id": null,
       "opponent_name": "Michael Wolfgram",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 71,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "7-3",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -3.14
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29685052132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Cover",
       "opponent_team": "Cleveland State",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 56,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 227,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "4-0",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": 1.01
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29768327132",
+      "opponent_career_id": null,
       "opponent_name": "Xavier Doolin",
       "opponent_team": "Morgan State",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 75,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 42,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:28",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -4.4
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29681683132",
+      "team": "Chattanooga",
+      "team_slug": "chattanooga",
+      "weight_class": 285,
+      "grade": "Sr.",
+      "current_rank": 90,
+      "record": "3-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24580076132",
+      "team": "Chattanooga",
+      "team_slug": "chattanooga",
+      "weight_class": 285,
+      "grade": "Jr.",
+      "current_rank": 240,
+      "record": "6-12"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20127815132",
+      "team": "Lock Haven",
+      "team_slug": "lock_haven",
+      "weight_class": 285,
+      "grade": "So.",
+      "current_rank": 274,
+      "record": "3-12"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16699661132",
+      "team": "Lock Haven",
+      "team_slug": "lock_haven",
+      "weight_class": 285,
+      "grade": "Fr.",
+      "current_rank": 259,
+      "record": "4-13"
+    }
+  ]
 }

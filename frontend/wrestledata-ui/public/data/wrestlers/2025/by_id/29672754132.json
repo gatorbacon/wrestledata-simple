@@ -3,13 +3,18 @@
   "name": "Zachary Casias",
   "team": "Campbell",
   "team_slug": "campbell",
-  "team_rank": 45,
+  "team_rank": 55,
   "weight_class": 157,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 109,
   "record": {
     "overall": "3-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,97 +24,136 @@
     "pd7": -3.01,
     "si_plus": 99.9,
     "df_plus": 95.6,
-    "apr_plus": 93.4,
+    "apr_plus": 93.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.672,
+      "matches": 7,
+      "rank_weight": 129,
+      "rank_overall": 1089,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29684849132",
+      "opponent_rank": 120,
+      "opponent_name": "Terry Langley",
+      "method": "Dec 4-2"
+    },
+    "worst_loss": {
+      "opponent_id": "29681738132",
+      "opponent_rank": 132,
+      "opponent_name": "Shaymus MacIntosh",
+      "method": "Fall 1:37"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-02",
       "opponent_id": "29681738132",
+      "opponent_career_id": null,
       "opponent_name": "Shaymus MacIntosh",
       "opponent_team": "Morgan State",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 75,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 132,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:37",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -6.14
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29681696132",
+      "opponent_career_id": null,
       "opponent_name": "Cavarius Liddie",
       "opponent_team": "Chattanooga",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 51,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 167,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "9-6",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": 1.81
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29684849132",
+      "opponent_career_id": null,
       "opponent_name": "Terry Langley",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 120,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": 3.09
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29678511132",
+      "opponent_career_id": null,
       "opponent_name": "Mekhi Neal",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 17,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 99,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "3:32",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -4.78
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29681742132",
+      "opponent_career_id": null,
       "opponent_name": "Cooper Lockhart",
       "opponent_team": "Morgan State",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 75,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 275,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "10-6",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -0.25
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29672754132",
+      "team": "Campbell",
+      "team_slug": "campbell",
+      "weight_class": 157,
+      "grade": "",
+      "current_rank": 109,
+      "record": "3-2"
+    }
+  ]
 }

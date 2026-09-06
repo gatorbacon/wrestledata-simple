@@ -3,13 +3,18 @@
   "name": "Q`veli Quintanilla",
   "team": "Utah Valley",
   "team_slug": "utah_valley",
-  "team_rank": 76,
+  "team_rank": 29,
   "weight_class": 149,
+  "grade": "R-Fr.",
+  "hometown": "Spokane, Wash.",
+  "high_school": "University HS",
+  "photo_url": "https://gouvu.com/images/2024/10/28/Q_Veli_Quintanilla.png",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 238,
   "record": {
     "overall": "1-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,112 +24,173 @@
     "pd7": -1.76,
     "si_plus": 87.6,
     "df_plus": 100.9,
-    "apr_plus": 94.6,
+    "apr_plus": 94.7,
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.605,
+      "matches": 6,
+      "rank_weight": 192,
+      "rank_overall": 1703,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29684520132",
+      "opponent_rank": 240,
+      "opponent_name": "Dylan Guillermo",
+      "method": "TF 19-2 5:17"
+    },
+    "worst_loss": {
+      "opponent_id": "29689058132",
+      "opponent_rank": 114,
+      "opponent_name": "Peter Chacon",
+      "method": "Dec 7-0"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-22",
       "opponent_id": "29681170132",
+      "opponent_career_id": null,
       "opponent_name": "Tanner Frothinger",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 79,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "2-1",
       "duration": "7:00",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": -2.97
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29689058132",
+      "opponent_career_id": null,
       "opponent_name": "Peter Chacon",
       "opponent_team": "Duke",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 68,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 114,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "7-0",
       "duration": "7:00",
-      "event": "vs. Utah Valley"
+      "event": "vs. Utah Valley",
+      "mv_impact": -3.15
     },
     {
       "date": "2024-11-15",
       "opponent_id": "29678426132",
+      "opponent_career_id": null,
       "opponent_name": "Carter Young",
       "opponent_team": "Oklahoma State",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 4,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "25-9",
       "duration": "6:14",
-      "event": "vs. Utah Valley"
+      "event": "vs. Utah Valley",
+      "mv_impact": -4.44
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29684520132",
+      "opponent_career_id": null,
       "opponent_name": "Dylan Guillermo",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 240,
       "weight_class": "149",
       "result": "W",
       "method": "TF",
       "score": "19-2",
       "duration": "5:17",
-      "event": "Menlo Invite"
+      "event": "Menlo Invite",
+      "mv_impact": 2.49
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29681170132",
+      "opponent_career_id": null,
       "opponent_name": "Tanner Frothinger",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 79,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
-      "event": "Menlo Invite"
+      "event": "Menlo Invite",
+      "mv_impact": -2.97
     },
     {
       "date": "2024-11-01",
       "opponent_id": "29722982132",
+      "opponent_career_id": null,
       "opponent_name": "Brock Rogers",
       "opponent_team": "CSU Bakersfield",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 22,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 103,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
-      "event": "vs. Utah Valley"
+      "event": "vs. Utah Valley",
+      "mv_impact": -4.58
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34943286132",
+      "team": "Utah Valley",
+      "team_slug": "utah_valley",
+      "weight_class": 165,
+      "grade": "R-So.",
+      "current_rank": 117,
+      "record": "0-1"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29681159132",
+      "team": "Utah Valley",
+      "team_slug": "utah_valley",
+      "weight_class": 149,
+      "grade": "R-Fr.",
+      "current_rank": 238,
+      "record": "1-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24582356132",
+      "team": "Utah Valley",
+      "team_slug": "utah_valley",
+      "weight_class": 149,
+      "grade": "Rs.",
+      "current_rank": 197,
+      "record": "1-2"
+    }
+  ]
 }

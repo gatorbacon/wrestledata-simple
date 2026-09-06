@@ -3,13 +3,18 @@
   "name": "Davis Park",
   "team": "Navy",
   "team_slug": "navy",
-  "team_rank": 66,
+  "team_rank": 28,
   "weight_class": 157,
+  "grade": "So.",
+  "hometown": "Edmond, Okla.",
+  "high_school": "Heritage Hall",
+  "photo_url": "https://navysports.com/images/2023/9/13/Park_Davis27_A9k9Q.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 254,
   "record": {
     "overall": "0-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,47 +29,95 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.601,
+      "matches": 2,
+      "rank_weight": 231,
+      "rank_overall": 1948,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29685375132",
+      "opponent_rank": 130,
+      "opponent_name": "Brady Unger",
+      "method": "MD 13-3"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29685375132",
+      "opponent_career_id": null,
       "opponent_name": "Brady Unger",
       "opponent_team": "Buffalo",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 63,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 130,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "13-3",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -4.09
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29685175132",
+      "opponent_career_id": null,
       "opponent_name": "Reese Stephen",
       "opponent_team": "Cleveland State",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 56,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 97,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "9-3",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -3.11
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34939053132",
+      "team": "Navy",
+      "team_slug": "navy",
+      "weight_class": 165,
+      "grade": "Jr.",
+      "current_rank": 202,
+      "record": "4-10"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29685211132",
+      "team": "Navy",
+      "team_slug": "navy",
+      "weight_class": 157,
+      "grade": "So.",
+      "current_rank": 254,
+      "record": "0-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24585790132",
+      "team": "Navy",
+      "team_slug": "navy",
+      "weight_class": 165,
+      "grade": "Fr.",
+      "current_rank": 244,
+      "record": "2-4"
+    }
+  ]
 }

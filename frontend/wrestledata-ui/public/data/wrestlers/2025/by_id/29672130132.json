@@ -5,13 +5,18 @@
   "team_slug": "virginia_tech",
   "team_rank": 6,
   "weight_class": 141,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 131,
   "record": {
     "overall": "3-4",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "3-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 7.59,
@@ -19,127 +24,180 @@
     "pd7": -2.0,
     "si_plus": 103.0,
     "df_plus": 97.8,
-    "apr_plus": 115.1,
+    "apr_plus": 114.9,
     "pin_rate": 0.333,
     "bonus_rate": 1.0,
     "majors": 2,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -0.704,
+      "matches": 7,
+      "rank_weight": 110,
+      "rank_overall": 1103,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29688452132",
+      "opponent_rank": 218,
+      "opponent_name": "Trent Donahue",
+      "method": "Fall 6:03"
+    },
+    "worst_loss": {
+      "opponent_id": "29727159132",
+      "opponent_rank": 96,
+      "opponent_name": "Riley Edwards",
+      "method": "Dec 8-7"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-12",
       "opponent_id": "29727159132",
+      "opponent_career_id": null,
       "opponent_name": "Riley Edwards",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 96,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "8-7",
       "duration": "7:00",
-      "event": "Mountaineer Invitational"
+      "event": "Mountaineer Invitational",
+      "mv_impact": -3.43
     },
     {
       "date": "2024-11-12",
       "opponent_id": "29677463132",
+      "opponent_career_id": null,
       "opponent_name": "Joshua Viarengo",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 282,
       "weight_class": "141",
       "result": "W",
       "method": "MD",
       "score": "12-3",
       "duration": "7:00",
-      "event": "Mountaineer Invitational"
+      "event": "Mountaineer Invitational",
+      "mv_impact": 1.26
     },
     {
       "date": "2024-11-12",
       "opponent_id": "29734781132",
+      "opponent_career_id": null,
       "opponent_name": "Vance Vombaur",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 7,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 8,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "6:10",
-      "event": "Mountaineer Invitational"
+      "event": "Mountaineer Invitational",
+      "mv_impact": -2.91
     },
     {
       "date": "2024-11-12",
       "opponent_id": "29688452132",
+      "opponent_career_id": null,
       "opponent_name": "Trent Donahue",
       "opponent_team": "Presbyterian",
-      "opponent_team_rank": 71,
+      "opponent_team_rank": 76,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 218,
       "weight_class": "141",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "6:03",
-      "event": "Mountaineer Invitational"
+      "event": "Mountaineer Invitational",
+      "mv_impact": 3.6
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29677463132",
+      "opponent_career_id": null,
       "opponent_name": "Joshua Viarengo",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 282,
       "weight_class": "141",
       "result": "W",
       "method": "MD",
       "score": "11-3",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": 1.26
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29673096132",
+      "opponent_career_id": null,
       "opponent_name": "Bryce Kresho",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 27,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "11-8",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -1.26
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29676010132",
+      "opponent_career_id": null,
       "opponent_name": "Jayden Scott",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 32,
       "weight_class": "141",
       "result": "L",
       "method": "MD",
       "score": "11-3",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -3.44
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29672130132",
+      "team": "Virginia Tech",
+      "team_slug": "virginia_tech",
+      "weight_class": 141,
+      "grade": "",
+      "current_rank": 131,
+      "record": "3-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24586401132",
+      "team": "Virginia Tech",
+      "team_slug": "virginia_tech",
+      "weight_class": 141,
+      "grade": "",
+      "current_rank": 112,
+      "record": "8-7"
+    }
+  ]
 }

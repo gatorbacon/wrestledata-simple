@@ -3,15 +3,20 @@
   "name": "Luke Ahrberg",
   "team": "NC State",
   "team_slug": "nc_state",
-  "team_rank": 3,
+  "team_rank": 14,
   "weight_class": 165,
+  "grade": "R-Jr.",
+  "hometown": "Cushing, Okla.",
+  "high_school": "Cushing High School",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgopack.com%2Fimages%2F2024%2F8%2F27%2FLukeAhrbergHS.png&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 59,
   "record": {
     "overall": "7-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "7-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 13.83,
@@ -19,75 +24,99 @@
     "pd7": 9.53,
     "si_plus": 125.5,
     "df_plus": 105.9,
-    "apr_plus": 105.6,
+    "apr_plus": 105.5,
     "pin_rate": 0.143,
     "bonus_rate": 0.571,
     "majors": 1,
     "techs": 2,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 1.096,
+      "matches": 11,
+      "rank_weight": 51,
+      "rank_overall": 483,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 7,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29684513132",
+      "opponent_rank": 49,
+      "opponent_name": "Drayden Morton",
+      "method": "Dec 8-7"
+    },
+    "worst_loss": {
+      "opponent_id": "29681431132",
+      "opponent_rank": 91,
+      "opponent_name": "Drew Dickson",
+      "method": "Fall 1:21"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-23",
       "opponent_id": "29677499132",
+      "opponent_career_id": null,
       "opponent_name": "Bryce Griffin",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 112,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:47",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": 5.62
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29687860132",
+      "opponent_career_id": null,
       "opponent_name": "Aidan Lenz",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 246,
       "weight_class": "165",
       "result": "W",
       "method": "TF",
       "score": "17-2",
       "duration": "3:24",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": 2.65
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29684513132",
+      "opponent_career_id": null,
       "opponent_name": "Drayden Morton",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 49,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": "8-7",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 3.6
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29680465132",
+      "opponent_career_id": null,
       "opponent_name": "Brody Oleksak",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 248,
       "weight_class": "165",
       "result": "W",
       "method": "MFF",
@@ -98,93 +127,147 @@
     {
       "date": "2024-11-10",
       "opponent_id": "29681847132",
+      "opponent_career_id": null,
       "opponent_name": "Braeden Scoles",
       "opponent_team": "Illinois",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 10,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 11,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:30",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -3.91
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29721832132",
+      "opponent_career_id": null,
       "opponent_name": "Brooks Gable",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 133,
       "weight_class": "165",
       "result": "W",
       "method": "MD",
       "score": "11-1",
       "duration": "7:00",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": 3.29
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29689062132",
+      "opponent_career_id": null,
       "opponent_name": "Aidan Wallace",
       "opponent_team": "Duke",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 68,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 34,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "8-5",
       "duration": "7:00",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -1.64
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29681431132",
+      "opponent_career_id": null,
       "opponent_name": "Drew Dickson",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 91,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:21",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -5.76
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29681444132",
+      "opponent_career_id": null,
       "opponent_name": "Sean Coughlin",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 196,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": "9-4",
       "duration": "7:00",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": 0.98
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29687860132",
+      "opponent_career_id": null,
       "opponent_name": "Aidan Lenz",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 246,
       "weight_class": "165",
       "result": "W",
       "method": "TF",
       "score": "18-1",
       "duration": "4:11",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": 2.65
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29674045132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 165,
+      "grade": "R-Jr.",
+      "current_rank": 59,
+      "record": "7-3"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584085132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 174,
+      "grade": "R-So.",
+      "current_rank": 95,
+      "record": "10-9"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20130894132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 157,
+      "grade": "So.",
+      "current_rank": 97,
+      "record": "10-7"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16701966132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 113,
+      "record": "8-8"
+    }
+  ]
 }

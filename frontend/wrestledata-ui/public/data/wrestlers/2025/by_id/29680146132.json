@@ -3,13 +3,18 @@
   "name": "Colt Schrader",
   "team": "Army West Point",
   "team_slug": "army_west_point",
-  "team_rank": 26,
+  "team_rank": 44,
   "weight_class": 141,
+  "grade": "So.",
+  "hometown": "Greer, S.C.",
+  "high_school": "Eastside",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgoarmywestpoint.com%2Fimages%2F2024%2F10%2F2%2FSchrader_vyLXi.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 189,
   "record": {
     "overall": "2-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,92 +29,151 @@
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.79,
+      "matches": 5,
+      "rank_weight": 153,
+      "rank_overall": 1460,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29672621132",
+      "opponent_rank": 235,
+      "opponent_name": "Phoenix Alyea",
+      "method": "Dec 4-3"
+    },
+    "worst_loss": {
+      "opponent_id": "29685373132",
+      "opponent_rank": 264,
+      "opponent_name": "Aaron Lanster",
+      "method": "MD 19-6"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29723893132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Tieffel",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 90,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "8-3",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -2.53
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29685373132",
+      "opponent_career_id": null,
       "opponent_name": "Aaron Lanster",
       "opponent_team": "Buffalo",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 63,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 264,
       "weight_class": "141",
       "result": "L",
       "method": "MD",
       "score": "19-6",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -6.11
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29672211132",
+      "opponent_career_id": null,
       "opponent_name": "Jacob Ice",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 78,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 277,
       "weight_class": "141",
       "result": "W",
       "method": "TF",
       "score": "15-0",
       "duration": "3:18",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 2.16
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29779870132",
+      "opponent_career_id": null,
       "opponent_name": "Carter Tate",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 81,
       "weight_class": "141",
       "result": "L",
       "method": "MD",
       "score": "14-3",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -3.71
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29672621132",
+      "opponent_career_id": null,
       "opponent_name": "Phoenix Alyea",
       "opponent_team": "VMI",
-      "opponent_team_rank": 77,
+      "opponent_team_rank": 79,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 235,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 1.25
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34934333132",
+      "team": "Army West Point",
+      "team_slug": "army_west_point",
+      "weight_class": 141,
+      "grade": "Jr.",
+      "current_rank": 156,
+      "record": "1-4"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29680146132",
+      "team": "Army West Point",
+      "team_slug": "army_west_point",
+      "weight_class": 141,
+      "grade": "So.",
+      "current_rank": 189,
+      "record": "2-3"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24605530132",
+      "team": "Army West Point",
+      "team_slug": "army_west_point",
+      "weight_class": 133,
+      "grade": "Fr.",
+      "current_rank": 229,
+      "record": "1-8"
+    }
+  ]
 }

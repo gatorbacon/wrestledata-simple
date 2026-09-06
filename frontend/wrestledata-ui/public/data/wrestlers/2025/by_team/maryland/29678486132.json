@@ -3,15 +3,20 @@
   "name": "Sam O`Brian",
   "team": "Maryland",
   "team_slug": "maryland",
-  "team_rank": 14,
+  "team_rank": 17,
   "weight_class": 285,
+  "grade": "R-Jr.",
+  "hometown": "Damascus, MD",
+  "high_school": "Damascus",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fumterps.com%2Fimages%2F2024%2F10%2F16%2FSam_O_nZ3bt.png&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 250,
   "record": {
     "overall": "0-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 0.67,
@@ -19,82 +24,144 @@
     "pd7": -6.67,
     "si_plus": 79.0,
     "df_plus": 104.7,
-    "apr_plus": 92.8,
+    "apr_plus": 92.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.563,
+      "matches": 4,
+      "rank_weight": 184,
+      "rank_overall": 1936,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29727169132",
+      "opponent_rank": 228,
+      "opponent_name": "Levi Andrews",
+      "method": "Dec 5-0"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-05",
       "opponent_id": "29686880132",
+      "opponent_career_id": null,
       "opponent_name": "Cory Day",
       "opponent_team": "Binghamton",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 32,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 19,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "43:00",
-      "event": "vs. Maryland"
+      "event": "vs. Maryland",
+      "mv_impact": -3.84
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29675640132",
+      "opponent_career_id": null,
       "opponent_name": "Luke Rasmussen",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 24,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 25,
       "weight_class": "285",
       "result": "L",
       "method": "MD",
       "score": "9-0",
       "duration": "7:00",
-      "event": "vs. South Dakota State"
+      "event": "vs. South Dakota State",
+      "mv_impact": -2.47
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29727169132",
+      "opponent_career_id": null,
       "opponent_name": "Levi Andrews",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 228,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "5-0",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -5.61
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29681460132",
+      "opponent_career_id": null,
       "opponent_name": "James Blackman",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 45,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -2.32
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29678486132",
+      "team": "Maryland",
+      "team_slug": "maryland",
+      "weight_class": 285,
+      "grade": "R-Jr.",
+      "current_rank": 250,
+      "record": "0-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584505132",
+      "team": "Maryland",
+      "team_slug": "maryland",
+      "weight_class": 285,
+      "grade": "R-So.",
+      "current_rank": 275,
+      "record": "1-9"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20133846132",
+      "team": "Maryland",
+      "team_slug": "maryland",
+      "weight_class": 285,
+      "grade": "R-Fr.",
+      "current_rank": 258,
+      "record": "1-4"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16701598132",
+      "team": "Maryland",
+      "team_slug": "maryland",
+      "weight_class": 285,
+      "grade": "Fr.",
+      "current_rank": 278,
+      "record": "0-14"
+    }
+  ]
 }

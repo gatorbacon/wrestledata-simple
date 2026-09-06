@@ -3,10 +3,15 @@
   "name": "Jacob Jones",
   "team": "Air Force",
   "team_slug": "air_force",
-  "team_rank": 34,
+  "team_rank": 58,
   "weight_class": 133,
+  "grade": "Fr.",
+  "hometown": "Rancho Bernardo, CA",
+  "high_school": "Rancho Bernardo",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgoairforcefalcons.com%2Fimages%2F2024%2F8%2F27%2FJacob_Jones_.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 114,
+  "current_rank": 90,
   "record": {
     "overall": "1-2",
     "vs_ranked": "1-2",
@@ -19,12 +24,19 @@
     "pd7": -3.5,
     "si_plus": 95.7,
     "df_plus": 103.5,
-    "apr_plus": 114.3,
+    "apr_plus": 114.1,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.576,
+      "matches": 3,
+      "rank_weight": 155,
+      "rank_overall": 1394,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -33,13 +45,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29672295132",
-      "opponent_rank": 174,
+      "opponent_rank": 215,
       "opponent_name": "Bryce Shingleton",
       "method": "Fall 2:34"
     },
     "worst_loss": {
       "opponent_id": "29686328132",
-      "opponent_rank": 151,
+      "opponent_rank": 174,
       "opponent_name": "Cody Phelps",
       "method": "Dec 7-2"
     }
@@ -48,48 +60,76 @@
     {
       "date": "2024-12-07",
       "opponent_id": "29721848132",
+      "opponent_career_id": null,
       "opponent_name": "Gavin Caprella",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 133,
-      "opponent_rank": 67,
+      "opponent_rank": 97,
       "weight_class": "133",
       "result": "L",
       "method": "DEC",
       "score": "8-6",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": -3.08
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29686328132",
+      "opponent_career_id": null,
       "opponent_name": "Cody Phelps",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 133,
-      "opponent_rank": 151,
+      "opponent_rank": 174,
       "weight_class": "133",
       "result": "L",
       "method": "DEC",
       "score": "7-2",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": -4.47
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29672295132",
+      "opponent_career_id": null,
       "opponent_name": "Bryce Shingleton",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 133,
-      "opponent_rank": 174,
+      "opponent_rank": 215,
       "weight_class": "133",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:34",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": 2.83
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34944189132",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 133,
+      "grade": "So.",
+      "current_rank": 183,
+      "record": "1-3"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29721898132",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 133,
+      "grade": "Fr.",
+      "current_rank": 90,
+      "record": "1-2"
+    }
+  ]
 }

@@ -3,13 +3,18 @@
   "name": "John Hangey",
   "team": "Rider",
   "team_slug": "rider",
-  "team_rank": 72,
+  "team_rank": 34,
   "weight_class": 174,
+  "grade": "Fr.",
+  "hometown": "Marlton, NJ",
+  "high_school": "Cherokee",
+  "photo_url": "https://gobroncs.com/images/2024/10/17/101124_Wrestling_101_vNUKM.JPG",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 270,
   "record": {
     "overall": "0-8",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-8",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,142 +24,182 @@
     "pd7": -16.1,
     "si_plus": 99.4,
     "df_plus": 74.9,
-    "apr_plus": 99.1,
+    "apr_plus": 98.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.147,
+      "matches": 10,
+      "rank_weight": 229,
+      "rank_overall": 2260,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29678512132",
+      "opponent_rank": 203,
+      "opponent_name": "Sam Gautreau",
+      "method": "TF 19-4 6:07"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-23",
       "opponent_id": "29678512132",
+      "opponent_career_id": null,
       "opponent_name": "Sam Gautreau",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 17,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 203,
       "weight_class": "174",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "6:07",
-      "event": "A Better Way Athletics Last Chance Open"
+      "event": "A Better Way Athletics Last Chance Open",
+      "mv_impact": -7.42
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29721631132",
+      "opponent_career_id": null,
       "opponent_name": "Xavier Giles",
       "opponent_team": "Princeton",
-      "opponent_team_rank": 32,
+      "opponent_team_rank": 37,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 192,
       "weight_class": "174",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "5:35",
-      "event": "A Better Way Athletics Last Chance Open"
+      "event": "A Better Way Athletics Last Chance Open",
+      "mv_impact": -8.06
     },
     {
       "date": "2025-01-04",
       "opponent_id": "29685885132",
+      "opponent_career_id": null,
       "opponent_name": "Brody Evans",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 160,
       "weight_class": "174",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "2:38",
-      "event": "Bobby Kauffman Open"
+      "event": "Bobby Kauffman Open",
+      "mv_impact": -5.33
     },
     {
       "date": "2025-01-04",
       "opponent_id": "29685874132",
+      "opponent_career_id": null,
       "opponent_name": "Joseph Arnold",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 53,
       "weight_class": "174",
       "result": "L",
       "method": "TF",
       "score": "18-1",
       "duration": "2:30",
-      "event": "Bobby Kauffman Open"
+      "event": "Bobby Kauffman Open",
+      "mv_impact": -3.8
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29681437132",
+      "opponent_career_id": null,
       "opponent_name": "Logan Messer",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 55,
       "weight_class": "174",
       "result": "L",
       "method": "TF",
       "score": "18-1",
       "duration": "4:04",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -3.95
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29681457132",
+      "opponent_career_id": null,
       "opponent_name": "Riley Hackworth",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 170,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "4-0",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -4.45
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29676683132",
+      "opponent_career_id": null,
       "opponent_name": "Colin Fegley",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 42,
       "weight_class": "184",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:17",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -4.98
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29672681132",
+      "opponent_career_id": null,
       "opponent_name": "Brock Zurawski",
       "opponent_team": "Rider",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 34,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 38,
       "weight_class": "184",
       "result": "L",
       "method": "TF",
       "score": "18-3",
       "duration": "2:14",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -4.25
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29672701132",
+      "team": "Rider",
+      "team_slug": "rider",
+      "weight_class": 174,
+      "grade": "Fr.",
+      "current_rank": 270,
+      "record": "0-8"
+    }
+  ]
 }

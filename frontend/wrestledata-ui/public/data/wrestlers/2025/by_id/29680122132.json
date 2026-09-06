@@ -3,15 +3,20 @@
   "name": "Ryan Franco",
   "team": "Army West Point",
   "team_slug": "army_west_point",
-  "team_rank": 26,
+  "team_rank": 44,
   "weight_class": 141,
+  "grade": "Jr.",
+  "hometown": "Fresno, Calif.",
+  "high_school": "Clovis North (USMAPS)",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgoarmywestpoint.com%2Fimages%2F2024%2F10%2F2%2FFranco_84IyC.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 71,
   "record": {
     "overall": "6-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "6-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 3.96,
@@ -19,172 +24,251 @@
     "pd7": -0.26,
     "si_plus": 97.0,
     "df_plus": 112.5,
-    "apr_plus": 116.0,
+    "apr_plus": 115.8,
     "pin_rate": 0.5,
     "bonus_rate": 0.833,
     "majors": 2,
     "techs": 0,
-    "pins": 3
+    "pins": 3,
+    "mat_value": {
+      "mv_avg": 1.006,
+      "matches": 10,
+      "rank_weight": 51,
+      "rank_overall": 513,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 6,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "30660665132",
+      "opponent_rank": 69,
+      "opponent_name": "Pat Phillips",
+      "method": "MD 11-1"
+    },
+    "worst_loss": {
+      "opponent_id": "29672381132",
+      "opponent_rank": 166,
+      "opponent_name": "Devin Matthews",
+      "method": "MD 10-2"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-24",
       "opponent_id": "29672381132",
+      "opponent_career_id": null,
       "opponent_name": "Devin Matthews",
       "opponent_team": "LIU",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 73,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 166,
       "weight_class": "141",
       "result": "L",
       "method": "MD",
       "score": "10-2",
       "duration": "7:00",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": -4.89
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29678053132",
+      "opponent_career_id": null,
       "opponent_name": "Todd Carter",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 20,
       "weight_class": "141",
       "result": "L",
       "method": "MD",
       "score": "9-0",
       "duration": "7:00",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": -2.07
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29719870132",
+      "opponent_career_id": null,
       "opponent_name": "Amir Avazov",
       "opponent_team": "LIU",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 73,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 195,
       "weight_class": "141",
       "result": "W",
       "method": "MD",
       "score": "13-2",
       "duration": "7:00",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": 2.06
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29678072132",
+      "opponent_career_id": null,
       "opponent_name": "Charlie Sly",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 132,
       "weight_class": "141",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "5:38",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": 5.04
     },
     {
       "date": "2024-11-16",
       "opponent_id": "30660665132",
+      "opponent_career_id": null,
       "opponent_name": "Pat Phillips",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 69,
       "weight_class": "141",
       "result": "L",
       "method": "SV-3",
       "score": "4-1",
       "duration": "8:15",
-      "event": "Shorty Hitchcock Memorial Open"
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": -2.12
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29672395132",
+      "opponent_career_id": null,
       "opponent_name": "Nic Gorman",
       "opponent_team": "LIU",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 73,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 285,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "3-1",
       "duration": "7:00",
-      "event": "Shorty Hitchcock Memorial Open"
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": 0.27
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29673105132",
+      "opponent_career_id": null,
       "opponent_name": "Brandt Fajerman",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 167,
       "weight_class": "141",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:44",
-      "event": "Shorty Hitchcock Memorial Open"
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": 4.52
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29722730132",
+      "opponent_career_id": null,
       "opponent_name": "Trey Friedman",
       "opponent_team": "Drexel",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 67,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 268,
       "weight_class": "141",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:00",
-      "event": "Shorty Hitchcock Memorial Open"
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": 2.88
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29676705132",
+      "opponent_career_id": null,
       "opponent_name": "Wyatt Henson",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 13,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -0.51
     },
     {
       "date": "2024-11-03",
       "opponent_id": "30660665132",
+      "opponent_career_id": null,
       "opponent_name": "Pat Phillips",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 69,
       "weight_class": "141",
       "result": "W",
       "method": "MD",
       "score": "11-1",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": 4.88
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34934309132",
+      "team": "Army West Point",
+      "team_slug": "army_west_point",
+      "weight_class": 149,
+      "grade": "Sr.",
+      "current_rank": 159,
+      "record": "7-11"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29680122132",
+      "team": "Army West Point",
+      "team_slug": "army_west_point",
+      "weight_class": 141,
+      "grade": "Jr.",
+      "current_rank": 71,
+      "record": "6-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584906132",
+      "team": "Army West Point",
+      "team_slug": "army_west_point",
+      "weight_class": 141,
+      "grade": "So.",
+      "current_rank": 148,
+      "record": "0-0"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20125375132",
+      "team": "Army West Point",
+      "team_slug": "army_west_point",
+      "weight_class": 133,
+      "grade": "Fr.",
+      "current_rank": 52,
+      "record": "20-12"
+    }
+  ]
 }

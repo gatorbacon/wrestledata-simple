@@ -3,10 +3,15 @@
   "name": "Ryan Crookham",
   "team": "Lehigh",
   "team_slug": "lehigh",
-  "team_rank": 4,
+  "team_rank": 11,
   "weight_class": 133,
+  "grade": "Jr.",
+  "hometown": "Hellertown, Pa.",
+  "high_school": "Saucon Valley",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Flehighsports.com%2Fimages%2F2024%2F8%2F29%2FWrestling_Ryan_Crookham_Night1_-0278.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 5,
+  "current_rank": 32,
   "record": {
     "overall": "5-0",
     "vs_ranked": "5-0",
@@ -24,7 +29,14 @@
     "bonus_rate": 0.6,
     "majors": 2,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 3.736,
+      "matches": 5,
+      "rank_weight": 4,
+      "rank_overall": 56,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 5,
@@ -33,7 +45,7 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29679330132",
-      "opponent_rank": 6,
+      "opponent_rank": 5,
       "opponent_name": "Braeden Davis",
       "method": "Dec 4-1"
     },
@@ -43,78 +55,130 @@
     {
       "date": "2024-12-20",
       "opponent_id": "29686576132",
+      "opponent_career_id": null,
       "opponent_name": "Mike Joyce",
       "opponent_team": "Brown",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 62,
       "opponent_weight": 133,
-      "opponent_rank": 157,
+      "opponent_rank": 126,
       "weight_class": "133",
       "result": "W",
       "method": "MD",
       "score": "11-3",
       "duration": "7:00",
-      "event": "Sheridan invite"
+      "event": "Sheridan invite",
+      "mv_impact": 3.16
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29681512132",
+      "opponent_career_id": null,
       "opponent_name": "Angelo Rini",
       "opponent_team": "Indiana",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 36,
       "opponent_weight": 133,
-      "opponent_rank": 14,
+      "opponent_rank": 15,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "10-5",
       "duration": "7:00",
-      "event": "Sheridan invite"
+      "event": "Sheridan invite",
+      "mv_impact": 4.68
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29731833132",
+      "opponent_career_id": null,
       "opponent_name": "Kyle Montaperto",
       "opponent_team": "Virginia",
-      "opponent_team_rank": 78,
+      "opponent_team_rank": 42,
       "opponent_weight": 133,
-      "opponent_rank": 37,
+      "opponent_rank": 52,
       "weight_class": "133",
       "result": "W",
       "method": "MD",
       "score": "11-2",
       "duration": "7:00",
-      "event": "Sheridan invite"
+      "event": "Sheridan invite",
+      "mv_impact": 4.5
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29679330132",
+      "opponent_career_id": null,
       "opponent_name": "Braeden Davis",
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 133,
-      "opponent_rank": 6,
+      "opponent_rank": 5,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "vs. Penn State"
+      "event": "vs. Penn State",
+      "mv_impact": 4.83
     },
     {
       "date": "2024-11-15",
       "opponent_id": "29681735132",
+      "opponent_career_id": null,
       "opponent_name": "Kevin Lopez",
       "opponent_team": "Morgan State",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 75,
       "opponent_weight": 133,
-      "opponent_rank": 203,
+      "opponent_rank": 216,
       "weight_class": "133",
       "result": "W",
       "method": "TF",
       "score": "17-1",
       "duration": "2:39",
-      "event": "vs. Morgan State"
+      "event": "vs. Morgan State",
+      "mv_impact": 1.52
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34952675132",
+      "team": "Lehigh",
+      "team_slug": "lehigh",
+      "weight_class": 133,
+      "grade": "Sr.",
+      "current_rank": 37,
+      "record": "6-2"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29721369132",
+      "team": "Lehigh",
+      "team_slug": "lehigh",
+      "weight_class": 133,
+      "grade": "Jr.",
+      "current_rank": 32,
+      "record": "5-0"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24595723132",
+      "team": "Lehigh",
+      "team_slug": "lehigh",
+      "weight_class": 133,
+      "grade": "So.",
+      "current_rank": 1,
+      "record": "23-1"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20128501132",
+      "team": "Lehigh",
+      "team_slug": "lehigh",
+      "weight_class": 133,
+      "grade": "Fy.",
+      "current_rank": 42,
+      "record": "8-3"
+    }
+  ]
 }

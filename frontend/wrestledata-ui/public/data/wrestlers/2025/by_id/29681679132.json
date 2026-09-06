@@ -3,15 +3,20 @@
   "name": "Kendrick Curtis",
   "team": "Chattanooga",
   "team_slug": "chattanooga",
-  "team_rank": 46,
+  "team_rank": 51,
   "weight_class": 285,
+  "grade": "R-Fr.",
+  "hometown": "Fairview, Tenn.",
+  "high_school": "Fairview",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Futc.sidearmsports.com%2Fimages%2F2024%2F8%2F30%2FCurtis__Kendrick.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 246,
   "record": {
     "overall": "2-9",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-9",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 3.16,
@@ -24,182 +29,253 @@
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -3.772,
+      "matches": 16,
+      "rank_weight": 192,
+      "rank_overall": 1990,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 9,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29673081132",
+      "opponent_rank": 203,
+      "opponent_name": "Brock Hacker",
+      "method": "Fall 5:40"
+    },
+    "worst_loss": {
+      "opponent_id": "29678139132",
+      "opponent_rank": 190,
+      "opponent_name": "Rocky Files",
+      "method": "Fall 5:54"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-21",
       "opponent_id": "29681418132",
+      "opponent_career_id": null,
       "opponent_name": "Jacob Bullock",
       "opponent_team": "Indiana",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 36,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 22,
       "weight_class": "285",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "5:36",
-      "event": "vs. Indiana"
+      "event": "vs. Indiana",
+      "mv_impact": -3.75
     },
     {
       "date": "2025-02-02",
       "opponent_id": "29678139132",
+      "opponent_career_id": null,
       "opponent_name": "Rocky Files",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 190,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "5:54",
-      "event": "2025 Newberry Open"
+      "event": "2025 Newberry Open",
+      "mv_impact": -7.82
     },
     {
       "date": "2025-02-02",
       "opponent_id": "29677491132",
+      "opponent_career_id": null,
       "opponent_name": "Daniel Elyash",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 221,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "2025 Newberry Open"
+      "event": "2025 Newberry Open",
+      "mv_impact": 0.64
     },
     {
       "date": "2025-02-02",
       "opponent_id": "29688539132",
+      "opponent_career_id": null,
       "opponent_name": "Christian Bell",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 187,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "11-4",
       "duration": "7:00",
-      "event": "2025 Newberry Open"
+      "event": "2025 Newberry Open",
+      "mv_impact": -4.42
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29688539132",
+      "opponent_career_id": null,
       "opponent_name": "Christian Bell",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 187,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "7-3",
       "duration": "7:00",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -4.42
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29676067132",
+      "opponent_career_id": null,
       "opponent_name": "Nolan Neves",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 35,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:37",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -5.05
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29676001132",
+      "opponent_career_id": null,
       "opponent_name": "Cade Lautt",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 52,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "18-0",
       "duration": "6:41",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -4.9
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29687414132",
+      "opponent_career_id": null,
       "opponent_name": "Bradley Hill",
       "opponent_team": "Oklahoma",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 40,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 100,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "20-4",
       "duration": "4:33",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -5.53
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29673081132",
+      "opponent_career_id": null,
       "opponent_name": "Brock Hacker",
       "opponent_team": "Campbell",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 55,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 203,
       "weight_class": "197",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "5:40",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": 2.58
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29672631132",
+      "opponent_career_id": null,
       "opponent_name": "Toby Schoffstall",
       "opponent_team": "VMI",
-      "opponent_team_rank": 77,
+      "opponent_team_rank": 79,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 61,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "2:19",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -4.33
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29676071132",
+      "opponent_career_id": null,
       "opponent_name": "Robert Platt",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 53,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:22",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -5.58
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34935428132",
+      "team": "Chattanooga",
+      "team_slug": "chattanooga",
+      "weight_class": 197,
+      "grade": "R-So.",
+      "current_rank": 123,
+      "record": "4-6"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29681679132",
+      "team": "Chattanooga",
+      "team_slug": "chattanooga",
+      "weight_class": 285,
+      "grade": "R-Fr.",
+      "current_rank": 246,
+      "record": "2-9"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24579986132",
+      "team": "Chattanooga",
+      "team_slug": "chattanooga",
+      "weight_class": 197,
+      "grade": "Fr.",
+      "current_rank": 212,
+      "record": "1-6"
+    }
+  ]
 }

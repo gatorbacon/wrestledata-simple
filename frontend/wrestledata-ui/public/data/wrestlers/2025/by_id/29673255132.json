@@ -3,13 +3,18 @@
   "name": "Adam Busiello",
   "team": "Northern Colorado",
   "team_slug": "northern_colorado",
-  "team_rank": 12,
+  "team_rank": 30,
   "weight_class": 149,
+  "grade": "Sr.",
+  "hometown": "Manorville, N.Y.",
+  "high_school": "Nassau C.C.",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Funco.sidearmsports.com%2Fimages%2F2024%2F10%2F11%2FAdam_Busiello.png&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 203,
   "record": {
     "overall": "2-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,112 +24,163 @@
     "pd7": -5.4,
     "si_plus": 97.4,
     "df_plus": 97.6,
-    "apr_plus": 106.9,
+    "apr_plus": 106.8,
     "pin_rate": 0.5,
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -0.41,
+      "matches": 7,
+      "rank_weight": 116,
+      "rank_overall": 995,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29676018132",
+      "opponent_rank": 159,
+      "opponent_name": "Cullen Kane",
+      "method": "MD 9-0"
+    },
+    "worst_loss": {
+      "opponent_id": "29722721132",
+      "opponent_rank": 86,
+      "opponent_name": "Dominic Findora",
+      "method": "MD 14-2"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-24",
       "opponent_id": "29684523132",
+      "opponent_career_id": null,
       "opponent_name": "Paul Kelly",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 56,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "9-0",
       "duration": "7:00",
-      "event": "vs. Northern Colorado"
+      "event": "vs. Northern Colorado",
+      "mv_impact": -3.43
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29681690132",
+      "opponent_career_id": null,
       "opponent_name": "Hayden Hughes",
       "opponent_team": "Chattanooga",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 51,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 237,
       "weight_class": "149",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:56",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": 3.67
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29677475132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler-Xavier McKnight",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 63,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "13-8",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -2.39
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29676018132",
+      "opponent_career_id": null,
       "opponent_name": "Cullen Kane",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 159,
       "weight_class": "149",
       "result": "W",
       "method": "MD",
       "score": "9-0",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": 3.17
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29679327132",
+      "opponent_career_id": null,
       "opponent_name": "Connor Pierce",
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 55,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "11-1",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -3.12
     },
     {
       "date": "2024-11-15",
       "opponent_id": "29722721132",
+      "opponent_career_id": null,
       "opponent_name": "Dominic Findora",
       "opponent_team": "Drexel",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 67,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 86,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "14-2",
       "duration": "7:00",
-      "event": "vs. Northern Colorado"
+      "event": "vs. Northern Colorado",
+      "mv_impact": -3.94
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29673255132",
+      "team": "Northern Colorado",
+      "team_slug": "northern_colorado",
+      "weight_class": 149,
+      "grade": "Sr.",
+      "current_rank": 203,
+      "record": "2-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24579735132",
+      "team": "Northern Colorado",
+      "team_slug": "northern_colorado",
+      "weight_class": 165,
+      "grade": "",
+      "current_rank": 165,
+      "record": "0-0"
+    }
+  ]
 }

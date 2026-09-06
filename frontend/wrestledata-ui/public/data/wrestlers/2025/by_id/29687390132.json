@@ -3,13 +3,18 @@
   "name": "Clay Giddens-Buttram",
   "team": "Oklahoma",
   "team_slug": "oklahoma",
-  "team_rank": 30,
+  "team_rank": 40,
   "weight_class": 165,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 92,
   "record": {
     "overall": "4-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "4-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,127 +24,170 @@
     "pd7": -0.83,
     "si_plus": 93.4,
     "df_plus": 107.0,
-    "apr_plus": 106.8,
+    "apr_plus": 106.6,
     "pin_rate": 0.25,
     "bonus_rate": 0.25,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 0.809,
+      "matches": 9,
+      "rank_weight": 59,
+      "rank_overall": 577,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29684514132",
+      "opponent_rank": 99,
+      "opponent_name": "Mason Espinoza",
+      "method": "Dec 6-4"
+    },
+    "worst_loss": {
+      "opponent_id": "29721895132",
+      "opponent_rank": 71,
+      "opponent_name": "Andrew Harmon",
+      "method": "Dec 8-1"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-24",
       "opponent_id": "29722990132",
+      "opponent_career_id": null,
       "opponent_name": "Guillermo Escobedo",
       "opponent_team": "CSU Bakersfield",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 22,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 55,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "8-1",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": -2.6
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29684535132",
+      "opponent_career_id": null,
       "opponent_name": "David Alonso",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 127,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": "9-2",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": 1.75
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29684514132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Espinoza",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 99,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": 2.75
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29721886132",
+      "opponent_career_id": null,
       "opponent_name": "Logan Fowler",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 69,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -2.83
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29721895132",
+      "opponent_career_id": null,
       "opponent_name": "Andrew Harmon",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 71,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "8-1",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -2.4
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29675818132",
+      "opponent_career_id": null,
       "opponent_name": "Brendan Howes",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 48,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 100,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:57",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": 5.93
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29675637132",
+      "opponent_career_id": null,
       "opponent_name": "Ryan Dolezal",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 24,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 272,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": "3-0",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": 0.18
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29687390132",
+      "team": "Oklahoma",
+      "team_slug": "oklahoma",
+      "weight_class": 165,
+      "grade": "",
+      "current_rank": 92,
+      "record": "4-3"
+    }
+  ]
 }

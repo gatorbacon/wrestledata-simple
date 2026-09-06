@@ -3,10 +3,15 @@
   "name": "Tyler Nguyen",
   "team": "The Citadel",
   "team_slug": "the_citadel",
-  "team_rank": 75,
+  "team_rank": 50,
   "weight_class": 133,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 245,
+  "current_rank": 205,
   "record": {
     "overall": "0-2",
     "vs_ranked": "0-2",
@@ -24,7 +29,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.195,
+      "matches": 2,
+      "rank_weight": 227,
+      "rank_overall": 2267,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,7 +46,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "29681445132",
-      "opponent_rank": 129,
+      "opponent_rank": 109,
       "opponent_name": "Charlie Bunting",
       "method": "TF 18-3 4:57"
     }
@@ -43,33 +55,49 @@
     {
       "date": "2024-11-03",
       "opponent_id": "29721848132",
+      "opponent_career_id": null,
       "opponent_name": "Gavin Caprella",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 133,
-      "opponent_rank": 67,
+      "opponent_rank": 97,
       "weight_class": "133",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "3:00",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -5.08
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29681445132",
+      "opponent_career_id": null,
       "opponent_name": "Charlie Bunting",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 133,
-      "opponent_rank": 129,
+      "opponent_rank": 109,
       "weight_class": "133",
       "result": "L",
       "method": "TF",
       "score": "18-3",
       "duration": "4:57",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -5.31
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29688505132",
+      "team": "The Citadel",
+      "team_slug": "the_citadel",
+      "weight_class": 133,
+      "grade": "",
+      "current_rank": 205,
+      "record": "0-2"
+    }
+  ]
 }

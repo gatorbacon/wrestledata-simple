@@ -3,10 +3,15 @@
   "name": "Garett Lautzenheiser",
   "team": "Ohio State",
   "team_slug": "ohio_state",
-  "team_rank": 20,
+  "team_rank": 5,
   "weight_class": 125,
+  "grade": "Sr.",
+  "hometown": "Louisville, Ohio",
+  "high_school": "Louisville",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fohiostatebuckeyes.com%2Fimages%2F2024%2F9%2F17%2FLautzenheiser__Garett_002_yGH3y.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 157,
+  "current_rank": 141,
   "record": {
     "overall": "1-2",
     "vs_ranked": "1-2",
@@ -19,12 +24,19 @@
     "pd7": 6.0,
     "si_plus": 106.9,
     "df_plus": 106.0,
-    "apr_plus": 98.5,
+    "apr_plus": 98.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.717,
+      "matches": 4,
+      "rank_weight": 193,
+      "rank_overall": 2192,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -33,13 +45,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29685298132",
-      "opponent_rank": 173,
+      "opponent_rank": 172,
       "opponent_name": "Jack Bergmann",
       "method": "Dec 9-3"
     },
     "worst_loss": {
       "opponent_id": "29672188132",
-      "opponent_rank": 132,
+      "opponent_rank": 136,
       "opponent_name": "Christian Tanefeu",
       "method": "Fall 1:21"
     }
@@ -47,49 +59,97 @@
   "match_list": [
     {
       "date": "2024-11-03",
-      "opponent_id": "29672188132",
-      "opponent_name": "Christian Tanefeu",
-      "opponent_team": "Michigan",
-      "opponent_team_rank": 62,
-      "opponent_weight": 125,
-      "opponent_rank": 132,
+      "opponent_id": "29685896132",
+      "opponent_career_id": null,
+      "opponent_name": "Landon Bainey",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 69,
+      "opponent_weight": 133,
+      "opponent_rank": 121,
       "weight_class": "125",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:21",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -6.2
+    },
+    {
+      "date": "2024-11-03",
+      "opponent_id": "29672188132",
+      "opponent_career_id": null,
+      "opponent_name": "Christian Tanefeu",
+      "opponent_team": "Michigan",
+      "opponent_team_rank": 13,
+      "opponent_weight": 125,
+      "opponent_rank": 136,
+      "weight_class": "125",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:21",
+      "event": "Clarion Open",
+      "mv_impact": -7.09
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29685298132",
+      "opponent_career_id": null,
       "opponent_name": "Jack Bergmann",
       "opponent_team": "Navy",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 28,
       "opponent_weight": 125,
-      "opponent_rank": 173,
+      "opponent_rank": 172,
       "weight_class": "125",
       "result": "W",
       "method": "DEC",
       "score": "9-3",
       "duration": "7:00",
-      "event": "Clarion Open"
-    },
-    {
-      "date": "2024-11-03",
-      "opponent_id": "29685896132",
-      "opponent_name": "Landon Bainey",
-      "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
-      "opponent_weight": 133,
-      "opponent_rank": 125,
-      "weight_class": "125",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:21",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": 0.63
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29676288132",
+      "team": "Ohio State",
+      "team_slug": "ohio_state",
+      "weight_class": 125,
+      "grade": "Sr.",
+      "current_rank": 141,
+      "record": "1-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24582872132",
+      "team": "Ohio State",
+      "team_slug": "ohio_state",
+      "weight_class": 141,
+      "grade": "Jr.",
+      "current_rank": 220,
+      "record": "1-3"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20125743132",
+      "team": "Ohio State",
+      "team_slug": "ohio_state",
+      "weight_class": 141,
+      "grade": "So.",
+      "current_rank": 196,
+      "record": "2-4"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16700888132",
+      "team": "West Virginia",
+      "team_slug": "west_virginia",
+      "weight_class": 133,
+      "grade": "Fr.",
+      "current_rank": 122,
+      "record": "7-13"
+    }
+  ]
 }

@@ -3,15 +3,20 @@
   "name": "Jarad Priest",
   "team": "Cal Poly",
   "team_slug": "cal_poly",
-  "team_rank": 9,
+  "team_rank": 19,
   "weight_class": 197,
+  "grade": "R-Jr.",
+  "hometown": "Bakersfield, CA",
+  "high_school": "Bakersfield HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgopoly.com%2Fimages%2F2024%2F11%2F11%2FJarad_Priest.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 208,
   "record": {
-    "overall": "2-7",
-    "vs_ranked": "0-0",
+    "overall": "2-8",
+    "vs_ranked": "2-8",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 3.69,
@@ -24,152 +29,256 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.319,
+      "matches": 10,
+      "rank_weight": 166,
+      "rank_overall": 1883,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29684510132",
+      "opponent_rank": 94,
+      "opponent_name": "Eli Sheeren",
+      "method": "SV-1 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "29679169132",
+      "opponent_rank": 98,
+      "opponent_name": "Max Acciardi",
+      "method": "MD 11-3"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-19",
       "opponent_id": "29684510132",
+      "opponent_career_id": null,
       "opponent_name": "Eli Sheeren",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 94,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "3-0",
       "duration": "7:00",
-      "event": "vs. California Baptist"
+      "event": "vs. California Baptist",
+      "mv_impact": -3.5
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29727162132",
+      "opponent_career_id": null,
       "opponent_name": "Carson Floyd",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 37,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:20",
-      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational"
+      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -4.23
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29679169132",
+      "opponent_career_id": null,
       "opponent_name": "Max Acciardi",
       "opponent_team": "Arizona State",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 27,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 98,
       "weight_class": "197",
       "result": "L",
       "method": "MD",
       "score": "11-3",
       "duration": "7:00",
-      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational"
+      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -4.68
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29684510132",
+      "opponent_career_id": null,
       "opponent_name": "Eli Sheeren",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 94,
       "weight_class": "197",
       "result": "W",
       "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": 2.5
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29685302132",
+      "opponent_career_id": null,
       "opponent_name": "Nikolas Stemmet",
       "opponent_team": "Stanford",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 25,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 18,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "3:31",
-      "event": "vs. Stanford"
+      "event": "vs. Stanford",
+      "mv_impact": -3.57
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29684495132",
+      "opponent_career_id": null,
       "opponent_name": "Nick Nosler",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 92,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "9-5",
       "duration": "7:00",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": -3.46
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29677990132",
+      "opponent_career_id": null,
       "opponent_name": "Jesse Cassatt",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 207,
       "weight_class": "197",
       "result": "W",
       "method": "SV-1",
       "score": "8-5",
       "duration": "8:15",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": -0.11
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29682549132",
+      "opponent_career_id": null,
       "opponent_name": "Ben Vanadia",
       "opponent_team": "Purdue",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 12,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 42,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:18",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": -5.07
+    },
+    {
+      "date": "2024-11-09",
+      "opponent_id": "29684495132",
+      "opponent_career_id": null,
+      "opponent_name": "Nick Nosler",
+      "opponent_team": "SIU Edwardsville",
+      "opponent_team_rank": 77,
+      "opponent_weight": 197,
+      "opponent_rank": 92,
+      "weight_class": "197",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:34",
+      "event": "Tiger Style Invite",
+      "mv_impact": -6.46
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29681515132",
+      "opponent_career_id": null,
       "opponent_name": "Gabe Sollars",
       "opponent_team": "Indiana",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 36,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 26,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "6:28",
-      "event": "vs. Indiana"
+      "event": "vs. Indiana",
+      "mv_impact": -4.61
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29687818132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 197,
+      "grade": "R-Jr.",
+      "current_rank": 208,
+      "record": "2-8"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24595013132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 197,
+      "grade": "R-So.",
+      "current_rank": 80,
+      "record": "9-10"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20137162132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 184,
+      "grade": "R-Fr.",
+      "current_rank": 106,
+      "record": "10-12"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16709009132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 174,
+      "grade": "Fr.",
+      "current_rank": 105,
+      "record": "3-5"
+    },
+    {
+      "season": 2021,
+      "wrestler_id": "14870055132",
+      "team": "Cal Poly",
+      "team_slug": "cal_poly",
+      "weight_class": 184,
+      "grade": "Fr.",
+      "current_rank": 70,
+      "record": "3-3"
+    }
+  ]
 }

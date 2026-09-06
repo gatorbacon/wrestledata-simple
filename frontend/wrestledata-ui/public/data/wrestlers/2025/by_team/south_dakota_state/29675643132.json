@@ -3,15 +3,20 @@
   "name": "Parker Janssen",
   "team": "South Dakota State",
   "team_slug": "south_dakota_state",
-  "team_rank": 33,
+  "team_rank": 24,
   "weight_class": 141,
+  "grade": "R-Fr.",
+  "hometown": "St. Michael, Minn.",
+  "high_school": "St. Michael-Albertville H.S.",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fsdstate.sidearmsports.com%2Fimages%2F2024%2F9%2F24%2F20240828-0183.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 245,
   "record": {
     "overall": "2-6",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 2.83,
@@ -19,45 +24,65 @@
     "pd7": -1.83,
     "si_plus": 91.0,
     "df_plus": 106.0,
-    "apr_plus": 98.3,
+    "apr_plus": 98.2,
     "pin_rate": 0.0,
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.708,
+      "matches": 7,
+      "rank_weight": 149,
+      "rank_overall": 1428,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29735174132",
+      "opponent_rank": 117,
+      "opponent_name": "Dawson Johnson",
+      "method": "Dec 2-0"
+    },
+    "worst_loss": {
+      "opponent_id": "29735174132",
+      "opponent_rank": 117,
+      "opponent_name": "Dawson Johnson",
+      "method": "Dec 8-1"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-17",
       "opponent_id": "29735174132",
+      "opponent_career_id": null,
       "opponent_name": "Dawson Johnson",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 7,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 117,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "8-1",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -3.3
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29734784132",
+      "opponent_career_id": null,
       "opponent_name": "Rhett Koenig",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 7,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 91,
       "weight_class": "141",
       "result": "L",
       "method": "MFF",
@@ -68,26 +93,29 @@
     {
       "date": "2024-11-17",
       "opponent_id": "29675880132",
+      "opponent_career_id": null,
       "opponent_name": "Michael Olson",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 48,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 103,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -3.42
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29675675132",
+      "opponent_career_id": null,
       "opponent_name": "Julian Tagg",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 24,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 21,
       "weight_class": "141",
       "result": "L",
       "method": "MFF",
@@ -98,63 +126,103 @@
     {
       "date": "2024-11-09",
       "opponent_id": "29735174132",
+      "opponent_career_id": null,
       "opponent_name": "Dawson Johnson",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 7,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 117,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
-      "event": "Bison Open"
+      "event": "Bison Open",
+      "mv_impact": 2.7
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29734784132",
+      "opponent_career_id": null,
       "opponent_name": "Rhett Koenig",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 7,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 91,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "7-0",
       "duration": "7:00",
-      "event": "Bison Open"
+      "event": "Bison Open",
+      "mv_impact": -3.21
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29675826132",
+      "opponent_career_id": null,
       "opponent_name": "Gideon Abel-Cole",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 48,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 291,
       "weight_class": "141",
       "result": "W",
       "method": "MD",
       "score": "12-3",
       "duration": "7:00",
-      "event": "Bison Open"
+      "event": "Bison Open",
+      "mv_impact": 0.66
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29675642132",
+      "opponent_career_id": null,
       "opponent_name": "Avery Allen",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 24,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 53,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "6-0",
       "duration": "7:00",
-      "event": "Bison Open"
+      "event": "Bison Open",
+      "mv_impact": -2.69
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34943236132",
+      "team": "South Dakota State",
+      "team_slug": "south_dakota_state",
+      "weight_class": 141,
+      "grade": "R-So.",
+      "current_rank": 205,
+      "record": "1-1"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29675643132",
+      "team": "South Dakota State",
+      "team_slug": "south_dakota_state",
+      "weight_class": 141,
+      "grade": "R-Fr.",
+      "current_rank": 245,
+      "record": "2-6"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584728132",
+      "team": "South Dakota State",
+      "team_slug": "south_dakota_state",
+      "weight_class": 141,
+      "grade": "Fr.",
+      "current_rank": 134,
+      "record": "3-9"
+    }
+  ]
 }

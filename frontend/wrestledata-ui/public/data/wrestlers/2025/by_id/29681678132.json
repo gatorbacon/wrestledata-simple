@@ -3,10 +3,15 @@
   "name": "Carson Chalk",
   "team": "Chattanooga",
   "team_slug": "chattanooga",
-  "team_rank": 46,
+  "team_rank": 51,
   "weight_class": 133,
+  "grade": "Jr.",
+  "hometown": "Marietta, Ga.",
+  "high_school": "Pope",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Futc.sidearmsports.com%2Fimages%2F2024%2F8%2F30%2FChalk__Carson.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 218,
+  "current_rank": 236,
   "record": {
     "overall": "1-6",
     "vs_ranked": "1-6",
@@ -24,7 +29,14 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.658,
+      "matches": 7,
+      "rank_weight": 217,
+      "rank_overall": 2180,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -33,13 +45,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29687878132",
-      "opponent_rank": 225,
+      "opponent_rank": 248,
       "opponent_name": "Marcus Wright",
       "method": "Inj. 4:14"
     },
     "worst_loss": {
       "opponent_id": "29689056132",
-      "opponent_rank": 205,
+      "opponent_rank": 233,
       "opponent_name": "Raymond Adams",
       "method": "TF 22-6 4:44"
     }
@@ -48,108 +60,144 @@
     {
       "date": "2025-02-23",
       "opponent_id": "29681697132",
+      "opponent_career_id": null,
       "opponent_name": "Elijah Lowe",
       "opponent_team": "Chattanooga",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 51,
       "opponent_weight": 133,
-      "opponent_rank": 98,
+      "opponent_rank": 96,
       "weight_class": "133",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:26",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": -6.1
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29676022132",
+      "opponent_career_id": null,
       "opponent_name": "Marco Tocci",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 133,
-      "opponent_rank": 110,
+      "opponent_rank": 118,
       "weight_class": "133",
       "result": "L",
       "method": "TF",
       "score": "20-5",
       "duration": "2:40",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": -5.24
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29687878132",
+      "opponent_career_id": null,
       "opponent_name": "Marcus Wright",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 133,
-      "opponent_rank": 225,
+      "opponent_rank": 248,
       "weight_class": "133",
       "result": "W",
       "method": "INJ",
       "score": null,
       "duration": "4:14",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": 2.67
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29689056132",
+      "opponent_career_id": null,
       "opponent_name": "Raymond Adams",
       "opponent_team": "Duke",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 68,
       "opponent_weight": 133,
-      "opponent_rank": 205,
+      "opponent_rank": 233,
       "weight_class": "133",
       "result": "L",
       "method": "TF",
       "score": "22-6",
       "duration": "4:44",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -7.8
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29731844132",
+      "opponent_career_id": null,
       "opponent_name": "Gable Porter",
       "opponent_team": "Virginia",
-      "opponent_team_rank": 78,
+      "opponent_team_rank": 42,
       "opponent_weight": 133,
-      "opponent_rank": 27,
+      "opponent_rank": 79,
       "weight_class": "133",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "4:27",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -5.18
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29684852132",
+      "opponent_career_id": null,
       "opponent_name": "Tommy Maddox",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 133,
-      "opponent_rank": 159,
+      "opponent_rank": 136,
       "weight_class": "133",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:05",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -7.39
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29676017132",
+      "opponent_career_id": null,
       "opponent_name": "Derek Guanajuato",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 133,
-      "opponent_rank": 35,
+      "opponent_rank": 39,
       "weight_class": "133",
       "result": "L",
       "method": "TF",
       "score": "19-3",
       "duration": "3:25",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -3.55
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29681678132",
+      "team": "Chattanooga",
+      "team_slug": "chattanooga",
+      "weight_class": 133,
+      "grade": "Jr.",
+      "current_rank": 236,
+      "record": "1-6"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24579983132",
+      "team": "Chattanooga",
+      "team_slug": "chattanooga",
+      "weight_class": 133,
+      "grade": "So.",
+      "current_rank": 245,
+      "record": "0-8"
+    }
+  ]
 }

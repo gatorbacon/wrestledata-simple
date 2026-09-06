@@ -3,13 +3,18 @@
   "name": "Chandler Sewell",
   "team": "Drexel",
   "team_slug": "drexel",
-  "team_rank": 52,
+  "team_rank": 67,
   "weight_class": 133,
+  "grade": "Fr.",
+  "hometown": "Greer, S.C.",
+  "high_school": "Greer",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fdrexeldragons.com%2Fimages%2F2024%2F9%2F23%2FChandler_Sewell-Wrestling-Cropped.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 165,
+  "current_rank": 171,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "1-1",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,48 +29,58 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.237,
+      "matches": 4,
+      "rank_weight": 171,
+      "rank_overall": 1605,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29680091132",
-      "opponent_rank": 127,
+      "opponent_rank": 173,
       "opponent_name": "Ryan Arbeit",
       "method": "Dec 4-2"
     },
     "worst_loss": {
-      "opponent_id": "29676685132",
-      "opponent_rank": 19,
-      "opponent_name": "Anthony Noto",
-      "method": "TF 19-4 4:20"
+      "opponent_id": "29734979132",
+      "opponent_rank": 47,
+      "opponent_name": "Andrew Austin",
+      "method": "MD 14-3"
     }
   },
   "match_list": [
     {
       "date": "2024-11-24",
       "opponent_id": "29734979132",
+      "opponent_career_id": null,
       "opponent_name": "Andrew Austin",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 45,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 47,
       "weight_class": "133",
       "result": "L",
       "method": "MD",
       "score": "14-3",
       "duration": "7:00",
-      "event": "2024 PRTC Keystone Classic"
+      "event": "2024 PRTC Keystone Classic",
+      "mv_impact": -3.21
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29676685132",
+      "opponent_career_id": null,
       "opponent_name": "Anthony Noto",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 133,
       "opponent_rank": 19,
       "weight_class": "133",
@@ -73,23 +88,38 @@
       "method": "TF",
       "score": "19-4",
       "duration": "4:20",
-      "event": "2024 PRTC Keystone Classic"
+      "event": "2024 PRTC Keystone Classic",
+      "mv_impact": -3.16
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29680091132",
+      "opponent_career_id": null,
       "opponent_name": "Ryan Arbeit",
       "opponent_team": "Hofstra",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 57,
       "opponent_weight": 133,
-      "opponent_rank": 127,
+      "opponent_rank": 173,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Shorty Hitchcock Memorial Open"
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": 0.63
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29734770132",
+      "team": "Drexel",
+      "team_slug": "drexel",
+      "weight_class": 133,
+      "grade": "Fr.",
+      "current_rank": 171,
+      "record": "1-2"
+    }
+  ]
 }

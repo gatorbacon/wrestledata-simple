@@ -3,128 +3,199 @@
   "name": "Hudson Hightower",
   "team": "Princeton",
   "team_slug": "princeton",
-  "team_rank": 32,
+  "team_rank": 37,
   "weight_class": 165,
+  "grade": "Sr.",
+  "hometown": "Strongsville, Ohio",
+  "high_school": "St. Edward",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fprinceton.sidearmsports.com%2Fimages%2F2024%2F10%2F28%2F24_Hudson_Hightower_Media_1.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 262,
   "record": {
     "overall": "0-6",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "0-6",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 2.0,
     "pa7": 12.51,
     "pd7": -10.51,
-    "si_plus": 90.1,
+    "si_plus": 90.0,
     "df_plus": 92.1,
     "apr_plus": 99.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.699,
+      "matches": 7,
+      "rank_weight": 209,
+      "rank_overall": 1976,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29684076132",
+      "opponent_rank": 161,
+      "opponent_name": "Andy Troczynski",
+      "method": "MD 11-1"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-30",
       "opponent_id": "29684513132",
+      "opponent_career_id": null,
       "opponent_name": "Drayden Morton",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 49,
       "weight_class": "165",
       "result": "L",
       "method": "TF",
       "score": "16-0",
       "duration": "5:53",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -4.4
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29684076132",
+      "opponent_career_id": null,
       "opponent_name": "Andy Troczynski",
       "opponent_team": "Pennsylvania",
-      "opponent_team_rank": 24,
+      "opponent_team_rank": 20,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 161,
       "weight_class": "165",
       "result": "L",
       "method": "MD",
       "score": "11-1",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -5.42
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29681459132",
+      "opponent_career_id": null,
       "opponent_name": "Anthony White",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 31,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 44,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "8-4",
       "duration": "7:00",
-      "event": "vs. Rutgers"
+      "event": "vs. Rutgers",
+      "mv_impact": -2.43
     },
     {
       "date": "2024-12-06",
       "opponent_id": "29736106132",
+      "opponent_career_id": null,
       "opponent_name": "Mike Caliendo",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 3,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 3,
       "weight_class": "165",
       "result": "L",
       "method": "TF",
       "score": "19-3",
       "duration": "0:00",
-      "event": "vs. Princeton"
+      "event": "vs. Princeton",
+      "mv_impact": -1.97
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29676757132",
+      "opponent_career_id": null,
       "opponent_name": "Caden Dobbins",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 96,
       "weight_class": "165",
       "result": "L",
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -4.01
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29672684132",
+      "opponent_career_id": null,
       "opponent_name": "Liam Scrivanich",
       "opponent_team": "Rider",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 34,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 123,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "10-4",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -3.26
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29685606132",
+      "team": "Princeton",
+      "team_slug": "princeton",
+      "weight_class": 165,
+      "grade": "Sr.",
+      "current_rank": 262,
+      "record": "0-6"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24599354132",
+      "team": "Princeton",
+      "team_slug": "princeton",
+      "weight_class": 157,
+      "grade": "Jr.",
+      "current_rank": 288,
+      "record": "0-3"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20140888132",
+      "team": "Princeton",
+      "team_slug": "princeton",
+      "weight_class": 157,
+      "grade": "So.",
+      "current_rank": 101,
+      "record": "7-5"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16706577132",
+      "team": "Princeton",
+      "team_slug": "princeton",
+      "weight_class": 184,
+      "grade": "Fr.",
+      "current_rank": 155,
+      "record": "0-0"
+    }
+  ]
 }

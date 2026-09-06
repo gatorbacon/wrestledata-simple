@@ -5,11 +5,16 @@
   "team_slug": "penn_state",
   "team_rank": 1,
   "weight_class": 157,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 50,
   "record": {
     "overall": "5-0",
-    "vs_ranked": "0-0",
+    "vs_ranked": "5-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,92 +29,166 @@
     "bonus_rate": 0.8,
     "majors": 0,
     "techs": 4,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 4.094,
+      "matches": 5,
+      "rank_weight": 6,
+      "rank_overall": 41,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 5,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "29722710132",
+      "opponent_rank": 58,
+      "opponent_name": "Luke Nichter",
+      "method": "Dec 8-6"
+    },
     "worst_loss": null
   },
   "match_list": [
     {
       "date": "2024-11-24",
       "opponent_id": "29686888132",
+      "opponent_career_id": null,
       "opponent_name": "Fin Nadeau",
       "opponent_team": "Binghamton",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 32,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 123,
       "weight_class": "157",
       "result": "W",
       "method": "TF",
       "score": "17-2",
       "duration": "7:00",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": 4.6
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29673470132",
+      "opponent_career_id": null,
       "opponent_name": "Jake Wacha",
       "opponent_team": "Columbia",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 52,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 221,
       "weight_class": "157",
       "result": "W",
       "method": "TF",
       "score": "21-6",
       "duration": "3:35",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": 2.85
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29678074132",
+      "opponent_career_id": null,
       "opponent_name": "Drew Pepin",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 95,
       "weight_class": "157",
       "result": "W",
       "method": "TF",
       "score": "24-8",
       "duration": "6:17",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": 4.99
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29686459132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Stewart",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 126,
       "weight_class": "157",
       "result": "W",
       "method": "TF",
       "score": "19-4",
       "duration": "3:42",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": 4.28
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29722710132",
+      "opponent_career_id": null,
       "opponent_name": "Luke Nichter",
       "opponent_team": "Drexel",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 67,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 58,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "8-6",
       "duration": "7:00",
-      "event": "vs. Penn State"
+      "event": "vs. Penn State",
+      "mv_impact": 3.76
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34936414132",
+      "team": "Oklahoma State",
+      "team_slug": "oklahoma_state",
+      "weight_class": 174,
+      "grade": "R-Jr.",
+      "current_rank": 12,
+      "record": "17-8"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29679320132",
+      "team": "Penn State",
+      "team_slug": "penn_state",
+      "weight_class": 157,
+      "grade": "",
+      "current_rank": 50,
+      "record": "5-0"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584817132",
+      "team": "Penn State",
+      "team_slug": "penn_state",
+      "weight_class": 174,
+      "grade": "Sophomore",
+      "current_rank": 159,
+      "record": "0-0"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20124289132",
+      "team": "Penn State",
+      "team_slug": "penn_state",
+      "weight_class": 165,
+      "grade": "Redshirt Freshman",
+      "current_rank": 12,
+      "record": "19-6"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16700164132",
+      "team": "Penn State",
+      "team_slug": "penn_state",
+      "weight_class": 165,
+      "grade": "Freshman",
+      "current_rank": 31,
+      "record": "12-3"
+    }
+  ]
 }

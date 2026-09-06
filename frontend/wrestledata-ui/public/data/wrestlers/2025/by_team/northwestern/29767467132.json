@@ -3,15 +3,20 @@
   "name": "Matt Kubas",
   "team": "Northwestern",
   "team_slug": "northwestern",
-  "team_rank": 68,
+  "team_rank": 39,
   "weight_class": 184,
+  "grade": "First-Year",
+  "hometown": "Libertyville, Ill.",
+  "high_school": "Libertyville",
+  "photo_url": "https://nusports.com/imgproxy/wnpcU3BtVtFcie5HTG4WLvQmGFo9h-W1scSXQiBpDPY/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL251c3BvcnRzLWNvbS1wcm9kLzIwMjYvMDQvMTcvTGRPcDBER3VUb2RTR2ZjTFoyMkR3VEc0TXlUSGFTVUNFTVI2a3Y1YS5qcGc.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 215,
   "record": {
     "overall": "3-8",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-8",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 6.02,
@@ -24,182 +29,243 @@
     "bonus_rate": 0.333,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.014,
+      "matches": 11,
+      "rank_weight": 165,
+      "rank_overall": 1814,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29735004132",
+      "opponent_rank": 160,
+      "opponent_name": "Brayden Gautreau",
+      "method": "SV-3 5-2"
+    },
+    "worst_loss": {
+      "opponent_id": "29685059132",
+      "opponent_rank": 180,
+      "opponent_name": "JR Reed",
+      "method": "Fall 3:47"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-01",
       "opponent_id": "29735004132",
+      "opponent_career_id": null,
       "opponent_name": "Brayden Gautreau",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 45,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 160,
       "weight_class": "184",
       "result": "W",
       "method": "SV-3",
       "score": "5-2",
       "duration": "8:15",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": 1.55
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29734999132",
+      "opponent_career_id": null,
       "opponent_name": "Wyatt Ferguson",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 45,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 68,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "7-3",
       "duration": "7:00",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": -2.54
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29672308132",
+      "opponent_career_id": null,
       "opponent_name": "Ayden Miller",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 174,
       "weight_class": "184",
       "result": "W",
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": 1.7
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29680921132",
+      "opponent_career_id": null,
       "opponent_name": "Zahir McLean-Felix",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 97,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "7-3",
       "duration": "7:00",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": -3.05
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29686098132",
+      "opponent_career_id": null,
       "opponent_name": "Cooper Skelton",
       "opponent_team": "Ohio",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 46,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 175,
       "weight_class": "184",
       "result": "W",
       "method": "TF",
       "score": "17-1",
       "duration": "3:25",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": 2.5
     },
     {
       "date": "2025-01-12",
       "opponent_id": "29681837132",
+      "opponent_career_id": null,
       "opponent_name": "Edmond Ruth",
       "opponent_team": "Illinois",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 10,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 12,
       "weight_class": "184",
       "result": "L",
       "method": "TF",
       "score": "20-2",
       "duration": "6:08",
-      "event": "vs. Northwestern"
+      "event": "vs. Northwestern",
+      "mv_impact": -3.91
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29682559132",
+      "opponent_career_id": null,
       "opponent_name": "Orlando Cruz",
       "opponent_team": "Purdue",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 12,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 111,
       "weight_class": "184",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "6:04",
-      "event": "vs. Purdue"
+      "event": "vs. Purdue",
+      "mv_impact": -5.67
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29672273132",
+      "opponent_career_id": null,
       "opponent_name": "Lucas Daly",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 93,
       "weight_class": "184",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:55",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -6.75
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29684061132",
+      "opponent_career_id": null,
       "opponent_name": "Maximus Hale",
       "opponent_team": "Pennsylvania",
-      "opponent_team_rank": 24,
+      "opponent_team_rank": 20,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 19,
       "weight_class": "184",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:51",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -4.8
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29735004132",
+      "opponent_career_id": null,
       "opponent_name": "Brayden Gautreau",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 45,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 160,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "2-1",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": -4.45
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29685059132",
+      "opponent_career_id": null,
       "opponent_name": "JR Reed",
       "opponent_team": "Cleveland State",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 56,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 180,
       "weight_class": "184",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:47",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": -7.76
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34955735132",
+      "team": "Northwestern",
+      "team_slug": "northwestern",
+      "weight_class": 184,
+      "grade": "Redshirt First-Year",
+      "current_rank": 177,
+      "record": "3-9"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29767467132",
+      "team": "Northwestern",
+      "team_slug": "northwestern",
+      "weight_class": 184,
+      "grade": "First-Year",
+      "current_rank": 215,
+      "record": "3-8"
+    }
+  ]
 }

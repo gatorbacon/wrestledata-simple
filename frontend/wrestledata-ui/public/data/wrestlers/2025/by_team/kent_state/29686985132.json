@@ -3,15 +3,20 @@
   "name": "Aaron Ferguson",
   "team": "Kent State",
   "team_slug": "kent_state",
-  "team_rank": 60,
+  "team_rank": 72,
   "weight_class": 157,
+  "grade": "Sr.",
+  "hometown": "Steubenville, Ohio",
+  "high_school": "Steubenville",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fkentstatesports.com%2Fimages%2F2024%2F12%2F6%2FAaron_ferguson.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 225,
   "record": {
     "overall": "2-5",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "2-5",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 2.82,
@@ -19,127 +24,210 @@
     "pd7": -2.72,
     "si_plus": 93.7,
     "df_plus": 104.8,
-    "apr_plus": 97.5,
+    "apr_plus": 97.6,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.122,
+      "matches": 7,
+      "rank_weight": 187,
+      "rank_overall": 1565,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29723346132",
+      "opponent_rank": 241,
+      "opponent_name": "Brody Hallin",
+      "method": "Dec 7-3"
+    },
+    "worst_loss": {
+      "opponent_id": "29679970132",
+      "opponent_rank": 209,
+      "opponent_name": "jeb prechtel",
+      "method": "Fall 3:45"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-16",
       "opponent_id": "29679970132",
+      "opponent_career_id": null,
       "opponent_name": "jeb prechtel",
       "opponent_team": "Bellarmine",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 60,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 209,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:45",
-      "event": "vs. Kent State"
+      "event": "vs. Kent State",
+      "mv_impact": -7.28
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29686074132",
+      "opponent_career_id": null,
       "opponent_name": "Peyten Kellar",
       "opponent_team": "Ohio",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 46,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 27,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "7-0",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": -1.31
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29723346132",
+      "opponent_career_id": null,
       "opponent_name": "Brody Hallin",
       "opponent_team": "Northern Illinois",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 49,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 241,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "7-3",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": 1.16
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29672285132",
+      "opponent_career_id": null,
       "opponent_name": "Braden Stauffenberg",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 253,
       "weight_class": "157",
       "result": "W",
       "method": "TB-1",
       "score": "7-6",
       "duration": "10:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": 0.94
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29672415132",
+      "opponent_career_id": null,
       "opponent_name": "Luke Mechler",
       "opponent_team": "Wisconsin",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 33,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 91,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "5-0",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": -3.36
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29683822132",
+      "opponent_career_id": null,
       "opponent_name": "Cade Wirnsberger",
       "opponent_team": "Bucknell",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 43,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 87,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "3-2",
       "duration": "7:00",
-      "event": "vs. Kent State"
+      "event": "vs. Kent State",
+      "mv_impact": -3.24
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29678485132",
+      "opponent_career_id": null,
       "opponent_name": "Ethen Miller",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 17,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 7,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "11-3",
       "duration": "7:00",
-      "event": "vs. Maryland"
+      "event": "vs. Maryland",
+      "mv_impact": -1.77
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34944008132",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 174,
+      "grade": "Gr.",
+      "current_rank": 172,
+      "record": "1-5"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29686985132",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 157,
+      "grade": "Sr.",
+      "current_rank": 225,
+      "record": "2-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24580140132",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 165,
+      "grade": "",
+      "current_rank": 95,
+      "record": "17-15"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20136714132",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 157,
+      "grade": "So.",
+      "current_rank": 224,
+      "record": "2-7"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16709591132",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 235,
+      "record": "2-5"
+    }
+  ]
 }

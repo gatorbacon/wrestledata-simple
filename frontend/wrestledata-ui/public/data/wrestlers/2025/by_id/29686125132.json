@@ -3,13 +3,18 @@
   "name": "Lucas Schell",
   "team": "Buffalo",
   "team_slug": "buffalo",
-  "team_rank": 42,
+  "team_rank": 63,
   "weight_class": 165,
+  "grade": "Fr.",
+  "hometown": "Queensbury, NY",
+  "high_school": "Queensbury",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fubbulls.com%2Fimages%2F2024%2F9%2F23%2F2024-25_Wrestling_HS-web_SCHELL-2024-25wr-0065web.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 283,
   "record": {
     "overall": "0-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,92 +29,126 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.818,
+      "matches": 6,
+      "rank_weight": 251,
+      "rank_overall": 2390,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29684775132",
+      "opponent_rank": 264,
+      "opponent_name": "Joseph Chiappazzi",
+      "method": "Dec 5-1"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-16",
       "opponent_id": "29680097132",
+      "opponent_career_id": null,
       "opponent_name": "Jake Slotnick",
       "opponent_team": "Hofstra",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 57,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 107,
       "weight_class": "165",
       "result": "L",
       "method": "TF",
       "score": "18-2",
       "duration": "5:16",
-      "event": "Mat-Town Open II"
+      "event": "Mat-Town Open II",
+      "mv_impact": -4.81
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29684775132",
+      "opponent_career_id": null,
       "opponent_name": "Joseph Chiappazzi",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 264,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": -5.4
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29686471132",
+      "opponent_career_id": null,
       "opponent_name": "Cam Adams",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 228,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:07",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": -8.24
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29685916132",
+      "opponent_career_id": null,
       "opponent_name": "Damon Michaels",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 233,
       "weight_class": "165",
       "result": "L",
       "method": "MD",
       "score": "10-0",
       "duration": "7:00",
-      "event": "Purple Raider Open"
+      "event": "Purple Raider Open",
+      "mv_impact": -5.67
     },
     {
       "date": "2025-01-04",
       "opponent_id": "29683865132",
+      "opponent_career_id": null,
       "opponent_name": "Creed Thomas",
       "opponent_team": "Bucknell",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 43,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 248,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:41",
-      "event": "Bobby Kauffman Open"
+      "event": "Bobby Kauffman Open",
+      "mv_impact": -8.39
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29686125132",
+      "team": "Buffalo",
+      "team_slug": "buffalo",
+      "weight_class": 165,
+      "grade": "Fr.",
+      "current_rank": 283,
+      "record": "0-5"
+    }
+  ]
 }

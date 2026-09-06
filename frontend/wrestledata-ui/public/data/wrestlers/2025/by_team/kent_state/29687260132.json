@@ -3,13 +3,18 @@
   "name": "Aidan Rush",
   "team": "Kent State",
   "team_slug": "kent_state",
-  "team_rank": 60,
+  "team_rank": 72,
   "weight_class": 157,
+  "grade": "Fr.",
+  "hometown": "New Albany, Ohio",
+  "high_school": "St. Francis Desales",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fkentstatesports.com%2Fimages%2F2024%2F12%2F6%2FAidan_Rush.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 304,
   "record": {
     "overall": "1-7",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-7",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,137 +29,192 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.981,
+      "matches": 10,
+      "rank_weight": 242,
+      "rank_overall": 2042,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29686178132",
+      "opponent_rank": 223,
+      "opponent_name": "Judah Aybar",
+      "method": "Dec 7-6"
+    },
+    "worst_loss": {
+      "opponent_id": "29685878132",
+      "opponent_rank": 285,
+      "opponent_name": "Gannon Jaquay",
+      "method": "MD 13-5"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-16",
       "opponent_id": "29685175132",
+      "opponent_career_id": null,
       "opponent_name": "Reese Stephen",
       "opponent_team": "Cleveland State",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 56,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 97,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "10-3",
       "duration": "7:00",
-      "event": "JCU Open"
+      "event": "JCU Open",
+      "mv_impact": -3.11
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29686459132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Stewart",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 126,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "17-0",
       "duration": "5:27",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": -5.72
     },
     {
       "date": "2025-01-26",
       "opponent_id": "29672398132",
+      "opponent_career_id": null,
       "opponent_name": "Brayden Roberts",
       "opponent_team": "LIU",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 73,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:32",
-      "event": "vs. LIU"
+      "event": "vs. LIU",
+      "mv_impact": -3.89
     },
     {
       "date": "2025-01-17",
       "opponent_id": "29684548132",
+      "opponent_career_id": null,
       "opponent_name": "PJ Murphy",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 72,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "14-3",
       "duration": "7:00",
-      "event": "vs. SIU Edwardsville"
+      "event": "vs. SIU Edwardsville",
+      "mv_impact": -3.75
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29685061132",
+      "opponent_career_id": null,
       "opponent_name": "Dylan Layton",
       "opponent_team": "Cleveland State",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 56,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 60,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "6:38",
-      "event": "Kent State Open"
+      "event": "Kent State Open",
+      "mv_impact": -4.1
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29686178132",
+      "opponent_career_id": null,
       "opponent_name": "Judah Aybar",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 223,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "7-6",
       "duration": "7:00",
-      "event": "Kent State Open"
+      "event": "Kent State Open",
+      "mv_impact": 2.08
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29685878132",
+      "opponent_career_id": null,
       "opponent_name": "Gannon Jaquay",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 285,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "13-5",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": -6.53
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29672242132",
+      "opponent_career_id": null,
       "opponent_name": "Eleazar Walker",
       "opponent_team": "Michigan",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 13,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 245,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "10-8",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": -5.34
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34944025132",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 149,
+      "grade": "R-Fr.",
+      "current_rank": 222,
+      "record": "3-8"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29687260132",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 304,
+      "record": "1-7"
+    }
+  ]
 }

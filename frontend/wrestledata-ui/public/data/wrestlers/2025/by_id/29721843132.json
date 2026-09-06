@@ -3,13 +3,18 @@
   "name": "Peyton Hahn",
   "team": "Air Force",
   "team_slug": "air_force",
-  "team_rank": 34,
+  "team_rank": 58,
   "weight_class": 285,
+  "grade": "Jr.",
+  "hometown": "Boonville, MO",
+  "high_school": "Boonville",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgoairforcefalcons.com%2Fimages%2F2024%2F8%2F27%2FPeyton_Hahn_.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 191,
   "record": {
     "overall": "1-0",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,37 +24,83 @@
     "pd7": 14.0,
     "si_plus": 133.7,
     "df_plus": 111.1,
-    "apr_plus": 108.0,
+    "apr_plus": 107.9,
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 2.877,
+      "matches": 1,
+      "rank_weight": 19,
+      "rank_overall": 131,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "29678428132",
+      "opponent_rank": 125,
+      "opponent_name": "Hayden Simpson",
+      "method": "MD 17-3"
+    },
     "worst_loss": null
   },
   "match_list": [
     {
       "date": "2024-12-08",
       "opponent_id": "29678428132",
+      "opponent_career_id": null,
       "opponent_name": "Hayden Simpson",
       "opponent_team": "Oklahoma State",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 4,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 125,
       "weight_class": "285",
       "result": "W",
       "method": "MD",
       "score": "17-3",
       "duration": "7:00",
-      "event": "Bob Smith Open"
+      "event": "Bob Smith Open",
+      "mv_impact": 2.88
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29721843132",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 285,
+      "grade": "Jr.",
+      "current_rank": 191,
+      "record": "1-0"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24585329132",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 285,
+      "grade": "So.",
+      "current_rank": 225,
+      "record": "0-0"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20134441132",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 285,
+      "grade": "Fr.",
+      "current_rank": 193,
+      "record": "0-1"
+    }
+  ]
 }

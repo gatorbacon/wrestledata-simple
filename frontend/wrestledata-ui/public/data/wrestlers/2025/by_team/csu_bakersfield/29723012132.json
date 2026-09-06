@@ -3,10 +3,15 @@
   "name": "Josiah Sandoval",
   "team": "CSU Bakersfield",
   "team_slug": "csu_bakersfield",
-  "team_rank": 43,
+  "team_rank": 22,
   "weight_class": 133,
+  "grade": "Fr.",
+  "hometown": "Sacramento, Calif.",
+  "high_school": "Elk Grove HS",
+  "photo_url": "https://gorunners.com/images/2024/10/8/Josiah_Sandoval_DD___1_.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 158,
+  "current_rank": 175,
   "record": {
     "overall": "0-1",
     "vs_ranked": "0-1",
@@ -19,12 +24,19 @@
     "pd7": -21.07,
     "si_plus": 83.3,
     "df_plus": 71.2,
-    "apr_plus": 96.9,
+    "apr_plus": 96.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.653,
+      "matches": 1,
+      "rank_weight": 234,
+      "rank_overall": 2311,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -34,7 +46,7 @@
     "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "29681175132",
-      "opponent_rank": 116,
+      "opponent_rank": 119,
       "opponent_name": "Jacob Meyers",
       "method": "TF 17-1 5:19"
     }
@@ -43,18 +55,32 @@
     {
       "date": "2024-11-02",
       "opponent_id": "29681175132",
+      "opponent_career_id": null,
       "opponent_name": "Jacob Meyers",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 133,
-      "opponent_rank": 116,
+      "opponent_rank": 119,
       "weight_class": "133",
       "result": "L",
       "method": "TF",
       "score": "17-1",
       "duration": "5:19",
-      "event": "Menlo Invite"
+      "event": "Menlo Invite",
+      "mv_impact": -5.65
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29723012132",
+      "team": "CSU Bakersfield",
+      "team_slug": "csu_bakersfield",
+      "weight_class": 133,
+      "grade": "Fr.",
+      "current_rank": 175,
+      "record": "0-1"
+    }
+  ]
 }

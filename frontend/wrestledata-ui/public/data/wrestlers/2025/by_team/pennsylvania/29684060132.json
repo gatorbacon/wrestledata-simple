@@ -3,13 +3,18 @@
   "name": "Rich Delsanter",
   "team": "Pennsylvania",
   "team_slug": "pennsylvania",
-  "team_rank": 24,
+  "team_rank": 20,
   "weight_class": 149,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 282,
   "record": {
     "overall": "0-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,52 +24,110 @@
     "pd7": -2.0,
     "si_plus": 98.6,
     "df_plus": 99.1,
-    "apr_plus": 93.7,
+    "apr_plus": 93.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.0,
+      "matches": 3,
+      "rank_weight": 233,
+      "rank_overall": 2047,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29684507132",
+      "opponent_rank": 232,
+      "opponent_name": "Matthew Buck",
+      "method": "Dec 8-6"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-10",
       "opponent_id": "29684507132",
+      "opponent_career_id": null,
       "opponent_name": "Matthew Buck",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 232,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "8-6",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -5.69
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29721364132",
+      "opponent_career_id": null,
       "opponent_name": "Zac Martin",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 11,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 124,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "8-6",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -3.16
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29684060132",
+      "team": "Pennsylvania",
+      "team_slug": "pennsylvania",
+      "weight_class": 149,
+      "grade": "",
+      "current_rank": 282,
+      "record": "0-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24591793132",
+      "team": "Pennsylvania",
+      "team_slug": "pennsylvania",
+      "weight_class": 165,
+      "grade": "",
+      "current_rank": 168,
+      "record": "0-0"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20123291132",
+      "team": "Pennsylvania",
+      "team_slug": "pennsylvania",
+      "weight_class": 141,
+      "grade": "",
+      "current_rank": 179,
+      "record": "2-3"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16704918132",
+      "team": "Pennsylvania",
+      "team_slug": "pennsylvania",
+      "weight_class": 157,
+      "grade": "",
+      "current_rank": 168,
+      "record": "0-0"
+    }
+  ]
 }

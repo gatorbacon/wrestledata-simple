@@ -3,13 +3,18 @@
   "name": "Ousmane Duncanson",
   "team": "Lock Haven",
   "team_slug": "lock_haven",
-  "team_rank": 29,
+  "team_rank": 38,
   "weight_class": 165,
+  "grade": "Fr.",
+  "hometown": "Barton, N.Y.",
+  "high_school": null,
+  "photo_url": "https://lockhavenathletics.com/images/2024/9/26/Duncanson.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 111,
   "record": {
     "overall": "2-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -17,69 +22,104 @@
     "pf7": 3.5,
     "pa7": 5.5,
     "pd7": -2.0,
-    "si_plus": 92.0,
+    "si_plus": 91.9,
     "df_plus": 106.0,
-    "apr_plus": 117.1,
+    "apr_plus": 116.8,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 0.403,
+      "matches": 3,
+      "rank_weight": 71,
+      "rank_overall": 696,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29680134132",
+      "opponent_rank": 162,
+      "opponent_name": "Oscar Aranda",
+      "method": "Dec 7-2"
+    },
+    "worst_loss": {
+      "opponent_id": "29721384132",
+      "opponent_rank": 89,
+      "opponent_name": "Richie Grungo",
+      "method": "MD 9-0"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29680134132",
+      "opponent_career_id": null,
       "opponent_name": "Oscar Aranda",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 162,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": "7-2",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": 1.72
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29673099132",
+      "opponent_career_id": null,
       "opponent_name": "Makoa Niebel",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 265,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "6:19",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": 3.21
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29721384132",
+      "opponent_career_id": null,
       "opponent_name": "Richie Grungo",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 11,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 89,
       "weight_class": "165",
       "result": "L",
       "method": "MD",
       "score": "9-0",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -3.72
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29679368132",
+      "team": "Lock Haven",
+      "team_slug": "lock_haven",
+      "weight_class": 165,
+      "grade": "Fr.",
+      "current_rank": 111,
+      "record": "2-1"
+    }
+  ]
 }

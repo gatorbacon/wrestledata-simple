@@ -3,15 +3,20 @@
   "name": "Evan Gleason",
   "team": "Harvard",
   "team_slug": "harvard",
-  "team_rank": 58,
+  "team_rank": 71,
   "weight_class": 165,
+  "grade": "Sr.",
+  "hometown": "Easton, Pa.",
+  "high_school": "Easton Area",
+  "photo_url": "https://gocrimson.com/images/2023/10/18/EvanGleason_HS_2324.png",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 168,
   "record": {
     "overall": "2-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-3",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 5.64,
@@ -24,92 +29,171 @@
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.457,
+      "matches": 6,
+      "rank_weight": 175,
+      "rank_overall": 1665,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29685210132",
+      "opponent_rank": 186,
+      "opponent_name": "Declan Casey",
+      "method": "Dec 10-6"
+    },
+    "worst_loss": {
+      "opponent_id": "29687477132",
+      "opponent_rank": 190,
+      "opponent_name": "Cael Berg",
+      "method": "Dec 6-1"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-15",
       "opponent_id": "29673464132",
+      "opponent_career_id": null,
       "opponent_name": "Nick Fine",
       "opponent_team": "Columbia",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 52,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 22,
       "weight_class": "184",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "6:39",
-      "event": "vs. Harvard"
+      "event": "vs. Harvard",
+      "mv_impact": -3.52
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29687477132",
+      "opponent_career_id": null,
       "opponent_name": "Cael Berg",
       "opponent_team": "Harvard",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 71,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 190,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "6-1",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -5.19
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29681749132",
+      "opponent_career_id": null,
       "opponent_name": "Kelin Laffey",
       "opponent_team": "Pittsburgh",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 21,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 77,
       "weight_class": "165",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "3:59",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -4.53
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29685210132",
+      "opponent_career_id": null,
       "opponent_name": "Declan Casey",
       "opponent_team": "Navy",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 28,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 186,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": "10-6",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": 1.08
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29672688132",
+      "opponent_career_id": null,
       "opponent_name": "Kevin McBride",
       "opponent_team": "Rider",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 34,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 285,
       "weight_class": "165",
       "result": "W",
       "method": "MD",
       "score": "13-4",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": 0.94
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34937321132",
+      "team": "Harvard",
+      "team_slug": "harvard",
+      "weight_class": 174,
+      "grade": "",
+      "current_rank": 227,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29687480132",
+      "team": "Harvard",
+      "team_slug": "harvard",
+      "weight_class": 165,
+      "grade": "Sr.",
+      "current_rank": 168,
+      "record": "2-3"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24593543132",
+      "team": "Harvard",
+      "team_slug": "harvard",
+      "weight_class": 165,
+      "grade": "Jr.",
+      "current_rank": 123,
+      "record": "3-4"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20132196132",
+      "team": "Harvard",
+      "team_slug": "harvard",
+      "weight_class": 157,
+      "grade": "So.",
+      "current_rank": 125,
+      "record": "7-7"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16701696132",
+      "team": "Harvard",
+      "team_slug": "harvard",
+      "weight_class": 149,
+      "grade": "Fy",
+      "current_rank": 307,
+      "record": "0-6"
+    }
+  ]
 }

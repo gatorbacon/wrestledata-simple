@@ -3,15 +3,20 @@
   "name": "Colin Kacena",
   "team": "Central Michigan",
   "team_slug": "central_michigan",
-  "team_rank": 27,
+  "team_rank": 45,
   "weight_class": 149,
+  "grade": "Fr.",
+  "hometown": "Orlando, Fla.",
+  "high_school": "Lake Highland Prepatory",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fcmuchippewas.com%2Fimages%2F2024%2F9%2F24%2Fkacena_colin_wres_JEB_9027.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 90,
   "record": {
     "overall": "5-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "5-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 5.44,
@@ -24,152 +29,209 @@
     "bonus_rate": 0.8,
     "majors": 3,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 0.229,
+      "matches": 15,
+      "rank_weight": 86,
+      "rank_overall": 761,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 5,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29684769132",
+      "opponent_rank": 74,
+      "opponent_name": "Michael Dolan",
+      "method": "MD 8-0"
+    },
+    "worst_loss": {
+      "opponent_id": "29682563132",
+      "opponent_rank": 174,
+      "opponent_name": "Cole Solomey",
+      "method": "Dec 4-1"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-01",
       "opponent_id": "29678494132",
+      "opponent_career_id": null,
       "opponent_name": "Kal Miller",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 17,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 25,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": -2.04
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29684769132",
+      "opponent_career_id": null,
       "opponent_name": "Michael Dolan",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 74,
       "weight_class": "149",
       "result": "W",
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": 3.95
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29767461132",
+      "opponent_career_id": null,
       "opponent_name": "August Hibler",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 39,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 82,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "9-4",
       "duration": "7:00",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": -2.71
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29685889132",
+      "opponent_career_id": null,
       "opponent_name": "Colin Roberts",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 224,
       "weight_class": "149",
       "result": "W",
       "method": "MD",
       "score": "12-3",
       "duration": "7:00",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": 2.18
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29686933132",
+      "opponent_career_id": null,
       "opponent_name": "Brennan Van Hoecke",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 15,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 77,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "11-5",
       "duration": "7:00",
-      "event": "vs. Little Rock"
+      "event": "vs. Little Rock",
+      "mv_impact": -2.22
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29686986132",
+      "opponent_career_id": null,
       "opponent_name": "Eli Ashcroft",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 177,
       "weight_class": "141",
       "result": "W",
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": 1.99
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29682563132",
+      "opponent_career_id": null,
       "opponent_name": "Cole Solomey",
       "opponent_team": "Purdue",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 12,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 174,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": -4.58
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29686417132",
+      "opponent_career_id": null,
       "opponent_name": "Sean Larkin",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 224,
       "weight_class": "141",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:59",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": 3.32
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29767466132",
+      "opponent_career_id": null,
       "opponent_name": "Giosue Hickman",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 39,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 198,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "7-1",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": 1.41
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34934114132",
+      "team": "Central Michigan",
+      "team_slug": "central_michigan",
+      "weight_class": 149,
+      "grade": "So.",
+      "current_rank": 94,
+      "record": "5-8"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29735008132",
+      "team": "Central Michigan",
+      "team_slug": "central_michigan",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 90,
+      "record": "5-4"
+    }
+  ]
 }

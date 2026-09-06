@@ -3,13 +3,18 @@
   "name": "Cole Gripka",
   "team": "Missouri",
   "team_slug": "missouri",
-  "team_rank": 64,
+  "team_rank": 16,
   "weight_class": 285,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 96,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,52 +24,115 @@
     "pd7": -8.19,
     "si_plus": 97.6,
     "df_plus": 94.1,
-    "apr_plus": 111.5,
+    "apr_plus": 111.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.026,
+      "matches": 2,
+      "rank_weight": 78,
+      "rank_overall": 829,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29678018132",
+      "opponent_rank": 31,
+      "opponent_name": "Jarrett Stoner",
+      "method": "SV-1 5-2"
+    },
+    "worst_loss": {
+      "opponent_id": "29678002132",
+      "opponent_rank": 36,
+      "opponent_name": "Seth Nitzel",
+      "method": "TF 17-2 5:33"
+    }
   },
   "match_list": [
     {
       "date": "2024-10-25",
       "opponent_id": "29678018132",
+      "opponent_career_id": null,
       "opponent_name": "Jarrett Stoner",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 31,
       "weight_class": "285",
       "result": "W",
       "method": "SV-1",
       "score": "5-2",
       "duration": "8:15",
-      "event": "vs. Missouri"
+      "event": "vs. Missouri",
+      "mv_impact": 3.98
     },
     {
       "date": "2024-10-25",
       "opponent_id": "29678002132",
+      "opponent_career_id": null,
       "opponent_name": "Seth Nitzel",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 36,
       "weight_class": "285",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "5:33",
-      "event": "vs. Missouri"
+      "event": "vs. Missouri",
+      "mv_impact": -3.93
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29677997132",
+      "team": "Missouri",
+      "team_slug": "missouri",
+      "weight_class": 285,
+      "grade": "",
+      "current_rank": 96,
+      "record": "1-1"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24583994132",
+      "team": "Missouri",
+      "team_slug": "missouri",
+      "weight_class": 285,
+      "grade": "Redshirt Sophomore",
+      "current_rank": 122,
+      "record": "2-4"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20130948132",
+      "team": "Missouri",
+      "team_slug": "missouri",
+      "weight_class": 285,
+      "grade": "Redshirt Freshman",
+      "current_rank": 106,
+      "record": "2-4"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "19506216132",
+      "team": "Missouri",
+      "team_slug": "missouri",
+      "weight_class": 285,
+      "grade": "Freshman",
+      "current_rank": 143,
+      "record": "0-0"
+    }
+  ]
 }

@@ -3,15 +3,20 @@
   "name": "William Baysingar",
   "team": "Illinois",
   "team_slug": "illinois",
-  "team_rank": 2,
+  "team_rank": 10,
   "weight_class": 141,
+  "grade": "R-Fr.",
+  "hometown": "Mt. Prospect, Ill.",
+  "high_school": "Prospect",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Ffightingillini.com%2Fimages%2F2024%2F9%2F16%2FBaysingar_Will_WEB_20240825_WRES_Headshot_KS_0404.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 98,
   "record": {
     "overall": "3-4",
-    "vs_ranked": "0-1",
+    "vs_ranked": "3-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 3.31,
@@ -24,127 +29,185 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.144,
+      "matches": 9,
+      "rank_weight": 93,
+      "rank_overall": 898,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_wins": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "29734982132",
+      "opponent_rank": 56,
+      "opponent_name": "Nick Blackburn",
+      "method": "Dec 6-0"
+    },
     "worst_loss": {
-      "opponent_id": "29674041132",
-      "opponent_rank": 26,
-      "opponent_name": "Kai Orine",
-      "method": "Dec 3-1"
+      "opponent_id": "29684503132",
+      "opponent_rank": 83,
+      "opponent_name": "Elijah Griffin",
+      "method": "Dec 8-2"
     }
   },
   "match_list": [
     {
       "date": "2025-02-09",
       "opponent_id": "29681877132",
+      "opponent_career_id": null,
       "opponent_name": "Jayden Colon",
       "opponent_team": "Illinois",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 10,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 112,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Greyhound Open"
+      "event": "Greyhound Open",
+      "mv_impact": 2.44
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29683808132",
+      "opponent_career_id": null,
       "opponent_name": "Dylan Chappell",
       "opponent_team": "Bucknell",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 43,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 16,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "7-2",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -1.72
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29684503132",
+      "opponent_career_id": null,
       "opponent_name": "Elijah Griffin",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 83,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -2.31
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29734982132",
+      "opponent_career_id": null,
       "opponent_name": "Nick Blackburn",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 45,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 56,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "6-0",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": 3.86
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29674041132",
+      "opponent_career_id": null,
       "opponent_name": "Kai Orine",
       "opponent_team": "NC State",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 14,
       "opponent_weight": 133,
-      "opponent_rank": 26,
+      "opponent_rank": 23,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "3-1",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -1.61
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29681410132",
+      "opponent_career_id": null,
       "opponent_name": "Max Hermes",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 31,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 179,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 1.21
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29721381132",
+      "opponent_career_id": null,
       "opponent_name": "Luke Stanich",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 11,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 24,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "19-3",
       "duration": "6:41",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -2.77
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34952075132",
+      "team": "Illinois",
+      "team_slug": "illinois",
+      "weight_class": 141,
+      "grade": "R-So.",
+      "current_rank": 67,
+      "record": "9-13"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29681840132",
+      "team": "Illinois",
+      "team_slug": "illinois",
+      "weight_class": 141,
+      "grade": "R-Fr.",
+      "current_rank": 98,
+      "record": "3-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24586671132",
+      "team": "Illinois",
+      "team_slug": "illinois",
+      "weight_class": 141,
+      "grade": "Fr.",
+      "current_rank": 77,
+      "record": "5-4"
+    }
+  ]
 }

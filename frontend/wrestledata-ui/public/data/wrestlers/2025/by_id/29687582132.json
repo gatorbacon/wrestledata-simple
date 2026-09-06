@@ -3,10 +3,15 @@
   "name": "Marcus Williams",
   "team": "Little Rock",
   "team_slug": "little_rock",
-  "team_rank": 28,
+  "team_rank": 15,
   "weight_class": 125,
+  "grade": "FRESHMAN",
+  "hometown": "Marlow, Okla.",
+  "high_school": "Marlow H.S.",
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 185,
+  "current_rank": 160,
   "record": {
     "overall": "1-4",
     "vs_ranked": "1-4",
@@ -24,7 +29,14 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.622,
+      "matches": 5,
+      "rank_weight": 145,
+      "rank_overall": 1707,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -33,13 +45,13 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "29678509132",
-      "opponent_rank": 126,
+      "opponent_rank": 170,
       "opponent_name": "Presden Sanchez",
       "method": "TF 18-0 5:00"
     },
     "worst_loss": {
       "opponent_id": "29684522132",
-      "opponent_rank": 92,
+      "opponent_rank": 79,
       "opponent_name": "Drew Davis",
       "method": "TF 17-2 5:50"
     }
@@ -48,78 +60,100 @@
     {
       "date": "2024-12-07",
       "opponent_id": "29678006132",
+      "opponent_career_id": null,
       "opponent_name": "Noah Surtin",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 125,
-      "opponent_rank": 81,
+      "opponent_rank": 67,
       "weight_class": "125",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:54",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": -5.72
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29684478132",
+      "opponent_career_id": null,
       "opponent_name": "Davian Guanajuato",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 125,
-      "opponent_rank": 67,
+      "opponent_rank": 71,
       "weight_class": "125",
       "result": "L",
       "method": "MD",
       "score": "16-7",
       "duration": "7:00",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": -4.16
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29682547132",
+      "opponent_career_id": null,
       "opponent_name": "Matt Ramos",
       "opponent_team": "Purdue",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 12,
       "opponent_weight": 125,
-      "opponent_rank": 4,
+      "opponent_rank": 2,
       "weight_class": "125",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "3:45",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": -1.88
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29678509132",
+      "opponent_career_id": null,
       "opponent_name": "Presden Sanchez",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 17,
       "opponent_weight": 125,
-      "opponent_rank": 126,
+      "opponent_rank": 170,
       "weight_class": "125",
       "result": "W",
       "method": "TF",
       "score": "18-0",
       "duration": "5:00",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": 3.41
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29684522132",
+      "opponent_career_id": null,
       "opponent_name": "Drew Davis",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 125,
-      "opponent_rank": 92,
+      "opponent_rank": 79,
       "weight_class": "125",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "5:50",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": -4.75
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29687582132",
+      "team": "Little Rock",
+      "team_slug": "little_rock",
+      "weight_class": 125,
+      "grade": "FRESHMAN",
+      "current_rank": 160,
+      "record": "1-4"
+    }
+  ]
 }

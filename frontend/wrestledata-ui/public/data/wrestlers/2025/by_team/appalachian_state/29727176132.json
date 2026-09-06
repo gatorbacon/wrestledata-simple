@@ -3,15 +3,20 @@
   "name": "Gunnar Pool",
   "team": "Appalachian State",
   "team_slug": "appalachian_state",
-  "team_rank": 36,
+  "team_rank": 47,
   "weight_class": 197,
+  "grade": "R-Fr.",
+  "hometown": "Centerville, Ohio",
+  "high_school": "Centerville",
+  "photo_url": "https://dg5crudsxv7wa.cloudfront.net/images/2023/8/16/Pool_Gunnar_4Adgd.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 227,
   "record": {
     "overall": "2-7",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-7",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 1.75,
@@ -19,157 +24,224 @@
     "pd7": -12.33,
     "si_plus": 89.9,
     "df_plus": 89.3,
-    "apr_plus": 108.9,
+    "apr_plus": 108.7,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": -2.823,
+      "matches": 11,
+      "rank_weight": 153,
+      "rank_overall": 1769,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29727544132",
+      "opponent_rank": 226,
+      "opponent_name": "Pierce White",
+      "method": "Fall 4:38"
+    },
+    "worst_loss": {
+      "opponent_id": "29686593132",
+      "opponent_rank": 107,
+      "opponent_name": "Thomas Sandoval",
+      "method": "Dec 5-2"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-25",
       "opponent_id": "29687073132",
+      "opponent_career_id": null,
       "opponent_name": "Evan Wingrove",
       "opponent_team": "Ohio",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 46,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 72,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:54",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -6.41
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29727544132",
+      "opponent_career_id": null,
       "opponent_name": "Pierce White",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 226,
       "weight_class": "197",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:33",
-      "event": "Wilkes Open"
+      "event": "Wilkes Open",
+      "mv_impact": 2.7
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29686593132",
+      "opponent_career_id": null,
       "opponent_name": "Thomas Sandoval",
       "opponent_team": "Brown",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 62,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 107,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -3.75
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29722729132",
+      "opponent_career_id": null,
       "opponent_name": "Ibrahim Ameer",
       "opponent_team": "Drexel",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 67,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 82,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "18-2",
       "duration": "5:35",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -4.79
     },
     {
       "date": "2024-11-12",
       "opponent_id": "29727162132",
+      "opponent_career_id": null,
       "opponent_name": "Carson Floyd",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 37,
       "weight_class": "197",
       "result": "L",
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
-      "event": "Mountaineer Invitational"
+      "event": "Mountaineer Invitational",
+      "mv_impact": -2.23
     },
     {
       "date": "2024-11-12",
       "opponent_id": "29734773132",
+      "opponent_career_id": null,
       "opponent_name": "Isaiah Salazar",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 7,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 13,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "16-0",
       "duration": "5:37",
-      "event": "Mountaineer Invitational"
+      "event": "Mountaineer Invitational",
+      "mv_impact": -3.24
     },
     {
       "date": "2024-11-12",
       "opponent_id": "29727544132",
+      "opponent_career_id": null,
       "opponent_name": "Pierce White",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 226,
       "weight_class": "197",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:38",
-      "event": "Mountaineer Invitational"
+      "event": "Mountaineer Invitational",
+      "mv_impact": 2.7
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29674048132",
+      "opponent_career_id": null,
       "opponent_name": "Andrew Macchiavello",
       "opponent_team": "NC State",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 14,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 101,
       "weight_class": "197",
       "result": "L",
       "method": "MD",
       "score": "14-3",
       "duration": "7:00",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -4.85
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29674050132",
+      "opponent_career_id": null,
       "opponent_name": "Chase Horne",
       "opponent_team": "NC State",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 14,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 59,
       "weight_class": "197",
       "result": "L",
       "method": "MD",
       "score": "15-3",
       "duration": "7:00",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -3.19
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34944354132",
+      "team": "Appalachian State",
+      "team_slug": "appalachian_state",
+      "weight_class": 197,
+      "grade": "R-So.",
+      "current_rank": 125,
+      "record": "9-10"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29727176132",
+      "team": "Appalachian State",
+      "team_slug": "appalachian_state",
+      "weight_class": 197,
+      "grade": "R-Fr.",
+      "current_rank": 227,
+      "record": "2-7"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24603723132",
+      "team": "Appalachian State",
+      "team_slug": "appalachian_state",
+      "weight_class": 197,
+      "grade": "Fr.",
+      "current_rank": 184,
+      "record": "3-7"
+    }
+  ]
 }

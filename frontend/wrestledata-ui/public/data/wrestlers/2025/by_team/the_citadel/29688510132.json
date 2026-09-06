@@ -3,13 +3,18 @@
   "name": "Braxton Russell",
   "team": "The Citadel",
   "team_slug": "the_citadel",
-  "team_rank": 75,
+  "team_rank": 50,
   "weight_class": 165,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 191,
   "record": {
     "overall": "3-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,142 +24,197 @@
     "pd7": -1.5,
     "si_plus": 86.4,
     "df_plus": 105.4,
-    "apr_plus": 108.0,
+    "apr_plus": 107.9,
     "pin_rate": 0.333,
     "bonus_rate": 0.333,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -2.379,
+      "matches": 8,
+      "rank_weight": 170,
+      "rank_overall": 1643,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29733382132",
+      "opponent_rank": 200,
+      "opponent_name": "Anwar Alli",
+      "method": "Dec 5-1"
+    },
+    "worst_loss": {
+      "opponent_id": "29687860132",
+      "opponent_rank": 246,
+      "opponent_name": "Aidan Lenz",
+      "method": "Dec 5-2"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-02",
       "opponent_id": "29687860132",
+      "opponent_career_id": null,
       "opponent_name": "Aidan Lenz",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 246,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "2025 Newberry Open"
+      "event": "2025 Newberry Open",
+      "mv_impact": -5.35
     },
     {
       "date": "2025-02-02",
       "opponent_id": "29675192132",
+      "opponent_career_id": null,
       "opponent_name": "Logan Chambers",
       "opponent_team": "VMI",
-      "opponent_team_rank": 77,
+      "opponent_team_rank": 79,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 271,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": "5-3",
       "duration": "7:00",
-      "event": "2025 Newberry Open"
+      "event": "2025 Newberry Open",
+      "mv_impact": 0.38
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29681696132",
+      "opponent_career_id": null,
       "opponent_name": "Cavarius Liddie",
       "opponent_team": "Chattanooga",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 51,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 167,
       "weight_class": "165",
       "result": "L",
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -5.19
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29676019132",
+      "opponent_career_id": null,
       "opponent_name": "Colin Nugent",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 199,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "5-3",
       "duration": "7:00",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -4.98
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29675192132",
+      "opponent_career_id": null,
       "opponent_name": "Logan Chambers",
       "opponent_team": "VMI",
-      "opponent_team_rank": 77,
+      "opponent_team_rank": 79,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 271,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:11",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": 3.38
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29733382132",
+      "opponent_career_id": null,
       "opponent_name": "Anwar Alli",
       "opponent_team": "Virginia",
-      "opponent_team_rank": 78,
+      "opponent_team_rank": 42,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 200,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": 0.66
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29721832132",
+      "opponent_career_id": null,
       "opponent_name": "Brooks Gable",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 133,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "5-3",
       "duration": "7:00",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -3.71
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29681440132",
+      "opponent_career_id": null,
       "opponent_name": "Evan Maag",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 47,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:19",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -4.24
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34946242132",
+      "team": "The Citadel",
+      "team_slug": "the_citadel",
+      "weight_class": 174,
+      "grade": "R-Fr.",
+      "current_rank": 101,
+      "record": "7-9"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29688510132",
+      "team": "The Citadel",
+      "team_slug": "the_citadel",
+      "weight_class": 165,
+      "grade": "",
+      "current_rank": 191,
+      "record": "3-5"
+    }
+  ]
 }

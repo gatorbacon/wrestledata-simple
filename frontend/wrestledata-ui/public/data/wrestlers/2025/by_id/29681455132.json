@@ -3,13 +3,18 @@
   "name": "Dylan Weaver",
   "team": "Rutgers",
   "team_slug": "rutgers",
-  "team_rank": 13,
+  "team_rank": 31,
   "weight_class": 157,
+  "grade": "Sr.",
+  "hometown": "Lyndhurst, N.J.",
+  "high_school": "Lyndhurst",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fscarletknights.com%2Fimages%2F2024%2F9%2F30%2FWeaver_Dylan.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 149,
   "record": {
     "overall": "3-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,112 +24,183 @@
     "pd7": -0.33,
     "si_plus": 101.4,
     "df_plus": 104.3,
-    "apr_plus": 122.6,
+    "apr_plus": 122.3,
     "pin_rate": 0.667,
     "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": 0.742,
+      "matches": 8,
+      "rank_weight": 71,
+      "rank_overall": 595,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29673440132",
+      "opponent_rank": 102,
+      "opponent_name": "Jaden Le",
+      "method": "Fall 4:00"
+    },
+    "worst_loss": {
+      "opponent_id": "29678074132",
+      "opponent_rank": 95,
+      "opponent_name": "Drew Pepin",
+      "method": "Dec 4-1"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-14",
       "opponent_id": "29678074132",
+      "opponent_career_id": null,
       "opponent_name": "Drew Pepin",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 95,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "vs. Rutgers"
+      "event": "vs. Rutgers",
+      "mv_impact": -3.01
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29680140132",
+      "opponent_career_id": null,
       "opponent_name": "Dakota Morris",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 73,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "13-8",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -2.46
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29680132132",
+      "opponent_career_id": null,
       "opponent_name": "Ryan Alvarado",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 250,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:44",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": 3.95
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29673440132",
+      "opponent_career_id": null,
       "opponent_name": "Jaden Le",
       "opponent_team": "Columbia",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 52,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 102,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": 5.73
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29721378132",
+      "opponent_career_id": null,
       "opponent_name": "Griffin Gonzalez",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 11,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 86,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:36",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -5.43
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29672689132",
+      "opponent_career_id": null,
       "opponent_name": "Eric Broadie",
       "opponent_team": "Rider",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 34,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 236,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "9-2",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": 0.71
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29681455132",
+      "team": "Rutgers",
+      "team_slug": "rutgers",
+      "weight_class": 157,
+      "grade": "Sr.",
+      "current_rank": 149,
+      "record": "3-3"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24582431132",
+      "team": "Rutgers",
+      "team_slug": "rutgers",
+      "weight_class": 157,
+      "grade": "Jr.",
+      "current_rank": 126,
+      "record": "6-5"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20131020132",
+      "team": "Rutgers",
+      "team_slug": "rutgers",
+      "weight_class": 157,
+      "grade": "So.",
+      "current_rank": 204,
+      "record": "6-9"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16702327132",
+      "team": "Rutgers",
+      "team_slug": "rutgers",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 184,
+      "record": "5-6"
+    }
+  ]
 }

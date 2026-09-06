@@ -3,14 +3,19 @@
   "name": "Bryson Valdez",
   "team": "Northern Colorado",
   "team_slug": "northern_colorado",
-  "team_rank": 12,
+  "team_rank": 30,
   "weight_class": 125,
+  "grade": "Fr.",
+  "hometown": "Aztec, N.M.",
+  "high_school": null,
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 142,
+  "current_rank": 144,
   "record": {
     "overall": "1-5",
     "vs_ranked": "1-5",
-    "vs_top10": "0-0",
+    "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
   "metrics": {
@@ -24,22 +29,29 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -2.973,
+      "matches": 7,
+      "rank_weight": 161,
+      "rank_overall": 1805,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
     "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "29681726132",
-      "opponent_rank": 207,
+      "opponent_rank": 211,
       "opponent_name": "Isaac Sheehan",
       "method": "Fall 2:10"
     },
     "worst_loss": {
       "opponent_id": "31600766132",
-      "opponent_rank": 187,
+      "opponent_rank": 152,
       "opponent_name": "Jayden Carson",
       "method": "MD 13-4"
     }
@@ -48,93 +60,127 @@
     {
       "date": "2025-02-16",
       "opponent_id": "31190123132",
+      "opponent_career_id": null,
       "opponent_name": "Garrett Ricks",
       "opponent_team": "Wyoming",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 35,
       "opponent_weight": 125,
-      "opponent_rank": 136,
+      "opponent_rank": 88,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "5-3",
       "duration": "7:00",
-      "event": "vs. Wyoming"
+      "event": "vs. Wyoming",
+      "mv_impact": -3.69
     },
     {
       "date": "2025-02-14",
       "opponent_id": "29681177132",
+      "opponent_career_id": null,
       "opponent_name": "Bridger Ricks",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 125,
-      "opponent_rank": 104,
+      "opponent_rank": 70,
       "weight_class": "125",
       "result": "L",
       "method": "TF",
       "score": "18-3",
       "duration": "6:53",
-      "event": "vs. Utah Valley"
+      "event": "vs. Utah Valley",
+      "mv_impact": -5.13
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29686939132",
+      "opponent_career_id": null,
       "opponent_name": "Nasir Bailey",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 15,
       "opponent_weight": 133,
-      "opponent_rank": 18,
+      "opponent_rank": 6,
       "weight_class": "133",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "1:41",
-      "event": "vs. Northern Colorado"
+      "event": "vs. Northern Colorado",
+      "mv_impact": -2.59
     },
     {
       "date": "2025-01-05",
       "opponent_id": "31600766132",
+      "opponent_career_id": null,
       "opponent_name": "Jayden Carson",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 15,
       "opponent_weight": 125,
-      "opponent_rank": 187,
+      "opponent_rank": 152,
       "weight_class": "125",
       "result": "L",
       "method": "MD",
       "score": "13-4",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -6.25
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29681726132",
+      "opponent_career_id": null,
       "opponent_name": "Isaac Sheehan",
       "opponent_team": "Morgan State",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 75,
       "opponent_weight": 125,
-      "opponent_rank": 207,
+      "opponent_rank": 211,
       "weight_class": "125",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:10",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": 2.25
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29687880132",
+      "opponent_career_id": null,
       "opponent_name": "Gylon Sims",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 125,
-      "opponent_rank": 43,
+      "opponent_rank": 36,
       "weight_class": "125",
       "result": "L",
       "method": "MD",
       "score": "17-3",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -2.81
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34937106132",
+      "team": "Northern Colorado",
+      "team_slug": "northern_colorado",
+      "weight_class": 125,
+      "grade": "So.",
+      "current_rank": 98,
+      "record": "2-13"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29673787132",
+      "team": "Northern Colorado",
+      "team_slug": "northern_colorado",
+      "weight_class": 125,
+      "grade": "Fr.",
+      "current_rank": 144,
+      "record": "1-5"
+    }
+  ]
 }

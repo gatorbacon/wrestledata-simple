@@ -3,13 +3,18 @@
   "name": "Tommy Hagan",
   "team": "Missouri",
   "team_slug": "missouri",
-  "team_rank": 64,
+  "team_rank": 16,
   "weight_class": 184,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 165,
   "record": {
     "overall": "2-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,92 +29,151 @@
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.591,
+      "matches": 6,
+      "rank_weight": 101,
+      "rank_overall": 1059,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29684483132",
+      "opponent_rank": 102,
+      "opponent_name": "Deron Pulliam",
+      "method": "Dec 6-5"
+    },
+    "worst_loss": {
+      "opponent_id": "29687835132",
+      "opponent_rank": 75,
+      "opponent_name": "Daschle Lamer",
+      "method": "TF 16-0 3:33"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-09",
       "opponent_id": "29687835132",
+      "opponent_career_id": null,
       "opponent_name": "Daschle Lamer",
       "opponent_team": "Cal Poly",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 19,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 75,
       "weight_class": "184",
       "result": "L",
       "method": "TF",
       "score": "16-0",
       "duration": "3:33",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": -4.81
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29687518132",
+      "opponent_career_id": null,
       "opponent_name": "Brock DelSignore",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 15,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 58,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "8-4",
       "duration": "7:00",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": -2.4
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29684483132",
+      "opponent_career_id": null,
       "opponent_name": "Deron Pulliam",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 102,
       "weight_class": "184",
       "result": "W",
       "method": "DEC",
       "score": "6-5",
       "duration": "7:00",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": 2.72
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29682555132",
+      "opponent_career_id": null,
       "opponent_name": "James Rowley",
       "opponent_team": "Purdue",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 12,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 36,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": -1.52
     },
     {
       "date": "2024-10-25",
       "opponent_id": "29678028132",
+      "opponent_career_id": null,
       "opponent_name": "Owen Uppinghouse",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 225,
       "weight_class": "184",
       "result": "W",
       "method": "MD",
       "score": "11-2",
       "duration": "7:00",
-      "event": "vs. Missouri"
+      "event": "vs. Missouri",
+      "mv_impact": 1.24
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29678014132",
+      "team": "Missouri",
+      "team_slug": "missouri",
+      "weight_class": 184,
+      "grade": "",
+      "current_rank": 165,
+      "record": "2-3"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584023132",
+      "team": "Missouri",
+      "team_slug": "missouri",
+      "weight_class": 197,
+      "grade": "Redshirt Freshman",
+      "current_rank": 206,
+      "record": "0-1"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20131032132",
+      "team": "Missouri",
+      "team_slug": "missouri",
+      "weight_class": 197,
+      "grade": "Freshman",
+      "current_rank": 171,
+      "record": "5-9"
+    }
+  ]
 }

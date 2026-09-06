@@ -3,13 +3,18 @@
   "name": "Reagan McCullough",
   "team": "Bellarmine",
   "team_slug": "bellarmine",
-  "team_rank": 37,
+  "team_rank": 60,
   "weight_class": 285,
+  "grade": "Fr.",
+  "hometown": "Doylestown, PA",
+  "high_school": "Central Bucks High-East",
+  "photo_url": "https://athletics.bellarmine.edu/images/2024/9/20/McCullough_Reagan.png",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 216,
   "record": {
     "overall": "0-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,37 +24,73 @@
     "pd7": -15.0,
     "si_plus": 86.4,
     "df_plus": 87.7,
-    "apr_plus": 101.3,
+    "apr_plus": 101.1,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.33,
+      "matches": 1,
+      "rank_weight": 202,
+      "rank_overall": 2113,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29687861132",
+      "opponent_rank": 70,
+      "opponent_name": "Jonathan Chesser",
+      "method": "TF 15-0 0:00"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-07",
       "opponent_id": "29687861132",
+      "opponent_career_id": null,
       "opponent_name": "Jonathan Chesser",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 70,
       "weight_class": "285",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "0:00",
-      "event": "vs. The Citadel"
+      "event": "vs. The Citadel",
+      "mv_impact": -4.33
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34943859132",
+      "team": "Bellarmine",
+      "team_slug": "bellarmine",
+      "weight_class": 285,
+      "grade": "So.",
+      "current_rank": 229,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29680003132",
+      "team": "Bellarmine",
+      "team_slug": "bellarmine",
+      "weight_class": 285,
+      "grade": "Fr.",
+      "current_rank": 216,
+      "record": "0-1"
+    }
+  ]
 }

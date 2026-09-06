@@ -3,13 +3,18 @@
   "name": "Trason Oehme",
   "team": "Air Force",
   "team_slug": "air_force",
-  "team_rank": 34,
+  "team_rank": 58,
   "weight_class": 149,
+  "grade": "So.",
+  "hometown": "Brandon, SD",
+  "high_school": "Brandon Valley",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgoairforcefalcons.com%2Fimages%2F2024%2F8%2F27%2FTrason_Oehme_.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 99,
   "record": {
-    "overall": "3-1",
-    "vs_ranked": "0-0",
+    "overall": "2-1",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,82 +24,122 @@
     "pd7": -0.92,
     "si_plus": 85.6,
     "df_plus": 110.6,
-    "apr_plus": 95.9,
+    "apr_plus": 94.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.436,
+      "matches": 4,
+      "rank_weight": 117,
+      "rank_overall": 1006,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29721890132",
+      "opponent_rank": 200,
+      "opponent_name": "Ethan Freund",
+      "method": "TB-1 2-1"
+    },
+    "worst_loss": {
+      "opponent_id": "29721891132",
+      "opponent_rank": 72,
+      "opponent_name": "Lincoln Gregersen",
+      "method": "SV-1 4-1"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-16",
       "opponent_id": "29673244132",
+      "opponent_career_id": null,
       "opponent_name": "Brady Hankin",
       "opponent_team": "Northern Colorado",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 30,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 207,
       "weight_class": "149",
       "result": "W",
       "method": "INJ",
       "score": null,
       "duration": "0:00",
-      "event": "Rocky Mountain Collegiate Open"
+      "event": "Rocky Mountain Collegiate Open",
+      "mv_impact": 3.23
     },
     {
       "date": "2025-02-16",
       "opponent_id": "29721890132",
+      "opponent_career_id": null,
       "opponent_name": "Ethan Freund",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 200,
       "weight_class": "149",
       "result": "W",
       "method": "TB-1",
       "score": "2-1",
       "duration": "10:00",
-      "event": "Rocky Mountain Collegiate Open"
-    },
-    {
-      "date": "2025-02-16",
-      "opponent_id": "29688282132",
-      "opponent_name": "Antonio Avila",
-      "opponent_team": "Wyoming",
-      "opponent_team_rank": 79,
-      "opponent_weight": 149,
-      "opponent_rank": null,
-      "weight_class": "149",
-      "result": "W",
-      "method": "DEC",
-      "score": null,
-      "duration": "7:00",
-      "event": "Rocky Mountain Collegiate Open"
+      "event": "Rocky Mountain Collegiate Open",
+      "mv_impact": 0.37
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29721891132",
+      "opponent_career_id": null,
       "opponent_name": "Lincoln Gregersen",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 72,
       "weight_class": "141",
       "result": "L",
       "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
-      "event": "Mines Rookie Open"
+      "event": "Mines Rookie Open",
+      "mv_impact": -2.67
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34944180132",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 149,
+      "grade": "Jr.",
+      "current_rank": 224,
+      "record": "1-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29721857132",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 149,
+      "grade": "So.",
+      "current_rank": 99,
+      "record": "2-1"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24585344132",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 141,
+      "grade": "Fr.",
+      "current_rank": 71,
+      "record": "1-2"
+    }
+  ]
 }

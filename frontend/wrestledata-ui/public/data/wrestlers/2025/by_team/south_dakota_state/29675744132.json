@@ -3,15 +3,20 @@
   "name": "Burk Blasius",
   "team": "South Dakota State",
   "team_slug": "south_dakota_state",
-  "team_rank": 33,
+  "team_rank": 24,
   "weight_class": 184,
+  "grade": "Fr.",
+  "hometown": "Wall, S.D.",
+  "high_school": "Wall H.S.",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fsdstate.sidearmsports.com%2Fimages%2F2024%2F9%2F23%2F20240829-0285.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 61,
   "record": {
     "overall": "5-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "5-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 7.81,
@@ -24,152 +29,209 @@
     "bonus_rate": 0.6,
     "majors": 2,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.934,
+      "matches": 9,
+      "rank_weight": 113,
+      "rank_overall": 1181,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 5,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29679960132",
+      "opponent_rank": 125,
+      "opponent_name": "Keenan Wyatt",
+      "method": "Dec 5-2"
+    },
+    "worst_loss": {
+      "opponent_id": "29679146132",
+      "opponent_rank": 101,
+      "opponent_name": "Shay Addison",
+      "method": "Dec 8-1"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-30",
       "opponent_id": "29679939132",
+      "opponent_career_id": null,
       "opponent_name": "Sam Schroeder",
       "opponent_team": "Bellarmine",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 60,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 225,
       "weight_class": "184",
       "result": "W",
       "method": "DEC",
       "score": "6-5",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 0.16
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29679960132",
+      "opponent_career_id": null,
       "opponent_name": "Keenan Wyatt",
       "opponent_team": "Bellarmine",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 60,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 125,
       "weight_class": "184",
       "result": "W",
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 2.18
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29736174132",
+      "opponent_career_id": null,
       "opponent_name": "Angelo Ferrari",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 3,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 21,
       "weight_class": "184",
       "result": "L",
       "method": "MD",
       "score": "16-5",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -2.18
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29736101132",
+      "opponent_career_id": null,
       "opponent_name": "Aidan McCain",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 3,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 208,
       "weight_class": "184",
       "result": "W",
       "method": "MD",
       "score": "15-4",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 0.69
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29678436132",
+      "opponent_career_id": null,
       "opponent_name": "Jersey Robb",
       "opponent_team": "Oklahoma State",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 4,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 29,
       "weight_class": "184",
       "result": "L",
       "method": "TF",
       "score": "18-3",
       "duration": "4:41",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -3.08
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29721854132",
+      "opponent_career_id": null,
       "opponent_name": "Owen Heiser",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 164,
       "weight_class": "184",
       "result": "W",
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": 1.67
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29679146132",
+      "opponent_career_id": null,
       "opponent_name": "Shay Addison",
       "opponent_team": "Arizona State",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 27,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 101,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "8-1",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -3.32
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29673855132",
+      "opponent_career_id": null,
       "opponent_name": "Marco Christiansen",
       "opponent_team": "Nebraska",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 2,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 217,
       "weight_class": "184",
       "result": "W",
       "method": "TF",
       "score": "18-3",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": 1.47
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29687465132",
+      "opponent_career_id": null,
       "opponent_name": "Anders Thompson",
       "opponent_team": "Oklahoma",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 40,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 100,
       "weight_class": "184",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:37",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -5.99
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34943252132",
+      "team": "South Dakota State",
+      "team_slug": "south_dakota_state",
+      "weight_class": 184,
+      "grade": "R-Fr.",
+      "current_rank": 70,
+      "record": "7-5"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29675744132",
+      "team": "South Dakota State",
+      "team_slug": "south_dakota_state",
+      "weight_class": 184,
+      "grade": "Fr.",
+      "current_rank": 61,
+      "record": "5-4"
+    }
+  ]
 }

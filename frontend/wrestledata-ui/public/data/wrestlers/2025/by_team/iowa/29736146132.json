@@ -3,13 +3,18 @@
   "name": "Brady Benham",
   "team": "Iowa",
   "team_slug": "iowa",
-  "team_rank": 7,
+  "team_rank": 3,
   "weight_class": 165,
+  "grade": "Fr.",
+  "hometown": "Collinsville, Okla.",
+  "high_school": "Sperry",
+  "photo_url": "https://hawkeyesports.com/imgproxy/0kmV5flwzXFZURxHu1UTEtauGmG0Snxk8bKxIFvb9Ko/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2hhd2tleWVzcG9ydHMtcHJvZC8yMDI0LzA5L2Y1ODVjNWNhLTIwMjQwOTRfYmVuaGFtX2JyYWR5LmpwZw.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 94,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,62 +29,97 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.791,
+      "matches": 3,
+      "rank_weight": 119,
+      "rank_overall": 1132,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29679990132",
+      "opponent_rank": 114,
+      "opponent_name": "Cael Miller",
+      "method": "TF 20-4 6:26"
+    },
+    "worst_loss": {
+      "opponent_id": "29675646132",
+      "opponent_rank": 36,
+      "opponent_name": "Marcus Espinoza-Owens",
+      "method": "TF 19-3 5:28"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-30",
       "opponent_id": "29679990132",
+      "opponent_career_id": null,
       "opponent_name": "Cael Miller",
       "opponent_team": "Bellarmine",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 60,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 114,
       "weight_class": "165",
       "result": "W",
       "method": "TF",
       "score": "20-4",
       "duration": "6:26",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 4.09
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29675646132",
+      "opponent_career_id": null,
       "opponent_name": "Marcus Espinoza-Owens",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 24,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 36,
       "weight_class": "165",
       "result": "L",
       "method": "TF",
       "score": "19-3",
       "duration": "5:28",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -3.78
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29685286132",
+      "opponent_career_id": null,
       "opponent_name": "Dylan Elmore",
       "opponent_team": "Navy",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 28,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "weight_class": "165",
       "result": "L",
       "method": "MD",
       "score": "18-6",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -2.68
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29736146132",
+      "team": "Iowa",
+      "team_slug": "iowa",
+      "weight_class": 165,
+      "grade": "Fr.",
+      "current_rank": 94,
+      "record": "1-2"
+    }
+  ]
 }

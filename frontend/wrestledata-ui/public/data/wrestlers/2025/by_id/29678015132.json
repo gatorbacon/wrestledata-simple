@@ -3,15 +3,20 @@
   "name": "Drew Stanfield",
   "team": "Missouri",
   "team_slug": "missouri",
-  "team_rank": 64,
+  "team_rank": 16,
   "weight_class": 141,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 246,
   "record": {
     "overall": "0-6",
-    "vs_ranked": "0-1",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "0-6",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 1.2,
@@ -24,112 +29,153 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.936,
+      "matches": 7,
+      "rank_weight": 230,
+      "rank_overall": 2230,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 1,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
     "worst_loss": {
-      "opponent_id": "29677992132",
-      "opponent_rank": 134,
-      "opponent_name": "Trey Crawford",
-      "method": "Inj. 3:28"
+      "opponent_id": "29688258132",
+      "opponent_rank": 204,
+      "opponent_name": "Aidan Noonan",
+      "method": "TF 16-0 3:26"
     }
   },
   "match_list": [
     {
       "date": "2025-01-19",
       "opponent_id": "29680352132",
+      "opponent_career_id": null,
       "opponent_name": "Jacob Frost",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 7,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "3:40",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": -3.22
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29672447132",
+      "opponent_career_id": null,
       "opponent_name": "Carson Exferd",
       "opponent_team": "Wisconsin",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 33,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 128,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": -3.78
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29736102132",
+      "opponent_career_id": null,
       "opponent_name": "Jace Rhodes",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 3,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 52,
       "weight_class": "141",
       "result": "L",
       "method": "MD",
       "score": "10-2",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -3.37
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29688264132",
+      "opponent_career_id": null,
       "opponent_name": "Cole Brooks",
       "opponent_team": "Wyoming",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 35,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 63,
       "weight_class": "141",
       "result": "L",
       "method": "MD",
       "score": "12-3",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -4.15
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29688258132",
+      "opponent_career_id": null,
       "opponent_name": "Aidan Noonan",
       "opponent_team": "Wyoming",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 35,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 204,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "16-0",
       "duration": "3:26",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -7.33
     },
     {
       "date": "2024-10-25",
       "opponent_id": "29677992132",
+      "opponent_career_id": null,
       "opponent_name": "Trey Crawford",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 133,
-      "opponent_rank": 134,
+      "opponent_rank": 107,
       "weight_class": "133",
       "result": "L",
       "method": "INJ",
       "score": null,
       "duration": "3:28",
-      "event": "vs. Missouri"
+      "event": "vs. Missouri",
+      "mv_impact": -6.35
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29678015132",
+      "team": "Missouri",
+      "team_slug": "missouri",
+      "weight_class": 141,
+      "grade": "",
+      "current_rank": 246,
+      "record": "0-6"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584029132",
+      "team": "Missouri",
+      "team_slug": "missouri",
+      "weight_class": 133,
+      "grade": "Freshman",
+      "current_rank": 94,
+      "record": "2-5"
+    }
+  ]
 }

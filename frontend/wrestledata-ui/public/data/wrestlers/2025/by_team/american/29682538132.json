@@ -3,13 +3,18 @@
   "name": "Hunter Hohman",
   "team": "American",
   "team_slug": "american",
-  "team_rank": 35,
+  "team_rank": 59,
   "weight_class": 184,
+  "grade": "Fr.",
+  "hometown": "Grove City, Pa.",
+  "high_school": "Grove City Area",
+  "photo_url": "https://aueagles.com/images/2024/10/11/Hohman_Hunter_AU_Wrestling_MediaDay_Oct03240004.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 199,
   "record": {
     "overall": "0-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,47 +29,85 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.727,
+      "matches": 3,
+      "rank_weight": 158,
+      "rank_overall": 1742,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29678506132",
+      "opponent_rank": 44,
+      "opponent_name": "Branson John",
+      "method": "Dec 13-6"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-06",
       "opponent_id": "29685357132",
+      "opponent_career_id": null,
       "opponent_name": "Marcus Petite",
       "opponent_team": "Buffalo",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 63,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 34,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
-      "event": "vs. Buffalo"
+      "event": "vs. Buffalo",
+      "mv_impact": -1.39
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29678506132",
+      "opponent_career_id": null,
       "opponent_name": "Branson John",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 17,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 44,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "13-6",
       "duration": "7:00",
-      "event": "vs. Maryland"
+      "event": "vs. Maryland",
+      "mv_impact": -3.39
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34957115132",
+      "team": "American",
+      "team_slug": "american",
+      "weight_class": 174,
+      "grade": "So.",
+      "current_rank": 160,
+      "record": "9-18"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29682538132",
+      "team": "American",
+      "team_slug": "american",
+      "weight_class": 184,
+      "grade": "Fr.",
+      "current_rank": 199,
+      "record": "0-2"
+    }
+  ]
 }

@@ -3,13 +3,18 @@
   "name": "Tee Ward",
   "team": "Northern Illinois",
   "team_slug": "northern_illinois",
-  "team_rank": 23,
+  "team_rank": 49,
   "weight_class": 141,
+  "grade": "Fr.",
+  "hometown": "Freemont, Mich.",
+  "high_school": "Freemont",
+  "photo_url": "https://niuhuskies.com/images/2024/10/10/Ward-Tee_CygkQ.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 255,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,97 +24,146 @@
     "pd7": -16.01,
     "si_plus": 87.2,
     "df_plus": 82.3,
-    "apr_plus": 115.0,
+    "apr_plus": 114.7,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -2.795,
+      "matches": 5,
+      "rank_weight": 188,
+      "rank_overall": 1761,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29687032132",
+      "opponent_rank": 289,
+      "opponent_name": "Prestyn Parks",
+      "method": "Fall 5:29"
+    },
+    "worst_loss": {
+      "opponent_id": "29672447132",
+      "opponent_rank": 128,
+      "opponent_name": "Carson Exferd",
+      "method": "TF 18-3 7:00"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-01",
       "opponent_id": "29672447132",
+      "opponent_career_id": null,
       "opponent_name": "Carson Exferd",
       "opponent_team": "Wisconsin",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 33,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 128,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "18-3",
       "duration": "7:00",
-      "event": "Loras Open"
+      "event": "Loras Open",
+      "mv_impact": -5.78
     },
     {
       "date": "2024-12-19",
       "opponent_id": "29686999132",
+      "opponent_career_id": null,
       "opponent_name": "Jordan Decatur",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 85,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "20-3",
       "duration": "5:22",
-      "event": "vs. Northern Illinois"
+      "event": "vs. Northern Illinois",
+      "mv_impact": -4.61
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29685886132",
+      "opponent_career_id": null,
       "opponent_name": "Anthony Ferraro",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 53,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "5-0",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": -1.93
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29723893132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Tieffel",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 90,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "16-0",
       "duration": "4:53",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": -4.53
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29687032132",
+      "opponent_career_id": null,
       "opponent_name": "Prestyn Parks",
       "opponent_team": "Ohio",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 46,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 289,
       "weight_class": "141",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "5:29",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": 2.87
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34955420132",
+      "team": "Northern Illinois",
+      "team_slug": "northern_illinois",
+      "weight_class": 141,
+      "grade": "R-Fr.",
+      "current_rank": 265,
+      "record": "1-7"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29723457132",
+      "team": "Northern Illinois",
+      "team_slug": "northern_illinois",
+      "weight_class": 141,
+      "grade": "Fr.",
+      "current_rank": 255,
+      "record": "1-4"
+    }
+  ]
 }

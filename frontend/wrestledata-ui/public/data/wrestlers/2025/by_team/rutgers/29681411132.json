@@ -3,13 +3,18 @@
   "name": "Sebastiano Nini",
   "team": "Rutgers",
   "team_slug": "rutgers",
-  "team_rank": 13,
+  "team_rank": 31,
   "weight_class": 157,
+  "grade": "Jr.",
+  "hometown": "Allentown, N.J.",
+  "high_school": "Christian Brothers Academy",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fscarletknights.com%2Fimages%2F2024%2F9%2F30%2FNini_Sebastiano.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 307,
   "record": {
     "overall": "0-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,82 +24,154 @@
     "pd7": -8.33,
     "si_plus": 87.2,
     "df_plus": 93.5,
-    "apr_plus": 97.9,
+    "apr_plus": 98.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.906,
+      "matches": 4,
+      "rank_weight": 259,
+      "rank_overall": 2225,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29722713132",
+      "opponent_rank": 276,
+      "opponent_name": "Aboubakare Diaby",
+      "method": "Dec 11-8"
+    }
   },
   "match_list": [
     {
       "date": "2025-03-02",
       "opponent_id": "29722713132",
+      "opponent_career_id": null,
       "opponent_name": "Aboubakare Diaby",
       "opponent_team": "Drexel",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 67,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 276,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "11-8",
       "duration": "7:00",
-      "event": "Zingo Nationals (The Open)"
+      "event": "Zingo Nationals (The Open)",
+      "mv_impact": -5.33
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29680113132",
+      "opponent_career_id": null,
       "opponent_name": "Mark Metz",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 135,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "13-0",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -4.37
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29676692132",
+      "opponent_career_id": null,
       "opponent_name": "Eric Alderfer",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 56,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:19",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -5.04
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29676699132",
+      "opponent_career_id": null,
       "opponent_name": "Chase Burke",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 204,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "9-0",
       "duration": "7:00",
-      "event": "Shorty Hitchcock Memorial Open"
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": -4.88
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34945085132",
+      "team": "Rutgers",
+      "team_slug": "rutgers",
+      "weight_class": 157,
+      "grade": "Sr.",
+      "current_rank": 217,
+      "record": "1-4"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29681411132",
+      "team": "Rutgers",
+      "team_slug": "rutgers",
+      "weight_class": 157,
+      "grade": "Jr.",
+      "current_rank": 307,
+      "record": "0-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24582397132",
+      "team": "Rutgers",
+      "team_slug": "rutgers",
+      "weight_class": 149,
+      "grade": "So.",
+      "current_rank": 270,
+      "record": "3-10"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20130985132",
+      "team": "Rutgers",
+      "team_slug": "rutgers",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 260,
+      "record": "1-6"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16697776132",
+      "team": "Davidson",
+      "team_slug": "davidson",
+      "weight_class": 133,
+      "grade": "",
+      "current_rank": 190,
+      "record": "0-3"
+    }
+  ]
 }

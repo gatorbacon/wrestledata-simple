@@ -3,15 +3,20 @@
   "name": "Kalob Runyon",
   "team": "Northern Iowa",
   "team_slug": "northern_iowa",
-  "team_rank": 15,
+  "team_rank": 8,
   "weight_class": 197,
+  "grade": "R-Jr.",
+  "hometown": "Pleasant Hill, Iowa",
+  "high_school": "Southeast Polk HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 64,
   "record": {
     "overall": "4-3",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "4-3",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 6.07,
@@ -19,127 +24,210 @@
     "pd7": 1.59,
     "si_plus": 103.9,
     "df_plus": 111.2,
-    "apr_plus": 98.9,
+    "apr_plus": 99.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.25,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.14,
+      "matches": 7,
+      "rank_weight": 45,
+      "rank_overall": 469,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 3,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29681382132",
+      "opponent_rank": 40,
+      "opponent_name": "Sawyer Bartelt",
+      "method": "Dec 5-4"
+    },
+    "worst_loss": {
+      "opponent_id": "29675650132",
+      "opponent_rank": 56,
+      "opponent_name": "Thomas Dineen",
+      "method": "Fall 7:00"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-30",
       "opponent_id": "29679974132",
+      "opponent_career_id": null,
       "opponent_name": "Andrew Liber",
       "opponent_team": "Bellarmine",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 60,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 60,
       "weight_class": "197",
       "result": "W",
       "method": "MD",
       "score": "11-0",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 4.01
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29681382132",
+      "opponent_career_id": null,
       "opponent_name": "Sawyer Bartelt",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "weight_class": "197",
       "result": "W",
       "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 4.18
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29680357132",
+      "opponent_career_id": null,
       "opponent_name": "Nathan Schon",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 55,
       "weight_class": "197",
       "result": "W",
       "method": "DEC",
       "score": "11-7",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 3.27
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29734773132",
+      "opponent_career_id": null,
       "opponent_name": "Isaiah Salazar",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 7,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 13,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "10-4",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -1.24
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29675650132",
+      "opponent_career_id": null,
       "opponent_name": "Thomas Dineen",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 24,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 56,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -5.65
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29681382132",
+      "opponent_career_id": null,
       "opponent_name": "Sawyer Bartelt",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "weight_class": "197",
       "result": "W",
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "Grand View Open"
+      "event": "Grand View Open",
+      "mv_impact": 4.18
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29687603132",
+      "opponent_career_id": null,
       "opponent_name": "Wyatt Voelker",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 8,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 10,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "Grand View Open"
+      "event": "Grand View Open",
+      "mv_impact": -0.78
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34964071132",
+      "team": "Northern Iowa",
+      "team_slug": "northern_iowa",
+      "weight_class": 197,
+      "grade": "R-Sr.",
+      "current_rank": 72,
+      "record": "2-1"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29687602132",
+      "team": "Northern Iowa",
+      "team_slug": "northern_iowa",
+      "weight_class": 197,
+      "grade": "R-Jr.",
+      "current_rank": 64,
+      "record": "4-3"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24603323132",
+      "team": "Northern Iowa",
+      "team_slug": "northern_iowa",
+      "weight_class": 197,
+      "grade": "R-So.",
+      "current_rank": 105,
+      "record": "3-5"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20126420132",
+      "team": "Northern Iowa",
+      "team_slug": "northern_iowa",
+      "weight_class": 197,
+      "grade": "R-Fr.",
+      "current_rank": 74,
+      "record": "9-4"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16726544132",
+      "team": "Northern Iowa",
+      "team_slug": "northern_iowa",
+      "weight_class": 197,
+      "grade": "Fr.",
+      "current_rank": 142,
+      "record": "2-5"
+    }
+  ]
 }

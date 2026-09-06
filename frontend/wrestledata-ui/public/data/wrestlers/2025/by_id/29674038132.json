@@ -3,15 +3,20 @@
   "name": "Ryan Jack",
   "team": "NC State",
   "team_slug": "nc_state",
-  "team_rank": 3,
+  "team_rank": 14,
   "weight_class": 141,
+  "grade": "Sr.",
+  "hometown": "Danbury, Conn.",
+  "high_school": "Danbury High School",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgopack.com%2Fimages%2F2024%2F8%2F27%2FRyanJackHS.png&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 84,
   "record": {
     "overall": "4-2",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "4-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 13.84,
@@ -19,112 +24,203 @@
     "pd7": 8.1,
     "si_plus": 127.4,
     "df_plus": 108.4,
-    "apr_plus": 109.3,
+    "apr_plus": 109.2,
     "pin_rate": 0.25,
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 2,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 3.035,
+      "matches": 7,
+      "rank_weight": 12,
+      "rank_overall": 115,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29676280132",
+      "opponent_rank": 35,
+      "opponent_name": "Andre Gonzales",
+      "method": "MD 14-4"
+    },
+    "worst_loss": {
+      "opponent_id": "29672732132",
+      "opponent_rank": 28,
+      "opponent_name": "Shannon Hanna",
+      "method": "TB-2 (RT) 6-6"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29721902132",
+      "opponent_career_id": null,
       "opponent_name": "Carter Nogle",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 70,
       "weight_class": "141",
       "result": "W",
       "method": "TF",
       "score": "23-8",
       "duration": "5:44",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": 5.52
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29672732132",
+      "opponent_career_id": null,
       "opponent_name": "Shannon Hanna",
       "opponent_team": "Campbell",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 55,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 28,
       "weight_class": "141",
       "result": "L",
       "method": "TB-2",
       "score": "6-6",
       "duration": "10:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -1.65
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29685069132",
+      "opponent_career_id": null,
       "opponent_name": "Landen Duncan",
       "opponent_team": "Cleveland State",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 56,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 129,
       "weight_class": "141",
       "result": "W",
       "method": "TF",
       "score": "21-5",
       "duration": "5:13",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": 3.69
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29676280132",
+      "opponent_career_id": null,
       "opponent_name": "Andre Gonzales",
       "opponent_team": "Ohio State",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 5,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 35,
       "weight_class": "141",
       "result": "W",
       "method": "MD",
       "score": "14-4",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": 5.73
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29684080132",
+      "opponent_career_id": null,
       "opponent_name": "CJ Composto",
       "opponent_team": "Pennsylvania",
-      "opponent_team_rank": 24,
+      "opponent_team_rank": 20,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 6,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -0.47
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29681410132",
+      "opponent_career_id": null,
       "opponent_name": "Max Hermes",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 31,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 179,
       "weight_class": "141",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:51",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 4.21
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34935687132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 141,
+      "grade": "6th",
+      "current_rank": 18,
+      "record": "15-9"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29674038132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 141,
+      "grade": "Sr.",
+      "current_rank": 84,
+      "record": "4-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584076132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 141,
+      "grade": "Jr.",
+      "current_rank": 5,
+      "record": "22-5"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20130884132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 141,
+      "grade": "So.",
+      "current_rank": 7,
+      "record": "21-5"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16701884132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 141,
+      "grade": "Fr.",
+      "current_rank": 18,
+      "record": "15-9"
+    },
+    {
+      "season": 2021,
+      "wrestler_id": "14865894132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 133,
+      "grade": "Fr.",
+      "current_rank": 38,
+      "record": "7-2"
+    }
+  ]
 }

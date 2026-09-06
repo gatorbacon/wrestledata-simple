@@ -3,15 +3,20 @@
   "name": "Carter McCallister",
   "team": "Missouri",
   "team_slug": "missouri",
-  "team_rank": 64,
+  "team_rank": 16,
   "weight_class": 149,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 196,
   "record": {
     "overall": "2-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 8.55,
@@ -19,75 +24,99 @@
     "pd7": -0.77,
     "si_plus": 109.4,
     "df_plus": 97.2,
-    "apr_plus": 113.5,
+    "apr_plus": 113.3,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.775,
+      "matches": 6,
+      "rank_weight": 166,
+      "rank_overall": 1454,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29678008132",
+      "opponent_rank": 51,
+      "opponent_name": "Zeke Seltzer",
+      "method": "Dec 12-11"
+    },
+    "worst_loss": {
+      "opponent_id": "29682548132",
+      "opponent_rank": 239,
+      "opponent_name": "Jaden Reynolds",
+      "method": "M. For."
+    }
   },
   "match_list": [
     {
       "date": "2024-11-09",
       "opponent_id": "29686933132",
+      "opponent_career_id": null,
       "opponent_name": "Brennan Van Hoecke",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 15,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 77,
       "weight_class": "149",
       "result": "L",
       "method": "INJ",
       "score": null,
       "duration": "5:00",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": -5.22
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29687837132",
+      "opponent_career_id": null,
       "opponent_name": "Chance Lamer",
       "opponent_team": "Cal Poly",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 19,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 13,
       "weight_class": "149",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:59",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": -3.93
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29682548132",
+      "opponent_career_id": null,
       "opponent_name": "Jaden Reynolds",
       "opponent_team": "Purdue",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 12,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 239,
       "weight_class": "149",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "5:41",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": 3.4
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29682548132",
+      "opponent_career_id": null,
       "opponent_name": "Jaden Reynolds",
       "opponent_team": "Purdue",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 12,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 239,
       "weight_class": "149",
       "result": "L",
       "method": "MFF",
@@ -98,33 +127,69 @@
     {
       "date": "2024-10-25",
       "opponent_id": "29677996132",
+      "opponent_career_id": null,
       "opponent_name": "Logan Gioffre",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 91,
       "weight_class": "149",
       "result": "L",
       "method": "SV-1",
       "score": "9-6",
       "duration": "8:15",
-      "event": "vs. Missouri"
+      "event": "vs. Missouri",
+      "mv_impact": -3.2
     },
     {
       "date": "2024-10-25",
       "opponent_id": "29678008132",
+      "opponent_career_id": null,
       "opponent_name": "Zeke Seltzer",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 51,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "12-11",
       "duration": "7:00",
-      "event": "vs. Missouri"
+      "event": "vs. Missouri",
+      "mv_impact": 3.52
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34949775132",
+      "team": "Little Rock",
+      "team_slug": "little_rock",
+      "weight_class": 149,
+      "grade": "FRESHMAN",
+      "current_rank": 248,
+      "record": "5-7"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29678017132",
+      "team": "Missouri",
+      "team_slug": "missouri",
+      "weight_class": 149,
+      "grade": "",
+      "current_rank": 196,
+      "record": "2-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584031132",
+      "team": "Missouri",
+      "team_slug": "missouri",
+      "weight_class": 149,
+      "grade": "Freshman",
+      "current_rank": 95,
+      "record": "5-4"
+    }
+  ]
 }

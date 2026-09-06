@@ -3,13 +3,18 @@
   "name": "Luke Leclerc",
   "team": "Bellarmine",
   "team_slug": "bellarmine",
-  "team_rank": 37,
+  "team_rank": 60,
   "weight_class": 157,
+  "grade": "R-So.",
+  "hometown": "Plainfield, IN",
+  "high_school": "Plainfield",
+  "photo_url": "https://athletics.bellarmine.edu/images/2024/9/20/LeClerc_Luke.png",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 292,
   "record": {
     "overall": "0-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,77 +29,139 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.351,
+      "matches": 4,
+      "rank_weight": 264,
+      "rank_overall": 2283,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29687007132",
+      "opponent_rank": 283,
+      "opponent_name": "Charles Spencer",
+      "method": "Dec 9-6"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-30",
       "opponent_id": "29676072132",
+      "opponent_career_id": null,
       "opponent_name": "Laird Root",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 74,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "17-1",
       "duration": "5:36",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -4.64
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29685209132",
+      "opponent_career_id": null,
       "opponent_name": "Charlie Evans",
       "opponent_team": "Navy",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 28,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 157,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "16-1",
       "duration": "3:30",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -6.06
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29687007132",
+      "opponent_career_id": null,
       "opponent_name": "Charles Spencer",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 283,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "9-6",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": -5.42
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29685064132",
+      "opponent_career_id": null,
       "opponent_name": "Nick Abounader",
       "opponent_team": "Cleveland State",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 56,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 227,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": -5.28
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34943828132",
+      "team": "Bellarmine",
+      "team_slug": "bellarmine",
+      "weight_class": 165,
+      "grade": "Sr.",
+      "current_rank": 204,
+      "record": "1-7"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29679954132",
+      "team": "Bellarmine",
+      "team_slug": "bellarmine",
+      "weight_class": 157,
+      "grade": "R-So.",
+      "current_rank": 292,
+      "record": "0-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24587976132",
+      "team": "Bellarmine",
+      "team_slug": "bellarmine",
+      "weight_class": 174,
+      "grade": "R-Fr.",
+      "current_rank": 275,
+      "record": "0-5"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20127339132",
+      "team": "Bellarmine",
+      "team_slug": "bellarmine",
+      "weight_class": 197,
+      "grade": "Fr.",
+      "current_rank": 162,
+      "record": "0-1"
+    }
+  ]
 }

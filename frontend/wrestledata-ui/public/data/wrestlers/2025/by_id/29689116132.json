@@ -3,13 +3,18 @@
   "name": "Tyler O`Boyle",
   "team": "Duke",
   "team_slug": "duke",
-  "team_rank": 53,
+  "team_rank": 68,
   "weight_class": 285,
+  "grade": "Jr.",
+  "hometown": "Virginia Beach, Va.",
+  "high_school": "Norfolk Academy",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgoduke.com%2Fimages%2F2025%2F10%2F24%2FO_Boyle-Tyler-HS.jpg&width=603&height=803&type=webp",
+  "previous_school": "Previous School: Franklin & Marshall College",
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 280,
   "record": {
     "overall": "0-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,92 +29,166 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.276,
+      "matches": 5,
+      "rank_weight": 218,
+      "rank_overall": 2361,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29672993132",
+      "opponent_rank": 275,
+      "opponent_name": "Collin French",
+      "method": "Fall 2:02"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-07",
       "opponent_id": "29731828132",
+      "opponent_career_id": null,
       "opponent_name": "Gabe Christenson",
       "opponent_team": "Virginia",
-      "opponent_team_rank": 78,
+      "opponent_team_rank": 42,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 88,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:11",
-      "event": "vs. Virginia"
+      "event": "vs. Virginia",
+      "mv_impact": -6.63
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29678510132",
+      "opponent_career_id": null,
       "opponent_name": "Oscar Williams",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 17,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 118,
       "weight_class": "285",
       "result": "L",
       "method": "TF",
       "score": "18-1",
       "duration": "4:11",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -5.54
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29672993132",
+      "opponent_career_id": null,
       "opponent_name": "Collin French",
       "opponent_team": "Rider",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 34,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 275,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:02",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -8.36
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29688539132",
+      "opponent_career_id": null,
       "opponent_name": "Christian Bell",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 187,
       "weight_class": "285",
       "result": "L",
       "method": "MD",
       "score": "16-6",
       "duration": "7:00",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -5.42
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29687868132",
+      "opponent_career_id": null,
       "opponent_name": "Adam Ortega",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 109,
       "weight_class": "285",
       "result": "L",
       "method": "TF",
       "score": "18-0",
       "duration": "4:17",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -5.43
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34950419132",
+      "team": "Duke",
+      "team_slug": "duke",
+      "weight_class": 285,
+      "grade": "Gr.",
+      "current_rank": 124,
+      "record": "1-1"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29689116132",
+      "team": "Duke",
+      "team_slug": "duke",
+      "weight_class": 285,
+      "grade": "Jr.",
+      "current_rank": 280,
+      "record": "0-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24579704132",
+      "team": "Franklin & Marshall",
+      "team_slug": "franklin__marshall",
+      "weight_class": 285,
+      "grade": "Jr.",
+      "current_rank": 287,
+      "record": "0-10"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20122111132",
+      "team": "Franklin & Marshall",
+      "team_slug": "franklin__marshall",
+      "weight_class": 285,
+      "grade": "So.",
+      "current_rank": 244,
+      "record": "1-2"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "17966681132",
+      "team": "Franklin & Marshall",
+      "team_slug": "franklin__marshall",
+      "weight_class": 285,
+      "grade": "Fy.",
+      "current_rank": 135,
+      "record": "0-0"
+    }
+  ]
 }

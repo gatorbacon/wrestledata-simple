@@ -3,13 +3,18 @@
   "name": "Porter Matecki",
   "team": "SIU Edwardsville",
   "team_slug": "siu_edwardsville",
-  "team_rank": 73,
+  "team_rank": 77,
   "weight_class": 141,
+  "grade": "Fr.",
+  "hometown": "Imperial, Mo.",
+  "high_school": null,
+  "photo_url": "https://siuecougars.com/images/2024/9/25/24396-123portermatecki.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 51,
   "record": {
     "overall": "1-1",
-    "vs_ranked": "1-0",
+    "vs_ranked": "1-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,57 +24,95 @@
     "pd7": -6.5,
     "si_plus": 93.9,
     "df_plus": 104.4,
-    "apr_plus": 109.1,
+    "apr_plus": 108.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.051,
+      "matches": 3,
+      "rank_weight": 83,
+      "rank_overall": 820,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29686328132",
-      "opponent_rank": 151,
+      "opponent_rank": 174,
       "opponent_name": "Cody Phelps",
       "method": "Dec 4-3"
     },
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29723345132",
+      "opponent_rank": 60,
+      "opponent_name": "Jacob Brya",
+      "method": "MD 14-0"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-22",
       "opponent_id": "29723345132",
+      "opponent_career_id": null,
       "opponent_name": "Jacob Brya",
       "opponent_team": "Northern Illinois",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 49,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 60,
       "weight_class": "141",
       "result": "L",
       "method": "MD",
       "score": "14-0",
       "duration": "7:00",
-      "event": "vs. SIU Edwardsville"
+      "event": "vs. SIU Edwardsville",
+      "mv_impact": -2.9
     },
     {
       "date": "2025-02-09",
       "opponent_id": "29686328132",
+      "opponent_career_id": null,
       "opponent_name": "Cody Phelps",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 133,
-      "opponent_rank": 151,
+      "opponent_rank": 174,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "Greyhound Open"
+      "event": "Greyhound Open",
+      "mv_impact": 1.53
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34941559132",
+      "team": "SIU Edwardsville",
+      "team_slug": "siu_edwardsville",
+      "weight_class": 133,
+      "grade": "R-Fr.",
+      "current_rank": 166,
+      "record": "5-5"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29684515132",
+      "team": "SIU Edwardsville",
+      "team_slug": "siu_edwardsville",
+      "weight_class": 141,
+      "grade": "Fr.",
+      "current_rank": 51,
+      "record": "1-1"
+    }
+  ]
 }

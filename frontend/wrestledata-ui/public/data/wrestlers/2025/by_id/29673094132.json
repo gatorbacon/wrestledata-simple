@@ -3,13 +3,18 @@
   "name": "Chris Arciuolo",
   "team": "Franklin & Marshall",
   "team_slug": "franklin__marshall",
-  "team_rank": 55,
+  "team_rank": 70,
   "weight_class": 157,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 299,
   "record": {
     "overall": "1-6",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-6",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,100 +29,128 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.781,
+      "matches": 7,
+      "rank_weight": 257,
+      "rank_overall": 2205,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29684779132",
+      "opponent_rank": 126,
+      "opponent_name": "Sam Hillegas",
+      "method": "M. For."
+    },
+    "worst_loss": {
+      "opponent_id": "29722713132",
+      "opponent_rank": 276,
+      "opponent_name": "Aboubakare Diaby",
+      "method": "Dec 6-2"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29685293132",
+      "opponent_career_id": null,
       "opponent_name": "Cooper Rathburn",
       "opponent_team": "Navy",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 28,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 215,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -4.83
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29722761132",
+      "opponent_career_id": null,
       "opponent_name": "Jayden Iznaga",
       "opponent_team": "Drexel",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 67,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 247,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "6-0",
       "duration": "7:00",
-      "event": "Sheridan invite"
+      "event": "Sheridan invite",
+      "mv_impact": -5.21
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29721378132",
+      "opponent_career_id": null,
       "opponent_name": "Griffin Gonzalez",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 11,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 86,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "22-6",
       "duration": "6:05",
-      "event": "Sheridan invite"
+      "event": "Sheridan invite",
+      "mv_impact": -4.43
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29722713132",
+      "opponent_career_id": null,
       "opponent_name": "Aboubakare Diaby",
       "opponent_team": "Drexel",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 67,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 276,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "6-2",
       "duration": "7:00",
-      "event": "Shorty Hitchcock Memorial Open"
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": -5.33
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29684769132",
+      "opponent_career_id": null,
       "opponent_name": "Michael Dolan",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 74,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "9-3",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -3.05
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29684779132",
+      "opponent_career_id": null,
       "opponent_name": "Sam Hillegas",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 126,
       "weight_class": "157",
       "result": "W",
       "method": "MFF",
@@ -128,18 +161,52 @@
     {
       "date": "2024-11-02",
       "opponent_id": "29672135132",
+      "opponent_career_id": null,
       "opponent_name": "Luke Robie",
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 6,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 235,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:55",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -7.57
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29673094132",
+      "team": "Franklin & Marshall",
+      "team_slug": "franklin__marshall",
+      "weight_class": 157,
+      "grade": "",
+      "current_rank": 299,
+      "record": "1-6"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24579706132",
+      "team": "Franklin & Marshall",
+      "team_slug": "franklin__marshall",
+      "weight_class": 157,
+      "grade": "So.",
+      "current_rank": 299,
+      "record": "0-12"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20122144132",
+      "team": "Franklin & Marshall",
+      "team_slug": "franklin__marshall",
+      "weight_class": 149,
+      "grade": "Fy.",
+      "current_rank": 198,
+      "record": "1-2"
+    }
+  ]
 }

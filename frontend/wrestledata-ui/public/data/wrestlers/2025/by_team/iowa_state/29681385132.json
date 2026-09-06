@@ -3,15 +3,20 @@
   "name": "CJ Carter",
   "team": "Iowa State",
   "team_slug": "iowa_state",
-  "team_rank": 17,
+  "team_rank": 26,
   "weight_class": 285,
+  "grade": "So.",
+  "hometown": "Glenwood, Iowa",
+  "high_school": "Glenwood",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fisuni.sidearmsports.com%2Fimages%2F2024%2F9%2F19%2F_0036_Carter__CJ_24-25.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 83,
   "record": {
     "overall": "3-4",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "3-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 4.4,
@@ -19,127 +24,180 @@
     "pd7": 1.0,
     "si_plus": 96.2,
     "df_plus": 109.6,
-    "apr_plus": 108.4,
+    "apr_plus": 108.7,
     "pin_rate": 0.333,
     "bonus_rate": 0.667,
     "majors": 1,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -0.128,
+      "matches": 7,
+      "rank_weight": 85,
+      "rank_overall": 886,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29687667132",
+      "opponent_rank": 79,
+      "opponent_name": "Grant Stromberg",
+      "method": "Dec 7-3"
+    },
+    "worst_loss": {
+      "opponent_id": "29687667132",
+      "opponent_rank": 79,
+      "opponent_name": "Grant Stromberg",
+      "method": "SV-1 (Fall) 7:06"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-19",
       "opponent_id": "29678018132",
+      "opponent_career_id": null,
       "opponent_name": "Jarrett Stoner",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 31,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "3-1",
       "duration": "7:00",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": -2.02
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29687667132",
+      "opponent_career_id": null,
       "opponent_name": "Grant Stromberg",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 8,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 79,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "7:06",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": -6.04
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29736110132",
+      "opponent_career_id": null,
       "opponent_name": "Ben Kueter",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 3,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 8,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -1.39
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29687597132",
+      "opponent_career_id": null,
       "opponent_name": "Adam Ahrendsen",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 8,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 91,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:06",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 5.41
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29681389132",
+      "opponent_career_id": null,
       "opponent_name": "Daniel Herrera",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 28,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -1.65
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29687667132",
+      "opponent_career_id": null,
       "opponent_name": "Grant Stromberg",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 8,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 79,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "7-3",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 2.96
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29688265132",
+      "opponent_career_id": null,
       "opponent_name": "Lane Catlin",
       "opponent_team": "Wyoming",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 35,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 192,
       "weight_class": "285",
       "result": "W",
       "method": "MD",
       "score": "11-2",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 1.85
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34940720132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 197,
+      "grade": "Jr.",
+      "current_rank": 54,
+      "record": "5-4"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29681385132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 285,
+      "grade": "So.",
+      "current_rank": 83,
+      "record": "3-4"
+    }
+  ]
 }

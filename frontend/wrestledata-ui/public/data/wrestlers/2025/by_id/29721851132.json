@@ -3,13 +3,18 @@
   "name": "Joshua Cordio",
   "team": "Air Force",
   "team_slug": "air_force",
-  "team_rank": 34,
+  "team_rank": 58,
   "weight_class": 184,
+  "grade": "So.",
+  "hometown": "Lancaster, MA",
+  "high_school": "Wyoming Seminary",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgoairforcefalcons.com%2Fimages%2F2024%2F8%2F27%2FJosh_Cordio_.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 124,
   "record": {
     "overall": "3-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -18,121 +23,151 @@
     "pa7": 5.0,
     "pd7": -1.0,
     "si_plus": 86.4,
-    "df_plus": 106.2,
-    "apr_plus": 104.5,
+    "df_plus": 106.1,
+    "apr_plus": 104.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.664,
+      "matches": 8,
+      "rank_weight": 130,
+      "rank_overall": 1418,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29721854132",
+      "opponent_rank": 164,
+      "opponent_name": "Owen Heiser",
+      "method": "Dec 5-4"
+    },
+    "worst_loss": {
+      "opponent_id": "29727175132",
+      "opponent_rank": 195,
+      "opponent_name": "Alex Hopper",
+      "method": "Def."
+    }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29673114132",
+      "opponent_career_id": null,
       "opponent_name": "Pantaleo Varga",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 243,
       "weight_class": "184",
       "result": "W",
       "method": "DEC",
       "score": "6-0",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -0.27
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29722732132",
+      "opponent_career_id": null,
       "opponent_name": "George Rhodes",
       "opponent_team": "Drexel",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 67,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 104,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "10-5",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -3.78
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29678439132",
+      "opponent_career_id": null,
       "opponent_name": "Brayden Thompson",
       "opponent_team": "Oklahoma State",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 4,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 53,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "6-2",
       "duration": "7:00",
-      "event": "Bob Smith Open"
+      "event": "Bob Smith Open",
+      "mv_impact": -2.3
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29721854132",
+      "opponent_career_id": null,
       "opponent_name": "Owen Heiser",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 164,
       "weight_class": "184",
       "result": "W",
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "Bob Smith Open"
+      "event": "Bob Smith Open",
+      "mv_impact": 0.67
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29681457132",
+      "opponent_career_id": null,
       "opponent_name": "Riley Hackworth",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 170,
       "weight_class": "174",
       "result": "W",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": 1.55
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29689054132",
+      "opponent_career_id": null,
       "opponent_name": "Gaetano Console",
       "opponent_team": "Duke",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 68,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 194,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -5.36
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29727175132",
+      "opponent_career_id": null,
       "opponent_name": "Alex Hopper",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 195,
       "weight_class": "174",
       "result": "L",
       "method": "DFLT",
@@ -141,5 +176,37 @@
       "event": "Battle at the Citadel"
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34944174132",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 184,
+      "grade": "Jr.",
+      "current_rank": 84,
+      "record": "3-3"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29721851132",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 184,
+      "grade": "So.",
+      "current_rank": 124,
+      "record": "3-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24585337132",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 184,
+      "grade": "Fr.",
+      "current_rank": 80,
+      "record": "5-5"
+    }
+  ]
 }

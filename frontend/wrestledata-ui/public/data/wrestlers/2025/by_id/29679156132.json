@@ -3,53 +3,94 @@
   "name": "Phillip Chobot",
   "team": "Arizona State",
   "team_slug": "arizona_state",
-  "team_rank": 25,
+  "team_rank": 27,
   "weight_class": 285,
+  "grade": "Sophomore",
+  "hometown": "Port Orchard, Wash.",
+  "high_school": "South Kitsap",
+  "photo_url": "https://thesundevils.com/imgproxy/34NJIZI0YZNUlUCpih8qpuEPIUMqMuVkyqcbEoDcIXQ/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3RoZXN1bmRldmlscy1jb20tcHJvZC8yMDI1LzA1LzEzL0xabWFVQUI0WFppMTVzd2k3d1RUY3ZNTHFFbkkycUN5RHV6aG5YWWoud2VicA.webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 208,
   "record": {
     "overall": "0-1",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "0-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 12.09,
     "pa7": 25.0,
     "pd7": -12.91,
     "si_plus": 125.8,
-    "df_plus": 69.5,
+    "df_plus": 69.6,
     "apr_plus": 99.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.293,
+      "matches": 1,
+      "rank_weight": 149,
+      "rank_overall": 1621,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
-    "top10_losses": 0,
+    "top10_losses": 1,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29679140132",
+      "opponent_rank": 5,
+      "opponent_name": "Cohlton Schultz",
+      "method": "TF 19-4 2:19"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-01",
       "opponent_id": "29679140132",
+      "opponent_career_id": null,
       "opponent_name": "Cohlton Schultz",
       "opponent_team": "Arizona State",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 27,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 5,
       "weight_class": "285",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "2:19",
-      "event": "Maroon and Gold"
+      "event": "Maroon and Gold",
+      "mv_impact": -2.29
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29679156132",
+      "team": "Arizona State",
+      "team_slug": "arizona_state",
+      "weight_class": 285,
+      "grade": "Sophomore",
+      "current_rank": 208,
+      "record": "0-1"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24586105132",
+      "team": "Arizona State",
+      "team_slug": "arizona_state",
+      "weight_class": 285,
+      "grade": "Freshman",
+      "current_rank": 134,
+      "record": "0-0"
+    }
+  ]
 }

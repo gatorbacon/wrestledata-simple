@@ -3,13 +3,18 @@
   "name": "Sean Walker",
   "team": "Bucknell",
   "team_slug": "bucknell",
-  "team_rank": 41,
+  "team_rank": 43,
   "weight_class": 157,
+  "grade": "Fr.",
+  "hometown": "Ringwood, N.J.",
+  "high_school": "Lakeland",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fbucknellbison.com%2Fimages%2F2024%2F10%2F22%2Fwalker_sean_web.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 295,
   "record": {
     "overall": "1-7",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-7",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,142 +24,197 @@
     "pd7": -18.14,
     "si_plus": 90.2,
     "df_plus": 77.0,
-    "apr_plus": 106.9,
+    "apr_plus": 106.8,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -4.573,
+      "matches": 11,
+      "rank_weight": 254,
+      "rank_overall": 2164,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29685878132",
+      "opponent_rank": 285,
+      "opponent_name": "Gannon Jaquay",
+      "method": "Fall 4:32"
+    },
+    "worst_loss": {
+      "opponent_id": "29685268132",
+      "opponent_rank": 278,
+      "opponent_name": "Devon Deem",
+      "method": "Fall 1:55"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-16",
       "opponent_id": "29679406132",
+      "opponent_career_id": null,
       "opponent_name": "Nicholas Stampoulos",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 30,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:06",
-      "event": "Mat-Town Open II"
+      "event": "Mat-Town Open II",
+      "mv_impact": -4.66
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29678501132",
+      "opponent_career_id": null,
       "opponent_name": "AJ Rodrigues",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 17,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 82,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:19",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": -5.69
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29684849132",
+      "opponent_career_id": null,
       "opponent_name": "Terry Langley",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 120,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "10-0",
       "duration": "7:00",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": -3.91
     },
     {
       "date": "2025-02-01",
       "opponent_id": "29685878132",
+      "opponent_career_id": null,
       "opponent_name": "Gannon Jaquay",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 285,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:32",
-      "event": "Edinboro Open"
+      "event": "Edinboro Open",
+      "mv_impact": 3.47
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29672406132",
+      "opponent_career_id": null,
       "opponent_name": "Cale Anderson",
       "opponent_team": "Wisconsin",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 33,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 130,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Wisconsin"
+      "event": "vs. Wisconsin",
+      "mv_impact": -6.85
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29686071132",
+      "opponent_career_id": null,
       "opponent_name": "Robert Gaylord",
       "opponent_team": "Ohio",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 46,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 108,
       "weight_class": "165",
       "result": "L",
       "method": "TF",
       "score": "19-3",
       "duration": "5:18",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": -5.17
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29681467132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler Lillard",
       "opponent_team": "Indiana",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 36,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 27,
       "weight_class": "165",
       "result": "L",
       "method": "TF",
       "score": "16-1",
       "duration": "4:19",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": -3.75
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29685268132",
+      "opponent_career_id": null,
       "opponent_name": "Devon Deem",
       "opponent_team": "Navy",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 28,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 278,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:55",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -7.98
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34954166132",
+      "team": "Bucknell",
+      "team_slug": "bucknell",
+      "weight_class": 165,
+      "grade": "So.",
+      "current_rank": 197,
+      "record": "1-7"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29683866132",
+      "team": "Bucknell",
+      "team_slug": "bucknell",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 295,
+      "record": "1-7"
+    }
+  ]
 }

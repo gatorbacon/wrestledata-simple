@@ -3,13 +3,18 @@
   "name": "Levi Kovacs",
   "team": "Utah Valley",
   "team_slug": "utah_valley",
-  "team_rank": 76,
+  "team_rank": 29,
   "weight_class": 197,
+  "grade": "R-Fr.",
+  "hometown": "Maple Valley, Wash.",
+  "high_school": "Tahoma HS",
+  "photo_url": "https://gouvu.com/images/2024/10/28/Levi_Kovacs.png",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 148,
   "record": {
     "overall": "2-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,97 +24,156 @@
     "pd7": -3.25,
     "si_plus": 94.7,
     "df_plus": 97.3,
-    "apr_plus": 94.0,
+    "apr_plus": 93.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.982,
+      "matches": 5,
+      "rank_weight": 156,
+      "rank_overall": 1807,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29681179132",
+      "opponent_rank": 183,
+      "opponent_name": "Christian Slack",
+      "method": "Dec 5-3"
+    },
+    "worst_loss": {
+      "opponent_id": "29681161132",
+      "opponent_rank": 142,
+      "opponent_name": "Radi Stafford",
+      "method": "MD 11-2"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-23",
       "opponent_id": "29673769132",
+      "opponent_career_id": null,
       "opponent_name": "Enzo Cappabianca",
       "opponent_team": "Northern Colorado",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 30,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 201,
       "weight_class": "197",
       "result": "W",
       "method": "DEC",
       "score": "9-3",
       "duration": "7:00",
-      "event": "Cowboy Shoot Out"
+      "event": "Cowboy Shoot Out",
+      "mv_impact": -0.31
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29688260132",
+      "opponent_career_id": null,
       "opponent_name": "Quayin Short",
       "opponent_team": "Wyoming",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 35,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 73,
       "weight_class": "197",
       "result": "L",
       "method": "MD",
       "score": "14-2",
       "duration": "7:00",
-      "event": "Cowboy Shoot Out"
+      "event": "Cowboy Shoot Out",
+      "mv_impact": -4.04
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29681161132",
+      "opponent_career_id": null,
       "opponent_name": "Radi Stafford",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 142,
       "weight_class": "197",
       "result": "L",
       "method": "MD",
       "score": "11-2",
       "duration": "7:00",
-      "event": "Cowboy Shoot Out"
+      "event": "Cowboy Shoot Out",
+      "mv_impact": -5.08
     },
     {
       "date": "2024-12-22",
       "opponent_id": "29678423132",
+      "opponent_career_id": null,
       "opponent_name": "Trevor Dopps",
       "opponent_team": "Oklahoma State",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 4,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 58,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:42",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": -5.81
     },
     {
       "date": "2024-12-22",
       "opponent_id": "29681179132",
+      "opponent_career_id": null,
       "opponent_name": "Christian Slack",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 183,
       "weight_class": "197",
       "result": "W",
       "method": "DEC",
       "score": "5-3",
       "duration": "7:00",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": 0.33
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34943295132",
+      "team": "Utah Valley",
+      "team_slug": "utah_valley",
+      "weight_class": 285,
+      "grade": "R-So.",
+      "current_rank": 56,
+      "record": "6-3"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29681172132",
+      "team": "Utah Valley",
+      "team_slug": "utah_valley",
+      "weight_class": 197,
+      "grade": "R-Fr.",
+      "current_rank": 148,
+      "record": "2-3"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16703952132",
+      "team": "Utah Valley",
+      "team_slug": "utah_valley",
+      "weight_class": 285,
+      "grade": "Fr.",
+      "current_rank": 202,
+      "record": "3-3"
+    }
+  ]
 }

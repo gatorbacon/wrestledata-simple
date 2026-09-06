@@ -3,15 +3,20 @@
   "name": "Bryce Shelton",
   "team": "Air Force",
   "team_slug": "air_force",
-  "team_rank": 34,
+  "team_rank": 58,
   "weight_class": 157,
+  "grade": "Jr.",
+  "hometown": "Spring Grove, IL",
+  "high_school": "Marian Central",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgoairforcefalcons.com%2Fimages%2F2024%2F8%2F27%2FBryce_Shelton_.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 248,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 2.71,
@@ -19,97 +24,166 @@
     "pd7": -6.89,
     "si_plus": 90.7,
     "df_plus": 97.2,
-    "apr_plus": 98.6,
+    "apr_plus": 98.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.522,
+      "matches": 8,
+      "rank_weight": 204,
+      "rank_overall": 1682,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29673082132",
+      "opponent_rank": 204,
+      "opponent_name": "Reese Courtney",
+      "method": "Dec 5-2"
+    },
+    "worst_loss": {
+      "opponent_id": "29673235132",
+      "opponent_rank": 123,
+      "opponent_name": "Benji Alanis",
+      "method": "TF 17-2 3:56"
+    }
   },
   "match_list": [
     {
       "date": "2025-03-09",
       "opponent_id": "29680363132",
+      "opponent_career_id": null,
       "opponent_name": "Cody Chittum",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 16,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "13-3",
       "duration": "7:00",
-      "event": "2025 Big 12 Championships"
+      "event": "2025 Big 12 Championships",
+      "mv_impact": -2.34
     },
     {
       "date": "2025-03-09",
       "opponent_id": "29684513132",
+      "opponent_career_id": null,
       "opponent_name": "Drayden Morton",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 49,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "2025 Big 12 Championships"
+      "event": "2025 Big 12 Championships",
+      "mv_impact": -2.4
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29673235132",
+      "opponent_career_id": null,
       "opponent_name": "Benji Alanis",
       "opponent_team": "Northern Colorado",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 30,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 123,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "3:56",
-      "event": "vs. Northern Colorado"
+      "event": "vs. Northern Colorado",
+      "mv_impact": -5.61
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29673082132",
+      "opponent_career_id": null,
       "opponent_name": "Reese Courtney",
       "opponent_team": "Campbell",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 55,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 204,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": 0.53
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29681452132",
+      "opponent_career_id": null,
       "opponent_name": "Nicholas Villani",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 31,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 100,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "3-1",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -2.63
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34944169132",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 149,
+      "grade": "Sr.",
+      "current_rank": 223,
+      "record": "12-18"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29721846132",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 157,
+      "grade": "Jr.",
+      "current_rank": 248,
+      "record": "1-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24585332132",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 149,
+      "grade": "So.",
+      "current_rank": 263,
+      "record": "2-9"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20134455132",
+      "team": "Air Force",
+      "team_slug": "air_force",
+      "weight_class": 141,
+      "grade": "Fr.",
+      "current_rank": 132,
+      "record": "3-7"
+    }
+  ]
 }

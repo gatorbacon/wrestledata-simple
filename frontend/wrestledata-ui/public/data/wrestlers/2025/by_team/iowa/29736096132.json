@@ -3,15 +3,20 @@
   "name": "Caleb Rathjen",
   "team": "Iowa",
   "team_slug": "iowa",
-  "team_rank": 7,
+  "team_rank": 3,
   "weight_class": 149,
+  "grade": "Jr.",
+  "hometown": "Ankeny, Iowa",
+  "high_school": "Ankeny",
+  "photo_url": "https://hawkeyesports.com/imgproxy/U07fyOeNY7KTNcnsuXEw-OsSQM5AhMPrfWcIRq-EljQ/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2hhd2tleWVzcG9ydHMtcHJvZC8yMDI0LzA5LzYzMjg1Yjc4LTIwMjQwOTRfcmF0aGplbl9jYWxlYi5qcGc.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 52,
   "record": {
     "overall": "5-2",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "5-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 7.14,
@@ -19,127 +24,210 @@
     "pd7": 1.0,
     "si_plus": 105.4,
     "df_plus": 106.3,
-    "apr_plus": 96.5,
+    "apr_plus": 96.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.2,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.68,
+      "matches": 8,
+      "rank_weight": 34,
+      "rank_overall": 340,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 5,
+    "ranked_losses": 2,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29736222132",
+      "opponent_rank": 57,
+      "opponent_name": "Kael Voinovich",
+      "method": "Dec 4-3"
+    },
+    "worst_loss": {
+      "opponent_id": "29687592132",
+      "opponent_rank": 12,
+      "opponent_name": "Colin Realbuto",
+      "method": "MD 12-4"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-30",
       "opponent_id": "29685205132",
+      "opponent_career_id": null,
       "opponent_name": "Nicholas Vafiadis",
       "opponent_team": "Navy",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 28,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 233,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "12-6",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 0.61
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29681391132",
+      "opponent_career_id": null,
       "opponent_name": "Kane Naaktgeboren",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 59,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 3.52
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29687592132",
+      "opponent_career_id": null,
       "opponent_name": "Colin Realbuto",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 8,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 12,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "12-4",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -1.96
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29680350132",
+      "opponent_career_id": null,
       "opponent_name": "Carter Fousek",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 100,
       "weight_class": "149",
       "result": "W",
       "method": "MD",
       "score": "19-7",
       "duration": "7:00",
-      "event": "Grand View Open"
+      "event": "Grand View Open",
+      "mv_impact": 3.63
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29687591132",
+      "opponent_career_id": null,
       "opponent_name": "Adam Allard",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 8,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 76,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "3-1",
       "duration": "7:00",
-      "event": "Grand View Open"
+      "event": "Grand View Open",
+      "mv_impact": 3.04
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29736222132",
+      "opponent_career_id": null,
       "opponent_name": "Kael Voinovich",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 3,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 57,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "Grand View Open"
+      "event": "Grand View Open",
+      "mv_impact": 3.41
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29687566132",
+      "opponent_career_id": null,
       "opponent_name": "Ethan Stiles",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 41,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 10,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "12-3",
       "duration": "7:00",
-      "event": "vs. Oregon State"
+      "event": "vs. Oregon State",
+      "mv_impact": -2.44
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "35025189132",
+      "team": "Northern Iowa",
+      "team_slug": "northern_iowa",
+      "weight_class": 149,
+      "grade": "Sr.",
+      "current_rank": 14,
+      "record": "11-8"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29736096132",
+      "team": "Iowa",
+      "team_slug": "iowa",
+      "weight_class": 149,
+      "grade": "Jr.",
+      "current_rank": 52,
+      "record": "5-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24580689132",
+      "team": "Iowa",
+      "team_slug": "iowa",
+      "weight_class": 149,
+      "grade": "So.",
+      "current_rank": 12,
+      "record": "17-7"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20135679132",
+      "team": "Iowa",
+      "team_slug": "iowa",
+      "weight_class": 149,
+      "grade": "RS Fr.",
+      "current_rank": 90,
+      "record": "5-5"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16709320132",
+      "team": "Iowa",
+      "team_slug": "iowa",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 102,
+      "record": "3-1"
+    }
+  ]
 }

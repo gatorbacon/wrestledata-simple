@@ -3,10 +3,15 @@
   "name": "Anthony Isek",
   "team": "Indiana",
   "team_slug": "indiana",
-  "team_rank": 16,
+  "team_rank": 36,
   "weight_class": 125,
+  "grade": "So.",
+  "hometown": "Colorado Springs, Colo.",
+  "high_school": "St. Mary's High School",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fiuhoosiers.com%2Fimages%2F2024%2F12%2F4%2FVert_12_Isek.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 111,
+  "current_rank": 143,
   "record": {
     "overall": "2-4",
     "vs_ranked": "2-4",
@@ -19,12 +24,19 @@
     "pd7": -1.75,
     "si_plus": 88.0,
     "df_plus": 106.3,
-    "apr_plus": 106.1,
+    "apr_plus": 106.0,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -2.327,
+      "matches": 6,
+      "rank_weight": 135,
+      "rank_overall": 1630,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
@@ -33,108 +45,142 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29685875132",
-      "opponent_rank": 135,
+      "opponent_rank": 175,
       "opponent_name": "Caleb Edwards",
       "method": "Fall 4:33"
     },
     "worst_loss": {
-      "opponent_id": "29672280132",
-      "opponent_rank": 116,
-      "opponent_name": "Nick Corday",
-      "method": "Dec 2-0"
+      "opponent_id": "29686317132",
+      "opponent_rank": 118,
+      "opponent_name": "Drew Hansen",
+      "method": "Dec 5-3"
     }
   },
   "match_list": [
     {
       "date": "2025-01-19",
       "opponent_id": "29685875132",
+      "opponent_career_id": null,
       "opponent_name": "Caleb Edwards",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 125,
-      "opponent_rank": 135,
+      "opponent_rank": 175,
       "weight_class": "125",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:33",
-      "event": "Purple Raider Open"
+      "event": "Purple Raider Open",
+      "mv_impact": 2.78
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29685879132",
+      "opponent_career_id": null,
       "opponent_name": "Eamonn Jimenez",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 125,
-      "opponent_rank": 164,
+      "opponent_rank": 200,
       "weight_class": "125",
       "result": "W",
       "method": "DEC",
       "score": "3-2",
       "duration": "7:00",
-      "event": "Purple Raider Open"
+      "event": "Purple Raider Open",
+      "mv_impact": 0.32
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29672280132",
+      "opponent_career_id": null,
       "opponent_name": "Nick Corday",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 125,
-      "opponent_rank": 116,
+      "opponent_rank": 117,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
-      "event": "Purple Raider Open"
+      "event": "Purple Raider Open",
+      "mv_impact": -4.17
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29686317132",
+      "opponent_career_id": null,
       "opponent_name": "Drew Hansen",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 125,
-      "opponent_rank": 108,
+      "opponent_rank": 118,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "5-3",
       "duration": "7:00",
-      "event": "Purple Raider Open"
+      "event": "Purple Raider Open",
+      "mv_impact": -4.22
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29685051132",
+      "opponent_career_id": null,
       "opponent_name": "Ben Aranda",
       "opponent_team": "Cleveland State",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 56,
       "opponent_weight": 125,
-      "opponent_rank": 91,
+      "opponent_rank": 87,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "6-2",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": -3.17
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29681773132",
+      "opponent_career_id": null,
       "opponent_name": "Colyn Limbert",
       "opponent_team": "Pittsburgh",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 21,
       "opponent_weight": 125,
-      "opponent_rank": 63,
+      "opponent_rank": 65,
       "weight_class": "125",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:56",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": -5.5
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34945847132",
+      "team": "Indiana",
+      "team_slug": "indiana",
+      "weight_class": 125,
+      "grade": "Jr.",
+      "current_rank": 160,
+      "record": "0-5"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29925731132",
+      "team": "Indiana",
+      "team_slug": "indiana",
+      "weight_class": 125,
+      "grade": "So.",
+      "current_rank": 143,
+      "record": "2-4"
+    }
+  ]
 }

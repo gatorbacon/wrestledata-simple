@@ -3,13 +3,18 @@
   "name": "Cody Phelps",
   "team": "Michigan State",
   "team_slug": "michigan_state",
-  "team_rank": 63,
+  "team_rank": 74,
   "weight_class": 133,
+  "grade": "Jr.",
+  "hometown": "Pinedale, Wyo.",
+  "high_school": "Pinedale",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fmsuspartans.com%2Fimages%2F2024%2F10%2F7%2FWrestling_Cropped_2024-25_Phelps_Cody_Cropped.jpg&width=100&height=100&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 151,
+  "current_rank": 174,
   "record": {
     "overall": "4-5",
-    "vs_ranked": "4-4",
+    "vs_ranked": "4-5",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,22 +29,29 @@
     "bonus_rate": 0.5,
     "majors": 2,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.673,
+      "matches": 9,
+      "rank_weight": 117,
+      "rank_overall": 1090,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29735114132",
-      "opponent_rank": 66,
+      "opponent_rank": 74,
       "opponent_name": "Vince Perez",
       "method": "Dec 6-2"
     },
     "worst_loss": {
       "opponent_id": "29685148132",
-      "opponent_rank": 178,
+      "opponent_rank": 218,
       "opponent_name": "Peyton Costa",
       "method": "M. For."
     }
@@ -48,26 +60,29 @@
     {
       "date": "2025-02-09",
       "opponent_id": "29684515132",
+      "opponent_career_id": null,
       "opponent_name": "Porter Matecki",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 51,
       "weight_class": "133",
       "result": "L",
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "Greyhound Open"
+      "event": "Greyhound Open",
+      "mv_impact": -2.5
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29685148132",
+      "opponent_career_id": null,
       "opponent_name": "Peyton Costa",
       "opponent_team": "Cleveland State",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 56,
       "opponent_weight": 133,
-      "opponent_rank": 178,
+      "opponent_rank": 218,
       "weight_class": "133",
       "result": "L",
       "method": "MFF",
@@ -78,108 +93,144 @@
     {
       "date": "2024-12-07",
       "opponent_id": "29721898132",
+      "opponent_career_id": null,
       "opponent_name": "Jacob Jones",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 133,
-      "opponent_rank": 114,
+      "opponent_rank": 90,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "7-2",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": 2.8
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29685057132",
+      "opponent_career_id": null,
       "opponent_name": "Nick Molchak",
       "opponent_team": "Cleveland State",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 56,
       "opponent_weight": 133,
-      "opponent_rank": 93,
+      "opponent_rank": 99,
       "weight_class": "133",
       "result": "L",
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": -3.13
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29681755132",
+      "opponent_career_id": null,
       "opponent_name": "Jordan Villareal",
       "opponent_team": "Pittsburgh",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 21,
       "opponent_weight": 133,
-      "opponent_rank": 207,
+      "opponent_rank": 223,
       "weight_class": "133",
       "result": "W",
       "method": "MD",
       "score": "14-0",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": 0.77
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29735114132",
+      "opponent_career_id": null,
       "opponent_name": "Vince Perez",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 45,
       "opponent_weight": 133,
-      "opponent_rank": 66,
+      "opponent_rank": 74,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "6-2",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": 3.41
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29735120132",
+      "opponent_career_id": null,
       "opponent_name": "Sean Spidle",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 45,
       "opponent_weight": 133,
-      "opponent_rank": 23,
+      "opponent_rank": 21,
       "weight_class": "133",
       "result": "L",
       "method": "SV-1",
       "score": "10-7",
       "duration": "8:15",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": -1.47
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29687077132",
+      "opponent_career_id": null,
       "opponent_name": "Tj England",
       "opponent_team": "Ohio",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 46,
       "opponent_weight": 133,
-      "opponent_rank": 190,
+      "opponent_rank": 212,
       "weight_class": "133",
       "result": "W",
       "method": "MD",
       "score": "14-3",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": 1.34
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29723334132",
+      "opponent_career_id": null,
       "opponent_name": "Lucian Brink",
       "opponent_team": "Northern Illinois",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 49,
       "opponent_weight": 133,
-      "opponent_rank": 160,
+      "opponent_rank": 166,
       "weight_class": "133",
       "result": "L",
       "method": "DEC",
       "score": "9-2",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": -4.77
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34934213132",
+      "team": "Wyoming",
+      "team_slug": "wyoming",
+      "weight_class": 141,
+      "grade": "R-Jr.",
+      "current_rank": 94,
+      "record": "1-1"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29686328132",
+      "team": "Michigan State",
+      "team_slug": "michigan_state",
+      "weight_class": 133,
+      "grade": "Jr.",
+      "current_rank": 174,
+      "record": "4-5"
+    }
+  ]
 }

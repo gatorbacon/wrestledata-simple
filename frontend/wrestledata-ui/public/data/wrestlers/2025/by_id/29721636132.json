@@ -3,15 +3,20 @@
   "name": "Anderson Olcott",
   "team": "Princeton",
   "team_slug": "princeton",
-  "team_rank": 32,
+  "team_rank": 37,
   "weight_class": 197,
+  "grade": "Fr.",
+  "hometown": "Holland, N.J.",
+  "high_school": "Delaware Valley Regional",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fprinceton.sidearmsports.com%2Fimages%2F2024%2F10%2F28%2F24_Anderson_Olcott_Media_2.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 241,
   "record": {
     "overall": "0-6",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 2.55,
@@ -24,107 +29,153 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.682,
+      "matches": 6,
+      "rank_weight": 210,
+      "rank_overall": 2380,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29686998132",
+      "opponent_rank": 230,
+      "opponent_name": "Corey Boerio",
+      "method": "Fall 1:08"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-23",
       "opponent_id": "29681438132",
+      "opponent_career_id": null,
       "opponent_name": "Donovan Sprouse",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 169,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "6:33",
-      "event": "A Better Way Athletics Last Chance Open"
+      "event": "A Better Way Athletics Last Chance Open",
+      "mv_impact": -7.98
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29672116132",
+      "opponent_career_id": null,
       "opponent_name": "Andy Smith",
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 6,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 22,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:44",
-      "event": "A Better Way Athletics Last Chance Open"
+      "event": "A Better Way Athletics Last Chance Open",
+      "mv_impact": -4.65
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29685374132",
+      "opponent_career_id": null,
       "opponent_name": "Lonnell Owens-Pabon",
       "opponent_team": "Buffalo",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 63,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 199,
       "weight_class": "197",
       "result": "L",
       "method": "MD",
       "score": "13-0",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -6.18
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29686998132",
+      "opponent_career_id": null,
       "opponent_name": "Corey Boerio",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 230,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:08",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -9.19
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29676694132",
+      "opponent_career_id": null,
       "opponent_name": "Cael Black",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 185,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "22-6",
       "duration": "6:54",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -6.53
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29681397132",
+      "opponent_career_id": null,
       "opponent_name": "PJ Casale",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 31,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 97,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "18-1",
       "duration": "4:27",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -5.57
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34948146132",
+      "team": "Princeton",
+      "team_slug": "princeton",
+      "weight_class": 285,
+      "grade": "So.",
+      "current_rank": 225,
+      "record": "0-13"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29721636132",
+      "team": "Princeton",
+      "team_slug": "princeton",
+      "weight_class": 197,
+      "grade": "Fr.",
+      "current_rank": 241,
+      "record": "0-6"
+    }
+  ]
 }

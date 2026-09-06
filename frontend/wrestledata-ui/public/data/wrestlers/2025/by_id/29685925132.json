@@ -3,15 +3,20 @@
   "name": "Garrett McChesney",
   "team": "Edinboro",
   "team_slug": "edinboro",
-  "team_rank": 54,
+  "team_rank": 69,
   "weight_class": 149,
+  "grade": "",
+  "hometown": "Katy, TX",
+  "high_school": "Jordan High School",
+  "photo_url": "https://gofightingscots.com/images/2024/10/29/McChesney_Garrett.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 85,
   "record": {
     "overall": "5-4",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "5-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 10.38,
@@ -24,100 +29,128 @@
     "bonus_rate": 0.6,
     "majors": 1,
     "techs": 2,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.695,
+      "matches": 9,
+      "rank_weight": 65,
+      "rank_overall": 606,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 5,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29685873132",
+      "opponent_rank": 55,
+      "opponent_name": "Ryan Burgos",
+      "method": "M. For."
+    },
+    "worst_loss": {
+      "opponent_id": "29676275132",
+      "opponent_rank": 77,
+      "opponent_name": "Klay Reeves",
+      "method": "Dec 4-3"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-17",
       "opponent_id": "29676273132",
+      "opponent_career_id": null,
       "opponent_name": "Dylan D`Emilio",
       "opponent_team": "Ohio State",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 5,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 4,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "6-3",
       "duration": "7:00",
-      "event": "vs. Ohio State"
+      "event": "vs. Ohio State",
+      "mv_impact": -0.81
     },
     {
       "date": "2024-11-15",
       "opponent_id": "29681434132",
+      "opponent_career_id": null,
       "opponent_name": "Kaden Cassidy",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 31,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "3:27",
-      "event": "vs. George Mason"
+      "event": "vs. George Mason",
+      "mv_impact": -3.54
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29767461132",
+      "opponent_career_id": null,
       "opponent_name": "August Hibler",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 39,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 82,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "13-9",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": 3.29
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29678761132",
+      "opponent_career_id": null,
       "opponent_name": "Ramon Salazar",
       "opponent_team": "Oklahoma State",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 4,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 210,
       "weight_class": "149",
       "result": "W",
       "method": "MD",
       "score": "14-4",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": 2.09
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29686178132",
+      "opponent_career_id": null,
       "opponent_name": "Judah Aybar",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 223,
       "weight_class": "149",
       "result": "W",
       "method": "TF",
       "score": "23-6",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": 4.08
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29685873132",
+      "opponent_career_id": null,
       "opponent_name": "Ryan Burgos",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 55,
       "weight_class": "149",
       "result": "W",
       "method": "MFF",
@@ -128,48 +161,76 @@
     {
       "date": "2024-11-03",
       "opponent_id": "29676275132",
+      "opponent_career_id": null,
       "opponent_name": "Klay Reeves",
       "opponent_team": "Ohio State",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 5,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 77,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -2.3
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29685883132",
+      "opponent_career_id": null,
       "opponent_name": "Nick Schaukowitsch",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 271,
       "weight_class": "149",
       "result": "W",
       "method": "TF",
       "score": "22-5",
       "duration": "4:17",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": 2.22
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29672198132",
+      "opponent_career_id": null,
       "opponent_name": "Dylan Gilcher",
       "opponent_team": "Michigan",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 13,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 54,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -2.85
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34951051132",
+      "team": "Edinboro",
+      "team_slug": "edinboro",
+      "weight_class": 157,
+      "grade": "",
+      "current_rank": 34,
+      "record": "10-16"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29685925132",
+      "team": "Edinboro",
+      "team_slug": "edinboro",
+      "weight_class": 149,
+      "grade": "",
+      "current_rank": 85,
+      "record": "5-4"
+    }
+  ]
 }

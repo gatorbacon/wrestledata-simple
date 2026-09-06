@@ -3,13 +3,18 @@
   "name": "Dylan Smith",
   "team": "Davidson",
   "team_slug": "davidson",
-  "team_rank": 51,
+  "team_rank": 66,
   "weight_class": 197,
+  "grade": "So.",
+  "hometown": "Newton, N.C.",
+  "high_school": "Foard High School",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fdavidsonwildcats.com%2Fimages%2F2024%2F10%2F11%2FWRE10-2-24-041.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 174,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,62 +29,117 @@
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.239,
+      "matches": 3,
+      "rank_weight": 185,
+      "rank_overall": 2091,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29688458132",
+      "opponent_rank": 244,
+      "opponent_name": "Toler Hornick",
+      "method": "MD 14-4"
+    },
+    "worst_loss": {
+      "opponent_id": "29685876132",
+      "opponent_rank": 193,
+      "opponent_name": "Nicholas Lodato",
+      "method": "TF 18-1 5:49"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-08",
       "opponent_id": "29685876132",
+      "opponent_career_id": null,
       "opponent_name": "Nicholas Lodato",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 193,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "18-1",
       "duration": "5:49",
-      "event": "vs. Edinboro"
+      "event": "vs. Edinboro",
+      "mv_impact": -6.96
     },
     {
       "date": "2024-12-06",
       "opponent_id": "29689098132",
+      "opponent_career_id": null,
       "opponent_name": "Vincent Lee",
       "opponent_team": "Duke",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 68,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 82,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "5:35",
-      "event": "vs. Duke"
+      "event": "vs. Duke",
+      "mv_impact": -5.92
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29688458132",
+      "opponent_career_id": null,
       "opponent_name": "Toler Hornick",
       "opponent_team": "Presbyterian",
-      "opponent_team_rank": 71,
+      "opponent_team_rank": 76,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 244,
       "weight_class": "197",
       "result": "W",
       "method": "MD",
       "score": "14-4",
       "duration": "7:00",
-      "event": "vs. Presbyterian"
+      "event": "vs. Presbyterian",
+      "mv_impact": 0.16
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34935909132",
+      "team": "Davidson",
+      "team_slug": "davidson",
+      "weight_class": 197,
+      "grade": "Jr.",
+      "current_rank": 135,
+      "record": "5-11"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29677476132",
+      "team": "Davidson",
+      "team_slug": "davidson",
+      "weight_class": 197,
+      "grade": "So.",
+      "current_rank": 174,
+      "record": "1-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24587886132",
+      "team": "Davidson",
+      "team_slug": "davidson",
+      "weight_class": 197,
+      "grade": "Fr.",
+      "current_rank": 97,
+      "record": "2-4"
+    }
+  ]
 }

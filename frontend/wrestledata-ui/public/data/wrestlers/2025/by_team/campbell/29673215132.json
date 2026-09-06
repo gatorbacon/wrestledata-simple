@@ -3,13 +3,18 @@
   "name": "Jonathan Chang",
   "team": "Campbell",
   "team_slug": "campbell",
-  "team_rank": 45,
+  "team_rank": 55,
   "weight_class": 149,
+  "grade": "Fr.",
+  "hometown": "Clarksburg, Md.",
+  "high_school": "Clarksburg HS",
+  "photo_url": "https://gocamels.com/images/2024/9/12/Chang_Jonathan_03_.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 133,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,67 +24,112 @@
     "pd7": 6.51,
     "si_plus": 120.7,
     "df_plus": 105.2,
-    "apr_plus": 91.4,
+    "apr_plus": 91.5,
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.028,
+      "matches": 4,
+      "rank_weight": 204,
+      "rank_overall": 1819,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29678069132",
+      "opponent_rank": 266,
+      "opponent_name": "Hunter Jones",
+      "method": "TF 16-1 3:32"
+    },
+    "worst_loss": {
+      "opponent_id": "29677496132",
+      "opponent_rank": 146,
+      "opponent_name": "Anderson Heap",
+      "method": "MD 11-1"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29673457132",
+      "opponent_career_id": null,
       "opponent_name": "Karl Monaco",
       "opponent_team": "Columbia",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 52,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 84,
       "weight_class": "149",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:42",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -5.76
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29677496132",
+      "opponent_career_id": null,
       "opponent_name": "Anderson Heap",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 146,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "11-1",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -4.39
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29678069132",
+      "opponent_career_id": null,
       "opponent_name": "Hunter Jones",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 266,
       "weight_class": "149",
       "result": "W",
       "method": "TF",
       "score": "16-1",
       "duration": "3:32",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": 2.43
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34941684132",
+      "team": "Campbell",
+      "team_slug": "campbell",
+      "weight_class": 149,
+      "grade": "",
+      "current_rank": 84,
+      "record": "3-12"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29673215132",
+      "team": "Campbell",
+      "team_slug": "campbell",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 133,
+      "record": "1-2"
+    }
+  ]
 }

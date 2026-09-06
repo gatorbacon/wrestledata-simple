@@ -3,13 +3,18 @@
   "name": "Cooper Colson",
   "team": "Nebraska",
   "team_slug": "nebraska",
-  "team_rank": 11,
+  "team_rank": 2,
   "weight_class": 197,
+  "grade": "Junior",
+  "hometown": "West Point, Neb.",
+  "high_school": "West Point-Beemer/ICCC",
+  "photo_url": "https://huskers.com/imgproxy/GKLx1-tM81EJwLjXFFFpHkmVm1bKjdEY_5JVW2goyYs/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8wNy8yMEJYTE5IdGZYVXp5ekhXVFduZHdIWEZvQzg5OEZyV1FpOExFR3FTLmpwZw.jpg",
+  "previous_school": "ICCC",
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 231,
   "record": {
     "overall": "0-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,97 +24,141 @@
     "pd7": -16.73,
     "si_plus": 88.9,
     "df_plus": 74.2,
-    "apr_plus": 98.9,
+    "apr_plus": 98.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.194,
+      "matches": 5,
+      "rank_weight": 202,
+      "rank_overall": 2266,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29721837132",
+      "opponent_rank": 166,
+      "opponent_name": "Andrew Wenzel",
+      "method": "Dec 4-2"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-19",
       "opponent_id": "29680471132",
+      "opponent_career_id": null,
       "opponent_name": "Aiden Hanning",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 46,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "2:11",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": -4.3
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29680367132",
+      "opponent_career_id": null,
       "opponent_name": "McCrae Hagarty",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 76,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "1:38",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": -5.37
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29721837132",
+      "opponent_career_id": null,
       "opponent_name": "Andrew Wenzel",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 166,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -5.1
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29675739132",
+      "opponent_career_id": null,
       "opponent_name": "Quin Morgan",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 24,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 49,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "17-0",
       "duration": "3:24",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -4.43
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29687369132",
+      "opponent_career_id": null,
       "opponent_name": "Seth Seago",
       "opponent_team": "Oklahoma",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 40,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 159,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "6:54",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -6.77
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34935632132",
+      "team": "Nebraska",
+      "team_slug": "nebraska",
+      "weight_class": 197,
+      "grade": "Senior",
+      "current_rank": 189,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29673857132",
+      "team": "Nebraska",
+      "team_slug": "nebraska",
+      "weight_class": 197,
+      "grade": "Junior",
+      "current_rank": 231,
+      "record": "0-5"
+    }
+  ]
 }

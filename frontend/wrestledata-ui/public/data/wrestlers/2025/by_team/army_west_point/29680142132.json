@@ -3,13 +3,18 @@
   "name": "Jaime Rivera",
   "team": "Army West Point",
   "team_slug": "army_west_point",
-  "team_rank": 26,
+  "team_rank": 44,
   "weight_class": 157,
+  "grade": "So.",
+  "hometown": "Tucson, Ariz.",
+  "high_school": "Sunnyside (USMAPS)",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgoarmywestpoint.com%2Fimages%2F2024%2F10%2F2%2FRivera_fjEGC.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 232,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,67 +24,122 @@
     "pd7": -1.85,
     "si_plus": 99.9,
     "df_plus": 100.4,
-    "apr_plus": 92.8,
+    "apr_plus": 92.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.034,
+      "matches": 4,
+      "rank_weight": 216,
+      "rank_overall": 1821,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29672626132",
+      "opponent_rank": 280,
+      "opponent_name": "Eric Doran",
+      "method": "Dec 9-6"
+    },
+    "worst_loss": {
+      "opponent_id": "29719741132",
+      "opponent_rank": 227,
+      "opponent_name": "Kelly Kakos",
+      "method": "Dec 14-8"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-10",
       "opponent_id": "29719741132",
+      "opponent_career_id": null,
       "opponent_name": "Kelly Kakos",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 227,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "14-8",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -4.63
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29672626132",
+      "opponent_career_id": null,
       "opponent_name": "Eric Doran",
       "opponent_team": "VMI",
-      "opponent_team_rank": 77,
+      "opponent_team_rank": 79,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 280,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "9-6",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 0.43
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29680093132",
+      "opponent_career_id": null,
       "opponent_name": "Frank Volpe",
       "opponent_team": "Hofstra",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 57,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 143,
       "weight_class": "157",
       "result": "L",
       "method": "SV-3",
       "score": "4-1",
       "duration": "8:15",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -3.32
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34934329132",
+      "team": "Army West Point",
+      "team_slug": "army_west_point",
+      "weight_class": 165,
+      "grade": "Jr.",
+      "current_rank": 270,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29680142132",
+      "team": "Army West Point",
+      "team_slug": "army_west_point",
+      "weight_class": 157,
+      "grade": "So.",
+      "current_rank": 232,
+      "record": "1-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24587114132",
+      "team": "Army West Point",
+      "team_slug": "army_west_point",
+      "weight_class": 165,
+      "grade": "Fr.",
+      "current_rank": 142,
+      "record": "0-0"
+    }
+  ]
 }

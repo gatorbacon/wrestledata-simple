@@ -3,13 +3,18 @@
   "name": "Kaleb Williams",
   "team": "Cornell",
   "team_slug": "cornell",
-  "team_rank": 50,
+  "team_rank": 9,
   "weight_class": 165,
+  "grade": "Jr.",
+  "hometown": "Apex, N.C.",
+  "high_school": "Apex HS",
+  "photo_url": "https://cornellbigred.com/images/2024/8/28/Williams_Kaleb_24_crop.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 101,
   "record": {
     "overall": "5-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "5-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,142 +24,207 @@
     "pd7": 7.72,
     "si_plus": 105.3,
     "df_plus": 107.0,
-    "apr_plus": 101.0,
+    "apr_plus": 100.5,
     "pin_rate": 0.2,
     "bonus_rate": 0.6,
     "majors": 0,
     "techs": 2,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -0.669,
+      "matches": 10,
+      "rank_weight": 113,
+      "rank_overall": 1088,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 5,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29672235132",
+      "opponent_rank": 211,
+      "opponent_name": "David Rozenblum",
+      "method": "TF 17-1 0:00"
+    },
+    "worst_loss": {
+      "opponent_id": "29672320132",
+      "opponent_rank": 245,
+      "opponent_name": "Wesley Barnes",
+      "method": "SV-1 4-1"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-24",
       "opponent_id": "29686905132",
+      "opponent_career_id": null,
       "opponent_name": "Deakon Bailey",
       "opponent_team": "Binghamton",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 32,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 278,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:38",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": 3.88
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29672320132",
+      "opponent_career_id": null,
       "opponent_name": "Wesley Barnes",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 245,
       "weight_class": "165",
       "result": "L",
       "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": -4.55
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29684829132",
+      "opponent_career_id": null,
       "opponent_name": "Anthony Mann",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 78,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 268,
       "weight_class": "165",
       "result": "W",
       "method": "TF",
       "score": "19-4",
       "duration": "0:00",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": 1.82
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29672235132",
+      "opponent_career_id": null,
       "opponent_name": "David Rozenblum",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 78,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 211,
       "weight_class": "165",
       "result": "W",
       "method": "TF",
       "score": "17-1",
       "duration": "0:00",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": 2.07
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29672229132",
+      "opponent_career_id": null,
       "opponent_name": "Calvin Pineda",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 78,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 281,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": "8-7",
       "duration": "7:00",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": 0.27
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29679165132",
+      "opponent_career_id": null,
       "opponent_name": "Joseph Manfredi",
       "opponent_team": "Arizona State",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 27,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 110,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "5-3",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -3.86
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29686908132",
+      "opponent_career_id": null,
       "opponent_name": "Roberto Padilla",
       "opponent_team": "Binghamton",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 32,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 231,
       "weight_class": "165",
       "result": "W",
       "method": "SV-3",
       "score": "6-3",
       "duration": "8:15",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 0.39
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29681758132",
+      "opponent_career_id": null,
       "opponent_name": "Grant Mackay",
       "opponent_team": "Pittsburgh",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 21,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 115,
       "weight_class": "165",
       "result": "L",
       "method": "SV-3",
       "score": "4-1",
       "duration": "8:15",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -3.24
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34964394132",
+      "team": "Cornell",
+      "team_slug": "cornell",
+      "weight_class": 165,
+      "grade": "Sr.",
+      "current_rank": 180,
+      "record": "2-4"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29680477132",
+      "team": "Cornell",
+      "team_slug": "cornell",
+      "weight_class": 165,
+      "grade": "Jr.",
+      "current_rank": 101,
+      "record": "5-3"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24609492132",
+      "team": "Cornell",
+      "team_slug": "cornell",
+      "weight_class": 165,
+      "grade": "",
+      "current_rank": 151,
+      "record": "0-0"
+    }
+  ]
 }

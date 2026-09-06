@@ -3,15 +3,20 @@
   "name": "Ryan Hartung",
   "team": "Binghamton",
   "team_slug": "binghamton",
-  "team_rank": 38,
+  "team_rank": 32,
   "weight_class": 141,
+  "grade": "R-Fr.",
+  "hometown": "New Milford, N.J.",
+  "high_school": "New Milford",
+  "photo_url": "https://bubearcats.com/images/2024/9/12/AD0A4357.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 114,
   "record": {
     "overall": "3-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 4.67,
@@ -24,122 +29,185 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.46,
+      "matches": 9,
+      "rank_weight": 104,
+      "rank_overall": 1018,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29673447132",
+      "opponent_rank": 35,
+      "opponent_name": "Kai Owen",
+      "method": "Dec 11-9"
+    },
+    "worst_loss": {
+      "opponent_id": "29726563132",
+      "opponent_rank": 105,
+      "opponent_name": "Seamus Mack",
+      "method": "Dec 2-0"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-11",
       "opponent_id": "29721362132",
+      "opponent_career_id": null,
       "opponent_name": "Carter Bailey",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 11,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 57,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "0:00",
-      "event": "vs. Lehigh"
+      "event": "vs. Lehigh",
+      "mv_impact": -4.41
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29673447132",
+      "opponent_career_id": null,
       "opponent_name": "Kai Owen",
       "opponent_team": "Columbia",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 52,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 35,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "11-9",
       "duration": "7:00",
-      "event": "vs. Columbia"
+      "event": "vs. Columbia",
+      "mv_impact": 3.91
     },
     {
       "date": "2024-12-01",
       "opponent_id": "29726563132",
+      "opponent_career_id": null,
       "opponent_name": "Seamus Mack",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 11,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 105,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
-      "event": "Mat Town Open 1"
+      "event": "Mat Town Open 1",
+      "mv_impact": -3.03
     },
     {
       "date": "2024-12-01",
       "opponent_id": "29680931132",
+      "opponent_career_id": null,
       "opponent_name": "George Oroudjov",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 74,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "9-6",
       "duration": "7:00",
-      "event": "Mat Town Open 1"
+      "event": "Mat Town Open 1",
+      "mv_impact": -2.61
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29686176132",
+      "opponent_career_id": null,
       "opponent_name": "Gianni Silvestri",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 136,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": 1.97
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29680478132",
+      "opponent_career_id": null,
       "opponent_name": "Joshua Saunders",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 19,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:41",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": -4.49
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29686580132",
+      "opponent_career_id": null,
       "opponent_name": "Austin McBurney",
       "opponent_team": "Brown",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 62,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 272,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "7-2",
       "duration": "7:00",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": 0.3
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34947809132",
+      "team": "Binghamton",
+      "team_slug": "binghamton",
+      "weight_class": 141,
+      "grade": "R-So.",
+      "current_rank": 231,
+      "record": "15-16"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29686896132",
+      "team": "Binghamton",
+      "team_slug": "binghamton",
+      "weight_class": 141,
+      "grade": "R-Fr.",
+      "current_rank": 114,
+      "record": "3-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24587937132",
+      "team": "Binghamton",
+      "team_slug": "binghamton",
+      "weight_class": 141,
+      "grade": "Fr.",
+      "current_rank": 180,
+      "record": "5-6"
+    }
+  ]
 }

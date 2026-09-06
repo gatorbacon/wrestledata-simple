@@ -3,13 +3,18 @@
   "name": "Conner Quinn",
   "team": "Maryland",
   "team_slug": "maryland",
-  "team_rank": 14,
+  "team_rank": 17,
   "weight_class": 141,
+  "grade": "R-Jr.",
+  "hometown": "Annandale, NJ",
+  "high_school": "North Hunterdon",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fumterps.com%2Fimages%2F2024%2F10%2F16%2FConnor_Akasd.png&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 270,
   "record": {
     "overall": "0-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,82 +24,144 @@
     "pd7": -11.5,
     "si_plus": 84.7,
     "df_plus": 94.7,
-    "apr_plus": 94.4,
+    "apr_plus": 94.5,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.107,
+      "matches": 4,
+      "rank_weight": 214,
+      "rank_overall": 2066,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29681441132",
+      "opponent_rank": 168,
+      "opponent_name": "Dominic Hargrove",
+      "method": "MD 12-0"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-23",
       "opponent_id": "29676686132",
+      "opponent_career_id": null,
       "opponent_name": "Gable Strickland",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 54,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "7:00",
-      "event": "A Better Way Athletics Last Chance Open"
+      "event": "A Better Way Athletics Last Chance Open",
+      "mv_impact": -3.89
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29736342132",
+      "opponent_career_id": null,
       "opponent_name": "Luis Bazan",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 39,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 133,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "7-2",
       "duration": "7:00",
-      "event": "A Better Way Athletics Last Chance Open"
+      "event": "A Better Way Athletics Last Chance Open",
+      "mv_impact": -3.95
     },
     {
       "date": "2024-12-08",
       "opponent_id": "30660665132",
+      "opponent_career_id": null,
       "opponent_name": "Pat Phillips",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 69,
       "weight_class": "141",
       "result": "L",
       "method": "MD",
       "score": "14-0",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -3.12
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29681441132",
+      "opponent_career_id": null,
       "opponent_name": "Dominic Hargrove",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 168,
       "weight_class": "141",
       "result": "L",
       "method": "MD",
       "score": "12-0",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -5.47
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29678487132",
+      "team": "Maryland",
+      "team_slug": "maryland",
+      "weight_class": 141,
+      "grade": "R-Jr.",
+      "current_rank": 270,
+      "record": "0-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584506132",
+      "team": "Maryland",
+      "team_slug": "maryland",
+      "weight_class": 133,
+      "grade": "R-So.",
+      "current_rank": 209,
+      "record": "3-8"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20133847132",
+      "team": "Maryland",
+      "team_slug": "maryland",
+      "weight_class": 133,
+      "grade": "So.",
+      "current_rank": 235,
+      "record": "1-15"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16701602132",
+      "team": "Maryland",
+      "team_slug": "maryland",
+      "weight_class": 133,
+      "grade": "Fr.",
+      "current_rank": 237,
+      "record": "2-11"
+    }
+  ]
 }

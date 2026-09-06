@@ -3,15 +3,20 @@
   "name": "Cole Karpinski",
   "team": "Army West Point",
   "team_slug": "army_west_point",
-  "team_rank": 26,
+  "team_rank": 44,
   "weight_class": 184,
+  "grade": "Jr.",
+  "hometown": "Greenville, Pa.",
+  "high_school": "Greenville",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgoarmywestpoint.com%2Fimages%2F2024%2F10%2F2%2FKarpinski_2grFd.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 191,
   "record": {
     "overall": "3-8",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "3-8",
+    "vs_top10": "0-1",
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 4.84,
@@ -24,182 +29,263 @@
     "bonus_rate": 0.333,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.356,
+      "matches": 12,
+      "rank_weight": 121,
+      "rank_overall": 1315,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 8,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29676073132",
+      "opponent_rank": 176,
+      "opponent_name": "Aidan Schlett",
+      "method": "Dec 6-0"
+    },
+    "worst_loss": {
+      "opponent_id": "29686492132",
+      "opponent_rank": 64,
+      "opponent_name": "Cory Thomas",
+      "method": "TF 18-1 5:31"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29676073132",
+      "opponent_career_id": null,
       "opponent_name": "Aidan Schlett",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 176,
       "weight_class": "184",
       "result": "W",
       "method": "DEC",
       "score": "6-0",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": 1.43
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29683833132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler Bienus",
       "opponent_team": "Bucknell",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 43,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 52,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -2.17
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29676293132",
+      "opponent_career_id": null,
       "opponent_name": "Rocco Welsh",
       "opponent_team": "Ohio State",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 5,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 25,
       "weight_class": "184",
       "result": "L",
       "method": "TF",
       "score": "21-6",
       "duration": "2:20",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -2.44
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29686492132",
+      "opponent_career_id": null,
       "opponent_name": "Cory Thomas",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 64,
       "weight_class": "184",
       "result": "L",
       "method": "TF",
       "score": "18-1",
       "duration": "5:31",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": -4.83
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29679312132",
+      "opponent_career_id": null,
       "opponent_name": "Carter Starocci",
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 1,
       "weight_class": "184",
       "result": "L",
       "method": "TF",
       "score": "20-3",
       "duration": "3:00",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": -1.07
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29682555132",
+      "opponent_career_id": null,
       "opponent_name": "James Rowley",
       "opponent_team": "Purdue",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 12,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 36,
       "weight_class": "184",
       "result": "L",
       "method": "MD",
       "score": "15-2",
       "duration": "7:00",
-      "event": "vs. Purdue"
+      "event": "vs. Purdue",
+      "mv_impact": -2.52
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29685357132",
+      "opponent_career_id": null,
       "opponent_name": "Marcus Petite",
       "opponent_team": "Buffalo",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 63,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 34,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "vs. Buffalo"
+      "event": "vs. Buffalo",
+      "mv_impact": -1.39
     },
     {
       "date": "2024-11-08",
       "opponent_id": "29678067132",
+      "opponent_career_id": null,
       "opponent_name": "Edison Flores",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 244,
       "weight_class": "184",
       "result": "W",
       "method": "MD",
       "score": "12-0",
       "duration": "7:00",
-      "event": "vs. Gardner-Webb"
+      "event": "vs. Gardner-Webb",
+      "mv_impact": 0.44
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29673468132",
+      "opponent_career_id": null,
       "opponent_name": "Spencer Fine",
       "opponent_team": "Columbia",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 52,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 215,
       "weight_class": "184",
       "result": "W",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": 0.36
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29672665132",
+      "opponent_career_id": null,
       "opponent_name": "Isaac Dean",
       "opponent_team": "Rider",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 34,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 13,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "1-0",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -1.29
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29685623132",
+      "opponent_career_id": null,
       "opponent_name": "Michael Squires",
       "opponent_team": "Princeton",
-      "opponent_team_rank": 32,
+      "opponent_team_rank": 37,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "weight_class": "184",
       "result": "L",
       "method": "MD",
       "score": "13-0",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -3.14
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34934318132",
+      "team": "Army West Point",
+      "team_slug": "army_west_point",
+      "weight_class": 184,
+      "grade": "Sr.",
+      "current_rank": 119,
+      "record": "5-5"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29680131132",
+      "team": "Army West Point",
+      "team_slug": "army_west_point",
+      "weight_class": 184,
+      "grade": "Jr.",
+      "current_rank": 191,
+      "record": "3-8"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584916132",
+      "team": "Army West Point",
+      "team_slug": "army_west_point",
+      "weight_class": 197,
+      "grade": "So.",
+      "current_rank": 148,
+      "record": "4-5"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20128539132",
+      "team": "Army West Point",
+      "team_slug": "army_west_point",
+      "weight_class": 184,
+      "grade": "Fr.",
+      "current_rank": 165,
+      "record": "4-6"
+    }
+  ]
 }

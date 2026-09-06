@@ -3,10 +3,15 @@
   "name": "Noah Surtin",
   "team": "Missouri",
   "team_slug": "missouri",
-  "team_rank": 64,
+  "team_rank": 16,
   "weight_class": 125,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 81,
+  "current_rank": 67,
   "record": {
     "overall": "3-2",
     "vs_ranked": "3-2",
@@ -24,7 +29,14 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 2,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 1.759,
+      "matches": 5,
+      "rank_weight": 29,
+      "rank_overall": 320,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
@@ -33,93 +45,165 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29678023132",
-      "opponent_rank": 48,
+      "opponent_rank": 37,
       "opponent_name": "Mack Mauger",
       "method": "TF 15-0 0:00"
     },
     "worst_loss": {
-      "opponent_id": "29723339132",
-      "opponent_rank": 16,
-      "opponent_name": "Blake West",
-      "method": "Fall 5:31"
+      "opponent_id": "29734792132",
+      "opponent_rank": 20,
+      "opponent_name": "Cooper Flynn",
+      "method": "Dec 8-2"
     }
   },
   "match_list": [
     {
       "date": "2024-12-07",
       "opponent_id": "29679944132",
+      "opponent_career_id": null,
       "opponent_name": "Jack Parker",
       "opponent_team": "Bellarmine",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 60,
       "opponent_weight": 125,
-      "opponent_rank": 82,
+      "opponent_rank": 72,
       "weight_class": "125",
       "result": "W",
       "method": "TF",
       "score": "18-3",
       "duration": "4:46",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": 5.27
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29687582132",
+      "opponent_career_id": null,
       "opponent_name": "Marcus Williams",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 15,
       "opponent_weight": 125,
-      "opponent_rank": 185,
+      "opponent_rank": 160,
       "weight_class": "125",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:54",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": 3.52
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29734792132",
+      "opponent_career_id": null,
       "opponent_name": "Cooper Flynn",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 7,
       "opponent_weight": 125,
-      "opponent_rank": 15,
+      "opponent_rank": 20,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": -1.77
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29678023132",
+      "opponent_career_id": null,
       "opponent_name": "Mack Mauger",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 125,
-      "opponent_rank": 48,
+      "opponent_rank": 37,
       "weight_class": "125",
       "result": "W",
       "method": "TF",
       "score": "15-0",
       "duration": "0:00",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": 5.8
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29723339132",
+      "opponent_career_id": null,
       "opponent_name": "Blake West",
       "opponent_team": "Northern Illinois",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 49,
       "opponent_weight": 125,
-      "opponent_rank": 16,
+      "opponent_rank": 12,
       "weight_class": "125",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "5:31",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": -4.02
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29678006132",
+      "team": "Missouri",
+      "team_slug": "missouri",
+      "weight_class": 125,
+      "grade": "",
+      "current_rank": 67,
+      "record": "3-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584010132",
+      "team": "Missouri",
+      "team_slug": "missouri",
+      "weight_class": 125,
+      "grade": "Redshirt Junior",
+      "current_rank": 20,
+      "record": "15-5"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20130987132",
+      "team": "Missouri",
+      "team_slug": "missouri",
+      "weight_class": 125,
+      "grade": "Redshirt Sophomore",
+      "current_rank": 21,
+      "record": "17-7"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16699643132",
+      "team": "Missouri",
+      "team_slug": "missouri",
+      "weight_class": 125,
+      "grade": "Redshirt Freshman",
+      "current_rank": 17,
+      "record": "20-8"
+    },
+    {
+      "season": 2021,
+      "wrestler_id": "14875785132",
+      "team": "Missouri",
+      "team_slug": "missouri",
+      "weight_class": 125,
+      "grade": "Sophomore",
+      "current_rank": 26,
+      "record": "9-6"
+    },
+    {
+      "season": 2020,
+      "wrestler_id": "10539820132",
+      "team": "Missouri",
+      "team_slug": "missouri",
+      "weight_class": 125,
+      "grade": "Freshman",
+      "current_rank": 51,
+      "record": "6-3"
+    }
+  ]
 }

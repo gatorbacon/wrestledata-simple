@@ -3,10 +3,15 @@
   "name": "Sam Smith",
   "team": "Oklahoma State",
   "team_slug": "oklahoma_state",
-  "team_rank": 5,
+  "team_rank": 4,
   "weight_class": 133,
+  "grade": "R-Fr.",
+  "hometown": "Stillwater, Oklahoma",
+  "high_school": "Stillwater",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fokstate.com%2Fimages%2F2024%2F8%2F25%2FSam_Smith.jpg&width=100&height=100&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 100,
+  "current_rank": 72,
   "record": {
     "overall": "4-3",
     "vs_ranked": "4-3",
@@ -24,7 +29,14 @@
     "bonus_rate": 0.25,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.516,
+      "matches": 11,
+      "rank_weight": 72,
+      "rank_overall": 666,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
@@ -33,13 +45,13 @@
     "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "29672451132",
-      "opponent_rank": 95,
+      "opponent_rank": 109,
       "opponent_name": "Wyatt Skebba",
       "method": "TF 19-4 5:36"
     },
     "worst_loss": {
       "opponent_id": "29688273132",
-      "opponent_rank": 85,
+      "opponent_rank": 89,
       "opponent_name": "David Saenz",
       "method": "MD 9-1"
     }
@@ -48,108 +60,154 @@
     {
       "date": "2024-12-22",
       "opponent_id": "29687533132",
+      "opponent_career_id": null,
       "opponent_name": "Chase DeBlaere",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 41,
       "opponent_weight": 133,
-      "opponent_rank": 74,
+      "opponent_rank": 75,
       "weight_class": "133",
       "result": "L",
       "method": "DEC",
       "score": "7-3",
       "duration": "7:00",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": -2.7
     },
     {
       "date": "2024-12-22",
       "opponent_id": "29688273132",
+      "opponent_career_id": null,
       "opponent_name": "David Saenz",
       "opponent_team": "Wyoming",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 35,
       "opponent_weight": 133,
-      "opponent_rank": 85,
+      "opponent_rank": 89,
       "weight_class": "133",
       "result": "L",
       "method": "MD",
       "score": "9-1",
       "duration": "7:00",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": -4.19
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29734990132",
+      "opponent_career_id": null,
       "opponent_name": "Kaden Chinavare",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 45,
       "opponent_weight": 125,
-      "opponent_rank": 123,
+      "opponent_rank": 112,
       "weight_class": "125",
       "result": "W",
       "method": "DEC",
       "score": "11-7",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": 2.08
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29672188132",
+      "opponent_career_id": null,
       "opponent_name": "Christian Tanefeu",
       "opponent_team": "Michigan",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 13,
       "opponent_weight": 125,
-      "opponent_rank": 132,
+      "opponent_rank": 136,
       "weight_class": "125",
       "result": "W",
       "method": "DEC",
       "score": "11-5",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
-    },
-    {
-      "date": "2024-11-09",
-      "opponent_id": "29672192132",
-      "opponent_name": "Nolan Wertanen",
-      "opponent_team": "Michigan",
-      "opponent_team_rank": 62,
-      "opponent_weight": 133,
-      "opponent_rank": 194,
-      "weight_class": "125",
-      "result": "W",
-      "method": "DEC",
-      "score": "4-2",
-      "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": 1.91
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29672419132",
+      "opponent_career_id": null,
       "opponent_name": "Nicolar Rivera",
       "opponent_team": "Wisconsin",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 33,
       "opponent_weight": 125,
-      "opponent_rank": 9,
+      "opponent_rank": 8,
       "weight_class": "125",
       "result": "L",
       "method": "MD",
       "score": "11-2",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": -1.84
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29672451132",
+      "opponent_career_id": null,
       "opponent_name": "Wyatt Skebba",
       "opponent_team": "Wisconsin",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 33,
       "opponent_weight": 125,
-      "opponent_rank": 95,
+      "opponent_rank": 109,
       "weight_class": "125",
       "result": "W",
       "method": "TF",
       "score": "19-4",
       "duration": "5:36",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": 3.88
+    },
+    {
+      "date": "2024-11-09",
+      "opponent_id": "29672192132",
+      "opponent_career_id": null,
+      "opponent_name": "Nolan Wertanen",
+      "opponent_team": "Michigan",
+      "opponent_team_rank": 13,
+      "opponent_weight": 133,
+      "opponent_rank": 192,
+      "weight_class": "125",
+      "result": "W",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "2024 Michigan State Open",
+      "mv_impact": 0.5
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34936406132",
+      "team": "Oklahoma State",
+      "team_slug": "oklahoma_state",
+      "weight_class": 133,
+      "grade": "R-So.",
+      "current_rank": 155,
+      "record": "5-5"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29678437132",
+      "team": "Oklahoma State",
+      "team_slug": "oklahoma_state",
+      "weight_class": 133,
+      "grade": "R-Fr.",
+      "current_rank": 72,
+      "record": "4-3"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24586808132",
+      "team": "Oklahoma State",
+      "team_slug": "oklahoma_state",
+      "weight_class": 125,
+      "grade": "Fr.",
+      "current_rank": 37,
+      "record": "3-0"
+    }
+  ]
 }

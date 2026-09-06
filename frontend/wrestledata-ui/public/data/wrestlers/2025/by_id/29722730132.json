@@ -3,15 +3,20 @@
   "name": "Trey Friedman",
   "team": "Drexel",
   "team_slug": "drexel",
-  "team_rank": 52,
+  "team_rank": 67,
   "weight_class": 141,
+  "grade": "R-Fr.",
+  "hometown": "Mount Laurel, N.J.",
+  "high_school": "Lenape",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fdrexeldragons.com%2Fimages%2F2024%2F9%2F23%2FTrey_Friedman-Wrestling-Cropped.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 268,
   "record": {
     "overall": "1-7",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-7",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 5.9,
@@ -19,142 +24,207 @@
     "pd7": -15.1,
     "si_plus": 99.4,
     "df_plus": 77.4,
-    "apr_plus": 100.9,
+    "apr_plus": 100.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.059,
+      "matches": 8,
+      "rank_weight": 232,
+      "rank_overall": 2250,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29676754132",
+      "opponent_rank": 280,
+      "opponent_name": "Clayton Carr",
+      "method": "Dec 11-9"
+    },
+    "worst_loss": {
+      "opponent_id": "29685362132",
+      "opponent_rank": 247,
+      "opponent_name": "Cole French",
+      "method": "Fall 1:48"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29726563132",
+      "opponent_career_id": null,
       "opponent_name": "Seamus Mack",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 11,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 105,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:27",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -6.03
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29686999132",
+      "opponent_career_id": null,
       "opponent_name": "Jordan Decatur",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 85,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "17-1",
       "duration": "4:43",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -4.61
     },
     {
       "date": "2025-01-04",
       "opponent_id": "29685362132",
+      "opponent_career_id": null,
       "opponent_name": "Cole French",
       "opponent_team": "Buffalo",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 63,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 247,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:48",
-      "event": "Bobby Kauffman Open"
+      "event": "Bobby Kauffman Open",
+      "mv_impact": -8.27
     },
     {
       "date": "2025-01-04",
       "opponent_id": "29685073132",
+      "opponent_career_id": null,
       "opponent_name": "Ethan Mitchell",
       "opponent_team": "Cleveland State",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 56,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 225,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:58",
-      "event": "Bobby Kauffman Open"
+      "event": "Bobby Kauffman Open",
+      "mv_impact": -8.01
     },
     {
       "date": "2025-01-04",
       "opponent_id": "29676754132",
+      "opponent_career_id": null,
       "opponent_name": "Clayton Carr",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 280,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "11-9",
       "duration": "7:00",
-      "event": "Bobby Kauffman Open"
+      "event": "Bobby Kauffman Open",
+      "mv_impact": 0.09
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29685920132",
+      "opponent_career_id": null,
       "opponent_name": "Gaven Suica",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 108,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "21-5",
       "duration": "5:44",
-      "event": "2024 PRTC Keystone Classic"
+      "event": "2024 PRTC Keystone Classic",
+      "mv_impact": -5.04
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29672114132",
+      "opponent_career_id": null,
       "opponent_name": "Sam Latona",
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 6,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 15,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "20-3",
       "duration": "4:11",
-      "event": "2024 PRTC Keystone Classic"
+      "event": "2024 PRTC Keystone Classic",
+      "mv_impact": -3.2
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29680122132",
+      "opponent_career_id": null,
       "opponent_name": "Ryan Franco",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 71,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:00",
-      "event": "Shorty Hitchcock Memorial Open"
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": -5.41
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34971904132",
+      "team": "Drexel",
+      "team_slug": "drexel",
+      "weight_class": 141,
+      "grade": "R-So.",
+      "current_rank": 277,
+      "record": "2-8"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29722730132",
+      "team": "Drexel",
+      "team_slug": "drexel",
+      "weight_class": 141,
+      "grade": "R-Fr.",
+      "current_rank": 268,
+      "record": "1-7"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24605720132",
+      "team": "Drexel",
+      "team_slug": "drexel",
+      "weight_class": 133,
+      "grade": "Fr.",
+      "current_rank": 227,
+      "record": "1-6"
+    }
+  ]
 }

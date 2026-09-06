@@ -3,13 +3,18 @@
   "name": "Andrew Connolly",
   "team": "Pennsylvania",
   "team_slug": "pennsylvania",
-  "team_rank": 24,
+  "team_rank": 20,
   "weight_class": 197,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 239,
   "record": {
     "overall": "0-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,92 +29,136 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.076,
+      "matches": 5,
+      "rank_weight": 209,
+      "rank_overall": 2350,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29687516132",
+      "opponent_rank": 216,
+      "opponent_name": "Mason Pellegri",
+      "method": "Dec 8-5"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-24",
       "opponent_id": "29687516132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Pellegri",
       "opponent_team": "Harvard",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 71,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 216,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "8-5",
       "duration": "7:00",
-      "event": "2024 PRTC Keystone Classic"
+      "event": "2024 PRTC Keystone Classic",
+      "mv_impact": -6.12
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29684134132",
+      "opponent_career_id": null,
       "opponent_name": "Jackson Zimmerman",
       "opponent_team": "Pennsylvania",
-      "opponent_team_rank": 24,
+      "opponent_team_rank": 20,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 192,
       "weight_class": "197",
       "result": "L",
       "method": "MD",
       "score": "13-0",
       "duration": "7:00",
-      "event": "2024 PRTC Keystone Classic"
+      "event": "2024 PRTC Keystone Classic",
+      "mv_impact": -6.35
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29679169132",
+      "opponent_career_id": null,
       "opponent_name": "Max Acciardi",
       "opponent_team": "Arizona State",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 27,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 98,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:32",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -6.68
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29686889132",
+      "opponent_career_id": null,
       "opponent_name": "Cayden Bevis",
       "opponent_team": "Binghamton",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 32,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 93,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "18-2",
       "duration": "6:11",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -5.35
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29680468132",
+      "opponent_career_id": null,
       "opponent_name": "Eric Carlson",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 81,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:25",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -5.89
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29684081132",
+      "team": "Pennsylvania",
+      "team_slug": "pennsylvania",
+      "weight_class": 197,
+      "grade": "",
+      "current_rank": 239,
+      "record": "0-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24592019132",
+      "team": "Pennsylvania",
+      "team_slug": "pennsylvania",
+      "weight_class": 285,
+      "grade": "",
+      "current_rank": 169,
+      "record": "0-0"
+    }
+  ]
 }

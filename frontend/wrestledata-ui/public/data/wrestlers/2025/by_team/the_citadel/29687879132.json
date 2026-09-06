@@ -3,10 +3,15 @@
   "name": "Genaro De La Garza",
   "team": "The Citadel",
   "team_slug": "the_citadel",
-  "team_rank": 75,
+  "team_rank": 50,
   "weight_class": 125,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 78,
+  "current_rank": 126,
   "record": {
     "overall": "1-5",
     "vs_ranked": "1-5",
@@ -19,12 +24,19 @@
     "pd7": -10.36,
     "si_plus": 105.4,
     "df_plus": 83.8,
-    "apr_plus": 98.8,
+    "apr_plus": 98.7,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.814,
+      "matches": 7,
+      "rank_weight": 155,
+      "rank_overall": 1764,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -33,13 +45,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29678513132",
-      "opponent_rank": 103,
+      "opponent_rank": 105,
       "opponent_name": "Abram Cline",
       "method": "Dec 6-4"
     },
     "worst_loss": {
       "opponent_id": "29727240132",
-      "opponent_rank": 109,
+      "opponent_rank": 108,
       "opponent_name": "Charleston Baglio",
       "method": "MD 9-0"
     }
@@ -48,93 +60,127 @@
     {
       "date": "2025-02-02",
       "opponent_id": "29727240132",
+      "opponent_career_id": null,
       "opponent_name": "Charleston Baglio",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 133,
-      "opponent_rank": 109,
+      "opponent_rank": 108,
       "weight_class": "133",
       "result": "L",
       "method": "MD",
       "score": "9-0",
       "duration": "7:00",
-      "event": "2025 Newberry Open"
+      "event": "2025 Newberry Open",
+      "mv_impact": -4.32
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29681423132",
+      "opponent_career_id": null,
       "opponent_name": "Blaine Frazier",
       "opponent_team": "Indiana",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 36,
       "opponent_weight": 125,
-      "opponent_rank": 36,
+      "opponent_rank": 28,
       "weight_class": "125",
       "result": "L",
       "method": "MD",
       "score": "16-5",
       "duration": "7:00",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": -2.36
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29678513132",
+      "opponent_career_id": null,
       "opponent_name": "Abram Cline",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 17,
       "opponent_weight": 125,
-      "opponent_rank": 103,
+      "opponent_rank": 105,
       "weight_class": "125",
       "result": "W",
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": 2.72
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29673837132",
+      "opponent_career_id": null,
       "opponent_name": "Alan Koehler",
       "opponent_team": "Nebraska",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 2,
       "opponent_weight": 125,
-      "opponent_rank": 46,
+      "opponent_rank": 50,
       "weight_class": "125",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "2:08",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": -4.4
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29727168132",
+      "opponent_career_id": null,
       "opponent_name": "Colby McBride",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 125,
-      "opponent_rank": 57,
+      "opponent_rank": 78,
       "weight_class": "125",
       "result": "L",
       "method": "MD",
       "score": "17-3",
       "duration": "7:00",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -3.79
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29674075132",
+      "opponent_career_id": null,
       "opponent_name": "Christian Gill",
       "opponent_team": "NC State",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 14,
       "opponent_weight": 125,
-      "opponent_rank": 37,
+      "opponent_rank": 29,
       "weight_class": "125",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "2:05",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -3.23
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29687879132",
+      "team": "The Citadel",
+      "team_slug": "the_citadel",
+      "weight_class": 125,
+      "grade": "",
+      "current_rank": 126,
+      "record": "1-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24587000132",
+      "team": "The Citadel",
+      "team_slug": "the_citadel",
+      "weight_class": 125,
+      "grade": "Fr.",
+      "current_rank": 171,
+      "record": "0-2"
+    }
+  ]
 }

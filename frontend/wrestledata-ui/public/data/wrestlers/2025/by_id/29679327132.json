@@ -5,13 +5,18 @@
   "team_slug": "penn_state",
   "team_rank": 1,
   "weight_class": 149,
+  "grade": "Sophomore",
+  "hometown": "Erie, Pa.",
+  "high_school": "Harbor Creek",
+  "photo_url": "https://gopsusports.com/imgproxy/ZCKP1t7pZdU8AATbD59jhrteu2fhS_W_QLgp2Mv8T8A/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2dvcHN1c3BvcnRzLXByb2QvMjAyNC8xMC8wMi9YZ3Aya3lKQ3ZUNXQ4djA0MDZOaEZiU1lwbEZTMWlwWm1rRWhXVnV4LmpwZw.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 55,
   "record": {
     "overall": "7-3",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "7-3",
+    "vs_top10": "0-1",
+    "vs_top25": "2-1"
   },
   "metrics": {
     "pf7": 6.66,
@@ -19,172 +24,251 @@
     "pd7": 0.95,
     "si_plus": 105.6,
     "df_plus": 105.7,
-    "apr_plus": 106.2,
+    "apr_plus": 106.1,
     "pin_rate": 0.143,
     "bonus_rate": 0.429,
     "majors": 2,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 1.47,
+      "matches": 11,
+      "rank_weight": 41,
+      "rank_overall": 390,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 7,
+    "ranked_losses": 3,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29687870132",
+      "opponent_rank": 18,
+      "opponent_name": "Carson DesRosier",
+      "method": "SV-3 7-4"
+    },
+    "worst_loss": {
+      "opponent_id": "29681466132",
+      "opponent_rank": 151,
+      "opponent_name": "Michael Cetta",
+      "method": "Dec 8-1"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-05",
       "opponent_id": "29678069132",
+      "opponent_career_id": null,
       "opponent_name": "Hunter Jones",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 266,
       "weight_class": "149",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:22",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": 3.43
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29687554132",
+      "opponent_career_id": null,
       "opponent_name": "jordan williams",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 15,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 8,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "10-5",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -0.83
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29673255132",
+      "opponent_career_id": null,
       "opponent_name": "Adam Busiello",
       "opponent_team": "Northern Colorado",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 30,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 203,
       "weight_class": "149",
       "result": "W",
       "method": "MD",
       "score": "11-1",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": 1.8
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29687364132",
+      "opponent_career_id": null,
       "opponent_name": "Willie McDougald",
       "opponent_team": "Oklahoma",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 40,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 20,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": 4.62
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29687870132",
+      "opponent_career_id": null,
       "opponent_name": "Carson DesRosier",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 18,
       "weight_class": "149",
       "result": "W",
       "method": "SV-3",
       "score": "7-4",
       "duration": "8:15",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": 4.91
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29680125132",
+      "opponent_career_id": null,
       "opponent_name": "Trae McDaniel",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "weight_class": "149",
       "result": "W",
       "method": "MD",
       "score": "16-7",
       "duration": "7:00",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": 5.39
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29680800132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Barvitskie",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 134,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "8-5",
       "duration": "7:00",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": 2.73
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29686882132",
+      "opponent_career_id": null,
       "opponent_name": "Ivan Garcia",
       "opponent_team": "Binghamton",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 32,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 80,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "10-4",
       "duration": "7:00",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": -2.66
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29681466132",
+      "opponent_career_id": null,
       "opponent_name": "Michael Cetta",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 31,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 151,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "8-1",
       "duration": "7:00",
-      "event": "Black Knight Invite"
+      "event": "Black Knight Invite",
+      "mv_impact": -3.14
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29722721132",
+      "opponent_career_id": null,
       "opponent_name": "Dominic Findora",
       "opponent_team": "Drexel",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 67,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 86,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "vs. Penn State"
+      "event": "vs. Penn State",
+      "mv_impact": 3.06
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34939017132",
+      "team": "Penn State",
+      "team_slug": "penn_state",
+      "weight_class": 149,
+      "grade": "Junior",
+      "current_rank": 35,
+      "record": "11-1"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29679327132",
+      "team": "Penn State",
+      "team_slug": "penn_state",
+      "weight_class": 149,
+      "grade": "Sophomore",
+      "current_rank": 55,
+      "record": "7-3"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584824132",
+      "team": "Penn State",
+      "team_slug": "penn_state",
+      "weight_class": 149,
+      "grade": "Redshirt Freshman",
+      "current_rank": 120,
+      "record": "7-6"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20124421132",
+      "team": "Penn State",
+      "team_slug": "penn_state",
+      "weight_class": 149,
+      "grade": "Freshman",
+      "current_rank": 48,
+      "record": "7-1"
+    }
+  ]
 }

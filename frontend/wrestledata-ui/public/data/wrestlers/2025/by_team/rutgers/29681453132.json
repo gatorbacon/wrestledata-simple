@@ -3,13 +3,18 @@
   "name": "Damian Weaver",
   "team": "Rutgers",
   "team_slug": "rutgers",
-  "team_rank": 13,
+  "team_rank": 31,
   "weight_class": 174,
+  "grade": "So.",
+  "hometown": "Lyndhurst, N.J.",
+  "high_school": "Lyndhurst",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fscarletknights.com%2Fimages%2F2024%2F10%2F2%2FWeaver_Damian.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 85,
   "record": {
     "overall": "3-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,82 +24,139 @@
     "pd7": 0.67,
     "si_plus": 92.9,
     "df_plus": 108.4,
-    "apr_plus": 120.1,
+    "apr_plus": 119.8,
     "pin_rate": 0.333,
     "bonus_rate": 0.333,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 0.297,
+      "matches": 4,
+      "rank_weight": 71,
+      "rank_overall": 741,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29680083132",
+      "opponent_rank": 189,
+      "opponent_name": "Eric Shindel",
+      "method": "Dec 4-2"
+    },
+    "worst_loss": {
+      "opponent_id": "29681407132",
+      "opponent_rank": 104,
+      "opponent_name": "Luke Gayer",
+      "method": "Dec 7-0"
+    }
   },
   "match_list": [
     {
       "date": "2025-03-02",
       "opponent_id": "29673108132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler Shea",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 273,
       "weight_class": "174",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:28",
-      "event": "Zingo Nationals (The Open)"
+      "event": "Zingo Nationals (The Open)",
+      "mv_impact": 2.77
     },
     {
       "date": "2025-03-02",
       "opponent_id": "29680083132",
+      "opponent_career_id": null,
       "opponent_name": "Eric Shindel",
       "opponent_team": "Hofstra",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 57,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 189,
       "weight_class": "174",
       "result": "W",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Zingo Nationals (The Open)"
+      "event": "Zingo Nationals (The Open)",
+      "mv_impact": 1.03
     },
     {
       "date": "2025-03-02",
       "opponent_id": "29719869132",
+      "opponent_career_id": null,
       "opponent_name": "braden Brown",
       "opponent_team": "LIU",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 73,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 253,
       "weight_class": "174",
       "result": "W",
       "method": "DEC",
       "score": "9-2",
       "duration": "7:00",
-      "event": "Zingo Nationals (The Open)"
+      "event": "Zingo Nationals (The Open)",
+      "mv_impact": 0.33
     },
     {
       "date": "2025-03-02",
       "opponent_id": "29681407132",
+      "opponent_career_id": null,
       "opponent_name": "Luke Gayer",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 31,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 104,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "7-0",
       "duration": "7:00",
-      "event": "Zingo Nationals (The Open)"
+      "event": "Zingo Nationals (The Open)",
+      "mv_impact": -2.95
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34945158132",
+      "team": "Rutgers",
+      "team_slug": "rutgers",
+      "weight_class": 197,
+      "grade": "Jr.",
+      "current_rank": 171,
+      "record": "1-6"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29681453132",
+      "team": "Rutgers",
+      "team_slug": "rutgers",
+      "weight_class": 174,
+      "grade": "So.",
+      "current_rank": 85,
+      "record": "3-1"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24582156132",
+      "team": "Rutgers",
+      "team_slug": "rutgers",
+      "weight_class": 165,
+      "grade": "Fr.",
+      "current_rank": 279,
+      "record": "0-4"
+    }
+  ]
 }

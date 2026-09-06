@@ -3,13 +3,18 @@
   "name": "Rylan Breen",
   "team": "NC State",
   "team_slug": "nc_state",
-  "team_rank": 3,
+  "team_rank": 14,
   "weight_class": 184,
+  "grade": "Fr.",
+  "hometown": "Mokena, Ill.",
+  "high_school": "Mount Carmel High School",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgopack.com%2Fimages%2F2024%2F8%2F27%2FRylanBreenHS.png&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 207,
   "record": {
     "overall": "3-6",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-6",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,115 +29,145 @@
     "bonus_rate": 0.333,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.676,
+      "matches": 8,
+      "rank_weight": 176,
+      "rank_overall": 1968,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29680921132",
+      "opponent_rank": 97,
+      "opponent_name": "Zahir McLean-Felix",
+      "method": "Dec 6-4"
+    },
+    "worst_loss": {
+      "opponent_id": "29677459132",
+      "opponent_rank": 246,
+      "opponent_name": "Brett Sanderlin",
+      "method": "SV-3 4-1"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-23",
       "opponent_id": "29677459132",
+      "opponent_career_id": null,
       "opponent_name": "Brett Sanderlin",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 246,
       "weight_class": "184",
       "result": "L",
       "method": "SV-3",
       "score": "4-1",
       "duration": "8:15",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": -6.23
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29677495132",
+      "opponent_career_id": null,
       "opponent_name": "Josh Lange",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 250,
       "weight_class": "184",
       "result": "W",
       "method": "MD",
       "score": "12-2",
       "duration": "7:00",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": 0.15
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29676073132",
+      "opponent_career_id": null,
       "opponent_name": "Aidan Schlett",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 176,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": -4.57
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29727160132",
+      "opponent_career_id": null,
       "opponent_name": "Dalton Battle",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 196,
       "weight_class": "184",
       "result": "L",
       "method": "MD",
       "score": "13-3",
       "duration": "7:00",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -6.77
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29685357132",
+      "opponent_career_id": null,
       "opponent_name": "Marcus Petite",
       "opponent_team": "Buffalo",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 63,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 34,
       "weight_class": "184",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:56",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -4.39
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29680921132",
+      "opponent_career_id": null,
       "opponent_name": "Zahir McLean-Felix",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 97,
       "weight_class": "184",
       "result": "W",
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 2.95
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29672205132",
+      "opponent_career_id": null,
       "opponent_name": "Nico Bogardus",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 78,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 223,
       "weight_class": "184",
       "result": "W",
       "method": "MFF",
@@ -143,33 +178,59 @@
     {
       "date": "2024-11-03",
       "opponent_id": "29727160132",
+      "opponent_career_id": null,
       "opponent_name": "Dalton Battle",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 196,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "9-6",
       "duration": "7:00",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -5.77
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29687862132",
+      "opponent_career_id": null,
       "opponent_name": "Micah Dicarlo",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 182,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "12-8",
       "duration": "7:00",
-      "event": "Battle at the Citadel"
+      "event": "Battle at the Citadel",
+      "mv_impact": -4.77
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34935698132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 184,
+      "grade": "R-Fr.",
+      "current_rank": 174,
+      "record": "3-9"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29674065132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 184,
+      "grade": "Fr.",
+      "current_rank": 207,
+      "record": "3-6"
+    }
+  ]
 }

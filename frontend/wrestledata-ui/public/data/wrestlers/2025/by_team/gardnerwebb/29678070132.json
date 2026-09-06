@@ -3,13 +3,18 @@
   "name": "Jackson Lusk",
   "team": "Gardner-Webb",
   "team_slug": "gardnerwebb",
-  "team_rank": 56,
+  "team_rank": 53,
   "weight_class": 157,
+  "grade": "R-Fr.",
+  "hometown": "Youngsville, Ohio",
+  "high_school": "Spire Academy",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgwu.sidearmsports.com%2Fimages%2F2024%2F10%2F16%2FLusk_w0cly.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 282,
   "record": {
     "overall": "0-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,62 +29,112 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.896,
+      "matches": 3,
+      "rank_weight": 268,
+      "rank_overall": 2333,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29675189132",
+      "opponent_rank": 197,
+      "opponent_name": "Evan Mason",
+      "method": "MD 16-4"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-25",
       "opponent_id": "29675189132",
+      "opponent_career_id": null,
       "opponent_name": "Evan Mason",
       "opponent_team": "VMI",
-      "opponent_team_rank": 77,
+      "opponent_team_rank": 79,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 197,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "16-4",
       "duration": "7:00",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -5.98
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29727165132",
+      "opponent_career_id": null,
       "opponent_name": "Nicholas Grizales",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 134,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:34",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -6.02
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29678501132",
+      "opponent_career_id": null,
       "opponent_name": "AJ Rodrigues",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 17,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 82,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:28",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -5.69
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34937485132",
+      "team": "Gardner-Webb",
+      "team_slug": "gardnerwebb",
+      "weight_class": 184,
+      "grade": "R-So.",
+      "current_rank": 202,
+      "record": "0-1"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29678070132",
+      "team": "Gardner-Webb",
+      "team_slug": "gardnerwebb",
+      "weight_class": 157,
+      "grade": "R-Fr.",
+      "current_rank": 282,
+      "record": "0-3"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24593003132",
+      "team": "Gardner-Webb",
+      "team_slug": "gardnerwebb",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 224,
+      "record": "2-3"
+    }
+  ]
 }

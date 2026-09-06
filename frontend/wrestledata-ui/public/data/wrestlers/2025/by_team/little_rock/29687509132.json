@@ -3,13 +3,18 @@
   "name": "Liam Daniels",
   "team": "Little Rock",
   "team_slug": "little_rock",
-  "team_rank": 28,
+  "team_rank": 15,
   "weight_class": 197,
+  "grade": "FRESHMAN",
+  "hometown": "Edmond, Okla.",
+  "high_school": "Del City HS",
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 143,
   "record": {
     "overall": "3-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,127 +24,180 @@
     "pd7": -4.88,
     "si_plus": 99.3,
     "df_plus": 89.3,
-    "apr_plus": 97.2,
+    "apr_plus": 97.1,
     "pin_rate": 0.0,
     "bonus_rate": 0.333,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.94,
+      "matches": 7,
+      "rank_weight": 128,
+      "rank_overall": 1508,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29680369132",
+      "opponent_rank": 147,
+      "opponent_name": "Colby Runner",
+      "method": "Dec 4-2"
+    },
+    "worst_loss": {
+      "opponent_id": "29679974132",
+      "opponent_rank": 60,
+      "opponent_name": "Andrew Liber",
+      "method": "MD 14-5"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-19",
       "opponent_id": "29680369132",
+      "opponent_career_id": null,
       "opponent_name": "Colby Runner",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 147,
       "weight_class": "197",
       "result": "W",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": 1.16
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29681382132",
+      "opponent_career_id": null,
       "opponent_name": "Sawyer Bartelt",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "16-1",
       "duration": "1:16",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": -3.82
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29680348132",
+      "opponent_career_id": null,
       "opponent_name": "Jacob Cates",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 184,
       "weight_class": "197",
       "result": "W",
       "method": "MD",
       "score": "14-1",
       "duration": "7:00",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": 1.12
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29680357132",
+      "opponent_career_id": null,
       "opponent_name": "Nathan Schon",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 55,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:25",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": -5.73
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29679974132",
+      "opponent_career_id": null,
       "opponent_name": "Andrew Liber",
       "opponent_team": "Bellarmine",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 60,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 60,
       "weight_class": "197",
       "result": "L",
       "method": "MD",
       "score": "14-5",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -3.99
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29677477132",
+      "opponent_career_id": null,
       "opponent_name": "Savoy New",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 217,
       "weight_class": "197",
       "result": "W",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -0.01
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29672136132",
+      "opponent_career_id": null,
       "opponent_name": "Sonny Sasso",
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 6,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 30,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "1:57",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -2.31
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34945357132",
+      "team": "Little Rock",
+      "team_slug": "little_rock",
+      "weight_class": 197,
+      "grade": "SOPHOMORE",
+      "current_rank": 116,
+      "record": "0-7"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29687509132",
+      "team": "Little Rock",
+      "team_slug": "little_rock",
+      "weight_class": 197,
+      "grade": "FRESHMAN",
+      "current_rank": 143,
+      "record": "3-4"
+    }
+  ]
 }

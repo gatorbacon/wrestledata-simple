@@ -3,13 +3,18 @@
   "name": "Kenny Herrmann",
   "team": "Harvard",
   "team_slug": "harvard",
-  "team_rank": 58,
+  "team_rank": 71,
   "weight_class": 157,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 114,
   "record": {
     "overall": "2-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,67 +24,132 @@
     "pd7": 0.0,
     "si_plus": 94.8,
     "df_plus": 106.4,
-    "apr_plus": 98.3,
+    "apr_plus": 98.2,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.245,
+      "matches": 3,
+      "rank_weight": 110,
+      "rank_overall": 933,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29676493132",
+      "opponent_rank": 153,
+      "opponent_name": "Pablo Macias",
+      "method": "Dec 8-1"
+    },
+    "worst_loss": {
+      "opponent_id": "29680138132",
+      "opponent_rank": 117,
+      "opponent_name": "Micah Hanau",
+      "method": "MD 12-2"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29680138132",
+      "opponent_career_id": null,
       "opponent_name": "Micah Hanau",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 117,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "12-2",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -3.97
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29676493132",
+      "opponent_career_id": null,
       "opponent_name": "Pablo Macias",
       "opponent_team": "Campbell",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 55,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 153,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "8-1",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": 2.06
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29685293132",
+      "opponent_career_id": null,
       "opponent_name": "Cooper Rathburn",
       "opponent_team": "Navy",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 28,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 215,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "3-0",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": 1.17
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29687481132",
+      "team": "Harvard",
+      "team_slug": "harvard",
+      "weight_class": 157,
+      "grade": "",
+      "current_rank": 114,
+      "record": "2-1"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24593544132",
+      "team": "Harvard",
+      "team_slug": "harvard",
+      "weight_class": 149,
+      "grade": "Jr.",
+      "current_rank": 203,
+      "record": "5-9"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20132197132",
+      "team": "Harvard",
+      "team_slug": "harvard",
+      "weight_class": 141,
+      "grade": "So.",
+      "current_rank": 66,
+      "record": "7-5"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16701711132",
+      "team": "Harvard",
+      "team_slug": "harvard",
+      "weight_class": 141,
+      "grade": "Fy",
+      "current_rank": 100,
+      "record": "7-7"
+    }
+  ]
 }

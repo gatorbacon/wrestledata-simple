@@ -3,13 +3,18 @@
   "name": "Hogan Horsey",
   "team": "Rider",
   "team_slug": "rider",
-  "team_rank": 72,
+  "team_rank": 34,
   "weight_class": 149,
+  "grade": "Jr.",
+  "hometown": "Mays Landing, NJ",
+  "high_school": "Oakcrest HS",
+  "photo_url": "https://gobroncs.com/images/2024/10/17/Hogan_hzCie.JPG",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 224,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,62 +29,127 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.821,
+      "matches": 3,
+      "rank_weight": 199,
+      "rank_overall": 1768,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29680096132",
+      "opponent_rank": 141,
+      "opponent_name": "Dylan Zenion",
+      "method": "Dec 9-3"
+    },
+    "worst_loss": {
+      "opponent_id": "29672757132",
+      "opponent_rank": 246,
+      "opponent_name": "Cael Huxford",
+      "method": "Dec 18-11"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-03",
       "opponent_id": "29680096132",
+      "opponent_career_id": null,
       "opponent_name": "Dylan Zenion",
       "opponent_team": "Hofstra",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 57,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 141,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "9-3",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": 2.52
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29676689132",
+      "opponent_career_id": null,
       "opponent_name": "Dashawn Farber",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 132,
       "weight_class": "149",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "5:45",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -6.0
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29672757132",
+      "opponent_career_id": null,
       "opponent_name": "Cael Huxford",
       "opponent_team": "Rider",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 34,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 246,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "18-11",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -4.98
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34934828132",
+      "team": "Rider",
+      "team_slug": "rider",
+      "weight_class": 149,
+      "grade": "Sr.",
+      "current_rank": 168,
+      "record": "0-2"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29672675132",
+      "team": "Rider",
+      "team_slug": "rider",
+      "weight_class": 149,
+      "grade": "Jr.",
+      "current_rank": 224,
+      "record": "1-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584425132",
+      "team": "Rider",
+      "team_slug": "rider",
+      "weight_class": 157,
+      "grade": "Sr.",
+      "current_rank": 243,
+      "record": "2-5"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20135083132",
+      "team": "Rider",
+      "team_slug": "rider",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 221,
+      "record": "1-2"
+    }
+  ]
 }

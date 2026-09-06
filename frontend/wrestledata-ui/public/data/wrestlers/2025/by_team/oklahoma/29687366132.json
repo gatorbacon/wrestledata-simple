@@ -3,13 +3,18 @@
   "name": "Ryder Wiese",
   "team": "Oklahoma",
   "team_slug": "oklahoma",
-  "team_rank": 30,
+  "team_rank": 40,
   "weight_class": 285,
+  "grade": "Jr.",
+  "hometown": "Blanchard, Okla.",
+  "high_school": "Blanchard HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fsoonersports.com%2Fimages%2F2024%2F9%2F9%2FWiese__Dh27a.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 108,
   "record": {
     "overall": "2-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,82 +24,149 @@
     "pd7": -1.5,
     "si_plus": 88.3,
     "df_plus": 111.4,
-    "apr_plus": 96.2,
+    "apr_plus": 96.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.003,
+      "matches": 4,
+      "rank_weight": 79,
+      "rank_overall": 838,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29675872132",
+      "opponent_rank": 111,
+      "opponent_name": "Shilo Jones",
+      "method": "TB-2 (RT) 2-2"
+    },
+    "worst_loss": {
+      "opponent_id": "29681683132",
+      "opponent_rank": 90,
+      "opponent_name": "Kaleb Snodgrass",
+      "method": "Dec 8-2"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-21",
       "opponent_id": "29681683132",
+      "opponent_career_id": null,
       "opponent_name": "Kaleb Snodgrass",
       "opponent_team": "Chattanooga",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 51,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 90,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "vs. Oklahoma"
+      "event": "vs. Oklahoma",
+      "mv_impact": -3.41
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29721858132",
+      "opponent_career_id": null,
       "opponent_name": "Antonio Ramos",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 123,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "2-1",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": 2.87
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29734780132",
+      "opponent_career_id": null,
       "opponent_name": "Bennett Tabor",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 7,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 44,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "2-1",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -1.52
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29675872132",
+      "opponent_career_id": null,
       "opponent_name": "Shilo Jones",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 48,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 111,
       "weight_class": "285",
       "result": "W",
       "method": "TB-2",
       "score": "2-2",
       "duration": "10:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": 2.05
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29687366132",
+      "team": "Oklahoma",
+      "team_slug": "oklahoma",
+      "weight_class": 285,
+      "grade": "Jr.",
+      "current_rank": 108,
+      "record": "2-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24582368132",
+      "team": "Oklahoma",
+      "team_slug": "oklahoma",
+      "weight_class": 285,
+      "grade": "Jr.",
+      "current_rank": 212,
+      "record": "0-1"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20123660132",
+      "team": "Oklahoma",
+      "team_slug": "oklahoma",
+      "weight_class": 285,
+      "grade": "So.",
+      "current_rank": 90,
+      "record": "2-2"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16698134132",
+      "team": "Oklahoma",
+      "team_slug": "oklahoma",
+      "weight_class": 285,
+      "grade": "Fr.",
+      "current_rank": 108,
+      "record": "1-1"
+    }
+  ]
 }

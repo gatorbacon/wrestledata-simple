@@ -3,13 +3,18 @@
   "name": "Jake Allred",
   "team": "Franklin & Marshall",
   "team_slug": "franklin__marshall",
-  "team_rank": 55,
+  "team_rank": 70,
   "weight_class": 184,
+  "grade": "So.",
+  "hometown": "Paoli, Pa.",
+  "high_school": "Conestoga",
+  "photo_url": "https://godiplomats.com/images/2024/9/24/Allred__Jake.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 237,
   "record": {
     "overall": "0-7",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-7",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,122 +29,180 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.895,
+      "matches": 7,
+      "rank_weight": 206,
+      "rank_overall": 2332,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29678067132",
+      "opponent_rank": 244,
+      "opponent_name": "Edison Flores",
+      "method": "Dec 8-5"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-20",
       "opponent_id": "29673114132",
+      "opponent_career_id": null,
       "opponent_name": "Pantaleo Varga",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 243,
       "weight_class": "184",
       "result": "L",
       "method": "SV-3",
       "score": "2-1",
       "duration": "8:15",
-      "event": "Sheridan invite"
+      "event": "Sheridan invite",
+      "mv_impact": -6.27
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29733397132",
+      "opponent_career_id": null,
       "opponent_name": "Justin Phillips",
       "opponent_team": "Virginia",
-      "opponent_team_rank": 78,
+      "opponent_team_rank": 42,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 107,
       "weight_class": "184",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:42",
-      "event": "Sheridan invite"
+      "event": "Sheridan invite",
+      "mv_impact": -6.33
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29681430132",
+      "opponent_career_id": null,
       "opponent_name": "Michael Toranzo",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 31,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 113,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "10-3",
       "duration": "7:00",
-      "event": "Shorty Hitchcock Memorial Open"
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": -3.52
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29687479132",
+      "opponent_career_id": null,
       "opponent_name": "Doak Dean",
       "opponent_team": "Harvard",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 71,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 190,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "11-6",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -5.8
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29721366132",
+      "opponent_career_id": null,
       "opponent_name": "Jack Wilt",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 11,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 74,
       "weight_class": "184",
       "result": "L",
       "method": "TF",
       "score": "18-1",
       "duration": "4:41",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -5.0
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29678067132",
+      "opponent_career_id": null,
       "opponent_name": "Edison Flores",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 244,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "8-5",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -6.56
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29733385132",
+      "opponent_career_id": null,
       "opponent_name": "Jack Lesher",
       "opponent_team": "Virginia",
-      "opponent_team_rank": 78,
+      "opponent_team_rank": 42,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 179,
       "weight_class": "184",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:06",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -7.78
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34934454132",
+      "team": "Franklin & Marshall",
+      "team_slug": "franklin__marshall",
+      "weight_class": 197,
+      "grade": "Jr.",
+      "current_rank": 178,
+      "record": "1-9"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29673103132",
+      "team": "Franklin & Marshall",
+      "team_slug": "franklin__marshall",
+      "weight_class": 184,
+      "grade": "So.",
+      "current_rank": 237,
+      "record": "0-7"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24580065132",
+      "team": "Franklin & Marshall",
+      "team_slug": "franklin__marshall",
+      "weight_class": 184,
+      "grade": "Fy.",
+      "current_rank": 219,
+      "record": "2-10"
+    }
+  ]
 }

@@ -3,13 +3,18 @@
   "name": "Brandt Fajerman",
   "team": "Franklin & Marshall",
   "team_slug": "franklin__marshall",
-  "team_rank": 55,
+  "team_rank": 70,
   "weight_class": 141,
+  "grade": "So.",
+  "hometown": "Davidson, N.C.",
+  "high_school": "William Amos Hough",
+  "photo_url": "https://godiplomats.com/images/2024/9/24/Fajerman__Brandt.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 167,
   "record": {
     "overall": "3-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,142 +24,207 @@
     "pd7": -1.6,
     "si_plus": 95.9,
     "df_plus": 101.8,
-    "apr_plus": 108.7,
+    "apr_plus": 108.5,
     "pin_rate": 0.333,
     "bonus_rate": 0.667,
     "majors": 1,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.745,
+      "matches": 10,
+      "rank_weight": 150,
+      "rank_overall": 1440,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29683817132",
+      "opponent_rank": 175,
+      "opponent_name": "Trevor Nugent",
+      "method": "MD 9-1"
+    },
+    "worst_loss": {
+      "opponent_id": "29672621132",
+      "opponent_rank": 235,
+      "opponent_name": "Phoenix Alyea",
+      "method": "Dec 10-6"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29679326132",
+      "opponent_career_id": null,
       "opponent_name": "Timothy Levine",
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 188,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "8-3",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -4.02
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29676280132",
+      "opponent_career_id": null,
       "opponent_name": "Andre Gonzales",
       "opponent_team": "Ohio State",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 5,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 35,
       "weight_class": "141",
       "result": "L",
       "method": "MD",
       "score": "19-5",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -2.27
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29680122132",
+      "opponent_career_id": null,
       "opponent_name": "Ryan Franco",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 71,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:44",
-      "event": "Shorty Hitchcock Memorial Open"
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": -5.41
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29683817132",
+      "opponent_career_id": null,
       "opponent_name": "Trevor Nugent",
       "opponent_team": "Bucknell",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 43,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 175,
       "weight_class": "141",
       "result": "W",
       "method": "MD",
       "score": "9-1",
       "duration": "7:00",
-      "event": "Shorty Hitchcock Memorial Open"
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": 1.81
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29734771132",
+      "opponent_career_id": null,
       "opponent_name": "Malachi Bordovsky",
       "opponent_team": "Drexel",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 67,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 123,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "7:00",
-      "event": "Shorty Hitchcock Memorial Open"
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": -6.97
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29681410132",
+      "opponent_career_id": null,
       "opponent_name": "Max Hermes",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 31,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 179,
       "weight_class": "141",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "5:51",
-      "event": "Shorty Hitchcock Memorial Open"
+      "event": "Shorty Hitchcock Memorial Open",
+      "mv_impact": 4.21
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29672621132",
+      "opponent_career_id": null,
       "opponent_name": "Phoenix Alyea",
       "opponent_team": "VMI",
-      "opponent_team_rank": 77,
+      "opponent_team_rank": 79,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 235,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "10-6",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -4.75
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29723877132",
+      "opponent_career_id": null,
       "opponent_name": "Myrin Nixon",
       "opponent_team": "Morgan State",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 75,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 266,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "8-1",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -0.24
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34934456132",
+      "team": "Franklin & Marshall",
+      "team_slug": "franklin__marshall",
+      "weight_class": 141,
+      "grade": "Jr.",
+      "current_rank": 101,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29673105132",
+      "team": "Franklin & Marshall",
+      "team_slug": "franklin__marshall",
+      "weight_class": 141,
+      "grade": "So.",
+      "current_rank": 167,
+      "record": "3-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24580070132",
+      "team": "Franklin & Marshall",
+      "team_slug": "franklin__marshall",
+      "weight_class": 141,
+      "grade": "Fy.",
+      "current_rank": 246,
+      "record": "2-8"
+    }
+  ]
 }

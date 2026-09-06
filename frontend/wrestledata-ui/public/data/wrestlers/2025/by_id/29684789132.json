@@ -3,15 +3,20 @@
   "name": "Ty Watters",
   "team": "West Virginia",
   "team_slug": "west_virginia",
-  "team_rank": 22,
+  "team_rank": 18,
   "weight_class": 149,
+  "grade": "So.",
+  "hometown": "Imperial, Pa.",
+  "high_school": "West Allegheny HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fwvuni.sidearmsports.com%2Fimages%2F2024%2F9%2F26%2FWatters_Ty_3IHFZ.png&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 27,
   "record": {
     "overall": "4-0",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "4-0",
+    "vs_top10": "2-0",
+    "vs_top25": "3-0"
   },
   "metrics": {
     "pf7": 10.26,
@@ -19,82 +24,134 @@
     "pd7": 8.85,
     "si_plus": 120.8,
     "df_plus": 116.3,
-    "apr_plus": 116.5,
+    "apr_plus": 116.3,
     "pin_rate": 0.25,
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 1,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": 4.978,
+      "matches": 5,
+      "rank_weight": 2,
+      "rank_overall": 9,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 4,
     "ranked_losses": 0,
-    "top10_wins": 0,
+    "top10_wins": 2,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "29676006132",
+      "opponent_rank": 5,
+      "opponent_name": "Lachlan McNeil",
+      "method": "SV-3 4-1"
+    },
     "worst_loss": null
   },
   "match_list": [
     {
       "date": "2024-11-14",
       "opponent_id": "29685858132",
+      "opponent_career_id": null,
       "opponent_name": "Sammy Alvarez",
       "opponent_team": "Rider",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 34,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 7,
       "weight_class": "149",
       "result": "W",
       "method": "TF",
       "score": "16-1",
       "duration": "5:00",
-      "event": "vs. West Virginia"
+      "event": "vs. West Virginia",
+      "mv_impact": 7.01
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29676006132",
+      "opponent_career_id": null,
       "opponent_name": "Lachlan McNeil",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 5,
       "weight_class": "149",
       "result": "W",
       "method": "SV-3",
       "score": "4-1",
       "duration": "8:15",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": 5.35
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29675817132",
+      "opponent_career_id": null,
       "opponent_name": "Gavin Drexler",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 48,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 16,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": 4.55
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29672615132",
+      "opponent_career_id": null,
       "opponent_name": "Raymond Cmil",
       "opponent_team": "VMI",
-      "opponent_team_rank": 77,
+      "opponent_team_rank": 79,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 255,
       "weight_class": "149",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:35",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": 3.99
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34946729132",
+      "team": "West Virginia",
+      "team_slug": "west_virginia",
+      "weight_class": 157,
+      "grade": "R-So.",
+      "current_rank": 7,
+      "record": "23-6"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29684789132",
+      "team": "West Virginia",
+      "team_slug": "west_virginia",
+      "weight_class": 149,
+      "grade": "So.",
+      "current_rank": 27,
+      "record": "4-0"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24592391132",
+      "team": "West Virginia",
+      "team_slug": "west_virginia",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 6,
+      "record": "26-5"
+    }
+  ]
 }

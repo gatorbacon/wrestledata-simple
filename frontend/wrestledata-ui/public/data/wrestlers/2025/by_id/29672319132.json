@@ -3,13 +3,18 @@
   "name": "Alejandro Herrera-Rondon",
   "team": "Clarion",
   "team_slug": "clarion",
-  "team_rank": 47,
+  "team_rank": 65,
   "weight_class": 157,
+  "grade": "R-Jr.",
+  "hometown": "Zelienople, Pa.",
+  "high_school": "Seneca Valley",
+  "photo_url": "https://clariongoldeneagles.com/images/2024/11/7/_Herrera-RondonAlejandro.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 147,
   "record": {
     "overall": "3-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,107 +29,188 @@
     "bonus_rate": 0.667,
     "majors": 1,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.773,
+      "matches": 9,
+      "rank_weight": 134,
+      "rank_overall": 1123,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29676295132",
+      "opponent_rank": 184,
+      "opponent_name": "TJ Schierl",
+      "method": "MD 10-1"
+    },
+    "worst_loss": {
+      "opponent_id": "29682280132",
+      "opponent_rank": 198,
+      "opponent_name": "Jack Nies",
+      "method": "SV-1 7-4"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-10",
       "opponent_id": "29682280132",
+      "opponent_career_id": null,
       "opponent_name": "Jack Nies",
       "opponent_team": "American",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 59,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 198,
       "weight_class": "157",
       "result": "L",
       "method": "SV-1",
       "score": "7-4",
       "duration": "8:15",
-      "event": "vs. Clarion"
+      "event": "vs. Clarion",
+      "mv_impact": -4.32
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29679956132",
+      "opponent_career_id": null,
       "opponent_name": "Gray Ortis",
       "opponent_team": "Bellarmine",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 60,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 252,
       "weight_class": "157",
       "result": "W",
       "method": "TF",
       "score": "15-0",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": 2.13
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29677575132",
+      "opponent_career_id": null,
       "opponent_name": "William Morrow",
       "opponent_team": "Bloomsburg",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 61,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 263,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "7-0",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": 0.8
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29672184132",
+      "opponent_career_id": null,
       "opponent_name": "Zack Mattin",
       "opponent_team": "Michigan",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 13,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 119,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "5-0",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -3.47
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29676294132",
+      "opponent_career_id": null,
       "opponent_name": "Brock Herman",
       "opponent_team": "Ohio State",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 5,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 37,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:16",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -4.36
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29676295132",
+      "opponent_career_id": null,
       "opponent_name": "TJ Schierl",
       "opponent_team": "Ohio State",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 5,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 184,
       "weight_class": "157",
       "result": "W",
       "method": "MD",
       "score": "10-1",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": 2.25
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34938626132",
+      "team": "Clarion",
+      "team_slug": "clarion",
+      "weight_class": 165,
+      "grade": "R-Sr.",
+      "current_rank": 48,
+      "record": "20-10"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29672319132",
+      "team": "Clarion",
+      "team_slug": "clarion",
+      "weight_class": 157,
+      "grade": "R-Jr.",
+      "current_rank": 147,
+      "record": "3-3"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24579526132",
+      "team": "Clarion",
+      "team_slug": "clarion",
+      "weight_class": 157,
+      "grade": "So.",
+      "current_rank": 45,
+      "record": "18-7"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20123662132",
+      "team": "Oklahoma",
+      "team_slug": "oklahoma",
+      "weight_class": 165,
+      "grade": "So.",
+      "current_rank": 56,
+      "record": "10-7"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16698137132",
+      "team": "Oklahoma",
+      "team_slug": "oklahoma",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 42,
+      "record": "4-1"
+    }
+  ]
 }

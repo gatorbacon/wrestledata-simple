@@ -3,10 +3,15 @@
   "name": "Reid Nelson",
   "team": "Little Rock",
   "team_slug": "little_rock",
-  "team_rank": 28,
+  "team_rank": 15,
   "weight_class": 125,
+  "grade": "REDSHIRT JUNIOR",
+  "hometown": "Inver Grove Heights, Minn.",
+  "high_school": "Simley H.S.",
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 113,
+  "current_rank": 99,
   "record": {
     "overall": "3-2",
     "vs_ranked": "3-2",
@@ -18,13 +23,20 @@
     "pa7": 9.8,
     "pd7": -1.6,
     "si_plus": 101.4,
-    "df_plus": 98.2,
-    "apr_plus": 98.2,
+    "df_plus": 98.1,
+    "apr_plus": 98.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.424,
+      "matches": 5,
+      "rank_weight": 91,
+      "rank_overall": 1002,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
@@ -33,13 +45,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29736347132",
-      "opponent_rank": 60,
+      "opponent_rank": 33,
       "opponent_name": "Dedrick Navarro",
       "method": "Dec 9-4"
     },
     "worst_loss": {
       "opponent_id": "29682565132",
-      "opponent_rank": 93,
+      "opponent_rank": 90,
       "opponent_name": "Isaiah Quintero",
       "method": "Dec 10-3"
     }
@@ -48,78 +60,130 @@
     {
       "date": "2024-11-24",
       "opponent_id": "29736347132",
+      "opponent_career_id": null,
       "opponent_name": "Dedrick Navarro",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 39,
       "opponent_weight": 125,
-      "opponent_rank": 60,
+      "opponent_rank": 33,
       "weight_class": "125",
       "result": "W",
       "method": "DEC",
       "score": "9-4",
       "duration": "7:00",
-      "event": "vs. Northwestern"
+      "event": "vs. Northwestern",
+      "mv_impact": 3.91
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29678016132",
+      "opponent_career_id": null,
       "opponent_name": "Luqman Masud",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 125,
-      "opponent_rank": 134,
+      "opponent_rank": 135,
       "weight_class": "125",
       "result": "W",
       "method": "DEC",
       "score": "15-13",
       "duration": "7:00",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": 1.07
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29684478132",
+      "opponent_career_id": null,
       "opponent_name": "Davian Guanajuato",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 125,
-      "opponent_rank": 67,
+      "opponent_rank": 71,
       "weight_class": "125",
       "result": "L",
       "method": "MD",
       "score": "13-3",
       "duration": "7:00",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": -4.16
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29678508132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler Garvin",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 17,
       "opponent_weight": 125,
-      "opponent_rank": 186,
+      "opponent_rank": 201,
       "weight_class": "125",
       "result": "W",
       "method": "DEC",
       "score": "11-9",
       "duration": "7:00",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": 0.23
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29682565132",
+      "opponent_career_id": null,
       "opponent_name": "Isaiah Quintero",
       "opponent_team": "Purdue",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 12,
       "opponent_weight": 125,
-      "opponent_rank": 93,
+      "opponent_rank": 90,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "10-3",
       "duration": "7:00",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": -3.16
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29686928132",
+      "team": "Little Rock",
+      "team_slug": "little_rock",
+      "weight_class": 125,
+      "grade": "REDSHIRT JUNIOR",
+      "current_rank": 99,
+      "record": "3-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24588148132",
+      "team": "Little Rock",
+      "team_slug": "little_rock",
+      "weight_class": 125,
+      "grade": "REDSHIRT SOPHOMORE",
+      "current_rank": 114,
+      "record": "5-8"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20128102132",
+      "team": "Little Rock",
+      "team_slug": "little_rock",
+      "weight_class": 125,
+      "grade": "REDSHIRT FRESHMAN",
+      "current_rank": 111,
+      "record": "6-5"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16705749132",
+      "team": "Little Rock",
+      "team_slug": "little_rock",
+      "weight_class": 133,
+      "grade": "FRESHMAN",
+      "current_rank": 118,
+      "record": "0-0"
+    }
+  ]
 }

@@ -3,13 +3,18 @@
   "name": "Sebastian Ortega",
   "team": "Princeton",
   "team_slug": "princeton",
-  "team_rank": 32,
+  "team_rank": 37,
   "weight_class": 141,
+  "grade": "Fr.",
+  "hometown": "Howell, N.J.",
+  "high_school": "Howell",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fprinceton.sidearmsports.com%2Fimages%2F2024%2F10%2F28%2F24_Sebastian_Ortega_Media_2.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 252,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "1-2",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,21 +24,28 @@
     "pd7": -6.0,
     "si_plus": 89.4,
     "df_plus": 96.7,
-    "apr_plus": 97.0,
+    "apr_plus": 97.1,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.456,
+      "matches": 8,
+      "rank_weight": 200,
+      "rank_overall": 1906,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29672670132",
-      "opponent_rank": 222,
+      "opponent_rank": 244,
       "opponent_name": "D`Amani Almodovar",
       "method": "Dec 6-1"
     },
@@ -48,39 +60,44 @@
     {
       "date": "2025-01-10",
       "opponent_id": "29721840132",
+      "opponent_career_id": null,
       "opponent_name": "Joe Fernau",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 179,
       "weight_class": "141",
       "result": "L",
       "method": "MD",
       "score": "16-2",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -5.88
     },
     {
       "date": "2025-01-10",
       "opponent_id": "30660665132",
+      "opponent_career_id": null,
       "opponent_name": "Pat Phillips",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 69,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "6-0",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -2.12
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29680119132",
+      "opponent_career_id": null,
       "opponent_name": "Joseph Couch",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 133,
       "opponent_rank": 181,
       "weight_class": "133",
@@ -88,38 +105,65 @@
       "method": "DEC",
       "score": "9-3",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -5.39
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29685627132",
+      "opponent_career_id": null,
       "opponent_name": "Drew Heethuis",
       "opponent_team": "Princeton",
-      "opponent_team_rank": 32,
+      "opponent_team_rank": 37,
       "opponent_weight": 133,
-      "opponent_rank": 130,
+      "opponent_rank": 114,
       "weight_class": "133",
       "result": "L",
       "method": "MD",
       "score": "13-4",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -4.21
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29672670132",
+      "opponent_career_id": null,
       "opponent_name": "D`Amani Almodovar",
       "opponent_team": "Rider",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 34,
       "opponent_weight": 133,
-      "opponent_rank": 222,
+      "opponent_rank": 244,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "6-1",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -0.22
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34948147132",
+      "team": "Princeton",
+      "team_slug": "princeton",
+      "weight_class": 141,
+      "grade": "So.",
+      "current_rank": 236,
+      "record": "9-8"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29721637132",
+      "team": "Princeton",
+      "team_slug": "princeton",
+      "weight_class": 141,
+      "grade": "Fr.",
+      "current_rank": 252,
+      "record": "1-4"
+    }
+  ]
 }

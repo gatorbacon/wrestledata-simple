@@ -3,13 +3,18 @@
   "name": "Kai Argyros",
   "team": "Arizona State",
   "team_slug": "arizona_state",
-  "team_rank": 25,
+  "team_rank": 27,
   "weight_class": 197,
+  "grade": "Sophomore",
+  "hometown": "Hawthorne, N.J.",
+  "high_school": "Don Bosco Prep",
+  "photo_url": "https://thesundevils.com/imgproxy/i-t-pyKyJmIZFM9X9thcBhDLKB0DBcFMspUdROaB8Xw/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3RoZXN1bmRldmlscy1jb20tcHJvZC8yMDI1LzA1LzEzL3RjNlI4cGV2R2JQSUd4QUExZThGNFQ3Z0RvWmRpSmo0TTNRaDNEM0Iud2VicA.webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 146,
   "record": {
     "overall": "0-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,32 +29,68 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.815,
+      "matches": 1,
+      "rank_weight": 195,
+      "rank_overall": 2210,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29681382132",
+      "opponent_rank": 40,
+      "opponent_name": "Sawyer Bartelt",
+      "method": "Inj. 0:00"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-30",
       "opponent_id": "29681382132",
+      "opponent_career_id": null,
       "opponent_name": "Sawyer Bartelt",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "weight_class": "197",
       "result": "L",
       "method": "INJ",
       "score": null,
       "duration": "0:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -4.82
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29679155132",
+      "team": "Arizona State",
+      "team_slug": "arizona_state",
+      "weight_class": 197,
+      "grade": "Sophomore",
+      "current_rank": 146,
+      "record": "0-1"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24586103132",
+      "team": "Arizona State",
+      "team_slug": "arizona_state",
+      "weight_class": 197,
+      "grade": "Freshman",
+      "current_rank": 116,
+      "record": "0-1"
+    }
+  ]
 }

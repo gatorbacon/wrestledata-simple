@@ -3,15 +3,20 @@
   "name": "Angelo Ferrari",
   "team": "Iowa",
   "team_slug": "iowa",
-  "team_rank": 7,
+  "team_rank": 3,
   "weight_class": 184,
+  "grade": "Fr.",
+  "hometown": "Melissa, Texas",
+  "high_school": "Melissa",
+  "photo_url": "https://hawkeyesports.com/imgproxy/1Y8Hh4RKDN79ggviweOGFtQP3A_Qlncp4xBLcN1Rd8s/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2hhd2tleWVzcG9ydHMtcHJvZC8yMDI0LzA5L2VlZmEwZjkyLTIwMjQwOTRfZmVyYXJyaV9hbmdlbG8uanBn.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 21,
   "record": {
     "overall": "7-1",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "7-1",
+    "vs_top10": "2-1",
+    "vs_top25": "2-1"
   },
   "metrics": {
     "pf7": 9.91,
@@ -19,60 +24,82 @@
     "pd7": 6.97,
     "si_plus": 114.4,
     "df_plus": 115.7,
-    "apr_plus": 97.7,
+    "apr_plus": 97.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.571,
     "majors": 3,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 4.029,
+      "matches": 7,
+      "rank_weight": 5,
+      "rank_overall": 44,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
-    "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "ranked_wins": 7,
+    "ranked_losses": 1,
+    "top10_wins": 2,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29678420132",
+      "opponent_rank": 5,
+      "opponent_name": "Dustin Plott",
+      "method": "SV-1 6-3"
+    },
+    "worst_loss": {
+      "opponent_id": "29679312132",
+      "opponent_rank": 1,
+      "opponent_name": "Carter Starocci",
+      "method": "Dec 3-1"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-23",
       "opponent_id": "29678420132",
+      "opponent_career_id": null,
       "opponent_name": "Dustin Plott",
       "opponent_team": "Oklahoma State",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 4,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 5,
       "weight_class": "184",
       "result": "W",
       "method": "SV-1",
       "score": "6-3",
       "duration": "8:15",
-      "event": "vs. Oklahoma State"
+      "event": "vs. Oklahoma State",
+      "mv_impact": 5.52
     },
     {
       "date": "2025-01-31",
       "opponent_id": "29679312132",
+      "opponent_career_id": null,
       "opponent_name": "Carter Starocci",
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 1,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "3-1",
       "duration": "7:00",
-      "event": "vs. Penn State"
+      "event": "vs. Penn State",
+      "mv_impact": 0.93
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29736104132",
+      "opponent_career_id": null,
       "opponent_name": "Gabe Arnold",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 3,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 10,
       "weight_class": "184",
       "result": "W",
       "method": "MFF",
@@ -83,78 +110,110 @@
     {
       "date": "2024-12-30",
       "opponent_id": "29685279132",
+      "opponent_career_id": null,
       "opponent_name": "Zyan Hall",
       "opponent_team": "Navy",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 28,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 66,
       "weight_class": "184",
       "result": "W",
       "method": "MD",
       "score": "10-2",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 4.61
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29675744132",
+      "opponent_career_id": null,
       "opponent_name": "Burk Blasius",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 24,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 61,
       "weight_class": "184",
       "result": "W",
       "method": "MD",
       "score": "16-5",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 4.17
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29675638132",
+      "opponent_career_id": null,
       "opponent_name": "Brock Fettig",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 24,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 45,
       "weight_class": "184",
       "result": "W",
       "method": "MD",
       "score": "9-1",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 4.83
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29681383132",
+      "opponent_career_id": null,
       "opponent_name": "Evan Bockman",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 26,
       "weight_class": "184",
       "result": "W",
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "vs. Iowa State"
+      "event": "vs. Iowa State",
+      "mv_impact": 4.03
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29680362132",
+      "opponent_career_id": null,
       "opponent_name": "Caleb Helgeson",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 110,
       "weight_class": "184",
       "result": "W",
       "method": "TF",
       "score": "20-5",
       "duration": "6:54",
-      "event": "Grand View Open"
+      "event": "Grand View Open",
+      "mv_impact": 4.1
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34962169132",
+      "team": "Iowa",
+      "team_slug": "iowa",
+      "weight_class": 184,
+      "grade": "RS Fr.",
+      "current_rank": 3,
+      "record": "14-5"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29736174132",
+      "team": "Iowa",
+      "team_slug": "iowa",
+      "weight_class": 184,
+      "grade": "Fr.",
+      "current_rank": 21,
+      "record": "7-1"
+    }
+  ]
 }

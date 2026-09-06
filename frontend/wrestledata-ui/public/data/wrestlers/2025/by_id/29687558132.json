@@ -3,15 +3,20 @@
   "name": "Bronson Baxter",
   "team": "Little Rock",
   "team_slug": "little_rock",
-  "team_rank": 28,
+  "team_rank": 15,
   "weight_class": 157,
+  "grade": "FRESHMAN",
+  "hometown": "Dumas, Texas",
+  "high_school": "Dumas HS",
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 150,
   "record": {
     "overall": "4-5",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "4-5",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 10.8,
@@ -19,157 +24,214 @@
     "pd7": -2.78,
     "si_plus": 114.5,
     "df_plus": 89.8,
-    "apr_plus": 104.2,
+    "apr_plus": 104.1,
     "pin_rate": 0.25,
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 1,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.513,
+      "matches": 9,
+      "rank_weight": 168,
+      "rank_overall": 1373,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29681687132",
+      "opponent_rank": 144,
+      "opponent_name": "Tavian Camper",
+      "method": "Dec 10-5"
+    },
+    "worst_loss": {
+      "opponent_id": "29682280132",
+      "opponent_rank": 198,
+      "opponent_name": "Jack Nies",
+      "method": "MD 15-6"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-19",
       "opponent_id": "29680363132",
+      "opponent_career_id": null,
       "opponent_name": "Cody Chittum",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 16,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "19-6",
       "duration": "7:00",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": -2.34
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29682280132",
+      "opponent_career_id": null,
       "opponent_name": "Jack Nies",
       "opponent_team": "American",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 59,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 198,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "15-6",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -5.32
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29681687132",
+      "opponent_career_id": null,
       "opponent_name": "Tavian Camper",
       "opponent_team": "Chattanooga",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 51,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 144,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "10-5",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": 2.36
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29689059132",
+      "opponent_career_id": null,
       "opponent_name": "Logan Fite",
       "opponent_team": "Duke",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 68,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 273,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "10-9",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": 0.85
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29687864132",
+      "opponent_career_id": null,
       "opponent_name": "Hayden Watson",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 64,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:55",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -5.75
     },
     {
       "date": "2024-12-22",
       "opponent_id": "29684527132",
+      "opponent_career_id": null,
       "opponent_name": "Lucas Libby",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 220,
       "weight_class": "157",
       "result": "W",
       "method": "TF",
       "score": "17-2",
       "duration": "1:39",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": 2.4
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29679970132",
+      "opponent_career_id": null,
       "opponent_name": "jeb prechtel",
       "opponent_team": "Bellarmine",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 60,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 209,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:28",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": 4.72
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29681875132",
+      "opponent_career_id": null,
       "opponent_name": "Ryan Bennett",
       "opponent_team": "Illinois",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 10,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 192,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:30",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": -7.61
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29673251132",
+      "opponent_career_id": null,
       "opponent_name": "Vinny Zerban",
       "opponent_team": "Northern Colorado",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 30,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 9,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "3:35",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": -2.93
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34945362132",
+      "team": "Little Rock",
+      "team_slug": "little_rock",
+      "weight_class": 174,
+      "grade": "SOPHOMORE",
+      "current_rank": 161,
+      "record": "3-9"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29687558132",
+      "team": "Little Rock",
+      "team_slug": "little_rock",
+      "weight_class": 157,
+      "grade": "FRESHMAN",
+      "current_rank": 150,
+      "record": "4-5"
+    }
+  ]
 }

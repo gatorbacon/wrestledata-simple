@@ -3,13 +3,18 @@
   "name": "Jayden Colon",
   "team": "Illinois",
   "team_slug": "illinois",
-  "team_rank": 2,
+  "team_rank": 10,
   "weight_class": 141,
+  "grade": "Fr.",
+  "hometown": "St. Charles, Ill.",
+  "high_school": "St. Charles East",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Ffightingillini.com%2Fimages%2F2024%2F9%2F16%2FColon_Jayden_WEB_20240825_WRES_Headshot_KS_0374.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 112,
   "record": {
     "overall": "4-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "4-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,137 +29,192 @@
     "bonus_rate": 0.75,
     "majors": 1,
     "techs": 2,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.946,
+      "matches": 8,
+      "rank_weight": 121,
+      "rank_overall": 1188,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29681834132",
+      "opponent_rank": 125,
+      "opponent_name": "Kole Brower",
+      "method": "Dec 7-2"
+    },
+    "worst_loss": {
+      "opponent_id": "29735174132",
+      "opponent_rank": 117,
+      "opponent_name": "Dawson Johnson",
+      "method": "TF 16-0 5:38"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-09",
       "opponent_id": "29681840132",
+      "opponent_career_id": null,
       "opponent_name": "William Baysingar",
       "opponent_team": "Illinois",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 10,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 98,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Greyhound Open"
+      "event": "Greyhound Open",
+      "mv_impact": -3.55
     },
     {
       "date": "2025-02-09",
       "opponent_id": "29681834132",
+      "opponent_career_id": null,
       "opponent_name": "Kole Brower",
       "opponent_team": "Illinois",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 10,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 125,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "7-2",
       "duration": "7:00",
-      "event": "Greyhound Open"
+      "event": "Greyhound Open",
+      "mv_impact": 1.85
     },
     {
       "date": "2025-02-09",
       "opponent_id": "29686417132",
+      "opponent_career_id": null,
       "opponent_name": "Sean Larkin",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 224,
       "weight_class": "141",
       "result": "W",
       "method": "TF",
       "score": "17-2",
       "duration": "4:10",
-      "event": "Greyhound Open"
+      "event": "Greyhound Open",
+      "mv_impact": 2.32
     },
     {
       "date": "2025-02-09",
       "opponent_id": "29686425132",
+      "opponent_career_id": null,
       "opponent_name": "Connor Younts",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 238,
       "weight_class": "141",
       "result": "W",
       "method": "TF",
       "score": "19-3",
       "duration": "4:26",
-      "event": "Greyhound Open"
+      "event": "Greyhound Open",
+      "mv_impact": 2.33
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29673096132",
+      "opponent_career_id": null,
       "opponent_name": "Bryce Kresho",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 27,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:58",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -4.26
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29767466132",
+      "opponent_career_id": null,
       "opponent_name": "Giosue Hickman",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 39,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 198,
       "weight_class": "141",
       "result": "W",
       "method": "MD",
       "score": "10-1",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": 2.41
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29687024132",
+      "opponent_career_id": null,
       "opponent_name": "Evan Mougalian",
       "opponent_team": "Pennsylvania",
-      "opponent_team_rank": 24,
+      "opponent_team_rank": 20,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 29,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "19-1",
       "duration": "3:20",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -3.37
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29735174132",
+      "opponent_career_id": null,
       "opponent_name": "Dawson Johnson",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 7,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 117,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "16-0",
       "duration": "5:38",
-      "event": "Jim Koch Wisconsin Open"
+      "event": "Jim Koch Wisconsin Open",
+      "mv_impact": -5.3
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34952084132",
+      "team": "Illinois",
+      "team_slug": "illinois",
+      "weight_class": 141,
+      "grade": "R-Fr.",
+      "current_rank": 123,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29681877132",
+      "team": "Illinois",
+      "team_slug": "illinois",
+      "weight_class": 141,
+      "grade": "Fr.",
+      "current_rank": 112,
+      "record": "4-4"
+    }
+  ]
 }

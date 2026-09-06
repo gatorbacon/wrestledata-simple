@@ -3,15 +3,20 @@
   "name": "Fernando Villaescusa",
   "team": "Iowa State",
   "team_slug": "iowa_state",
-  "team_rank": 17,
+  "team_rank": 26,
   "weight_class": 184,
+  "grade": "So.",
+  "hometown": "Tucson, Ariz.",
+  "high_school": "Sunnyside",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fisuni.sidearmsports.com%2Fimages%2F2024%2F9%2F19%2F_0000_Villaescusa__Nando_24-25.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 85,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "1-1"
   },
   "metrics": {
     "pf7": 9.0,
@@ -24,62 +29,127 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.258,
+      "matches": 3,
+      "rank_weight": 148,
+      "rank_overall": 1609,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29675821132",
+      "opponent_rank": 18,
+      "opponent_name": "Aidan Brenot",
+      "method": "Dec 9-6"
+    },
+    "worst_loss": {
+      "opponent_id": "29679146132",
+      "opponent_rank": 101,
+      "opponent_name": "Shay Addison",
+      "method": "Fall 5:41"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-07",
       "opponent_id": "29679146132",
+      "opponent_career_id": null,
       "opponent_name": "Shay Addison",
       "opponent_team": "Arizona State",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 27,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 101,
       "weight_class": "184",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "5:41",
-      "event": "vs. Iowa State"
+      "event": "vs. Iowa State",
+      "mv_impact": -6.32
     },
     {
       "date": "2024-12-21",
       "opponent_id": "29676000132",
+      "opponent_career_id": null,
       "opponent_name": "Gavin Kane",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 16,
       "weight_class": "184",
       "result": "L",
       "method": "INJ",
       "score": null,
       "duration": "0:00",
-      "event": "vs. North Carolina"
+      "event": "vs. North Carolina",
+      "mv_impact": -4.41
     },
     {
       "date": "2024-12-15",
       "opponent_id": "29675821132",
+      "opponent_career_id": null,
       "opponent_name": "Aidan Brenot",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 48,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 18,
       "weight_class": "184",
       "result": "W",
       "method": "DEC",
       "score": "9-6",
       "duration": "7:00",
-      "event": "vs. North Dakota State"
+      "event": "vs. North Dakota State",
+      "mv_impact": 3.95
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34940713132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 184,
+      "grade": "Jr.",
+      "current_rank": 225,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29680361132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 184,
+      "grade": "So.",
+      "current_rank": 85,
+      "record": "1-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24585283132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 197,
+      "grade": "R-Fr.",
+      "current_rank": 110,
+      "record": "1-0"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20129987132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 197,
+      "grade": "Fr.",
+      "current_rank": 182,
+      "record": "2-6"
+    }
+  ]
 }

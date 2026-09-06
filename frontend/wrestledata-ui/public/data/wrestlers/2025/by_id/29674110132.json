@@ -3,15 +3,20 @@
   "name": "Jesse Mullis",
   "team": "NC State",
   "team_slug": "nc_state",
-  "team_rank": 3,
+  "team_rank": 14,
   "weight_class": 174,
+  "grade": "Fr.",
+  "hometown": "Hudson Falls, N.Y.",
+  "high_school": "Hudson Falls High School",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgopack.com%2Fimages%2F2024%2F8%2F27%2FJesseMullisHS.png&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 232,
   "record": {
     "overall": "0-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 3.71,
@@ -19,82 +24,124 @@
     "pd7": -10.29,
     "si_plus": 90.2,
     "df_plus": 89.4,
-    "apr_plus": 96.3,
+    "apr_plus": 96.2,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.463,
+      "matches": 4,
+      "rank_weight": 233,
+      "rank_overall": 2296,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29681699132",
+      "opponent_rank": 246,
+      "opponent_name": "Charles McTorry III",
+      "method": "Fall 2:50"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-23",
       "opponent_id": "29688517132",
+      "opponent_career_id": null,
       "opponent_name": "Owen Hendricks",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 227,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "8-5",
       "duration": "7:00",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": -6.18
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29676069132",
+      "opponent_career_id": null,
       "opponent_name": "Joshua Ogunsanya",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 17,
       "weight_class": "174",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "2:17",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": -3.6
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29727157132",
+      "opponent_career_id": null,
       "opponent_name": "Joe Zovistoski",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 75,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "9-0",
       "duration": "7:00",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -3.6
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29681699132",
+      "opponent_career_id": null,
       "opponent_name": "Charles McTorry III",
       "opponent_team": "Chattanooga",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 51,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 246,
       "weight_class": "174",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:50",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -8.47
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34935701132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 184,
+      "grade": "R-Fr.",
+      "current_rank": 197,
+      "record": "1-11"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29674110132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 174,
+      "grade": "Fr.",
+      "current_rank": 232,
+      "record": "0-4"
+    }
+  ]
 }

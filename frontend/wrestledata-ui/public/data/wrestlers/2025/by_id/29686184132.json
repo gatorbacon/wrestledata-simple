@@ -3,13 +3,18 @@
   "name": "Cael Raines",
   "team": "Buffalo",
   "team_slug": "buffalo",
-  "team_rank": 42,
+  "team_rank": 63,
   "weight_class": 149,
+  "grade": "Fr.",
+  "hometown": "North Chili, NY",
+  "high_school": "Churchville-Chili",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fubbulls.com%2Fimages%2F2024%2F9%2F23%2F2024-25_Wrestling_HS-web_RAINES_CAEL-2024-25wr-0075web.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 260,
   "record": {
     "overall": "1-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,112 +24,163 @@
     "pd7": -8.32,
     "si_plus": 94.4,
     "df_plus": 87.7,
-    "apr_plus": 102.2,
+    "apr_plus": 102.1,
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.458,
+      "matches": 8,
+      "rank_weight": 266,
+      "rank_overall": 2295,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29684819132",
+      "opponent_rank": 305,
+      "opponent_name": "Daniel Delusant",
+      "method": "MD 12-1"
+    },
+    "worst_loss": {
+      "opponent_id": "29672307132",
+      "opponent_rank": 297,
+      "opponent_name": "Chandler Ho",
+      "method": "SV-1 9-6"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-19",
       "opponent_id": "29681454132",
+      "opponent_career_id": null,
       "opponent_name": "Matt Hart",
       "opponent_team": "Indiana",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 36,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 135,
       "weight_class": "149",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:37",
-      "event": "Purple Raider Open"
+      "event": "Purple Raider Open",
+      "mv_impact": -6.23
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29686895132",
+      "opponent_career_id": null,
       "opponent_name": "Caleb Sweet",
       "opponent_team": "Binghamton",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 32,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 182,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "4:53",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": -6.24
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29672307132",
+      "opponent_career_id": null,
       "opponent_name": "Chandler Ho",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 297,
       "weight_class": "149",
       "result": "L",
       "method": "SV-1",
       "score": "9-6",
       "duration": "8:15",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": -5.65
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29686178132",
+      "opponent_career_id": null,
       "opponent_name": "Judah Aybar",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 223,
       "weight_class": "149",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:23",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": -6.92
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29684819132",
+      "opponent_career_id": null,
       "opponent_name": "Daniel Delusant",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 78,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 305,
       "weight_class": "149",
       "result": "W",
       "method": "MD",
       "score": "12-1",
       "duration": "7:00",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": 0.96
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29688132132",
+      "opponent_career_id": null,
       "opponent_name": "Macario Calavitta",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 247,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "19-3",
       "duration": "4:24",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": -7.01
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34936200132",
+      "team": "Bloomsburg",
+      "team_slug": "bloomsburg",
+      "weight_class": 149,
+      "grade": "So.",
+      "current_rank": 180,
+      "record": "2-16"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29686184132",
+      "team": "Buffalo",
+      "team_slug": "buffalo",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 260,
+      "record": "1-5"
+    }
+  ]
 }

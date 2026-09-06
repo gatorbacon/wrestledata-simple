@@ -3,13 +3,18 @@
   "name": "Trevor Kantor",
   "team": "NC State",
   "team_slug": "nc_state",
-  "team_rank": 3,
+  "team_rank": 14,
   "weight_class": 157,
+  "grade": "R-Fr.",
+  "hometown": "Milton, Ga.",
+  "high_school": "Blessed Trinity Catholic High",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgopack.com%2Fimages%2F2024%2F8%2F27%2FTrevorKantorHS.png&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 239,
   "record": {
     "overall": "2-7",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-7",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,70 +29,94 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.517,
+      "matches": 9,
+      "rank_weight": 229,
+      "rank_overall": 1927,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29676074132",
+      "opponent_rank": 141,
+      "opponent_name": "Joey Showalter",
+      "method": "M. For."
+    },
+    "worst_loss": {
+      "opponent_id": "29674183132",
+      "opponent_rank": 267,
+      "opponent_name": "Pete Winterstein",
+      "method": "Dec 8-2"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-23",
       "opponent_id": "29673470132",
+      "opponent_career_id": null,
       "opponent_name": "Jake Wacha",
       "opponent_team": "Columbia",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 52,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 221,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": 0.85
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29677496132",
+      "opponent_career_id": null,
       "opponent_name": "Anderson Heap",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 146,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "8-1",
       "duration": "7:00",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": -3.39
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29676018132",
+      "opponent_career_id": null,
       "opponent_name": "Cullen Kane",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 159,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "5-0",
       "duration": "7:00",
-      "event": "Wildcat Open"
+      "event": "Wildcat Open",
+      "mv_impact": -3.83
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29676074132",
+      "opponent_career_id": null,
       "opponent_name": "Joey Showalter",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 141,
       "weight_class": "157",
       "result": "W",
       "method": "MFF",
@@ -98,78 +127,120 @@
     {
       "date": "2025-02-02",
       "opponent_id": "29677465132",
+      "opponent_career_id": null,
       "opponent_name": "Tanner Peake",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 53,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "3-0",
       "duration": "7:00",
-      "event": "2025 Newberry Open"
+      "event": "2025 Newberry Open",
+      "mv_impact": -1.78
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29672150132",
+      "opponent_career_id": null,
       "opponent_name": "Matt Henrich",
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 6,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 84,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -3.67
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29687888132",
+      "opponent_career_id": null,
       "opponent_name": "Parker Kearns",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 188,
       "weight_class": "157",
       "result": "L",
       "method": "SV-3",
       "score": "4-1",
       "duration": "8:15",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -4.83
     },
     {
       "date": "2025-01-12",
       "opponent_id": "29674183132",
+      "opponent_career_id": null,
       "opponent_name": "Pete Winterstein",
       "opponent_team": "NC State",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 14,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 267,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "Braves Open"
+      "event": "Braves Open",
+      "mv_impact": -5.19
     },
     {
       "date": "2025-01-12",
       "opponent_id": "29675189132",
+      "opponent_career_id": null,
       "opponent_name": "Evan Mason",
       "opponent_team": "VMI",
-      "opponent_team_rank": 77,
+      "opponent_team_rank": 79,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 197,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "10-6",
       "duration": "7:00",
-      "event": "Braves Open"
+      "event": "Braves Open",
+      "mv_impact": -4.98
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34935696132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 157,
+      "grade": "R-So.",
+      "current_rank": 173,
+      "record": "1-4"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29674059132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 157,
+      "grade": "R-Fr.",
+      "current_rank": 239,
+      "record": "2-7"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584107132",
+      "team": "NC State",
+      "team_slug": "nc_state",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 300,
+      "record": "0-7"
+    }
+  ]
 }

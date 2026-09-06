@@ -3,15 +3,20 @@
   "name": "Daniel Guanajuato",
   "team": "South Dakota State",
   "team_slug": "south_dakota_state",
-  "team_rank": 33,
+  "team_rank": 24,
   "weight_class": 125,
+  "grade": "R-Fr.",
+  "hometown": "Eloy, Ariz.",
+  "high_school": "Valiant Prep",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fsdstate.sidearmsports.com%2Fimages%2F2024%2F9%2F24%2F20240829-0241.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 65,
+  "current_rank": 60,
   "record": {
     "overall": "5-2",
     "vs_ranked": "5-2",
     "vs_top10": "0-0",
-    "vs_top25": "0-2"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 11.71,
@@ -19,12 +24,19 @@
     "pd7": 7.86,
     "si_plus": 110.0,
     "df_plus": 107.3,
-    "apr_plus": 99.5,
+    "apr_plus": 99.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.8,
     "majors": 4,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.442,
+      "matches": 8,
+      "rank_weight": 64,
+      "rank_overall": 682,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 5,
@@ -33,13 +45,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29685306132",
-      "opponent_rank": 107,
+      "opponent_rank": 101,
       "opponent_name": "Nick Treaster",
       "method": "Dec 9-5"
     },
     "worst_loss": {
       "opponent_id": "29736111132",
-      "opponent_rank": 25,
+      "opponent_rank": 39,
       "opponent_name": "Joey Cruz",
       "method": "Dec 4-2"
     }
@@ -48,108 +60,154 @@
     {
       "date": "2024-12-30",
       "opponent_id": "29736111132",
+      "opponent_career_id": null,
       "opponent_name": "Joey Cruz",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 3,
       "opponent_weight": 125,
-      "opponent_rank": 25,
+      "opponent_rank": 39,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -2.82
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29736195132",
+      "opponent_career_id": null,
       "opponent_name": "Anthony Lavezzola",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 3,
       "opponent_weight": 125,
-      "opponent_rank": 181,
+      "opponent_rank": 197,
       "weight_class": "125",
       "result": "W",
       "method": "MD",
       "score": "18-4",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 0.32
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29685306132",
+      "opponent_career_id": null,
       "opponent_name": "Nick Treaster",
       "opponent_team": "Navy",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 28,
       "opponent_weight": 125,
-      "opponent_rank": 107,
+      "opponent_rank": 101,
       "weight_class": "125",
       "result": "W",
       "method": "DEC",
       "score": "9-5",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 2.68
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29675930132",
+      "opponent_career_id": null,
       "opponent_name": "Kody Tanimoto",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 48,
       "opponent_weight": 125,
-      "opponent_rank": 122,
+      "opponent_rank": 162,
       "weight_class": "125",
       "result": "W",
       "method": "MD",
       "score": "14-3",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 1.48
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29687606132",
+      "opponent_career_id": null,
       "opponent_name": "Trever Anderson",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 8,
       "opponent_weight": 125,
-      "opponent_rank": 11,
+      "opponent_rank": 21,
       "weight_class": "125",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "6:28",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -4.81
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29688283132",
+      "opponent_career_id": null,
       "opponent_name": "Tucker Bowen",
       "opponent_team": "Wyoming",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 35,
       "opponent_weight": 133,
-      "opponent_rank": 108,
+      "opponent_rank": 167,
       "weight_class": "125",
       "result": "W",
       "method": "MD",
       "score": "14-3",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 2.61
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29675930132",
+      "opponent_career_id": null,
       "opponent_name": "Kody Tanimoto",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 48,
       "opponent_weight": 125,
-      "opponent_rank": 122,
+      "opponent_rank": 162,
       "weight_class": "125",
       "result": "W",
       "method": "MD",
       "score": "14-2",
       "duration": "7:00",
-      "event": "MSU Moorhead Dragon Open"
+      "event": "MSU Moorhead Dragon Open",
+      "mv_impact": 1.48
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34943241132",
+      "team": "South Dakota State",
+      "team_slug": "south_dakota_state",
+      "weight_class": 125,
+      "grade": "R-So.",
+      "current_rank": 62,
+      "record": "13-4"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29675648132",
+      "team": "South Dakota State",
+      "team_slug": "south_dakota_state",
+      "weight_class": 125,
+      "grade": "R-Fr.",
+      "current_rank": 60,
+      "record": "5-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584735132",
+      "team": "South Dakota State",
+      "team_slug": "south_dakota_state",
+      "weight_class": 125,
+      "grade": "Fr.",
+      "current_rank": 81,
+      "record": "0-1"
+    }
+  ]
 }

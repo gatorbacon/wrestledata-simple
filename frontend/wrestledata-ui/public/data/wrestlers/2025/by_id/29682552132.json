@@ -3,13 +3,18 @@
   "name": "Kade Law",
   "team": "Purdue",
   "team_slug": "purdue",
-  "team_rank": 10,
+  "team_rank": 12,
   "weight_class": 157,
+  "grade": "Redshirt Sophomore",
+  "hometown": "Columbus, Ind.",
+  "high_school": "Columbus East",
+  "photo_url": "https://purduesports.com/imgproxy/DLXyqH_mOKZDqHiaX-7Ycxta2CNkp0tLlFXxKznMHFI/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3B1cmR1ZXNwb3J0cy1jb20tcHJvZC8yMDI1LzA1LzE1L2ppZERjR0lSWlNTbnY2U0xMbmFiMmx6ZWg4a0lFZm45TkZVckdCWWQud2VicA.webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 277,
   "record": {
     "overall": "1-6",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-6",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,127 +24,200 @@
     "pd7": -4.2,
     "si_plus": 92.5,
     "df_plus": 100.1,
-    "apr_plus": 95.2,
+    "apr_plus": 95.3,
     "pin_rate": 0.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.845,
+      "matches": 7,
+      "rank_weight": 212,
+      "rank_overall": 1771,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29687002132",
+      "opponent_rank": 309,
+      "opponent_name": "Dominic Paterra",
+      "method": "TF 17-2 6:59"
+    },
+    "worst_loss": {
+      "opponent_id": "29684776132",
+      "opponent_rank": 218,
+      "opponent_name": "Nick Cicciarelli",
+      "method": "Dec 4-1"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-19",
       "opponent_id": "29685873132",
+      "opponent_career_id": null,
       "opponent_name": "Ryan Burgos",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 55,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "14-3",
       "duration": "7:00",
-      "event": "Purple Raider Open"
+      "event": "Purple Raider Open",
+      "mv_impact": -2.8
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29684776132",
+      "opponent_career_id": null,
       "opponent_name": "Nick Cicciarelli",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 218,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Purple Raider Open"
+      "event": "Purple Raider Open",
+      "mv_impact": -4.82
     },
     {
       "date": "2025-01-12",
       "opponent_id": "29723401132",
+      "opponent_career_id": null,
       "opponent_name": "Landen Johnson",
       "opponent_team": "Northern Illinois",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 49,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 39,
       "weight_class": "157",
       "result": "L",
       "method": "TF",
       "score": "18-1",
       "duration": "6:49",
-      "event": "vs. Purdue"
+      "event": "vs. Purdue",
+      "mv_impact": -4.14
     },
     {
       "date": "2025-01-03",
       "opponent_id": "29687002132",
+      "opponent_career_id": null,
       "opponent_name": "Dominic Paterra",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 309,
       "weight_class": "157",
       "result": "W",
       "method": "TF",
       "score": "17-2",
       "duration": "6:59",
-      "event": "vs. Purdue"
+      "event": "vs. Purdue",
+      "mv_impact": 2.16
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29681875132",
+      "opponent_career_id": null,
       "opponent_name": "Ryan Bennett",
       "opponent_team": "Illinois",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 10,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 192,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "7-4",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -4.61
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29681751132",
+      "opponent_career_id": null,
       "opponent_name": "Jack Pletcher",
       "opponent_team": "Pittsburgh",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 21,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 68,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -2.62
     },
     {
       "date": "2024-12-18",
       "opponent_id": "29685055132",
+      "opponent_career_id": null,
       "opponent_name": "Douglas Terry",
       "opponent_team": "Cleveland State",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 56,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 88,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "6-0",
       "duration": "7:00",
-      "event": "vs. Purdue"
+      "event": "vs. Purdue",
+      "mv_impact": -3.09
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34945141132",
+      "team": "Purdue",
+      "team_slug": "purdue",
+      "weight_class": 157,
+      "grade": "Redshirt Junior",
+      "current_rank": 185,
+      "record": "1-3"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29682552132",
+      "team": "Purdue",
+      "team_slug": "purdue",
+      "weight_class": 157,
+      "grade": "Redshirt Sophomore",
+      "current_rank": 277,
+      "record": "1-6"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24587111132",
+      "team": "Purdue",
+      "team_slug": "purdue",
+      "weight_class": 157,
+      "grade": "Redshirt Freshman",
+      "current_rank": 251,
+      "record": "1-7"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20125129132",
+      "team": "Purdue",
+      "team_slug": "purdue",
+      "weight_class": 157,
+      "grade": "Freshman",
+      "current_rank": 228,
+      "record": "1-2"
+    }
+  ]
 }

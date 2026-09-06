@@ -3,13 +3,18 @@
   "name": "Hunter Adams",
   "team": "Appalachian State",
   "team_slug": "appalachian_state",
-  "team_rank": 36,
+  "team_rank": 47,
   "weight_class": 197,
+  "grade": "R-So.",
+  "hometown": "Gainesville, Ga.",
+  "high_school": "North Hall",
+  "photo_url": "https://dg5crudsxv7wa.cloudfront.net/images/2022/10/6/ADAMS_HUNTER_SITE.png",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 145,
   "record": {
     "overall": "3-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,97 +24,166 @@
     "pd7": 3.61,
     "si_plus": 101.1,
     "df_plus": 105.5,
-    "apr_plus": 98.3,
+    "apr_plus": 98.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.333,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.376,
+      "matches": 5,
+      "rank_weight": 110,
+      "rank_overall": 1324,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29681433132",
+      "opponent_rank": 91,
+      "opponent_name": "Tyler Kocak",
+      "method": "Dec 10-7"
+    },
+    "worst_loss": {
+      "opponent_id": "29731820132",
+      "opponent_rank": 105,
+      "opponent_name": "Ethan Weatherspoon",
+      "method": "Fall 0:40"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-27",
       "opponent_id": "29688458132",
+      "opponent_career_id": null,
       "opponent_name": "Toler Hornick",
       "opponent_team": "Presbyterian",
-      "opponent_team_rank": 71,
+      "opponent_team_rank": 76,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 244,
       "weight_class": "197",
       "result": "W",
       "method": "DEC",
       "score": "11-6",
       "duration": "7:00",
-      "event": "vs. Presbyterian"
+      "event": "vs. Presbyterian",
+      "mv_impact": -0.84
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29672174132",
+      "opponent_career_id": null,
       "opponent_name": "Glean Gonzalez",
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 6,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 224,
       "weight_class": "197",
       "result": "W",
       "method": "MD",
       "score": "11-2",
       "duration": "7:00",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": 1.09
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29681433132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler Kocak",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 91,
       "weight_class": "197",
       "result": "W",
       "method": "DEC",
       "score": "10-7",
       "duration": "7:00",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": 2.76
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29731820132",
+      "opponent_career_id": null,
       "opponent_name": "Ethan Weatherspoon",
       "opponent_team": "Virginia",
-      "opponent_team_rank": 78,
+      "opponent_team_rank": 42,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 105,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:40",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -6.65
     },
     {
       "date": "2024-12-08",
       "opponent_id": "29722731132",
+      "opponent_career_id": null,
       "opponent_name": "Justin Griffith",
       "opponent_team": "Drexel",
-      "opponent_team_rank": 52,
+      "opponent_team_rank": 67,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 88,
       "weight_class": "197",
       "result": "L",
       "method": "SV-3",
       "score": "4-1",
       "duration": "8:15",
-      "event": "A Better Way Athletics Patriot Open"
+      "event": "A Better Way Athletics Patriot Open",
+      "mv_impact": -3.25
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34944344132",
+      "team": "Appalachian State",
+      "team_slug": "appalachian_state",
+      "weight_class": 197,
+      "grade": "R-Jr.",
+      "current_rank": 126,
+      "record": "6-10"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29727163132",
+      "team": "Appalachian State",
+      "team_slug": "appalachian_state",
+      "weight_class": 197,
+      "grade": "R-So.",
+      "current_rank": 145,
+      "record": "3-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24603631132",
+      "team": "Appalachian State",
+      "team_slug": "appalachian_state",
+      "weight_class": 197,
+      "grade": "R-Fr.",
+      "current_rank": 177,
+      "record": "4-10"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20139249132",
+      "team": "Appalachian State",
+      "team_slug": "appalachian_state",
+      "weight_class": 184,
+      "grade": "Fr.",
+      "current_rank": 102,
+      "record": "6-4"
+    }
+  ]
 }

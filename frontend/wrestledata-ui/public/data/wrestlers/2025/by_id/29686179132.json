@@ -3,13 +3,18 @@
   "name": "Kieran Cullen",
   "team": "Buffalo",
   "team_slug": "buffalo",
-  "team_rank": 42,
+  "team_rank": 63,
   "weight_class": 149,
+  "grade": "Fr.",
+  "hometown": "Freehold, NY",
+  "high_school": "Greenville",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fubbulls.com%2Fimages%2F2024%2F9%2F23%2F2024-25_Wrestling_HS-web_CULLEN-2024-25wr-0069web.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 231,
   "record": {
     "overall": "3-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,122 +29,165 @@
     "bonus_rate": 0.333,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.429,
+      "matches": 7,
+      "rank_weight": 218,
+      "rank_overall": 1900,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29672757132",
+      "opponent_rank": 246,
+      "opponent_name": "Cael Huxford",
+      "method": "Dec 8-6"
+    },
+    "worst_loss": {
+      "opponent_id": "29679408132",
+      "opponent_rank": 278,
+      "opponent_name": "Griffin Walizer",
+      "method": "Fall 0:14"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-16",
       "opponent_id": "29672757132",
+      "opponent_career_id": null,
       "opponent_name": "Cael Huxford",
       "opponent_team": "Rider",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 34,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 246,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "8-6",
       "duration": "7:00",
-      "event": "Mat-Town Open II"
+      "event": "Mat-Town Open II",
+      "mv_impact": 1.02
     },
     {
       "date": "2025-02-16",
       "opponent_id": "29678499132",
+      "opponent_career_id": null,
       "opponent_name": "Nathan Perry",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 17,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 181,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "18-1",
       "duration": "5:45",
-      "event": "Mat-Town Open II"
+      "event": "Mat-Town Open II",
+      "mv_impact": -6.32
     },
     {
       "date": "2025-02-16",
       "opponent_id": "29679408132",
+      "opponent_career_id": null,
       "opponent_name": "Griffin Walizer",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 278,
       "weight_class": "149",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:14",
-      "event": "Mat-Town Open II"
+      "event": "Mat-Town Open II",
+      "mv_impact": -8.25
     },
     {
       "date": "2025-01-04",
       "opponent_id": "29683806132",
+      "opponent_career_id": null,
       "opponent_name": "Braden Bower",
       "opponent_team": "Bucknell",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 43,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 139,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "5:40",
-      "event": "Bobby Kauffman Open"
+      "event": "Bobby Kauffman Open",
+      "mv_impact": -5.79
     },
     {
       "date": "2025-01-04",
       "opponent_id": "29685913132",
+      "opponent_career_id": null,
       "opponent_name": "Jayden D?Ambrosio",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 301,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Bobby Kauffman Open"
+      "event": "Bobby Kauffman Open",
+      "mv_impact": -0.07
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29685913132",
+      "opponent_career_id": null,
       "opponent_name": "Jayden D?Ambrosio",
       "opponent_team": "Edinboro",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 69,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 301,
       "weight_class": "149",
       "result": "W",
       "method": "MD",
       "score": "12-2",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": 0.93
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29672301132",
+      "opponent_career_id": null,
       "opponent_name": "Kyle Schickel",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 72,
       "weight_class": "149",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:40",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -5.54
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29686179132",
+      "team": "Buffalo",
+      "team_slug": "buffalo",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 231,
+      "record": "3-4"
+    }
+  ]
 }

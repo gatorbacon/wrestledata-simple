@@ -3,15 +3,20 @@
   "name": "Kolten Oborny",
   "team": "Missouri",
   "team_slug": "missouri",
-  "team_rank": 64,
+  "team_rank": 16,
   "weight_class": 165,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 204,
   "record": {
     "overall": "1-5",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "1-5",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 6.19,
@@ -19,112 +24,163 @@
     "pd7": -5.06,
     "si_plus": 98.7,
     "df_plus": 94.8,
-    "apr_plus": 101.5,
+    "apr_plus": 101.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.917,
+      "matches": 7,
+      "rank_weight": 152,
+      "rank_overall": 1497,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29677999132",
+      "opponent_rank": 239,
+      "opponent_name": "Jeremy Jakowitsch",
+      "method": "Inj. 0:38"
+    },
+    "worst_loss": {
+      "opponent_id": "29678497132",
+      "opponent_rank": 179,
+      "opponent_name": "Ryan Money",
+      "method": "Dec 9-7"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-19",
       "opponent_id": "29681386132",
+      "opponent_career_id": null,
       "opponent_name": "Gabe Carver",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 75,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "3-1",
       "duration": "7:00",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": -2.85
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29672413132",
+      "opponent_career_id": null,
       "opponent_name": "Cody Goebel",
       "opponent_team": "Wisconsin",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 33,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 68,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "8-1",
       "duration": "7:00",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": -3.13
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29687822132",
+      "opponent_career_id": null,
       "opponent_name": "Luka Wick",
       "opponent_team": "Cal Poly",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 19,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 46,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:08",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": -5.08
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29678497132",
+      "opponent_career_id": null,
       "opponent_name": "Ryan Money",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 17,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 179,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "9-7",
       "duration": "7:00",
-      "event": "Tiger Style Invite"
+      "event": "Tiger Style Invite",
+      "mv_impact": -4.51
     },
     {
       "date": "2024-10-25",
       "opponent_id": "29677999132",
+      "opponent_career_id": null,
       "opponent_name": "Jeremy Jakowitsch",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 239,
       "weight_class": "165",
       "result": "W",
       "method": "INJ",
       "score": null,
       "duration": "0:38",
-      "event": "vs. Missouri"
+      "event": "vs. Missouri",
+      "mv_impact": 2.47
     },
     {
       "date": "2024-10-25",
       "opponent_id": "29678012132",
+      "opponent_career_id": null,
       "opponent_name": "Cam Steed",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 7,
       "weight_class": "165",
       "result": "L",
       "method": "TF",
       "score": "21-6",
       "duration": "2:40",
-      "event": "vs. Missouri"
+      "event": "vs. Missouri",
+      "mv_impact": -2.79
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34943976132",
+      "team": "Missouri",
+      "team_slug": "missouri",
+      "weight_class": 174,
+      "grade": "Redshirt Freshman",
+      "current_rank": 121,
+      "record": "1-5"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29678024132",
+      "team": "Missouri",
+      "team_slug": "missouri",
+      "weight_class": 165,
+      "grade": "",
+      "current_rank": 204,
+      "record": "1-5"
+    }
+  ]
 }

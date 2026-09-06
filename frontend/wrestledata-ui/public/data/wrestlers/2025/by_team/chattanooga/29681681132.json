@@ -3,15 +3,20 @@
   "name": "Yuta Otero",
   "team": "Chattanooga",
   "team_slug": "chattanooga",
-  "team_rank": 46,
+  "team_rank": 51,
   "weight_class": 149,
+  "grade": "R-Fr.",
+  "hometown": "Virginia Beach, Va.",
+  "high_school": "Landstown",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Futc.sidearmsports.com%2Fimages%2F2024%2F8%2F30%2FOtero__Yuta.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 299,
   "record": {
     "overall": "0-7",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-7",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 2.77,
@@ -24,122 +29,180 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.093,
+      "matches": 8,
+      "rank_weight": 261,
+      "rank_overall": 2252,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29678055132",
+      "opponent_rank": 225,
+      "opponent_name": "Dominic DiTullio",
+      "method": "Fall 6:06"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-21",
       "opponent_id": "29681419132",
+      "opponent_career_id": null,
       "opponent_name": "Joey Buttler",
       "opponent_team": "Indiana",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 36,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 50,
       "weight_class": "149",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:54",
-      "event": "vs. Indiana"
+      "event": "vs. Indiana",
+      "mv_impact": -5.66
     },
     {
       "date": "2025-02-16",
       "opponent_id": "29678068132",
+      "opponent_career_id": null,
       "opponent_name": "Joseph Giordano",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 121,
       "weight_class": "149",
       "result": "L",
       "method": "SV-1",
       "score": "6-1",
       "duration": "8:15",
-      "event": "vs. Gardner-Webb"
+      "event": "vs. Gardner-Webb",
+      "mv_impact": -3.31
     },
     {
       "date": "2025-01-25",
       "opponent_id": "29678055132",
+      "opponent_career_id": null,
       "opponent_name": "Dominic DiTullio",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 225,
       "weight_class": "149",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "6:06",
-      "event": "Appalachian Open"
+      "event": "Appalachian Open",
+      "mv_impact": -8.57
     },
     {
       "date": "2025-01-05",
       "opponent_id": "32058150132",
+      "opponent_career_id": null,
       "opponent_name": "Layton Schneider",
       "opponent_team": "Oklahoma",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 40,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 178,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "16-0",
       "duration": "5:21",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -6.66
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29687364132",
+      "opponent_career_id": null,
       "opponent_name": "Willie McDougald",
       "opponent_team": "Oklahoma",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 40,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 20,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "21-5",
       "duration": "6:41",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -3.38
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29677475132",
+      "opponent_career_id": null,
       "opponent_name": "Tyler-Xavier McKnight",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 63,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "18-3",
       "duration": "4:24",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -4.39
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29677496132",
+      "opponent_career_id": null,
       "opponent_name": "Anderson Heap",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 146,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "11-3",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -4.39
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34935430132",
+      "team": "Chattanooga",
+      "team_slug": "chattanooga",
+      "weight_class": 149,
+      "grade": "R-So.",
+      "current_rank": 82,
+      "record": "9-12"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29681681132",
+      "team": "Chattanooga",
+      "team_slug": "chattanooga",
+      "weight_class": 149,
+      "grade": "R-Fr.",
+      "current_rank": 299,
+      "record": "0-7"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24580071132",
+      "team": "Chattanooga",
+      "team_slug": "chattanooga",
+      "weight_class": 141,
+      "grade": "Fr.",
+      "current_rank": 203,
+      "record": "4-5"
+    }
+  ]
 }

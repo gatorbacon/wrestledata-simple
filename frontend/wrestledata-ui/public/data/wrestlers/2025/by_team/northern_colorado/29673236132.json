@@ -3,15 +3,20 @@
   "name": "Armando Garcia",
   "team": "Northern Colorado",
   "team_slug": "northern_colorado",
-  "team_rank": 12,
+  "team_rank": 30,
   "weight_class": 141,
+  "grade": "R-Jr.",
+  "hometown": "Denver, Colo.",
+  "high_school": "Denver East HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Funco.sidearmsports.com%2Fimages%2F2024%2F10%2F11%2FArmando_Garcia.png&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 257,
   "record": {
     "overall": "1-7",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "1-7",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 6.03,
@@ -24,137 +29,212 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.398,
+      "matches": 8,
+      "rank_weight": 199,
+      "rank_overall": 1897,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 7,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29681881132",
+      "opponent_rank": 239,
+      "opponent_name": "Jackson Herman",
+      "method": "Dec 5-1"
+    },
+    "worst_loss": {
+      "opponent_id": "29687865132",
+      "opponent_rank": 220,
+      "opponent_name": "Thomas Termini",
+      "method": "Dec 8-6"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29686933132",
+      "opponent_career_id": null,
       "opponent_name": "Brennan Van Hoecke",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 15,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 77,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:02",
-      "event": "vs. Northern Colorado"
+      "event": "vs. Northern Colorado",
+      "mv_impact": -5.22
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29687589132",
+      "opponent_career_id": null,
       "opponent_name": "Cael Happel",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 8,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 4,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "22-6",
       "duration": "4:32",
-      "event": "vs. Northern Iowa"
+      "event": "vs. Northern Iowa",
+      "mv_impact": -2.34
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29678138132",
+      "opponent_career_id": null,
       "opponent_name": "Ty Edwards",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 102,
       "weight_class": "141",
       "result": "L",
       "method": "MD",
       "score": "14-5",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -4.22
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29687865132",
+      "opponent_career_id": null,
       "opponent_name": "Thomas Termini",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 220,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "8-6",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -5.05
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29681881132",
+      "opponent_career_id": null,
       "opponent_name": "Jackson Herman",
       "opponent_team": "Illinois",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 10,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 239,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": 0.3
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29734784132",
+      "opponent_career_id": null,
       "opponent_name": "Rhett Koenig",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 7,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 91,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "7-2",
       "duration": "7:00",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": -3.21
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29677993132",
+      "opponent_career_id": null,
       "opponent_name": "Josh Edmond",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 30,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "24-7",
       "duration": "4:28",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": -4.19
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29678010132",
+      "opponent_career_id": null,
       "opponent_name": "Owen Uhls",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 75,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "11-4",
       "duration": "7:00",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": -3.25
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29673236132",
+      "team": "Northern Colorado",
+      "team_slug": "northern_colorado",
+      "weight_class": 141,
+      "grade": "R-Jr.",
+      "current_rank": 257,
+      "record": "1-7"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24579583132",
+      "team": "Northern Colorado",
+      "team_slug": "northern_colorado",
+      "weight_class": 141,
+      "grade": "R-So.",
+      "current_rank": 197,
+      "record": "5-10"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20122915132",
+      "team": "Northern Colorado",
+      "team_slug": "northern_colorado",
+      "weight_class": 141,
+      "grade": "R-Fr.",
+      "current_rank": 115,
+      "record": "0-1"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16696354132",
+      "team": "Northern Colorado",
+      "team_slug": "northern_colorado",
+      "weight_class": 141,
+      "grade": "Fr.",
+      "current_rank": 87,
+      "record": "0-1"
+    }
+  ]
 }

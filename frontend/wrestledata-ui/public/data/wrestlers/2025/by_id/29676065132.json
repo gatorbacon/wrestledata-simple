@@ -3,13 +3,18 @@
   "name": "Matthew Foil",
   "team": "North Carolina",
   "team_slug": "north_carolina",
-  "team_rank": 19,
+  "team_rank": 23,
   "weight_class": 165,
+  "grade": "Fr.",
+  "hometown": "Lumberton, N.C.",
+  "high_school": "Lumberton",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Func.sidearmsports.com%2Fimages%2F2024%2F7%2F9%2FFoil_Matthew.2024.wr.30.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 216,
   "record": {
     "overall": "0-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,32 +29,58 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.689,
+      "matches": 1,
+      "rank_weight": 249,
+      "rank_overall": 2381,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29678144132",
+      "opponent_rank": 182,
+      "opponent_name": "Grant Kress",
+      "method": "TF 16-1 5:42"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-02",
       "opponent_id": "29678144132",
+      "opponent_career_id": null,
       "opponent_name": "Grant Kress",
       "opponent_team": "Gardner-Webb",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 53,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 182,
       "weight_class": "165",
       "result": "L",
       "method": "TF",
       "score": "16-1",
       "duration": "5:42",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -6.69
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29676065132",
+      "team": "North Carolina",
+      "team_slug": "north_carolina",
+      "weight_class": 165,
+      "grade": "Fr.",
+      "current_rank": 216,
+      "record": "0-1"
+    }
+  ]
 }

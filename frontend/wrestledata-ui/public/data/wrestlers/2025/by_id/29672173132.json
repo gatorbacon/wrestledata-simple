@@ -5,11 +5,16 @@
   "team_slug": "virginia_tech",
   "team_rank": 6,
   "weight_class": 174,
+  "grade": "Junior",
+  "hometown": "Chesapeake, VA",
+  "high_school": "Great Bridge",
+  "photo_url": "https://hokiesports.com/imgproxy/9C-lCO-xeXgpoI1EgYFRKovb_oSbwiVN1dmjMbu685g/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3ZpcmdpbmlhdGVjaC1wcm9kLzIwMjQvMTAvMjQvYmZ3aTlxc3V3NlFkOW9yaHk1aWE1R01rRkwyaUZzbkN4SVJ2OVBBNi5qcGc.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 169,
   "record": {
     "overall": "2-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,107 +29,178 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 2,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.603,
+      "matches": 9,
+      "rank_weight": 140,
+      "rank_overall": 1401,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29673089132",
+      "opponent_rank": 249,
+      "opponent_name": "Noah Bash",
+      "method": "TF 16-0 4:50"
+    },
+    "worst_loss": {
+      "opponent_id": "29672739132",
+      "opponent_rank": 168,
+      "opponent_name": "Brant Cracraft",
+      "method": "MD 9-1"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-12",
       "opponent_id": "29727161132",
+      "opponent_career_id": null,
       "opponent_name": "Lucas Uliano",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 47,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 28,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "13-2",
       "duration": "7:00",
-      "event": "Mountaineer Invitational"
+      "event": "Mountaineer Invitational",
+      "mv_impact": -2.16
     },
     {
       "date": "2024-11-12",
       "opponent_id": "29734788132",
+      "opponent_career_id": null,
       "opponent_name": "Ethan Riddle",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 7,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 35,
       "weight_class": "174",
       "result": "L",
       "method": "TF",
       "score": "19-3",
       "duration": "6:32",
-      "event": "Mountaineer Invitational"
+      "event": "Mountaineer Invitational",
+      "mv_impact": -3.67
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29672739132",
+      "opponent_career_id": null,
       "opponent_name": "Brant Cracraft",
       "opponent_team": "Campbell",
-      "opponent_team_rank": 45,
+      "opponent_team_rank": 55,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 168,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "9-1",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -5.8
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29673089132",
+      "opponent_career_id": null,
       "opponent_name": "Noah Bash",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 249,
       "weight_class": "174",
       "result": "W",
       "method": "TF",
       "score": "16-0",
       "duration": "4:50",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": 1.55
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29676013132",
+      "opponent_career_id": null,
       "opponent_name": "Cade Tenold",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 95,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "7-3",
       "duration": "7:00",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": -3.49
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29684778132",
+      "opponent_career_id": null,
       "opponent_name": "Brian Finnerty",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 285,
       "weight_class": "174",
       "result": "W",
       "method": "TF",
       "score": "20-5",
       "duration": "4:42",
-      "event": "Southeast Open"
+      "event": "Southeast Open",
+      "mv_impact": 1.7
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34933375132",
+      "team": "Virginia Tech",
+      "team_slug": "virginia_tech",
+      "weight_class": 184,
+      "grade": "Senior",
+      "current_rank": 149,
+      "record": "2-4"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29672173132",
+      "team": "Virginia Tech",
+      "team_slug": "virginia_tech",
+      "weight_class": 174,
+      "grade": "Junior",
+      "current_rank": 169,
+      "record": "2-4"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20134030132",
+      "team": "Virginia Tech",
+      "team_slug": "virginia_tech",
+      "weight_class": 174,
+      "grade": "Redshirt Freshman",
+      "current_rank": 126,
+      "record": "0-0"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16697668132",
+      "team": "Virginia Tech",
+      "team_slug": "virginia_tech",
+      "weight_class": 174,
+      "grade": "Freshman",
+      "current_rank": 103,
+      "record": "2-2"
+    }
+  ]
 }

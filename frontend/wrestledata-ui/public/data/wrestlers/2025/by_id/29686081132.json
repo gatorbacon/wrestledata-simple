@@ -3,15 +3,20 @@
   "name": "Pierce Taylor",
   "team": "Ohio",
   "team_slug": "ohio",
-  "team_rank": 69,
+  "team_rank": 46,
   "weight_class": 141,
+  "grade": "R-So.",
+  "hometown": "Cincinnati, Ohio",
+  "high_school": "McNick",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fohiobobcats.com%2Fimages%2F2024%2F10%2F17%2FTaylor-2.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 222,
   "record": {
     "overall": "2-5",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "2-5",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 3.24,
@@ -19,60 +24,82 @@
     "pd7": -9.44,
     "si_plus": 95.4,
     "df_plus": 93.5,
-    "apr_plus": 111.8,
+    "apr_plus": 111.7,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -2.447,
+      "matches": 8,
+      "rank_weight": 176,
+      "rank_overall": 1659,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29687869132",
+      "opponent_rank": 210,
+      "opponent_name": "Brayton Killiri",
+      "method": "Dec 3-1"
+    },
+    "worst_loss": {
+      "opponent_id": "29723354132",
+      "opponent_rank": 197,
+      "opponent_name": "Danny Curran",
+      "method": "Fall 0:23"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29681449132",
+      "opponent_career_id": null,
       "opponent_name": "Cale Roggie",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 119,
       "weight_class": "149",
       "result": "L",
       "method": "INJ",
       "score": null,
       "duration": "1:11",
-      "event": "vs. Ohio"
+      "event": "vs. Ohio",
+      "mv_impact": -5.99
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29682287132",
+      "opponent_career_id": null,
       "opponent_name": "Michael Glynos",
       "opponent_team": "American",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 59,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 293,
       "weight_class": "141",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:44",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": 2.76
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29681419132",
+      "opponent_career_id": null,
       "opponent_name": "Joey Buttler",
       "opponent_team": "Indiana",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 36,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 50,
       "weight_class": "141",
       "result": "L",
       "method": "DFLT",
@@ -83,63 +110,103 @@
     {
       "date": "2024-11-23",
       "opponent_id": "29687869132",
+      "opponent_career_id": null,
       "opponent_name": "Brayton Killiri",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 210,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "3-1",
       "duration": "7:00",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": 1.14
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29687540132",
+      "opponent_career_id": null,
       "opponent_name": "Nash Singleton",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 41,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 43,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "5:10",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": -4.19
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29723354132",
+      "opponent_career_id": null,
       "opponent_name": "Danny Curran",
       "opponent_team": "Northern Illinois",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 49,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 197,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:23",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": -8.25
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29678434132",
+      "opponent_career_id": null,
       "opponent_name": "Tagen Jamison",
       "opponent_team": "Oklahoma State",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 4,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 9,
       "weight_class": "141",
       "result": "L",
       "method": "MD",
       "score": "14-4",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": -1.82
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29686081132",
+      "team": "Ohio",
+      "team_slug": "ohio",
+      "weight_class": 141,
+      "grade": "R-So.",
+      "current_rank": 222,
+      "record": "2-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24579317132",
+      "team": "Ohio",
+      "team_slug": "ohio",
+      "weight_class": 141,
+      "grade": "R-Fr.",
+      "current_rank": 204,
+      "record": "3-5"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20123040132",
+      "team": "Ohio",
+      "team_slug": "ohio",
+      "weight_class": 141,
+      "grade": "Fr.",
+      "current_rank": 214,
+      "record": "2-5"
+    }
+  ]
 }

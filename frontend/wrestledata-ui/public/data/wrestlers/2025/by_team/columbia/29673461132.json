@@ -3,13 +3,18 @@
   "name": "Sander Miller",
   "team": "Columbia",
   "team_slug": "columbia",
-  "team_rank": 49,
+  "team_rank": 52,
   "weight_class": 149,
+  "grade": "Jr.",
+  "hometown": "Hartsdale, N.Y.",
+  "high_school": "Edgemont Jr./Sr.",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgocolumbialions.com%2Fimages%2F2024%2F9%2F23%2FSander_Miller.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 261,
   "record": {
     "overall": "0-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,47 +29,85 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -5.565,
+      "matches": 2,
+      "rank_weight": 267,
+      "rank_overall": 2306,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29672757132",
+      "opponent_rank": 246,
+      "opponent_name": "Cael Huxford",
+      "method": "Dec 9-4"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29672757132",
+      "opponent_career_id": null,
       "opponent_name": "Cael Huxford",
       "opponent_team": "Rider",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 34,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 246,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "9-4",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -4.98
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29685264132",
+      "opponent_career_id": null,
       "opponent_name": "David Kreidler",
       "opponent_team": "Navy",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 28,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 177,
       "weight_class": "149",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -6.15
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29673461132",
+      "team": "Columbia",
+      "team_slug": "columbia",
+      "weight_class": 149,
+      "grade": "Jr.",
+      "current_rank": 261,
+      "record": "0-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24799386132",
+      "team": "Columbia",
+      "team_slug": "columbia",
+      "weight_class": 141,
+      "grade": "So.",
+      "current_rank": 269,
+      "record": "1-6"
+    }
+  ]
 }

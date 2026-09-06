@@ -3,15 +3,20 @@
   "name": "Thadd Huff",
   "team": "Bellarmine",
   "team_slug": "bellarmine",
-  "team_rank": 37,
+  "team_rank": 60,
   "weight_class": 285,
+  "grade": "Jr.",
+  "hometown": "London, OH",
+  "high_school": "London",
+  "photo_url": "https://athletics.bellarmine.edu/images/2024/9/20/Huff_Thad.png",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 189,
   "record": {
     "overall": "2-4",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "2-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 8.46,
@@ -24,107 +29,178 @@
     "bonus_rate": 1.0,
     "majors": 2,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.238,
+      "matches": 6,
+      "rank_weight": 147,
+      "rank_overall": 1606,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29688265132",
+      "opponent_rank": 192,
+      "opponent_name": "Lane Catlin",
+      "method": "MD 15-2"
+    },
+    "worst_loss": {
+      "opponent_id": "29672299132",
+      "opponent_rank": 101,
+      "opponent_name": "Austin Chapman",
+      "method": "SV-3 4-1"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-30",
       "opponent_id": "29688265132",
+      "opponent_career_id": null,
       "opponent_name": "Lane Catlin",
       "opponent_team": "Wyoming",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 35,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 192,
       "weight_class": "285",
       "result": "W",
       "method": "MD",
       "score": "15-2",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": 1.85
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29736110132",
+      "opponent_career_id": null,
       "opponent_name": "Ben Kueter",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 7,
+      "opponent_team_rank": 3,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 8,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:07",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -4.39
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29687597132",
+      "opponent_career_id": null,
       "opponent_name": "Adam Ahrendsen",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 8,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 91,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "5:23",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -6.59
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29676281132",
+      "opponent_career_id": null,
       "opponent_name": "Mike Misita",
       "opponent_team": "Ohio State",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 5,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 75,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "10-8",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -2.63
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29672180132",
+      "opponent_career_id": null,
       "opponent_name": "Austin Jordan",
       "opponent_team": "Michigan",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 13,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 236,
       "weight_class": "285",
       "result": "W",
       "method": "MD",
       "score": "10-2",
       "duration": "7:00",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": 1.68
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29672299132",
+      "opponent_career_id": null,
       "opponent_name": "Austin Chapman",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 101,
       "weight_class": "285",
       "result": "L",
       "method": "SV-3",
       "score": "4-1",
       "duration": "8:15",
-      "event": "Clarion Open"
+      "event": "Clarion Open",
+      "mv_impact": -3.35
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34943826132",
+      "team": "Bellarmine",
+      "team_slug": "bellarmine",
+      "weight_class": 197,
+      "grade": "Sr.",
+      "current_rank": 149,
+      "record": "3-9"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29679951132",
+      "team": "Bellarmine",
+      "team_slug": "bellarmine",
+      "weight_class": 285,
+      "grade": "Jr.",
+      "current_rank": 189,
+      "record": "2-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24587973132",
+      "team": "Bellarmine",
+      "team_slug": "bellarmine",
+      "weight_class": 285,
+      "grade": "So.",
+      "current_rank": 47,
+      "record": "10-4"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20127336132",
+      "team": "Bellarmine",
+      "team_slug": "bellarmine",
+      "weight_class": 285,
+      "grade": "Fr.",
+      "current_rank": 56,
+      "record": "10-7"
+    }
+  ]
 }

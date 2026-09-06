@@ -3,13 +3,18 @@
   "name": "Charles Olaechea",
   "team": "LIU",
   "team_slug": "liu",
-  "team_rank": 61,
+  "team_rank": 73,
   "weight_class": 165,
+  "grade": "Fr.",
+  "hometown": "Hauppague, New York",
+  "high_school": null,
+  "photo_url": "https://www.liuathletics.com/images/2024/12/3/e338acd6-08f2-4d7c-8914-8b27d8fe9f94.png",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 231,
   "record": {
     "overall": "0-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,37 +24,63 @@
     "pd7": -17.03,
     "si_plus": 83.8,
     "df_plus": 82.0,
-    "apr_plus": 96.6,
+    "apr_plus": 96.5,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.73,
+      "matches": 1,
+      "rank_weight": 250,
+      "rank_overall": 2385,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29679399132",
+      "opponent_rank": 208,
+      "opponent_name": "Nicholas Kunstek",
+      "method": "TF 15-0 6:10"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-10",
       "opponent_id": "29679399132",
+      "opponent_career_id": null,
       "opponent_name": "Nicholas Kunstek",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 208,
       "weight_class": "165",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "6:10",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -6.73
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29719871132",
+      "team": "LIU",
+      "team_slug": "liu",
+      "weight_class": 165,
+      "grade": "Fr.",
+      "current_rank": 231,
+      "record": "0-1"
+    }
+  ]
 }

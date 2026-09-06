@@ -3,10 +3,15 @@
   "name": "Patrick Adams",
   "team": "Northwestern",
   "team_slug": "northwestern",
-  "team_rank": 68,
+  "team_rank": 39,
   "weight_class": 125,
+  "grade": "Redshirt Junior",
+  "hometown": "Jersey City, N.J.",
+  "high_school": "St. Peter's Prep",
+  "photo_url": "https://nusports.com/imgproxy/WNy4EUC7UtFxMxIz-Hr_oSoIVykNY8sShwV9OjF7hjs/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL251c3BvcnRzLWNvbS1wcm9kLzIwMjYvMDQvMTcvSUpOYVdZUllJWXpXaXVjeTBsdmd4SXZvaTJOZUtqS0ZaUFZ4T3RDQi53ZWJw.webp",
+  "previous_school": "Buffalo",
   "year": 2025,
-  "current_rank": 140,
+  "current_rank": 82,
   "record": {
     "overall": "2-3",
     "vs_ranked": "2-3",
@@ -24,7 +29,14 @@
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.303,
+      "matches": 5,
+      "rank_weight": 84,
+      "rank_overall": 954,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 2,
@@ -33,13 +45,13 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29672297132",
-      "opponent_rank": 29,
+      "opponent_rank": 93,
       "opponent_name": "Caleb Weiand",
       "method": "Dec 7-5"
     },
     "worst_loss": {
       "opponent_id": "29721635132",
-      "opponent_rank": 18,
+      "opponent_rank": 14,
       "opponent_name": "Marc-Anthony McGowan",
       "method": "MD 13-1"
     }
@@ -48,9 +60,10 @@
     {
       "date": "2025-02-01",
       "opponent_id": "29681473132",
+      "opponent_career_id": null,
       "opponent_name": "Jacob Moran",
       "opponent_team": "Indiana",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 36,
       "opponent_weight": 125,
       "opponent_rank": 13,
       "weight_class": "125",
@@ -58,68 +71,109 @@
       "method": "TF",
       "score": "21-6",
       "duration": "5:44",
-      "event": "vs. Northwestern"
+      "event": "vs. Northwestern",
+      "mv_impact": -3.16
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29672188132",
+      "opponent_career_id": null,
       "opponent_name": "Christian Tanefeu",
       "opponent_team": "Michigan",
-      "opponent_team_rank": 62,
+      "opponent_team_rank": 13,
       "opponent_weight": 125,
-      "opponent_rank": 132,
+      "opponent_rank": 136,
       "weight_class": "125",
       "result": "W",
       "method": "MD",
       "score": "15-3",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": 2.91
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29672297132",
+      "opponent_career_id": null,
       "opponent_name": "Caleb Weiand",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 125,
-      "opponent_rank": 29,
+      "opponent_rank": 93,
       "weight_class": "125",
       "result": "W",
       "method": "DEC",
       "score": "7-5",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": 2.51
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29723339132",
+      "opponent_career_id": null,
       "opponent_name": "Blake West",
       "opponent_team": "Northern Illinois",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 49,
       "opponent_weight": 125,
-      "opponent_rank": 16,
+      "opponent_rank": 12,
       "weight_class": "125",
       "result": "L",
       "method": "MD",
       "score": "10-2",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -2.02
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29721635132",
+      "opponent_career_id": null,
       "opponent_name": "Marc-Anthony McGowan",
       "opponent_team": "Princeton",
-      "opponent_team_rank": 32,
+      "opponent_team_rank": 37,
       "opponent_weight": 125,
-      "opponent_rank": 18,
+      "opponent_rank": 14,
       "weight_class": "125",
       "result": "L",
       "method": "MD",
       "score": "13-1",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -1.75
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34945417132",
+      "team": "Rutgers",
+      "team_slug": "rutgers",
+      "weight_class": 125,
+      "grade": "Gr.",
+      "current_rank": 58,
+      "record": "4-5"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29736341132",
+      "team": "Northwestern",
+      "team_slug": "northwestern",
+      "weight_class": 125,
+      "grade": "Redshirt Junior",
+      "current_rank": 82,
+      "record": "2-3"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24597748132",
+      "team": "Northwestern",
+      "team_slug": "northwestern",
+      "weight_class": 133,
+      "grade": "Redshirt Sophomore",
+      "current_rank": 243,
+      "record": "0-14"
+    }
+  ]
 }

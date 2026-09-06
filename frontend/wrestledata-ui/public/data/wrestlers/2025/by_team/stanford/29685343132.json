@@ -3,15 +3,20 @@
   "name": "Abraham Wojcikiewicz",
   "team": "Stanford",
   "team_slug": "stanford",
-  "team_rank": 21,
+  "team_rank": 25,
   "weight_class": 184,
+  "grade": "Redshirt Freshman",
+  "hometown": "Bethalto, Ill.",
+  "high_school": "Civic Memorial",
+  "photo_url": "https://gostanford.com/imgproxy/A94xMcoa14UUisCqG2GrDFYTwNvF_iOdug9tN2uBxi0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3N0YW5mb3JkLXByb2QvMjAyNC8wMS8yMi9vbEJoSnkzaldLTFRsbWJpR1M1bHMzZWFCVWl1R2pNeFJqWG05MWpGLmpwZw.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 83,
   "record": {
     "overall": "4-5",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "4-5",
+    "vs_top10": "0-1",
+    "vs_top25": "1-3"
   },
   "metrics": {
     "pf7": 6.64,
@@ -24,152 +29,219 @@
     "bonus_rate": 0.25,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.245,
+      "matches": 11,
+      "rank_weight": 74,
+      "rank_overall": 756,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29684061132",
+      "opponent_rank": 19,
+      "opponent_name": "Maximus Hale",
+      "method": "Dec 5-4"
+    },
+    "worst_loss": {
+      "opponent_id": "29681156132",
+      "opponent_rank": 59,
+      "opponent_name": "Caleb Uhlenhopp",
+      "method": "Dec 7-2"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-12",
       "opponent_id": "29677998132",
+      "opponent_career_id": null,
       "opponent_name": "Colton Hawks",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 33,
       "weight_class": "184",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "6:49",
-      "event": "vs. Stanford"
+      "event": "vs. Stanford",
+      "mv_impact": -5.34
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29681747132",
+      "opponent_career_id": null,
       "opponent_name": "Reece Heller",
       "opponent_team": "Pittsburgh",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 21,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 9,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "8-4",
       "duration": "7:00",
-      "event": "vs. Stanford"
+      "event": "vs. Stanford",
+      "mv_impact": -1.08
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29684061132",
+      "opponent_career_id": null,
       "opponent_name": "Maximus Hale",
       "opponent_team": "Pennsylvania",
-      "opponent_team_rank": 24,
+      "opponent_team_rank": 20,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 19,
       "weight_class": "184",
       "result": "W",
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": 4.2
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29682572132",
+      "opponent_career_id": null,
       "opponent_name": "Quinn Herbert",
       "opponent_team": "Purdue",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 12,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 242,
       "weight_class": "184",
       "result": "W",
       "method": "TF",
       "score": "18-1",
       "duration": "5:52",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": 1.91
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29681396132",
+      "opponent_career_id": null,
       "opponent_name": "Shane Cartagena-Walsh",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 31,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 15,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "7-3",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -1.72
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29684774132",
+      "opponent_career_id": null,
       "opponent_name": "Ian Bush",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 22,
+      "opponent_team_rank": 18,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 25,
       "weight_class": "184",
       "result": "L",
       "method": "MD",
       "score": "14-3",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -2.48
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29681178132",
+      "opponent_career_id": null,
       "opponent_name": "Hudson Rogers",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 96,
       "weight_class": "184",
       "result": "W",
       "method": "INJ",
       "score": null,
       "duration": "5:00",
-      "event": "Menlo Invite"
+      "event": "Menlo Invite",
+      "mv_impact": 5.9
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29681156132",
+      "opponent_career_id": null,
       "opponent_name": "Caleb Uhlenhopp",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 59,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "7-2",
       "duration": "7:00",
-      "event": "Menlo Invite"
+      "event": "Menlo Invite",
+      "mv_impact": -2.79
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29681152132",
+      "opponent_career_id": null,
       "opponent_name": "Mahonri Rushton",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 170,
       "weight_class": "184",
       "result": "W",
       "method": "DEC",
       "score": "8-6",
       "duration": "7:00",
-      "event": "Menlo Invite"
+      "event": "Menlo Invite",
+      "mv_impact": 0.68
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34943455132",
+      "team": "Stanford",
+      "team_slug": "stanford",
+      "weight_class": 184,
+      "grade": "Redshirt Sophomore",
+      "current_rank": 23,
+      "record": "17-13"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29685343132",
+      "team": "Stanford",
+      "team_slug": "stanford",
+      "weight_class": 184,
+      "grade": "Redshirt Freshman",
+      "current_rank": 83,
+      "record": "4-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24606044132",
+      "team": "Stanford",
+      "team_slug": "stanford",
+      "weight_class": 184,
+      "grade": "Freshman",
+      "current_rank": 117,
+      "record": "4-5"
+    }
+  ]
 }

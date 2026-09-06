@@ -3,13 +3,18 @@
   "name": "Pablo Macias",
   "team": "Campbell",
   "team_slug": "campbell",
-  "team_rank": 45,
+  "team_rank": 55,
   "weight_class": 157,
+  "grade": "Fr.",
+  "hometown": "Glendale, Ariz.",
+  "high_school": "Ironwood HS",
+  "photo_url": "https://gocamels.com/images/2024/9/12/Macias_Pablo_04_.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 153,
   "record": {
     "overall": "3-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,75 +24,99 @@
     "pd7": -5.33,
     "si_plus": 100.1,
     "df_plus": 93.1,
-    "apr_plus": 96.3,
+    "apr_plus": 97.0,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.435,
+      "matches": 6,
+      "rank_weight": 200,
+      "rank_overall": 1655,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29684493132",
+      "opponent_rank": 139,
+      "opponent_name": "Braxton Strick",
+      "method": "M. For."
+    },
+    "worst_loss": {
+      "opponent_id": "29673467132",
+      "opponent_rank": 196,
+      "opponent_name": "Nick Campagna",
+      "method": "Dec 11-6"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-09",
       "opponent_id": "29681875132",
+      "opponent_career_id": null,
       "opponent_name": "Ryan Bennett",
       "opponent_team": "Illinois",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 10,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 192,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
-      "event": "Greyhound Open"
+      "event": "Greyhound Open",
+      "mv_impact": 1.39
     },
     {
       "date": "2025-02-09",
       "opponent_id": "29684488132",
+      "opponent_career_id": null,
       "opponent_name": "Eric Almarinez",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 83,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "16-6",
       "duration": "7:00",
-      "event": "Greyhound Open"
+      "event": "Greyhound Open",
+      "mv_impact": -4.13
     },
     {
       "date": "2025-02-09",
       "opponent_id": "29684494132",
+      "opponent_career_id": null,
       "opponent_name": "Brock Woodcock",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 195,
       "weight_class": "157",
       "result": "L",
       "method": "MD",
       "score": "23-9",
       "duration": "7:00",
-      "event": "Greyhound Open"
+      "event": "Greyhound Open",
+      "mv_impact": -5.74
     },
     {
       "date": "2025-02-09",
       "opponent_id": "29684493132",
+      "opponent_career_id": null,
       "opponent_name": "Braxton Strick",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 139,
       "weight_class": "157",
       "result": "W",
       "method": "MFF",
@@ -98,48 +127,76 @@
     {
       "date": "2025-01-10",
       "opponent_id": "29687481132",
+      "opponent_career_id": null,
       "opponent_name": "Kenny Herrmann",
       "opponent_team": "Harvard",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 71,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 114,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "8-1",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -3.18
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29681465132",
+      "opponent_career_id": null,
       "opponent_name": "Thomas Stofka",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 207,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "9-7",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": 1.49
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29673467132",
+      "opponent_career_id": null,
       "opponent_name": "Nick Campagna",
       "opponent_team": "Columbia",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 52,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 196,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "11-6",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -4.43
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34941686132",
+      "team": "Campbell",
+      "team_slug": "campbell",
+      "weight_class": 157,
+      "grade": "",
+      "current_rank": 132,
+      "record": "3-8"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29676493132",
+      "team": "Campbell",
+      "team_slug": "campbell",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 153,
+      "record": "3-4"
+    }
+  ]
 }

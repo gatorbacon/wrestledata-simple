@@ -3,13 +3,18 @@
   "name": "Tate Naaktgeboren",
   "team": "Iowa State",
   "team_slug": "iowa_state",
-  "team_rank": 17,
+  "team_rank": 26,
   "weight_class": 174,
+  "grade": "R-Fr.",
+  "hometown": "Marion, Iowa",
+  "high_school": "Linn-Mar",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fisuni.sidearmsports.com%2Fimages%2F2024%2F9%2F19%2F_0014_Naaktgeboren__Tate_24-25.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 56,
   "record": {
     "overall": "2-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,67 +24,122 @@
     "pd7": 2.73,
     "si_plus": 90.9,
     "df_plus": 111.1,
-    "apr_plus": 104.4,
+    "apr_plus": 104.3,
     "pin_rate": 0.5,
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -0.286,
+      "matches": 4,
+      "rank_weight": 92,
+      "rank_overall": 947,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29684496132",
+      "opponent_rank": 181,
+      "opponent_name": "Aaron Cramer",
+      "method": "Fall 1:12"
+    },
+    "worst_loss": {
+      "opponent_id": "29681392132",
+      "opponent_rank": 26,
+      "opponent_name": "Aiden Riggins",
+      "method": "SV-1 4-1"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-16",
       "opponent_id": "29681392132",
+      "opponent_career_id": null,
       "opponent_name": "Aiden Riggins",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 26,
       "weight_class": "174",
       "result": "L",
       "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
-      "event": "Grand View Open"
+      "event": "Grand View Open",
+      "mv_impact": -2.8
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29687590132",
+      "opponent_career_id": null,
       "opponent_name": "Wade Mitchell",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 8,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 214,
       "weight_class": "174",
       "result": "W",
       "method": "MD",
       "score": "10-2",
       "duration": "7:00",
-      "event": "Grand View Open"
+      "event": "Grand View Open",
+      "mv_impact": 0.99
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29684496132",
+      "opponent_career_id": null,
       "opponent_name": "Aaron Cramer",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 181,
       "weight_class": "174",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:12",
-      "event": "Grand View Open"
+      "event": "Grand View Open",
+      "mv_impact": 3.47
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34940717132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 184,
+      "grade": "So.",
+      "current_rank": 204,
+      "record": "0-2"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29680368132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 174,
+      "grade": "R-Fr.",
+      "current_rank": 56,
+      "record": "2-1"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24586622132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 184,
+      "grade": "Fr.",
+      "current_rank": 75,
+      "record": "1-4"
+    }
+  ]
 }

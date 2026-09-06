@@ -3,13 +3,18 @@
   "name": "Xavier Bruening",
   "team": "Iowa State",
   "team_slug": "iowa_state",
-  "team_rank": 17,
+  "team_rank": 26,
   "weight_class": 285,
+  "grade": "So.",
+  "hometown": "Burlingame, Calif.",
+  "high_school": "Burlingame",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fisuni.sidearmsports.com%2Fimages%2F2024%2F9%2F19%2F_0039_Bruening__Xavier_24-25.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 200,
   "record": {
     "overall": "0-3",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-3",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,67 +24,127 @@
     "pd7": -7.14,
     "si_plus": 94.3,
     "df_plus": 92.7,
-    "apr_plus": 103.2,
+    "apr_plus": 103.1,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.448,
+      "matches": 3,
+      "rank_weight": 204,
+      "rank_overall": 2137,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 3,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29687561132",
+      "opponent_rank": 240,
+      "opponent_name": "Kaden Darwin",
+      "method": "SV-1 4-1"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-19",
       "opponent_id": "29687377132",
+      "opponent_career_id": null,
       "opponent_name": "Juan Mora",
       "opponent_team": "Oklahoma",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 40,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 37,
       "weight_class": "285",
       "result": "L",
       "method": "TF",
       "score": "22-5",
       "duration": "3:09",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": -4.27
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29687561132",
+      "opponent_career_id": null,
       "opponent_name": "Kaden Darwin",
       "opponent_team": "Little Rock",
-      "opponent_team_rank": 28,
+      "opponent_team_rank": 15,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 240,
       "weight_class": "285",
       "result": "L",
       "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": -5.49
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29687597132",
+      "opponent_career_id": null,
       "opponent_name": "Adam Ahrendsen",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 8,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 91,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "7-2",
       "duration": "7:00",
-      "event": "BVU Open"
+      "event": "BVU Open",
+      "mv_impact": -3.59
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34940703132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 285,
+      "grade": "Jr.",
+      "current_rank": 265,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29680346132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 285,
+      "grade": "So.",
+      "current_rank": 200,
+      "record": "0-3"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24585268132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 285,
+      "grade": "R-Fr.",
+      "current_rank": 79,
+      "record": "2-3"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20129456132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 285,
+      "grade": "Fr.",
+      "current_rank": 217,
+      "record": "2-4"
+    }
+  ]
 }

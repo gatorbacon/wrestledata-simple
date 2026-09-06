@@ -3,13 +3,18 @@
   "name": "Moses Mirabal",
   "team": "Oregon State",
   "team_slug": "oregon_state",
-  "team_rank": 31,
+  "team_rank": 41,
   "weight_class": 149,
+  "grade": "Fr.",
+  "hometown": "Gilroy, Calif.",
+  "high_school": "Gilroy High School",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Foregonstate.sidearmsports.com%2Fimages%2F2024%2F10%2F9%2F25WRE_Headshot_MirabalMoses_00031.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 183,
   "record": {
     "overall": "1-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,67 +24,112 @@
     "pd7": -1.0,
     "si_plus": 90.2,
     "df_plus": 107.3,
-    "apr_plus": 102.6,
+    "apr_plus": 102.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.691,
+      "matches": 4,
+      "rank_weight": 226,
+      "rank_overall": 1975,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29727695132",
+      "opponent_rank": 218,
+      "opponent_name": "Jack Desena",
+      "method": "Dec 4-0"
+    },
+    "worst_loss": {
+      "opponent_id": "29687419132",
+      "opponent_rank": 122,
+      "opponent_name": "Hunter Hollingsworth",
+      "method": "Fall 4:28"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-24",
       "opponent_id": "29687419132",
+      "opponent_career_id": null,
       "opponent_name": "Hunter Hollingsworth",
       "opponent_team": "Oklahoma",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 40,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 122,
       "weight_class": "149",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:28",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": -6.46
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29684523132",
+      "opponent_career_id": null,
       "opponent_name": "Paul Kelly",
       "opponent_team": "California Baptist",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 64,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 56,
       "weight_class": "149",
       "result": "L",
       "method": "DEC",
       "score": "7-1",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": -2.43
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29727695132",
+      "opponent_career_id": null,
       "opponent_name": "Jack Desena",
       "opponent_team": "Stanford",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 25,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 218,
       "weight_class": "149",
       "result": "W",
       "method": "DEC",
       "score": "4-0",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": 0.6
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34934764132",
+      "team": "Oregon State",
+      "team_slug": "oregon_state",
+      "weight_class": 149,
+      "grade": "R-Fr.",
+      "current_rank": 89,
+      "record": "1-2"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29687564132",
+      "team": "Oregon State",
+      "team_slug": "oregon_state",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 183,
+      "record": "1-2"
+    }
+  ]
 }

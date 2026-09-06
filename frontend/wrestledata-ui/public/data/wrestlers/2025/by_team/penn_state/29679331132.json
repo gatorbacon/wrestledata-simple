@@ -5,11 +5,16 @@
   "team_slug": "penn_state",
   "team_rank": 1,
   "weight_class": 197,
+  "grade": "Redshirt Freshman",
+  "hometown": "Duryea, Pa.",
+  "high_school": "Bergen Catholic",
+  "photo_url": "https://gopsusports.com/imgproxy/KbYMrQd9Byio0OmmDeUBMT8o2MhRP3LSGL5R5cuzRnk/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2dvcHN1c3BvcnRzLXByb2QvMjAyNC8xMC8wMi9Tb1MxN2VCSzFjVUVMM2Nvaml6bkR4MFFKUWk1Z0JmblhnNlRlSFBtLmpwZw.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 167,
   "record": {
     "overall": "0-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,52 +24,90 @@
     "pd7": -3.0,
     "si_plus": 100.9,
     "df_plus": 98.9,
-    "apr_plus": 102.9,
+    "apr_plus": 102.8,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.712,
+      "matches": 2,
+      "rank_weight": 178,
+      "rank_overall": 1979,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29676694132",
+      "opponent_rank": 185,
+      "opponent_name": "Cael Black",
+      "method": "Dec 10-9"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-01",
       "opponent_id": "29680468132",
+      "opponent_career_id": null,
       "opponent_name": "Eric Carlson",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 81,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "7-2",
       "duration": "7:00",
-      "event": "Mat Town Open 1"
+      "event": "Mat Town Open 1",
+      "mv_impact": -2.89
     },
     {
       "date": "2024-12-01",
       "opponent_id": "29676694132",
+      "opponent_career_id": null,
       "opponent_name": "Cael Black",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 38,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 185,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "10-9",
       "duration": "7:00",
-      "event": "Mat Town Open 1"
+      "event": "Mat Town Open 1",
+      "mv_impact": -4.53
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29679331132",
+      "team": "Penn State",
+      "team_slug": "penn_state",
+      "weight_class": 197,
+      "grade": "Redshirt Freshman",
+      "current_rank": 167,
+      "record": "0-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584848132",
+      "team": "Penn State",
+      "team_slug": "penn_state",
+      "weight_class": 197,
+      "grade": "Freshman",
+      "current_rank": 117,
+      "record": "2-2"
+    }
+  ]
 }

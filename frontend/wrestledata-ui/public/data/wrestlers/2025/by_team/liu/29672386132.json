@@ -3,13 +3,18 @@
   "name": "Aeden Begue",
   "team": "LIU",
   "team_slug": "liu",
-  "team_rank": 61,
+  "team_rank": 73,
   "weight_class": 285,
+  "grade": "R-Jr.",
+  "hometown": "Canton, Ohio",
+  "high_school": "GlenOak",
+  "photo_url": "https://www.liuathletics.com/images/2024/12/3/ad9fc2db-187e-4459-86ad-3686624e3e99.png",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 130,
   "record": {
     "overall": "2-1",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-1",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,67 +24,132 @@
     "pd7": -2.81,
     "si_plus": 99.9,
     "df_plus": 97.6,
-    "apr_plus": 93.8,
+    "apr_plus": 93.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.113,
+      "matches": 4,
+      "rank_weight": 76,
+      "rank_overall": 800,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 1,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29677582132",
+      "opponent_rank": 195,
+      "opponent_name": "Mason Rebuck",
+      "method": "MD 10-2"
+    },
+    "worst_loss": {
+      "opponent_id": "29689055132",
+      "opponent_rank": 26,
+      "opponent_name": "Connor Barket",
+      "method": "TF 19-4 4:39"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-05",
       "opponent_id": "29677582132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Rebuck",
       "opponent_team": "Bloomsburg",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 61,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 195,
       "weight_class": "285",
       "result": "W",
       "method": "MD",
       "score": "10-2",
       "duration": "7:00",
-      "event": "vs. LIU"
+      "event": "vs. LIU",
+      "mv_impact": 1.95
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29689055132",
+      "opponent_career_id": null,
       "opponent_name": "Connor Barket",
       "opponent_team": "Duke",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 68,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 26,
       "weight_class": "285",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "4:39",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -3.67
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29680098132",
+      "opponent_career_id": null,
       "opponent_name": "Danny Church",
       "opponent_team": "Hofstra",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 57,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 279,
       "weight_class": "285",
       "result": "W",
       "method": "SV-3",
       "score": "5-2",
       "duration": "8:15",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 0.21
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29672386132",
+      "team": "LIU",
+      "team_slug": "liu",
+      "weight_class": 285,
+      "grade": "R-Jr.",
+      "current_rank": 130,
+      "record": "2-1"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24593278132",
+      "team": "LIU",
+      "team_slug": "liu",
+      "weight_class": 285,
+      "grade": "Jr.",
+      "current_rank": 110,
+      "record": "12-10"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20133439132",
+      "team": "LIU",
+      "team_slug": "liu",
+      "weight_class": 285,
+      "grade": "So.",
+      "current_rank": 264,
+      "record": "8-21"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16706786132",
+      "team": "LIU",
+      "team_slug": "liu",
+      "weight_class": 285,
+      "grade": "Fr.",
+      "current_rank": 187,
+      "record": "4-5"
+    }
+  ]
 }

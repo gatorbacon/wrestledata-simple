@@ -3,13 +3,18 @@
   "name": "Justin Rademacher",
   "team": "Oregon State",
   "team_slug": "oregon_state",
-  "team_rank": 31,
+  "team_rank": 41,
   "weight_class": 197,
+  "grade": "So.",
+  "hometown": "West Linn, Ore.",
+  "high_school": "West Linn HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Foregonstate.sidearmsports.com%2Fimages%2F2024%2F10%2F9%2F25WRE_Headshot__00352.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 47,
   "record": {
     "overall": "2-0",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,52 +24,100 @@
     "pd7": 10.0,
     "si_plus": 121.4,
     "df_plus": 111.6,
-    "apr_plus": 109.4,
+    "apr_plus": 109.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 4.268,
+      "matches": 2,
+      "rank_weight": 4,
+      "rank_overall": 34,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "29678758132",
+      "opponent_rank": 29,
+      "opponent_name": "Cody Merrill",
+      "method": "Dec 4-2"
+    },
     "worst_loss": null
   },
   "match_list": [
     {
       "date": "2024-12-22",
       "opponent_id": "29687820132",
+      "opponent_career_id": null,
       "opponent_name": "Joshua Harkey",
       "opponent_team": "Cal Poly",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 19,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 150,
       "weight_class": "197",
       "result": "W",
       "method": "TF",
       "score": "19-4",
       "duration": "5:50",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": 3.33
     },
     {
       "date": "2024-12-22",
       "opponent_id": "29678758132",
+      "opponent_career_id": null,
       "opponent_name": "Cody Merrill",
       "opponent_team": "Oklahoma State",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 4,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 29,
       "weight_class": "197",
       "result": "W",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Reno Tournament of Champions"
+      "event": "Reno Tournament of Champions",
+      "mv_impact": 5.21
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34934760132",
+      "team": "Oregon State",
+      "team_slug": "oregon_state",
+      "weight_class": 197,
+      "grade": "R-So.",
+      "current_rank": 12,
+      "record": "22-5"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29687548132",
+      "team": "Oregon State",
+      "team_slug": "oregon_state",
+      "weight_class": 197,
+      "grade": "So.",
+      "current_rank": 47,
+      "record": "2-0"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584166132",
+      "team": "Oregon State",
+      "team_slug": "oregon_state",
+      "weight_class": 197,
+      "grade": "Fr.",
+      "current_rank": 24,
+      "record": "15-11"
+    }
+  ]
 }

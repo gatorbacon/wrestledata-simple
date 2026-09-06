@@ -3,15 +3,20 @@
   "name": "Kaden Darwin",
   "team": "Little Rock",
   "team_slug": "little_rock",
-  "team_rank": 28,
+  "team_rank": 15,
   "weight_class": 285,
+  "grade": "FRESHMAN",
+  "hometown": "Naples, Fla.",
+  "high_school": "Palmetto Ridge HS",
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 240,
   "record": {
     "overall": "2-6",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 2.18,
@@ -19,142 +24,197 @@
     "pd7": -7.57,
     "si_plus": 88.7,
     "df_plus": 95.2,
-    "apr_plus": 96.3,
+    "apr_plus": 96.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.688,
+      "matches": 8,
+      "rank_weight": 163,
+      "rank_overall": 1729,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29680346132",
+      "opponent_rank": 200,
+      "opponent_name": "Xavier Bruening",
+      "method": "SV-1 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "29684477132",
+      "opponent_rank": 207,
+      "opponent_name": "Bryson Buhk",
+      "method": "Dec 5-1"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-19",
       "opponent_id": "29680469132",
+      "opponent_career_id": null,
       "opponent_name": "Ashton Davis",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 21,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "5-0",
       "duration": "7:00",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": -1.69
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29680346132",
+      "opponent_career_id": null,
       "opponent_name": "Xavier Bruening",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 200,
       "weight_class": "285",
       "result": "W",
       "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": 0.28
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29678002132",
+      "opponent_career_id": null,
       "opponent_name": "Seth Nitzel",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 36,
       "weight_class": "285",
       "result": "L",
       "method": "TF",
       "score": "18-0",
       "duration": "4:45",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": -3.93
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29687462132",
+      "opponent_career_id": null,
       "opponent_name": "Richard Thomas",
       "opponent_team": "Oklahoma",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 40,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 100,
       "weight_class": "285",
       "result": "L",
       "method": "TF",
       "score": "17-1",
       "duration": "6:57",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -5.6
     },
     {
       "date": "2025-01-05",
       "opponent_id": "29672148132",
+      "opponent_career_id": null,
       "opponent_name": "Parker Ferrell",
       "opponent_team": "Virginia Tech",
       "opponent_team_rank": 6,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 67,
       "weight_class": "285",
       "result": "L",
       "method": "TF",
       "score": "17-2",
       "duration": "7:00",
-      "event": "Southern Scuffle"
+      "event": "Southern Scuffle",
+      "mv_impact": -4.44
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29678018132",
+      "opponent_career_id": null,
       "opponent_name": "Jarrett Stoner",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 31,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "4-0",
       "duration": "7:00",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": -2.02
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29684477132",
+      "opponent_career_id": null,
       "opponent_name": "Bryson Buhk",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 207,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": -4.38
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29673245132",
+      "opponent_career_id": null,
       "opponent_name": "Remington Peterson",
       "opponent_team": "Northern Colorado",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 30,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 238,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "10-4",
       "duration": "7:00",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": 0.29
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34945364132",
+      "team": "Little Rock",
+      "team_slug": "little_rock",
+      "weight_class": 285,
+      "grade": "SOPHOMORE",
+      "current_rank": 113,
+      "record": "7-14"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29687561132",
+      "team": "Little Rock",
+      "team_slug": "little_rock",
+      "weight_class": 285,
+      "grade": "FRESHMAN",
+      "current_rank": 240,
+      "record": "2-6"
+    }
+  ]
 }

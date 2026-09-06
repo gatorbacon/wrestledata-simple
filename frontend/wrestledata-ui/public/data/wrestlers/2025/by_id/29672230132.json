@@ -3,15 +3,20 @@
   "name": "Jake Trovato",
   "team": "Sacred Heart",
   "team_slug": "sacred_heart",
-  "team_rank": 74,
+  "team_rank": 78,
   "weight_class": 197,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 210,
   "record": {
     "overall": "1-7",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "1-7",
+    "vs_top10": "0-1",
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 0.0,
@@ -19,142 +24,217 @@
     "pd7": -24.17,
     "si_plus": 85.0,
     "df_plus": 78.5,
-    "apr_plus": 104.8,
+    "apr_plus": 104.7,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -4.253,
+      "matches": 8,
+      "rank_weight": 186,
+      "rank_overall": 2094,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 7,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29688458132",
+      "opponent_rank": 244,
+      "opponent_name": "Toler Hornick",
+      "method": "Fall 0:31"
+    },
+    "worst_loss": {
+      "opponent_id": "29686182132",
+      "opponent_rank": 139,
+      "opponent_name": "Coy Raines",
+      "method": "Fall 1:27"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-07",
       "opponent_id": "29687603132",
+      "opponent_career_id": null,
       "opponent_name": "Wyatt Voelker",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 8,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 10,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:24",
-      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational"
+      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -3.78
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29685302132",
+      "opponent_career_id": null,
       "opponent_name": "Nikolas Stemmet",
       "opponent_team": "Stanford",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 25,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 18,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:44",
-      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational"
+      "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational",
+      "mv_impact": -4.57
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29689098132",
+      "opponent_career_id": null,
       "opponent_name": "Vincent Lee",
       "opponent_team": "Duke",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 68,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 82,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:50",
-      "event": "vs. Sacred Heart"
+      "event": "vs. Sacred Heart",
+      "mv_impact": -5.92
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29680081132",
+      "opponent_career_id": null,
       "opponent_name": "Nikolas Miller",
       "opponent_team": "Hofstra",
-      "opponent_team_rank": 59,
+      "opponent_team_rank": 57,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 99,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:05",
-      "event": "vs. Sacred Heart"
+      "event": "vs. Sacred Heart",
+      "mv_impact": -6.6
     },
     {
       "date": "2024-11-16",
       "opponent_id": "29687876132",
+      "opponent_career_id": null,
       "opponent_name": "Patrick Brophy",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 21,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "16-0",
       "duration": "4:38",
-      "event": "vs. The Citadel"
+      "event": "vs. The Citadel",
+      "mv_impact": -3.12
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29686182132",
+      "opponent_career_id": null,
       "opponent_name": "Coy Raines",
       "opponent_team": "Buffalo",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 63,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 139,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:27",
-      "event": "vs. Sacred Heart"
+      "event": "vs. Sacred Heart",
+      "mv_impact": -6.87
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29672631132",
+      "opponent_career_id": null,
       "opponent_name": "Toby Schoffstall",
       "opponent_team": "VMI",
-      "opponent_team_rank": 77,
+      "opponent_team_rank": 79,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 61,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:57",
-      "event": "vs. VMI"
+      "event": "vs. VMI",
+      "mv_impact": -5.33
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29688458132",
+      "opponent_career_id": null,
       "opponent_name": "Toler Hornick",
       "opponent_team": "Presbyterian",
-      "opponent_team_rank": 71,
+      "opponent_team_rank": 76,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 244,
       "weight_class": "197",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:31",
-      "event": "vs. Sacred Heart"
+      "event": "vs. Sacred Heart",
+      "mv_impact": 2.16
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34949043132",
+      "team": "Sacred Heart",
+      "team_slug": "sacred_heart",
+      "weight_class": 285,
+      "grade": "Sr.",
+      "current_rank": 262,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29672230132",
+      "team": "Sacred Heart",
+      "team_slug": "sacred_heart",
+      "weight_class": 197,
+      "grade": "",
+      "current_rank": 210,
+      "record": "1-7"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24579784132",
+      "team": "Sacred Heart",
+      "team_slug": "sacred_heart",
+      "weight_class": 197,
+      "grade": "So.",
+      "current_rank": 244,
+      "record": "3-15"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "21993700132",
+      "team": "Sacred Heart",
+      "team_slug": "sacred_heart",
+      "weight_class": 285,
+      "grade": "Fy.",
+      "current_rank": 253,
+      "record": "0-2"
+    }
+  ]
 }

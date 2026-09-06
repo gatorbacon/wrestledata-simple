@@ -3,15 +3,20 @@
   "name": "Jagger Condomitti",
   "team": "Nebraska",
   "team_slug": "nebraska",
-  "team_rank": 11,
+  "team_rank": 2,
   "weight_class": 165,
+  "grade": "Junior",
+  "hometown": "Northampton, Pa.",
+  "high_school": "Northampton Area",
+  "photo_url": "https://huskers.com/imgproxy/NPkLT98X-t9fXuap5fm_TE49enwxvL7f_ELTYxRlQp0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8xMS9TMm4za0FsVnRQVnQ0dWJGVVNVT0ZQZm8zcmNvaTJOMklrUWhxMzZKLmpwZw.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 87,
   "record": {
     "overall": "2-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 7.33,
@@ -24,107 +29,188 @@
     "bonus_rate": 0.5,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.288,
+      "matches": 6,
+      "rank_weight": 130,
+      "rank_overall": 1292,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29675823132",
+      "opponent_rank": 60,
+      "opponent_name": "Boeden Greenley",
+      "method": "Dec 18-16"
+    },
+    "worst_loss": {
+      "opponent_id": "29675632132",
+      "opponent_rank": 93,
+      "opponent_name": "Connor Gaynor",
+      "method": "MD 9-1"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-19",
       "opponent_id": "29681386132",
+      "opponent_career_id": null,
       "opponent_name": "Gabe Carver",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 75,
       "weight_class": "165",
       "result": "W",
       "method": "MD",
       "score": "9-1",
       "duration": "7:00",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": 4.15
     },
     {
       "date": "2025-01-19",
       "opponent_id": "29687523132",
+      "opponent_career_id": null,
       "opponent_name": "Mason Reiniche",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 41,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 74,
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
       "score": "5-3",
       "duration": "7:00",
-      "event": "Cyclone Open"
+      "event": "Cyclone Open",
+      "mv_impact": -3.08
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29679162132",
+      "opponent_career_id": null,
       "opponent_name": "Nicco Ruiz",
       "opponent_team": "Arizona State",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 27,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 23,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:50",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -4.64
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29675632132",
+      "opponent_career_id": null,
       "opponent_name": "Connor Gaynor",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 24,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 93,
       "weight_class": "165",
       "result": "L",
       "method": "MD",
       "score": "9-1",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -4.11
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29675646132",
+      "opponent_career_id": null,
       "opponent_name": "Marcus Espinoza-Owens",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 24,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 36,
       "weight_class": "165",
       "result": "L",
       "method": "MD",
       "score": "15-2",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -2.78
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29675823132",
+      "opponent_career_id": null,
       "opponent_name": "Boeden Greenley",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 48,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 60,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
       "score": "18-16",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": 2.74
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34935613132",
+      "team": "Nebraska",
+      "team_slug": "nebraska",
+      "weight_class": 165,
+      "grade": "Senior",
+      "current_rank": 43,
+      "record": "2-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29673824132",
+      "team": "Nebraska",
+      "team_slug": "nebraska",
+      "weight_class": 165,
+      "grade": "Junior",
+      "current_rank": 87,
+      "record": "2-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24580347132",
+      "team": "Nebraska",
+      "team_slug": "nebraska",
+      "weight_class": 165,
+      "grade": "Sophomore",
+      "current_rank": 51,
+      "record": "1-0"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20122982132",
+      "team": "Nebraska",
+      "team_slug": "nebraska",
+      "weight_class": 165,
+      "grade": "Redshirt Freshman",
+      "current_rank": 119,
+      "record": "3-5"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16698070132",
+      "team": "Nebraska",
+      "team_slug": "nebraska",
+      "weight_class": 165,
+      "grade": "Freshman",
+      "current_rank": 104,
+      "record": "1-2"
+    }
+  ]
 }

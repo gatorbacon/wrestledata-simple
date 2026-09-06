@@ -3,15 +3,20 @@
   "name": "Ryder Block",
   "team": "Iowa",
   "team_slug": "iowa",
-  "team_rank": 7,
+  "team_rank": 3,
   "weight_class": 141,
+  "grade": "RS Fr.",
+  "hometown": "Waverly, Iowa",
+  "high_school": "Waverly-Shell Rock",
+  "photo_url": "https://hawkeyesports.com/imgproxy/RHRkQuSZ6p4aGJgXWkn8WH9KTmelO5xeV2WKUIcfK2E/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2hhd2tleWVzcG9ydHMtcHJvZC8yMDI0LzA5Lzk0ZWJhY2QxLTIwMjQwOTRfYmxvY2tfcnlkZXIuanBn.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 126,
   "record": {
     "overall": "2-4",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "2-4",
+    "vs_top10": "0-1",
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 7.62,
@@ -19,112 +24,173 @@
     "pd7": -1.49,
     "si_plus": 109.2,
     "df_plus": 99.8,
-    "apr_plus": 97.3,
+    "apr_plus": 97.9,
     "pin_rate": 0.0,
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.729,
+      "matches": 7,
+      "rank_weight": 60,
+      "rank_overall": 597,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 4,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29687540132",
+      "opponent_rank": 43,
+      "opponent_name": "Nash Singleton",
+      "method": "Dec 5-4"
+    },
+    "worst_loss": {
+      "opponent_id": "29680341132",
+      "opponent_rank": 130,
+      "opponent_name": "Zach Redding",
+      "method": "Dec 5-4"
+    }
   },
   "match_list": [
     {
       "date": "2025-01-25",
       "opponent_id": "29676290132",
+      "opponent_career_id": null,
       "opponent_name": "Jesse Mendez",
       "opponent_team": "Ohio State",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 5,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 1,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "19-2",
       "duration": "5:10",
-      "event": "vs. Ohio State"
+      "event": "vs. Ohio State",
+      "mv_impact": -1.59
     },
     {
       "date": "2025-01-17",
       "opponent_id": "29681829132",
+      "opponent_career_id": null,
       "opponent_name": "Danny Pucino",
       "opponent_team": "Illinois",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 10,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 18,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "vs. Iowa"
+      "event": "vs. Iowa",
+      "mv_impact": -1.74
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29680341132",
+      "opponent_career_id": null,
       "opponent_name": "Zach Redding",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 130,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "vs. Iowa State"
+      "event": "vs. Iowa State",
+      "mv_impact": -4.04
     },
     {
       "date": "2024-11-15",
       "opponent_id": "29679994132",
+      "opponent_career_id": null,
       "opponent_name": "David Mayora",
       "opponent_team": "Bellarmine",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 60,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 46,
       "weight_class": "141",
       "result": "W",
       "method": "TF",
       "score": "19-4",
       "duration": "4:57",
-      "event": "vs. Bellarmine"
+      "event": "vs. Iowa",
+      "mv_impact": 5.79
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29722817132",
+      "opponent_career_id": null,
       "opponent_name": "Aden Valencia",
       "opponent_team": "Stanford",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 25,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 76,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "11-6",
       "duration": "7:00",
-      "event": "vs. Stanford"
+      "event": "vs. Stanford",
+      "mv_impact": -2.91
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29687540132",
+      "opponent_career_id": null,
       "opponent_name": "Nash Singleton",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 41,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 43,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "vs. Oregon State"
+      "event": "vs. Oregon State",
+      "mv_impact": 3.81
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34962160132",
+      "team": "Iowa",
+      "team_slug": "iowa",
+      "weight_class": 149,
+      "grade": "So.",
+      "current_rank": 8,
+      "record": "18-11"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29736105132",
+      "team": "Iowa",
+      "team_slug": "iowa",
+      "weight_class": 141,
+      "grade": "RS Fr.",
+      "current_rank": 126,
+      "record": "2-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24580744132",
+      "team": "Iowa",
+      "team_slug": "iowa",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 170,
+      "record": "0-0"
+    }
+  ]
 }

@@ -3,15 +3,20 @@
   "name": "Brody Hallin",
   "team": "Northern Illinois",
   "team_slug": "northern_illinois",
-  "team_rank": 23,
+  "team_rank": 49,
   "weight_class": 157,
+  "grade": "R-Jr.",
+  "hometown": "McHenry, Ill.",
+  "high_school": "McHenry",
+  "photo_url": "https://niuhuskies.com/images/2024/10/10/Hallin-Brody_k2uyS.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 241,
   "record": {
     "overall": "3-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 3.6,
@@ -19,142 +24,217 @@
     "pd7": -1.91,
     "si_plus": 93.2,
     "df_plus": 106.4,
-    "apr_plus": 95.4,
+    "apr_plus": 95.3,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.437,
+      "matches": 9,
+      "rank_weight": 165,
+      "rank_overall": 1338,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29686441132",
+      "opponent_rank": 78,
+      "opponent_name": "Darius Marines",
+      "method": "TB-2 (RT) 4-3"
+    },
+    "worst_loss": {
+      "opponent_id": "29686985132",
+      "opponent_rank": 225,
+      "opponent_name": "Aaron Ferguson",
+      "method": "Dec 7-3"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-20",
       "opponent_id": "29681848132",
+      "opponent_career_id": null,
       "opponent_name": "Logan Swaw",
       "opponent_team": "Illinois",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 10,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 77,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "5-0",
       "duration": "7:00",
-      "event": "Kent State Open"
+      "event": "Kent State Open",
+      "mv_impact": -3.05
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29686991132",
+      "opponent_career_id": null,
       "opponent_name": "Keegan Knapp",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 200,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "Kent State Open"
+      "event": "Kent State Open",
+      "mv_impact": 1.7
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29686441132",
+      "opponent_career_id": null,
       "opponent_name": "Darius Marines",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 78,
       "weight_class": "157",
       "result": "W",
       "method": "TB-2",
       "score": "4-3",
       "duration": "10:00",
-      "event": "Kent State Open"
+      "event": "Kent State Open",
+      "mv_impact": 3.53
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29681835132",
+      "opponent_career_id": null,
       "opponent_name": "Charlie Fifield",
       "opponent_team": "Illinois",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 10,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 142,
       "weight_class": "157",
       "result": "W",
       "method": "DEC",
       "score": "7-3",
       "duration": "7:00",
-      "event": "Cougar Clash"
-    },
-    {
-      "date": "2024-12-07",
-      "opponent_id": "29723401132",
-      "opponent_name": "Landen Johnson",
-      "opponent_team": "Northern Illinois",
-      "opponent_team_rank": 23,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "DEC",
-      "score": "6-4",
-      "duration": "7:00",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": 2.09
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29678001132",
+      "opponent_career_id": null,
       "opponent_name": "Joel Mylin",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 16,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 130,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "Cougar Clash"
+      "event": "Cougar Clash",
+      "mv_impact": -4.47
+    },
+    {
+      "date": "2024-12-07",
+      "opponent_id": "29723401132",
+      "opponent_career_id": null,
+      "opponent_name": "Landen Johnson",
+      "opponent_team": "Northern Illinois",
+      "opponent_team_rank": 49,
+      "opponent_weight": 157,
+      "opponent_rank": 39,
+      "weight_class": "157",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-4",
+      "duration": "7:00",
+      "event": "Cougar Clash",
+      "mv_impact": -2.14
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29735013132",
+      "opponent_career_id": null,
       "opponent_name": "Johnny Lovett",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 45,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 13,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "10-6",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": -0.96
     },
     {
       "date": "2024-11-09",
       "opponent_id": "29686985132",
+      "opponent_career_id": null,
       "opponent_name": "Aaron Ferguson",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 157,
-      "opponent_rank": null,
+      "opponent_rank": 225,
       "weight_class": "157",
       "result": "L",
       "method": "DEC",
       "score": "7-3",
       "duration": "7:00",
-      "event": "2024 Michigan State Open"
+      "event": "2024 Michigan State Open",
+      "mv_impact": -5.16
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34955402132",
+      "team": "Northern Illinois",
+      "team_slug": "northern_illinois",
+      "weight_class": 157,
+      "grade": "R-Jr.",
+      "current_rank": 251,
+      "record": "0-2"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29723346132",
+      "team": "Northern Illinois",
+      "team_slug": "northern_illinois",
+      "weight_class": 157,
+      "grade": "R-Jr.",
+      "current_rank": 241,
+      "record": "3-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24593633132",
+      "team": "Northern Illinois",
+      "team_slug": "northern_illinois",
+      "weight_class": 174,
+      "grade": "R-Fr.",
+      "current_rank": 156,
+      "record": "0-0"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20126938132",
+      "team": "Northern Illinois",
+      "team_slug": "northern_illinois",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 78,
+      "record": "4-3"
+    }
+  ]
 }

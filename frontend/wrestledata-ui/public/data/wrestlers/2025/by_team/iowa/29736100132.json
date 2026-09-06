@@ -3,13 +3,18 @@
   "name": "Gage Marty",
   "team": "Iowa",
   "team_slug": "iowa",
-  "team_rank": 7,
+  "team_rank": 3,
   "weight_class": 285,
+  "grade": "So.",
+  "hometown": "Solon, Iowa",
+  "high_school": "Solon",
+  "photo_url": "https://hawkeyesports.com/imgproxy/FcwNyH9pb_vUgD_3bscc-9kW96RWH5kyhM5DCEJRhos/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2hhd2tleWVzcG9ydHMtcHJvZC8yMDI0LzA5Lzg5MTJkZDg0LTIwMjQwOTRfbWFydHlfZ2FnZS5qcGc.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 223,
   "record": {
     "overall": "0-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "0-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,45 +24,60 @@
     "pd7": -19.38,
     "si_plus": 95.9,
     "df_plus": 70.2,
-    "apr_plus": 92.1,
+    "apr_plus": 92.2,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.652,
+      "matches": 1,
+      "rank_weight": 189,
+      "rank_overall": 1964,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
-    "worst_loss": null
+    "worst_loss": {
+      "opponent_id": "29688265132",
+      "opponent_rank": 192,
+      "opponent_name": "Lane Catlin",
+      "method": "M. For."
+    }
   },
   "match_list": [
     {
       "date": "2024-12-30",
       "opponent_id": "29681389132",
+      "opponent_career_id": null,
       "opponent_name": "Daniel Herrera",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 28,
       "weight_class": "285",
       "result": "L",
       "method": "TF",
       "score": "18-3",
       "duration": "5:25",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -3.65
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29688265132",
+      "opponent_career_id": null,
       "opponent_name": "Lane Catlin",
       "opponent_team": "Wyoming",
-      "opponent_team_rank": 79,
+      "opponent_team_rank": 35,
       "opponent_weight": 285,
-      "opponent_rank": null,
+      "opponent_rank": 192,
       "weight_class": "285",
       "result": "L",
       "method": "MFF",
@@ -66,5 +86,47 @@
       "event": "Soldier Salute"
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34962156132",
+      "team": "Iowa",
+      "team_slug": "iowa",
+      "weight_class": 285,
+      "grade": "Jr.",
+      "current_rank": 216,
+      "record": "0-4"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29736100132",
+      "team": "Iowa",
+      "team_slug": "iowa",
+      "weight_class": 285,
+      "grade": "So.",
+      "current_rank": 223,
+      "record": "0-2"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24580700132",
+      "team": "Iowa",
+      "team_slug": "iowa",
+      "weight_class": 285,
+      "grade": "RS Fr.",
+      "current_rank": 187,
+      "record": "0-2"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20135780132",
+      "team": "Iowa",
+      "team_slug": "iowa",
+      "weight_class": 285,
+      "grade": "Fr.",
+      "current_rank": 86,
+      "record": "6-6"
+    }
+  ]
 }

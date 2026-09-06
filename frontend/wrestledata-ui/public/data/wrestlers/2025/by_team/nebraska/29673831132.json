@@ -3,10 +3,15 @@
   "name": "Hayden Mills",
   "team": "Nebraska",
   "team_slug": "nebraska",
-  "team_rank": 11,
+  "team_rank": 2,
   "weight_class": 133,
+  "grade": "Sophomore",
+  "hometown": "Overland Park, Kan.",
+  "high_school": "Blue Valley Southwest",
+  "photo_url": "https://huskers.com/imgproxy/zfYjowlrZMKqLLb10xMXfsRFO91Uu_O48iVcr5RBEUk/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8xMS9iSUJFRzdBcUdOcnpnUkdmVVZjblc3T2ljd29wVUpMNzlHRlVSTjB4LmpwZw.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 126,
+  "current_rank": 112,
   "record": {
     "overall": "3-4",
     "vs_ranked": "3-4",
@@ -19,12 +24,19 @@
     "pd7": -3.5,
     "si_plus": 95.1,
     "df_plus": 95.1,
-    "apr_plus": 94.0,
+    "apr_plus": 94.1,
     "pin_rate": 0.0,
     "bonus_rate": 0.333,
     "majors": 1,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.025,
+      "matches": 8,
+      "rank_weight": 168,
+      "rank_overall": 1536,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
@@ -32,14 +44,14 @@
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "29675677132",
-      "opponent_rank": 138,
-      "opponent_name": "Kenton Cooke",
-      "method": "MD 11-0"
+      "opponent_id": "29721845132",
+      "opponent_rank": 129,
+      "opponent_name": "Tucker Owens",
+      "method": "Dec 5-4"
     },
     "worst_loss": {
       "opponent_id": "29681425132",
-      "opponent_rank": 196,
+      "opponent_rank": 188,
       "opponent_name": "Logan Frazier",
       "method": "Fall 0:53"
     }
@@ -48,108 +60,164 @@
     {
       "date": "2024-11-23",
       "opponent_id": "29681425132",
+      "opponent_career_id": null,
       "opponent_name": "Logan Frazier",
       "opponent_team": "Indiana",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 36,
       "opponent_weight": 133,
-      "opponent_rank": 196,
+      "opponent_rank": 188,
       "weight_class": "133",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:53",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": -8.35
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29687534132",
+      "opponent_career_id": null,
       "opponent_name": "Damion Elliott",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 31,
+      "opponent_team_rank": 41,
       "opponent_weight": 133,
-      "opponent_rank": 148,
+      "opponent_rank": 106,
       "weight_class": "133",
       "result": "L",
       "method": "DEC",
       "score": "12-5",
       "duration": "7:00",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": -3.67
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29687077132",
+      "opponent_career_id": null,
       "opponent_name": "Tj England",
       "opponent_team": "Ohio",
-      "opponent_team_rank": 69,
+      "opponent_team_rank": 46,
       "opponent_weight": 133,
-      "opponent_rank": 190,
+      "opponent_rank": 212,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "7-4",
       "duration": "7:00",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": 0.34
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29721845132",
+      "opponent_career_id": null,
       "opponent_name": "Tucker Owens",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 125,
-      "opponent_rank": 154,
+      "opponent_rank": 129,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": 1.59
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29679149132",
+      "opponent_career_id": null,
       "opponent_name": "Carter Dibert",
       "opponent_team": "Arizona State",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 27,
       "opponent_weight": 133,
-      "opponent_rank": 107,
+      "opponent_rank": 124,
       "weight_class": "133",
       "result": "L",
       "method": "TF",
       "score": "15-0",
       "duration": "3:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -5.68
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29675740132",
+      "opponent_career_id": null,
       "opponent_name": "Cale Seaton",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 24,
       "opponent_weight": 133,
-      "opponent_rank": 51,
+      "opponent_rank": 49,
       "weight_class": "133",
       "result": "L",
       "method": "DEC",
       "score": "8-4",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": -2.61
     },
     {
       "date": "2024-11-17",
       "opponent_id": "29675677132",
+      "opponent_career_id": null,
       "opponent_name": "Kenton Cooke",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 24,
       "opponent_weight": 133,
-      "opponent_rank": 138,
+      "opponent_rank": 204,
       "weight_class": "133",
       "result": "W",
       "method": "MD",
       "score": "11-0",
       "duration": "7:00",
-      "event": "Warren Williamson Daktronics Invitational"
+      "event": "Warren Williamson Daktronics Invitational",
+      "mv_impact": 0.59
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34935616132",
+      "team": "Nebraska",
+      "team_slug": "nebraska",
+      "weight_class": 133,
+      "grade": "Junior",
+      "current_rank": 79,
+      "record": "5-5"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29673831132",
+      "team": "Nebraska",
+      "team_slug": "nebraska",
+      "weight_class": 133,
+      "grade": "Sophomore",
+      "current_rank": 112,
+      "record": "3-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24580355132",
+      "team": "Nebraska",
+      "team_slug": "nebraska",
+      "weight_class": 133,
+      "grade": "Redshirt Freshman",
+      "current_rank": 73,
+      "record": "1-2"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20123001132",
+      "team": "Nebraska",
+      "team_slug": "nebraska",
+      "weight_class": 133,
+      "grade": "Freshman",
+      "current_rank": 95,
+      "record": "0-3"
+    }
+  ]
 }

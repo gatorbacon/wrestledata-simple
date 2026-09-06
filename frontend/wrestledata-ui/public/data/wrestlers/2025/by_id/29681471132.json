@@ -3,13 +3,18 @@
   "name": "Caleb Marzolino",
   "team": "Indiana",
   "team_slug": "indiana",
-  "team_rank": 16,
+  "team_rank": 36,
   "weight_class": 197,
+  "grade": "Fr.",
+  "hometown": "Waverly, Pa.",
+  "high_school": "Abington Heights High School",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fiuhoosiers.com%2Fimages%2F2024%2F11%2F1%2FVert_18_Marzolino.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 138,
   "record": {
     "overall": "3-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,127 +24,180 @@
     "pd7": -5.93,
     "si_plus": 108.9,
     "df_plus": 90.9,
-    "apr_plus": 119.0,
+    "apr_plus": 125.2,
     "pin_rate": 0.667,
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 2
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": -0.548,
+      "matches": 7,
+      "rank_weight": 84,
+      "rank_overall": 1045,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29685054132",
+      "opponent_rank": 78,
+      "opponent_name": "Joey Lyons",
+      "method": "MD 16-5"
+    },
+    "worst_loss": {
+      "opponent_id": "29672287132",
+      "opponent_rank": 62,
+      "opponent_name": "Kael Wisler",
+      "method": "Dec 13-7"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-20",
       "opponent_id": "29686582132",
+      "opponent_career_id": null,
       "opponent_name": "Alex Hamrick",
       "opponent_team": "Brown",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 62,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 209,
       "weight_class": "197",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "5:30",
-      "event": "Sheridan invite"
+      "event": "Sheridan invite",
+      "mv_impact": 3.06
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29733396132",
+      "opponent_career_id": null,
       "opponent_name": "Max Shulaw",
       "opponent_team": "Virginia",
-      "opponent_team_rank": 78,
+      "opponent_team_rank": 42,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 50,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:13",
-      "event": "Sheridan invite"
+      "event": "Sheridan invite",
+      "mv_impact": -5.04
     },
     {
       "date": "2024-12-20",
       "opponent_id": "29721358132",
+      "opponent_career_id": null,
       "opponent_name": "JT Davis",
       "opponent_team": "Lehigh",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 11,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 36,
       "weight_class": "197",
       "result": "L",
       "method": "MD",
       "score": "14-2",
       "duration": "7:00",
-      "event": "Sheridan invite"
+      "event": "Sheridan invite",
+      "mv_impact": -2.49
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29685054132",
+      "opponent_career_id": null,
       "opponent_name": "Joey Lyons",
       "opponent_team": "Cleveland State",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 56,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 78,
       "weight_class": "197",
       "result": "W",
       "method": "MD",
       "score": "16-5",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": 3.7
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29681382132",
+      "opponent_career_id": null,
       "opponent_name": "Sawyer Bartelt",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 26,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 40,
       "weight_class": "197",
       "result": "L",
       "method": "TF",
       "score": "20-5",
       "duration": "6:17",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": -3.82
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29672287132",
+      "opponent_career_id": null,
       "opponent_name": "Kael Wisler",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 63,
+      "opponent_team_rank": 74,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 62,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "13-7",
       "duration": "7:00",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": -3.15
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29676300132",
+      "opponent_career_id": null,
       "opponent_name": "Cole Robertson",
       "opponent_team": "Ohio State",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 5,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 168,
       "weight_class": "197",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:57",
-      "event": "Cleveland State Open"
+      "event": "Cleveland State Open",
+      "mv_impact": 3.91
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34945838132",
+      "team": "Indiana",
+      "team_slug": "indiana",
+      "weight_class": 285,
+      "grade": "R-Fr.",
+      "current_rank": 194,
+      "record": "4-19"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29681471132",
+      "team": "Indiana",
+      "team_slug": "indiana",
+      "weight_class": 197,
+      "grade": "Fr.",
+      "current_rank": 138,
+      "record": "3-4"
+    }
+  ]
 }

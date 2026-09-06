@@ -3,15 +3,20 @@
   "name": "Cole Han-Lindemyer",
   "team": "Stanford",
   "team_slug": "stanford",
-  "team_rank": 21,
+  "team_rank": 25,
   "weight_class": 184,
+  "grade": "Freshman",
+  "hometown": "Farmington, Minn.",
+  "high_school": "Farmington",
+  "photo_url": "https://gostanford.com/imgproxy/1FHzcPSFBBZYd0wYgB5Qf-PT5dhN5DvFYASUQfZYzsA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3N0YW5mb3JkLXByb2QvMjAyNC8xMS8wMS93UHliUlhqNjIxdWFVVFJMd044VUZKM2hqd05tZ2doc0Jad0lNeWYyLmpwZw.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 119,
   "record": {
     "overall": "3-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "3-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 6.2,
@@ -19,127 +24,180 @@
     "pd7": -3.5,
     "si_plus": 97.7,
     "df_plus": 98.7,
-    "apr_plus": 113.3,
+    "apr_plus": 113.1,
     "pin_rate": 0.333,
     "bonus_rate": 0.667,
     "majors": 1,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.721,
+      "matches": 8,
+      "rank_weight": 131,
+      "rank_overall": 1430,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29687465132",
+      "opponent_rank": 100,
+      "opponent_name": "Anders Thompson",
+      "method": "Dec 8-3"
+    },
+    "worst_loss": {
+      "opponent_id": "29687835132",
+      "opponent_rank": 75,
+      "opponent_name": "Daschle Lamer",
+      "method": "Dec 14-11"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-21",
       "opponent_id": "29676000132",
+      "opponent_career_id": null,
       "opponent_name": "Gavin Kane",
       "opponent_team": "North Carolina",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 23,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 16,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "6-1",
       "duration": "7:00",
-      "event": "vs. Stanford"
+      "event": "vs. Stanford",
+      "mv_impact": -1.41
     },
     {
       "date": "2025-02-16",
       "opponent_id": "29689063132",
+      "opponent_career_id": null,
       "opponent_name": "David Hussey",
       "opponent_team": "Duke",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 68,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 235,
       "weight_class": "184",
       "result": "W",
       "method": "MD",
       "score": "11-2",
       "duration": "7:00",
-      "event": "vs. Stanford"
+      "event": "vs. Stanford",
+      "mv_impact": 0.81
     },
     {
       "date": "2025-02-14",
       "opponent_id": "29674052132",
+      "opponent_career_id": null,
       "opponent_name": "Dylan Fishback",
       "opponent_team": "NC State",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 14,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 11,
       "weight_class": "184",
       "result": "L",
       "method": "TF",
       "score": "16-0",
       "duration": "4:46",
-      "event": "vs. Stanford"
+      "event": "vs. Stanford",
+      "mv_impact": -3.45
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29722980132",
+      "opponent_career_id": null,
       "opponent_name": "Braden Smelser",
       "opponent_team": "CSU Bakersfield",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 22,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 212,
       "weight_class": "184",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:49",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": 2.62
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29687835132",
+      "opponent_career_id": null,
       "opponent_name": "Daschle Lamer",
       "opponent_team": "Cal Poly",
-      "opponent_team_rank": 9,
+      "opponent_team_rank": 19,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 75,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "14-11",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": -2.81
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29687465132",
+      "opponent_career_id": null,
       "opponent_name": "Anders Thompson",
       "opponent_team": "Oklahoma",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 40,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 100,
       "weight_class": "184",
       "result": "W",
       "method": "DEC",
       "score": "8-3",
       "duration": "7:00",
-      "event": "Roadrunner Open"
+      "event": "Roadrunner Open",
+      "mv_impact": 3.01
     },
     {
       "date": "2024-11-02",
       "opponent_id": "29681157132",
+      "opponent_career_id": null,
       "opponent_name": "Kael Bennie",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 68,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:13",
-      "event": "Menlo Invite"
+      "event": "Menlo Invite",
+      "mv_impact": -6.27
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34943461132",
+      "team": "Stanford",
+      "team_slug": "stanford",
+      "weight_class": 184,
+      "grade": "Redshirt Freshman",
+      "current_rank": 78,
+      "record": "3-2"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29723009132",
+      "team": "Stanford",
+      "team_slug": "stanford",
+      "weight_class": 184,
+      "grade": "Freshman",
+      "current_rank": 119,
+      "record": "3-4"
+    }
+  ]
 }

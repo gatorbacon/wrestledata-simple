@@ -3,13 +3,18 @@
   "name": "Westen Hoffschneider",
   "team": "Wyoming",
   "team_slug": "wyoming",
-  "team_rank": 79,
+  "team_rank": 35,
   "weight_class": 174,
+  "grade": "Fr.",
+  "hometown": "Castle Rock, Colorado",
+  "high_school": "Ponderosa High School",
+  "photo_url": "https://gowyo.com/images/2024/9/10/Hoffschneider.JPG?width=96&height=96&mode=crop&anchor=topcenter",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 80,
   "record": {
     "overall": "2-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "2-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,82 +24,129 @@
     "pd7": -4.5,
     "si_plus": 87.8,
     "df_plus": 105.1,
-    "apr_plus": 110.6,
+    "apr_plus": 110.4,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 2,
+    "mat_value": {
+      "mv_avg": 0.568,
+      "matches": 4,
+      "rank_weight": 63,
+      "rank_overall": 655,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29721862132",
+      "opponent_rank": 89,
+      "opponent_name": "Mike Avelar",
+      "method": "Fall 2:45"
+    },
+    "worst_loss": {
+      "opponent_id": "29681146132",
+      "opponent_rank": 101,
+      "opponent_name": "Tanner Lofthouse",
+      "method": "Dec 5-1"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-23",
       "opponent_id": "29673260132",
+      "opponent_career_id": null,
       "opponent_name": "Kameron Phillips",
       "opponent_team": "Northern Colorado",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 30,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 212,
       "weight_class": "174",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:28",
-      "event": "Cowboy Shoot Out"
+      "event": "Cowboy Shoot Out",
+      "mv_impact": 3.16
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29681146132",
+      "opponent_career_id": null,
       "opponent_name": "Tanner Lofthouse",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 101,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "Cowboy Shoot Out"
+      "event": "Cowboy Shoot Out",
+      "mv_impact": -3.17
     },
     {
       "date": "2025-02-23",
       "opponent_id": "29681178132",
+      "opponent_career_id": null,
       "opponent_name": "Hudson Rogers",
       "opponent_team": "Utah Valley",
-      "opponent_team_rank": 76,
+      "opponent_team_rank": 29,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 96,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "5-0",
       "duration": "7:00",
-      "event": "Cowboy Shoot Out"
+      "event": "Cowboy Shoot Out",
+      "mv_impact": -3.1
     },
     {
       "date": "2025-02-16",
       "opponent_id": "29721862132",
+      "opponent_career_id": null,
       "opponent_name": "Mike Avelar",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 34,
+      "opponent_team_rank": 58,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 89,
       "weight_class": "174",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:45",
-      "event": "Rocky Mountain Collegiate Open"
+      "event": "Rocky Mountain Collegiate Open",
+      "mv_impact": 5.37
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34933458132",
+      "team": "Wyoming",
+      "team_slug": "wyoming",
+      "weight_class": 184,
+      "grade": "R-Fr.",
+      "current_rank": 115,
+      "record": "0-0"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29688284132",
+      "team": "Wyoming",
+      "team_slug": "wyoming",
+      "weight_class": 174,
+      "grade": "Fr.",
+      "current_rank": 80,
+      "record": "2-2"
+    }
+  ]
 }

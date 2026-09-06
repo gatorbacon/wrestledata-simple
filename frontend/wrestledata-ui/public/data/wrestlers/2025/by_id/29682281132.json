@@ -3,15 +3,20 @@
   "name": "Breon Phifer",
   "team": "American",
   "team_slug": "american",
-  "team_rank": 35,
+  "team_rank": 59,
   "weight_class": 174,
+  "grade": "Sr.",
+  "hometown": "Weston, Conn.",
+  "high_school": "Weston",
+  "photo_url": "https://aueagles.com/images/2024/10/11/Phifer_Breon_AU_Wrestling_MediaDay_Oct03240129-EV.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 206,
   "record": {
     "overall": "2-5",
-    "vs_ranked": "0-0",
-    "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_ranked": "2-5",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
   },
   "metrics": {
     "pf7": 3.25,
@@ -19,127 +24,200 @@
     "pd7": -6.5,
     "si_plus": 92.2,
     "df_plus": 96.1,
-    "apr_plus": 110.5,
+    "apr_plus": 110.3,
     "pin_rate": 0.5,
     "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -2.225,
+      "matches": 9,
+      "rank_weight": 161,
+      "rank_overall": 1601,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 2,
+    "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "29677474132",
+      "opponent_rank": 125,
+      "opponent_name": "Ian McGehee",
+      "method": "Dec 5-4"
+    },
+    "worst_loss": {
+      "opponent_id": "29687009132",
+      "opponent_rank": 188,
+      "opponent_name": "Waylon Wehler",
+      "method": "Dec 5-2"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-23",
       "opponent_id": "29768342132",
+      "opponent_career_id": null,
       "opponent_name": "Darrien Roberts",
       "opponent_team": "Morgan State",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 75,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 43,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "11-2",
       "duration": "7:00",
-      "event": "vs. Morgan State"
+      "event": "vs. Morgan State",
+      "mv_impact": -3.24
     },
     {
       "date": "2025-02-21",
       "opponent_id": "29679325132",
+      "opponent_career_id": null,
       "opponent_name": "Levi Haines",
       "opponent_team": "Penn State",
       "opponent_team_rank": 1,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 2,
       "weight_class": "174",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:43",
-      "event": "vs. Penn State"
+      "event": "vs. Penn State",
+      "mv_impact": -2.63
     },
     {
       "date": "2025-02-09",
       "opponent_id": "29686592132",
+      "opponent_career_id": null,
       "opponent_name": "Andrew Reall",
       "opponent_team": "Brown",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 62,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 90,
       "weight_class": "184",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "0:00",
-      "event": "vs. Brown"
+      "event": "vs. Brown",
+      "mv_impact": -5.38
     },
     {
       "date": "2024-12-15",
       "opponent_id": "29677474132",
+      "opponent_career_id": null,
       "opponent_name": "Ian McGehee",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 51,
+      "opponent_team_rank": 66,
       "opponent_weight": 165,
-      "opponent_rank": null,
+      "opponent_rank": 125,
       "weight_class": "184",
       "result": "W",
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "vs. Davidson"
+      "event": "vs. Davidson",
+      "mv_impact": 2.3
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29681514132",
+      "opponent_career_id": null,
       "opponent_name": "Roman Rogotzke",
       "opponent_team": "Indiana",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 36,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 93,
       "weight_class": "174",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "6:24",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": -6.3
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29688517132",
+      "opponent_career_id": null,
       "opponent_name": "Owen Hendricks",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 75,
+      "opponent_team_rank": 50,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 227,
       "weight_class": "174",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "3:15",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": 2.82
     },
     {
       "date": "2024-11-23",
       "opponent_id": "29687009132",
+      "opponent_career_id": null,
       "opponent_name": "Waylon Wehler",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 72,
       "opponent_weight": 174,
-      "opponent_rank": null,
+      "opponent_rank": 188,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "Navy Classic"
+      "event": "Navy Classic",
+      "mv_impact": -4.52
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29682281132",
+      "team": "American",
+      "team_slug": "american",
+      "weight_class": 174,
+      "grade": "Sr.",
+      "current_rank": 206,
+      "record": "2-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24580796132",
+      "team": "American",
+      "team_slug": "american",
+      "weight_class": 165,
+      "grade": "Jr.",
+      "current_rank": 295,
+      "record": "1-18"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20127490132",
+      "team": "American",
+      "team_slug": "american",
+      "weight_class": 165,
+      "grade": "So.",
+      "current_rank": 176,
+      "record": "3-5"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16703370132",
+      "team": "American",
+      "team_slug": "american",
+      "weight_class": 165,
+      "grade": "Fr.",
+      "current_rank": 284,
+      "record": "2-16"
+    }
+  ]
 }

@@ -3,15 +3,20 @@
   "name": "Anthony Moscatello",
   "team": "Princeton",
   "team_slug": "princeton",
-  "team_rank": 32,
+  "team_rank": 37,
   "weight_class": 184,
+  "grade": "So.",
+  "hometown": "Mount Olive, N.J.",
+  "high_school": "Mount Olive",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fprinceton.sidearmsports.com%2Fimages%2F2024%2F10%2F28%2F24_Anthony_Moscatello_Media_6.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 203,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-0"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 4.97,
@@ -19,97 +24,156 @@
     "pd7": -7.44,
     "si_plus": 92.9,
     "df_plus": 91.2,
-    "apr_plus": 96.4,
+    "apr_plus": 96.5,
     "pin_rate": 0.0,
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.406,
+      "matches": 6,
+      "rank_weight": 188,
+      "rank_overall": 2126,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29723349132",
+      "opponent_rank": 248,
+      "opponent_name": "Austin Stewart",
+      "method": "Dec 5-2"
+    },
+    "worst_loss": {
+      "opponent_id": "29684126132",
+      "opponent_rank": 220,
+      "opponent_name": "Nathan Taylor",
+      "method": "Inj. 6:38"
+    }
   },
   "match_list": [
     {
       "date": "2024-12-30",
       "opponent_id": "29723349132",
+      "opponent_career_id": null,
       "opponent_name": "Austin Stewart",
       "opponent_team": "Northern Illinois",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 49,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 248,
       "weight_class": "184",
       "result": "W",
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "2024 Midlands Championships"
-    },
-    {
-      "date": "2024-12-30",
-      "opponent_id": "29681396132",
-      "opponent_name": "Shane Cartagena-Walsh",
-      "opponent_team": "Rutgers",
-      "opponent_team_rank": 13,
-      "opponent_weight": 184,
-      "opponent_rank": null,
-      "weight_class": "184",
-      "result": "L",
-      "method": "DEC",
-      "score": "8-2",
-      "duration": "7:00",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -0.85
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29684126132",
+      "opponent_career_id": null,
       "opponent_name": "Nathan Taylor",
       "opponent_team": "Pennsylvania",
-      "opponent_team_rank": 24,
+      "opponent_team_rank": 20,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 220,
       "weight_class": "184",
       "result": "L",
       "method": "INJ",
       "score": null,
       "duration": "6:38",
-      "event": "2024 Midlands Championships"
+      "event": "2024 Midlands Championships",
+      "mv_impact": -8.38
+    },
+    {
+      "date": "2024-12-30",
+      "opponent_id": "29681396132",
+      "opponent_career_id": null,
+      "opponent_name": "Shane Cartagena-Walsh",
+      "opponent_team": "Rutgers",
+      "opponent_team_rank": 31,
+      "opponent_weight": 184,
+      "opponent_rank": 15,
+      "weight_class": "184",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-2",
+      "duration": "7:00",
+      "event": "2024 Midlands Championships",
+      "mv_impact": -1.72
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29686592132",
+      "opponent_career_id": null,
       "opponent_name": "Andrew Reall",
       "opponent_team": "Brown",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 62,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 90,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "15-9",
       "duration": "7:00",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -3.38
     },
     {
       "date": "2024-11-03",
       "opponent_id": "29681396132",
+      "opponent_career_id": null,
       "opponent_name": "Shane Cartagena-Walsh",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 31,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 15,
       "weight_class": "184",
       "result": "L",
       "method": "TF",
       "score": "19-3",
       "duration": "5:24",
-      "event": "Princeton Open"
+      "event": "Princeton Open",
+      "mv_impact": -3.72
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34948137132",
+      "team": "Princeton",
+      "team_slug": "princeton",
+      "weight_class": 197,
+      "grade": "Jr.",
+      "current_rank": 194,
+      "record": "0-2"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29685625132",
+      "team": "Princeton",
+      "team_slug": "princeton",
+      "weight_class": 184,
+      "grade": "So.",
+      "current_rank": 203,
+      "record": "1-4"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24599743132",
+      "team": "Princeton",
+      "team_slug": "princeton",
+      "weight_class": 184,
+      "grade": "Fr.",
+      "current_rank": 236,
+      "record": "1-10"
+    }
+  ]
 }

@@ -3,13 +3,18 @@
   "name": "Jared Thiry",
   "team": "South Dakota State",
   "team_slug": "south_dakota_state",
-  "team_rank": 33,
+  "team_rank": 24,
   "weight_class": 184,
+  "grade": "R-Fr.",
+  "hometown": "Waterloo, Iowa",
+  "high_school": "Don Bosco H.S.",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fsdstate.sidearmsports.com%2Fimages%2F2024%2F9%2F27%2F20240829-0235.JPG&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 171,
   "record": {
     "overall": "1-5",
-    "vs_ranked": "0-0",
+    "vs_ranked": "1-5",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,107 +29,168 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.798,
+      "matches": 8,
+      "rank_weight": 197,
+      "rank_overall": 2206,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 1,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29675866132",
+      "opponent_rank": 178,
+      "opponent_name": "Tayshaun Glover",
+      "method": "Dec 6-5"
+    },
+    "worst_loss": {
+      "opponent_id": "29679939132",
+      "opponent_rank": 225,
+      "opponent_name": "Sam Schroeder",
+      "method": "Fall 3:08"
+    }
   },
   "match_list": [
     {
       "date": "2025-02-01",
       "opponent_id": "29672449132",
+      "opponent_career_id": null,
       "opponent_name": "Matthew Jens",
       "opponent_team": "Wisconsin",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 33,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 198,
       "weight_class": "184",
       "result": "L",
       "method": "DEC",
       "score": "4-0",
       "duration": "7:00",
-      "event": "Loras Open"
+      "event": "Loras Open",
+      "mv_impact": -5.8
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29679939132",
+      "opponent_career_id": null,
       "opponent_name": "Sam Schroeder",
       "opponent_team": "Bellarmine",
-      "opponent_team_rank": 37,
+      "opponent_team_rank": 60,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 225,
       "weight_class": "184",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:08",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -8.84
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29685203132",
+      "opponent_career_id": null,
       "opponent_name": "Daniel Williams",
       "opponent_team": "Navy",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 28,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 73,
       "weight_class": "184",
       "result": "L",
       "method": "TF",
       "score": "20-4",
       "duration": "7:00",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -4.68
     },
     {
       "date": "2024-12-30",
       "opponent_id": "29687609132",
+      "opponent_career_id": null,
       "opponent_name": "CJ Walrath",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 8,
       "opponent_weight": 184,
-      "opponent_rank": null,
+      "opponent_rank": 44,
       "weight_class": "184",
       "result": "L",
       "method": "TF",
       "score": "18-2",
       "duration": "6:19",
-      "event": "Soldier Salute"
+      "event": "Soldier Salute",
+      "mv_impact": -3.83
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29675822132",
+      "opponent_career_id": null,
       "opponent_name": "Adam Cherne",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 48,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 176,
       "weight_class": "184",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:37",
-      "event": "MSU Moorhead Dragon Open"
+      "event": "MSU Moorhead Dragon Open",
+      "mv_impact": -8.29
     },
     {
       "date": "2024-12-07",
       "opponent_id": "29675866132",
+      "opponent_career_id": null,
       "opponent_name": "Tayshaun Glover",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 67,
+      "opponent_team_rank": 48,
       "opponent_weight": 197,
-      "opponent_rank": null,
+      "opponent_rank": 178,
       "weight_class": "184",
       "result": "W",
       "method": "DEC",
       "score": "6-5",
       "duration": "7:00",
-      "event": "MSU Moorhead Dragon Open"
+      "event": "MSU Moorhead Dragon Open",
+      "mv_impact": 0.67
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34943244132",
+      "team": "South Dakota State",
+      "team_slug": "south_dakota_state",
+      "weight_class": 184,
+      "grade": "R-So.",
+      "current_rank": 74,
+      "record": "4-4"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29675651132",
+      "team": "South Dakota State",
+      "team_slug": "south_dakota_state",
+      "weight_class": 184,
+      "grade": "R-Fr.",
+      "current_rank": 171,
+      "record": "1-5"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584739132",
+      "team": "South Dakota State",
+      "team_slug": "south_dakota_state",
+      "weight_class": 184,
+      "grade": "Fr.",
+      "current_rank": 221,
+      "record": "1-10"
+    }
+  ]
 }

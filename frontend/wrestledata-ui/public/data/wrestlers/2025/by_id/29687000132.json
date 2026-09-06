@@ -3,10 +3,15 @@
   "name": "Gunner Havens",
   "team": "Kent State",
   "team_slug": "kent_state",
-  "team_rank": 60,
+  "team_rank": 72,
   "weight_class": 125,
+  "grade": "R-Fr.",
+  "hometown": "Circleville, Ohio",
+  "high_school": "Teays Valley",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fkentstatesports.com%2Fimages%2F2024%2F12%2F6%2FGunner_Havens.jpg&width=603&height=803&type=webp",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": 139,
+  "current_rank": 168,
   "record": {
     "overall": "1-3",
     "vs_ranked": "1-3",
@@ -19,12 +24,19 @@
     "pd7": -9.0,
     "si_plus": 85.6,
     "df_plus": 90.6,
-    "apr_plus": 112.4,
+    "apr_plus": 112.3,
     "pin_rate": 1.0,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -3.202,
+      "matches": 4,
+      "rank_weight": 166,
+      "rank_overall": 1856,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -33,78 +45,108 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "29672832132",
-      "opponent_rank": 180,
+      "opponent_rank": 204,
       "opponent_name": "Brady Klinsky",
       "method": "Fall 0:39"
     },
     "worst_loss": {
-      "opponent_id": "29687493132",
-      "opponent_rank": 143,
-      "opponent_name": "Isaiah Adams",
-      "method": "Dec 6-3"
+      "opponent_id": "29681446132",
+      "opponent_rank": 163,
+      "opponent_name": "Gunner Chambers",
+      "method": "MD 9-0"
     }
   },
   "match_list": [
     {
       "date": "2025-01-17",
       "opponent_id": "29684522132",
+      "opponent_career_id": null,
       "opponent_name": "Drew Davis",
       "opponent_team": "SIU Edwardsville",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 77,
       "opponent_weight": 125,
-      "opponent_rank": 92,
+      "opponent_rank": 79,
       "weight_class": "125",
       "result": "L",
       "method": "TF",
       "score": "18-3",
       "duration": "7:00",
-      "event": "vs. SIU Edwardsville"
+      "event": "vs. SIU Edwardsville",
+      "mv_impact": -4.75
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29681446132",
+      "opponent_career_id": null,
       "opponent_name": "Gunner Chambers",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 54,
       "opponent_weight": 125,
-      "opponent_rank": 128,
+      "opponent_rank": 163,
       "weight_class": "125",
       "result": "L",
       "method": "MD",
       "score": "9-0",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -6.09
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29687493132",
+      "opponent_career_id": null,
       "opponent_name": "Isaiah Adams",
       "opponent_team": "Harvard",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 71,
       "opponent_weight": 125,
-      "opponent_rank": 143,
+      "opponent_rank": 131,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "6-3",
       "duration": "7:00",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": -4.64
     },
     {
       "date": "2025-01-10",
       "opponent_id": "29672832132",
+      "opponent_career_id": null,
       "opponent_name": "Brady Klinsky",
       "opponent_team": "Rider",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 34,
       "opponent_weight": 125,
-      "opponent_rank": 180,
+      "opponent_rank": 204,
       "weight_class": "125",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:39",
-      "event": "Dave Lehman F&M Open"
+      "event": "Dave Lehman F&M Open",
+      "mv_impact": 2.67
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2025,
+      "wrestler_id": "29687000132",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 125,
+      "grade": "R-Fr.",
+      "current_rank": 168,
+      "record": "1-3"
+    },
+    {
+      "season": 2024,
+      "wrestler_id": "24584488132",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 125,
+      "grade": "",
+      "current_rank": 194,
+      "record": "1-5"
+    }
+  ]
 }

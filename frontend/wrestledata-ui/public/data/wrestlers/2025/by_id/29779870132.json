@@ -3,13 +3,18 @@
   "name": "Carter Tate",
   "team": "Cornell",
   "team_slug": "cornell",
-  "team_rank": 50,
+  "team_rank": 9,
   "weight_class": 141,
+  "grade": "Jr.",
+  "hometown": "Reno, Nev.",
+  "high_school": "Bishop Manogue Catholic HS",
+  "photo_url": "https://cornellbigred.com/images/2024/8/28/Tate_Carter_24_crop.jpg",
+  "previous_school": null,
   "year": 2025,
-  "current_rank": null,
+  "current_rank": 81,
   "record": {
     "overall": "6-2",
-    "vs_ranked": "0-0",
+    "vs_ranked": "6-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -19,142 +24,207 @@
     "pd7": 9.26,
     "si_plus": 112.6,
     "df_plus": 112.6,
-    "apr_plus": 96.3,
+    "apr_plus": 96.4,
     "pin_rate": 0.0,
     "bonus_rate": 0.5,
     "majors": 2,
     "techs": 1,
-    "pins": 0
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.11,
+      "matches": 10,
+      "rank_weight": 129,
+      "rank_overall": 1242,
+      "version": "v1"
+    }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
-    "ranked_losses": 0,
+    "ranked_wins": 6,
+    "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": null,
-    "worst_loss": null
+    "win_over_highest_rank": {
+      "opponent_id": "29680931132",
+      "opponent_rank": 74,
+      "opponent_name": "George Oroudjov",
+      "method": "SV-1 4-1"
+    },
+    "worst_loss": {
+      "opponent_id": "29686586132",
+      "opponent_rank": 87,
+      "opponent_name": "Giuseppe Iamunno",
+      "method": "Fall 2:02"
+    }
   },
   "match_list": [
     {
       "date": "2024-11-24",
       "opponent_id": "29686586132",
+      "opponent_career_id": null,
       "opponent_name": "Giuseppe Iamunno",
       "opponent_team": "Brown",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 62,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 87,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:02",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": -5.54
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29685360132",
+      "opponent_career_id": null,
       "opponent_name": "Andy Lucinsky",
       "opponent_team": "Buffalo",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 63,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 271,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": 0.79
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29672310132",
+      "opponent_career_id": null,
       "opponent_name": "Clayton Bashor",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 65,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 231,
       "weight_class": "141",
       "result": "W",
       "method": "TF",
       "score": "15-0",
       "duration": "3:56",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": 2.7
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29680931132",
+      "opponent_career_id": null,
       "opponent_name": "George Oroudjov",
       "opponent_team": "Cornell",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 9,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 74,
       "weight_class": "141",
       "result": "W",
       "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": 3.39
     },
     {
       "date": "2024-11-24",
       "opponent_id": "29672211132",
+      "opponent_career_id": null,
       "opponent_name": "Jacob Ice",
       "opponent_team": "Sacred Heart",
-      "opponent_team_rank": 74,
+      "opponent_team_rank": 78,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 277,
       "weight_class": "141",
       "result": "W",
       "method": "MD",
       "score": "9-0",
       "duration": "7:00",
-      "event": "Big Red Invitational"
+      "event": "Big Red Invitational",
+      "mv_impact": 1.16
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29680146132",
+      "opponent_career_id": null,
       "opponent_name": "Colt Schrader",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 44,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 189,
       "weight_class": "141",
       "result": "W",
       "method": "MD",
       "score": "14-3",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 2.08
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29674082132",
+      "opponent_career_id": null,
       "opponent_name": "Gavin Linsman",
       "opponent_team": "NC State",
-      "opponent_team_rank": 3,
+      "opponent_team_rank": 14,
       "opponent_weight": 149,
-      "opponent_rank": null,
+      "opponent_rank": 75,
       "weight_class": "141",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:15",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": -5.7
     },
     {
       "date": "2024-11-10",
       "opponent_id": "29672621132",
+      "opponent_career_id": null,
       "opponent_name": "Phoenix Alyea",
       "opponent_team": "VMI",
-      "opponent_team_rank": 77,
+      "opponent_team_rank": 79,
       "opponent_weight": 141,
-      "opponent_rank": null,
+      "opponent_rank": 235,
       "weight_class": "141",
       "result": "W",
       "method": "DEC",
       "score": "9-3",
       "duration": "7:00",
-      "event": "Journeymen Collegiate Classic"
+      "event": "Journeymen Collegiate Classic",
+      "mv_impact": 1.25
     }
   ],
-  "profile_generated_at": "2026-04-03"
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2026,
+      "wrestler_id": "34964407132",
+      "team": "Cornell",
+      "team_slug": "cornell",
+      "weight_class": 149,
+      "grade": "Sr.",
+      "current_rank": 303,
+      "record": "2-4"
+    },
+    {
+      "season": 2025,
+      "wrestler_id": "29779870132",
+      "team": "Cornell",
+      "team_slug": "cornell",
+      "weight_class": 141,
+      "grade": "Jr.",
+      "current_rank": 81,
+      "record": "6-2"
+    },
+    {
+      "season": 2023,
+      "wrestler_id": "20130868132",
+      "team": "Cornell",
+      "team_slug": "cornell",
+      "weight_class": 141,
+      "grade": "Fr.",
+      "current_rank": 192,
+      "record": "1-2"
+    }
+  ]
 }
