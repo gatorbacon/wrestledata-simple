@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "season": 2023,
+  "gender": null,
+  "team_id": "lindenwood",
+  "team_name": "Lindenwood",
+  "name": "Lindenwood",
+  "abbreviation": "LU",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": null,
+  "location": {
+    "state": "MO",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=ffjnrlinqw&teamId=971442143",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/ncaa_men/2023",
+    "starter_overrides_file": "mt/rankings_data/ncaa_men/2023/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-09-04T23:00:32.790304Z",
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "20121636132",
+      "133": "20121626132",
+      "141": "20140296132",
+      "149": "20121641132",
+      "157": "20121649132",
+      "165": "20121627132",
+      "174": "20121651132",
+      "184": "20121632132",
+      "197": "20121645132",
+      "285": "20121629132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  }
+}

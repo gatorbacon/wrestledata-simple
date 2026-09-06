@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "season": 2023,
+  "gender": null,
+  "team_id": "cleveland_state",
+  "team_name": "Cleveland State",
+  "name": "Cleveland State",
+  "abbreviation": "CSU",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": null,
+  "location": {
+    "state": "OH",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=ffjnrlinqw&teamId=971390143",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/ncaa_men/2023",
+    "starter_overrides_file": "mt/rankings_data/ncaa_men/2023/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-09-04T23:00:32.712597Z",
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "20126429132",
+      "133": "20126438132",
+      "141": "20126434132",
+      "149": "20125262132",
+      "157": "20125268132",
+      "165": "20126437132",
+      "174": "20126436132",
+      "184": "20125259132",
+      "197": "20126444132",
+      "285": "20125261132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  }
+}

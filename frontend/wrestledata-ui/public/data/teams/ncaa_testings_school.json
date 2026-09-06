@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "season": 2023,
+  "gender": null,
+  "team_id": "ncaa_testings_school",
+  "team_name": "NCAA Testings School",
+  "name": "NCAA Testings School",
+  "abbreviation": "NTS",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": null,
+  "location": {
+    "state": "NJ",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=ffjnrlinqw&teamId=971470143",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/ncaa_men/2023",
+    "starter_overrides_file": "mt/rankings_data/ncaa_men/2023/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-09-04T22:57:04.582491Z",
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": null,
+      "133": null,
+      "141": null,
+      "149": null,
+      "157": null,
+      "165": null,
+      "174": null,
+      "184": null,
+      "197": null,
+      "285": null
+    },
+    "starters_source": "ranking_files_with_overrides"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "season": 2023,
+  "gender": null,
+  "team_id": "presbyterian_college",
+  "team_name": "Presbyterian College",
+  "name": "Presbyterian College",
+  "abbreviation": "PRES",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": null,
+  "location": {
+    "state": "SC",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=ffjnrlinqw&teamId=971576143",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/ncaa_men/2023",
+    "starter_overrides_file": "mt/rankings_data/ncaa_men/2023/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-09-04T23:00:32.892745Z",
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "20134976132",
+      "133": "20134974132",
+      "141": "20133298132",
+      "149": "20134978132",
+      "157": "20133256132",
+      "165": "20133089132",
+      "174": "20134979132",
+      "184": "20133357132",
+      "197": "20134980132",
+      "285": "20134984132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  }
+}

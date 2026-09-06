@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "season": 2023,
+  "gender": null,
+  "team_id": "queens",
+  "team_name": "Queens",
+  "name": "Queens",
+  "abbreviation": "QU",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": null,
+  "location": {
+    "state": "NC",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=ffjnrlinqw&teamId=971599143",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/ncaa_men/2023",
+    "starter_overrides_file": "mt/rankings_data/ncaa_men/2023/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-09-04T23:00:32.905033Z",
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "20157962132",
+      "133": "20157919132",
+      "141": "20157907132",
+      "149": "20157922132",
+      "157": "20157916132",
+      "165": "20157940132",
+      "174": "20157908132",
+      "184": "20157924132",
+      "197": "20157921132",
+      "285": "20157910132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  }
+}

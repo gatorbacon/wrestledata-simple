@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "season": 2023,
+  "gender": null,
+  "team_id": "pennsylvania",
+  "team_name": "Pennsylvania",
+  "name": "Pennsylvania",
+  "abbreviation": "PENN",
+  "governing_body": "NCAA",
+  "division": "D1",
+  "conference": null,
+  "location": {
+    "state": "PA",
+    "region": null
+  },
+  "urls": {
+    "trackwrestling": "https://www.trackwrestling.com/seasons/TeamSchedule.jsp?twSessionId=ffjnrlinqw&teamId=971502143",
+    "school": null
+  },
+  "derived_from": {
+    "rankings_dir": "mt/rankings_data/ncaa_men/2023",
+    "starter_overrides_file": "mt/rankings_data/ncaa_men/2023/starter_overrides.json"
+  },
+  "generated_at_utc": "2026-09-04T23:00:32.884564Z",
+  "roster": {
+    "weights": [
+      125,
+      133,
+      141,
+      149,
+      157,
+      165,
+      174,
+      184,
+      197,
+      285
+    ],
+    "starters": {
+      "125": "20123298132",
+      "133": "20123279132",
+      "141": "20123275132",
+      "149": "20123278132",
+      "157": "20123274132",
+      "165": "20123284132",
+      "174": "20123294132",
+      "184": "20123304132",
+      "197": "20123286132",
+      "285": "20123276132"
+    },
+    "starters_source": "ranking_files_with_overrides"
+  }
+}
