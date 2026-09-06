@@ -1,0 +1,155 @@
+{
+  "wrestler_id": "20110123",
+  "name": "jason javier",
+  "team": "Binghamton University",
+  "team_slug": "binghamton_university",
+  "team_rank": 52,
+  "weight_class": 125,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
+  "year": 2017,
+  "current_rank": 160,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 11.91,
+    "pa7": 12.4,
+    "pd7": -0.48,
+    "si_plus": 117.8,
+    "df_plus": 85.6,
+    "apr_plus": 98.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.056,
+      "matches": 4,
+      "rank_weight": 119,
+      "rank_overall": 1368,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "19900123",
+      "opponent_rank": 227,
+      "opponent_name": "Jacob Lehr",
+      "method": "TF 16-1 5:00"
+    },
+    "worst_loss": {
+      "opponent_id": "9727071009",
+      "opponent_rank": 136,
+      "opponent_name": "Hunter Lucas",
+      "method": "Dec 13-9"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2016-11-20",
+      "opponent_id": "19900123",
+      "opponent_career_id": null,
+      "opponent_name": "Jacob Lehr",
+      "opponent_team": "Cornell",
+      "opponent_team_rank": 8,
+      "opponent_weight": 133,
+      "opponent_rank": 227,
+      "weight_class": "125",
+      "result": "W",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "5:00",
+      "event": "2016 NYS Intercollegiate Championships",
+      "mv_impact": 1.56
+    },
+    {
+      "date": "2016-11-13",
+      "opponent_id": "522189013",
+      "opponent_career_id": null,
+      "opponent_name": "Donald Keeley",
+      "opponent_team": "Brown",
+      "opponent_team_rank": 57,
+      "opponent_weight": 125,
+      "opponent_rank": 133,
+      "weight_class": "125",
+      "result": "L",
+      "method": "TF",
+      "score": "21-4",
+      "duration": "6:27",
+      "event": "Jonathan Kaloust Bearcat Open",
+      "mv_impact": -6.36
+    },
+    {
+      "date": "2016-11-13",
+      "opponent_id": "9727071009",
+      "opponent_career_id": null,
+      "opponent_name": "Hunter Lucas",
+      "opponent_team": "Maryland",
+      "opponent_team_rank": 49,
+      "opponent_weight": 125,
+      "opponent_rank": 136,
+      "weight_class": "125",
+      "result": "L",
+      "method": "DEC",
+      "score": "13-9",
+      "duration": "7:00",
+      "event": "Jonathan Kaloust Bearcat Open",
+      "mv_impact": -4.99
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2020,
+      "wrestler_id": "10498331132",
+      "team": "Binghamton",
+      "team_slug": "binghamton",
+      "weight_class": 133,
+      "grade": "R-Jr.",
+      "current_rank": 213,
+      "record": "1-6"
+    },
+    {
+      "season": 2019,
+      "wrestler_id": "4636046132",
+      "team": "Binghamton",
+      "team_slug": "binghamton",
+      "weight_class": 133,
+      "grade": "R-So.",
+      "current_rank": 179,
+      "record": "0-3"
+    },
+    {
+      "season": 2018,
+      "wrestler_id": "11414239009",
+      "team": "Binghamton",
+      "team_slug": "binghamton",
+      "weight_class": 133,
+      "grade": "R-Fr.",
+      "current_rank": 180,
+      "record": "0-4"
+    },
+    {
+      "season": 2017,
+      "wrestler_id": "20110123",
+      "team": "Binghamton University",
+      "team_slug": "binghamton_university",
+      "weight_class": 125,
+      "grade": "",
+      "current_rank": 160,
+      "record": "1-2"
+    }
+  ]
+}

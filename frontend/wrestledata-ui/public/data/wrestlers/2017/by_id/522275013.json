@@ -1,0 +1,135 @@
+{
+  "wrestler_id": "522275013",
+  "name": "Blake Andrews",
+  "team": "Oklahoma State",
+  "team_slug": "oklahoma_state",
+  "team_rank": 3,
+  "weight_class": 285,
+  "grade": "Jr.",
+  "hometown": "Grapevine, Texas",
+  "high_school": "Grapevine",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fokstate.com%2Fimages%2F2016%2F9%2F2%2FAndrewsB17mug.jpg&width=603&height=803&type=webp",
+  "previous_school": "Northeastern Oklahoma",
+  "year": 2017,
+  "current_rank": 71,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 6.0,
+    "pa7": 5.33,
+    "pd7": 0.67,
+    "si_plus": 99.5,
+    "df_plus": 103.9,
+    "apr_plus": 98.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.527,
+      "matches": 3,
+      "rank_weight": 52,
+      "rank_overall": 560,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "829814076",
+      "opponent_rank": 102,
+      "opponent_name": "Vincent Spalitto",
+      "method": "MD 11-2"
+    },
+    "worst_loss": {
+      "opponent_id": "524096011",
+      "opponent_rank": 8,
+      "opponent_name": "Austin Schafer",
+      "method": "MD 9-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2016-11-13",
+      "opponent_id": "829814076",
+      "opponent_career_id": null,
+      "opponent_name": "Vincent Spalitto",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 32,
+      "opponent_weight": 285,
+      "opponent_rank": 102,
+      "weight_class": "285",
+      "result": "W",
+      "method": "MD",
+      "score": "11-2",
+      "duration": "7:00",
+      "event": "USA Oklahoma Outlaw Open",
+      "mv_impact": 3.1
+    },
+    {
+      "date": "2016-11-13",
+      "opponent_id": "524096011",
+      "opponent_career_id": null,
+      "opponent_name": "Austin Schafer",
+      "opponent_team": "Oklahoma State",
+      "opponent_team_rank": 3,
+      "opponent_weight": 285,
+      "opponent_rank": 8,
+      "weight_class": "285",
+      "result": "L",
+      "method": "MD",
+      "score": "9-1",
+      "duration": "7:00",
+      "event": "USA Oklahoma Outlaw Open",
+      "mv_impact": -1.44
+    },
+    {
+      "date": "2016-11-06",
+      "opponent_id": "829815076",
+      "opponent_career_id": null,
+      "opponent_name": "Rex Schotts",
+      "opponent_team": "Oklahoma",
+      "opponent_team_rank": 32,
+      "opponent_weight": 285,
+      "opponent_rank": 197,
+      "weight_class": "285",
+      "result": "W",
+      "method": "DEC",
+      "score": "6-5",
+      "duration": "7:00",
+      "event": "OCU Open",
+      "mv_impact": -0.08
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2018,
+      "wrestler_id": "11479852009",
+      "team": "Oklahoma State",
+      "team_slug": "oklahoma_state",
+      "weight_class": 285,
+      "grade": "R-Jr.",
+      "current_rank": 35,
+      "record": "14-5"
+    },
+    {
+      "season": 2017,
+      "wrestler_id": "522275013",
+      "team": "Oklahoma State",
+      "team_slug": "oklahoma_state",
+      "weight_class": 285,
+      "grade": "Jr.",
+      "current_rank": 71,
+      "record": "2-1"
+    }
+  ]
+}

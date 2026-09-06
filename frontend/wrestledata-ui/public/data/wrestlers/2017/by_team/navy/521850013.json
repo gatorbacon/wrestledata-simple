@@ -1,0 +1,128 @@
+{
+  "wrestler_id": "521850013",
+  "name": "Adam Keating",
+  "team": "Navy",
+  "team_slug": "navy",
+  "team_rank": 38,
+  "weight_class": 157,
+  "grade": "So.",
+  "hometown": "Kearney, Neb.",
+  "high_school": "Kearney Catholic",
+  "photo_url": "https://navysports.com/images/2018/5/10/11343805.jpeg",
+  "previous_school": null,
+  "year": 2017,
+  "current_rank": 122,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.5,
+    "pa7": 3.5,
+    "pd7": 3.0,
+    "si_plus": 97.3,
+    "df_plus": 109.7,
+    "apr_plus": 96.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.614,
+      "matches": 2,
+      "rank_weight": 104,
+      "rank_overall": 916,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "801322071",
+      "opponent_rank": 255,
+      "opponent_name": "Ryan Dougherty",
+      "method": "MD 9-0"
+    },
+    "worst_loss": {
+      "opponent_id": "831187076",
+      "opponent_rank": 66,
+      "opponent_name": "Kent Lane",
+      "method": "Dec 7-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2016-11-06",
+      "opponent_id": "801322071",
+      "opponent_career_id": null,
+      "opponent_name": "Ryan Dougherty",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 67,
+      "opponent_weight": 157,
+      "opponent_rank": 255,
+      "weight_class": "157",
+      "result": "W",
+      "method": "MD",
+      "score": "9-0",
+      "duration": "7:00",
+      "event": "ESU OPEN",
+      "mv_impact": 1.34
+    },
+    {
+      "date": "2016-11-06",
+      "opponent_id": "831187076",
+      "opponent_career_id": null,
+      "opponent_name": "Kent Lane",
+      "opponent_team": "Lehigh",
+      "opponent_team_rank": 14,
+      "opponent_weight": 157,
+      "opponent_rank": 66,
+      "weight_class": "157",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-4",
+      "duration": "7:00",
+      "event": "ESU OPEN",
+      "mv_impact": -2.57
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2018,
+      "wrestler_id": "11483468009",
+      "team": "Navy",
+      "team_slug": "navy",
+      "weight_class": 174,
+      "grade": "Jr.",
+      "current_rank": 138,
+      "record": "0-0"
+    },
+    {
+      "season": 2017,
+      "wrestler_id": "521850013",
+      "team": "Navy",
+      "team_slug": "navy",
+      "weight_class": 157,
+      "grade": "So.",
+      "current_rank": 122,
+      "record": "1-1"
+    },
+    {
+      "season": 2016,
+      "wrestler_id": "7898334009",
+      "team": "Navy",
+      "team_slug": "navy",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 279,
+      "record": "1-4"
+    }
+  ]
+}

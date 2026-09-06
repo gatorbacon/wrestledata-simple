@@ -1,0 +1,135 @@
+{
+  "wrestler_id": "522355013",
+  "name": "Brad Green",
+  "team": "Northern Illinois",
+  "team_slug": "northern_illinois",
+  "team_rank": 31,
+  "weight_class": 149,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
+  "year": 2017,
+  "current_rank": 177,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 5.5,
+    "pa7": 6.5,
+    "pd7": -1.0,
+    "si_plus": 98.8,
+    "df_plus": 94.2,
+    "apr_plus": 91.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.384,
+      "matches": 4,
+      "rank_weight": 184,
+      "rank_overall": 1698,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "522522013",
+      "opponent_rank": 262,
+      "opponent_name": "Chris Matzke",
+      "method": "MD 10-1"
+    },
+    "worst_loss": {
+      "opponent_id": "20260123",
+      "opponent_rank": 101,
+      "opponent_name": "Jake Tucker",
+      "method": "Fall 2:32"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2016-11-20",
+      "opponent_id": "522522013",
+      "opponent_career_id": null,
+      "opponent_name": "Chris Matzke",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 19,
+      "opponent_weight": 149,
+      "opponent_rank": 262,
+      "weight_class": "149",
+      "result": "W",
+      "method": "MD",
+      "score": "10-1",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": 0.87
+    },
+    {
+      "date": "2016-11-20",
+      "opponent_id": "20260123",
+      "opponent_career_id": null,
+      "opponent_name": "Jake Tucker",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 45,
+      "opponent_weight": 157,
+      "opponent_rank": 101,
+      "weight_class": "149",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:32",
+      "event": "Michigan State Open",
+      "mv_impact": -6.04
+    },
+    {
+      "date": "2016-11-20",
+      "opponent_id": "9728003009",
+      "opponent_career_id": null,
+      "opponent_name": "Ryan Deakin",
+      "opponent_team": "Northwestern",
+      "opponent_team_rank": 65,
+      "opponent_weight": 149,
+      "opponent_rank": 25,
+      "weight_class": "149",
+      "result": "L",
+      "method": "MD",
+      "score": "12-1",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -2.33
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2017,
+      "wrestler_id": "522355013",
+      "team": "Northern Illinois",
+      "team_slug": "northern_illinois",
+      "weight_class": 149,
+      "grade": "",
+      "current_rank": 177,
+      "record": "1-2"
+    },
+    {
+      "season": 2016,
+      "wrestler_id": "416151071",
+      "team": "Northern Illinois",
+      "team_slug": "northern_illinois",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 272,
+      "record": "0-8"
+    }
+  ]
+}

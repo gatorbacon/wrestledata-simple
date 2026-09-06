@@ -1,0 +1,86 @@
+{
+  "wrestler_id": "20666123",
+  "name": "Brandon Filosi",
+  "team": "Chattanooga",
+  "team_slug": "chattanooga",
+  "team_rank": 42,
+  "weight_class": 157,
+  "grade": "Fr.",
+  "hometown": "Milton, Ga.",
+  "high_school": "Cambridge HS",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+  "previous_school": null,
+  "year": 2017,
+  "current_rank": 179,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 25.0,
+    "pd7": -25.0,
+    "si_plus": 81.3,
+    "df_plus": 61.6,
+    "apr_plus": 101.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.623,
+      "matches": 1,
+      "rank_weight": 194,
+      "rank_overall": 1764,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "830799076",
+      "opponent_rank": 31,
+      "opponent_name": "Andrew Atkinson",
+      "method": "TF 16-0 3:17"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2016-12-04",
+      "opponent_id": "830799076",
+      "opponent_career_id": null,
+      "opponent_name": "Andrew Atkinson",
+      "opponent_team": "Virginia",
+      "opponent_team_rank": 16,
+      "opponent_weight": 157,
+      "opponent_rank": 31,
+      "weight_class": "157",
+      "result": "L",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "3:17",
+      "event": "vs. Virginia",
+      "mv_impact": -3.62
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2017,
+      "wrestler_id": "20666123",
+      "team": "Chattanooga",
+      "team_slug": "chattanooga",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 179,
+      "record": "0-1"
+    }
+  ]
+}

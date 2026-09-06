@@ -1,0 +1,86 @@
+{
+  "wrestler_id": "20829123",
+  "name": "Beard Seth",
+  "team": "Kent State",
+  "team_slug": "kent_state",
+  "team_rank": 72,
+  "weight_class": 125,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
+  "year": 2017,
+  "current_rank": 122,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 25.0,
+    "pd7": -25.0,
+    "si_plus": 80.2,
+    "df_plus": 58.6,
+    "apr_plus": 98.9,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.057,
+      "matches": 1,
+      "rank_weight": 163,
+      "rank_overall": 1862,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "800733071",
+      "opponent_rank": 18,
+      "opponent_name": "Jose Rodriguez",
+      "method": "TF 16-0 4:01"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2016-11-22",
+      "opponent_id": "800733071",
+      "opponent_career_id": null,
+      "opponent_name": "Jose Rodriguez",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 125,
+      "opponent_rank": 18,
+      "weight_class": "125",
+      "result": "L",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "4:01",
+      "event": "vs. Ohio State",
+      "mv_impact": -4.06
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2017,
+      "wrestler_id": "20829123",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 125,
+      "grade": "",
+      "current_rank": 122,
+      "record": "0-1"
+    }
+  ]
+}
