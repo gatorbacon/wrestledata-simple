@@ -1,0 +1,135 @@
+{
+  "wrestler_id": "4454886009",
+  "name": "David Wesley",
+  "team": "Virginia",
+  "team_slug": "virginia",
+  "team_rank": 25,
+  "weight_class": 157,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
+  "year": 2012,
+  "current_rank": 203,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 7.33,
+    "pa7": 5.67,
+    "pd7": 1.67,
+    "si_plus": 110.0,
+    "df_plus": 104.1,
+    "apr_plus": 93.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.029,
+      "matches": 5,
+      "rank_weight": 67,
+      "rank_overall": 583,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "4454904009",
+      "opponent_rank": 79,
+      "opponent_name": "Lex Ozias",
+      "method": "Dec 9-4"
+    },
+    "worst_loss": {
+      "opponent_id": "4449698009",
+      "opponent_rank": 73,
+      "opponent_name": "Mark Hartenstine",
+      "method": "MD 11-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2011-11-26",
+      "opponent_id": "4449395009",
+      "opponent_career_id": null,
+      "opponent_name": "Michael Testen",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 40,
+      "opponent_weight": 157,
+      "opponent_rank": 229,
+      "weight_class": "157",
+      "result": "W",
+      "method": "MD",
+      "score": "12-2",
+      "duration": "7:00",
+      "event": "Mat-Town USA Open",
+      "mv_impact": 0.74
+    },
+    {
+      "date": "2011-11-13",
+      "opponent_id": "4449698009",
+      "opponent_career_id": null,
+      "opponent_name": "Mark Hartenstine",
+      "opponent_team": "Campbell",
+      "opponent_team_rank": 65,
+      "opponent_weight": 149,
+      "opponent_rank": 73,
+      "weight_class": "149",
+      "result": "L",
+      "method": "MD",
+      "score": "11-1",
+      "duration": "7:00",
+      "event": "Wolfpack Open",
+      "mv_impact": -3.53
+    },
+    {
+      "date": "2011-11-13",
+      "opponent_id": "4454904009",
+      "opponent_career_id": null,
+      "opponent_name": "Lex Ozias",
+      "opponent_team": "Virginia Tech",
+      "opponent_team_rank": 22,
+      "opponent_weight": 149,
+      "opponent_rank": 79,
+      "weight_class": "149",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-4",
+      "duration": "7:00",
+      "event": "Wolfpack Open",
+      "mv_impact": 3.24
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2013,
+      "wrestler_id": "4500190009",
+      "team": "Virginia",
+      "team_slug": "virginia",
+      "weight_class": 157,
+      "grade": "",
+      "current_rank": 119,
+      "record": "5-4"
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "4454886009",
+      "team": "Virginia",
+      "team_slug": "virginia",
+      "weight_class": 157,
+      "grade": "",
+      "current_rank": 203,
+      "record": "2-1"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "wrestler_id": "4451381009",
+  "name": "Andrew Hollern",
+  "team": "Kent State",
+  "team_slug": "kent_state",
+  "team_rank": 27,
+  "weight_class": 165,
+  "grade": "So.",
+  "hometown": "Baltimore, Md.",
+  "high_school": "Parkville",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+  "previous_school": null,
+  "year": 2012,
+  "current_rank": 246,
+  "record": {
+    "overall": "1-4",
+    "vs_ranked": "1-4",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.6,
+    "pa7": 7.8,
+    "pd7": -4.2,
+    "si_plus": 92.9,
+    "df_plus": 93.1,
+    "apr_plus": 102.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.805,
+      "matches": 8,
+      "rank_weight": 168,
+      "rank_overall": 1486,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "4449825009",
+      "opponent_rank": 255,
+      "opponent_name": "Jordan Munro",
+      "method": "Dec 7-3"
+    },
+    "worst_loss": {
+      "opponent_id": "4450596009",
+      "opponent_rank": 252,
+      "opponent_name": "Justin Joseph",
+      "method": "Dec 4-3"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2012-01-15",
+      "opponent_id": "4453185009",
+      "opponent_career_id": null,
+      "opponent_name": "Spartak Chino",
+      "opponent_team": "Ohio",
+      "opponent_team_rank": 26,
+      "opponent_weight": 157,
+      "opponent_rank": 37,
+      "weight_class": "157",
+      "result": "L",
+      "method": "TF",
+      "score": "19-3",
+      "duration": "0:00",
+      "event": "Purple Raider Open",
+      "mv_impact": -3.9
+    },
+    {
+      "date": "2012-01-07",
+      "opponent_id": "4450589009",
+      "opponent_career_id": null,
+      "opponent_name": "Alan Constable",
+      "opponent_team": "Eastern Michigan",
+      "opponent_team_rank": 48,
+      "opponent_weight": 165,
+      "opponent_rank": 241,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-2",
+      "duration": "7:00",
+      "event": "Storm Open",
+      "mv_impact": -5.71
+    },
+    {
+      "date": "2012-01-07",
+      "opponent_id": "4450596009",
+      "opponent_career_id": null,
+      "opponent_name": "Justin Joseph",
+      "opponent_team": "Eastern Michigan",
+      "opponent_team_rank": 48,
+      "opponent_weight": 165,
+      "opponent_rank": 252,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "Storm Open",
+      "mv_impact": -5.75
+    },
+    {
+      "date": "2011-11-12",
+      "opponent_id": "4449825009",
+      "opponent_career_id": null,
+      "opponent_name": "Jordan Munro",
+      "opponent_team": "Central Michigan",
+      "opponent_team_rank": 24,
+      "opponent_weight": 157,
+      "opponent_rank": 255,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": "7-3",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": 0.05
+    },
+    {
+      "date": "2011-11-12",
+      "opponent_id": "4453777009",
+      "opponent_career_id": null,
+      "opponent_name": "Dustin Schultz",
+      "opponent_team": "Purdue",
+      "opponent_team_rank": 33,
+      "opponent_weight": 157,
+      "opponent_rank": 226,
+      "weight_class": "157",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-3",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -5.65
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2014,
+      "wrestler_id": "4631409009",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 149,
+      "grade": "",
+      "current_rank": 168,
+      "record": "0-0"
+    },
+    {
+      "season": 2013,
+      "wrestler_id": "4496539009",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 149,
+      "grade": "So.",
+      "current_rank": 260,
+      "record": "1-5"
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "4451381009",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 165,
+      "grade": "So.",
+      "current_rank": 246,
+      "record": "1-4"
+    }
+  ]
+}

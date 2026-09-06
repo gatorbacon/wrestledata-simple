@@ -1,0 +1,155 @@
+{
+  "wrestler_id": "4451367009",
+  "name": "Kyle Bauer",
+  "team": "Kent State",
+  "team_slug": "kent_state",
+  "team_rank": 27,
+  "weight_class": 133,
+  "grade": "Fr.",
+  "hometown": "Wheeling, W. Va.",
+  "high_school": "Wheeling Park",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+  "previous_school": null,
+  "year": 2012,
+  "current_rank": 56,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 6.5,
+    "pa7": 5.75,
+    "pd7": 0.75,
+    "si_plus": 105.9,
+    "df_plus": 101.9,
+    "apr_plus": 100.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.366,
+      "matches": 3,
+      "rank_weight": 54,
+      "rank_overall": 506,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "4450603009",
+      "opponent_rank": 104,
+      "opponent_name": "Jacob Byers",
+      "method": "Dec 5-3"
+    },
+    "worst_loss": {
+      "opponent_id": "4450032009",
+      "opponent_rank": 41,
+      "opponent_name": "Mike Carlone",
+      "method": "Dec 10-5"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2011-11-12",
+      "opponent_id": "4450032009",
+      "opponent_career_id": null,
+      "opponent_name": "Mike Carlone",
+      "opponent_team": "Cleveland State",
+      "opponent_team_rank": 66,
+      "opponent_weight": 133,
+      "opponent_rank": 41,
+      "weight_class": "133",
+      "result": "L",
+      "method": "DEC",
+      "score": "10-5",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -1.96
+    },
+    {
+      "date": "2011-11-12",
+      "opponent_id": "4450603009",
+      "opponent_career_id": null,
+      "opponent_name": "Jacob Byers",
+      "opponent_team": "Eastern Michigan",
+      "opponent_team_rank": 48,
+      "opponent_weight": 133,
+      "opponent_rank": 104,
+      "weight_class": "133",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-3",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": 1.91
+    },
+    {
+      "date": "2011-11-12",
+      "opponent_id": "4452158009",
+      "opponent_career_id": null,
+      "opponent_name": "Ryan Abrigo",
+      "opponent_team": "Michigan",
+      "opponent_team_rank": 9,
+      "opponent_weight": 133,
+      "opponent_rank": 171,
+      "weight_class": "133",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-4",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": 1.14
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2015,
+      "wrestler_id": "764011",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 149,
+      "grade": "Jr.",
+      "current_rank": 96,
+      "record": "11-12"
+    },
+    {
+      "season": 2014,
+      "wrestler_id": "4631378009",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 141,
+      "grade": "So.",
+      "current_rank": 80,
+      "record": "11-10"
+    },
+    {
+      "season": 2013,
+      "wrestler_id": "4496557009",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 141,
+      "grade": "R-Fr.",
+      "current_rank": 122,
+      "record": "9-12"
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "4451367009",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 133,
+      "grade": "Fr.",
+      "current_rank": 56,
+      "record": "2-1"
+    }
+  ]
+}

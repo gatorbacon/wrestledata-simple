@@ -1,0 +1,138 @@
+{
+  "wrestler_id": "14888011132",
+  "name": "Jed Loveless",
+  "team": "Utah Valley",
+  "team_slug": "utah_valley",
+  "team_rank": 20,
+  "weight_class": 157,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
+  "year": 2021,
+  "current_rank": 160,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 2.0,
+    "pa7": 3.0,
+    "pd7": -1.0,
+    "si_plus": 89.2,
+    "df_plus": 109.6,
+    "apr_plus": 112.7,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -0.184,
+      "matches": 2,
+      "rank_weight": 62,
+      "rank_overall": 598,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "14869891132",
+      "opponent_rank": 229,
+      "opponent_name": "Daniel Vizcarra",
+      "method": "Fall 4:46"
+    },
+    "worst_loss": {
+      "opponent_id": "14869889132",
+      "opponent_rank": 75,
+      "opponent_name": "Max Anderson",
+      "method": "Dec 3-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2021-01-03",
+      "opponent_id": "14869889132",
+      "opponent_career_id": null,
+      "opponent_name": "Max Anderson",
+      "opponent_team": "Cal Poly",
+      "opponent_team_rank": 24,
+      "opponent_weight": 157,
+      "opponent_rank": 75,
+      "weight_class": "157",
+      "result": "L",
+      "method": "DEC",
+      "score": "3-2",
+      "duration": "7:00",
+      "event": "Cal Poly / UVU / Fresno RR",
+      "mv_impact": -2.82
+    },
+    {
+      "date": "2021-01-03",
+      "opponent_id": "14869891132",
+      "opponent_career_id": null,
+      "opponent_name": "Daniel Vizcarra",
+      "opponent_team": "Cal Poly",
+      "opponent_team_rank": 24,
+      "opponent_weight": 157,
+      "opponent_rank": 229,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:46",
+      "event": "Cal Poly / UVU / Fresno RR",
+      "mv_impact": 2.45
+    }
+  ],
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2021,
+      "wrestler_id": "14888011132",
+      "team": "Utah Valley",
+      "team_slug": "utah_valley",
+      "weight_class": 157,
+      "grade": "",
+      "current_rank": 160,
+      "record": "1-1"
+    },
+    {
+      "season": 2020,
+      "wrestler_id": "10500475132",
+      "team": "Utah Valley",
+      "team_slug": "utah_valley",
+      "weight_class": 157,
+      "grade": "R-So.",
+      "current_rank": 235,
+      "record": "3-9"
+    },
+    {
+      "season": 2019,
+      "wrestler_id": "4636429132",
+      "team": "Wyoming",
+      "team_slug": "wyoming",
+      "weight_class": 157,
+      "grade": "",
+      "current_rank": 106,
+      "record": "10-13"
+    },
+    {
+      "season": 2018,
+      "wrestler_id": "11445203009",
+      "team": "Wyoming",
+      "team_slug": "wyoming",
+      "weight_class": 157,
+      "grade": "Fr.",
+      "current_rank": 52,
+      "record": "8-4"
+    }
+  ]
+}

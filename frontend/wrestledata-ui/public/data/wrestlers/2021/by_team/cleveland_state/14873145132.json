@@ -1,0 +1,145 @@
+{
+  "wrestler_id": "14873145132",
+  "name": "Gus Sutton",
+  "team": "Cleveland State",
+  "team_slug": "cleveland_state",
+  "team_rank": 60,
+  "weight_class": 149,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
+  "year": 2021,
+  "current_rank": 173,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 6.67,
+    "pa7": 5.67,
+    "pd7": 1.0,
+    "si_plus": 102.1,
+    "df_plus": 99.9,
+    "apr_plus": 96.7,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.775,
+      "matches": 4,
+      "rank_weight": 91,
+      "rank_overall": 747,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "14875663132",
+      "opponent_rank": 243,
+      "opponent_name": "Andrew Knick",
+      "method": "MD 13-2"
+    },
+    "worst_loss": {
+      "opponent_id": "14873111132",
+      "opponent_rank": 73,
+      "opponent_name": "paul crane",
+      "method": "Dec 6-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2021-02-14",
+      "opponent_id": "14875663132",
+      "opponent_career_id": null,
+      "opponent_name": "Andrew Knick",
+      "opponent_team": "Ohio",
+      "opponent_team_rank": 53,
+      "opponent_weight": 157,
+      "opponent_rank": 243,
+      "weight_class": "149",
+      "result": "W",
+      "method": "MD",
+      "score": "13-2",
+      "duration": "7:00",
+      "event": "vs. Ohio",
+      "mv_impact": 0.6
+    },
+    {
+      "date": "2021-01-30",
+      "opponent_id": "14873111132",
+      "opponent_career_id": null,
+      "opponent_name": "paul crane",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 31,
+      "opponent_weight": 149,
+      "opponent_rank": 73,
+      "weight_class": "149",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-4",
+      "duration": "7:00",
+      "event": "vs. Navy",
+      "mv_impact": -2.71
+    },
+    {
+      "date": "2021-01-30",
+      "opponent_id": "14873087132",
+      "opponent_career_id": null,
+      "opponent_name": "Casey Cobb",
+      "opponent_team": "Navy",
+      "opponent_team_rank": 31,
+      "opponent_weight": 149,
+      "opponent_rank": 19,
+      "weight_class": "149",
+      "result": "L",
+      "method": "DEC",
+      "score": "9-3",
+      "duration": "7:00",
+      "event": "vs. Navy",
+      "mv_impact": -1.6
+    }
+  ],
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2022,
+      "wrestler_id": "16705183132",
+      "team": "Cleveland State",
+      "team_slug": "cleveland_state",
+      "weight_class": 141,
+      "grade": "",
+      "current_rank": 147,
+      "record": "0-0"
+    },
+    {
+      "season": 2021,
+      "wrestler_id": "14873145132",
+      "team": "Cleveland State",
+      "team_slug": "cleveland_state",
+      "weight_class": 149,
+      "grade": "",
+      "current_rank": 173,
+      "record": "1-2"
+    },
+    {
+      "season": 2020,
+      "wrestler_id": "10491868132",
+      "team": "Cleveland State",
+      "team_slug": "cleveland_state",
+      "weight_class": 149,
+      "grade": "",
+      "current_rank": 208,
+      "record": "7-18"
+    }
+  ]
+}

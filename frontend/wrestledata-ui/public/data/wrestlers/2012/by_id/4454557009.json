@@ -1,0 +1,155 @@
+{
+  "wrestler_id": "4454557009",
+  "name": "Vincent Bellaran",
+  "team": "The Citadel",
+  "team_slug": "the_citadel",
+  "team_rank": 45,
+  "weight_class": 165,
+  "grade": "Fr.",
+  "hometown": "Sea Girt, N.J.",
+  "high_school": "St. Benedict's Prep",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+  "previous_school": null,
+  "year": 2012,
+  "current_rank": 179,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 5.0,
+    "pa7": 10.5,
+    "pd7": -5.5,
+    "si_plus": 99.0,
+    "df_plus": 91.7,
+    "apr_plus": 98.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.525,
+      "matches": 4,
+      "rank_weight": 131,
+      "rank_overall": 1209,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "4450412009",
+      "opponent_rank": 200,
+      "opponent_name": "Christopher Cirenza",
+      "method": "Dec 8-4"
+    },
+    "worst_loss": {
+      "opponent_id": "4452846009",
+      "opponent_rank": 175,
+      "opponent_name": "Colton Gleason",
+      "method": "Inj. 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2011-11-13",
+      "opponent_id": "4450412009",
+      "opponent_career_id": null,
+      "opponent_name": "Christopher Cirenza",
+      "opponent_team": "Davidson",
+      "opponent_team_rank": 67,
+      "opponent_weight": 174,
+      "opponent_rank": 200,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-4",
+      "duration": "7:00",
+      "event": "Wolfpack Open",
+      "mv_impact": 0.17
+    },
+    {
+      "date": "2011-11-13",
+      "opponent_id": "4452846009",
+      "opponent_career_id": null,
+      "opponent_name": "Colton Gleason",
+      "opponent_team": "North Carolina State",
+      "opponent_team_rank": 43,
+      "opponent_weight": 165,
+      "opponent_rank": 175,
+      "weight_class": "165",
+      "result": "L",
+      "method": "INJ",
+      "score": null,
+      "duration": "0:00",
+      "event": "Wolfpack Open",
+      "mv_impact": -7.33
+    },
+    {
+      "date": "2011-11-13",
+      "opponent_id": "4454877009",
+      "opponent_career_id": null,
+      "opponent_name": "Nicholas Sulzer",
+      "opponent_team": "Virginia",
+      "opponent_team_rank": 25,
+      "opponent_weight": 165,
+      "opponent_rank": 13,
+      "weight_class": "165",
+      "result": "L",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "0:00",
+      "event": "Wolfpack Open",
+      "mv_impact": -3.11
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2015,
+      "wrestler_id": "4781852009",
+      "team": "The Citadel",
+      "team_slug": "the_citadel",
+      "weight_class": 157,
+      "grade": "",
+      "current_rank": 120,
+      "record": "0-0"
+    },
+    {
+      "season": 2014,
+      "wrestler_id": "4634602009",
+      "team": "The Citadel",
+      "team_slug": "the_citadel",
+      "weight_class": 165,
+      "grade": "R-So.",
+      "current_rank": 155,
+      "record": "0-0"
+    },
+    {
+      "season": 2013,
+      "wrestler_id": "4499827009",
+      "team": "The Citadel",
+      "team_slug": "the_citadel",
+      "weight_class": 165,
+      "grade": "R-Jr.",
+      "current_rank": 205,
+      "record": "6-12"
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "4454557009",
+      "team": "The Citadel",
+      "team_slug": "the_citadel",
+      "weight_class": 165,
+      "grade": "Fr.",
+      "current_rank": 179,
+      "record": "1-2"
+    }
+  ]
+}

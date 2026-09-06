@@ -1,0 +1,172 @@
+{
+  "wrestler_id": "4451386009",
+  "name": "Caleb Marsh",
+  "team": "Kent State",
+  "team_slug": "kent_state",
+  "team_rank": 27,
+  "weight_class": 174,
+  "grade": "Sr.",
+  "hometown": "Marysville, Ohio",
+  "high_school": "Marysville/Ashland",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+  "previous_school": null,
+  "year": 2012,
+  "current_rank": 50,
+  "record": {
+    "overall": "3-1",
+    "vs_ranked": "3-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 9.33,
+    "pa7": 3.67,
+    "pd7": 5.67,
+    "si_plus": 114.5,
+    "df_plus": 109.6,
+    "apr_plus": 95.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.333,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.019,
+      "matches": 4,
+      "rank_weight": 66,
+      "rank_overall": 586,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 3,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "4452177009",
+      "opponent_rank": 68,
+      "opponent_name": "Benjamin Ralston",
+      "method": "Dec 5-2"
+    },
+    "worst_loss": {
+      "opponent_id": "4452219009",
+      "opponent_rank": 66,
+      "opponent_name": "Kevin Nash",
+      "method": "DQ"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2011-11-12",
+      "opponent_id": "4452182009",
+      "opponent_career_id": null,
+      "opponent_name": "Miles Trealout",
+      "opponent_team": "Michigan",
+      "opponent_team_rank": 9,
+      "opponent_weight": 174,
+      "opponent_rank": 216,
+      "weight_class": "174",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-4",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": 0.02
+    },
+    {
+      "date": "2011-11-12",
+      "opponent_id": "4452219009",
+      "opponent_career_id": null,
+      "opponent_name": "Kevin Nash",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 36,
+      "opponent_weight": 174,
+      "opponent_rank": 66,
+      "weight_class": "174",
+      "result": "L",
+      "method": "DQ",
+      "score": null,
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -5.81
+    },
+    {
+      "date": "2011-11-05",
+      "opponent_id": "4452177009",
+      "opponent_career_id": null,
+      "opponent_name": "Benjamin Ralston",
+      "opponent_team": "Michigan",
+      "opponent_team_rank": 9,
+      "opponent_weight": 174,
+      "opponent_rank": 68,
+      "weight_class": "174",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "Eastern Michigan Open",
+      "mv_impact": 2.84
+    },
+    {
+      "date": "2011-11-05",
+      "opponent_id": "4453778009",
+      "opponent_career_id": null,
+      "opponent_name": "Drake Stein",
+      "opponent_team": "Purdue",
+      "opponent_team_rank": 33,
+      "opponent_weight": 174,
+      "opponent_rank": 100,
+      "weight_class": "174",
+      "result": "W",
+      "method": "MD",
+      "score": "14-5",
+      "duration": "7:00",
+      "event": "Eastern Michigan Open",
+      "mv_impact": 3.03
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2015,
+      "wrestler_id": "772011",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 174,
+      "grade": "5th",
+      "current_rank": 39,
+      "record": "15-8"
+    },
+    {
+      "season": 2014,
+      "wrestler_id": "4631390009",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 174,
+      "grade": "Jr.",
+      "current_rank": 29,
+      "record": "18-13"
+    },
+    {
+      "season": 2013,
+      "wrestler_id": "4496565009",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 165,
+      "grade": "So.",
+      "current_rank": 28,
+      "record": "23-14"
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "4451386009",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 174,
+      "grade": "Sr.",
+      "current_rank": 50,
+      "record": "3-1"
+    }
+  ]
+}

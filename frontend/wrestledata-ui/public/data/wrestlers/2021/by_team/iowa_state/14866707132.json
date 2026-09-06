@@ -1,0 +1,148 @@
+{
+  "wrestler_id": "14866707132",
+  "name": "Alex Mackall",
+  "team": "Iowa State",
+  "team_slug": "iowa_state",
+  "team_rank": 12,
+  "weight_class": 125,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
+  "year": 2021,
+  "current_rank": 45,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 7.0,
+    "pa7": 4.0,
+    "pd7": 3.0,
+    "si_plus": 109.1,
+    "df_plus": 108.1,
+    "apr_plus": 121.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.042,
+      "matches": 2,
+      "rank_weight": 23,
+      "rank_overall": 310,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "14875780132",
+      "opponent_rank": 65,
+      "opponent_name": "Dack Punke",
+      "method": "MD 10-2"
+    },
+    "worst_loss": {
+      "opponent_id": "14873082132",
+      "opponent_rank": 7,
+      "opponent_name": "Brody Teske",
+      "method": "Dec 6-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2021-01-17",
+      "opponent_id": "14875780132",
+      "opponent_career_id": null,
+      "opponent_name": "Dack Punke",
+      "opponent_team": "Missouri",
+      "opponent_team_rank": 4,
+      "opponent_weight": 125,
+      "opponent_rank": 65,
+      "weight_class": "125",
+      "result": "W",
+      "method": "MD",
+      "score": "10-2",
+      "duration": "7:00",
+      "event": "vs. Missouri",
+      "mv_impact": 2.92
+    },
+    {
+      "date": "2021-01-17",
+      "opponent_id": "14873082132",
+      "opponent_career_id": null,
+      "opponent_name": "Brody Teske",
+      "opponent_team": "Northern Iowa",
+      "opponent_team_rank": 19,
+      "opponent_weight": 125,
+      "opponent_rank": 7,
+      "weight_class": "125",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-4",
+      "duration": "7:00",
+      "event": "vs. Northern Iowa",
+      "mv_impact": -0.84
+    }
+  ],
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2021,
+      "wrestler_id": "14866707132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 125,
+      "grade": "",
+      "current_rank": 45,
+      "record": "1-1"
+    },
+    {
+      "season": 2020,
+      "wrestler_id": "10494964132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 125,
+      "grade": "R-Jr.",
+      "current_rank": 11,
+      "record": "18-7"
+    },
+    {
+      "season": 2019,
+      "wrestler_id": "4636668132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 125,
+      "grade": "R-So.",
+      "current_rank": 21,
+      "record": "23-14"
+    },
+    {
+      "season": 2018,
+      "wrestler_id": "3156973132",
+      "team": "Iowa State",
+      "team_slug": "iowa_state",
+      "weight_class": 141,
+      "grade": "R-Fr.",
+      "current_rank": 75,
+      "record": "0-0"
+    },
+    {
+      "season": 2017,
+      "wrestler_id": "840120107",
+      "team": "Rutgers",
+      "team_slug": "rutgers",
+      "weight_class": 133,
+      "grade": "Fr.",
+      "current_rank": 127,
+      "record": "0-0"
+    }
+  ]
+}

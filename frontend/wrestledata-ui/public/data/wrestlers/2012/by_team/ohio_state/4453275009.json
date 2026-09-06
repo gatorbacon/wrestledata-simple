@@ -1,0 +1,86 @@
+{
+  "wrestler_id": "4453275009",
+  "name": "Bo Touris",
+  "team": "Ohio State",
+  "team_slug": "ohio_state",
+  "team_rank": 6,
+  "weight_class": 125,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
+  "year": 2012,
+  "current_rank": 66,
+  "record": {
+    "overall": "1-0",
+    "vs_ranked": "1-0",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 15.0,
+    "pa7": 6.0,
+    "pd7": 9.0,
+    "si_plus": 128.9,
+    "df_plus": 99.0,
+    "apr_plus": 96.5,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 0.448,
+      "matches": 1,
+      "rank_weight": 36,
+      "rank_overall": 484,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 0,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "4453789009",
+      "opponent_rank": 198,
+      "opponent_name": "Luke Schroeder",
+      "method": "MD 15-6"
+    },
+    "worst_loss": null
+  },
+  "match_list": [
+    {
+      "date": "2012-01-12",
+      "opponent_id": "4453789009",
+      "opponent_career_id": null,
+      "opponent_name": "Luke Schroeder",
+      "opponent_team": "Purdue",
+      "opponent_team_rank": 33,
+      "opponent_weight": 125,
+      "opponent_rank": 198,
+      "weight_class": "125",
+      "result": "W",
+      "method": "MD",
+      "score": "15-6",
+      "duration": "7:00",
+      "event": "vs. Purdue",
+      "mv_impact": 0.45
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2012,
+      "wrestler_id": "4453275009",
+      "team": "Ohio State",
+      "team_slug": "ohio_state",
+      "weight_class": 125,
+      "grade": "",
+      "current_rank": 66,
+      "record": "1-0"
+    }
+  ]
+}

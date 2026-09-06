@@ -1,0 +1,118 @@
+{
+  "wrestler_id": "4451382009",
+  "name": "Drew Howard",
+  "team": "Kent State",
+  "team_slug": "kent_state",
+  "team_rank": 27,
+  "weight_class": 157,
+  "grade": "Jr.",
+  "hometown": "Aliquippa, Pa.",
+  "high_school": "Hopewell",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+  "previous_school": null,
+  "year": 2012,
+  "current_rank": 221,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 11.0,
+    "pd7": -11.0,
+    "si_plus": 81.2,
+    "df_plus": 86.3,
+    "apr_plus": 105.3,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -0.696,
+      "matches": 2,
+      "rank_weight": 91,
+      "rank_overall": 778,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "4450227009",
+      "opponent_rank": 252,
+      "opponent_name": "Ryan Doyle",
+      "method": "Fall 1:42"
+    },
+    "worst_loss": {
+      "opponent_id": "4453072009",
+      "opponent_rank": 82,
+      "opponent_name": "Dylan Marriott",
+      "method": "MD 11-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2011-11-12",
+      "opponent_id": "4450227009",
+      "opponent_career_id": null,
+      "opponent_name": "Ryan Doyle",
+      "opponent_team": "Columbia",
+      "opponent_team_rank": 55,
+      "opponent_weight": 157,
+      "opponent_rank": 252,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:42",
+      "event": "Michigan State Open",
+      "mv_impact": 2.96
+    },
+    {
+      "date": "2011-11-12",
+      "opponent_id": "4453072009",
+      "opponent_career_id": null,
+      "opponent_name": "Dylan Marriott",
+      "opponent_team": "Northwestern",
+      "opponent_team_rank": 14,
+      "opponent_weight": 157,
+      "opponent_rank": 82,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MD",
+      "score": "11-0",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -4.35
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2013,
+      "wrestler_id": "4496562009",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 157,
+      "grade": "Sr.",
+      "current_rank": 263,
+      "record": "0-4"
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "4451382009",
+      "team": "Kent State",
+      "team_slug": "kent_state",
+      "weight_class": 157,
+      "grade": "Jr.",
+      "current_rank": 221,
+      "record": "1-1"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "wrestler_id": "4449440009",
+  "name": "Michael Mayo",
+  "team": "Boston U.",
+  "team_slug": "boston_u",
+  "team_rank": 52,
+  "weight_class": 125,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
+  "year": 2012,
+  "current_rank": 167,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 25.0,
+    "pd7": -25.0,
+    "si_plus": 86.1,
+    "df_plus": 49.8,
+    "apr_plus": 97.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.306,
+      "matches": 1,
+      "rank_weight": 135,
+      "rank_overall": 1561,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "4453865009",
+      "opponent_rank": 31,
+      "opponent_name": "Chuck Zeisloft",
+      "method": "TF 15-0 4:11"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2011-11-20",
+      "opponent_id": "4453865009",
+      "opponent_career_id": null,
+      "opponent_name": "Chuck Zeisloft",
+      "opponent_team": "Rider",
+      "opponent_team_rank": 61,
+      "opponent_weight": 125,
+      "opponent_rank": 31,
+      "weight_class": "125",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "4:11",
+      "event": "Keystone Classic",
+      "mv_impact": -4.31
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2014,
+      "wrestler_id": "4629349009",
+      "team": "Boston U.",
+      "team_slug": "boston_u",
+      "weight_class": 133,
+      "grade": "",
+      "current_rank": 205,
+      "record": "0-2"
+    },
+    {
+      "season": 2013,
+      "wrestler_id": "4494486009",
+      "team": "Boston U.",
+      "team_slug": "boston_u",
+      "weight_class": 125,
+      "grade": "",
+      "current_rank": 183,
+      "record": "0-2"
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "4449440009",
+      "team": "Boston U.",
+      "team_slug": "boston_u",
+      "weight_class": 125,
+      "grade": "",
+      "current_rank": 167,
+      "record": "0-1"
+    }
+  ]
+}

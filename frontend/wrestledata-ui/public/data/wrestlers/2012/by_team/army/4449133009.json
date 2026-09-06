@@ -1,0 +1,125 @@
+{
+  "wrestler_id": "4449133009",
+  "name": "Alex Smith",
+  "team": "Army",
+  "team_slug": "army",
+  "team_rank": 57,
+  "weight_class": 165,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
+  "year": 2012,
+  "current_rank": 109,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 5.0,
+    "pa7": 3.0,
+    "pd7": 2.0,
+    "si_plus": 106.5,
+    "df_plus": 106.8,
+    "apr_plus": 99.0,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.6,
+      "matches": 4,
+      "rank_weight": 82,
+      "rank_overall": 751,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "4449433009",
+      "opponent_rank": 43,
+      "opponent_name": "Kyle Czarnecki",
+      "method": "Dec 5-3"
+    },
+    "worst_loss": {
+      "opponent_id": "4449378009",
+      "opponent_rank": 37,
+      "opponent_name": "Kevin Hartnett",
+      "method": "Inj. 0:00"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2011-11-19",
+      "opponent_id": "4449378009",
+      "opponent_career_id": null,
+      "opponent_name": "Kevin Hartnett",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 40,
+      "opponent_weight": 165,
+      "opponent_rank": 37,
+      "weight_class": "165",
+      "result": "L",
+      "method": "INJ",
+      "score": null,
+      "duration": "0:00",
+      "event": "Body Bar",
+      "mv_impact": -5.39
+    },
+    {
+      "date": "2011-11-06",
+      "opponent_id": "4451207009",
+      "opponent_career_id": null,
+      "opponent_name": "Andrew Sorenson",
+      "opponent_team": "Iowa State",
+      "opponent_team_rank": 29,
+      "opponent_weight": 165,
+      "opponent_rank": 6,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:42",
+      "event": "vs. Iowa State",
+      "mv_impact": -3.36
+    },
+    {
+      "date": "2011-11-06",
+      "opponent_id": "4449433009",
+      "opponent_career_id": null,
+      "opponent_name": "Kyle Czarnecki",
+      "opponent_team": "Boston U.",
+      "opponent_team_rank": 52,
+      "opponent_weight": 174,
+      "opponent_rank": 43,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-3",
+      "duration": "7:00",
+      "event": "vs. Army",
+      "mv_impact": 3.18
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2012,
+      "wrestler_id": "4449133009",
+      "team": "Army",
+      "team_slug": "army",
+      "weight_class": 165,
+      "grade": "",
+      "current_rank": 109,
+      "record": "1-2"
+    }
+  ]
+}

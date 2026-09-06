@@ -1,0 +1,118 @@
+{
+  "wrestler_id": "4451938009",
+  "name": "Jenkins Monzey",
+  "team": "Maryland",
+  "team_slug": "maryland",
+  "team_rank": 18,
+  "weight_class": 125,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
+  "year": 2012,
+  "current_rank": 152,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 11.0,
+    "pa7": 5.5,
+    "pd7": 5.5,
+    "si_plus": 120.8,
+    "df_plus": 102.2,
+    "apr_plus": 88.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 1,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.733,
+      "matches": 2,
+      "rank_weight": 60,
+      "rank_overall": 785,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "4450790009",
+      "opponent_rank": 215,
+      "opponent_name": "David III Hershberger",
+      "method": "TF 21-5 7:00"
+    },
+    "worst_loss": {
+      "opponent_id": "4450557009",
+      "opponent_rank": 51,
+      "opponent_name": "Peter Terrezza",
+      "method": "Dec 6-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2012-02-12",
+      "opponent_id": "4450557009",
+      "opponent_career_id": null,
+      "opponent_name": "Peter Terrezza",
+      "opponent_team": "Duke",
+      "opponent_team_rank": 68,
+      "opponent_weight": 125,
+      "opponent_rank": 51,
+      "weight_class": "125",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-1",
+      "duration": "7:00",
+      "event": "vs. Maryland",
+      "mv_impact": -3.18
+    },
+    {
+      "date": "2011-11-06",
+      "opponent_id": "4450790009",
+      "opponent_career_id": null,
+      "opponent_name": "David III Hershberger",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 69,
+      "opponent_weight": 125,
+      "opponent_rank": 215,
+      "weight_class": "125",
+      "result": "W",
+      "method": "TF",
+      "score": "21-5",
+      "duration": "7:00",
+      "event": "vs. Maryland",
+      "mv_impact": 1.71
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2013,
+      "wrestler_id": "4497153009",
+      "team": "Maryland",
+      "team_slug": "maryland",
+      "weight_class": 133,
+      "grade": "",
+      "current_rank": 87,
+      "record": "7-5"
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "4451938009",
+      "team": "Maryland",
+      "team_slug": "maryland",
+      "weight_class": 125,
+      "grade": "",
+      "current_rank": 152,
+      "record": "1-1"
+    }
+  ]
+}

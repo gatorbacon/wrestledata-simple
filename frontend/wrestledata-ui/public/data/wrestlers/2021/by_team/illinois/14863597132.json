@@ -1,0 +1,116 @@
+{
+  "wrestler_id": "14863597132",
+  "name": "Nikita Nepomnyashchiy",
+  "team": "Illinois",
+  "team_slug": "illinois",
+  "team_rank": 22,
+  "weight_class": 197,
+  "grade": "R-Jr.",
+  "hometown": "Lincolnshire, Ill.",
+  "high_school": "Stevenson",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+  "previous_school": null,
+  "year": 2021,
+  "current_rank": 157,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 0.0,
+    "pa7": 10.0,
+    "pd7": -10.0,
+    "si_plus": 83.3,
+    "df_plus": 92.1,
+    "apr_plus": 95.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -3.107,
+      "matches": 1,
+      "rank_weight": 103,
+      "rank_overall": 1242,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "14880757132",
+      "opponent_rank": 35,
+      "opponent_name": "Chase Singletary",
+      "method": "MD 10-0"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2021-01-17",
+      "opponent_id": "14880757132",
+      "opponent_career_id": null,
+      "opponent_name": "Chase Singletary",
+      "opponent_team": "Ohio State",
+      "opponent_team_rank": 14,
+      "opponent_weight": 197,
+      "opponent_rank": 35,
+      "weight_class": "197",
+      "result": "L",
+      "method": "MD",
+      "score": "10-0",
+      "duration": "7:00",
+      "event": "vs. Ohio State",
+      "mv_impact": -3.11
+    }
+  ],
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2022,
+      "wrestler_id": "16703018132",
+      "team": "Illinois",
+      "team_slug": "illinois",
+      "weight_class": 197,
+      "grade": "R-Jr.",
+      "current_rank": 183,
+      "record": "2-6"
+    },
+    {
+      "season": 2021,
+      "wrestler_id": "14863597132",
+      "team": "Illinois",
+      "team_slug": "illinois",
+      "weight_class": 197,
+      "grade": "R-Jr.",
+      "current_rank": 157,
+      "record": "0-1"
+    },
+    {
+      "season": 2020,
+      "wrestler_id": "10495559132",
+      "team": "Illinois",
+      "team_slug": "illinois",
+      "weight_class": 184,
+      "grade": "R-So.",
+      "current_rank": 171,
+      "record": "2-4"
+    },
+    {
+      "season": 2019,
+      "wrestler_id": "4638928132",
+      "team": "Illinois",
+      "team_slug": "illinois",
+      "weight_class": 184,
+      "grade": "R-Fr.",
+      "current_rank": 121,
+      "record": "0-0"
+    }
+  ]
+}

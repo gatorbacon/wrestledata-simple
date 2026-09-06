@@ -1,0 +1,155 @@
+{
+  "wrestler_id": "15256787132",
+  "name": "Justin Benjamin",
+  "team": "Northwestern",
+  "team_slug": "northwestern",
+  "team_rank": 13,
+  "weight_class": 141,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
+  "year": 2021,
+  "current_rank": 141,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 8.0,
+    "pa7": 8.33,
+    "pd7": -0.33,
+    "si_plus": 102.4,
+    "df_plus": 96.2,
+    "apr_plus": 95.6,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.535,
+      "matches": 5,
+      "rank_weight": 103,
+      "rank_overall": 910,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "14801932132",
+      "opponent_rank": 171,
+      "opponent_name": "Brandon Meredith",
+      "method": "MD 18-5"
+    },
+    "worst_loss": {
+      "opponent_id": "14801947132",
+      "opponent_rank": 40,
+      "opponent_name": "Beau Bartlett",
+      "method": "Dec 10-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2021-01-30",
+      "opponent_id": "14801932132",
+      "opponent_career_id": null,
+      "opponent_name": "Brandon Meredith",
+      "opponent_team": "Penn State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 141,
+      "opponent_rank": 171,
+      "weight_class": "141",
+      "result": "W",
+      "method": "MD",
+      "score": "18-5",
+      "duration": "7:00",
+      "event": "vs. Penn State",
+      "mv_impact": 1.17
+    },
+    {
+      "date": "2021-01-30",
+      "opponent_id": "14801947132",
+      "opponent_career_id": null,
+      "opponent_name": "Beau Bartlett",
+      "opponent_team": "Penn State",
+      "opponent_team_rank": 2,
+      "opponent_weight": 149,
+      "opponent_rank": 40,
+      "weight_class": "141",
+      "result": "L",
+      "method": "DEC",
+      "score": "10-4",
+      "duration": "7:00",
+      "event": "vs. Penn State",
+      "mv_impact": -1.88
+    },
+    {
+      "date": "2021-01-23",
+      "opponent_id": "14864244132",
+      "opponent_career_id": null,
+      "opponent_name": "Ridge Lovett",
+      "opponent_team": "Nebraska",
+      "opponent_team_rank": 9,
+      "opponent_weight": 149,
+      "opponent_rank": 8,
+      "weight_class": "141",
+      "result": "L",
+      "method": "MD",
+      "score": "10-2",
+      "duration": "7:00",
+      "event": "vs. Northwestern",
+      "mv_impact": -2.55
+    }
+  ],
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2023,
+      "wrestler_id": "20134926132",
+      "team": "Northwestern",
+      "team_slug": "northwestern",
+      "weight_class": 149,
+      "grade": "Redshirt Junior",
+      "current_rank": 243,
+      "record": "0-2"
+    },
+    {
+      "season": 2022,
+      "wrestler_id": "16723880132",
+      "team": "Northwestern",
+      "team_slug": "northwestern",
+      "weight_class": 141,
+      "grade": "Redshirt Sophomore",
+      "current_rank": 55,
+      "record": "6-2"
+    },
+    {
+      "season": 2021,
+      "wrestler_id": "15256787132",
+      "team": "Northwestern",
+      "team_slug": "northwestern",
+      "weight_class": 141,
+      "grade": "",
+      "current_rank": 141,
+      "record": "1-2"
+    },
+    {
+      "season": 2020,
+      "wrestler_id": "10542740132",
+      "team": "Northwestern",
+      "team_slug": "northwestern",
+      "weight_class": 141,
+      "grade": "First-Year",
+      "current_rank": 85,
+      "record": "5-4"
+    }
+  ]
+}

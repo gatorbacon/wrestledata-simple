@@ -1,0 +1,145 @@
+{
+  "wrestler_id": "4453640009",
+  "name": "Erik Galloway",
+  "team": "Pittsburgh",
+  "team_slug": "pittsburgh",
+  "team_rank": 11,
+  "weight_class": 133,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
+  "year": 2012,
+  "current_rank": 96,
+  "record": {
+    "overall": "2-1",
+    "vs_ranked": "2-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 5.67,
+    "pa7": 2.0,
+    "pd7": 3.67,
+    "si_plus": 105.2,
+    "df_plus": 112.3,
+    "apr_plus": 95.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.5,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": 1.167,
+      "matches": 3,
+      "rank_weight": 33,
+      "rank_overall": 329,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 2,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "4449368009",
+      "opponent_rank": 68,
+      "opponent_name": "Jeremiah Biddle",
+      "method": "MD 13-0"
+    },
+    "worst_loss": {
+      "opponent_id": "4453756009",
+      "opponent_rank": 36,
+      "opponent_name": "Christopher Perez",
+      "method": "Dec 5-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2012-01-07",
+      "opponent_id": "4453756009",
+      "opponent_career_id": null,
+      "opponent_name": "Christopher Perez",
+      "opponent_team": "Princeton",
+      "opponent_team_rank": 51,
+      "opponent_weight": 133,
+      "opponent_rank": 36,
+      "weight_class": "133",
+      "result": "L",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "vs. Princeton",
+      "mv_impact": -2.07
+    },
+    {
+      "date": "2011-11-12",
+      "opponent_id": "4449368009",
+      "opponent_career_id": null,
+      "opponent_name": "Jeremiah Biddle",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 40,
+      "opponent_weight": 133,
+      "opponent_rank": 68,
+      "weight_class": "133",
+      "result": "W",
+      "method": "MD",
+      "score": "13-0",
+      "duration": "7:00",
+      "event": "ESU Open",
+      "mv_impact": 3.35
+    },
+    {
+      "date": "2011-11-12",
+      "opponent_id": "4449366009",
+      "opponent_career_id": null,
+      "opponent_name": "Craig Barker",
+      "opponent_team": "Bloomsburg",
+      "opponent_team_rank": 40,
+      "opponent_weight": 133,
+      "opponent_rank": 102,
+      "weight_class": "133",
+      "result": "W",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "7:00",
+      "event": "ESU Open",
+      "mv_impact": 2.22
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2014,
+      "wrestler_id": "4629503009",
+      "team": "Buffalo",
+      "team_slug": "buffalo",
+      "weight_class": 141,
+      "grade": "",
+      "current_rank": 143,
+      "record": "0-0"
+    },
+    {
+      "season": 2013,
+      "wrestler_id": "4494658009",
+      "team": "Buffalo",
+      "team_slug": "buffalo",
+      "weight_class": 141,
+      "grade": "R-So.",
+      "current_rank": 61,
+      "record": "13-11"
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "4453640009",
+      "team": "Pittsburgh",
+      "team_slug": "pittsburgh",
+      "weight_class": 133,
+      "grade": "",
+      "current_rank": 96,
+      "record": "2-1"
+    }
+  ]
+}

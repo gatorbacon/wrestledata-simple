@@ -1,0 +1,179 @@
+{
+  "wrestler_id": "4452953009",
+  "name": "Nick Bayer",
+  "team": "Northern Colorado",
+  "team_slug": "northern_colorado",
+  "team_rank": 60,
+  "weight_class": 197,
+  "grade": "So.",
+  "hometown": "Maple Valley, Wash.",
+  "high_school": "Tahoma",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+  "previous_school": null,
+  "year": 2012,
+  "current_rank": 115,
+  "record": {
+    "overall": "1-4",
+    "vs_ranked": "1-4",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 4.6,
+    "pa7": 6.2,
+    "pd7": -1.6,
+    "si_plus": 99.7,
+    "df_plus": 100.8,
+    "apr_plus": 96.8,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -2.226,
+      "matches": 5,
+      "rank_weight": 100,
+      "rank_overall": 1138,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "4448863009",
+      "opponent_rank": 50,
+      "opponent_name": "Joshua Mohr",
+      "method": "Dec 9-2"
+    },
+    "worst_loss": {
+      "opponent_id": "4453062009",
+      "opponent_rank": 118,
+      "opponent_name": "John Schoen",
+      "method": "Dec 6-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2012-03-04",
+      "opponent_id": "4448863009",
+      "opponent_career_id": null,
+      "opponent_name": "Joshua Mohr",
+      "opponent_team": "Air Force",
+      "opponent_team_rank": 35,
+      "opponent_weight": 197,
+      "opponent_rank": 50,
+      "weight_class": "197",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-2",
+      "duration": "7:00",
+      "event": "NCAA West Regional",
+      "mv_impact": 3.56
+    },
+    {
+      "date": "2012-01-20",
+      "opponent_id": "4453511009",
+      "opponent_career_id": null,
+      "opponent_name": "Taylor Meeks",
+      "opponent_team": "Oregon State",
+      "opponent_team_rank": 8,
+      "opponent_weight": 197,
+      "opponent_rank": 15,
+      "weight_class": "197",
+      "result": "L",
+      "method": "MD",
+      "score": "11-1",
+      "duration": "7:00",
+      "event": "vs. Oregon State",
+      "mv_impact": -2.5
+    },
+    {
+      "date": "2012-01-14",
+      "opponent_id": "4450384009",
+      "opponent_career_id": null,
+      "opponent_name": "Aaron Brown",
+      "opponent_team": "CSU Bakersfield",
+      "opponent_team_rank": 53,
+      "opponent_weight": 197,
+      "opponent_rank": 80,
+      "weight_class": "197",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-4",
+      "duration": "7:00",
+      "event": "vs. Northern Colorado",
+      "mv_impact": -4.54
+    },
+    {
+      "date": "2011-11-12",
+      "opponent_id": "4452216009",
+      "opponent_career_id": null,
+      "opponent_name": "Nick McDiarmid",
+      "opponent_team": "Michigan State",
+      "opponent_team_rank": 36,
+      "opponent_weight": 197,
+      "opponent_rank": 38,
+      "weight_class": "197",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-5",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -2.26
+    },
+    {
+      "date": "2011-11-12",
+      "opponent_id": "4453062009",
+      "opponent_career_id": null,
+      "opponent_name": "John Schoen",
+      "opponent_team": "Northwestern",
+      "opponent_team_rank": 14,
+      "opponent_weight": 197,
+      "opponent_rank": 118,
+      "weight_class": "197",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-4",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -5.39
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2014,
+      "wrestler_id": "4632950009",
+      "team": "Northern Colorado",
+      "team_slug": "northern_colorado",
+      "weight_class": 184,
+      "grade": "Jr.",
+      "current_rank": 188,
+      "record": "4-16"
+    },
+    {
+      "season": 2013,
+      "wrestler_id": "4498193009",
+      "team": "Northern Colorado",
+      "team_slug": "northern_colorado",
+      "weight_class": 184,
+      "grade": "Jr.",
+      "current_rank": 73,
+      "record": "3-2"
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "4452953009",
+      "team": "Northern Colorado",
+      "team_slug": "northern_colorado",
+      "weight_class": 197,
+      "grade": "So.",
+      "current_rank": 115,
+      "record": "1-4"
+    }
+  ]
+}

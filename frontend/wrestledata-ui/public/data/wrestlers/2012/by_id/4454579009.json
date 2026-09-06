@@ -1,0 +1,147 @@
+{
+  "wrestler_id": "4454579009",
+  "name": "Shane Lee",
+  "team": "The Citadel",
+  "team_slug": "the_citadel",
+  "team_rank": 45,
+  "weight_class": 149,
+  "grade": "R-So.",
+  "hometown": "West Columbia, S.C.",
+  "high_school": "White Knoll High School",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+  "previous_school": null,
+  "year": 2012,
+  "current_rank": 300,
+  "record": {
+    "overall": "0-4",
+    "vs_ranked": "0-4",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 3.0,
+    "pa7": 13.0,
+    "pd7": -10.0,
+    "si_plus": 89.6,
+    "df_plus": 81.1,
+    "apr_plus": 93.1,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -6.074,
+      "matches": 4,
+      "rank_weight": 212,
+      "rank_overall": 1732,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 4,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "4450825009",
+      "opponent_rank": 291,
+      "opponent_name": "Davante Andujar",
+      "method": "MD 12-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2012-02-11",
+      "opponent_id": "4450411009",
+      "opponent_career_id": null,
+      "opponent_name": "Kevin Birmingham",
+      "opponent_team": "Davidson",
+      "opponent_team_rank": 67,
+      "opponent_weight": 149,
+      "opponent_rank": 288,
+      "weight_class": "149",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:48",
+      "event": "vs. The Citadel",
+      "mv_impact": -8.49
+    },
+    {
+      "date": "2012-02-10",
+      "opponent_id": "4450825009",
+      "opponent_career_id": null,
+      "opponent_name": "Davante Andujar",
+      "opponent_team": "Gardner-Webb",
+      "opponent_team_rank": 70,
+      "opponent_weight": 149,
+      "opponent_rank": 291,
+      "weight_class": "149",
+      "result": "L",
+      "method": "MD",
+      "score": "12-2",
+      "duration": "7:00",
+      "event": "vs. The Citadel",
+      "mv_impact": -6.48
+    },
+    {
+      "date": "2012-01-01",
+      "opponent_id": "4449947009",
+      "opponent_career_id": null,
+      "opponent_name": "Kelly Felix",
+      "opponent_team": "Chattanooga",
+      "opponent_team_rank": 54,
+      "opponent_weight": 149,
+      "opponent_rank": 66,
+      "weight_class": "149",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:03",
+      "event": "The Southern Scuffle",
+      "mv_impact": -5.46
+    },
+    {
+      "date": "2012-01-01",
+      "opponent_id": "4452806009",
+      "opponent_career_id": null,
+      "opponent_name": "Christian Barber",
+      "opponent_team": "North Carolina",
+      "opponent_team_rank": 49,
+      "opponent_weight": 149,
+      "opponent_rank": 71,
+      "weight_class": "149",
+      "result": "L",
+      "method": "MD",
+      "score": "14-4",
+      "duration": "7:00",
+      "event": "The Southern Scuffle",
+      "mv_impact": -3.86
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2013,
+      "wrestler_id": "4499842009",
+      "team": "The Citadel",
+      "team_slug": "the_citadel",
+      "weight_class": 149,
+      "grade": "",
+      "current_rank": 263,
+      "record": "2-6"
+    },
+    {
+      "season": 2012,
+      "wrestler_id": "4454579009",
+      "team": "The Citadel",
+      "team_slug": "the_citadel",
+      "weight_class": 149,
+      "grade": "R-So.",
+      "current_rank": 300,
+      "record": "0-4"
+    }
+  ]
+}
