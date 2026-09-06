@@ -1,0 +1,135 @@
+{
+  "wrestler_id": "4635212009",
+  "name": "Gage Swartz",
+  "team": "West Virginia",
+  "team_slug": "west_virginia",
+  "team_rank": 65,
+  "weight_class": 133,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
+  "year": 2014,
+  "current_rank": 74,
+  "record": {
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "0-1",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 3.0,
+    "pa7": 13.0,
+    "pd7": -10.0,
+    "si_plus": 93.6,
+    "df_plus": 89.4,
+    "apr_plus": 116.1,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 1,
+    "mat_value": {
+      "mv_avg": -1.332,
+      "matches": 4,
+      "rank_weight": 111,
+      "rank_overall": 1169,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 2,
+    "top10_wins": 0,
+    "top10_losses": 1,
+    "win_over_highest_rank": {
+      "opponent_id": "4629467009",
+      "opponent_rank": 214,
+      "opponent_name": "Bob Hauser",
+      "method": "Fall 3:58"
+    },
+    "worst_loss": {
+      "opponent_id": "4633767009",
+      "opponent_rank": 87,
+      "opponent_name": "Jordan Laster",
+      "method": "Dec 5-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2013-11-23",
+      "opponent_id": "4629467009",
+      "opponent_career_id": null,
+      "opponent_name": "Bob Hauser",
+      "opponent_team": "Bucknell",
+      "opponent_team_rank": 47,
+      "opponent_weight": 133,
+      "opponent_rank": 214,
+      "weight_class": "133",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:58",
+      "event": "Navy Classic",
+      "mv_impact": 3.31
+    },
+    {
+      "date": "2013-11-23",
+      "opponent_id": "4633767009",
+      "opponent_career_id": null,
+      "opponent_name": "Jordan Laster",
+      "opponent_team": "Princeton",
+      "opponent_team_rank": 55,
+      "opponent_weight": 141,
+      "opponent_rank": 87,
+      "weight_class": "133",
+      "result": "L",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "Navy Classic",
+      "mv_impact": -3.18
+    },
+    {
+      "date": "2013-11-23",
+      "opponent_id": "4635423009",
+      "opponent_career_id": null,
+      "opponent_name": "Tyler Graff",
+      "opponent_team": "Wisconsin",
+      "opponent_team_rank": 15,
+      "opponent_weight": 133,
+      "opponent_rank": 4,
+      "weight_class": "133",
+      "result": "L",
+      "method": "TF",
+      "score": "21-4",
+      "duration": "0:00",
+      "event": "Navy Classic",
+      "mv_impact": -2.28
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2014,
+      "wrestler_id": "4635212009",
+      "team": "West Virginia",
+      "team_slug": "west_virginia",
+      "weight_class": 133,
+      "grade": "",
+      "current_rank": 74,
+      "record": "1-2"
+    },
+    {
+      "season": 2013,
+      "wrestler_id": "4500518009",
+      "team": "West Virginia",
+      "team_slug": "west_virginia",
+      "weight_class": 133,
+      "grade": "",
+      "current_rank": 205,
+      "record": "2-5"
+    }
+  ]
+}

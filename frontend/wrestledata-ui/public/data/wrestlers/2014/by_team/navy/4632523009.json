@@ -1,0 +1,128 @@
+{
+  "wrestler_id": "4632523009",
+  "name": "Trey Duncan",
+  "team": "Navy",
+  "team_slug": "navy",
+  "team_rank": 49,
+  "weight_class": 157,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
+  "year": 2014,
+  "current_rank": 200,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-1"
+  },
+  "metrics": {
+    "pf7": 5.5,
+    "pa7": 9.5,
+    "pd7": -4.0,
+    "si_plus": 96.9,
+    "df_plus": 94.4,
+    "apr_plus": 92.4,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -1.084,
+      "matches": 2,
+      "rank_weight": 136,
+      "rank_overall": 1089,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "4629605009",
+      "opponent_rank": 273,
+      "opponent_name": "Daniel Luty",
+      "method": "Dec 10-7"
+    },
+    "worst_loss": {
+      "opponent_id": "4630611009",
+      "opponent_rank": 25,
+      "opponent_name": "Johnny Greisheimer",
+      "method": "MD 12-1"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2013-11-09",
+      "opponent_id": "4629605009",
+      "opponent_career_id": null,
+      "opponent_name": "Daniel Luty",
+      "opponent_team": "Campbell",
+      "opponent_team_rank": 69,
+      "opponent_weight": 157,
+      "opponent_rank": 273,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": "10-7",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": 0.39
+    },
+    {
+      "date": "2013-11-09",
+      "opponent_id": "4630611009",
+      "opponent_career_id": null,
+      "opponent_name": "Johnny Greisheimer",
+      "opponent_team": "Edinboro",
+      "opponent_team_rank": 6,
+      "opponent_weight": 157,
+      "opponent_rank": 25,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MD",
+      "score": "12-1",
+      "duration": "7:00",
+      "event": "Michigan State Open",
+      "mv_impact": -2.56
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2015,
+      "wrestler_id": "4876064009",
+      "team": "Navy",
+      "team_slug": "navy",
+      "weight_class": 157,
+      "grade": "Jr.",
+      "current_rank": 180,
+      "record": "1-2"
+    },
+    {
+      "season": 2014,
+      "wrestler_id": "4632523009",
+      "team": "Navy",
+      "team_slug": "navy",
+      "weight_class": 157,
+      "grade": "",
+      "current_rank": 200,
+      "record": "1-1"
+    },
+    {
+      "season": 2013,
+      "wrestler_id": "4497797009",
+      "team": "Navy",
+      "team_slug": "navy",
+      "weight_class": 149,
+      "grade": "Fr.",
+      "current_rank": 78,
+      "record": "7-4"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "wrestler_id": "4632955009",
+  "name": "Drew Greer",
+  "team": "Northern Colorado",
+  "team_slug": "northern_colorado",
+  "team_rank": 75,
+  "weight_class": 125,
+  "grade": "Rs.",
+  "hometown": "Denver, Colo.",
+  "high_school": "Denver Lutheran",
+  "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+  "previous_school": null,
+  "year": 2014,
+  "current_rank": 147,
+  "record": {
+    "overall": "0-1",
+    "vs_ranked": "0-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 4.0,
+    "pa7": 13.0,
+    "pd7": -9.0,
+    "si_plus": 97.7,
+    "df_plus": 83.1,
+    "apr_plus": 112.3,
+    "pin_rate": 0.0,
+    "bonus_rate": 0.0,
+    "majors": 0,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -4.598,
+      "matches": 1,
+      "rank_weight": 164,
+      "rank_overall": 2000,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 0,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": null,
+    "worst_loss": {
+      "opponent_id": "4632938009",
+      "opponent_rank": 83,
+      "opponent_name": "Chase Crabtree",
+      "method": "MD 13-4"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2014-02-01",
+      "opponent_id": "4632938009",
+      "opponent_career_id": null,
+      "opponent_name": "Chase Crabtree",
+      "opponent_team": "Northern Colorado",
+      "opponent_team_rank": 75,
+      "opponent_weight": 125,
+      "opponent_rank": 83,
+      "weight_class": "125",
+      "result": "L",
+      "method": "MD",
+      "score": "13-4",
+      "duration": "7:00",
+      "event": "Rocky Mountain Collegiate Open",
+      "mv_impact": -4.6
+    }
+  ],
+  "profile_generated_at": "2026-09-06",
+  "season_summary": [
+    {
+      "season": 2014,
+      "wrestler_id": "4632955009",
+      "team": "Northern Colorado",
+      "team_slug": "northern_colorado",
+      "weight_class": 125,
+      "grade": "Rs.",
+      "current_rank": 147,
+      "record": "0-1"
+    },
+    {
+      "season": 2013,
+      "wrestler_id": "4498184009",
+      "team": "Northern Colorado",
+      "team_slug": "northern_colorado",
+      "weight_class": 125,
+      "grade": "Fr.",
+      "current_rank": 108,
+      "record": "1-0"
+    }
+  ]
+}
