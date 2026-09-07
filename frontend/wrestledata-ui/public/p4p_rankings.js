@@ -232,13 +232,45 @@ function renderP4PTable(weight, sort) {
   }).join("");
 }
 
+// Mobile (<768px) row list -- same data/sort/filter state as the desktop
+// table, rendered as compact link-rows via the shared mobile_rank_row.js
+// component instead of a <table>. Desktop just keeps this hidden via CSS.
+function renderP4PMobileList(weight, sort) {
+  const list = document.getElementById("p4p-mobile-list");
+  if (!list || typeof renderMobileRankRow !== "function") return;
+
+  const rows = sortedList(weight, sort);
+  list.innerHTML = rows.map(w => {
+    const gap = rankGapInfo(w);
+    const gapCls = gap === "above" ? "tpar2-row-gap-above" : gap === "below" ? "tpar2-row-gap-below" : "";
+    return renderMobileRankRow({
+      rank: w.rank,
+      wrestlerId: w.wrestler_id,
+      name: w.name,
+      team: w.team,
+      teamSlug: w.team_slug,
+      teamAbbr: w.team_abbr,
+      weightClass: w.weight_class,
+      grade: w.grade,
+      photoUrl: w.photo_url,
+      tpar: w.tpar,
+      gapCls,
+    });
+  }).join("");
+}
+
+function renderP4P(weight, sort) {
+  renderP4PTable(weight, sort);
+  renderP4PMobileList(weight, sort);
+}
+
 function setupP4PTabs() {
   document.querySelectorAll("#p4p-weight-tabs .hp-tab").forEach(tab => {
     tab.addEventListener("click", () => {
       document.querySelectorAll("#p4p-weight-tabs .hp-tab").forEach(t => t.classList.remove("active"));
       tab.classList.add("active");
       currentWeight = tab.dataset.weight;
-      renderP4PTable(currentWeight, currentSort);
+      renderP4P(currentWeight, currentSort);
     });
   });
 }
@@ -248,7 +280,7 @@ function setupSortControl() {
   if (!select) return;
   select.addEventListener("change", () => {
     currentSort = select.value;
-    renderP4PTable(currentWeight, currentSort);
+    renderP4P(currentWeight, currentSort);
   });
 }
 
@@ -262,7 +294,7 @@ function renderP4PRankings(data) {
   p4pData = data;
   setupP4PTabs();
   setupSortControl();
-  renderP4PTable("p4p", "rank");
+  renderP4P("p4p", "rank");
 }
 
 document.addEventListener("DOMContentLoaded", async () => {

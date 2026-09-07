@@ -26,11 +26,23 @@ function getMinMatchThreshold() {
   return 5;
 }
 
+// Cached by promise so the desktop TPAR card and the mobile TPAR strip --
+// both computing this for the same season in the same tick -- share one
+// fetch instead of two.
+const _matValueListCache = {};
+function fetchMatValueList(season) {
+  if (!_matValueListCache[season]) {
+    _matValueListCache[season] = fetch(`/data/mat_value/${season}/mat_value_${season}.json`)
+      .then(res => (res.ok ? res.json() : null))
+      .catch(() => null);
+  }
+  return _matValueListCache[season];
+}
+
 async function computeFilteredMVRankAndPercentile(wrestlerId, weight, season) {
   try {
-    const res = await fetch(`/data/mat_value/${season}/mat_value_${season}.json`);
-    if (!res.ok) return null;
-    const allData = await res.json();
+    const allData = await fetchMatValueList(season);
+    if (!allData) return null;
     const minMatches = getMinMatchThreshold();
     const filtered = allData.filter(e => e.weight === weight && e.matches >= minMatches);
     filtered.sort((a, b) => {
@@ -60,6 +72,30 @@ async function fetchRollingMbt(season) {
   return data;
 }
 
+// Cached (by promise, not just resolved value) so concurrent callers in the
+// same tick -- the desktop season table's enrichment pass and the mobile
+// career-line aggregation both want every season's full profile on initial
+// load -- coalesce into one real fetch per season instead of two.
+const _seasonProfileCache = {};
+function fetchSeasonProfile(season, wrestlerId) {
+  const key = String(wrestlerId);
+  if (!_seasonProfileCache[key]) {
+    _seasonProfileCache[key] = fetch(`/data/wrestlers/${season}/by_id/${wrestlerId}.json`)
+      .then(res => (res.ok ? res.json() : null))
+      .catch(() => null);
+  }
+  return _seasonProfileCache[key];
+}
+
+// "26-0" -> {wins:26, losses:0}. Career totals are summed from each
+// season's own record.overall string rather than a separate stat.
+function parseRecord(str) {
+  if (!str) return null;
+  const m = /^(\d+)\s*-\s*(\d+)/.exec(str);
+  if (!m) return null;
+  return { wins: parseInt(m[1], 10), losses: parseInt(m[2], 10) };
+}
+
 function safe(value, formatter) {
   if (value === null || value === undefined || value === "") return "—";
   return formatter ? formatter(value) : value;
@@ -77,6 +113,17 @@ function fmtTpar(v) {
 function fmtImpact(v) {
   if (v === null || v === undefined) return "—";
   return (v >= 0 ? "+" : "") + v.toFixed(1);
+}
+
+// percentile: 1 (worst) - 100 (best), i.e. "beats this % of the field."
+// Above the 50th percentile that reads naturally as "Top X%" (X = how far
+// from the best). Below it, "Top 98%" is technically correct but reads as
+// impressive when it's actually saying he's near the bottom -- "Bottom X%"
+// (X = the percentile itself, since beating only e.g. 3% of the field IS
+// being in the bottom 3%) is the honest framing there.
+function formatPercentileLabel(percentile) {
+  if (percentile >= 50) return `Top ${100 - percentile + 1}%`;
+  return `Bottom ${percentile}%`;
 }
 
 function teamNameToSlug(teamName) {
@@ -133,41 +180,48 @@ function formatLocation(hometown, highSchool) {
   return `${hometown} · ${highSchool}`;
 }
 
+// Normalizes the raw result/method strings (which vary a lot in the
+// scraped data -- "M. For.", "SV-1", "TB-2", etc.) into one of a small set
+// of short codes. Shared by the desktop result badge and the mobile match
+// row's result pill so both stay in sync.
+function matchMethodCode(result, method) {
+  const resultStr = (result || "").toUpperCase();
+  const methodStr = (method || "").toUpperCase();
+  const combined = `${resultStr} ${methodStr}`;
+  let code;
+  if (combined.includes("M. FOR.") || combined.includes("MFF") || (combined.includes("MEDICAL") && combined.includes("FORFEIT"))) code = "MFF";
+  else if (combined.includes("DQ") || combined.includes("DISQUAL")) code = "DQ";
+  else if (combined.includes("INJ") || combined.includes("INJURY")) code = "INJ";
+  else if (combined.includes("FORFEIT") || (combined.includes(" FF") && !combined.includes("MFF"))) code = "FF";
+  else if (combined.includes("TF") || combined.includes("TECH")) code = "TF";
+  else if ((combined.includes("FALL") || combined.includes(" PIN")) && !combined.includes("TF") && !combined.includes("TECH")) code = "FALL";
+  else if (combined.includes("MD") || combined.includes("MAJOR")) code = "MD";
+  else if (combined.includes("DEC") || combined.includes("SV-") || combined.includes("TB-")) code = "DEC";
+  else if (methodStr && methodStr !== "—" && methodStr !== "DEF.") code = methodStr;
+  else code = "O";
+
+  const methodName = code === "DEC" ? "Decision" :
+                    code === "MD" ? "Major Decision" :
+                    code === "TF" ? "Technical Fall" :
+                    code === "FALL" || code === "PIN" ? "Fall" :
+                    code === "INJ" ? "Injury Default" :
+                    code === "DQ" ? "Disqualification" :
+                    code === "MFF" ? "Medical Forfeit" :
+                    code === "FF" ? "Forfeit" :
+                    code === "O" ? "Other" :
+                    code;
+  return { code, methodName };
+}
+
 function createResultBadge(result, method) {
   const badge = document.createElement("span");
   badge.className = "result-badge";
   const isWin = result === "W";
   badge.classList.add(isWin ? "result-win" : "result-loss");
 
-  const resultStr = (result || "").toUpperCase();
-  const methodStr = (method || "").toUpperCase();
-  const combined = `${resultStr} ${methodStr}`;
-  let methodText;
-  if (combined.includes("M. FOR.") || combined.includes("MFF") || (combined.includes("MEDICAL") && combined.includes("FORFEIT"))) methodText = "MFF";
-  else if (combined.includes("DQ") || combined.includes("DISQUAL")) methodText = "DQ";
-  else if (combined.includes("INJ") || combined.includes("INJURY")) methodText = "INJ";
-  else if (combined.includes("FORFEIT") || (combined.includes(" FF") && !combined.includes("MFF"))) methodText = "FF";
-  else if (combined.includes("TF") || combined.includes("TECH")) methodText = "TF";
-  else if ((combined.includes("FALL") || combined.includes(" PIN")) && !combined.includes("TF") && !combined.includes("TECH")) methodText = "FALL";
-  else if (combined.includes("MD") || combined.includes("MAJOR")) methodText = "MD";
-  else if (combined.includes("DEC") || combined.includes("SV-") || combined.includes("TB-")) methodText = "DEC";
-  else if (methodStr && methodStr !== "—" && methodStr !== "DEF.") methodText = methodStr;
-  else methodText = "O";
-
-  badge.textContent = methodText;
-
-  const outcome = isWin ? "Win" : "Loss";
-  const methodName = methodText === "DEC" ? "Decision" :
-                    methodText === "MD" ? "Major Decision" :
-                    methodText === "TF" ? "Technical Fall" :
-                    methodText === "FALL" || methodText === "PIN" ? "Fall" :
-                    methodText === "INJ" ? "Injury Default" :
-                    methodText === "DQ" ? "Disqualification" :
-                    methodText === "MFF" ? "Medical Forfeit" :
-                    methodText === "FF" ? "Forfeit" :
-                    methodText === "O" ? "Other" :
-                    methodText;
-  badge.setAttribute("title", `${outcome} by ${methodName}`);
+  const { code, methodName } = matchMethodCode(result, method);
+  badge.textContent = code;
+  badge.setAttribute("title", `${isWin ? "Win" : "Loss"} by ${methodName}`);
   return badge;
 }
 
@@ -191,8 +245,17 @@ async function loadWrestlerProfile(id) {
   document.getElementById("wrestler-resume").textContent = "Could not load wrestler JSON";
 }
 
+// Tracks whichever season is currently on screen (desktop tpar-card,
+// mobile strip/chip-subtitle, trajectory, matches) -- the mobile "Season
+// stats" sheet reads from this so it always reflects the season actually
+// showing, not just the season the page loaded with.
+let _currentSeasonProfile = null;
+
 function renderProfile(data) {
   renderHeader(data);
+  renderMobileIdentity(data);
+  renderMobileSeasonChips(data);
+  _currentSeasonProfile = data;
   renderSeasonSelector(data);
   renderSeasonBody(data);
 }
@@ -253,6 +316,229 @@ function renderHeader(data) {
 }
 
 // ===============================
+// Mobile (<768px) identity block: photo, name, one meta line (rank is
+// stated here ONLY -- never repeated in the season chip subtitle), career
+// totals line. Renders once, like the desktop header -- never on season
+// switch (career totals span every season, not just the selected one).
+// ===============================
+
+function renderMobileIdentity(data) {
+  const photoEl = document.getElementById("wp2m-photo");
+  if (photoEl) {
+    if (data.photo_url) {
+      photoEl.src = data.photo_url;
+      photoEl.alt = `${safe(data.name)} headshot`;
+      photoEl.hidden = false;
+      photoEl.onerror = () => { photoEl.hidden = true; };
+    } else {
+      photoEl.hidden = true;
+    }
+  }
+
+  const nameEl = document.getElementById("wp2m-name");
+  if (nameEl) nameEl.textContent = safe(data.name);
+
+  const metaEl = document.getElementById("wp2m-meta");
+  if (metaEl) {
+    const metaParts = [];
+    if (data.current_rank) metaParts.push(`#${data.current_rank}`);
+    if (data.weight_class) metaParts.push(String(data.weight_class));
+    const gradeAbbrev = typeof mobileAbbrevGrade === "function" ? mobileAbbrevGrade(data.grade) : "";
+    if (gradeAbbrev) metaParts.push(gradeAbbrev);
+    metaEl.innerHTML = "";
+    const textSpan = document.createElement("span");
+    textSpan.textContent = metaParts.join(" · ");
+    metaEl.appendChild(textSpan);
+
+    if (data.team) {
+      const slug = data.team_slug || teamNameToSlug(data.team);
+      const abbr = typeof mobileTeamAbbr === "function" ? mobileTeamAbbr(data.team) : data.team;
+      const teamLink = document.createElement("a");
+      teamLink.className = "wp2m-meta-team";
+      teamLink.href = `/team.html?team=${slug}`;
+      teamLink.innerHTML =
+        ` · ${abbr} ` +
+        `<img class="wp2m-meta-crest" src="/assets/team_logos/${slug}.svg" alt="" ` +
+        `onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='/assets/team_logos/${slug}.png';}else{this.remove();}">`;
+      metaEl.appendChild(teamLink);
+    }
+  }
+
+  renderMobileCareerLine(data);
+}
+
+async function renderMobileCareerLine(data) {
+  const el = document.getElementById("wp2m-career-line");
+  if (!el) return;
+
+  const summary = (data.season_summary && data.season_summary.length)
+    ? data.season_summary
+    : [{ season: data.year, wrestler_id: data.wrestler_id }];
+
+  const profiles = await Promise.all(summary.map(s => fetchSeasonProfile(s.season, s.wrestler_id)));
+
+  let wins = 0, losses = 0, bonusWins = 0, pins = 0;
+  profiles.forEach(p => {
+    if (!p) return;
+    const rec = parseRecord((p.record || {}).overall);
+    if (rec) { wins += rec.wins; losses += rec.losses; }
+    const m = p.metrics || {};
+    pins += m.pins || 0;
+    bonusWins += (m.pins || 0) + (m.techs || 0) + (m.majors || 0);
+  });
+
+  if (wins === 0 && losses === 0) { el.textContent = ""; return; }
+
+  const parts = [`${wins}–${losses} career`];
+  if (wins > 0) {
+    parts.push(`${Math.round((pins / wins) * 100)}% pin`);
+    parts.push(`${Math.round((bonusWins / wins) * 100)}% bonus`);
+  }
+  el.textContent = parts.join(" · ");
+}
+
+// ===============================
+// Mobile season chips: replaces the desktop season <table> with a single
+// scrollable chip row + a one-line subtitle (record first, since rank
+// already lives in the identity meta line above -- see anti-duplication
+// note in the spec). Built directly from season_summary (no fetch needed
+// for the chips/subtitle themselves); each click lazily loads that
+// season's full profile via the shared cache.
+// ===============================
+
+function renderMobileSeasonChips(data) {
+  const row = document.getElementById("wp2m-chip-row");
+  if (!row) return;
+
+  const summary = (data.season_summary && data.season_summary.length)
+    ? data.season_summary
+    : [{ season: data.year, wrestler_id: data.wrestler_id, team: data.team, grade: data.grade, record: (data.record || {}).overall }];
+
+  row.innerHTML = "";
+  summary.forEach(s => {
+    const chip = document.createElement("button");
+    chip.type = "button";
+    chip.className = "wp2m-chip";
+    chip.dataset.wrestlerId = String(s.wrestler_id);
+    chip.textContent = safe(s.season);
+    if (String(s.wrestler_id) === String(data.wrestler_id)) chip.classList.add("active");
+    chip.addEventListener("click", () => {
+      if (chip.classList.contains("active")) return;
+      fetchSeasonProfile(s.season, s.wrestler_id).then(seasonData => {
+        if (!seasonData) return;
+        _currentSeasonProfile = seasonData;
+        renderSeasonBody(seasonData);
+        renderMobileChipSubtitle(seasonData);
+        selectMobileSeasonChip(String(s.wrestler_id));
+        selectDesktopSeasonRow(String(s.wrestler_id));
+      });
+    });
+    row.appendChild(chip);
+  });
+
+  renderMobileChipSubtitle(data);
+}
+
+function selectMobileSeasonChip(wrestlerId) {
+  document.querySelectorAll("#wp2m-chip-row .wp2m-chip").forEach(c => {
+    c.classList.toggle("active", c.dataset.wrestlerId === wrestlerId);
+  });
+}
+
+function selectDesktopSeasonRow(wrestlerId) {
+  document.querySelectorAll("#season-selector-body .season-row").forEach(r => {
+    r.classList.toggle("season-row--active", r.dataset.wrestlerId === wrestlerId);
+  });
+}
+
+// Record first (and visually darker) so it reads as "this is the season
+// W-L," not a repeat of the rank already stated in the identity meta line.
+function renderMobileChipSubtitle(profile) {
+  const el = document.getElementById("wp2m-chip-subtitle");
+  if (!el) return;
+  const record = safe((profile.record || {}).overall);
+  const team = safe(profile.team);
+  const grade = abbrevGrade(profile.grade) || "";
+  el.innerHTML = `<span class="wp2m-chip-record">${record}</span> · ${team}${grade ? " · " + grade : ""}`;
+
+  if (_sheetOpen) renderMobileSeasonSheet(profile);
+}
+
+// ===============================
+// Mobile "Season stats" bottom sheet -- the desktop box score, presented as
+// a sheet instead of an inline card. Bound to whichever season is
+// currently selected; reopens/refreshes live if the chip changes while open.
+// ===============================
+
+let _sheetOpen = false;
+
+function renderMobileSeasonSheet(profile) {
+  const title = document.getElementById("wp2m-sheet-title");
+  const body = document.getElementById("wp2m-sheet-body");
+  if (!title || !body) return;
+
+  title.textContent = `${safe(profile.year)} season`;
+
+  const record = profile.record || {};
+  const m = profile.metrics || {};
+  const mv = m.mat_value || {};
+  const location = formatLocation(profile.hometown, profile.high_school);
+
+  const rows = [
+    ["Record", safe(record.overall)],
+    ["Rank / weight", profile.current_rank && profile.weight_class ? `#${profile.current_rank} at ${profile.weight_class}` : safe(profile.current_rank)],
+    ["Team", safe(profile.team)],
+    ["Class", abbrevGrade(profile.grade) || "—"],
+    ["TPAR", fmtTpar(mv.mv_avg)],
+    ["Bonus %", m.bonus_rate !== null && m.bonus_rate !== undefined ? percentFormatter(m.bonus_rate) : "—"],
+    ["Pin %", m.pin_rate !== null && m.pin_rate !== undefined ? percentFormatter(m.pin_rate) : "—"],
+    ["Pins", safe(m.pins)],
+    ["Tech falls", safe(m.techs)],
+    ["Majors", safe(m.majors)],
+    ["vs Top 10", safe(record.vs_top10)],
+    ["Hometown / HS", location || "—"],
+  ];
+
+  body.innerHTML = rows.map(([label, value]) =>
+    `<div class="wp2m-sheet-row"><span class="wp2m-sheet-label">${label}</span><span class="wp2m-sheet-value">${value}</span></div>`
+  ).join("");
+}
+
+function openMobileSeasonSheet() {
+  const overlay = document.getElementById("wp2m-sheet-overlay");
+  const sheet = document.getElementById("wp2m-sheet");
+  if (!overlay || !sheet || !_currentSeasonProfile) return;
+  renderMobileSeasonSheet(_currentSeasonProfile);
+  overlay.hidden = false;
+  sheet.hidden = false;
+  sheet.setAttribute("aria-hidden", "false");
+  _sheetOpen = true;
+}
+
+function closeMobileSeasonSheet() {
+  const overlay = document.getElementById("wp2m-sheet-overlay");
+  const sheet = document.getElementById("wp2m-sheet");
+  if (!overlay || !sheet) return;
+  overlay.hidden = true;
+  sheet.hidden = true;
+  sheet.setAttribute("aria-hidden", "true");
+  _sheetOpen = false;
+}
+
+function initMobileSeasonSheetControls() {
+  const openBtn = document.getElementById("wp2m-season-stats-btn");
+  const closeBtn = document.getElementById("wp2m-sheet-close");
+  const overlay = document.getElementById("wp2m-sheet-overlay");
+  if (openBtn) openBtn.addEventListener("click", openMobileSeasonSheet);
+  if (closeBtn) closeBtn.addEventListener("click", closeMobileSeasonSheet);
+  if (overlay) overlay.addEventListener("click", closeMobileSeasonSheet);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && _sheetOpen) closeMobileSeasonSheet();
+  });
+}
+document.addEventListener("DOMContentLoaded", initMobileSeasonSheetControls);
+
+// ===============================
 // Season selector: Season / Team / Class / Rank / Record / TPAR / Bonus %
 // ===============================
 
@@ -268,23 +554,20 @@ async function renderSeasonSelector(data) {
   tbody.innerHTML = "";
 
   // TPAR/Bonus% aren't in season_summary -- pull them from each season's own
-  // already-published profile (one fetch per season, cached implicitly by
-  // the browser; same file the click-to-switch handler already fetches).
+  // already-published profile via the shared fetchSeasonProfile cache (the
+  // mobile career-line aggregation wants the same per-season profiles, so
+  // whichever of the two runs first fetches for both).
   const enriched = await Promise.all(summary.map(async s => {
-    try {
-      const res = await fetch(`/data/wrestlers/${s.season}/by_id/${s.wrestler_id}.json`);
-      if (!res.ok) return { ...s, tpar: null, bonus_rate: null };
-      const seasonData = await res.json();
-      const mv = (seasonData.metrics || {}).mat_value || {};
-      return { ...s, tpar: mv.mv_avg, bonus_rate: (seasonData.metrics || {}).bonus_rate };
-    } catch {
-      return { ...s, tpar: null, bonus_rate: null };
-    }
+    const seasonData = await fetchSeasonProfile(s.season, s.wrestler_id);
+    if (!seasonData) return { ...s, tpar: null, bonus_rate: null };
+    const mv = (seasonData.metrics || {}).mat_value || {};
+    return { ...s, tpar: mv.mv_avg, bonus_rate: (seasonData.metrics || {}).bonus_rate };
   }));
 
   enriched.forEach(s => {
     const tr = document.createElement("tr");
     tr.className = "season-row";
+    tr.dataset.wrestlerId = String(s.wrestler_id);
     if (String(s.wrestler_id) === String(data.wrestler_id)) tr.classList.add("season-row--active");
 
     const cells = [
@@ -339,14 +622,15 @@ async function renderSeasonSelector(data) {
 
     tr.addEventListener("click", () => {
       if (tr.classList.contains("season-row--active")) return;
-      fetch(`/data/wrestlers/${s.season}/by_id/${s.wrestler_id}.json`)
-        .then(res => { if (!res.ok) throw new Error("Could not load season data"); return res.json(); })
-        .then(seasonData => {
-          renderSeasonBody(seasonData);
-          tbody.querySelectorAll(".season-row--active").forEach(row => row.classList.remove("season-row--active"));
-          tr.classList.add("season-row--active");
-        })
-        .catch(err => console.error("Error switching season:", err));
+      fetchSeasonProfile(s.season, s.wrestler_id).then(seasonData => {
+        if (!seasonData) { console.error("Could not load season data"); return; }
+        _currentSeasonProfile = seasonData;
+        renderSeasonBody(seasonData);
+        renderMobileChipSubtitle(seasonData);
+        selectMobileSeasonChip(String(s.wrestler_id));
+        tbody.querySelectorAll(".season-row--active").forEach(row => row.classList.remove("season-row--active"));
+        tr.classList.add("season-row--active");
+      });
     });
 
     tbody.appendChild(tr);
@@ -361,10 +645,73 @@ function renderSeasonBody(data) {
   const season = safe(data.year);
   const mv = (data.metrics || {}).mat_value || {};
   renderTparCard(data, mv, season);
+  renderMobileTparStrip(data, mv, season);
   renderBoxScoreCard(data);
   renderSkillCard(data);
   renderRollingMbtTimeline(data, mv.mv_avg);
   renderMatchHistory(data.match_list || []);
+  renderMobileMatchList(data.match_list || [], season);
+}
+
+// ===============================
+// Mobile TPAR strip: one row (number + ELITE pill + compressed percentile
+// bar), season-scoped -- follows whichever chip is selected. Same ELITE
+// threshold (>=5.5) and percentile source as the desktop card and the
+// homepage rankings row.
+// ===============================
+
+function renderMobileTparStrip(data, mv, season) {
+  const strip = document.getElementById("wp2m-tpar-strip");
+  if (!strip) return;
+
+  if (mv.mv_avg === null || mv.mv_avg === undefined) {
+    strip.innerHTML = `<p class="section-empty-state">TPAR not available for this season.</p>`;
+    return;
+  }
+
+  const weightClass = data.weight_class;
+  const isElite = mv.mv_avg >= 5.5;
+  const leaderboardUrl = weightClass ? `/leaderboards/tpar.html?weight=${weightClass}` : "/leaderboards/tpar.html";
+
+  strip.innerHTML =
+    `<div class="wp2m-tpar-row">` +
+    `<span class="wp2m-tpar-label">TPAR<span class="tooltip-icon" data-tooltip="mv">ⓘ</span></span>` +
+    `<span class="wp2m-tpar-percentile-label" id="wp2m-tpar-percentile-label"></span>` +
+    `</div>` +
+    `<div class="wp2m-tpar-row wp2m-tpar-row--main">` +
+    `<span class="wp2m-tpar-number-group">` +
+    `<span class="wp2m-tpar-number">${fmtTpar(mv.mv_avg)}</span>` +
+    (isElite ? `<span class="tpar2-elite-badge">Elite</span>` : "") +
+    `</span>` +
+    `<a class="wp2m-tpar-scale-link" href="${leaderboardUrl}">` +
+    `<span class="wp2m-tpar-scale" id="wp2m-tpar-scale"><span class="wp2m-tpar-marker" id="wp2m-tpar-marker"></span></span>` +
+    `</a>` +
+    `</div>`;
+
+  const setPercentile = (percentile) => {
+    const label = document.getElementById("wp2m-tpar-percentile-label");
+    const marker = document.getElementById("wp2m-tpar-marker");
+    if (label) label.textContent = formatPercentileLabel(percentile);
+    if (marker) marker.style.left = `${percentile}%`;
+  };
+
+  if (weightClass && data.wrestler_id) {
+    computeFilteredMVRankAndPercentile(data.wrestler_id, weightClass, season).then(result => {
+      if (result) {
+        setPercentile(result.percentile);
+      } else if (mv.rank_weight !== null && mv.rank_weight !== undefined) {
+        let est = 50;
+        if (mv.rank_weight <= 3) est = 95;
+        else if (mv.rank_weight <= 10) est = 85;
+        else if (mv.rank_weight <= 20) est = 70;
+        else if (mv.rank_weight <= 33) est = 50;
+        else est = 30;
+        setPercentile(est);
+      }
+    }).catch(() => {});
+  } else if (mv.rank_weight !== null && mv.rank_weight !== undefined) {
+    setPercentile(50);
+  }
 }
 
 function renderTparCard(data, mv, season) {
@@ -424,7 +771,7 @@ function renderTparCard(data, mv, season) {
 
     const percentileText = document.createElement("div");
     percentileText.className = "mv-percentile-text wp2-percentile-text-centered";
-    percentileText.textContent = `Top ${100 - percentile + 1}% nationally`;
+    percentileText.textContent = `${formatPercentileLabel(percentile)} nationally`;
     percentileBarContainer.appendChild(percentileText);
 
     // Fixed 0-100 gradient scale (not a "fill width" bar) with a marker
@@ -585,9 +932,10 @@ function renderRollingMbtTimeline(data, seasonMV) {
   container.innerHTML = '<span style="opacity:0.4;font-size:0.85em;padding:8px;display:block">Loading…</span>';
 
   const avgLabel = document.getElementById("match-impact-avg-label");
-  avgLabel.textContent = seasonMV !== null && seasonMV !== undefined
-    ? `Season avg (${fmtTpar(seasonMV)})`
-    : "Season avg";
+  const avgSuffix = seasonMV !== null && seasonMV !== undefined ? ` (${fmtTpar(seasonMV)})` : "";
+  avgLabel.innerHTML =
+    `<span class="wp2m-label-full">Season avg${avgSuffix}</span>` +
+    `<span class="wp2m-label-short">Avg${avgSuffix}</span>`;
 
   const season = String(data.year || "2026");
   const wrestlerId = String(data.wrestler_id);
@@ -622,9 +970,17 @@ function renderRollingMbtTimeline(data, seasonMV) {
       return lastMbt;
     });
 
-    const chartHeight = 250;
+    // Mobile gets its own real chart height/padding here (not a CSS-forced
+    // height on a 250-tall SVG) -- forcing the CSS height while the JS
+    // still computed a 250-tall coordinate system clipped negative bars,
+    // since zeroY sat near the bottom of the shrunk viewport with no room
+    // left below it for downward (loss) bars to render into.
+    const isMobileChart = window.matchMedia("(max-width: 767px)").matches;
+    const chartHeight = isMobileChart ? 130 : 250;
     const containerWidth = container.clientWidth || 600;
-    const padding = { top: 30, right: 20, bottom: 30, left: 20 };
+    const padding = isMobileChart
+      ? { top: 14, right: 12, bottom: 14, left: 12 }
+      : { top: 30, right: 20, bottom: 30, left: 20 };
     const plotWidth = containerWidth - padding.left - padding.right;
     const plotHeight = chartHeight - padding.top - padding.bottom;
 
@@ -891,4 +1247,79 @@ function renderMatchHistory(matches) {
 
     tbody.appendChild(tr);
   });
+}
+
+// ===============================
+// Mobile match list: 4 columns (date | rank+name/team | result pill+score |
+// impact), one row each, no stacked run-on line, no initials.
+// ===============================
+
+function formatDateShort(dateStr) {
+  if (!dateStr) return "—";
+  const date = new Date(dateStr);
+  if (isNaN(date.getTime())) return dateStr;
+  return date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+}
+
+function renderMobileMatchList(matches, season) {
+  const list = document.getElementById("wp2m-match-list");
+  const yearEl = document.getElementById("wp2m-matches-year");
+  if (yearEl) yearEl.textContent = safe(season);
+  if (!list) return;
+
+  if (!matches.length) {
+    list.innerHTML = `<p class="section-empty-state">No matches yet this season.</p>`;
+    return;
+  }
+
+  const sortedMatches = [...matches].sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+
+  list.innerHTML = sortedMatches.map(match => {
+    const isWin = match.result === "W";
+    const { code } = matchMethodCode(match.result, match.method);
+    const pillLabel = code === "FALL" ? "F" : code;
+
+    // Decision/MD/TF/etc. show the stored score as-is (winner-loser, never
+    // flipped for a loss); a fall has no score, only a clock time; anything
+    // else with neither is a bare forfeit/no-score bout.
+    const scoreOrTime = match.score ? safe(match.score) : (code === "FALL" ? safe(match.duration) : "—");
+
+    const mvImpact = match.mv_impact_v1 !== undefined ? match.mv_impact_v1 : match.mv_impact;
+    let impactText, impactCls;
+    if (mvImpact === null || mvImpact === undefined) {
+      impactText = "—"; impactCls = "wp2m-impact-nodata";
+    } else if (mvImpact > 0) {
+      impactText = `+${mvImpact.toFixed(1)}`; impactCls = "wp2m-impact-positive";
+    } else if (mvImpact < 0) {
+      impactText = mvImpact.toFixed(1); impactCls = "wp2m-impact-negative";
+    } else {
+      impactText = "0.0"; impactCls = "wp2m-impact-nodata";
+    }
+
+    // Full name only -- never an initial-dot abbreviation. opponent_name is
+    // already stored as the full first+last name in the match payload. The
+    // whole row is the link (when an id exists), so the name itself is
+    // plain text here, not a nested anchor.
+    const fullName = safe(match.opponent_name);
+    const rankHtml = match.opponent_rank ? `<span class="wp2m-match-rank">#${match.opponent_rank}</span> ` : "";
+
+    const href = match.opponent_id ? `/wrestler.html?id=${match.opponent_id}` : null;
+    const tag = href ? "a" : "div";
+    const hrefAttr = href ? ` href="${href}"` : "";
+
+    return (
+      `<${tag} class="wp2m-match-row"${hrefAttr}>` +
+      `<div class="wp2m-match-date">${formatDateShort(match.date)}</div>` +
+      `<div class="wp2m-match-opponent">` +
+      `<div class="wp2m-match-opp-name">${rankHtml}${fullName}</div>` +
+      `<div class="wp2m-match-opp-team">${safe(match.opponent_team)}</div>` +
+      `</div>` +
+      `<div class="wp2m-match-result">` +
+      `<span class="wp2m-match-pill ${isWin ? "wp2m-match-pill--win" : "wp2m-match-pill--loss"}">${pillLabel}</span>` +
+      `<span class="wp2m-match-score">${scoreOrTime}</span>` +
+      `</div>` +
+      `<div class="wp2m-match-impact ${impactCls}">${impactText}</div>` +
+      `</${tag}>`
+    );
+  }).join("");
 }

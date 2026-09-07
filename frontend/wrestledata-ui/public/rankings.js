@@ -187,9 +187,39 @@ function computeMVRank(wrestlers) {
 }
 
 // ========================================
+// Mobile (<768px) row list -- same data/order as the desktop table, via the
+// shared mobile_rank_row.js component. This dataset has no grade/photo, so
+// those parts of the row degrade gracefully (initials avatar, no class-year
+// in the meta line).
+// ========================================
+function renderRankingsMobileList(wrestlers) {
+  const list = document.getElementById("rankings-mobile-list");
+  if (!list || typeof renderMobileRankRow !== "function") return;
+
+  if (!wrestlers || wrestlers.length === 0) {
+    list.innerHTML = `<p class="tpar2-mobile-empty">No rankings data available for this weight class.</p>`;
+    return;
+  }
+
+  // No weight in the meta line here (unlike the P4P homepage list) -- this
+  // page is already filtered to a single weight, so repeating it on every
+  // row would just be noise.
+  list.innerHTML = wrestlers.map(w => renderMobileRankRow({
+    rank: w.rank,
+    wrestlerId: w.wrestler_id,
+    name: w.name,
+    team: w.team,
+    teamSlug: w.team ? teamNameToSlug(w.team) : null,
+    tpar: w.mv && w.mv.value !== null && w.mv.value !== undefined ? w.mv.value : null,
+  })).join("");
+}
+
+// ========================================
 // Render Rankings Table
 // ========================================
 function renderRankings(data) {
+  renderRankingsMobileList(data && data.wrestlers);
+
   if (!data || !data.wrestlers || data.wrestlers.length === 0) {
     const tbody = document.querySelector("#rankings-table tbody");
     tbody.innerHTML = `

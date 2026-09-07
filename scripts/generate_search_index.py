@@ -426,11 +426,13 @@ def main():
             del t["_slug"]
             search_index.append(t)
 
+    site_name = "KentuckyMat" if args.league == 'hs' else "MatSavant"
+
     print(f"\nTotal items: {len(search_index)}")
     print(f"Writing to {output_file}...")
     output_file.parent.mkdir(parents=True, exist_ok=True)
     with open(output_file, 'w', encoding='utf-8') as f:
-        f.write("// Search index for WrestleData global search\n")
+        f.write(f"// Search index for {site_name} global search\n")
         f.write("// Generated automatically - do not edit manually\n\n")
         f.write("window.SEARCH_INDEX = ")
         json.dump(search_index, f, indent=2, ensure_ascii=False)

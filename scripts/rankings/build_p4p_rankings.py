@@ -50,6 +50,7 @@ FLO_DIR = PROJECT_ROOT / "data" / "2027" / "flo-preseason-rankings"
 WRESTLERS_DIR = PROJECT_ROOT / "frontend" / "wrestledata-ui" / "public" / "data" / "wrestlers" / "2026"
 WRESTLERS_ROOT = PROJECT_ROOT / "frontend" / "wrestledata-ui" / "public" / "data" / "wrestlers"
 CAREERS_DIR = PROJECT_ROOT / "data" / "careers" / "ncaa_men"
+TEAMS_DIR = PROJECT_ROOT / "frontend" / "wrestledata-ui" / "public" / "data" / "teams"
 OUT_PATH = PROJECT_ROOT / "frontend" / "wrestledata-ui" / "public" / "data" / "p4p" / "2027.json"
 PRIOR_SEASON_LABEL = "26"  # 2026 = the season the enrichment stats are pulled from
 FALLBACK_TPAR_SEASON = "2025"  # if 2026 has no TPAR (sat out the whole season), try this one
@@ -153,6 +154,23 @@ def frontend_slug(name):
     return s.strip("_")
 
 
+_team_abbr_cache = {}
+
+
+def team_abbr(team_slug):
+    """Official school abbreviation (e.g. "PSU", "OKST") from the team's own
+    profile file, used for the mobile rankings row's compact meta line so it
+    never has to guess/hardcode one. Cached since many rows share a team."""
+    if team_slug in _team_abbr_cache:
+        return _team_abbr_cache[team_slug]
+    path = TEAMS_DIR / f"{team_slug}.json"
+    abbr = None
+    if path.exists():
+        abbr = json.loads(path.read_text()).get("abbreviation")
+    _team_abbr_cache[team_slug] = abbr
+    return abbr
+
+
 def enrich_entries(entries, wrestler_index, unmatched_out, wid_to_career):
     by_name_school, by_name_only, slug_to_display = wrestler_index
     out = []
@@ -189,6 +207,7 @@ def enrich_entries(entries, wrestler_index, unmatched_out, wid_to_career):
             # only if the slug isn't one of our own known teams.
             "team": slug_to_display.get(team_slug, school),
             "team_slug": team_slug,
+            "team_abbr": team_abbr(team_slug),
             "record": "0-0",
             "bonus_rate": metrics.get("bonus_rate"),
             "pin_rate": metrics.get("pin_rate"),

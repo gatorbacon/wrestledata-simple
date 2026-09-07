@@ -5,6 +5,9 @@
 (function() {
   'use strict';
 
+  const SEARCH_ICON_SVG = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>`;
+  const MENU_ICON_SVG = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>`;
+
   // Create header HTML structure
   function createHeaderHTML() {
     return `
@@ -12,8 +15,8 @@
         <div class="header-container">
           <!-- Logo (Leftmost) -->
           <div class="header-logo">
-            <a href="/" class="logo-link" title="WrestleData — Wrestling analytics inspired by DataGolf">
-              <span class="logo-text">WrestleData</span>
+            <a href="/" class="logo-link" title="MatSavant — Wrestling analytics inspired by DataGolf">
+              <span class="logo-text">MatSavant</span>
             </a>
           </div>
 
@@ -122,9 +125,69 @@
           <!-- Right Side Items -->
           <div class="header-right">
             <a href="/about.html" class="header-link">About</a>
+            <div class="header-mobile-actions">
+              <button type="button" class="header-icon-btn" id="mobile-search-toggle" aria-label="Search" aria-expanded="false">
+                ${SEARCH_ICON_SVG}
+              </button>
+              <button type="button" class="header-icon-btn" id="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-drawer">
+                ${MENU_ICON_SVG}
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile search bar: expands full-width under the header row -->
+        <div class="mobile-search-bar" id="mobile-search-bar" hidden>
+          <div class="search-container">
+            <input
+              type="text"
+              class="search-input"
+              id="mobile-search-input"
+              placeholder="Search wrestlers, teams…"
+              autocomplete="off"
+              aria-label="Search wrestlers or teams"
+            />
+            <div class="search-dropdown" id="mobile-search-dropdown" style="display: none;"></div>
           </div>
         </div>
       </nav>
+
+      <!-- Mobile nav drawer: same links as the desktop dropdowns above, just
+           moved into a slide-in panel instead of hover menus. -->
+      <div class="mobile-drawer-overlay" id="mobile-drawer-overlay" hidden></div>
+      <div class="mobile-drawer" id="mobile-drawer" hidden aria-hidden="true">
+        <div class="mobile-drawer-header">
+          <span class="mobile-drawer-title">Menu</span>
+          <button type="button" class="mobile-drawer-close" id="mobile-drawer-close" aria-label="Close menu">&times;</button>
+        </div>
+        <nav class="mobile-drawer-nav">
+          <div class="mobile-drawer-section">
+            <div class="mobile-drawer-section-label">Rankings</div>
+            <a href="/rankings.html" class="mobile-drawer-link">Rankings (Traditional)</a>
+            <a href="/matrix.html" class="mobile-drawer-link">Rankings Matrix</a>
+            <a href="/leaderboards/tpar.html" class="mobile-drawer-link">TPAR</a>
+            <a href="/leaderboards/xtp/teams.html" class="mobile-drawer-link">Expected Team Points (xTP)</a>
+          </div>
+          <div class="mobile-drawer-section">
+            <div class="mobile-drawer-section-label">Profiles</div>
+            <a href="/leaderboards/tpar.html" class="mobile-drawer-link">Wrestlers</a>
+            <a href="/leaderboards/xtp/teams.html" class="mobile-drawer-link">Teams</a>
+          </div>
+          <div class="mobile-drawer-section">
+            <div class="mobile-drawer-section-label">Tournaments</div>
+            <a href="/ncaa_live.html" class="mobile-drawer-link">NCAA Live Dashboard</a>
+            <a href="/ncaa_report.html" class="mobile-drawer-link">Seed Analysis</a>
+            <a href="/ncaa_scoring_trends.html" class="mobile-drawer-link">Scoring Trends</a>
+            <a href="/ncaa_team_leaderboard.html" class="mobile-drawer-link">Team Leaderboard</a>
+            <a href="/ncaa_team_report.html" class="mobile-drawer-link">Team Analysis</a>
+            <a href="/ncaa_conf_leaderboard.html" class="mobile-drawer-link">Conference Leaderboard</a>
+            <a href="/ncaa_conf_analysis.html" class="mobile-drawer-link">Conference Analysis</a>
+          </div>
+          <div class="mobile-drawer-section mobile-drawer-section--last">
+            <a href="/about.html" class="mobile-drawer-link">About</a>
+          </div>
+        </nav>
+      </div>
     `;
   }
 
@@ -134,13 +197,101 @@
     const body = document.body;
     if (body && !document.getElementById('site-header')) {
       body.insertAdjacentHTML('afterbegin', createHeaderHTML());
-      
+
       // Initialize dropdowns
       initDropdowns();
-      
-      // Initialize search
-      initSearch();
+
+      // Initialize search (desktop input)
+      initSearch('header-search-input', 'search-dropdown');
+
+      // Mobile-only: search toggle, hamburger drawer
+      initMobileSearch();
+      initMobileDrawer();
     }
+  }
+
+  // Mobile search icon: toggles the full-width search bar under the header
+  function initMobileSearch() {
+    const toggle = document.getElementById('mobile-search-toggle');
+    const bar = document.getElementById('mobile-search-bar');
+    const input = document.getElementById('mobile-search-input');
+    if (!toggle || !bar || !input) return;
+
+    initSearch('mobile-search-input', 'mobile-search-dropdown');
+
+    toggle.addEventListener('click', () => {
+      const isOpen = !bar.hidden;
+      bar.hidden = isOpen;
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+      if (!isOpen) {
+        input.focus();
+      } else {
+        input.value = '';
+        document.getElementById('mobile-search-dropdown').style.display = 'none';
+      }
+    });
+  }
+
+  // Mobile hamburger: slides in the nav drawer, traps focus, closes on
+  // overlay click / close button / Escape.
+  function initMobileDrawer() {
+    const menuToggle = document.getElementById('mobile-menu-toggle');
+    const drawer = document.getElementById('mobile-drawer');
+    const overlay = document.getElementById('mobile-drawer-overlay');
+    const closeBtn = document.getElementById('mobile-drawer-close');
+    if (!menuToggle || !drawer || !overlay || !closeBtn) return;
+
+    function focusableEls() {
+      return Array.from(drawer.querySelectorAll('a[href], button:not([disabled])'));
+    }
+
+    function trapFocus(e) {
+      if (e.key !== 'Tab') return;
+      const els = focusableEls();
+      if (els.length === 0) return;
+      const first = els[0];
+      const last = els[els.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
+
+    function openDrawer() {
+      drawer.hidden = false;
+      overlay.hidden = false;
+      drawer.setAttribute('aria-hidden', 'false');
+      menuToggle.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+      document.addEventListener('keydown', onKeydown);
+      const els = focusableEls();
+      if (els.length) els[0].focus();
+    }
+
+    function closeDrawer() {
+      drawer.hidden = true;
+      overlay.hidden = true;
+      drawer.setAttribute('aria-hidden', 'true');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+      document.removeEventListener('keydown', onKeydown);
+      menuToggle.focus();
+    }
+
+    function onKeydown(e) {
+      if (e.key === 'Escape') {
+        closeDrawer();
+      } else {
+        trapFocus(e);
+      }
+    }
+
+    menuToggle.addEventListener('click', openDrawer);
+    closeBtn.addEventListener('click', closeDrawer);
+    overlay.addEventListener('click', closeDrawer);
   }
 
   // Initialize dropdown menus
@@ -195,9 +346,9 @@
   }
 
   // Initialize search functionality with Fuse.js
-  function initSearch() {
-    const searchInput = document.getElementById('header-search-input');
-    const searchDropdown = document.getElementById('search-dropdown');
+  function initSearch(inputId, dropdownId) {
+    const searchInput = document.getElementById(inputId);
+    const searchDropdown = document.getElementById(dropdownId);
     
     if (!searchInput || !searchDropdown) return;
     

@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Rankings — WrestleData</title>
+  <title>Rankings — MatSavant</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/styles.css?v=20260913" />
+  <link rel="stylesheet" href="/styles.css?v=20260921" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   <script src="/search_index.js"></script>
 </head>
 <body>
-  <script src="/header.js?v=20260903"></script>
+  <script src="/header.js?v=20260908"></script>
   <div class="page-container">
     <header class="header">
       <h1 id="rankings-title">Rankings</h1>
@@ -31,7 +31,7 @@
         <a class="weight-tab" href="rankings.html?weight=285">285</a>
       </div>
 
-      <div class="table-wrapper">
+      <div class="table-wrapper" id="rankings-table-wrapper">
         <table id="rankings-table">
           <thead>
             <tr>
@@ -47,11 +47,13 @@
           <tbody></tbody>
         </table>
       </div>
+      <div class="tpar2-mobile-list" id="rankings-mobile-list"></div>
     </section>
   </div>
 
   <script src="/tooltips.js"></script>
-  <script src="/rankings.js"></script>
+  <script src="/mobile_rank_row.js?v=20260907"></script>
+  <script src="/rankings.js?v=20260907"></script>
 </body>
 </html>
 

@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <title>Wrestler Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/styles.css?v=20260913" />
+  <link rel="stylesheet" href="/styles.css?v=20260921" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   <script src="/search_index.js"></script>
 </head>
 
 <body>
-  <script src="/header.js?v=20260903"></script>
-  <div class="page-container">
+  <script src="/header.js?v=20260908"></script>
+  <div class="page-container wp2m-reorder">
 
     <header class="header">
       <div class="header-row">
@@ -23,6 +23,40 @@
         </div>
       </div>
     </header>
+
+    <!-- MOBILE (<768px) IDENTITY: photo, name, one meta line (rank stated
+         only here), career totals line. Desktop <header> above is hidden
+         at this breakpoint. -->
+    <div class="wp2m-identity" id="wp2m-identity">
+      <img class="wp2m-photo" id="wp2m-photo" alt="" hidden />
+      <div class="wp2m-identity-text">
+        <div class="wp2m-name" id="wp2m-name"></div>
+        <div class="wp2m-meta" id="wp2m-meta"></div>
+        <div class="wp2m-career-line" id="wp2m-career-line"></div>
+      </div>
+    </div>
+
+    <!-- MOBILE SEASON CHIPS: replaces the desktop season <table> below. -->
+    <div class="wp2m-season-block" id="wp2m-season-block">
+      <div class="wp2m-chip-row" id="wp2m-chip-row"></div>
+      <div class="wp2m-chip-subtitle" id="wp2m-chip-subtitle"></div>
+      <button type="button" class="wp2m-season-stats-btn" id="wp2m-season-stats-btn">
+        <span class="tooltip-icon">ⓘ</span> Season stats
+      </button>
+    </div>
+
+    <!-- MOBILE SEASON STATS SHEET -->
+    <div class="wp2m-sheet-overlay" id="wp2m-sheet-overlay" hidden></div>
+    <div class="wp2m-sheet" id="wp2m-sheet" hidden aria-hidden="true">
+      <div class="wp2m-sheet-header">
+        <span class="wp2m-sheet-title" id="wp2m-sheet-title">Season</span>
+        <button type="button" class="wp2m-sheet-close" id="wp2m-sheet-close" aria-label="Close">&times;</button>
+      </div>
+      <div class="wp2m-sheet-body" id="wp2m-sheet-body"></div>
+    </div>
+
+    <!-- MOBILE TPAR STRIP: one row, replaces the desktop TPAR card below. -->
+    <div class="wp2m-tpar-strip" id="wp2m-tpar-strip"></div>
 
     <!-- SEASON SELECTOR: Season / Team / Class / Rank / Record / TPAR / Bonus % -->
     <section class="section season-selector-section" id="season-selector-section" hidden>
@@ -61,8 +95,8 @@
                bar/line/dashed swatch icon per position (see styles.css) --
                these are plain text, no separate icon needed. -->
           <div class="match-impact-labels">
-            <span class="match-impact-label">Per-match impact</span>
-            <span class="match-impact-label">Rolling (5-match)</span>
+            <span class="match-impact-label"><span class="wp2m-label-full">Per-match impact</span><span class="wp2m-label-short">Impact</span></span>
+            <span class="match-impact-label"><span class="wp2m-label-full">Rolling (5-match)</span><span class="wp2m-label-short">Rolling</span></span>
             <span class="match-impact-label" id="match-impact-avg-label">Season avg</span>
           </div>
         </section>
@@ -79,8 +113,12 @@
 
     <!-- MATCH HISTORY -->
     <section class="section section--match-history">
-      <h2>Match History</h2>
-      <div class="table-wrapper">
+      <h2 class="wp2m-desktop-only">Match History</h2>
+      <div class="wp2m-matches-header" id="wp2m-matches-header">
+        <span>Matches</span>
+        <span class="wp2m-matches-year" id="wp2m-matches-year"></span>
+      </div>
+      <div class="table-wrapper" id="match-table-wrapper">
         <table id="match-table">
           <thead>
             <tr>
@@ -96,11 +134,13 @@
           <tbody></tbody>
         </table>
       </div>
+      <div class="wp2m-match-list" id="wp2m-match-list"></div>
     </section>
 
   </div>
 
-  <script src="/app.js?v=20260906"></script>
+  <script src="/mobile_rank_row.js?v=20260907"></script>
+  <script src="/app.js?v=20260913"></script>
   <script src="/tooltips.js"></script>
 
   <script>

@@ -1,4 +1,4 @@
-// Search index for WrestleData global search
+// Search index for MatSavant global search
 // Generated automatically - do not edit manually
 
 window.SEARCH_INDEX = [
