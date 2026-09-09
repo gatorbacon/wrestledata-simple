@@ -3,7 +3,7 @@
   "name": "Jared Johnson",
   "team": "Chattanooga",
   "team_slug": "chattanooga",
-  "team_rank": 37,
+  "team_rank": 35,
   "weight_class": 197,
   "grade": "Fr.",
   "hometown": "Jefferson City, Mo.",
@@ -11,12 +11,12 @@
   "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Futc.sidearmsports.com%2Fimages%2F2014%2F10%2F7%2FAXKAJSJJJNTKFGW.20141007173102.jpg&width=603&height=803&type=webp",
   "previous_school": null,
   "year": 2014,
-  "current_rank": 58,
+  "current_rank": 83,
   "record": {
     "overall": "4-4",
     "vs_ranked": "4-4",
     "vs_top10": "0-0",
-    "vs_top25": "0-3"
+    "vs_top25": "0-2"
   },
   "metrics": {
     "pf7": 4.6,
@@ -31,10 +31,10 @@
     "techs": 0,
     "pins": 1,
     "mat_value": {
-      "mv_avg": -0.199,
+      "mv_avg": -0.077,
       "matches": 9,
-      "rank_weight": 72,
-      "rank_overall": 788,
+      "rank_weight": 69,
+      "rank_overall": 727,
       "version": "v1"
     }
   },
@@ -45,15 +45,15 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "4634925009",
-      "opponent_rank": 77,
+      "opponent_rank": 78,
       "opponent_name": "Addison Knepshield",
       "method": "Dec 5-0"
     },
     "worst_loss": {
-      "opponent_id": "4635430009",
-      "opponent_rank": 29,
-      "opponent_name": "Timothy McCall",
-      "method": "Dec 6-5"
+      "opponent_id": "4634935009",
+      "opponent_rank": 30,
+      "opponent_name": "Jared Haught",
+      "method": "Fall 2:13"
     }
   },
   "match_list": [
@@ -63,16 +63,16 @@
       "opponent_career_id": null,
       "opponent_name": "Michael Moore",
       "opponent_team": "Davidson",
-      "opponent_team_rank": 71,
+      "opponent_team_rank": 68,
       "opponent_weight": 197,
-      "opponent_rank": 198,
+      "opponent_rank": 195,
       "weight_class": "197",
       "result": "W",
       "method": "DEC",
       "score": "6-0",
       "duration": "7:00",
       "event": "vs. Davidson",
-      "mv_impact": -0.51
+      "mv_impact": 0.04
     },
     {
       "date": "2014-01-25",
@@ -80,16 +80,16 @@
       "opponent_career_id": null,
       "opponent_name": "Brett Dempsey",
       "opponent_team": "American",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 38,
       "opponent_weight": 184,
-      "opponent_rank": 148,
+      "opponent_rank": 123,
       "weight_class": "197",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:03",
       "event": "Appalachian State Open",
-      "mv_impact": 4.5
+      "mv_impact": 4.54
     },
     {
       "date": "2014-01-25",
@@ -97,16 +97,16 @@
       "opponent_career_id": null,
       "opponent_name": "Addison Knepshield",
       "opponent_team": "Virginia",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 19,
       "opponent_weight": 197,
-      "opponent_rank": 77,
+      "opponent_rank": 78,
       "weight_class": "197",
       "result": "W",
       "method": "DEC",
       "score": "5-0",
       "duration": "7:00",
       "event": "Appalachian State Open",
-      "mv_impact": 3.3
+      "mv_impact": 3.19
     },
     {
       "date": "2014-01-25",
@@ -114,16 +114,16 @@
       "opponent_career_id": null,
       "opponent_name": "Jared Haught",
       "opponent_team": "Virginia Tech",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 12,
       "opponent_weight": 197,
-      "opponent_rank": 24,
+      "opponent_rank": 30,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:13",
       "event": "Appalachian State Open",
-      "mv_impact": -4.27
+      "mv_impact": -4.32
     },
     {
       "date": "2013-12-15",
@@ -131,16 +131,16 @@
       "opponent_career_id": null,
       "opponent_name": "Braden Atwood",
       "opponent_team": "Purdue",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 39,
       "opponent_weight": 197,
-      "opponent_rank": 14,
+      "opponent_rank": 11,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "10-3",
       "duration": "7:00",
       "event": "vs. Purdue",
-      "mv_impact": -1.45
+      "mv_impact": -1.41
     },
     {
       "date": "2013-11-10",
@@ -148,16 +148,16 @@
       "opponent_career_id": null,
       "opponent_name": "David Heitman",
       "opponent_team": "Hofstra",
-      "opponent_team_rank": 40,
+      "opponent_team_rank": 36,
       "opponent_weight": 197,
-      "opponent_rank": 191,
+      "opponent_rank": 175,
       "weight_class": "197",
       "result": "W",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
       "event": "vs. Hofstra",
-      "mv_impact": -0.52
+      "mv_impact": 0.06
     },
     {
       "date": "2013-11-10",
@@ -165,16 +165,16 @@
       "opponent_career_id": null,
       "opponent_name": "Chris Penny",
       "opponent_team": "Virginia Tech",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 12,
       "opponent_weight": 197,
-      "opponent_rank": 12,
+      "opponent_rank": 19,
       "weight_class": "197",
       "result": "L",
       "method": "INJ",
       "score": null,
       "duration": "3:54",
       "event": "vs. Virginia Tech",
-      "mv_impact": -4.83
+      "mv_impact": -4.88
     },
     {
       "date": "2013-11-08",
@@ -182,19 +182,19 @@
       "opponent_career_id": null,
       "opponent_name": "Timothy McCall",
       "opponent_team": "Wisconsin",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 20,
       "opponent_weight": 197,
-      "opponent_rank": 29,
+      "opponent_rank": 27,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "6-5",
       "duration": "7:00",
       "event": "vs. Wisconsin",
-      "mv_impact": -2.51
+      "mv_impact": -2.47
     }
   ],
-  "profile_generated_at": "2026-09-06",
+  "profile_generated_at": "2026-09-09",
   "season_summary": [
     {
       "season": 2017,
@@ -203,7 +203,7 @@
       "team_slug": "chattanooga",
       "weight_class": 285,
       "grade": "Sr.",
-      "current_rank": 13,
+      "current_rank": 15,
       "record": "19-9"
     },
     {
@@ -213,7 +213,7 @@
       "team_slug": "chattanooga",
       "weight_class": 285,
       "grade": "Jr.",
-      "current_rank": 14,
+      "current_rank": 16,
       "record": "21-7"
     },
     {
@@ -223,7 +223,7 @@
       "team_slug": "chattanooga",
       "weight_class": 285,
       "grade": "So.",
-      "current_rank": 23,
+      "current_rank": 32,
       "record": "28-11"
     },
     {
@@ -233,7 +233,7 @@
       "team_slug": "chattanooga",
       "weight_class": 197,
       "grade": "Fr.",
-      "current_rank": 58,
+      "current_rank": 83,
       "record": "4-4"
     },
     {
@@ -243,7 +243,7 @@
       "team_slug": "chattanooga",
       "weight_class": 197,
       "grade": "Fr.",
-      "current_rank": 72,
+      "current_rank": 76,
       "record": "10-10"
     }
   ]

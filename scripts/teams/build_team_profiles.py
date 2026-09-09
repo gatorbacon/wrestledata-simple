@@ -29,7 +29,7 @@ import argparse
 import json
 import re
 from collections import defaultdict
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional, Set
 
@@ -87,6 +87,12 @@ def parse_args() -> argparse.Namespace:
         type=str,
         default=None,
         help="Output directory for team profile JSON files (auto-determined if not specified)",
+    )
+    parser.add_argument(
+        "--as-of-date",
+        type=str,
+        default=None,
+        help="Reference date (YYYY-MM-DD) for absence checks; defaults to today (testing only)",
     )
     return parser.parse_args()
 
@@ -201,23 +207,38 @@ def load_rankings_by_weight(rankings_dir: str, league: str = 'ncaa', gender: str
     return rankings_by_weight
 
 
-def apply_starter_overrides(
-    rankings: List[Dict], force_backup_ids: Set[str]
-) -> List[Dict]:
-    """Apply starter overrides to rankings."""
-    result = []
-    for entry in rankings:
-        wrestler_id = entry.get("wrestler_id")
-        is_starter = entry.get("is_starter", True)
-        
-        # If wrestler is in force_backup_ids, set is_starter to False
-        if wrestler_id in force_backup_ids:
-            is_starter = False
-        
-        new_entry = {**entry, "is_starter": is_starter}
-        result.append(new_entry)
-    
-    return result
+# A "starter" with 0 matches this season, or nothing recent, isn't really
+# starting -- exclude them from the fallback pool below. Waived if they're
+# still Flo-ranked (moot in practice: Rule 1 below already grabs any
+# Flo-ranked candidate first, so this exemption never actually triggers
+# today -- kept anyway so the filter is self-contained and doesn't
+# silently break if Rule 1 ever changes).
+ABSENCE_DAYS_THRESHOLD = 25
+
+
+def _rank_value(entry: Dict) -> int:
+    rank = entry.get("rank")
+    if isinstance(rank, int):
+        return rank
+    if isinstance(rank, str) and rank.isdigit():
+        return int(rank)
+    return 9999  # UNR / missing rank -- sorts last
+
+
+def _parse_date(date_str: Optional[str]) -> Optional[date]:
+    if not date_str:
+        return None
+    try:
+        return datetime.strptime(date_str, "%Y-%m-%d").date()
+    except ValueError:
+        return None
+
+
+def _days_since(date_str: Optional[str], as_of: Optional[date] = None) -> Optional[int]:
+    d = _parse_date(date_str)
+    if d is None:
+        return None
+    return ((as_of or datetime.now().date()) - d).days
 
 
 def resolve_starters_for_team(
@@ -225,56 +246,93 @@ def resolve_starters_for_team(
     rankings_by_weight: Dict[str, List[Dict]],
     force_backup_ids: Set[str],
     weight_classes: List[str] = None,
+    as_of_date: Optional[date] = None,
 ) -> Dict[str, Optional[str]]:
     """
     Resolve starters for a team across all weights.
-    
+
+    Priority:
+      1. Any Flo-ranked candidate on the roster at that weight is the
+         starter, full stop -- Flo doesn't rank non-starters, so this is
+         trusted outright. Best rank among Flo-ranked candidates if more
+         than one (rare, e.g. a recent transfer both still show up for).
+      2. Otherwise, the best-ranked candidate with at least one match
+         this season AND (Flo-ranked OR wrestled within the last
+         ABSENCE_DAYS_THRESHOLD days). This is what stops a 0-match
+         "ghost" from out-ranking a real, evidenced starter (rank alone
+         used to decide this, and a fresh/seeded Elo can beat a proven
+         teammate's earned one), and stops a long-inactive starter from
+         still winning the slot over whoever's actually wrestling now.
+      3. If nobody qualifies, a genuine vacancy -- None.
+
+    force_backup_ids always excludes a wrestler from consideration,
+    regardless of rank or Flo status.
+
+    The 25-day check in rule 2 is measured against this TEAM's own most
+    recent match across ANY weight (not a single global "today" passed in
+    via as_of_date) -- a starter sidelined mid-season is still correctly
+    flagged relative to a team that's still actively competing every week,
+    and a fully completed season evaluates each team against its own real
+    final activity instead of a still-later date driven by some other
+    team's still-live tournament run (different programs' seasons end on
+    different calendar dates -- a small conference team's season is often
+    over by mid-February while a national qualifier wrestles into late
+    March). as_of_date is only a fallback for a team with literally no
+    match history at all anywhere (in which case every candidate already
+    fails the match_count>0 check first regardless).
+
     Returns: dict mapping weight -> wrestler_id (or None)
     """
     starters = {}
     if weight_classes is None:
         weight_classes = ["125", "133", "141", "149", "157", "165", "174", "184", "197", "285"]
-    
+
+    team_last_activity = None
+    for weight in weight_classes:
+        for entry in rankings_by_weight.get(weight, []):
+            if slugify_team_name(entry.get("team", "")) != team_id:
+                continue
+            d = _parse_date(entry.get("last_match_date"))
+            if d and (team_last_activity is None or d > team_last_activity):
+                team_last_activity = d
+    reference_date = team_last_activity or as_of_date
+
     for weight in weight_classes:
         rankings = rankings_by_weight.get(weight, [])
-        
-        # Apply overrides
-        rankings = apply_starter_overrides(rankings, force_backup_ids)
-        
-        # Filter to entries for this team
-        team_entries = []
-        for entry in rankings:
-            team_name = entry.get("team", "")
-            entry_team_id = slugify_team_name(team_name)
-            if entry_team_id == team_id:
-                team_entries.append(entry)
-        
+
+        # NOTE: rankings' own "is_starter" flag (set by write_rankings_from_elo)
+        # is an unrelated, naive "best-Elo-per-team among has_matches" tag used
+        # elsewhere (e.g. the matrix UI) -- it is NOT this function's concept of
+        # starter and must not be used to filter candidates here, or every
+        # teammate but that one naive pick gets silently dropped from the pool
+        # this function is supposed to be choosing among. The only exclusion
+        # that belongs here is an explicit force-backup override.
+        team_entries = [
+            entry for entry in rankings
+            if slugify_team_name(entry.get("team", "")) == team_id
+            and entry.get("wrestler_id") not in force_backup_ids
+        ]
+
         if not team_entries:
             starters[weight] = None
             continue
-        
-        # Sort by rank (ascending)
-        team_entries.sort(key=lambda x: (
-            int(x.get("rank", 9999)) if isinstance(x.get("rank"), (int, str)) and str(x.get("rank")).isdigit() else 9999
-        ))
-        
-        # First, try to find one marked as starter
-        starter = None
+
+        flo_candidates = [e for e in team_entries if e.get("flo_ranked")]
+        if flo_candidates:
+            starters[weight] = min(flo_candidates, key=_rank_value).get("wrestler_id")
+            continue
+
+        eligible = []
         for entry in team_entries:
-            if entry.get("is_starter", False):
-                starter = entry
-                break
-        
-        # If no starter found, use lowest rank as fallback
-        if not starter and team_entries:
-            starter = team_entries[0]
-        
-        if starter:
-            wrestler_id = starter.get("wrestler_id")
-            starters[weight] = wrestler_id
-        else:
-            starters[weight] = None
-    
+            if entry.get("match_count", 0) == 0:
+                continue
+            days = _days_since(entry.get("last_match_date"), reference_date)
+            if days is not None and days > ABSENCE_DAYS_THRESHOLD and not entry.get("flo_ranked"):
+                continue
+            eligible.append(entry)
+
+        starters[weight] = min(eligible, key=_rank_value).get("wrestler_id") if eligible else None
+
     return starters
 
 
@@ -667,7 +725,9 @@ def process_league(season: int, league: str, state: str, gender: str, args: argp
         starter_overrides_path = Path(args.starter_overrides)
     if args.out_dir:
         out_dir = Path(args.out_dir)
-    
+
+    as_of_date = date.fromisoformat(args.as_of_date) if getattr(args, "as_of_date", None) else None
+
     print(f"Building team profiles for season {season} ({league.upper()} {state or ''} {gender or ''})...")
     print(f"Teams list: {teams_list_path}")
     print(f"Rankings dir: {rankings_dir}")
@@ -733,7 +793,7 @@ def process_league(season: int, league: str, state: str, gender: str, args: argp
         team_id = slugify_team_name(team_name)
         
         # Resolve starters
-        starters = resolve_starters_for_team(team_id, rankings_by_weight, force_backup_ids, weight_classes=weight_strs)
+        starters = resolve_starters_for_team(team_id, rankings_by_weight, force_backup_ids, weight_classes=weight_strs, as_of_date=as_of_date)
         
         # Build base team data
         team_data = {

@@ -5,9 +5,9 @@ men) from FloWrestling's own rankings, enriched with our own per-wrestler
 performance stats.
 
 Why enrichment is needed: FloWrestling's rankings pages only give rank/
-name/school -- no record, bonus rate, pin rate, or TPAR. The new season
+name/school -- no record, bonus rate, pin rate, or DPG. The new season
 hasn't started (every wrestler is genuinely 0-0), so "record" is just "0-0"
-for everyone by design, but bonus rate / pin rate / TPAR are each
+for everyone by design, but bonus rate / pin rate / DPG are each
 wrestler's most recent REAL performance numbers, carried over from the
 last completed season (frontend/wrestledata-ui/public/data/wrestlers/2026/,
 which is labeled by tourney-year -- i.e. the 2025-26 season that just
@@ -19,8 +19,8 @@ last year," reset to zero for the year that's about to start.
 Also carries weight_class/grade/photo_url for the richer name-cell display,
 and prior_record/prior_season to show real season context in place of the
 meaningless preseason "0-0" (record cell falls back to this when the row's
-own record is "0-0"). If a wrestler has no 2026 TPAR at all (sat out the
-whole season -- confirmed real cases: Caleb Henson, Tyler Kasak), TPAR falls
+own record is "0-0"). If a wrestler has no 2026 DPG at all (sat out the
+whole season -- confirmed real cases: Caleb Henson, Tyler Kasak), DPG falls
 back to their most recent prior season via their career file, so they don't
 read as true no-history newcomers (that's reserved for wrestlers with no
 career file at all, e.g. actual true freshmen like Bo Bassett).
@@ -33,7 +33,7 @@ newcomer with no prior D1 season on file) still gets a row -- just with
 "--" for the enriched stats -- rather than being dropped, since Flo's
 own rank order is the thing this table exists to show. Same join logic is
 reused across P4P and all 10 weight classes -- one homepage widget with
-tabs, per the site's usual weight-tab convention (see e.g. the TPAR Leaders
+tabs, per the site's usual weight-tab convention (see e.g. the DPG Leaders
 panel already on the homepage).
 
 Usage:
@@ -53,7 +53,7 @@ CAREERS_DIR = PROJECT_ROOT / "data" / "careers" / "ncaa_men"
 TEAMS_DIR = PROJECT_ROOT / "frontend" / "wrestledata-ui" / "public" / "data" / "teams"
 OUT_PATH = PROJECT_ROOT / "frontend" / "wrestledata-ui" / "public" / "data" / "p4p" / "2027.json"
 PRIOR_SEASON_LABEL = "26"  # 2026 = the season the enrichment stats are pulled from
-FALLBACK_TPAR_SEASON = "2025"  # if 2026 has no TPAR (sat out the whole season), try this one
+FALLBACK_DPG_SEASON = "2025"  # if 2026 has no DPG (sat out the whole season), try this one
 
 WEIGHT_ORDER = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
 
@@ -109,7 +109,7 @@ def build_wrestler_index():
 
 def build_wid_to_career_index():
     """wrestler_id (any season) -> that career's full seasons dict, so a
-    wrestler with no 2026 TPAR (sat out the whole season) can fall back to
+    wrestler with no 2026 DPG (sat out the whole season) can fall back to
     their last real season instead of showing as a true no-history case."""
     index = {}
     if not CAREERS_DIR.exists():
@@ -122,14 +122,14 @@ def build_wid_to_career_index():
     return index
 
 
-def fallback_tpar(wrestler_id, wid_to_career):
+def fallback_dpg(wrestler_id, wid_to_career):
     seasons = wid_to_career.get(wrestler_id)
     if not seasons:
         return None
-    fallback_wid = seasons.get(FALLBACK_TPAR_SEASON)
+    fallback_wid = seasons.get(FALLBACK_DPG_SEASON)
     if not fallback_wid:
         return None
-    path = WRESTLERS_ROOT / FALLBACK_TPAR_SEASON / "by_id" / f"{fallback_wid}.json"
+    path = WRESTLERS_ROOT / FALLBACK_DPG_SEASON / "by_id" / f"{fallback_wid}.json"
     if not path.exists():
         return None
     profile = json.loads(path.read_text())
@@ -194,9 +194,9 @@ def enrich_entries(entries, wrestler_index, unmatched_out, wid_to_career):
         profile = load_profile(wrestler_id) if wrestler_id else None
         metrics = (profile or {}).get("metrics", {})
         prior_record = (profile or {}).get("record", {}).get("overall")
-        tpar = metrics.get("mat_value", {}).get("mv_avg")
-        if tpar is None and wrestler_id:
-            tpar = fallback_tpar(wrestler_id, wid_to_career)
+        dpg = metrics.get("mat_value", {}).get("mv_avg")
+        if dpg is None and wrestler_id:
+            dpg = fallback_dpg(wrestler_id, wid_to_career)
         out.append({
             "rank": entry["rank"],
             "name": name,
@@ -211,7 +211,7 @@ def enrich_entries(entries, wrestler_index, unmatched_out, wid_to_career):
             "record": "0-0",
             "bonus_rate": metrics.get("bonus_rate"),
             "pin_rate": metrics.get("pin_rate"),
-            "tpar": tpar,
+            "dpg": dpg,
             "weight_class": (profile or {}).get("weight_class"),
             "grade": (profile or {}).get("grade"),
             "prior_record": prior_record,

@@ -197,7 +197,7 @@ function renderRankingsMobileList(wrestlers) {
   if (!list || typeof renderMobileRankRow !== "function") return;
 
   if (!wrestlers || wrestlers.length === 0) {
-    list.innerHTML = `<p class="tpar2-mobile-empty">No rankings data available for this weight class.</p>`;
+    list.innerHTML = `<p class="dpg-mobile-empty">No rankings data available for this weight class.</p>`;
     return;
   }
 
@@ -210,7 +210,7 @@ function renderRankingsMobileList(wrestlers) {
     name: w.name,
     team: w.team,
     teamSlug: w.team ? teamNameToSlug(w.team) : null,
-    tpar: w.mv && w.mv.value !== null && w.mv.value !== undefined ? w.mv.value : null,
+    dpg: w.mv && w.mv.value !== null && w.mv.value !== undefined ? w.mv.value : null,
   })).join("");
 }
 

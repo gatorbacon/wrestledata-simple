@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DPG Reports — MatSavant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css?v=20260921" />
+  <style>
+    .rh-header { text-align: center; margin-bottom: 28px; }
+    .rh-header p { color: var(--muted); margin-top: 6px; font-size: 0.95rem; }
+
+    .rh-tabs {
+      display: flex; justify-content: center; gap: 6px; margin-bottom: 24px;
+      border-bottom: 1px solid var(--border); max-width: 640px; margin-left: auto; margin-right: auto;
+    }
+    .rh-tab {
+      padding: 10px 18px; font-size: 0.9rem; font-weight: 700; color: var(--muted);
+      background: none; border: none; border-bottom: 2px solid transparent; cursor: pointer;
+    }
+    .rh-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+    .rh-panel { display: none; }
+    .rh-panel.active { display: block; }
+
+    .rh-card {
+      background: var(--panel); border: 1px solid var(--border); border-radius: var(--r-md, 14px);
+      padding: 28px 32px; max-width: 560px; margin: 0 auto 24px;
+    }
+    .rh-card h2 { font-size: 1.15rem; font-weight: 800; color: var(--text); margin-bottom: 4px; }
+    .rh-card .rh-desc { font-size: 0.85rem; color: var(--muted); margin-bottom: 20px; }
+
+    .rh-field { margin-bottom: 16px; }
+    .rh-field label { display: block; font-size: 0.78rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.3px; margin-bottom: 6px; }
+    .rh-field select, .rh-field input {
+      width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--border);
+      background: var(--bg); color: var(--text); font-size: 0.92rem; box-sizing: border-box;
+    }
+    .rh-row { display: flex; gap: 12px; }
+    .rh-row .rh-field { flex: 1; }
+
+    .rh-btn {
+      width: 100%; padding: 11px; border-radius: 8px; border: none; background: var(--accent);
+      color: #fff; font-weight: 700; font-size: 0.92rem; cursor: pointer; margin-top: 4px;
+    }
+    .rh-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    .rh-autocomplete { position: relative; }
+    .rh-suggestions {
+      position: absolute; top: 100%; left: 0; right: 0; margin-top: 4px;
+      background: var(--panel); border: 1px solid var(--border); border-radius: 8px;
+      max-height: 320px; overflow-y: auto; z-index: 10; box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      display: none;
+    }
+    .rh-suggestions.visible { display: block; }
+    .rh-suggestion {
+      padding: 9px 12px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    .rh-suggestion:last-child { border-bottom: none; }
+    .rh-suggestion:hover, .rh-suggestion.highlighted { background: var(--panel-2); }
+    .rh-suggestion .name { font-weight: 700; color: var(--text); font-size: 0.9rem; }
+    .rh-suggestion .meta { font-size: 0.78rem; color: var(--muted); white-space: nowrap; }
+    .rh-suggestion .rank { font-size: 0.75rem; font-weight: 800; color: var(--accent); }
+    .rh-no-results { padding: 12px; text-align: center; color: var(--muted); font-size: 0.85rem; }
+
+    .rh-hint { font-size: 0.78rem; color: var(--muted); margin-top: 10px; text-align: center; }
+  </style>
+</head>
+<body>
+  <script src="/header.js?v=20260908"></script>
+
+  <div class="page-container">
+    <div class="rh-header">
+      <h1>DPG Reports</h1>
+      <p>Transfer windows, team rosters, and individual career charts</p>
+    </div>
+
+    <div class="rh-tabs">
+      <button class="rh-tab active" data-tab="transfers">Transfer Window</button>
+      <button class="rh-tab" data-tab="roster">Team Roster</button>
+      <button class="rh-tab" data-tab="wrestler">Wrestler Search</button>
+    </div>
+
+    <div class="rh-panel active" id="panel-transfers">
+      <div class="rh-card">
+        <h2>Transfer Window</h2>
+        <div class="rh-desc">See a team's transfers in and out, with DPG before and after, across a year range.</div>
+        <div class="rh-field">
+          <label for="xf-team">Team</label>
+          <select id="xf-team"></select>
+        </div>
+        <div class="rh-row">
+          <div class="rh-field">
+            <label for="xf-start">Start year</label>
+            <select id="xf-start"></select>
+          </div>
+          <div class="rh-field">
+            <label for="xf-end">End year</label>
+            <select id="xf-end"></select>
+          </div>
+        </div>
+        <button class="rh-btn" id="xf-go">View Report</button>
+      </div>
+    </div>
+
+    <div class="rh-panel" id="panel-roster">
+      <div class="rh-card">
+        <h2>Team Roster</h2>
+        <div class="rh-desc">A team's full roster for one season, with each wrestler's career DPG chart.</div>
+        <div class="rh-field">
+          <label for="ro-team">Team</label>
+          <select id="ro-team"></select>
+        </div>
+        <div class="rh-field">
+          <label for="ro-year">Season</label>
+          <select id="ro-year"></select>
+        </div>
+        <button class="rh-btn" id="ro-go">View Roster</button>
+      </div>
+    </div>
+
+    <div class="rh-panel" id="panel-wrestler">
+      <div class="rh-card">
+        <h2>Wrestler Search</h2>
+        <div class="rh-desc">Find a wrestler by name to see their career DPG chart across every school.</div>
+        <div class="rh-field rh-autocomplete">
+          <label for="wr-search">Name</label>
+          <input id="wr-search" type="text" placeholder="Start typing a name…" autocomplete="off" />
+          <div class="rh-suggestions" id="wr-suggestions"></div>
+        </div>
+        <div class="rh-hint" id="wr-hint">Loading wrestler index…</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+(function () {
+  'use strict';
+
+  const MIN_YEAR = 2012, MAX_YEAR = 2026;
+
+  function years(desc) {
+    const arr = [];
+    for (let y = MIN_YEAR; y <= MAX_YEAR; y++) arr.push(y);
+    return desc ? arr.reverse() : arr;
+  }
+
+  function fillYearSelect(sel, selected) {
+    sel.innerHTML = years(true).map(y => `<option value="${y}"${y === selected ? ' selected' : ''}>${y}</option>`).join('');
+  }
+
+  // ---- tabs ----
+  document.querySelectorAll('.rh-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.rh-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.rh-panel').forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById(`panel-${tab.dataset.tab}`).classList.add('active');
+    });
+  });
+
+  // ---- team dropdowns (shared team list) ----
+  fetch('/data/team_colors.json').then(r => r.json()).then(colorMap => {
+    const teams = Object.entries(colorMap.teams || {})
+      .map(([slug, t]) => ({ slug, name: t.name }))
+      .sort((a, b) => a.name.localeCompare(b.name));
+    const optionsHtml = teams.map(t => `<option value="${t.slug}">${t.name}</option>`).join('');
+    document.getElementById('xf-team').innerHTML = optionsHtml;
+    document.getElementById('ro-team').innerHTML = optionsHtml;
+  }).catch(() => {
+    document.getElementById('xf-team').innerHTML = '<option value="">(team list unavailable)</option>';
+    document.getElementById('ro-team').innerHTML = '<option value="">(team list unavailable)</option>';
+  });
+
+  // ---- transfer window ----
+  fillYearSelect(document.getElementById('xf-start'), MAX_YEAR - 3);
+  fillYearSelect(document.getElementById('xf-end'), MAX_YEAR);
+  document.getElementById('xf-go').addEventListener('click', () => {
+    const team = document.getElementById('xf-team').value;
+    const start = document.getElementById('xf-start').value;
+    const end = document.getElementById('xf-end').value;
+    if (!team) return;
+    window.location.href = `/reports/transfers/index.html?team=${encodeURIComponent(team)}&start=${start}&end=${end}`;
+  });
+
+  // ---- team roster ----
+  fillYearSelect(document.getElementById('ro-year'), MAX_YEAR);
+  document.getElementById('ro-go').addEventListener('click', () => {
+    const team = document.getElementById('ro-team').value;
+    const year = document.getElementById('ro-year').value;
+    if (!team) return;
+    window.location.href = `/reports/team/index.html?team=${encodeURIComponent(team)}&year=${year}`;
+  });
+
+  // ---- wrestler search ----
+  let wrestlerIndex = [];
+  fetch('/data/reports/wrestler_index.json').then(r => r.json()).then(data => {
+    wrestlerIndex = data;
+    document.getElementById('wr-hint').textContent = `${data.length.toLocaleString()} wrestlers indexed`;
+  }).catch(() => {
+    document.getElementById('wr-hint').textContent = 'Wrestler index unavailable.';
+  });
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  }
+
+  const input = document.getElementById('wr-search');
+  const box = document.getElementById('wr-suggestions');
+  let highlighted = -1;
+
+  function renderSuggestions(matches) {
+    if (!matches.length) {
+      box.innerHTML = '<div class="rh-no-results">No matches</div>';
+      box.classList.add('visible');
+      return;
+    }
+    box.innerHTML = matches.map((w, i) => `
+      <div class="rh-suggestion" data-idx="${i}" data-id="${esc(w.career_id)}">
+        <div>
+          <div class="name">${esc(w.name)}</div>
+          <div class="meta">${esc(w.team || '')}${w.weight_class ? ' · ' + w.weight_class : ''} · ${esc(w.latest_year)}</div>
+        </div>
+        <div class="rank">${w.latest_rank ? '#' + w.latest_rank : 'NR'}</div>
+      </div>
+    `).join('');
+    box.classList.add('visible');
+    highlighted = -1;
+    box.querySelectorAll('.rh-suggestion').forEach(el => {
+      el.addEventListener('click', () => goToWrestler(el.dataset.id));
+    });
+  }
+
+  function goToWrestler(careerId) {
+    window.location.href = `/reports/wrestler/index.html?id=${encodeURIComponent(careerId)}`;
+  }
+
+  input.addEventListener('input', () => {
+    const q = input.value.trim().toLowerCase();
+    if (!q || !wrestlerIndex.length) {
+      box.classList.remove('visible');
+      return;
+    }
+    const matches = wrestlerIndex
+      .filter(w => w.name && w.name.toLowerCase().includes(q))
+      .sort((a, b) => (a.latest_rank || Infinity) - (b.latest_rank || Infinity))
+      .slice(0, 10);
+    renderSuggestions(matches);
+  });
+
+  input.addEventListener('keydown', (e) => {
+    const items = box.querySelectorAll('.rh-suggestion');
+    if (!items.length) return;
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      highlighted = Math.min(highlighted + 1, items.length - 1);
+      items.forEach((el, i) => el.classList.toggle('highlighted', i === highlighted));
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      highlighted = Math.max(highlighted - 1, 0);
+      items.forEach((el, i) => el.classList.toggle('highlighted', i === highlighted));
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      const target = highlighted >= 0 ? items[highlighted] : items[0];
+      if (target) goToWrestler(target.dataset.id);
+    } else if (e.key === 'Escape') {
+      box.classList.remove('visible');
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.rh-autocomplete')) box.classList.remove('visible');
+  });
+})();
+  </script>
+</body>
+</html>

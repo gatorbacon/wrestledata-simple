@@ -146,7 +146,7 @@ def build_steps(track, season):
     # ---- Phase 2 ----
 
     # xTP hard-crashes (FileNotFoundError) without rankings_starters_<weight>.json,
-    # even though TPAR and wrestler profiles don't really need it -- confirmed
+    # even though DPG and wrestler profiles don't really need it -- confirmed
     # by reading both scripts directly. Keep it for both tracks.
     if is_ncaa:
         starter_cmd = [py, "scripts/rankings/build_starter_rankings.py", "-season", season, "-league", "ncaa"]
@@ -164,23 +164,23 @@ def build_steps(track, season):
         elo_cmd = [py, "scripts/rankings/calculate_elo_ratings.py", "-season", season, "--league", "hs", "--gender", gender, "--state", state]
     steps.append({"name": "Hybrid Ranks (ELO)", "cmds": [elo_cmd]})
 
-    # MV = TPAR (docs/matsavant.md gotcha #1). -gender only accepts
+    # MV = DPG (docs/matsavant.md gotcha #1). -gender only accepts
     # men/women here and is documented "Not used for HS" -- one combined
     # call covers both HS genders, matching the script's own design.
     if is_ncaa:
         mv_cmd = [py, "scripts/mat_value/compute_all_mat_values.py", "--season", season, "-league", "ncaa", "-gender", "men"]
     else:
         mv_cmd = [py, "scripts/mat_value/compute_all_mat_values.py", "--season", season, "-league", "hs", "-state", state]
-    steps.append({"name": "Compute Mat Value (TPAR)", "cmds": [mv_cmd]})
+    steps.append({"name": "Compute Mat Value (DPG)", "cmds": [mv_cmd]})
 
-    # Rolling per-date TPAR trajectory for the profile page's chart trendline
+    # Rolling per-date DPG trajectory for the profile page's chart trendline
     # + hover. Reads only weight_class_<weight>.json (already produced by
     # Load Data above), independent of Mat Value / Hybrid Ranks -- safe to
     # rerun any time, and self-contained (doesn't touch mat_value_<season>.json
     # or any wrestler profile). NCAA-only; no HS equivalent.
     if is_ncaa:
         steps.append({
-            "name": "Compute Rolling TPAR Trajectory",
+            "name": "Compute Rolling DPG Trajectory",
             "cmds": [[py, "scripts/mat_value/compute_rolling_mbt.py", "--season", season]],
         })
 

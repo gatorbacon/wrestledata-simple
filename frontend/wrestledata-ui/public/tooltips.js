@@ -62,7 +62,7 @@ function addTooltip(element, text) {
 // Tooltip definitions
 const TOOLTIPS = {
   'xtp': 'Expected NCAA team points based on advancement, placement, and bonus probabilities.',
-  'mv': 'Per-match value relative to opponent expectation.',
+  'mv': 'DPG — extra dual points per match vs what a typical wrestler gets against that same opponent.',
   'xtp-p': 'Expected placement points.',
   'xtp-a': 'Expected advancement points.',
   'xtp-b': 'Expected bonus points.',

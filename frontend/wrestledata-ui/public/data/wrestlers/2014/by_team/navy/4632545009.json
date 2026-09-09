@@ -3,7 +3,7 @@
   "name": "Ethan Stanley",
   "team": "Navy",
   "team_slug": "navy",
-  "team_rank": 49,
+  "team_rank": 43,
   "weight_class": 285,
   "grade": "Fr.",
   "hometown": "Saugerties, N.Y.",
@@ -11,10 +11,10 @@
   "photo_url": "https://navysports.com/images/2018/5/10/9388675.jpeg",
   "previous_school": null,
   "year": 2014,
-  "current_rank": 168,
+  "current_rank": 159,
   "record": {
     "overall": "1-4",
-    "vs_ranked": "1-4",
+    "vs_ranked": "0-4",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -29,29 +29,17 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0,
-    "mat_value": {
-      "mv_avg": -4.913,
-      "matches": 4,
-      "rank_weight": 160,
-      "rank_overall": 2047,
-      "version": "v1"
-    }
+    "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 0,
     "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
-    "win_over_highest_rank": {
-      "opponent_id": "4632538009",
-      "opponent_rank": 206,
-      "opponent_name": "Kevin Marvel",
-      "method": "M. For."
-    },
+    "win_over_highest_rank": null,
     "worst_loss": {
       "opponent_id": "4628985009",
-      "opponent_rank": 143,
+      "opponent_rank": 167,
       "opponent_name": "Stephen Snyder",
       "method": "Dec 7-4"
     }
@@ -63,9 +51,9 @@
       "opponent_career_id": null,
       "opponent_name": "Kevin Marvel",
       "opponent_team": "Navy",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 43,
       "opponent_weight": 184,
-      "opponent_rank": 206,
+      "opponent_rank": null,
       "weight_class": "184",
       "result": "W",
       "method": "MFF",
@@ -79,16 +67,15 @@
       "opponent_career_id": null,
       "opponent_name": "Stephen Snyder",
       "opponent_team": "Army",
-      "opponent_team_rank": 66,
+      "opponent_team_rank": 58,
       "opponent_weight": 285,
-      "opponent_rank": 143,
+      "opponent_rank": 167,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "7-4",
       "duration": "7:00",
-      "event": "F&M Open",
-      "mv_impact": -5.29
+      "event": "F&M Open"
     },
     {
       "date": "2015-01-04",
@@ -96,16 +83,15 @@
       "opponent_career_id": null,
       "opponent_name": "Brad Emerick",
       "opponent_team": "Lock Haven",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 62,
       "opponent_weight": 285,
-      "opponent_rank": 82,
+      "opponent_rank": 78,
       "weight_class": "285",
       "result": "L",
       "method": "SV-1",
       "score": "2-1",
       "duration": "8:15",
-      "event": "F&M Open",
-      "mv_impact": -3.78
+      "event": "F&M Open"
     },
     {
       "date": "2013-11-23",
@@ -113,16 +99,15 @@
       "opponent_career_id": null,
       "opponent_name": "Mimmo Lytle",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 23,
+      "opponent_team_rank": 32,
       "opponent_weight": 285,
-      "opponent_rank": 102,
+      "opponent_rank": 82,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Navy Classic",
-      "mv_impact": -4.06
+      "event": "Navy Classic"
     },
     {
       "date": "2013-11-23",
@@ -130,19 +115,18 @@
       "opponent_career_id": null,
       "opponent_name": "Wayne Purnell Jr.",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 57,
       "opponent_weight": 285,
-      "opponent_rank": 64,
+      "opponent_rank": 86,
       "weight_class": "285",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "4:35",
-      "event": "Navy Classic",
-      "mv_impact": -6.53
+      "event": "Navy Classic"
     }
   ],
-  "profile_generated_at": "2026-09-06",
+  "profile_generated_at": "2026-09-09",
   "season_summary": [
     {
       "season": 2017,
@@ -151,7 +135,7 @@
       "team_slug": "navy",
       "weight_class": 285,
       "grade": "Sr.",
-      "current_rank": 212,
+      "current_rank": 237,
       "record": "2-10"
     },
     {
@@ -161,7 +145,7 @@
       "team_slug": "navy",
       "weight_class": 285,
       "grade": "",
-      "current_rank": 142,
+      "current_rank": 239,
       "record": "0-0"
     },
     {
@@ -171,7 +155,7 @@
       "team_slug": "navy",
       "weight_class": 285,
       "grade": "So.",
-      "current_rank": 165,
+      "current_rank": 182,
       "record": "2-3"
     },
     {
@@ -181,7 +165,7 @@
       "team_slug": "navy",
       "weight_class": 285,
       "grade": "Fr.",
-      "current_rank": 168,
+      "current_rank": 159,
       "record": "1-4"
     }
   ]

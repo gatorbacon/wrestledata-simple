@@ -363,20 +363,43 @@ def compute_mv_rankings(leaderboard_entries: List[Dict]) -> List[Dict]:
     return leaderboard_entries
 
 
+def load_hybrid_ranks(season: int) -> Dict[str, Dict]:
+    """wrestler_id -> {"hybrid_rank": best-across-weights, "hybrid_rank_by_weight": {...}}
+    from mt/elo_ratings/ncaa_men/{season}/elo_ratings.json -- the ONLY valid
+    current_rank source per docs/matsavant.md's "NCAA Ranking Methodology"
+    section. Never read rank from rankings_<weight>.json here -- that's the
+    banned matrix-rank source (see calculate_elo_ratings.py's
+    calculate_ncaa_hybrid_ranks_by_weight for why)."""
+    path = Path(f"mt/elo_ratings/ncaa_men/{season}/elo_ratings.json")
+    out: Dict[str, Dict] = {}
+    if path.exists():
+        try:
+            for e in json.loads(path.read_text()):
+                wid = e.get("wrestler_id")
+                if wid:
+                    out[str(wid)] = {
+                        "hybrid_rank": e.get("hybrid_rank"),
+                        "hybrid_rank_by_weight": e.get("hybrid_rank_by_weight") or {},
+                    }
+        except Exception:
+            pass
+    return out
+
+
 def write_season_dataset(season: int, mv_data: Dict[str, Dict], data_dir: str, output_file: Path) -> None:
     """Write season-wide MV dataset for leaderboards."""
     data_path = Path(data_dir) / str(season)
     leaderboard_entries = []
-    
-    # Load wrestler info from rankings files
+
+    # Load wrestler info from rankings files (name/team/weight only -- NOT rank)
     wrestler_info = {}
     weights = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
-    
+
     for weight in weights:
         rankings_file = data_path / f"rankings_{weight}.json"
         if not rankings_file.exists():
             continue
-        
+
         try:
             with rankings_file.open("r", encoding="utf-8") as f:
                 data = json.load(f)
@@ -387,10 +410,15 @@ def write_season_dataset(season: int, mv_data: Dict[str, Dict], data_dir: str, o
                         "name": entry.get("name", "Unknown"),
                         "team": entry.get("team", "Unknown"),
                         "weight": weight,
-                        "current_rank": entry.get("rank"),
                     }
         except Exception:
             continue
+
+    hybrid_ranks = load_hybrid_ranks(season)
+    for wrestler_id, info in wrestler_info.items():
+        hr = hybrid_ranks.get(wrestler_id, {})
+        by_weight = hr.get("hybrid_rank_by_weight") or {}
+        info["current_rank"] = by_weight.get(str(info["weight"])) or hr.get("hybrid_rank")
     
     # Build leaderboard entries
     for wrestler_id, mv in mv_data.items():
@@ -470,7 +498,7 @@ def parse_args() -> argparse.Namespace:
         type=int,
         default=None,
         metavar="N",
-        help="After computing, show detailed TPAR breakdown for top N wrestlers. "
+        help="After computing, show detailed DPG breakdown for top N wrestlers. "
              "Requires -weight when used alone; shows top N per weight if -weight omitted.",
     )
     return parser.parse_args()
@@ -614,13 +642,13 @@ def main() -> None:
                     continue
 
                 print(f"\n{'='*80}")
-                print(f"TPAR DETAIL — {wt} lbs  (top {len(top_n)})")
+                print(f"DPG DETAIL — {wt} lbs  (top {len(top_n)})")
                 print(f"{'='*80}")
 
                 for rank, entry in enumerate(top_n, 1):
                     wid = entry["wrestler_id"]
                     print(f"\n{'─'*80}")
-                    print(f"#{rank}  {entry['name']} ({entry['team']})  TPAR={entry['mv_avg']:+.3f}  matches={entry['matches']}")
+                    print(f"#{rank}  {entry['name']} ({entry['team']})  DPG={entry['mv_avg']:+.3f}  matches={entry['matches']}")
                     print(f"{'─'*80}")
                     subprocess.run(
                         [sys.executable, str(compute_mv_script),

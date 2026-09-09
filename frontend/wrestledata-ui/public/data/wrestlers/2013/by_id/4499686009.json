@@ -3,7 +3,7 @@
   "name": "Dan Scherer",
   "team": "Stanford",
   "team_slug": "stanford",
-  "team_rank": 53,
+  "team_rank": 26,
   "weight_class": 285,
   "grade": "Junior",
   "hometown": "St. Louis, Mo.",
@@ -11,12 +11,12 @@
   "photo_url": "https://gostanford.com/imgproxy/VtIcigQ8jMi53MCI6mO6JqxyuG8KJfDGiixzU3spuJI/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3N0YW5mb3JkLXByb2QvMjAyNC8wMS8yMi8xUlVieVd0U2szWDUxSUNsR2QwWEJBTjREcHZEemNrYklIYVZoQVRYLmpwZw.jpg",
   "previous_school": null,
   "year": 2013,
-  "current_rank": 29,
+  "current_rank": 26,
   "record": {
     "overall": "16-15",
     "vs_ranked": "16-15",
-    "vs_top10": "0-7",
-    "vs_top25": "1-15"
+    "vs_top10": "1-8",
+    "vs_top25": "1-13"
   },
   "metrics": {
     "pf7": 3.02,
@@ -31,27 +31,27 @@
     "techs": 0,
     "pins": 2,
     "mat_value": {
-      "mv_avg": 0.917,
+      "mv_avg": 0.969,
       "matches": 30,
-      "rank_weight": 38,
-      "rank_overall": 421,
+      "rank_weight": 37,
+      "rank_overall": 405,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
     "ranked_wins": 16,
     "ranked_losses": 15,
-    "top10_wins": 0,
-    "top10_losses": 7,
+    "top10_wins": 1,
+    "top10_losses": 8,
     "win_over_highest_rank": {
       "opponent_id": "4496322009",
-      "opponent_rank": 11,
+      "opponent_rank": 4,
       "opponent_name": "Bobby Telford",
       "method": "Inj. 0:00"
     },
     "worst_loss": {
       "opponent_id": "4499200009",
-      "opponent_rank": 25,
+      "opponent_rank": 34,
       "opponent_name": "William Smith",
       "method": "Dec 6-2"
     }
@@ -63,16 +63,16 @@
       "opponent_career_id": null,
       "opponent_name": "Michael McMullan",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 10,
       "opponent_weight": 285,
-      "opponent_rank": 5,
+      "opponent_rank": 2,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "6-2",
       "duration": "7:00",
       "event": "2013 NCAA Division I Championships",
-      "mv_impact": -0.61
+      "mv_impact": -0.48
     },
     {
       "date": "2013-03-22",
@@ -80,16 +80,16 @@
       "opponent_career_id": null,
       "opponent_name": "Jacob Kettler",
       "opponent_team": "George Mason",
-      "opponent_team_rank": 71,
+      "opponent_team_rank": 72,
       "opponent_weight": 285,
-      "opponent_rank": 49,
+      "opponent_rank": 61,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
       "event": "NCAA Division I Wrestling Championships",
-      "mv_impact": 3.34
+      "mv_impact": 3.28
     },
     {
       "date": "2013-03-22",
@@ -97,16 +97,16 @@
       "opponent_career_id": null,
       "opponent_name": "Bobby Telford",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 2,
       "opponent_weight": 285,
-      "opponent_rank": 11,
+      "opponent_rank": 4,
       "weight_class": "285",
       "result": "W",
       "method": "INJ",
       "score": null,
       "duration": "0:00",
       "event": "NCAA Division I Wrestling Championships",
-      "mv_impact": 7.32
+      "mv_impact": 7.69
     },
     {
       "date": "2013-03-22",
@@ -114,24 +114,7 @@
       "opponent_career_id": null,
       "opponent_name": "Jeremy Johnson",
       "opponent_team": "Ohio",
-      "opponent_team_rank": 32,
-      "opponent_weight": 285,
-      "opponent_rank": 12,
-      "weight_class": "285",
-      "result": "L",
-      "method": "DEC",
-      "score": "6-2",
-      "duration": "7:00",
-      "event": "NCAA Division I Wrestling Championships",
-      "mv_impact": -1.28
-    },
-    {
-      "date": "2013-03-22",
-      "opponent_id": "4498318009",
-      "opponent_career_id": null,
-      "opponent_name": "Michael McMullan",
-      "opponent_team": "Northwestern",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 33,
       "opponent_weight": 285,
       "opponent_rank": 5,
       "weight_class": "285",
@@ -140,7 +123,24 @@
       "score": "6-2",
       "duration": "7:00",
       "event": "NCAA Division I Wrestling Championships",
-      "mv_impact": -0.61
+      "mv_impact": -1.05
+    },
+    {
+      "date": "2013-03-22",
+      "opponent_id": "4498318009",
+      "opponent_career_id": null,
+      "opponent_name": "Michael McMullan",
+      "opponent_team": "Northwestern",
+      "opponent_team_rank": 10,
+      "opponent_weight": 285,
+      "opponent_rank": 2,
+      "weight_class": "285",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-2",
+      "duration": "7:00",
+      "event": "NCAA Division I Wrestling Championships",
+      "mv_impact": -0.48
     },
     {
       "date": "2013-03-02",
@@ -148,16 +148,16 @@
       "opponent_career_id": null,
       "opponent_name": "Levi Cooper",
       "opponent_team": "Arizona State",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 285,
-      "opponent_rank": 17,
+      "opponent_rank": 12,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
       "event": "Pac-12 Championships",
-      "mv_impact": -1.88
+      "mv_impact": -1.81
     },
     {
       "date": "2013-03-02",
@@ -165,16 +165,16 @@
       "opponent_career_id": null,
       "opponent_name": "Sam Cervantes",
       "opponent_team": "CSU Bakersfield",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 49,
       "opponent_weight": 285,
-      "opponent_rank": 168,
+      "opponent_rank": 153,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
       "event": "Pac-12 Championships",
-      "mv_impact": 0.37
+      "mv_impact": 0.56
     },
     {
       "date": "2013-03-02",
@@ -182,16 +182,16 @@
       "opponent_career_id": null,
       "opponent_name": "Chad Hanke",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 9,
       "opponent_weight": 285,
-      "opponent_rank": 6,
+      "opponent_rank": 8,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
       "event": "Pac-12 Championships",
-      "mv_impact": -0.9
+      "mv_impact": -0.98
     },
     {
       "date": "2013-02-16",
@@ -199,16 +199,16 @@
       "opponent_career_id": null,
       "opponent_name": "Jarod Trice",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 13,
       "opponent_weight": 285,
-      "opponent_rank": 8,
+      "opponent_rank": 6,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "3-1",
       "duration": "7:00",
       "event": "vs. Stanford",
-      "mv_impact": -1.39
+      "mv_impact": -1.28
     },
     {
       "date": "2013-02-10",
@@ -216,16 +216,16 @@
       "opponent_career_id": null,
       "opponent_name": "Sam Cervantes",
       "opponent_team": "CSU Bakersfield",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 49,
       "opponent_weight": 285,
-      "opponent_rank": 168,
+      "opponent_rank": 153,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "3-2",
       "duration": "7:00",
       "event": "vs. Stanford",
-      "mv_impact": 0.37
+      "mv_impact": 0.56
     },
     {
       "date": "2013-02-03",
@@ -233,16 +233,16 @@
       "opponent_career_id": null,
       "opponent_name": "J.T Felix",
       "opponent_team": "Boise State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 19,
       "opponent_weight": 285,
-      "opponent_rank": 13,
+      "opponent_rank": 24,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "7-4",
       "duration": "7:00",
       "event": "vs. Stanford",
-      "mv_impact": -1.63
+      "mv_impact": -1.75
     },
     {
       "date": "2013-02-01",
@@ -250,7 +250,7 @@
       "opponent_career_id": null,
       "opponent_name": "Adam Fager",
       "opponent_team": "Utah Valley University",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 55,
       "opponent_weight": 285,
       "opponent_rank": 28,
       "weight_class": "285",
@@ -259,7 +259,7 @@
       "score": "3-2",
       "duration": "7:00",
       "event": "vs. Utah Valley University",
-      "mv_impact": 3.5
+      "mv_impact": 3.42
     },
     {
       "date": "2013-01-19",
@@ -267,16 +267,16 @@
       "opponent_career_id": null,
       "opponent_name": "Chad Hanke",
       "opponent_team": "Oregon State",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 9,
       "opponent_weight": 285,
-      "opponent_rank": 6,
+      "opponent_rank": 8,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "6-3",
       "duration": "7:00",
       "event": "vs. Stanford",
-      "mv_impact": -0.9
+      "mv_impact": -0.98
     },
     {
       "date": "2013-01-18",
@@ -284,16 +284,16 @@
       "opponent_career_id": null,
       "opponent_name": "Bentley Alsup",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 39,
       "opponent_weight": 285,
-      "opponent_rank": 85,
+      "opponent_rank": 114,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "5:34",
       "event": "vs. Stanford",
-      "mv_impact": 5.35
+      "mv_impact": 5.02
     },
     {
       "date": "2013-01-13",
@@ -301,16 +301,16 @@
       "opponent_career_id": null,
       "opponent_name": "Blake Herrin",
       "opponent_team": "American",
-      "opponent_team_rank": 44,
+      "opponent_team_rank": 47,
       "opponent_weight": 285,
-      "opponent_rank": 19,
+      "opponent_rank": 26,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "3-2",
       "duration": "7:00",
       "event": "vs. Stanford",
-      "mv_impact": -1.64
+      "mv_impact": -1.74
     },
     {
       "date": "2013-01-12",
@@ -318,16 +318,16 @@
       "opponent_career_id": null,
       "opponent_name": "Marcos Aranda",
       "opponent_team": "Brown",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 60,
       "opponent_weight": 285,
-      "opponent_rank": 172,
+      "opponent_rank": 179,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "7-5",
       "duration": "7:00",
       "event": "vs. Stanford",
-      "mv_impact": 0.29
+      "mv_impact": 0.54
     },
     {
       "date": "2013-01-12",
@@ -335,16 +335,16 @@
       "opponent_career_id": null,
       "opponent_name": "Nick Gajdzik",
       "opponent_team": "Harvard",
-      "opponent_team_rank": 42,
+      "opponent_team_rank": 31,
       "opponent_weight": 285,
-      "opponent_rank": 95,
+      "opponent_rank": 83,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "6-0",
       "duration": "7:00",
       "event": "vs. Stanford",
-      "mv_impact": 2.36
+      "mv_impact": 2.6
     },
     {
       "date": "2013-01-12",
@@ -352,16 +352,16 @@
       "opponent_career_id": null,
       "opponent_name": "Carl Buchholz",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 17,
       "opponent_weight": 285,
-      "opponent_rank": 151,
+      "opponent_rank": 156,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "7-3",
       "duration": "7:00",
       "event": "vs. Stanford",
-      "mv_impact": 0.9
+      "mv_impact": 0.95
     },
     {
       "date": "2013-01-06",
@@ -369,16 +369,16 @@
       "opponent_career_id": null,
       "opponent_name": "Levi Cooper",
       "opponent_team": "Arizona State",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 37,
       "opponent_weight": 285,
-      "opponent_rank": 17,
+      "opponent_rank": 12,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "4-0",
       "duration": "7:00",
       "event": "vs. Stanford",
-      "mv_impact": -1.88
+      "mv_impact": -1.81
     },
     {
       "date": "2013-01-06",
@@ -386,16 +386,16 @@
       "opponent_career_id": null,
       "opponent_name": "Steven Graziano",
       "opponent_team": "Pennsylvania",
-      "opponent_team_rank": 35,
+      "opponent_team_rank": 24,
       "opponent_weight": 285,
-      "opponent_rank": 54,
+      "opponent_rank": 51,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "3-1",
       "duration": "7:00",
       "event": "vs. Stanford",
-      "mv_impact": 3.0
+      "mv_impact": 3.09
     },
     {
       "date": "2013-01-06",
@@ -403,16 +403,16 @@
       "opponent_career_id": null,
       "opponent_name": "William Smith",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 38,
       "opponent_weight": 285,
-      "opponent_rank": 25,
+      "opponent_rank": 34,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "6-2",
       "duration": "7:00",
       "event": "vs. Stanford",
-      "mv_impact": -1.43
+      "mv_impact": -1.58
     },
     {
       "date": "2012-12-16",
@@ -420,9 +420,9 @@
       "opponent_career_id": null,
       "opponent_name": "J.T Felix",
       "opponent_team": "Boise State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 19,
       "opponent_weight": 285,
-      "opponent_rank": 13,
+      "opponent_rank": 24,
       "weight_class": "285",
       "result": "L",
       "method": "MFF",
@@ -436,16 +436,16 @@
       "opponent_career_id": null,
       "opponent_name": "J.T Felix",
       "opponent_team": "Boise State",
-      "opponent_team_rank": 17,
+      "opponent_team_rank": 19,
       "opponent_weight": 285,
-      "opponent_rank": 13,
+      "opponent_rank": 24,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
       "event": "Reno Tournament of Champions",
-      "mv_impact": -1.63
+      "mv_impact": -1.75
     },
     {
       "date": "2012-12-16",
@@ -453,16 +453,16 @@
       "opponent_career_id": null,
       "opponent_name": "Chris Nash",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 43,
+      "opponent_team_rank": 53,
       "opponent_weight": 285,
-      "opponent_rank": 50,
+      "opponent_rank": 68,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "2:02",
       "event": "Reno Tournament of Champions",
-      "mv_impact": 6.58
+      "mv_impact": 6.37
     },
     {
       "date": "2012-12-16",
@@ -470,7 +470,7 @@
       "opponent_career_id": null,
       "opponent_name": "Brendan Ter Wee",
       "opponent_team": "Stanford",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 26,
       "opponent_weight": 285,
       "opponent_rank": 74,
       "weight_class": "285",
@@ -479,7 +479,7 @@
       "score": "5-0",
       "duration": "7:00",
       "event": "Reno Tournament of Champions",
-      "mv_impact": 2.51
+      "mv_impact": 2.59
     },
     {
       "date": "2012-12-16",
@@ -487,7 +487,7 @@
       "opponent_career_id": null,
       "opponent_name": "Adam Fager",
       "opponent_team": "Utah Valley University",
-      "opponent_team_rank": 54,
+      "opponent_team_rank": 55,
       "opponent_weight": 285,
       "opponent_rank": 28,
       "weight_class": "285",
@@ -496,7 +496,7 @@
       "score": "3-2",
       "duration": "7:00",
       "event": "Reno Tournament of Champions",
-      "mv_impact": 3.5
+      "mv_impact": 3.42
     },
     {
       "date": "2012-11-24",
@@ -504,16 +504,16 @@
       "opponent_career_id": null,
       "opponent_name": "Dominque Bradley",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 6,
+      "opponent_team_rank": 8,
       "opponent_weight": 285,
-      "opponent_rank": 2,
+      "opponent_rank": 3,
       "weight_class": "285",
       "result": "L",
       "method": "TB-1",
       "score": "2-1",
       "duration": "10:00",
       "event": "vs. Stanford",
-      "mv_impact": -0.36
+      "mv_impact": -0.44
     },
     {
       "date": "2012-11-24",
@@ -523,14 +523,14 @@
       "opponent_team": "South Dakota State",
       "opponent_team_rank": 77,
       "opponent_weight": 285,
-      "opponent_rank": 199,
+      "opponent_rank": 178,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "9-4",
       "duration": "7:00",
       "event": "vs. Stanford",
-      "mv_impact": -0.42
+      "mv_impact": -0.03
     },
     {
       "date": "2012-11-18",
@@ -538,16 +538,16 @@
       "opponent_career_id": null,
       "opponent_name": "Justin Dozier",
       "opponent_team": "Michigan",
-      "opponent_team_rank": 33,
+      "opponent_team_rank": 28,
       "opponent_weight": 285,
-      "opponent_rank": 76,
+      "opponent_rank": 58,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "3-2",
       "duration": "7:00",
       "event": "vs. Stanford",
-      "mv_impact": 2.66
+      "mv_impact": 3.09
     },
     {
       "date": "2012-11-10",
@@ -555,16 +555,16 @@
       "opponent_career_id": null,
       "opponent_name": "Atticus Disney",
       "opponent_team": "Cal Poly",
-      "opponent_team_rank": 64,
+      "opponent_team_rank": 66,
       "opponent_weight": 285,
-      "opponent_rank": 75,
+      "opponent_rank": 82,
       "weight_class": "285",
       "result": "W",
       "method": "TB-2",
       "score": "2-1",
       "duration": "10:00",
       "event": "Roadrunner Open",
-      "mv_impact": 2.58
+      "mv_impact": 2.53
     },
     {
       "date": "2012-11-09",
@@ -572,19 +572,19 @@
       "opponent_career_id": null,
       "opponent_name": "Michael McMullan",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 15,
+      "opponent_team_rank": 10,
       "opponent_weight": 285,
-      "opponent_rank": 5,
+      "opponent_rank": 2,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "6-3",
       "duration": "7:00",
       "event": "vs. Stanford",
-      "mv_impact": -0.61
+      "mv_impact": -0.48
     }
   ],
-  "profile_generated_at": "2026-09-06",
+  "profile_generated_at": "2026-09-09",
   "season_summary": [
     {
       "season": 2014,
@@ -593,7 +593,7 @@
       "team_slug": "stanford",
       "weight_class": 197,
       "grade": "Senior",
-      "current_rank": 16,
+      "current_rank": 21,
       "record": "17-6"
     },
     {
@@ -603,7 +603,7 @@
       "team_slug": "stanford",
       "weight_class": 285,
       "grade": "Junior",
-      "current_rank": 29,
+      "current_rank": 26,
       "record": "16-15"
     },
     {
@@ -613,7 +613,7 @@
       "team_slug": "stanford",
       "weight_class": 285,
       "grade": "Sophomore",
-      "current_rank": 44,
+      "current_rank": 50,
       "record": "4-5"
     }
   ]

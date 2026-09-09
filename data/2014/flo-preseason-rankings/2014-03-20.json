@@ -3,7 +3,7 @@
   "rankings_url": null,
   "ranking_date": "2014-03-20",
   "season": 2014,
-  "note": "Substitute for paywalled FloWrestling rankings: top 8 = actual tournament placement order (not seed), 9+ = remaining wrestlers by committee seed.",
+  "note": "Substitute for paywalled FloWrestling rankings, pre-2019 mode (only seeds 1-16 are real committee judgment before 2019): top 8 = actual tournament placement order, 9-12 = the 4 blood-round losers, 13-33 = remaining qualifiers -- both of those tiers sorted real-seed-first (<=16, by seed) then unseeded-by-Elo. See docs/matsavant.md's NCAA Ranking Methodology.",
   "weights": {
     "125": [
       {
@@ -48,53 +48,53 @@
       },
       {
         "rank": 9,
-        "name": "Josh Martinez",
-        "school": "Air Force"
-      },
-      {
-        "rank": 10,
         "name": "Jarrod Patterson",
         "school": "Oklahoma"
       },
       {
-        "rank": 11,
-        "name": "Bradley Taylor",
-        "school": "Wisconsin"
-      },
-      {
-        "rank": 12,
-        "name": "Tyler Cox",
-        "school": "Wyoming"
-      },
-      {
-        "rank": 13,
+        "rank": 10,
         "name": "David Terao",
         "school": "American"
       },
       {
-        "rank": 14,
-        "name": "Robert Deutsch",
-        "school": "Rider"
-      },
-      {
-        "rank": 15,
-        "name": "Tim Lambert",
-        "school": "Nebraska"
-      },
-      {
-        "rank": 16,
-        "name": "Evan Silver",
-        "school": "Stanford"
-      },
-      {
-        "rank": 17,
+        "rank": 11,
         "name": "Edward Klimara",
         "school": "Oklahoma St."
       },
       {
-        "rank": 18,
+        "rank": 12,
         "name": "Anthony Zanetta",
         "school": "Pittsburgh"
+      },
+      {
+        "rank": 13,
+        "name": "Josh Martinez",
+        "school": "Air Force"
+      },
+      {
+        "rank": 14,
+        "name": "Bradley Taylor",
+        "school": "Wisconsin"
+      },
+      {
+        "rank": 15,
+        "name": "Tyler Cox",
+        "school": "Wyoming"
+      },
+      {
+        "rank": 16,
+        "name": "Robert Deutsch",
+        "school": "Rider"
+      },
+      {
+        "rank": 17,
+        "name": "Tim Lambert",
+        "school": "Nebraska"
+      },
+      {
+        "rank": 18,
+        "name": "Evan Silver",
+        "school": "Stanford"
       },
       {
         "rank": 19,
@@ -103,68 +103,68 @@
       },
       {
         "rank": 20,
-        "name": "Conor Youtsey",
-        "school": "Michigan"
-      },
-      {
-        "rank": 21,
-        "name": "Dominic Parisi",
-        "school": "Appalachian St."
-      },
-      {
-        "rank": 22,
-        "name": "David White",
-        "school": "Binghamton"
-      },
-      {
-        "rank": 23,
-        "name": "Cory Stainbrook",
-        "school": "West Virginia"
-      },
-      {
-        "rank": 24,
-        "name": "Corey Keener",
-        "school": "Central Mich."
-      },
-      {
-        "rank": 25,
-        "name": "Caleb Richardson",
-        "school": "Penn"
-      },
-      {
-        "rank": 26,
-        "name": "Kory Mines",
-        "school": "Edinboro"
-      },
-      {
-        "rank": 27,
-        "name": "Jared Germaine",
-        "school": "Eastern Mich."
-      },
-      {
-        "rank": 28,
-        "name": "Nick Herrmann",
-        "school": "Virginia"
-      },
-      {
-        "rank": 29,
-        "name": "Nick Roberts",
-        "school": "Ohio St."
-      },
-      {
-        "rank": 30,
         "name": "Nathan Kraisser",
         "school": "North Carolina"
       },
       {
-        "rank": 31,
+        "rank": 21,
+        "name": "Jared Germaine",
+        "school": "Eastern Mich."
+      },
+      {
+        "rank": 22,
+        "name": "Conor Youtsey",
+        "school": "Michigan"
+      },
+      {
+        "rank": 23,
         "name": "Jamie Franco",
         "school": "Hofstra"
       },
       {
-        "rank": 32,
+        "rank": 24,
+        "name": "Kory Mines",
+        "school": "Edinboro"
+      },
+      {
+        "rank": 25,
+        "name": "Nick Roberts",
+        "school": "Ohio St."
+      },
+      {
+        "rank": 26,
+        "name": "David White",
+        "school": "Binghamton"
+      },
+      {
+        "rank": 27,
+        "name": "Dominic Parisi",
+        "school": "Appalachian St."
+      },
+      {
+        "rank": 28,
         "name": "Jade Rauser",
         "school": "Utah Valley"
+      },
+      {
+        "rank": 29,
+        "name": "Nick Herrmann",
+        "school": "Virginia"
+      },
+      {
+        "rank": 30,
+        "name": "Caleb Richardson",
+        "school": "Penn"
+      },
+      {
+        "rank": 31,
+        "name": "Cory Stainbrook",
+        "school": "West Virginia"
+      },
+      {
+        "rank": 32,
+        "name": "Corey Keener",
+        "school": "Central Mich."
       }
     ],
     "133": [
@@ -210,93 +210,93 @@
       },
       {
         "rank": 9,
-        "name": "Jonathon Morrison",
-        "school": "Oklahoma St."
-      },
-      {
-        "rank": 10,
         "name": "Cashé Quiroga",
         "school": "Purdue"
       },
       {
-        "rank": 11,
-        "name": "Johnni DiJulius",
-        "school": "Ohio St."
-      },
-      {
-        "rank": 12,
-        "name": "Nick Soto",
-        "school": "Chattanooga"
-      },
-      {
-        "rank": 13,
+        "rank": 10,
         "name": "Ryan Mango",
         "school": "Stanford"
       },
       {
-        "rank": 14,
-        "name": "Zane Richards",
-        "school": "Illinois"
-      },
-      {
-        "rank": 15,
+        "rank": 11,
         "name": "Mark Grey",
         "school": "Cornell"
       },
       {
-        "rank": 16,
-        "name": "Mackenzie McGuire",
-        "school": "Kent St."
-      },
-      {
-        "rank": 17,
-        "name": "Matt Manley",
-        "school": "Missouri"
-      },
-      {
-        "rank": 18,
+        "rank": 12,
         "name": "Rosario Bruno",
         "school": "Michigan"
       },
       {
+        "rank": 13,
+        "name": "Jonathon Morrison",
+        "school": "Oklahoma St."
+      },
+      {
+        "rank": 14,
+        "name": "Johnni DiJulius",
+        "school": "Ohio St."
+      },
+      {
+        "rank": 15,
+        "name": "Nick Soto",
+        "school": "Chattanooga"
+      },
+      {
+        "rank": 16,
+        "name": "Zane Richards",
+        "school": "Illinois"
+      },
+      {
+        "rank": 17,
+        "name": "Mackenzie McGuire",
+        "school": "Kent St."
+      },
+      {
+        "rank": 18,
+        "name": "James Gulibon",
+        "school": "Penn St."
+      },
+      {
         "rank": 19,
+        "name": "Shelton Mack",
+        "school": "Pittsburgh"
+      },
+      {
+        "rank": 20,
+        "name": "Matt Manley",
+        "school": "Missouri"
+      },
+      {
+        "rank": 21,
+        "name": "Dennis Gustafson",
+        "school": "Virginia Tech"
+      },
+      {
+        "rank": 22,
         "name": "Nick Wilcox",
         "school": "Bloomsburg"
       },
       {
-        "rank": 20,
+        "rank": 23,
         "name": "Vincent Pizzuto",
         "school": "Eastern Mich."
       },
       {
-        "rank": 21,
-        "name": "Kevin Devoy",
-        "school": "Drexel"
-      },
-      {
-        "rank": 22,
+        "rank": 24,
         "name": "Chuck Zeisloft",
         "school": "Rider"
       },
       {
-        "rank": 23,
+        "rank": 25,
         "name": "Joey Palmer",
         "school": "Oregon St."
       },
       {
-        "rank": 24,
-        "name": "Tyler Goodwin",
-        "school": "Maryland"
-      },
-      {
-        "rank": 25,
-        "name": "Nick Smith",
-        "school": "Northern Ill."
-      },
-      {
         "rank": 26,
-        "name": "Dennis Gustafson",
-        "school": "Virginia Tech"
+        "name": "Colton Rasche",
+        "school": "Navy"
       },
       {
         "rank": 27,
@@ -305,28 +305,28 @@
       },
       {
         "rank": 28,
+        "name": "Tyler Goodwin",
+        "school": "Maryland"
+      },
+      {
+        "rank": 29,
+        "name": "Vincent Dellefave",
+        "school": "Rutgers"
+      },
+      {
+        "rank": 30,
         "name": "Dominick Malone",
         "school": "Northwestern"
       },
       {
-        "rank": 29,
-        "name": "James Gulibon",
-        "school": "Penn St."
-      },
-      {
-        "rank": 30,
-        "name": "Shelton Mack",
-        "school": "Pittsburgh"
-      },
-      {
         "rank": 31,
-        "name": "Colton Rasche",
-        "school": "Navy"
+        "name": "Kevin Devoy",
+        "school": "Drexel"
       },
       {
         "rank": 32,
-        "name": "Vincent Dellefave",
-        "school": "Rutgers"
+        "name": "Nick Smith",
+        "school": "Northern Ill."
       }
     ],
     "141": [
@@ -372,38 +372,38 @@
       },
       {
         "rank": 9,
-        "name": "Chris Mecate",
-        "school": "Old Dominion"
-      },
-      {
-        "rank": 10,
         "name": "Christopher Dardanes",
         "school": "Minnesota"
       },
       {
-        "rank": 11,
-        "name": "Zach Horan",
-        "school": "Central Mich."
-      },
-      {
-        "rank": 12,
+        "rank": 10,
         "name": "Luke Vaith",
         "school": "Hofstra"
       },
       {
-        "rank": 13,
+        "rank": 11,
         "name": "Todd Preston",
         "school": "Harvard"
       },
       {
+        "rank": 12,
+        "name": "Anthony Collica",
+        "school": "Oklahoma St."
+      },
+      {
+        "rank": 13,
+        "name": "Chris Mecate",
+        "school": "Old Dominion"
+      },
+      {
         "rank": 14,
-        "name": "Edgar Bright",
-        "school": "Pittsburgh"
+        "name": "Zach Horan",
+        "school": "Central Mich."
       },
       {
         "rank": 15,
-        "name": "Anthony Collica",
-        "school": "Oklahoma St."
+        "name": "Edgar Bright",
+        "school": "Pittsburgh"
       },
       {
         "rank": 16,
@@ -412,23 +412,23 @@
       },
       {
         "rank": 17,
-        "name": "Laike Gardner",
-        "school": "Lehigh"
+        "name": "Josh Dziewa",
+        "school": "Iowa"
       },
       {
         "rank": 18,
-        "name": "Avery Garner",
-        "school": "Utah Valley"
+        "name": "Daniel Neff",
+        "school": "Lock Haven"
       },
       {
         "rank": 19,
-        "name": "Tyler Scotton",
-        "school": "Boston U."
+        "name": "Sam Speno",
+        "school": "North Carolina St."
       },
       {
         "rank": 20,
-        "name": "Josh Dziewa",
-        "school": "Iowa"
+        "name": "Laike Gardner",
+        "school": "Lehigh"
       },
       {
         "rank": 21,
@@ -437,53 +437,53 @@
       },
       {
         "rank": 22,
-        "name": "Sam Speno",
-        "school": "North Carolina St."
+        "name": "Lavion Mayes",
+        "school": "Missouri"
       },
       {
         "rank": 23,
-        "name": "Daniel Neff",
-        "school": "Lock Haven"
-      },
-      {
-        "rank": 24,
-        "name": "Colin Johnston",
-        "school": "West Virginia"
-      },
-      {
-        "rank": 25,
-        "name": "Steven Rodrigues",
-        "school": "Illinois"
-      },
-      {
-        "rank": 26,
-        "name": "Michael Nevinger",
-        "school": "Cornell"
-      },
-      {
-        "rank": 27,
-        "name": "Danny Sabatello",
-        "school": "Purdue"
-      },
-      {
-        "rank": 28,
-        "name": "Joey Delgado",
-        "school": "Oregon St."
-      },
-      {
-        "rank": 29,
-        "name": "Nick Flannery",
-        "school": "Buffalo"
-      },
-      {
-        "rank": 30,
         "name": "Undrakhbayar Khishignyam",
         "school": "Citadel"
       },
       {
+        "rank": 24,
+        "name": "Michael Nevinger",
+        "school": "Cornell"
+      },
+      {
+        "rank": 25,
+        "name": "Colin Johnston",
+        "school": "West Virginia"
+      },
+      {
+        "rank": 26,
+        "name": "Danny Sabatello",
+        "school": "Purdue"
+      },
+      {
+        "rank": 27,
+        "name": "Steven Rodrigues",
+        "school": "Illinois"
+      },
+      {
+        "rank": 28,
+        "name": "Tyler Scotton",
+        "school": "Boston U."
+      },
+      {
+        "rank": 29,
+        "name": "Avery Garner",
+        "school": "Utah Valley"
+      },
+      {
+        "rank": 30,
+        "name": "Nick Flannery",
+        "school": "Buffalo"
+      },
+      {
         "rank": 31,
-        "name": "Lavion Mayes",
-        "school": "Missouri"
+        "name": "Joey Delgado",
+        "school": "Oregon St."
       },
       {
         "rank": 32,
@@ -534,123 +534,123 @@
       },
       {
         "rank": 9,
-        "name": "Nick Dardanes",
-        "school": "Minnesota"
-      },
-      {
-        "rank": 10,
         "name": "Christopher Villalonga",
         "school": "Cornell"
       },
       {
-        "rank": 11,
-        "name": "Jake Sueflohn",
-        "school": "Nebraska"
-      },
-      {
-        "rank": 12,
-        "name": "Augustus Sako",
-        "school": "Virginia"
-      },
-      {
-        "rank": 13,
+        "rank": 10,
         "name": "Zach Neibert",
         "school": "Virginia Tech"
       },
       {
-        "rank": 14,
-        "name": "Dylan Cottrell",
-        "school": "Appalachian St."
-      },
-      {
-        "rank": 15,
-        "name": "Brody Grothus",
-        "school": "Iowa"
-      },
-      {
-        "rank": 16,
+        "rank": 11,
         "name": "Scott Sakaguchi",
         "school": "Oregon St."
       },
       {
-        "rank": 17,
-        "name": "Alexander Richardson",
-        "school": "Old Dominion"
-      },
-      {
-        "rank": 18,
+        "rank": 12,
         "name": "Justin Arthur",
         "school": "Clarion"
       },
       {
+        "rank": 13,
+        "name": "Nick Dardanes",
+        "school": "Minnesota"
+      },
+      {
+        "rank": 14,
+        "name": "Jake Sueflohn",
+        "school": "Nebraska"
+      },
+      {
+        "rank": 15,
+        "name": "Augustus Sako",
+        "school": "Virginia"
+      },
+      {
+        "rank": 16,
+        "name": "Dylan Cottrell",
+        "school": "Appalachian St."
+      },
+      {
+        "rank": 17,
+        "name": "Brody Grothus",
+        "school": "Iowa"
+      },
+      {
+        "rank": 18,
+        "name": "Alexander Richardson",
+        "school": "Old Dominion"
+      },
+      {
         "rank": 19,
-        "name": "Kevin Birmingham",
-        "school": "Davidson"
-      },
-      {
-        "rank": 20,
-        "name": "Rylan Lubeck",
-        "school": "Wisconsin"
-      },
-      {
-        "rank": 21,
-        "name": "Mike Morales",
-        "school": "West Virginia"
-      },
-      {
-        "rank": 22,
-        "name": "Ian Paddock",
-        "school": "Ohio St."
-      },
-      {
-        "rank": 23,
-        "name": "Ken Theobold",
-        "school": "Rutgers"
-      },
-      {
-        "rank": 24,
-        "name": "Michael Depalma",
-        "school": "Kent St."
-      },
-      {
-        "rank": 25,
-        "name": "Macaulay Maldarelli",
-        "school": "Lock Haven"
-      },
-      {
-        "rank": 26,
-        "name": "Robert Jillard",
-        "school": "Northern Ill."
-      },
-      {
-        "rank": 27,
-        "name": "Christian Barber",
-        "school": "North Carolina"
-      },
-      {
-        "rank": 28,
         "name": "Bryce Busler",
         "school": "Bloomsburg"
       },
       {
-        "rank": 29,
-        "name": "Tywan Claxton",
-        "school": "Ohio"
+        "rank": 20,
+        "name": "Christian Barber",
+        "school": "North Carolina"
       },
       {
-        "rank": 30,
-        "name": "Mike Racciato",
-        "school": "Pittsburgh"
-      },
-      {
-        "rank": 31,
+        "rank": 21,
         "name": "Matthew Frisch",
         "school": "Citadel"
       },
       {
-        "rank": 32,
+        "rank": 22,
+        "name": "Mike Morales",
+        "school": "West Virginia"
+      },
+      {
+        "rank": 23,
+        "name": "Mike Racciato",
+        "school": "Pittsburgh"
+      },
+      {
+        "rank": 24,
+        "name": "Kevin Birmingham",
+        "school": "Davidson"
+      },
+      {
+        "rank": 25,
+        "name": "Ian Paddock",
+        "school": "Ohio St."
+      },
+      {
+        "rank": 26,
+        "name": "Tywan Claxton",
+        "school": "Ohio"
+      },
+      {
+        "rank": 27,
+        "name": "Michael Depalma",
+        "school": "Kent St."
+      },
+      {
+        "rank": 28,
+        "name": "Ken Theobold",
+        "school": "Rutgers"
+      },
+      {
+        "rank": 29,
+        "name": "Rylan Lubeck",
+        "school": "Wisconsin"
+      },
+      {
+        "rank": 30,
+        "name": "Macaulay Maldarelli",
+        "school": "Lock Haven"
+      },
+      {
+        "rank": 31,
         "name": "Alex Kocer",
         "school": "South Dakota St."
+      },
+      {
+        "rank": 32,
+        "name": "Robert Jillard",
+        "school": "Northern Ill."
       }
     ],
     "157": [
@@ -701,113 +701,113 @@
       },
       {
         "rank": 10,
-        "name": "Roger Pena",
-        "school": "Oregon St."
-      },
-      {
-        "rank": 11,
-        "name": "Blaise Butler",
-        "school": "Virginia"
-      },
-      {
-        "rank": 12,
-        "name": "Taylor Walsh",
-        "school": "Indiana"
-      },
-      {
-        "rank": 13,
         "name": "Luke Smith",
         "school": "Central Mich."
       },
       {
-        "rank": 14,
-        "name": "Dylan Alton",
-        "school": "Penn St."
-      },
-      {
-        "rank": 15,
+        "rank": 11,
         "name": "Joseph LaVallee",
         "school": "Missouri"
       },
       {
-        "rank": 16,
-        "name": "Cody Pack",
-        "school": "South Dakota St."
-      },
-      {
-        "rank": 17,
-        "name": "Zach Brunson",
-        "school": "Illinois"
-      },
-      {
-        "rank": 18,
+        "rank": 12,
         "name": "Thomas Gantt",
         "school": "North Carolina St."
       },
       {
+        "rank": 13,
+        "name": "Roger Pena",
+        "school": "Oregon St."
+      },
+      {
+        "rank": 14,
+        "name": "Blaise Butler",
+        "school": "Virginia"
+      },
+      {
+        "rank": 15,
+        "name": "Taylor Walsh",
+        "school": "Indiana"
+      },
+      {
+        "rank": 16,
+        "name": "Dylan Alton",
+        "school": "Penn St."
+      },
+      {
+        "rank": 17,
+        "name": "Cody Pack",
+        "school": "South Dakota St."
+      },
+      {
+        "rank": 18,
+        "name": "Zach Brunson",
+        "school": "Illinois"
+      },
+      {
         "rank": 19,
-        "name": "Aaron Walker",
-        "school": "Citadel"
-      },
-      {
-        "rank": 20,
-        "name": "Immanuel Kerr-Brown",
-        "school": "Duke"
-      },
-      {
-        "rank": 21,
         "name": "Justin DeAngelis",
         "school": "Oklahoma"
       },
       {
-        "rank": 22,
-        "name": "Tristan Warner",
-        "school": "Old Dominion"
+        "rank": 20,
+        "name": "Aaron Walker",
+        "school": "Citadel"
       },
       {
-        "rank": 23,
-        "name": "Alex Hudson",
-        "school": "Chattanooga"
-      },
-      {
-        "rank": 24,
-        "name": "Spartak Chino",
-        "school": "Ohio"
-      },
-      {
-        "rank": 25,
-        "name": "Markus Scheidel",
-        "school": "Columbia"
-      },
-      {
-        "rank": 26,
-        "name": "Brandon Zeerip",
-        "school": "Eastern Mich."
-      },
-      {
-        "rank": 27,
+        "rank": 21,
         "name": "Austin Matthews",
         "school": "Clarion"
       },
       {
-        "rank": 28,
-        "name": "Paul Hancock",
-        "school": "Army"
+        "rank": 22,
+        "name": "Markus Scheidel",
+        "school": "Columbia"
       },
       {
-        "rank": 29,
+        "rank": 23,
         "name": "Johnny Greisheimer",
         "school": "Edinboro"
       },
       {
-        "rank": 30,
+        "rank": 24,
+        "name": "Paul Hancock",
+        "school": "Army"
+      },
+      {
+        "rank": 25,
+        "name": "Immanuel Kerr-Brown",
+        "school": "Duke"
+      },
+      {
+        "rank": 26,
+        "name": "Tristan Warner",
+        "school": "Old Dominion"
+      },
+      {
+        "rank": 27,
+        "name": "Alex Hudson",
+        "school": "Chattanooga"
+      },
+      {
+        "rank": 28,
+        "name": "Joseph Napoli",
+        "school": "Lehigh"
+      },
+      {
+        "rank": 29,
         "name": "Austin Sommer",
         "school": "Drexel"
       },
       {
+        "rank": 30,
+        "name": "Brandon Zeerip",
+        "school": "Eastern Mich."
+      },
+      {
         "rank": 31,
-        "name": "Joseph Napoli",
-        "school": "Lehigh"
+        "name": "Spartak Chino",
+        "school": "Ohio"
       },
       {
         "rank": 32,
@@ -858,103 +858,103 @@
       },
       {
         "rank": 9,
-        "name": "Nick Moore",
-        "school": "Iowa"
-      },
-      {
-        "rank": 10,
-        "name": "Corey Mock",
-        "school": "Chattanooga"
-      },
-      {
-        "rank": 11,
         "name": "Joseph Booth",
         "school": "Hofstra"
       },
       {
-        "rank": 12,
-        "name": "Cooper Moore",
-        "school": "UNI"
-      },
-      {
-        "rank": 13,
-        "name": "Jackson Morse",
-        "school": "Illinois"
-      },
-      {
-        "rank": 14,
-        "name": "Daniel Yates",
-        "school": "Michigan"
-      },
-      {
-        "rank": 15,
+        "rank": 10,
         "name": "Dylan Palacio",
         "school": "Cornell"
       },
       {
-        "rank": 16,
-        "name": "Jim Wilson",
-        "school": "Stanford"
+        "rank": 11,
+        "name": "Josh Veltre",
+        "school": "Bloomsburg"
       },
       {
-        "rank": 17,
-        "name": "Josh Houldsworth",
-        "school": "Columbia"
-      },
-      {
-        "rank": 18,
-        "name": "Austin Trott",
-        "school": "Gardner-Webb"
-      },
-      {
-        "rank": 19,
-        "name": "Harrison Hightower",
-        "school": "Ohio"
-      },
-      {
-        "rank": 20,
-        "name": "John Staudenmayer",
-        "school": "North Carolina"
-      },
-      {
-        "rank": 21,
+        "rank": 12,
         "name": "Ryan Leblanc",
         "school": "Indiana"
       },
       {
-        "rank": 22,
-        "name": "Dakota Friesth",
-        "school": "Wyoming"
+        "rank": 13,
+        "name": "Nick Moore",
+        "school": "Iowa"
       },
       {
-        "rank": 23,
-        "name": "Austin Wilson",
-        "school": "Nebraska"
+        "rank": 14,
+        "name": "Corey Mock",
+        "school": "Chattanooga"
       },
       {
-        "rank": 24,
-        "name": "Jacob Kemerer",
-        "school": "Lock Haven"
+        "rank": 15,
+        "name": "Cooper Moore",
+        "school": "UNI"
       },
       {
-        "rank": 25,
-        "name": "Ramon Santiago",
-        "school": "Rider"
+        "rank": 16,
+        "name": "Jackson Morse",
+        "school": "Illinois"
       },
       {
-        "rank": 26,
+        "rank": 17,
+        "name": "Daniel Yates",
+        "school": "Michigan"
+      },
+      {
+        "rank": 18,
+        "name": "Jim Wilson",
+        "school": "Stanford"
+      },
+      {
+        "rank": 19,
         "name": "Zach Toal",
         "school": "Missouri"
       },
       {
-        "rank": 27,
+        "rank": 20,
+        "name": "Dakota Friesth",
+        "school": "Wyoming"
+      },
+      {
+        "rank": 21,
+        "name": "Austin Trott",
+        "school": "Gardner-Webb"
+      },
+      {
+        "rank": 22,
+        "name": "Harrison Hightower",
+        "school": "Ohio"
+      },
+      {
+        "rank": 23,
+        "name": "Josh Houldsworth",
+        "school": "Columbia"
+      },
+      {
+        "rank": 24,
+        "name": "Ramon Santiago",
+        "school": "Rider"
+      },
+      {
+        "rank": 25,
+        "name": "Austin Wilson",
+        "school": "Nebraska"
+      },
+      {
+        "rank": 26,
         "name": "Peyton Walsh",
         "school": "Navy"
       },
       {
+        "rank": 27,
+        "name": "Chris Moon",
+        "school": "Virginia Tech"
+      },
+      {
         "rank": 28,
-        "name": "Josh Veltre",
-        "school": "Bloomsburg"
+        "name": "John Staudenmayer",
+        "school": "North Carolina"
       },
       {
         "rank": 29,
@@ -963,18 +963,18 @@
       },
       {
         "rank": 30,
-        "name": "Chris Moon",
-        "school": "Virginia Tech"
+        "name": "Joseph Brewster",
+        "school": "South Dakota St."
       },
       {
         "rank": 31,
-        "name": "Curtis Cook",
-        "school": "Utah Valley"
+        "name": "Jacob Kemerer",
+        "school": "Lock Haven"
       },
       {
         "rank": 32,
-        "name": "Joseph Brewster",
-        "school": "South Dakota St."
+        "name": "Curtis Cook",
+        "school": "Utah Valley"
       }
     ],
     "174": [
@@ -1020,123 +1020,123 @@
       },
       {
         "rank": 9,
-        "name": "Cody Walters",
-        "school": "Ohio"
-      },
-      {
-        "rank": 10,
         "name": "Elliot Riddick",
         "school": "Lehigh"
       },
       {
-        "rank": 11,
-        "name": "Mike Ottinger",
-        "school": "Central Mich."
-      },
-      {
-        "rank": 12,
-        "name": "Stephen Doty",
-        "school": "Virginia"
-      },
-      {
-        "rank": 13,
+        "rank": 10,
         "name": "Tanner Weatherman",
         "school": "Iowa St."
       },
       {
-        "rank": 14,
-        "name": "Hayden Zillmer",
-        "school": "North Dakota St."
-      },
-      {
-        "rank": 15,
-        "name": "Mark Martin",
-        "school": "Ohio St."
-      },
-      {
-        "rank": 16,
-        "name": "Billy Curling",
-        "school": "Old Dominion"
-      },
-      {
-        "rank": 17,
+        "rank": 11,
         "name": "Mathew Miller",
         "school": "Navy"
       },
       {
-        "rank": 18,
+        "rank": 12,
         "name": "Tony Dallago",
         "school": "Illinois"
       },
       {
+        "rank": 13,
+        "name": "Cody Walters",
+        "school": "Ohio"
+      },
+      {
+        "rank": 14,
+        "name": "Mike Ottinger",
+        "school": "Central Mich."
+      },
+      {
+        "rank": 15,
+        "name": "Stephen Doty",
+        "school": "Virginia"
+      },
+      {
+        "rank": 16,
+        "name": "Hayden Zillmer",
+        "school": "North Dakota St."
+      },
+      {
+        "rank": 17,
+        "name": "Mark Martin",
+        "school": "Ohio St."
+      },
+      {
+        "rank": 18,
+        "name": "Billy Curling",
+        "school": "Old Dominion"
+      },
+      {
         "rank": 19,
-        "name": "Shane Hughes",
-        "school": "Columbia"
-      },
-      {
-        "rank": 20,
-        "name": "Conor Brennan",
-        "school": "Rider"
-      },
-      {
-        "rank": 21,
         "name": "Mike Dessino",
         "school": "Bloomsburg"
       },
       {
-        "rank": 22,
-        "name": "Levi Clemons",
-        "school": "Chattanooga"
-      },
-      {
-        "rank": 23,
-        "name": "Austin Gabel",
-        "school": "Virginia Tech"
-      },
-      {
-        "rank": 24,
+        "rank": 20,
         "name": "Joe Latham",
         "school": "Oregon St."
       },
       {
-        "rank": 25,
+        "rank": 21,
         "name": "Pete Renda",
         "school": "North Carolina St."
       },
       {
-        "rank": 26,
+        "rank": 22,
+        "name": "Austin Gabel",
+        "school": "Virginia Tech"
+      },
+      {
+        "rank": 23,
+        "name": "Shane Hughes",
+        "school": "Columbia"
+      },
+      {
+        "rank": 24,
         "name": "Cody Caldwell",
         "school": "UNI"
       },
       {
-        "rank": 27,
-        "name": "Bradley Wukie",
-        "school": "Penn"
-      },
-      {
-        "rank": 28,
+        "rank": 25,
         "name": "Caleb Marsh",
         "school": "Kent St."
       },
       {
-        "rank": 29,
-        "name": "Kyle Meyer",
-        "school": "Stanford"
-      },
-      {
-        "rank": 30,
+        "rank": 26,
         "name": "Jakob Scheffel",
         "school": "West Virginia"
       },
       {
-        "rank": 31,
+        "rank": 27,
+        "name": "Kyle Meyer",
+        "school": "Stanford"
+      },
+      {
+        "rank": 28,
+        "name": "Scott Liegel",
+        "school": "Wisconsin"
+      },
+      {
+        "rank": 29,
+        "name": "Levi Clemons",
+        "school": "Chattanooga"
+      },
+      {
+        "rank": 30,
         "name": "Mike England",
         "school": "Missouri"
       },
       {
+        "rank": 31,
+        "name": "Bradley Wukie",
+        "school": "Penn"
+      },
+      {
         "rank": 32,
-        "name": "Scott Liegel",
-        "school": "Wisconsin"
+        "name": "Conor Brennan",
+        "school": "Rider"
       }
     ],
     "184": [
@@ -1187,68 +1187,68 @@
       },
       {
         "rank": 10,
-        "name": "Ethen Lofthouse",
-        "school": "Iowa"
-      },
-      {
-        "rank": 11,
-        "name": "Timothy Dudley",
-        "school": "Nebraska"
-      },
-      {
-        "rank": 12,
-        "name": "Domenic Abounader",
-        "school": "Michigan"
-      },
-      {
-        "rank": 13,
         "name": "Kenny Courts",
         "school": "Ohio St."
       },
       {
-        "rank": 14,
-        "name": "John Rizqallah",
-        "school": "Michigan St."
-      },
-      {
-        "rank": 15,
+        "rank": 11,
         "name": "Ryan Loder",
         "school": "UNI"
       },
       {
+        "rank": 12,
+        "name": "Blake Stauffer",
+        "school": "Arizona St."
+      },
+      {
+        "rank": 13,
+        "name": "Ethen Lofthouse",
+        "school": "Iowa"
+      },
+      {
+        "rank": 14,
+        "name": "Timothy Dudley",
+        "school": "Nebraska"
+      },
+      {
+        "rank": 15,
+        "name": "Domenic Abounader",
+        "school": "Michigan"
+      },
+      {
         "rank": 16,
+        "name": "John Rizqallah",
+        "school": "Michigan St."
+      },
+      {
+        "rank": 17,
         "name": "Nick Vetterlein",
         "school": "Virginia Tech"
       },
       {
-        "rank": 17,
-        "name": "Devin Hightower",
-        "school": "Air Force"
+        "rank": 18,
+        "name": "Lelund Weatherspoon",
+        "school": "Iowa St."
       },
       {
-        "rank": 18,
+        "rank": 19,
+        "name": "Benjamin Stroh",
+        "school": "Wyoming"
+      },
+      {
+        "rank": 20,
         "name": "Lazarus Reyes",
         "school": "Illinois"
       },
       {
-        "rank": 19,
-        "name": "Lucas Sheridan",
-        "school": "Indiana"
-      },
-      {
-        "rank": 20,
-        "name": "Jonathan Fausey",
-        "school": "Virginia"
-      },
-      {
         "rank": 21,
-        "name": "Zack Hernandez",
-        "school": "Columbia"
+        "name": "Nolan Boyd",
+        "school": "Oklahoma St."
       },
       {
         "rank": 22,
-        "name": "Austin Morehead",
-        "school": "Oregon St."
+        "name": "Victor Avery",
+        "school": "Edinboro"
       },
       {
         "rank": 23,
@@ -1257,8 +1257,8 @@
       },
       {
         "rank": 24,
-        "name": "Blake Stauffer",
-        "school": "Arizona St."
+        "name": "Austin Morehead",
+        "school": "Oregon St."
       },
       {
         "rank": 25,
@@ -1267,18 +1267,18 @@
       },
       {
         "rank": 26,
-        "name": "Nolan Boyd",
-        "school": "Oklahoma St."
-      },
-      {
-        "rank": 27,
         "name": "Phillip Joseph",
         "school": "Eastern Mich."
       },
       {
+        "rank": 27,
+        "name": "Jonathan Fausey",
+        "school": "Virginia"
+      },
+      {
         "rank": 28,
-        "name": "Victor Avery",
-        "school": "Edinboro"
+        "name": "Lucas Sheridan",
+        "school": "Indiana"
       },
       {
         "rank": 29,
@@ -1287,18 +1287,18 @@
       },
       {
         "rank": 30,
-        "name": "Lelund Weatherspoon",
-        "school": "Iowa St."
+        "name": "Zack Hernandez",
+        "school": "Columbia"
       },
       {
         "rank": 31,
-        "name": "Jackson Hein",
-        "school": "Wisconsin"
+        "name": "Devin Hightower",
+        "school": "Air Force"
       },
       {
         "rank": 32,
-        "name": "Benjamin Stroh",
-        "school": "Wyoming"
+        "name": "Jackson Hein",
+        "school": "Wisconsin"
       }
     ],
     "197": [
@@ -1344,123 +1344,128 @@
       },
       {
         "rank": 9,
-        "name": "Richard Perry",
-        "school": "Bloomsburg"
-      },
-      {
-        "rank": 10,
-        "name": "Travis Rutt",
-        "school": "Oklahoma"
-      },
-      {
-        "rank": 11,
-        "name": "Phillip Wellington",
-        "school": "Ohio"
-      },
-      {
-        "rank": 12,
         "name": "Christian Boley",
         "school": "Maryland"
       },
       {
-        "rank": 13,
-        "name": "Jace Bennett",
-        "school": "Cornell"
-      },
-      {
-        "rank": 14,
-        "name": "Taylor Meeks",
-        "school": "Oregon St."
-      },
-      {
-        "rank": 15,
-        "name": "Daniel Mitchell",
-        "school": "American"
-      },
-      {
-        "rank": 16,
-        "name": "Braden Atwood",
-        "school": "Purdue"
-      },
-      {
-        "rank": 17,
-        "name": "Alex Polizzi",
-        "school": "Northwestern"
-      },
-      {
-        "rank": 18,
-        "name": "Dan Scherer",
-        "school": "Stanford"
-      },
-      {
-        "rank": 19,
-        "name": "KaRonne Jones",
-        "school": "North Carolina St."
-      },
-      {
-        "rank": 20,
+        "rank": 10,
         "name": "Nick Bonaccorsi",
         "school": "Pittsburgh"
       },
       {
-        "rank": 21,
-        "name": "Timothy McCall",
-        "school": "Wisconsin"
+        "rank": 11,
+        "name": "Mario Gonzalez",
+        "school": null
       },
       {
-        "rank": 22,
-        "name": "Marshall Haas",
-        "school": "Citadel"
-      },
-      {
-        "rank": 23,
-        "name": "Shane Woods",
-        "school": "Wyoming"
-      },
-      {
-        "rank": 24,
+        "rank": 12,
         "name": "Cody Reed",
         "school": "Binghamton"
       },
       {
-        "rank": 25,
-        "name": "James Fox",
-        "school": "Harvard"
+        "rank": 13,
+        "name": "Richard Perry",
+        "school": "Bloomsburg"
       },
       {
-        "rank": 26,
-        "name": "Brandon Palik",
-        "school": "Drexel"
+        "rank": 14,
+        "name": "Travis Rutt",
+        "school": "Oklahoma"
       },
       {
-        "rank": 27,
-        "name": "Bryce Barnes",
-        "school": "Army"
+        "rank": 15,
+        "name": "Phillip Wellington",
+        "school": "Ohio"
       },
       {
-        "rank": 28,
-        "name": "Abram Ayala",
-        "school": "Princeton"
+        "rank": 16,
+        "name": "Jace Bennett",
+        "school": "Cornell"
       },
       {
-        "rank": 29,
+        "rank": 17,
+        "name": "Taylor Meeks",
+        "school": "Oregon St."
+      },
+      {
+        "rank": 18,
+        "name": "Daniel Mitchell",
+        "school": "American"
+      },
+      {
+        "rank": 19,
+        "name": "Braden Atwood",
+        "school": "Purdue"
+      },
+      {
+        "rank": 20,
+        "name": "Alex Polizzi",
+        "school": "Northwestern"
+      },
+      {
+        "rank": 21,
+        "name": "Dan Scherer",
+        "school": "Stanford"
+      },
+      {
+        "rank": 22,
+        "name": "Shane Woods",
+        "school": "Wyoming"
+      },
+      {
+        "rank": 23,
         "name": "Zach Nye",
         "school": "Virginia"
       },
       {
-        "rank": 30,
-        "name": "John Bolich",
-        "school": "Lehigh"
+        "rank": 24,
+        "name": "Abram Ayala",
+        "school": "Princeton"
       },
       {
-        "rank": 31,
+        "rank": 25,
+        "name": "Brandon Palik",
+        "school": "Drexel"
+      },
+      {
+        "rank": 26,
+        "name": "James Fox",
+        "school": "Harvard"
+      },
+      {
+        "rank": 27,
+        "name": "Timothy McCall",
+        "school": "Wisconsin"
+      },
+      {
+        "rank": 28,
         "name": "Blake Rosholt",
         "school": "Oklahoma St."
       },
       {
-        "rank": 32,
+        "rank": 29,
         "name": "Paul Rands",
         "school": "Navy"
+      },
+      {
+        "rank": 30,
+        "name": "Bryce Barnes",
+        "school": "Army"
+      },
+      {
+        "rank": 31,
+        "name": "John Bolich",
+        "school": "Lehigh"
+      },
+      {
+        "rank": 32,
+        "name": "KaRonne Jones",
+        "school": "North Carolina St."
+      },
+      {
+        "rank": 33,
+        "name": "Marshall Haas",
+        "school": "Citadel"
       }
     ],
     "285": [
@@ -1521,33 +1526,33 @@
       },
       {
         "rank": 12,
+        "name": "Nick Tavanello",
+        "school": "Ohio St."
+      },
+      {
+        "rank": 13,
         "name": "Spencer Myers",
         "school": "Maryland"
       },
       {
-        "rank": 13,
+        "rank": 14,
         "name": "Ernest James",
         "school": "Edinboro"
       },
       {
-        "rank": 14,
+        "rank": 15,
         "name": "Jonathan Gingrich",
         "school": "Penn St."
       },
       {
-        "rank": 15,
+        "rank": 16,
         "name": "Adam Fager",
         "school": "Utah Valley"
       },
       {
-        "rank": 16,
+        "rank": 17,
         "name": "Amarveer Dhesi",
         "school": "Oregon St."
-      },
-      {
-        "rank": 17,
-        "name": "Joe Stolfi",
-        "school": "Bucknell"
       },
       {
         "rank": 18,
@@ -1556,73 +1561,73 @@
       },
       {
         "rank": 19,
-        "name": "David Devine",
-        "school": "SIU Edwardsville"
+        "name": "Joe Stolfi",
+        "school": "Bucknell"
       },
       {
         "rank": 20,
-        "name": "Eloheim Palma",
-        "school": "Campbell"
-      },
-      {
-        "rank": 21,
-        "name": "Dawson Peck",
-        "school": "Chattanooga"
-      },
-      {
-        "rank": 22,
-        "name": "Collin Jensen",
-        "school": "Nebraska"
-      },
-      {
-        "rank": 23,
-        "name": "Blake Herrin",
-        "school": "American"
-      },
-      {
-        "rank": 24,
-        "name": "Devin Mellon",
-        "school": "Missouri"
-      },
-      {
-        "rank": 25,
-        "name": "Nick Tavanello",
-        "school": "Ohio St."
-      },
-      {
-        "rank": 26,
-        "name": "Patrick Tasser",
-        "school": "Pittsburgh"
-      },
-      {
-        "rank": 27,
-        "name": "Evan Knutson",
-        "school": "North Dakota St."
-      },
-      {
-        "rank": 28,
-        "name": "Anthony Vizcarrondo",
-        "school": "West Virginia"
-      },
-      {
-        "rank": 29,
-        "name": "Ross Larson",
-        "school": "Oklahoma"
-      },
-      {
-        "rank": 30,
         "name": "Justin Grant",
         "school": "Bloomsburg"
       },
       {
-        "rank": 31,
+        "rank": 21,
+        "name": "Devin Mellon",
+        "school": "Missouri"
+      },
+      {
+        "rank": 22,
+        "name": "David Devine",
+        "school": "SIU Edwardsville"
+      },
+      {
+        "rank": 23,
         "name": "Maximilian Wessell",
         "school": "Lehigh"
       },
       {
-        "rank": 32,
+        "rank": 24,
+        "name": "Patrick Tasser",
+        "school": "Pittsburgh"
+      },
+      {
+        "rank": 25,
+        "name": "Eloheim Palma",
+        "school": "Campbell"
+      },
+      {
+        "rank": 26,
+        "name": "Ross Larson",
+        "school": "Oklahoma"
+      },
+      {
+        "rank": 27,
+        "name": "Collin Jensen",
+        "school": "Nebraska"
+      },
+      {
+        "rank": 28,
         "name": "Blaize Cabell",
         "school": "UNI"
+      },
+      {
+        "rank": 29,
+        "name": "Blake Herrin",
+        "school": "American"
+      },
+      {
+        "rank": 30,
+        "name": "Evan Knutson",
+        "school": "North Dakota St."
+      },
+      {
+        "rank": 31,
+        "name": "Anthony Vizcarrondo",
+        "school": "West Virginia"
+      },
+      {
+        "rank": 32,
+        "name": "Dawson Peck",
+        "school": "Chattanooga"
       }
     ]
   }

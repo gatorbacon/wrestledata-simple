@@ -70,6 +70,112 @@ def flo_seed_elo(rank: int, cutoff: int) -> float:
     return NCAA_FLO_SEED_TOP - t * (NCAA_FLO_SEED_TOP - NCAA_FLO_SEED_BOTTOM)
 
 
+# NCAA only: seed a wrestler's starting Elo from their OWN prior-season
+# ending Elo whenever real prior data exists -- this takes priority over
+# Flo-seeding, since a real season of match results is richer signal than
+# an ordinal Flo rank. Flo-seeding is the fallback for wrestlers with no
+# usable prior season at all (true freshmen, or transfers from a level we
+# don't track).
+#
+# Weight decreases as the gap since that last real season grows -- a
+# 1-year gap (the normal returning-starter case) keeps the most of the
+# earned rating; a 2+ year gap (redshirt/layoff, e.g. a wrestler who
+# competed two seasons ago but sat out last year) trusts it less.
+#
+# Backtested (scripts/rankings/backtest_prior_shrink.py, not checked in --
+# rebuilds a fully self-consistent Elo chain 2012-2026 per candidate config
+# and scores log-loss/Brier/accuracy on each seeded wrestler's first 3-5
+# matches of the season, i.e. exactly the window the seed is meant to help)
+# against every season 2016-2026: counterintuitively, WEIGHTS ABOVE 1.0 win
+# outright, consistently across all three gap tiers and both early-match
+# windows tested, with log-loss bottoming out in a flat 1.15-1.30 band and
+# degrading sharply past ~1.4 (2.0 was tested and is clearly too far --
+# log-loss roughly 40% worse than the tier-1 optimum). A naive <1.0 shrink
+# (the original guess before backtesting) underperforms even a flat
+# INITIAL_ELO baseline in relative terms -- straight carry-over, and
+# slightly beyond, calibrates better than discounting toward the mean.
+# Reasoning: the season's own K-factor is highest (40) for a wrestler's
+# first 5 matches, making their fresh in-season Elo noisier than their own
+# already-converged prior-season rating, so trusting last year at ~1.2x
+# outperforms treating it as a decaying prior.
+PRIOR_SEASON_SHRINK = {1: 1.20, 2: 1.05}
+PRIOR_SEASON_SHRINK_DEFAULT = 0.80  # 3+ seasons back
+PRIOR_SEASON_LOOKBACK_LIMIT = 5     # don't search back further than this
+
+CAREERS_DIR = Path("data/careers/ncaa_men")
+
+_career_seasons_cache: Optional[Dict[str, Dict[str, str]]] = None
+
+
+def build_wid_to_career_seasons() -> Dict[str, Dict[str, str]]:
+    """wrestler_id (any season) -> that career's full {season_str: wrestler_id}
+    dict. Same pattern as build_p4p_rankings.py's build_wid_to_career_index()."""
+    global _career_seasons_cache
+    if _career_seasons_cache is not None:
+        return _career_seasons_cache
+    index: Dict[str, Dict[str, str]] = {}
+    if CAREERS_DIR.exists():
+        for f in CAREERS_DIR.glob("career_*.json"):
+            try:
+                career = json.loads(f.read_text())
+            except Exception:
+                continue
+            seasons = career.get("seasons", {})
+            for wid in seasons.values():
+                index[str(wid)] = seasons
+    _career_seasons_cache = index
+    return index
+
+
+_elo_ratings_by_season_cache: Dict[int, Dict[str, Dict]] = {}
+
+
+def load_elo_ratings_for_season(season: int) -> Dict[str, Dict]:
+    """wrestler_id -> that season's own elo_ratings.json entry, for a PRIOR
+    (already-completed) season. Cached since many wrestlers share lookups
+    into the same prior-season file."""
+    if season in _elo_ratings_by_season_cache:
+        return _elo_ratings_by_season_cache[season]
+    path = Path(f"mt/elo_ratings/ncaa_men/{season}/elo_ratings.json")
+    result: Dict[str, Dict] = {}
+    if path.exists():
+        try:
+            data = json.loads(path.read_text())
+            result = {str(e["wrestler_id"]): e for e in data}
+        except Exception:
+            result = {}
+    _elo_ratings_by_season_cache[season] = result
+    return result
+
+
+def find_last_real_season_elo(
+    wrestler_id: str, season: int, career_index: Dict[str, Dict[str, str]]
+) -> Optional[Tuple[float, int]]:
+    """Walk this wrestler's own career backward from `season - 1` and return
+    (elo_score, season_gap) for the most recent season where they actually
+    competed (has_matches=True) -- not just the immediately preceding
+    season, so a multi-year layoff (redshirt, injury) still finds their
+    real last season instead of treating them as a total unknown."""
+    seasons_map = career_index.get(str(wrestler_id))
+    if not seasons_map:
+        return None
+    for gap in range(1, PRIOR_SEASON_LOOKBACK_LIMIT + 1):
+        prior_season = season - gap
+        prior_wid = seasons_map.get(str(prior_season))
+        if not prior_wid:
+            continue
+        prior_ratings = load_elo_ratings_for_season(prior_season)
+        entry = prior_ratings.get(str(prior_wid))
+        if entry and entry.get("has_matches"):
+            return (entry["elo_score"], gap)
+    return None
+
+
+def seed_from_prior_elo(prior_elo: float, gap: int) -> float:
+    w = PRIOR_SEASON_SHRINK.get(gap, PRIOR_SEASON_SHRINK_DEFAULT)
+    return INITIAL_ELO + w * (prior_elo - INITIAL_ELO)
+
+
 def load_flo_rank_map(season: int, league: str) -> Dict[str, int]:
     """wrestler_id -> Flo rank, for every wrestler apply_flo_rankings.py
     tagged flo_ranked=True. NCAA only -- HS has no FloWrestling data, so
@@ -329,6 +435,80 @@ def load_wrestler_info(season: int, state: str = 'ky', gender: str = 'boys', lea
     return wrestler_info
 
 
+def load_ncaa_matches_and_info(season: int) -> Tuple[List[Dict], Dict[str, Dict]]:
+    """NCAA-only match + wrestler-info source, read from
+    mt/rankings_data/ncaa_men/{season}/relationships_<weight>.json instead of
+    the raw mt/processed_data/ team files.
+
+    Why: the raw team files record every real match from BOTH sides
+    independently (Penn State's file has "Mesenbrink beat Eck," Oklahoma's
+    file separately has "Eck lost to Mesenbrink" -- same match). Naively
+    concatenating all team files and crediting both participants for every
+    entry double-counts ~69% of matches (confirmed: 18,056 of 26,315 raw
+    entries were the same match from both sides), which distorts Elo
+    non-linearly since the second application uses the already-updated
+    rating from the first.
+
+    build_relationships.py already produces a clean, deduped, one-record-
+    per-real-match dataset (`direct_relationships`), scoped to matches
+    between two wrestlers who are both in that weight's tracked D1
+    population -- confirmed 8,291 of 8,292 "missing" matches vs. a naive
+    raw-data dedup are specifically matches against a non-D1 opponent
+    (D2/NAIA/etc.), which is exactly the scope Elo should exclude here (a
+    deliberate decision, not an oversight -- these opponents aren't
+    calibrated against the same population and often appear only once or
+    twice with no other connections). Reusing this file means no new
+    dedup logic is needed and Elo's population exactly matches what the
+    rest of the ranking pipeline already considers "the field."
+    """
+    data_dir = Path("mt/rankings_data/ncaa_men") / str(season)
+    all_matches: List[Dict] = []
+    wrestler_info: Dict[str, Dict] = {}
+    seen_matches: set = set()  # (date, frozenset({w1, w2})) -- guards the rare
+                                # case of a pair appearing in >1 weight file
+
+    for rel_path in sorted(data_dir.glob("relationships_*.json")):
+        try:
+            data = json.loads(rel_path.read_text())
+        except Exception as e:
+            print(f"Warning: Error loading {rel_path}: {e}")
+            continue
+
+        for wid, info in data.get("wrestlers", {}).items():
+            wrestler_info.setdefault(str(wid), {
+                "name": info.get("name", "Unknown"),
+                "team": info.get("team", "Unknown"),
+            })
+
+        for pair_key, rel in data.get("direct_relationships", {}).items():
+            w1 = str(rel.get("wrestler1_id"))
+            w2 = str(rel.get("wrestler2_id"))
+            for m in rel.get("matches", []):
+                dedup_key = (m.get("date"), frozenset({w1, w2}))
+                if dedup_key in seen_matches:
+                    continue
+                seen_matches.add(dedup_key)
+
+                winner_id = str(m.get("winner_id"))
+                is_winner = winner_id == w1
+                w1_info = wrestler_info.get(w1, {})
+                w2_info = wrestler_info.get(w2, {})
+                all_matches.append({
+                    "wrestler_id": w1,
+                    "opponent_id": w2,
+                    "date": m.get("date"),
+                    "is_winner": is_winner,
+                    "wrestler_name": w1_info.get("name", "Unknown"),
+                    "opponent_name": w2_info.get("name", "Unknown"),
+                    "opponent_team": w2_info.get("team", "Unknown"),
+                    "team": w1_info.get("team", "Unknown"),
+                })
+
+    print(f"Loaded {len(all_matches)} deduped D1 matches from relationships_<weight>.json "
+          f"({len(wrestler_info)} tracked wrestlers)")
+    return all_matches, wrestler_info
+
+
 def calculate_elo_ratings(season: int, state: str = 'ky', gender: str = 'boys', league: str = 'hs') -> Dict:
     """
     Calculate Elo ratings for all wrestlers in a season.
@@ -340,18 +520,35 @@ def calculate_elo_ratings(season: int, state: str = 'ky', gender: str = 'boys', 
     print(f"ELO RATING CALCULATION - Season {season} ({league.upper()} {gender.upper()})")
     print(f"{'='*80}\n")
 
-    # Load data
-    all_matches = load_all_matches(season, state, gender, league)
+    # Load data. NCAA uses the deduped, D1-scoped relationships_<weight>.json
+    # dataset instead of raw team files -- see load_ncaa_matches_and_info()'s
+    # docstring for why (raw team files double-count ~69% of matches). HS
+    # keeps today's behavior unchanged; it doesn't have this relationships
+    # dataset built out the same way.
+    if league == 'ncaa':
+        all_matches, wrestler_info = load_ncaa_matches_and_info(season)
+    else:
+        all_matches = load_all_matches(season, state, gender, league)
+        wrestler_info = load_wrestler_info(season, state, gender, league)
     top_60_ids = load_matrix_top_60(season, state, gender, league)
-    wrestler_info = load_wrestler_info(season, state, gender, league)
 
     # NCAA only: seed Flo-ranked wrestlers' starting Elo from their Flo rank
     # instead of the flat INITIAL_ELO everyone gets (see flo_seed_elo above).
     # HS keeps today's behavior unchanged -- flo_rank_map is empty for league='hs'.
     flo_rank_map = load_flo_rank_map(season, league)
     flo_cutoff = get_manual_rank_cutoff(league, gender)
+    career_index = build_wid_to_career_seasons() if league == 'ncaa' else {}
+
+    prior_seed_count = 0
 
     def initial_elo_for(wrestler_id: str) -> float:
+        nonlocal prior_seed_count
+        if league == 'ncaa':
+            prior = find_last_real_season_elo(wrestler_id, season, career_index)
+            if prior is not None:
+                prior_elo, gap = prior
+                prior_seed_count += 1
+                return seed_from_prior_elo(prior_elo, gap)
         flo_rank = flo_rank_map.get(wrestler_id)
         if flo_rank is not None:
             return flo_seed_elo(flo_rank, flo_cutoff)
@@ -359,7 +556,8 @@ def calculate_elo_ratings(season: int, state: str = 'ky', gender: str = 'boys', 
 
     if flo_rank_map:
         print(f"Seeding {len(flo_rank_map)} Flo-ranked wrestlers' starting Elo from rank "
-              f"({NCAA_FLO_SEED_TOP} at #1 down to {NCAA_FLO_SEED_BOTTOM} at #{flo_cutoff})")
+              f"({NCAA_FLO_SEED_TOP} at #1 down to {NCAA_FLO_SEED_BOTTOM} at #{flo_cutoff}) "
+              f"-- overridden below for anyone with real prior-season data")
 
     # Initialize wrestler tracking
     wrestlers: Dict[str, Dict] = defaultdict(lambda: {
@@ -483,7 +681,11 @@ def calculate_elo_ratings(season: int, state: str = 'ky', gender: str = 'boys', 
         else:
             data["last_match_date"] = None
             data["inactive_flag"] = False
-    
+
+    if prior_seed_count:
+        print(f"Seeded {prior_seed_count} wrestlers' starting Elo from their own prior-season "
+              f"rating (weighted per PRIOR_SEASON_SHRINK), taking priority over Flo-seeding")
+
     return wrestlers
 
 
@@ -563,6 +765,77 @@ def load_matrix_ranks_by_weight(season: int, state: str = 'ky', gender: str = 'b
             ranks_by_weight[weight] = {}
     
     return ranks_by_weight
+
+
+def load_flo_ranked_by_weight(season: int) -> Dict[int, Dict[str, bool]]:
+    """NCAA only: {weight -> {wrestler_id -> flo_ranked}} straight from
+    rankings_<weight>.json. `flo_ranked=True` means this specific entry's
+    `rank` field was set by apply_flo_rankings.py (real FloWrestling data,
+    OR the seed+placement substitute for a season with no real Flo data --
+    both are legitimate per docs/matsavant.md's "NCAA Ranking Methodology"
+    section; what's NOT legitimate is a raw matrix-computed rank, which is
+    exactly what flo_ranked=False marks here). This is the ONLY thing that
+    should ever decide whether a wrestler's rank is trusted for NCAA --
+    never a raw `rank <= cutoff` check, which would also catch untagged
+    matrix-only entries that happen to fall inside 1..33 by coincidence."""
+    out: Dict[int, Dict[str, bool]] = {}
+    rankings_dir = Path("mt/rankings_data/ncaa_men") / str(season)
+    for weight in get_weights('ncaa', 'men'):
+        path = rankings_dir / f"rankings_{weight}.json"
+        weight_map: Dict[str, bool] = {}
+        if path.exists():
+            try:
+                data = json.loads(path.read_text())
+                for entry in data.get("rankings", []):
+                    wid = entry.get("wrestler_id")
+                    if wid:
+                        weight_map[str(wid)] = bool(entry.get("flo_ranked"))
+            except Exception:
+                pass
+        out[weight] = weight_map
+    return out
+
+
+def calculate_ncaa_hybrid_ranks_by_weight(
+    ranks_by_weight: Dict[int, Dict[str, int]],
+    flo_ranked_by_weight: Dict[int, Dict[str, bool]],
+    elo_by_id: Dict[str, Dict],
+) -> Dict[int, Dict[str, int]]:
+    """NCAA-specific hybrid rank: trust ONLY entries tagged flo_ranked=True
+    (real Flo data, or the seed+placement substitute for a no-Flo season --
+    see load_flo_ranked_by_weight) for the top tier, using their existing
+    `rank` field as-is (apply_flo_rankings.py already numbers these entries
+    1..N sequentially before anything else, so no renumbering is needed).
+    Everyone else -- untagged, or not in rankings_<weight>.json at all --
+    is ranked purely by Elo, filling N+1, N+2, ... This deliberately does
+    NOT use the generic calculate_hybrid_ranks_by_weight()'s `matrix_rank
+    <= cutoff` check, which would also trust untagged matrix-only entries
+    that happen to fall inside 1..33 by coincidence -- exactly the banned
+    "matrix rank used as a user-facing source" bug documented in
+    docs/matsavant.md."""
+    hybrid_ranks_by_weight: Dict[int, Dict[str, int]] = {}
+    for weight in get_weights('ncaa', 'men'):
+        weight_ranks = ranks_by_weight.get(weight, {})
+        flo_flags = flo_ranked_by_weight.get(weight, {})
+        hybrid_ranks: Dict[str, int] = {}
+
+        trusted = []   # (rank, wrestler_id) -- flo_ranked=True, keep their existing rank
+        untrusted = []  # wrestler_id -- everything else, to be Elo-sorted
+        for wrestler_id, rank in weight_ranks.items():
+            if flo_flags.get(wrestler_id):
+                trusted.append((rank, wrestler_id))
+                hybrid_ranks[wrestler_id] = rank
+            else:
+                untrusted.append(wrestler_id)
+
+        next_rank = (max((r for r, _ in trusted), default=0)) + 1
+        untrusted.sort(key=lambda wid: elo_by_id.get(wid, {}).get("elo_score", 0), reverse=True)
+        for wrestler_id in untrusted:
+            hybrid_ranks[wrestler_id] = next_rank
+            next_rank += 1
+
+        hybrid_ranks_by_weight[weight] = hybrid_ranks
+    return hybrid_ranks_by_weight
 
 
 def calculate_hybrid_ranks_by_weight(
@@ -687,10 +960,19 @@ def build_output_table(wrestlers: Dict, top_60_ids: set, season: int, state: str
             "match_count": match_count
         }
 
-    # Calculate hybrid ranks by weight
-    hybrid_ranks_by_weight = calculate_hybrid_ranks_by_weight(
-        wrestlers, elo_by_id, ranks_by_weight, gender, league
-    )
+    # Calculate hybrid ranks by weight. NCAA uses its own trust-tagged
+    # (flo_ranked) version -- never the generic matrix_rank<=cutoff check,
+    # which would wrongly trust untagged matrix-only entries. HS is
+    # unaffected (unchanged path).
+    if league == 'ncaa':
+        flo_ranked_by_weight = load_flo_ranked_by_weight(season)
+        hybrid_ranks_by_weight = calculate_ncaa_hybrid_ranks_by_weight(
+            ranks_by_weight, flo_ranked_by_weight, elo_by_id
+        )
+    else:
+        hybrid_ranks_by_weight = calculate_hybrid_ranks_by_weight(
+            wrestlers, elo_by_id, ranks_by_weight, gender, league
+        )
     
     # Build output with hybrid_rank (use best hybrid_rank across all weights)
     output = []
@@ -743,7 +1025,14 @@ def build_output_table(wrestlers: Dict, top_60_ids: set, season: int, state: str
     return output
 
 
-def write_rankings_from_elo(output_table: List[Dict], season: int, state: str, gender: str, league: str) -> None:
+def write_rankings_from_elo(
+    output_table: List[Dict],
+    season: int,
+    state: str,
+    gender: str,
+    league: str,
+    output_dir: Optional[Path] = None,
+) -> None:
     """Write/overwrite rankings_<weight>.json per weight class from the just-
     computed Elo ratings -- this is the "hybrid Flo + modified Elo" rank
     compute_all_mat_values.py and the profile pages need. NCAA only (HS still
@@ -756,11 +1045,25 @@ def write_rankings_from_elo(output_table: List[Dict], season: int, state: str, g
     reflects Flo's opinion for those wrestlers via flo_seed_elo()'s starting-
     rating seed above, so no separate overlay is needed here, only carrying
     the tag through so next run's Flo-seeding can still find it.
+
+    Wrestlers with zero matches this season are pulled out of the numbered
+    ranking entirely (rank: null, is_starter always False) instead of being
+    slotted in by a default/seeded Elo they've never actually earned --
+    this is the direct fix for a real bug (e.g. Bellarmine's 197s), where a
+    0-match wrestler's seeded Elo out-ranked a teammate's real, evidenced
+    season. `match_count`/`last_match_date` are also carried through so
+    build_team_profiles.py's starter selection can apply its own games-
+    played / recent-activity checks without re-fetching full profiles.
+
+    `output_dir`: write here instead of the real rankings dir (existing
+    flo_ranked tags are still READ from the real dir either way) -- used
+    for dry-run validation before this touches production data.
     """
     if league != 'ncaa':
         return
 
     data_dir = Path("mt/rankings_data") / league_dir_key(league, gender, state) / str(season)
+    out_dir = output_dir or data_dir
     weights = get_weights(league, gender)
 
     # wrestler_id -> weight_class. Elo itself is computed weight-agnostic
@@ -799,43 +1102,54 @@ def write_rankings_from_elo(output_table: List[Dict], season: int, state: str, g
                 "record": elo_entry["record_string"],
                 "elo_score": elo_entry["elo_score"],
                 "flo_ranked": existing.get("flo_ranked", False),
+                "match_count": elo_entry.get("match_count", 0),
+                "last_match_date": elo_entry.get("last_match_date"),
             })
+
+        has_matches = [e for e in entries if e["match_count"] > 0]
+        no_matches = [e for e in entries if e["match_count"] == 0]
 
         # Sort by Elo score descending -- Flo-ranked wrestlers already got a
         # seeded starting Elo above, so their real match results just refine
         # a rating that already reflects Flo's opinion.
-        entries.sort(key=lambda e: -e["elo_score"])
+        has_matches.sort(key=lambda e: -e["elo_score"])
 
         # is_starter: best-ranked (i.e. first, since entries are already Elo-
-        # sorted) wrestler per team -- same convention as the matrix UI's own
-        # getCurrentRankings() (generate_matrix.py), recomputed here since
-        # there's no manual matrix edit to read it from.
+        # sorted) wrestler per team, among those with real matches only --
+        # same convention as the matrix UI's own getCurrentRankings()
+        # (generate_matrix.py), recomputed here since there's no manual
+        # matrix edit to read it from. A 0-match wrestler can never win
+        # this by construction (they're not in `has_matches`).
         starter_ids = set()
         seen_teams = set()
-        for e in entries:
+        for e in has_matches:
             if e["team"] not in seen_teams:
                 seen_teams.add(e["team"])
                 starter_ids.add(e["wrestler_id"])
 
-        rankings = [
-            {
-                "rank": i + 1,
+        def _entry(e, rank):
+            return {
+                "rank": rank,
                 "wrestler_id": e["wrestler_id"],
                 "name": e["name"],
                 "team": e["team"],
                 "record": e["record"],
-                "is_starter": e["wrestler_id"] in starter_ids,
+                "is_starter": rank is not None and e["wrestler_id"] in starter_ids,
                 "flo_ranked": e["flo_ranked"],
+                "match_count": e["match_count"],
+                "last_match_date": e["last_match_date"],
             }
-            for i, e in enumerate(entries)
-        ]
 
-        existing_path.write_text(json.dumps(
+        rankings = [_entry(e, i + 1) for i, e in enumerate(has_matches)]
+        rankings += [_entry(e, None) for e in no_matches]  # UNR -- rank: null
+
+        out_dir.mkdir(parents=True, exist_ok=True)
+        (out_dir / f"rankings_{weight}.json").write_text(json.dumps(
             {"weight_class": weight, "season": season, "rankings": rankings},
             indent=2, ensure_ascii=False,
         ))
 
-    print(f"\n✓ Wrote hybrid rankings_<weight>.json for {len(weights)} weight classes to {data_dir}")
+    print(f"\n✓ Wrote hybrid rankings_<weight>.json for {len(weights)} weight classes to {out_dir}")
 
 
 def main():
@@ -870,6 +1184,14 @@ def main():
         "--output",
         type=str,
         help="Output JSON file path (default: mt/elo_ratings/{league_key}/{season}/elo_ratings.json)"
+    )
+    parser.add_argument(
+        "--rankings-output-dir",
+        type=str,
+        help="NCAA only: write rankings_<weight>.json here instead of the real "
+             "mt/rankings_data/ncaa_men/{season}/ dir -- for dry-run validation "
+             "before this touches production data. Existing flo_ranked tags are "
+             "still read from the real dir either way."
     )
 
     args = parser.parse_args()
@@ -911,7 +1233,8 @@ def main():
 
     # NCAA only: also write the per-weight hybrid rank compute_all_mat_values.py
     # and the profile pages need -- see write_rankings_from_elo()'s docstring.
-    write_rankings_from_elo(output_table, args.season, args.state, args.gender, args.league)
+    rankings_output_dir = Path(args.rankings_output_dir) if args.rankings_output_dir else None
+    write_rankings_from_elo(output_table, args.season, args.state, args.gender, args.league, rankings_output_dir)
 
     # Print summary
     print(f"\n{'='*80}")

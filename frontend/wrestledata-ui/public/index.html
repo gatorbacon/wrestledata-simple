@@ -22,11 +22,11 @@
       <div class="section-header">
         <h2 id="p4p-title">2027 Rankings</h2>
         <a href="/rankings.html" class="section-header-link">
-          <span class="tpar2-full-label-desktop">Full Rankings →</span>
-          <span class="tpar2-full-label-mobile">Full →</span>
+          <span class="dpg-full-label-desktop">Full Rankings →</span>
+          <span class="dpg-full-label-mobile">Full →</span>
         </a>
       </div>
-      <div class="tpar2-pill-rail">
+      <div class="dpg-pill-rail">
         <div class="hp-panel-tabs" id="p4p-weight-tabs">
           <button class="hp-tab active" data-weight="p4p">P4P</button>
           <button class="hp-tab" data-weight="125">125</button>
@@ -41,28 +41,28 @@
           <button class="hp-tab" data-weight="285">285</button>
         </div>
       </div>
-      <div class="tpar2-def-row">
-        <span class="tpar2-def-chip">
-          <span class="tpar2-def-full">TPAR — how completely a wrestler wins, not just whether they win.</span>
-          <span class="tpar2-def-short">TPAR — how completely they win</span>
-          <span class="tpar2-info" title="TPAR blends bonus-point rate, pin rate, and margin of victory into one number, calibrated so 4.5+ reflects a dominant tournament wrestler.">ⓘ</span>
+      <div class="dpg-def-row">
+        <span class="dpg-def-chip">
+          <span class="dpg-def-full">DPG — extra dual points per match vs what a typical wrestler gets against that same opponent.</span>
+          <span class="dpg-def-short">DPG — points gained vs. a typical opponent</span>
+          <span class="dpg-info" title="Dual Points Gained. Your dual-point result (DEC 3, MD 4, TF 5, F 6) minus what a typical wrestler gets against that same opponent. Beat a #10 by major and you get a lot. Tech a #200 and you get a little. Season DPG is the average of those matches, not a total.">ⓘ</span>
         </span>
-        <span class="tpar2-sort-control">
+        <span class="dpg-sort-control">
           Sort:
           <select id="p4p-sort-select">
             <option value="rank">Rank</option>
-            <option value="tpar">Highest TPAR</option>
+            <option value="dpg">Highest DPG</option>
           </select>
         </span>
       </div>
       <div class="table-wrapper" id="p4p-table-wrapper">
-        <table id="p4p-table" class="tpar2-table">
+        <table id="p4p-table" class="dpg-table">
           <thead>
             <tr>
               <th style="width: 32px;">Rank</th>
               <th>Wrestler</th>
               <th>Team</th>
-              <th class="num" title="TPAR blends bonus-point rate, pin rate, and margin of victory into one number, calibrated so 4.5+ reflects a dominant tournament wrestler.">TPAR ⓘ</th>
+              <th class="num" title="Dual Points Gained. Your dual-point result (DEC 3, MD 4, TF 5, F 6) minus what a typical wrestler gets against that same opponent. Beat a #10 by major and you get a lot. Tech a #200 and you get a little. Season DPG is the average of those matches, not a total.">DPG ⓘ</th>
               <th class="num">Bonus %</th>
               <th class="num">Pin %</th>
               <th>Record</th>
@@ -71,7 +71,7 @@
           <tbody></tbody>
         </table>
       </div>
-      <div class="tpar2-mobile-list" id="p4p-mobile-list"></div>
+      <div class="dpg-mobile-list" id="p4p-mobile-list"></div>
     </section>
 
     <!-- MOBILE (<768px) NCAA TEAM OUTLOOK: replaces the 3 sections below on
@@ -138,14 +138,14 @@
     <!-- 2×2 PANEL GRID -->
     <section class="hp-grid">
 
-      <!-- Panel 1: TPAR Leaders -->
+      <!-- Panel 1: DPG Leaders -->
       <div class="hp-panel">
         <div class="hp-panel-head">
           <div class="hp-panel-title-row">
-            <h2 class="hp-panel-title"><a href="/leaderboards/tpar.html" id="tpar-panel-title">TPAR Leaders</a></h2>
-            <a href="/leaderboards/tpar.html" class="hp-panel-link">See all →</a>
+            <h2 class="hp-panel-title"><a href="/leaderboards/dpg.html" id="dpg-panel-title">DPG Leaders</a></h2>
+            <a href="/leaderboards/dpg.html" class="hp-panel-link">See all →</a>
           </div>
-          <div class="hp-panel-tabs" id="tpar-weight-tabs">
+          <div class="hp-panel-tabs" id="dpg-weight-tabs">
             <button class="hp-tab active" data-weight="all">All</button>
             <button class="hp-tab" data-weight="125">125</button>
             <button class="hp-tab" data-weight="133">133</button>
@@ -159,7 +159,7 @@
             <button class="hp-tab" data-weight="285">285</button>
           </div>
         </div>
-        <div id="tpar-list" class="hp-panel-body"></div>
+        <div id="dpg-list" class="hp-panel-body"></div>
       </div>
 
       <!-- Panel 2: NCAA Tournament Projections (xTP) -->
@@ -266,7 +266,7 @@
     <!-- FOOTER -->
     <section class="homepage-footer">
       <p class="footer-text">Analytics-first college wrestling rankings built from match-level data. Updated regularly with comprehensive dual meet and tournament results.</p>
-      <p class="footer-text footer-text-muted">TPAR — Team Points Above Replacement — estimates how many team points a wrestler contributes above a replacement-level starter, using match-level scoring and dominance signals.</p>
+      <p class="footer-text footer-text-muted">DPG — Dual Points Gained. Your dual-point result (DEC 3, MD 4, TF 5, F 6) minus what a typical wrestler gets against that same opponent. Beat a #10 by major and you get a lot. Tech a #200 and you get a little. Season DPG is the average of those matches, not a total.</p>
     </section>
 
   </div>

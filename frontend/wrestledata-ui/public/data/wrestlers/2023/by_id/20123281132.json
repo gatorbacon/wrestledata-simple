@@ -3,7 +3,7 @@
   "name": "Nate Hoaglund",
   "team": "Pennsylvania",
   "team_slug": "pennsylvania",
-  "team_rank": 31,
+  "team_rank": 37,
   "weight_class": 285,
   "grade": "",
   "hometown": null,
@@ -11,7 +11,7 @@
   "photo_url": null,
   "previous_school": null,
   "year": 2023,
-  "current_rank": 198,
+  "current_rank": 155,
   "record": {
     "overall": "4-6",
     "vs_ranked": "4-6",
@@ -31,10 +31,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -1.42,
+      "mv_avg": -1.443,
       "matches": 10,
-      "rank_weight": 124,
-      "rank_overall": 1334,
+      "rank_weight": 119,
+      "rank_overall": 1307,
       "version": "v1"
     }
   },
@@ -45,15 +45,15 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "20135624132",
-      "opponent_rank": 237,
+      "opponent_rank": 133,
       "opponent_name": "Connor Barket",
       "method": "Dec 6-5"
     },
     "worst_loss": {
-      "opponent_id": "20135188132",
-      "opponent_rank": 85,
-      "opponent_name": "Shane Noonan",
-      "method": "Dec 2-0"
+      "opponent_id": "20139198132",
+      "opponent_rank": 150,
+      "opponent_name": "Triston Norris",
+      "method": "Dec 11-8"
     }
   },
   "match_list": [
@@ -63,9 +63,43 @@
       "opponent_career_id": null,
       "opponent_name": "Vincenzo Pelusi",
       "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 68,
+      "opponent_team_rank": 71,
       "opponent_weight": 285,
-      "opponent_rank": 65,
+      "opponent_rank": 42,
+      "weight_class": "285",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-1",
+      "duration": "7:00",
+      "event": "David H. Lehman F&M Open",
+      "mv_impact": -2.32
+    },
+    {
+      "date": "2023-01-06",
+      "opponent_id": "20122165132",
+      "opponent_career_id": null,
+      "opponent_name": "Chase Thompson",
+      "opponent_team": "Franklin & Marshall",
+      "opponent_team_rank": 71,
+      "opponent_weight": 285,
+      "opponent_rank": 184,
+      "weight_class": "285",
+      "result": "W",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "David H. Lehman F&M Open",
+      "mv_impact": 0.31
+    },
+    {
+      "date": "2023-01-06",
+      "opponent_id": "20140932132",
+      "opponent_career_id": null,
+      "opponent_name": "Sebastian Garibaldi",
+      "opponent_team": "Princeton",
+      "opponent_team_rank": 14,
+      "opponent_weight": 285,
+      "opponent_rank": 69,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
@@ -75,55 +109,21 @@
       "mv_impact": -2.61
     },
     {
-      "date": "2023-01-06",
-      "opponent_id": "20122165132",
-      "opponent_career_id": null,
-      "opponent_name": "Chase Thompson",
-      "opponent_team": "Franklin & Marshall",
-      "opponent_team_rank": 68,
-      "opponent_weight": 285,
-      "opponent_rank": 260,
-      "weight_class": "285",
-      "result": "W",
-      "method": "DEC",
-      "score": "2-0",
-      "duration": "7:00",
-      "event": "David H. Lehman F&M Open",
-      "mv_impact": 0.58
-    },
-    {
-      "date": "2023-01-06",
-      "opponent_id": "20140932132",
-      "opponent_career_id": null,
-      "opponent_name": "Sebastian Garibaldi",
-      "opponent_team": "Princeton",
-      "opponent_team_rank": 13,
-      "opponent_weight": 285,
-      "opponent_rank": 46,
-      "weight_class": "285",
-      "result": "L",
-      "method": "DEC",
-      "score": "6-1",
-      "duration": "7:00",
-      "event": "David H. Lehman F&M Open",
-      "mv_impact": -2.33
-    },
-    {
       "date": "2022-11-20",
       "opponent_id": "20139187132",
       "opponent_career_id": null,
       "opponent_name": "Mason Fiscella",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 28,
       "opponent_weight": 285,
-      "opponent_rank": 77,
+      "opponent_rank": 55,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "7-3",
       "duration": "7:00",
       "event": "Keystone Classic",
-      "mv_impact": -3.12
+      "mv_impact": -2.88
     },
     {
       "date": "2022-11-20",
@@ -131,16 +131,16 @@
       "opponent_career_id": null,
       "opponent_name": "Triston Norris",
       "opponent_team": "Appalachian State",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 28,
       "opponent_weight": 285,
-      "opponent_rank": 80,
+      "opponent_rank": 150,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "11-8",
       "duration": "7:00",
       "event": "Keystone Classic",
-      "mv_impact": -3.02
+      "mv_impact": -3.79
     },
     {
       "date": "2022-11-20",
@@ -148,16 +148,16 @@
       "opponent_career_id": null,
       "opponent_name": "Connor Barket",
       "opponent_team": "Duke",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 69,
       "opponent_weight": 285,
-      "opponent_rank": 237,
+      "opponent_rank": 133,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "6-5",
       "duration": "7:00",
       "event": "Keystone Classic",
-      "mv_impact": 0.3
+      "mv_impact": 1.08
     },
     {
       "date": "2022-11-20",
@@ -165,16 +165,16 @@
       "opponent_career_id": null,
       "opponent_name": "Hunter Catka",
       "opponent_team": "Virginia Tech",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 7,
       "opponent_weight": 285,
-      "opponent_rank": 20,
+      "opponent_rank": 17,
       "weight_class": "285",
       "result": "L",
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
       "event": "Keystone Classic",
-      "mv_impact": -2.21
+      "mv_impact": -2.25
     },
     {
       "date": "2022-11-13",
@@ -182,16 +182,16 @@
       "opponent_career_id": null,
       "opponent_name": "Shane Noonan",
       "opponent_team": "Bloomsburg",
-      "opponent_team_rank": 60,
+      "opponent_team_rank": 62,
       "opponent_weight": 285,
-      "opponent_rank": 85,
+      "opponent_rank": 73,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
       "event": "Journeymen / Defense Soap Collegiate Classic",
-      "mv_impact": -2.92
+      "mv_impact": -2.85
     },
     {
       "date": "2022-11-13",
@@ -199,16 +199,16 @@
       "opponent_career_id": null,
       "opponent_name": "Adrian Sans",
       "opponent_team": "Hofstra",
-      "opponent_team_rank": 70,
+      "opponent_team_rank": 72,
       "opponent_weight": 285,
-      "opponent_rank": 263,
+      "opponent_rank": 174,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "6-1",
       "duration": "7:00",
       "event": "Journeymen / Defense Soap Collegiate Classic",
-      "mv_impact": 0.3
+      "mv_impact": 0.24
     },
     {
       "date": "2022-11-13",
@@ -216,19 +216,19 @@
       "opponent_career_id": null,
       "opponent_name": "Aeden Begue",
       "opponent_team": "LIU",
-      "opponent_team_rank": 72,
+      "opponent_team_rank": 73,
       "opponent_weight": 285,
-      "opponent_rank": 264,
+      "opponent_rank": 187,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "6-3",
       "duration": "7:00",
       "event": "Journeymen / Defense Soap Collegiate Classic",
-      "mv_impact": 0.83
+      "mv_impact": 0.65
     }
   ],
-  "profile_generated_at": "2026-09-05",
+  "profile_generated_at": "2026-09-09",
   "season_summary": [
     {
       "season": 2023,
@@ -237,7 +237,7 @@
       "team_slug": "pennsylvania",
       "weight_class": 285,
       "grade": "",
-      "current_rank": 198,
+      "current_rank": 155,
       "record": "4-6"
     },
     {
@@ -247,7 +247,7 @@
       "team_slug": "pennsylvania",
       "weight_class": 285,
       "grade": "",
-      "current_rank": 121,
+      "current_rank": 158,
       "record": "4-4"
     }
   ]

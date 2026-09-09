@@ -24,6 +24,14 @@ This repo contains **two separate websites** that share a codebase and now both 
 
 ---
 
+## Documentation Standard
+
+When a script's data source, storage location, or a piece of methodology isn't already documented here or in [`docs/matsavant.md`](docs/matsavant.md), **document it as part of that work** — don't let it live only inside the script. This repo has multiple pipeline stages that compute similar-looking values (e.g. three different NCAA "rank" sources existed before this rule was written), and undocumented sources are exactly how a new script ends up quietly reading the wrong one. If you're about to write a new script and can't find its data source's origin/location already written down, that's a signal to go find and document it, not just re-derive it from code and move on.
+
+Example: `docs/matsavant.md`'s "NCAA Ranking Methodology (Source of Truth)" section — written 2026-09-09 after discovering `build_wrestler_profiles.py`, `compute_all_mat_values.py`, and the transfer/roster report pipeline had each independently ended up reading a different, undocumented rank source, with real user-facing wrong-rank bugs as a result.
+
+---
+
 ## Repository Structure
 
 ```

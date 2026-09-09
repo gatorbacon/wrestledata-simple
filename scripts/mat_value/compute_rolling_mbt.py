@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Rolling MBT ratings — compute each wrestler's TPAR trajectory through the season.
+Rolling MBT ratings — compute each wrestler's DPG trajectory through the season.
 
 Strategy: collect every unique match date in the season, then run one full MBT
 solve per date using all matches up to and including that date. Each wrestler's
@@ -9,8 +9,8 @@ timeline is their rating extracted at each date they competed.
 Output: rolling_mbt_{season}.json
   {
     "wrestler_id": [
-      {"date": "11/02/2025", "tpar": 1.23, "matches": 3},
-      {"date": "11/15/2025", "tpar": 1.87, "matches": 5},
+      {"date": "11/02/2025", "dpg": 1.23, "matches": 3},
+      {"date": "11/15/2025", "dpg": 1.87, "matches": 5},
       ...
     ],
     ...
@@ -26,7 +26,7 @@ import numpy as np
 from collections import defaultdict
 from datetime import datetime
 
-# ── Constants (must match tpar_massey_bt.py) ─────────────────────────────────
+# ── Constants (must match scripts/analysis/tpar_massey_bt.py) ───────────────
 WEIGHTS         = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
 MASSEY_LAMBDA   = 2.0
 BT_REG          = 1.0
@@ -122,7 +122,7 @@ def weight_floor(fused, ids):
 def solve_mbt(all_matches_by_weight, cutoff_date):
     """
     Run full MBT pipeline for all matches on or before cutoff_date.
-    Returns {wrestler_id: tpar_50_50} and {wrestler_id: match_count}.
+    Returns {wrestler_id: dpg_50_50} and {wrestler_id: match_count}.
     """
     per_weight = {}
     pool_bt, pool_ma = [], []
@@ -221,7 +221,7 @@ def main():
 
     # Solve MBT at each snapshot date
     print(f"Running {len(sorted_dates)} MBT solves...")
-    snapshots = {}  # date_str -> {wrestler_id: (tpar, n_matches)}
+    snapshots = {}  # date_str -> {wrestler_id: (dpg, n_matches)}
 
     for i, date_str in enumerate(sorted_dates):
         cutoff = parse_date(date_str)
@@ -251,11 +251,11 @@ def main():
             snap = snapshots.get(snap_date, {})
             if wid not in snap:
                 continue
-            tpar, n = snap[wid]
+            dpg, n = snap[wid]
             if n >= a.min_matches:
                 timeline.append({
                     "date":    snap_date,
-                    "tpar":    tpar,
+                    "dpg":    dpg,
                     "matches": n,
                 })
 
@@ -281,7 +281,7 @@ def main():
     if sample_id and sample_id in timelines:
         print(f"\nSample — {sample_name}:")
         for pt in timelines[sample_id]:
-            print(f"  {pt['date']}  TPAR={pt['tpar']:+.3f}  matches={pt['matches']}")
+            print(f"  {pt['date']}  DPG={pt['dpg']:+.3f}  matches={pt['matches']}")
 
 
 if __name__ == "__main__":

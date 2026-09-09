@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DPG Rankings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css?v=20260921" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+</head>
+<body>
+  <script src="/header.js?v=20260908"></script>
+  <div class="page-container">
+    <header class="header">
+      <h1>DPG Rankings</h1>
+      <div class="header-subline" id="season-info"></div>
+      <p class="header-explainer">
+        DPG — Dual Points Gained. Your dual-point result (DEC 3, MD 4, TF 5, F 6) minus what a typical wrestler gets against that same opponent. Beat a #10 by major and you get a lot. Tech a #200 and you get a little. Season DPG is the average of those matches, not a total.
+      </p>
+    </header>
+
+    <section class="section">
+      <div id="weight-tabs-container" class="weight-tabs-container" role="tablist" aria-label="Weight class filter">
+        <!-- Tabs will be inserted here by JS -->
+      </div>
+      <p class="threshold-explainer" id="threshold-explainer">
+        <!-- Dynamic text will be inserted here -->
+      </p>
+      <div class="table-wrapper">
+        <table id="mv-leaderboard-table">
+          <thead>
+            <tr>
+              <th>DPG Rank</th>
+              <th>Name</th>
+              <th>Team</th>
+              <th>Weight</th>
+              <th>Wt Class Rank</th>
+              <th class="col-mv">DPG <span class="tooltip-icon" data-tooltip="mv">→</span></th>
+              <th>Matches</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="/tooltips.js"></script>
+  <script src="/leaderboards/dpg.js"></script>
+</body>
+</html>
+

@@ -11,10 +11,10 @@
   "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgocolumbialions.com%2Fimages%2F2014%2F10%2F3%2FDVFTEOSHZSGAUZY.20141003191918.jpg&width=603&height=803&type=webp",
   "previous_school": null,
   "year": 2012,
-  "current_rank": 41,
+  "current_rank": 43,
   "record": {
     "overall": "3-1",
-    "vs_ranked": "3-1",
+    "vs_ranked": "3-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -29,32 +29,20 @@
     "bonus_rate": 0.667,
     "majors": 1,
     "techs": 0,
-    "pins": 1,
-    "mat_value": {
-      "mv_avg": 0.217,
-      "matches": 5,
-      "rank_weight": 47,
-      "rank_overall": 546,
-      "version": "v1"
-    }
+    "pins": 1
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
-    "ranked_losses": 1,
+    "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "4450591009",
-      "opponent_rank": 69,
+      "opponent_rank": 74,
       "opponent_name": "Cole Dillman",
       "method": "Dec 3-1"
     },
-    "worst_loss": {
-      "opponent_id": "4451056009",
-      "opponent_rank": 48,
-      "opponent_name": "Chris Lopez",
-      "method": "Dec 5-2"
-    }
+    "worst_loss": null
   },
   "match_list": [
     {
@@ -63,16 +51,15 @@
       "opponent_career_id": null,
       "opponent_name": "Andrew Embree",
       "opponent_team": "VMI",
-      "opponent_team_rank": 78,
+      "opponent_team_rank": 77,
       "opponent_weight": 285,
-      "opponent_rank": 145,
+      "opponent_rank": 134,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:26",
-      "event": "vs. Columbia",
-      "mv_impact": 3.74
+      "event": "vs. Columbia"
     },
     {
       "date": "2011-11-12",
@@ -82,14 +69,13 @@
       "opponent_team": "Illinois",
       "opponent_team_rank": 10,
       "opponent_weight": 184,
-      "opponent_rank": 48,
+      "opponent_rank": null,
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "Michigan State Open",
-      "mv_impact": -2.91
+      "event": "Michigan State Open"
     },
     {
       "date": "2011-11-12",
@@ -99,14 +85,13 @@
       "opponent_team": "Ohio State",
       "opponent_team_rank": 6,
       "opponent_weight": 285,
-      "opponent_rank": 138,
+      "opponent_rank": 124,
       "weight_class": "285",
       "result": "W",
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
-      "event": "Michigan State Open",
-      "mv_impact": 0.89
+      "event": "Michigan State Open"
     },
     {
       "date": "2011-11-12",
@@ -114,19 +99,18 @@
       "opponent_career_id": null,
       "opponent_name": "Cole Dillman",
       "opponent_team": "Eastern Michigan",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 50,
       "opponent_weight": 285,
-      "opponent_rank": 69,
+      "opponent_rank": 74,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "3-1",
       "duration": "7:00",
-      "event": "Michigan State Open",
-      "mv_impact": 2.27
+      "event": "Michigan State Open"
     }
   ],
-  "profile_generated_at": "2026-09-06",
+  "profile_generated_at": "2026-09-09",
   "season_summary": [
     {
       "season": 2014,
@@ -135,7 +119,7 @@
       "team_slug": "columbia",
       "weight_class": 285,
       "grade": "Jr.",
-      "current_rank": 144,
+      "current_rank": 75,
       "record": "6-12"
     },
     {
@@ -145,7 +129,7 @@
       "team_slug": "columbia",
       "weight_class": 285,
       "grade": "So.",
-      "current_rank": 102,
+      "current_rank": 63,
       "record": "2-3"
     },
     {
@@ -155,7 +139,7 @@
       "team_slug": "columbia",
       "weight_class": 285,
       "grade": "FY",
-      "current_rank": 41,
+      "current_rank": 43,
       "record": "3-1"
     }
   ]

@@ -1202,8 +1202,15 @@ def build_wrestler_profile(
     
     team_slug = team_name_to_slug(team)
     team_rank = team_rank_by_name.get(team)
-    # Use hybrid rank for display when available (HS); otherwise matrix rank
-    if hybrid_rank_by_id:
+    # current_rank display source: NCAA (gender is None here -- see call
+    # sites) must NEVER fall back to matrix rank (rank_by_id) -- that's the
+    # banned source per docs/matsavant.md's "NCAA Ranking Methodology"
+    # section. If this wrestler has no hybrid rank, current_rank is simply
+    # unset rather than silently showing a matrix-derived number. HS keeps
+    # its existing hybrid-with-matrix-fallback behavior, unchanged.
+    if gender is None:
+        current_rank = hybrid_rank_by_id.get(wrestler_id) if hybrid_rank_by_id else None
+    elif hybrid_rank_by_id:
         current_rank = hybrid_rank_by_id.get(wrestler_id) or rank_by_id.get(wrestler_id)
     else:
         current_rank = rank_by_id.get(wrestler_id)
@@ -1632,7 +1639,19 @@ def main() -> None:
         print("\nLoading starter-only rankings...")
         rank_by_id = _load_full_rank_map(season, data_dir, league=league)
         print(f"Loaded full rankings for {len(rank_by_id)} wrestlers")
-        
+
+        # current_rank must come from the Flo/tournament-placement + Elo
+        # hybrid (docs/matsavant.md "NCAA Ranking Methodology"), never the
+        # raw matrix rank in rank_by_id above -- that stays in use only for
+        # opponent-rank display in match history, a separate concern.
+        print("\nLoading hybrid ranks (for current_rank display)...")
+        hybrid_rank_by_id = _load_hybrid_rank_map(season, f"ncaa_{ncaa_gender}")
+        if hybrid_rank_by_id:
+            print(f"Loaded hybrid ranks for {len(hybrid_rank_by_id)} wrestlers")
+        else:
+            print("WARNING: no hybrid ranks found (mt/elo_ratings/ncaa_men/.../elo_ratings.json "
+                  "missing?) -- current_rank will be unset rather than falling back to matrix rank")
+
         print("\nCalculating team rankings...")
         team_rank_by_name, team_scores = calculate_team_rankings(season, data_dir)
         print(f"Calculated rankings for {len(team_rank_by_name)} teams")
@@ -1704,6 +1723,7 @@ def main() -> None:
                 match_mv_impact_lookup,
                 gender=None,  # NCAA doesn't use gender-based careers
                 career_lookup=None,  # NCAA doesn't use careers
+                hybrid_rank_by_id=hybrid_rank_by_id,
             )
             
             # Preserve existing bonus data if it exists

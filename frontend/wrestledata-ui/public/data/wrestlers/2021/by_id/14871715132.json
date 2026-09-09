@@ -3,7 +3,7 @@
   "name": "Ray Costa",
   "team": "Virginia",
   "team_slug": "virginia",
-  "team_rank": 28,
+  "team_rank": 34,
   "weight_class": 149,
   "grade": "Redshirt Freshman",
   "hometown": "Huntington, N.Y.",
@@ -11,10 +11,10 @@
   "photo_url": "https://virginiasports.com/imgproxy/B4Hxsom8zL4MGIxn9TywQfVvZRS03kaEWiNWQTraACk/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3Zpcmdpbmlhc3BvcnRzLWNvbS1wcm9kLzIwMjAvMDQvODhkOWQxZmUtY29zdGFfcmF5XzE5bV93ZWJzaXRlLmpwZw.jpg",
   "previous_school": null,
   "year": 2021,
-  "current_rank": 94,
+  "current_rank": 167,
   "record": {
     "overall": "2-2",
-    "vs_ranked": "2-2",
+    "vs_ranked": "1-2",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -29,31 +29,24 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 1,
-    "mat_value": {
-      "mv_avg": -0.26,
-      "matches": 5,
-      "rank_weight": 76,
-      "rank_overall": 614,
-      "version": "v1"
-    }
+    "pins": 1
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 1,
     "ranked_losses": 2,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "14865124132",
-      "opponent_rank": 237,
+      "opponent_rank": 146,
       "opponent_name": "Andrew Barnett",
       "method": "TF 16-0 2:56"
     },
     "worst_loss": {
-      "opponent_id": "14864593132",
-      "opponent_rank": 53,
-      "opponent_name": "Caden Darber",
-      "method": "MD 14-5"
+      "opponent_id": "14865899132",
+      "opponent_rank": 67,
+      "opponent_name": "Hunter Lewis",
+      "method": "Fall 2:47"
     }
   },
   "match_list": [
@@ -63,16 +56,15 @@
       "opponent_career_id": null,
       "opponent_name": "Caden Darber",
       "opponent_team": "Virginia Tech",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 8,
       "opponent_weight": 149,
-      "opponent_rank": 53,
+      "opponent_rank": 39,
       "weight_class": "149",
       "result": "L",
       "method": "MD",
       "score": "14-5",
       "duration": "7:00",
-      "event": "vs. Virginia Tech",
-      "mv_impact": -3.16
+      "event": "vs. Virginia Tech"
     },
     {
       "date": "2021-01-15",
@@ -80,16 +72,15 @@
       "opponent_career_id": null,
       "opponent_name": "Hunter Lewis",
       "opponent_team": "NC State",
-      "opponent_team_rank": 6,
+      "opponent_team_rank": 5,
       "opponent_weight": 149,
-      "opponent_rank": 36,
+      "opponent_rank": 67,
       "weight_class": "149",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "2:47",
-      "event": "vs. Virginia",
-      "mv_impact": -4.03
+      "event": "vs. Virginia"
     },
     {
       "date": "2021-01-02",
@@ -97,16 +88,15 @@
       "opponent_career_id": null,
       "opponent_name": "Andrew Barnett",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 149,
-      "opponent_rank": 237,
+      "opponent_rank": 146,
       "weight_class": "149",
       "result": "W",
       "method": "TF",
       "score": "16-0",
       "duration": "2:56",
-      "event": "AppState Individual Quad",
-      "mv_impact": 1.44
+      "event": "AppState Individual Quad"
     },
     {
       "date": "2021-01-02",
@@ -114,19 +104,18 @@
       "opponent_career_id": null,
       "opponent_name": "Sebastian Collazo",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 55,
+      "opponent_team_rank": 70,
       "opponent_weight": 157,
-      "opponent_rank": 251,
+      "opponent_rank": null,
       "weight_class": "149",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:37",
-      "event": "AppState Individual Quad",
-      "mv_impact": 2.23
+      "event": "AppState Individual Quad"
     }
   ],
-  "profile_generated_at": "2026-09-05",
+  "profile_generated_at": "2026-09-09",
   "season_summary": [
     {
       "season": 2023,
@@ -135,7 +124,7 @@
       "team_slug": "virginia",
       "weight_class": 184,
       "grade": "Senior",
-      "current_rank": 149,
+      "current_rank": 141,
       "record": "0-0"
     },
     {
@@ -145,7 +134,7 @@
       "team_slug": "virginia",
       "weight_class": 165,
       "grade": "Junior",
-      "current_rank": 196,
+      "current_rank": 170,
       "record": "4-5"
     },
     {
@@ -155,7 +144,7 @@
       "team_slug": "virginia",
       "weight_class": 149,
       "grade": "Redshirt Freshman",
-      "current_rank": 94,
+      "current_rank": 167,
       "record": "2-2"
     },
     {
@@ -165,7 +154,7 @@
       "team_slug": "virginia",
       "weight_class": 149,
       "grade": "Freshman",
-      "current_rank": 124,
+      "current_rank": 164,
       "record": "6-7"
     }
   ]

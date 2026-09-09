@@ -40,9 +40,9 @@
                     <a href="/matrix.html" class="dropdown-item">
                       <span class="dropdown-item-label">Rankings Matrix</span>
                     </a>
-                    <a href="/leaderboards/tpar.html" class="dropdown-item">
-                      <span class="dropdown-item-label">TPAR</span>
-                      <span class="dropdown-item-subtext">Team Points Above Replacement</span>
+                    <a href="/leaderboards/dpg.html" class="dropdown-item">
+                      <span class="dropdown-item-label">DPG</span>
+                      <span class="dropdown-item-subtext">Dual Points Gained</span>
                     </a>
                   </div>
                 </div>
@@ -67,7 +67,7 @@
                 Profiles <span class="dropdown-arrow">▾</span>
               </button>
               <div class="dropdown-menu" id="profiles-menu">
-                <a href="/leaderboards/tpar.html" class="dropdown-item">
+                <a href="/leaderboards/dpg.html" class="dropdown-item">
                   <span class="dropdown-item-label">Wrestlers</span>
                 </a>
                 <a href="/leaderboards/xtp/teams.html" class="dropdown-item">
@@ -165,12 +165,12 @@
             <div class="mobile-drawer-section-label">Rankings</div>
             <a href="/rankings.html" class="mobile-drawer-link">Rankings (Traditional)</a>
             <a href="/matrix.html" class="mobile-drawer-link">Rankings Matrix</a>
-            <a href="/leaderboards/tpar.html" class="mobile-drawer-link">TPAR</a>
+            <a href="/leaderboards/dpg.html" class="mobile-drawer-link">DPG</a>
             <a href="/leaderboards/xtp/teams.html" class="mobile-drawer-link">Expected Team Points (xTP)</a>
           </div>
           <div class="mobile-drawer-section">
             <div class="mobile-drawer-section-label">Profiles</div>
-            <a href="/leaderboards/tpar.html" class="mobile-drawer-link">Wrestlers</a>
+            <a href="/leaderboards/dpg.html" class="mobile-drawer-link">Wrestlers</a>
             <a href="/leaderboards/xtp/teams.html" class="mobile-drawer-link">Teams</a>
           </div>
           <div class="mobile-drawer-section">

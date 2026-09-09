@@ -128,8 +128,8 @@ function renderXTPTeams(data) {
   });
 }
 
-function renderTparList(data) {
-  const container = document.getElementById('tpar-list');
+function renderDpgList(data) {
+  const container = document.getElementById('dpg-list');
   if (!container) return;
   container.innerHTML = '';
 
@@ -140,9 +140,9 @@ function renderTparList(data) {
 
   data.forEach((entry, i) => {
     const row = document.createElement('div');
-    row.className = 'analytics-row tpar-row';
+    row.className = 'analytics-row dpg-row';
     const sign = entry.mv_avg >= 0 ? '+' : '';
-    const valClass = entry.mv_avg >= 0 ? 'tpar-value-pos' : 'tpar-value-neg';
+    const valClass = entry.mv_avg >= 0 ? 'dpg-value-pos' : 'dpg-value-neg';
     row.innerHTML =
       `<div class="row-rank">${i + 1}</div>` +
       `<div class="row-name"><a href="/wrestler.html?id=${entry.wrestler_id}">${entry.name}</a></div>` +
@@ -220,7 +220,7 @@ function renderStatLeaders(data, stat) {
 // INIT
 // ========================================
 
-let selectedTparWeight = 'all';
+let selectedDpgWeight = 'all';
 let selectedRankingsWeight = 'all';
 const miCache = {};
 const rankingsCache = {};
@@ -240,8 +240,8 @@ async function initHomepage() {
   // above them, which already jumps ahead to next season once it's live, so
   // without this the mismatch in "current-ness" between the two sections
   // isn't obvious at a glance.
-  const tparTitle = document.getElementById('tpar-panel-title');
-  if (tparTitle) tparTitle.textContent = `${season} TPAR Leaders`;
+  const dpgTitle = document.getElementById('dpg-panel-title');
+  if (dpgTitle) dpgTitle.textContent = `${season} DPG Leaders`;
   const xtpTitle = document.getElementById('xtp-panel-title');
   if (xtpTitle) xtpTitle.textContent = `${season} NCAA Tournament Projections`;
   const rankingsTitle = document.getElementById('rankings-panel-title');
@@ -261,24 +261,24 @@ async function initHomepage() {
   rankingsCache['all'] = rankingsData;
 
   renderXTPTeams(replayData);
-  renderTparList(miData);
+  renderDpgList(miData);
   renderRankingsPanel(rankingsData, 'all');
   renderStatLeaders(pinsData, 'pins');
 
-  // TPAR weight tabs
-  document.querySelectorAll('#tpar-weight-tabs .hp-tab').forEach(tab => {
+  // DPG weight tabs
+  document.querySelectorAll('#dpg-weight-tabs .hp-tab').forEach(tab => {
     tab.addEventListener('click', async () => {
       const weight = tab.dataset.weight;
-      if (weight === selectedTparWeight) return;
-      selectedTparWeight = weight;
-      document.querySelectorAll('#tpar-weight-tabs .hp-tab').forEach(t => t.classList.remove('active'));
+      if (weight === selectedDpgWeight) return;
+      selectedDpgWeight = weight;
+      document.querySelectorAll('#dpg-weight-tabs .hp-tab').forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
       if (!miCache[weight]) miCache[weight] = await loadMIData(weight);
-      renderTparList(miCache[weight]);
+      renderDpgList(miCache[weight]);
     });
   });
 
-  // Rankings weight tabs (independent from TPAR)
+  // Rankings weight tabs (independent from DPG)
   document.querySelectorAll('#rankings-weight-tabs .hp-tab').forEach(tab => {
     tab.addEventListener('click', async () => {
       const weight = tab.dataset.weight;

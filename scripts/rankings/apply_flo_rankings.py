@@ -325,7 +325,10 @@ def main():
         remaining = [dict(r) for r in data["rankings"] if r["wrestler_id"] not in claimed_ids]
         for r in remaining:
             r["flo_ranked"] = False
-        remaining.sort(key=lambda r: r["rank"])
+        # rank can be None here (write_rankings_from_elo() sets rank:null for
+        # 0-match wrestlers by design) -- sort them last rather than crash;
+        # they get sequentially renumbered right below anyway.
+        remaining.sort(key=lambda r: (r["rank"] is None, r["rank"]))
 
         rank = 1
         for r in new_top + remaining:

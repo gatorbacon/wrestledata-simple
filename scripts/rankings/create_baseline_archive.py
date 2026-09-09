@@ -8,7 +8,7 @@ This script:
 1. Loads full rankings from mt/rankings_data (source of truth)
 2. Enriches with region data and region places
 3. Limits to top 40 (boys) or top 24 (girls)
-4. Removes TPAR/mv fields
+4. Removes DPG/mv fields
 5. Creates archive structure with meta.json, notes/, and index.json
 
 CRITICAL: This script is READ-ONLY with respect to ranking order.
@@ -485,7 +485,7 @@ def enrich_rankings_with_region_data(
             # No previous rankings available (baseline drop)
             enriched_entry["is_new"] = False
         
-        # DO NOT include: mv, tpar, mat_value, or any TPAR-related fields
+        # DO NOT include: mv, dpg, mat_value, or any DPG-related fields
         # These are removed from the archive output
         
         enriched_rankings.append(enriched_entry)

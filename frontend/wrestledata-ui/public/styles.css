@@ -2720,7 +2720,7 @@ th.tooltip-trigger .tooltip {
 
 /* Sitewide default "content card" look: white box, border, rounded corners
    -- same treatment as .hp-panel on the homepage. Applied here to the 3
-   profile-summary boxes (TPAR / TPAR Trajectory / Skill Profile) instead of
+   profile-summary boxes (DPG / DPG Trajectory / Skill Profile) instead of
    the old borderless/divider-only look below. New sections following this
    pattern should just reuse .profile-section or .section--timeline rather
    than inventing another one-off box style. */
@@ -3337,12 +3337,12 @@ th.tooltip-trigger .tooltip {
    "Solid line"), and item 3's swatch color didn't match the actual gold
    dashed line at all. */
 .match-impact-label:nth-child(1)::before {
-  /* Bars: per-match TPAR impact (green = positive) */
+  /* Bars: per-match DPG impact (green = positive) */
   background: rgba(56,161,105,0.55);
 }
 
 .match-impact-label:nth-child(2)::before {
-  /* Solid line: TPAR trajectory */
+  /* Solid line: DPG trajectory */
   width: 14px;
   height: 2px;
   border-radius: 1px;
@@ -3350,7 +3350,7 @@ th.tooltip-trigger .tooltip {
 }
 
 .match-impact-label:nth-child(3)::before {
-  /* Dashed line: season avg TPAR */
+  /* Dashed line: season avg DPG */
   width: 14px;
   height: 0;
   border-top: 2px dashed rgba(200,150,40,0.85);
@@ -3628,7 +3628,7 @@ th.tooltip-trigger .tooltip {
   color: var(--accent);
 }
 
-/* --- SECTION 2: ANALYTICS (TPAR + Rankings) --- */
+/* --- SECTION 2: ANALYTICS (DPG + Rankings) --- */
 
 .homepage-analytics {
   margin-bottom: 2rem;
@@ -3706,7 +3706,7 @@ th.tooltip-trigger .tooltip {
   background: var(--panel-2);
 }
 
-.tpar-row,
+.dpg-row,
 .rankings-row {
   grid-template-columns: 28px 1fr 70px 52px;
   gap: 6px;
@@ -3761,8 +3761,8 @@ th.tooltip-trigger .tooltip {
   font-weight: 400;
 }
 
-.tpar-value-pos { color: var(--good); }
-.tpar-value-neg { color: var(--bad); }
+.dpg-value-pos { color: var(--good); }
+.dpg-value-neg { color: var(--bad); }
 
 .analytics-empty {
   padding: 1.5em;
@@ -4437,12 +4437,12 @@ th.tooltip-trigger .tooltip {
 }
 
 /* ============================================================
-   Homepage P4P table redesign (tpar2- prefix) -- TPAR as the
+   Homepage P4P table redesign (dpg- prefix) -- DPG as the
    signature stat: bigger, color-banded, mini meter bar, richer
    wrestler-name cells, prior-season record context.
    ============================================================ */
 
-.tpar2-def-row {
+.dpg-def-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -4455,25 +4455,25 @@ th.tooltip-trigger .tooltip {
   border-radius: var(--r-sm);
 }
 
-.tpar2-def-chip {
+.dpg-def-chip {
   font-size: 0.8rem;
   color: var(--muted);
 }
 
-.tpar2-info {
+.dpg-info {
   display: inline-block;
   margin-left: 4px;
   cursor: help;
   opacity: 0.65;
 }
-.tpar2-info:hover { opacity: 1; }
+.dpg-info:hover { opacity: 1; }
 
-.tpar2-sort-control {
+.dpg-sort-control {
   font-size: 0.75rem;
   color: var(--muted);
   white-space: nowrap;
 }
-.tpar2-sort-control select {
+.dpg-sort-control select {
   font: inherit;
   font-size: 0.75rem;
   font-weight: 600;
@@ -4487,13 +4487,13 @@ th.tooltip-trigger .tooltip {
 
 /* --- Wrestler cell: headshot + name + grade/weight subtext --- */
 
-.tpar2-wrestler-cell {
+.dpg-wrestler-cell {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.tpar2-headshot {
+.dpg-headshot {
   width: 64px;
   height: 64px;
   border-radius: 50%;
@@ -4502,22 +4502,22 @@ th.tooltip-trigger .tooltip {
   background: var(--panel-2);
   border: 1px solid var(--border);
 }
-.tpar2-headshot--crest { object-fit: contain; padding: 8px; }
-.tpar2-headshot--blank { display: inline-block; }
+.dpg-headshot--crest { object-fit: contain; padding: 8px; }
+.dpg-headshot--blank { display: inline-block; }
 
 /* Team cell: icon sits in a fixed-width slot (centered within it, so
    varying logo widths still line up on the same visual center), name
    starts at a consistent left-aligned position right after that slot. */
-.tpar2-team-cell {
+.dpg-team-cell {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   color: inherit;
   text-decoration: none;
 }
-.tpar2-team-cell:hover { color: var(--accent); }
+.dpg-team-cell:hover { color: var(--accent); }
 
-.tpar2-team-icon-slot {
+.dpg-team-icon-slot {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4527,53 +4527,53 @@ th.tooltip-trigger .tooltip {
 
 /* Team crest: sized off the wrestler headshot's height (75% of it), width
    left free so non-square logos aren't squeezed to fit a fixed width. */
-.tpar2-team-crest {
+.dpg-team-crest {
   height: 48px;
   width: auto;
   max-width: 64px;
   object-fit: contain;
 }
 
-.tpar2-team-name { text-align: left; }
+.dpg-team-name { text-align: left; }
 
-.tpar2-wrestler-text { min-width: 0; }
-.tpar2-wrestler-name { font-weight: 600; }
-.tpar2-wrestler-sub {
+.dpg-wrestler-text { min-width: 0; }
+.dpg-wrestler-name { font-weight: 600; }
+.dpg-wrestler-sub {
   font-size: 0.72rem;
   color: var(--muted-2);
   margin-top: 1px;
 }
 
-/* --- TPAR: the signature stat --- */
+/* --- DPG: the signature stat --- */
 
-#p4p-table.tpar2-table th.num,
-#p4p-table.tpar2-table td.num {
+#p4p-table.dpg-table th.num,
+#p4p-table.dpg-table td.num {
   text-align: left;
 }
 
-.tpar2-tpar-row {
+.dpg-dpg-row {
   display: flex;
   align-items: baseline;
   gap: 6px;
 }
 
-.tpar2-tpar-value {
+.dpg-dpg-value {
   font-size: 1.45rem;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
   line-height: 1.1;
 }
 
-.tpar2-band-elite      { color: var(--warn); }
-.tpar2-band-dominant   { color: var(--accent); }
-.tpar2-band-solid      { color: var(--muted); }
-.tpar2-band-developing { color: var(--muted-2); }
-.tpar2-band-nodata     { color: var(--muted-2); font-weight: 600; font-size: 1.1rem; }
+.dpg-band-elite      { color: var(--warn); }
+.dpg-band-dominant   { color: var(--accent); }
+.dpg-band-solid      { color: var(--muted); }
+.dpg-band-developing { color: var(--muted-2); }
+.dpg-band-nodata     { color: var(--muted-2); font-weight: 600; font-size: 1.1rem; }
 
 /* Elite is the only band that gets a badge -- thin outline, not a solid
    fill, so it reads as a quiet highlight rather than a shout. Sits on the
-   same line as the TPAR number itself, not stacked underneath it. */
-.tpar2-elite-badge {
+   same line as the DPG number itself, not stacked underneath it. */
+.dpg-elite-badge {
   display: inline-block;
   padding: 1px 6px;
   border-radius: var(--r-sm);
@@ -4587,16 +4587,16 @@ th.tooltip-trigger .tooltip {
   align-self: center;
 }
 
-.tpar2-nodata-label {
+.dpg-nodata-label {
   font-size: 0.65rem;
   color: var(--muted-2);
   font-style: italic;
   margin-bottom: 4px;
 }
 
-/* --- TPAR meter bar (sits directly under the number, in the same cell) --- */
+/* --- DPG meter bar (sits directly under the number, in the same cell) --- */
 
-.tpar2-meter-track {
+.dpg-meter-track {
   width: 105px;
   height: 9px;
   border-radius: 4px;
@@ -4604,23 +4604,23 @@ th.tooltip-trigger .tooltip {
   overflow: hidden;
   margin-top: 3px;
 }
-.tpar2-meter-track--empty {
+.dpg-meter-track--empty {
   background: transparent;
   border: 1px dashed var(--border);
 }
 
-.tpar2-meter-fill {
+.dpg-meter-fill {
   height: 100%;
   border-radius: 4px;
 }
-.tpar2-meter-fill.tpar2-band-elite      { background: var(--warn); }
-.tpar2-meter-fill.tpar2-band-dominant   { background: var(--accent); }
-.tpar2-meter-fill.tpar2-band-solid      { background: var(--muted); }
-.tpar2-meter-fill.tpar2-band-developing { background: var(--muted-2); }
+.dpg-meter-fill.dpg-band-elite      { background: var(--warn); }
+.dpg-meter-fill.dpg-band-dominant   { background: var(--accent); }
+.dpg-meter-fill.dpg-band-solid      { background: var(--muted); }
+.dpg-meter-fill.dpg-band-developing { background: var(--muted-2); }
 
-/* --- Bonus %: matches the TPAR value's weight/color for the same row --- */
+/* --- Bonus %: matches the DPG value's weight/color for the same row --- */
 
-.tpar2-bonus-value {
+.dpg-bonus-value {
   font-size: 1.15rem;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
@@ -4628,26 +4628,26 @@ th.tooltip-trigger .tooltip {
 
 /* --- Pin % / Record: sized up from the original table, no color/weight change --- */
 
-.tpar2-pin-value,
-.tpar2-record-value {
+.dpg-pin-value,
+.dpg-record-value {
   font-size: 1rem;
 }
 
 /* --- Preseason record, showing last-season context instead of "0-0" --- */
 
-.tpar2-prior-record {
+.dpg-prior-record {
   color: var(--muted);
   font-size: 1rem;
 }
 
-/* --- Rank vs. TPAR disagreement: a quiet accent border only, no label --- */
+/* --- Rank vs. DPG disagreement: a quiet accent border only, no label --- */
 
-.tpar2-row-gap-above { box-shadow: inset 3px 0 0 var(--warn); }
-.tpar2-row-gap-below { box-shadow: inset 3px 0 0 var(--accent-2); }
+.dpg-row-gap-above { box-shadow: inset 3px 0 0 var(--warn); }
+.dpg-row-gap-below { box-shadow: inset 3px 0 0 var(--accent-2); }
 
 /* ============================================================
-   Wrestler profile page redesign (wp2- prefix) -- TPAR hero card,
-   combined box-score + skill card, 3-color TPAR trajectory bars.
+   Wrestler profile page redesign (wp2- prefix) -- DPG hero card,
+   combined box-score + skill card, 3-color DPG trajectory bars.
    ============================================================ */
 
 /* --- Bigger headshot (50% larger than the original 84px) --- */
@@ -4657,7 +4657,7 @@ th.tooltip-trigger .tooltip {
   height: 126px;
 }
 
-/* --- Column proportions: TPAR 25% / Trajectory 40% / Box score+Skill 35%,
+/* --- Column proportions: DPG 25% / Trajectory 40% / Box score+Skill 35%,
    all 3 stretched to equal height via plain height:100% on each column's
    single card child.
 
@@ -4751,15 +4751,15 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
 /* Rank chip used inside the season-selector table (smaller, inline) */
 #season-selector-table .wp2-rank-chip { font-size: 0.78rem; padding: 2px 8px; }
 
-/* --- TPAR card: hero number only, centered, taller than wide --- */
+/* --- DPG card: hero number only, centered, taller than wide --- */
 
-#tpar-card {
+#dpg-card {
   text-align: center;
   padding-top: 22px;
   padding-bottom: 22px;
 }
 
-.wp2-tpar-hero {
+.wp2-dpg-hero {
   font-size: 3.6rem;
   font-weight: 800;
   line-height: 1;
@@ -4767,14 +4767,14 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   margin: 10px 0 6px;
 }
 
-.wp2-tpar-rank-label {
+.wp2-dpg-rank-label {
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--muted);
   margin-bottom: 4px;
 }
-.wp2-tpar-rank-link { color: inherit; text-decoration: none; }
-.wp2-tpar-rank-link:hover { color: var(--accent); }
+.wp2-dpg-rank-link { color: inherit; text-decoration: none; }
+.wp2-dpg-rank-link:hover { color: var(--accent); }
 
 .wp2-percentile-block {
   margin-top: 14px;
@@ -4818,7 +4818,7 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   margin-top: 5px;
 }
 
-.wp2-tpar-definition {
+.wp2-dpg-definition {
   font-style: italic;
   font-size: 0.82rem;
   color: var(--muted);
@@ -5208,9 +5208,9 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
 
 /* --- Remaining roster --- */
 
-.tp2-tpar-negative { color: #c53030; font-weight: 600; }
-.tp2-tpar-positive { color: #2f855a; font-weight: 600; }
-.tp2-tpar-nodata { color: var(--muted-2); }
+.tp2-dpg-negative { color: #c53030; font-weight: 600; }
+.tp2-dpg-positive { color: #2f855a; font-weight: 600; }
+.tp2-dpg-nodata { color: var(--muted-2); }
 .tp2-nodata-label { font-size: 0.72rem; font-style: italic; }
 
 .tp2-toggle-rest {
@@ -5228,7 +5228,7 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
 
 /* ============================================================
    Mobile (<768px) homepage rewrite: dual ticker one-at-a-time,
-   rankings card chrome (pill rail / compact TPAR line), and the
+   rankings card chrome (pill rail / compact DPG line), and the
    mobile rank-row list (shared by the homepage P4P table and the
    Full Rankings page). >=768px is untouched by any rule below.
    ============================================================ */
@@ -5236,32 +5236,32 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
 /* --- Weight pill rail wrapper: only adds the fade-edge affordance; the
    scroller itself is #p4p-weight-tabs (already flex/gap via .hp-panel-tabs
    at all breakpoints -- only overflow behavior changes on mobile). --- */
-.tpar2-pill-rail {
+.dpg-pill-rail {
   position: relative;
 }
 
 /* --- "Full Rankings ->" / "Full ->" label swap --- */
-.tpar2-full-label-mobile { display: none; }
+.dpg-full-label-mobile { display: none; }
 
-/* --- TPAR one-liner short/full text swap --- */
-.tpar2-def-short { display: none; }
+/* --- DPG one-liner short/full text swap --- */
+.dpg-def-short { display: none; }
 
 /* --- Mobile rank-row list (hidden on desktop; shown in the <768px block
    below). Built by mobile_rank_row.js -- shared between the homepage P4P
    table and the Full Rankings page. --- */
-.tpar2-mobile-list {
+.dpg-mobile-list {
   display: none;
   overflow-x: hidden;
 }
 
-.tpar2-mobile-empty {
+.dpg-mobile-empty {
   padding: 24px 16px;
   color: var(--muted);
   font-size: 0.9rem;
   text-align: center;
 }
 
-.tpar2-mobile-row {
+.dpg-mobile-row {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -5272,19 +5272,19 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   color: inherit;
 }
 
-.tpar2-mobile-row:hover {
+.dpg-mobile-row:hover {
   background: var(--panel-2);
   text-decoration: none;
 }
 
-.tpar2-mobile-row:last-child {
+.dpg-mobile-row:last-child {
   border-bottom: none;
 }
 
-.tpar2-mobile-row.tpar2-row-gap-above { box-shadow: inset 3px 0 0 var(--warn); }
-.tpar2-mobile-row.tpar2-row-gap-below { box-shadow: inset 3px 0 0 var(--accent-2); }
+.dpg-mobile-row.dpg-row-gap-above { box-shadow: inset 3px 0 0 var(--warn); }
+.dpg-mobile-row.dpg-row-gap-below { box-shadow: inset 3px 0 0 var(--accent-2); }
 
-.tpar2-mobile-rank {
+.dpg-mobile-rank {
   flex: 0 0 auto;
   width: 28px;
   height: 28px;
@@ -5295,12 +5295,12 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   font-size: 0.8rem;
   font-weight: 700;
 }
-.tpar2-mobile-rank.medal-gold   { background: #e0b872; color: var(--text); }
-.tpar2-mobile-rank.medal-silver { background: #c2cad4; color: var(--text); }
-.tpar2-mobile-rank.medal-bronze { background: #d99a72; color: var(--text); }
-.tpar2-mobile-rank.standard     { background: var(--panel-2); color: var(--muted); border: 1px solid var(--border); }
+.dpg-mobile-rank.medal-gold   { background: #e0b872; color: var(--text); }
+.dpg-mobile-rank.medal-silver { background: #c2cad4; color: var(--text); }
+.dpg-mobile-rank.medal-bronze { background: #d99a72; color: var(--text); }
+.dpg-mobile-rank.standard     { background: var(--panel-2); color: var(--muted); border: 1px solid var(--border); }
 
-.tpar2-mobile-avatar-wrap {
+.dpg-mobile-avatar-wrap {
   position: relative;
   flex: 0 0 auto;
   width: 40px;
@@ -5316,7 +5316,7 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   color: var(--muted);
 }
 
-.tpar2-mobile-avatar {
+.dpg-mobile-avatar {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -5324,7 +5324,7 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   object-fit: cover;
 }
 
-.tpar2-mobile-identity {
+.dpg-mobile-identity {
   flex: 1 1 auto;
   min-width: 0;
   display: flex;
@@ -5332,7 +5332,7 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   gap: 2px;
 }
 
-.tpar2-mobile-name {
+.dpg-mobile-name {
   font-size: 16px;
   font-weight: 600;
   color: var(--link);
@@ -5341,7 +5341,7 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   text-overflow: ellipsis;
 }
 
-.tpar2-mobile-meta {
+.dpg-mobile-meta {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -5352,14 +5352,14 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   text-overflow: ellipsis;
 }
 
-.tpar2-mobile-team-mark {
+.dpg-mobile-team-mark {
   width: 14px;
   height: 14px;
   object-fit: contain;
   flex: 0 0 auto;
 }
 
-.tpar2-mobile-tpar-wrap {
+.dpg-mobile-dpg-wrap {
   flex: 0 0 auto;
   min-width: 48px;
   display: flex;
@@ -5368,18 +5368,18 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   gap: 2px;
 }
 
-.tpar2-mobile-tpar {
+.dpg-mobile-dpg {
   font-size: 20px;
   font-weight: 600;
   font-variant-numeric: tabular-nums;
 }
 
-.tpar2-mobile-tpar.tpar2-band-nodata {
+.dpg-mobile-dpg.dpg-band-nodata {
   font-size: 16px;
   font-weight: 400;
 }
 
-.tpar2-mobile-elite-pill {
+.dpg-mobile-elite-pill {
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -5416,8 +5416,8 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   .dual-ticker-name-abbr { display: inline; }
 
   /* --- "Full Rankings ->" collapses to "Full ->" --- */
-  .tpar2-full-label-desktop { display: none; }
-  .tpar2-full-label-mobile { display: inline; }
+  .dpg-full-label-desktop { display: none; }
+  .dpg-full-label-mobile { display: inline; }
 
   /* --- Weight pills: single non-wrapping scroll rail, no visible
      scrollbar, right-edge fade so it reads as scrollable. --- */
@@ -5436,7 +5436,7 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
     font-size: 13px;
     padding: 5px 10px;
   }
-  .tpar2-pill-rail::after {
+  .dpg-pill-rail::after {
     content: "";
     position: absolute;
     top: 0;
@@ -5447,15 +5447,15 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
     pointer-events: none;
   }
 
-  /* --- Kill the padded beige TPAR panel: one compact 12px line --- */
-  .tpar2-def-row {
+  /* --- Kill the padded beige DPG panel: one compact 12px line --- */
+  .dpg-def-row {
     flex-wrap: nowrap;
     background: transparent;
     border: none;
     padding: 6px 0;
     gap: 8px;
   }
-  .tpar2-def-chip {
+  .dpg-def-chip {
     font-size: 12px;
     color: var(--muted);
     white-space: nowrap;
@@ -5464,14 +5464,14 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
     flex: 1 1 auto;
     min-width: 0;
   }
-  .tpar2-def-full { display: none; }
-  .tpar2-def-short { display: inline; }
-  .tpar2-sort-control {
+  .dpg-def-full { display: none; }
+  .dpg-def-short { display: inline; }
+  .dpg-sort-control {
     flex: 0 0 auto;
     font-size: 11px;
     white-space: nowrap;
   }
-  .tpar2-sort-control select {
+  .dpg-sort-control select {
     font-size: 11px;
     padding: 2px 1px;
     width: 52px;
@@ -5482,7 +5482,7 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   #rankings-table-wrapper {
     display: none;
   }
-  .tpar2-mobile-list {
+  .dpg-mobile-list {
     display: block;
   }
 }
@@ -5640,7 +5640,7 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
    Mobile (<768px) wrestler profile rewrite: compact identity
    block, season chip row (replaces the season <table>), a
    "Season stats" bottom sheet (the desktop box score, presented
-   as a sheet), a one-row TPAR strip (replaces the TPAR card),
+   as a sheet), a one-row DPG strip (replaces the DPG card),
    and a 2-line-per-row match list (replaces the match <table>).
    Desktop (>=768px) is untouched -- these elements are hidden
    there by default and only shown inside the <768px block below.
@@ -5648,7 +5648,7 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
 
 .wp2m-identity,
 .wp2m-season-block,
-.wp2m-tpar-strip,
+.wp2m-dpg-strip,
 .wp2m-matches-header,
 .wp2m-match-list,
 .wp2m-label-short {
@@ -5856,9 +5856,9 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
 .wp2m-sheet-label { color: var(--muted); }
 .wp2m-sheet-value { font-weight: 600; color: var(--text); font-variant-numeric: tabular-nums; text-align: right; }
 
-/* --- TPAR strip --- */
+/* --- DPG strip --- */
 
-.wp2m-tpar-strip {
+.wp2m-dpg-strip {
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: var(--r-md);
@@ -5866,15 +5866,15 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   margin: 8px 0;
 }
 
-.wp2m-tpar-row {
+.wp2m-dpg-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
 }
-.wp2m-tpar-row + .wp2m-tpar-row { margin-top: 2px; }
+.wp2m-dpg-row + .wp2m-dpg-row { margin-top: 2px; }
 
-.wp2m-tpar-label {
+.wp2m-dpg-label {
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -5882,18 +5882,18 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   color: var(--muted);
 }
 
-.wp2m-tpar-percentile-label {
+.wp2m-dpg-percentile-label {
   font-size: 0.75rem;
   color: var(--muted);
 }
 
-.wp2m-tpar-number-group {
+.wp2m-dpg-number-group {
   display: flex;
   align-items: baseline;
   gap: 6px;
 }
 
-.wp2m-tpar-number {
+.wp2m-dpg-number {
   font-size: 28px;
   font-weight: 600;
   font-variant-numeric: tabular-nums;
@@ -5901,13 +5901,13 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   line-height: 1;
 }
 
-.wp2m-tpar-scale-link {
+.wp2m-dpg-scale-link {
   flex: 1 1 auto;
   max-width: 140px;
   display: block;
 }
 
-.wp2m-tpar-scale {
+.wp2m-dpg-scale {
   position: relative;
   display: block;
   height: 8px;
@@ -5915,7 +5915,7 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   background: linear-gradient(90deg, var(--warn) 0%, var(--muted-2) 50%, var(--accent) 100%);
 }
 
-.wp2m-tpar-marker {
+.wp2m-dpg-marker {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -6044,7 +6044,7 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
 .wp2m-match-impact.wp2m-impact-nodata { color: var(--muted-2); }
 
 @media (max-width: 767px) {
-  /* Reorder the page into: identity -> season chips -> TPAR strip ->
+  /* Reorder the page into: identity -> season chips -> DPG strip ->
      trajectory -> matches -> skill profile (below the fold). Scoped to
      .wp2m-reorder (wrestler.html only) so no other page's .page-container
      is affected. */
@@ -6055,7 +6055,7 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   .wp2m-reorder > .header { order: 1; display: none; }
   .wp2m-reorder > .wp2m-identity { order: 2; display: flex; }
   .wp2m-reorder > .wp2m-season-block { order: 3; display: block; }
-  .wp2m-reorder > .wp2m-tpar-strip { order: 4; display: block; }
+  .wp2m-reorder > .wp2m-dpg-strip { order: 4; display: block; }
   .wp2m-reorder > .season-selector-section { display: none; }
 
   .wp2m-reorder > .profile-summary-grid {

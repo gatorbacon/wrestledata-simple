@@ -3,7 +3,7 @@
   "name": "Brody Baumann",
   "team": "Purdue",
   "team_slug": "purdue",
-  "team_rank": 40,
+  "team_rank": 25,
   "weight_class": 174,
   "grade": "Redshirt Freshman",
   "hometown": "Evansville, Ind.",
@@ -11,12 +11,12 @@
   "photo_url": "https://purduesports.com/imgproxy/1N5Yh1XqfOfP63bImfAd9sEMht73R4vWMiiaX9LnTuE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3B1cmR1ZXNwb3J0cy1jb20tcHJvZC8yMDI1LzA1LzE2L05OcEF6YjNORnVjNzNtT3ByRFNRQld0ZnN0ZUR1S08xZzJXdnJGSUYud2VicA.webp",
   "previous_school": null,
   "year": 2024,
-  "current_rank": 63,
+  "current_rank": 57,
   "record": {
     "overall": "12-16",
     "vs_ranked": "12-16",
-    "vs_top10": "1-4",
-    "vs_top25": "2-10"
+    "vs_top10": "1-3",
+    "vs_top25": "2-12"
   },
   "metrics": {
     "pf7": 7.73,
@@ -31,10 +31,10 @@
     "techs": 2,
     "pins": 1,
     "mat_value": {
-      "mv_avg": 0.333,
+      "mv_avg": 0.355,
       "matches": 29,
-      "rank_weight": 76,
-      "rank_overall": 715,
+      "rank_weight": 74,
+      "rank_overall": 695,
       "version": "v1"
     }
   },
@@ -42,7 +42,7 @@
     "ranked_wins": 12,
     "ranked_losses": 16,
     "top10_wins": 1,
-    "top10_losses": 4,
+    "top10_losses": 3,
     "win_over_highest_rank": {
       "opponent_id": "24584806132",
       "opponent_rank": 1,
@@ -50,10 +50,10 @@
       "method": "Inj. 0:02"
     },
     "worst_loss": {
-      "opponent_id": "24586085132",
-      "opponent_rank": 68,
-      "opponent_name": "Cael Valencia",
-      "method": "Dec 9-4"
+      "opponent_id": "24595383132",
+      "opponent_rank": 51,
+      "opponent_name": "Myles Takats",
+      "method": "Dec 13-9"
     }
   },
   "match_list": [
@@ -63,16 +63,16 @@
       "opponent_career_id": null,
       "opponent_name": "Cael Valencia",
       "opponent_team": "Arizona State",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 174,
-      "opponent_rank": 68,
+      "opponent_rank": 44,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "5-0",
       "duration": "7:00",
       "event": "2024 NCAA Division I Championships",
-      "mv_impact": -3.19
+      "mv_impact": -2.96
     },
     {
       "date": "2024-03-23",
@@ -80,16 +80,16 @@
       "opponent_career_id": null,
       "opponent_name": "Myles Takats",
       "opponent_team": "Bucknell",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 43,
       "opponent_weight": 174,
-      "opponent_rank": 38,
+      "opponent_rank": 51,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "13-9",
       "duration": "7:00",
       "event": "2024 NCAA Division I Championships",
-      "mv_impact": -1.96
+      "mv_impact": -2.11
     },
     {
       "date": "2024-03-10",
@@ -99,14 +99,14 @@
       "opponent_team": "Ohio State",
       "opponent_team_rank": 12,
       "opponent_weight": 174,
-      "opponent_rank": 6,
+      "opponent_rank": 8,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "11-3",
       "duration": "7:00",
       "event": "2024 Big Ten Wrestling Championships",
-      "mv_impact": -1.61
+      "mv_impact": -1.71
     },
     {
       "date": "2024-03-10",
@@ -123,7 +123,7 @@
       "score": null,
       "duration": "0:02",
       "event": "2024 Big Ten Wrestling Championships",
-      "mv_impact": 8.87
+      "mv_impact": 8.93
     },
     {
       "date": "2024-03-10",
@@ -131,16 +131,16 @@
       "opponent_career_id": null,
       "opponent_name": "Max Maylor",
       "opponent_team": "Wisconsin",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 14,
       "opponent_weight": 174,
-      "opponent_rank": 16,
+      "opponent_rank": 19,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "18-5",
       "duration": "7:00",
       "event": "2024 Big Ten Wrestling Championships",
-      "mv_impact": -2.74
+      "mv_impact": -2.78
     },
     {
       "date": "2024-03-10",
@@ -148,16 +148,16 @@
       "opponent_career_id": null,
       "opponent_name": "Max Maylor",
       "opponent_team": "Wisconsin",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 14,
       "opponent_weight": 174,
-      "opponent_rank": 16,
+      "opponent_rank": 19,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "5-0",
       "duration": "7:00",
       "event": "2024 Big Ten Wrestling Championships",
-      "mv_impact": -1.74
+      "mv_impact": -1.78
     },
     {
       "date": "2024-02-16",
@@ -165,7 +165,7 @@
       "opponent_career_id": null,
       "opponent_name": "Edmond Ruth",
       "opponent_team": "Illinois",
-      "opponent_team_rank": 26,
+      "opponent_team_rank": 22,
       "opponent_weight": 174,
       "opponent_rank": 4,
       "weight_class": "174",
@@ -174,7 +174,7 @@
       "score": "11-2",
       "duration": "7:00",
       "event": "vs. Purdue",
-      "mv_impact": -1.58
+      "mv_impact": -1.56
     },
     {
       "date": "2024-02-11",
@@ -182,16 +182,16 @@
       "opponent_career_id": null,
       "opponent_name": "Andrew Sparks",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 24,
+      "opponent_team_rank": 13,
       "opponent_weight": 174,
-      "opponent_rank": 24,
+      "opponent_rank": 21,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "11-1",
       "duration": "7:00",
       "event": "vs. Purdue",
-      "mv_impact": -2.97
+      "mv_impact": -2.96
     },
     {
       "date": "2024-02-09",
@@ -199,16 +199,16 @@
       "opponent_career_id": null,
       "opponent_name": "David Ferrante",
       "opponent_team": "Northwestern",
-      "opponent_team_rank": 57,
+      "opponent_team_rank": 53,
       "opponent_weight": 174,
-      "opponent_rank": 171,
+      "opponent_rank": 96,
       "weight_class": "174",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "1:30",
       "event": "vs. Purdue",
-      "mv_impact": 4.68
+      "mv_impact": 5.23
     },
     {
       "date": "2024-02-04",
@@ -216,16 +216,16 @@
       "opponent_career_id": null,
       "opponent_name": "Max Maylor",
       "opponent_team": "Wisconsin",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 14,
       "opponent_weight": 174,
-      "opponent_rank": 16,
+      "opponent_rank": 19,
       "weight_class": "174",
       "result": "L",
       "method": "SV-1",
       "score": "19-16",
       "duration": "8:15",
       "event": "vs. Wisconsin",
-      "mv_impact": -1.74
+      "mv_impact": -1.78
     },
     {
       "date": "2024-01-27",
@@ -233,16 +233,16 @@
       "opponent_career_id": null,
       "opponent_name": "Donnell Washington",
       "opponent_team": "Indiana",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 27,
       "opponent_weight": 174,
-      "opponent_rank": 37,
+      "opponent_rank": 13,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "9-4",
       "duration": "7:00",
       "event": "vs. Purdue",
-      "mv_impact": -1.7
+      "mv_impact": -1.46
     },
     {
       "date": "2024-01-21",
@@ -250,16 +250,16 @@
       "opponent_career_id": null,
       "opponent_name": "Bubba Wilson",
       "opponent_team": "Nebraska",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 11,
       "opponent_weight": 174,
-      "opponent_rank": 27,
+      "opponent_rank": 24,
       "weight_class": "174",
       "result": "W",
       "method": "DEC",
       "score": "7-2",
       "duration": "7:00",
       "event": "vs. Purdue",
-      "mv_impact": 3.7
+      "mv_impact": 3.71
     },
     {
       "date": "2024-01-19",
@@ -267,16 +267,16 @@
       "opponent_career_id": null,
       "opponent_name": "Patrick Kennedy",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 2,
+      "opponent_team_rank": 3,
       "opponent_weight": 174,
-      "opponent_rank": 9,
+      "opponent_rank": 11,
       "weight_class": "174",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "4:43",
       "event": "vs. Purdue",
-      "mv_impact": -3.19
+      "mv_impact": -3.26
     },
     {
       "date": "2024-01-14",
@@ -284,16 +284,16 @@
       "opponent_career_id": null,
       "opponent_name": "Jackson Turley",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 20,
+      "opponent_team_rank": 17,
       "opponent_weight": 174,
-      "opponent_rank": 14,
+      "opponent_rank": 16,
       "weight_class": "174",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:27",
       "event": "vs. Rutgers",
-      "mv_impact": -4.37
+      "mv_impact": -4.4
     },
     {
       "date": "2024-01-03",
@@ -303,14 +303,14 @@
       "opponent_team": "Lindenwood",
       "opponent_team_rank": 72,
       "opponent_weight": 174,
-      "opponent_rank": 280,
+      "opponent_rank": 238,
       "weight_class": "174",
       "result": "W",
       "method": "TF",
       "score": "18-3",
       "duration": "3:46",
       "event": "vs. Purdue",
-      "mv_impact": 1.81
+      "mv_impact": 1.79
     },
     {
       "date": "2023-12-19",
@@ -318,16 +318,16 @@
       "opponent_career_id": null,
       "opponent_name": "Logan Heckert",
       "opponent_team": "Campbell",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 31,
       "opponent_weight": 174,
-      "opponent_rank": 90,
+      "opponent_rank": 145,
       "weight_class": "174",
       "result": "W",
       "method": "TF",
       "score": "18-3",
       "duration": "3:17",
       "event": "vs. Purdue",
-      "mv_impact": 5.02
+      "mv_impact": 4.06
     },
     {
       "date": "2023-12-19",
@@ -335,16 +335,16 @@
       "opponent_career_id": null,
       "opponent_name": "Gaven Sax",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 49,
+      "opponent_team_rank": 74,
       "opponent_weight": 174,
-      "opponent_rank": 13,
+      "opponent_rank": 25,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "13-1",
       "duration": "7:00",
       "event": "vs. Purdue",
-      "mv_impact": -2.09
+      "mv_impact": -2.18
     },
     {
       "date": "2023-12-19",
@@ -352,16 +352,16 @@
       "opponent_career_id": null,
       "opponent_name": "Tye Monteiro",
       "opponent_team": "Stanford",
-      "opponent_team_rank": 21,
+      "opponent_team_rank": 30,
       "opponent_weight": 174,
-      "opponent_rank": 117,
+      "opponent_rank": 93,
       "weight_class": "174",
       "result": "W",
       "method": "SV-1",
       "score": "7-4",
       "duration": "8:15",
       "event": "vs. Stanford",
-      "mv_impact": 2.32
+      "mv_impact": 2.47
     },
     {
       "date": "2023-12-02",
@@ -369,16 +369,16 @@
       "opponent_career_id": null,
       "opponent_name": "Cael Valencia",
       "opponent_team": "Arizona State",
-      "opponent_team_rank": 5,
+      "opponent_team_rank": 8,
       "opponent_weight": 174,
-      "opponent_rank": 68,
+      "opponent_rank": 44,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "9-4",
       "duration": "7:00",
       "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational",
-      "mv_impact": -3.19
+      "mv_impact": -2.96
     },
     {
       "date": "2023-12-02",
@@ -388,14 +388,14 @@
       "opponent_team": "Rider",
       "opponent_team_rank": 50,
       "opponent_weight": 174,
-      "opponent_rank": 31,
+      "opponent_rank": 32,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "8-6",
       "duration": "7:00",
       "event": "Cliff Keen Las Vegas Collegiate Wrestling Invitational",
-      "mv_impact": -2.37
+      "mv_impact": -2.39
     },
     {
       "date": "2023-11-11",
@@ -403,16 +403,16 @@
       "opponent_career_id": null,
       "opponent_name": "Gunner Filipowicz",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 41,
+      "opponent_team_rank": 38,
       "opponent_weight": 165,
-      "opponent_rank": 25,
+      "opponent_rank": 26,
       "weight_class": "174",
       "result": "W",
       "method": "DEC",
       "score": "9-8",
       "duration": "7:00",
       "event": "vs. Purdue",
-      "mv_impact": 4.37
+      "mv_impact": 4.32
     },
     {
       "date": "2023-11-11",
@@ -420,16 +420,16 @@
       "opponent_career_id": null,
       "opponent_name": "Alex Faison",
       "opponent_team": "NC State",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 5,
       "opponent_weight": 174,
-      "opponent_rank": 35,
+      "opponent_rank": 23,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
       "event": "vs. Purdue",
-      "mv_impact": -2.51
+      "mv_impact": -2.4
     },
     {
       "date": "2023-11-05",
@@ -437,9 +437,9 @@
       "opponent_career_id": null,
       "opponent_name": "Jonathan Conrad",
       "opponent_team": "Brown",
-      "opponent_team_rank": 61,
+      "opponent_team_rank": 58,
       "opponent_weight": 174,
-      "opponent_rank": 111,
+      "opponent_rank": 99,
       "weight_class": "174",
       "result": "W",
       "method": "MD",
@@ -454,16 +454,16 @@
       "opponent_career_id": null,
       "opponent_name": "Myles Takats",
       "opponent_team": "Bucknell",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 43,
       "opponent_weight": 174,
-      "opponent_rank": 38,
+      "opponent_rank": 51,
       "weight_class": "174",
       "result": "W",
       "method": "DEC",
       "score": "9-5",
       "duration": "7:00",
       "event": "Clarion Open",
-      "mv_impact": 4.04
+      "mv_impact": 3.89
     },
     {
       "date": "2023-11-05",
@@ -471,16 +471,16 @@
       "opponent_career_id": null,
       "opponent_name": "Solomon Dubler",
       "opponent_team": "Clarion",
-      "opponent_team_rank": 65,
+      "opponent_team_rank": 62,
       "opponent_weight": 174,
-      "opponent_rank": 208,
+      "opponent_rank": 178,
       "weight_class": "174",
       "result": "W",
       "method": "DEC",
       "score": "6-3",
       "duration": "7:00",
       "event": "Clarion Open",
-      "mv_impact": 0.69
+      "mv_impact": 0.94
     },
     {
       "date": "2023-11-05",
@@ -488,16 +488,16 @@
       "opponent_career_id": null,
       "opponent_name": "Marty Larkin",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 32,
       "opponent_weight": 174,
-      "opponent_rank": 93,
+      "opponent_rank": 77,
       "weight_class": "174",
       "result": "W",
       "method": "MD",
       "score": "13-4",
       "duration": "7:00",
       "event": "Clarion Open",
-      "mv_impact": 4.16
+      "mv_impact": 4.27
     },
     {
       "date": "2023-11-05",
@@ -505,16 +505,16 @@
       "opponent_career_id": null,
       "opponent_name": "Rollie Denker",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 46,
+      "opponent_team_rank": 32,
       "opponent_weight": 174,
-      "opponent_rank": 174,
+      "opponent_rank": 121,
       "weight_class": "174",
       "result": "W",
       "method": "MD",
       "score": "11-0",
       "duration": "7:00",
       "event": "Clarion Open",
-      "mv_impact": 2.57
+      "mv_impact": 3.11
     },
     {
       "date": "2023-11-05",
@@ -524,17 +524,17 @@
       "opponent_team": "Ohio State",
       "opponent_team_rank": 12,
       "opponent_weight": 174,
-      "opponent_rank": 6,
+      "opponent_rank": 8,
       "weight_class": "174",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "5:31",
       "event": "Clarion Open",
-      "mv_impact": -3.61
+      "mv_impact": -3.71
     }
   ],
-  "profile_generated_at": "2026-09-05",
+  "profile_generated_at": "2026-09-09",
   "season_summary": [
     {
       "season": 2026,
@@ -553,7 +553,7 @@
       "team_slug": "purdue",
       "weight_class": 174,
       "grade": "Redshirt Sophomore",
-      "current_rank": 30,
+      "current_rank": 24,
       "record": "19-13"
     },
     {
@@ -563,7 +563,7 @@
       "team_slug": "purdue",
       "weight_class": 174,
       "grade": "Redshirt Freshman",
-      "current_rank": 63,
+      "current_rank": 57,
       "record": "12-16"
     },
     {
@@ -573,7 +573,7 @@
       "team_slug": "purdue",
       "weight_class": 174,
       "grade": "Freshman",
-      "current_rank": 45,
+      "current_rank": 84,
       "record": "11-5"
     }
   ]

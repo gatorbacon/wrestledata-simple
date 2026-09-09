@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-make_mbt_official.py — Promote MBT 50/50 to the official TPAR system.
+make_mbt_official.py — Promote MBT 50/50 to the official DPG system.
 
 What this does
 --------------
@@ -10,7 +10,7 @@ What this does
    - Renames match_list[].mv_impact → mv_impact_v1  (preserved, never deleted)
    - Computes MBT per-match impact and stores as mv_impact
    - Renames metrics.mat_value.mv_avg → mv_avg_v1
-   - Writes new metrics.mat_value.mv_avg = MBT 50/50 TPAR
+   - Writes new metrics.mat_value.mv_avg = MBT 50/50 DPG
    - Updates rank_weight / rank_overall / version
 
 Rollback
@@ -40,16 +40,16 @@ def parse_date_iso(s):
     return s
 
 
-def compute_per_match_impacts(match_list, rolling_timeline, final_tpar):
+def compute_per_match_impacts(match_list, rolling_timeline, final_dpg):
     """
     Compute MBT per-match impact for each entry in match_list.
 
     Strategy:
     - Sort the rolling MBT timeline chronologically.
-    - For each timeline date, delta = tpar[i] - tpar[i-1]  (first: tpar[0] - 0).
+    - For each timeline date, delta = dpg[i] - dpg[i-1]  (first: dpg[0] - 0).
     - Count matches on that date from match_list, spread delta equally.
     - For dates not in timeline (e.g. NCAA tournament), use
-      (final_tpar - last_timeline_tpar) spread across remaining matches.
+      (final_dpg - last_timeline_dpg) spread across remaining matches.
     - Matches with no date or unknown date get impact 0.
     """
     if not rolling_timeline:
@@ -65,13 +65,13 @@ def compute_per_match_impacts(match_list, rolling_timeline, final_tpar):
 
     # Build delta per ISO date
     delta_by_date = {}
-    prev_tpar = 0.0
+    prev_dpg = 0.0
     for pt in tl:
         iso = parse_date_iso(pt['date'])
-        delta_by_date[iso] = pt['tpar'] - prev_tpar
-        prev_tpar = pt['tpar']
+        delta_by_date[iso] = pt['dpg'] - prev_dpg
+        prev_dpg = pt['dpg']
 
-    last_rolling_tpar = tl[-1]['tpar'] if tl else 0.0
+    last_rolling_dpg = tl[-1]['dpg'] if tl else 0.0
     last_rolling_iso  = parse_date_iso(tl[-1]['date']) if tl else None
 
     # Count matches per date
@@ -93,10 +93,10 @@ def compute_per_match_impacts(match_list, rolling_timeline, final_tpar):
             impacts[idx] = round(delta_by_date[d] / count, 4) if count else 0.0
         else:
             # Date not in rolling timeline → probably tournament or post-season
-            # Spread (final_tpar - last_rolling_tpar) across all such matches
+            # Spread (final_dpg - last_rolling_dpg) across all such matches
             tournament_dates = {dd for dd in date_counts if dd not in delta_by_date and dd}
             tournament_match_count = sum(date_counts[dd] for dd in tournament_dates)
-            tournament_delta = final_tpar - last_rolling_tpar if final_tpar is not None else 0.0
+            tournament_delta = final_dpg - last_rolling_dpg if final_dpg is not None else 0.0
             count = date_counts[d]
             per_match = (tournament_delta / tournament_match_count
                          if tournament_match_count else 0.0)
@@ -118,7 +118,7 @@ def main():
 
     mv_file      = MV_DIR / f'mat_value_{a.season}.json'
     mv_v1_file   = MV_DIR / f'mat_value_v1_{a.season}.json'
-    mbt_file     = MV_DIR / f'tpar_mbt_{a.season}.json'
+    mbt_file     = MV_DIR / f'dpg_mbt_{a.season}.json'
     rolling_file = MV_DIR / f'rolling_mbt_{a.season}.json'
 
     for f in (mv_file, mbt_file, rolling_file):
@@ -138,7 +138,7 @@ def main():
     # Compute per-weight MBT ranks
     by_weight = defaultdict(list)
     for wid, info in mbt_data.items():
-        by_weight[info['weight']].append((wid, info['tpar_50_50']))
+        by_weight[info['weight']].append((wid, info['dpg_50_50']))
 
     weight_rank = {}   # wid → rank within weight
     for w, entries in by_weight.items():
@@ -147,7 +147,7 @@ def main():
             weight_rank[wid] = rank
 
     # Sort all MBT wrestlers by 50/50 for overall rank
-    all_sorted = sorted(mbt_data.items(), key=lambda x: -x[1]['tpar_50_50'])
+    all_sorted = sorted(mbt_data.items(), key=lambda x: -x[1]['dpg_50_50'])
     overall_rank = {wid: r for r, (wid, _) in enumerate(all_sorted, 1)}
 
     new_mv = []
@@ -159,7 +159,7 @@ def main():
             'team':           info.get('team',  old.get('team',  '')),
             'weight':         info['weight'],
             'current_rank':   old.get('current_rank'),
-            'mv_avg':         round(info['tpar_50_50'], 4),
+            'mv_avg':         round(info['dpg_50_50'], 4),
             'mv_avg_v1':      old.get('mv_avg'),        # backup
             'matches':        old.get('matches', 0),
             'mv_rank_overall': overall_rank.get(wid),
@@ -218,8 +218,8 @@ def main():
 
         # Compute MBT per-match impacts
         wid_timeline = rolling.get(wid, [])
-        final_tpar   = mbt_info['tpar_50_50']
-        impacts = compute_per_match_impacts(match_list, wid_timeline, final_tpar)
+        final_dpg   = mbt_info['dpg_50_50']
+        impacts = compute_per_match_impacts(match_list, wid_timeline, final_dpg)
         for idx, m in enumerate(match_list):
             m['mv_impact'] = impacts.get(idx, 0.0)
 
@@ -230,7 +230,7 @@ def main():
             mv_metrics['rank_weight_v1']  = mv_metrics.get('rank_weight')
             mv_metrics['rank_overall_v1'] = mv_metrics.get('rank_overall')
 
-        mv_metrics['mv_avg']       = round(mbt_info['tpar_50_50'], 4)
+        mv_metrics['mv_avg']       = round(mbt_info['dpg_50_50'], 4)
         mv_metrics['rank_weight']  = weight_rank.get(wid)
         mv_metrics['rank_overall'] = overall_rank.get(wid)
         mv_metrics['version']      = 'mbt_50_50'

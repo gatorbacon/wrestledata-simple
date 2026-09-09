@@ -1,8 +1,8 @@
 // ========================================
 // Team profile page: reframed around 3 jobs in order -- projection (team
 // points vs. the field), lineup (who starts, what each weight is worth),
-// how they wrestle (the box-score stats). TPAR stays but is demoted to a
-// column -- the hero is team points, not TPAR.
+// how they wrestle (the box-score stats). DPG stays but is demoted to a
+// column -- the hero is team points, not DPG.
 // ========================================
 
 const SEASON = "2026";
@@ -22,8 +22,8 @@ function fmtDecimal(v, decimals = 1) {
   return Number(v).toFixed(decimals);
 }
 
-// TPAR: no sign, same format as the rankings page ("5.8" not "+5.8").
-function fmtTpar(v) {
+// DPG: no sign, same format as the rankings page ("5.8" not "+5.8").
+function fmtDpg(v) {
   if (v === null || v === undefined || isNaN(v)) return null;
   return v.toFixed(1);
 }
@@ -295,11 +295,11 @@ function renderStartingRoster(starters, xtpData) {
     rankTd.appendChild(rankChip(rank));
     tr.appendChild(rankTd);
 
-    const tparTd = document.createElement("td");
-    tparTd.className = "num";
-    const tparVal = fmtTpar(profile?.metrics?.mat_value?.mv_avg);
-    tparTd.textContent = tparVal !== null ? tparVal : "—";
-    tr.appendChild(tparTd);
+    const dpgTd = document.createElement("td");
+    dpgTd.className = "num";
+    const dpgVal = fmtDpg(profile?.metrics?.mat_value?.mv_avg);
+    dpgTd.textContent = dpgVal !== null ? dpgVal : "—";
+    tr.appendChild(dpgTd);
 
     const projTd = document.createElement("td");
     projTd.className = "num tp2-proj-cell";
@@ -425,15 +425,15 @@ function renderFinishCard(metrics) {
 // ===============================
 
 const NEXT_UP_RANK_CUTOFF = 40;
-const NEXT_UP_TPAR_CUTOFF = 0;
+const NEXT_UP_DPG_CUTOFF = 0;
 
-function renderTparCell(profile) {
+function renderDpgCell(profile) {
   const mv = profile?.metrics?.mat_value?.mv_avg;
   if (mv === null || mv === undefined) {
-    return `<span class="tp2-tpar-nodata">— <span class="tp2-nodata-label">Insufficient data</span></span>`;
+    return `<span class="tp2-dpg-nodata">— <span class="tp2-nodata-label">Insufficient data</span></span>`;
   }
-  const cls = mv < 0 ? "tp2-tpar-negative" : mv >= 3.0 ? "tp2-tpar-positive" : "";
-  return `<span class="${cls}">${fmtTpar(mv)}</span>`;
+  const cls = mv < 0 ? "tp2-dpg-negative" : mv >= 3.0 ? "tp2-dpg-positive" : "";
+  return `<span class="${cls}">${fmtDpg(mv)}</span>`;
 }
 
 function renderRemainingRoster(remaining) {
@@ -451,7 +451,7 @@ function renderRemainingRoster(remaining) {
     const rank = entry.profile?.current_rank;
     const mv = entry.profile?.metrics?.mat_value?.mv_avg;
     const isNextUp = (rank !== null && rank !== undefined && rank <= NEXT_UP_RANK_CUTOFF) ||
-      (mv !== null && mv !== undefined && mv > NEXT_UP_TPAR_CUTOFF);
+      (mv !== null && mv !== undefined && mv > NEXT_UP_DPG_CUTOFF);
     (isNextUp ? nextUp : rest).push(entry);
   });
 
@@ -464,7 +464,7 @@ function renderRemainingRoster(remaining) {
       `<td>${weight || "—"}</td>` +
       `<td>${nameCell}</td>` +
       `<td>${rank ? `<span class="tp2-rank-chip ${rankTierClass(rank)}">#${rank}</span>` : "—"}</td>` +
-      `<td class="num">${renderTparCell(profile)}</td>` +
+      `<td class="num">${renderDpgCell(profile)}</td>` +
       `</tr>`;
   }).join("");
 

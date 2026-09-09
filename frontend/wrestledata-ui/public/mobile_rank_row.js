@@ -58,18 +58,18 @@ function mobileAbbrevGrade(grade) {
   return grade;
 }
 
-// Same 4 bands/thresholds as the desktop P4P table (tpar2-band-* colors are
+// Same 4 bands/thresholds as the desktop P4P table (dpg-band-* colors are
 // generic, shared classes already defined in styles.css).
-const MOBILE_TPAR_BANDS = [
-  { min: 5.5, cls: "tpar2-band-elite", elite: true },
-  { min: 4.5, cls: "tpar2-band-dominant" },
-  { min: 3.5, cls: "tpar2-band-solid" },
-  { min: -Infinity, cls: "tpar2-band-developing" },
+const MOBILE_DPG_BANDS = [
+  { min: 5.5, cls: "dpg-band-elite", elite: true },
+  { min: 4.5, cls: "dpg-band-dominant" },
+  { min: 3.5, cls: "dpg-band-solid" },
+  { min: -Infinity, cls: "dpg-band-developing" },
 ];
-function mobileTparBand(tpar) {
-  if (tpar === null || tpar === undefined) return null;
-  const rounded = Math.round(tpar * 10) / 10;
-  return MOBILE_TPAR_BANDS.find(b => rounded >= b.min);
+function mobileDpgBand(dpg) {
+  if (dpg === null || dpg === undefined) return null;
+  const rounded = Math.round(dpg * 10) / 10;
+  return MOBILE_DPG_BANDS.find(b => rounded >= b.min);
 }
 
 function mobileRankChipClass(rank) {
@@ -80,11 +80,11 @@ function mobileRankChipClass(rank) {
 }
 
 // row: { rank, wrestlerId, name, team, teamSlug, teamAbbr, weightClass,
-//        grade, photoUrl, tpar, gapCls }
-// gapCls (optional): "tpar2-row-gap-above" / "tpar2-row-gap-below", same
-// TPAR-vs-editorial-rank disagreement accent already used on desktop rows.
+//        grade, photoUrl, dpg, gapCls }
+// gapCls (optional): "dpg-row-gap-above" / "dpg-row-gap-below", same
+// DPG-vs-editorial-rank disagreement accent already used on desktop rows.
 function renderMobileRankRow(row) {
-  const band = mobileTparBand(row.tpar);
+  const band = mobileDpgBand(row.dpg);
   const rankCls = mobileRankChipClass(row.rank);
 
   const metaParts = [];
@@ -96,31 +96,31 @@ function renderMobileRankRow(row) {
   const metaText = metaParts.join(" · ");
 
   const teamCrest = row.teamSlug
-    ? `<img class="tpar2-mobile-team-mark" src="/assets/team_logos/${row.teamSlug}.svg" alt="" onerror="this.remove()">`
+    ? `<img class="dpg-mobile-team-mark" src="/assets/team_logos/${row.teamSlug}.svg" alt="" onerror="this.remove()">`
     : "";
 
   const initials = mobileInitials(row.name);
   const avatarImg = row.photoUrl
-    ? `<img class="tpar2-mobile-avatar" src="${row.photoUrl}" alt="" loading="lazy" onerror="this.style.display='none'">`
+    ? `<img class="dpg-mobile-avatar" src="${row.photoUrl}" alt="" loading="lazy" onerror="this.style.display='none'">`
     : "";
 
-  const tparHtml = (row.tpar === null || row.tpar === undefined)
-    ? `<span class="tpar2-mobile-tpar tpar2-band-nodata">—</span>`
-    : `<span class="tpar2-mobile-tpar ${band.cls}">${row.tpar.toFixed(1)}</span>` +
-      (band.elite ? `<span class="tpar2-mobile-elite-pill">ELITE</span>` : "");
+  const dpgHtml = (row.dpg === null || row.dpg === undefined)
+    ? `<span class="dpg-mobile-dpg dpg-band-nodata">—</span>`
+    : `<span class="dpg-mobile-dpg ${band.cls}">${row.dpg.toFixed(1)}</span>` +
+      (band.elite ? `<span class="dpg-mobile-elite-pill">ELITE</span>` : "");
 
   const href = row.wrestlerId ? `/wrestler.html?id=${row.wrestlerId}` : "#";
   const gapCls = row.gapCls || "";
 
   return (
-    `<a class="tpar2-mobile-row ${gapCls}" href="${href}">` +
-    `<span class="tpar2-mobile-rank ${rankCls}">${row.rank || "—"}</span>` +
-    `<span class="tpar2-mobile-avatar-wrap"><span class="tpar2-mobile-avatar-initials">${initials}</span>${avatarImg}</span>` +
-    `<span class="tpar2-mobile-identity">` +
-    `<span class="tpar2-mobile-name">${row.name || ""}</span>` +
-    `<span class="tpar2-mobile-meta">${metaText}${teamCrest}</span>` +
+    `<a class="dpg-mobile-row ${gapCls}" href="${href}">` +
+    `<span class="dpg-mobile-rank ${rankCls}">${row.rank || "—"}</span>` +
+    `<span class="dpg-mobile-avatar-wrap"><span class="dpg-mobile-avatar-initials">${initials}</span>${avatarImg}</span>` +
+    `<span class="dpg-mobile-identity">` +
+    `<span class="dpg-mobile-name">${row.name || ""}</span>` +
+    `<span class="dpg-mobile-meta">${metaText}${teamCrest}</span>` +
     `</span>` +
-    `<span class="tpar2-mobile-tpar-wrap">${tparHtml}</span>` +
+    `<span class="dpg-mobile-dpg-wrap">${dpgHtml}</span>` +
     `</a>`
   );
 }

@@ -623,7 +623,7 @@ def enrich_rankings_with_region_data(
             # No previous rankings available (baseline drop)
             enriched_entry["is_new"] = False
         
-        # DO NOT include: mv, tpar, mat_value, or any TPAR-related fields
+        # DO NOT include: mv, dpg, mat_value, or any DPG-related fields
         # These are removed from the archive output
         
         enriched_rankings.append(enriched_entry)

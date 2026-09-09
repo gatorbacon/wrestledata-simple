@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wrestler DPG Chart — MatSavant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css?v=20260921" />
+  <style>
+    .wv-header { text-align: center; margin-bottom: 32px; }
+    .wv-search { max-width: 420px; margin: 0 auto 28px; display: flex; gap: 8px; }
+    .wv-search input {
+      flex: 1; padding: 9px 12px; border-radius: 8px; border: 1px solid var(--border);
+      background: var(--panel); color: var(--text); font-size: 0.9rem;
+    }
+    .wv-search button {
+      padding: 9px 16px; border-radius: 8px; border: none; background: var(--accent);
+      color: #fff; font-weight: 700; font-size: 0.85rem; cursor: pointer;
+    }
+
+    .wv-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--r-md, 14px);
+      padding: 24px 28px 20px;
+      margin-bottom: 24px;
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .wv-card-head { display: flex; align-items: flex-start; gap: 16px; }
+    .wv-photo {
+      width: 60px; height: 60px; border-radius: 50%; object-fit: cover;
+      background: var(--panel-2); border: 1px solid var(--border); flex-shrink: 0;
+    }
+    .wv-name-block { flex: 1; min-width: 0; }
+    .wv-name-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .wv-name { font-size: 1.35rem; font-weight: 800; color: var(--text); }
+    .wv-weight-badge {
+      font-size: 0.9rem; font-weight: 800; padding: 3px 12px; border-radius: 999px; line-height: 1.4;
+      background: var(--panel-2); color: var(--text);
+    }
+    .wv-meta { font-size: 0.86rem; color: var(--muted); margin-top: 3px; }
+    .wv-stat { text-align: center; padding: 0 18px; flex-shrink: 0; }
+    .wv-stat .label { font-size: 0.78rem; color: var(--muted); }
+    .wv-stat .value { font-size: 1.5rem; font-weight: 800; color: var(--text); margin-top: 2px; }
+
+    .wv-caption {
+      text-align: center; font-size: 0.82rem; color: var(--muted); font-style: italic;
+      margin: 18px 0 4px; padding-top: 14px; border-top: 1px solid var(--border);
+    }
+    .wv-chart-wrap { width: 100%; overflow-x: auto; }
+    .wv-chart-wrap svg { display: block; margin: 0 auto; }
+    .wv-chart-wrap svg circle[data-tooltip] { cursor: pointer; }
+
+    .wv-card-legend { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 8px; font-size: 0.82rem; color: var(--text); font-weight: 600; }
+    .wv-card-legend .dot { display: inline-block; width: 11px; height: 11px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; }
+
+    .wv-empty { text-align: center; color: var(--muted); padding: 60px 20px; }
+    .wv-loading { text-align: center; color: var(--muted); padding: 60px 20px; }
+
+    .rv-tooltip {
+      position: fixed; z-index: 1000; pointer-events: none;
+      background: #211c16; color: #f5f1e8; border-radius: 8px;
+      padding: 10px 13px; font-size: 0.8rem; line-height: 1.5;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      opacity: 0; transform: translateY(4px); transition: opacity 0.1s ease, transform 0.1s ease;
+      max-width: 220px;
+    }
+    .rv-tooltip.visible { opacity: 1; transform: translateY(0); }
+    .rv-tooltip .tt-head { font-weight: 800; margin-bottom: 4px; color: #fff; }
+    .rv-tooltip .tt-row { display: flex; justify-content: space-between; gap: 14px; }
+    .rv-tooltip .tt-row .tt-label { color: #b8ae9c; }
+    .rv-tooltip .tt-row .tt-value { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <script src="/header.js?v=20260908"></script>
+
+  <div class="page-container">
+    <div class="wv-header">
+      <h1 id="wv-title">Wrestler DPG Chart</h1>
+      <p id="wv-subtitle" style="color:var(--muted); margin-top:6px;">Career DPG by season, across every school</p>
+    </div>
+
+    <div class="wv-search">
+      <input id="wv-search-input" type="text" placeholder="career_id, e.g. career_002026" />
+      <button id="wv-search-btn">View</button>
+    </div>
+
+    <div id="wv-body"><div class="wv-loading">Loading…</div></div>
+  </div>
+
+  <script src="/reports/shared/chart.js?v=20260921"></script>
+  <script>
+(function () {
+  'use strict';
+  const C = window.WrestlerChart;
+
+  function qs(name) {
+    return new URLSearchParams(window.location.search).get(name);
+  }
+
+  function fmt(v) {
+    return v === null || v === undefined ? '—' : v.toFixed(2);
+  }
+
+  function render(wrestler, colorMap) {
+    document.getElementById('wv-title').textContent = wrestler.name || 'Wrestler DPG Chart';
+    const path = (wrestler.school_path || []).join(' → ');
+    document.getElementById('wv-subtitle').textContent = path || 'Career DPG by season';
+
+    const qualifying = C.qualifyingSeasons(wrestler);
+    const careerAvg = C.matchWeightedAvg(qualifying);
+    const lastSeason = wrestler.seasons[wrestler.seasons.length - 1];
+    const badgeColor = C.colorFor(lastSeason.team_slug, colorMap);
+
+    const photo = wrestler.photo_url
+      ? `<img class="wv-photo" src="${C.esc(wrestler.photo_url)}" alt="${C.esc(wrestler.name)}" onerror="this.style.visibility='hidden'">`
+      : `<div class="wv-photo"></div>`;
+
+    const legendSchools = [];
+    wrestler.seasons.forEach(s => {
+      if (!legendSchools.some(l => l.slug === s.team_slug)) {
+        legendSchools.push({ slug: s.team_slug, name: s.team });
+      }
+    });
+    const legendHtml = legendSchools.map(l => {
+      const c = C.colorFor(l.slug, colorMap);
+      return `<span><span class="dot" style="background:${C.hexToRgba(c.hex, 0.85)}${c.stroke ? ';border:1.5px solid #211c16' : ''}"></span>${C.esc(l.name)}</span>`;
+    }).join('');
+
+    const body = document.getElementById('wv-body');
+    const card = document.createElement('div');
+    card.className = 'wv-card';
+    card.innerHTML = `
+      <div class="wv-card-head">
+        ${photo}
+        <div class="wv-name-block">
+          <div class="wv-name-row">
+            <span class="wv-name">${C.esc(wrestler.name || 'Unknown')}</span>
+            ${wrestler.weight_class ? `<span class="wv-weight-badge" style="background:${C.hexToRgba(badgeColor.hex, 0.85)}; color:${C.textColorFor(badgeColor.hex)}">${wrestler.weight_class}</span>` : ''}
+          </div>
+          <div class="wv-meta">${C.esc(path)}</div>
+        </div>
+        <div class="wv-stat"><div class="label">Career DPG</div><div class="value">${fmt(careerAvg)}</div></div>
+      </div>
+      <div class="wv-caption">match-weighted &middot; n&lt;6 seasons shown hollow, marked *, excluded from the average</div>
+      <div class="wv-chart-wrap"></div>
+      <div class="wv-card-legend">${legendHtml}</div>
+    `;
+    body.innerHTML = '';
+    body.appendChild(card);
+    card.querySelector('.wv-chart-wrap').innerHTML = C.buildChartSVG(wrestler, colorMap);
+    C.wireTooltips(card.querySelector('.wv-chart-wrap'));
+  }
+
+  function load(id) {
+    const body = document.getElementById('wv-body');
+    body.innerHTML = '<div class="wv-loading">Loading…</div>';
+    Promise.all([
+      fetch(`/data/reports/wrestler_view/${id}.json`).then(r => { if (!r.ok) throw new Error('not found'); return r.json(); }),
+      fetch('/data/team_colors.json').then(r => r.ok ? r.json() : { teams: {}, default: C.DEFAULT_COLOR }).catch(() => ({ teams: {}, default: C.DEFAULT_COLOR })),
+    ])
+      .then(([data, colorMap]) => render(data, colorMap))
+      .catch(() => {
+        body.innerHTML = `<div class="wv-empty">No wrestler view found for "${C.esc(id)}". Check the career_id and try again.</div>`;
+      });
+  }
+
+  document.getElementById('wv-search-btn').addEventListener('click', () => {
+    const v = document.getElementById('wv-search-input').value.trim();
+    if (!v) return;
+    const url = new URL(window.location);
+    url.searchParams.set('id', v);
+    window.history.pushState({}, '', url);
+    load(v);
+  });
+  document.getElementById('wv-search-input').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') document.getElementById('wv-search-btn').click();
+  });
+
+  const id = qs('id');
+  if (id) {
+    document.getElementById('wv-search-input').value = id;
+    load(id);
+  } else {
+    document.getElementById('wv-body').innerHTML =
+      '<div class="wv-empty">Enter a career_id above, or use ?id=career_XXXXXX in the URL.</div>';
+  }
+})();
+  </script>
+</body>
+</html>

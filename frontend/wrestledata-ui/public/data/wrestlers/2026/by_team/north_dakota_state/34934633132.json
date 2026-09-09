@@ -3,7 +3,7 @@
   "name": "Luke Hoag",
   "team": "North Dakota State",
   "team_slug": "north_dakota_state",
-  "team_rank": 48,
+  "team_rank": 41,
   "weight_class": 174,
   "grade": "Fr.",
   "hometown": "Hutchinson, Minn.",
@@ -11,12 +11,12 @@
   "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgobison.sidearmsports.com%2Fimages%2F2025%2F10%2F20%2FWR_Luke_Hoag_NDSU-Wrestling-100725-0052-ZL.jpg&width=603&height=803&type=webp",
   "previous_school": null,
   "year": 2026,
-  "current_rank": 164,
+  "current_rank": 182,
   "record": {
     "overall": "1-6",
     "vs_ranked": "1-6",
     "vs_top10": "0-0",
-    "vs_top25": "0-1"
+    "vs_top25": "0-0"
   },
   "metrics": {
     "pf7": 4.85,
@@ -31,10 +31,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -3.564,
+      "mv_avg": -3.955,
       "matches": 8,
-      "rank_weight": 171,
-      "rank_overall": 1885,
+      "rank_weight": 182,
+      "rank_overall": 1938,
       "version": "v1"
     }
   },
@@ -45,15 +45,15 @@
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "34943861132",
-      "opponent_rank": 181,
+      "opponent_rank": 200,
       "opponent_name": "Tyler Martinez",
       "method": "MD 10-2"
     },
     "worst_loss": {
-      "opponent_id": "34943999132",
-      "opponent_rank": 87,
-      "opponent_name": "Peyton Westpfahl",
-      "method": "TF 25-9 5:54"
+      "opponent_id": "34962193132",
+      "opponent_rank": 124,
+      "opponent_name": "Leister Bowling IV",
+      "method": "Dec 4-2"
     }
   },
   "match_list": [
@@ -65,14 +65,14 @@
       "opponent_team": "Bellarmine",
       "opponent_team_rank": 60,
       "opponent_weight": 174,
-      "opponent_rank": 181,
+      "opponent_rank": 200,
       "weight_class": "174",
       "result": "W",
       "method": "MD",
       "score": "10-2",
       "duration": "7:00",
       "event": "2026 Soldier Salute Extra Matches",
-      "mv_impact": 0.83
+      "mv_impact": 0.88
     },
     {
       "date": "2026-01-04",
@@ -80,16 +80,16 @@
       "opponent_career_id": null,
       "opponent_name": "Leister Bowling IV",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 5,
       "opponent_weight": 174,
-      "opponent_rank": 78,
+      "opponent_rank": 124,
       "weight_class": "174",
       "result": "L",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
       "event": "2026 Soldier Salute",
-      "mv_impact": -3.42
+      "mv_impact": -4.25
     },
     {
       "date": "2026-01-04",
@@ -97,16 +97,16 @@
       "opponent_career_id": null,
       "opponent_name": "Melton Powe",
       "opponent_team": "Iowa State",
-      "opponent_team_rank": 10,
+      "opponent_team_rank": 6,
       "opponent_weight": 174,
-      "opponent_rank": 68,
+      "opponent_rank": 113,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "11-2",
       "duration": "7:00",
       "event": "2026 Soldier Salute",
-      "mv_impact": -4.08
+      "mv_impact": -4.88
     },
     {
       "date": "2026-01-04",
@@ -114,16 +114,16 @@
       "opponent_career_id": null,
       "opponent_name": "Peyton Westpfahl",
       "opponent_team": "Missouri",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 20,
       "opponent_weight": 174,
-      "opponent_rank": 87,
+      "opponent_rank": 111,
       "weight_class": "174",
       "result": "L",
       "method": "TF",
       "score": "25-9",
       "duration": "5:54",
       "event": "2026 Soldier Salute Extra Matches",
-      "mv_impact": -5.7
+      "mv_impact": -6.13
     },
     {
       "date": "2025-11-09",
@@ -131,16 +131,16 @@
       "opponent_career_id": null,
       "opponent_name": "Ethan Riddle",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 9,
       "opponent_weight": 174,
-      "opponent_rank": 24,
+      "opponent_rank": 28,
       "weight_class": "174",
       "result": "L",
       "method": "TF",
       "score": "19-3",
       "duration": "5:15",
       "event": "Bison Open 2025",
-      "mv_impact": -4.18
+      "mv_impact": -4.14
     },
     {
       "date": "2025-11-09",
@@ -148,16 +148,16 @@
       "opponent_career_id": null,
       "opponent_name": "Jed Wester",
       "opponent_team": "Minnesota",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 9,
       "opponent_weight": 174,
-      "opponent_rank": 50,
+      "opponent_rank": 48,
       "weight_class": "174",
       "result": "L",
       "method": "MD",
       "score": "16-4",
       "duration": "7:00",
       "event": "Bison Open 2025",
-      "mv_impact": -3.12
+      "mv_impact": -3.13
     },
     {
       "date": "2025-11-09",
@@ -165,19 +165,19 @@
       "opponent_career_id": null,
       "opponent_name": "Keenan Sheridan",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 23,
       "opponent_weight": 184,
-      "opponent_rank": 55,
+      "opponent_rank": 98,
       "weight_class": "174",
       "result": "L",
       "method": "TF",
       "score": "18-1",
       "duration": "5:27",
       "event": "Bison Open 2025",
-      "mv_impact": -4.43
+      "mv_impact": -4.99
     }
   ],
-  "profile_generated_at": "2026-09-05",
+  "profile_generated_at": "2026-09-09",
   "season_summary": [
     {
       "season": 2026,
@@ -186,7 +186,7 @@
       "team_slug": "north_dakota_state",
       "weight_class": 174,
       "grade": "Fr.",
-      "current_rank": 164,
+      "current_rank": 182,
       "record": "1-6"
     }
   ]

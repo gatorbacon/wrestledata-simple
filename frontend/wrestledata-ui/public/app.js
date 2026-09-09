@@ -1,5 +1,5 @@
 // ========================================
-// Wrestler profile page: TPAR hero card, TPAR trajectory chart, combined
+// Wrestler profile page: DPG hero card, DPG trajectory chart, combined
 // season box-score + skill profile card, season selector, match history.
 // ========================================
 
@@ -26,7 +26,7 @@ function getMinMatchThreshold() {
   return 5;
 }
 
-// Cached by promise so the desktop TPAR card and the mobile TPAR strip --
+// Cached by promise so the desktop DPG card and the mobile DPG strip --
 // both computing this for the same season in the same tick -- share one
 // fetch instead of two.
 const _matValueListCache = {};
@@ -105,9 +105,9 @@ function percentFormatter(v) {
   return (v * 100).toFixed(1) + "%";
 }
 
-function fmtTpar(v) {
+function fmtDpg(v) {
   if (v === null || v === undefined) return "—";
-  return v.toFixed(2); // no +/- sign -- TPAR is a rating, not a delta
+  return v.toFixed(2); // no +/- sign -- DPG is a rating, not a delta
 }
 
 function fmtImpact(v) {
@@ -152,7 +152,7 @@ function abbrevGrade(grade) {
   return grade;
 }
 
-// Unified rank-tier system for the wrestler's OWN rank (header chip, TPAR
+// Unified rank-tier system for the wrestler's OWN rank (header chip, DPG
 // card, season table).
 function rankTierClass(rank) {
   if (rank === null || rank === undefined) return "wp2-rank--unranked";
@@ -245,7 +245,7 @@ async function loadWrestlerProfile(id) {
   document.getElementById("wrestler-resume").textContent = "Could not load wrestler JSON";
 }
 
-// Tracks whichever season is currently on screen (desktop tpar-card,
+// Tracks whichever season is currently on screen (desktop dpg-card,
 // mobile strip/chip-subtitle, trajectory, matches) -- the mobile "Season
 // stats" sheet reads from this so it always reflects the season actually
 // showing, not just the season the page loaded with.
@@ -489,7 +489,7 @@ function renderMobileSeasonSheet(profile) {
     ["Rank / weight", profile.current_rank && profile.weight_class ? `#${profile.current_rank} at ${profile.weight_class}` : safe(profile.current_rank)],
     ["Team", safe(profile.team)],
     ["Class", abbrevGrade(profile.grade) || "—"],
-    ["TPAR", fmtTpar(mv.mv_avg)],
+    ["DPG", fmtDpg(mv.mv_avg)],
     ["Bonus %", m.bonus_rate !== null && m.bonus_rate !== undefined ? percentFormatter(m.bonus_rate) : "—"],
     ["Pin %", m.pin_rate !== null && m.pin_rate !== undefined ? percentFormatter(m.pin_rate) : "—"],
     ["Pins", safe(m.pins)],
@@ -539,7 +539,7 @@ function initMobileSeasonSheetControls() {
 document.addEventListener("DOMContentLoaded", initMobileSeasonSheetControls);
 
 // ===============================
-// Season selector: Season / Team / Class / Rank / Record / TPAR / Bonus %
+// Season selector: Season / Team / Class / Rank / Record / DPG / Bonus %
 // ===============================
 
 async function renderSeasonSelector(data) {
@@ -553,15 +553,15 @@ async function renderSeasonSelector(data) {
   section.hidden = false;
   tbody.innerHTML = "";
 
-  // TPAR/Bonus% aren't in season_summary -- pull them from each season's own
+  // DPG/Bonus% aren't in season_summary -- pull them from each season's own
   // already-published profile via the shared fetchSeasonProfile cache (the
   // mobile career-line aggregation wants the same per-season profiles, so
   // whichever of the two runs first fetches for both).
   const enriched = await Promise.all(summary.map(async s => {
     const seasonData = await fetchSeasonProfile(s.season, s.wrestler_id);
-    if (!seasonData) return { ...s, tpar: null, bonus_rate: null };
+    if (!seasonData) return { ...s, dpg: null, bonus_rate: null };
     const mv = (seasonData.metrics || {}).mat_value || {};
-    return { ...s, tpar: mv.mv_avg, bonus_rate: (seasonData.metrics || {}).bonus_rate };
+    return { ...s, dpg: mv.mv_avg, bonus_rate: (seasonData.metrics || {}).bonus_rate };
   }));
 
   enriched.forEach(s => {
@@ -576,7 +576,7 @@ async function renderSeasonSelector(data) {
       abbrevGrade(s.grade) || "—",
       null, // rank chip, built below
       safe(s.record),
-      fmtTpar(s.tpar),
+      fmtDpg(s.dpg),
       s.bonus_rate !== null && s.bonus_rate !== undefined ? percentFormatter(s.bonus_rate) : "—",
     ];
 
@@ -610,10 +610,10 @@ async function renderSeasonSelector(data) {
     recordTd.textContent = cells[4];
     tr.appendChild(recordTd);
 
-    const tparTd = document.createElement("td");
-    tparTd.className = "num";
-    tparTd.textContent = cells[5];
-    tr.appendChild(tparTd);
+    const dpgTd = document.createElement("td");
+    dpgTd.className = "num";
+    dpgTd.textContent = cells[5];
+    tr.appendChild(dpgTd);
 
     const bonusTd = document.createElement("td");
     bonusTd.className = "num";
@@ -638,14 +638,14 @@ async function renderSeasonSelector(data) {
 }
 
 // ===============================
-// Season body: TPAR card, box score, skill, trajectory, match history
+// Season body: DPG card, box score, skill, trajectory, match history
 // ===============================
 
 function renderSeasonBody(data) {
   const season = safe(data.year);
   const mv = (data.metrics || {}).mat_value || {};
-  renderTparCard(data, mv, season);
-  renderMobileTparStrip(data, mv, season);
+  renderDpgCard(data, mv, season);
+  renderMobileDpgStrip(data, mv, season);
   renderBoxScoreCard(data);
   renderSkillCard(data);
   renderRollingMbtTimeline(data, mv.mv_avg);
@@ -654,43 +654,43 @@ function renderSeasonBody(data) {
 }
 
 // ===============================
-// Mobile TPAR strip: one row (number + ELITE pill + compressed percentile
+// Mobile DPG strip: one row (number + ELITE pill + compressed percentile
 // bar), season-scoped -- follows whichever chip is selected. Same ELITE
 // threshold (>=5.5) and percentile source as the desktop card and the
 // homepage rankings row.
 // ===============================
 
-function renderMobileTparStrip(data, mv, season) {
-  const strip = document.getElementById("wp2m-tpar-strip");
+function renderMobileDpgStrip(data, mv, season) {
+  const strip = document.getElementById("wp2m-dpg-strip");
   if (!strip) return;
 
   if (mv.mv_avg === null || mv.mv_avg === undefined) {
-    strip.innerHTML = `<p class="section-empty-state">TPAR not available for this season.</p>`;
+    strip.innerHTML = `<p class="section-empty-state">DPG not available for this season.</p>`;
     return;
   }
 
   const weightClass = data.weight_class;
   const isElite = mv.mv_avg >= 5.5;
-  const leaderboardUrl = weightClass ? `/leaderboards/tpar.html?weight=${weightClass}` : "/leaderboards/tpar.html";
+  const leaderboardUrl = weightClass ? `/leaderboards/dpg.html?weight=${weightClass}` : "/leaderboards/dpg.html";
 
   strip.innerHTML =
-    `<div class="wp2m-tpar-row">` +
-    `<span class="wp2m-tpar-label">TPAR<span class="tooltip-icon" data-tooltip="mv">ⓘ</span></span>` +
-    `<span class="wp2m-tpar-percentile-label" id="wp2m-tpar-percentile-label"></span>` +
+    `<div class="wp2m-dpg-row">` +
+    `<span class="wp2m-dpg-label">DPG<span class="tooltip-icon" data-tooltip="mv">ⓘ</span></span>` +
+    `<span class="wp2m-dpg-percentile-label" id="wp2m-dpg-percentile-label"></span>` +
     `</div>` +
-    `<div class="wp2m-tpar-row wp2m-tpar-row--main">` +
-    `<span class="wp2m-tpar-number-group">` +
-    `<span class="wp2m-tpar-number">${fmtTpar(mv.mv_avg)}</span>` +
-    (isElite ? `<span class="tpar2-elite-badge">Elite</span>` : "") +
+    `<div class="wp2m-dpg-row wp2m-dpg-row--main">` +
+    `<span class="wp2m-dpg-number-group">` +
+    `<span class="wp2m-dpg-number">${fmtDpg(mv.mv_avg)}</span>` +
+    (isElite ? `<span class="dpg-elite-badge">Elite</span>` : "") +
     `</span>` +
-    `<a class="wp2m-tpar-scale-link" href="${leaderboardUrl}">` +
-    `<span class="wp2m-tpar-scale" id="wp2m-tpar-scale"><span class="wp2m-tpar-marker" id="wp2m-tpar-marker"></span></span>` +
+    `<a class="wp2m-dpg-scale-link" href="${leaderboardUrl}">` +
+    `<span class="wp2m-dpg-scale" id="wp2m-dpg-scale"><span class="wp2m-dpg-marker" id="wp2m-dpg-marker"></span></span>` +
     `</a>` +
     `</div>`;
 
   const setPercentile = (percentile) => {
-    const label = document.getElementById("wp2m-tpar-percentile-label");
-    const marker = document.getElementById("wp2m-tpar-marker");
+    const label = document.getElementById("wp2m-dpg-percentile-label");
+    const marker = document.getElementById("wp2m-dpg-marker");
     if (label) label.textContent = formatPercentileLabel(percentile);
     if (marker) marker.style.left = `${percentile}%`;
   };
@@ -714,15 +714,15 @@ function renderMobileTparStrip(data, mv, season) {
   }
 }
 
-function renderTparCard(data, mv, season) {
-  const card = document.getElementById("tpar-card");
+function renderDpgCard(data, mv, season) {
+  const card = document.getElementById("dpg-card");
   card.innerHTML = "";
   const weightClass = data.weight_class;
 
   const headerRow = document.createElement("div");
   headerRow.className = "section-header";
   const title = document.createElement("h2");
-  title.textContent = "TPAR";
+  title.textContent = "DPG";
   const tooltipIcon = document.createElement("span");
   tooltipIcon.className = "tooltip-icon";
   tooltipIcon.setAttribute("data-tooltip", "mv");
@@ -735,18 +735,18 @@ function renderTparCard(data, mv, season) {
   if (mv.mv_avg === null || mv.mv_avg === undefined) {
     const empty = document.createElement("p");
     empty.className = "section-empty-state";
-    empty.textContent = "TPAR not available for this season.";
+    empty.textContent = "DPG not available for this season.";
     card.appendChild(empty);
     return;
   }
 
   const heroNumber = document.createElement("div");
-  heroNumber.className = "wp2-tpar-hero";
-  heroNumber.textContent = fmtTpar(mv.mv_avg);
+  heroNumber.className = "wp2-dpg-hero";
+  heroNumber.textContent = fmtDpg(mv.mv_avg);
   card.appendChild(heroNumber);
 
   const rankLabel = document.createElement("div");
-  rankLabel.className = "wp2-tpar-rank-label";
+  rankLabel.className = "wp2-dpg-rank-label";
   rankLabel.textContent = "Loading rank…";
   card.appendChild(rankLabel);
 
@@ -757,13 +757,13 @@ function renderTparCard(data, mv, season) {
   percentileBarContainer.className = "wp2-percentile-block";
   card.appendChild(percentileBarContainer);
 
-  const leaderboardUrl = weightClass ? `/leaderboards/tpar.html?weight=${weightClass}` : "/leaderboards/tpar.html";
+  const leaderboardUrl = weightClass ? `/leaderboards/dpg.html?weight=${weightClass}` : "/leaderboards/dpg.html";
 
   const renderRankAndPercentile = (rank, percentile) => {
     rankLabel.innerHTML = "";
     const link = document.createElement("a");
     link.href = leaderboardUrl;
-    link.className = "wp2-tpar-rank-link";
+    link.className = "wp2-dpg-rank-link";
     link.textContent = weightClass ? `#${rank} at ${weightClass}` : `#${rank}`;
     rankLabel.appendChild(link);
 
@@ -814,8 +814,8 @@ function renderTparCard(data, mv, season) {
   }
 
   const definition = document.createElement("p");
-  definition.className = "wp2-tpar-definition";
-  definition.textContent = "How completely he wins, not just whether he wins.";
+  definition.className = "wp2-dpg-definition";
+  definition.textContent = "Extra dual points per match vs. what a typical wrestler gets against that same opponent.";
   card.appendChild(definition);
 }
 
@@ -932,7 +932,7 @@ function renderRollingMbtTimeline(data, seasonMV) {
   container.innerHTML = '<span style="opacity:0.4;font-size:0.85em;padding:8px;display:block">Loading…</span>';
 
   const avgLabel = document.getElementById("match-impact-avg-label");
-  const avgSuffix = seasonMV !== null && seasonMV !== undefined ? ` (${fmtTpar(seasonMV)})` : "";
+  const avgSuffix = seasonMV !== null && seasonMV !== undefined ? ` (${fmtDpg(seasonMV)})` : "";
   avgLabel.innerHTML =
     `<span class="wp2m-label-full">Season avg${avgSuffix}</span>` +
     `<span class="wp2m-label-short">Avg${avgSuffix}</span>`;
@@ -952,7 +952,7 @@ function renderRollingMbtTimeline(data, seasonMV) {
     container.innerHTML = "";
     const empty = document.createElement("p");
     empty.className = "section-empty-state";
-    empty.textContent = "TPAR trajectory not available for this season.";
+    empty.textContent = "DPG trajectory not available for this season.";
     container.appendChild(empty);
     return;
   }
@@ -961,7 +961,7 @@ function renderRollingMbtTimeline(data, seasonMV) {
     container.innerHTML = "";
     const toISO = s => { if (!s) return s; if (s.includes('-')) return s; const [m, d, y] = s.split('/'); return `${y}-${m.padStart(2,'0')}-${d.padStart(2,'0')}`; };
     const mbtByDate = {};
-    (allTimelines[wrestlerId] || []).forEach(pt => { mbtByDate[toISO(pt.date)] = pt.tpar; });
+    (allTimelines[wrestlerId] || []).forEach(pt => { mbtByDate[toISO(pt.date)] = pt.dpg; });
 
     let lastMbt = null;
     const matchMbt = matches.map(m => {
@@ -1080,9 +1080,9 @@ function renderRollingMbtTimeline(data, seasonMV) {
       const rollingVal = rollingMbt[activeIndex];
       const tooltipLines = [
         m.date, m.opponent || "",
-        `TPAR Impact: ${fmtImpact(m.mvImpact)}`,
-        `5-match avg TPAR: ${rollingVal !== null ? fmtImpact(rollingVal) : "—"}`,
-        `Season TPAR: ${seasonMV !== null && seasonMV !== undefined ? fmtTpar(seasonMV) : "—"}`,
+        `DPG Impact: ${fmtImpact(m.mvImpact)}`,
+        `5-match avg DPG: ${rollingVal !== null ? fmtImpact(rollingVal) : "—"}`,
+        `Season DPG: ${seasonMV !== null && seasonMV !== undefined ? fmtDpg(seasonMV) : "—"}`,
       ];
       const tooltipY = b.isPositive ? zeroY - b.barHeight - 12 : zeroY + b.barHeight + 12;
       showChartTooltip(e, tooltipLines.join('\n'), svg, b.x, tooltipY, m.mvImpact);
@@ -1100,7 +1100,7 @@ function renderRollingMbtTimeline(data, seasonMV) {
     container.innerHTML = "";
     const empty = document.createElement("p");
     empty.className = "section-empty-state";
-    empty.textContent = "TPAR trajectory not available for this season.";
+    empty.textContent = "DPG trajectory not available for this season.";
     container.appendChild(empty);
   });
 }

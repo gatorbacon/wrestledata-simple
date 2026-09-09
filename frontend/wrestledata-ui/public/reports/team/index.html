@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Team Roster DPG — MatSavant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css?v=20260921" />
+  <style>
+    .tr-header { text-align: center; margin-bottom: 32px; }
+    .tr-header p { color: var(--muted); margin-top: 6px; font-size: 0.95rem; }
+
+    .tr-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--r-md, 14px);
+      padding: 20px 24px 16px;
+      margin-bottom: 20px;
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .tr-card-head { display: flex; align-items: flex-start; gap: 14px; }
+    .tr-photo {
+      width: 50px; height: 50px; border-radius: 50%; object-fit: cover;
+      background: var(--panel-2); border: 1px solid var(--border); flex-shrink: 0;
+    }
+    .tr-name-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .tr-name { font-size: 1.15rem; font-weight: 800; color: var(--text); text-decoration: none; }
+    .tr-name:hover { text-decoration: underline; }
+    .tr-weight-badge {
+      font-size: 0.82rem; font-weight: 800; padding: 2px 10px; border-radius: 999px;
+      background: var(--panel-2); color: var(--text);
+    }
+    .tr-meta { font-size: 0.82rem; color: var(--muted); margin-top: 2px; }
+    .tr-stat { text-align: center; padding: 0 14px; flex-shrink: 0; }
+    .tr-stat .label { font-size: 0.72rem; color: var(--muted); }
+    .tr-stat .value { font-size: 1.25rem; font-weight: 800; color: var(--text); margin-top: 2px; }
+
+    .tr-chart-wrap { width: 100%; overflow-x: auto; margin-top: 10px; }
+    .tr-chart-wrap svg { display: block; margin: 0 auto; }
+    .tr-chart-wrap svg circle[data-tooltip] { cursor: pointer; }
+
+    .tr-empty { text-align: center; color: var(--muted); padding: 60px 20px; }
+    .tr-loading { text-align: center; color: var(--muted); padding: 60px 20px; }
+
+    .rv-tooltip {
+      position: fixed; z-index: 1000; pointer-events: none;
+      background: #211c16; color: #f5f1e8; border-radius: 8px;
+      padding: 10px 13px; font-size: 0.8rem; line-height: 1.5;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      opacity: 0; transform: translateY(4px); transition: opacity 0.1s ease, transform 0.1s ease;
+      max-width: 220px;
+    }
+    .rv-tooltip.visible { opacity: 1; transform: translateY(0); }
+    .rv-tooltip .tt-head { font-weight: 800; margin-bottom: 4px; color: #fff; }
+    .rv-tooltip .tt-row { display: flex; justify-content: space-between; gap: 14px; }
+    .rv-tooltip .tt-row .tt-label { color: #b8ae9c; }
+    .rv-tooltip .tt-row .tt-value { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <script src="/header.js?v=20260908"></script>
+
+  <div class="page-container">
+    <div class="tr-header">
+      <h1 id="tr-title">Team Roster DPG</h1>
+      <p id="tr-subtitle">&nbsp;</p>
+    </div>
+
+    <div id="tr-body"><div class="tr-loading">Loading…</div></div>
+  </div>
+
+  <script src="/reports/shared/chart.js?v=20260921"></script>
+  <script>
+(function () {
+  'use strict';
+  const C = window.WrestlerChart;
+
+  function qs(name) {
+    return new URLSearchParams(window.location.search).get(name);
+  }
+
+  function fmt(v) {
+    return v === null || v === undefined ? '—' : v.toFixed(2);
+  }
+
+  function renderCard(wrestler, colorMap) {
+    const qualifying = C.qualifyingSeasons(wrestler);
+    const careerAvg = C.matchWeightedAvg(qualifying);
+    const lastSeason = wrestler.seasons[wrestler.seasons.length - 1];
+    const badgeColor = C.colorFor(lastSeason.team_slug, colorMap);
+    const path = (wrestler.school_path || []).join(' → ');
+
+    const photo = wrestler.photo_url
+      ? `<img class="tr-photo" src="${C.esc(wrestler.photo_url)}" alt="${C.esc(wrestler.name)}" onerror="this.style.visibility='hidden'">`
+      : `<div class="tr-photo"></div>`;
+
+    const card = document.createElement('div');
+    card.className = 'tr-card';
+    card.innerHTML = `
+      <div class="tr-card-head">
+        ${photo}
+        <div style="flex:1; min-width:0;">
+          <div class="tr-name-row">
+            <a class="tr-name" href="/reports/wrestler/index.html?id=${encodeURIComponent(wrestler.career_id)}">${C.esc(wrestler.name || 'Unknown')}</a>
+            ${wrestler.weight_class ? `<span class="tr-weight-badge" style="background:${C.hexToRgba(badgeColor.hex, 0.85)}; color:${C.textColorFor(badgeColor.hex)}">${wrestler.weight_class}</span>` : ''}
+          </div>
+          <div class="tr-meta">${C.esc(path)}</div>
+        </div>
+        <div class="tr-stat"><div class="label">Career DPG</div><div class="value">${fmt(careerAvg)}</div></div>
+      </div>
+      <div class="tr-chart-wrap"></div>
+    `;
+    document.getElementById('tr-body').appendChild(card);
+    card.querySelector('.tr-chart-wrap').innerHTML = C.buildChartSVG(wrestler, colorMap);
+    C.wireTooltips(card.querySelector('.tr-chart-wrap'));
+  }
+
+  function render(data, colorMap) {
+    document.getElementById('tr-title').textContent = `${data.team_name} — ${data.year} Roster`;
+    document.getElementById('tr-subtitle').textContent =
+      `${data.roster.length} wrestler(s) · full career DPG shown for each`;
+
+    const body = document.getElementById('tr-body');
+    body.innerHTML = '';
+    if (!data.roster.length) {
+      body.innerHTML = `<div class="tr-empty">No roster data found.</div>`;
+      return;
+    }
+    data.roster.forEach(w => renderCard(w, colorMap));
+  }
+
+  const team = qs('team');
+  const year = qs('year');
+
+  if (!team || !year) {
+    document.getElementById('tr-body').innerHTML =
+      '<div class="tr-empty">Missing query params. Use ?team=&lt;slug&gt;&amp;year=&lt;year&gt;, e.g. ?team=penn_state&amp;year=2026</div>';
+    return;
+  }
+
+  Promise.all([
+    fetch(`/data/reports/team_roster/${team}_${year}.json`).then(r => { if (!r.ok) throw new Error('not found'); return r.json(); }),
+    fetch('/data/team_colors.json').then(r => r.ok ? r.json() : { teams: {}, default: C.DEFAULT_COLOR }).catch(() => ({ teams: {}, default: C.DEFAULT_COLOR })),
+  ])
+    .then(([data, colorMap]) => render(data, colorMap))
+    .catch(() => {
+      document.getElementById('tr-body').innerHTML =
+        `<div class="tr-empty">No roster view found for ${C.esc(team)} in ${C.esc(year)}.</div>`;
+    });
+})();
+  </script>
+</body>
+</html>

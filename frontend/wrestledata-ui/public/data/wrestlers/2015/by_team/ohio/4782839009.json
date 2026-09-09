@@ -3,7 +3,7 @@
   "name": "Kyle O`Donnell",
   "team": "Ohio",
   "team_slug": "ohio",
-  "team_rank": 25,
+  "team_rank": 28,
   "weight_class": 197,
   "grade": "",
   "hometown": null,
@@ -11,11 +11,11 @@
   "photo_url": null,
   "previous_school": null,
   "year": 2015,
-  "current_rank": 138,
+  "current_rank": 204,
   "record": {
     "overall": "2-5",
-    "vs_ranked": "2-5",
-    "vs_top10": "0-1",
+    "vs_ranked": "1-5",
+    "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
   "metrics": {
@@ -29,31 +29,24 @@
     "bonus_rate": 0.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0,
-    "mat_value": {
-      "mv_avg": -2.494,
-      "matches": 8,
-      "rank_weight": 134,
-      "rank_overall": 1546,
-      "version": "v1"
-    }
+    "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 1,
     "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "163770010",
-      "opponent_rank": 148,
-      "opponent_name": "Devin King",
-      "method": "Dec 4-0"
+      "opponent_id": "434010",
+      "opponent_rank": 164,
+      "opponent_name": "Jimmy Szep",
+      "method": "Dec 2-1"
     },
     "worst_loss": {
-      "opponent_id": "218013",
-      "opponent_rank": 168,
-      "opponent_name": "Jordan Davis",
-      "method": "Dec 6-0"
+      "opponent_id": "240071",
+      "opponent_rank": 155,
+      "opponent_name": "Drake Stein",
+      "method": "Dec 5-2"
     }
   },
   "match_list": [
@@ -63,16 +56,15 @@
       "opponent_career_id": null,
       "opponent_name": "Devin King",
       "opponent_team": "Ohio",
-      "opponent_team_rank": 25,
+      "opponent_team_rank": 28,
       "opponent_weight": 285,
-      "opponent_rank": 148,
+      "opponent_rank": null,
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
       "score": "4-0",
       "duration": "7:00",
-      "event": "Ashland Open",
-      "mv_impact": 0.89
+      "event": "Ashland Open"
     },
     {
       "date": "2015-01-18",
@@ -80,16 +72,15 @@
       "opponent_career_id": null,
       "opponent_name": "Kyle Conel",
       "opponent_team": "Kent State",
-      "opponent_team_rank": 27,
+      "opponent_team_rank": 26,
       "opponent_weight": 197,
-      "opponent_rank": 41,
+      "opponent_rank": 55,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "3:55",
-      "event": "Purple Raider Open",
-      "mv_impact": -5.0
+      "event": "Purple Raider Open"
     },
     {
       "date": "2014-11-15",
@@ -97,16 +88,15 @@
       "opponent_career_id": null,
       "opponent_name": "Jordan Davis",
       "opponent_team": "Chattanooga",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 21,
       "opponent_weight": 197,
-      "opponent_rank": 168,
+      "opponent_rank": 124,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "6-0",
       "duration": "7:00",
-      "event": "Eastern Michigan Open",
-      "mv_impact": -5.21
+      "event": "Eastern Michigan Open"
     },
     {
       "date": "2014-11-15",
@@ -114,16 +104,15 @@
       "opponent_career_id": null,
       "opponent_name": "Drake Stein",
       "opponent_team": "Purdue",
-      "opponent_team_rank": 56,
+      "opponent_team_rank": 49,
       "opponent_weight": 197,
-      "opponent_rank": 127,
+      "opponent_rank": 155,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "Eastern Michigan Open",
-      "mv_impact": -4.19
+      "event": "Eastern Michigan Open"
     },
     {
       "date": "2014-11-02",
@@ -131,16 +120,15 @@
       "opponent_career_id": null,
       "opponent_name": "Jimmy Szep",
       "opponent_team": "Central Michigan",
-      "opponent_team_rank": 48,
+      "opponent_team_rank": 40,
       "opponent_weight": 197,
-      "opponent_rank": 169,
+      "opponent_rank": 164,
       "weight_class": "197",
       "result": "W",
       "method": "DEC",
       "score": "2-1",
       "duration": "7:00",
-      "event": "Michigan State Open",
-      "mv_impact": 0.04
+      "event": "Michigan State Open"
     },
     {
       "date": "2014-11-02",
@@ -148,16 +136,15 @@
       "opponent_career_id": null,
       "opponent_name": "Max Huntley",
       "opponent_team": "Michigan",
-      "opponent_team_rank": 14,
+      "opponent_team_rank": 13,
       "opponent_weight": 197,
-      "opponent_rank": 10,
+      "opponent_rank": 12,
       "weight_class": "197",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:24",
-      "event": "Michigan State Open",
-      "mv_impact": -4.51
+      "event": "Michigan State Open"
     },
     {
       "date": "2014-11-02",
@@ -165,19 +152,18 @@
       "opponent_career_id": null,
       "opponent_name": "Nick McDiarmid",
       "opponent_team": "Michigan State",
-      "opponent_team_rank": 73,
+      "opponent_team_rank": 72,
       "opponent_weight": 197,
-      "opponent_rank": 37,
+      "opponent_rank": 27,
       "weight_class": "197",
       "result": "L",
       "method": "DEC",
       "score": "4-0",
       "duration": "7:00",
-      "event": "Michigan State Open",
-      "mv_impact": -2.87
+      "event": "Michigan State Open"
     }
   ],
-  "profile_generated_at": "2026-09-06",
+  "profile_generated_at": "2026-09-09",
   "season_summary": [
     {
       "season": 2015,
@@ -186,7 +172,7 @@
       "team_slug": "ohio",
       "weight_class": 197,
       "grade": "",
-      "current_rank": 138,
+      "current_rank": 204,
       "record": "2-5"
     },
     {
@@ -196,7 +182,7 @@
       "team_slug": "ohio",
       "weight_class": 197,
       "grade": "",
-      "current_rank": 192,
+      "current_rank": 196,
       "record": "2-7"
     },
     {
@@ -206,7 +192,7 @@
       "team_slug": "ohio",
       "weight_class": 197,
       "grade": "",
-      "current_rank": 153,
+      "current_rank": 166,
       "record": "2-4"
     },
     {
@@ -216,7 +202,7 @@
       "team_slug": "ohio",
       "weight_class": 197,
       "grade": "",
-      "current_rank": 90,
+      "current_rank": 170,
       "record": "0-4"
     }
   ]

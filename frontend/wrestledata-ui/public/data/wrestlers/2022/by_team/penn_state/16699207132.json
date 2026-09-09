@@ -11,12 +11,12 @@
   "photo_url": "https://gopsusports.com/imgproxy/gvAzTfry97hHYhnC_fvJxRTOEsLSTENcmbOPOLWGyxA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2dvcHN1c3BvcnRzLXByb2QvMjAyMy8wNy8xMy9RdHZXMUliWnAxOENCM3E4c1FZcGMzNVhnQnR0UkpFRERDbUJ5RkY0LmpwZw.jpg",
   "previous_school": null,
   "year": 2022,
-  "current_rank": 89,
+  "current_rank": 222,
   "record": {
     "overall": "5-5",
     "vs_ranked": "5-5",
-    "vs_top10": "0-2",
-    "vs_top25": "0-2"
+    "vs_top10": "0-1",
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 3.69,
@@ -31,10 +31,10 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": 0.897,
+      "mv_avg": 1.074,
       "matches": 17,
-      "rank_weight": 56,
-      "rank_overall": 505,
+      "rank_weight": 52,
+      "rank_overall": 460,
       "version": "v1"
     }
   },
@@ -42,18 +42,18 @@
     "ranked_wins": 5,
     "ranked_losses": 5,
     "top10_wins": 0,
-    "top10_losses": 2,
+    "top10_losses": 1,
     "win_over_highest_rank": {
       "opponent_id": "16702608132",
-      "opponent_rank": 35,
+      "opponent_rank": 28,
       "opponent_name": "Sidney Flores",
       "method": "Dec 4-2"
     },
     "worst_loss": {
-      "opponent_id": "16709224132",
-      "opponent_rank": 67,
-      "opponent_name": "Cayden Rooks",
-      "method": "Dec 9-4"
+      "opponent_id": "16706907132",
+      "opponent_rank": 52,
+      "opponent_name": "Corey Shie",
+      "method": "Dec 5-2"
     }
   },
   "match_list": [
@@ -63,16 +63,16 @@
       "opponent_career_id": null,
       "opponent_name": "Edwin Thomsen",
       "opponent_team": "Nebraska",
-      "opponent_team_rank": 11,
+      "opponent_team_rank": 6,
       "opponent_weight": 133,
-      "opponent_rank": 174,
+      "opponent_rank": 106,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "7-6",
       "duration": "7:00",
       "event": "vs. Penn State",
-      "mv_impact": 0.96
+      "mv_impact": 1.94
     },
     {
       "date": "2022-01-16",
@@ -80,16 +80,16 @@
       "opponent_career_id": null,
       "opponent_name": "Sebastian Rivera",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 18,
+      "opponent_team_rank": 21,
       "opponent_weight": 141,
-      "opponent_rank": 2,
+      "opponent_rank": 3,
       "weight_class": "141",
       "result": "L",
       "method": "TF",
       "score": "17-1",
       "duration": "3:36",
       "event": "vs. Rutgers",
-      "mv_impact": -1.44
+      "mv_impact": -1.53
     },
     {
       "date": "2022-01-09",
@@ -97,16 +97,16 @@
       "opponent_career_id": null,
       "opponent_name": "Cayden Rooks",
       "opponent_team": "Indiana",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 52,
       "opponent_weight": 141,
-      "opponent_rank": 67,
+      "opponent_rank": 45,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "9-4",
       "duration": "7:00",
       "event": "vs. Penn State",
-      "mv_impact": -2.83
+      "mv_impact": -2.58
     },
     {
       "date": "2022-01-02",
@@ -114,16 +114,16 @@
       "opponent_career_id": null,
       "opponent_name": "Sidney Flores",
       "opponent_team": "Air Force",
-      "opponent_team_rank": 39,
+      "opponent_team_rank": 43,
       "opponent_weight": 133,
-      "opponent_rank": 35,
+      "opponent_rank": 28,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
       "event": "Southern Scuffle",
-      "mv_impact": 3.27
+      "mv_impact": 3.34
     },
     {
       "date": "2022-01-02",
@@ -133,14 +133,14 @@
       "opponent_team": "Appalachian State",
       "opponent_team_rank": 27,
       "opponent_weight": 133,
-      "opponent_rank": 26,
+      "opponent_rank": 21,
       "weight_class": "133",
       "result": "L",
       "method": "DEC",
       "score": "9-2",
       "duration": "7:00",
       "event": "Southern Scuffle",
-      "mv_impact": -1.46
+      "mv_impact": -1.44
     },
     {
       "date": "2022-01-02",
@@ -148,16 +148,16 @@
       "opponent_career_id": null,
       "opponent_name": "Jordan Titus",
       "opponent_team": "West Virginia",
-      "opponent_team_rank": 30,
+      "opponent_team_rank": 32,
       "opponent_weight": 133,
-      "opponent_rank": 44,
+      "opponent_rank": 52,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "5-0",
       "duration": "7:00",
       "event": "Southern Scuffle",
-      "mv_impact": 4.11
+      "mv_impact": 4.03
     },
     {
       "date": "2022-01-02",
@@ -165,16 +165,16 @@
       "opponent_career_id": null,
       "opponent_name": "Jake Rotunda",
       "opponent_team": "The Citadel",
-      "opponent_team_rank": 58,
+      "opponent_team_rank": 59,
       "opponent_weight": 133,
-      "opponent_rank": 99,
+      "opponent_rank": 59,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
       "event": "Southern Scuffle",
-      "mv_impact": 2.86
+      "mv_impact": 3.25
     },
     {
       "date": "2021-12-22",
@@ -182,16 +182,16 @@
       "opponent_career_id": null,
       "opponent_name": "Jack Wagner",
       "opponent_team": "Northern Iowa",
-      "opponent_team_rank": 19,
+      "opponent_team_rank": 22,
       "opponent_weight": 133,
-      "opponent_rank": 76,
+      "opponent_rank": 63,
       "weight_class": "133",
       "result": "W",
       "method": "DEC",
       "score": "3-8",
       "duration": "7:00",
       "event": "Florida ECM Matches",
-      "mv_impact": 2.74
+      "mv_impact": 2.88
     },
     {
       "date": "2021-12-03",
@@ -199,16 +199,16 @@
       "opponent_career_id": null,
       "opponent_name": "Michael Colaiocco",
       "opponent_team": "Pennsylvania",
-      "opponent_team_rank": 29,
+      "opponent_team_rank": 28,
       "opponent_weight": 133,
-      "opponent_rank": 9,
+      "opponent_rank": 11,
       "weight_class": "133",
       "result": "L",
       "method": "MD",
       "score": "10-2",
       "duration": "7:00",
       "event": "vs. Pennsylvania",
-      "mv_impact": -1.5
+      "mv_impact": -1.66
     },
     {
       "date": "2021-11-18",
@@ -216,19 +216,19 @@
       "opponent_career_id": null,
       "opponent_name": "Corey Shie",
       "opponent_team": "Army West Point",
-      "opponent_team_rank": 50,
+      "opponent_team_rank": 49,
       "opponent_weight": 141,
-      "opponent_rank": 58,
+      "opponent_rank": 52,
       "weight_class": "141",
       "result": "L",
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
       "event": "vs. Penn State",
-      "mv_impact": -2.46
+      "mv_impact": -2.3
     }
   ],
-  "profile_generated_at": "2026-09-05",
+  "profile_generated_at": "2026-09-09",
   "season_summary": [
     {
       "season": 2024,
@@ -237,7 +237,7 @@
       "team_slug": "south_dakota_state",
       "weight_class": 141,
       "grade": "Sr.",
-      "current_rank": 118,
+      "current_rank": 218,
       "record": "6-8"
     },
     {
@@ -247,7 +247,7 @@
       "team_slug": "south_dakota_state",
       "weight_class": 141,
       "grade": "Sr.",
-      "current_rank": 162,
+      "current_rank": 243,
       "record": "0-0"
     },
     {
@@ -257,7 +257,7 @@
       "team_slug": "penn_state",
       "weight_class": 141,
       "grade": "Junior",
-      "current_rank": 89,
+      "current_rank": 222,
       "record": "5-5"
     },
     {
@@ -267,7 +267,7 @@
       "team_slug": "penn_state",
       "weight_class": 141,
       "grade": "Sophomore",
-      "current_rank": 171,
+      "current_rank": 101,
       "record": "0-1"
     },
     {
@@ -277,7 +277,7 @@
       "team_slug": "penn_state",
       "weight_class": 125,
       "grade": "Redshirt Freshman",
-      "current_rank": 75,
+      "current_rank": 84,
       "record": "11-16"
     },
     {
@@ -287,7 +287,7 @@
       "team_slug": "penn_state",
       "weight_class": 125,
       "grade": "Freshman",
-      "current_rank": 82,
+      "current_rank": 98,
       "record": "1-1"
     }
   ]

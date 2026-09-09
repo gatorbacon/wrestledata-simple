@@ -3,7 +3,7 @@
   "name": "Justin Stickley",
   "team": "Iowa",
   "team_slug": "iowa",
-  "team_rank": 4,
+  "team_rank": 9,
   "weight_class": 125,
   "grade": "Fr.",
   "hometown": "Urbana, Ohio",
@@ -11,12 +11,12 @@
   "photo_url": "https://hawkeyesports.com/imgproxy/yKJoxrWyEUn1MfLIPu9z8DcbxeddvgfOrtHXPMYrX70/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2hhd2tleWVzcG9ydHMtcHJvZC8yMDIwLzA0L2M0MzFkYmE0LWp1c3Rpbl9zdGlja2xleS5qcGc.jpg",
   "previous_school": null,
   "year": 2018,
-  "current_rank": 65,
+  "current_rank": 75,
   "record": {
     "overall": "5-6",
     "vs_ranked": "5-6",
     "vs_top10": "0-2",
-    "vs_top25": "1-3"
+    "vs_top25": "0-3"
   },
   "metrics": {
     "pf7": 5.56,
@@ -31,10 +31,10 @@
     "techs": 0,
     "pins": 1,
     "mat_value": {
-      "mv_avg": 0.215,
+      "mv_avg": 0.085,
       "matches": 11,
-      "rank_weight": 61,
-      "rank_overall": 659,
+      "rank_weight": 65,
+      "rank_overall": 699,
       "version": "v1"
     }
   },
@@ -45,15 +45,15 @@
     "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "11412375009",
-      "opponent_rank": 21,
+      "opponent_rank": 31,
       "opponent_name": "Connor Brown",
       "method": "Dec 5-4"
     },
     "worst_loss": {
-      "opponent_id": "11446841009",
-      "opponent_rank": 38,
-      "opponent_name": "Kyle Akins",
-      "method": "Dec 8-4"
+      "opponent_id": "11444470009",
+      "opponent_rank": 41,
+      "opponent_name": "Paul Bianchi",
+      "method": "Fall 1:53"
     }
   },
   "match_list": [
@@ -63,16 +63,16 @@
       "opponent_career_id": null,
       "opponent_name": "Joshua Krammer",
       "opponent_team": "Arizona State",
-      "opponent_team_rank": 8,
+      "opponent_team_rank": 6,
       "opponent_weight": 125,
-      "opponent_rank": 30,
+      "opponent_rank": 37,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "8-4",
       "duration": "7:00",
       "event": "Midlands",
-      "mv_impact": -2.1
+      "mv_impact": -2.16
     },
     {
       "date": "2017-12-30",
@@ -80,16 +80,16 @@
       "opponent_career_id": null,
       "opponent_name": "Connor Brown",
       "opponent_team": "South Dakota State",
-      "opponent_team_rank": 13,
+      "opponent_team_rank": 12,
       "opponent_weight": 125,
-      "opponent_rank": 21,
+      "opponent_rank": 31,
       "weight_class": "125",
       "result": "W",
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
       "event": "Midlands",
-      "mv_impact": 3.47
+      "mv_impact": 3.37
     },
     {
       "date": "2017-12-30",
@@ -99,14 +99,14 @@
       "opponent_team": "Northern Illinois",
       "opponent_team_rank": 72,
       "opponent_weight": 125,
-      "opponent_rank": 89,
+      "opponent_rank": 78,
       "weight_class": "125",
       "result": "W",
       "method": "DEC",
       "score": "6-2",
       "duration": "7:00",
       "event": "Midlands",
-      "mv_impact": 2.33
+      "mv_impact": 2.58
     },
     {
       "date": "2017-12-30",
@@ -114,16 +114,16 @@
       "opponent_career_id": null,
       "opponent_name": "Nick Suriano",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 15,
       "opponent_weight": 125,
-      "opponent_rank": 3,
+      "opponent_rank": 6,
       "weight_class": "125",
       "result": "L",
       "method": "TF",
       "score": "19-4",
       "duration": "5:32",
       "event": "Midlands",
-      "mv_impact": -1.57
+      "mv_impact": -1.83
     },
     {
       "date": "2017-12-10",
@@ -131,16 +131,16 @@
       "opponent_career_id": null,
       "opponent_name": "Brandon Cray",
       "opponent_team": "Maryland",
-      "opponent_team_rank": 38,
+      "opponent_team_rank": 41,
       "opponent_weight": 125,
-      "opponent_rank": 94,
+      "opponent_rank": 59,
       "weight_class": "125",
       "result": "W",
       "method": "DEC",
       "score": "3-0",
       "duration": "7:00",
       "event": "vs. Maryland",
-      "mv_impact": 1.9
+      "mv_impact": 2.44
     },
     {
       "date": "2017-12-08",
@@ -148,16 +148,16 @@
       "opponent_career_id": null,
       "opponent_name": "Nick Suriano",
       "opponent_team": "Rutgers",
-      "opponent_team_rank": 16,
+      "opponent_team_rank": 15,
       "opponent_weight": 125,
-      "opponent_rank": 3,
+      "opponent_rank": 6,
       "weight_class": "125",
       "result": "L",
       "method": "TF",
       "score": "24-5",
       "duration": "7:00",
       "event": "vs. Rutgers",
-      "mv_impact": -1.57
+      "mv_impact": -1.83
     },
     {
       "date": "2017-12-01",
@@ -165,16 +165,16 @@
       "opponent_career_id": null,
       "opponent_name": "Travis Piotrowski",
       "opponent_team": "Illinois",
-      "opponent_team_rank": 12,
+      "opponent_team_rank": 13,
       "opponent_weight": 125,
-      "opponent_rank": 16,
+      "opponent_rank": 18,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "7-4",
       "duration": "7:00",
       "event": "vs. Iowa",
-      "mv_impact": -2.03
+      "mv_impact": -2.07
     },
     {
       "date": "2017-11-24",
@@ -182,16 +182,16 @@
       "opponent_career_id": null,
       "opponent_name": "Jonathon Tropea",
       "opponent_team": "Rider",
-      "opponent_team_rank": 36,
+      "opponent_team_rank": 23,
       "opponent_weight": 125,
-      "opponent_rank": 45,
+      "opponent_rank": 58,
       "weight_class": "125",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "4:36",
       "event": "vs. Rider",
-      "mv_impact": 6.46
+      "mv_impact": 6.29
     },
     {
       "date": "2017-11-17",
@@ -199,16 +199,16 @@
       "opponent_career_id": null,
       "opponent_name": "Kyle Akins",
       "opponent_team": "Buffalo",
-      "opponent_team_rank": 53,
+      "opponent_team_rank": 46,
       "opponent_weight": 125,
-      "opponent_rank": 38,
+      "opponent_rank": 33,
       "weight_class": "125",
       "result": "L",
       "method": "DEC",
       "score": "8-4",
       "duration": "7:00",
       "event": "vs. Iowa",
-      "mv_impact": -1.95
+      "mv_impact": -1.88
     },
     {
       "date": "2017-11-17",
@@ -216,16 +216,16 @@
       "opponent_career_id": null,
       "opponent_name": "Paul Bianchi",
       "opponent_team": "North Dakota State",
-      "opponent_team_rank": 47,
+      "opponent_team_rank": 43,
       "opponent_weight": 125,
-      "opponent_rank": 28,
+      "opponent_rank": 41,
       "weight_class": "125",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:53",
       "event": "vs. North Dakota State",
-      "mv_impact": -5.28
+      "mv_impact": -5.39
     },
     {
       "date": "2017-11-11",
@@ -233,19 +233,19 @@
       "opponent_career_id": null,
       "opponent_name": "Perez Perez",
       "opponent_team": "Iowa",
-      "opponent_team_rank": 4,
+      "opponent_team_rank": 9,
       "opponent_weight": 125,
-      "opponent_rank": 95,
+      "opponent_rank": 164,
       "weight_class": "125",
       "result": "W",
       "method": "MD",
       "score": "14-4",
       "duration": "7:00",
       "event": "Luther College Open",
-      "mv_impact": 2.72
+      "mv_impact": 1.42
     }
   ],
-  "profile_generated_at": "2026-09-05",
+  "profile_generated_at": "2026-09-09",
   "season_summary": [
     {
       "season": 2021,
@@ -254,7 +254,7 @@
       "team_slug": "iowa",
       "weight_class": 141,
       "grade": "Sr.",
-      "current_rank": 72,
+      "current_rank": 47,
       "record": "1-0"
     },
     {
@@ -264,7 +264,7 @@
       "team_slug": "iowa",
       "weight_class": 141,
       "grade": "Jr.",
-      "current_rank": 44,
+      "current_rank": 63,
       "record": "4-3"
     },
     {
@@ -274,7 +274,7 @@
       "team_slug": "iowa",
       "weight_class": 141,
       "grade": "So.",
-      "current_rank": 113,
+      "current_rank": 90,
       "record": "2-4"
     },
     {
@@ -284,7 +284,7 @@
       "team_slug": "iowa",
       "weight_class": 125,
       "grade": "Fr.",
-      "current_rank": 65,
+      "current_rank": 75,
       "record": "5-6"
     }
   ]
