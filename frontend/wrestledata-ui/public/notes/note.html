@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title id="note-title-tag">Note — MatSavant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css?v=20260921" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+  <style>
+    .note-article {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 16px 40px;
+    }
+    .note-date {
+      font-size: 0.75rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 6px;
+    }
+    .note-article p {
+      font-size: 1rem;
+      line-height: 1.65;
+      margin: 0 0 16px;
+    }
+    .note-article img {
+      max-width: 100%;
+      border-radius: var(--r-sm);
+      margin: 8px 0 16px;
+    }
+    .note-img-caption {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin: -12px 0 16px;
+    }
+    .note-back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <script src="/analytics.js?v=20260911"></script>
+  <script src="/header.js?v=20260908"></script>
+  <div class="page-container">
+    <header class="header">
+      <a class="note-back-link" href="/notes/index.html">← All notes</a>
+      <h1 id="note-title">Loading…</h1>
+      <div class="note-date" id="note-date"></div>
+    </header>
+
+    <article class="note-article" id="note-body"></article>
+  </div>
+
+  <script src="/notes/note.js?v=20260910"></script>
+</body>
+</html>

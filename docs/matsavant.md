@@ -778,6 +778,8 @@ The replay is also used to build the seed analysis report (`generate_report.py`)
 
 11. **Unranked-wrestler fallback is still generic (open item)**: team simulation slots with no ranked wrestler all draw from the same pooled ranks-25-33 distribution regardless of program. Stratifying this by program strength (a blue-blood program's unranked backup likely outscores a mid-major's) is a known gap, not yet built.
 
+12. **Conference membership is not captured by the current team-list scrape (open item, discovered 2026-09-10)**: `data/team_lists/ncaa_men/{season}/teams.json` (built by `scrape_ncaa_d1_teams.py`) and every downstream team file (`frontend/wrestledata-ui/public/data/teams/*.json`, `team_metrics.json`) carry a `conference` field, but it's `null` for 78 of 79 D1 teams — the live scraper never populates it. The last scrape that *did* capture it is the obsolete `mt/data/_obsolete/2026/*.json` roster dump, where each wrestler entry's `division` field is a comma-joined list like `"DI - Big Ten, DI - Big Ten, ..."`; taking the most common `DI - {conference}` token per team recovers all 79 teams across 9 conferences (Big Ten, Big 12, ACC, EIWA, MAC, SoCon, Ivy League, Pac-12, Independent). That backfill is saved at `frontend/wrestledata-ui/public/data/team_conferences.json` (`{team_slug: conference}`, plus a `source`/`note` explaining it's an interim backfill). **This is a stopgap, not a pipeline fix** — it reflects the 2025-26 season's rosters, so any transfer/realignment since won't show. Fix properly: have `scrape_ncaa_d1_teams.py` capture conference directly when it scrapes the 2027 team list (early 2027 season), and stop reading from `team_conferences.json`.
+
 ---
 
 ## Technology Stack

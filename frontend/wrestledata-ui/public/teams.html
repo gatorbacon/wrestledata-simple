@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Teams — MatSavant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css?v=20260921" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+  <style>
+    .directory-hero {
+      max-width: 560px;
+      margin: 0 auto 20px;
+      position: relative;
+    }
+    .directory-hero .search-input {
+      padding: 12px 16px;
+      font-size: 1rem;
+    }
+    .directory-hero .search-dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 20;
+    }
+    .conf-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      max-width: 1100px;
+      margin: 0 auto 24px;
+      padding: 0 16px;
+    }
+    .conf-pill {
+      border: 1px solid var(--border);
+      background: var(--panel);
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 5px 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .conf-pill:hover {
+      color: var(--text);
+    }
+    .conf-pill.is-active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .teams-toolbar {
+      max-width: 1100px;
+      margin: 0 auto 16px;
+      padding: 0 16px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .conf-section {
+      max-width: 1100px;
+      margin: 0 auto 28px;
+      padding: 0 16px;
+    }
+    .conf-section-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: var(--muted);
+      margin: 0 0 10px;
+    }
+    .team-tile-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+    }
+    .team-tile {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--team-accent, var(--border));
+      border-radius: var(--r-sm);
+      padding: 10px 12px;
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.15s ease;
+    }
+    .team-tile:hover {
+      background: var(--panel-2);
+    }
+    .team-tile-logo {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+    .team-tile-body {
+      min-width: 0;
+    }
+    .team-tile-name {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .team-tile-stat {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <script src="/analytics.js?v=20260911"></script>
+  <script src="/header.js?v=20260908"></script>
+  <div class="page-container">
+    <header class="header">
+      <h1>Teams</h1>
+      <div class="header-explainer">Search any team, or browse every D1 program by conference.</div>
+    </header>
+
+    <div class="directory-hero">
+      <input
+        type="text"
+        class="search-input"
+        id="directory-search-input"
+        placeholder="Search teams…"
+        autocomplete="off"
+        aria-label="Search teams"
+      />
+      <div class="search-dropdown" id="directory-search-dropdown" style="display: none;"></div>
+    </div>
+
+    <div class="conf-pills" id="conf-pills"></div>
+
+    <div class="teams-toolbar">
+      <a href="/leaderboards/xtp/teams.html">Full team race →</a>
+    </div>
+
+    <div id="conf-sections"></div>
+  </div>
+
+  <script src="/teams_directory.js?v=20260910"></script>
+</body>
+</html>

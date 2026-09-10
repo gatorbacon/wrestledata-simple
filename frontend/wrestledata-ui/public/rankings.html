@@ -7,20 +7,68 @@
   <link rel="stylesheet" href="/styles.css?v=20260921" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   <script src="/search_index.js"></script>
+  <style>
+    .sort-by-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      max-width: 1100px;
+      margin: 0 auto 14px;
+      padding: 0 16px;
+    }
+    .sort-by-label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--muted);
+    }
+    .sort-pill {
+      border: 1px solid var(--border);
+      background: var(--panel);
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 9px 22px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .sort-pill:hover {
+      color: var(--text);
+    }
+    .sort-pill.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .sort-subtext {
+      max-width: 1100px;
+      margin: 0 auto 12px;
+      padding: 0 16px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
 </head>
 <body>
+  <script src="/analytics.js?v=20260911"></script>
   <script src="/header.js?v=20260908"></script>
   <div class="page-container">
     <header class="header">
-      <h1 id="rankings-title">Rankings</h1>
-      <div class="header-subline" id="season-info">Season 2027</div>
+      <h1 id="rankings-title">2027 Rankings</h1>
+      <div class="header-subline" id="season-info"></div>
     </header>
 
     <!-- Same P4P / weight-class widget as the homepage's "2027 Rankings"
          section (same data, same p4p_rankings.js) -- shows however many
          spots the current FloWrestling snapshot actually publishes per
-         weight (20/24/33/whatever that week), never padded out further. -->
+         weight (20/24/33/whatever that week), never padded out further.
+         Sort pills + contextual subtext below are page-specific -- the
+         homepage widget keeps its own dropdown/def-chip untouched. -->
     <section class="section" id="p4p-section">
+      <div class="sort-by-row">
+        <span class="sort-by-label">Sort by:</span>
+        <button type="button" class="sort-pill active" data-sort="rank">Ranking</button>
+        <button type="button" class="sort-pill" data-sort="dpg">DPG</button>
+      </div>
       <div class="dpg-pill-rail">
         <div class="hp-panel-tabs" id="p4p-weight-tabs">
           <button class="hp-tab active" data-weight="p4p">P4P</button>
@@ -36,20 +84,7 @@
           <button class="hp-tab" data-weight="285">285</button>
         </div>
       </div>
-      <div class="dpg-def-row">
-        <span class="dpg-def-chip">
-          <span class="dpg-def-full">DPG — extra dual points per match vs what a typical wrestler gets against that same opponent.</span>
-          <span class="dpg-def-short">DPG — points gained vs. a typical opponent</span>
-          <span class="dpg-info" title="Dual Points Gained. Your dual-point result (DEC 3, MD 4, TF 5, F 6) minus what a typical wrestler gets against that same opponent. Beat a #10 by major and you get a lot. Tech a #200 and you get a little. Season DPG is the average of those matches, not a total.">ⓘ</span>
-        </span>
-        <span class="dpg-sort-control">
-          Sort:
-          <select id="p4p-sort-select">
-            <option value="rank">Rank</option>
-            <option value="dpg">Highest DPG</option>
-          </select>
-        </span>
-      </div>
+      <p class="sort-subtext" id="sort-subtext"></p>
       <div class="table-wrapper" id="p4p-table-wrapper">
         <table id="p4p-table" class="dpg-table">
           <thead>
@@ -72,6 +107,6 @@
 
   <script src="/tooltips.js"></script>
   <script src="/mobile_rank_row.js?v=20260907"></script>
-  <script src="/p4p_rankings.js?v=20260907"></script>
+  <script src="/p4p_rankings.js?v=20260911"></script>
 </body>
 </html>

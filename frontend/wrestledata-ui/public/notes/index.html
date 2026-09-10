@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Notes — MatSavant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css?v=20260921" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+  <style>
+    .notes-list {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .note-list-item {
+      display: block;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+      text-decoration: none;
+      color: inherit;
+    }
+    .note-list-item:hover .note-list-title {
+      color: var(--accent);
+    }
+    .note-list-date {
+      font-size: 0.75rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 4px;
+    }
+    .note-list-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 0 0 4px;
+    }
+    .note-list-hook {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin: 0;
+    }
+    .note-list-thumb {
+      width: 100%;
+      max-width: 320px;
+      border-radius: var(--r-sm);
+      margin-top: 10px;
+    }
+    .notes-subsection-links {
+      max-width: 680px;
+      margin: 24px auto 0;
+      padding: 16px 16px 0;
+      border-top: 1px solid var(--border);
+      display: flex;
+      gap: 20px;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <script src="/analytics.js?v=20260911"></script>
+  <script src="/header.js?v=20260908"></script>
+  <div class="page-container">
+    <header class="header">
+      <h1>Notes</h1>
+      <div class="header-explainer">Longform threads with charts — the same voice as X, built to last.</div>
+    </header>
+
+    <div class="notes-list" id="notes-list"></div>
+
+    <div class="notes-subsection-links">
+      <a href="/tools/index.html">Tools →</a>
+      <a href="/lab/index.html">🧪 Lab →</a>
+    </div>
+  </div>
+
+  <script src="/notes/notes_index.js?v=20260910"></script>
+</body>
+</html>

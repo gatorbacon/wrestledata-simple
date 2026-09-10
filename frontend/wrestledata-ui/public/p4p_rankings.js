@@ -275,13 +275,39 @@ function setupP4PTabs() {
   });
 }
 
+const SORT_SUBTEXT = {
+  rank: "Rankings provided by FloWrestling",
+  dpg: "Dual Points Gained - Measures how many extra dual points a wrestler adds or subtracts each time they wrestle, compared with what a typical wrestler gets against that same opponent.",
+};
+
+function updateSortSubtext(sort) {
+  const el = document.getElementById("sort-subtext");
+  if (!el) return;
+  el.textContent = SORT_SUBTEXT[sort] || "";
+}
+
 function setupSortControl() {
+  // Homepage widget: dropdown.
   const select = document.getElementById("p4p-sort-select");
-  if (!select) return;
-  select.addEventListener("change", () => {
-    currentSort = select.value;
-    renderP4P(currentWeight, currentSort);
+  if (select) {
+    select.addEventListener("change", () => {
+      currentSort = select.value;
+      renderP4P(currentWeight, currentSort);
+    });
+  }
+
+  // Rankings page: "Sort by" pills.
+  const pills = document.querySelectorAll(".sort-pill[data-sort]");
+  pills.forEach(pill => {
+    pill.addEventListener("click", () => {
+      currentSort = pill.dataset.sort;
+      pills.forEach(p => p.classList.toggle("active", p === pill));
+      updateSortSubtext(currentSort);
+      renderP4P(currentWeight, currentSort);
+    });
   });
+
+  updateSortSubtext(currentSort);
 }
 
 // Deep-link support: a page linking in with ?weight=133 (e.g. the
@@ -293,6 +319,15 @@ function initialWeightFromURL(data) {
   return "p4p";
 }
 
+function updateSeasonInfoDate(data) {
+  const el = document.getElementById("season-info");
+  if (!el || !data || !data.ranking_date) return;
+  const d = new Date(data.ranking_date + "T00:00:00");
+  el.textContent = isNaN(d)
+    ? data.ranking_date
+    : d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+}
+
 function renderP4PRankings(data) {
   const section = document.getElementById("p4p-section");
   if (!data || !data.p4p || !data.p4p.length) {
@@ -300,6 +335,7 @@ function renderP4PRankings(data) {
     return;
   }
 
+  updateSeasonInfoDate(data);
   p4pData = data;
   currentWeight = initialWeightFromURL(data);
   document.querySelectorAll("#p4p-weight-tabs .hp-tab").forEach(t => {

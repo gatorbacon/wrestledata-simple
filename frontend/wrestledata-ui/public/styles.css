@@ -264,6 +264,32 @@ a:hover {
   color: var(--text);
 }
 
+.dropdown-item--disabled {
+  cursor: not-allowed;
+  color: var(--muted);
+  opacity: 0.5;
+}
+
+.dropdown-item--disabled:hover {
+  background: none;
+  color: var(--muted);
+}
+
+.mobile-drawer-link--disabled {
+  cursor: not-allowed;
+  color: var(--muted);
+  opacity: 0.5;
+}
+
+.mobile-drawer-link--disabled:hover {
+  color: var(--muted);
+}
+
+.mobile-drawer-link--disabled em {
+  font-style: normal;
+  font-size: 0.8rem;
+}
+
 .dropdown-item-label {
   display: block;
   color: var(--text);
@@ -4083,6 +4109,10 @@ th.tooltip-trigger .tooltip {
 /* --- SECTION 4: FEATURED CARDS --- */
 
 .homepage-featured {
+  margin-bottom: 2rem;
+}
+
+.homepage-latest-note {
   margin-bottom: 2rem;
 }
 

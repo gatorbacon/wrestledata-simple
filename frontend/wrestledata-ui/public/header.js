@@ -30,69 +30,54 @@
               <div class="dropdown-menu" id="rankings-menu">
                 <div class="dropdown-group-label">Wrestlers</div>
                 <a href="/rankings.html" class="dropdown-item">
-                  <span class="dropdown-item-label">Board</span>
-                  <span class="dropdown-item-subtext">Top 33 by weight</span>
+                  <span class="dropdown-item-label">By Weight</span>
+                  <span class="dropdown-item-subtext">Top 33 by weight + P4P</span>
                 </a>
                 <a href="/matrix.html" class="dropdown-item">
                   <span class="dropdown-item-label">Matrix</span>
-                  <span class="dropdown-item-subtext">Projected matchups</span>
+                  <span class="dropdown-item-subtext">Visual Map of Ranks</span>
                 </a>
-                <a href="/leaderboards/dpg.html" class="dropdown-item">
-                  <span class="dropdown-item-label">DPG</span>
-                  <span class="dropdown-item-subtext">Dual points gained</span>
-                </a>
-                <div class="dropdown-group-label">Teams</div>
+                <div class="dropdown-group-label">Races</div>
                 <a href="/leaderboards/xtp/teams.html" class="dropdown-item">
-                  <span class="dropdown-item-label">Team points</span>
-                  <span class="dropdown-item-subtext">NCAA tournament projection</span>
+                  <span class="dropdown-item-label">Team race</span>
+                  <span class="dropdown-item-subtext">NCAA title / xTP</span>
+                </a>
+                <a href="/hodge.html" class="dropdown-item">
+                  <span class="dropdown-item-label">Hodge</span>
+                  <span class="dropdown-item-subtext">View Hodge Data</span>
                 </a>
               </div>
             </div>
 
-            <!-- Profiles Dropdown -->
-            <div class="nav-item nav-item--dropdown" id="nav-profiles">
+            <!-- Wrestlers / Teams: direct links, not a dropdown -->
+            <a href="/wrestlers.html" class="nav-item nav-link">Wrestlers</a>
+            <a href="/teams.html" class="nav-item nav-link">Teams</a>
+
+            <!-- Events Dropdown -->
+            <div class="nav-item nav-item--dropdown" id="nav-events">
               <button class="nav-link nav-link--dropdown" aria-expanded="false" aria-haspopup="true">
-                Profiles <span class="dropdown-arrow">▾</span>
+                Events <span class="dropdown-arrow">▾</span>
               </button>
-              <div class="dropdown-menu" id="profiles-menu">
-                <a href="/leaderboards/dpg.html" class="dropdown-item">
-                  <span class="dropdown-item-label">Wrestlers</span>
+              <div class="dropdown-menu" id="events-menu">
+                <a href="/events/ncaa.html" class="dropdown-item">
+                  <span class="dropdown-item-label">NCAA</span>
                 </a>
-                <a href="/leaderboards/xtp/teams.html" class="dropdown-item">
-                  <span class="dropdown-item-label">Teams</span>
-                </a>
+                <span class="dropdown-item dropdown-item--disabled" aria-disabled="true">
+                  <span class="dropdown-item-label">Big Ten</span>
+                  <span class="dropdown-item-subtext">Coming soon</span>
+                </span>
+                <span class="dropdown-item dropdown-item--disabled" aria-disabled="true">
+                  <span class="dropdown-item-label">Big 12</span>
+                  <span class="dropdown-item-subtext">Coming soon</span>
+                </span>
+                <span class="dropdown-item dropdown-item--disabled" aria-disabled="true">
+                  <span class="dropdown-item-label">National Duals</span>
+                  <span class="dropdown-item-subtext">Coming soon</span>
+                </span>
               </div>
             </div>
 
-            <!-- Tournaments Dropdown -->
-            <div class="nav-item nav-item--dropdown" id="nav-tournaments">
-              <button class="nav-link nav-link--dropdown" aria-expanded="false" aria-haspopup="true">
-                Tournaments <span class="dropdown-arrow">▾</span>
-              </button>
-              <div class="dropdown-menu" id="tournaments-menu">
-                <a href="/ncaa_live.html" class="dropdown-item">
-                  <span class="dropdown-item-label">NCAA Live Dashboard</span>
-                </a>
-                <a href="/ncaa_report.html" class="dropdown-item">
-                  <span class="dropdown-item-label">Seed Analysis</span>
-                </a>
-                <a href="/ncaa_scoring_trends.html" class="dropdown-item">
-                  <span class="dropdown-item-label">Scoring Trends</span>
-                </a>
-                <a href="/ncaa_team_leaderboard.html" class="dropdown-item">
-                  <span class="dropdown-item-label">Team Leaderboard</span>
-                </a>
-                <a href="/ncaa_team_report.html" class="dropdown-item">
-                  <span class="dropdown-item-label">Team Analysis</span>
-                </a>
-                <a href="/ncaa_conf_leaderboard.html" class="dropdown-item">
-                  <span class="dropdown-item-label">Conference Leaderboard</span>
-                </a>
-                <a href="/ncaa_conf_analysis.html" class="dropdown-item">
-                  <span class="dropdown-item-label">Conference Analysis</span>
-                </a>
-              </div>
-            </div>
+            <a href="/notes/index.html" class="nav-item nav-link">Notes</a>
           </div>
 
           <!-- Search (Center-Right) -->
@@ -151,25 +136,23 @@
         <nav class="mobile-drawer-nav">
           <div class="mobile-drawer-section">
             <div class="mobile-drawer-section-label">Rankings</div>
-            <a href="/rankings.html" class="mobile-drawer-link">Rankings (Traditional)</a>
-            <a href="/matrix.html" class="mobile-drawer-link">Rankings Matrix</a>
-            <a href="/leaderboards/dpg.html" class="mobile-drawer-link">DPG</a>
-            <a href="/leaderboards/xtp/teams.html" class="mobile-drawer-link">Expected Team Points (xTP)</a>
+            <a href="/rankings.html" class="mobile-drawer-link">By Weight</a>
+            <a href="/leaderboards/xtp/teams.html" class="mobile-drawer-link">Team race</a>
+            <a href="/hodge.html" class="mobile-drawer-link">Hodge</a>
           </div>
           <div class="mobile-drawer-section">
-            <div class="mobile-drawer-section-label">Profiles</div>
-            <a href="/leaderboards/dpg.html" class="mobile-drawer-link">Wrestlers</a>
-            <a href="/leaderboards/xtp/teams.html" class="mobile-drawer-link">Teams</a>
+            <a href="/wrestlers.html" class="mobile-drawer-link">Wrestlers</a>
+            <a href="/teams.html" class="mobile-drawer-link">Teams</a>
           </div>
           <div class="mobile-drawer-section">
-            <div class="mobile-drawer-section-label">Tournaments</div>
-            <a href="/ncaa_live.html" class="mobile-drawer-link">NCAA Live Dashboard</a>
-            <a href="/ncaa_report.html" class="mobile-drawer-link">Seed Analysis</a>
-            <a href="/ncaa_scoring_trends.html" class="mobile-drawer-link">Scoring Trends</a>
-            <a href="/ncaa_team_leaderboard.html" class="mobile-drawer-link">Team Leaderboard</a>
-            <a href="/ncaa_team_report.html" class="mobile-drawer-link">Team Analysis</a>
-            <a href="/ncaa_conf_leaderboard.html" class="mobile-drawer-link">Conference Leaderboard</a>
-            <a href="/ncaa_conf_analysis.html" class="mobile-drawer-link">Conference Analysis</a>
+            <div class="mobile-drawer-section-label">Events</div>
+            <a href="/events/ncaa.html" class="mobile-drawer-link">NCAA</a>
+            <span class="mobile-drawer-link mobile-drawer-link--disabled" aria-disabled="true">Big Ten <em>— coming soon</em></span>
+            <span class="mobile-drawer-link mobile-drawer-link--disabled" aria-disabled="true">Big 12 <em>— coming soon</em></span>
+            <span class="mobile-drawer-link mobile-drawer-link--disabled" aria-disabled="true">National Duals <em>— coming soon</em></span>
+          </div>
+          <div class="mobile-drawer-section">
+            <a href="/notes/index.html" class="mobile-drawer-link">Notes</a>
           </div>
           <div class="mobile-drawer-section mobile-drawer-section--last">
             <a href="/about.html" class="mobile-drawer-link">About</a>
@@ -525,6 +508,32 @@
     document.addEventListener('DOMContentLoaded', initHeader);
   } else {
     initHeader();
+  }
+
+  // ========================================
+  // GA4 pageview firing (see analytics.js -- send_page_view is off there)
+  // ========================================
+  // Every page here has a static <title> except notes/note.html, which
+  // sets its title from a fetch; that page calls window.sendPageView()
+  // itself once the title is final instead of being auto-fired below.
+  function sendPageView() {
+    if (typeof gtag === 'function') {
+      gtag('event', 'page_view', {
+        page_title: document.title,
+        page_location: window.location.href,
+      });
+    }
+  }
+  window.sendPageView = sendPageView;
+
+  const _dynamicTitlePages = ['/notes/note.html'];
+  const _isStaticTitlePage = !_dynamicTitlePages.some(p => window.location.pathname.endsWith(p));
+  if (_isStaticTitlePage) {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', sendPageView);
+    } else {
+      sendPageView();
+    }
   }
 })();
 

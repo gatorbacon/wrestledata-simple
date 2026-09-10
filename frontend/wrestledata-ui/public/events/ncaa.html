@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NCAA Championships — MatSavant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css?v=20260921" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+  <style>
+    .event-archive-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 14px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+  </style>
+</head>
+<body>
+  <script src="/analytics.js?v=20260911"></script>
+  <script src="/header.js?v=20260908"></script>
+  <script src="/event-tabs.js?v=20260910"></script>
+  <div class="page-container">
+    <header class="header">
+      <h1>NCAA Championships</h1>
+      <div class="header-explainer">
+        Archive mode — the 2026 field is set, results are in. Next live: NCAA Championships, March.
+      </div>
+    </header>
+
+    <div class="event-archive-grid">
+      <a href="/ncaa_report.html" class="featured-card">
+        <div class="featured-card-header">
+          <h3 class="featured-card-title">Seed Analysis</h3>
+          <span class="featured-card-arrow">→</span>
+        </div>
+        <p class="featured-card-desc">How seeds tracked against results, upset rates by round</p>
+      </a>
+      <a href="/ncaa_scoring_trends.html" class="featured-card">
+        <div class="featured-card-header">
+          <h3 class="featured-card-title">Scoring Trends</h3>
+          <span class="featured-card-arrow">→</span>
+        </div>
+        <p class="featured-card-desc">Bonus rates, pin rates, and how matches were won across the bracket</p>
+      </a>
+      <a href="/ncaa_team_leaderboard.html" class="featured-card">
+        <div class="featured-card-header">
+          <h3 class="featured-card-title">Team Leaderboard</h3>
+          <span class="featured-card-arrow">→</span>
+        </div>
+        <p class="featured-card-desc">Final team scores and points breakdown</p>
+      </a>
+      <a href="/ncaa_team_report.html" class="featured-card">
+        <div class="featured-card-header">
+          <h3 class="featured-card-title">Team Analysis</h3>
+          <span class="featured-card-arrow">→</span>
+        </div>
+        <p class="featured-card-desc">DPG vs. placement, what the models missed</p>
+      </a>
+      <a href="/ncaa_conf_leaderboard.html" class="featured-card">
+        <div class="featured-card-header">
+          <h3 class="featured-card-title">Conference Leaderboard</h3>
+          <span class="featured-card-arrow">→</span>
+        </div>
+        <p class="featured-card-desc">Conference-by-conference team scoring</p>
+      </a>
+      <a href="/ncaa_conf_analysis.html" class="featured-card">
+        <div class="featured-card-header">
+          <h3 class="featured-card-title">Conference Analysis</h3>
+          <span class="featured-card-arrow">→</span>
+        </div>
+        <p class="featured-card-desc">Conference strength and depth breakdowns</p>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

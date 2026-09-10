@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lab — MatSavant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css?v=20260921" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+  <style>
+    .lab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 14px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+  </style>
+</head>
+<body>
+  <script src="/analytics.js?v=20260911"></script>
+  <script src="/header.js?v=20260908"></script>
+  <div class="page-container">
+    <header class="header">
+      <h1>🧪 Lab</h1>
+      <div class="header-explainer">
+        Visibly unofficial. These are sandbox pages — not rankings — with no links in from Rankings or a wrestler/team profile. When one earns a repeat audience, it gets promoted out of here.
+      </div>
+    </header>
+
+    <div class="lab-grid">
+      <a href="/aa_odds.html" class="featured-card">
+        <div class="featured-card-header">
+          <h3 class="featured-card-title">All-American &amp; Title Odds</h3>
+          <span class="featured-card-arrow">→</span>
+        </div>
+        <p class="featured-card-desc">Per-wrestler AA and title probabilities from the projection model</p>
+      </a>
+      <a href="/freshman.html" class="featured-card">
+        <div class="featured-card-header">
+          <h3 class="featured-card-title">Freshman of the Year</h3>
+          <span class="featured-card-arrow">→</span>
+        </div>
+        <p class="featured-card-desc">Emerging first-year wrestlers making an impact</p>
+      </a>
+      <a href="/final_scores.html" class="featured-card">
+        <div class="featured-card-header">
+          <h3 class="featured-card-title">Every Final Score</h3>
+          <span class="featured-card-arrow">→</span>
+        </div>
+        <p class="featured-card-desc">Every decided match since 2011-12, plotted by final score and colored by how often it happened</p>
+      </a>
+      <a href="/top3_backtest.html" class="featured-card">
+        <div class="featured-card-header">
+          <h3 class="featured-card-title">Top 3 Backtest</h3>
+          <span class="featured-card-arrow">→</span>
+        </div>
+        <p class="featured-card-desc">How the Team Championship Odds model would have called each season's top 3, month by month, tested out-of-sample</p>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
