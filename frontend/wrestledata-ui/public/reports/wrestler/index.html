@@ -7,15 +7,32 @@
   <link rel="stylesheet" href="/styles.css?v=20260921" />
   <style>
     .wv-header { text-align: center; margin-bottom: 32px; }
-    .wv-search { max-width: 420px; margin: 0 auto 28px; display: flex; gap: 8px; }
+    .rv-key { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: -14px auto 24px; font-size: 0.8rem; color: var(--muted); }
+    .rv-key-item { display: flex; align-items: center; gap: 6px; }
+    .rv-key-swatch { display: inline-block; width: 18px; height: 12px; border-radius: 3px; flex-shrink: 0; background: rgba(93,156,219,0.28); border: 1px solid #3f6ea5; }
+    .rv-key-swatch--champ { height: 0; border: none; border-top: 2px dashed #16325c; }
+    .wv-search { max-width: 420px; margin: 0 auto 28px; position: relative; }
     .wv-search input {
-      flex: 1; padding: 9px 12px; border-radius: 8px; border: 1px solid var(--border);
-      background: var(--panel); color: var(--text); font-size: 0.9rem;
+      width: 100%; padding: 9px 12px; border-radius: 8px; border: 1px solid var(--border);
+      background: var(--panel); color: var(--text); font-size: 0.9rem; box-sizing: border-box;
     }
-    .wv-search button {
-      padding: 9px 16px; border-radius: 8px; border: none; background: var(--accent);
-      color: #fff; font-weight: 700; font-size: 0.85rem; cursor: pointer;
+    .wv-suggestions {
+      position: absolute; top: 100%; left: 0; right: 0; margin-top: 4px;
+      background: var(--panel); border: 1px solid var(--border); border-radius: 8px;
+      max-height: 320px; overflow-y: auto; z-index: 10; box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      display: none;
     }
+    .wv-suggestions.visible { display: block; }
+    .wv-suggestion {
+      padding: 9px 12px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    .wv-suggestion:last-child { border-bottom: none; }
+    .wv-suggestion:hover, .wv-suggestion.highlighted { background: var(--panel-2); }
+    .wv-suggestion .name { font-weight: 700; color: var(--text); font-size: 0.9rem; }
+    .wv-suggestion .meta { font-size: 0.78rem; color: var(--muted); white-space: nowrap; }
+    .wv-suggestion .rank { font-size: 0.75rem; font-weight: 800; color: var(--accent); }
+    .wv-no-results { padding: 12px; text-align: center; color: var(--muted); font-size: 0.85rem; }
 
     .wv-card {
       background: var(--panel);
@@ -48,8 +65,8 @@
       text-align: center; font-size: 0.82rem; color: var(--muted); font-style: italic;
       margin: 18px 0 4px; padding-top: 14px; border-top: 1px solid var(--border);
     }
-    .wv-chart-wrap { width: 100%; overflow-x: auto; }
-    .wv-chart-wrap svg { display: block; margin: 0 auto; }
+    .wv-chart-wrap { width: 100%; }
+    .wv-chart-wrap svg { display: block; margin: 0 auto; max-width: 100%; height: auto; }
     .wv-chart-wrap svg circle[data-tooltip] { cursor: pointer; }
 
     .wv-card-legend { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 8px; font-size: 0.82rem; color: var(--text); font-weight: 600; }
@@ -82,9 +99,14 @@
       <p id="wv-subtitle" style="color:var(--muted); margin-top:6px;">Career DPG by season, across every school</p>
     </div>
 
+    <div class="rv-key">
+      <span class="rv-key-item"><span class="rv-key-swatch"></span>AA Range — 25th–75th pct. DPG among All-Americans, last 5 seasons</span>
+      <span class="rv-key-item"><span class="rv-key-swatch rv-key-swatch--champ"></span>Champion avg. DPG</span>
+    </div>
+
     <div class="wv-search">
-      <input id="wv-search-input" type="text" placeholder="career_id, e.g. career_002026" />
-      <button id="wv-search-btn">View</button>
+      <input id="wv-search-input" type="text" placeholder="Start typing a wrestler's name…" autocomplete="off" />
+      <div class="wv-suggestions" id="wv-suggestions"></div>
     </div>
 
     <div id="wv-body"><div class="wv-loading">Loading…</div></div>
@@ -96,6 +118,10 @@
   'use strict';
   const C = window.WrestlerChart;
 
+  // AA-range band + champion line -- fetched once, reused for every chart
+  // on this page (not weight- or wrestler-specific).
+  const bandPromise = fetch('/data/reports/aa_dpg_band.json').then(r => r.ok ? r.json() : null).catch(() => null);
+
   function qs(name) {
     return new URLSearchParams(window.location.search).get(name);
   }
@@ -104,8 +130,9 @@
     return v === null || v === undefined ? '—' : v.toFixed(2);
   }
 
-  function render(wrestler, colorMap) {
+  function render(wrestler, colorMap, band) {
     document.getElementById('wv-title').textContent = wrestler.name || 'Wrestler DPG Chart';
+    document.getElementById('wv-search-input').value = wrestler.name || '';
     const path = (wrestler.school_path || []).join(' → ');
     document.getElementById('wv-subtitle').textContent = path || 'Career DPG by season';
 
@@ -150,7 +177,7 @@
     `;
     body.innerHTML = '';
     body.appendChild(card);
-    card.querySelector('.wv-chart-wrap').innerHTML = C.buildChartSVG(wrestler, colorMap);
+    card.querySelector('.wv-chart-wrap').innerHTML = C.buildChartSVG(wrestler, colorMap, band);
     C.wireTooltips(card.querySelector('.wv-chart-wrap'));
   }
 
@@ -160,32 +187,100 @@
     Promise.all([
       fetch(`/data/reports/wrestler_view/${id}.json`).then(r => { if (!r.ok) throw new Error('not found'); return r.json(); }),
       fetch('/data/team_colors.json').then(r => r.ok ? r.json() : { teams: {}, default: C.DEFAULT_COLOR }).catch(() => ({ teams: {}, default: C.DEFAULT_COLOR })),
+      bandPromise,
     ])
-      .then(([data, colorMap]) => render(data, colorMap))
+      .then(([data, colorMap, band]) => render(data, colorMap, band))
       .catch(() => {
-        body.innerHTML = `<div class="wv-empty">No wrestler view found for "${C.esc(id)}". Check the career_id and try again.</div>`;
+        body.innerHTML = `<div class="wv-empty">No wrestler view found. Try searching for the name above again.</div>`;
       });
   }
 
-  document.getElementById('wv-search-btn').addEventListener('click', () => {
-    const v = document.getElementById('wv-search-input').value.trim();
-    if (!v) return;
+  function selectWrestler(careerId) {
     const url = new URL(window.location);
-    url.searchParams.set('id', v);
+    url.searchParams.set('id', careerId);
     window.history.pushState({}, '', url);
-    load(v);
+    load(careerId);
+  }
+
+  // ---- name autocomplete (same wrestler_index.json + substring-filter
+  // pattern as the reports hub's own Wrestler Search tab) ----
+  let wrestlerIndex = [];
+  fetch('/data/reports/wrestler_index.json').then(r => r.json()).then(data => {
+    wrestlerIndex = data;
+  }).catch(() => {});
+
+  const input = document.getElementById('wv-search-input');
+  const box = document.getElementById('wv-suggestions');
+  let highlighted = -1;
+
+  function renderSuggestions(matches) {
+    if (!matches.length) {
+      box.innerHTML = '<div class="wv-no-results">No matches</div>';
+      box.classList.add('visible');
+      return;
+    }
+    box.innerHTML = matches.map((w, i) => `
+      <div class="wv-suggestion" data-idx="${i}" data-id="${C.esc(w.career_id)}">
+        <div>
+          <div class="name">${C.esc(w.name)}</div>
+          <div class="meta">${C.esc(w.team || '')}${w.weight_class ? ' · ' + w.weight_class : ''} · ${C.esc(w.latest_year)}</div>
+        </div>
+        <div class="rank">${w.latest_rank ? '#' + w.latest_rank : 'NR'}</div>
+      </div>
+    `).join('');
+    box.classList.add('visible');
+    highlighted = -1;
+    box.querySelectorAll('.wv-suggestion').forEach(el => {
+      el.addEventListener('click', () => {
+        box.classList.remove('visible');
+        selectWrestler(el.dataset.id);
+      });
+    });
+  }
+
+  input.addEventListener('input', () => {
+    const q = input.value.trim().toLowerCase();
+    if (!q || !wrestlerIndex.length) {
+      box.classList.remove('visible');
+      return;
+    }
+    const matches = wrestlerIndex
+      .filter(w => w.name && w.name.toLowerCase().includes(q))
+      .sort((a, b) => (a.latest_rank || Infinity) - (b.latest_rank || Infinity))
+      .slice(0, 10);
+    renderSuggestions(matches);
   });
-  document.getElementById('wv-search-input').addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') document.getElementById('wv-search-btn').click();
+
+  input.addEventListener('keydown', (e) => {
+    const items = box.querySelectorAll('.wv-suggestion');
+    if (!items.length) return;
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      highlighted = Math.min(highlighted + 1, items.length - 1);
+      items.forEach((el, i) => el.classList.toggle('highlighted', i === highlighted));
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      highlighted = Math.max(highlighted - 1, 0);
+      items.forEach((el, i) => el.classList.toggle('highlighted', i === highlighted));
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      const target = highlighted >= 0 ? items[highlighted] : items[0];
+      if (target) { box.classList.remove('visible'); selectWrestler(target.dataset.id); }
+    } else if (e.key === 'Escape') {
+      box.classList.remove('visible');
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.wv-search')) box.classList.remove('visible');
   });
 
   const id = qs('id');
   if (id) {
-    document.getElementById('wv-search-input').value = id;
     load(id);
   } else {
     document.getElementById('wv-body').innerHTML =
-      '<div class="wv-empty">Enter a career_id above, or use ?id=career_XXXXXX in the URL.</div>';
+      '<div class="wv-empty">Search for a wrestler by name above.</div>';
   }
 })();
   </script>

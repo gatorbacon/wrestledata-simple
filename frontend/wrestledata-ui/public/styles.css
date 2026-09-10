@@ -277,6 +277,19 @@ a:hover {
   margin-top: 2px;
 }
 
+.dropdown-group-label {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 10px 12px 4px;
+}
+
+.dropdown-group-label:first-child {
+  padding-top: 4px;
+}
+
 /* Multi-level Dropdown (Rankings) */
 .dropdown-submenu {
   position: relative;

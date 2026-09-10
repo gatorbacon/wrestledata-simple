@@ -76,34 +76,12 @@
     </div>
 
     <div class="rh-tabs">
-      <button class="rh-tab active" data-tab="transfers">Transfer Window</button>
-      <button class="rh-tab" data-tab="roster">Team Roster</button>
+      <button class="rh-tab active" data-tab="roster">Team Roster</button>
       <button class="rh-tab" data-tab="wrestler">Wrestler Search</button>
+      <button class="rh-tab" data-tab="transfers">Transfer Window</button>
     </div>
 
-    <div class="rh-panel active" id="panel-transfers">
-      <div class="rh-card">
-        <h2>Transfer Window</h2>
-        <div class="rh-desc">See a team's transfers in and out, with DPG before and after, across a year range.</div>
-        <div class="rh-field">
-          <label for="xf-team">Team</label>
-          <select id="xf-team"></select>
-        </div>
-        <div class="rh-row">
-          <div class="rh-field">
-            <label for="xf-start">Start year</label>
-            <select id="xf-start"></select>
-          </div>
-          <div class="rh-field">
-            <label for="xf-end">End year</label>
-            <select id="xf-end"></select>
-          </div>
-        </div>
-        <button class="rh-btn" id="xf-go">View Report</button>
-      </div>
-    </div>
-
-    <div class="rh-panel" id="panel-roster">
+    <div class="rh-panel active" id="panel-roster">
       <div class="rh-card">
         <h2>Team Roster</h2>
         <div class="rh-desc">A team's full roster for one season, with each wrestler's career DPG chart.</div>
@@ -129,6 +107,28 @@
           <div class="rh-suggestions" id="wr-suggestions"></div>
         </div>
         <div class="rh-hint" id="wr-hint">Loading wrestler index…</div>
+      </div>
+    </div>
+
+    <div class="rh-panel" id="panel-transfers">
+      <div class="rh-card">
+        <h2>Transfer Window</h2>
+        <div class="rh-desc">See a team's transfers in and out, with DPG before and after, across a year range.</div>
+        <div class="rh-field">
+          <label for="xf-team">Team</label>
+          <select id="xf-team"></select>
+        </div>
+        <div class="rh-row">
+          <div class="rh-field">
+            <label for="xf-start">Start year</label>
+            <select id="xf-start"></select>
+          </div>
+          <div class="rh-field">
+            <label for="xf-end">End year</label>
+            <select id="xf-end"></select>
+          </div>
+        </div>
+        <button class="rh-btn" id="xf-go">View Report</button>
       </div>
     </div>
   </div>

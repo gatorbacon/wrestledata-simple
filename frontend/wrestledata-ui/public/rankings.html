@@ -13,47 +13,65 @@
   <div class="page-container">
     <header class="header">
       <h1 id="rankings-title">Rankings</h1>
-      <div class="header-subline" id="season-info">Season 2026</div>
+      <div class="header-subline" id="season-info">Season 2027</div>
     </header>
 
-    <section class="section">
-      <!-- Weight tabs -->
-      <div class="weight-tabs" id="weight-tabs">
-        <a class="weight-tab" href="rankings.html?weight=125">125</a>
-        <a class="weight-tab" href="rankings.html?weight=133">133</a>
-        <a class="weight-tab" href="rankings.html?weight=141">141</a>
-        <a class="weight-tab" href="rankings.html?weight=149">149</a>
-        <a class="weight-tab" href="rankings.html?weight=157">157</a>
-        <a class="weight-tab" href="rankings.html?weight=165">165</a>
-        <a class="weight-tab" href="rankings.html?weight=174">174</a>
-        <a class="weight-tab" href="rankings.html?weight=184">184</a>
-        <a class="weight-tab" href="rankings.html?weight=197">197</a>
-        <a class="weight-tab" href="rankings.html?weight=285">285</a>
+    <!-- Same P4P / weight-class widget as the homepage's "2027 Rankings"
+         section (same data, same p4p_rankings.js) -- shows however many
+         spots the current FloWrestling snapshot actually publishes per
+         weight (20/24/33/whatever that week), never padded out further. -->
+    <section class="section" id="p4p-section">
+      <div class="dpg-pill-rail">
+        <div class="hp-panel-tabs" id="p4p-weight-tabs">
+          <button class="hp-tab active" data-weight="p4p">P4P</button>
+          <button class="hp-tab" data-weight="125">125</button>
+          <button class="hp-tab" data-weight="133">133</button>
+          <button class="hp-tab" data-weight="141">141</button>
+          <button class="hp-tab" data-weight="149">149</button>
+          <button class="hp-tab" data-weight="157">157</button>
+          <button class="hp-tab" data-weight="165">165</button>
+          <button class="hp-tab" data-weight="174">174</button>
+          <button class="hp-tab" data-weight="184">184</button>
+          <button class="hp-tab" data-weight="197">197</button>
+          <button class="hp-tab" data-weight="285">285</button>
+        </div>
       </div>
-
-      <div class="table-wrapper" id="rankings-table-wrapper">
-        <table id="rankings-table">
+      <div class="dpg-def-row">
+        <span class="dpg-def-chip">
+          <span class="dpg-def-full">DPG — extra dual points per match vs what a typical wrestler gets against that same opponent.</span>
+          <span class="dpg-def-short">DPG — points gained vs. a typical opponent</span>
+          <span class="dpg-info" title="Dual Points Gained. Your dual-point result (DEC 3, MD 4, TF 5, F 6) minus what a typical wrestler gets against that same opponent. Beat a #10 by major and you get a lot. Tech a #200 and you get a little. Season DPG is the average of those matches, not a total.">ⓘ</span>
+        </span>
+        <span class="dpg-sort-control">
+          Sort:
+          <select id="p4p-sort-select">
+            <option value="rank">Rank</option>
+            <option value="dpg">Highest DPG</option>
+          </select>
+        </span>
+      </div>
+      <div class="table-wrapper" id="p4p-table-wrapper">
+        <table id="p4p-table" class="dpg-table">
           <thead>
             <tr>
-              <th>Rank</th>
-              <th>Name</th>
+              <th style="width: 32px;">Rank</th>
+              <th>Wrestler</th>
               <th>Team</th>
-              <th>W–L</th>
-              <th>Bonus %</th>
-              <th class="col-mv">DPG</th>
-              <th>DPG Rank</th>
+              <th class="num" title="Dual Points Gained. Your dual-point result (DEC 3, MD 4, TF 5, F 6) minus what a typical wrestler gets against that same opponent.">DPG ⓘ</th>
+              <th class="num">Bonus %</th>
+              <th class="num">Pin %</th>
+              <th>Record</th>
             </tr>
           </thead>
           <tbody></tbody>
         </table>
       </div>
-      <div class="dpg-mobile-list" id="rankings-mobile-list"></div>
+      <div class="dpg-mobile-list" id="p4p-mobile-list"></div>
     </section>
   </div>
 
   <script src="/tooltips.js"></script>
   <script src="/mobile_rank_row.js?v=20260907"></script>
-  <script src="/rankings.js?v=20260907"></script>
+  <script src="/p4p_rankings.js?v=20260907"></script>
 </body>
 </html>
-

@@ -1,0 +1,118 @@
+{
+  "wrestler_id": "10500490132",
+  "name": "Derek Fisher",
+  "team": "Utah Valley",
+  "team_slug": "utah_valley",
+  "team_rank": 39,
+  "weight_class": 141,
+  "grade": "Fr.",
+  "hometown": "Lehi, Utah",
+  "high_school": "Pleasant Grove HS",
+  "photo_url": "https://gouvu.com/images/2019/9/30/Derek_Fisher.JPG",
+  "previous_school": null,
+  "year": 2020,
+  "current_rank": 167,
+  "record": {
+    "overall": "1-1",
+    "vs_ranked": "1-1",
+    "vs_top10": "0-0",
+    "vs_top25": "0-0"
+  },
+  "metrics": {
+    "pf7": 10.5,
+    "pa7": 6.5,
+    "pd7": 4.0,
+    "si_plus": 134.5,
+    "df_plus": 102.3,
+    "apr_plus": 104.2,
+    "pin_rate": 0.0,
+    "bonus_rate": 1.0,
+    "majors": 1,
+    "techs": 0,
+    "pins": 0,
+    "mat_value": {
+      "mv_avg": -0.609,
+      "matches": 2,
+      "rank_weight": 113,
+      "rank_overall": 999,
+      "version": "v1"
+    }
+  },
+  "opponent_breakdown": {
+    "ranked_wins": 1,
+    "ranked_losses": 1,
+    "top10_wins": 0,
+    "top10_losses": 0,
+    "win_over_highest_rank": {
+      "opponent_id": "10493784132",
+      "opponent_rank": 180,
+      "opponent_name": "Conner Wilson",
+      "method": "MD 19-7"
+    },
+    "worst_loss": {
+      "opponent_id": "10500486132",
+      "opponent_rank": 102,
+      "opponent_name": "James Emmer",
+      "method": "Dec 6-2"
+    }
+  },
+  "match_list": [
+    {
+      "date": "2019-12-15",
+      "opponent_id": "10493784132",
+      "opponent_career_id": null,
+      "opponent_name": "Conner Wilson",
+      "opponent_team": "Oklahoma State",
+      "opponent_team_rank": 5,
+      "opponent_weight": 141,
+      "opponent_rank": 180,
+      "weight_class": "141",
+      "result": "W",
+      "method": "MD",
+      "score": "19-7",
+      "duration": "7:00",
+      "event": "Reno Tournament of Champions",
+      "mv_impact": 2.34
+    },
+    {
+      "date": "2019-11-16",
+      "opponent_id": "10500486132",
+      "opponent_career_id": null,
+      "opponent_name": "James Emmer",
+      "opponent_team": "Utah Valley",
+      "opponent_team_rank": 39,
+      "opponent_weight": 141,
+      "opponent_rank": 102,
+      "weight_class": "141",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-2",
+      "duration": "7:00",
+      "event": "Colorado Mesa Open",
+      "mv_impact": -3.55
+    }
+  ],
+  "profile_generated_at": "2026-09-05",
+  "season_summary": [
+    {
+      "season": 2021,
+      "wrestler_id": "14888014132",
+      "team": "Utah Valley",
+      "team_slug": "utah_valley",
+      "weight_class": 157,
+      "grade": "R-Fr.",
+      "current_rank": 154,
+      "record": "0-0"
+    },
+    {
+      "season": 2020,
+      "wrestler_id": "10500490132",
+      "team": "Utah Valley",
+      "team_slug": "utah_valley",
+      "weight_class": 141,
+      "grade": "Fr.",
+      "current_rank": 167,
+      "record": "1-1"
+    }
+  ]
+}

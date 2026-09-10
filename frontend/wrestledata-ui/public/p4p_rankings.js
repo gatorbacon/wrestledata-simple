@@ -284,6 +284,15 @@ function setupSortControl() {
   });
 }
 
+// Deep-link support: a page linking in with ?weight=133 (e.g. the
+// homepage's other "DPG Leaders" panel, whose "See all" link points here)
+// should land on that weight's tab already selected, not always P4P.
+function initialWeightFromURL(data) {
+  const w = new URLSearchParams(window.location.search).get("weight");
+  if (w && data.weights && data.weights[w]) return w;
+  return "p4p";
+}
+
 function renderP4PRankings(data) {
   const section = document.getElementById("p4p-section");
   if (!data || !data.p4p || !data.p4p.length) {
@@ -292,9 +301,13 @@ function renderP4PRankings(data) {
   }
 
   p4pData = data;
+  currentWeight = initialWeightFromURL(data);
+  document.querySelectorAll("#p4p-weight-tabs .hp-tab").forEach(t => {
+    t.classList.toggle("active", t.dataset.weight === currentWeight);
+  });
   setupP4PTabs();
   setupSortControl();
-  renderP4P("p4p", "rank");
+  renderP4P(currentWeight, currentSort);
 }
 
 document.addEventListener("DOMContentLoaded", async () => {

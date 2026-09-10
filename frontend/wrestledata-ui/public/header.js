@@ -27,37 +27,25 @@
               <button class="nav-link nav-link--dropdown" aria-expanded="false" aria-haspopup="true">
                 Rankings <span class="dropdown-arrow">▾</span>
               </button>
-              <div class="dropdown-menu dropdown-menu--multi-level" id="rankings-menu">
-                <!-- Individual Submenu -->
-                <div class="dropdown-submenu">
-                  <button class="dropdown-submenu-trigger">
-                    Individual <span class="submenu-arrow">▸</span>
-                  </button>
-                  <div class="dropdown-submenu-content">
-                    <a href="/rankings.html" class="dropdown-item">
-                      <span class="dropdown-item-label">Rankings (Traditional)</span>
-                    </a>
-                    <a href="/matrix.html" class="dropdown-item">
-                      <span class="dropdown-item-label">Rankings Matrix</span>
-                    </a>
-                    <a href="/leaderboards/dpg.html" class="dropdown-item">
-                      <span class="dropdown-item-label">DPG</span>
-                      <span class="dropdown-item-subtext">Dual Points Gained</span>
-                    </a>
-                  </div>
-                </div>
-                <!-- Team Submenu -->
-                <div class="dropdown-submenu">
-                  <button class="dropdown-submenu-trigger">
-                    Team <span class="submenu-arrow">▸</span>
-                  </button>
-                  <div class="dropdown-submenu-content">
-                    <a href="/leaderboards/xtp/teams.html" class="dropdown-item">
-                      <span class="dropdown-item-label">Expected Team Points (xTP)</span>
-                      <span class="dropdown-item-subtext">Projected NCAA tournament scoring</span>
-                    </a>
-                  </div>
-                </div>
+              <div class="dropdown-menu" id="rankings-menu">
+                <div class="dropdown-group-label">Wrestlers</div>
+                <a href="/rankings.html" class="dropdown-item">
+                  <span class="dropdown-item-label">Board</span>
+                  <span class="dropdown-item-subtext">Top 33 by weight</span>
+                </a>
+                <a href="/matrix.html" class="dropdown-item">
+                  <span class="dropdown-item-label">Matrix</span>
+                  <span class="dropdown-item-subtext">Projected matchups</span>
+                </a>
+                <a href="/leaderboards/dpg.html" class="dropdown-item">
+                  <span class="dropdown-item-label">DPG</span>
+                  <span class="dropdown-item-subtext">Dual points gained</span>
+                </a>
+                <div class="dropdown-group-label">Teams</div>
+                <a href="/leaderboards/xtp/teams.html" class="dropdown-item">
+                  <span class="dropdown-item-label">Team points</span>
+                  <span class="dropdown-item-subtext">NCAA tournament projection</span>
+                </a>
               </div>
             </div>
 

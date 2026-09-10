@@ -469,6 +469,25 @@ The engine runs both pre-tournament (full bracket simulation) and live (locking 
 
 ---
 
+### 5. AA DPG Range (reports pages only)
+
+**What it is:** A benchmark overlay drawn on every DPG chart in the report suite (`frontend/wrestledata-ui/public/reports/`) — a light-blue shaded band showing the 25th-75th percentile of DPG among NCAA All-Americans (top-8 finishers), plus a dotted line for the average DPG of NCAA champions, both pooled over the 5 most recently completed seasons and **not weight-dependent** (one flat set of numbers reused on every chart, regardless of weight class).
+
+**Script:** `scripts/reports/build_aa_dpg_band.py`
+**Output:** `frontend/wrestledata-ui/public/data/reports/aa_dpg_band.json` — `{"seasons_used": [...], "aa_p25": x, "aa_p75": y, "champ_avg": z, "n_aa": 400, "n_champ": 50, "generated": "..."}`
+
+**Method:**
+1. Auto-detects the 5 most recent seasons with both real tournament placement data (`data/ncaa-tourney-parsed/all_wrestlers.json`) and finalized DPG data (`mat_value_{year}.json`) — never hardcoded to a fixed year range, so it stays correct every future season without editing.
+2. Per season: `placement_exact and placement <= 8` = All-Americans (8/weight x 10 weights = 80/season); `placement == 1` = champions (10/season). 400 AAs and 50 champions pooled across the 5-season window.
+3. Joins each placed wrestler's name+weight to a real `wrestler_id` via that season's `index_wrestlers.json`, reusing the same `normalize_name()` + apostrophe-canonicalization + last-name/first-initial fallback already proven in `scripts/analysis/flo_preseason_vs_score.py` — then looks up that `wrestler_id`'s `mv_avg` in `mat_value_{year}.json`.
+4. p25/p75 via linear-interpolation percentile (same formula as `scripts/analysis/build_rank_score_distributions.py`'s `percentile()`); champion average is a flat mean.
+
+**Rendering (`reports/shared/chart.js`):** the band only ever *extends* a chart's y-axis upward (never downward, never for the champion line) — and only when a wrestler's best qualifying season came within 0.3 DPG of the band's bottom edge (`aa_p25`) but the chart wouldn't otherwise reach that high. If nothing came within 0.3, the axis is left exactly as it would be without the band, and the band simply doesn't render (no forced stretching for wrestlers nowhere close). The champion line is never used to extend the axis at all — it only appears if a chart already reaches it naturally.
+
+**When to re-run:** once per season, after that season's NCAA tournament results (`data/{season}/ncaa-tourney/`) and DPG (`mat_value_{season}.json`) are both finalized — the rolling 5-season window then shifts forward on its own next time the script runs, dropping the oldest season automatically.
+
+---
+
 ## NCAA Team Championship Odds (Preseason/In-Season Team Projections)
 
 **Pages:** `index.html` (homepage preview, top 10 + expandable rows), `team_odds.html` (full table, all teams, date picker)
@@ -713,6 +732,10 @@ The replay is also used to build the seed analysis report (`generate_report.py`)
 | `scripts/analysis/compute_individual_modifiers.py` | Builds upside-only track-record modifiers for top-3-ranked wrestlers |
 | `scripts/analysis/simulate_team_scores.py` | Monte Carlo team championship odds simulation |
 | `scripts/analysis/publish_team_odds_to_site.py` | Publishes team odds simulation output to the frontend data dir |
+| `scripts/reports/build_transfer_dpg_report.py` | Builds one team's transfer-window report JSON; shared base module the other `scripts/reports/` scripts import |
+| `scripts/reports/build_wrestler_view.py` | Builds one chart-ready JSON per career-linked wrestler (backfill or `--season`-scoped); also rebuilds `wrestler_index.json`, the reports hub's name-search index |
+| `scripts/reports/build_team_roster_view.py` | Builds one team+season roster JSON by reading already-built `build_wrestler_view.py` output |
+| `scripts/reports/build_aa_dpg_band.py` | Builds the AA DPG range band + champion line shown on every report chart — see [AA DPG Range](#5-aa-dpg-range-reports-pages-only) |
 
 ---
 

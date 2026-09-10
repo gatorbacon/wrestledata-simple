@@ -71,6 +71,7 @@ def build_wrestler_view(career_id, seasons_map, abbr_map):
 
     return {
         "career_id": career_id,
+        "wrestler_id": seasons[-1]["wrestler_id"],
         "name": name,
         "weight_class": weight_class,
         "photo_url": photo_url,

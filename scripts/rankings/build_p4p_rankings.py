@@ -25,13 +25,15 @@ back to their most recent prior season via their career file, so they don't
 read as true no-history newcomers (that's reserved for wrestlers with no
 career file at all, e.g. actual true freshmen like Bo Bassett).
 
-Join key is (name, school) -- confirmed by hand that all of FloWrestling's
-2026-27 P4P entries resolve to exactly one wrestler each in the 2025-26
-index via this key, with only one school-name variant needing an alias
-("OK State" -> "Oklahoma State"). A wrestler with no match (a true
-newcomer with no prior D1 season on file) still gets a row -- just with
-"--" for the enriched stats -- rather than being dropped, since Flo's
-own rank order is the thing this table exists to show. Same join logic is
+Join key is (name, school) first, falling back to name-only (unambiguous
+transfers) and then last-name+first-initial (unambiguous nickname/spelling
+mismatches, e.g. Flo's "Cam Catrabone" vs our roster's "Cameron Catrabone" --
+found 2026-09, previously unhandled, silently left that wrestler's row
+un-linkable to a real profile). Known school-name variant needing an alias:
+"OK State" -> "Oklahoma State". A wrestler with no match after all three
+tiers (a true newcomer with no prior D1 season on file) still gets a row --
+just with "--" for the enriched stats -- rather than being dropped, since
+Flo's own rank order is the thing this table exists to show. Same join logic is
 reused across P4P and all 10 weight classes -- one homepage widget with
 tabs, per the site's usual weight-tab convention (see e.g. the DPG Leaders
 panel already on the homepage).
@@ -41,7 +43,21 @@ Usage:
 """
 import json
 import re
+import unicodedata
 from pathlib import Path
+
+
+def normalize_name(name: str) -> str:
+    """Strip accents, canonicalize apostrophe variants, collapse whitespace,
+    lowercase -- same normalization used throughout this pipeline (see
+    scripts/analysis/flo_preseason_vs_score.py, scripts/reports/
+    build_aa_dpg_band.py) so a name-matching bug doesn't have to be
+    rediscovered/refixed independently in each script that joins Flo/
+    tournament names against our own roster index."""
+    name = unicodedata.normalize("NFD", name)
+    name = "".join(c for c in name if unicodedata.category(c) != "Mn")
+    name = re.sub(r"[`´'‘’]", "'", name)
+    return re.sub(r"\s+", " ", name.strip().lower())
 
 DATE_FILENAME = re.compile(r"^\d{4}-\d{2}-\d{2}\.json$")
 
@@ -87,24 +103,33 @@ def latest_flo_snapshot():
 
 
 def build_wrestler_index():
-    """Returns (by_name_school, by_name_only) from last season's completed
-    index. by_name_only maps a lowercased name to a list of wrestler_ids --
-    used as a fallback for transfers (someone whose CURRENT preseason school
-    differs from where they played last season, so a (name, school) lookup
-    can never find them no matter how many school-name aliases exist -- the
-    old school is simply a different string). Only usable as a fallback
-    when that list has exactly one entry; a name shared by multiple
-    wrestlers stays unresolved rather than risk a wrong match."""
+    """Returns (by_name_school, by_name_only, by_lastname, slug_to_display)
+    from last season's completed index. by_name_only maps a normalized name
+    to a list of wrestler_ids -- used as a fallback for transfers (someone
+    whose CURRENT preseason school differs from where they played last
+    season, so a (name, school) lookup can never find them no matter how
+    many school-name aliases exist -- the old school is simply a different
+    string). by_lastname maps (last_name, first_initial) -> wrestler_ids --
+    a further fallback for nickname/spelling mismatches (Flo's "Cam
+    Catrabone" vs our roster's "Cameron Catrabone"), since those share no
+    (name, school) or exact-name key at all. Both fallbacks only resolve
+    when the candidate list has exactly one entry; a name shared by
+    multiple wrestlers stays unresolved rather than risk a wrong match."""
     entries = json.loads((WRESTLERS_DIR / "index_wrestlers.json").read_text())
     by_name_school = {}
     by_name_only = {}
+    by_lastname = {}
     slug_to_display = {}
     for w in entries:
-        name_key = w["name"].strip().lower()
+        name_key = normalize_name(w["name"])
         by_name_school[(name_key, w["team"].strip().lower())] = w["wrestler_id"]
         by_name_only.setdefault(name_key, []).append(w["wrestler_id"])
+        parts = name_key.split()
+        if len(parts) >= 2:
+            by_lastname.setdefault((parts[-1], parts[0][0]), []).append(
+                (w["wrestler_id"], w["team"].strip().lower()))
         slug_to_display[w["team_slug"]] = w["team"]
-    return by_name_school, by_name_only, slug_to_display
+    return by_name_school, by_name_only, by_lastname, slug_to_display
 
 
 def build_wid_to_career_index():
@@ -172,13 +197,13 @@ def team_abbr(team_slug):
 
 
 def enrich_entries(entries, wrestler_index, unmatched_out, wid_to_career):
-    by_name_school, by_name_only, slug_to_display = wrestler_index
+    by_name_school, by_name_only, by_lastname, slug_to_display = wrestler_index
     out = []
     for entry in entries:
         name = entry["name"]
         school = entry["school"]
         resolved_school = SCHOOL_ALIASES.get(school.strip().lower(), school.strip().lower())
-        name_key = name.strip().lower()
+        name_key = normalize_name(name)
         team_slug = frontend_slug(resolved_school)
 
         wrestler_id = by_name_school.get((name_key, resolved_school))
@@ -190,6 +215,21 @@ def enrich_entries(entries, wrestler_index, unmatched_out, wid_to_career):
             candidates = by_name_only.get(name_key, [])
             if len(candidates) == 1:
                 wrestler_id = candidates[0]
+        if not wrestler_id:
+            # Nickname/spelling mismatch (Flo's "Cam Catrabone" vs our own
+            # roster's "Cameron Catrabone") -- last-name + first-initial.
+            # If that alone is ambiguous (e.g. two different "M. Botello"s
+            # at different schools), narrow by school before giving up --
+            # only when narrowing lands on exactly one candidate.
+            parts = name_key.split()
+            if len(parts) >= 2:
+                candidates = by_lastname.get((parts[-1], parts[0][0]), [])
+                if len(candidates) == 1:
+                    wrestler_id = candidates[0][0]
+                elif len(candidates) > 1:
+                    same_school = [wid for wid, team in candidates if team == resolved_school]
+                    if len(same_school) == 1:
+                        wrestler_id = same_school[0]
 
         profile = load_profile(wrestler_id) if wrestler_id else None
         metrics = (profile or {}).get("metrics", {})

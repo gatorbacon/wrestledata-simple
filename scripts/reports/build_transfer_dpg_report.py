@@ -230,6 +230,7 @@ def build_report(team_slug: str, team_name: str, start_year: int, end_year: int)
         # so the two can't drift apart.
         wrestlers_out.append({
             "name": latest_profile.get("name") if latest_profile else None,
+            "wrestler_id": seasons[-1]["wrestler_id"],
             "weight_class": latest_profile.get("weight_class") if latest_profile else None,
             "photo_url": latest_profile.get("photo_url") if latest_profile else None,
             "direction": direction,

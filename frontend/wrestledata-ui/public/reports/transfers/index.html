@@ -6,13 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/styles.css?v=20260921" />
   <style>
-    .xfer-header { text-align: center; margin-bottom: 32px; }
+    .xfer-header { text-align: center; margin-bottom: 24px; }
     .xfer-header h1 { font-size: 2rem; font-weight: 700; color: var(--text); letter-spacing: -0.5px; }
     .xfer-header p { color: var(--muted); margin-top: 6px; font-size: 0.95rem; }
     .xfer-summary { display: flex; gap: 24px; justify-content: center; margin-top: 14px; flex-wrap: wrap; }
     .xfer-summary .stat { text-align: center; }
     .xfer-summary .stat .n { font-size: 1.4rem; font-weight: 700; color: var(--accent); }
     .xfer-summary .stat .label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.3px; }
+
+    .rv-key { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 16px auto 0; font-size: 0.8rem; color: var(--muted); }
+    .rv-key-item { display: flex; align-items: center; gap: 6px; }
+    .rv-key-swatch { display: inline-block; width: 18px; height: 12px; border-radius: 3px; flex-shrink: 0; background: rgba(93,156,219,0.28); border: 1px solid #3f6ea5; }
+    .rv-key-swatch--champ { height: 0; border: none; border-top: 2px dashed #16325c; }
+
+    .xfer-controls {
+      max-width: 720px; margin: 0 auto 28px; background: var(--panel); border: 1px solid var(--border);
+      border-radius: var(--r-md, 14px); padding: 16px 20px;
+    }
+    .xfer-controls-row { display: flex; gap: 12px; align-items: flex-end; flex-wrap: wrap; }
+    .xfer-field { flex: 1; min-width: 120px; }
+    .xfer-field label {
+      display: block; font-size: 0.78rem; font-weight: 700; color: var(--muted);
+      text-transform: uppercase; letter-spacing: 0.3px; margin-bottom: 6px;
+    }
+    .xfer-field select {
+      width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--border);
+      background: var(--bg); color: var(--text); font-size: 0.92rem; box-sizing: border-box;
+    }
+    .xfer-go-btn {
+      padding: 11px 20px; border-radius: 8px; border: none; background: var(--accent);
+      color: #fff; font-weight: 700; font-size: 0.92rem; cursor: pointer;
+    }
 
     .xfer-card {
       background: var(--panel);
@@ -32,7 +56,8 @@
     }
     .xfer-name-block { flex: 1; min-width: 0; }
     .xfer-name-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-    .xfer-name { font-size: 1.35rem; font-weight: 800; color: var(--text); }
+    .xfer-name { font-size: 1.35rem; font-weight: 800; color: var(--text); text-decoration: none; }
+    .xfer-name:hover { text-decoration: underline; }
     .xfer-weight-badge {
       font-size: 0.9rem; font-weight: 800; padding: 3px 12px; border-radius: 999px; line-height: 1.4;
     }
@@ -57,8 +82,8 @@
       text-align: center; font-size: 0.82rem; color: var(--muted); font-style: italic;
       margin: 18px 0 4px; padding-top: 14px; border-top: 1px solid var(--border);
     }
-    .xfer-chart-wrap { width: 100%; overflow-x: auto; }
-    .xfer-chart-wrap svg { display: block; margin: 0 auto; }
+    .xfer-chart-wrap { width: 100%; }
+    .xfer-chart-wrap svg { display: block; margin: 0 auto; max-width: 100%; height: auto; }
 
     .xfer-card-legend { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 8px; font-size: 0.82rem; color: var(--text); font-weight: 600; }
     .xfer-card-legend .dot { display: inline-block; width: 11px; height: 11px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; }
@@ -67,7 +92,7 @@
     .xfer-loading { text-align: center; color: var(--muted); padding: 60px 20px; }
 
     .xfer-chart-wrap svg circle[data-tooltip] { cursor: pointer; }
-    .xfer-tooltip {
+    .rv-tooltip {
       position: fixed; z-index: 1000; pointer-events: none;
       background: #211c16; color: #f5f1e8; border-radius: 8px;
       padding: 10px 13px; font-size: 0.8rem; line-height: 1.5;
@@ -75,11 +100,11 @@
       opacity: 0; transform: translateY(4px); transition: opacity 0.1s ease, transform 0.1s ease;
       max-width: 220px;
     }
-    .xfer-tooltip.visible { opacity: 1; transform: translateY(0); }
-    .xfer-tooltip .tt-head { font-weight: 800; margin-bottom: 4px; color: #fff; }
-    .xfer-tooltip .tt-row { display: flex; justify-content: space-between; gap: 14px; }
-    .xfer-tooltip .tt-row .tt-label { color: #b8ae9c; }
-    .xfer-tooltip .tt-row .tt-value { font-weight: 700; }
+    .rv-tooltip.visible { opacity: 1; transform: translateY(0); }
+    .rv-tooltip .tt-head { font-weight: 800; margin-bottom: 4px; color: #fff; }
+    .rv-tooltip .tt-row { display: flex; justify-content: space-between; gap: 14px; }
+    .rv-tooltip .tt-row .tt-label { color: #b8ae9c; }
+    .rv-tooltip .tt-row .tt-value { font-weight: 700; }
 
     @media (max-width: 760px) {
       .xfer-card-head { flex-wrap: wrap; }
@@ -96,58 +121,46 @@
       <h1 id="xfer-title">Transfer DPG Report</h1>
       <p id="xfer-subtitle">&nbsp;</p>
       <div class="xfer-summary" id="xfer-summary"></div>
+      <div class="rv-key">
+        <span class="rv-key-item"><span class="rv-key-swatch"></span>AA Range — 25th–75th pct. DPG among All-Americans, last 5 seasons</span>
+        <span class="rv-key-item"><span class="rv-key-swatch rv-key-swatch--champ"></span>Champion avg. DPG</span>
+      </div>
+    </div>
+
+    <div class="xfer-controls">
+      <div class="xfer-controls-row">
+        <div class="xfer-field">
+          <label for="xfer-team-select">Team</label>
+          <select id="xfer-team-select"></select>
+        </div>
+        <div class="xfer-field">
+          <label for="xfer-start-select">Start year</label>
+          <select id="xfer-start-select"></select>
+        </div>
+        <div class="xfer-field">
+          <label for="xfer-end-select">End year</label>
+          <select id="xfer-end-select"></select>
+        </div>
+        <button class="xfer-go-btn" id="xfer-go">View</button>
+      </div>
     </div>
 
     <div id="xfer-body"><div class="xfer-loading">Loading…</div></div>
   </div>
 
+  <script src="/reports/shared/chart.js?v=20260921"></script>
   <script>
 (function () {
   'use strict';
+  const C = window.WrestlerChart;
+  const QUALIFY_MIN_MATCHES = C.QUALIFY_MIN_MATCHES;
 
-  // ---- encoding constants (see spec: sqrt-radius bubbles, even year ticks,
-  // school-colored discs, neutral stems, match-weighted stats excluding
-  // low-sample seasons) ----
-  const MIN_R = 14, MAX_R = 40;          // px, clamped at matches<=2 / >=28
-  const YEAR_PITCH = 92;                 // px between adjacent year centers -- 2*MAX_R > YEAR_PITCH satisfies the overlap rule
-  const PLOT_H = 250;
-  const MARGIN = { top: 34, right: 34, bottom: 78, left: 52 };
-  const QUALIFY_MIN_MATCHES = 6;         // n<6 seasons are shown hollow, excluded from Δ/averages/y-domain
-  const DEFAULT_COLOR = { hex: '#6b6153', stroke: false };
+  // AA-range band + champion line -- fetched once, reused for every chart
+  // on this page (not weight- or wrestler-specific).
+  const bandPromise = fetch('/data/reports/aa_dpg_band.json').then(r => r.ok ? r.json() : null).catch(() => null);
 
   function qs(name) {
     return new URLSearchParams(window.location.search).get(name);
-  }
-
-  function esc(s) {
-    return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-  }
-
-  function hexToRgba(hex, alpha) {
-    const h = hex.replace('#', '');
-    const r = parseInt(h.substring(0, 2), 16), g = parseInt(h.substring(2, 4), 16), b = parseInt(h.substring(4, 6), 16);
-    return `rgba(${r},${g},${b},${alpha})`;
-  }
-
-  function textColorFor(hex) {
-    const h = hex.replace('#', '');
-    const r = parseInt(h.substring(0, 2), 16) / 255, g = parseInt(h.substring(2, 4), 16) / 255, b = parseInt(h.substring(4, 6), 16) / 255;
-    const lum = 0.2126 * r + 0.7152 * g + 0.0722 * b;
-    return lum > 0.6 ? '#211c16' : '#ffffff';
-  }
-
-  function radiusFor(matches) {
-    const n = Math.max(2, Math.min(matches, 28));
-    const t = (Math.sqrt(n) - Math.sqrt(2)) / (Math.sqrt(28) - Math.sqrt(2));
-    return MIN_R + t * (MAX_R - MIN_R);
-  }
-
-  function niceStep(range) {
-    const raw = range / 5;
-    const mag = Math.pow(10, Math.floor(Math.log10(raw)));
-    const norm = raw / mag;
-    const step = norm < 1.5 ? 1 : norm < 3 ? 2 : norm < 7 ? 5 : 10;
-    return step * mag;
   }
 
   function directionLabel(d) {
@@ -161,140 +174,16 @@
     return 'xfer-badge--both';
   }
 
-  function colorFor(slug, colorMap) {
-    return (colorMap.teams && colorMap.teams[slug]) || colorMap.default || DEFAULT_COLOR;
-  }
-
-  // full min..max year span, one entry per year -- gaps become explicit DNP
-  // ticks rather than being silently omitted (a missing year must never just
-  // read as DPG ≈ 0).
-  function buildYearSeries(wrestler) {
-    const years = wrestler.seasons.map(s => s.year);
-    const minY = Math.min(...years), maxY = Math.max(...years);
-    const out = [];
-    for (let y = minY; y <= maxY; y++) {
-      out.push({ year: y, season: wrestler.seasons.find(s => s.year === y) || null });
-    }
-    return out;
-  }
-
   // match-weighted averages / delta, counting ONLY seasons with n>=6 --
-  // a 2-match season must never move these numbers.
+  // a 2-match season must never move these numbers. Query-vs-other-team
+  // split is transfer-report-specific -- C.matchWeightedAvg does the
+  // weighting math, this just does the two-way split around it.
   function computeStats(wrestler) {
-    const qualifying = wrestler.seasons.filter(s => s.matches >= QUALIFY_MIN_MATCHES);
-    const wavg = (arr) => {
-      const totalMatches = arr.reduce((a, s) => a + s.matches, 0);
-      if (!totalMatches) return null;
-      return arr.reduce((a, s) => a + s.dpg * s.matches, 0) / totalMatches;
-    };
-    const queryAvg = wavg(qualifying.filter(s => s.is_query_team));
-    const otherAvg = wavg(qualifying.filter(s => !s.is_query_team));
+    const qualifying = C.qualifyingSeasons(wrestler);
+    const queryAvg = C.matchWeightedAvg(qualifying.filter(s => s.is_query_team));
+    const otherAvg = C.matchWeightedAvg(qualifying.filter(s => !s.is_query_team));
     const delta = (queryAvg !== null && otherAvg !== null) ? queryAvg - otherAvg : null;
     return { queryAvg, otherAvg, delta, qualifying };
-  }
-
-  // y-domain padding is driven by the qualifying (n>=6) seasons only, per
-  // spec ("don't let a 2-match season set the y-max") -- but every rendered
-  // point (qualifying or not) still gets included so nothing is clipped.
-  // Domain comes ONLY from qualifying (n>=6) seasons -- a 2-match season
-  // must never set the y-max (spec). Non-qualifying points still render
-  // (see the clamp in buildChartSVG) but never stretch the axis to fit.
-  function yDomain(qualifying) {
-    const qualVals = qualifying.map(s => s.dpg);
-    let lo = Math.min(0, ...(qualVals.length ? qualVals : [0]));
-    let hi = Math.max(0, ...(qualVals.length ? qualVals : [0]));
-    const pad = Math.max((hi - lo) * 0.28, 0.8);
-    lo -= pad; hi += pad;
-    return [lo, hi];
-  }
-
-  function buildChartSVG(wrestler, colorMap) {
-    const series = buildYearSeries(wrestler);
-    const stats = computeStats(wrestler);
-    const [yLo, yHi] = yDomain(stats.qualifying);
-
-    const width = MARGIN.left + MARGIN.right + Math.max(series.length - 1, 0) * YEAR_PITCH + 2 * MAX_R;
-    const height = MARGIN.top + PLOT_H + MARGIN.bottom;
-
-    const xScale = (i) => MARGIN.left + MAX_R + i * YEAR_PITCH;
-    const yScale = (v) => MARGIN.top + PLOT_H - ((v - yLo) / (yHi - yLo)) * PLOT_H;
-    const zeroY = yScale(0);
-    const plotRight = width - MARGIN.right;
-
-    let svg = `<svg viewBox="0 0 ${width} ${height}" width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg" font-family="Inter, system-ui, sans-serif">`;
-
-    // y gridlines + labels
-    const step = niceStep(yHi - yLo);
-    const firstTick = Math.ceil(yLo / step) * step;
-    for (let v = firstTick; v <= yHi + 1e-9; v += step) {
-      const y = yScale(v);
-      if (Math.abs(v) < step / 1000) continue; // zero line drawn separately, thicker
-      svg += `<line x1="${MARGIN.left}" x2="${plotRight}" y1="${y.toFixed(1)}" y2="${y.toFixed(1)}" stroke="#e7e1d5" stroke-width="1"/>`;
-      svg += `<text x="${MARGIN.left - 10}" y="${(y + 4).toFixed(1)}" text-anchor="end" font-size="12" fill="#6b6153">${(Math.round(v * 10) / 10).toFixed(1)}</text>`;
-    }
-    svg += `<text x="4" y="${MARGIN.top - 12}" font-size="12" fill="#6b6153" font-weight="700">DPG</text>`;
-
-    // zero baseline -- thick rule
-    svg += `<line x1="${MARGIN.left}" x2="${plotRight}" y1="${zeroY.toFixed(1)}" y2="${zeroY.toFixed(1)}" stroke="#211c16" stroke-width="2.5"/>`;
-    svg += `<text x="${MARGIN.left - 10}" y="${(zeroY + 4).toFixed(1)}" text-anchor="end" font-size="12" fill="#6b6153">0</text>`;
-
-    // stems + discs + per-point labels, drawn left-to-right so a later
-    // year's disc paints over an earlier overlapping one
-    series.forEach((entry, i) => {
-      const x = xScale(i);
-      if (!entry.season) {
-        svg += `<text x="${x.toFixed(1)}" y="${(zeroY + 30).toFixed(1)}" text-anchor="middle" font-size="12" fill="#8f8574" font-style="italic">DNP</text>`;
-        return;
-      }
-      const s = entry.season;
-      const color = colorFor(s.team_slug, colorMap);
-      const r = radiusFor(s.matches);
-      const qualifies = s.matches >= QUALIFY_MIN_MATCHES;
-      // a non-qualifying point never sets the axis range (see yDomain), so
-      // clamp its own drawn position to stay inside the plot rather than
-      // spilling past the gridlines / colliding with other elements.
-      const cy = qualifies
-        ? yScale(s.dpg)
-        : Math.max(MARGIN.top + r + 2, Math.min(yScale(s.dpg), MARGIN.top + PLOT_H - r - 2));
-
-      svg += `<line x1="${x.toFixed(1)}" x2="${x.toFixed(1)}" y1="${zeroY.toFixed(1)}" y2="${cy.toFixed(1)}" stroke="#a39a89" stroke-width="1"/>`;
-
-      const tipData = [
-        `data-tooltip="1"`,
-        `data-year="${esc(entry.year)}"`,
-        `data-team="${esc(s.team)}"`,
-        `data-matches="${esc(s.matches)}"`,
-        `data-record="${esc(s.record != null ? s.record : '—')}"`,
-        `data-rank="${esc(s.rank != null ? '#' + s.rank : 'NR')}"`,
-        `data-dpg="${esc((s.dpg > 0 ? '+' : '') + s.dpg.toFixed(2))}"`,
-      ].join(' ');
-
-      if (qualifies) {
-        const strokeAttr = color.stroke ? `stroke="#211c16" stroke-width="1.5"` : `stroke="none"`;
-        svg += `<circle cx="${x.toFixed(1)}" cy="${cy.toFixed(1)}" r="${r.toFixed(1)}" fill="${hexToRgba(color.hex, 0.78)}" ${strokeAttr} ${tipData}/>`;
-      } else {
-        svg += `<circle cx="${x.toFixed(1)}" cy="${cy.toFixed(1)}" r="${r.toFixed(1)}" fill="${hexToRgba(color.hex, 0.18)}" stroke="${color.hex}" stroke-width="2" stroke-dasharray="3,2" ${tipData}/>`;
-      }
-
-      // Based on the disc's actual (possibly clamped) drawn position, not
-      // the raw DPG sign -- a clamped outlier can end up on either side of
-      // the zero line regardless of its true value.
-      const labelUp = cy >= zeroY;
-      const labelY = labelUp ? cy - r - 22 : cy + r + 16;
-      const sign = s.dpg > 0 ? '+' : '';
-      svg += `<text x="${x.toFixed(1)}" y="${labelY.toFixed(1)}" text-anchor="middle" font-size="12" fill="#211c16" font-weight="700">${esc(entry.year)} ${esc(s.team_abbr)}</text>`;
-      svg += `<text x="${x.toFixed(1)}" y="${(labelY + 15).toFixed(1)}" text-anchor="middle" font-size="12" fill="#6b6153">${sign}${s.dpg.toFixed(2)}${qualifies ? '' : ' *'}</text>`;
-    });
-
-    // x-axis year ticks
-    series.forEach((entry, i) => {
-      const x = xScale(i);
-      svg += `<text x="${x.toFixed(1)}" y="${height - 16}" text-anchor="middle" font-size="12" fill="#6b6153">${esc(entry.year)}</text>`;
-    });
-    svg += `<line x1="${MARGIN.left}" x2="${plotRight}" y1="${height - MARGIN.bottom + 26}" y2="${height - MARGIN.bottom + 26}" stroke="#e7e1d5" stroke-width="1"/>`;
-
-    svg += `</svg>`;
-    return svg;
   }
 
   function fmt(v) {
@@ -305,13 +194,13 @@
     return (v > 0 ? '+' : '') + v.toFixed(2);
   }
 
-  function renderCard(wrestler, queryTeamName, colorMap) {
+  function renderCard(wrestler, queryTeamName, colorMap, band) {
     const stats = computeStats(wrestler);
     const lastSeason = wrestler.seasons[wrestler.seasons.length - 1];
-    const badgeColor = colorFor(lastSeason.team_slug, colorMap);
+    const badgeColor = C.colorFor(lastSeason.team_slug, colorMap);
 
     const photo = wrestler.photo_url
-      ? `<img class="xfer-photo" src="${esc(wrestler.photo_url)}" alt="${esc(wrestler.name)}" onerror="this.style.visibility='hidden'">`
+      ? `<img class="xfer-photo" src="${C.esc(wrestler.photo_url)}" alt="${C.esc(wrestler.name)}" onerror="this.style.visibility='hidden'">`
       : `<div class="xfer-photo"></div>`;
     const wc = wrestler.weight_class ? `${wrestler.weight_class} lbs · ` : '';
     const path = (wrestler.school_path || []).join(' → ');
@@ -323,8 +212,8 @@
       }
     });
     const legendHtml = legendSchools.map(l => {
-      const c = colorFor(l.slug, colorMap);
-      return `<span><span class="dot" style="background:${hexToRgba(c.hex, 0.85)}${c.stroke ? ';border:1.5px solid #211c16' : ''}"></span>${esc(l.name)}</span>`;
+      const c = C.colorFor(l.slug, colorMap);
+      return `<span><span class="dot" style="background:${C.hexToRgba(c.hex, 0.85)}${c.stroke ? ';border:1.5px solid #211c16' : ''}"></span>${C.esc(l.name)}</span>`;
     }).join('');
 
     const card = document.createElement('div');
@@ -334,14 +223,14 @@
         ${photo}
         <div class="xfer-name-block">
           <div class="xfer-name-row">
-            <span class="xfer-name">${esc(wrestler.name || 'Unknown')}</span>
-            ${wrestler.weight_class ? `<span class="xfer-weight-badge" style="background:${hexToRgba(badgeColor.hex, 0.85)}; color:${textColorFor(badgeColor.hex)}">${wrestler.weight_class}</span>` : ''}
+            <a class="xfer-name" href="/wrestler.html?id=${encodeURIComponent(wrestler.wrestler_id)}">${C.esc(wrestler.name || 'Unknown')}</a>
+            ${wrestler.weight_class ? `<span class="xfer-weight-badge" style="background:${C.hexToRgba(badgeColor.hex, 0.85)}; color:${C.textColorFor(badgeColor.hex)}">${wrestler.weight_class}</span>` : ''}
           </div>
-          <div class="xfer-meta">${wc}${esc(path)}</div>
+          <div class="xfer-meta">${wc}${C.esc(path)}</div>
           <span class="xfer-badge ${directionClass(wrestler.direction)}">${directionLabel(wrestler.direction)}</span>
         </div>
         <div class="xfer-stats">
-          <div class="xfer-stat"><div class="label">${esc(queryTeamName)}</div><div class="value">${fmt(stats.queryAvg)}</div></div>
+          <div class="xfer-stat"><div class="label">${C.esc(queryTeamName)}</div><div class="value">${fmt(stats.queryAvg)}</div></div>
           <div class="xfer-stat"><div class="label">elsewhere</div><div class="value">${fmt(stats.otherAvg)}</div></div>
           <div class="xfer-stat xfer-stat--delta"><div class="label">Δ</div><div class="value">${fmtSigned(stats.delta)}</div></div>
         </div>
@@ -351,52 +240,11 @@
       <div class="xfer-card-legend">${legendHtml}</div>
     `;
     document.getElementById('xfer-body').appendChild(card);
-    card.querySelector('.xfer-chart-wrap').innerHTML = buildChartSVG(wrestler, colorMap);
-    wireTooltips(card.querySelector('.xfer-chart-wrap'));
+    card.querySelector('.xfer-chart-wrap').innerHTML = C.buildChartSVG(wrestler, colorMap, band);
+    C.wireTooltips(card.querySelector('.xfer-chart-wrap'));
   }
 
-  // one shared tooltip element, repositioned on hover -- avoids SVG <title>'s
-  // unstyled, laggy native browser tooltip.
-  let tooltipEl = null;
-  function getTooltip() {
-    if (!tooltipEl) {
-      tooltipEl = document.createElement('div');
-      tooltipEl.className = 'xfer-tooltip';
-      document.body.appendChild(tooltipEl);
-    }
-    return tooltipEl;
-  }
-
-  function wireTooltips(chartWrap) {
-    const tip = getTooltip();
-    chartWrap.querySelectorAll('circle[data-tooltip]').forEach(circle => {
-      circle.addEventListener('mouseenter', () => {
-        const d = circle.dataset;
-        tip.innerHTML = `
-          <div class="tt-head">${esc(d.year)} &middot; ${esc(d.team)}</div>
-          <div class="tt-row"><span class="tt-label">Matches</span><span class="tt-value">${esc(d.matches)}</span></div>
-          <div class="tt-row"><span class="tt-label">Record</span><span class="tt-value">${esc(d.record)}</span></div>
-          <div class="tt-row"><span class="tt-label">Final rank</span><span class="tt-value">${esc(d.rank)}</span></div>
-          <div class="tt-row"><span class="tt-label">DPG</span><span class="tt-value">${esc(d.dpg)}</span></div>
-        `;
-        tip.classList.add('visible');
-      });
-      circle.addEventListener('mousemove', (e) => {
-        const pad = 14;
-        let x = e.clientX + pad, y = e.clientY + pad;
-        const rect = tip.getBoundingClientRect();
-        if (x + rect.width > window.innerWidth - 8) x = e.clientX - rect.width - pad;
-        if (y + rect.height > window.innerHeight - 8) y = e.clientY - rect.height - pad;
-        tip.style.left = `${x}px`;
-        tip.style.top = `${y}px`;
-      });
-      circle.addEventListener('mouseleave', () => {
-        tip.classList.remove('visible');
-      });
-    });
-  }
-
-  function render(data, colorMap) {
+  function render(data, colorMap, band) {
     const q = data.query;
     document.getElementById('xfer-title').textContent = `${q.team_name} — Transfer DPG Report`;
     document.getElementById('xfer-subtitle').textContent =
@@ -413,34 +261,74 @@
     const body = document.getElementById('xfer-body');
     body.innerHTML = '';
     if (!data.wrestlers.length) {
-      body.innerHTML = `<div class="xfer-empty">No transfers found touching ${esc(q.team_name)} in ${q.start_year}–${q.end_year}.</div>`;
+      body.innerHTML = `<div class="xfer-empty">No transfers found touching ${C.esc(q.team_name)} in ${q.start_year}–${q.end_year}.</div>`;
       return;
     }
-    data.wrestlers.forEach(w => renderCard(w, q.team_name, colorMap));
+    data.wrestlers.forEach(w => renderCard(w, q.team_name, colorMap, band));
   }
 
-  const team = qs('team');
-  const start = qs('start');
-  const end = qs('end');
+  const MIN_YEAR = 2012, MAX_YEAR = 2026;
 
-  if (!team || !start || !end) {
-    document.getElementById('xfer-body').innerHTML =
-      '<div class="xfer-empty">Missing query params. Use ?team=&lt;slug&gt;&amp;start=&lt;year&gt;&amp;end=&lt;year&gt;, e.g. ?team=penn_state&amp;start=2023&amp;end=2026</div>';
-    return;
+  function loadReport(team, start, end) {
+    const body = document.getElementById('xfer-body');
+    body.innerHTML = '<div class="xfer-loading">Loading…</div>';
+    const dataUrl = `/data/reports/transfers/${team}_${start}_${end}.json`;
+    Promise.all([
+      fetch(dataUrl).then(r => { if (!r.ok) throw new Error('report not found'); return r.json(); }),
+      fetch('/data/team_colors.json').then(r => r.ok ? r.json() : { teams: {}, default: C.DEFAULT_COLOR }).catch(() => ({ teams: {}, default: C.DEFAULT_COLOR })),
+      bandPromise,
+    ])
+      .then(([data, colorMap, band]) => render(data, colorMap, band))
+      .catch(() => {
+        body.innerHTML =
+          `<div class="xfer-empty">No report generated yet for this query.<br>Run: <code>python scripts/reports/build_transfer_dpg_report.py --team ${C.esc(team)} --start-year ${C.esc(start)} --end-year ${C.esc(end)}</code></div>`;
+      });
   }
 
-  const dataUrl = `/data/reports/transfers/${team}_${start}_${end}.json`;
-  const colorsUrl = `/data/team_colors.json`;
+  const startSelect = document.getElementById('xfer-start-select');
+  const endSelect = document.getElementById('xfer-end-select');
+  const yearOptions = Array.from({ length: MAX_YEAR - MIN_YEAR + 1 }, (_, i) => MAX_YEAR - i)
+    .map(y => `<option value="${y}">${y}</option>`).join('');
+  startSelect.innerHTML = yearOptions;
+  endSelect.innerHTML = yearOptions;
 
-  Promise.all([
-    fetch(dataUrl).then(r => { if (!r.ok) throw new Error('report not found'); return r.json(); }),
-    fetch(colorsUrl).then(r => r.ok ? r.json() : { teams: {}, default: DEFAULT_COLOR }).catch(() => ({ teams: {}, default: DEFAULT_COLOR })),
-  ])
-    .then(([data, colorMap]) => render(data, colorMap))
-    .catch(() => {
-      document.getElementById('xfer-body').innerHTML =
-        `<div class="xfer-empty">No report generated yet for this query.<br>Run: <code>python scripts/reports/build_transfer_dpg_report.py --team ${esc(team)} --start-year ${esc(start)} --end-year ${esc(end)}</code></div>`;
+  const initialTeam = qs('team');
+  const initialStart = qs('start') || String(MAX_YEAR - 3);
+  const initialEnd = qs('end') || String(MAX_YEAR);
+
+  fetch('/data/team_colors.json').then(r => r.json()).then(colorMap => {
+    const teams = Object.entries(colorMap.teams || {})
+      .map(([slug, t]) => ({ slug, name: t.name }))
+      .sort((a, b) => a.name.localeCompare(b.name));
+    const teamSelect = document.getElementById('xfer-team-select');
+    teamSelect.innerHTML = teams.map(t => `<option value="${t.slug}">${t.name}</option>`).join('');
+    if (initialTeam) teamSelect.value = initialTeam;
+    startSelect.value = initialStart;
+    endSelect.value = initialEnd;
+
+    document.getElementById('xfer-go').addEventListener('click', () => {
+      const team = teamSelect.value;
+      const start = startSelect.value;
+      const end = endSelect.value;
+      if (!team) return;
+      const url = new URL(window.location);
+      url.searchParams.set('team', team);
+      url.searchParams.set('start', start);
+      url.searchParams.set('end', end);
+      window.history.pushState({}, '', url);
+      loadReport(team, start, end);
     });
+
+    if (initialTeam) {
+      loadReport(initialTeam, initialStart, initialEnd);
+    } else {
+      document.getElementById('xfer-body').innerHTML =
+        '<div class="xfer-empty">Pick a team and year range above, then click View.</div>';
+    }
+  }).catch(() => {
+    document.getElementById('xfer-body').innerHTML =
+      '<div class="xfer-empty">Team list unavailable.</div>';
+  });
 })();
   </script>
 </body>

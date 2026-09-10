@@ -6,8 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/styles.css?v=20260921" />
   <style>
-    .tr-header { text-align: center; margin-bottom: 32px; }
+    .tr-header { text-align: center; margin-bottom: 24px; }
     .tr-header p { color: var(--muted); margin-top: 6px; font-size: 0.95rem; }
+
+    .rv-key { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 0 auto 20px; font-size: 0.8rem; color: var(--muted); }
+    .rv-key-item { display: flex; align-items: center; gap: 6px; }
+    .rv-key-swatch { display: inline-block; width: 18px; height: 12px; border-radius: 3px; flex-shrink: 0; background: rgba(93,156,219,0.28); border: 1px solid #3f6ea5; }
+    .rv-key-swatch--champ { height: 0; border: none; border-top: 2px dashed #16325c; }
+
+    .tr-controls {
+      max-width: 640px; margin: 0 auto 28px; background: var(--panel); border: 1px solid var(--border);
+      border-radius: var(--r-md, 14px); padding: 16px 20px;
+    }
+    .tr-controls-row { display: flex; gap: 12px; align-items: flex-end; flex-wrap: wrap; }
+    .tr-field { flex: 1; min-width: 140px; }
+    .tr-field label {
+      display: block; font-size: 0.78rem; font-weight: 700; color: var(--muted);
+      text-transform: uppercase; letter-spacing: 0.3px; margin-bottom: 6px;
+    }
+    .tr-field select {
+      width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--border);
+      background: var(--bg); color: var(--text); font-size: 0.92rem; box-sizing: border-box;
+    }
+    .tr-go-btn {
+      padding: 11px 20px; border-radius: 8px; border: none; background: var(--accent);
+      color: #fff; font-weight: 700; font-size: 0.92rem; cursor: pointer;
+    }
 
     .tr-card {
       background: var(--panel);
@@ -36,8 +60,8 @@
     .tr-stat .label { font-size: 0.72rem; color: var(--muted); }
     .tr-stat .value { font-size: 1.25rem; font-weight: 800; color: var(--text); margin-top: 2px; }
 
-    .tr-chart-wrap { width: 100%; overflow-x: auto; margin-top: 10px; }
-    .tr-chart-wrap svg { display: block; margin: 0 auto; }
+    .tr-chart-wrap { width: 100%; margin-top: 10px; }
+    .tr-chart-wrap svg { display: block; margin: 0 auto; max-width: 100%; height: auto; }
     .tr-chart-wrap svg circle[data-tooltip] { cursor: pointer; }
 
     .tr-empty { text-align: center; color: var(--muted); padding: 60px 20px; }
@@ -67,6 +91,25 @@
       <p id="tr-subtitle">&nbsp;</p>
     </div>
 
+    <div class="rv-key">
+      <span class="rv-key-item"><span class="rv-key-swatch"></span>AA Range — 25th–75th pct. DPG among All-Americans, last 5 seasons</span>
+      <span class="rv-key-item"><span class="rv-key-swatch rv-key-swatch--champ"></span>Champion avg. DPG</span>
+    </div>
+
+    <div class="tr-controls">
+      <div class="tr-controls-row">
+        <div class="tr-field">
+          <label for="tr-team-select">Team</label>
+          <select id="tr-team-select"></select>
+        </div>
+        <div class="tr-field">
+          <label for="tr-year-select">Season</label>
+          <select id="tr-year-select"></select>
+        </div>
+        <button class="tr-go-btn" id="tr-go">View</button>
+      </div>
+    </div>
+
     <div id="tr-body"><div class="tr-loading">Loading…</div></div>
   </div>
 
@@ -76,6 +119,10 @@
   'use strict';
   const C = window.WrestlerChart;
 
+  // AA-range band + champion line -- fetched once, reused for every chart
+  // on this page (not weight- or wrestler-specific).
+  const bandPromise = fetch('/data/reports/aa_dpg_band.json').then(r => r.ok ? r.json() : null).catch(() => null);
+
   function qs(name) {
     return new URLSearchParams(window.location.search).get(name);
   }
@@ -84,7 +131,7 @@
     return v === null || v === undefined ? '—' : v.toFixed(2);
   }
 
-  function renderCard(wrestler, colorMap) {
+  function renderCard(wrestler, colorMap, band) {
     const qualifying = C.qualifyingSeasons(wrestler);
     const careerAvg = C.matchWeightedAvg(qualifying);
     const lastSeason = wrestler.seasons[wrestler.seasons.length - 1];
@@ -102,7 +149,7 @@
         ${photo}
         <div style="flex:1; min-width:0;">
           <div class="tr-name-row">
-            <a class="tr-name" href="/reports/wrestler/index.html?id=${encodeURIComponent(wrestler.career_id)}">${C.esc(wrestler.name || 'Unknown')}</a>
+            <a class="tr-name" href="/wrestler.html?id=${encodeURIComponent(wrestler.wrestler_id)}">${C.esc(wrestler.name || 'Unknown')}</a>
             ${wrestler.weight_class ? `<span class="tr-weight-badge" style="background:${C.hexToRgba(badgeColor.hex, 0.85)}; color:${C.textColorFor(badgeColor.hex)}">${wrestler.weight_class}</span>` : ''}
           </div>
           <div class="tr-meta">${C.esc(path)}</div>
@@ -112,11 +159,11 @@
       <div class="tr-chart-wrap"></div>
     `;
     document.getElementById('tr-body').appendChild(card);
-    card.querySelector('.tr-chart-wrap').innerHTML = C.buildChartSVG(wrestler, colorMap);
+    card.querySelector('.tr-chart-wrap').innerHTML = C.buildChartSVG(wrestler, colorMap, band);
     C.wireTooltips(card.querySelector('.tr-chart-wrap'));
   }
 
-  function render(data, colorMap) {
+  function render(data, colorMap, band) {
     document.getElementById('tr-title').textContent = `${data.team_name} — ${data.year} Roster`;
     document.getElementById('tr-subtitle').textContent =
       `${data.roster.length} wrestler(s) · full career DPG shown for each`;
@@ -127,27 +174,62 @@
       body.innerHTML = `<div class="tr-empty">No roster data found.</div>`;
       return;
     }
-    data.roster.forEach(w => renderCard(w, colorMap));
+    data.roster.forEach(w => renderCard(w, colorMap, band));
   }
 
-  const team = qs('team');
-  const year = qs('year');
+  const MIN_YEAR = 2012, MAX_YEAR = 2026;
 
-  if (!team || !year) {
-    document.getElementById('tr-body').innerHTML =
-      '<div class="tr-empty">Missing query params. Use ?team=&lt;slug&gt;&amp;year=&lt;year&gt;, e.g. ?team=penn_state&amp;year=2026</div>';
-    return;
+  function loadReport(team, year) {
+    const body = document.getElementById('tr-body');
+    body.innerHTML = '<div class="tr-loading">Loading…</div>';
+    Promise.all([
+      fetch(`/data/reports/team_roster/${team}_${year}.json`).then(r => { if (!r.ok) throw new Error('not found'); return r.json(); }),
+      fetch('/data/team_colors.json').then(r => r.ok ? r.json() : { teams: {}, default: C.DEFAULT_COLOR }).catch(() => ({ teams: {}, default: C.DEFAULT_COLOR })),
+      bandPromise,
+    ])
+      .then(([data, colorMap, band]) => render(data, colorMap, band))
+      .catch(() => {
+        body.innerHTML = `<div class="tr-empty">No roster view found for ${C.esc(team)} in ${C.esc(year)}.</div>`;
+      });
   }
 
-  Promise.all([
-    fetch(`/data/reports/team_roster/${team}_${year}.json`).then(r => { if (!r.ok) throw new Error('not found'); return r.json(); }),
-    fetch('/data/team_colors.json').then(r => r.ok ? r.json() : { teams: {}, default: C.DEFAULT_COLOR }).catch(() => ({ teams: {}, default: C.DEFAULT_COLOR })),
-  ])
-    .then(([data, colorMap]) => render(data, colorMap))
-    .catch(() => {
-      document.getElementById('tr-body').innerHTML =
-        `<div class="tr-empty">No roster view found for ${C.esc(team)} in ${C.esc(year)}.</div>`;
+  const yearSelect = document.getElementById('tr-year-select');
+  yearSelect.innerHTML = Array.from({ length: MAX_YEAR - MIN_YEAR + 1 }, (_, i) => MAX_YEAR - i)
+    .map(y => `<option value="${y}">${y}</option>`).join('');
+
+  const initialTeam = qs('team');
+  const initialYear = qs('year') || String(MAX_YEAR);
+
+  fetch('/data/team_colors.json').then(r => r.json()).then(colorMap => {
+    const teams = Object.entries(colorMap.teams || {})
+      .map(([slug, t]) => ({ slug, name: t.name }))
+      .sort((a, b) => a.name.localeCompare(b.name));
+    const teamSelect = document.getElementById('tr-team-select');
+    teamSelect.innerHTML = teams.map(t => `<option value="${t.slug}">${t.name}</option>`).join('');
+    if (initialTeam) teamSelect.value = initialTeam;
+    yearSelect.value = initialYear;
+
+    document.getElementById('tr-go').addEventListener('click', () => {
+      const team = teamSelect.value;
+      const year = yearSelect.value;
+      if (!team) return;
+      const url = new URL(window.location);
+      url.searchParams.set('team', team);
+      url.searchParams.set('year', year);
+      window.history.pushState({}, '', url);
+      loadReport(team, year);
     });
+
+    if (initialTeam) {
+      loadReport(initialTeam, initialYear);
+    } else {
+      document.getElementById('tr-body').innerHTML =
+        '<div class="tr-empty">Pick a team and season above, then click View.</div>';
+    }
+  }).catch(() => {
+    document.getElementById('tr-body').innerHTML =
+      '<div class="tr-empty">Team list unavailable.</div>';
+  });
 })();
   </script>
 </body>
