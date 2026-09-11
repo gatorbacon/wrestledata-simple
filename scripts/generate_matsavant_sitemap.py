@@ -27,7 +27,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 PUBLIC_DIR = REPO_ROOT / "frontend/wrestledata-ui/public"
 OUTPUT_FILE = PUBLIC_DIR / "sitemap.xml"
 
-BASE_URL = "https://matsavant.com"
+BASE_URL = "https://www.matsavant.com"  # apex matsavant.com is a 301 -> www; sitemap URLs must be the canonical, directly-served host
 CURRENT_SEASON = 2026
 TODAY = date.today().isoformat()
 
