@@ -1,0 +1,136 @@
+{
+  "query": {
+    "team_slug": "iowa",
+    "team_name": "Iowa",
+    "start_year": 2018,
+    "end_year": 2018
+  },
+  "wrestlers": [
+    {
+      "name": "Joseph Gunther",
+      "wrestler_id": "10495569132",
+      "weight_class": 174,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Ffightingillini.com%2Fimages%2F2019%2F9%2F12%2FGunther_Joey_Headshot_082519_2MJ0585.JPG&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2016,
+      "last_query_year": 2018,
+      "school_path": [
+        "Iowa",
+        "Illinois"
+      ],
+      "seasons": [
+        {
+          "year": 2016,
+          "wrestler_id": "265150013",
+          "team": "Iowa",
+          "team_slug": "iowa",
+          "team_abbr": "IOWA",
+          "is_query_team": true,
+          "dpg": 0.53,
+          "matches": 11,
+          "rank": 79,
+          "record": "7-3"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "829568076",
+          "team": "Iowa",
+          "team_slug": "iowa",
+          "team_abbr": "IOWA",
+          "is_query_team": true,
+          "dpg": 1.43,
+          "matches": 24,
+          "rank": 17,
+          "record": "14-10"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11485911009",
+          "team": "Iowa",
+          "team_slug": "iowa",
+          "team_abbr": "IOWA",
+          "is_query_team": true,
+          "dpg": 1.01,
+          "matches": 26,
+          "rank": 24,
+          "record": "15-9"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4638945132",
+          "team": "Illinois",
+          "team_slug": "illinois",
+          "team_abbr": "ILL",
+          "is_query_team": false,
+          "dpg": 1.06,
+          "matches": 33,
+          "rank": 26,
+          "record": "18-14"
+        },
+        {
+          "year": 2020,
+          "wrestler_id": "10495569132",
+          "team": "Illinois",
+          "team_slug": "illinois",
+          "team_abbr": "ILL",
+          "is_query_team": false,
+          "dpg": 1.52,
+          "matches": 27,
+          "rank": 17,
+          "record": "17-10"
+        }
+      ]
+    },
+    {
+      "name": "Patricio Lugo",
+      "wrestler_id": "11486115009",
+      "weight_class": 149,
+      "photo_url": null,
+      "direction": "transfer_in",
+      "first_query_year": 2018,
+      "last_query_year": 2018,
+      "school_path": [
+        "Edinboro",
+        "Iowa"
+      ],
+      "seasons": [
+        {
+          "year": 2016,
+          "wrestler_id": "7898564009",
+          "team": "Edinboro",
+          "team_slug": "edinboro",
+          "team_abbr": "EDIN",
+          "is_query_team": false,
+          "dpg": 2.17,
+          "matches": 38,
+          "rank": 12,
+          "record": "27-9"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "522488013",
+          "team": "Edinboro",
+          "team_slug": "edinboro",
+          "team_abbr": "EDIN",
+          "is_query_team": false,
+          "dpg": 2.81,
+          "matches": 39,
+          "rank": 14,
+          "record": "28-9"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11486115009",
+          "team": "Iowa",
+          "team_slug": "iowa",
+          "team_abbr": "IOWA",
+          "is_query_team": true,
+          "dpg": 2.97,
+          "matches": 7,
+          "rank": 33,
+          "record": "5-2"
+        }
+      ]
+    }
+  ]
+}

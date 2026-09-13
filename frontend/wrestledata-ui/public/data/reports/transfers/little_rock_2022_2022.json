@@ -1,0 +1,86 @@
+{
+  "query": {
+    "team_slug": "little_rock",
+    "team_name": "Little Rock",
+    "start_year": 2022,
+    "end_year": 2022
+  },
+  "wrestlers": [
+    {
+      "name": "Paul Bianchi",
+      "wrestler_id": "14865960132",
+      "weight_class": 133,
+      "photo_url": null,
+      "direction": "transfer_in",
+      "first_query_year": 2020,
+      "last_query_year": 2021,
+      "school_path": [
+        "North Dakota State University",
+        "North Dakota State",
+        "Little Rock"
+      ],
+      "seasons": [
+        {
+          "year": 2017,
+          "wrestler_id": "19967123",
+          "team": "North Dakota State University",
+          "team_slug": "north_dakota_state_university",
+          "team_abbr": "NORT",
+          "is_query_team": false,
+          "dpg": 1.66,
+          "matches": 16,
+          "rank": 60,
+          "record": "11-4"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11444470009",
+          "team": "North Dakota State",
+          "team_slug": "north_dakota_state",
+          "team_abbr": "NDSU",
+          "is_query_team": false,
+          "dpg": 0.69,
+          "matches": 33,
+          "rank": 25,
+          "record": "18-14"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4636083132",
+          "team": "North Dakota State",
+          "team_slug": "north_dakota_state",
+          "team_abbr": "NDSU",
+          "is_query_team": false,
+          "dpg": -1.66,
+          "matches": 8,
+          "rank": 48,
+          "record": "2-5"
+        },
+        {
+          "year": 2020,
+          "wrestler_id": "10498824132",
+          "team": "Little Rock",
+          "team_slug": "little_rock",
+          "team_abbr": "LR",
+          "is_query_team": true,
+          "dpg": 0.3,
+          "matches": 18,
+          "rank": 46,
+          "record": "10-9"
+        },
+        {
+          "year": 2021,
+          "wrestler_id": "14865960132",
+          "team": "Little Rock",
+          "team_slug": "little_rock",
+          "team_abbr": "LR",
+          "is_query_team": true,
+          "dpg": 0.11,
+          "matches": 16,
+          "rank": 29,
+          "record": "9-7"
+        }
+      ]
+    }
+  ]
+}

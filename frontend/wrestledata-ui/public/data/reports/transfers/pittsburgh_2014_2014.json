@@ -1,0 +1,73 @@
+{
+  "query": {
+    "team_slug": "pittsburgh",
+    "team_name": "Pittsburgh",
+    "start_year": 2014,
+    "end_year": 2014
+  },
+  "wrestlers": [
+    {
+      "name": "Geno Morelli",
+      "wrestler_id": "800333071",
+      "weight_class": 174,
+      "photo_url": null,
+      "direction": "transfer_out",
+      "first_query_year": 2013,
+      "last_query_year": 2014,
+      "school_path": [
+        "Pittsburgh",
+        "Penn State"
+      ],
+      "seasons": [
+        {
+          "year": 2013,
+          "wrestler_id": "4498912009",
+          "team": "Pittsburgh",
+          "team_slug": "pittsburgh",
+          "team_abbr": "PITT",
+          "is_query_team": true,
+          "dpg": 0.65,
+          "matches": 26,
+          "rank": 70,
+          "record": "14-8"
+        },
+        {
+          "year": 2014,
+          "wrestler_id": "4633661009",
+          "team": "Pittsburgh",
+          "team_slug": "pittsburgh",
+          "team_abbr": "PITT",
+          "is_query_team": true,
+          "dpg": 0.66,
+          "matches": 34,
+          "rank": 53,
+          "record": "15-16"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "277254011",
+          "team": "Penn State",
+          "team_slug": "penn_state",
+          "team_abbr": "PSU",
+          "is_query_team": false,
+          "dpg": 1.86,
+          "matches": 35,
+          "rank": 20,
+          "record": "20-13"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "800333071",
+          "team": "Penn State",
+          "team_slug": "penn_state",
+          "team_abbr": "PSU",
+          "is_query_team": false,
+          "dpg": 2.95,
+          "matches": 11,
+          "rank": 34,
+          "record": "10-1"
+        }
+      ]
+    }
+  ]
+}

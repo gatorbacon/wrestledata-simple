@@ -4968,14 +4968,15 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
 .match-impact-labels { flex-wrap: nowrap; white-space: nowrap; }
 
 /* ============================================================
-   Team profile page redesign (tp2- prefix) -- projection hero,
-   segmented placement/advancement/bonus bar, unified 4-tier rank
-   chips, starting/remaining roster tables.
+   Team profile page (tp2- prefix) -- the team DIRECTORY profile
+   (distinct from Team race, which is the xTP leaderboard). Cream
+   page, white-card sections, same rank-badge/medal convention as
+   Rankings/Team race/Hodge -- see docs/matsavant.md Site Strategy.
    ============================================================ */
 
 .tp2-logo {
-  width: 126px;
-  height: 126px;
+  width: 96px;
+  height: 96px;
   object-fit: contain;
   flex-shrink: 0;
   background: var(--panel);
@@ -4984,143 +4985,115 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   padding: 6px;
 }
 
-.tp2-chip-row {
+/* --- Header: identity (left) + projected team points (right), one row on
+   desktop, stacked (identity first) on mobile. --- */
+.tp2-header {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-  margin: 8px 0 6px;
-}
-
-.tp2-chip {
-  display: inline-flex;
-  align-items: center;
-  padding: 4px 10px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: var(--panel);
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text);
-}
-
-.tp2-resume-line {
-  font-size: 0.95rem;
-  color: var(--muted);
-}
-
-/* --- Unified rank-chip system: #1 gold, #2-4 navy, #5-12 slate, #13+ gray --- */
-
-.tp2-rank-chip {
-  display: inline-flex;
-  align-items: center;
-  padding: 3px 10px;
-  border-radius: 999px;
-  font-weight: 700;
-  font-size: 0.85rem;
-}
-.tp2-rank--gold      { background: #e0b872; color: var(--text); }
-.tp2-rank--navy      { background: var(--accent); color: var(--bg); }
-.tp2-rank--slate     { background: #6b7a8f; color: var(--bg); }
-.tp2-rank--gray      { background: var(--panel-2); color: var(--muted); border: 1px solid var(--border); }
-.tp2-rank--unranked  { background: var(--panel-2); color: var(--muted-2); border: 1px solid var(--border); }
-
-/* --- Hero section --- */
-
-.tp2-hero-section {
-  padding: 20px 24px;
-}
-
-.tp2-hero-top {
-  display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
-.tp2-hero-value {
-  font-size: 3.4rem;
+.tp2-header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1 1 auto;
+  min-width: 240px;
+}
+
+.tp2-header-right {
+  flex: 0 0 auto;
+  text-align: right;
+}
+
+.tp2-subline {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 3px;
+}
+
+.tp2-teamrace-pill {
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.tp2-points-value {
+  font-size: 2.6rem;
   font-weight: 800;
   line-height: 1;
   font-variant-numeric: tabular-nums;
 }
 
-.tp2-hero-label {
-  font-size: 0.95rem;
+.tp2-points-label {
+  font-size: 0.85rem;
   color: var(--muted);
-  margin-top: 4px;
+  margin-top: 2px;
 }
-
-.tp2-hero-rank .tp2-rank-chip {
-  font-size: 1.1rem;
-  padding: 6px 14px;
-}
-
-/* Segmented 100% bar: placement / advancement / bonus */
-
-.tp2-segmented-bar {
-  display: flex;
-  width: 100%;
-  height: 16px;
-  border-radius: 8px;
-  overflow: hidden;
-  margin-top: 18px;
-  background: var(--bar-neutral);
-}
-
-.tp2-segment { display: block; height: 100%; }
-.tp2-segment--placement   { background: var(--accent); }
-.tp2-segment--advancement { background: var(--warn); }
-.tp2-segment--bonus       { background: #38a169; }
-
-.tp2-segmented-legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-top: 8px;
-  font-size: 0.8rem;
-  color: var(--muted);
-}
-.tp2-legend-item { display: inline-flex; align-items: center; gap: 6px; }
-.tp2-legend-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
 
 .tp2-oneliner {
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  margin-top: 14px;
+  margin-top: 6px;
 }
 
-/* Top-5 team comparison */
+@media (max-width: 600px) {
+  .tp2-header-right {
+    text-align: left;
+    flex-basis: 100%;
+    margin-top: 4px;
+  }
+}
 
-.tp2-top5 { margin-top: 18px; }
-.tp2-top5-title {
-  font-size: 0.75rem;
+/* --- White-card sections: starting roster / remaining roster, same
+   treatment as .profile-section and the Team race / Hodge panel
+   sections. --- */
+.tp2-panel-section {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+}
+
+.tp2-remaining-roster-section {
+  margin-top: 3em;
+}
+
+/* --- Panel section headings (Starting Roster / Remaining Roster) --- */
+
+.tp2-panel-section h2 {
+  padding: 18px 16px 8px;
+  margin: 0;
+  font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--muted);
-  margin-bottom: 6px;
 }
-.tp2-top5-row {
-  display: grid;
-  grid-template-columns: 9em 1fr 4em;
-  align-items: center;
-  gap: 10px;
-  padding: 4px 0;
+.tp2-panel-section .table-wrapper {
+  border: none;
+  background: transparent;
 }
-.tp2-top5-row--self .tp2-top5-name { font-weight: 700; }
-.tp2-top5-name { font-size: 0.85rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.tp2-top5-bar-track {
-  height: 8px;
-  border-radius: 4px;
-  background: var(--bar-neutral);
-  overflow: hidden;
+.tp2-panel-section .table-wrapper table {
+  background: transparent;
 }
-.tp2-top5-bar-fill { display: block; height: 100%; background: var(--accent); border-radius: 4px; }
-.tp2-top5-row--self .tp2-top5-bar-fill { background: #e0b872; }
-.tp2-top5-value { font-size: 0.85rem; font-variant-numeric: tabular-nums; text-align: right; }
 
-/* --- Starting roster table --- */
+/* --- Wrestler cell: small headshot (omit if none) + name + class year --- */
+
+.tp2-wrestler-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.tp2-headshot {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: none;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+}
 
 .tp2-name-sub {
   font-size: 0.72rem;
@@ -5128,28 +5101,13 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
 }
 
 .tp2-proj-cell {
-  min-width: 160px;
-}
-.tp2-proj-value {
-  display: inline-block;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
-  min-width: 2.6em;
-  margin-right: 8px;
-}
-.tp2-proj-bar-track {
-  display: inline-flex;
-  height: 10px;
-  border-radius: 5px;
-  overflow: hidden;
-  vertical-align: middle;
-  background: var(--bar-neutral);
 }
 
-.tp2-breakdown-cell {
-  font-size: 0.78rem;
-  color: var(--muted);
-  white-space: nowrap;
+.tp2-empty-slot {
+  color: var(--muted-2);
+  text-align: center;
 }
 
 .tp2-risk-chip {
@@ -5163,13 +5121,12 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
 .tp2-risk-flip   { background: rgba(200,150,40,0.15); color: #97690f; }
 .tp2-risk-bubble { background: rgba(197,48,48,0.15); color: #c53030; }
 
-/* --- How they score / how they finish cards --- */
+/* --- Scoring per 7 Minutes / How they finish: side-by-side cards --- */
 
 .tp2-card-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  margin-top: 20px;
 }
 @media (max-width: 900px) {
   .tp2-card-grid { grid-template-columns: 1fr; }
@@ -5248,26 +5205,6 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   color: var(--muted-2);
   font-size: 0.78em;
 }
-
-/* --- Remaining roster --- */
-
-.tp2-dpg-negative { color: #c53030; font-weight: 600; }
-.tp2-dpg-positive { color: #2f855a; font-weight: 600; }
-.tp2-dpg-nodata { color: var(--muted-2); }
-.tp2-nodata-label { font-size: 0.72rem; font-style: italic; }
-
-.tp2-toggle-rest {
-  margin: 12px 0;
-  padding: 6px 14px;
-  border-radius: var(--r-sm);
-  border: 1px solid var(--border);
-  background: var(--panel);
-  color: var(--text);
-  font-size: 0.85rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-.tp2-toggle-rest:hover { border-color: var(--accent); color: var(--accent); }
 
 /* ============================================================
    Mobile (<768px) homepage rewrite: dual ticker one-at-a-time,
@@ -5675,6 +5612,166 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   #title-contenders-section,
   #trophy-chances-section,
   #team-odds-preview-section {
+    display: none;
+  }
+}
+
+/* ============================================================
+   Mobile (<768px) "app home": search card + 2x2 launcher grid,
+   replacing the whole desktop homepage stack below 768px (dual
+   ticker, P4P table, the NCAA outlook card above, positioning
+   statement, 2x2 stat-panel grid, latest-note card, featured
+   tools grid). Those sections keep their current look at
+   >=768px; .app-home itself is hidden there by default below.
+   ============================================================ */
+
+.app-home {
+  display: none;
+}
+
+.app-search-card {
+  margin-bottom: 14px;
+}
+
+.app-search-container {
+  width: 100%;
+}
+
+.app-search-input {
+  padding: 14px 16px;
+  font-size: 1rem;
+  border-radius: var(--r-md);
+}
+
+.app-tile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.app-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 14px 12px 16px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.app-tile:active {
+  background: var(--panel-2);
+}
+
+.app-tile-icon-wrap {
+  flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-tile-icon {
+  display: block;
+  width: 52%;
+  height: auto;
+  color: var(--text);
+}
+
+.app-tile-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.app-section-block {
+  margin-bottom: 20px;
+}
+
+.app-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.app-section-head h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.app-section-link {
+  font-size: 0.8rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.app-notes-list,
+.app-tools-list {
+  display: flex;
+  flex-direction: column;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
+
+.app-notes-row,
+.app-tool-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.app-notes-row:last-child,
+.app-tool-row:last-child {
+  border-bottom: none;
+}
+
+.app-notes-row:active,
+.app-tool-row:active {
+  background: var(--panel-2);
+}
+
+.app-notes-row-title {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+.app-notes-row-date {
+  flex: 0 0 auto;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+@media (max-width: 767px) {
+  .app-home {
+    display: block;
+  }
+  #dual-ticker-section,
+  #p4p-section,
+  #ncaa-outlook-section,
+  .positioning-statement,
+  .hp-grid,
+  #latest-note-section,
+  .homepage-featured {
     display: none;
   }
 }

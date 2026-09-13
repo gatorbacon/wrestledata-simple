@@ -433,6 +433,8 @@ def compute_team_metrics(
         "total_losses": total_losses,
         "win_pct": round(win_pct, 3) if win_pct is not None else None,
         "wrestlers_included": len(wrestler_metrics),
+        "top10_wins": total_top10_wins,
+        "top10_losses": total_top10_matches - total_top10_wins,
     }
 
 
@@ -620,6 +622,8 @@ def process_league(season: int, league: str, state: Optional[str], gender: str, 
                 "losses_included": team_metrics["total_losses"],
                 "win_pct": team_metrics["win_pct"],
                 "wrestlers_included": team_metrics["wrestlers_included"],
+                "top10_wins": team_metrics["top10_wins"],
+                "top10_losses": team_metrics["top10_losses"],
                 "starters_mode": "ranking_files_with_overrides",
             },
         }

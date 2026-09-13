@@ -1,0 +1,85 @@
+{
+  "query": {
+    "team_slug": "rider",
+    "team_name": "Rider",
+    "start_year": 2017,
+    "end_year": 2017
+  },
+  "wrestlers": [
+    {
+      "name": "Gary Dinmore",
+      "wrestler_id": "10493005132",
+      "weight_class": 165,
+      "photo_url": "https://gobroncs.com/images/2019/10/23/dinmore_gary_hs1920.jpg",
+      "direction": "transfer_in",
+      "first_query_year": 2017,
+      "last_query_year": 2020,
+      "school_path": [
+        "Penn State",
+        "Rider"
+      ],
+      "seasons": [
+        {
+          "year": 2016,
+          "wrestler_id": "264289013",
+          "team": "Penn State",
+          "team_slug": "penn_state",
+          "team_abbr": "PSU",
+          "is_query_team": false,
+          "dpg": -0.04,
+          "matches": 16,
+          "rank": 81,
+          "record": "7-4"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "2010271076",
+          "team": "Rider",
+          "team_slug": "rider",
+          "team_abbr": "RID",
+          "is_query_team": true,
+          "dpg": -0.41,
+          "matches": 6,
+          "rank": 78,
+          "record": "4-2"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11412495009",
+          "team": "Rider",
+          "team_slug": "rider",
+          "team_abbr": "RID",
+          "is_query_team": true,
+          "dpg": 0.71,
+          "matches": 26,
+          "rank": 61,
+          "record": "15-10"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4671413132",
+          "team": "Rider",
+          "team_slug": "rider",
+          "team_abbr": "RID",
+          "is_query_team": true,
+          "dpg": -1.23,
+          "matches": 16,
+          "rank": 54,
+          "record": "4-8"
+        },
+        {
+          "year": 2020,
+          "wrestler_id": "10493005132",
+          "team": "Rider",
+          "team_slug": "rider",
+          "team_abbr": "RID",
+          "is_query_team": true,
+          "dpg": 0.16,
+          "matches": 30,
+          "rank": 41,
+          "record": "10-8"
+        }
+      ]
+    }
+  ]
+}

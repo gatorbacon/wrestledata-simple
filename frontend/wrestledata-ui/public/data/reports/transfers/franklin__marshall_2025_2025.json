@@ -1,0 +1,49 @@
+{
+  "query": {
+    "team_slug": "franklin__marshall",
+    "team_name": "Franklin & Marshall",
+    "start_year": 2025,
+    "end_year": 2025
+  },
+  "wrestlers": [
+    {
+      "name": "Michael Duggan",
+      "wrestler_id": "29673151132",
+      "weight_class": 165,
+      "photo_url": "https://godiplomats.com/images/2024/9/24/Duggan__Michael.jpg",
+      "direction": "transfer_in",
+      "first_query_year": 2025,
+      "last_query_year": 2025,
+      "school_path": [
+        "Bloomsburg",
+        "Franklin & Marshall"
+      ],
+      "seasons": [
+        {
+          "year": 2024,
+          "wrestler_id": "24582589132",
+          "team": "Bloomsburg",
+          "team_slug": "bloomsburg",
+          "team_abbr": "BLOO",
+          "is_query_team": false,
+          "dpg": -4.43,
+          "matches": 5,
+          "rank": 207,
+          "record": "0-4"
+        },
+        {
+          "year": 2025,
+          "wrestler_id": "29673151132",
+          "team": "Franklin & Marshall",
+          "team_slug": "franklin__marshall",
+          "team_abbr": "F&M",
+          "is_query_team": true,
+          "dpg": -4.97,
+          "matches": 2,
+          "rank": 270,
+          "record": "0-2"
+        }
+      ]
+    }
+  ]
+}

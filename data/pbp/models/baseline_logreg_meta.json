@@ -1,0 +1,25 @@
+{
+  "feature_cols": [
+    "score_diff",
+    "match_time_fraction_remaining",
+    "score_diff_x_match_time_fraction",
+    "score_diff_x_match_time_fraction_sq",
+    "score_diff_x_match_time_fraction_cube",
+    "subject_dpg",
+    "opponent_dpg",
+    "riding_time_net_sec",
+    "period",
+    "subject_position",
+    "subject_stalling_warned",
+    "opponent_stalling_warned",
+    "subject_is_flip_winner_filled",
+    "subject_riding_time_criterion_met_filled"
+  ],
+  "n_train_rows": 97226,
+  "n_test_rows": 24130,
+  "n_train_bouts": 5033,
+  "n_test_bouts": 1259,
+  "test_roc_auc": 0.9546811931296992,
+  "test_log_loss": 0.27076605947992605,
+  "test_brier": 0.08570446560259669
+}

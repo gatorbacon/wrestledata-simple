@@ -1,0 +1,73 @@
+{
+  "query": {
+    "team_slug": "oklahoma",
+    "team_name": "Oklahoma",
+    "start_year": 2016,
+    "end_year": 2016
+  },
+  "wrestlers": [
+    {
+      "name": "Ryan Millhof",
+      "wrestler_id": "4640859132",
+      "weight_class": 125,
+      "photo_url": null,
+      "direction": "transfer_out",
+      "first_query_year": 2015,
+      "last_query_year": 2016,
+      "school_path": [
+        "Oklahoma",
+        "Arizona State"
+      ],
+      "seasons": [
+        {
+          "year": 2015,
+          "wrestler_id": "4814776009",
+          "team": "Oklahoma",
+          "team_slug": "oklahoma",
+          "team_abbr": "OU",
+          "is_query_team": true,
+          "dpg": 0.47,
+          "matches": 24,
+          "rank": 52,
+          "record": "10-14"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "7929556009",
+          "team": "Oklahoma",
+          "team_slug": "oklahoma",
+          "team_abbr": "OU",
+          "is_query_team": true,
+          "dpg": 2.58,
+          "matches": 32,
+          "rank": 7,
+          "record": "23-10"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11444805009",
+          "team": "Arizona State",
+          "team_slug": "arizona_state",
+          "team_abbr": "ASU",
+          "is_query_team": false,
+          "dpg": 1.97,
+          "matches": 23,
+          "rank": 15,
+          "record": "16-11"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4640859132",
+          "team": "Arizona State",
+          "team_slug": "arizona_state",
+          "team_abbr": "ASU",
+          "is_query_team": false,
+          "dpg": 1.88,
+          "matches": 13,
+          "rank": 34,
+          "record": "9-4"
+        }
+      ]
+    }
+  ]
+}

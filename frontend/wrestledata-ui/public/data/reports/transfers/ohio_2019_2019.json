@@ -1,0 +1,124 @@
+{
+  "query": {
+    "team_slug": "ohio",
+    "team_name": "Ohio",
+    "start_year": 2019,
+    "end_year": 2019
+  },
+  "wrestlers": [
+    {
+      "name": "Bailey Faust",
+      "wrestler_id": "524036011",
+      "weight_class": 197,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fohiobobcats.com%2Fimages%2F2021%2F5%2F13%2Fbailey_faust_wrest_2016_17.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2017,
+      "last_query_year": 2017,
+      "school_path": [
+        "West Virginia",
+        "Ohio"
+      ],
+      "seasons": [
+        {
+          "year": 2016,
+          "wrestler_id": "277527011",
+          "team": "West Virginia",
+          "team_slug": "west_virginia",
+          "team_abbr": "WVU",
+          "is_query_team": false,
+          "dpg": -0.6,
+          "matches": 8,
+          "rank": 102,
+          "record": "4-5"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "524036011",
+          "team": "Ohio",
+          "team_slug": "ohio",
+          "team_abbr": "OHIO",
+          "is_query_team": true,
+          "dpg": 0.94,
+          "matches": 20,
+          "rank": 66,
+          "record": "10-8"
+        }
+      ]
+    },
+    {
+      "name": "Derek Hillman",
+      "wrestler_id": "7374273132",
+      "weight_class": 197,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fohiobobcats.com%2Fimages%2F2021%2F5%2F13%2Fderek_hillman_wrest_2018_19.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2019,
+      "last_query_year": 2019,
+      "school_path": [
+        "Eastern Michigan",
+        "Ohio"
+      ],
+      "seasons": [
+        {
+          "year": 2015,
+          "wrestler_id": "4875833009",
+          "team": "Eastern Michigan",
+          "team_slug": "eastern_michigan",
+          "team_abbr": "EAST",
+          "is_query_team": false,
+          "dpg": -1.79,
+          "matches": 13,
+          "rank": 108,
+          "record": "6-7"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "7928991009",
+          "team": "Eastern Michigan",
+          "team_slug": "eastern_michigan",
+          "team_abbr": "EAST",
+          "is_query_team": false,
+          "dpg": -0.88,
+          "matches": 29,
+          "rank": 60,
+          "record": "12-14"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "830657076",
+          "team": "Eastern Michigan",
+          "team_slug": "eastern_michigan",
+          "team_abbr": "EAST",
+          "is_query_team": false,
+          "dpg": -0.89,
+          "matches": 22,
+          "rank": 62,
+          "record": "8-13"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11482754009",
+          "team": "Eastern Michigan",
+          "team_slug": "eastern_michigan",
+          "team_abbr": "EAST",
+          "is_query_team": false,
+          "dpg": 0.24,
+          "matches": 20,
+          "rank": 62,
+          "record": "10-9"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "7374273132",
+          "team": "Ohio",
+          "team_slug": "ohio",
+          "team_abbr": "OHIO",
+          "is_query_team": true,
+          "dpg": -0.98,
+          "matches": 8,
+          "rank": 73,
+          "record": "3-5"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "query": {
+    "team_slug": "chattanooga",
+    "team_name": "Chattanooga",
+    "start_year": 2017,
+    "end_year": 2017
+  },
+  "wrestlers": [
+    {
+      "name": "Chase Zemenak",
+      "wrestler_id": "20660123",
+      "weight_class": 141,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Futc.sidearmsports.com%2Fimages%2F2016%2F9%2F6%2FZemenak%2C%20Chase.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2016,
+      "last_query_year": 2017,
+      "school_path": [
+        "Bloomsburg",
+        "Chattanooga"
+      ],
+      "seasons": [
+        {
+          "year": 2015,
+          "wrestler_id": "1602076",
+          "team": "Bloomsburg",
+          "team_slug": "bloomsburg",
+          "team_abbr": "BLOO",
+          "is_query_team": false,
+          "dpg": 1.3,
+          "matches": 22,
+          "rank": 48,
+          "record": "14-5"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "533017094",
+          "team": "Chattanooga",
+          "team_slug": "chattanooga",
+          "team_abbr": "CHAT",
+          "is_query_team": true,
+          "dpg": 1.09,
+          "matches": 13,
+          "rank": 45,
+          "record": "9-3"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "20660123",
+          "team": "Chattanooga",
+          "team_slug": "chattanooga",
+          "team_abbr": "CHAT",
+          "is_query_team": true,
+          "dpg": 0.4,
+          "matches": 14,
+          "rank": 39,
+          "record": "10-4"
+        }
+      ]
+    },
+    {
+      "name": "Dalton Clark",
+      "wrestler_id": "1465261076",
+      "weight_class": 157,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fss-dummy-data.s3.us-east-1.amazonaws.com%2Fimages%2Fperson-default.png&width=603&height=803&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2017,
+      "last_query_year": 2017,
+      "school_path": [
+        "Minnesota",
+        "Chattanooga"
+      ],
+      "seasons": [
+        {
+          "year": 2016,
+          "wrestler_id": "7929209009",
+          "team": "Minnesota",
+          "team_slug": "minnesota",
+          "team_abbr": "MINN",
+          "is_query_team": false,
+          "dpg": -4.23,
+          "matches": 3,
+          "rank": 169,
+          "record": "0-2"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "1465261076",
+          "team": "Chattanooga",
+          "team_slug": "chattanooga",
+          "team_abbr": "CHAT",
+          "is_query_team": true,
+          "dpg": -3.83,
+          "matches": 8,
+          "rank": 236,
+          "record": "0-8"
+        }
+      ]
+    }
+  ]
+}

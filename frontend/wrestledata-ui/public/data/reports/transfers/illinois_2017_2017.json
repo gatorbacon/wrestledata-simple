@@ -1,0 +1,73 @@
+{
+  "query": {
+    "team_slug": "illinois",
+    "team_name": "Illinois",
+    "start_year": 2017,
+    "end_year": 2017
+  },
+  "wrestlers": [
+    {
+      "name": "Dylan Thurston",
+      "wrestler_id": "10492017132",
+      "weight_class": 157,
+      "photo_url": "https://niuhuskies.com/images/2019/10/9/19_Wrestling_Dillon_Thurston_0919_WD_1.jpg",
+      "direction": "transfer_out",
+      "first_query_year": 2017,
+      "last_query_year": 2019,
+      "school_path": [
+        "Illinois",
+        "Northern Illinois"
+      ],
+      "seasons": [
+        {
+          "year": 2017,
+          "wrestler_id": "9725629009",
+          "team": "Illinois",
+          "team_slug": "illinois",
+          "team_abbr": "ILL",
+          "is_query_team": true,
+          "dpg": -2.61,
+          "matches": 15,
+          "rank": 120,
+          "record": "4-6"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11445870009",
+          "team": "Illinois",
+          "team_slug": "illinois",
+          "team_abbr": "ILL",
+          "is_query_team": true,
+          "dpg": -2.88,
+          "matches": 11,
+          "rank": 191,
+          "record": "2-9"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4638923132",
+          "team": "Illinois",
+          "team_slug": "illinois",
+          "team_abbr": "ILL",
+          "is_query_team": true,
+          "dpg": -1.53,
+          "matches": 1,
+          "rank": 211,
+          "record": "0-1"
+        },
+        {
+          "year": 2020,
+          "wrestler_id": "10492017132",
+          "team": "Northern Illinois",
+          "team_slug": "northern_illinois",
+          "team_abbr": "NIU",
+          "is_query_team": false,
+          "dpg": -1.39,
+          "matches": 11,
+          "rank": 233,
+          "record": "4-7"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "query": {
+    "team_slug": "north_carolina",
+    "team_name": "North Carolina",
+    "start_year": 2012,
+    "end_year": 2012
+  },
+  "wrestlers": [
+    {
+      "name": "Andre Petroski",
+      "wrestler_id": "4494435009",
+      "weight_class": 184,
+      "photo_url": "https://bloomsburgathletics.com/images/2012/10/19/Petrowski,Andre.jpg",
+      "direction": "transfer_out",
+      "first_query_year": 2012,
+      "last_query_year": 2012,
+      "school_path": [
+        "North Carolina",
+        "Bloomsburg"
+      ],
+      "seasons": [
+        {
+          "year": 2012,
+          "wrestler_id": "4452827009",
+          "team": "North Carolina",
+          "team_slug": "north_carolina",
+          "team_abbr": "UNC",
+          "is_query_team": true,
+          "dpg": 2.3,
+          "matches": 16,
+          "rank": 42,
+          "record": "12-3"
+        },
+        {
+          "year": 2013,
+          "wrestler_id": "4494435009",
+          "team": "Bloomsburg",
+          "team_slug": "bloomsburg",
+          "team_abbr": "BLOO",
+          "is_query_team": false,
+          "dpg": -0.1,
+          "matches": 31,
+          "rank": 59,
+          "record": "13-15"
+        }
+      ]
+    }
+  ]
+}

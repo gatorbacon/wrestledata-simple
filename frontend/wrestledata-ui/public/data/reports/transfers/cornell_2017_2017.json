@@ -1,0 +1,61 @@
+{
+  "query": {
+    "team_slug": "cornell",
+    "team_name": "Cornell",
+    "start_year": 2017,
+    "end_year": 2017
+  },
+  "wrestlers": [
+    {
+      "name": "Dalton Macri",
+      "wrestler_id": "11448287009",
+      "weight_class": 141,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Func.sidearmsports.com%2Fimages%2F2017%2F11%2F13%2FMacri_Dalton_wr_61.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2016,
+      "last_query_year": 2017,
+      "school_path": [
+        "Cornell",
+        "North Carolina"
+      ],
+      "seasons": [
+        {
+          "year": 2016,
+          "wrestler_id": "415539076",
+          "team": "Cornell",
+          "team_slug": "cornell",
+          "team_abbr": "COR",
+          "is_query_team": true,
+          "dpg": 1.4,
+          "matches": 25,
+          "rank": 22,
+          "record": "16-9"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "523638011",
+          "team": "Cornell",
+          "team_slug": "cornell",
+          "team_abbr": "COR",
+          "is_query_team": true,
+          "dpg": -4.19,
+          "matches": 1,
+          "rank": 35,
+          "record": "0-1"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11448287009",
+          "team": "North Carolina",
+          "team_slug": "north_carolina",
+          "team_abbr": "UNC",
+          "is_query_team": false,
+          "dpg": -2.0,
+          "matches": 9,
+          "rank": 39,
+          "record": "1-5"
+        }
+      ]
+    }
+  ]
+}

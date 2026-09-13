@@ -1,0 +1,85 @@
+{
+  "query": {
+    "team_slug": "ohio",
+    "team_name": "Ohio",
+    "start_year": 2021,
+    "end_year": 2021
+  },
+  "wrestlers": [
+    {
+      "name": "Sean O`Dwyer",
+      "wrestler_id": "24579311132",
+      "weight_class": 165,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fohiobobcats.com%2Fimages%2F2023%2F11%2F1%2F10_09_23_WrestlingMedia_SeanO_dwyer_NM_03_paEIi.jpeg&width=603&height=803&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2021,
+      "last_query_year": 2024,
+      "school_path": [
+        "West Virginia",
+        "Ohio"
+      ],
+      "seasons": [
+        {
+          "year": 2020,
+          "wrestler_id": "10499888132",
+          "team": "West Virginia",
+          "team_slug": "west_virginia",
+          "team_abbr": "WVU",
+          "is_query_team": false,
+          "dpg": -4.27,
+          "matches": 4,
+          "rank": 183,
+          "record": "1-3"
+        },
+        {
+          "year": 2021,
+          "wrestler_id": "15221308132",
+          "team": "Ohio",
+          "team_slug": "ohio",
+          "team_abbr": "OHIO",
+          "is_query_team": true,
+          "dpg": -2.82,
+          "matches": 1,
+          "rank": 185,
+          "record": "0-1"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16699065132",
+          "team": "Ohio",
+          "team_slug": "ohio",
+          "team_abbr": "OHIO",
+          "is_query_team": true,
+          "dpg": -2.82,
+          "matches": 13,
+          "rank": 222,
+          "record": "3-10"
+        },
+        {
+          "year": 2023,
+          "wrestler_id": "20123028132",
+          "team": "Ohio",
+          "team_slug": "ohio",
+          "team_abbr": "OHIO",
+          "is_query_team": true,
+          "dpg": -0.48,
+          "matches": 9,
+          "rank": 101,
+          "record": "6-4"
+        },
+        {
+          "year": 2024,
+          "wrestler_id": "24579311132",
+          "team": "Ohio",
+          "team_slug": "ohio",
+          "team_abbr": "OHIO",
+          "is_query_team": true,
+          "dpg": -2.74,
+          "matches": 6,
+          "rank": 108,
+          "record": "2-4"
+        }
+      ]
+    }
+  ]
+}

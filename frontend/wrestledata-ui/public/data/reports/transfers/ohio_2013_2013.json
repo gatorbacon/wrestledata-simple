@@ -1,0 +1,49 @@
+{
+  "query": {
+    "team_slug": "ohio",
+    "team_name": "Ohio",
+    "start_year": 2013,
+    "end_year": 2013
+  },
+  "wrestlers": [
+    {
+      "name": "Ty Mitch",
+      "wrestler_id": "4498455009",
+      "weight_class": 125,
+      "photo_url": null,
+      "direction": "transfer_in",
+      "first_query_year": 2013,
+      "last_query_year": 2013,
+      "school_path": [
+        "Virginia Tech",
+        "Ohio"
+      ],
+      "seasons": [
+        {
+          "year": 2012,
+          "wrestler_id": "4454934009",
+          "team": "Virginia Tech",
+          "team_slug": "virginia_tech",
+          "team_abbr": "VT",
+          "is_query_team": false,
+          "dpg": -0.52,
+          "matches": 6,
+          "rank": 72,
+          "record": "2-4"
+        },
+        {
+          "year": 2013,
+          "wrestler_id": "4498455009",
+          "team": "Ohio",
+          "team_slug": "ohio",
+          "team_abbr": "OHIO",
+          "is_query_team": true,
+          "dpg": 0.7,
+          "matches": 5,
+          "rank": 76,
+          "record": "3-2"
+        }
+      ]
+    }
+  ]
+}

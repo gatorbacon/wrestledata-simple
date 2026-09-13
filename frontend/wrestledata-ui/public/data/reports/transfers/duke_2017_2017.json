@@ -1,0 +1,73 @@
+{
+  "query": {
+    "team_slug": "duke",
+    "team_name": "Duke",
+    "start_year": 2017,
+    "end_year": 2017
+  },
+  "wrestlers": [
+    {
+      "name": "Cole Baumgartner",
+      "wrestler_id": "524478011",
+      "weight_class": 133,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgoduke.com%2Fimages%2F2016%2F10%2F28%2FAGYLQZCIATGPSYO.20161028160146.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2017,
+      "last_query_year": 2017,
+      "school_path": [
+        "Missouri",
+        "Duke"
+      ],
+      "seasons": [
+        {
+          "year": 2013,
+          "wrestler_id": "4497610009",
+          "team": "Missouri",
+          "team_slug": "missouri",
+          "team_abbr": "MIZZ",
+          "is_query_team": false,
+          "dpg": -3.61,
+          "matches": 7,
+          "rank": 238,
+          "record": "0-6"
+        },
+        {
+          "year": 2014,
+          "wrestler_id": "4632383009",
+          "team": "Missouri",
+          "team_slug": "missouri",
+          "team_abbr": "MIZZ",
+          "is_query_team": false,
+          "dpg": -0.36,
+          "matches": 20,
+          "rank": 180,
+          "record": "10-7"
+        },
+        {
+          "year": 2015,
+          "wrestler_id": "379010",
+          "team": "Missouri",
+          "team_slug": "missouri",
+          "team_abbr": "MIZZ",
+          "is_query_team": false,
+          "dpg": -1.53,
+          "matches": 27,
+          "rank": 182,
+          "record": "5-10"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "524478011",
+          "team": "Duke",
+          "team_slug": "duke",
+          "team_abbr": "DUKE",
+          "is_query_team": true,
+          "dpg": 0.54,
+          "matches": 27,
+          "rank": 59,
+          "record": "15-12"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "query": {
+    "team_slug": "the_citadel",
+    "team_name": "The Citadel",
+    "start_year": 2018,
+    "end_year": 2018
+  },
+  "wrestlers": [
+    {
+      "name": "Matt McGillick",
+      "wrestler_id": "4636395132",
+      "weight_class": 184,
+      "photo_url": null,
+      "direction": "transfer_out",
+      "first_query_year": 2018,
+      "last_query_year": 2018,
+      "school_path": [
+        "The Citadel",
+        "Pittsburgh"
+      ],
+      "seasons": [
+        {
+          "year": 2018,
+          "wrestler_id": "11485230009",
+          "team": "The Citadel",
+          "team_slug": "the_citadel",
+          "team_abbr": "CIT",
+          "is_query_team": true,
+          "dpg": -2.11,
+          "matches": 16,
+          "rank": 155,
+          "record": "5-10"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4636395132",
+          "team": "Pittsburgh",
+          "team_slug": "pittsburgh",
+          "team_abbr": "PITT",
+          "is_query_team": false,
+          "dpg": -2.46,
+          "matches": 5,
+          "rank": 109,
+          "record": "2-2"
+        }
+      ]
+    }
+  ]
+}

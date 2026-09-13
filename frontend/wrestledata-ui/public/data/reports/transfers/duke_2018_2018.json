@@ -1,0 +1,73 @@
+{
+  "query": {
+    "team_slug": "duke",
+    "team_name": "Duke",
+    "start_year": 2018,
+    "end_year": 2018
+  },
+  "wrestlers": [
+    {
+      "name": "Matt Finesilver",
+      "wrestler_id": "20122638132",
+      "weight_class": 184,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fmgoblue.com%2Fimages%2F2022%2F9%2F20%2F20220920_wrm_finesilver.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2018,
+      "last_query_year": 2022,
+      "school_path": [
+        "Duke",
+        "Michigan"
+      ],
+      "seasons": [
+        {
+          "year": 2018,
+          "wrestler_id": "11444572009",
+          "team": "Duke",
+          "team_slug": "duke",
+          "team_abbr": "DUKE",
+          "is_query_team": true,
+          "dpg": 1.93,
+          "matches": 37,
+          "rank": 19,
+          "record": "26-12"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4625735132",
+          "team": "Duke",
+          "team_slug": "duke",
+          "team_abbr": "DUKE",
+          "is_query_team": true,
+          "dpg": 2.45,
+          "matches": 35,
+          "rank": 12,
+          "record": "24-9"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16698161132",
+          "team": "Duke",
+          "team_slug": "duke",
+          "team_abbr": "DUKE",
+          "is_query_team": true,
+          "dpg": 2.67,
+          "matches": 40,
+          "rank": 13,
+          "record": "29-9"
+        },
+        {
+          "year": 2023,
+          "wrestler_id": "20122638132",
+          "team": "Michigan",
+          "team_slug": "michigan",
+          "team_abbr": "MICH",
+          "is_query_team": false,
+          "dpg": 2.95,
+          "matches": 34,
+          "rank": 11,
+          "record": "26-8"
+        }
+      ]
+    }
+  ]
+}

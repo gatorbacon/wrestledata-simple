@@ -1,0 +1,88 @@
+{
+  "query": {
+    "team_slug": "bloomsburg",
+    "team_name": "Bloomsburg",
+    "start_year": 2024,
+    "end_year": 2024
+  },
+  "wrestlers": [
+    {
+      "name": "Caden Dobbins",
+      "wrestler_id": "29676757132",
+      "weight_class": 165,
+      "photo_url": "https://lockhavenathletics.com/images/2024/9/26/Dobbins.jpg",
+      "direction": "transfer_out",
+      "first_query_year": 2024,
+      "last_query_year": 2024,
+      "school_path": [
+        "Bloomsburg",
+        "Lock Haven"
+      ],
+      "seasons": [
+        {
+          "year": 2024,
+          "wrestler_id": "24778477132",
+          "team": "Bloomsburg",
+          "team_slug": "bloomsburg",
+          "team_abbr": "BLOO",
+          "is_query_team": true,
+          "dpg": 0.14,
+          "matches": 37,
+          "rank": 68,
+          "record": "19-12"
+        },
+        {
+          "year": 2025,
+          "wrestler_id": "29676757132",
+          "team": "Lock Haven",
+          "team_slug": "lock_haven",
+          "team_abbr": "LH",
+          "is_query_team": false,
+          "dpg": -0.43,
+          "matches": 35,
+          "rank": 76,
+          "record": "16-16"
+        }
+      ]
+    },
+    {
+      "name": "Michael Duggan",
+      "wrestler_id": "29673151132",
+      "weight_class": 165,
+      "photo_url": "https://godiplomats.com/images/2024/9/24/Duggan__Michael.jpg",
+      "direction": "transfer_out",
+      "first_query_year": 2024,
+      "last_query_year": 2024,
+      "school_path": [
+        "Bloomsburg",
+        "Franklin & Marshall"
+      ],
+      "seasons": [
+        {
+          "year": 2024,
+          "wrestler_id": "24582589132",
+          "team": "Bloomsburg",
+          "team_slug": "bloomsburg",
+          "team_abbr": "BLOO",
+          "is_query_team": true,
+          "dpg": -4.43,
+          "matches": 5,
+          "rank": 207,
+          "record": "0-4"
+        },
+        {
+          "year": 2025,
+          "wrestler_id": "29673151132",
+          "team": "Franklin & Marshall",
+          "team_slug": "franklin__marshall",
+          "team_abbr": "F&M",
+          "is_query_team": false,
+          "dpg": -4.97,
+          "matches": 2,
+          "rank": 270,
+          "record": "0-2"
+        }
+      ]
+    }
+  ]
+}

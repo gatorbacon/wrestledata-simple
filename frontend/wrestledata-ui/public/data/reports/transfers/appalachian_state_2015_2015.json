@@ -1,0 +1,73 @@
+{
+  "query": {
+    "team_slug": "appalachian_state",
+    "team_name": "Appalachian State",
+    "start_year": 2015,
+    "end_year": 2015
+  },
+  "wrestlers": [
+    {
+      "name": "Mike Longo",
+      "wrestler_id": "11411931009",
+      "weight_class": 141,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fsoonersports.com%2Fimages%2F2017%2F9%2F14%2FJKIDTMZPAVJLUWG.20170914174556.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2015,
+      "last_query_year": 2016,
+      "school_path": [
+        "Appalachian State",
+        "Oklahoma"
+      ],
+      "seasons": [
+        {
+          "year": 2015,
+          "wrestler_id": "359010",
+          "team": "Appalachian State",
+          "team_slug": "appalachian_state",
+          "team_abbr": "APP",
+          "is_query_team": true,
+          "dpg": 0.51,
+          "matches": 40,
+          "rank": 29,
+          "record": "20-16"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "277479011",
+          "team": "Appalachian State",
+          "team_slug": "appalachian_state",
+          "team_abbr": "APP",
+          "is_query_team": true,
+          "dpg": 1.24,
+          "matches": 34,
+          "rank": 22,
+          "record": "21-14"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "829787076",
+          "team": "Oklahoma",
+          "team_slug": "oklahoma",
+          "team_abbr": "OU",
+          "is_query_team": false,
+          "dpg": 1.56,
+          "matches": 26,
+          "rank": 20,
+          "record": "17-9"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11411931009",
+          "team": "Oklahoma",
+          "team_slug": "oklahoma",
+          "team_abbr": "OU",
+          "is_query_team": false,
+          "dpg": 0.36,
+          "matches": 38,
+          "rank": 42,
+          "record": "17-20"
+        }
+      ]
+    }
+  ]
+}

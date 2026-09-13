@@ -1,0 +1,136 @@
+{
+  "query": {
+    "team_slug": "california_baptist",
+    "team_name": "California Baptist",
+    "start_year": 2022,
+    "end_year": 2022
+  },
+  "wrestlers": [
+    {
+      "name": "Zander Silva",
+      "wrestler_id": "16696647132",
+      "weight_class": 149,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fcalbaptist.sidearmsports.com%2Fimages%2F2021%2F10%2F14%2FZander_Silva.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2019,
+      "last_query_year": 2022,
+      "school_path": [
+        "Cal Poly",
+        "California Baptist"
+      ],
+      "seasons": [
+        {
+          "year": 2018,
+          "wrestler_id": "11486117009",
+          "team": "Cal Poly",
+          "team_slug": "cal_poly",
+          "team_abbr": "POLY",
+          "is_query_team": false,
+          "dpg": -2.57,
+          "matches": 6,
+          "rank": 153,
+          "record": "2-4"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4626301132",
+          "team": "California Baptist",
+          "team_slug": "california_baptist",
+          "team_abbr": "CBU",
+          "is_query_team": true,
+          "dpg": 0.87,
+          "matches": 16,
+          "rank": 47,
+          "record": "15-3"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16696647132",
+          "team": "California Baptist",
+          "team_slug": "california_baptist",
+          "team_abbr": "CBU",
+          "is_query_team": true,
+          "dpg": 0.06,
+          "matches": 3,
+          "rank": 68,
+          "record": "2-1"
+        }
+      ]
+    },
+    {
+      "name": "Elijah Griffin",
+      "wrestler_id": "34936032132",
+      "weight_class": 141,
+      "photo_url": "https://gobroncs.com/images/2025/9/29/092625_Wrestling_106_Pv8AJ.JPG",
+      "direction": "transfer_out",
+      "first_query_year": 2022,
+      "last_query_year": 2025,
+      "school_path": [
+        "California Baptist",
+        "Rider"
+      ],
+      "seasons": [
+        {
+          "year": 2022,
+          "wrestler_id": "16696706132",
+          "team": "California Baptist",
+          "team_slug": "california_baptist",
+          "team_abbr": "CBU",
+          "is_query_team": true,
+          "dpg": -6.46,
+          "matches": 1,
+          "rank": 125,
+          "record": "0-1"
+        },
+        {
+          "year": 2023,
+          "wrestler_id": "20133674132",
+          "team": "California Baptist",
+          "team_slug": "california_baptist",
+          "team_abbr": "CBU",
+          "is_query_team": true,
+          "dpg": 0.34,
+          "matches": 11,
+          "rank": 65,
+          "record": "6-5"
+        },
+        {
+          "year": 2024,
+          "wrestler_id": "24592243132",
+          "team": "California Baptist",
+          "team_slug": "california_baptist",
+          "team_abbr": "CBU",
+          "is_query_team": true,
+          "dpg": 1.32,
+          "matches": 34,
+          "rank": 25,
+          "record": "20-13"
+        },
+        {
+          "year": 2025,
+          "wrestler_id": "29684503132",
+          "team": "California Baptist",
+          "team_slug": "california_baptist",
+          "team_abbr": "CBU",
+          "is_query_team": true,
+          "dpg": 1.08,
+          "matches": 15,
+          "rank": 47,
+          "record": "10-7"
+        },
+        {
+          "year": 2026,
+          "wrestler_id": "34936032132",
+          "team": "Rider",
+          "team_slug": "rider",
+          "team_abbr": "RID",
+          "is_query_team": false,
+          "dpg": 2.58,
+          "matches": 40,
+          "rank": 9,
+          "record": "29-9"
+        }
+      ]
+    }
+  ]
+}

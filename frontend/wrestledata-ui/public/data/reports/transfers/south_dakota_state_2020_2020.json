@@ -1,0 +1,148 @@
+{
+  "query": {
+    "team_slug": "south_dakota_state",
+    "team_name": "South Dakota State",
+    "start_year": 2020,
+    "end_year": 2020
+  },
+  "wrestlers": [
+    {
+      "name": "Laken Cook",
+      "wrestler_id": "10493291132",
+      "weight_class": 157,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fsdstate.sidearmsports.com%2Fimages%2F2019%2F9%2F25%2FCOOKlaken2020.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2019,
+      "last_query_year": 2020,
+      "school_path": [
+        "Appalachian State",
+        "South Dakota State"
+      ],
+      "seasons": [
+        {
+          "year": 2017,
+          "wrestler_id": "840298107",
+          "team": "Appalachian State",
+          "team_slug": "appalachian_state",
+          "team_abbr": "APP",
+          "is_query_team": false,
+          "dpg": 0.62,
+          "matches": 22,
+          "rank": 57,
+          "record": "13-6"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4926972132",
+          "team": "South Dakota State",
+          "team_slug": "south_dakota_state",
+          "team_abbr": "SDSU",
+          "is_query_team": true,
+          "dpg": -1.87,
+          "matches": 8,
+          "rank": 76,
+          "record": "3-5"
+        },
+        {
+          "year": 2020,
+          "wrestler_id": "10493291132",
+          "team": "South Dakota State",
+          "team_slug": "south_dakota_state",
+          "team_abbr": "SDSU",
+          "is_query_team": true,
+          "dpg": -5.46,
+          "matches": 2,
+          "rank": 81,
+          "record": "0-2"
+        }
+      ]
+    },
+    {
+      "name": "Zach Price",
+      "wrestler_id": "24583253132",
+      "weight_class": 149,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgwu.sidearmsports.com%2Fimages%2F2023%2F10%2F11%2FPrice.JPG&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2019,
+      "last_query_year": 2022,
+      "school_path": [
+        "South Dakota State",
+        "Gardner-Webb"
+      ],
+      "seasons": [
+        {
+          "year": 2019,
+          "wrestler_id": "4926947132",
+          "team": "South Dakota State",
+          "team_slug": "south_dakota_state",
+          "team_abbr": "SDSU",
+          "is_query_team": true,
+          "dpg": -2.02,
+          "matches": 11,
+          "rank": 186,
+          "record": "5-8"
+        },
+        {
+          "year": 2020,
+          "wrestler_id": "10493289132",
+          "team": "South Dakota State",
+          "team_slug": "south_dakota_state",
+          "team_abbr": "SDSU",
+          "is_query_team": true,
+          "dpg": 0.4,
+          "matches": 33,
+          "rank": 70,
+          "record": "15-16"
+        },
+        {
+          "year": 2021,
+          "wrestler_id": "14875619132",
+          "team": "South Dakota State",
+          "team_slug": "south_dakota_state",
+          "team_abbr": "SDSU",
+          "is_query_team": true,
+          "dpg": 1.33,
+          "matches": 23,
+          "rank": 14,
+          "record": "17-6"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16700170132",
+          "team": "South Dakota State",
+          "team_slug": "south_dakota_state",
+          "team_abbr": "SDSU",
+          "is_query_team": true,
+          "dpg": 0.22,
+          "matches": 18,
+          "rank": 37,
+          "record": "11-7"
+        },
+        {
+          "year": 2023,
+          "wrestler_id": "20123803132",
+          "team": "Gardner-Webb",
+          "team_slug": "gardnerwebb",
+          "team_abbr": "GW",
+          "is_query_team": false,
+          "dpg": 1.04,
+          "matches": 29,
+          "rank": 27,
+          "record": "20-8"
+        },
+        {
+          "year": 2024,
+          "wrestler_id": "24583253132",
+          "team": "Gardner-Webb",
+          "team_slug": "gardnerwebb",
+          "team_abbr": "GW",
+          "is_query_team": false,
+          "dpg": 1.08,
+          "matches": 42,
+          "rank": 39,
+          "record": "28-13"
+        }
+      ]
+    }
+  ]
+}

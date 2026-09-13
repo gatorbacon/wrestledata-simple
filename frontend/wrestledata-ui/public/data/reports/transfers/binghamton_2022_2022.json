@@ -1,0 +1,136 @@
+{
+  "query": {
+    "team_slug": "binghamton",
+    "team_name": "Binghamton",
+    "start_year": 2022,
+    "end_year": 2022
+  },
+  "wrestlers": [
+    {
+      "name": "Christian Gannone",
+      "wrestler_id": "20135642132",
+      "weight_class": 141,
+      "photo_url": "https://bubearcats.com/images/2022/9/23/Gannone_Web_Head.png",
+      "direction": "transfer_in",
+      "first_query_year": 2022,
+      "last_query_year": 2023,
+      "school_path": [
+        "Bloomsburg",
+        "Binghamton"
+      ],
+      "seasons": [
+        {
+          "year": 2020,
+          "wrestler_id": "10502011132",
+          "team": "Bloomsburg",
+          "team_slug": "bloomsburg",
+          "team_abbr": "BLOO",
+          "is_query_team": false,
+          "dpg": -1.31,
+          "matches": 24,
+          "rank": 142,
+          "record": "10-14"
+        },
+        {
+          "year": 2021,
+          "wrestler_id": "14867310132",
+          "team": "Bloomsburg",
+          "team_slug": "bloomsburg",
+          "team_abbr": "BLOO",
+          "is_query_team": false,
+          "dpg": -3.97,
+          "matches": 7,
+          "rank": 227,
+          "record": "1-6"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16702321132",
+          "team": "Binghamton",
+          "team_slug": "binghamton",
+          "team_abbr": "BING",
+          "is_query_team": true,
+          "dpg": -1.83,
+          "matches": 15,
+          "rank": 243,
+          "record": "5-6"
+        },
+        {
+          "year": 2023,
+          "wrestler_id": "20135642132",
+          "team": "Binghamton",
+          "team_slug": "binghamton",
+          "team_abbr": "BING",
+          "is_query_team": true,
+          "dpg": -1.74,
+          "matches": 19,
+          "rank": 264,
+          "record": "5-13"
+        }
+      ]
+    },
+    {
+      "name": "Nick Lombard",
+      "wrestler_id": "16702307132",
+      "weight_class": 149,
+      "photo_url": "https://bubearcats.com/images/2021/10/19/Lombard_Web_Head.jpg",
+      "direction": "transfer_in",
+      "first_query_year": 2022,
+      "last_query_year": 2022,
+      "school_path": [
+        "Michigan",
+        "Binghamton"
+      ],
+      "seasons": [
+        {
+          "year": 2018,
+          "wrestler_id": "11488292009",
+          "team": "Michigan",
+          "team_slug": "michigan",
+          "team_abbr": "MICH",
+          "is_query_team": false,
+          "dpg": -1.57,
+          "matches": 21,
+          "rank": 126,
+          "record": "7-10"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4714408132",
+          "team": "Michigan",
+          "team_slug": "michigan",
+          "team_abbr": "MICH",
+          "is_query_team": false,
+          "dpg": -0.75,
+          "matches": 7,
+          "rank": 130,
+          "record": "3-4"
+        },
+        {
+          "year": 2020,
+          "wrestler_id": "10493709132",
+          "team": "Michigan",
+          "team_slug": "michigan",
+          "team_abbr": "MICH",
+          "is_query_team": false,
+          "dpg": -2.59,
+          "matches": 6,
+          "rank": 172,
+          "record": "1-4"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16702307132",
+          "team": "Binghamton",
+          "team_slug": "binghamton",
+          "team_abbr": "BING",
+          "is_query_team": true,
+          "dpg": 0.23,
+          "matches": 32,
+          "rank": 57,
+          "record": "16-15"
+        }
+      ]
+    }
+  ]
+}

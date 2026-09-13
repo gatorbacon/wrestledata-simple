@@ -1,0 +1,124 @@
+{
+  "query": {
+    "team_slug": "hofstra",
+    "team_name": "Hofstra",
+    "start_year": 2018,
+    "end_year": 2018
+  },
+  "wrestlers": [
+    {
+      "name": "Nezar Haddad",
+      "wrestler_id": "4628361132",
+      "weight_class": 197,
+      "photo_url": "https://gohofstra.com/images/2018/11/5/Nezar_Haddad_18HEAD_092818_110.jpg",
+      "direction": "transfer_in",
+      "first_query_year": 2017,
+      "last_query_year": 2019,
+      "school_path": [
+        "Drexel",
+        "Hofstra"
+      ],
+      "seasons": [
+        {
+          "year": 2016,
+          "wrestler_id": "7930498009",
+          "team": "Drexel",
+          "team_slug": "drexel",
+          "team_abbr": "DREX",
+          "is_query_team": false,
+          "dpg": -1.03,
+          "matches": 25,
+          "rank": 119,
+          "record": "10-14"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "800572071",
+          "team": "Hofstra",
+          "team_slug": "hofstra",
+          "team_abbr": "HOF",
+          "is_query_team": true,
+          "dpg": -1.33,
+          "matches": 24,
+          "rank": 146,
+          "record": "11-13"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11412510009",
+          "team": "Hofstra",
+          "team_slug": "hofstra",
+          "team_abbr": "HOF",
+          "is_query_team": true,
+          "dpg": -0.46,
+          "matches": 32,
+          "rank": 82,
+          "record": "16-15"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4628361132",
+          "team": "Hofstra",
+          "team_slug": "hofstra",
+          "team_abbr": "HOF",
+          "is_query_team": true,
+          "dpg": -0.76,
+          "matches": 30,
+          "rank": 66,
+          "record": "15-15"
+        }
+      ]
+    },
+    {
+      "name": "Chris Mauriello",
+      "wrestler_id": "4628358132",
+      "weight_class": 157,
+      "photo_url": "https://gohofstra.com/images/2018/11/5/Chris_Mauriello_18HEAD_092818_112.jpg",
+      "direction": "transfer_in",
+      "first_query_year": 2018,
+      "last_query_year": 2019,
+      "school_path": [
+        "Old Dominion",
+        "Hofstra"
+      ],
+      "seasons": [
+        {
+          "year": 2017,
+          "wrestler_id": "522163013",
+          "team": "Old Dominion",
+          "team_slug": "old_dominion",
+          "team_abbr": "OLD ",
+          "is_query_team": false,
+          "dpg": -2.4,
+          "matches": 27,
+          "rank": 131,
+          "record": "8-13"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "1365565132",
+          "team": "Hofstra",
+          "team_slug": "hofstra",
+          "team_abbr": "HOF",
+          "is_query_team": true,
+          "dpg": -2.11,
+          "matches": 11,
+          "rank": 167,
+          "record": "2-8"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4628358132",
+          "team": "Hofstra",
+          "team_slug": "hofstra",
+          "team_abbr": "HOF",
+          "is_query_team": true,
+          "dpg": -2.47,
+          "matches": 22,
+          "rank": 218,
+          "record": "5-14"
+        }
+      ]
+    }
+  ]
+}

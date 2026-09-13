@@ -326,17 +326,37 @@ def scrape_weight_class(
 # Main
 # ---------------------------------------------------------------------------
 
-def scrape_year(year: int, weights: list[int], delay: float, debug: bool = False) -> bool:
-    if year not in TOURNAMENT_IDS:
-        print(f"[ERROR] No tournament ID known for {year}.")
-        return False
-    tournament_id = TOURNAMENT_IDS[year]
+def scrape_tournament(
+    tournament_id: int,
+    out_dir: Path,
+    weights: list[int],
+    delay: float,
+    label: str = "",
+    reconcile_fn=None,
+    debug: bool = False,
+) -> bool:
+    """
+    Generic bout-detail scrape for any TrackWrestling Classic tournament --
+    NCAA D1 Championships (see scrape_year below) is just one caller. Any
+    other predefined-tournament event (conference championships, etc.) works
+    identically as long as you have its numeric tournamentId (find it via
+    the Events Classic search: Login.jsp?tName=...&sDate=...&eDate=..., then
+    read the eventSelected(ID, ...) href off the matching result -- see
+    docs/matsavant.md's "NCAA Bout-Level Play-by-Play" section).
 
+    reconcile_fn, if given, is called as reconcile_fn(weight) after each
+    weight class is saved -- this is how round/bracket tagging gets attached
+    (see reconcile_bout_detail.reconcile_weight for the NCAA version, which
+    requires a matches.json for that tournament to already exist). Pass None
+    to skip round/bracket tagging entirely (bouts are still saved, just
+    without a `round`/`bracket` field) -- appropriate for any tournament
+    that doesn't have an equivalent parsed-results source to join against
+    yet.
+    """
     print(f"\n{'='*60}")
-    print(f"Scraping {year} NCAA D1 Championships bout detail (ID: {tournament_id})")
+    print(f"Scraping {label or tournament_id} bout detail (ID: {tournament_id})")
     print(f"{'='*60}")
 
-    out_dir = DATA_DIR / str(year) / "ncaa-tourney" / "bout_detail"
     out_dir.mkdir(parents=True, exist_ok=True)
 
     print("\n1. Establishing session...")
@@ -375,11 +395,14 @@ def scrape_year(year: int, weights: list[int], delay: float, debug: bool = False
         print(f"   [OK] {len(bouts)} bouts saved: {out_path}")
         total_bouts += len(bouts)
 
-        # Tag each bout with its round/bracket from the existing
-        # matches.json (see scripts/ncaa/reconcile_bout_detail.py). Runs
-        # automatically so a scrape always leaves round-tagged output —
-        # no separate manual step required.
-        reconcile_weight(year, weight)
+        # Tag each bout with its round/bracket, if a reconciler was given
+        # (see scripts/ncaa/reconcile_bout_detail.py for the NCAA one, which
+        # joins against an existing matches.json). Runs automatically so a
+        # scrape always leaves round-tagged output where that's available —
+        # no separate manual step required. Bouts are still fully usable
+        # without this (round/bracket fields just won't be present).
+        if reconcile_fn is not None:
+            reconcile_fn(weight)
 
         if blocked:
             print(f"\n[STOPPED] Rate-limited partway through weight {weight}. "
@@ -388,8 +411,23 @@ def scrape_year(year: int, weights: list[int], delay: float, debug: bool = False
                   f"remaining weight classes ({[w for w in weights if w > weight]}) were not attempted.")
             return False
 
-    print(f"\n[DONE] {total_bouts} total bouts scraped for {year}.")
+    print(f"\n[DONE] {total_bouts} total bouts scraped for {label or tournament_id}.")
     return True
+
+
+def scrape_year(year: int, weights: list[int], delay: float, debug: bool = False) -> bool:
+    """NCAA D1 Championships -- the original, specific caller of scrape_tournament()."""
+    if year not in TOURNAMENT_IDS:
+        print(f"[ERROR] No tournament ID known for {year}.")
+        return False
+    tournament_id = TOURNAMENT_IDS[year]
+    out_dir = DATA_DIR / str(year) / "ncaa-tourney" / "bout_detail"
+    return scrape_tournament(
+        tournament_id, out_dir, weights, delay,
+        label=f"{year} NCAA D1 Championships",
+        reconcile_fn=lambda weight: reconcile_weight(year, weight),
+        debug=debug,
+    )
 
 
 def main():

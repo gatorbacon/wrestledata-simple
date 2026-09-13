@@ -1,0 +1,85 @@
+{
+  "query": {
+    "team_slug": "michigan",
+    "team_name": "Michigan",
+    "start_year": 2017,
+    "end_year": 2017
+  },
+  "wrestlers": [
+    {
+      "name": "Stevan Micic",
+      "wrestler_id": "16701615132",
+      "weight_class": 141,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fmgoblue.com%2Fimages%2F2021%2F9%2F24%2F20210925_wrm_micic.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2017,
+      "last_query_year": 2022,
+      "school_path": [
+        "Northwestern",
+        "Michigan"
+      ],
+      "seasons": [
+        {
+          "year": 2015,
+          "wrestler_id": "894076",
+          "team": "Northwestern",
+          "team_slug": "northwestern",
+          "team_abbr": "NW",
+          "is_query_team": false,
+          "dpg": 2.42,
+          "matches": 15,
+          "rank": 44,
+          "record": "12-4"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "521927013",
+          "team": "Michigan",
+          "team_slug": "michigan",
+          "team_abbr": "MICH",
+          "is_query_team": true,
+          "dpg": 3.45,
+          "matches": 38,
+          "rank": 4,
+          "record": "29-7"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11488306009",
+          "team": "Michigan",
+          "team_slug": "michigan",
+          "team_abbr": "MICH",
+          "is_query_team": true,
+          "dpg": 4.23,
+          "matches": 30,
+          "rank": 2,
+          "record": "27-3"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4714418132",
+          "team": "Michigan",
+          "team_slug": "michigan",
+          "team_abbr": "MICH",
+          "is_query_team": true,
+          "dpg": 4.82,
+          "matches": 21,
+          "rank": 3,
+          "record": "19-4"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16701615132",
+          "team": "Michigan",
+          "team_slug": "michigan",
+          "team_abbr": "MICH",
+          "is_query_team": true,
+          "dpg": 1.82,
+          "matches": 22,
+          "rank": 24,
+          "record": "13-8"
+        }
+      ]
+    }
+  ]
+}

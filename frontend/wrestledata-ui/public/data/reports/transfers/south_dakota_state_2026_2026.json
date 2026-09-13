@@ -1,0 +1,61 @@
+{
+  "query": {
+    "team_slug": "south_dakota_state",
+    "team_name": "South Dakota State",
+    "start_year": 2026,
+    "end_year": 2026
+  },
+  "wrestlers": [
+    {
+      "name": "Drake Rhodes",
+      "wrestler_id": "29680927132",
+      "weight_class": 165,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fsdstate.sidearmsports.com%2Fimages%2F2024%2F9%2F27%2F20240828-0389.JPG&width=603&height=803&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2025,
+      "last_query_year": 2025,
+      "school_path": [
+        "Iowa",
+        "South Dakota State"
+      ],
+      "seasons": [
+        {
+          "year": 2023,
+          "wrestler_id": "20135782132",
+          "team": "Iowa",
+          "team_slug": "iowa",
+          "team_abbr": "IOWA",
+          "is_query_team": false,
+          "dpg": 0.04,
+          "matches": 19,
+          "rank": 131,
+          "record": "5-6"
+        },
+        {
+          "year": 2024,
+          "wrestler_id": "24580751132",
+          "team": "Iowa",
+          "team_slug": "iowa",
+          "team_abbr": "IOWA",
+          "is_query_team": false,
+          "dpg": 0.83,
+          "matches": 14,
+          "rank": 72,
+          "record": "8-5"
+        },
+        {
+          "year": 2025,
+          "wrestler_id": "29680927132",
+          "team": "South Dakota State",
+          "team_slug": "south_dakota_state",
+          "team_abbr": "SDSU",
+          "is_query_team": true,
+          "dpg": 1.99,
+          "matches": 28,
+          "rank": 17,
+          "record": "20-7"
+        }
+      ]
+    }
+  ]
+}

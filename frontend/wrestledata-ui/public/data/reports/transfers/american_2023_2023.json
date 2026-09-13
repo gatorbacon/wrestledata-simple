@@ -1,0 +1,61 @@
+{
+  "query": {
+    "team_slug": "american",
+    "team_name": "American",
+    "start_year": 2023,
+    "end_year": 2023
+  },
+  "wrestlers": [
+    {
+      "name": "Brad Kata",
+      "wrestler_id": "27128870132",
+      "weight_class": 184,
+      "photo_url": "https://aueagles.com/images/2024/1/2/Kata_Brad_DSC5839.jpg",
+      "direction": "transfer_in",
+      "first_query_year": 2023,
+      "last_query_year": 2024,
+      "school_path": [
+        "Oregon State",
+        "American"
+      ],
+      "seasons": [
+        {
+          "year": 2022,
+          "wrestler_id": "16708081132",
+          "team": "Oregon State",
+          "team_slug": "oregon_state",
+          "team_abbr": "ORST",
+          "is_query_team": false,
+          "dpg": -0.95,
+          "matches": 4,
+          "rank": 181,
+          "record": "1-2"
+        },
+        {
+          "year": 2023,
+          "wrestler_id": "20127502132",
+          "team": "American",
+          "team_slug": "american",
+          "team_abbr": "AMER",
+          "is_query_team": true,
+          "dpg": -1.2,
+          "matches": 15,
+          "rank": 143,
+          "record": "5-5"
+        },
+        {
+          "year": 2024,
+          "wrestler_id": "27128870132",
+          "team": "American",
+          "team_slug": "american",
+          "team_abbr": "AMER",
+          "is_query_team": true,
+          "dpg": -5.21,
+          "matches": 8,
+          "rank": 174,
+          "record": "0-6"
+        }
+      ]
+    }
+  ]
+}

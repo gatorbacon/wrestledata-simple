@@ -1,0 +1,73 @@
+{
+  "query": {
+    "team_slug": "cornell",
+    "team_name": "Cornell",
+    "start_year": 2014,
+    "end_year": 2014
+  },
+  "wrestlers": [
+    {
+      "name": "Marshall Peppelman",
+      "wrestler_id": "4783081009",
+      "weight_class": 165,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Flehighsports.com%2Fimages%2F2014%2F9%2F22%2FMarshall_Peppelman.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2012,
+      "last_query_year": 2014,
+      "school_path": [
+        "Cornell",
+        "Lehigh"
+      ],
+      "seasons": [
+        {
+          "year": 2012,
+          "wrestler_id": "4450336009",
+          "team": "Cornell",
+          "team_slug": "cornell",
+          "team_abbr": "COR",
+          "is_query_team": true,
+          "dpg": 0.9,
+          "matches": 21,
+          "rank": 15,
+          "record": "9-9"
+        },
+        {
+          "year": 2013,
+          "wrestler_id": "4495463009",
+          "team": "Cornell",
+          "team_slug": "cornell",
+          "team_abbr": "COR",
+          "is_query_team": true,
+          "dpg": 1.08,
+          "matches": 31,
+          "rank": 37,
+          "record": "18-13"
+        },
+        {
+          "year": 2014,
+          "wrestler_id": "4630310009",
+          "team": "Cornell",
+          "team_slug": "cornell",
+          "team_abbr": "COR",
+          "is_query_team": true,
+          "dpg": 1.18,
+          "matches": 12,
+          "rank": 34,
+          "record": "9-3"
+        },
+        {
+          "year": 2015,
+          "wrestler_id": "4783081009",
+          "team": "Lehigh",
+          "team_slug": "lehigh",
+          "team_abbr": "LEH",
+          "is_query_team": false,
+          "dpg": 0.53,
+          "matches": 40,
+          "rank": 38,
+          "record": "16-16"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "query": {
+    "team_slug": "wisconsin",
+    "team_name": "Wisconsin",
+    "start_year": 2017,
+    "end_year": 2017
+  },
+  "wrestlers": [
+    {
+      "name": "Evan Wick",
+      "wrestler_id": "16709023132",
+      "weight_class": 165,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgopoly.com%2Fimages%2F2021%2F9%2F23%2FWick_Evan_Wrestling_1451.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2017,
+      "last_query_year": 2020,
+      "school_path": [
+        "Wisconsin",
+        "Cal Poly"
+      ],
+      "seasons": [
+        {
+          "year": 2017,
+          "wrestler_id": "522838013",
+          "team": "Wisconsin",
+          "team_slug": "wisconsin",
+          "team_abbr": "WIS",
+          "is_query_team": true,
+          "dpg": 2.49,
+          "matches": 19,
+          "rank": 51,
+          "record": "14-4"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11481887009",
+          "team": "Wisconsin",
+          "team_slug": "wisconsin",
+          "team_abbr": "WIS",
+          "is_query_team": true,
+          "dpg": 3.15,
+          "matches": 35,
+          "rank": 3,
+          "record": "27-8"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4626780132",
+          "team": "Wisconsin",
+          "team_slug": "wisconsin",
+          "team_abbr": "WIS",
+          "is_query_team": true,
+          "dpg": 3.64,
+          "matches": 40,
+          "rank": 4,
+          "record": "30-6"
+        },
+        {
+          "year": 2020,
+          "wrestler_id": "10492026132",
+          "team": "Wisconsin",
+          "team_slug": "wisconsin",
+          "team_abbr": "WIS",
+          "is_query_team": true,
+          "dpg": 3.7,
+          "matches": 27,
+          "rank": 8,
+          "record": "23-6"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16709023132",
+          "team": "Cal Poly",
+          "team_slug": "cal_poly",
+          "team_abbr": "POLY",
+          "is_query_team": false,
+          "dpg": 4.2,
+          "matches": 21,
+          "rank": 3,
+          "record": "20-1"
+        }
+      ]
+    },
+    {
+      "name": "Jacob Covaciu",
+      "wrestler_id": "10497732132",
+      "weight_class": 174,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fiuhoosiers.com%2Fimages%2F2019%2F9%2F8%2FCovaciu_Jacob_062.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2017,
+      "last_query_year": 2018,
+      "school_path": [
+        "Wisconsin",
+        "Indiana"
+      ],
+      "seasons": [
+        {
+          "year": 2017,
+          "wrestler_id": "522813013",
+          "team": "Wisconsin",
+          "team_slug": "wisconsin",
+          "team_abbr": "WIS",
+          "is_query_team": true,
+          "dpg": 2.12,
+          "matches": 10,
+          "rank": 124,
+          "record": "4-2"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11481830009",
+          "team": "Wisconsin",
+          "team_slug": "wisconsin",
+          "team_abbr": "WIS",
+          "is_query_team": true,
+          "dpg": -0.36,
+          "matches": 15,
+          "rank": 69,
+          "record": "9-7"
+        },
+        {
+          "year": 2020,
+          "wrestler_id": "10497732132",
+          "team": "Indiana",
+          "team_slug": "indiana",
+          "team_abbr": "IND",
+          "is_query_team": false,
+          "dpg": 0.91,
+          "matches": 20,
+          "rank": 45,
+          "record": "13-9"
+        }
+      ]
+    }
+  ]
+}

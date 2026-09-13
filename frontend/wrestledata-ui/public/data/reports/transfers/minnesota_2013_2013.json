@@ -1,0 +1,49 @@
+{
+  "query": {
+    "team_slug": "minnesota",
+    "team_name": "Minnesota",
+    "start_year": 2013,
+    "end_year": 2013
+  },
+  "wrestlers": [
+    {
+      "name": "Steven Keogh",
+      "wrestler_id": "4784215009",
+      "weight_class": 165,
+      "photo_url": null,
+      "direction": "transfer_out",
+      "first_query_year": 2013,
+      "last_query_year": 2013,
+      "school_path": [
+        "Minnesota",
+        "North Dakota State University"
+      ],
+      "seasons": [
+        {
+          "year": 2013,
+          "wrestler_id": "4497505009",
+          "team": "Minnesota",
+          "team_slug": "minnesota",
+          "team_abbr": "MINN",
+          "is_query_team": true,
+          "dpg": 0.19,
+          "matches": 11,
+          "rank": 94,
+          "record": "5-5"
+        },
+        {
+          "year": 2015,
+          "wrestler_id": "4784215009",
+          "team": "North Dakota State University",
+          "team_slug": "north_dakota_state_university",
+          "team_abbr": "NORT",
+          "is_query_team": false,
+          "dpg": -2.21,
+          "matches": 31,
+          "rank": 149,
+          "record": "3-15"
+        }
+      ]
+    }
+  ]
+}

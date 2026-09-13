@@ -7,57 +7,257 @@
   <link rel="stylesheet" href="/styles.css?v=20260921" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   <script src="/search_index.js"></script>
+  <style>
+    /* ============================================================
+       Hodge Trophy Watch -- scoped styles, prefixed hg- throughout,
+       matching the Team Race / Rankings visual language.
+       ============================================================ */
+
+    #hodge-section {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--r-md);
+      padding: 0;
+    }
+    #hodge-section .table-wrapper {
+      border: none;
+      background: transparent;
+    }
+    #hodge-section .table-wrapper table {
+      background: transparent;
+    }
+    #hodge-table th, #hodge-table-ineligible th { text-align: left; }
+
+    .hg-section-label {
+      margin: 0;
+      padding: 18px 16px 8px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    .hg-row { cursor: pointer; }
+    .hg-chevron-cell { width: 28px; }
+    .hg-rank-cell { width: 56px; }
+
+    .hg-wrestler-cell {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .hg-team-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      flex: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+    }
+    .hg-team-mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 4px;
+    }
+    .hg-team-mark--abbr {
+      font-size: 0.62rem;
+      font-weight: 700;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+    .hg-wrestler-name {
+      font-weight: 700;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .hg-wrestler-name:hover { color: var(--accent); text-decoration: underline; }
+    .hg-wrestler-sub {
+      font-size: 0.76rem;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+    .hg-wrestler-sub a { color: var(--muted); text-decoration: none; }
+    .hg-wrestler-sub a:hover { color: var(--accent); text-decoration: underline; }
+
+    .hg-hero-cell { min-width: 240px; }
+    .hg-hero-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .hg-hero-value {
+      display: inline-block;
+      min-width: 3.2rem;
+      text-align: right;
+      font-size: 1.35rem;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+      flex: none;
+    }
+    .hg-bar-track {
+      width: 150px;
+      height: 16px;
+      border-radius: 4px;
+      background: var(--bar-neutral);
+      overflow: hidden;
+      flex: none;
+    }
+    .hg-bar-fill { height: 100%; border-radius: 4px; opacity: 0.8; }
+    .hg-hero-sub {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 4px;
+      font-size: 0.72rem;
+      color: var(--muted);
+    }
+    .hg-hero-chip strong {
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+    .hg-hero-chip.hg-ineligible-note {
+      color: var(--bad);
+      font-style: italic;
+    }
+
+    /* Expanded per-wrestler component breakdown */
+    .hg-expanded-td {
+      background: var(--panel-2);
+      padding: 14px 16px 18px 48px;
+      border-left: 2px solid var(--border);
+    }
+    .hg-component-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .hg-component-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--r-sm);
+      padding: 10px 12px;
+    }
+    .hg-component-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: var(--muted);
+    }
+    .hg-component-raw {
+      font-size: 0.85rem;
+      color: var(--text);
+      margin-top: 4px;
+    }
+    .hg-component-score-row {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      margin-top: 6px;
+    }
+    .hg-component-score {
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      font-size: 0.95rem;
+    }
+    .hg-component-weight {
+      font-size: 0.7rem;
+      color: var(--muted);
+    }
+    .hg-component-bar-track {
+      width: 100%;
+      height: 6px;
+      border-radius: 3px;
+      background: var(--bar-neutral);
+      overflow: hidden;
+      margin-top: 6px;
+    }
+    .hg-component-bar-fill { height: 100%; border-radius: 3px; }
+    .hg-component-contribution {
+      font-size: 0.7rem;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    @media (max-width: 700px) {
+      .hg-component-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    /* Below ~600px: collapse each row into a wrapping flex "card", same
+       pattern used on Team Race. */
+    @media (max-width: 600px) {
+      #hodge-table thead, #hodge-table-ineligible thead { display: none; }
+      #hodge-table, #hodge-table tbody,
+      #hodge-table-ineligible, #hodge-table-ineligible tbody { display: block; width: 100%; }
+      #hodge-table tr.hg-row, #hodge-table-ineligible tr.hg-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 6px 10px;
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--border);
+      }
+      #hodge-table tr.hg-row td, #hodge-table-ineligible tr.hg-row td {
+        display: block;
+        border: none;
+        padding: 0;
+      }
+      .hg-chevron-cell { order: 1; }
+      .hg-rank-cell { order: 2; }
+      .hg-wrestler-cell-td { order: 3; flex: 1 1 auto; min-width: 120px; }
+      .hg-hero-cell { order: 4; flex: 1 1 100%; min-width: 100%; }
+      .hg-bar-track { width: auto; flex: 1 1 auto; }
+
+      .weight-breakdown.expanded { display: block; width: 100%; }
+      .hg-expanded-td { display: block; padding: 14px 12px 18px; }
+      .hg-component-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+  </style>
 </head>
 <body>
   <script src="/analytics.js?v=20260911"></script>
   <script src="/header.js?v=20260908"></script>
   <div class="page-container">
     <header class="header">
-      <h1>Hodge Trophy Watch</h1>
-      <div class="header-subline" id="season-info">Season 2026</div>
-      <div class="header-explainer" id="description"></div>
+      <h1>
+        Hodge Trophy Watch
+        <span class="tooltip-icon" data-tooltip="hodge">→</span>
+      </h1>
+      <div class="header-subline" id="season-info"></div>
     </header>
 
-    <section class="section">
+    <section class="section" id="hodge-section">
       <div class="table-wrapper">
         <table id="hodge-table">
           <thead>
             <tr>
-              <th>Rank</th>
-              <th>Name</th>
-              <th>Wt</th>
-              <th>Record<br/>(W–L)</th>
-              <th>Record<br/>Score</th>
-              <th>Ranked<br/>Wins</th>
-              <th>Quality<br/>Score</th>
-              <th>Avg<br/>TP</th>
-              <th>Dominance<br/>Score</th>
-              <th>Pin<br/>%</th>
-              <th>Pin<br/>Score</th>
-              <th>Hodge<br/>Score</th>
+              <th style="width: 28px;"></th>
+              <th style="width: 56px;">Rank</th>
+              <th>Wrestler</th>
+              <th>Hodge Score</th>
             </tr>
           </thead>
           <tbody id="eligible-tbody"></tbody>
         </table>
       </div>
-      
-      <h2 style="margin-top: 2em; margin-bottom: 0.5em; font-size: 1rem; color: var(--muted);">Not Yet Eligible</h2>
+
+      <h2 class="hg-section-label">Not Yet Eligible</h2>
       <div class="table-wrapper">
         <table id="hodge-table-ineligible">
           <thead>
             <tr>
-              <th>Rank</th>
-              <th>Name</th>
-              <th>Wt</th>
-              <th>Record<br/>(W–L)</th>
-              <th>Record<br/>Score</th>
-              <th>Ranked<br/>Wins</th>
-              <th>Quality<br/>Score</th>
-              <th>Avg<br/>TP</th>
-              <th>Dominance<br/>Score</th>
-              <th>Pin<br/>%</th>
-              <th>Pin<br/>Score</th>
-              <th>Hodge<br/>Score</th>
+              <th style="width: 28px;"></th>
+              <th style="width: 56px;">Rank</th>
+              <th>Wrestler</th>
+              <th>Hodge Score</th>
             </tr>
           </thead>
           <tbody id="ineligible-tbody"></tbody>
@@ -66,7 +266,7 @@
     </section>
   </div>
 
-  <script src="/hodge.js"></script>
+  <script src="/tooltips.js"></script>
+  <script src="/hodge.js?v=20260911"></script>
 </body>
 </html>
-

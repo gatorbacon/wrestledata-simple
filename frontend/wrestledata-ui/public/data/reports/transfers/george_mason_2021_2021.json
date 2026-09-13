@@ -1,0 +1,136 @@
+{
+  "query": {
+    "team_slug": "george_mason",
+    "team_name": "George Mason",
+    "start_year": 2021,
+    "end_year": 2021
+  },
+  "wrestlers": [
+    {
+      "name": "Alex Madrigal",
+      "wrestler_id": "16704167132",
+      "weight_class": 149,
+      "photo_url": null,
+      "direction": "transfer_in",
+      "first_query_year": 2020,
+      "last_query_year": 2022,
+      "school_path": [
+        "Old Dominion",
+        "George Mason"
+      ],
+      "seasons": [
+        {
+          "year": 2016,
+          "wrestler_id": "295119107",
+          "team": "Old Dominion",
+          "team_slug": "old_dominion",
+          "team_abbr": "OLD ",
+          "is_query_team": false,
+          "dpg": 0.82,
+          "matches": 32,
+          "rank": 67,
+          "record": "15-7"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "522149013",
+          "team": "Old Dominion",
+          "team_slug": "old_dominion",
+          "team_abbr": "OLD ",
+          "is_query_team": false,
+          "dpg": -0.4,
+          "matches": 20,
+          "rank": 32,
+          "record": "7-12"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11482633009",
+          "team": "Old Dominion",
+          "team_slug": "old_dominion",
+          "team_abbr": "OLD ",
+          "is_query_team": false,
+          "dpg": 1.38,
+          "matches": 32,
+          "rank": 25,
+          "record": "19-10"
+        },
+        {
+          "year": 2020,
+          "wrestler_id": "10494343132",
+          "team": "George Mason",
+          "team_slug": "george_mason",
+          "team_abbr": "GMU",
+          "is_query_team": true,
+          "dpg": 1.72,
+          "matches": 45,
+          "rank": 39,
+          "record": "28-15"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16704167132",
+          "team": "George Mason",
+          "team_slug": "george_mason",
+          "team_abbr": "GMU",
+          "is_query_team": true,
+          "dpg": 2.38,
+          "matches": 26,
+          "rank": 40,
+          "record": "19-8"
+        }
+      ]
+    },
+    {
+      "name": "Austin Stith",
+      "wrestler_id": "16704179132",
+      "weight_class": 285,
+      "photo_url": null,
+      "direction": "transfer_in",
+      "first_query_year": 2021,
+      "last_query_year": 2022,
+      "school_path": [
+        "Presbyterian College",
+        "George Mason"
+      ],
+      "seasons": [
+        {
+          "year": 2020,
+          "wrestler_id": "10540690132",
+          "team": "Presbyterian College",
+          "team_slug": "presbyterian_college",
+          "team_abbr": "PRES",
+          "is_query_team": false,
+          "dpg": -1.54,
+          "matches": 32,
+          "rank": 122,
+          "record": "12-12"
+        },
+        {
+          "year": 2021,
+          "wrestler_id": "14863762132",
+          "team": "George Mason",
+          "team_slug": "george_mason",
+          "team_abbr": "GMU",
+          "is_query_team": true,
+          "dpg": -1.25,
+          "matches": 10,
+          "rank": 75,
+          "record": "5-5"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16704179132",
+          "team": "George Mason",
+          "team_slug": "george_mason",
+          "team_abbr": "GMU",
+          "is_query_team": true,
+          "dpg": -1.44,
+          "matches": 25,
+          "rank": 160,
+          "record": "7-12"
+        }
+      ]
+    }
+  ]
+}

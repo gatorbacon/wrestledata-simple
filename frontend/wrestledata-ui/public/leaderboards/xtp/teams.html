@@ -2,134 +2,245 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>xTP Team Projections</title>
+  <title>Team Race | MatSavant</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/styles.css?v=20260921" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   <script src="/search_index.js"></script>
   <style>
-    .expandable-row {
-      cursor: pointer;
+    /* ============================================================
+       Team Race (xTP) page -- scoped styles, prefixed tr- throughout
+       so nothing here leaks into or overrides any other page.
+       ============================================================ */
+
+    #team-race-section {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--r-md);
+      padding: 0;
     }
+    #team-race-section .table-wrapper {
+      border: none;
+      background: transparent;
+    }
+    #team-race-section .table-wrapper table {
+      background: transparent;
+    }
+
+    /* Every header on this table is left-aligned, including the numeric
+       "Projected Team Points" column -- overrides the sitewide th:has()
+       right-align rule for xtp/mv tooltip columns, since here the bar+gap
+       content itself starts flush left within a wide merged cell. */
+    #team-race-table th { text-align: left; }
+
+    .tr-row { cursor: pointer; }
+    .tr-chevron-cell { width: 28px; }
     .expand-icon {
       display: inline-block;
       width: 12px;
       text-align: center;
-      margin-right: 8px;
+      color: var(--muted);
+      cursor: pointer;
+    }
+    .expandable-row.expanded .expand-icon::before { content: "▼"; }
+    .expandable-row.collapsed .expand-icon::before { content: "▶"; }
+
+    .tr-rank-cell { width: 56px; }
+
+    .tr-team-cell {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .tr-team-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      flex: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+    }
+    .tr-team-mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 4px;
+    }
+    .tr-team-mark--abbr {
+      font-size: 0.62rem;
+      font-weight: 700;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+    .tr-team-name {
+      font-weight: 700;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .tr-team-name:hover { color: var(--accent); text-decoration: underline; }
+
+    .tr-xtp-cell { min-width: 260px; }
+    .tr-hero-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .tr-xtp-value {
+      display: inline-block;
+      min-width: 4.4rem;
+      text-align: right;
+      font-size: 1.45rem;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+      flex: none;
+    }
+    .tr-bar-track {
+      width: 180px;
+      height: 16px;
+      border-radius: 4px;
+      background: var(--bar-neutral);
+      overflow: hidden;
+      flex: none;
+    }
+    .tr-bar-fill { height: 100%; border-radius: 4px; opacity: 0.8; }
+    .tr-gap {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+      min-width: 44px;
+    }
+    .tr-hero-sub {
+      display: flex;
+      gap: 10px;
+      margin-top: 4px;
+      font-size: 0.72rem;
       color: var(--muted);
     }
-    .expanded .expand-icon::before {
-      content: "▼";
+    .tr-hero-chip strong {
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
     }
-    .collapsed .expand-icon::before {
-      content: "▶";
+
+    /* Expanded per-team block */
+    .weight-breakdown { display: none; }
+    .weight-breakdown.expanded { display: table-row; }
+    .tr-expanded-td {
+      background: var(--panel-2);
+      padding: 14px 16px 18px 48px;
+      border-left: 2px solid var(--border);
     }
-    .weight-breakdown {
-      display: none;
+
+    .tr-range {
+      position: relative;
+      width: 100%;
+      max-width: 420px;
+      height: 10px;
+      border-radius: 4px;
+      background: var(--bar-neutral);
     }
-    .weight-breakdown.expanded {
-      display: table-row;
+    .tr-range-band {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      border-radius: 4px;
+      background: var(--accent);
+      opacity: 0.32;
     }
-    .weight-breakdown td {
-      padding: 12px;
-      background-color: var(--panel);
+    .tr-range-tick {
+      position: absolute;
+      top: -3px;
+      bottom: -3px;
+      width: 2px;
+      background: var(--accent);
     }
-    .weight-breakdown table {
+    .tr-range-label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin: 6px 0 14px;
+    }
+
+    .tr-lineup-table {
       width: 100%;
       border-collapse: collapse;
       margin: 0;
     }
-    .weight-breakdown th,
-    .weight-breakdown td {
-      padding: 8px 12px;
-      text-align: left;
-      border-bottom: 1px solid var(--border);
-    }
-    .weight-breakdown th {
-      font-weight: 600;
+    .tr-lineup-table th {
+      font-size: 0.7rem;
       color: var(--muted);
-      font-size: 0.9em;
-      background-color: var(--panel-2);
+      text-align: left;
+      padding: 6px 10px;
+      border-bottom: 1px solid var(--border);
+      position: static;
+      background: transparent;
+      text-transform: none;
+      letter-spacing: normal;
     }
-    .weight-breakdown tbody tr:last-child td {
-      border-bottom: none;
+    .tr-lineup-table td {
+      padding: 6px 10px;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.9rem;
     }
-    .no-qualifier {
+    .tr-lineup-row:last-child td { border-bottom: none; }
+    .tr-lineup-row:hover { background: var(--panel); }
+
+    .tr-wrestler-cell { display: flex; align-items: center; gap: 8px; font-weight: 600; }
+    .tr-wrestler-unranked {
       color: var(--muted);
       font-style: italic;
+      font-weight: 400;
     }
-    
-    /* Expanded row visual hierarchy - nested appearance */
-    .weight-breakdown.expanded td {
-      padding-left: 24px; /* Left indentation for nesting */
-      background-color: var(--panel);
-      border-left: 2px solid var(--border);
+
+    .tr-lineup-xtp-cell { min-width: 130px; }
+    .tr-lineup-xtp-value {
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      font-size: 0.95rem;
     }
-    
-    /* Expanded row hover - subtle, lower contrast than team rows */
-    .weight-breakdown.expanded tbody tr:hover {
-      background-color: var(--panel-2);
-      transition: background-color 0.15s ease;
+    .tr-lineup-bar-track {
+      width: 110px;
+      height: 11px;
+      border-radius: 3px;
+      background: var(--bar-neutral);
+      overflow: hidden;
+      margin-top: 3px;
     }
-    
-    /* Shrink component columns in expanded rows */
-    .weight-breakdown .expanded-component-col {
-      width: 60px; /* ~35% reduction from 96px */
-      font-size: 0.8125rem;
-      color: var(--muted);
-    }
-    
-    /* Widen xTP column in expanded rows for proper bar space */
-    .weight-breakdown .expanded-xtp-cell {
-      min-width: 180px;
-      width: 180px;
-    }
-    
-    /* Expanded xTP bars use same metric-bar system as collapsed rows */
-    .weight-breakdown .expanded-xtp-cell .metric-bar {
-      /* Bars are left-aligned, number right-aligned (same as collapsed) */
-      /* No special styling needed - uses existing metric-bar styles */
-    }
-    
-    /* Make expanded rows subordinate to main team rows */
-    .xtp-expanded-row {
-      font-size: 0.88em;   /* ~12.5–13px if base is 14–15px */
-      line-height: 1.15;
-    }
-    
-    /* Tighten vertical density for expanded rows */
-    .xtp-expanded-row td {
-      padding-top: 6px;
-      padding-bottom: 6px;
-      color: var(--muted);  /* Slightly reduce contrast */
-    }
-    
-    /* Preserve link colors for wrestler names */
-    .xtp-expanded-row td a {
-      color: var(--accent);
-    }
-    
-    .xtp-expanded-row td a:hover {
-      color: var(--accent);
-      text-decoration: underline;
-    }
-    
-    /* Indent expanded rows to create hierarchy */
-    .xtp-expanded-row td:first-child {
-      padding-left: 20px;
-    }
-    
-    /* Tighten subcomponent columns in expanded rows */
-    .xtp-expanded-row td.xtp-sub {
-      padding-top: 4px;
-      padding-bottom: 4px;
-      font-size: 0.9em;
-      color: var(--muted);
-    }
-    
-    /* Preserve hover highlighting for expanded rows */
-    .xtp-expanded-row:hover {
-      background: var(--panel-2);
+    .tr-lineup-bar-fill { height: 100%; border-radius: 3px; opacity: 0.8; }
+
+    .no-qualifier { color: var(--muted); font-style: italic; }
+
+    /* Below ~600px: turn each collapsed row into a wrapping flex "card" so
+       the number+bar can run full width under the team name, per spec --
+       same markup, no parallel mobile-only DOM tree. */
+    @media (max-width: 600px) {
+      #team-race-table thead { display: none; }
+      #team-race-table, #team-race-table tbody { display: block; width: 100%; }
+      #team-race-table tr.tr-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 6px 10px;
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--border);
+      }
+      #team-race-table tr.tr-row td {
+        display: block;
+        border: none;
+        padding: 0;
+      }
+      .tr-chevron-cell { order: 1; }
+      .tr-rank-cell { order: 2; }
+      .tr-team-cell-td { order: 3; flex: 1 1 auto; min-width: 120px; }
+      .tr-xtp-cell { order: 4; flex: 1 1 100%; min-width: 100%; }
+      .tr-bar-track { width: auto; flex: 1 1 auto; }
+
+      .weight-breakdown.expanded { display: block; width: 100%; }
+      .tr-expanded-td { display: block; padding: 14px 12px 18px; }
     }
   </style>
 </head>
@@ -139,27 +250,21 @@
   <div class="page-container">
     <header class="header">
       <h1>
-        xTP Team Projections
+        Team Race
         <span class="tooltip-icon" data-tooltip="xtp">→</span>
       </h1>
       <div class="header-subline" id="season-info"></div>
-      <p class="header-explainer">
-        xTP (Expected Team Points) estimates a team's expected NCAA tournament points based on advancement, placement, and bonus probabilities.
-      </p>
     </header>
 
-    <section class="section">
+    <section class="section" id="team-race-section">
       <div class="table-wrapper">
-        <table id="xtp-team-leaderboard-table">
+        <table id="team-race-table">
           <thead>
             <tr>
-              <th style="width: 40px;"></th>
-              <th>Rank</th>
+              <th style="width: 28px;"></th>
+              <th style="width: 56px;">Rank</th>
               <th>Team</th>
-              <th class="col-xtp">xTP <span class="tooltip-icon" data-tooltip="xtp">→</span></th>
-              <th class="xtp-component-col">Placement <span class="tooltip-icon" data-tooltip="xtp-p">→</span></th>
-              <th class="xtp-component-col">Advancement <span class="tooltip-icon" data-tooltip="xtp-a">→</span></th>
-              <th class="xtp-component-col">Bonus <span class="tooltip-icon" data-tooltip="xtp-b">→</span></th>
+              <th>Projected Team Points <span class="tooltip-icon" data-tooltip="xtp">→</span></th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -169,7 +274,6 @@
   </div>
 
   <script src="/tooltips.js"></script>
-  <script src="/leaderboards/xtp/teams.js"></script>
+  <script src="/leaderboards/xtp/teams.js?v=20260911"></script>
 </body>
 </html>
-

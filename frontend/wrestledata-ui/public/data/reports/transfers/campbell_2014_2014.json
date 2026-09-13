@@ -1,0 +1,163 @@
+{
+  "query": {
+    "team_slug": "campbell",
+    "team_name": "Campbell",
+    "start_year": 2014,
+    "end_year": 2014
+  },
+  "wrestlers": [
+    {
+      "name": "Brent Jorge",
+      "wrestler_id": "4629602009",
+      "weight_class": 149,
+      "photo_url": "https://gocamels.com/images/2017/7/7/jorge_brent.jpg",
+      "direction": "transfer_in",
+      "first_query_year": 2013,
+      "last_query_year": 2014,
+      "school_path": [
+        "Duke",
+        "Campbell"
+      ],
+      "seasons": [
+        {
+          "year": 2012,
+          "wrestler_id": "4450561009",
+          "team": "Duke",
+          "team_slug": "duke",
+          "team_abbr": "DUKE",
+          "is_query_team": false,
+          "dpg": 1.56,
+          "matches": 6,
+          "rank": 36,
+          "record": "5-1"
+        },
+        {
+          "year": 2013,
+          "wrestler_id": "4494763009",
+          "team": "Campbell",
+          "team_slug": "campbell",
+          "team_abbr": "CAMP",
+          "is_query_team": true,
+          "dpg": -0.39,
+          "matches": 34,
+          "rank": 62,
+          "record": "11-13"
+        },
+        {
+          "year": 2014,
+          "wrestler_id": "4629602009",
+          "team": "Campbell",
+          "team_slug": "campbell",
+          "team_abbr": "CAMP",
+          "is_query_team": true,
+          "dpg": 0.48,
+          "matches": 32,
+          "rank": 54,
+          "record": "18-14"
+        }
+      ]
+    },
+    {
+      "name": "Michael Dahlstrom",
+      "wrestler_id": "264257013",
+      "weight_class": 149,
+      "photo_url": "https://aueagles.com/images/2019/8/15/michael_dahlstrom_m_wrestl_2015_16.jpg",
+      "direction": "transfer_out",
+      "first_query_year": 2013,
+      "last_query_year": 2014,
+      "school_path": [
+        "Campbell",
+        "American"
+      ],
+      "seasons": [
+        {
+          "year": 2013,
+          "wrestler_id": "4494758009",
+          "team": "Campbell",
+          "team_slug": "campbell",
+          "team_abbr": "CAMP",
+          "is_query_team": true,
+          "dpg": -1.58,
+          "matches": 30,
+          "rank": 240,
+          "record": "8-15"
+        },
+        {
+          "year": 2014,
+          "wrestler_id": "4629599009",
+          "team": "Campbell",
+          "team_slug": "campbell",
+          "team_abbr": "CAMP",
+          "is_query_team": true,
+          "dpg": -0.9,
+          "matches": 29,
+          "rank": 233,
+          "record": "11-17"
+        },
+        {
+          "year": 2015,
+          "wrestler_id": "4780968009",
+          "team": "American",
+          "team_slug": "american",
+          "team_abbr": "AMER",
+          "is_query_team": false,
+          "dpg": 0.17,
+          "matches": 11,
+          "rank": 118,
+          "record": "7-3"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "264257013",
+          "team": "American",
+          "team_slug": "american",
+          "team_abbr": "AMER",
+          "is_query_team": false,
+          "dpg": -0.51,
+          "matches": 12,
+          "rank": 228,
+          "record": "3-7"
+        }
+      ]
+    },
+    {
+      "name": "Eloheim Palma",
+      "wrestler_id": "4629594009",
+      "weight_class": 285,
+      "photo_url": "https://gocamels.com/images/2017/7/7/palma_eloheim.jpg",
+      "direction": "transfer_in",
+      "first_query_year": 2014,
+      "last_query_year": 2014,
+      "school_path": [
+        "North Carolina State",
+        "Campbell"
+      ],
+      "seasons": [
+        {
+          "year": 2012,
+          "wrestler_id": "4452857009",
+          "team": "North Carolina State",
+          "team_slug": "north_carolina_state",
+          "team_abbr": "NORT",
+          "is_query_team": false,
+          "dpg": -0.28,
+          "matches": 4,
+          "rank": 84,
+          "record": "2-2"
+        },
+        {
+          "year": 2014,
+          "wrestler_id": "4629594009",
+          "team": "Campbell",
+          "team_slug": "campbell",
+          "team_abbr": "CAMP",
+          "is_query_team": true,
+          "dpg": 0.93,
+          "matches": 32,
+          "rank": 25,
+          "record": "19-13"
+        }
+      ]
+    }
+  ]
+}

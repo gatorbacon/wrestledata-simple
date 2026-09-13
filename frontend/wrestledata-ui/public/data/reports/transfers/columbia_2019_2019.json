@@ -1,0 +1,73 @@
+{
+  "query": {
+    "team_slug": "columbia",
+    "team_name": "Columbia",
+    "start_year": 2019,
+    "end_year": 2019
+  },
+  "wrestlers": [
+    {
+      "name": "Brian Bonino",
+      "wrestler_id": "20146475132",
+      "weight_class": 184,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fdrexeldragons.com%2Fimages%2F2022%2F10%2F19%2Fbrian_bonino_copy.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2018,
+      "last_query_year": 2022,
+      "school_path": [
+        "Columbia",
+        "Drexel"
+      ],
+      "seasons": [
+        {
+          "year": 2018,
+          "wrestler_id": "11447876009",
+          "team": "Columbia",
+          "team_slug": "columbia",
+          "team_abbr": "COL",
+          "is_query_team": true,
+          "dpg": -2.3,
+          "matches": 9,
+          "rank": 114,
+          "record": "4-5"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4627147132",
+          "team": "Columbia",
+          "team_slug": "columbia",
+          "team_abbr": "COL",
+          "is_query_team": true,
+          "dpg": -0.87,
+          "matches": 34,
+          "rank": 136,
+          "record": "12-15"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16696004132",
+          "team": "Columbia",
+          "team_slug": "columbia",
+          "team_abbr": "COL",
+          "is_query_team": true,
+          "dpg": -0.39,
+          "matches": 22,
+          "rank": 80,
+          "record": "10-12"
+        },
+        {
+          "year": 2023,
+          "wrestler_id": "20146475132",
+          "team": "Drexel",
+          "team_slug": "drexel",
+          "team_abbr": "DREX",
+          "is_query_team": false,
+          "dpg": 1.21,
+          "matches": 34,
+          "rank": 13,
+          "record": "22-10"
+        }
+      ]
+    }
+  ]
+}

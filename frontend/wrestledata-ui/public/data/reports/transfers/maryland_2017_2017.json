@@ -1,0 +1,73 @@
+{
+  "query": {
+    "team_slug": "maryland",
+    "team_name": "Maryland",
+    "start_year": 2017,
+    "end_year": 2017
+  },
+  "wrestlers": [
+    {
+      "name": "Hunter Lucas",
+      "wrestler_id": "10492082132",
+      "weight_class": 125,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fohiostatebuckeyes.com%2Fimages%2F2019%2F09%2FLucas_Hunter1920-683x1024.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2017,
+      "last_query_year": 2017,
+      "school_path": [
+        "Maryland",
+        "Ohio State"
+      ],
+      "seasons": [
+        {
+          "year": 2017,
+          "wrestler_id": "9727071009",
+          "team": "Maryland",
+          "team_slug": "maryland",
+          "team_abbr": "MD",
+          "is_query_team": true,
+          "dpg": -2.58,
+          "matches": 15,
+          "rank": 134,
+          "record": "4-10"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11414086009",
+          "team": "Ohio State",
+          "team_slug": "ohio_state",
+          "team_abbr": "OHST",
+          "is_query_team": false,
+          "dpg": 1.4,
+          "matches": 17,
+          "rank": 53,
+          "record": "14-3"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4628472132",
+          "team": "Ohio State",
+          "team_slug": "ohio_state",
+          "team_abbr": "OHST",
+          "is_query_team": false,
+          "dpg": -0.96,
+          "matches": 10,
+          "rank": 42,
+          "record": "3-6"
+        },
+        {
+          "year": 2020,
+          "wrestler_id": "10492082132",
+          "team": "Ohio State",
+          "team_slug": "ohio_state",
+          "team_abbr": "OHST",
+          "is_query_team": false,
+          "dpg": -0.48,
+          "matches": 8,
+          "rank": 41,
+          "record": "4-5"
+        }
+      ]
+    }
+  ]
+}

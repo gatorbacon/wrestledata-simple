@@ -1,0 +1,49 @@
+{
+  "query": {
+    "team_slug": "penn_state",
+    "team_name": "Penn State",
+    "start_year": 2012,
+    "end_year": 2012
+  },
+  "wrestlers": [
+    {
+      "name": "Justin Ortega",
+      "wrestler_id": "4495101009",
+      "weight_class": 197,
+      "photo_url": "https://clariongoldeneagles.com/images/2012/11/30/ortega.jpg",
+      "direction": "transfer_out",
+      "first_query_year": 2012,
+      "last_query_year": 2012,
+      "school_path": [
+        "Penn State",
+        "Clarion"
+      ],
+      "seasons": [
+        {
+          "year": 2012,
+          "wrestler_id": "4453595009",
+          "team": "Penn State",
+          "team_slug": "penn_state",
+          "team_abbr": "PSU",
+          "is_query_team": true,
+          "dpg": -2.49,
+          "matches": 2,
+          "rank": 134,
+          "record": "0-2"
+        },
+        {
+          "year": 2013,
+          "wrestler_id": "4495101009",
+          "team": "Clarion",
+          "team_slug": "clarion",
+          "team_abbr": "CLAR",
+          "is_query_team": false,
+          "dpg": 0.31,
+          "matches": 34,
+          "rank": 47,
+          "record": "21-13"
+        }
+      ]
+    }
+  ]
+}

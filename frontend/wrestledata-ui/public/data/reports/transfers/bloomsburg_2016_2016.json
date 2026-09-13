@@ -1,0 +1,112 @@
+{
+  "query": {
+    "team_slug": "bloomsburg",
+    "team_name": "Bloomsburg",
+    "start_year": 2016,
+    "end_year": 2016
+  },
+  "wrestlers": [
+    {
+      "name": "TC Warner",
+      "wrestler_id": "416143076",
+      "weight_class": 149,
+      "photo_url": null,
+      "direction": "transfer_in",
+      "first_query_year": 2016,
+      "last_query_year": 2016,
+      "school_path": [
+        "Old Dominion",
+        "Bloomsburg"
+      ],
+      "seasons": [
+        {
+          "year": 2015,
+          "wrestler_id": "4876488009",
+          "team": "Old Dominion",
+          "team_slug": "old_dominion",
+          "team_abbr": "OLD ",
+          "is_query_team": false,
+          "dpg": 0.79,
+          "matches": 31,
+          "rank": 66,
+          "record": "18-14"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "416143076",
+          "team": "Bloomsburg",
+          "team_slug": "bloomsburg",
+          "team_abbr": "BLOO",
+          "is_query_team": true,
+          "dpg": -2.36,
+          "matches": 3,
+          "rank": 101,
+          "record": "0-3"
+        }
+      ]
+    },
+    {
+      "name": "Taylor Cahill",
+      "wrestler_id": "4640275132",
+      "weight_class": 174,
+      "photo_url": "https://clariongoldeneagles.com/images/2018/10/23/_cahill_taylor.jpg",
+      "direction": "transfer_out",
+      "first_query_year": 2016,
+      "last_query_year": 2016,
+      "school_path": [
+        "Bloomsburg",
+        "Clarion"
+      ],
+      "seasons": [
+        {
+          "year": 2016,
+          "wrestler_id": "416134076",
+          "team": "Bloomsburg",
+          "team_slug": "bloomsburg",
+          "team_abbr": "BLOO",
+          "is_query_team": true,
+          "dpg": -2.96,
+          "matches": 16,
+          "rank": 212,
+          "record": "2-9"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "523930010",
+          "team": "Clarion",
+          "team_slug": "clarion",
+          "team_abbr": "CLAR",
+          "is_query_team": false,
+          "dpg": -2.35,
+          "matches": 25,
+          "rank": 244,
+          "record": "6-15"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11411955009",
+          "team": "Clarion",
+          "team_slug": "clarion",
+          "team_abbr": "CLAR",
+          "is_query_team": false,
+          "dpg": -0.14,
+          "matches": 41,
+          "rank": 183,
+          "record": "15-9"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4640275132",
+          "team": "Clarion",
+          "team_slug": "clarion",
+          "team_abbr": "CLAR",
+          "is_query_team": false,
+          "dpg": -1.36,
+          "matches": 16,
+          "rank": 115,
+          "record": "5-10"
+        }
+      ]
+    }
+  ]
+}

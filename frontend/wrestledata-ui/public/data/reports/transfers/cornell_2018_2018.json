@@ -1,0 +1,112 @@
+{
+  "query": {
+    "team_slug": "cornell",
+    "team_name": "Cornell",
+    "start_year": 2018,
+    "end_year": 2018
+  },
+  "wrestlers": [
+    {
+      "name": "Foster Karmon",
+      "wrestler_id": "4709397132",
+      "weight_class": 165,
+      "photo_url": "https://gostanford.com/imgproxy/SoKqCxM2sWajuHwzSFHCotO62kKPbxAT5FEAl8Lqb1Q/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3N0YW5mb3JkLXByb2QvMjAyNC8wMS8yMi8ySlIxcnliMmpNZW1BTWRsaUg1RktoSWI4UEtGcUk4aWxjNWI1SW5HLmpwZw.jpg",
+      "direction": "transfer_out",
+      "first_query_year": 2018,
+      "last_query_year": 2018,
+      "school_path": [
+        "Cornell",
+        "Stanford"
+      ],
+      "seasons": [
+        {
+          "year": 2018,
+          "wrestler_id": "11445715009",
+          "team": "Cornell",
+          "team_slug": "cornell",
+          "team_abbr": "COR",
+          "is_query_team": true,
+          "dpg": 1.05,
+          "matches": 6,
+          "rank": 114,
+          "record": "3-2"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4709397132",
+          "team": "Stanford",
+          "team_slug": "stanford",
+          "team_abbr": "STAN",
+          "is_query_team": false,
+          "dpg": -1.37,
+          "matches": 20,
+          "rank": 63,
+          "record": "7-5"
+        }
+      ]
+    },
+    {
+      "name": "Fredy Stroker",
+      "wrestler_id": "4625908132",
+      "weight_class": 157,
+      "photo_url": "https://cornellbigred.com/images/2018/8/26/Stroker_Fredy_18.jpg",
+      "direction": "transfer_in",
+      "first_query_year": 2018,
+      "last_query_year": 2019,
+      "school_path": [
+        "Minnesota",
+        "Cornell"
+      ],
+      "seasons": [
+        {
+          "year": 2016,
+          "wrestler_id": "7929218009",
+          "team": "Minnesota",
+          "team_slug": "minnesota",
+          "team_abbr": "MINN",
+          "is_query_team": false,
+          "dpg": 1.44,
+          "matches": 24,
+          "rank": 95,
+          "record": "10-5"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "801454071",
+          "team": "Minnesota",
+          "team_slug": "minnesota",
+          "team_abbr": "MINN",
+          "is_query_team": false,
+          "dpg": -1.37,
+          "matches": 14,
+          "rank": 79,
+          "record": "4-9"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "1499994132",
+          "team": "Cornell",
+          "team_slug": "cornell",
+          "team_abbr": "COR",
+          "is_query_team": true,
+          "dpg": 0.84,
+          "matches": 14,
+          "rank": 48,
+          "record": "8-6"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4625908132",
+          "team": "Cornell",
+          "team_slug": "cornell",
+          "team_abbr": "COR",
+          "is_query_team": true,
+          "dpg": 0.85,
+          "matches": 10,
+          "rank": 43,
+          "record": "6-3"
+        }
+      ]
+    }
+  ]
+}

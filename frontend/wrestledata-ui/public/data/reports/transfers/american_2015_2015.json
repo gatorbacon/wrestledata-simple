@@ -1,0 +1,73 @@
+{
+  "query": {
+    "team_slug": "american",
+    "team_name": "American",
+    "start_year": 2015,
+    "end_year": 2015
+  },
+  "wrestlers": [
+    {
+      "name": "Michael Dahlstrom",
+      "wrestler_id": "264257013",
+      "weight_class": 149,
+      "photo_url": "https://aueagles.com/images/2019/8/15/michael_dahlstrom_m_wrestl_2015_16.jpg",
+      "direction": "transfer_in",
+      "first_query_year": 2015,
+      "last_query_year": 2016,
+      "school_path": [
+        "Campbell",
+        "American"
+      ],
+      "seasons": [
+        {
+          "year": 2013,
+          "wrestler_id": "4494758009",
+          "team": "Campbell",
+          "team_slug": "campbell",
+          "team_abbr": "CAMP",
+          "is_query_team": false,
+          "dpg": -1.58,
+          "matches": 30,
+          "rank": 240,
+          "record": "8-15"
+        },
+        {
+          "year": 2014,
+          "wrestler_id": "4629599009",
+          "team": "Campbell",
+          "team_slug": "campbell",
+          "team_abbr": "CAMP",
+          "is_query_team": false,
+          "dpg": -0.9,
+          "matches": 29,
+          "rank": 233,
+          "record": "11-17"
+        },
+        {
+          "year": 2015,
+          "wrestler_id": "4780968009",
+          "team": "American",
+          "team_slug": "american",
+          "team_abbr": "AMER",
+          "is_query_team": true,
+          "dpg": 0.17,
+          "matches": 11,
+          "rank": 118,
+          "record": "7-3"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "264257013",
+          "team": "American",
+          "team_slug": "american",
+          "team_abbr": "AMER",
+          "is_query_team": true,
+          "dpg": -0.51,
+          "matches": 12,
+          "rank": 228,
+          "record": "3-7"
+        }
+      ]
+    }
+  ]
+}

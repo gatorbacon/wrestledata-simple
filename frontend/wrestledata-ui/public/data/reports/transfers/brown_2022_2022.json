@@ -1,0 +1,61 @@
+{
+  "query": {
+    "team_slug": "brown",
+    "team_name": "Brown",
+    "start_year": 2022,
+    "end_year": 2022
+  },
+  "wrestlers": [
+    {
+      "name": "Timothy Levine",
+      "wrestler_id": "29679326132",
+      "weight_class": 149,
+      "photo_url": "https://gopsusports.com/imgproxy/6ALw_FkfgFtcL6yoSNSOheEyrZx4w21zsknOxtLTGu8/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2dvcHN1c3BvcnRzLXByb2QvMjAyNC8xMC8wMi9HZmxRaENjdVZFZjdVT2lIOE9OQWxvcXEyYVN3ZGlHVnk4S3hjRmpiLmpwZw.jpg",
+      "direction": "transfer_out",
+      "first_query_year": 2022,
+      "last_query_year": 2022,
+      "school_path": [
+        "Brown",
+        "Penn State"
+      ],
+      "seasons": [
+        {
+          "year": 2022,
+          "wrestler_id": "16702909132",
+          "team": "Brown",
+          "team_slug": "brown",
+          "team_abbr": "BRWN",
+          "is_query_team": true,
+          "dpg": -0.6,
+          "matches": 30,
+          "rank": 98,
+          "record": "13-14"
+        },
+        {
+          "year": 2024,
+          "wrestler_id": "24584823132",
+          "team": "Penn State",
+          "team_slug": "penn_state",
+          "team_abbr": "PSU",
+          "is_query_team": false,
+          "dpg": -4.38,
+          "matches": 5,
+          "rank": 199,
+          "record": "0-4"
+        },
+        {
+          "year": 2025,
+          "wrestler_id": "29679326132",
+          "team": "Penn State",
+          "team_slug": "penn_state",
+          "team_abbr": "PSU",
+          "is_query_team": false,
+          "dpg": -0.51,
+          "matches": 41,
+          "rank": 291,
+          "record": "10-12"
+        }
+      ]
+    }
+  ]
+}

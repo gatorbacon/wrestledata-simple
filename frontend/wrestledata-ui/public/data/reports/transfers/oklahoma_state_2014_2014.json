@@ -1,0 +1,73 @@
+{
+  "query": {
+    "team_slug": "oklahoma_state",
+    "team_name": "Oklahoma State",
+    "start_year": 2014,
+    "end_year": 2014
+  },
+  "wrestlers": [
+    {
+      "name": "Zachary Gentzler",
+      "wrestler_id": "11479129009",
+      "weight_class": 125,
+      "photo_url": null,
+      "direction": "transfer_out",
+      "first_query_year": 2014,
+      "last_query_year": 2017,
+      "school_path": [
+        "Oklahoma State",
+        "Southern Illinois Edwardsville"
+      ],
+      "seasons": [
+        {
+          "year": 2014,
+          "wrestler_id": "4633332009",
+          "team": "Oklahoma State",
+          "team_slug": "oklahoma_state",
+          "team_abbr": "OKST",
+          "is_query_team": true,
+          "dpg": -2.5,
+          "matches": 6,
+          "rank": 144,
+          "record": "2-4"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "278190011",
+          "team": "Oklahoma State",
+          "team_slug": "oklahoma_state",
+          "team_abbr": "OKST",
+          "is_query_team": true,
+          "dpg": -5.05,
+          "matches": 3,
+          "rank": 157,
+          "record": "0-3"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "524081011",
+          "team": "Oklahoma State",
+          "team_slug": "oklahoma_state",
+          "team_abbr": "OKST",
+          "is_query_team": true,
+          "dpg": 0.14,
+          "matches": 5,
+          "rank": 127,
+          "record": "3-2"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11479129009",
+          "team": "Southern Illinois Edwardsville",
+          "team_slug": "southern_illinois_edwardsville",
+          "team_abbr": "SOUT",
+          "is_query_team": false,
+          "dpg": -0.1,
+          "matches": 26,
+          "rank": 113,
+          "record": "12-13"
+        }
+      ]
+    }
+  ]
+}

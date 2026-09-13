@@ -1,0 +1,85 @@
+{
+  "query": {
+    "team_slug": "chattanooga",
+    "team_name": "Chattanooga",
+    "start_year": 2018,
+    "end_year": 2018
+  },
+  "wrestlers": [
+    {
+      "name": "Chad Pyke",
+      "wrestler_id": "11446388009",
+      "weight_class": 165,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Futc.sidearmsports.com%2Fimages%2F2017%2F8%2F29%2FPyke_Chad.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2018,
+      "last_query_year": 2018,
+      "school_path": [
+        "North Carolina State",
+        "Chattanooga"
+      ],
+      "seasons": [
+        {
+          "year": 2014,
+          "wrestler_id": "4632824009",
+          "team": "North Carolina State",
+          "team_slug": "north_carolina_state",
+          "team_abbr": "NORT",
+          "is_query_team": false,
+          "dpg": 0.07,
+          "matches": 18,
+          "rank": 69,
+          "record": "10-7"
+        },
+        {
+          "year": 2015,
+          "wrestler_id": "733071",
+          "team": "North Carolina State",
+          "team_slug": "north_carolina_state",
+          "team_abbr": "NORT",
+          "is_query_team": false,
+          "dpg": -0.52,
+          "matches": 27,
+          "rank": 67,
+          "record": "8-17"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "293850107",
+          "team": "North Carolina State",
+          "team_slug": "north_carolina_state",
+          "team_abbr": "NORT",
+          "is_query_team": false,
+          "dpg": 1.82,
+          "matches": 17,
+          "rank": 53,
+          "record": "11-3"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "800094071",
+          "team": "North Carolina State",
+          "team_slug": "north_carolina_state",
+          "team_abbr": "NORT",
+          "is_query_team": false,
+          "dpg": 0.89,
+          "matches": 27,
+          "rank": 41,
+          "record": "12-8"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11446388009",
+          "team": "Chattanooga",
+          "team_slug": "chattanooga",
+          "team_abbr": "CHAT",
+          "is_query_team": true,
+          "dpg": 1.39,
+          "matches": 36,
+          "rank": 43,
+          "record": "21-10"
+        }
+      ]
+    }
+  ]
+}

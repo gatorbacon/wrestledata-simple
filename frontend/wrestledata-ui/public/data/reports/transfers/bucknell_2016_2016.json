@@ -1,0 +1,136 @@
+{
+  "query": {
+    "team_slug": "bucknell",
+    "team_name": "Bucknell",
+    "start_year": 2016,
+    "end_year": 2016
+  },
+  "wrestlers": [
+    {
+      "name": "Chuck Boddy",
+      "wrestler_id": "841280107",
+      "weight_class": 285,
+      "photo_url": null,
+      "direction": "transfer_out",
+      "first_query_year": 2015,
+      "last_query_year": 2016,
+      "school_path": [
+        "Bucknell",
+        "Virginia"
+      ],
+      "seasons": [
+        {
+          "year": 2015,
+          "wrestler_id": "4782844009",
+          "team": "Bucknell",
+          "team_slug": "bucknell",
+          "team_abbr": "BUCK",
+          "is_query_team": true,
+          "dpg": -2.96,
+          "matches": 12,
+          "rank": 176,
+          "record": "3-10"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "295285107",
+          "team": "Bucknell",
+          "team_slug": "bucknell",
+          "team_abbr": "BUCK",
+          "is_query_team": true,
+          "dpg": -1.47,
+          "matches": 17,
+          "rank": 236,
+          "record": "5-12"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "841280107",
+          "team": "Virginia",
+          "team_slug": "virginia",
+          "team_abbr": "UVA",
+          "is_query_team": false,
+          "dpg": -2.17,
+          "matches": 20,
+          "rank": 235,
+          "record": "5-15"
+        }
+      ]
+    },
+    {
+      "name": "Tom Sleigh",
+      "wrestler_id": "4671682132",
+      "weight_class": 197,
+      "photo_url": null,
+      "direction": "transfer_out",
+      "first_query_year": 2015,
+      "last_query_year": 2018,
+      "school_path": [
+        "Bucknell",
+        "Virginia Tech"
+      ],
+      "seasons": [
+        {
+          "year": 2015,
+          "wrestler_id": "4782864009",
+          "team": "Bucknell",
+          "team_slug": "bucknell",
+          "team_abbr": "BUCK",
+          "is_query_team": true,
+          "dpg": 0.65,
+          "matches": 50,
+          "rank": 27,
+          "record": "27-18"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "295284107",
+          "team": "Bucknell",
+          "team_slug": "bucknell",
+          "team_abbr": "BUCK",
+          "is_query_team": true,
+          "dpg": 1.66,
+          "matches": 38,
+          "rank": 17,
+          "record": "28-10"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "800434071",
+          "team": "Bucknell",
+          "team_slug": "bucknell",
+          "team_abbr": "BUCK",
+          "is_query_team": true,
+          "dpg": 2.23,
+          "matches": 38,
+          "rank": 15,
+          "record": "29-7"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11446725009",
+          "team": "Bucknell",
+          "team_slug": "bucknell",
+          "team_abbr": "BUCK",
+          "is_query_team": true,
+          "dpg": -1.43,
+          "matches": 1,
+          "rank": 35,
+          "record": "0-1"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4671682132",
+          "team": "Virginia Tech",
+          "team_slug": "virginia_tech",
+          "team_abbr": "VT",
+          "is_query_team": false,
+          "dpg": 2.2,
+          "matches": 30,
+          "rank": 11,
+          "record": "22-8"
+        }
+      ]
+    }
+  ]
+}

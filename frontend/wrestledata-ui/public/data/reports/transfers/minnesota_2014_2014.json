@@ -1,0 +1,88 @@
+{
+  "query": {
+    "team_slug": "minnesota",
+    "team_name": "Minnesota",
+    "start_year": 2014,
+    "end_year": 2014
+  },
+  "wrestlers": [
+    {
+      "name": "Steven Keogh",
+      "wrestler_id": "4784215009",
+      "weight_class": 165,
+      "photo_url": null,
+      "direction": "transfer_out",
+      "first_query_year": 2013,
+      "last_query_year": 2013,
+      "school_path": [
+        "Minnesota",
+        "North Dakota State University"
+      ],
+      "seasons": [
+        {
+          "year": 2013,
+          "wrestler_id": "4497505009",
+          "team": "Minnesota",
+          "team_slug": "minnesota",
+          "team_abbr": "MINN",
+          "is_query_team": true,
+          "dpg": 0.19,
+          "matches": 11,
+          "rank": 94,
+          "record": "5-5"
+        },
+        {
+          "year": 2015,
+          "wrestler_id": "4784215009",
+          "team": "North Dakota State University",
+          "team_slug": "north_dakota_state_university",
+          "team_abbr": "NORT",
+          "is_query_team": false,
+          "dpg": -2.21,
+          "matches": 31,
+          "rank": 149,
+          "record": "3-15"
+        }
+      ]
+    },
+    {
+      "name": "Judson Preskitt",
+      "wrestler_id": "4815308009",
+      "weight_class": 133,
+      "photo_url": null,
+      "direction": "transfer_out",
+      "first_query_year": 2014,
+      "last_query_year": 2014,
+      "school_path": [
+        "Minnesota",
+        "Arizona State"
+      ],
+      "seasons": [
+        {
+          "year": 2014,
+          "wrestler_id": "4632266009",
+          "team": "Minnesota",
+          "team_slug": "minnesota",
+          "team_abbr": "MINN",
+          "is_query_team": true,
+          "dpg": -2.06,
+          "matches": 4,
+          "rank": 89,
+          "record": "1-2"
+        },
+        {
+          "year": 2015,
+          "wrestler_id": "4815308009",
+          "team": "Arizona State",
+          "team_slug": "arizona_state",
+          "team_abbr": "ASU",
+          "is_query_team": false,
+          "dpg": -2.52,
+          "matches": 21,
+          "rank": 188,
+          "record": "3-15"
+        }
+      ]
+    }
+  ]
+}

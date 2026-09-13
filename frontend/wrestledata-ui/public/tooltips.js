@@ -61,12 +61,13 @@ function addTooltip(element, text) {
 
 // Tooltip definitions
 const TOOLTIPS = {
-  'xtp': 'Expected NCAA team points based on advancement, placement, and bonus probabilities.',
+  'xtp': 'Expected NCAA tournament points from a 10,000-trial Monte Carlo simulation of the bracket.',
   'mv': 'DPG — extra dual points per match vs what a typical wrestler gets against that same opponent.',
   'xtp-p': 'Expected placement points.',
   'xtp-a': 'Expected advancement points.',
   'xtp-b': 'Expected bonus points.',
-  'threshold': 'Minimum match threshold increases as the season progresses to ensure ranking stability.'
+  'threshold': 'Minimum match threshold increases as the season progresses to ensure ranking stability.',
+  'hodge': 'Blends win record, quality of competition, dominance (avg team points per match), and pin rate into one score. Eligibility requires a top-3 weight-class rank and a strong win percentage.'
 };
 
 // Initialize tooltips on page load

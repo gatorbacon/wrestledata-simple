@@ -1,0 +1,73 @@
+{
+  "query": {
+    "team_slug": "bloomsburg",
+    "team_name": "Bloomsburg",
+    "start_year": 2020,
+    "end_year": 2020
+  },
+  "wrestlers": [
+    {
+      "name": "Christian Gannone",
+      "wrestler_id": "20135642132",
+      "weight_class": 141,
+      "photo_url": "https://bubearcats.com/images/2022/9/23/Gannone_Web_Head.png",
+      "direction": "transfer_out",
+      "first_query_year": 2020,
+      "last_query_year": 2021,
+      "school_path": [
+        "Bloomsburg",
+        "Binghamton"
+      ],
+      "seasons": [
+        {
+          "year": 2020,
+          "wrestler_id": "10502011132",
+          "team": "Bloomsburg",
+          "team_slug": "bloomsburg",
+          "team_abbr": "BLOO",
+          "is_query_team": true,
+          "dpg": -1.31,
+          "matches": 24,
+          "rank": 142,
+          "record": "10-14"
+        },
+        {
+          "year": 2021,
+          "wrestler_id": "14867310132",
+          "team": "Bloomsburg",
+          "team_slug": "bloomsburg",
+          "team_abbr": "BLOO",
+          "is_query_team": true,
+          "dpg": -3.97,
+          "matches": 7,
+          "rank": 227,
+          "record": "1-6"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16702321132",
+          "team": "Binghamton",
+          "team_slug": "binghamton",
+          "team_abbr": "BING",
+          "is_query_team": false,
+          "dpg": -1.83,
+          "matches": 15,
+          "rank": 243,
+          "record": "5-6"
+        },
+        {
+          "year": 2023,
+          "wrestler_id": "20135642132",
+          "team": "Binghamton",
+          "team_slug": "binghamton",
+          "team_abbr": "BING",
+          "is_query_team": false,
+          "dpg": -1.74,
+          "matches": 19,
+          "rank": 264,
+          "record": "5-13"
+        }
+      ]
+    }
+  ]
+}

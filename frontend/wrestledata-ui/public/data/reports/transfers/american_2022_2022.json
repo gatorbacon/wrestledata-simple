@@ -1,0 +1,73 @@
+{
+  "query": {
+    "team_slug": "american",
+    "team_name": "American",
+    "start_year": 2022,
+    "end_year": 2022
+  },
+  "wrestlers": [
+    {
+      "name": "Andrew Fallon",
+      "wrestler_id": "29672228132",
+      "weight_class": 141,
+      "photo_url": null,
+      "direction": "transfer_out",
+      "first_query_year": 2022,
+      "last_query_year": 2022,
+      "school_path": [
+        "American",
+        "Sacred Heart"
+      ],
+      "seasons": [
+        {
+          "year": 2022,
+          "wrestler_id": "16703713132",
+          "team": "American",
+          "team_slug": "american",
+          "team_abbr": "AMER",
+          "is_query_team": true,
+          "dpg": -0.43,
+          "matches": 40,
+          "rank": 158,
+          "record": "12-11"
+        },
+        {
+          "year": 2023,
+          "wrestler_id": "20122470132",
+          "team": "Sacred Heart",
+          "team_slug": "sacred_heart",
+          "team_abbr": "SH",
+          "is_query_team": false,
+          "dpg": -1.32,
+          "matches": 17,
+          "rank": 176,
+          "record": "5-12"
+        },
+        {
+          "year": 2024,
+          "wrestler_id": "24579781132",
+          "team": "Sacred Heart",
+          "team_slug": "sacred_heart",
+          "team_abbr": "SH",
+          "is_query_team": false,
+          "dpg": 1.56,
+          "matches": 24,
+          "rank": 68,
+          "record": "16-5"
+        },
+        {
+          "year": 2025,
+          "wrestler_id": "29672228132",
+          "team": "Sacred Heart",
+          "team_slug": "sacred_heart",
+          "team_abbr": "SH",
+          "is_query_team": false,
+          "dpg": -0.93,
+          "matches": 33,
+          "rank": 110,
+          "record": "7-15"
+        }
+      ]
+    }
+  ]
+}

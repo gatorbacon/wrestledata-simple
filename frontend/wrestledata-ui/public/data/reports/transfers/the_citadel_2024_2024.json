@@ -1,0 +1,136 @@
+{
+  "query": {
+    "team_slug": "the_citadel",
+    "team_name": "The Citadel",
+    "start_year": 2024,
+    "end_year": 2024
+  },
+  "wrestlers": [
+    {
+      "name": "Patrick Brophy",
+      "wrestler_id": "36637983132",
+      "weight_class": 197,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgopack.com%2Fimages%2F2026%2F4%2F10%2FWRES2526PatrickBrophyHS.png&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2023,
+      "last_query_year": 2025,
+      "school_path": [
+        "The Citadel",
+        "NC State"
+      ],
+      "seasons": [
+        {
+          "year": 2023,
+          "wrestler_id": "20128292132",
+          "team": "The Citadel",
+          "team_slug": "the_citadel",
+          "team_abbr": "CIT",
+          "is_query_team": true,
+          "dpg": -1.25,
+          "matches": 13,
+          "rank": 120,
+          "record": "7-6"
+        },
+        {
+          "year": 2024,
+          "wrestler_id": "24586989132",
+          "team": "The Citadel",
+          "team_slug": "the_citadel",
+          "team_abbr": "CIT",
+          "is_query_team": true,
+          "dpg": -0.06,
+          "matches": 29,
+          "rank": 61,
+          "record": "18-12"
+        },
+        {
+          "year": 2025,
+          "wrestler_id": "29687876132",
+          "team": "The Citadel",
+          "team_slug": "the_citadel",
+          "team_abbr": "CIT",
+          "is_query_team": true,
+          "dpg": 1.8,
+          "matches": 28,
+          "rank": 23,
+          "record": "19-7"
+        },
+        {
+          "year": 2026,
+          "wrestler_id": "36637983132",
+          "team": "NC State",
+          "team_slug": "nc_state",
+          "team_abbr": "NCST",
+          "is_query_team": false,
+          "dpg": 0.05,
+          "matches": 16,
+          "rank": 37,
+          "record": "9-7"
+        }
+      ]
+    },
+    {
+      "name": "Joshua Stillings",
+      "wrestler_id": "24586996132",
+      "weight_class": 174,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fthecitadel.sidearmsports.com%2Fimages%2F2023%2F10%2F28%2FWREST_Stillings_JBeX6.png&width=603&height=803&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2024,
+      "last_query_year": 2024,
+      "school_path": [
+        "Drexel",
+        "The Citadel"
+      ],
+      "seasons": [
+        {
+          "year": 2021,
+          "wrestler_id": "14870370132",
+          "team": "Drexel",
+          "team_slug": "drexel",
+          "team_abbr": "DREX",
+          "is_query_team": false,
+          "dpg": -1.92,
+          "matches": 8,
+          "rank": 157,
+          "record": "3-5"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16716398132",
+          "team": "Drexel",
+          "team_slug": "drexel",
+          "team_abbr": "DREX",
+          "is_query_team": false,
+          "dpg": -0.94,
+          "matches": 18,
+          "rank": 176,
+          "record": "7-9"
+        },
+        {
+          "year": 2023,
+          "wrestler_id": "20146422132",
+          "team": "Drexel",
+          "team_slug": "drexel",
+          "team_abbr": "DREX",
+          "is_query_team": false,
+          "dpg": -0.72,
+          "matches": 24,
+          "rank": 102,
+          "record": "11-11"
+        },
+        {
+          "year": 2024,
+          "wrestler_id": "24586996132",
+          "team": "The Citadel",
+          "team_slug": "the_citadel",
+          "team_abbr": "CIT",
+          "is_query_team": true,
+          "dpg": 0.84,
+          "matches": 9,
+          "rank": 74,
+          "record": "7-3"
+        }
+      ]
+    }
+  ]
+}

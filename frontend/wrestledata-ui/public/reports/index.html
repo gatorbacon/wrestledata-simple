@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>DPG Reports — MatSavant</title>
+  <title>Career DPG — MatSavant</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/styles.css?v=20260921" />
   <style>
@@ -69,10 +69,11 @@
 <body>
   <script src="/analytics.js?v=20260911"></script>
   <script src="/header.js?v=20260908"></script>
+  <script src="/lab_stamp.js?v=20260910"></script>
 
   <div class="page-container">
     <div class="rh-header">
-      <h1>DPG Reports</h1>
+      <h1>Career DPG</h1>
       <p>Transfer windows, team rosters, and individual career charts</p>
     </div>
 
@@ -114,20 +115,14 @@
     <div class="rh-panel" id="panel-transfers">
       <div class="rh-card">
         <h2>Transfer Window</h2>
-        <div class="rh-desc">See a team's transfers in and out, with DPG before and after, across a year range.</div>
+        <div class="rh-desc">See a team's transfers in and out for one season, with DPG before and after.</div>
         <div class="rh-field">
           <label for="xf-team">Team</label>
           <select id="xf-team"></select>
         </div>
-        <div class="rh-row">
-          <div class="rh-field">
-            <label for="xf-start">Start year</label>
-            <select id="xf-start"></select>
-          </div>
-          <div class="rh-field">
-            <label for="xf-end">End year</label>
-            <select id="xf-end"></select>
-          </div>
+        <div class="rh-field">
+          <label for="xf-year">Season</label>
+          <select id="xf-year"></select>
         </div>
         <button class="rh-btn" id="xf-go">View Report</button>
       </div>
@@ -174,14 +169,12 @@
   });
 
   // ---- transfer window ----
-  fillYearSelect(document.getElementById('xf-start'), MAX_YEAR - 3);
-  fillYearSelect(document.getElementById('xf-end'), MAX_YEAR);
+  fillYearSelect(document.getElementById('xf-year'), MAX_YEAR);
   document.getElementById('xf-go').addEventListener('click', () => {
     const team = document.getElementById('xf-team').value;
-    const start = document.getElementById('xf-start').value;
-    const end = document.getElementById('xf-end').value;
+    const year = document.getElementById('xf-year').value;
     if (!team) return;
-    window.location.href = `/reports/transfers/index.html?team=${encodeURIComponent(team)}&start=${start}&end=${end}`;
+    window.location.href = `/reports/transfers/index.html?team=${encodeURIComponent(team)}&year=${year}`;
   });
 
   // ---- team roster ----

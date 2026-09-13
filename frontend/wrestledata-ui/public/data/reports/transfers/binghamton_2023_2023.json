@@ -1,0 +1,136 @@
+{
+  "query": {
+    "team_slug": "binghamton",
+    "team_name": "Binghamton",
+    "start_year": 2023,
+    "end_year": 2023
+  },
+  "wrestlers": [
+    {
+      "name": "Christian Gannone",
+      "wrestler_id": "20135642132",
+      "weight_class": 141,
+      "photo_url": "https://bubearcats.com/images/2022/9/23/Gannone_Web_Head.png",
+      "direction": "transfer_in",
+      "first_query_year": 2022,
+      "last_query_year": 2023,
+      "school_path": [
+        "Bloomsburg",
+        "Binghamton"
+      ],
+      "seasons": [
+        {
+          "year": 2020,
+          "wrestler_id": "10502011132",
+          "team": "Bloomsburg",
+          "team_slug": "bloomsburg",
+          "team_abbr": "BLOO",
+          "is_query_team": false,
+          "dpg": -1.31,
+          "matches": 24,
+          "rank": 142,
+          "record": "10-14"
+        },
+        {
+          "year": 2021,
+          "wrestler_id": "14867310132",
+          "team": "Bloomsburg",
+          "team_slug": "bloomsburg",
+          "team_abbr": "BLOO",
+          "is_query_team": false,
+          "dpg": -3.97,
+          "matches": 7,
+          "rank": 227,
+          "record": "1-6"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16702321132",
+          "team": "Binghamton",
+          "team_slug": "binghamton",
+          "team_abbr": "BING",
+          "is_query_team": true,
+          "dpg": -1.83,
+          "matches": 15,
+          "rank": 243,
+          "record": "5-6"
+        },
+        {
+          "year": 2023,
+          "wrestler_id": "20135642132",
+          "team": "Binghamton",
+          "team_slug": "binghamton",
+          "team_abbr": "BING",
+          "is_query_team": true,
+          "dpg": -1.74,
+          "matches": 19,
+          "rank": 264,
+          "record": "5-13"
+        }
+      ]
+    },
+    {
+      "name": "Tyler Kellison",
+      "wrestler_id": "20135649132",
+      "weight_class": 141,
+      "photo_url": "https://bubearcats.com/images/2022/9/23/Kellison_Web_Head.png",
+      "direction": "transfer_in",
+      "first_query_year": 2023,
+      "last_query_year": 2023,
+      "school_path": [
+        "Appalachian State",
+        "Binghamton"
+      ],
+      "seasons": [
+        {
+          "year": 2020,
+          "wrestler_id": "10500836132",
+          "team": "Appalachian State",
+          "team_slug": "appalachian_state",
+          "team_abbr": "APP",
+          "is_query_team": false,
+          "dpg": -1.9,
+          "matches": 18,
+          "rank": 129,
+          "record": "7-9"
+        },
+        {
+          "year": 2021,
+          "wrestler_id": "14870099132",
+          "team": "Appalachian State",
+          "team_slug": "appalachian_state",
+          "team_abbr": "APP",
+          "is_query_team": false,
+          "dpg": -0.28,
+          "matches": 12,
+          "rank": 63,
+          "record": "8-4"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16700217132",
+          "team": "Appalachian State",
+          "team_slug": "appalachian_state",
+          "team_abbr": "APP",
+          "is_query_team": false,
+          "dpg": -2.28,
+          "matches": 9,
+          "rank": 78,
+          "record": "5-5"
+        },
+        {
+          "year": 2023,
+          "wrestler_id": "20135649132",
+          "team": "Binghamton",
+          "team_slug": "binghamton",
+          "team_abbr": "BING",
+          "is_query_team": true,
+          "dpg": -2.07,
+          "matches": 7,
+          "rank": 113,
+          "record": "1-5"
+        }
+      ]
+    }
+  ]
+}

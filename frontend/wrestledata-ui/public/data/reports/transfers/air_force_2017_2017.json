@@ -1,0 +1,100 @@
+{
+  "query": {
+    "team_slug": "air_force",
+    "team_name": "Air Force",
+    "start_year": 2017,
+    "end_year": 2017
+  },
+  "wrestlers": [
+    {
+      "name": "Bryce Town",
+      "wrestler_id": "11412036009",
+      "weight_class": 285,
+      "photo_url": "https://clariongoldeneagles.com/images/2017/10/20/_Town.jpg",
+      "direction": "transfer_out",
+      "first_query_year": 2017,
+      "last_query_year": 2017,
+      "school_path": [
+        "Air Force",
+        "Clarion"
+      ],
+      "seasons": [
+        {
+          "year": 2017,
+          "wrestler_id": "840017107",
+          "team": "Air Force",
+          "team_slug": "air_force",
+          "team_abbr": "AF",
+          "is_query_team": true,
+          "dpg": -6.59,
+          "matches": 2,
+          "rank": 156,
+          "record": "0-2"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11412036009",
+          "team": "Clarion",
+          "team_slug": "clarion",
+          "team_abbr": "CLAR",
+          "is_query_team": false,
+          "dpg": -5.35,
+          "matches": 7,
+          "rank": 232,
+          "record": "0-7"
+        }
+      ]
+    },
+    {
+      "name": "Ricky Padilla",
+      "wrestler_id": "10460712132",
+      "weight_class": 165,
+      "photo_url": null,
+      "direction": "transfer_out",
+      "first_query_year": 2017,
+      "last_query_year": 2017,
+      "school_path": [
+        "Air Force",
+        "Fresno State"
+      ],
+      "seasons": [
+        {
+          "year": 2017,
+          "wrestler_id": "840015107",
+          "team": "Air Force",
+          "team_slug": "air_force",
+          "team_abbr": "AF",
+          "is_query_team": true,
+          "dpg": -0.37,
+          "matches": 13,
+          "rank": 74,
+          "record": "6-4"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4627377132",
+          "team": "Fresno State",
+          "team_slug": "fresno_state",
+          "team_abbr": "FRES",
+          "is_query_team": false,
+          "dpg": -2.29,
+          "matches": 9,
+          "rank": 97,
+          "record": "1-7"
+        },
+        {
+          "year": 2020,
+          "wrestler_id": "10460712132",
+          "team": "Fresno State",
+          "team_slug": "fresno_state",
+          "team_abbr": "FRES",
+          "is_query_team": false,
+          "dpg": -0.07,
+          "matches": 23,
+          "rank": 107,
+          "record": "8-10"
+        }
+      ]
+    }
+  ]
+}

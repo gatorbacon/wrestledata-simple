@@ -1,0 +1,49 @@
+{
+  "query": {
+    "team_slug": "west_virginia",
+    "team_name": "West Virginia",
+    "start_year": 2018,
+    "end_year": 2018
+  },
+  "wrestlers": [
+    {
+      "name": "Zeke Moisey",
+      "wrestler_id": "4714994132",
+      "weight_class": 125,
+      "photo_url": "https://huskers.com/imgproxy/u8mYbcz0GxN8_gYHadbJRBLS6NyttV8vgyTzhn5yecw/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNS8yOS8zQWZUcnFHUTR6MlNBamgyaUlYZWtmckY3SWg2ZW1iRlkyWVpmU0M3LmpwZw.jpg",
+      "direction": "transfer_out",
+      "first_query_year": 2018,
+      "last_query_year": 2018,
+      "school_path": [
+        "West Virginia",
+        "Nebraska"
+      ],
+      "seasons": [
+        {
+          "year": 2018,
+          "wrestler_id": "11412768009",
+          "team": "West Virginia",
+          "team_slug": "west_virginia",
+          "team_abbr": "WVU",
+          "is_query_team": true,
+          "dpg": 1.93,
+          "matches": 37,
+          "rank": 8,
+          "record": "25-13"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4714994132",
+          "team": "Nebraska",
+          "team_slug": "nebraska",
+          "team_abbr": "NEB",
+          "is_query_team": false,
+          "dpg": 0.46,
+          "matches": 25,
+          "rank": 18,
+          "record": "13-14"
+        }
+      ]
+    }
+  ]
+}

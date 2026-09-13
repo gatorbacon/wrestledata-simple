@@ -1,0 +1,61 @@
+{
+  "query": {
+    "team_slug": "bellarmine",
+    "team_name": "Bellarmine",
+    "start_year": 2023,
+    "end_year": 2023
+  },
+  "wrestlers": [
+    {
+      "name": "Michael Schiffhauer",
+      "wrestler_id": "34949430132",
+      "weight_class": 141,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fsacredheartpioneers.com%2Fimages%2F2025%2F10%2F22%2F09282025_shumediaday0928_713.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2023,
+      "last_query_year": 2024,
+      "school_path": [
+        "Bellarmine",
+        "Sacred Heart"
+      ],
+      "seasons": [
+        {
+          "year": 2023,
+          "wrestler_id": "20127346132",
+          "team": "Bellarmine",
+          "team_slug": "bellarmine",
+          "team_abbr": "BU",
+          "is_query_team": true,
+          "dpg": -2.29,
+          "matches": 16,
+          "rank": 130,
+          "record": "5-8"
+        },
+        {
+          "year": 2024,
+          "wrestler_id": "24587981132",
+          "team": "Bellarmine",
+          "team_slug": "bellarmine",
+          "team_abbr": "BU",
+          "is_query_team": true,
+          "dpg": 1.63,
+          "matches": 2,
+          "rank": 106,
+          "record": "2-0"
+        },
+        {
+          "year": 2026,
+          "wrestler_id": "34949430132",
+          "team": "Sacred Heart",
+          "team_slug": "sacred_heart",
+          "team_abbr": "SH",
+          "is_query_team": false,
+          "dpg": -2.55,
+          "matches": 19,
+          "rank": 107,
+          "record": "8-11"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "query": {
+    "team_slug": "lock_haven",
+    "team_name": "Lock Haven",
+    "start_year": 2016,
+    "end_year": 2016
+  },
+  "wrestlers": [
+    {
+      "name": "Lewis Williams",
+      "wrestler_id": "4710703132",
+      "weight_class": 141,
+      "photo_url": "https://bloomsburgathletics.com/images/2018/11/13/Williams_Lewis_crop.jpg",
+      "direction": "transfer_out",
+      "first_query_year": 2016,
+      "last_query_year": 2018,
+      "school_path": [
+        "Lock Haven",
+        "Bloomsburg"
+      ],
+      "seasons": [
+        {
+          "year": 2016,
+          "wrestler_id": "333595094",
+          "team": "Lock Haven",
+          "team_slug": "lock_haven",
+          "team_abbr": "LH",
+          "is_query_team": true,
+          "dpg": -3.05,
+          "matches": 22,
+          "rank": 187,
+          "record": "4-16"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "524631011",
+          "team": "Lock Haven",
+          "team_slug": "lock_haven",
+          "team_abbr": "LH",
+          "is_query_team": true,
+          "dpg": -2.59,
+          "matches": 40,
+          "rank": 239,
+          "record": "9-22"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11445952009",
+          "team": "Lock Haven",
+          "team_slug": "lock_haven",
+          "team_abbr": "LH",
+          "is_query_team": true,
+          "dpg": -2.88,
+          "matches": 16,
+          "rank": 246,
+          "record": "4-11"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4710703132",
+          "team": "Bloomsburg",
+          "team_slug": "bloomsburg",
+          "team_abbr": "BLOO",
+          "is_query_team": false,
+          "dpg": -2.29,
+          "matches": 38,
+          "rank": 285,
+          "record": "7-15"
+        }
+      ]
+    }
+  ]
+}

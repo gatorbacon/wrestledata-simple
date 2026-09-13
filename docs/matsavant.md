@@ -63,6 +63,259 @@ Everything the frontend reads lives under `frontend/wrestledata-ui/public/data/`
 
 ---
 
+## Site Strategy & Information Architecture (Source of Truth)
+
+Living rules for information architecture, naming, and UI. Follow this when adding pages or menu items. Do not invent a parallel nav or a second copy of an existing leaderboard.
+
+Last aligned: September 2026. Originally drafted with Grok as `docs/MATSAVANT_SITE_STRATEGY.md`; merged here 2026-09-11 as the single official copy — do not recreate a separate strategy doc.
+
+### Two products, one site
+
+1. **Directory** — rankings, wrestler profiles, team pages, who-beat-whom, duals. This is the WrestleStat-shaped traffic. It compounds.
+2. **Magazine** — Field Notes (threads), Tools (sims/generators), Lab (experiments), live Events. This is the X/Twitter voice. It does not compound unless it has a stable home.
+
+Every new idea belongs in one bucket:
+
+| Bucket | Question it answers |
+|---|---|
+| Rankings | Who is ahead? |
+| Wrestlers / Teams | Who is this person / program? |
+| Events | What happened at this tournament? |
+| Field Notes | What is the argument? |
+| Tools | What can I run? |
+| Lab | What are we trying? |
+
+If it does not sit on one of these, it does not get a top-nav link.
+
+### Top navigation
+
+Five items. No more.
+
+```
+MatSavant    RANKINGS ▾    WRESTLERS    TEAMS    EVENTS ▾    NOTES ▾     [search]    About
+```
+
+- Search is the real entry to profiles. Keep typeahead on every page.
+- Do not add Tools, Lab, Matrix, DPG, Career DPG, or Transfers as top-level items.
+- Group labels inside dropdowns (`WRESTLERS`, `RACES`) are not links.
+
+#### Rankings ▾
+
+```
+WRESTLERS
+  By weight          Top 33 by weight + P4P     ← default
+  Matrix             Projected matchups (desktop only)
+
+RACES
+  Team race          NCAA title / xTP
+  Hodge              Season P4P award
+```
+
+- Header **Rankings** click goes to **By weight**.
+- Page title stays `Rankings` / `2027 Rankings` (season year). Do not call it Board.
+- **Matrix** is hidden on mobile (menu row omitted or routed to By weight).
+- Do not add a separate "DPG rankings" clone of By weight. DPG is a column + sort on By weight.
+- If a real DPG *metric home* is built later (definition + all-weights list + field/beeswarm), it may return under Rankings as `DPG`. That page must not be another top-33 photo table.
+
+#### Wrestlers
+
+Landing page, not a dropdown.
+
+- Search first.
+- Weight pills: All · 125 · 133 · 141 · 149 · 157 · 165 · 174 · 184 · 197 · 285.
+- **Spotlight · season DPG**: All = top 3 per weight; one weight = top 8. Names link to profiles.
+- Link: `Full rankings →` (By weight). Do not dump the full 33-deep table here.
+
+#### Teams
+
+Landing page, not a dropdown.
+
+- Search first.
+- Conference pills, then every D1 team in a conference grid.
+- Tile: name, logo if we have it, dual record + xTP (or title %), school color as a *subtle* accent.
+- Click → team profile.
+- Link: `Full team race →`.
+- A short Top 15 xTP strip may sit above the grid. The grid is the page.
+
+#### Events ▾
+
+List **events**, not analysis page types.
+
+```
+  NCAA Championships
+  Big Ten Championships
+  Big 12 Championships
+  National Duals
+```
+
+- One shell per event: **Live** when it is on, **Archive** when it is not.
+- Seed analysis, scoring, team leaderboard, brackets = tabs *inside* the event.
+- Offseason: all four still listed. Default Events click = NCAA archive.
+- Live event may show a Live marker on that row.
+- Do not put Midlands / duals / random invitationals in this menu. Those are schedule or Field Notes.
+
+#### Field Notes ▾
+
+```
+  Field Notes    threads and write-ups     ← default
+  Tools          sims and generators
+  Lab            experiments
+```
+
+- Header **Field Notes** click goes to `/notes`.
+- Tools and Lab are findable here, not only in a footer link.
+- Career DPG and other experiments are cards *on* `/lab`, not extra menu rows.
+
+### Homepage stack
+
+1. Upcoming Duals
+2. Rankings (P4P default, weight pills, `Full rankings →`)
+3. Latest Note (one featured thread)
+4. Team race strip (top programs, link to full page)
+
+Do not pile Lab experiments, stat-leader tables, backtests, or archive charts onto first paint. Those are Field Notes, Lab, or footer.
+
+### DPG public naming rule
+
+Public definition (table caption):
+
+> **DPG (dual points per match):** Measures how many extra dual points a wrestler adds or subtracts each time they wrestle, compared with what a typical wrestler gets against that same opponent.
+
+Longer copy (ⓘ or DPG metric page only):
+
+> Dual-point result (DEC 3, MD 4, TF 5, F 6 — or 0 for a loss) minus what a typical wrestler gets against that same opponent. Beat a #10 by major and you get a lot. Tech a #200 and you get a little. Season DPG is the **average** of those matches, not a total.
+
+Do not use residual, expected value, mat_value, or TPAR in UI copy. TPAR was the old internal name; DPG is the public name. Backend may still say mv/mat_value — see [Stat Calculations → DPG](#1-dpg--dual-points-gained) for the actual formula.
+
+**Adoption rule:** DPG lives on the main ranking table as a first-class column and sort. People copy the number next to the #1 wrestler. A duplicate leaderboard labeled DPG trains people that it is a side mode.
+
+### Career DPG chart (profiles + Lab)
+
+Season lollipops / bubbles:
+
+- **y** = season DPG
+- **x** = calendar year, even spacing
+- **size** = matches (cap radius so two-season cards cannot swallow the plot)
+- **fill** = school color, ~75–80% opacity, overlap allowed
+- DNP years = tick, not an empty DPG
+- Stem from 0 to the *edge* of the disc, not through the fill
+- Labels: year + school under the axis; value by the disc
+- Small-n seasons may use a hollow/dashed disc; do not use the same dash for the champion reference line
+- Match-weighted averages; n < 6 shown on the chart, excluded from Δ
+- If all seasons ≥ 0, yMin = 0 (do not reserve −1 empty space)
+
+#### AA / champion reference marks
+
+Compute **once** per report (not per wrestler):
+
+- Pool all 10 weights
+- Last 5 completed NCAA tournaments (exclude 2020 if no tournament)
+- AA band = 25th–75th percentile of **that season's** DPG for wrestlers who were All-American **that season** (8 placewinners × 10 weights)
+- Champion mark = **median** DPG of NCAA champions in the same window
+- No match-count filter on those honor seasons unless data quality requires it
+
+Draw only if the mark intersects the card's existing y-scale:
+
+- AA band: clipped full-width rect, ~8–12% opacity, behind discs, no school color, no chip on the data
+- Champ: thin dashed or 1px line; do not raise yMax just to reach it
+- Exception: if `dataMax >= aaLow - 0.4`, nudge `yMax` to `aaLow + 0.3` so the floor of the AA band is visible
+- Page caption once: shaded = typical AA season · dashed = typical champion
+
+#### Lab home for the roster view
+
+- Name: **Career DPG**
+- URL: `/lab/career-dpg`
+- Subtitle: `Season bubbles · size = matches · color = school`
+- Individual or team (roster of cards)
+- Stamp: `Lab · not a ranking`
+- Stays in Lab until the same chart is embedded on wrestler profiles; then Lab can keep the team/roster browser only
+
+### Field Notes / Tools / Lab
+
+| | Field Notes | Tools | Lab |
+|---|---|---|---|
+| What | Longform threads + images | Interactive: input → output | Experimental views |
+| Examples | X write-ups | Dual sim, team DPG graphic | Career DPG, field beeswarm drafts |
+| URL | `/notes`, `/notes/:slug` | `/tools`, `/tools/:slug` | `/lab`, `/lab/:slug` |
+
+Graduation:
+
+- Lab view that becomes canonical (e.g. beeswarm on a future DPG metric page) leaves Lab.
+- Tool people return to every dual weekend stays in Tools.
+- Do not list tools inside the Field Notes article feed. A sim is not a thread.
+
+#### Publishing a Field Note (source of truth: `scripts/notes/`)
+
+There is no CMS/backend — Field Notes are authored as markdown in Obsidian and converted to the site's static JSON by a script. Two scripts, added 2026-09-13:
+
+- `scripts/notes/new_note.py "Title"` — scaffolds `frontend/wrestledata-ui/notes_drafts/<slug>/note.md` (frontmatter: `title`, `hook`, `tags`) and opens it in Obsidian via the `obsidian://` URI. `frontend/wrestledata-ui/notes_drafts/` must be opened as its own Obsidian vault (not nested in a subfolder) with "New attachment location" = *Same folder as current file* and Wikilinks off, so a pasted screenshot auto-saves next to `note.md` and inserts a standard `![alt](file.png)` reference — no manual screenshot/drag/link steps. `OBSIDIAN_VAULT` in the script must match the vault's name exactly.
+- `scripts/notes/publish_note.py <slug>` — converts the draft into the live format:
+  - Body markdown → `frontend/wrestledata-ui/public/data/notes/body/<slug>.json` (`blocks`: `{"type":"p","html":...}` / `{"type":"img","src","alt","caption"}`). Paragraph markdown supports `**bold**`, `*italic*`, `` `code` ``, and `[text](https://...)` links, converted to pre-escaped HTML at publish time (safe because Field Notes are self-authored, not user-submitted).
+  - `![alt](file.png)` on its own line = an image block; a lone `*caption*` line immediately after it becomes the caption. This is detected line-by-line (not by blank-line paragraph chunking), because Obsidian's paste and typical X-thread-style writing put an image directly under its caption text with no blank line in between. Referenced image files are copied from the draft folder into `frontend/wrestledata-ui/public/data/notes/images/<slug>/`. `http(s)://` and `/`-prefixed image refs are left as-is (external or already-published), and still count toward the note's thumbnail even though nothing is copied.
+  - Obsidian names pasted screenshots with spaces (`Pasted image ....png`) but URL-encodes the space as `%20` in the markdown link it inserts — the script unquotes the reference before looking the file up on disk, then re-quotes it for the published `src`.
+  - Adds/updates the entry in `frontend/wrestledata-ui/public/data/notes/notes.json` (matched by slug, so re-running after edits is safe).
+  - Reruns `scripts/generate_matsavant_sitemap.py` (skip with `--no-sitemap`).
+
+`frontend/wrestledata-ui/notes_drafts/` is the draft workspace — it sits outside `public/` so nothing in it is deployed until `publish_note.py` runs. `note.js`'s paragraph renderer reads `block.html` when present (falls back to escaping `block.text` for any older hand-written body files).
+
+### Naming
+
+| Avoid | Use |
+|---|---|
+| Board | By weight / Rankings |
+| Rankings (Traditional) | By weight |
+| TPAR | DPG |
+| Expected Team Points as a menu name | Team race (xTP is a column) |
+| Tournaments | Events |
+| Profiles | Wrestlers / Teams |
+| Sandbox / Experiments as menu labels | Lab |
+| Trajectory / Bubbles as page titles | Career DPG |
+| Heisman (unless that is the official name we chose) | Hodge for the season P4P award |
+
+### URL map (target)
+
+```
+/                       homepage
+/rankings               By weight + P4P
+/rankings/matrix        desktop
+/rankings/teams         Team race / xTP
+/rankings/hodge         season P4P award
+/wrestlers              index
+/wrestlers/:slug        profile
+/teams                  index
+/teams/:slug            profile
+/events/ncaa
+/events/big-ten
+/events/big-12
+/events/national-duals
+/notes
+/notes/:slug
+/tools
+/lab
+/lab/career-dpg
+```
+
+This is a **target**, not necessarily the current live routing — check actual files under `frontend/wrestledata-ui/public/` before assuming a route exists.
+
+### Build order (when adding work)
+
+1. Keep Rankings dropdown + By weight as the default board. DPG column/sort stays here.
+2. Wrestler profiles: match list → opponent profile (the click loop).
+3. `/notes` index + homepage featured Note.
+4. Event shells (four events); old tournament analysis pages become tabs or Field Notes.
+5. `/tools` and `/lab` indexes. Career DPG is a Lab card.
+
+### Do not
+
+- Add a seventh top-nav item for a new idea. It starts in Lab or Field Notes.
+- Ship two leaderboards that are the same wrestlers in a different sort.
+- Put school colors on a league-wide honor chart (field / qualifier / AA / champ uses gray / blue / gold / ring).
+- Autoscale a Career DPG card to include −1 when every season is positive.
+- Leave Matrix as a mobile layout.
+- Treat group headers in dropdowns as pages.
+
+---
+
 ## Data Directory Structure
 
 ```
@@ -163,6 +416,7 @@ scripts/rankings/apply_flo_rankings.py -season {year}          # refresh flo_ran
 scripts/rankings/calculate_elo_ratings.py -season {year} --league ncaa --gender men   # writes hybrid_rank to elo_ratings.json
 scripts/rankings/build_wrestler_profiles.py -season {year}     # writes current_rank into that season's own profiles
 scripts/mat_value/compute_all_mat_values.py --season {year}    # writes current_rank into mat_value_{year}.json
+scripts/rankings/hodge_candidates.py -season {year}             # rebuilds Hodge Watch off the now-current rank/profile data
 ```
 `calculate_elo_ratings.py` must run after `apply_flo_rankings.py` in the *same* pass — it reads `rankings_<weight>.json`'s `flo_ranked` tags to build `hybrid_rank`, and a stale/missing tag silently falls the wrestler to the Elo tier instead of trusting Flo. Do this for every season whose underlying rank data changed before moving to Step 2 — don't interleave.
 
@@ -170,7 +424,15 @@ scripts/mat_value/compute_all_mat_values.py --season {year}    # writes current_
 
 `compute_all_mat_values.py` and `apply_flo_rankings.py`/`calculate_elo_ratings.py` do **not** have this cross-season snapshot problem — each season's own file is self-contained — so Step 2 only needs to re-run `build_wrestler_profiles.py`.
 
-**Not required for a rank-only fix, but part of the same family of "what needs to be re-run" questions:** `scripts/generate_search_index.py -league ncaa -season {year}` (search index doesn't display rank, so it wasn't stale from this specific fix, but it's another per-season snapshot artifact worth knowing about), and the weekly pipeline's later steps (bonus EV, xTP, team profiles/metrics — see the main weekly pipeline order in root `CLAUDE.md`) if DPG/mat_value numbers themselves changed, not just rank.
+**Not required for a rank-only fix, but part of the same family of "what needs to be re-run" questions:** `scripts/generate_search_index.py -league ncaa -season {year}` (search index doesn't display rank, so it wasn't stale from this specific fix, but it's another per-season snapshot artifact worth knowing about), `scripts/rankings/hodge_candidates.py -season {year}` (see below — depends on the exact same `elo_ratings.json` + wrestler-profile data this chain produces, so it goes stale right along with them), and the weekly pipeline's later steps (bonus EV, xTP, team profiles/metrics — see the main weekly pipeline order in root `CLAUDE.md`) if DPG/mat_value numbers themselves changed, not just rank.
+
+### Hodge Trophy Candidates
+
+**Script:** `scripts/rankings/hodge_candidates.py -season {year}` — writes `frontend/wrestledata-ui/public/data/awards/hodge/{season}/hodge_{season}.json`, read directly by `hodge.html`/`hodge.js`.
+
+**Data sources:** candidate pool (top-N by weight) comes from `mt/elo_ratings/ncaa_men/{season}/elo_ratings.json`'s `hybrid_rank_by_weight` — the same rank-of-record described above, not the banned matrix rank. Per-candidate stats (win/loss, bonus/fall rate, quality-of-competition, dominance) are computed by reading that candidate's own already-published `frontend/wrestledata-ui/public/data/wrestlers/{season}/by_id/{wrestler_id}.json` and iterating its `match_list` (`result`, `method`, `opponent_rank` are all already resolved there — no separate opponent lookup needed).
+
+**Incident (found + fixed 2026-09-11):** this script previously read `mt/rankings_data/{season}/rankings_{weight}.json` + `weight_class_{weight}.json` for both rank *and* match data. Two independent problems: (1) that's the internal matrix-rank source this doc bans from ever feeding a public JSON, predating the 2026-09-09 rank fix and never brought into compliance with it; (2) separately from the rank-source issue, that specific data directory had simply stopped being regenerated mid-season (last touched Dec 2025, an abandoned earlier rankings pipeline run) — so even the win/loss counts themselves were frozen mid-season (e.g. the reigning #1 candidate showing 10-0 instead of his real final 26-0). Rewritten to read the current-methodology sources above; also wasn't listed anywhere as a step to re-run after a ranking change (this section) or in the Key Scripts table (below) — both fixed at the same time. Was not previously part of any documented weekly/rebuild procedure; **now it is** — see Step 1 above, chain order matters (it needs `calculate_elo_ratings.py` and `build_wrestler_profiles.py` to have already run for that season).
 
 ---
 
@@ -414,6 +676,8 @@ xTP projects how many NCAA tournament team points a wrestler (and by extension t
 **Engine:** `xtp/engine/` (bracket_schema, probability, scoring, engine)
 
 #### Win probability model
+
+**Not to be confused with the live, in-match win-probability model** (see [Live Win-Probability Model](#live-win-probability-model-lab) below) — this one is xTP-internal, pre-match only, and has no notion of score/clock/position. It answers "who wins this hypothetical matchup" from rank+DPG alone; the other answers "given the match state right now, who wins" from an actual bout's play-by-play.
 
 For any potential matchup between wrestlers i and j:
 
@@ -697,6 +961,195 @@ The replay is also used to build the seed analysis report (`generate_report.py`)
 
 ---
 
+## NCAA Bout-Level Play-by-Play (Event Data)
+
+**This was undocumented until 2026-09-11** — found while scoping a possible live win-probability / in-match DPG-added model (analogous to DataGolf's Strokes Gained or nfelo/NFL EPA). Do not confuse this with `simulation_replay.json` above, which only has match-level final results (winner, score, result type) — this is the one source with in-match, timestamped scoring events.
+
+**Location:** `data/{year}/ncaa-tourney/bout_detail/{weight}.json` — one JSON list per weight class per year.
+
+**Coverage: 2021–2026 only, NCAA Championship bouts only.** Not 2012/2013 onward, and not the full match corpus:
+- 2020 has no file because there was no NCAA tournament that year (COVID cancellation).
+- 2012–2019 have no bout-detail files at all — nobody has run the scraper for those years, and it's unconfirmed whether TrackWrestling's classic bracket viewer even still serves play-by-play that far back. Open question, not a known dead end.
+- **3,720 bouts total** across 2021–2026 (10 weights x ~62 bouts/year x 6 years) — this is the NCAA Championship bracket only, not the 10,000+-match corpus that powers DPG generally. That larger corpus has final scores only, no in-match event timeline, and is not useful for a play-by-play model.
+- Pigtail rounds (PIG / C_PIG) are permanently absent — TrackWrestling's play-by-play viewer has no page for them at all (not a scraper bug).
+
+**Scraper:** `scripts/scraping/scrape_ncaa_bout_detail.py` (pulls raw play-by-play) → `scripts/ncaa/reconcile_bout_detail.py` (joins against `data/{year}/ncaa-tourney/parsed/matches.json` by weight + wrestler names to attach `round`/`bracket`, writing back onto the same records in place). Both must run in that order; the reconciler requires `matches.json` to already exist for the year.
+
+**Schema** (one object per bout):
+```json
+{
+  "headline": "Luke Lilledahl (Penn State) defeated Mack Mauger (Missouri)",
+  "winner": { "name": "...", "team": "...", "score": 11 },
+  "loser": { "name": "...", "team": "...", "score": 2 },
+  "weight": 125, "bout_number": 1, "match_id": "...",
+  "round": "R32", "bracket": "champ",
+  "columns": [
+    {
+      "label": "Period 1 | Choice 1 | Period 2 | Choice 2 | Period 3 | OT...",
+      "notes": ["green riding time: 1:42", "3, 36 (3:00)"],
+      "events": [
+        { "side": "winner|loser", "text": "Escape (1:53)" },
+        { "side": "winner|loser", "text": "Takedown 3 (0:47)" },
+        { "side": "loser", "text": "Defer" },
+        { "side": "winner", "text": "Bottom" }
+      ],
+      "period_points": { "winner": 4, "loser": 0 }
+    }
+  ]
+}
+```
+
+**This is raw, not parsed** at the source — each event is free text with an embedded clock time (e.g. `"Takedown 3 (0:47)"`). It IS parsed downstream now: `scripts/analysis/parse_bout_pbp.py` turns this into clean per-event rows (running score, position, time-remaining, stalling state) — see [Live Win-Probability Model](#live-win-probability-model-lab) below for the full pipeline built on top of it.
+
+**Known gotcha (winner/loser column order):** the two wrestler columns in the underlying play-by-play tables are NOT consistently ordered winner-then-loser — position (left/right) reflects TrackWrestling's own display assignment, not who won. `scrape_ncaa_bout_detail.py` resolves this by matching the "X defeated Y" headline against each column's name, which is already handled in the `winner`/`loser` split above — but any new code parsing `columns[].events[].side` must trust the `side` field, not column position, since `side` was already resolved correctly against the headline at scrape time (it's not raw column order).
+
+### Conference championships (2026-09-11): same source, more data, lower-DPG wrestlers too
+
+The NCAA Championship bracket above is national-qualifier-level talent only. Conference championships run on the identical TrackWrestling Classic viewer and use the same current (post-2023-24, 3-point-takedown) scoring rules, so they extend the same dataset with more bouts and a wider DPG range (unranked/lower-seed wrestlers the NCAA bracket never reaches) — no new scoring-era complication.
+
+**Scraper:** `scripts/scraping/scrape_conference_bout_detail.py` — reuses `scrape_ncaa_bout_detail.py`'s `scrape_tournament()` core unchanged, just a different `tournamentId` and output path (`data/{year}/{conference}-tourney/bout_detail/{weight}.json`). **No round/bracket reconciliation** for these (unlike NCAA) — there's no parsed `matches.json`-equivalent source to join against yet, so bouts save without a `round`/`bracket` field.
+
+**Finding a new conference's tournament ID** (no public listing exists): get a fresh session by GETing `/Login.jsp`, then hit the Events Classic search directly —
+```
+https://www.trackwrestling.com/Login.jsp?TIM=<ms>&twSessionId=<sid>&tName=<query>&sDate=<mm/dd/yyyy>&eDate=<mm/dd/yyyy>&state=&lastName=&firstName=&teamName=&sfvString=&city=&gbId=&camps=false
+```
+then read the numeric ID out of the matching result's `eventSelected(ID, 'name', ...)` link. **Confirm the bracket actually has play-by-play before trusting the ID** — a tournament can exist on TrackWrestling with only final scores and no period-by-period detail (worth checking every time, not just once): resolve a couple of real (non-bye) bout numbers via `resolve_match_id()` + `parse_bout_html()` and check `columns` is non-empty, the way `scrape_conference_bout_detail.py`'s module docstring describes.
+
+**Confirmed working, real period-by-period data verified (updated 2026-09-13):**
+| Conference | Registered as | 2026 ID | 2025 ID | 2024 ID |
+|---|---|---|---|---|
+| Big Ten | `big_ten` | 964607132 | 911000132 | 825871132 |
+| Big 12 | `big_12` | 974060132 | 900890132 | 848140132 |
+| ACC | `acc` | 948555132 | 882841132 | 815457132 |
+| MAC | `mac` | 964861132 | 911012132 | 830507132 |
+| Pac-12 | `pac_12` | 974263132 | — (doesn't exist) | — (doesn't exist) |
+| SoCon | `socon` | — (doesn't exist) | 896232132 | 794933132 |
+
+**Pac-12 and SoCon have real coverage gaps, not missed search terms** — confirmed via a full-year date-range search, not just an untried query:
+- Pac-12: only 2026, 2023, and 2018 editions exist on TrackWrestling at all — no 2024 or 2025. Consistent with the conference's 2024 realignment turmoil (most Pac-12 schools left; wrestling-specific membership was in flux). 2026 is the only edition inside our current-scoring-era window.
+- SoCon: 2024 and 2025 exist, but a full calendar-year 2026 search turns up nothing under this name — genuinely missing this year, not a naming variant.
+
+**Confirmed absent from TrackWrestling entirely (2026-09-13) — not just an untried search term:** EIWA and Ivy League. These are the same missing tournament, not two — Ivy League schools wrestle their postseason through EIWA in real life, not a separate Ivy-only championship. Skipped; not recoverable from this data source.
+
+---
+
+## Live Win-Probability Model (Lab)
+
+Answers "given the match state right now (score, clock, position, DPG, riding time, stalling), what's the win probability?" for a specific real bout — analogous to an ESPN win-probability chart, or NFL EPA/DataGolf Strokes Gained. **Not the same thing as the xTP engine's "win probability model"** above — that one is pre-match rank+DPG only, this one runs on real in-match play-by-play. Live on the site at `/win_probability.html` (linked from `/lab/index.html`), currently showing the 10 2026 NCAA finals.
+
+### Pipeline, in order
+
+1. **`scripts/analysis/parse_bout_pbp.py`** — parses the raw play-by-play (see "NCAA Bout-Level Play-by-Play" above) into one row per scoring/position event, with running score/position/riding-time/stalling state computed as of that event. Point values and side semantics were calibrated empirically against each bout's own `period_points` totals, not assumed from rules knowledge (100% exact reconciliation across 3,720+ NCAA bouts, then extended to every conference). Writes `data/pbp/events_{tournament}.jsonl`.
+   ```
+   python scripts/analysis/parse_bout_pbp.py --tournament ncaa
+   python scripts/analysis/parse_bout_pbp.py --tournament big_ten
+   ```
+   (one `events_*.jsonl` per tournament key — `ncaa`, `big_ten`, `big_12`, `acc`, `mac`, `pac_12`, `socon`; `--years` optional, auto-detects otherwise)
+
+2. **`scripts/win_prob/build_training_data.py`** — reads every `events_*.jsonl` found in `data/pbp/` (or `--tournaments` to restrict) and builds `data/pbp/training_rows.csv`: one row per event PER PERSPECTIVE (a mirrored winner-view and loser-view row for every event, so the label isn't trivially "the subject always wins"). Resolves each wrestler's season DPG via `DpgIndex`; **drops the whole bout** (both perspectives) if either wrestler's DPG doesn't resolve — see Known Gotcha #14. As of 2026-09-14: 121,356 rows / 6,292 bouts across all 7 tournaments, 62 bouts dropped for unresolvable DPG.
+
+3. **`scripts/win_prob/fit_baseline_model.py`** — fits `data/pbp/models/baseline_logreg.joblib`, a logistic regression. This is the model actually used everywhere downstream (a gradient-boosted alternative was tried and rejected — see `compute_match_win_prob.py`'s docstring). Prints test-set ROC-AUC/log-loss/Brier and a full calibration table; as of the 2026-09-14 refit (all 7 tournaments, overtime-length bug fixed): test ROC-AUC 0.9547. **Always re-run this after re-running step 2** (new data, a feature change, or a bugfix in how a feature is computed all require a refit — the coefficients are baked into the `.joblib` file, not recomputed live).
+
+4. **`scripts/win_prob/wrestling_clock.py`** — shared period-length/elapsed-time/match-length constants and helpers, imported by both step 3 and step 5. Centralized 2026-09-14 after the same period-boundary bug had to be fixed independently in both files once already — this is the one place period lengths, period order, and the regulation-vs-overtime match-length distinction should ever be defined. If you're touching period/OT logic anywhere in this pipeline, it should import from here, not redefine its own copy.
+
+5. **`scripts/win_prob/compute_match_win_prob.py`** — the core per-bout computation, `compute_trace(df, model, tournament, year, weight, bout_number, subject)`, importable (not just a CLI) so callers don't have to shell out. For one bout: builds the discrete event list (each event's own win probability) AND a densely-resampled trace (every `RESAMPLE_SEC=3` seconds) that reacts continuously to the clock and riding time even between scoring events, not just at them. Applies two rule-based overrides that are NOT model predictions: a bout that ends in overtime gets its final event forced to 100% (sudden victory = match over, not a matter of confidence), and a bout decided by regulation's buzzer with a nonzero lead gets its trace's final point forced to 100% the same way. CLI usage:
+   ```
+   python scripts/win_prob/compute_match_win_prob.py --tournament ncaa --year 2026 --weight 125 --bout-number 59 --subject "Luke Lilledahl"
+   ```
+
+6. **`scripts/win_prob/plot_matches.py`** — local-only lookup + matplotlib batch plotting, for eyeballing a whole slate at once (`--tournament ncaa --year 2026 --round Final`) or one wrestler's matches (`--winner "Name"`). Not part of the site — saves a PNG locally. This is the tool to use for a quick sanity check before trusting a model change; it's what caught the elapsed-time and OT bugs in Known Gotcha #16.
+
+7. **`scripts/win_prob/export_matches_for_site.py`** — the only step that writes into `frontend/`. Reads `MATCH_SETS` (currently just the 2026 NCAA finals) and writes one static JSON per set to `frontend/wrestledata-ui/public/data/win_prob/{key}.json` — per the site's static-architecture rule, the browser never runs the model, it just fetches this. **Re-run this (after re-running steps 2-3 if the model changed) any time you want the site's numbers to reflect a fix** — it's not wired into any automatic rebuild.
+
+### Frontend
+
+`frontend/wrestledata-ui/public/win_probability.html` + `win_probability.js`, styled like the site's other Lab charts (`final_scores.html` is the closest sibling — same `--panel`/`--border`/card conventions). Renders one small-multiple SVG chart per match: a stepped/interpolated probability curve (blue = subject favored, red = trailing), real scoring-event dots, and a **fixed readout row under each chart** (not a floating tooltip — a floating box clips against the card edge near a chart's top/right corner, found 2026-09-13). Hovering or dragging anywhere over a chart's plot area scrubs the whole timeline (not just the tiny dots) and updates the readout: period + clock (time REMAINING in that period, converted from the match-elapsed clock the data ships in), score, a plain-language description of the last event (`"Valencia takes bottom"`, `"Takedown +3 — Vega"`, not the raw action name), and win probability. Adding a new match set to the page means adding it to `export_matches_for_site.py`'s `MATCH_SETS` and re-running that script — the frontend just renders whatever's in the JSON, no code change needed for a new match, only for a new page-level match SET/data file.
+
+### Known limitations (see Known Gotcha #16 for the full history)
+
+- **Riding time inside overtime periods is lower-confidence** than in regulation (Known Gotcha #15) — the reconstruction's 95%+ validated match rate is dominated by regulation-period checkpoints.
+- **A 1-point lead in the game's closing seconds is underpredicted relative to the data** (~81% model vs. ~99% empirical) even after the overtime fixes — open, not yet fixed. Don't trust the model's exact number in that specific situation; the buzzer-certainty override only fixes the literal final instant, not the approach to it.
+- **DPG resolution failures silently drop whole bouts** from training (Known Gotcha #14) — a real pipeline fragility upstream of this model, not something fixed here.
+
+---
+
+## Official Team Schedule Scraping (Source of Truth)
+
+Scrapes each D1 team's own official athletics schedule page (e.g. `gopsusports.com/sports/wrestling/schedule`) — dual meets and tournaments, with date, home/away/neutral, location, result, TV/streaming info, and a recap link. This is separate from the TrackWrestling match-data pipeline: it's schedule/fixture data (who's meeting whom and when, including unplayed future events), not match results.
+
+Schedule pages split into a handful of known template families by site vendor, confirmed empirically school-by-school (not assumed from one example):
+- **Template A** (Penn State-style, `gopsusports.com`): server-rendered plain HTML under `.schedule-event`, no JSON payload or XHR involved at all.
+- **Template B** (Nebraska/Iowa-style): server-rendered plain HTML under a different wrapper, `.schedule-event-item` — Nebraska and Iowa aren't even identical to each other under that same wrapper, so field selectors try several known sub-selectors rather than assuming one exact shape.
+- **Template C** (Oklahoma State/Ohio State): genuinely embedded structured JSON in a Nuxt/Pinia payload (`pinia.schedule.schedules["schedules-wrestling,"].games`) — the richest source when present (real opponent id/logo, W/L score, TV network name as clean typed fields).
+- **Template D** (legacy Sidearm — Cornell, Clarion, Edinboro, Morgan State, Navy, Lock Haven, etc.): prefers each school's plain-text accessibility feed (`/services/schedule_txt.ashx?schedule={id}`, a "Text Format For Braille" link) over parsing the HTML directly — some of these schools render the schedule as a client-side web component with no data in the raw HTML at all, and even schools whose HTML *does* work reliably have this same clean fixed-width-column feed available, so it's used as the primary path for the whole family.
+
+None of these vendor pages print a year on the event card, only "Mon DD" — the year is inferred from the requested season slug (e.g. "2026-27": Aug–Dec → 2026, Jan–Jul → 2027). A season-suffixed URL can also silently 200 with the *wrong* season's already-posted schedule before the requested season goes up (confirmed on Penn State) — guarded by checking the season string embedded in the page's own `<title>` before accepting a page as a match for the requested season.
+
+### Pipeline, in order
+
+1. **`scripts/scraping/scrape_official_schedule.py`** — scrapes one team's schedule page, trying all templates in order against the same fetched HTML and reporting which matched. Output: `mt/data/official_schedules/{team}/{season}.json`.
+   ```
+   python scripts/scraping/scrape_official_schedule.py --team penn_state \
+     --base-url https://gopsusports.com/sports/wrestling/schedule --season 2025-26
+   ```
+
+2. **`scripts/scraping/batch_scrape_schedules.py`** — runs step 1 across every current D1 team. Team → schedule base URL is resolved by reusing whatever official-roster URL that team's own roster scrape already recorded (swap trailing `/roster` for `/schedule`); a small number of manual-only schools (Wyoming, Little Rock, George Mason — webarchive/PDF-captured, no scrapeable roster URL on file) have their real domains hardcoded in `MANUAL_SCHOOL_BASE_URLS`. Maintains `mt/data/official_schedules/_status.json` (per-team last success date/season/event count/template, and the most recent check's result) and renders `mt/data/official_schedules/SCHEDULE_STATUS.md` for a human-readable view. Designed to be re-run periodically through the fall as more schools post their schedule — a team that hasn't posted yet just gets its "not yet posted" status refreshed, never loses previously-saved good data.
+   ```
+   .venv/bin/python scripts/scraping/batch_scrape_schedules.py --season 2026-27
+   ```
+
+3. **Coherency gate (built into step 2):** a new scrape is never allowed to silently overwrite a team's saved schedule if it has *fewer* events than the last good pull. A couple of legitimately-cancelled duals is a normal, real change — but it's indistinguishable from inside the scraper alone from a site redesign quietly breaking the parser and losing real events. When events would be dropped, the new scrape is parked as `{season}.pending.json`, the old (last-known-good) file is left as the live one, and the team/diff is recorded in `mt/data/official_schedules/_coherency_flags.json`.
+
+4. **`scripts/scraping/review_schedule_coherency.py`** — walks through each flagged team interactively, showing exactly what was dropped/added, and lets you choose: keep old, accept new, merge both (deduped), or skip for now.
+   ```
+   .venv/bin/python scripts/scraping/review_schedule_coherency.py
+   ```
+
+5. **`scripts/scraping/dedupe_events.py`** — first-pass cross-team event deduplication/reconciliation. Duals are matched pairwise: once each side's raw opponent string resolves to a canonical team slug, a real dual should appear in both teams' own schedules (one says home, the other away) and gets merged into one record, filling gaps from whichever side has richer data. Tournaments are matched N-way by (normalized event name, date) into one record with a participant list. Team-name resolution is deliberately conservative (exact/substring match against the current D1 team list, plus a small explicit alias list) — a genuinely ambiguous abbreviation (e.g. "OSU") isn't resolved automatically and isn't yet handled.
+   ```
+   .venv/bin/python scripts/scraping/dedupe_events.py
+   ```
+
+**Status as of 2026-09-13:** 24 of 79 D1 teams successfully pulled for 2026-27 (added Buffalo, Duke, Little Rock, North Dakota State, SIU Edwardsville, Wisconsin this run); the rest still show `wrong_season_not_posted_yet`. Re-running `batch_scrape_schedules.py` periodically through the fall is expected and safe.
+
+---
+
+## Official Team Roster Scraping (Source of Truth)
+
+Scrapes each D1 team's own official athletics roster page for the current season — class/eligibility year, hometown, high school, and a current-season photo per wrestler, none of which TrackWrestling's match data carries. Explicitly **not** sourced from wrestlestat.com or similar aggregators — every field here is public information the school itself publishes about its own athletes.
+
+Most D1 sites checked so far are Nuxt.js apps embedding roster data as a `<script type="application/json">` payload using Nuxt's devalue-style serialization (a flat array where objects/arrays reference other elements by index) — `scrape_official_roster.py` implements a minimal resolver for that (`resolve_nuxt_payload`) and finds the roster's player list structurally rather than by a fixed container key, since different schools nest it differently. Several more site variants exist beneath that, tried in order as fallbacks: a server-rendered Vue "s-person-card" component (Oklahoma State), and three distinct legacy-Sidearm HTML templates (`.sidearm-roster-list-item`, `.sidearm-roster-player-container`, `.roster-list-item`) each confirmed on different schools with their own field-selector quirks (documented inline in each parser — e.g. `extract_legacy_sidearm_weight()`'s multi-school weight-vs-height disambiguation).
+
+A season-suffixed roster URL can silently redirect back to the bare (current) URL instead of 404ing when that season hasn't been posted yet — `scrape_season()` treats a same-season request that lands back on the bare base URL as `redirected_to_current` (not a real pull) specifically to avoid mislabeling last season's still-live roster as this season's. Confirmed via this pipeline (2026-09-13): several schools' bare roster URL was still serving 2025-26 data when their 2026-27 page wasn't up yet.
+
+Three schools (Wyoming, Little Rock, George Mason) have no live-scrapable roster page at all — none of the fallback parsers ever matched — and their data was captured manually via `.webarchive`/PDF instead (see `ingest_manual_roster_webarchive.py` / `ingest_manual_roster_pdfs.py`). Their saved JSON's `team_roster_url` field is annotated `"... (manual webarchive capture)"` specifically so downstream tooling (both batch scripts below) knows not to treat it as a live-fetchable URL.
+
+### Pipeline
+
+1. **`scripts/scraping/scrape_official_roster.py`** — scrapes one team, one or more seasons. Output: `mt/data/official_rosters/{team}/{season}.json`.
+   ```
+   python scripts/scraping/scrape_official_roster.py --team penn_state \
+     --base-url https://gopsusports.com/sports/wrestling/roster --seasons 2025-26,2024-25,2026-27
+   ```
+
+2. **`scripts/scraping/batch_scrape_historical_rosters.py`** — batch driver scoped to the **2012–2019 historical backfill**, one season at a time, resolving each team against that season's own team list (not the current 79-team list — teams come and go over 14 years).
+   ```
+   .venv/bin/python scripts/scraping/batch_scrape_historical_rosters.py --season 2019
+   ```
+
+3. **`scripts/scraping/batch_scrape_current_rosters.py`** — the current-season counterpart, added 2026-09-13. Runs against the current 79-team list (`data/team_lists/ncaa_men/2026/teams.json`), resolving each team's base URL by reusing whatever real (non-manual) `team_roster_url` its own most-recently-scraped season already recorded. Two modes:
+   - `--mode missing` (default): only scrapes teams with no file yet for the requested season — cheapest way to fill gaps as more schools post through the fall.
+   - `--mode all`: re-checks every team, including ones already on file, to catch roster changes (transfers, corrections, new signees). Never silently overwrites a roster whose player count *dropped* — parks the new pull as `{season}.pending.json` and records the diff in `mt/data/official_rosters/_coherency_flags.json` for manual review (same reasoning as the schedule scraper's coherency gate: a real departure and a broken parser look identical from inside the scraper alone).
+   ```
+   .venv/bin/python scripts/scraping/batch_scrape_current_rosters.py --mode missing
+   .venv/bin/python scripts/scraping/batch_scrape_current_rosters.py --mode all
+   ```
+   Maintains `mt/data/official_rosters/_status.json` and renders `mt/data/official_rosters/ROSTER_STATUS.md`.
+
+**Status as of 2026-09-13 (first run of the new current-season batch script):** 60 of 79 teams have a 2026-27 roster on file (7 newly added this run: Buffalo, Cal Poly, Campbell, CSU Bakersfield, Harvard, Lock Haven, Navy). Chattanooga and Wisconsin picked up newly-added players on a `--mode all` recheck. Illinois is flagged for review (26 → 25 players, one dropped) — the new pull is parked, not yet accepted. 13 teams haven't posted 2026-27 yet; 5 (California Baptist, Central Michigan, The Citadel, Gardner-Webb, Maryland) have a live page none of the current parsers match — a new template variant, needs manual investigation.
+
+---
+
 ## Key Scripts (NCAA / MatSavant Pipeline)
 
 | Script | Purpose |
@@ -712,8 +1165,16 @@ The replay is also used to build the seed analysis report (`generate_report.py`)
 | `scripts/rankings/apply_flo_rankings.py` | Overwrites `mt/rankings_data/ncaa_men/{season}/rankings_{weight}.json`'s top ranks with the latest Flo snapshot (see [NCAA Ranking Methodology](#ncaa-ranking-methodology-source-of-truth)) |
 | `scripts/rankings/build_seed_placement_rankings.py` | Flo-unavailable-season substitute: top-8 by actual tournament placement, 9+ by committee seed. Currently the *old*, coarser version of the rule — see Known Compliance Gaps below |
 | `scripts/rankings/generate_matrix.py` | Builds the internal matrix ranking. Kept for possible future use; **not a valid source for any user-facing rank** |
+| `scripts/scraping/scrape_official_schedule.py` | Scrapes one team's official athletics schedule page → `mt/data/official_schedules/{team}/{season}.json`. See [Official Team Schedule Scraping](#official-team-schedule-scraping-source-of-truth) |
+| `scripts/scraping/batch_scrape_schedules.py` | Runs the above across every D1 team; maintains status log + coherency flags |
+| `scripts/scraping/review_schedule_coherency.py` | Interactively resolves flagged schedule scrapes that dropped events |
+| `scripts/scraping/dedupe_events.py` | Cross-team dual/tournament event reconciliation across scraped schedules |
+| `scripts/scraping/scrape_official_roster.py` | Scrapes one team's official roster page → `mt/data/official_rosters/{team}/{season}.json`. See [Official Team Roster Scraping](#official-team-roster-scraping-source-of-truth) |
+| `scripts/scraping/batch_scrape_historical_rosters.py` | Batch roster scrape for the 2012-2019 historical backfill |
+| `scripts/scraping/batch_scrape_current_rosters.py` | Batch roster scrape for the current season (`--mode missing`\|`all`) |
 | `scripts/rankings/calculate_elo_ratings.py` | Builds `mt/elo_ratings/ncaa_men/{season}/elo_ratings.json` (`elo_rank`, `matrix_rank`, `hybrid_rank`) |
 | `scripts/rankings/build_wrestler_profiles.py` | Writes each wrestler profile's `current_rank` — NCAA branch currently sources this incorrectly, see Known Compliance Gaps |
+| `scripts/rankings/hodge_candidates.py` | Builds the Hodge Watch (`data/awards/hodge/{season}/hodge_{season}.json`) from `elo_ratings.json`'s `hybrid_rank_by_weight` + each candidate's wrestler-profile `match_list`. Run after `calculate_elo_ratings.py` + `build_wrestler_profiles.py` — see [Rebuild order](#rebuild-order-after-any-ranking-affecting-change) |
 | `scripts/mat_value/compute_mat_value.py` | DPG for a single wrestler (CLI) |
 | `scripts/mat_value/compute_all_mat_values.py` | Batch DPG for all wrestlers, builds leaderboards |
 | `scripts/bonus/compute_top33_bonus.py` | Top-33 bonus EV for a single wrestler |
@@ -737,6 +1198,14 @@ The replay is also used to build the seed analysis report (`generate_report.py`)
 | `scripts/reports/build_team_roster_view.py` | Builds one team+season roster JSON by reading already-built `build_wrestler_view.py` output |
 | `scripts/reports/build_aa_dpg_band.py` | Builds the AA DPG range band + champion line shown on every report chart — see [AA DPG Range](#5-aa-dpg-range-reports-pages-only) |
 | `scripts/generate_matsavant_sitemap.py` | Regenerates `frontend/wrestledata-ui/public/sitemap.xml` — see SEO Setup below. Re-run after any wrestler/team profile rebuild or new Note |
+| `scripts/reports/build_all_transfer_dpg_reports.py` | Batch-precomputes every team x season Transfer DPG report (79 teams x 15 seasons = 1,185 files) so the report page never needs a visitor to run a script manually. Re-run once a new season's data lands |
+| `scripts/analysis/parse_bout_pbp.py` | Parses raw NCAA/conference bout play-by-play into per-event rows — step 1 of the [Live Win-Probability Model](#live-win-probability-model-lab) |
+| `scripts/win_prob/build_training_data.py` | Builds `data/pbp/training_rows.csv` from every parsed `events_*.jsonl` — step 2 |
+| `scripts/win_prob/fit_baseline_model.py` | Fits the win-probability logistic regression, `data/pbp/models/baseline_logreg.joblib` — step 3, re-run after any change to steps 1-2 |
+| `scripts/win_prob/wrestling_clock.py` | Shared period-length/elapsed-time constants for the win-probability pipeline — no CLI, imported by steps 3 and 5 |
+| `scripts/win_prob/compute_match_win_prob.py` | Computes one bout's win-probability trace (CLI + importable `compute_trace()`) — step 5 |
+| `scripts/win_prob/plot_matches.py` | Local matplotlib lookup/batch-plot for eyeballing a slate of matches before trusting a model change — step 6, not part of the site |
+| `scripts/win_prob/export_matches_for_site.py` | Writes the win-probability Lab page's static JSON data — step 7, the only step that touches `frontend/` |
 
 ---
 
@@ -791,6 +1260,22 @@ The replay is also used to build the seed analysis report (`generate_report.py`)
 
 12. **Conference membership is not captured by the current team-list scrape (open item, discovered 2026-09-10)**: `data/team_lists/ncaa_men/{season}/teams.json` (built by `scrape_ncaa_d1_teams.py`) and every downstream team file (`frontend/wrestledata-ui/public/data/teams/*.json`, `team_metrics.json`) carry a `conference` field, but it's `null` for 78 of 79 D1 teams — the live scraper never populates it. The last scrape that *did* capture it is the obsolete `mt/data/_obsolete/2026/*.json` roster dump, where each wrestler entry's `division` field is a comma-joined list like `"DI - Big Ten, DI - Big Ten, ..."`; taking the most common `DI - {conference}` token per team recovers all 79 teams across 9 conferences (Big Ten, Big 12, ACC, EIWA, MAC, SoCon, Ivy League, Pac-12, Independent). That backfill is saved at `frontend/wrestledata-ui/public/data/team_conferences.json` (`{team_slug: conference}`, plus a `source`/`note` explaining it's an interim backfill). **This is a stopgap, not a pipeline fix** — it reflects the 2025-26 season's rosters, so any transfer/realignment since won't show. Fix properly: have `scrape_ncaa_d1_teams.py` capture conference directly when it scrapes the 2027 team list (early 2027 season), and stop reading from `team_conferences.json`.
 
+13. **Transfer DPG report is single-season only, by design (2026-09-11)**: `build_transfer_dpg_report.py` still accepts `--start-year`/`--end-year` as separate flags, but the frontend (`reports/transfers/index.html`, and the Transfer Window tab in `reports/index.html`) only ever calls it with the same year for both — a multi-year range ("all transfers touching this team across 2023-2026") was tried and dropped as not a useful stat, and the full team x year-range combinatorial space (~120 pairs/team) was impractical to precompute. Every team x season (79 x 15 = 1,185 files) IS fully precomputed via `build_all_transfer_dpg_reports.py`, so the page never shows "no report generated, go run this script" the way it used to. Output files are still named `{team}_{start}_{end}.json` (e.g. `oklahoma_state_2025_2025.json`) — the frontend constructs that filename from a single "Season" dropdown value used for both halves.
+
+14. **A single unresolvable opponent silently kills a wrestler's whole-season DPG (open item, discovered 2026-09-12)**: `compute_all_mat_values.py` → `compute_mv_for_wrestler()` requires *every* opponent across *all* of a wrestler's matches that season (via `get_opponent_info()`) to be resolvable in that season's rankings files — if even one opponent isn't found in any weight class's rankings, it raises and the entire wrestler is dropped from `mat_value_{season}.json` (and never gets a `mat_value` field written to their profile), not just that one match excluded. Confirmed case: Ethen Miller (Virginia Tech, 2026, wrestler_id `34941289132`) is missing 2026 DPG entirely — not a career-linking bug (his `season_summary` correctly threads all 5 seasons across his Maryland→Virginia Tech transfer) and not missing match data (34 real matches load fine) — the actual cause is one Midlands Championships opponent, Jaden Pepe (Harvard, wrestler_id `34937336132`), who isn't in any 2026 weight-class rankings file at all (likely just unranked at the time of that snapshot). This is a general pipeline fragility, not specific to transfers — any wrestler whose matches include an unranked/unresolvable opponent (common at out-of-conference opens like Midlands) can silently lose their entire season's DPG with no error surfaced downstream. Not fixed yet — the fix would be to skip the single unresolvable match/opponent rather than aborting the whole wrestler, in `compute_mv_for_wrestler`'s per-match opponent-resolution loop (`scripts/mat_value/compute_all_mat_values.py`).
+
+15. **Riding time is reconstructed, not read directly, in the win-probability PBP pipeline (2026-09-12)** — `scripts/analysis/parse_bout_pbp.py`'s `parse_bout()` computes cumulative riding time per side (`riding_time_winner_after`/`riding_time_loser_after`) from position transitions: a takedown/reversal starts a control segment, an escape ends it, and a period running out while still in control credits the rest of that period. This is NOT read from the scorekeeper's own `"{color} riding time: M:SS"` notes in the raw bout-detail data, because those notes identify wrestlers by raw display color (green/red) and color is never resolved to winner/loser anywhere in this data (only left/right *columns* are, via the headline match at scrape time — see the winner/loser column-order gotcha above) — resolving it would require re-scraping every already-scraped tournament.
+    - **The notes report the NET riding-time advantage** (whichever side is currently ahead, cumulative-minus-cumulative), **not either side's raw individual total** — this was not obvious and cost real debugging time: checking a note's value for set-membership against either side's raw computed total matched only ~52% with a heavy error tail; comparing against `abs(computed_winner - computed_loser)` instead gets 95.6-95.9% matching within 5 seconds (validated independently against both the full NCAA 2021-2026 corpus and Big Ten 2024-2026). This also means the notes can validate the reconstruction without ever needing to resolve which color is which side — the net is the same regardless of who's ahead. See `check_riding_time()`'s docstring.
+    - **Two real bugs were found and fixed along the way**, both in `parse_bout()`: (1) a takedown/reversal missing its embedded timestamp (~2.6% of them) used to permanently null out `control_start_remaining`, silently losing every subsequent ride's credit for the rest of the bout — fixed by falling back to the last known clock reading (`last_known_remaining`) and treating the untimed event as instantaneous. (2) Crediting a "ran to the end of the period" bonus to a control segment whose *start* was itself one of those estimated timestamps could overcount by up to the entire remaining period, since the true start could be anywhere in that window — fixed by skipping the period-end credit specifically when the segment's start was estimated (`control_start_estimated` flag), while still crediting normally when a later real event ends the same segment.
+    - **OT period lengths in `PERIOD_LENGTH_SEC` reflect the CURRENT rule set only** (SV-1=120s, tiebreakers=30s/30s) and may be wrong for older seasons whose overtime format differed — see the "conference championships" section above for what's confirmed vs. still open about exactly when that changed. Riding time reconstruction inside OT periods should be treated as lower-confidence than in regulation until that's resolved; the 95%+ match rate above is dominated by regulation-period checkpoints, which are the overwhelming majority of the notes.
+    - Also tracked per side: `stalling_warned_{winner,loser}_after` (boolean — has this wrestler been called for stalling at all yet, not the exact count; a first call forces a real strategic shift independent of whether it ever becomes a penalty) and `flip_winner`/`choice_N_chooser`/`choice_N_choice`/`choice_N_deferred` (who won the pre-match disk flip and what each choice point resolved to — see `extract_choices()`). Neither of these encodes any assumption about which value helps or hurts; they're passed through as plain state for a model to learn from.
+
+16. **Every NCAA overtime period is sudden-victory — treating it as a fixed-length period broke the win-probability model twice over (fixed 2026-09-14)**: `scripts/win_prob/wrestling_clock.py` now centralizes the wrestling-clock constants that used to be duplicated (and once already diverged) between `fit_baseline_model.py` and `compute_match_win_prob.py`. Two bugs, both from the same wrong assumption ("OT1/OT2/OT3 run their nominal length like a regulation period"):
+    - **`match_length_sec` for an OT-decided bout was computed as the END of that overtime period's nominal length** (even reaching into a next tiebreaker period that never happened), instead of the elapsed time of the bout's own actual final event. Since `match_time_fraction_remaining` (the crunch-time feature) is defined relative to `match_length_sec`, this meant a tied score entering sudden-victory OT looked like it had ~20% of the "match" still ahead of it, when in reality the match was seconds from certainly ending — silencing the crunch-time effect exactly where it should have been strongest. Found on the 149lb 2026 final (Valencia/Van Ness): the model held Valencia at ~80% favorite basically flat through a genuinely back-and-forth match into OT, roughly its pre-match DPG-based read, when it should have been pulled toward a toss-up by the tied, dwindling-time state. Fixed via `bout_match_length_sec()`: regulation periods keep the nominal period-end length (decided at the buzzer if not sooner); an OT-decided bout's length is its own last event's elapsed time. Refit after the fix — metrics didn't move (test ROC-AUC 0.9547 vs 0.9548), confirming this was a correctness fix, not a modeling change, and empirically **DPG still matters even once a match has proven itself close**: querying the fixed training data directly, a DPG favorite wins a tied sudden-victory OT 64.5% of the time (n=434 tied-OT rows) — nowhere near a 50/50 coin flip, so "the match is close, it must be converging to a toss-up" is not what the data actually shows; the old ~80% READING was still too high, but the corrected model's ~64% for this case is a real, checked finding, not an artifact.
+    - **The win probability AT the deciding OT event was still a model prediction (usually 70-95%), not 100%**, even though the match is definitionally over the instant that event happens (sudden victory = first score wins, no more clock exists after it). `compute_match_win_prob.py` now force-sets `win_prob = 1.0` on a bout's final event when it ends in overtime — a rule-based override, not something asked of the statistical model. The equivalent regulation-buzzer case (clock hits zero with a nonzero lead) gets the same override on the trace's final point.
+    - **A related, DIFFERENT calibration gap was found and left OPEN**: even after both fixes above, a lead of exactly 1 point in the last few seconds of regulation is still underpredicted relative to the data — checking `fit_baseline_model.load_data()`'s output directly, period 3 with <3% of match time left shows a **98.9% empirical win rate for a 1-point lead**, statistically indistinguishable from a 2-point lead (98.8%) or 3-point lead (99.7%) at that same point — but the fitted model (with DPG held equal) predicts only ~81-82% for 1 point there vs. ~94-99% for 2-3 points, a real, reproducible gap specific to narrow leads that the cubic `score_diff x match_time_fraction_remaining` polynomial terms don't close. Found on the 184lb 2026 final (McEnelly, up 4-3 with 3 seconds left): the model dropped to ~72% right as the clock was about to run out. The buzzer-certainty override above fixes the trace's literal final point but not the model's approach to it in the closing seconds. Suspected cause: the four polynomial terms (`score_diff`, and its product with `match_time_fraction_remaining`/`_sq`/`_cube`) are highly collinear by construction, which can produce large, partially-cancelling coefficients that don't generalize smoothly to every discrete score_diff value — not yet fixed; likely needs either score_diff-bucketed interaction terms or a revisit of the earlier gradient-boosted attempt (rejected for a different failure mode — see `compute_match_win_prob.py`'s docstring) with the DPG-tail overfitting specifically addressed rather than abandoning nonlinearity altogether.
+    - The x-axis period-label rendering (`win_probability.js`) had a matching bug: filtering periods by `start <= matchEnd` rendered a zero-width "OT" label on every non-OT match (since OT1's nominal start exactly equals a regulation-decided match's length) and a phantom "TB" on an OT-decided match. Fixed to strict `<`.
+
 ---
 
 ## Technology Stack
@@ -814,3 +1299,5 @@ The replay is also used to build the seed analysis report (`generate_report.py`)
 - `scripts/link_and_upload_season*.py` (multiple variants) — legacy upload scripts for DynamoDB; not used
 - `scripts/clear_dynamodb_tables.py`, `scripts/upload_teams_to_dynamodb.py` — legacy
 - `wrestlerank-json/` — standalone ranking experiment; not integrated
+- `scripts/win_prob/fit_gbm_model.py` — gradient-boosted alternative to the win-probability logistic regression, tried and rejected 2026-09-13 (let extreme DPG values swamp the score-state features — see `compute_match_win_prob.py`'s docstring). Not used by anything; kept only as a record of what was tried.
+- `scripts/win_prob/generate_viz_data.py` — one-off data prep for an early single-match Artifact exploration, superseded by `export_matches_for_site.py` + the real Lab page. Not part of the pipeline.

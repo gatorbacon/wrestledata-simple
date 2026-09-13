@@ -1,0 +1,49 @@
+{
+  "query": {
+    "team_slug": "iowa",
+    "team_name": "Iowa",
+    "start_year": 2014,
+    "end_year": 2014
+  },
+  "wrestlers": [
+    {
+      "name": "Broc Berge",
+      "wrestler_id": "7898363009",
+      "weight_class": 184,
+      "photo_url": null,
+      "direction": "transfer_out",
+      "first_query_year": 2014,
+      "last_query_year": 2014,
+      "school_path": [
+        "Iowa",
+        "Minnesota"
+      ],
+      "seasons": [
+        {
+          "year": 2014,
+          "wrestler_id": "4631174009",
+          "team": "Iowa",
+          "team_slug": "iowa",
+          "team_abbr": "IOWA",
+          "is_query_team": true,
+          "dpg": -4.18,
+          "matches": 3,
+          "rank": 154,
+          "record": "0-3"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "7898363009",
+          "team": "Minnesota",
+          "team_slug": "minnesota",
+          "team_abbr": "MINN",
+          "is_query_team": false,
+          "dpg": -4.09,
+          "matches": 2,
+          "rank": 199,
+          "record": "0-2"
+        }
+      ]
+    }
+  ]
+}

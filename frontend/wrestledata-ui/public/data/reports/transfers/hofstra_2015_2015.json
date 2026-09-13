@@ -1,0 +1,61 @@
+{
+  "query": {
+    "team_slug": "hofstra",
+    "team_name": "Hofstra",
+    "start_year": 2015,
+    "end_year": 2015
+  },
+  "wrestlers": [
+    {
+      "name": "Maverick Passaro",
+      "wrestler_id": "4784157009",
+      "weight_class": 133,
+      "photo_url": null,
+      "direction": "transfer_in",
+      "first_query_year": 2014,
+      "last_query_year": 2015,
+      "school_path": [
+        "Rutgers",
+        "Hofstra"
+      ],
+      "seasons": [
+        {
+          "year": 2013,
+          "wrestler_id": "4499209009",
+          "team": "Rutgers",
+          "team_slug": "rutgers",
+          "team_abbr": "RUT",
+          "is_query_team": false,
+          "dpg": -2.28,
+          "matches": 5,
+          "rank": 155,
+          "record": "1-2"
+        },
+        {
+          "year": 2014,
+          "wrestler_id": "4631059009",
+          "team": "Hofstra",
+          "team_slug": "hofstra",
+          "team_abbr": "HOF",
+          "is_query_team": true,
+          "dpg": -0.13,
+          "matches": 13,
+          "rank": 140,
+          "record": "5-4"
+        },
+        {
+          "year": 2015,
+          "wrestler_id": "4784157009",
+          "team": "Hofstra",
+          "team_slug": "hofstra",
+          "team_abbr": "HOF",
+          "is_query_team": true,
+          "dpg": -1.11,
+          "matches": 10,
+          "rank": 163,
+          "record": "3-6"
+        }
+      ]
+    }
+  ]
+}

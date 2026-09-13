@@ -1,0 +1,85 @@
+{
+  "query": {
+    "team_slug": "air_force",
+    "team_name": "Air Force",
+    "start_year": 2021,
+    "end_year": 2021
+  },
+  "wrestlers": [
+    {
+      "name": "Wyatt Hendrickson",
+      "wrestler_id": "29678756132",
+      "weight_class": 285,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fokstate.com%2Fimages%2F2024%2F8%2F25%2FWyatt_Hendrickson.jpg&width=100&height=100&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2021,
+      "last_query_year": 2024,
+      "school_path": [
+        "Air Force",
+        "Oklahoma State"
+      ],
+      "seasons": [
+        {
+          "year": 2021,
+          "wrestler_id": "14867578132",
+          "team": "Air Force",
+          "team_slug": "air_force",
+          "team_abbr": "AF",
+          "is_query_team": true,
+          "dpg": 2.6,
+          "matches": 20,
+          "rank": 18,
+          "record": "15-5"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16702620132",
+          "team": "Air Force",
+          "team_slug": "air_force",
+          "team_abbr": "AF",
+          "is_query_team": true,
+          "dpg": 4.48,
+          "matches": 26,
+          "rank": 9,
+          "record": "24-2"
+        },
+        {
+          "year": 2023,
+          "wrestler_id": "20134189132",
+          "team": "Air Force",
+          "team_slug": "air_force",
+          "team_abbr": "AF",
+          "is_query_team": true,
+          "dpg": 4.98,
+          "matches": 32,
+          "rank": 3,
+          "record": "30-3"
+        },
+        {
+          "year": 2024,
+          "wrestler_id": "24585310132",
+          "team": "Air Force",
+          "team_slug": "air_force",
+          "team_abbr": "AF",
+          "is_query_team": true,
+          "dpg": 4.79,
+          "matches": 28,
+          "rank": 3,
+          "record": "25-2"
+        },
+        {
+          "year": 2025,
+          "wrestler_id": "29678756132",
+          "team": "Oklahoma State",
+          "team_slug": "oklahoma_state",
+          "team_abbr": "OKST",
+          "is_query_team": false,
+          "dpg": 6.11,
+          "matches": 26,
+          "rank": 1,
+          "record": "27-0"
+        }
+      ]
+    }
+  ]
+}

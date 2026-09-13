@@ -1,0 +1,85 @@
+{
+  "query": {
+    "team_slug": "morgan_state",
+    "team_name": "Morgan State",
+    "start_year": 2024,
+    "end_year": 2024
+  },
+  "wrestlers": [
+    {
+      "name": "Khalid Brinkley",
+      "wrestler_id": "24662850132",
+      "weight_class": 141,
+      "photo_url": "https://morganstatebears.com/images/2023/10/16/BRINKLEY_Khalid.jpg",
+      "direction": "transfer_in",
+      "first_query_year": 2024,
+      "last_query_year": 2024,
+      "school_path": [
+        "Presbyterian College",
+        "Morgan State"
+      ],
+      "seasons": [
+        {
+          "year": 2020,
+          "wrestler_id": "10539251132",
+          "team": "Presbyterian College",
+          "team_slug": "presbyterian_college",
+          "team_abbr": "PRES",
+          "is_query_team": false,
+          "dpg": -6.37,
+          "matches": 16,
+          "rank": 212,
+          "record": "0-14"
+        },
+        {
+          "year": 2021,
+          "wrestler_id": "14865739132",
+          "team": "Presbyterian College",
+          "team_slug": "presbyterian_college",
+          "team_abbr": "PRES",
+          "is_query_team": false,
+          "dpg": -7.2,
+          "matches": 3,
+          "rank": 180,
+          "record": "0-2"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16708908132",
+          "team": "Presbyterian College",
+          "team_slug": "presbyterian_college",
+          "team_abbr": "PRES",
+          "is_query_team": false,
+          "dpg": -4.58,
+          "matches": 21,
+          "rank": 256,
+          "record": "2-16"
+        },
+        {
+          "year": 2023,
+          "wrestler_id": "20134975132",
+          "team": "Presbyterian College",
+          "team_slug": "presbyterian_college",
+          "team_abbr": "PRES",
+          "is_query_team": false,
+          "dpg": -3.7,
+          "matches": 28,
+          "rank": 316,
+          "record": "3-17"
+        },
+        {
+          "year": 2024,
+          "wrestler_id": "24662850132",
+          "team": "Morgan State",
+          "team_slug": "morgan_state",
+          "team_abbr": "MSC",
+          "is_query_team": true,
+          "dpg": -4.73,
+          "matches": 9,
+          "rank": 292,
+          "record": "0-6"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "query": {
+    "team_slug": "purdue",
+    "team_name": "Purdue",
+    "start_year": 2023,
+    "end_year": 2023
+  },
+  "wrestlers": [
+    {
+      "name": "Sean Pitts",
+      "wrestler_id": "29679976132",
+      "weight_class": 149,
+      "photo_url": null,
+      "direction": "transfer_out",
+      "first_query_year": 2023,
+      "last_query_year": 2023,
+      "school_path": [
+        "Purdue",
+        "Bellarmine"
+      ],
+      "seasons": [
+        {
+          "year": 2023,
+          "wrestler_id": "20148276132",
+          "team": "Purdue",
+          "team_slug": "purdue",
+          "team_abbr": "PUR",
+          "is_query_team": true,
+          "dpg": -3.06,
+          "matches": 4,
+          "rank": 127,
+          "record": "1-2"
+        },
+        {
+          "year": 2025,
+          "wrestler_id": "29679976132",
+          "team": "Bellarmine",
+          "team_slug": "bellarmine",
+          "team_abbr": "BU",
+          "is_query_team": false,
+          "dpg": -3.13,
+          "matches": 4,
+          "rank": 220,
+          "record": "0-3"
+        }
+      ]
+    }
+  ]
+}

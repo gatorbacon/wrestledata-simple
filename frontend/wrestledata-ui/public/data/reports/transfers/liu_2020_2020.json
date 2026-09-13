@@ -1,0 +1,85 @@
+{
+  "query": {
+    "team_slug": "liu",
+    "team_name": "LIU",
+    "start_year": 2020,
+    "end_year": 2020
+  },
+  "wrestlers": [
+    {
+      "name": "Ryan Ferro",
+      "wrestler_id": "16706378132",
+      "weight_class": 174,
+      "photo_url": "https://www.liuathletics.com/images/2021/10/7/Ryan_Ferro.jpg",
+      "direction": "transfer_in",
+      "first_query_year": 2020,
+      "last_query_year": 2022,
+      "school_path": [
+        "Ohio State",
+        "LIU"
+      ],
+      "seasons": [
+        {
+          "year": 2018,
+          "wrestler_id": "11414078009",
+          "team": "Ohio State",
+          "team_slug": "ohio_state",
+          "team_abbr": "OHST",
+          "is_query_team": false,
+          "dpg": -1.03,
+          "matches": 15,
+          "rank": 195,
+          "record": "4-7"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4628465132",
+          "team": "Ohio State",
+          "team_slug": "ohio_state",
+          "team_abbr": "OHST",
+          "is_query_team": false,
+          "dpg": 0.2,
+          "matches": 12,
+          "rank": 98,
+          "record": "7-6"
+        },
+        {
+          "year": 2020,
+          "wrestler_id": "12464671132",
+          "team": "LIU",
+          "team_slug": "liu",
+          "team_abbr": "LIU",
+          "is_query_team": true,
+          "dpg": -0.22,
+          "matches": 7,
+          "rank": 81,
+          "record": "4-3"
+        },
+        {
+          "year": 2021,
+          "wrestler_id": "14863651132",
+          "team": "LIU",
+          "team_slug": "liu",
+          "team_abbr": "LIU",
+          "is_query_team": true,
+          "dpg": -2.63,
+          "matches": 7,
+          "rank": 95,
+          "record": "2-5"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16706378132",
+          "team": "LIU",
+          "team_slug": "liu",
+          "team_abbr": "LIU",
+          "is_query_team": true,
+          "dpg": 0.18,
+          "matches": 20,
+          "rank": 151,
+          "record": "10-8"
+        }
+      ]
+    }
+  ]
+}

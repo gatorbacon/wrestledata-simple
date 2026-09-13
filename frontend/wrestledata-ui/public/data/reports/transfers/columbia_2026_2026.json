@@ -1,0 +1,61 @@
+{
+  "query": {
+    "team_slug": "columbia",
+    "team_name": "Columbia",
+    "start_year": 2026,
+    "end_year": 2026
+  },
+  "wrestlers": [
+    {
+      "name": "Sungyup Ryu",
+      "wrestler_id": "34943397132",
+      "weight_class": 197,
+      "photo_url": null,
+      "direction": "transfer_in",
+      "first_query_year": 2025,
+      "last_query_year": 2026,
+      "school_path": [
+        "Illinois",
+        "Columbia"
+      ],
+      "seasons": [
+        {
+          "year": 2024,
+          "wrestler_id": "24586661132",
+          "team": "Illinois",
+          "team_slug": "illinois",
+          "team_abbr": "ILL",
+          "is_query_team": false,
+          "dpg": -0.2,
+          "matches": 9,
+          "rank": 56,
+          "record": "5-3"
+        },
+        {
+          "year": 2025,
+          "wrestler_id": "29673466132",
+          "team": "Columbia",
+          "team_slug": "columbia",
+          "team_abbr": "COL",
+          "is_query_team": true,
+          "dpg": -1.86,
+          "matches": 11,
+          "rank": 116,
+          "record": "4-7"
+        },
+        {
+          "year": 2026,
+          "wrestler_id": "34943397132",
+          "team": "Columbia",
+          "team_slug": "columbia",
+          "team_abbr": "COL",
+          "is_query_team": true,
+          "dpg": -0.84,
+          "matches": 5,
+          "rank": 93,
+          "record": "3-2"
+        }
+      ]
+    }
+  ]
+}

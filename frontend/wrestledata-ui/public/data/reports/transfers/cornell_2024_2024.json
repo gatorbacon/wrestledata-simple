@@ -1,0 +1,112 @@
+{
+  "query": {
+    "team_slug": "cornell",
+    "team_name": "Cornell",
+    "start_year": 2024,
+    "end_year": 2024
+  },
+  "wrestlers": [
+    {
+      "name": "Jacob Cardenas",
+      "wrestler_id": "29672238132",
+      "weight_class": 197,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fmgoblue.com%2Fimages%2F2024%2F10%2F9%2FMGB_20240824-wrm-cardenas.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2022,
+      "last_query_year": 2024,
+      "school_path": [
+        "Cornell",
+        "Michigan"
+      ],
+      "seasons": [
+        {
+          "year": 2022,
+          "wrestler_id": "16696567132",
+          "team": "Cornell",
+          "team_slug": "cornell",
+          "team_abbr": "COR",
+          "is_query_team": true,
+          "dpg": 2.37,
+          "matches": 30,
+          "rank": 20,
+          "record": "22-8"
+        },
+        {
+          "year": 2023,
+          "wrestler_id": "20123107132",
+          "team": "Cornell",
+          "team_slug": "cornell",
+          "team_abbr": "COR",
+          "is_query_team": true,
+          "dpg": 2.5,
+          "matches": 28,
+          "rank": 9,
+          "record": "20-6"
+        },
+        {
+          "year": 2024,
+          "wrestler_id": "24603804132",
+          "team": "Cornell",
+          "team_slug": "cornell",
+          "team_abbr": "COR",
+          "is_query_team": true,
+          "dpg": 3.78,
+          "matches": 35,
+          "rank": 5,
+          "record": "26-8"
+        },
+        {
+          "year": 2025,
+          "wrestler_id": "29672238132",
+          "team": "Michigan",
+          "team_slug": "michigan",
+          "team_abbr": "MICH",
+          "is_query_team": false,
+          "dpg": 4.03,
+          "matches": 27,
+          "rank": 4,
+          "record": "24-3"
+        }
+      ]
+    },
+    {
+      "name": "Jacob Yawn",
+      "wrestler_id": "29676077132",
+      "weight_class": 157,
+      "photo_url": null,
+      "direction": "transfer_out",
+      "first_query_year": 2022,
+      "last_query_year": 2022,
+      "school_path": [
+        "Cornell",
+        "North Carolina"
+      ],
+      "seasons": [
+        {
+          "year": 2022,
+          "wrestler_id": "16696568132",
+          "team": "Cornell",
+          "team_slug": "cornell",
+          "team_abbr": "COR",
+          "is_query_team": true,
+          "dpg": -5.64,
+          "matches": 1,
+          "rank": 150,
+          "record": "0-1"
+        },
+        {
+          "year": 2025,
+          "wrestler_id": "29676077132",
+          "team": "North Carolina",
+          "team_slug": "north_carolina",
+          "team_abbr": "UNC",
+          "is_query_team": false,
+          "dpg": -3.65,
+          "matches": 1,
+          "rank": 192,
+          "record": "0-1"
+        }
+      ]
+    }
+  ]
+}

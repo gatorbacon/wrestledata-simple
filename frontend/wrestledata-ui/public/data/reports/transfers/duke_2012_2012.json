@@ -1,0 +1,61 @@
+{
+  "query": {
+    "team_slug": "duke",
+    "team_name": "Duke",
+    "start_year": 2012,
+    "end_year": 2012
+  },
+  "wrestlers": [
+    {
+      "name": "Brent Jorge",
+      "wrestler_id": "4629602009",
+      "weight_class": 149,
+      "photo_url": "https://gocamels.com/images/2017/7/7/jorge_brent.jpg",
+      "direction": "transfer_out",
+      "first_query_year": 2012,
+      "last_query_year": 2012,
+      "school_path": [
+        "Duke",
+        "Campbell"
+      ],
+      "seasons": [
+        {
+          "year": 2012,
+          "wrestler_id": "4450561009",
+          "team": "Duke",
+          "team_slug": "duke",
+          "team_abbr": "DUKE",
+          "is_query_team": true,
+          "dpg": 1.56,
+          "matches": 6,
+          "rank": 36,
+          "record": "5-1"
+        },
+        {
+          "year": 2013,
+          "wrestler_id": "4494763009",
+          "team": "Campbell",
+          "team_slug": "campbell",
+          "team_abbr": "CAMP",
+          "is_query_team": false,
+          "dpg": -0.39,
+          "matches": 34,
+          "rank": 62,
+          "record": "11-13"
+        },
+        {
+          "year": 2014,
+          "wrestler_id": "4629602009",
+          "team": "Campbell",
+          "team_slug": "campbell",
+          "team_abbr": "CAMP",
+          "is_query_team": false,
+          "dpg": 0.48,
+          "matches": 32,
+          "rank": 54,
+          "record": "18-14"
+        }
+      ]
+    }
+  ]
+}

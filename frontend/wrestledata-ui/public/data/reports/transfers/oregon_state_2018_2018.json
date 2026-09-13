@@ -1,0 +1,49 @@
+{
+  "query": {
+    "team_slug": "oregon_state",
+    "team_name": "Oregon State",
+    "start_year": 2018,
+    "end_year": 2018
+  },
+  "wrestlers": [
+    {
+      "name": "Billy Bigelow",
+      "wrestler_id": "11482041009",
+      "weight_class": 165,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Foregonstate.sidearmsports.com%2Fimages%2F2017%2F10%2F6%2FBigelow.png&width=603&height=803&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2018,
+      "last_query_year": 2018,
+      "school_path": [
+        "Boise State",
+        "Oregon State"
+      ],
+      "seasons": [
+        {
+          "year": 2017,
+          "wrestler_id": "839879107",
+          "team": "Boise State",
+          "team_slug": "boise_state",
+          "team_abbr": "BOIS",
+          "is_query_team": false,
+          "dpg": -4.95,
+          "matches": 4,
+          "rank": 173,
+          "record": "0-3"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11482041009",
+          "team": "Oregon State",
+          "team_slug": "oregon_state",
+          "team_abbr": "ORST",
+          "is_query_team": true,
+          "dpg": -3.93,
+          "matches": 13,
+          "rank": 213,
+          "record": "3-9"
+        }
+      ]
+    }
+  ]
+}

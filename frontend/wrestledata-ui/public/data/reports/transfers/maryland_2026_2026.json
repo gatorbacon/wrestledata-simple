@@ -1,0 +1,85 @@
+{
+  "query": {
+    "team_slug": "maryland",
+    "team_name": "Maryland",
+    "start_year": 2026,
+    "end_year": 2026
+  },
+  "wrestlers": [
+    {
+      "name": "Carter Young",
+      "wrestler_id": "37205546132",
+      "weight_class": 149,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fumterps.com%2Fimages%2F2026%2F1%2F16%2FCarter_young.png&width=603&height=803&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2026,
+      "last_query_year": 2026,
+      "school_path": [
+        "Oklahoma State",
+        "Maryland"
+      ],
+      "seasons": [
+        {
+          "year": 2022,
+          "wrestler_id": "16710145132",
+          "team": "Oklahoma State",
+          "team_slug": "oklahoma_state",
+          "team_abbr": "OKST",
+          "is_query_team": false,
+          "dpg": 1.19,
+          "matches": 21,
+          "rank": 25,
+          "record": "11-9"
+        },
+        {
+          "year": 2023,
+          "wrestler_id": "20124577132",
+          "team": "Oklahoma State",
+          "team_slug": "oklahoma_state",
+          "team_abbr": "OKST",
+          "is_query_team": false,
+          "dpg": 1.05,
+          "matches": 28,
+          "rank": 24,
+          "record": "15-14"
+        },
+        {
+          "year": 2024,
+          "wrestler_id": "24586770132",
+          "team": "Oklahoma State",
+          "team_slug": "oklahoma_state",
+          "team_abbr": "OKST",
+          "is_query_team": false,
+          "dpg": 3.41,
+          "matches": 2,
+          "rank": 36,
+          "record": "2-0"
+        },
+        {
+          "year": 2025,
+          "wrestler_id": "29678426132",
+          "team": "Oklahoma State",
+          "team_slug": "oklahoma_state",
+          "team_abbr": "OKST",
+          "is_query_team": false,
+          "dpg": 1.39,
+          "matches": 20,
+          "rank": 48,
+          "record": "10-10"
+        },
+        {
+          "year": 2026,
+          "wrestler_id": "37205546132",
+          "team": "Maryland",
+          "team_slug": "maryland",
+          "team_abbr": "MD",
+          "is_query_team": true,
+          "dpg": 2.9,
+          "matches": 21,
+          "rank": 10,
+          "record": "17-6"
+        }
+      ]
+    }
+  ]
+}

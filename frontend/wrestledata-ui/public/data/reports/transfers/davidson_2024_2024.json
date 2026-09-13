@@ -1,0 +1,61 @@
+{
+  "query": {
+    "team_slug": "davidson",
+    "team_name": "Davidson",
+    "start_year": 2024,
+    "end_year": 2024
+  },
+  "wrestlers": [
+    {
+      "name": "Wyatt Ferguson",
+      "wrestler_id": "34934110132",
+      "weight_class": 184,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fcmuchippewas.com%2Fimages%2F2025%2F9%2F9%2Fferguson_wyatt_wrest_JPR_3545.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2024,
+      "last_query_year": 2024,
+      "school_path": [
+        "Davidson",
+        "Central Michigan"
+      ],
+      "seasons": [
+        {
+          "year": 2024,
+          "wrestler_id": "24587596132",
+          "team": "Davidson",
+          "team_slug": "davidson",
+          "team_abbr": "DAV",
+          "is_query_team": true,
+          "dpg": -1.19,
+          "matches": 34,
+          "rank": 119,
+          "record": "14-16"
+        },
+        {
+          "year": 2025,
+          "wrestler_id": "29734999132",
+          "team": "Central Michigan",
+          "team_slug": "central_michigan",
+          "team_abbr": "CMU",
+          "is_query_team": false,
+          "dpg": 0.06,
+          "matches": 15,
+          "rank": 90,
+          "record": "9-5"
+        },
+        {
+          "year": 2026,
+          "wrestler_id": "34934110132",
+          "team": "Central Michigan",
+          "team_slug": "central_michigan",
+          "team_abbr": "CMU",
+          "is_query_team": false,
+          "dpg": -0.29,
+          "matches": 22,
+          "rank": 62,
+          "record": "10-10"
+        }
+      ]
+    }
+  ]
+}

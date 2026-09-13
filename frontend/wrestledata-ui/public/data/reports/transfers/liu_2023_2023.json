@@ -1,0 +1,85 @@
+{
+  "query": {
+    "team_slug": "liu",
+    "team_name": "LIU",
+    "start_year": 2023,
+    "end_year": 2023
+  },
+  "wrestlers": [
+    {
+      "name": "Anthony D`alesio",
+      "wrestler_id": "34953899132",
+      "weight_class": 184,
+      "photo_url": "https://www.liuathletics.com/images/2025/10/21/Untitled__200_x_275_px__-_2025-10-21T123750.614.png",
+      "direction": "transfer_in",
+      "first_query_year": 2024,
+      "last_query_year": 2026,
+      "school_path": [
+        "West Virginia",
+        "LIU"
+      ],
+      "seasons": [
+        {
+          "year": 2021,
+          "wrestler_id": "14876706132",
+          "team": "West Virginia",
+          "team_slug": "west_virginia",
+          "team_abbr": "WVU",
+          "is_query_team": false,
+          "dpg": -3.31,
+          "matches": 2,
+          "rank": 152,
+          "record": "0-2"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16698405132",
+          "team": "West Virginia",
+          "team_slug": "west_virginia",
+          "team_abbr": "WVU",
+          "is_query_team": false,
+          "dpg": -2.54,
+          "matches": 2,
+          "rank": 222,
+          "record": "0-2"
+        },
+        {
+          "year": 2024,
+          "wrestler_id": "24593284132",
+          "team": "LIU",
+          "team_slug": "liu",
+          "team_abbr": "LIU",
+          "is_query_team": true,
+          "dpg": 0.19,
+          "matches": 36,
+          "rank": 32,
+          "record": "20-15"
+        },
+        {
+          "year": 2025,
+          "wrestler_id": "29672390132",
+          "team": "LIU",
+          "team_slug": "liu",
+          "team_abbr": "LIU",
+          "is_query_team": true,
+          "dpg": 0.35,
+          "matches": 27,
+          "rank": 57,
+          "record": "14-11"
+        },
+        {
+          "year": 2026,
+          "wrestler_id": "34953899132",
+          "team": "LIU",
+          "team_slug": "liu",
+          "team_abbr": "LIU",
+          "is_query_team": true,
+          "dpg": -1.63,
+          "matches": 21,
+          "rank": 118,
+          "record": "6-15"
+        }
+      ]
+    }
+  ]
+}

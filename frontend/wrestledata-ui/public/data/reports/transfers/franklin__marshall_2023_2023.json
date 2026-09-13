@@ -1,0 +1,73 @@
+{
+  "query": {
+    "team_slug": "franklin__marshall",
+    "team_name": "Franklin & Marshall",
+    "start_year": 2023,
+    "end_year": 2023
+  },
+  "wrestlers": [
+    {
+      "name": "Tyler O`Boyle",
+      "wrestler_id": "34950419132",
+      "weight_class": 285,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgoduke.com%2Fimages%2F2025%2F10%2F24%2FO_Boyle-Tyler-HS.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2023,
+      "last_query_year": 2024,
+      "school_path": [
+        "Franklin & Marshall",
+        "Duke"
+      ],
+      "seasons": [
+        {
+          "year": 2023,
+          "wrestler_id": "20122111132",
+          "team": "Franklin & Marshall",
+          "team_slug": "franklin__marshall",
+          "team_abbr": "F&M",
+          "is_query_team": true,
+          "dpg": -6.46,
+          "matches": 2,
+          "rank": 163,
+          "record": "1-2"
+        },
+        {
+          "year": 2024,
+          "wrestler_id": "24579704132",
+          "team": "Franklin & Marshall",
+          "team_slug": "franklin__marshall",
+          "team_abbr": "F&M",
+          "is_query_team": true,
+          "dpg": -6.87,
+          "matches": 11,
+          "rank": 269,
+          "record": "0-10"
+        },
+        {
+          "year": 2025,
+          "wrestler_id": "29689116132",
+          "team": "Duke",
+          "team_slug": "duke",
+          "team_abbr": "DUKE",
+          "is_query_team": false,
+          "dpg": -6.42,
+          "matches": 5,
+          "rank": 286,
+          "record": "0-5"
+        },
+        {
+          "year": 2026,
+          "wrestler_id": "34950419132",
+          "team": "Duke",
+          "team_slug": "duke",
+          "team_abbr": "DUKE",
+          "is_query_team": false,
+          "dpg": -3.35,
+          "matches": 2,
+          "rank": 255,
+          "record": "1-1"
+        }
+      ]
+    }
+  ]
+}

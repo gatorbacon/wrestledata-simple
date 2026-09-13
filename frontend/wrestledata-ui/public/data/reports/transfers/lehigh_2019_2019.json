@@ -1,0 +1,85 @@
+{
+  "query": {
+    "team_slug": "lehigh",
+    "team_name": "Lehigh",
+    "start_year": 2019,
+    "end_year": 2019
+  },
+  "wrestlers": [
+    {
+      "name": "Brandon Paetzell",
+      "wrestler_id": "14868323132",
+      "weight_class": 141,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Flehighsports.com%2Fimages%2F2017%2F9%2F1%2FBrandon_Paetzell_DSC0074.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2018,
+      "last_query_year": 2021,
+      "school_path": [
+        "Rutgers",
+        "Lehigh"
+      ],
+      "seasons": [
+        {
+          "year": 2017,
+          "wrestler_id": "840134107",
+          "team": "Rutgers",
+          "team_slug": "rutgers",
+          "team_abbr": "RUT",
+          "is_query_team": false,
+          "dpg": 0.2,
+          "matches": 20,
+          "rank": 55,
+          "record": "10-10"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11446247009",
+          "team": "Lehigh",
+          "team_slug": "lehigh",
+          "team_abbr": "LEH",
+          "is_query_team": true,
+          "dpg": 1.66,
+          "matches": 17,
+          "rank": 40,
+          "record": "11-3"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4625907132",
+          "team": "Lehigh",
+          "team_slug": "lehigh",
+          "team_abbr": "LEH",
+          "is_query_team": true,
+          "dpg": 1.24,
+          "matches": 28,
+          "rank": 20,
+          "record": "15-13"
+        },
+        {
+          "year": 2020,
+          "wrestler_id": "10508061132",
+          "team": "Lehigh",
+          "team_slug": "lehigh",
+          "team_abbr": "LEH",
+          "is_query_team": true,
+          "dpg": 3.32,
+          "matches": 22,
+          "rank": 7,
+          "record": "19-3"
+        },
+        {
+          "year": 2021,
+          "wrestler_id": "14868323132",
+          "team": "Lehigh",
+          "team_slug": "lehigh",
+          "team_abbr": "LEH",
+          "is_query_team": true,
+          "dpg": -1.42,
+          "matches": 1,
+          "rank": 37,
+          "record": "0-1"
+        }
+      ]
+    }
+  ]
+}

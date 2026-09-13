@@ -1,0 +1,97 @@
+{
+  "query": {
+    "team_slug": "lehigh",
+    "team_name": "Lehigh",
+    "start_year": 2016,
+    "end_year": 2016
+  },
+  "wrestlers": [
+    {
+      "name": "Christian Colucci",
+      "wrestler_id": "14863779132",
+      "weight_class": 285,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fscarletknights.com%2Fimages%2F2020%2F11%2F2%2FColucci_C.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2016,
+      "last_query_year": 2018,
+      "school_path": [
+        "Lehigh",
+        "Rutgers"
+      ],
+      "seasons": [
+        {
+          "year": 2016,
+          "wrestler_id": "277426011",
+          "team": "Lehigh",
+          "team_slug": "lehigh",
+          "team_abbr": "LEH",
+          "is_query_team": true,
+          "dpg": -0.67,
+          "matches": 21,
+          "rank": 70,
+          "record": "12-9"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "831177076",
+          "team": "Lehigh",
+          "team_slug": "lehigh",
+          "team_abbr": "LEH",
+          "is_query_team": true,
+          "dpg": 0.96,
+          "matches": 14,
+          "rank": 47,
+          "record": "11-4"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11446174009",
+          "team": "Lehigh",
+          "team_slug": "lehigh",
+          "team_abbr": "LEH",
+          "is_query_team": true,
+          "dpg": 1.06,
+          "matches": 7,
+          "rank": 39,
+          "record": "6-3"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4637003132",
+          "team": "Rutgers",
+          "team_slug": "rutgers",
+          "team_abbr": "RUT",
+          "is_query_team": false,
+          "dpg": 0.23,
+          "matches": 23,
+          "rank": 45,
+          "record": "11-13"
+        },
+        {
+          "year": 2020,
+          "wrestler_id": "10496469132",
+          "team": "Rutgers",
+          "team_slug": "rutgers",
+          "team_abbr": "RUT",
+          "is_query_team": false,
+          "dpg": 1.54,
+          "matches": 11,
+          "rank": 43,
+          "record": "8-3"
+        },
+        {
+          "year": 2021,
+          "wrestler_id": "14863779132",
+          "team": "Rutgers",
+          "team_slug": "rutgers",
+          "team_abbr": "RUT",
+          "is_query_team": false,
+          "dpg": -1.73,
+          "matches": 5,
+          "rank": 43,
+          "record": "1-4"
+        }
+      ]
+    }
+  ]
+}

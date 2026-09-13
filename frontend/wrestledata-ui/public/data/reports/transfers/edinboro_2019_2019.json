@@ -1,0 +1,85 @@
+{
+  "query": {
+    "team_slug": "edinboro",
+    "team_name": "Edinboro",
+    "start_year": 2019,
+    "end_year": 2019
+  },
+  "wrestlers": [
+    {
+      "name": "Peter Pappas",
+      "wrestler_id": "20127941132",
+      "weight_class": 157,
+      "photo_url": null,
+      "direction": "transfer_out",
+      "first_query_year": 2018,
+      "last_query_year": 2021,
+      "school_path": [
+        "Edinboro",
+        "George Mason"
+      ],
+      "seasons": [
+        {
+          "year": 2018,
+          "wrestler_id": "11479216009",
+          "team": "Edinboro",
+          "team_slug": "edinboro",
+          "team_abbr": "EDIN",
+          "is_query_team": true,
+          "dpg": 0.7,
+          "matches": 18,
+          "rank": 92,
+          "record": "9-8"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4865786132",
+          "team": "Edinboro",
+          "team_slug": "edinboro",
+          "team_abbr": "EDIN",
+          "is_query_team": true,
+          "dpg": 1.4,
+          "matches": 14,
+          "rank": 62,
+          "record": "9-2"
+        },
+        {
+          "year": 2020,
+          "wrestler_id": "10502844132",
+          "team": "Edinboro",
+          "team_slug": "edinboro",
+          "team_abbr": "EDIN",
+          "is_query_team": true,
+          "dpg": 0.1,
+          "matches": 26,
+          "rank": 51,
+          "record": "13-13"
+        },
+        {
+          "year": 2021,
+          "wrestler_id": "14863133132",
+          "team": "Edinboro",
+          "team_slug": "edinboro",
+          "team_abbr": "EDIN",
+          "is_query_team": true,
+          "dpg": 0.19,
+          "matches": 16,
+          "rank": 37,
+          "record": "10-6"
+        },
+        {
+          "year": 2023,
+          "wrestler_id": "20127941132",
+          "team": "George Mason",
+          "team_slug": "george_mason",
+          "team_abbr": "GMU",
+          "is_query_team": false,
+          "dpg": 1.94,
+          "matches": 29,
+          "rank": 29,
+          "record": "22-5"
+        }
+      ]
+    }
+  ]
+}

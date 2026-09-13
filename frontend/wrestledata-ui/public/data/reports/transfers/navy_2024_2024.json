@@ -1,0 +1,49 @@
+{
+  "query": {
+    "team_slug": "navy",
+    "team_name": "Navy",
+    "start_year": 2024,
+    "end_year": 2024
+  },
+  "wrestlers": [
+    {
+      "name": "Evan Tallmadge",
+      "wrestler_id": "34934144132",
+      "weight_class": 133,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fpittsburghpanthers.com%2Fimages%2F2025%2F10%2F8%2FEvan_Tallmadge.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2024,
+      "last_query_year": 2024,
+      "school_path": [
+        "Navy",
+        "Pittsburgh"
+      ],
+      "seasons": [
+        {
+          "year": 2024,
+          "wrestler_id": "24585879132",
+          "team": "Navy",
+          "team_slug": "navy",
+          "team_abbr": "NAVY",
+          "is_query_team": true,
+          "dpg": 0.69,
+          "matches": 10,
+          "rank": 66,
+          "record": "6-4"
+        },
+        {
+          "year": 2026,
+          "wrestler_id": "34934144132",
+          "team": "Pittsburgh",
+          "team_slug": "pittsburgh",
+          "team_abbr": "PITT",
+          "is_query_team": false,
+          "dpg": 1.18,
+          "matches": 25,
+          "rank": 29,
+          "record": "13-10"
+        }
+      ]
+    }
+  ]
+}

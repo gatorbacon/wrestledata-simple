@@ -1,0 +1,112 @@
+{
+  "query": {
+    "team_slug": "rutgers",
+    "team_name": "Rutgers",
+    "start_year": 2012,
+    "end_year": 2012
+  },
+  "wrestlers": [
+    {
+      "name": "Anthony Volpe",
+      "wrestler_id": "4631925009",
+      "weight_class": 165,
+      "photo_url": null,
+      "direction": "transfer_out",
+      "first_query_year": 2012,
+      "last_query_year": 2013,
+      "school_path": [
+        "Rutgers",
+        "Maryland"
+      ],
+      "seasons": [
+        {
+          "year": 2012,
+          "wrestler_id": "4453937009",
+          "team": "Rutgers",
+          "team_slug": "rutgers",
+          "team_abbr": "RUT",
+          "is_query_team": true,
+          "dpg": -1.72,
+          "matches": 10,
+          "rank": 233,
+          "record": "2-8"
+        },
+        {
+          "year": 2013,
+          "wrestler_id": "4499214009",
+          "team": "Rutgers",
+          "team_slug": "rutgers",
+          "team_abbr": "RUT",
+          "is_query_team": true,
+          "dpg": -2.95,
+          "matches": 24,
+          "rank": 151,
+          "record": "7-12"
+        },
+        {
+          "year": 2014,
+          "wrestler_id": "4631925009",
+          "team": "Maryland",
+          "team_slug": "maryland",
+          "team_abbr": "MD",
+          "is_query_team": false,
+          "dpg": -2.94,
+          "matches": 1,
+          "rank": 147,
+          "record": "0-1"
+        }
+      ]
+    },
+    {
+      "name": "Carl Buchholz",
+      "wrestler_id": "4631964009",
+      "weight_class": 285,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fumterps.com%2Fimages%2F2013%2F12%2F13%2FAUWOZEKTYJIEPSU.20131213195834.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2012,
+      "last_query_year": 2012,
+      "school_path": [
+        "Rutgers",
+        "Maryland"
+      ],
+      "seasons": [
+        {
+          "year": 2012,
+          "wrestler_id": "4453928009",
+          "team": "Rutgers",
+          "team_slug": "rutgers",
+          "team_abbr": "RUT",
+          "is_query_team": true,
+          "dpg": -2.48,
+          "matches": 2,
+          "rank": 148,
+          "record": "0-3"
+        },
+        {
+          "year": 2013,
+          "wrestler_id": "4497137009",
+          "team": "Maryland",
+          "team_slug": "maryland",
+          "team_abbr": "MD",
+          "is_query_team": false,
+          "dpg": -1.32,
+          "matches": 17,
+          "rank": 174,
+          "record": "5-12"
+        },
+        {
+          "year": 2014,
+          "wrestler_id": "4631964009",
+          "team": "Maryland",
+          "team_slug": "maryland",
+          "team_abbr": "MD",
+          "is_query_team": false,
+          "dpg": 2.54,
+          "matches": 6,
+          "rank": 97,
+          "record": "5-1"
+        }
+      ]
+    }
+  ]
+}

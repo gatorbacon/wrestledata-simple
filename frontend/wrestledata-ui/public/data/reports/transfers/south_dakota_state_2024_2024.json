@@ -1,0 +1,136 @@
+{
+  "query": {
+    "team_slug": "south_dakota_state",
+    "team_name": "South Dakota State",
+    "start_year": 2024,
+    "end_year": 2024
+  },
+  "wrestlers": [
+    {
+      "name": "Gabriel Tagg",
+      "wrestler_id": "18200879132",
+      "weight_class": 133,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fsdstate.sidearmsports.com%2Fimages%2F2022%2F1%2F6%2FTAGGgabriel2022.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2022,
+      "last_query_year": 2022,
+      "school_path": [
+        "North Carolina",
+        "South Dakota State"
+      ],
+      "seasons": [
+        {
+          "year": 2020,
+          "wrestler_id": "10493362132",
+          "team": "North Carolina",
+          "team_slug": "north_carolina",
+          "team_abbr": "UNC",
+          "is_query_team": false,
+          "dpg": 1.6,
+          "matches": 10,
+          "rank": 78,
+          "record": "6-4"
+        },
+        {
+          "year": 2021,
+          "wrestler_id": "14867188132",
+          "team": "North Carolina",
+          "team_slug": "north_carolina",
+          "team_abbr": "UNC",
+          "is_query_team": false,
+          "dpg": 1.19,
+          "matches": 2,
+          "rank": 65,
+          "record": "1-1"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "18200879132",
+          "team": "South Dakota State",
+          "team_slug": "south_dakota_state",
+          "team_abbr": "SDSU",
+          "is_query_team": true,
+          "dpg": 0.57,
+          "matches": 19,
+          "rank": 55,
+          "record": "12-6"
+        }
+      ]
+    },
+    {
+      "name": "Brandon Meredith",
+      "wrestler_id": "24584720132",
+      "weight_class": 141,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fsdstate.sidearmsports.com%2Fimages%2F2023%2F9%2F27%2FMEREDITHbrandon2024.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2024,
+      "last_query_year": 2024,
+      "school_path": [
+        "Penn State",
+        "South Dakota State"
+      ],
+      "seasons": [
+        {
+          "year": 2019,
+          "wrestler_id": "4634929132",
+          "team": "Penn State",
+          "team_slug": "penn_state",
+          "team_abbr": "PSU",
+          "is_query_team": false,
+          "dpg": -1.59,
+          "matches": 2,
+          "rank": 98,
+          "record": "1-1"
+        },
+        {
+          "year": 2020,
+          "wrestler_id": "10503117132",
+          "team": "Penn State",
+          "team_slug": "penn_state",
+          "team_abbr": "PSU",
+          "is_query_team": false,
+          "dpg": -0.04,
+          "matches": 27,
+          "rank": 84,
+          "record": "11-16"
+        },
+        {
+          "year": 2021,
+          "wrestler_id": "14801932132",
+          "team": "Penn State",
+          "team_slug": "penn_state",
+          "team_abbr": "PSU",
+          "is_query_team": false,
+          "dpg": -4.54,
+          "matches": 1,
+          "rank": 101,
+          "record": "0-1"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16699207132",
+          "team": "Penn State",
+          "team_slug": "penn_state",
+          "team_abbr": "PSU",
+          "is_query_team": false,
+          "dpg": 1.07,
+          "matches": 17,
+          "rank": 222,
+          "record": "5-5"
+        },
+        {
+          "year": 2024,
+          "wrestler_id": "24584720132",
+          "team": "South Dakota State",
+          "team_slug": "south_dakota_state",
+          "team_abbr": "SDSU",
+          "is_query_team": true,
+          "dpg": -0.48,
+          "matches": 22,
+          "rank": 218,
+          "record": "6-8"
+        }
+      ]
+    }
+  ]
+}

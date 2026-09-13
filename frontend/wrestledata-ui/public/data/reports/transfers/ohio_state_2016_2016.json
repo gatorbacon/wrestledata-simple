@@ -1,0 +1,73 @@
+{
+  "query": {
+    "team_slug": "ohio_state",
+    "team_name": "Ohio State",
+    "start_year": 2016,
+    "end_year": 2016
+  },
+  "wrestlers": [
+    {
+      "name": "Thomas Haines",
+      "wrestler_id": "4627318132",
+      "weight_class": 285,
+      "photo_url": "https://lockhavenathletics.com/images/2018/10/23/Thomas_Haines.jpg",
+      "direction": "transfer_out",
+      "first_query_year": 2016,
+      "last_query_year": 2016,
+      "school_path": [
+        "Ohio State",
+        "Lock Haven"
+      ],
+      "seasons": [
+        {
+          "year": 2016,
+          "wrestler_id": "277805011",
+          "team": "Ohio State",
+          "team_slug": "ohio_state",
+          "team_abbr": "OHST",
+          "is_query_team": true,
+          "dpg": 2.15,
+          "matches": 14,
+          "rank": 43,
+          "record": "14-4"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "9727597009",
+          "team": "Lock Haven",
+          "team_slug": "lock_haven",
+          "team_abbr": "LH",
+          "is_query_team": false,
+          "dpg": 2.71,
+          "matches": 35,
+          "rank": 18,
+          "record": "29-10"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11445963009",
+          "team": "Lock Haven",
+          "team_slug": "lock_haven",
+          "team_abbr": "LH",
+          "is_query_team": false,
+          "dpg": 2.19,
+          "matches": 25,
+          "rank": 16,
+          "record": "18-8"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4627318132",
+          "team": "Lock Haven",
+          "team_slug": "lock_haven",
+          "team_abbr": "LH",
+          "is_query_team": false,
+          "dpg": 2.5,
+          "matches": 26,
+          "rank": 11,
+          "record": "22-5"
+        }
+      ]
+    }
+  ]
+}

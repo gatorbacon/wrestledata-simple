@@ -1,0 +1,73 @@
+{
+  "query": {
+    "team_slug": "princeton",
+    "team_name": "Princeton",
+    "start_year": 2018,
+    "end_year": 2018
+  },
+  "wrestlers": [
+    {
+      "name": "Patrick Brucki",
+      "wrestler_id": "16701572132",
+      "weight_class": 197,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fmgoblue.com%2Fimages%2F2021%2F9%2F19%2F20210919_wrm_brucki.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2018,
+      "last_query_year": 2020,
+      "school_path": [
+        "Princeton",
+        "Michigan"
+      ],
+      "seasons": [
+        {
+          "year": 2018,
+          "wrestler_id": "11412393009",
+          "team": "Princeton",
+          "team_slug": "princeton",
+          "team_abbr": "PRIN",
+          "is_query_team": true,
+          "dpg": 1.99,
+          "matches": 42,
+          "rank": 20,
+          "record": "28-10"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4626228132",
+          "team": "Princeton",
+          "team_slug": "princeton",
+          "team_abbr": "PRIN",
+          "is_query_team": true,
+          "dpg": 3.67,
+          "matches": 37,
+          "rank": 4,
+          "record": "33-3"
+        },
+        {
+          "year": 2020,
+          "wrestler_id": "10491722132",
+          "team": "Princeton",
+          "team_slug": "princeton",
+          "team_abbr": "PRIN",
+          "is_query_team": true,
+          "dpg": 3.26,
+          "matches": 26,
+          "rank": 8,
+          "record": "21-6"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16701572132",
+          "team": "Michigan",
+          "team_slug": "michigan",
+          "team_abbr": "MICH",
+          "is_query_team": false,
+          "dpg": 2.7,
+          "matches": 30,
+          "rank": 9,
+          "record": "21-10"
+        }
+      ]
+    }
+  ]
+}

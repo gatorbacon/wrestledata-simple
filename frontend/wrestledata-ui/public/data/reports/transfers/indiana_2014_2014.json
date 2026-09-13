@@ -1,0 +1,85 @@
+{
+  "query": {
+    "team_slug": "indiana",
+    "team_name": "Indiana",
+    "start_year": 2014,
+    "end_year": 2014
+  },
+  "wrestlers": [
+    {
+      "name": "Kyle Springer",
+      "wrestler_id": "11482756009",
+      "weight_class": 149,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Femueagles.com%2Fimages%2F2017%2F9%2F12%2FKyle_Springer.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2014,
+      "last_query_year": 2014,
+      "school_path": [
+        "Indiana",
+        "Eastern Michigan"
+      ],
+      "seasons": [
+        {
+          "year": 2014,
+          "wrestler_id": "4631140009",
+          "team": "Indiana",
+          "team_slug": "indiana",
+          "team_abbr": "IND",
+          "is_query_team": true,
+          "dpg": -1.38,
+          "matches": 7,
+          "rank": 105,
+          "record": "2-4"
+        },
+        {
+          "year": 2015,
+          "wrestler_id": "4875836009",
+          "team": "Eastern Michigan",
+          "team_slug": "eastern_michigan",
+          "team_abbr": "EAST",
+          "is_query_team": false,
+          "dpg": 0.51,
+          "matches": 30,
+          "rank": 61,
+          "record": "18-10"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "7928994009",
+          "team": "Eastern Michigan",
+          "team_slug": "eastern_michigan",
+          "team_abbr": "EAST",
+          "is_query_team": false,
+          "dpg": 1.0,
+          "matches": 33,
+          "rank": 53,
+          "record": "16-14"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "830660076",
+          "team": "Eastern Michigan",
+          "team_slug": "eastern_michigan",
+          "team_abbr": "EAST",
+          "is_query_team": false,
+          "dpg": 0.59,
+          "matches": 21,
+          "rank": 44,
+          "record": "12-9"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11482756009",
+          "team": "Eastern Michigan",
+          "team_slug": "eastern_michigan",
+          "team_abbr": "EAST",
+          "is_query_team": false,
+          "dpg": 0.53,
+          "matches": 38,
+          "rank": 30,
+          "record": "21-17"
+        }
+      ]
+    }
+  ]
+}

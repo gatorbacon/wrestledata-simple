@@ -1,0 +1,73 @@
+{
+  "query": {
+    "team_slug": "illinois",
+    "team_name": "Illinois",
+    "start_year": 2013,
+    "end_year": 2013
+  },
+  "wrestlers": [
+    {
+      "name": "John Fahy",
+      "wrestler_id": "829426076",
+      "weight_class": 149,
+      "photo_url": null,
+      "direction": "transfer_out",
+      "first_query_year": 2013,
+      "last_query_year": 2014,
+      "school_path": [
+        "Illinois",
+        "Southern Illinois Edwardsville"
+      ],
+      "seasons": [
+        {
+          "year": 2013,
+          "wrestler_id": "4496255009",
+          "team": "Illinois",
+          "team_slug": "illinois",
+          "team_abbr": "ILL",
+          "is_query_team": true,
+          "dpg": -0.19,
+          "matches": 14,
+          "rank": 75,
+          "record": "9-4"
+        },
+        {
+          "year": 2014,
+          "wrestler_id": "4631100009",
+          "team": "Illinois",
+          "team_slug": "illinois",
+          "team_abbr": "ILL",
+          "is_query_team": true,
+          "dpg": -0.29,
+          "matches": 25,
+          "rank": 66,
+          "record": "7-11"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "415516076",
+          "team": "Southern Illinois Edwardsville",
+          "team_slug": "southern_illinois_edwardsville",
+          "team_abbr": "SOUT",
+          "is_query_team": false,
+          "dpg": 0.28,
+          "matches": 25,
+          "rank": 31,
+          "record": "14-11"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "829426076",
+          "team": "Southern Illinois Edwardsville",
+          "team_slug": "southern_illinois_edwardsville",
+          "team_abbr": "SOUT",
+          "is_query_team": false,
+          "dpg": -0.21,
+          "matches": 23,
+          "rank": 50,
+          "record": "10-12"
+        }
+      ]
+    }
+  ]
+}

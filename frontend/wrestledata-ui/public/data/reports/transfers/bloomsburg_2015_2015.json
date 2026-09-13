@@ -1,0 +1,112 @@
+{
+  "query": {
+    "team_slug": "bloomsburg",
+    "team_name": "Bloomsburg",
+    "start_year": 2015,
+    "end_year": 2015
+  },
+  "wrestlers": [
+    {
+      "name": "Colby Baker",
+      "wrestler_id": "264278013",
+      "weight_class": 141,
+      "photo_url": "https://aueagles.com/images/2019/8/15/colby_baker_m_wrestl_2015_16.jpg",
+      "direction": "transfer_out",
+      "first_query_year": 2014,
+      "last_query_year": 2015,
+      "school_path": [
+        "Bloomsburg",
+        "American"
+      ],
+      "seasons": [
+        {
+          "year": 2014,
+          "wrestler_id": "4629271009",
+          "team": "Bloomsburg",
+          "team_slug": "bloomsburg",
+          "team_abbr": "BLOO",
+          "is_query_team": true,
+          "dpg": -3.63,
+          "matches": 7,
+          "rank": 194,
+          "record": "1-5"
+        },
+        {
+          "year": 2015,
+          "wrestler_id": "802010",
+          "team": "Bloomsburg",
+          "team_slug": "bloomsburg",
+          "team_abbr": "BLOO",
+          "is_query_team": true,
+          "dpg": -2.79,
+          "matches": 1,
+          "rank": 234,
+          "record": "0-1"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "264278013",
+          "team": "American",
+          "team_slug": "american",
+          "team_abbr": "AMER",
+          "is_query_team": false,
+          "dpg": -5.32,
+          "matches": 4,
+          "rank": 268,
+          "record": "0-4"
+        }
+      ]
+    },
+    {
+      "name": "Chase Zemenak",
+      "wrestler_id": "20660123",
+      "weight_class": 141,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Futc.sidearmsports.com%2Fimages%2F2016%2F9%2F6%2FZemenak%2C%20Chase.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2015,
+      "last_query_year": 2015,
+      "school_path": [
+        "Bloomsburg",
+        "Chattanooga"
+      ],
+      "seasons": [
+        {
+          "year": 2015,
+          "wrestler_id": "1602076",
+          "team": "Bloomsburg",
+          "team_slug": "bloomsburg",
+          "team_abbr": "BLOO",
+          "is_query_team": true,
+          "dpg": 1.3,
+          "matches": 22,
+          "rank": 48,
+          "record": "14-5"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "533017094",
+          "team": "Chattanooga",
+          "team_slug": "chattanooga",
+          "team_abbr": "CHAT",
+          "is_query_team": false,
+          "dpg": 1.09,
+          "matches": 13,
+          "rank": 45,
+          "record": "9-3"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "20660123",
+          "team": "Chattanooga",
+          "team_slug": "chattanooga",
+          "team_abbr": "CHAT",
+          "is_query_team": false,
+          "dpg": 0.4,
+          "matches": 14,
+          "rank": 39,
+          "record": "10-4"
+        }
+      ]
+    }
+  ]
+}

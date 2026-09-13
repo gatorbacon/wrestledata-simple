@@ -1,0 +1,148 @@
+{
+  "query": {
+    "team_slug": "hofstra",
+    "team_name": "Hofstra",
+    "start_year": 2025,
+    "end_year": 2025
+  },
+  "wrestlers": [
+    {
+      "name": "Chase Liardi",
+      "wrestler_id": "34937665132",
+      "weight_class": 141,
+      "photo_url": "https://gohofstra.com/images/2025/10/15/2526Wrestling_ChaseLiardi.jpg",
+      "direction": "transfer_in",
+      "first_query_year": 2023,
+      "last_query_year": 2026,
+      "school_path": [
+        "Ohio State",
+        "Hofstra"
+      ],
+      "seasons": [
+        {
+          "year": 2022,
+          "wrestler_id": "16704549132",
+          "team": "Ohio State",
+          "team_slug": "ohio_state",
+          "team_abbr": "OHST",
+          "is_query_team": false,
+          "dpg": 0.33,
+          "matches": 11,
+          "rank": 72,
+          "record": "7-3"
+        },
+        {
+          "year": 2023,
+          "wrestler_id": "20122485132",
+          "team": "Hofstra",
+          "team_slug": "hofstra",
+          "team_abbr": "HOF",
+          "is_query_team": true,
+          "dpg": -0.53,
+          "matches": 27,
+          "rank": 76,
+          "record": "10-14"
+        },
+        {
+          "year": 2025,
+          "wrestler_id": "29680085132",
+          "team": "Hofstra",
+          "team_slug": "hofstra",
+          "team_abbr": "HOF",
+          "is_query_team": true,
+          "dpg": -0.78,
+          "matches": 27,
+          "rank": 125,
+          "record": "10-14"
+        },
+        {
+          "year": 2026,
+          "wrestler_id": "34937665132",
+          "team": "Hofstra",
+          "team_slug": "hofstra",
+          "team_abbr": "HOF",
+          "is_query_team": true,
+          "dpg": -0.97,
+          "matches": 27,
+          "rank": 165,
+          "record": "9-16"
+        }
+      ]
+    },
+    {
+      "name": "Kyle Mosher",
+      "wrestler_id": "29680102132",
+      "weight_class": 165,
+      "photo_url": "https://gohofstra.com/images/2024/10/23/2425Wrestling_KyleMosher_V.jpg",
+      "direction": "transfer_in",
+      "first_query_year": 2025,
+      "last_query_year": 2025,
+      "school_path": [
+        "Columbia",
+        "Hofstra"
+      ],
+      "seasons": [
+        {
+          "year": 2020,
+          "wrestler_id": "10496001132",
+          "team": "Columbia",
+          "team_slug": "columbia",
+          "team_abbr": "COL",
+          "is_query_team": false,
+          "dpg": 0.9,
+          "matches": 41,
+          "rank": 65,
+          "record": "19-10"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16696043132",
+          "team": "Columbia",
+          "team_slug": "columbia",
+          "team_abbr": "COL",
+          "is_query_team": false,
+          "dpg": 0.37,
+          "matches": 8,
+          "rank": 43,
+          "record": "4-4"
+        },
+        {
+          "year": 2023,
+          "wrestler_id": "20123154132",
+          "team": "Columbia",
+          "team_slug": "columbia",
+          "team_abbr": "COL",
+          "is_query_team": false,
+          "dpg": 0.5,
+          "matches": 14,
+          "rank": 37,
+          "record": "7-5"
+        },
+        {
+          "year": 2024,
+          "wrestler_id": "24579560132",
+          "team": "Columbia",
+          "team_slug": "columbia",
+          "team_abbr": "COL",
+          "is_query_team": false,
+          "dpg": 0.28,
+          "matches": 26,
+          "rank": 42,
+          "record": "10-11"
+        },
+        {
+          "year": 2025,
+          "wrestler_id": "29680102132",
+          "team": "Hofstra",
+          "team_slug": "hofstra",
+          "team_abbr": "HOF",
+          "is_query_team": true,
+          "dpg": 1.26,
+          "matches": 32,
+          "rank": 22,
+          "record": "16-10"
+        }
+      ]
+    }
+  ]
+}

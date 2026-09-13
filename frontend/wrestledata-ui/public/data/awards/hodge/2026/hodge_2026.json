@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "generated_at": "2025-12-27T14:06:22.764363+00:00",
+  "generated_at": "2026-09-11T22:53:44.418780+00:00",
   "description": "Hodge Score evaluates performance only. Eligibility determines who appears on the Hodge Watch. Weight-class rank influences eligibility — not scoring.",
   "rows": [
     {
@@ -12,11 +12,11 @@
       "weight_rank": 1,
       "eligible": true,
       "eligibility_reason": null,
-      "hodge_score": 65.91,
+      "hodge_score": 81.86,
       "components": {
         "record": {
           "raw": {
-            "wins": 10,
+            "wins": 26,
             "losses": 0,
             "win_pct": 1.0
           },
@@ -26,46 +26,46 @@
         },
         "quality": {
           "raw": {
-            "ranked_wins": 2,
-            "top10_wins": 1,
-            "raw_quality": 19.0
+            "ranked_wins": 15,
+            "top10_wins": 5,
+            "raw_quality": 164.0
           },
-          "score": 17.8,
+          "score": 100.0,
           "weight": 0.3,
-          "contribution": 5.35
+          "contribution": 30.0
         },
         "dominance": {
           "raw": {
-            "avg_team_points": 5.23
+            "avg_team_points": 4.88
           },
-          "score": 74.2,
+          "score": 62.5,
           "weight": 0.25,
-          "contribution": 18.56
+          "contribution": 15.63
         },
         "pins": {
           "raw": {
-            "pin_pct": 0.5
+            "pin_pct": 0.308
           },
-          "score": 80.0,
+          "score": 41.5,
           "weight": 0.15,
-          "contribution": 12.0
+          "contribution": 6.23
         }
       }
     },
     {
       "rank": 2,
-      "wrestler_id": "34941780132",
-      "name": "Jesse Mendez",
-      "team": "Ohio State",
-      "weight": 141,
+      "wrestler_id": "34939018132",
+      "name": "Josh Barr",
+      "team": "Penn State",
+      "weight": 197,
       "weight_rank": 1,
       "eligible": true,
       "eligibility_reason": null,
-      "hodge_score": 65.3,
+      "hodge_score": 77.27,
       "components": {
         "record": {
           "raw": {
-            "wins": 9,
+            "wins": 24,
             "losses": 0,
             "win_pct": 1.0
           },
@@ -75,46 +75,46 @@
         },
         "quality": {
           "raw": {
-            "ranked_wins": 5,
-            "top10_wins": 4,
-            "raw_quality": 72.7
+            "ranked_wins": 16,
+            "top10_wins": 7,
+            "raw_quality": 158.7
           },
-          "score": 68.6,
+          "score": 100.0,
           "weight": 0.3,
-          "contribution": 20.57
+          "contribution": 30.0
         },
         "dominance": {
           "raw": {
-            "avg_team_points": 4.33
+            "avg_team_points": 4.68
           },
-          "score": 44.3,
+          "score": 56.1,
           "weight": 0.25,
-          "contribution": 11.07
+          "contribution": 14.02
         },
         "pins": {
           "raw": {
-            "pin_pct": 0.222
+            "pin_pct": 0.208
           },
-          "score": 24.4,
+          "score": 21.7,
           "weight": 0.15,
-          "contribution": 3.67
+          "contribution": 3.25
         }
       }
     },
     {
       "rank": 3,
-      "wrestler_id": "34964522132",
-      "name": "Jaxon Joy",
-      "team": "Cornell",
-      "weight": 149,
-      "weight_rank": 2,
+      "wrestler_id": "34939016132",
+      "name": "Levi Haines",
+      "team": "Penn State",
+      "weight": 174,
+      "weight_rank": 1,
       "eligible": true,
       "eligibility_reason": null,
-      "hodge_score": 62.15,
+      "hodge_score": 76.03,
       "components": {
         "record": {
           "raw": {
-            "wins": 12,
+            "wins": 26,
             "losses": 0,
             "win_pct": 1.0
           },
@@ -124,21 +124,70 @@
         },
         "quality": {
           "raw": {
-            "ranked_wins": 6,
-            "top10_wins": 3,
-            "raw_quality": 69.0
+            "ranked_wins": 13,
+            "top10_wins": 8,
+            "raw_quality": 158.3
           },
-          "score": 63.5,
+          "score": 100.0,
           "weight": 0.3,
-          "contribution": 19.05
+          "contribution": 30.0
         },
         "dominance": {
           "raw": {
-            "avg_team_points": 4.33
+            "avg_team_points": 4.45
           },
-          "score": 44.4,
+          "score": 48.4,
           "weight": 0.25,
-          "contribution": 11.1
+          "contribution": 12.11
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.231
+          },
+          "score": 26.2,
+          "weight": 0.15,
+          "contribution": 3.92
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "wrestler_id": "37327356132",
+      "name": "Jax Forrest",
+      "team": "Oklahoma State",
+      "weight": 133,
+      "weight_rank": 1,
+      "eligible": true,
+      "eligibility_reason": null,
+      "hodge_score": 75.19,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 18,
+            "losses": 0,
+            "win_pct": 1.0
+          },
+          "score": 100.0,
+          "weight": 0.3,
+          "contribution": 30.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 10,
+            "top10_wins": 5,
+            "raw_quality": 109.3
+          },
+          "score": 100.0,
+          "weight": 0.3,
+          "contribution": 30.0
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 4.58
+          },
+          "score": 52.8,
+          "weight": 0.25,
+          "contribution": 13.19
         },
         "pins": {
           "raw": {
@@ -151,68 +200,19 @@
       }
     },
     {
-      "rank": 4,
-      "wrestler_id": "34936469132",
-      "name": "Sergio Vega",
-      "team": "Oklahoma State",
-      "weight": 141,
-      "weight_rank": 2,
-      "eligible": true,
-      "eligibility_reason": null,
-      "hodge_score": 61.61,
-      "components": {
-        "record": {
-          "raw": {
-            "wins": 7,
-            "losses": 0,
-            "win_pct": 1.0
-          },
-          "score": 100.0,
-          "weight": 0.3,
-          "contribution": 30.0
-        },
-        "quality": {
-          "raw": {
-            "ranked_wins": 6,
-            "top10_wins": 4,
-            "raw_quality": 81.3
-          },
-          "score": 75.8,
-          "weight": 0.3,
-          "contribution": 22.73
-        },
-        "dominance": {
-          "raw": {
-            "avg_team_points": 3.97
-          },
-          "score": 30.4,
-          "weight": 0.25,
-          "contribution": 7.59
-        },
-        "pins": {
-          "raw": {
-            "pin_pct": 0.143
-          },
-          "score": 8.6,
-          "weight": 0.15,
-          "contribution": 1.29
-        }
-      }
-    },
-    {
       "rank": 5,
-      "wrestler_id": "34940702132",
-      "name": "Yonger Bastida",
-      "team": "Iowa State",
+      "wrestler_id": "34935688132",
+      "name": "Isaac Trumble",
+      "team": "NC State",
       "weight": 285,
       "weight_rank": 1,
       "eligible": true,
       "eligibility_reason": null,
-      "hodge_score": 60.32,
+      "hodge_score": 72.2,
       "components": {
         "record": {
           "raw": {
-            "wins": 10,
+            "wins": 20,
             "losses": 0,
             "win_pct": 1.0
           },
@@ -222,70 +222,21 @@
         },
         "quality": {
           "raw": {
-            "ranked_wins": 6,
-            "top10_wins": 4,
-            "raw_quality": 79.0
-          },
-          "score": 73.8,
-          "weight": 0.3,
-          "contribution": 22.15
-        },
-        "dominance": {
-          "raw": {
-            "avg_team_points": 3.98
-          },
-          "score": 32.7,
-          "weight": 0.25,
-          "contribution": 8.17
-        },
-        "pins": {
-          "raw": {
-            "pin_pct": 0.1
-          },
-          "score": 0.0,
-          "weight": 0.15,
-          "contribution": 0.0
-        }
-      }
-    },
-    {
-      "rank": 6,
-      "wrestler_id": "34939016132",
-      "name": "Levi Haines",
-      "team": "Penn State",
-      "weight": 174,
-      "weight_rank": 1,
-      "eligible": true,
-      "eligibility_reason": null,
-      "hodge_score": 59.08,
-      "components": {
-        "record": {
-          "raw": {
-            "wins": 8,
-            "losses": 0,
-            "win_pct": 1.0
+            "ranked_wins": 10,
+            "top10_wins": 6,
+            "raw_quality": 116.3
           },
           "score": 100.0,
           "weight": 0.3,
           "contribution": 30.0
         },
-        "quality": {
-          "raw": {
-            "ranked_wins": 3,
-            "top10_wins": 1,
-            "raw_quality": 29.0
-          },
-          "score": 26.2,
-          "weight": 0.3,
-          "contribution": 7.85
-        },
         "dominance": {
           "raw": {
-            "avg_team_points": 5.01
+            "avg_team_points": 3.92
           },
-          "score": 66.9,
+          "score": 30.8,
           "weight": 0.25,
-          "contribution": 16.73
+          "contribution": 7.7
         },
         "pins": {
           "raw": {
@@ -298,337 +249,92 @@
       }
     },
     {
-      "rank": 7,
-      "wrestler_id": "34946729132",
-      "name": "Ty Watters",
-      "team": "West Virginia",
-      "weight": 157,
-      "weight_rank": 1,
-      "eligible": true,
-      "eligibility_reason": null,
-      "hodge_score": 56.9,
-      "components": {
-        "record": {
-          "raw": {
-            "wins": 10,
-            "losses": 0,
-            "win_pct": 1.0
-          },
-          "score": 100.0,
-          "weight": 0.3,
-          "contribution": 30.0
-        },
-        "quality": {
-          "raw": {
-            "ranked_wins": 4,
-            "top10_wins": 1,
-            "raw_quality": 44.3
-          },
-          "score": 38.9,
-          "weight": 0.3,
-          "contribution": 11.68
-        },
-        "dominance": {
-          "raw": {
-            "avg_team_points": 4.47
-          },
-          "score": 48.9,
-          "weight": 0.25,
-          "contribution": 12.21
-        },
-        "pins": {
-          "raw": {
-            "pin_pct": 0.2
-          },
-          "score": 20.0,
-          "weight": 0.15,
-          "contribution": 3.0
-        }
-      }
-    },
-    {
-      "rank": 8,
-      "wrestler_id": "34941785132",
-      "name": "Brandon Cannon",
+      "rank": 6,
+      "wrestler_id": "34941780132",
+      "name": "Jesse Mendez",
       "team": "Ohio State",
-      "weight": 157,
+      "weight": 141,
       "weight_rank": 2,
       "eligible": true,
       "eligibility_reason": null,
-      "hodge_score": 54.35,
+      "hodge_score": 70.33,
       "components": {
         "record": {
           "raw": {
-            "wins": 9,
-            "losses": 0,
-            "win_pct": 1.0
-          },
-          "score": 100.0,
-          "weight": 0.3,
-          "contribution": 30.0
-        },
-        "quality": {
-          "raw": {
-            "ranked_wins": 4,
-            "top10_wins": 1,
-            "raw_quality": 34.3
-          },
-          "score": 30.6,
-          "weight": 0.3,
-          "contribution": 9.18
-        },
-        "dominance": {
-          "raw": {
-            "avg_team_points": 4.38
-          },
-          "score": 46.0,
-          "weight": 0.25,
-          "contribution": 11.5
-        },
-        "pins": {
-          "raw": {
-            "pin_pct": 0.222
-          },
-          "score": 24.4,
-          "weight": 0.15,
-          "contribution": 3.67
-        }
-      }
-    },
-    {
-      "rank": 9,
-      "wrestler_id": "34939015132",
-      "name": "Shayne Van Ness",
-      "team": "Penn State",
-      "weight": 149,
-      "weight_rank": 1,
-      "eligible": true,
-      "eligibility_reason": null,
-      "hodge_score": 54.16,
-      "components": {
-        "record": {
-          "raw": {
-            "wins": 9,
-            "losses": 0,
-            "win_pct": 1.0
-          },
-          "score": 100.0,
-          "weight": 0.3,
-          "contribution": 30.0
-        },
-        "quality": {
-          "raw": {
-            "ranked_wins": 2,
-            "top10_wins": 0,
-            "raw_quality": 8.7
-          },
-          "score": 7.2,
-          "weight": 0.3,
-          "contribution": 2.17
-        },
-        "dominance": {
-          "raw": {
-            "avg_team_points": 4.8
-          },
-          "score": 60.0,
-          "weight": 0.25,
-          "contribution": 15.0
-        },
-        "pins": {
-          "raw": {
-            "pin_pct": 0.333
-          },
-          "score": 46.7,
-          "weight": 0.15,
-          "contribution": 7.0
-        }
-      }
-    },
-    {
-      "rank": 10,
-      "wrestler_id": "34935688132",
-      "name": "Isaac Trumble",
-      "team": "NC State",
-      "weight": 285,
-      "weight_rank": 2,
-      "eligible": true,
-      "eligibility_reason": null,
-      "hodge_score": 53.4,
-      "components": {
-        "record": {
-          "raw": {
-            "wins": 5,
-            "losses": 0,
-            "win_pct": 1.0
-          },
-          "score": 100.0,
-          "weight": 0.3,
-          "contribution": 30.0
-        },
-        "quality": {
-          "raw": {
-            "ranked_wins": 1,
-            "top10_wins": 1,
-            "raw_quality": 18.0
-          },
-          "score": 17.0,
-          "weight": 0.3,
-          "contribution": 5.1
-        },
-        "dominance": {
-          "raw": {
-            "avg_team_points": 4.12
-          },
-          "score": 37.2,
-          "weight": 0.25,
-          "contribution": 9.3
-        },
-        "pins": {
-          "raw": {
-            "pin_pct": 0.4
-          },
-          "score": 60.0,
-          "weight": 0.15,
-          "contribution": 9.0
-        }
-      }
-    },
-    {
-      "rank": 11,
-      "wrestler_id": "34940832132",
-      "name": "Rocky Elam",
-      "team": "Iowa State",
-      "weight": 197,
-      "weight_rank": 2,
-      "eligible": true,
-      "eligibility_reason": null,
-      "hodge_score": 51.7,
-      "components": {
-        "record": {
-          "raw": {
-            "wins": 9,
-            "losses": 0,
-            "win_pct": 1.0
-          },
-          "score": 100.0,
-          "weight": 0.3,
-          "contribution": 30.0
-        },
-        "quality": {
-          "raw": {
-            "ranked_wins": 6,
-            "top10_wins": 3,
-            "raw_quality": 61.0
-          },
-          "score": 56.8,
-          "weight": 0.3,
-          "contribution": 17.05
-        },
-        "dominance": {
-          "raw": {
-            "avg_team_points": 3.56
-          },
-          "score": 18.6,
-          "weight": 0.25,
-          "contribution": 4.65
-        },
-        "pins": {
-          "raw": {
-            "pin_pct": 0.0
-          },
-          "score": 0.0,
-          "weight": 0.15,
-          "contribution": 0.0
-        }
-      }
-    },
-    {
-      "rank": 12,
-      "wrestler_id": "34962169132",
-      "name": "Angelo Ferrari",
-      "team": "Iowa",
-      "weight": 184,
-      "weight_rank": 1,
-      "eligible": true,
-      "eligibility_reason": null,
-      "hodge_score": 48.47,
-      "components": {
-        "record": {
-          "raw": {
-            "wins": 8,
-            "losses": 0,
-            "win_pct": 1.0
-          },
-          "score": 100.0,
-          "weight": 0.3,
-          "contribution": 30.0
-        },
-        "quality": {
-          "raw": {
-            "ranked_wins": 6,
-            "top10_wins": 2,
-            "raw_quality": 58.0
-          },
-          "score": 52.3,
-          "weight": 0.3,
-          "contribution": 15.7
-        },
-        "dominance": {
-          "raw": {
-            "avg_team_points": 3.33
-          },
-          "score": 11.1,
-          "weight": 0.25,
-          "contribution": 2.77
-        },
-        "pins": {
-          "raw": {
-            "pin_pct": 0.0
-          },
-          "score": 0.0,
-          "weight": 0.15,
-          "contribution": 0.0
-        }
-      }
-    },
-    {
-      "rank": 13,
-      "wrestler_id": "34943978132",
-      "name": "Aeoden Sinclair",
-      "team": "Missouri",
-      "weight": 184,
-      "weight_rank": 2,
-      "eligible": true,
-      "eligibility_reason": null,
-      "hodge_score": 46.77,
-      "components": {
-        "record": {
-          "raw": {
-            "wins": 12,
+            "wins": 28,
             "losses": 1,
-            "win_pct": 0.923
+            "win_pct": 0.966
           },
-          "score": 48.7,
+          "score": 77.0,
           "weight": 0.3,
-          "contribution": 14.62
+          "contribution": 23.1
         },
         "quality": {
           "raw": {
-            "ranked_wins": 7,
-            "top10_wins": 4,
-            "raw_quality": 74.3
+            "ranked_wins": 15,
+            "top10_wins": 10,
+            "raw_quality": 183.3
           },
-          "score": 69.9,
+          "score": 100.0,
           "weight": 0.3,
-          "contribution": 20.98
+          "contribution": 30.0
         },
         "dominance": {
           "raw": {
-            "avg_team_points": 4.1
+            "avg_team_points": 4.4
           },
-          "score": 36.7,
+          "score": 46.6,
           "weight": 0.25,
-          "contribution": 9.17
+          "contribution": 11.65
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.286
+          },
+          "score": 37.1,
+          "weight": 0.15,
+          "contribution": 5.57
+        }
+      }
+    },
+    {
+      "rank": 7,
+      "wrestler_id": "34936469132",
+      "name": "Sergio Vega",
+      "team": "Oklahoma State",
+      "weight": 141,
+      "weight_rank": 1,
+      "eligible": true,
+      "eligibility_reason": null,
+      "hodge_score": 68.9,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 24,
+            "losses": 0,
+            "win_pct": 1.0
+          },
+          "score": 100.0,
+          "weight": 0.3,
+          "contribution": 30.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 14,
+            "top10_wins": 6,
+            "raw_quality": 155.0
+          },
+          "score": 100.0,
+          "weight": 0.3,
+          "contribution": 30.0
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.83
+          },
+          "score": 27.6,
+          "weight": 0.25,
+          "contribution": 6.9
         },
         "pins": {
           "raw": {
@@ -641,19 +347,68 @@
       }
     },
     {
-      "rank": 14,
-      "wrestler_id": "34941790132",
-      "name": "Ben Davino",
-      "team": "Ohio State",
-      "weight": 133,
+      "rank": 8,
+      "wrestler_id": "34939015132",
+      "name": "Shayne Van Ness",
+      "team": "Penn State",
+      "weight": 149,
       "weight_rank": 2,
       "eligible": true,
       "eligibility_reason": null,
-      "hodge_score": 46.69,
+      "hodge_score": 68.59,
       "components": {
         "record": {
           "raw": {
-            "wins": 11,
+            "wins": 25,
+            "losses": 1,
+            "win_pct": 0.962
+          },
+          "score": 74.4,
+          "weight": 0.3,
+          "contribution": 22.31
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 14,
+            "top10_wins": 4,
+            "raw_quality": 126.7
+          },
+          "score": 100.0,
+          "weight": 0.3,
+          "contribution": 30.0
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 4.45
+          },
+          "score": 48.3,
+          "weight": 0.25,
+          "contribution": 12.08
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.24
+          },
+          "score": 28.0,
+          "weight": 0.15,
+          "contribution": 4.2
+        }
+      }
+    },
+    {
+      "rank": 9,
+      "wrestler_id": "34939025132",
+      "name": "Luke Lilledahl",
+      "team": "Penn State",
+      "weight": 125,
+      "weight_rank": 1,
+      "eligible": true,
+      "eligibility_reason": null,
+      "hodge_score": 66.27,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 25,
             "losses": 0,
             "win_pct": 1.0
           },
@@ -663,21 +418,266 @@
         },
         "quality": {
           "raw": {
-            "ranked_wins": 3,
-            "top10_wins": 2,
-            "raw_quality": 40.3
+            "ranked_wins": 18,
+            "top10_wins": 8,
+            "raw_quality": 150.7
           },
-          "score": 37.6,
+          "score": 100.0,
           "weight": 0.3,
-          "contribution": 11.28
+          "contribution": 30.0
         },
         "dominance": {
           "raw": {
-            "avg_team_points": 3.65
+            "avg_team_points": 3.75
           },
-          "score": 21.6,
+          "score": 25.1,
           "weight": 0.25,
-          "contribution": 5.41
+          "contribution": 6.27
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.04
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 10,
+      "wrestler_id": "34939039132",
+      "name": "PJ Duke",
+      "team": "Penn State",
+      "weight": 157,
+      "weight_rank": 2,
+      "eligible": true,
+      "eligibility_reason": null,
+      "hodge_score": 65.93,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 23,
+            "losses": 2,
+            "win_pct": 0.92
+          },
+          "score": 46.7,
+          "weight": 0.3,
+          "contribution": 14.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 12,
+            "top10_wins": 6,
+            "raw_quality": 130.0
+          },
+          "score": 100.0,
+          "weight": 0.3,
+          "contribution": 30.0
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 4.43
+          },
+          "score": 47.5,
+          "weight": 0.25,
+          "contribution": 11.88
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.435
+          },
+          "score": 67.0,
+          "weight": 0.15,
+          "contribution": 10.04
+        }
+      }
+    },
+    {
+      "rank": 11,
+      "wrestler_id": "34940702132",
+      "name": "Yonger Bastida",
+      "team": "Iowa State",
+      "weight": 285,
+      "weight_rank": 2,
+      "eligible": true,
+      "eligibility_reason": null,
+      "hodge_score": 62.36,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 30,
+            "losses": 1,
+            "win_pct": 0.968
+          },
+          "score": 78.5,
+          "weight": 0.3,
+          "contribution": 23.55
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 16,
+            "top10_wins": 6,
+            "raw_quality": 172.7
+          },
+          "score": 100.0,
+          "weight": 0.3,
+          "contribution": 30.0
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 4.06
+          },
+          "score": 35.3,
+          "weight": 0.25,
+          "contribution": 8.81
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.067
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 12,
+      "wrestler_id": "34939044132",
+      "name": "Rocco Welsh",
+      "team": "Penn State",
+      "weight": 184,
+      "weight_rank": 2,
+      "eligible": true,
+      "eligibility_reason": null,
+      "hodge_score": 56.45,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 24,
+            "losses": 1,
+            "win_pct": 0.96
+          },
+          "score": 73.3,
+          "weight": 0.3,
+          "contribution": 22.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 15,
+            "top10_wins": 10,
+            "raw_quality": 168.3
+          },
+          "score": 100.0,
+          "weight": 0.3,
+          "contribution": 30.0
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.53
+          },
+          "score": 17.8,
+          "weight": 0.25,
+          "contribution": 4.45
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.042
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 13,
+      "wrestler_id": "34941790132",
+      "name": "Ben Davino",
+      "team": "Ohio State",
+      "weight": 133,
+      "weight_rank": 2,
+      "eligible": true,
+      "eligibility_reason": null,
+      "hodge_score": 54.59,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 31,
+            "losses": 2,
+            "win_pct": 0.939
+          },
+          "score": 59.6,
+          "weight": 0.3,
+          "contribution": 17.88
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 14,
+            "top10_wins": 8,
+            "raw_quality": 175.0
+          },
+          "score": 100.0,
+          "weight": 0.3,
+          "contribution": 30.0
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.81
+          },
+          "score": 26.9,
+          "weight": 0.25,
+          "contribution": 6.71
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.032
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 14,
+      "wrestler_id": "34955784132",
+      "name": "Max McEnelly",
+      "team": "Minnesota",
+      "weight": 184,
+      "weight_rank": 1,
+      "eligible": true,
+      "eligibility_reason": null,
+      "hodge_score": 50.8,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 23,
+            "losses": 2,
+            "win_pct": 0.92
+          },
+          "score": 46.7,
+          "weight": 0.3,
+          "contribution": 14.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 14,
+            "top10_wins": 8,
+            "raw_quality": 154.7
+          },
+          "score": 100.0,
+          "weight": 0.3,
+          "contribution": 30.0
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.82
+          },
+          "score": 27.2,
+          "weight": 0.25,
+          "contribution": 6.8
         },
         "pins": {
           "raw": {
@@ -691,42 +691,434 @@
     },
     {
       "rank": 15,
-      "wrestler_id": "34936465132",
-      "name": "LaDarion Lockett",
-      "team": "Oklahoma State",
-      "weight": 165,
-      "weight_rank": 2,
+      "wrestler_id": "34935277132",
+      "name": "Aaron Seidel",
+      "team": "Virginia Tech",
+      "weight": 133,
+      "weight_rank": 3,
       "eligible": true,
       "eligibility_reason": null,
-      "hodge_score": 46.0,
+      "hodge_score": 50.25,
       "components": {
         "record": {
           "raw": {
-            "wins": 6,
-            "losses": 0,
-            "win_pct": 1.0
+            "wins": 19,
+            "losses": 2,
+            "win_pct": 0.905
+          },
+          "score": 36.5,
+          "weight": 0.3,
+          "contribution": 10.95
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 8,
+            "top10_wins": 5,
+            "raw_quality": 89.0
+          },
+          "score": 84.2,
+          "weight": 0.3,
+          "contribution": 25.25
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 4.69
+          },
+          "score": 56.2,
+          "weight": 0.25,
+          "contribution": 14.05
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.053
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 16,
+      "wrestler_id": "34933568132",
+      "name": "Taye Ghadiali",
+      "team": "Michigan",
+      "weight": 285,
+      "weight_rank": 3,
+      "eligible": true,
+      "eligibility_reason": null,
+      "hodge_score": 48.63,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 28,
+            "losses": 3,
+            "win_pct": 0.903
+          },
+          "score": 35.5,
+          "weight": 0.3,
+          "contribution": 10.65
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 16,
+            "top10_wins": 4,
+            "raw_quality": 160.0
           },
           "score": 100.0,
           "weight": 0.3,
           "contribution": 30.0
         },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.96
+          },
+          "score": 31.9,
+          "weight": 0.25,
+          "contribution": 7.98
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.071
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 17,
+      "wrestler_id": "34936467132",
+      "name": "Landon Robideau",
+      "team": "Oklahoma State",
+      "weight": 157,
+      "weight_rank": 1,
+      "eligible": true,
+      "eligibility_reason": null,
+      "hodge_score": 46.63,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 21,
+            "losses": 2,
+            "win_pct": 0.913
+          },
+          "score": 42.0,
+          "weight": 0.3,
+          "contribution": 12.61
+        },
         "quality": {
           "raw": {
-            "ranked_wins": 4,
-            "top10_wins": 2,
-            "raw_quality": 45.0
+            "ranked_wins": 14,
+            "top10_wins": 5,
+            "raw_quality": 131.0
           },
-          "score": 41.5,
+          "score": 100.0,
           "weight": 0.3,
-          "contribution": 12.45
+          "contribution": 30.0
         },
         "dominance": {
           "raw": {
-            "avg_team_points": 3.19
+            "avg_team_points": 3.48
           },
-          "score": 6.2,
+          "score": 16.1,
           "weight": 0.25,
-          "contribution": 1.55
+          "contribution": 4.03
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.048
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 18,
+      "wrestler_id": "34952687132",
+      "name": "Luke Stanich",
+      "team": "Lehigh",
+      "weight": 141,
+      "weight_rank": 3,
+      "eligible": true,
+      "eligibility_reason": null,
+      "hodge_score": 45.51,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 18,
+            "losses": 1,
+            "win_pct": 0.947
+          },
+          "score": 64.9,
+          "weight": 0.3,
+          "contribution": 19.47
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 9,
+            "top10_wins": 1,
+            "raw_quality": 74.7
+          },
+          "score": 64.2,
+          "weight": 0.3,
+          "contribution": 19.27
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.81
+          },
+          "score": 27.1,
+          "weight": 0.25,
+          "contribution": 6.77
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.056
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 19,
+      "wrestler_id": "34943978132",
+      "name": "Aeoden Sinclair",
+      "team": "Missouri",
+      "weight": 184,
+      "weight_rank": 4,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 4 > 3",
+      "hodge_score": 57.89,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 31,
+            "losses": 2,
+            "win_pct": 0.939
+          },
+          "score": 59.6,
+          "weight": 0.3,
+          "contribution": 17.88
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 16,
+            "top10_wins": 7,
+            "raw_quality": 156.3
+          },
+          "score": 100.0,
+          "weight": 0.3,
+          "contribution": 30.0
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.98
+          },
+          "score": 32.7,
+          "weight": 0.25,
+          "contribution": 8.17
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.161
+          },
+          "score": 12.3,
+          "weight": 0.15,
+          "contribution": 1.84
+        }
+      }
+    },
+    {
+      "rank": 20,
+      "wrestler_id": "34939035132",
+      "name": "Marcus Blaze",
+      "team": "Penn State",
+      "weight": 133,
+      "weight_rank": 4,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 4 > 3",
+      "hodge_score": 50.81,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 25,
+            "losses": 3,
+            "win_pct": 0.893
+          },
+          "score": 28.6,
+          "weight": 0.3,
+          "contribution": 8.57
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 13,
+            "top10_wins": 6,
+            "raw_quality": 144.0
+          },
+          "score": 100.0,
+          "weight": 0.3,
+          "contribution": 30.0
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 4.25
+          },
+          "score": 41.7,
+          "weight": 0.25,
+          "contribution": 10.44
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.16
+          },
+          "score": 12.0,
+          "weight": 0.15,
+          "contribution": 1.8
+        }
+      }
+    },
+    {
+      "rank": 21,
+      "wrestler_id": "34964522132",
+      "name": "Jaxon Joy",
+      "team": "Cornell",
+      "weight": 149,
+      "weight_rank": 6,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 6 > 3",
+      "hodge_score": 44.51,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 26,
+            "losses": 3,
+            "win_pct": 0.897
+          },
+          "score": 31.0,
+          "weight": 0.3,
+          "contribution": 9.31
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 10,
+            "top10_wins": 4,
+            "raw_quality": 91.0
+          },
+          "score": 83.8,
+          "weight": 0.3,
+          "contribution": 25.15
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 4.15
+          },
+          "score": 38.3,
+          "weight": 0.25,
+          "contribution": 9.58
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.115
+          },
+          "score": 3.1,
+          "weight": 0.15,
+          "contribution": 0.46
+        }
+      }
+    },
+    {
+      "rank": 22,
+      "wrestler_id": "34962161132",
+      "name": "Mikey Caliendo",
+      "team": "Iowa",
+      "weight": 165,
+      "weight_rank": 2,
+      "eligible": false,
+      "eligibility_reason": "Has 5 loss(es) and win% 81.5% < 90%",
+      "hodge_score": 42.17,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 22,
+            "losses": 5,
+            "win_pct": 0.815
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 14,
+            "top10_wins": 5,
+            "raw_quality": 119.7
+          },
+          "score": 100.0,
+          "weight": 0.3,
+          "contribution": 30.0
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 4.17
+          },
+          "score": 38.9,
+          "weight": 0.25,
+          "contribution": 9.72
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.182
+          },
+          "score": 16.4,
+          "weight": 0.15,
+          "contribution": 2.45
+        }
+      }
+    },
+    {
+      "rank": 23,
+      "wrestler_id": "34941785132",
+      "name": "Brandon Cannon",
+      "team": "Ohio State",
+      "weight": 157,
+      "weight_rank": 5,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 5 > 3",
+      "hodge_score": 41.79,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 24,
+            "losses": 3,
+            "win_pct": 0.889
+          },
+          "score": 25.9,
+          "weight": 0.3,
+          "contribution": 7.78
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 14,
+            "top10_wins": 2,
+            "raw_quality": 91.7
+          },
+          "score": 80.4,
+          "weight": 0.3,
+          "contribution": 24.12
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.95
+          },
+          "score": 31.6,
+          "weight": 0.25,
+          "contribution": 7.89
         },
         "pins": {
           "raw": {
@@ -739,435 +1131,43 @@
       }
     },
     {
-      "rank": 16,
-      "wrestler_id": "34952068132",
-      "name": "Lucas Byrd",
-      "team": "Illinois",
-      "weight": 133,
-      "weight_rank": 1,
-      "eligible": true,
-      "eligibility_reason": null,
-      "hodge_score": 43.68,
-      "components": {
-        "record": {
-          "raw": {
-            "wins": 9,
-            "losses": 0,
-            "win_pct": 1.0
-          },
-          "score": 100.0,
-          "weight": 0.3,
-          "contribution": 30.0
-        },
-        "quality": {
-          "raw": {
-            "ranked_wins": 5,
-            "top10_wins": 1,
-            "raw_quality": 31.7
-          },
-          "score": 28.4,
-          "weight": 0.3,
-          "contribution": 8.52
-        },
-        "dominance": {
-          "raw": {
-            "avg_team_points": 3.58
-          },
-          "score": 19.3,
-          "weight": 0.25,
-          "contribution": 4.83
-        },
-        "pins": {
-          "raw": {
-            "pin_pct": 0.111
-          },
-          "score": 2.2,
-          "weight": 0.15,
-          "contribution": 0.33
-        }
-      }
-    },
-    {
-      "rank": 17,
-      "wrestler_id": "34939025132",
-      "name": "Luke Lilledahl",
-      "team": "Penn State",
-      "weight": 125,
-      "weight_rank": 2,
-      "eligible": true,
-      "eligibility_reason": null,
-      "hodge_score": 42.66,
-      "components": {
-        "record": {
-          "raw": {
-            "wins": 8,
-            "losses": 0,
-            "win_pct": 1.0
-          },
-          "score": 100.0,
-          "weight": 0.3,
-          "contribution": 30.0
-        },
-        "quality": {
-          "raw": {
-            "ranked_wins": 3,
-            "top10_wins": 0,
-            "raw_quality": 15.7
-          },
-          "score": 13.1,
-          "weight": 0.3,
-          "contribution": 3.92
-        },
-        "dominance": {
-          "raw": {
-            "avg_team_points": 4.05
-          },
-          "score": 35.0,
-          "weight": 0.25,
-          "contribution": 8.74
-        },
-        "pins": {
-          "raw": {
-            "pin_pct": 0.0
-          },
-          "score": 0.0,
-          "weight": 0.15,
-          "contribution": 0.0
-        }
-      }
-    },
-    {
-      "rank": 18,
-      "wrestler_id": "34943748132",
-      "name": "Kaleb Larkin",
-      "team": "Arizona State",
-      "weight": 149,
-      "weight_rank": 3,
-      "eligible": true,
-      "eligibility_reason": null,
-      "hodge_score": 31.87,
-      "components": {
-        "record": {
-          "raw": {
-            "wins": 11,
-            "losses": 1,
-            "win_pct": 0.917
-          },
-          "score": 44.4,
-          "weight": 0.3,
-          "contribution": 13.33
-        },
-        "quality": {
-          "raw": {
-            "ranked_wins": 5,
-            "top10_wins": 1,
-            "raw_quality": 37.7
-          },
-          "score": 33.4,
-          "weight": 0.3,
-          "contribution": 10.02
-        },
-        "dominance": {
-          "raw": {
-            "avg_team_points": 4.02
-          },
-          "score": 34.1,
-          "weight": 0.25,
-          "contribution": 8.52
-        },
-        "pins": {
-          "raw": {
-            "pin_pct": 0.0
-          },
-          "score": 0.0,
-          "weight": 0.15,
-          "contribution": 0.0
-        }
-      }
-    },
-    {
-      "rank": 19,
-      "wrestler_id": "34941775132",
-      "name": "Nic Bouzakis",
-      "team": "Ohio State",
-      "weight": 125,
-      "weight_rank": 1,
-      "eligible": true,
-      "eligibility_reason": null,
-      "hodge_score": 31.59,
-      "components": {
-        "record": {
-          "raw": {
-            "wins": 6,
-            "losses": 1,
-            "win_pct": 0.857
-          },
-          "score": 4.8,
-          "weight": 0.3,
-          "contribution": 1.43
-        },
-        "quality": {
-          "raw": {
-            "ranked_wins": 3,
-            "top10_wins": 2,
-            "raw_quality": 39.0
-          },
-          "score": 36.5,
-          "weight": 0.3,
-          "contribution": 10.95
-        },
-        "dominance": {
-          "raw": {
-            "avg_team_points": 4.47
-          },
-          "score": 48.9,
-          "weight": 0.25,
-          "contribution": 12.21
-        },
-        "pins": {
-          "raw": {
-            "pin_pct": 0.333
-          },
-          "score": 46.7,
-          "weight": 0.15,
-          "contribution": 7.0
-        }
-      }
-    },
-    {
-      "rank": 20,
-      "wrestler_id": "34962161132",
-      "name": "Mikey Caliendo",
-      "team": "Iowa",
-      "weight": 165,
-      "weight_rank": 3,
-      "eligible": true,
-      "eligibility_reason": null,
-      "hodge_score": 29.52,
-      "components": {
-        "record": {
-          "raw": {
-            "wins": 7,
-            "losses": 1,
-            "win_pct": 0.875
-          },
-          "score": 16.7,
-          "weight": 0.3,
-          "contribution": 5.0
-        },
-        "quality": {
-          "raw": {
-            "ranked_wins": 3,
-            "top10_wins": 2,
-            "raw_quality": 33.3
-          },
-          "score": 31.8,
-          "weight": 0.3,
-          "contribution": 9.53
-        },
-        "dominance": {
-          "raw": {
-            "avg_team_points": 4.13
-          },
-          "score": 37.7,
-          "weight": 0.25,
-          "contribution": 9.42
-        },
-        "pins": {
-          "raw": {
-            "pin_pct": 0.286
-          },
-          "score": 37.1,
-          "weight": 0.15,
-          "contribution": 5.57
-        }
-      }
-    },
-    {
-      "rank": 21,
-      "wrestler_id": "34940706132",
-      "name": "Evan Frost",
-      "team": "Iowa State",
-      "weight": 133,
-      "weight_rank": 3,
-      "eligible": true,
-      "eligibility_reason": null,
-      "hodge_score": 27.08,
-      "components": {
-        "record": {
-          "raw": {
-            "wins": 9,
-            "losses": 1,
-            "win_pct": 0.9
-          },
-          "score": 33.3,
-          "weight": 0.3,
-          "contribution": 10.0
-        },
-        "quality": {
-          "raw": {
-            "ranked_wins": 5,
-            "top10_wins": 3,
-            "raw_quality": 44.0
-          },
-          "score": 42.7,
-          "weight": 0.3,
-          "contribution": 12.8
-        },
-        "dominance": {
-          "raw": {
-            "avg_team_points": 3.47
-          },
-          "score": 15.8,
-          "weight": 0.25,
-          "contribution": 3.95
-        },
-        "pins": {
-          "raw": {
-            "pin_pct": 0.111
-          },
-          "score": 2.2,
-          "weight": 0.15,
-          "contribution": 0.33
-        }
-      }
-    },
-    {
-      "rank": 22,
-      "wrestler_id": "34955784132",
-      "name": "Max McEnelly",
-      "team": "Minnesota",
-      "weight": 184,
-      "weight_rank": 3,
-      "eligible": true,
-      "eligibility_reason": null,
-      "hodge_score": 25.46,
-      "components": {
-        "record": {
-          "raw": {
-            "wins": 8,
-            "losses": 1,
-            "win_pct": 0.889
-          },
-          "score": 25.9,
-          "weight": 0.3,
-          "contribution": 7.78
-        },
-        "quality": {
-          "raw": {
-            "ranked_wins": 2,
-            "top10_wins": 1,
-            "raw_quality": 23.7
-          },
-          "score": 21.7,
-          "weight": 0.3,
-          "contribution": 6.52
-        },
-        "dominance": {
-          "raw": {
-            "avg_team_points": 4.34
-          },
-          "score": 44.7,
-          "weight": 0.25,
-          "contribution": 11.17
-        },
-        "pins": {
-          "raw": {
-            "pin_pct": 0.0
-          },
-          "score": 0.0,
-          "weight": 0.15,
-          "contribution": 0.0
-        }
-      }
-    },
-    {
-      "rank": 23,
-      "wrestler_id": "34962152132",
-      "name": "Patrick Kennedy",
-      "team": "Iowa",
-      "weight": 174,
-      "weight_rank": 2,
-      "eligible": true,
-      "eligibility_reason": null,
-      "hodge_score": 22.68,
-      "components": {
-        "record": {
-          "raw": {
-            "wins": 8,
-            "losses": 1,
-            "win_pct": 0.889
-          },
-          "score": 25.9,
-          "weight": 0.3,
-          "contribution": 7.78
-        },
-        "quality": {
-          "raw": {
-            "ranked_wins": 4,
-            "top10_wins": 2,
-            "raw_quality": 40.3
-          },
-          "score": 37.6,
-          "weight": 0.3,
-          "contribution": 11.28
-        },
-        "dominance": {
-          "raw": {
-            "avg_team_points": 3.43
-          },
-          "score": 14.5,
-          "weight": 0.25,
-          "contribution": 3.62
-        },
-        "pins": {
-          "raw": {
-            "pin_pct": 0.0
-          },
-          "score": 0.0,
-          "weight": 0.15,
-          "contribution": 0.0
-        }
-      }
-    },
-    {
       "rank": 24,
-      "wrestler_id": "34940864132",
-      "name": "Vinny Zerban",
+      "wrestler_id": "34940832132",
+      "name": "Rocky Elam",
       "team": "Iowa State",
-      "weight": 157,
-      "weight_rank": 3,
-      "eligible": true,
-      "eligibility_reason": null,
-      "hodge_score": 22.67,
+      "weight": 197,
+      "weight_rank": 9,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 9 > 3",
+      "hodge_score": 41.01,
       "components": {
         "record": {
           "raw": {
-            "wins": 8,
-            "losses": 1,
-            "win_pct": 0.889
+            "wins": 20,
+            "losses": 2,
+            "win_pct": 0.909
           },
-          "score": 25.9,
+          "score": 39.4,
           "weight": 0.3,
-          "contribution": 7.78
+          "contribution": 11.82
         },
         "quality": {
           "raw": {
-            "ranked_wins": 4,
-            "top10_wins": 1,
-            "raw_quality": 31.3
+            "ranked_wins": 10,
+            "top10_wins": 4,
+            "raw_quality": 95.0
           },
-          "score": 28.1,
+          "score": 87.2,
           "weight": 0.3,
-          "contribution": 8.43
+          "contribution": 26.15
         },
         "dominance": {
           "raw": {
-            "avg_team_points": 3.77
+            "avg_team_points": 3.36
           },
-          "score": 25.8,
+          "score": 12.2,
           "weight": 0.25,
-          "contribution": 6.46
+          "contribution": 3.04
         },
         "pins": {
           "raw": {
@@ -1181,34 +1181,34 @@
     },
     {
       "rank": 25,
-      "wrestler_id": "34941772132",
-      "name": "Carson Kharchla",
-      "team": "Ohio State",
+      "wrestler_id": "34933529132",
+      "name": "Beau Mantanona",
+      "team": "Michigan",
       "weight": 174,
-      "weight_rank": 3,
-      "eligible": true,
-      "eligibility_reason": null,
-      "hodge_score": 20.6,
+      "weight_rank": 6,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 6 > 3",
+      "hodge_score": 40.63,
       "components": {
         "record": {
           "raw": {
-            "wins": 6,
-            "losses": 1,
-            "win_pct": 0.857
+            "wins": 25,
+            "losses": 8,
+            "win_pct": 0.758
           },
-          "score": 4.8,
+          "score": 0.0,
           "weight": 0.3,
-          "contribution": 1.43
+          "contribution": 0.0
         },
         "quality": {
           "raw": {
-            "ranked_wins": 4,
-            "top10_wins": 2,
-            "raw_quality": 43.7
+            "ranked_wins": 13,
+            "top10_wins": 3,
+            "raw_quality": 110.3
           },
-          "score": 40.4,
+          "score": 97.9,
           "weight": 0.3,
-          "contribution": 12.12
+          "contribution": 29.38
         },
         "dominance": {
           "raw": {
@@ -1216,7 +1216,203 @@
           },
           "score": 28.2,
           "weight": 0.25,
-          "contribution": 7.05
+          "contribution": 7.04
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.24
+          },
+          "score": 28.0,
+          "weight": 0.15,
+          "contribution": 4.2
+        }
+      }
+    },
+    {
+      "rank": 26,
+      "wrestler_id": "34935612132",
+      "name": "Brock Hardy",
+      "team": "Nebraska",
+      "weight": 141,
+      "weight_rank": 4,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 4 > 3",
+      "hodge_score": 40.26,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 23,
+            "losses": 7,
+            "win_pct": 0.767
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 13,
+            "top10_wins": 5,
+            "raw_quality": 110.0
+          },
+          "score": 100.0,
+          "weight": 0.3,
+          "contribution": 30.0
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.97
+          },
+          "score": 32.2,
+          "weight": 0.25,
+          "contribution": 8.04
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.174
+          },
+          "score": 14.8,
+          "weight": 0.15,
+          "contribution": 2.22
+        }
+      }
+    },
+    {
+      "rank": 27,
+      "wrestler_id": "34935617132",
+      "name": "Antrell Taylor",
+      "team": "Nebraska",
+      "weight": 157,
+      "weight_rank": 3,
+      "eligible": false,
+      "eligibility_reason": "Has 4 loss(es) and win% 86.2% < 90%",
+      "hodge_score": 39.26,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 25,
+            "losses": 4,
+            "win_pct": 0.862
+          },
+          "score": 8.0,
+          "weight": 0.3,
+          "contribution": 2.41
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 11,
+            "top10_wins": 5,
+            "raw_quality": 115.7
+          },
+          "score": 100.0,
+          "weight": 0.3,
+          "contribution": 30.0
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.75
+          },
+          "score": 25.0,
+          "weight": 0.25,
+          "contribution": 6.24
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.12
+          },
+          "score": 4.0,
+          "weight": 0.15,
+          "contribution": 0.6
+        }
+      }
+    },
+    {
+      "rank": 28,
+      "wrestler_id": "34933538132",
+      "name": "Brock Mantanona",
+      "team": "Michigan",
+      "weight": 184,
+      "weight_rank": 6,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 6 > 3",
+      "hodge_score": 37.23,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 22,
+            "losses": 8,
+            "win_pct": 0.733
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 11,
+            "top10_wins": 4,
+            "raw_quality": 111.7
+          },
+          "score": 100.0,
+          "weight": 0.3,
+          "contribution": 30.0
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.87
+          },
+          "score": 28.9,
+          "weight": 0.25,
+          "contribution": 7.23
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.091
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 29,
+      "wrestler_id": "34933357132",
+      "name": "Eddie Ventresca",
+      "team": "Virginia Tech",
+      "weight": 125,
+      "weight_rank": 5,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 5 > 3",
+      "hodge_score": 36.91,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 21,
+            "losses": 3,
+            "win_pct": 0.875
+          },
+          "score": 16.7,
+          "weight": 0.3,
+          "contribution": 5.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 12,
+            "top10_wins": 5,
+            "raw_quality": 121.0
+          },
+          "score": 100.0,
+          "weight": 0.3,
+          "contribution": 30.0
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.23
+          },
+          "score": 7.7,
+          "weight": 0.25,
+          "contribution": 1.91
         },
         "pins": {
           "raw": {
@@ -1229,92 +1425,43 @@
       }
     },
     {
-      "rank": 26,
-      "wrestler_id": "34939039132",
-      "name": "PJ Duke",
-      "team": "Penn State",
-      "weight": 157,
-      "weight_rank": 4,
+      "rank": 30,
+      "wrestler_id": "34943475132",
+      "name": "Angelo Posada",
+      "team": "Stanford",
+      "weight": 197,
+      "weight_rank": 6,
       "eligible": false,
-      "eligibility_reason": "Weight class rank 4 > 3",
-      "hodge_score": 71.83,
+      "eligibility_reason": "Weight class rank 6 > 3",
+      "hodge_score": 36.83,
       "components": {
         "record": {
           "raw": {
-            "wins": 8,
-            "losses": 0,
-            "win_pct": 1.0
+            "wins": 20,
+            "losses": 8,
+            "win_pct": 0.714
           },
-          "score": 100.0,
+          "score": 0.0,
           "weight": 0.3,
-          "contribution": 30.0
+          "contribution": 0.0
         },
         "quality": {
           "raw": {
-            "ranked_wins": 4,
-            "top10_wins": 2,
-            "raw_quality": 33.7
-          },
-          "score": 32.1,
-          "weight": 0.3,
-          "contribution": 9.62
-        },
-        "dominance": {
-          "raw": {
-            "avg_team_points": 5.07
-          },
-          "score": 68.8,
-          "weight": 0.25,
-          "contribution": 17.21
-        },
-        "pins": {
-          "raw": {
-            "pin_pct": 0.625
-          },
-          "score": 100.0,
-          "weight": 0.15,
-          "contribution": 15.0
-        }
-      }
-    },
-    {
-      "rank": 27,
-      "wrestler_id": "34939035132",
-      "name": "Marcus Blaze",
-      "team": "Penn State",
-      "weight": 133,
-      "weight_rank": 4,
-      "eligible": false,
-      "eligibility_reason": "Weight class rank 4 > 3",
-      "hodge_score": 62.68,
-      "components": {
-        "record": {
-          "raw": {
-            "wins": 10,
-            "losses": 0,
-            "win_pct": 1.0
-          },
-          "score": 100.0,
-          "weight": 0.3,
-          "contribution": 30.0
-        },
-        "quality": {
-          "raw": {
-            "ranked_wins": 4,
+            "ranked_wins": 10,
             "top10_wins": 1,
-            "raw_quality": 20.3
+            "raw_quality": 66.7
           },
-          "score": 18.9,
+          "score": 57.6,
           "weight": 0.3,
-          "contribution": 5.68
+          "contribution": 17.27
         },
         "dominance": {
           "raw": {
-            "avg_team_points": 5.16
+            "avg_team_points": 4.27
           },
-          "score": 72.0,
+          "score": 42.2,
           "weight": 0.25,
-          "contribution": 18.0
+          "contribution": 10.56
         },
         "pins": {
           "raw": {
@@ -1327,190 +1474,43 @@
       }
     },
     {
-      "rank": 28,
-      "wrestler_id": "34945090132",
-      "name": "Joey Olivieri",
-      "team": "Rutgers",
-      "weight": 141,
-      "weight_rank": 4,
-      "eligible": false,
-      "eligibility_reason": "Weight class rank 4 > 3",
-      "hodge_score": 51.39,
-      "components": {
-        "record": {
-          "raw": {
-            "wins": 9,
-            "losses": 0,
-            "win_pct": 1.0
-          },
-          "score": 100.0,
-          "weight": 0.3,
-          "contribution": 30.0
-        },
-        "quality": {
-          "raw": {
-            "ranked_wins": 3,
-            "top10_wins": 1,
-            "raw_quality": 28.3
-          },
-          "score": 25.6,
-          "weight": 0.3,
-          "contribution": 7.68
-        },
-        "dominance": {
-          "raw": {
-            "avg_team_points": 3.8
-          },
-          "score": 26.8,
-          "weight": 0.25,
-          "contribution": 6.7
-        },
-        "pins": {
-          "raw": {
-            "pin_pct": 0.333
-          },
-          "score": 46.7,
-          "weight": 0.15,
-          "contribution": 7.0
-        }
-      }
-    },
-    {
-      "rank": 29,
-      "wrestler_id": "34941549132",
-      "name": "Caleb Tyus",
-      "team": "SIU Edwardsville",
-      "weight": 149,
-      "weight_rank": 4,
-      "eligible": false,
-      "eligibility_reason": "Weight class rank 4 > 3",
-      "hodge_score": 49.72,
-      "components": {
-        "record": {
-          "raw": {
-            "wins": 9,
-            "losses": 0,
-            "win_pct": 1.0
-          },
-          "score": 100.0,
-          "weight": 0.3,
-          "contribution": 30.0
-        },
-        "quality": {
-          "raw": {
-            "ranked_wins": 3,
-            "top10_wins": 1,
-            "raw_quality": 30.0
-          },
-          "score": 27.0,
-          "weight": 0.3,
-          "contribution": 8.1
-        },
-        "dominance": {
-          "raw": {
-            "avg_team_points": 3.95
-          },
-          "score": 31.8,
-          "weight": 0.25,
-          "contribution": 7.95
-        },
-        "pins": {
-          "raw": {
-            "pin_pct": 0.222
-          },
-          "score": 24.4,
-          "weight": 0.15,
-          "contribution": 3.67
-        }
-      }
-    },
-    {
-      "rank": 30,
+      "rank": 31,
       "wrestler_id": "34945145132",
       "name": "Joey Blaze",
       "team": "Purdue",
       "weight": 165,
-      "weight_rank": 4,
+      "weight_rank": 5,
       "eligible": false,
-      "eligibility_reason": "Weight class rank 4 > 3",
-      "hodge_score": 40.41,
+      "eligibility_reason": "Weight class rank 5 > 3",
+      "hodge_score": 36.21,
       "components": {
         "record": {
           "raw": {
-            "wins": 10,
-            "losses": 0,
-            "win_pct": 1.0
+            "wins": 25,
+            "losses": 4,
+            "win_pct": 0.862
+          },
+          "score": 8.0,
+          "weight": 0.3,
+          "contribution": 2.41
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 12,
+            "top10_wins": 4,
+            "raw_quality": 117.7
           },
           "score": 100.0,
           "weight": 0.3,
           "contribution": 30.0
         },
-        "quality": {
-          "raw": {
-            "ranked_wins": 2,
-            "top10_wins": 0,
-            "raw_quality": 17.3
-          },
-          "score": 14.4,
-          "weight": 0.3,
-          "contribution": 4.33
-        },
         "dominance": {
           "raw": {
-            "avg_team_points": 3.73
+            "avg_team_points": 3.46
           },
-          "score": 24.3,
+          "score": 15.2,
           "weight": 0.25,
-          "contribution": 6.07
-        },
-        "pins": {
-          "raw": {
-            "pin_pct": 0.0
-          },
-          "score": 0.0,
-          "weight": 0.15,
-          "contribution": 0.0
-        }
-      }
-    },
-    {
-      "rank": 31,
-      "wrestler_id": "34939044132",
-      "name": "Rocco Welsh",
-      "team": "Penn State",
-      "weight": 184,
-      "weight_rank": 4,
-      "eligible": false,
-      "eligibility_reason": "Weight class rank 4 > 3",
-      "hodge_score": 38.48,
-      "components": {
-        "record": {
-          "raw": {
-            "wins": 7,
-            "losses": 0,
-            "win_pct": 1.0
-          },
-          "score": 100.0,
-          "weight": 0.3,
-          "contribution": 30.0
-        },
-        "quality": {
-          "raw": {
-            "ranked_wins": 2,
-            "top10_wins": 0,
-            "raw_quality": 10.0
-          },
-          "score": 8.3,
-          "weight": 0.3,
-          "contribution": 2.5
-        },
-        "dominance": {
-          "raw": {
-            "avg_team_points": 3.72
-          },
-          "score": 23.9,
-          "weight": 0.25,
-          "contribution": 5.98
+          "contribution": 3.8
         },
         "pins": {
           "raw": {
@@ -1524,42 +1524,140 @@
     },
     {
       "rank": 32,
-      "wrestler_id": "34945352132",
-      "name": "Stephen Little",
-      "team": "Little Rock",
-      "weight": 197,
-      "weight_rank": 3,
+      "wrestler_id": "34964396132",
+      "name": "Simon Ruiz",
+      "team": "Cornell",
+      "weight": 174,
+      "weight_rank": 8,
       "eligible": false,
-      "eligibility_reason": "Matches 4 < 5",
-      "hodge_score": 35.11,
+      "eligibility_reason": "Weight class rank 8 > 3",
+      "hodge_score": 35.0,
       "components": {
         "record": {
           "raw": {
-            "wins": 4,
-            "losses": 0,
-            "win_pct": 1.0
+            "wins": 19,
+            "losses": 2,
+            "win_pct": 0.905
+          },
+          "score": 36.5,
+          "weight": 0.3,
+          "contribution": 10.95
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 10,
+            "top10_wins": 1,
+            "raw_quality": 68.0
+          },
+          "score": 58.7,
+          "weight": 0.3,
+          "contribution": 17.6
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.76
+          },
+          "score": 25.2,
+          "weight": 0.25,
+          "contribution": 6.29
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.105
+          },
+          "score": 1.1,
+          "weight": 0.15,
+          "contribution": 0.16
+        }
+      }
+    },
+    {
+      "rank": 33,
+      "wrestler_id": "34935723132",
+      "name": "AJ Ferrari",
+      "team": "Nebraska",
+      "weight": 285,
+      "weight_rank": 4,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 4 > 3",
+      "hodge_score": 34.65,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 18,
+            "losses": 5,
+            "win_pct": 0.783
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 12,
+            "top10_wins": 6,
+            "raw_quality": 131.3
           },
           "score": 100.0,
           "weight": 0.3,
           "contribution": 30.0
         },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.56
+          },
+          "score": 18.6,
+          "weight": 0.25,
+          "contribution": 4.65
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.056
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 34,
+      "wrestler_id": "34941772132",
+      "name": "Carson Kharchla",
+      "team": "Ohio State",
+      "weight": 174,
+      "weight_rank": 4,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 4 > 3",
+      "hodge_score": 34.62,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 25,
+            "losses": 5,
+            "win_pct": 0.833
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
         "quality": {
           "raw": {
-            "ranked_wins": 2,
-            "top10_wins": 0,
-            "raw_quality": 7.3
+            "ranked_wins": 14,
+            "top10_wins": 8,
+            "raw_quality": 153.3
           },
-          "score": 6.1,
+          "score": 100.0,
           "weight": 0.3,
-          "contribution": 1.83
+          "contribution": 30.0
         },
         "dominance": {
           "raw": {
-            "avg_team_points": 3.39
+            "avg_team_points": 3.55
           },
-          "score": 13.1,
+          "score": 18.5,
           "weight": 0.25,
-          "contribution": 3.28
+          "contribution": 4.62
         },
         "pins": {
           "raw": {
@@ -1572,84 +1670,1113 @@
       }
     },
     {
-      "rank": 33,
-      "wrestler_id": "34935689132",
-      "name": "Matty Singleton",
-      "team": "NC State",
+      "rank": 35,
+      "wrestler_id": "34935623132",
+      "name": "Christopher Minto",
+      "team": "Nebraska",
       "weight": 174,
-      "weight_rank": 4,
+      "weight_rank": 2,
       "eligible": false,
-      "eligibility_reason": "Weight class rank 4 > 3",
-      "hodge_score": 34.75,
+      "eligibility_reason": "Has 6 loss(es) and win% 80.0% < 90%",
+      "hodge_score": 34.54,
       "components": {
         "record": {
           "raw": {
-            "wins": 8,
-            "losses": 1,
-            "win_pct": 0.889
+            "wins": 24,
+            "losses": 6,
+            "win_pct": 0.8
           },
-          "score": 25.9,
+          "score": 0.0,
           "weight": 0.3,
-          "contribution": 7.78
+          "contribution": 0.0
         },
         "quality": {
           "raw": {
-            "ranked_wins": 5,
-            "top10_wins": 2,
-            "raw_quality": 39.0
-          },
-          "score": 36.5,
-          "weight": 0.3,
-          "contribution": 10.95
-        },
-        "dominance": {
-          "raw": {
-            "avg_team_points": 4.38
-          },
-          "score": 46.1,
-          "weight": 0.25,
-          "contribution": 11.53
-        },
-        "pins": {
-          "raw": {
-            "pin_pct": 0.25
-          },
-          "score": 30.0,
-          "weight": 0.15,
-          "contribution": 4.5
-        }
-      }
-    },
-    {
-      "rank": 34,
-      "wrestler_id": "34945347132",
-      "name": "Matty Bianchi",
-      "team": "Little Rock",
-      "weight": 165,
-      "weight_rank": 5,
-      "eligible": false,
-      "eligibility_reason": "Weight class rank 5 > 3",
-      "hodge_score": 33.83,
-      "components": {
-        "record": {
-          "raw": {
-            "wins": 4,
-            "losses": 0,
-            "win_pct": 1.0
+            "ranked_wins": 15,
+            "top10_wins": 5,
+            "raw_quality": 115.0
           },
           "score": 100.0,
           "weight": 0.3,
           "contribution": 30.0
         },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.54
+          },
+          "score": 18.1,
+          "weight": 0.25,
+          "contribution": 4.54
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.0
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 36,
+      "wrestler_id": "34952082132",
+      "name": "Kannon Webster",
+      "team": "Illinois",
+      "weight": 157,
+      "weight_rank": 4,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 4 > 3",
+      "hodge_score": 34.5,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 25,
+            "losses": 6,
+            "win_pct": 0.806
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
         "quality": {
           "raw": {
-            "ranked_wins": 2,
-            "top10_wins": 0,
-            "raw_quality": 15.3
+            "ranked_wins": 9,
+            "top10_wins": 4,
+            "raw_quality": 95.3
           },
-          "score": 12.8,
+          "score": 87.4,
           "weight": 0.3,
-          "contribution": 3.83
+          "contribution": 26.23
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.92
+          },
+          "score": 30.7,
+          "weight": 0.25,
+          "contribution": 7.66
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.12
+          },
+          "score": 4.0,
+          "weight": 0.15,
+          "contribution": 0.6
+        }
+      }
+    },
+    {
+      "rank": 37,
+      "wrestler_id": "34943458132",
+      "name": "Aden Valencia",
+      "team": "Stanford",
+      "weight": 149,
+      "weight_rank": 1,
+      "eligible": false,
+      "eligibility_reason": "Has 7 loss(es) and win% 75.0% < 90%",
+      "hodge_score": 34.33,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 21,
+            "losses": 7,
+            "win_pct": 0.75
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 13,
+            "top10_wins": 6,
+            "raw_quality": 129.7
+          },
+          "score": 100.0,
+          "weight": 0.3,
+          "contribution": 30.0
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.52
+          },
+          "score": 17.3,
+          "weight": 0.25,
+          "contribution": 4.33
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.0
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 38,
+      "wrestler_id": "34941777132",
+      "name": "Nick Feldman",
+      "team": "Ohio State",
+      "weight": 285,
+      "weight_rank": 7,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 7 > 3",
+      "hodge_score": 34.07,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 23,
+            "losses": 8,
+            "win_pct": 0.742
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 11,
+            "top10_wins": 5,
+            "raw_quality": 132.0
+          },
+          "score": 100.0,
+          "weight": 0.3,
+          "contribution": 30.0
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.49
+          },
+          "score": 16.3,
+          "weight": 0.25,
+          "contribution": 4.07
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.043
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 39,
+      "wrestler_id": "34962152132",
+      "name": "Patrick Kennedy",
+      "team": "Iowa",
+      "weight": 174,
+      "weight_rank": 3,
+      "eligible": false,
+      "eligibility_reason": "Has 5 loss(es) and win% 81.5% < 90%",
+      "hodge_score": 33.86,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 22,
+            "losses": 5,
+            "win_pct": 0.815
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 14,
+            "top10_wins": 7,
+            "raw_quality": 145.7
+          },
+          "score": 100.0,
+          "weight": 0.3,
+          "contribution": 30.0
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.46
+          },
+          "score": 15.5,
+          "weight": 0.25,
+          "contribution": 3.86
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.0
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 40,
+      "wrestler_id": "34943748132",
+      "name": "Kaleb Larkin",
+      "team": "Arizona State",
+      "weight": 157,
+      "weight_rank": 6,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 6 > 3",
+      "hodge_score": 33.81,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 24,
+            "losses": 4,
+            "win_pct": 0.857
+          },
+          "score": 4.8,
+          "weight": 0.3,
+          "contribution": 1.43
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 12,
+            "top10_wins": 3,
+            "raw_quality": 90.0
+          },
+          "score": 81.0,
+          "weight": 0.3,
+          "contribution": 24.3
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.88
+          },
+          "score": 29.3,
+          "weight": 0.25,
+          "contribution": 7.33
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.125
+          },
+          "score": 5.0,
+          "weight": 0.15,
+          "contribution": 0.75
+        }
+      }
+    },
+    {
+      "rank": 41,
+      "wrestler_id": "34935274132",
+      "name": "Collin Gaj",
+      "team": "Virginia Tech",
+      "weight": 149,
+      "weight_rank": 5,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 5 > 3",
+      "hodge_score": 33.45,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 26,
+            "losses": 9,
+            "win_pct": 0.743
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 15,
+            "top10_wins": 4,
+            "raw_quality": 114.7
+          },
+          "score": 100.0,
+          "weight": 0.3,
+          "contribution": 30.0
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.41
+          },
+          "score": 13.8,
+          "weight": 0.25,
+          "contribution": 3.45
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.038
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 42,
+      "wrestler_id": "34943752132",
+      "name": "Nicco Ruiz",
+      "team": "Arizona State",
+      "weight": 165,
+      "weight_rank": 4,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 4 > 3",
+      "hodge_score": 32.98,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 27,
+            "losses": 6,
+            "win_pct": 0.818
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 10,
+            "top10_wins": 6,
+            "raw_quality": 103.7
+          },
+          "score": 96.4,
+          "weight": 0.3,
+          "contribution": 28.92
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.49
+          },
+          "score": 16.2,
+          "weight": 0.25,
+          "contribution": 4.06
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.0
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 43,
+      "wrestler_id": "34936407132",
+      "name": "Troy Spratley",
+      "team": "Oklahoma State",
+      "weight": 125,
+      "weight_rank": 6,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 6 > 3",
+      "hodge_score": 32.96,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 20,
+            "losses": 4,
+            "win_pct": 0.833
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 10,
+            "top10_wins": 6,
+            "raw_quality": 96.3
+          },
+          "score": 90.3,
+          "weight": 0.3,
+          "contribution": 27.08
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.7
+          },
+          "score": 23.5,
+          "weight": 0.25,
+          "contribution": 5.87
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.1
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 44,
+      "wrestler_id": "34936412132",
+      "name": "Cody Merrill",
+      "team": "Oklahoma State",
+      "weight": 197,
+      "weight_rank": 2,
+      "eligible": false,
+      "eligibility_reason": "Has 5 loss(es) and win% 80.8% < 90%",
+      "hodge_score": 32.61,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 21,
+            "losses": 5,
+            "win_pct": 0.808
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 11,
+            "top10_wins": 6,
+            "raw_quality": 123.3
+          },
+          "score": 100.0,
+          "weight": 0.3,
+          "contribution": 30.0
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.31
+          },
+          "score": 10.4,
+          "weight": 0.25,
+          "contribution": 2.61
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.095
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 45,
+      "wrestler_id": "34943446132",
+      "name": "Nico Provo",
+      "team": "Stanford",
+      "weight": 125,
+      "weight_rank": 3,
+      "eligible": false,
+      "eligibility_reason": "Has 6 loss(es) and win% 76.9% < 90%",
+      "hodge_score": 32.39,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 20,
+            "losses": 6,
+            "win_pct": 0.769
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 14,
+            "top10_wins": 6,
+            "raw_quality": 133.7
+          },
+          "score": 100.0,
+          "weight": 0.3,
+          "contribution": 30.0
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.29
+          },
+          "score": 9.6,
+          "weight": 0.25,
+          "contribution": 2.39
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.0
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 46,
+      "wrestler_id": "34939049132",
+      "name": "Danny Wask",
+      "team": "Navy",
+      "weight": 174,
+      "weight_rank": 7,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 7 > 3",
+      "hodge_score": 31.98,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 26,
+            "losses": 6,
+            "win_pct": 0.812
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 11,
+            "top10_wins": 2,
+            "raw_quality": 77.3
+          },
+          "score": 68.4,
+          "weight": 0.3,
+          "contribution": 20.53
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.9
+          },
+          "score": 30.1,
+          "weight": 0.25,
+          "contribution": 7.52
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.231
+          },
+          "score": 26.2,
+          "weight": 0.15,
+          "contribution": 3.92
+        }
+      }
+    },
+    {
+      "rank": 47,
+      "wrestler_id": "34952668132",
+      "name": "Sheldon Seymour",
+      "team": "Lehigh",
+      "weight": 125,
+      "weight_rank": 7,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 7 > 3",
+      "hodge_score": 31.92,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 21,
+            "losses": 2,
+            "win_pct": 0.913
+          },
+          "score": 42.0,
+          "weight": 0.3,
+          "contribution": 12.61
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 7,
+            "top10_wins": 2,
+            "raw_quality": 50.3
+          },
+          "score": 45.9,
+          "weight": 0.3,
+          "contribution": 13.78
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.51
+          },
+          "score": 17.0,
+          "weight": 0.25,
+          "contribution": 4.25
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.143
+          },
+          "score": 8.6,
+          "weight": 0.15,
+          "contribution": 1.29
+        }
+      }
+    },
+    {
+      "rank": 48,
+      "wrestler_id": "34939026132",
+      "name": "Cole Mirasola",
+      "team": "Penn State",
+      "weight": 285,
+      "weight_rank": 10,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 10 > 3",
+      "hodge_score": 31.88,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 18,
+            "losses": 8,
+            "win_pct": 0.692
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 8,
+            "top10_wins": 3,
+            "raw_quality": 72.3
+          },
+          "score": 66.3,
+          "weight": 0.3,
+          "contribution": 19.88
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.8
+          },
+          "score": 26.7,
+          "weight": 0.25,
+          "contribution": 6.67
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.278
+          },
+          "score": 35.6,
+          "weight": 0.15,
+          "contribution": 5.33
+        }
+      }
+    },
+    {
+      "rank": 49,
+      "wrestler_id": "34944191132",
+      "name": "Carter Nogle",
+      "team": "Air Force",
+      "weight": 141,
+      "weight_rank": 10,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 10 > 3",
+      "hodge_score": 31.84,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 27,
+            "losses": 9,
+            "win_pct": 0.75
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 9,
+            "top10_wins": 0,
+            "raw_quality": 75.7
+          },
+          "score": 63.1,
+          "weight": 0.3,
+          "contribution": 18.92
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.98
+          },
+          "score": 32.6,
+          "weight": 0.25,
+          "contribution": 8.15
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.259
+          },
+          "score": 31.9,
+          "weight": 0.15,
+          "contribution": 4.78
+        }
+      }
+    },
+    {
+      "rank": 50,
+      "wrestler_id": "34962153132",
+      "name": "Drake Ayala",
+      "team": "Iowa",
+      "weight": 133,
+      "weight_rank": 5,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 5 > 3",
+      "hodge_score": 30.6,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 17,
+            "losses": 10,
+            "win_pct": 0.63
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 8,
+            "top10_wins": 3,
+            "raw_quality": 85.0
+          },
+          "score": 76.8,
+          "weight": 0.3,
+          "contribution": 23.05
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.91
+          },
+          "score": 30.2,
+          "weight": 0.25,
+          "contribution": 7.55
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.059
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 51,
+      "wrestler_id": "34933446132",
+      "name": "Joey Novak",
+      "team": "Wyoming",
+      "weight": 197,
+      "weight_rank": 4,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 4 > 3",
+      "hodge_score": 30.34,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 21,
+            "losses": 5,
+            "win_pct": 0.808
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 12,
+            "top10_wins": 2,
+            "raw_quality": 64.3
+          },
+          "score": 57.6,
+          "weight": 0.3,
+          "contribution": 17.28
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 4.07
+          },
+          "score": 35.7,
+          "weight": 0.25,
+          "contribution": 8.92
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.238
+          },
+          "score": 27.6,
+          "weight": 0.15,
+          "contribution": 4.14
+        }
+      }
+    },
+    {
+      "rank": 52,
+      "wrestler_id": "34955774132",
+      "name": "Andrew Sparks",
+      "team": "Minnesota",
+      "weight": 165,
+      "weight_rank": 6,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 6 > 3",
+      "hodge_score": 29.99,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 25,
+            "losses": 8,
+            "win_pct": 0.758
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 12,
+            "top10_wins": 2,
+            "raw_quality": 102.0
+          },
+          "score": 89.0,
+          "weight": 0.3,
+          "contribution": 26.7
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.39
+          },
+          "score": 13.2,
+          "weight": 0.25,
+          "contribution": 3.29
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.04
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 53,
+      "wrestler_id": "34936396132",
+      "name": "Konner Doucet",
+      "team": "Oklahoma State",
+      "weight": 285,
+      "weight_rank": 6,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 6 > 3",
+      "hodge_score": 29.96,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 20,
+            "losses": 5,
+            "win_pct": 0.8
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 9,
+            "top10_wins": 3,
+            "raw_quality": 72.3
+          },
+          "score": 66.3,
+          "weight": 0.3,
+          "contribution": 19.88
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.85
+          },
+          "score": 28.3,
+          "weight": 0.25,
+          "contribution": 7.08
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.2
+          },
+          "score": 20.0,
+          "weight": 0.15,
+          "contribution": 3.0
+        }
+      }
+    },
+    {
+      "rank": 54,
+      "wrestler_id": "34940708132",
+      "name": "MJ Gaitan",
+      "team": "Iowa State",
+      "weight": 174,
+      "weight_rank": 9,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 9 > 3",
+      "hodge_score": 29.68,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 18,
+            "losses": 9,
+            "win_pct": 0.667
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 11,
+            "top10_wins": 2,
+            "raw_quality": 60.3
+          },
+          "score": 54.3,
+          "weight": 0.3,
+          "contribution": 16.28
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.97
+          },
+          "score": 32.3,
+          "weight": 0.25,
+          "contribution": 8.06
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.278
+          },
+          "score": 35.6,
+          "weight": 0.15,
+          "contribution": 5.33
+        }
+      }
+    },
+    {
+      "rank": 55,
+      "wrestler_id": "34940714132",
+      "name": "Anthony Echemendia",
+      "team": "Iowa State",
+      "weight": 141,
+      "weight_rank": 5,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 5 > 3",
+      "hodge_score": 29.4,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 23,
+            "losses": 6,
+            "win_pct": 0.793
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 10,
+            "top10_wins": 2,
+            "raw_quality": 84.0
+          },
+          "score": 74.0,
+          "weight": 0.3,
+          "contribution": 22.2
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.86
+          },
+          "score": 28.8,
+          "weight": 0.25,
+          "contribution": 7.2
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.043
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 56,
+      "wrestler_id": "34946729132",
+      "name": "Ty Watters",
+      "team": "West Virginia",
+      "weight": 157,
+      "weight_rank": 7,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 7 > 3",
+      "hodge_score": 29.02,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 23,
+            "losses": 6,
+            "win_pct": 0.793
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 10,
+            "top10_wins": 2,
+            "raw_quality": 65.3
+          },
+          "score": 58.4,
+          "weight": 0.3,
+          "contribution": 17.53
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 4.11
+          },
+          "score": 37.1,
+          "weight": 0.25,
+          "contribution": 9.27
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.174
+          },
+          "score": 14.8,
+          "weight": 0.15,
+          "contribution": 2.22
+        }
+      }
+    },
+    {
+      "rank": 57,
+      "wrestler_id": "34962165132",
+      "name": "Ben Kueter",
+      "team": "Iowa",
+      "weight": 285,
+      "weight_rank": 5,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 5 > 3",
+      "hodge_score": 28.63,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 14,
+            "losses": 9,
+            "win_pct": 0.609
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 11,
+            "top10_wins": 3,
+            "raw_quality": 107.3
+          },
+          "score": 95.4,
+          "weight": 0.3,
+          "contribution": 28.63
         },
         "dominance": {
           "raw": {
@@ -1670,141 +2797,43 @@
       }
     },
     {
-      "rank": 35,
-      "wrestler_id": "34934760132",
-      "name": "Justin Rademacher",
-      "team": "Oregon State",
-      "weight": 197,
-      "weight_rank": 4,
+      "rank": 58,
+      "wrestler_id": "34955800132",
+      "name": "Jore Volk",
+      "team": "Minnesota",
+      "weight": 125,
+      "weight_rank": 9,
       "eligible": false,
-      "eligibility_reason": "Weight class rank 4 > 3",
-      "hodge_score": 29.11,
+      "eligibility_reason": "Weight class rank 9 > 3",
+      "hodge_score": 28.04,
       "components": {
         "record": {
           "raw": {
-            "wins": 13,
-            "losses": 1,
-            "win_pct": 0.929
-          },
-          "score": 52.4,
-          "weight": 0.3,
-          "contribution": 15.71
-        },
-        "quality": {
-          "raw": {
-            "ranked_wins": 6,
-            "top10_wins": 1,
-            "raw_quality": 27.7
-          },
-          "score": 25.1,
-          "weight": 0.3,
-          "contribution": 7.52
-        },
-        "dominance": {
-          "raw": {
-            "avg_team_points": 3.71
-          },
-          "score": 23.5,
-          "weight": 0.25,
-          "contribution": 5.88
-        },
-        "pins": {
-          "raw": {
-            "pin_pct": 0.077
+            "wins": 25,
+            "losses": 7,
+            "win_pct": 0.781
           },
           "score": 0.0,
-          "weight": 0.15,
+          "weight": 0.3,
           "contribution": 0.0
-        }
-      }
-    },
-    {
-      "rank": 36,
-      "wrestler_id": "34940714132",
-      "name": "Anthony Echemendia",
-      "team": "Iowa State",
-      "weight": 141,
-      "weight_rank": 5,
-      "eligible": false,
-      "eligibility_reason": "Weight class rank 5 > 3",
-      "hodge_score": 27.63,
-      "components": {
-        "record": {
-          "raw": {
-            "wins": 8,
-            "losses": 1,
-            "win_pct": 0.889
-          },
-          "score": 25.9,
-          "weight": 0.3,
-          "contribution": 7.78
         },
         "quality": {
           "raw": {
-            "ranked_wins": 4,
+            "ranked_wins": 12,
             "top10_wins": 2,
-            "raw_quality": 44.0
+            "raw_quality": 95.3
           },
-          "score": 40.7,
+          "score": 83.4,
           "weight": 0.3,
-          "contribution": 12.2
+          "contribution": 25.03
         },
         "dominance": {
           "raw": {
-            "avg_team_points": 3.83
+            "avg_team_points": 3.36
           },
-          "score": 27.6,
+          "score": 12.0,
           "weight": 0.25,
-          "contribution": 6.9
-        },
-        "pins": {
-          "raw": {
-            "pin_pct": 0.125
-          },
-          "score": 5.0,
-          "weight": 0.15,
-          "contribution": 0.75
-        }
-      }
-    },
-    {
-      "rank": 37,
-      "wrestler_id": "34935697132",
-      "name": "Vincent Robinson",
-      "team": "NC State",
-      "weight": 125,
-      "weight_rank": 5,
-      "eligible": false,
-      "eligibility_reason": "Weight class rank 5 > 3",
-      "hodge_score": 24.92,
-      "components": {
-        "record": {
-          "raw": {
-            "wins": 9,
-            "losses": 1,
-            "win_pct": 0.9
-          },
-          "score": 33.3,
-          "weight": 0.3,
-          "contribution": 10.0
-        },
-        "quality": {
-          "raw": {
-            "ranked_wins": 3,
-            "top10_wins": 2,
-            "raw_quality": 33.3
-          },
-          "score": 31.8,
-          "weight": 0.3,
-          "contribution": 9.53
-        },
-        "dominance": {
-          "raw": {
-            "avg_team_points": 3.65
-          },
-          "score": 21.5,
-          "weight": 0.25,
-          "contribution": 5.38
+          "contribution": 3.01
         },
         "pins": {
           "raw": {
@@ -1817,20 +2846,118 @@
       }
     },
     {
-      "rank": 38,
-      "wrestler_id": "34935612132",
-      "name": "Brock Hardy",
-      "team": "Nebraska",
-      "weight": 141,
-      "weight_rank": 3,
+      "rank": 59,
+      "wrestler_id": "34943971132",
+      "name": "Cam Steed",
+      "team": "Missouri",
+      "weight": 174,
+      "weight_rank": 5,
       "eligible": false,
-      "eligibility_reason": "Has 3 loss(es) and win% 76.9% < 90%",
-      "hodge_score": 21.76,
+      "eligibility_reason": "Weight class rank 5 > 3",
+      "hodge_score": 28.01,
       "components": {
         "record": {
           "raw": {
-            "wins": 10,
-            "losses": 3,
+            "wins": 19,
+            "losses": 7,
+            "win_pct": 0.731
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 9,
+            "top10_wins": 2,
+            "raw_quality": 53.0
+          },
+          "score": 48.2,
+          "weight": 0.3,
+          "contribution": 14.45
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 4.04
+          },
+          "score": 34.7,
+          "weight": 0.25,
+          "contribution": 8.66
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.263
+          },
+          "score": 32.6,
+          "weight": 0.15,
+          "contribution": 4.89
+        }
+      }
+    },
+    {
+      "rank": 60,
+      "wrestler_id": "34936465132",
+      "name": "LaDarion Lockett",
+      "team": "Oklahoma State",
+      "weight": 165,
+      "weight_rank": 7,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 7 > 3",
+      "hodge_score": 27.67,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 17,
+            "losses": 4,
+            "win_pct": 0.81
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 10,
+            "top10_wins": 4,
+            "raw_quality": 94.0
+          },
+          "score": 86.3,
+          "weight": 0.3,
+          "contribution": 25.9
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.21
+          },
+          "score": 7.1,
+          "weight": 0.25,
+          "contribution": 1.77
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.059
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 61,
+      "wrestler_id": "34935697132",
+      "name": "Vincent Robinson",
+      "team": "NC State",
+      "weight": 125,
+      "weight_rank": 4,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 4 > 3",
+      "hodge_score": 27.64,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 20,
+            "losses": 6,
             "win_pct": 0.769
           },
           "score": 0.0,
@@ -1839,47 +2966,47 @@
         },
         "quality": {
           "raw": {
-            "ranked_wins": 4,
-            "top10_wins": 0,
-            "raw_quality": 28.0
+            "ranked_wins": 11,
+            "top10_wins": 3,
+            "raw_quality": 91.0
           },
-          "score": 23.3,
+          "score": 81.8,
           "weight": 0.3,
-          "contribution": 7.0
+          "contribution": 24.55
         },
         "dominance": {
           "raw": {
-            "avg_team_points": 4.41
+            "avg_team_points": 3.37
           },
-          "score": 47.0,
+          "score": 12.4,
           "weight": 0.25,
-          "contribution": 11.76
+          "contribution": 3.09
         },
         "pins": {
           "raw": {
-            "pin_pct": 0.2
+            "pin_pct": 0.0
           },
-          "score": 20.0,
+          "score": 0.0,
           "weight": 0.15,
-          "contribution": 3.0
+          "contribution": 0.0
         }
       }
     },
     {
-      "rank": 39,
-      "wrestler_id": "34962196132",
-      "name": "Massoma Endene",
-      "team": "Iowa",
+      "rank": 62,
+      "wrestler_id": "34945352132",
+      "name": "Stephen Little",
+      "team": "Little Rock",
       "weight": 197,
-      "weight_rank": 5,
+      "weight_rank": 3,
       "eligible": false,
-      "eligibility_reason": "Weight class rank 5 > 3",
-      "hodge_score": 18.38,
+      "eligibility_reason": "Has 3 loss(es) and win% 85.7% < 90%",
+      "hodge_score": 27.33,
       "components": {
         "record": {
           "raw": {
-            "wins": 6,
-            "losses": 1,
+            "wins": 18,
+            "losses": 3,
             "win_pct": 0.857
           },
           "score": 4.8,
@@ -1888,21 +3015,805 @@
         },
         "quality": {
           "raw": {
-            "ranked_wins": 4,
-            "top10_wins": 1,
-            "raw_quality": 34.3
+            "ranked_wins": 9,
+            "top10_wins": 3,
+            "raw_quality": 74.7
           },
-          "score": 30.6,
+          "score": 68.2,
           "weight": 0.3,
-          "contribution": 9.18
+          "contribution": 20.47
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.61
+          },
+          "score": 20.4,
+          "weight": 0.25,
+          "contribution": 5.1
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.111
+          },
+          "score": 2.2,
+          "weight": 0.15,
+          "contribution": 0.33
+        }
+      }
+    },
+    {
+      "rank": 63,
+      "wrestler_id": "34963170132",
+      "name": "Brian Soldano",
+      "team": "Oklahoma",
+      "weight": 184,
+      "weight_rank": 10,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 10 > 3",
+      "hodge_score": 27.32,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 14,
+            "losses": 9,
+            "win_pct": 0.609
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 7,
+            "top10_wins": 2,
+            "raw_quality": 62.0
+          },
+          "score": 55.7,
+          "weight": 0.3,
+          "contribution": 16.7
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.86
+          },
+          "score": 28.7,
+          "weight": 0.25,
+          "contribution": 7.19
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.214
+          },
+          "score": 22.9,
+          "weight": 0.15,
+          "contribution": 3.43
+        }
+      }
+    },
+    {
+      "rank": 64,
+      "wrestler_id": "34933533132",
+      "name": "Cameron Catrabone",
+      "team": "Michigan",
+      "weight": 157,
+      "weight_rank": 9,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 9 > 3",
+      "hodge_score": 26.6,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 22,
+            "losses": 10,
+            "win_pct": 0.688
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 7,
+            "top10_wins": 2,
+            "raw_quality": 48.3
+          },
+          "score": 44.3,
+          "weight": 0.3,
+          "contribution": 13.28
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.98
+          },
+          "score": 32.6,
+          "weight": 0.25,
+          "contribution": 8.14
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.273
+          },
+          "score": 34.5,
+          "weight": 0.15,
+          "contribution": 5.18
+        }
+      }
+    },
+    {
+      "rank": 65,
+      "wrestler_id": "34933454132",
+      "name": "Eddie Neitenbach",
+      "team": "Wyoming",
+      "weight": 184,
+      "weight_rank": 7,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 7 > 3",
+      "hodge_score": 26.45,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 23,
+            "losses": 7,
+            "win_pct": 0.767
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 12,
+            "top10_wins": 0,
+            "raw_quality": 82.0
+          },
+          "score": 68.3,
+          "weight": 0.3,
+          "contribution": 20.5
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.71
+          },
+          "score": 23.8,
+          "weight": 0.25,
+          "contribution": 5.95
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.087
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 66,
+      "wrestler_id": "34944541132",
+      "name": "David Szuba",
+      "team": "Arizona State",
+      "weight": 285,
+      "weight_rank": 8,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 8 > 3",
+      "hodge_score": 26.29,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 26,
+            "losses": 10,
+            "win_pct": 0.722
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 11,
+            "top10_wins": 1,
+            "raw_quality": 65.0
+          },
+          "score": 56.2,
+          "weight": 0.3,
+          "contribution": 16.85
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.94
+          },
+          "score": 31.3,
+          "weight": 0.25,
+          "contribution": 7.83
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.154
+          },
+          "score": 10.8,
+          "weight": 0.15,
+          "contribution": 1.62
+        }
+      }
+    },
+    {
+      "rank": 67,
+      "wrestler_id": "34935611132",
+      "name": "Silas Allred",
+      "team": "Nebraska",
+      "weight": 184,
+      "weight_rank": 5,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 5 > 3",
+      "hodge_score": 26.16,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 19,
+            "losses": 10,
+            "win_pct": 0.655
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 11,
+            "top10_wins": 2,
+            "raw_quality": 85.3
+          },
+          "score": 75.1,
+          "weight": 0.3,
+          "contribution": 22.53
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.42
+          },
+          "score": 13.9,
+          "weight": 0.25,
+          "contribution": 3.47
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.105
+          },
+          "score": 1.1,
+          "weight": 0.15,
+          "contribution": 0.16
+        }
+      }
+    },
+    {
+      "rank": 68,
+      "wrestler_id": "34943164132",
+      "name": "Bryce Hepner",
+      "team": "North Carolina",
+      "weight": 165,
+      "weight_rank": 8,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 8 > 3",
+      "hodge_score": 25.99,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 19,
+            "losses": 6,
+            "win_pct": 0.76
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 8,
+            "top10_wins": 3,
+            "raw_quality": 60.7
+          },
+          "score": 56.6,
+          "weight": 0.3,
+          "contribution": 16.97
         },
         "dominance": {
           "raw": {
             "avg_team_points": 3.69
           },
-          "score": 23.1,
+          "score": 22.8,
           "weight": 0.25,
-          "contribution": 5.77
+          "contribution": 5.71
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.211
+          },
+          "score": 22.1,
+          "weight": 0.15,
+          "contribution": 3.32
+        }
+      }
+    },
+    {
+      "rank": 69,
+      "wrestler_id": "34964392132",
+      "name": "Meyer Shapiro",
+      "team": "Cornell",
+      "weight": 157,
+      "weight_rank": 8,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 8 > 3",
+      "hodge_score": 25.63,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 18,
+            "losses": 4,
+            "win_pct": 0.818
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 8,
+            "top10_wins": 3,
+            "raw_quality": 60.0
+          },
+          "score": 56.0,
+          "weight": 0.3,
+          "contribution": 16.8
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 4.06
+          },
+          "score": 35.3,
+          "weight": 0.25,
+          "contribution": 8.83
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.056
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 70,
+      "wrestler_id": "34935928132",
+      "name": "Cross Wasilewski",
+      "team": "Penn",
+      "weight": 149,
+      "weight_rank": 7,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 7 > 3",
+      "hodge_score": 25.38,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 28,
+            "losses": 5,
+            "win_pct": 0.848
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 9,
+            "top10_wins": 3,
+            "raw_quality": 71.0
+          },
+          "score": 65.2,
+          "weight": 0.3,
+          "contribution": 19.55
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.55
+          },
+          "score": 18.2,
+          "weight": 0.25,
+          "contribution": 4.55
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.143
+          },
+          "score": 8.6,
+          "weight": 0.15,
+          "contribution": 1.29
+        }
+      }
+    },
+    {
+      "rank": 71,
+      "wrestler_id": "34948145132",
+      "name": "Marc-Anthony McGowan",
+      "team": "Princeton",
+      "weight": 125,
+      "weight_rank": 2,
+      "eligible": false,
+      "eligibility_reason": "Has 6 loss(es) and win% 75.0% < 90%",
+      "hodge_score": 24.73,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 18,
+            "losses": 6,
+            "win_pct": 0.75
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 8,
+            "top10_wins": 3,
+            "raw_quality": 65.7
+          },
+          "score": 60.7,
+          "weight": 0.3,
+          "contribution": 18.22
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.78
+          },
+          "score": 26.1,
+          "weight": 0.25,
+          "contribution": 6.52
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.056
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 72,
+      "wrestler_id": "34962160132",
+      "name": "Ryder Block",
+      "team": "Iowa",
+      "weight": 149,
+      "weight_rank": 8,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 8 > 3",
+      "hodge_score": 24.41,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 18,
+            "losses": 11,
+            "win_pct": 0.621
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 8,
+            "top10_wins": 3,
+            "raw_quality": 66.3
+          },
+          "score": 61.3,
+          "weight": 0.3,
+          "contribution": 18.38
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.68
+          },
+          "score": 22.8,
+          "weight": 0.25,
+          "contribution": 5.69
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.111
+          },
+          "score": 2.2,
+          "weight": 0.15,
+          "contribution": 0.33
+        }
+      }
+    },
+    {
+      "rank": 73,
+      "wrestler_id": "34935896132",
+      "name": "Jude Swisher",
+      "team": "Penn",
+      "weight": 157,
+      "weight_rank": 10,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 10 > 3",
+      "hodge_score": 24.41,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 23,
+            "losses": 5,
+            "win_pct": 0.821
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 9,
+            "top10_wins": 3,
+            "raw_quality": 72.0
+          },
+          "score": 66.0,
+          "weight": 0.3,
+          "contribution": 19.8
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.55
+          },
+          "score": 18.4,
+          "weight": 0.25,
+          "contribution": 4.61
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.043
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 74,
+      "wrestler_id": "34943394132",
+      "name": "Cesar Alvan",
+      "team": "Columbia",
+      "weight": 165,
+      "weight_rank": 3,
+      "eligible": false,
+      "eligibility_reason": "Has 9 loss(es) and win% 77.5% < 90%",
+      "hodge_score": 23.8,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 31,
+            "losses": 9,
+            "win_pct": 0.775
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 11,
+            "top10_wins": 2,
+            "raw_quality": 78.7
+          },
+          "score": 69.6,
+          "weight": 0.3,
+          "contribution": 20.87
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.35
+          },
+          "score": 11.7,
+          "weight": 0.25,
+          "contribution": 2.94
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.032
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 75,
+      "wrestler_id": "34957597132",
+      "name": "Branson John",
+      "team": "Maryland",
+      "weight": 197,
+      "weight_rank": 8,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 8 > 3",
+      "hodge_score": 23.42,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 28,
+            "losses": 10,
+            "win_pct": 0.737
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 11,
+            "top10_wins": 3,
+            "raw_quality": 67.7
+          },
+          "score": 62.4,
+          "weight": 0.3,
+          "contribution": 18.72
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.56
+          },
+          "score": 18.8,
+          "weight": 0.25,
+          "contribution": 4.71
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.071
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 76,
+      "wrestler_id": "34934822132",
+      "name": "Tyler Klinsky",
+      "team": "Rider",
+      "weight": 125,
+      "weight_rank": 10,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 10 > 3",
+      "hodge_score": 23.32,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 29,
+            "losses": 6,
+            "win_pct": 0.829
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 7,
+            "top10_wins": 2,
+            "raw_quality": 45.7
+          },
+          "score": 42.1,
+          "weight": 0.3,
+          "contribution": 12.62
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 4.02
+          },
+          "score": 34.1,
+          "weight": 0.25,
+          "contribution": 8.53
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.172
+          },
+          "score": 14.5,
+          "weight": 0.15,
+          "contribution": 2.17
+        }
+      }
+    },
+    {
+      "rank": 77,
+      "wrestler_id": "34962169132",
+      "name": "Angelo Ferrari",
+      "team": "Iowa",
+      "weight": 184,
+      "weight_rank": 3,
+      "eligible": false,
+      "eligibility_reason": "Has 5 loss(es) and win% 73.7% < 90%",
+      "hodge_score": 23.31,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 14,
+            "losses": 5,
+            "win_pct": 0.737
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 8,
+            "top10_wins": 3,
+            "raw_quality": 78.7
+          },
+          "score": 71.6,
+          "weight": 0.3,
+          "contribution": 21.47
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.22
+          },
+          "score": 7.4,
+          "weight": 0.25,
+          "contribution": 1.85
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.0
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 78,
+      "wrestler_id": "34957107132",
+      "name": "Caleb Campos",
+      "team": "American",
+      "weight": 184,
+      "weight_rank": 8,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 8 > 3",
+      "hodge_score": 23.11,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 30,
+            "losses": 8,
+            "win_pct": 0.789
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 8,
+            "top10_wins": 1,
+            "raw_quality": 62.7
+          },
+          "score": 54.2,
+          "weight": 0.3,
+          "contribution": 16.27
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.58
+          },
+          "score": 19.4,
+          "weight": 0.25,
+          "contribution": 4.84
         },
         "pins": {
           "raw": {
@@ -1915,21 +3826,21 @@
       }
     },
     {
-      "rank": 40,
-      "wrestler_id": "34962153132",
-      "name": "Drake Ayala",
-      "team": "Iowa",
-      "weight": 133,
-      "weight_rank": 5,
+      "rank": 79,
+      "wrestler_id": "34935689132",
+      "name": "Matty Singleton",
+      "team": "NC State",
+      "weight": 174,
+      "weight_rank": 10,
       "eligible": false,
-      "eligibility_reason": "Weight class rank 5 > 3",
-      "hodge_score": 17.71,
+      "eligibility_reason": "Weight class rank 10 > 3",
+      "hodge_score": 23.08,
       "components": {
         "record": {
           "raw": {
-            "wins": 4,
-            "losses": 3,
-            "win_pct": 0.571
+            "wins": 19,
+            "losses": 5,
+            "win_pct": 0.792
           },
           "score": 0.0,
           "weight": 0.3,
@@ -1937,48 +3848,48 @@
         },
         "quality": {
           "raw": {
-            "ranked_wins": 3,
+            "ranked_wins": 10,
             "top10_wins": 0,
-            "raw_quality": 8.7
+            "raw_quality": 68.7
           },
-          "score": 7.2,
+          "score": 57.2,
           "weight": 0.3,
-          "contribution": 2.17
+          "contribution": 17.17
         },
         "dominance": {
           "raw": {
-            "avg_team_points": 4.33
+            "avg_team_points": 3.69
           },
-          "score": 44.2,
+          "score": 23.0,
           "weight": 0.25,
-          "contribution": 11.04
+          "contribution": 5.76
         },
         "pins": {
           "raw": {
-            "pin_pct": 0.25
+            "pin_pct": 0.105
           },
-          "score": 30.0,
+          "score": 1.1,
           "weight": 0.15,
-          "contribution": 4.5
+          "contribution": 0.16
         }
       }
     },
     {
-      "rank": 41,
-      "wrestler_id": "34941777132",
-      "name": "Nick Feldman",
-      "team": "Ohio State",
-      "weight": 285,
-      "weight_rank": 3,
+      "rank": 80,
+      "wrestler_id": "34952068132",
+      "name": "Lucas Byrd",
+      "team": "Illinois",
+      "weight": 133,
+      "weight_rank": 9,
       "eligible": false,
-      "eligibility_reason": "Has 2 loss(es) and win% 83.3% < 90%",
-      "hodge_score": 17.44,
+      "eligibility_reason": "Weight class rank 9 > 3",
+      "hodge_score": 22.45,
       "components": {
         "record": {
           "raw": {
-            "wins": 10,
-            "losses": 2,
-            "win_pct": 0.833
+            "wins": 22,
+            "losses": 5,
+            "win_pct": 0.815
           },
           "score": 0.0,
           "weight": 0.3,
@@ -1986,25 +3897,25 @@
         },
         "quality": {
           "raw": {
-            "ranked_wins": 3,
-            "top10_wins": 2,
-            "raw_quality": 41.3
+            "ranked_wins": 9,
+            "top10_wins": 1,
+            "raw_quality": 72.3
           },
-          "score": 38.4,
+          "score": 62.3,
           "weight": 0.3,
-          "contribution": 11.53
+          "contribution": 18.68
         },
         "dominance": {
           "raw": {
-            "avg_team_points": 3.71
+            "avg_team_points": 3.45
           },
-          "score": 23.6,
+          "score": 15.1,
           "weight": 0.25,
-          "contribution": 5.9
+          "contribution": 3.77
         },
         "pins": {
           "raw": {
-            "pin_pct": 0.0
+            "pin_pct": 0.045
           },
           "score": 0.0,
           "weight": 0.15,
@@ -2013,21 +3924,21 @@
       }
     },
     {
-      "rank": 42,
+      "rank": 81,
       "wrestler_id": "34934175132",
       "name": "Christian Carroll",
       "team": "Wyoming",
       "weight": 285,
-      "weight_rank": 5,
+      "weight_rank": 9,
       "eligible": false,
-      "eligibility_reason": "Weight class rank 5 > 3",
-      "hodge_score": 16.45,
+      "eligibility_reason": "Weight class rank 9 > 3",
+      "hodge_score": 22.14,
       "components": {
         "record": {
           "raw": {
-            "wins": 6,
-            "losses": 3,
-            "win_pct": 0.667
+            "wins": 20,
+            "losses": 9,
+            "win_pct": 0.69
           },
           "score": 0.0,
           "weight": 0.3,
@@ -2035,13 +3946,62 @@
         },
         "quality": {
           "raw": {
-            "ranked_wins": 3,
+            "ranked_wins": 8,
             "top10_wins": 1,
-            "raw_quality": 33.7
+            "raw_quality": 59.7
           },
-          "score": 30.1,
+          "score": 51.7,
           "weight": 0.3,
-          "contribution": 9.02
+          "contribution": 15.52
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.8
+          },
+          "score": 26.5,
+          "weight": 0.25,
+          "contribution": 6.63
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.05
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 82,
+      "wrestler_id": "34944528132",
+      "name": "Kyler Larkin",
+      "team": "Arizona State",
+      "weight": 133,
+      "weight_rank": 7,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 7 > 3",
+      "hodge_score": 21.78,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 20,
+            "losses": 3,
+            "win_pct": 0.87
+          },
+          "score": 13.0,
+          "weight": 0.3,
+          "contribution": 3.91
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 7,
+            "top10_wins": 1,
+            "raw_quality": 27.3
+          },
+          "score": 24.8,
+          "weight": 0.3,
+          "contribution": 7.43
         },
         "dominance": {
           "raw": {
@@ -2053,30 +4013,30 @@
         },
         "pins": {
           "raw": {
-            "pin_pct": 0.0
+            "pin_pct": 0.2
           },
-          "score": 0.0,
+          "score": 20.0,
           "weight": 0.15,
-          "contribution": 0.0
+          "contribution": 3.0
         }
       }
     },
     {
-      "rank": 43,
-      "wrestler_id": "34941814132",
-      "name": "Dylan Fishback",
-      "team": "Ohio State",
-      "weight": 184,
+      "rank": 83,
+      "wrestler_id": "34935634132",
+      "name": "Camden McDanel",
+      "team": "Nebraska",
+      "weight": 197,
       "weight_rank": 5,
       "eligible": false,
       "eligibility_reason": "Weight class rank 5 > 3",
-      "hodge_score": 16.06,
+      "hodge_score": 21.27,
       "components": {
         "record": {
           "raw": {
-            "wins": 8,
-            "losses": 2,
-            "win_pct": 0.8
+            "wins": 25,
+            "losses": 8,
+            "win_pct": 0.758
           },
           "score": 0.0,
           "weight": 0.3,
@@ -2084,21 +4044,21 @@
         },
         "quality": {
           "raw": {
-            "ranked_wins": 4,
-            "top10_wins": 1,
-            "raw_quality": 39.0
+            "ranked_wins": 13,
+            "top10_wins": 2,
+            "raw_quality": 69.0
           },
-          "score": 34.5,
+          "score": 61.5,
           "weight": 0.3,
-          "contribution": 10.35
+          "contribution": 18.45
         },
         "dominance": {
           "raw": {
-            "avg_team_points": 3.69
+            "avg_team_points": 3.34
           },
-          "score": 22.8,
+          "score": 11.3,
           "weight": 0.25,
-          "contribution": 5.71
+          "contribution": 2.82
         },
         "pins": {
           "raw": {
@@ -2111,20 +4071,265 @@
       }
     },
     {
-      "rank": 44,
-      "wrestler_id": "34940707132",
-      "name": "Jacob Frost",
-      "team": "Iowa State",
-      "weight": 149,
-      "weight_rank": 5,
+      "rank": 84,
+      "wrestler_id": "34955780132",
+      "name": "Vance Vombaur",
+      "team": "Minnesota",
+      "weight": 141,
+      "weight_rank": 8,
       "eligible": false,
-      "eligibility_reason": "Weight class rank 5 > 3",
-      "hodge_score": 13.43,
+      "eligibility_reason": "Weight class rank 8 > 3",
+      "hodge_score": 20.83,
       "components": {
         "record": {
           "raw": {
-            "wins": 5,
-            "losses": 2,
+            "wins": 21,
+            "losses": 8,
+            "win_pct": 0.724
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 6,
+            "top10_wins": 2,
+            "raw_quality": 50.0
+          },
+          "score": 45.7,
+          "weight": 0.3,
+          "contribution": 13.7
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.86
+          },
+          "score": 28.5,
+          "weight": 0.25,
+          "contribution": 7.13
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.048
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 85,
+      "wrestler_id": "34941773132",
+      "name": "Paddy Gallagher",
+      "team": "Ohio State",
+      "weight": 165,
+      "weight_rank": 9,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 9 > 3",
+      "hodge_score": 20.8,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 16,
+            "losses": 12,
+            "win_pct": 0.571
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 6,
+            "top10_wins": 2,
+            "raw_quality": 58.0
+          },
+          "score": 52.3,
+          "weight": 0.3,
+          "contribution": 15.7
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.61
+          },
+          "score": 20.4,
+          "weight": 0.25,
+          "contribution": 5.1
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.0
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 86,
+      "wrestler_id": "34933567132",
+      "name": "Lachlan McNeil",
+      "team": "Michigan",
+      "weight": 149,
+      "weight_rank": 3,
+      "eligible": false,
+      "eligibility_reason": "Has 7 loss(es) and win% 75.0% < 90%",
+      "hodge_score": 20.44,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 21,
+            "losses": 7,
+            "win_pct": 0.75
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 9,
+            "top10_wins": 1,
+            "raw_quality": 52.7
+          },
+          "score": 45.9,
+          "weight": 0.3,
+          "contribution": 13.77
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.65
+          },
+          "score": 21.5,
+          "weight": 0.25,
+          "contribution": 5.39
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.143
+          },
+          "score": 8.6,
+          "weight": 0.15,
+          "contribution": 1.29
+        }
+      }
+    },
+    {
+      "rank": 87,
+      "wrestler_id": "34936032132",
+      "name": "Elijah Griffin",
+      "team": "Rider",
+      "weight": 141,
+      "weight_rank": 9,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 9 > 3",
+      "hodge_score": 20.24,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 29,
+            "losses": 9,
+            "win_pct": 0.763
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 7,
+            "top10_wins": 0,
+            "raw_quality": 38.0
+          },
+          "score": 31.7,
+          "weight": 0.3,
+          "contribution": 9.5
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.9
+          },
+          "score": 30.1,
+          "weight": 0.25,
+          "contribution": 7.53
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.207
+          },
+          "score": 21.4,
+          "weight": 0.15,
+          "contribution": 3.21
+        }
+      }
+    },
+    {
+      "rank": 88,
+      "wrestler_id": "34962192132",
+      "name": "Nasir Bailey",
+      "team": "Iowa",
+      "weight": 141,
+      "weight_rank": 7,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 7 > 3",
+      "hodge_score": 18.53,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 16,
+            "losses": 9,
+            "win_pct": 0.64
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 7,
+            "top10_wins": 3,
+            "raw_quality": 55.7
+          },
+          "score": 52.4,
+          "weight": 0.3,
+          "contribution": 15.72
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.34
+          },
+          "score": 11.2,
+          "weight": 0.25,
+          "contribution": 2.81
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.0
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 89,
+      "wrestler_id": "34945839132",
+      "name": "Jacob Moran",
+      "team": "Indiana",
+      "weight": 125,
+      "weight_rank": 8,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 8 > 3",
+      "hodge_score": 18.27,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 20,
+            "losses": 8,
             "win_pct": 0.714
           },
           "score": 0.0,
@@ -2133,13 +4338,258 @@
         },
         "quality": {
           "raw": {
-            "ranked_wins": 3,
-            "top10_wins": 2,
-            "raw_quality": 34.7
+            "ranked_wins": 6,
+            "top10_wins": 1,
+            "raw_quality": 45.7
           },
-          "score": 32.9,
+          "score": 40.1,
           "weight": 0.3,
-          "contribution": 9.87
+          "contribution": 12.02
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.75
+          },
+          "score": 25.0,
+          "weight": 0.25,
+          "contribution": 6.25
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.0
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 90,
+      "wrestler_id": "34964062132",
+      "name": "Julian Farber",
+      "team": "Northern Iowa",
+      "weight": 133,
+      "weight_rank": 10,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 10 > 3",
+      "hodge_score": 17.6,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 19,
+            "losses": 11,
+            "win_pct": 0.633
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 7,
+            "top10_wins": 0,
+            "raw_quality": 41.3
+          },
+          "score": 34.4,
+          "weight": 0.3,
+          "contribution": 10.33
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.66
+          },
+          "score": 22.1,
+          "weight": 0.25,
+          "contribution": 5.53
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.158
+          },
+          "score": 11.6,
+          "weight": 0.15,
+          "contribution": 1.74
+        }
+      }
+    },
+    {
+      "rank": 91,
+      "wrestler_id": "34962159132",
+      "name": "Gabe Arnold",
+      "team": "Iowa",
+      "weight": 197,
+      "weight_rank": 7,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 7 > 3",
+      "hodge_score": 17.21,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 20,
+            "losses": 9,
+            "win_pct": 0.69
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 7,
+            "top10_wins": 2,
+            "raw_quality": 52.3
+          },
+          "score": 47.6,
+          "weight": 0.3,
+          "contribution": 14.28
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.35
+          },
+          "score": 11.7,
+          "weight": 0.25,
+          "contribution": 2.92
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.05
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 92,
+      "wrestler_id": "34935618132",
+      "name": "Jacob Van Dee",
+      "team": "Nebraska",
+      "weight": 133,
+      "weight_rank": 8,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 8 > 3",
+      "hodge_score": 16.55,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 22,
+            "losses": 9,
+            "win_pct": 0.71
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 7,
+            "top10_wins": 1,
+            "raw_quality": 48.0
+          },
+          "score": 42.0,
+          "weight": 0.3,
+          "contribution": 12.6
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.47
+          },
+          "score": 15.8,
+          "weight": 0.25,
+          "contribution": 3.95
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.091
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 93,
+      "wrestler_id": "34943451132",
+      "name": "Tyler Knox",
+      "team": "Stanford",
+      "weight": 133,
+      "weight_rank": 6,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 6 > 3",
+      "hodge_score": 16.52,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 19,
+            "losses": 7,
+            "win_pct": 0.731
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 8,
+            "top10_wins": 1,
+            "raw_quality": 53.0
+          },
+          "score": 46.2,
+          "weight": 0.3,
+          "contribution": 13.85
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.3
+          },
+          "score": 10.1,
+          "weight": 0.25,
+          "contribution": 2.51
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.105
+          },
+          "score": 1.1,
+          "weight": 0.15,
+          "contribution": 0.16
+        }
+      }
+    },
+    {
+      "rank": 94,
+      "wrestler_id": "35105018132",
+      "name": "CJ Composto",
+      "team": "Penn",
+      "weight": 141,
+      "weight_rank": 6,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 6 > 3",
+      "hodge_score": 16.44,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 21,
+            "losses": 6,
+            "win_pct": 0.778
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 8,
+            "top10_wins": 2,
+            "raw_quality": 46.7
+          },
+          "score": 42.9,
+          "weight": 0.3,
+          "contribution": 12.87
         },
         "dominance": {
           "raw": {
@@ -2147,11 +4597,11 @@
           },
           "score": 14.3,
           "weight": 0.25,
-          "contribution": 3.56
+          "contribution": 3.57
         },
         "pins": {
           "raw": {
-            "pin_pct": 0.0
+            "pin_pct": 0.048
           },
           "score": 0.0,
           "weight": 0.15,
@@ -2160,21 +4610,21 @@
       }
     },
     {
-      "rank": 45,
-      "wrestler_id": "34935723132",
-      "name": "AJ Ferrari",
-      "team": "Nebraska",
-      "weight": 285,
-      "weight_rank": 4,
+      "rank": 95,
+      "wrestler_id": "34934128132",
+      "name": "Mac Stout",
+      "team": "Pittsburgh",
+      "weight": 197,
+      "weight_rank": 10,
       "eligible": false,
-      "eligibility_reason": "Weight class rank 4 > 3",
-      "hodge_score": 13.39,
+      "eligibility_reason": "Weight class rank 10 > 3",
+      "hodge_score": 16.39,
       "components": {
         "record": {
           "raw": {
-            "wins": 4,
-            "losses": 1,
-            "win_pct": 0.8
+            "wins": 21,
+            "losses": 6,
+            "win_pct": 0.778
           },
           "score": 0.0,
           "weight": 0.3,
@@ -2182,21 +4632,21 @@
         },
         "quality": {
           "raw": {
-            "ranked_wins": 3,
-            "top10_wins": 2,
-            "raw_quality": 32.0
+            "ranked_wins": 8,
+            "top10_wins": 1,
+            "raw_quality": 47.0
           },
-          "score": 30.7,
+          "score": 41.2,
           "weight": 0.3,
-          "contribution": 9.2
+          "contribution": 12.35
         },
         "dominance": {
           "raw": {
-            "avg_team_points": 3.5
+            "avg_team_points": 3.48
           },
-          "score": 16.8,
+          "score": 16.2,
           "weight": 0.25,
-          "contribution": 4.19
+          "contribution": 4.04
         },
         "pins": {
           "raw": {
@@ -2209,43 +4659,43 @@
       }
     },
     {
-      "rank": 46,
-      "wrestler_id": "34955800132",
-      "name": "Jore Volk",
-      "team": "Minnesota",
-      "weight": 125,
-      "weight_rank": 3,
+      "rank": 96,
+      "wrestler_id": "34935760132",
+      "name": "Chance Lamer",
+      "team": "Nebraska",
+      "weight": 149,
+      "weight_rank": 4,
       "eligible": false,
-      "eligibility_reason": "Has 2 loss(es) and win% 85.7% < 90%",
-      "hodge_score": 11.55,
+      "eligibility_reason": "Weight class rank 4 > 3",
+      "hodge_score": 15.1,
       "components": {
         "record": {
           "raw": {
-            "wins": 12,
-            "losses": 2,
-            "win_pct": 0.857
+            "wins": 18,
+            "losses": 10,
+            "win_pct": 0.643
           },
-          "score": 4.8,
+          "score": 0.0,
           "weight": 0.3,
-          "contribution": 1.43
+          "contribution": 0.0
         },
         "quality": {
           "raw": {
             "ranked_wins": 4,
             "top10_wins": 1,
-            "raw_quality": 26.7
+            "raw_quality": 36.0
           },
-          "score": 24.2,
+          "score": 32.0,
           "weight": 0.3,
-          "contribution": 7.27
+          "contribution": 9.6
         },
         "dominance": {
           "raw": {
-            "avg_team_points": 3.34
+            "avg_team_points": 3.66
           },
-          "score": 11.4,
+          "score": 22.0,
           "weight": 0.25,
-          "contribution": 2.85
+          "contribution": 5.5
         },
         "pins": {
           "raw": {
@@ -2258,21 +4708,21 @@
       }
     },
     {
-      "rank": 47,
-      "wrestler_id": "34933357132",
-      "name": "Eddie Ventresca",
-      "team": "Virginia Tech",
-      "weight": 125,
-      "weight_rank": 4,
+      "rank": 97,
+      "wrestler_id": "34936416132",
+      "name": "Zack Ryder",
+      "team": "Oklahoma State",
+      "weight": 184,
+      "weight_rank": 9,
       "eligible": false,
-      "eligibility_reason": "Weight class rank 4 > 3",
-      "hodge_score": 7.39,
+      "eligibility_reason": "Weight class rank 9 > 3",
+      "hodge_score": 14.28,
       "components": {
         "record": {
           "raw": {
-            "wins": 4,
-            "losses": 1,
-            "win_pct": 0.8
+            "wins": 15,
+            "losses": 11,
+            "win_pct": 0.577
           },
           "score": 0.0,
           "weight": 0.3,
@@ -2280,21 +4730,168 @@
         },
         "quality": {
           "raw": {
-            "ranked_wins": 2,
+            "ranked_wins": 5,
             "top10_wins": 1,
-            "raw_quality": 21.3
+            "raw_quality": 37.0
           },
-          "score": 19.8,
+          "score": 32.8,
           "weight": 0.3,
-          "contribution": 5.93
+          "contribution": 9.85
         },
         "dominance": {
           "raw": {
-            "avg_team_points": 3.23
+            "avg_team_points": 3.41
           },
-          "score": 5.8,
+          "score": 13.7,
           "weight": 0.25,
-          "contribution": 1.45
+          "contribution": 3.43
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.133
+          },
+          "score": 6.7,
+          "weight": 0.15,
+          "contribution": 1.0
+        }
+      }
+    },
+    {
+      "rank": 98,
+      "wrestler_id": "34936418132",
+      "name": "Casey Swiderski",
+      "team": "Oklahoma State",
+      "weight": 149,
+      "weight_rank": 9,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 9 > 3",
+      "hodge_score": 13.93,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 17,
+            "losses": 8,
+            "win_pct": 0.68
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 6,
+            "top10_wins": 1,
+            "raw_quality": 42.7
+          },
+          "score": 37.6,
+          "weight": 0.3,
+          "contribution": 11.27
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.32
+          },
+          "score": 10.6,
+          "weight": 0.25,
+          "contribution": 2.66
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.059
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 99,
+      "wrestler_id": "37205546132",
+      "name": "Carter Young",
+      "team": "Maryland",
+      "weight": 149,
+      "weight_rank": 10,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 10 > 3",
+      "hodge_score": 13.75,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 17,
+            "losses": 6,
+            "win_pct": 0.739
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 7,
+            "top10_wins": 1,
+            "raw_quality": 37.7
+          },
+          "score": 33.4,
+          "weight": 0.3,
+          "contribution": 10.02
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.45
+          },
+          "score": 14.9,
+          "weight": 0.25,
+          "contribution": 3.73
+        },
+        "pins": {
+          "raw": {
+            "pin_pct": 0.0
+          },
+          "score": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        }
+      }
+    },
+    {
+      "rank": 100,
+      "wrestler_id": "34943457132",
+      "name": "EJ Parco",
+      "team": "Stanford",
+      "weight": 165,
+      "weight_rank": 10,
+      "eligible": false,
+      "eligibility_reason": "Weight class rank 10 > 3",
+      "hodge_score": 11.24,
+      "components": {
+        "record": {
+          "raw": {
+            "wins": 13,
+            "losses": 9,
+            "win_pct": 0.591
+          },
+          "score": 0.0,
+          "weight": 0.3,
+          "contribution": 0.0
+        },
+        "quality": {
+          "raw": {
+            "ranked_wins": 4,
+            "top10_wins": 1,
+            "raw_quality": 39.7
+          },
+          "score": 35.1,
+          "weight": 0.3,
+          "contribution": 10.52
+        },
+        "dominance": {
+          "raw": {
+            "avg_team_points": 3.09
+          },
+          "score": 2.9,
+          "weight": 0.25,
+          "contribution": 0.72
         },
         "pins": {
           "raw": {

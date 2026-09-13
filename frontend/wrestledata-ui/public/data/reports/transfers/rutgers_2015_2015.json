@@ -1,0 +1,85 @@
+{
+  "query": {
+    "team_slug": "rutgers",
+    "team_name": "Rutgers",
+    "start_year": 2015,
+    "end_year": 2015
+  },
+  "wrestlers": [
+    {
+      "name": "Tyson Dippery",
+      "wrestler_id": "11448470009",
+      "weight_class": 141,
+      "photo_url": "https://gobroncs.com/images/2017/10/25/Tyson_Dippery.jpg",
+      "direction": "transfer_out",
+      "first_query_year": 2014,
+      "last_query_year": 2017,
+      "school_path": [
+        "Rutgers",
+        "Rider"
+      ],
+      "seasons": [
+        {
+          "year": 2014,
+          "wrestler_id": "4633963009",
+          "team": "Rutgers",
+          "team_slug": "rutgers",
+          "team_abbr": "RUT",
+          "is_query_team": true,
+          "dpg": 0.65,
+          "matches": 40,
+          "rank": 60,
+          "record": "20-15"
+        },
+        {
+          "year": 2015,
+          "wrestler_id": "4784210009",
+          "team": "Rutgers",
+          "team_slug": "rutgers",
+          "team_abbr": "RUT",
+          "is_query_team": true,
+          "dpg": 1.12,
+          "matches": 36,
+          "rank": 62,
+          "record": "18-10"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "293985107",
+          "team": "Rutgers",
+          "team_slug": "rutgers",
+          "team_abbr": "RUT",
+          "is_query_team": true,
+          "dpg": 0.8,
+          "matches": 35,
+          "rank": 24,
+          "record": "17-14"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "840103107",
+          "team": "Rutgers",
+          "team_slug": "rutgers",
+          "team_abbr": "RUT",
+          "is_query_team": true,
+          "dpg": 2.06,
+          "matches": 12,
+          "rank": 37,
+          "record": "9-3"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11448470009",
+          "team": "Rider",
+          "team_slug": "rider",
+          "team_abbr": "RID",
+          "is_query_team": false,
+          "dpg": 1.32,
+          "matches": 30,
+          "rank": 35,
+          "record": "19-8"
+        }
+      ]
+    }
+  ]
+}

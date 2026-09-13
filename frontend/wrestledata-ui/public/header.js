@@ -77,7 +77,26 @@
               </div>
             </div>
 
-            <a href="/notes/index.html" class="nav-item nav-link">Notes</a>
+            <!-- Field Notes Dropdown -->
+            <div class="nav-item nav-item--dropdown" id="nav-notes">
+              <button class="nav-link nav-link--dropdown" aria-expanded="false" aria-haspopup="true">
+                Field Notes <span class="dropdown-arrow">▾</span>
+              </button>
+              <div class="dropdown-menu" id="notes-menu">
+                <a href="/notes/index.html" class="dropdown-item">
+                  <span class="dropdown-item-label">Field Notes</span>
+                  <span class="dropdown-item-subtext">Threads and write-ups</span>
+                </a>
+                <a href="/tools/index.html" class="dropdown-item">
+                  <span class="dropdown-item-label">Tools</span>
+                  <span class="dropdown-item-subtext">Sims and generators</span>
+                </a>
+                <a href="/lab/index.html" class="dropdown-item">
+                  <span class="dropdown-item-label">Lab</span>
+                  <span class="dropdown-item-subtext">Experiments</span>
+                </a>
+              </div>
+            </div>
           </div>
 
           <!-- Search (Center-Right) -->
@@ -152,7 +171,10 @@
             <span class="mobile-drawer-link mobile-drawer-link--disabled" aria-disabled="true">National Duals <em>— coming soon</em></span>
           </div>
           <div class="mobile-drawer-section">
-            <a href="/notes/index.html" class="mobile-drawer-link">Notes</a>
+            <div class="mobile-drawer-section-label">Field Notes</div>
+            <a href="/notes/index.html" class="mobile-drawer-link">Field Notes</a>
+            <a href="/tools/index.html" class="mobile-drawer-link">Tools</a>
+            <a href="/lab/index.html" class="mobile-drawer-link">Lab</a>
           </div>
           <div class="mobile-drawer-section mobile-drawer-section--last">
             <a href="/about.html" class="mobile-drawer-link">About</a>
@@ -502,6 +524,11 @@
       }
     });
   }
+
+  // Exposed so page-specific search inputs outside the header itself (e.g.
+  // the mobile app-home search card, see mobile_app_home.js) can reuse the
+  // exact same Fuse.js wiring instead of duplicating it.
+  window.initHeaderSearch = initSearch;
 
   // Initialize when DOM is ready
   if (document.readyState === 'loading') {

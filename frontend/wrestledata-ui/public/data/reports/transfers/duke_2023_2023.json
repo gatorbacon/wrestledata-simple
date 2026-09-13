@@ -1,0 +1,97 @@
+{
+  "query": {
+    "team_slug": "duke",
+    "team_name": "Duke",
+    "start_year": 2023,
+    "end_year": 2023
+  },
+  "wrestlers": [
+    {
+      "name": "Jarred Papcsy",
+      "wrestler_id": "24579245132",
+      "weight_class": 149,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgoduke.com%2Fimages%2F2023%2F10%2F11%2FPapcsy_Jarred.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2023,
+      "last_query_year": 2024,
+      "school_path": [
+        "NC State",
+        "Duke"
+      ],
+      "seasons": [
+        {
+          "year": 2019,
+          "wrestler_id": "4627522132",
+          "team": "NC State",
+          "team_slug": "nc_state",
+          "team_abbr": "NCST",
+          "is_query_team": false,
+          "dpg": -1.94,
+          "matches": 13,
+          "rank": 223,
+          "record": "4-8"
+        },
+        {
+          "year": 2020,
+          "wrestler_id": "10461273132",
+          "team": "NC State",
+          "team_slug": "nc_state",
+          "team_abbr": "NCST",
+          "is_query_team": false,
+          "dpg": -0.62,
+          "matches": 17,
+          "rank": 148,
+          "record": "8-7"
+        },
+        {
+          "year": 2021,
+          "wrestler_id": "14865902132",
+          "team": "NC State",
+          "team_slug": "nc_state",
+          "team_abbr": "NCST",
+          "is_query_team": false,
+          "dpg": -2.74,
+          "matches": 3,
+          "rank": 150,
+          "record": "1-2"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16701892132",
+          "team": "NC State",
+          "team_slug": "nc_state",
+          "team_abbr": "NCST",
+          "is_query_team": false,
+          "dpg": -1.24,
+          "matches": 17,
+          "rank": 122,
+          "record": "6-8"
+        },
+        {
+          "year": 2023,
+          "wrestler_id": "20135621132",
+          "team": "Duke",
+          "team_slug": "duke",
+          "team_abbr": "DUKE",
+          "is_query_team": true,
+          "dpg": -0.27,
+          "matches": 27,
+          "rank": 151,
+          "record": "11-12"
+        },
+        {
+          "year": 2024,
+          "wrestler_id": "24579245132",
+          "team": "Duke",
+          "team_slug": "duke",
+          "team_abbr": "DUKE",
+          "is_query_team": true,
+          "dpg": -1.68,
+          "matches": 27,
+          "rank": 282,
+          "record": "5-18"
+        }
+      ]
+    }
+  ]
+}

@@ -116,6 +116,7 @@
 <body>
   <script src="/analytics.js?v=20260911"></script>
   <script src="/header.js?v=20260908"></script>
+  <script src="/lab_stamp.js?v=20260910"></script>
 
   <div class="page-container">
     <div class="xfer-header">
@@ -135,12 +136,8 @@
           <select id="xfer-team-select"></select>
         </div>
         <div class="xfer-field">
-          <label for="xfer-start-select">Start year</label>
-          <select id="xfer-start-select"></select>
-        </div>
-        <div class="xfer-field">
-          <label for="xfer-end-select">End year</label>
-          <select id="xfer-end-select"></select>
+          <label for="xfer-year-select">Season</label>
+          <select id="xfer-year-select"></select>
         </div>
         <button class="xfer-go-btn" id="xfer-go">View</button>
       </div>
@@ -249,7 +246,7 @@
     const q = data.query;
     document.getElementById('xfer-title').textContent = `${q.team_name} — Transfer DPG Report`;
     document.getElementById('xfer-subtitle').textContent =
-      `Roster window ${q.start_year}–${q.end_year} · full career DPG shown for every wrestler who played elsewhere before or after`;
+      `${q.start_year} roster · full career DPG shown for every wrestler who played elsewhere before or after`;
 
     const nIn = data.wrestlers.filter(w => w.direction === 'transfer_in' || w.direction === 'both').length;
     const nOut = data.wrestlers.filter(w => w.direction === 'transfer_out' || w.direction === 'both').length;
@@ -262,7 +259,7 @@
     const body = document.getElementById('xfer-body');
     body.innerHTML = '';
     if (!data.wrestlers.length) {
-      body.innerHTML = `<div class="xfer-empty">No transfers found touching ${C.esc(q.team_name)} in ${q.start_year}–${q.end_year}.</div>`;
+      body.innerHTML = `<div class="xfer-empty">No transfers found touching ${C.esc(q.team_name)} in ${q.start_year}.</div>`;
       return;
     }
     data.wrestlers.forEach(w => renderCard(w, q.team_name, colorMap, band));
@@ -270,10 +267,10 @@
 
   const MIN_YEAR = 2012, MAX_YEAR = 2026;
 
-  function loadReport(team, start, end) {
+  function loadReport(team, year) {
     const body = document.getElementById('xfer-body');
     body.innerHTML = '<div class="xfer-loading">Loading…</div>';
-    const dataUrl = `/data/reports/transfers/${team}_${start}_${end}.json`;
+    const dataUrl = `/data/reports/transfers/${team}_${year}_${year}.json`;
     Promise.all([
       fetch(dataUrl).then(r => { if (!r.ok) throw new Error('report not found'); return r.json(); }),
       fetch('/data/team_colors.json').then(r => r.ok ? r.json() : { teams: {}, default: C.DEFAULT_COLOR }).catch(() => ({ teams: {}, default: C.DEFAULT_COLOR })),
@@ -282,20 +279,17 @@
       .then(([data, colorMap, band]) => render(data, colorMap, band))
       .catch(() => {
         body.innerHTML =
-          `<div class="xfer-empty">No report generated yet for this query.<br>Run: <code>python scripts/reports/build_transfer_dpg_report.py --team ${C.esc(team)} --start-year ${C.esc(start)} --end-year ${C.esc(end)}</code></div>`;
+          `<div class="xfer-empty">No report generated yet for this query.<br>Run: <code>python scripts/reports/build_transfer_dpg_report.py --team ${C.esc(team)} --start-year ${C.esc(year)} --end-year ${C.esc(year)}</code></div>`;
       });
   }
 
-  const startSelect = document.getElementById('xfer-start-select');
-  const endSelect = document.getElementById('xfer-end-select');
+  const yearSelect = document.getElementById('xfer-year-select');
   const yearOptions = Array.from({ length: MAX_YEAR - MIN_YEAR + 1 }, (_, i) => MAX_YEAR - i)
     .map(y => `<option value="${y}">${y}</option>`).join('');
-  startSelect.innerHTML = yearOptions;
-  endSelect.innerHTML = yearOptions;
+  yearSelect.innerHTML = yearOptions;
 
   const initialTeam = qs('team');
-  const initialStart = qs('start') || String(MAX_YEAR - 3);
-  const initialEnd = qs('end') || String(MAX_YEAR);
+  const initialYear = qs('year') || String(MAX_YEAR);
 
   fetch('/data/team_colors.json').then(r => r.json()).then(colorMap => {
     const teams = Object.entries(colorMap.teams || {})
@@ -304,27 +298,24 @@
     const teamSelect = document.getElementById('xfer-team-select');
     teamSelect.innerHTML = teams.map(t => `<option value="${t.slug}">${t.name}</option>`).join('');
     if (initialTeam) teamSelect.value = initialTeam;
-    startSelect.value = initialStart;
-    endSelect.value = initialEnd;
+    yearSelect.value = initialYear;
 
     document.getElementById('xfer-go').addEventListener('click', () => {
       const team = teamSelect.value;
-      const start = startSelect.value;
-      const end = endSelect.value;
+      const year = yearSelect.value;
       if (!team) return;
       const url = new URL(window.location);
       url.searchParams.set('team', team);
-      url.searchParams.set('start', start);
-      url.searchParams.set('end', end);
+      url.searchParams.set('year', year);
       window.history.pushState({}, '', url);
-      loadReport(team, start, end);
+      loadReport(team, year);
     });
 
     if (initialTeam) {
-      loadReport(initialTeam, initialStart, initialEnd);
+      loadReport(initialTeam, initialYear);
     } else {
       document.getElementById('xfer-body').innerHTML =
-        '<div class="xfer-empty">Pick a team and year range above, then click View.</div>';
+        '<div class="xfer-empty">Pick a team and season above, then click View.</div>';
     }
   }).catch(() => {
     document.getElementById('xfer-body').innerHTML =

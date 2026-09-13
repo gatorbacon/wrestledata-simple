@@ -1,0 +1,100 @@
+{
+  "query": {
+    "team_slug": "chattanooga",
+    "team_name": "Chattanooga",
+    "start_year": 2020,
+    "end_year": 2020
+  },
+  "wrestlers": [
+    {
+      "name": "Tanner Smith",
+      "wrestler_id": "10504345132",
+      "weight_class": 149,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Futc.sidearmsports.com%2Fimages%2F2019%2F9%2F19%2FSmith_Tanner.JPG&width=603&height=803&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2019,
+      "last_query_year": 2020,
+      "school_path": [
+        "Eastern Michigan",
+        "Chattanooga"
+      ],
+      "seasons": [
+        {
+          "year": 2018,
+          "wrestler_id": "11485114009",
+          "team": "Eastern Michigan",
+          "team_slug": "eastern_michigan",
+          "team_abbr": "EAST",
+          "is_query_team": false,
+          "dpg": 3.14,
+          "matches": 18,
+          "rank": 38,
+          "record": "16-0"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4926981132",
+          "team": "Chattanooga",
+          "team_slug": "chattanooga",
+          "team_abbr": "CHAT",
+          "is_query_team": true,
+          "dpg": 1.0,
+          "matches": 21,
+          "rank": 32,
+          "record": "12-9"
+        },
+        {
+          "year": 2020,
+          "wrestler_id": "10504345132",
+          "team": "Chattanooga",
+          "team_slug": "chattanooga",
+          "team_abbr": "CHAT",
+          "is_query_team": true,
+          "dpg": 2.15,
+          "matches": 36,
+          "rank": 22,
+          "record": "24-11"
+        }
+      ]
+    },
+    {
+      "name": "Tyler Shilson",
+      "wrestler_id": "10504360132",
+      "weight_class": 157,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Futc.sidearmsports.com%2Fimages%2F2019%2F9%2F19%2FShilson_Tyler.JPG&width=603&height=803&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2020,
+      "last_query_year": 2020,
+      "school_path": [
+        "Wisconsin",
+        "Chattanooga"
+      ],
+      "seasons": [
+        {
+          "year": 2018,
+          "wrestler_id": "11481858009",
+          "team": "Wisconsin",
+          "team_slug": "wisconsin",
+          "team_abbr": "WIS",
+          "is_query_team": false,
+          "dpg": -3.29,
+          "matches": 7,
+          "rank": 168,
+          "record": "1-4"
+        },
+        {
+          "year": 2020,
+          "wrestler_id": "10504360132",
+          "team": "Chattanooga",
+          "team_slug": "chattanooga",
+          "team_abbr": "CHAT",
+          "is_query_team": true,
+          "dpg": -0.53,
+          "matches": 27,
+          "rank": 123,
+          "record": "12-14"
+        }
+      ]
+    }
+  ]
+}

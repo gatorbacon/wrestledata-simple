@@ -1,21 +1,32 @@
 #!/usr/bin/env python3
 """
-Compute simple Hodge Trophy front-runner metrics for a season.
+Compute Hodge Trophy front-runner metrics for a season.
 
-For each NCAA weight class, this script:
-  - Looks at wrestlers ranked in the TOP 10 of that weight
-    (based on `mt/rankings_data/{season}/rankings_{weight}.json`)
-  - Uses match data from `weight_class_{weight}.json` to compute:
-        * Win percentage
-        * Bonus percentage (F/TF/MD/INJ/MFF wins)
-        * Fall percentage (F wins)
-  - Collects all such wrestlers across weights and prints a
-    combined table sorted by:
-        1) Win percentage (descending)
-        2) Bonus percentage (descending)
-        3) Fall percentage (descending)
+Data sources (season 2026+ / current-methodology seasons):
+  - `mt/elo_ratings/ncaa_men/{season}/elo_ratings.json` -- built by
+    `calculate_elo_ratings.py`. Used only to build the candidate pool: for
+    each weight class, whichever wrestlers have a `hybrid_rank_by_weight`
+    entry <= --top-n for that weight. This is the same `hybrid_rank` value
+    that's the site's documented rank source of truth (see docs/matsavant.md
+    "NCAA Ranking Methodology (Source of Truth)") -- NOT the internal
+    "matrix rank" (`mt/rankings_data/{season}/rankings_{weight}.json`),
+    which that doc explicitly bans from ever feeding a public JSON file.
+  - `frontend/wrestledata-ui/public/data/wrestlers/{season}/by_id/{id}.json`
+    -- one already-published wrestler profile per candidate. `match_list`
+    gives per-match result ("W"/"L"), method (FALL/TF/MD/DEC/...), and the
+    opponent's already-resolved rank at that weight -- everything needed
+    for win/bonus/fall rates and quality-of-competition scoring, straight
+    from the same file wrestler.html itself reads (i.e. always as current
+    as the last `build_wrestler_profiles.py` run for that season).
 
-This is intentionally read‑only and console‑only for now.
+This script previously read `mt/rankings_data/{season}/rankings_{weight}.json`
++ `weight_class_{weight}.json`. That data stopped being regenerated
+mid-season (an earlier, now-abandoned rankings pipeline run) and was also
+the banned matrix-rank source -- so `hodge_{season}.json` was both stale
+and, independent of staleness, reading from the wrong place. Fixed
+2026-09-11; see docs/matsavant.md's Hodge section for the incident and the
+"why the old source was wrong" detail. Also added to the documented weekly
+pipeline at that point (root CLAUDE.md) -- it previously wasn't part of it.
 """
 
 from __future__ import annotations
@@ -25,53 +36,39 @@ import json
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Dict, List, Optional, Set
+from typing import Dict, List, Optional
 
+
+NCAA_WEIGHTS = ["125", "133", "141", "149", "157", "165", "174", "184", "197", "285"]
 
 BONUS_CODES = {"F", "TF", "MD", "INJ", "MFF"}
 FALL_CODES = {"F"}
+TEAM_POINTS = {"D": 3, "MD": 4, "TF": 5, "F": 6}
+
+# `match_list[].method` is already a clean structured code (unlike the old
+# free-text `result` string this script used to regex-parse) -- just a
+# lookup, no text classification needed.
+METHOD_TO_CODE = {
+    "FALL": "F",
+    "TF": "TF",
+    "MD": "MD",
+    "INJ": "INJ",
+    "MFF": "MFF",
+    "DEC": "D",
+    "SV-1": "D",
+    "SV-2": "D",
+    "SV-3": "D",
+    "TB-1": "D",
+    "TB-2": "D",
+    "DFLT": "O",
+    "DQ": "O",
+}
 
 
-def classify_result_type(result: str) -> str:
-    """
-    Roughly classify a result string into a simple code.
-    Mirrors the logic used in `generate_matrix.py`, but kept local here.
-    """
-    if not result:
+def classify_method(method: Optional[str]) -> str:
+    if not method:
         return "O"
-
-    r = result.lower()
-
-    # Medical forfeit
-    if "mffl" in r or "m. for." in r or "medical forfeit" in r:
-        return "MFF"
-
-    # No contest
-    clean = r.strip()
-    if clean == "nc" or "no contest" in clean:
-        return "NC"
-
-    # Injury-related
-    if "inj" in r or "injury" in r:
-        return "INJ"
-
-    # Falls (non-injury)
-    if "fall" in r or " pin" in r or r.startswith("fall"):
-        return "F"
-
-    # Technical fall
-    if "tf" in r or "technical fall" in r:
-        return "TF"
-
-    # Major decision
-    if "md" in r or "major" in r:
-        return "MD"
-
-    # Regular decision (incl. sudden victory)
-    if "dec" in r or "sv-" in r:
-        return "D"
-
-    return "O"
+    return METHOD_TO_CODE.get(method.upper(), "O")
 
 
 @dataclass
@@ -131,195 +128,132 @@ class HodgeStats:
         return (self.ranked_bonus_wins / self.ranked_wins) if self.ranked_wins > 0 else 0.0
 
 
-def load_weight_classes(season: int, data_dir: str) -> Dict[str, Dict]:
-    """Load all `weight_class_*.json` files for a season."""
-    base = Path(data_dir) / str(season)
-    if not base.exists():
-        raise FileNotFoundError(f"Data directory not found: {base}")
-
-    result: Dict[str, Dict] = {}
-    for wc_file in sorted(base.glob("weight_class_*.json")):
-        weight = wc_file.stem.replace("weight_class_", "")
-        with wc_file.open("r", encoding="utf-8") as f:
-            result[weight] = json.load(f)
-    return result
-
-
-def load_rankings_for_weight(
-    season: int, weight: str, data_dir: str
-) -> Optional[List[Dict]]:
-    """
-    Load rankings_{weight}.json for a weight class, if present.
-    Returns list of ranking entries or None.
-    """
-    rankings_path = Path(data_dir) / str(season) / f"rankings_{weight}.json"
-    if not rankings_path.exists():
-        return None
-    with rankings_path.open("r", encoding="utf-8") as f:
-        data = json.load(f)
-    return data.get("rankings", [])
-
-
-def compute_stats_for_weight(
-    weight: str,
-    wc_data: Dict,
-    rankings: Optional[List[Dict]],
-    ranked_opponent_ids: Set[str],
-    top10_opponent_ids: Set[str],
-    rank_lookup: Dict[str, int],
-    top_n: int = 10,
-    starters_only: bool = False,
-) -> List[HodgeStats]:
-    """
-    Compute HodgeStats for ranked wrestlers in a single weight.
-    
-    If starters_only is True, only wrestlers explicitly marked as starters
-    in the rankings JSON (entry['is_starter'] == True) are considered when
-    building the candidate list for that weight.
-    """
-    wrestlers: Dict[str, Dict] = wc_data["wrestlers"]
-    matches: List[Dict] = wc_data["matches"]
-
-    if not rankings:
-        return []
-
-    # Map wrestler_id -> overall rank
-    rank_by_id: Dict[str, int] = {}
-    for entry in rankings:
-        wid = entry.get("wrestler_id")
-        rank = entry.get("rank")
-        if not wid or rank is None:
-            continue
-        try:
-            r = int(rank)
-        except (TypeError, ValueError):
-            continue
-        rank_by_id[wid] = r
-
-    # Collect ranked wrestler IDs (respect their order), optionally
-    # restricted to official starters only.
-    top_ranked_ids: List[str] = []
-    for entry in rankings:
-        wid = entry.get("wrestler_id")
-        if not wid or wid not in wrestlers:
-            continue
-        if starters_only and not entry.get("is_starter", False):
-            continue
-        top_ranked_ids.append(wid)
-        if len(top_ranked_ids) >= top_n:
-            break
-
-    if not top_ranked_ids:
-        return []
-
-    # Initialize stats for those wrestlers
-    stats: Dict[str, HodgeStats] = {}
-    for wid in top_ranked_ids:
-        info = wrestlers[wid]
-        stats[wid] = HodgeStats(
-            wrestler_id=wid,
-            name=info.get("name", f"ID:{wid}"),
-            team=info.get("team", "Unknown"),
-            weight_class=weight,
-            weight_rank=rank_by_id.get(wid, 999),
+def load_elo_ratings(season: int, elo_path: Optional[str]) -> List[Dict]:
+    path = Path(elo_path) if elo_path else Path(f"mt/elo_ratings/ncaa_men/{season}/elo_ratings.json")
+    if not path.exists():
+        raise FileNotFoundError(
+            f"elo_ratings.json not found at {path} -- run calculate_elo_ratings.py "
+            f"-season {season} --league ncaa --gender men first."
         )
+    with path.open("r", encoding="utf-8") as f:
+        return json.load(f)
 
-    # Iterate matches once and update stats for involved top-10 wrestlers
-    for m in matches:
-        w1 = m.get("wrestler1_id")
-        w2 = m.get("wrestler2_id")
-        winner = m.get("winner_id")
-        result = m.get("result", "") or ""
-        code = classify_result_type(result)
 
-        # Only process matches that involve at least one tracked wrestler
-        if w1 not in stats and w2 not in stats:
+def build_candidate_pool(elo_entries: List[Dict], top_n: int) -> Dict[str, List[Dict]]:
+    """
+    weight -> candidates with a hybrid_rank_by_weight entry <= top_n for
+    that weight, sorted by rank ascending. A wrestler who moved weights
+    mid-season can be a candidate at more than one weight.
+    """
+    pool: Dict[str, List[Dict]] = {w: [] for w in NCAA_WEIGHTS}
+    for e in elo_entries:
+        hrbw = e.get("hybrid_rank_by_weight") or {}
+        for weight, rank in hrbw.items():
+            if weight not in pool or rank is None:
+                continue
+            try:
+                r = int(rank)
+            except (TypeError, ValueError):
+                continue
+            if r > top_n:
+                continue
+            pool[weight].append(
+                {
+                    "wrestler_id": e.get("wrestler_id"),
+                    "rank": r,
+                    "name": e.get("name") or f"ID:{e.get('wrestler_id')}",
+                    "team": e.get("team") or "Unknown",
+                }
+            )
+    for w in pool:
+        pool[w].sort(key=lambda c: c["rank"])
+    return pool
+
+
+def load_profile(season: int, wrestler_id: str, profiles_dir: str) -> Optional[Dict]:
+    path = Path(profiles_dir) / str(season) / "by_id" / f"{wrestler_id}.json"
+    if not path.exists():
+        return None
+    with path.open("r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def compute_stats_for_candidate(entry: Dict, weight: str, profile: Dict) -> HodgeStats:
+    s = HodgeStats(
+        wrestler_id=entry["wrestler_id"],
+        name=entry["name"],
+        team=entry["team"],
+        weight_class=weight,
+        weight_rank=entry["rank"],
+    )
+
+    for m in profile.get("match_list") or []:
+        result = m.get("result")
+        if result not in ("W", "L"):
+            continue
+        if result == "L":
+            s.losses += 1
             continue
 
-        # Skip NC for win/loss accounting
-        if code == "NC":
-            continue
+        s.wins += 1
+        code = classify_method(m.get("method"))
+        opp_rank = m.get("opponent_rank")
 
-        # Helper to update stats for one side of the match
-        def update_for(wid: str, opp_id: Optional[str]) -> None:
-            if wid not in stats:
-                return
-            s = stats[wid]
-            if winner == wid:
-                s.wins += 1
-                if code in BONUS_CODES:
-                    s.bonus_wins += 1
-                if code in FALL_CODES:
-                    s.fall_wins += 1
+        if code in BONUS_CODES:
+            s.bonus_wins += 1
+        if code in FALL_CODES:
+            s.fall_wins += 1
+        if code == "F":
+            s.pins += 1
+        elif code == "TF":
+            s.techs += 1
+        elif code == "MD":
+            s.majors += 1
+        elif code == "D":
+            s.decisions += 1
 
-                # Dominance detail by result type
-                if code == "F":
-                    s.pins += 1
-                elif code == "TF":
-                    s.techs += 1
-                elif code == "MD":
-                    s.majors += 1
-                elif code == "D":
-                    s.decisions += 1
-
-                # Dominance accumulators for S_DOM (team points weighted by opponent rank)
-                tp = 0
-                if code == "D":
-                    tp = 3
-                elif code == "MD":
-                    tp = 4
-                elif code == "TF":
-                    tp = 5
-                elif code == "F":
-                    tp = 6
-                if tp > 0:
-                    opp_rank = rank_lookup.get(opp_id) if opp_id else None
-                    if opp_rank is not None and 1 <= opp_rank <= 50:
-                        weight = 1.0 + (50.0 - float(opp_rank)) / 49.0
-                    else:
-                        weight = 0.50
-                    s.dom_weighted_tp_num += tp * weight
-                    s.dom_weighted_tp_den += weight
-
-                    # Track unranked dominance separately for optional penalty
-                    if opp_rank is None or opp_rank > 50:
-                        s.dom_unranked_tp_sum += tp
-                        s.dom_unranked_matches += 1
-
-                # Ranked opponent metrics (current top-33 in same/adjacent weights)
-                if opp_id and opp_id in ranked_opponent_ids:
-                    s.ranked_wins += 1
-                    if code in BONUS_CODES:
-                        s.ranked_bonus_wins += 1
-                    if opp_id in top10_opponent_ids:
-                        s.top10_wins += 1
-
-                    # For quality-of-competition scoring we also record the
-                    # actual rank (1-25) of each ranked opponent win when known.
-                    opp_rank = rank_lookup.get(opp_id)
-                    if opp_rank is not None and opp_rank <= 25:
-                        s.ranked_win_ranks.append(opp_rank)
+        tp = TEAM_POINTS.get(code, 0)
+        if tp > 0:
+            if opp_rank is not None and 1 <= opp_rank <= 50:
+                w = 1.0 + (50.0 - float(opp_rank)) / 49.0
             else:
-                s.losses += 1
+                w = 0.50
+            s.dom_weighted_tp_num += tp * w
+            s.dom_weighted_tp_den += w
+            if opp_rank is None or opp_rank > 50:
+                s.dom_unranked_tp_sum += tp
+                s.dom_unranked_matches += 1
 
-        update_for(w1, w2)
-        update_for(w2, w1)
+        if opp_rank is not None:
+            if opp_rank <= 33:
+                s.ranked_wins += 1
+                if code in BONUS_CODES:
+                    s.ranked_bonus_wins += 1
+                if opp_rank <= 10:
+                    s.top10_wins += 1
+                if opp_rank <= 25:
+                    s.ranked_win_ranks.append(opp_rank)
 
-    return list(stats.values())
+    return s
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(
         description=(
-            "Compute Hodge Trophy front-runner metrics for top-10 ranked wrestlers "
+            "Compute Hodge Trophy front-runner metrics for top-ranked wrestlers "
             "in each weight class."
         )
     )
     parser.add_argument("-season", type=int, required=True, help="Season year (e.g., 2026)")
     parser.add_argument(
         "-data-dir",
-        default="mt/rankings_data",
-        help="Directory containing weight_class_*.json and rankings_*.json",
+        default="frontend/wrestledata-ui/public/data/wrestlers",
+        help="Directory containing {season}/by_id/{wrestler_id}.json wrestler profiles",
+    )
+    parser.add_argument(
+        "-elo-path",
+        default=None,
+        help="Path to elo_ratings.json (default: mt/elo_ratings/ncaa_men/{season}/elo_ratings.json)",
     )
     parser.add_argument(
         "-output-dir",
@@ -336,10 +270,7 @@ def main() -> None:
         "-maxloss",
         type=int,
         default=0,
-        help=(
-            "Maximum number of losses allowed for inclusion in the report "
-            "(default: 0, i.e. only undefeated wrestlers)."
-        ),
+        help="Unused by the current eligibility gate (kept for CLI compatibility).",
     )
     parser.add_argument(
         "-minmatch",
@@ -353,135 +284,37 @@ def main() -> None:
     args = parser.parse_args()
 
     season = args.season
-    data_dir = args.data_dir
+    profiles_dir = args.data_dir
     output_root = Path(args.output_dir)
 
-    wc_by_weight = load_weight_classes(season, data_dir)
-
-    # Only consider numeric weight classes (e.g., '125', '133')
-    numeric_weights = sorted(
-        [w for w in wc_by_weight.keys() if w.isdigit()],
-        key=lambda w: int(w),
-    )
-
-    # Preload rankings and build top-10 / top-33 sets per weight
-    rankings_by_weight: Dict[str, Optional[List[Dict]]] = {}
-    top10_ids_by_weight: Dict[str, Set[str]] = {}
-    top33_ids_by_weight: Dict[str, Set[str]] = {}
-    # Global rank lookup (wid -> best rank across all weights)
-    global_rank_lookup: Dict[str, int] = {}
-
-    for weight in numeric_weights:
-        rankings = load_rankings_for_weight(season, weight, data_dir)
-        rankings_by_weight[weight] = rankings
-        top10: Set[str] = set()
-        top33: Set[str] = set()
-        if rankings:
-            for entry in rankings:
-                wid = entry.get("wrestler_id")
-                rank = entry.get("rank")
-                if not wid or rank is None:
-                    continue
-                try:
-                    r = int(rank)
-                except (TypeError, ValueError):
-                    continue
-                if r <= 10:
-                    top10.add(wid)
-                if r <= 33:
-                    top33.add(wid)
-                # Track global best rank for quality/weight-class scoring
-                if wid not in global_rank_lookup or r < global_rank_lookup[wid]:
-                    global_rank_lookup[wid] = r
-        top10_ids_by_weight[weight] = top10
-        top33_ids_by_weight[weight] = top33
+    elo_entries = load_elo_ratings(season, args.elo_path)
+    pool = build_candidate_pool(elo_entries, args.top_n)
 
     all_candidates: List[HodgeStats] = []
-    # For histograms: stats for all ranked (top-33) starters across weights
-    all_ranked_for_hist: List[HodgeStats] = []
+    missing_profiles: List[str] = []
 
-    # For each weight, build the set of ranked/top10 opponent IDs from
-    # the current and adjacent weight classes only.
-    for idx, weight in enumerate(numeric_weights):
-        wc_data = wc_by_weight[weight]
-        rankings = rankings_by_weight.get(weight)
-        if not rankings:
-            continue
+    for weight in NCAA_WEIGHTS:
+        for entry in pool.get(weight, []):
+            profile = load_profile(season, entry["wrestler_id"], profiles_dir)
+            if profile is None:
+                missing_profiles.append(f"{entry['name']} ({weight}, id {entry['wrestler_id']})")
+                continue
+            all_candidates.append(compute_stats_for_candidate(entry, weight, profile))
 
-        neighbor_weights = [weight]
-        if idx > 0:
-            neighbor_weights.append(numeric_weights[idx - 1])
-        if idx < len(numeric_weights) - 1:
-            neighbor_weights.append(numeric_weights[idx + 1])
+    if missing_profiles:
+        print(f"Warning: {len(missing_profiles)} candidate(s) had no profile file, skipped:")
+        for m in missing_profiles:
+            print(f"  - {m}")
 
-        ranked_ids: Set[str] = set()
-        top10_ids: Set[str] = set()
-        for w in neighbor_weights:
-            ranked_ids.update(top33_ids_by_weight.get(w, set()))
-            top10_ids.update(top10_ids_by_weight.get(w, set()))
-
-        # For primary Hodge candidate list, use only official starters.
-        stats_starters = compute_stats_for_weight(
-            weight,
-            wc_data,
-            rankings,
-            ranked_ids,
-            top10_ids,
-            global_rank_lookup,
-            top_n=args.top_n,
-            starters_only=True,
-        )
-        all_candidates.extend(stats_starters)
-
-        # For histograms: collect stats for all starters ranked in the top-33
-        starter_rankings_33: List[Dict] = []
-        if rankings:
-            for entry in rankings:
-                if not entry.get("is_starter", False):
-                    continue
-                wid = entry.get("wrestler_id")
-                rank = entry.get("rank")
-                if not wid or rank is None:
-                    continue
-                try:
-                    r = int(rank)
-                except (TypeError, ValueError):
-                    continue
-                if r <= 33:
-                    starter_rankings_33.append(entry)
-
-        if starter_rankings_33:
-            hist_stats = compute_stats_for_weight(
-                weight,
-                wc_data,
-                starter_rankings_33,
-                ranked_ids,
-                top10_ids,
-                global_rank_lookup,
-                top_n=len(starter_rankings_33),
-                starters_only=True,
-            )
-            all_ranked_for_hist.extend(hist_stats)
-
-    # Apply loss and match-count filters (pre-filtering before eligibility check)
-    # Note: Eligibility gate is checked AFTER scoring, so we don't filter here
-    # based on losses == 0. The eligibility function will handle that.
     filtered_candidates: List[HodgeStats] = [
-        s
-        for s in all_candidates
-        if s.total_matches >= args.minmatch
+        s for s in all_candidates if s.total_matches >= args.minmatch
     ]
 
-    # --- Compute numeric Hodge scores (NEW SPEC: no weight-class rank in score) ---
+    # --- Compute numeric Hodge scores (unchanged formula) ---
 
     def compute_s_rec(wins: int, losses: int) -> tuple[float, dict]:
-        """Compute record score and return (score, raw_data)."""
         total = wins + losses
-        raw = {
-            "wins": wins,
-            "losses": losses,
-            "win_pct": wins / total if total > 0 else 0.0
-        }
+        raw = {"wins": wins, "losses": losses, "win_pct": wins / total if total > 0 else 0.0}
         if total <= 0:
             return (0.0, raw)
         win_pct = wins / total
@@ -503,12 +336,7 @@ def main() -> None:
         return 0.0
 
     def compute_s_qual(ranks: List[int], ranked_wins: int, top10_wins: int) -> tuple[float, dict]:
-        """Compute quality score and return (score, raw_data)."""
-        raw = {
-            "ranked_wins": ranked_wins,
-            "top10_wins": top10_wins,
-            "raw_quality": 0.0
-        }
+        raw = {"ranked_wins": ranked_wins, "top10_wins": top10_wins, "raw_quality": 0.0}
         if not ranks:
             return (0.0, raw)
         raw_quality = sum(value_for_rank(r) for r in ranks)
@@ -524,39 +352,22 @@ def main() -> None:
         unranked_tp_sum: float,
         unranked_matches: int,
     ) -> tuple[float, dict]:
-        """
-        Compute S_DOM and return (score, raw_data).
-
-        - Use team-points per match (DEC=3, MD=4, TF=5, PIN=6)
-          weighted by opponent quality on a Top-50 scale.
-        - Map weighted average team points in [3.0, 6.0] to [0, 100].
-        - Optionally apply a small penalty for weak dominance vs unranked
-          opponents (avg team points < 3.2).
-        """
         raw = {"avg_team_points": 0.0}
         if weighted_tp_den <= 0.0:
             return (0.0, raw)
-
-        # Weighted average dominance across all opponents.
         avg_tp_weighted = weighted_tp_num / weighted_tp_den
         raw["avg_team_points"] = avg_tp_weighted
-        
         if avg_tp_weighted <= 3.0:
             return (0.0, raw)
-
         s_dom = min(100.0, (avg_tp_weighted - 3.0) / 3.0 * 100.0)
-
-        # Optional weak-opponent penalty based on unranked dominance only.
         if unranked_matches > 0:
             avg_tp_unranked = unranked_tp_sum / float(unranked_matches)
             if avg_tp_unranked < 3.2:
                 penalty = min(10.0, (3.2 - avg_tp_unranked) * 10.0)
                 s_dom = max(0.0, s_dom - penalty)
-
         return (s_dom, raw)
 
     def compute_s_pins(pins: int, wins: int) -> tuple[float, dict]:
-        """Compute pin score and return (score, raw_data)."""
         raw = {"pin_pct": 0.0}
         if wins <= 0 or pins <= 0:
             return (0.0, raw)
@@ -569,12 +380,10 @@ def main() -> None:
         return ((pin_pct - 0.10) / 0.50 * 100.0, raw)
 
     def check_eligibility(s: HodgeStats, s_qual: float) -> tuple[bool, Optional[str]]:
-        """Check eligibility gate and return (eligible, reason)."""
         if s.weight_rank > 3:
             return (False, f"Weight class rank {s.weight_rank} > 3")
         if s.total_matches < 5:
             return (False, f"Matches {s.total_matches} < 5")
-        # Allow 1 loss OR ≥90% win rate
         win_pct = s.win_pct if s.total_matches > 0 else 0.0
         if s.losses > 1 and win_pct < 0.90:
             return (False, f"Has {s.losses} loss(es) and win% {win_pct:.1%} < 90%")
@@ -582,118 +391,49 @@ def main() -> None:
             return (False, f"Ranked wins {s.ranked_wins} < 1 and quality score {s_qual:.1f} < 20")
         return (True, None)
 
-    # NEW WEIGHTS (no weight-class rank)
     W_REC = 0.30
     W_QUAL = 0.30
     W_DOM = 0.25
     W_PINS = 0.15
 
     for s in filtered_candidates:
-        # Compute component scores with raw data
         s_rec_score, rec_raw = compute_s_rec(s.wins, s.losses)
         s_qual_score, qual_raw = compute_s_qual(s.ranked_win_ranks, s.ranked_wins, s.top10_wins)
         s_dom_score, dom_raw = compute_s_dom(
-            s.dom_weighted_tp_num,
-            s.dom_weighted_tp_den,
-            s.dom_unranked_tp_sum,
-            s.dom_unranked_matches,
+            s.dom_weighted_tp_num, s.dom_weighted_tp_den, s.dom_unranked_tp_sum, s.dom_unranked_matches
         )
         s_pins_score, pins_raw = compute_s_pins(s.pins, s.wins)
-        
-        # Store component data
+
         s.component_data = {
-            "record": {"raw": rec_raw, "score": s_rec_score},
-            "quality": {"raw": qual_raw, "score": s_qual_score},
-            "dominance": {"raw": dom_raw, "score": s_dom_score},
-            "pins": {"raw": pins_raw, "score": s_pins_score},
+            "record": {"raw": rec_raw, "score": s_rec_score, "weight": W_REC, "contribution": W_REC * s_rec_score},
+            "quality": {"raw": qual_raw, "score": s_qual_score, "weight": W_QUAL, "contribution": W_QUAL * s_qual_score},
+            "dominance": {"raw": dom_raw, "score": s_dom_score, "weight": W_DOM, "contribution": W_DOM * s_dom_score},
+            "pins": {"raw": pins_raw, "score": s_pins_score, "weight": W_PINS, "contribution": W_PINS * s_pins_score},
         }
-        
-        # Compute weighted contributions
-        s.component_data["record"]["weight"] = W_REC
-        s.component_data["record"]["contribution"] = W_REC * s_rec_score
-        s.component_data["quality"]["weight"] = W_QUAL
-        s.component_data["quality"]["contribution"] = W_QUAL * s_qual_score
-        s.component_data["dominance"]["weight"] = W_DOM
-        s.component_data["dominance"]["contribution"] = W_DOM * s_dom_score
-        s.component_data["pins"]["weight"] = W_PINS
-        s.component_data["pins"]["contribution"] = W_PINS * s_pins_score
-        
-        # Compute Hodge Score (no weight-class rank)
+
         s.hodge_score = (
-            W_REC * s_rec_score
-            + W_QUAL * s_qual_score
-            + W_DOM * s_dom_score
-            + W_PINS * s_pins_score
+            W_REC * s_rec_score + W_QUAL * s_qual_score + W_DOM * s_dom_score + W_PINS * s_pins_score
         )
-        
-        # Check eligibility
         s.eligible, s.eligibility_reason = check_eligibility(s, s_qual_score)
 
-    def green_scale01(t: float) -> str:
-        """
-        Map t in [0,1] to a light-to-dark green hex color.
-        t=0 -> very light green, t=1 -> dark green.
-        """
-        t = max(0.0, min(1.0, t))
-        # Light and dark green RGB anchors
-        light = (230, 244, 234)  # #e6f4ea
-        dark = (21, 87, 36)      # #155724
-        r = int(light[0] + (dark[0] - light[0]) * t)
-        g = int(light[1] + (dark[1] - light[1]) * t)
-        b = int(light[2] + (dark[2] - light[2]) * t)
-        return f"#{r:02x}{g:02x}{b:02x}"
-
-    # Sort candidates: eligible first, then by Hodge score descending
-    scored_candidates = sorted(
-        filtered_candidates, key=lambda s: (-s.eligible, -s.hodge_score)
-    )
-
-    # --- Report 1: summary view (sorted by HodgeScore) ---
+    scored_candidates = sorted(filtered_candidates, key=lambda s: (-s.eligible, -s.hodge_score))
 
     print(
         f"\nHodge Trophy candidate metrics for season {season} "
-        f"(top {args.top_n} per weight, max losses={args.maxloss}, "
-        f"min matches={args.minmatch}, "
-        f"sorted by HodgeScore):\n"
+        f"(top {args.top_n} per weight, min matches={args.minmatch}, sorted by HodgeScore):\n"
     )
     header = (
         f"{'#':>3}  {'Name':<25} {'Team':<20} {'Wt':>4}  "
-        f"{'W-L':>7}  {'Win%':>6}  {'Bonus%':>7}  {'Fall%':>6}  "
-        f"{'RkW':>4}  {'Top10W':>6}  {'RkBon%':>7}"
+        f"{'W-L':>7}  {'Score':>7}  {'Elig':>5}  {'Win%':>6}  {'Bonus%':>7}  {'Fall%':>6}"
     )
     print(header)
     print("-" * len(header))
-
     for idx, s in enumerate(scored_candidates, start=1):
         wl = f"{s.wins}-{s.losses}"
         print(
             f"{idx:>3}  {s.name:<25.25} {s.team:<20.20} {s.weight_class:>4}  "
-            f"{wl:>7}  {s.win_pct:6.3f}  {s.bonus_pct:7.3f}  {s.fall_pct:6.3f}  "
-            f"{s.ranked_wins:4d}  {s.top10_wins:6d}  {s.ranked_bonus_pct:7.3f}"
-        )
-
-    # --- Report 2: detailed Hodge formula scores (score-based sort) ---
-
-    print(
-        f"\nDetailed Hodge formula scores for season {season} "
-        f"(same candidate set, sorted by HodgeScore):\n"
-    )
-    detail_header = (
-        f"{'#':>3}  {'Name':<25} {'Team':<20} {'Wt':>4}  "
-        f"{'W-L':>7}  "
-        f"{'Score':>7}  {'WtCl':>4}  {'Qual':>7}  {'Dom':>7}  {'Pin%':>7}"
-    )
-    print(detail_header)
-    print("-" * len(detail_header))
-
-    for idx, s in enumerate(scored_candidates, start=1):
-        wl = f"{s.wins}-{s.losses}"
-        pin_pct_display = s.fall_pct * 100.0
-        print(
-            f"{idx:>3}  {s.name:<25.25} {s.team:<20.20} {s.weight_class:>4}  "
-            f"{wl:>7}  "
-            f"{s.hodge_score:7.2f}  {s.weight_rank:4d}  {s.s_qual:7.1f}  "
-            f"{s.s_dom:7.1f}  {pin_pct_display:7.1f}"
+            f"{wl:>7}  {s.hodge_score:7.2f}  {str(s.eligible):>5}  "
+            f"{s.win_pct:6.3f}  {s.bonus_pct:7.3f}  {s.fall_pct:6.3f}"
         )
 
     # --- Generate JSON report ---
@@ -703,59 +443,55 @@ def main() -> None:
 
     generated_at = datetime.now(timezone.utc).isoformat()
 
-    # Build JSON structure with new format
     rows = []
     for idx, s in enumerate(scored_candidates, start=1):
-        row = {
-            "rank": idx,
-            "wrestler_id": s.wrestler_id,
-            "name": s.name,
-            "team": s.team,
-            "weight": int(s.weight_class) if s.weight_class.isdigit() else s.weight_class,
-            "weight_rank": s.weight_rank,
-            "eligible": s.eligible,
-            "eligibility_reason": s.eligibility_reason,
-            "hodge_score": round(s.hodge_score, 2),
-            "components": {
-                "record": {
-                    "raw": {
-                        "wins": s.component_data["record"]["raw"]["wins"],
-                        "losses": s.component_data["record"]["raw"]["losses"],
-                        "win_pct": round(s.component_data["record"]["raw"]["win_pct"], 3),
+        rows.append(
+            {
+                "rank": idx,
+                "wrestler_id": s.wrestler_id,
+                "name": s.name,
+                "team": s.team,
+                "weight": int(s.weight_class) if s.weight_class.isdigit() else s.weight_class,
+                "weight_rank": s.weight_rank,
+                "eligible": s.eligible,
+                "eligibility_reason": s.eligibility_reason,
+                "hodge_score": round(s.hodge_score, 2),
+                "components": {
+                    "record": {
+                        "raw": {
+                            "wins": s.component_data["record"]["raw"]["wins"],
+                            "losses": s.component_data["record"]["raw"]["losses"],
+                            "win_pct": round(s.component_data["record"]["raw"]["win_pct"], 3),
+                        },
+                        "score": round(s.component_data["record"]["score"], 1),
+                        "weight": s.component_data["record"]["weight"],
+                        "contribution": round(s.component_data["record"]["contribution"], 2),
                     },
-                    "score": round(s.component_data["record"]["score"], 1),
-                    "weight": s.component_data["record"]["weight"],
-                    "contribution": round(s.component_data["record"]["contribution"], 2),
-                },
-                "quality": {
-                    "raw": {
-                        "ranked_wins": s.component_data["quality"]["raw"]["ranked_wins"],
-                        "top10_wins": s.component_data["quality"]["raw"]["top10_wins"],
-                        "raw_quality": round(s.component_data["quality"]["raw"]["raw_quality"], 1),
+                    "quality": {
+                        "raw": {
+                            "ranked_wins": s.component_data["quality"]["raw"]["ranked_wins"],
+                            "top10_wins": s.component_data["quality"]["raw"]["top10_wins"],
+                            "raw_quality": round(s.component_data["quality"]["raw"]["raw_quality"], 1),
+                        },
+                        "score": round(s.component_data["quality"]["score"], 1),
+                        "weight": s.component_data["quality"]["weight"],
+                        "contribution": round(s.component_data["quality"]["contribution"], 2),
                     },
-                    "score": round(s.component_data["quality"]["score"], 1),
-                    "weight": s.component_data["quality"]["weight"],
-                    "contribution": round(s.component_data["quality"]["contribution"], 2),
-                },
-                "dominance": {
-                    "raw": {
-                        "avg_team_points": round(s.component_data["dominance"]["raw"]["avg_team_points"], 2),
+                    "dominance": {
+                        "raw": {"avg_team_points": round(s.component_data["dominance"]["raw"]["avg_team_points"], 2)},
+                        "score": round(s.component_data["dominance"]["score"], 1),
+                        "weight": s.component_data["dominance"]["weight"],
+                        "contribution": round(s.component_data["dominance"]["contribution"], 2),
                     },
-                    "score": round(s.component_data["dominance"]["score"], 1),
-                    "weight": s.component_data["dominance"]["weight"],
-                    "contribution": round(s.component_data["dominance"]["contribution"], 2),
-                },
-                "pins": {
-                    "raw": {
-                        "pin_pct": round(s.component_data["pins"]["raw"]["pin_pct"], 3),
+                    "pins": {
+                        "raw": {"pin_pct": round(s.component_data["pins"]["raw"]["pin_pct"], 3)},
+                        "score": round(s.component_data["pins"]["score"], 1),
+                        "weight": s.component_data["pins"]["weight"],
+                        "contribution": round(s.component_data["pins"]["contribution"], 2),
                     },
-                    "score": round(s.component_data["pins"]["score"], 1),
-                    "weight": s.component_data["pins"]["weight"],
-                    "contribution": round(s.component_data["pins"]["contribution"], 2),
                 },
             }
-        }
-        rows.append(row)
+        )
 
     json_data = {
         "season": season,
@@ -765,7 +501,7 @@ def main() -> None:
             "Eligibility determines who appears on the Hodge Watch. "
             "Weight-class rank influences eligibility — not scoring."
         ),
-        "rows": rows
+        "rows": rows,
     }
 
     with json_path.open("w", encoding="utf-8") as f:
@@ -776,5 +512,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
-

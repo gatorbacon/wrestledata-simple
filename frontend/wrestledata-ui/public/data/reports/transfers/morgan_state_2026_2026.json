@@ -1,0 +1,49 @@
+{
+  "query": {
+    "team_slug": "morgan_state",
+    "team_name": "Morgan State",
+    "start_year": 2026,
+    "end_year": 2026
+  },
+  "wrestlers": [
+    {
+      "name": "Eugene Harney",
+      "wrestler_id": "34977466132",
+      "weight_class": 149,
+      "photo_url": "https://morganstatebears.com/images/2025/10/20/HARNEY_Eugene.jpg",
+      "direction": "transfer_in",
+      "first_query_year": 2026,
+      "last_query_year": 2026,
+      "school_path": [
+        "Campbell",
+        "Morgan State"
+      ],
+      "seasons": [
+        {
+          "year": 2025,
+          "wrestler_id": "29672756132",
+          "team": "Campbell",
+          "team_slug": "campbell",
+          "team_abbr": "CAMP",
+          "is_query_team": false,
+          "dpg": -0.63,
+          "matches": 4,
+          "rank": 165,
+          "record": "2-3"
+        },
+        {
+          "year": 2026,
+          "wrestler_id": "34977466132",
+          "team": "Morgan State",
+          "team_slug": "morgan_state",
+          "team_abbr": "MSC",
+          "is_query_team": true,
+          "dpg": 2.57,
+          "matches": 36,
+          "rank": 27,
+          "record": "29-6"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "query": {
+    "team_slug": "bloomsburg",
+    "team_name": "Bloomsburg",
+    "start_year": 2023,
+    "end_year": 2023
+  },
+  "wrestlers": [
+    {
+      "name": "Cole Rhone",
+      "wrestler_id": "20135189132",
+      "weight_class": 133,
+      "photo_url": "https://bloomsburgathletics.com/images/2022/11/4/_0002_Rhone-Cole.jpg",
+      "direction": "transfer_in",
+      "first_query_year": 2021,
+      "last_query_year": 2023,
+      "school_path": [
+        "Virginia Tech",
+        "Bloomsburg"
+      ],
+      "seasons": [
+        {
+          "year": 2020,
+          "wrestler_id": "10494583132",
+          "team": "Virginia Tech",
+          "team_slug": "virginia_tech",
+          "team_abbr": "VT",
+          "is_query_team": false,
+          "dpg": 0.35,
+          "matches": 12,
+          "rank": 160,
+          "record": "4-6"
+        },
+        {
+          "year": 2021,
+          "wrestler_id": "14867373132",
+          "team": "Bloomsburg",
+          "team_slug": "bloomsburg",
+          "team_abbr": "BLOO",
+          "is_query_team": true,
+          "dpg": -0.04,
+          "matches": 10,
+          "rank": 32,
+          "record": "6-4"
+        },
+        {
+          "year": 2022,
+          "wrestler_id": "16698712132",
+          "team": "Bloomsburg",
+          "team_slug": "bloomsburg",
+          "team_abbr": "BLOO",
+          "is_query_team": true,
+          "dpg": 0.97,
+          "matches": 22,
+          "rank": 42,
+          "record": "13-7"
+        },
+        {
+          "year": 2023,
+          "wrestler_id": "20135189132",
+          "team": "Bloomsburg",
+          "team_slug": "bloomsburg",
+          "team_abbr": "BLOO",
+          "is_query_team": true,
+          "dpg": 0.74,
+          "matches": 23,
+          "rank": 39,
+          "record": "13-9"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "query": {
+    "team_slug": "chattanooga",
+    "team_name": "Chattanooga",
+    "start_year": 2014,
+    "end_year": 2014
+  },
+  "wrestlers": [
+    {
+      "name": "Dawson Peck",
+      "wrestler_id": "7928736009",
+      "weight_class": 285,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fumterps.com%2Fimages%2F2014%2F10%2F22%2FXKOXHJHKYNZJPAT.20141022224008.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2014,
+      "last_query_year": 2014,
+      "school_path": [
+        "Chattanooga",
+        "Maryland"
+      ],
+      "seasons": [
+        {
+          "year": 2014,
+          "wrestler_id": "4629880009",
+          "team": "Chattanooga",
+          "team_slug": "chattanooga",
+          "team_abbr": "CHAT",
+          "is_query_team": true,
+          "dpg": 1.68,
+          "matches": 28,
+          "rank": 32,
+          "record": "21-7"
+        },
+        {
+          "year": 2015,
+          "wrestler_id": "4783224009",
+          "team": "Maryland",
+          "team_slug": "maryland",
+          "team_abbr": "MD",
+          "is_query_team": false,
+          "dpg": 1.18,
+          "matches": 15,
+          "rank": 38,
+          "record": "10-6"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "7928736009",
+          "team": "Maryland",
+          "team_slug": "maryland",
+          "team_abbr": "MD",
+          "is_query_team": false,
+          "dpg": 1.29,
+          "matches": 19,
+          "rank": 40,
+          "record": "12-10"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "query": {
+    "team_slug": "minnesota",
+    "team_name": "Minnesota",
+    "start_year": 2012,
+    "end_year": 2012
+  },
+  "wrestlers": [
+    {
+      "name": "Bart Reiter",
+      "wrestler_id": "4498276009",
+      "weight_class": 149,
+      "photo_url": null,
+      "direction": "transfer_out",
+      "first_query_year": 2012,
+      "last_query_year": 2012,
+      "school_path": [
+        "Minnesota",
+        "Northern Iowa"
+      ],
+      "seasons": [
+        {
+          "year": 2012,
+          "wrestler_id": "4452305009",
+          "team": "Minnesota",
+          "team_slug": "minnesota",
+          "team_abbr": "MINN",
+          "is_query_team": true,
+          "dpg": -2.19,
+          "matches": 1,
+          "rank": 185,
+          "record": "0-1"
+        },
+        {
+          "year": 2013,
+          "wrestler_id": "4498276009",
+          "team": "Northern Iowa",
+          "team_slug": "northern_iowa",
+          "team_abbr": "UNI",
+          "is_query_team": false,
+          "dpg": -0.21,
+          "matches": 19,
+          "rank": 91,
+          "record": "8-9"
+        }
+      ]
+    },
+    {
+      "name": "Brenton Beard",
+      "wrestler_id": "4494449009",
+      "weight_class": 133,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fbroncosports.com%2Fimages%2F2018%2F5%2F9%2F8637864.jpeg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2012,
+      "last_query_year": 2012,
+      "school_path": [
+        "Minnesota",
+        "Boise State"
+      ],
+      "seasons": [
+        {
+          "year": 2012,
+          "wrestler_id": "4452283009",
+          "team": "Minnesota",
+          "team_slug": "minnesota",
+          "team_abbr": "MINN",
+          "is_query_team": true,
+          "dpg": -2.9,
+          "matches": 4,
+          "rank": 185,
+          "record": "1-3"
+        },
+        {
+          "year": 2013,
+          "wrestler_id": "4494449009",
+          "team": "Boise State",
+          "team_slug": "boise_state",
+          "team_abbr": "BOIS",
+          "is_query_team": false,
+          "dpg": 1.94,
+          "matches": 1,
+          "rank": 145,
+          "record": "1-0"
+        }
+      ]
+    },
+    {
+      "name": "Steven Keogh",
+      "wrestler_id": "4784215009",
+      "weight_class": 165,
+      "photo_url": null,
+      "direction": "transfer_out",
+      "first_query_year": 2013,
+      "last_query_year": 2013,
+      "school_path": [
+        "Minnesota",
+        "North Dakota State University"
+      ],
+      "seasons": [
+        {
+          "year": 2013,
+          "wrestler_id": "4497505009",
+          "team": "Minnesota",
+          "team_slug": "minnesota",
+          "team_abbr": "MINN",
+          "is_query_team": true,
+          "dpg": 0.19,
+          "matches": 11,
+          "rank": 94,
+          "record": "5-5"
+        },
+        {
+          "year": 2015,
+          "wrestler_id": "4784215009",
+          "team": "North Dakota State University",
+          "team_slug": "north_dakota_state_university",
+          "team_abbr": "NORT",
+          "is_query_team": false,
+          "dpg": -2.21,
+          "matches": 31,
+          "rank": 149,
+          "record": "3-15"
+        }
+      ]
+    }
+  ]
+}

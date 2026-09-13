@@ -1,0 +1,73 @@
+{
+  "query": {
+    "team_slug": "wyoming",
+    "team_name": "Wyoming",
+    "start_year": 2017,
+    "end_year": 2017
+  },
+  "wrestlers": [
+    {
+      "name": "Bryce Meredith",
+      "wrestler_id": "11445137009",
+      "weight_class": 141,
+      "photo_url": "https://gowyo.com/images/2017/10/25/DSC_5276Meredith2_edit1.jpg?width=96&height=96&mode=crop&anchor=topcenter",
+      "direction": "transfer_in",
+      "first_query_year": 2016,
+      "last_query_year": 2018,
+      "school_path": [
+        "North Carolina State",
+        "Wyoming"
+      ],
+      "seasons": [
+        {
+          "year": 2015,
+          "wrestler_id": "1063076",
+          "team": "North Carolina State",
+          "team_slug": "north_carolina_state",
+          "team_abbr": "NORT",
+          "is_query_team": false,
+          "dpg": 1.19,
+          "matches": 20,
+          "rank": 54,
+          "record": "12-7"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "416435071",
+          "team": "Wyoming",
+          "team_slug": "wyoming",
+          "team_abbr": "WYO",
+          "is_query_team": true,
+          "dpg": 3.45,
+          "matches": 32,
+          "rank": 2,
+          "record": "25-4"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "9725375009",
+          "team": "Wyoming",
+          "team_slug": "wyoming",
+          "team_abbr": "WYO",
+          "is_query_team": true,
+          "dpg": 3.24,
+          "matches": 33,
+          "rank": 4,
+          "record": "24-7"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11445137009",
+          "team": "Wyoming",
+          "team_slug": "wyoming",
+          "team_abbr": "WYO",
+          "is_query_team": true,
+          "dpg": 4.65,
+          "matches": 36,
+          "rank": 2,
+          "record": "32-2"
+        }
+      ]
+    }
+  ]
+}

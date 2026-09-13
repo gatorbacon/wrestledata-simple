@@ -1,0 +1,85 @@
+{
+  "query": {
+    "team_slug": "lehigh",
+    "team_name": "Lehigh",
+    "start_year": 2014,
+    "end_year": 2014
+  },
+  "wrestlers": [
+    {
+      "name": "Brian Brill",
+      "wrestler_id": "800344071",
+      "weight_class": 184,
+      "photo_url": null,
+      "direction": "transfer_out",
+      "first_query_year": 2013,
+      "last_query_year": 2014,
+      "school_path": [
+        "Lehigh",
+        "Penn State"
+      ],
+      "seasons": [
+        {
+          "year": 2013,
+          "wrestler_id": "4496756009",
+          "team": "Lehigh",
+          "team_slug": "lehigh",
+          "team_abbr": "LEH",
+          "is_query_team": true,
+          "dpg": 0.83,
+          "matches": 10,
+          "rank": 69,
+          "record": "5-4"
+        },
+        {
+          "year": 2014,
+          "wrestler_id": "4631609009",
+          "team": "Lehigh",
+          "team_slug": "lehigh",
+          "team_abbr": "LEH",
+          "is_query_team": true,
+          "dpg": 1.08,
+          "matches": 24,
+          "rank": 55,
+          "record": "10-6"
+        },
+        {
+          "year": 2015,
+          "wrestler_id": "197774013",
+          "team": "Penn State",
+          "team_slug": "penn_state",
+          "team_abbr": "PSU",
+          "is_query_team": false,
+          "dpg": 0.18,
+          "matches": 3,
+          "rank": 54,
+          "record": "2-1"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "277266011",
+          "team": "Penn State",
+          "team_slug": "penn_state",
+          "team_abbr": "PSU",
+          "is_query_team": false,
+          "dpg": 2.04,
+          "matches": 18,
+          "rank": 43,
+          "record": "7-3"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "800344071",
+          "team": "Penn State",
+          "team_slug": "penn_state",
+          "team_abbr": "PSU",
+          "is_query_team": false,
+          "dpg": -0.47,
+          "matches": 4,
+          "rank": 42,
+          "record": "2-2"
+        }
+      ]
+    }
+  ]
+}

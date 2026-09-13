@@ -1,0 +1,61 @@
+{
+  "query": {
+    "team_slug": "rider",
+    "team_name": "Rider",
+    "start_year": 2012,
+    "end_year": 2012
+  },
+  "wrestlers": [
+    {
+      "name": "James Brundage",
+      "wrestler_id": "4628943009",
+      "weight_class": 165,
+      "photo_url": "https://thesundevils.com/imgproxy/oliUMEg23L3SX0ZCDF35EOaZh7AWQ8rESeuf2dbZCpY/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3RoZXN1bmRldmlscy1jb20tcHJvZC8yMDI1LzA1LzEzL3FrcUw4WGZVTXh5YUFKaDlYSFJMb3VxaUpSQmxDbzBjTjk2a25nYTkud2VicA.webp",
+      "direction": "transfer_out",
+      "first_query_year": 2012,
+      "last_query_year": 2013,
+      "school_path": [
+        "Rider",
+        "Arizona State"
+      ],
+      "seasons": [
+        {
+          "year": 2012,
+          "wrestler_id": "4453836009",
+          "team": "Rider",
+          "team_slug": "rider",
+          "team_abbr": "RID",
+          "is_query_team": true,
+          "dpg": 0.2,
+          "matches": 25,
+          "rank": 30,
+          "record": "13-11"
+        },
+        {
+          "year": 2013,
+          "wrestler_id": "4499094009",
+          "team": "Rider",
+          "team_slug": "rider",
+          "team_abbr": "RID",
+          "is_query_team": true,
+          "dpg": 1.16,
+          "matches": 34,
+          "rank": 42,
+          "record": "19-12"
+        },
+        {
+          "year": 2014,
+          "wrestler_id": "4628943009",
+          "team": "Arizona State",
+          "team_slug": "arizona_state",
+          "team_abbr": "ASU",
+          "is_query_team": false,
+          "dpg": -0.4,
+          "matches": 12,
+          "rank": 70,
+          "record": "3-7"
+        }
+      ]
+    }
+  ]
+}

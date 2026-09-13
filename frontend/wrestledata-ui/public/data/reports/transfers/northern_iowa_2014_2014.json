@@ -1,0 +1,49 @@
+{
+  "query": {
+    "team_slug": "northern_iowa",
+    "team_name": "Northern Iowa",
+    "start_year": 2014,
+    "end_year": 2014
+  },
+  "wrestlers": [
+    {
+      "name": "Bart Reiter",
+      "wrestler_id": "4498276009",
+      "weight_class": 149,
+      "photo_url": null,
+      "direction": "transfer_in",
+      "first_query_year": 2013,
+      "last_query_year": 2013,
+      "school_path": [
+        "Minnesota",
+        "Northern Iowa"
+      ],
+      "seasons": [
+        {
+          "year": 2012,
+          "wrestler_id": "4452305009",
+          "team": "Minnesota",
+          "team_slug": "minnesota",
+          "team_abbr": "MINN",
+          "is_query_team": false,
+          "dpg": -2.19,
+          "matches": 1,
+          "rank": 185,
+          "record": "0-1"
+        },
+        {
+          "year": 2013,
+          "wrestler_id": "4498276009",
+          "team": "Northern Iowa",
+          "team_slug": "northern_iowa",
+          "team_abbr": "UNI",
+          "is_query_team": true,
+          "dpg": -0.21,
+          "matches": 19,
+          "rank": 91,
+          "record": "8-9"
+        }
+      ]
+    }
+  ]
+}

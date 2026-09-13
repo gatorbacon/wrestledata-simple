@@ -1,0 +1,61 @@
+{
+  "query": {
+    "team_slug": "iowa_state",
+    "team_name": "Iowa State",
+    "start_year": 2014,
+    "end_year": 2014
+  },
+  "wrestlers": [
+    {
+      "name": "John Nicholson",
+      "wrestler_id": "4631230009",
+      "weight_class": 157,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fisuni.sidearmsports.com%2Fimages%2F2013%2F10%2F17%2FJGCPAUKHIVBSRCK.20131017164009.JPG&width=603&height=803&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2014,
+      "last_query_year": 2014,
+      "school_path": [
+        "Old Dominion",
+        "Iowa State"
+      ],
+      "seasons": [
+        {
+          "year": 2012,
+          "wrestler_id": "4453397009",
+          "team": "Old Dominion",
+          "team_slug": "old_dominion",
+          "team_abbr": "OLD ",
+          "is_query_team": false,
+          "dpg": 1.68,
+          "matches": 22,
+          "rank": 20,
+          "record": "14-6"
+        },
+        {
+          "year": 2013,
+          "wrestler_id": "4498615009",
+          "team": "Old Dominion",
+          "team_slug": "old_dominion",
+          "team_abbr": "OLD ",
+          "is_query_team": false,
+          "dpg": 0.12,
+          "matches": 15,
+          "rank": 38,
+          "record": "9-6"
+        },
+        {
+          "year": 2014,
+          "wrestler_id": "4631230009",
+          "team": "Iowa State",
+          "team_slug": "iowa_state",
+          "team_abbr": "ISU",
+          "is_query_team": true,
+          "dpg": -0.34,
+          "matches": 24,
+          "rank": 45,
+          "record": "8-16"
+        }
+      ]
+    }
+  ]
+}

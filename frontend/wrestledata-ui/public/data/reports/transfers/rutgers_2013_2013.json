@@ -1,0 +1,112 @@
+{
+  "query": {
+    "team_slug": "rutgers",
+    "team_name": "Rutgers",
+    "start_year": 2013,
+    "end_year": 2013
+  },
+  "wrestlers": [
+    {
+      "name": "Anthony Volpe",
+      "wrestler_id": "4631925009",
+      "weight_class": 165,
+      "photo_url": null,
+      "direction": "transfer_out",
+      "first_query_year": 2012,
+      "last_query_year": 2013,
+      "school_path": [
+        "Rutgers",
+        "Maryland"
+      ],
+      "seasons": [
+        {
+          "year": 2012,
+          "wrestler_id": "4453937009",
+          "team": "Rutgers",
+          "team_slug": "rutgers",
+          "team_abbr": "RUT",
+          "is_query_team": true,
+          "dpg": -1.72,
+          "matches": 10,
+          "rank": 233,
+          "record": "2-8"
+        },
+        {
+          "year": 2013,
+          "wrestler_id": "4499214009",
+          "team": "Rutgers",
+          "team_slug": "rutgers",
+          "team_abbr": "RUT",
+          "is_query_team": true,
+          "dpg": -2.95,
+          "matches": 24,
+          "rank": 151,
+          "record": "7-12"
+        },
+        {
+          "year": 2014,
+          "wrestler_id": "4631925009",
+          "team": "Maryland",
+          "team_slug": "maryland",
+          "team_abbr": "MD",
+          "is_query_team": false,
+          "dpg": -2.94,
+          "matches": 1,
+          "rank": 147,
+          "record": "0-1"
+        }
+      ]
+    },
+    {
+      "name": "Maverick Passaro",
+      "wrestler_id": "4784157009",
+      "weight_class": 133,
+      "photo_url": null,
+      "direction": "transfer_out",
+      "first_query_year": 2013,
+      "last_query_year": 2013,
+      "school_path": [
+        "Rutgers",
+        "Hofstra"
+      ],
+      "seasons": [
+        {
+          "year": 2013,
+          "wrestler_id": "4499209009",
+          "team": "Rutgers",
+          "team_slug": "rutgers",
+          "team_abbr": "RUT",
+          "is_query_team": true,
+          "dpg": -2.28,
+          "matches": 5,
+          "rank": 155,
+          "record": "1-2"
+        },
+        {
+          "year": 2014,
+          "wrestler_id": "4631059009",
+          "team": "Hofstra",
+          "team_slug": "hofstra",
+          "team_abbr": "HOF",
+          "is_query_team": false,
+          "dpg": -0.13,
+          "matches": 13,
+          "rank": 140,
+          "record": "5-4"
+        },
+        {
+          "year": 2015,
+          "wrestler_id": "4784157009",
+          "team": "Hofstra",
+          "team_slug": "hofstra",
+          "team_abbr": "HOF",
+          "is_query_team": false,
+          "dpg": -1.11,
+          "matches": 10,
+          "rank": 163,
+          "record": "3-6"
+        }
+      ]
+    }
+  ]
+}

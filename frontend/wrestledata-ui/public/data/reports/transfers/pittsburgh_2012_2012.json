@@ -1,0 +1,49 @@
+{
+  "query": {
+    "team_slug": "pittsburgh",
+    "team_name": "Pittsburgh",
+    "start_year": 2012,
+    "end_year": 2012
+  },
+  "wrestlers": [
+    {
+      "name": "Erik Galloway",
+      "wrestler_id": "4494658009",
+      "weight_class": 141,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fubbulls.com%2Fimages%2F2019%2F6%2F17%2Ferik_galloway_wrest_2012_13.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2012,
+      "last_query_year": 2012,
+      "school_path": [
+        "Pittsburgh",
+        "Buffalo"
+      ],
+      "seasons": [
+        {
+          "year": 2012,
+          "wrestler_id": "4453640009",
+          "team": "Pittsburgh",
+          "team_slug": "pittsburgh",
+          "team_abbr": "PITT",
+          "is_query_team": true,
+          "dpg": 0.38,
+          "matches": 3,
+          "rank": 64,
+          "record": "2-1"
+        },
+        {
+          "year": 2013,
+          "wrestler_id": "4494658009",
+          "team": "Buffalo",
+          "team_slug": "buffalo",
+          "team_abbr": "BUFF",
+          "is_query_team": false,
+          "dpg": 0.15,
+          "matches": 37,
+          "rank": 70,
+          "record": "13-11"
+        }
+      ]
+    }
+  ]
+}

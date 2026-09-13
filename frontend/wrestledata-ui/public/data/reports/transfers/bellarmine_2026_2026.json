@@ -1,0 +1,100 @@
+{
+  "query": {
+    "team_slug": "bellarmine",
+    "team_name": "Bellarmine",
+    "start_year": 2026,
+    "end_year": 2026
+  },
+  "wrestlers": [
+    {
+      "name": "Gavin Ricketts",
+      "wrestler_id": "34943915132",
+      "weight_class": 184,
+      "photo_url": "https://athletics.bellarmine.edu/images/2025/9/15/Ricketts_Gavin.png",
+      "direction": "transfer_in",
+      "first_query_year": 2026,
+      "last_query_year": 2026,
+      "school_path": [
+        "Cleveland State",
+        "Bellarmine"
+      ],
+      "seasons": [
+        {
+          "year": 2024,
+          "wrestler_id": "24591911132",
+          "team": "Cleveland State",
+          "team_slug": "cleveland_state",
+          "team_abbr": "CLEV",
+          "is_query_team": false,
+          "dpg": -2.94,
+          "matches": 12,
+          "rank": 252,
+          "record": "2-10"
+        },
+        {
+          "year": 2025,
+          "wrestler_id": "29685072132",
+          "team": "Cleveland State",
+          "team_slug": "cleveland_state",
+          "team_abbr": "CLEV",
+          "is_query_team": false,
+          "dpg": -2.28,
+          "matches": 28,
+          "rank": 163,
+          "record": "5-11"
+        },
+        {
+          "year": 2026,
+          "wrestler_id": "34943915132",
+          "team": "Bellarmine",
+          "team_slug": "bellarmine",
+          "team_abbr": "BU",
+          "is_query_team": true,
+          "dpg": -0.51,
+          "matches": 23,
+          "rank": 113,
+          "record": "11-11"
+        }
+      ]
+    },
+    {
+      "name": "Tyler Martinez",
+      "wrestler_id": "34943861132",
+      "weight_class": 174,
+      "photo_url": "https://athletics.bellarmine.edu/images/2025/9/15/Martinez_Tyler.png",
+      "direction": "transfer_in",
+      "first_query_year": 2026,
+      "last_query_year": 2026,
+      "school_path": [
+        "Northern Illinois",
+        "Bellarmine"
+      ],
+      "seasons": [
+        {
+          "year": 2024,
+          "wrestler_id": "24593642132",
+          "team": "Northern Illinois",
+          "team_slug": "northern_illinois",
+          "team_abbr": "NIU",
+          "is_query_team": false,
+          "dpg": -5.83,
+          "matches": 5,
+          "rank": 192,
+          "record": "0-4"
+        },
+        {
+          "year": 2026,
+          "wrestler_id": "34943861132",
+          "team": "Bellarmine",
+          "team_slug": "bellarmine",
+          "team_abbr": "BU",
+          "is_query_team": true,
+          "dpg": -3.5,
+          "matches": 14,
+          "rank": 217,
+          "record": "2-10"
+        }
+      ]
+    }
+  ]
+}

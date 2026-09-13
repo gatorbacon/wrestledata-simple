@@ -1,0 +1,736 @@
+{
+  "tournament": "ncaa",
+  "year": 2026,
+  "weight": 184,
+  "subject_name": "Max McEnelly",
+  "opponent_name": "Rocco Welsh",
+  "final_subject_score": 4,
+  "final_opponent_score": 3,
+  "match_length_sec": 420,
+  "period_starts": {
+    "1": 0,
+    "2": 180,
+    "3": 300,
+    "OT1": 420,
+    "OT2": 540,
+    "OT3": 570
+  },
+  "events": [
+    {
+      "event_index": 0,
+      "period": "1",
+      "elapsed_sec": 0,
+      "action": "match_start",
+      "subject_score": 0,
+      "opponent_score": 0,
+      "subject_position": "neutral",
+      "win_prob": 0.4743748738859561,
+      "scorer": null,
+      "score_points": 0
+    },
+    {
+      "event_index": 1,
+      "period": "1",
+      "elapsed_sec": 121.0,
+      "action": "takedown",
+      "subject_score": 3,
+      "opponent_score": 0,
+      "subject_position": "top",
+      "actor_is_subject": true,
+      "raw_text": "Takedown 3 (0:59)",
+      "win_prob": 0.7345668999946894,
+      "scorer": "Max McEnelly",
+      "score_points": 3
+    },
+    {
+      "event_index": 2,
+      "period": "1",
+      "elapsed_sec": 126.0,
+      "action": "escape",
+      "subject_score": 3,
+      "opponent_score": 1,
+      "subject_position": "neutral",
+      "actor_is_subject": false,
+      "raw_text": "Escape (0:54)",
+      "win_prob": 0.6470867184067616,
+      "scorer": "Rocco Welsh",
+      "score_points": 1
+    },
+    {
+      "event_index": 3,
+      "period": "choice_1",
+      "elapsed_sec": 180.0,
+      "action": "choice",
+      "subject_score": 3,
+      "opponent_score": 1,
+      "subject_position": "bottom",
+      "actor_is_subject": true,
+      "raw_text": "Bottom",
+      "win_prob": 0.6531913201908922,
+      "scorer": null,
+      "score_points": 0
+    },
+    {
+      "event_index": 4,
+      "period": "2",
+      "elapsed_sec": 191.0,
+      "action": "escape",
+      "subject_score": 4,
+      "opponent_score": 1,
+      "subject_position": "neutral",
+      "actor_is_subject": true,
+      "raw_text": "Escape (1:49)",
+      "win_prob": 0.7380502647227566,
+      "scorer": "Max McEnelly",
+      "score_points": 1
+    },
+    {
+      "event_index": 5,
+      "period": "choice_2",
+      "elapsed_sec": 300.0,
+      "action": "choice",
+      "subject_score": 4,
+      "opponent_score": 1,
+      "subject_position": "top",
+      "actor_is_subject": false,
+      "raw_text": "Bottom",
+      "win_prob": 0.8337975099290628,
+      "scorer": null,
+      "score_points": 0
+    },
+    {
+      "event_index": 6,
+      "period": "3",
+      "elapsed_sec": 304.0,
+      "action": "escape",
+      "subject_score": 4,
+      "opponent_score": 2,
+      "subject_position": "neutral",
+      "actor_is_subject": false,
+      "raw_text": "Escape (1:56)",
+      "win_prob": 0.735944922847657,
+      "scorer": "Rocco Welsh",
+      "score_points": 1
+    },
+    {
+      "event_index": 7,
+      "period": "3",
+      "elapsed_sec": 411.0,
+      "action": "stalling",
+      "subject_score": 4,
+      "opponent_score": 2,
+      "subject_position": "neutral",
+      "actor_is_subject": true,
+      "raw_text": "Stalling (0:09)",
+      "win_prob": 0.9083266641032455,
+      "scorer": null,
+      "score_points": 0
+    },
+    {
+      "event_index": 8,
+      "period": "3",
+      "elapsed_sec": 414.0,
+      "action": "stalling",
+      "subject_score": 4,
+      "opponent_score": 2,
+      "subject_position": "neutral",
+      "actor_is_subject": true,
+      "raw_text": "Stalling",
+      "win_prob": 0.9136584600984576,
+      "scorer": null,
+      "score_points": 0
+    },
+    {
+      "event_index": 9,
+      "period": "3",
+      "elapsed_sec": 417.0,
+      "action": "penalty",
+      "subject_score": 4,
+      "opponent_score": 3,
+      "subject_position": "neutral",
+      "actor_is_subject": false,
+      "raw_text": "Penalty 1",
+      "win_prob": 0.7201585159941076,
+      "scorer": "Rocco Welsh",
+      "score_points": 1
+    }
+  ],
+  "trace": [
+    {
+      "elapsed_sec": 0,
+      "win_prob": 0.4743748738859561
+    },
+    {
+      "elapsed_sec": 3,
+      "win_prob": 0.4742698482625392
+    },
+    {
+      "elapsed_sec": 6,
+      "win_prob": 0.47416482491560885
+    },
+    {
+      "elapsed_sec": 9,
+      "win_prob": 0.47405980385440727
+    },
+    {
+      "elapsed_sec": 12,
+      "win_prob": 0.4739547850881759
+    },
+    {
+      "elapsed_sec": 15,
+      "win_prob": 0.47384976862615563
+    },
+    {
+      "elapsed_sec": 18,
+      "win_prob": 0.47374475447758635
+    },
+    {
+      "elapsed_sec": 21,
+      "win_prob": 0.47363974265170694
+    },
+    {
+      "elapsed_sec": 24,
+      "win_prob": 0.4735347331577558
+    },
+    {
+      "elapsed_sec": 27,
+      "win_prob": 0.4734297260049705
+    },
+    {
+      "elapsed_sec": 30,
+      "win_prob": 0.4733247212025875
+    },
+    {
+      "elapsed_sec": 33,
+      "win_prob": 0.4732197187598426
+    },
+    {
+      "elapsed_sec": 36,
+      "win_prob": 0.4731147186859708
+    },
+    {
+      "elapsed_sec": 39,
+      "win_prob": 0.4730097209902063
+    },
+    {
+      "elapsed_sec": 42,
+      "win_prob": 0.4729047256817821
+    },
+    {
+      "elapsed_sec": 45,
+      "win_prob": 0.47279973276993087
+    },
+    {
+      "elapsed_sec": 48,
+      "win_prob": 0.47269474226388425
+    },
+    {
+      "elapsed_sec": 51,
+      "win_prob": 0.4725897541728727
+    },
+    {
+      "elapsed_sec": 54,
+      "win_prob": 0.47248476850612636
+    },
+    {
+      "elapsed_sec": 57,
+      "win_prob": 0.47237978527287416
+    },
+    {
+      "elapsed_sec": 60,
+      "win_prob": 0.47227480448234427
+    },
+    {
+      "elapsed_sec": 63,
+      "win_prob": 0.47216982614376396
+    },
+    {
+      "elapsed_sec": 66,
+      "win_prob": 0.4720648502663596
+    },
+    {
+      "elapsed_sec": 69,
+      "win_prob": 0.471959876859357
+    },
+    {
+      "elapsed_sec": 72,
+      "win_prob": 0.4718549059319806
+    },
+    {
+      "elapsed_sec": 75,
+      "win_prob": 0.47174993749345445
+    },
+    {
+      "elapsed_sec": 78,
+      "win_prob": 0.47164497155300134
+    },
+    {
+      "elapsed_sec": 81,
+      "win_prob": 0.47154000811984337
+    },
+    {
+      "elapsed_sec": 84,
+      "win_prob": 0.4714350472032016
+    },
+    {
+      "elapsed_sec": 87,
+      "win_prob": 0.4713300888122965
+    },
+    {
+      "elapsed_sec": 90,
+      "win_prob": 0.47122513295634755
+    },
+    {
+      "elapsed_sec": 93,
+      "win_prob": 0.4711201796445728
+    },
+    {
+      "elapsed_sec": 96,
+      "win_prob": 0.4710152288861904
+    },
+    {
+      "elapsed_sec": 99,
+      "win_prob": 0.47091028069041657
+    },
+    {
+      "elapsed_sec": 102,
+      "win_prob": 0.47080533506646743
+    },
+    {
+      "elapsed_sec": 105,
+      "win_prob": 0.4707003920235577
+    },
+    {
+      "elapsed_sec": 108,
+      "win_prob": 0.4705954515709013
+    },
+    {
+      "elapsed_sec": 111,
+      "win_prob": 0.4704905137177116
+    },
+    {
+      "elapsed_sec": 114,
+      "win_prob": 0.47038557847320056
+    },
+    {
+      "elapsed_sec": 117,
+      "win_prob": 0.4702806458465793
+    },
+    {
+      "elapsed_sec": 120,
+      "win_prob": 0.47017571584705814
+    },
+    {
+      "elapsed_sec": 121.0,
+      "win_prob": 0.7345668999946894
+    },
+    {
+      "elapsed_sec": 124.0,
+      "win_prob": 0.7365829861623238
+    },
+    {
+      "elapsed_sec": 126.0,
+      "win_prob": 0.6470867184067616
+    },
+    {
+      "elapsed_sec": 129.0,
+      "win_prob": 0.6471055714541406
+    },
+    {
+      "elapsed_sec": 132.0,
+      "win_prob": 0.6471064191897101
+    },
+    {
+      "elapsed_sec": 135.0,
+      "win_prob": 0.6470930045550685
+    },
+    {
+      "elapsed_sec": 138.0,
+      "win_prob": 0.6470690698088103
+    },
+    {
+      "elapsed_sec": 141.0,
+      "win_prob": 0.647038357124114
+    },
+    {
+      "elapsed_sec": 144.0,
+      "win_prob": 0.6470046090057359
+    },
+    {
+      "elapsed_sec": 147.0,
+      "win_prob": 0.6469715685263321
+    },
+    {
+      "elapsed_sec": 150.0,
+      "win_prob": 0.6469429793822331
+    },
+    {
+      "elapsed_sec": 153.0,
+      "win_prob": 0.6469225857688669
+    },
+    {
+      "elapsed_sec": 156.0,
+      "win_prob": 0.6469141320760167
+    },
+    {
+      "elapsed_sec": 159.0,
+      "win_prob": 0.6469213624029726
+    },
+    {
+      "elapsed_sec": 162.0,
+      "win_prob": 0.6469480198934008
+    },
+    {
+      "elapsed_sec": 165.0,
+      "win_prob": 0.646997845889432
+    },
+    {
+      "elapsed_sec": 168.0,
+      "win_prob": 0.6470745789040339
+    },
+    {
+      "elapsed_sec": 171.0,
+      "win_prob": 0.6471819534101756
+    },
+    {
+      "elapsed_sec": 174.0,
+      "win_prob": 0.6473236984446818
+    },
+    {
+      "elapsed_sec": 177.0,
+      "win_prob": 0.647503536023901
+    },
+    {
+      "elapsed_sec": 180.0,
+      "win_prob": 0.6531913201908922
+    },
+    {
+      "elapsed_sec": 183.0,
+      "win_prob": 0.6512387472178127
+    },
+    {
+      "elapsed_sec": 186.0,
+      "win_prob": 0.649330308208403
+    },
+    {
+      "elapsed_sec": 189.0,
+      "win_prob": 0.6474701652488978
+    },
+    {
+      "elapsed_sec": 191.0,
+      "win_prob": 0.7380502647227566
+    },
+    {
+      "elapsed_sec": 194.0,
+      "win_prob": 0.7386831791846413
+    },
+    {
+      "elapsed_sec": 197.0,
+      "win_prob": 0.7393949644430509
+    },
+    {
+      "elapsed_sec": 200.0,
+      "win_prob": 0.7401899238257365
+    },
+    {
+      "elapsed_sec": 203.0,
+      "win_prob": 0.7410722705942926
+    },
+    {
+      "elapsed_sec": 206.0,
+      "win_prob": 0.7420461172361441
+    },
+    {
+      "elapsed_sec": 209.0,
+      "win_prob": 0.7431154640929574
+    },
+    {
+      "elapsed_sec": 212.0,
+      "win_prob": 0.7442841873151587
+    },
+    {
+      "elapsed_sec": 215.0,
+      "win_prob": 0.7455560261338324
+    },
+    {
+      "elapsed_sec": 218.0,
+      "win_prob": 0.7469345694435675
+    },
+    {
+      "elapsed_sec": 221.0,
+      "win_prob": 0.7484232416930109
+    },
+    {
+      "elapsed_sec": 224.0,
+      "win_prob": 0.7500252880840367
+    },
+    {
+      "elapsed_sec": 227.0,
+      "win_prob": 0.7517437590857037
+    },
+    {
+      "elapsed_sec": 230.0,
+      "win_prob": 0.7535814942756728
+    },
+    {
+      "elapsed_sec": 233.0,
+      "win_prob": 0.755541105529597
+    },
+    {
+      "elapsed_sec": 236.0,
+      "win_prob": 0.7576249595883033
+    },
+    {
+      "elapsed_sec": 239.0,
+      "win_prob": 0.7598351600434646
+    },
+    {
+      "elapsed_sec": 242.0,
+      "win_prob": 0.7621735287949732
+    },
+    {
+      "elapsed_sec": 245.0,
+      "win_prob": 0.7646415870474871
+    },
+    {
+      "elapsed_sec": 248.0,
+      "win_prob": 0.7672405359295861
+    },
+    {
+      "elapsed_sec": 251.0,
+      "win_prob": 0.7699712368367256
+    },
+    {
+      "elapsed_sec": 254.0,
+      "win_prob": 0.7728341916186017
+    },
+    {
+      "elapsed_sec": 257.0,
+      "win_prob": 0.7758295227525671
+    },
+    {
+      "elapsed_sec": 260.0,
+      "win_prob": 0.7789569536671901
+    },
+    {
+      "elapsed_sec": 263.0,
+      "win_prob": 0.7822157894037093
+    },
+    {
+      "elapsed_sec": 266.0,
+      "win_prob": 0.7856048978276413
+    },
+    {
+      "elapsed_sec": 269.0,
+      "win_prob": 0.7891226916277974
+    },
+    {
+      "elapsed_sec": 272.0,
+      "win_prob": 0.79276711136491
+    },
+    {
+      "elapsed_sec": 275.0,
+      "win_prob": 0.7965356098563756
+    },
+    {
+      "elapsed_sec": 278.0,
+      "win_prob": 0.8004251382065803
+    },
+    {
+      "elapsed_sec": 281.0,
+      "win_prob": 0.8044321338130813
+    },
+    {
+      "elapsed_sec": 284.0,
+      "win_prob": 0.8085525106966699
+    },
+    {
+      "elapsed_sec": 287.0,
+      "win_prob": 0.8127816525170672
+    },
+    {
+      "elapsed_sec": 290.0,
+      "win_prob": 0.8171144086446458
+    },
+    {
+      "elapsed_sec": 293.0,
+      "win_prob": 0.8215450936610627
+    },
+    {
+      "elapsed_sec": 296.0,
+      "win_prob": 0.826067490656926
+    },
+    {
+      "elapsed_sec": 299.0,
+      "win_prob": 0.8306748586815645
+    },
+    {
+      "elapsed_sec": 300.0,
+      "win_prob": 0.8337975099290628
+    },
+    {
+      "elapsed_sec": 303.0,
+      "win_prob": 0.8397913787528064
+    },
+    {
+      "elapsed_sec": 304.0,
+      "win_prob": 0.735944922847657
+    },
+    {
+      "elapsed_sec": 307.0,
+      "win_prob": 0.7405378171927067
+    },
+    {
+      "elapsed_sec": 310.0,
+      "win_prob": 0.7452481911836424
+    },
+    {
+      "elapsed_sec": 313.0,
+      "win_prob": 0.7500725653212846
+    },
+    {
+      "elapsed_sec": 316.0,
+      "win_prob": 0.7550070321291735
+    },
+    {
+      "elapsed_sec": 319.0,
+      "win_prob": 0.7600472487551609
+    },
+    {
+      "elapsed_sec": 322.0,
+      "win_prob": 0.7651884316754924
+    },
+    {
+      "elapsed_sec": 325.0,
+      "win_prob": 0.7704253537747959
+    },
+    {
+      "elapsed_sec": 328.0,
+      "win_prob": 0.7757523440754067
+    },
+    {
+      "elapsed_sec": 331.0,
+      "win_prob": 0.7811632903845417
+    },
+    {
+      "elapsed_sec": 334.0,
+      "win_prob": 0.7866516451173651
+    },
+    {
+      "elapsed_sec": 337.0,
+      "win_prob": 0.7922104345374398
+    },
+    {
+      "elapsed_sec": 340.0,
+      "win_prob": 0.7978322716329252
+    },
+    {
+      "elapsed_sec": 343.0,
+      "win_prob": 0.8035093728168586
+    },
+    {
+      "elapsed_sec": 346.0,
+      "win_prob": 0.809233578602702
+    },
+    {
+      "elapsed_sec": 349.0,
+      "win_prob": 0.8149963783620499
+    },
+    {
+      "elapsed_sec": 352.0,
+      "win_prob": 0.8207889392201457
+    },
+    {
+      "elapsed_sec": 355.0,
+      "win_prob": 0.8266021390870686
+    },
+    {
+      "elapsed_sec": 358.0,
+      "win_prob": 0.8324266037587776
+    },
+    {
+      "elapsed_sec": 361.0,
+      "win_prob": 0.8382527479535942
+    },
+    {
+      "elapsed_sec": 364.0,
+      "win_prob": 0.8440708200773149
+    },
+    {
+      "elapsed_sec": 367.0,
+      "win_prob": 0.8498709504354627
+    },
+    {
+      "elapsed_sec": 370.0,
+      "win_prob": 0.8556432025358388
+    },
+    {
+      "elapsed_sec": 373.0,
+      "win_prob": 0.8613776270504457
+    },
+    {
+      "elapsed_sec": 376.0,
+      "win_prob": 0.8670643179349851
+    },
+    {
+      "elapsed_sec": 379.0,
+      "win_prob": 0.8726934701386392
+    },
+    {
+      "elapsed_sec": 382.0,
+      "win_prob": 0.8782554382788184
+    },
+    {
+      "elapsed_sec": 385.0,
+      "win_prob": 0.8837407956070584
+    },
+    {
+      "elapsed_sec": 388.0,
+      "win_prob": 0.8891403925552019
+    },
+    {
+      "elapsed_sec": 391.0,
+      "win_prob": 0.8944454141270489
+    },
+    {
+      "elapsed_sec": 394.0,
+      "win_prob": 0.899647435391196
+    },
+    {
+      "elapsed_sec": 397.0,
+      "win_prob": 0.9047384743367437
+    },
+    {
+      "elapsed_sec": 400.0,
+      "win_prob": 0.9097110413754832
+    },
+    {
+      "elapsed_sec": 403.0,
+      "win_prob": 0.9145581848120883
+    },
+    {
+      "elapsed_sec": 406.0,
+      "win_prob": 0.919273531657238
+    },
+    {
+      "elapsed_sec": 409.0,
+      "win_prob": 0.9238513232265045
+    },
+    {
+      "elapsed_sec": 411.0,
+      "win_prob": 0.9083266641032455
+    },
+    {
+      "elapsed_sec": 414.0,
+      "win_prob": 0.9136584600984576
+    },
+    {
+      "elapsed_sec": 417.0,
+      "win_prob": 0.7201585159941076
+    },
+    {
+      "elapsed_sec": 420.0,
+      "win_prob": 1.0
+    }
+  ]
+}

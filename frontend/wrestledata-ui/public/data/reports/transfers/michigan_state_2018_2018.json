@@ -1,0 +1,136 @@
+{
+  "query": {
+    "team_slug": "michigan_state",
+    "team_name": "Michigan State",
+    "start_year": 2018,
+    "end_year": 2018
+  },
+  "wrestlers": [
+    {
+      "name": "Austin Eicher",
+      "wrestler_id": "4625808132",
+      "weight_class": 141,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fmsuspartans.com%2Fimages%2F2018%2F10%2F4%2FAustin_Eicher.JPG&width=100&height=100&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2017,
+      "last_query_year": 2019,
+      "school_path": [
+        "Northern Illinois",
+        "Michigan State"
+      ],
+      "seasons": [
+        {
+          "year": 2015,
+          "wrestler_id": "506076",
+          "team": "Northern Illinois",
+          "team_slug": "northern_illinois",
+          "team_abbr": "NIU",
+          "is_query_team": false,
+          "dpg": -1.82,
+          "matches": 12,
+          "rank": 157,
+          "record": "4-7"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "415420076",
+          "team": "Northern Illinois",
+          "team_slug": "northern_illinois",
+          "team_abbr": "NIU",
+          "is_query_team": false,
+          "dpg": 0.71,
+          "matches": 31,
+          "rank": 29,
+          "record": "17-13"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "20271123",
+          "team": "Michigan State",
+          "team_slug": "michigan_state",
+          "team_abbr": "MSU",
+          "is_query_team": true,
+          "dpg": 0.26,
+          "matches": 36,
+          "rank": 27,
+          "record": "17-17"
+        },
+        {
+          "year": 2018,
+          "wrestler_id": "11412725009",
+          "team": "Michigan State",
+          "team_slug": "michigan_state",
+          "team_abbr": "MSU",
+          "is_query_team": true,
+          "dpg": -0.45,
+          "matches": 9,
+          "rank": 54,
+          "record": "4-5"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4625808132",
+          "team": "Michigan State",
+          "team_slug": "michigan_state",
+          "team_abbr": "MSU",
+          "is_query_team": true,
+          "dpg": 0.23,
+          "matches": 29,
+          "rank": 69,
+          "record": "14-15"
+        }
+      ]
+    },
+    {
+      "name": "Cole Nye",
+      "wrestler_id": "10495232132",
+      "weight_class": 285,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fpittsburghpanthers.com%2Fimages%2F2019%2F10%2F14%2FNye_Cole.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2018,
+      "last_query_year": 2018,
+      "school_path": [
+        "Michigan State",
+        "Pittsburgh"
+      ],
+      "seasons": [
+        {
+          "year": 2018,
+          "wrestler_id": "11412846009",
+          "team": "Michigan State",
+          "team_slug": "michigan_state",
+          "team_abbr": "MSU",
+          "is_query_team": true,
+          "dpg": -2.94,
+          "matches": 13,
+          "rank": 150,
+          "record": "3-7"
+        },
+        {
+          "year": 2019,
+          "wrestler_id": "4636373132",
+          "team": "Pittsburgh",
+          "team_slug": "pittsburgh",
+          "team_abbr": "PITT",
+          "is_query_team": false,
+          "dpg": 0.2,
+          "matches": 13,
+          "rank": 78,
+          "record": "10-4"
+        },
+        {
+          "year": 2020,
+          "wrestler_id": "10495232132",
+          "team": "Pittsburgh",
+          "team_slug": "pittsburgh",
+          "team_abbr": "PITT",
+          "is_query_team": false,
+          "dpg": -1.38,
+          "matches": 22,
+          "rank": 82,
+          "record": "8-8"
+        }
+      ]
+    }
+  ]
+}

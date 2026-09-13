@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Win Probability — 2026 NCAA Finals — MatSavant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Live win-probability charts for the 2026 NCAA Championship finals, recomputed after every scoring event by a model trained on score, clock, DPG, position, stalling, and riding time." />
+  <link rel="stylesheet" href="/styles.css?v=20260921" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+  <style>
+    .wp-intro { color: var(--muted); font-size: 0.9rem; line-height: 1.6; max-width: 82ch; margin: 0 0 1.5em; }
+    .wp-intro b { color: var(--text); font-weight: 600; }
+
+    .wp-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    @media (max-width: 880px) { .wp-grid { grid-template-columns: 1fr; } }
+
+    .wp-card { background: var(--panel); border: 1px solid var(--border); border-radius: var(--r-md); padding: 16px 18px 14px; }
+    .wp-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+    .wp-head h2 { font-size: 0.92rem; margin: 0; color: var(--text); }
+    .wp-head .wp-weight { font-size: 0.75rem; color: var(--muted-2); font-variant-numeric: tabular-nums; }
+    .wp-score { font-size: 0.78rem; color: var(--muted); margin: 0 0 10px; font-variant-numeric: tabular-nums; }
+    .wp-score b { color: var(--text); }
+
+    .wp-canvas-wrap { position: relative; overflow-x: auto; }
+    .wp-canvas-wrap svg { display: block; width: 100%; height: auto; min-width: 320px; }
+
+    /* Fixed readout row under the chart, not a floating tooltip -- a floating
+       box clips against the card edge near the top/right of the chart. */
+    .wp-readout {
+      display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 10px; padding: 8px 10px;
+      background: var(--panel-2); border-radius: var(--r-sm); font-size: 0.78rem;
+      color: var(--text); font-variant-numeric: tabular-nums; min-height: 1.4em;
+    }
+    .wp-ro-item { display: inline-flex; gap: 5px; }
+    .wp-ro-label { color: var(--muted-2); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.03em; align-self: center; }
+    .wp-ro-prob { font-weight: 700; margin-left: auto; }
+
+    .wp-legend { display: flex; gap: 14px; font-size: 0.7rem; color: var(--muted-2); margin-top: 8px; }
+    .wp-legend span { display: inline-flex; align-items: center; gap: 5px; }
+    .wp-legend i { width: 9px; height: 9px; border-radius: 2px; display: inline-block; }
+
+    .wp-method { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 0.78rem; line-height: 1.7; color: var(--muted-2); max-width: 88ch; }
+    .wp-method b { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <script src="/analytics.js?v=20260911"></script>
+  <script src="/header.js?v=20260908"></script>
+  <script src="/lab_stamp.js?v=20260910"></script>
+
+  <div class="page-container">
+    <header class="header">
+      <h1>Win probability, every 2026 NCAA final</h1>
+      <p class="header-explainer">
+        Live win probability for the eventual champion, recomputed continuously as the match clock runs and after every scoring event &mdash; not just at the final score. Hover or drag across any chart to scrub through the match.
+      </p>
+    </header>
+
+    <p class="wp-intro" id="wp-intro"></p>
+
+    <div class="wp-grid" id="wp-grid"></div>
+
+    <div class="wp-method" id="wp-method"></div>
+  </div>
+
+  <script src="/win_probability.js?v=20260914"></script>
+</body>
+</html>

@@ -19,7 +19,7 @@
   function renderBlocks(blocks) {
     return (blocks || [])
       .map(b => {
-        if (b.type === "p") return `<p>${escapeHtml(b.text)}</p>`;
+        if (b.type === "p") return `<p>${b.html != null ? b.html : escapeHtml(b.text)}</p>`;
         if (b.type === "img") {
           const caption = b.caption ? `<p class="note-img-caption">${escapeHtml(b.caption)}</p>` : "";
           return `<img src="${b.src}" alt="${escapeHtml(b.alt || "")}" loading="lazy" />${caption}`;

@@ -1,0 +1,124 @@
+{
+  "query": {
+    "team_slug": "chattanooga",
+    "team_name": "Chattanooga",
+    "start_year": 2015,
+    "end_year": 2015
+  },
+  "wrestlers": [
+    {
+      "name": "McCoy Newberg",
+      "wrestler_id": "416702071",
+      "weight_class": 184,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Futc.sidearmsports.com%2Fimages%2F2015%2F9%2F11%2FNewberg%2C%20McCoy.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2015,
+      "last_query_year": 2016,
+      "school_path": [
+        "Nebraska",
+        "Chattanooga"
+      ],
+      "seasons": [
+        {
+          "year": 2013,
+          "wrestler_id": "4497852009",
+          "team": "Nebraska",
+          "team_slug": "nebraska",
+          "team_abbr": "NEB",
+          "is_query_team": false,
+          "dpg": -3.06,
+          "matches": 5,
+          "rank": 141,
+          "record": "1-3"
+        },
+        {
+          "year": 2014,
+          "wrestler_id": "4632583009",
+          "team": "Nebraska",
+          "team_slug": "nebraska",
+          "team_abbr": "NEB",
+          "is_query_team": false,
+          "dpg": -0.33,
+          "matches": 14,
+          "rank": 91,
+          "record": "8-6"
+        },
+        {
+          "year": 2015,
+          "wrestler_id": "241013",
+          "team": "Chattanooga",
+          "team_slug": "chattanooga",
+          "team_abbr": "CHAT",
+          "is_query_team": true,
+          "dpg": 0.95,
+          "matches": 35,
+          "rank": 47,
+          "record": "15-9"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "416702071",
+          "team": "Chattanooga",
+          "team_slug": "chattanooga",
+          "team_abbr": "CHAT",
+          "is_query_team": true,
+          "dpg": -0.65,
+          "matches": 18,
+          "rank": 52,
+          "record": "7-7"
+        }
+      ]
+    },
+    {
+      "name": "Sean Boyle",
+      "wrestler_id": "231013",
+      "weight_class": 125,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Futc.sidearmsports.com%2Fimages%2F2014%2F10%2F7%2FSVIBOVGEJUMVHSP.20141007173102.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_in",
+      "first_query_year": 2015,
+      "last_query_year": 2015,
+      "school_path": [
+        "Michigan",
+        "Chattanooga"
+      ],
+      "seasons": [
+        {
+          "year": 2013,
+          "wrestler_id": "4497359009",
+          "team": "Michigan",
+          "team_slug": "michigan",
+          "team_abbr": "MICH",
+          "is_query_team": false,
+          "dpg": 0.97,
+          "matches": 38,
+          "rank": 18,
+          "record": "23-14"
+        },
+        {
+          "year": 2014,
+          "wrestler_id": "4632148009",
+          "team": "Michigan",
+          "team_slug": "michigan",
+          "team_abbr": "MICH",
+          "is_query_team": false,
+          "dpg": 1.76,
+          "matches": 21,
+          "rank": 33,
+          "record": "14-4"
+        },
+        {
+          "year": 2015,
+          "wrestler_id": "231013",
+          "team": "Chattanooga",
+          "team_slug": "chattanooga",
+          "team_abbr": "CHAT",
+          "is_query_team": true,
+          "dpg": 2.22,
+          "matches": 37,
+          "rank": 10,
+          "record": "30-7"
+        }
+      ]
+    }
+  ]
+}

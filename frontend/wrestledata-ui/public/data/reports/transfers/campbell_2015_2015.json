@@ -1,0 +1,85 @@
+{
+  "query": {
+    "team_slug": "campbell",
+    "team_name": "Campbell",
+    "start_year": 2015,
+    "end_year": 2015
+  },
+  "wrestlers": [
+    {
+      "name": "Nathan Kraisser",
+      "wrestler_id": "830119076",
+      "weight_class": 125,
+      "photo_url": "https://gocamels.com/images/2017/7/7/nkraisser.jpg",
+      "direction": "transfer_in",
+      "first_query_year": 2015,
+      "last_query_year": 2017,
+      "school_path": [
+        "North Carolina",
+        "Campbell"
+      ],
+      "seasons": [
+        {
+          "year": 2013,
+          "wrestler_id": "4498042009",
+          "team": "North Carolina",
+          "team_slug": "north_carolina",
+          "team_abbr": "UNC",
+          "is_query_team": false,
+          "dpg": 2.59,
+          "matches": 44,
+          "rank": 10,
+          "record": "33-8"
+        },
+        {
+          "year": 2014,
+          "wrestler_id": "4632784009",
+          "team": "North Carolina",
+          "team_slug": "north_carolina",
+          "team_abbr": "UNC",
+          "is_query_team": false,
+          "dpg": 1.9,
+          "matches": 31,
+          "rank": 20,
+          "record": "19-9"
+        },
+        {
+          "year": 2015,
+          "wrestler_id": "4815352009",
+          "team": "Campbell",
+          "team_slug": "campbell",
+          "team_abbr": "CAMP",
+          "is_query_team": true,
+          "dpg": 2.65,
+          "matches": 13,
+          "rank": 33,
+          "record": "10-2"
+        },
+        {
+          "year": 2016,
+          "wrestler_id": "277298011",
+          "team": "Campbell",
+          "team_slug": "campbell",
+          "team_abbr": "CAMP",
+          "is_query_team": true,
+          "dpg": 1.88,
+          "matches": 38,
+          "rank": 19,
+          "record": "30-9"
+        },
+        {
+          "year": 2017,
+          "wrestler_id": "830119076",
+          "team": "Campbell",
+          "team_slug": "campbell",
+          "team_abbr": "CAMP",
+          "is_query_team": true,
+          "dpg": 2.55,
+          "matches": 39,
+          "rank": 8,
+          "record": "29-10"
+        }
+      ]
+    }
+  ]
+}

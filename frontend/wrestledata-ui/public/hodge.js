@@ -1,359 +1,357 @@
 // ========================================
 // Hodge Trophy Watch Page
 // ========================================
+// Data source: /data/awards/hodge/{season}/hodge_{season}.json, built by
+// scripts/rankings/hodge_candidates.py off elo_ratings.json's
+// hybrid_rank_by_weight + each candidate's wrestler-profile match_list
+// (see docs/matsavant.md's "Hodge Trophy Candidates" section).
+// Visual language matches Team Race (leaderboards/xtp/teams.js): rank-badge
+// medals, team crest + school-color bars, single-expand rows.
+
+const HG_SEASON = "2026"; // 2027 data isn't available yet -- switch once it is
+const HG_SCORE_MAX = 100; // hodge_score is already on a 0-100 scale
+const HG_NAVY_FALLBACK = "#2c5c8f";
+
+let hodgeRows = [];
+let teamColors = {}; // slug -> { hex, stroke }
+let expandedKey = null; // wrestler_id (or name fallback), or null
 
 function safe(v, fn) {
   if (v === null || v === undefined || v === "") return "—";
   return fn ? fn(v) : v;
 }
 
-function resolveSeason() {
-  return "2026"; // Or make dynamic later
-}
-
 function teamNameToSlug(teamName) {
-  if (!teamName) return null;
-  return teamName.toLowerCase()
-    .replace(/[^a-z0-9]+/g, "_")
-    .replace(/^_+|_+$/g, "");
+  if (!teamName) return "";
+  let slug = teamName.toLowerCase();
+  slug = slug.replace(/\s+/g, "_");
+  slug = slug.replace(/[^\w_]/g, "");
+  slug = slug.replace(/_+/g, "_");
+  slug = slug.replace(/^_+|_+$/g, "");
+  return slug;
 }
 
-async function fetchJSON(url) {
-  const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error(`Failed to fetch ${url}: ${response.statusText}`);
-  }
-  return response.json();
+function teamAbbr(teamName) {
+  if (!teamName) return "";
+  const words = teamName.trim().split(/\s+/).filter(Boolean);
+  if (words.length === 0) return "";
+  if (words.length === 1) return words[0].slice(0, 3).toUpperCase();
+  return words.map(w => w[0]).join("").toUpperCase().slice(0, 3);
 }
 
-// Cache for team abbreviations
-const teamAbbreviationCache = new Map();
+function teamBarColor(slug) {
+  const entry = teamColors[slug];
+  return entry && entry.hex ? entry.hex : HG_NAVY_FALLBACK;
+}
 
-async function getTeamAbbreviation(teamName) {
-  if (!teamName) return null;
-  
-  // Check cache first
-  if (teamAbbreviationCache.has(teamName)) {
-    return teamAbbreviationCache.get(teamName);
-  }
-  
+async function loadTeamColors() {
   try {
-    const teamSlug = teamNameToSlug(teamName);
-    if (!teamSlug) {
-      teamAbbreviationCache.set(teamName, null);
-      return null;
-    }
-    
-    const teamData = await fetchJSON(`/data/teams/${teamSlug}.json`);
-    const abbreviation = teamData.abbreviation || null;
-    teamAbbreviationCache.set(teamName, abbreviation);
-    return abbreviation;
-  } catch (error) {
-    // Team file not found or error loading
-    teamAbbreviationCache.set(teamName, null);
-    return null;
+    const res = await fetch("/data/team_colors.json");
+    if (!res.ok) return {};
+    const data = await res.json();
+    return data.teams || {};
+  } catch {
+    return {};
   }
 }
 
-// ========================================
-// Gradient Color (DG-style: 0 → near-black, 50 → muted green, 80+ → strong green)
-// ========================================
+function createRankBadge(rank) {
+  if (rank === null || rank === undefined || rank === "") {
+    return document.createTextNode("—");
+  }
+  const badge = document.createElement("span");
+  badge.className = "rank-badge";
+  if (rank === 1) badge.classList.add("medal-gold");
+  else if (rank === 2) badge.classList.add("medal-silver");
+  else if (rank === 3) badge.classList.add("medal-bronze");
+  else badge.classList.add("standard");
+  badge.textContent = `#${rank}`;
+  return badge;
+}
+
+// Team crest with a required fallback: svg -> png -> abbreviation circle.
+function createTeamMark(teamName, slug) {
+  const wrap = document.createElement("span");
+  wrap.className = "hg-team-mark";
+  const img = document.createElement("img");
+  img.alt = "";
+  img.loading = "lazy";
+  img.src = `/assets/team_logos/${slug}.svg`;
+  img.addEventListener("error", () => {
+    if (!img.dataset.fb) {
+      img.dataset.fb = "1";
+      img.src = `/assets/team_logos/${slug}.png`;
+    } else {
+      wrap.innerHTML = "";
+      wrap.classList.add("hg-team-mark--abbr");
+      wrap.textContent = teamAbbr(teamName);
+    }
+  });
+  wrap.appendChild(img);
+  return wrap;
+}
+
+// Near-black -> muted green -> strong green, keyed off a 0-100 component
+// score. Kept from the previous version of this page -- a useful secondary
+// signal distinct from the team-color hero bar.
 function getScoreColor(score) {
-  // Clamp to 0-100
   const t = Math.max(0, Math.min(100, score)) / 100.0;
-  
-  // Near-black at 0, muted green at 50, strong green at 80+
   if (t <= 0.5) {
-    // 0 → near-black (#1a1a1a), 0.5 → muted green (#2d5a3d)
     const r = Math.round(26 + (45 - 26) * (t * 2));
     const g = Math.round(26 + (90 - 26) * (t * 2));
     const b = Math.round(26 + (61 - 26) * (t * 2));
     return `rgb(${r}, ${g}, ${b})`;
   } else if (t <= 0.8) {
-    // 0.5 → muted green (#2d5a3d), 0.8 → strong green (#1a6e22)
     const localT = (t - 0.5) / 0.3;
     const r = Math.round(45 + (26 - 45) * localT);
     const g = Math.round(90 + (110 - 90) * localT);
     const b = Math.round(61 + (34 - 61) * localT);
     return `rgb(${r}, ${g}, ${b})`;
-  } else {
-    // 0.8+ → strong green (#1a6e22)
-    return "rgb(26, 110, 34)";
   }
+  return "rgb(26, 110, 34)";
+}
+
+async function fetchJSON(url) {
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`Failed to fetch ${url}: ${response.statusText}`);
+  return response.json();
+}
+
+function rowKey(row) {
+  return row.wrestler_id || row.name;
 }
 
 // ========================================
-// Render Hodge Table
+// Render
 // ========================================
-async function renderHodgeTable(data) {
-  if (!data || !data.rows || data.rows.length === 0) {
-    const eligibleTbody = document.querySelector("#eligible-tbody");
-    eligibleTbody.innerHTML = `
-      <tr>
-        <td colspan="12" style="text-align: center; padding: 2em; color: var(--muted);">
-          No data available
-        </td>
-      </tr>
-    `;
+function renderHodgeTable(data) {
+  hodgeRows = (data && data.rows) || [];
+
+  const eligibleTbody = document.getElementById("eligible-tbody");
+  const ineligibleTbody = document.getElementById("ineligible-tbody");
+
+  if (hodgeRows.length === 0) {
+    eligibleTbody.innerHTML = `<tr><td colspan="4" style="text-align:center;padding:2em;color:var(--muted);">No data available</td></tr>`;
+    ineligibleTbody.innerHTML = "";
     return;
   }
 
-  // Split into eligible and ineligible
-  const eligibleRows = data.rows.filter(r => r.eligible);
-  const ineligibleRows = data.rows.filter(r => !r.eligible);
+  const eligibleRows = hodgeRows.filter(r => r.eligible).sort((a, b) => a.rank - b.rank);
+  const ineligibleRows = hodgeRows.filter(r => !r.eligible).sort((a, b) => a.rank - b.rank);
 
-  const eligibleTbody = document.querySelector("#eligible-tbody");
-  const ineligibleTbody = document.querySelector("#ineligible-tbody");
-  
   eligibleTbody.innerHTML = "";
   ineligibleTbody.innerHTML = "";
 
-  // Pre-load all team abbreviations
-  const teamNames = [...new Set(data.rows.map(row => row.team).filter(Boolean))];
-  await Promise.all(teamNames.map(teamName => getTeamAbbreviation(teamName)));
-
-  // Calculate max values for gradient normalization (scaled to 75% max)
-  const allRows = [...eligibleRows, ...ineligibleRows];
-  const maxValues = {
-    record: Math.max(...allRows.map(r => r.components?.record?.score || 0)),
-    quality: Math.max(...allRows.map(r => r.components?.quality?.score || 0)),
-    dominance: Math.max(...allRows.map(r => r.components?.dominance?.score || 0)),
-    pins: Math.max(...allRows.map(r => r.components?.pins?.score || 0))
-  };
-
-  // Render eligible rows
-  eligibleRows.forEach((row) => {
-    const tr = createHodgeRow(row, false, maxValues);
-    eligibleTbody.appendChild(tr);
-  });
-
-  // Render ineligible rows
-  ineligibleRows.forEach((row) => {
-    const tr = createHodgeRow(row, true, maxValues);
-    ineligibleTbody.appendChild(tr);
-  });
+  eligibleRows.forEach(row => renderRowInto(eligibleTbody, row));
+  ineligibleRows.forEach(row => renderRowInto(ineligibleTbody, row));
 }
 
-function createHodgeRow(row, isIneligible, maxValues) {
+function renderRowInto(tbody, row) {
+  const key = rowKey(row);
+  const isExpanded = expandedKey === key;
+  const slug = teamNameToSlug(row.team);
+  const color = teamBarColor(slug);
+
   const tr = document.createElement("tr");
-  if (isIneligible) {
-    tr.classList.add("ineligible-row");
-    if (row.eligibility_reason) {
-      tr.setAttribute("title", row.eligibility_reason);
-    }
-  }
+  tr.className = `hg-row expandable-row ${isExpanded ? "expanded" : "collapsed"}`;
 
-  const comp = row.components;
+  // 1. Expand chevron
+  const chevronTd = document.createElement("td");
+  chevronTd.className = "hg-chevron-cell";
+  const expandIcon = document.createElement("span");
+  expandIcon.className = "expand-icon";
+  chevronTd.appendChild(expandIcon);
+  tr.appendChild(chevronTd);
 
-  // Rank
+  // 2. Overall Hodge Watch rank (medal top 3)
   const rankTd = document.createElement("td");
-  rankTd.textContent = safe(row.rank);
+  rankTd.className = "hg-rank-cell";
+  rankTd.appendChild(createRankBadge(row.rank));
   tr.appendChild(rankTd);
 
-  // Name + Team Abbreviation (combined)
-  const nameTd = document.createElement("td");
-  nameTd.className = "name";
-  
-  // Name link (teal, already styled)
-  if (row.wrestler_id) {
-    const nameLink = document.createElement("a");
-    nameLink.href = `/wrestler.html?id=${row.wrestler_id}`;
-    nameLink.textContent = safe(row.name);
-    nameTd.appendChild(nameLink);
-  } else {
-    const nameSpan = document.createElement("span");
-    nameSpan.textContent = safe(row.name);
-    nameTd.appendChild(nameSpan);
+  // 3. Wrestler + team crest + weight/weight-rank subline
+  const wrestlerTd = document.createElement("td");
+  wrestlerTd.className = "hg-wrestler-cell-td";
+  const wrap = document.createElement("div");
+  wrap.className = "hg-wrestler-cell";
+  wrap.appendChild(createTeamMark(row.team, slug));
+
+  const textWrap = document.createElement("div");
+  const nameEl = row.wrestler_id
+    ? Object.assign(document.createElement("a"), {
+        className: "hg-wrestler-name",
+        href: `/wrestler.html?id=${row.wrestler_id}`,
+        textContent: row.name,
+      })
+    : Object.assign(document.createElement("span"), {
+        className: "hg-wrestler-name",
+        textContent: row.name,
+      });
+  textWrap.appendChild(nameEl);
+
+  const sub = document.createElement("div");
+  sub.className = "hg-wrestler-sub";
+  const teamLink = document.createElement("a");
+  teamLink.href = `/team.html?team=${slug}`;
+  teamLink.textContent = row.team;
+  sub.appendChild(teamLink);
+  sub.appendChild(document.createTextNode(` · ${row.weight} lbs · Wt #${row.weight_rank}`));
+  textWrap.appendChild(sub);
+
+  wrap.appendChild(textWrap);
+  wrestlerTd.appendChild(wrap);
+  tr.appendChild(wrestlerTd);
+
+  // 4. Hodge Score hero: bold number + team-color bar, record/reason underneath
+  const heroTd = document.createElement("td");
+  heroTd.className = "hg-hero-cell";
+
+  const heroRow = document.createElement("div");
+  heroRow.className = "hg-hero-row";
+
+  const valueEl = document.createElement("span");
+  valueEl.className = "hg-hero-value";
+  valueEl.textContent = safe(row.hodge_score, v => v.toFixed(1));
+  heroRow.appendChild(valueEl);
+
+  const track = document.createElement("div");
+  track.className = "hg-bar-track";
+  const fill = document.createElement("div");
+  fill.className = "hg-bar-fill";
+  fill.style.width = `${Math.max(0, Math.min(100, (row.hodge_score / HG_SCORE_MAX) * 100))}%`;
+  fill.style.background = color;
+  track.appendChild(fill);
+  heroRow.appendChild(track);
+  heroTd.appendChild(heroRow);
+
+  const heroSub = document.createElement("div");
+  heroSub.className = "hg-hero-sub";
+  const rec = row.components.record.raw;
+  const recordChip = document.createElement("span");
+  recordChip.className = "hg-hero-chip";
+  recordChip.innerHTML = `Record <strong>${rec.wins}-${rec.losses}</strong>`;
+  heroSub.appendChild(recordChip);
+
+  const qual = row.components.quality.raw;
+  const qualChip = document.createElement("span");
+  qualChip.className = "hg-hero-chip";
+  qualChip.innerHTML = `Ranked wins <strong>${qual.ranked_wins}</strong>`;
+  heroSub.appendChild(qualChip);
+
+  if (!row.eligible && row.eligibility_reason) {
+    const reasonChip = document.createElement("span");
+    reasonChip.className = "hg-hero-chip hg-ineligible-note";
+    reasonChip.textContent = row.eligibility_reason;
+    heroSub.appendChild(reasonChip);
   }
-  
-  // Team abbreviation link (different color, smaller, not bold)
-  if (row.team) {
-    const abbreviation = teamAbbreviationCache.get(row.team);
-    const teamSlug = teamNameToSlug(row.team);
-    
-    if (abbreviation && teamSlug) {
-      const space = document.createTextNode(" ");
-      nameTd.appendChild(space);
-      
-      const abbrevSpan = document.createElement("span");
-      abbrevSpan.style.fontSize = "0.85em";
-      abbrevSpan.style.fontWeight = "400";
-      abbrevSpan.textContent = "(";
-      nameTd.appendChild(abbrevSpan);
-      
-      const teamLink = document.createElement("a");
-      teamLink.href = `/team.html?team=${teamSlug}`;
-      teamLink.textContent = abbreviation;
-      teamLink.style.color = "var(--muted)"; // Use muted color (different from teal name link)
-      teamLink.style.fontSize = "0.85em";
-      teamLink.style.fontWeight = "400";
-      teamLink.style.textDecoration = "none";
-      teamLink.addEventListener("mouseenter", () => {
-        teamLink.style.color = "var(--accent)";
-        teamLink.style.textDecoration = "underline";
-      });
-      teamLink.addEventListener("mouseleave", () => {
-        teamLink.style.color = "var(--muted)";
-        teamLink.style.textDecoration = "none";
-      });
-      nameTd.appendChild(teamLink);
-      
-      const closeParen = document.createTextNode(")");
-      nameTd.appendChild(closeParen);
-    } else if (teamSlug) {
-      // Fallback: show team name if no abbreviation found
-      const space = document.createTextNode(" ");
-      nameTd.appendChild(space);
-      
-      const teamLink = document.createElement("a");
-      teamLink.href = `/team.html?team=${teamSlug}`;
-      teamLink.textContent = `(${row.team})`;
-      teamLink.style.color = "var(--muted)";
-      teamLink.style.fontSize = "0.85em";
-      teamLink.style.fontWeight = "400";
-      teamLink.style.textDecoration = "none";
-      teamLink.addEventListener("mouseenter", () => {
-        teamLink.style.color = "var(--accent)";
-        teamLink.style.textDecoration = "underline";
-      });
-      teamLink.addEventListener("mouseleave", () => {
-        teamLink.style.color = "var(--muted)";
-        teamLink.style.textDecoration = "none";
-      });
-      nameTd.appendChild(teamLink);
-    }
-  }
-  
-  tr.appendChild(nameTd);
+  heroTd.appendChild(heroSub);
+  tr.appendChild(heroTd);
 
-  // Weight
-  const weightTd = document.createElement("td");
-  weightTd.textContent = safe(row.weight);
-  tr.appendChild(weightTd);
+  const toggle = () => {
+    expandedKey = expandedKey === key ? null : key;
+    renderHodgeTable({ rows: hodgeRows });
+  };
+  tr.addEventListener("click", e => {
+    if (e.target.tagName === "A") return;
+    toggle();
+  });
+  expandIcon.addEventListener("click", e => {
+    e.stopPropagation();
+    toggle();
+  });
 
-  // Record Pair - W–L (raw) + Score (normalized)
-  const recordPairTd = document.createElement("td");
-  recordPairTd.className = "pair-cell";
-  recordPairTd.setAttribute("colspan", "2");
-  const recordPairWrapper = document.createElement("div");
-  recordPairWrapper.className = "pair-wrapper";
-  const recordRawDiv = document.createElement("div");
-  recordRawDiv.className = "cell raw";
-  recordRawDiv.textContent = `${comp.record.raw.wins}–${comp.record.raw.losses}`;
-  const recordScoreDiv = document.createElement("div");
-  recordScoreDiv.className = "cell normalized";
-    recordScoreDiv.textContent = safe(comp.record.score, (v) => v.toFixed(1));
-    const recordScorePercent = maxValues.record > 0 ? (comp.record.score / maxValues.record) * 75 : 0;
-    recordScoreDiv.style.backgroundColor = getScoreColor(recordScorePercent);
-  recordScoreDiv.setAttribute("title", `Normalized score: ${comp.record.score.toFixed(1)} × ${comp.record.weight} = ${comp.record.contribution.toFixed(2)}`);
-  recordPairWrapper.appendChild(recordRawDiv);
-  recordPairWrapper.appendChild(recordScoreDiv);
-  recordPairTd.appendChild(recordPairWrapper);
-  tr.appendChild(recordPairTd);
+  tbody.appendChild(tr);
+  if (isExpanded) tbody.appendChild(renderExpandedRow(row, color));
+}
 
-  // Quality Pair - Ranked Wins (raw) + Score (normalized)
-  const qualityPairTd = document.createElement("td");
-  qualityPairTd.className = "pair-cell";
-  qualityPairTd.setAttribute("colspan", "2");
-  const qualityPairWrapper = document.createElement("div");
-  qualityPairWrapper.className = "pair-wrapper";
-  const qualityRawDiv = document.createElement("div");
-  qualityRawDiv.className = "cell raw";
-  qualityRawDiv.textContent = safe(comp.quality.raw.ranked_wins);
-  const qualityScoreDiv = document.createElement("div");
-  qualityScoreDiv.className = "cell normalized";
-    qualityScoreDiv.textContent = safe(comp.quality.score, (v) => v.toFixed(1));
-    const qualityScorePercent = maxValues.quality > 0 ? (comp.quality.score / maxValues.quality) * 75 : 0;
-    qualityScoreDiv.style.backgroundColor = getScoreColor(qualityScorePercent);
-  qualityScoreDiv.setAttribute("title", `Normalized score: ${comp.quality.score.toFixed(1)} × ${comp.quality.weight} = ${comp.quality.contribution.toFixed(2)}`);
-  qualityPairWrapper.appendChild(qualityRawDiv);
-  qualityPairWrapper.appendChild(qualityScoreDiv);
-  qualityPairTd.appendChild(qualityPairWrapper);
-  tr.appendChild(qualityPairTd);
+const HG_COMPONENTS = [
+  { key: "record", label: "Record", raw: c => `${c.raw.wins}-${c.raw.losses} (${(c.raw.win_pct * 100).toFixed(1)}%)` },
+  { key: "quality", label: "Quality", raw: c => `${c.raw.ranked_wins} ranked wins (${c.raw.top10_wins} top-10)` },
+  { key: "dominance", label: "Dominance", raw: c => `${c.raw.avg_team_points.toFixed(2)} avg team pts/match` },
+  { key: "pins", label: "Pins", raw: c => `${(c.raw.pin_pct * 100).toFixed(1)}% pin rate` },
+];
 
-  // Dominance Pair - Avg TP (raw) + Score (normalized)
-  const domPairTd = document.createElement("td");
-  domPairTd.className = "pair-cell";
-  domPairTd.setAttribute("colspan", "2");
-  const domPairWrapper = document.createElement("div");
-  domPairWrapper.className = "pair-wrapper";
-  const domRawDiv = document.createElement("div");
-  domRawDiv.className = "cell raw";
-  domRawDiv.textContent = safe(comp.dominance.raw.avg_team_points, (v) => v.toFixed(2));
-  const domScoreDiv = document.createElement("div");
-  domScoreDiv.className = "cell normalized";
-    domScoreDiv.textContent = safe(comp.dominance.score, (v) => v.toFixed(1));
-    const domScorePercent = maxValues.dominance > 0 ? (comp.dominance.score / maxValues.dominance) * 75 : 0;
-    domScoreDiv.style.backgroundColor = getScoreColor(domScorePercent);
-  domScoreDiv.setAttribute("title", `Normalized score: ${comp.dominance.score.toFixed(1)} × ${comp.dominance.weight} = ${comp.dominance.contribution.toFixed(2)}`);
-  domPairWrapper.appendChild(domRawDiv);
-  domPairWrapper.appendChild(domScoreDiv);
-  domPairTd.appendChild(domPairWrapper);
-  tr.appendChild(domPairTd);
+function renderExpandedRow(row, color) {
+  const tr = document.createElement("tr");
+  tr.className = "weight-breakdown expanded";
 
-  // Pins Pair - Pin % (raw) + Score (normalized)
-  const pinsPairTd = document.createElement("td");
-  pinsPairTd.className = "pair-cell";
-  pinsPairTd.setAttribute("colspan", "2");
-  const pinsPairWrapper = document.createElement("div");
-  pinsPairWrapper.className = "pair-wrapper";
-  const pinsRawDiv = document.createElement("div");
-  pinsRawDiv.className = "cell raw";
-  pinsRawDiv.textContent = safe(comp.pins.raw.pin_pct, (v) => Math.round(v * 100) + "%");
-  const pinsScoreDiv = document.createElement("div");
-  pinsScoreDiv.className = "cell normalized";
-  pinsScoreDiv.textContent = safe(comp.pins.score, (v) => v.toFixed(1));
-  const pinsScorePercent = maxValues.pins > 0 ? (comp.pins.score / maxValues.pins) * 75 : 0;
-  pinsScoreDiv.style.backgroundColor = getScoreColor(pinsScorePercent);
-  pinsScoreDiv.setAttribute("title", `Normalized score: ${comp.pins.score.toFixed(1)} × ${comp.pins.weight} = ${comp.pins.contribution.toFixed(2)}`);
-  pinsPairWrapper.appendChild(pinsRawDiv);
-  pinsPairWrapper.appendChild(pinsScoreDiv);
-  pinsPairTd.appendChild(pinsPairWrapper);
-  tr.appendChild(pinsPairTd);
+  const td = document.createElement("td");
+  td.colSpan = 4;
+  td.className = "hg-expanded-td";
 
-  // Hodge Score (bold)
-  const hodgeScoreTd = document.createElement("td");
-  hodgeScoreTd.style.fontWeight = "600";
-  hodgeScoreTd.textContent = safe(row.hodge_score, (v) => v.toFixed(2));
-  tr.appendChild(hodgeScoreTd);
+  const grid = document.createElement("div");
+  grid.className = "hg-component-grid";
 
+  HG_COMPONENTS.forEach(({ key, label, raw }) => {
+    const c = row.components[key];
+    const card = document.createElement("div");
+    card.className = "hg-component-card";
+
+    const labelEl = document.createElement("div");
+    labelEl.className = "hg-component-label";
+    labelEl.textContent = label;
+    card.appendChild(labelEl);
+
+    const rawEl = document.createElement("div");
+    rawEl.className = "hg-component-raw";
+    rawEl.textContent = raw(c);
+    card.appendChild(rawEl);
+
+    const scoreRow = document.createElement("div");
+    scoreRow.className = "hg-component-score-row";
+    const scoreEl = document.createElement("span");
+    scoreEl.className = "hg-component-score";
+    scoreEl.textContent = c.score.toFixed(1);
+    scoreRow.appendChild(scoreEl);
+    const weightEl = document.createElement("span");
+    weightEl.className = "hg-component-weight";
+    weightEl.textContent = `× ${c.weight} weight`;
+    scoreRow.appendChild(weightEl);
+    card.appendChild(scoreRow);
+
+    const barTrack = document.createElement("div");
+    barTrack.className = "hg-component-bar-track";
+    const barFill = document.createElement("div");
+    barFill.className = "hg-component-bar-fill";
+    barFill.style.width = `${Math.max(0, Math.min(100, c.score))}%`;
+    barFill.style.background = getScoreColor(c.score);
+    barTrack.appendChild(barFill);
+    card.appendChild(barTrack);
+
+    const contribEl = document.createElement("div");
+    contribEl.className = "hg-component-contribution";
+    contribEl.textContent = `Contributes ${c.contribution.toFixed(2)} pts to Hodge Score`;
+    card.appendChild(contribEl);
+
+    grid.appendChild(card);
+  });
+
+  td.appendChild(grid);
+  tr.appendChild(td);
   return tr;
 }
 
 // ========================================
-// Initialize Page
+// Initialize
 // ========================================
 async function init() {
-  const season = resolveSeason();
-
   try {
-    // Update season info
-    document.getElementById("season-info").textContent = `Season ${season}`;
+    document.getElementById("season-info").textContent = `Season ${HG_SEASON}`;
 
-    // Load and render data
-    const data = await fetchJSON(`/data/awards/hodge/${season}/hodge_${season}.json`);
+    const [data, colors] = await Promise.all([
+      fetchJSON(`/data/awards/hodge/${HG_SEASON}/hodge_${HG_SEASON}.json`),
+      loadTeamColors(),
+    ]);
+    teamColors = colors;
 
-    // Update description
-    if (data.description) {
-      document.getElementById("description").textContent = data.description;
-    }
-
-    // Render table
-    await renderHodgeTable(data);
+    renderHodgeTable(data);
   } catch (error) {
     console.error("Error loading Hodge Trophy data:", error);
-    const eligibleTbody = document.querySelector("#eligible-tbody");
-    eligibleTbody.innerHTML = `
-      <tr>
-        <td colspan="12" style="text-align: center; padding: 2em; color: var(--muted);">
-          Error loading data: ${error.message}
-        </td>
-      </tr>
-    `;
+    const eligibleTbody = document.getElementById("eligible-tbody");
+    eligibleTbody.innerHTML = `<tr><td colspan="4" style="text-align:center;padding:2em;color:var(--muted);">Error loading data: ${error.message}</td></tr>`;
   }
 }
 
-// Initialize when DOM is ready
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", init);
 } else {

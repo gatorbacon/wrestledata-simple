@@ -1,0 +1,124 @@
+{
+  "query": {
+    "team_slug": "michigan",
+    "team_name": "Michigan",
+    "start_year": 2012,
+    "end_year": 2012
+  },
+  "wrestlers": [
+    {
+      "name": "Collin Zeerip",
+      "wrestler_id": "4875828009",
+      "weight_class": 174,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Femueagles.com%2Fimages%2F2014%2F10%2F31%2FCZeerip.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2012,
+      "last_query_year": 2014,
+      "school_path": [
+        "Michigan",
+        "Eastern Michigan"
+      ],
+      "seasons": [
+        {
+          "year": 2012,
+          "wrestler_id": "4452187009",
+          "team": "Michigan",
+          "team_slug": "michigan",
+          "team_abbr": "MICH",
+          "is_query_team": true,
+          "dpg": -3.35,
+          "matches": 4,
+          "rank": 147,
+          "record": "1-2"
+        },
+        {
+          "year": 2013,
+          "wrestler_id": "4497366009",
+          "team": "Michigan",
+          "team_slug": "michigan",
+          "team_abbr": "MICH",
+          "is_query_team": true,
+          "dpg": -2.44,
+          "matches": 6,
+          "rank": 225,
+          "record": "0-6"
+        },
+        {
+          "year": 2014,
+          "wrestler_id": "4632168009",
+          "team": "Michigan",
+          "team_slug": "michigan",
+          "team_abbr": "MICH",
+          "is_query_team": true,
+          "dpg": 0.66,
+          "matches": 31,
+          "rank": 50,
+          "record": "16-14"
+        },
+        {
+          "year": 2015,
+          "wrestler_id": "4875828009",
+          "team": "Eastern Michigan",
+          "team_slug": "eastern_michigan",
+          "team_abbr": "EAST",
+          "is_query_team": false,
+          "dpg": -1.31,
+          "matches": 3,
+          "rank": 57,
+          "record": "1-1"
+        }
+      ]
+    },
+    {
+      "name": "Sean Boyle",
+      "wrestler_id": "231013",
+      "weight_class": 125,
+      "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Futc.sidearmsports.com%2Fimages%2F2014%2F10%2F7%2FSVIBOVGEJUMVHSP.20141007173102.jpg&width=603&height=803&type=webp",
+      "direction": "transfer_out",
+      "first_query_year": 2013,
+      "last_query_year": 2014,
+      "school_path": [
+        "Michigan",
+        "Chattanooga"
+      ],
+      "seasons": [
+        {
+          "year": 2013,
+          "wrestler_id": "4497359009",
+          "team": "Michigan",
+          "team_slug": "michigan",
+          "team_abbr": "MICH",
+          "is_query_team": true,
+          "dpg": 0.97,
+          "matches": 38,
+          "rank": 18,
+          "record": "23-14"
+        },
+        {
+          "year": 2014,
+          "wrestler_id": "4632148009",
+          "team": "Michigan",
+          "team_slug": "michigan",
+          "team_abbr": "MICH",
+          "is_query_team": true,
+          "dpg": 1.76,
+          "matches": 21,
+          "rank": 33,
+          "record": "14-4"
+        },
+        {
+          "year": 2015,
+          "wrestler_id": "231013",
+          "team": "Chattanooga",
+          "team_slug": "chattanooga",
+          "team_abbr": "CHAT",
+          "is_query_team": false,
+          "dpg": 2.22,
+          "matches": 37,
+          "rank": 10,
+          "record": "30-7"
+        }
+      ]
+    }
+  ]
+}
