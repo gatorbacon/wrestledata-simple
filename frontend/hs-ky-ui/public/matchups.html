@@ -86,11 +86,46 @@
     .mu-vs { font-size: 0.75rem; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: 0.12em; padding: 10px 16px; }
     [data-theme="dark"] .mu-pill { --pill-bg: #1e2f66; --pill-fg: #cfdcff; }
     [data-theme="dark"] .mu-side--b .mu-pill { --pill-bg: #5a2a0c; --pill-fg: #ffd9bd; }
+    .mu-ico { font-size: 1em; }
     @media (max-width: 640px) {
-      .mu-row { grid-template-columns: 1fr; gap: 10px; padding: 14px 12px; justify-items: center; }
-      .mu-side--a, .mu-side--b { align-items: center; text-align: center; }
-      .mu-mid { order: 0; }
-      .mu-side--a { order: -1; }
+      /* Dense phone layout: [left wrestler] [Compare] [right wrestler] on one row, ~5 bouts above the fold. */
+      .mu-header { margin-bottom: 8px; padding-bottom: 8px; }
+      .mu-header h1 { font-size: 1.5rem; margin-bottom: 2px; }
+      .mu-header .header-subline { font-size: 0.8rem; }
+      .mu-section { padding: 0; border: 0; background: none; }
+      .mu-list { gap: 8px; }
+      .mu-row {
+        grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+        gap: 6px;
+        padding: 8px;
+        border-radius: 10px;
+      }
+      .mu-side--a, .mu-side--b { align-items: stretch; text-align: center; gap: 3px; }
+      .mu-pill {
+        width: 100%;
+        justify-content: center;
+        gap: 6px;
+        padding: 4px 8px 4px 4px;
+        border-radius: 16px;
+        font-size: 0.8125rem;
+        line-height: 1.2;
+      }
+      .mu-side--b .mu-pill { padding: 4px 4px 4px 8px; }
+      .mu-pill:not(:has(.mu-rank)), .mu-side--b .mu-pill:not(:has(.mu-rank)) { padding: 6px 8px; }
+      .mu-rank { min-width: 1.85em; height: 1.85em; padding: 0 4px; font-size: 0.75rem; }
+      .mu-sub { padding: 0; font-size: 0.6875rem; line-height: 1.25; }
+      .mu-alias { display: none; }
+      .mu-compare {
+        flex-direction: column-reverse;   /* icon on top, label below */
+        gap: 1px;
+        padding: 6px 9px;
+        border-radius: 12px;
+        font-size: 0.6875rem;
+        line-height: 1.1;
+        letter-spacing: 0;
+      }
+      .mu-compare .mu-ico { font-size: 1.15rem; line-height: 1; }
+      .mu-vs { padding: 4px 6px; }
     }
   </style>
 </head>
@@ -101,11 +136,11 @@
   <script src="/matchups_data.js"></script>
 
   <div class="page-container">
-    <header class="header">
+    <header class="header mu-header">
       <h1 id="mu-title">2027 All Star Classic</h1>
       <div class="header-subline" id="mu-subtitle"></div>
     </header>
-    <section class="section">
+    <section class="section mu-section">
       <div class="mu-list" id="mu-list"></div>
     </section>
   </div>
@@ -143,8 +178,11 @@
       if (w.gender === 'girls') bits.push('Girls');
       if (w.tag) bits.push(w.tag);
       if (rec && rec.secondary) bits.push(rec.secondary);
-      if (rec && rec.name && rec.name.toLowerCase() !== w.name.toLowerCase()) bits.push('profile: ' + rec.name);
-      if (bits.length) box.appendChild(el('div', 'mu-sub', bits.join(' · ')));
+      const sub = el('div', 'mu-sub', bits.join(' \u00b7 '));
+      if (rec && rec.name && rec.name.toLowerCase() !== w.name.toLowerCase()) {
+        sub.appendChild(el('span', 'mu-alias', (bits.length ? ' \u00b7 ' : '') + 'profile: ' + rec.name));   // hidden on phones
+      }
+      if (bits.length || sub.childNodes.length) box.appendChild(sub);
       return box;
     }
 
@@ -158,7 +196,9 @@
         const mid = el('div', 'mu-mid');
         const canCompare = m.a.id && m.b.id && m.a.gender && m.a.gender === m.b.gender;
         if (canCompare) {
-          const c = el('a', 'mu-compare', 'Compare \u21C4');
+          const c = el('a', 'mu-compare');
+          c.appendChild(el('span', 'mu-lbl', 'Compare'));
+          c.appendChild(el('span', 'mu-ico', '\u21C4'));
           c.href = '/compare.html?gender=' + m.a.gender + '&a=' + m.a.id + '&b=' + m.b.id;
           c.setAttribute('aria-label', 'Compare ' + m.a.name + ' and ' + m.b.name);
           mid.appendChild(c);

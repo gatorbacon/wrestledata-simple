@@ -4,7 +4,7 @@
 // and the same gender (boys/girls career IDs overlap, so gender is always required with the id).
 // `rank` is the rank printed on the source graphic (optional). `tag` is small text under the name (e.g. 'College').
 window.MATCHUPS_TITLE = '2027 All Star Classic';
-window.MATCHUPS_SUBTITLE = 'Tap a name to open that wrestler\'s profile, or Compare for head-to-head and common opponents.';
+window.MATCHUPS_SUBTITLE = 'Tap a name for a profile, or Compare for head-to-head.';
 window.MATCHUPS = [
   { a: { name: 'Spencer Moore', id: 'career_008940', gender: 'boys', tag: 'College' }, b: { name: 'Isaac Thornton', id: 'career_007965', gender: 'boys', tag: 'College' } },
   { a: { name: 'Peyton Vowels', id: 'career_001715', gender: 'boys', rank: 1 },     b: { name: 'Kalob Wise', id: 'career_001791', gender: 'boys', rank: 2 } },
