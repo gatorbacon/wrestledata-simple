@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>2027 All Star Classic | KentuckyMat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+  <script src="/js/analytics.js"></script>
+  <style>
+    /* Each bout: [left pill] [Compare] [right pill]. Left = blue, right = orange, so the two corners read at a glance. */
+    .mu-list { display: flex; flex-direction: column; gap: 12px; }
+    .mu-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+      gap: 16px;
+      align-items: center;
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: 14px;
+      padding: 14px 16px;
+    }
+    .mu-side { min-width: 0; display: flex; flex-direction: column; gap: 5px; }
+    .mu-side--a { align-items: flex-start; }
+    .mu-side--b { align-items: flex-end; text-align: right; }
+    .mu-pill {
+      --pill-bg: #dbe6ff; --pill-fg: #1a3fb0; --pill-rank: #1F4ED8;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      max-width: 100%;
+      padding: 5px 14px 5px 5px;
+      border-radius: 999px;
+      background: var(--pill-bg);
+      color: var(--pill-fg);
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+    .mu-side--b .mu-pill {
+      --pill-bg: #ffe6d1; --pill-fg: #a3410a; --pill-rank: #ea6a12;
+      flex-direction: row-reverse;
+      padding: 5px 5px 5px 14px;
+    }
+    .mu-pill:not(:has(.mu-rank)) { padding-left: 14px; }
+    .mu-side--b .mu-pill:not(:has(.mu-rank)) { padding-left: 14px; padding-right: 14px; }
+    .mu-pill a { color: inherit; text-decoration: none; overflow-wrap: anywhere; }
+    .mu-pill a:hover { text-decoration: underline; }
+    .mu-rank {
+      flex: none;
+      min-width: 2.1em;
+      height: 2.1em;
+      padding: 0 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: var(--pill-rank);
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+    }
+    .mu-sub { font-size: 0.78rem; color: var(--muted); padding: 0 6px; }
+    .mu-mid { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+    .mu-compare {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 20px;
+      border-radius: 999px;
+      background-color: #1F4ED8;   /* solid fill: styles.css strips gradients and shadows site-wide (!important) */
+      border: 2px solid #1F4ED8;
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: transform 0.12s ease, background-color 0.12s ease;
+    }
+    .mu-compare:hover { transform: translateY(-1px); background-color: #1a41b5; border-color: #1a41b5; }
+    .mu-compare:focus-visible { outline: 3px solid #93b0ff; outline-offset: 2px; }
+    .mu-vs { font-size: 0.75rem; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: 0.12em; padding: 10px 16px; }
+    [data-theme="dark"] .mu-pill { --pill-bg: #1e2f66; --pill-fg: #cfdcff; }
+    [data-theme="dark"] .mu-side--b .mu-pill { --pill-bg: #5a2a0c; --pill-fg: #ffd9bd; }
+    @media (max-width: 640px) {
+      .mu-row { grid-template-columns: 1fr; gap: 10px; padding: 14px 12px; justify-items: center; }
+      .mu-side--a, .mu-side--b { align-items: center; text-align: center; }
+      .mu-mid { order: 0; }
+      .mu-side--a { order: -1; }
+    }
+  </style>
+</head>
+
+<body>
+  <script src="/header.js"></script>
+  <script src="/hs_config.js"></script>
+  <script src="/matchups_data.js"></script>
+
+  <div class="page-container">
+    <header class="header">
+      <h1 id="mu-title">2027 All Star Classic</h1>
+      <div class="header-subline" id="mu-subtitle"></div>
+    </header>
+    <section class="section">
+      <div class="mu-list" id="mu-list"></div>
+    </section>
+  </div>
+
+  <script>
+  (function () {
+    const BY_KEY = new Map();
+    (window.SEARCH_INDEX || []).forEach(function (r) {
+      if (r.type !== 'wrestler') return;
+      const m = /career_id=(career_\d+)/.exec(r.url || '');
+      if (m) BY_KEY.set((r.gender || 'boys') + ':' + m[1], r);
+    });
+
+    function el(tag, cls, text) {
+      const e = document.createElement(tag);
+      if (cls) e.className = cls;
+      if (text != null) e.textContent = text;
+      return e;
+    }
+
+    function side(w, which) {
+      const box = el('div', 'mu-side mu-side--' + which);
+      const pill = el('div', 'mu-pill');
+      if (w.rank) pill.appendChild(el('span', 'mu-rank', '#' + w.rank));
+      const rec = w.id ? BY_KEY.get(w.gender + ':' + w.id) : null;
+      if (w.id) {
+        const a = el('a', null, w.name);
+        a.href = '/wrestler.html?gender=' + w.gender + '&career_id=' + w.id;
+        pill.appendChild(a);
+      } else {
+        pill.appendChild(el('span', null, w.name));
+      }
+      box.appendChild(pill);
+      const bits = [];
+      if (w.gender === 'girls') bits.push('Girls');
+      if (w.tag) bits.push(w.tag);
+      if (rec && rec.secondary) bits.push(rec.secondary);
+      if (rec && rec.name && rec.name.toLowerCase() !== w.name.toLowerCase()) bits.push('profile: ' + rec.name);
+      if (bits.length) box.appendChild(el('div', 'mu-sub', bits.join(' · ')));
+      return box;
+    }
+
+    function init() {
+      document.getElementById('mu-title').textContent = window.MATCHUPS_TITLE || '2027 All Star Classic';
+      document.getElementById('mu-subtitle').textContent = window.MATCHUPS_SUBTITLE || '';
+      const list = document.getElementById('mu-list');
+      (window.MATCHUPS || []).forEach(function (m) {
+        const row = el('div', 'mu-row');
+        row.appendChild(side(m.a, 'a'));
+        const mid = el('div', 'mu-mid');
+        const canCompare = m.a.id && m.b.id && m.a.gender && m.a.gender === m.b.gender;
+        if (canCompare) {
+          const c = el('a', 'mu-compare', 'Compare \u21C4');
+          c.href = '/compare.html?gender=' + m.a.gender + '&a=' + m.a.id + '&b=' + m.b.id;
+          c.setAttribute('aria-label', 'Compare ' + m.a.name + ' and ' + m.b.name);
+          mid.appendChild(c);
+        } else {
+          mid.appendChild(el('div', 'mu-vs', 'vs'));
+        }
+        row.appendChild(mid);
+        row.appendChild(side(m.b, 'b'));
+        list.appendChild(row);
+      });
+    }
+
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+    else init();
+  })();
+  </script>
+  <script src="/footer.js"></script>
+</body>
+</html>

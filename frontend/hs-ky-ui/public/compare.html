@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Compare Wrestlers: Head-to-Head &amp; Common Opponents | KentuckyMat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Compare any two Kentucky high school wrestlers. See every head-to-head match and common-opponent result between them on KentuckyMat." />
+  <link rel="canonical" href="https://www.kentuckymat.com/compare.html" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+  <script src="/js/analytics.js"></script>
+  <style>
+    /* Pickers */
+    .cmp-pickers {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 12px;
+      align-items: end;
+      margin-bottom: 12px;
+    }
+    .cmp-slot { min-width: 0; }
+    .cmp-slot-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+    }
+    .cmp-slot .search-container { width: 100%; }
+    .cmp-slot .search-input {
+      font-size: 1rem;              /* 16px avoids iOS zoom-on-focus */
+      padding: 10px 12px;
+    }
+    .cmp-slot-hint {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 4px;
+      min-height: 1em;
+    }
+    .cmp-chip {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 12px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--r-sm);
+      min-height: 46px;
+    }
+    .cmp-chip-text { flex: 1; min-width: 0; }
+    .cmp-chip-name {
+      font-weight: 600;
+      color: var(--text);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .cmp-chip-sub {
+      font-size: 0.75rem;
+      color: var(--muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .cmp-chip-detail { display: none; }
+    .cmp-chip-rec { font-size: 0.8125rem; margin-top: 2px; }
+    .cmp-chip-rec span { color: var(--muted); }
+    .cmp-chip-link { margin-left: 6px; font-size: 0.75rem; white-space: nowrap; }
+    .cmp-btn {
+      border: 1px solid var(--border);
+      background: var(--panel);
+      color: var(--muted);
+      border-radius: var(--r-sm);
+      cursor: pointer;
+      font-family: inherit;
+      line-height: 1;
+    }
+    .cmp-btn:hover { color: var(--text); border-color: var(--accent); }
+    .cmp-clear { padding: 6px 9px; font-size: 1rem; }
+    .cmp-swap { padding: 11px 12px; font-size: 1rem; margin-bottom: 19px; }
+
+    .cmp-toolbar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 8px 0 20px;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+    .cmp-toolbar select {
+      font-family: inherit;
+      font-size: 0.875rem;
+      padding: 5px 8px;
+      background: var(--panel);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: var(--r-sm);
+    }
+
+    .cmp-empty-state {
+      padding: 28px 16px;
+      text-align: center;
+      color: var(--muted);
+      background: var(--panel);
+      border: 1px dashed var(--border);
+      border-radius: var(--r-md);
+    }
+    .cmp-note { color: var(--muted); font-size: 0.8125rem; margin-top: 8px; }
+
+    /* Matchup header cards */
+    .cmp-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+    .cmp-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--r-md);
+      padding: 12px 14px;
+      min-width: 0;
+    }
+    .cmp-card-name { font-size: 1.125rem; font-weight: 700; line-height: 1.25; }
+    .cmp-card-name a { color: var(--text); text-decoration: none; }
+    .cmp-card-name a:hover { color: var(--accent); }
+    .cmp-card-sub { font-size: 0.8125rem; color: var(--muted); margin-top: 2px; }
+    .cmp-card-rec { font-size: 0.9375rem; margin-top: 8px; }
+    .cmp-card-rec span { color: var(--muted); }
+
+    /* Section headings */
+    .section h2.cmp-h2 { margin: 32px 0 10px; font-size: 1.125rem; }
+    .cmp-series {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .cmp-series .cmp-score { font-variant-numeric: tabular-nums; }
+
+    /* Result badge */
+    .cmp-res {
+      display: inline-block;
+      min-width: 1.5em;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-align: center;
+      color: #fff;
+    }
+    .cmp-res--w { background: var(--good); }
+    .cmp-res--l { background: var(--bad); }
+
+    /* Head-to-head list: [A pill] [result] [B pill] + a small meta line. Winner pill is light green. */
+    .cmp-h2h-row {
+      padding: 10px 0;
+      border-top: 1px solid var(--border);
+    }
+    .cmp-h2h-row:last-child { border-bottom: 1px solid var(--border); }
+    .cmp-h2h-main {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(96px, auto) minmax(0, 1fr);
+      gap: 10px;
+      align-items: center;
+    }
+    .cmp-pill {
+      padding: 7px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      font-size: 0.9375rem;
+      font-weight: 600;
+      line-height: 1.25;
+      text-align: center;
+      overflow-wrap: anywhere;
+    }
+    .cmp-pill--win {
+      background: #dcfce7;
+      border-color: #86efac;
+      color: #14532d;
+    }
+    .cmp-res-badge {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.2;
+      text-align: center;
+    }
+    .cmp-res-type {
+      font-size: 0.6875rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+    }
+    .cmp-res-detail {
+      font-size: 1rem;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+    .cmp-res-badge--bonus .cmp-res-type { color: var(--accent); }
+    .cmp-h2h-meta {
+      margin-top: 5px;
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+    [data-theme="dark"] .cmp-pill--win { background: #14532d; border-color: #22c55e; color: #dcfce7; }
+
+    /* Common opponents */
+    .cmp-tally {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 14px;
+      font-size: 0.875rem;
+      margin-bottom: 12px;
+    }
+    .cmp-tally b { font-variant-numeric: tabular-nums; }
+    .cmp-opp-head, .cmp-opp-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.4fr) minmax(0, 1.4fr);
+      gap: 4px 16px;
+      padding: 10px 4px;
+      border-top: 1px solid var(--border);
+      align-items: start;
+    }
+    .cmp-opp-head {
+      border-top: none;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .cmp-opp-row:last-child { border-bottom: 1px solid var(--border); }
+    .cmp-opp-name { font-weight: 600; font-size: 0.9375rem; }
+    .cmp-opp-name a { color: var(--text); text-decoration: none; }
+    .cmp-opp-name a:hover { color: var(--accent); }
+    .cmp-opp-team { font-size: 0.75rem; color: var(--muted); }
+    .cmp-mline { font-size: 0.8125rem; margin-bottom: 3px; }
+    .cmp-mline small { color: var(--muted); }
+    .cmp-cell-label { display: none; }
+
+    @media (max-width: 680px) {
+      /* Pickers side by side; the chip carries all the wrestler info, so the separate cards are hidden. */
+      .cmp-pickers { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 6px; align-items: stretch; }
+      .cmp-slot { display: flex; flex-direction: column; }
+      .cmp-slot .cmp-chip { flex: 1; }
+      .cmp-swap { margin: 22px 0 0; padding: 8px 6px; font-size: 0.875rem; justify-self: center; align-self: start; }
+      .cmp-cards { display: none; }
+      .cmp-chip { position: relative; align-items: flex-start; padding: 8px 26px 8px 10px; min-height: 0; }
+      .cmp-chip-name, .cmp-chip-sub { white-space: normal; overflow: visible; }
+      .cmp-chip-name { font-size: 0.9375rem; line-height: 1.25; }
+      .cmp-chip.has-detail > .cmp-chip-text > .cmp-chip-sub { display: none; }
+      .cmp-chip.has-detail .cmp-chip-detail { display: block; }
+      .cmp-chip-detail .cmp-chip-sub { margin-top: 2px; }
+      .cmp-chip-link { display: block; margin: 2px 0 0; }
+      .cmp-chip .cmp-clear { position: absolute; top: 4px; right: 4px; padding: 2px 6px; font-size: 0.875rem; }
+      /* Search results can be wider than the half-width slot */
+      .cmp-slot .search-dropdown { left: 0; right: auto; width: min(320px, calc(100vw - 32px)); }
+      #slot-b .search-dropdown { left: auto; right: 0; }
+      .cmp-h2h-main { grid-template-columns: minmax(0, 1fr) 78px minmax(0, 1fr); gap: 6px; }
+      .cmp-pill { padding: 6px 8px; font-size: 0.8125rem; }
+      /* Common opponents: opponent name on top, the two wrestlers' results side by side beneath it */
+      .cmp-opp-head { display: none; }
+      .cmp-opp-row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 6px 12px; padding: 12px 4px; }
+      .cmp-opp-row > :first-child { grid-column: 1 / -1; }
+      .cmp-cell-label {
+        display: block;
+        font-size: 0.6875rem;
+        font-weight: 600;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 3px;
+      }
+      .cmp-mline { margin-bottom: 4px; }
+      .cmp-mline small { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <script src="/header.js"></script>
+  <script src="/hs_config.js"></script>
+
+  <div class="page-container">
+    <header class="header">
+      <h1>Compare Wrestlers</h1>
+      <div class="header-subline">Head-to-head and common-opponent history</div>
+    </header>
+
+    <section class="section">
+      <div class="cmp-pickers">
+        <div class="cmp-slot" id="slot-a"></div>
+        <button type="button" class="cmp-btn cmp-swap" id="cmp-swap" title="Swap wrestlers" aria-label="Swap wrestlers">⇄</button>
+        <div class="cmp-slot" id="slot-b"></div>
+      </div>
+
+      <div id="cmp-toolbar" class="cmp-toolbar" style="display:none;">
+        <label for="cmp-season">Season:</label>
+        <select id="cmp-season"></select>
+      </div>
+
+      <div id="cmp-results">
+        <div class="cmp-empty-state">Pick two wrestlers to see their head-to-head matches and the opponents they have in common.</div>
+      </div>
+    </section>
+  </div>
+
+  <script src="/compare_core.js"></script>
+  <script src="/compare.js"></script>
+  <script src="/footer.js"></script>
+</body>
+</html>

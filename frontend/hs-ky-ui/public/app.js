@@ -299,6 +299,17 @@ function safe(value, formatter) {
       taglineEl.appendChild(infoSpan);
     }
 
+    // Compare button — opens the compare page with this wrestler prefilled as "A"
+    if (data.career_id) {
+      const compareLink = document.createElement("a");
+      compareLink.className = "career-compare-link";
+      compareLink.href = buildPageURL("compare.html", gender, { a: data.career_id });
+      compareLink.textContent = "Compare ⇄";
+      compareLink.title = `Compare ${data.canonical_name || "this wrestler"} with another wrestler`;
+      taglineEl.appendChild(document.createTextNode(" "));
+      taglineEl.appendChild(compareLink);
+    }
+
     // Team is now in tagline — clear meta to avoid a third line
     const metaEl = document.getElementById("wrestler-meta");
     metaEl.innerHTML = "";

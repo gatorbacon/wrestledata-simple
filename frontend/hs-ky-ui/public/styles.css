@@ -6384,6 +6384,22 @@ table a:hover {
 
 .career-header-info a:hover { text-decoration: underline; }
 
+/* "Compare ⇄" button on career profile header → compare.html?a=<career_id> */
+.career-compare-link {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 0.15em 0.6em;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--accent-primary, #1F4ED8);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.career-compare-link:hover { border-color: var(--accent-primary, #1F4ED8); background: var(--accent-light, #DCE6FF); }
+
 /* 3-column stats grid on desktop */
 @media (min-width: 601px) {
   .stats-grid-newspaper {

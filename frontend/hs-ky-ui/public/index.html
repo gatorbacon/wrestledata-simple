@@ -18,6 +18,45 @@
 
   <div class="page-container homepage">
 
+    <!-- TEMP-MATCHUPS-BANNER:START (remove this block to take the link down; also delete matchups.html + matchups_data.js) -->
+    <style>
+      /* Site look: flat, 3px corners, navy (boys) block with a crimson (girls) edge — same brand colors as the rank buttons. */
+      .temp-matchups-banner {
+        display: block;
+        margin: 0 0 1.5em;
+        padding: 1.1rem 1.5rem 1rem;
+        text-align: center;
+        text-decoration: none;
+        background: var(--boys-color);
+        border-bottom: 4px solid var(--girls-color);
+        border-radius: 3px;
+        color: #fff;
+        transition: filter 0.15s;
+      }
+      .temp-matchups-banner:hover { filter: brightness(1.1); color: #fff; text-decoration: none; }
+      .temp-matchups-title {
+        display: block;
+        font-size: clamp(1.6rem, 6vw, 2.25rem);
+        font-weight: 800;
+        line-height: 1.15;
+        letter-spacing: 0.01em;
+      }
+      .temp-matchups-sub {
+        display: block;
+        margin-top: 0.35em;
+        font-size: 0.95rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--boys-border);
+      }
+    </style>
+    <a href="/matchups.html" class="temp-matchups-banner">
+      <span class="temp-matchups-title">2027 All Star Classic</span>
+      <span class="temp-matchups-sub">Compare Matchups &rarr;</span>
+    </a>
+    <!-- TEMP-MATCHUPS-BANNER:END -->
+
     <!-- Hero -->
     <header class="home-hero">
       <img src="/logo2-transparent.png" alt="KentuckyMat" class="home-hero-logo" />

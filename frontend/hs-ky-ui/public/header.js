@@ -65,6 +65,11 @@
               <a href="/leaderboards.html" class="nav-link">Stat Leaders</a>
             </div>
 
+            <!-- Compare Wrestlers -->
+            <div class="nav-item">
+              <a href="/compare.html" class="nav-link">Compare</a>
+            </div>
+
             <!-- Recruiting Dropdown -->
             <div class="nav-item nav-item--dropdown" id="nav-recruiting">
               <button class="nav-link nav-link--dropdown" aria-expanded="false" aria-haspopup="true">
@@ -175,6 +180,9 @@
 
             <!-- Stat Leaders (Non-expandable link) -->
             <a href="/leaderboards.html" class="mobile-menu-item">Stat Leaders</a>
+
+            <!-- Compare Wrestlers (Non-expandable link) -->
+            <a href="/compare.html" class="mobile-menu-item">Compare</a>
 
             <!-- Recruiting Section (Expandable) -->
             <div class="mobile-menu-section">

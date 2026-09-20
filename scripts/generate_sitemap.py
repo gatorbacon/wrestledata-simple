@@ -32,6 +32,7 @@ STATIC_PAGES = [
     ("recruiting.html?gender=boys", "0.7", "weekly"),
     ("recruiting.html?gender=girls", "0.7", "weekly"),
     ("dual_predictor.html", "0.6", "monthly"),
+    ("compare.html", "0.5", "monthly"),
     ("about.html", "0.4", "monthly"),
     ("report.html", "0.3", "monthly"),
 ]
