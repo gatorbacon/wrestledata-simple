@@ -5,10 +5,15 @@
   "team_slug": "johnson_central",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2019,
   "current_rank": null,
   "record": {
-    "overall": "29-6",
+    "overall": "28-6",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.654,
+    "pin_rate": 0.481,
+    "bonus_rate": 0.63,
     "majors": 4,
     "techs": 0,
     "pins": 13
@@ -80,6 +85,22 @@
       "result": "W",
       "method": "DEC",
       "score": "8-6",
+      "duration": "7:00",
+      "event": "KHSAA State Championships"
+    },
+    {
+      "date": "2019-02-16",
+      "opponent_id": "5326046132",
+      "opponent_career_id": "career_009593",
+      "opponent_name": "Elijah McCune",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "2-1",
       "duration": "7:00",
       "event": "KHSAA State Championships"
     },
@@ -197,6 +218,22 @@
     },
     {
       "date": "2019-01-26",
+      "opponent_id": "5239872132",
+      "opponent_career_id": "career_010545",
+      "opponent_name": "Arthur Yah",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:30",
+      "event": "vs. Fern Creek"
+    },
+    {
+      "date": "2019-01-26",
       "opponent_id": "5143858132",
       "opponent_career_id": "career_009604",
       "opponent_name": "Nathen Wright",
@@ -210,38 +247,6 @@
       "score": "2-0",
       "duration": "7:00",
       "event": "vs. Moore"
-    },
-    {
-      "date": "2019-01-26",
-      "opponent_id": "5239872132",
-      "opponent_career_id": "career_010545",
-      "opponent_name": "Arthur Yah",
-      "opponent_team": "Fern Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:30",
-      "event": "vs. Johnson Central"
-    },
-    {
-      "date": "2019-01-12",
-      "opponent_id": "OUTSTATE_58dbb9690ced",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Lincoln County",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Lincoln County"
     },
     {
       "date": "2019-01-12",
@@ -306,6 +311,38 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. all star"
+    },
+    {
+      "date": "2019-01-12",
+      "opponent_id": "OUTSTATE_58dbb9690ced",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Lincoln County",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Lincoln County"
+    },
+    {
+      "date": "2019-01-04",
+      "opponent_id": "5838448132",
+      "opponent_career_id": null,
+      "opponent_name": "Deacon Stearns",
+      "opponent_team": "Liberty (Harrison)",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
+      "event": "vs. Liberty (Harrison)"
     },
     {
       "date": "2019-01-04",
@@ -436,22 +473,6 @@
       "event": "vs. Independence H.S."
     },
     {
-      "date": "2019-01-04",
-      "opponent_id": "5838448132",
-      "opponent_career_id": null,
-      "opponent_name": "Deacon Stearns",
-      "opponent_team": "Liberty (Harrison)",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "DEC",
-      "score": "5-4",
-      "duration": "7:00",
-      "event": "vs. Liberty (Harrison)"
-    },
-    {
       "date": "2018-12-29",
       "opponent_id": "5152575132",
       "opponent_career_id": null,
@@ -580,7 +601,7 @@
       "season": 2019,
       "grade": 12,
       "team": "Johnson Central",
-      "record": "29-6",
+      "record": "28-6",
       "regional_place": 1,
       "state_place": 5
     },
@@ -596,7 +617,7 @@
       "season": 2016,
       "grade": 9,
       "team": "Johnson Central",
-      "record": "37-8",
+      "record": "36-7",
       "regional_place": 3,
       "state_place": null
     },
@@ -604,7 +625,7 @@
       "season": 2015,
       "grade": 8,
       "team": "Johnson Central",
-      "record": "28-9",
+      "record": "26-9",
       "regional_place": 1,
       "state_place": 6
     },
@@ -612,15 +633,15 @@
       "season": 2014,
       "grade": null,
       "team": "Johnson Central",
-      "record": "7-6",
+      "record": "8-6",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 141,
-    "losses": 33,
-    "win_pct": 0.81
+    "wins": 138,
+    "losses": 32,
+    "win_pct": 0.812
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

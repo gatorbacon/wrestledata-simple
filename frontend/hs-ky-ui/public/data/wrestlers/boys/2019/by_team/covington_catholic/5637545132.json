@@ -5,10 +5,15 @@
   "team_slug": "covington_catholic",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2019,
   "current_rank": null,
   "record": {
-    "overall": "38-11",
+    "overall": "36-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.839,
-    "bonus_rate": 0.839,
+    "pin_rate": 0.848,
+    "bonus_rate": 0.848,
     "majors": 0,
     "techs": 0,
-    "pins": 26
+    "pins": 28
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -97,6 +102,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:50",
+      "event": "KHSAA Region 6"
+    },
+    {
+      "date": "2019-02-09",
+      "opponent_id": "5310381132",
+      "opponent_career_id": "career_008757",
+      "opponent_name": "Hunter Arthur",
+      "opponent_team": "Campbell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:46",
       "event": "KHSAA Region 6"
     },
     {
@@ -197,22 +218,6 @@
     },
     {
       "date": "2019-01-16",
-      "opponent_id": "5130905132",
-      "opponent_career_id": "career_010748",
-      "opponent_name": "Braden Mulcahy",
-      "opponent_team": "Walton Verona",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Walton Verona"
-    },
-    {
-      "date": "2019-01-16",
       "opponent_id": "7115255132",
       "opponent_career_id": null,
       "opponent_name": "Logan Adams",
@@ -226,6 +231,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. East Central"
+    },
+    {
+      "date": "2019-01-16",
+      "opponent_id": "5130905132",
+      "opponent_career_id": "career_010748",
+      "opponent_name": "Braden Mulcahy",
+      "opponent_team": "Walton Verona",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Walton Verona"
     },
     {
       "date": "2019-01-09",
@@ -261,22 +282,6 @@
     },
     {
       "date": "2019-01-08",
-      "opponent_id": "OUTSTATE_d268fa179a02",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Scott",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Scott"
-    },
-    {
-      "date": "2019-01-08",
       "opponent_id": "5130836132",
       "opponent_career_id": "career_011012",
       "opponent_name": "Gavin Arnold",
@@ -290,6 +295,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Walton Verona"
+    },
+    {
+      "date": "2019-01-08",
+      "opponent_id": "OUTSTATE_d268fa179a02",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Scott",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Scott"
     },
     {
       "date": "2019-01-08",
@@ -401,7 +422,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:56",
-      "event": "Southern Hills Community Bank Invitational"
+      "event": "McClain"
     },
     {
       "date": "2018-12-29",
@@ -417,6 +438,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:11",
+      "event": "McClain"
+    },
+    {
+      "date": "2018-12-29",
+      "opponent_id": "7012554132",
+      "opponent_career_id": null,
+      "opponent_name": "Simi Moananu",
+      "opponent_team": "Liberty",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:29",
       "event": "McClain"
     },
     {
@@ -779,7 +816,7 @@
       "season": 2019,
       "grade": 11,
       "team": "Covington Catholic",
-      "record": "38-11",
+      "record": "36-11",
       "regional_place": 3,
       "state_place": null
     },
@@ -801,9 +838,9 @@
     }
   ],
   "career_record": {
-    "wins": 63,
+    "wins": 61,
     "losses": 27,
-    "win_pct": 0.7
+    "win_pct": 0.693
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

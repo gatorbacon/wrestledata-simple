@@ -5,10 +5,15 @@
   "team_slug": "trinity_louisville",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
-    "overall": "27-17",
+    "overall": "26-18",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.4,
-    "bonus_rate": 0.64,
+    "pin_rate": 0.417,
+    "bonus_rate": 0.667,
     "majors": 6,
     "techs": 0,
     "pins": 10
@@ -225,7 +230,7 @@
       "method": "DEC",
       "score": "6-1",
       "duration": "7:00",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2016-01-30",
@@ -239,9 +244,9 @@
       "weight_class": "165",
       "result": "W",
       "method": "MD",
-      "score": "21-9",
+      "score": "21-10",
       "duration": "7:00",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Meade County"
     },
     {
       "date": "2016-01-30",
@@ -257,7 +262,7 @@
       "method": "DEC",
       "score": "5-3",
       "duration": "7:00",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Ryle"
     },
     {
       "date": "2016-01-30",
@@ -287,9 +292,25 @@
       "weight_class": "165",
       "result": "L",
       "method": "DEC",
+      "score": "8-7",
+      "duration": "7:00",
+      "event": "vs. St. Xavier"
+    },
+    {
+      "date": "2016-01-27",
+      "opponent_id": "320099107",
+      "opponent_career_id": "career_011563",
+      "opponent_name": "Cameron Ward",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
       "score": "10-4",
       "duration": "7:00",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. St. Xavier"
     },
     {
       "date": "2016-01-16",
@@ -305,7 +326,7 @@
       "method": "DEC",
       "score": "14-7",
       "duration": "7:00",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. St. Xavier"
     },
     {
       "date": "2016-01-09",
@@ -501,22 +522,6 @@
     },
     {
       "date": "2015-12-18",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Union County"
-    },
-    {
-      "date": "2015-12-18",
       "opponent_id": "351579094",
       "opponent_career_id": "career_011423",
       "opponent_name": "Matthew Quiggins",
@@ -529,7 +534,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:48",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2015-12-18",
@@ -562,6 +567,38 @@
       "score": "12-4",
       "duration": "7:00",
       "event": "vs. South Ridge"
+    },
+    {
+      "date": "2015-12-18",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Union County"
+    },
+    {
+      "date": "2015-12-12",
+      "opponent_id": "274119013",
+      "opponent_career_id": "career_010655",
+      "opponent_name": "Sam Jenkins",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. North Oldham"
     },
     {
       "date": "2015-12-12",
@@ -613,22 +650,6 @@
     },
     {
       "date": "2015-12-12",
-      "opponent_id": "274119013",
-      "opponent_career_id": "career_010655",
-      "opponent_name": "Sam Jenkins",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Trinity (Louisville)"
-    },
-    {
-      "date": "2015-12-12",
       "opponent_id": "272992013",
       "opponent_career_id": null,
       "opponent_name": "Andrew Cousins",
@@ -645,22 +666,6 @@
     },
     {
       "date": "2015-12-05",
-      "opponent_id": "450686076",
-      "opponent_career_id": null,
-      "opponent_name": "Robert Garstin",
-      "opponent_team": "Father Ryan",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "DEC",
-      "score": "10-6",
-      "duration": "7:00",
-      "event": "vs. Father Ryan"
-    },
-    {
-      "date": "2015-12-05",
       "opponent_id": "320078107",
       "opponent_career_id": "career_012358",
       "opponent_name": "Justin Voelker",
@@ -673,7 +678,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. St. Xavier"
     },
     {
       "date": "2015-12-05",
@@ -722,6 +727,22 @@
       "score": null,
       "duration": "0:33",
       "event": "vs. Archbishop Moeller"
+    },
+    {
+      "date": "2015-12-05",
+      "opponent_id": "450686076",
+      "opponent_career_id": null,
+      "opponent_name": "Robert Garstin",
+      "opponent_team": "Father Ryan",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "10-6",
+      "duration": "7:00",
+      "event": "vs. Father Ryan"
     }
   ],
   "career": {
@@ -738,7 +759,7 @@
       "season": 2016,
       "grade": 12,
       "team": "Trinity (Louisville)",
-      "record": "27-17",
+      "record": "26-18",
       "regional_place": 2,
       "state_place": null
     },
@@ -746,7 +767,7 @@
       "season": 2015,
       "grade": 11,
       "team": "Trinity (Louisville)",
-      "record": "24-26",
+      "record": "23-26",
       "regional_place": 3,
       "state_place": null
     },
@@ -754,15 +775,15 @@
       "season": 2013,
       "grade": null,
       "team": "Trinity (Louisville)",
-      "record": "3-1",
+      "record": "5-1",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 54,
-    "losses": 44,
-    "win_pct": 0.551
+    "losses": 45,
+    "win_pct": 0.545
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

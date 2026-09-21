@@ -5,6 +5,11 @@
   "team_slug": "la_rue_county",
   "team_rank": null,
   "weight_class": 106,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
@@ -35,6 +40,22 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2015-03-10",
+      "opponent_id": "51966071",
+      "opponent_career_id": "career_011396",
+      "opponent_name": "Zack Holub",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "MD",
+      "score": "12-3",
+      "duration": "7:00",
+      "event": "KHSAA State Wrestling Championships"
+    },
     {
       "date": "2015-03-10",
       "opponent_id": "31714076",
@@ -81,22 +102,6 @@
       "method": "FALL",
       "score": null,
       "duration": "1:47",
-      "event": "KHSAA State Wrestling Championships"
-    },
-    {
-      "date": "2015-03-10",
-      "opponent_id": "51966071",
-      "opponent_career_id": "career_011396",
-      "opponent_name": "Zack Holub",
-      "opponent_team": "Cooper",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "L",
-      "method": "MD",
-      "score": "12-3",
-      "duration": "7:00",
       "event": "KHSAA State Wrestling Championships"
     },
     {
@@ -177,7 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:44",
-      "event": "vs. La Rue County"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2015-02-04",
@@ -209,7 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. La Rue County"
+      "event": "vs. Doss"
     },
     {
       "date": "2015-01-31",
@@ -225,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. La Rue County"
+      "event": "vs. Fort Campbell"
     },
     {
       "date": "2015-01-31",
@@ -289,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:55",
-      "event": "vs. La Rue County"
+      "event": "vs. Desales"
     },
     {
       "date": "2015-01-17",
@@ -385,7 +390,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. La Rue County"
+      "event": "vs. Central"
     },
     {
       "date": "2015-01-14",
@@ -529,7 +534,7 @@
       "method": "DEC",
       "score": "7-5",
       "duration": "7:00",
-      "event": "vs. La Rue County"
+      "event": "vs. Apollo"
     },
     {
       "date": "2014-12-22",
@@ -545,7 +550,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:31",
-      "event": "vs. La Rue County"
+      "event": "vs. Central"
     },
     {
       "date": "2014-12-22",
@@ -561,7 +566,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:17",
-      "event": "vs. La Rue County"
+      "event": "vs. Christian County"
     },
     {
       "date": "2014-12-22",
@@ -577,7 +582,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:18",
-      "event": "vs. La Rue County"
+      "event": "vs. Iroquois"
     },
     {
       "date": "2014-12-22",
@@ -753,7 +758,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:44",
-      "event": "vs. La Rue County"
+      "event": "vs. Central"
     },
     {
       "date": "2014-12-10",
@@ -770,22 +775,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Fort Knox"
-    },
-    {
-      "date": "2014-12-06",
-      "opponent_id": "OUTSTATE_fcbab88ac5ca",
-      "opponent_career_id": null,
-      "opponent_name": "Dalton Curry",
-      "opponent_team": "Tecumseh",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:47",
-      "event": "vs. Tecumseh"
     },
     {
       "date": "2014-12-06",
@@ -850,6 +839,22 @@
       "score": null,
       "duration": "5:05",
       "event": "vs. Washington"
+    },
+    {
+      "date": "2014-12-06",
+      "opponent_id": "OUTSTATE_fcbab88ac5ca",
+      "opponent_career_id": null,
+      "opponent_name": "Dalton Curry",
+      "opponent_team": "Tecumseh",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:47",
+      "event": "vs. Tecumseh"
     }
   ],
   "career": {
@@ -866,7 +871,7 @@
       "season": 2016,
       "grade": 11,
       "team": "La Rue County",
-      "record": "38-8",
+      "record": "37-8",
       "regional_place": 2,
       "state_place": null
     },
@@ -882,15 +887,15 @@
       "season": 2014,
       "grade": null,
       "team": "La Rue County",
-      "record": "28-7",
+      "record": "31-9",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 108,
-    "losses": 24,
-    "win_pct": 0.818
+    "wins": 110,
+    "losses": 26,
+    "win_pct": 0.809
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

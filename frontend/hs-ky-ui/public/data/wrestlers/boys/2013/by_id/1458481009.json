@@ -5,10 +5,15 @@
   "team_slug": "university_heights",
   "team_rank": null,
   "weight_class": 157,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "30-4",
+    "overall": "32-4",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.778,
-    "bonus_rate": 0.815,
+    "pin_rate": 0.769,
+    "bonus_rate": 0.808,
     "majors": 1,
     "techs": 0,
-    "pins": 21
+    "pins": 20
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -49,7 +54,7 @@
       "method": "TF",
       "score": "18-2",
       "duration": "0:00",
-      "event": "2012 KHSAA State Tournament"
+      "event": "2013 KHSAA State Championships"
     },
     {
       "date": "2013-02-16",
@@ -97,7 +102,7 @@
       "method": "DEC",
       "score": "11-8",
       "duration": "7:00",
-      "event": "KHSAA State Tournament"
+      "event": "2013 KHSAA State Championships"
     },
     {
       "date": "2013-02-16",
@@ -130,22 +135,6 @@
       "score": null,
       "duration": "2:57",
       "event": "2013 KHSAA State Championships"
-    },
-    {
-      "date": "2013-02-15",
-      "opponent_id": "1369116009",
-      "opponent_career_id": "career_016437",
-      "opponent_name": "Gabe McIlrath",
-      "opponent_team": "Montgomery County",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:57",
-      "event": "State Championships"
     },
     {
       "date": "2013-02-09",
@@ -196,22 +185,6 @@
       "event": "KHSAA Region 1"
     },
     {
-      "date": "2013-02-08",
-      "opponent_id": "1271223009",
-      "opponent_career_id": "career_013931",
-      "opponent_name": "Quintin Davis",
-      "opponent_team": "Daviess County",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:35",
-      "event": "Regionals"
-    },
-    {
       "date": "2013-01-21",
       "opponent_id": "1257356009",
       "opponent_career_id": "career_013922",
@@ -225,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:14",
-      "event": "vs. University Heights"
+      "event": "vs. Christian County"
     },
     {
       "date": "2013-01-21",
@@ -353,7 +326,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:34",
-      "event": "Steve Johnston Classic @ Paducah"
+      "event": "Paducah Tilghman Invitational"
     },
     {
       "date": "2013-01-12",
@@ -369,7 +342,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:25",
-      "event": "Paducah Tilghman Steve Johnson Classic"
+      "event": "Paducah Tilghman Invitational"
     },
     {
       "date": "2013-01-12",
@@ -405,22 +378,6 @@
     },
     {
       "date": "2013-01-05",
-      "opponent_id": "1431417009",
-      "opponent_career_id": "career_015631",
-      "opponent_name": "alan cehrs",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:39",
-      "event": "vs. Simon Kenton"
-    },
-    {
-      "date": "2013-01-05",
       "opponent_id": "1296562009",
       "opponent_career_id": "career_016322",
       "opponent_name": "Tighe Harrod",
@@ -433,7 +390,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:48",
-      "event": "vs. University Heights"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2013-01-05",
@@ -482,6 +439,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Paul Dunbar"
+    },
+    {
+      "date": "2013-01-05",
+      "opponent_id": "1431417009",
+      "opponent_career_id": "career_015631",
+      "opponent_name": "alan cehrs",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:39",
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2012-12-22",
@@ -545,7 +518,7 @@
       "method": "DEC",
       "score": "6-2",
       "duration": "7:00",
-      "event": "vs. University Heights"
+      "event": "vs. Lafayette"
     },
     {
       "date": "2012-12-01",
@@ -625,7 +598,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:58",
-      "event": "vs. University Heights"
+      "event": "vs. Daviess County"
     },
     {
       "date": "2012-11-29",
@@ -641,14 +614,17 @@
       "method": "FALL",
       "score": null,
       "duration": "1:24",
-      "event": "vs. University Heights"
+      "event": "vs. Owensboro"
     }
   ],
   "career": {
     "career_id": "career_016106",
     "canonical_name": "CAMERON MONTGOMERY",
     "seasons": [
-      2013
+      2013,
+      2012,
+      2011,
+      2010
     ]
   },
   "season_summary": [
@@ -656,15 +632,39 @@
       "season": 2013,
       "grade": null,
       "team": "University Heights",
-      "record": "30-4",
+      "record": "32-4",
       "regional_place": 1,
       "state_place": 5
+    },
+    {
+      "season": 2012,
+      "grade": 11,
+      "team": "University Heights",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2011,
+      "grade": 10,
+      "team": "University Heights",
+      "record": "3-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2010,
+      "grade": 9,
+      "team": "University Heights",
+      "record": "0-2",
+      "regional_place": null,
+      "state_place": null
     }
   ],
   "career_record": {
-    "wins": 30,
-    "losses": 4,
-    "win_pct": 0.882
+    "wins": 37,
+    "losses": 10,
+    "win_pct": 0.787
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

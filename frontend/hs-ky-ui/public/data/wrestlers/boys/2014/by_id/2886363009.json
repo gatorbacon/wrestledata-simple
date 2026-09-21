@@ -5,10 +5,15 @@
   "team_slug": "henry_clay",
   "team_rank": null,
   "weight_class": 215,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "25-4",
+    "overall": "31-4",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -229,19 +234,19 @@
     },
     {
       "date": "2014-02-01",
-      "opponent_id": "2887286009",
-      "opponent_career_id": "career_015630",
-      "opponent_name": "david mahan",
-      "opponent_team": "Simon Kenton",
+      "opponent_id": "2886190009",
+      "opponent_career_id": "career_015031",
+      "opponent_name": "Nick Skaggs",
+      "opponent_team": "Fern Creek",
       "opponent_team_rank": null,
-      "opponent_weight": 175,
+      "opponent_weight": 215,
       "opponent_rank": null,
-      "weight_class": "190",
+      "weight_class": "215",
       "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:28",
-      "event": "vs. Simon Kenton"
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2014-02-01",
@@ -261,19 +266,19 @@
     },
     {
       "date": "2014-02-01",
-      "opponent_id": "2886190009",
-      "opponent_career_id": "career_015031",
-      "opponent_name": "Nick Skaggs",
-      "opponent_team": "Fern Creek",
+      "opponent_id": "2887286009",
+      "opponent_career_id": "career_015630",
+      "opponent_name": "david mahan",
+      "opponent_team": "Simon Kenton",
       "opponent_team_rank": null,
-      "opponent_weight": 215,
+      "opponent_weight": 175,
       "opponent_rank": null,
-      "weight_class": "215",
+      "weight_class": "190",
       "result": "W",
-      "method": "DEC",
-      "score": "5-4",
-      "duration": "7:00",
-      "event": "vs. Henry Clay"
+      "method": "FALL",
+      "score": null,
+      "duration": "3:28",
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2014-02-01",
@@ -289,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:44",
-      "event": "vs. Henry Clay"
+      "event": "vs. Woodford County"
     },
     {
       "date": "2014-01-18",
@@ -337,7 +342,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:42",
-      "event": "vs. Henry Clay"
+      "event": "vs. Woodford County"
     },
     {
       "date": "2014-01-11",
@@ -401,39 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "vs. Henry Clay"
-    },
-    {
-      "date": "2014-01-04",
-      "opponent_id": "2887293009",
-      "opponent_career_id": "career_014095",
-      "opponent_name": "michael roark",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:20",
-      "event": "vs. Henry Clay"
-    },
-    {
-      "date": "2014-01-04",
-      "opponent_id": "2886586009",
-      "opponent_career_id": "career_015473",
-      "opponent_name": "William Bossart",
-      "opponent_team": "Lafayette",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:50",
-      "event": "vs. Henry Clay"
+      "event": "vs. Central"
     },
     {
       "date": "2014-01-04",
@@ -449,7 +422,7 @@
       "method": "INJ",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2014-01-04",
@@ -468,11 +441,11 @@
       "event": "vs. Badin"
     },
     {
-      "date": "2013-12-21",
-      "opponent_id": "2999445009",
-      "opponent_career_id": null,
-      "opponent_name": "Adam Kenner",
-      "opponent_team": "Dobyns Bennett",
+      "date": "2014-01-04",
+      "opponent_id": "2886586009",
+      "opponent_career_id": "career_015473",
+      "opponent_name": "William Bossart",
+      "opponent_team": "Lafayette",
       "opponent_team_rank": null,
       "opponent_weight": 190,
       "opponent_rank": null,
@@ -480,8 +453,40 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:22",
-      "event": "vs. Dobyns Bennett"
+      "duration": "1:50",
+      "event": "vs. Lafayette"
+    },
+    {
+      "date": "2014-01-04",
+      "opponent_id": "2887293009",
+      "opponent_career_id": "career_014095",
+      "opponent_name": "michael roark",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:20",
+      "event": "vs. Simon Kenton"
+    },
+    {
+      "date": "2013-12-21",
+      "opponent_id": "2999948009",
+      "opponent_career_id": null,
+      "opponent_name": "Chris Burchfield",
+      "opponent_team": "Happy Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:21",
+      "event": "vs. Happy Valley"
     },
     {
       "date": "2013-12-21",
@@ -501,19 +506,19 @@
     },
     {
       "date": "2013-12-21",
-      "opponent_id": "2999948009",
+      "opponent_id": "2999445009",
       "opponent_career_id": null,
-      "opponent_name": "Chris Burchfield",
-      "opponent_team": "Happy Valley",
+      "opponent_name": "Adam Kenner",
+      "opponent_team": "Dobyns Bennett",
       "opponent_team_rank": null,
-      "opponent_weight": 215,
+      "opponent_weight": 190,
       "opponent_rank": null,
-      "weight_class": "215",
+      "weight_class": "190",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "2:21",
-      "event": "vs. Happy Valley"
+      "duration": "0:22",
+      "event": "vs. Dobyns Bennett"
     },
     {
       "date": "2013-12-14",
@@ -601,7 +606,8 @@
     "canonical_name": "Nathan Moore",
     "seasons": [
       2014,
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -609,7 +615,7 @@
       "season": 2014,
       "grade": null,
       "team": "Henry Clay",
-      "record": "25-4",
+      "record": "31-4",
       "regional_place": 1,
       "state_place": 7
     },
@@ -617,15 +623,23 @@
       "season": 2013,
       "grade": null,
       "team": "Henry Clay",
-      "record": "25-6",
+      "record": "30-7",
       "regional_place": 2,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 10,
+      "team": "Henry Clay",
+      "record": "1-2",
+      "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 50,
-    "losses": 10,
-    "win_pct": 0.833
+    "wins": 62,
+    "losses": 13,
+    "win_pct": 0.827
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

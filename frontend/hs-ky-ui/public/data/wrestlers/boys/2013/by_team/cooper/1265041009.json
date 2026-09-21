@@ -5,10 +5,15 @@
   "team_slug": "cooper",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "12-15",
+    "overall": "12-17",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -35,22 +40,6 @@
     "worst_loss": null
   },
   "match_list": [
-    {
-      "date": "2013-01-26",
-      "opponent_id": "1278348009",
-      "opponent_career_id": "career_015018",
-      "opponent_name": "Geron Hurst",
-      "opponent_team": "Dupont Manual",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "DEC",
-      "score": "8-2",
-      "duration": "7:00",
-      "event": "Lockland Invitational"
-    },
     {
       "date": "2013-01-26",
       "opponent_id": "1235583009",
@@ -81,6 +70,22 @@
       "method": "FALL",
       "score": null,
       "duration": "2:58",
+      "event": "Lockland Invitational"
+    },
+    {
+      "date": "2013-01-26",
+      "opponent_id": "1278348009",
+      "opponent_career_id": "career_015018",
+      "opponent_name": "Geron Hurst",
+      "opponent_team": "Dupont Manual",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-2",
+      "duration": "7:00",
       "event": "Lockland Invitational"
     },
     {
@@ -129,7 +134,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:35",
-      "event": "Dragon Invitational @ South Oldham"
+      "event": "Dragon Invitational"
     },
     {
       "date": "2013-01-19",
@@ -245,22 +250,6 @@
     },
     {
       "date": "2012-12-22",
-      "opponent_id": "1244120009",
-      "opponent_career_id": "career_013004",
-      "opponent_name": "Bryan Spahr",
-      "opponent_team": "Campbell County",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "2012 NKAC Conference"
-    },
-    {
-      "date": "2012-12-22",
       "opponent_id": "1235583009",
       "opponent_career_id": "career_015799",
       "opponent_name": "christian rodriguez",
@@ -273,7 +262,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "NKAC"
+      "event": "2012 NKAC"
+    },
+    {
+      "date": "2012-12-22",
+      "opponent_id": "1244120009",
+      "opponent_career_id": "career_013004",
+      "opponent_name": "Bryan Spahr",
+      "opponent_team": "Campbell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "2012 NKAC"
     },
     {
       "date": "2012-12-22",
@@ -288,7 +293,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:35",
       "event": "2012 NKAC"
     },
     {
@@ -385,23 +390,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:17",
-      "event": "vs. Cooper"
-    },
-    {
-      "date": "2012-12-01",
-      "opponent_id": "OUTSTATE_4b45f56524e1",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Roger Bacon",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Roger Bacon"
+      "event": "vs. Oldham County"
     },
     {
       "date": "2012-12-01",
@@ -450,6 +439,22 @@
       "score": null,
       "duration": "0:43",
       "event": "vs. Reading Comm Jr Sr"
+    },
+    {
+      "date": "2012-12-01",
+      "opponent_id": "OUTSTATE_4b45f56524e1",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Roger Bacon",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Roger Bacon"
     },
     {
       "date": "2012-12-01",
@@ -514,7 +519,7 @@
       "season": 2015,
       "grade": 12,
       "team": "Cooper",
-      "record": "14-9",
+      "record": "14-8",
       "regional_place": null,
       "state_place": null
     },
@@ -522,7 +527,7 @@
       "season": 2014,
       "grade": null,
       "team": "Cooper",
-      "record": "12-8",
+      "record": "16-10",
       "regional_place": null,
       "state_place": null
     },
@@ -530,15 +535,15 @@
       "season": 2013,
       "grade": null,
       "team": "Cooper",
-      "record": "12-15",
+      "record": "12-17",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 38,
-    "losses": 32,
-    "win_pct": 0.543
+    "wins": 42,
+    "losses": 35,
+    "win_pct": 0.545
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

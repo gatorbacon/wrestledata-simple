@@ -5,10 +5,15 @@
   "team_slug": "bullitt_east",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
-    "overall": "18-9",
+    "overall": "16-9",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.9,
-    "bonus_rate": 0.9,
+    "pin_rate": 0.909,
+    "bonus_rate": 0.909,
     "majors": 0,
     "techs": 0,
-    "pins": 9
+    "pins": 10
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -133,6 +138,22 @@
     },
     {
       "date": "2015-12-19",
+      "opponent_id": "320456010",
+      "opponent_career_id": "career_013396",
+      "opponent_name": "Seth Richie",
+      "opponent_team": "Atherton",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:45",
+      "event": "vs. Atherton"
+    },
+    {
+      "date": "2015-12-19",
       "opponent_id": "8138438009",
       "opponent_career_id": "career_013223",
       "opponent_name": "Darian Burns",
@@ -146,22 +167,6 @@
       "score": null,
       "duration": "3:00",
       "event": "vs. Valley"
-    },
-    {
-      "date": "2015-12-19",
-      "opponent_id": "320456010",
-      "opponent_career_id": "career_013396",
-      "opponent_name": "Seth Richie",
-      "opponent_team": "Atherton",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:45",
-      "event": "vs. Bullitt East"
     },
     {
       "date": "2015-12-19",
@@ -225,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:49",
-      "event": "vs. Bullitt East"
+      "event": "vs. Atherton"
     },
     {
       "date": "2015-12-16",
@@ -309,22 +314,6 @@
     },
     {
       "date": "2015-12-05",
-      "opponent_id": "8138438009",
-      "opponent_career_id": "career_013223",
-      "opponent_name": "Darian Burns",
-      "opponent_team": "Valley",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:50",
-      "event": "vs. Valley"
-    },
-    {
-      "date": "2015-12-05",
       "opponent_id": "OUTSTATE_3b9151ea3973",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -338,6 +327,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Central"
+    },
+    {
+      "date": "2015-12-05",
+      "opponent_id": "8138438009",
+      "opponent_career_id": "career_013223",
+      "opponent_name": "Darian Burns",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:50",
+      "event": "vs. Valley"
     },
     {
       "date": "2015-12-05",
@@ -418,6 +423,22 @@
       "score": null,
       "duration": "1:30",
       "event": "vs. Desales"
+    },
+    {
+      "date": "2015-12-02",
+      "opponent_id": "340975094",
+      "opponent_career_id": "career_013039",
+      "opponent_name": "Brian Maguire",
+      "opponent_team": "Desales",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:32",
+      "event": "vs. Desales"
     }
   ],
   "career": {
@@ -443,7 +464,7 @@
       "season": 2018,
       "grade": 11,
       "team": "Bullitt East",
-      "record": "41-13",
+      "record": "42-13",
       "regional_place": 2,
       "state_place": null
     },
@@ -451,7 +472,7 @@
       "season": 2017,
       "grade": 10,
       "team": "Bullitt East",
-      "record": "36-12",
+      "record": "39-12",
       "regional_place": 2,
       "state_place": null
     },
@@ -459,15 +480,15 @@
       "season": 2016,
       "grade": 9,
       "team": "Bullitt East",
-      "record": "18-9",
+      "record": "16-9",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 128,
+    "wins": 130,
     "losses": 48,
-    "win_pct": 0.727
+    "win_pct": 0.73
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

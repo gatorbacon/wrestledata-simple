@@ -5,10 +5,15 @@
   "team_slug": "johnson_central",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2018,
   "current_rank": null,
   "record": {
-    "overall": "21-24",
+    "overall": "20-24",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -80,6 +85,22 @@
       "result": "L",
       "method": "DEC",
       "score": "4-0",
+      "duration": "7:00",
+      "event": "KHSAA Region 8"
+    },
+    {
+      "date": "2018-02-09",
+      "opponent_id": "11993299009",
+      "opponent_career_id": "career_010443",
+      "opponent_name": "Gage Hignite",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-4",
       "duration": "7:00",
       "event": "KHSAA Region 8"
     },
@@ -245,6 +266,22 @@
     },
     {
       "date": "2018-01-27",
+      "opponent_id": "11480162009",
+      "opponent_career_id": "career_011393",
+      "opponent_name": "Ishmael Griffie",
+      "opponent_team": "Christian County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:38",
+      "event": "vs. Christian County"
+    },
+    {
+      "date": "2018-01-27",
       "opponent_id": "206688132",
       "opponent_career_id": "career_007870",
       "opponent_name": "Connor Geise",
@@ -258,22 +295,6 @@
       "score": "15-1",
       "duration": "7:00",
       "event": "vs. Meade County"
-    },
-    {
-      "date": "2018-01-27",
-      "opponent_id": "11480162009",
-      "opponent_career_id": "career_011393",
-      "opponent_name": "Ishmael Griffie",
-      "opponent_team": "Christian County",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:38",
-      "event": "vs. Johnson Central"
     },
     {
       "date": "2018-01-27",
@@ -549,22 +570,6 @@
     },
     {
       "date": "2017-12-21",
-      "opponent_id": "OUTSTATE_740c66dccb95",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Trion",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Trion"
-    },
-    {
-      "date": "2017-12-21",
       "opponent_id": "11588822009",
       "opponent_career_id": null,
       "opponent_name": "Andrew Funston",
@@ -578,38 +583,6 @@
       "score": null,
       "duration": "0:51",
       "event": "vs. Brookwood"
-    },
-    {
-      "date": "2017-12-21",
-      "opponent_id": "1071457132",
-      "opponent_career_id": null,
-      "opponent_name": "Hunter Killam",
-      "opponent_team": "Pigeon Forge",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "DEC",
-      "score": "8-3",
-      "duration": "7:00",
-      "event": "vs. Pigeon Forge"
-    },
-    {
-      "date": "2017-12-21",
-      "opponent_id": "11485338009",
-      "opponent_career_id": null,
-      "opponent_name": "McCoy Pace",
-      "opponent_team": "Woodward Academy",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "MD",
-      "score": "18-7",
-      "duration": "7:00",
-      "event": "vs. Woodward Academy"
     },
     {
       "date": "2017-12-21",
@@ -642,6 +615,54 @@
       "score": null,
       "duration": "1:57",
       "event": "vs. Lee"
+    },
+    {
+      "date": "2017-12-21",
+      "opponent_id": "1071457132",
+      "opponent_career_id": null,
+      "opponent_name": "Hunter Killam",
+      "opponent_team": "Pigeon Forge",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-3",
+      "duration": "7:00",
+      "event": "vs. Pigeon Forge"
+    },
+    {
+      "date": "2017-12-21",
+      "opponent_id": "OUTSTATE_740c66dccb95",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Trion",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Trion"
+    },
+    {
+      "date": "2017-12-21",
+      "opponent_id": "11485338009",
+      "opponent_career_id": null,
+      "opponent_name": "McCoy Pace",
+      "opponent_team": "Woodward Academy",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "MD",
+      "score": "18-7",
+      "duration": "7:00",
+      "event": "vs. Woodward Academy"
     },
     {
       "date": "2017-12-16",
@@ -748,7 +769,7 @@
       "season": 2020,
       "grade": 11,
       "team": "Johnson Central",
-      "record": "22-24",
+      "record": "22-22",
       "regional_place": 2,
       "state_place": null
     },
@@ -756,7 +777,7 @@
       "season": 2019,
       "grade": 10,
       "team": "Johnson Central",
-      "record": "18-27",
+      "record": "18-26",
       "regional_place": 3,
       "state_place": null
     },
@@ -764,7 +785,7 @@
       "season": 2018,
       "grade": 9,
       "team": "Johnson Central",
-      "record": "21-24",
+      "record": "20-24",
       "regional_place": 4,
       "state_place": null
     },
@@ -772,15 +793,15 @@
       "season": 2017,
       "grade": 8,
       "team": "Johnson Central",
-      "record": "3-16",
+      "record": "3-17",
       "regional_place": 4,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 74,
-    "losses": 94,
-    "win_pct": 0.44
+    "wins": 73,
+    "losses": 92,
+    "win_pct": 0.442
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

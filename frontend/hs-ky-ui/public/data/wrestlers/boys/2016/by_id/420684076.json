@@ -5,6 +5,11 @@
   "team_slug": "madison_southern",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.867,
-    "bonus_rate": 0.933,
+    "pin_rate": 0.839,
+    "bonus_rate": 0.903,
     "majors": 1,
     "techs": 1,
     "pins": 26
@@ -64,6 +69,22 @@
       "result": "W",
       "method": "DEC",
       "score": "8-1",
+      "duration": "7:00",
+      "event": "KHSAA State Tournament"
+    },
+    {
+      "date": "2016-02-20",
+      "opponent_id": "297314010",
+      "opponent_career_id": "career_012990",
+      "opponent_name": "Jorge Mendez",
+      "opponent_team": "Bourbon County",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-2",
       "duration": "7:00",
       "event": "KHSAA State Tournament"
     },
@@ -145,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:04",
-      "event": "Region 7 Tournament"
+      "event": "KHSAA Region 7"
     },
     {
       "date": "2016-02-13",
@@ -175,9 +196,9 @@
       "weight_class": "285",
       "result": "W",
       "method": "DEC",
-      "score": "7-3",
+      "score": "7-4",
       "duration": "7:00",
-      "event": "Western Hills Invitational"
+      "event": "Wolerine Inv."
     },
     {
       "date": "2016-01-30",
@@ -193,7 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:48",
-      "event": "Western Hills Invitational"
+      "event": "Wolerine Inv."
     },
     {
       "date": "2016-01-30",
@@ -529,7 +550,7 @@
       "method": "MD",
       "score": "13-0",
       "duration": "7:00",
-      "event": "vs. Madison Southern"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2015-12-12",
@@ -545,7 +566,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Madison Southern"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2015-12-12",
@@ -561,7 +582,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Madison Southern"
+      "event": "vs. Danville"
     },
     {
       "date": "2015-12-12",
@@ -629,12 +650,12 @@
     },
     {
       "date": "2015-12-05",
-      "opponent_id": "305894010",
-      "opponent_career_id": "career_013502",
-      "opponent_name": "Mark Keene",
-      "opponent_team": "Perry County Central",
+      "opponent_id": "432577076",
+      "opponent_career_id": "career_013074",
+      "opponent_name": "Christian Sinckler",
+      "opponent_team": "Harrison County",
       "opponent_team_rank": null,
-      "opponent_weight": 215,
+      "opponent_weight": 285,
       "opponent_rank": null,
       "weight_class": "285",
       "result": "W",
@@ -645,12 +666,12 @@
     },
     {
       "date": "2015-12-05",
-      "opponent_id": "432577076",
-      "opponent_career_id": "career_013074",
-      "opponent_name": "Christian Sinckler",
-      "opponent_team": "Harrison County",
+      "opponent_id": "305894010",
+      "opponent_career_id": "career_013502",
+      "opponent_name": "Mark Keene",
+      "opponent_team": "Perry County Central",
       "opponent_team_rank": null,
-      "opponent_weight": 285,
+      "opponent_weight": 215,
       "opponent_rank": null,
       "weight_class": "285",
       "result": "W",
@@ -693,22 +714,6 @@
     },
     {
       "date": "2015-11-28",
-      "opponent_id": "351887107",
-      "opponent_career_id": "career_013318",
-      "opponent_name": "River Lawson",
-      "opponent_team": "Whitley County",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:31",
-      "event": "vs. Whitley County"
-    },
-    {
-      "date": "2015-11-28",
       "opponent_id": "363394094",
       "opponent_career_id": "career_013304",
       "opponent_name": "gavian Hernandez",
@@ -722,6 +727,22 @@
       "score": null,
       "duration": "1:40",
       "event": "vs. Scott County"
+    },
+    {
+      "date": "2015-11-28",
+      "opponent_id": "351887107",
+      "opponent_career_id": "career_013318",
+      "opponent_name": "River Lawson",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:31",
+      "event": "vs. Whitley County"
     }
   ],
   "career": {
@@ -739,7 +760,7 @@
       "season": 2017,
       "grade": 12,
       "team": "Madison Southern",
-      "record": "36-3",
+      "record": "36-2",
       "regional_place": 1,
       "state_place": 3
     },
@@ -755,7 +776,7 @@
       "season": 2015,
       "grade": 10,
       "team": "Madison Southern",
-      "record": "27-9",
+      "record": "26-9",
       "regional_place": 2,
       "state_place": null
     },
@@ -763,15 +784,15 @@
       "season": 2014,
       "grade": null,
       "team": "Madison Southern",
-      "record": "26-6",
+      "record": "27-10",
       "regional_place": 3,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 127,
-    "losses": 24,
-    "win_pct": 0.841
+    "losses": 27,
+    "win_pct": 0.825
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,6 +5,11 @@
   "team_slug": "simon_kenton",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2017,
   "current_rank": null,
   "record": {
@@ -35,6 +40,22 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2017-02-18",
+      "opponent_id": "989450076",
+      "opponent_career_id": "career_010571",
+      "opponent_name": "chase blanton",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "DEC",
+      "score": "3-2",
+      "duration": "7:00",
+      "event": "2017 KHSAA State Championships"
+    },
     {
       "date": "2017-02-18",
       "opponent_id": "9828691009",
@@ -80,22 +101,6 @@
       "result": "W",
       "method": "MD",
       "score": "14-6",
-      "duration": "7:00",
-      "event": "2017 KHSAA State Championships"
-    },
-    {
-      "date": "2017-02-18",
-      "opponent_id": "989450076",
-      "opponent_career_id": "career_010571",
-      "opponent_name": "chase blanton",
-      "opponent_team": "Harrison County",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "DEC",
-      "score": "3-2",
       "duration": "7:00",
       "event": "2017 KHSAA State Championships"
     },
@@ -245,6 +250,22 @@
     },
     {
       "date": "2017-01-28",
+      "opponent_id": "850132107",
+      "opponent_career_id": "career_012577",
+      "opponent_name": "Kaleb Corbett",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "0:00",
+      "event": "vs. Fern Creek"
+    },
+    {
+      "date": "2017-01-28",
       "opponent_id": "549983013",
       "opponent_career_id": "career_012374",
       "opponent_name": "Daniel Langford",
@@ -261,38 +282,6 @@
     },
     {
       "date": "2017-01-28",
-      "opponent_id": "538820010",
-      "opponent_career_id": "career_011515",
-      "opponent_name": "Andrew Vazquez",
-      "opponent_team": "Oldham County",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "DEC",
-      "score": "5-1",
-      "duration": "7:00",
-      "event": "vs. Oldham County"
-    },
-    {
-      "date": "2017-01-28",
-      "opponent_id": "850132107",
-      "opponent_career_id": "career_012577",
-      "opponent_name": "Kaleb Corbett",
-      "opponent_team": "Fern Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "TF",
-      "score": "15-0",
-      "duration": "0:00",
-      "event": "vs. Simon Kenton"
-    },
-    {
-      "date": "2017-01-28",
       "opponent_id": "847151107",
       "opponent_career_id": "career_012405",
       "opponent_name": "Andrew Varble",
@@ -306,6 +295,22 @@
       "score": "7-4",
       "duration": "7:00",
       "event": "vs. Woodford County"
+    },
+    {
+      "date": "2017-01-28",
+      "opponent_id": "538820010",
+      "opponent_career_id": "career_011515",
+      "opponent_name": "Andrew Vazquez",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "vs. Oldham County"
     },
     {
       "date": "2017-01-25",
@@ -417,7 +422,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:58",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Covington Catholic"
     },
     {
       "date": "2017-01-11",
@@ -433,23 +438,7 @@
       "method": "DEC",
       "score": "10-5",
       "duration": "7:00",
-      "event": "vs. Simon Kenton"
-    },
-    {
-      "date": "2017-01-07",
-      "opponent_id": "989550076",
-      "opponent_career_id": "career_012243",
-      "opponent_name": "kaleb oakley",
-      "opponent_team": "Harrison County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:02",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Scott"
     },
     {
       "date": "2017-01-07",
@@ -465,7 +454,39 @@
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Danville"
+    },
+    {
+      "date": "2017-01-07",
+      "opponent_id": "989550076",
+      "opponent_career_id": "career_012243",
+      "opponent_name": "kaleb oakley",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:02",
+      "event": "vs. Harrison County"
+    },
+    {
+      "date": "2017-01-07",
+      "opponent_id": "983349076",
+      "opponent_career_id": "career_010588",
+      "opponent_name": "Dominic Hope",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:49",
+      "event": "vs. John Hardin"
     },
     {
       "date": "2017-01-07",
@@ -500,22 +521,6 @@
       "event": "vs. Talawanda"
     },
     {
-      "date": "2017-01-07",
-      "opponent_id": "983349076",
-      "opponent_career_id": "career_010588",
-      "opponent_name": "Dominic Hope",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:49",
-      "event": "vs. Simon Kenton"
-    },
-    {
       "date": "2017-01-04",
       "opponent_id": "863029076",
       "opponent_career_id": "career_008756",
@@ -529,7 +534,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:34",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2017-01-04",
@@ -545,7 +550,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Ryle"
     },
     {
       "date": "2016-12-28",
@@ -866,15 +871,15 @@
       "season": 2014,
       "grade": null,
       "team": "Simon Kenton",
-      "record": "24-19",
+      "record": "32-22",
       "regional_place": 3,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 102,
-    "losses": 48,
-    "win_pct": 0.68
+    "wins": 110,
+    "losses": 51,
+    "win_pct": 0.683
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "jeffersontown",
   "team_rank": null,
   "weight_class": 157,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "16-12",
+    "overall": "18-12",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -37,22 +42,6 @@
   "match_list": [
     {
       "date": "2014-01-11",
-      "opponent_id": "2886143009",
-      "opponent_career_id": "career_014565",
-      "opponent_name": "John Davis",
-      "opponent_team": "Fairdale",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:06",
-      "event": "Jefferson County Tournament of Champions"
-    },
-    {
-      "date": "2014-01-11",
       "opponent_id": "2886063009",
       "opponent_career_id": "career_015339",
       "opponent_name": "Brian Hardin",
@@ -65,7 +54,7 @@
       "method": "MD",
       "score": "15-5",
       "duration": "7:00",
-      "event": "Jefferson County Tournament of Champions"
+      "event": "JCTOC"
     },
     {
       "date": "2014-01-11",
@@ -81,7 +70,23 @@
       "method": "MD",
       "score": "10-1",
       "duration": "7:00",
-      "event": "Jefferson County Tournament of Champions"
+      "event": "JCTOC"
+    },
+    {
+      "date": "2014-01-11",
+      "opponent_id": "2886143009",
+      "opponent_career_id": "career_014565",
+      "opponent_name": "John Davis",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:06",
+      "event": "JCTOC"
     },
     {
       "date": "2014-01-11",
@@ -98,22 +103,6 @@
       "score": null,
       "duration": "2:08",
       "event": "JCTOC"
-    },
-    {
-      "date": "2014-01-04",
-      "opponent_id": "2887637009",
-      "opponent_career_id": "career_015709",
-      "opponent_name": "Stephan Say",
-      "opponent_team": "Walton Verona",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "MD",
-      "score": "15-6",
-      "duration": "7:00",
-      "event": "Fern Creek Gladiator Tournament"
     },
     {
       "date": "2014-01-04",
@@ -144,6 +133,22 @@
       "result": "W",
       "method": "FF",
       "score": null,
+      "duration": "7:00",
+      "event": "Fern Creek Gladiator Tournament"
+    },
+    {
+      "date": "2014-01-04",
+      "opponent_id": "2887637009",
+      "opponent_career_id": "career_015709",
+      "opponent_name": "Stephan Say",
+      "opponent_team": "Walton Verona",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "MD",
+      "score": "15-6",
       "duration": "7:00",
       "event": "Fern Creek Gladiator Tournament"
     },
@@ -181,51 +186,19 @@
     },
     {
       "date": "2014-01-03",
-      "opponent_id": "2887351009",
-      "opponent_career_id": "career_015647",
-      "opponent_name": "Zachariah Fritts",
-      "opponent_team": "Spencer County",
+      "opponent_id": "2885450009",
+      "opponent_career_id": "career_015214",
+      "opponent_name": "Devin Gulley",
+      "opponent_team": "Atherton",
       "opponent_team_rank": null,
-      "opponent_weight": 144,
+      "opponent_weight": 157,
       "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
+      "weight_class": "165",
+      "result": "L",
       "method": "DEC",
-      "score": "9-8",
+      "score": "11-4",
       "duration": "7:00",
-      "event": "vs. Spencer County"
-    },
-    {
-      "date": "2014-01-03",
-      "opponent_id": "2886145009",
-      "opponent_career_id": "career_013955",
-      "opponent_name": "Bryan Mike",
-      "opponent_team": "Fairdale",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:30",
-      "event": "vs. Fairdale"
-    },
-    {
-      "date": "2014-01-03",
-      "opponent_id": "2887637009",
-      "opponent_career_id": "career_015709",
-      "opponent_name": "Stephan Say",
-      "opponent_team": "Walton Verona",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "SV-1",
-      "score": "14-13",
-      "duration": "8:15",
-      "event": "vs. Walton Verona"
+      "event": "vs. Atherton"
     },
     {
       "date": "2014-01-03",
@@ -245,19 +218,51 @@
     },
     {
       "date": "2014-01-03",
-      "opponent_id": "2885450009",
-      "opponent_career_id": "career_015214",
-      "opponent_name": "Devin Gulley",
-      "opponent_team": "Atherton",
+      "opponent_id": "2886145009",
+      "opponent_career_id": "career_013955",
+      "opponent_name": "Bryan Mike",
+      "opponent_team": "Fairdale",
       "opponent_team_rank": null,
-      "opponent_weight": 157,
+      "opponent_weight": 150,
       "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:30",
+      "event": "vs. Fairdale"
+    },
+    {
+      "date": "2014-01-03",
+      "opponent_id": "2887351009",
+      "opponent_career_id": "career_015647",
+      "opponent_name": "Zachariah Fritts",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
       "method": "DEC",
-      "score": "11-4",
+      "score": "9-8",
       "duration": "7:00",
-      "event": "vs. Atherton"
+      "event": "vs. Spencer County"
+    },
+    {
+      "date": "2014-01-03",
+      "opponent_id": "2887637009",
+      "opponent_career_id": "career_015709",
+      "opponent_name": "Stephan Say",
+      "opponent_team": "Walton Verona",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "SV-1",
+      "score": "14-13",
+      "duration": "8:15",
+      "event": "vs. Walton Verona"
     },
     {
       "date": "2013-12-23",
@@ -289,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:47",
-      "event": "vs. Jeffersontown"
+      "event": "vs. South Oldham"
     },
     {
       "date": "2013-12-21",
@@ -305,7 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:38",
-      "event": "5 Star Classic"
+      "event": "Lafayette Classic"
     },
     {
       "date": "2013-12-21",
@@ -321,7 +326,7 @@
       "method": "DEC",
       "score": "8-7",
       "duration": "7:00",
-      "event": "5 Star Classic"
+      "event": "Lafayette Classic"
     },
     {
       "date": "2013-12-21",
@@ -337,7 +342,7 @@
       "method": "DEC",
       "score": "3-1",
       "duration": "7:00",
-      "event": "Lafayette Invitational"
+      "event": "Lafayette Classic"
     },
     {
       "date": "2013-12-21",
@@ -465,7 +470,7 @@
       "method": "TF",
       "score": "15-0",
       "duration": "0:00",
-      "event": "vs. Jeffersontown"
+      "event": "vs. Eastern"
     },
     {
       "date": "2013-11-26",
@@ -529,7 +534,7 @@
       "season": 2014,
       "grade": null,
       "team": "Jeffersontown",
-      "record": "16-12",
+      "record": "18-12",
       "regional_place": null,
       "state_place": null
     },
@@ -537,15 +542,15 @@
       "season": 2013,
       "grade": null,
       "team": "Jeffersontown",
-      "record": "20-14",
+      "record": "21-17",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 36,
-    "losses": 26,
-    "win_pct": 0.581
+    "wins": 39,
+    "losses": 29,
+    "win_pct": 0.574
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

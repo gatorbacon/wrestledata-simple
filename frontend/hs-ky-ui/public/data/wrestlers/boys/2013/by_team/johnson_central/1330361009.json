@@ -5,6 +5,11 @@
   "team_slug": "johnson_central",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
@@ -149,22 +154,6 @@
     },
     {
       "date": "2013-01-26",
-      "opponent_id": "1369704009",
-      "opponent_career_id": "career_014164",
-      "opponent_name": "Adam Rivera",
-      "opponent_team": "Moore",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "DEC",
-      "score": "4-3",
-      "duration": "7:00",
-      "event": "vs. Moore"
-    },
-    {
-      "date": "2013-01-26",
       "opponent_id": "1250753009",
       "opponent_career_id": "career_016197",
       "opponent_name": "Scharn Sublett",
@@ -177,7 +166,7 @@
       "method": "DEC",
       "score": "7-2",
       "duration": "7:00",
-      "event": "vs. Johnson Central"
+      "event": "vs. Central"
     },
     {
       "date": "2013-01-26",
@@ -194,6 +183,22 @@
       "score": "23-8",
       "duration": "5:29",
       "event": "vs. Union County"
+    },
+    {
+      "date": "2013-01-26",
+      "opponent_id": "1369704009",
+      "opponent_career_id": "career_014164",
+      "opponent_name": "Adam Rivera",
+      "opponent_team": "Moore",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "vs. Moore"
     },
     {
       "date": "2013-01-19",
@@ -453,22 +458,6 @@
     },
     {
       "date": "2013-01-05",
-      "opponent_id": "OUTSTATE_a020e95b1b56",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Midland Trail HS",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Midland Trail HS"
-    },
-    {
-      "date": "2013-01-05",
       "opponent_id": "1234529009",
       "opponent_career_id": null,
       "opponent_name": "Thomas Pence",
@@ -517,6 +506,22 @@
     },
     {
       "date": "2013-01-05",
+      "opponent_id": "1309690009",
+      "opponent_career_id": null,
+      "opponent_name": "Justin Street",
+      "opponent_team": "Grundy",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:30",
+      "event": "vs. Grundy"
+    },
+    {
+      "date": "2013-01-05",
       "opponent_id": "1334678009",
       "opponent_career_id": null,
       "opponent_name": "Robert Horner",
@@ -549,35 +554,19 @@
     },
     {
       "date": "2013-01-05",
-      "opponent_id": "1428580009",
+      "opponent_id": "OUTSTATE_a020e95b1b56",
       "opponent_career_id": null,
-      "opponent_name": "John Duncan",
-      "opponent_team": "Shady Spring",
+      "opponent_name": "Unknown",
+      "opponent_team": "Midland Trail HS",
       "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:40",
-      "event": "vs. Shady Spring"
-    },
-    {
-      "date": "2013-01-05",
-      "opponent_id": "1309690009",
-      "opponent_career_id": null,
-      "opponent_name": "Justin Street",
-      "opponent_team": "Grundy",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
+      "opponent_weight": 106,
       "opponent_rank": null,
       "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
+      "result": "W",
+      "method": "FF",
       "score": null,
-      "duration": "1:30",
-      "event": "vs. Grundy"
+      "duration": "7:00",
+      "event": "vs. Midland Trail HS"
     },
     {
       "date": "2013-01-05",
@@ -596,6 +585,22 @@
       "event": "vs. Richwood"
     },
     {
+      "date": "2013-01-05",
+      "opponent_id": "1428580009",
+      "opponent_career_id": null,
+      "opponent_name": "John Duncan",
+      "opponent_team": "Shady Spring",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:40",
+      "event": "vs. Shady Spring"
+    },
+    {
       "date": "2012-12-29",
       "opponent_id": "1316246009",
       "opponent_career_id": null,
@@ -608,6 +613,22 @@
       "result": "L",
       "method": "DEC",
       "score": "5-2",
+      "duration": "7:00",
+      "event": "Aggie Skeens Memorial"
+    },
+    {
+      "date": "2012-12-29",
+      "opponent_id": "1316246009",
+      "opponent_career_id": null,
+      "opponent_name": "Nicholas Helle",
+      "opponent_team": "Hidden Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "DEC",
+      "score": "3-1",
       "duration": "7:00",
       "event": "Aggie Skeens Memorial"
     },
@@ -827,7 +848,8 @@
       2016,
       2015,
       2014,
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -835,7 +857,7 @@
       "season": 2016,
       "grade": 12,
       "team": "Johnson Central",
-      "record": "41-9",
+      "record": "40-9",
       "regional_place": 1,
       "state_place": 6
     },
@@ -851,7 +873,7 @@
       "season": 2014,
       "grade": null,
       "team": "Johnson Central",
-      "record": "36-9",
+      "record": "40-11",
       "regional_place": null,
       "state_place": null
     },
@@ -862,12 +884,20 @@
       "record": "30-20",
       "regional_place": 2,
       "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 7,
+      "team": "Johnson Central",
+      "record": "0-2",
+      "regional_place": null,
+      "state_place": null
     }
   ],
   "career_record": {
-    "wins": 153,
-    "losses": 48,
-    "win_pct": 0.761
+    "wins": 156,
+    "losses": 52,
+    "win_pct": 0.75
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

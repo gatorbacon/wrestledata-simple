@@ -5,10 +5,15 @@
   "team_slug": "franklin_county",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2017,
   "current_rank": null,
   "record": {
-    "overall": "34-10",
+    "overall": "34-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,10 +25,10 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.52,
-    "bonus_rate": 0.8,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.808,
     "majors": 5,
-    "techs": 2,
+    "techs": 3,
     "pins": 13
   },
   "opponent_breakdown": {
@@ -117,6 +122,22 @@
     },
     {
       "date": "2017-02-04",
+      "opponent_id": "1336705076",
+      "opponent_career_id": "career_011793",
+      "opponent_name": "Tiffany Sullivan",
+      "opponent_team": "Danville",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Danville"
+    },
+    {
+      "date": "2017-02-04",
       "opponent_id": "532732010",
       "opponent_career_id": "career_012824",
       "opponent_name": "Jeremiah Jones",
@@ -130,22 +151,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Mccreary Central"
-    },
-    {
-      "date": "2017-02-04",
-      "opponent_id": "1336705076",
-      "opponent_career_id": "career_011793",
-      "opponent_name": "Tiffany Sullivan",
-      "opponent_team": "Danville",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Franklin County"
     },
     {
       "date": "2017-02-04",
@@ -325,6 +330,22 @@
     },
     {
       "date": "2017-01-07",
+      "opponent_id": "804735071",
+      "opponent_career_id": "career_010491",
+      "opponent_name": "Peter Mark",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "0:00",
+      "event": "Defender of the Mat 2016-17"
+    },
+    {
+      "date": "2017-01-07",
       "opponent_id": "894984076",
       "opponent_career_id": "career_012337",
       "opponent_name": "Matthew Mills",
@@ -369,7 +390,7 @@
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "TCI"
+      "event": "Tates Creek Invitational"
     },
     {
       "date": "2016-12-30",
@@ -405,38 +426,6 @@
     },
     {
       "date": "2016-12-23",
-      "opponent_id": "847129107",
-      "opponent_career_id": "career_011662",
-      "opponent_name": "David Chapelle",
-      "opponent_team": "Woodford County",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:39",
-      "event": "Fern Creek Gladiator Tournament"
-    },
-    {
-      "date": "2016-12-23",
-      "opponent_id": "580823013",
-      "opponent_career_id": "career_012347",
-      "opponent_name": "Brandon Coons",
-      "opponent_team": "Southern",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:57",
-      "event": "Fern Creek Gladiator Tournament"
-    },
-    {
-      "date": "2016-12-23",
       "opponent_id": "540454013",
       "opponent_career_id": "career_010462",
       "opponent_name": "Jordan Bates",
@@ -465,6 +454,38 @@
       "method": "DEC",
       "score": "7-3",
       "duration": "7:00",
+      "event": "Fern Creek Gladiator Tournament"
+    },
+    {
+      "date": "2016-12-23",
+      "opponent_id": "847129107",
+      "opponent_career_id": "career_011662",
+      "opponent_name": "David Chapelle",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:39",
+      "event": "Fern Creek Gladiator Tournament"
+    },
+    {
+      "date": "2016-12-23",
+      "opponent_id": "580823013",
+      "opponent_career_id": "career_012347",
+      "opponent_name": "Brandon Coons",
+      "opponent_team": "Southern",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:57",
       "event": "Fern Creek Gladiator Tournament"
     },
     {
@@ -581,22 +602,6 @@
     },
     {
       "date": "2016-12-10",
-      "opponent_id": "9836374009",
-      "opponent_career_id": "career_011419",
-      "opponent_name": "Zach Taylor",
-      "opponent_team": "West Jessamine",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. West Jessamine"
-    },
-    {
-      "date": "2016-12-10",
       "opponent_id": "41435123",
       "opponent_career_id": "career_008791",
       "opponent_name": "Ethan Wilson",
@@ -609,7 +614,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:15",
-      "event": "vs. Franklin County"
+      "event": "vs. Dixie Heights"
+    },
+    {
+      "date": "2016-12-10",
+      "opponent_id": "OUTSTATE_10ad6d5288f6",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Paul Dunbar",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Paul Dunbar"
     },
     {
       "date": "2016-12-10",
@@ -629,19 +650,19 @@
     },
     {
       "date": "2016-12-10",
-      "opponent_id": "OUTSTATE_10ad6d5288f6",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Paul Dunbar",
+      "opponent_id": "9836374009",
+      "opponent_career_id": "career_011419",
+      "opponent_name": "Zach Taylor",
+      "opponent_team": "West Jessamine",
       "opponent_team_rank": null,
-      "opponent_weight": null,
+      "opponent_weight": 113,
       "opponent_rank": null,
       "weight_class": "120",
       "result": "W",
-      "method": "FF",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
-      "event": "vs. Paul Dunbar"
+      "duration": "0:00",
+      "event": "vs. West Jessamine"
     },
     {
       "date": "2016-12-10",
@@ -754,7 +775,7 @@
       "season": 2017,
       "grade": 12,
       "team": "Franklin County",
-      "record": "34-10",
+      "record": "34-11",
       "regional_place": 2,
       "state_place": null
     },
@@ -762,7 +783,7 @@
       "season": 2016,
       "grade": 11,
       "team": "Franklin County",
-      "record": "26-16",
+      "record": "27-18",
       "regional_place": 4,
       "state_place": null
     },
@@ -770,15 +791,15 @@
       "season": 2015,
       "grade": 10,
       "team": "Franklin County",
-      "record": "18-15",
+      "record": "17-18",
       "regional_place": 4,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 78,
-    "losses": 41,
-    "win_pct": 0.655
+    "losses": 47,
+    "win_pct": 0.624
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

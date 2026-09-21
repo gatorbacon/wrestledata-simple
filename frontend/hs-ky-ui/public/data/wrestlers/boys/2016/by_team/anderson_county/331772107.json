@@ -5,10 +5,15 @@
   "team_slug": "anderson_county",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
-    "overall": "29-10",
+    "overall": "28-10",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,9 +25,9 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.762,
-    "bonus_rate": 0.857,
-    "majors": 2,
+    "pin_rate": 0.727,
+    "bonus_rate": 0.864,
+    "majors": 3,
     "techs": 0,
     "pins": 16
   },
@@ -437,6 +442,22 @@
     },
     {
       "date": "2015-12-18",
+      "opponent_id": "8257958009",
+      "opponent_career_id": "career_011464",
+      "opponent_name": "Mason Boggs",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "Lafayette 5 Star Classic"
+    },
+    {
+      "date": "2015-12-18",
       "opponent_id": "8054728009",
       "opponent_career_id": "career_012346",
       "opponent_name": "Brad Bailey",
@@ -501,6 +522,22 @@
     },
     {
       "date": "2015-12-12",
+      "opponent_id": "420686076",
+      "opponent_career_id": "career_013119",
+      "opponent_name": "Fatu Sevelo",
+      "opponent_team": "Madison Southern",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Madison Southern"
+    },
+    {
+      "date": "2015-12-12",
       "opponent_id": "290345013",
       "opponent_career_id": "career_013487",
       "opponent_name": "Stephen Basham",
@@ -530,38 +567,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Tates Creek"
-    },
-    {
-      "date": "2015-12-12",
-      "opponent_id": "420686076",
-      "opponent_career_id": "career_013119",
-      "opponent_name": "Fatu Sevelo",
-      "opponent_team": "Madison Southern",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Madison Southern"
-    },
-    {
-      "date": "2015-12-05",
-      "opponent_id": "350268107",
-      "opponent_career_id": "career_011480",
-      "opponent_name": "Nathan Prosser",
-      "opponent_team": "Mccreary Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Mccreary Central"
     },
     {
       "date": "2015-12-05",
@@ -626,6 +631,22 @@
       "score": null,
       "duration": "0:30",
       "event": "vs. Whitley County"
+    },
+    {
+      "date": "2015-12-05",
+      "opponent_id": "350268107",
+      "opponent_career_id": "career_011480",
+      "opponent_name": "Nathan Prosser",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Mccreary Central"
     }
   ],
   "career": {
@@ -651,7 +672,7 @@
       "season": 2017,
       "grade": 11,
       "team": "Anderson County",
-      "record": "27-5",
+      "record": "28-5",
       "regional_place": 3,
       "state_place": null
     },
@@ -659,7 +680,7 @@
       "season": 2016,
       "grade": 10,
       "team": "Anderson County",
-      "record": "29-10",
+      "record": "28-10",
       "regional_place": 4,
       "state_place": null
     },
@@ -677,5 +698,5 @@
     "losses": 33,
     "win_pct": 0.771
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,6 +5,11 @@
   "team_slug": "taylor_county",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.565,
-    "bonus_rate": 0.696,
+    "pin_rate": 0.542,
+    "bonus_rate": 0.667,
     "majors": 1,
     "techs": 2,
     "pins": 13
@@ -309,6 +314,22 @@
     },
     {
       "date": "2016-01-02",
+      "opponent_id": "398996094",
+      "opponent_career_id": null,
+      "opponent_name": "Jeremy Belli",
+      "opponent_team": "Reitz",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "0-0",
+      "duration": "7:00",
+      "event": "Fern Creek Gladiator Tournament"
+    },
+    {
+      "date": "2016-01-02",
       "opponent_id": "287615013",
       "opponent_career_id": "career_013209",
       "opponent_name": "Andrew Pritchett",
@@ -405,22 +426,6 @@
     },
     {
       "date": "2015-12-18",
-      "opponent_id": "432364071",
-      "opponent_career_id": "career_011475",
-      "opponent_name": "Nigel Lewis",
-      "opponent_team": "Madison Southern",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Lafayette 5 Star Classic"
-    },
-    {
-      "date": "2015-12-18",
       "opponent_id": "328086107",
       "opponent_career_id": "career_013065",
       "opponent_name": "Aaron Valentine",
@@ -430,6 +435,22 @@
       "opponent_rank": null,
       "weight_class": "165",
       "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Lafayette 5 Star Classic"
+    },
+    {
+      "date": "2015-12-18",
+      "opponent_id": "432364071",
+      "opponent_career_id": "career_011475",
+      "opponent_name": "Nigel Lewis",
+      "opponent_team": "Madison Southern",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -449,7 +470,7 @@
       "method": "MD",
       "score": "9-1",
       "duration": "7:00",
-      "event": "vs. Taylor County"
+      "event": "vs. Central"
     },
     {
       "date": "2015-12-16",
@@ -481,23 +502,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:39",
-      "event": "vs. Taylor County"
-    },
-    {
-      "date": "2015-12-05",
-      "opponent_id": "294150010",
-      "opponent_career_id": "career_012308",
-      "opponent_name": "Isacc Nichols",
-      "opponent_team": "North Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "DEC",
-      "score": "8-6",
-      "duration": "7:00",
-      "event": "vs. North Hardin"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2015-12-05",
@@ -513,7 +518,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:55",
-      "event": "vs. Taylor County"
+      "event": "vs. John Hardin"
     },
     {
       "date": "2015-12-05",
@@ -529,7 +534,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:13",
-      "event": "vs. Taylor County"
+      "event": "vs. Oldham County"
     },
     {
       "date": "2015-12-05",
@@ -546,6 +551,22 @@
       "score": null,
       "duration": "2:47",
       "event": "vs. Trigg County"
+    },
+    {
+      "date": "2015-12-05",
+      "opponent_id": "294150010",
+      "opponent_career_id": "career_012308",
+      "opponent_name": "Isacc Nichols",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-6",
+      "duration": "7:00",
+      "event": "vs. North Hardin"
     }
   ],
   "career": {
@@ -564,7 +585,7 @@
       "season": 2018,
       "grade": 12,
       "team": "Taylor County",
-      "record": "28-6",
+      "record": "37-6",
       "regional_place": 1,
       "state_place": 6
     },
@@ -572,7 +593,7 @@
       "season": 2017,
       "grade": 11,
       "team": "Taylor County",
-      "record": "10-5",
+      "record": "11-6",
       "regional_place": 3,
       "state_place": null
     },
@@ -596,15 +617,15 @@
       "season": 2014,
       "grade": null,
       "team": "Taylor County",
-      "record": "2-2",
+      "record": "4-4",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 79,
-    "losses": 36,
-    "win_pct": 0.687
+    "wins": 91,
+    "losses": 39,
+    "win_pct": 0.7
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

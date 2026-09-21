@@ -5,10 +5,15 @@
   "team_slug": "henry_clay",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2017,
   "current_rank": null,
   "record": {
-    "overall": "19-8",
+    "overall": "19-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -35,6 +40,22 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2017-02-18",
+      "opponent_id": "42689123",
+      "opponent_career_id": "career_012353",
+      "opponent_name": "Joshua Schmidt",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:55",
+      "event": "2017 KHSAA State Championships"
+    },
     {
       "date": "2017-02-18",
       "opponent_id": "9736547009",
@@ -65,22 +86,6 @@
       "method": "DEC",
       "score": "8-6",
       "duration": "7:00",
-      "event": "2017 KHSAA State Championships"
-    },
-    {
-      "date": "2017-02-18",
-      "opponent_id": "42689123",
-      "opponent_career_id": "career_012353",
-      "opponent_name": "Joshua Schmidt",
-      "opponent_team": "St. Xavier",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:55",
       "event": "2017 KHSAA State Championships"
     },
     {
@@ -161,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:09",
-      "event": "vs. Henry Clay"
+      "event": "vs. Central"
     },
     {
       "date": "2017-01-21",
@@ -341,22 +346,6 @@
     },
     {
       "date": "2016-12-17",
-      "opponent_id": "537396011",
-      "opponent_career_id": null,
-      "opponent_name": "Chase Bridgford",
-      "opponent_team": "Independence",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Independence"
-    },
-    {
-      "date": "2016-12-17",
       "opponent_id": "813109071",
       "opponent_career_id": null,
       "opponent_name": "Zuriel Hampton-Coffin",
@@ -389,19 +378,19 @@
     },
     {
       "date": "2016-12-17",
-      "opponent_id": "956460076",
+      "opponent_id": "537396011",
       "opponent_career_id": null,
-      "opponent_name": "Elmurray Bookman",
-      "opponent_team": "A C Flora",
+      "opponent_name": "Chase Bridgford",
+      "opponent_team": "Independence",
       "opponent_team_rank": null,
       "opponent_weight": 106,
       "opponent_rank": null,
-      "weight_class": "106",
-      "result": "W",
+      "weight_class": "113",
+      "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "1:17",
-      "event": "vs. A C Flora"
+      "duration": "0:00",
+      "event": "vs. Independence"
     },
     {
       "date": "2016-12-17",
@@ -418,6 +407,22 @@
       "score": "7-5",
       "duration": "7:00",
       "event": "vs. Arab"
+    },
+    {
+      "date": "2016-12-17",
+      "opponent_id": "956460076",
+      "opponent_career_id": null,
+      "opponent_name": "Elmurray Bookman",
+      "opponent_team": "A C Flora",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:17",
+      "event": "vs. A C Flora"
     },
     {
       "date": "2016-12-10",
@@ -555,15 +560,15 @@
       "season": 2017,
       "grade": 9,
       "team": "Henry Clay",
-      "record": "19-8",
+      "record": "19-11",
       "regional_place": 4,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 89,
-    "losses": 38,
-    "win_pct": 0.701
+    "losses": 41,
+    "win_pct": 0.685
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "frederick_douglass_",
   "team_rank": null,
   "weight_class": 106,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2019,
   "current_rank": null,
   "record": {
-    "overall": "0-0",
+    "overall": "31-13",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.857,
+    "pin_rate": 0.682,
+    "bonus_rate": 0.864,
     "majors": 2,
     "techs": 2,
-    "pins": 14
+    "pins": 15
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -53,6 +58,22 @@
     },
     {
       "date": "2019-02-09",
+      "opponent_id": "5112868132",
+      "opponent_career_id": "career_010016",
+      "opponent_name": "Donnie Stephens",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "KHSAA Region 7"
+    },
+    {
+      "date": "2019-02-09",
       "opponent_id": "5124480132",
       "opponent_career_id": "career_008946",
       "opponent_name": "Jacob U`wren",
@@ -68,20 +89,36 @@
       "event": "KHSAA Region 7"
     },
     {
-      "date": "2019-02-09",
-      "opponent_id": "5112868132",
-      "opponent_career_id": "career_010016",
-      "opponent_name": "Donnie Stephens",
-      "opponent_team": "Whitley County",
+      "date": "2019-02-02",
+      "opponent_id": "5309430132",
+      "opponent_career_id": "career_008964",
+      "opponent_name": "Luke Chapman",
+      "opponent_team": "Lafayette",
       "opponent_team_rank": null,
-      "opponent_weight": 113,
+      "opponent_weight": 106,
       "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
+      "weight_class": "106",
+      "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "KHSAA Region 7"
+      "duration": "1:07",
+      "event": "Lexington City Tournament"
+    },
+    {
+      "date": "2019-02-02",
+      "opponent_id": "5122959132",
+      "opponent_career_id": "career_008832",
+      "opponent_name": "Drew Yingling",
+      "opponent_team": "La Rue County",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:58",
+      "event": "2019 Kentucky JV State Championships"
     },
     {
       "date": "2019-02-02",
@@ -114,38 +151,6 @@
       "score": "13-5",
       "duration": "7:00",
       "event": "2019 Kentucky JV State Championships"
-    },
-    {
-      "date": "2019-02-02",
-      "opponent_id": "5122959132",
-      "opponent_career_id": "career_008832",
-      "opponent_name": "Drew Yingling",
-      "opponent_team": "La Rue County",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:58",
-      "event": "2019 Kentucky JV State Championships"
-    },
-    {
-      "date": "2019-02-02",
-      "opponent_id": "5309430132",
-      "opponent_career_id": "career_008964",
-      "opponent_name": "Luke Chapman",
-      "opponent_team": "Lafayette",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:07",
-      "event": "Lexington City Tournament"
     },
     {
       "date": "2019-02-01",
@@ -205,10 +210,10 @@
       "opponent_weight": 106,
       "opponent_rank": null,
       "weight_class": "106",
-      "result": "L",
+      "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "2:00",
+      "duration": "3:43",
       "event": "Capital City Classic"
     },
     {
@@ -228,6 +233,38 @@
       "event": "Capital City Classic"
     },
     {
+      "date": "2019-01-09",
+      "opponent_id": "OUTSTATE_60d9f28b334a",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Henry Clay"
+    },
+    {
+      "date": "2019-01-09",
+      "opponent_id": "OUTSTATE_3e7053701b0d",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Bryan Station",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Bryan Station"
+    },
+    {
       "date": "2019-01-05",
       "opponent_id": "5076812132",
       "opponent_career_id": "career_006063",
@@ -241,22 +278,6 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Tates Creek Invitational"
-    },
-    {
-      "date": "2019-01-05",
-      "opponent_id": "5113060132",
-      "opponent_career_id": "career_010770",
-      "opponent_name": "Jaine Stephens",
-      "opponent_team": "Whitley County",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "L",
-      "method": "DEC",
-      "score": "4-1",
-      "duration": "7:00",
       "event": "Tates Creek Invitational"
     },
     {
@@ -276,20 +297,36 @@
       "event": "Tates Creek Invitational"
     },
     {
-      "date": "2018-12-20",
-      "opponent_id": "5376864132",
-      "opponent_career_id": "career_006082",
-      "opponent_name": "Chase Bowlin",
-      "opponent_team": "Mccreary Central",
+      "date": "2019-01-05",
+      "opponent_id": "5113060132",
+      "opponent_career_id": "career_010770",
+      "opponent_name": "Jaine Stephens",
+      "opponent_team": "Whitley County",
       "opponent_team_rank": null,
-      "opponent_weight": 113,
+      "opponent_weight": 106,
       "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Frederick Douglas"
+      "weight_class": "106",
+      "result": "L",
+      "method": "MD",
+      "score": "13-4",
+      "duration": "7:00",
+      "event": "Tates Creek Invitational"
+    },
+    {
+      "date": "2019-01-05",
+      "opponent_id": "5113060132",
+      "opponent_career_id": "career_010770",
+      "opponent_name": "Jaine Stephens",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "Tates Creek Invitational"
     },
     {
       "date": "2018-12-20",
@@ -305,7 +342,55 @@
       "method": "FALL",
       "score": null,
       "duration": "0:56",
-      "event": "vs. Frederick Douglas"
+      "event": "vs. Spencer County"
+    },
+    {
+      "date": "2018-12-20",
+      "opponent_id": "OUTSTATE_6abc6a5a6886",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Danville",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Danville"
+    },
+    {
+      "date": "2018-12-20",
+      "opponent_id": "OUTSTATE_40501eb234a9",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Scott County"
+    },
+    {
+      "date": "2018-12-20",
+      "opponent_id": "5376864132",
+      "opponent_career_id": "career_006082",
+      "opponent_name": "Chase Bowlin",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Mccreary Central"
     },
     {
       "date": "2018-12-20",
@@ -321,23 +406,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Frederick Douglass"
+      "event": "vs. Western Hills"
     },
     {
       "date": "2018-12-15",
-      "opponent_id": "5224038132",
-      "opponent_career_id": "career_009993",
-      "opponent_name": "Jamal Shalash",
-      "opponent_team": "Tates Creek",
+      "opponent_id": "OUTSTATE_fa707c1de75c",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Bardstown",
       "opponent_team_rank": null,
-      "opponent_weight": 106,
+      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "106",
       "result": "W",
-      "method": "FALL",
+      "method": "FF",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Frederick Douglas"
+      "duration": "7:00",
+      "event": "vs. Bardstown"
     },
     {
       "date": "2018-12-15",
@@ -353,23 +438,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:22",
-      "event": "vs. Frederick Douglas"
-    },
-    {
-      "date": "2018-12-15",
-      "opponent_id": "5477147132",
-      "opponent_career_id": "career_011341",
-      "opponent_name": "Emily Amee",
-      "opponent_team": "Western Hills",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "W",
-      "method": "TF",
-      "score": "16-1",
-      "duration": "0:00",
-      "event": "vs. Frederick Douglas"
+      "event": "vs. Wayne County"
     },
     {
       "date": "2018-12-15",
@@ -385,7 +454,39 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Frederick Douglas"
+      "event": "vs. Whitley County"
+    },
+    {
+      "date": "2018-12-15",
+      "opponent_id": "5477147132",
+      "opponent_career_id": "career_011341",
+      "opponent_name": "Emily Amee",
+      "opponent_team": "Western Hills",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "0:00",
+      "event": "vs. Western Hills"
+    },
+    {
+      "date": "2018-12-15",
+      "opponent_id": "5224038132",
+      "opponent_career_id": "career_009993",
+      "opponent_name": "Jamal Shalash",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Tates Creek"
     },
     {
       "date": "2018-12-12",
@@ -401,7 +502,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Frederick Douglass"
+      "event": "vs. Madison Southern"
     },
     {
       "date": "2018-12-08",
@@ -417,39 +518,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Frederick Douglas"
-    },
-    {
-      "date": "2018-12-08",
-      "opponent_id": "5093824132",
-      "opponent_career_id": "career_007792",
-      "opponent_name": "Noah Toomey",
-      "opponent_team": "Grant County",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "W",
-      "method": "DEC",
-      "score": "9-2",
-      "duration": "7:00",
-      "event": "vs. Frederick Douglas"
-    },
-    {
-      "date": "2018-12-08",
-      "opponent_id": "5326629132",
-      "opponent_career_id": "career_008866",
-      "opponent_name": "David Griffith",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Frederick Douglas"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2018-12-08",
@@ -465,7 +534,87 @@
       "method": "DEC",
       "score": "10-8",
       "duration": "7:00",
-      "event": "vs. Frederick Douglas"
+      "event": "vs. Moore"
+    },
+    {
+      "date": "2018-12-08",
+      "opponent_id": "OUTSTATE_c187bf3da90b",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. North Oldham"
+    },
+    {
+      "date": "2018-12-08",
+      "opponent_id": "5093824132",
+      "opponent_career_id": "career_007792",
+      "opponent_name": "Noah Toomey",
+      "opponent_team": "Grant County",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-2",
+      "duration": "7:00",
+      "event": "vs. Grant County"
+    },
+    {
+      "date": "2018-12-08",
+      "opponent_id": "5326629132",
+      "opponent_career_id": "career_008866",
+      "opponent_name": "David Griffith",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Meade County"
+    },
+    {
+      "date": "2018-12-05",
+      "opponent_id": "OUTSTATE_e154a2d4e8e0",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "East Jessamine",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. East Jessamine"
+    },
+    {
+      "date": "2018-12-05",
+      "opponent_id": "OUTSTATE_931f1ed55205",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "West Jessamine",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. West Jessamine"
     },
     {
       "date": "2018-12-01",
@@ -481,22 +630,6 @@
       "method": "MD",
       "score": "15-5",
       "duration": "7:00",
-      "event": "HCIWT"
-    },
-    {
-      "date": "2018-12-01",
-      "opponent_id": "5629139132",
-      "opponent_career_id": "career_007804",
-      "opponent_name": "Aydn Funkhouser",
-      "opponent_team": "Harrison County",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
       "event": "HCIWT"
     },
     {
@@ -532,6 +665,22 @@
       "event": "HCIWT"
     },
     {
+      "date": "2018-12-01",
+      "opponent_id": "5629139132",
+      "opponent_career_id": "career_007804",
+      "opponent_name": "Aydn Funkhouser",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "HCIWT"
+    },
+    {
       "date": "2018-11-24",
       "opponent_id": "5122715132",
       "opponent_career_id": "career_008971",
@@ -545,23 +694,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Frederick Douglas"
-    },
-    {
-      "date": "2018-11-24",
-      "opponent_id": "4641182132",
-      "opponent_career_id": "career_010121",
-      "opponent_name": "Dalen Lesshafft",
-      "opponent_team": "Desales",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Frederick Douglas"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2018-11-24",
@@ -577,7 +710,39 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Frederick Douglas"
+      "event": "vs. Bryan Station"
+    },
+    {
+      "date": "2018-11-24",
+      "opponent_id": "4641182132",
+      "opponent_career_id": "career_010121",
+      "opponent_name": "Dalen Lesshafft",
+      "opponent_team": "Desales",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Desales"
+    },
+    {
+      "date": "2018-11-24",
+      "opponent_id": "OUTSTATE_0e10b1d4d3cb",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Holmes",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Holmes"
     }
   ],
   "career": {
@@ -602,7 +767,7 @@
       "season": 2020,
       "grade": 10,
       "team": "Frederick Douglas ",
-      "record": "0-0",
+      "record": "25-11",
       "regional_place": null,
       "state_place": null
     },
@@ -610,15 +775,15 @@
       "season": 2019,
       "grade": 9,
       "team": "Frederick Douglass ",
-      "record": "0-0",
+      "record": "31-13",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 17,
-    "losses": 12,
-    "win_pct": 0.586
+    "wins": 73,
+    "losses": 36,
+    "win_pct": 0.67
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

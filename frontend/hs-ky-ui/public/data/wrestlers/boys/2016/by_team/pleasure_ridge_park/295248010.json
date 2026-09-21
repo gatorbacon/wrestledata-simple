@@ -5,10 +5,15 @@
   "team_slug": "pleasure_ridge_park",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
-    "overall": "10-6",
+    "overall": "10-5",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.833,
+    "pin_rate": 0.857,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 5
+    "pins": 6
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -165,6 +170,22 @@
     },
     {
       "date": "2016-01-02",
+      "opponent_id": "352393094",
+      "opponent_career_id": "career_012638",
+      "opponent_name": "Ian Wade",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:17",
+      "event": "Valley Invitational"
+    },
+    {
+      "date": "2016-01-02",
       "opponent_id": "427880076",
       "opponent_career_id": null,
       "opponent_name": "Humberto Pulido",
@@ -181,22 +202,6 @@
     },
     {
       "date": "2015-12-05",
-      "opponent_id": "320087107",
-      "opponent_career_id": "career_012357",
-      "opponent_name": "Devin Bradley",
-      "opponent_team": "St. Xavier",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:38",
-      "event": "vs. St. Xavier"
-    },
-    {
-      "date": "2015-12-05",
       "opponent_id": "310776107",
       "opponent_career_id": "career_013045",
       "opponent_name": "James Wharton",
@@ -209,7 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:18",
-      "event": "vs. Pleasure Ridge Park"
+      "event": "vs. Doss"
     },
     {
       "date": "2015-12-05",
@@ -245,6 +250,22 @@
     },
     {
       "date": "2015-12-05",
+      "opponent_id": "320087107",
+      "opponent_career_id": "career_012357",
+      "opponent_name": "Devin Bradley",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:38",
+      "event": "vs. St. Xavier"
+    },
+    {
+      "date": "2015-12-05",
       "opponent_id": "284274013",
       "opponent_career_id": "career_013192",
       "opponent_name": "Austin Martin",
@@ -272,15 +293,15 @@
       "season": 2016,
       "grade": 10,
       "team": "Pleasure Ridge Park",
-      "record": "10-6",
+      "record": "10-5",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 10,
-    "losses": 6,
-    "win_pct": 0.625
+    "losses": 5,
+    "win_pct": 0.667
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

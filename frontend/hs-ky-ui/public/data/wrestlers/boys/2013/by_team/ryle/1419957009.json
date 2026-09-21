@@ -5,10 +5,15 @@
   "team_slug": "ryle",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "51-6",
+    "overall": "52-6",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.68,
-    "bonus_rate": 0.8,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.784,
     "majors": 4,
     "techs": 2,
     "pins": 34
@@ -97,7 +102,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:13",
-      "event": "KHSAA State Tournament"
+      "event": "2013 KHSAA State Championships"
     },
     {
       "date": "2013-02-16",
@@ -161,6 +166,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:11",
+      "event": "2013 KHSAA State Championships"
+    },
+    {
+      "date": "2013-02-16",
+      "opponent_id": "1454941009",
+      "opponent_career_id": "career_013205",
+      "opponent_name": "Keegan Duncan",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
       "event": "2013 KHSAA State Championships"
     },
     {
@@ -321,7 +342,7 @@
       "method": "DEC",
       "score": "7-6",
       "duration": "7:00",
-      "event": "Dragon Invitational @ South Oldham"
+      "event": "Dragon Inv"
     },
     {
       "date": "2013-01-19",
@@ -337,7 +358,7 @@
       "method": "DEC",
       "score": "3-0",
       "duration": "7:00",
-      "event": "Dragon Invitational"
+      "event": "Dragon Inv"
     },
     {
       "date": "2013-01-19",
@@ -656,8 +677,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "2012 NKAC Conference"
+      "duration": "2:45",
+      "event": "2012 NKAC"
     },
     {
       "date": "2012-12-22",
@@ -672,7 +693,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "0:37",
       "event": "2012 NKAC"
     },
     {
@@ -833,7 +854,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:23",
-      "event": "vs. Ryle"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2012-12-08",
@@ -853,22 +874,6 @@
     },
     {
       "date": "2012-12-08",
-      "opponent_id": "1480209009",
-      "opponent_career_id": "career_015730",
-      "opponent_name": "Nathan Boston",
-      "opponent_team": "Woodford County",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "DEC",
-      "score": "2-1",
-      "duration": "7:00",
-      "event": "2012 Ryle Raider Rumble"
-    },
-    {
-      "date": "2012-12-08",
       "opponent_id": "1369702009",
       "opponent_career_id": "career_014026",
       "opponent_name": "Bobby Poynter",
@@ -881,6 +886,22 @@
       "method": "FALL",
       "score": null,
       "duration": "2:43",
+      "event": "2012 Ryle Raider Rumble"
+    },
+    {
+      "date": "2012-12-08",
+      "opponent_id": "1480209009",
+      "opponent_career_id": "career_015730",
+      "opponent_name": "Nathan Boston",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "7:00",
       "event": "2012 Ryle Raider Rumble"
     },
     {
@@ -952,7 +973,10 @@
     "career_id": "career_015773",
     "canonical_name": "Gus Adams",
     "seasons": [
-      2013
+      2013,
+      2012,
+      2011,
+      2010
     ]
   },
   "season_summary": [
@@ -960,15 +984,39 @@
       "season": 2013,
       "grade": null,
       "team": "Ryle",
-      "record": "51-6",
+      "record": "52-6",
       "regional_place": 3,
       "state_place": 4
+    },
+    {
+      "season": 2012,
+      "grade": 11,
+      "team": "Ryle",
+      "record": "4-2",
+      "regional_place": null,
+      "state_place": 5
+    },
+    {
+      "season": 2011,
+      "grade": 10,
+      "team": "Ryle",
+      "record": "5-2",
+      "regional_place": null,
+      "state_place": 4
+    },
+    {
+      "season": 2010,
+      "grade": 9,
+      "team": "Ryle",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
     }
   ],
   "career_record": {
-    "wins": 51,
-    "losses": 6,
-    "win_pct": 0.895
+    "wins": 63,
+    "losses": 12,
+    "win_pct": 0.84
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

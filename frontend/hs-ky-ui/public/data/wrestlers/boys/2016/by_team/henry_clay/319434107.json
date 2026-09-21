@@ -5,6 +5,11 @@
   "team_slug": "henry_clay",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.857,
-    "bonus_rate": 0.857,
+    "pin_rate": 0.864,
+    "bonus_rate": 0.864,
     "majors": 0,
     "techs": 0,
-    "pins": 18
+    "pins": 19
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -149,6 +154,22 @@
     },
     {
       "date": "2016-02-13",
+      "opponent_id": "303233013",
+      "opponent_career_id": "career_012951",
+      "opponent_name": "Anothony Daffron",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "KHSAA Region 7"
+    },
+    {
+      "date": "2016-02-13",
       "opponent_id": "350274107",
       "opponent_career_id": "career_012603",
       "opponent_name": "Conner Ball",
@@ -176,24 +197,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:25",
       "event": "City Tournament"
-    },
-    {
-      "date": "2016-01-16",
-      "opponent_id": "290789013",
-      "opponent_career_id": "career_013705",
-      "opponent_name": "Jack Lindsey",
-      "opponent_team": "Madison Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:40",
-      "event": "vs. Madison Central"
     },
     {
       "date": "2016-01-16",
@@ -210,6 +215,22 @@
       "score": null,
       "duration": "1:23",
       "event": "vs. Lafayette"
+    },
+    {
+      "date": "2016-01-16",
+      "opponent_id": "290789013",
+      "opponent_career_id": "career_013705",
+      "opponent_name": "Jack Lindsey",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:40",
+      "event": "vs. Madison Central"
     },
     {
       "date": "2016-01-16",
@@ -649,15 +670,15 @@
       "season": 2015,
       "grade": 9,
       "team": "Henry Clay",
-      "record": "25-23",
+      "record": "26-23",
       "regional_place": 2,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 49,
+    "wins": 50,
     "losses": 37,
-    "win_pct": 0.57
+    "win_pct": 0.575
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

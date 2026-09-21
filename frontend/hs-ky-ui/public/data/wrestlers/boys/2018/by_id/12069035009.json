@@ -5,6 +5,11 @@
   "team_slug": "henry_clay",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2018,
   "current_rank": null,
   "record": {
@@ -53,6 +58,22 @@
     },
     {
       "date": "2018-02-03",
+      "opponent_id": "12212938009",
+      "opponent_career_id": "career_009534",
+      "opponent_name": "Desmond Allison",
+      "opponent_team": "Frederick Douglas ",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-4",
+      "duration": "7:00",
+      "event": "Lexington City Tournament"
+    },
+    {
+      "date": "2018-02-03",
       "opponent_id": "12102700009",
       "opponent_career_id": "career_010240",
       "opponent_name": "Kyle Grizz",
@@ -81,22 +102,6 @@
       "method": "FALL",
       "score": null,
       "duration": "2:45",
-      "event": "Lexington City Tournament"
-    },
-    {
-      "date": "2018-02-03",
-      "opponent_id": "12212938009",
-      "opponent_career_id": "career_009534",
-      "opponent_name": "Desmond Allison",
-      "opponent_team": "Frederick Douglas ",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "DEC",
-      "score": "8-4",
-      "duration": "7:00",
       "event": "Lexington City Tournament"
     },
     {
@@ -129,7 +134,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:20",
-      "event": "vs. Henry Clay"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2018-01-20",
@@ -225,23 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:34",
-      "event": "vs. Henry Clay"
-    },
-    {
-      "date": "2017-12-20",
-      "opponent_id": "118915132",
-      "opponent_career_id": "career_011626",
-      "opponent_name": "Brandon Miller",
-      "opponent_team": "Taylor County",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "TF",
-      "score": "18-2",
-      "duration": "0:00",
-      "event": "vs. Taylor County"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2017-12-20",
@@ -258,6 +247,22 @@
       "score": "7-4",
       "duration": "7:00",
       "event": "vs. Mccreary Central"
+    },
+    {
+      "date": "2017-12-20",
+      "opponent_id": "118915132",
+      "opponent_career_id": "career_011626",
+      "opponent_name": "Brandon Miller",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "TF",
+      "score": "18-2",
+      "duration": "0:00",
+      "event": "vs. Taylor County"
     },
     {
       "date": "2017-12-09",
@@ -362,7 +367,7 @@
       "season": 2016,
       "grade": 10,
       "team": "Henry Clay",
-      "record": "11-8",
+      "record": "11-9",
       "regional_place": null,
       "state_place": null
     },
@@ -377,8 +382,8 @@
   ],
   "career_record": {
     "wins": 22,
-    "losses": 21,
-    "win_pct": 0.512
+    "losses": 22,
+    "win_pct": 0.5
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

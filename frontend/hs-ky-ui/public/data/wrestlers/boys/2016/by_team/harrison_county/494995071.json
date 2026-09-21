@@ -5,10 +5,15 @@
   "team_slug": "harrison_county",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
-    "overall": "16-16",
+    "overall": "9-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
     "pins": 2
@@ -35,6 +40,22 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2016-02-20",
+      "opponent_id": "8274439009",
+      "opponent_career_id": "career_013014",
+      "opponent_name": "Aaron Chandler",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:45",
+      "event": "KHSAA State Tournament"
+    },
     {
       "date": "2016-02-20",
       "opponent_id": "8274439009",
@@ -100,6 +121,54 @@
       "event": "KHSAA Region 8"
     },
     {
+      "date": "2016-02-13",
+      "opponent_id": "297229010",
+      "opponent_career_id": "career_010458",
+      "opponent_name": "William Baber",
+      "opponent_team": "Bourbon County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "DEC",
+      "score": "6-2",
+      "duration": "7:00",
+      "event": "KHSAA Region 8"
+    },
+    {
+      "date": "2016-02-13",
+      "opponent_id": "297229010",
+      "opponent_career_id": "career_010458",
+      "opponent_name": "William Baber",
+      "opponent_team": "Bourbon County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "DEC",
+      "score": "9-7",
+      "duration": "7:00",
+      "event": "KHSAA Region 8"
+    },
+    {
+      "date": "2016-02-13",
+      "opponent_id": "297229010",
+      "opponent_career_id": "career_010458",
+      "opponent_name": "William Baber",
+      "opponent_team": "Bourbon County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "DEC",
+      "score": "6-3",
+      "duration": "7:00",
+      "event": "KHSAA Region 8"
+    },
+    {
       "date": "2016-02-06",
       "opponent_id": "283622013",
       "opponent_career_id": "career_012424",
@@ -113,7 +182,7 @@
       "method": "DEC",
       "score": "9-2",
       "duration": "7:00",
-      "event": "vs. Harrison County"
+      "event": "vs. Danville"
     },
     {
       "date": "2016-02-06",
@@ -240,8 +309,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Harrison County"
+      "duration": "0:51",
+      "event": "vs. Boyd County"
     },
     {
       "date": "2016-01-09",
@@ -307,7 +376,7 @@
       "season": 2019,
       "grade": 12,
       "team": "Harrison County",
-      "record": "18-8",
+      "record": "19-9",
       "regional_place": null,
       "state_place": null
     },
@@ -331,15 +400,15 @@
       "season": 2016,
       "grade": 9,
       "team": "Harrison County",
-      "record": "16-16",
+      "record": "9-11",
       "regional_place": 3,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 56,
-    "losses": 29,
-    "win_pct": 0.659
+    "wins": 50,
+    "losses": 25,
+    "win_pct": 0.667
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

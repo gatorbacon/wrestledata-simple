@@ -5,6 +5,11 @@
   "team_slug": "holmes",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.562,
-    "bonus_rate": 0.688,
+    "pin_rate": 0.529,
+    "bonus_rate": 0.647,
     "majors": 2,
     "techs": 0,
     "pins": 9
@@ -197,6 +202,22 @@
     },
     {
       "date": "2016-01-30",
+      "opponent_id": "361574094",
+      "opponent_career_id": "career_013653",
+      "opponent_name": "Matthew Manns",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "DEC",
+      "score": "3-1",
+      "duration": "7:00",
+      "event": "Western Hills Invitational"
+    },
+    {
+      "date": "2016-01-30",
       "opponent_id": "328097107",
       "opponent_career_id": "career_010562",
       "opponent_name": "Charles Hancock",
@@ -325,6 +346,22 @@
     },
     {
       "date": "2016-01-06",
+      "opponent_id": "329035107",
+      "opponent_career_id": "career_012987",
+      "opponent_name": "Hayden Brothers",
+      "opponent_team": "Boone County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:30",
+      "event": "vs. Boone County"
+    },
+    {
+      "date": "2016-01-06",
       "opponent_id": "445746076",
       "opponent_career_id": null,
       "opponent_name": "Brandon Bridges",
@@ -338,22 +375,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. North College Hill"
-    },
-    {
-      "date": "2016-01-06",
-      "opponent_id": "329035107",
-      "opponent_career_id": "career_012987",
-      "opponent_name": "Hayden Brothers",
-      "opponent_team": "Boone County",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:30",
-      "event": "vs. Holmes"
     },
     {
       "date": "2016-01-02",
@@ -389,6 +410,22 @@
     },
     {
       "date": "2015-12-31",
+      "opponent_id": "324008010",
+      "opponent_career_id": "career_013442",
+      "opponent_name": "Derek Gray",
+      "opponent_team": "Covington Catholic",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Covington Catholic"
+    },
+    {
+      "date": "2015-12-31",
       "opponent_id": "385059094",
       "opponent_career_id": "career_013170",
       "opponent_name": "Noah Lucas",
@@ -402,22 +439,6 @@
       "score": "10-3",
       "duration": "7:00",
       "event": "vs. Scott"
-    },
-    {
-      "date": "2015-12-31",
-      "opponent_id": "324008010",
-      "opponent_career_id": "career_013442",
-      "opponent_name": "Derek Gray",
-      "opponent_team": "Covington Catholic",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Holmes"
     },
     {
       "date": "2015-12-31",
@@ -609,7 +630,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "vs. Holmes"
+      "event": "vs. Covington Catholic"
     },
     {
       "date": "2015-12-05",
@@ -721,7 +742,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Holmes"
+      "event": "vs. Bryan Station"
     },
     {
       "date": "2015-11-28",
@@ -828,5 +849,5 @@
     "losses": 59,
     "win_pct": 0.427
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

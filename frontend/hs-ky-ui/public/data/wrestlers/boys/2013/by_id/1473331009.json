@@ -5,10 +5,15 @@
   "team_slug": "western_hills",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "21-14",
+    "overall": "26-17",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.231,
-    "bonus_rate": 0.615,
+    "pin_rate": 0.2,
+    "bonus_rate": 0.533,
     "majors": 4,
     "techs": 1,
     "pins": 3
@@ -65,7 +70,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Region 7"
+      "event": "KHSAA Region 7"
     },
     {
       "date": "2013-02-09",
@@ -113,7 +118,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Western Hills"
+      "event": "vs. Tates Creek"
     },
     {
       "date": "2013-01-26",
@@ -165,6 +170,22 @@
     },
     {
       "date": "2013-01-19",
+      "opponent_id": "1242710009",
+      "opponent_career_id": "career_012998",
+      "opponent_name": "Braden Sperry",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "0:00",
+      "event": "Capital City Classic"
+    },
+    {
+      "date": "2013-01-19",
       "opponent_id": "1270769009",
       "opponent_career_id": "career_015909",
       "opponent_name": "Cordell Dobson",
@@ -193,7 +214,55 @@
       "method": "DEC",
       "score": "12-5",
       "duration": "7:00",
-      "event": "Capital City Championship"
+      "event": "Capital City Classic"
+    },
+    {
+      "date": "2013-01-19",
+      "opponent_id": "OUTSTATE_cae761e99cc3",
+      "opponent_career_id": null,
+      "opponent_name": "Ean Daly",
+      "opponent_team": "Boyle",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Capital City Classic"
+    },
+    {
+      "date": "2013-01-19",
+      "opponent_id": "1270769009",
+      "opponent_career_id": "career_015909",
+      "opponent_name": "Cordell Dobson",
+      "opponent_team": "Danville",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "DEC",
+      "score": "10-4",
+      "duration": "7:00",
+      "event": "Capital City Classic"
+    },
+    {
+      "date": "2013-01-19",
+      "opponent_id": "1328422009",
+      "opponent_career_id": null,
+      "opponent_name": "M. Vazuez",
+      "opponent_team": "Jeffersonville",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "DEC",
+      "score": "11-8",
+      "duration": "7:00",
+      "event": "Capital City Classic"
     },
     {
       "date": "2013-01-09",
@@ -209,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Western Hills"
+      "event": "vs. Bryan Station"
     },
     {
       "date": "2013-01-05",
@@ -225,7 +294,7 @@
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Tates Creek Invitation"
+      "event": "Tates Creek Invitational"
     },
     {
       "date": "2013-01-05",
@@ -325,22 +394,6 @@
     },
     {
       "date": "2012-12-22",
-      "opponent_id": "1449701009",
-      "opponent_career_id": "career_014118",
-      "opponent_name": "Garrett Haggerty",
-      "opponent_team": "Taylor County",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Lafayette Classic"
-    },
-    {
-      "date": "2012-12-22",
       "opponent_id": "1250718009",
       "opponent_career_id": "career_016196",
       "opponent_name": "Sam Brown",
@@ -369,7 +422,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:16",
-      "event": "Lafayette 5 Star Classic"
+      "event": "Lafayette Classic"
     },
     {
       "date": "2012-12-22",
@@ -388,6 +441,22 @@
       "event": "Lafayette Classic"
     },
     {
+      "date": "2012-12-22",
+      "opponent_id": "1449701009",
+      "opponent_career_id": "career_014118",
+      "opponent_name": "Garrett Haggerty",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Lafayette Classic"
+    },
+    {
       "date": "2012-12-15",
       "opponent_id": "1274184009",
       "opponent_career_id": "career_016257",
@@ -401,7 +470,7 @@
       "method": "INJ",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Western Hills"
+      "event": "vs. Desales"
     },
     {
       "date": "2012-12-15",
@@ -417,7 +486,7 @@
       "method": "DEC",
       "score": "9-3",
       "duration": "7:00",
-      "event": "vs. Western Hills"
+      "event": "vs. Doss"
     },
     {
       "date": "2012-12-15",
@@ -437,22 +506,6 @@
     },
     {
       "date": "2012-12-08",
-      "opponent_id": "1398868009",
-      "opponent_career_id": "career_014056",
-      "opponent_name": "Bradley Colwell",
-      "opponent_team": "Perry County Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:08",
-      "event": "vs. Perry County Central"
-    },
-    {
-      "date": "2012-12-08",
       "opponent_id": "1265047009",
       "opponent_career_id": "career_016236",
       "opponent_name": "Gregory Pilon",
@@ -465,7 +518,7 @@
       "method": "TF",
       "score": "20-5",
       "duration": "0:00",
-      "event": "vs. Western Hills"
+      "event": "vs. Cooper"
     },
     {
       "date": "2012-12-08",
@@ -485,6 +538,22 @@
     },
     {
       "date": "2012-12-08",
+      "opponent_id": "1398868009",
+      "opponent_career_id": "career_014056",
+      "opponent_name": "Bradley Colwell",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:08",
+      "event": "vs. Perry County Central"
+    },
+    {
+      "date": "2012-12-08",
       "opponent_id": "OUTSTATE_26f66a856680",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -501,22 +570,6 @@
     },
     {
       "date": "2012-12-01",
-      "opponent_id": "1449575009",
-      "opponent_career_id": "career_013257",
-      "opponent_name": "Elias Eqal",
-      "opponent_team": "Tates Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "DEC",
-      "score": "9-5",
-      "duration": "7:00",
-      "event": "vs. Tates Creek"
-    },
-    {
-      "date": "2012-12-01",
       "opponent_id": "1353679009",
       "opponent_career_id": "career_015995",
       "opponent_name": "Brandon Green",
@@ -529,7 +582,7 @@
       "method": "DEC",
       "score": "9-4",
       "duration": "7:00",
-      "event": "vs. Western Hills"
+      "event": "vs. Male"
     },
     {
       "date": "2012-12-01",
@@ -565,6 +618,22 @@
     },
     {
       "date": "2012-12-01",
+      "opponent_id": "1449575009",
+      "opponent_career_id": "career_013257",
+      "opponent_name": "Elias Eqal",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-5",
+      "duration": "7:00",
+      "event": "vs. Tates Creek"
+    },
+    {
+      "date": "2012-12-01",
       "opponent_id": "1454948009",
       "opponent_career_id": "career_013208",
       "opponent_name": "Hudson Heidorf",
@@ -578,6 +647,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Trinity (Louisville)"
+    },
+    {
+      "date": "2012-11-24",
+      "opponent_id": "OUTSTATE_2c903e25261d",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Bourbon County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Bourbon County"
     },
     {
       "date": "2012-11-24",
@@ -642,22 +727,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Spencer County"
-    },
-    {
-      "date": "2012-11-24",
-      "opponent_id": "OUTSTATE_2c903e25261d",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Bourbon County",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Bourbon County"
     }
   ],
   "career": {
@@ -673,7 +742,7 @@
       "season": 2014,
       "grade": null,
       "team": "Western Hills",
-      "record": "16-13",
+      "record": "15-15",
       "regional_place": null,
       "state_place": null
     },
@@ -681,15 +750,15 @@
       "season": 2013,
       "grade": null,
       "team": "Western Hills",
-      "record": "21-14",
+      "record": "26-17",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 37,
-    "losses": 27,
-    "win_pct": 0.578
+    "wins": 41,
+    "losses": 32,
+    "win_pct": 0.562
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

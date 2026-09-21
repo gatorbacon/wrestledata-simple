@@ -5,10 +5,15 @@
   "team_slug": "union_county",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
-    "overall": "8-8",
+    "overall": "9-8",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.8,
-    "bonus_rate": 1.0,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.833,
     "majors": 1,
     "techs": 0,
     "pins": 4
@@ -84,6 +89,22 @@
       "event": "Tiger Tournament @ Hopkinsville"
     },
     {
+      "date": "2016-01-09",
+      "opponent_id": "356832094",
+      "opponent_career_id": null,
+      "opponent_name": "Nick Haynes",
+      "opponent_team": "Springfield",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "DEC",
+      "score": "13-10",
+      "duration": "7:00",
+      "event": "Father Ryan Invitational"
+    },
+    {
       "date": "2016-01-02",
       "opponent_id": "345634094",
       "opponent_career_id": "career_012700",
@@ -97,39 +118,7 @@
       "method": "MD",
       "score": "14-4",
       "duration": "7:00",
-      "event": "vs. Union County"
-    },
-    {
-      "date": "2016-01-02",
-      "opponent_id": "321141107",
-      "opponent_career_id": "career_012365",
-      "opponent_name": "Devonta Turner",
-      "opponent_team": "Trigg County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:23",
-      "event": "vs. Union County"
-    },
-    {
-      "date": "2016-01-02",
-      "opponent_id": "OUTSTATE_186cd84cf0e0",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Paducah Tilghman",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Paducah Tilghman"
+      "event": "vs. Caldwell County"
     },
     {
       "date": "2016-01-02",
@@ -146,6 +135,38 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Ft. Campbell"
+    },
+    {
+      "date": "2016-01-02",
+      "opponent_id": "321141107",
+      "opponent_career_id": "career_012365",
+      "opponent_name": "Devonta Turner",
+      "opponent_team": "Trigg County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:23",
+      "event": "vs. Trigg County"
+    },
+    {
+      "date": "2016-01-02",
+      "opponent_id": "OUTSTATE_186cd84cf0e0",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Paducah Tilghman"
     },
     {
       "date": "2016-01-02",
@@ -209,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:58",
-      "event": "vs. Union County"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2015-12-17",
@@ -225,7 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:32",
-      "event": "vs. Union County"
+      "event": "vs. Apollo"
     },
     {
       "date": "2015-12-12",
@@ -304,15 +325,15 @@
       "season": 2016,
       "grade": 9,
       "team": "Union County",
-      "record": "8-8",
+      "record": "9-8",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 8,
+    "wins": 9,
     "losses": 8,
-    "win_pct": 0.5
+    "win_pct": 0.529
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

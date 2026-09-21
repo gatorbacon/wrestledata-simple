@@ -5,10 +5,15 @@
   "team_slug": "holmes",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "10-8",
+    "overall": "12-10",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -85,6 +90,22 @@
     },
     {
       "date": "2013-02-09",
+      "opponent_id": "1426153009",
+      "opponent_career_id": "career_014081",
+      "opponent_name": "Ethan Frank",
+      "opponent_team": "Scott",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:52",
+      "event": "KHSAA Region 6"
+    },
+    {
+      "date": "2013-02-09",
       "opponent_id": "OUTSTATE_71c04322c038",
       "opponent_career_id": null,
       "opponent_name": "Seth Readnour",
@@ -113,23 +134,7 @@
       "method": "MD",
       "score": "12-2",
       "duration": "7:00",
-      "event": "vs. Holmes"
-    },
-    {
-      "date": "2013-01-26",
-      "opponent_id": "1278348009",
-      "opponent_career_id": "career_015018",
-      "opponent_name": "Geron Hurst",
-      "opponent_team": "Dupont Manual",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Lockland Invitational"
+      "event": "vs. Cooper"
     },
     {
       "date": "2013-01-26",
@@ -155,6 +160,22 @@
       "opponent_team": "Oak Hills",
       "opponent_team_rank": null,
       "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Lockland Invitational"
+    },
+    {
+      "date": "2013-01-26",
+      "opponent_id": "1278348009",
+      "opponent_career_id": "career_015018",
+      "opponent_name": "Geron Hurst",
+      "opponent_team": "Dupont Manual",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
       "opponent_rank": null,
       "weight_class": "126",
       "result": "W",
@@ -193,7 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:51",
-      "event": "vs. Holmes"
+      "event": "vs. Cooper"
     },
     {
       "date": "2013-01-04",
@@ -353,7 +374,7 @@
       "method": "INJ",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Holmes"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2012-11-24",
@@ -369,7 +390,7 @@
       "method": "TF",
       "score": "17-2",
       "duration": "4:10",
-      "event": "vs. Holmes"
+      "event": "vs. Moore"
     }
   ],
   "career": {
@@ -384,15 +405,15 @@
       "season": 2013,
       "grade": null,
       "team": "Holmes",
-      "record": "10-8",
+      "record": "12-10",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 10,
-    "losses": 8,
-    "win_pct": 0.556
+    "wins": 12,
+    "losses": 10,
+    "win_pct": 0.545
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

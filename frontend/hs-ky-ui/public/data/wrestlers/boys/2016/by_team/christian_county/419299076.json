@@ -5,6 +5,11 @@
   "team_slug": "christian_county",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.686,
+    "pin_rate": 0.657,
     "bonus_rate": 0.771,
-    "majors": 3,
+    "majors": 4,
     "techs": 0,
-    "pins": 24
+    "pins": 23
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -481,7 +486,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:26",
-      "event": "vs. Christian County"
+      "event": "vs. Caldwell County"
     },
     {
       "date": "2016-01-07",
@@ -513,7 +518,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:26",
-      "event": "vs. Christian County"
+      "event": "vs. Apollo"
     },
     {
       "date": "2016-01-02",
@@ -597,6 +602,22 @@
     },
     {
       "date": "2015-12-30",
+      "opponent_id": "441267071",
+      "opponent_career_id": null,
+      "opponent_name": "Brandon DeMoss",
+      "opponent_team": "Cheatham Co. Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "MD",
+      "score": "10-2",
+      "duration": "7:00",
+      "event": "Toyota of Hopkinsville Christian County Invitational"
+    },
+    {
+      "date": "2015-12-30",
       "opponent_id": "321134107",
       "opponent_career_id": "career_012369",
       "opponent_name": "Colton Stoner",
@@ -625,23 +646,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:36",
-      "event": "vs. Christian County"
-    },
-    {
-      "date": "2015-12-23",
-      "opponent_id": "301436010",
-      "opponent_career_id": "career_010561",
-      "opponent_name": "Daivon Jefferson",
-      "opponent_team": "Fort Knox",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:27",
-      "event": "vs. Fort Knox"
+      "event": "vs. Apollo"
     },
     {
       "date": "2015-12-23",
@@ -705,7 +710,7 @@
       "method": "DEC",
       "score": "10-8",
       "duration": "7:00",
-      "event": "vs. Christian County"
+      "event": "vs. Central"
     },
     {
       "date": "2015-12-22",
@@ -721,7 +726,7 @@
       "method": "DEC",
       "score": "16-11",
       "duration": "7:00",
-      "event": "vs. Christian County"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2015-12-22",
@@ -785,7 +790,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:27",
-      "event": "vs. Christian County"
+      "event": "vs. Fort Knox"
     },
     {
       "date": "2015-12-19",
@@ -901,22 +906,6 @@
     },
     {
       "date": "2015-12-12",
-      "opponent_id": "366604094",
-      "opponent_career_id": "career_013378",
-      "opponent_name": "Aaron Allen",
-      "opponent_team": "Ohio County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:06",
-      "event": "King of the Bluegrass@ Fairdale"
-    },
-    {
-      "date": "2015-12-12",
       "opponent_id": "487683071",
       "opponent_career_id": "career_013053",
       "opponent_name": "Adam Miller",
@@ -945,6 +934,22 @@
       "method": "FALL",
       "score": null,
       "duration": "5:05",
+      "event": "King of the Bluegrass@ Fairdale"
+    },
+    {
+      "date": "2015-12-12",
+      "opponent_id": "366604094",
+      "opponent_career_id": "career_013378",
+      "opponent_name": "Aaron Allen",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:06",
       "event": "King of the Bluegrass@ Fairdale"
     },
     {
@@ -1043,5 +1048,5 @@
     "losses": 35,
     "win_pct": 0.657
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

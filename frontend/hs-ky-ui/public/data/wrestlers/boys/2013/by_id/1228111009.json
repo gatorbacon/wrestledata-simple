@@ -5,10 +5,15 @@
   "team_slug": "belfry",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "13-5",
+    "overall": "14-7",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -117,6 +122,38 @@
     },
     {
       "date": "2013-01-12",
+      "opponent_id": "1220948009",
+      "opponent_career_id": "career_012974",
+      "opponent_name": "Jay Layne",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:15",
+      "event": "vs. Ashland Blazer"
+    },
+    {
+      "date": "2013-01-12",
+      "opponent_id": "OUTSTATE_a0c25b87df30",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "East Ridge",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. East Ridge"
+    },
+    {
+      "date": "2013-01-12",
       "opponent_id": "1399762009",
       "opponent_career_id": "career_014060",
       "opponent_name": "Marcus Murphy",
@@ -145,39 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Belfry"
-    },
-    {
-      "date": "2013-01-12",
-      "opponent_id": "1220948009",
-      "opponent_career_id": "career_012974",
-      "opponent_name": "Jay Layne",
-      "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:15",
-      "event": "vs. Belfry"
-    },
-    {
-      "date": "2013-01-12",
-      "opponent_id": "OUTSTATE_a0c25b87df30",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "East Ridge",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. East Ridge"
+      "event": "vs. Sheldon Clark"
     },
     {
       "date": "2013-01-09",
@@ -229,22 +234,6 @@
     },
     {
       "date": "2012-12-22",
-      "opponent_id": "1398869009",
-      "opponent_career_id": "career_015133",
-      "opponent_name": "Austin Haney",
-      "opponent_team": "Perry County Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Freedom Classic"
-    },
-    {
-      "date": "2012-12-22",
       "opponent_id": "1344776009",
       "opponent_career_id": "career_015080",
       "opponent_name": "Devin Slone",
@@ -256,7 +245,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:00",
       "event": "Freedom Classic"
     },
     {
@@ -292,11 +281,11 @@
       "event": "Freedom Classic"
     },
     {
-      "date": "2012-12-08",
-      "opponent_id": "1344772009",
-      "opponent_career_id": "career_015988",
-      "opponent_name": "Bobby McKenzie",
-      "opponent_team": "Letcher County Central",
+      "date": "2012-12-22",
+      "opponent_id": "1398869009",
+      "opponent_career_id": "career_015133",
+      "opponent_name": "Austin Haney",
+      "opponent_team": "Perry County Central",
       "opponent_team_rank": null,
       "opponent_weight": 138,
       "opponent_rank": null,
@@ -304,24 +293,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "Ben Fisher Memorial"
-    },
-    {
-      "date": "2012-12-08",
-      "opponent_id": "1399762009",
-      "opponent_career_id": "career_014060",
-      "opponent_name": "Marcus Murphy",
-      "opponent_team": "Phelps",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Ben Fisher Memorial"
+      "duration": "4:45",
+      "event": "Freedom Classic"
     },
     {
       "date": "2012-12-08",
@@ -370,6 +343,38 @@
       "score": null,
       "duration": "0:00",
       "event": "Ben Fisher Memorial"
+    },
+    {
+      "date": "2012-12-08",
+      "opponent_id": "1344772009",
+      "opponent_career_id": "career_015988",
+      "opponent_name": "Bobby McKenzie",
+      "opponent_team": "Letcher County Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "Ben Fisher Memorial"
+    },
+    {
+      "date": "2012-12-08",
+      "opponent_id": "1399762009",
+      "opponent_career_id": "career_014060",
+      "opponent_name": "Marcus Murphy",
+      "opponent_team": "Phelps",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Ben Fisher Memorial"
     }
   ],
   "career": {
@@ -384,15 +389,15 @@
       "season": 2013,
       "grade": null,
       "team": "Belfry",
-      "record": "13-5",
+      "record": "14-7",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 13,
-    "losses": 5,
-    "win_pct": 0.722
+    "wins": 14,
+    "losses": 7,
+    "win_pct": 0.667
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

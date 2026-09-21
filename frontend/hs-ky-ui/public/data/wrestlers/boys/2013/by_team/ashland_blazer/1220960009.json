@@ -5,10 +5,15 @@
   "team_slug": "ashland_blazer",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "26-8",
+    "overall": "28-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -321,7 +326,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:28",
-      "event": "vs. Ashland Blazer"
+      "event": "vs. Johnson Central"
     },
     {
       "date": "2013-01-11",
@@ -401,7 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:10",
-      "event": "vs. Ashland Blazer"
+      "event": "vs. Johnson Central"
     },
     {
       "date": "2013-01-05",
@@ -485,19 +490,19 @@
     },
     {
       "date": "2013-01-03",
-      "opponent_id": "1323249009",
+      "opponent_id": "1245870009",
       "opponent_career_id": null,
-      "opponent_name": "Joshua Haddox",
-      "opponent_team": "Huntington",
+      "opponent_name": "Clay Miller",
+      "opponent_team": "Capital",
       "opponent_team_rank": null,
-      "opponent_weight": 106,
+      "opponent_weight": 120,
       "opponent_rank": null,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "3:50",
-      "event": "vs. Huntington"
+      "duration": "1:54",
+      "event": "vs. Capital"
     },
     {
       "date": "2013-01-03",
@@ -517,19 +522,19 @@
     },
     {
       "date": "2013-01-03",
-      "opponent_id": "1245870009",
+      "opponent_id": "1323249009",
       "opponent_career_id": null,
-      "opponent_name": "Clay Miller",
-      "opponent_team": "Capital",
+      "opponent_name": "Joshua Haddox",
+      "opponent_team": "Huntington",
       "opponent_team_rank": null,
-      "opponent_weight": 120,
+      "opponent_weight": 106,
       "opponent_rank": null,
       "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "1:54",
-      "event": "vs. Capital"
+      "duration": "3:50",
+      "event": "vs. Huntington"
     },
     {
       "date": "2012-12-15",
@@ -597,22 +602,6 @@
     },
     {
       "date": "2012-12-08",
-      "opponent_id": "1369118009",
-      "opponent_career_id": "career_016003",
-      "opponent_name": "Devaland Banks",
-      "opponent_team": "Montgomery County",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Ashland Blazer"
-    },
-    {
-      "date": "2012-12-08",
       "opponent_id": "1476094009",
       "opponent_career_id": "career_016652",
       "opponent_name": "Bradlee Hollis",
@@ -641,7 +630,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Ashland Blazer"
+      "event": "vs. Bourbon County"
     },
     {
       "date": "2012-12-08",
@@ -657,7 +646,23 @@
       "method": "DEC",
       "score": "7-2",
       "duration": "7:00",
-      "event": "vs. Ashland Blazer"
+      "event": "vs. Harrison County"
+    },
+    {
+      "date": "2012-12-08",
+      "opponent_id": "1369118009",
+      "opponent_career_id": "career_016003",
+      "opponent_name": "Devaland Banks",
+      "opponent_team": "Montgomery County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Montgomery County"
     }
   ],
   "career": {
@@ -665,7 +670,8 @@
     "canonical_name": "Wyatt Kirk",
     "seasons": [
       2014,
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -681,15 +687,23 @@
       "season": 2013,
       "grade": null,
       "team": "Ashland Blazer",
-      "record": "26-8",
+      "record": "28-11",
       "regional_place": 3,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 8,
+      "team": "Ashland Blazer",
+      "record": "0-2",
+      "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 29,
-    "losses": 9,
-    "win_pct": 0.763
+    "wins": 31,
+    "losses": 14,
+    "win_pct": 0.689
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

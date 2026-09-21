@@ -5,10 +5,15 @@
   "team_slug": "conner",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "20-14",
+    "overall": "21-14",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.6,
-    "bonus_rate": 0.867,
-    "majors": 3,
+    "pin_rate": 0.615,
+    "bonus_rate": 0.846,
+    "majors": 2,
     "techs": 1,
-    "pins": 9
+    "pins": 8
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -133,22 +138,6 @@
     },
     {
       "date": "2014-02-08",
-      "opponent_id": "2885556009",
-      "opponent_career_id": "career_012989",
-      "opponent_name": "Melvin Simms",
-      "opponent_team": "Boone County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:56",
-      "event": "KHSAA Region 6"
-    },
-    {
-      "date": "2014-02-08",
       "opponent_id": "OUTSTATE_ab3b37a09a95",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -212,38 +201,6 @@
       "event": "vs. Grant County"
     },
     {
-      "date": "2014-02-08",
-      "opponent_id": "2886388009",
-      "opponent_career_id": "career_015417",
-      "opponent_name": "Alex Vancini",
-      "opponent_team": "Holmes",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:05",
-      "event": "KHSAA Region 6"
-    },
-    {
-      "date": "2014-02-08",
-      "opponent_id": "2887633009",
-      "opponent_career_id": "career_014792",
-      "opponent_name": "Carter Redman",
-      "opponent_team": "Walton Verona",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "MD",
-      "score": "12-4",
-      "duration": "7:00",
-      "event": "KHSAA Region 6"
-    },
-    {
       "date": "2014-02-06",
       "opponent_id": "2887282009",
       "opponent_career_id": "career_015153",
@@ -273,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Conner"
+      "event": "vs. Scott"
     },
     {
       "date": "2014-02-01",
@@ -289,7 +246,7 @@
       "method": "TF",
       "score": "21-5",
       "duration": "0:00",
-      "event": "vs. Conner"
+      "event": "vs. Barren County"
     },
     {
       "date": "2014-02-01",
@@ -421,38 +378,6 @@
     },
     {
       "date": "2013-12-21",
-      "opponent_id": "2886456009",
-      "opponent_career_id": "career_015063",
-      "opponent_name": "Brandon Cardwell",
-      "opponent_team": "Jeffersontown",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "DEC",
-      "score": "8-7",
-      "duration": "7:00",
-      "event": "5 Star Classic"
-    },
-    {
-      "date": "2013-12-21",
-      "opponent_id": "2886903009",
-      "opponent_career_id": "career_014044",
-      "opponent_name": "Robert Reidling",
-      "opponent_team": "North Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:30",
-      "event": "5 Star Classic"
-    },
-    {
-      "date": "2013-12-21",
       "opponent_id": "2886818009",
       "opponent_career_id": "career_015510",
       "opponent_name": "Mason Halcomb",
@@ -500,6 +425,38 @@
       "event": "5 Star Classic"
     },
     {
+      "date": "2013-12-21",
+      "opponent_id": "2886456009",
+      "opponent_career_id": "career_015063",
+      "opponent_name": "Brandon Cardwell",
+      "opponent_team": "Jeffersontown",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-7",
+      "duration": "7:00",
+      "event": "5 Star Classic"
+    },
+    {
+      "date": "2013-12-21",
+      "opponent_id": "2886903009",
+      "opponent_career_id": "career_014044",
+      "opponent_name": "Robert Reidling",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:30",
+      "event": "5 Star Classic"
+    },
+    {
       "date": "2013-12-18",
       "opponent_id": "2866584009",
       "opponent_career_id": null,
@@ -517,22 +474,6 @@
     },
     {
       "date": "2013-12-14",
-      "opponent_id": "2886838009",
-      "opponent_career_id": "career_014028",
-      "opponent_name": "Ruben Rojas",
-      "opponent_team": "Moore",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:47",
-      "event": "Ryle Raider Rumble"
-    },
-    {
-      "date": "2013-12-14",
       "opponent_id": "2885776009",
       "opponent_career_id": "career_014988",
       "opponent_name": "Dustin Turner",
@@ -545,6 +486,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:49",
+      "event": "Ryle Raider Rumble"
+    },
+    {
+      "date": "2013-12-14",
+      "opponent_id": "2886838009",
+      "opponent_career_id": "career_014028",
+      "opponent_name": "Ruben Rojas",
+      "opponent_team": "Moore",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:47",
       "event": "Ryle Raider Rumble"
     },
     {
@@ -657,7 +614,7 @@
       "season": 2014,
       "grade": null,
       "team": "Conner",
-      "record": "20-14",
+      "record": "21-14",
       "regional_place": null,
       "state_place": null
     },
@@ -665,15 +622,15 @@
       "season": 2013,
       "grade": null,
       "team": "Conner",
-      "record": "9-4",
+      "record": "10-10",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 29,
-    "losses": 18,
-    "win_pct": 0.617
+    "wins": 31,
+    "losses": 24,
+    "win_pct": 0.564
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

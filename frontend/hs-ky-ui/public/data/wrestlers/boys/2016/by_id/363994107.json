@@ -5,10 +5,15 @@
   "team_slug": "columbus_east",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
-    "overall": "1-1",
+    "overall": "2-1",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -24,7 +29,7 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -35,6 +40,22 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2015-12-12",
+      "opponent_id": "8249144009",
+      "opponent_career_id": "career_012188",
+      "opponent_name": "Collin Barrett",
+      "opponent_team": "Campbell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-2",
+      "duration": "7:00",
+      "event": "Ryle Raider Rumble"
+    },
     {
       "date": "2015-12-12",
       "opponent_id": "385059094",
@@ -53,20 +74,20 @@
     },
     {
       "date": "2015-12-12",
-      "opponent_id": "8249144009",
-      "opponent_career_id": "career_012188",
-      "opponent_name": "Collin Barrett",
-      "opponent_team": "Campbell County",
+      "opponent_id": "385059094",
+      "opponent_career_id": "career_013170",
+      "opponent_name": "Noah Lucas",
+      "opponent_team": "Scott",
       "opponent_team_rank": null,
-      "opponent_weight": 132,
+      "opponent_weight": 126,
       "opponent_rank": null,
       "weight_class": "132",
-      "result": "L",
-      "method": "DEC",
-      "score": "6-2",
-      "duration": "7:00",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:18",
       "event": "Ryle Raider Rumble"
     }
   ],
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "male",
   "team_rank": null,
   "weight_class": 106,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
-    "overall": "34-23",
+    "overall": "35-23",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.609,
-    "bonus_rate": 0.696,
+    "pin_rate": 0.625,
+    "bonus_rate": 0.708,
     "majors": 2,
     "techs": 0,
-    "pins": 14
+    "pins": 15
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -145,7 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:29",
-      "event": "vs. Male"
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2015-02-04",
@@ -161,7 +166,7 @@
       "method": "MD",
       "score": "11-0",
       "duration": "7:00",
-      "event": "vs. Male"
+      "event": "vs. Henry Clay"
     },
     {
       "date": "2015-01-31",
@@ -193,6 +198,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:43",
+      "event": "Ft. Knox Invitational"
+    },
+    {
+      "date": "2015-01-31",
+      "opponent_id": "6065270009",
+      "opponent_career_id": "career_013584",
+      "opponent_name": "Zane Davenport",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
       "event": "Ft. Knox Invitational"
     },
     {
@@ -241,7 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:54",
-      "event": "vs. Male"
+      "event": "vs. Central"
     },
     {
       "date": "2015-01-28",
@@ -437,22 +458,6 @@
     },
     {
       "date": "2015-01-02",
-      "opponent_id": "5829443009",
-      "opponent_career_id": "career_011511",
-      "opponent_name": "Brett Shea",
-      "opponent_team": "Oldham County",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:52",
-      "event": "vs. Oldham County"
-    },
-    {
-      "date": "2015-01-02",
       "opponent_id": "OUTSTATE_cd967a46c67c",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -501,6 +506,22 @@
     },
     {
       "date": "2015-01-02",
+      "opponent_id": "5829443009",
+      "opponent_career_id": "career_011511",
+      "opponent_name": "Brett Shea",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:52",
+      "event": "vs. Oldham County"
+    },
+    {
+      "date": "2015-01-02",
       "opponent_id": "-1",
       "opponent_career_id": null,
       "opponent_name": "Kelsey Smith",
@@ -545,7 +566,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:36",
-      "event": "Derby Classic"
+      "event": "Derby City Classic"
     },
     {
       "date": "2014-12-27",
@@ -721,7 +742,7 @@
       "method": "DEC",
       "score": "10-8",
       "duration": "7:00",
-      "event": "vs. Male"
+      "event": "vs. Bourbon County"
     },
     {
       "date": "2014-12-13",
@@ -737,7 +758,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:28",
-      "event": "vs. Male"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2014-12-13",
@@ -753,7 +774,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:11",
-      "event": "vs. Male"
+      "event": "vs. Danville"
     },
     {
       "date": "2014-12-13",
@@ -769,7 +790,7 @@
       "method": "TF",
       "score": "17-2",
       "duration": "0:00",
-      "event": "vs. Male"
+      "event": "vs. Lexington Catholic"
     },
     {
       "date": "2014-12-13",
@@ -801,7 +822,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:20",
-      "event": "vs. Male"
+      "event": "vs. Apollo"
     },
     {
       "date": "2014-12-06",
@@ -817,7 +838,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:25",
-      "event": "vs. Male"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2014-12-06",
@@ -960,15 +981,15 @@
       "season": 2015,
       "grade": 8,
       "team": "Male",
-      "record": "34-23",
+      "record": "35-23",
       "regional_place": 4,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 34,
+    "wins": 35,
     "losses": 23,
-    "win_pct": 0.596
+    "win_pct": 0.603
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

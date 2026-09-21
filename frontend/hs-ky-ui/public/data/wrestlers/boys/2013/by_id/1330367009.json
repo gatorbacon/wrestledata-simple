@@ -5,10 +5,15 @@
   "team_slug": "johnson_central",
   "team_rank": null,
   "weight_class": 215,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "49-10",
+    "overall": "48-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.927,
-    "bonus_rate": 0.927,
+    "pin_rate": 0.929,
+    "bonus_rate": 0.929,
     "majors": 0,
     "techs": 0,
-    "pins": 38
+    "pins": 39
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -81,7 +86,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:32",
-      "event": "Kentucky High School State Wrestling Championships @ the Horse Park, Lexington"
+      "event": "2013 KHSAA State Championships"
     },
     {
       "date": "2013-02-16",
@@ -193,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:30",
-      "event": "vs. Johnson Central"
+      "event": "vs. Central"
     },
     {
       "date": "2013-01-26",
@@ -209,7 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:51",
-      "event": "vs. Johnson Central"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2013-01-26",
@@ -533,22 +538,6 @@
     },
     {
       "date": "2013-01-05",
-      "opponent_id": "OUTSTATE_e36826816b96",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Shady Spring",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Shady Spring"
-    },
-    {
-      "date": "2013-01-05",
       "opponent_id": "1234527009",
       "opponent_career_id": null,
       "opponent_name": "Julius Thomas",
@@ -690,6 +679,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Richwood"
+    },
+    {
+      "date": "2013-01-05",
+      "opponent_id": "OUTSTATE_e36826816b96",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Shady Spring",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Shady Spring"
     },
     {
       "date": "2012-12-29",
@@ -901,6 +906,38 @@
     },
     {
       "date": "2012-12-08",
+      "opponent_id": "-1",
+      "opponent_career_id": null,
+      "opponent_name": "Kyle Barrett",
+      "opponent_team": "Independent",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:00",
+      "event": "Hayworth tire Indian classic"
+    },
+    {
+      "date": "2012-12-08",
+      "opponent_id": "-1",
+      "opponent_career_id": null,
+      "opponent_name": "Kyle Barrett",
+      "opponent_team": "Independent",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:09",
+      "event": "Hayworth tire Indian classic"
+    },
+    {
+      "date": "2012-12-08",
       "opponent_id": "OUTSTATE_15c6804ad55e",
       "opponent_career_id": null,
       "opponent_name": "Micheal Simonovich",
@@ -913,22 +950,6 @@
       "method": "FALL",
       "score": null,
       "duration": "3:30",
-      "event": "Hayworth tire Indian classic"
-    },
-    {
-      "date": "2012-12-08",
-      "opponent_id": "1336589009",
-      "opponent_career_id": null,
-      "opponent_name": "Zach Cole",
-      "opponent_team": "Knox Cath",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:28",
       "event": "Hayworth tire Indian classic"
     },
     {
@@ -946,6 +967,22 @@
       "score": null,
       "duration": "5:39",
       "event": "Hayworth tire Indian classic"
+    },
+    {
+      "date": "2012-12-08",
+      "opponent_id": "1336589009",
+      "opponent_career_id": null,
+      "opponent_name": "Zach Cole",
+      "opponent_team": "Knox Cath",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:28",
+      "event": "Hayworth tire Indian classic"
     }
   ],
   "career": {
@@ -953,7 +990,8 @@
     "canonical_name": "chris neice",
     "seasons": [
       2014,
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -961,7 +999,7 @@
       "season": 2014,
       "grade": null,
       "team": "Johnson Central",
-      "record": "39-11",
+      "record": "42-12",
       "regional_place": 1,
       "state_place": null
     },
@@ -969,15 +1007,23 @@
       "season": 2013,
       "grade": null,
       "team": "Johnson Central",
-      "record": "49-10",
+      "record": "48-11",
       "regional_place": 1,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 10,
+      "team": "Johnson Central",
+      "record": "2-2",
+      "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 88,
-    "losses": 21,
-    "win_pct": 0.807
+    "wins": 92,
+    "losses": 25,
+    "win_pct": 0.786
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

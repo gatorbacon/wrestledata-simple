@@ -5,10 +5,15 @@
   "team_slug": "wayne_county",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "41-4",
+    "overall": "45-5",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.811,
-    "bonus_rate": 0.865,
+    "pin_rate": 0.816,
+    "bonus_rate": 0.868,
     "majors": 2,
     "techs": 0,
-    "pins": 30
+    "pins": 31
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -97,7 +102,7 @@
       "method": "MD",
       "score": "13-3",
       "duration": "7:00",
-      "event": "State"
+      "event": "2013 KHSAA State Championships"
     },
     {
       "date": "2013-02-16",
@@ -161,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:54",
-      "event": "KHSAA State Tournament"
+      "event": "2013 KHSAA State Championships"
     },
     {
       "date": "2013-02-16",
@@ -421,6 +426,22 @@
     },
     {
       "date": "2013-01-05",
+      "opponent_id": "1348517009",
+      "opponent_career_id": null,
+      "opponent_name": "Eric Phillips",
+      "opponent_team": "Livingston Academy",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:41",
+      "event": "vs. Livingston Academy"
+    },
+    {
+      "date": "2013-01-05",
       "opponent_id": "1360187009",
       "opponent_career_id": null,
       "opponent_name": "Gary Tudor",
@@ -497,7 +518,7 @@
       "method": "INJ",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Wayne County"
+      "event": "vs. La Rue County"
     },
     {
       "date": "2012-12-21",
@@ -513,7 +534,7 @@
       "method": "DEC",
       "score": "6-3",
       "duration": "7:00",
-      "event": "vs. Wayne County"
+      "event": "vs. Meade County"
     },
     {
       "date": "2012-12-21",
@@ -549,22 +570,6 @@
     },
     {
       "date": "2012-12-20",
-      "opponent_id": "1274182009",
-      "opponent_career_id": "career_016263",
-      "opponent_name": "Tommy Naurert",
-      "opponent_team": "Desales",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:00",
-      "event": "vs. Wayne County"
-    },
-    {
-      "date": "2012-12-20",
       "opponent_id": "1251823009",
       "opponent_career_id": "career_014829",
       "opponent_name": "Matthew Daugherty",
@@ -577,7 +582,23 @@
       "method": "FALL",
       "score": null,
       "duration": "3:50",
-      "event": "vs. Wayne County"
+      "event": "vs. Central Hardin"
+    },
+    {
+      "date": "2012-12-20",
+      "opponent_id": "1274182009",
+      "opponent_career_id": "career_016263",
+      "opponent_name": "Tommy Naurert",
+      "opponent_team": "Desales",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "vs. Desales"
     },
     {
       "date": "2012-12-20",
@@ -645,22 +666,6 @@
     },
     {
       "date": "2012-12-08",
-      "opponent_id": "OUTSTATE_ba6c4a3d99aa",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Powell",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Powell"
-    },
-    {
-      "date": "2012-12-08",
       "opponent_id": "1336644009",
       "opponent_career_id": null,
       "opponent_name": "Aaron Heathman",
@@ -693,6 +698,22 @@
     },
     {
       "date": "2012-12-08",
+      "opponent_id": "OUTSTATE_ba6c4a3d99aa",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Powell",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Powell"
+    },
+    {
+      "date": "2012-12-08",
       "opponent_id": "1427968009",
       "opponent_career_id": null,
       "opponent_name": "Max Araiza",
@@ -721,7 +742,7 @@
       "method": "SV-1",
       "score": "4-2",
       "duration": "8:15",
-      "event": "vs. Wayne County"
+      "event": "vs. Danville"
     },
     {
       "date": "2012-12-01",
@@ -737,7 +758,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:11",
-      "event": "vs. Wayne County"
+      "event": "vs. Letcher County Central"
     },
     {
       "date": "2012-12-01",
@@ -753,7 +774,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:35",
-      "event": "vs. Wayne County"
+      "event": "vs. Scott County"
     },
     {
       "date": "2012-12-01",
@@ -824,7 +845,8 @@
     "career_id": "career_015785",
     "canonical_name": "Zach Troxell",
     "seasons": [
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -832,15 +854,23 @@
       "season": 2013,
       "grade": null,
       "team": "Wayne County",
-      "record": "41-4",
+      "record": "45-5",
       "regional_place": 2,
       "state_place": 5
+    },
+    {
+      "season": 2012,
+      "grade": 11,
+      "team": "Wayne County",
+      "record": "4-2",
+      "regional_place": null,
+      "state_place": 4
     }
   ],
   "career_record": {
-    "wins": 41,
-    "losses": 4,
-    "win_pct": 0.911
+    "wins": 49,
+    "losses": 7,
+    "win_pct": 0.875
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

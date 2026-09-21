@@ -5,10 +5,15 @@
   "team_slug": "bryan_station",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2019,
   "current_rank": null,
   "record": {
-    "overall": "11-7",
+    "overall": "12-8",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -53,6 +58,22 @@
     },
     {
       "date": "2019-01-24",
+      "opponent_id": "5024415132",
+      "opponent_career_id": "career_011030",
+      "opponent_name": "Braxton Briscoe",
+      "opponent_team": "Anderson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "MD",
+      "score": "22-11",
+      "duration": "7:00",
+      "event": "vs. Anderson County"
+    },
+    {
+      "date": "2019-01-24",
       "opponent_id": "5069661132",
       "opponent_career_id": "career_009657",
       "opponent_name": "CAYDEN GRAHAM",
@@ -66,22 +87,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Scott County"
-    },
-    {
-      "date": "2019-01-24",
-      "opponent_id": "5024415132",
-      "opponent_career_id": "career_011030",
-      "opponent_name": "Braxton Briscoe",
-      "opponent_team": "Anderson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "MD",
-      "score": "22-11",
-      "duration": "7:00",
-      "event": "vs. Bryan Station"
     },
     {
       "date": "2019-01-23",
@@ -133,22 +138,6 @@
     },
     {
       "date": "2019-01-05",
-      "opponent_id": "5556246132",
-      "opponent_career_id": "career_010330",
-      "opponent_name": "Martani Kazadi",
-      "opponent_team": "Paul Dunbar",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:05",
-      "event": "vs. Paul Dunbar"
-    },
-    {
-      "date": "2019-01-05",
       "opponent_id": "OUTSTATE_86b971b502a2",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -162,6 +151,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Spencer County"
+    },
+    {
+      "date": "2019-01-05",
+      "opponent_id": "5556246132",
+      "opponent_career_id": "career_010330",
+      "opponent_name": "Martani Kazadi",
+      "opponent_team": "Paul Dunbar",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:05",
+      "event": "vs. Paul Dunbar"
     },
     {
       "date": "2018-12-29",
@@ -197,38 +202,6 @@
     },
     {
       "date": "2018-12-20",
-      "opponent_id": "5556280132",
-      "opponent_career_id": "career_011242",
-      "opponent_name": "Aaron Banfield",
-      "opponent_team": "Paul Dunbar",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:18",
-      "event": "vs. Paul Dunbar"
-    },
-    {
-      "date": "2018-12-20",
-      "opponent_id": "5076808132",
-      "opponent_career_id": "career_009944",
-      "opponent_name": "Gavin Foley",
-      "opponent_team": "Madison Southern",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Madison Southern"
-    },
-    {
-      "date": "2018-12-20",
       "opponent_id": "OUTSTATE_6abc6a5a6886",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -261,6 +234,38 @@
     },
     {
       "date": "2018-12-20",
+      "opponent_id": "5076808132",
+      "opponent_career_id": "career_009944",
+      "opponent_name": "Gavin Foley",
+      "opponent_team": "Madison Southern",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Madison Southern"
+    },
+    {
+      "date": "2018-12-20",
+      "opponent_id": "5556280132",
+      "opponent_career_id": "career_011242",
+      "opponent_name": "Aaron Banfield",
+      "opponent_team": "Paul Dunbar",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:18",
+      "event": "vs. Paul Dunbar"
+    },
+    {
+      "date": "2018-12-20",
       "opponent_id": "5376927132",
       "opponent_career_id": "career_008862",
       "opponent_name": "Anthony Simpson",
@@ -289,23 +294,7 @@
       "method": "TF",
       "score": "17-0",
       "duration": "0:00",
-      "event": "vs. Bryan Station"
-    },
-    {
-      "date": "2018-12-01",
-      "opponent_id": "5399142132",
-      "opponent_career_id": "career_007859",
-      "opponent_name": "Bobby Hale",
-      "opponent_team": "Sheldon Clark",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "HCIWT"
+      "event": "vs. Moore"
     },
     {
       "date": "2018-12-01",
@@ -321,6 +310,22 @@
       "method": "DEC",
       "score": "12-7",
       "duration": "7:00",
+      "event": "HCIWT"
+    },
+    {
+      "date": "2018-12-01",
+      "opponent_id": "5399142132",
+      "opponent_career_id": "career_007859",
+      "opponent_name": "Bobby Hale",
+      "opponent_team": "Sheldon Clark",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
       "event": "HCIWT"
     },
     {
@@ -372,7 +377,7 @@
       "season": 2020,
       "grade": 12,
       "team": "Bryan Station",
-      "record": "11-2",
+      "record": "9-2",
       "regional_place": null,
       "state_place": null
     },
@@ -380,7 +385,7 @@
       "season": 2019,
       "grade": 11,
       "team": "Bryan Station",
-      "record": "11-7",
+      "record": "12-8",
       "regional_place": null,
       "state_place": null
     },
@@ -388,7 +393,7 @@
       "season": 2018,
       "grade": 10,
       "team": "Bryan Station",
-      "record": "11-22",
+      "record": "12-24",
       "regional_place": null,
       "state_place": null
     },
@@ -396,7 +401,7 @@
       "season": 2017,
       "grade": 9,
       "team": "Bryan Station",
-      "record": "6-14",
+      "record": "7-16",
       "regional_place": null,
       "state_place": null
     },
@@ -410,9 +415,9 @@
     }
   ],
   "career_record": {
-    "wins": 39,
-    "losses": 46,
-    "win_pct": 0.459
+    "wins": 40,
+    "losses": 51,
+    "win_pct": 0.44
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

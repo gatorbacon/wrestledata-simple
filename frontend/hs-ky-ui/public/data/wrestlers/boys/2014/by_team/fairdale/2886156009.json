@@ -5,10 +5,15 @@
   "team_slug": "fairdale",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "5-5",
+    "overall": "6-8",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -24,7 +29,7 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 5
+    "pins": 4
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -53,22 +58,6 @@
     },
     {
       "date": "2014-01-04",
-      "opponent_id": "2886475009",
-      "opponent_career_id": "career_015448",
-      "opponent_name": "Cooper Wafzig",
-      "opponent_team": "Jeffersontown",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:57",
-      "event": "Fern Creek Gladiator Tournament"
-    },
-    {
-      "date": "2014-01-04",
       "opponent_id": "2885649009",
       "opponent_career_id": "career_014975",
       "opponent_name": "Michael Saunders",
@@ -81,6 +70,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:27",
+      "event": "Fern Creek Gladiator Tournament"
+    },
+    {
+      "date": "2014-01-04",
+      "opponent_id": "2886475009",
+      "opponent_career_id": "career_015448",
+      "opponent_name": "Cooper Wafzig",
+      "opponent_team": "Jeffersontown",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:57",
       "event": "Fern Creek Gladiator Tournament"
     },
     {
@@ -113,23 +118,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:16",
-      "event": "vs. Fairdale"
-    },
-    {
-      "date": "2014-01-03",
-      "opponent_id": "2886127009",
-      "opponent_career_id": "career_013053",
-      "opponent_name": "Adam Miller",
-      "opponent_team": "Eastern",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:03",
-      "event": "Gladiator Duals"
+      "event": "vs. Bullitt Central"
     },
     {
       "date": "2014-01-03",
@@ -161,7 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:33",
-      "event": "vs. Fairdale"
+      "event": "vs. Pleasure Ridge Park"
     },
     {
       "date": "2014-01-03",
@@ -177,39 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:22",
-      "event": "vs. Fairdale"
-    },
-    {
-      "date": "2013-12-21",
-      "opponent_id": "2886831009",
-      "opponent_career_id": "career_013732",
-      "opponent_name": "Corey McQueary",
-      "opponent_team": "Moore",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:10",
-      "event": "vs. Fairdale"
-    },
-    {
-      "date": "2013-12-21",
-      "opponent_id": "2886834009",
-      "opponent_career_id": "career_013138",
-      "opponent_name": "Seth Pitts",
-      "opponent_team": "Moore",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:22",
-      "event": "vs. Fairdale"
+      "event": "vs. Trinity (Louisville)"
     },
     {
       "date": "2013-12-21",
@@ -228,6 +185,38 @@
       "event": "vs. Providence"
     },
     {
+      "date": "2013-12-21",
+      "opponent_id": "2886831009",
+      "opponent_career_id": "career_013732",
+      "opponent_name": "Corey McQueary",
+      "opponent_team": "Moore",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:10",
+      "event": "vs. Moore"
+    },
+    {
+      "date": "2013-12-21",
+      "opponent_id": "2886834009",
+      "opponent_career_id": "career_013138",
+      "opponent_name": "Seth Pitts",
+      "opponent_team": "Moore",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:22",
+      "event": "vs. Moore"
+    },
+    {
       "date": "2013-12-03",
       "opponent_id": "2885667009",
       "opponent_career_id": "career_010476",
@@ -241,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:08",
-      "event": "vs. Fairdale"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2013-12-03",
@@ -307,7 +296,7 @@
       "season": 2014,
       "grade": null,
       "team": "Fairdale",
-      "record": "5-5",
+      "record": "6-8",
       "regional_place": null,
       "state_place": null
     },
@@ -315,15 +304,15 @@
       "season": 2013,
       "grade": null,
       "team": "Fairdale",
-      "record": "1-6",
+      "record": "4-17",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 28,
-    "losses": 24,
-    "win_pct": 0.538
+    "wins": 32,
+    "losses": 38,
+    "win_pct": 0.457
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

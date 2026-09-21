@@ -5,10 +5,15 @@
   "team_slug": "oldham_county",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
-    "overall": "25-22",
+    "overall": "24-21",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -112,7 +117,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:50",
       "event": "2015 North Oldham Mustang Classic"
     },
     {
@@ -193,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:48",
-      "event": "vs. Oldham County"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2015-01-31",
@@ -337,7 +342,7 @@
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "vs. Oldham County"
+      "event": "vs. John Hardin"
     },
     {
       "date": "2015-01-17",
@@ -353,7 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Oldham County"
+      "event": "vs. North Hardin"
     },
     {
       "date": "2015-01-17",
@@ -485,6 +490,22 @@
     },
     {
       "date": "2015-01-02",
+      "opponent_id": "7698071",
+      "opponent_career_id": "career_013716",
+      "opponent_name": "Tanner Moser",
+      "opponent_team": "Male",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:04",
+      "event": "vs. Male"
+    },
+    {
+      "date": "2015-01-02",
       "opponent_id": "4934950009",
       "opponent_career_id": null,
       "opponent_name": "Ashton Smith",
@@ -498,22 +519,6 @@
       "score": null,
       "duration": "3:45",
       "event": "vs. Jeffersonville Red Devils"
-    },
-    {
-      "date": "2015-01-02",
-      "opponent_id": "7698071",
-      "opponent_career_id": "career_013716",
-      "opponent_name": "Tanner Moser",
-      "opponent_team": "Male",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:04",
-      "event": "vs. Oldham County"
     },
     {
       "date": "2015-01-02",
@@ -562,6 +567,22 @@
       "score": "19-4",
       "duration": "0:00",
       "event": "vs. lawrenceburg tigers"
+    },
+    {
+      "date": "2015-01-02",
+      "opponent_id": "49634076",
+      "opponent_career_id": null,
+      "opponent_name": "Alex Moore",
+      "opponent_team": "Madison Consolidated High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "DEC",
+      "score": "11-5",
+      "duration": "7:00",
+      "event": "vs. Madison Consolidated High School"
     },
     {
       "date": "2015-01-02",
@@ -628,38 +649,6 @@
       "event": "vs. TC Howe"
     },
     {
-      "date": "2015-01-02",
-      "opponent_id": "49634076",
-      "opponent_career_id": null,
-      "opponent_name": "Alex Moore",
-      "opponent_team": "Madison Consolidated High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "DEC",
-      "score": "11-5",
-      "duration": "7:00",
-      "event": "vs. Madison Consolidated High School"
-    },
-    {
-      "date": "2014-12-20",
-      "opponent_id": "OUTSTATE_12815e06321b",
-      "opponent_career_id": null,
-      "opponent_name": "Forfeit Forfeit",
-      "opponent_team": "New Washington",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "Jeff Classic 2014"
-    },
-    {
       "date": "2014-12-20",
       "opponent_id": "7698071",
       "opponent_career_id": "career_013716",
@@ -689,6 +678,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:41",
+      "event": "Jeff Classic 2014"
+    },
+    {
+      "date": "2014-12-20",
+      "opponent_id": "OUTSTATE_12815e06321b",
+      "opponent_career_id": null,
+      "opponent_name": "Forfeit Forfeit",
+      "opponent_team": "New Washington",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
       "event": "Jeff Classic 2014"
     },
     {
@@ -753,7 +758,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:32",
-      "event": "vs. Oldham County"
+      "event": "vs. Dupont Manual"
     }
   ],
   "career": {
@@ -768,15 +773,15 @@
       "season": 2015,
       "grade": null,
       "team": "Oldham County",
-      "record": "25-22",
+      "record": "24-21",
       "regional_place": 3,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 25,
-    "losses": 22,
-    "win_pct": 0.532
+    "wins": 24,
+    "losses": 21,
+    "win_pct": 0.533
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

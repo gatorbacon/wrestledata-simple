@@ -5,6 +5,11 @@
   "team_slug": "lafayette",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2019,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.818,
-    "bonus_rate": 0.909,
+    "pin_rate": 0.833,
+    "bonus_rate": 0.917,
     "majors": 0,
     "techs": 1,
-    "pins": 9
+    "pins": 10
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -97,6 +102,22 @@
       "method": "FALL",
       "score": null,
       "duration": "2:46",
+      "event": "Lexington City Tournament"
+    },
+    {
+      "date": "2019-02-02",
+      "opponent_id": "-1",
+      "opponent_career_id": null,
+      "opponent_name": "Jake Vayo-Smith",
+      "opponent_team": "Sycamore",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:11",
       "event": "Lexington City Tournament"
     },
     {
@@ -289,7 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Lafayette"
+      "event": "vs. East Jessamine"
     },
     {
       "date": "2019-01-05",
@@ -305,7 +326,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:23",
-      "event": "vs. Lafayette"
+      "event": "vs. John Hardin"
     },
     {
       "date": "2019-01-05",
@@ -341,19 +362,19 @@
     },
     {
       "date": "2019-01-05",
-      "opponent_id": "5376864132",
-      "opponent_career_id": "career_006082",
-      "opponent_name": "Chase Bowlin",
-      "opponent_team": "Mccreary Central",
+      "opponent_id": "6887712132",
+      "opponent_career_id": "career_010705",
+      "opponent_name": "Trevor Frietsch",
+      "opponent_team": "Simon Kenton",
       "opponent_team_rank": null,
-      "opponent_weight": 113,
+      "opponent_weight": 120,
       "opponent_rank": null,
-      "weight_class": "113",
+      "weight_class": "120",
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Mccreary Central"
+      "duration": "1:13",
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2019-01-05",
@@ -368,8 +389,24 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "1:13",
+      "duration": "1:48",
       "event": "vs. Simon Kenton"
+    },
+    {
+      "date": "2019-01-05",
+      "opponent_id": "5376864132",
+      "opponent_career_id": "career_006082",
+      "opponent_name": "Chase Bowlin",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Mccreary Central"
     },
     {
       "date": "2018-12-29",
@@ -501,22 +538,6 @@
     },
     {
       "date": "2018-12-01",
-      "opponent_id": "OUTSTATE_9e3e5484bba8",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Fern Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Fern Creek"
-    },
-    {
-      "date": "2018-12-01",
       "opponent_id": "5290212132",
       "opponent_career_id": "career_005901",
       "opponent_name": "Drew Johnson",
@@ -529,7 +550,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:18",
-      "event": "vs. Lafayette"
+      "event": "vs. Cooper"
     },
     {
       "date": "2018-12-01",
@@ -546,6 +567,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Henry Clay"
+    },
+    {
+      "date": "2018-12-01",
+      "opponent_id": "OUTSTATE_9e3e5484bba8",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2018-12-01",
@@ -578,7 +615,7 @@
       "season": 2021,
       "grade": 11,
       "team": "Lafayette",
-      "record": "1-4",
+      "record": "1-7",
       "regional_place": null,
       "state_place": null
     },
@@ -586,7 +623,7 @@
       "season": 2020,
       "grade": 10,
       "team": "Lafayette",
-      "record": "26-12",
+      "record": "24-13",
       "regional_place": 3,
       "state_place": null
     },
@@ -600,9 +637,9 @@
     }
   ],
   "career_record": {
-    "wins": 41,
-    "losses": 37,
-    "win_pct": 0.526
+    "wins": 39,
+    "losses": 41,
+    "win_pct": 0.487
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

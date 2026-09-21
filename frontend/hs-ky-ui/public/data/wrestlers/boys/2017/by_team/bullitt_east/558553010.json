@@ -5,10 +5,15 @@
   "team_slug": "bullitt_east",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2017,
   "current_rank": null,
   "record": {
-    "overall": "35-8",
+    "overall": "33-10",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.522,
-    "bonus_rate": 0.696,
+    "pin_rate": 0.478,
+    "bonus_rate": 0.652,
     "majors": 1,
     "techs": 3,
-    "pins": 12
+    "pins": 11
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -149,22 +154,6 @@
     },
     {
       "date": "2017-01-21",
-      "opponent_id": "OUTSTATE_b70f86745ea9",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Iroquois",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Iroquois"
-    },
-    {
-      "date": "2017-01-21",
       "opponent_id": "602935011",
       "opponent_career_id": "career_011406",
       "opponent_name": "Walker Davis",
@@ -178,6 +167,22 @@
       "score": null,
       "duration": "0:38",
       "event": "vs. Daviess County"
+    },
+    {
+      "date": "2017-01-21",
+      "opponent_id": "OUTSTATE_b70f86745ea9",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Iroquois",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Iroquois"
     },
     {
       "date": "2017-01-21",
@@ -209,7 +214,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Bullitt East"
+      "event": "vs. Pleasure Ridge Park"
+    },
+    {
+      "date": "2017-01-11",
+      "opponent_id": "9735403009",
+      "opponent_career_id": "career_012634",
+      "opponent_name": "Jesus Ruiz",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:45",
+      "event": "vs. South Oldham"
     },
     {
       "date": "2017-01-11",
@@ -244,11 +265,11 @@
       "event": "vs. Spencer County"
     },
     {
-      "date": "2017-01-11",
-      "opponent_id": "9735403009",
-      "opponent_career_id": "career_012634",
-      "opponent_name": "Jesus Ruiz",
-      "opponent_team": "South Oldham",
+      "date": "2017-01-04",
+      "opponent_id": "805879071",
+      "opponent_career_id": "career_011221",
+      "opponent_name": "Donnie Brinson",
+      "opponent_team": "North Bullitt",
       "opponent_team_rank": null,
       "opponent_weight": 150,
       "opponent_rank": null,
@@ -256,8 +277,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "2:45",
-      "event": "vs. South Oldham"
+      "duration": "2:35",
+      "event": "vs. North Bullitt"
     },
     {
       "date": "2017-01-04",
@@ -274,22 +295,6 @@
       "score": "13-5",
       "duration": "7:00",
       "event": "vs. Spencer County"
-    },
-    {
-      "date": "2017-01-04",
-      "opponent_id": "805879071",
-      "opponent_career_id": "career_011221",
-      "opponent_name": "Donnie Brinson",
-      "opponent_team": "North Bullitt",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:35",
-      "event": "vs. North Bullitt"
     },
     {
       "date": "2016-12-30",
@@ -400,6 +405,22 @@
       "result": "W",
       "method": "DEC",
       "score": "10-6",
+      "duration": "7:00",
+      "event": "Fern Creek Gladiator Tournament"
+    },
+    {
+      "date": "2016-12-23",
+      "opponent_id": "9732351009",
+      "opponent_career_id": "career_011554",
+      "opponent_name": "Alex Thompson",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": "10-7",
       "duration": "7:00",
       "event": "Fern Creek Gladiator Tournament"
     },
@@ -525,7 +546,7 @@
       "opponent_weight": 157,
       "opponent_rank": null,
       "weight_class": "157",
-      "result": "W",
+      "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -722,7 +743,7 @@
       "season": 2017,
       "grade": 11,
       "team": "Bullitt East",
-      "record": "35-8",
+      "record": "33-10",
       "regional_place": 3,
       "state_place": null
     },
@@ -730,7 +751,7 @@
       "season": 2016,
       "grade": 10,
       "team": "Bullitt East",
-      "record": "20-7",
+      "record": "19-8",
       "regional_place": 2,
       "state_place": null
     },
@@ -744,9 +765,9 @@
     }
   ],
   "career_record": {
-    "wins": 59,
-    "losses": 20,
-    "win_pct": 0.747
+    "wins": 56,
+    "losses": 23,
+    "win_pct": 0.709
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

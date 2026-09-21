@@ -5,6 +5,11 @@
   "team_slug": "danville",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
@@ -69,6 +74,22 @@
     },
     {
       "date": "2016-02-06",
+      "opponent_id": "8066845009",
+      "opponent_career_id": "career_012690",
+      "opponent_name": "Jacob Blissett",
+      "opponent_team": "Bullitt Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Bullitt Central"
+    },
+    {
+      "date": "2016-02-06",
       "opponent_id": "OUTSTATE_fa7f930d70be",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -130,22 +151,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Simon Kenton"
-    },
-    {
-      "date": "2016-02-06",
-      "opponent_id": "8066845009",
-      "opponent_career_id": "career_012690",
-      "opponent_name": "Jacob Blissett",
-      "opponent_team": "Bullitt Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Danville"
     },
     {
       "date": "2016-01-30",
@@ -241,7 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Danville"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2016-01-09",
@@ -385,7 +390,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Danville"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2015-12-29",
@@ -469,22 +474,6 @@
     },
     {
       "date": "2015-12-12",
-      "opponent_id": "353953107",
-      "opponent_career_id": "career_013818",
-      "opponent_name": "Nick Calhoun",
-      "opponent_team": "Tates Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Tates Creek"
-    },
-    {
-      "date": "2015-12-12",
       "opponent_id": "439821076",
       "opponent_career_id": "career_011375",
       "opponent_name": "Issiah Isaac",
@@ -497,7 +486,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Danville"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2015-12-12",
@@ -532,6 +521,22 @@
       "event": "vs. Moore"
     },
     {
+      "date": "2015-12-12",
+      "opponent_id": "353953107",
+      "opponent_career_id": "career_013818",
+      "opponent_name": "Nick Calhoun",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Tates Creek"
+    },
+    {
       "date": "2015-12-05",
       "opponent_id": "439812076",
       "opponent_career_id": "career_013427",
@@ -545,7 +550,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Danville"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2015-12-05",
@@ -627,5 +632,5 @@
     "losses": 46,
     "win_pct": 0.343
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

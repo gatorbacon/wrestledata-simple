@@ -5,10 +5,15 @@
   "team_slug": "harrison_county",
   "team_rank": null,
   "weight_class": 215,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
-    "overall": "41-12",
+    "overall": "31-9",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -48,6 +53,22 @@
       "result": "W",
       "method": "DEC",
       "score": "7-0",
+      "duration": "7:00",
+      "event": "KHSAA State Tournament"
+    },
+    {
+      "date": "2016-02-20",
+      "opponent_id": "395482094",
+      "opponent_career_id": "career_013055",
+      "opponent_name": "Vachean Jones",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "DEC",
+      "score": "7-1",
       "duration": "7:00",
       "event": "KHSAA State Tournament"
     },
@@ -240,24 +261,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Harrison County"
-    },
-    {
-      "date": "2016-02-06",
-      "opponent_id": "290789013",
-      "opponent_career_id": "career_013705",
-      "opponent_name": "Jack Lindsey",
-      "opponent_team": "Madison Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "DQ",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Madison Central"
+      "duration": "1:00",
+      "event": "vs. Danville"
     },
     {
       "date": "2016-02-06",
@@ -309,19 +314,19 @@
     },
     {
       "date": "2016-02-06",
-      "opponent_id": "OUTSTATE_79922d0d83bc",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Jeffersontown",
+      "opponent_id": "290789013",
+      "opponent_career_id": "career_013705",
+      "opponent_name": "Jack Lindsey",
+      "opponent_team": "Madison Central",
       "opponent_team_rank": null,
-      "opponent_weight": null,
+      "opponent_weight": 190,
       "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FF",
+      "weight_class": "190",
+      "result": "L",
+      "method": "DQ",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Jeffersontown"
+      "event": "vs. Madison Central"
     },
     {
       "date": "2016-01-30",
@@ -341,22 +346,6 @@
     },
     {
       "date": "2016-01-30",
-      "opponent_id": "OUTSTATE_e8741065d384",
-      "opponent_career_id": null,
-      "opponent_name": "Un Known",
-      "opponent_team": "Walton Verona",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Walton Verona"
-    },
-    {
-      "date": "2016-01-30",
       "opponent_id": "OUTSTATE_d268fa179a02",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -370,6 +359,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Scott"
+    },
+    {
+      "date": "2016-01-30",
+      "opponent_id": "OUTSTATE_e8741065d384",
+      "opponent_career_id": null,
+      "opponent_name": "Un Known",
+      "opponent_team": "Walton Verona",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Walton Verona"
     },
     {
       "date": "2016-01-30",
@@ -389,6 +394,22 @@
     },
     {
       "date": "2016-01-27",
+      "opponent_id": "441138013",
+      "opponent_career_id": "career_013655",
+      "opponent_name": "Jacob Ardon",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:48",
+      "event": "vs. Franklin County"
+    },
+    {
+      "date": "2016-01-27",
       "opponent_id": "OUTSTATE_10ad6d5288f6",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -402,22 +423,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Paul Dunbar"
-    },
-    {
-      "date": "2016-01-27",
-      "opponent_id": "441138013",
-      "opponent_career_id": "career_013655",
-      "opponent_name": "Jacob Ardon",
-      "opponent_team": "Franklin County",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Harrison County"
     },
     {
       "date": "2016-01-16",
@@ -449,7 +454,7 @@
       "method": "DEC",
       "score": "13-6",
       "duration": "7:00",
-      "event": "Fairfield Invitational"
+      "event": "Fairfield Inv."
     },
     {
       "date": "2016-01-09",
@@ -497,7 +502,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:56",
-      "event": "vs. Harrison County"
+      "event": "vs. Danville"
+    },
+    {
+      "date": "2016-01-02",
+      "opponent_id": "OUTSTATE_88256303556f",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Grant County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Grant County"
     },
     {
       "date": "2016-01-02",
@@ -530,22 +551,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Simon Kenton"
-    },
-    {
-      "date": "2016-01-02",
-      "opponent_id": "OUTSTATE_88256303556f",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Grant County",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Grant County"
     },
     {
       "date": "2016-01-02",
@@ -593,6 +598,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:20",
+      "event": "Woodford Co Invitational"
+    },
+    {
+      "date": "2015-12-29",
+      "opponent_id": "274110013",
+      "opponent_career_id": "career_013750",
+      "opponent_name": "Collin Portman",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:31",
       "event": "Woodford Co Invitational"
     },
     {
@@ -675,7 +696,7 @@
       "season": 2016,
       "grade": 12,
       "team": "Harrison County",
-      "record": "41-12",
+      "record": "31-9",
       "regional_place": 1,
       "state_place": 5
     },
@@ -683,7 +704,7 @@
       "season": 2015,
       "grade": 11,
       "team": "Harrison County",
-      "record": "33-2",
+      "record": "32-2",
       "regional_place": 1,
       "state_place": 6
     },
@@ -691,7 +712,7 @@
       "season": 2014,
       "grade": null,
       "team": "Harrison County",
-      "record": "28-11",
+      "record": "32-10",
       "regional_place": 2,
       "state_place": null
     },
@@ -705,9 +726,9 @@
     }
   ],
   "career_record": {
-    "wins": 113,
-    "losses": 36,
-    "win_pct": 0.758
+    "wins": 106,
+    "losses": 32,
+    "win_pct": 0.768
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,6 +5,11 @@
   "team_slug": "moore",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2019,
   "current_rank": null,
   "record": {
@@ -69,6 +74,22 @@
     },
     {
       "date": "2019-01-18",
+      "opponent_id": "6036275132",
+      "opponent_career_id": "career_009771",
+      "opponent_name": "Ben Bush",
+      "opponent_team": "Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:38",
+      "event": "vs. Central"
+    },
+    {
+      "date": "2019-01-18",
       "opponent_id": "5099882132",
       "opponent_career_id": "career_010733",
       "opponent_name": "Keith Monsour",
@@ -82,22 +103,6 @@
       "score": null,
       "duration": "2:05",
       "event": "vs. Trinity (Louisville)"
-    },
-    {
-      "date": "2019-01-18",
-      "opponent_id": "6036275132",
-      "opponent_career_id": "career_009771",
-      "opponent_name": "Ben Bush",
-      "opponent_team": "Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:38",
-      "event": "vs. Moore"
     },
     {
       "date": "2019-01-18",
@@ -117,22 +122,6 @@
     },
     {
       "date": "2018-12-08",
-      "opponent_id": "5019312132",
-      "opponent_career_id": "career_010466",
-      "opponent_name": "Fernando Munoz",
-      "opponent_team": "Bryan Station",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:50",
-      "event": "vs. Bryan Station"
-    },
-    {
-      "date": "2018-12-08",
       "opponent_id": "5069178132",
       "opponent_career_id": "career_010497",
       "opponent_name": "Chance Schenck",
@@ -145,7 +134,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Moore"
+      "event": "vs. Central Hardin"
+    },
+    {
+      "date": "2018-12-08",
+      "opponent_id": "5174960132",
+      "opponent_career_id": "career_010876",
+      "opponent_name": "Anthony Huff",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:50",
+      "event": "vs. Spencer County"
     },
     {
       "date": "2018-12-08",
@@ -165,19 +170,19 @@
     },
     {
       "date": "2018-12-08",
-      "opponent_id": "5174960132",
-      "opponent_career_id": "career_010876",
-      "opponent_name": "Anthony Huff",
-      "opponent_team": "Spencer County",
+      "opponent_id": "5019312132",
+      "opponent_career_id": "career_010466",
+      "opponent_name": "Fernando Munoz",
+      "opponent_team": "Bryan Station",
       "opponent_team_rank": null,
-      "opponent_weight": 190,
+      "opponent_weight": 165,
       "opponent_rank": null,
       "weight_class": "190",
-      "result": "W",
+      "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "1:50",
-      "event": "vs. Spencer County"
+      "duration": "5:50",
+      "event": "vs. Bryan Station"
     },
     {
       "date": "2018-12-01",
@@ -218,5 +223,5 @@
     "losses": 8,
     "win_pct": 0.2
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

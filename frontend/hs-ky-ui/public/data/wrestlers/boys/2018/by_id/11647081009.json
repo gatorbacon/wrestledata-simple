@@ -5,10 +5,15 @@
   "team_slug": "central",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2018,
   "current_rank": null,
   "record": {
-    "overall": "37-5",
+    "overall": "37-6",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -181,6 +186,38 @@
     },
     {
       "date": "2018-01-27",
+      "opponent_id": "11595492009",
+      "opponent_career_id": "career_009453",
+      "opponent_name": "Noah Jewell",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "HWT",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:40",
+      "event": "vs. Bullitt East"
+    },
+    {
+      "date": "2018-01-27",
+      "opponent_id": "OUTSTATE_eead225332bd",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "HWT",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Simon Kenton"
+    },
+    {
+      "date": "2018-01-27",
       "opponent_id": "11723904009",
       "opponent_career_id": "career_010798",
       "opponent_name": "Blake Young",
@@ -209,39 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Central"
-    },
-    {
-      "date": "2018-01-27",
-      "opponent_id": "11595492009",
-      "opponent_career_id": "career_009453",
-      "opponent_name": "Noah Jewell",
-      "opponent_team": "Bullitt East",
-      "opponent_team_rank": null,
-      "opponent_weight": 285,
-      "opponent_rank": null,
-      "weight_class": "HWT",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:40",
-      "event": "vs. Central"
-    },
-    {
-      "date": "2018-01-27",
-      "opponent_id": "OUTSTATE_eead225332bd",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "HWT",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Oldham County"
     },
     {
       "date": "2018-01-24",
@@ -437,22 +442,6 @@
     },
     {
       "date": "2017-12-20",
-      "opponent_id": "11599600009",
-      "opponent_career_id": "career_010626",
-      "opponent_name": "Bryan Pratt",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Meade County"
-    },
-    {
-      "date": "2017-12-20",
       "opponent_id": "1275521132",
       "opponent_career_id": "career_011804",
       "opponent_name": "Chase Baker",
@@ -500,20 +489,20 @@
       "event": "vs. Jeffersonville"
     },
     {
-      "date": "2017-12-16",
-      "opponent_id": "12195586009",
-      "opponent_career_id": "career_010745",
-      "opponent_name": "Patrick Dumire",
-      "opponent_team": "Valley",
+      "date": "2017-12-20",
+      "opponent_id": "11599600009",
+      "opponent_career_id": "career_010626",
+      "opponent_name": "Bryan Pratt",
+      "opponent_team": "Meade County",
       "opponent_team_rank": null,
       "opponent_weight": 215,
       "opponent_rank": null,
       "weight_class": "285",
-      "result": "W",
+      "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "1:38",
-      "event": "vs. Valley"
+      "duration": "0:00",
+      "event": "vs. Meade County"
     },
     {
       "date": "2017-12-16",
@@ -530,6 +519,22 @@
       "score": "4-1",
       "duration": "7:00",
       "event": "vs. Harrison County"
+    },
+    {
+      "date": "2017-12-16",
+      "opponent_id": "12195586009",
+      "opponent_career_id": "career_010745",
+      "opponent_name": "Patrick Dumire",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:38",
+      "event": "vs. Valley"
     },
     {
       "date": "2017-12-16",
@@ -739,7 +744,7 @@
       "season": 2018,
       "grade": 12,
       "team": "Central",
-      "record": "37-5",
+      "record": "37-6",
       "regional_place": 1,
       "state_place": 3
     },
@@ -747,7 +752,7 @@
       "season": 2017,
       "grade": 11,
       "team": "Central",
-      "record": "48-12",
+      "record": "48-11",
       "regional_place": 3,
       "state_place": null
     },
@@ -773,5 +778,5 @@
     "losses": 55,
     "win_pct": 0.704
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

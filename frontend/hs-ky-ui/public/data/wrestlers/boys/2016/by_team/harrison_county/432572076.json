@@ -5,10 +5,15 @@
   "team_slug": "harrison_county",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
-    "overall": "45-15",
+    "overall": "38-16",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.6,
+    "pin_rate": 0.484,
+    "bonus_rate": 0.581,
     "majors": 3,
     "techs": 0,
     "pins": 15
@@ -69,6 +74,22 @@
     },
     {
       "date": "2016-02-13",
+      "opponent_id": "393979094",
+      "opponent_career_id": "career_012984",
+      "opponent_name": "Chase Carroll",
+      "opponent_team": "Belfry",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-3",
+      "duration": "7:00",
+      "event": "KHSAA Region 8"
+    },
+    {
+      "date": "2016-02-13",
       "opponent_id": "297604013",
       "opponent_career_id": "career_013133",
       "opponent_name": "Colton Miller",
@@ -80,6 +101,22 @@
       "result": "L",
       "method": "MD",
       "score": "10-2",
+      "duration": "7:00",
+      "event": "KHSAA Region 8"
+    },
+    {
+      "date": "2016-02-13",
+      "opponent_id": "297604013",
+      "opponent_career_id": "career_013133",
+      "opponent_name": "Colton Miller",
+      "opponent_team": "Montgomery County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "MD",
+      "score": "12-2",
       "duration": "7:00",
       "event": "KHSAA Region 8"
     },
@@ -112,8 +149,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Harrison County"
+      "duration": "3:00",
+      "event": "vs. Danville"
     },
     {
       "date": "2016-02-06",
@@ -181,12 +218,76 @@
     },
     {
       "date": "2016-01-30",
+      "opponent_id": "338672107",
+      "opponent_career_id": "career_013747",
+      "opponent_name": "Dylan Gilezan",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "MD",
+      "score": "12-3",
+      "duration": "7:00",
+      "event": "vs. North Oldham"
+    },
+    {
+      "date": "2016-01-30",
+      "opponent_id": "384907094",
+      "opponent_career_id": "career_012330",
+      "opponent_name": "Jack Cunningham",
+      "opponent_team": "Scott",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:21",
+      "event": "vs. Scott"
+    },
+    {
+      "date": "2016-01-30",
       "opponent_id": "337982094",
       "opponent_career_id": "career_010748",
       "opponent_name": "Braden Mulcahy",
       "opponent_team": "Walton Verona",
       "opponent_team_rank": null,
       "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "DEC",
+      "score": "11-6",
+      "duration": "7:00",
+      "event": "vs. Walton Verona"
+    },
+    {
+      "date": "2016-01-30",
+      "opponent_id": "419680076",
+      "opponent_career_id": null,
+      "opponent_name": "Dylan Mason",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:58",
+      "event": "vs. Wayne County"
+    },
+    {
+      "date": "2016-01-30",
+      "opponent_id": "337977094",
+      "opponent_career_id": "career_011593",
+      "opponent_name": "Garrett McElroy",
+      "opponent_team": "Walton Verona",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
       "opponent_rank": null,
       "weight_class": "175",
       "result": "W",
@@ -209,71 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:58",
-      "event": "vs. Harrison County"
-    },
-    {
-      "date": "2016-01-30",
-      "opponent_id": "338672107",
-      "opponent_career_id": "career_013747",
-      "opponent_name": "Dylan Gilezan",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "MD",
-      "score": "12-3",
-      "duration": "7:00",
-      "event": "vs. North Oldham"
-    },
-    {
-      "date": "2016-01-30",
-      "opponent_id": "419680076",
-      "opponent_career_id": null,
-      "opponent_name": "Dylan Mason",
-      "opponent_team": "Wayne County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:58",
       "event": "vs. Wayne County"
-    },
-    {
-      "date": "2016-01-30",
-      "opponent_id": "384907094",
-      "opponent_career_id": "career_012330",
-      "opponent_name": "Jack Cunningham",
-      "opponent_team": "Scott",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:21",
-      "event": "vs. Scott"
-    },
-    {
-      "date": "2016-01-30",
-      "opponent_id": "337977094",
-      "opponent_career_id": "career_011593",
-      "opponent_name": "Garrett McElroy",
-      "opponent_team": "Walton Verona",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "DEC",
-      "score": "11-6",
-      "duration": "7:00",
-      "event": "vs. Harrison County"
     },
     {
       "date": "2016-01-27",
@@ -289,7 +326,7 @@
       "method": "DEC",
       "score": "2-1",
       "duration": "7:00",
-      "event": "vs. Harrison County"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2016-01-27",
@@ -320,8 +357,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Harrison County"
+      "duration": "3:38",
+      "event": "vs. Ashland Blazer"
     },
     {
       "date": "2016-01-16",
@@ -337,23 +374,7 @@
       "method": "DEC",
       "score": "7-5",
       "duration": "7:00",
-      "event": "vs. Harrison County"
-    },
-    {
-      "date": "2016-01-16",
-      "opponent_id": "370582013",
-      "opponent_career_id": "career_012622",
-      "opponent_name": "Zach Roberts",
-      "opponent_team": "Prestonsburg",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:09",
-      "event": "vs. Prestonsburg"
+      "event": "vs. Boyd County"
     },
     {
       "date": "2016-01-16",
@@ -370,6 +391,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Bourbon County"
+    },
+    {
+      "date": "2016-01-16",
+      "opponent_id": "370582013",
+      "opponent_career_id": "career_012622",
+      "opponent_name": "Zach Roberts",
+      "opponent_team": "Prestonsburg",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:09",
+      "event": "vs. Prestonsburg"
     },
     {
       "date": "2016-01-16",
@@ -449,7 +486,7 @@
       "method": "DEC",
       "score": "6-2",
       "duration": "7:00",
-      "event": "vs. Harrison County"
+      "event": "vs. Danville"
     },
     {
       "date": "2016-01-02",
@@ -465,23 +502,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:05",
-      "event": "vs. Harrison County"
-    },
-    {
-      "date": "2016-01-02",
-      "opponent_id": "303204011",
-      "opponent_career_id": "career_012342",
-      "opponent_name": "Casey Cornett",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:51",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Grant County"
     },
     {
       "date": "2016-01-02",
@@ -516,6 +537,22 @@
       "event": "vs. Madison Jr/Sr (Middletown)"
     },
     {
+      "date": "2016-01-02",
+      "opponent_id": "303204011",
+      "opponent_career_id": "career_012342",
+      "opponent_name": "Casey Cornett",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:51",
+      "event": "vs. Simon Kenton"
+    },
+    {
       "date": "2015-12-29",
       "opponent_id": "328086107",
       "opponent_career_id": "career_013065",
@@ -527,8 +564,8 @@
       "weight_class": "165",
       "result": "L",
       "method": "TF",
-      "score": "15-0",
-      "duration": "0:00",
+      "score": "17-0",
+      "duration": "4:00",
       "event": "Woodford Co Invitational"
     },
     {
@@ -613,18 +650,18 @@
     },
     {
       "date": "2015-12-19",
-      "opponent_id": "8138435009",
-      "opponent_career_id": "career_012647",
-      "opponent_name": "Damian Mattingly",
-      "opponent_team": "Valley",
+      "opponent_id": "310776107",
+      "opponent_career_id": "career_013045",
+      "opponent_name": "James Wharton",
+      "opponent_team": "Doss",
       "opponent_team_rank": null,
-      "opponent_weight": 150,
+      "opponent_weight": 165,
       "opponent_rank": null,
       "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:52",
+      "result": "L",
+      "method": "DEC",
+      "score": "9-3",
+      "duration": "7:00",
       "event": "Rumble in the Hive.2"
     },
     {
@@ -645,34 +682,18 @@
     },
     {
       "date": "2015-12-19",
-      "opponent_id": "274119013",
-      "opponent_career_id": "career_010655",
-      "opponent_name": "Sam Jenkins",
-      "opponent_team": "North Oldham",
+      "opponent_id": "8138435009",
+      "opponent_career_id": "career_012647",
+      "opponent_name": "Damian Mattingly",
+      "opponent_team": "Valley",
       "opponent_team_rank": null,
-      "opponent_weight": 157,
+      "opponent_weight": 150,
       "opponent_rank": null,
       "weight_class": "165",
       "result": "W",
-      "method": "DEC",
-      "score": "6-3",
-      "duration": "7:00",
-      "event": "Rumble in the Hive.2"
-    },
-    {
-      "date": "2015-12-19",
-      "opponent_id": "310776107",
-      "opponent_career_id": "career_013045",
-      "opponent_name": "James Wharton",
-      "opponent_team": "Doss",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "DEC",
-      "score": "9-3",
-      "duration": "7:00",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:52",
       "event": "Rumble in the Hive.2"
     },
     {
@@ -692,36 +713,36 @@
       "event": "Rumble in the Hive.2"
     },
     {
-      "date": "2015-12-12",
-      "opponent_id": "8142753009",
-      "opponent_career_id": "career_012435",
-      "opponent_name": "Tionna Collins",
-      "opponent_team": "Letcher County Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:24",
-      "event": "McDonald`s Classic Semi and Finals"
-    },
-    {
-      "date": "2015-12-12",
-      "opponent_id": "525806071",
-      "opponent_career_id": "career_010590",
-      "opponent_name": "Joe Jackson",
-      "opponent_team": "Johnson Central",
+      "date": "2015-12-19",
+      "opponent_id": "274119013",
+      "opponent_career_id": "career_010655",
+      "opponent_name": "Sam Jenkins",
+      "opponent_team": "North Oldham",
       "opponent_team_rank": null,
       "opponent_weight": 157,
       "opponent_rank": null,
       "weight_class": "165",
       "result": "W",
       "method": "DEC",
-      "score": "2-2",
+      "score": "6-3",
       "duration": "7:00",
-      "event": "McDonald`s Classic Semi and Finals"
+      "event": "Rumble in the Hive.2"
+    },
+    {
+      "date": "2015-12-19",
+      "opponent_id": "8069097009",
+      "opponent_career_id": "career_012439",
+      "opponent_name": "Johnny Lee",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "1-0",
+      "duration": "7:00",
+      "event": "vs. Meade County"
     },
     {
       "date": "2015-12-12",
@@ -752,8 +773,24 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Harrison County"
+      "duration": "1:59",
+      "event": "McDonald`s Classic Semi and Finals"
+    },
+    {
+      "date": "2015-12-12",
+      "opponent_id": "8142753009",
+      "opponent_career_id": "career_012435",
+      "opponent_name": "Tionna Collins",
+      "opponent_team": "Letcher County Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:24",
+      "event": "McDonald`s Classic Semi and Finals"
     },
     {
       "date": "2015-12-12",
@@ -772,6 +809,22 @@
       "event": "McDonald`s Classic Semi and Finals"
     },
     {
+      "date": "2015-12-12",
+      "opponent_id": "525806071",
+      "opponent_career_id": "career_010590",
+      "opponent_name": "Joe Jackson",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "2-2",
+      "duration": "7:00",
+      "event": "McDonald`s Classic Semi and Finals"
+    },
+    {
       "date": "2015-12-11",
       "opponent_id": "8142753009",
       "opponent_career_id": "career_012435",
@@ -785,7 +838,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Harrison County"
+      "event": "vs. Letcher County Central"
+    },
+    {
+      "date": "2015-12-05",
+      "opponent_id": "8249161009",
+      "opponent_career_id": "career_013398",
+      "opponent_name": "Brandon Messer",
+      "opponent_team": "Campbell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "MD",
+      "score": "22-13",
+      "duration": "7:00",
+      "event": "Rumble on the Hilltop"
     },
     {
       "date": "2015-12-05",
@@ -834,22 +903,6 @@
       "score": "6-4",
       "duration": "7:00",
       "event": "Rumble on the Hilltop"
-    },
-    {
-      "date": "2015-12-05",
-      "opponent_id": "8249161009",
-      "opponent_career_id": "career_013398",
-      "opponent_name": "Brandon Messer",
-      "opponent_team": "Campbell County",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "MD",
-      "score": "22-13",
-      "duration": "7:00",
-      "event": "Rumble on the Hilltop"
     }
   ],
   "career": {
@@ -868,7 +921,7 @@
       "season": 2019,
       "grade": 12,
       "team": "Harrison County",
-      "record": "41-3",
+      "record": "44-3",
       "regional_place": 1,
       "state_place": 4
     },
@@ -876,7 +929,7 @@
       "season": 2018,
       "grade": 11,
       "team": "Harrison County",
-      "record": "45-5",
+      "record": "46-5",
       "regional_place": 1,
       "state_place": 4
     },
@@ -884,7 +937,7 @@
       "season": 2017,
       "grade": 10,
       "team": "Harrison County",
-      "record": "55-2",
+      "record": "60-4",
       "regional_place": 1,
       "state_place": 4
     },
@@ -892,7 +945,7 @@
       "season": 2016,
       "grade": 9,
       "team": "Harrison County",
-      "record": "45-15",
+      "record": "38-16",
       "regional_place": null,
       "state_place": null
     },
@@ -900,15 +953,15 @@
       "season": 2015,
       "grade": 8,
       "team": "Harrison County",
-      "record": "10-1",
+      "record": "9-1",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 196,
-    "losses": 26,
-    "win_pct": 0.883
+    "wins": 197,
+    "losses": 29,
+    "win_pct": 0.872
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

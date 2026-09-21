@@ -5,10 +5,15 @@
   "team_slug": "newport",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "32-18",
+    "overall": "35-19",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.938,
-    "bonus_rate": 0.969,
+    "pin_rate": 0.933,
+    "bonus_rate": 0.967,
     "majors": 1,
     "techs": 0,
-    "pins": 30
+    "pins": 28
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -101,6 +106,22 @@
     },
     {
       "date": "2013-02-09",
+      "opponent_id": "1235586009",
+      "opponent_career_id": "career_015874",
+      "opponent_name": "Sam Steele",
+      "opponent_team": "Boone County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "KHSAA Region 6"
+    },
+    {
+      "date": "2013-02-09",
       "opponent_id": "1265032009",
       "opponent_career_id": "career_015308",
       "opponent_name": "Nick Bachman",
@@ -145,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:09",
-      "event": "vs. Newport"
+      "event": "vs. Cooper"
     },
     {
       "date": "2013-01-29",
@@ -196,86 +217,6 @@
       "event": "Lockland Invitational"
     },
     {
-      "date": "2013-01-26",
-      "opponent_id": "OUTSTATE_106bec96ffbf",
-      "opponent_career_id": null,
-      "opponent_name": "Nate Morgan",
-      "opponent_team": "East Clinton (OH)",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Lockland Invitational"
-    },
-    {
-      "date": "2013-01-26",
-      "opponent_id": "OUTSTATE_c0f66c399aa2",
-      "opponent_career_id": null,
-      "opponent_name": "Zach Meece",
-      "opponent_team": "Northwest (OH)",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Lockland Invitational"
-    },
-    {
-      "date": "2013-01-19",
-      "opponent_id": "1328367009",
-      "opponent_career_id": "career_013998",
-      "opponent_name": "James Arbaca",
-      "opponent_team": "Jeffersontown",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Capitol City Classic"
-    },
-    {
-      "date": "2013-01-19",
-      "opponent_id": "1328367009",
-      "opponent_career_id": "career_013998",
-      "opponent_name": "James Arbaca",
-      "opponent_team": "Jeffersontown",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "DEC",
-      "score": "10-5",
-      "duration": "7:00",
-      "event": "Capitol City Classic"
-    },
-    {
-      "date": "2013-01-19",
-      "opponent_id": "1216537009",
-      "opponent_career_id": "career_016122",
-      "opponent_name": "Jake Brown",
-      "opponent_team": "Anderson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "DEC",
-      "score": "8-5",
-      "duration": "7:00",
-      "event": "Capitol City Classic"
-    },
-    {
       "date": "2013-01-19",
       "opponent_id": "1216557009",
       "opponent_career_id": "career_016126",
@@ -304,6 +245,54 @@
       "result": "L",
       "method": "DEC",
       "score": "9-2",
+      "duration": "7:00",
+      "event": "Capitol City Classic"
+    },
+    {
+      "date": "2013-01-19",
+      "opponent_id": "1328367009",
+      "opponent_career_id": "career_013998",
+      "opponent_name": "James Arbaca",
+      "opponent_team": "Jeffersontown",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Capitol City Classic"
+    },
+    {
+      "date": "2013-01-19",
+      "opponent_id": "1216537009",
+      "opponent_career_id": "career_016122",
+      "opponent_name": "Jake Brown",
+      "opponent_team": "Anderson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-5",
+      "duration": "7:00",
+      "event": "Capitol City Classic"
+    },
+    {
+      "date": "2013-01-19",
+      "opponent_id": "1328367009",
+      "opponent_career_id": "career_013998",
+      "opponent_name": "James Arbaca",
+      "opponent_team": "Jeffersontown",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "DEC",
+      "score": "10-5",
       "duration": "7:00",
       "event": "Capitol City Classic"
     },
@@ -353,7 +342,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:40",
-      "event": "Cooper Jaguar Jungle Classic"
+      "event": "Jaguar Jungle Classic"
     },
     {
       "date": "2013-01-12",
@@ -433,7 +422,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:59",
-      "event": "vs. Newport"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2013-01-05",
@@ -560,7 +549,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "2:00",
       "event": "2012 NKAC"
     },
     {
@@ -645,38 +634,6 @@
     },
     {
       "date": "2012-12-08",
-      "opponent_id": "1439551009",
-      "opponent_career_id": null,
-      "opponent_name": "Kyle Fischer",
-      "opponent_team": "Spring Valley",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Spring Valley"
-    },
-    {
-      "date": "2012-12-08",
-      "opponent_id": "1398867009",
-      "opponent_career_id": "career_016509",
-      "opponent_name": "Ethan Bivens",
-      "opponent_team": "Perry County Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:57",
-      "event": "vs. Newport"
-    },
-    {
-      "date": "2012-12-08",
       "opponent_id": "OUTSTATE_ce3b8bde608e",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -724,6 +681,38 @@
       "event": "vs. North Oldham"
     },
     {
+      "date": "2012-12-08",
+      "opponent_id": "1439551009",
+      "opponent_career_id": null,
+      "opponent_name": "Kyle Fischer",
+      "opponent_team": "Spring Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Spring Valley"
+    },
+    {
+      "date": "2012-12-08",
+      "opponent_id": "1398867009",
+      "opponent_career_id": "career_016509",
+      "opponent_name": "Ethan Bivens",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:57",
+      "event": "vs. Perry County Central"
+    },
+    {
       "date": "2012-12-05",
       "opponent_id": "1264236009",
       "opponent_career_id": "career_014903",
@@ -737,23 +726,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:49",
-      "event": "vs. Newport"
-    },
-    {
-      "date": "2012-12-01",
-      "opponent_id": "1240020009",
-      "opponent_career_id": "career_016171",
-      "opponent_name": "Jordan Johnson",
-      "opponent_team": "Bryan Station",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:24",
-      "event": "Rumble on the Hilltop"
+      "event": "vs. Conner"
     },
     {
       "date": "2012-12-01",
@@ -769,6 +742,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
+      "event": "Rumble on the Hilltop"
+    },
+    {
+      "date": "2012-12-01",
+      "opponent_id": "1240020009",
+      "opponent_career_id": "career_016171",
+      "opponent_name": "Jordan Johnson",
+      "opponent_team": "Bryan Station",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:24",
       "event": "Rumble on the Hilltop"
     },
     {
@@ -801,7 +790,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:42",
-      "event": "vs. Newport"
+      "event": "vs. Cooper"
     },
     {
       "date": "2012-11-28",
@@ -837,22 +826,6 @@
     },
     {
       "date": "2012-11-24",
-      "opponent_id": "1328379009",
-      "opponent_career_id": "career_015971",
-      "opponent_name": "Haziel Lopez",
-      "opponent_team": "Jeffersontown",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Newport"
-    },
-    {
-      "date": "2012-11-24",
       "opponent_id": "1319410009",
       "opponent_career_id": "career_015056",
       "opponent_name": "Aaron Conway",
@@ -865,7 +838,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Newport"
+      "event": "vs. Holy Cross (Louisville)"
+    },
+    {
+      "date": "2012-11-24",
+      "opponent_id": "1328379009",
+      "opponent_career_id": "career_015971",
+      "opponent_name": "Haziel Lopez",
+      "opponent_team": "Jeffersontown",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Jeffersontown"
     },
     {
       "date": "2012-11-24",
@@ -930,7 +919,7 @@
       "season": 2015,
       "grade": 12,
       "team": "Newport",
-      "record": "48-8",
+      "record": "47-8",
       "regional_place": 3,
       "state_place": 5
     },
@@ -938,7 +927,7 @@
       "season": 2014,
       "grade": null,
       "team": "Newport",
-      "record": "35-8",
+      "record": "45-10",
       "regional_place": 3,
       "state_place": 7
     },
@@ -946,15 +935,15 @@
       "season": 2013,
       "grade": null,
       "team": "Newport",
-      "record": "32-18",
+      "record": "35-19",
       "regional_place": 4,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 115,
-    "losses": 34,
-    "win_pct": 0.772
+    "wins": 127,
+    "losses": 37,
+    "win_pct": 0.774
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

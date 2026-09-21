@@ -5,10 +5,15 @@
   "team_slug": "western",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "2-2",
+    "overall": "4-2",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -35,22 +40,6 @@
     "worst_loss": null
   },
   "match_list": [
-    {
-      "date": "2012-12-29",
-      "opponent_id": "1381501009",
-      "opponent_career_id": "career_013745",
-      "opponent_name": "Austin Alemi",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Woodford County Inv"
-    },
     {
       "date": "2012-12-29",
       "opponent_id": "1296560009",
@@ -85,6 +74,22 @@
     },
     {
       "date": "2012-12-29",
+      "opponent_id": "1381501009",
+      "opponent_career_id": "career_013745",
+      "opponent_name": "Austin Alemi",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Woodford County Invitational"
+    },
+    {
+      "date": "2012-12-29",
       "opponent_id": "1480220009",
       "opponent_career_id": "career_015796",
       "opponent_name": "Kyle Lawson",
@@ -96,24 +101,8 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:52",
       "event": "Woodford County Invitational"
-    },
-    {
-      "date": "2012-12-01",
-      "opponent_id": "1403228009",
-      "opponent_career_id": "career_016050",
-      "opponent_name": "Malik Baker",
-      "opponent_team": "Pleasure Ridge Park",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:36",
-      "event": "vs. Western"
     },
     {
       "date": "2012-12-01",
@@ -129,14 +118,32 @@
       "method": "DEC",
       "score": "10-4",
       "duration": "7:00",
-      "event": "vs. Western"
+      "event": "vs. Fern Creek"
+    },
+    {
+      "date": "2012-12-01",
+      "opponent_id": "1403228009",
+      "opponent_career_id": "career_016050",
+      "opponent_name": "Malik Baker",
+      "opponent_team": "Pleasure Ridge Park",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:36",
+      "event": "vs. Pleasure Ridge Park"
     }
   ],
   "career": {
     "career_id": "career_015854",
     "canonical_name": "Francisco Rodriguez",
     "seasons": [
-      2013
+      2013,
+      2012,
+      2011
     ]
   },
   "season_summary": [
@@ -144,15 +151,31 @@
       "season": 2013,
       "grade": null,
       "team": "Western",
-      "record": "2-2",
+      "record": "4-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 11,
+      "team": "Western",
+      "record": "0-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2011,
+      "grade": 10,
+      "team": "Western",
+      "record": "0-2",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 2,
-    "losses": 2,
-    "win_pct": 0.5
+    "wins": 4,
+    "losses": 6,
+    "win_pct": 0.4
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

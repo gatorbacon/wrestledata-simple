@@ -5,6 +5,11 @@
   "team_slug": "moore",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
@@ -145,7 +150,7 @@
       "method": "DEC",
       "score": "10-4",
       "duration": "7:00",
-      "event": "vs. Moore"
+      "event": "vs. La Rue County"
     },
     {
       "date": "2016-01-30",
@@ -197,22 +202,6 @@
     },
     {
       "date": "2016-01-16",
-      "opponent_id": "274118013",
-      "opponent_career_id": "career_013743",
-      "opponent_name": "Dallas Ochsenbein",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "DEC",
-      "score": "7-2",
-      "duration": "7:00",
-      "event": "vs. North Oldham"
-    },
-    {
-      "date": "2016-01-16",
       "opponent_id": "OUTSTATE_fa7f930d70be",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -258,6 +247,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Western"
+    },
+    {
+      "date": "2016-01-16",
+      "opponent_id": "274118013",
+      "opponent_career_id": "career_013743",
+      "opponent_name": "Dallas Ochsenbein",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-2",
+      "duration": "7:00",
+      "event": "vs. North Oldham"
     },
     {
       "date": "2016-01-09",
@@ -335,9 +340,9 @@
       "weight_class": "120",
       "result": "L",
       "method": "DEC",
-      "score": "7-6",
+      "score": "7-5",
       "duration": "7:00",
-      "event": "GMVWA Holiday Tournament"
+      "event": "GMVWA Holiday Classic"
     },
     {
       "date": "2015-12-29",
@@ -485,22 +490,6 @@
     },
     {
       "date": "2015-12-12",
-      "opponent_id": "319426107",
-      "opponent_career_id": "career_013286",
-      "opponent_name": "brandon Miller",
-      "opponent_team": "Henry Clay",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "DEC",
-      "score": "10-3",
-      "duration": "7:00",
-      "event": "Ryle Raider Rumble"
-    },
-    {
-      "date": "2015-12-12",
       "opponent_id": "307464010",
       "opponent_career_id": "career_011394",
       "opponent_name": "Nathan Grabow",
@@ -513,6 +502,22 @@
       "method": "FALL",
       "score": null,
       "duration": "3:05",
+      "event": "Ryle Raider Rumble"
+    },
+    {
+      "date": "2015-12-12",
+      "opponent_id": "319426107",
+      "opponent_career_id": "career_013286",
+      "opponent_name": "brandon Miller",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "DEC",
+      "score": "10-3",
+      "duration": "7:00",
       "event": "Ryle Raider Rumble"
     },
     {
@@ -549,38 +554,6 @@
     },
     {
       "date": "2015-12-05",
-      "opponent_id": "305057011",
-      "opponent_career_id": null,
-      "opponent_name": "Colin Neuner",
-      "opponent_team": "Beavercreek Hs",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "MD",
-      "score": "10-2",
-      "duration": "7:00",
-      "event": "vs. Beavercreek Hs"
-    },
-    {
-      "date": "2015-12-05",
-      "opponent_id": "309689010",
-      "opponent_career_id": null,
-      "opponent_name": "Nick Brooke",
-      "opponent_team": "Anderson",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:18",
-      "event": "vs. Anderson"
-    },
-    {
-      "date": "2015-12-05",
       "opponent_id": "463457071",
       "opponent_career_id": null,
       "opponent_name": "Cody Butts",
@@ -612,6 +585,38 @@
       "event": "vs. Elder"
     },
     {
+      "date": "2015-12-05",
+      "opponent_id": "305057011",
+      "opponent_career_id": null,
+      "opponent_name": "Colin Neuner",
+      "opponent_team": "Beavercreek Hs",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "MD",
+      "score": "10-2",
+      "duration": "7:00",
+      "event": "vs. Beavercreek Hs"
+    },
+    {
+      "date": "2015-12-05",
+      "opponent_id": "309689010",
+      "opponent_career_id": null,
+      "opponent_name": "Nick Brooke",
+      "opponent_team": "Anderson",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:18",
+      "event": "vs. Anderson"
+    },
+    {
       "date": "2015-11-28",
       "opponent_id": "351566094",
       "opponent_career_id": "career_013452",
@@ -625,7 +630,7 @@
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
-      "event": "vs. Moore"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2015-11-28",
@@ -690,15 +695,15 @@
       "season": 2013,
       "grade": null,
       "team": "Moore",
-      "record": "30-11",
+      "record": "39-12",
       "regional_place": 2,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 63,
-    "losses": 27,
-    "win_pct": 0.7
+    "wins": 72,
+    "losses": 28,
+    "win_pct": 0.72
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "holy_cross_louisville",
   "team_rank": null,
   "weight_class": 106,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "20-6",
+    "overall": "26-8",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.65,
-    "bonus_rate": 0.8,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.81,
     "majors": 2,
     "techs": 1,
-    "pins": 13
+    "pins": 14
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -257,7 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "vs. Holy Cross (Louisville)"
+      "event": "vs. North Oldham"
     },
     {
       "date": "2013-01-12",
@@ -273,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:51",
-      "event": "vs. Holy Cross (Louisville)"
+      "event": "vs. Doss"
     },
     {
       "date": "2012-12-29",
@@ -369,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:16",
-      "event": "vs. Holy Cross (Louisville)"
+      "event": "vs. Desales"
     },
     {
       "date": "2012-12-15",
@@ -385,7 +390,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:30",
-      "event": "vs. Holy Cross (Louisville)"
+      "event": "vs. Doss"
     },
     {
       "date": "2012-12-15",
@@ -421,6 +426,22 @@
     },
     {
       "date": "2012-12-08",
+      "opponent_id": "-1",
+      "opponent_career_id": null,
+      "opponent_name": "Kyle Barrett",
+      "opponent_team": "Independent",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:14",
+      "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2012-12-08",
       "opponent_id": "1392773009",
       "opponent_career_id": "career_015126",
       "opponent_name": "Zenon Rodriguez",
@@ -431,8 +452,24 @@
       "weight_class": "106",
       "result": "W",
       "method": "DEC",
-      "score": "9-2",
+      "score": "7-0",
       "duration": "7:00",
+      "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2012-12-08",
+      "opponent_id": "1380702009",
+      "opponent_career_id": "career_014043",
+      "opponent_name": "Jake Burroughs",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:07",
       "event": "King of the Bluegrass"
     },
     {
@@ -449,7 +486,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:54",
-      "event": "vs. Holy Cross (Louisville)"
+      "event": "vs. Desales"
     },
     {
       "date": "2012-12-01",
@@ -465,7 +502,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:30",
-      "event": "vs. Holy Cross (Louisville)"
+      "event": "vs. Doss"
     },
     {
       "date": "2012-12-01",
@@ -497,7 +534,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:35",
-      "event": "vs. Holy Cross (Louisville)"
+      "event": "vs. Desales"
     },
     {
       "date": "2012-11-24",
@@ -553,7 +590,8 @@
     "canonical_name": "Hunter Baum",
     "seasons": [
       2014,
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -561,7 +599,7 @@
       "season": 2014,
       "grade": null,
       "team": "Holy Cross (Louisville)",
-      "record": "13-6",
+      "record": "15-6",
       "regional_place": 3,
       "state_place": null
     },
@@ -569,15 +607,23 @@
       "season": 2013,
       "grade": null,
       "team": "Holy Cross (Louisville)",
-      "record": "20-6",
+      "record": "26-8",
       "regional_place": 2,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 10,
+      "team": "Holy Cross (Louisville)",
+      "record": "0-2",
+      "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 33,
-    "losses": 12,
-    "win_pct": 0.733
+    "wins": 41,
+    "losses": 16,
+    "win_pct": 0.719
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

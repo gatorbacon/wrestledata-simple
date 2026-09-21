@@ -5,10 +5,15 @@
   "team_slug": "southern",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "21-14",
+    "overall": "24-15",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -49,7 +54,7 @@
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "KHSAA Region 3"
+      "event": "Regionals"
     },
     {
       "date": "2013-02-09",
@@ -81,7 +86,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:11",
-      "event": "KHSAA Region 3"
+      "event": "Regionals"
     },
     {
       "date": "2013-02-09",
@@ -97,7 +102,7 @@
       "method": "MD",
       "score": "17-7",
       "duration": "7:00",
-      "event": "KHSAA Region 3"
+      "event": "Regionals"
     },
     {
       "date": "2013-02-06",
@@ -113,7 +118,7 @@
       "method": "TF",
       "score": "16-0",
       "duration": "0:00",
-      "event": "vs. Southern"
+      "event": "vs. Pleasure Ridge Park"
     },
     {
       "date": "2013-01-23",
@@ -129,7 +134,7 @@
       "method": "DEC",
       "score": "8-5",
       "duration": "7:00",
-      "event": "vs. Southern"
+      "event": "vs. Male"
     },
     {
       "date": "2013-01-23",
@@ -177,7 +182,7 @@
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Dragon Invitational"
+      "event": "Dragon Invitational @ South Oldham"
     },
     {
       "date": "2013-01-19",
@@ -193,7 +198,7 @@
       "method": "DEC",
       "score": "6-5",
       "duration": "7:00",
-      "event": "Dragon Inv"
+      "event": "Dragon Invitational @ South Oldham"
     },
     {
       "date": "2013-01-19",
@@ -210,22 +215,6 @@
       "score": "11-4",
       "duration": "7:00",
       "event": "Dragon Invitational @ South Oldham"
-    },
-    {
-      "date": "2013-01-12",
-      "opponent_id": "1443425009",
-      "opponent_career_id": null,
-      "opponent_name": "Mitchell Esterle",
-      "opponent_team": "St. Xavier",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:01",
-      "event": "vs. St. Xavier"
     },
     {
       "date": "2013-01-12",
@@ -258,6 +247,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Pleasure Ridge Park"
+    },
+    {
+      "date": "2013-01-12",
+      "opponent_id": "1443425009",
+      "opponent_career_id": null,
+      "opponent_name": "Mitchell Esterle",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:01",
+      "event": "vs. St. Xavier"
     },
     {
       "date": "2013-01-09",
@@ -389,22 +394,6 @@
     },
     {
       "date": "2012-12-15",
-      "opponent_id": "1328400009",
-      "opponent_career_id": null,
-      "opponent_name": "D Long",
-      "opponent_team": "Jeffersonville",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:10",
-      "event": "vs. Jeffersonville"
-    },
-    {
-      "date": "2012-12-15",
       "opponent_id": "1235582009",
       "opponent_career_id": "career_015238",
       "opponent_name": "Braden Jones",
@@ -417,7 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:29",
-      "event": "vs. Southern"
+      "event": "vs. Boone County"
     },
     {
       "date": "2012-12-15",
@@ -433,7 +422,23 @@
       "method": "FALL",
       "score": null,
       "duration": "5:50",
-      "event": "vs. Southern"
+      "event": "vs. Moore"
+    },
+    {
+      "date": "2012-12-15",
+      "opponent_id": "1328400009",
+      "opponent_career_id": null,
+      "opponent_name": "D Long",
+      "opponent_team": "Jeffersonville",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:10",
+      "event": "vs. Jeffersonville"
     },
     {
       "date": "2012-12-15",
@@ -481,7 +486,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:56",
-      "event": "vs. Southern"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2012-12-12",
@@ -549,22 +554,6 @@
     },
     {
       "date": "2012-12-05",
-      "opponent_id": "1381507009",
-      "opponent_career_id": "career_015536",
-      "opponent_name": "Mitch Rusch",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:35",
-      "event": "vs. North Oldham"
-    },
-    {
-      "date": "2012-12-05",
       "opponent_id": "OUTSTATE_b70f86745ea9",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -580,52 +569,20 @@
       "event": "vs. Iroquois"
     },
     {
-      "date": "2012-12-01",
-      "opponent_id": "1291475009",
-      "opponent_career_id": "career_016292",
-      "opponent_name": "Michael Kollar",
-      "opponent_team": "Fern Creek",
+      "date": "2012-12-05",
+      "opponent_id": "1381507009",
+      "opponent_career_id": "career_015536",
+      "opponent_name": "Mitch Rusch",
+      "opponent_team": "North Oldham",
       "opponent_team_rank": null,
       "opponent_weight": 157,
       "opponent_rank": null,
       "weight_class": "165",
       "result": "L",
-      "method": "DEC",
-      "score": "13-7",
-      "duration": "7:00",
-      "event": "vs. Southern"
-    },
-    {
-      "date": "2012-12-01",
-      "opponent_id": "1329755009",
-      "opponent_career_id": "career_013353",
-      "opponent_name": "Patrick Mcdonald",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "DEC",
-      "score": "8-7",
-      "duration": "7:00",
-      "event": "vs. Southern"
-    },
-    {
-      "date": "2012-12-01",
-      "opponent_id": "1403240009",
-      "opponent_career_id": "career_016052",
-      "opponent_name": "Zack Mitchell",
-      "opponent_team": "Pleasure Ridge Park",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "DEC",
-      "score": "8-4",
-      "duration": "7:00",
-      "event": "vs. Southern"
+      "method": "FALL",
+      "score": null,
+      "duration": "1:35",
+      "event": "vs. North Oldham"
     },
     {
       "date": "2012-12-01",
@@ -641,7 +598,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:47",
-      "event": "vs. Southern"
+      "event": "vs. Central"
     },
     {
       "date": "2012-12-01",
@@ -657,7 +614,55 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "vs. Southern"
+      "event": "vs. Doss"
+    },
+    {
+      "date": "2012-12-01",
+      "opponent_id": "1291475009",
+      "opponent_career_id": "career_016292",
+      "opponent_name": "Michael Kollar",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "13-7",
+      "duration": "7:00",
+      "event": "vs. Fern Creek"
+    },
+    {
+      "date": "2012-12-01",
+      "opponent_id": "1329755009",
+      "opponent_career_id": "career_013353",
+      "opponent_name": "Patrick Mcdonald",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-7",
+      "duration": "7:00",
+      "event": "vs. John Hardin"
+    },
+    {
+      "date": "2012-12-01",
+      "opponent_id": "1403240009",
+      "opponent_career_id": "career_016052",
+      "opponent_name": "Zack Mitchell",
+      "opponent_team": "Pleasure Ridge Park",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-4",
+      "duration": "7:00",
+      "event": "vs. Pleasure Ridge Park"
     }
   ],
   "career": {
@@ -673,7 +678,7 @@
       "season": 2014,
       "grade": null,
       "team": "Southern",
-      "record": "12-6",
+      "record": "18-9",
       "regional_place": 2,
       "state_place": null
     },
@@ -681,15 +686,15 @@
       "season": 2013,
       "grade": null,
       "team": "Southern",
-      "record": "21-14",
+      "record": "24-15",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 33,
-    "losses": 20,
-    "win_pct": 0.623
+    "wins": 42,
+    "losses": 24,
+    "win_pct": 0.636
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

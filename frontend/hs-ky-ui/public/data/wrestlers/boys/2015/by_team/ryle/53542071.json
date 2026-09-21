@@ -5,10 +5,15 @@
   "team_slug": "ryle",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
-    "overall": "34-15",
+    "overall": "35-15",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.786,
-    "bonus_rate": 0.786,
+    "pin_rate": 0.793,
+    "bonus_rate": 0.793,
     "majors": 0,
     "techs": 0,
-    "pins": 22
+    "pins": 23
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -85,6 +90,38 @@
     },
     {
       "date": "2015-01-31",
+      "opponent_id": "71207076",
+      "opponent_career_id": "career_013632",
+      "opponent_name": "Cade Willingham",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:26",
+      "event": "vs. Fern Creek"
+    },
+    {
+      "date": "2015-01-31",
+      "opponent_id": "32190010",
+      "opponent_career_id": "career_014023",
+      "opponent_name": "Trevin Montgomery",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "DEC",
+      "score": "7-1",
+      "duration": "7:00",
+      "event": "vs. Meade County"
+    },
+    {
+      "date": "2015-01-31",
       "opponent_id": "5829604009",
       "opponent_career_id": "career_013334",
       "opponent_name": "Daniel Kimble",
@@ -97,7 +134,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:20",
-      "event": "vs. Ryle"
+      "event": "vs. Oldham County"
     },
     {
       "date": "2015-01-31",
@@ -114,38 +151,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Henry Clay"
-    },
-    {
-      "date": "2015-01-31",
-      "opponent_id": "71207076",
-      "opponent_career_id": "career_013632",
-      "opponent_name": "Cade Willingham",
-      "opponent_team": "Fern Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:26",
-      "event": "vs. Ryle"
-    },
-    {
-      "date": "2015-01-31",
-      "opponent_id": "32190010",
-      "opponent_career_id": "career_014023",
-      "opponent_name": "Trevin Montgomery",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "DEC",
-      "score": "7-1",
-      "duration": "7:00",
-      "event": "vs. Ryle"
     },
     {
       "date": "2015-01-24",
@@ -229,6 +234,22 @@
     },
     {
       "date": "2015-01-17",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Miamisburg Invite"
+    },
+    {
+      "date": "2015-01-17",
       "opponent_id": "5901764009",
       "opponent_career_id": null,
       "opponent_name": "Bradey Kallick",
@@ -289,7 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:27",
-      "event": "vs. Ryle"
+      "event": "vs. Boone County"
     },
     {
       "date": "2015-01-14",
@@ -305,7 +326,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:43",
-      "event": "vs. Ryle"
+      "event": "vs. Conner"
     },
     {
       "date": "2015-01-14",
@@ -385,23 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:17",
-      "event": "vs. Ryle"
-    },
-    {
-      "date": "2015-01-07",
-      "opponent_id": "OUTSTATE_d0eff82e3f21",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Dixie Heights",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Dixie Heights"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2015-01-07",
@@ -420,20 +425,20 @@
       "event": "vs. Simon Kenton"
     },
     {
-      "date": "2015-01-03",
-      "opponent_id": "5542414009",
-      "opponent_career_id": "career_014551",
-      "opponent_name": "Alex Carson",
-      "opponent_team": "Desales",
+      "date": "2015-01-07",
+      "opponent_id": "OUTSTATE_d0eff82e3f21",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Dixie Heights",
       "opponent_team_rank": null,
-      "opponent_weight": 175,
+      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "190",
       "result": "W",
-      "method": "FALL",
+      "method": "FF",
       "score": null,
-      "duration": "0:22",
-      "event": "Gladiator Tournament"
+      "duration": "7:00",
+      "event": "vs. Dixie Heights"
     },
     {
       "date": "2015-01-03",
@@ -449,6 +454,22 @@
       "method": "FALL",
       "score": null,
       "duration": "2:08",
+      "event": "Gladiator Tournament"
+    },
+    {
+      "date": "2015-01-03",
+      "opponent_id": "5542414009",
+      "opponent_career_id": "career_014551",
+      "opponent_name": "Alex Carson",
+      "opponent_team": "Desales",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:22",
       "event": "Gladiator Tournament"
     },
     {
@@ -497,6 +518,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:41",
+      "event": "Gladiator Tournament"
+    },
+    {
+      "date": "2015-01-03",
+      "opponent_id": "5606844009",
+      "opponent_career_id": "career_012405",
+      "opponent_name": "Andrew Varble",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:51",
       "event": "Gladiator Tournament"
     },
     {
@@ -593,7 +630,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:17",
-      "event": "GMVWA Holiday Tournament"
+      "event": "GMVWA"
     },
     {
       "date": "2014-12-28",
@@ -785,7 +822,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:58",
-      "event": "vs. Ryle"
+      "event": "vs. Dixie Heights"
     },
     {
       "date": "2014-12-05",
@@ -817,7 +854,7 @@
       "season": 2015,
       "grade": 12,
       "team": "Ryle",
-      "record": "34-15",
+      "record": "35-15",
       "regional_place": 2,
       "state_place": null
     },
@@ -831,9 +868,9 @@
     }
   ],
   "career_record": {
-    "wins": 48,
+    "wins": 49,
     "losses": 22,
-    "win_pct": 0.686
+    "win_pct": 0.69
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

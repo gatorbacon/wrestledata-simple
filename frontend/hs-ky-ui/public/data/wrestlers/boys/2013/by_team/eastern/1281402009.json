@@ -5,10 +5,15 @@
   "team_slug": "eastern",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "14-6",
+    "overall": "23-8",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.909,
-    "bonus_rate": 0.955,
+    "pin_rate": 0.913,
+    "bonus_rate": 0.957,
     "majors": 1,
     "techs": 0,
-    "pins": 20
+    "pins": 21
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -193,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:12",
-      "event": "vs. Eastern"
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2013-01-12",
@@ -305,7 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Woodford County Invitational"
+      "event": "WCI"
     },
     {
       "date": "2012-12-29",
@@ -384,24 +389,8 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "5:02",
       "event": "WCI"
-    },
-    {
-      "date": "2012-12-15",
-      "opponent_id": "1274175009",
-      "opponent_career_id": "career_016261",
-      "opponent_name": "Tyler Erhard",
-      "opponent_team": "Desales",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:16",
-      "event": "vs. Eastern"
     },
     {
       "date": "2012-12-15",
@@ -417,7 +406,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "vs. Eastern"
+      "event": "vs. Central"
+    },
+    {
+      "date": "2012-12-15",
+      "opponent_id": "1274175009",
+      "opponent_career_id": "career_016261",
+      "opponent_name": "Tyler Erhard",
+      "opponent_team": "Desales",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:16",
+      "event": "vs. Desales"
     },
     {
       "date": "2012-12-15",
@@ -433,7 +438,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Eastern"
+      "event": "vs. Spencer County"
     },
     {
       "date": "2012-12-08",
@@ -485,6 +490,22 @@
     },
     {
       "date": "2012-12-01",
+      "opponent_id": "1296572009",
+      "opponent_career_id": "career_015947",
+      "opponent_name": "Cain Clark",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "vs. Franklin County"
+    },
+    {
+      "date": "2012-12-01",
       "opponent_id": "1431408009",
       "opponent_career_id": "career_016560",
       "opponent_name": "Hiero Chamblee",
@@ -497,7 +518,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:55",
-      "event": "vs. Eastern"
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2012-11-29",
@@ -520,7 +541,8 @@
     "career_id": "career_016283",
     "canonical_name": "Brennan Boykin",
     "seasons": [
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -528,15 +550,23 @@
       "season": 2013,
       "grade": null,
       "team": "Eastern",
-      "record": "14-6",
+      "record": "23-8",
       "regional_place": 2,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 11,
+      "team": "Eastern",
+      "record": "2-2",
+      "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 14,
-    "losses": 6,
-    "win_pct": 0.7
+    "wins": 25,
+    "losses": 10,
+    "win_pct": 0.714
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

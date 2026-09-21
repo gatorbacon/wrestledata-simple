@@ -5,10 +5,15 @@
   "team_slug": "moore",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2019,
   "current_rank": null,
   "record": {
-    "overall": "20-17",
+    "overall": "18-19",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.533,
-    "bonus_rate": 0.6,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.562,
     "majors": 1,
     "techs": 0,
     "pins": 8
@@ -133,6 +138,22 @@
     },
     {
       "date": "2019-02-02",
+      "opponent_id": "5318367132",
+      "opponent_career_id": "career_007735",
+      "opponent_name": "Anthony (A.J.) Harvey",
+      "opponent_team": "Christian County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "SV-1",
+      "score": "3-1",
+      "duration": "8:15",
+      "event": "2019 Kentucky JV State Championships"
+    },
+    {
+      "date": "2019-02-02",
       "opponent_id": "5069246132",
       "opponent_career_id": "career_010260",
       "opponent_name": "Colton Hayden",
@@ -144,22 +165,6 @@
       "result": "W",
       "method": "DEC",
       "score": "7-6",
-      "duration": "7:00",
-      "event": "2019 Kentucky JV State Championships"
-    },
-    {
-      "date": "2019-02-02",
-      "opponent_id": "OUTSTATE_f017544ab732",
-      "opponent_career_id": null,
-      "opponent_name": "Jack Latherow",
-      "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FF",
-      "score": null,
       "duration": "7:00",
       "event": "2019 Kentucky JV State Championships"
     },
@@ -180,6 +185,22 @@
       "event": "2019 Kentucky JV State Championships"
     },
     {
+      "date": "2019-02-02",
+      "opponent_id": "OUTSTATE_f017544ab732",
+      "opponent_career_id": null,
+      "opponent_name": "Jack Latherow",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "2019 Kentucky JV State Championships"
+    },
+    {
       "date": "2019-01-26",
       "opponent_id": "5318367132",
       "opponent_career_id": "career_007735",
@@ -193,7 +214,7 @@
       "method": "DEC",
       "score": "7-4",
       "duration": "7:00",
-      "event": "vs. Moore"
+      "event": "vs. Christian County"
     },
     {
       "date": "2019-01-26",
@@ -209,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:33",
-      "event": "vs. Moore"
+      "event": "vs. Madison Central"
     },
     {
       "date": "2019-01-26",
@@ -245,38 +266,6 @@
     },
     {
       "date": "2019-01-19",
-      "opponent_id": "OUTSTATE_524c205f1a1b",
-      "opponent_career_id": null,
-      "opponent_name": "John Doe",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "W",
-      "method": "MD",
-      "score": "13-4",
-      "duration": "7:00",
-      "event": "Dragon Invitational"
-    },
-    {
-      "date": "2019-01-19",
-      "opponent_id": "5071755132",
-      "opponent_career_id": "career_010666",
-      "opponent_name": "Jackson Deckard",
-      "opponent_team": "Oldham County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "DEC",
-      "score": "6-2",
-      "duration": "7:00",
-      "event": "Dragon Invitational"
-    },
-    {
-      "date": "2019-01-19",
       "opponent_id": "5435654132",
       "opponent_career_id": "career_008785",
       "opponent_name": "Colby Stevenson",
@@ -289,6 +278,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
+      "event": "Dragon Invitational"
+    },
+    {
+      "date": "2019-01-19",
+      "opponent_id": "OUTSTATE_524c205f1a1b",
+      "opponent_career_id": null,
+      "opponent_name": "John Doe",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "MD",
+      "score": "13-4",
+      "duration": "7:00",
       "event": "Dragon Invitational"
     },
     {
@@ -325,6 +330,22 @@
     },
     {
       "date": "2019-01-19",
+      "opponent_id": "5071755132",
+      "opponent_career_id": "career_010666",
+      "opponent_name": "Jackson Deckard",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-2",
+      "duration": "7:00",
+      "event": "Dragon Invitational"
+    },
+    {
+      "date": "2019-01-19",
       "opponent_id": "5129308132",
       "opponent_career_id": "career_010808",
       "opponent_name": "Mason Hall",
@@ -353,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:55",
-      "event": "vs. Moore"
+      "event": "vs. Central"
     },
     {
       "date": "2019-01-18",
@@ -405,6 +426,22 @@
     },
     {
       "date": "2018-12-22",
+      "opponent_id": "5550739132",
+      "opponent_career_id": "career_010541",
+      "opponent_name": "Tyler Norton",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:31",
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2018-12-22",
       "opponent_id": "5239304132",
       "opponent_career_id": "career_010583",
       "opponent_name": "Karwoski Griffin",
@@ -449,7 +486,7 @@
       "method": "DEC",
       "score": "16-11",
       "duration": "7:00",
-      "event": "vs. Moore"
+      "event": "vs. Madison Central"
     },
     {
       "date": "2018-12-21",
@@ -501,22 +538,6 @@
     },
     {
       "date": "2018-12-15",
-      "opponent_id": "5132226132",
-      "opponent_career_id": null,
-      "opponent_name": "Phoenix Rodgers",
-      "opponent_team": "Heritage Hills",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:29",
-      "event": "Jeff Classic"
-    },
-    {
-      "date": "2018-12-15",
       "opponent_id": "OUTSTATE_fcd1228e2432",
       "opponent_career_id": null,
       "opponent_name": "Andrew Campbell",
@@ -529,6 +550,22 @@
       "method": "FALL",
       "score": null,
       "duration": "3:00",
+      "event": "Jeff Classic"
+    },
+    {
+      "date": "2018-12-15",
+      "opponent_id": "5132226132",
+      "opponent_career_id": null,
+      "opponent_name": "Phoenix Rodgers",
+      "opponent_team": "Heritage Hills",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:29",
       "event": "Jeff Classic"
     },
     {
@@ -576,7 +613,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "1:54",
+      "duration": "0:54",
       "event": "2018 Ryle Raider Rumble"
     },
     {
@@ -618,7 +655,7 @@
       "season": 2019,
       "grade": 11,
       "team": "Moore",
-      "record": "20-17",
+      "record": "18-19",
       "regional_place": 3,
       "state_place": null
     },
@@ -626,15 +663,15 @@
       "season": 2018,
       "grade": 10,
       "team": "Moore",
-      "record": "9-13",
+      "record": "11-16",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 56,
-    "losses": 40,
-    "win_pct": 0.583
+    "losses": 45,
+    "win_pct": 0.554
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

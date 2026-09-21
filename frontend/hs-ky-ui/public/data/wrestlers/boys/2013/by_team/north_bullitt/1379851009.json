@@ -5,10 +5,15 @@
   "team_slug": "north_bullitt",
   "team_rank": null,
   "weight_class": 157,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "2-0",
+    "overall": "4-1",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -49,7 +54,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:45",
-      "event": "vs. North Bullitt"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2012-12-01",
@@ -65,7 +70,23 @@
       "method": "FALL",
       "score": null,
       "duration": "2:55",
-      "event": "vs. North Bullitt"
+      "event": "vs. John Hardin"
+    },
+    {
+      "date": "2012-12-01",
+      "opponent_id": "1329764009",
+      "opponent_career_id": "career_015066",
+      "opponent_name": "Andre Farris",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "MD",
+      "score": "10-2",
+      "duration": "7:00",
+      "event": "vs. John Hardin"
     },
     {
       "date": "2012-12-01",
@@ -97,30 +118,15 @@
       "method": "FALL",
       "score": null,
       "duration": "1:33",
-      "event": "vs. North Bullitt"
-    },
-    {
-      "date": "2012-12-01",
-      "opponent_id": "1329764009",
-      "opponent_career_id": "career_015066",
-      "opponent_name": "Andre Farris",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "MD",
-      "score": "10-2",
-      "duration": "7:00",
-      "event": "vs. North Bullitt"
+      "event": "vs. Pleasure Ridge Park"
     }
   ],
   "career": {
     "career_id": "career_016456",
     "canonical_name": "Tony Redemann",
     "seasons": [
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -128,15 +134,23 @@
       "season": 2013,
       "grade": null,
       "team": "North Bullitt",
-      "record": "2-0",
+      "record": "4-1",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 11,
+      "team": "North Bullitt",
+      "record": "0-2",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 2,
-    "losses": 0,
-    "win_pct": 1.0
+    "wins": 4,
+    "losses": 3,
+    "win_pct": 0.571
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

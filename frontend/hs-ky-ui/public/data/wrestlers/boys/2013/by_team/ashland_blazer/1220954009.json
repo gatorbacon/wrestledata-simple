@@ -5,10 +5,15 @@
   "team_slug": "ashland_blazer",
   "team_rank": null,
   "weight_class": 215,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "34-6",
+    "overall": "39-6",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -433,7 +438,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:45",
-      "event": "vs. Ashland Blazer"
+      "event": "vs. Johnson Central"
     },
     {
       "date": "2013-01-11",
@@ -513,7 +518,39 @@
       "method": "FALL",
       "score": null,
       "duration": "1:33",
-      "event": "vs. Ashland Blazer"
+      "event": "vs. Johnson Central"
+    },
+    {
+      "date": "2013-01-05",
+      "opponent_id": "1242206009",
+      "opponent_career_id": null,
+      "opponent_name": "Tyler Cogar",
+      "opponent_team": "Cabell Midland",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:21",
+      "event": "vs. Cabell Midland"
+    },
+    {
+      "date": "2013-01-05",
+      "opponent_id": "1255828009",
+      "opponent_career_id": null,
+      "opponent_name": "Cole Webb",
+      "opponent_team": "Chesapeake",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:45",
+      "event": "vs. Chesapeake"
     },
     {
       "date": "2013-01-05",
@@ -562,38 +599,6 @@
       "score": null,
       "duration": "3:48",
       "event": "vs. Spring Valley"
-    },
-    {
-      "date": "2013-01-05",
-      "opponent_id": "1242206009",
-      "opponent_career_id": null,
-      "opponent_name": "Tyler Cogar",
-      "opponent_team": "Cabell Midland",
-      "opponent_team_rank": null,
-      "opponent_weight": 285,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:21",
-      "event": "vs. Cabell Midland"
-    },
-    {
-      "date": "2013-01-05",
-      "opponent_id": "1255828009",
-      "opponent_career_id": null,
-      "opponent_name": "Cole Webb",
-      "opponent_team": "Chesapeake",
-      "opponent_team_rank": null,
-      "opponent_weight": 285,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:45",
-      "event": "vs. Chesapeake"
     },
     {
       "date": "2013-01-03",
@@ -645,19 +650,19 @@
     },
     {
       "date": "2012-12-15",
-      "opponent_id": "OUTSTATE_cb420747012e",
+      "opponent_id": "1240695009",
       "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Riverside Hs",
+      "opponent_name": "Ryan White",
+      "opponent_team": "Buffalo HS",
       "opponent_team_rank": null,
-      "opponent_weight": 106,
+      "opponent_weight": 215,
       "opponent_rank": null,
       "weight_class": "215",
       "result": "W",
-      "method": "FF",
-      "score": null,
+      "method": "DEC",
+      "score": "14-9",
       "duration": "7:00",
-      "event": "vs. Riverside Hs"
+      "event": "vs. Buffalo HS"
     },
     {
       "date": "2012-12-15",
@@ -677,22 +682,6 @@
     },
     {
       "date": "2012-12-15",
-      "opponent_id": "1240695009",
-      "opponent_career_id": null,
-      "opponent_name": "Ryan White",
-      "opponent_team": "Buffalo HS",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "DEC",
-      "score": "14-9",
-      "duration": "7:00",
-      "event": "vs. Buffalo HS"
-    },
-    {
-      "date": "2012-12-15",
       "opponent_id": "OUTSTATE_58dbb9690ced",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -708,20 +697,20 @@
       "event": "vs. Lincoln County"
     },
     {
-      "date": "2012-12-08",
-      "opponent_id": "1312648009",
-      "opponent_career_id": "career_013073",
-      "opponent_name": "Kellon Williams",
-      "opponent_team": "Harrison County",
+      "date": "2012-12-15",
+      "opponent_id": "OUTSTATE_cb420747012e",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Riverside Hs",
       "opponent_team_rank": null,
-      "opponent_weight": 190,
+      "opponent_weight": 106,
       "opponent_rank": null,
       "weight_class": "215",
       "result": "W",
-      "method": "FALL",
+      "method": "FF",
       "score": null,
-      "duration": "0:39",
-      "event": "vs. Ashland Blazer"
+      "duration": "7:00",
+      "event": "vs. Riverside Hs"
     },
     {
       "date": "2012-12-08",
@@ -741,6 +730,22 @@
     },
     {
       "date": "2012-12-08",
+      "opponent_id": "1312648009",
+      "opponent_career_id": "career_013073",
+      "opponent_name": "Kellon Williams",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:39",
+      "event": "vs. Harrison County"
+    },
+    {
+      "date": "2012-12-08",
       "opponent_id": "1369110009",
       "opponent_career_id": "career_016439",
       "opponent_name": "Ian Kelley",
@@ -753,14 +758,15 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Ashland Blazer"
+      "event": "vs. Montgomery County"
     }
   ],
   "career": {
     "career_id": "career_015866",
     "canonical_name": "Tanner Adams",
     "seasons": [
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -768,15 +774,23 @@
       "season": 2013,
       "grade": null,
       "team": "Ashland Blazer",
-      "record": "34-6",
+      "record": "39-6",
       "regional_place": 2,
       "state_place": 5
+    },
+    {
+      "season": 2012,
+      "grade": 11,
+      "team": "Ashland Blazer",
+      "record": "0-2",
+      "regional_place": null,
+      "state_place": null
     }
   ],
   "career_record": {
-    "wins": 34,
-    "losses": 6,
-    "win_pct": 0.85
+    "wins": 39,
+    "losses": 8,
+    "win_pct": 0.83
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

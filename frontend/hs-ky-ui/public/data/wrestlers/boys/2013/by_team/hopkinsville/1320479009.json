@@ -5,10 +5,15 @@
   "team_slug": "hopkinsville",
   "team_rank": null,
   "weight_class": 106,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "2-2",
+    "overall": "2-3",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -37,6 +42,22 @@
   "match_list": [
     {
       "date": "2012-12-20",
+      "opponent_id": "1242714009",
+      "opponent_career_id": "career_015889",
+      "opponent_name": "Boyce Nichols",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:17",
+      "event": "vs. Caldwell County"
+    },
+    {
+      "date": "2012-12-20",
       "opponent_id": "1391863009",
       "opponent_career_id": "career_016038",
       "opponent_name": "Daniel Day",
@@ -52,22 +73,6 @@
       "event": "vs. Owensboro"
     },
     {
-      "date": "2012-12-20",
-      "opponent_id": "1242714009",
-      "opponent_career_id": "career_015889",
-      "opponent_name": "Boyce Nichols",
-      "opponent_team": "Caldwell County",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:17",
-      "event": "vs. Hopkinsville"
-    },
-    {
       "date": "2012-12-13",
       "opponent_id": "1243126009",
       "opponent_career_id": "career_013432",
@@ -81,7 +86,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:25",
-      "event": "vs. Hopkinsville"
+      "event": "vs. Calloway County"
     },
     {
       "date": "2012-12-11",
@@ -128,15 +133,15 @@
       "season": 2013,
       "grade": null,
       "team": "Hopkinsville",
-      "record": "2-2",
+      "record": "2-3",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 2,
-    "losses": 2,
-    "win_pct": 0.5
+    "losses": 3,
+    "win_pct": 0.4
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

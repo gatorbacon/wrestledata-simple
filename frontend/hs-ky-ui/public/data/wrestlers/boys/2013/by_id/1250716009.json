@@ -5,10 +5,15 @@
   "team_slug": "central",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "28-14",
+    "overall": "35-17",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.444,
-    "bonus_rate": 0.704,
+    "pin_rate": 0.423,
+    "bonus_rate": 0.692,
     "majors": 2,
     "techs": 5,
-    "pins": 12
+    "pins": 11
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -98,22 +103,6 @@
       "score": null,
       "duration": "5:40",
       "event": "KHSAA Region 4"
-    },
-    {
-      "date": "2013-02-08",
-      "opponent_id": "1278348009",
-      "opponent_career_id": "career_015018",
-      "opponent_name": "Geron Hurst",
-      "opponent_team": "Dupont Manual",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:40",
-      "event": "Region"
     },
     {
       "date": "2013-01-30",
@@ -369,7 +358,7 @@
       "method": "TF",
       "score": "17-2",
       "duration": "0:00",
-      "event": "vs. Central"
+      "event": "vs. Doss"
     },
     {
       "date": "2013-01-09",
@@ -593,7 +582,7 @@
       "method": "TF",
       "score": "15-0",
       "duration": "0:00",
-      "event": "vs. Central"
+      "event": "vs. Jeffersontown"
     },
     {
       "date": "2012-12-29",
@@ -609,7 +598,7 @@
       "method": "MD",
       "score": "15-5",
       "duration": "7:00",
-      "event": "vs. Central"
+      "event": "vs. North Hardin"
     },
     {
       "date": "2012-12-28",
@@ -625,7 +614,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:55",
-      "event": "vs. Central"
+      "event": "vs. Desales"
     },
     {
       "date": "2012-12-28",
@@ -641,7 +630,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:51",
-      "event": "vs. Central"
+      "event": "vs. Pleasure Ridge Park"
     },
     {
       "date": "2012-12-22",
@@ -709,22 +698,6 @@
     },
     {
       "date": "2012-12-15",
-      "opponent_id": "1281396009",
-      "opponent_career_id": "career_013051",
-      "opponent_name": "Luca Guralnik",
-      "opponent_team": "Eastern",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:00",
-      "event": "vs. Eastern"
-    },
-    {
-      "date": "2012-12-15",
       "opponent_id": "1276430009",
       "opponent_career_id": "career_013044",
       "opponent_name": "Jerome Jones",
@@ -738,6 +711,22 @@
       "score": "23-16",
       "duration": "7:00",
       "event": "vs. Doss"
+    },
+    {
+      "date": "2012-12-15",
+      "opponent_id": "1281396009",
+      "opponent_career_id": "career_013051",
+      "opponent_name": "Luca Guralnik",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "vs. Eastern"
     },
     {
       "date": "2012-12-15",
@@ -785,7 +774,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Central"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2012-12-12",
@@ -801,7 +790,7 @@
       "method": "DEC",
       "score": "13-7",
       "duration": "7:00",
-      "event": "vs. Central"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2012-12-08",
@@ -890,7 +879,8 @@
     "seasons": [
       2015,
       2014,
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -906,7 +896,7 @@
       "season": 2014,
       "grade": null,
       "team": "Central",
-      "record": "26-10",
+      "record": "32-12",
       "regional_place": 2,
       "state_place": null
     },
@@ -914,15 +904,23 @@
       "season": 2013,
       "grade": null,
       "team": "Central",
-      "record": "28-14",
+      "record": "35-17",
       "regional_place": 4,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 9,
+      "team": "Central",
+      "record": "2-2",
+      "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 75,
-    "losses": 37,
-    "win_pct": 0.67
+    "wins": 90,
+    "losses": 44,
+    "win_pct": 0.672
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

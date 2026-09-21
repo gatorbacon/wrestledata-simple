@@ -5,10 +5,15 @@
   "team_slug": "campbell_county",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "28-11",
+    "overall": "31-13",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.615,
-    "bonus_rate": 0.808,
+    "pin_rate": 0.63,
+    "bonus_rate": 0.815,
     "majors": 4,
     "techs": 1,
-    "pins": 16
+    "pins": 17
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -177,7 +182,7 @@
       "method": "MD",
       "score": "16-6",
       "duration": "7:00",
-      "event": "vs. Campbell County"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2013-01-26",
@@ -193,7 +198,7 @@
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
-      "event": "vs. Campbell County"
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2013-01-12",
@@ -309,6 +314,22 @@
     },
     {
       "date": "2012-12-29",
+      "opponent_id": "-1",
+      "opponent_career_id": null,
+      "opponent_name": "Kyle Barrett",
+      "opponent_team": "Independent",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:33",
+      "event": "GMVWCA Holiday Torunament"
+    },
+    {
+      "date": "2012-12-29",
       "opponent_id": "1340799009",
       "opponent_career_id": null,
       "opponent_name": "Jake Jenson",
@@ -417,7 +438,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "NKAC"
+      "event": "2012 NKAC Conference"
     },
     {
       "date": "2012-12-22",
@@ -645,22 +666,6 @@
     },
     {
       "date": "2012-11-24",
-      "opponent_id": "1296560009",
-      "opponent_career_id": "career_015376",
-      "opponent_name": "Marcus Bucerzan",
-      "opponent_team": "Franklin County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:35",
-      "event": "vs. Franklin County"
-    },
-    {
-      "date": "2012-11-24",
       "opponent_id": "1216556009",
       "opponent_career_id": "career_014941",
       "opponent_name": "Chris McDaniel",
@@ -673,7 +678,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Campbell County"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2012-11-24",
@@ -692,6 +697,22 @@
       "event": "vs. Bourbon County"
     },
     {
+      "date": "2012-11-24",
+      "opponent_id": "1296560009",
+      "opponent_career_id": "career_015376",
+      "opponent_name": "Marcus Bucerzan",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:35",
+      "event": "vs. Franklin County"
+    },
+    {
       "date": "2012-11-20",
       "opponent_id": "1329754009",
       "opponent_career_id": "career_015975",
@@ -705,7 +726,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:15",
-      "event": "vs. Campbell County"
+      "event": "vs. John Hardin"
     },
     {
       "date": "2012-11-20",
@@ -721,7 +742,7 @@
       "method": "MD",
       "score": "14-4",
       "duration": "7:00",
-      "event": "vs. Campbell County"
+      "event": "vs. Oldham County"
     }
   ],
   "career": {
@@ -731,7 +752,9 @@
       2016,
       2015,
       2014,
-      2013
+      2013,
+      2012,
+      2011
     ]
   },
   "season_summary": [
@@ -739,7 +762,7 @@
       "season": 2016,
       "grade": 12,
       "team": "Campbell County",
-      "record": "34-9",
+      "record": "35-9",
       "regional_place": 1,
       "state_place": null
     },
@@ -747,7 +770,7 @@
       "season": 2015,
       "grade": 11,
       "team": "Campbell County",
-      "record": "41-9",
+      "record": "40-9",
       "regional_place": 1,
       "state_place": 7
     },
@@ -755,7 +778,7 @@
       "season": 2014,
       "grade": null,
       "team": "Campbell County",
-      "record": "27-12",
+      "record": "27-13",
       "regional_place": 4,
       "state_place": null
     },
@@ -763,15 +786,31 @@
       "season": 2013,
       "grade": null,
       "team": "Campbell County",
-      "record": "28-11",
+      "record": "31-13",
       "regional_place": 1,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 8,
+      "team": "Campbell County",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2011,
+      "grade": 7,
+      "team": "Campbell County",
+      "record": "0-2",
+      "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 130,
-    "losses": 41,
-    "win_pct": 0.76
+    "wins": 135,
+    "losses": 48,
+    "win_pct": 0.738
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

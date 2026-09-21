@@ -5,6 +5,11 @@
   "team_slug": "ashland_blazer",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2018,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.909,
-    "bonus_rate": 0.909,
+    "pin_rate": 0.913,
+    "bonus_rate": 0.913,
     "majors": 0,
     "techs": 0,
-    "pins": 20
+    "pins": 21
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -46,6 +51,22 @@
       "opponent_rank": null,
       "weight_class": "175",
       "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "KHSAA Region 8"
+    },
+    {
+      "date": "2018-02-09",
+      "opponent_id": "122495132",
+      "opponent_career_id": "career_010629",
+      "opponent_name": "Joseph Newell",
+      "opponent_team": "Montgomery County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -341,22 +362,6 @@
     },
     {
       "date": "2017-12-21",
-      "opponent_id": "143694132",
-      "opponent_career_id": "career_011621",
-      "opponent_name": "Rowdy Kinser",
-      "opponent_team": "Sheldon Clark",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Sheldon Clark"
-    },
-    {
-      "date": "2017-12-21",
       "opponent_id": "OUTSTATE_2d50b6287d74",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -388,7 +393,7 @@
       "event": "vs. Huntington"
     },
     {
-      "date": "2017-12-16",
+      "date": "2017-12-21",
       "opponent_id": "143694132",
       "opponent_career_id": "career_011621",
       "opponent_name": "Rowdy Kinser",
@@ -466,6 +471,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Prestonsburg"
+    },
+    {
+      "date": "2017-12-16",
+      "opponent_id": "143694132",
+      "opponent_career_id": "career_011621",
+      "opponent_name": "Rowdy Kinser",
+      "opponent_team": "Sheldon Clark",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Sheldon Clark"
     },
     {
       "date": "2017-12-02",
@@ -597,5 +618,5 @@
     "losses": 16,
     "win_pct": 0.754
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

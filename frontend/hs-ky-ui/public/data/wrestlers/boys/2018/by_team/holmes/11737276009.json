@@ -5,10 +5,15 @@
   "team_slug": "holmes",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2018,
   "current_rank": null,
   "record": {
-    "overall": "17-11",
+    "overall": "18-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -101,22 +106,6 @@
     },
     {
       "date": "2018-01-31",
-      "opponent_id": "152871132",
-      "opponent_career_id": "career_011433",
-      "opponent_name": "Thomas Gripshover",
-      "opponent_team": "Grant County",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Holmes"
-    },
-    {
-      "date": "2018-01-31",
       "opponent_id": "12213207009",
       "opponent_career_id": "career_011145",
       "opponent_name": "Drake Hurt",
@@ -130,6 +119,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Frederick Douglas"
+    },
+    {
+      "date": "2018-01-31",
+      "opponent_id": "152871132",
+      "opponent_career_id": "career_011433",
+      "opponent_name": "Thomas Gripshover",
+      "opponent_team": "Grant County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Grant County"
     },
     {
       "date": "2018-01-20",
@@ -177,7 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Holmes"
+      "event": "vs. Covington Catholic"
     },
     {
       "date": "2018-01-11",
@@ -209,7 +214,7 @@
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "vs. Holmes"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2018-01-03",
@@ -337,23 +342,7 @@
       "method": "DEC",
       "score": "10-6",
       "duration": "7:00",
-      "event": "vs. Holmes"
-    },
-    {
-      "date": "2017-12-16",
-      "opponent_id": "OUTSTATE_d07544b0f72e",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Princeton",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Princeton"
+      "event": "vs. Boone County"
     },
     {
       "date": "2017-12-16",
@@ -370,6 +359,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Walnut Hills"
+    },
+    {
+      "date": "2017-12-16",
+      "opponent_id": "OUTSTATE_d07544b0f72e",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Princeton",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Princeton"
     },
     {
       "date": "2017-12-16",
@@ -417,7 +422,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:19",
-      "event": "vs. Holmes"
+      "event": "vs. Boone County"
     },
     {
       "date": "2017-12-06",
@@ -434,6 +439,22 @@
       "score": "16-0",
       "duration": "0:00",
       "event": "vs. Aiken (Cincinnati) High School"
+    },
+    {
+      "date": "2017-12-02",
+      "opponent_id": "12213152009",
+      "opponent_career_id": "career_010565",
+      "opponent_name": "Luke Goode",
+      "opponent_team": "Frederick Douglas ",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:55",
+      "event": "Rumble on the Hilltop"
     },
     {
       "date": "2017-12-02",
@@ -465,22 +486,6 @@
       "method": "FALL",
       "score": null,
       "duration": "2:20",
-      "event": "Rumble on the Hilltop"
-    },
-    {
-      "date": "2017-12-02",
-      "opponent_id": "12213152009",
-      "opponent_career_id": "career_010565",
-      "opponent_name": "Luke Goode",
-      "opponent_team": "Frederick Douglas ",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:55",
       "event": "Rumble on the Hilltop"
     },
     {
@@ -522,7 +527,7 @@
       "season": 2018,
       "grade": 11,
       "team": "Holmes",
-      "record": "17-11",
+      "record": "18-11",
       "regional_place": null,
       "state_place": null
     },
@@ -536,9 +541,9 @@
     }
   ],
   "career_record": {
-    "wins": 50,
+    "wins": 51,
     "losses": 30,
-    "win_pct": 0.625
+    "win_pct": 0.63
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

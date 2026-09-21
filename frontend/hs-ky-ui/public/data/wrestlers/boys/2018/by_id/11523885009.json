@@ -5,10 +5,15 @@
   "team_slug": "desales",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2018,
   "current_rank": null,
   "record": {
-    "overall": "10-19",
+    "overall": "10-20",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -81,6 +86,22 @@
       "method": "FALL",
       "score": null,
       "duration": "3:45",
+      "event": "KHSAA Region 3"
+    },
+    {
+      "date": "2018-02-09",
+      "opponent_id": "12072107009",
+      "opponent_career_id": "career_009520",
+      "opponent_name": "Trevon Warren",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:34",
       "event": "KHSAA Region 3"
     },
     {
@@ -181,6 +202,22 @@
     },
     {
       "date": "2018-01-27",
+      "opponent_id": "11626956009",
+      "opponent_career_id": "career_009716",
+      "opponent_name": "Gunner Krupp",
+      "opponent_team": "West Jessamine",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "DEC",
+      "score": "1-0",
+      "duration": "7:00",
+      "event": "Jessamine County Clash"
+    },
+    {
+      "date": "2018-01-27",
       "opponent_id": "11683622009",
       "opponent_career_id": "career_011553",
       "opponent_name": "Caine Boyer",
@@ -194,38 +231,6 @@
       "score": null,
       "duration": "0:00",
       "event": "Jessamine County Clash"
-    },
-    {
-      "date": "2018-01-24",
-      "opponent_id": "239972132",
-      "opponent_career_id": "career_011963",
-      "opponent_name": "Brandon Jaggers",
-      "opponent_team": "Fern Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "MD",
-      "score": "15-4",
-      "duration": "7:00",
-      "event": "JV Region"
-    },
-    {
-      "date": "2018-01-24",
-      "opponent_id": "239972132",
-      "opponent_career_id": "career_011963",
-      "opponent_name": "Brandon Jaggers",
-      "opponent_team": "Fern Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "JV Regional 3 tournamant"
     },
     {
       "date": "2018-01-24",
@@ -258,6 +263,38 @@
       "score": null,
       "duration": "0:00",
       "event": "JV Region"
+    },
+    {
+      "date": "2018-01-24",
+      "opponent_id": "239972132",
+      "opponent_career_id": "career_011963",
+      "opponent_name": "Brandon Jaggers",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "MD",
+      "score": "15-4",
+      "duration": "7:00",
+      "event": "JV Region"
+    },
+    {
+      "date": "2018-01-24",
+      "opponent_id": "239972132",
+      "opponent_career_id": "career_011963",
+      "opponent_name": "Brandon Jaggers",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "JV Regional 3 tournamant"
     },
     {
       "date": "2018-01-24",
@@ -437,22 +474,6 @@
     },
     {
       "date": "2017-12-09",
-      "opponent_id": "11612338009",
-      "opponent_career_id": "career_011741",
-      "opponent_name": "Blake Hill",
-      "opponent_team": "Fairdale",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:26",
-      "event": "King of the Bluegrass @ Fairdale"
-    },
-    {
-      "date": "2017-12-09",
       "opponent_id": "11869123009",
       "opponent_career_id": null,
       "opponent_name": "Maverick Marmol",
@@ -482,6 +503,22 @@
       "score": null,
       "duration": "1:38",
       "event": "King of the Bluegrass @ Fairdale"
+    },
+    {
+      "date": "2017-12-09",
+      "opponent_id": "11612338009",
+      "opponent_career_id": "career_011741",
+      "opponent_name": "Blake Hill",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:26",
+      "event": "King of the Bluegrass @ Fairdale"
     }
   ],
   "career": {
@@ -507,7 +544,7 @@
       "season": 2019,
       "grade": 11,
       "team": "Desales",
-      "record": "17-22",
+      "record": "17-20",
       "regional_place": null,
       "state_place": null
     },
@@ -515,7 +552,7 @@
       "season": 2018,
       "grade": 10,
       "team": "Desales",
-      "record": "10-19",
+      "record": "10-20",
       "regional_place": 4,
       "state_place": null
     },
@@ -530,8 +567,8 @@
   ],
   "career_record": {
     "wins": 54,
-    "losses": 65,
-    "win_pct": 0.454
+    "losses": 64,
+    "win_pct": 0.458
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "scott",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
-    "overall": "29-11",
+    "overall": "31-10",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -49,6 +54,22 @@
       "method": "FALL",
       "score": null,
       "duration": "3:45",
+      "event": "KHSAA State Tournament"
+    },
+    {
+      "date": "2016-02-20",
+      "opponent_id": "432582076",
+      "opponent_career_id": "career_012240",
+      "opponent_name": "Michael Mattox",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:30",
       "event": "KHSAA State Tournament"
     },
     {
@@ -209,7 +230,7 @@
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "vs. Scott"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2016-01-30",
@@ -225,7 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:01",
-      "event": "vs. Scott"
+      "event": "vs. Moore"
     },
     {
       "date": "2016-01-30",
@@ -273,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Scott"
+      "event": "vs. Covington Catholic"
     },
     {
       "date": "2016-01-13",
@@ -289,7 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Scott"
+      "event": "vs. Holmes"
     },
     {
       "date": "2016-01-13",
@@ -401,7 +422,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Scott"
+      "event": "vs. Covington Catholic"
     },
     {
       "date": "2015-12-31",
@@ -417,7 +438,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Scott"
+      "event": "vs. Holmes"
     },
     {
       "date": "2015-12-31",
@@ -433,7 +454,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Scott"
+      "event": "vs. Newport"
     },
     {
       "date": "2015-12-31",
@@ -533,22 +554,6 @@
     },
     {
       "date": "2015-12-12",
-      "opponent_id": "337989094",
-      "opponent_career_id": "career_011591",
-      "opponent_name": "Blake Roth",
-      "opponent_team": "Walton Verona",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "DEC",
-      "score": "3-2",
-      "duration": "7:00",
-      "event": "Ryle Raider Rumble"
-    },
-    {
-      "date": "2015-12-12",
       "opponent_id": "273016013",
       "opponent_career_id": null,
       "opponent_name": "Mikey Nemeth",
@@ -596,26 +601,26 @@
       "event": "Ryle Raider Rumble"
     },
     {
-      "date": "2015-12-05",
-      "opponent_id": "432570076",
-      "opponent_career_id": "career_010569",
-      "opponent_name": "Brent Hudgins",
-      "opponent_team": "Harrison County",
+      "date": "2015-12-12",
+      "opponent_id": "337989094",
+      "opponent_career_id": "career_011591",
+      "opponent_name": "Blake Roth",
+      "opponent_team": "Walton Verona",
       "opponent_team_rank": null,
       "opponent_weight": 106,
       "opponent_rank": null,
       "weight_class": "113",
-      "result": "W",
+      "result": "L",
       "method": "DEC",
-      "score": "13-6",
+      "score": "3-2",
       "duration": "7:00",
-      "event": "Rumble on the Hilltop"
+      "event": "Ryle Raider Rumble"
     },
     {
       "date": "2015-12-05",
-      "opponent_id": "311854011",
-      "opponent_career_id": "career_013660",
-      "opponent_name": "Tyler Hudgins (2015)",
+      "opponent_id": "432570076",
+      "opponent_career_id": "career_010569",
+      "opponent_name": "Brent Hudgins",
       "opponent_team": "Harrison County",
       "opponent_team_rank": null,
       "opponent_weight": 106,
@@ -674,6 +679,22 @@
       "score": null,
       "duration": "7:00",
       "event": "Rumble on the Hilltop"
+    },
+    {
+      "date": "2015-12-05",
+      "opponent_id": "311854011",
+      "opponent_career_id": "career_013660",
+      "opponent_name": "Tyler Hudgins (2015)",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "DEC",
+      "score": "13-6",
+      "duration": "7:00",
+      "event": "Rumble on the Hilltop"
     }
   ],
   "career": {
@@ -688,15 +709,15 @@
       "season": 2016,
       "grade": 8,
       "team": "Scott",
-      "record": "29-11",
+      "record": "31-10",
       "regional_place": 3,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 29,
-    "losses": 11,
-    "win_pct": 0.725
+    "wins": 31,
+    "losses": 10,
+    "win_pct": 0.756
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

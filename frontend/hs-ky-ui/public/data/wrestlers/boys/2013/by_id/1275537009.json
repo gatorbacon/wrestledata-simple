@@ -5,10 +5,15 @@
   "team_slug": "dixie_heights",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "28-8",
+    "overall": "31-8",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.526,
-    "bonus_rate": 0.895,
+    "pin_rate": 0.545,
+    "bonus_rate": 0.864,
     "majors": 4,
     "techs": 3,
-    "pins": 10
+    "pins": 12
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -177,7 +182,7 @@
       "method": "DEC",
       "score": "11-8",
       "duration": "7:00",
-      "event": "Capital City Classic"
+      "event": "capitalcityclassic"
     },
     {
       "date": "2013-01-19",
@@ -292,20 +297,20 @@
       "event": "Bellbrook"
     },
     {
-      "date": "2012-12-28",
-      "opponent_id": "OUTSTATE_3a9958ab7d21",
+      "date": "2013-01-05",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
-      "opponent_team": "Lakota West",
+      "opponent_team": "Unknown",
       "opponent_team_rank": null,
-      "opponent_weight": 106,
+      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "113",
       "result": "W",
-      "method": "FF",
-      "score": null,
+      "method": "DEC",
+      "score": "7-1",
       "duration": "7:00",
-      "event": "vs. Lakota West"
+      "event": "Bellbrook"
     },
     {
       "date": "2012-12-28",
@@ -322,6 +327,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Harrison"
+    },
+    {
+      "date": "2012-12-28",
+      "opponent_id": "OUTSTATE_3a9958ab7d21",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Lakota West",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Lakota West"
     },
     {
       "date": "2012-12-28",
@@ -368,8 +389,8 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "2012 NKAC"
+      "duration": "3:20",
+      "event": "NKAC"
     },
     {
       "date": "2012-12-22",
@@ -433,7 +454,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:52",
-      "event": "vs. Dixie Heights"
+      "event": "vs. Conner"
     },
     {
       "date": "2012-12-15",
@@ -449,23 +470,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:17",
-      "event": "vs. Dixie Heights"
-    },
-    {
-      "date": "2012-12-15",
-      "opponent_id": "1448274009",
-      "opponent_career_id": null,
-      "opponent_name": "Charlie Reynolds",
-      "opponent_team": "Switzerland County",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:17",
-      "event": "vs. Switzerland County"
+      "event": "vs. Cooper"
     },
     {
       "date": "2012-12-15",
@@ -484,11 +489,11 @@
       "event": "vs. Oldenburg Academy"
     },
     {
-      "date": "2012-12-01",
-      "opponent_id": "1338228009",
-      "opponent_career_id": "career_016393",
-      "opponent_name": "Diego Molina",
-      "opponent_team": "Lafayette",
+      "date": "2012-12-15",
+      "opponent_id": "1448274009",
+      "opponent_career_id": null,
+      "opponent_name": "Charlie Reynolds",
+      "opponent_team": "Switzerland County",
       "opponent_team_rank": null,
       "opponent_weight": 106,
       "opponent_rank": null,
@@ -496,8 +501,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "1:13",
-      "event": "vs. Lafayette"
+      "duration": "0:17",
+      "event": "vs. Switzerland County"
     },
     {
       "date": "2012-12-01",
@@ -549,6 +554,22 @@
     },
     {
       "date": "2012-12-01",
+      "opponent_id": "1338228009",
+      "opponent_career_id": "career_016393",
+      "opponent_name": "Diego Molina",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:13",
+      "event": "vs. Lafayette"
+    },
+    {
+      "date": "2012-12-01",
       "opponent_id": "OUTSTATE_37a070cafc25",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -581,22 +602,6 @@
     },
     {
       "date": "2012-11-02",
-      "opponent_id": "1223932009",
-      "opponent_career_id": null,
-      "opponent_name": "Taylor Barret",
-      "opponent_team": "Badin",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:30",
-      "event": "deerpark"
-    },
-    {
-      "date": "2012-11-02",
       "opponent_id": "OUTSTATE_18bdd1256c45",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -609,6 +614,54 @@
       "method": "FALL",
       "score": null,
       "duration": "3:38",
+      "event": "deerpark"
+    },
+    {
+      "date": "2012-11-02",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:31",
+      "event": "deerpark"
+    },
+    {
+      "date": "2012-11-02",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:41",
+      "event": "deerpark"
+    },
+    {
+      "date": "2012-11-02",
+      "opponent_id": "1223932009",
+      "opponent_career_id": null,
+      "opponent_name": "Taylor Barret",
+      "opponent_team": "Badin",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
       "event": "deerpark"
     }
   ],
@@ -625,7 +678,7 @@
       "season": 2014,
       "grade": null,
       "team": "Dixie Heights",
-      "record": "22-12",
+      "record": "25-13",
       "regional_place": null,
       "state_place": null
     },
@@ -633,15 +686,15 @@
       "season": 2013,
       "grade": null,
       "team": "Dixie Heights",
-      "record": "28-8",
+      "record": "31-8",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 50,
-    "losses": 20,
-    "win_pct": 0.714
+    "wins": 56,
+    "losses": 21,
+    "win_pct": 0.727
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "harrison_county",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2019,
   "current_rank": null,
   "record": {
-    "overall": "2-8",
+    "overall": "2-12",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -69,22 +74,6 @@
     },
     {
       "date": "2018-12-22",
-      "opponent_id": "5441873132",
-      "opponent_career_id": "career_010743",
-      "opponent_name": "Paul Perry",
-      "opponent_team": "Valley",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:29",
-      "event": "Fern Creek Gladiator"
-    },
-    {
-      "date": "2018-12-22",
       "opponent_id": "5059515132",
       "opponent_career_id": "career_007714",
       "opponent_name": "Kyle Muoy",
@@ -97,6 +86,38 @@
       "method": "FALL",
       "score": null,
       "duration": "1:46",
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2018-12-22",
+      "opponent_id": "5441873132",
+      "opponent_career_id": "career_010743",
+      "opponent_name": "Paul Perry",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2018-12-22",
+      "opponent_id": "5441873132",
+      "opponent_career_id": "career_010743",
+      "opponent_name": "Paul Perry",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:29",
       "event": "Fern Creek Gladiator"
     },
     {
@@ -113,23 +134,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Harrison County"
-    },
-    {
-      "date": "2018-12-20",
-      "opponent_id": "5069660132",
-      "opponent_career_id": "career_007919",
-      "opponent_name": "LUCAS SAUNIER",
-      "opponent_team": "Scott County",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:16",
-      "event": "vs. Scott County"
+      "event": "vs. Danville"
     },
     {
       "date": "2018-12-20",
@@ -146,6 +151,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Spencer County"
+    },
+    {
+      "date": "2018-12-20",
+      "opponent_id": "5069660132",
+      "opponent_career_id": "career_007919",
+      "opponent_name": "LUCAS SAUNIER",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:16",
+      "event": "vs. Scott County"
     },
     {
       "date": "2018-12-20",
@@ -177,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Harrison county B"
+      "event": "vs. Western Hills"
     },
     {
       "date": "2018-12-08",
@@ -213,22 +234,6 @@
     },
     {
       "date": "2018-12-01",
-      "opponent_id": "5093839132",
-      "opponent_career_id": "career_007965",
-      "opponent_name": "Isaac Thornton",
-      "opponent_team": "Grant County",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "HCIWT"
-    },
-    {
-      "date": "2018-12-01",
       "opponent_id": "5288203132",
       "opponent_career_id": "career_009533",
       "opponent_name": "Emanuel Chenault",
@@ -241,6 +246,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:28",
+      "event": "HCIWT"
+    },
+    {
+      "date": "2018-12-01",
+      "opponent_id": "5093839132",
+      "opponent_career_id": "career_007965",
+      "opponent_name": "Isaac Thornton",
+      "opponent_team": "Grant County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
       "event": "HCIWT"
     }
   ],
@@ -256,15 +277,15 @@
       "season": 2019,
       "grade": 9,
       "team": "Harrison County",
-      "record": "2-8",
+      "record": "2-12",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 2,
-    "losses": 8,
-    "win_pct": 0.2
+    "losses": 12,
+    "win_pct": 0.143
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

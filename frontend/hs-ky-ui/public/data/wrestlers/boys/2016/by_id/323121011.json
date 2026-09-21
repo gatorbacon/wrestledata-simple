@@ -5,10 +5,15 @@
   "team_slug": "iroquois",
   "team_rank": null,
   "weight_class": 215,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
-    "overall": "32-1",
+    "overall": "30-1",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.615,
-    "bonus_rate": 0.846,
+    "pin_rate": 0.63,
+    "bonus_rate": 0.852,
     "majors": 3,
     "techs": 3,
-    "pins": 16
+    "pins": 17
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -65,6 +70,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
+      "event": "KHSAA State Tournament"
+    },
+    {
+      "date": "2016-02-20",
+      "opponent_id": "301520107",
+      "opponent_career_id": "career_012184",
+      "opponent_name": "Colby Culver",
+      "opponent_team": "Calloway County",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:23",
       "event": "KHSAA State Tournament"
     },
     {
@@ -145,7 +166,7 @@
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
-      "event": "vs. Iroquois"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2016-02-06",
@@ -369,7 +390,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:55",
-      "event": "vs. Iroquois"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2015-12-23",
@@ -389,22 +410,6 @@
     },
     {
       "date": "2015-12-22",
-      "opponent_id": "340982094",
-      "opponent_career_id": "career_010520",
-      "opponent_name": "Adam Nauert",
-      "opponent_team": "Desales",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:48",
-      "event": "vs. Iroquois"
-    },
-    {
-      "date": "2015-12-22",
       "opponent_id": "317215010",
       "opponent_career_id": "career_013418",
       "opponent_name": "Brent Willis",
@@ -417,7 +422,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:55",
-      "event": "vs. Iroquois"
+      "event": "vs. Apollo"
     },
     {
       "date": "2015-12-22",
@@ -433,7 +438,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Iroquois"
+      "event": "vs. Central"
+    },
+    {
+      "date": "2015-12-22",
+      "opponent_id": "340982094",
+      "opponent_career_id": "career_010520",
+      "opponent_name": "Adam Nauert",
+      "opponent_team": "Desales",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:48",
+      "event": "vs. Desales"
     },
     {
       "date": "2015-12-22",
@@ -481,7 +502,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:42",
-      "event": "vs. Iroquois"
+      "event": "vs. Desales"
     },
     {
       "date": "2015-12-09",
@@ -530,7 +551,7 @@
       "season": 2016,
       "grade": 11,
       "team": "Iroquois",
-      "record": "32-1",
+      "record": "30-1",
       "regional_place": 1,
       "state_place": 3
     },
@@ -538,7 +559,7 @@
       "season": 2015,
       "grade": 10,
       "team": "Iroquois",
-      "record": "33-5",
+      "record": "33-4",
       "regional_place": 1,
       "state_place": 2
     },
@@ -546,15 +567,15 @@
       "season": 2014,
       "grade": null,
       "team": "Iroquois",
-      "record": "5-9",
+      "record": "7-13",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 70,
-    "losses": 15,
-    "win_pct": 0.824
+    "losses": 18,
+    "win_pct": 0.795
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

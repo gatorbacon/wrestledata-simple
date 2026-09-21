@@ -5,6 +5,11 @@
   "team_slug": "union_county",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
@@ -49,7 +54,7 @@
       "method": "DEC",
       "score": "9-6",
       "duration": "7:00",
-      "event": "2012 KHSAA State Tournament"
+      "event": "KHSAA State Tournament"
     },
     {
       "date": "2013-02-16",
@@ -65,7 +70,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:42",
-      "event": "2013 KHSAA State Championships"
+      "event": "KHSAA State Tournament"
     },
     {
       "date": "2013-02-16",
@@ -81,7 +86,7 @@
       "method": "DEC",
       "score": "17-11",
       "duration": "7:00",
-      "event": "2013 KHSAA State Championships"
+      "event": "KHSAA State Tournament"
     },
     {
       "date": "2013-02-16",
@@ -97,7 +102,7 @@
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "2013 KHSAA State Championships"
+      "event": "KHSAA State Tournament"
     },
     {
       "date": "2013-02-09",
@@ -145,7 +150,7 @@
       "method": "DEC",
       "score": "7-4",
       "duration": "7:00",
-      "event": "KHSAA Region I Championships @ Christian Co. HS"
+      "event": "KHSAA Region 1"
     },
     {
       "date": "2013-01-19",
@@ -161,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:28",
-      "event": "vs. Union County"
+      "event": "vs. Daviess County"
     },
     {
       "date": "2013-01-05",
@@ -197,22 +202,6 @@
     },
     {
       "date": "2012-12-01",
-      "opponent_id": "1324511009",
-      "opponent_career_id": null,
-      "opponent_name": "Spencer Hensley",
-      "opponent_team": "Indian Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "TF",
-      "score": "18-3",
-      "duration": "2:53",
-      "event": "vs. Indian Creek"
-    },
-    {
-      "date": "2012-12-01",
       "opponent_id": "1248194009",
       "opponent_career_id": null,
       "opponent_name": "Tyler Meiring",
@@ -242,6 +231,22 @@
       "score": "19-3",
       "duration": "0:00",
       "event": "vs. Gibson Southern"
+    },
+    {
+      "date": "2012-12-01",
+      "opponent_id": "1324511009",
+      "opponent_career_id": null,
+      "opponent_name": "Spencer Hensley",
+      "opponent_team": "Indian Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "2:53",
+      "event": "vs. Indian Creek"
     },
     {
       "date": "2012-12-01",
@@ -280,7 +285,10 @@
     "career_id": "career_016625",
     "canonical_name": "Jeffrey Wurth",
     "seasons": [
-      2013
+      2013,
+      2012,
+      2011,
+      2010
     ]
   },
   "season_summary": [
@@ -291,12 +299,36 @@
       "record": "12-3",
       "regional_place": 2,
       "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 11,
+      "team": "Union County",
+      "record": "3-3",
+      "regional_place": null,
+      "state_place": 8
+    },
+    {
+      "season": 2011,
+      "grade": 10,
+      "team": "Union County",
+      "record": "5-2",
+      "regional_place": null,
+      "state_place": 7
+    },
+    {
+      "season": 2010,
+      "grade": 9,
+      "team": "Union County",
+      "record": "0-2",
+      "regional_place": null,
+      "state_place": null
     }
   ],
   "career_record": {
-    "wins": 12,
-    "losses": 3,
-    "win_pct": 0.8
+    "wins": 20,
+    "losses": 10,
+    "win_pct": 0.667
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

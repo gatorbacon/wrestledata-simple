@@ -5,10 +5,15 @@
   "team_slug": "north_hardin",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "4-1",
+    "overall": "6-2",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -69,38 +74,6 @@
     },
     {
       "date": "2012-12-08",
-      "opponent_id": "1329751009",
-      "opponent_career_id": "career_015452",
-      "opponent_name": "Henry Crowdus",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "DEC",
-      "score": "8-6",
-      "duration": "7:00",
-      "event": "King of the Bluegrass"
-    },
-    {
-      "date": "2012-12-08",
-      "opponent_id": "1437129009",
-      "opponent_career_id": "career_015642",
-      "opponent_name": "Christian Bautista",
-      "opponent_team": "Southern",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:43",
-      "event": "King of Bluegrass"
-    },
-    {
-      "date": "2012-12-08",
       "opponent_id": "1314734009",
       "opponent_career_id": "career_015414",
       "opponent_name": "Mike Whalen",
@@ -117,6 +90,22 @@
     },
     {
       "date": "2012-12-08",
+      "opponent_id": "1329751009",
+      "opponent_career_id": "career_015452",
+      "opponent_name": "Henry Crowdus",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-6",
+      "duration": "7:00",
+      "event": "King of Bluegrass"
+    },
+    {
+      "date": "2012-12-08",
       "opponent_id": "1387974009",
       "opponent_career_id": "career_013298",
       "opponent_name": "Chase Arnold",
@@ -129,6 +118,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:46",
+      "event": "King of Bluegrass"
+    },
+    {
+      "date": "2012-12-08",
+      "opponent_id": "1437129009",
+      "opponent_career_id": "career_015642",
+      "opponent_name": "Christian Bautista",
+      "opponent_team": "Southern",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:43",
       "event": "King of Bluegrass"
     },
     {
@@ -168,7 +173,9 @@
     "career_id": "career_016464",
     "canonical_name": "Kyle Shults",
     "seasons": [
-      2013
+      2013,
+      2012,
+      2011
     ]
   },
   "season_summary": [
@@ -176,15 +183,31 @@
       "season": 2013,
       "grade": null,
       "team": "North Hardin",
-      "record": "4-1",
+      "record": "6-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 10,
+      "team": "North Hardin",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2011,
+      "grade": 9,
+      "team": "North Hardin",
+      "record": "1-2",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 4,
-    "losses": 1,
-    "win_pct": 0.8
+    "wins": 9,
+    "losses": 6,
+    "win_pct": 0.6
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

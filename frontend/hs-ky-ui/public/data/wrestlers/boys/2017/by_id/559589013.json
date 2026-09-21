@@ -5,6 +5,11 @@
   "team_slug": "scott",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2017,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.722,
-    "bonus_rate": 0.778,
+    "pin_rate": 0.773,
+    "bonus_rate": 0.818,
     "majors": 1,
     "techs": 0,
-    "pins": 13
+    "pins": 17
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -65,6 +70,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:17",
+      "event": "KHSAA Region 6"
+    },
+    {
+      "date": "2017-02-11",
+      "opponent_id": "41440123",
+      "opponent_career_id": "career_011740",
+      "opponent_name": "Melachi Wright",
+      "opponent_team": "Dixie Heights",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:17",
       "event": "KHSAA Region 6"
     },
     {
@@ -113,7 +134,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Scott"
+      "event": "vs. Conner"
     },
     {
       "date": "2017-02-04",
@@ -129,7 +150,7 @@
       "method": "TF",
       "score": "21-5",
       "duration": "0:00",
-      "event": "vs. Scott"
+      "event": "vs. Cooper"
     },
     {
       "date": "2017-02-04",
@@ -145,7 +166,7 @@
       "method": "DEC",
       "score": "12-9",
       "duration": "7:00",
-      "event": "vs. Scott"
+      "event": "vs. Newport"
     },
     {
       "date": "2017-02-04",
@@ -193,23 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:44",
-      "event": "vs. Scott"
-    },
-    {
-      "date": "2017-01-21",
-      "opponent_id": "753070094",
-      "opponent_career_id": "career_011496",
-      "opponent_name": "Noah Jones",
-      "opponent_team": "Moore",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "DEC",
-      "score": "3-2",
-      "duration": "7:00",
-      "event": "Dragon Invitational @ South Oldham"
+      "event": "vs. Boone County"
     },
     {
       "date": "2017-01-21",
@@ -229,10 +234,26 @@
     },
     {
       "date": "2017-01-21",
+      "opponent_id": "753070094",
+      "opponent_career_id": "career_011496",
+      "opponent_name": "Noah Jones",
+      "opponent_team": "Moore",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "DEC",
+      "score": "3-2",
+      "duration": "7:00",
+      "event": "Dragon Invitational @ South Oldham"
+    },
+    {
+      "date": "2017-01-21",
       "opponent_id": "OUTSTATE_c39125a45106",
       "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Josh Melloan",
+      "opponent_team": "North Oldham",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -385,7 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:49",
-      "event": "vs. Scott"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2017-01-04",
@@ -401,7 +422,7 @@
       "method": "DEC",
       "score": "14-10",
       "duration": "7:00",
-      "event": "vs. Scott"
+      "event": "vs. Newport"
     },
     {
       "date": "2017-01-04",
@@ -501,22 +522,6 @@
     },
     {
       "date": "2016-12-22",
-      "opponent_id": "43863123",
-      "opponent_career_id": "career_011396",
-      "opponent_name": "Zach Holub",
-      "opponent_team": "Cooper",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:37",
-      "event": "2016 NKAC"
-    },
-    {
-      "date": "2016-12-22",
       "opponent_id": "843809076",
       "opponent_career_id": "career_012189",
       "opponent_name": "Bryan Howell",
@@ -529,6 +534,22 @@
       "method": "MD",
       "score": "14-4",
       "duration": "7:00",
+      "event": "2016 NKAC"
+    },
+    {
+      "date": "2016-12-22",
+      "opponent_id": "43863123",
+      "opponent_career_id": "career_011396",
+      "opponent_name": "Zach Holub",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:37",
       "event": "2016 NKAC"
     },
     {
@@ -546,22 +567,6 @@
       "score": null,
       "duration": "1:27",
       "event": "2016 NKAC"
-    },
-    {
-      "date": "2016-12-17",
-      "opponent_id": "867159076",
-      "opponent_career_id": null,
-      "opponent_name": "Nino Salamone",
-      "opponent_team": "Elder",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "MD",
-      "score": "13-1",
-      "duration": "7:00",
-      "event": "vs. Elder"
     },
     {
       "date": "2016-12-17",
@@ -596,6 +601,54 @@
       "event": "vs. Summit Country Day"
     },
     {
+      "date": "2016-12-17",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Winton Woods"
+    },
+    {
+      "date": "2016-12-17",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Princeton"
+    },
+    {
+      "date": "2016-12-17",
+      "opponent_id": "867159076",
+      "opponent_career_id": null,
+      "opponent_name": "Nino Salamone",
+      "opponent_team": "Elder",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "MD",
+      "score": "13-1",
+      "duration": "7:00",
+      "event": "vs. Elder"
+    },
+    {
       "date": "2016-12-14",
       "opponent_id": "OUTSTATE_846550724ea1",
       "opponent_career_id": null,
@@ -628,20 +681,20 @@
       "event": "vs. Archbishop McNicholas"
     },
     {
-      "date": "2016-12-10",
-      "opponent_id": "927954076",
-      "opponent_career_id": "career_012625",
-      "opponent_name": "Joe Adams",
-      "opponent_team": "Ryle",
+      "date": "2016-12-14",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
       "opponent_team_rank": null,
-      "opponent_weight": 132,
+      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "144",
       "result": "W",
-      "method": "DEC",
-      "score": "5-4",
-      "duration": "7:00",
-      "event": "2016 Ryle Raider Rumble"
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Covington Catholic"
     },
     {
       "date": "2016-12-10",
@@ -673,6 +726,22 @@
       "method": "TF",
       "score": "22-6",
       "duration": "0:00",
+      "event": "2016 Ryle Raider Rumble"
+    },
+    {
+      "date": "2016-12-10",
+      "opponent_id": "927954076",
+      "opponent_career_id": "career_012625",
+      "opponent_name": "Joe Adams",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
       "event": "2016 Ryle Raider Rumble"
     },
     {
@@ -755,7 +824,7 @@
       "season": 2019,
       "grade": 12,
       "team": "Scott",
-      "record": "34-16",
+      "record": "34-14",
       "regional_place": 3,
       "state_place": null
     },
@@ -786,8 +855,8 @@
   ],
   "career_record": {
     "wins": 81,
-    "losses": 62,
-    "win_pct": 0.566
+    "losses": 60,
+    "win_pct": 0.574
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

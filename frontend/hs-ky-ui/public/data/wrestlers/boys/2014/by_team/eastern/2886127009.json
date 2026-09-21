@@ -5,10 +5,15 @@
   "team_slug": "eastern",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "8-8",
+    "overall": "14-13",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -49,7 +54,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Eastern"
+      "event": "vs. Trinity (Louisville)"
     },
     {
       "date": "2014-01-15",
@@ -65,7 +70,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "vs. Eastern"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2014-01-04",
@@ -85,19 +90,19 @@
     },
     {
       "date": "2014-01-03",
-      "opponent_id": "OUTSTATE_5ede70a59667",
-      "opponent_career_id": null,
-      "opponent_name": "Auston Lutz",
-      "opponent_team": "Pleasure Ridge Park",
+      "opponent_id": "2885648009",
+      "opponent_career_id": "career_014976",
+      "opponent_name": "Mark Saunders",
+      "opponent_team": "Bullitt Central",
       "opponent_team_rank": null,
-      "opponent_weight": 165,
+      "opponent_weight": 190,
       "opponent_rank": null,
-      "weight_class": "175",
+      "weight_class": "190",
       "result": "L",
-      "method": "FF",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
-      "event": "Gladiator Duals"
+      "duration": "3:00",
+      "event": "vs. Bullitt Central"
     },
     {
       "date": "2014-01-03",
@@ -113,39 +118,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "vs. Eastern"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2014-01-03",
-      "opponent_id": "2886156009",
-      "opponent_career_id": "career_013055",
-      "opponent_name": "Vachean Jones",
-      "opponent_team": "Fairdale",
+      "opponent_id": "OUTSTATE_5ede70a59667",
+      "opponent_career_id": null,
+      "opponent_name": "Auston Lutz",
+      "opponent_team": "Pleasure Ridge Park",
       "opponent_team_rank": null,
-      "opponent_weight": 175,
+      "opponent_weight": 165,
       "opponent_rank": null,
       "weight_class": "175",
       "result": "L",
-      "method": "FALL",
+      "method": "FF",
       "score": null,
-      "duration": "3:03",
+      "duration": "7:00",
       "event": "Gladiator Duals"
-    },
-    {
-      "date": "2014-01-03",
-      "opponent_id": "2885648009",
-      "opponent_career_id": "career_014976",
-      "opponent_name": "Mark Saunders",
-      "opponent_team": "Bullitt Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:00",
-      "event": "vs. Eastern"
     },
     {
       "date": "2014-01-03",
@@ -213,38 +202,6 @@
     },
     {
       "date": "2013-12-21",
-      "opponent_id": "2886936009",
-      "opponent_career_id": "career_013750",
-      "opponent_name": "Collin Portman",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "DEC",
-      "score": "4-3",
-      "duration": "7:00",
-      "event": "vs. Eastern"
-    },
-    {
-      "date": "2013-12-21",
-      "opponent_id": "2887193009",
-      "opponent_career_id": "career_015602",
-      "opponent_name": "Jacob Millsap",
-      "opponent_team": "Scott",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:00",
-      "event": "vs. Eastern"
-    },
-    {
-      "date": "2013-12-21",
       "opponent_id": "2886085009",
       "opponent_career_id": "career_015340",
       "opponent_name": "Marshawn Beasley",
@@ -257,7 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:48",
-      "event": "vs. Eastern"
+      "event": "vs. Doss"
     },
     {
       "date": "2013-12-21",
@@ -292,6 +249,38 @@
       "event": "vs. Spencer County"
     },
     {
+      "date": "2013-12-21",
+      "opponent_id": "2886936009",
+      "opponent_career_id": "career_013750",
+      "opponent_name": "Collin Portman",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "vs. North Oldham"
+    },
+    {
+      "date": "2013-12-21",
+      "opponent_id": "2887193009",
+      "opponent_career_id": "career_015602",
+      "opponent_name": "Jacob Millsap",
+      "opponent_team": "Scott",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "vs. Scott"
+    },
+    {
       "date": "2013-12-18",
       "opponent_id": "2885803009",
       "opponent_career_id": "career_015283",
@@ -305,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:39",
-      "event": "vs. Eastern"
+      "event": "vs. Central"
     },
     {
       "date": "2013-12-18",
@@ -405,22 +394,6 @@
     },
     {
       "date": "2013-12-11",
-      "opponent_id": "2886095009",
-      "opponent_career_id": "career_013942",
-      "opponent_name": "Zach Harris",
-      "opponent_team": "Dupont Manual",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:00",
-      "event": "vs. Eastern"
-    },
-    {
-      "date": "2013-12-11",
       "opponent_id": "2885464009",
       "opponent_career_id": "career_014948",
       "opponent_name": "Donovan Garr",
@@ -433,7 +406,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "vs. Eastern"
+      "event": "vs. Atherton"
+    },
+    {
+      "date": "2013-12-11",
+      "opponent_id": "2886095009",
+      "opponent_career_id": "career_013942",
+      "opponent_name": "Zach Harris",
+      "opponent_team": "Dupont Manual",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2013-12-04",
@@ -481,7 +470,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:52",
-      "event": "vs. Eastern"
+      "event": "vs. Male"
     }
   ],
   "career": {
@@ -507,7 +496,7 @@
       "season": 2015,
       "grade": 11,
       "team": "Eastern",
-      "record": "16-12",
+      "record": "21-13",
       "regional_place": null,
       "state_place": null
     },
@@ -515,7 +504,7 @@
       "season": 2014,
       "grade": null,
       "team": "Eastern",
-      "record": "8-8",
+      "record": "14-13",
       "regional_place": null,
       "state_place": null
     },
@@ -523,15 +512,15 @@
       "season": 2013,
       "grade": null,
       "team": "Eastern",
-      "record": "2-3",
+      "record": "5-4",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 28,
-    "losses": 26,
-    "win_pct": 0.519
+    "wins": 42,
+    "losses": 33,
+    "win_pct": 0.56
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

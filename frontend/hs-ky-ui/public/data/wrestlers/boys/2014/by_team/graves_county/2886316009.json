@@ -5,10 +5,15 @@
   "team_slug": "graves_county",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "3-11",
+    "overall": "3-15",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -52,22 +57,6 @@
       "event": "KHSAA Region 1"
     },
     {
-      "date": "2014-02-15",
-      "opponent_id": "2886715009",
-      "opponent_career_id": "career_015492",
-      "opponent_name": "Jeremy Hackworth",
-      "opponent_team": "McCracken County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "KHSAA Region 1"
-    },
-    {
       "date": "2014-02-08",
       "opponent_id": "2886715009",
       "opponent_career_id": "career_015492",
@@ -85,6 +74,22 @@
     },
     {
       "date": "2014-01-25",
+      "opponent_id": "2885425009",
+      "opponent_career_id": "career_015201",
+      "opponent_name": "Andrew Ebelhar",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:03",
+      "event": "Laker Invitational"
+    },
+    {
+      "date": "2014-01-25",
       "opponent_id": "2887026009",
       "opponent_career_id": "career_012319",
       "opponent_name": "Jackson Fitzgerald",
@@ -98,22 +103,6 @@
       "score": null,
       "duration": "5:56",
       "event": "Laker Invitational"
-    },
-    {
-      "date": "2014-01-25",
-      "opponent_id": "2885425009",
-      "opponent_career_id": "career_015201",
-      "opponent_name": "Andrew Ebelhar",
-      "opponent_team": "Apollo",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:03",
-      "event": "Laker Invatational"
     },
     {
       "date": "2014-01-25",
@@ -164,6 +153,22 @@
       "event": "Steve Johnson Classic"
     },
     {
+      "date": "2014-01-11",
+      "opponent_id": "-1",
+      "opponent_career_id": null,
+      "opponent_name": "Truman Golsha",
+      "opponent_team": "davis county",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "0:00",
+      "event": "Steve Johnson Classic"
+    },
+    {
       "date": "2014-01-02",
       "opponent_id": "2885713009",
       "opponent_career_id": "career_014985",
@@ -177,7 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:17",
-      "event": "vs. Graves County"
+      "event": "vs. Calloway County"
     },
     {
       "date": "2013-12-28",
@@ -210,22 +215,6 @@
       "score": "18-14",
       "duration": "7:00",
       "event": "Christian County Invitational"
-    },
-    {
-      "date": "2013-12-21",
-      "opponent_id": "2887495009",
-      "opponent_career_id": "career_012367",
-      "opponent_name": "Malik Cunningham",
-      "opponent_team": "Trigg County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:23",
-      "event": "vs. Graves County"
     },
     {
       "date": "2013-12-21",
@@ -276,6 +265,22 @@
       "event": "vs. Ravenwood"
     },
     {
+      "date": "2013-12-21",
+      "opponent_id": "2887495009",
+      "opponent_career_id": "career_012367",
+      "opponent_name": "Malik Cunningham",
+      "opponent_team": "Trigg County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:23",
+      "event": "vs. Trigg County"
+    },
+    {
       "date": "2013-12-17",
       "opponent_id": "2886705009",
       "opponent_career_id": "career_012284",
@@ -305,7 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:58",
-      "event": "vs. Graves County"
+      "event": "vs. Paducah Tilghman"
     },
     {
       "date": "2013-11-26",
@@ -321,7 +326,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:47",
-      "event": "vs. Graves County"
+      "event": "vs. Calloway County"
     }
   ],
   "career": {
@@ -336,15 +341,15 @@
       "season": 2014,
       "grade": null,
       "team": "Graves County",
-      "record": "3-11",
+      "record": "3-15",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 3,
-    "losses": 11,
-    "win_pct": 0.214
+    "losses": 15,
+    "win_pct": 0.167
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

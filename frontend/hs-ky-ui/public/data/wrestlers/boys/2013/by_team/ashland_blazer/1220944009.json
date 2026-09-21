@@ -5,10 +5,15 @@
   "team_slug": "ashland_blazer",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "20-13",
+    "overall": "22-14",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -261,22 +266,6 @@
     },
     {
       "date": "2013-01-12",
-      "opponent_id": "1330359009",
-      "opponent_career_id": "career_015069",
-      "opponent_name": "Dylan Francis",
-      "opponent_team": "Johnson Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "SV-1",
-      "score": "9-7",
-      "duration": "8:15",
-      "event": "vs. Ashland Blazer"
-    },
-    {
-      "date": "2013-01-12",
       "opponent_id": "1228114009",
       "opponent_career_id": "career_012982",
       "opponent_name": "Brandon Church",
@@ -340,7 +329,7 @@
       "event": "vs. Sheldon Clark"
     },
     {
-      "date": "2013-01-11",
+      "date": "2013-01-12",
       "opponent_id": "1330359009",
       "opponent_career_id": "career_015069",
       "opponent_name": "Dylan Francis",
@@ -350,10 +339,10 @@
       "opponent_rank": null,
       "weight_class": "126",
       "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:48",
-      "event": "vs. Ashland Blazer"
+      "method": "SV-1",
+      "score": "9-7",
+      "duration": "8:15",
+      "event": "vs. Johnson Central"
     },
     {
       "date": "2013-01-11",
@@ -418,6 +407,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Winfield"
+    },
+    {
+      "date": "2013-01-11",
+      "opponent_id": "1330359009",
+      "opponent_career_id": "career_015069",
+      "opponent_name": "Dylan Francis",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:48",
+      "event": "vs. Johnson Central"
     },
     {
       "date": "2013-01-05",
@@ -616,7 +621,8 @@
     "career_id": "career_016134",
     "canonical_name": "Isiah Copley",
     "seasons": [
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -624,15 +630,23 @@
       "season": 2013,
       "grade": null,
       "team": "Ashland Blazer",
-      "record": "20-13",
+      "record": "22-14",
       "regional_place": 3,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 11,
+      "team": "Ashland Blazer",
+      "record": "0-2",
+      "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 20,
-    "losses": 13,
-    "win_pct": 0.606
+    "wins": 22,
+    "losses": 16,
+    "win_pct": 0.579
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

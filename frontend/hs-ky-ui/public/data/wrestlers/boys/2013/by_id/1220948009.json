@@ -5,10 +5,15 @@
   "team_slug": "ashland_blazer",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "22-13",
+    "overall": "22-16",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -80,6 +85,22 @@
       "result": "L",
       "method": "DEC",
       "score": "8-4",
+      "duration": "7:00",
+      "event": "KHSAA Region 8"
+    },
+    {
+      "date": "2013-02-09",
+      "opponent_id": "1467497009",
+      "opponent_career_id": "career_016639",
+      "opponent_name": "Austin Dobbs",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-5",
       "duration": "7:00",
       "event": "KHSAA Region 8"
     },
@@ -213,6 +234,22 @@
     },
     {
       "date": "2013-01-19",
+      "opponent_id": "-1",
+      "opponent_career_id": null,
+      "opponent_name": "Kyle Barrett",
+      "opponent_team": "Independent",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": "6-1",
+      "duration": "7:00",
+      "event": "WSAZ"
+    },
+    {
+      "date": "2013-01-19",
       "opponent_id": "1477773009",
       "opponent_career_id": null,
       "opponent_name": "Logan Lindsey",
@@ -244,20 +281,20 @@
       "event": "WSAZ"
     },
     {
-      "date": "2013-01-19",
-      "opponent_id": "-1",
-      "opponent_career_id": null,
-      "opponent_name": "Kyle Barrett",
-      "opponent_team": "Independent",
+      "date": "2013-01-12",
+      "opponent_id": "1228111009",
+      "opponent_career_id": "career_015736",
+      "opponent_name": "Nick Bunch",
+      "opponent_team": "Belfry",
       "opponent_team_rank": null,
-      "opponent_weight": null,
+      "opponent_weight": 144,
       "opponent_rank": null,
       "weight_class": "138",
       "result": "W",
-      "method": "DEC",
-      "score": "6-1",
-      "duration": "7:00",
-      "event": "WSAZ"
+      "method": "FALL",
+      "score": null,
+      "duration": "3:15",
+      "event": "vs. Belfry"
     },
     {
       "date": "2013-01-12",
@@ -321,55 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:38",
-      "event": "vs. Ashland Blazer"
-    },
-    {
-      "date": "2013-01-12",
-      "opponent_id": "1228111009",
-      "opponent_career_id": "career_015736",
-      "opponent_name": "Nick Bunch",
-      "opponent_team": "Belfry",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:15",
-      "event": "vs. Belfry"
-    },
-    {
-      "date": "2013-01-11",
-      "opponent_id": "1330361009",
-      "opponent_career_id": "career_013098",
-      "opponent_name": "Samuel Griffith",
-      "opponent_team": "Johnson Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "DEC",
-      "score": "11-8",
-      "duration": "7:00",
-      "event": "vs. Ashland Blazer"
-    },
-    {
-      "date": "2013-01-11",
-      "opponent_id": "1479017009",
-      "opponent_career_id": null,
-      "opponent_name": "Garrett Keefer",
-      "opponent_team": "Winfield",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "SV-1",
-      "score": "4-4",
-      "duration": "8:15",
-      "event": "vs. Winfield"
+      "event": "vs. Johnson Central"
     },
     {
       "date": "2013-01-11",
@@ -420,6 +409,38 @@
       "event": "vs. Spring Valley"
     },
     {
+      "date": "2013-01-11",
+      "opponent_id": "1479017009",
+      "opponent_career_id": null,
+      "opponent_name": "Garrett Keefer",
+      "opponent_team": "Winfield",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "SV-1",
+      "score": "4-4",
+      "duration": "8:15",
+      "event": "vs. Winfield"
+    },
+    {
+      "date": "2013-01-11",
+      "opponent_id": "1330361009",
+      "opponent_career_id": "career_013098",
+      "opponent_name": "Samuel Griffith",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "DEC",
+      "score": "11-8",
+      "duration": "7:00",
+      "event": "vs. Johnson Central"
+    },
+    {
       "date": "2013-01-05",
       "opponent_id": "1242177009",
       "opponent_career_id": null,
@@ -434,6 +455,22 @@
       "score": "10-3",
       "duration": "7:00",
       "event": "vs. Cabell Midland"
+    },
+    {
+      "date": "2013-01-05",
+      "opponent_id": "1255817009",
+      "opponent_career_id": null,
+      "opponent_name": "Joe Haynes",
+      "opponent_team": "Chesapeake",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:26",
+      "event": "vs. Chesapeake"
     },
     {
       "date": "2013-01-05",
@@ -469,22 +506,6 @@
     },
     {
       "date": "2013-01-05",
-      "opponent_id": "1255817009",
-      "opponent_career_id": null,
-      "opponent_name": "Joe Haynes",
-      "opponent_team": "Chesapeake",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:26",
-      "event": "vs. Chesapeake"
-    },
-    {
-      "date": "2013-01-05",
       "opponent_id": "1439557009",
       "opponent_career_id": null,
       "opponent_name": "Kyle O`Neal",
@@ -517,22 +538,6 @@
     },
     {
       "date": "2013-01-03",
-      "opponent_id": "1323250009",
-      "opponent_career_id": null,
-      "opponent_name": "Trevor Johnson",
-      "opponent_team": "Huntington",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:58",
-      "event": "vs. Huntington"
-    },
-    {
-      "date": "2013-01-03",
       "opponent_id": "OUTSTATE_2d50b6287d74",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -546,6 +551,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Fairland"
+    },
+    {
+      "date": "2013-01-03",
+      "opponent_id": "1323250009",
+      "opponent_career_id": null,
+      "opponent_name": "Trevor Johnson",
+      "opponent_team": "Huntington",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:58",
+      "event": "vs. Huntington"
     },
     {
       "date": "2012-12-15",
@@ -625,7 +646,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Ashland Blazer"
+      "event": "vs. Montgomery County"
     }
   ],
   "career": {
@@ -649,15 +670,15 @@
       "season": 2013,
       "grade": null,
       "team": "Ashland Blazer",
-      "record": "22-13",
+      "record": "22-16",
       "regional_place": 4,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 28,
-    "losses": 16,
-    "win_pct": 0.636
+    "losses": 19,
+    "win_pct": 0.596
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

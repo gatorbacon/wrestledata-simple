@@ -5,10 +5,15 @@
   "team_slug": "union_county",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "41-1",
+    "overall": "44-1",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.625,
-    "bonus_rate": 0.9,
+    "pin_rate": 0.605,
+    "bonus_rate": 0.895,
     "majors": 3,
     "techs": 8,
-    "pins": 25
+    "pins": 23
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -129,38 +134,6 @@
       "method": "TF",
       "score": "22-7",
       "duration": "5:07",
-      "event": "KHSAA Region I Championships @ Paducah Tilghman"
-    },
-    {
-      "date": "2014-02-15",
-      "opponent_id": "2886404009",
-      "opponent_career_id": "career_015422",
-      "opponent_name": "Connor Jaschen",
-      "opponent_team": "Hopkinsville",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:20",
-      "event": "KHSAA Region 1"
-    },
-    {
-      "date": "2014-02-15",
-      "opponent_id": "2885697009",
-      "opponent_career_id": "career_013566",
-      "opponent_name": "Daniel Moll",
-      "opponent_team": "Caldwell County",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:18",
       "event": "KHSAA Region 1"
     },
     {
@@ -209,7 +182,7 @@
       "method": "TF",
       "score": "21-5",
       "duration": "4:54",
-      "event": "vs. Union County"
+      "event": "vs. Moore"
     },
     {
       "date": "2014-02-01",
@@ -433,7 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Union County"
+      "event": "vs. Paducah Tilghman"
     },
     {
       "date": "2014-01-11",
@@ -561,7 +534,7 @@
       "method": "DEC",
       "score": "8-4",
       "duration": "7:00",
-      "event": "vs. Union County"
+      "event": "vs. Trinity (Louisville)"
     },
     {
       "date": "2013-12-21",
@@ -793,7 +766,10 @@
     "canonical_name": "Brock Ervin",
     "seasons": [
       2014,
-      2013
+      2013,
+      2012,
+      2011,
+      2010
     ]
   },
   "season_summary": [
@@ -801,7 +777,7 @@
       "season": 2014,
       "grade": null,
       "team": "Union County",
-      "record": "41-1",
+      "record": "44-1",
       "regional_place": 1,
       "state_place": 1
     },
@@ -809,15 +785,39 @@
       "season": 2013,
       "grade": null,
       "team": "Union County",
-      "record": "44-2",
+      "record": "46-2",
       "regional_place": 1,
+      "state_place": 1
+    },
+    {
+      "season": 2012,
+      "grade": 10,
+      "team": "Union County",
+      "record": "5-0",
+      "regional_place": null,
+      "state_place": 1
+    },
+    {
+      "season": 2011,
+      "grade": 9,
+      "team": "Union County",
+      "record": "5-0",
+      "regional_place": null,
+      "state_place": 1
+    },
+    {
+      "season": 2010,
+      "grade": 8,
+      "team": "Union County",
+      "record": "5-0",
+      "regional_place": null,
       "state_place": 1
     }
   ],
   "career_record": {
-    "wins": 85,
+    "wins": 105,
     "losses": 3,
-    "win_pct": 0.966
+    "win_pct": 0.972
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

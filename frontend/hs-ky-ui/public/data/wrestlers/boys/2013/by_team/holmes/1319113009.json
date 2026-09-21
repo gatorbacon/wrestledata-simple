@@ -5,10 +5,15 @@
   "team_slug": "holmes",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "9-17",
+    "overall": "9-19",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.7,
-    "bonus_rate": 0.8,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.778,
     "majors": 1,
     "techs": 0,
-    "pins": 7
+    "pins": 6
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -100,22 +105,6 @@
       "event": "Lockland Invitational"
     },
     {
-      "date": "2013-01-26",
-      "opponent_id": "OUTSTATE_221e6eab321d",
-      "opponent_career_id": null,
-      "opponent_name": "Minh Nyguyen",
-      "opponent_team": "Northwest",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Lockland Invitational"
-    },
-    {
       "date": "2013-01-23",
       "opponent_id": "1265042009",
       "opponent_career_id": "career_013029",
@@ -129,7 +118,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:17",
-      "event": "vs. Holmes"
+      "event": "vs. Cooper"
     },
     {
       "date": "2013-01-19",
@@ -213,6 +202,22 @@
     },
     {
       "date": "2013-01-12",
+      "opponent_id": "1265042009",
+      "opponent_career_id": "career_013029",
+      "opponent_name": "Jordan Kidwell",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "MD",
+      "score": "14-1",
+      "duration": "7:00",
+      "event": "Jaguar Jungle Classic"
+    },
+    {
+      "date": "2013-01-12",
       "opponent_id": "1306784009",
       "opponent_career_id": "career_015390",
       "opponent_name": "Seth Readnour",
@@ -226,22 +231,6 @@
       "score": null,
       "duration": "3:39",
       "event": "Jaguar Jungle Classic"
-    },
-    {
-      "date": "2013-01-12",
-      "opponent_id": "1265042009",
-      "opponent_career_id": "career_013029",
-      "opponent_name": "Jordan Kidwell",
-      "opponent_team": "Cooper",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "MD",
-      "score": "14-1",
-      "duration": "7:00",
-      "event": "Cooper Jaguar Jungle Classic"
     },
     {
       "date": "2013-01-12",
@@ -305,7 +294,7 @@
       "method": "MD",
       "score": "12-3",
       "duration": "7:00",
-      "event": "vs. Holmes"
+      "event": "vs. Boone County"
     },
     {
       "date": "2012-12-15",
@@ -449,7 +438,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:35",
-      "event": "vs. Holmes"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2012-11-24",
@@ -465,7 +454,7 @@
       "method": "MD",
       "score": "19-8",
       "duration": "7:00",
-      "event": "vs. Holmes"
+      "event": "vs. Moore"
     },
     {
       "date": "2012-11-24",
@@ -481,7 +470,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:09",
-      "event": "vs. Holmes"
+      "event": "vs. Moore"
     },
     {
       "date": "2012-11-24",
@@ -497,7 +486,7 @@
       "method": "DEC",
       "score": "10-6",
       "duration": "7:00",
-      "event": "vs. Holmes"
+      "event": "vs. Scott"
     }
   ],
   "career": {
@@ -512,15 +501,15 @@
       "season": 2013,
       "grade": null,
       "team": "Holmes",
-      "record": "9-17",
+      "record": "9-19",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 9,
-    "losses": 17,
-    "win_pct": 0.346
+    "losses": 19,
+    "win_pct": 0.321
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

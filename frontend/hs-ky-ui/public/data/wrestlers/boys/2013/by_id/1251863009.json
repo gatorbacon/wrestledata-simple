@@ -5,10 +5,15 @@
   "team_slug": "central_hardin",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "37-8",
+    "overall": "39-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.594,
-    "bonus_rate": 0.688,
+    "pin_rate": 0.576,
+    "bonus_rate": 0.667,
     "majors": 3,
     "techs": 0,
     "pins": 19
@@ -48,6 +53,22 @@
       "result": "W",
       "method": "DEC",
       "score": "11-4",
+      "duration": "7:00",
+      "event": "2013 KHSAA State Championships"
+    },
+    {
+      "date": "2013-02-16",
+      "opponent_id": "1242703009",
+      "opponent_career_id": "career_014982",
+      "opponent_name": "Chris Gilkey",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "DEC",
+      "score": "7-0",
       "duration": "7:00",
       "event": "2013 KHSAA State Championships"
     },
@@ -193,7 +214,7 @@
       "method": "DEC",
       "score": "14-9",
       "duration": "7:00",
-      "event": "vs. Central Hardin"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2013-01-26",
@@ -225,7 +246,7 @@
       "method": "DEC",
       "score": "3-1",
       "duration": "7:00",
-      "event": "vs. Central Hardin"
+      "event": "vs. Henry Clay"
     },
     {
       "date": "2013-01-26",
@@ -241,7 +262,7 @@
       "method": "MD",
       "score": "15-5",
       "duration": "7:00",
-      "event": "vs. Central Hardin"
+      "event": "vs. Woodford County"
     },
     {
       "date": "2013-01-19",
@@ -337,7 +358,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:24",
-      "event": "vs. Central Hardin"
+      "event": "vs. Meade County"
+    },
+    {
+      "date": "2013-01-05",
+      "opponent_id": "1216556009",
+      "opponent_career_id": "career_014941",
+      "opponent_name": "Chris McDaniel",
+      "opponent_team": "Anderson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:10",
+      "event": "vs. Anderson County"
     },
     {
       "date": "2013-01-05",
@@ -354,22 +391,6 @@
       "score": null,
       "duration": "0:39",
       "event": "vs. Boyle County"
-    },
-    {
-      "date": "2013-01-05",
-      "opponent_id": "1216556009",
-      "opponent_career_id": "career_014941",
-      "opponent_name": "Chris McDaniel",
-      "opponent_team": "Anderson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:10",
-      "event": "vs. Central Hardin"
     },
     {
       "date": "2013-01-05",
@@ -689,7 +710,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:46",
-      "event": "vs. Central Hardin"
+      "event": "vs. John Hardin"
     },
     {
       "date": "2012-12-08",
@@ -824,7 +845,8 @@
     "career_id": "career_016210",
     "canonical_name": "Wyatt Overman",
     "seasons": [
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -832,15 +854,23 @@
       "season": 2013,
       "grade": null,
       "team": "Central Hardin",
-      "record": "37-8",
+      "record": "39-11",
       "regional_place": 2,
       "state_place": 5
+    },
+    {
+      "season": 2012,
+      "grade": 11,
+      "team": "Central Hardin",
+      "record": "1-2",
+      "regional_place": null,
+      "state_place": null
     }
   ],
   "career_record": {
-    "wins": 37,
-    "losses": 8,
-    "win_pct": 0.822
+    "wins": 40,
+    "losses": 13,
+    "win_pct": 0.755
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

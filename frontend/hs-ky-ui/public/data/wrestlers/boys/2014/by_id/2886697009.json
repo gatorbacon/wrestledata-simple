@@ -5,10 +5,15 @@
   "team_slug": "male",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "19-14",
+    "overall": "19-17",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -81,7 +86,7 @@
       "method": "MD",
       "score": "14-4",
       "duration": "7:00",
-      "event": "Western Hills Invitational"
+      "event": "Wolverine Invitational"
     },
     {
       "date": "2014-02-01",
@@ -145,23 +150,7 @@
       "method": "DEC",
       "score": "19-15",
       "duration": "7:00",
-      "event": "vs. Male"
-    },
-    {
-      "date": "2014-01-11",
-      "opponent_id": "2886126009",
-      "opponent_career_id": "career_012223",
-      "opponent_name": "Dwayne Johnson",
-      "opponent_team": "Eastern",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "MD",
-      "score": "11-1",
-      "duration": "7:00",
-      "event": "Jefferson Co."
+      "event": "vs. Central"
     },
     {
       "date": "2014-01-11",
@@ -176,6 +165,22 @@
       "result": "L",
       "method": "MD",
       "score": "12-3",
+      "duration": "7:00",
+      "event": "Jefferson County Tournament of Champions"
+    },
+    {
+      "date": "2014-01-11",
+      "opponent_id": "2886126009",
+      "opponent_career_id": "career_012223",
+      "opponent_name": "Dwayne Johnson",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "MD",
+      "score": "11-1",
       "duration": "7:00",
       "event": "Jefferson County Tournament of Champions"
     },
@@ -209,7 +214,7 @@
       "method": "MD",
       "score": "14-4",
       "duration": "7:00",
-      "event": "JCTOC"
+      "event": "Jefferson County Tournament of Champions"
     },
     {
       "date": "2014-01-11",
@@ -244,22 +249,6 @@
       "event": "Jefferson County Tournament of Champions"
     },
     {
-      "date": "2014-01-10",
-      "opponent_id": "2887393009",
-      "opponent_career_id": "career_012355",
-      "opponent_name": "Dallas Miles",
-      "opponent_team": "St. Xavier",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:24",
-      "event": "Jefferson County"
-    },
-    {
       "date": "2014-01-04",
       "opponent_id": "2886333009",
       "opponent_career_id": "career_013069",
@@ -273,7 +262,7 @@
       "method": "MD",
       "score": "13-3",
       "duration": "7:00",
-      "event": "vs. Male"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2014-01-04",
@@ -337,7 +326,7 @@
       "method": "DEC",
       "score": "6-3",
       "duration": "7:00",
-      "event": "Derby Classic @Louisville Male"
+      "event": "Derby City Classic"
     },
     {
       "date": "2013-12-28",
@@ -405,22 +394,6 @@
     },
     {
       "date": "2013-12-14",
-      "opponent_id": "2863715009",
-      "opponent_career_id": null,
-      "opponent_name": "austin vinson",
-      "opponent_team": "Evansville Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:31",
-      "event": "vs. Evansville Central"
-    },
-    {
-      "date": "2013-12-14",
       "opponent_id": "2885600009",
       "opponent_career_id": "career_013888",
       "opponent_name": "Lucas McCain",
@@ -433,7 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Male"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2013-12-14",
@@ -452,6 +425,22 @@
       "event": "vs. Crawford County"
     },
     {
+      "date": "2013-12-14",
+      "opponent_id": "2863715009",
+      "opponent_career_id": null,
+      "opponent_name": "austin vinson",
+      "opponent_team": "Evansville Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:31",
+      "event": "vs. Evansville Central"
+    },
+    {
       "date": "2013-12-11",
       "opponent_id": "2886170009",
       "opponent_career_id": "career_013959",
@@ -465,7 +454,7 @@
       "method": "DEC",
       "score": "11-7",
       "duration": "7:00",
-      "event": "vs. Male"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2013-12-11",
@@ -593,7 +582,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:58",
-      "event": "vs. Male"
+      "event": "vs. Jeffersontown"
     },
     {
       "date": "2013-11-26",
@@ -668,7 +657,7 @@
       "season": 2015,
       "grade": 8,
       "team": "Male",
-      "record": "32-16",
+      "record": "31-15",
       "regional_place": 2,
       "state_place": null
     },
@@ -676,15 +665,15 @@
       "season": 2014,
       "grade": null,
       "team": "Male",
-      "record": "19-14",
+      "record": "19-17",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 127,
-    "losses": 59,
-    "win_pct": 0.683
+    "wins": 126,
+    "losses": 61,
+    "win_pct": 0.674
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

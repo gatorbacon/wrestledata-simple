@@ -5,10 +5,15 @@
   "team_slug": "fort_knox",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
-    "overall": "22-22",
+    "overall": "21-23",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.875,
-    "bonus_rate": 0.938,
+    "pin_rate": 0.882,
+    "bonus_rate": 0.941,
     "majors": 1,
     "techs": 0,
-    "pins": 14
+    "pins": 15
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -144,6 +149,22 @@
       "result": "L",
       "method": "FALL",
       "score": null,
+      "duration": "2:25",
+      "event": "2015 North Oldham Mustang Classic"
+    },
+    {
+      "date": "2015-02-07",
+      "opponent_id": "5537474009",
+      "opponent_career_id": "career_013953",
+      "opponent_name": "Randall Combs",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
       "duration": "2:26",
       "event": "2015 North Oldham Mustang Classic"
     },
@@ -161,6 +182,22 @@
       "method": "FALL",
       "score": null,
       "duration": "4:26",
+      "event": "2015 North Oldham Mustang Classic"
+    },
+    {
+      "date": "2015-02-07",
+      "opponent_id": "5891555009",
+      "opponent_career_id": "career_014439",
+      "opponent_name": "Albin William",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:34",
       "event": "2015 North Oldham Mustang Classic"
     },
     {
@@ -241,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:22",
-      "event": "Central Invitational"
+      "event": "Valley Main Event"
     },
     {
       "date": "2015-01-03",
@@ -256,6 +293,22 @@
       "result": "L",
       "method": "DEC",
       "score": "15-11",
+      "duration": "7:00",
+      "event": "Valley Main Event"
+    },
+    {
+      "date": "2015-01-03",
+      "opponent_id": "52493013",
+      "opponent_career_id": "career_014384",
+      "opponent_name": "Clayton Kelly",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "DEC",
+      "score": "18-11",
       "duration": "7:00",
       "event": "Valley Main Event"
     },
@@ -277,22 +330,6 @@
     },
     {
       "date": "2014-12-30",
-      "opponent_id": "7624071",
-      "opponent_career_id": "career_014001",
-      "opponent_name": "Cole Zehnder",
-      "opponent_team": "Jeffersontown",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:56",
-      "event": "Christian County Invitational"
-    },
-    {
-      "date": "2014-12-30",
       "opponent_id": "24883076",
       "opponent_career_id": "career_013020",
       "opponent_name": "Camerin Cole",
@@ -306,6 +343,22 @@
       "score": null,
       "duration": "0:51",
       "event": "Toyota of Hopkinsville Christian County Invitational"
+    },
+    {
+      "date": "2014-12-30",
+      "opponent_id": "7624071",
+      "opponent_career_id": "career_014001",
+      "opponent_name": "Cole Zehnder",
+      "opponent_team": "Jeffersontown",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:56",
+      "event": "Christian County Invitational"
     },
     {
       "date": "2014-12-27",
@@ -353,7 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:31",
-      "event": "vs. Fort Knox"
+      "event": "vs. Central"
     },
     {
       "date": "2014-12-23",
@@ -369,7 +422,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:05",
-      "event": "vs. Fort Knox"
+      "event": "vs. Christian County"
     },
     {
       "date": "2014-12-23",
@@ -401,7 +454,7 @@
       "method": "TF",
       "score": "15-0",
       "duration": "0:00",
-      "event": "vs. Fort Knox"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2014-12-22",
@@ -417,39 +470,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:23",
-      "event": "vs. Fort Knox"
-    },
-    {
-      "date": "2014-12-22",
-      "opponent_id": "28287071",
-      "opponent_career_id": "career_014795",
-      "opponent_name": "Johnathan Shepherd",
-      "opponent_team": "Wayne County",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:30",
-      "event": "vs. Wayne County"
-    },
-    {
-      "date": "2014-12-22",
-      "opponent_id": "31707076",
-      "opponent_career_id": "career_013087",
-      "opponent_name": "Ansar Kurbanov",
-      "opponent_team": "Iroquois",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:31",
-      "event": "vs. Iroquois"
+      "event": "vs. Desales"
     },
     {
       "date": "2014-12-22",
@@ -485,6 +506,38 @@
     },
     {
       "date": "2014-12-22",
+      "opponent_id": "28287071",
+      "opponent_career_id": "career_014795",
+      "opponent_name": "Johnathan Shepherd",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:30",
+      "event": "vs. Wayne County"
+    },
+    {
+      "date": "2014-12-22",
+      "opponent_id": "31707076",
+      "opponent_career_id": "career_013087",
+      "opponent_name": "Ansar Kurbanov",
+      "opponent_team": "Iroquois",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:31",
+      "event": "vs. Iroquois"
+    },
+    {
+      "date": "2014-12-22",
       "opponent_id": "OUTSTATE_c805f46e345c",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -513,7 +566,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:38",
-      "event": "vs. Fort Knox"
+      "event": "vs. Atherton"
     },
     {
       "date": "2014-12-20",
@@ -529,7 +582,7 @@
       "method": "DEC",
       "score": "20-13",
       "duration": "7:00",
-      "event": "vs. Fort Knox"
+      "event": "vs. Doss"
     },
     {
       "date": "2014-12-20",
@@ -673,7 +726,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:30",
-      "event": "vs. Fort Knox"
+      "event": "vs. Central"
     },
     {
       "date": "2014-12-10",
@@ -705,7 +758,7 @@
       "season": 2015,
       "grade": 11,
       "team": "Fort Knox",
-      "record": "22-22",
+      "record": "21-23",
       "regional_place": null,
       "state_place": null
     },
@@ -713,15 +766,15 @@
       "season": 2014,
       "grade": null,
       "team": "Fort Knox",
-      "record": "10-15",
+      "record": "13-18",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 32,
-    "losses": 37,
-    "win_pct": 0.464
+    "wins": 34,
+    "losses": 41,
+    "win_pct": 0.453
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

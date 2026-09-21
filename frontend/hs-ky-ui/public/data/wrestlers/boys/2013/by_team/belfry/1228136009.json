@@ -5,10 +5,15 @@
   "team_slug": "belfry",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "8-3",
+    "overall": "13-4",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -145,7 +150,7 @@
       "method": "DEC",
       "score": "7-5",
       "duration": "7:00",
-      "event": "vs. Belfry"
+      "event": "vs. Ashland Blazer"
     },
     {
       "date": "2013-01-12",
@@ -193,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Belfry"
+      "event": "vs. Sheldon Clark"
     },
     {
       "date": "2013-01-05",
@@ -229,6 +234,22 @@
     },
     {
       "date": "2012-12-22",
+      "opponent_id": "1344763009",
+      "opponent_career_id": "career_014015",
+      "opponent_name": "Tyler Daylong",
+      "opponent_team": "Letcher County Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "Freedom Classic"
+    },
+    {
+      "date": "2012-12-22",
       "opponent_id": "1398865009",
       "opponent_career_id": "career_015566",
       "opponent_name": "Ken Beverly",
@@ -260,22 +281,6 @@
       "event": "Perry Central Freedom Classic"
     },
     {
-      "date": "2012-12-22",
-      "opponent_id": "1344763009",
-      "opponent_career_id": "career_014015",
-      "opponent_name": "Tyler Daylong",
-      "opponent_team": "Letcher County Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Freedom Classic"
-    },
-    {
       "date": "2012-12-15",
       "opponent_id": "1369122009",
       "opponent_career_id": "career_016436",
@@ -289,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Belfry"
+      "event": "vs. Montgomery County"
     },
     {
       "date": "2012-12-08",
@@ -313,7 +318,8 @@
     "canonical_name": "Zack Thompson",
     "seasons": [
       2014,
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -321,7 +327,7 @@
       "season": 2014,
       "grade": null,
       "team": "Belfry",
-      "record": "28-6",
+      "record": "31-7",
       "regional_place": 2,
       "state_place": null
     },
@@ -329,15 +335,23 @@
       "season": 2013,
       "grade": null,
       "team": "Belfry",
-      "record": "8-3",
+      "record": "13-4",
       "regional_place": 2,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 10,
+      "team": "Belfry",
+      "record": "1-2",
+      "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 36,
-    "losses": 9,
-    "win_pct": 0.8
+    "wins": 45,
+    "losses": 13,
+    "win_pct": 0.776
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "moore",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2017,
   "current_rank": null,
   "record": {
-    "overall": "37-17",
+    "overall": "39-17",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.688,
+    "pin_rate": 0.529,
+    "bonus_rate": 0.706,
     "majors": 5,
     "techs": 1,
-    "pins": 16
+    "pins": 18
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -175,7 +180,7 @@
       "weight_class": "138",
       "result": "W",
       "method": "TF",
-      "score": "20-4",
+      "score": "18-3",
       "duration": "0:00",
       "event": "The Wolverine"
     },
@@ -213,33 +218,17 @@
     },
     {
       "date": "2017-01-21",
-      "opponent_id": "560460013",
-      "opponent_career_id": "career_009939",
-      "opponent_name": "Christian Potter",
-      "opponent_team": "Lafayette",
+      "opponent_id": "9834051009",
+      "opponent_career_id": "career_010504",
+      "opponent_name": "Clayton Boyd",
+      "opponent_team": "Conner",
       "opponent_team_rank": null,
-      "opponent_weight": 132,
+      "opponent_weight": 138,
       "opponent_rank": null,
       "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:52",
-      "event": "Dragon Invitational @ South Oldham"
-    },
-    {
-      "date": "2017-01-21",
-      "opponent_id": "9732352009",
-      "opponent_career_id": "career_011553",
-      "opponent_name": "Caine Boyer",
-      "opponent_team": "South Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "MD",
-      "score": "17-5",
+      "result": "L",
+      "method": "DEC",
+      "score": "17-11",
       "duration": "7:00",
       "event": "Dragon Invitational @ South Oldham"
     },
@@ -277,17 +266,33 @@
     },
     {
       "date": "2017-01-21",
-      "opponent_id": "9834051009",
-      "opponent_career_id": "career_010504",
-      "opponent_name": "Clayton Boyd",
-      "opponent_team": "Conner",
+      "opponent_id": "560460013",
+      "opponent_career_id": "career_009939",
+      "opponent_name": "Christian Potter",
+      "opponent_team": "Lafayette",
       "opponent_team_rank": null,
-      "opponent_weight": 138,
+      "opponent_weight": 132,
       "opponent_rank": null,
       "weight_class": "138",
-      "result": "L",
-      "method": "DEC",
-      "score": "16-11",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:52",
+      "event": "Dragon Invitational @ South Oldham"
+    },
+    {
+      "date": "2017-01-21",
+      "opponent_id": "9732352009",
+      "opponent_career_id": "career_011553",
+      "opponent_name": "Caine Boyer",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "MD",
+      "score": "17-4",
       "duration": "7:00",
       "event": "Dragon Invitational @ South Oldham"
     },
@@ -305,7 +310,23 @@
       "method": "FALL",
       "score": null,
       "duration": "3:17",
-      "event": "vs. Moore"
+      "event": "vs. Atherton"
+    },
+    {
+      "date": "2017-01-14",
+      "opponent_id": "571120013",
+      "opponent_career_id": "career_012665",
+      "opponent_name": "Nick Flint",
+      "opponent_team": "Atherton",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:33",
+      "event": "vs. Atherton"
     },
     {
       "date": "2017-01-14",
@@ -321,7 +342,23 @@
       "method": "FALL",
       "score": null,
       "duration": "3:31",
-      "event": "vs. Moore"
+      "event": "vs. Central"
+    },
+    {
+      "date": "2017-01-14",
+      "opponent_id": "9776224009",
+      "opponent_career_id": "career_011387",
+      "opponent_name": "Damon Smith",
+      "opponent_team": "Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:26",
+      "event": "vs. Central"
     },
     {
       "date": "2017-01-14",
@@ -341,22 +378,6 @@
     },
     {
       "date": "2017-01-14",
-      "opponent_id": "741911094",
-      "opponent_career_id": "career_012218",
-      "opponent_name": "Nicholas Elling",
-      "opponent_team": "Dupont Manual",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "DEC",
-      "score": "4-3",
-      "duration": "7:00",
-      "event": "vs. Dupont Manual"
-    },
-    {
-      "date": "2017-01-14",
       "opponent_id": "621983013",
       "opponent_career_id": "career_012513",
       "opponent_name": "Zachary Taylor",
@@ -372,20 +393,20 @@
       "event": "vs. Trinity (Louisville)"
     },
     {
-      "date": "2017-01-07",
-      "opponent_id": "9837263009",
-      "opponent_career_id": "career_012458",
-      "opponent_name": "Nathan Wright",
-      "opponent_team": "Jeffersontown",
+      "date": "2017-01-14",
+      "opponent_id": "741911094",
+      "opponent_career_id": "career_012218",
+      "opponent_name": "Nicholas Elling",
+      "opponent_team": "Dupont Manual",
       "opponent_team_rank": null,
-      "opponent_weight": 126,
+      "opponent_weight": 138,
       "opponent_rank": null,
       "weight_class": "138",
       "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:10",
-      "event": "Jefferson County Tournament of Champions"
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2017-01-07",
@@ -417,6 +438,22 @@
       "method": "DEC",
       "score": "6-2",
       "duration": "7:00",
+      "event": "Jefferson County Tournament of Champions"
+    },
+    {
+      "date": "2017-01-07",
+      "opponent_id": "9837263009",
+      "opponent_career_id": "career_012458",
+      "opponent_name": "Nathan Wright",
+      "opponent_team": "Jeffersontown",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:10",
       "event": "Jefferson County Tournament of Champions"
     },
     {
@@ -469,22 +506,6 @@
     },
     {
       "date": "2016-12-23",
-      "opponent_id": "1023351076",
-      "opponent_career_id": "career_012223",
-      "opponent_name": "Dwayne Johnson",
-      "opponent_team": "Eastern",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "DEC",
-      "score": "9-7",
-      "duration": "7:00",
-      "event": "Fern Creek Gladiator Tournament"
-    },
-    {
-      "date": "2016-12-23",
       "opponent_id": "558584010",
       "opponent_career_id": "career_012694",
       "opponent_name": "Emmit Johnson",
@@ -497,6 +518,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:14",
+      "event": "Fern Creek Gladiator Tournament"
+    },
+    {
+      "date": "2016-12-23",
+      "opponent_id": "1023351076",
+      "opponent_career_id": "career_012223",
+      "opponent_name": "Dwayne Johnson",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-7",
+      "duration": "7:00",
       "event": "Fern Creek Gladiator Tournament"
     },
     {
@@ -561,7 +598,7 @@
       "method": "DEC",
       "score": "10-4",
       "duration": "7:00",
-      "event": "vs. Moore"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2016-12-22",
@@ -693,22 +730,6 @@
     },
     {
       "date": "2016-12-10",
-      "opponent_id": "26670123",
-      "opponent_career_id": "career_009708",
-      "opponent_name": "Daulton Mayer",
-      "opponent_team": "Walton Verona",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "DEC",
-      "score": "10-9",
-      "duration": "7:00",
-      "event": "2016 Ryle Raider Rumble"
-    },
-    {
-      "date": "2016-12-10",
       "opponent_id": "547201013",
       "opponent_career_id": "career_009465",
       "opponent_name": "Dakota Jarvis",
@@ -772,52 +793,20 @@
       "event": "2016 Ryle Raider Rumble"
     },
     {
-      "date": "2016-12-03",
-      "opponent_id": "OUTSTATE_49689414244f",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Anderson",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Anderson"
-    },
-    {
-      "date": "2016-12-03",
-      "opponent_id": "909364076",
-      "opponent_career_id": null,
-      "opponent_name": "Josh Haunert",
-      "opponent_team": "Sycamore",
+      "date": "2016-12-10",
+      "opponent_id": "26670123",
+      "opponent_career_id": "career_009708",
+      "opponent_name": "Daulton Mayer",
+      "opponent_team": "Walton Verona",
       "opponent_team_rank": null,
       "opponent_weight": 132,
       "opponent_rank": null,
       "weight_class": "138",
       "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "7:40",
-      "event": "vs. Sycamore"
-    },
-    {
-      "date": "2016-12-03",
-      "opponent_id": "867154076",
-      "opponent_career_id": null,
-      "opponent_name": "Jake Meridieth",
-      "opponent_team": "Elder",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "MD",
-      "score": "15-3",
+      "method": "DEC",
+      "score": "10-9",
       "duration": "7:00",
-      "event": "vs. Elder"
+      "event": "2016 Ryle Raider Rumble"
     },
     {
       "date": "2016-12-03",
@@ -837,6 +826,38 @@
     },
     {
       "date": "2016-12-03",
+      "opponent_id": "OUTSTATE_49689414244f",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Anderson",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Anderson"
+    },
+    {
+      "date": "2016-12-03",
+      "opponent_id": "867154076",
+      "opponent_career_id": null,
+      "opponent_name": "Jake Meridieth",
+      "opponent_team": "Elder",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "MD",
+      "score": "15-3",
+      "duration": "7:00",
+      "event": "vs. Elder"
+    },
+    {
+      "date": "2016-12-03",
       "opponent_id": "552988010",
       "opponent_career_id": null,
       "opponent_name": "Ian Heiland",
@@ -850,6 +871,22 @@
       "score": "10-8",
       "duration": "7:00",
       "event": "vs. Beavercreek Hs"
+    },
+    {
+      "date": "2016-12-03",
+      "opponent_id": "909364076",
+      "opponent_career_id": null,
+      "opponent_name": "Josh Haunert",
+      "opponent_team": "Sycamore",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "7:40",
+      "event": "vs. Sycamore"
     },
     {
       "date": "2016-11-22",
@@ -880,7 +917,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "0:44",
       "event": "vs. Pleasure Ridge Park"
     },
     {
@@ -917,7 +954,7 @@
       "season": 2019,
       "grade": 12,
       "team": "Moore",
-      "record": "30-4",
+      "record": "32-4",
       "regional_place": 1,
       "state_place": 4
     },
@@ -933,7 +970,7 @@
       "season": 2017,
       "grade": 10,
       "team": "Moore",
-      "record": "37-17",
+      "record": "39-17",
       "regional_place": 2,
       "state_place": null
     },
@@ -941,7 +978,7 @@
       "season": 2016,
       "grade": 9,
       "team": "Jeffersontown",
-      "record": "22-22",
+      "record": "20-22",
       "regional_place": 4,
       "state_place": null
     },
@@ -957,15 +994,15 @@
       "season": 2014,
       "grade": null,
       "team": "Jeffersontown",
-      "record": "5-17",
+      "record": "5-19",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 137,
-    "losses": 80,
-    "win_pct": 0.631
+    "wins": 139,
+    "losses": 82,
+    "win_pct": 0.629
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

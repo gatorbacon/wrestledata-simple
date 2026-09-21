@@ -5,10 +5,15 @@
   "team_slug": "harrison_county",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2019,
   "current_rank": null,
   "record": {
-    "overall": "6-11",
+    "overall": "6-13",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -133,22 +138,6 @@
     },
     {
       "date": "2018-12-22",
-      "opponent_id": "5129309132",
-      "opponent_career_id": "career_009665",
-      "opponent_name": "Chas Fudold",
-      "opponent_team": "South Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:37",
-      "event": "Fern Creek Gladiator"
-    },
-    {
-      "date": "2018-12-22",
       "opponent_id": "5020880132",
       "opponent_career_id": "career_010474",
       "opponent_name": "James Nash",
@@ -161,6 +150,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:15",
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2018-12-22",
+      "opponent_id": "5129309132",
+      "opponent_career_id": "career_009665",
+      "opponent_name": "Chas Fudold",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:37",
       "event": "Fern Creek Gladiator"
     },
     {
@@ -197,38 +202,6 @@
     },
     {
       "date": "2018-12-20",
-      "opponent_id": "5556245132",
-      "opponent_career_id": "career_011243",
-      "opponent_name": "Alex Klement",
-      "opponent_team": "Paul Dunbar",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:50",
-      "event": "vs. Paul Dunbar"
-    },
-    {
-      "date": "2018-12-20",
-      "opponent_id": "5477131132",
-      "opponent_career_id": "career_008950",
-      "opponent_name": "Jeffery Parker",
-      "opponent_team": "Western Hills",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Harrison county B"
-    },
-    {
-      "date": "2018-12-20",
       "opponent_id": "OUTSTATE_6abc6a5a6886",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -260,6 +233,54 @@
       "event": "vs. Scott County"
     },
     {
+      "date": "2018-12-20",
+      "opponent_id": "5556245132",
+      "opponent_career_id": "career_011243",
+      "opponent_name": "Alex Klement",
+      "opponent_team": "Paul Dunbar",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:50",
+      "event": "vs. Paul Dunbar"
+    },
+    {
+      "date": "2018-12-20",
+      "opponent_id": "5477131132",
+      "opponent_career_id": "career_008950",
+      "opponent_name": "Jeffery Parker",
+      "opponent_team": "Western Hills",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Western Hills"
+    },
+    {
+      "date": "2018-12-08",
+      "opponent_id": "6036723132",
+      "opponent_career_id": "career_009368",
+      "opponent_name": "Aaron Gibbs",
+      "opponent_team": "Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:47",
+      "event": "Derby City Classic"
+    },
+    {
       "date": "2018-12-08",
       "opponent_id": "5212348132",
       "opponent_career_id": "career_010821",
@@ -289,22 +310,6 @@
       "method": "FALL",
       "score": null,
       "duration": "1:05",
-      "event": "Derby City Classic"
-    },
-    {
-      "date": "2018-12-08",
-      "opponent_id": "6036723132",
-      "opponent_career_id": "career_009368",
-      "opponent_name": "Aaron Gibbs",
-      "opponent_team": "Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:47",
       "event": "Derby City Classic"
     },
     {
@@ -352,15 +357,15 @@
       "season": 2019,
       "grade": 9,
       "team": "Harrison County",
-      "record": "6-11",
+      "record": "6-13",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 6,
-    "losses": 11,
-    "win_pct": 0.353
+    "losses": 13,
+    "win_pct": 0.316
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

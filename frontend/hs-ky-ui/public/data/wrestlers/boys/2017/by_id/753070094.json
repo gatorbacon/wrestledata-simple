@@ -5,10 +5,15 @@
   "team_slug": "moore",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2017,
   "current_rank": null,
   "record": {
-    "overall": "16-25",
+    "overall": "17-28",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.538,
-    "bonus_rate": 0.538,
+    "pin_rate": 0.571,
+    "bonus_rate": 0.571,
     "majors": 0,
     "techs": 0,
-    "pins": 7
+    "pins": 8
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -197,22 +202,6 @@
     },
     {
       "date": "2017-01-20",
-      "opponent_id": "42706123",
-      "opponent_career_id": "career_010718",
-      "opponent_name": "James Vowels",
-      "opponent_team": "St. Xavier",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:23",
-      "event": "JV Regional"
-    },
-    {
-      "date": "2017-01-20",
       "opponent_id": "536790010",
       "opponent_career_id": "career_012712",
       "opponent_name": "Ruben Padilla",
@@ -260,6 +249,22 @@
       "event": "JV Regional"
     },
     {
+      "date": "2017-01-20",
+      "opponent_id": "42706123",
+      "opponent_career_id": "career_010718",
+      "opponent_name": "James Vowels",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:23",
+      "event": "JV Regional"
+    },
+    {
       "date": "2017-01-14",
       "opponent_id": "536790010",
       "opponent_career_id": "career_012712",
@@ -273,7 +278,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:52",
-      "event": "vs. Moore"
+      "event": "vs. Central"
+    },
+    {
+      "date": "2017-01-14",
+      "opponent_id": "536790010",
+      "opponent_career_id": "career_012712",
+      "opponent_name": "Ruben Padilla",
+      "opponent_team": "Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:46",
+      "event": "vs. Central"
     },
     {
       "date": "2017-01-14",
@@ -322,22 +343,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Dupont Manual"
-    },
-    {
-      "date": "2017-01-07",
-      "opponent_id": "527482013",
-      "opponent_career_id": "career_011620",
-      "opponent_name": "Blake Evans",
-      "opponent_team": "Pleasure Ridge Park",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:15",
-      "event": "Jefferson County Tournament of Champions"
     },
     {
       "date": "2017-01-07",
@@ -417,6 +422,22 @@
       "method": "FALL",
       "score": null,
       "duration": "3:07",
+      "event": "Jefferson County Tournament of Champions"
+    },
+    {
+      "date": "2017-01-07",
+      "opponent_id": "527482013",
+      "opponent_career_id": "career_011620",
+      "opponent_name": "Blake Evans",
+      "opponent_team": "Pleasure Ridge Park",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:15",
       "event": "Jefferson County Tournament of Champions"
     },
     {
@@ -529,7 +550,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Moore"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2016-12-22",
@@ -609,6 +630,22 @@
       "method": "FALL",
       "score": null,
       "duration": "5:05",
+      "event": "Jeffersonville Classic 2016"
+    },
+    {
+      "date": "2016-12-17",
+      "opponent_id": "862245076",
+      "opponent_career_id": null,
+      "opponent_name": "Ellisston Ross",
+      "opponent_team": "Bloomington South",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:36",
       "event": "Jeffersonville Classic 2016"
     },
     {
@@ -745,15 +782,15 @@
       "season": 2017,
       "grade": 11,
       "team": "Moore",
-      "record": "16-25",
+      "record": "17-28",
       "regional_place": 4,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 37,
-    "losses": 47,
-    "win_pct": 0.44
+    "wins": 38,
+    "losses": 50,
+    "win_pct": 0.432
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

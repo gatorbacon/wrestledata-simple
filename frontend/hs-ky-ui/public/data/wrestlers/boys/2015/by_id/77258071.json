@@ -5,10 +5,15 @@
   "team_slug": "scott",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
-    "overall": "47-1",
+    "overall": "47-2",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.625,
-    "bonus_rate": 0.8,
+    "pin_rate": 0.634,
+    "bonus_rate": 0.805,
     "majors": 2,
     "techs": 5,
-    "pins": 25
+    "pins": 26
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -148,6 +153,22 @@
       "event": "KHSAA Region 6"
     },
     {
+      "date": "2015-02-14",
+      "opponent_id": "53533071",
+      "opponent_career_id": "career_014074",
+      "opponent_name": "Jack Dorne",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:35",
+      "event": "KHSAA Region 6"
+    },
+    {
       "date": "2015-02-07",
       "opponent_id": "5827814009",
       "opponent_career_id": "career_014353",
@@ -161,7 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:45",
-      "event": "vs. Scott"
+      "event": "vs. Grant County"
     },
     {
       "date": "2015-02-07",
@@ -245,19 +266,19 @@
     },
     {
       "date": "2015-01-31",
-      "opponent_id": "28267071",
-      "opponent_career_id": "career_014223",
-      "opponent_name": "Wesley Sanders",
-      "opponent_team": "Wayne County",
+      "opponent_id": "88383071",
+      "opponent_career_id": "career_011368",
+      "opponent_name": "Josh Bentley",
+      "opponent_team": "Bourbon County",
       "opponent_team_rank": null,
-      "opponent_weight": 138,
+      "opponent_weight": 157,
       "opponent_rank": null,
-      "weight_class": "144",
+      "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Wayne County"
+      "duration": "0:10",
+      "event": "vs. Bourbon County"
     },
     {
       "date": "2015-01-31",
@@ -273,7 +294,7 @@
       "method": "MD",
       "score": "14-3",
       "duration": "7:00",
-      "event": "vs. Scott"
+      "event": "vs. La Rue County"
     },
     {
       "date": "2015-01-31",
@@ -289,23 +310,23 @@
       "method": "INJ",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Scott"
+      "event": "vs. Moore"
     },
     {
       "date": "2015-01-31",
-      "opponent_id": "88383071",
-      "opponent_career_id": "career_011368",
-      "opponent_name": "Josh Bentley",
-      "opponent_team": "Bourbon County",
+      "opponent_id": "28267071",
+      "opponent_career_id": "career_014223",
+      "opponent_name": "Wesley Sanders",
+      "opponent_team": "Wayne County",
       "opponent_team_rank": null,
-      "opponent_weight": 157,
+      "opponent_weight": 138,
       "opponent_rank": null,
-      "weight_class": "150",
+      "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:10",
-      "event": "vs. Scott"
+      "duration": "3:20",
+      "event": "vs. Wayne County"
     },
     {
       "date": "2015-01-17",
@@ -321,7 +342,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Scott"
+      "event": "vs. Newport"
     },
     {
       "date": "2015-01-17",
@@ -533,22 +554,6 @@
     },
     {
       "date": "2014-12-20",
-      "opponent_id": "OUTSTATE_58389ddd1833",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Xenia",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Xenia"
-    },
-    {
-      "date": "2014-12-20",
       "opponent_id": "OUTSTATE_18bdd1256c45",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -597,6 +602,22 @@
     },
     {
       "date": "2014-12-20",
+      "opponent_id": "OUTSTATE_58389ddd1833",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Xenia",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Xenia"
+    },
+    {
+      "date": "2014-12-20",
       "opponent_id": "34180076",
       "opponent_career_id": null,
       "opponent_name": "TRENT BREWER",
@@ -619,22 +640,6 @@
       "opponent_team": "Conner",
       "opponent_team_rank": null,
       "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Raider Rumble"
-    },
-    {
-      "date": "2014-12-13",
-      "opponent_id": "8501076",
-      "opponent_career_id": "career_014221",
-      "opponent_name": "Tim Pike",
-      "opponent_team": "Union County",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
       "opponent_rank": null,
       "weight_class": "144",
       "result": "W",
@@ -692,6 +697,22 @@
       "event": "Raider Rumble"
     },
     {
+      "date": "2014-12-13",
+      "opponent_id": "8501076",
+      "opponent_career_id": "career_014221",
+      "opponent_name": "Tim Pike",
+      "opponent_team": "Union County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Raider Rumble"
+    },
+    {
       "date": "2014-12-10",
       "opponent_id": "62703076",
       "opponent_career_id": null,
@@ -709,22 +730,6 @@
     },
     {
       "date": "2014-12-06",
-      "opponent_id": "72562076",
-      "opponent_career_id": "career_013071",
-      "opponent_name": "Nathan Lopez",
-      "opponent_team": "Harrison County",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:29",
-      "event": "Rumble on the Hilltop"
-    },
-    {
-      "date": "2014-12-06",
       "opponent_id": "5086321009",
       "opponent_career_id": "career_013972",
       "opponent_name": "Aniguis McIntryre",
@@ -737,6 +742,22 @@
       "method": "FALL",
       "score": null,
       "duration": "2:39",
+      "event": "Rumble on the Hilltop"
+    },
+    {
+      "date": "2014-12-06",
+      "opponent_id": "72562076",
+      "opponent_career_id": "career_013071",
+      "opponent_name": "Nathan Lopez",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:29",
       "event": "Rumble on the Hilltop"
     },
     {
@@ -757,22 +778,6 @@
     },
     {
       "date": "2014-11-29",
-      "opponent_id": "29266011",
-      "opponent_career_id": "career_014164",
-      "opponent_name": "Adam Rivera",
-      "opponent_team": "Moore",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "DEC",
-      "score": "8-2",
-      "duration": "7:00",
-      "event": "vs. Scott"
-    },
-    {
-      "date": "2014-11-29",
       "opponent_id": "4602071",
       "opponent_career_id": "career_013059",
       "opponent_name": "Travis Roberts",
@@ -785,7 +790,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:55",
-      "event": "vs. Scott"
+      "event": "vs. Fern Creek"
+    },
+    {
+      "date": "2014-11-29",
+      "opponent_id": "29266011",
+      "opponent_career_id": "career_014164",
+      "opponent_name": "Adam Rivera",
+      "opponent_team": "Moore",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-2",
+      "duration": "7:00",
+      "event": "vs. Moore"
     },
     {
       "date": "2014-11-29",
@@ -818,7 +839,7 @@
       "season": 2015,
       "grade": 12,
       "team": "Scott",
-      "record": "47-1",
+      "record": "47-2",
       "regional_place": 1,
       "state_place": 4
     },
@@ -826,7 +847,7 @@
       "season": 2014,
       "grade": null,
       "team": "Scott",
-      "record": "27-6",
+      "record": "31-6",
       "regional_place": 1,
       "state_place": null
     },
@@ -834,15 +855,15 @@
       "season": 2013,
       "grade": null,
       "team": "Scott",
-      "record": "29-10",
+      "record": "31-11",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 103,
-    "losses": 17,
-    "win_pct": 0.858
+    "wins": 109,
+    "losses": 19,
+    "win_pct": 0.852
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

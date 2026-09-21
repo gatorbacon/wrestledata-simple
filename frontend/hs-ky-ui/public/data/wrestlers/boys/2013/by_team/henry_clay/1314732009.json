@@ -5,10 +5,15 @@
   "team_slug": "henry_clay",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "26-14",
+    "overall": "33-16",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.452,
-    "bonus_rate": 0.581,
+    "pin_rate": 0.469,
+    "bonus_rate": 0.594,
     "majors": 3,
     "techs": 1,
-    "pins": 14
+    "pins": 15
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -81,7 +86,7 @@
       "method": "DEC",
       "score": "3-2",
       "duration": "7:00",
-      "event": "Region 7"
+      "event": "KHSAA Region 7"
     },
     {
       "date": "2013-02-09",
@@ -161,7 +166,7 @@
       "method": "DEC",
       "score": "7-3",
       "duration": "7:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2013-01-30",
@@ -177,7 +182,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:39",
-      "event": "vs. Henry Clay"
+      "event": "vs. Boyle County"
+    },
+    {
+      "date": "2013-01-26",
+      "opponent_id": "1454988009",
+      "opponent_career_id": "career_016099",
+      "opponent_name": "Cody Webb",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "DEC",
+      "score": "5-3",
+      "duration": "7:00",
+      "event": "vs. Trinity (Louisville)"
     },
     {
       "date": "2013-01-26",
@@ -212,38 +233,6 @@
       "event": "vs. Oldham County"
     },
     {
-      "date": "2013-01-26",
-      "opponent_id": "1454988009",
-      "opponent_career_id": "career_016099",
-      "opponent_name": "Cody Webb",
-      "opponent_team": "Trinity (Louisville)",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "DEC",
-      "score": "5-3",
-      "duration": "7:00",
-      "event": "vs. Trinity (Louisville)"
-    },
-    {
-      "date": "2013-01-19",
-      "opponent_id": "1427246009",
-      "opponent_career_id": "career_016544",
-      "opponent_name": "Kemran Abbasov",
-      "opponent_team": "Seneca",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "DEC",
-      "score": "7-0",
-      "duration": "7:00",
-      "event": "Franklin county invitational"
-    },
-    {
       "date": "2013-01-19",
       "opponent_id": "1275549009",
       "opponent_career_id": "career_014904",
@@ -257,7 +246,7 @@
       "method": "DEC",
       "score": "9-6",
       "duration": "7:00",
-      "event": "capitalcityclassic"
+      "event": "Franklin county invitational"
     },
     {
       "date": "2013-01-19",
@@ -277,6 +266,22 @@
     },
     {
       "date": "2013-01-19",
+      "opponent_id": "1296584009",
+      "opponent_career_id": "career_013973",
+      "opponent_name": "Fernando Rebolledo",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:11",
+      "event": "Franklin county invitational"
+    },
+    {
+      "date": "2013-01-19",
       "opponent_id": "1449587009",
       "opponent_career_id": "career_015665",
       "opponent_name": "Elisha Mutayongwa",
@@ -288,6 +293,22 @@
       "result": "W",
       "method": "MD",
       "score": "10-0",
+      "duration": "7:00",
+      "event": "Franklin county invitational"
+    },
+    {
+      "date": "2013-01-19",
+      "opponent_id": "1427246009",
+      "opponent_career_id": "career_016544",
+      "opponent_name": "Kemran Abbasov",
+      "opponent_team": "Seneca",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-0",
       "duration": "7:00",
       "event": "Franklin county invitational"
     },
@@ -309,22 +330,6 @@
     },
     {
       "date": "2013-01-12",
-      "opponent_id": "1476108009",
-      "opponent_career_id": "career_015727",
-      "opponent_name": "Daniel Wolfarth",
-      "opponent_team": "Whitley County",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:56",
-      "event": "vs. Whitley County"
-    },
-    {
-      "date": "2013-01-12",
       "opponent_id": "1449607009",
       "opponent_career_id": "career_016601",
       "opponent_name": "Braxton Bosshart",
@@ -341,6 +346,22 @@
     },
     {
       "date": "2013-01-12",
+      "opponent_id": "1476108009",
+      "opponent_career_id": "career_015727",
+      "opponent_name": "Daniel Wolfarth",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:56",
+      "event": "vs. Whitley County"
+    },
+    {
+      "date": "2013-01-12",
       "opponent_id": "1369137009",
       "opponent_career_id": "career_013132",
       "opponent_name": "Austin Sutphin",
@@ -353,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Montgomery County"
     },
     {
       "date": "2013-01-12",
@@ -369,7 +390,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:32",
-      "event": "vs. Henry Clay"
+      "event": "vs. Woodford County"
     },
     {
       "date": "2013-01-05",
@@ -385,7 +406,7 @@
       "method": "DEC",
       "score": "5-3",
       "duration": "7:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2013-01-05",
@@ -401,7 +422,7 @@
       "method": "MD",
       "score": "12-3",
       "duration": "7:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2013-01-05",
@@ -433,39 +454,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:28",
-      "event": "vs. Henry Clay"
-    },
-    {
-      "date": "2012-12-29",
-      "opponent_id": "1281397009",
-      "opponent_career_id": "career_013949",
-      "opponent_name": "Riley Hawes",
-      "opponent_team": "Eastern",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "WCI"
-    },
-    {
-      "date": "2012-12-29",
-      "opponent_id": "1319411009",
-      "opponent_career_id": "career_015961",
-      "opponent_name": "Trevor Hunt",
-      "opponent_team": "Holy Cross (Louisville)",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:28",
-      "event": "Woodford County Invitational"
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2012-12-29",
@@ -481,6 +470,38 @@
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
+      "event": "Woodford County Invitational"
+    },
+    {
+      "date": "2012-12-29",
+      "opponent_id": "1281397009",
+      "opponent_career_id": "career_013949",
+      "opponent_name": "Riley Hawes",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:49",
+      "event": "Woodford County Invitational"
+    },
+    {
+      "date": "2012-12-29",
+      "opponent_id": "1319411009",
+      "opponent_career_id": "career_015961",
+      "opponent_name": "Trevor Hunt",
+      "opponent_team": "Holy Cross (Louisville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:28",
       "event": "Woodford County Invitational"
     },
     {
@@ -545,7 +566,7 @@
       "method": "DEC",
       "score": "7-5",
       "duration": "7:00",
-      "event": "Lafayette Invitational Classic"
+      "event": "Lafayette Invitational"
     },
     {
       "date": "2012-12-22",
@@ -560,8 +581,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "Lafayette Inviational"
+      "duration": "2:53",
+      "event": "Lafayette Invitational"
     },
     {
       "date": "2012-12-22",
@@ -597,22 +618,6 @@
     },
     {
       "date": "2012-12-15",
-      "opponent_id": "1240889009",
-      "opponent_career_id": "career_014821",
-      "opponent_name": "Jeremy Bosier",
-      "opponent_team": "Bullitt Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:12",
-      "event": "vs. Bullitt Central"
-    },
-    {
-      "date": "2012-12-15",
       "opponent_id": "1217888009",
       "opponent_career_id": "career_015863",
       "opponent_name": "Mike Robinson",
@@ -626,6 +631,22 @@
       "score": "7-3",
       "duration": "7:00",
       "event": "vs. Apollo"
+    },
+    {
+      "date": "2012-12-15",
+      "opponent_id": "1240889009",
+      "opponent_career_id": "career_014821",
+      "opponent_name": "Jeremy Bosier",
+      "opponent_team": "Bullitt Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:12",
+      "event": "vs. Bullitt Central"
     },
     {
       "date": "2012-12-15",
@@ -673,7 +694,7 @@
       "method": "DEC",
       "score": "6-0",
       "duration": "7:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Moore"
     },
     {
       "date": "2012-12-08",
@@ -741,22 +762,6 @@
     },
     {
       "date": "2012-12-01",
-      "opponent_id": "1369128009",
-      "opponent_career_id": "career_016435",
-      "opponent_name": "Clyde Newcomer",
-      "opponent_team": "Montgomery County",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "DEC",
-      "score": "6-0",
-      "duration": "7:00",
-      "event": "vs. Henry Clay"
-    },
-    {
-      "date": "2012-12-01",
       "opponent_id": "1456210009",
       "opponent_career_id": null,
       "opponent_name": "Anthony Malagari",
@@ -789,6 +794,22 @@
     },
     {
       "date": "2012-12-01",
+      "opponent_id": "1369128009",
+      "opponent_career_id": "career_016435",
+      "opponent_name": "Clyde Newcomer",
+      "opponent_team": "Montgomery County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-0",
+      "duration": "7:00",
+      "event": "vs. Montgomery County"
+    },
+    {
+      "date": "2012-12-01",
       "opponent_id": "1458480009",
       "opponent_career_id": "career_013218",
       "opponent_name": "CHARLES FISCELLA",
@@ -801,7 +822,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:02",
-      "event": "vs. Henry Clay"
+      "event": "vs. University Heights"
     }
   ],
   "career": {
@@ -816,15 +837,15 @@
       "season": 2013,
       "grade": null,
       "team": "Henry Clay",
-      "record": "26-14",
+      "record": "33-16",
       "regional_place": 4,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 26,
-    "losses": 14,
-    "win_pct": 0.65
+    "wins": 33,
+    "losses": 16,
+    "win_pct": 0.673
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

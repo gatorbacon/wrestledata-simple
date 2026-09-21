@@ -5,10 +5,15 @@
   "team_slug": "henry_clay",
   "team_rank": null,
   "weight_class": 106,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
-    "overall": "37-8",
+    "overall": "36-8",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -128,6 +133,22 @@
       "result": "L",
       "method": "DEC",
       "score": "3-2",
+      "duration": "7:00",
+      "event": "KHSAA State Tournament"
+    },
+    {
+      "date": "2016-02-20",
+      "opponent_id": "352394094",
+      "opponent_career_id": "career_010719",
+      "opponent_name": "Nate Wheeler",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "DEC",
+      "score": "2-0",
       "duration": "7:00",
       "event": "KHSAA State Tournament"
     },
@@ -415,7 +436,7 @@
       "weight_class": "106",
       "result": "W",
       "method": "MD",
-      "score": "10-0",
+      "score": "12-0",
       "duration": "7:00",
       "event": "Woodford Co Invitational"
     },
@@ -661,22 +682,6 @@
     },
     {
       "date": "2015-12-05",
-      "opponent_id": "OUTSTATE_fa707c1de75c",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Bardstown",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Bardstown"
-    },
-    {
-      "date": "2015-12-05",
       "opponent_id": "307463010",
       "opponent_career_id": "career_012721",
       "opponent_name": "Michael Good",
@@ -689,7 +694,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:30",
-      "event": "vs. Henry Clay"
+      "event": "vs. Conner"
     },
     {
       "date": "2015-12-05",
@@ -705,7 +710,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:10",
-      "event": "vs. Henry Clay"
+      "event": "vs. Fern Creek"
+    },
+    {
+      "date": "2015-12-05",
+      "opponent_id": "OUTSTATE_fa707c1de75c",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Bardstown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Bardstown"
     },
     {
       "date": "2015-12-05",
@@ -737,7 +758,7 @@
       "season": 2016,
       "grade": 9,
       "team": "Henry Clay",
-      "record": "37-8",
+      "record": "36-8",
       "regional_place": 3,
       "state_place": 6
     },
@@ -745,7 +766,7 @@
       "season": 2015,
       "grade": 8,
       "team": "Henry Clay",
-      "record": "6-3",
+      "record": "7-3",
       "regional_place": null,
       "state_place": null
     }
@@ -755,5 +776,5 @@
     "losses": 11,
     "win_pct": 0.796
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

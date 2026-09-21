@@ -5,10 +5,15 @@
   "team_slug": "central_hardin",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "32-16",
+    "overall": "33-19",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.591,
-    "bonus_rate": 0.773,
+    "pin_rate": 0.565,
+    "bonus_rate": 0.739,
     "majors": 4,
     "techs": 0,
     "pins": 13
@@ -49,7 +54,7 @@
       "method": "MD",
       "score": "19-10",
       "duration": "7:00",
-      "event": "2012 KHSAA State Tournament"
+      "event": "2013 KHSAA State Championships"
     },
     {
       "date": "2013-02-16",
@@ -213,22 +218,6 @@
     },
     {
       "date": "2013-01-26",
-      "opponent_id": "1314716009",
-      "opponent_career_id": "career_015051",
-      "opponent_name": "John Hernandez",
-      "opponent_team": "Henry Clay",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "MD",
-      "score": "15-4",
-      "duration": "7:00",
-      "event": "vs. Central Hardin"
-    },
-    {
-      "date": "2013-01-26",
       "opponent_id": "1244120009",
       "opponent_career_id": "career_013004",
       "opponent_name": "Bryan Spahr",
@@ -245,6 +234,22 @@
     },
     {
       "date": "2013-01-26",
+      "opponent_id": "1314716009",
+      "opponent_career_id": "career_015051",
+      "opponent_name": "John Hernandez",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "MD",
+      "score": "15-4",
+      "duration": "7:00",
+      "event": "vs. Henry Clay"
+    },
+    {
+      "date": "2013-01-26",
       "opponent_id": "1480219009",
       "opponent_career_id": "career_013240",
       "opponent_name": "Tucker Hurst",
@@ -257,7 +262,7 @@
       "method": "DEC",
       "score": "11-10",
       "duration": "7:00",
-      "event": "vs. Central Hardin"
+      "event": "vs. Woodford County"
     },
     {
       "date": "2013-01-19",
@@ -369,7 +374,7 @@
       "method": "DEC",
       "score": "9-8",
       "duration": "7:00",
-      "event": "vs. Central Hardin"
+      "event": "vs. Meade County"
     },
     {
       "date": "2013-01-05",
@@ -385,7 +390,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:00",
-      "event": "vs. Central Hardin"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2013-01-05",
@@ -528,24 +533,8 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:50",
       "event": "Woodford County Invitational"
-    },
-    {
-      "date": "2012-12-21",
-      "opponent_id": "1387989009",
-      "opponent_career_id": "career_016481",
-      "opponent_name": "Devin Keener",
-      "opponent_team": "Ohio County",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:05",
-      "event": "vs. Ohio County"
     },
     {
       "date": "2012-12-21",
@@ -564,36 +553,20 @@
       "event": "vs. Christian County"
     },
     {
-      "date": "2012-12-20",
-      "opponent_id": "1360599009",
-      "opponent_career_id": "career_015102",
-      "opponent_name": "Chris Beeler",
-      "opponent_team": "Meade County",
+      "date": "2012-12-21",
+      "opponent_id": "1387989009",
+      "opponent_career_id": "career_016481",
+      "opponent_name": "Devin Keener",
+      "opponent_team": "Ohio County",
       "opponent_team_rank": null,
       "opponent_weight": 113,
       "opponent_rank": null,
       "weight_class": "120",
-      "result": "L",
-      "method": "MD",
-      "score": "12-0",
-      "duration": "7:00",
-      "event": "vs. Meade County"
-    },
-    {
-      "date": "2012-12-20",
-      "opponent_id": "1388544009",
-      "opponent_career_id": "career_013153",
-      "opponent_name": "Brady Emerson",
-      "opponent_team": "Oldham County",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "MD",
-      "score": "13-5",
-      "duration": "7:00",
-      "event": "vs. Oldham County"
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:05",
+      "event": "vs. Ohio County"
     },
     {
       "date": "2012-12-20",
@@ -661,6 +634,38 @@
     },
     {
       "date": "2012-12-20",
+      "opponent_id": "1360599009",
+      "opponent_career_id": "career_015102",
+      "opponent_name": "Chris Beeler",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "MD",
+      "score": "12-0",
+      "duration": "7:00",
+      "event": "vs. Meade County"
+    },
+    {
+      "date": "2012-12-20",
+      "opponent_id": "1388544009",
+      "opponent_career_id": "career_013153",
+      "opponent_name": "Brady Emerson",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "MD",
+      "score": "13-5",
+      "duration": "7:00",
+      "event": "vs. Oldham County"
+    },
+    {
+      "date": "2012-12-20",
       "opponent_id": "1467496009",
       "opponent_career_id": "career_012389",
       "opponent_name": "JD Criswell",
@@ -689,7 +694,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "vs. Central Hardin"
+      "event": "vs. Barren County"
     },
     {
       "date": "2012-12-15",
@@ -737,7 +742,23 @@
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "King of the Bluegrass"
+      "event": "King of the Bluegrass (Fairdale)"
+    },
+    {
+      "date": "2012-12-08",
+      "opponent_id": "1236383009",
+      "opponent_career_id": "career_013888",
+      "opponent_name": "Lucas McCain",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "DEC",
+      "score": "14-9",
+      "duration": "7:00",
+      "event": "King of the Bluegrass (Fairdale)"
     },
     {
       "date": "2012-12-08",
@@ -789,22 +810,6 @@
     },
     {
       "date": "2012-12-01",
-      "opponent_id": "1480209009",
-      "opponent_career_id": "career_015730",
-      "opponent_name": "Nathan Boston",
-      "opponent_team": "Woodford County",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "TF",
-      "score": "24-5",
-      "duration": "4:00",
-      "event": "vs. Woodford County"
-    },
-    {
-      "date": "2012-12-01",
       "opponent_id": "1381509009",
       "opponent_career_id": "career_016028",
       "opponent_name": "Tyler Simpson",
@@ -850,13 +855,30 @@
       "score": "9-3",
       "duration": "7:00",
       "event": "vs. Simon Kenton"
+    },
+    {
+      "date": "2012-12-01",
+      "opponent_id": "1480209009",
+      "opponent_career_id": "career_015730",
+      "opponent_name": "Nathan Boston",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "TF",
+      "score": "24-5",
+      "duration": "4:00",
+      "event": "vs. Woodford County"
     }
   ],
   "career": {
     "career_id": "career_016206",
     "canonical_name": "Jared Coffell",
     "seasons": [
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -864,15 +886,23 @@
       "season": 2013,
       "grade": null,
       "team": "Central Hardin",
-      "record": "32-16",
+      "record": "33-19",
       "regional_place": 3,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 11,
+      "team": "Central Hardin",
+      "record": "0-2",
+      "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 32,
-    "losses": 16,
-    "win_pct": 0.667
+    "wins": 33,
+    "losses": 21,
+    "win_pct": 0.611
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

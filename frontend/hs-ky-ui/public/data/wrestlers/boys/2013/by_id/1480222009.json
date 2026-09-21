@@ -5,10 +5,15 @@
   "team_slug": "woodford_county",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "10-5",
+    "overall": "12-8",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -96,8 +101,8 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "CONNER INVATATIONAL WRESTLIG TOURNAMENT"
+      "duration": "5:22",
+      "event": "Conner Classic Invitation"
     },
     {
       "date": "2013-01-05",
@@ -113,7 +118,7 @@
       "method": "TF",
       "score": "16-1",
       "duration": "5:23",
-      "event": "Conner Invitational"
+      "event": "Conner Classic Invitation"
     },
     {
       "date": "2013-01-05",
@@ -129,7 +134,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:40",
-      "event": "Conner Invitational"
+      "event": "Conner Classic Invitation"
     },
     {
       "date": "2013-01-05",
@@ -149,22 +154,6 @@
     },
     {
       "date": "2012-12-29",
-      "opponent_id": "1435720009",
-      "opponent_career_id": "career_015775",
-      "opponent_name": "Mark Reynolds",
-      "opponent_team": "South Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:22",
-      "event": "Woodford County Invitational"
-    },
-    {
-      "date": "2012-12-29",
       "opponent_id": "1216556009",
       "opponent_career_id": "career_014941",
       "opponent_name": "Chris McDaniel",
@@ -177,7 +166,7 @@
       "method": "DEC",
       "score": "3-2",
       "duration": "7:00",
-      "event": "Woodford County Invitational"
+      "event": "Woodford County Invitation"
     },
     {
       "date": "2012-12-29",
@@ -193,7 +182,7 @@
       "method": "DEC",
       "score": "1-0",
       "duration": "7:00",
-      "event": "Woodford County Invitational"
+      "event": "Woodford County Invitation"
     },
     {
       "date": "2012-12-29",
@@ -209,7 +198,7 @@
       "method": "MD",
       "score": "11-3",
       "duration": "7:00",
-      "event": "Woodford County"
+      "event": "Woodford County Invitation"
     },
     {
       "date": "2012-12-29",
@@ -240,8 +229,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "Woodford County Invitational"
+      "duration": "4:25",
+      "event": "Woodford County Invitation"
     },
     {
       "date": "2012-12-29",
@@ -256,8 +245,40 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "Woodford County Invitational"
+      "duration": "4:00",
+      "event": "Woodford County Invitation"
+    },
+    {
+      "date": "2012-12-29",
+      "opponent_id": "1435720009",
+      "opponent_career_id": "career_015775",
+      "opponent_name": "Mark Reynolds",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:22",
+      "event": "Woodford County Invitation"
+    },
+    {
+      "date": "2012-12-29",
+      "opponent_id": "1314731009",
+      "opponent_career_id": "career_015413",
+      "opponent_name": "David Tuduri",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "TB-1",
+      "score": "3-2",
+      "duration": "10:00",
+      "event": "Woodford County Invitation"
     },
     {
       "date": "2012-12-29",
@@ -289,7 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:48",
-      "event": "vs. Woodford County"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2012-12-01",
@@ -305,7 +326,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:52",
-      "event": "vs. Woodford County"
+      "event": "vs. Meade County"
     },
     {
       "date": "2012-12-01",
@@ -321,7 +342,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:30",
-      "event": "vs. Woodford County"
+      "event": "vs. Ohio County"
     },
     {
       "date": "2012-12-01",
@@ -337,7 +358,7 @@
       "method": "DEC",
       "score": "8-4",
       "duration": "7:00",
-      "event": "vs. Woodford County"
+      "event": "vs. Oldham County"
     }
   ],
   "career": {
@@ -352,15 +373,15 @@
       "season": 2013,
       "grade": null,
       "team": "Woodford County",
-      "record": "10-5",
+      "record": "12-8",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 10,
-    "losses": 5,
-    "win_pct": 0.667
+    "wins": 12,
+    "losses": 8,
+    "win_pct": 0.6
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

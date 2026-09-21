@@ -5,10 +5,15 @@
   "team_slug": "fern_creek",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
-    "overall": "39-1",
+    "overall": "41-1",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.611,
-    "bonus_rate": 0.861,
+    "pin_rate": 0.622,
+    "bonus_rate": 0.865,
     "majors": 2,
     "techs": 7,
-    "pins": 22
+    "pins": 23
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -133,6 +138,22 @@
     },
     {
       "date": "2016-02-06",
+      "opponent_id": "329025107",
+      "opponent_career_id": "career_010455",
+      "opponent_name": "Ethan Huffman",
+      "opponent_team": "Boone County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:50",
+      "event": "Mustang Classic"
+    },
+    {
+      "date": "2016-02-06",
       "opponent_id": "320000010",
       "opponent_career_id": "career_013007",
       "opponent_name": "Kirk Miller",
@@ -193,7 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:20",
-      "event": "vs. Fern Creek"
+      "event": "vs. Doss"
     },
     {
       "date": "2016-01-30",
@@ -437,6 +458,22 @@
     },
     {
       "date": "2015-12-18",
+      "opponent_id": "287603013",
+      "opponent_career_id": "career_013309",
+      "opponent_name": "Darius Maldonado",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:39",
+      "event": "vs. Trinity (Louisville)"
+    },
+    {
+      "date": "2015-12-18",
       "opponent_id": "436164107",
       "opponent_career_id": null,
       "opponent_name": "Jonathon Sanders",
@@ -466,6 +503,22 @@
       "score": null,
       "duration": "2:33",
       "event": "vs. evansville Harrison"
+    },
+    {
+      "date": "2015-12-18",
+      "opponent_id": "OUTSTATE_39dc2aa9ec79",
+      "opponent_career_id": null,
+      "opponent_name": "FF FF",
+      "opponent_team": "Boonville",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:43",
+      "event": "vs. Boonville"
     },
     {
       "date": "2015-12-18",
@@ -532,36 +585,20 @@
       "event": "vs. Evansville Memorial"
     },
     {
-      "date": "2015-12-18",
-      "opponent_id": "287603013",
-      "opponent_career_id": "career_013309",
-      "opponent_name": "Darius Maldonado",
-      "opponent_team": "Trinity (Louisville)",
+      "date": "2015-12-09",
+      "opponent_id": "310097107",
+      "opponent_career_id": "career_012794",
+      "opponent_name": "Trent Johnson",
+      "opponent_team": "John Hardin",
       "opponent_team_rank": null,
-      "opponent_weight": 144,
+      "opponent_weight": 138,
       "opponent_rank": null,
-      "weight_class": "144",
+      "weight_class": "138",
       "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:39",
-      "event": "vs. Trinity (Louisville)"
-    },
-    {
-      "date": "2015-12-18",
-      "opponent_id": "OUTSTATE_39dc2aa9ec79",
-      "opponent_career_id": null,
-      "opponent_name": "FF FF",
-      "opponent_team": "Boonville",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:43",
-      "event": "vs. Boonville"
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "vs. John Hardin"
     },
     {
       "date": "2015-12-09",
@@ -580,20 +617,20 @@
       "event": "vs. Jeffersontown"
     },
     {
-      "date": "2015-12-09",
-      "opponent_id": "310097107",
-      "opponent_career_id": "career_012794",
-      "opponent_name": "Trent Johnson",
-      "opponent_team": "John Hardin",
+      "date": "2015-12-05",
+      "opponent_id": "329025107",
+      "opponent_career_id": "career_010455",
+      "opponent_name": "Ethan Huffman",
+      "opponent_team": "Boone County",
       "opponent_team_rank": null,
       "opponent_weight": 138,
       "opponent_rank": null,
-      "weight_class": "138",
+      "weight_class": "144",
       "result": "W",
-      "method": "DEC",
-      "score": "5-2",
-      "duration": "7:00",
-      "event": "vs. John Hardin"
+      "method": "FALL",
+      "score": null,
+      "duration": "2:32",
+      "event": "vs. Boone County"
     },
     {
       "date": "2015-12-05",
@@ -610,22 +647,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Paul Dunbar"
-    },
-    {
-      "date": "2015-12-05",
-      "opponent_id": "329025107",
-      "opponent_career_id": "career_010455",
-      "opponent_name": "Ethan Huffman",
-      "opponent_team": "Boone County",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:32",
-      "event": "vs. Fern Creek"
     },
     {
       "date": "2015-12-05",
@@ -661,22 +682,6 @@
     },
     {
       "date": "2015-11-28",
-      "opponent_id": "286101013",
-      "opponent_career_id": "career_010648",
-      "opponent_name": "Evion Thornton",
-      "opponent_team": "North Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:10",
-      "event": "vs. North Hardin"
-    },
-    {
-      "date": "2015-11-28",
       "opponent_id": "320076107",
       "opponent_career_id": "career_012355",
       "opponent_name": "Dallas Miles",
@@ -690,6 +695,22 @@
       "score": "7-5",
       "duration": "7:00",
       "event": "vs. St. Xavier"
+    },
+    {
+      "date": "2015-11-28",
+      "opponent_id": "286101013",
+      "opponent_career_id": "career_010648",
+      "opponent_name": "Evion Thornton",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:10",
+      "event": "vs. North Hardin"
     }
   ],
   "career": {
@@ -705,7 +726,7 @@
       "season": 2016,
       "grade": 12,
       "team": "Fern Creek",
-      "record": "39-1",
+      "record": "41-1",
       "regional_place": 1,
       "state_place": 1
     },
@@ -713,15 +734,15 @@
       "season": 2015,
       "grade": 11,
       "team": "Fern Creek",
-      "record": "58-6",
+      "record": "57-6",
       "regional_place": 1,
       "state_place": 2
     }
   ],
   "career_record": {
-    "wins": 97,
+    "wins": 98,
     "losses": 7,
     "win_pct": 0.933
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

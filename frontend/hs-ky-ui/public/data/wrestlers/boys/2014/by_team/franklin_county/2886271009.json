@@ -5,10 +5,15 @@
   "team_slug": "franklin_county",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "12-9",
+    "overall": "14-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -84,22 +89,6 @@
       "event": "2014 KHSAA State Championships"
     },
     {
-      "date": "2014-02-21",
-      "opponent_id": "2885649009",
-      "opponent_career_id": "career_014975",
-      "opponent_name": "Michael Saunders",
-      "opponent_team": "Bullitt Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "DEC",
-      "score": "9-5",
-      "duration": "7:00",
-      "event": "KHSAA State Tournament"
-    },
-    {
       "date": "2014-02-15",
       "opponent_id": "2885400009",
       "opponent_career_id": "career_015195",
@@ -144,7 +133,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:02",
       "event": "KHSAA Region 5"
     },
     {
@@ -241,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:05",
-      "event": "vs. Franklin County"
+      "event": "vs. Scott County"
     },
     {
       "date": "2014-01-11",
@@ -261,38 +250,6 @@
     },
     {
       "date": "2014-01-04",
-      "opponent_id": "2886834009",
-      "opponent_career_id": "career_013138",
-      "opponent_name": "Seth Pitts",
-      "opponent_team": "Moore",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:42",
-      "event": "vs. Franklin County"
-    },
-    {
-      "date": "2014-01-04",
-      "opponent_id": "2886927009",
-      "opponent_career_id": "career_014266",
-      "opponent_name": "Josh Hill",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "DEC",
-      "score": "4-2",
-      "duration": "7:00",
-      "event": "vs. Franklin County"
-    },
-    {
-      "date": "2014-01-04",
       "opponent_id": "2885992009",
       "opponent_career_id": "career_014544",
       "opponent_name": "Seamus Sallee",
@@ -305,7 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:07",
-      "event": "vs. Franklin County"
+      "event": "vs. Danville"
     },
     {
       "date": "2014-01-04",
@@ -324,20 +281,36 @@
       "event": "vs. Taylor County"
     },
     {
-      "date": "2013-12-28",
-      "opponent_id": "2885446009",
-      "opponent_career_id": "career_015208",
-      "opponent_name": "Brady Smedley",
-      "opponent_team": "Ashland Blazer",
+      "date": "2014-01-04",
+      "opponent_id": "2886834009",
+      "opponent_career_id": "career_013138",
+      "opponent_name": "Seth Pitts",
+      "opponent_team": "Moore",
       "opponent_team_rank": null,
-      "opponent_weight": 157,
+      "opponent_weight": 165,
       "opponent_rank": null,
-      "weight_class": "165",
+      "weight_class": "175",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "Woodford County Invitational Tournament"
+      "duration": "0:42",
+      "event": "vs. Moore"
+    },
+    {
+      "date": "2014-01-04",
+      "opponent_id": "2886927009",
+      "opponent_career_id": "career_014266",
+      "opponent_name": "Josh Hill",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "vs. North Oldham"
     },
     {
       "date": "2013-12-28",
@@ -357,6 +330,22 @@
     },
     {
       "date": "2013-12-28",
+      "opponent_id": "2885446009",
+      "opponent_career_id": "career_015208",
+      "opponent_name": "Brady Smedley",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Woodford County Invitational Tournament"
+    },
+    {
+      "date": "2013-12-28",
       "opponent_id": "2887311009",
       "opponent_career_id": "career_015638",
       "opponent_name": "David Hayden",
@@ -368,7 +357,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:50",
       "event": "Woodford County Invitational Tournament"
     },
     {
@@ -389,6 +378,22 @@
     },
     {
       "date": "2013-12-21",
+      "opponent_id": "2885403009",
+      "opponent_career_id": "career_015193",
+      "opponent_name": "Tucker Pridemore",
+      "opponent_team": "Anderson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:30",
+      "event": "5 Star Classic"
+    },
+    {
+      "date": "2013-12-21",
       "opponent_id": "2885596009",
       "opponent_career_id": "career_013889",
       "opponent_name": "Brandon Devins",
@@ -404,22 +409,6 @@
       "event": "5 Star Classic"
     },
     {
-      "date": "2013-12-21",
-      "opponent_id": "2885403009",
-      "opponent_career_id": "career_015193",
-      "opponent_name": "Tucker Pridemore",
-      "opponent_team": "Anderson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Five Star Classic"
-    },
-    {
       "date": "2013-12-14",
       "opponent_id": "2885992009",
       "opponent_career_id": "career_014544",
@@ -433,7 +422,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:27",
-      "event": "vs. Franklin County"
+      "event": "vs. Danville"
     },
     {
       "date": "2013-12-14",
@@ -464,15 +453,15 @@
       "season": 2014,
       "grade": null,
       "team": "Franklin County",
-      "record": "12-9",
+      "record": "14-11",
       "regional_place": 3,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 12,
-    "losses": 9,
-    "win_pct": 0.571
+    "wins": 14,
+    "losses": 11,
+    "win_pct": 0.56
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

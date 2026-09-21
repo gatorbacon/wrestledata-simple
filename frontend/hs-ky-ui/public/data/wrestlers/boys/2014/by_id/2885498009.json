@@ -5,10 +5,15 @@
   "team_slug": "belfry",
   "team_rank": null,
   "weight_class": 157,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "11-10",
+    "overall": "13-10",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -35,22 +40,6 @@
     "worst_loss": null
   },
   "match_list": [
-    {
-      "date": "2014-02-15",
-      "opponent_id": "2886115009",
-      "opponent_career_id": "career_015021",
-      "opponent_name": "Allen Hunt",
-      "opponent_team": "East Ridge",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "TF",
-      "score": "18-3",
-      "duration": "0:00",
-      "event": "KHSAA Region 8"
-    },
     {
       "date": "2014-02-15",
       "opponent_id": "2887069009",
@@ -80,6 +69,22 @@
       "result": "L",
       "method": "TF",
       "score": "21-4",
+      "duration": "4:10",
+      "event": "KHSAA Region 8"
+    },
+    {
+      "date": "2014-02-15",
+      "opponent_id": "2886115009",
+      "opponent_career_id": "career_015021",
+      "opponent_name": "Allen Hunt",
+      "opponent_team": "East Ridge",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "TF",
+      "score": "18-3",
       "duration": "0:00",
       "event": "KHSAA Region 8"
     },
@@ -100,20 +105,20 @@
       "event": "KHSAA Region 8"
     },
     {
-      "date": "2014-02-08",
-      "opponent_id": "2886321009",
-      "opponent_career_id": "career_015409",
-      "opponent_name": "Mason Fryman",
-      "opponent_team": "Harrison County",
+      "date": "2014-02-01",
+      "opponent_id": "2887088009",
+      "opponent_career_id": "career_014063",
+      "opponent_name": "Jacob Hylton",
+      "opponent_team": "Pike County Central",
       "opponent_team_rank": null,
       "opponent_weight": 157,
       "opponent_rank": null,
       "weight_class": "157",
       "result": "L",
-      "method": "TF",
-      "score": "21-4",
-      "duration": "0:00",
-      "event": "KHSAA Region 8"
+      "method": "FALL",
+      "score": null,
+      "duration": "0:53",
+      "event": "Ben Fischer Memorial"
     },
     {
       "date": "2014-02-01",
@@ -126,22 +131,6 @@
       "opponent_rank": null,
       "weight_class": "157",
       "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Ben Fischer Memorial"
-    },
-    {
-      "date": "2014-02-01",
-      "opponent_id": "2887088009",
-      "opponent_career_id": "career_014063",
-      "opponent_name": "Jacob Hylton",
-      "opponent_team": "Pike County Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -161,7 +150,7 @@
       "method": "DEC",
       "score": "17-14",
       "duration": "7:00",
-      "event": "vs. Belfry"
+      "event": "vs. Ashland Blazer"
     },
     {
       "date": "2014-01-24",
@@ -285,22 +274,6 @@
       "opponent_weight": 157,
       "opponent_rank": null,
       "weight_class": "150",
-      "result": "W",
-      "method": "MD",
-      "score": "16-7",
-      "duration": "7:00",
-      "event": "Perry County Central Invitational"
-    },
-    {
-      "date": "2014-01-04",
-      "opponent_id": "2887088009",
-      "opponent_career_id": "career_014063",
-      "opponent_name": "Jacob Hylton",
-      "opponent_team": "Pike County Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
@@ -320,8 +293,24 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "0:52",
       "event": "Freedom Classic"
+    },
+    {
+      "date": "2014-01-04",
+      "opponent_id": "2887088009",
+      "opponent_career_id": "career_014063",
+      "opponent_name": "Jacob Hylton",
+      "opponent_team": "Pike County Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "MD",
+      "score": "16-7",
+      "duration": "7:00",
+      "event": "Perry County Central Invitational"
     },
     {
       "date": "2013-12-20",
@@ -433,7 +422,7 @@
       "season": 2014,
       "grade": null,
       "team": "Belfry",
-      "record": "11-10",
+      "record": "13-10",
       "regional_place": null,
       "state_place": null
     },
@@ -441,15 +430,15 @@
       "season": 2013,
       "grade": null,
       "team": "Belfry",
-      "record": "11-10",
+      "record": "11-11",
       "regional_place": 4,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 22,
-    "losses": 20,
-    "win_pct": 0.524
+    "wins": 24,
+    "losses": 21,
+    "win_pct": 0.533
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

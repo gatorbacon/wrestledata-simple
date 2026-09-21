@@ -5,10 +5,15 @@
   "team_slug": "montgomery_county",
   "team_rank": null,
   "weight_class": 215,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "3-7",
+    "overall": "7-9",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.8,
-    "bonus_rate": 0.8,
+    "pin_rate": 0.833,
+    "bonus_rate": 0.833,
     "majors": 0,
     "techs": 0,
-    "pins": 4
+    "pins": 5
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -81,7 +86,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:47",
-      "event": "Regional Tournament"
+      "event": "KHSAA Region 8"
     },
     {
       "date": "2014-02-15",
@@ -113,7 +118,7 @@
       "method": "MD",
       "score": "21-8",
       "duration": "7:00",
-      "event": "Kentucky JV State Championships"
+      "event": "Kentucky JV State"
     },
     {
       "date": "2014-02-08",
@@ -181,6 +186,22 @@
     },
     {
       "date": "2014-01-04",
+      "opponent_id": "2887448009",
+      "opponent_career_id": "career_015167",
+      "opponent_name": "Morgan Turner",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:55",
+      "event": "Tates Creek Invitational"
+    },
+    {
+      "date": "2014-01-04",
       "opponent_id": "2887691009",
       "opponent_career_id": "career_015726",
       "opponent_name": "William Arflack",
@@ -194,22 +215,6 @@
       "score": null,
       "duration": "0:00",
       "event": "Tate`s creek invitational"
-    },
-    {
-      "date": "2013-12-23",
-      "opponent_id": "2887067009",
-      "opponent_career_id": "career_014059",
-      "opponent_name": "Patrick Ritchie",
-      "opponent_team": "Perry County Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:22",
-      "event": "Rumble on the Hilltop"
     },
     {
       "date": "2013-12-23",
@@ -228,6 +233,22 @@
       "event": "Rumble on the Hilltop"
     },
     {
+      "date": "2013-12-23",
+      "opponent_id": "2887067009",
+      "opponent_career_id": "career_014059",
+      "opponent_name": "Patrick Ritchie",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:22",
+      "event": "Rumble on the Hilltop"
+    },
+    {
       "date": "2013-12-14",
       "opponent_id": "2886520009",
       "opponent_career_id": "career_014367",
@@ -241,23 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:06",
-      "event": "vs. Montgomery County"
-    },
-    {
-      "date": "2013-12-14",
-      "opponent_id": "3021422009",
-      "opponent_career_id": null,
-      "opponent_name": "EVAN COLLINS",
-      "opponent_team": "Lee",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Lee"
+      "event": "vs. Johnson Central"
     },
     {
       "date": "2013-12-14",
@@ -274,6 +279,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. East Ridge"
+    },
+    {
+      "date": "2013-12-14",
+      "opponent_id": "3021422009",
+      "opponent_career_id": null,
+      "opponent_name": "EVAN COLLINS",
+      "opponent_team": "Lee",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Lee"
     }
   ],
   "career": {
@@ -291,7 +312,7 @@
       "season": 2016,
       "grade": 12,
       "team": "Montgomery County",
-      "record": "4-3",
+      "record": "7-2",
       "regional_place": null,
       "state_place": null
     },
@@ -307,7 +328,7 @@
       "season": 2014,
       "grade": null,
       "team": "Montgomery County",
-      "record": "3-7",
+      "record": "7-9",
       "regional_place": 4,
       "state_place": null
     },
@@ -315,15 +336,15 @@
       "season": 2013,
       "grade": null,
       "team": "Montgomery County",
-      "record": "0-2",
+      "record": "1-6",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 23,
-    "losses": 34,
-    "win_pct": 0.404
+    "wins": 31,
+    "losses": 39,
+    "win_pct": 0.443
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

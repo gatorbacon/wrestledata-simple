@@ -5,6 +5,11 @@
   "team_slug": "daviess_county",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
@@ -181,6 +186,22 @@
     },
     {
       "date": "2016-02-06",
+      "opponent_id": "366665094",
+      "opponent_career_id": "career_013377",
+      "opponent_name": "Zach McCoy",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "MD",
+      "score": "12-4",
+      "duration": "7:00",
+      "event": "vs. Ohio County"
+    },
+    {
+      "date": "2016-02-06",
       "opponent_id": "320192010",
       "opponent_career_id": "career_010728",
       "opponent_name": "kaleb Roden",
@@ -226,22 +247,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Trinity (Whitesville)"
-    },
-    {
-      "date": "2016-02-06",
-      "opponent_id": "366665094",
-      "opponent_career_id": "career_013377",
-      "opponent_name": "Zach McCoy",
-      "opponent_team": "Ohio County",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "MD",
-      "score": "12-4",
-      "duration": "7:00",
-      "event": "vs. Ohio County"
     },
     {
       "date": "2016-02-06",
@@ -309,22 +314,6 @@
     },
     {
       "date": "2016-01-26",
-      "opponent_id": "350262094",
-      "opponent_career_id": "career_010736",
-      "opponent_name": "Blaize Morris",
-      "opponent_team": "Trinity (Whitesville)",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "TF",
-      "score": "21-5",
-      "duration": "0:00",
-      "event": "vs. Trinity (Whitesville)"
-    },
-    {
-      "date": "2016-01-26",
       "opponent_id": "366651094",
       "opponent_career_id": "career_013150",
       "opponent_name": "Cody Krystynak",
@@ -338,6 +327,22 @@
       "score": "17-1",
       "duration": "4:17",
       "event": "vs. Ohio County"
+    },
+    {
+      "date": "2016-01-26",
+      "opponent_id": "350262094",
+      "opponent_career_id": "career_010736",
+      "opponent_name": "Blaize Morris",
+      "opponent_team": "Trinity (Whitesville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "TF",
+      "score": "21-5",
+      "duration": "0:00",
+      "event": "vs. Trinity (Whitesville)"
     },
     {
       "date": "2016-01-19",
@@ -400,7 +405,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "2:12",
       "event": "vs. Trigg County"
     },
     {
@@ -549,22 +554,6 @@
     },
     {
       "date": "2015-12-29",
-      "opponent_id": "OUTSTATE_e0637f042808",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Greenback",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Greenback"
-    },
-    {
-      "date": "2015-12-29",
       "opponent_id": "269870013",
       "opponent_career_id": null,
       "opponent_name": "Reese Kirkwood",
@@ -597,22 +586,6 @@
     },
     {
       "date": "2015-12-29",
-      "opponent_id": "435360071",
-      "opponent_career_id": null,
-      "opponent_name": "Ned Warwick",
-      "opponent_team": "Notre Dame",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "DEC",
-      "score": "6-4",
-      "duration": "7:00",
-      "event": "vs. Notre Dame"
-    },
-    {
-      "date": "2015-12-29",
       "opponent_id": "312092107",
       "opponent_career_id": null,
       "opponent_name": "fate currier",
@@ -628,20 +601,52 @@
       "event": "vs. Kingston"
     },
     {
-      "date": "2015-12-21",
-      "opponent_id": "OUTSTATE_effc5e101a3d",
+      "date": "2015-12-29",
+      "opponent_id": "OUTSTATE_e0637f042808",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
-      "opponent_team": "Rutherford",
+      "opponent_team": "Greenback",
       "opponent_team_rank": null,
-      "opponent_weight": 120,
+      "opponent_weight": 113,
       "opponent_rank": null,
       "weight_class": "132",
       "result": "W",
       "method": "FF",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Rutherford"
+      "event": "vs. Greenback"
+    },
+    {
+      "date": "2015-12-29",
+      "opponent_id": "435360071",
+      "opponent_career_id": null,
+      "opponent_name": "Ned Warwick",
+      "opponent_team": "Notre Dame",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-4",
+      "duration": "7:00",
+      "event": "vs. Notre Dame"
+    },
+    {
+      "date": "2015-12-21",
+      "opponent_id": "390704094",
+      "opponent_career_id": null,
+      "opponent_name": "Shane Ferry",
+      "opponent_team": "Mosley",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Mosley"
     },
     {
       "date": "2015-12-21",
@@ -661,6 +666,22 @@
     },
     {
       "date": "2015-12-21",
+      "opponent_id": "OUTSTATE_effc5e101a3d",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Rutherford",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Rutherford"
+    },
+    {
+      "date": "2015-12-21",
       "opponent_id": "438988071",
       "opponent_career_id": null,
       "opponent_name": "Brandon Hunter",
@@ -674,22 +695,6 @@
       "score": "8-7",
       "duration": "7:00",
       "event": "vs. Wakulla Hs"
-    },
-    {
-      "date": "2015-12-21",
-      "opponent_id": "390704094",
-      "opponent_career_id": null,
-      "opponent_name": "Shane Ferry",
-      "opponent_team": "Mosley",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Mosley"
     },
     {
       "date": "2015-12-17",
@@ -883,7 +888,7 @@
       "season": 2014,
       "grade": null,
       "team": "Daviess County",
-      "record": "18-5",
+      "record": "22-6",
       "regional_place": 2,
       "state_place": null
     },
@@ -891,15 +896,15 @@
       "season": 2013,
       "grade": null,
       "team": "Daviess County",
-      "record": "17-11",
+      "record": "21-15",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 101,
-    "losses": 31,
-    "win_pct": 0.765
+    "wins": 109,
+    "losses": 36,
+    "win_pct": 0.752
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

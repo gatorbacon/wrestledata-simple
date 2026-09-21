@@ -5,10 +5,15 @@
   "team_slug": "fort_campbell",
   "team_rank": null,
   "weight_class": 215,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2019,
   "current_rank": null,
   "record": {
-    "overall": "30-17",
+    "overall": "29-17",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -181,6 +186,22 @@
     },
     {
       "date": "2019-01-26",
+      "opponent_id": "5020996132",
+      "opponent_career_id": "career_009435",
+      "opponent_name": "John Stone",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "HWT",
+      "result": "L",
+      "method": "TF",
+      "score": "20-3",
+      "duration": "4:31",
+      "event": "vs. Ashland Blazer"
+    },
+    {
+      "date": "2019-01-26",
       "opponent_id": "7551136132",
       "opponent_career_id": "career_011144",
       "opponent_name": "Jordan Ross-Bright",
@@ -194,22 +215,6 @@
       "score": null,
       "duration": "0:30",
       "event": "vs. Franklin County"
-    },
-    {
-      "date": "2019-01-26",
-      "opponent_id": "5020996132",
-      "opponent_career_id": "career_009435",
-      "opponent_name": "John Stone",
-      "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": null,
-      "opponent_weight": 285,
-      "opponent_rank": null,
-      "weight_class": "HWT",
-      "result": "L",
-      "method": "TF",
-      "score": "20-3",
-      "duration": "4:31",
-      "event": "vs. Fort Campbell"
     },
     {
       "date": "2019-01-26",
@@ -289,7 +294,7 @@
       "method": "TF",
       "score": "17-1",
       "duration": "6:00",
-      "event": "vs. Fort Campbell"
+      "event": "vs. Christian County"
     },
     {
       "date": "2019-01-23",
@@ -309,10 +314,10 @@
     },
     {
       "date": "2019-01-19",
-      "opponent_id": "5239859132",
-      "opponent_career_id": "career_008801",
-      "opponent_name": "Alex Martin",
-      "opponent_team": "Fern Creek",
+      "opponent_id": "6036468132",
+      "opponent_career_id": "career_010927",
+      "opponent_name": "Reginald Whyte Jr",
+      "opponent_team": "Central",
       "opponent_team_rank": null,
       "opponent_weight": 215,
       "opponent_rank": null,
@@ -325,10 +330,10 @@
     },
     {
       "date": "2019-01-19",
-      "opponent_id": "6036468132",
-      "opponent_career_id": "career_010927",
-      "opponent_name": "Reginald Whyte Jr",
-      "opponent_team": "Central",
+      "opponent_id": "5239859132",
+      "opponent_career_id": "career_008801",
+      "opponent_name": "Alex Martin",
+      "opponent_team": "Fern Creek",
       "opponent_team_rank": null,
       "opponent_weight": 215,
       "opponent_rank": null,
@@ -565,54 +570,6 @@
     },
     {
       "date": "2018-12-08",
-      "opponent_id": "OUTSTATE_5101e89ba2b4",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Houston",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Houston"
-    },
-    {
-      "date": "2018-12-08",
-      "opponent_id": "5360805132",
-      "opponent_career_id": null,
-      "opponent_name": "Dylan Cunningham",
-      "opponent_team": "Hendersonville",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Hendersonville"
-    },
-    {
-      "date": "2018-12-08",
-      "opponent_id": "5607278132",
-      "opponent_career_id": null,
-      "opponent_name": "Wade Savage",
-      "opponent_team": "Mt. Juliet",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Mt. Juliet"
-    },
-    {
-      "date": "2018-12-08",
       "opponent_id": "5163298132",
       "opponent_career_id": null,
       "opponent_name": "Samuel Hayness",
@@ -642,6 +599,54 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Franklin"
+    },
+    {
+      "date": "2018-12-08",
+      "opponent_id": "5360805132",
+      "opponent_career_id": null,
+      "opponent_name": "Dylan Cunningham",
+      "opponent_team": "Hendersonville",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Hendersonville"
+    },
+    {
+      "date": "2018-12-08",
+      "opponent_id": "OUTSTATE_5101e89ba2b4",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Houston",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Houston"
+    },
+    {
+      "date": "2018-12-08",
+      "opponent_id": "5607278132",
+      "opponent_career_id": null,
+      "opponent_name": "Wade Savage",
+      "opponent_team": "Mt. Juliet",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Mt. Juliet"
     },
     {
       "date": "2018-12-04",
@@ -785,7 +790,7 @@
       "season": 2019,
       "grade": 11,
       "team": "Fort Campbell",
-      "record": "30-17",
+      "record": "29-17",
       "regional_place": 4,
       "state_place": null
     },
@@ -793,15 +798,15 @@
       "season": 2018,
       "grade": 10,
       "team": "Fort Campbell",
-      "record": "25-24",
+      "record": "24-24",
       "regional_place": 4,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 55,
+    "wins": 53,
     "losses": 41,
-    "win_pct": 0.573
+    "win_pct": 0.564
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

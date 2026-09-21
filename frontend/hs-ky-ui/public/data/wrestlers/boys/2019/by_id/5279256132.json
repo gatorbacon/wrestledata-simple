@@ -5,10 +5,15 @@
   "team_slug": "johnson_central",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2019,
   "current_rank": null,
   "record": {
-    "overall": "45-10",
+    "overall": "44-10",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -225,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:57",
-      "event": "vs. Johnson Central"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2019-01-26",
@@ -424,7 +429,7 @@
       "opponent_id": "OUTSTATE_25f7f05c4111",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
-      "opponent_team": "all star",
+      "opponent_team": "All Star",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -453,19 +458,19 @@
     },
     {
       "date": "2019-01-04",
-      "opponent_id": "OUTSTATE_84d97b64c8fa",
+      "opponent_id": "5838144132",
       "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Fayetteville",
+      "opponent_name": "Devin Barnes",
+      "opponent_team": "Liberty (Harrison)",
       "opponent_team_rank": null,
-      "opponent_weight": 106,
+      "opponent_weight": 126,
       "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FF",
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
-      "event": "vs. Fayetteville"
+      "duration": "0:00",
+      "event": "vs. Liberty (Harrison)"
     },
     {
       "date": "2019-01-04",
@@ -485,6 +490,22 @@
     },
     {
       "date": "2019-01-04",
+      "opponent_id": "5940345132",
+      "opponent_career_id": null,
+      "opponent_name": "Levi Brake",
+      "opponent_team": "Nicholas County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "DEC",
+      "score": "1-0",
+      "duration": "7:00",
+      "event": "vs. Nicholas County"
+    },
+    {
+      "date": "2019-01-04",
       "opponent_id": "5625546132",
       "opponent_career_id": null,
       "opponent_name": "Jordan Pettry",
@@ -498,6 +519,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Liberty (Raleigh)"
+    },
+    {
+      "date": "2019-01-04",
+      "opponent_id": "OUTSTATE_84d97b64c8fa",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Fayetteville",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Fayetteville"
     },
     {
       "date": "2019-01-04",
@@ -546,38 +583,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Independence H.S."
-    },
-    {
-      "date": "2019-01-04",
-      "opponent_id": "5838144132",
-      "opponent_career_id": null,
-      "opponent_name": "Devin Barnes",
-      "opponent_team": "Liberty (Harrison)",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Liberty (Harrison)"
-    },
-    {
-      "date": "2019-01-04",
-      "opponent_id": "5940345132",
-      "opponent_career_id": null,
-      "opponent_name": "Levi Brake",
-      "opponent_team": "Nicholas County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "DEC",
-      "score": "1-0",
-      "duration": "7:00",
-      "event": "vs. Nicholas County"
     },
     {
       "date": "2018-12-29",
@@ -789,22 +794,6 @@
     },
     {
       "date": "2018-12-15",
-      "opponent_id": "5399117132",
-      "opponent_career_id": "career_010701",
-      "opponent_name": "Andrew Vogeler",
-      "opponent_team": "Sheldon Clark",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "DEC",
-      "score": "6-0",
-      "duration": "7:00",
-      "event": "Bobby Bates Wrestling Classic 2018"
-    },
-    {
-      "date": "2018-12-15",
       "opponent_id": "6458174132",
       "opponent_career_id": null,
       "opponent_name": "Knox Knighten",
@@ -832,6 +821,22 @@
       "result": "W",
       "method": "DEC",
       "score": "5-0",
+      "duration": "7:00",
+      "event": "Bobby Bates Wrestling Classic 2018"
+    },
+    {
+      "date": "2018-12-15",
+      "opponent_id": "5399117132",
+      "opponent_career_id": "career_010701",
+      "opponent_name": "Andrew Vogeler",
+      "opponent_team": "Sheldon Clark",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "DEC",
+      "score": "6-0",
       "duration": "7:00",
       "event": "Bobby Bates Wrestling Classic 2018"
     },
@@ -865,23 +870,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Johnson Central"
-    },
-    {
-      "date": "2018-12-07",
-      "opponent_id": "OUTSTATE_b3844617670f",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Prestonsburg",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Prestonsburg"
+      "event": "vs. Belfry"
     },
     {
       "date": "2018-12-07",
@@ -898,6 +887,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Montgomery County"
+    },
+    {
+      "date": "2018-12-07",
+      "opponent_id": "OUTSTATE_b3844617670f",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Prestonsburg",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Prestonsburg"
     }
   ],
   "career": {
@@ -925,7 +930,7 @@
       "season": 2021,
       "grade": 11,
       "team": "Johnson Central",
-      "record": "37-3",
+      "record": "38-3",
       "regional_place": 1,
       "state_place": 5
     },
@@ -933,7 +938,7 @@
       "season": 2020,
       "grade": 10,
       "team": "Johnson Central",
-      "record": "42-4",
+      "record": "39-4",
       "regional_place": 1,
       "state_place": 4
     },
@@ -941,7 +946,7 @@
       "season": 2019,
       "grade": 9,
       "team": "Johnson Central",
-      "record": "45-10",
+      "record": "44-10",
       "regional_place": 1,
       "state_place": null
     },
@@ -963,9 +968,9 @@
     }
   ],
   "career_record": {
-    "wins": 214,
+    "wins": 211,
     "losses": 35,
-    "win_pct": 0.859
+    "win_pct": 0.858
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

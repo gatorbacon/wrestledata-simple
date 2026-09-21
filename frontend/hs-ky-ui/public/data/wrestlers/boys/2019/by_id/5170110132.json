@@ -5,6 +5,11 @@
   "team_slug": "fort_campbell",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2019,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.667,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
     "pins": 2
@@ -49,7 +54,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:48",
-      "event": "vs. Fort Campbell"
+      "event": "vs. Ashland Blazer"
     },
     {
       "date": "2019-01-26",
@@ -81,7 +86,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:59",
-      "event": "vs. Fort Campbell"
+      "event": "vs. Christian County"
     },
     {
       "date": "2019-01-21",
@@ -97,6 +102,22 @@
       "method": "FALL",
       "score": null,
       "duration": "5:41",
+      "event": "Rossview JV/G Tournament"
+    },
+    {
+      "date": "2019-01-21",
+      "opponent_id": "5238190132",
+      "opponent_career_id": null,
+      "opponent_name": "nathanial Gonzalez",
+      "opponent_team": "West Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
       "event": "Rossview JV/G Tournament"
     },
     {
@@ -133,22 +154,6 @@
     },
     {
       "date": "2019-01-21",
-      "opponent_id": "5238190132",
-      "opponent_career_id": null,
-      "opponent_name": "nathanial Gonzalez",
-      "opponent_team": "West Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:30",
-      "event": "Rossview JV/G Tournament"
-    },
-    {
-      "date": "2019-01-21",
       "opponent_id": "5227001132",
       "opponent_career_id": null,
       "opponent_name": "Mason McKinnon",
@@ -165,12 +170,12 @@
     },
     {
       "date": "2019-01-19",
-      "opponent_id": "5093831132",
-      "opponent_career_id": "career_007793",
-      "opponent_name": "Anthony Webster",
-      "opponent_team": "Grant County",
+      "opponent_id": "5629244132",
+      "opponent_career_id": "career_009646",
+      "opponent_name": "Jacob Gravatte",
+      "opponent_team": "Pleasure Ridge Park",
       "opponent_team_rank": null,
-      "opponent_weight": 120,
+      "opponent_weight": 126,
       "opponent_rank": null,
       "weight_class": "126",
       "result": "L",
@@ -181,12 +186,12 @@
     },
     {
       "date": "2019-01-19",
-      "opponent_id": "5629244132",
-      "opponent_career_id": "career_009646",
-      "opponent_name": "Jacob Gravatte",
-      "opponent_team": "Pleasure Ridge Park",
+      "opponent_id": "5093831132",
+      "opponent_career_id": "career_007793",
+      "opponent_name": "Anthony Webster",
+      "opponent_team": "Grant County",
       "opponent_team_rank": null,
-      "opponent_weight": 126,
+      "opponent_weight": 120,
       "opponent_rank": null,
       "weight_class": "126",
       "result": "L",
@@ -234,5 +239,5 @@
     "losses": 7,
     "win_pct": 0.364
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

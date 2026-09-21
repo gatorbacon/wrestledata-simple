@@ -5,10 +5,15 @@
   "team_slug": "columbus_east",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
-    "overall": "3-1",
+    "overall": "3-2",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -53,6 +58,22 @@
     },
     {
       "date": "2015-12-12",
+      "opponent_id": "8054722009",
+      "opponent_career_id": "career_013189",
+      "opponent_name": "Clayton Warren",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-3",
+      "duration": "7:00",
+      "event": "Ryle Raider Rumble"
+    },
+    {
+      "date": "2015-12-12",
       "opponent_id": "337044094",
       "opponent_career_id": "career_013258",
       "opponent_name": "Jackson Oxford",
@@ -69,18 +90,18 @@
     },
     {
       "date": "2015-12-12",
-      "opponent_id": "8054722009",
-      "opponent_career_id": "career_013189",
-      "opponent_name": "Clayton Warren",
-      "opponent_team": "South Oldham",
+      "opponent_id": "337044094",
+      "opponent_career_id": "career_013258",
+      "opponent_name": "Jackson Oxford",
+      "opponent_team": "Union County",
       "opponent_team_rank": null,
-      "opponent_weight": 150,
+      "opponent_weight": 144,
       "opponent_rank": null,
       "weight_class": "150",
-      "result": "W",
-      "method": "DEC",
-      "score": "5-3",
-      "duration": "7:00",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:03",
       "event": "Ryle Raider Rumble"
     },
     {
@@ -100,5 +121,5 @@
       "event": "Ryle Raider Rumble"
     }
   ],
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "desales",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2018,
   "current_rank": null,
   "record": {
-    "overall": "33-12",
+    "overall": "33-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.577,
-    "bonus_rate": 0.692,
+    "pin_rate": 0.593,
+    "bonus_rate": 0.704,
     "majors": 2,
     "techs": 1,
-    "pins": 15
+    "pins": 16
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -417,7 +422,7 @@
       "method": "DEC",
       "score": "9-2",
       "duration": "7:00",
-      "event": "vs. Desales"
+      "event": "vs. Central"
     },
     {
       "date": "2017-12-21",
@@ -437,22 +442,6 @@
     },
     {
       "date": "2017-12-20",
-      "opponent_id": "12232986009",
-      "opponent_career_id": "career_011520",
-      "opponent_name": "Dymond Harris",
-      "opponent_team": "Owensboro",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Owensboro"
-    },
-    {
-      "date": "2017-12-20",
       "opponent_id": "12066896009",
       "opponent_career_id": "career_011037",
       "opponent_name": "Cade Crume",
@@ -465,23 +454,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Desales"
-    },
-    {
-      "date": "2017-12-20",
-      "opponent_id": "11599599009",
-      "opponent_career_id": "career_011486",
-      "opponent_name": "Kevin Schantz",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "MD",
-      "score": "12-2",
-      "duration": "7:00",
-      "event": "vs. Meade County"
+      "event": "vs. Apollo"
     },
     {
       "date": "2017-12-20",
@@ -497,7 +470,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Desales"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2017-12-20",
@@ -517,6 +490,22 @@
     },
     {
       "date": "2017-12-20",
+      "opponent_id": "12232986009",
+      "opponent_career_id": "career_011520",
+      "opponent_name": "Dymond Harris",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Owensboro"
+    },
+    {
+      "date": "2017-12-20",
       "opponent_id": "11688375009",
       "opponent_career_id": "career_006485",
       "opponent_name": "Conner Lambert",
@@ -530,6 +519,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. La Rue County"
+    },
+    {
+      "date": "2017-12-20",
+      "opponent_id": "11599599009",
+      "opponent_career_id": "career_011486",
+      "opponent_name": "Kevin Schantz",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "MD",
+      "score": "12-2",
+      "duration": "7:00",
+      "event": "vs. Meade County"
     },
     {
       "date": "2017-12-20",
@@ -549,19 +554,19 @@
     },
     {
       "date": "2017-12-13",
-      "opponent_id": "OUTSTATE_5f498e78759c",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Holy Cross",
+      "opponent_id": "12195599009",
+      "opponent_career_id": "career_011586",
+      "opponent_name": "Anthony Garner",
+      "opponent_team": "Valley",
       "opponent_team_rank": null,
-      "opponent_weight": 113,
+      "opponent_weight": 175,
       "opponent_rank": null,
       "weight_class": "190",
       "result": "W",
-      "method": "FF",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
-      "event": "vs. Holy Cross (Louisville)"
+      "duration": "3:16",
+      "event": "vs. Valley"
     },
     {
       "date": "2017-12-13",
@@ -576,8 +581,24 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "3:16",
+      "duration": "4:36",
       "event": "vs. Valley"
+    },
+    {
+      "date": "2017-12-13",
+      "opponent_id": "OUTSTATE_5f498e78759c",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Holy Cross",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Holy Cross (Louisville)"
     },
     {
       "date": "2017-12-13",
@@ -673,23 +694,7 @@
       "method": "DEC",
       "score": "12-5",
       "duration": "7:00",
-      "event": "vs. Desales"
-    },
-    {
-      "date": "2017-12-02",
-      "opponent_id": "217595132",
-      "opponent_career_id": "career_011548",
-      "opponent_name": "Darlington Gaye",
-      "opponent_team": "Seneca",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "DEC",
-      "score": "12-5",
-      "duration": "7:00",
-      "event": "vs. Seneca"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2017-12-02",
@@ -709,6 +714,22 @@
     },
     {
       "date": "2017-12-02",
+      "opponent_id": "217595132",
+      "opponent_career_id": "career_011548",
+      "opponent_name": "Darlington Gaye",
+      "opponent_team": "Seneca",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "DEC",
+      "score": "12-5",
+      "duration": "7:00",
+      "event": "vs. Seneca"
+    },
+    {
+      "date": "2017-12-02",
       "opponent_id": "12195605009",
       "opponent_career_id": "career_011588",
       "opponent_name": "Caleb Lane",
@@ -720,7 +741,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "3:16",
       "event": "vs. Valley"
     }
   ],
@@ -739,7 +760,7 @@
       "season": 2020,
       "grade": 12,
       "team": "Desales",
-      "record": "37-2",
+      "record": "34-2",
       "regional_place": 1,
       "state_place": null
     },
@@ -747,7 +768,7 @@
       "season": 2019,
       "grade": 11,
       "team": "Desales",
-      "record": "24-4",
+      "record": "23-4",
       "regional_place": 1,
       "state_place": null
     },
@@ -755,7 +776,7 @@
       "season": 2018,
       "grade": 10,
       "team": "Desales",
-      "record": "33-12",
+      "record": "33-11",
       "regional_place": 1,
       "state_place": null
     },
@@ -769,9 +790,9 @@
     }
   ],
   "career_record": {
-    "wins": 110,
-    "losses": 30,
-    "win_pct": 0.786
+    "wins": 106,
+    "losses": 29,
+    "win_pct": 0.785
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

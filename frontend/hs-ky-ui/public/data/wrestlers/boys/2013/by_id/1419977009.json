@@ -5,10 +5,15 @@
   "team_slug": "ryle",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "26-16",
+    "overall": "27-17",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.826,
-    "bonus_rate": 0.826,
+    "pin_rate": 0.792,
+    "bonus_rate": 0.792,
     "majors": 0,
     "techs": 0,
     "pins": 19
@@ -225,6 +230,22 @@
       "method": "FALL",
       "score": null,
       "duration": "5:00",
+      "event": "KHSAA Region 6"
+    },
+    {
+      "date": "2013-02-09",
+      "opponent_id": "1264229009",
+      "opponent_career_id": "career_016235",
+      "opponent_name": "Coltyn Keairns",
+      "opponent_team": "Conner",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "TB-1",
+      "score": "3-2",
+      "duration": "10:00",
       "event": "KHSAA Region 6"
     },
     {
@@ -480,7 +501,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:46",
       "event": "2012 NKAC"
     },
     {
@@ -497,7 +518,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:27",
-      "event": "NKAC"
+      "event": "2012 NKAC"
     },
     {
       "date": "2012-12-22",
@@ -512,7 +533,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "0:28",
       "event": "2012 NKAC"
     },
     {
@@ -609,7 +630,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:57",
-      "event": "vs. Ryle"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2012-12-08",
@@ -728,7 +749,8 @@
     "career_id": "career_016526",
     "canonical_name": "Brad Weber",
     "seasons": [
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -736,15 +758,23 @@
       "season": 2013,
       "grade": null,
       "team": "Ryle",
-      "record": "26-16",
+      "record": "27-17",
       "regional_place": 4,
       "state_place": 8
+    },
+    {
+      "season": 2012,
+      "grade": 11,
+      "team": "Ryle",
+      "record": "0-2",
+      "regional_place": null,
+      "state_place": null
     }
   ],
   "career_record": {
-    "wins": 26,
-    "losses": 16,
-    "win_pct": 0.619
+    "wins": 27,
+    "losses": 19,
+    "win_pct": 0.587
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

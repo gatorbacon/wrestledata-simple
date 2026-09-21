@@ -5,10 +5,15 @@
   "team_slug": "campbell_county",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
-    "overall": "5-9",
+    "overall": "8-9",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -53,19 +58,19 @@
     },
     {
       "date": "2014-12-27",
-      "opponent_id": "72563076",
-      "opponent_career_id": "career_013070",
-      "opponent_name": "Conner Hutchison",
-      "opponent_team": "Harrison County",
+      "opponent_id": "101652010",
+      "opponent_career_id": "career_014474",
+      "opponent_name": "Bradley Wiler",
+      "opponent_team": "Boyd County",
       "opponent_team_rank": null,
-      "opponent_weight": 132,
+      "opponent_weight": 157,
       "opponent_rank": null,
       "weight_class": "150",
       "result": "W",
-      "method": "FALL",
+      "method": "DQ",
       "score": null,
-      "duration": "0:21",
-      "event": "vs. Harrison County"
+      "duration": "7:00",
+      "event": "vs. Boyd County"
     },
     {
       "date": "2014-12-27",
@@ -85,35 +90,19 @@
     },
     {
       "date": "2014-12-27",
-      "opponent_id": "101652010",
-      "opponent_career_id": "career_014474",
-      "opponent_name": "Bradley Wiler",
-      "opponent_team": "Boyd County",
+      "opponent_id": "72563076",
+      "opponent_career_id": "career_013070",
+      "opponent_name": "Conner Hutchison",
+      "opponent_team": "Harrison County",
       "opponent_team_rank": null,
-      "opponent_weight": 157,
+      "opponent_weight": 132,
       "opponent_rank": null,
       "weight_class": "150",
       "result": "W",
-      "method": "DQ",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
-      "event": "vs. Campbell County"
-    },
-    {
-      "date": "2014-12-20",
-      "opponent_id": "3550076",
-      "opponent_career_id": "career_012608",
-      "opponent_name": "Logan Osborne",
-      "opponent_team": "Newport",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "DQ",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Campbell County"
+      "duration": "0:21",
+      "event": "vs. Harrison County"
     },
     {
       "date": "2014-12-20",
@@ -129,7 +118,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:24",
-      "event": "vs. Campbell County"
+      "event": "vs. Grant County"
+    },
+    {
+      "date": "2014-12-20",
+      "opponent_id": "3550076",
+      "opponent_career_id": "career_012608",
+      "opponent_name": "Logan Osborne",
+      "opponent_team": "Newport",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "DQ",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Newport"
     },
     {
       "date": "2014-12-20",
@@ -165,22 +170,6 @@
     },
     {
       "date": "2014-12-13",
-      "opponent_id": "5827814009",
-      "opponent_career_id": "career_014353",
-      "opponent_name": "Michael White",
-      "opponent_team": "Grant County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "DEC",
-      "score": "7-6",
-      "duration": "7:00",
-      "event": "vs. Grant County"
-    },
-    {
-      "date": "2014-12-13",
       "opponent_id": "78085076",
       "opponent_career_id": "career_013394",
       "opponent_name": "Mathew Riley",
@@ -197,22 +186,6 @@
     },
     {
       "date": "2014-12-13",
-      "opponent_id": "5086325009",
-      "opponent_career_id": "career_014352",
-      "opponent_name": "Matthew Bishop",
-      "opponent_team": "Franklin County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Franklin County"
-    },
-    {
-      "date": "2014-12-13",
       "opponent_id": "330094",
       "opponent_career_id": "career_012602",
       "opponent_name": "Donovan Lay",
@@ -226,6 +199,38 @@
       "score": "16-4",
       "duration": "7:00",
       "event": "vs. Mccreary Central"
+    },
+    {
+      "date": "2014-12-13",
+      "opponent_id": "5827814009",
+      "opponent_career_id": "career_014353",
+      "opponent_name": "Michael White",
+      "opponent_team": "Grant County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "DEC",
+      "score": "7-6",
+      "duration": "7:00",
+      "event": "vs. Grant County"
+    },
+    {
+      "date": "2014-12-13",
+      "opponent_id": "5086325009",
+      "opponent_career_id": "career_014352",
+      "opponent_name": "Matthew Bishop",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Franklin County"
     },
     {
       "date": "2014-11-29",
@@ -323,7 +328,7 @@
       "season": 2017,
       "grade": 12,
       "team": "Campbell County",
-      "record": "26-15",
+      "record": "27-15",
       "regional_place": null,
       "state_place": null
     },
@@ -339,7 +344,7 @@
       "season": 2015,
       "grade": 10,
       "team": "Campbell County",
-      "record": "5-9",
+      "record": "8-9",
       "regional_place": null,
       "state_place": null
     },
@@ -347,15 +352,15 @@
       "season": 2013,
       "grade": null,
       "team": "Campbell County",
-      "record": "5-1",
+      "record": "6-5",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 48,
-    "losses": 41,
-    "win_pct": 0.539
+    "wins": 53,
+    "losses": 45,
+    "win_pct": 0.541
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

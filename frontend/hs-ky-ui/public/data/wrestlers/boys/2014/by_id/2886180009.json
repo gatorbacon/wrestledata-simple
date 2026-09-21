@@ -5,10 +5,15 @@
   "team_slug": "fern_creek",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "34-14",
+    "overall": "43-16",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -161,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:40",
-      "event": "vs. Fern Creek"
+      "event": "vs. North Oldham"
     },
     {
       "date": "2014-02-08",
@@ -229,22 +234,6 @@
     },
     {
       "date": "2014-02-01",
-      "opponent_id": "2887279009",
-      "opponent_career_id": "career_013185",
-      "opponent_name": "logan glass",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Fern Creek"
-    },
-    {
-      "date": "2014-02-01",
       "opponent_id": "2885802009",
       "opponent_career_id": "career_015280",
       "opponent_name": "Christian Salas",
@@ -276,6 +265,22 @@
       "event": "vs. Henry Clay"
     },
     {
+      "date": "2014-02-01",
+      "opponent_id": "2887279009",
+      "opponent_career_id": "career_013185",
+      "opponent_name": "logan glass",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Simon Kenton"
+    },
+    {
       "date": "2014-01-18",
       "opponent_id": "2886133009",
       "opponent_career_id": "career_013052",
@@ -289,23 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:56",
-      "event": "vs. Fern Creek"
-    },
-    {
-      "date": "2014-01-18",
-      "opponent_id": "2887321009",
-      "opponent_career_id": "career_012346",
-      "opponent_name": "Brad Bailey",
-      "opponent_team": "South Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:58",
-      "event": "vs. Fern Creek"
+      "event": "vs. Eastern"
     },
     {
       "date": "2014-01-18",
@@ -325,6 +314,22 @@
     },
     {
       "date": "2014-01-18",
+      "opponent_id": "2887321009",
+      "opponent_career_id": "career_012346",
+      "opponent_name": "Brad Bailey",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:58",
+      "event": "vs. South Oldham"
+    },
+    {
+      "date": "2014-01-18",
       "opponent_id": "2887546009",
       "opponent_career_id": "career_015688",
       "opponent_name": "Matthew Volpert",
@@ -337,7 +342,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:00",
-      "event": "vs. Fern Creek"
+      "event": "vs. Trinity (Louisville)"
     },
     {
       "date": "2014-01-11",
@@ -453,22 +458,6 @@
     },
     {
       "date": "2014-01-04",
-      "opponent_id": "2887518009",
-      "opponent_career_id": "career_015685",
-      "opponent_name": "Ian Kahl",
-      "opponent_team": "Trinity (Louisville)",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "MD",
-      "score": "16-4",
-      "duration": "7:00",
-      "event": "Fern Creek Gladiator Tournament"
-    },
-    {
-      "date": "2014-01-04",
       "opponent_id": "2886059009",
       "opponent_career_id": "career_013936",
       "opponent_name": "Marcus Churn",
@@ -497,6 +486,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:23",
+      "event": "Fern Creek Gladiator Tournament"
+    },
+    {
+      "date": "2014-01-04",
+      "opponent_id": "2887518009",
+      "opponent_career_id": "career_015685",
+      "opponent_name": "Ian Kahl",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "MD",
+      "score": "16-4",
+      "duration": "7:00",
       "event": "Fern Creek Gladiator Tournament"
     },
     {
@@ -545,7 +550,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:45",
-      "event": "vs. Fern Creek"
+      "event": "vs. Trinity (Louisville)"
     },
     {
       "date": "2013-12-28",
@@ -628,36 +633,20 @@
       "event": "Woodford Co Invitational"
     },
     {
-      "date": "2013-12-23",
-      "opponent_id": "2886971009",
-      "opponent_career_id": "career_014677",
-      "opponent_name": "Sam Gnadinger",
-      "opponent_team": "Oldham County",
+      "date": "2013-12-28",
+      "opponent_id": "2886265009",
+      "opponent_career_id": "career_015041",
+      "opponent_name": "Mick Marshall",
+      "opponent_team": "Franklin County",
       "opponent_team_rank": null,
       "opponent_weight": 150,
       "opponent_rank": null,
       "weight_class": "150",
       "result": "L",
-      "method": "DEC",
-      "score": "4-3",
-      "duration": "7:00",
-      "event": "vs. Oldham County"
-    },
-    {
-      "date": "2013-12-23",
-      "opponent_id": "2887280009",
-      "opponent_career_id": "career_015628",
-      "opponent_name": "dylan hamptom",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:23",
-      "event": "vs. Fern Creek"
+      "method": "SV-1",
+      "score": "4-2",
+      "duration": "8:15",
+      "event": "Woodford County Invitational Tournament"
     },
     {
       "date": "2013-12-23",
@@ -677,6 +666,22 @@
     },
     {
       "date": "2013-12-23",
+      "opponent_id": "2886971009",
+      "opponent_career_id": "career_014677",
+      "opponent_name": "Sam Gnadinger",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "vs. Oldham County"
+    },
+    {
+      "date": "2013-12-23",
       "opponent_id": "2887000009",
       "opponent_career_id": "career_012616",
       "opponent_name": "Christian Gray",
@@ -692,20 +697,20 @@
       "event": "vs. Owensboro"
     },
     {
-      "date": "2013-12-21",
-      "opponent_id": "2887436009",
-      "opponent_career_id": "career_015667",
-      "opponent_name": "Michael Mashni",
-      "opponent_team": "Tates Creek",
+      "date": "2013-12-23",
+      "opponent_id": "2887280009",
+      "opponent_career_id": "career_015628",
+      "opponent_name": "dylan hamptom",
+      "opponent_team": "Simon Kenton",
       "opponent_team_rank": null,
-      "opponent_weight": 144,
+      "opponent_weight": 150,
       "opponent_rank": null,
       "weight_class": "150",
       "result": "W",
-      "method": "DEC",
-      "score": "9-6",
-      "duration": "7:00",
-      "event": "Lafayette Invitational"
+      "method": "FALL",
+      "score": null,
+      "duration": "3:23",
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2013-12-21",
@@ -722,6 +727,22 @@
       "score": "7-0",
       "duration": "7:00",
       "event": "5 Star Classic, Lafayette"
+    },
+    {
+      "date": "2013-12-21",
+      "opponent_id": "2885568009",
+      "opponent_career_id": "career_013885",
+      "opponent_name": "Alex Wright",
+      "opponent_team": "Bourbon County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-5",
+      "duration": "7:00",
+      "event": "Lafayette Invitational"
     },
     {
       "date": "2013-12-21",
@@ -757,6 +778,22 @@
     },
     {
       "date": "2013-12-21",
+      "opponent_id": "2887436009",
+      "opponent_career_id": "career_015667",
+      "opponent_name": "Michael Mashni",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-6",
+      "duration": "7:00",
+      "event": "Lafayette Invitational"
+    },
+    {
+      "date": "2013-12-21",
       "opponent_id": "2886265009",
       "opponent_career_id": "career_015041",
       "opponent_name": "Mick Marshall",
@@ -773,19 +810,19 @@
     },
     {
       "date": "2013-12-14",
-      "opponent_id": "2887046009",
-      "opponent_career_id": "career_014055",
-      "opponent_name": "Stephen Leddy",
-      "opponent_team": "Paul Dunbar",
+      "opponent_id": "OUTSTATE_1bf82ad2d7df",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Anderson County",
       "opponent_team_rank": null,
-      "opponent_weight": 144,
+      "opponent_weight": null,
       "opponent_rank": null,
-      "weight_class": "150",
+      "weight_class": "157",
       "result": "W",
-      "method": "FALL",
+      "method": "FF",
       "score": null,
-      "duration": "5:13",
-      "event": "vs. Fern Creek"
+      "duration": "7:00",
+      "event": "vs. Anderson County"
     },
     {
       "date": "2013-12-14",
@@ -802,22 +839,6 @@
       "score": "16-6",
       "duration": "7:00",
       "event": "vs. Lafayette"
-    },
-    {
-      "date": "2013-12-14",
-      "opponent_id": "OUTSTATE_1bf82ad2d7df",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Anderson County",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Anderson County"
     },
     {
       "date": "2013-12-14",
@@ -850,6 +871,22 @@
       "score": null,
       "duration": "2:41",
       "event": "vs. Oldham County"
+    },
+    {
+      "date": "2013-12-14",
+      "opponent_id": "2887046009",
+      "opponent_career_id": "career_014055",
+      "opponent_name": "Stephen Leddy",
+      "opponent_team": "Paul Dunbar",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:13",
+      "event": "vs. Paul Dunbar"
     },
     {
       "date": "2013-12-11",
@@ -901,22 +938,6 @@
     },
     {
       "date": "2013-11-30",
-      "opponent_id": "2887372009",
-      "opponent_career_id": "career_015656",
-      "opponent_name": "Izak Cirillo",
-      "opponent_team": "St. Xavier",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "DEC",
-      "score": "14-8",
-      "duration": "7:00",
-      "event": "vs. Fern Creek"
-    },
-    {
-      "date": "2013-11-30",
       "opponent_id": "2887201009",
       "opponent_career_id": "career_014082",
       "opponent_name": "Eli Sowder",
@@ -946,6 +967,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Moore"
+    },
+    {
+      "date": "2013-11-30",
+      "opponent_id": "2887372009",
+      "opponent_career_id": "career_015656",
+      "opponent_name": "Izak Cirillo",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "DEC",
+      "score": "14-8",
+      "duration": "7:00",
+      "event": "vs. St. Xavier"
     }
   ],
   "career": {
@@ -962,7 +999,7 @@
       "season": 2015,
       "grade": 12,
       "team": "Fern Creek",
-      "record": "55-11",
+      "record": "56-11",
       "regional_place": 1,
       "state_place": 4
     },
@@ -970,7 +1007,7 @@
       "season": 2014,
       "grade": null,
       "team": "Fern Creek",
-      "record": "34-14",
+      "record": "43-16",
       "regional_place": 2,
       "state_place": null
     },
@@ -978,15 +1015,15 @@
       "season": 2013,
       "grade": null,
       "team": "Fern Creek",
-      "record": "20-16",
+      "record": "28-25",
       "regional_place": 4,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 109,
-    "losses": 41,
-    "win_pct": 0.727
+    "wins": 127,
+    "losses": 52,
+    "win_pct": 0.709
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

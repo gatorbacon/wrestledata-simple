@@ -5,6 +5,11 @@
   "team_slug": "campbell_county",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2017,
   "current_rank": null,
   "record": {
@@ -101,22 +106,6 @@
     },
     {
       "date": "2017-01-28",
-      "opponent_id": "OUTSTATE_b36ed5f0e0af",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Indian Lake",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Indian Lake"
-    },
-    {
-      "date": "2017-01-28",
       "opponent_id": "602298011",
       "opponent_career_id": null,
       "opponent_name": "Ben Thomas",
@@ -146,6 +135,22 @@
       "score": "8-4",
       "duration": "7:00",
       "event": "vs. Zane Trace"
+    },
+    {
+      "date": "2017-01-28",
+      "opponent_id": "OUTSTATE_b36ed5f0e0af",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Indian Lake",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Indian Lake"
     },
     {
       "date": "2017-01-28",
@@ -229,22 +234,6 @@
     },
     {
       "date": "2017-01-04",
-      "opponent_id": "1039495076",
-      "opponent_career_id": "career_012343",
-      "opponent_name": "Elijah Jackson",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:34",
-      "event": "vs. Simon Kenton"
-    },
-    {
-      "date": "2017-01-04",
       "opponent_id": "41482123",
       "opponent_career_id": "career_011410",
       "opponent_name": "Keegan Cundiff",
@@ -277,6 +266,22 @@
     },
     {
       "date": "2017-01-04",
+      "opponent_id": "1039495076",
+      "opponent_career_id": "career_012343",
+      "opponent_name": "Elijah Jackson",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:34",
+      "event": "vs. Simon Kenton"
+    },
+    {
+      "date": "2017-01-04",
       "opponent_id": "928369076",
       "opponent_career_id": "career_011534",
       "opponent_name": "Cody Lonkard",
@@ -290,22 +295,6 @@
       "score": "10-2",
       "duration": "7:00",
       "event": "vs. Ryle"
-    },
-    {
-      "date": "2016-12-22",
-      "opponent_id": "559593013",
-      "opponent_career_id": "career_010695",
-      "opponent_name": "Nathan Watson",
-      "opponent_team": "Scott",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:30",
-      "event": "2016 NKAC"
     },
     {
       "date": "2016-12-22",
@@ -356,20 +345,20 @@
       "event": "2016 NKAC"
     },
     {
-      "date": "2016-12-10",
-      "opponent_id": "836764076",
-      "opponent_career_id": "career_008900",
-      "opponent_name": "Drew Butcher",
-      "opponent_team": "Prestonsburg",
+      "date": "2016-12-22",
+      "opponent_id": "559593013",
+      "opponent_career_id": "career_010695",
+      "opponent_name": "Nathan Watson",
+      "opponent_team": "Scott",
       "opponent_team_rank": null,
       "opponent_weight": 175,
       "opponent_rank": null,
       "weight_class": "190",
-      "result": "W",
+      "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Prestonsburg"
+      "duration": "5:30",
+      "event": "2016 NKAC"
     },
     {
       "date": "2016-12-10",
@@ -418,6 +407,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. North Oldham"
+    },
+    {
+      "date": "2016-12-10",
+      "opponent_id": "836764076",
+      "opponent_career_id": "career_008900",
+      "opponent_name": "Drew Butcher",
+      "opponent_team": "Prestonsburg",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Prestonsburg"
     }
   ],
   "career": {
@@ -460,7 +465,7 @@
       "season": 2018,
       "grade": 9,
       "team": "Campbell County",
-      "record": "32-19",
+      "record": "32-20",
       "regional_place": 4,
       "state_place": null
     },
@@ -475,8 +480,8 @@
   ],
   "career_record": {
     "wins": 139,
-    "losses": 77,
-    "win_pct": 0.644
+    "losses": 78,
+    "win_pct": 0.641
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

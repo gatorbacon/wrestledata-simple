@@ -5,6 +5,11 @@
   "team_slug": "danville",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2019,
   "current_rank": null,
   "record": {
@@ -37,6 +42,22 @@
   "match_list": [
     {
       "date": "2019-01-26",
+      "opponent_id": "5231433132",
+      "opponent_career_id": "career_010063",
+      "opponent_name": "Austin Buechele",
+      "opponent_team": "Bullitt Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Bullitt Central"
+    },
+    {
+      "date": "2019-01-26",
       "opponent_id": "4927289132",
       "opponent_career_id": "career_009490",
       "opponent_name": "Landen Boone",
@@ -50,22 +71,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Daviess County"
-    },
-    {
-      "date": "2019-01-26",
-      "opponent_id": "5231433132",
-      "opponent_career_id": "career_010063",
-      "opponent_name": "Austin Buechele",
-      "opponent_team": "Bullitt Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Danville"
     },
     {
       "date": "2019-01-26",
@@ -128,7 +133,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:48",
       "event": "Dragon Invitational"
     },
     {
@@ -161,23 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Danville"
-    },
-    {
-      "date": "2018-12-01",
-      "opponent_id": "5401920132",
-      "opponent_career_id": "career_011336",
-      "opponent_name": "Brandon Ridner",
-      "opponent_team": "Wayne County",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:57",
-      "event": "vs. Wayne County"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2018-12-01",
@@ -210,6 +199,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Madison Central"
+    },
+    {
+      "date": "2018-12-01",
+      "opponent_id": "5401920132",
+      "opponent_career_id": "career_011336",
+      "opponent_name": "Brandon Ridner",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:57",
+      "event": "vs. Wayne County"
     }
   ],
   "career": {
@@ -233,15 +238,15 @@
       "season": 2017,
       "grade": 9,
       "team": "Danville",
-      "record": "7-14",
+      "record": "7-12",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 13,
-    "losses": 19,
-    "win_pct": 0.406
+    "losses": 17,
+    "win_pct": 0.433
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

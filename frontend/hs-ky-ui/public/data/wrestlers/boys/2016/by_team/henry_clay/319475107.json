@@ -5,6 +5,11 @@
   "team_slug": "henry_clay",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
@@ -85,6 +90,22 @@
     },
     {
       "date": "2016-01-16",
+      "opponent_id": "439049071",
+      "opponent_career_id": "career_013448",
+      "opponent_name": "Matthew Whitaker",
+      "opponent_team": "East Jessamine",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:43",
+      "event": "vs. East Jessamine"
+    },
+    {
+      "date": "2016-01-16",
       "opponent_id": "8257924009",
       "opponent_career_id": "career_013471",
       "opponent_name": "Tyler Mertz",
@@ -101,38 +122,6 @@
     },
     {
       "date": "2016-01-16",
-      "opponent_id": "450603076",
-      "opponent_career_id": "career_012362",
-      "opponent_name": "Jose Martinez",
-      "opponent_team": "Tates Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:00",
-      "event": "vs. Tates Creek"
-    },
-    {
-      "date": "2016-01-16",
-      "opponent_id": "439049071",
-      "opponent_career_id": "career_013448",
-      "opponent_name": "Matthew Whitaker",
-      "opponent_team": "East Jessamine",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:43",
-      "event": "vs. Henry Clay"
-    },
-    {
-      "date": "2016-01-16",
       "opponent_id": "381330107",
       "opponent_career_id": "career_013476",
       "opponent_name": "Corbin Couch",
@@ -146,6 +135,22 @@
       "score": null,
       "duration": "0:19",
       "event": "vs. Madison Central"
+    },
+    {
+      "date": "2016-01-16",
+      "opponent_id": "450603076",
+      "opponent_career_id": "career_012362",
+      "opponent_name": "Jose Martinez",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "vs. Tates Creek"
     },
     {
       "date": "2016-01-09",
@@ -373,22 +378,6 @@
     },
     {
       "date": "2015-12-09",
-      "opponent_id": "288235011",
-      "opponent_career_id": "career_010615",
-      "opponent_name": "Wyatt Jones",
-      "opponent_team": "Male",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:40",
-      "event": "vs. Male"
-    },
-    {
-      "date": "2015-12-09",
       "opponent_id": "331055010",
       "opponent_career_id": "career_013169",
       "opponent_name": "Vince Jarvis",
@@ -402,6 +391,22 @@
       "score": null,
       "duration": "0:47",
       "event": "vs. Ryle"
+    },
+    {
+      "date": "2015-12-09",
+      "opponent_id": "288235011",
+      "opponent_career_id": "career_010615",
+      "opponent_name": "Wyatt Jones",
+      "opponent_team": "Male",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:40",
+      "event": "vs. Male"
     }
   ],
   "career": {
@@ -426,5 +431,5 @@
     "losses": 21,
     "win_pct": 0.087
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

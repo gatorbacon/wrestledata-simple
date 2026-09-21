@@ -5,10 +5,15 @@
   "team_slug": "harrison_county",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "13-6",
+    "overall": "13-7",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -53,6 +58,22 @@
     },
     {
       "date": "2013-02-09",
+      "opponent_id": "1473330009",
+      "opponent_career_id": "career_016114",
+      "opponent_name": "Cameron Murphy",
+      "opponent_team": "Western Hills",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "9-4",
+      "duration": "7:00",
+      "event": "KHSAA Region 7"
+    },
+    {
+      "date": "2013-02-09",
       "opponent_id": "1314723009",
       "opponent_career_id": "career_014847",
       "opponent_name": "Nathan Ogg",
@@ -85,22 +106,6 @@
     },
     {
       "date": "2012-12-22",
-      "opponent_id": "1316244009",
-      "opponent_career_id": null,
-      "opponent_name": "Mason Dermott",
-      "opponent_team": "Hidden Valley",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "DQ",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Hidden Valley"
-    },
-    {
-      "date": "2012-12-22",
       "opponent_id": "1242862009",
       "opponent_career_id": null,
       "opponent_name": "Willie Anthony",
@@ -114,6 +119,22 @@
       "score": "16-1",
       "duration": "0:00",
       "event": "vs. Calhoun"
+    },
+    {
+      "date": "2012-12-22",
+      "opponent_id": "1316244009",
+      "opponent_career_id": null,
+      "opponent_name": "Mason Dermott",
+      "opponent_team": "Hidden Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DQ",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Hidden Valley"
     },
     {
       "date": "2012-12-22",
@@ -257,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:58",
-      "event": "vs. Harrison County"
+      "event": "vs. Montgomery County"
     },
     {
       "date": "2012-12-01",
@@ -288,23 +309,7 @@
       "result": "W",
       "method": "TF",
       "score": "17-1",
-      "duration": "0:00",
-      "event": "Rumble on the Hilltop"
-    },
-    {
-      "date": "2012-12-01",
-      "opponent_id": "1435719009",
-      "opponent_career_id": "career_013190",
-      "opponent_name": "Evan Rademaker",
-      "opponent_team": "South Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:56",
+      "duration": "4:00",
       "event": "Rumble on the Hilltop"
     },
     {
@@ -338,6 +343,22 @@
       "score": null,
       "duration": "0:34",
       "event": "Rumble on the Hilltop"
+    },
+    {
+      "date": "2012-12-01",
+      "opponent_id": "1435719009",
+      "opponent_career_id": "career_013190",
+      "opponent_name": "Evan Rademaker",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:56",
+      "event": "Rumble on the Hilltop"
     }
   ],
   "career": {
@@ -353,7 +374,7 @@
       "season": 2014,
       "grade": null,
       "team": "Harrison County",
-      "record": "28-14",
+      "record": "28-13",
       "regional_place": 2,
       "state_place": null
     },
@@ -361,7 +382,7 @@
       "season": 2013,
       "grade": null,
       "team": "Harrison County",
-      "record": "13-6",
+      "record": "13-7",
       "regional_place": null,
       "state_place": null
     }
@@ -371,5 +392,5 @@
     "losses": 20,
     "win_pct": 0.672
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

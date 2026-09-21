@@ -5,10 +5,15 @@
   "team_slug": "johnson_central",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "32-6",
+    "overall": "36-8",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -97,7 +102,7 @@
       "method": "DEC",
       "score": "7-6",
       "duration": "7:00",
-      "event": "vs. Johnson Central"
+      "event": "vs. Bourbon County"
     },
     {
       "date": "2014-02-01",
@@ -145,7 +150,7 @@
       "method": "DEC",
       "score": "5-0",
       "duration": "7:00",
-      "event": "vs. Johnson Central"
+      "event": "vs. Moore"
     },
     {
       "date": "2014-01-25",
@@ -245,6 +250,22 @@
     },
     {
       "date": "2014-01-18",
+      "opponent_id": "3019963009",
+      "opponent_career_id": null,
+      "opponent_name": "Elliot Pedigo",
+      "opponent_team": "Grundy",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "SV-1",
+      "score": "4-3",
+      "duration": "8:15",
+      "event": "vs. Grundy"
+    },
+    {
+      "date": "2014-01-18",
       "opponent_id": "3022780009",
       "opponent_career_id": null,
       "opponent_name": "Craig Eisert",
@@ -276,22 +297,6 @@
       "event": "vs. Richlands"
     },
     {
-      "date": "2014-01-18",
-      "opponent_id": "3019963009",
-      "opponent_career_id": null,
-      "opponent_name": "Elliot Pedigo",
-      "opponent_team": "Grundy",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "SV-1",
-      "score": "4-3",
-      "duration": "8:15",
-      "event": "vs. Grundy"
-    },
-    {
       "date": "2014-01-16",
       "opponent_id": "2885534009",
       "opponent_career_id": "career_015230",
@@ -305,7 +310,7 @@
       "method": "DEC",
       "score": "1-0",
       "duration": "7:00",
-      "event": "vs. Johnson Central"
+      "event": "vs. Belfry"
     },
     {
       "date": "2014-01-16",
@@ -338,6 +343,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Clay County"
+    },
+    {
+      "date": "2014-01-11",
+      "opponent_id": "3028203009",
+      "opponent_career_id": null,
+      "opponent_name": "Steven Withrow",
+      "opponent_team": "Fayetteville",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "0:00",
+      "event": "vs. Fayetteville"
     },
     {
       "date": "2014-01-11",
@@ -418,22 +439,6 @@
       "score": null,
       "duration": "3:56",
       "event": "vs. Webster County"
-    },
-    {
-      "date": "2014-01-11",
-      "opponent_id": "3028203009",
-      "opponent_career_id": null,
-      "opponent_name": "Steven Withrow",
-      "opponent_team": "Fayetteville",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "TF",
-      "score": "16-1",
-      "duration": "0:00",
-      "event": "vs. Fayetteville"
     },
     {
       "date": "2014-01-04",
@@ -629,22 +634,6 @@
     },
     {
       "date": "2013-12-14",
-      "opponent_id": "2887698009",
-      "opponent_career_id": "career_013259",
-      "opponent_name": "Kyle Garrett",
-      "opponent_team": "Whitley County",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:55",
-      "event": "vs. Whitley County"
-    },
-    {
-      "date": "2013-12-14",
       "opponent_id": "3021408009",
       "opponent_career_id": null,
       "opponent_name": "JUSTIN ELDRIDGE",
@@ -693,6 +682,22 @@
     },
     {
       "date": "2013-12-14",
+      "opponent_id": "2887698009",
+      "opponent_career_id": "career_013259",
+      "opponent_name": "Kyle Garrett",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:55",
+      "event": "vs. Whitley County"
+    },
+    {
+      "date": "2013-12-14",
       "opponent_id": "2886616009",
       "opponent_career_id": "career_012436",
       "opponent_name": "Timothy Fisher",
@@ -721,7 +726,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:03",
-      "event": "vs. Johnson Central"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2013-12-13",
@@ -745,7 +750,9 @@
     "canonical_name": "Josh Jude",
     "seasons": [
       2014,
-      2013
+      2013,
+      2012,
+      2011
     ]
   },
   "season_summary": [
@@ -753,7 +760,7 @@
       "season": 2014,
       "grade": null,
       "team": "Johnson Central",
-      "record": "32-6",
+      "record": "36-8",
       "regional_place": 1,
       "state_place": null
     },
@@ -764,12 +771,28 @@
       "record": "33-8",
       "regional_place": 2,
       "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 10,
+      "team": "Johnson Central",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2011,
+      "grade": 9,
+      "team": "Johnson Central",
+      "record": "3-2",
+      "regional_place": null,
+      "state_place": null
     }
   ],
   "career_record": {
-    "wins": 65,
-    "losses": 14,
-    "win_pct": 0.823
+    "wins": 74,
+    "losses": 20,
+    "win_pct": 0.787
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

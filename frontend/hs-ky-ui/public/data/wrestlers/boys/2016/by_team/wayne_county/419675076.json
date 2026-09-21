@@ -5,6 +5,11 @@
   "team_slug": "wayne_county",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
@@ -81,7 +86,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Wayne County"
+      "event": "vs. Christian County"
     },
     {
       "date": "2016-02-06",
@@ -97,7 +102,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:40",
-      "event": "vs. Wayne County"
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2016-02-06",
@@ -113,7 +118,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:50",
-      "event": "vs. Wayne County"
+      "event": "vs. Madison Central"
     },
     {
       "date": "2016-02-06",
@@ -129,7 +134,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:27",
-      "event": "vs. Wayne County"
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2016-02-06",
@@ -177,7 +182,7 @@
       "method": "DEC",
       "score": "10-8",
       "duration": "7:00",
-      "event": "vs. Wayne County"
+      "event": "vs. Calloway County"
     },
     {
       "date": "2016-01-30",
@@ -192,8 +197,8 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "1:50",
-      "event": "vs. Wayne County"
+      "duration": "1:51",
+      "event": "vs. Harrison County"
     },
     {
       "date": "2016-01-30",
@@ -209,7 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:46",
-      "event": "vs. Wayne County"
+      "event": "vs. La Rue County"
     },
     {
       "date": "2016-01-30",
@@ -225,7 +230,23 @@
       "method": "DEC",
       "score": "9-2",
       "duration": "7:00",
-      "event": "vs. Wayne County"
+      "event": "vs. Scott"
+    },
+    {
+      "date": "2016-01-16",
+      "opponent_id": "344416107",
+      "opponent_career_id": null,
+      "opponent_name": "JT EDWARDS",
+      "opponent_team": "Anderson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "0:00",
+      "event": "vs. Anderson County"
     },
     {
       "date": "2016-01-16",
@@ -258,22 +279,6 @@
       "score": null,
       "duration": "4:40",
       "event": "vs. Hardin Valley Academy"
-    },
-    {
-      "date": "2016-01-16",
-      "opponent_id": "344416107",
-      "opponent_career_id": null,
-      "opponent_name": "JT EDWARDS",
-      "opponent_team": "Anderson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "TF",
-      "score": "15-0",
-      "duration": "0:00",
-      "event": "vs. Anderson County"
     },
     {
       "date": "2016-01-16",
@@ -321,39 +326,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:20",
-      "event": "vs. Wayne County"
-    },
-    {
-      "date": "2016-01-09",
-      "opponent_id": "8722100009",
-      "opponent_career_id": "career_012532",
-      "opponent_name": "Willie Wyatt",
-      "opponent_team": "Letcher County Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:58",
-      "event": "vs. Wayne County"
-    },
-    {
-      "date": "2016-01-09",
-      "opponent_id": "350319107",
-      "opponent_career_id": "career_012602",
-      "opponent_name": "Donovan Lay",
-      "opponent_team": "Mccreary Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:35",
-      "event": "vs. Wayne County"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2016-01-09",
@@ -369,7 +342,39 @@
       "method": "DEC",
       "score": "11-8",
       "duration": "7:00",
-      "event": "vs. Wayne County"
+      "event": "vs. Danville"
+    },
+    {
+      "date": "2016-01-09",
+      "opponent_id": "8722100009",
+      "opponent_career_id": "career_012532",
+      "opponent_name": "Willie Wyatt",
+      "opponent_team": "Letcher County Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:58",
+      "event": "vs. Letcher County Central"
+    },
+    {
+      "date": "2016-01-09",
+      "opponent_id": "350319107",
+      "opponent_career_id": "career_012602",
+      "opponent_name": "Donovan Lay",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:35",
+      "event": "vs. Mccreary Central"
     },
     {
       "date": "2016-01-09",
@@ -401,7 +406,7 @@
       "method": "DEC",
       "score": "16-12",
       "duration": "7:00",
-      "event": "vs. Wayne County"
+      "event": "vs. Mccreary Central"
     },
     {
       "date": "2016-01-02",
@@ -421,22 +426,6 @@
     },
     {
       "date": "2015-12-28",
-      "opponent_id": "8069097009",
-      "opponent_career_id": "career_012439",
-      "opponent_name": "Johnny Lee",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "TF",
-      "score": "15-0",
-      "duration": "0:00",
-      "event": "vs. Wayne County"
-    },
-    {
-      "date": "2015-12-28",
       "opponent_id": "8142760009",
       "opponent_career_id": "career_013366",
       "opponent_name": "Caleb Thomas",
@@ -449,7 +438,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:23",
-      "event": "vs. Wayne County"
+      "event": "vs. Letcher County Central"
     },
     {
       "date": "2015-12-28",
@@ -465,7 +454,23 @@
       "method": "FALL",
       "score": null,
       "duration": "3:27",
-      "event": "vs. Wayne County"
+      "event": "vs. Mccreary Central"
+    },
+    {
+      "date": "2015-12-28",
+      "opponent_id": "8069097009",
+      "opponent_career_id": "career_012439",
+      "opponent_name": "Johnny Lee",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "0:00",
+      "event": "vs. Meade County"
     },
     {
       "date": "2015-12-28",
@@ -481,7 +486,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:44",
-      "event": "vs. Wayne County"
+      "event": "vs. Tates Creek"
     },
     {
       "date": "2015-12-28",
@@ -501,54 +506,6 @@
     },
     {
       "date": "2015-12-22",
-      "opponent_id": "282063013",
-      "opponent_career_id": "career_013127",
-      "opponent_name": "Dakota Hoskins",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:31",
-      "event": "vs. Wayne County"
-    },
-    {
-      "date": "2015-12-22",
-      "opponent_id": "319773010",
-      "opponent_career_id": "career_012194",
-      "opponent_name": "Cole Riney",
-      "opponent_team": "Central Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:03",
-      "event": "vs. Wayne County"
-    },
-    {
-      "date": "2015-12-22",
-      "opponent_id": "293473013",
-      "opponent_career_id": null,
-      "opponent_name": "Joseph Rudy",
-      "opponent_team": "Bishop Fenwick",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:20",
-      "event": "vs. Bishop Fenwick"
-    },
-    {
-      "date": "2015-12-22",
       "opponent_id": "450792076",
       "opponent_career_id": "career_013417",
       "opponent_name": "Bryson Baker",
@@ -561,7 +518,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:46",
-      "event": "vs. Wayne County"
+      "event": "vs. Apollo"
     },
     {
       "date": "2015-12-22",
@@ -577,7 +534,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:22",
-      "event": "vs. Wayne County"
+      "event": "vs. Central"
+    },
+    {
+      "date": "2015-12-22",
+      "opponent_id": "319773010",
+      "opponent_career_id": "career_012194",
+      "opponent_name": "Cole Riney",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:03",
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2015-12-22",
@@ -593,7 +566,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:23",
-      "event": "vs. Wayne County"
+      "event": "vs. Fort Knox"
+    },
+    {
+      "date": "2015-12-22",
+      "opponent_id": "282063013",
+      "opponent_career_id": "career_013127",
+      "opponent_name": "Dakota Hoskins",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:31",
+      "event": "vs. Meade County"
     },
     {
       "date": "2015-12-22",
@@ -629,6 +618,22 @@
     },
     {
       "date": "2015-12-22",
+      "opponent_id": "293473013",
+      "opponent_career_id": null,
+      "opponent_name": "Joseph Rudy",
+      "opponent_team": "Bishop Fenwick",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:20",
+      "event": "vs. Bishop Fenwick"
+    },
+    {
+      "date": "2015-12-22",
       "opponent_id": "OUTSTATE_b70f86745ea9",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -658,22 +663,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Corydon Wrestling"
-    },
-    {
-      "date": "2015-12-12",
-      "opponent_id": "374223094",
-      "opponent_career_id": null,
-      "opponent_name": "Cody Slatton",
-      "opponent_team": "Red Bank",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:14",
-      "event": "vs. Red Bank"
     },
     {
       "date": "2015-12-12",
@@ -738,6 +727,22 @@
       "score": null,
       "duration": "0:31",
       "event": "vs. Page"
+    },
+    {
+      "date": "2015-12-12",
+      "opponent_id": "374223094",
+      "opponent_career_id": null,
+      "opponent_name": "Cody Slatton",
+      "opponent_team": "Red Bank",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:14",
+      "event": "vs. Red Bank"
     }
   ],
   "career": {
@@ -797,15 +802,15 @@
       "season": 2014,
       "grade": null,
       "team": "Wayne County",
-      "record": "1-0",
+      "record": "1-2",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 122,
-    "losses": 66,
-    "win_pct": 0.649
+    "losses": 68,
+    "win_pct": 0.642
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

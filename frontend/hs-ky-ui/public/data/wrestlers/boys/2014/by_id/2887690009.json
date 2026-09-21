@@ -5,10 +5,15 @@
   "team_slug": "western_hills",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "3-9",
+    "overall": "3-12",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -52,22 +57,6 @@
       "event": "KHSAA Region 5"
     },
     {
-      "date": "2014-02-15",
-      "opponent_id": "OUTSTATE_8fc07a96b61c",
-      "opponent_career_id": null,
-      "opponent_name": "Connor Wilkerson",
-      "opponent_team": "Oldham County",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "KHSAA Region 5"
-    },
-    {
       "date": "2014-02-12",
       "opponent_id": "2886261009",
       "opponent_career_id": "career_013065",
@@ -81,7 +70,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:22",
-      "event": "vs. Western Hills"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2014-01-18",
@@ -97,7 +86,7 @@
       "method": "TF",
       "score": "18-2",
       "duration": "2:00",
-      "event": "vs. Western Hills"
+      "event": "vs. Fairdale"
     },
     {
       "date": "2014-01-18",
@@ -113,7 +102,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:19",
-      "event": "vs. Western Hills"
+      "event": "vs. Moore"
     },
     {
       "date": "2014-01-18",
@@ -129,7 +118,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Western Hills"
+      "event": "vs. Spencer County"
     },
     {
       "date": "2013-12-21",
@@ -145,7 +134,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Western Hills"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2013-12-21",
@@ -177,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:28",
-      "event": "vs. Western Hills"
+      "event": "vs. North Oldham"
     },
     {
       "date": "2013-12-14",
@@ -193,7 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:52",
-      "event": "vs. Western Hills"
+      "event": "vs. Paul Dunbar"
     },
     {
       "date": "2013-12-14",
@@ -213,22 +202,6 @@
     },
     {
       "date": "2013-12-14",
-      "opponent_id": "2886603009",
-      "opponent_career_id": "career_014371",
-      "opponent_name": "Kevin Vasquez",
-      "opponent_team": "Lafayette",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Lafayette"
-    },
-    {
-      "date": "2013-12-14",
       "opponent_id": "OUTSTATE_6abc6a5a6886",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -244,20 +217,20 @@
       "event": "vs. Danville"
     },
     {
-      "date": "2013-11-30",
-      "opponent_id": "2887611009",
-      "opponent_career_id": "career_013223",
-      "opponent_name": "Darian Burns",
-      "opponent_team": "Valley",
+      "date": "2013-12-14",
+      "opponent_id": "2886603009",
+      "opponent_career_id": "career_014371",
+      "opponent_name": "Kevin Vasquez",
+      "opponent_team": "Lafayette",
       "opponent_team_rank": null,
-      "opponent_weight": 120,
+      "opponent_weight": 132,
       "opponent_rank": null,
       "weight_class": "132",
-      "result": "W",
+      "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Bullitt East Tournament"
+      "event": "vs. Lafayette"
     },
     {
       "date": "2013-11-30",
@@ -273,7 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Charger Fall Brawl"
+      "event": "Bullitt East Tournament"
     },
     {
       "date": "2013-11-30",
@@ -286,6 +259,22 @@
       "opponent_rank": null,
       "weight_class": "132",
       "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Bullitt East Tournament"
+    },
+    {
+      "date": "2013-11-30",
+      "opponent_id": "2887611009",
+      "opponent_career_id": "career_013223",
+      "opponent_name": "Darian Burns",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -304,15 +293,15 @@
       "season": 2014,
       "grade": null,
       "team": "Western Hills",
-      "record": "3-9",
+      "record": "3-12",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 3,
-    "losses": 9,
-    "win_pct": 0.25
+    "losses": 12,
+    "win_pct": 0.2
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

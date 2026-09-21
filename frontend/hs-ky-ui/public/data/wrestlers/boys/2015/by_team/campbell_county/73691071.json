@@ -5,10 +5,15 @@
   "team_slug": "campbell_county",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
-    "overall": "9-6",
+    "overall": "11-6",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -85,22 +90,6 @@
     },
     {
       "date": "2014-12-27",
-      "opponent_id": "72562076",
-      "opponent_career_id": "career_013071",
-      "opponent_name": "Nathan Lopez",
-      "opponent_team": "Harrison County",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "TF",
-      "score": "15-0",
-      "duration": "5:21",
-      "event": "vs. Harrison County"
-    },
-    {
-      "date": "2014-12-27",
       "opponent_id": "OUTSTATE_f8e9576dd2c3",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -132,6 +121,22 @@
       "event": "vs. Grant County"
     },
     {
+      "date": "2014-12-27",
+      "opponent_id": "72562076",
+      "opponent_career_id": "career_013071",
+      "opponent_name": "Nathan Lopez",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "5:21",
+      "event": "vs. Harrison County"
+    },
+    {
       "date": "2014-12-20",
       "opponent_id": "3549076",
       "opponent_career_id": "career_014033",
@@ -145,7 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Campbell County"
+      "event": "vs. Newport"
     },
     {
       "date": "2014-12-20",
@@ -165,22 +170,6 @@
     },
     {
       "date": "2014-12-13",
-      "opponent_id": "78086076",
-      "opponent_career_id": "career_014225",
-      "opponent_name": "Branden Shingleton",
-      "opponent_team": "Western Hills",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Western Hills"
-    },
-    {
-      "date": "2014-12-13",
       "opponent_id": "OUTSTATE_c187bf3da90b",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -194,6 +183,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. North Oldham"
+    },
+    {
+      "date": "2014-12-13",
+      "opponent_id": "78086076",
+      "opponent_career_id": "career_014225",
+      "opponent_name": "Branden Shingleton",
+      "opponent_team": "Western Hills",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Western Hills"
     },
     {
       "date": "2014-12-13",
@@ -245,38 +250,6 @@
     },
     {
       "date": "2014-11-29",
-      "opponent_id": "5180599009",
-      "opponent_career_id": "career_013313",
-      "opponent_name": "Jake Peace",
-      "opponent_team": "Walton Verona",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "TF",
-      "score": "15-0",
-      "duration": "4:00",
-      "event": "vs. Walton Verona"
-    },
-    {
-      "date": "2014-11-29",
-      "opponent_id": "5606834009",
-      "opponent_career_id": "career_014174",
-      "opponent_name": "Jack Fallon",
-      "opponent_team": "Woodford County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "TF",
-      "score": "19-4",
-      "duration": "4:00",
-      "event": "vs. Woodford County"
-    },
-    {
-      "date": "2014-11-29",
       "opponent_id": "27126076",
       "opponent_career_id": "career_014168",
       "opponent_name": "Lucas Harrison",
@@ -306,6 +279,38 @@
       "score": null,
       "duration": "4:20",
       "event": "vs. John Hardin"
+    },
+    {
+      "date": "2014-11-29",
+      "opponent_id": "5180599009",
+      "opponent_career_id": "career_013313",
+      "opponent_name": "Jake Peace",
+      "opponent_team": "Walton Verona",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "4:00",
+      "event": "vs. Walton Verona"
+    },
+    {
+      "date": "2014-11-29",
+      "opponent_id": "5606834009",
+      "opponent_career_id": "career_014174",
+      "opponent_name": "Jack Fallon",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "4:00",
+      "event": "vs. Woodford County"
     }
   ],
   "career": {
@@ -330,7 +335,7 @@
       "season": 2015,
       "grade": 10,
       "team": "Campbell County",
-      "record": "9-6",
+      "record": "11-6",
       "regional_place": null,
       "state_place": null
     },
@@ -338,15 +343,15 @@
       "season": 2014,
       "grade": null,
       "team": "Campbell County",
-      "record": "11-4",
+      "record": "12-9",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 39,
-    "losses": 17,
-    "win_pct": 0.696
+    "wins": 42,
+    "losses": 22,
+    "win_pct": 0.656
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

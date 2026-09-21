@@ -5,10 +5,15 @@
   "team_slug": "campbell_county",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
-    "overall": "14-18",
+    "overall": "14-19",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -133,6 +138,22 @@
     },
     {
       "date": "2015-01-07",
+      "opponent_id": "6513553009",
+      "opponent_career_id": "career_013612",
+      "opponent_name": "Joe DeMatteo",
+      "opponent_team": "Dixie Heights",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:14",
+      "event": "vs. Dixie Heights"
+    },
+    {
+      "date": "2015-01-07",
       "opponent_id": "88936076",
       "opponent_career_id": "career_014095",
       "opponent_name": "MIchael Roark",
@@ -162,38 +183,6 @@
       "score": "6-1",
       "duration": "7:00",
       "event": "vs. Ryle"
-    },
-    {
-      "date": "2015-01-07",
-      "opponent_id": "6513553009",
-      "opponent_career_id": "career_013612",
-      "opponent_name": "Joe DeMatteo",
-      "opponent_team": "Dixie Heights",
-      "opponent_team_rank": null,
-      "opponent_weight": 285,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:14",
-      "event": "vs. Dixie Heights"
-    },
-    {
-      "date": "2015-01-02",
-      "opponent_id": "33282011",
-      "opponent_career_id": "career_012212",
-      "opponent_name": "Jacon Peters",
-      "opponent_team": "Dixie Heights",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "L",
-      "method": "DEC",
-      "score": "4-2",
-      "duration": "7:00",
-      "event": "NKAC 2014-15"
     },
     {
       "date": "2015-01-02",
@@ -228,6 +217,22 @@
       "event": "NKAC 2014-15"
     },
     {
+      "date": "2015-01-02",
+      "opponent_id": "33282011",
+      "opponent_career_id": "career_012212",
+      "opponent_name": "Jacon Peters",
+      "opponent_team": "Dixie Heights",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "NKAC 2014-15"
+    },
+    {
       "date": "2014-12-27",
       "opponent_id": "101640010",
       "opponent_career_id": "career_014320",
@@ -241,7 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Campbell County"
+      "event": "vs. Boyd County"
     },
     {
       "date": "2014-12-27",
@@ -389,22 +394,6 @@
     },
     {
       "date": "2014-12-13",
-      "opponent_id": "5907258009",
-      "opponent_career_id": "career_013974",
-      "opponent_name": "Matthew Anderson",
-      "opponent_team": "Franklin County",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Franklin County"
-    },
-    {
-      "date": "2014-12-13",
       "opponent_id": "9485010",
       "opponent_career_id": "career_012862",
       "opponent_name": "Landin Jones",
@@ -463,12 +452,28 @@
       "weight_class": "285",
       "result": "L",
       "method": "DEC",
+      "score": "6-4",
+      "duration": "7:00",
+      "event": "vs. Grant County"
+    },
+    {
+      "date": "2014-12-13",
+      "opponent_id": "117381010",
+      "opponent_career_id": "career_014587",
+      "opponent_name": "Mitch Patrick",
+      "opponent_team": "Grant County",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "DEC",
       "score": "7-3",
       "duration": "7:00",
       "event": "vs. Grant County"
     },
     {
-      "date": "2014-11-29",
+      "date": "2014-12-13",
       "opponent_id": "5907258009",
       "opponent_career_id": "career_013974",
       "opponent_name": "Matthew Anderson",
@@ -546,6 +551,22 @@
       "score": null,
       "duration": "2:33",
       "event": "vs. Male"
+    },
+    {
+      "date": "2014-11-29",
+      "opponent_id": "5907258009",
+      "opponent_career_id": "career_013974",
+      "opponent_name": "Matthew Anderson",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Franklin County"
     }
   ],
   "career": {
@@ -562,7 +583,7 @@
       "season": 2016,
       "grade": 11,
       "team": "Campbell County",
-      "record": "6-22",
+      "record": "7-27",
       "regional_place": null,
       "state_place": null
     },
@@ -570,7 +591,7 @@
       "season": 2015,
       "grade": 10,
       "team": "Campbell County",
-      "record": "14-18",
+      "record": "14-19",
       "regional_place": null,
       "state_place": null
     },
@@ -578,15 +599,15 @@
       "season": 2014,
       "grade": null,
       "team": "Campbell County",
-      "record": "1-2",
+      "record": "1-4",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 21,
-    "losses": 42,
-    "win_pct": 0.333
+    "wins": 22,
+    "losses": 50,
+    "win_pct": 0.306
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

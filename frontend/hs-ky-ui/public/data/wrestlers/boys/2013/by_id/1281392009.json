@@ -5,10 +5,15 @@
   "team_slug": "eastern",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "9-6",
+    "overall": "18-10",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.647,
-    "bonus_rate": 0.647,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 11
+    "pins": 12
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -145,7 +150,7 @@
       "method": "DEC",
       "score": "3-1",
       "duration": "7:00",
-      "event": "vs. Eastern"
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2013-01-05",
@@ -177,7 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Woodford County Invitational"
+      "event": "WCI"
     },
     {
       "date": "2012-12-29",
@@ -261,22 +266,6 @@
     },
     {
       "date": "2012-12-15",
-      "opponent_id": "1274181009",
-      "opponent_career_id": "career_014839",
-      "opponent_name": "Kenny Nauert",
-      "opponent_team": "Desales",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:58",
-      "event": "vs. Eastern"
-    },
-    {
-      "date": "2012-12-15",
       "opponent_id": "1250733009",
       "opponent_career_id": "career_015806",
       "opponent_name": "Dominique Howard",
@@ -289,7 +278,23 @@
       "method": "DEC",
       "score": "8-4",
       "duration": "7:00",
-      "event": "vs. Eastern"
+      "event": "vs. Central"
+    },
+    {
+      "date": "2012-12-15",
+      "opponent_id": "1274181009",
+      "opponent_career_id": "career_014839",
+      "opponent_name": "Kenny Nauert",
+      "opponent_team": "Desales",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:58",
+      "event": "vs. Desales"
     },
     {
       "date": "2012-12-08",
@@ -341,6 +346,22 @@
     },
     {
       "date": "2012-12-01",
+      "opponent_id": "1296575009",
+      "opponent_career_id": "career_016324",
+      "opponent_name": "Darius Bucerzan",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "vs. Franklin County"
+    },
+    {
+      "date": "2012-12-01",
       "opponent_id": "1375401009",
       "opponent_career_id": "career_013141",
       "opponent_name": "Le`Ander Beckley",
@@ -353,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:52",
-      "event": "vs. Eastern"
+      "event": "vs. Nelson County"
     },
     {
       "date": "2012-12-01",
@@ -369,7 +390,7 @@
       "method": "DEC",
       "score": "8-3",
       "duration": "7:00",
-      "event": "vs. Eastern"
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2012-11-29",
@@ -401,7 +422,7 @@
       "method": "DEC",
       "score": "9-8",
       "duration": "7:00",
-      "event": "vs. Eastern"
+      "event": "vs. South Oldham"
     },
     {
       "date": "2012-11-24",
@@ -449,7 +470,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:45",
-      "event": "vs. Eastern"
+      "event": "vs. North Hardin"
     },
     {
       "date": "2012-11-24",
@@ -465,14 +486,15 @@
       "method": "FALL",
       "score": null,
       "duration": "3:52",
-      "event": "vs. Eastern"
+      "event": "vs. Trigg County"
     }
   ],
   "career": {
     "career_id": "career_016284",
     "canonical_name": "Dhananjay Arora",
     "seasons": [
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -480,15 +502,23 @@
       "season": 2013,
       "grade": null,
       "team": "Eastern",
-      "record": "9-6",
+      "record": "18-10",
       "regional_place": 4,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 11,
+      "team": "Eastern",
+      "record": "0-2",
+      "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 9,
-    "losses": 6,
+    "wins": 18,
+    "losses": 12,
     "win_pct": 0.6
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

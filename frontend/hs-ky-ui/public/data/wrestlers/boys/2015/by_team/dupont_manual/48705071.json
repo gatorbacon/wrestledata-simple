@@ -5,6 +5,11 @@
   "team_slug": "dupont_manual",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.75,
-    "bonus_rate": 0.893,
+    "pin_rate": 0.724,
+    "bonus_rate": 0.862,
     "majors": 4,
     "techs": 0,
     "pins": 21
@@ -228,6 +233,22 @@
       "event": "Lockland Invitaional"
     },
     {
+      "date": "2015-01-24",
+      "opponent_id": "5828138009",
+      "opponent_career_id": null,
+      "opponent_name": "Brandon Howard",
+      "opponent_team": "Preble Shawnee",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-2",
+      "duration": "7:00",
+      "event": "Lockland Invitaional"
+    },
+    {
       "date": "2015-01-14",
       "opponent_id": "150399076",
       "opponent_career_id": "career_014333",
@@ -241,7 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:28",
-      "event": "vs. Dupont Manual"
+      "event": "vs. Central"
     },
     {
       "date": "2015-01-14",
@@ -401,7 +422,23 @@
       "method": "FALL",
       "score": null,
       "duration": "3:17",
-      "event": "vs. Dupont Manual"
+      "event": "vs. Boyle County"
+    },
+    {
+      "date": "2014-12-27",
+      "opponent_id": "81931076",
+      "opponent_career_id": "career_014542",
+      "opponent_name": "Dustin Horne",
+      "opponent_team": "Danville",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:31",
+      "event": "vs. Danville"
     },
     {
       "date": "2014-12-27",
@@ -436,54 +473,6 @@
       "event": "vs. Mccreary Central"
     },
     {
-      "date": "2014-12-27",
-      "opponent_id": "81931076",
-      "opponent_career_id": "career_014542",
-      "opponent_name": "Dustin Horne",
-      "opponent_team": "Danville",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:31",
-      "event": "vs. Dupont Manual"
-    },
-    {
-      "date": "2014-12-20",
-      "opponent_id": "5861315009",
-      "opponent_career_id": "career_013948",
-      "opponent_name": "Cameron Bryant",
-      "opponent_team": "Eastern",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "DEC",
-      "score": "7-0",
-      "duration": "7:00",
-      "event": "vs. Eastern"
-    },
-    {
-      "date": "2014-12-20",
-      "opponent_id": "20491076",
-      "opponent_career_id": "career_013745",
-      "opponent_name": "Austin Alemi",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "MD",
-      "score": "17-5",
-      "duration": "7:00",
-      "event": "vs. North Oldham"
-    },
-    {
       "date": "2014-12-20",
       "opponent_id": "27362011",
       "opponent_career_id": "career_014500",
@@ -497,7 +486,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Dupont Manual"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2014-12-20",
@@ -532,6 +521,38 @@
       "event": "vs. Valley"
     },
     {
+      "date": "2014-12-20",
+      "opponent_id": "5861315009",
+      "opponent_career_id": "career_013948",
+      "opponent_name": "Cameron Bryant",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-0",
+      "duration": "7:00",
+      "event": "vs. Eastern"
+    },
+    {
+      "date": "2014-12-20",
+      "opponent_id": "20491076",
+      "opponent_career_id": "career_013745",
+      "opponent_name": "Austin Alemi",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "MD",
+      "score": "17-5",
+      "duration": "7:00",
+      "event": "vs. North Oldham"
+    },
+    {
       "date": "2014-12-13",
       "opponent_id": "6064470009",
       "opponent_career_id": "career_014525",
@@ -545,6 +566,22 @@
       "method": "FALL",
       "score": null,
       "duration": "4:41",
+      "event": "Bruin Classic"
+    },
+    {
+      "date": "2014-12-13",
+      "opponent_id": "26915071",
+      "opponent_career_id": "career_014616",
+      "opponent_name": "Brandon Brown",
+      "opponent_team": "La Rue County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:18",
       "event": "Bruin Classic"
     },
     {
@@ -577,22 +614,6 @@
       "method": "MD",
       "score": "9-1",
       "duration": "7:00",
-      "event": "Bruin Classic"
-    },
-    {
-      "date": "2014-12-13",
-      "opponent_id": "26915071",
-      "opponent_career_id": "career_014616",
-      "opponent_name": "Brandon Brown",
-      "opponent_team": "La Rue County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:18",
       "event": "Bruin Classic"
     },
     {
@@ -682,7 +703,7 @@
       "season": 2014,
       "grade": null,
       "team": "Dupont Manual",
-      "record": "31-15",
+      "record": "31-14",
       "regional_place": 4,
       "state_place": null
     },
@@ -690,15 +711,15 @@
       "season": 2013,
       "grade": null,
       "team": "Dupont Manual",
-      "record": "5-7",
+      "record": "7-11",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 65,
-    "losses": 33,
-    "win_pct": 0.663
+    "wins": 67,
+    "losses": 36,
+    "win_pct": 0.65
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

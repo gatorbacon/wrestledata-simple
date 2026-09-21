@@ -5,10 +5,15 @@
   "team_slug": "western_hills",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "21-17",
+    "overall": "22-21",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.889,
-    "bonus_rate": 0.889,
+    "pin_rate": 0.895,
+    "bonus_rate": 0.895,
     "majors": 0,
     "techs": 0,
-    "pins": 16
+    "pins": 17
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -49,7 +54,7 @@
       "method": "TF",
       "score": "18-3",
       "duration": "0:00",
-      "event": "2013 KHSAA State Championships"
+      "event": "State"
     },
     {
       "date": "2013-02-16",
@@ -65,7 +70,7 @@
       "method": "TF",
       "score": "17-2",
       "duration": "0:00",
-      "event": "KHSAA State Championships"
+      "event": "State"
     },
     {
       "date": "2013-02-16",
@@ -81,7 +86,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:08",
-      "event": "2013 KHSAA State Championships"
+      "event": "State"
     },
     {
       "date": "2013-02-09",
@@ -97,7 +102,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:00",
-      "event": "Region 7"
+      "event": "KHSAA Region 7"
     },
     {
       "date": "2013-02-09",
@@ -128,7 +133,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:30",
       "event": "KHSAA Region 7"
     },
     {
@@ -145,7 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Region 7"
+      "event": "KHSAA Region 7"
     },
     {
       "date": "2013-02-09",
@@ -177,7 +182,7 @@
       "method": "MD",
       "score": "17-6",
       "duration": "7:00",
-      "event": "vs. Western Hills"
+      "event": "vs. Grant County"
     },
     {
       "date": "2013-01-26",
@@ -193,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Western Hills"
+      "event": "vs. Tates Creek"
     },
     {
       "date": "2013-01-19",
@@ -225,6 +230,38 @@
       "method": "TF",
       "score": "20-2",
       "duration": "0:00",
+      "event": "Capital City Classic"
+    },
+    {
+      "date": "2013-01-19",
+      "opponent_id": "1377594009",
+      "opponent_career_id": "career_016015",
+      "opponent_name": "Landon Billings",
+      "opponent_team": "Newport",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Capital City Classic"
+    },
+    {
+      "date": "2013-01-19",
+      "opponent_id": "1296569009",
+      "opponent_career_id": "career_013065",
+      "opponent_name": "Aaron Valentine",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "MD",
+      "score": "15-5",
+      "duration": "7:00",
       "event": "Capital City Classic"
     },
     {
@@ -337,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:30",
-      "event": "Tates Creek Inv"
+      "event": "Tates Creek Invitational"
     },
     {
       "date": "2013-01-05",
@@ -373,6 +410,38 @@
     },
     {
       "date": "2012-12-15",
+      "opponent_id": "1274173009",
+      "opponent_career_id": "career_016260",
+      "opponent_name": "Marcus Dudley",
+      "opponent_team": "Desales",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Desales"
+    },
+    {
+      "date": "2012-12-15",
+      "opponent_id": "1276405009",
+      "opponent_career_id": "career_013936",
+      "opponent_name": "Marcus Churn",
+      "opponent_team": "Doss",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "4:00",
+      "event": "vs. Doss"
+    },
+    {
+      "date": "2012-12-15",
       "opponent_id": "1319411009",
       "opponent_career_id": "career_015961",
       "opponent_name": "Trevor Hunt",
@@ -385,7 +454,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Western Hills"
+      "event": "vs. Holy Cross (Louisville)"
     },
     {
       "date": "2012-12-15",
@@ -402,38 +471,6 @@
       "score": "7-5",
       "duration": "7:00",
       "event": "vs. Fort Knox"
-    },
-    {
-      "date": "2012-12-15",
-      "opponent_id": "1274173009",
-      "opponent_career_id": "career_016260",
-      "opponent_name": "Marcus Dudley",
-      "opponent_team": "Desales",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Western Hills"
-    },
-    {
-      "date": "2012-12-15",
-      "opponent_id": "1276405009",
-      "opponent_career_id": "career_013936",
-      "opponent_name": "Marcus Churn",
-      "opponent_team": "Doss",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "TF",
-      "score": "19-4",
-      "duration": "4:00",
-      "event": "vs. Western Hills"
     },
     {
       "date": "2012-12-15",
@@ -465,7 +502,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Western Hills"
+      "event": "vs. Barren County"
     },
     {
       "date": "2012-12-08",
@@ -481,7 +518,23 @@
       "method": "MD",
       "score": "18-7",
       "duration": "7:00",
-      "event": "vs. Western Hills"
+      "event": "vs. Cooper"
+    },
+    {
+      "date": "2012-12-08",
+      "opponent_id": "1427247009",
+      "opponent_career_id": "career_016546",
+      "opponent_name": "Darrius Adams-Stokes",
+      "opponent_team": "Seneca",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Seneca"
     },
     {
       "date": "2012-12-08",
@@ -498,22 +551,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Oldham County"
-    },
-    {
-      "date": "2012-12-08",
-      "opponent_id": "1427247009",
-      "opponent_career_id": "career_016546",
-      "opponent_name": "Darrius Adams-Stokes",
-      "opponent_team": "Seneca",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Western Hills"
     },
     {
       "date": "2012-12-08",
@@ -545,7 +582,7 @@
       "method": "DEC",
       "score": "10-8",
       "duration": "7:00",
-      "event": "vs. Western Hills"
+      "event": "vs. Male"
     },
     {
       "date": "2012-12-01",
@@ -706,7 +743,7 @@
       "season": 2015,
       "grade": 12,
       "team": "Western Hills",
-      "record": "26-17",
+      "record": "26-15",
       "regional_place": 2,
       "state_place": null
     },
@@ -714,7 +751,7 @@
       "season": 2014,
       "grade": null,
       "team": "Western Hills",
-      "record": "20-10",
+      "record": "21-11",
       "regional_place": 4,
       "state_place": null
     },
@@ -722,15 +759,15 @@
       "season": 2013,
       "grade": null,
       "team": "Western Hills",
-      "record": "21-17",
+      "record": "22-21",
       "regional_place": 4,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 67,
-    "losses": 44,
-    "win_pct": 0.604
+    "wins": 69,
+    "losses": 47,
+    "win_pct": 0.595
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

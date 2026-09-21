@@ -5,6 +5,11 @@
   "team_slug": "covington_catholic",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2017,
   "current_rank": null,
   "record": {
@@ -65,6 +70,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:58",
+      "event": "KHSAA Region 6"
+    },
+    {
+      "date": "2017-02-11",
+      "opponent_id": "559593013",
+      "opponent_career_id": "career_010695",
+      "opponent_name": "Nathan Watson",
+      "opponent_team": "Scott",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:48",
       "event": "KHSAA Region 6"
     },
     {
@@ -245,22 +266,6 @@
     },
     {
       "date": "2017-01-07",
-      "opponent_id": "729135094",
-      "opponent_career_id": "career_010810",
-      "opponent_name": "Garrett Belcher",
-      "opponent_team": "Tates Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Tates Creek"
-    },
-    {
-      "date": "2017-01-07",
       "opponent_id": "989450076",
       "opponent_career_id": "career_010571",
       "opponent_name": "chase blanton",
@@ -274,6 +279,22 @@
       "score": null,
       "duration": "3:37",
       "event": "vs. Harrison County"
+    },
+    {
+      "date": "2017-01-07",
+      "opponent_id": "729135094",
+      "opponent_career_id": "career_010810",
+      "opponent_name": "Garrett Belcher",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Tates Creek"
     },
     {
       "date": "2017-01-04",
@@ -353,23 +374,23 @@
       "method": "TF",
       "score": "16-1",
       "duration": "0:00",
-      "event": "vs. Covington Catholic"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2016-12-03",
-      "opponent_id": "OUTSTATE_60d9f28b334a",
+      "opponent_id": "OUTSTATE_3bedbf528daa",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
-      "opponent_team": "Henry Clay",
+      "opponent_team": "Lafayette",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
-      "weight_class": "175",
+      "weight_class": "285",
       "result": "W",
       "method": "FF",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Lafayette"
     },
     {
       "date": "2016-12-03",
@@ -389,19 +410,19 @@
     },
     {
       "date": "2016-12-03",
-      "opponent_id": "OUTSTATE_3bedbf528daa",
+      "opponent_id": "OUTSTATE_60d9f28b334a",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
-      "opponent_team": "Lafayette",
+      "opponent_team": "Henry Clay",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
-      "weight_class": "285",
+      "weight_class": "175",
       "result": "W",
       "method": "FF",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Lafayette"
+      "event": "vs. Henry Clay"
     },
     {
       "date": "2016-12-02",
@@ -460,5 +481,5 @@
     "losses": 30,
     "win_pct": 0.571
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

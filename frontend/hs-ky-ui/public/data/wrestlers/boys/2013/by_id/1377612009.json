@@ -5,10 +5,15 @@
   "team_slug": "newport",
   "team_rank": null,
   "weight_class": 157,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "21-17",
+    "overall": "23-24",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.826,
-    "bonus_rate": 0.957,
+    "pin_rate": 0.81,
+    "bonus_rate": 0.952,
     "majors": 2,
     "techs": 1,
-    "pins": 19
+    "pins": 17
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -97,7 +102,7 @@
       "method": "INJ",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Newport"
+      "event": "vs. Cooper"
     },
     {
       "date": "2013-01-26",
@@ -149,38 +154,6 @@
     },
     {
       "date": "2013-01-26",
-      "opponent_id": "OUTSTATE_fec8b7c42490",
-      "opponent_career_id": null,
-      "opponent_name": "Dominic Travis",
-      "opponent_team": "Indian Hill (OH)",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Lockland Invitational"
-    },
-    {
-      "date": "2013-01-26",
-      "opponent_id": "OUTSTATE_6eeef33b57e6",
-      "opponent_career_id": null,
-      "opponent_name": "Eric Williams",
-      "opponent_team": "Finneytown",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Lockland Invitational"
-    },
-    {
-      "date": "2013-01-26",
       "opponent_id": "-1",
       "opponent_career_id": null,
       "opponent_name": "Kyle Barrett",
@@ -194,54 +167,6 @@
       "score": null,
       "duration": "0:00",
       "event": "Lockland Invitational"
-    },
-    {
-      "date": "2013-01-19",
-      "opponent_id": "1473333009",
-      "opponent_career_id": "career_015720",
-      "opponent_name": "Zack Rigsby",
-      "opponent_team": "Western Hills",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "MD",
-      "score": "10-1",
-      "duration": "7:00",
-      "event": "Capitol City Classic"
-    },
-    {
-      "date": "2013-01-19",
-      "opponent_id": "OUTSTATE_28d57ef664aa",
-      "opponent_career_id": null,
-      "opponent_name": "a b",
-      "opponent_team": "Scott County",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Capitol City Classic"
-    },
-    {
-      "date": "2013-01-19",
-      "opponent_id": "1426212009",
-      "opponent_career_id": "career_015844",
-      "opponent_name": "Jamari Franklin",
-      "opponent_team": "Scott County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:40",
-      "event": "Capitol City Classic"
     },
     {
       "date": "2013-01-19",
@@ -309,6 +234,54 @@
     },
     {
       "date": "2013-01-19",
+      "opponent_id": "1473333009",
+      "opponent_career_id": "career_015720",
+      "opponent_name": "Zack Rigsby",
+      "opponent_team": "Western Hills",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "MD",
+      "score": "10-1",
+      "duration": "7:00",
+      "event": "Capitol City Classic"
+    },
+    {
+      "date": "2013-01-19",
+      "opponent_id": "OUTSTATE_28d57ef664aa",
+      "opponent_career_id": null,
+      "opponent_name": "a b",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Capitol City Classic"
+    },
+    {
+      "date": "2013-01-19",
+      "opponent_id": "1426212009",
+      "opponent_career_id": "career_015844",
+      "opponent_name": "Jamari Franklin",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:40",
+      "event": "Capitol City Classic"
+    },
+    {
+      "date": "2013-01-19",
       "opponent_id": "1473335009",
       "opponent_career_id": "career_012397",
       "opponent_name": "Jacob Smith",
@@ -337,7 +310,7 @@
       "method": "DEC",
       "score": "6-1",
       "duration": "7:00",
-      "event": "Cooper Jaguar Jungle Classic"
+      "event": "Jaguar Jungle Classic"
     },
     {
       "date": "2013-01-12",
@@ -389,22 +362,6 @@
     },
     {
       "date": "2013-01-05",
-      "opponent_id": "1463990009",
-      "opponent_career_id": null,
-      "opponent_name": "Tony Mitchell",
-      "opponent_team": "Walnut Hills",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Walnut Hills"
-    },
-    {
-      "date": "2013-01-05",
       "opponent_id": "1312636009",
       "opponent_career_id": "career_016345",
       "opponent_name": "Vince Whitt",
@@ -417,7 +374,7 @@
       "method": "DEC",
       "score": "9-8",
       "duration": "7:00",
-      "event": "vs. Newport"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2013-01-05",
@@ -466,6 +423,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Simon Kenton"
+    },
+    {
+      "date": "2013-01-05",
+      "opponent_id": "1463990009",
+      "opponent_career_id": null,
+      "opponent_name": "Tony Mitchell",
+      "opponent_team": "Walnut Hills",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Walnut Hills"
     },
     {
       "date": "2012-12-29",
@@ -529,7 +502,7 @@
       "method": "DEC",
       "score": "10-3",
       "duration": "7:00",
-      "event": "NKAC"
+      "event": "2012 NKAC"
     },
     {
       "date": "2012-12-22",
@@ -545,7 +518,7 @@
       "method": "DEC",
       "score": "8-6",
       "duration": "7:00",
-      "event": "NKAC"
+      "event": "2012 NKAC"
     },
     {
       "date": "2012-12-22",
@@ -577,7 +550,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Newport"
+      "event": "vs. Scott"
     },
     {
       "date": "2012-12-15",
@@ -677,22 +650,6 @@
     },
     {
       "date": "2012-12-08",
-      "opponent_id": "1398865009",
-      "opponent_career_id": "career_015566",
-      "opponent_name": "Ken Beverly",
-      "opponent_team": "Perry County Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:32",
-      "event": "vs. Newport"
-    },
-    {
-      "date": "2012-12-08",
       "opponent_id": "1244135009",
       "opponent_career_id": "career_013913",
       "opponent_name": "Jordan Mason",
@@ -756,6 +713,22 @@
       "event": "vs. Spring Valley"
     },
     {
+      "date": "2012-12-08",
+      "opponent_id": "1398865009",
+      "opponent_career_id": "career_015566",
+      "opponent_name": "Ken Beverly",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:32",
+      "event": "vs. Perry County Central"
+    },
+    {
       "date": "2012-12-05",
       "opponent_id": "1235582009",
       "opponent_career_id": "career_015238",
@@ -769,7 +742,7 @@
       "method": "DEC",
       "score": "6-1",
       "duration": "7:00",
-      "event": "vs. Newport"
+      "event": "vs. Boone County"
     },
     {
       "date": "2012-12-05",
@@ -785,7 +758,7 @@
       "method": "DEC",
       "score": "10-5",
       "duration": "7:00",
-      "event": "vs. Newport"
+      "event": "vs. Conner"
     },
     {
       "date": "2012-11-28",
@@ -832,15 +805,15 @@
       "season": 2013,
       "grade": null,
       "team": "Newport",
-      "record": "21-17",
+      "record": "23-24",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 21,
-    "losses": 17,
-    "win_pct": 0.553
+    "wins": 23,
+    "losses": 24,
+    "win_pct": 0.489
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

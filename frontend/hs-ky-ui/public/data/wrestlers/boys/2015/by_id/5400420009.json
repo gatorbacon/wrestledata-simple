@@ -5,6 +5,11 @@
   "team_slug": "henry_clay",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
@@ -229,22 +234,6 @@
     },
     {
       "date": "2015-01-16",
-      "opponent_id": "45840071",
-      "opponent_career_id": "career_011868",
-      "opponent_name": "Trevor Garrett",
-      "opponent_team": "Whitley County",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:21",
-      "event": "vs. Whitley County"
-    },
-    {
-      "date": "2015-01-16",
       "opponent_id": "63741076",
       "opponent_career_id": "career_014114",
       "opponent_name": "Darrell Richardson",
@@ -274,6 +263,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Madison Southern"
+    },
+    {
+      "date": "2015-01-16",
+      "opponent_id": "45840071",
+      "opponent_career_id": "career_011868",
+      "opponent_name": "Trevor Garrett",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:21",
+      "event": "vs. Whitley County"
     },
     {
       "date": "2015-01-16",
@@ -369,7 +374,7 @@
       "method": "MD",
       "score": "18-10",
       "duration": "7:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2015-01-03",
@@ -501,19 +506,19 @@
     },
     {
       "date": "2014-12-20",
-      "opponent_id": "OUTSTATE_1db0e1dfa09e",
+      "opponent_id": "4996247009",
       "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Dorman",
+      "opponent_name": "Dakota Parker",
+      "opponent_team": "T C Roberson",
       "opponent_team_rank": null,
-      "opponent_weight": 106,
+      "opponent_weight": 138,
       "opponent_rank": null,
-      "weight_class": "144",
+      "weight_class": "138",
       "result": "W",
-      "method": "FF",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
-      "event": "vs. Dorman"
+      "duration": "1:23",
+      "event": "vs. T C Roberson"
     },
     {
       "date": "2014-12-20",
@@ -533,19 +538,19 @@
     },
     {
       "date": "2014-12-20",
-      "opponent_id": "4996247009",
+      "opponent_id": "OUTSTATE_1db0e1dfa09e",
       "opponent_career_id": null,
-      "opponent_name": "Dakota Parker",
-      "opponent_team": "T C Roberson",
+      "opponent_name": "Unknown",
+      "opponent_team": "Dorman",
       "opponent_team_rank": null,
-      "opponent_weight": 138,
+      "opponent_weight": 106,
       "opponent_rank": null,
-      "weight_class": "138",
+      "weight_class": "144",
       "result": "W",
-      "method": "FALL",
+      "method": "FF",
       "score": null,
-      "duration": "1:23",
-      "event": "vs. T C Roberson"
+      "duration": "7:00",
+      "event": "vs. Dorman"
     },
     {
       "date": "2014-12-20",
@@ -629,22 +634,6 @@
     },
     {
       "date": "2014-12-06",
-      "opponent_id": "20646011",
-      "opponent_career_id": "career_013103",
-      "opponent_name": "Angel Vasquez",
-      "opponent_team": "Lafayette",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:35",
-      "event": "vs. Lafayette"
-    },
-    {
-      "date": "2014-12-06",
       "opponent_id": "30810071",
       "opponent_career_id": "career_013025",
       "opponent_name": "Tristin Badida",
@@ -657,7 +646,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:46",
-      "event": "vs. Henry Clay"
+      "event": "vs. Conner"
     },
     {
       "date": "2014-12-06",
@@ -673,7 +662,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:51",
-      "event": "vs. Henry Clay"
+      "event": "vs. Fern Creek"
+    },
+    {
+      "date": "2014-12-06",
+      "opponent_id": "20646011",
+      "opponent_career_id": "career_013103",
+      "opponent_name": "Angel Vasquez",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:35",
+      "event": "vs. Lafayette"
     },
     {
       "date": "2014-12-06",
@@ -723,7 +728,7 @@
       "season": 2017,
       "grade": 12,
       "team": "Henry Clay",
-      "record": "33-12",
+      "record": "34-12",
       "regional_place": 1,
       "state_place": 5
     },
@@ -753,9 +758,9 @@
     }
   ],
   "career_record": {
-    "wins": 86,
+    "wins": 87,
     "losses": 47,
-    "win_pct": 0.647
+    "win_pct": 0.649
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

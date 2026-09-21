@@ -5,6 +5,11 @@
   "team_slug": "johnson_central",
   "team_rank": null,
   "weight_class": 106,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
@@ -197,6 +202,22 @@
     },
     {
       "date": "2013-01-26",
+      "opponent_id": "1250722009",
+      "opponent_career_id": "career_016193",
+      "opponent_name": "Robbie Croghan-Miller",
+      "opponent_team": "Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:00",
+      "event": "vs. Central"
+    },
+    {
+      "date": "2013-01-26",
       "opponent_id": "1296565009",
       "opponent_career_id": "career_014578",
       "opponent_name": "Corey Jacobs",
@@ -209,7 +230,7 @@
       "method": "MD",
       "score": "11-1",
       "duration": "7:00",
-      "event": "vs. Johnson Central"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2013-01-26",
@@ -242,22 +263,6 @@
       "score": "5-4",
       "duration": "7:00",
       "event": "vs. Moore"
-    },
-    {
-      "date": "2013-01-26",
-      "opponent_id": "1250722009",
-      "opponent_career_id": "career_016193",
-      "opponent_name": "Robbie Croghan-Miller",
-      "opponent_team": "Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:00",
-      "event": "vs. Johnson Central"
     },
     {
       "date": "2013-01-19",
@@ -389,22 +394,6 @@
     },
     {
       "date": "2013-01-12",
-      "opponent_id": "OUTSTATE_a4f9698f3711",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Sheldon Clark",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Sheldon Clark"
-    },
-    {
-      "date": "2013-01-12",
       "opponent_id": "1400698009",
       "opponent_career_id": "career_016048",
       "opponent_name": "Donovan Bentley",
@@ -418,6 +407,22 @@
       "score": null,
       "duration": "4:25",
       "event": "vs. Pike County Central"
+    },
+    {
+      "date": "2013-01-12",
+      "opponent_id": "OUTSTATE_a4f9698f3711",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Sheldon Clark",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Sheldon Clark"
     },
     {
       "date": "2013-01-11",
@@ -1002,5 +1007,5 @@
     "losses": 19,
     "win_pct": 0.678
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

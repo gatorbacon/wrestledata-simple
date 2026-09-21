@@ -5,6 +5,11 @@
   "team_slug": "north_bullitt",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2017,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.545,
-    "bonus_rate": 0.818,
+    "pin_rate": 0.583,
+    "bonus_rate": 0.833,
     "majors": 3,
     "techs": 0,
-    "pins": 6
+    "pins": 7
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -35,6 +40,22 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2017-02-18",
+      "opponent_id": "989390076",
+      "opponent_career_id": "career_012240",
+      "opponent_name": "Micheal Mattox",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "0:00",
+      "event": "2017 KHSAA State Championships"
+    },
     {
       "date": "2017-02-18",
       "opponent_id": "557596010",
@@ -68,22 +89,6 @@
       "event": "2017 KHSAA State Championships"
     },
     {
-      "date": "2017-02-18",
-      "opponent_id": "989390076",
-      "opponent_career_id": "career_012240",
-      "opponent_name": "Micheal Mattox",
-      "opponent_team": "Harrison County",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "TF",
-      "score": "19-4",
-      "duration": "0:00",
-      "event": "2017 KHSAA State Championships"
-    },
-    {
       "date": "2017-02-11",
       "opponent_id": "856514107",
       "opponent_career_id": "career_009645",
@@ -113,7 +118,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. North Bullitt"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2017-01-25",
@@ -133,6 +138,22 @@
     },
     {
       "date": "2017-01-21",
+      "opponent_id": "558466010",
+      "opponent_career_id": "career_010472",
+      "opponent_name": "Jake Lafever",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "MD",
+      "score": "17-6",
+      "duration": "7:00",
+      "event": "vs. Bullitt East"
+    },
+    {
+      "date": "2017-01-21",
       "opponent_id": "914725076",
       "opponent_career_id": "career_008716",
       "opponent_name": "Nicholas Ward",
@@ -146,22 +167,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Trinity (Whitesville)"
-    },
-    {
-      "date": "2017-01-21",
-      "opponent_id": "558466010",
-      "opponent_career_id": "career_010472",
-      "opponent_name": "Jake Lafever",
-      "opponent_team": "Bullitt East",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "MD",
-      "score": "17-6",
-      "duration": "7:00",
-      "event": "vs. North Bullitt"
     },
     {
       "date": "2017-01-21",
@@ -209,7 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:32",
-      "event": "vs. North Bullitt"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2017-01-04",
@@ -241,6 +246,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:30",
+      "event": "Valley Wrestling Tournament"
+    },
+    {
+      "date": "2016-12-30",
+      "opponent_id": "536787010",
+      "opponent_career_id": "career_010434",
+      "opponent_name": "Montrail Porter",
+      "opponent_team": "Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:00",
       "event": "Valley Wrestling Tournament"
     },
     {
@@ -379,15 +400,15 @@
       "season": 2014,
       "grade": null,
       "team": "North Bullitt",
-      "record": "14-12",
+      "record": "15-12",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 47,
+    "wins": 48,
     "losses": 33,
-    "win_pct": 0.588
+    "win_pct": 0.593
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "trinity_louisville",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "18-13",
+    "overall": "22-14",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -49,7 +54,7 @@
       "method": "MD",
       "score": "12-1",
       "duration": "7:00",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. St. Xavier"
     },
     {
       "date": "2013-01-26",
@@ -65,7 +70,7 @@
       "method": "SV-1",
       "score": "8-6",
       "duration": "8:15",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Henry Clay"
     },
     {
       "date": "2013-01-26",
@@ -81,7 +86,7 @@
       "method": "TF",
       "score": "25-9",
       "duration": "4:00",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Woodford County"
     },
     {
       "date": "2013-01-19",
@@ -145,7 +150,7 @@
       "method": "DEC",
       "score": "12-7",
       "duration": "7:00",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Jeffersontown"
     },
     {
       "date": "2013-01-12",
@@ -193,7 +198,7 @@
       "method": "DEC",
       "score": "10-4",
       "duration": "7:00",
-      "event": "Jefferson County tournament of Champions"
+      "event": "Jeff Co. Tournament of Champions"
     },
     {
       "date": "2013-01-05",
@@ -261,22 +266,6 @@
     },
     {
       "date": "2012-12-22",
-      "opponent_id": "1464200009",
-      "opponent_career_id": "career_015706",
-      "opponent_name": "Colin Roth",
-      "opponent_team": "Walton Verona",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "DEC",
-      "score": "6-5",
-      "duration": "7:00",
-      "event": "Lafayette Classic"
-    },
-    {
-      "date": "2012-12-22",
       "opponent_id": "1396589009",
       "opponent_career_id": "career_014054",
       "opponent_name": "Alex Mattingly",
@@ -290,6 +279,22 @@
       "score": "4-0",
       "duration": "7:00",
       "event": "Lafayette Invitational"
+    },
+    {
+      "date": "2012-12-22",
+      "opponent_id": "1464200009",
+      "opponent_career_id": "career_015706",
+      "opponent_name": "Colin Roth",
+      "opponent_team": "Walton Verona",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-5",
+      "duration": "7:00",
+      "event": "Lafayette Classic"
     },
     {
       "date": "2012-12-22",
@@ -549,22 +554,6 @@
     },
     {
       "date": "2012-12-01",
-      "opponent_id": "1449592009",
-      "opponent_career_id": "career_016597",
-      "opponent_name": "Amir Said",
-      "opponent_team": "Tates Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:30",
-      "event": "vs. Trinity (Louisville)"
-    },
-    {
-      "date": "2012-12-01",
       "opponent_id": "1264242009",
       "opponent_career_id": "career_014535",
       "opponent_name": "Derek Wiley",
@@ -577,7 +566,7 @@
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Conner"
     },
     {
       "date": "2012-12-01",
@@ -593,7 +582,7 @@
       "method": "DEC",
       "score": "6-2",
       "duration": "7:00",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Montgomery County"
     },
     {
       "date": "2012-12-01",
@@ -609,7 +598,23 @@
       "method": "DEC",
       "score": "6-5",
       "duration": "7:00",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. North Hardin"
+    },
+    {
+      "date": "2012-12-01",
+      "opponent_id": "1449592009",
+      "opponent_career_id": "career_016597",
+      "opponent_name": "Amir Said",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:30",
+      "event": "vs. Tates Creek"
     }
   ],
   "career": {
@@ -618,7 +623,8 @@
     "seasons": [
       2015,
       2014,
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -626,7 +632,7 @@
       "season": 2015,
       "grade": 12,
       "team": "Trinity (Louisville)",
-      "record": "35-15",
+      "record": "36-15",
       "regional_place": 2,
       "state_place": null
     },
@@ -634,7 +640,7 @@
       "season": 2014,
       "grade": null,
       "team": "Trinity (Louisville)",
-      "record": "28-15",
+      "record": "29-16",
       "regional_place": 3,
       "state_place": null
     },
@@ -642,15 +648,23 @@
       "season": 2013,
       "grade": null,
       "team": "Trinity (Louisville)",
-      "record": "18-13",
+      "record": "22-14",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 9,
+      "team": "Trinity (Louisville)",
+      "record": "1-2",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 81,
-    "losses": 43,
-    "win_pct": 0.653
+    "wins": 88,
+    "losses": 47,
+    "win_pct": 0.652
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

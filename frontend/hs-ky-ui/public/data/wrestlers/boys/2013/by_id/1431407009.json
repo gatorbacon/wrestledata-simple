@@ -5,10 +5,15 @@
   "team_slug": "simon_kenton",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "22-11",
+    "overall": "27-13",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.52,
-    "bonus_rate": 0.52,
+    "pin_rate": 0.542,
+    "bonus_rate": 0.542,
     "majors": 0,
     "techs": 0,
     "pins": 13
@@ -180,6 +185,22 @@
       "event": "KHSAA Region 6"
     },
     {
+      "date": "2013-02-09",
+      "opponent_id": "1464195009",
+      "opponent_career_id": "career_016636",
+      "opponent_name": "Wolfgang Davis",
+      "opponent_team": "Walton Verona",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "DEC",
+      "score": "3-1",
+      "duration": "7:00",
+      "event": "KHSAA Region 6"
+    },
+    {
       "date": "2013-01-26",
       "opponent_id": "1291477009",
       "opponent_career_id": "career_014842",
@@ -241,7 +262,7 @@
       "method": "DEC",
       "score": "8-1",
       "duration": "7:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Trinity (Louisville)"
     },
     {
       "date": "2013-01-19",
@@ -257,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:15",
-      "event": "South Oldham Dragon"
+      "event": "Dragon Invitational South Oldham"
     },
     {
       "date": "2013-01-19",
@@ -321,7 +342,7 @@
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Scott"
     },
     {
       "date": "2013-01-09",
@@ -337,7 +358,7 @@
       "method": "DEC",
       "score": "6-3",
       "duration": "7:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2013-01-05",
@@ -353,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Newport"
     },
     {
       "date": "2013-01-05",
@@ -449,7 +470,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "2012 NKAC Conference"
+      "event": "2012 NKAC"
     },
     {
       "date": "2012-12-22",
@@ -577,7 +598,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:24",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2012-12-01",
@@ -593,7 +614,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Nelson County"
     },
     {
       "date": "2012-12-01",
@@ -609,7 +630,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:09",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Oldham County"
     },
     {
       "date": "2012-12-01",
@@ -641,7 +662,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:03",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Ryle"
     },
     {
       "date": "2012-11-30",
@@ -664,7 +685,8 @@
     "career_id": "career_016075",
     "canonical_name": "David Bergman",
     "seasons": [
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -672,15 +694,23 @@
       "season": 2013,
       "grade": null,
       "team": "Simon Kenton",
-      "record": "22-11",
+      "record": "27-13",
       "regional_place": 3,
       "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 11,
+      "team": "Simon Kenton",
+      "record": "5-2",
+      "regional_place": null,
+      "state_place": 7
     }
   ],
   "career_record": {
-    "wins": 22,
-    "losses": 11,
-    "win_pct": 0.667
+    "wins": 32,
+    "losses": 15,
+    "win_pct": 0.681
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

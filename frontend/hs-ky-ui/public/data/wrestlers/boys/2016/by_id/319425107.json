@@ -5,6 +5,11 @@
   "team_slug": "henry_clay",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
@@ -197,6 +202,22 @@
     },
     {
       "date": "2016-01-16",
+      "opponent_id": "439043071",
+      "opponent_career_id": "career_013050",
+      "opponent_name": "Obadiah McCray",
+      "opponent_team": "East Jessamine",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:48",
+      "event": "vs. East Jessamine"
+    },
+    {
+      "date": "2016-01-16",
       "opponent_id": "8257917009",
       "opponent_career_id": "career_011462",
       "opponent_name": "Kevin Vazquez",
@@ -242,22 +263,6 @@
       "score": null,
       "duration": "1:56",
       "event": "vs. Tates Creek"
-    },
-    {
-      "date": "2016-01-16",
-      "opponent_id": "439043071",
-      "opponent_career_id": "career_013050",
-      "opponent_name": "Obadiah McCray",
-      "opponent_team": "East Jessamine",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:48",
-      "event": "vs. Henry Clay"
     },
     {
       "date": "2015-12-19",
@@ -341,22 +346,6 @@
     },
     {
       "date": "2015-12-12",
-      "opponent_id": "8257915009",
-      "opponent_career_id": "career_013103",
-      "opponent_name": "Angel Vasquez",
-      "opponent_team": "Lafayette",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "TF",
-      "score": "19-4",
-      "duration": "0:00",
-      "event": "Ryle Raider Rumble"
-    },
-    {
-      "date": "2015-12-12",
       "opponent_id": "8249148009",
       "opponent_career_id": "career_012189",
       "opponent_name": "Bryan Howell",
@@ -385,6 +374,22 @@
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
+      "event": "Ryle Raider Rumble"
+    },
+    {
+      "date": "2015-12-12",
+      "opponent_id": "8257915009",
+      "opponent_career_id": "career_013103",
+      "opponent_name": "Angel Vasquez",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "2:00",
       "event": "Ryle Raider Rumble"
     },
     {
@@ -449,7 +454,7 @@
       "method": "DEC",
       "score": "2-0",
       "duration": "7:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Conner"
     },
     {
       "date": "2015-12-05",
@@ -465,23 +470,7 @@
       "method": "TF",
       "score": "18-2",
       "duration": "0:00",
-      "event": "vs. Henry Clay"
-    },
-    {
-      "date": "2015-12-05",
-      "opponent_id": "425787071",
-      "opponent_career_id": "career_013319",
-      "opponent_name": "Dermot Cunningham",
-      "opponent_team": "Woodford County",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "DEC",
-      "score": "6-2",
-      "duration": "7:00",
-      "event": "vs. Woodford County"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2015-12-05",
@@ -498,6 +487,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Bardstown"
+    },
+    {
+      "date": "2015-12-05",
+      "opponent_id": "425787071",
+      "opponent_career_id": "career_013319",
+      "opponent_name": "Dermot Cunningham",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-2",
+      "duration": "7:00",
+      "event": "vs. Woodford County"
     }
   ],
   "career": {
@@ -549,5 +554,5 @@
     "losses": 36,
     "win_pct": 0.566
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

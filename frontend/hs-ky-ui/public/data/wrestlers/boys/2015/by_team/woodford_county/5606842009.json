@@ -5,10 +5,15 @@
   "team_slug": "woodford_county",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
-    "overall": "14-8",
+    "overall": "16-9",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.462,
-    "bonus_rate": 0.846,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.857,
     "majors": 4,
     "techs": 1,
-    "pins": 6
+    "pins": 7
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -101,22 +106,6 @@
     },
     {
       "date": "2014-12-30",
-      "opponent_id": "5861315009",
-      "opponent_career_id": "career_013948",
-      "opponent_name": "Cameron Bryant",
-      "opponent_team": "Eastern",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "DEC",
-      "score": "5-2",
-      "duration": "7:00",
-      "event": "Woodford County Invitational"
-    },
-    {
-      "date": "2014-12-30",
       "opponent_id": "24497071",
       "opponent_career_id": "career_013885",
       "opponent_name": "Alex Wright",
@@ -144,6 +133,22 @@
       "result": "W",
       "method": "DEC",
       "score": "3-0",
+      "duration": "7:00",
+      "event": "Woodford County Invitational"
+    },
+    {
+      "date": "2014-12-30",
+      "opponent_id": "5861315009",
+      "opponent_career_id": "career_013948",
+      "opponent_name": "Cameron Bryant",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-2",
       "duration": "7:00",
       "event": "Woodford County Invitational"
     },
@@ -277,22 +282,6 @@
     },
     {
       "date": "2014-12-06",
-      "opponent_id": "64736071",
-      "opponent_career_id": "career_013949",
-      "opponent_name": "Riley Hawes",
-      "opponent_team": "Eastern",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "DEC",
-      "score": "6-5",
-      "duration": "7:00",
-      "event": "vs. Eastern"
-    },
-    {
-      "date": "2014-12-06",
       "opponent_id": "32188010",
       "opponent_career_id": "career_012439",
       "opponent_name": "Johnny Lee",
@@ -303,9 +292,9 @@
       "weight_class": "157",
       "result": "W",
       "method": "TF",
-      "score": "16-1",
-      "duration": "0:00",
-      "event": "vs. Woodford County"
+      "score": "17-1",
+      "duration": "4:00",
+      "event": "vs. Meade County"
     },
     {
       "date": "2014-12-06",
@@ -321,7 +310,39 @@
       "method": "FALL",
       "score": null,
       "duration": "2:11",
-      "event": "vs. Woodford County"
+      "event": "vs. Spencer County"
+    },
+    {
+      "date": "2014-12-06",
+      "opponent_id": "10332011",
+      "opponent_career_id": "career_014753",
+      "opponent_name": "Bailey Hahn",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:49",
+      "event": "vs. Spencer County"
+    },
+    {
+      "date": "2014-12-06",
+      "opponent_id": "64736071",
+      "opponent_career_id": "career_013949",
+      "opponent_name": "Riley Hawes",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-5",
+      "duration": "7:00",
+      "event": "vs. Eastern"
     },
     {
       "date": "2014-12-06",
@@ -341,22 +362,6 @@
     },
     {
       "date": "2014-11-29",
-      "opponent_id": "9081076",
-      "opponent_career_id": "career_011593",
-      "opponent_name": "Garrett McElroy",
-      "opponent_team": "Walton Verona",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:15",
-      "event": "vs. Woodford County"
-    },
-    {
-      "date": "2014-11-29",
       "opponent_id": "73685071",
       "opponent_career_id": "career_014510",
       "opponent_name": "Trey Downtow",
@@ -369,7 +374,23 @@
       "method": "FALL",
       "score": null,
       "duration": "5:25",
-      "event": "vs. Woodford County"
+      "event": "vs. Campbell County"
+    },
+    {
+      "date": "2014-11-29",
+      "opponent_id": "9081076",
+      "opponent_career_id": "career_011593",
+      "opponent_name": "Garrett McElroy",
+      "opponent_team": "Walton Verona",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:15",
+      "event": "vs. Walton Verona"
     },
     {
       "date": "2014-11-29",
@@ -385,7 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:53",
-      "event": "vs. Woodford County"
+      "event": "vs. Whitley County"
     },
     {
       "date": "2014-11-29",
@@ -435,7 +456,7 @@
       "season": 2016,
       "grade": 12,
       "team": "Woodford County",
-      "record": "33-8",
+      "record": "32-8",
       "regional_place": 1,
       "state_place": 4
     },
@@ -443,7 +464,7 @@
       "season": 2015,
       "grade": 11,
       "team": "Woodford County",
-      "record": "14-8",
+      "record": "16-9",
       "regional_place": null,
       "state_place": null
     },
@@ -451,7 +472,7 @@
       "season": 2014,
       "grade": null,
       "team": "Woodford County",
-      "record": "19-12",
+      "record": "20-14",
       "regional_place": 3,
       "state_place": null
     },
@@ -459,15 +480,15 @@
       "season": 2013,
       "grade": null,
       "team": "Woodford County",
-      "record": "9-8",
+      "record": "12-7",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 75,
-    "losses": 36,
-    "win_pct": 0.676
+    "wins": 80,
+    "losses": 38,
+    "win_pct": 0.678
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

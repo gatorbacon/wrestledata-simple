@@ -5,10 +5,15 @@
   "team_slug": "south_oldham",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2017,
   "current_rank": null,
   "record": {
-    "overall": "34-17",
+    "overall": "34-16",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -35,6 +40,22 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2017-02-18",
+      "opponent_id": "989444076",
+      "opponent_career_id": "career_010569",
+      "opponent_name": "brent hudgins",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "DEC",
+      "score": "10-5",
+      "duration": "7:00",
+      "event": "2017 KHSAA State Championships"
+    },
     {
       "date": "2017-02-18",
       "opponent_id": "554083010",
@@ -65,22 +86,6 @@
       "method": "FALL",
       "score": null,
       "duration": "2:45",
-      "event": "2017 KHSAA State Championships"
-    },
-    {
-      "date": "2017-02-18",
-      "opponent_id": "989444076",
-      "opponent_career_id": "career_010569",
-      "opponent_name": "brent hudgins",
-      "opponent_team": "Harrison County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "DEC",
-      "score": "10-5",
-      "duration": "7:00",
       "event": "2017 KHSAA State Championships"
     },
     {
@@ -277,22 +282,6 @@
     },
     {
       "date": "2017-01-21",
-      "opponent_id": "847134107",
-      "opponent_career_id": "career_012153",
-      "opponent_name": "CJ Cardwell",
-      "opponent_team": "Woodford County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "DEC",
-      "score": "7-6",
-      "duration": "7:00",
-      "event": "Dragon Invitational @ South Oldham"
-    },
-    {
-      "date": "2017-01-21",
       "opponent_id": "559552013",
       "opponent_career_id": "career_010691",
       "opponent_name": "Layne Seibert",
@@ -304,6 +293,22 @@
       "result": "L",
       "method": "MD",
       "score": "8-0",
+      "duration": "7:00",
+      "event": "Dragon Invitational @ South Oldham"
+    },
+    {
+      "date": "2017-01-21",
+      "opponent_id": "847134107",
+      "opponent_career_id": "career_012153",
+      "opponent_name": "CJ Cardwell",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-6",
       "duration": "7:00",
       "event": "Dragon Invitational @ South Oldham"
     },
@@ -321,7 +326,7 @@
       "method": "DEC",
       "score": "8-3",
       "duration": "7:00",
-      "event": "vs. South Oldham"
+      "event": "vs. North Oldham"
     },
     {
       "date": "2017-01-14",
@@ -369,7 +374,7 @@
       "method": "MD",
       "score": "12-0",
       "duration": "7:00",
-      "event": "vs. South Oldham"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2017-01-11",
@@ -385,7 +390,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:25",
-      "event": "vs. South Oldham"
+      "event": "vs. Male"
     },
     {
       "date": "2017-01-11",
@@ -481,7 +486,7 @@
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "Toyota of Hopkinsville Christian County Invitational"
+      "event": "Christain County Invitational"
     },
     {
       "date": "2016-12-30",
@@ -517,22 +522,6 @@
     },
     {
       "date": "2016-12-23",
-      "opponent_id": "9739200009",
-      "opponent_career_id": "career_012932",
-      "opponent_name": "Keonndre Sides-Johnson",
-      "opponent_team": "Trinity (Louisville)",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:45",
-      "event": "Fern Creek Gladiator Tournament"
-    },
-    {
-      "date": "2016-12-23",
       "opponent_id": "537491013",
       "opponent_career_id": "career_010602",
       "opponent_name": "GENTRY DECK",
@@ -545,22 +534,6 @@
       "method": "FALL",
       "score": null,
       "duration": "3:54",
-      "event": "Fern Creek Gladiator Tournament"
-    },
-    {
-      "date": "2016-12-23",
-      "opponent_id": "951417076",
-      "opponent_career_id": "career_012134",
-      "opponent_name": "Francisco Banales",
-      "opponent_team": "Valley",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:29",
       "event": "Fern Creek Gladiator Tournament"
     },
     {
@@ -580,20 +553,36 @@
       "event": "Fern Creek Gladiator Tournament"
     },
     {
-      "date": "2016-12-22",
-      "opponent_id": "562050013",
-      "opponent_career_id": null,
-      "opponent_name": "Evan Overton",
-      "opponent_team": "Boonville",
+      "date": "2016-12-23",
+      "opponent_id": "9739200009",
+      "opponent_career_id": "career_012932",
+      "opponent_name": "Keonndre Sides-Johnson",
+      "opponent_team": "Trinity (Louisville)",
       "opponent_team_rank": null,
       "opponent_weight": 120,
       "opponent_rank": null,
       "weight_class": "126",
       "result": "W",
-      "method": "MD",
-      "score": "14-0",
-      "duration": "7:00",
-      "event": "vs. Boonville"
+      "method": "FALL",
+      "score": null,
+      "duration": "3:45",
+      "event": "Fern Creek Gladiator Tournament"
+    },
+    {
+      "date": "2016-12-23",
+      "opponent_id": "951417076",
+      "opponent_career_id": "career_012134",
+      "opponent_name": "Francisco Banales",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:29",
+      "event": "Fern Creek Gladiator Tournament"
     },
     {
       "date": "2016-12-22",
@@ -609,7 +598,39 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. South Oldham"
+      "event": "vs. Boyle County"
+    },
+    {
+      "date": "2016-12-22",
+      "opponent_id": "9785713009",
+      "opponent_career_id": "career_012230",
+      "opponent_name": "Leondre Duncan",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "MD",
+      "score": "18-4",
+      "duration": "7:00",
+      "event": "vs. Fern Creek"
+    },
+    {
+      "date": "2016-12-22",
+      "opponent_id": "562050013",
+      "opponent_career_id": null,
+      "opponent_name": "Evan Overton",
+      "opponent_team": "Boonville",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "MD",
+      "score": "14-0",
+      "duration": "7:00",
+      "event": "vs. Boonville"
     },
     {
       "date": "2016-12-22",
@@ -628,20 +649,20 @@
       "event": "vs. Taylor County"
     },
     {
-      "date": "2016-12-22",
-      "opponent_id": "9785713009",
-      "opponent_career_id": "career_012230",
-      "opponent_name": "Leondre Duncan",
-      "opponent_team": "Fern Creek",
+      "date": "2016-12-17",
+      "opponent_id": "540443013",
+      "opponent_career_id": "career_010463",
+      "opponent_name": "Clay Karsner",
+      "opponent_team": "Boyle County",
       "opponent_team_rank": null,
-      "opponent_weight": 132,
+      "opponent_weight": 126,
       "opponent_rank": null,
-      "weight_class": "132",
+      "weight_class": "126",
       "result": "W",
-      "method": "MD",
-      "score": "18-4",
-      "duration": "7:00",
-      "event": "vs. South Oldham"
+      "method": "TF",
+      "score": "15-0",
+      "duration": "0:00",
+      "event": "Lafayatte Five Star Classic 2016"
     },
     {
       "date": "2016-12-17",
@@ -656,22 +677,6 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "Lafayatte Five Star Classic 2016"
-    },
-    {
-      "date": "2016-12-17",
-      "opponent_id": "540443013",
-      "opponent_career_id": "career_010463",
-      "opponent_name": "Clay Karsner",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "TF",
-      "score": "15-0",
       "duration": "0:00",
       "event": "Lafayatte Five Star Classic 2016"
     },
@@ -725,22 +730,6 @@
     },
     {
       "date": "2016-12-10",
-      "opponent_id": "847131107",
-      "opponent_career_id": "career_009429",
-      "opponent_name": "Chase Yost",
-      "opponent_team": "Woodford County",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "DEC",
-      "score": "8-3",
-      "duration": "7:00",
-      "event": "2016 Ryle Raider Rumble"
-    },
-    {
-      "date": "2016-12-10",
       "opponent_id": "9777533009",
       "opponent_career_id": "career_009694",
       "opponent_name": "Trevor Pogue",
@@ -752,6 +741,22 @@
       "result": "L",
       "method": "DEC",
       "score": "3-0",
+      "duration": "7:00",
+      "event": "2016 Ryle Raider Rumble"
+    },
+    {
+      "date": "2016-12-10",
+      "opponent_id": "847131107",
+      "opponent_career_id": "career_009429",
+      "opponent_name": "Chase Yost",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "DEC",
+      "score": "10-5",
       "duration": "7:00",
       "event": "2016 Ryle Raider Rumble"
     },
@@ -769,7 +774,7 @@
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "vs. South Oldham"
+      "event": "vs. Meade County"
     },
     {
       "date": "2016-12-03",
@@ -785,7 +790,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:34",
-      "event": "vs. South Oldham"
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2016-12-03",
@@ -850,7 +855,7 @@
       "season": 2017,
       "grade": 11,
       "team": "South Oldham",
-      "record": "34-17",
+      "record": "34-16",
       "regional_place": 3,
       "state_place": null
     },
@@ -858,7 +863,7 @@
       "season": 2016,
       "grade": 10,
       "team": "South Oldham",
-      "record": "27-16",
+      "record": "27-15",
       "regional_place": 3,
       "state_place": null
     },
@@ -866,15 +871,15 @@
       "season": 2015,
       "grade": 9,
       "team": "South Oldham",
-      "record": "18-24",
+      "record": "19-23",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 79,
-    "losses": 57,
-    "win_pct": 0.581
+    "wins": 80,
+    "losses": 54,
+    "win_pct": 0.597
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

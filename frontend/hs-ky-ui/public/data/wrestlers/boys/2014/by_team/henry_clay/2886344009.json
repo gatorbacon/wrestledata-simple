@@ -5,10 +5,15 @@
   "team_slug": "henry_clay",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "8-12",
+    "overall": "13-15",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -165,6 +170,22 @@
     },
     {
       "date": "2014-02-01",
+      "opponent_id": "2886172009",
+      "opponent_career_id": "career_012231",
+      "opponent_name": "Jared Branch",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "MD",
+      "score": "15-2",
+      "duration": "7:00",
+      "event": "vs. Fern Creek"
+    },
+    {
+      "date": "2014-02-01",
       "opponent_id": "2886770009",
       "opponent_career_id": "career_015496",
       "opponent_name": "Eli Medfford",
@@ -178,22 +199,6 @@
       "score": null,
       "duration": "3:01",
       "event": "vs. Meade County"
-    },
-    {
-      "date": "2014-02-01",
-      "opponent_id": "2886172009",
-      "opponent_career_id": "career_012231",
-      "opponent_name": "Jared Branch",
-      "opponent_team": "Fern Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "MD",
-      "score": "15-2",
-      "duration": "7:00",
-      "event": "vs. Henry Clay"
     },
     {
       "date": "2014-02-01",
@@ -225,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:08",
-      "event": "vs. Henry Clay"
+      "event": "vs. Woodford County"
     },
     {
       "date": "2014-01-18",
@@ -257,7 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:24",
-      "event": "vs. Henry Clay"
+      "event": "vs. Tates Creek"
     },
     {
       "date": "2014-01-18",
@@ -273,23 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:30",
-      "event": "vs. Henry Clay"
-    },
-    {
-      "date": "2014-01-04",
-      "opponent_id": "2887279009",
-      "opponent_career_id": "career_013185",
-      "opponent_name": "logan glass",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:06",
-      "event": "vs. Henry Clay"
+      "event": "vs. Woodford County"
     },
     {
       "date": "2014-01-04",
@@ -305,7 +294,7 @@
       "method": "DEC",
       "score": "10-4",
       "duration": "7:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Central"
     },
     {
       "date": "2014-01-04",
@@ -321,7 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:52",
-      "event": "vs. Henry Clay"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2014-01-04",
@@ -353,23 +342,23 @@
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Lafayette"
     },
     {
-      "date": "2013-12-28",
-      "opponent_id": "2885859009",
-      "opponent_career_id": "career_013014",
-      "opponent_name": "Aaron Chandler",
-      "opponent_team": "Central Hardin",
+      "date": "2014-01-04",
+      "opponent_id": "2887279009",
+      "opponent_career_id": "career_013185",
+      "opponent_name": "logan glass",
+      "opponent_team": "Simon Kenton",
       "opponent_team_rank": null,
-      "opponent_weight": 144,
+      "opponent_weight": 138,
       "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
+      "weight_class": "144",
+      "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "Woodford County Invitational Tournament"
+      "duration": "1:06",
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2013-12-28",
@@ -385,7 +374,23 @@
       "method": "DEC",
       "score": "6-1",
       "duration": "7:00",
-      "event": "Woodford County Invitational Tournament"
+      "event": "Woodford County Invitational"
+    },
+    {
+      "date": "2013-12-28",
+      "opponent_id": "2885859009",
+      "opponent_career_id": "career_013014",
+      "opponent_name": "Aaron Chandler",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "Woodford County Invitational"
     },
     {
       "date": "2013-12-21",
@@ -437,22 +442,6 @@
     },
     {
       "date": "2013-12-14",
-      "opponent_id": "2887150009",
-      "opponent_career_id": "career_014074",
-      "opponent_name": "Jack Dorne",
-      "opponent_team": "Ryle",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "DEC",
-      "score": "1-0",
-      "duration": "7:00",
-      "event": "Raider Rumble"
-    },
-    {
-      "date": "2013-12-14",
       "opponent_id": "2887201009",
       "opponent_career_id": "career_014082",
       "opponent_name": "Eli Sowder",
@@ -482,6 +471,22 @@
       "score": "11-1",
       "duration": "7:00",
       "event": "Raider Rumble"
+    },
+    {
+      "date": "2013-12-14",
+      "opponent_id": "2887150009",
+      "opponent_career_id": "career_014074",
+      "opponent_name": "Jack Dorne",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "DEC",
+      "score": "1-0",
+      "duration": "7:00",
+      "event": "Raider Rumble"
     }
   ],
   "career": {
@@ -506,7 +511,7 @@
       "season": 2014,
       "grade": null,
       "team": "Henry Clay",
-      "record": "8-12",
+      "record": "13-15",
       "regional_place": null,
       "state_place": null
     },
@@ -514,15 +519,15 @@
       "season": 2013,
       "grade": null,
       "team": "Henry Clay",
-      "record": "14-14",
+      "record": "19-19",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 44,
-    "losses": 48,
-    "win_pct": 0.478
+    "wins": 54,
+    "losses": 56,
+    "win_pct": 0.491
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

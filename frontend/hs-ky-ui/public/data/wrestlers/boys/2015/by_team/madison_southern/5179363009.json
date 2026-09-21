@@ -5,6 +5,11 @@
   "team_slug": "madison_southern",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.917,
-    "bonus_rate": 0.917,
+    "pin_rate": 0.929,
+    "bonus_rate": 0.929,
     "majors": 0,
     "techs": 0,
-    "pins": 11
+    "pins": 13
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -85,10 +90,42 @@
     },
     {
       "date": "2015-02-14",
+      "opponent_id": "55915076",
+      "opponent_career_id": "career_014375",
+      "opponent_name": "Dylan Mayes",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "KHSAA Region 7"
+    },
+    {
+      "date": "2015-02-14",
       "opponent_id": "83313076",
       "opponent_career_id": "career_014796",
       "opponent_name": "Chase Preat",
       "opponent_team": "Wayne County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "KHSAA Region 7"
+    },
+    {
+      "date": "2015-02-14",
+      "opponent_id": "63799076",
+      "opponent_career_id": "career_012916",
+      "opponent_name": "Barkley Truax",
+      "opponent_team": "Tates Creek",
       "opponent_team_rank": null,
       "opponent_weight": 165,
       "opponent_rank": null,
@@ -165,22 +202,6 @@
     },
     {
       "date": "2015-01-16",
-      "opponent_id": "63559076",
-      "opponent_career_id": "career_014172",
-      "opponent_name": "Adam Craven",
-      "opponent_team": "Tates Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "MD",
-      "score": "8-0",
-      "duration": "7:00",
-      "event": "vs. Tates Creek"
-    },
-    {
-      "date": "2015-01-16",
       "opponent_id": "5400421009",
       "opponent_career_id": "career_013078",
       "opponent_name": "Lucas Soard",
@@ -193,7 +214,7 @@
       "method": "DEC",
       "score": "10-3",
       "duration": "7:00",
-      "event": "vs. Madison Southern"
+      "event": "vs. Henry Clay"
     },
     {
       "date": "2015-01-16",
@@ -210,6 +231,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Paul Dunbar"
+    },
+    {
+      "date": "2015-01-16",
+      "opponent_id": "63559076",
+      "opponent_career_id": "career_014172",
+      "opponent_name": "Adam Craven",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "MD",
+      "score": "8-0",
+      "duration": "7:00",
+      "event": "vs. Tates Creek"
     },
     {
       "date": "2015-01-16",
@@ -417,7 +454,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:10",
-      "event": "vs. Madison Southern"
+      "event": "vs. Madison Central"
     },
     {
       "date": "2014-12-10",
@@ -437,18 +474,18 @@
     },
     {
       "date": "2014-12-06",
-      "opponent_id": "72565076",
-      "opponent_career_id": "career_014193",
-      "opponent_name": "Mark Taylor",
-      "opponent_team": "Harrison County",
+      "opponent_id": "5827879009",
+      "opponent_career_id": "career_014585",
+      "opponent_name": "Robert Spohn",
+      "opponent_team": "Grant County",
       "opponent_team_rank": null,
-      "opponent_weight": 157,
+      "opponent_weight": 165,
       "opponent_rank": null,
       "weight_class": "165",
-      "result": "L",
+      "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:37",
+      "duration": "0:15",
       "event": "Rumble on the Hilltop"
     },
     {
@@ -464,7 +501,23 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:15",
+      "duration": "0:20",
+      "event": "Rumble on the Hilltop"
+    },
+    {
+      "date": "2014-12-06",
+      "opponent_id": "72565076",
+      "opponent_career_id": "career_014193",
+      "opponent_name": "Mark Taylor",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:37",
       "event": "Rumble on the Hilltop"
     },
     {
@@ -616,7 +669,7 @@
       "opponent_id": "OUTSTATE_25f7f05c4111",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
-      "opponent_team": "all star",
+      "opponent_team": "ALL STAR",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -642,7 +695,7 @@
       "season": 2017,
       "grade": 12,
       "team": "Madison Southern",
-      "record": "32-10",
+      "record": "33-12",
       "regional_place": 3,
       "state_place": null
     },
@@ -658,15 +711,15 @@
       "season": 2014,
       "grade": null,
       "team": "Madison Southern",
-      "record": "8-10",
+      "record": "9-13",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 62,
-    "losses": 38,
-    "win_pct": 0.62
+    "wins": 64,
+    "losses": 43,
+    "win_pct": 0.598
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

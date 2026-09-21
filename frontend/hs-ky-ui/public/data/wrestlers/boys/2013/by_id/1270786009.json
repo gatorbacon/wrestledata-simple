@@ -5,10 +5,15 @@
   "team_slug": "danville",
   "team_rank": null,
   "weight_class": 215,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "4-14",
+    "overall": "4-21",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -49,7 +54,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:52",
-      "event": "Regionals"
+      "event": "KHSAA Region 2"
     },
     {
       "date": "2013-02-09",
@@ -101,38 +106,6 @@
     },
     {
       "date": "2013-01-26",
-      "opponent_id": "1369120009",
-      "opponent_career_id": "career_014300",
-      "opponent_name": "Christian Bowling",
-      "opponent_team": "Montgomery County",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Danville"
-    },
-    {
-      "date": "2013-01-26",
-      "opponent_id": "1312648009",
-      "opponent_career_id": "career_013073",
-      "opponent_name": "Kellon Williams",
-      "opponent_team": "Harrison County",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "INJ",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Danville"
-    },
-    {
-      "date": "2013-01-26",
       "opponent_id": "OUTSTATE_2f528488265f",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -148,6 +121,38 @@
       "event": "vs. Boyle County"
     },
     {
+      "date": "2013-01-26",
+      "opponent_id": "1312648009",
+      "opponent_career_id": "career_013073",
+      "opponent_name": "Kellon Williams",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "INJ",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Harrison County"
+    },
+    {
+      "date": "2013-01-26",
+      "opponent_id": "1369120009",
+      "opponent_career_id": "career_014300",
+      "opponent_name": "Christian Bowling",
+      "opponent_team": "Montgomery County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Montgomery County"
+    },
+    {
       "date": "2013-01-23",
       "opponent_id": "1236388009",
       "opponent_career_id": "career_015249",
@@ -161,23 +166,7 @@
       "method": "DEC",
       "score": "7-1",
       "duration": "7:00",
-      "event": "vs. Danville"
-    },
-    {
-      "date": "2012-12-22",
-      "opponent_id": "1314722009",
-      "opponent_career_id": "career_015053",
-      "opponent_name": "Nathan Moore",
-      "opponent_team": "Henry Clay",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:55",
-      "event": "Lafayette"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2012-12-22",
@@ -193,6 +182,22 @@
       "method": "FALL",
       "score": null,
       "duration": "3:20",
+      "event": "Lafayette"
+    },
+    {
+      "date": "2012-12-22",
+      "opponent_id": "1314722009",
+      "opponent_career_id": "career_015053",
+      "opponent_name": "Nathan Moore",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:55",
       "event": "Lafayette"
     },
     {
@@ -273,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:45",
-      "event": "vs. Danville"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2012-12-12",
@@ -309,6 +314,22 @@
     },
     {
       "date": "2012-12-08",
+      "opponent_id": "1225044009",
+      "opponent_career_id": "career_015871",
+      "opponent_name": "Chris Barnes",
+      "opponent_team": "Barren County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "vs. Barren County"
+    },
+    {
+      "date": "2012-12-08",
       "opponent_id": "1296575009",
       "opponent_career_id": "career_016324",
       "opponent_name": "Darius Bucerzan",
@@ -322,22 +343,6 @@
       "score": null,
       "duration": "0:29",
       "event": "vs. Franklin County"
-    },
-    {
-      "date": "2012-12-08",
-      "opponent_id": "1225044009",
-      "opponent_career_id": "career_015871",
-      "opponent_name": "Chris Barnes",
-      "opponent_team": "Barren County",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:00",
-      "event": "vs. Danville"
     },
     {
       "date": "2012-12-08",
@@ -401,23 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:25",
-      "event": "vs. Danville"
-    },
-    {
-      "date": "2012-12-01",
-      "opponent_id": "1426191009",
-      "opponent_career_id": "career_016540",
-      "opponent_name": "Aaron Cortez",
-      "opponent_team": "Scott County",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:34",
-      "event": "vs. Danville"
+      "event": "vs. Barren County"
     },
     {
       "date": "2012-12-01",
@@ -434,6 +423,22 @@
       "score": null,
       "duration": "3:03",
       "event": "vs. Whitley County"
+    },
+    {
+      "date": "2012-12-01",
+      "opponent_id": "1426191009",
+      "opponent_career_id": "career_016540",
+      "opponent_name": "Aaron Cortez",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:34",
+      "event": "vs. Scott County"
     }
   ],
   "career": {
@@ -448,15 +453,15 @@
       "season": 2013,
       "grade": null,
       "team": "Danville",
-      "record": "4-14",
+      "record": "4-21",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 4,
-    "losses": 14,
-    "win_pct": 0.222
+    "losses": 21,
+    "win_pct": 0.16
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

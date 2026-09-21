@@ -5,10 +5,15 @@
   "team_slug": "moore",
   "team_rank": null,
   "weight_class": 157,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2018,
   "current_rank": null,
   "record": {
-    "overall": "14-6",
+    "overall": "17-7",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.727,
-    "bonus_rate": 0.818,
-    "majors": 1,
+    "pin_rate": 0.733,
+    "bonus_rate": 0.867,
+    "majors": 2,
     "techs": 0,
-    "pins": 8
+    "pins": 11
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -53,6 +58,22 @@
     },
     {
       "date": "2018-02-03",
+      "opponent_id": "190050132",
+      "opponent_career_id": "career_011088",
+      "opponent_name": "Thomas Cheatham",
+      "opponent_team": "Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:10",
+      "event": "Kentucky JV State Tournament @ Union County"
+    },
+    {
+      "date": "2018-02-03",
       "opponent_id": "11523887009",
       "opponent_career_id": "career_009498",
       "opponent_name": "Carter Riley",
@@ -65,6 +86,38 @@
       "method": "FALL",
       "score": null,
       "duration": "2:18",
+      "event": "Kentucky JV State Tournament @ Union County"
+    },
+    {
+      "date": "2018-02-03",
+      "opponent_id": "11523887009",
+      "opponent_career_id": "career_009498",
+      "opponent_name": "Carter Riley",
+      "opponent_team": "Desales",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:30",
+      "event": "Kentucky JV State Tournament @ Union County"
+    },
+    {
+      "date": "2018-02-03",
+      "opponent_id": "11446478009",
+      "opponent_career_id": "career_010529",
+      "opponent_name": "Connor Ridenour",
+      "opponent_team": "Dupont Manual",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:17",
       "event": "Kentucky JV State Tournament @ Union County"
     },
     {
@@ -116,6 +169,22 @@
       "event": "Kentucky JV State Tournament @ Union County"
     },
     {
+      "date": "2018-02-03",
+      "opponent_id": "21984132",
+      "opponent_career_id": "career_011450",
+      "opponent_name": "Paul Kotarski",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "MD",
+      "score": "13-2",
+      "duration": "7:00",
+      "event": "Kentucky JV State Tournament @ Union County"
+    },
+    {
       "date": "2018-01-30",
       "opponent_id": "-1",
       "opponent_career_id": null,
@@ -129,6 +198,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:53",
+      "event": "Region 4 JV Tournament"
+    },
+    {
+      "date": "2018-01-30",
+      "opponent_id": "-1",
+      "opponent_career_id": null,
+      "opponent_name": "Malik Branson",
+      "opponent_team": "Pickerington Central (Ohio)",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:19",
       "event": "Region 4 JV Tournament"
     },
     {
@@ -293,6 +378,22 @@
     },
     {
       "date": "2017-12-02",
+      "opponent_id": "OUTSTATE_f7a759a6e967",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Valley"
+    },
+    {
+      "date": "2017-12-02",
       "opponent_id": "OUTSTATE_069643f0f683",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -322,22 +423,6 @@
       "score": "8-1",
       "duration": "7:00",
       "event": "vs. St. Xavier"
-    },
-    {
-      "date": "2017-12-02",
-      "opponent_id": "OUTSTATE_f7a759a6e967",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Valley",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Valley"
     }
   ],
   "career": {
@@ -354,7 +439,7 @@
       "season": 2020,
       "grade": 12,
       "team": "Moore",
-      "record": "38-9",
+      "record": "41-11",
       "regional_place": 1,
       "state_place": 5
     },
@@ -362,7 +447,7 @@
       "season": 2019,
       "grade": 11,
       "team": "Moore",
-      "record": "17-14",
+      "record": "19-15",
       "regional_place": null,
       "state_place": null
     },
@@ -370,15 +455,15 @@
       "season": 2018,
       "grade": 10,
       "team": "Moore",
-      "record": "14-6",
+      "record": "17-7",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 69,
-    "losses": 29,
-    "win_pct": 0.704
+    "wins": 77,
+    "losses": 33,
+    "win_pct": 0.7
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

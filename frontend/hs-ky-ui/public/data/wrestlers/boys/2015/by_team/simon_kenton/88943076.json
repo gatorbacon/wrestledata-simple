@@ -5,10 +5,15 @@
   "team_slug": "simon_kenton",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
-    "overall": "8-1",
+    "overall": "9-1",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.571,
+    "pin_rate": 0.625,
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 2,
-    "pins": 4
+    "pins": 5
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -101,22 +106,6 @@
     },
     {
       "date": "2014-12-06",
-      "opponent_id": "32187010",
-      "opponent_career_id": "career_013255",
-      "opponent_name": "Alex Lee",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "TF",
-      "score": "16-1",
-      "duration": "0:00",
-      "event": "vs. Simon Kenton"
-    },
-    {
-      "date": "2014-12-06",
       "opponent_id": "7687071",
       "opponent_career_id": "career_013453",
       "opponent_name": "Wesley White",
@@ -129,7 +118,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:39",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Male"
+    },
+    {
+      "date": "2014-12-06",
+      "opponent_id": "32187010",
+      "opponent_career_id": "career_013255",
+      "opponent_name": "Alex Lee",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "0:00",
+      "event": "vs. Meade County"
     },
     {
       "date": "2014-12-06",
@@ -176,6 +181,22 @@
       "result": "W",
       "method": "FALL",
       "score": null,
+      "duration": "0:46",
+      "event": "vs. South Oldham"
+    },
+    {
+      "date": "2014-12-06",
+      "opponent_id": "4075011",
+      "opponent_career_id": "career_011554",
+      "opponent_name": "Alex Thompson",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
       "duration": "1:15",
       "event": "vs. South Oldham"
     }
@@ -186,7 +207,8 @@
     "seasons": [
       2015,
       2014,
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -194,7 +216,7 @@
       "season": 2015,
       "grade": 12,
       "team": "Simon Kenton",
-      "record": "8-1",
+      "record": "9-1",
       "regional_place": null,
       "state_place": null
     },
@@ -202,7 +224,7 @@
       "season": 2014,
       "grade": null,
       "team": "Simon Kenton",
-      "record": "39-7",
+      "record": "52-7",
       "regional_place": 1,
       "state_place": 5
     },
@@ -210,15 +232,23 @@
       "season": 2013,
       "grade": null,
       "team": "Simon Kenton",
-      "record": "19-10",
+      "record": "21-13",
       "regional_place": 4,
       "state_place": 6
+    },
+    {
+      "season": 2012,
+      "grade": 9,
+      "team": "Simon Kenton",
+      "record": "4-2",
+      "regional_place": null,
+      "state_place": 4
     }
   ],
   "career_record": {
-    "wins": 66,
-    "losses": 18,
-    "win_pct": 0.786
+    "wins": 86,
+    "losses": 23,
+    "win_pct": 0.789
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

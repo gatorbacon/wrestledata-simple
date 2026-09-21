@@ -5,10 +5,15 @@
   "team_slug": "north_oldham",
   "team_rank": null,
   "weight_class": 106,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
-    "overall": "49-19",
+    "overall": "47-18",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -128,7 +133,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "4:17",
       "event": "KHSAA Region 5"
     },
     {
@@ -225,7 +230,7 @@
       "method": "DEC",
       "score": "13-8",
       "duration": "7:00",
-      "event": "vs. North Oldham"
+      "event": "vs. Calloway County"
     },
     {
       "date": "2015-01-31",
@@ -241,7 +246,7 @@
       "method": "TF",
       "score": "17-2",
       "duration": "4:00",
-      "event": "vs. North Oldham"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2015-01-31",
@@ -257,7 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:11",
-      "event": "vs. North Oldham"
+      "event": "vs. Moore"
     },
     {
       "date": "2015-01-31",
@@ -357,6 +362,22 @@
     },
     {
       "date": "2015-01-21",
+      "opponent_id": "7672071",
+      "opponent_career_id": "career_014634",
+      "opponent_name": "Jake Steppe",
+      "opponent_team": "Male",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:00",
+      "event": "vs. Male"
+    },
+    {
+      "date": "2015-01-21",
       "opponent_id": "OUTSTATE_a2fc6114ae97",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -372,55 +393,7 @@
       "event": "vs. Western"
     },
     {
-      "date": "2015-01-21",
-      "opponent_id": "7672071",
-      "opponent_career_id": "career_014634",
-      "opponent_name": "Jake Steppe",
-      "opponent_team": "Male",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:00",
-      "event": "vs. North Oldham"
-    },
-    {
       "date": "2015-01-17",
-      "opponent_id": "179956071",
-      "opponent_career_id": "career_012239",
-      "opponent_name": "Zach Manns",
-      "opponent_team": "Franklin County",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "DEC",
-      "score": "7-2",
-      "duration": "7:00",
-      "event": "vs. North Oldham"
-    },
-    {
-      "date": "2015-01-16",
-      "opponent_id": "OUTSTATE_4d278a4129b0",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Waggener",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Waggener"
-    },
-    {
-      "date": "2015-01-16",
       "opponent_id": "179956071",
       "opponent_career_id": "career_012239",
       "opponent_name": "Zach Manns",
@@ -449,7 +422,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:50",
-      "event": "vs. North Oldham"
+      "event": "vs. Moore"
+    },
+    {
+      "date": "2015-01-16",
+      "opponent_id": "OUTSTATE_4d278a4129b0",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Waggener",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Waggener"
     },
     {
       "date": "2015-01-16",
@@ -468,6 +457,22 @@
       "event": "vs. Western Hills"
     },
     {
+      "date": "2015-01-16",
+      "opponent_id": "179956071",
+      "opponent_career_id": "career_012239",
+      "opponent_name": "Zach Manns",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "DEC",
+      "score": "7-2",
+      "duration": "7:00",
+      "event": "vs. Franklin County"
+    },
+    {
       "date": "2015-01-14",
       "opponent_id": "2247013",
       "opponent_career_id": "career_014324",
@@ -481,7 +486,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:48",
-      "event": "vs. North Oldham"
+      "event": "vs. Bullitt Central"
     },
     {
       "date": "2015-01-14",
@@ -576,8 +581,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "1:30",
-      "event": "Central Invitational"
+      "duration": "0:30",
+      "event": "Valley Main Event"
     },
     {
       "date": "2015-01-03",
@@ -705,7 +710,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:44",
-      "event": "vs. North Oldham"
+      "event": "vs. Doss"
     },
     {
       "date": "2014-12-20",
@@ -722,22 +727,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Fort Knox"
-    },
-    {
-      "date": "2014-12-20",
-      "opponent_id": "16141010",
-      "opponent_career_id": null,
-      "opponent_name": "Bailey Parker",
-      "opponent_team": "Atherton",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "DEC",
-      "score": "4-2",
-      "duration": "7:00",
-      "event": "vs. Atherton"
     },
     {
       "date": "2014-12-20",
@@ -772,6 +761,22 @@
       "event": "vs. Pleasure Ridge Park"
     },
     {
+      "date": "2014-12-20",
+      "opponent_id": "16141010",
+      "opponent_career_id": null,
+      "opponent_name": "Bailey Parker",
+      "opponent_team": "Atherton",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "vs. Atherton"
+    },
+    {
       "date": "2014-12-13",
       "opponent_id": "73699071",
       "opponent_career_id": "career_014505",
@@ -785,7 +790,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:46",
-      "event": "vs. North Oldham"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2014-12-13",
@@ -801,23 +806,7 @@
       "method": "TF",
       "score": "18-3",
       "duration": "5:23",
-      "event": "vs. North Oldham"
-    },
-    {
-      "date": "2014-12-13",
-      "opponent_id": "78098076",
-      "opponent_career_id": "career_012960",
-      "opponent_name": "Jaydon Garr",
-      "opponent_team": "Western Hills",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:11",
-      "event": "vs. Western Hills"
+      "event": "vs. Dixie Heights"
     },
     {
       "date": "2014-12-13",
@@ -833,7 +822,7 @@
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
-      "event": "vs. North Oldham"
+      "event": "vs. Madison Central"
     },
     {
       "date": "2014-12-13",
@@ -852,6 +841,22 @@
       "event": "vs. Mccreary Central"
     },
     {
+      "date": "2014-12-13",
+      "opponent_id": "78098076",
+      "opponent_career_id": "career_012960",
+      "opponent_name": "Jaydon Garr",
+      "opponent_team": "Western Hills",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:11",
+      "event": "vs. Western Hills"
+    },
+    {
       "date": "2014-12-10",
       "opponent_id": "26250076",
       "opponent_career_id": "career_014477",
@@ -865,7 +870,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:53",
-      "event": "vs. North Oldham"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2014-12-10",
@@ -913,7 +918,7 @@
       "method": "TF",
       "score": "17-2",
       "duration": "2:24",
-      "event": "vs. North Oldham"
+      "event": "vs. Apollo"
     },
     {
       "date": "2014-12-06",
@@ -929,7 +934,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:18",
-      "event": "vs. North Oldham"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2014-12-06",
@@ -945,7 +950,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:12",
-      "event": "vs. North Oldham"
+      "event": "vs. Male"
     },
     {
       "date": "2014-12-06",
@@ -993,7 +998,7 @@
       "method": "DEC",
       "score": "6-3",
       "duration": "7:00",
-      "event": "vs. North Oldham"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2014-11-29",
@@ -1009,7 +1014,39 @@
       "method": "SV-1",
       "score": "5-4",
       "duration": "8:15",
-      "event": "vs. North Oldham"
+      "event": "vs. Franklin County"
+    },
+    {
+      "date": "2014-11-29",
+      "opponent_id": "7672071",
+      "opponent_career_id": "career_014634",
+      "opponent_name": "Jake Steppe",
+      "opponent_team": "Male",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:02",
+      "event": "vs. Male"
+    },
+    {
+      "date": "2014-11-29",
+      "opponent_id": "34071011",
+      "opponent_career_id": "career_011569",
+      "opponent_name": "Kevin Ensor",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:08",
+      "event": "vs. Tates Creek"
     },
     {
       "date": "2014-11-29",
@@ -1042,38 +1079,6 @@
       "score": "13-1",
       "duration": "7:00",
       "event": "vs. Evansville central"
-    },
-    {
-      "date": "2014-11-29",
-      "opponent_id": "7672071",
-      "opponent_career_id": "career_014634",
-      "opponent_name": "Jake Steppe",
-      "opponent_team": "Male",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:02",
-      "event": "vs. North Oldham"
-    },
-    {
-      "date": "2014-11-29",
-      "opponent_id": "34071011",
-      "opponent_career_id": "career_011569",
-      "opponent_name": "Kevin Ensor",
-      "opponent_team": "Tates Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:08",
-      "event": "vs. Tates Creek"
     }
   ],
   "career": {
@@ -1091,7 +1096,7 @@
       "season": 2017,
       "grade": null,
       "team": "North Oldham",
-      "record": "33-17",
+      "record": "32-16",
       "regional_place": 2,
       "state_place": 6
     },
@@ -1099,7 +1104,7 @@
       "season": 2016,
       "grade": null,
       "team": "North Oldham",
-      "record": "49-12",
+      "record": "44-12",
       "regional_place": 2,
       "state_place": 6
     },
@@ -1107,7 +1112,7 @@
       "season": 2015,
       "grade": null,
       "team": "North Oldham",
-      "record": "49-19",
+      "record": "47-18",
       "regional_place": 2,
       "state_place": null
     },
@@ -1115,15 +1120,15 @@
       "season": 2014,
       "grade": null,
       "team": "North Oldham",
-      "record": "34-11",
+      "record": "35-13",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 165,
+    "wins": 158,
     "losses": 59,
-    "win_pct": 0.737
+    "win_pct": 0.728
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

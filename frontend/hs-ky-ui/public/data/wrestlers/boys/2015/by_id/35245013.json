@@ -5,10 +5,15 @@
   "team_slug": "campbell_county",
   "team_rank": null,
   "weight_class": 215,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
-    "overall": "56-0",
+    "overall": "57-0",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.8,
-    "bonus_rate": 0.94,
+    "pin_rate": 0.811,
+    "bonus_rate": 0.943,
     "majors": 3,
     "techs": 4,
-    "pins": 40
+    "pins": 43
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -117,6 +122,22 @@
     },
     {
       "date": "2015-02-14",
+      "opponent_id": "12512071",
+      "opponent_career_id": "career_013251",
+      "opponent_name": "Ahmad Hameidan",
+      "opponent_team": "Boone County",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "TF",
+      "score": "21-6",
+      "duration": "5:51",
+      "event": "KHSAA Region 6"
+    },
+    {
+      "date": "2015-02-14",
       "opponent_id": "53574071",
       "opponent_career_id": "career_011508",
       "opponent_name": "Ben Huth",
@@ -133,18 +154,18 @@
     },
     {
       "date": "2015-02-14",
-      "opponent_id": "12512071",
-      "opponent_career_id": "career_013251",
-      "opponent_name": "Ahmad Hameidan",
-      "opponent_team": "Boone County",
+      "opponent_id": "53574071",
+      "opponent_career_id": "career_011508",
+      "opponent_name": "Ben Huth",
+      "opponent_team": "Ryle",
       "opponent_team_rank": null,
-      "opponent_weight": 215,
+      "opponent_weight": 175,
       "opponent_rank": null,
       "weight_class": "215",
       "result": "W",
-      "method": "TF",
-      "score": "21-6",
-      "duration": "5:51",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:49",
       "event": "KHSAA Region 6"
     },
     {
@@ -162,6 +183,38 @@
       "score": null,
       "duration": "0:32",
       "event": "KHSAA Region 6"
+    },
+    {
+      "date": "2015-02-14",
+      "opponent_id": "3564076",
+      "opponent_career_id": "career_014038",
+      "opponent_name": "Josh Mullins",
+      "opponent_team": "Newport",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:33",
+      "event": "KHSAA Region 6"
+    },
+    {
+      "date": "2015-01-31",
+      "opponent_id": "24881076",
+      "opponent_career_id": "career_013024",
+      "opponent_name": "Mahlon Ray",
+      "opponent_team": "Christian County",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:17",
+      "event": "vs. Christian County"
     },
     {
       "date": "2015-01-31",
@@ -210,22 +263,6 @@
       "score": null,
       "duration": "1:32",
       "event": "vs. Oldham County"
-    },
-    {
-      "date": "2015-01-31",
-      "opponent_id": "24881076",
-      "opponent_career_id": "career_013024",
-      "opponent_name": "Mahlon Ray",
-      "opponent_team": "Christian County",
-      "opponent_team_rank": null,
-      "opponent_weight": 285,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:17",
-      "event": "vs. Christian County"
     },
     {
       "date": "2015-01-24",
@@ -677,22 +714,6 @@
     },
     {
       "date": "2014-12-17",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Middletown"
-    },
-    {
-      "date": "2014-12-17",
       "opponent_id": "100919011",
       "opponent_career_id": null,
       "opponent_name": "Tim Tanner-Blair",
@@ -708,20 +729,20 @@
       "event": "vs. Lakota West"
     },
     {
-      "date": "2014-12-13",
-      "opponent_id": "5827695009",
-      "opponent_career_id": "career_013173",
-      "opponent_name": "Josh Ellenberger",
-      "opponent_team": "Scott",
+      "date": "2014-12-17",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
       "opponent_team_rank": null,
-      "opponent_weight": 190,
+      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:12",
-      "event": "Raider Rumble"
+      "duration": "0:00",
+      "event": "vs. Middletown"
     },
     {
       "date": "2014-12-13",
@@ -757,6 +778,22 @@
     },
     {
       "date": "2014-12-13",
+      "opponent_id": "5606858009",
+      "opponent_career_id": "career_011630",
+      "opponent_name": "Jack Hill",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:18",
+      "event": "Raider Rumble"
+    },
+    {
+      "date": "2014-12-13",
       "opponent_id": "4474011",
       "opponent_career_id": "career_014129",
       "opponent_name": "Tate Smith",
@@ -769,6 +806,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:01",
+      "event": "Raider Rumble"
+    },
+    {
+      "date": "2014-12-13",
+      "opponent_id": "5827695009",
+      "opponent_career_id": "career_013173",
+      "opponent_name": "Josh Ellenberger",
+      "opponent_team": "Scott",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:12",
       "event": "Raider Rumble"
     },
     {
@@ -906,7 +959,8 @@
     "seasons": [
       2015,
       2014,
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -914,7 +968,7 @@
       "season": 2015,
       "grade": 12,
       "team": "Campbell County",
-      "record": "56-0",
+      "record": "57-0",
       "regional_place": 1,
       "state_place": 1
     },
@@ -922,7 +976,7 @@
       "season": 2014,
       "grade": null,
       "team": "Campbell County",
-      "record": "35-0",
+      "record": "41-0",
       "regional_place": 1,
       "state_place": 1
     },
@@ -930,15 +984,23 @@
       "season": 2013,
       "grade": null,
       "team": "Campbell County",
-      "record": "45-0",
+      "record": "53-0",
       "regional_place": 1,
+      "state_place": 1
+    },
+    {
+      "season": 2012,
+      "grade": 9,
+      "team": "Campbell County",
+      "record": "5-0",
+      "regional_place": null,
       "state_place": 1
     }
   ],
   "career_record": {
-    "wins": 136,
+    "wins": 156,
     "losses": 0,
     "win_pct": 1.0
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

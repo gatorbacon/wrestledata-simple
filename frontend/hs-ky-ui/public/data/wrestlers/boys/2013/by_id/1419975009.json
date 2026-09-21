@@ -5,10 +5,15 @@
   "team_slug": "ryle",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "44-18",
+    "overall": "45-18",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.477,
-    "bonus_rate": 0.705,
+    "pin_rate": 0.467,
+    "bonus_rate": 0.689,
     "majors": 8,
     "techs": 2,
     "pins": 21
@@ -197,6 +202,22 @@
     },
     {
       "date": "2013-02-09",
+      "opponent_id": "1275549009",
+      "opponent_career_id": "career_014904",
+      "opponent_name": "Aaron Munoz",
+      "opponent_team": "Dixie Heights",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": "10-4",
+      "duration": "7:00",
+      "event": "KHSAA Region 6"
+    },
+    {
+      "date": "2013-02-09",
       "opponent_id": "1306791009",
       "opponent_career_id": "career_015046",
       "opponent_name": "Dakota Willoughby",
@@ -337,7 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:25",
-      "event": "Dragon Invitational"
+      "event": "Dragon Inv"
     },
     {
       "date": "2013-01-19",
@@ -353,7 +374,7 @@
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "Dragon Invitational / JV Region"
+      "event": "Dragon Inv"
     },
     {
       "date": "2013-01-19",
@@ -565,22 +586,6 @@
     },
     {
       "date": "2012-12-29",
-      "opponent_id": "1431428009",
-      "opponent_career_id": "career_016557",
-      "opponent_name": "Drew Harris",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "TF",
-      "score": "18-2",
-      "duration": "0:00",
-      "event": "GMVWA"
-    },
-    {
-      "date": "2012-12-29",
       "opponent_id": "1458929009",
       "opponent_career_id": null,
       "opponent_name": "Anthony Kitchen",
@@ -625,6 +630,22 @@
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
+      "event": "GMVWA Holiday"
+    },
+    {
+      "date": "2012-12-29",
+      "opponent_id": "1431428009",
+      "opponent_career_id": "career_016557",
+      "opponent_name": "Drew Harris",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "TF",
+      "score": "18-2",
+      "duration": "3:57",
       "event": "GMVWA Holiday"
     },
     {
@@ -705,7 +726,7 @@
       "method": "MD",
       "score": "13-5",
       "duration": "7:00",
-      "event": "2012 NKAC Conference"
+      "event": "2012 NKAC"
     },
     {
       "date": "2012-12-22",
@@ -720,7 +741,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:50",
       "event": "2012 NKAC"
     },
     {
@@ -737,7 +758,7 @@
       "method": "MD",
       "score": "11-2",
       "duration": "7:00",
-      "event": "NKAC"
+      "event": "2012 NKAC"
     },
     {
       "date": "2012-12-22",
@@ -752,7 +773,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "2:53",
       "event": "2012 NKAC"
     },
     {
@@ -929,7 +950,7 @@
       "method": "TF",
       "score": "22-7",
       "duration": "5:46",
-      "event": "vs. Ryle"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2012-12-08",
@@ -1032,7 +1053,9 @@
     "career_id": "career_016522",
     "canonical_name": "Jake Sander",
     "seasons": [
-      2013
+      2013,
+      2012,
+      2011
     ]
   },
   "season_summary": [
@@ -1040,15 +1063,31 @@
       "season": 2013,
       "grade": null,
       "team": "Ryle",
-      "record": "44-18",
+      "record": "45-18",
       "regional_place": 3,
       "state_place": 6
+    },
+    {
+      "season": 2012,
+      "grade": 11,
+      "team": "Ryle",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2011,
+      "grade": 10,
+      "team": "Ryle",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
     }
   ],
   "career_record": {
-    "wins": 44,
-    "losses": 18,
-    "win_pct": 0.71
+    "wins": 49,
+    "losses": 22,
+    "win_pct": 0.69
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

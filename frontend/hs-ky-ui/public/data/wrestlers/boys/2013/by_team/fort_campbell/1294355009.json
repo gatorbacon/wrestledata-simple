@@ -5,10 +5,15 @@
   "team_slug": "fort_campbell",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "24-7",
+    "overall": "28-12",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.88,
-    "bonus_rate": 0.92,
+    "pin_rate": 0.846,
+    "bonus_rate": 0.885,
     "majors": 0,
     "techs": 1,
     "pins": 22
@@ -80,6 +85,22 @@
       "result": "L",
       "method": "DEC",
       "score": "2-1",
+      "duration": "7:00",
+      "event": "KHSAA Region 1"
+    },
+    {
+      "date": "2013-02-09",
+      "opponent_id": "1320477009",
+      "opponent_career_id": "career_016360",
+      "opponent_name": "Robert Bussel",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-4",
       "duration": "7:00",
       "event": "KHSAA Region 1"
     },
@@ -229,22 +250,6 @@
     },
     {
       "date": "2013-01-19",
-      "opponent_id": "1467508009",
-      "opponent_career_id": "career_016638",
-      "opponent_name": "Pedro Ruiz",
-      "opponent_team": "Wayne County",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "DEC",
-      "score": "8-1",
-      "duration": "7:00",
-      "event": "vs. Fort Campbell"
-    },
-    {
-      "date": "2013-01-19",
       "opponent_id": "1400598009",
       "opponent_career_id": null,
       "opponent_name": "Xavier Bohanan",
@@ -258,6 +263,22 @@
       "score": "10-6",
       "duration": "7:00",
       "event": "vs. Pigeon Forge"
+    },
+    {
+      "date": "2013-01-19",
+      "opponent_id": "1467508009",
+      "opponent_career_id": "career_016638",
+      "opponent_name": "Pedro Ruiz",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-1",
+      "duration": "7:00",
+      "event": "vs. Wayne County"
     },
     {
       "date": "2013-01-17",
@@ -289,7 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:38",
-      "event": "Paducah"
+      "event": "Steve Johnson Classic @ Paducah"
     },
     {
       "date": "2013-01-12",
@@ -305,7 +326,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:50",
-      "event": "Steve Johnson Classic"
+      "event": "Steve Johnson Classic @ Paducah"
     },
     {
       "date": "2013-01-12",
@@ -336,7 +357,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "5:43",
       "event": "Steve Johnson Classic @ Paducah"
     },
     {
@@ -401,7 +422,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Fort Campbell"
+      "event": "vs. Caldwell County"
     },
     {
       "date": "2013-01-05",
@@ -465,23 +486,55 @@
       "method": "FALL",
       "score": null,
       "duration": "1:20",
-      "event": "vs. Fort Campbell"
+      "event": "vs. Trigg County"
     },
     {
       "date": "2012-12-15",
-      "opponent_id": "1387987009",
-      "opponent_career_id": "career_016482",
-      "opponent_name": "Jose Gaspar",
-      "opponent_team": "Ohio County",
+      "opponent_id": "1242712009",
+      "opponent_career_id": "career_014824",
+      "opponent_name": "Andrew Walls",
+      "opponent_team": "Caldwell County",
       "opponent_team_rank": null,
-      "opponent_weight": 120,
+      "opponent_weight": 144,
       "opponent_rank": null,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "1:02",
-      "event": "vs. Fort Campbell"
+      "duration": "0:00",
+      "event": "vs. Caldwell County"
+    },
+    {
+      "date": "2012-12-15",
+      "opponent_id": "1243128009",
+      "opponent_career_id": "career_015891",
+      "opponent_name": "Justice Manley",
+      "opponent_team": "Calloway County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:01",
+      "event": "vs. Calloway County"
+    },
+    {
+      "date": "2012-12-15",
+      "opponent_id": "1409951009",
+      "opponent_career_id": null,
+      "opponent_name": "william Whitner",
+      "opponent_team": "Ravenwood",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Ravenwood"
     },
     {
       "date": "2012-12-15",
@@ -501,51 +554,19 @@
     },
     {
       "date": "2012-12-15",
-      "opponent_id": "1242712009",
-      "opponent_career_id": "career_014824",
-      "opponent_name": "Andrew Walls",
-      "opponent_team": "Caldwell County",
+      "opponent_id": "1387987009",
+      "opponent_career_id": "career_016482",
+      "opponent_name": "Jose Gaspar",
+      "opponent_team": "Ohio County",
       "opponent_team_rank": null,
-      "opponent_weight": 144,
+      "opponent_weight": 120,
       "opponent_rank": null,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Fort Campbell"
-    },
-    {
-      "date": "2012-12-15",
-      "opponent_id": "1243128009",
-      "opponent_career_id": "career_015891",
-      "opponent_name": "Justice Manley",
-      "opponent_team": "Calloway County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:01",
-      "event": "vs. Fort Campbell"
-    },
-    {
-      "date": "2012-12-15",
-      "opponent_id": "1409951009",
-      "opponent_career_id": null,
-      "opponent_name": "william Whitner",
-      "opponent_team": "Ravenwood",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Ravenwood"
+      "duration": "1:02",
+      "event": "vs. Ohio County"
     },
     {
       "date": "2012-12-06",
@@ -672,15 +693,15 @@
       "season": 2013,
       "grade": null,
       "team": "Fort Campbell",
-      "record": "24-7",
+      "record": "28-12",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 24,
-    "losses": 7,
-    "win_pct": 0.774
+    "wins": 28,
+    "losses": 12,
+    "win_pct": 0.7
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "fort_knox",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "6-10",
+    "overall": "8-15",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -113,7 +118,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:56",
-      "event": "North Hardin Invitational"
+      "event": "Trojan Invitational"
     },
     {
       "date": "2013-01-19",
@@ -177,7 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:12",
-      "event": "vs. Fort Knox"
+      "event": "vs. Doss"
     },
     {
       "date": "2013-01-08",
@@ -193,7 +198,7 @@
       "method": "DEC",
       "score": "10-4",
       "duration": "7:00",
-      "event": "vs. Fort Knox"
+      "event": "vs. Fort Campbell"
     },
     {
       "date": "2013-01-08",
@@ -213,22 +218,6 @@
     },
     {
       "date": "2013-01-05",
-      "opponent_id": "1270781009",
-      "opponent_career_id": "career_015321",
-      "opponent_name": "Daniel Lannum",
-      "opponent_team": "Danville",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:37",
-      "event": "vs. Fort Knox"
-    },
-    {
-      "date": "2013-01-05",
       "opponent_id": "1216556009",
       "opponent_career_id": "career_014941",
       "opponent_name": "Chris McDaniel",
@@ -241,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Fort Knox"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2013-01-05",
@@ -257,7 +246,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Fort Knox"
+      "event": "vs. Barren County"
+    },
+    {
+      "date": "2013-01-05",
+      "opponent_id": "1270781009",
+      "opponent_career_id": "career_015321",
+      "opponent_name": "Daniel Lannum",
+      "opponent_team": "Danville",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:37",
+      "event": "vs. Danville"
     },
     {
       "date": "2013-01-02",
@@ -337,7 +342,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:00",
-      "event": "vs. Fort Knox"
+      "event": "vs. La Rue County"
     },
     {
       "date": "2012-12-21",
@@ -353,7 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:39",
-      "event": "vs. Fort Knox"
+      "event": "vs. Ohio County"
     },
     {
       "date": "2012-12-20",
@@ -369,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:23",
-      "event": "vs. Fort Knox"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2012-12-08",
@@ -385,7 +390,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:30",
-      "event": "King of the Bluegrass"
+      "event": "KING OF THE BLUEGRASS @ FAIRDALE HS"
     },
     {
       "date": "2012-12-08",
@@ -401,14 +406,15 @@
       "method": "FALL",
       "score": null,
       "duration": "1:41",
-      "event": "King of the Bluegrass (Fairdale)"
+      "event": "KING OF THE BLUEGRASS @ FAIRDALE HS"
     }
   ],
   "career": {
     "career_id": "career_016312",
     "canonical_name": "Jordan Diamond",
     "seasons": [
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -416,15 +422,23 @@
       "season": 2013,
       "grade": null,
       "team": "Fort Knox",
-      "record": "6-10",
+      "record": "8-15",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 8,
+      "team": "Fort Knox",
+      "record": "0-2",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 6,
-    "losses": 10,
-    "win_pct": 0.375
+    "wins": 8,
+    "losses": 17,
+    "win_pct": 0.32
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

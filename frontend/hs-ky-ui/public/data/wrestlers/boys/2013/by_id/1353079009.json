@@ -5,10 +5,15 @@
   "team_slug": "madison_southern",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "1-9",
+    "overall": "3-16",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.75,
-    "bonus_rate": 0.75,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 3
+    "pins": 2
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -81,7 +86,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:20",
-      "event": "vs. Madison Southern"
+      "event": "vs. Madison Central"
     },
     {
       "date": "2013-02-01",
@@ -101,22 +106,6 @@
     },
     {
       "date": "2013-01-26",
-      "opponent_id": "1396589009",
-      "opponent_career_id": "career_014054",
-      "opponent_name": "Alex Mattingly",
-      "opponent_team": "Paul Dunbar",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:30",
-      "event": "vs. Madison Southern"
-    },
-    {
-      "date": "2013-01-26",
       "opponent_id": "1236126009",
       "opponent_career_id": "career_016158",
       "opponent_name": "Colby Williams",
@@ -129,7 +118,55 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Madison Southern"
+      "event": "vs. Bourbon County"
+    },
+    {
+      "date": "2013-01-26",
+      "opponent_id": "1396589009",
+      "opponent_career_id": "career_014054",
+      "opponent_name": "Alex Mattingly",
+      "opponent_team": "Paul Dunbar",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:30",
+      "event": "vs. Paul Dunbar"
+    },
+    {
+      "date": "2012-12-29",
+      "opponent_id": "1296564009",
+      "opponent_career_id": "career_015946",
+      "opponent_name": "Coty Hunt",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:47",
+      "event": "Woodford Co."
+    },
+    {
+      "date": "2012-12-29",
+      "opponent_id": "1329754009",
+      "opponent_career_id": "career_015975",
+      "opponent_name": "Jordan Hunter",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Woodford Co."
     },
     {
       "date": "2012-12-29",
@@ -148,54 +185,6 @@
       "event": "Woodford County Invitational"
     },
     {
-      "date": "2012-12-29",
-      "opponent_id": "1296564009",
-      "opponent_career_id": "career_015946",
-      "opponent_name": "Coty Hunt",
-      "opponent_team": "Franklin County",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:47",
-      "event": "Woodford County Invitational"
-    },
-    {
-      "date": "2012-12-29",
-      "opponent_id": "1329754009",
-      "opponent_career_id": "career_015975",
-      "opponent_name": "Jordan Hunter",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "WCI"
-    },
-    {
-      "date": "2012-12-02",
-      "opponent_id": "1426155009",
-      "opponent_career_id": "career_014079",
-      "opponent_name": "Dale Hensley",
-      "opponent_team": "Scott",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Harrison Co."
-    },
-    {
       "date": "2012-12-02",
       "opponent_id": "1398868009",
       "opponent_career_id": "career_014056",
@@ -212,20 +201,20 @@
       "event": "Harrison Co."
     },
     {
-      "date": "2012-12-02",
-      "opponent_id": "1435734009",
-      "opponent_career_id": "career_016564",
-      "opponent_name": "Johnny Carey",
-      "opponent_team": "South Oldham",
+      "date": "2012-12-01",
+      "opponent_id": "1398868009",
+      "opponent_career_id": "career_014056",
+      "opponent_name": "Bradley Colwell",
+      "opponent_team": "Perry County Central",
       "opponent_team_rank": null,
       "opponent_weight": 120,
       "opponent_rank": null,
       "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
+      "result": "L",
+      "method": "INJ",
       "score": null,
-      "duration": "0:00",
-      "event": "Harrison Co."
+      "duration": "7:00",
+      "event": "Rumble on the Hilltop"
     },
     {
       "date": "2012-12-01",
@@ -241,22 +230,6 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Rumble on the Hilltop"
-    },
-    {
-      "date": "2012-12-01",
-      "opponent_id": "1398868009",
-      "opponent_career_id": "career_014056",
-      "opponent_name": "Bradley Colwell",
-      "opponent_team": "Perry County Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "INJ",
-      "score": null,
-      "duration": "7:00",
       "event": "Rumble on the Hilltop"
     },
     {
@@ -277,22 +250,6 @@
     },
     {
       "date": "2012-11-28",
-      "opponent_id": "1396589009",
-      "opponent_career_id": "career_014054",
-      "opponent_name": "Alex Mattingly",
-      "opponent_team": "Paul Dunbar",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:22",
-      "event": "vs. Madison Southern"
-    },
-    {
-      "date": "2012-11-28",
       "opponent_id": "1369130009",
       "opponent_career_id": "career_016004",
       "opponent_name": "Rodney Peterson",
@@ -308,6 +265,22 @@
       "event": "vs. Montgomery County"
     },
     {
+      "date": "2012-11-28",
+      "opponent_id": "1396589009",
+      "opponent_career_id": "career_014054",
+      "opponent_name": "Alex Mattingly",
+      "opponent_team": "Paul Dunbar",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:22",
+      "event": "vs. Paul Dunbar"
+    },
+    {
       "date": "2012-11-24",
       "opponent_id": "1216533009",
       "opponent_career_id": "career_015857",
@@ -321,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Madison Southern"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2012-11-24",
@@ -353,7 +326,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:24",
-      "event": "vs. Madison Southern"
+      "event": "vs. University Heights"
     },
     {
       "date": "2012-11-24",
@@ -369,7 +342,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:36",
-      "event": "vs. Madison Southern"
+      "event": "vs. Western Hills"
     }
   ],
   "career": {
@@ -388,7 +361,7 @@
       "season": 2018,
       "grade": 12,
       "team": "Madison Southern",
-      "record": "32-12",
+      "record": "31-12",
       "regional_place": 4,
       "state_place": null
     },
@@ -396,7 +369,7 @@
       "season": 2017,
       "grade": 11,
       "team": "Madison Southern",
-      "record": "29-14",
+      "record": "29-15",
       "regional_place": null,
       "state_place": null
     },
@@ -404,7 +377,7 @@
       "season": 2016,
       "grade": 10,
       "team": "Madison Southern",
-      "record": "17-12",
+      "record": "18-13",
       "regional_place": null,
       "state_place": null
     },
@@ -412,7 +385,7 @@
       "season": 2015,
       "grade": 9,
       "team": "Madison Southern",
-      "record": "11-21",
+      "record": "9-22",
       "regional_place": null,
       "state_place": null
     },
@@ -420,15 +393,15 @@
       "season": 2013,
       "grade": null,
       "team": "Madison Southern",
-      "record": "1-9",
+      "record": "3-16",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 90,
-    "losses": 68,
-    "win_pct": 0.57
+    "losses": 78,
+    "win_pct": 0.536
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "campbell_county",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
-    "overall": "41-9",
+    "overall": "40-9",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.528,
-    "bonus_rate": 0.556,
-    "majors": 1,
+    "pin_rate": 0.526,
+    "bonus_rate": 0.579,
+    "majors": 2,
     "techs": 0,
-    "pins": 19
+    "pins": 20
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -181,6 +186,22 @@
     },
     {
       "date": "2015-02-14",
+      "opponent_id": "53691071",
+      "opponent_career_id": "career_010748",
+      "opponent_name": "Braden Mulcahy",
+      "opponent_team": "Walton Verona",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "MD",
+      "score": "12-0",
+      "duration": "7:00",
+      "event": "KHSAA Region 6"
+    },
+    {
+      "date": "2015-02-14",
       "opponent_id": "5827716009",
       "opponent_career_id": "career_014081",
       "opponent_name": "Ethan Frank",
@@ -193,6 +214,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:30",
+      "event": "KHSAA Region 6"
+    },
+    {
+      "date": "2015-02-14",
+      "opponent_id": "5827716009",
+      "opponent_career_id": "career_014081",
+      "opponent_name": "Ethan Frank",
+      "opponent_team": "Scott",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:31",
       "event": "KHSAA Region 6"
     },
     {
@@ -645,22 +682,6 @@
     },
     {
       "date": "2014-12-06",
-      "opponent_id": "32510071",
-      "opponent_career_id": null,
-      "opponent_name": "Austin Napier",
-      "opponent_team": "Valley View",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:50",
-      "event": "Franklin Invitational"
-    },
-    {
-      "date": "2014-12-06",
       "opponent_id": "29665076",
       "opponent_career_id": null,
       "opponent_name": "Trenten Scott",
@@ -673,6 +694,22 @@
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
+      "event": "Franklin Invitational"
+    },
+    {
+      "date": "2014-12-06",
+      "opponent_id": "32510071",
+      "opponent_career_id": null,
+      "opponent_name": "Austin Napier",
+      "opponent_team": "Valley View",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:50",
       "event": "Franklin Invitational"
     },
     {
@@ -795,7 +832,9 @@
       2016,
       2015,
       2014,
-      2013
+      2013,
+      2012,
+      2011
     ]
   },
   "season_summary": [
@@ -803,7 +842,7 @@
       "season": 2016,
       "grade": 12,
       "team": "Campbell County",
-      "record": "34-9",
+      "record": "35-9",
       "regional_place": 1,
       "state_place": null
     },
@@ -811,7 +850,7 @@
       "season": 2015,
       "grade": 11,
       "team": "Campbell County",
-      "record": "41-9",
+      "record": "40-9",
       "regional_place": 1,
       "state_place": 7
     },
@@ -819,7 +858,7 @@
       "season": 2014,
       "grade": null,
       "team": "Campbell County",
-      "record": "27-12",
+      "record": "27-13",
       "regional_place": 4,
       "state_place": null
     },
@@ -827,15 +866,31 @@
       "season": 2013,
       "grade": null,
       "team": "Campbell County",
-      "record": "28-11",
+      "record": "31-13",
       "regional_place": 1,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 8,
+      "team": "Campbell County",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2011,
+      "grade": 7,
+      "team": "Campbell County",
+      "record": "0-2",
+      "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 130,
-    "losses": 41,
-    "win_pct": 0.76
+    "wins": 135,
+    "losses": 48,
+    "win_pct": 0.738
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "cooper",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "29-9",
+    "overall": "37-9",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.6,
-    "bonus_rate": 0.867,
+    "pin_rate": 0.594,
+    "bonus_rate": 0.844,
     "majors": 5,
     "techs": 3,
-    "pins": 18
+    "pins": 19
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -112,6 +117,22 @@
       "result": "L",
       "method": "DEC",
       "score": "5-4",
+      "duration": "7:00",
+      "event": "KHSAA Region 6"
+    },
+    {
+      "date": "2014-02-15",
+      "opponent_id": "2885751009",
+      "opponent_career_id": "career_012406",
+      "opponent_name": "Bryan Holden",
+      "opponent_team": "Campbell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "DEC",
+      "score": "4-2",
       "duration": "7:00",
       "event": "KHSAA Region 6"
     },
@@ -389,22 +410,6 @@
     },
     {
       "date": "2014-01-11",
-      "opponent_id": "2886380009",
-      "opponent_career_id": "career_014597",
-      "opponent_name": "D`mitri Dozier",
-      "opponent_team": "Holmes",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:26",
-      "event": "Jaguar Jungle Classic"
-    },
-    {
-      "date": "2014-01-11",
       "opponent_id": "2886864009",
       "opponent_career_id": "career_014033",
       "opponent_name": "Albert Guzman",
@@ -436,20 +441,36 @@
       "event": "Jaguar Jungle Classic"
     },
     {
-      "date": "2014-01-03",
-      "opponent_id": "2885769009",
-      "opponent_career_id": "career_014243",
-      "opponent_name": "Brad Krebs",
-      "opponent_team": "Campbell County",
+      "date": "2014-01-11",
+      "opponent_id": "2886380009",
+      "opponent_career_id": "career_014597",
+      "opponent_name": "D`mitri Dozier",
+      "opponent_team": "Holmes",
       "opponent_team_rank": null,
-      "opponent_weight": 113,
+      "opponent_weight": 120,
       "opponent_rank": null,
       "weight_class": "120",
-      "result": "L",
-      "method": "DEC",
-      "score": "7-0",
-      "duration": "7:00",
-      "event": "Northern Kentucky Athletic Conference"
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:26",
+      "event": "Jaguar Jungle Classic"
+    },
+    {
+      "date": "2014-01-11",
+      "opponent_id": "2968024009",
+      "opponent_career_id": null,
+      "opponent_name": "Douglas Fairbanks",
+      "opponent_team": "Purcell Marian",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:24",
+      "event": "Jaguar Jungle Classic"
     },
     {
       "date": "2014-01-03",
@@ -464,7 +485,23 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "5:54",
+      "event": "NKAC"
+    },
+    {
+      "date": "2014-01-03",
+      "opponent_id": "2885769009",
+      "opponent_career_id": "career_014243",
+      "opponent_name": "Brad Krebs",
+      "opponent_team": "Campbell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-0",
+      "duration": "7:00",
       "event": "NKAC"
     },
     {
@@ -545,7 +582,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:09",
-      "event": "Derby City Classic"
+      "event": "Derby Classic @Louisville Male"
     },
     {
       "date": "2013-12-28",
@@ -625,7 +662,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:55",
-      "event": "vs. Cooper"
+      "event": "vs. North Oldham"
     },
     {
       "date": "2013-12-18",
@@ -755,7 +792,7 @@
       "season": 2016,
       "grade": 12,
       "team": "Cooper",
-      "record": "49-4",
+      "record": "51-4",
       "regional_place": 1,
       "state_place": 4
     },
@@ -771,7 +808,7 @@
       "season": 2014,
       "grade": null,
       "team": "Cooper",
-      "record": "29-9",
+      "record": "37-9",
       "regional_place": 3,
       "state_place": null
     },
@@ -779,15 +816,15 @@
       "season": 2013,
       "grade": null,
       "team": "Cooper",
-      "record": "11-4",
+      "record": "12-5",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 128,
-    "losses": 21,
-    "win_pct": 0.859
+    "wins": 139,
+    "losses": 22,
+    "win_pct": 0.863
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "male",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
-    "overall": "15-19",
+    "overall": "15-20",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -85,22 +90,6 @@
     },
     {
       "date": "2016-02-06",
-      "opponent_id": "331011010",
-      "opponent_career_id": "career_012095",
-      "opponent_name": "Chandler Watkins",
-      "opponent_team": "Ryle",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Ryle"
-    },
-    {
-      "date": "2016-02-06",
       "opponent_id": "8246319009",
       "opponent_career_id": "career_013597",
       "opponent_name": "Samuel Johnson",
@@ -113,7 +102,7 @@
       "method": "DEC",
       "score": "3-0",
       "duration": "7:00",
-      "event": "vs. Male"
+      "event": "vs. Cooper"
     },
     {
       "date": "2016-02-06",
@@ -146,6 +135,22 @@
       "score": null,
       "duration": "1:45",
       "event": "vs. Newport"
+    },
+    {
+      "date": "2016-02-06",
+      "opponent_id": "331011010",
+      "opponent_career_id": "career_012095",
+      "opponent_name": "Chandler Watkins",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Ryle"
     },
     {
       "date": "2016-02-06",
@@ -405,22 +410,6 @@
     },
     {
       "date": "2015-12-19",
-      "opponent_id": "501886107",
-      "opponent_career_id": "career_012295",
-      "opponent_name": "Justin Thomas",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Meade County"
-    },
-    {
-      "date": "2015-12-19",
       "opponent_id": "350281107",
       "opponent_career_id": "career_013481",
       "opponent_name": "John Walls",
@@ -434,6 +423,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Mccreary Central"
+    },
+    {
+      "date": "2015-12-19",
+      "opponent_id": "501886107",
+      "opponent_career_id": "career_012295",
+      "opponent_name": "Justin Thomas",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Meade County"
     },
     {
       "date": "2015-12-19",
@@ -513,39 +518,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Male"
-    },
-    {
-      "date": "2015-12-12",
-      "opponent_id": "462597076",
-      "opponent_career_id": "career_013321",
-      "opponent_name": "Colton Clark",
-      "opponent_team": "Woodford County",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:40",
-      "event": "DERBY CITY CLASSIC TOURNAMENT"
-    },
-    {
-      "date": "2015-12-12",
-      "opponent_id": "450852076",
-      "opponent_career_id": "career_013532",
-      "opponent_name": "Quentin Miller",
-      "opponent_team": "Apollo",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:36",
-      "event": "DERBY CITY CLASSIC TOURNAMENT"
+      "event": "vs. Seneca"
     },
     {
       "date": "2015-12-12",
@@ -581,6 +554,38 @@
     },
     {
       "date": "2015-12-12",
+      "opponent_id": "462597076",
+      "opponent_career_id": "career_013321",
+      "opponent_name": "Colton Clark",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:40",
+      "event": "DERBY CITY CLASSIC TOURNAMENT"
+    },
+    {
+      "date": "2015-12-12",
+      "opponent_id": "450852076",
+      "opponent_career_id": "career_013532",
+      "opponent_name": "Quentin Miller",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:36",
+      "event": "DERBY CITY CLASSIC TOURNAMENT"
+    },
+    {
+      "date": "2015-12-12",
       "opponent_id": "OUTSTATE_786546956c67",
       "opponent_career_id": null,
       "opponent_name": "Jordan Libby",
@@ -609,7 +614,7 @@
       "season": 2016,
       "grade": 10,
       "team": "Male",
-      "record": "15-19",
+      "record": "15-20",
       "regional_place": null,
       "state_place": null
     },
@@ -624,8 +629,8 @@
   ],
   "career_record": {
     "wins": 16,
-    "losses": 24,
-    "win_pct": 0.4
+    "losses": 25,
+    "win_pct": 0.39
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

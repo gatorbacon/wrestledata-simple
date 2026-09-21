@@ -5,10 +5,15 @@
   "team_slug": "franklin_county",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "34-10",
+    "overall": "43-12",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.703,
-    "bonus_rate": 0.784,
+    "pin_rate": 0.73,
+    "bonus_rate": 0.811,
     "majors": 3,
     "techs": 0,
-    "pins": 26
+    "pins": 27
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -149,22 +154,6 @@
     },
     {
       "date": "2013-01-26",
-      "opponent_id": "1330368009",
-      "opponent_career_id": "career_015979",
-      "opponent_name": "Jimmy Preston",
-      "opponent_team": "Johnson Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "MD",
-      "score": "9-1",
-      "duration": "7:00",
-      "event": "vs. Johnson Central"
-    },
-    {
-      "date": "2013-01-26",
       "opponent_id": "1250729009",
       "opponent_career_id": "career_016200",
       "opponent_name": "Jajuan Hailey",
@@ -177,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:58",
-      "event": "vs. Franklin County"
+      "event": "vs. Central"
     },
     {
       "date": "2013-01-26",
@@ -193,7 +182,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:45",
-      "event": "vs. Franklin County"
+      "event": "vs. Fort Campbell"
+    },
+    {
+      "date": "2013-01-26",
+      "opponent_id": "1330368009",
+      "opponent_career_id": "career_015979",
+      "opponent_name": "Jimmy Preston",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "MD",
+      "score": "9-1",
+      "duration": "7:00",
+      "event": "vs. Johnson Central"
     },
     {
       "date": "2013-01-26",
@@ -289,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:16",
-      "event": "vs. Franklin County"
+      "event": "vs. Fairdale"
     },
     {
       "date": "2013-01-12",
@@ -306,6 +311,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Shawnee"
+    },
+    {
+      "date": "2013-01-12",
+      "opponent_id": "1438892009",
+      "opponent_career_id": "career_016085",
+      "opponent_name": "Andrew Contreras",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "INJ",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Spencer County"
     },
     {
       "date": "2013-01-12",
@@ -337,23 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:54",
-      "event": "vs. Franklin County"
-    },
-    {
-      "date": "2013-01-12",
-      "opponent_id": "1438892009",
-      "opponent_career_id": "career_016085",
-      "opponent_name": "Andrew Contreras",
-      "opponent_team": "Spencer County",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "INJ",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Spencer County"
+      "event": "vs. Moore"
     },
     {
       "date": "2013-01-09",
@@ -370,38 +375,6 @@
       "score": null,
       "duration": "1:10",
       "event": "vs. Montgomery County"
-    },
-    {
-      "date": "2013-01-05",
-      "opponent_id": "1314720009",
-      "opponent_career_id": "career_016351",
-      "opponent_name": "Hunter McMurtrey",
-      "opponent_team": "Henry Clay",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:27",
-      "event": "vs. Henry Clay"
-    },
-    {
-      "date": "2013-01-05",
-      "opponent_id": "OUTSTATE_1ee773db809c",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "University Heights",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. University Heights"
     },
     {
       "date": "2013-01-05",
@@ -437,6 +410,38 @@
     },
     {
       "date": "2013-01-05",
+      "opponent_id": "1314720009",
+      "opponent_career_id": "career_016351",
+      "opponent_name": "Hunter McMurtrey",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:27",
+      "event": "vs. Henry Clay"
+    },
+    {
+      "date": "2013-01-05",
+      "opponent_id": "OUTSTATE_1ee773db809c",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "University Heights",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. University Heights"
+    },
+    {
+      "date": "2013-01-05",
       "opponent_id": "1338246009",
       "opponent_career_id": "career_015473",
       "opponent_name": "William Bossart",
@@ -449,23 +454,7 @@
       "method": "MD",
       "score": "14-5",
       "duration": "7:00",
-      "event": "vs. Franklin County"
-    },
-    {
-      "date": "2012-12-29",
-      "opponent_id": "1353091009",
-      "opponent_career_id": "career_013118",
-      "opponent_name": "Sam Kauer",
-      "opponent_team": "Madison Southern",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:31",
-      "event": "Woodford County Invitational"
+      "event": "vs. Lafayette"
     },
     {
       "date": "2012-12-29",
@@ -480,7 +469,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:22",
       "event": "Woodford County Invitational"
     },
     {
@@ -532,6 +521,22 @@
       "event": "Woodford County Invitational"
     },
     {
+      "date": "2012-12-29",
+      "opponent_id": "1353091009",
+      "opponent_career_id": "career_013118",
+      "opponent_name": "Sam Kauer",
+      "opponent_team": "Madison Southern",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:31",
+      "event": "Woodford County Invitational"
+    },
+    {
       "date": "2012-12-22",
       "opponent_id": "1449568009",
       "opponent_career_id": "career_016605",
@@ -545,38 +550,6 @@
       "method": "DEC",
       "score": "7-2",
       "duration": "7:00",
-      "event": "Lafayette Inviational"
-    },
-    {
-      "date": "2012-12-22",
-      "opponent_id": "1454949009",
-      "opponent_career_id": "career_014127",
-      "opponent_name": "Lucas Miozza",
-      "opponent_team": "Trinity (Louisville)",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "DEC",
-      "score": "5-2",
-      "duration": "7:00",
-      "event": "Lafayette Inviational"
-    },
-    {
-      "date": "2012-12-22",
-      "opponent_id": "1369718009",
-      "opponent_career_id": "career_014029",
-      "opponent_name": "Mikey Smith",
-      "opponent_team": "Moore",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:13",
       "event": "Lafayette Inviational"
     },
     {
@@ -597,6 +570,22 @@
     },
     {
       "date": "2012-12-22",
+      "opponent_id": "1454949009",
+      "opponent_career_id": "career_014127",
+      "opponent_name": "Lucas Miozza",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "Lafayette Inviational"
+    },
+    {
+      "date": "2012-12-22",
       "opponent_id": "1328370009",
       "opponent_career_id": "career_015974",
       "opponent_name": "Ty Bennett",
@@ -609,6 +598,22 @@
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
+      "event": "Lafayette Inviational"
+    },
+    {
+      "date": "2012-12-22",
+      "opponent_id": "1369718009",
+      "opponent_career_id": "career_014029",
+      "opponent_name": "Mikey Smith",
+      "opponent_team": "Moore",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:13",
       "event": "Lafayette Inviational"
     },
     {
@@ -673,7 +678,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:20",
-      "event": "vs. Franklin County"
+      "event": "vs. Barren County"
     },
     {
       "date": "2012-12-08",
@@ -689,7 +694,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:25",
-      "event": "vs. Franklin County"
+      "event": "vs. Danville"
     },
     {
       "date": "2012-12-08",
@@ -737,7 +742,7 @@
       "method": "DEC",
       "score": "7-2",
       "duration": "7:00",
-      "event": "vs. Franklin County"
+      "event": "vs. Oldham County"
     },
     {
       "date": "2012-12-08",
@@ -769,7 +774,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:35",
-      "event": "vs. Franklin County"
+      "event": "vs. Eastern"
+    },
+    {
+      "date": "2012-12-01",
+      "opponent_id": "1281395009",
+      "opponent_career_id": "career_015346",
+      "opponent_name": "Tanner Foley",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
+      "event": "vs. Eastern"
     },
     {
       "date": "2012-12-01",
@@ -801,7 +822,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:32",
-      "event": "vs. Franklin County"
+      "event": "vs. Meade County"
     },
     {
       "date": "2012-12-01",
@@ -817,7 +838,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:40",
-      "event": "vs. Franklin County"
+      "event": "vs. Nelson County"
     },
     {
       "date": "2012-12-01",
@@ -833,7 +854,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:43",
-      "event": "vs. Franklin County"
+      "event": "vs. Simon Kenton"
+    },
+    {
+      "date": "2012-11-24",
+      "opponent_id": "1240020009",
+      "opponent_career_id": "career_016171",
+      "opponent_name": "Jordan Johnson",
+      "opponent_team": "Bryan Station",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:28",
+      "event": "vs. Bryan Station"
     },
     {
       "date": "2012-11-24",
@@ -849,7 +886,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:21",
-      "event": "vs. Franklin County"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2012-11-24",
@@ -866,22 +903,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Bourbon County"
-    },
-    {
-      "date": "2012-11-24",
-      "opponent_id": "1240020009",
-      "opponent_career_id": "career_016171",
-      "opponent_name": "Jordan Johnson",
-      "opponent_team": "Bryan Station",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:28",
-      "event": "vs. Franklin County"
     },
     {
       "date": "2012-11-24",
@@ -912,15 +933,15 @@
       "season": 2013,
       "grade": null,
       "team": "Franklin County",
-      "record": "34-10",
+      "record": "43-12",
       "regional_place": 1,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 34,
-    "losses": 10,
-    "win_pct": 0.773
+    "wins": 43,
+    "losses": 12,
+    "win_pct": 0.782
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

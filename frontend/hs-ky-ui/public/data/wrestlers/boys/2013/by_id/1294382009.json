@@ -5,10 +5,15 @@
   "team_slug": "fort_campbell",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "25-9",
+    "overall": "32-9",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -241,7 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:41",
-      "event": "vs. Fort Campbell"
+      "event": "vs. Christian County"
     },
     {
       "date": "2013-01-21",
@@ -305,7 +310,7 @@
       "method": "INJ",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Fort Campbell"
+      "event": "vs. Wayne County"
     },
     {
       "date": "2013-01-17",
@@ -337,7 +342,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:37",
-      "event": "Steve Johnston Classic @ Paducah"
+      "event": "Steve Johnson Classic @ Paducah"
     },
     {
       "date": "2013-01-12",
@@ -368,7 +373,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "3:20",
       "event": "Steve Johnson Classic @ Paducah"
     },
     {
@@ -417,7 +422,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Fort Campbell"
+      "event": "vs. Caldwell County"
     },
     {
       "date": "2013-01-05",
@@ -481,7 +486,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:57",
-      "event": "vs. Fort Campbell"
+      "event": "vs. Trigg County"
     },
     {
       "date": "2012-12-29",
@@ -613,22 +618,6 @@
     },
     {
       "date": "2012-11-30",
-      "opponent_id": "1448353009",
-      "opponent_career_id": null,
-      "opponent_name": "Nick Sharpe",
-      "opponent_team": "Sycamore",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "DEC",
-      "score": "6-4",
-      "duration": "7:00",
-      "event": "vs. Sycamore"
-    },
-    {
-      "date": "2012-11-30",
       "opponent_id": "1227929009",
       "opponent_career_id": null,
       "opponent_name": "Michael King",
@@ -676,6 +665,22 @@
       "event": "vs. Smyrna"
     },
     {
+      "date": "2012-11-30",
+      "opponent_id": "1448353009",
+      "opponent_career_id": null,
+      "opponent_name": "Nick Sharpe",
+      "opponent_team": "Sycamore",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "6-4",
+      "duration": "7:00",
+      "event": "vs. Sycamore"
+    },
+    {
       "date": "2012-11-27",
       "opponent_id": "1288978009",
       "opponent_career_id": null,
@@ -697,7 +702,9 @@
     "canonical_name": "Ki Ryder",
     "seasons": [
       2014,
-      2013
+      2013,
+      2012,
+      2011
     ]
   },
   "season_summary": [
@@ -705,7 +712,7 @@
       "season": 2014,
       "grade": null,
       "team": "Fort Campbell",
-      "record": "30-4",
+      "record": "35-4",
       "regional_place": 1,
       "state_place": 3
     },
@@ -713,15 +720,31 @@
       "season": 2013,
       "grade": null,
       "team": "Fort Campbell",
-      "record": "25-9",
+      "record": "32-9",
       "regional_place": 1,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 10,
+      "team": "Fort Campbell",
+      "record": "1-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2011,
+      "grade": 9,
+      "team": "Fort Campbell",
+      "record": "0-2",
+      "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 55,
-    "losses": 13,
-    "win_pct": 0.809
+    "wins": 68,
+    "losses": 17,
+    "win_pct": 0.8
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

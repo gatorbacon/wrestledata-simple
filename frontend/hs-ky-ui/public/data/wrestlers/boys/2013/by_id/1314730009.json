@@ -5,10 +5,15 @@
   "team_slug": "henry_clay",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "11-7",
+    "overall": "14-9",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -81,7 +86,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:53",
-      "event": "Region 7"
+      "event": "KHSAA Region 7"
     },
     {
       "date": "2013-02-09",
@@ -129,7 +134,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:14",
-      "event": "vs. Henry Clay"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2013-01-30",
@@ -208,8 +213,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "Capital City Classic"
+      "duration": "2:32",
+      "event": "Franklin county invitational"
     },
     {
       "date": "2013-01-19",
@@ -225,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:40",
-      "event": "Capital City Classic"
+      "event": "Franklin county invitational"
     },
     {
       "date": "2013-01-19",
@@ -305,7 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Montgomery County"
     },
     {
       "date": "2013-01-12",
@@ -321,7 +326,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:30",
-      "event": "vs. Henry Clay"
+      "event": "vs. Woodford County"
     },
     {
       "date": "2013-01-09",
@@ -353,7 +358,7 @@
       "method": "DEC",
       "score": "6-1",
       "duration": "7:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Male"
     },
     {
       "date": "2013-01-05",
@@ -373,22 +378,6 @@
     },
     {
       "date": "2013-01-05",
-      "opponent_id": "1431407009",
-      "opponent_career_id": "career_016075",
-      "opponent_name": "David Bergman",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:19",
-      "event": "vs. Henry Clay"
-    },
-    {
-      "date": "2013-01-05",
       "opponent_id": "OUTSTATE_bee9535d143f",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -402,13 +391,30 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Walton Verona"
+    },
+    {
+      "date": "2013-01-05",
+      "opponent_id": "1431407009",
+      "opponent_career_id": "career_016075",
+      "opponent_name": "David Bergman",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:19",
+      "event": "vs. Simon Kenton"
     }
   ],
   "career": {
     "career_id": "career_016353",
     "canonical_name": "Joe Tafolla",
     "seasons": [
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -416,15 +422,23 @@
       "season": 2013,
       "grade": null,
       "team": "Henry Clay",
-      "record": "11-7",
+      "record": "14-9",
       "regional_place": 2,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 11,
+      "team": "Henry Clay",
+      "record": "0-2",
+      "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 11,
-    "losses": 7,
-    "win_pct": 0.611
+    "wins": 14,
+    "losses": 11,
+    "win_pct": 0.56
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "henry_clay",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "8-7",
+    "overall": "12-10",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -129,7 +134,7 @@
       "method": "DEC",
       "score": "3-2",
       "duration": "7:00",
-      "event": "City Championship"
+      "event": "city tournament"
     },
     {
       "date": "2014-02-08",
@@ -149,22 +154,6 @@
     },
     {
       "date": "2014-02-01",
-      "opponent_id": "2887287009",
-      "opponent_career_id": "career_015632",
-      "opponent_name": "tucker mueller",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "L",
-      "method": "MD",
-      "score": "10-1",
-      "duration": "7:00",
-      "event": "vs. Simon Kenton"
-    },
-    {
-      "date": "2014-02-01",
       "opponent_id": "2886177009",
       "opponent_career_id": "career_014908",
       "opponent_name": "Kermit Gibbs",
@@ -177,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:41",
-      "event": "vs. Henry Clay"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2014-02-01",
@@ -197,6 +186,22 @@
     },
     {
       "date": "2014-02-01",
+      "opponent_id": "2887287009",
+      "opponent_career_id": "career_015632",
+      "opponent_name": "tucker mueller",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "MD",
+      "score": "10-1",
+      "duration": "7:00",
+      "event": "vs. Simon Kenton"
+    },
+    {
+      "date": "2014-02-01",
       "opponent_id": "2887731009",
       "opponent_career_id": "career_014156",
       "opponent_name": "Austin Raisor",
@@ -209,7 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:30",
-      "event": "vs. Henry Clay"
+      "event": "vs. Woodford County"
     },
     {
       "date": "2014-01-18",
@@ -241,7 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:26",
-      "event": "vs. Henry Clay"
+      "event": "vs. Tates Creek"
     },
     {
       "date": "2014-01-18",
@@ -257,7 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:59",
-      "event": "vs. Henry Clay"
+      "event": "vs. Woodford County"
     },
     {
       "date": "2014-01-04",
@@ -273,23 +278,7 @@
       "method": "DEC",
       "score": "2-1",
       "duration": "7:00",
-      "event": "vs. Henry Clay"
-    },
-    {
-      "date": "2014-01-04",
-      "opponent_id": "2887287009",
-      "opponent_career_id": "career_015632",
-      "opponent_name": "tucker mueller",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "L",
-      "method": "DEC",
-      "score": "7-0",
-      "duration": "7:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Central"
     },
     {
       "date": "2014-01-04",
@@ -305,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:10",
-      "event": "vs. Henry Clay"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2014-01-04",
@@ -337,7 +326,23 @@
       "method": "MD",
       "score": "9-0",
       "duration": "7:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Lafayette"
+    },
+    {
+      "date": "2014-01-04",
+      "opponent_id": "2887287009",
+      "opponent_career_id": "career_015632",
+      "opponent_name": "tucker mueller",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-0",
+      "duration": "7:00",
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2013-12-21",
@@ -393,7 +398,8 @@
     "canonical_name": "Jordan Caldwell",
     "seasons": [
       2014,
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -401,7 +407,7 @@
       "season": 2014,
       "grade": null,
       "team": "Henry Clay",
-      "record": "8-7",
+      "record": "12-10",
       "regional_place": 2,
       "state_place": null
     },
@@ -412,12 +418,20 @@
       "record": "1-2",
       "regional_place": null,
       "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 10,
+      "team": "Henry Clay",
+      "record": "0-2",
+      "regional_place": null,
+      "state_place": null
     }
   ],
   "career_record": {
-    "wins": 9,
-    "losses": 9,
-    "win_pct": 0.5
+    "wins": 13,
+    "losses": 14,
+    "win_pct": 0.481
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

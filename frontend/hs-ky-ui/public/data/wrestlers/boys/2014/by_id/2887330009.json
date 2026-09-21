@@ -5,10 +5,15 @@
   "team_slug": "southern",
   "team_rank": null,
   "weight_class": 157,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
+    "overall": "5-2",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -65,23 +70,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:35",
-      "event": "vs. Southern"
-    },
-    {
-      "date": "2013-12-14",
-      "opponent_id": "2887673009",
-      "opponent_career_id": "career_015181",
-      "opponent_name": "Joseph Montgomery",
-      "opponent_team": "Western",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:38",
-      "event": "KOB"
+      "event": "vs. Bullitt Central"
     },
     {
       "date": "2013-12-14",
@@ -146,6 +135,22 @@
       "score": "12-10",
       "duration": "7:00",
       "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2013-12-14",
+      "opponent_id": "2887673009",
+      "opponent_career_id": "career_015181",
+      "opponent_name": "Joseph Montgomery",
+      "opponent_team": "Western",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:38",
+      "event": "KOB"
     }
   ],
   "career": {
@@ -153,7 +158,8 @@
     "canonical_name": "Christopher Cash",
     "seasons": [
       2014,
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -161,7 +167,7 @@
       "season": 2014,
       "grade": null,
       "team": "Southern",
-      "record": "1-0",
+      "record": "5-2",
       "regional_place": null,
       "state_place": null
     },
@@ -169,15 +175,23 @@
       "season": 2013,
       "grade": null,
       "team": "Southern",
-      "record": "27-9",
+      "record": "31-11",
       "regional_place": 1,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 10,
+      "team": "Southern",
+      "record": "3-2",
+      "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 28,
-    "losses": 9,
-    "win_pct": 0.757
+    "wins": 39,
+    "losses": 15,
+    "win_pct": 0.722
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

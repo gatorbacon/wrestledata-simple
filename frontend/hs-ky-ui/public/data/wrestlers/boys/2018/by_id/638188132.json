@@ -5,10 +5,15 @@
   "team_slug": "south_oldham",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2018,
   "current_rank": null,
   "record": {
-    "overall": "27-11",
+    "overall": "29-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -261,6 +266,22 @@
     },
     {
       "date": "2018-01-20",
+      "opponent_id": "11606723009",
+      "opponent_career_id": "career_011677",
+      "opponent_name": "Ethan Murphy",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138/140",
+      "result": "W",
+      "method": "MD",
+      "score": "11-2",
+      "duration": "7:00",
+      "event": "Dragon Invitational @ South Oldham"
+    },
+    {
+      "date": "2018-01-20",
       "opponent_id": "11606730009",
       "opponent_career_id": "career_009625",
       "opponent_name": "Bryce Moberly",
@@ -286,25 +307,9 @@
       "opponent_rank": null,
       "weight_class": "138",
       "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Dragon Invitational @ South Oldham"
-    },
-    {
-      "date": "2018-01-20",
-      "opponent_id": "11606723009",
-      "opponent_career_id": "career_011677",
-      "opponent_name": "Ethan Murphy",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138/140",
-      "result": "W",
-      "method": "MD",
-      "score": "11-2",
-      "duration": "7:00",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "4:34",
       "event": "Dragon Invitational @ South Oldham"
     },
     {
@@ -316,11 +321,11 @@
       "opponent_team_rank": null,
       "opponent_weight": 138,
       "opponent_rank": null,
-      "weight_class": "138/140",
+      "weight_class": "138",
       "result": "W",
-      "method": "TF",
-      "score": "19-4",
-      "duration": "4:34",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
       "event": "Dragon Invitational @ South Oldham"
     },
     {
@@ -341,18 +346,18 @@
     },
     {
       "date": "2018-01-06",
-      "opponent_id": "11642189009",
-      "opponent_career_id": "career_009429",
-      "opponent_name": "Chase Yost",
-      "opponent_team": "Woodford County",
+      "opponent_id": "11737344009",
+      "opponent_career_id": "career_009478",
+      "opponent_name": "Stanley Crawley",
+      "opponent_team": "Conner",
       "opponent_team_rank": null,
-      "opponent_weight": 138,
+      "opponent_weight": 150,
       "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "MD",
-      "score": "15-4",
-      "duration": "7:00",
+      "weight_class": "138/140",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:20",
       "event": "CIWT"
     },
     {
@@ -368,39 +373,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "CIWT"
-    },
-    {
-      "date": "2018-01-06",
-      "opponent_id": "11865905009",
-      "opponent_career_id": "career_011664",
-      "opponent_name": "Isaac Reed",
-      "opponent_team": "Woodford County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "CIWT"
-    },
-    {
-      "date": "2018-01-06",
-      "opponent_id": "11737344009",
-      "opponent_career_id": "career_009478",
-      "opponent_name": "Stanley Crawley",
-      "opponent_team": "Conner",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "138/140",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:20",
+      "duration": "1:44",
       "event": "CIWT"
     },
     {
@@ -423,8 +396,8 @@
       "date": "2018-01-06",
       "opponent_id": "OUTSTATE_15214566509f",
       "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Garrett Walton",
+      "opponent_team": "South Dearborn",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -433,6 +406,38 @@
       "method": "FF",
       "score": null,
       "duration": "7:00",
+      "event": "CIWT"
+    },
+    {
+      "date": "2018-01-06",
+      "opponent_id": "11642189009",
+      "opponent_career_id": "career_009429",
+      "opponent_name": "Chase Yost",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "MD",
+      "score": "15-4",
+      "duration": "7:00",
+      "event": "CIWT"
+    },
+    {
+      "date": "2018-01-06",
+      "opponent_id": "11865905009",
+      "opponent_career_id": "career_011664",
+      "opponent_name": "Isaac Reed",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
       "event": "CIWT"
     },
     {
@@ -485,22 +490,6 @@
     },
     {
       "date": "2017-12-30",
-      "opponent_id": "11628050009",
-      "opponent_career_id": "career_011456",
-      "opponent_name": "Davis Noah",
-      "opponent_team": "La Rue County",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Woodford County Invitational"
-    },
-    {
-      "date": "2017-12-30",
       "opponent_id": "12213152009",
       "opponent_career_id": "career_010565",
       "opponent_name": "Luke Goode",
@@ -512,6 +501,22 @@
       "result": "W",
       "method": "TF",
       "score": "18-3",
+      "duration": "0:00",
+      "event": "Woodford County Invitational"
+    },
+    {
+      "date": "2017-12-30",
+      "opponent_id": "11628050009",
+      "opponent_career_id": "career_011456",
+      "opponent_name": "Davis Noah",
+      "opponent_team": "La Rue County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
       "duration": "0:00",
       "event": "Woodford County Invitational"
     },
@@ -530,22 +535,6 @@
       "score": "5-4",
       "duration": "7:00",
       "event": "Woodford County Invitational"
-    },
-    {
-      "date": "2017-12-22",
-      "opponent_id": "12225740009",
-      "opponent_career_id": "career_011579",
-      "opponent_name": "Jaelyn Hamilton",
-      "opponent_team": "Trinity (Louisville)",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "DEC",
-      "score": "9-3",
-      "duration": "7:00",
-      "event": "Gladiator Individuals"
     },
     {
       "date": "2017-12-22",
@@ -576,6 +565,22 @@
       "result": "W",
       "method": "DEC",
       "score": "7-5",
+      "duration": "7:00",
+      "event": "Gladiator Individuals"
+    },
+    {
+      "date": "2017-12-22",
+      "opponent_id": "12225740009",
+      "opponent_career_id": "career_011579",
+      "opponent_name": "Jaelyn Hamilton",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-3",
       "duration": "7:00",
       "event": "Gladiator Individuals"
     },
@@ -629,22 +634,6 @@
     },
     {
       "date": "2017-12-16",
-      "opponent_id": "122569132",
-      "opponent_career_id": "career_011488",
-      "opponent_name": "Aaron Willoughby",
-      "opponent_team": "Montgomery County",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "DEC",
-      "score": "1-0",
-      "duration": "7:00",
-      "event": "Lafayette 5 Star Classic"
-    },
-    {
-      "date": "2017-12-16",
       "opponent_id": "236500132",
       "opponent_career_id": "career_011430",
       "opponent_name": "Ryan Perkins",
@@ -657,7 +646,7 @@
       "method": "MD",
       "score": "12-2",
       "duration": "7:00",
-      "event": "Lafayette 5 Star Classic"
+      "event": "Five Star Classic"
     },
     {
       "date": "2017-12-16",
@@ -674,6 +663,22 @@
       "score": "3-1",
       "duration": "7:00",
       "event": "5 STAR"
+    },
+    {
+      "date": "2017-12-16",
+      "opponent_id": "122569132",
+      "opponent_career_id": "career_011488",
+      "opponent_name": "Aaron Willoughby",
+      "opponent_team": "Montgomery County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": "1-0",
+      "duration": "7:00",
+      "event": "Lafayette 5 Star Classic"
     }
   ],
   "career": {
@@ -692,7 +697,7 @@
       "season": 2020,
       "grade": 12,
       "team": "South Oldham",
-      "record": "30-6",
+      "record": "29-6",
       "regional_place": 2,
       "state_place": 7
     },
@@ -700,7 +705,7 @@
       "season": 2019,
       "grade": 11,
       "team": "South Oldham",
-      "record": "34-6",
+      "record": "35-6",
       "regional_place": 1,
       "state_place": 5
     },
@@ -708,7 +713,7 @@
       "season": 2018,
       "grade": 10,
       "team": "South Oldham",
-      "record": "27-11",
+      "record": "29-11",
       "regional_place": 2,
       "state_place": 6
     },
@@ -716,7 +721,7 @@
       "season": 2017,
       "grade": 9,
       "team": "South Oldham",
-      "record": "31-16",
+      "record": "32-16",
       "regional_place": 2,
       "state_place": null
     },
@@ -730,9 +735,9 @@
     }
   ],
   "career_record": {
-    "wins": 122,
+    "wins": 125,
     "losses": 40,
-    "win_pct": 0.753
+    "win_pct": 0.758
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

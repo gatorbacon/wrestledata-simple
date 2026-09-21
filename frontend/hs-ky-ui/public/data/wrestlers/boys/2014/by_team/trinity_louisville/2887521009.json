@@ -5,10 +5,15 @@
   "team_slug": "trinity_louisville",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "5-15",
+    "overall": "5-18",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.833,
+    "pin_rate": 0.8,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 5
+    "pins": 4
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -81,42 +86,10 @@
       "method": "MD",
       "score": "17-7",
       "duration": "7:00",
-      "event": "Kentucky JV State"
+      "event": "Kentucky JV State Championships"
     },
     {
       "date": "2014-02-06",
-      "opponent_id": "2887387009",
-      "opponent_career_id": "career_015163",
-      "opponent_name": "Michael Keene",
-      "opponent_team": "St. Xavier",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:59",
-      "event": "Region 4 JV Tournament"
-    },
-    {
-      "date": "2014-01-30",
-      "opponent_id": "2886470009",
-      "opponent_career_id": "career_013094",
-      "opponent_name": "Rawleigh Richardson",
-      "opponent_team": "Jeffersontown",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:03",
-      "event": "Region 4 JV Tournament"
-    },
-    {
-      "date": "2014-01-30",
       "opponent_id": "2887387009",
       "opponent_career_id": "career_015163",
       "opponent_name": "Michael Keene",
@@ -149,6 +122,22 @@
     },
     {
       "date": "2014-01-18",
+      "opponent_id": "2887321009",
+      "opponent_career_id": "career_012346",
+      "opponent_name": "Brad Bailey",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-3",
+      "duration": "7:00",
+      "event": "vs. South Oldham"
+    },
+    {
+      "date": "2014-01-18",
       "opponent_id": "2886133009",
       "opponent_career_id": "career_013052",
       "opponent_name": "Jacob Young",
@@ -164,22 +153,6 @@
       "event": "vs. Eastern"
     },
     {
-      "date": "2014-01-18",
-      "opponent_id": "2887321009",
-      "opponent_career_id": "career_012346",
-      "opponent_name": "Brad Bailey",
-      "opponent_team": "South Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "DEC",
-      "score": "7-3",
-      "duration": "7:00",
-      "event": "vs. Trinity (Louisville)"
-    },
-    {
       "date": "2014-01-11",
       "opponent_id": "2887131009",
       "opponent_career_id": "career_014069",
@@ -193,7 +166,7 @@
       "method": "DEC",
       "score": "12-7",
       "duration": "7:00",
-      "event": "Jefferson County Tournament of Champions"
+      "event": "Jeff Co. Tourney"
     },
     {
       "date": "2014-01-11",
@@ -451,7 +424,7 @@
       "season": 2017,
       "grade": 12,
       "team": "Trinity (Louisville)",
-      "record": "2-9",
+      "record": "6-10",
       "regional_place": 4,
       "state_place": null
     },
@@ -475,15 +448,15 @@
       "season": 2014,
       "grade": null,
       "team": "Trinity (Louisville)",
-      "record": "5-15",
+      "record": "5-18",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 13,
-    "losses": 27,
-    "win_pct": 0.325
+    "wins": 17,
+    "losses": 31,
+    "win_pct": 0.354
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

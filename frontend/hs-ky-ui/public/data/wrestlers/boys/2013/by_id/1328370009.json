@@ -5,10 +5,15 @@
   "team_slug": "jeffersontown",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "17-9",
+    "overall": "18-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -81,7 +86,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:53",
-      "event": "Regional"
+      "event": "KHSAA Region 5"
     },
     {
       "date": "2013-02-09",
@@ -293,6 +298,22 @@
     },
     {
       "date": "2012-12-22",
+      "opponent_id": "1296568009",
+      "opponent_career_id": "career_016323",
+      "opponent_name": "Erik Pina",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
+      "event": "Lafeyette Invitational"
+    },
+    {
+      "date": "2012-12-22",
       "opponent_id": "1392776009",
       "opponent_career_id": "career_014271",
       "opponent_name": "Jared Turner",
@@ -340,20 +361,20 @@
       "event": "Lafeyette Invitational"
     },
     {
-      "date": "2012-12-22",
-      "opponent_id": "1296568009",
-      "opponent_career_id": "career_016323",
-      "opponent_name": "Erik Pina",
-      "opponent_team": "Franklin County",
+      "date": "2012-12-08",
+      "opponent_id": "1236387009",
+      "opponent_career_id": "career_016165",
+      "opponent_name": "Dallin Tritapoe",
+      "opponent_team": "Boyle County",
       "opponent_team_rank": null,
-      "opponent_weight": 165,
+      "opponent_weight": 157,
       "opponent_rank": null,
       "weight_class": "157",
-      "result": "L",
+      "result": "W",
       "method": "DEC",
-      "score": "5-4",
+      "score": "9-4",
       "duration": "7:00",
-      "event": "Lafayette Inviational"
+      "event": "King of Bluegrass"
     },
     {
       "date": "2012-12-08",
@@ -369,7 +390,7 @@
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
-      "event": "King of the Bluegrass (Fairdale)"
+      "event": "King of Bluegrass"
     },
     {
       "date": "2012-12-08",
@@ -385,7 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:46",
-      "event": "KING OF THE BLUEGRASS @ FAIRDALE HS"
+      "event": "King of Bluegrass"
     },
     {
       "date": "2012-12-08",
@@ -404,20 +425,20 @@
       "event": "King of Bluegrass"
     },
     {
-      "date": "2012-12-08",
-      "opponent_id": "1236387009",
-      "opponent_career_id": "career_016165",
-      "opponent_name": "Dallin Tritapoe",
-      "opponent_team": "Boyle County",
+      "date": "2012-12-01",
+      "opponent_id": "1275553009",
+      "opponent_career_id": "career_016267",
+      "opponent_name": "Kaven Stockton",
+      "opponent_team": "Dixie Heights",
       "opponent_team_rank": null,
       "opponent_weight": 157,
       "opponent_rank": null,
       "weight_class": "157",
       "result": "W",
-      "method": "DEC",
-      "score": "9-4",
-      "duration": "7:00",
-      "event": "King of the Bluegrass"
+      "method": "FALL",
+      "score": null,
+      "duration": "0:29",
+      "event": "vs. Dixie Heights"
     },
     {
       "date": "2012-12-01",
@@ -433,23 +454,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:57",
-      "event": "vs. Jeffersontown"
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2012-12-01",
-      "opponent_id": "1275553009",
-      "opponent_career_id": "career_016267",
-      "opponent_name": "Kaven Stockton",
-      "opponent_team": "Dixie Heights",
+      "opponent_id": "OUTSTATE_0534094d0eee",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Boone County",
       "opponent_team_rank": null,
-      "opponent_weight": 157,
+      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "157",
       "result": "W",
-      "method": "FALL",
+      "method": "FF",
       "score": null,
-      "duration": "0:29",
-      "event": "vs. Jeffersontown"
+      "duration": "7:00",
+      "event": "vs. Boone County"
     },
     {
       "date": "2012-12-01",
@@ -481,30 +502,15 @@
       "method": "FALL",
       "score": null,
       "duration": "2:42",
-      "event": "vs. Jeffersontown"
-    },
-    {
-      "date": "2012-12-01",
-      "opponent_id": "OUTSTATE_0534094d0eee",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Boone County",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Boone County"
+      "event": "vs. University Heights"
     }
   ],
   "career": {
     "career_id": "career_015974",
     "canonical_name": "Ty Bennett",
     "seasons": [
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -512,15 +518,23 @@
       "season": 2013,
       "grade": null,
       "team": "Jeffersontown",
-      "record": "17-9",
+      "record": "18-11",
       "regional_place": 4,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 11,
+      "team": "Jeffersontown",
+      "record": "1-2",
+      "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 17,
-    "losses": 9,
-    "win_pct": 0.654
+    "wins": 19,
+    "losses": 13,
+    "win_pct": 0.594
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

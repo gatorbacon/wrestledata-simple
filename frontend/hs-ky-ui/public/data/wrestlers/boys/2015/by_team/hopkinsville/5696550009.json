@@ -5,6 +5,11 @@
   "team_slug": "hopkinsville",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
@@ -81,7 +86,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:22",
-      "event": "vs. Hopkinsville"
+      "event": "vs. Calloway County"
     },
     {
       "date": "2015-01-08",
@@ -101,6 +106,22 @@
     },
     {
       "date": "2015-01-03",
+      "opponent_id": "24876076",
+      "opponent_career_id": "career_013021",
+      "opponent_name": "Kobe Perry",
+      "opponent_team": "Christian County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:23",
+      "event": "vs. Christian County"
+    },
+    {
+      "date": "2015-01-03",
       "opponent_id": "41570071",
       "opponent_career_id": "career_014048",
       "opponent_name": "Brian Miller",
@@ -114,38 +135,6 @@
       "score": null,
       "duration": "2:39",
       "event": "vs. Ohio County"
-    },
-    {
-      "date": "2015-01-03",
-      "opponent_id": "89296076",
-      "opponent_career_id": "career_013370",
-      "opponent_name": "Evan Martin",
-      "opponent_team": "McCracken County",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:04",
-      "event": "vs. McCracken County"
-    },
-    {
-      "date": "2015-01-03",
-      "opponent_id": "24876076",
-      "opponent_career_id": "career_013021",
-      "opponent_name": "Kobe Perry",
-      "opponent_team": "Christian County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:23",
-      "event": "vs. Hopkinsville"
     },
     {
       "date": "2015-01-03",
@@ -178,6 +167,22 @@
       "score": "12-6",
       "duration": "7:00",
       "event": "vs. Owensboro"
+    },
+    {
+      "date": "2015-01-03",
+      "opponent_id": "89296076",
+      "opponent_career_id": "career_013370",
+      "opponent_name": "Evan Martin",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:04",
+      "event": "vs. McCracken County"
     },
     {
       "date": "2014-12-29",
@@ -277,22 +282,6 @@
     },
     {
       "date": "2014-12-13",
-      "opponent_id": "1632011",
-      "opponent_career_id": null,
-      "opponent_name": "Will Baker",
-      "opponent_team": "Clarksville",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "MD",
-      "score": "14-0",
-      "duration": "7:00",
-      "event": "vs. Clarksville"
-    },
-    {
-      "date": "2014-12-13",
       "opponent_id": "12750011",
       "opponent_career_id": null,
       "opponent_name": "Daniel Funkugub",
@@ -322,6 +311,22 @@
       "score": "14-8",
       "duration": "7:00",
       "event": "vs. Northwest"
+    },
+    {
+      "date": "2014-12-13",
+      "opponent_id": "1632011",
+      "opponent_career_id": null,
+      "opponent_name": "Will Baker",
+      "opponent_team": "Clarksville",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "MD",
+      "score": "14-0",
+      "duration": "7:00",
+      "event": "vs. Clarksville"
     },
     {
       "date": "2014-12-13",
@@ -435,5 +440,5 @@
     "losses": 20,
     "win_pct": 0.2
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

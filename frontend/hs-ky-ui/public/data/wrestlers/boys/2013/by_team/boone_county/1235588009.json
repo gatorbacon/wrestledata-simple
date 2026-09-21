@@ -5,10 +5,15 @@
   "team_slug": "boone_county",
   "team_rank": null,
   "weight_class": 106,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "22-19",
+    "overall": "25-22",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,10 +25,10 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.733,
-    "bonus_rate": 0.8,
+    "pin_rate": 0.647,
+    "bonus_rate": 0.765,
     "majors": 0,
-    "techs": 1,
+    "techs": 2,
     "pins": 11
   },
   "opponent_breakdown": {
@@ -196,6 +201,22 @@
       "event": "Lockland Invitational"
     },
     {
+      "date": "2013-01-26",
+      "opponent_id": "1377615009",
+      "opponent_career_id": "career_012303",
+      "opponent_name": "Lonnie Usleaman",
+      "opponent_team": "Newport",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "SV-1",
+      "score": "9-8",
+      "duration": "8:15",
+      "event": "Lockland Invitational"
+    },
+    {
       "date": "2013-01-19",
       "opponent_id": "1217891009",
       "opponent_career_id": "career_013879",
@@ -213,17 +234,17 @@
     },
     {
       "date": "2013-01-19",
-      "opponent_id": "1242705009",
-      "opponent_career_id": "career_014501",
-      "opponent_name": "Caleb Hammons",
-      "opponent_team": "Caldwell County",
+      "opponent_id": "1306769009",
+      "opponent_career_id": "career_015384",
+      "opponent_name": "Thomas Gripsover",
+      "opponent_team": "Grant County",
       "opponent_team_rank": null,
       "opponent_weight": 106,
       "opponent_rank": null,
       "weight_class": "106",
       "result": "W",
-      "method": "FALL",
-      "score": null,
+      "method": "TF",
+      "score": "15-0",
       "duration": "0:00",
       "event": "Capital City Classic"
     },
@@ -240,8 +261,24 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "1:00",
-      "event": "capitalcityclassic"
+      "duration": "0:50",
+      "event": "Capital City Classic"
+    },
+    {
+      "date": "2013-01-19",
+      "opponent_id": "1242705009",
+      "opponent_career_id": "career_014501",
+      "opponent_name": "Caleb Hammons",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:43",
+      "event": "Capital City Classic"
     },
     {
       "date": "2013-01-12",
@@ -464,7 +501,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:11",
       "event": "NKAC"
     },
     {
@@ -753,7 +790,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:42",
-      "event": "vs. Boone County"
+      "event": "vs. Newport"
     }
   ],
   "career": {
@@ -771,7 +808,7 @@
       "season": 2016,
       "grade": 12,
       "team": "Boone County",
-      "record": "35-12",
+      "record": "36-12",
       "regional_place": 4,
       "state_place": null
     },
@@ -779,7 +816,7 @@
       "season": 2015,
       "grade": 11,
       "team": "Boone County",
-      "record": "46-19",
+      "record": "46-17",
       "regional_place": 4,
       "state_place": null
     },
@@ -787,7 +824,7 @@
       "season": 2014,
       "grade": null,
       "team": "Boone County",
-      "record": "28-20",
+      "record": "30-22",
       "regional_place": 4,
       "state_place": null
     },
@@ -795,15 +832,15 @@
       "season": 2013,
       "grade": null,
       "team": "Boone County",
-      "record": "22-19",
+      "record": "25-22",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 131,
-    "losses": 70,
+    "wins": 137,
+    "losses": 73,
     "win_pct": 0.652
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,6 +5,11 @@
   "team_slug": "lexington_catholic",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
@@ -37,22 +42,6 @@
   "match_list": [
     {
       "date": "2015-01-28",
-      "opponent_id": "OUTSTATE_3e7053701b0d",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Bryan Station",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Bryan Station"
-    },
-    {
-      "date": "2015-01-28",
       "opponent_id": "30581094",
       "opponent_career_id": "career_012678",
       "opponent_name": "Tanner Stacy",
@@ -68,20 +57,20 @@
       "event": "vs. Bourbon County"
     },
     {
-      "date": "2015-01-17",
-      "opponent_id": "5367255009",
-      "opponent_career_id": "career_011500",
-      "opponent_name": "Alex Herald",
-      "opponent_team": "Newport",
+      "date": "2015-01-28",
+      "opponent_id": "OUTSTATE_3e7053701b0d",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Bryan Station",
       "opponent_team_rank": null,
-      "opponent_weight": 106,
+      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
+      "result": "W",
+      "method": "FF",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Newport"
+      "duration": "7:00",
+      "event": "vs. Bryan Station"
     },
     {
       "date": "2015-01-17",
@@ -100,11 +89,11 @@
       "event": "vs. Scott"
     },
     {
-      "date": "2015-01-10",
-      "opponent_id": "65849071",
-      "opponent_career_id": "career_013823",
-      "opponent_name": "Bryce Reiter",
-      "opponent_team": "Thomas Nelson",
+      "date": "2015-01-17",
+      "opponent_id": "5367255009",
+      "opponent_career_id": "career_011500",
+      "opponent_name": "Alex Herald",
+      "opponent_team": "Newport",
       "opponent_team_rank": null,
       "opponent_weight": 106,
       "opponent_rank": null,
@@ -113,23 +102,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Jaguar Jungle Classic"
-    },
-    {
-      "date": "2015-01-10",
-      "opponent_id": "64996071",
-      "opponent_career_id": null,
-      "opponent_name": "Owen Lewis",
-      "opponent_team": "Purcell Marian",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Jaguar Jungle Classic"
+      "event": "vs. Newport"
     },
     {
       "date": "2015-01-10",
@@ -177,6 +150,38 @@
       "method": "INJ",
       "score": null,
       "duration": "7:00",
+      "event": "Jaguar Jungle Classic"
+    },
+    {
+      "date": "2015-01-10",
+      "opponent_id": "65849071",
+      "opponent_career_id": "career_013823",
+      "opponent_name": "Bryce Reiter",
+      "opponent_team": "Thomas Nelson",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Jaguar Jungle Classic"
+    },
+    {
+      "date": "2015-01-10",
+      "opponent_id": "64996071",
+      "opponent_career_id": null,
+      "opponent_name": "Owen Lewis",
+      "opponent_team": "Purcell Marian",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
       "event": "Jaguar Jungle Classic"
     },
     {
@@ -245,22 +250,6 @@
     },
     {
       "date": "2014-12-13",
-      "opponent_id": "26196076",
-      "opponent_career_id": "career_011376",
-      "opponent_name": "Hayden Shepherd",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Lexington Catholic"
-    },
-    {
-      "date": "2014-12-13",
       "opponent_id": "12510071",
       "opponent_career_id": "career_012167",
       "opponent_name": "Travis Coovert",
@@ -273,7 +262,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:39",
-      "event": "vs. Lexington Catholic"
+      "event": "vs. Boone County"
+    },
+    {
+      "date": "2014-12-13",
+      "opponent_id": "26196076",
+      "opponent_career_id": "career_011376",
+      "opponent_name": "Hayden Shepherd",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Boyle County"
     },
     {
       "date": "2014-12-13",
@@ -330,5 +335,5 @@
     "losses": 13,
     "win_pct": 0.235
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

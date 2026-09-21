@@ -5,6 +5,11 @@
   "team_slug": "scott",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
@@ -37,6 +42,22 @@
   "match_list": [
     {
       "date": "2012-11-24",
+      "opponent_id": "1291484009",
+      "opponent_career_id": "career_015032",
+      "opponent_name": "Austin Woods",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Fern Creek"
+    },
+    {
+      "date": "2012-11-24",
       "opponent_id": "1369713009",
       "opponent_career_id": "career_015109",
       "opponent_name": "Spencer Harper",
@@ -49,7 +70,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:34",
-      "event": "vs. Scott"
+      "event": "vs. Moore"
     },
     {
       "date": "2012-11-24",
@@ -65,7 +86,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:48",
-      "event": "vs. Scott"
+      "event": "vs. Moore"
     },
     {
       "date": "2012-11-24",
@@ -98,22 +119,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. St. Xavier"
-    },
-    {
-      "date": "2012-11-24",
-      "opponent_id": "1291484009",
-      "opponent_career_id": "career_015032",
-      "opponent_name": "Austin Woods",
-      "opponent_team": "Fern Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Scott"
     }
   ],
   "career": {
@@ -138,5 +143,5 @@
     "losses": 4,
     "win_pct": 0.2
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

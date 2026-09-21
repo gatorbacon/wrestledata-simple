@@ -5,10 +5,15 @@
   "team_slug": "central",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
-    "overall": "27-35",
+    "overall": "29-36",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.87,
-    "bonus_rate": 0.87,
+    "pin_rate": 0.875,
+    "bonus_rate": 0.875,
     "majors": 0,
     "techs": 0,
-    "pins": 20
+    "pins": 21
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -165,6 +170,22 @@
     },
     {
       "date": "2015-01-31",
+      "opponent_id": "5948821009",
+      "opponent_career_id": "career_013235",
+      "opponent_name": "Freddie Winston",
+      "opponent_team": "Western",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-3",
+      "duration": "7:00",
+      "event": "Shark Bait Tourney"
+    },
+    {
+      "date": "2015-01-31",
       "opponent_id": "7620071",
       "opponent_career_id": "career_014607",
       "opponent_name": "Chris Salinas",
@@ -289,23 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:24",
-      "event": "vs. Central"
-    },
-    {
-      "date": "2015-01-17",
-      "opponent_id": "7624071",
-      "opponent_career_id": "career_014001",
-      "opponent_name": "Cole Zehnder",
-      "opponent_team": "Jeffersontown",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:14",
-      "event": "vs. Jeffersontown"
+      "event": "vs. Atherton"
     },
     {
       "date": "2015-01-17",
@@ -338,6 +343,22 @@
       "score": null,
       "duration": "1:48",
       "event": "vs. Dupont Manual"
+    },
+    {
+      "date": "2015-01-17",
+      "opponent_id": "7624071",
+      "opponent_career_id": "career_014001",
+      "opponent_name": "Cole Zehnder",
+      "opponent_team": "Jeffersontown",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:14",
+      "event": "vs. Jeffersontown"
     },
     {
       "date": "2015-01-17",
@@ -512,7 +533,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "1:26",
+      "duration": "0:34",
       "event": "Derby City Classic"
     },
     {
@@ -561,7 +582,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:46",
-      "event": "vs. Central"
+      "event": "vs. Apollo"
     },
     {
       "date": "2014-12-23",
@@ -581,38 +602,6 @@
     },
     {
       "date": "2014-12-22",
-      "opponent_id": "5616776009",
-      "opponent_career_id": "career_014293",
-      "opponent_name": "Cody Thomas",
-      "opponent_team": "Central Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:21",
-      "event": "vs. Central Hardin"
-    },
-    {
-      "date": "2014-12-22",
-      "opponent_id": "31707076",
-      "opponent_career_id": "career_013087",
-      "opponent_name": "Ansar Kurbanov",
-      "opponent_team": "Iroquois",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:00",
-      "event": "vs. Iroquois"
-    },
-    {
-      "date": "2014-12-22",
       "opponent_id": "5402058009",
       "opponent_career_id": "career_011457",
       "opponent_name": "Dalton Bell",
@@ -626,6 +615,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. La Rue County"
+    },
+    {
+      "date": "2014-12-22",
+      "opponent_id": "5616776009",
+      "opponent_career_id": "career_014293",
+      "opponent_name": "Cody Thomas",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:21",
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2014-12-22",
@@ -677,6 +682,22 @@
     },
     {
       "date": "2014-12-22",
+      "opponent_id": "31707076",
+      "opponent_career_id": "career_013087",
+      "opponent_name": "Ansar Kurbanov",
+      "opponent_team": "Iroquois",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:00",
+      "event": "vs. Iroquois"
+    },
+    {
+      "date": "2014-12-22",
       "opponent_id": "24883076",
       "opponent_career_id": "career_013020",
       "opponent_name": "Camerin Cole",
@@ -705,7 +726,7 @@
       "method": "DEC",
       "score": "10-9",
       "duration": "7:00",
-      "event": "vs. Central"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2014-12-20",
@@ -773,22 +794,6 @@
     },
     {
       "date": "2014-12-13",
-      "opponent_id": "81784076",
-      "opponent_career_id": "career_013928",
-      "opponent_name": "Zack Phillips",
-      "opponent_team": "Danville",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:43",
-      "event": "vs. Danville"
-    },
-    {
-      "date": "2014-12-13",
       "opponent_id": "16651076",
       "opponent_career_id": "career_013424",
       "opponent_name": "Cade Wagoner",
@@ -801,7 +806,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:26",
-      "event": "vs. Central"
+      "event": "vs. Bourbon County"
     },
     {
       "date": "2014-12-13",
@@ -818,6 +823,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Tates Creek"
+    },
+    {
+      "date": "2014-12-13",
+      "opponent_id": "81784076",
+      "opponent_career_id": "career_013928",
+      "opponent_name": "Zack Phillips",
+      "opponent_team": "Danville",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:43",
+      "event": "vs. Danville"
     },
     {
       "date": "2014-12-13",
@@ -897,7 +918,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Central"
+      "event": "vs. Bullitt Central"
     },
     {
       "date": "2014-12-06",
@@ -913,7 +934,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:00",
-      "event": "vs. Central"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2014-12-06",
@@ -977,7 +998,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Central"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2014-12-05",
@@ -993,7 +1014,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:05",
-      "event": "vs. Central"
+      "event": "vs. Pleasure Ridge Park"
     },
     {
       "date": "2014-12-03",
@@ -1009,7 +1030,7 @@
       "method": "DEC",
       "score": "12-7",
       "duration": "7:00",
-      "event": "vs. Central"
+      "event": "vs. Atherton"
     },
     {
       "date": "2014-12-03",
@@ -1025,7 +1046,7 @@
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
-      "event": "vs. Central"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2014-12-03",
@@ -1041,6 +1062,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:56",
+      "event": "vs. Desales"
+    },
+    {
+      "date": "2014-12-03",
+      "opponent_id": "5544082009",
+      "opponent_career_id": "career_012206",
+      "opponent_name": "Luke Sivado",
+      "opponent_team": "Desales",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:08",
       "event": "vs. Desales"
     }
   ],
@@ -1059,7 +1096,7 @@
       "season": 2016,
       "grade": 12,
       "team": "Central",
-      "record": "38-24",
+      "record": "37-24",
       "regional_place": 4,
       "state_place": null
     },
@@ -1067,7 +1104,7 @@
       "season": 2015,
       "grade": 11,
       "team": "Central",
-      "record": "27-35",
+      "record": "29-36",
       "regional_place": null,
       "state_place": null
     },
@@ -1075,7 +1112,7 @@
       "season": 2014,
       "grade": null,
       "team": "Central",
-      "record": "22-16",
+      "record": "24-18",
       "regional_place": 4,
       "state_place": null
     },
@@ -1083,15 +1120,15 @@
       "season": 2013,
       "grade": null,
       "team": "Central",
-      "record": "18-26",
+      "record": "20-28",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 105,
-    "losses": 101,
-    "win_pct": 0.51
+    "wins": 110,
+    "losses": 106,
+    "win_pct": 0.509
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

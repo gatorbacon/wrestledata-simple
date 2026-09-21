@@ -5,6 +5,11 @@
   "team_slug": "johnson_central",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
@@ -177,7 +182,7 @@
       "method": "TF",
       "score": "15-0",
       "duration": "0:00",
-      "event": "vs. Johnson Central"
+      "event": "vs. Central"
     },
     {
       "date": "2013-01-26",
@@ -405,54 +410,6 @@
     },
     {
       "date": "2013-01-05",
-      "opponent_id": "1308207009",
-      "opponent_career_id": null,
-      "opponent_name": "Gus Patterson",
-      "opponent_team": "Greenbrier West Hs",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:28",
-      "event": "vs. Greenbrier West Hs"
-    },
-    {
-      "date": "2013-01-05",
-      "opponent_id": "1334675009",
-      "opponent_career_id": null,
-      "opponent_name": "Jon Evans",
-      "opponent_team": "Keyser",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:27",
-      "event": "vs. Keyser"
-    },
-    {
-      "date": "2013-01-05",
-      "opponent_id": "1428581009",
-      "opponent_career_id": null,
-      "opponent_name": "Nicholas Farley",
-      "opponent_team": "Shady Spring",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "DEC",
-      "score": "7-4",
-      "duration": "7:00",
-      "event": "vs. Shady Spring"
-    },
-    {
-      "date": "2013-01-05",
       "opponent_id": "1259200009",
       "opponent_career_id": null,
       "opponent_name": "Austin Dobbins",
@@ -469,6 +426,22 @@
     },
     {
       "date": "2013-01-05",
+      "opponent_id": "1308207009",
+      "opponent_career_id": null,
+      "opponent_name": "Gus Patterson",
+      "opponent_team": "Greenbrier West Hs",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:28",
+      "event": "vs. Greenbrier West Hs"
+    },
+    {
+      "date": "2013-01-05",
       "opponent_id": "1309684009",
       "opponent_career_id": null,
       "opponent_name": "Elliott Pedigo",
@@ -482,6 +455,22 @@
       "score": "7-2",
       "duration": "7:00",
       "event": "vs. Grundy"
+    },
+    {
+      "date": "2013-01-05",
+      "opponent_id": "1334675009",
+      "opponent_career_id": null,
+      "opponent_name": "Jon Evans",
+      "opponent_team": "Keyser",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:27",
+      "event": "vs. Keyser"
     },
     {
       "date": "2013-01-05",
@@ -530,6 +519,22 @@
       "score": null,
       "duration": "3:36",
       "event": "vs. Richwood"
+    },
+    {
+      "date": "2013-01-05",
+      "opponent_id": "1428581009",
+      "opponent_career_id": null,
+      "opponent_name": "Nicholas Farley",
+      "opponent_team": "Shady Spring",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-4",
+      "duration": "7:00",
+      "event": "vs. Shady Spring"
     },
     {
       "date": "2012-12-29",
@@ -697,7 +702,9 @@
     "canonical_name": "Josh Jude",
     "seasons": [
       2014,
-      2013
+      2013,
+      2012,
+      2011
     ]
   },
   "season_summary": [
@@ -705,7 +712,7 @@
       "season": 2014,
       "grade": null,
       "team": "Johnson Central",
-      "record": "32-6",
+      "record": "36-8",
       "regional_place": 1,
       "state_place": null
     },
@@ -716,12 +723,28 @@
       "record": "33-8",
       "regional_place": 2,
       "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 10,
+      "team": "Johnson Central",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2011,
+      "grade": 9,
+      "team": "Johnson Central",
+      "record": "3-2",
+      "regional_place": null,
+      "state_place": null
     }
   ],
   "career_record": {
-    "wins": 65,
-    "losses": 14,
-    "win_pct": 0.823
+    "wins": 74,
+    "losses": 20,
+    "win_pct": 0.787
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

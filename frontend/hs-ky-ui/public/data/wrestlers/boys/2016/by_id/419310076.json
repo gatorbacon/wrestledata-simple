@@ -5,6 +5,11 @@
   "team_slug": "christian_county",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
@@ -133,22 +138,6 @@
     },
     {
       "date": "2016-01-30",
-      "opponent_id": "8069091009",
-      "opponent_career_id": "career_013255",
-      "opponent_name": "Alex Lee",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "DEC",
-      "score": "4-0",
-      "duration": "7:00",
-      "event": "vs. Meade County"
-    },
-    {
-      "date": "2016-01-30",
       "opponent_id": "290793013",
       "opponent_career_id": "career_011467",
       "opponent_name": "Will Keeney",
@@ -162,6 +151,22 @@
       "score": "12-3",
       "duration": "7:00",
       "event": "vs. Madison Central"
+    },
+    {
+      "date": "2016-01-30",
+      "opponent_id": "8069091009",
+      "opponent_career_id": "career_013255",
+      "opponent_name": "Alex Lee",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-0",
+      "duration": "7:00",
+      "event": "vs. Meade County"
     },
     {
       "date": "2016-01-30",
@@ -181,22 +186,6 @@
     },
     {
       "date": "2016-01-28",
-      "opponent_id": "288087011",
-      "opponent_career_id": "career_013084",
-      "opponent_name": "Jacob Turley",
-      "opponent_team": "Hopkinsville",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:36",
-      "event": "vs. Hopkinsville"
-    },
-    {
-      "date": "2016-01-28",
       "opponent_id": "8138609009",
       "opponent_career_id": "career_013356",
       "opponent_name": "Zach Diaz",
@@ -210,6 +199,22 @@
       "score": null,
       "duration": "0:38",
       "event": "vs. Fort Campbell"
+    },
+    {
+      "date": "2016-01-28",
+      "opponent_id": "288087011",
+      "opponent_career_id": "career_013084",
+      "opponent_name": "Jacob Turley",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:36",
+      "event": "vs. Hopkinsville"
     },
     {
       "date": "2016-01-28",
@@ -449,7 +454,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:59",
-      "event": "vs. Christian County"
+      "event": "vs. Apollo"
     },
     {
       "date": "2016-01-02",
@@ -561,39 +566,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:45",
-      "event": "vs. Christian County"
-    },
-    {
-      "date": "2015-12-23",
-      "opponent_id": "358313107",
-      "opponent_career_id": null,
-      "opponent_name": "Dylan Raisor",
-      "opponent_team": "Corydon Wrestling",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:35",
-      "event": "vs. Corydon Wrestling"
-    },
-    {
-      "date": "2015-12-23",
-      "opponent_id": "340981094",
-      "opponent_career_id": "career_013610",
-      "opponent_name": "Adam Worful",
-      "opponent_team": "Desales",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:50",
-      "event": "vs. Desales"
+      "event": "vs. Apollo"
     },
     {
       "date": "2015-12-23",
@@ -628,6 +601,38 @@
       "event": "vs. La Rue County"
     },
     {
+      "date": "2015-12-23",
+      "opponent_id": "358313107",
+      "opponent_career_id": null,
+      "opponent_name": "Dylan Raisor",
+      "opponent_team": "Corydon Wrestling",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:35",
+      "event": "vs. Corydon Wrestling"
+    },
+    {
+      "date": "2015-12-23",
+      "opponent_id": "340981094",
+      "opponent_career_id": "career_013610",
+      "opponent_name": "Adam Worful",
+      "opponent_team": "Desales",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:50",
+      "event": "vs. Desales"
+    },
+    {
       "date": "2015-12-22",
       "opponent_id": "320012010",
       "opponent_career_id": "career_013269",
@@ -641,7 +646,7 @@
       "method": "DEC",
       "score": "8-6",
       "duration": "7:00",
-      "event": "vs. Christian County"
+      "event": "vs. Central"
     },
     {
       "date": "2015-12-22",
@@ -657,7 +662,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:51",
-      "event": "vs. Christian County"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2015-12-22",
@@ -741,6 +746,22 @@
     },
     {
       "date": "2015-12-19",
+      "opponent_id": "-1",
+      "opponent_career_id": null,
+      "opponent_name": "Carlos Monroy",
+      "opponent_team": "Jeffersonville Red Devils",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "MD",
+      "score": "13-2",
+      "duration": "7:00",
+      "event": "Cape Central Tiger Classic"
+    },
+    {
+      "date": "2015-12-19",
       "opponent_id": "351919094",
       "opponent_career_id": null,
       "opponent_name": "Jake Byrd",
@@ -786,22 +807,6 @@
       "score": "10-2",
       "duration": "7:00",
       "event": "Cape Central Tiger Classic"
-    },
-    {
-      "date": "2015-12-19",
-      "opponent_id": "-1",
-      "opponent_career_id": null,
-      "opponent_name": "Carlos Monroy",
-      "opponent_team": "Jeffersonville Red Devils",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "MD",
-      "score": "13-2",
-      "duration": "7:00",
-      "event": "Cape Central Tiger Classic"
     }
   ],
   "career": {
@@ -825,15 +830,15 @@
       "season": 2015,
       "grade": 11,
       "team": "Christian County",
-      "record": "4-14",
+      "record": "4-15",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 32,
-    "losses": 34,
-    "win_pct": 0.485
+    "losses": 35,
+    "win_pct": 0.478
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

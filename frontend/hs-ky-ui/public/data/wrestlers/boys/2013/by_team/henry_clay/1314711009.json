@@ -5,10 +5,15 @@
   "team_slug": "henry_clay",
   "team_rank": null,
   "weight_class": 215,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "18-10",
+    "overall": "23-10",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -241,7 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:33",
-      "event": "vs. Henry Clay"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2013-01-30",
@@ -257,7 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:55",
-      "event": "vs. Henry Clay"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2013-01-26",
@@ -309,22 +314,6 @@
     },
     {
       "date": "2013-01-19",
-      "opponent_id": "1296576009",
-      "opponent_career_id": "career_016325",
-      "opponent_name": "Jose Rebolledo",
-      "opponent_team": "Franklin County",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "L",
-      "method": "DEC",
-      "score": "8-7",
-      "duration": "7:00",
-      "event": "Capital City Championship"
-    },
-    {
-      "date": "2013-01-19",
       "opponent_id": "1236384009",
       "opponent_career_id": "career_016166",
       "opponent_name": "Austin Muntz",
@@ -337,7 +326,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:46",
-      "event": "Capital City Classic at Franklin County High School"
+      "event": "Franklin county invitational"
+    },
+    {
+      "date": "2013-01-19",
+      "opponent_id": "1296576009",
+      "opponent_career_id": "career_016325",
+      "opponent_name": "Jose Rebolledo",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-7",
+      "duration": "7:00",
+      "event": "Franklin county invitational"
     },
     {
       "date": "2013-01-19",
@@ -353,7 +358,7 @@
       "method": "DEC",
       "score": "6-1",
       "duration": "7:00",
-      "event": "Capital City Championship"
+      "event": "Franklin county invitational"
     },
     {
       "date": "2013-01-12",
@@ -373,22 +378,6 @@
     },
     {
       "date": "2013-01-12",
-      "opponent_id": "1369123009",
-      "opponent_career_id": "career_016438",
-      "opponent_name": "Anthony Dibell",
-      "opponent_team": "Montgomery County",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Henry Clay"
-    },
-    {
-      "date": "2013-01-12",
       "opponent_id": "1476097009",
       "opponent_career_id": "career_014882",
       "opponent_name": "Brandon Lawson",
@@ -405,6 +394,22 @@
     },
     {
       "date": "2013-01-12",
+      "opponent_id": "1369123009",
+      "opponent_career_id": "career_016438",
+      "opponent_name": "Anthony Dibell",
+      "opponent_team": "Montgomery County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Montgomery County"
+    },
+    {
+      "date": "2013-01-12",
       "opponent_id": "1480228009",
       "opponent_career_id": "career_014227",
       "opponent_name": "Nate Hill",
@@ -417,7 +422,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:45",
-      "event": "vs. Henry Clay"
+      "event": "vs. Woodford County"
     },
     {
       "date": "2012-12-15",
@@ -449,7 +454,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:04",
-      "event": "King of the Bluegrass (Fairdale)"
+      "event": "King of the Bluegrass"
     },
     {
       "date": "2012-12-08",
@@ -517,22 +522,6 @@
     },
     {
       "date": "2012-12-01",
-      "opponent_id": "1464195009",
-      "opponent_career_id": "career_016636",
-      "opponent_name": "Wolfgang Davis",
-      "opponent_team": "Walton Verona",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "L",
-      "method": "DEC",
-      "score": "8-6",
-      "duration": "7:00",
-      "event": "vs. Walton Verona"
-    },
-    {
-      "date": "2012-12-01",
       "opponent_id": "1338247009",
       "opponent_career_id": "career_015987",
       "opponent_name": "Taylor Cobb",
@@ -562,13 +551,30 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Turpin"
+    },
+    {
+      "date": "2012-12-01",
+      "opponent_id": "1464195009",
+      "opponent_career_id": "career_016636",
+      "opponent_name": "Wolfgang Davis",
+      "opponent_team": "Walton Verona",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-6",
+      "duration": "7:00",
+      "event": "vs. Walton Verona"
     }
   ],
   "career": {
     "career_id": "career_015956",
     "canonical_name": "Zack Cooper",
     "seasons": [
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -576,15 +582,23 @@
       "season": 2013,
       "grade": null,
       "team": "Henry Clay",
-      "record": "18-10",
+      "record": "23-10",
       "regional_place": 2,
       "state_place": 8
+    },
+    {
+      "season": 2012,
+      "grade": 11,
+      "team": "Henry Clay",
+      "record": "1-2",
+      "regional_place": null,
+      "state_place": null
     }
   ],
   "career_record": {
-    "wins": 18,
-    "losses": 10,
-    "win_pct": 0.643
+    "wins": 24,
+    "losses": 12,
+    "win_pct": 0.667
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

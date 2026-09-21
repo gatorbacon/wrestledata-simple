@@ -5,6 +5,11 @@
   "team_slug": "simon_kenton",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.73,
-    "bonus_rate": 0.838,
+    "pin_rate": 0.718,
+    "bonus_rate": 0.846,
     "majors": 2,
-    "techs": 2,
-    "pins": 27
+    "techs": 3,
+    "pins": 28
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -35,6 +40,22 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2015-02-14",
+      "opponent_id": "69125071",
+      "opponent_career_id": "career_012420",
+      "opponent_name": "Brady Wells",
+      "opponent_team": "Campbell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "MD",
+      "score": "11-1",
+      "duration": "7:00",
+      "event": "KHSAA Region 6"
+    },
     {
       "date": "2015-02-14",
       "opponent_id": "69125071",
@@ -79,6 +100,22 @@
       "weight_class": "113",
       "result": "W",
       "method": "TF",
+      "score": "19-3",
+      "duration": "4:38",
+      "event": "KHSAA Region 6"
+    },
+    {
+      "date": "2015-02-14",
+      "opponent_id": "53580071",
+      "opponent_career_id": "career_014071",
+      "opponent_name": "Andrew Mikkelson",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "TF",
       "score": "17-2",
       "duration": "0:00",
       "event": "KHSAA Region 6"
@@ -101,22 +138,6 @@
     },
     {
       "date": "2015-02-07",
-      "opponent_id": "28296071",
-      "opponent_career_id": "career_011861",
-      "opponent_name": "Cauy Wallace",
-      "opponent_team": "Wayne County",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:39",
-      "event": "vs. Wayne County"
-    },
-    {
-      "date": "2015-02-07",
       "opponent_id": "2247013",
       "opponent_career_id": "career_014324",
       "opponent_name": "Blaine Spaulding",
@@ -129,7 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Bullitt Central"
     },
     {
       "date": "2015-02-07",
@@ -145,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:44",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Christian County"
     },
     {
       "date": "2015-02-07",
@@ -161,7 +182,23 @@
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Jeffersontown"
+    },
+    {
+      "date": "2015-02-07",
+      "opponent_id": "28296071",
+      "opponent_career_id": "career_011861",
+      "opponent_name": "Cauy Wallace",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:39",
+      "event": "vs. Wayne County"
     },
     {
       "date": "2015-01-31",
@@ -177,7 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:31",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Christian County"
     },
     {
       "date": "2015-01-31",
@@ -193,7 +230,7 @@
       "method": "DEC",
       "score": "9-4",
       "duration": "7:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2015-01-31",
@@ -209,7 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:32",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Henry Clay"
     },
     {
       "date": "2015-01-31",
@@ -241,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:45",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Conner"
     },
     {
       "date": "2015-01-21",
@@ -257,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:50",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Newport"
     },
     {
       "date": "2015-01-21",
@@ -353,7 +390,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:20",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Dixie Heights"
     },
     {
       "date": "2015-01-14",
@@ -369,7 +406,7 @@
       "method": "DEC",
       "score": "6-2",
       "duration": "7:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Scott"
     },
     {
       "date": "2015-01-10",
@@ -433,7 +470,7 @@
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2015-01-07",
@@ -449,7 +486,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:12",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Dixie Heights"
     },
     {
       "date": "2015-01-07",
@@ -465,7 +502,7 @@
       "method": "INJ",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Ryle"
     },
     {
       "date": "2015-01-03",
@@ -481,7 +518,7 @@
       "method": "DEC",
       "score": "7-3",
       "duration": "7:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2015-01-03",
@@ -497,7 +534,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:58",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Henry Clay"
     },
     {
       "date": "2015-01-03",
@@ -641,7 +678,7 @@
       "method": "MD",
       "score": "13-1",
       "duration": "7:00",
-      "event": "GMVWA Holiday Tournament"
+      "event": "GMVWA"
     },
     {
       "date": "2014-12-28",
@@ -817,7 +854,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:46",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Male"
     },
     {
       "date": "2014-12-06",
@@ -882,6 +919,22 @@
       "score": null,
       "duration": "0:59",
       "event": "vs. South Oldham"
+    },
+    {
+      "date": "2014-12-06",
+      "opponent_id": "38753010",
+      "opponent_career_id": "career_011553",
+      "opponent_name": "Caine Boyer",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:31",
+      "event": "vs. South Oldham"
     }
   ],
   "career": {
@@ -899,7 +952,7 @@
       "season": 2017,
       "grade": 12,
       "team": "Simon Kenton",
-      "record": "40-2",
+      "record": "39-2",
       "regional_place": 1,
       "state_place": 3
     },
@@ -907,7 +960,7 @@
       "season": 2016,
       "grade": 11,
       "team": "Simon Kenton",
-      "record": "63-4",
+      "record": "59-4",
       "regional_place": 1,
       "state_place": 3
     },
@@ -923,15 +976,15 @@
       "season": 2014,
       "grade": null,
       "team": "Simon Kenton",
-      "record": "28-18",
+      "record": "39-19",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 174,
-    "losses": 37,
-    "win_pct": 0.825
+    "wins": 180,
+    "losses": 38,
+    "win_pct": 0.826
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

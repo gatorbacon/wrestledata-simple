@@ -5,10 +5,15 @@
   "team_slug": "campbell_county",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "41-5",
+    "overall": "47-6",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.537,
-    "bonus_rate": 0.78,
+    "pin_rate": 0.558,
+    "bonus_rate": 0.791,
     "majors": 3,
     "techs": 7,
-    "pins": 22
+    "pins": 24
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -80,6 +85,22 @@
       "result": "W",
       "method": "DEC",
       "score": "4-3",
+      "duration": "7:00",
+      "event": "2012 KHSAA State Tournament"
+    },
+    {
+      "date": "2013-02-16",
+      "opponent_id": "1337765009",
+      "opponent_career_id": "career_016389",
+      "opponent_name": "BJ Carman",
+      "opponent_team": "La Rue County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "DEC",
+      "score": "3-1",
       "duration": "7:00",
       "event": "2012 KHSAA State Tournament"
     },
@@ -177,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Campbell County"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2013-01-26",
@@ -209,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:41",
-      "event": "vs. Campbell County"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2013-01-26",
@@ -225,7 +246,7 @@
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "vs. Campbell County"
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2013-01-19",
@@ -545,7 +566,7 @@
       "method": "DEC",
       "score": "9-2",
       "duration": "7:00",
-      "event": "NKAC"
+      "event": "2012 NKAC Conference"
     },
     {
       "date": "2012-12-22",
@@ -641,7 +662,7 @@
       "method": "TF",
       "score": "18-3",
       "duration": "4:00",
-      "event": "vs. Campbell County"
+      "event": "vs. Lafayette"
     },
     {
       "date": "2012-12-15",
@@ -657,7 +678,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:24",
-      "event": "vs. Campbell County"
+      "event": "vs. Male"
     },
     {
       "date": "2012-12-12",
@@ -674,22 +695,6 @@
       "score": null,
       "duration": "0:59",
       "event": "vs. Ryle"
-    },
-    {
-      "date": "2012-12-08",
-      "opponent_id": "1360605009",
-      "opponent_career_id": "career_014920",
-      "opponent_name": "Gordon Fox",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "TF",
-      "score": "20-4",
-      "duration": "0:00",
-      "event": "2012 Ryle Raider Rumble"
     },
     {
       "date": "2012-12-08",
@@ -772,6 +777,22 @@
       "event": "2012 Ryle Raider Rumble"
     },
     {
+      "date": "2012-12-08",
+      "opponent_id": "1360605009",
+      "opponent_career_id": "career_014920",
+      "opponent_name": "Gordon Fox",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "TF",
+      "score": "20-4",
+      "duration": "0:00",
+      "event": "2012 Ryle Raider Rumble"
+    },
+    {
       "date": "2012-12-01",
       "opponent_id": "-1",
       "opponent_career_id": null,
@@ -788,6 +809,38 @@
       "event": "Franklin Tournament"
     },
     {
+      "date": "2012-12-01",
+      "opponent_id": "-1",
+      "opponent_career_id": null,
+      "opponent_name": "Kyle Barrett",
+      "opponent_team": "Independent",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:39",
+      "event": "Franklin Tournament"
+    },
+    {
+      "date": "2012-12-01",
+      "opponent_id": "-1",
+      "opponent_career_id": null,
+      "opponent_name": "Kyle Barrett",
+      "opponent_team": "Independent",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:25",
+      "event": "Franklin Tournament"
+    },
+    {
       "date": "2012-11-24",
       "opponent_id": "1216557009",
       "opponent_career_id": "career_016126",
@@ -801,7 +854,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Campbell County"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2012-11-24",
@@ -833,7 +886,7 @@
       "method": "TF",
       "score": "21-4",
       "duration": "0:00",
-      "event": "vs. Campbell County"
+      "event": "vs. Western Hills"
     }
   ],
   "career": {
@@ -842,7 +895,8 @@
     "seasons": [
       2015,
       2014,
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -850,7 +904,7 @@
       "season": 2015,
       "grade": 12,
       "team": "Campbell County",
-      "record": "40-8",
+      "record": "38-9",
       "regional_place": 1,
       "state_place": 4
     },
@@ -858,7 +912,7 @@
       "season": 2014,
       "grade": null,
       "team": "Campbell County",
-      "record": "33-10",
+      "record": "36-12",
       "regional_place": 1,
       "state_place": 2
     },
@@ -866,15 +920,23 @@
       "season": 2013,
       "grade": null,
       "team": "Campbell County",
-      "record": "41-5",
+      "record": "47-6",
       "regional_place": 1,
       "state_place": 4
+    },
+    {
+      "season": 2012,
+      "grade": 9,
+      "team": "Campbell County",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
     }
   ],
   "career_record": {
-    "wins": 114,
-    "losses": 23,
-    "win_pct": 0.832
+    "wins": 123,
+    "losses": 29,
+    "win_pct": 0.809
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

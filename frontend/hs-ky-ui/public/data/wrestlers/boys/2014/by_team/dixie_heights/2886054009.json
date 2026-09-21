@@ -5,10 +5,15 @@
   "team_slug": "dixie_heights",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "18-12",
+    "overall": "22-13",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.739,
-    "bonus_rate": 0.826,
+    "pin_rate": 0.727,
+    "bonus_rate": 0.818,
     "majors": 2,
     "techs": 0,
-    "pins": 17
+    "pins": 16
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -149,6 +154,22 @@
     },
     {
       "date": "2014-02-15",
+      "opponent_id": "2886866009",
+      "opponent_career_id": "career_014036",
+      "opponent_name": "Gage Jones",
+      "opponent_team": "Newport",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:04",
+      "event": "KHSAA Region 6"
+    },
+    {
+      "date": "2014-02-15",
       "opponent_id": "2887193009",
       "opponent_career_id": "career_015602",
       "opponent_name": "Jacob Millsap",
@@ -196,38 +217,6 @@
       "event": "KHSAA Region 6"
     },
     {
-      "date": "2014-02-08",
-      "opponent_id": "2886866009",
-      "opponent_career_id": "career_014036",
-      "opponent_name": "Gage Jones",
-      "opponent_team": "Newport",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:04",
-      "event": "KHSAA Region 6"
-    },
-    {
-      "date": "2014-02-08",
-      "opponent_id": "2887631009",
-      "opponent_career_id": "career_015711",
-      "opponent_name": "Jake Navey",
-      "opponent_team": "Walton Verona",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:45",
-      "event": "KHSAA Region 6"
-    },
-    {
       "date": "2014-02-01",
       "opponent_id": "2886866009",
       "opponent_career_id": "career_014036",
@@ -257,7 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:52",
-      "event": "vs. Dixie Heights"
+      "event": "vs. Covington Catholic"
     },
     {
       "date": "2014-01-18",
@@ -465,22 +454,6 @@
       "method": "DEC",
       "score": "5-3",
       "duration": "7:00",
-      "event": "5 Star Classic, Lafayette"
-    },
-    {
-      "date": "2013-12-21",
-      "opponent_id": "2886658009",
-      "opponent_career_id": "career_015480",
-      "opponent_name": "Stephen Savage",
-      "opponent_team": "Madison Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:30",
       "event": "LEXINGTON LAFAYETTE TOURNAMENT"
     },
     {
@@ -548,7 +521,7 @@
       "event": "LEXINGTON LAFAYETTE TOURNAMENT"
     },
     {
-      "date": "2013-12-14",
+      "date": "2013-12-21",
       "opponent_id": "2886658009",
       "opponent_career_id": "career_015480",
       "opponent_name": "Stephen Savage",
@@ -556,12 +529,12 @@
       "opponent_team_rank": null,
       "opponent_weight": 165,
       "opponent_rank": null,
-      "weight_class": "190",
+      "weight_class": "175",
       "result": "W",
-      "method": "DEC",
-      "score": "6-4",
-      "duration": "7:00",
-      "event": "vs. Dixie Heights"
+      "method": "FALL",
+      "score": null,
+      "duration": "1:30",
+      "event": "LEXINGTON LAFAYETTE TOURNAMENT"
     },
     {
       "date": "2013-12-14",
@@ -577,7 +550,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:08",
-      "event": "vs. Dixie Heights"
+      "event": "vs. Cooper"
+    },
+    {
+      "date": "2013-12-14",
+      "opponent_id": "2886658009",
+      "opponent_career_id": "career_015480",
+      "opponent_name": "Stephen Savage",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "DEC",
+      "score": "6-4",
+      "duration": "7:00",
+      "event": "vs. Madison Central"
     },
     {
       "date": "2013-12-14",
@@ -593,7 +582,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:59",
-      "event": "vs. Dixie Heights"
+      "event": "vs. Oldham County"
     },
     {
       "date": "2013-12-14",
@@ -609,7 +598,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:31",
-      "event": "vs. Dixie Heights"
+      "event": "vs. Tates Creek"
     }
   ],
   "career": {
@@ -625,7 +614,7 @@
       "season": 2014,
       "grade": null,
       "team": "Dixie Heights",
-      "record": "18-12",
+      "record": "22-13",
       "regional_place": 4,
       "state_place": null
     },
@@ -633,15 +622,15 @@
       "season": 2013,
       "grade": null,
       "team": "Dixie Heights",
-      "record": "27-10",
+      "record": "28-13",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 45,
-    "losses": 22,
-    "win_pct": 0.672
+    "wins": 50,
+    "losses": 26,
+    "win_pct": 0.658
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

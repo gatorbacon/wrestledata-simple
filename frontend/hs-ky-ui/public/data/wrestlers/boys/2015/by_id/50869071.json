@@ -5,10 +5,15 @@
   "team_slug": "daviess_county",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
-    "overall": "17-23",
+    "overall": "18-23",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -229,6 +234,22 @@
     },
     {
       "date": "2015-01-17",
+      "opponent_id": "5946762009",
+      "opponent_career_id": "career_013568",
+      "opponent_name": "Tige Littlefield",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "Hopkinsville Classic"
+    },
+    {
+      "date": "2015-01-17",
       "opponent_id": "OUTSTATE_703a40f0d5ae",
       "opponent_career_id": null,
       "opponent_name": "Cody Jackson",
@@ -256,23 +277,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "Hopkinsville Classic"
-    },
-    {
-      "date": "2015-01-17",
-      "opponent_id": "5946762009",
-      "opponent_career_id": "career_013568",
-      "opponent_name": "Tige Littlefield",
-      "opponent_team": "Caldwell County",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "DEC",
-      "score": "4-3",
-      "duration": "7:00",
+      "duration": "3:51",
       "event": "Hopkinsville Classic"
     },
     {
@@ -289,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Daviess County"
+      "event": "vs. Apollo"
     },
     {
       "date": "2015-01-10",
@@ -544,24 +549,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "0:38",
       "event": "vs. Ohio County"
-    },
-    {
-      "date": "2014-11-28",
-      "opponent_id": "OUTSTATE_e26f1a5d9cda",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Forrest Park",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Forrest Park"
     },
     {
       "date": "2014-11-28",
@@ -613,6 +602,22 @@
     },
     {
       "date": "2014-11-28",
+      "opponent_id": "-1",
+      "opponent_career_id": null,
+      "opponent_name": "Kelsey Smith",
+      "opponent_team": "Reitz",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:31",
+      "event": "vs. Princeton"
+    },
+    {
+      "date": "2014-11-28",
       "opponent_id": "OUTSTATE_7e056c51c0ab",
       "opponent_career_id": null,
       "opponent_name": "T Wintchel",
@@ -626,6 +631,22 @@
       "score": null,
       "duration": "1:30",
       "event": "vs. Evansville North"
+    },
+    {
+      "date": "2014-11-28",
+      "opponent_id": "OUTSTATE_e26f1a5d9cda",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Forrest Park",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Forrest Park"
     },
     {
       "date": "2014-11-28",
@@ -674,22 +695,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Yorktown"
-    },
-    {
-      "date": "2014-11-28",
-      "opponent_id": "-1",
-      "opponent_career_id": null,
-      "opponent_name": "Kelsey Smith",
-      "opponent_team": "Reitz",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:31",
-      "event": "vs. Princeton"
     }
   ],
   "career": {
@@ -705,7 +710,7 @@
       "season": 2015,
       "grade": 11,
       "team": "Daviess County",
-      "record": "17-23",
+      "record": "18-23",
       "regional_place": 4,
       "state_place": null
     },
@@ -713,15 +718,15 @@
       "season": 2014,
       "grade": null,
       "team": "Daviess County",
-      "record": "6-11",
+      "record": "7-12",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 23,
-    "losses": 34,
-    "win_pct": 0.404
+    "wins": 25,
+    "losses": 35,
+    "win_pct": 0.417
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

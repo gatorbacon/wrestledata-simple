@@ -5,6 +5,11 @@
   "team_slug": "walton_verona",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2017,
   "current_rank": null,
   "record": {
@@ -117,6 +122,22 @@
     },
     {
       "date": "2017-01-28",
+      "opponent_id": "529959013",
+      "opponent_career_id": "career_012267",
+      "opponent_name": "Levi Goodin",
+      "opponent_team": "La Rue County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-3",
+      "duration": "7:00",
+      "event": "vs. La Rue County"
+    },
+    {
+      "date": "2017-01-28",
       "opponent_id": "9777536009",
       "opponent_career_id": "career_012379",
       "opponent_name": "Bryce Sheffer",
@@ -129,7 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:59",
-      "event": "vs. Walton Verona"
+      "event": "vs. Union County"
     },
     {
       "date": "2017-01-28",
@@ -162,22 +183,6 @@
       "score": null,
       "duration": "2:24",
       "event": "vs. Western Hills"
-    },
-    {
-      "date": "2017-01-28",
-      "opponent_id": "529959013",
-      "opponent_career_id": "career_012267",
-      "opponent_name": "Levi Goodin",
-      "opponent_team": "La Rue County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "DEC",
-      "score": "8-3",
-      "duration": "7:00",
-      "event": "vs. Walton Verona"
     },
     {
       "date": "2017-01-21",
@@ -229,22 +234,6 @@
     },
     {
       "date": "2017-01-18",
-      "opponent_id": "528795011",
-      "opponent_career_id": "career_011677",
-      "opponent_name": "Ethan Murphy",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "DEC",
-      "score": "6-1",
-      "duration": "7:00",
-      "event": "vs. Walton Verona"
-    },
-    {
-      "date": "2017-01-18",
       "opponent_id": "9834048009",
       "opponent_career_id": "career_011933",
       "opponent_name": "Collin Hatfield",
@@ -257,7 +246,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:38",
-      "event": "vs. Walton Verona"
+      "event": "vs. Conner"
+    },
+    {
+      "date": "2017-01-18",
+      "opponent_id": "528795011",
+      "opponent_career_id": "career_011677",
+      "opponent_name": "Ethan Murphy",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": "6-1",
+      "duration": "7:00",
+      "event": "vs. North Oldham"
     },
     {
       "date": "2017-01-18",
@@ -362,5 +367,5 @@
     "losses": 10,
     "win_pct": 0.474
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

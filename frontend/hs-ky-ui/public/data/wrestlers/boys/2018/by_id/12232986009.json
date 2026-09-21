@@ -5,10 +5,15 @@
   "team_slug": "owensboro",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2018,
   "current_rank": null,
   "record": {
-    "overall": "27-8",
+    "overall": "26-8",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -165,6 +170,22 @@
     },
     {
       "date": "2018-01-27",
+      "opponent_id": "11941753009",
+      "opponent_career_id": "career_010436",
+      "opponent_name": "Joseph Taylor",
+      "opponent_team": "Anderson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "MD",
+      "score": "13-2",
+      "duration": "7:00",
+      "event": "vs. Anderson County"
+    },
+    {
+      "date": "2018-01-27",
       "opponent_id": "498323132",
       "opponent_career_id": "career_010700",
       "opponent_name": "Jamiah Marks",
@@ -178,22 +199,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Shawnee"
-    },
-    {
-      "date": "2018-01-27",
-      "opponent_id": "11941753009",
-      "opponent_career_id": "career_010436",
-      "opponent_name": "Joseph Taylor",
-      "opponent_team": "Anderson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "MD",
-      "score": "13-2",
-      "duration": "7:00",
-      "event": "vs. Owensboro"
     },
     {
       "date": "2018-01-27",
@@ -213,6 +218,22 @@
     },
     {
       "date": "2018-01-27",
+      "opponent_id": "OUTSTATE_b70f86745ea9",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Iroquois",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Iroquois"
+    },
+    {
+      "date": "2018-01-27",
       "opponent_id": "OUTSTATE_26f66a856680",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -228,20 +249,20 @@
       "event": "vs. Seneca"
     },
     {
-      "date": "2018-01-27",
-      "opponent_id": "OUTSTATE_b70f86745ea9",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Iroquois",
+      "date": "2018-01-25",
+      "opponent_id": "11937337009",
+      "opponent_career_id": "career_011717",
+      "opponent_name": "Jessie Rios",
+      "opponent_team": "Ohio County",
       "opponent_team_rank": null,
-      "opponent_weight": null,
+      "opponent_weight": 175,
       "opponent_rank": null,
       "weight_class": "175",
       "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Iroquois"
+      "method": "TF",
+      "score": "17-2",
+      "duration": "5:30",
+      "event": "vs. Ohio County"
     },
     {
       "date": "2018-01-25",
@@ -258,38 +279,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Caldwell County"
-    },
-    {
-      "date": "2018-01-25",
-      "opponent_id": "11937337009",
-      "opponent_career_id": "career_011717",
-      "opponent_name": "Jessie Rios",
-      "opponent_team": "Ohio County",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "TF",
-      "score": "17-2",
-      "duration": "5:30",
-      "event": "vs. Owensboro"
-    },
-    {
-      "date": "2018-01-20",
-      "opponent_id": "11642218009",
-      "opponent_career_id": "career_009731",
-      "opponent_name": "Emmanuel Hernandez",
-      "opponent_team": "Woodford County",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:33",
-      "event": "Capital City Classic"
     },
     {
       "date": "2018-01-20",
@@ -340,6 +329,22 @@
       "event": "Capital City Classic"
     },
     {
+      "date": "2018-01-20",
+      "opponent_id": "11642218009",
+      "opponent_career_id": "career_009731",
+      "opponent_name": "Emmanuel Hernandez",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:33",
+      "event": "Capital City Classic"
+    },
+    {
       "date": "2017-12-30",
       "opponent_id": "12026836009",
       "opponent_career_id": "career_011404",
@@ -353,7 +358,7 @@
       "method": "SV-1",
       "score": "4-2",
       "duration": "8:15",
-      "event": "Tates Creek Invitational"
+      "event": "TATES CREEK IND TOURN"
     },
     {
       "date": "2017-12-30",
@@ -369,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Tates Creek Invitational"
+      "event": "TATES CREEK IND TOURN"
     },
     {
       "date": "2017-12-30",
@@ -386,6 +391,38 @@
       "score": null,
       "duration": "0:00",
       "event": "TATES CREEK IND TOURN"
+    },
+    {
+      "date": "2017-12-23",
+      "opponent_id": "190901132",
+      "opponent_career_id": "career_011135",
+      "opponent_name": "Ethan Tomerlin",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Christian County Invitational"
+    },
+    {
+      "date": "2017-12-23",
+      "opponent_id": "11616058009",
+      "opponent_career_id": "career_011998",
+      "opponent_name": "Will Horschler",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Christian County Invitational"
     },
     {
       "date": "2017-12-23",
@@ -420,38 +457,6 @@
       "event": "Christian County Invitational"
     },
     {
-      "date": "2017-12-23",
-      "opponent_id": "190901132",
-      "opponent_career_id": "career_011135",
-      "opponent_name": "Ethan Tomerlin",
-      "opponent_team": "Fort Campbell",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Toyota of Hopkinsville Christian County Invitational"
-    },
-    {
-      "date": "2017-12-23",
-      "opponent_id": "11616058009",
-      "opponent_career_id": "career_011998",
-      "opponent_name": "Will Horschler",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Christian County Invitational"
-    },
-    {
       "date": "2017-12-21",
       "opponent_id": "126243132",
       "opponent_career_id": "career_009623",
@@ -465,7 +470,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro"
+      "event": "vs. North Hardin"
     },
     {
       "date": "2017-12-21",
@@ -513,7 +518,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro"
+      "event": "vs. Desales"
     },
     {
       "date": "2017-12-20",
@@ -592,15 +597,15 @@
       "season": 2018,
       "grade": 12,
       "team": "Owensboro",
-      "record": "27-8",
+      "record": "26-8",
       "regional_place": 4,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 27,
+    "wins": 26,
     "losses": 8,
-    "win_pct": 0.771
+    "win_pct": 0.765
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

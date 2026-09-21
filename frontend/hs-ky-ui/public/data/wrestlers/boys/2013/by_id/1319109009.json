@@ -5,10 +5,15 @@
   "team_slug": "holmes",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "0-7",
+    "overall": "0-9",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -37,6 +42,22 @@
   "match_list": [
     {
       "date": "2013-01-12",
+      "opponent_id": "1265053009",
+      "opponent_career_id": "career_012181",
+      "opponent_name": "Austin Miller",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-4",
+      "duration": "7:00",
+      "event": "Jaguar Jungle Classic"
+    },
+    {
+      "date": "2013-01-12",
       "opponent_id": "1306788009",
       "opponent_career_id": "career_016334",
       "opponent_name": "Seth Shearer",
@@ -50,22 +71,6 @@
       "score": null,
       "duration": "1:30",
       "event": "Jaguar Jungle Classic"
-    },
-    {
-      "date": "2013-01-12",
-      "opponent_id": "1265053009",
-      "opponent_career_id": "career_012181",
-      "opponent_name": "Austin Miller",
-      "opponent_team": "Cooper",
-      "opponent_team_rank": null,
-      "opponent_weight": 285,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "L",
-      "method": "DEC",
-      "score": "7-4",
-      "duration": "7:00",
-      "event": "Cooper Jaguar Jungle Classic"
     },
     {
       "date": "2013-01-12",
@@ -129,7 +134,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:21",
-      "event": "vs. Holmes"
+      "event": "vs. Boone County"
     },
     {
       "date": "2012-11-24",
@@ -145,7 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:01",
-      "event": "vs. Holmes"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2012-11-24",
@@ -161,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:26",
-      "event": "vs. Holmes"
+      "event": "vs. Moore"
     },
     {
       "date": "2012-11-24",
@@ -177,7 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Holmes"
+      "event": "vs. Scott"
     }
   ],
   "career": {
@@ -192,15 +197,15 @@
       "season": 2013,
       "grade": null,
       "team": "Holmes",
-      "record": "0-7",
+      "record": "0-9",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 0,
-    "losses": 7,
+    "losses": 9,
     "win_pct": 0.0
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

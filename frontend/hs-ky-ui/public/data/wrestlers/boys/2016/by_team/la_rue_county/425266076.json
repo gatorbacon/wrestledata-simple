@@ -5,10 +5,15 @@
   "team_slug": "la_rue_county",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
-    "overall": "38-8",
+    "overall": "37-8",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.643,
-    "bonus_rate": 0.714,
+    "pin_rate": 0.63,
+    "bonus_rate": 0.704,
     "majors": 2,
     "techs": 0,
-    "pins": 18
+    "pins": 17
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -177,7 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:40",
-      "event": "vs. La Rue County"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2016-01-30",
@@ -193,7 +198,7 @@
       "method": "SV-1",
       "score": "6-4",
       "duration": "8:15",
-      "event": "vs. La Rue County"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2016-01-30",
@@ -257,7 +262,7 @@
       "method": "DEC",
       "score": "7-3",
       "duration": "7:00",
-      "event": "vs. La Rue County"
+      "event": "vs. Doss"
     },
     {
       "date": "2016-01-17",
@@ -273,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. La Rue County"
+      "event": "vs. Fort Knox"
     },
     {
       "date": "2016-01-17",
@@ -292,22 +297,6 @@
       "event": "vs. Thomas Nelson"
     },
     {
-      "date": "2016-01-17",
-      "opponent_id": "320201010",
-      "opponent_career_id": "career_010898",
-      "opponent_name": "Jacobie Robertson",
-      "opponent_team": "Nelson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Nelson County"
-    },
-    {
       "date": "2016-01-16",
       "opponent_id": "320201010",
       "opponent_career_id": "career_010898",
@@ -321,7 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. La Rue County"
+      "event": "vs. Nelson County"
     },
     {
       "date": "2016-01-13",
@@ -481,7 +470,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "vs. La Rue County"
+      "event": "vs. Christian County"
     },
     {
       "date": "2015-12-23",
@@ -501,6 +490,22 @@
     },
     {
       "date": "2015-12-22",
+      "opponent_id": "319510010",
+      "opponent_career_id": "career_012474",
+      "opponent_name": "Trevor Howard",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:23",
+      "event": "vs. Central Hardin"
+    },
+    {
+      "date": "2015-12-22",
       "opponent_id": "OUTSTATE_3b9151ea3973",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -514,22 +519,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Central"
-    },
-    {
-      "date": "2015-12-22",
-      "opponent_id": "319510010",
-      "opponent_career_id": "career_012474",
-      "opponent_name": "Trevor Howard",
-      "opponent_team": "Central Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:23",
-      "event": "vs. La Rue County"
     },
     {
       "date": "2015-12-22",
@@ -597,22 +586,6 @@
     },
     {
       "date": "2015-12-16",
-      "opponent_id": "290166013",
-      "opponent_career_id": "career_009681",
-      "opponent_name": "Jackson Grimsley",
-      "opponent_team": "Taylor County",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "DEC",
-      "score": "5-3",
-      "duration": "7:00",
-      "event": "vs. Taylor County"
-    },
-    {
-      "date": "2015-12-16",
       "opponent_id": "OUTSTATE_3b9151ea3973",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -628,6 +601,22 @@
       "event": "vs. Central"
     },
     {
+      "date": "2015-12-16",
+      "opponent_id": "290166013",
+      "opponent_career_id": "career_009681",
+      "opponent_name": "Jackson Grimsley",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-3",
+      "duration": "7:00",
+      "event": "vs. Taylor County"
+    },
+    {
       "date": "2015-12-12",
       "opponent_id": "436354071",
       "opponent_career_id": "career_012217",
@@ -641,7 +630,7 @@
       "method": "DEC",
       "score": "8-6",
       "duration": "7:00",
-      "event": "vs. La Rue County"
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2015-12-12",
@@ -661,22 +650,6 @@
     },
     {
       "date": "2015-12-12",
-      "opponent_id": "OUTSTATE_d11d1b4317fe",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Thomas Nelson",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Thomas Nelson"
-    },
-    {
-      "date": "2015-12-12",
       "opponent_id": "OUTSTATE_ed3605df2d4c",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -692,6 +665,22 @@
       "event": "vs. Meade County"
     },
     {
+      "date": "2015-12-12",
+      "opponent_id": "OUTSTATE_d11d1b4317fe",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Thomas Nelson",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Thomas Nelson"
+    },
+    {
       "date": "2015-12-05",
       "opponent_id": "369198094",
       "opponent_career_id": "career_010632",
@@ -705,7 +694,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. La Rue County"
+      "event": "vs. Jeffersontown"
     },
     {
       "date": "2015-12-05",
@@ -786,7 +775,7 @@
       "season": 2016,
       "grade": 11,
       "team": "La Rue County",
-      "record": "38-8",
+      "record": "37-8",
       "regional_place": 2,
       "state_place": null
     },
@@ -802,15 +791,15 @@
       "season": 2014,
       "grade": null,
       "team": "La Rue County",
-      "record": "28-7",
+      "record": "31-9",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 108,
-    "losses": 24,
-    "win_pct": 0.818
+    "wins": 110,
+    "losses": 26,
+    "win_pct": 0.809
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

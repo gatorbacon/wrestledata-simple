@@ -5,10 +5,15 @@
   "team_slug": "fort_campbell",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2019,
   "current_rank": null,
   "record": {
-    "overall": "32-17",
+    "overall": "31-17",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.231,
-    "bonus_rate": 0.346,
+    "pin_rate": 0.222,
+    "bonus_rate": 0.333,
     "majors": 3,
     "techs": 0,
     "pins": 6
@@ -165,6 +170,22 @@
     },
     {
       "date": "2019-01-26",
+      "opponent_id": "OUTSTATE_7f935f5b3c09",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Ashland Blazer"
+    },
+    {
+      "date": "2019-01-26",
       "opponent_id": "OUTSTATE_fa7f930d70be",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -212,22 +233,6 @@
       "event": "vs. Scott"
     },
     {
-      "date": "2019-01-26",
-      "opponent_id": "OUTSTATE_7f935f5b3c09",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Ashland Blazer"
-    },
-    {
       "date": "2019-01-24",
       "opponent_id": "OUTSTATE_90f04a742fd4",
       "opponent_career_id": null,
@@ -273,7 +278,7 @@
       "method": "DEC",
       "score": "3-2",
       "duration": "7:00",
-      "event": "vs. Fort Campbell"
+      "event": "vs. Christian County"
     },
     {
       "date": "2019-01-23",
@@ -290,22 +295,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Hopkinsville"
-    },
-    {
-      "date": "2019-01-19",
-      "opponent_id": "5099882132",
-      "opponent_career_id": "career_010733",
-      "opponent_name": "Keith Monsour",
-      "opponent_team": "Trinity (Louisville)",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "DEC",
-      "score": "3-2",
-      "duration": "7:00",
-      "event": "2019 Michael J. Herchenrader Jr. Memorial Tournament"
     },
     {
       "date": "2019-01-19",
@@ -336,6 +325,22 @@
       "result": "W",
       "method": "DEC",
       "score": "11-4",
+      "duration": "7:00",
+      "event": "2019 Michael J. Herchenrader Jr. Memorial Tournament"
+    },
+    {
+      "date": "2019-01-19",
+      "opponent_id": "5099882132",
+      "opponent_career_id": "career_010733",
+      "opponent_name": "Keith Monsour",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "DEC",
+      "score": "3-2",
       "duration": "7:00",
       "event": "2019 Michael J. Herchenrader Jr. Memorial Tournament"
     },
@@ -561,6 +566,22 @@
       "method": "FALL",
       "score": null,
       "duration": "5:44",
+      "event": "Beech Invitational 2018"
+    },
+    {
+      "date": "2018-12-15",
+      "opponent_id": "5140139132",
+      "opponent_career_id": null,
+      "opponent_name": "Drake Cunningham",
+      "opponent_team": "Brentwood",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "SV-1",
+      "score": "3-1",
+      "duration": "8:15",
       "event": "Beech Invitational 2018"
     },
     {
@@ -803,7 +824,7 @@
       "season": 2020,
       "grade": 12,
       "team": "Fort Campbell",
-      "record": "26-12",
+      "record": "27-12",
       "regional_place": 4,
       "state_place": null
     },
@@ -811,7 +832,7 @@
       "season": 2019,
       "grade": 11,
       "team": "Fort Campbell",
-      "record": "32-17",
+      "record": "31-17",
       "regional_place": 4,
       "state_place": null
     },
@@ -819,7 +840,7 @@
       "season": 2018,
       "grade": 10,
       "team": "Fort Campbell",
-      "record": "29-20",
+      "record": "28-20",
       "regional_place": 4,
       "state_place": null
     },
@@ -827,15 +848,15 @@
       "season": 2017,
       "grade": 9,
       "team": "Fort Campbell",
-      "record": "13-27",
+      "record": "12-27",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 100,
+    "wins": 98,
     "losses": 76,
-    "win_pct": 0.568
+    "win_pct": 0.563
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

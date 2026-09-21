@@ -5,10 +5,15 @@
   "team_slug": "henry_clay",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "20-17",
+    "overall": "24-21",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.579,
-    "bonus_rate": 0.579,
+    "pin_rate": 0.556,
+    "bonus_rate": 0.556,
     "majors": 0,
     "techs": 0,
-    "pins": 11
+    "pins": 10
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -97,7 +102,7 @@
       "method": "DEC",
       "score": "6-3",
       "duration": "7:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2013-01-30",
@@ -177,7 +182,7 @@
       "method": "MD",
       "score": "10-2",
       "duration": "7:00",
-      "event": "Capital City Classic"
+      "event": "Franklin county invitational"
     },
     {
       "date": "2013-01-19",
@@ -193,7 +198,7 @@
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "Capital City Championship"
+      "event": "Franklin county invitational"
     },
     {
       "date": "2013-01-19",
@@ -201,22 +206,6 @@
       "opponent_career_id": null,
       "opponent_name": "Ryan Mulder",
       "opponent_team": "Western Hills",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "Franklin county invitational"
-    },
-    {
-      "date": "2013-01-19",
-      "opponent_id": "OUTSTATE_90d4395a89a8",
-      "opponent_career_id": null,
-      "opponent_name": "Joshua Taylor",
-      "opponent_team": "Tates Creek",
       "opponent_team_rank": null,
       "opponent_weight": 165,
       "opponent_rank": null,
@@ -305,7 +294,7 @@
       "method": "DEC",
       "score": "4-0",
       "duration": "7:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Montgomery County"
     },
     {
       "date": "2013-01-12",
@@ -321,7 +310,7 @@
       "method": "SV-1",
       "score": "6-4",
       "duration": "8:15",
-      "event": "vs. Henry Clay"
+      "event": "vs. Woodford County"
     },
     {
       "date": "2013-01-09",
@@ -353,7 +342,7 @@
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Male"
     },
     {
       "date": "2013-01-05",
@@ -369,7 +358,7 @@
       "method": "DEC",
       "score": "8-5",
       "duration": "7:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2013-01-05",
@@ -401,23 +390,7 @@
       "method": "DEC",
       "score": "2-1",
       "duration": "7:00",
-      "event": "vs. Henry Clay"
-    },
-    {
-      "date": "2012-12-29",
-      "opponent_id": "1435725009",
-      "opponent_career_id": "career_016571",
-      "opponent_name": "Nick Bass",
-      "opponent_team": "South Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "DEC",
-      "score": "6-2",
-      "duration": "7:00",
-      "event": "Woodford County Invitational"
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2012-12-29",
@@ -432,7 +405,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "3:25",
       "event": "Woodford County Invitational"
     },
     {
@@ -448,8 +421,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "WCI"
+      "duration": "5:02",
+      "event": "Woodford County Invitational"
     },
     {
       "date": "2012-12-29",
@@ -469,6 +442,22 @@
     },
     {
       "date": "2012-12-29",
+      "opponent_id": "1435725009",
+      "opponent_career_id": "career_016571",
+      "opponent_name": "Nick Bass",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "6-2",
+      "duration": "7:00",
+      "event": "Woodford County Invitational"
+    },
+    {
+      "date": "2012-12-29",
       "opponent_id": "1359372009",
       "opponent_career_id": "career_016423",
       "opponent_name": "DJ Parriman",
@@ -482,22 +471,6 @@
       "score": "7-1",
       "duration": "7:00",
       "event": "Woodford County Invitational"
-    },
-    {
-      "date": "2012-12-22",
-      "opponent_id": "1306785009",
-      "opponent_career_id": "career_014586",
-      "opponent_name": "Cody Roundtree",
-      "opponent_team": "Grant County",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:34",
-      "event": "Lafayette Invitational"
     },
     {
       "date": "2012-12-22",
@@ -532,7 +505,7 @@
       "event": "Lafayette Invitational"
     },
     {
-      "date": "2012-12-21",
+      "date": "2012-12-22",
       "opponent_id": "1306785009",
       "opponent_career_id": "career_014586",
       "opponent_name": "Cody Roundtree",
@@ -544,24 +517,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "Laexington Lafayette Invitational"
-    },
-    {
-      "date": "2012-12-15",
-      "opponent_id": "1328400009",
-      "opponent_career_id": null,
-      "opponent_name": "D Long",
-      "opponent_team": "Jeffersonville",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:20",
-      "event": "vs. Jeffersonville"
+      "duration": "0:34",
+      "event": "Lafayette Invitational"
     },
     {
       "date": "2012-12-15",
@@ -597,6 +554,22 @@
     },
     {
       "date": "2012-12-15",
+      "opponent_id": "1328400009",
+      "opponent_career_id": null,
+      "opponent_name": "D Long",
+      "opponent_team": "Jeffersonville",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:20",
+      "event": "vs. Jeffersonville"
+    },
+    {
+      "date": "2012-12-15",
       "opponent_id": "OUTSTATE_8f2d006e6423",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -625,22 +598,22 @@
       "method": "DEC",
       "score": "7-0",
       "duration": "7:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Moore"
     },
     {
       "date": "2012-12-08",
-      "opponent_id": "1289643009",
-      "opponent_career_id": "career_014841",
-      "opponent_name": "Immanuel Hill",
-      "opponent_team": "Fairdale",
+      "opponent_id": "1251865009",
+      "opponent_career_id": "career_013016",
+      "opponent_name": "Dalton Parr",
+      "opponent_team": "Central Hardin",
       "opponent_team_rank": null,
-      "opponent_weight": 150,
+      "opponent_weight": 165,
       "opponent_rank": null,
       "weight_class": "165",
-      "result": "L",
-      "method": "DEC",
-      "score": "7-3",
-      "duration": "7:00",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:45",
       "event": "King of the Bluegrass"
     },
     {
@@ -657,23 +630,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:26",
-      "event": "King of Bluegrass"
-    },
-    {
-      "date": "2012-12-08",
-      "opponent_id": "1251865009",
-      "opponent_career_id": "career_013016",
-      "opponent_name": "Dalton Parr",
-      "opponent_team": "Central Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:45",
-      "event": "King of the Bluegrass (Fairdale)"
+      "event": "King of the Bluegrass"
     },
     {
       "date": "2012-12-08",
@@ -689,6 +646,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:13",
+      "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2012-12-08",
+      "opponent_id": "1289643009",
+      "opponent_career_id": "career_014841",
+      "opponent_name": "Immanuel Hill",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-3",
+      "duration": "7:00",
       "event": "King of the Bluegrass"
     },
     {
@@ -709,22 +682,6 @@
     },
     {
       "date": "2012-12-01",
-      "opponent_id": "1456208009",
-      "opponent_career_id": null,
-      "opponent_name": "J. Grant Johnson",
-      "opponent_team": "Turpin",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:20",
-      "event": "vs. Turpin"
-    },
-    {
-      "date": "2012-12-01",
       "opponent_id": "1338232009",
       "opponent_career_id": "career_015471",
       "opponent_name": "Jackson Avant",
@@ -738,6 +695,22 @@
       "score": "6-0",
       "duration": "7:00",
       "event": "vs. Lafayette"
+    },
+    {
+      "date": "2012-12-01",
+      "opponent_id": "1456208009",
+      "opponent_career_id": null,
+      "opponent_name": "J. Grant Johnson",
+      "opponent_team": "Turpin",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:20",
+      "event": "vs. Turpin"
     },
     {
       "date": "2012-12-01",
@@ -769,7 +742,7 @@
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Montgomery County"
     },
     {
       "date": "2012-12-01",
@@ -785,7 +758,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:03",
-      "event": "vs. Henry Clay"
+      "event": "vs. University Heights"
     }
   ],
   "career": {
@@ -801,7 +774,7 @@
       "season": 2014,
       "grade": null,
       "team": "Henry Clay",
-      "record": "13-13",
+      "record": "15-17",
       "regional_place": null,
       "state_place": null
     },
@@ -809,15 +782,15 @@
       "season": 2013,
       "grade": null,
       "team": "Henry Clay",
-      "record": "20-17",
+      "record": "24-21",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 33,
-    "losses": 30,
-    "win_pct": 0.524
+    "wins": 39,
+    "losses": 38,
+    "win_pct": 0.506
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

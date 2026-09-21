@@ -5,10 +5,15 @@
   "team_slug": "male",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "24-14",
+    "overall": "28-16",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -145,7 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:33",
-      "event": "vs. Male"
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2013-01-30",
@@ -161,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "vs. Male"
+      "event": "vs. Central"
     },
     {
       "date": "2013-01-26",
@@ -213,6 +218,22 @@
     },
     {
       "date": "2013-01-19",
+      "opponent_id": "1264255009",
+      "opponent_career_id": "career_015304",
+      "opponent_name": "Gabe Platt",
+      "opponent_team": "Conner",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:05",
+      "event": "Dragon Invitational"
+    },
+    {
+      "date": "2013-01-19",
       "opponent_id": "1369728009",
       "opponent_career_id": "career_015517",
       "opponent_name": "Daylon Whaley",
@@ -226,22 +247,6 @@
       "score": null,
       "duration": "5:35",
       "event": "Dragon Invitational"
-    },
-    {
-      "date": "2013-01-19",
-      "opponent_id": "1264255009",
-      "opponent_career_id": "career_015304",
-      "opponent_name": "Gabe Platt",
-      "opponent_team": "Conner",
-      "opponent_team_rank": null,
-      "opponent_weight": 285,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "DRAGON INVITATIONAL TOURNAMENT"
     },
     {
       "date": "2013-01-19",
@@ -389,6 +394,22 @@
     },
     {
       "date": "2012-12-29",
+      "opponent_id": "1274183009",
+      "opponent_career_id": "career_015327",
+      "opponent_name": "Kevin Neri",
+      "opponent_team": "Desales",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-3",
+      "duration": "7:00",
+      "event": "vs. Desales"
+    },
+    {
+      "date": "2012-12-29",
       "opponent_id": "1380715009",
       "opponent_career_id": "career_015528",
       "opponent_name": "Tyler McFeircen",
@@ -402,22 +423,6 @@
       "score": null,
       "duration": "0:23",
       "event": "Fern Creek Gladiator Tournament"
-    },
-    {
-      "date": "2012-12-29",
-      "opponent_id": "1274183009",
-      "opponent_career_id": "career_015327",
-      "opponent_name": "Kevin Neri",
-      "opponent_team": "Desales",
-      "opponent_team_rank": null,
-      "opponent_weight": 285,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "DEC",
-      "score": "5-3",
-      "duration": "7:00",
-      "event": "vs. Male"
     },
     {
       "date": "2012-12-29",
@@ -529,7 +534,7 @@
       "method": "DEC",
       "score": "14-7",
       "duration": "7:00",
-      "event": "Lafayette Invitational Classic"
+      "event": "Lafayette Classic"
     },
     {
       "date": "2012-12-22",
@@ -561,7 +566,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:25",
-      "event": "LAFAYETTE INV TOURNAMENT"
+      "event": "Lafayette Classic"
     },
     {
       "date": "2012-12-22",
@@ -593,7 +598,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Male"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2012-12-15",
@@ -609,7 +614,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:58",
-      "event": "vs. Male"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2012-12-15",
@@ -744,7 +749,8 @@
     "career_id": "career_015763",
     "canonical_name": "Andrew Martin",
     "seasons": [
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -752,15 +758,23 @@
       "season": 2013,
       "grade": null,
       "team": "Male",
-      "record": "24-14",
+      "record": "28-16",
       "regional_place": 4,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 11,
+      "team": "Male",
+      "record": "0-2",
+      "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 24,
-    "losses": 14,
-    "win_pct": 0.632
+    "wins": 28,
+    "losses": 18,
+    "win_pct": 0.609
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

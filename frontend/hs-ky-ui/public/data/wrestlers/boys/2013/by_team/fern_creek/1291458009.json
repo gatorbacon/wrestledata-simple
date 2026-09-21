@@ -5,10 +5,15 @@
   "team_slug": "fern_creek",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "19-10",
+    "overall": "27-15",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.833,
-    "bonus_rate": 0.917,
+    "pin_rate": 0.808,
+    "bonus_rate": 0.885,
     "majors": 2,
     "techs": 0,
-    "pins": 20
+    "pins": 21
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -113,7 +118,23 @@
       "method": "FALL",
       "score": null,
       "duration": "4:10",
-      "event": "Regional"
+      "event": "KHSAA Region 5"
+    },
+    {
+      "date": "2013-02-09",
+      "opponent_id": "1281411009",
+      "opponent_career_id": "career_013948",
+      "opponent_name": "Cameron Bryant",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:21",
+      "event": "KHSAA Region 5"
     },
     {
       "date": "2013-02-09",
@@ -161,7 +182,7 @@
       "method": "MD",
       "score": "22-10",
       "duration": "7:00",
-      "event": "vs. Fern Creek"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2013-01-26",
@@ -177,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:15",
-      "event": "vs. Fern Creek"
+      "event": "vs. Apollo"
     },
     {
       "date": "2013-01-26",
@@ -193,7 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Fern Creek"
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2013-01-26",
@@ -209,7 +230,7 @@
       "method": "DEC",
       "score": "13-7",
       "duration": "7:00",
-      "event": "vs. Fern Creek"
+      "event": "vs. Trinity (Louisville)"
     },
     {
       "date": "2013-01-23",
@@ -241,7 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:55",
-      "event": "vs. Fern Creek"
+      "event": "vs. Eastern"
     },
     {
       "date": "2013-01-12",
@@ -273,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Fern Creek"
+      "event": "vs. Oldham County"
     },
     {
       "date": "2012-12-29",
@@ -325,22 +346,6 @@
     },
     {
       "date": "2012-12-28",
-      "opponent_id": "1240888009",
-      "opponent_career_id": "career_015802",
-      "opponent_name": "Zach Anderson",
-      "opponent_team": "Bullitt Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Fern Creek Invitational"
-    },
-    {
-      "date": "2012-12-28",
       "opponent_id": "1353684009",
       "opponent_career_id": "career_014019",
       "opponent_name": "Zach Prather",
@@ -353,7 +358,7 @@
       "method": "MD",
       "score": "13-2",
       "duration": "7:00",
-      "event": "vs. Fern Creek"
+      "event": "vs. Male"
     },
     {
       "date": "2012-12-22",
@@ -433,7 +438,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:13",
-      "event": "vs. Fern Creek"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2012-12-12",
@@ -465,7 +470,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:58",
-      "event": "vs. Fern Creek"
+      "event": "vs. Southern"
     },
     {
       "date": "2012-12-08",
@@ -481,7 +486,39 @@
       "method": "FALL",
       "score": null,
       "duration": "3:59",
-      "event": "DERBY CITY"
+      "event": "Derby City Classic"
+    },
+    {
+      "date": "2012-12-08",
+      "opponent_id": "1281409009",
+      "opponent_career_id": "career_016282",
+      "opponent_name": "Robert Weedman",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:47",
+      "event": "Derby City Classic"
+    },
+    {
+      "date": "2012-12-08",
+      "opponent_id": "1325551009",
+      "opponent_career_id": "career_014605",
+      "opponent_name": "Bilal Mamedov",
+      "opponent_team": "Iroquois",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": "2-1",
+      "duration": "7:00",
+      "event": "Derby City Classic"
     },
     {
       "date": "2012-12-08",
@@ -496,7 +533,23 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "3:37",
+      "duration": "3:47",
+      "event": "Derby City Classic"
+    },
+    {
+      "date": "2012-12-08",
+      "opponent_id": "1443460009",
+      "opponent_career_id": null,
+      "opponent_name": "Michael Calhoun",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:13",
       "event": "Derby City Classic"
     },
     {
@@ -513,7 +566,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "vs. Fern Creek"
+      "event": "vs. Doss"
     },
     {
       "date": "2012-12-01",
@@ -672,15 +725,15 @@
       "season": 2013,
       "grade": null,
       "team": "Fern Creek",
-      "record": "19-10",
+      "record": "27-15",
       "regional_place": 3,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 19,
-    "losses": 10,
-    "win_pct": 0.655
+    "wins": 27,
+    "losses": 15,
+    "win_pct": 0.643
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

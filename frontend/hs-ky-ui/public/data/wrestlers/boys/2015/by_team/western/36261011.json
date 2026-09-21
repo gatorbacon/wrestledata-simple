@@ -5,6 +5,11 @@
   "team_slug": "western",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.75,
-    "bonus_rate": 0.833,
+    "pin_rate": 0.818,
+    "bonus_rate": 0.909,
     "majors": 1,
     "techs": 0,
     "pins": 9
@@ -133,6 +138,22 @@
     },
     {
       "date": "2015-01-24",
+      "opponent_id": "35249013",
+      "opponent_career_id": "career_012188",
+      "opponent_name": "Collin Barrett",
+      "opponent_team": "Campbell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:08",
+      "event": "Capital City Classic"
+    },
+    {
+      "date": "2015-01-24",
       "opponent_id": "55780076",
       "opponent_career_id": "career_011467",
       "opponent_name": "William Keeney",
@@ -161,7 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:17",
-      "event": "vs. Western"
+      "event": "vs. Male"
     },
     {
       "date": "2015-01-21",
@@ -177,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Western"
+      "event": "vs. North Oldham"
     },
     {
       "date": "2015-01-17",
@@ -193,7 +214,7 @@
       "method": "DEC",
       "score": "1-0",
       "duration": "7:00",
-      "event": "vs. Western"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2015-01-17",
@@ -209,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:52",
-      "event": "vs. Western"
+      "event": "vs. Moore"
     },
     {
       "date": "2015-01-17",
@@ -225,7 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Western"
+      "event": "vs. Spencer County"
     },
     {
       "date": "2015-01-17",
@@ -293,22 +314,6 @@
     },
     {
       "date": "2014-12-20",
-      "opponent_id": "80047094",
-      "opponent_career_id": "career_011710",
-      "opponent_name": "Andrew Adams",
-      "opponent_team": "Mccreary Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Bald Eagle Brawl"
-    },
-    {
-      "date": "2014-12-20",
       "opponent_id": "2252013",
       "opponent_career_id": "career_014178",
       "opponent_name": "Jorge Walls",
@@ -317,6 +322,22 @@
       "opponent_weight": 120,
       "opponent_rank": null,
       "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Bald Eagle Brawl"
+    },
+    {
+      "date": "2014-12-20",
+      "opponent_id": "80047094",
+      "opponent_career_id": "career_011710",
+      "opponent_name": "Andrew Adams",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -337,7 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:41",
-      "event": "vs. Western"
+      "event": "vs. Pleasure Ridge Park"
     },
     {
       "date": "2014-12-10",
@@ -353,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Western"
+      "event": "vs. Seneca"
     },
     {
       "date": "2014-12-10",
@@ -373,19 +394,19 @@
     },
     {
       "date": "2014-12-06",
-      "opponent_id": "66706071",
-      "opponent_career_id": "career_014783",
-      "opponent_name": "Husseini Husseine",
-      "opponent_team": "Valley",
+      "opponent_id": "2252013",
+      "opponent_career_id": "career_014178",
+      "opponent_name": "Jorge Walls",
+      "opponent_team": "Bullitt Central",
       "opponent_team_rank": null,
-      "opponent_weight": 113,
+      "opponent_weight": 120,
       "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
+      "weight_class": "120",
+      "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Western"
+      "event": "vs. Bullitt Central"
     },
     {
       "date": "2014-12-06",
@@ -401,7 +422,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Western"
+      "event": "vs. Doss"
+    },
+    {
+      "date": "2014-12-06",
+      "opponent_id": "66706071",
+      "opponent_career_id": "career_014783",
+      "opponent_name": "Husseini Husseine",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Valley"
     },
     {
       "date": "2014-12-06",
@@ -434,22 +471,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Fairdale"
-    },
-    {
-      "date": "2014-12-06",
-      "opponent_id": "2252013",
-      "opponent_career_id": "career_014178",
-      "opponent_name": "Jorge Walls",
-      "opponent_team": "Bullitt Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Western"
     }
   ],
   "career": {
@@ -483,5 +504,5 @@
     "losses": 15,
     "win_pct": 0.559
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

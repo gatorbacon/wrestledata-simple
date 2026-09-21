@@ -5,10 +5,15 @@
   "team_slug": "campbell_county",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "43-2",
+    "overall": "47-2",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.708,
-    "bonus_rate": 0.896,
+    "pin_rate": 0.702,
+    "bonus_rate": 0.894,
     "majors": 4,
     "techs": 5,
-    "pins": 34
+    "pins": 33
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -180,38 +185,6 @@
       "event": "KHSAA Region 6"
     },
     {
-      "date": "2014-02-08",
-      "opponent_id": "2886863009",
-      "opponent_career_id": "career_015521",
-      "opponent_name": "Jacob Brett",
-      "opponent_team": "Newport",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:07",
-      "event": "KHSAA Region 6"
-    },
-    {
-      "date": "2014-02-01",
-      "opponent_id": "2887719009",
-      "opponent_career_id": "career_015731",
-      "opponent_name": "Payton Popp",
-      "opponent_team": "Woodford County",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:27",
-      "event": "vs. Campbell County"
-    },
-    {
       "date": "2014-02-01",
       "opponent_id": "2887541009",
       "opponent_career_id": "career_014126",
@@ -241,7 +214,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:57",
-      "event": "vs. Campbell County"
+      "event": "vs. Meade County"
+    },
+    {
+      "date": "2014-02-01",
+      "opponent_id": "2887719009",
+      "opponent_career_id": "career_015731",
+      "opponent_name": "Payton Popp",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:27",
+      "event": "vs. Woodford County"
     },
     {
       "date": "2014-01-18",
@@ -401,7 +390,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:28",
-      "event": "vs. Campbell County"
+      "event": "vs. Ryle"
     },
     {
       "date": "2014-01-08",
@@ -417,7 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Campbell County"
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2014-01-03",
@@ -464,7 +453,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "3:18",
       "event": "Northern Kentucky Athletic Conference"
     },
     {
@@ -480,7 +469,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:15",
       "event": "Northern Kentucky Athletic Conference"
     },
     {
@@ -773,12 +762,12 @@
     },
     {
       "date": "2013-11-30",
-      "opponent_id": "2963802009",
+      "opponent_id": "2958944009",
       "opponent_career_id": null,
-      "opponent_name": "Cody Whaley",
-      "opponent_team": "Hillsboro",
+      "opponent_name": "Francis Jones",
+      "opponent_team": "Anderson",
       "opponent_team_rank": null,
-      "opponent_weight": 132,
+      "opponent_weight": 138,
       "opponent_rank": null,
       "weight_class": "138",
       "result": "W",
@@ -789,12 +778,12 @@
     },
     {
       "date": "2013-11-30",
-      "opponent_id": "2958944009",
+      "opponent_id": "2963802009",
       "opponent_career_id": null,
-      "opponent_name": "Francis Jones",
-      "opponent_team": "Anderson",
+      "opponent_name": "Cody Whaley",
+      "opponent_team": "Hillsboro",
       "opponent_team_rank": null,
-      "opponent_weight": 138,
+      "opponent_weight": 132,
       "opponent_rank": null,
       "weight_class": "138",
       "result": "W",
@@ -841,7 +830,10 @@
     "canonical_name": "Sean Fausz",
     "seasons": [
       2014,
-      2013
+      2013,
+      2012,
+      2011,
+      2010
     ]
   },
   "season_summary": [
@@ -849,7 +841,7 @@
       "season": 2014,
       "grade": null,
       "team": "Campbell County",
-      "record": "43-2",
+      "record": "47-2",
       "regional_place": 1,
       "state_place": 1
     },
@@ -857,15 +849,39 @@
       "season": 2013,
       "grade": null,
       "team": "Campbell County",
-      "record": "37-0",
+      "record": "48-0",
       "regional_place": 1,
       "state_place": 1
+    },
+    {
+      "season": 2012,
+      "grade": 10,
+      "team": "Campbell County",
+      "record": "5-1",
+      "regional_place": null,
+      "state_place": 3
+    },
+    {
+      "season": 2011,
+      "grade": 9,
+      "team": "Campbell County",
+      "record": "4-1",
+      "regional_place": null,
+      "state_place": 2
+    },
+    {
+      "season": 2010,
+      "grade": 8,
+      "team": "Campbell County",
+      "record": "4-2",
+      "regional_place": null,
+      "state_place": 4
     }
   ],
   "career_record": {
-    "wins": 80,
-    "losses": 2,
-    "win_pct": 0.976
+    "wins": 108,
+    "losses": 6,
+    "win_pct": 0.947
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

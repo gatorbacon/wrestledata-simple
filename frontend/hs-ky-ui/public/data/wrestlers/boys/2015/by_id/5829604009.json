@@ -5,6 +5,11 @@
   "team_slug": "oldham_county",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.722,
-    "bonus_rate": 0.722,
+    "pin_rate": 0.684,
+    "bonus_rate": 0.684,
     "majors": 0,
     "techs": 0,
     "pins": 13
@@ -96,6 +101,22 @@
       "result": "W",
       "method": "DEC",
       "score": "11-4",
+      "duration": "7:00",
+      "event": "KHSAA Region 5"
+    },
+    {
+      "date": "2015-02-14",
+      "opponent_id": "5606844009",
+      "opponent_career_id": "career_012405",
+      "opponent_name": "Andrew Varble",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "DEC",
+      "score": "3-1",
       "duration": "7:00",
       "event": "KHSAA Region 5"
     },
@@ -181,22 +202,6 @@
     },
     {
       "date": "2015-01-31",
-      "opponent_id": "5400429009",
-      "opponent_career_id": "career_011437",
-      "opponent_name": "Ray Irving",
-      "opponent_team": "Henry Clay",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Oldham County"
-    },
-    {
-      "date": "2015-01-31",
       "opponent_id": "73702071",
       "opponent_career_id": "career_013006",
       "opponent_name": "Brett Graziani",
@@ -209,7 +214,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:05",
-      "event": "vs. Oldham County"
+      "event": "vs. Campbell County"
+    },
+    {
+      "date": "2015-01-31",
+      "opponent_id": "5400429009",
+      "opponent_career_id": "career_011437",
+      "opponent_name": "Ray Irving",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Henry Clay"
     },
     {
       "date": "2015-01-31",
@@ -337,7 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:40",
-      "event": "vs. Oldham County"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2015-01-17",
@@ -353,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Oldham County"
+      "event": "vs. North Hardin"
     },
     {
       "date": "2015-01-17",
@@ -561,7 +582,39 @@
       "method": "DEC",
       "score": "14-7",
       "duration": "7:00",
-      "event": "vs. Oldham County"
+      "event": "vs. John Hardin"
+    },
+    {
+      "date": "2014-12-06",
+      "opponent_id": "7697071",
+      "opponent_career_id": "career_011476",
+      "opponent_name": "Peyton Martin",
+      "opponent_team": "Male",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "INJ",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Male"
+    },
+    {
+      "date": "2014-12-06",
+      "opponent_id": "32183010",
+      "opponent_career_id": "career_014022",
+      "opponent_name": "Dylan Knowlton",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Meade County"
     },
     {
       "date": "2014-12-06",
@@ -578,38 +631,6 @@
       "score": null,
       "duration": "0:29",
       "event": "vs. Trigg County"
-    },
-    {
-      "date": "2014-12-06",
-      "opponent_id": "7697071",
-      "opponent_career_id": "career_011476",
-      "opponent_name": "Peyton Martin",
-      "opponent_team": "Male",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "INJ",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Oldham County"
-    },
-    {
-      "date": "2014-12-06",
-      "opponent_id": "32183010",
-      "opponent_career_id": "career_014022",
-      "opponent_name": "Dylan Knowlton",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Oldham County"
     }
   ],
   "career": {
@@ -643,5 +664,5 @@
     "losses": 23,
     "win_pct": 0.709
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "fort_campbell",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "30-4",
+    "overall": "35-4",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.382,
-    "bonus_rate": 0.559,
+    "pin_rate": 0.394,
+    "bonus_rate": 0.576,
     "majors": 4,
     "techs": 2,
     "pins": 13
@@ -148,22 +153,6 @@
       "event": "KHSAA Region I Tournament"
     },
     {
-      "date": "2014-02-15",
-      "opponent_id": "2886407009",
-      "opponent_career_id": "career_014849",
-      "opponent_name": "Isaac Lawson",
-      "opponent_team": "Hopkinsville",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "DEC",
-      "score": "5-3",
-      "duration": "7:00",
-      "event": "KHSAA Region I Tournament"
-    },
-    {
       "date": "2014-02-08",
       "opponent_id": "2886407009",
       "opponent_career_id": "career_014849",
@@ -240,7 +229,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:05",
       "event": "Fort Knox Invitational"
     },
     {
@@ -257,7 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:04",
-      "event": "vs. Fort Campbell"
+      "event": "vs. Paducah Tilghman"
     },
     {
       "date": "2014-01-14",
@@ -389,6 +378,22 @@
     },
     {
       "date": "2014-01-04",
+      "opponent_id": "2885695009",
+      "opponent_career_id": "career_013568",
+      "opponent_name": "Tige Littlefield",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Caldwell County"
+    },
+    {
+      "date": "2014-01-04",
       "opponent_id": "2887501009",
       "opponent_career_id": "career_015682",
       "opponent_name": "Warren Jones",
@@ -402,22 +407,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Trigg County"
-    },
-    {
-      "date": "2014-01-04",
-      "opponent_id": "2885695009",
-      "opponent_career_id": "career_013568",
-      "opponent_name": "Tige Littlefield",
-      "opponent_team": "Caldwell County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Fort Campbell"
     },
     {
       "date": "2014-01-04",
@@ -465,7 +454,7 @@
       "method": "TF",
       "score": "16-0",
       "duration": "0:00",
-      "event": "vs. Fort Campbell"
+      "event": "vs. Paducah Tilghman"
     },
     {
       "date": "2013-12-28",
@@ -681,7 +670,9 @@
     "canonical_name": "Ki Ryder",
     "seasons": [
       2014,
-      2013
+      2013,
+      2012,
+      2011
     ]
   },
   "season_summary": [
@@ -689,7 +680,7 @@
       "season": 2014,
       "grade": null,
       "team": "Fort Campbell",
-      "record": "30-4",
+      "record": "35-4",
       "regional_place": 1,
       "state_place": 3
     },
@@ -697,15 +688,31 @@
       "season": 2013,
       "grade": null,
       "team": "Fort Campbell",
-      "record": "25-9",
+      "record": "32-9",
       "regional_place": 1,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 10,
+      "team": "Fort Campbell",
+      "record": "1-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2011,
+      "grade": 9,
+      "team": "Fort Campbell",
+      "record": "0-2",
+      "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 55,
-    "losses": 13,
-    "win_pct": 0.809
+    "wins": 68,
+    "losses": 17,
+    "win_pct": 0.8
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

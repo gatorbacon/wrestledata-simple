@@ -5,10 +5,15 @@
   "team_slug": "johnson_central",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
-    "overall": "40-8",
+    "overall": "39-8",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.778,
-    "bonus_rate": 0.815,
+    "pin_rate": 0.806,
+    "bonus_rate": 0.839,
     "majors": 0,
     "techs": 1,
-    "pins": 21
+    "pins": 25
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -261,6 +266,22 @@
     },
     {
       "date": "2015-01-16",
+      "opponent_id": "5400416009",
+      "opponent_career_id": "career_013988",
+      "opponent_name": "Eli Gawthorp",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:04",
+      "event": "vs. Henry Clay"
+    },
+    {
+      "date": "2015-01-16",
       "opponent_id": "OUTSTATE_72b4c9a7dea7",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -293,22 +314,6 @@
     },
     {
       "date": "2015-01-16",
-      "opponent_id": "5400416009",
-      "opponent_career_id": "career_013988",
-      "opponent_name": "Eli Gawthorp",
-      "opponent_team": "Henry Clay",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:04",
-      "event": "vs. Johnson Central"
-    },
-    {
-      "date": "2015-01-16",
       "opponent_id": "OUTSTATE_37a070cafc25",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -325,22 +330,6 @@
     },
     {
       "date": "2015-01-10",
-      "opponent_id": "6265094",
-      "opponent_career_id": null,
-      "opponent_name": "sheldon simmons",
-      "opponent_team": "Greenbrier East",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "DEC",
-      "score": "3-0",
-      "duration": "7:00",
-      "event": "vs. Greenbrier East"
-    },
-    {
-      "date": "2015-01-10",
       "opponent_id": "6237331009",
       "opponent_career_id": null,
       "opponent_name": "Zaid Quershi",
@@ -354,6 +343,22 @@
       "score": null,
       "duration": "4:08",
       "event": "vs. Jefferson Forest"
+    },
+    {
+      "date": "2015-01-10",
+      "opponent_id": "6265094",
+      "opponent_career_id": null,
+      "opponent_name": "sheldon simmons",
+      "opponent_team": "Greenbrier East",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "DEC",
+      "score": "3-0",
+      "duration": "7:00",
+      "event": "vs. Greenbrier East"
     },
     {
       "date": "2015-01-10",
@@ -641,7 +646,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:57",
-      "event": "vs. Johnson Central"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2014-12-12",
@@ -722,6 +727,70 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Huntington"
+    },
+    {
+      "date": "2014-12-06",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Riverside Hs"
+    },
+    {
+      "date": "2014-12-06",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Parkersburg South"
+    },
+    {
+      "date": "2014-12-06",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Ravenswood"
+    },
+    {
+      "date": "2014-12-06",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Oak Hill"
     }
   ],
   "career": {
@@ -738,7 +807,7 @@
       "season": 2015,
       "grade": 11,
       "team": "Johnson Central",
-      "record": "40-8",
+      "record": "39-8",
       "regional_place": 1,
       "state_place": null
     },
@@ -746,7 +815,7 @@
       "season": 2014,
       "grade": null,
       "team": "Johnson Central",
-      "record": "34-12",
+      "record": "36-13",
       "regional_place": 3,
       "state_place": null
     },
@@ -760,9 +829,9 @@
     }
   ],
   "career_record": {
-    "wins": 74,
-    "losses": 21,
-    "win_pct": 0.779
+    "wins": 75,
+    "losses": 22,
+    "win_pct": 0.773
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

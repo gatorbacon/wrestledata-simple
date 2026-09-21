@@ -5,10 +5,15 @@
   "team_slug": "henry_clay",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "24-4",
+    "overall": "27-4",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -161,7 +166,7 @@
       "method": "TF",
       "score": "22-7",
       "duration": "0:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2014-02-01",
@@ -209,7 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:33",
-      "event": "vs. Henry Clay"
+      "event": "vs. Woodford County"
     },
     {
       "date": "2014-01-18",
@@ -305,7 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Central"
     },
     {
       "date": "2014-01-04",
@@ -337,7 +342,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:40",
-      "event": "vs. Henry Clay"
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2013-12-28",
@@ -353,7 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:17",
-      "event": "Woodford County Invitational Tournament"
+      "event": "Woodford County Invitational"
     },
     {
       "date": "2013-12-28",
@@ -369,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:20",
-      "event": "Woodford Co Invitational"
+      "event": "Woodford County Invitational"
     },
     {
       "date": "2013-12-28",
@@ -421,22 +426,6 @@
     },
     {
       "date": "2013-12-21",
-      "opponent_id": "2999434009",
-      "opponent_career_id": null,
-      "opponent_name": "Justin Allen",
-      "opponent_team": "Dobyns Bennett",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:09",
-      "event": "vs. Dobyns Bennett"
-    },
-    {
-      "date": "2013-12-21",
       "opponent_id": "OUTSTATE_1d3221afd2c6",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -452,6 +441,22 @@
       "event": "vs. Sullivan South Hgih School"
     },
     {
+      "date": "2013-12-21",
+      "opponent_id": "2999434009",
+      "opponent_career_id": null,
+      "opponent_name": "Justin Allen",
+      "opponent_team": "Dobyns Bennett",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:09",
+      "event": "vs. Dobyns Bennett"
+    },
+    {
       "date": "2013-12-14",
       "opponent_id": "2885769009",
       "opponent_career_id": "career_014243",
@@ -465,7 +470,7 @@
       "method": "DEC",
       "score": "14-8",
       "duration": "7:00",
-      "event": "Ryle Raider Rumble"
+      "event": "Raider Rumble"
     },
     {
       "date": "2013-12-14",
@@ -537,7 +542,8 @@
     "canonical_name": "John Hernandez",
     "seasons": [
       2014,
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -545,7 +551,7 @@
       "season": 2014,
       "grade": null,
       "team": "Henry Clay",
-      "record": "24-4",
+      "record": "27-4",
       "regional_place": 1,
       "state_place": 2
     },
@@ -553,15 +559,23 @@
       "season": 2013,
       "grade": null,
       "team": "Henry Clay",
-      "record": "30-7",
+      "record": "37-9",
       "regional_place": 3,
       "state_place": 2
+    },
+    {
+      "season": 2012,
+      "grade": 10,
+      "team": "Henry Clay",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
     }
   ],
   "career_record": {
-    "wins": 54,
-    "losses": 11,
-    "win_pct": 0.831
+    "wins": 66,
+    "losses": 15,
+    "win_pct": 0.815
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "campbell_county",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "35-4",
+    "overall": "41-5",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -193,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Campbell County"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2013-01-26",
@@ -225,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:22",
-      "event": "vs. Campbell County"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2013-01-26",
@@ -241,7 +246,7 @@
       "method": "TF",
       "score": "23-5",
       "duration": "0:00",
-      "event": "vs. Campbell County"
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2013-01-12",
@@ -501,22 +506,6 @@
     },
     {
       "date": "2012-12-15",
-      "opponent_id": "1396582009",
-      "opponent_career_id": "career_015560",
-      "opponent_name": "Justin Borck",
-      "opponent_team": "Paul Dunbar",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:53",
-      "event": "vs. Campbell County"
-    },
-    {
-      "date": "2012-12-15",
       "opponent_id": "1353682009",
       "opponent_career_id": "career_014018",
       "opponent_name": "Leland Phelps",
@@ -529,7 +518,23 @@
       "method": "MD",
       "score": "15-5",
       "duration": "7:00",
-      "event": "vs. Campbell County"
+      "event": "vs. Male"
+    },
+    {
+      "date": "2012-12-15",
+      "opponent_id": "1396582009",
+      "opponent_career_id": "career_015560",
+      "opponent_name": "Justin Borck",
+      "opponent_team": "Paul Dunbar",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:53",
+      "event": "vs. Paul Dunbar"
     },
     {
       "date": "2012-12-12",
@@ -721,7 +726,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Campbell County"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2012-11-24",
@@ -737,7 +742,7 @@
       "method": "TF",
       "score": "17-2",
       "duration": "0:00",
-      "event": "vs. Campbell County"
+      "event": "vs. Bourbon County"
     },
     {
       "date": "2012-11-24",
@@ -769,14 +774,17 @@
       "method": "FALL",
       "score": null,
       "duration": "3:20",
-      "event": "vs. Campbell County"
+      "event": "vs. Scott County"
     }
   ],
   "career": {
     "career_id": "career_015893",
     "canonical_name": "Paul Hamilton",
     "seasons": [
-      2013
+      2013,
+      2012,
+      2011,
+      2010
     ]
   },
   "season_summary": [
@@ -784,15 +792,39 @@
       "season": 2013,
       "grade": null,
       "team": "Campbell County",
-      "record": "35-4",
+      "record": "41-5",
       "regional_place": 1,
       "state_place": 1
+    },
+    {
+      "season": 2012,
+      "grade": 11,
+      "team": "Campbell County",
+      "record": "4-1",
+      "regional_place": null,
+      "state_place": 2
+    },
+    {
+      "season": 2011,
+      "grade": 10,
+      "team": "Campbell County",
+      "record": "5-1",
+      "regional_place": null,
+      "state_place": 3
+    },
+    {
+      "season": 2010,
+      "grade": 9,
+      "team": "Campbell County",
+      "record": "1-2",
+      "regional_place": null,
+      "state_place": null
     }
   ],
   "career_record": {
-    "wins": 35,
-    "losses": 4,
-    "win_pct": 0.897
+    "wins": 51,
+    "losses": 9,
+    "win_pct": 0.85
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

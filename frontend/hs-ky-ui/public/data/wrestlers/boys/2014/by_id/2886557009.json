@@ -5,10 +5,15 @@
   "team_slug": "la_rue_county",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "20-15",
+    "overall": "24-19",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "pin_rate": 0.938,
+    "bonus_rate": 0.938,
     "majors": 0,
     "techs": 0,
     "pins": 15
@@ -148,54 +153,6 @@
       "event": "KHSAA Region 2"
     },
     {
-      "date": "2014-02-08",
-      "opponent_id": "2885474009",
-      "opponent_career_id": "career_015226",
-      "opponent_name": "Cody Blakely",
-      "opponent_team": "Barren County",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:24",
-      "event": "KHSAA Region 2"
-    },
-    {
-      "date": "2014-02-01",
-      "opponent_id": "2887653009",
-      "opponent_career_id": "career_015714",
-      "opponent_name": "Casey Mink",
-      "opponent_team": "Wayne County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:01",
-      "event": "vs. Wayne County"
-    },
-    {
-      "date": "2014-02-01",
-      "opponent_id": "2886936009",
-      "opponent_career_id": "career_013750",
-      "opponent_name": "Collin Portman",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:41",
-      "event": "vs. La Rue County"
-    },
-    {
       "date": "2014-02-01",
       "opponent_id": "2886085009",
       "opponent_career_id": "career_015340",
@@ -209,7 +166,7 @@
       "method": "DEC",
       "score": "9-3",
       "duration": "7:00",
-      "event": "vs. La Rue County"
+      "event": "vs. Doss"
     },
     {
       "date": "2014-02-01",
@@ -242,6 +199,38 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Doss"
+    },
+    {
+      "date": "2014-02-01",
+      "opponent_id": "2887653009",
+      "opponent_career_id": "career_015714",
+      "opponent_name": "Casey Mink",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:01",
+      "event": "vs. Wayne County"
+    },
+    {
+      "date": "2014-02-01",
+      "opponent_id": "2886936009",
+      "opponent_career_id": "career_013750",
+      "opponent_name": "Collin Portman",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:41",
+      "event": "vs. North Oldham"
     },
     {
       "date": "2014-01-29",
@@ -325,22 +314,6 @@
     },
     {
       "date": "2014-01-11",
-      "opponent_id": "2886668009",
-      "opponent_career_id": "career_013118",
-      "opponent_name": "Sam Kauer",
-      "opponent_team": "Madison Southern",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Defender of the Mat"
-    },
-    {
-      "date": "2014-01-11",
       "opponent_id": "2886253009",
       "opponent_career_id": "career_015373",
       "opponent_name": "Elijah Escoffery",
@@ -357,6 +330,22 @@
     },
     {
       "date": "2014-01-11",
+      "opponent_id": "2886608009",
+      "opponent_career_id": "career_015472",
+      "opponent_name": "Blake Mackey",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Defender of the Mat"
+    },
+    {
+      "date": "2014-01-11",
       "opponent_id": "2887458009",
       "opponent_career_id": "career_015670",
       "opponent_name": "Walker Keaton",
@@ -369,6 +358,38 @@
       "method": "MD",
       "score": "10-2",
       "duration": "7:00",
+      "event": "Defender of the Mat"
+    },
+    {
+      "date": "2014-01-11",
+      "opponent_id": "2886668009",
+      "opponent_career_id": "career_013118",
+      "opponent_name": "Sam Kauer",
+      "opponent_team": "Madison Southern",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "Defender of the Mat"
+    },
+    {
+      "date": "2014-01-11",
+      "opponent_id": "2886668009",
+      "opponent_career_id": "career_013118",
+      "opponent_name": "Sam Kauer",
+      "opponent_team": "Madison Southern",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
       "event": "Defender of the Mat"
     },
     {
@@ -469,22 +490,6 @@
     },
     {
       "date": "2013-12-21",
-      "opponent_id": "2886490009",
-      "opponent_career_id": "career_014007",
-      "opponent_name": "Louis Hollings",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:55",
-      "event": "vs. John Hardin"
-    },
-    {
-      "date": "2013-12-21",
       "opponent_id": "2885870009",
       "opponent_career_id": "career_015289",
       "opponent_name": "Trey Jaco",
@@ -497,7 +502,7 @@
       "method": "DEC",
       "score": "7-6",
       "duration": "7:00",
-      "event": "vs. La Rue County"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2013-12-21",
@@ -530,6 +535,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Fort Knox"
+    },
+    {
+      "date": "2013-12-21",
+      "opponent_id": "2886490009",
+      "opponent_career_id": "career_014007",
+      "opponent_name": "Louis Hollings",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:55",
+      "event": "vs. John Hardin"
     },
     {
       "date": "2013-12-21",
@@ -577,7 +598,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:58",
-      "event": "vs. La Rue County"
+      "event": "vs. Wayne County"
     },
     {
       "date": "2013-12-18",
@@ -613,22 +634,6 @@
     },
     {
       "date": "2013-12-14",
-      "opponent_id": "2887282009",
-      "opponent_career_id": "career_015153",
-      "opponent_name": "derek hicks",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "TF",
-      "score": "18-3",
-      "duration": "0:00",
-      "event": "vs. Simon Kenton"
-    },
-    {
-      "date": "2013-12-14",
       "opponent_id": "OUTSTATE_f168e9c3cbeb",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -642,6 +647,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Fort Knox"
+    },
+    {
+      "date": "2013-12-14",
+      "opponent_id": "2887282009",
+      "opponent_career_id": "career_015153",
+      "opponent_name": "derek hicks",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "0:00",
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2013-12-14",
@@ -739,7 +760,7 @@
       "season": 2014,
       "grade": null,
       "team": "La Rue County",
-      "record": "20-15",
+      "record": "24-19",
       "regional_place": 4,
       "state_place": null
     },
@@ -753,9 +774,9 @@
     }
   ],
   "career_record": {
-    "wins": 74,
-    "losses": 40,
-    "win_pct": 0.649
+    "wins": 78,
+    "losses": 44,
+    "win_pct": 0.639
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "harrison_county",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2017,
   "current_rank": null,
   "record": {
-    "overall": "34-14",
+    "overall": "35-16",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -192,8 +197,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Harrison County"
+      "duration": "0:25",
+      "event": "vs. Franklin County"
     },
     {
       "date": "2017-01-28",
@@ -256,7 +261,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "0:27",
       "event": "Capital City Classic"
     },
     {
@@ -433,7 +438,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:29",
-      "event": "vs. Harrison County"
+      "event": "vs. Covington Catholic"
     },
     {
       "date": "2017-01-04",
@@ -497,7 +502,7 @@
       "method": "MD",
       "score": "10-0",
       "duration": "7:00",
-      "event": "TCI"
+      "event": "Tates Creek Invitational"
     },
     {
       "date": "2016-12-30",
@@ -613,22 +618,6 @@
     },
     {
       "date": "2016-12-22",
-      "opponent_id": "580823013",
-      "opponent_career_id": "career_012347",
-      "opponent_name": "Brandon Coons",
-      "opponent_team": "Southern",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:35",
-      "event": "vs. Southern"
-    },
-    {
-      "date": "2016-12-22",
       "opponent_id": "864705076",
       "opponent_career_id": "career_012239",
       "opponent_name": "Zach Manns",
@@ -641,7 +630,7 @@
       "method": "MD",
       "score": "12-2",
       "duration": "7:00",
-      "event": "vs. Harrison County"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2016-12-22",
@@ -676,11 +665,11 @@
       "event": "vs. Madison Central"
     },
     {
-      "date": "2016-12-17",
-      "opponent_id": "876591076",
-      "opponent_career_id": "career_010906",
-      "opponent_name": "Bryson Armstrong",
-      "opponent_team": "Western Hills",
+      "date": "2016-12-22",
+      "opponent_id": "580823013",
+      "opponent_career_id": "career_012347",
+      "opponent_name": "Brandon Coons",
+      "opponent_team": "Southern",
       "opponent_team_rank": null,
       "opponent_weight": 113,
       "opponent_rank": null,
@@ -688,24 +677,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "1:01",
-      "event": "vs. Western Hills"
-    },
-    {
-      "date": "2016-12-17",
-      "opponent_id": "532733010",
-      "opponent_career_id": "career_010619",
-      "opponent_name": "Waylin Dople",
-      "opponent_team": "Mccreary Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Mccreary Central"
+      "duration": "1:35",
+      "event": "vs. Southern"
     },
     {
       "date": "2016-12-17",
@@ -740,20 +713,36 @@
       "event": "vs. Waggener"
     },
     {
-      "date": "2016-12-10",
-      "opponent_id": "894967076",
-      "opponent_career_id": "career_010702",
-      "opponent_name": "Daylon Stafford",
-      "opponent_team": "Sheldon Clark",
+      "date": "2016-12-17",
+      "opponent_id": "876591076",
+      "opponent_career_id": "career_010906",
+      "opponent_name": "Bryson Armstrong",
+      "opponent_team": "Western Hills",
       "opponent_team_rank": null,
       "opponent_weight": 113,
       "opponent_rank": null,
       "weight_class": "120",
-      "result": "L",
-      "method": "DEC",
-      "score": "6-0",
-      "duration": "7:00",
-      "event": "vs. Sheldon Clark"
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:01",
+      "event": "vs. Western Hills"
+    },
+    {
+      "date": "2016-12-17",
+      "opponent_id": "532733010",
+      "opponent_career_id": "career_010619",
+      "opponent_name": "Waylin Dople",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Mccreary Central"
     },
     {
       "date": "2016-12-10",
@@ -786,6 +775,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Pike County Central"
+    },
+    {
+      "date": "2016-12-10",
+      "opponent_id": "894967076",
+      "opponent_career_id": "career_010702",
+      "opponent_name": "Daylon Stafford",
+      "opponent_team": "Sheldon Clark",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-0",
+      "duration": "7:00",
+      "event": "vs. Sheldon Clark"
     },
     {
       "date": "2016-12-10",
@@ -869,7 +874,7 @@
       "season": 2020,
       "grade": 12,
       "team": "Harrison County",
-      "record": "35-4",
+      "record": "36-4",
       "regional_place": 1,
       "state_place": null
     },
@@ -877,7 +882,7 @@
       "season": 2019,
       "grade": 11,
       "team": "Harrison County",
-      "record": "38-6",
+      "record": "40-7",
       "regional_place": 1,
       "state_place": 5
     },
@@ -885,7 +890,7 @@
       "season": 2018,
       "grade": 10,
       "team": "Harrison County",
-      "record": "32-15",
+      "record": "33-15",
       "regional_place": 2,
       "state_place": null
     },
@@ -893,7 +898,7 @@
       "season": 2017,
       "grade": 9,
       "team": "Harrison County",
-      "record": "34-14",
+      "record": "35-16",
       "regional_place": 2,
       "state_place": null
     },
@@ -901,7 +906,7 @@
       "season": 2016,
       "grade": 8,
       "team": "Harrison County",
-      "record": "21-9",
+      "record": "22-11",
       "regional_place": 3,
       "state_place": null
     },
@@ -909,15 +914,15 @@
       "season": 2015,
       "grade": 7,
       "team": "Harrison County",
-      "record": "7-5",
+      "record": "7-4",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 167,
-    "losses": 53,
-    "win_pct": 0.759
+    "wins": 173,
+    "losses": 57,
+    "win_pct": 0.752
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

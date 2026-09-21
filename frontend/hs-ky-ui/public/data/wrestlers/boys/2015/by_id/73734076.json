@@ -5,6 +5,11 @@
   "team_slug": "holmes",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
@@ -193,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:54",
-      "event": "Lockland Invitaional"
+      "event": "Lockland Invitational"
     },
     {
       "date": "2015-01-24",
@@ -273,7 +278,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:54",
-      "event": "vs. Holmes"
+      "event": "vs. Cooper"
+    },
+    {
+      "date": "2015-01-10",
+      "opponent_id": "51862071",
+      "opponent_career_id": "career_013274",
+      "opponent_name": "Michael Davis",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "MD",
+      "score": "16-8",
+      "duration": "7:00",
+      "event": "Jaguar Jungle Classic"
     },
     {
       "date": "2015-01-10",
@@ -337,22 +358,6 @@
       "method": "FALL",
       "score": null,
       "duration": "1:30",
-      "event": "Jaguar Jungle Classic"
-    },
-    {
-      "date": "2015-01-10",
-      "opponent_id": "51862071",
-      "opponent_career_id": "career_013274",
-      "opponent_name": "Michael Davis",
-      "opponent_team": "Cooper",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "MD",
-      "score": "16-8",
-      "duration": "7:00",
       "event": "Jaguar Jungle Classic"
     },
     {
@@ -545,7 +550,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:45",
-      "event": "Derby Classic"
+      "event": "Derby City Classic"
     },
     {
       "date": "2014-12-27",
@@ -581,22 +586,6 @@
     },
     {
       "date": "2014-12-20",
-      "opponent_id": "58407071",
-      "opponent_career_id": null,
-      "opponent_name": "Spencer Seibert",
-      "opponent_team": "Coldwater",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "TF",
-      "score": "19-2",
-      "duration": "0:00",
-      "event": "Middletown Madison Inv"
-    },
-    {
-      "date": "2014-12-20",
       "opponent_id": "37492011",
       "opponent_career_id": null,
       "opponent_name": "Jordan Cress",
@@ -609,6 +598,22 @@
       "method": "DEC",
       "score": "12-8",
       "duration": "7:00",
+      "event": "Middletown Madison Inv"
+    },
+    {
+      "date": "2014-12-20",
+      "opponent_id": "58407071",
+      "opponent_career_id": null,
+      "opponent_name": "Spencer Seibert",
+      "opponent_team": "Coldwater",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "TF",
+      "score": "19-2",
+      "duration": "0:00",
       "event": "Middletown Madison Inv"
     },
     {
@@ -746,5 +751,5 @@
     "losses": 19,
     "win_pct": 0.558
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

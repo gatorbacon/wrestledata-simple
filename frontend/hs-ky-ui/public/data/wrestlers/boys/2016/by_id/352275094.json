@@ -5,10 +5,15 @@
   "team_slug": "doss",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
-    "overall": "21-11",
+    "overall": "20-10",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.706,
-    "bonus_rate": 0.706,
+    "pin_rate": 0.722,
+    "bonus_rate": 0.722,
     "majors": 0,
     "techs": 0,
-    "pins": 12
+    "pins": 13
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -209,7 +214,23 @@
       "method": "FALL",
       "score": null,
       "duration": "3:05",
-      "event": "vs. Doss"
+      "event": "vs. Central"
+    },
+    {
+      "date": "2016-01-13",
+      "opponent_id": "320000010",
+      "opponent_career_id": "career_013007",
+      "opponent_name": "Kirk Miller",
+      "opponent_team": "Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:58",
+      "event": "vs. Central"
     },
     {
       "date": "2016-01-09",
@@ -357,6 +378,38 @@
     },
     {
       "date": "2015-12-19",
+      "opponent_id": "320453010",
+      "opponent_career_id": "career_013543",
+      "opponent_name": "Brian Durbin",
+      "opponent_team": "Atherton",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:46",
+      "event": "vs. Atherton"
+    },
+    {
+      "date": "2015-12-19",
+      "opponent_id": "432581076",
+      "opponent_career_id": "career_012242",
+      "opponent_name": "Colby Adams",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:45",
+      "event": "Rumble in the Hive.2"
+    },
+    {
+      "date": "2015-12-19",
       "opponent_id": "443624076",
       "opponent_career_id": "career_012396",
       "opponent_name": "Andrew Reynolds",
@@ -388,27 +441,11 @@
       "event": "vs. Valley"
     },
     {
-      "date": "2015-12-19",
-      "opponent_id": "432581076",
-      "opponent_career_id": "career_012242",
-      "opponent_name": "Colby Adams",
-      "opponent_team": "Harrison County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:45",
-      "event": "Rumble in the Hive.2"
-    },
-    {
-      "date": "2015-12-19",
-      "opponent_id": "320453010",
-      "opponent_career_id": "career_013543",
-      "opponent_name": "Brian Durbin",
-      "opponent_team": "Atherton",
+      "date": "2015-12-09",
+      "opponent_id": "8138435009",
+      "opponent_career_id": "career_012647",
+      "opponent_name": "Damian Mattingly",
+      "opponent_team": "Valley",
       "opponent_team_rank": null,
       "opponent_weight": 150,
       "opponent_rank": null,
@@ -416,8 +453,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "4:46",
-      "event": "vs. Doss"
+      "duration": "0:00",
+      "event": "vs. Valley"
     },
     {
       "date": "2015-12-09",
@@ -434,22 +471,6 @@
       "score": null,
       "duration": "3:49",
       "event": "vs. Pleasure Ridge Park"
-    },
-    {
-      "date": "2015-12-09",
-      "opponent_id": "8138435009",
-      "opponent_career_id": "career_012647",
-      "opponent_name": "Damian Mattingly",
-      "opponent_team": "Valley",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Valley"
     },
     {
       "date": "2015-12-05",
@@ -469,22 +490,6 @@
     },
     {
       "date": "2015-11-24",
-      "opponent_id": "OUTSTATE_f7a759a6e967",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Valley",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Valley"
-    },
-    {
-      "date": "2015-11-24",
       "opponent_id": "369229094",
       "opponent_career_id": "career_013681",
       "opponent_name": "Dejuan Hammond",
@@ -498,6 +503,22 @@
       "score": "8-7",
       "duration": "7:00",
       "event": "vs. Jeffersontown"
+    },
+    {
+      "date": "2015-11-24",
+      "opponent_id": "OUTSTATE_f7a759a6e967",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Valley"
     }
   ],
   "career": {
@@ -523,7 +544,7 @@
       "season": 2017,
       "grade": 11,
       "team": "Doss",
-      "record": "14-8",
+      "record": "19-9",
       "regional_place": 1,
       "state_place": 7
     },
@@ -531,7 +552,7 @@
       "season": 2016,
       "grade": 10,
       "team": "Doss",
-      "record": "21-11",
+      "record": "20-10",
       "regional_place": 4,
       "state_place": null
     },
@@ -545,9 +566,9 @@
     }
   ],
   "career_record": {
-    "wins": 59,
+    "wins": 63,
     "losses": 23,
-    "win_pct": 0.72
+    "win_pct": 0.733
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

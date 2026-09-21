@@ -5,10 +5,15 @@
   "team_slug": "conner",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "30-12",
+    "overall": "32-12",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -193,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Conner"
+      "event": "vs. Scott"
     },
     {
       "date": "2014-02-01",
@@ -321,7 +326,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:50",
-      "event": "vs. Conner"
+      "event": "vs. Cooper"
     },
     {
       "date": "2014-01-18",
@@ -341,22 +346,6 @@
     },
     {
       "date": "2014-01-15",
-      "opponent_id": "OUTSTATE_c4f3282a8fb6",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Ryle",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Ryle"
-    },
-    {
-      "date": "2014-01-15",
       "opponent_id": "2885550009",
       "opponent_career_id": "career_013251",
       "opponent_name": "Ahmad Hameidan",
@@ -369,7 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:56",
-      "event": "vs. Conner"
+      "event": "vs. Boone County"
     },
     {
       "date": "2014-01-15",
@@ -386,6 +375,22 @@
       "score": null,
       "duration": "0:27",
       "event": "vs. Cooper"
+    },
+    {
+      "date": "2014-01-15",
+      "opponent_id": "OUTSTATE_c4f3282a8fb6",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Ryle"
     },
     {
       "date": "2014-01-11",
@@ -449,7 +454,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Northern Kentucky Athletic Conference"
+      "event": "NKAC"
     },
     {
       "date": "2014-01-03",
@@ -485,38 +490,6 @@
     },
     {
       "date": "2013-12-21",
-      "opponent_id": "2887222009",
-      "opponent_career_id": "career_014169",
-      "opponent_name": "Zachary Barber",
-      "opponent_team": "Scott County",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:53",
-      "event": "5 Star Classic"
-    },
-    {
-      "date": "2013-12-21",
-      "opponent_id": "2886269009",
-      "opponent_career_id": "career_015044",
-      "opponent_name": "Zach Spradlin",
-      "opponent_team": "Franklin County",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:36",
-      "event": "5 Star Classic"
-    },
-    {
-      "date": "2013-12-21",
       "opponent_id": "2886605009",
       "opponent_career_id": "career_013106",
       "opponent_name": "Landon Young",
@@ -545,6 +518,38 @@
       "method": "FF",
       "score": null,
       "duration": "7:00",
+      "event": "5 Star Classic"
+    },
+    {
+      "date": "2013-12-21",
+      "opponent_id": "2887222009",
+      "opponent_career_id": "career_014169",
+      "opponent_name": "Zachary Barber",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:53",
+      "event": "5 Star Classic"
+    },
+    {
+      "date": "2013-12-21",
+      "opponent_id": "2886269009",
+      "opponent_career_id": "career_015044",
+      "opponent_name": "Zach Spradlin",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:36",
       "event": "5 Star Classic"
     },
     {
@@ -753,7 +758,7 @@
       "season": 2014,
       "grade": null,
       "team": "Conner",
-      "record": "30-12",
+      "record": "32-12",
       "regional_place": null,
       "state_place": null
     },
@@ -761,15 +766,15 @@
       "season": 2013,
       "grade": null,
       "team": "Conner",
-      "record": "12-10",
+      "record": "14-11",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 42,
-    "losses": 22,
-    "win_pct": 0.656
+    "wins": 46,
+    "losses": 23,
+    "win_pct": 0.667
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

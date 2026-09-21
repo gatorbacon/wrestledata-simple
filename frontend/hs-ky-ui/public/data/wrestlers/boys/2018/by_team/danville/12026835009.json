@@ -5,10 +5,15 @@
   "team_slug": "danville",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2018,
   "current_rank": null,
   "record": {
-    "overall": "46-10",
+    "overall": "45-10",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -85,22 +90,6 @@
     },
     {
       "date": "2018-02-09",
-      "opponent_id": "11626955009",
-      "opponent_career_id": "career_011628",
-      "opponent_name": "Kage (Thomas) Krupp",
-      "opponent_team": "West Jessamine",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "TF",
-      "score": "17-2",
-      "duration": "0:00",
-      "event": "KHSAA Region 7"
-    },
-    {
-      "date": "2018-02-09",
       "opponent_id": "11862214009",
       "opponent_career_id": "career_011375",
       "opponent_name": "Isaiah Isaac",
@@ -113,6 +102,22 @@
       "method": "SV-1",
       "score": "3-1",
       "duration": "8:15",
+      "event": "KHSAA Region 7"
+    },
+    {
+      "date": "2018-02-09",
+      "opponent_id": "11626955009",
+      "opponent_career_id": "career_011628",
+      "opponent_name": "Kage (Thomas) Krupp",
+      "opponent_team": "West Jessamine",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "0:00",
       "event": "KHSAA Region 7"
     },
     {
@@ -325,22 +330,6 @@
     },
     {
       "date": "2018-01-10",
-      "opponent_id": "11862222009",
-      "opponent_career_id": "career_011376",
-      "opponent_name": "Hayden Shepherd",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "DEC",
-      "score": "8-5",
-      "duration": "7:00",
-      "event": "vs. Danville"
-    },
-    {
-      "date": "2018-01-10",
       "opponent_id": "11941746009",
       "opponent_career_id": "career_011755",
       "opponent_name": "Logan Richie",
@@ -353,39 +342,23 @@
       "method": "TF",
       "score": "15-0",
       "duration": "0:00",
-      "event": "vs. Danville"
+      "event": "vs. Anderson County"
     },
     {
-      "date": "2018-01-06",
-      "opponent_id": "11952445009",
-      "opponent_career_id": "career_011647",
-      "opponent_name": "Dylan Lewis",
-      "opponent_team": "Harrison County",
+      "date": "2018-01-10",
+      "opponent_id": "11862222009",
+      "opponent_career_id": "career_011376",
+      "opponent_name": "Hayden Shepherd",
+      "opponent_team": "Boyle County",
       "opponent_team_rank": null,
       "opponent_weight": 144,
       "opponent_rank": null,
       "weight_class": "150",
       "result": "W",
-      "method": "MD",
-      "score": "10-2",
+      "method": "DEC",
+      "score": "8-5",
       "duration": "7:00",
-      "event": "vs. Harrison County"
-    },
-    {
-      "date": "2018-01-06",
-      "opponent_id": "25088132",
-      "opponent_career_id": "career_011447",
-      "opponent_name": "Johnson Trent",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. John Hardin"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2018-01-06",
@@ -434,6 +407,38 @@
       "score": "9-4",
       "duration": "7:00",
       "event": "vs. Simon Kenton"
+    },
+    {
+      "date": "2018-01-06",
+      "opponent_id": "11952445009",
+      "opponent_career_id": "career_011647",
+      "opponent_name": "Dylan Lewis",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "MD",
+      "score": "10-2",
+      "duration": "7:00",
+      "event": "vs. Harrison County"
+    },
+    {
+      "date": "2018-01-06",
+      "opponent_id": "25088132",
+      "opponent_career_id": "career_011447",
+      "opponent_name": "Johnson Trent",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. John Hardin"
     },
     {
       "date": "2017-12-30",
@@ -549,6 +554,22 @@
     },
     {
       "date": "2017-12-16",
+      "opponent_id": "11941744009",
+      "opponent_career_id": "career_009431",
+      "opponent_name": "Chase Fink",
+      "opponent_team": "Anderson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-4",
+      "duration": "7:00",
+      "event": "Lafayette 5 Star Classic"
+    },
+    {
+      "date": "2017-12-16",
       "opponent_id": "12143857009",
       "opponent_career_id": "career_009446",
       "opponent_name": "Daniel Bruner",
@@ -577,22 +598,6 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Lafayette 5 Star Classic"
-    },
-    {
-      "date": "2017-12-16",
-      "opponent_id": "11941744009",
-      "opponent_career_id": "career_009431",
-      "opponent_name": "Chase Fink",
-      "opponent_team": "Anderson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "DEC",
-      "score": "5-4",
-      "duration": "7:00",
       "event": "Lafayette 5 Star Classic"
     },
     {
@@ -657,7 +662,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Danville"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2017-12-13",
@@ -705,7 +710,23 @@
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "vs. Danville"
+      "event": "vs. Anderson County"
+    },
+    {
+      "date": "2017-12-09",
+      "opponent_id": "11862127009",
+      "opponent_career_id": "career_010464",
+      "opponent_name": "Paul Webb",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-6",
+      "duration": "7:00",
+      "event": "vs. Boyle County"
     },
     {
       "date": "2017-12-09",
@@ -722,22 +743,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. La Rue County"
-    },
-    {
-      "date": "2017-12-09",
-      "opponent_id": "11862127009",
-      "opponent_career_id": "career_010464",
-      "opponent_name": "Paul Webb",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "DEC",
-      "score": "8-6",
-      "duration": "7:00",
-      "event": "vs. Danville"
     },
     {
       "date": "2017-12-06",
@@ -773,38 +778,6 @@
     },
     {
       "date": "2017-12-02",
-      "opponent_id": "OUTSTATE_c36da0148220",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Livingston Academy, TN",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Livingston Academy, TN"
-    },
-    {
-      "date": "2017-12-02",
-      "opponent_id": "12068933009",
-      "opponent_career_id": "career_010749",
-      "opponent_name": "Jared Phillips",
-      "opponent_team": "Wayne County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "DEC",
-      "score": "12-9",
-      "duration": "7:00",
-      "event": "vs. Wayne County"
-    },
-    {
-      "date": "2017-12-02",
       "opponent_id": "11941746009",
       "opponent_career_id": "career_011755",
       "opponent_name": "Logan Richie",
@@ -817,7 +790,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Danville"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2017-12-02",
@@ -837,6 +810,38 @@
     },
     {
       "date": "2017-12-02",
+      "opponent_id": "12068933009",
+      "opponent_career_id": "career_010749",
+      "opponent_name": "Jared Phillips",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": "12-9",
+      "duration": "7:00",
+      "event": "vs. Wayne County"
+    },
+    {
+      "date": "2017-12-02",
+      "opponent_id": "OUTSTATE_c36da0148220",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Livingston Academy, TN",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Livingston Academy, TN"
+    },
+    {
+      "date": "2017-12-02",
       "opponent_id": "11737263009",
       "opponent_career_id": "career_011469",
       "opponent_name": "DANIEL BAKER",
@@ -848,7 +853,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:45",
       "event": "vs. Madison Central"
     },
     {
@@ -932,7 +937,7 @@
       "season": 2018,
       "grade": 12,
       "team": "Danville",
-      "record": "46-10",
+      "record": "45-10",
       "regional_place": 2,
       "state_place": null
     },
@@ -940,7 +945,7 @@
       "season": 2017,
       "grade": 11,
       "team": "Danville",
-      "record": "29-18",
+      "record": "30-19",
       "regional_place": 3,
       "state_place": null
     },
@@ -956,7 +961,7 @@
       "season": 2015,
       "grade": 9,
       "team": "Danville",
-      "record": "36-11",
+      "record": "35-12",
       "regional_place": null,
       "state_place": null
     },
@@ -964,15 +969,15 @@
       "season": 2014,
       "grade": null,
       "team": "Danville",
-      "record": "8-6",
+      "record": "8-11",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 154,
-    "losses": 55,
-    "win_pct": 0.737
+    "wins": 153,
+    "losses": 62,
+    "win_pct": 0.712
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

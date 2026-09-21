@@ -5,10 +5,15 @@
   "team_slug": "la_rue_county",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "18-12",
+    "overall": "22-19",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.714,
-    "bonus_rate": 0.714,
+    "pin_rate": 0.625,
+    "bonus_rate": 0.625,
     "majors": 0,
     "techs": 0,
     "pins": 5
@@ -113,7 +118,7 @@
       "method": "TF",
       "score": "15-0",
       "duration": "2:00",
-      "event": "vs. La Rue County"
+      "event": "vs. Fort Campbell"
     },
     {
       "date": "2013-01-26",
@@ -161,23 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:13",
-      "event": "vs. La Rue County"
-    },
-    {
-      "date": "2013-01-17",
-      "opponent_id": "OUTSTATE_7a4365f43671",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Salem",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Salem"
+      "event": "vs. Union County"
     },
     {
       "date": "2013-01-17",
@@ -212,6 +201,22 @@
       "event": "vs. Jeffersonville"
     },
     {
+      "date": "2013-01-17",
+      "opponent_id": "OUTSTATE_7a4365f43671",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Salem",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Salem"
+    },
+    {
       "date": "2013-01-16",
       "opponent_id": "1380710009",
       "opponent_career_id": "career_012307",
@@ -225,23 +230,7 @@
       "method": "MD",
       "score": "9-1",
       "duration": "7:00",
-      "event": "vs. La Rue County"
-    },
-    {
-      "date": "2013-01-05",
-      "opponent_id": "OUTSTATE_2f528488265f",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Boyle County"
+      "event": "vs. North Hardin"
     },
     {
       "date": "2013-01-05",
@@ -258,6 +247,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Anderson County"
+    },
+    {
+      "date": "2013-01-05",
+      "opponent_id": "OUTSTATE_2f528488265f",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Boyle County"
     },
     {
       "date": "2013-01-05",
@@ -341,22 +346,6 @@
     },
     {
       "date": "2012-12-21",
-      "opponent_id": "1360610009",
-      "opponent_career_id": "career_013255",
-      "opponent_name": "Alex Lee",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:35",
-      "event": "vs. La Rue County"
-    },
-    {
-      "date": "2012-12-21",
       "opponent_id": "OUTSTATE_ab3b37a09a95",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -420,20 +409,20 @@
       "event": "vs. Fort Knox"
     },
     {
-      "date": "2012-12-20",
-      "opponent_id": "1387999009",
-      "opponent_career_id": "career_016479",
-      "opponent_name": "Seth Tichenor",
-      "opponent_team": "Ohio County",
+      "date": "2012-12-21",
+      "opponent_id": "1360610009",
+      "opponent_career_id": "career_013255",
+      "opponent_name": "Alex Lee",
+      "opponent_team": "Meade County",
       "opponent_team_rank": null,
       "opponent_weight": 106,
       "opponent_rank": null,
       "weight_class": "113",
-      "result": "W",
+      "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "3:00",
-      "event": "vs. La Rue County"
+      "duration": "1:35",
+      "event": "vs. Meade County"
     },
     {
       "date": "2012-12-20",
@@ -449,7 +438,23 @@
       "method": "DEC",
       "score": "6-1",
       "duration": "7:00",
-      "event": "vs. La Rue County"
+      "event": "vs. Central Hardin"
+    },
+    {
+      "date": "2012-12-20",
+      "opponent_id": "1387999009",
+      "opponent_career_id": "career_016479",
+      "opponent_name": "Seth Tichenor",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:00",
+      "event": "vs. Ohio County"
     },
     {
       "date": "2012-12-19",
@@ -485,19 +490,19 @@
     },
     {
       "date": "2012-12-15",
-      "opponent_id": "1426195009",
-      "opponent_career_id": "career_011538",
-      "opponent_name": "Ryan Harrison",
-      "opponent_team": "Scott County",
+      "opponent_id": "1251856009",
+      "opponent_career_id": "career_014293",
+      "opponent_name": "Cody Thomas",
+      "opponent_team": "Central Hardin",
       "opponent_team_rank": null,
-      "opponent_weight": 106,
+      "opponent_weight": 113,
       "opponent_rank": null,
-      "weight_class": "106",
-      "result": "W",
+      "weight_class": "113",
+      "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "1:03",
-      "event": "vs. La Rue County"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2012-12-15",
@@ -513,23 +518,7 @@
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "vs. La Rue County"
-    },
-    {
-      "date": "2012-12-15",
-      "opponent_id": "1251856009",
-      "opponent_career_id": "career_014293",
-      "opponent_name": "Cody Thomas",
-      "opponent_team": "Central Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:03",
-      "event": "vs. La Rue County"
+      "event": "vs. John Hardin"
     },
     {
       "date": "2012-12-15",
@@ -548,6 +537,22 @@
       "event": "vs. Barren County"
     },
     {
+      "date": "2012-12-15",
+      "opponent_id": "1426195009",
+      "opponent_career_id": "career_011538",
+      "opponent_name": "Ryan Harrison",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:03",
+      "event": "vs. Scott County"
+    },
+    {
       "date": "2012-12-08",
       "opponent_id": "1235588009",
       "opponent_career_id": "career_013267",
@@ -561,6 +566,22 @@
       "method": "DEC",
       "score": "10-7",
       "duration": "7:00",
+      "event": "Derby City Classic"
+    },
+    {
+      "date": "2012-12-08",
+      "opponent_id": "1337772009",
+      "opponent_career_id": "career_012267",
+      "opponent_name": "Levi Goodin",
+      "opponent_team": "La Rue County",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "SV-1",
+      "score": "4-2",
+      "duration": "8:15",
       "event": "Derby City Classic"
     },
     {
@@ -594,22 +615,6 @@
       "score": "12-1",
       "duration": "7:00",
       "event": "Derby City Classic"
-    },
-    {
-      "date": "2012-12-01",
-      "opponent_id": "1388537009",
-      "opponent_career_id": "career_013152",
-      "opponent_name": "Nick Wise",
-      "opponent_team": "Oldham County",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:20",
-      "event": "vs. Oldham County"
     },
     {
       "date": "2012-12-01",
@@ -674,6 +679,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. North Oldham"
+    },
+    {
+      "date": "2012-12-01",
+      "opponent_id": "1388537009",
+      "opponent_career_id": "career_013152",
+      "opponent_name": "Nick Wise",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:20",
+      "event": "vs. Oldham County"
     }
   ],
   "career": {
@@ -709,7 +730,7 @@
       "season": 2016,
       "grade": 10,
       "team": "La Rue County",
-      "record": "25-5",
+      "record": "24-5",
       "regional_place": 2,
       "state_place": null
     },
@@ -725,7 +746,7 @@
       "season": 2014,
       "grade": null,
       "team": "La Rue County",
-      "record": "25-5",
+      "record": "28-10",
       "regional_place": 2,
       "state_place": null
     },
@@ -733,15 +754,15 @@
       "season": 2013,
       "grade": null,
       "team": "La Rue County",
-      "record": "18-12",
+      "record": "22-19",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 165,
-    "losses": 43,
-    "win_pct": 0.793
+    "wins": 171,
+    "losses": 55,
+    "win_pct": 0.757
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

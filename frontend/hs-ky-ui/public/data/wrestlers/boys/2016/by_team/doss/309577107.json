@@ -5,10 +5,15 @@
   "team_slug": "doss",
   "team_rank": null,
   "weight_class": 106,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
-    "overall": "31-8",
+    "overall": "29-8",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,9 +25,9 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.727,
-    "majors": 3,
+    "pin_rate": 0.478,
+    "bonus_rate": 0.739,
+    "majors": 4,
     "techs": 2,
     "pins": 11
   },
@@ -223,9 +228,25 @@
       "weight_class": "106",
       "result": "W",
       "method": "MD",
+      "score": "15-3",
+      "duration": "7:00",
+      "event": "vs. Central"
+    },
+    {
+      "date": "2016-01-13",
+      "opponent_id": "320013010",
+      "opponent_career_id": "career_010486",
+      "opponent_name": "Marquelle McDaniel",
+      "opponent_team": "Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "MD",
       "score": "13-2",
       "duration": "7:00",
-      "event": "vs. Doss"
+      "event": "vs. Central"
     },
     {
       "date": "2016-01-09",
@@ -353,7 +374,7 @@
       "method": "TF",
       "score": "19-3",
       "duration": "0:00",
-      "event": "vs. Doss"
+      "event": "vs. Atherton"
     },
     {
       "date": "2015-12-19",
@@ -469,22 +490,6 @@
     },
     {
       "date": "2015-12-09",
-      "opponent_id": "295282010",
-      "opponent_career_id": "career_013162",
-      "opponent_name": "Trever Skeeters",
-      "opponent_team": "Pleasure Ridge Park",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "DEC",
-      "score": "4-2",
-      "duration": "7:00",
-      "event": "vs. Pleasure Ridge Park"
-    },
-    {
-      "date": "2015-12-09",
       "opponent_id": "OUTSTATE_f7a759a6e967",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -500,6 +505,22 @@
       "event": "vs. Valley"
     },
     {
+      "date": "2015-12-09",
+      "opponent_id": "295282010",
+      "opponent_career_id": "career_013162",
+      "opponent_name": "Trever Skeeters",
+      "opponent_team": "Pleasure Ridge Park",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "vs. Pleasure Ridge Park"
+    },
+    {
       "date": "2015-12-05",
       "opponent_id": "8066846009",
       "opponent_career_id": "career_011690",
@@ -512,8 +533,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Doss"
+      "duration": "1:29",
+      "event": "vs. Bullitt Central"
     },
     {
       "date": "2015-12-05",
@@ -529,7 +550,7 @@
       "method": "TF",
       "score": "17-2",
       "duration": "0:00",
-      "event": "vs. Doss"
+      "event": "vs. Central"
     },
     {
       "date": "2015-12-05",
@@ -577,7 +598,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:57",
-      "event": "vs. Doss"
+      "event": "vs. Bullitt Central"
     },
     {
       "date": "2015-11-24",
@@ -627,7 +648,7 @@
       "season": 2017,
       "grade": 12,
       "team": "Doss",
-      "record": "18-6",
+      "record": "24-7",
       "regional_place": 1,
       "state_place": null
     },
@@ -635,7 +656,7 @@
       "season": 2016,
       "grade": 11,
       "team": "Doss",
-      "record": "31-8",
+      "record": "29-8",
       "regional_place": 2,
       "state_place": null
     },
@@ -643,7 +664,7 @@
       "season": 2015,
       "grade": 10,
       "team": "Doss",
-      "record": "34-13",
+      "record": "33-13",
       "regional_place": 2,
       "state_place": null
     },
@@ -651,15 +672,15 @@
       "season": 2014,
       "grade": null,
       "team": "Doss",
-      "record": "23-20",
+      "record": "24-22",
       "regional_place": 3,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 106,
-    "losses": 47,
-    "win_pct": 0.693
+    "wins": 110,
+    "losses": 50,
+    "win_pct": 0.688
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

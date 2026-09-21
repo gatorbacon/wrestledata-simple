@@ -5,6 +5,11 @@
   "team_slug": "north_oldham",
   "team_rank": null,
   "weight_class": 106,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2015,
   "current_rank": null,
   "record": {
@@ -69,6 +74,22 @@
     },
     {
       "date": "2014-12-10",
+      "opponent_id": "26196076",
+      "opponent_career_id": "career_011376",
+      "opponent_name": "Hayden Shepherd",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:52",
+      "event": "vs. Boyle County"
+    },
+    {
+      "date": "2014-12-10",
       "opponent_id": "4084011",
       "opponent_career_id": "career_012905",
       "opponent_name": "Ben Lundy",
@@ -82,22 +103,6 @@
       "score": "20-4",
       "duration": "4:00",
       "event": "vs. South Oldham"
-    },
-    {
-      "date": "2014-12-10",
-      "opponent_id": "26196076",
-      "opponent_career_id": "career_011376",
-      "opponent_name": "Hayden Shepherd",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:52",
-      "event": "vs. North Oldham"
     },
     {
       "date": "2014-11-29",
@@ -114,22 +119,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Tates Creek"
-    },
-    {
-      "date": "2014-11-29",
-      "opponent_id": "OUTSTATE_d66852a1f1e5",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Male",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Male"
     },
     {
       "date": "2014-11-29",
@@ -178,6 +167,22 @@
       "score": null,
       "duration": "0:40",
       "event": "vs. Evansville central"
+    },
+    {
+      "date": "2014-11-29",
+      "opponent_id": "OUTSTATE_d66852a1f1e5",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Male",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Male"
     }
   ],
   "career": {
@@ -202,5 +207,5 @@
     "losses": 0,
     "win_pct": 1.0
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

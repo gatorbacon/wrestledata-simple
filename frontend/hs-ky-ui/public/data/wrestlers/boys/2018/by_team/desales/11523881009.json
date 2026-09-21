@@ -5,10 +5,15 @@
   "team_slug": "desales",
   "team_rank": null,
   "weight_class": 215,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2018,
   "current_rank": null,
   "record": {
-    "overall": "27-16",
+    "overall": "26-15",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.933,
-    "bonus_rate": 0.933,
+    "pin_rate": 0.938,
+    "bonus_rate": 0.938,
     "majors": 0,
     "techs": 0,
-    "pins": 14
+    "pins": 15
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -133,12 +138,12 @@
     },
     {
       "date": "2018-01-24",
-      "opponent_id": "11612341009",
-      "opponent_career_id": "career_011119",
-      "opponent_name": "Dalton Dunlap",
+      "opponent_id": "11612331009",
+      "opponent_career_id": "career_011961",
+      "opponent_name": "Shawn Garbrough",
       "opponent_team": "Fairdale",
       "opponent_team_rank": null,
-      "opponent_weight": 190,
+      "opponent_weight": 215,
       "opponent_rank": null,
       "weight_class": "215",
       "result": "W",
@@ -149,12 +154,12 @@
     },
     {
       "date": "2018-01-24",
-      "opponent_id": "11612331009",
-      "opponent_career_id": "career_011961",
-      "opponent_name": "Shawn Garbrough",
+      "opponent_id": "11612341009",
+      "opponent_career_id": "career_011119",
+      "opponent_name": "Dalton Dunlap",
       "opponent_team": "Fairdale",
       "opponent_team_rank": null,
-      "opponent_weight": 215,
+      "opponent_weight": 190,
       "opponent_rank": null,
       "weight_class": "215",
       "result": "W",
@@ -353,7 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Desales"
+      "event": "vs. Central"
     },
     {
       "date": "2017-12-20",
@@ -369,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Desales"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2017-12-20",
@@ -469,22 +474,6 @@
     },
     {
       "date": "2017-12-13",
-      "opponent_id": "OUTSTATE_5f498e78759c",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Holy Cross",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Holy Cross (Louisville)"
-    },
-    {
-      "date": "2017-12-13",
       "opponent_id": "12195561009",
       "opponent_career_id": "career_012137",
       "opponent_name": "Andrew Snellen",
@@ -501,6 +490,38 @@
     },
     {
       "date": "2017-12-13",
+      "opponent_id": "12195561009",
+      "opponent_career_id": "career_012137",
+      "opponent_name": "Andrew Snellen",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:40",
+      "event": "vs. Valley"
+    },
+    {
+      "date": "2017-12-13",
+      "opponent_id": "OUTSTATE_5f498e78759c",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Holy Cross",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Holy Cross (Louisville)"
+    },
+    {
+      "date": "2017-12-13",
       "opponent_id": "OUTSTATE_b70f86745ea9",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -514,6 +535,54 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Iroquois"
+    },
+    {
+      "date": "2017-12-09",
+      "opponent_id": "11937518009",
+      "opponent_career_id": "career_011510",
+      "opponent_name": "Dylan Marlow",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:47",
+      "event": "King of the Bluegrass @ Fairdale"
+    },
+    {
+      "date": "2017-12-09",
+      "opponent_id": "11937518009",
+      "opponent_career_id": "career_011510",
+      "opponent_name": "Dylan Marlow",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:00",
+      "event": "King of the Bluegrass @ Fairdale"
+    },
+    {
+      "date": "2017-12-09",
+      "opponent_id": "11728685009",
+      "opponent_career_id": null,
+      "opponent_name": "Christopher Keller",
+      "opponent_team": "Independence",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "DEC",
+      "score": "5-1",
+      "duration": "7:00",
+      "event": "King of the Bluegrass @ Fairdale"
     },
     {
       "date": "2017-12-09",
@@ -549,38 +618,6 @@
     },
     {
       "date": "2017-12-09",
-      "opponent_id": "11937518009",
-      "opponent_career_id": "career_011510",
-      "opponent_name": "Dylan Marlow",
-      "opponent_team": "Ohio County",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:47",
-      "event": "King of the Bluegrass @ Fairdale"
-    },
-    {
-      "date": "2017-12-09",
-      "opponent_id": "11728685009",
-      "opponent_career_id": null,
-      "opponent_name": "Christopher Keller",
-      "opponent_team": "Independence",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "L",
-      "method": "DEC",
-      "score": "5-1",
-      "duration": "7:00",
-      "event": "King of the Bluegrass @ Fairdale"
-    },
-    {
-      "date": "2017-12-09",
       "opponent_id": "12104958009",
       "opponent_career_id": null,
       "opponent_name": "IVAN WALLACE",
@@ -609,7 +646,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Desales"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2017-12-02",
@@ -656,7 +693,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:54",
       "event": "vs. Valley"
     }
   ],
@@ -682,7 +719,7 @@
       "season": 2018,
       "grade": 10,
       "team": "Desales",
-      "record": "27-16",
+      "record": "26-15",
       "regional_place": null,
       "state_place": null
     },
@@ -690,15 +727,15 @@
       "season": 2017,
       "grade": 9,
       "team": "Desales",
-      "record": "8-10",
+      "record": "9-10",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 50,
-    "losses": 29,
-    "win_pct": 0.633
+    "losses": 28,
+    "win_pct": 0.641
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

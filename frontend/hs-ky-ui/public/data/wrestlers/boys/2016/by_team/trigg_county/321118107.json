@@ -5,6 +5,11 @@
   "team_slug": "trigg_county",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
@@ -49,7 +54,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:35",
-      "event": "vs. Trigg County"
+      "event": "vs. Calloway County"
     },
     {
       "date": "2016-01-02",
@@ -85,6 +90,22 @@
     },
     {
       "date": "2015-12-10",
+      "opponent_id": "345629094",
+      "opponent_career_id": "career_013566",
+      "opponent_name": "Daniel Moll",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "DEC",
+      "score": "13-9",
+      "duration": "7:00",
+      "event": "vs. Caldwell County"
+    },
+    {
+      "date": "2015-12-10",
       "opponent_id": "OUTSTATE_0d024306c254",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -100,20 +121,36 @@
       "event": "vs. Calloway County"
     },
     {
-      "date": "2015-12-10",
-      "opponent_id": "345629094",
-      "opponent_career_id": "career_013566",
-      "opponent_name": "Daniel Moll",
-      "opponent_team": "Caldwell County",
+      "date": "2015-12-05",
+      "opponent_id": "450853076",
+      "opponent_career_id": "career_012973",
+      "opponent_name": "Bryson Morris",
+      "opponent_team": "Apollo",
       "opponent_team_rank": null,
       "opponent_weight": 175,
       "opponent_rank": null,
       "weight_class": "175",
-      "result": "L",
-      "method": "DEC",
-      "score": "13-9",
-      "duration": "7:00",
-      "event": "vs. Trigg County"
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:47",
+      "event": "vs. Apollo"
+    },
+    {
+      "date": "2015-12-05",
+      "opponent_id": "290204013",
+      "opponent_career_id": "career_010651",
+      "opponent_name": "Gavin Willis",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:21",
+      "event": "vs. Taylor County"
     },
     {
       "date": "2015-12-05",
@@ -130,38 +167,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. John Hardin"
-    },
-    {
-      "date": "2015-12-05",
-      "opponent_id": "450853076",
-      "opponent_career_id": "career_012973",
-      "opponent_name": "Bryson Morris",
-      "opponent_team": "Apollo",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:47",
-      "event": "vs. Trigg County"
-    },
-    {
-      "date": "2015-12-05",
-      "opponent_id": "290204013",
-      "opponent_career_id": "career_010651",
-      "opponent_name": "Gavin Willis",
-      "opponent_team": "Taylor County",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:21",
-      "event": "vs. Trigg County"
     }
   ],
   "career": {
@@ -204,5 +209,5 @@
     "losses": 8,
     "win_pct": 0.6
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

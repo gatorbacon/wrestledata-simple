@@ -5,10 +5,15 @@
   "team_slug": "paducah_tilghman",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "22-13",
+    "overall": "25-12",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -193,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:57",
-      "event": "vs. Paducah Tilghman"
+      "event": "vs. Fort Campbell"
     },
     {
       "date": "2013-02-02",
@@ -273,7 +278,7 @@
       "method": "MD",
       "score": "15-5",
       "duration": "7:00",
-      "event": "Calloway County Invitational @ Calloway"
+      "event": "Laker Invitational"
     },
     {
       "date": "2013-01-26",
@@ -289,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:52",
-      "event": "Calloway Co Tournament"
+      "event": "Laker Invitational"
     },
     {
       "date": "2013-01-26",
@@ -337,7 +342,7 @@
       "method": "DEC",
       "score": "9-4",
       "duration": "7:00",
-      "event": "Paducah"
+      "event": "Steve Johnston Classic @ Paducah Tilghman"
     },
     {
       "date": "2013-01-12",
@@ -352,8 +357,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "Steve Johnson Classic @ Paducah"
+      "duration": "0:50",
+      "event": "Steve Johnston Classic @ Paducah Tilghman"
     },
     {
       "date": "2013-01-12",
@@ -401,7 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:50",
-      "event": "Lafayette Classic"
+      "event": "Lafayette Invitational"
     },
     {
       "date": "2012-12-22",
@@ -417,7 +422,7 @@
       "method": "DEC",
       "score": "8-7",
       "duration": "7:00",
-      "event": "Lafayette Tourney"
+      "event": "Lafayette Invitational"
     },
     {
       "date": "2012-12-22",
@@ -453,22 +458,6 @@
     },
     {
       "date": "2012-12-18",
-      "opponent_id": "1217880009",
-      "opponent_career_id": "career_015203",
-      "opponent_name": "Corey Jarboe",
-      "opponent_team": "Apollo",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "DEC",
-      "score": "7-1",
-      "duration": "7:00",
-      "event": "vs. Apollo"
-    },
-    {
-      "date": "2012-12-18",
       "opponent_id": "1391865009",
       "opponent_career_id": "career_016492",
       "opponent_name": "Cody Johnson",
@@ -484,20 +473,20 @@
       "event": "vs. Owensboro"
     },
     {
-      "date": "2012-12-15",
-      "opponent_id": "1409921009",
-      "opponent_career_id": null,
-      "opponent_name": "Andrew Debattista",
-      "opponent_team": "Ravenwood",
+      "date": "2012-12-18",
+      "opponent_id": "1217880009",
+      "opponent_career_id": "career_015203",
+      "opponent_name": "Corey Jarboe",
+      "opponent_team": "Apollo",
       "opponent_team_rank": null,
       "opponent_weight": 175,
       "opponent_rank": null,
       "weight_class": "175",
-      "result": "L",
-      "method": "MD",
-      "score": "19-5",
+      "result": "W",
+      "method": "DEC",
+      "score": "7-1",
       "duration": "7:00",
-      "event": "vs. Ravenwood"
+      "event": "vs. Apollo"
     },
     {
       "date": "2012-12-15",
@@ -532,6 +521,22 @@
       "event": "vs. Graves County"
     },
     {
+      "date": "2012-12-15",
+      "opponent_id": "1409921009",
+      "opponent_career_id": null,
+      "opponent_name": "Andrew Debattista",
+      "opponent_team": "Ravenwood",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "MD",
+      "score": "19-5",
+      "duration": "7:00",
+      "event": "vs. Ravenwood"
+    },
+    {
       "date": "2012-12-04",
       "opponent_id": "OUTSTATE_98a311a9229c",
       "opponent_career_id": null,
@@ -561,7 +566,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:28",
-      "event": "vs. Paducah Tilghman"
+      "event": "vs. Calloway County"
     },
     {
       "date": "2012-12-01",
@@ -632,7 +637,8 @@
     "career_id": "career_016498",
     "canonical_name": "Zak Thompson",
     "seasons": [
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -640,15 +646,23 @@
       "season": 2013,
       "grade": null,
       "team": "Paducah Tilghman",
-      "record": "22-13",
+      "record": "25-12",
       "regional_place": 3,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 11,
+      "team": "Paducah Tilghman",
+      "record": "0-2",
+      "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 22,
-    "losses": 13,
-    "win_pct": 0.629
+    "wins": 25,
+    "losses": 14,
+    "win_pct": 0.641
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

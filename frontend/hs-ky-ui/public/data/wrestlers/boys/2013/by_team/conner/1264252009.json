@@ -5,10 +5,15 @@
   "team_slug": "conner",
   "team_rank": null,
   "weight_class": 157,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "29-10",
+    "overall": "30-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -197,22 +202,6 @@
     },
     {
       "date": "2013-01-26",
-      "opponent_id": "1312644009",
-      "opponent_career_id": "career_016344",
-      "opponent_name": "Sean Millikin",
-      "opponent_team": "Harrison County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:23",
-      "event": "vs. Harrison County"
-    },
-    {
-      "date": "2013-01-26",
       "opponent_id": "1270784009",
       "opponent_career_id": "career_014544",
       "opponent_name": "Seamus Sallee",
@@ -242,6 +231,22 @@
       "score": null,
       "duration": "1:11",
       "event": "vs. Grant County"
+    },
+    {
+      "date": "2013-01-26",
+      "opponent_id": "1312644009",
+      "opponent_career_id": "career_016344",
+      "opponent_name": "Sean Millikin",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:23",
+      "event": "vs. Harrison County"
     },
     {
       "date": "2013-01-26",
@@ -288,7 +293,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "4:00",
       "event": "DRAGON INVITATIONAL TOURNAMENT"
     },
     {
@@ -336,7 +341,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "3:49",
       "event": "DRAGON INVITATIONAL TOURNAMENT"
     },
     {
@@ -369,7 +374,7 @@
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "Knights` Classic"
+      "event": "KNIGHTS CLASSIC"
     },
     {
       "date": "2013-01-12",
@@ -481,23 +486,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:15",
-      "event": "vs. Conner"
-    },
-    {
-      "date": "2012-12-22",
-      "opponent_id": "1265055009",
-      "opponent_career_id": "career_016240",
-      "opponent_name": "John Ransdell",
-      "opponent_team": "Cooper",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "2012 NKAC"
+      "event": "vs. Ryle"
     },
     {
       "date": "2012-12-22",
@@ -513,7 +502,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "2012 NKAC Conference"
+      "event": "2012 NKAC"
     },
     {
       "date": "2012-12-22",
@@ -555,6 +544,22 @@
       "opponent_team": "Scott",
       "opponent_team_rank": null,
       "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "2012 NKAC"
+    },
+    {
+      "date": "2012-12-22",
+      "opponent_id": "1265055009",
+      "opponent_career_id": "career_016240",
+      "opponent_name": "John Ransdell",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
       "opponent_rank": null,
       "weight_class": "165",
       "result": "W",
@@ -697,7 +702,8 @@
     "canonical_name": "Jacob Warwick",
     "seasons": [
       2014,
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -705,7 +711,7 @@
       "season": 2014,
       "grade": null,
       "team": "Conner",
-      "record": "0-0",
+      "record": "0-1",
       "regional_place": null,
       "state_place": null
     },
@@ -713,15 +719,23 @@
       "season": 2013,
       "grade": null,
       "team": "Conner",
-      "record": "29-10",
+      "record": "30-11",
       "regional_place": 2,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 9,
+      "team": "Conner",
+      "record": "0-2",
+      "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 29,
-    "losses": 10,
-    "win_pct": 0.744
+    "wins": 30,
+    "losses": 14,
+    "win_pct": 0.682
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

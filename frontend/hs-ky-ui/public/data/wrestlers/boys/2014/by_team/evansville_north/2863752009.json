@@ -5,10 +5,15 @@
   "team_slug": "evansville_north",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "1-0",
+    "overall": "2-0",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,9 +25,9 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 1.0,
+    "pin_rate": 0.5,
     "bonus_rate": 1.0,
-    "majors": 0,
+    "majors": 1,
     "techs": 0,
     "pins": 1
   },
@@ -35,6 +40,22 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2013-12-28",
+      "opponent_id": "2887605009",
+      "opponent_career_id": "career_014136",
+      "opponent_name": "DANIEL DYESS",
+      "opponent_team": "University Heights",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "MD",
+      "score": "13-2",
+      "duration": "7:00",
+      "event": "Christian County Invitational"
+    },
     {
       "date": "2013-12-14",
       "opponent_id": "2886099009",
@@ -52,5 +73,5 @@
       "event": "Memorial classic"
     }
   ],
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

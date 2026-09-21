@@ -5,10 +5,15 @@
   "team_slug": "walton_verona",
   "team_rank": null,
   "weight_class": 106,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
-    "overall": "45-11",
+    "overall": "43-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -197,6 +202,22 @@
     },
     {
       "date": "2016-01-30",
+      "opponent_id": "432570076",
+      "opponent_career_id": "career_010569",
+      "opponent_name": "Brent Hudgins",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "TF",
+      "score": "17-0",
+      "duration": "4:00",
+      "event": "vs. Harrison County"
+    },
+    {
+      "date": "2016-01-30",
       "opponent_id": "290500013",
       "opponent_career_id": "career_012039",
       "opponent_name": "Agali Radzhapov",
@@ -209,23 +230,7 @@
       "method": "TF",
       "score": "20-2",
       "duration": "3:07",
-      "event": "vs. Walton Verona"
-    },
-    {
-      "date": "2016-01-30",
-      "opponent_id": "432570076",
-      "opponent_career_id": "career_010569",
-      "opponent_name": "Brent Hudgins",
-      "opponent_team": "Harrison County",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "W",
-      "method": "TF",
-      "score": "17-0",
-      "duration": "2:00",
-      "event": "vs. Walton Verona"
+      "event": "vs. Moore"
     },
     {
       "date": "2016-01-30",
@@ -241,7 +246,7 @@
       "method": "DEC",
       "score": "10-7",
       "duration": "7:00",
-      "event": "vs. Walton Verona"
+      "event": "vs. Union County"
     },
     {
       "date": "2016-01-30",
@@ -273,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:48",
-      "event": "vs. Walton Verona"
+      "event": "vs. Cooper"
     },
     {
       "date": "2016-01-27",
@@ -405,54 +410,6 @@
     },
     {
       "date": "2016-01-09",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Hamilton"
-    },
-    {
-      "date": "2016-01-09",
-      "opponent_id": "351828107",
-      "opponent_career_id": null,
-      "opponent_name": "Oscar Santana",
-      "opponent_team": "Glen Este",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "DEC",
-      "score": "4-3",
-      "duration": "7:00",
-      "event": "vs. Glen Este"
-    },
-    {
-      "date": "2016-01-09",
-      "opponent_id": "372972094",
-      "opponent_career_id": null,
-      "opponent_name": "Casey Cronin",
-      "opponent_team": "Colerain",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "TF",
-      "score": "16-1",
-      "duration": "0:00",
-      "event": "vs. Colerain"
-    },
-    {
-      "date": "2016-01-09",
       "opponent_id": "OUTSTATE_d07544b0f72e",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -485,6 +442,22 @@
     },
     {
       "date": "2016-01-09",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Hamilton"
+    },
+    {
+      "date": "2016-01-09",
       "opponent_id": "295421013",
       "opponent_career_id": null,
       "opponent_name": "ELI RICHARDS",
@@ -501,6 +474,22 @@
     },
     {
       "date": "2016-01-09",
+      "opponent_id": "351828107",
+      "opponent_career_id": null,
+      "opponent_name": "Oscar Santana",
+      "opponent_team": "Glen Este",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "vs. Glen Este"
+    },
+    {
+      "date": "2016-01-09",
       "opponent_id": "OUTSTATE_9689be370375",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -514,6 +503,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Oak Hills (Cincinnati)"
+    },
+    {
+      "date": "2016-01-09",
+      "opponent_id": "372972094",
+      "opponent_career_id": null,
+      "opponent_name": "Casey Cronin",
+      "opponent_team": "Colerain",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "0:00",
+      "event": "vs. Colerain"
     },
     {
       "date": "2016-01-09",
@@ -561,7 +566,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Walton Verona"
+      "event": "vs. Covington Catholic"
     },
     {
       "date": "2015-12-31",
@@ -577,7 +582,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Walton Verona"
+      "event": "vs. Holmes"
     },
     {
       "date": "2015-12-31",
@@ -593,7 +598,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Walton Verona"
+      "event": "vs. Newport"
     },
     {
       "date": "2015-12-31",
@@ -609,7 +614,7 @@
       "method": "TF",
       "score": "19-4",
       "duration": "0:00",
-      "event": "vs. Walton Verona"
+      "event": "vs. Scott"
     },
     {
       "date": "2015-12-29",
@@ -849,7 +854,7 @@
       "method": "DEC",
       "score": "9-2",
       "duration": "7:00",
-      "event": "vs. Walton Verona"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2015-12-05",
@@ -865,7 +870,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Walton Verona"
+      "event": "vs. Lafayette"
     },
     {
       "date": "2015-12-05",
@@ -932,7 +937,7 @@
       "season": 2016,
       "grade": 10,
       "team": "Walton Verona",
-      "record": "45-11",
+      "record": "43-11",
       "regional_place": 1,
       "state_place": 7
     },
@@ -948,7 +953,7 @@
       "season": 2014,
       "grade": null,
       "team": "Walton Verona",
-      "record": "4-7",
+      "record": "6-7",
       "regional_place": null,
       "state_place": null
     }
@@ -958,5 +963,5 @@
     "losses": 52,
     "win_pct": 0.761
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

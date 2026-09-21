@@ -5,10 +5,15 @@
   "team_slug": "conner",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "32-7",
+    "overall": "34-6",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -49,7 +54,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "State"
+      "event": "2013 KHSAA State Championships"
     },
     {
       "date": "2013-02-16",
@@ -240,7 +245,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "2:29",
       "event": "DRAGON INVITATIONAL TOURNAMENT"
     },
     {
@@ -281,22 +286,6 @@
       "opponent_career_id": null,
       "opponent_name": "David Bergman",
       "opponent_team": "Simon Kenton",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "DRAGON INVITATIONAL TOURNAMENT"
-    },
-    {
-      "date": "2013-01-19",
-      "opponent_id": "OUTSTATE_ade901b3514a",
-      "opponent_career_id": null,
-      "opponent_name": "Elijah Miller",
-      "opponent_team": "Scott",
       "opponent_team_rank": null,
       "opponent_weight": 190,
       "opponent_rank": null,
@@ -357,22 +346,6 @@
     },
     {
       "date": "2013-01-05",
-      "opponent_id": "1480233009",
-      "opponent_career_id": "career_014893",
-      "opponent_name": "Coty Curry",
-      "opponent_team": "Woodford County",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:30",
-      "event": "CONNER INVITATIONAL WRESTLING TOURNAMENT"
-    },
-    {
-      "date": "2013-01-05",
       "opponent_id": "1426158009",
       "opponent_career_id": "career_014094",
       "opponent_name": "Elijah Miller",
@@ -404,6 +377,22 @@
       "event": "CONNER INVITATIONAL WRESTLING TOURNAMENT"
     },
     {
+      "date": "2013-01-05",
+      "opponent_id": "1480233009",
+      "opponent_career_id": "career_014893",
+      "opponent_name": "Coty Curry",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
+      "event": "CONNER INVITATIONAL WRESTLING TOURNAMENT"
+    },
+    {
       "date": "2012-12-22",
       "opponent_id": "1235581009",
       "opponent_career_id": "career_013251",
@@ -417,7 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "NKAC"
+      "event": "2012 NKAC"
     },
     {
       "date": "2012-12-22",
@@ -433,7 +422,7 @@
       "method": "TF",
       "score": "18-3",
       "duration": "0:00",
-      "event": "2012 NKAC Conference"
+      "event": "2012 NKAC"
     },
     {
       "date": "2012-12-22",
@@ -609,7 +598,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:11",
-      "event": "vs. Conner"
+      "event": "vs. Boone County"
     },
     {
       "date": "2012-12-05",
@@ -689,7 +678,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:51",
-      "event": "vs. Conner"
+      "event": "vs. Montgomery County"
     }
   ],
   "career": {
@@ -697,7 +686,9 @@
     "canonical_name": "Trevor Thompson",
     "seasons": [
       2014,
-      2013
+      2013,
+      2012,
+      2011
     ]
   },
   "season_summary": [
@@ -713,15 +704,31 @@
       "season": 2013,
       "grade": null,
       "team": "Conner",
-      "record": "32-7",
+      "record": "34-6",
       "regional_place": 1,
       "state_place": 5
+    },
+    {
+      "season": 2012,
+      "grade": 10,
+      "team": "Conner",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2011,
+      "grade": 9,
+      "team": "Conner",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
     }
   ],
   "career_record": {
-    "wins": 61,
-    "losses": 13,
-    "win_pct": 0.824
+    "wins": 67,
+    "losses": 16,
+    "win_pct": 0.807
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

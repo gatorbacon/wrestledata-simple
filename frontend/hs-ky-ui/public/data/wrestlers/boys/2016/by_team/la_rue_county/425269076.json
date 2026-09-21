@@ -5,10 +5,15 @@
   "team_slug": "la_rue_county",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2016,
   "current_rank": null,
   "record": {
-    "overall": "11-8",
+    "overall": "12-8",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.917,
-    "bonus_rate": 0.917,
+    "pin_rate": 0.909,
+    "bonus_rate": 0.909,
     "majors": 0,
     "techs": 0,
-    "pins": 11
+    "pins": 10
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -181,6 +186,22 @@
     },
     {
       "date": "2016-01-30",
+      "opponent_id": "439812076",
+      "opponent_career_id": "career_013427",
+      "opponent_name": "Tyler Gardner",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:03",
+      "event": "vs. Boyle County"
+    },
+    {
+      "date": "2016-01-30",
       "opponent_id": "337991094",
       "opponent_career_id": "career_011592",
       "opponent_name": "Mason Smith",
@@ -194,22 +215,6 @@
       "score": "18-1",
       "duration": "4:00",
       "event": "vs. Walton Verona"
-    },
-    {
-      "date": "2016-01-30",
-      "opponent_id": "439812076",
-      "opponent_career_id": "career_013427",
-      "opponent_name": "Tyler Gardner",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:03",
-      "event": "vs. La Rue County"
     },
     {
       "date": "2016-01-30",
@@ -229,38 +234,6 @@
     },
     {
       "date": "2016-01-17",
-      "opponent_id": "301425010",
-      "opponent_career_id": "career_013064",
-      "opponent_name": "zach zarazee",
-      "opponent_team": "Fort Knox",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "MD",
-      "score": "15-7",
-      "duration": "7:00",
-      "event": "vs. La Rue County"
-    },
-    {
-      "date": "2016-01-17",
-      "opponent_id": "320124010",
-      "opponent_career_id": "career_013734",
-      "opponent_name": "lucas Ackley",
-      "opponent_team": "Nelson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Nelson County"
-    },
-    {
-      "date": "2016-01-17",
       "opponent_id": "309529107",
       "opponent_career_id": "career_011643",
       "opponent_name": "Maximilian Powell",
@@ -273,7 +246,23 @@
       "method": "MD",
       "score": "12-3",
       "duration": "7:00",
-      "event": "vs. La Rue County"
+      "event": "vs. Doss"
+    },
+    {
+      "date": "2016-01-17",
+      "opponent_id": "301425010",
+      "opponent_career_id": "career_013064",
+      "opponent_name": "zach zarazee",
+      "opponent_team": "Fort Knox",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "MD",
+      "score": "15-7",
+      "duration": "7:00",
+      "event": "vs. Fort Knox"
     },
     {
       "date": "2016-01-16",
@@ -289,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. La Rue County"
+      "event": "vs. Nelson County"
     },
     {
       "date": "2016-01-09",
@@ -384,15 +373,15 @@
       "season": 2016,
       "grade": 12,
       "team": "La Rue County",
-      "record": "11-8",
+      "record": "12-8",
       "regional_place": 3,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 11,
+    "wins": 12,
     "losses": 8,
-    "win_pct": 0.579
+    "win_pct": 0.6
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

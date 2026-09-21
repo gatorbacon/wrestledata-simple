@@ -5,10 +5,15 @@
   "team_slug": "moore",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "21-14",
+    "overall": "22-13",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.783,
-    "bonus_rate": 0.826,
+    "pin_rate": 0.773,
+    "bonus_rate": 0.818,
     "majors": 1,
     "techs": 0,
-    "pins": 18
+    "pins": 17
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -49,7 +54,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:25",
-      "event": "2013 KHSAA State Championships"
+      "event": "KHSAA State Tournament"
     },
     {
       "date": "2013-02-16",
@@ -65,7 +70,7 @@
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "Kentucky High School State Wrestling Championships @ the Horse Park, Lexington"
+      "event": "KHSAA State Tournament"
     },
     {
       "date": "2013-02-16",
@@ -148,22 +153,6 @@
       "event": "KHSAA Region 4"
     },
     {
-      "date": "2013-02-08",
-      "opponent_id": "1278355009",
-      "opponent_career_id": "career_015344",
-      "opponent_name": "Leif Sweazy",
-      "opponent_team": "Dupont Manual",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Region"
-    },
-    {
       "date": "2013-01-26",
       "opponent_id": "1330376009",
       "opponent_career_id": "career_014915",
@@ -177,7 +166,7 @@
       "method": "DEC",
       "score": "6-1",
       "duration": "7:00",
-      "event": "vs. Moore"
+      "event": "vs. Johnson Central"
     },
     {
       "date": "2013-01-26",
@@ -276,22 +265,6 @@
       "event": "Woodford County Invitational"
     },
     {
-      "date": "2012-12-29",
-      "opponent_id": "OUTSTATE_95325089c214",
-      "opponent_career_id": null,
-      "opponent_name": "Nick McIntosh",
-      "opponent_team": "Oldham County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "Woodford County Invitational"
-    },
-    {
       "date": "2012-12-22",
       "opponent_id": "1216543009",
       "opponent_career_id": "career_015192",
@@ -304,8 +277,8 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "Lafayette Invitational"
+      "duration": "4:44",
+      "event": "Lafayette Classic"
     },
     {
       "date": "2012-12-22",
@@ -321,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:54",
-      "event": "Lafayette Invitational Classic"
+      "event": "Lafayette Classic"
     },
     {
       "date": "2012-12-22",
@@ -341,22 +314,6 @@
     },
     {
       "date": "2012-12-15",
-      "opponent_id": "1289651009",
-      "opponent_career_id": "career_014159",
-      "opponent_name": "Trey Norton",
-      "opponent_team": "Fairdale",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "DEC",
-      "score": "9-4",
-      "duration": "7:00",
-      "event": "vs. Fairdale"
-    },
-    {
-      "date": "2012-12-15",
       "opponent_id": "1236382009",
       "opponent_career_id": "career_015741",
       "opponent_name": "Zach Gardner",
@@ -370,6 +327,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Boyle County"
+    },
+    {
+      "date": "2012-12-15",
+      "opponent_id": "1289651009",
+      "opponent_career_id": "career_014159",
+      "opponent_name": "Trey Norton",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-4",
+      "duration": "7:00",
+      "event": "vs. Fairdale"
     },
     {
       "date": "2012-12-15",
@@ -501,22 +474,6 @@
     },
     {
       "date": "2012-12-01",
-      "opponent_id": "1337822009",
-      "opponent_career_id": null,
-      "opponent_name": "Alex McGlasson",
-      "opponent_team": "La Salle",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:23",
-      "event": "vs. La Salle"
-    },
-    {
-      "date": "2012-12-01",
       "opponent_id": "1285425009",
       "opponent_career_id": null,
       "opponent_name": "Jonathan Baggett",
@@ -564,6 +521,22 @@
       "event": "vs. Beavercreek Hs"
     },
     {
+      "date": "2012-12-01",
+      "opponent_id": "1337822009",
+      "opponent_career_id": null,
+      "opponent_name": "Alex McGlasson",
+      "opponent_team": "La Salle",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:23",
+      "event": "vs. La Salle"
+    },
+    {
       "date": "2012-11-24",
       "opponent_id": "1291471009",
       "opponent_career_id": "career_014160",
@@ -577,7 +550,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:24",
-      "event": "vs. Moore"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2012-11-24",
@@ -632,7 +605,9 @@
     "career_id": "career_016011",
     "canonical_name": "Kenny Keller",
     "seasons": [
-      2013
+      2013,
+      2012,
+      2011
     ]
   },
   "season_summary": [
@@ -640,15 +615,31 @@
       "season": 2013,
       "grade": null,
       "team": "Moore",
-      "record": "21-14",
+      "record": "22-13",
       "regional_place": 4,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 11,
+      "team": "Moore",
+      "record": "1-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2011,
+      "grade": 10,
+      "team": "Moore",
+      "record": "0-2",
+      "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 21,
-    "losses": 14,
-    "win_pct": 0.6
+    "wins": 23,
+    "losses": 17,
+    "win_pct": 0.575
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "fern_creek",
   "team_rank": null,
   "weight_class": 215,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "30-7",
+    "overall": "31-8",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.7,
-    "bonus_rate": 0.767,
+    "pin_rate": 0.733,
+    "bonus_rate": 0.8,
     "majors": 2,
     "techs": 0,
-    "pins": 21
+    "pins": 22
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -132,22 +137,6 @@
       "event": "Jefferson County Tournament of Champions"
     },
     {
-      "date": "2014-01-10",
-      "opponent_id": "2887409009",
-      "opponent_career_id": "career_014111",
-      "opponent_name": "Joseph Green",
-      "opponent_team": "St. Xavier",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "SV-1",
-      "score": "3-1",
-      "duration": "8:15",
-      "event": "Jefferson County"
-    },
-    {
       "date": "2014-01-04",
       "opponent_id": "2885653009",
       "opponent_career_id": "career_013897",
@@ -212,6 +201,22 @@
       "event": "Fern Creek Gladiator Tournament"
     },
     {
+      "date": "2014-01-04",
+      "opponent_id": "2887727009",
+      "opponent_career_id": "career_012405",
+      "opponent_name": "Andrew Varble",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:23",
+      "event": "vs. Woodford County"
+    },
+    {
       "date": "2014-01-03",
       "opponent_id": "2887549009",
       "opponent_career_id": "career_015691",
@@ -225,23 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:37",
-      "event": "vs. Fern Creek"
-    },
-    {
-      "date": "2013-12-28",
-      "opponent_id": "2886257009",
-      "opponent_career_id": "career_015043",
-      "opponent_name": "Francisco Perez",
-      "opponent_team": "Franklin County",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "MD",
-      "score": "15-1",
-      "duration": "7:00",
-      "event": "Woodford Co Invitational"
+      "event": "vs. Trinity (Louisville)"
     },
     {
       "date": "2013-12-28",
@@ -289,6 +278,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:12",
+      "event": "Woodford Co Invitational"
+    },
+    {
+      "date": "2013-12-28",
+      "opponent_id": "2886257009",
+      "opponent_career_id": "career_015043",
+      "opponent_name": "Francisco Perez",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "MD",
+      "score": "15-1",
+      "duration": "7:00",
       "event": "Woodford Co Invitational"
     },
     {
@@ -385,23 +390,7 @@
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "vs. Fern Creek"
-    },
-    {
-      "date": "2013-12-21",
-      "opponent_id": "2886798009",
-      "opponent_career_id": "career_015502",
-      "opponent_name": "Nathan Wilson",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "MD",
-      "score": "17-5",
-      "duration": "7:00",
-      "event": "Lafayette Invitational"
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2013-12-21",
@@ -416,6 +405,22 @@
       "result": "W",
       "method": "DEC",
       "score": "8-7",
+      "duration": "7:00",
+      "event": "Lafayette Invitational"
+    },
+    {
+      "date": "2013-12-21",
+      "opponent_id": "2886798009",
+      "opponent_career_id": "career_015502",
+      "opponent_name": "Nathan Wilson",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "MD",
+      "score": "17-5",
       "duration": "7:00",
       "event": "Lafayette Invitational"
     },
@@ -465,39 +470,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:54",
-      "event": "vs. Fern Creek"
-    },
-    {
-      "date": "2013-12-14",
-      "opponent_id": "2886582009",
-      "opponent_career_id": "career_015474",
-      "opponent_name": "Nick Batts",
-      "opponent_team": "Lafayette",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:26",
-      "event": "vs. Lafayette"
-    },
-    {
-      "date": "2013-12-14",
-      "opponent_id": "2887053009",
-      "opponent_career_id": "career_014694",
-      "opponent_name": "Eros Zuniga",
-      "opponent_team": "Paul Dunbar",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:22",
-      "event": "vs. Fern Creek"
+      "event": "vs. Cooper"
     },
     {
       "date": "2013-12-14",
@@ -517,6 +490,22 @@
     },
     {
       "date": "2013-12-14",
+      "opponent_id": "2886582009",
+      "opponent_career_id": "career_015474",
+      "opponent_name": "Nick Batts",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:26",
+      "event": "vs. Lafayette"
+    },
+    {
+      "date": "2013-12-14",
       "opponent_id": "2886985009",
       "opponent_career_id": "career_015549",
       "opponent_name": "Jacob Brown",
@@ -530,6 +519,22 @@
       "score": null,
       "duration": "1:00",
       "event": "vs. Oldham County"
+    },
+    {
+      "date": "2013-12-14",
+      "opponent_id": "2887053009",
+      "opponent_career_id": "career_014694",
+      "opponent_name": "Eros Zuniga",
+      "opponent_team": "Paul Dunbar",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:22",
+      "event": "vs. Paul Dunbar"
     },
     {
       "date": "2013-12-11",
@@ -597,22 +602,6 @@
     },
     {
       "date": "2013-11-30",
-      "opponent_id": "2886844009",
-      "opponent_career_id": "career_014923",
-      "opponent_name": "Trey Watts",
-      "opponent_team": "Moore",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "DEC",
-      "score": "3-1",
-      "duration": "7:00",
-      "event": "vs. Moore"
-    },
-    {
-      "date": "2013-11-30",
       "opponent_id": "2887199009",
       "opponent_career_id": "career_015603",
       "opponent_name": "Timmy Sherrard",
@@ -645,6 +634,22 @@
     },
     {
       "date": "2013-11-30",
+      "opponent_id": "2886844009",
+      "opponent_career_id": "career_014923",
+      "opponent_name": "Trey Watts",
+      "opponent_team": "Moore",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "DEC",
+      "score": "3-1",
+      "duration": "7:00",
+      "event": "vs. Moore"
+    },
+    {
+      "date": "2013-11-30",
       "opponent_id": "2887409009",
       "opponent_career_id": "career_014111",
       "opponent_name": "Joseph Green",
@@ -657,7 +662,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:59",
-      "event": "vs. Fern Creek"
+      "event": "vs. St. Xavier"
     }
   ],
   "career": {
@@ -673,7 +678,7 @@
       "season": 2014,
       "grade": null,
       "team": "Fern Creek",
-      "record": "30-7",
+      "record": "31-8",
       "regional_place": null,
       "state_place": null
     },
@@ -681,15 +686,15 @@
       "season": 2013,
       "grade": null,
       "team": "Fern Creek",
-      "record": "18-4",
+      "record": "30-7",
       "regional_place": 2,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 48,
-    "losses": 11,
-    "win_pct": 0.814
+    "wins": 61,
+    "losses": 15,
+    "win_pct": 0.803
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

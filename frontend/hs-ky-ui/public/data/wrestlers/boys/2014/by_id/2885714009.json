@@ -5,6 +5,11 @@
   "team_slug": "calloway_county",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.824,
-    "bonus_rate": 0.882,
+    "pin_rate": 0.765,
+    "bonus_rate": 0.824,
     "majors": 1,
     "techs": 0,
-    "pins": 14
+    "pins": 13
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -68,22 +73,6 @@
       "event": "2014 KHSAA State Championships"
     },
     {
-      "date": "2014-02-15",
-      "opponent_id": "2886210009",
-      "opponent_career_id": "career_013641",
-      "opponent_name": "Alex Curl",
-      "opponent_team": "Fort Campbell",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:43",
-      "event": "KHSAA Region I Tournament"
-    },
-    {
       "date": "2014-02-08",
       "opponent_id": "2886210009",
       "opponent_career_id": "career_013641",
@@ -112,6 +101,22 @@
       "result": "W",
       "method": "DEC",
       "score": "7-0",
+      "duration": "7:00",
+      "event": "KHSAA Region 1"
+    },
+    {
+      "date": "2014-02-08",
+      "opponent_id": "2886400009",
+      "opponent_career_id": "career_012250",
+      "opponent_name": "Cameron Dearmond",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-4",
       "duration": "7:00",
       "event": "KHSAA Region 1"
     },
@@ -213,22 +218,6 @@
     },
     {
       "date": "2014-01-16",
-      "opponent_id": "2886713009",
-      "opponent_career_id": "career_015090",
-      "opponent_name": "Eric Gonzalez",
-      "opponent_team": "McCracken County",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:30",
-      "event": "vs. McCracken County"
-    },
-    {
-      "date": "2014-01-16",
       "opponent_id": "2886210009",
       "opponent_career_id": "career_013641",
       "opponent_name": "Alex Curl",
@@ -244,6 +233,22 @@
       "event": "vs. Fort Campbell"
     },
     {
+      "date": "2014-01-16",
+      "opponent_id": "2886713009",
+      "opponent_career_id": "career_015090",
+      "opponent_name": "Eric Gonzalez",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:30",
+      "event": "vs. McCracken County"
+    },
+    {
       "date": "2014-01-11",
       "opponent_id": "2885701009",
       "opponent_career_id": "career_014981",
@@ -256,8 +261,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "steve johnston"
+      "duration": "2:20",
+      "event": "Steve Johnson Classic"
     },
     {
       "date": "2014-01-11",
@@ -357,22 +362,6 @@
     },
     {
       "date": "2013-12-28",
-      "opponent_id": "2886550009",
-      "opponent_career_id": "career_011457",
-      "opponent_name": "Dalton Bell",
-      "opponent_team": "La Rue County",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "DEC",
-      "score": "10-7",
-      "duration": "7:00",
-      "event": "Christian County Invitational"
-    },
-    {
-      "date": "2013-12-28",
       "opponent_id": "OUTSTATE_cc85d2a9e808",
       "opponent_career_id": null,
       "opponent_name": "Alex Connell",
@@ -404,20 +393,20 @@
       "event": "Christian County Invitational"
     },
     {
-      "date": "2013-12-21",
-      "opponent_id": "2885423009",
-      "opponent_career_id": "career_012971",
-      "opponent_name": "Brandon Powers",
-      "opponent_team": "Apollo",
+      "date": "2013-12-28",
+      "opponent_id": "2886550009",
+      "opponent_career_id": "career_011457",
+      "opponent_name": "Dalton Bell",
+      "opponent_team": "La Rue County",
       "opponent_team_rank": null,
       "opponent_weight": 106,
       "opponent_rank": null,
       "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:05",
-      "event": "vs. Apollo"
+      "result": "L",
+      "method": "DEC",
+      "score": "10-7",
+      "duration": "7:00",
+      "event": "Christian County Invitational"
     },
     {
       "date": "2013-12-21",
@@ -434,6 +423,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. All Star"
+    },
+    {
+      "date": "2013-12-21",
+      "opponent_id": "2885423009",
+      "opponent_career_id": "career_012971",
+      "opponent_name": "Brandon Powers",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:05",
+      "event": "vs. Apollo"
     },
     {
       "date": "2013-12-21",
@@ -539,7 +544,7 @@
       "season": 2015,
       "grade": 10,
       "team": "Calloway County",
-      "record": "32-16",
+      "record": "32-14",
       "regional_place": 4,
       "state_place": null
     },
@@ -555,15 +560,15 @@
       "season": 2013,
       "grade": null,
       "team": "Calloway County",
-      "record": "3-1",
+      "record": "3-4",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 85,
-    "losses": 34,
-    "win_pct": 0.714
+    "losses": 35,
+    "win_pct": 0.708
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

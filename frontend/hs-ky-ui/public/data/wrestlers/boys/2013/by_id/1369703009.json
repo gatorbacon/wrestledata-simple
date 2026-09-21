@@ -5,10 +5,15 @@
   "team_slug": "moore",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2013,
   "current_rank": null,
   "record": {
-    "overall": "13-12",
+    "overall": "13-14",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -37,22 +42,6 @@
   "match_list": [
     {
       "date": "2013-01-26",
-      "opponent_id": "1337770009",
-      "opponent_career_id": "career_014916",
-      "opponent_name": "Kyle Edlin",
-      "opponent_team": "La Rue County",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "DEC",
-      "score": "3-2",
-      "duration": "7:00",
-      "event": "vs. Moore"
-    },
-    {
-      "date": "2013-01-26",
       "opponent_id": "1330353009",
       "opponent_career_id": "career_012264",
       "opponent_name": "Geordon Blanton",
@@ -65,7 +54,23 @@
       "method": "DEC",
       "score": "11-4",
       "duration": "7:00",
-      "event": "vs. Moore"
+      "event": "vs. Johnson Central"
+    },
+    {
+      "date": "2013-01-26",
+      "opponent_id": "1337770009",
+      "opponent_career_id": "career_014916",
+      "opponent_name": "Kyle Edlin",
+      "opponent_team": "La Rue County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "DEC",
+      "score": "3-2",
+      "duration": "7:00",
+      "event": "vs. La Rue County"
     },
     {
       "date": "2013-01-26",
@@ -165,6 +170,22 @@
     },
     {
       "date": "2013-01-12",
+      "opponent_id": "1438909009",
+      "opponent_career_id": "career_016083",
+      "opponent_name": "Bradley Reynolds",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:50",
+      "event": "vs. Spencer County"
+    },
+    {
+      "date": "2013-01-12",
       "opponent_id": "1381501009",
       "opponent_career_id": "career_013745",
       "opponent_name": "Austin Alemi",
@@ -194,22 +215,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Franklin County"
-    },
-    {
-      "date": "2013-01-12",
-      "opponent_id": "1438909009",
-      "opponent_career_id": "career_016083",
-      "opponent_name": "Bradley Reynolds",
-      "opponent_team": "Spencer County",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:50",
-      "event": "vs. Spencer County"
     },
     {
       "date": "2013-01-05",
@@ -321,7 +326,7 @@
       "method": "TF",
       "score": "15-0",
       "duration": "3:38",
-      "event": "Lafayette"
+      "event": "Lafayette Classic"
     },
     {
       "date": "2012-12-22",
@@ -474,7 +479,8 @@
     "seasons": [
       2015,
       2014,
-      2013
+      2013,
+      2012
     ]
   },
   "season_summary": [
@@ -490,7 +496,7 @@
       "season": 2014,
       "grade": null,
       "team": "Moore",
-      "record": "18-18",
+      "record": "20-18",
       "regional_place": null,
       "state_place": null
     },
@@ -498,15 +504,23 @@
       "season": 2013,
       "grade": null,
       "team": "Moore",
-      "record": "13-12",
+      "record": "13-14",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2012,
+      "grade": 9,
+      "team": "Moore",
+      "record": "2-2",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 52,
-    "losses": 46,
-    "win_pct": 0.531
+    "wins": 56,
+    "losses": 50,
+    "win_pct": 0.528
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

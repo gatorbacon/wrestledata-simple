@@ -5,10 +5,15 @@
   "team_slug": "boone_county",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2014,
   "current_rank": null,
   "record": {
-    "overall": "28-20",
+    "overall": "30-22",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.833,
-    "bonus_rate": 0.933,
+    "pin_rate": 0.815,
+    "bonus_rate": 0.926,
     "majors": 2,
     "techs": 1,
-    "pins": 25
+    "pins": 22
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -149,22 +154,6 @@
     },
     {
       "date": "2014-02-08",
-      "opponent_id": "2887273009",
-      "opponent_career_id": "career_012340",
-      "opponent_name": "spencer carpenter",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:59",
-      "event": "KHSAA Region 6"
-    },
-    {
-      "date": "2014-02-08",
       "opponent_id": "2887639009",
       "opponent_career_id": "career_011592",
       "opponent_name": "Mason Smith",
@@ -177,54 +166,6 @@
       "method": "FALL",
       "score": null,
       "duration": "1:31",
-      "event": "KHSAA Region 6"
-    },
-    {
-      "date": "2014-02-08",
-      "opponent_id": "2885971009",
-      "opponent_career_id": "career_014834",
-      "opponent_name": "Jacob Rohling",
-      "opponent_team": "Covington Catholic",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:18",
-      "event": "KHSAA Region 6"
-    },
-    {
-      "date": "2014-02-08",
-      "opponent_id": "2886051009",
-      "opponent_career_id": "career_014192",
-      "opponent_name": "Joey Scaggs",
-      "opponent_team": "Dixie Heights",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:15",
-      "event": "KHSAA Region 6"
-    },
-    {
-      "date": "2014-02-08",
-      "opponent_id": "2887200009",
-      "opponent_career_id": "career_013171",
-      "opponent_name": "Cody Shultz",
-      "opponent_team": "Scott",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:55",
       "event": "KHSAA Region 6"
     },
     {
@@ -449,7 +390,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:34",
-      "event": "vs. Boone County"
+      "event": "vs. Cooper"
     },
     {
       "date": "2014-01-15",
@@ -465,7 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:31",
-      "event": "vs. Boone County"
+      "event": "vs. Ryle"
     },
     {
       "date": "2014-01-11",
@@ -656,7 +597,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:09",
       "event": "NKAC"
     },
     {
@@ -821,22 +762,6 @@
     },
     {
       "date": "2013-12-14",
-      "opponent_id": "2863396009",
-      "opponent_career_id": null,
-      "opponent_name": "Andrew Patton",
-      "opponent_team": "Crawford County",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:57",
-      "event": "vs. Crawford County"
-    },
-    {
-      "date": "2013-12-14",
       "opponent_id": "OUTSTATE_2c903e25261d",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -850,6 +775,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Bourbon County"
+    },
+    {
+      "date": "2013-12-14",
+      "opponent_id": "2863396009",
+      "opponent_career_id": null,
+      "opponent_name": "Andrew Patton",
+      "opponent_team": "Crawford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:57",
+      "event": "vs. Crawford County"
     },
     {
       "date": "2013-12-14",
@@ -897,23 +838,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "vs. Boone County"
-    },
-    {
-      "date": "2013-12-04",
-      "opponent_id": "2886865009",
-      "opponent_career_id": "career_011502",
-      "opponent_name": "Drevon Jones",
-      "opponent_team": "Newport",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "TF",
-      "score": "16-0",
-      "duration": "0:00",
-      "event": "vs. Newport"
+      "event": "vs. Central"
     },
     {
       "date": "2013-12-04",
@@ -930,6 +855,22 @@
       "score": null,
       "duration": "2:19",
       "event": "vs. Grant County"
+    },
+    {
+      "date": "2013-12-04",
+      "opponent_id": "2886865009",
+      "opponent_career_id": "career_011502",
+      "opponent_name": "Drevon Jones",
+      "opponent_team": "Newport",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "0:00",
+      "event": "vs. Newport"
     }
   ],
   "career": {
@@ -947,7 +888,7 @@
       "season": 2016,
       "grade": 12,
       "team": "Boone County",
-      "record": "35-12",
+      "record": "36-12",
       "regional_place": 4,
       "state_place": null
     },
@@ -955,7 +896,7 @@
       "season": 2015,
       "grade": 11,
       "team": "Boone County",
-      "record": "46-19",
+      "record": "46-17",
       "regional_place": 4,
       "state_place": null
     },
@@ -963,7 +904,7 @@
       "season": 2014,
       "grade": null,
       "team": "Boone County",
-      "record": "28-20",
+      "record": "30-22",
       "regional_place": 4,
       "state_place": null
     },
@@ -971,15 +912,15 @@
       "season": 2013,
       "grade": null,
       "team": "Boone County",
-      "record": "22-19",
+      "record": "25-22",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 131,
-    "losses": 70,
+    "wins": 137,
+    "losses": 73,
     "win_pct": 0.652
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }
