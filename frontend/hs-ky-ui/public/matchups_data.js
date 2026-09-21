@@ -18,7 +18,7 @@ window.MATCHUPS = [
   { a: { name: 'Asher Crisp', tag: 'Middle school' },                b: { name: 'Reign Gutterman', tag: 'Middle school' } },
   { a: { name: 'Peyton Brinkman', id: 'career_000669', gender: 'girls', rank: 2 },  b: { name: 'Payton Pomeroy', id: 'career_000232', gender: 'girls', rank: 1 } },
   { a: { name: 'Jackson Stoner', id: 'career_000646', gender: 'boys', rank: 2 },    b: { name: 'Mohamud Talasow', id: 'career_000827', gender: 'boys', rank: 4 } },
-  { a: { name: 'Cullen White', id: 'career_000268', gender: 'boys', rank: 3 },      b: { name: 'Brock Fernandez', id: 'career_002652', gender: 'boys', rank: 3 } },
+  { a: { name: 'Hunter Kennedy', id: 'career_002759', gender: 'boys' },              b: { name: 'Brock Fernandez', id: 'career_002652', gender: 'boys', rank: 3 } },
   { a: { name: 'JJ Mollett', id: 'career_001602', gender: 'boys', rank: 3 },        b: { name: 'Ayden Votaw', id: 'career_001810', gender: 'boys', rank: 5 } },
   { a: { name: 'Noah Crisp', id: 'career_002339', gender: 'boys', rank: 2 },        b: { name: 'Josh Tuttle', id: 'career_000839', gender: 'boys', rank: 4 } },
   { a: { name: 'Abel Dietz', tag: 'Middle school' },                 b: { name: 'Ashdon Yost', tag: 'Middle school' } },
