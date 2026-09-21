@@ -5,13 +5,18 @@
   "team_slug": "logan_county",
   "team_rank": 42,
   "weight_class": 100,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 25,
   "record": {
     "overall": "16-6",
-    "vs_ranked": "5-6",
-    "vs_top10": "0-4",
-    "vs_top25": "0-6"
+    "vs_ranked": "6-6",
+    "vs_top10": "1-4",
+    "vs_top25": "1-6"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,22 +25,22 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.833,
+    "pin_rate": 0.714,
+    "bonus_rate": 0.857,
     "majors": 1,
     "techs": 0,
-    "pins": 4
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
+    "ranked_wins": 6,
     "ranked_losses": 6,
-    "top10_wins": 0,
+    "top10_wins": 1,
     "top10_losses": 4,
     "win_over_highest_rank": {
-      "opponent_id": "35598128132",
-      "opponent_rank": 26,
-      "opponent_name": "Teresa Helm",
-      "method": "Fall 4:43"
+      "opponent_id": "35333322132",
+      "opponent_rank": 8,
+      "opponent_name": "Lily Autry",
+      "method": "Fall 1:17"
     },
     "worst_loss": {
       "opponent_id": "35635802132",
@@ -111,6 +116,22 @@
     },
     {
       "date": "2026-02-14",
+      "opponent_id": "35333322132",
+      "opponent_career_id": "career_000590",
+      "opponent_name": "Lily Autry",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": null,
+      "opponent_weight": 100,
+      "opponent_rank": 8,
+      "weight_class": "100",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:17",
+      "event": "KHSAA Girls Region 1"
+    },
+    {
+      "date": "2026-02-14",
       "opponent_id": "35334934132",
       "opponent_career_id": "career_000565",
       "opponent_name": "Tamara Partee",
@@ -155,7 +176,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:30",
-      "event": "vs. Logan County"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2026-01-17",
@@ -267,7 +288,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:30",
-      "event": "vs. Logan County"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2025-12-13",
@@ -404,5 +425,5 @@
     "losses": 6,
     "win_pct": 0.727
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

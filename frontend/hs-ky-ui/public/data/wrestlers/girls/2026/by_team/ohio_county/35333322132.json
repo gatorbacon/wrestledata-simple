@@ -5,13 +5,18 @@
   "team_slug": "ohio_county",
   "team_rank": null,
   "weight_class": 100,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 7,
   "record": {
     "overall": "32-13",
-    "vs_ranked": "22-10",
-    "vs_top10": "4-10",
-    "vs_top25": "11-10"
+    "vs_ranked": "22-12",
+    "vs_top10": "4-11",
+    "vs_top25": "11-12"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,9 +33,9 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 22,
-    "ranked_losses": 10,
+    "ranked_losses": 12,
     "top10_wins": 4,
-    "top10_losses": 10,
+    "top10_losses": 11,
     "win_over_highest_rank": {
       "opponent_id": "35333369132",
       "opponent_rank": 6,
@@ -38,10 +43,10 @@
       "method": "Fall 3:33"
     },
     "worst_loss": {
-      "opponent_id": "35333368132",
-      "opponent_rank": 7,
-      "opponent_name": "Kaylee Mckown",
-      "method": "Dec 8-4"
+      "opponent_id": "35460469132",
+      "opponent_rank": 25,
+      "opponent_name": "Genesis Escobedo",
+      "method": "Fall 1:17"
     }
   },
   "match_list": [
@@ -91,6 +96,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:36",
+      "event": "KHSAA Girls Region 1"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35460469132",
+      "opponent_career_id": "career_000435",
+      "opponent_name": "Genesis Escobedo",
+      "opponent_team": "Logan County",
+      "opponent_team_rank": 42,
+      "opponent_weight": 100,
+      "opponent_rank": 25,
+      "weight_class": "100",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:17",
       "event": "KHSAA Girls Region 1"
     },
     {
@@ -299,6 +320,22 @@
       "method": "FALL",
       "score": null,
       "duration": "2:00",
+      "event": "Lady Bruin Invitational 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35565836132",
+      "opponent_career_id": "career_000560",
+      "opponent_name": "Madyson Votaw",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 8,
+      "opponent_weight": 100,
+      "opponent_rank": 2,
+      "weight_class": "100",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:05",
       "event": "Lady Bruin Invitational 2026"
     },
     {
@@ -571,7 +608,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:46",
-      "event": "vs. Ohio County"
+      "event": "vs. Logan County"
     },
     {
       "date": "2025-11-29",
@@ -586,7 +623,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "0:16",
       "event": "Tommy Castle Classic"
     },
     {
@@ -602,7 +639,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "0:16",
       "event": "Tommy Castle Classic"
     },
     {
@@ -635,7 +672,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:10",
-      "event": "vs. Ohio County"
+      "event": "vs. Caldwell County"
     },
     {
       "date": "2025-11-26",
@@ -774,5 +811,5 @@
     "losses": 35,
     "win_pct": 0.673
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

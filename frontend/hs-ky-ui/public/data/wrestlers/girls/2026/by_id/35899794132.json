@@ -5,13 +5,18 @@
   "team_slug": "pleasure_ridge_park",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 18,
   "record": {
     "overall": "10-9",
-    "vs_ranked": "6-8",
-    "vs_top10": "0-6",
-    "vs_top25": "2-7"
+    "vs_ranked": "7-9",
+    "vs_top10": "0-7",
+    "vs_top25": "3-8"
   },
   "metrics": {
     "pf7": 0.0,
@@ -24,13 +29,13 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 8
+    "pins": 10
   },
   "opponent_breakdown": {
-    "ranked_wins": 6,
-    "ranked_losses": 8,
+    "ranked_wins": 7,
+    "ranked_losses": 9,
     "top10_wins": 0,
-    "top10_losses": 6,
+    "top10_losses": 7,
     "win_over_highest_rank": {
       "opponent_id": "35333586132",
       "opponent_rank": 19,
@@ -59,6 +64,22 @@
       "method": "FALL",
       "score": null,
       "duration": "2:44",
+      "event": "KHSAA Girls Region 2"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35333586132",
+      "opponent_career_id": "career_000033",
+      "opponent_name": "Elliana Mosby",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 29,
+      "opponent_weight": 138,
+      "opponent_rank": 19,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:17",
       "event": "KHSAA Girls Region 2"
     },
     {
@@ -158,6 +179,39 @@
       "event": "MUSTANG CLASSIC"
     },
     {
+      "date": "2026-02-07",
+      "opponent_id": "35663925132",
+      "opponent_career_id": "career_000673",
+      "opponent_name": "Preslee Steiber",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": 6,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:57",
+      "event": "MUSTANG CLASSIC"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35333674132",
+      "opponent_career_id": "career_000123",
+      "opponent_name": "Saniyah Nana",
+      "opponent_team": "Butler",
+      "opponent_team_rank": 13,
+      "opponent_weight": 145,
+      "opponent_rank": 18,
+      "weight_class": "138",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-4",
+      "duration": "7:00",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": -3.39
+    },
+    {
       "date": "2026-01-10",
       "opponent_id": "35333394132",
       "opponent_career_id": "career_000556",
@@ -188,23 +242,6 @@
       "score": null,
       "duration": "0:30",
       "event": "Queen of the City Wrestling"
-    },
-    {
-      "date": "2026-01-10",
-      "opponent_id": "35333674132",
-      "opponent_career_id": "career_000123",
-      "opponent_name": "Saniyah Nana",
-      "opponent_team": "Butler",
-      "opponent_team_rank": 13,
-      "opponent_weight": 145,
-      "opponent_rank": 18,
-      "weight_class": "138",
-      "result": "L",
-      "method": "DEC",
-      "score": "7-4",
-      "duration": "7:00",
-      "event": "Queen of the City Wrestling",
-      "mv_impact": -3.39
     },
     {
       "date": "2025-12-30",
@@ -252,6 +289,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:33",
+      "event": "Fern Creek Gladiator Ladies"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "OUTSTATE_00fc2ecf79b7",
+      "opponent_career_id": null,
+      "opponent_name": "Rowyn Weiss",
+      "opponent_team": "Evansville F.j. Reitz",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:19",
       "event": "Fern Creek Gladiator Ladies"
     },
     {
@@ -336,5 +389,5 @@
     "losses": 19,
     "win_pct": 0.406
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

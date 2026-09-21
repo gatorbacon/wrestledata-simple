@@ -5,10 +5,15 @@
   "team_slug": "lafayette",
   "team_rank": null,
   "weight_class": 235,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
-    "overall": "26-8",
+    "overall": "27-8",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.952,
-    "bonus_rate": 0.952,
+    "pin_rate": 0.955,
+    "bonus_rate": 0.955,
     "majors": 0,
     "techs": 0,
-    "pins": 20
+    "pins": 21
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -241,7 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:32",
-      "event": "vs. Lafayette"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2025-01-25",
@@ -305,6 +310,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:10",
+      "event": "Mestengo Invitational"
+    },
+    {
+      "date": "2025-01-18",
+      "opponent_id": "30115367132",
+      "opponent_career_id": "career_000710",
+      "opponent_name": "Destiny Tapp",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": null,
+      "opponent_weight": 235,
+      "opponent_rank": null,
+      "weight_class": "235",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:56",
       "event": "Mestengo Invitational"
     },
     {
@@ -421,38 +442,6 @@
     },
     {
       "date": "2024-12-20",
-      "opponent_id": "30115291132",
-      "opponent_career_id": "career_000359",
-      "opponent_name": "Alexandra Cortez",
-      "opponent_team": "Henry Clay",
-      "opponent_team_rank": null,
-      "opponent_weight": 185,
-      "opponent_rank": null,
-      "weight_class": "235",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Lady General"
-    },
-    {
-      "date": "2024-12-20",
-      "opponent_id": "30719557132",
-      "opponent_career_id": "career_000489",
-      "opponent_name": "Autumn Jackson",
-      "opponent_team": "Mason County",
-      "opponent_team_rank": null,
-      "opponent_weight": 185,
-      "opponent_rank": null,
-      "weight_class": "235",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:16",
-      "event": "Lady General"
-    },
-    {
-      "date": "2024-12-20",
       "opponent_id": "30196079132",
       "opponent_career_id": "career_000864",
       "opponent_name": "Faith Allen",
@@ -469,6 +458,22 @@
     },
     {
       "date": "2024-12-20",
+      "opponent_id": "30115291132",
+      "opponent_career_id": "career_000359",
+      "opponent_name": "Alexandra Cortez",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": null,
+      "opponent_weight": 185,
+      "opponent_rank": null,
+      "weight_class": "235",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Lady General"
+    },
+    {
+      "date": "2024-12-20",
       "opponent_id": "30272986132",
       "opponent_career_id": null,
       "opponent_name": "Rosalynn Heady",
@@ -481,6 +486,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:30",
+      "event": "Lady General"
+    },
+    {
+      "date": "2024-12-20",
+      "opponent_id": "30719557132",
+      "opponent_career_id": "career_000489",
+      "opponent_name": "Autumn Jackson",
+      "opponent_team": "Mason County",
+      "opponent_team_rank": null,
+      "opponent_weight": 185,
+      "opponent_rank": null,
+      "weight_class": "235",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:16",
       "event": "Lady General"
     },
     {
@@ -533,6 +554,22 @@
     },
     {
       "date": "2024-12-07",
+      "opponent_id": "30115251132",
+      "opponent_career_id": "career_000101",
+      "opponent_name": "Porter Tagarook",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": null,
+      "opponent_weight": 235,
+      "opponent_rank": null,
+      "weight_class": "235",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-3",
+      "duration": "7:00",
+      "event": "Lady Indians Tomahawk Classic"
+    },
+    {
+      "date": "2024-12-07",
       "opponent_id": "30115370132",
       "opponent_career_id": "career_001140",
       "opponent_name": "Arianna Stevens",
@@ -562,22 +599,6 @@
       "score": null,
       "duration": "0:23",
       "event": "Lady Indians Tomahawk Classic"
-    },
-    {
-      "date": "2024-12-07",
-      "opponent_id": "30115251132",
-      "opponent_career_id": "career_000101",
-      "opponent_name": "Porter Tagarook",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": null,
-      "opponent_weight": 235,
-      "opponent_rank": null,
-      "weight_class": "235",
-      "result": "W",
-      "method": "DEC",
-      "score": "9-3",
-      "duration": "7:00",
-      "event": "Lady Indians Tomahawk Classic"
     }
   ],
   "career": {
@@ -594,7 +615,7 @@
       "season": 2026,
       "grade": 12,
       "team": "Lafayette",
-      "record": "24-6",
+      "record": "24-5",
       "regional_place": 2,
       "state_place": 1
     },
@@ -602,7 +623,7 @@
       "season": 2025,
       "grade": 11,
       "team": "Lafayette",
-      "record": "26-8",
+      "record": "27-8",
       "regional_place": 1,
       "state_place": 2
     },
@@ -610,15 +631,15 @@
       "season": 2024,
       "grade": 10,
       "team": "Lafayette",
-      "record": "15-12",
+      "record": "16-12",
       "regional_place": 2,
       "state_place": 2
     }
   ],
   "career_record": {
-    "wins": 65,
-    "losses": 26,
-    "win_pct": 0.714
+    "wins": 67,
+    "losses": 25,
+    "win_pct": 0.728
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

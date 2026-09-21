@@ -5,6 +5,11 @@
   "team_slug": "corbin",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 9,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.7,
-    "bonus_rate": 0.85,
+    "pin_rate": 0.737,
+    "bonus_rate": 0.895,
     "majors": 0,
     "techs": 3,
     "pins": 14
@@ -235,7 +240,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Corbin"
+      "event": "vs. Bell County"
+    },
+    {
+      "date": "2026-01-23",
+      "opponent_id": "35850788132",
+      "opponent_career_id": "career_000083",
+      "opponent_name": "Lexie Dingess",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 32,
+      "opponent_weight": 138,
+      "opponent_rank": 12,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Boyd County"
     },
     {
       "date": "2026-01-23",
@@ -252,22 +273,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Perry County Central"
-    },
-    {
-      "date": "2026-01-23",
-      "opponent_id": "35850788132",
-      "opponent_career_id": "career_000083",
-      "opponent_name": "Lexie Dingess",
-      "opponent_team": "Boyd County",
-      "opponent_team_rank": 32,
-      "opponent_weight": 138,
-      "opponent_rank": 12,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Corbin"
     },
     {
       "date": "2026-01-20",
@@ -351,22 +356,6 @@
     },
     {
       "date": "2025-12-29",
-      "opponent_id": "35400939132",
-      "opponent_career_id": "career_000269",
-      "opponent_name": "Samantha Sanchez",
-      "opponent_team": "Franklin County",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": 58,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:12",
-      "event": "Lady Cardinal Invitational"
-    },
-    {
-      "date": "2025-12-29",
       "opponent_id": "35347233132",
       "opponent_career_id": "career_000176",
       "opponent_name": "Makinna Lucia",
@@ -399,6 +388,22 @@
     },
     {
       "date": "2025-12-29",
+      "opponent_id": "35400939132",
+      "opponent_career_id": "career_000269",
+      "opponent_name": "Samantha Sanchez",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": 58,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:12",
+      "event": "Lady Cardinal Invitational"
+    },
+    {
+      "date": "2025-12-29",
       "opponent_id": "35436570132",
       "opponent_career_id": "career_000330",
       "opponent_name": "Emma Bailey",
@@ -415,6 +420,38 @@
     },
     {
       "date": "2025-12-22",
+      "opponent_id": "35369125132",
+      "opponent_career_id": "career_000054",
+      "opponent_name": "Sidney Young",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 3,
+      "opponent_weight": 126,
+      "opponent_rank": 36,
+      "weight_class": "126",
+      "result": "W",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "0:00",
+      "event": "vs. Bell County"
+    },
+    {
+      "date": "2025-12-22",
+      "opponent_id": "35900612132",
+      "opponent_career_id": "career_000410",
+      "opponent_name": "Austyn Hammons",
+      "opponent_team": "Knox Central",
+      "opponent_team_rank": 21,
+      "opponent_weight": 132,
+      "opponent_rank": 59,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Knox Central"
+    },
+    {
+      "date": "2025-12-22",
       "opponent_id": "35599267132",
       "opponent_career_id": "career_000501",
       "opponent_name": "Allissa Chinas-Rodriguez",
@@ -428,22 +465,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Mccreary Central"
-    },
-    {
-      "date": "2025-12-22",
-      "opponent_id": "35369125132",
-      "opponent_career_id": "career_000054",
-      "opponent_name": "Sidney Young",
-      "opponent_team": "Bell County",
-      "opponent_team_rank": 3,
-      "opponent_weight": 126,
-      "opponent_rank": 36,
-      "weight_class": "126",
-      "result": "W",
-      "method": "TF",
-      "score": "17-1",
-      "duration": "0:00",
-      "event": "vs. Corbin"
     },
     {
       "date": "2025-12-22",
@@ -478,20 +499,20 @@
       "event": "vs. Whitley County"
     },
     {
-      "date": "2025-12-22",
-      "opponent_id": "35900612132",
-      "opponent_career_id": "career_000410",
-      "opponent_name": "Austyn Hammons",
-      "opponent_team": "Knox Central",
-      "opponent_team_rank": 21,
+      "date": "2025-12-20",
+      "opponent_id": "35333372132",
+      "opponent_career_id": "career_000096",
+      "opponent_name": "Makyla Folwer",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 17,
       "opponent_weight": 132,
-      "opponent_rank": 59,
+      "opponent_rank": 5,
       "weight_class": "132",
-      "result": "W",
+      "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Knox Central"
+      "duration": "0:32",
+      "event": "5th Annual Cardinal Clash Ladies Tourn"
     },
     {
       "date": "2025-12-20",
@@ -507,22 +528,6 @@
       "method": "MFF",
       "score": null,
       "duration": "7:00",
-      "event": "5th Annual Cardinal Clash Ladies Tourn"
-    },
-    {
-      "date": "2025-12-20",
-      "opponent_id": "35333372132",
-      "opponent_career_id": "career_000096",
-      "opponent_name": "Makyla Folwer",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": 17,
-      "opponent_weight": 132,
-      "opponent_rank": 5,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:32",
       "event": "5th Annual Cardinal Clash Ladies Tourn"
     },
     {
@@ -588,15 +593,15 @@
       "season": 2024,
       "grade": 9,
       "team": "Knox Central",
-      "record": "6-6",
+      "record": "8-9",
       "regional_place": 4,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 55,
-    "losses": 23,
-    "win_pct": 0.705
+    "wins": 57,
+    "losses": 26,
+    "win_pct": 0.687
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

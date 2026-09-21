@@ -5,13 +5,18 @@
   "team_slug": "henderson_county",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 26,
   "record": {
     "overall": "6-8",
-    "vs_ranked": "4-6",
+    "vs_ranked": "4-7",
     "vs_top10": "0-3",
-    "vs_top25": "1-6"
+    "vs_top25": "1-7"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,7 +33,7 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
-    "ranked_losses": 6,
+    "ranked_losses": 7,
     "top10_wins": 0,
     "top10_losses": 3,
     "win_over_highest_rank": {
@@ -56,6 +61,22 @@
       "opponent_rank": null,
       "weight_class": "120",
       "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Lady Bruin Invitational 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_fe702aef9cfa",
+      "opponent_career_id": null,
+      "opponent_name": "Jade Robertson",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
       "method": "FF",
       "score": null,
       "duration": "7:00",
@@ -94,22 +115,6 @@
       "event": "Lady Bruin Invitational 2026"
     },
     {
-      "date": "2026-01-10",
-      "opponent_id": "OUTSTATE_fe702aef9cfa",
-      "opponent_career_id": null,
-      "opponent_name": "Jade Robertson",
-      "opponent_team": "Henderson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "Lady Bruin Invitational 2026"
-    },
-    {
       "date": "2025-12-22",
       "opponent_id": "35565001132",
       "opponent_career_id": "career_000785",
@@ -143,22 +148,6 @@
     },
     {
       "date": "2025-12-20",
-      "opponent_id": "35640457132",
-      "opponent_career_id": "career_000186",
-      "opponent_name": "Serenity Avalos",
-      "opponent_team": "Christian County",
-      "opponent_team_rank": 4,
-      "opponent_weight": 114,
-      "opponent_rank": 23,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:27",
-      "event": "Henderson County Lady Colonel Wrestling Invitational"
-    },
-    {
-      "date": "2025-12-20",
       "opponent_id": "35454337132",
       "opponent_career_id": "career_000113",
       "opponent_name": "Shelby Bowersox",
@@ -171,6 +160,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:38",
+      "event": "Henderson County Lady Colonel Wrestling Invitational"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35640457132",
+      "opponent_career_id": "career_000186",
+      "opponent_name": "Serenity Avalos",
+      "opponent_team": "Christian County",
+      "opponent_team_rank": 4,
+      "opponent_weight": 114,
+      "opponent_rank": 23,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:27",
       "event": "Henderson County Lady Colonel Wrestling Invitational"
     },
     {
@@ -219,6 +224,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:40",
+      "event": "2025 Ohio County Girls` Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35345843132",
+      "opponent_career_id": "career_000128",
+      "opponent_name": "Alyvia Barnwell",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 33,
+      "opponent_weight": 120,
+      "opponent_rank": 13,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:25",
       "event": "2025 Ohio County Girls` Invitational"
     },
     {
@@ -285,5 +306,5 @@
     "losses": 22,
     "win_pct": 0.45
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,6 +5,11 @@
   "team_slug": "john_hardin",
   "team_rank": 5,
   "weight_class": 152,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 30,
   "record": {
@@ -41,27 +46,10 @@
       "opponent_id": "35460568132",
       "opponent_rank": 22,
       "opponent_name": "Katie Fox",
-      "method": "Fall 0:00"
+      "method": "Fall 1:51"
     }
   },
   "match_list": [
-    {
-      "date": "2025-11-29",
-      "opponent_id": "35520899132",
-      "opponent_career_id": "career_000256",
-      "opponent_name": "Chloe Sajdl",
-      "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 37,
-      "opponent_weight": 145,
-      "opponent_rank": 59,
-      "weight_class": "152",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:37",
-      "event": "RVK Lady Panther Classic",
-      "mv_impact": 0.76
-    },
     {
       "date": "2025-11-29",
       "opponent_id": "35347843132",
@@ -78,6 +66,23 @@
       "duration": "1:19",
       "event": "RVK Lady Panther Classic",
       "mv_impact": -5.23
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35520899132",
+      "opponent_career_id": "career_000256",
+      "opponent_name": "Chloe Sajdl",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 37,
+      "opponent_weight": 145,
+      "opponent_rank": 59,
+      "weight_class": "152",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:37",
+      "event": "RVK Lady Panther Classic",
+      "mv_impact": 0.76
     },
     {
       "date": "2025-11-29",
@@ -109,9 +114,8 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "RVK Lady Panther Classic",
-      "mv_impact": -8.12
+      "duration": "1:51",
+      "event": "RVK Lady Panther Classic"
     }
   ],
   "career": {
@@ -154,5 +158,5 @@
     "losses": 13,
     "win_pct": 0.381
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

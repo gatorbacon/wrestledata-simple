@@ -5,6 +5,11 @@
   "team_slug": "fort_campbell",
   "team_rank": 37,
   "weight_class": 107,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 49,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "pin_rate": 0.6,
+    "bonus_rate": 0.6,
     "majors": 0,
     "techs": 0,
     "pins": 3
@@ -203,6 +208,22 @@
       "method": "FALL",
       "score": null,
       "duration": "5:28",
+      "event": "Richey Rumble"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35111571132",
+      "opponent_career_id": null,
+      "opponent_name": "Darcy Aquilar",
+      "opponent_team": "West Creek High School Girls",
+      "opponent_team_rank": null,
+      "opponent_weight": 107,
+      "opponent_rank": null,
+      "weight_class": "107",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:27",
       "event": "Richey Rumble"
     },
     {
@@ -431,22 +452,6 @@
     },
     {
       "date": "2025-11-29",
-      "opponent_id": "35522855132",
-      "opponent_career_id": "career_000243",
-      "opponent_name": "Emily Herrera",
-      "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 37,
-      "opponent_weight": 100,
-      "opponent_rank": 31,
-      "weight_class": "107",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:13",
-      "event": "RVK Lady Panther Classic"
-    },
-    {
-      "date": "2025-11-29",
       "opponent_id": "35461407132",
       "opponent_career_id": "career_000437",
       "opponent_name": "Madilyn Cannon",
@@ -459,6 +464,22 @@
       "method": "FALL",
       "score": null,
       "duration": "4:49",
+      "event": "RVK Lady Panther Classic"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35522855132",
+      "opponent_career_id": "career_000243",
+      "opponent_name": "Emily Herrera",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 37,
+      "opponent_weight": 100,
+      "opponent_rank": 31,
+      "weight_class": "107",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:13",
       "event": "RVK Lady Panther Classic"
     }
   ],
@@ -484,5 +505,5 @@
     "losses": 17,
     "win_pct": 0.37
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

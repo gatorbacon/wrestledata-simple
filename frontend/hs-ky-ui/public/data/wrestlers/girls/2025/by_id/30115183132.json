@@ -5,6 +5,11 @@
   "team_slug": "ohio_county",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -197,6 +202,22 @@
     },
     {
       "date": "2025-01-30",
+      "opponent_id": "30305876132",
+      "opponent_career_id": "career_000013",
+      "opponent_name": "Lanah Gelarden",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:48",
+      "event": "vs. Apollo"
+    },
+    {
+      "date": "2025-01-30",
       "opponent_id": "30115164132",
       "opponent_career_id": "career_000784",
       "opponent_name": "Bailey Buchanan",
@@ -210,22 +231,6 @@
       "score": null,
       "duration": "1:54",
       "event": "vs. Union County"
-    },
-    {
-      "date": "2025-01-30",
-      "opponent_id": "30305876132",
-      "opponent_career_id": "career_000013",
-      "opponent_name": "Lanah Gelarden",
-      "opponent_team": "Apollo",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:48",
-      "event": "vs. Ohio County"
     },
     {
       "date": "2025-01-30",
@@ -389,22 +394,6 @@
     },
     {
       "date": "2025-01-02",
-      "opponent_id": "30115166132",
-      "opponent_career_id": "career_000785",
-      "opponent_name": "Brailey Jackson",
-      "opponent_team": "Union County",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "TF",
-      "score": "17-0",
-      "duration": "3:33",
-      "event": "Richey Rumble"
-    },
-    {
-      "date": "2025-01-02",
       "opponent_id": "30116227132",
       "opponent_career_id": "career_001012",
       "opponent_name": "Jessie Jenkins",
@@ -449,6 +438,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
+      "event": "Richey Rumble"
+    },
+    {
+      "date": "2025-01-02",
+      "opponent_id": "30115166132",
+      "opponent_career_id": "career_000785",
+      "opponent_name": "Brailey Jackson",
+      "opponent_team": "Union County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "TF",
+      "score": "17-0",
+      "duration": "3:33",
       "event": "Richey Rumble"
     },
     {
@@ -739,5 +744,5 @@
     "losses": 24,
     "win_pct": 0.73
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

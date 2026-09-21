@@ -5,6 +5,11 @@
   "team_slug": "simon_kenton",
   "team_rank": 54,
   "weight_class": 126,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 21,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.75,
+    "pin_rate": 0.636,
+    "bonus_rate": 0.727,
     "majors": 1,
     "techs": 0,
-    "pins": 8
+    "pins": 7
   },
   "opponent_breakdown": {
     "ranked_wins": 9,
@@ -223,15 +228,15 @@
     },
     {
       "date": "2026-01-31",
-      "opponent_id": "OUTSTATE_f34a6a68329d",
+      "opponent_id": "OUTSTATE_65c3cdb8e177",
       "opponent_career_id": null,
-      "opponent_name": "Harmony Chasteen",
-      "opponent_team": "Talawanda High School",
+      "opponent_name": "Ava Stephan",
+      "opponent_team": "Clermont Northeastern",
       "opponent_team_rank": null,
       "opponent_weight": 132,
       "opponent_rank": null,
       "weight_class": "132",
-      "result": "W",
+      "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -254,20 +259,20 @@
       "event": "North College Hill Invite"
     },
     {
-      "date": "2026-01-31",
-      "opponent_id": "OUTSTATE_65c3cdb8e177",
+      "date": "2026-01-22",
+      "opponent_id": "OUTSTATE_a0f5c7c07aa7",
       "opponent_career_id": null,
-      "opponent_name": "Ava Stephan",
-      "opponent_team": "Clermont Northeastern",
+      "opponent_name": "Unknown",
+      "opponent_team": "Highlands",
       "opponent_team_rank": null,
-      "opponent_weight": 132,
+      "opponent_weight": 126,
       "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
+      "weight_class": "126",
+      "result": "W",
+      "method": "FF",
       "score": null,
-      "duration": "0:00",
-      "event": "North College Hill Invite"
+      "duration": "7:00",
+      "event": "vs. Highlands"
     },
     {
       "date": "2026-01-22",
@@ -284,22 +289,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Walton-Verona"
-    },
-    {
-      "date": "2026-01-22",
-      "opponent_id": "OUTSTATE_a0f5c7c07aa7",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Highlands",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Highlands"
     },
     {
       "date": "2026-01-17",
@@ -347,7 +336,7 @@
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Walton-Verona"
     },
     {
       "date": "2026-01-03",
@@ -417,40 +406,6 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "35333616132",
-      "opponent_career_id": "career_000756",
-      "opponent_name": "Zeliah Cooper",
-      "opponent_team": "Taylor County",
-      "opponent_team_rank": 58,
-      "opponent_weight": 120,
-      "opponent_rank": 18,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:30",
-      "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": -4.05
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35565757132",
-      "opponent_career_id": "career_000784",
-      "opponent_name": "bailey buchanan",
-      "opponent_team": "Union County",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": 40,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:23",
-      "event": "2025 Ohio County Girls` Invitational",
-      "mv_impact": -4.94
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "35334941132",
       "opponent_career_id": "career_000575",
       "opponent_name": "Ava Grady",
@@ -484,6 +439,40 @@
       "mv_impact": 5.44
     },
     {
+      "date": "2025-12-06",
+      "opponent_id": "35333616132",
+      "opponent_career_id": "career_000756",
+      "opponent_name": "Zeliah Cooper",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": 58,
+      "opponent_weight": 120,
+      "opponent_rank": 18,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:30",
+      "event": "2025 Ohio County Girls` Invitational",
+      "mv_impact": -4.05
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35565757132",
+      "opponent_career_id": "career_000784",
+      "opponent_name": "bailey buchanan",
+      "opponent_team": "Union County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": 40,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:23",
+      "event": "2025 Ohio County Girls` Invitational",
+      "mv_impact": -4.94
+    },
+    {
       "date": "2025-11-29",
       "opponent_id": "35333373132",
       "opponent_career_id": "career_000093",
@@ -497,7 +486,7 @@
       "method": "MD",
       "score": "11-3",
       "duration": "7:00",
-      "event": "vs. Simon Kenton",
+      "event": "vs. Boyle County",
       "mv_impact": 0.16
     }
   ],
@@ -522,15 +511,15 @@
       "season": 2025,
       "grade": 7,
       "team": "Simon Kenton",
-      "record": "8-15",
+      "record": "7-14",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 20,
-    "losses": 30,
-    "win_pct": 0.4
+    "wins": 19,
+    "losses": 29,
+    "win_pct": 0.396
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

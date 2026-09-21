@@ -5,6 +5,11 @@
   "team_slug": "holmes",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 38,
   "record": {
@@ -111,22 +116,6 @@
     },
     {
       "date": "2026-01-17",
-      "opponent_id": "35352426132",
-      "opponent_career_id": "career_000810",
-      "opponent_name": "Abrielle Hooten",
-      "opponent_team": "Walton-Verona",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": 19,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Girls Sectionals (Section 3)"
-    },
-    {
-      "date": "2026-01-17",
       "opponent_id": "35756105132",
       "opponent_career_id": "career_000696",
       "opponent_name": "Dawmeisha Smith",
@@ -186,6 +175,22 @@
       "result": "W",
       "method": "TF",
       "score": "17-2",
+      "duration": "0:00",
+      "event": "Girls Sectionals (Section 3)"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35352426132",
+      "opponent_career_id": "career_000810",
+      "opponent_name": "Abrielle Hooten",
+      "opponent_team": "Walton-Verona",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": 19,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
       "duration": "0:00",
       "event": "Girls Sectionals (Section 3)"
     },
@@ -315,23 +320,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:28",
-      "event": "vs. Holmes"
-    },
-    {
-      "date": "2025-12-10",
-      "opponent_id": "35739916132",
-      "opponent_career_id": "career_000485",
-      "opponent_name": "Danielle Concepcion",
-      "opponent_team": "Mason County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": 45,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:54",
-      "event": "vs. Mason County"
+      "event": "vs. Cooper"
     },
     {
       "date": "2025-12-10",
@@ -347,6 +336,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
+      "event": "vs. Mason County"
+    },
+    {
+      "date": "2025-12-10",
+      "opponent_id": "35739916132",
+      "opponent_career_id": "career_000485",
+      "opponent_name": "Danielle Concepcion",
+      "opponent_team": "Mason County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": 45,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:54",
       "event": "vs. Mason County"
     },
     {
@@ -442,7 +447,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:28",
       "event": "Tommy Castle Classic"
     },
     {
@@ -525,5 +530,5 @@
     "losses": 16,
     "win_pct": 0.667
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

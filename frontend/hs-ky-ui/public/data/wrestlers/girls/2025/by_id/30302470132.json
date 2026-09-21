@@ -5,10 +5,15 @@
   "team_slug": "whitley_county",
   "team_rank": null,
   "weight_class": 235,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
-    "overall": "4-7",
+    "overall": "4-9",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -35,6 +40,22 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2025-01-25",
+      "opponent_id": "30233961132",
+      "opponent_career_id": "career_000974",
+      "opponent_name": "Amber Wilson",
+      "opponent_team": "Green County",
+      "opponent_team_rank": null,
+      "opponent_weight": 235,
+      "opponent_rank": null,
+      "weight_class": "235.0",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:59",
+      "event": "Bourbon City Memorial Bash *Women*"
+    },
     {
       "date": "2025-01-25",
       "opponent_id": "30115370132",
@@ -64,23 +85,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "Bourbon City Memorial Bash *Women*"
-    },
-    {
-      "date": "2025-01-25",
-      "opponent_id": "30233961132",
-      "opponent_career_id": "career_000974",
-      "opponent_name": "Amber Wilson",
-      "opponent_team": "Green County",
-      "opponent_team_rank": null,
-      "opponent_weight": 235,
-      "opponent_rank": null,
-      "weight_class": "235.0",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:59",
+      "duration": "0:13",
       "event": "Bourbon City Memorial Bash *Women*"
     },
     {
@@ -97,7 +102,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Whitley County"
+      "event": "vs. Bell County"
     },
     {
       "date": "2025-01-18",
@@ -129,7 +134,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Whitley County"
+      "event": "vs. Madison Central"
     },
     {
       "date": "2025-01-04",
@@ -213,22 +218,6 @@
     },
     {
       "date": "2024-12-07",
-      "opponent_id": "30115291132",
-      "opponent_career_id": "career_000359",
-      "opponent_name": "Alexandra Cortez",
-      "opponent_team": "Henry Clay",
-      "opponent_team_rank": null,
-      "opponent_weight": 185,
-      "opponent_rank": null,
-      "weight_class": "235",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:46",
-      "event": "Lady Indians Tomahawk Classic"
-    },
-    {
-      "date": "2024-12-07",
       "opponent_id": "30115251132",
       "opponent_career_id": "career_000101",
       "opponent_name": "Porter Tagarook",
@@ -241,6 +230,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:32",
+      "event": "Lady Indians Tomahawk Classic"
+    },
+    {
+      "date": "2024-12-07",
+      "opponent_id": "30115291132",
+      "opponent_career_id": "career_000359",
+      "opponent_name": "Alexandra Cortez",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": null,
+      "opponent_weight": 185,
+      "opponent_rank": null,
+      "weight_class": "235",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:46",
       "event": "Lady Indians Tomahawk Classic"
     }
   ],
@@ -256,15 +261,15 @@
       "season": 2025,
       "grade": 8,
       "team": "Whitley County",
-      "record": "4-7",
+      "record": "4-9",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 4,
-    "losses": 7,
-    "win_pct": 0.364
+    "losses": 9,
+    "win_pct": 0.308
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

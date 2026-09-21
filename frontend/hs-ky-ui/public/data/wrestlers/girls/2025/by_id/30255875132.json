@@ -5,6 +5,11 @@
   "team_slug": "lafayette",
   "team_rank": null,
   "weight_class": 145,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -24,7 +29,7 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -35,6 +40,22 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2024-12-20",
+      "opponent_id": "30115295132",
+      "opponent_career_id": "career_000040",
+      "opponent_name": "Kathryn Floyd",
+      "opponent_team": "Bardstown",
+      "opponent_team_rank": null,
+      "opponent_weight": 145,
+      "opponent_rank": null,
+      "weight_class": "145",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:31",
+      "event": "Lady General"
+    },
     {
       "date": "2024-12-20",
       "opponent_id": "31310402132",
@@ -53,18 +74,18 @@
     },
     {
       "date": "2024-12-20",
-      "opponent_id": "30115295132",
-      "opponent_career_id": "career_000040",
-      "opponent_name": "Kathryn Floyd",
-      "opponent_team": "Bardstown",
+      "opponent_id": "30370633132",
+      "opponent_career_id": "career_000942",
+      "opponent_name": "Layla Adams",
+      "opponent_team": "Madison Southern",
       "opponent_team_rank": null,
       "opponent_weight": 145,
       "opponent_rank": null,
       "weight_class": "145",
-      "result": "L",
+      "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:31",
+      "duration": "1:35",
       "event": "Lady General"
     },
     {
@@ -122,5 +143,5 @@
     "losses": 3,
     "win_pct": 0.4
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

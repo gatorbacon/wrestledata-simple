@@ -5,6 +5,11 @@
   "team_slug": "henderson_county",
   "team_rank": null,
   "weight_class": 152,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.88,
-    "bonus_rate": 0.88,
+    "pin_rate": 0.917,
+    "bonus_rate": 0.917,
     "majors": 0,
     "techs": 0,
     "pins": 22
@@ -225,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Henderson County"
+      "event": "vs. Apollo"
     },
     {
       "date": "2024-01-03",
@@ -241,7 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Henderson County"
+      "event": "vs. Fort Campbell"
     },
     {
       "date": "2023-12-30",
@@ -437,6 +442,22 @@
     },
     {
       "date": "2023-12-09",
+      "opponent_id": "25189149132",
+      "opponent_career_id": "career_001191",
+      "opponent_name": "Anna Ruiz",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "3-0",
+      "duration": "7:00",
+      "event": "Derby City Girls Tournament"
+    },
+    {
+      "date": "2023-12-09",
       "opponent_id": "OUTSTATE_d8073fdee8e9",
       "opponent_career_id": null,
       "opponent_name": "Carla Diaz",
@@ -468,22 +489,6 @@
       "event": "Derby City Girls Tournament"
     },
     {
-      "date": "2023-12-09",
-      "opponent_id": "25189149132",
-      "opponent_career_id": "career_001191",
-      "opponent_name": "Anna Ruiz",
-      "opponent_team": "Great Crossing",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "DEC",
-      "score": "3-0",
-      "duration": "7:00",
-      "event": "Derby City Girls Tournament"
-    },
-    {
       "date": "2023-12-02",
       "opponent_id": "25188036132",
       "opponent_career_id": "career_001327",
@@ -501,22 +506,6 @@
     },
     {
       "date": "2023-12-02",
-      "opponent_id": "25261379132",
-      "opponent_career_id": "career_000907",
-      "opponent_name": "Gabriela Palomo",
-      "opponent_team": "North Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 152,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:15",
-      "event": "Lady Indians Tomahawk Classic"
-    },
-    {
-      "date": "2023-12-02",
       "opponent_id": "25189149132",
       "opponent_career_id": "career_001191",
       "opponent_name": "Anna Ruiz",
@@ -529,6 +518,22 @@
       "method": "MD",
       "score": "9-0",
       "duration": "7:00",
+      "event": "Lady Indians Tomahawk Classic"
+    },
+    {
+      "date": "2023-12-02",
+      "opponent_id": "25261379132",
+      "opponent_career_id": "career_000907",
+      "opponent_name": "Gabriela Palomo",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 152,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:15",
       "event": "Lady Indians Tomahawk Classic"
     },
     {
@@ -586,5 +591,5 @@
     "losses": 5,
     "win_pct": 0.848
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

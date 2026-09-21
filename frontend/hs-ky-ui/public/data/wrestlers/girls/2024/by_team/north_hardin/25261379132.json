@@ -5,6 +5,11 @@
   "team_slug": "north_hardin",
   "team_rank": null,
   "weight_class": 152,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.926,
-    "bonus_rate": 0.963,
+    "pin_rate": 0.963,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 25
+    "pins": 26
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -113,7 +118,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:20",
-      "event": "vs. North Hardin"
+      "event": "vs. Central"
+    },
+    {
+      "date": "2024-01-24",
+      "opponent_id": "25185170132",
+      "opponent_career_id": "career_000405",
+      "opponent_name": "Kaulana kuiee",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:21",
+      "event": "vs. John Hardin"
     },
     {
       "date": "2024-01-24",
@@ -130,22 +151,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Jasper"
-    },
-    {
-      "date": "2024-01-24",
-      "opponent_id": "25185170132",
-      "opponent_career_id": "career_000405",
-      "opponent_name": "Kaulana kuiee",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:21",
-      "event": "vs. North Hardin"
     },
     {
       "date": "2024-01-13",
@@ -388,6 +393,22 @@
       "event": "Ft. Campbell Girls Tournament, Ky"
     },
     {
+      "date": "2023-12-28",
+      "opponent_id": "25185073132",
+      "opponent_career_id": "career_001363",
+      "opponent_name": "Kelsey Kirkpatrick",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:41",
+      "event": "Ft. Campbell Girls Tournament, Ky"
+    },
+    {
       "date": "2023-12-20",
       "opponent_id": "25186488132",
       "opponent_career_id": "career_001195",
@@ -481,7 +502,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. North Hardin"
+      "event": "vs. John Hardin"
     },
     {
       "date": "2023-12-02",
@@ -561,7 +582,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. North Hardin"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2023-11-25",
@@ -577,7 +598,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "CENTRE PARKWAY CLASSIC"
+      "event": "Centre Pkwy Classic"
     },
     {
       "date": "2023-11-25",
@@ -659,5 +680,5 @@
     "losses": 12,
     "win_pct": 0.846
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

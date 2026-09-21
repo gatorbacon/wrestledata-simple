@@ -5,6 +5,11 @@
   "team_slug": "butler",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.625,
-    "bonus_rate": 0.688,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.733,
     "majors": 1,
     "techs": 0,
     "pins": 10
@@ -65,6 +70,22 @@
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
+      "event": "KHSAA Girls State Championship"
+    },
+    {
+      "date": "2025-02-27",
+      "opponent_id": "30203458132",
+      "opponent_career_id": "career_000425",
+      "opponent_name": "Trinity Matthews",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "TB-1",
+      "score": "4-1",
+      "duration": "10:00",
       "event": "KHSAA Girls State Championship"
     },
     {
@@ -245,22 +266,6 @@
     },
     {
       "date": "2024-12-28",
-      "opponent_id": "30382214132",
-      "opponent_career_id": "career_000922",
-      "opponent_name": "Natalie Saint Louis",
-      "opponent_team": "Valley",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:49",
-      "event": "Gladiator"
-    },
-    {
-      "date": "2024-12-28",
       "opponent_id": "30099786132",
       "opponent_career_id": null,
       "opponent_name": "Alex Gill",
@@ -305,6 +310,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:47",
+      "event": "Gladiator"
+    },
+    {
+      "date": "2024-12-28",
+      "opponent_id": "30382214132",
+      "opponent_career_id": "career_000922",
+      "opponent_name": "Natalie Saint Louis",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:49",
       "event": "Gladiator"
     },
     {
@@ -435,5 +456,5 @@
     "losses": 13,
     "win_pct": 0.69
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

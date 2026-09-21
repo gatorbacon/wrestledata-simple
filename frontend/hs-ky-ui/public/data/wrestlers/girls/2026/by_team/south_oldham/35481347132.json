@@ -5,13 +5,18 @@
   "team_slug": "south_oldham",
   "team_rank": null,
   "weight_class": 100,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 11,
   "record": {
     "overall": "14-8",
-    "vs_ranked": "13-8",
+    "vs_ranked": "14-8",
     "vs_top10": "0-6",
-    "vs_top25": "6-6"
+    "vs_top25": "7-6"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,14 +25,14 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.923,
+    "pin_rate": 0.929,
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 12
+    "pins": 13
   },
   "opponent_breakdown": {
-    "ranked_wins": 13,
+    "ranked_wins": 14,
     "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 6,
@@ -313,6 +318,23 @@
     },
     {
       "date": "2025-12-13",
+      "opponent_id": "35600313132",
+      "opponent_career_id": "career_000498",
+      "opponent_name": "mazy coffey",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 46,
+      "opponent_weight": 107,
+      "opponent_rank": 24,
+      "weight_class": "107",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Lady Indians Tomahawk Classic",
+      "mv_impact": 5.31
+    },
+    {
+      "date": "2025-12-13",
       "opponent_id": "35333641132",
       "opponent_career_id": "career_000678",
       "opponent_name": "Nevah Cruthcher",
@@ -358,9 +380,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "Tommy Castle Classic",
-      "mv_impact": 6.63
+      "duration": "2:01",
+      "event": "Tommy Castle Classic"
     },
     {
       "date": "2025-11-29",
@@ -419,7 +440,7 @@
       "season": 2025,
       "grade": 10,
       "team": "South Oldham",
-      "record": "16-17",
+      "record": "16-15",
       "regional_place": 4,
       "state_place": null
     },
@@ -434,8 +455,8 @@
   ],
   "career_record": {
     "wins": 45,
-    "losses": 38,
-    "win_pct": 0.542
+    "losses": 36,
+    "win_pct": 0.556
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

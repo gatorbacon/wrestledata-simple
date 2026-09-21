@@ -5,10 +5,15 @@
   "team_slug": "scott_county",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
-    "overall": "25-18",
+    "overall": "24-19",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.812,
-    "bonus_rate": 0.875,
+    "pin_rate": 0.875,
+    "bonus_rate": 0.938,
     "majors": 0,
     "techs": 1,
-    "pins": 13
+    "pins": 14
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -81,6 +86,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:35",
+      "event": "KHSAA Girls Region 3"
+    },
+    {
+      "date": "2025-02-15",
+      "opponent_id": "30115394132",
+      "opponent_career_id": "career_000074",
+      "opponent_name": "Elexis Herrington",
+      "opponent_team": "Bourbon County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:39",
       "event": "KHSAA Girls Region 3"
     },
     {
@@ -165,22 +186,6 @@
     },
     {
       "date": "2025-02-01",
-      "opponent_id": "OUTSTATE_3a96223443a0",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": null,
-      "opponent_weight": 107,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. George Rogers Clark"
-    },
-    {
-      "date": "2025-02-01",
       "opponent_id": "OUTSTATE_3b9151ea3973",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -226,6 +231,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Simon Kenton"
+    },
+    {
+      "date": "2025-02-01",
+      "opponent_id": "OUTSTATE_3a96223443a0",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": null,
+      "opponent_weight": 107,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. George Rogers Clark"
     },
     {
       "date": "2025-02-01",
@@ -385,7 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Scott County"
+      "event": "vs. Bourbon County"
     },
     {
       "date": "2025-01-04",
@@ -401,7 +422,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:55",
-      "event": "2025 Warhawk Classic"
+      "event": "Warhawk Classic"
     },
     {
       "date": "2025-01-04",
@@ -417,7 +438,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:17",
-      "event": "2025 Warhawk Classic"
+      "event": "Warhawk Classic"
     },
     {
       "date": "2024-12-31",
@@ -430,22 +451,6 @@
       "opponent_rank": null,
       "weight_class": "126",
       "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "The Lioness"
-    },
-    {
-      "date": "2024-12-31",
-      "opponent_id": "30115100132",
-      "opponent_career_id": "career_000930",
-      "opponent_name": "Lacey Gilbert",
-      "opponent_team": "Woodford County",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -481,6 +486,22 @@
       "method": "MFF",
       "score": null,
       "duration": "7:00",
+      "event": "The Lioness"
+    },
+    {
+      "date": "2024-12-31",
+      "opponent_id": "30115100132",
+      "opponent_career_id": "career_000930",
+      "opponent_name": "Lacey Gilbert",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
       "event": "The Lioness"
     },
     {
@@ -721,7 +742,7 @@
       "season": 2026,
       "grade": 9,
       "team": "Scott County",
-      "record": "8-4",
+      "record": "5-4",
       "regional_place": null,
       "state_place": null
     },
@@ -729,15 +750,15 @@
       "season": 2025,
       "grade": 8,
       "team": "Scott County",
-      "record": "25-18",
+      "record": "24-19",
       "regional_place": 3,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 33,
-    "losses": 22,
-    "win_pct": 0.6
+    "wins": 29,
+    "losses": 23,
+    "win_pct": 0.558
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

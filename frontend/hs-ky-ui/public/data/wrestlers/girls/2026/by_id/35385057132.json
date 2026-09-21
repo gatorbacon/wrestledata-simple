@@ -5,13 +5,18 @@
   "team_slug": "male",
   "team_rank": 44,
   "weight_class": 100,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 13,
   "record": {
-    "overall": "10-12",
-    "vs_ranked": "9-9",
-    "vs_top10": "0-8",
-    "vs_top25": "3-8"
+    "overall": "10-10",
+    "vs_ranked": "10-10",
+    "vs_top10": "0-9",
+    "vs_top25": "3-9"
   },
   "metrics": {
     "pf7": 0.0,
@@ -24,13 +29,13 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 9
+    "pins": 10
   },
   "opponent_breakdown": {
-    "ranked_wins": 9,
-    "ranked_losses": 9,
+    "ranked_wins": 10,
+    "ranked_losses": 10,
     "top10_wins": 0,
-    "top10_losses": 8,
+    "top10_losses": 9,
     "win_over_highest_rank": {
       "opponent_id": "35435106132",
       "opponent_rank": 15,
@@ -255,6 +260,23 @@
       "event": "Queen of the City Wrestling"
     },
     {
+      "date": "2026-01-10",
+      "opponent_id": "35333582132",
+      "opponent_career_id": "career_000545",
+      "opponent_name": "Rista Rai",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 49,
+      "opponent_weight": 100,
+      "opponent_rank": 57,
+      "weight_class": "100",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:29",
+      "event": "Queen of the City Wrestling",
+      "mv_impact": 0.09
+    },
+    {
       "date": "2025-12-20",
       "opponent_id": "35333587132",
       "opponent_career_id": "career_000542",
@@ -287,6 +309,23 @@
       "duration": "0:40",
       "event": "Jeffersonville Classic",
       "mv_impact": 3.29
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35333368132",
+      "opponent_career_id": "career_000036",
+      "opponent_name": "Kaylee Mckown",
+      "opponent_team": "Bardstown",
+      "opponent_team_rank": 30,
+      "opponent_weight": 100,
+      "opponent_rank": 7,
+      "weight_class": "100",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Derby City Girls",
+      "mv_impact": -3.7
     },
     {
       "date": "2025-12-13",
@@ -353,7 +392,7 @@
       "season": 2026,
       "grade": 10,
       "team": "Male",
-      "record": "10-12",
+      "record": "10-10",
       "regional_place": 2,
       "state_place": null
     },
@@ -368,8 +407,8 @@
   ],
   "career_record": {
     "wins": 13,
-    "losses": 16,
-    "win_pct": 0.448
+    "losses": 14,
+    "win_pct": 0.481
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

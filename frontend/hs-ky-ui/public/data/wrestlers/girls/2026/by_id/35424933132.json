@@ -5,6 +5,11 @@
   "team_slug": "greenwood",
   "team_rank": null,
   "weight_class": 145,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 33,
   "record": {
@@ -95,6 +100,22 @@
     },
     {
       "date": "2026-01-31",
+      "opponent_id": "35345849132",
+      "opponent_career_id": "career_000131",
+      "opponent_name": "Keirli Herran",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": 33,
+      "opponent_weight": 145,
+      "opponent_rank": 8,
+      "weight_class": "145",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:48",
+      "event": "vs. Caldwell County"
+    },
+    {
+      "date": "2026-01-31",
       "opponent_id": "35635778132",
       "opponent_career_id": "career_000715",
       "opponent_name": "Cristina Miralda",
@@ -108,22 +129,6 @@
       "score": null,
       "duration": "0:56",
       "event": "vs. South Warren"
-    },
-    {
-      "date": "2026-01-31",
-      "opponent_id": "35345849132",
-      "opponent_career_id": "career_000131",
-      "opponent_name": "Keirli Herran",
-      "opponent_team": "Caldwell County",
-      "opponent_team_rank": 33,
-      "opponent_weight": 145,
-      "opponent_rank": 8,
-      "weight_class": "145",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:48",
-      "event": "vs. Greenwood"
     },
     {
       "date": "2026-01-31",
@@ -319,22 +324,6 @@
     },
     {
       "date": "2025-12-30",
-      "opponent_id": "35333394132",
-      "opponent_career_id": "career_000556",
-      "opponent_name": "Amirah Macklin",
-      "opponent_team": "Moore",
-      "opponent_team_rank": 49,
-      "opponent_weight": 138,
-      "opponent_rank": 8,
-      "weight_class": "138",
-      "result": "L",
-      "method": "TF",
-      "score": "18-1",
-      "duration": "3:11",
-      "event": "Fern Creek Gladiator Ladies"
-    },
-    {
-      "date": "2025-12-30",
       "opponent_id": "35902198132",
       "opponent_career_id": "career_000804",
       "opponent_name": "Kristiana Padilla",
@@ -347,6 +336,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:25",
+      "event": "Fern Creek Gladiator Ladies"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35333394132",
+      "opponent_career_id": "career_000556",
+      "opponent_name": "Amirah Macklin",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 49,
+      "opponent_weight": 138,
+      "opponent_rank": 8,
+      "weight_class": "138",
+      "result": "L",
+      "method": "TF",
+      "score": "18-1",
+      "duration": "3:11",
       "event": "Fern Creek Gladiator Ladies"
     },
     {
@@ -443,7 +448,7 @@
       "method": "MD",
       "score": "11-3",
       "duration": "7:00",
-      "event": "vs. Greenwood"
+      "event": "vs. Adair County"
     },
     {
       "date": "2025-12-06",
@@ -511,22 +516,6 @@
     },
     {
       "date": "2025-11-26",
-      "opponent_id": "OUTSTATE_97c46dbda975",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Rossview High School Girls",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "145",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Rossview High School Girls"
-    },
-    {
-      "date": "2025-11-26",
       "opponent_id": "35345846132",
       "opponent_career_id": "career_000134",
       "opponent_name": "Anna Urbanowski",
@@ -539,7 +528,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:22",
-      "event": "vs. Greenwood"
+      "event": "vs. Caldwell County"
     },
     {
       "date": "2025-11-26",
@@ -556,6 +545,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Ohio County"
+    },
+    {
+      "date": "2025-11-26",
+      "opponent_id": "OUTSTATE_97c46dbda975",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Rossview High School Girls",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "145",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Rossview High School Girls"
     },
     {
       "date": "2025-11-26",
@@ -612,5 +617,5 @@
     "losses": 15,
     "win_pct": 0.559
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,13 +5,18 @@
   "team_slug": "danville",
   "team_rank": 35,
   "weight_class": 126,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 16,
   "record": {
-    "overall": "24-17",
-    "vs_ranked": "20-15",
+    "overall": "26-18",
+    "vs_ranked": "21-15",
     "vs_top10": "0-8",
-    "vs_top25": "2-13"
+    "vs_top25": "3-13"
   },
   "metrics": {
     "pf7": 0.0,
@@ -24,10 +29,10 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 22
+    "pins": 23
   },
   "opponent_breakdown": {
-    "ranked_wins": 20,
+    "ranked_wins": 21,
     "ranked_losses": 15,
     "top10_wins": 0,
     "top10_losses": 8,
@@ -219,7 +224,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:02",
-      "event": "vs. Danville"
+      "event": "vs. Bardstown"
     },
     {
       "date": "2026-02-04",
@@ -239,22 +244,6 @@
     },
     {
       "date": "2026-01-21",
-      "opponent_id": "OUTSTATE_5855457a7894",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Bullitt Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Bullitt Central"
-    },
-    {
-      "date": "2026-01-21",
       "opponent_id": "35333681132",
       "opponent_career_id": "career_000819",
       "opponent_name": "Desirae Carpenter",
@@ -268,6 +257,22 @@
       "score": null,
       "duration": "1:45",
       "event": "vs. Western"
+    },
+    {
+      "date": "2026-01-21",
+      "opponent_id": "OUTSTATE_5855457a7894",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Bullitt Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Bullitt Central"
     },
     {
       "date": "2026-01-17",
@@ -351,38 +356,6 @@
     },
     {
       "date": "2026-01-10",
-      "opponent_id": "35565883132",
-      "opponent_career_id": "career_000561",
-      "opponent_name": "Trinity Mattingly",
-      "opponent_team": "Nelson County",
-      "opponent_team_rank": 8,
-      "opponent_weight": 120,
-      "opponent_rank": 30,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:12",
-      "event": "Lady Bruin Invitational 2026"
-    },
-    {
-      "date": "2026-01-10",
-      "opponent_id": "35495574132",
-      "opponent_career_id": "career_000732",
-      "opponent_name": "Grace Shoopman",
-      "opponent_team": "Southwestern",
-      "opponent_team_rank": 56,
-      "opponent_weight": 120,
-      "opponent_rank": 21,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:53",
-      "event": "Lady Bruin Invitational 2026"
-    },
-    {
-      "date": "2026-01-10",
       "opponent_id": "35672661132",
       "opponent_career_id": "career_000116",
       "opponent_name": "Embree Root",
@@ -395,6 +368,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:27",
+      "event": "Lady Bruin Invitational 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35565883132",
+      "opponent_career_id": "career_000561",
+      "opponent_name": "Trinity Mattingly",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 8,
+      "opponent_weight": 120,
+      "opponent_rank": 30,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:12",
       "event": "Lady Bruin Invitational 2026"
     },
     {
@@ -427,6 +416,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:55",
+      "event": "Lady Bruin Invitational 2026"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35495574132",
+      "opponent_career_id": "career_000732",
+      "opponent_name": "Grace Shoopman",
+      "opponent_team": "Southwestern",
+      "opponent_team_rank": 56,
+      "opponent_weight": 120,
+      "opponent_rank": 21,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:53",
       "event": "Lady Bruin Invitational 2026"
     },
     {
@@ -543,22 +548,6 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35333405132",
-      "opponent_career_id": "career_000279",
-      "opponent_name": "Bailey Fletcher",
-      "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 38,
-      "opponent_weight": 120,
-      "opponent_rank": 7,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Lady Indians Tomahawk Classic"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35369710132",
       "opponent_career_id": "career_000461",
       "opponent_name": "Ella Presnell",
@@ -584,6 +573,22 @@
       "opponent_rank": 27,
       "weight_class": "126",
       "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Lady Indians Tomahawk Classic"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35333405132",
+      "opponent_career_id": "career_000279",
+      "opponent_name": "Bailey Fletcher",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": 38,
+      "opponent_weight": 120,
+      "opponent_rank": 7,
+      "weight_class": "126",
+      "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -639,6 +644,22 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "35333550132",
+      "opponent_career_id": "career_000849",
+      "opponent_name": "London Mosley",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": 21,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:00",
+      "event": "2025 Anchor Down Showdown (Ladies)"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35333414132",
       "opponent_career_id": "career_000622",
       "opponent_name": "Katie Smith",
@@ -687,22 +708,6 @@
     },
     {
       "date": "2025-11-29",
-      "opponent_id": "35333658132",
-      "opponent_career_id": "career_000372",
-      "opponent_name": "Jonnierra Hill",
-      "opponent_team": "Holmes",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": 46,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:37",
-      "event": "Tommy Castle Classic"
-    },
-    {
-      "date": "2025-11-29",
       "opponent_id": "35333390132",
       "opponent_career_id": "career_000680",
       "opponent_name": "Jennifer Vargus",
@@ -715,6 +720,22 @@
       "method": "FALL",
       "score": null,
       "duration": "2:04",
+      "event": "Tommy Castle Classic"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35333658132",
+      "opponent_career_id": "career_000372",
+      "opponent_name": "Jonnierra Hill",
+      "opponent_team": "Holmes",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": 46,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:37",
       "event": "Tommy Castle Classic"
     },
     {
@@ -747,7 +768,7 @@
       "season": 2026,
       "grade": 10,
       "team": "Danville",
-      "record": "24-17",
+      "record": "26-18",
       "regional_place": null,
       "state_place": null
     },
@@ -761,9 +782,9 @@
     }
   ],
   "career_record": {
-    "wins": 27,
-    "losses": 33,
-    "win_pct": 0.45
+    "wins": 29,
+    "losses": 34,
+    "win_pct": 0.46
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

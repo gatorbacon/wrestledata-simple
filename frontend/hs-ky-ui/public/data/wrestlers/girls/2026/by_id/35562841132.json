@@ -5,11 +5,16 @@
   "team_slug": "seneca",
   "team_rank": 53,
   "weight_class": 138,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 7,
   "record": {
-    "overall": "17-3",
-    "vs_ranked": "14-4",
+    "overall": "17-4",
+    "vs_ranked": "15-4",
     "vs_top10": "4-3",
     "vs_top25": "9-3"
   },
@@ -20,14 +25,14 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.75,
-    "bonus_rate": 0.812,
+    "pin_rate": 0.812,
+    "bonus_rate": 0.875,
     "majors": 1,
     "techs": 0,
-    "pins": 12
+    "pins": 13
   },
   "opponent_breakdown": {
-    "ranked_wins": 14,
+    "ranked_wins": 15,
     "ranked_losses": 4,
     "top10_wins": 4,
     "top10_losses": 3,
@@ -174,6 +179,22 @@
       "event": "KHSAA Girls Region 2"
     },
     {
+      "date": "2026-02-14",
+      "opponent_id": "35333400132",
+      "opponent_career_id": "career_000748",
+      "opponent_name": "Jenna Riggs",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": 26,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:30",
+      "event": "KHSAA Girls Region 2"
+    },
+    {
       "date": "2026-01-17",
       "opponent_id": "35404899132",
       "opponent_career_id": "career_000425",
@@ -235,7 +256,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:18",
-      "event": "vs. Seneca"
+      "event": "vs. Western"
     },
     {
       "date": "2025-12-20",
@@ -305,8 +326,8 @@
       "date": "2025-12-13",
       "opponent_id": "OUTSTATE_0ecbe6f17fc8",
       "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Olivia Gardner",
+      "opponent_team": "Evansville F.J. Reitz",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -321,8 +342,8 @@
       "date": "2025-12-13",
       "opponent_id": "OUTSTATE_439221cb5ed8",
       "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Chasity Zeller",
+      "opponent_team": "Evansville F.J. Reitz",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -363,7 +384,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Seneca"
+      "event": "vs. Male"
     }
   ],
   "career": {
@@ -380,7 +401,7 @@
       "season": 2026,
       "grade": 12,
       "team": "Seneca",
-      "record": "17-3",
+      "record": "17-4",
       "regional_place": 3,
       "state_place": 3
     },
@@ -396,7 +417,7 @@
       "season": 2024,
       "grade": 10,
       "team": "Seneca",
-      "record": "8-8",
+      "record": "8-7",
       "regional_place": 4,
       "state_place": null
     }
@@ -406,5 +427,5 @@
     "losses": 19,
     "win_pct": 0.667
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

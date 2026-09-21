@@ -5,6 +5,11 @@
   "team_slug": "newport",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.667,
+    "pin_rate": 0.714,
+    "bonus_rate": 0.714,
     "majors": 0,
     "techs": 0,
-    "pins": 4
+    "pins": 5
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -35,22 +40,6 @@
     "worst_loss": null
   },
   "match_list": [
-    {
-      "date": "2024-12-28",
-      "opponent_id": "30223052132",
-      "opponent_career_id": "career_000865",
-      "opponent_name": "Rose Thomas",
-      "opponent_team": "Conner",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "MFF",
-      "score": null,
-      "duration": "7:00",
-      "event": "NKAC"
-    },
     {
       "date": "2024-12-28",
       "opponent_id": "30115359132",
@@ -64,6 +53,22 @@
       "result": "L",
       "method": "DEC",
       "score": "16-15",
+      "duration": "7:00",
+      "event": "NKAC"
+    },
+    {
+      "date": "2024-12-28",
+      "opponent_id": "30223052132",
+      "opponent_career_id": "career_000865",
+      "opponent_name": "Rose Thomas",
+      "opponent_team": "Conner",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "MFF",
+      "score": null,
       "duration": "7:00",
       "event": "NKAC"
     },
@@ -117,6 +122,22 @@
     },
     {
       "date": "2024-12-14",
+      "opponent_id": "30816952132",
+      "opponent_career_id": "career_000932",
+      "opponent_name": "Kamilah Nana",
+      "opponent_team": "Butler",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": "10-3",
+      "duration": "7:00",
+      "event": "2024 Derby City Girls Tournament"
+    },
+    {
+      "date": "2024-12-14",
       "opponent_id": "30159240132",
       "opponent_career_id": "career_000867",
       "opponent_name": "Angie Cartagena",
@@ -145,22 +166,6 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "2024 Derby City Girls Tournament"
-    },
-    {
-      "date": "2024-12-14",
-      "opponent_id": "30816952132",
-      "opponent_career_id": "career_000932",
-      "opponent_name": "Kamilah Nana",
-      "opponent_team": "Butler",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "DEC",
-      "score": "10-3",
-      "duration": "7:00",
       "event": "2024 Derby City Girls Tournament"
     },
     {
@@ -272,7 +277,39 @@
       "result": "L",
       "method": "FALL",
       "score": null,
+      "duration": "3:24",
+      "event": "Tommy Castle Classic Ladies"
+    },
+    {
+      "date": "2024-11-30",
+      "opponent_id": "30115259132",
+      "opponent_career_id": "career_000334",
+      "opponent_name": "Jenny White",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": null,
+      "opponent_weight": 145,
+      "opponent_rank": null,
+      "weight_class": "145",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
       "duration": "3:58",
+      "event": "Tommy Castle Classic Ladies"
+    },
+    {
+      "date": "2024-11-30",
+      "opponent_id": "30512872132",
+      "opponent_career_id": "career_000906",
+      "opponent_name": "Eleyna Wood",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 145,
+      "opponent_rank": null,
+      "weight_class": "145",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:11",
       "event": "Tommy Castle Classic Ladies"
     },
     {
@@ -329,15 +366,15 @@
       "season": 2024,
       "grade": 10,
       "team": "Newport",
-      "record": "20-10",
+      "record": "18-9",
       "regional_place": 4,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 28,
-    "losses": 21,
-    "win_pct": 0.571
+    "wins": 26,
+    "losses": 20,
+    "win_pct": 0.565
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

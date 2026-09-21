@@ -5,13 +5,18 @@
   "team_slug": "cooper",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 1,
   "record": {
-    "overall": "19-0",
-    "vs_ranked": "15-0",
-    "vs_top10": "9-0",
-    "vs_top25": "11-0"
+    "overall": "20-0",
+    "vs_ranked": "17-0",
+    "vs_top10": "10-0",
+    "vs_top25": "12-0"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,16 +25,16 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.611,
+    "pin_rate": 0.6,
     "bonus_rate": 1.0,
     "majors": 1,
-    "techs": 6,
-    "pins": 11
+    "techs": 7,
+    "pins": 12
   },
   "opponent_breakdown": {
-    "ranked_wins": 15,
+    "ranked_wins": 17,
     "ranked_losses": 0,
-    "top10_wins": 9,
+    "top10_wins": 10,
     "top10_losses": 0,
     "win_over_highest_rank": {
       "opponent_id": "35672613132",
@@ -185,6 +190,22 @@
       "event": "NKAC"
     },
     {
+      "date": "2025-12-27",
+      "opponent_id": "35663925132",
+      "opponent_career_id": "career_000673",
+      "opponent_name": "Preslee Steiber",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": 6,
+      "weight_class": "138",
+      "result": "W",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "4:06",
+      "event": "NKAC"
+    },
+    {
       "date": "2025-12-19",
       "opponent_id": "35672613132",
       "opponent_career_id": "career_000118",
@@ -202,13 +223,13 @@
     },
     {
       "date": "2025-12-19",
-      "opponent_id": "35333531132",
-      "opponent_career_id": "career_000451",
-      "opponent_name": "NARAE COMPTON",
-      "opponent_team": "Madison Central",
-      "opponent_team_rank": 22,
-      "opponent_weight": 132,
-      "opponent_rank": 4,
+      "opponent_id": "35333566132",
+      "opponent_career_id": "career_000286",
+      "opponent_name": "Jolee Kayse",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": 38,
+      "opponent_weight": 138,
+      "opponent_rank": 40,
       "weight_class": "138",
       "result": "W",
       "method": "TF",
@@ -218,13 +239,13 @@
     },
     {
       "date": "2025-12-19",
-      "opponent_id": "35333566132",
-      "opponent_career_id": "career_000286",
-      "opponent_name": "Jolee Kayse",
-      "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 38,
-      "opponent_weight": 138,
-      "opponent_rank": 40,
+      "opponent_id": "35333531132",
+      "opponent_career_id": "career_000451",
+      "opponent_name": "NARAE COMPTON",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": 22,
+      "opponent_weight": 132,
+      "opponent_rank": 4,
       "weight_class": "138",
       "result": "W",
       "method": "TF",
@@ -298,6 +319,22 @@
     },
     {
       "date": "2025-11-29",
+      "opponent_id": "35333400132",
+      "opponent_career_id": "career_000748",
+      "opponent_name": "Jenna Riggs",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": 26,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:07",
+      "event": "Tommy Castle Classic"
+    },
+    {
+      "date": "2025-11-29",
       "opponent_id": "OUTSTATE_9d1e5a3e1e00",
       "opponent_career_id": null,
       "opponent_name": "Madison Morales",
@@ -341,15 +378,15 @@
       "season": 2026,
       "grade": 9,
       "team": "Cooper",
-      "record": "19-0",
+      "record": "20-0",
       "regional_place": 1,
       "state_place": 1
     }
   ],
   "career_record": {
-    "wins": 19,
+    "wins": 20,
     "losses": 0,
     "win_pct": 1.0
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

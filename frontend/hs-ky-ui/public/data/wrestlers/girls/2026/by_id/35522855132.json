@@ -5,11 +5,16 @@
   "team_slug": "fort_campbell",
   "team_rank": 37,
   "weight_class": 100,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 31,
   "record": {
-    "overall": "16-21",
-    "vs_ranked": "5-13",
+    "overall": "15-22",
+    "vs_ranked": "5-14",
     "vs_top10": "0-4",
     "vs_top25": "0-7"
   },
@@ -28,7 +33,7 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 5,
-    "ranked_losses": 13,
+    "ranked_losses": 14,
     "top10_wins": 0,
     "top10_losses": 4,
     "win_over_highest_rank": {
@@ -175,22 +180,6 @@
     },
     {
       "date": "2026-01-19",
-      "opponent_id": "OUTSTATE_c1aade70f591",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Creek Wood High School Girls",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "107",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Creek Wood High School Girls"
-    },
-    {
-      "date": "2026-01-19",
       "opponent_id": "35111677132",
       "opponent_career_id": null,
       "opponent_name": "Addyson Morris",
@@ -204,6 +193,22 @@
       "score": null,
       "duration": "3:37",
       "event": "vs. Northwest High School Girls"
+    },
+    {
+      "date": "2026-01-19",
+      "opponent_id": "OUTSTATE_c1aade70f591",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Creek Wood High School Girls",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "107",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Creek Wood High School Girls"
     },
     {
       "date": "2026-01-17",
@@ -529,9 +534,9 @@
       "date": "2025-12-06",
       "opponent_id": "OUTSTATE_43d1f3f961d7",
       "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
+      "opponent_name": "Harper Swanson",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 5,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "G 100",
@@ -551,6 +556,22 @@
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "G 100",
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Coyote Classic"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35333557132",
+      "opponent_career_id": "career_000391",
+      "opponent_name": "Harper Swanson",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 5,
+      "opponent_weight": 100,
+      "opponent_rank": 33,
+      "weight_class": "100",
       "result": "L",
       "method": "MFF",
       "score": null,
@@ -634,15 +655,15 @@
       "season": 2026,
       "grade": 11,
       "team": "Fort Campbell",
-      "record": "16-21",
+      "record": "15-22",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 16,
-    "losses": 21,
-    "win_pct": 0.432
+    "wins": 15,
+    "losses": 22,
+    "win_pct": 0.405
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

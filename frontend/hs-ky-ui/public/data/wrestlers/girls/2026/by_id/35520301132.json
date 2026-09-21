@@ -5,10 +5,15 @@
   "team_slug": "fort_campbell",
   "team_rank": 37,
   "weight_class": 138,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 33,
   "record": {
-    "overall": "27-17",
+    "overall": "26-17",
     "vs_ranked": "11-6",
     "vs_top10": "0-2",
     "vs_top25": "1-5"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.947,
-    "bonus_rate": 0.947,
+    "pin_rate": 0.95,
+    "bonus_rate": 0.95,
     "majors": 0,
     "techs": 0,
-    "pins": 18
+    "pins": 19
   },
   "opponent_breakdown": {
     "ranked_wins": 11,
@@ -155,7 +160,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Fort Campbell"
+      "event": "vs. Apollo"
     },
     {
       "date": "2026-01-22",
@@ -172,6 +177,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Henderson County"
+    },
+    {
+      "date": "2026-01-19",
+      "opponent_id": "OUTSTATE_9ec5b962acd2",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Clarksville Academy Girls",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Clarksville Academy Girls"
     },
     {
       "date": "2026-01-19",
@@ -207,22 +228,6 @@
     },
     {
       "date": "2026-01-19",
-      "opponent_id": "OUTSTATE_9ec5b962acd2",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Clarksville Academy Girls",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Clarksville Academy Girls"
-    },
-    {
-      "date": "2026-01-19",
       "opponent_id": "OUTSTATE_c1aade70f591",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -255,6 +260,22 @@
     },
     {
       "date": "2026-01-17",
+      "opponent_id": "35380406132",
+      "opponent_career_id": null,
+      "opponent_name": "Makayla Bush",
+      "opponent_team": "Herrin (H.S.)",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "6:00",
+      "event": "Steve Johnston Memorial Girls Inv 26"
+    },
+    {
+      "date": "2026-01-17",
       "opponent_id": "35523179132",
       "opponent_career_id": null,
       "opponent_name": "Addison Arnold",
@@ -268,22 +289,6 @@
       "score": null,
       "duration": "1:42",
       "event": "Steve Johnston Memorial Girls Inv 26"
-    },
-    {
-      "date": "2026-01-15",
-      "opponent_id": "35460901132",
-      "opponent_career_id": "career_000442",
-      "opponent_name": "Adeline Schmucker",
-      "opponent_team": "Logan County",
-      "opponent_team_rank": 42,
-      "opponent_weight": 132,
-      "opponent_rank": 58,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:15",
-      "event": "vs. Logan County"
     },
     {
       "date": "2026-01-15",
@@ -302,20 +307,36 @@
       "event": "vs. Russellville"
     },
     {
+      "date": "2026-01-15",
+      "opponent_id": "35460901132",
+      "opponent_career_id": "career_000442",
+      "opponent_name": "Adeline Schmucker",
+      "opponent_team": "Logan County",
+      "opponent_team_rank": 42,
+      "opponent_weight": 132,
+      "opponent_rank": 58,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:15",
+      "event": "vs. Logan County"
+    },
+    {
       "date": "2026-01-08",
-      "opponent_id": "OUTSTATE_f5088f5a4dcd",
+      "opponent_id": "OUTSTATE_c1aade70f591",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
-      "opponent_team": "Montgomery Central High School Girls",
+      "opponent_team": "Creek Wood High School Girls",
       "opponent_team_rank": null,
-      "opponent_weight": 100,
+      "opponent_weight": null,
       "opponent_rank": null,
-      "weight_class": "132",
+      "weight_class": "138",
       "result": "W",
       "method": "FF",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Montgomery Central High School Girls"
+      "event": "vs. Creek Wood High School Girls"
     },
     {
       "date": "2026-01-08",
@@ -335,19 +356,19 @@
     },
     {
       "date": "2026-01-08",
-      "opponent_id": "OUTSTATE_c1aade70f591",
+      "opponent_id": "OUTSTATE_f5088f5a4dcd",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
-      "opponent_team": "Creek Wood High School Girls",
+      "opponent_team": "Montgomery Central High School Girls",
       "opponent_team_rank": null,
-      "opponent_weight": null,
+      "opponent_weight": 100,
       "opponent_rank": null,
-      "weight_class": "138",
+      "weight_class": "132",
       "result": "W",
       "method": "FF",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Creek Wood High School Girls"
+      "event": "vs. Montgomery Central High School Girls"
     },
     {
       "date": "2026-01-03",
@@ -495,6 +516,22 @@
     },
     {
       "date": "2025-12-12",
+      "opponent_id": "35430090132",
+      "opponent_career_id": null,
+      "opponent_name": "Joplin Harrison",
+      "opponent_team": "Carterville",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:27",
+      "event": "Sister Slam"
+    },
+    {
+      "date": "2025-12-12",
       "opponent_id": "35520844132",
       "opponent_career_id": null,
       "opponent_name": "Roxie Royster",
@@ -523,22 +560,6 @@
       "method": "FALL",
       "score": null,
       "duration": "0:16",
-      "event": "Sister Slam"
-    },
-    {
-      "date": "2025-12-12",
-      "opponent_id": "35430090132",
-      "opponent_career_id": null,
-      "opponent_name": "Joplin Harrison",
-      "opponent_team": "Carterville",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:27",
       "event": "Sister Slam"
     },
     {
@@ -731,7 +752,7 @@
       "season": 2026,
       "grade": 12,
       "team": "Fort Campbell",
-      "record": "27-17",
+      "record": "26-17",
       "regional_place": null,
       "state_place": null
     },
@@ -745,9 +766,9 @@
     }
   ],
   "career_record": {
-    "wins": 32,
+    "wins": 31,
     "losses": 21,
-    "win_pct": 0.604
+    "win_pct": 0.596
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

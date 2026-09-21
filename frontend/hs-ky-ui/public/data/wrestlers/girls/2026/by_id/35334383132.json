@@ -5,10 +5,15 @@
   "team_slug": "fairdale",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 13,
   "record": {
-    "overall": "12-4",
+    "overall": "11-4",
     "vs_ranked": "3-0",
     "vs_top10": "1-0",
     "vs_top25": "2-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.9,
-    "bonus_rate": 0.9,
+    "pin_rate": 0.909,
+    "bonus_rate": 0.909,
     "majors": 0,
     "techs": 0,
-    "pins": 9
+    "pins": 10
   },
   "opponent_breakdown": {
     "ranked_wins": 3,
@@ -138,38 +143,6 @@
     },
     {
       "date": "2025-12-20",
-      "opponent_id": "35409130132",
-      "opponent_career_id": null,
-      "opponent_name": "Grecia Garcia",
-      "opponent_team": "Huntley",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:48",
-      "event": "The F.I.G.H.T."
-    },
-    {
-      "date": "2025-12-20",
-      "opponent_id": "35697191132",
-      "opponent_career_id": null,
-      "opponent_name": "Emma Hodge",
-      "opponent_team": "Fowlerville (Girls)",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:50",
-      "event": "The F.I.G.H.T."
-    },
-    {
-      "date": "2025-12-20",
       "opponent_id": "OUTSTATE_72ceeda7dff9",
       "opponent_career_id": null,
       "opponent_name": "Peyton Nedelsky",
@@ -201,6 +174,38 @@
       "event": "The F.I.G.H.T."
     },
     {
+      "date": "2025-12-20",
+      "opponent_id": "35409130132",
+      "opponent_career_id": null,
+      "opponent_name": "Grecia Garcia",
+      "opponent_team": "Huntley",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:48",
+      "event": "The F.I.G.H.T."
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35697191132",
+      "opponent_career_id": null,
+      "opponent_name": "Emma Hodge",
+      "opponent_team": "Fowlerville (Girls)",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:50",
+      "event": "The F.I.G.H.T."
+    },
+    {
       "date": "2025-11-29",
       "opponent_id": "35333321132",
       "opponent_career_id": "career_000592",
@@ -214,22 +219,6 @@
       "method": "FALL",
       "score": null,
       "duration": "3:24",
-      "event": "Tommy Castle Classic"
-    },
-    {
-      "date": "2025-11-29",
-      "opponent_id": "35436574132",
-      "opponent_career_id": "career_000331",
-      "opponent_name": "Brannan Ransom",
-      "opponent_team": "Harrison County",
-      "opponent_team_rank": 20,
-      "opponent_weight": 132,
-      "opponent_rank": 17,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
       "event": "Tommy Castle Classic"
     },
     {
@@ -263,6 +252,38 @@
       "score": null,
       "duration": "1:02",
       "event": "Tommy Castle Classic"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "145",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:21",
+      "event": "Tommy Castle Classic"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35436574132",
+      "opponent_career_id": "career_000331",
+      "opponent_name": "Brannan Ransom",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 20,
+      "opponent_weight": 132,
+      "opponent_rank": 17,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Tommy Castle Classic"
     }
   ],
   "career": {
@@ -279,7 +300,7 @@
       "season": 2026,
       "grade": 11,
       "team": "Fairdale",
-      "record": "12-4",
+      "record": "11-4",
       "regional_place": null,
       "state_place": null
     },
@@ -287,7 +308,7 @@
       "season": 2025,
       "grade": 10,
       "team": "Fairdale",
-      "record": "10-8",
+      "record": "14-9",
       "regional_place": 4,
       "state_place": null
     },
@@ -301,9 +322,9 @@
     }
   ],
   "career_record": {
-    "wins": 29,
-    "losses": 19,
-    "win_pct": 0.604
+    "wins": 32,
+    "losses": 20,
+    "win_pct": 0.615
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,13 +5,18 @@
   "team_slug": "mccreary_central",
   "team_rank": 46,
   "weight_class": 107,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 23,
   "record": {
-    "overall": "12-15",
-    "vs_ranked": "6-11",
+    "overall": "12-12",
+    "vs_ranked": "6-12",
     "vs_top10": "0-5",
-    "vs_top25": "0-10"
+    "vs_top25": "0-11"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,7 +33,7 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 6,
-    "ranked_losses": 11,
+    "ranked_losses": 12,
     "top10_wins": 0,
     "top10_losses": 5,
     "win_over_highest_rank": {
@@ -59,7 +64,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:11",
-      "event": "vs. Mccreary Central"
+      "event": "vs. Lafayette"
     },
     {
       "date": "2026-01-15",
@@ -191,22 +196,6 @@
     },
     {
       "date": "2025-12-22",
-      "opponent_id": "35457159132",
-      "opponent_career_id": "career_000824",
-      "opponent_name": "Izabella Herndon",
-      "opponent_team": "Whitley County",
-      "opponent_team_rank": 12,
-      "opponent_weight": 100,
-      "opponent_rank": 18,
-      "weight_class": "107",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Whitley County"
-    },
-    {
-      "date": "2025-12-22",
       "opponent_id": "OUTSTATE_021f644ea71a",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -236,6 +225,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Corbin"
+    },
+    {
+      "date": "2025-12-22",
+      "opponent_id": "35457159132",
+      "opponent_career_id": "career_000824",
+      "opponent_name": "Izabella Herndon",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 12,
+      "opponent_weight": 100,
+      "opponent_rank": 18,
+      "weight_class": "107",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Whitley County"
     },
     {
       "date": "2025-12-20",
@@ -287,6 +292,22 @@
     },
     {
       "date": "2025-12-13",
+      "opponent_id": "35369123132",
+      "opponent_career_id": "career_000050",
+      "opponent_name": "Keira Good",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 3,
+      "opponent_weight": 107,
+      "opponent_rank": 31,
+      "weight_class": "107",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Lady Indians Tomahawk Classic"
+    },
+    {
+      "date": "2025-12-13",
       "opponent_id": "35481347132",
       "opponent_career_id": "career_000713",
       "opponent_name": "Lexi Proudfoot",
@@ -303,35 +324,19 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35369123132",
-      "opponent_career_id": "career_000050",
-      "opponent_name": "Keira Good",
-      "opponent_team": "Bell County",
-      "opponent_team_rank": 3,
-      "opponent_weight": 107,
-      "opponent_rank": 31,
+      "opponent_id": "35481347132",
+      "opponent_career_id": "career_000713",
+      "opponent_name": "Lexi Proudfoot",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 100,
+      "opponent_rank": 11,
       "weight_class": "107",
-      "result": "W",
+      "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
       "event": "Lady Indians Tomahawk Classic"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35739869132",
-      "opponent_career_id": "career_000479",
-      "opponent_name": "Paige Collins",
-      "opponent_team": "Mason County",
-      "opponent_team_rank": null,
-      "opponent_weight": 100,
-      "opponent_rank": 60,
-      "weight_class": "107",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:06",
-      "event": "2025 Anchor Down Showdown (Ladies)"
     },
     {
       "date": "2025-12-06",
@@ -347,6 +352,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:36",
+      "event": "2025 Anchor Down Showdown (Ladies)"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35739869132",
+      "opponent_career_id": "career_000479",
+      "opponent_name": "Paige Collins",
+      "opponent_team": "Mason County",
+      "opponent_team_rank": null,
+      "opponent_weight": 100,
+      "opponent_rank": 60,
+      "weight_class": "107",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:06",
       "event": "2025 Anchor Down Showdown (Ladies)"
     },
     {
@@ -426,15 +447,15 @@
       "season": 2026,
       "grade": 9,
       "team": "Mccreary Central",
-      "record": "12-15",
+      "record": "12-12",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 12,
-    "losses": 15,
-    "win_pct": 0.444
+    "losses": 12,
+    "win_pct": 0.5
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

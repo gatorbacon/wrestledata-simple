@@ -5,13 +5,18 @@
   "team_slug": "union",
   "team_rank": null,
   "weight_class": 100,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "1-1",
-    "vs_ranked": "1-1",
-    "vs_top10": "1-1",
-    "vs_top25": "1-1"
+    "overall": "1-2",
+    "vs_ranked": "1-2",
+    "vs_top10": "1-2",
+    "vs_top25": "1-2"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,9 +33,9 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
-    "ranked_losses": 1,
+    "ranked_losses": 2,
     "top10_wins": 1,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "35352382132",
       "opponent_rank": 2,
@@ -63,6 +68,22 @@
     },
     {
       "date": "2025-12-14",
+      "opponent_id": "35333617132",
+      "opponent_career_id": "career_000752",
+      "opponent_name": "Naiya Delos Santos",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": 58,
+      "opponent_weight": 100,
+      "opponent_rank": 1,
+      "weight_class": "100",
+      "result": "L",
+      "method": "DEC",
+      "score": "3-1",
+      "duration": "7:00",
+      "event": "Women of Ironman"
+    },
+    {
+      "date": "2025-12-14",
       "opponent_id": "35352382132",
       "opponent_career_id": "career_000808",
       "opponent_name": "Emma Moore",
@@ -78,5 +99,5 @@
       "event": "Women of Ironman"
     }
   ],
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

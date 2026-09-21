@@ -5,13 +5,18 @@
   "team_slug": "russell_county",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 21,
   "record": {
     "overall": "6-6",
-    "vs_ranked": "5-6",
+    "vs_ranked": "6-6",
     "vs_top10": "0-0",
-    "vs_top25": "3-4"
+    "vs_top25": "4-4"
   },
   "metrics": {
     "pf7": 0.0,
@@ -24,10 +29,10 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 5
+    "pins": 6
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
+    "ranked_wins": 6,
     "ranked_losses": 6,
     "top10_wins": 0,
     "top10_losses": 0,
@@ -75,6 +80,22 @@
       "method": "FALL",
       "score": null,
       "duration": "2:13",
+      "event": "KHSAA Girls Region 4"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35900892132",
+      "opponent_career_id": "career_000411",
+      "opponent_name": "Amber Honeycutt",
+      "opponent_team": "Knox Central",
+      "opponent_team_rank": 21,
+      "opponent_weight": 138,
+      "opponent_rank": 15,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:32",
       "event": "KHSAA Girls Region 4"
     },
     {
@@ -178,23 +199,6 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "35404893132",
-      "opponent_career_id": "career_000428",
-      "opponent_name": "Hermelinda Esteban",
-      "opponent_team": "Lafayette",
-      "opponent_team_rank": 41,
-      "opponent_weight": 132,
-      "opponent_rank": 18,
-      "weight_class": "145",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "The Beast of the East",
-      "mv_impact": -4.0
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "35333560132",
       "opponent_career_id": "career_000039",
       "opponent_name": "Sophia Redd",
@@ -207,7 +211,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:22",
-      "event": "beast of the east",
+      "event": "The Beast of the East",
       "mv_impact": -7.93
     },
     {
@@ -226,6 +230,23 @@
       "duration": "0:00",
       "event": "The Beast of the East",
       "mv_impact": 4.94
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35404893132",
+      "opponent_career_id": "career_000428",
+      "opponent_name": "Hermelinda Esteban",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": 41,
+      "opponent_weight": 132,
+      "opponent_rank": 18,
+      "weight_class": "145",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "The Beast of the East",
+      "mv_impact": -4.0
     }
   ],
   "career": {
@@ -250,5 +271,5 @@
     "losses": 6,
     "win_pct": 0.5
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

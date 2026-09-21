@@ -5,13 +5,18 @@
   "team_slug": "bell_county",
   "team_rank": 3,
   "weight_class": 145,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 10,
   "record": {
     "overall": "29-12",
-    "vs_ranked": "13-11",
+    "vs_ranked": "14-11",
     "vs_top10": "0-6",
-    "vs_top25": "5-11"
+    "vs_top25": "6-11"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,14 +25,14 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.8,
-    "bonus_rate": 0.8,
+    "pin_rate": 0.75,
+    "bonus_rate": 0.75,
     "majors": 0,
     "techs": 0,
     "pins": 12
   },
   "opponent_breakdown": {
-    "ranked_wins": 13,
+    "ranked_wins": 14,
     "ranked_losses": 11,
     "top10_wins": 0,
     "top10_losses": 6,
@@ -143,6 +148,22 @@
     },
     {
       "date": "2026-01-23",
+      "opponent_id": "OUTSTATE_da57d6ecb7ed",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "152",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Corbin"
+    },
+    {
+      "date": "2026-01-23",
       "opponent_id": "35850791132",
       "opponent_career_id": "career_000085",
       "opponent_name": "Emily Price",
@@ -172,22 +193,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Perry County Central"
-    },
-    {
-      "date": "2026-01-23",
-      "opponent_id": "OUTSTATE_da57d6ecb7ed",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Corbin",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "152",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Corbin"
     },
     {
       "date": "2026-01-22",
@@ -351,6 +356,22 @@
     },
     {
       "date": "2025-12-22",
+      "opponent_id": "OUTSTATE_c4763ba75fbf",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 46,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Mccreary Central"
+    },
+    {
+      "date": "2025-12-22",
       "opponent_id": "35427604132",
       "opponent_career_id": "career_000835",
       "opponent_name": "Ariel Dietlin",
@@ -383,38 +404,6 @@
     },
     {
       "date": "2025-12-22",
-      "opponent_id": "35900892132",
-      "opponent_career_id": "career_000411",
-      "opponent_name": "Amber Honeycutt",
-      "opponent_team": "Knox Central",
-      "opponent_team_rank": 21,
-      "opponent_weight": 138,
-      "opponent_rank": 15,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Knox Central"
-    },
-    {
-      "date": "2025-12-22",
-      "opponent_id": "OUTSTATE_c4763ba75fbf",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 46,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Mccreary Central"
-    },
-    {
-      "date": "2025-12-22",
       "opponent_id": "OUTSTATE_4f9bea7ad3f0",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -444,6 +433,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Claiborne High School Girls"
+    },
+    {
+      "date": "2025-12-22",
+      "opponent_id": "35900892132",
+      "opponent_career_id": "career_000411",
+      "opponent_name": "Amber Honeycutt",
+      "opponent_team": "Knox Central",
+      "opponent_team_rank": 21,
+      "opponent_weight": 138,
+      "opponent_rank": 15,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Knox Central"
     },
     {
       "date": "2025-12-20",
@@ -559,22 +564,6 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "35333531132",
-      "opponent_career_id": "career_000451",
-      "opponent_name": "NARAE COMPTON",
-      "opponent_team": "Madison Central",
-      "opponent_team_rank": 22,
-      "opponent_weight": 132,
-      "opponent_rank": 4,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:08",
-      "event": "2025 Anchor Down Showdown (Ladies)"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "35333466132",
       "opponent_career_id": "career_000026",
       "opponent_name": "Ryleigh Mahan",
@@ -606,20 +595,52 @@
       "event": "2025 Anchor Down Showdown (Ladies)"
     },
     {
-      "date": "2025-11-29",
-      "opponent_id": "35639208132",
-      "opponent_career_id": "career_000624",
-      "opponent_name": "Myka Collins",
-      "opponent_team": "Perry County Central",
-      "opponent_team_rank": 50,
-      "opponent_weight": 126,
-      "opponent_rank": 60,
+      "date": "2025-12-06",
+      "opponent_id": "35676779132",
+      "opponent_career_id": "career_000047",
+      "opponent_name": "Jacee Norman",
+      "opponent_team": "Belfry",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": 21,
       "weight_class": "138",
       "result": "W",
+      "method": "DEC",
+      "score": "6-5",
+      "duration": "7:00",
+      "event": "2025 Anchor Down Showdown (Ladies)"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35333531132",
+      "opponent_career_id": "career_000451",
+      "opponent_name": "NARAE COMPTON",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": 22,
+      "opponent_weight": 132,
+      "opponent_rank": 4,
+      "weight_class": "138",
+      "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Perry County Central"
+      "duration": "3:08",
+      "event": "2025 Anchor Down Showdown (Ladies)"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "OUTSTATE_c4763ba75fbf",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 46,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Mccreary Central"
     },
     {
       "date": "2025-11-29",
@@ -639,6 +660,22 @@
     },
     {
       "date": "2025-11-29",
+      "opponent_id": "35639208132",
+      "opponent_career_id": "career_000624",
+      "opponent_name": "Myka Collins",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": 50,
+      "opponent_weight": 126,
+      "opponent_rank": 60,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Perry County Central"
+    },
+    {
+      "date": "2025-11-29",
       "opponent_id": "35427604132",
       "opponent_career_id": "career_000835",
       "opponent_name": "Ariel Dietlin",
@@ -652,22 +689,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Whitley County"
-    },
-    {
-      "date": "2025-11-29",
-      "opponent_id": "OUTSTATE_c4763ba75fbf",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 46,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Mccreary Central"
     },
     {
       "date": "2025-11-29",
@@ -707,15 +728,15 @@
       "season": 2025,
       "grade": 10,
       "team": "Bell County",
-      "record": "9-3",
+      "record": "9-4",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 38,
-    "losses": 15,
-    "win_pct": 0.717
+    "losses": 16,
+    "win_pct": 0.704
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

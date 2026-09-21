@@ -5,10 +5,15 @@
   "team_slug": "waltonverona",
   "team_rank": null,
   "weight_class": 107,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 1,
   "record": {
-    "overall": "42-5",
+    "overall": "45-5",
     "vs_ranked": "31-1",
     "vs_top10": "8-1",
     "vs_top25": "17-1"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.738,
-    "bonus_rate": 0.833,
+    "pin_rate": 0.78,
+    "bonus_rate": 0.878,
     "majors": 1,
     "techs": 3,
-    "pins": 31
+    "pins": 32
   },
   "opponent_breakdown": {
     "ranked_wins": 31,
@@ -207,6 +212,22 @@
     },
     {
       "date": "2026-02-07",
+      "opponent_id": "-1",
+      "opponent_career_id": null,
+      "opponent_name": "Olivia Thluai",
+      "opponent_team": "Dixie Heights",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "107",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:09",
+      "event": "MUSTANG CLASSIC"
+    },
+    {
+      "date": "2026-02-07",
       "opponent_id": "34993290132",
       "opponent_career_id": null,
       "opponent_name": "Moo Hser",
@@ -283,7 +304,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Walton-Verona"
+      "event": "vs. Highlands"
     },
     {
       "date": "2026-01-22",
@@ -299,7 +320,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Walton-Verona"
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2026-01-22",
@@ -316,6 +337,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Grant County"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35510360132",
+      "opponent_career_id": "career_000369",
+      "opponent_name": "Neriah Trice",
+      "opponent_team": "Holmes",
+      "opponent_team_rank": null,
+      "opponent_weight": 107,
+      "opponent_rank": 57,
+      "weight_class": "107",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Girls Sectionals (Section 3)"
     },
     {
       "date": "2026-01-17",
@@ -350,22 +387,6 @@
       "event": "Girls Sectionals (Section 3)"
     },
     {
-      "date": "2026-01-17",
-      "opponent_id": "35510360132",
-      "opponent_career_id": "career_000369",
-      "opponent_name": "Neriah Trice",
-      "opponent_team": "Holmes",
-      "opponent_team_rank": null,
-      "opponent_weight": 107,
-      "opponent_rank": 57,
-      "weight_class": "107",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Girls Sectionals (Section 3)"
-    },
-    {
       "date": "2026-01-14",
       "opponent_id": "35613110132",
       "opponent_career_id": "career_000361",
@@ -379,7 +400,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Walton-Verona"
+      "event": "vs. Highlands"
     },
     {
       "date": "2026-01-14",
@@ -543,38 +564,6 @@
     },
     {
       "date": "2025-12-20",
-      "opponent_id": "OUTSTATE_541c990c8ced",
-      "opponent_career_id": null,
-      "opponent_name": "Destiny Cabot",
-      "opponent_team": "Avon Lake High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 100,
-      "opponent_rank": null,
-      "weight_class": "100",
-      "result": "W",
-      "method": "DEC",
-      "score": "3-2",
-      "duration": "7:00",
-      "event": "The F.I.G.H.T."
-    },
-    {
-      "date": "2025-12-20",
-      "opponent_id": "35619010132",
-      "opponent_career_id": null,
-      "opponent_name": "Lily Enos",
-      "opponent_team": "Batavia",
-      "opponent_team_rank": null,
-      "opponent_weight": 100,
-      "opponent_rank": null,
-      "weight_class": "100",
-      "result": "L",
-      "method": "DEC",
-      "score": "10-6",
-      "duration": "7:00",
-      "event": "The F.I.G.H.T."
-    },
-    {
-      "date": "2025-12-20",
       "opponent_id": "OUTSTATE_f2f2cac14f54",
       "opponent_career_id": null,
       "opponent_name": "Abi Forsythe",
@@ -603,6 +592,38 @@
       "method": "FALL",
       "score": null,
       "duration": "3:49",
+      "event": "The F.I.G.H.T."
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "OUTSTATE_541c990c8ced",
+      "opponent_career_id": null,
+      "opponent_name": "Destiny Cabot",
+      "opponent_team": "Avon Lake High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 100,
+      "opponent_rank": null,
+      "weight_class": "100",
+      "result": "W",
+      "method": "DEC",
+      "score": "3-2",
+      "duration": "7:00",
+      "event": "The F.I.G.H.T."
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35619010132",
+      "opponent_career_id": null,
+      "opponent_name": "Lily Enos",
+      "opponent_team": "Batavia",
+      "opponent_team_rank": null,
+      "opponent_weight": 100,
+      "opponent_rank": null,
+      "weight_class": "100",
+      "result": "L",
+      "method": "DEC",
+      "score": "10-6",
+      "duration": "7:00",
       "event": "The F.I.G.H.T."
     },
     {
@@ -639,6 +660,22 @@
     },
     {
       "date": "2025-12-14",
+      "opponent_id": "-1",
+      "opponent_career_id": null,
+      "opponent_name": "Olivia Thluai",
+      "opponent_team": "Dixie Heights",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "100",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:41",
+      "event": "Women of Ironman"
+    },
+    {
+      "date": "2025-12-14",
       "opponent_id": "34980735132",
       "opponent_career_id": null,
       "opponent_name": "Kylee Tran",
@@ -670,22 +707,6 @@
       "event": "Women of Ironman"
     },
     {
-      "date": "2025-12-14",
-      "opponent_id": "-1",
-      "opponent_career_id": null,
-      "opponent_name": "Olivia Thluai",
-      "opponent_team": "Dixie Heights",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "100",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:41",
-      "event": "Women of Ironman"
-    },
-    {
       "date": "2025-12-06",
       "opponent_id": "35333369132",
       "opponent_career_id": "career_000091",
@@ -698,8 +719,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "Bearcat Brawl (Girls)"
+      "duration": "1:23",
+      "event": "Bearcat Brawl"
     },
     {
       "date": "2025-12-06",
@@ -731,7 +752,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:49",
-      "event": "Bearcat Brawl (Girls)"
+      "event": "Bearcat Brawl"
     },
     {
       "date": "2025-12-06",
@@ -844,7 +865,7 @@
       "season": 2026,
       "grade": 12,
       "team": "Walton-Verona",
-      "record": "42-5",
+      "record": "45-5",
       "regional_place": 1,
       "state_place": 1
     },
@@ -860,15 +881,15 @@
       "season": 2024,
       "grade": 10,
       "team": "Walton-Verona",
-      "record": "9-1",
+      "record": "23-2",
       "regional_place": 1,
       "state_place": 1
     }
   ],
   "career_record": {
-    "wins": 87,
-    "losses": 12,
-    "win_pct": 0.879
+    "wins": 104,
+    "losses": 13,
+    "win_pct": 0.889
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

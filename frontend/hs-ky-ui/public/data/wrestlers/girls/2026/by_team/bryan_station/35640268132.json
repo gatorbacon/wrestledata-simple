@@ -5,11 +5,16 @@
   "team_slug": "bryan_station",
   "team_rank": 18,
   "weight_class": 152,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 41,
   "record": {
     "overall": "8-9",
-    "vs_ranked": "7-9",
+    "vs_ranked": "8-9",
     "vs_top10": "0-3",
     "vs_top25": "0-6"
   },
@@ -20,14 +25,14 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.857,
-    "bonus_rate": 0.857,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 6
+    "pins": 7
   },
   "opponent_breakdown": {
-    "ranked_wins": 7,
+    "ranked_wins": 8,
     "ranked_losses": 9,
     "top10_wins": 0,
     "top10_losses": 3,
@@ -243,6 +248,23 @@
     },
     {
       "date": "2025-12-05",
+      "opponent_id": "35385649132",
+      "opponent_career_id": "career_000467",
+      "opponent_name": "Lyric Knox",
+      "opponent_team": "Male",
+      "opponent_team_rank": 44,
+      "opponent_weight": 165,
+      "opponent_rank": 42,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Queen of the Hive",
+      "mv_impact": 6.58
+    },
+    {
+      "date": "2025-12-05",
       "opponent_id": "35385056132",
       "opponent_career_id": "career_000466",
       "opponent_name": "Aniya Bryant",
@@ -332,5 +354,5 @@
     "losses": 9,
     "win_pct": 0.471
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

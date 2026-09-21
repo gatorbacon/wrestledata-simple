@@ -5,6 +5,11 @@
   "team_slug": "george_rogers_clark",
   "team_rank": 38,
   "weight_class": 120,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 31,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.846,
+    "pin_rate": 0.857,
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 1,
-    "pins": 11
+    "pins": 12
   },
   "opponent_breakdown": {
     "ranked_wins": 12,
@@ -207,18 +212,18 @@
     },
     {
       "date": "2025-12-29",
-      "opponent_id": "35436580132",
-      "opponent_career_id": "career_000322",
-      "opponent_name": "Paisley Hicks",
-      "opponent_team": "Harrison County",
-      "opponent_team_rank": 20,
-      "opponent_weight": 107,
-      "opponent_rank": 25,
+      "opponent_id": "OUTSTATE_28f63d292b06",
+      "opponent_career_id": null,
+      "opponent_name": "Clara Michels",
+      "opponent_team": "Chesapeake High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
       "weight_class": "120",
-      "result": "L",
+      "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "5:19",
+      "duration": "3:47",
       "event": "Lady Cardinal Invitational"
     },
     {
@@ -234,7 +239,23 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "3:47",
+      "duration": "3:50",
+      "event": "Lady Cardinal Invitational"
+    },
+    {
+      "date": "2025-12-29",
+      "opponent_id": "35436580132",
+      "opponent_career_id": "career_000322",
+      "opponent_name": "Paisley Hicks",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 20,
+      "opponent_weight": 107,
+      "opponent_rank": 25,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:19",
       "event": "Lady Cardinal Invitational"
     },
     {
@@ -287,22 +308,6 @@
     },
     {
       "date": "2025-12-19",
-      "opponent_id": "35436580132",
-      "opponent_career_id": "career_000322",
-      "opponent_name": "Paisley Hicks",
-      "opponent_team": "Harrison County",
-      "opponent_team_rank": 20,
-      "opponent_weight": 107,
-      "opponent_rank": 25,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:09",
-      "event": "Ladies 5 Star Classic"
-    },
-    {
-      "date": "2025-12-19",
       "opponent_id": "35334594132",
       "opponent_career_id": "career_000537",
       "opponent_name": "Kaitlyn Baker",
@@ -331,6 +336,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:49",
+      "event": "Ladies 5 Star Classic"
+    },
+    {
+      "date": "2025-12-19",
+      "opponent_id": "35436580132",
+      "opponent_career_id": "career_000322",
+      "opponent_name": "Paisley Hicks",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 20,
+      "opponent_weight": 107,
+      "opponent_rank": 25,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:09",
       "event": "Ladies 5 Star Classic"
     },
     {
@@ -383,22 +404,6 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "35563228132",
-      "opponent_career_id": "career_000524",
-      "opponent_name": "Wynter Workman",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": 9,
-      "opponent_weight": 114,
-      "opponent_rank": 38,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:45",
-      "event": "2025 Ohio County Girls` Invitational"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "35347492132",
       "opponent_career_id": "career_000177",
       "opponent_name": "Hailey Nall",
@@ -411,6 +416,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:28",
+      "event": "2025 Ohio County Girls` Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35563228132",
+      "opponent_career_id": "career_000524",
+      "opponent_name": "Wynter Workman",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": 9,
+      "opponent_weight": 114,
+      "opponent_rank": 38,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:45",
       "event": "2025 Ohio County Girls` Invitational"
     },
     {
@@ -500,5 +521,5 @@
     "losses": 14,
     "win_pct": 0.5
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

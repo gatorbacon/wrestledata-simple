@@ -5,6 +5,11 @@
   "team_slug": "central_hardin",
   "team_rank": null,
   "weight_class": 185,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
     "pins": 1
@@ -53,6 +58,22 @@
     },
     {
       "date": "2025-01-25",
+      "opponent_id": "OUTSTATE_1891b44b5689",
+      "opponent_career_id": null,
+      "opponent_name": "Jackie Quevedo",
+      "opponent_team": "Western",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "165.0",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Bourbon City Memorial Bash *Women*"
+    },
+    {
+      "date": "2025-01-25",
       "opponent_id": "30556296132",
       "opponent_career_id": "career_000584",
       "opponent_name": "Savannah French",
@@ -65,22 +86,6 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "Bourbon City Memorial Bash *Women*"
-    },
-    {
-      "date": "2025-01-25",
-      "opponent_id": "OUTSTATE_1891b44b5689",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "165.0",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
       "event": "Bourbon City Memorial Bash *Women*"
     },
     {
@@ -133,22 +138,6 @@
     },
     {
       "date": "2024-12-28",
-      "opponent_id": "30143990132",
-      "opponent_career_id": "career_000272",
-      "opponent_name": "Cathlynn Smith",
-      "opponent_team": "Franklin County",
-      "opponent_team_rank": null,
-      "opponent_weight": 152,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:20",
-      "event": "Woodford County Invitational - GIRLS"
-    },
-    {
-      "date": "2024-12-28",
       "opponent_id": "30115582132",
       "opponent_career_id": "career_001019",
       "opponent_name": "Joslynn Gray",
@@ -177,6 +166,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:01",
+      "event": "Woodford County Invitational - GIRLS"
+    },
+    {
+      "date": "2024-12-28",
+      "opponent_id": "30143990132",
+      "opponent_career_id": "career_000272",
+      "opponent_name": "Cathlynn Smith",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 152,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:20",
       "event": "Woodford County Invitational - GIRLS"
     },
     {
@@ -229,22 +234,6 @@
     },
     {
       "date": "2024-12-07",
-      "opponent_id": "30284507132",
-      "opponent_career_id": "career_000342",
-      "opponent_name": "Abagail Hefner",
-      "opponent_team": "Henderson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 152,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:31",
-      "event": "Screaming Eagle Invitational"
-    },
-    {
-      "date": "2024-12-07",
       "opponent_id": "30115186132",
       "opponent_career_id": "career_001118",
       "opponent_name": "Dixie Blasingime",
@@ -257,6 +246,22 @@
       "method": "FALL",
       "score": null,
       "duration": "3:36",
+      "event": "Screaming Eagle Invitational"
+    },
+    {
+      "date": "2024-12-07",
+      "opponent_id": "30284507132",
+      "opponent_career_id": "career_000342",
+      "opponent_name": "Abagail Hefner",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 152,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:31",
       "event": "Screaming Eagle Invitational"
     },
     {
@@ -273,6 +278,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:24",
+      "event": "Tommy Castle Classic Ladies"
+    },
+    {
+      "date": "2024-11-30",
+      "opponent_id": "30115338132",
+      "opponent_career_id": null,
+      "opponent_name": "Kylie Young",
+      "opponent_team": "Montgomery County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "185",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:25",
       "event": "Tommy Castle Classic Ladies"
     }
   ],
@@ -298,5 +319,5 @@
     "losses": 13,
     "win_pct": 0.188
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

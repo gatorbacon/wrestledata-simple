@@ -5,6 +5,11 @@
   "team_slug": "daviess_county",
   "team_rank": 2,
   "weight_class": 145,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 9,
   "record": {
@@ -159,6 +164,22 @@
     },
     {
       "date": "2026-01-17",
+      "opponent_id": "35884736132",
+      "opponent_career_id": "career_000251",
+      "opponent_name": "Zoey Wengard",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 37,
+      "opponent_weight": 145,
+      "opponent_rank": 50,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:59",
+      "event": "Steve Johnston Memorial Girls Inv 26"
+    },
+    {
+      "date": "2026-01-17",
       "opponent_id": "35523176132",
       "opponent_career_id": null,
       "opponent_name": "DJ Tucker-Lester",
@@ -187,22 +208,6 @@
       "method": "FALL",
       "score": null,
       "duration": "3:08",
-      "event": "Steve Johnston Memorial Girls Inv 26"
-    },
-    {
-      "date": "2026-01-17",
-      "opponent_id": "35884736132",
-      "opponent_career_id": "career_000251",
-      "opponent_name": "Zoey Wengard",
-      "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 37,
-      "opponent_weight": 145,
-      "opponent_rank": 50,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:59",
       "event": "Steve Johnston Memorial Girls Inv 26"
     },
     {
@@ -335,6 +340,38 @@
     },
     {
       "date": "2025-12-13",
+      "opponent_id": "OUTSTATE_0ecbe6f17fc8",
+      "opponent_career_id": null,
+      "opponent_name": "Olivia Gardner",
+      "opponent_team": "Evansville F.J. Reitz",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "138-145",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:03",
+      "event": "Girls Boro Brawl"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "OUTSTATE_439221cb5ed8",
+      "opponent_career_id": null,
+      "opponent_name": "Chasity Zeller",
+      "opponent_team": "Evansville F.J. Reitz",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "138-145",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:47",
+      "event": "Girls Boro Brawl"
+    },
+    {
+      "date": "2025-12-13",
       "opponent_id": "35562841132",
       "opponent_career_id": "career_000691",
       "opponent_name": "Ash Patton",
@@ -367,38 +404,6 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "OUTSTATE_0ecbe6f17fc8",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "138-145",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:03",
-      "event": "Girls Boro Brawl"
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "OUTSTATE_439221cb5ed8",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "138-145",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:47",
-      "event": "Girls Boro Brawl"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35507364132",
       "opponent_career_id": "career_000470",
       "opponent_name": "Mely Serrano",
@@ -415,22 +420,6 @@
     },
     {
       "date": "2025-11-29",
-      "opponent_id": "35333540132",
-      "opponent_career_id": "career_000452",
-      "opponent_name": "Makenzie Greer",
-      "opponent_team": "Madison Central",
-      "opponent_team_rank": 22,
-      "opponent_weight": 126,
-      "opponent_rank": 26,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:38",
-      "event": "Tommy Castle Classic"
-    },
-    {
-      "date": "2025-11-29",
       "opponent_id": "35383812132",
       "opponent_career_id": "career_000195",
       "opponent_name": "Aaliyah Svec",
@@ -443,6 +432,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:15",
+      "event": "Tommy Castle Classic"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35333540132",
+      "opponent_career_id": "career_000452",
+      "opponent_name": "Makenzie Greer",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": 22,
+      "opponent_weight": 126,
+      "opponent_rank": 26,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:38",
       "event": "Tommy Castle Classic"
     }
   ],
@@ -468,7 +473,7 @@
       "season": 2025,
       "grade": 8,
       "team": "Daviess County",
-      "record": "11-9",
+      "record": "10-9",
       "regional_place": 3,
       "state_place": null
     },
@@ -482,9 +487,9 @@
     }
   ],
   "career_record": {
-    "wins": 32,
+    "wins": 31,
     "losses": 32,
-    "win_pct": 0.5
+    "win_pct": 0.492
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

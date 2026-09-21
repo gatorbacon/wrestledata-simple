@@ -5,10 +5,15 @@
   "team_slug": "floyd_central",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
-    "overall": "0-3",
+    "overall": "0-4",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -37,12 +42,44 @@
   "match_list": [
     {
       "date": "2024-12-07",
+      "opponent_id": "30115402132",
+      "opponent_career_id": "career_000026",
+      "opponent_name": "Ryleigh Mahan",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "Ladies AIT"
+    },
+    {
+      "date": "2024-12-07",
       "opponent_id": "30572531132",
       "opponent_career_id": "career_000082",
       "opponent_name": "Hailey Diamond",
       "opponent_team": "Boyd County",
       "opponent_team_rank": null,
       "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Ashland Blazer invitational"
+    },
+    {
+      "date": "2024-12-07",
+      "opponent_id": "30572529132",
+      "opponent_career_id": "career_000083",
+      "opponent_name": "Lexie Dingess",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
       "opponent_rank": null,
       "weight_class": "126",
       "result": "L",
@@ -66,38 +103,6 @@
       "score": null,
       "duration": "0:00",
       "event": "Ashland Blazer invitational"
-    },
-    {
-      "date": "2024-12-07",
-      "opponent_id": "30115402132",
-      "opponent_career_id": "career_000026",
-      "opponent_name": "Ryleigh Mahan",
-      "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:00",
-      "event": "Ladies AIT"
-    },
-    {
-      "date": "2024-12-07",
-      "opponent_id": "30572529132",
-      "opponent_career_id": "career_000083",
-      "opponent_name": "Lexie Dingess",
-      "opponent_team": "Boyd County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Ashland Blazer invitational"
     }
   ],
   "career": {
@@ -112,15 +117,15 @@
       "season": 2025,
       "grade": 9,
       "team": "Floyd Central",
-      "record": "0-3",
+      "record": "0-4",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 0,
-    "losses": 3,
+    "losses": 4,
     "win_pct": 0.0
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

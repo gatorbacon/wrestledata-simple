@@ -5,10 +5,15 @@
   "team_slug": "lafayette",
   "team_rank": null,
   "weight_class": 145,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
-    "overall": "13-10",
+    "overall": "14-9",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.75,
-    "bonus_rate": 0.75,
+    "pin_rate": 0.769,
+    "bonus_rate": 0.769,
     "majors": 0,
     "techs": 0,
-    "pins": 9
+    "pins": 10
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -213,28 +218,12 @@
     },
     {
       "date": "2023-12-09",
-      "opponent_id": "25186254132",
-      "opponent_career_id": "career_000342",
-      "opponent_name": "Abagail Hefner",
-      "opponent_team": "Henderson County",
+      "opponent_id": "25189087132",
+      "opponent_career_id": "career_001190",
+      "opponent_name": "Ava Crouse",
+      "opponent_team": "Great Crossing",
       "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "145",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Derby City Girls Tournament"
-    },
-    {
-      "date": "2023-12-09",
-      "opponent_id": "25294618132",
-      "opponent_career_id": "career_000428",
-      "opponent_name": "Hermelinda Esteban",
-      "opponent_team": "Lafayette",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
+      "opponent_weight": 145,
       "opponent_rank": null,
       "weight_class": "145",
       "result": "W",
@@ -261,15 +250,31 @@
     },
     {
       "date": "2023-12-09",
-      "opponent_id": "25189087132",
-      "opponent_career_id": "career_001190",
-      "opponent_name": "Ava Crouse",
-      "opponent_team": "Great Crossing",
+      "opponent_id": "25186254132",
+      "opponent_career_id": "career_000342",
+      "opponent_name": "Abagail Hefner",
+      "opponent_team": "Henderson County",
       "opponent_team_rank": null,
-      "opponent_weight": 145,
+      "opponent_weight": 138,
       "opponent_rank": null,
       "weight_class": "145",
-      "result": "L",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Derby City Girls Tournament"
+    },
+    {
+      "date": "2023-12-09",
+      "opponent_id": "25294618132",
+      "opponent_career_id": "career_000428",
+      "opponent_name": "Hermelinda Esteban",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "145",
+      "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -309,38 +314,6 @@
     },
     {
       "date": "2023-11-25",
-      "opponent_id": "25336567132",
-      "opponent_career_id": "career_000857",
-      "opponent_name": "Noxie Melton",
-      "opponent_team": "Bullitt East",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "145",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Centre Pkwy Classic"
-    },
-    {
-      "date": "2023-11-25",
-      "opponent_id": "25184488132",
-      "opponent_career_id": "career_001227",
-      "opponent_name": "Val Sears",
-      "opponent_team": "Whitley County",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "145",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Centre Pkwy Classic"
-    },
-    {
-      "date": "2023-11-25",
       "opponent_id": "25205604132",
       "opponent_career_id": "career_001010",
       "opponent_name": "Ana Frazier",
@@ -354,6 +327,22 @@
       "score": null,
       "duration": "0:00",
       "event": "CENTRE PARKWAY CLASSIC"
+    },
+    {
+      "date": "2023-11-25",
+      "opponent_id": "25336567132",
+      "opponent_career_id": "career_000857",
+      "opponent_name": "Noxie Melton",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "145",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Centre Pkwy Classic"
     },
     {
       "date": "2023-11-25",
@@ -402,6 +391,22 @@
       "score": "7-5",
       "duration": "7:00",
       "event": "Centre Pkwy Classic"
+    },
+    {
+      "date": "2023-11-25",
+      "opponent_id": "25184488132",
+      "opponent_career_id": "career_001227",
+      "opponent_name": "Val Sears",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "145",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Centre Pkwy Classic"
     }
   ],
   "career": {
@@ -418,7 +423,7 @@
       "season": 2026,
       "grade": 11,
       "team": "Lafayette",
-      "record": "30-8",
+      "record": "31-7",
       "regional_place": 2,
       "state_place": 1
     },
@@ -426,7 +431,7 @@
       "season": 2025,
       "grade": 10,
       "team": "Lafayette",
-      "record": "30-4",
+      "record": "29-4",
       "regional_place": 1,
       "state_place": 1
     },
@@ -434,15 +439,15 @@
       "season": 2024,
       "grade": 9,
       "team": "Lafayette",
-      "record": "13-10",
+      "record": "14-9",
       "regional_place": 4,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 73,
-    "losses": 22,
-    "win_pct": 0.768
+    "wins": 74,
+    "losses": 20,
+    "win_pct": 0.787
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }
