@@ -5,11 +5,16 @@
   "team_slug": "owensboro_catholic",
   "team_rank": 28,
   "weight_class": 144,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 34,
   "record": {
     "overall": "38-13",
-    "vs_ranked": "27-12",
+    "vs_ranked": "28-12",
     "vs_top10": "0-1",
     "vs_top25": "0-4"
   },
@@ -20,14 +25,14 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.844,
-    "bonus_rate": 0.938,
+    "pin_rate": 0.848,
+    "bonus_rate": 0.939,
     "majors": 0,
     "techs": 3,
-    "pins": 27
+    "pins": 28
   },
   "opponent_breakdown": {
-    "ranked_wins": 27,
+    "ranked_wins": 28,
     "ranked_losses": 12,
     "top10_wins": 0,
     "top10_losses": 1,
@@ -203,28 +208,12 @@
       "method": "DEC",
       "score": "3-2",
       "duration": "7:00",
-      "event": "vs. Owensboro Catholic"
-    },
-    {
-      "date": "2026-02-07",
-      "opponent_id": "35638062132",
-      "opponent_career_id": "career_004824",
-      "opponent_name": "Madison Price",
-      "opponent_team": "Russell County",
-      "opponent_team_rank": 123,
-      "opponent_weight": 138,
-      "opponent_rank": 152,
-      "weight_class": "144",
-      "result": "W",
-      "method": "TF",
-      "score": "16-0",
-      "duration": "2:49",
-      "event": "vs. Russell County"
+      "event": "vs. Ohio County"
     },
     {
       "date": "2026-02-07",
       "opponent_id": "35037143132",
-      "opponent_career_id": null,
+      "opponent_career_id": "career_001591",
       "opponent_name": "Caidence Munger",
       "opponent_team": "Marion County",
       "opponent_team_rank": 106,
@@ -235,7 +224,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:50",
-      "event": "vs. Owensboro Catholic"
+      "event": "vs. Marion County"
     },
     {
       "date": "2026-02-07",
@@ -287,8 +276,24 @@
     },
     {
       "date": "2026-02-07",
+      "opponent_id": "35638062132",
+      "opponent_career_id": "career_004824",
+      "opponent_name": "Madison Price",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 123,
+      "opponent_weight": 138,
+      "opponent_rank": 152,
+      "weight_class": "144",
+      "result": "W",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "2:49",
+      "event": "vs. Russell County"
+    },
+    {
+      "date": "2026-02-07",
       "opponent_id": "38333845132",
-      "opponent_career_id": null,
+      "opponent_career_id": "career_002972",
       "opponent_name": "Kane Minnick",
       "opponent_team": "Western Hills",
       "opponent_team_rank": 140,
@@ -315,7 +320,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:12",
-      "event": "vs. Owensboro Catholic"
+      "event": "vs. Fort Campbell"
     },
     {
       "date": "2026-01-19",
@@ -331,39 +336,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:06",
-      "event": "vs. Owensboro Catholic"
-    },
-    {
-      "date": "2026-01-17",
-      "opponent_id": "36088051132",
-      "opponent_career_id": "career_005363",
-      "opponent_name": "Camden Graichen",
-      "opponent_team": "East Jessamine",
-      "opponent_team_rank": 74,
-      "opponent_weight": 138,
-      "opponent_rank": 124,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:31",
-      "event": "vs. Owensboro Catholic"
-    },
-    {
-      "date": "2026-01-17",
-      "opponent_id": "OUTSTATE_c11f13cdbeae",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Greenwood",
-      "opponent_team_rank": 87,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Greenwood"
+      "event": "vs. Hopkinsville"
     },
     {
       "date": "2026-01-17",
@@ -379,7 +352,23 @@
       "method": "FALL",
       "score": null,
       "duration": "3:40",
-      "event": "vs. Owensboro Catholic"
+      "event": "vs. Caldwell County"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "36088051132",
+      "opponent_career_id": "career_005363",
+      "opponent_name": "Camden Graichen",
+      "opponent_team": "East Jessamine",
+      "opponent_team_rank": 74,
+      "opponent_weight": 138,
+      "opponent_rank": 124,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:31",
+      "event": "vs. East Jessamine"
     },
     {
       "date": "2026-01-17",
@@ -412,6 +401,22 @@
       "score": "18-0",
       "duration": "2:50",
       "event": "vs. Pulaski County"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "OUTSTATE_c11f13cdbeae",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": 87,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Greenwood"
     },
     {
       "date": "2026-01-17",
@@ -495,6 +500,22 @@
     },
     {
       "date": "2026-01-10",
+      "opponent_id": "35192414132",
+      "opponent_career_id": "career_005510",
+      "opponent_name": "Mazime Many",
+      "opponent_team": "Logan County",
+      "opponent_team_rank": 104,
+      "opponent_weight": 144,
+      "opponent_rank": 50,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:00",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
       "opponent_id": "35226198132",
       "opponent_career_id": "career_001823",
       "opponent_name": "Bryce Alford",
@@ -527,22 +548,6 @@
     },
     {
       "date": "2026-01-08",
-      "opponent_id": "34993303132",
-      "opponent_career_id": "career_005337",
-      "opponent_name": "Noah Bonnell",
-      "opponent_team": "Daviess County",
-      "opponent_team_rank": 69,
-      "opponent_weight": 138,
-      "opponent_rank": 103,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Owensboro Catholic"
-    },
-    {
-      "date": "2026-01-08",
       "opponent_id": "35233668132",
       "opponent_career_id": "career_000044",
       "opponent_name": "Brayden Mattingly",
@@ -555,7 +560,23 @@
       "method": "DEC",
       "score": "9-4",
       "duration": "7:00",
-      "event": "vs. Owensboro Catholic"
+      "event": "vs. Apollo"
+    },
+    {
+      "date": "2026-01-08",
+      "opponent_id": "34993303132",
+      "opponent_career_id": "career_005337",
+      "opponent_name": "Noah Bonnell",
+      "opponent_team": "Daviess County",
+      "opponent_team_rank": 69,
+      "opponent_weight": 138,
+      "opponent_rank": 103,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Daviess County"
     },
     {
       "date": "2026-01-08",
@@ -571,7 +592,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro Catholic"
+      "event": "vs. Owensboro"
     },
     {
       "date": "2026-01-03",
@@ -587,7 +608,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:54",
-      "event": "vs. Owensboro Catholic"
+      "event": "vs. Bardstown"
     },
     {
       "date": "2026-01-03",
@@ -603,7 +624,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:59",
-      "event": "vs. Owensboro Catholic"
+      "event": "vs. Christian Academy-Louisville"
     },
     {
       "date": "2026-01-03",
@@ -619,7 +640,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:23",
-      "event": "vs. Owensboro Catholic"
+      "event": "vs. Greenwood"
     },
     {
       "date": "2026-01-03",
@@ -655,38 +676,6 @@
     },
     {
       "date": "2025-12-30",
-      "opponent_id": "35282476132",
-      "opponent_career_id": "career_002754",
-      "opponent_name": "Maxwell Blumberg",
-      "opponent_team": "Trinity (Louisville)",
-      "opponent_team_rank": 134,
-      "opponent_weight": 138,
-      "opponent_rank": 172,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Boys Woodford County Invitational"
-    },
-    {
-      "date": "2025-12-30",
-      "opponent_id": "35280922132",
-      "opponent_career_id": "career_002565",
-      "opponent_name": "Sean Moreno",
-      "opponent_team": "Southern",
-      "opponent_team_rank": 130,
-      "opponent_weight": 144,
-      "opponent_rank": 55,
-      "weight_class": "138",
-      "result": "L",
-      "method": "DEC",
-      "score": "11-4",
-      "duration": "7:00",
-      "event": "Boys Woodford County Invitational"
-    },
-    {
-      "date": "2025-12-30",
       "opponent_id": "35520779132",
       "opponent_career_id": "career_000006",
       "opponent_name": "Ashton Edwards",
@@ -712,6 +701,38 @@
       "opponent_rank": null,
       "weight_class": "144",
       "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Boys Woodford County Invitational"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35280922132",
+      "opponent_career_id": "career_002565",
+      "opponent_name": "Sean Moreno",
+      "opponent_team": "Southern",
+      "opponent_team_rank": 130,
+      "opponent_weight": 144,
+      "opponent_rank": 55,
+      "weight_class": "138",
+      "result": "L",
+      "method": "DEC",
+      "score": "11-4",
+      "duration": "7:00",
+      "event": "Boys Woodford County Invitational"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35282476132",
+      "opponent_career_id": "career_002754",
+      "opponent_name": "Maxwell Blumberg",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": 134,
+      "opponent_weight": 138,
+      "opponent_rank": 172,
+      "weight_class": "144",
+      "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -767,22 +788,6 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "35281674132",
-      "opponent_career_id": "career_001664",
-      "opponent_name": "Zaven Branch",
-      "opponent_team": "McCracken County",
-      "opponent_team_rank": 108,
-      "opponent_weight": 138,
-      "opponent_rank": 97,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:34",
-      "event": "vs. Owensboro Catholic"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "35208231132",
       "opponent_career_id": "career_003767",
       "opponent_name": "Braxton Payne",
@@ -795,7 +800,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro Catholic"
+      "event": "vs. Henderson County"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35281674132",
+      "opponent_career_id": "career_001664",
+      "opponent_name": "Zaven Branch",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": 108,
+      "opponent_weight": 138,
+      "opponent_rank": 97,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:34",
+      "event": "vs. McCracken County"
     },
     {
       "date": "2025-12-06",
@@ -878,7 +899,7 @@
       "season": 2024,
       "grade": 9,
       "team": "Owensboro Catholic",
-      "record": "16-9",
+      "record": "28-17",
       "regional_place": null,
       "state_place": null
     },
@@ -886,7 +907,7 @@
       "season": 2023,
       "grade": 8,
       "team": "Owensboro Catholic High School ",
-      "record": "0-0",
+      "record": "20-9",
       "regional_place": null,
       "state_place": null
     },
@@ -894,15 +915,15 @@
       "season": 2022,
       "grade": 7,
       "team": "Owensboro Catholic High School ",
-      "record": "0-0",
+      "record": "17-15",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 84,
-    "losses": 31,
-    "win_pct": 0.73
+    "wins": 133,
+    "losses": 63,
+    "win_pct": 0.679
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

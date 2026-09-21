@@ -5,6 +5,11 @@
   "team_slug": "bryan_station",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -37,7 +42,23 @@
   "match_list": [
     {
       "date": "2024-12-21",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "30084219132",
+      "opponent_career_id": "career_000215",
+      "opponent_name": "Nathanial Herrington",
+      "opponent_team": "Bourbon County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:46",
+      "event": "vs. Bourbon County"
+    },
+    {
+      "date": "2024-12-21",
+      "opponent_id": "OUTSTATE_3a96223443a0",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "George Rogers Clark",
@@ -82,22 +103,6 @@
       "score": null,
       "duration": "0:33",
       "event": "vs. Tates Creek"
-    },
-    {
-      "date": "2024-12-21",
-      "opponent_id": "30084219132",
-      "opponent_career_id": "career_000215",
-      "opponent_name": "Nathanial Herrington",
-      "opponent_team": "Bourbon County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:46",
-      "event": "vs. Bryan Station"
     }
   ],
   "career": {
@@ -122,5 +127,5 @@
     "losses": 3,
     "win_pct": 0.25
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,6 +5,11 @@
   "team_slug": "ashland_blazer",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.714,
-    "bonus_rate": 0.714,
+    "pin_rate": 0.833,
+    "bonus_rate": 0.833,
     "majors": 0,
     "techs": 0,
     "pins": 5
@@ -133,6 +138,22 @@
     },
     {
       "date": "2024-12-17",
+      "opponent_id": "OUTSTATE_253189c79f5c",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Spring Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Spring Valley"
+    },
+    {
+      "date": "2024-12-17",
       "opponent_id": "30065877132",
       "opponent_career_id": "career_000243",
       "opponent_name": "Bentley Brown",
@@ -146,22 +167,6 @@
       "score": null,
       "duration": "3:53",
       "event": "vs. Boyd County"
-    },
-    {
-      "date": "2024-12-17",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "MFF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Spring Valley"
     },
     {
       "date": "2024-12-16",
@@ -323,5 +328,5 @@
     "losses": 14,
     "win_pct": 0.481
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

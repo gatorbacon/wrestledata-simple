@@ -5,6 +5,11 @@
   "team_slug": "waltonverona",
   "team_rank": 136,
   "weight_class": 138,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 123,
   "record": {
@@ -42,6 +47,22 @@
   "match_list": [
     {
       "date": "2026-01-10",
+      "opponent_id": "35035539132",
+      "opponent_career_id": "career_000191",
+      "opponent_name": "Asher Novit",
+      "opponent_team": "Boone County",
+      "opponent_team_rank": 60,
+      "opponent_weight": 138,
+      "opponent_rank": 59,
+      "weight_class": "138",
+      "result": "L",
+      "method": "MD",
+      "score": "15-5",
+      "duration": "7:00",
+      "event": "vs. Boone County"
+    },
+    {
+      "date": "2026-01-10",
       "opponent_id": "-1",
       "opponent_career_id": null,
       "opponent_name": "Kalem Harris",
@@ -55,23 +76,47 @@
       "score": null,
       "duration": "1:36",
       "event": "vs. All-Star Team"
-    },
-    {
-      "date": "2026-01-10",
-      "opponent_id": "35035539132",
-      "opponent_career_id": "career_000191",
-      "opponent_name": "Asher Novit",
-      "opponent_team": "Boone County",
-      "opponent_team_rank": 60,
-      "opponent_weight": 138,
-      "opponent_rank": 59,
-      "weight_class": "138",
-      "result": "L",
-      "method": "MD",
-      "score": "15-5",
-      "duration": "7:00",
-      "event": "vs. Walton-Verona"
     }
   ],
-  "profile_generated_at": "2026-04-16"
+  "career": {
+    "career_id": "career_002875",
+    "canonical_name": "Brayden Donato",
+    "seasons": [
+      2026,
+      2025,
+      2024
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Walton-Verona",
+      "record": "1-1",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 11,
+      "team": "Walton-Verona",
+      "record": "23-17",
+      "regional_place": 2,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 10,
+      "team": "Walton-Verona",
+      "record": "13-16",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 37,
+    "losses": 34,
+    "win_pct": 0.521
+  },
+  "profile_generated_at": "2026-09-21"
 }

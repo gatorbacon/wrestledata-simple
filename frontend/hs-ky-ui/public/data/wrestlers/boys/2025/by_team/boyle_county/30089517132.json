@@ -5,6 +5,11 @@
   "team_slug": "boyle_county",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -101,7 +106,7 @@
     },
     {
       "date": "2025-01-25",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_9f42b4602541",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Moore",
@@ -149,7 +154,7 @@
     },
     {
       "date": "2025-01-15",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_da57d6ecb7ed",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Corbin",
@@ -178,6 +183,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Pulaski County"
+    },
+    {
+      "date": "2025-01-15",
+      "opponent_id": "OUTSTATE_0eea10e36b14",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Knox Central",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Knox Central"
     },
     {
       "date": "2025-01-04",
@@ -293,22 +314,6 @@
     },
     {
       "date": "2024-12-07",
-      "opponent_id": "30035596132",
-      "opponent_career_id": "career_000602",
-      "opponent_name": "Seth Jones",
-      "opponent_team": "Corbin",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Joe Cochran State Farm HCIWT"
-    },
-    {
-      "date": "2024-12-07",
       "opponent_id": "30053887132",
       "opponent_career_id": "career_000434",
       "opponent_name": "Dilynn Smith",
@@ -350,6 +355,22 @@
       "opponent_rank": null,
       "weight_class": "285",
       "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Joe Cochran State Farm HCIWT"
+    },
+    {
+      "date": "2024-12-07",
+      "opponent_id": "30035596132",
+      "opponent_career_id": "career_000602",
+      "opponent_name": "Seth Jones",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -410,5 +431,5 @@
     "losses": 13,
     "win_pct": 0.435
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "apollo",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
-    "overall": "6-0",
+    "overall": "11-3",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.8,
-    "bonus_rate": 0.8,
+    "pin_rate": 0.833,
+    "bonus_rate": 0.833,
     "majors": 0,
     "techs": 0,
-    "pins": 4
+    "pins": 5
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -49,6 +54,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:07",
+      "event": "vs. John Hardin"
+    },
+    {
+      "date": "2024-01-30",
+      "opponent_id": "24893967132",
+      "opponent_career_id": "career_001324",
+      "opponent_name": "Jayce Morrison - Green",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:23",
       "event": "vs. John Hardin"
     },
     {
@@ -97,7 +118,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:48",
-      "event": "vs. Apollo High School"
+      "event": "vs. Daviess County"
+    },
+    {
+      "date": "2024-01-25",
+      "opponent_id": "OUTSTATE_7ed63b73d691",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Owensboro"
     },
     {
       "date": "2024-01-25",
@@ -113,7 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Apollo High School"
+      "event": "vs. Owensboro Catholic"
     },
     {
       "date": "2024-01-24",
@@ -161,23 +198,23 @@
       "method": "DEC",
       "score": "9-5",
       "duration": "7:00",
-      "event": "vs. Apollo High School"
+      "event": "vs. Daviess County"
     },
     {
       "date": "2024-01-13",
-      "opponent_id": "24713064132",
-      "opponent_career_id": "career_001167",
-      "opponent_name": "Lane Corpe",
-      "opponent_team": "Henderson County",
+      "opponent_id": "OUTSTATE_7ed63b73d691",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Owensboro",
       "opponent_team_rank": null,
-      "opponent_weight": 113,
+      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
+      "result": "W",
+      "method": "FF",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Apollo High School"
+      "duration": "7:00",
+      "event": "vs. Owensboro"
     },
     {
       "date": "2024-01-13",
@@ -193,7 +230,39 @@
       "method": "FALL",
       "score": null,
       "duration": "3:35",
-      "event": "vs. Apollo High School"
+      "event": "vs. McCracken County"
+    },
+    {
+      "date": "2024-01-13",
+      "opponent_id": "24713064132",
+      "opponent_career_id": "career_001167",
+      "opponent_name": "Lane Corpe",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Henderson County"
+    },
+    {
+      "date": "2023-12-19",
+      "opponent_id": "OUTSTATE_a1dcf137cf85",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Owensboro Catholic High School",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Owensboro Catholic High School"
     }
   ],
   "career": {
@@ -218,7 +287,7 @@
       "season": 2025,
       "grade": 10,
       "team": "Apollo",
-      "record": "11-2",
+      "record": "10-2",
       "regional_place": null,
       "state_place": null
     },
@@ -226,15 +295,15 @@
       "season": 2024,
       "grade": 9,
       "team": "Apollo",
-      "record": "6-0",
+      "record": "11-3",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 29,
-    "losses": 4,
-    "win_pct": 0.879
+    "wins": 33,
+    "losses": 7,
+    "win_pct": 0.825
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

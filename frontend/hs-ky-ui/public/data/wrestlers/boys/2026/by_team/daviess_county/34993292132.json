@@ -5,10 +5,15 @@
   "team_slug": "daviess_county",
   "team_rank": 69,
   "weight_class": 165,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 69,
   "record": {
-    "overall": "2-0",
+    "overall": "4-0",
     "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -24,7 +29,7 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 4
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -58,6 +63,38 @@
     },
     {
       "date": "2026-02-07",
+      "opponent_id": "-1",
+      "opponent_career_id": null,
+      "opponent_name": "Kalem Harris",
+      "opponent_team": "Mt. Vernon",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:24",
+      "event": "Mustang Classic"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "-1",
+      "opponent_career_id": null,
+      "opponent_name": "Kalem Harris",
+      "opponent_team": "Mt. Vernon",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:45",
+      "event": "Mustang Classic"
+    },
+    {
+      "date": "2026-02-07",
       "opponent_id": "34993530132",
       "opponent_career_id": null,
       "opponent_name": "Bailey Boyd",
@@ -73,5 +110,45 @@
       "event": "Mustang Classic"
     }
   ],
-  "profile_generated_at": "2026-04-16"
+  "career": {
+    "career_id": "career_003546",
+    "canonical_name": "Kali Nichols",
+    "seasons": [
+      2026,
+      2024,
+      2023
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Daviess County",
+      "record": "4-0",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2024,
+      "grade": 9,
+      "team": "Daviess County",
+      "record": "12-8",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2023,
+      "grade": 8,
+      "team": "Daviess County",
+      "record": "12-13",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 28,
+    "losses": 21,
+    "win_pct": 0.571
+  },
+  "profile_generated_at": "2026-09-21"
 }

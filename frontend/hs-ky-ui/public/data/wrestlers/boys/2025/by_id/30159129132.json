@@ -5,6 +5,11 @@
   "team_slug": "danville",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -21,10 +26,10 @@
     "df_plus": 100.0,
     "apr_plus": 100.0,
     "pin_rate": 0.5,
-    "bonus_rate": 0.667,
+    "bonus_rate": 0.75,
     "majors": 1,
-    "techs": 0,
-    "pins": 3
+    "techs": 1,
+    "pins": 4
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -113,23 +118,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:03",
-      "event": "vs. Danville"
-    },
-    {
-      "date": "2025-01-25",
-      "opponent_id": "30146203132",
-      "opponent_career_id": "career_001246",
-      "opponent_name": "Deontae Graves",
-      "opponent_team": "Holmes",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:47",
-      "event": "Jessamine County Clash"
+      "event": "vs. Bardstown"
     },
     {
       "date": "2025-01-25",
@@ -165,6 +154,22 @@
     },
     {
       "date": "2025-01-25",
+      "opponent_id": "31865230132",
+      "opponent_career_id": "career_001248",
+      "opponent_name": "Riley Jones",
+      "opponent_team": "Holmes",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "0:00",
+      "event": "Jessamine County Clash"
+    },
+    {
+      "date": "2025-01-25",
       "opponent_id": "30007837132",
       "opponent_career_id": "career_002679",
       "opponent_name": "Grahame Herald",
@@ -177,6 +182,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
+      "event": "Jessamine County Clash"
+    },
+    {
+      "date": "2025-01-25",
+      "opponent_id": "30146203132",
+      "opponent_career_id": "career_001246",
+      "opponent_name": "Deontae Graves",
+      "opponent_team": "Holmes",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:47",
       "event": "Jessamine County Clash"
     },
     {
@@ -193,23 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:22",
-      "event": "vs. Danville"
-    },
-    {
-      "date": "2025-01-04",
-      "opponent_id": "29804406132",
-      "opponent_career_id": "career_001925",
-      "opponent_name": "Brody Culver",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:36",
-      "event": "2025 Warhawk Classic"
+      "event": "vs. Bardstown"
     },
     {
       "date": "2025-01-04",
@@ -225,6 +230,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:52",
+      "event": "2025 Warhawk Classic"
+    },
+    {
+      "date": "2025-01-04",
+      "opponent_id": "29804406132",
+      "opponent_career_id": "career_001925",
+      "opponent_name": "Brody Culver",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:36",
       "event": "2025 Warhawk Classic"
     },
     {
@@ -257,6 +278,22 @@
       "method": "MD",
       "score": "18-9",
       "duration": "7:00",
+      "event": "The Tommy Castle Classic"
+    },
+    {
+      "date": "2024-11-30",
+      "opponent_id": "29788799132",
+      "opponent_career_id": "career_001769",
+      "opponent_name": "Owen Burton",
+      "opponent_team": "Montgomery County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:35",
       "event": "The Tommy Castle Classic"
     },
     {
@@ -316,5 +353,5 @@
     "losses": 16,
     "win_pct": 0.5
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

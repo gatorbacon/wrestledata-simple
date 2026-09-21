@@ -5,11 +5,16 @@
   "team_slug": "doss",
   "team_rank": 72,
   "weight_class": 165,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 119,
   "record": {
     "overall": "16-22",
-    "vs_ranked": "12-20",
+    "vs_ranked": "13-20",
     "vs_top10": "0-1",
     "vs_top25": "0-4"
   },
@@ -20,14 +25,14 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.833,
+    "pin_rate": 0.846,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 2,
-    "pins": 10
+    "pins": 11
   },
   "opponent_breakdown": {
-    "ranked_wins": 12,
+    "ranked_wins": 13,
     "ranked_losses": 20,
     "top10_wins": 0,
     "top10_losses": 1,
@@ -155,7 +160,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Doss"
+      "event": "vs. Central"
     },
     {
       "date": "2026-02-12",
@@ -267,7 +272,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Doss"
+      "event": "vs. Atherton"
     },
     {
       "date": "2026-01-21",
@@ -284,6 +289,22 @@
       "score": null,
       "duration": "1:35",
       "event": "vs. Pleasure Ridge Park"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35562778132",
+      "opponent_career_id": "career_004830",
+      "opponent_name": "Gabe Gray",
+      "opponent_team": "Seneca",
+      "opponent_team_rank": 127,
+      "opponent_weight": 165,
+      "opponent_rank": 149,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Bear Brawl"
     },
     {
       "date": "2026-01-17",
@@ -431,13 +452,13 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "34994792132",
-      "opponent_career_id": "career_002629",
-      "opponent_name": "Aiden Trammell",
-      "opponent_team": "Spencer County",
-      "opponent_team_rank": 29,
-      "opponent_weight": 157,
-      "opponent_rank": 54,
+      "opponent_id": "34992067132",
+      "opponent_career_id": "career_000122",
+      "opponent_name": "Greg Curtsinger",
+      "opponent_team": "Bardstown",
+      "opponent_team_rank": 55,
+      "opponent_weight": 165,
+      "opponent_rank": 73,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -447,13 +468,13 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "34992067132",
-      "opponent_career_id": "career_000122",
-      "opponent_name": "Greg Curtsinger",
-      "opponent_team": "Bardstown",
-      "opponent_team_rank": 55,
-      "opponent_weight": 165,
-      "opponent_rank": 73,
+      "opponent_id": "34994792132",
+      "opponent_career_id": "career_002629",
+      "opponent_name": "Aiden Trammell",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": 29,
+      "opponent_weight": 157,
+      "opponent_rank": 54,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
@@ -491,7 +512,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Doss"
+      "event": "vs. Bethlehem"
     },
     {
       "date": "2025-12-10",
@@ -507,7 +528,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Doss"
+      "event": "vs. Bullitt Central"
     },
     {
       "date": "2025-12-06",
@@ -523,7 +544,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Doss"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2025-12-06",
@@ -669,5 +690,5 @@
     "losses": 22,
     "win_pct": 0.463
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "bethlehem",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
-    "overall": "15-21",
+    "overall": "14-19",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.778,
+    "pin_rate": 0.75,
+    "bonus_rate": 0.875,
     "majors": 1,
     "techs": 0,
     "pins": 6
@@ -261,22 +266,6 @@
     },
     {
       "date": "2025-01-18",
-      "opponent_id": "29965277132",
-      "opponent_career_id": "career_001395",
-      "opponent_name": "Liam Ditto",
-      "opponent_team": "LaRue County",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:59",
-      "event": "vs. LaRue County"
-    },
-    {
-      "date": "2025-01-18",
       "opponent_id": "29868861132",
       "opponent_career_id": "career_000930",
       "opponent_name": "Aiden Walser",
@@ -309,7 +298,23 @@
     },
     {
       "date": "2025-01-18",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "29965277132",
+      "opponent_career_id": "career_001395",
+      "opponent_name": "Liam Ditto",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:59",
+      "event": "vs. LaRue County"
+    },
+    {
+      "date": "2025-01-18",
+      "opponent_id": "OUTSTATE_d11d1b4317fe",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Thomas Nelson",
@@ -401,11 +406,11 @@
       "method": "FALL",
       "score": null,
       "duration": "1:47",
-      "event": "vs. Bethlehem"
+      "event": "vs. Bardstown"
     },
     {
       "date": "2025-01-03",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_28470c03fea2",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Trinity",
@@ -418,6 +423,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Trinity (Whitesville)"
+    },
+    {
+      "date": "2025-01-03",
+      "opponent_id": "OUTSTATE_7ed63b73d691",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Owensboro"
     },
     {
       "date": "2025-01-03",
@@ -517,7 +538,7 @@
     },
     {
       "date": "2024-12-06",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_fa707c1de75c",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Bardstown",
@@ -561,7 +582,7 @@
       "season": 2026,
       "grade": 10,
       "team": "Bethlehem",
-      "record": "18-10",
+      "record": "17-10",
       "regional_place": null,
       "state_place": null
     },
@@ -569,15 +590,15 @@
       "season": 2025,
       "grade": 9,
       "team": "Bethlehem",
-      "record": "15-21",
+      "record": "14-19",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 33,
-    "losses": 31,
-    "win_pct": 0.516
+    "wins": 31,
+    "losses": 29,
+    "win_pct": 0.517
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

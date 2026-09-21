@@ -5,11 +5,16 @@
   "team_slug": "boone_county",
   "team_rank": 60,
   "weight_class": 175,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 171,
   "record": {
-    "overall": "11-21",
-    "vs_ranked": "4-16",
+    "overall": "11-23",
+    "vs_ranked": "5-16",
     "vs_top10": "0-2",
     "vs_top25": "0-5"
   },
@@ -20,14 +25,14 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.4,
-    "bonus_rate": 0.4,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
     "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 4,
+    "ranked_wins": 5,
     "ranked_losses": 16,
     "top10_wins": 0,
     "top10_losses": 2,
@@ -160,7 +165,7 @@
     {
       "date": "2026-01-10",
       "opponent_id": "35247374132",
-      "opponent_career_id": null,
+      "opponent_career_id": "career_001632",
       "opponent_name": "Gage Carrington",
       "opponent_team": "Mason County",
       "opponent_team_rank": 107,
@@ -302,6 +307,22 @@
       "event": "NKAC"
     },
     {
+      "date": "2025-12-27",
+      "opponent_id": "35663262132",
+      "opponent_career_id": "career_002357",
+      "opponent_name": "Dakota Lonkard",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": 8,
+      "opponent_weight": 215,
+      "opponent_rank": 45,
+      "weight_class": "190",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "NKAC"
+    },
+    {
       "date": "2025-12-26",
       "opponent_id": "35909346132",
       "opponent_career_id": "career_005664",
@@ -319,19 +340,19 @@
     },
     {
       "date": "2025-12-20",
-      "opponent_id": "OUTSTATE_1a871027a568",
+      "opponent_id": "OUTSTATE_5800233e9a94",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
-      "opponent_team": "Connersville",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
+      "opponent_team": "Union County",
+      "opponent_team_rank": 17,
+      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "190",
       "result": "W",
       "method": "FF",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Connersville"
+      "event": "vs. Union County"
     },
     {
       "date": "2025-12-20",
@@ -351,19 +372,19 @@
     },
     {
       "date": "2025-12-20",
-      "opponent_id": "OUTSTATE_5800233e9a94",
+      "opponent_id": "OUTSTATE_1a871027a568",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
-      "opponent_team": "Union County",
-      "opponent_team_rank": 17,
-      "opponent_weight": null,
+      "opponent_team": "Connersville",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
       "opponent_rank": null,
       "weight_class": "190",
       "result": "W",
       "method": "FF",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Union County"
+      "event": "vs. Connersville"
     },
     {
       "date": "2025-12-20",
@@ -463,38 +484,6 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "35782789132",
-      "opponent_career_id": "career_005457",
-      "opponent_name": "Owen Heidenreich",
-      "opponent_team": "Holy Cross (Covington)",
-      "opponent_team_rank": 92,
-      "opponent_weight": 165,
-      "opponent_rank": 177,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:12",
-      "event": "Bearcat Brawl 2025"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35219540132",
-      "opponent_career_id": "career_005456",
-      "opponent_name": "Donnivan Sheffey",
-      "opponent_team": "Holmes",
-      "opponent_team_rank": 91,
-      "opponent_weight": 165,
-      "opponent_rank": 104,
-      "weight_class": "175",
-      "result": "L",
-      "method": "INJ",
-      "score": null,
-      "duration": "7:00",
-      "event": "Bearcat Brawl 2025"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "35519852132",
       "opponent_career_id": "career_000016",
       "opponent_name": "Braxton Mackey",
@@ -523,6 +512,38 @@
       "method": "FALL",
       "score": null,
       "duration": "2:39",
+      "event": "Bearcat Brawl 2025"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35782789132",
+      "opponent_career_id": "career_005457",
+      "opponent_name": "Owen Heidenreich",
+      "opponent_team": "Holy Cross (Covington)",
+      "opponent_team_rank": 92,
+      "opponent_weight": 165,
+      "opponent_rank": 177,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:12",
+      "event": "Bearcat Brawl 2025"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35219540132",
+      "opponent_career_id": "career_005456",
+      "opponent_name": "Donnivan Sheffey",
+      "opponent_team": "Holmes",
+      "opponent_team_rank": 91,
+      "opponent_weight": 165,
+      "opponent_rank": 104,
+      "weight_class": "175",
+      "result": "L",
+      "method": "INJ",
+      "score": null,
+      "duration": "7:00",
       "event": "Bearcat Brawl 2025"
     },
     {
@@ -586,15 +607,15 @@
       "season": 2026,
       "grade": 10,
       "team": "Boone County",
-      "record": "11-21",
+      "record": "11-23",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 11,
-    "losses": 21,
-    "win_pct": 0.344
+    "losses": 23,
+    "win_pct": 0.324
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

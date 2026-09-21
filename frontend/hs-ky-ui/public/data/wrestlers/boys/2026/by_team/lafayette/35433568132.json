@@ -5,11 +5,16 @@
   "team_slug": "lafayette",
   "team_rank": 99,
   "weight_class": 165,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
-  "current_rank": 142,
+  "current_rank": 143,
   "record": {
-    "overall": "8-11",
-    "vs_ranked": "7-12",
+    "overall": "8-13",
+    "vs_ranked": "8-12",
     "vs_top10": "0-3",
     "vs_top25": "0-5"
   },
@@ -24,10 +29,10 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 7
+    "pins": 8
   },
   "opponent_breakdown": {
-    "ranked_wins": 7,
+    "ranked_wins": 8,
     "ranked_losses": 12,
     "top10_wins": 0,
     "top10_losses": 3,
@@ -127,6 +132,22 @@
     },
     {
       "date": "2026-02-12",
+      "opponent_id": "35225656132",
+      "opponent_career_id": "career_004988",
+      "opponent_name": "David reynolds",
+      "opponent_team": "Frederick Douglass",
+      "opponent_team_rank": 83,
+      "opponent_weight": 165,
+      "opponent_rank": 135,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Lexington City Tournament"
+    },
+    {
+      "date": "2026-02-12",
       "opponent_id": "35081199132",
       "opponent_career_id": "career_001210",
       "opponent_name": "Msabaha Sumaili",
@@ -175,22 +196,6 @@
     },
     {
       "date": "2025-12-30",
-      "opponent_id": "35012796132",
-      "opponent_career_id": "career_002434",
-      "opponent_name": "Devontay Cox",
-      "opponent_team": "Shawnee",
-      "opponent_team_rank": 128,
-      "opponent_weight": 157,
-      "opponent_rank": 102,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:31",
-      "event": "Fern Creek Gladiator"
-    },
-    {
-      "date": "2025-12-30",
       "opponent_id": "35212704132",
       "opponent_career_id": "career_002211",
       "opponent_name": "Raad Albakri",
@@ -203,6 +208,22 @@
       "method": "TF",
       "score": "21-1",
       "duration": "3:45",
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35012796132",
+      "opponent_career_id": "career_002434",
+      "opponent_name": "Devontay Cox",
+      "opponent_team": "Shawnee",
+      "opponent_team_rank": 128,
+      "opponent_weight": 157,
+      "opponent_rank": 102,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:31",
       "event": "Fern Creek Gladiator"
     },
     {
@@ -271,22 +292,6 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "34994792132",
-      "opponent_career_id": "career_002629",
-      "opponent_name": "Aiden Trammell",
-      "opponent_team": "Spencer County",
-      "opponent_team_rank": 29,
-      "opponent_weight": 157,
-      "opponent_rank": 54,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Derby City Classic"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "34988539132",
       "opponent_career_id": "career_000721",
       "opponent_name": "Jayden Lopez",
@@ -298,6 +303,22 @@
       "result": "L",
       "method": "TF",
       "score": "16-0",
+      "duration": "0:00",
+      "event": "Derby City Classic"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34994792132",
+      "opponent_career_id": "career_002629",
+      "opponent_name": "Aiden Trammell",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": 29,
+      "opponent_weight": 157,
+      "opponent_rank": 54,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
       "duration": "0:00",
       "event": "Derby City Classic"
     },
@@ -378,15 +399,15 @@
       "season": 2026,
       "grade": 8,
       "team": "Lafayette",
-      "record": "8-11",
+      "record": "8-13",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 8,
-    "losses": 11,
-    "win_pct": 0.421
+    "losses": 13,
+    "win_pct": 0.381
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

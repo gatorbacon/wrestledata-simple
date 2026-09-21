@@ -5,6 +5,11 @@
   "team_slug": "boyle_county",
   "team_rank": 1,
   "weight_class": 132,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 5,
   "record": {
@@ -288,7 +293,7 @@
     {
       "date": "2026-01-17",
       "opponent_id": "35381407132",
-      "opponent_career_id": null,
+      "opponent_career_id": "career_002805",
       "opponent_name": "Breylen Clifford",
       "opponent_team": "Union County",
       "opponent_team_rank": 17,
@@ -316,6 +321,22 @@
       "score": null,
       "duration": "1:14",
       "event": "vs. Union County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35421050132",
+      "opponent_career_id": "career_005157",
+      "opponent_name": "Brayden Stephens",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 16,
+      "opponent_weight": 138,
+      "opponent_rank": 62,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Whitley County"
     },
     {
       "date": "2026-01-10",
@@ -380,22 +401,6 @@
       "score": null,
       "duration": "1:59",
       "event": "vs. Corbin"
-    },
-    {
-      "date": "2026-01-10",
-      "opponent_id": "35421050132",
-      "opponent_career_id": "career_005157",
-      "opponent_name": "Brayden Stephens",
-      "opponent_team": "Whitley County",
-      "opponent_team_rank": 16,
-      "opponent_weight": 138,
-      "opponent_rank": 62,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Whitley County"
     },
     {
       "date": "2026-01-07",
@@ -543,22 +548,6 @@
     },
     {
       "date": "2025-12-30",
-      "opponent_id": "OUTSTATE_6a97835666db",
-      "opponent_career_id": null,
-      "opponent_name": "Cameron Albright",
-      "opponent_team": "Piqua High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "TF",
-      "score": "15-0",
-      "duration": "0:00",
-      "event": "GMVWA Invitational"
-    },
-    {
-      "date": "2025-12-30",
       "opponent_id": "OUTSTATE_9496f9037e34",
       "opponent_career_id": null,
       "opponent_name": "Blaine Demarco",
@@ -570,6 +559,22 @@
       "result": "L",
       "method": "FALL",
       "score": null,
+      "duration": "0:00",
+      "event": "GMVWA Invitational"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "OUTSTATE_6a97835666db",
+      "opponent_career_id": null,
+      "opponent_name": "Cameron Albright",
+      "opponent_team": "Piqua High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
       "duration": "0:00",
       "event": "GMVWA Invitational"
     },
@@ -671,6 +676,22 @@
     },
     {
       "date": "2025-12-21",
+      "opponent_id": "OUTSTATE_631c0c93dab7",
+      "opponent_career_id": null,
+      "opponent_name": "Nick Vivian",
+      "opponent_team": "La Salle High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "MD",
+      "score": "12-3",
+      "duration": "7:00",
+      "event": "SWOWCA"
+    },
+    {
+      "date": "2025-12-21",
       "opponent_id": "OUTSTATE_906a07fed42e",
       "opponent_career_id": null,
       "opponent_name": "Max Monahan",
@@ -699,22 +720,6 @@
       "method": "FALL",
       "score": null,
       "duration": "1:31",
-      "event": "SWOWCA"
-    },
-    {
-      "date": "2025-12-21",
-      "opponent_id": "OUTSTATE_631c0c93dab7",
-      "opponent_career_id": null,
-      "opponent_name": "Nick Vivian",
-      "opponent_team": "La Salle High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "MD",
-      "score": "12-3",
-      "duration": "7:00",
       "event": "SWOWCA"
     },
     {
@@ -1007,5 +1012,5 @@
     "losses": 29,
     "win_pct": 0.8
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

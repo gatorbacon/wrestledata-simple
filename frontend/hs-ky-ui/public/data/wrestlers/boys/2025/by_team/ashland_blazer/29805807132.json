@@ -5,10 +5,15 @@
   "team_slug": "ashland_blazer",
   "team_rank": null,
   "weight_class": 215,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
-    "overall": "23-12",
+    "overall": "24-12",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.905,
-    "bonus_rate": 0.952,
+    "pin_rate": 0.864,
+    "bonus_rate": 0.909,
     "majors": 0,
     "techs": 1,
     "pins": 19
@@ -113,6 +118,22 @@
       "method": "FALL",
       "score": null,
       "duration": "3:38",
+      "event": "KHSAA Region 8"
+    },
+    {
+      "date": "2025-02-22",
+      "opponent_id": "31262874132",
+      "opponent_career_id": "career_002179",
+      "opponent_name": "Kameron Akers",
+      "opponent_team": "Pikeville",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "DEC",
+      "score": "6-0",
+      "duration": "7:00",
       "event": "KHSAA Region 8"
     },
     {
@@ -437,19 +458,19 @@
     },
     {
       "date": "2024-12-14",
-      "opponent_id": "30630919132",
-      "opponent_career_id": "career_000304",
-      "opponent_name": "Charles Farley",
-      "opponent_team": "Bryan Station",
+      "opponent_id": "OUTSTATE_0e10b1d4d3cb",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Holmes",
       "opponent_team_rank": null,
-      "opponent_weight": 175,
+      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "190",
       "result": "W",
-      "method": "FALL",
+      "method": "FF",
       "score": null,
-      "duration": "1:11",
-      "event": "vs. Bryan Station"
+      "duration": "7:00",
+      "event": "vs. Holmes"
     },
     {
       "date": "2024-12-14",
@@ -469,19 +490,19 @@
     },
     {
       "date": "2024-12-14",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Holmes",
+      "opponent_id": "30630919132",
+      "opponent_career_id": "career_000304",
+      "opponent_name": "Charles Farley",
+      "opponent_team": "Bryan Station",
       "opponent_team_rank": null,
-      "opponent_weight": null,
+      "opponent_weight": 175,
       "opponent_rank": null,
       "weight_class": "190",
       "result": "W",
-      "method": "FF",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
-      "event": "vs. Holmes"
+      "duration": "1:11",
+      "event": "vs. Bryan Station"
     },
     {
       "date": "2024-12-14",
@@ -565,22 +586,6 @@
     },
     {
       "date": "2024-12-07",
-      "opponent_id": "OUTSTATE_174856543852",
-      "opponent_career_id": null,
-      "opponent_name": "James Stamper",
-      "opponent_team": "Boyd County",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "AIT Invitational"
-    },
-    {
-      "date": "2024-12-07",
       "opponent_id": "30817222132",
       "opponent_career_id": null,
       "opponent_name": "Ezekiel Lewis",
@@ -593,6 +598,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:01",
+      "event": "AIT Invitational"
+    },
+    {
+      "date": "2024-12-07",
+      "opponent_id": "OUTSTATE_174856543852",
+      "opponent_career_id": null,
+      "opponent_name": "James Stamper",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
       "event": "AIT Invitational"
     }
   ],
@@ -619,7 +640,7 @@
       "season": 2025,
       "grade": 10,
       "team": "Ashland Blazer",
-      "record": "23-12",
+      "record": "24-12",
       "regional_place": null,
       "state_place": null
     },
@@ -627,7 +648,7 @@
       "season": 2024,
       "grade": 9,
       "team": "Ashland Blazer",
-      "record": "19-18",
+      "record": "19-19",
       "regional_place": null,
       "state_place": null
     },
@@ -641,9 +662,9 @@
     }
   ],
   "career_record": {
-    "wins": 66,
-    "losses": 44,
-    "win_pct": 0.6
+    "wins": 67,
+    "losses": 45,
+    "win_pct": 0.598
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

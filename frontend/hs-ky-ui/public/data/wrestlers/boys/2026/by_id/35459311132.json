@@ -5,6 +5,11 @@
   "team_slug": "rowan_county",
   "team_rank": 121,
   "weight_class": 175,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 63,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.842,
-    "bonus_rate": 0.842,
+    "pin_rate": 0.889,
+    "bonus_rate": 0.889,
     "majors": 0,
     "techs": 0,
     "pins": 16
@@ -143,6 +148,22 @@
     },
     {
       "date": "2026-02-07",
+      "opponent_id": "35247374132",
+      "opponent_career_id": "career_001632",
+      "opponent_name": "Gage Carrington",
+      "opponent_team": "Mason County",
+      "opponent_team_rank": 107,
+      "opponent_weight": 175,
+      "opponent_rank": 148,
+      "weight_class": "165",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Mason County Round Robin"
+    },
+    {
+      "date": "2026-02-07",
       "opponent_id": "35124878132",
       "opponent_career_id": "career_003932",
       "opponent_name": "Ethan Brandhorst",
@@ -154,22 +175,6 @@
       "result": "L",
       "method": "MD",
       "score": "11-2",
-      "duration": "7:00",
-      "event": "Mason County Round Robin"
-    },
-    {
-      "date": "2026-02-07",
-      "opponent_id": "35247374132",
-      "opponent_career_id": null,
-      "opponent_name": "Gage Carrington",
-      "opponent_team": "Mason County",
-      "opponent_team_rank": 107,
-      "opponent_weight": 175,
-      "opponent_rank": 148,
-      "weight_class": "165",
-      "result": "W",
-      "method": "MFF",
-      "score": null,
       "duration": "7:00",
       "event": "Mason County Round Robin"
     },
@@ -335,22 +340,6 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35599162132",
-      "opponent_career_id": "career_001706",
-      "opponent_name": "Nate Stephens",
-      "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 109,
-      "opponent_weight": 157,
-      "opponent_rank": 51,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Rowan County"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35021793132",
       "opponent_career_id": "career_000319",
       "opponent_name": "Tucker Moore",
@@ -363,7 +352,23 @@
       "method": "FALL",
       "score": null,
       "duration": "3:20",
-      "event": "vs. Rowan County"
+      "event": "vs. Bullitt Central"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35599162132",
+      "opponent_career_id": "career_001706",
+      "opponent_name": "Nate Stephens",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 109,
+      "opponent_weight": 157,
+      "opponent_rank": 51,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Mccreary Central"
     },
     {
       "date": "2025-12-13",
@@ -427,7 +432,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Rowan County"
+      "event": "vs. Danville"
     },
     {
       "date": "2025-12-06",
@@ -515,15 +520,15 @@
       "season": 2025,
       "grade": 11,
       "team": "Rowan County",
-      "record": "27-16",
+      "record": "26-16",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 47,
+    "wins": 46,
     "losses": 24,
-    "win_pct": 0.662
+    "win_pct": 0.657
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,6 +5,11 @@
   "team_slug": "holmes",
   "team_rank": 91,
   "weight_class": 132,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 143,
   "record": {
@@ -47,6 +52,22 @@
   "match_list": [
     {
       "date": "2026-02-04",
+      "opponent_id": "35488264132",
+      "opponent_career_id": "career_000610",
+      "opponent_name": "Braden Young",
+      "opponent_team": "Covington Catholic",
+      "opponent_team_rank": 41,
+      "opponent_weight": 144,
+      "opponent_rank": 105,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Covington Catholic"
+    },
+    {
+      "date": "2026-02-04",
       "opponent_id": "35281281132",
       "opponent_career_id": "career_000686",
       "opponent_name": "Justin Kidd",
@@ -59,7 +80,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Holmes"
+      "event": "vs. Dixie Heights"
     },
     {
       "date": "2026-02-04",
@@ -78,20 +99,20 @@
       "event": "vs. Covington Catholic"
     },
     {
-      "date": "2026-02-04",
-      "opponent_id": "35488264132",
-      "opponent_career_id": "career_000610",
-      "opponent_name": "Braden Young",
-      "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 41,
-      "opponent_weight": 144,
+      "date": "2026-01-21",
+      "opponent_id": "35118664132",
+      "opponent_career_id": "career_005224",
+      "opponent_name": "Awab Fadel",
+      "opponent_team": "Boone County",
+      "opponent_team_rank": 60,
+      "opponent_weight": 132,
       "opponent_rank": 105,
-      "weight_class": "144",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "TF",
+      "score": "22-4",
       "duration": "0:00",
-      "event": "vs. Holmes"
+      "event": "vs. Boone County"
     },
     {
       "date": "2026-01-21",
@@ -108,22 +129,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Holy Cross (Covington)"
-    },
-    {
-      "date": "2026-01-21",
-      "opponent_id": "35118664132",
-      "opponent_career_id": "career_005224",
-      "opponent_name": "Awab Fadel",
-      "opponent_team": "Boone County",
-      "opponent_team_rank": 60,
-      "opponent_weight": 132,
-      "opponent_rank": 105,
-      "weight_class": "138",
-      "result": "W",
-      "method": "TF",
-      "score": "22-4",
-      "duration": "0:00",
-      "event": "vs. Holmes"
     },
     {
       "date": "2026-01-07",
@@ -175,22 +180,6 @@
     },
     {
       "date": "2026-01-03",
-      "opponent_id": "OUTSTATE_cd356c00581d",
-      "opponent_career_id": null,
-      "opponent_name": "Sevin Martin",
-      "opponent_team": "Hughes Science Technology Engineering and Mathematics High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "TF",
-      "score": "19-4",
-      "duration": "0:00",
-      "event": "Bob Kerns Inv"
-    },
-    {
-      "date": "2026-01-03",
       "opponent_id": "OUTSTATE_41244cb7fb54",
       "opponent_career_id": null,
       "opponent_name": "Tristan Reed",
@@ -206,20 +195,20 @@
       "event": "Bob Kerns Inv"
     },
     {
-      "date": "2025-12-27",
-      "opponent_id": "35663338132",
-      "opponent_career_id": "career_002325",
-      "opponent_name": "Ethan Berhe",
-      "opponent_team": "Ryle",
-      "opponent_team_rank": 8,
-      "opponent_weight": 126,
-      "opponent_rank": 27,
-      "weight_class": "132",
-      "result": "L",
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_cd356c00581d",
+      "opponent_career_id": null,
+      "opponent_name": "Sevin Martin",
+      "opponent_team": "Hughes Science Technology Engineering and Mathematics High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
       "method": "TF",
-      "score": "16-1",
-      "duration": "4:44",
-      "event": "NKAC"
+      "score": "19-4",
+      "duration": "0:00",
+      "event": "Bob Kerns Inv"
     },
     {
       "date": "2025-12-27",
@@ -270,6 +259,38 @@
       "event": "NKAC"
     },
     {
+      "date": "2025-12-27",
+      "opponent_id": "35663338132",
+      "opponent_career_id": "career_002325",
+      "opponent_name": "Ethan Berhe",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": 8,
+      "opponent_weight": 126,
+      "opponent_rank": 27,
+      "weight_class": "132",
+      "result": "L",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "4:44",
+      "event": "NKAC"
+    },
+    {
+      "date": "2025-12-17",
+      "opponent_id": "35215109132",
+      "opponent_career_id": "career_005314",
+      "opponent_name": "Chase Zuckerman",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": 7,
+      "opponent_weight": 126,
+      "opponent_rank": 154,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:16",
+      "event": "vs. Cooper"
+    },
+    {
       "date": "2025-12-17",
       "opponent_id": "OUTSTATE_63b1d72eb9c1",
       "opponent_career_id": null,
@@ -286,22 +307,6 @@
       "event": "vs. Archbishop McNicholas High School"
     },
     {
-      "date": "2025-12-17",
-      "opponent_id": "35215109132",
-      "opponent_career_id": "career_005314",
-      "opponent_name": "Chase Zuckerman",
-      "opponent_team": "Cooper",
-      "opponent_team_rank": 7,
-      "opponent_weight": 126,
-      "opponent_rank": 154,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:16",
-      "event": "vs. Holmes"
-    },
-    {
       "date": "2025-12-10",
       "opponent_id": "35635453132",
       "opponent_career_id": "career_001075",
@@ -315,23 +320,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Holmes"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35783123132",
-      "opponent_career_id": "career_004643",
-      "opponent_name": "Preston Detzel",
-      "opponent_team": "Holy Cross (Covington)",
-      "opponent_team_rank": 92,
-      "opponent_weight": 120,
-      "opponent_rank": 140,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:54",
-      "event": "Bearcat Brawl 2025"
+      "event": "vs. Greenup County"
     },
     {
       "date": "2025-12-06",
@@ -347,22 +336,6 @@
       "method": "FALL",
       "score": null,
       "duration": "0:44",
-      "event": "Bearcat Brawl 2025"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35219503132",
-      "opponent_career_id": "career_001248",
-      "opponent_name": "Riley Jones",
-      "opponent_team": "Holmes",
-      "opponent_team_rank": 91,
-      "opponent_weight": 126,
-      "opponent_rank": 95,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:59",
       "event": "Bearcat Brawl 2025"
     },
     {
@@ -396,6 +369,38 @@
       "score": null,
       "duration": "2:25",
       "event": "Bearcat Brawl 2025"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35219503132",
+      "opponent_career_id": "career_001248",
+      "opponent_name": "Riley Jones",
+      "opponent_team": "Holmes",
+      "opponent_team_rank": 91,
+      "opponent_weight": 126,
+      "opponent_rank": 95,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:59",
+      "event": "Bearcat Brawl 2025"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35783123132",
+      "opponent_career_id": "career_004643",
+      "opponent_name": "Preston Detzel",
+      "opponent_team": "Holy Cross (Covington)",
+      "opponent_team_rank": 92,
+      "opponent_weight": 120,
+      "opponent_rank": 140,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:54",
+      "event": "Bearcat Brawl 2025"
     }
   ],
   "career": {
@@ -420,5 +425,5 @@
     "losses": 13,
     "win_pct": 0.409
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

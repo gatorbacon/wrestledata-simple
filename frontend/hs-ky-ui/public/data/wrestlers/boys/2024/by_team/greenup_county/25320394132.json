@@ -5,10 +5,15 @@
   "team_slug": "greenup_county",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
-    "overall": "17-12",
+    "overall": "17-13",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.889,
-    "bonus_rate": 0.889,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
     "pins": 8
@@ -101,10 +106,26 @@
     },
     {
       "date": "2024-01-30",
+      "opponent_id": "25328548132",
+      "opponent_career_id": "career_000238",
+      "opponent_name": "Zander Nottingham",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Boyd County"
+    },
+    {
+      "date": "2024-01-30",
       "opponent_id": "OUTSTATE_7f935f5b3c09",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_team": "Ashland Blazer",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -130,22 +151,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Russell"
-    },
-    {
-      "date": "2024-01-30",
-      "opponent_id": "25328548132",
-      "opponent_career_id": "career_000238",
-      "opponent_name": "Zander Nottingham",
-      "opponent_team": "Boyd County",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Greenup County"
     },
     {
       "date": "2024-01-23",
@@ -293,22 +298,6 @@
     },
     {
       "date": "2023-12-29",
-      "opponent_id": "25371373132",
-      "opponent_career_id": "career_001603",
-      "opponent_name": "John Cline",
-      "opponent_team": "Martin County",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:14",
-      "event": "Hatfield & McCoy 32"
-    },
-    {
-      "date": "2023-12-29",
       "opponent_id": "25328792132",
       "opponent_career_id": "career_000242",
       "opponent_name": "Jace Bowling",
@@ -321,6 +310,22 @@
       "method": "DEC",
       "score": "6-1",
       "duration": "7:00",
+      "event": "Hatfield & McCoy 32"
+    },
+    {
+      "date": "2023-12-29",
+      "opponent_id": "25371373132",
+      "opponent_career_id": "career_001603",
+      "opponent_name": "John Cline",
+      "opponent_team": "Martin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:14",
       "event": "Hatfield & McCoy 32"
     },
     {
@@ -421,22 +426,6 @@
     },
     {
       "date": "2023-12-09",
-      "opponent_id": "25371373132",
-      "opponent_career_id": "career_001603",
-      "opponent_name": "John Cline",
-      "opponent_team": "Martin County",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Ashland lnvitational"
-    },
-    {
-      "date": "2023-12-09",
       "opponent_id": "25328792132",
       "opponent_career_id": "career_000242",
       "opponent_name": "Jace Bowling",
@@ -465,6 +454,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:44",
+      "event": "Ashland lnvitational"
+    },
+    {
+      "date": "2023-12-09",
+      "opponent_id": "25371373132",
+      "opponent_career_id": "career_001603",
+      "opponent_name": "John Cline",
+      "opponent_team": "Martin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
       "event": "Ashland lnvitational"
     },
     {
@@ -529,7 +534,7 @@
       "season": 2024,
       "grade": 9,
       "team": "Greenup County",
-      "record": "17-12",
+      "record": "17-13",
       "regional_place": null,
       "state_place": null
     },
@@ -544,8 +549,8 @@
   ],
   "career_record": {
     "wins": 17,
-    "losses": 13,
-    "win_pct": 0.567
+    "losses": 14,
+    "win_pct": 0.548
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

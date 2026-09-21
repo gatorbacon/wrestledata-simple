@@ -5,10 +5,15 @@
   "team_slug": "taylor_county",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
-    "overall": "29-10",
+    "overall": "27-10",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.63,
-    "bonus_rate": 0.778,
+    "pin_rate": 0.654,
+    "bonus_rate": 0.808,
     "majors": 2,
     "techs": 2,
     "pins": 17
@@ -245,22 +250,6 @@
     },
     {
       "date": "2025-01-25",
-      "opponent_id": "30117637132",
-      "opponent_career_id": "career_000371",
-      "opponent_name": "Evan Ramage",
-      "opponent_team": "Caldwell County",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:34",
-      "event": "vs. Taylor County"
-    },
-    {
-      "date": "2025-01-25",
       "opponent_id": "30395813132",
       "opponent_career_id": "career_000081",
       "opponent_name": "Amani Swetnam",
@@ -273,7 +262,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:27",
-      "event": "vs. Taylor County"
+      "event": "vs. Atherton"
+    },
+    {
+      "date": "2025-01-25",
+      "opponent_id": "30117637132",
+      "opponent_career_id": "career_000371",
+      "opponent_name": "Evan Ramage",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:34",
+      "event": "vs. Caldwell County"
     },
     {
       "date": "2025-01-25",
@@ -401,7 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Taylor County"
+      "event": "vs. Green County"
     },
     {
       "date": "2025-01-14",
@@ -417,7 +422,7 @@
       "method": "TF",
       "score": "16-1",
       "duration": "0:00",
-      "event": "vs. Taylor County"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2025-01-14",
@@ -433,7 +438,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:40",
-      "event": "vs. Taylor County"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2025-01-14",
@@ -449,7 +454,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Taylor County"
+      "event": "vs. Spencer County"
     },
     {
       "date": "2024-12-28",
@@ -466,38 +471,6 @@
       "score": "8-1",
       "duration": "7:00",
       "event": "GMVWA Holiday Tournament"
-    },
-    {
-      "date": "2024-12-21",
-      "opponent_id": "30080484132",
-      "opponent_career_id": "career_001329",
-      "opponent_name": "Emari Simon",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:37",
-      "event": "4th Annual Cardinal Clash Mens Tourn."
-    },
-    {
-      "date": "2024-12-21",
-      "opponent_id": "29804367132",
-      "opponent_career_id": "career_001939",
-      "opponent_name": "Zane McCoy",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "DEC",
-      "score": "8-4",
-      "duration": "7:00",
-      "event": "4th Annual Cardinal Clash Mens Tourn."
     },
     {
       "date": "2024-12-21",
@@ -549,6 +522,38 @@
     },
     {
       "date": "2024-12-21",
+      "opponent_id": "30080484132",
+      "opponent_career_id": "career_001329",
+      "opponent_name": "Emari Simon",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:37",
+      "event": "4th Annual Cardinal Clash Mens Tourn."
+    },
+    {
+      "date": "2024-12-21",
+      "opponent_id": "29804367132",
+      "opponent_career_id": "career_001939",
+      "opponent_name": "Zane McCoy",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-4",
+      "duration": "7:00",
+      "event": "4th Annual Cardinal Clash Mens Tourn."
+    },
+    {
+      "date": "2024-12-21",
       "opponent_id": "29861926132",
       "opponent_career_id": null,
       "opponent_name": "Benjamin Ivey",
@@ -565,22 +570,6 @@
     },
     {
       "date": "2024-12-14",
-      "opponent_id": "29788819132",
-      "opponent_career_id": "career_001800",
-      "opponent_name": "Brody McKune",
-      "opponent_team": "Moore",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "MFF",
-      "score": null,
-      "duration": "7:00",
-      "event": "2024 Ryle Raider Rumble"
-    },
-    {
-      "date": "2024-12-14",
       "opponent_id": "30002910132",
       "opponent_career_id": "career_000620",
       "opponent_name": "Keegan Bishop",
@@ -592,6 +581,22 @@
       "result": "L",
       "method": "MD",
       "score": "10-2",
+      "duration": "7:00",
+      "event": "2024 Ryle Raider Rumble"
+    },
+    {
+      "date": "2024-12-14",
+      "opponent_id": "29788819132",
+      "opponent_career_id": "career_001800",
+      "opponent_name": "Brody McKune",
+      "opponent_team": "Moore",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
       "duration": "7:00",
       "event": "2024 Ryle Raider Rumble"
     },
@@ -644,7 +649,7 @@
       "season": 2025,
       "grade": 12,
       "team": "Taylor County",
-      "record": "29-10",
+      "record": "27-10",
       "regional_place": 3,
       "state_place": 7
     },
@@ -652,7 +657,7 @@
       "season": 2024,
       "grade": 11,
       "team": "Taylor County",
-      "record": "24-13",
+      "record": "25-14",
       "regional_place": 3,
       "state_place": null
     },
@@ -660,7 +665,7 @@
       "season": 2023,
       "grade": 10,
       "team": "Taylor County",
-      "record": "23-10",
+      "record": "24-10",
       "regional_place": 4,
       "state_place": null
     },
@@ -668,7 +673,7 @@
       "season": 2022,
       "grade": 9,
       "team": "Taylor County",
-      "record": "12-13",
+      "record": "13-15",
       "regional_place": null,
       "state_place": null
     },
@@ -676,15 +681,15 @@
       "season": 2021,
       "grade": 9,
       "team": "Taylor County",
-      "record": "5-5",
+      "record": "6-6",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 93,
-    "losses": 51,
-    "win_pct": 0.646
+    "wins": 95,
+    "losses": 55,
+    "win_pct": 0.633
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

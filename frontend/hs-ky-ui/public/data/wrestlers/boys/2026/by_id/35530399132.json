@@ -5,11 +5,16 @@
   "team_slug": "somerset",
   "team_rank": 36,
   "weight_class": 120,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 132,
   "record": {
     "overall": "7-11",
-    "vs_ranked": "5-11",
+    "vs_ranked": "6-11",
     "vs_top10": "0-0",
     "vs_top25": "0-2"
   },
@@ -20,14 +25,14 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.8,
+    "pin_rate": 0.833,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 4
+    "pins": 5
   },
   "opponent_breakdown": {
-    "ranked_wins": 5,
+    "ranked_wins": 6,
     "ranked_losses": 11,
     "top10_wins": 0,
     "top10_losses": 0,
@@ -126,6 +131,22 @@
       "event": "Jessamine County Clash"
     },
     {
+      "date": "2026-02-07",
+      "opponent_id": "35359596132",
+      "opponent_career_id": "career_002102",
+      "opponent_name": "Matthew Glover",
+      "opponent_team": "Paul Laurence Dunbar",
+      "opponent_team_rank": 115,
+      "opponent_weight": 120,
+      "opponent_rank": 106,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Jessamine County Clash"
+    },
+    {
       "date": "2026-01-13",
       "opponent_id": "35404068132",
       "opponent_career_id": "career_004593",
@@ -139,7 +160,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:11",
-      "event": "vs. Somerset"
+      "event": "vs. Pulaski County"
     },
     {
       "date": "2026-01-13",
@@ -191,38 +212,6 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35192350132",
-      "opponent_career_id": "career_005506",
-      "opponent_name": "Izik Hamann",
-      "opponent_team": "Logan County",
-      "opponent_team_rank": 104,
-      "opponent_weight": 113,
-      "opponent_rank": 27,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:37",
-      "event": "vs. Somerset"
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "35457910132",
-      "opponent_career_id": "career_005010",
-      "opponent_name": "Kase Walters",
-      "opponent_team": "Hart County",
-      "opponent_team_rank": 89,
-      "opponent_weight": 120,
-      "opponent_rank": 70,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:38",
-      "event": "vs. Somerset"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35001151132",
       "opponent_career_id": "career_000460",
       "opponent_name": "Chase Mort",
@@ -235,7 +224,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:49",
-      "event": "vs. Somerset"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2025-12-13",
@@ -251,7 +240,39 @@
       "method": "TF",
       "score": "15-0",
       "duration": "2:24",
-      "event": "vs. Somerset"
+      "event": "vs. Green County"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35457910132",
+      "opponent_career_id": "career_005010",
+      "opponent_name": "Kase Walters",
+      "opponent_team": "Hart County",
+      "opponent_team_rank": 89,
+      "opponent_weight": 120,
+      "opponent_rank": 70,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:38",
+      "event": "vs. Hart County"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35192350132",
+      "opponent_career_id": "career_005506",
+      "opponent_name": "Izik Hamann",
+      "opponent_team": "Logan County",
+      "opponent_team_rank": 104,
+      "opponent_weight": 113,
+      "opponent_rank": 27,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:37",
+      "event": "vs. Logan County"
     },
     {
       "date": "2025-12-13",
@@ -268,22 +289,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Bethlehem"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35651895132",
-      "opponent_career_id": "career_005433",
-      "opponent_name": "Landon Townsend",
-      "opponent_team": "Harrison County",
-      "opponent_team_rank": 3,
-      "opponent_weight": 113,
-      "opponent_rank": 125,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Joe Cochran State Farm HCIWT"
     },
     {
       "date": "2025-12-06",
@@ -312,6 +317,22 @@
       "opponent_rank": 80,
       "weight_class": "120",
       "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Joe Cochran State Farm HCIWT"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35651895132",
+      "opponent_career_id": "career_005433",
+      "opponent_name": "Landon Townsend",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 3,
+      "opponent_weight": 113,
+      "opponent_rank": 125,
+      "weight_class": "120",
+      "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -349,5 +370,5 @@
     "losses": 19,
     "win_pct": 0.269
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,13 +5,18 @@
   "team_slug": "western_hills",
   "team_rank": 140,
   "weight_class": 113,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 12,
   "record": {
-    "overall": "33-9",
-    "vs_ranked": "23-8",
-    "vs_top10": "0-6",
-    "vs_top25": "6-8"
+    "overall": "33-10",
+    "vs_ranked": "23-9",
+    "vs_top10": "0-7",
+    "vs_top25": "6-9"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,9 +33,9 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 23,
-    "ranked_losses": 8,
+    "ranked_losses": 9,
     "top10_wins": 0,
-    "top10_losses": 6,
+    "top10_losses": 7,
     "win_over_highest_rank": {
       "opponent_id": "35883514132",
       "opponent_rank": 13,
@@ -203,7 +208,7 @@
       "method": "DEC",
       "score": "10-5",
       "duration": "7:00",
-      "event": "vs. Western Hills"
+      "event": "vs. Madison Central"
     },
     {
       "date": "2026-02-12",
@@ -219,7 +224,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Western Hills"
+      "event": "vs. Wayne County"
     },
     {
       "date": "2026-02-12",
@@ -251,7 +256,39 @@
       "method": "FALL",
       "score": null,
       "duration": "0:52",
-      "event": "vs. Western Hills"
+      "event": "vs. Logan County"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35674203132",
+      "opponent_career_id": "career_005597",
+      "opponent_name": "Kyler Rush",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": 34,
+      "opponent_weight": 120,
+      "opponent_rank": 138,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:52",
+      "event": "vs. Owensboro"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35637409132",
+      "opponent_career_id": "career_005638",
+      "opponent_name": "Dylan Withers",
+      "opponent_team": "Russell County",
+      "opponent_team_rank": 123,
+      "opponent_weight": 120,
+      "opponent_rank": 92,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:19",
+      "event": "vs. Russell County"
     },
     {
       "date": "2026-02-07",
@@ -267,7 +304,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:32",
-      "event": "vs. Western Hills"
+      "event": "vs. South Warren"
     },
     {
       "date": "2026-02-07",
@@ -302,38 +339,6 @@
       "event": "vs. Owensboro Catholic"
     },
     {
-      "date": "2026-02-07",
-      "opponent_id": "35674203132",
-      "opponent_career_id": "career_005597",
-      "opponent_name": "Kyler Rush",
-      "opponent_team": "Owensboro",
-      "opponent_team_rank": 34,
-      "opponent_weight": 120,
-      "opponent_rank": 138,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:52",
-      "event": "vs. Western Hills"
-    },
-    {
-      "date": "2026-02-07",
-      "opponent_id": "35637409132",
-      "opponent_career_id": "career_005638",
-      "opponent_name": "Dylan Withers",
-      "opponent_team": "Russell County",
-      "opponent_team_rank": 123,
-      "opponent_weight": 120,
-      "opponent_rank": 92,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:19",
-      "event": "vs. Western Hills"
-    },
-    {
       "date": "2026-01-31",
       "opponent_id": "35402863132",
       "opponent_career_id": null,
@@ -347,7 +352,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Western Hills"
+      "event": "vs. Bryan Station"
     },
     {
       "date": "2026-01-31",
@@ -363,7 +368,7 @@
       "method": "DQ",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Western Hills"
+      "event": "vs. Conner"
     },
     {
       "date": "2026-01-31",
@@ -379,7 +384,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Western Hills"
+      "event": "vs. South Oldham"
     },
     {
       "date": "2026-01-31",
@@ -427,7 +432,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Western Hills"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2026-01-10",
@@ -443,7 +448,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:02",
-      "event": "vs. Western Hills"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2026-01-10",
@@ -459,7 +464,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Western Hills"
+      "event": "vs. Taylor County"
     },
     {
       "date": "2026-01-10",
@@ -506,6 +511,22 @@
       "result": "L",
       "method": "DEC",
       "score": "6-3",
+      "duration": "7:00",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35122303132",
+      "opponent_career_id": "career_005590",
+      "opponent_name": "Lukas Shuck",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": 113,
+      "opponent_weight": 113,
+      "opponent_rank": 8,
+      "weight_class": "113",
+      "result": "L",
+      "method": "DEC",
+      "score": "5-0",
       "duration": "7:00",
       "event": "Warhawk Classic"
     },
@@ -603,7 +624,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:45",
-      "event": "vs. Western Hills"
+      "event": "vs. George Rogers Clark"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35205996132",
+      "opponent_career_id": "career_005052",
+      "opponent_name": "William Lay",
+      "opponent_team": "Mercer County",
+      "opponent_team_rank": 111,
+      "opponent_weight": 126,
+      "opponent_rank": 137,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:42",
+      "event": "vs. Mercer County"
     },
     {
       "date": "2025-12-13",
@@ -638,22 +675,6 @@
       "event": "vs. Trinity (Whitesville)"
     },
     {
-      "date": "2025-12-13",
-      "opponent_id": "35205996132",
-      "opponent_career_id": "career_005052",
-      "opponent_name": "William Lay",
-      "opponent_team": "Mercer County",
-      "opponent_team_rank": 111,
-      "opponent_weight": 126,
-      "opponent_rank": 137,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:42",
-      "event": "vs. Western Hills"
-    },
-    {
       "date": "2025-12-06",
       "opponent_id": "34993883132",
       "opponent_career_id": "career_001054",
@@ -667,7 +688,7 @@
       "method": "DEC",
       "score": "9-5",
       "duration": "7:00",
-      "event": "vs. Western Hills"
+      "event": "vs. Green County"
     },
     {
       "date": "2025-12-06",
@@ -683,7 +704,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Western Hills"
+      "event": "vs. Meade County"
     },
     {
       "date": "2025-12-06",
@@ -732,7 +753,7 @@
       "season": 2026,
       "grade": 9,
       "team": "Western Hills",
-      "record": "33-9",
+      "record": "33-10",
       "regional_place": 3,
       "state_place": null
     },
@@ -755,8 +776,8 @@
   ],
   "career_record": {
     "wins": 73,
-    "losses": 32,
-    "win_pct": 0.695
+    "losses": 33,
+    "win_pct": 0.689
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

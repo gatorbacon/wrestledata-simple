@@ -5,11 +5,16 @@
   "team_slug": "simon_kenton",
   "team_rank": 35,
   "weight_class": 138,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 43,
   "record": {
-    "overall": "15-6",
-    "vs_ranked": "11-3",
+    "overall": "16-6",
+    "vs_ranked": "11-4",
     "vs_top10": "0-1",
     "vs_top25": "0-3"
   },
@@ -20,15 +25,15 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.769,
-    "bonus_rate": 0.846,
+    "pin_rate": 0.786,
+    "bonus_rate": 0.857,
     "majors": 1,
     "techs": 0,
-    "pins": 10
+    "pins": 11
   },
   "opponent_breakdown": {
     "ranked_wins": 11,
-    "ranked_losses": 3,
+    "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 1,
     "win_over_highest_rank": {
@@ -38,10 +43,10 @@
       "method": "Fall 3:54"
     },
     "worst_loss": {
-      "opponent_id": "35205066132",
-      "opponent_rank": 23,
-      "opponent_name": "Jack Harrod",
-      "method": "TF 15-0 0:00"
+      "opponent_id": "34995380132",
+      "opponent_rank": 43,
+      "opponent_name": "Levi Howard",
+      "method": "Fall 1:38"
     }
   },
   "match_list": [
@@ -59,7 +64,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Great Crossing"
+    },
+    {
+      "date": "2026-01-15",
+      "opponent_id": "35663707132",
+      "opponent_career_id": "career_002335",
+      "opponent_name": "Diego Venegas",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": 8,
+      "opponent_weight": 144,
+      "opponent_rank": 66,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Ryle"
     },
     {
       "date": "2026-01-15",
@@ -76,22 +97,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Campbell County"
-    },
-    {
-      "date": "2026-01-15",
-      "opponent_id": "35663707132",
-      "opponent_career_id": "career_002335",
-      "opponent_name": "Diego Venegas",
-      "opponent_team": "Ryle",
-      "opponent_team_rank": 8,
-      "opponent_weight": 144,
-      "opponent_rank": 66,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Simon Kenton"
     },
     {
       "date": "2026-01-10",
@@ -187,6 +192,22 @@
       "method": "FALL",
       "score": null,
       "duration": "3:54",
+      "event": "2026 CIWT"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "34995380132",
+      "opponent_career_id": "career_001478",
+      "opponent_name": "Levi Howard",
+      "opponent_team": "Lexington Christian",
+      "opponent_team_rank": 103,
+      "opponent_weight": 144,
+      "opponent_rank": 43,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:38",
       "event": "2026 CIWT"
     },
     {
@@ -299,7 +320,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2025-11-29",
@@ -315,7 +336,39 @@
       "method": "TF",
       "score": "15-0",
       "duration": "0:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Bullitt East"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "34993726132",
+      "opponent_career_id": "career_001128",
+      "opponent_name": "Branson Fain",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 3,
+      "opponent_weight": 150,
+      "opponent_rank": 20,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Harrison County"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "OUTSTATE_c187bf3da90b",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": 47,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. North Oldham"
     },
     {
       "date": "2025-11-29",
@@ -335,35 +388,19 @@
     },
     {
       "date": "2025-11-29",
-      "opponent_id": "34993726132",
-      "opponent_career_id": "career_001128",
-      "opponent_name": "Branson Fain",
-      "opponent_team": "Harrison County",
-      "opponent_team_rank": 3,
-      "opponent_weight": 150,
-      "opponent_rank": 20,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Simon Kenton"
-    },
-    {
-      "date": "2025-11-29",
-      "opponent_id": "OUTSTATE_c187bf3da90b",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": 47,
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "150",
       "result": "W",
-      "method": "FF",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
-      "event": "vs. North Oldham"
+      "duration": "0:00",
+      "event": "vs. North Hardin"
     }
   ],
   "career": {
@@ -379,7 +416,7 @@
       "season": 2026,
       "grade": 10,
       "team": "Simon Kenton",
-      "record": "15-6",
+      "record": "16-6",
       "regional_place": null,
       "state_place": null
     },
@@ -387,15 +424,15 @@
       "season": 2025,
       "grade": 9,
       "team": "Simon Kenton",
-      "record": "14-4",
+      "record": "14-6",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 29,
-    "losses": 10,
-    "win_pct": 0.744
+    "wins": 30,
+    "losses": 12,
+    "win_pct": 0.714
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

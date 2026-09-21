@@ -5,6 +5,11 @@
   "team_slug": "henderson_county",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -37,22 +42,6 @@
   "match_list": [
     {
       "date": "2024-11-30",
-      "opponent_id": "30507806132",
-      "opponent_career_id": "career_002735",
-      "opponent_name": "Connor Fitzhugh",
-      "opponent_team": "Trigg County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "TF",
-      "score": "27-9",
-      "duration": "0:00",
-      "event": "vs. Trigg County"
-    },
-    {
-      "date": "2024-11-30",
       "opponent_id": "29953257132",
       "opponent_career_id": "career_000370",
       "opponent_name": "Jonathan Cocchi",
@@ -65,7 +54,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:22",
-      "event": "vs. Henderson County"
+      "event": "vs. Caldwell County"
     },
     {
       "date": "2024-11-30",
@@ -85,7 +74,7 @@
     },
     {
       "date": "2024-11-30",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_1650348d12fa",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Southridge",
@@ -98,6 +87,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Southridge"
+    },
+    {
+      "date": "2024-11-30",
+      "opponent_id": "30507806132",
+      "opponent_career_id": "career_002735",
+      "opponent_name": "Connor Fitzhugh",
+      "opponent_team": "Trigg County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "TF",
+      "score": "27-9",
+      "duration": "0:00",
+      "event": "vs. Trigg County"
     }
   ],
   "career": {
@@ -122,5 +127,5 @@
     "losses": 2,
     "win_pct": 0.5
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

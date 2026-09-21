@@ -5,10 +5,15 @@
   "team_slug": "waltonverona",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
-    "overall": "7-4",
+    "overall": "29-13",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.619,
-    "bonus_rate": 0.667,
-    "majors": 1,
+    "pin_rate": 0.63,
+    "bonus_rate": 0.741,
+    "majors": 3,
     "techs": 0,
-    "pins": 13
+    "pins": 17
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -225,7 +230,23 @@
       "method": "FALL",
       "score": null,
       "duration": "4:33",
-      "event": "vs. Walton Verona"
+      "event": "vs. Conner"
+    },
+    {
+      "date": "2024-01-24",
+      "opponent_id": "OUTSTATE_29049eafc257",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Finneytown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Finneytown"
     },
     {
       "date": "2024-01-18",
@@ -241,7 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:37",
-      "event": "vs. Walton Verona"
+      "event": "vs. Boone County"
     },
     {
       "date": "2024-01-18",
@@ -257,7 +278,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "vs. Walton Verona"
+      "event": "vs. Dixie Heights"
+    },
+    {
+      "date": "2024-01-18",
+      "opponent_id": "OUTSTATE_5b409fa907ee",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "NORWOOD",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. NORWOOD"
     },
     {
       "date": "2024-01-13",
@@ -337,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:35",
-      "event": "vs. Walton Verona"
+      "event": "vs. Holmes"
     },
     {
       "date": "2024-01-04",
@@ -353,7 +390,23 @@
       "method": "FALL",
       "score": null,
       "duration": "3:15",
-      "event": "vs. Walton Verona"
+      "event": "vs. Newport"
+    },
+    {
+      "date": "2023-12-28",
+      "opponent_id": "24696379132",
+      "opponent_career_id": "career_003093",
+      "opponent_name": "Dakota Phillips",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-3",
+      "duration": "7:00",
+      "event": "GMVWA Holiday Tournament"
     },
     {
       "date": "2023-12-28",
@@ -373,18 +426,66 @@
     },
     {
       "date": "2023-12-28",
-      "opponent_id": "24696379132",
-      "opponent_career_id": "career_003093",
-      "opponent_name": "Dakota Phillips",
-      "opponent_team": "Boyle County",
+      "opponent_id": "25365164132",
+      "opponent_career_id": null,
+      "opponent_name": "Trey Huber",
+      "opponent_team": "VERSAILLES",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:12",
+      "event": "GMVWA Holiday Tournament"
+    },
+    {
+      "date": "2023-12-28",
+      "opponent_id": "25136621132",
+      "opponent_career_id": null,
+      "opponent_name": "Jack Bratton",
+      "opponent_team": "SPRINGBORO",
       "opponent_team_rank": null,
       "opponent_weight": 113,
       "opponent_rank": null,
       "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:45",
+      "event": "GMVWA Holiday Tournament"
+    },
+    {
+      "date": "2023-12-28",
+      "opponent_id": "25304739132",
+      "opponent_career_id": null,
+      "opponent_name": "Carson Taylor",
+      "opponent_team": "COVINGTON",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:29",
+      "event": "GMVWA Holiday Tournament"
+    },
+    {
+      "date": "2023-12-28",
+      "opponent_id": "25280118132",
+      "opponent_career_id": null,
+      "opponent_name": "Baden Root",
+      "opponent_team": "GRAHAM LOCAL",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
       "result": "W",
-      "method": "DEC",
-      "score": "9-3",
-      "duration": "7:00",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:15",
       "event": "GMVWA Holiday Tournament"
     },
     {
@@ -420,6 +521,38 @@
       "event": "SWOWCA Coaches Classic"
     },
     {
+      "date": "2023-12-23",
+      "opponent_id": "25338963132",
+      "opponent_career_id": null,
+      "opponent_name": "Nate Wallace",
+      "opponent_team": "WEST CLERMONT",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:15",
+      "event": "SWOWCA Coaches Classic"
+    },
+    {
+      "date": "2023-12-23",
+      "opponent_id": "25313199132",
+      "opponent_career_id": null,
+      "opponent_name": "TJ Jacquemin",
+      "opponent_team": "WYOMING",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:36",
+      "event": "SWOWCA Coaches Classic"
+    },
+    {
       "date": "2023-12-14",
       "opponent_id": "24780918132",
       "opponent_career_id": "career_000404",
@@ -433,23 +566,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:36",
-      "event": "vs. Walton Verona"
-    },
-    {
-      "date": "2023-12-09",
-      "opponent_id": "24914404132",
-      "opponent_career_id": "career_002637",
-      "opponent_name": "Nathaniel Bueter",
-      "opponent_team": "St. Xavier",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "DEC",
-      "score": "5-2",
-      "duration": "7:00",
-      "event": "2023 Varsity Raider Rumble"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2023-12-09",
@@ -469,6 +586,22 @@
     },
     {
       "date": "2023-12-09",
+      "opponent_id": "24914404132",
+      "opponent_career_id": "career_002637",
+      "opponent_name": "Nathaniel Bueter",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "2023 Varsity Raider Rumble"
+    },
+    {
+      "date": "2023-12-09",
       "opponent_id": "24905142132",
       "opponent_career_id": "career_002796",
       "opponent_name": "Aiden Fowler",
@@ -481,6 +614,54 @@
       "method": "FALL",
       "score": null,
       "duration": "0:31",
+      "event": "2023 Varsity Raider Rumble"
+    },
+    {
+      "date": "2023-12-09",
+      "opponent_id": "25225231132",
+      "opponent_career_id": null,
+      "opponent_name": "Austin Kawanishi",
+      "opponent_team": "BEAVERCREEK",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "MD",
+      "score": "12-2",
+      "duration": "7:00",
+      "event": "2023 Varsity Raider Rumble"
+    },
+    {
+      "date": "2023-12-09",
+      "opponent_id": "25335031132",
+      "opponent_career_id": null,
+      "opponent_name": "Brandon Black",
+      "opponent_team": "ELDER",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:12",
+      "event": "2023 Varsity Raider Rumble"
+    },
+    {
+      "date": "2023-12-09",
+      "opponent_id": "25423243132",
+      "opponent_career_id": null,
+      "opponent_name": "Ethan McHale",
+      "opponent_team": "LEBANON",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "MD",
+      "score": "15-1",
+      "duration": "7:00",
       "event": "2023 Varsity Raider Rumble"
     },
     {
@@ -563,7 +744,7 @@
       "season": 2024,
       "grade": 9,
       "team": "Walton-Verona",
-      "record": "7-4",
+      "record": "29-13",
       "regional_place": 2,
       "state_place": 6
     },
@@ -571,15 +752,15 @@
       "season": 2023,
       "grade": 8,
       "team": "Walton Verona",
-      "record": "13-4",
+      "record": "14-4",
       "regional_place": 2,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 41,
-    "losses": 19,
-    "win_pct": 0.683
+    "wins": 64,
+    "losses": 28,
+    "win_pct": 0.696
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

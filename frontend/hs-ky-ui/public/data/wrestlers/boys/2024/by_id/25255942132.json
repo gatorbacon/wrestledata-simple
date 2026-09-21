@@ -5,6 +5,11 @@
   "team_slug": "owensboro",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.769,
-    "bonus_rate": 0.846,
+    "pin_rate": 0.714,
+    "bonus_rate": 0.786,
     "majors": 0,
     "techs": 1,
     "pins": 10
@@ -48,6 +53,22 @@
       "result": "L",
       "method": "DEC",
       "score": "7-4",
+      "duration": "7:00",
+      "event": "KHSAA Region 1"
+    },
+    {
+      "date": "2024-02-10",
+      "opponent_id": "24663139132",
+      "opponent_career_id": "career_000511",
+      "opponent_name": "Tayvontay (Tay) Martinez",
+      "opponent_team": "Christian County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-2",
       "duration": "7:00",
       "event": "KHSAA Region 1"
     },
@@ -85,6 +106,38 @@
     },
     {
       "date": "2024-01-25",
+      "opponent_id": "24653907132",
+      "opponent_career_id": "career_003546",
+      "opponent_name": "Kali Nichols",
+      "opponent_team": "Daviess County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "0:00",
+      "event": "vs. Daviess County"
+    },
+    {
+      "date": "2024-01-25",
+      "opponent_id": "OUTSTATE_c530402c7e39",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Apollo High School",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Apollo High School"
+    },
+    {
+      "date": "2024-01-25",
       "opponent_id": "24871738132",
       "opponent_career_id": "career_003356",
       "opponent_name": "Cameron Devine",
@@ -100,38 +153,6 @@
       "event": "vs. Owensboro Catholic"
     },
     {
-      "date": "2024-01-25",
-      "opponent_id": "24653907132",
-      "opponent_career_id": "career_003546",
-      "opponent_name": "Kali Nichols",
-      "opponent_team": "Daviess County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "TF",
-      "score": "15-0",
-      "duration": "0:00",
-      "event": "vs. Owensboro"
-    },
-    {
-      "date": "2024-01-25",
-      "opponent_id": "OUTSTATE_c530402c7e39",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Apollo High School",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Apollo High School"
-    },
-    {
       "date": "2024-01-13",
       "opponent_id": "24653896132",
       "opponent_career_id": "career_004017",
@@ -145,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro"
+      "event": "vs. Daviess County"
     },
     {
       "date": "2024-01-13",
@@ -161,7 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2024-01-13",
@@ -193,7 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro"
+      "event": "vs. Daviess County"
     },
     {
       "date": "2024-01-06",
@@ -209,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro"
+      "event": "vs. Montgomery County"
     },
     {
       "date": "2024-01-06",
@@ -257,7 +278,7 @@
       "method": "DEC",
       "score": "10-5",
       "duration": "7:00",
-      "event": "vs. Owensboro"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2023-12-29",
@@ -289,7 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2023-12-09",
@@ -353,7 +374,7 @@
       "season": 2025,
       "grade": 10,
       "team": "Owensboro",
-      "record": "1-1",
+      "record": "2-2",
       "regional_place": null,
       "state_place": null
     },
@@ -367,9 +388,9 @@
     }
   ],
   "career_record": {
-    "wins": 18,
-    "losses": 4,
-    "win_pct": 0.818
+    "wins": 19,
+    "losses": 5,
+    "win_pct": 0.792
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

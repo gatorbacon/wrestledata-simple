@@ -5,6 +5,11 @@
   "team_slug": "fort_knox",
   "team_rank": 80,
   "weight_class": 138,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 125,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.333,
-    "bonus_rate": 0.333,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
     "pins": 1
@@ -59,7 +64,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:50",
-      "event": "vs. Fort Knox"
+      "event": "vs. Bethlehem"
     },
     {
       "date": "2025-12-13",
@@ -75,7 +80,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:08",
-      "event": "vs. Fort Knox"
+      "event": "vs. Dupont Manual"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35049083132",
+      "opponent_career_id": "career_004772",
+      "opponent_name": "Tristan Davis",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": 87,
+      "opponent_weight": 144,
+      "opponent_rank": 85,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:48",
+      "event": "vs. Greenwood"
     },
     {
       "date": "2025-12-13",
@@ -108,22 +129,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Thomas Nelson"
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "35049083132",
-      "opponent_career_id": "career_004772",
-      "opponent_name": "Tristan Davis",
-      "opponent_team": "Greenwood",
-      "opponent_team_rank": 87,
-      "opponent_weight": 144,
-      "opponent_rank": 85,
-      "weight_class": "144",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:48",
-      "event": "vs. Greenwood"
     },
     {
       "date": "2025-12-06",
@@ -228,5 +233,5 @@
     "losses": 5,
     "win_pct": 0.5
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

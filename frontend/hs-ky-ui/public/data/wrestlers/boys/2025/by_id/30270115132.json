@@ -5,6 +5,11 @@
   "team_slug": "letcher_county_central",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.778,
-    "bonus_rate": 0.889,
+    "pin_rate": 0.8,
+    "bonus_rate": 0.9,
     "majors": 0,
     "techs": 1,
-    "pins": 7
+    "pins": 8
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -49,6 +54,22 @@
       "method": "FALL",
       "score": null,
       "duration": "3:51",
+      "event": "KHSAA Region 8"
+    },
+    {
+      "date": "2025-02-22",
+      "opponent_id": "29788998132",
+      "opponent_career_id": "career_000134",
+      "opponent_name": "Jaxson Baldwin",
+      "opponent_team": "Belfry",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DEC",
+      "score": "11-10",
+      "duration": "7:00",
       "event": "KHSAA Region 8"
     },
     {
@@ -133,18 +154,18 @@
     },
     {
       "date": "2024-12-28",
-      "opponent_id": "29949727132",
-      "opponent_career_id": "career_001608",
-      "opponent_name": "Julian Stafford",
-      "opponent_team": "Martin County",
+      "opponent_id": "30065895132",
+      "opponent_career_id": "career_000242",
+      "opponent_name": "Jace Bowling",
+      "opponent_team": "Boyd County",
       "opponent_team_rank": null,
-      "opponent_weight": 126,
+      "opponent_weight": 132,
       "opponent_rank": null,
       "weight_class": "132",
-      "result": "L",
-      "method": "MD",
-      "score": "14-3",
-      "duration": "7:00",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:43",
       "event": "Hatfield-McCoy 32"
     },
     {
@@ -160,7 +181,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "3:43",
+      "duration": "0:58",
       "event": "Hatfield-McCoy 32"
     },
     {
@@ -180,8 +201,24 @@
       "event": "Hatfield-McCoy 32"
     },
     {
+      "date": "2024-12-28",
+      "opponent_id": "29949727132",
+      "opponent_career_id": "career_001608",
+      "opponent_name": "Julian Stafford",
+      "opponent_team": "Martin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "MD",
+      "score": "14-3",
+      "duration": "7:00",
+      "event": "Hatfield-McCoy 32"
+    },
+    {
       "date": "2024-12-14",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_63a3af57e953",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Knott County Central",
@@ -298,5 +335,5 @@
     "losses": 6,
     "win_pct": 0.647
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

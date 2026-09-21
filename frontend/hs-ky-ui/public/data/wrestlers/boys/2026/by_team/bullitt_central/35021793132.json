@@ -5,10 +5,15 @@
   "team_slug": "bullitt_central",
   "team_rank": 62,
   "weight_class": 165,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 174,
   "record": {
-    "overall": "9-16",
+    "overall": "9-17",
     "vs_ranked": "5-16",
     "vs_top10": "0-1",
     "vs_top25": "0-2"
@@ -143,22 +148,6 @@
     },
     {
       "date": "2026-01-17",
-      "opponent_id": "34994792132",
-      "opponent_career_id": "career_002629",
-      "opponent_name": "Aiden Trammell",
-      "opponent_team": "Spencer County",
-      "opponent_team_rank": 29,
-      "opponent_weight": 157,
-      "opponent_rank": 54,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Spencer County"
-    },
-    {
-      "date": "2026-01-17",
       "opponent_id": "35441085132",
       "opponent_career_id": "career_000474",
       "opponent_name": "Samuelu Hazelwood",
@@ -176,7 +165,7 @@
     {
       "date": "2026-01-17",
       "opponent_id": "35064901132",
-      "opponent_career_id": null,
+      "opponent_career_id": "career_001338",
       "opponent_name": "Charles Tucker",
       "opponent_team": "John Hardin",
       "opponent_team_rank": 95,
@@ -188,6 +177,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. John Hardin"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "34994792132",
+      "opponent_career_id": "career_002629",
+      "opponent_name": "Aiden Trammell",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": 29,
+      "opponent_weight": 157,
+      "opponent_rank": 54,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Spencer County"
     },
     {
       "date": "2026-01-14",
@@ -299,23 +304,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:59",
-      "event": "vs. Bullitt Central"
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "35599162132",
-      "opponent_career_id": "career_001706",
-      "opponent_name": "Nate Stephens",
-      "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 109,
-      "opponent_weight": 157,
-      "opponent_rank": 51,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Mccreary Central"
+      "event": "vs. North Bullitt"
     },
     {
       "date": "2025-12-13",
@@ -351,6 +340,22 @@
     },
     {
       "date": "2025-12-13",
+      "opponent_id": "35599162132",
+      "opponent_career_id": "career_001706",
+      "opponent_name": "Nate Stephens",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 109,
+      "opponent_weight": 157,
+      "opponent_rank": 51,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Mccreary Central"
+    },
+    {
+      "date": "2025-12-13",
       "opponent_id": "OUTSTATE_31fbdaf5d8b7",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -380,38 +385,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Doss"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35542525132",
-      "opponent_career_id": "career_000444",
-      "opponent_name": "Evan Roe",
-      "opponent_team": "Central",
-      "opponent_team_rank": 22,
-      "opponent_weight": 150,
-      "opponent_rank": 44,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Central"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35135156132",
-      "opponent_career_id": "career_000843",
-      "opponent_name": "zade alshabot",
-      "opponent_team": "Fairdale",
-      "opponent_team_rank": 24,
-      "opponent_weight": 157,
-      "opponent_rank": 142,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Fairdale"
     },
     {
       "date": "2025-12-06",
@@ -460,6 +433,38 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Valley"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35135156132",
+      "opponent_career_id": "career_000843",
+      "opponent_name": "zade alshabot",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": 24,
+      "opponent_weight": 157,
+      "opponent_rank": 142,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Fairdale"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35542525132",
+      "opponent_career_id": "career_000444",
+      "opponent_name": "Evan Roe",
+      "opponent_team": "Central",
+      "opponent_team_rank": 22,
+      "opponent_weight": 150,
+      "opponent_rank": 44,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Central"
     }
   ],
   "career": {
@@ -477,7 +482,7 @@
       "season": 2026,
       "grade": 12,
       "team": "Bullitt Central",
-      "record": "9-16",
+      "record": "9-17",
       "regional_place": null,
       "state_place": null
     },
@@ -508,8 +513,8 @@
   ],
   "career_record": {
     "wins": 21,
-    "losses": 46,
-    "win_pct": 0.313
+    "losses": 47,
+    "win_pct": 0.309
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

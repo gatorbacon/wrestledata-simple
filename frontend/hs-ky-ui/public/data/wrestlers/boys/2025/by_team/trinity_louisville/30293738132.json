@@ -5,6 +5,11 @@
   "team_slug": "trinity_louisville",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -35,22 +40,6 @@
     "worst_loss": null
   },
   "match_list": [
-    {
-      "date": "2025-02-01",
-      "opponent_id": "29791411132",
-      "opponent_career_id": "career_001551",
-      "opponent_name": "Elder Cabral Garcia",
-      "opponent_team": "Male",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:00",
-      "event": "JV Region 3 - 2025"
-    },
     {
       "date": "2025-02-01",
       "opponent_id": "33491000132",
@@ -101,6 +90,22 @@
     },
     {
       "date": "2025-02-01",
+      "opponent_id": "29791411132",
+      "opponent_career_id": "career_001551",
+      "opponent_name": "Elder Cabral Garcia",
+      "opponent_team": "Male",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:00",
+      "event": "JV Region 3 - 2025"
+    },
+    {
+      "date": "2025-02-01",
       "opponent_id": "29837791132",
       "opponent_career_id": "career_002951",
       "opponent_name": "Hussein Ali",
@@ -129,7 +134,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Meade County"
     },
     {
       "date": "2025-01-22",
@@ -145,11 +150,11 @@
       "method": "FALL",
       "score": null,
       "duration": "1:14",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Doss"
     },
     {
       "date": "2025-01-22",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_ab3b37a09a95",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Desales",
@@ -177,7 +182,7 @@
       "method": "DEC",
       "score": "10-7",
       "duration": "7:00",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Ballard"
     },
     {
       "date": "2025-01-04",
@@ -197,7 +202,7 @@
     },
     {
       "date": "2025-01-04",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_4d278a4129b0",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Waggener",
@@ -210,6 +215,38 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Waggener"
+    },
+    {
+      "date": "2025-01-04",
+      "opponent_id": "OUTSTATE_9f42b4602541",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Moore",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Moore"
+    },
+    {
+      "date": "2025-01-04",
+      "opponent_id": "OUTSTATE_d597001ea858",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Dupont Manual",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2025-01-03",
@@ -225,7 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:36",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2025-01-03",
@@ -241,7 +278,7 @@
       "method": "TF",
       "score": "16-1",
       "duration": "0:00",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Pleasure Ridge Park"
     },
     {
       "date": "2024-12-28",
@@ -309,22 +346,6 @@
     },
     {
       "date": "2024-12-14",
-      "opponent_id": "30057492132",
-      "opponent_career_id": "career_002489",
-      "opponent_name": "Gavyn Kozak",
-      "opponent_team": "Somerset",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:59",
-      "event": "vs. Trinity (Louisville)"
-    },
-    {
-      "date": "2024-12-14",
       "opponent_id": "30048562132",
       "opponent_career_id": "career_000696",
       "opponent_name": "Thomas Tilley",
@@ -337,7 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:58",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Dixie Heights"
     },
     {
       "date": "2024-12-14",
@@ -352,12 +373,28 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Trinity (Louisville)"
+      "duration": "3:09",
+      "event": "vs. Great Crossing"
     },
     {
       "date": "2024-12-14",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "30057492132",
+      "opponent_career_id": "career_002489",
+      "opponent_name": "Gavyn Kozak",
+      "opponent_team": "Somerset",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:59",
+      "event": "vs. Somerset"
+    },
+    {
+      "date": "2024-12-14",
+      "opponent_id": "OUTSTATE_40238e8e82a0",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Frederick Douglass",
@@ -401,23 +438,7 @@
       "method": "TF",
       "score": "19-2",
       "duration": "0:00",
-      "event": "vs. Trinity (Louisville)"
-    },
-    {
-      "date": "2024-12-07",
-      "opponent_id": "30229653132",
-      "opponent_career_id": null,
-      "opponent_name": "Max Coomer",
-      "opponent_team": "Evansville North",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:00",
-      "event": "vs. Evansville North"
+      "event": "vs. Eastern"
     },
     {
       "date": "2024-12-07",
@@ -434,6 +455,22 @@
       "score": null,
       "duration": "0:45",
       "event": "vs. Evansville Mater Dei"
+    },
+    {
+      "date": "2024-12-07",
+      "opponent_id": "30229653132",
+      "opponent_career_id": null,
+      "opponent_name": "Max Coomer",
+      "opponent_team": "Evansville North",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "vs. Evansville North"
     },
     {
       "date": "2024-12-07",
@@ -501,7 +538,7 @@
     },
     {
       "date": "2024-11-27",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_c68d5c4a9e0c",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Pike Central",
@@ -570,5 +607,5 @@
     "losses": 24,
     "win_pct": 0.294
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

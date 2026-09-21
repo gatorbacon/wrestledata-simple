@@ -5,6 +5,11 @@
   "team_slug": "ohio_county",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
@@ -49,7 +54,7 @@
       "method": "DFLT",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Ohio County"
+      "event": "vs. Moore"
     },
     {
       "date": "2024-01-27",
@@ -69,6 +74,22 @@
     },
     {
       "date": "2024-01-06",
+      "opponent_id": "24654369132",
+      "opponent_career_id": "career_003811",
+      "opponent_name": "Dawson Jackson",
+      "opponent_team": "Montgomery County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "TB-1",
+      "score": "4-3",
+      "duration": "10:00",
+      "event": "vs. Montgomery County"
+    },
+    {
+      "date": "2024-01-06",
       "opponent_id": "OUTSTATE_a2fc6114ae97",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -82,22 +103,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Western"
-    },
-    {
-      "date": "2024-01-06",
-      "opponent_id": "24654369132",
-      "opponent_career_id": "career_003811",
-      "opponent_name": "Dawson Jackson",
-      "opponent_team": "Montgomery County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "TB-1",
-      "score": "4-3",
-      "duration": "10:00",
-      "event": "vs. Ohio County"
     },
     {
       "date": "2024-01-06",
@@ -129,7 +134,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:33",
-      "event": "vs. Ohio County"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2024-01-04",
@@ -245,54 +250,6 @@
     },
     {
       "date": "2023-12-21",
-      "opponent_id": "25261085132",
-      "opponent_career_id": "career_001898",
-      "opponent_name": "Jack Main",
-      "opponent_team": "North Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "DEC",
-      "score": "11-4",
-      "duration": "7:00",
-      "event": "vs. Ohio County"
-    },
-    {
-      "date": "2023-12-21",
-      "opponent_id": "25407242132",
-      "opponent_career_id": "career_002900",
-      "opponent_name": "Donovan Hoover",
-      "opponent_team": "Wayne County",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:32",
-      "event": "vs. Wayne County"
-    },
-    {
-      "date": "2023-12-21",
-      "opponent_id": "OUTSTATE_d2c14af25c4d",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. John Hardin"
-    },
-    {
-      "date": "2023-12-21",
       "opponent_id": "25298933132",
       "opponent_career_id": "career_001825",
       "opponent_name": "Nick Livers",
@@ -305,7 +262,23 @@
       "method": "DEC",
       "score": "11-5",
       "duration": "7:00",
-      "event": "vs. Ohio County"
+      "event": "vs. Nelson County"
+    },
+    {
+      "date": "2023-12-21",
+      "opponent_id": "25261085132",
+      "opponent_career_id": "career_001898",
+      "opponent_name": "Jack Main",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": "11-4",
+      "duration": "7:00",
+      "event": "vs. North Hardin"
     },
     {
       "date": "2023-12-21",
@@ -340,6 +313,38 @@
       "event": "vs. Finneytown"
     },
     {
+      "date": "2023-12-21",
+      "opponent_id": "25407242132",
+      "opponent_career_id": "career_002900",
+      "opponent_name": "Donovan Hoover",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:32",
+      "event": "vs. Wayne County"
+    },
+    {
+      "date": "2023-12-21",
+      "opponent_id": "OUTSTATE_d2c14af25c4d",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. John Hardin"
+    },
+    {
       "date": "2023-12-20",
       "opponent_id": "24998389132",
       "opponent_career_id": "career_001725",
@@ -353,23 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Ohio County"
-    },
-    {
-      "date": "2023-12-16",
-      "opponent_id": "24864694132",
-      "opponent_career_id": "career_001962",
-      "opponent_name": "Barrett Fulton",
-      "opponent_team": "Ohio County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "TF",
-      "score": "17-0",
-      "duration": "3:50",
-      "event": "Taylor County Cardinal Clash"
+      "event": "vs. Meade County"
     },
     {
       "date": "2023-12-16",
@@ -388,6 +377,22 @@
       "event": "Taylor County Cardinal Clash"
     },
     {
+      "date": "2023-12-16",
+      "opponent_id": "24864694132",
+      "opponent_career_id": "career_001962",
+      "opponent_name": "Barrett Fulton",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "TF",
+      "score": "17-0",
+      "duration": "3:50",
+      "event": "Taylor County Cardinal Clash"
+    },
+    {
       "date": "2023-12-09",
       "opponent_id": "24895065132",
       "opponent_career_id": "career_003247",
@@ -401,7 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Ohio County"
+      "event": "vs. John Hardin"
     },
     {
       "date": "2023-11-25",
@@ -441,15 +446,15 @@
       "season": 2023,
       "grade": 9,
       "team": "Ohio County",
-      "record": "2-9",
+      "record": "2-10",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 17,
-    "losses": 18,
-    "win_pct": 0.486
+    "losses": 19,
+    "win_pct": 0.472
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

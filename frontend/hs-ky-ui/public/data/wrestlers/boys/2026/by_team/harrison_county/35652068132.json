@@ -5,11 +5,16 @@
   "team_slug": "harrison_county",
   "team_rank": 3,
   "weight_class": 144,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
-  "current_rank": 131,
+  "current_rank": 132,
   "record": {
     "overall": "4-8",
-    "vs_ranked": "2-8",
+    "vs_ranked": "3-8",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -20,14 +25,14 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 2,
+    "ranked_wins": 3,
     "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 0,
@@ -91,23 +96,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Harrison County"
-    },
-    {
-      "date": "2025-12-30",
-      "opponent_id": "35064900132",
-      "opponent_career_id": "career_001325",
-      "opponent_name": "Evan Wilson",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 95,
-      "opponent_weight": 138,
-      "opponent_rank": 13,
-      "weight_class": "144",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:50",
-      "event": "Cardinal Invitational"
+      "event": "vs. Covington Catholic"
     },
     {
       "date": "2025-12-30",
@@ -123,6 +112,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:42",
+      "event": "Cardinal Invitational"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35064900132",
+      "opponent_career_id": "career_001325",
+      "opponent_name": "Evan Wilson",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 95,
+      "opponent_weight": 138,
+      "opponent_rank": 13,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:50",
       "event": "Cardinal Invitational"
     },
     {
@@ -191,6 +196,22 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "35643316132",
+      "opponent_career_id": "career_004745",
+      "opponent_name": "Joseph Scott",
+      "opponent_team": "Campbellsville",
+      "opponent_team_rank": 66,
+      "opponent_weight": 144,
+      "opponent_rank": 111,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Joe Cochran State Farm HCIWT"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35156182132",
       "opponent_career_id": "career_002706",
       "opponent_name": "Brayden Skaggs",
@@ -244,5 +265,5 @@
     "losses": 8,
     "win_pct": 0.333
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

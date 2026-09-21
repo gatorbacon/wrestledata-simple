@@ -5,6 +5,11 @@
   "team_slug": "simon_kenton",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
@@ -37,6 +42,22 @@
   "match_list": [
     {
       "date": "2024-01-17",
+      "opponent_id": "25099896132",
+      "opponent_career_id": "career_000703",
+      "opponent_name": "Jack Fredstrom",
+      "opponent_team": "Dixie Heights",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Dixie Heights"
+    },
+    {
+      "date": "2024-01-17",
       "opponent_id": "25283983132",
       "opponent_career_id": "career_003382",
       "opponent_name": "Presley Cooper",
@@ -52,22 +73,6 @@
       "event": "vs. Scott"
     },
     {
-      "date": "2024-01-17",
-      "opponent_id": "25099896132",
-      "opponent_career_id": "career_000703",
-      "opponent_name": "Jack Fredstrom",
-      "opponent_team": "Dixie Heights",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Simon Kenton"
-    },
-    {
       "date": "2024-01-11",
       "opponent_id": "24793331132",
       "opponent_career_id": "career_003136",
@@ -81,7 +86,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Conner"
     },
     {
       "date": "2024-01-11",
@@ -181,22 +186,6 @@
     },
     {
       "date": "2023-12-30",
-      "opponent_id": "25287919132",
-      "opponent_career_id": "career_002353",
-      "opponent_name": "Keigan Reisenbeck",
-      "opponent_team": "Ryle",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:10",
-      "event": "Northern Kentucky Athletic Conference"
-    },
-    {
-      "date": "2023-12-30",
       "opponent_id": "24700159132",
       "opponent_career_id": "career_003118",
       "opponent_name": "Charlie Alford",
@@ -209,6 +198,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
+      "event": "Northern Kentucky Athletic Conference"
+    },
+    {
+      "date": "2023-12-30",
+      "opponent_id": "25287919132",
+      "opponent_career_id": "career_002353",
+      "opponent_name": "Keigan Reisenbeck",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:10",
       "event": "Northern Kentucky Athletic Conference"
     },
     {
@@ -273,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:10",
-      "event": "vs. Simon Kenton"
+      "event": "vs. East Jessamine"
     },
     {
       "date": "2023-12-02",
@@ -346,5 +351,5 @@
     "losses": 10,
     "win_pct": 0.444
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

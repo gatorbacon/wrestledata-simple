@@ -5,10 +5,15 @@
   "team_slug": "john_hardin",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
-    "overall": "22-11",
+    "overall": "23-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -133,6 +138,38 @@
     },
     {
       "date": "2024-01-30",
+      "opponent_id": "24694064132",
+      "opponent_career_id": "career_000042",
+      "opponent_name": "Clayton Pendley",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-8",
+      "duration": "7:00",
+      "event": "vs. Apollo"
+    },
+    {
+      "date": "2024-01-30",
+      "opponent_id": "24694064132",
+      "opponent_career_id": "career_000042",
+      "opponent_name": "Clayton Pendley",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-8",
+      "duration": "7:00",
+      "event": "vs. Apollo"
+    },
+    {
+      "date": "2024-01-30",
       "opponent_id": "24668209132",
       "opponent_career_id": "career_000473",
       "opponent_name": "Jackson Holly",
@@ -145,39 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:39",
-      "event": "vs. John Hardin"
-    },
-    {
-      "date": "2024-01-30",
-      "opponent_id": "24694064132",
-      "opponent_career_id": "career_000042",
-      "opponent_name": "Clayton Pendley",
-      "opponent_team": "Apollo",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "DEC",
-      "score": "9-8",
-      "duration": "7:00",
-      "event": "vs. John Hardin"
-    },
-    {
-      "date": "2024-01-30",
-      "opponent_id": "24694064132",
-      "opponent_career_id": "career_000042",
-      "opponent_name": "Clayton Pendley",
-      "opponent_team": "Apollo",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "DEC",
-      "score": "9-8",
-      "duration": "7:00",
-      "event": "vs. John Hardin"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2024-01-30",
@@ -341,22 +346,6 @@
     },
     {
       "date": "2023-12-16",
-      "opponent_id": "24660019132",
-      "opponent_career_id": "career_004278",
-      "opponent_name": "Jacob Gorden",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "DEC",
-      "score": "6-5",
-      "duration": "7:00",
-      "event": "Taylor County Cardinal Clash"
-    },
-    {
-      "date": "2023-12-16",
       "opponent_id": "24783445132",
       "opponent_career_id": "career_003236",
       "opponent_name": "Tyler Parks",
@@ -369,6 +358,22 @@
       "method": "FALL",
       "score": null,
       "duration": "4:16",
+      "event": "Taylor County Cardinal Clash"
+    },
+    {
+      "date": "2023-12-16",
+      "opponent_id": "24660019132",
+      "opponent_career_id": "career_004278",
+      "opponent_name": "Jacob Gorden",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-5",
+      "duration": "7:00",
       "event": "Taylor County Cardinal Clash"
     },
     {
@@ -497,7 +502,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:22",
-      "event": "vs. John Hardin"
+      "event": "vs. Daviess County"
     },
     {
       "date": "2023-12-07",
@@ -584,6 +589,7 @@
     "career_id": "career_001329",
     "canonical_name": "Emari Simon",
     "seasons": [
+      2026,
       2025,
       2024,
       2023
@@ -591,10 +597,18 @@
   },
   "season_summary": [
     {
+      "season": 2026,
+      "grade": 12,
+      "team": "John Hardin",
+      "record": "1-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
       "season": 2025,
       "grade": 11,
       "team": "John Hardin",
-      "record": "16-7",
+      "record": "17-7",
       "regional_place": null,
       "state_place": null
     },
@@ -602,7 +616,7 @@
       "season": 2024,
       "grade": 10,
       "team": "John Hardin",
-      "record": "22-11",
+      "record": "23-11",
       "regional_place": null,
       "state_place": null
     },
@@ -610,15 +624,15 @@
       "season": 2023,
       "grade": 9,
       "team": "John Hardin",
-      "record": "24-18",
+      "record": "25-19",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 62,
-    "losses": 36,
-    "win_pct": 0.633
+    "wins": 66,
+    "losses": 39,
+    "win_pct": 0.629
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

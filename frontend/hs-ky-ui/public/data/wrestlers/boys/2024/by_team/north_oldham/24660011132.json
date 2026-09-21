@@ -5,10 +5,15 @@
   "team_slug": "north_oldham",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
-    "overall": "27-30",
+    "overall": "27-31",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.958,
-    "bonus_rate": 0.958,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
     "pins": 23
@@ -145,7 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:11",
-      "event": "vs. North Oldham"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2024-01-31",
@@ -165,6 +170,22 @@
     },
     {
       "date": "2024-01-27",
+      "opponent_id": "24783497132",
+      "opponent_career_id": "career_001242",
+      "opponent_name": "Xander Turner",
+      "opponent_team": "Highlands",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:31",
+      "event": "vs. Highlands"
+    },
+    {
+      "date": "2024-01-27",
       "opponent_id": "24757101132",
       "opponent_career_id": "career_002713",
       "opponent_name": "Keenan Shively",
@@ -178,22 +199,6 @@
       "score": null,
       "duration": "1:49",
       "event": "vs. Taylor County"
-    },
-    {
-      "date": "2024-01-27",
-      "opponent_id": "24783497132",
-      "opponent_career_id": "career_001242",
-      "opponent_name": "Xander Turner",
-      "opponent_team": "Highlands",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:31",
-      "event": "vs. North Oldham"
     },
     {
       "date": "2024-01-20",
@@ -337,7 +342,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:46",
-      "event": "vs. North Oldham"
+      "event": "vs. Central"
     },
     {
       "date": "2024-01-10",
@@ -353,7 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:01",
-      "event": "vs. North Oldham"
+      "event": "vs. Fairdale"
     },
     {
       "date": "2023-12-29",
@@ -433,7 +438,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:58",
-      "event": "vs. North Oldham"
+      "event": "vs. Central"
     },
     {
       "date": "2023-12-28",
@@ -449,7 +454,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:49",
-      "event": "vs. North Oldham"
+      "event": "vs. Moore"
     },
     {
       "date": "2023-12-28",
@@ -500,38 +505,6 @@
       "event": "vs. Jeffersonville"
     },
     {
-      "date": "2023-12-21",
-      "opponent_id": "24864810132",
-      "opponent_career_id": "career_001967",
-      "opponent_name": "Abram Ross",
-      "opponent_team": "Ohio County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "MD",
-      "score": "16-4",
-      "duration": "7:00",
-      "event": "vs. North Oldham"
-    },
-    {
-      "date": "2023-12-20",
-      "opponent_id": "24696391132",
-      "opponent_career_id": "career_000275",
-      "opponent_name": "Judah Carey",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Boyle County"
-    },
-    {
       "date": "2023-12-20",
       "opponent_id": "24696381132",
       "opponent_career_id": "career_003096",
@@ -545,7 +518,39 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. North Oldham"
+      "event": "vs. Boyle County"
+    },
+    {
+      "date": "2023-12-20",
+      "opponent_id": "25452597132",
+      "opponent_career_id": "career_001331",
+      "opponent_name": "Malcom Adams",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. John Hardin"
+    },
+    {
+      "date": "2023-12-20",
+      "opponent_id": "24998382132",
+      "opponent_career_id": "career_001734",
+      "opponent_name": "Adam Sanders",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Meade County"
     },
     {
       "date": "2023-12-20",
@@ -561,7 +566,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:58",
-      "event": "vs. North Oldham"
+      "event": "vs. North Hardin"
     },
     {
       "date": "2023-12-20",
@@ -581,6 +586,22 @@
     },
     {
       "date": "2023-12-20",
+      "opponent_id": "25407245132",
+      "opponent_career_id": "career_002908",
+      "opponent_name": "Thorin Johnson",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Wayne County"
+    },
+    {
+      "date": "2023-12-20",
       "opponent_id": "24825274132",
       "opponent_career_id": "career_002006",
       "opponent_name": "Colton Northrop",
@@ -597,51 +618,19 @@
     },
     {
       "date": "2023-12-20",
-      "opponent_id": "25452597132",
-      "opponent_career_id": "career_001331",
-      "opponent_name": "Malcom Adams",
-      "opponent_team": "John Hardin",
+      "opponent_id": "25281159132",
+      "opponent_career_id": null,
+      "opponent_name": "Wesley Hall",
+      "opponent_team": "Finneytown",
       "opponent_team_rank": null,
-      "opponent_weight": 165,
+      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. North Oldham"
-    },
-    {
-      "date": "2023-12-20",
-      "opponent_id": "24998382132",
-      "opponent_career_id": "career_001734",
-      "opponent_name": "Adam Sanders",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. North Oldham"
-    },
-    {
-      "date": "2023-12-20",
-      "opponent_id": "25407245132",
-      "opponent_career_id": "career_002908",
-      "opponent_name": "Thorin Johnson",
-      "opponent_team": "Wayne County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Wayne County"
+      "event": "vs. Finneytown"
     },
     {
       "date": "2023-12-20",
@@ -661,19 +650,35 @@
     },
     {
       "date": "2023-12-20",
-      "opponent_id": "25281159132",
-      "opponent_career_id": null,
-      "opponent_name": "Wesley Hall",
-      "opponent_team": "Finneytown",
+      "opponent_id": "24696391132",
+      "opponent_career_id": "career_000275",
+      "opponent_name": "Judah Carey",
+      "opponent_team": "Boyle County",
       "opponent_team_rank": null,
-      "opponent_weight": null,
+      "opponent_weight": 150,
       "opponent_rank": null,
       "weight_class": "165",
-      "result": "W",
+      "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Finneytown"
+      "event": "vs. Boyle County"
+    },
+    {
+      "date": "2023-12-16",
+      "opponent_id": "24694063132",
+      "opponent_career_id": "career_000049",
+      "opponent_name": "Colton Hardy",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:50",
+      "event": "Taylor County Cardinal Clash"
     },
     {
       "date": "2023-12-16",
@@ -705,22 +710,6 @@
       "method": "FALL",
       "score": null,
       "duration": "0:43",
-      "event": "Taylor County Cardinal Clash"
-    },
-    {
-      "date": "2023-12-16",
-      "opponent_id": "24694063132",
-      "opponent_career_id": "career_000049",
-      "opponent_name": "Colton Hardy",
-      "opponent_team": "Apollo",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:50",
       "event": "Taylor County Cardinal Clash"
     },
     {
@@ -757,22 +746,6 @@
     },
     {
       "date": "2023-12-09",
-      "opponent_id": "25261070132",
-      "opponent_career_id": "career_003333",
-      "opponent_name": "Joseph Estelita III",
-      "opponent_team": "North Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:00",
-      "event": "king of the bluegrass"
-    },
-    {
-      "date": "2023-12-09",
       "opponent_id": "24763893132",
       "opponent_career_id": "career_000514",
       "opponent_name": "Brodie Smith",
@@ -805,6 +778,22 @@
     },
     {
       "date": "2023-12-09",
+      "opponent_id": "25261070132",
+      "opponent_career_id": "career_003333",
+      "opponent_name": "Joseph Estelita III",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "king of the bluegrass"
+    },
+    {
+      "date": "2023-12-09",
       "opponent_id": "24864810132",
       "opponent_career_id": "career_001967",
       "opponent_name": "Abram Ross",
@@ -821,22 +810,6 @@
     },
     {
       "date": "2023-12-02",
-      "opponent_id": "25268566132",
-      "opponent_career_id": "career_003391",
-      "opponent_name": "Frank Armstrong",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:59",
-      "event": "vs. Simon Kenton"
-    },
-    {
-      "date": "2023-12-02",
       "opponent_id": "24780979132",
       "opponent_career_id": "career_000417",
       "opponent_name": "Matt Dahms",
@@ -849,7 +822,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:08",
-      "event": "vs. North Oldham"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2023-12-02",
@@ -866,6 +839,22 @@
       "score": null,
       "duration": "0:43",
       "event": "vs. St. Xavier"
+    },
+    {
+      "date": "2023-12-02",
+      "opponent_id": "25268566132",
+      "opponent_career_id": "career_003391",
+      "opponent_name": "Frank Armstrong",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:59",
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2023-12-02",
@@ -913,39 +902,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:55",
-      "event": "vs. North Oldham"
-    },
-    {
-      "date": "2023-11-25",
-      "opponent_id": "24661810132",
-      "opponent_career_id": "career_003473",
-      "opponent_name": "James Rhody",
-      "opponent_team": "Western Hills",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:34",
-      "event": "vs. Western Hills"
-    },
-    {
-      "date": "2023-11-25",
-      "opponent_id": "24719573132",
-      "opponent_career_id": "career_002714",
-      "opponent_name": "Owen Lamer",
-      "opponent_team": "Taylor County",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Taylor County"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2023-11-25",
@@ -965,6 +922,22 @@
     },
     {
       "date": "2023-11-25",
+      "opponent_id": "24661810132",
+      "opponent_career_id": "career_003473",
+      "opponent_name": "James Rhody",
+      "opponent_team": "Western Hills",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:34",
+      "event": "vs. Western Hills"
+    },
+    {
+      "date": "2023-11-25",
       "opponent_id": "OUTSTATE_21b4a79b024a",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -978,6 +951,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Bethlehem"
+    },
+    {
+      "date": "2023-11-25",
+      "opponent_id": "24719573132",
+      "opponent_career_id": "career_002714",
+      "opponent_name": "Owen Lamer",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Taylor County"
     }
   ],
   "career": {
@@ -995,7 +984,7 @@
       "season": 2024,
       "grade": 12,
       "team": "North Oldham",
-      "record": "27-30",
+      "record": "27-31",
       "regional_place": null,
       "state_place": null
     },
@@ -1011,7 +1000,7 @@
       "season": 2022,
       "grade": 10,
       "team": "North Oldham",
-      "record": "5-10",
+      "record": "5-14",
       "regional_place": null,
       "state_place": null
     },
@@ -1019,15 +1008,15 @@
       "season": 2021,
       "grade": 9,
       "team": "North Oldham",
-      "record": "6-8",
+      "record": "6-9",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 56,
-    "losses": 74,
-    "win_pct": 0.431
+    "losses": 80,
+    "win_pct": 0.412
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

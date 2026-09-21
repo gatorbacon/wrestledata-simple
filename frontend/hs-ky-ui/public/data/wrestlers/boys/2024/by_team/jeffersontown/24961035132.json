@@ -5,6 +5,11 @@
   "team_slug": "jeffersontown",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
@@ -197,22 +202,6 @@
     },
     {
       "date": "2023-11-28",
-      "opponent_id": "25399072132",
-      "opponent_career_id": "career_003121",
-      "opponent_name": "Michael Ellis",
-      "opponent_team": "Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:30",
-      "event": "vs. Jeffersontown"
-    },
-    {
-      "date": "2023-11-28",
       "opponent_id": "25100247132",
       "opponent_career_id": "career_003074",
       "opponent_name": "Christian Alford",
@@ -225,18 +214,43 @@
       "method": "FALL",
       "score": null,
       "duration": "1:33",
-      "event": "vs. Jeffersontown"
+      "event": "vs. Bardstown"
+    },
+    {
+      "date": "2023-11-28",
+      "opponent_id": "25399072132",
+      "opponent_career_id": "career_003121",
+      "opponent_name": "Michael Ellis",
+      "opponent_team": "Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:30",
+      "event": "vs. Central"
     }
   ],
   "career": {
     "career_id": "career_001306",
     "canonical_name": "Ali Arslanov",
     "seasons": [
+      2026,
       2025,
       2024
     ]
   },
   "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Jeffersontown",
+      "record": "11-7",
+      "regional_place": 4,
+      "state_place": null
+    },
     {
       "season": 2025,
       "grade": 10,
@@ -255,9 +269,9 @@
     }
   ],
   "career_record": {
-    "wins": 21,
-    "losses": 20,
-    "win_pct": 0.512
+    "wins": 32,
+    "losses": 27,
+    "win_pct": 0.542
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

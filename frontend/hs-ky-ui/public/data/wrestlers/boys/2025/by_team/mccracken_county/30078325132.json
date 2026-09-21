@@ -5,6 +5,11 @@
   "team_slug": "mccracken_county",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.696,
-    "bonus_rate": 0.87,
+    "pin_rate": 0.727,
+    "bonus_rate": 0.909,
     "majors": 3,
     "techs": 1,
     "pins": 16
@@ -129,11 +134,11 @@
       "method": "FALL",
       "score": null,
       "duration": "1:35",
-      "event": "vs. McCracken County"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2025-01-25",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_60d9f28b334a",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Henry Clay",
@@ -437,22 +442,6 @@
     },
     {
       "date": "2024-12-21",
-      "opponent_id": "29806474132",
-      "opponent_career_id": "career_002797",
-      "opponent_name": "Jake Ramsey",
-      "opponent_team": "Union County",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "TF",
-      "score": "19-1",
-      "duration": "0:00",
-      "event": "vs. Union County"
-    },
-    {
-      "date": "2024-12-21",
       "opponent_id": "29882560132",
       "opponent_career_id": "career_001167",
       "opponent_name": "Lane Corpe",
@@ -465,7 +454,7 @@
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
-      "event": "vs. McCracken County"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2024-12-21",
@@ -485,7 +474,23 @@
     },
     {
       "date": "2024-12-21",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "29806474132",
+      "opponent_career_id": "career_002797",
+      "opponent_name": "Jake Ramsey",
+      "opponent_team": "Union County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "TF",
+      "score": "19-1",
+      "duration": "0:00",
+      "event": "vs. Union County"
+    },
+    {
+      "date": "2024-12-21",
+      "opponent_id": "OUTSTATE_0d024306c254",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Calloway County",
@@ -533,22 +538,6 @@
     },
     {
       "date": "2024-12-14",
-      "opponent_id": "29917189132",
-      "opponent_career_id": null,
-      "opponent_name": "Lane Deaton",
-      "opponent_team": "Harrisburg",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:26",
-      "event": "vs. Harrisburg"
-    },
-    {
-      "date": "2024-12-14",
       "opponent_id": "30283751132",
       "opponent_career_id": null,
       "opponent_name": "Sawyer Thomas",
@@ -562,6 +551,22 @@
       "score": null,
       "duration": "1:01",
       "event": "vs. Benton"
+    },
+    {
+      "date": "2024-12-14",
+      "opponent_id": "29917189132",
+      "opponent_career_id": null,
+      "opponent_name": "Lane Deaton",
+      "opponent_team": "Harrisburg",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:26",
+      "event": "vs. Harrisburg"
     },
     {
       "date": "2024-12-14",
@@ -597,6 +602,22 @@
     },
     {
       "date": "2024-12-07",
+      "opponent_id": "29966713132",
+      "opponent_career_id": "career_001173",
+      "opponent_name": "Elijah Bellomy",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:25",
+      "event": "vs. Henderson County"
+    },
+    {
+      "date": "2024-12-07",
       "opponent_id": "30486325132",
       "opponent_career_id": "career_002038",
       "opponent_name": "Simon Thompson",
@@ -610,22 +631,6 @@
       "score": "14-7",
       "duration": "7:00",
       "event": "vs. Owensboro Catholic"
-    },
-    {
-      "date": "2024-12-07",
-      "opponent_id": "29966713132",
-      "opponent_career_id": "career_001173",
-      "opponent_name": "Elijah Bellomy",
-      "opponent_team": "Henderson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:25",
-      "event": "vs. McCracken County"
     }
   ],
   "career": {
@@ -667,15 +672,15 @@
       "season": 2023,
       "grade": 7,
       "team": "McCracken County",
-      "record": "2-8",
+      "record": "2-9",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 47,
-    "losses": 43,
-    "win_pct": 0.522
+    "losses": 44,
+    "win_pct": 0.516
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

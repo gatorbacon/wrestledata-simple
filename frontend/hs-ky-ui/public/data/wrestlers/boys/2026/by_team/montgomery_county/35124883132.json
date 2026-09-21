@@ -5,10 +5,15 @@
   "team_slug": "montgomery_county",
   "team_rank": 112,
   "weight_class": 132,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 13,
   "record": {
-    "overall": "20-12",
+    "overall": "23-14",
     "vs_ranked": "23-14",
     "vs_top10": "1-8",
     "vs_top25": "2-12"
@@ -287,6 +292,57 @@
     },
     {
       "date": "2026-01-10",
+      "opponent_id": "35214945132",
+      "opponent_career_id": "career_000557",
+      "opponent_name": "Jack Baron",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": 7,
+      "opponent_weight": 138,
+      "opponent_rank": 81,
+      "weight_class": "132",
+      "result": "W",
+      "method": "TF",
+      "score": "19-2",
+      "duration": "4:00",
+      "event": "vs. Cooper",
+      "mv_impact": 5.78
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35281280132",
+      "opponent_career_id": "career_000683",
+      "opponent_name": "Ethan Piasecki",
+      "opponent_team": "Dixie Heights",
+      "opponent_team_rank": 71,
+      "opponent_weight": 132,
+      "opponent_rank": 10,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DEC",
+      "score": "11-7",
+      "duration": "7:00",
+      "event": "vs. Dixie Heights",
+      "mv_impact": 0.26
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35405573132",
+      "opponent_career_id": "career_004767",
+      "opponent_name": "Jackson Brown",
+      "opponent_team": "Grant County",
+      "opponent_team_rank": 84,
+      "opponent_weight": 132,
+      "opponent_rank": 176,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:51",
+      "event": "vs. Grant County",
+      "mv_impact": 3.67
+    },
+    {
+      "date": "2026-01-10",
       "opponent_id": "35219295132",
       "opponent_career_id": "career_001246",
       "opponent_name": "Deontae Graves",
@@ -299,7 +355,7 @@
       "method": "DEC",
       "score": "10-3",
       "duration": "7:00",
-      "event": "vs. Montgomery County",
+      "event": "vs. Holmes",
       "mv_impact": -1.7
     },
     {
@@ -320,57 +376,6 @@
       "mv_impact": 5.38
     },
     {
-      "date": "2026-01-10",
-      "opponent_id": "35214945132",
-      "opponent_career_id": "career_000557",
-      "opponent_name": "Jack Baron",
-      "opponent_team": "Cooper",
-      "opponent_team_rank": 7,
-      "opponent_weight": 138,
-      "opponent_rank": 81,
-      "weight_class": "132",
-      "result": "W",
-      "method": "TF",
-      "score": "19-2",
-      "duration": "4:00",
-      "event": "vs. Montgomery County",
-      "mv_impact": 5.78
-    },
-    {
-      "date": "2026-01-10",
-      "opponent_id": "35281280132",
-      "opponent_career_id": "career_000683",
-      "opponent_name": "Ethan Piasecki",
-      "opponent_team": "Dixie Heights",
-      "opponent_team_rank": 71,
-      "opponent_weight": 132,
-      "opponent_rank": 10,
-      "weight_class": "132",
-      "result": "L",
-      "method": "DEC",
-      "score": "11-7",
-      "duration": "7:00",
-      "event": "vs. Montgomery County",
-      "mv_impact": 0.26
-    },
-    {
-      "date": "2026-01-10",
-      "opponent_id": "35405573132",
-      "opponent_career_id": "career_004767",
-      "opponent_name": "Jackson Brown",
-      "opponent_team": "Grant County",
-      "opponent_team_rank": 84,
-      "opponent_weight": 132,
-      "opponent_rank": 176,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:51",
-      "event": "vs. Montgomery County",
-      "mv_impact": 3.67
-    },
-    {
       "date": "2026-01-07",
       "opponent_id": "34992809132",
       "opponent_career_id": "career_000268",
@@ -384,7 +389,7 @@
       "method": "TF",
       "score": "17-1",
       "duration": "0:00",
-      "event": "vs. Montgomery County",
+      "event": "vs. Boyle County",
       "mv_impact": -1.38
     },
     {
@@ -401,7 +406,7 @@
       "method": "TF",
       "score": "15-0",
       "duration": "0:00",
-      "event": "vs. Montgomery County",
+      "event": "vs. Mercer County",
       "mv_impact": 1.81
     },
     {
@@ -456,23 +461,6 @@
     },
     {
       "date": "2025-12-20",
-      "opponent_id": "35205065132",
-      "opponent_career_id": "career_000338",
-      "opponent_name": "Nick Fultz",
-      "opponent_team": "Bullitt East",
-      "opponent_team_rank": 40,
-      "opponent_weight": 126,
-      "opponent_rank": 91,
-      "weight_class": "132",
-      "result": "W",
-      "method": "TF",
-      "score": "18-0",
-      "duration": "0:00",
-      "event": "Lafayette 5 Star Tournament",
-      "mv_impact": 1.85
-    },
-    {
-      "date": "2025-12-20",
       "opponent_id": "35520541132",
       "opponent_career_id": "career_000008",
       "opponent_name": "Corban Nance",
@@ -487,6 +475,23 @@
       "duration": "7:00",
       "event": "Lafayette 5 Star Tournament",
       "mv_impact": 0.32
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35205065132",
+      "opponent_career_id": "career_000338",
+      "opponent_name": "Nick Fultz",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": 40,
+      "opponent_weight": 126,
+      "opponent_rank": 91,
+      "weight_class": "132",
+      "result": "W",
+      "method": "TF",
+      "score": "18-0",
+      "duration": "0:00",
+      "event": "Lafayette 5 Star Tournament",
+      "mv_impact": 1.85
     },
     {
       "date": "2025-12-20",
@@ -524,6 +529,23 @@
     },
     {
       "date": "2025-12-13",
+      "opponent_id": "35850444132",
+      "opponent_career_id": "career_000243",
+      "opponent_name": "Bentley Brown",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 132,
+      "opponent_rank": 7,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Ashland Invitational Tournament",
+      "mv_impact": -3.24
+    },
+    {
+      "date": "2025-12-13",
       "opponent_id": "35850457132",
       "opponent_career_id": "career_000245",
       "opponent_name": "Wyatt Preece",
@@ -538,22 +560,6 @@
       "duration": "0:00",
       "event": "Ashland Invitational Tournament",
       "mv_impact": 3.12
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "35909978132",
-      "opponent_career_id": "career_002297",
-      "opponent_name": "Lukas Hamm",
-      "opponent_team": "Russell",
-      "opponent_team_rank": 122,
-      "opponent_weight": 126,
-      "opponent_rank": 127,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Ashland Invitational Tournament"
     },
     {
       "date": "2025-12-13",
@@ -573,23 +579,6 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35850444132",
-      "opponent_career_id": "career_000243",
-      "opponent_name": "Bentley Brown",
-      "opponent_team": "Boyd County",
-      "opponent_team_rank": 6,
-      "opponent_weight": 132,
-      "opponent_rank": 7,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Ashland Invitational Tournament",
-      "mv_impact": -3.24
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35103765132",
       "opponent_career_id": "career_004826",
       "opponent_name": "Alex Gonzalez",
@@ -604,6 +593,39 @@
       "duration": "0:00",
       "event": "Ashland blazer invitational",
       "mv_impact": 6.63
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35909978132",
+      "opponent_career_id": "career_002297",
+      "opponent_name": "Lukas Hamm",
+      "opponent_team": "Russell",
+      "opponent_team_rank": 122,
+      "opponent_weight": 126,
+      "opponent_rank": 127,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Ashland Invitational Tournament"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35138678132",
+      "opponent_career_id": "career_000177",
+      "opponent_name": "Ethan Mullins",
+      "opponent_team": "Bethlehem",
+      "opponent_team_rank": 59,
+      "opponent_weight": 132,
+      "opponent_rank": 51,
+      "weight_class": "132",
+      "result": "W",
+      "method": "TF",
+      "score": "24-9",
+      "duration": "0:00",
+      "event": "Tommy Castle Classic",
+      "mv_impact": 3.38
     },
     {
       "date": "2025-11-29",
@@ -638,23 +660,6 @@
       "duration": "0:00",
       "event": "Tommy Castle Classic",
       "mv_impact": -1.55
-    },
-    {
-      "date": "2025-11-29",
-      "opponent_id": "35138678132",
-      "opponent_career_id": "career_000177",
-      "opponent_name": "Ethan Mullins",
-      "opponent_team": "Bethlehem",
-      "opponent_team_rank": 59,
-      "opponent_weight": 132,
-      "opponent_rank": 51,
-      "weight_class": "132",
-      "result": "W",
-      "method": "TF",
-      "score": "24-9",
-      "duration": "0:00",
-      "event": "Tommy Castle Classic",
-      "mv_impact": 3.38
     }
   ],
   "career": {
@@ -673,7 +678,7 @@
       "season": 2026,
       "grade": 12,
       "team": "Montgomery County",
-      "record": "20-12",
+      "record": "23-14",
       "regional_place": 3,
       "state_place": null
     },
@@ -681,7 +686,7 @@
       "season": 2025,
       "grade": 11,
       "team": "Montgomery County",
-      "record": "26-12",
+      "record": "29-11",
       "regional_place": 3,
       "state_place": null
     },
@@ -697,7 +702,7 @@
       "season": 2023,
       "grade": 9,
       "team": "Montgomery County",
-      "record": "13-15",
+      "record": "13-19",
       "regional_place": 4,
       "state_place": null
     },
@@ -711,9 +716,9 @@
     }
   ],
   "career_record": {
-    "wins": 92,
-    "losses": 64,
-    "win_pct": 0.59
+    "wins": 98,
+    "losses": 69,
+    "win_pct": 0.587
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

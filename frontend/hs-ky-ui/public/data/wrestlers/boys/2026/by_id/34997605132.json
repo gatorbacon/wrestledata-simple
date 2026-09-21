@@ -5,10 +5,15 @@
   "team_slug": "corbin",
   "team_rank": 19,
   "weight_class": 175,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 71,
   "record": {
-    "overall": "12-4",
+    "overall": "11-4",
     "vs_ranked": "5-4",
     "vs_top10": "0-0",
     "vs_top25": "1-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.6,
-    "bonus_rate": 0.8,
+    "pin_rate": 0.75,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
     "pins": 3
@@ -79,22 +84,6 @@
     },
     {
       "date": "2025-12-30",
-      "opponent_id": "35364773132",
-      "opponent_career_id": "career_003588",
-      "opponent_name": "Carter Lawrence",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 95,
-      "opponent_weight": 165,
-      "opponent_rank": 79,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:34",
-      "event": "Cardinal Invitational"
-    },
-    {
-      "date": "2025-12-30",
       "opponent_id": "35405492132",
       "opponent_career_id": "career_001012",
       "opponent_name": "Thomas Macke",
@@ -127,6 +116,22 @@
     },
     {
       "date": "2025-12-30",
+      "opponent_id": "35364773132",
+      "opponent_career_id": "career_003588",
+      "opponent_name": "Carter Lawrence",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 95,
+      "opponent_weight": 165,
+      "opponent_rank": 79,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:34",
+      "event": "Cardinal Invitational"
+    },
+    {
+      "date": "2025-12-30",
       "opponent_id": "34993730132",
       "opponent_career_id": "career_001136",
       "opponent_name": "Dray Roberts",
@@ -143,22 +148,6 @@
     },
     {
       "date": "2025-12-22",
-      "opponent_id": "35884355132",
-      "opponent_career_id": "career_005752",
-      "opponent_name": "dillon dugger",
-      "opponent_team": "Wayne County",
-      "opponent_team_rank": 37,
-      "opponent_weight": 157,
-      "opponent_rank": 130,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:36",
-      "event": "vs. Wayne County"
-    },
-    {
-      "date": "2025-12-22",
       "opponent_id": "OUTSTATE_0eea10e36b14",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -172,6 +161,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Knox Central"
+    },
+    {
+      "date": "2025-12-22",
+      "opponent_id": "35884355132",
+      "opponent_career_id": "career_005752",
+      "opponent_name": "dillon dugger",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": 37,
+      "opponent_weight": 157,
+      "opponent_rank": 130,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:36",
+      "event": "vs. Wayne County"
     },
     {
       "date": "2025-12-06",
@@ -301,7 +306,7 @@
       "season": 2026,
       "grade": 11,
       "team": "Corbin",
-      "record": "12-4",
+      "record": "11-4",
       "regional_place": null,
       "state_place": null
     },
@@ -325,15 +330,15 @@
       "season": 2023,
       "grade": 8,
       "team": "Corbin",
-      "record": "1-0",
+      "record": "1-2",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 28,
-    "losses": 16,
-    "win_pct": 0.636
+    "wins": 27,
+    "losses": 18,
+    "win_pct": 0.6
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

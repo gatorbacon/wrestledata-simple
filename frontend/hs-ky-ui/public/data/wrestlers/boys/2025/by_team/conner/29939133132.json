@@ -5,6 +5,11 @@
   "team_slug": "conner",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.75,
-    "bonus_rate": 0.75,
+    "pin_rate": 0.857,
+    "bonus_rate": 0.857,
     "majors": 0,
     "techs": 0,
     "pins": 6
@@ -117,6 +122,22 @@
     },
     {
       "date": "2025-02-15",
+      "opponent_id": "30659300132",
+      "opponent_career_id": "career_000349",
+      "opponent_name": "Alec Britt",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:15",
+      "event": "vs. Bullitt East"
+    },
+    {
+      "date": "2025-02-15",
       "opponent_id": "29949732132",
       "opponent_career_id": "career_001621",
       "opponent_name": "George Lemaster",
@@ -130,22 +151,6 @@
       "score": null,
       "duration": "0:58",
       "event": "vs. Martin County"
-    },
-    {
-      "date": "2025-02-15",
-      "opponent_id": "30659300132",
-      "opponent_career_id": "career_000349",
-      "opponent_name": "Alec Britt",
-      "opponent_team": "Bullitt East",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:15",
-      "event": "vs. Conner"
     },
     {
       "date": "2025-02-15",
@@ -241,7 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:14",
-      "event": "vs. Conner"
+      "event": "vs. Central"
     },
     {
       "date": "2025-02-01",
@@ -305,11 +310,11 @@
       "method": "FALL",
       "score": null,
       "duration": "3:08",
-      "event": "vs. Conner"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2025-01-30",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_0e10b1d4d3cb",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Holmes",
@@ -389,7 +394,7 @@
     },
     {
       "date": "2025-01-22",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_63b1d72eb9c1",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Archbishop McNicholas High School",
@@ -442,5 +447,5 @@
     "losses": 14,
     "win_pct": 0.417
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

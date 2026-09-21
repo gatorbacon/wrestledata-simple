@@ -5,10 +5,15 @@
   "team_slug": "bourbon_county",
   "team_rank": 61,
   "weight_class": 165,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 39,
   "record": {
-    "overall": "23-11",
+    "overall": "22-11",
     "vs_ranked": "17-11",
     "vs_top10": "0-6",
     "vs_top25": "0-7"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.529,
-    "bonus_rate": 0.765,
+    "pin_rate": 0.562,
+    "bonus_rate": 0.812,
     "majors": 1,
     "techs": 3,
     "pins": 9
@@ -367,22 +372,6 @@
     },
     {
       "date": "2025-12-30",
-      "opponent_id": "35049796132",
-      "opponent_career_id": "career_002041",
-      "opponent_name": "Thomas Brauer",
-      "opponent_team": "Owensboro Catholic",
-      "opponent_team_rank": 28,
-      "opponent_weight": 157,
-      "opponent_rank": 10,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Boys Woodford County Invitational"
-    },
-    {
-      "date": "2025-12-30",
       "opponent_id": "34993524132",
       "opponent_career_id": "career_002406",
       "opponent_name": "Belencio Camarena",
@@ -394,6 +383,22 @@
       "result": "W",
       "method": "TF",
       "score": "20-5",
+      "duration": "0:00",
+      "event": "Boys Woodford County Invitational"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35049796132",
+      "opponent_career_id": "career_002041",
+      "opponent_name": "Thomas Brauer",
+      "opponent_team": "Owensboro Catholic",
+      "opponent_team_rank": 28,
+      "opponent_weight": 157,
+      "opponent_rank": 10,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
       "duration": "0:00",
       "event": "Boys Woodford County Invitational"
     },
@@ -447,22 +452,6 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35359602132",
-      "opponent_career_id": "career_002116",
-      "opponent_name": "Arian Leyva",
-      "opponent_team": "Paul Laurence Dunbar",
-      "opponent_team_rank": 115,
-      "opponent_weight": 157,
-      "opponent_rank": 117,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Paul Laurence Dunbar"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "OUTSTATE_3e7053701b0d",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -494,36 +483,20 @@
       "event": "vs. West Jessamine"
     },
     {
-      "date": "2025-12-06",
-      "opponent_id": "35156192132",
-      "opponent_career_id": "career_002710",
-      "opponent_name": "Max Kelsay",
-      "opponent_team": "Taylor County",
-      "opponent_team_rank": 51,
+      "date": "2025-12-13",
+      "opponent_id": "35359602132",
+      "opponent_career_id": "career_002116",
+      "opponent_name": "Arian Leyva",
+      "opponent_team": "Paul Laurence Dunbar",
+      "opponent_team_rank": 115,
       "opponent_weight": 157,
-      "opponent_rank": 74,
-      "weight_class": "165",
-      "result": "W",
-      "method": "DEC",
-      "score": "11-8",
-      "duration": "7:00",
-      "event": "Joe Cochran State Farm HCIWT"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "34997567132",
-      "opponent_career_id": "career_000994",
-      "opponent_name": "Brock Heidle",
-      "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 42,
-      "opponent_weight": 157,
-      "opponent_rank": 24,
+      "opponent_rank": 117,
       "weight_class": "165",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Joe Cochran State Farm HCIWT"
+      "event": "vs. Paul Laurence Dunbar"
     },
     {
       "date": "2025-12-06",
@@ -572,6 +545,38 @@
       "score": null,
       "duration": "0:00",
       "event": "Joe Cochran State Farm HCIWT"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35156192132",
+      "opponent_career_id": "career_002710",
+      "opponent_name": "Max Kelsay",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": 51,
+      "opponent_weight": 157,
+      "opponent_rank": 74,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "11-8",
+      "duration": "7:00",
+      "event": "Joe Cochran State Farm HCIWT"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34997567132",
+      "opponent_career_id": "career_000994",
+      "opponent_name": "Brock Heidle",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": 42,
+      "opponent_weight": 157,
+      "opponent_rank": 24,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Joe Cochran State Farm HCIWT"
     }
   ],
   "career": {
@@ -590,7 +595,7 @@
       "season": 2026,
       "grade": 11,
       "team": "Bourbon County",
-      "record": "23-11",
+      "record": "22-11",
       "regional_place": 4,
       "state_place": null
     },
@@ -598,7 +603,7 @@
       "season": 2025,
       "grade": 10,
       "team": "Bourbon County",
-      "record": "15-15",
+      "record": "15-16",
       "regional_place": null,
       "state_place": null
     },
@@ -614,7 +619,7 @@
       "season": 2023,
       "grade": 8,
       "team": "Bourbon County",
-      "record": "4-19",
+      "record": "4-21",
       "regional_place": null,
       "state_place": null
     },
@@ -622,15 +627,15 @@
       "season": 2022,
       "grade": 7,
       "team": "Bourbon County",
-      "record": "4-13",
+      "record": "3-11",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 55,
-    "losses": 71,
-    "win_pct": 0.437
+    "wins": 53,
+    "losses": 72,
+    "win_pct": 0.424
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

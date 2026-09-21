@@ -5,6 +5,11 @@
   "team_slug": "simon_kenton",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.684,
-    "bonus_rate": 0.842,
+    "pin_rate": 0.7,
+    "bonus_rate": 0.85,
     "majors": 2,
     "techs": 1,
-    "pins": 13
+    "pins": 14
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -113,7 +118,7 @@
       "method": "MD",
       "score": "16-2",
       "duration": "7:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Martin County"
     },
     {
       "date": "2025-02-15",
@@ -197,7 +202,7 @@
     },
     {
       "date": "2025-02-06",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_0e10b1d4d3cb",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Holmes",
@@ -210,6 +215,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Holmes"
+    },
+    {
+      "date": "2025-02-06",
+      "opponent_id": "OUTSTATE_c2d8650d83b2",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Cooper"
     },
     {
       "date": "2025-02-01",
@@ -289,7 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. Great Crossing"
     },
     {
       "date": "2025-01-16",
@@ -305,23 +326,7 @@
       "method": "DEC",
       "score": "11-7",
       "duration": "7:00",
-      "event": "vs. Simon Kenton"
-    },
-    {
-      "date": "2025-01-15",
-      "opponent_id": "30099772132",
-      "opponent_career_id": "career_001046",
-      "opponent_name": "Carson Kidwell",
-      "opponent_team": "Great Crossing",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Great Crossing"
+      "event": "vs. Ryle"
     },
     {
       "date": "2025-01-04",
@@ -337,6 +342,22 @@
       "method": "FALL",
       "score": null,
       "duration": "3:33",
+      "event": "2025 CIWT"
+    },
+    {
+      "date": "2025-01-04",
+      "opponent_id": "30065889132",
+      "opponent_career_id": "career_000253",
+      "opponent_name": "Cameron Berner",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:01",
       "event": "2025 CIWT"
     },
     {
@@ -549,6 +570,22 @@
     },
     {
       "date": "2024-12-07",
+      "opponent_id": "29793494132",
+      "opponent_career_id": "career_002005",
+      "opponent_name": "Tyler Hillebrandt",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:41",
+      "event": "vs. Oldham County"
+    },
+    {
+      "date": "2024-12-07",
       "opponent_id": "29868881132",
       "opponent_career_id": "career_003029",
       "opponent_name": "Yordin Flores",
@@ -562,22 +599,6 @@
       "score": null,
       "duration": "1:30",
       "event": "vs. Woodford County"
-    },
-    {
-      "date": "2024-12-07",
-      "opponent_id": "29793494132",
-      "opponent_career_id": "career_002005",
-      "opponent_name": "Tyler Hillebrandt",
-      "opponent_team": "Oldham County",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:41",
-      "event": "vs. Simon Kenton"
     },
     {
       "date": "2024-12-07",
@@ -613,6 +634,38 @@
     },
     {
       "date": "2024-11-30",
+      "opponent_id": "29792348132",
+      "opponent_career_id": "career_000960",
+      "opponent_name": "Dominic Padilla",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "MD",
+      "score": "20-9",
+      "duration": "7:00",
+      "event": "vs. Franklin County"
+    },
+    {
+      "date": "2024-11-30",
+      "opponent_id": "30146331132",
+      "opponent_career_id": "career_001253",
+      "opponent_name": "Robert Kirk",
+      "opponent_team": "Holmes",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Holmes"
+    },
+    {
+      "date": "2024-11-30",
       "opponent_id": "29804371132",
       "opponent_career_id": "career_001942",
       "opponent_name": "Andrew Crace",
@@ -625,7 +678,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. North Oldham"
     },
     {
       "date": "2024-11-30",
@@ -642,38 +695,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Western Hills"
-    },
-    {
-      "date": "2024-11-30",
-      "opponent_id": "29792348132",
-      "opponent_career_id": "career_000960",
-      "opponent_name": "Dominic Padilla",
-      "opponent_team": "Franklin County",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "MD",
-      "score": "20-9",
-      "duration": "7:00",
-      "event": "vs. Simon Kenton"
-    },
-    {
-      "date": "2024-11-30",
-      "opponent_id": "30146331132",
-      "opponent_career_id": "career_001253",
-      "opponent_name": "Robert Kirk",
-      "opponent_team": "Holmes",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Simon Kenton"
     }
   ],
   "career": {
@@ -698,5 +719,5 @@
     "losses": 19,
     "win_pct": 0.537
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

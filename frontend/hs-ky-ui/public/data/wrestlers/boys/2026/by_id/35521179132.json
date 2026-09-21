@@ -5,11 +5,16 @@
   "team_slug": "letcher_county_central",
   "team_rank": 101,
   "weight_class": 165,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 111,
   "record": {
     "overall": "10-10",
-    "vs_ranked": "6-9",
+    "vs_ranked": "7-9",
     "vs_top10": "0-1",
     "vs_top25": "0-1"
   },
@@ -20,14 +25,14 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.875,
-    "bonus_rate": 0.875,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 7
+    "pins": 8
   },
   "opponent_breakdown": {
-    "ranked_wins": 6,
+    "ranked_wins": 7,
     "ranked_losses": 9,
     "top10_wins": 0,
     "top10_losses": 1,
@@ -47,6 +52,22 @@
   "match_list": [
     {
       "date": "2026-01-20",
+      "opponent_id": "35454683132",
+      "opponent_career_id": "career_001383",
+      "opponent_name": "Gavin Jordan",
+      "opponent_team": "Knox Central",
+      "opponent_team_rank": 97,
+      "opponent_weight": 165,
+      "opponent_rank": 26,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Knox Central"
+    },
+    {
+      "date": "2026-01-20",
       "opponent_id": "35013064132",
       "opponent_career_id": "career_002137",
       "opponent_name": "Blaze Cook",
@@ -62,22 +83,6 @@
       "event": "vs. Perry County Central"
     },
     {
-      "date": "2026-01-20",
-      "opponent_id": "35454683132",
-      "opponent_career_id": null,
-      "opponent_name": "Gavin Jordan",
-      "opponent_team": "Knox Central",
-      "opponent_team_rank": 97,
-      "opponent_weight": 165,
-      "opponent_rank": 26,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Letcher County Central"
-    },
-    {
       "date": "2026-01-10",
       "opponent_id": "37133357132",
       "opponent_career_id": "career_004629",
@@ -91,22 +96,6 @@
       "method": "FALL",
       "score": null,
       "duration": "1:24",
-      "event": "Clipson Jones Classic 2026"
-    },
-    {
-      "date": "2026-01-10",
-      "opponent_id": "35721995132",
-      "opponent_career_id": "career_002179",
-      "opponent_name": "Kameron Akers",
-      "opponent_team": "Prestonsburg",
-      "opponent_team_rank": 120,
-      "opponent_weight": 157,
-      "opponent_rank": 78,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:37",
       "event": "Clipson Jones Classic 2026"
     },
     {
@@ -143,6 +132,22 @@
     },
     {
       "date": "2026-01-10",
+      "opponent_id": "35721995132",
+      "opponent_career_id": "career_002179",
+      "opponent_name": "Kameron Akers",
+      "opponent_team": "Prestonsburg",
+      "opponent_team_rank": 120,
+      "opponent_weight": 157,
+      "opponent_rank": 78,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:37",
+      "event": "Clipson Jones Classic 2026"
+    },
+    {
+      "date": "2026-01-10",
       "opponent_id": "36230040132",
       "opponent_career_id": null,
       "opponent_name": "Eli Whitt",
@@ -156,22 +161,6 @@
       "score": null,
       "duration": "7:00",
       "event": "Clipson Jones Classic 2026"
-    },
-    {
-      "date": "2025-12-30",
-      "opponent_id": "35721995132",
-      "opponent_career_id": "career_002179",
-      "opponent_name": "Kameron Akers",
-      "opponent_team": "Prestonsburg",
-      "opponent_team_rank": 120,
-      "opponent_weight": 157,
-      "opponent_rank": 78,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:09",
-      "event": "Boys Hatfield McCoy 32 2025"
     },
     {
       "date": "2025-12-30",
@@ -206,6 +195,22 @@
       "event": "Boys Hatfield McCoy 32 2025"
     },
     {
+      "date": "2025-12-30",
+      "opponent_id": "35721995132",
+      "opponent_career_id": "career_002179",
+      "opponent_name": "Kameron Akers",
+      "opponent_team": "Prestonsburg",
+      "opponent_team_rank": 120,
+      "opponent_weight": 157,
+      "opponent_rank": 78,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:09",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
       "date": "2025-12-13",
       "opponent_id": "35913093132",
       "opponent_career_id": "career_005212",
@@ -219,7 +224,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Letcher County Central"
+      "event": "vs. Belfry"
     },
     {
       "date": "2025-12-13",
@@ -235,7 +240,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Letcher County Central"
+      "event": "vs. Harlan County"
     },
     {
       "date": "2025-12-13",
@@ -267,6 +272,22 @@
       "method": "FALL",
       "score": null,
       "duration": "4:00",
+      "event": "Anchor Down Showdown"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34995989132",
+      "opponent_career_id": "career_000164",
+      "opponent_name": "Grayson Malicoat",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 58,
+      "opponent_weight": 175,
+      "opponent_rank": 42,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:42",
       "event": "Anchor Down Showdown"
     },
     {
@@ -380,15 +401,15 @@
       "season": 2024,
       "grade": 9,
       "team": "Letcher County Central",
-      "record": "1-9",
+      "record": "1-11",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 12,
-    "losses": 21,
-    "win_pct": 0.364
+    "losses": 23,
+    "win_pct": 0.343
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

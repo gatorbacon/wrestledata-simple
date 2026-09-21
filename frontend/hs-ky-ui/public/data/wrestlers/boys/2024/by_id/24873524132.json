@@ -5,10 +5,15 @@
   "team_slug": "rossview",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
-    "overall": "4-2",
+    "overall": "6-3",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.75,
-    "bonus_rate": 0.75,
-    "majors": 0,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.833,
+    "majors": 1,
     "techs": 0,
-    "pins": 3
+    "pins": 4
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -53,6 +58,22 @@
     },
     {
       "date": "2023-12-23",
+      "opponent_id": "24882178132",
+      "opponent_career_id": "career_000374",
+      "opponent_name": "Cale Goodwin",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:31",
+      "event": "2023 Christian County Invitational"
+    },
+    {
+      "date": "2023-12-23",
       "opponent_id": "25082006132",
       "opponent_career_id": "career_000910",
       "opponent_name": "Keshawn Dixon",
@@ -69,18 +90,18 @@
     },
     {
       "date": "2023-12-23",
-      "opponent_id": "24882178132",
-      "opponent_career_id": "career_000374",
-      "opponent_name": "Cale Goodwin",
-      "opponent_team": "Caldwell County",
+      "opponent_id": "24801493132",
+      "opponent_career_id": "career_001089",
+      "opponent_name": "Hudson Smith",
+      "opponent_team": "Greenwood",
       "opponent_team_rank": null,
-      "opponent_weight": 165,
+      "opponent_weight": 157,
       "opponent_rank": null,
       "weight_class": "165",
       "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:31",
+      "method": "MD",
+      "score": "11-1",
+      "duration": "7:00",
       "event": "2023 Christian County Invitational"
     },
     {
@@ -117,6 +138,38 @@
     },
     {
       "date": "2023-11-22",
+      "opponent_id": "24694071132",
+      "opponent_career_id": "career_000048",
+      "opponent_name": "Patrick Glenn",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:09",
+      "event": "vs. Apollo"
+    },
+    {
+      "date": "2023-11-22",
+      "opponent_id": "24801501132",
+      "opponent_career_id": "career_001091",
+      "opponent_name": "Tugra Semerci",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:24",
+      "event": "vs. Greenwood"
+    },
+    {
+      "date": "2023-11-22",
       "opponent_id": "25131982132",
       "opponent_career_id": "career_003299",
       "opponent_name": "Malachi Gray",
@@ -129,8 +182,8 @@
       "method": "FALL",
       "score": null,
       "duration": "1:20",
-      "event": "vs. Rossview"
+      "event": "vs. McCracken County"
     }
   ],
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

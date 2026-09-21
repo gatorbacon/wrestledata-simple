@@ -5,10 +5,15 @@
   "team_slug": "south_warren",
   "team_rank": null,
   "weight_class": 157,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
-    "overall": "0-0",
+    "overall": "4-7",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.0,
-    "bonus_rate": 0.0,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 0
+    "pins": 2
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -49,7 +54,55 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. South Warren High School"
+      "event": "vs. John Hardin"
+    },
+    {
+      "date": "2023-12-19",
+      "opponent_id": "25694492132",
+      "opponent_career_id": "career_002045",
+      "opponent_name": "Eric McCarthy",
+      "opponent_team": "Owensboro Catholic",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Owensboro Catholic High School"
+    },
+    {
+      "date": "2023-12-19",
+      "opponent_id": "24681128132",
+      "opponent_career_id": null,
+      "opponent_name": "Brayden Crouch",
+      "opponent_team": "White House Heritage",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. White House Heritage"
+    },
+    {
+      "date": "2023-12-19",
+      "opponent_id": "OUTSTATE_c530402c7e39",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Apollo High School",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Apollo High School"
     },
     {
       "date": "2023-12-16",
@@ -65,7 +118,55 @@
       "method": "FALL",
       "score": null,
       "duration": "0:35",
-      "event": "vs. South Warren High School"
+      "event": "vs. East Carter"
+    },
+    {
+      "date": "2023-12-16",
+      "opponent_id": "26069454132",
+      "opponent_career_id": "career_003601",
+      "opponent_name": "Grant Thompson",
+      "opponent_team": "Lexington Christian",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:28",
+      "event": "vs. Lexington Christian Academy"
+    },
+    {
+      "date": "2023-12-16",
+      "opponent_id": "OUTSTATE_40238e8e82a0",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Frederick Douglass",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Frederick Douglass"
+    },
+    {
+      "date": "2023-11-22",
+      "opponent_id": "24984450132",
+      "opponent_career_id": "career_000044",
+      "opponent_name": "Brayden Mattingly",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:22",
+      "event": "vs. Apollo High School"
     },
     {
       "date": "2023-11-22",
@@ -81,7 +182,39 @@
       "method": "FALL",
       "score": null,
       "duration": "1:55",
-      "event": "vs. South Warren High School"
+      "event": "vs. McCracken County"
+    },
+    {
+      "date": "2023-11-22",
+      "opponent_id": "24873598132",
+      "opponent_career_id": null,
+      "opponent_name": "Max Landrum",
+      "opponent_team": "Rossview",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:36",
+      "event": "vs. Rossview"
+    },
+    {
+      "date": "2023-11-22",
+      "opponent_id": "25128173132",
+      "opponent_career_id": null,
+      "opponent_name": "Izick Headings",
+      "opponent_team": "West Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:40",
+      "event": "vs. West Creek"
     }
   ],
   "career": {
@@ -96,10 +229,15 @@
       "season": 2024,
       "grade": 10,
       "team": "South Warren",
-      "record": "0-0",
+      "record": "4-7",
       "regional_place": null,
       "state_place": null
     }
   ],
-  "profile_generated_at": "2026-04-16"
+  "career_record": {
+    "wins": 4,
+    "losses": 7,
+    "win_pct": 0.364
+  },
+  "profile_generated_at": "2026-09-21"
 }

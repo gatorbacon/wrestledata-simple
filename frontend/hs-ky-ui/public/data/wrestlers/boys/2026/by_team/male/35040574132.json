@@ -5,6 +5,11 @@
   "team_slug": "male",
   "team_rank": 45,
   "weight_class": 150,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 58,
   "record": {
@@ -79,22 +84,6 @@
     },
     {
       "date": "2026-01-14",
-      "opponent_id": "35144512132",
-      "opponent_career_id": "career_001403",
-      "opponent_name": "Joseph Kresel",
-      "opponent_team": "LaRue County",
-      "opponent_team_rank": 98,
-      "opponent_weight": 144,
-      "opponent_rank": 18,
-      "weight_class": "150",
-      "result": "L",
-      "method": "TF",
-      "score": "19-3",
-      "duration": "0:00",
-      "event": "vs. Male"
-    },
-    {
-      "date": "2026-01-14",
       "opponent_id": "35001145132",
       "opponent_career_id": "career_000477",
       "opponent_name": "Peyton Weaver",
@@ -107,7 +96,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Male"
+      "event": "vs. Central Hardin"
+    },
+    {
+      "date": "2026-01-14",
+      "opponent_id": "35144512132",
+      "opponent_career_id": "career_001403",
+      "opponent_name": "Joseph Kresel",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": 98,
+      "opponent_weight": 144,
+      "opponent_rank": 18,
+      "weight_class": "150",
+      "result": "L",
+      "method": "TF",
+      "score": "19-3",
+      "duration": "0:00",
+      "event": "vs. LaRue County"
     },
     {
       "date": "2026-01-10",
@@ -207,6 +212,22 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "35205074132",
+      "opponent_career_id": "career_000337",
+      "opponent_name": "John Jerred Del Carmen",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": 40,
+      "opponent_weight": 144,
+      "opponent_rank": 63,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Bullitt East"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35217574132",
       "opponent_career_id": "career_005386",
       "opponent_name": "Gavin Meiller",
@@ -219,7 +240,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Male"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2025-12-06",
@@ -235,39 +256,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:30",
-      "event": "vs. Male"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35280922132",
-      "opponent_career_id": "career_002565",
-      "opponent_name": "Sean Moreno",
-      "opponent_team": "Southern",
-      "opponent_team_rank": 130,
-      "opponent_weight": 144,
-      "opponent_rank": 55,
-      "weight_class": "144",
-      "result": "L",
-      "method": "MD",
-      "score": "16-6",
-      "duration": "7:00",
-      "event": "vs. Southern"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35205074132",
-      "opponent_career_id": "career_000337",
-      "opponent_name": "John Jerred Del Carmen",
-      "opponent_team": "Bullitt East",
-      "opponent_team_rank": 40,
-      "opponent_weight": 144,
-      "opponent_rank": 63,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Male"
+      "event": "vs. Jeffersontown"
     },
     {
       "date": "2025-12-06",
@@ -284,6 +273,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Central"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35280922132",
+      "opponent_career_id": "career_002565",
+      "opponent_name": "Sean Moreno",
+      "opponent_team": "Southern",
+      "opponent_team_rank": 130,
+      "opponent_weight": 144,
+      "opponent_rank": 55,
+      "weight_class": "144",
+      "result": "L",
+      "method": "MD",
+      "score": "16-6",
+      "duration": "7:00",
+      "event": "vs. Southern"
     }
   ],
   "career": {
@@ -326,5 +331,5 @@
     "losses": 28,
     "win_pct": 0.451
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

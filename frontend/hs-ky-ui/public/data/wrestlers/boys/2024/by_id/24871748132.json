@@ -5,10 +5,15 @@
   "team_slug": "owensboro_catholic",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
-    "overall": "14-10",
+    "overall": "31-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.846,
-    "bonus_rate": 0.846,
+    "pin_rate": 0.889,
+    "bonus_rate": 0.889,
     "majors": 0,
     "techs": 0,
-    "pins": 11
+    "pins": 16
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -81,7 +86,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro Catholic"
+      "event": "vs. Christian County"
     },
     {
       "date": "2024-01-30",
@@ -97,7 +102,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:05",
-      "event": "vs. Owensboro Catholic"
+      "event": "vs. Ohio County"
+    },
+    {
+      "date": "2024-01-26",
+      "opponent_id": "24926670132",
+      "opponent_career_id": "career_003687",
+      "opponent_name": "Steven Bryant",
+      "opponent_team": "Warren Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Warren Central"
     },
     {
       "date": "2024-01-25",
@@ -113,7 +134,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:52",
-      "event": "vs. Owensboro Catholic"
+      "event": "vs. Daviess County"
     },
     {
       "date": "2024-01-25",
@@ -129,7 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro Catholic"
+      "event": "vs. Owensboro"
     },
     {
       "date": "2024-01-25",
@@ -161,7 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro Catholic"
+      "event": "vs. Daviess County"
     },
     {
       "date": "2024-01-06",
@@ -177,39 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro Catholic"
-    },
-    {
-      "date": "2024-01-06",
-      "opponent_id": "25407248132",
-      "opponent_career_id": "career_003458",
-      "opponent_name": "Bailey Jones",
-      "opponent_team": "Wayne County",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Wayne County"
-    },
-    {
-      "date": "2024-01-06",
-      "opponent_id": "OUTSTATE_a2fc6114ae97",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Western",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Western"
+      "event": "vs. Montgomery County"
     },
     {
       "date": "2024-01-06",
@@ -244,20 +233,116 @@
       "event": "vs. John Hardin"
     },
     {
-      "date": "2023-12-29",
-      "opponent_id": "25256288132",
-      "opponent_career_id": "career_002030",
-      "opponent_name": "Isaac Mattingly",
-      "opponent_team": "Owensboro",
+      "date": "2024-01-06",
+      "opponent_id": "25407248132",
+      "opponent_career_id": "career_003458",
+      "opponent_name": "Bailey Jones",
+      "opponent_team": "Wayne County",
       "opponent_team_rank": null,
-      "opponent_weight": 190,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Wayne County"
+    },
+    {
+      "date": "2024-01-06",
+      "opponent_id": "OUTSTATE_a2fc6114ae97",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Western",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Western"
+    },
+    {
+      "date": "2024-01-05",
+      "opponent_id": "24814226132",
+      "opponent_career_id": null,
+      "opponent_name": "Jamison Dowlen",
+      "opponent_team": "East Robertson",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "285",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro Catholic"
+      "event": "vs. East Robertson"
+    },
+    {
+      "date": "2024-01-05",
+      "opponent_id": "OUTSTATE_19e2237a6698",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Hopkinsville"
+    },
+    {
+      "date": "2024-01-05",
+      "opponent_id": "OUTSTATE_36ad700e1cca",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "South Warren High School",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. South Warren High School"
+    },
+    {
+      "date": "2024-01-05",
+      "opponent_id": "OUTSTATE_d486b9c63f07",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Greenwood High School",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Greenwood High School"
+    },
+    {
+      "date": "2024-01-05",
+      "opponent_id": "24926670132",
+      "opponent_career_id": "career_003687",
+      "opponent_name": "Steven Bryant",
+      "opponent_team": "Warren Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Warren Central HIgh School"
     },
     {
       "date": "2023-12-29",
@@ -273,7 +358,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro Catholic"
+      "event": "vs. Henderson County"
+    },
+    {
+      "date": "2023-12-29",
+      "opponent_id": "25256288132",
+      "opponent_career_id": "career_002030",
+      "opponent_name": "Isaac Mattingly",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Owensboro"
     },
     {
       "date": "2023-12-29",
@@ -340,6 +441,70 @@
       "event": "vs. Jasper"
     },
     {
+      "date": "2023-12-19",
+      "opponent_id": "OUTSTATE_36ad700e1cca",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "South Warren High School",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. South Warren High School"
+    },
+    {
+      "date": "2023-12-19",
+      "opponent_id": "OUTSTATE_d486b9c63f07",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Greenwood High School",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Greenwood High School"
+    },
+    {
+      "date": "2023-12-19",
+      "opponent_id": "24685378132",
+      "opponent_career_id": null,
+      "opponent_name": "Wade Ennis",
+      "opponent_team": "White House Heritage",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. White House Heritage"
+    },
+    {
+      "date": "2023-12-19",
+      "opponent_id": "OUTSTATE_c530402c7e39",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Apollo High School",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Apollo High School"
+    },
+    {
       "date": "2023-12-16",
       "opponent_id": "24660452132",
       "opponent_career_id": "career_000393",
@@ -353,7 +518,7 @@
       "method": "DEC",
       "score": "8-2",
       "duration": "7:00",
-      "event": "vs. Owensboro Catholic High School"
+      "event": "vs. Calloway County"
     },
     {
       "date": "2023-12-16",
@@ -369,7 +534,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro Catholic High School"
+      "event": "vs. Henderson County"
+    },
+    {
+      "date": "2023-12-16",
+      "opponent_id": "25128475132",
+      "opponent_career_id": null,
+      "opponent_name": "Jacob Donaldson",
+      "opponent_team": "Kenwood",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Kenwood"
     },
     {
       "date": "2023-12-16",
@@ -385,7 +566,7 @@
       "method": "DEC",
       "score": "6-2",
       "duration": "7:00",
-      "event": "vs. Owensboro Catholic High School"
+      "event": "vs. Trigg County"
     },
     {
       "date": "2023-12-09",
@@ -401,7 +582,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro Catholic High School"
+      "event": "vs. Henderson B"
     },
     {
       "date": "2023-12-09",
@@ -417,7 +598,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro Catholic High School"
+      "event": "vs. John Hardin"
     },
     {
       "date": "2023-12-09",
@@ -433,7 +614,23 @@
       "method": "FALL",
       "score": null,
       "duration": "3:29",
-      "event": "vs. Owensboro Catholic High School"
+      "event": "vs. Western"
+    },
+    {
+      "date": "2023-12-09",
+      "opponent_id": "OUTSTATE_90f04a742fd4",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Ohio County"
     },
     {
       "date": "2023-12-02",
@@ -449,7 +646,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro Catholic"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2023-12-02",
@@ -465,7 +662,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:32",
-      "event": "vs. Owensboro Catholic"
+      "event": "vs. McCracken County"
     },
     {
       "date": "2023-12-02",
@@ -531,7 +728,7 @@
       "season": 2024,
       "grade": 12,
       "team": "Owensboro Catholic",
-      "record": "14-10",
+      "record": "31-11",
       "regional_place": null,
       "state_place": null
     },
@@ -539,7 +736,7 @@
       "season": 2023,
       "grade": 11,
       "team": "Owensboro Catholic High School ",
-      "record": "0-0",
+      "record": "24-15",
       "regional_place": null,
       "state_place": null
     },
@@ -547,7 +744,7 @@
       "season": 2022,
       "grade": 10,
       "team": "Owensboro Catholic High School ",
-      "record": "0-0",
+      "record": "8-15",
       "regional_place": null,
       "state_place": null
     },
@@ -555,15 +752,15 @@
       "season": 2021,
       "grade": 9,
       "team": "Owensboro Catholic High School ",
-      "record": "0-0",
+      "record": "13-18",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 14,
-    "losses": 10,
-    "win_pct": 0.583
+    "wins": 76,
+    "losses": 59,
+    "win_pct": 0.563
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

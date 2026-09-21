@@ -5,6 +5,11 @@
   "team_slug": "bullitt_central",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
@@ -69,6 +74,22 @@
     },
     {
       "date": "2024-01-06",
+      "opponent_id": "24664249132",
+      "opponent_career_id": "career_002405",
+      "opponent_name": "Lucas Banner",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Scott County"
+    },
+    {
+      "date": "2024-01-06",
       "opponent_id": "24660012132",
       "opponent_career_id": "career_003343",
       "opponent_name": "Creed Williams",
@@ -101,22 +122,6 @@
     },
     {
       "date": "2024-01-06",
-      "opponent_id": "24664249132",
-      "opponent_career_id": "career_002405",
-      "opponent_name": "Lucas Banner",
-      "opponent_team": "Scott County",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Scott County"
-    },
-    {
-      "date": "2024-01-06",
       "opponent_id": "OUTSTATE_e154a2d4e8e0",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -145,7 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Bullitt Central"
+      "event": "vs. Bourbon County"
     },
     {
       "date": "2023-12-16",
@@ -213,22 +218,6 @@
     },
     {
       "date": "2023-12-13",
-      "opponent_id": "24807400132",
-      "opponent_career_id": "career_003927",
-      "opponent_name": "Carson Wheatley",
-      "opponent_team": "Bethlehem",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Bullitt Central"
-    },
-    {
-      "date": "2023-12-13",
       "opponent_id": "24835620132",
       "opponent_career_id": "career_003906",
       "opponent_name": "Riley Jenkins",
@@ -241,7 +230,23 @@
       "method": "DEC",
       "score": "7-6",
       "duration": "7:00",
-      "event": "vs. Bullitt Central"
+      "event": "vs. Ballard"
+    },
+    {
+      "date": "2023-12-13",
+      "opponent_id": "24807400132",
+      "opponent_career_id": "career_003927",
+      "opponent_name": "Carson Wheatley",
+      "opponent_team": "Bethlehem",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Bethlehem"
     },
     {
       "date": "2023-12-09",
@@ -341,22 +346,6 @@
     },
     {
       "date": "2023-12-02",
-      "opponent_id": "25075468132",
-      "opponent_career_id": "career_004391",
-      "opponent_name": "Graham Dwyer",
-      "opponent_team": "Spencer County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "SV-1",
-      "score": "11-9",
-      "duration": "8:15",
-      "event": "Battle for the Bone"
-    },
-    {
-      "date": "2023-12-02",
       "opponent_id": "24972255132",
       "opponent_career_id": "career_000351",
       "opponent_name": "Raiden Rios",
@@ -385,6 +374,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
+      "event": "Battle for the Bone"
+    },
+    {
+      "date": "2023-12-02",
+      "opponent_id": "25075468132",
+      "opponent_career_id": "career_004391",
+      "opponent_name": "Graham Dwyer",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "SV-1",
+      "score": "11-9",
+      "duration": "8:15",
       "event": "Battle for the Bone"
     }
   ],
@@ -428,5 +433,5 @@
     "losses": 12,
     "win_pct": 0.625
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

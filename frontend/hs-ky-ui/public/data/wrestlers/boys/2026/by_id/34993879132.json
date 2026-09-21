@@ -5,6 +5,11 @@
   "team_slug": "green_county",
   "team_rank": 85,
   "weight_class": 113,
+  "grade": "7th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 85,
   "record": {
@@ -59,7 +64,7 @@
       "method": "TF",
       "score": "17-2",
       "duration": "0:00",
-      "event": "vs. Green County"
+      "event": "vs. Bardstown"
     },
     {
       "date": "2026-01-17",
@@ -126,5 +131,36 @@
       "event": "vs. Hart County"
     }
   ],
-  "profile_generated_at": "2026-04-16"
+  "career": {
+    "career_id": "career_001052",
+    "canonical_name": "Levi Scott",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 7,
+      "team": "Green County",
+      "record": "2-3",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 6,
+      "team": "Green County",
+      "record": "0-1",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 2,
+    "losses": 4,
+    "win_pct": 0.333
+  },
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,11 +5,16 @@
   "team_slug": "fort_campbell",
   "team_rank": 79,
   "weight_class": 120,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 41,
   "record": {
     "overall": "29-23",
-    "vs_ranked": "15-12",
+    "vs_ranked": "16-13",
     "vs_top10": "0-4",
     "vs_top25": "1-6"
   },
@@ -24,11 +29,11 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 19
+    "pins": 20
   },
   "opponent_breakdown": {
-    "ranked_wins": 15,
-    "ranked_losses": 12,
+    "ranked_wins": 16,
+    "ranked_losses": 13,
     "top10_wins": 0,
     "top10_losses": 4,
     "win_over_highest_rank": {
@@ -127,6 +132,22 @@
     },
     {
       "date": "2026-02-21",
+      "opponent_id": "35133611132",
+      "opponent_career_id": "career_001259",
+      "opponent_name": "Christon Johnson",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": 93,
+      "opponent_weight": 120,
+      "opponent_rank": 26,
+      "weight_class": "120",
+      "result": "L",
+      "method": "TF",
+      "score": "19-3",
+      "duration": "2:52",
+      "event": "KHSAA Boys/Coed Region 1"
+    },
+    {
+      "date": "2026-02-21",
       "opponent_id": "35281677132",
       "opponent_career_id": "career_001662",
       "opponent_name": "Taylor Stroud",
@@ -140,22 +161,6 @@
       "score": null,
       "duration": "2:12",
       "event": "KHSAA Boys/Coed Region 1"
-    },
-    {
-      "date": "2026-02-07",
-      "opponent_id": "35076692132",
-      "opponent_career_id": "career_005106",
-      "opponent_name": "Miguel Torres",
-      "opponent_team": "Shawnee",
-      "opponent_team_rank": 128,
-      "opponent_weight": 113,
-      "opponent_rank": 117,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Shawnee"
     },
     {
       "date": "2026-02-07",
@@ -206,6 +211,22 @@
       "event": "vs. Bell County"
     },
     {
+      "date": "2026-02-07",
+      "opponent_id": "35076692132",
+      "opponent_career_id": "career_005106",
+      "opponent_name": "Miguel Torres",
+      "opponent_team": "Shawnee",
+      "opponent_team_rank": 128,
+      "opponent_weight": 113,
+      "opponent_rank": 117,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Shawnee"
+    },
+    {
       "date": "2026-01-22",
       "opponent_id": "35233670132",
       "opponent_career_id": "career_000030",
@@ -219,7 +240,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Fort Campbell"
+      "event": "vs. Apollo"
     },
     {
       "date": "2026-01-22",
@@ -239,38 +260,6 @@
     },
     {
       "date": "2026-01-19",
-      "opponent_id": "OUTSTATE_67a1d251c1e4",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Clarksville Academy",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Clarksville Academy"
-    },
-    {
-      "date": "2026-01-19",
-      "opponent_id": "OUTSTATE_3fae1f5498d0",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Portland High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Portland High School"
-    },
-    {
-      "date": "2026-01-19",
       "opponent_id": "35458692132",
       "opponent_career_id": "career_000378",
       "opponent_name": "Brett Bennett",
@@ -284,6 +273,22 @@
       "score": null,
       "duration": "1:45",
       "event": "vs. Calloway County"
+    },
+    {
+      "date": "2026-01-19",
+      "opponent_id": "OUTSTATE_67a1d251c1e4",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Clarksville Academy",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Clarksville Academy"
     },
     {
       "date": "2026-01-19",
@@ -316,6 +321,22 @@
       "score": null,
       "duration": "2:44",
       "event": "vs. Northwest High School"
+    },
+    {
+      "date": "2026-01-19",
+      "opponent_id": "OUTSTATE_3fae1f5498d0",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Portland High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Portland High School"
     },
     {
       "date": "2026-01-17",
@@ -430,6 +451,22 @@
       "event": "vs. Logan County"
     },
     {
+      "date": "2026-01-15",
+      "opponent_id": "35192333132",
+      "opponent_career_id": "career_004788",
+      "opponent_name": "John Brown",
+      "opponent_team": "Logan County",
+      "opponent_team_rank": 104,
+      "opponent_weight": 126,
+      "opponent_rank": 120,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:43",
+      "event": "vs. Logan County"
+    },
+    {
       "date": "2026-01-10",
       "opponent_id": "35031565132",
       "opponent_career_id": "career_002797",
@@ -463,22 +500,6 @@
     },
     {
       "date": "2026-01-06",
-      "opponent_id": "OUTSTATE_6b4c818a2aaa",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Goodpasture Christian School",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Goodpasture Christian School"
-    },
-    {
-      "date": "2026-01-06",
       "opponent_id": "OUTSTATE_a292f23d1916",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -494,20 +515,20 @@
       "event": "vs. East Nashville Magnet School"
     },
     {
-      "date": "2025-12-23",
-      "opponent_id": "35007891132",
-      "opponent_career_id": "career_002533",
-      "opponent_name": "Garrett Johnson",
-      "opponent_team": "South Warren",
-      "opponent_team_rank": 129,
+      "date": "2026-01-06",
+      "opponent_id": "OUTSTATE_6b4c818a2aaa",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Goodpasture Christian School",
+      "opponent_team_rank": null,
       "opponent_weight": 113,
-      "opponent_rank": 25,
+      "opponent_rank": null,
       "weight_class": "126",
       "result": "W",
-      "method": "FALL",
+      "method": "FF",
       "score": null,
-      "duration": "2:43",
-      "event": "Christian County Invitational"
+      "duration": "7:00",
+      "event": "vs. Goodpasture Christian School"
     },
     {
       "date": "2025-12-23",
@@ -555,6 +576,22 @@
       "method": "FALL",
       "score": null,
       "duration": "2:09",
+      "event": "Christian County Invitational"
+    },
+    {
+      "date": "2025-12-23",
+      "opponent_id": "35007891132",
+      "opponent_career_id": "career_002533",
+      "opponent_name": "Garrett Johnson",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 129,
+      "opponent_weight": 113,
+      "opponent_rank": 25,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:43",
       "event": "Christian County Invitational"
     },
     {
@@ -671,22 +708,6 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "OUTSTATE_7ce44ab4b6ce",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Johnston City",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Johnston City"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35124370132",
       "opponent_career_id": null,
       "opponent_name": "Brock Becker",
@@ -700,6 +721,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Freeburg"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "OUTSTATE_7ce44ab4b6ce",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Johnston City",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Johnston City"
     },
     {
       "date": "2025-12-13",
@@ -877,5 +914,5 @@
     "losses": 30,
     "win_pct": 0.571
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

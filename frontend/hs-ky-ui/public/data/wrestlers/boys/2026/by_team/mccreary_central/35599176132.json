@@ -5,10 +5,15 @@
   "team_slug": "mccreary_central",
   "team_rank": 109,
   "weight_class": 113,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 14,
   "record": {
-    "overall": "36-13",
+    "overall": "38-14",
     "vs_ranked": "30-12",
     "vs_top10": "0-9",
     "vs_top25": "6-10"
@@ -235,7 +240,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Mccreary Central"
+      "event": "vs. Belfry"
     },
     {
       "date": "2026-02-07",
@@ -251,7 +256,7 @@
       "method": "TF",
       "score": "19-3",
       "duration": "0:00",
-      "event": "vs. Mccreary Central"
+      "event": "vs. Fort Campbell"
     },
     {
       "date": "2026-02-07",
@@ -267,7 +272,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Mccreary Central"
+      "event": "vs. Martin County"
     },
     {
       "date": "2026-02-07",
@@ -299,7 +304,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Mccreary Central"
+      "event": "vs. Knox Central"
     },
     {
       "date": "2026-01-15",
@@ -316,6 +321,38 @@
       "score": null,
       "duration": "2:26",
       "event": "vs. Pineville"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35454690132",
+      "opponent_career_id": "career_001375",
+      "opponent_name": "Rodney Reeves",
+      "opponent_team": "Knox Central",
+      "opponent_team_rank": 97,
+      "opponent_weight": 120,
+      "opponent_rank": 82,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Knox Central"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_f0a09df7a433",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 58,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Bell County"
     },
     {
       "date": "2026-01-10",
@@ -348,38 +385,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Somerset"
-    },
-    {
-      "date": "2026-01-10",
-      "opponent_id": "35454690132",
-      "opponent_career_id": "career_001375",
-      "opponent_name": "Rodney Reeves",
-      "opponent_team": "Knox Central",
-      "opponent_team_rank": 97,
-      "opponent_weight": 120,
-      "opponent_rank": 82,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Mccreary Central"
-    },
-    {
-      "date": "2026-01-10",
-      "opponent_id": "OUTSTATE_f0a09df7a433",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Bell County",
-      "opponent_team_rank": 58,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Bell County"
     },
     {
       "date": "2026-01-03",
@@ -623,22 +628,6 @@
     },
     {
       "date": "2025-12-20",
-      "opponent_id": "35077755132",
-      "opponent_career_id": "career_001920",
-      "opponent_name": "Lincoln Maynard",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": 47,
-      "opponent_weight": 106,
-      "opponent_rank": 7,
-      "weight_class": "113",
-      "result": "L",
-      "method": "TF",
-      "score": "21-1",
-      "duration": "2:43",
-      "event": "5th Annual Cardinal Clash"
-    },
-    {
-      "date": "2025-12-20",
       "opponent_id": "34997730132",
       "opponent_career_id": "career_000940",
       "opponent_name": "Samuel Powell",
@@ -667,6 +656,22 @@
       "method": "TF",
       "score": "17-0",
       "duration": "4:44",
+      "event": "5th Annual Cardinal Clash"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35077755132",
+      "opponent_career_id": "career_001920",
+      "opponent_name": "Lincoln Maynard",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": 47,
+      "opponent_weight": 106,
+      "opponent_rank": 7,
+      "weight_class": "113",
+      "result": "L",
+      "method": "TF",
+      "score": "21-1",
+      "duration": "2:43",
       "event": "5th Annual Cardinal Clash"
     },
     {
@@ -715,7 +720,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:03",
-      "event": "vs. Mccreary Central"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2025-12-13",
@@ -891,7 +896,7 @@
       "season": 2026,
       "grade": 8,
       "team": "Mccreary Central",
-      "record": "36-13",
+      "record": "38-14",
       "regional_place": 3,
       "state_place": 8
     },
@@ -905,9 +910,9 @@
     }
   ],
   "career_record": {
-    "wins": 49,
-    "losses": 16,
-    "win_pct": 0.754
+    "wins": 51,
+    "losses": 17,
+    "win_pct": 0.75
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

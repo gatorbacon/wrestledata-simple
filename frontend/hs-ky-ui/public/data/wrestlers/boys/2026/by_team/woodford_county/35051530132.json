@@ -5,13 +5,18 @@
   "team_slug": "woodford_county",
   "team_rank": 13,
   "weight_class": 120,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 12,
   "record": {
     "overall": "38-10",
-    "vs_ranked": "32-8",
-    "vs_top10": "3-7",
-    "vs_top25": "16-8"
+    "vs_ranked": "32-9",
+    "vs_top10": "3-8",
+    "vs_top25": "16-9"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,17 +25,17 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.861,
-    "bonus_rate": 0.944,
+    "pin_rate": 0.886,
+    "bonus_rate": 0.971,
     "majors": 1,
     "techs": 2,
     "pins": 31
   },
   "opponent_breakdown": {
     "ranked_wins": 32,
-    "ranked_losses": 8,
+    "ranked_losses": 9,
     "top10_wins": 3,
-    "top10_losses": 7,
+    "top10_losses": 8,
     "win_over_highest_rank": {
       "opponent_id": "34988569132",
       "opponent_rank": 9,
@@ -187,7 +192,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:43",
-      "event": "vs. Woodford County"
+      "event": "vs. Conner"
     },
     {
       "date": "2026-02-07",
@@ -203,7 +208,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:43",
-      "event": "vs. Woodford County"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2026-02-07",
@@ -220,6 +225,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Henry Clay"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35635389132",
+      "opponent_career_id": "career_001069",
+      "opponent_name": "Hunter Crabtree",
+      "opponent_team": "Greenup County",
+      "opponent_team_rank": 86,
+      "opponent_weight": 120,
+      "opponent_rank": 53,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:26",
+      "event": "Clash of the Vikings"
     },
     {
       "date": "2026-01-17",
@@ -251,22 +272,6 @@
       "method": "FALL",
       "score": null,
       "duration": "1:54",
-      "event": "Clash of the Vikings"
-    },
-    {
-      "date": "2026-01-17",
-      "opponent_id": "35635389132",
-      "opponent_career_id": "career_001069",
-      "opponent_name": "Hunter Crabtree",
-      "opponent_team": "Greenup County",
-      "opponent_team_rank": 86,
-      "opponent_weight": 120,
-      "opponent_rank": 53,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:26",
       "event": "Clash of the Vikings"
     },
     {
@@ -331,7 +336,7 @@
       "method": "TF",
       "score": "17-1",
       "duration": "0:00",
-      "event": "vs. Woodford County"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2026-01-07",
@@ -347,7 +352,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:27",
-      "event": "vs. Woodford County"
+      "event": "vs. Oldham County"
     },
     {
       "date": "2026-01-03",
@@ -394,6 +399,22 @@
       "result": "L",
       "method": "DEC",
       "score": "6-0",
+      "duration": "7:00",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35404972132",
+      "opponent_career_id": "career_001419",
+      "opponent_name": "Kadham Alghanemi",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": 99,
+      "opponent_weight": 120,
+      "opponent_rank": 9,
+      "weight_class": "120",
+      "result": "L",
+      "method": "DEC",
+      "score": "9-6",
       "duration": "7:00",
       "event": "Warhawk Classic"
     },
@@ -559,22 +580,6 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "34988569132",
-      "opponent_career_id": "career_000524",
-      "opponent_name": "Zaq Abdi",
-      "opponent_team": "Conner",
-      "opponent_team_rank": 31,
-      "opponent_weight": 113,
-      "opponent_rank": 9,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:13",
-      "event": "2025 Ryle Raider Rumble"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35035544132",
       "opponent_career_id": "career_000190",
       "opponent_name": "Cole Young",
@@ -587,6 +592,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:47",
+      "event": "2025 Ryle Raider Rumble"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "34988569132",
+      "opponent_career_id": "career_000524",
+      "opponent_name": "Zaq Abdi",
+      "opponent_team": "Conner",
+      "opponent_team_rank": 31,
+      "opponent_weight": 113,
+      "opponent_rank": 9,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:13",
       "event": "2025 Ryle Raider Rumble"
     },
     {
@@ -667,7 +688,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:14",
-      "event": "vs. Woodford County"
+      "event": "vs. Spencer County"
     },
     {
       "date": "2025-12-10",
@@ -687,22 +708,6 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "35226227132",
-      "opponent_career_id": "career_001812",
-      "opponent_name": "Daniel Stark",
-      "opponent_team": "Nelson County",
-      "opponent_team_rank": 21,
-      "opponent_weight": 106,
-      "opponent_rank": 8,
-      "weight_class": "120",
-      "result": "L",
-      "method": "DEC",
-      "score": "21-18",
-      "duration": "7:00",
-      "event": "vs. Woodford County"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "34993883132",
       "opponent_career_id": "career_001054",
       "opponent_name": "Prestyn Walls",
@@ -715,7 +720,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:28",
-      "event": "vs. Woodford County"
+      "event": "vs. Green County"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35226227132",
+      "opponent_career_id": "career_001812",
+      "opponent_name": "Daniel Stark",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 21,
+      "opponent_weight": 106,
+      "opponent_rank": 8,
+      "weight_class": "120",
+      "result": "L",
+      "method": "DEC",
+      "score": "21-18",
+      "duration": "7:00",
+      "event": "vs. Nelson County"
     },
     {
       "date": "2025-12-06",
@@ -820,7 +841,7 @@
       "season": 2024,
       "grade": 9,
       "team": "Woodford County",
-      "record": "25-10",
+      "record": "27-10",
       "regional_place": 2,
       "state_place": null
     },
@@ -828,15 +849,15 @@
       "season": 2023,
       "grade": 8,
       "team": "Woodford County",
-      "record": "4-3",
+      "record": "13-5",
       "regional_place": 3,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 67,
-    "losses": 23,
-    "win_pct": 0.744
+    "wins": 78,
+    "losses": 25,
+    "win_pct": 0.757
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

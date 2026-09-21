@@ -5,6 +5,11 @@
   "team_slug": "great_crossing",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,10 +25,10 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.478,
-    "bonus_rate": 0.826,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.818,
     "majors": 4,
-    "techs": 4,
+    "techs": 3,
     "pins": 11
   },
   "opponent_breakdown": {
@@ -309,6 +314,22 @@
     },
     {
       "date": "2025-01-16",
+      "opponent_id": "30035721132",
+      "opponent_career_id": "career_000415",
+      "opponent_name": "Channing Wilhoit",
+      "opponent_team": "Campbell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Campbell County"
+    },
+    {
+      "date": "2025-01-16",
       "opponent_id": "29935399132",
       "opponent_career_id": "career_000535",
       "opponent_name": "Nathan Seth",
@@ -321,7 +342,7 @@
       "method": "TF",
       "score": "21-4",
       "duration": "5:22",
-      "event": "vs. Great Crossing"
+      "event": "vs. Conner"
     },
     {
       "date": "2025-01-16",
@@ -338,54 +359,6 @@
       "score": "19-0",
       "duration": "0:00",
       "event": "vs. Simon Kenton"
-    },
-    {
-      "date": "2025-01-16",
-      "opponent_id": "30035721132",
-      "opponent_career_id": "career_000415",
-      "opponent_name": "Channing Wilhoit",
-      "opponent_team": "Campbell County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Great Crossing"
-    },
-    {
-      "date": "2025-01-15",
-      "opponent_id": "29995218132",
-      "opponent_career_id": "career_002469",
-      "opponent_name": "Julian Robles",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "TF",
-      "score": "19-0",
-      "duration": "0:00",
-      "event": "vs. Great Crossing"
-    },
-    {
-      "date": "2025-01-04",
-      "opponent_id": "29804367132",
-      "opponent_career_id": "career_001939",
-      "opponent_name": "Zane McCoy",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "DEC",
-      "score": "6-3",
-      "duration": "7:00",
-      "event": "2025 Warhawk Classic"
     },
     {
       "date": "2025-01-04",
@@ -421,6 +394,22 @@
     },
     {
       "date": "2025-01-04",
+      "opponent_id": "29804367132",
+      "opponent_career_id": "career_001939",
+      "opponent_name": "Zane McCoy",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "6-3",
+      "duration": "7:00",
+      "event": "2025 Warhawk Classic"
+    },
+    {
+      "date": "2025-01-04",
       "opponent_id": "29788827132",
       "opponent_career_id": "career_001799",
       "opponent_name": "Joseph Habimana",
@@ -448,7 +437,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "3:36",
+      "duration": "3:35",
       "event": "GMVWA"
     },
     {
@@ -625,7 +614,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:22",
-      "event": "vs. Great Crossing"
+      "event": "vs. Covington Catholic"
     },
     {
       "date": "2024-12-07",
@@ -641,7 +630,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:14",
-      "event": "vs. Great Crossing"
+      "event": "vs. Fort Knox"
     },
     {
       "date": "2024-12-07",
@@ -661,7 +650,7 @@
     },
     {
       "date": "2024-12-07",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_3bedbf528daa",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Lafayette",
@@ -705,7 +694,7 @@
       "season": 2026,
       "grade": 12,
       "team": "Great Crossing",
-      "record": "27-16",
+      "record": "29-17",
       "regional_place": 2,
       "state_place": null
     },
@@ -719,9 +708,9 @@
     }
   ],
   "career_record": {
-    "wins": 50,
-    "losses": 33,
-    "win_pct": 0.602
+    "wins": 52,
+    "losses": 34,
+    "win_pct": 0.605
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

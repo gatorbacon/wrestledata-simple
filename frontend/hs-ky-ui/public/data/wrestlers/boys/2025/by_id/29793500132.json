@@ -5,10 +5,15 @@
   "team_slug": "oldham_county",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
-    "overall": "18-17",
+    "overall": "19-18",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.75,
-    "bonus_rate": 0.938,
+    "pin_rate": 0.765,
+    "bonus_rate": 0.941,
     "majors": 1,
     "techs": 2,
-    "pins": 12
+    "pins": 13
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -177,7 +182,7 @@
       "method": "DEC",
       "score": "3-0",
       "duration": "7:00",
-      "event": "vs. Oldham County"
+      "event": "vs. Bullitt Central"
     },
     {
       "date": "2025-01-15",
@@ -193,7 +198,39 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Oldham County"
+      "event": "vs. Central Hardin"
+    },
+    {
+      "date": "2025-01-15",
+      "opponent_id": "30038340132",
+      "opponent_career_id": "career_000315",
+      "opponent_name": "Logan Hobbs",
+      "opponent_team": "Bullitt Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:48",
+      "event": "vs. Bullitt Central"
+    },
+    {
+      "date": "2025-01-04",
+      "opponent_id": "30098465132",
+      "opponent_career_id": "career_001033",
+      "opponent_name": "Aydan Hackney",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:06",
+      "event": "2025 Warhawk Classic"
     },
     {
       "date": "2025-01-04",
@@ -244,22 +281,6 @@
       "event": "2025 Warhawk Classic"
     },
     {
-      "date": "2025-01-04",
-      "opponent_id": "30098465132",
-      "opponent_career_id": "career_001033",
-      "opponent_name": "Aydan Hackney",
-      "opponent_team": "Great Crossing",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:06",
-      "event": "2025 Warhawk Classic"
-    },
-    {
       "date": "2024-12-28",
       "opponent_id": "29993426132",
       "opponent_career_id": "career_000442",
@@ -273,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:30",
-      "event": "vs. Oldham County"
+      "event": "vs. Central"
     },
     {
       "date": "2024-12-28",
@@ -289,39 +310,7 @@
       "method": "MD",
       "score": "18-7",
       "duration": "7:00",
-      "event": "vs. Oldham County"
-    },
-    {
-      "date": "2024-12-28",
-      "opponent_id": "31787886132",
-      "opponent_career_id": "career_001895",
-      "opponent_name": "Kriztofer Thompsett",
-      "opponent_team": "North Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Oldham County"
-    },
-    {
-      "date": "2024-12-28",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Ohio County",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Ohio County"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2024-12-28",
@@ -337,7 +326,39 @@
       "method": "MD",
       "score": "12-1",
       "duration": "7:00",
-      "event": "vs. Oldham County"
+      "event": "vs. Meade County"
+    },
+    {
+      "date": "2024-12-28",
+      "opponent_id": "31787886132",
+      "opponent_career_id": "career_001895",
+      "opponent_name": "Kriztofer Thompsett",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. North Hardin"
+    },
+    {
+      "date": "2024-12-28",
+      "opponent_id": "OUTSTATE_90f04a742fd4",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Ohio County"
     },
     {
       "date": "2024-12-21",
@@ -449,23 +470,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:04",
-      "event": "vs. Oldham County"
-    },
-    {
-      "date": "2024-12-14",
-      "opponent_id": "31332540132",
-      "opponent_career_id": "career_002755",
-      "opponent_name": "Dillon Skyles",
-      "opponent_team": "Trinity (Louisville)",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:12",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2024-12-14",
@@ -501,6 +506,22 @@
     },
     {
       "date": "2024-12-14",
+      "opponent_id": "31332540132",
+      "opponent_career_id": "career_002755",
+      "opponent_name": "Dillon Skyles",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:12",
+      "event": "vs. Trinity (Louisville)"
+    },
+    {
+      "date": "2024-12-14",
       "opponent_id": "29806482132",
       "opponent_career_id": "career_002812",
       "opponent_name": "Carter Thomas",
@@ -529,23 +550,7 @@
       "method": "MD",
       "score": "21-7",
       "duration": "7:00",
-      "event": "vs. Oldham County"
-    },
-    {
-      "date": "2024-12-07",
-      "opponent_id": "29995149132",
-      "opponent_career_id": "career_002460",
-      "opponent_name": "Ian Lawrence",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "MD",
-      "score": "10-0",
-      "duration": "7:00",
-      "event": "vs. Simon Kenton"
+      "event": "vs. LaRue County"
     },
     {
       "date": "2024-12-07",
@@ -580,6 +585,22 @@
       "event": "vs. Jeffersonville"
     },
     {
+      "date": "2024-12-07",
+      "opponent_id": "29995149132",
+      "opponent_career_id": "career_002460",
+      "opponent_name": "Ian Lawrence",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "MD",
+      "score": "10-0",
+      "duration": "7:00",
+      "event": "vs. Simon Kenton"
+    },
+    {
       "date": "2024-11-26",
       "opponent_id": "30042443132",
       "opponent_career_id": "career_000804",
@@ -593,7 +614,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:33",
-      "event": "vs. Oldham County"
+      "event": "vs. Eastern"
     },
     {
       "date": "2024-11-26",
@@ -635,7 +656,7 @@
       "season": 2025,
       "grade": 11,
       "team": "Oldham County",
-      "record": "18-17",
+      "record": "19-18",
       "regional_place": null,
       "state_place": null
     },
@@ -657,9 +678,9 @@
     }
   ],
   "career_record": {
-    "wins": 76,
-    "losses": 62,
-    "win_pct": 0.551
+    "wins": 77,
+    "losses": 63,
+    "win_pct": 0.55
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

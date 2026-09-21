@@ -5,6 +5,11 @@
   "team_slug": "central",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.688,
-    "bonus_rate": 0.938,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.933,
     "majors": 1,
     "techs": 3,
-    "pins": 11
+    "pins": 10
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -85,22 +90,6 @@
     },
     {
       "date": "2025-01-23",
-      "opponent_id": "29789346132",
-      "opponent_career_id": "career_001891",
-      "opponent_name": "Logan Gardner",
-      "opponent_team": "North Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "DEC",
-      "score": "13-12",
-      "duration": "7:00",
-      "event": "vs. North Hardin"
-    },
-    {
-      "date": "2025-01-23",
       "opponent_id": "30080576132",
       "opponent_career_id": "career_001322",
       "opponent_name": "Bruce Anderson",
@@ -116,8 +105,24 @@
       "event": "vs. John Hardin"
     },
     {
+      "date": "2025-01-23",
+      "opponent_id": "29789346132",
+      "opponent_career_id": "career_001891",
+      "opponent_name": "Logan Gardner",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DEC",
+      "score": "13-12",
+      "duration": "7:00",
+      "event": "vs. North Hardin"
+    },
+    {
       "date": "2025-01-22",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_1c4c0bbfe05e",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "North Hardin",
@@ -180,22 +185,6 @@
       "event": "vs. Fairdale"
     },
     {
-      "date": "2025-01-16",
-      "opponent_id": "29965270132",
-      "opponent_career_id": "career_001401",
-      "opponent_name": "Noah Foley",
-      "opponent_team": "LaRue County",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Central"
-    },
-    {
       "date": "2025-01-15",
       "opponent_id": "29965270132",
       "opponent_career_id": "career_001401",
@@ -225,11 +214,11 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "vs. Central"
+      "event": "vs. Bethlehem"
     },
     {
       "date": "2024-12-28",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_90f04a742fd4",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Ohio County",
@@ -357,22 +346,6 @@
     },
     {
       "date": "2024-12-07",
-      "opponent_id": "30056244132",
-      "opponent_career_id": "career_001860",
-      "opponent_name": "Jalen Langdon",
-      "opponent_team": "North Bullitt",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:00",
-      "event": "vs. North Bullitt"
-    },
-    {
-      "date": "2024-12-07",
       "opponent_id": "30042234132",
       "opponent_career_id": "career_000803",
       "opponent_name": "Christopher Moore",
@@ -386,6 +359,22 @@
       "score": null,
       "duration": "3:00",
       "event": "vs. Eastern"
+    },
+    {
+      "date": "2024-12-07",
+      "opponent_id": "30056244132",
+      "opponent_career_id": "career_001860",
+      "opponent_name": "Jalen Langdon",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "vs. North Bullitt"
     },
     {
       "date": "2024-12-07",
@@ -459,7 +448,7 @@
       "season": 2024,
       "grade": 11,
       "team": "Central",
-      "record": "17-13",
+      "record": "18-13",
       "regional_place": null,
       "state_place": null
     },
@@ -481,9 +470,9 @@
     }
   ],
   "career_record": {
-    "wins": 63,
+    "wins": 64,
     "losses": 52,
-    "win_pct": 0.548
+    "win_pct": 0.552
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

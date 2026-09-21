@@ -5,6 +5,11 @@
   "team_slug": "madison_central",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.765,
-    "bonus_rate": 0.882,
+    "pin_rate": 0.833,
+    "bonus_rate": 0.944,
     "majors": 1,
     "techs": 1,
-    "pins": 13
+    "pins": 15
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -161,7 +166,7 @@
       "method": "DEC",
       "score": "5-3",
       "duration": "7:00",
-      "event": "vs. Madison Central"
+      "event": "vs. Boyd County"
     },
     {
       "date": "2025-02-08",
@@ -177,11 +182,11 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Madison Central"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2025-02-08",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_f168e9c3cbeb",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Fort Knox",
@@ -210,6 +215,22 @@
       "score": "19-4",
       "duration": "0:00",
       "event": "vs. Moore"
+    },
+    {
+      "date": "2025-02-08",
+      "opponent_id": "OUTSTATE_443ae202f765",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Rowan County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Rowan County"
     },
     {
       "date": "2025-02-08",
@@ -245,7 +266,7 @@
     },
     {
       "date": "2025-02-05",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_5b24b29f3c88",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Whitley County",
@@ -273,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:27",
-      "event": "vs. Madison Central"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2025-01-25",
@@ -293,7 +314,7 @@
     },
     {
       "date": "2025-01-25",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_eead225332bd",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Simon Kenton",
@@ -337,7 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Madison Central"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2025-01-18",
@@ -401,11 +422,11 @@
       "method": "INJ",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Madison Central"
+      "event": "vs. Henry Clay"
     },
     {
       "date": "2025-01-15",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_efc7437b8406",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Southwestern",
@@ -437,38 +458,6 @@
     },
     {
       "date": "2025-01-04",
-      "opponent_id": "30711162132",
-      "opponent_career_id": "career_001211",
-      "opponent_name": "Jeannoe Mangwele",
-      "opponent_team": "Henry Clay",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "MD",
-      "score": "20-11",
-      "duration": "7:00",
-      "event": "2025 Warhawk Classic"
-    },
-    {
-      "date": "2025-01-04",
-      "opponent_id": "29791716132",
-      "opponent_career_id": "career_002404",
-      "opponent_name": "Jacob Banner",
-      "opponent_team": "Scott County",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:43",
-      "event": "2025 Warhawk Classic"
-    },
-    {
-      "date": "2025-01-04",
       "opponent_id": "30174835132",
       "opponent_career_id": "career_000999",
       "opponent_name": "Tripp Cecil",
@@ -481,6 +470,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:34",
+      "event": "2025 Warhawk Classic"
+    },
+    {
+      "date": "2025-01-04",
+      "opponent_id": "30711162132",
+      "opponent_career_id": "career_001211",
+      "opponent_name": "Jeannoe Mangwele",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "MD",
+      "score": "20-11",
+      "duration": "7:00",
       "event": "2025 Warhawk Classic"
     },
     {
@@ -501,6 +506,54 @@
     },
     {
       "date": "2025-01-04",
+      "opponent_id": "29835333132",
+      "opponent_career_id": "career_003030",
+      "opponent_name": "Bode Darland",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:34",
+      "event": "2025 Warhawk Classic"
+    },
+    {
+      "date": "2025-01-04",
+      "opponent_id": "29835333132",
+      "opponent_career_id": "career_003030",
+      "opponent_name": "Bode Darland",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:42",
+      "event": "2025 Warhawk Classic"
+    },
+    {
+      "date": "2025-01-04",
+      "opponent_id": "29791716132",
+      "opponent_career_id": "career_002404",
+      "opponent_name": "Jacob Banner",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:43",
+      "event": "2025 Warhawk Classic"
+    },
+    {
+      "date": "2025-01-04",
       "opponent_id": "29916614132",
       "opponent_career_id": "career_002525",
       "opponent_name": "Beau Gordon",
@@ -514,22 +567,6 @@
       "score": null,
       "duration": "1:23",
       "event": "2025 Warhawk Classic"
-    },
-    {
-      "date": "2024-12-21",
-      "opponent_id": "31327287132",
-      "opponent_career_id": "career_002770",
-      "opponent_name": "Elliott Easter",
-      "opponent_team": "Trinity (Louisville)",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:27",
-      "event": "5 Star Classic"
     },
     {
       "date": "2024-12-21",
@@ -561,6 +598,22 @@
       "method": "FALL",
       "score": null,
       "duration": "2:18",
+      "event": "5 Star Classic"
+    },
+    {
+      "date": "2024-12-21",
+      "opponent_id": "31327287132",
+      "opponent_career_id": "career_002770",
+      "opponent_name": "Elliott Easter",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:27",
       "event": "5 Star Classic"
     },
     {
@@ -643,5 +696,5 @@
     "losses": 20,
     "win_pct": 0.655
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

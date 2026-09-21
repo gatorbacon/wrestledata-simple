@@ -5,6 +5,11 @@
   "team_slug": "madison_southern",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -24,7 +29,7 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 6
+    "pins": 7
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -66,6 +71,22 @@
       "score": null,
       "duration": "0:00",
       "event": "KHSAA Region 7"
+    },
+    {
+      "date": "2025-02-08",
+      "opponent_id": "30990346132",
+      "opponent_career_id": "career_000217",
+      "opponent_name": "Daniel Adams",
+      "opponent_team": "Bourbon County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "2025 Eagles Invitational"
     },
     {
       "date": "2025-02-08",
@@ -129,7 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Madison Southern"
+      "event": "vs. Bourbon County"
     },
     {
       "date": "2025-01-25",
@@ -145,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:50",
-      "event": "vs. Madison Southern"
+      "event": "vs. Cooper"
     },
     {
       "date": "2025-01-25",
@@ -161,11 +182,11 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Madison Southern"
+      "event": "vs. Grant County"
     },
     {
       "date": "2025-01-25",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_2e30f8f8a946",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Marion County",
@@ -193,7 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Madison Southern"
+      "event": "vs. George Rogers Clark"
     },
     {
       "date": "2025-01-04",
@@ -257,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:11",
-      "event": "vs. Madison Southern"
+      "event": "vs. Bardstown"
     },
     {
       "date": "2024-12-07",
@@ -277,22 +298,6 @@
     },
     {
       "date": "2024-12-07",
-      "opponent_id": "29893105132",
-      "opponent_career_id": "career_002705",
-      "opponent_name": "Ace Osmun",
-      "opponent_team": "Taylor County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Joe Cochran State Farm HCIWT"
-    },
-    {
-      "date": "2024-12-07",
       "opponent_id": "30414476132",
       "opponent_career_id": "career_002103",
       "opponent_name": "Zavier Castro",
@@ -302,6 +307,22 @@
       "opponent_rank": null,
       "weight_class": "132",
       "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Joe Cochran State Farm HCIWT"
+    },
+    {
+      "date": "2024-12-07",
+      "opponent_id": "29893105132",
+      "opponent_career_id": "career_002705",
+      "opponent_name": "Ace Osmun",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -348,5 +369,5 @@
     "losses": 30,
     "win_pct": 0.4
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

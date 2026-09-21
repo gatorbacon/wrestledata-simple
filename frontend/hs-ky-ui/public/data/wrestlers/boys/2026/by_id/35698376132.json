@@ -5,8 +5,13 @@
   "team_slug": "pleasure_ridge_park",
   "team_rank": 119,
   "weight_class": 190,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
-  "current_rank": 172,
+  "current_rank": 173,
   "record": {
     "overall": "1-5",
     "vs_ranked": "0-5",
@@ -42,6 +47,22 @@
   "match_list": [
     {
       "date": "2026-02-10",
+      "opponent_id": "35127098132",
+      "opponent_career_id": "career_000762",
+      "opponent_name": "Devin Allen",
+      "opponent_team": "Dupont Manual",
+      "opponent_team_rank": 32,
+      "opponent_weight": 215,
+      "opponent_rank": 3,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:58",
+      "event": "vs. Dupont Manual"
+    },
+    {
+      "date": "2026-02-10",
       "opponent_id": "OUTSTATE_1151505a60f6",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -55,38 +76,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Ballard"
-    },
-    {
-      "date": "2026-02-10",
-      "opponent_id": "35127098132",
-      "opponent_career_id": "career_000762",
-      "opponent_name": "Devin Allen",
-      "opponent_team": "Dupont Manual",
-      "opponent_team_rank": 32,
-      "opponent_weight": 215,
-      "opponent_rank": 3,
-      "weight_class": "215",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:58",
-      "event": "vs. Pleasure Ridge Park"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35434862132",
-      "opponent_career_id": "career_002771",
-      "opponent_name": "Maximo Urias",
-      "opponent_team": "Trinity (Louisville)",
-      "opponent_team_rank": 134,
-      "opponent_weight": 175,
-      "opponent_rank": 72,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:47",
-      "event": "The Beast of the East"
     },
     {
       "date": "2025-12-06",
@@ -105,6 +94,22 @@
       "event": "The Beast of the East"
     },
     {
+      "date": "2025-12-06",
+      "opponent_id": "35434862132",
+      "opponent_career_id": "career_002771",
+      "opponent_name": "Maximo Urias",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": 134,
+      "opponent_weight": 175,
+      "opponent_rank": 72,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:47",
+      "event": "The Beast of the East"
+    },
+    {
       "date": "2025-12-03",
       "opponent_id": "35746100132",
       "opponent_career_id": "career_000818",
@@ -118,7 +123,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:52",
-      "event": "vs. Pleasure Ridge Park",
+      "event": "vs. Eastern",
       "mv_impact": -9.13
     },
     {
@@ -135,7 +140,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Pleasure Ridge Park",
+      "event": "vs. Oldham County",
       "mv_impact": -3.78
     }
   ],
@@ -161,5 +166,5 @@
     "losses": 5,
     "win_pct": 0.167
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

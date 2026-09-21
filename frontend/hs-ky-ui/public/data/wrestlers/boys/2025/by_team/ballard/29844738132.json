@@ -5,10 +5,15 @@
   "team_slug": "ballard",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
-    "overall": "28-15",
+    "overall": "29-17",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.76,
-    "bonus_rate": 0.88,
+    "pin_rate": 0.833,
+    "bonus_rate": 0.958,
     "majors": 2,
     "techs": 1,
-    "pins": 19
+    "pins": 20
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -229,7 +234,7 @@
     },
     {
       "date": "2025-01-29",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_a3e8999d5d7a",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Atherton",
@@ -260,20 +265,20 @@
       "event": "vs. Shawnee"
     },
     {
-      "date": "2025-01-25",
-      "opponent_id": "29808143132",
-      "opponent_career_id": "career_000713",
-      "opponent_name": "Idris Talasow",
-      "opponent_team": "Doss",
+      "date": "2025-01-29",
+      "opponent_id": "OUTSTATE_4d278a4129b0",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Waggener",
       "opponent_team_rank": null,
-      "opponent_weight": 132,
+      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
+      "result": "W",
+      "method": "FF",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Ballard"
+      "duration": "7:00",
+      "event": "vs. Waggener"
     },
     {
       "date": "2025-01-25",
@@ -289,7 +294,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Ballard"
+      "event": "vs. Bullitt Central"
+    },
+    {
+      "date": "2025-01-25",
+      "opponent_id": "29808143132",
+      "opponent_career_id": "career_000713",
+      "opponent_name": "Idris Talasow",
+      "opponent_team": "Doss",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Doss"
     },
     {
       "date": "2025-01-25",
@@ -305,7 +326,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Ballard"
+      "event": "vs. North Hardin"
     },
     {
       "date": "2025-01-25",
@@ -321,23 +342,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Ballard"
-    },
-    {
-      "date": "2025-01-04",
-      "opponent_id": "30294535132",
-      "opponent_career_id": "career_002752",
-      "opponent_name": "Camden Luttrell",
-      "opponent_team": "Trinity (Louisville)",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:03",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Pleasure Ridge Park"
     },
     {
       "date": "2025-01-04",
@@ -357,6 +362,22 @@
     },
     {
       "date": "2025-01-04",
+      "opponent_id": "30294535132",
+      "opponent_career_id": "career_002752",
+      "opponent_name": "Camden Luttrell",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:03",
+      "event": "vs. Trinity (Louisville)"
+    },
+    {
+      "date": "2025-01-04",
       "opponent_id": "29993426132",
       "opponent_career_id": "career_000442",
       "opponent_name": "Charles Smith",
@@ -373,22 +394,6 @@
     },
     {
       "date": "2024-12-28",
-      "opponent_id": "29808143132",
-      "opponent_career_id": "career_000713",
-      "opponent_name": "Idris Talasow",
-      "opponent_team": "Doss",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:41",
-      "event": "Fern Creek Gladiator"
-    },
-    {
-      "date": "2024-12-28",
       "opponent_id": "30369184132",
       "opponent_career_id": "career_001794",
       "opponent_name": "Manuel Moore Alonzo",
@@ -401,6 +406,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:32",
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2024-12-28",
+      "opponent_id": "29808143132",
+      "opponent_career_id": "career_000713",
+      "opponent_name": "Idris Talasow",
+      "opponent_team": "Doss",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:41",
       "event": "Fern Creek Gladiator"
     },
     {
@@ -421,7 +442,7 @@
     },
     {
       "date": "2024-12-27",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_d597001ea858",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Dupont Manual",
@@ -469,38 +490,6 @@
     },
     {
       "date": "2024-12-21",
-      "opponent_id": "30370495132",
-      "opponent_career_id": "career_001817",
-      "opponent_name": "Beckett Stone",
-      "opponent_team": "Nelson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:09",
-      "event": "4th Annual Cardinal Clash Mens Tourn."
-    },
-    {
-      "date": "2024-12-21",
-      "opponent_id": "29905115132",
-      "opponent_career_id": "career_002621",
-      "opponent_name": "Colin Stone",
-      "opponent_team": "Spencer County",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "MFF",
-      "score": null,
-      "duration": "7:00",
-      "event": "4th Annual Cardinal Clash Mens Tourn."
-    },
-    {
-      "date": "2024-12-21",
       "opponent_id": "29791726132",
       "opponent_career_id": "career_002394",
       "opponent_name": "Brayden Willingham",
@@ -533,6 +522,22 @@
     },
     {
       "date": "2024-12-21",
+      "opponent_id": "30370495132",
+      "opponent_career_id": "career_001817",
+      "opponent_name": "Beckett Stone",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:09",
+      "event": "4th Annual Cardinal Clash Mens Tourn."
+    },
+    {
+      "date": "2024-12-21",
       "opponent_id": "29828635132",
       "opponent_career_id": "career_000181",
       "opponent_name": "Dylan Canterna",
@@ -545,6 +550,38 @@
       "method": "FALL",
       "score": null,
       "duration": "0:19",
+      "event": "4th Annual Cardinal Clash Mens Tourn."
+    },
+    {
+      "date": "2024-12-21",
+      "opponent_id": "29791726132",
+      "opponent_career_id": "career_002394",
+      "opponent_name": "Brayden Willingham",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:01",
+      "event": "4th Annual Cardinal Clash Mens Tourn."
+    },
+    {
+      "date": "2024-12-21",
+      "opponent_id": "29905115132",
+      "opponent_career_id": "career_002621",
+      "opponent_name": "Colin Stone",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
       "event": "4th Annual Cardinal Clash Mens Tourn."
     },
     {
@@ -762,7 +799,7 @@
       "season": 2025,
       "grade": 10,
       "team": "Ballard",
-      "record": "28-15",
+      "record": "29-17",
       "regional_place": 2,
       "state_place": null
     },
@@ -776,9 +813,9 @@
     }
   ],
   "career_record": {
-    "wins": 50,
-    "losses": 30,
-    "win_pct": 0.625
+    "wins": 51,
+    "losses": 32,
+    "win_pct": 0.614
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

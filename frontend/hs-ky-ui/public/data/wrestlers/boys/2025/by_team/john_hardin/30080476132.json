@@ -5,10 +5,15 @@
   "team_slug": "john_hardin",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
-    "overall": "6-11",
+    "overall": "6-12",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -35,22 +40,6 @@
     "worst_loss": null
   },
   "match_list": [
-    {
-      "date": "2025-01-20",
-      "opponent_id": "30370422132",
-      "opponent_career_id": "career_001834",
-      "opponent_name": "Lucas Coy",
-      "opponent_team": "Nelson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:46",
-      "event": "JV Regionals"
-    },
     {
       "date": "2025-01-20",
       "opponent_id": "29789341132",
@@ -84,6 +73,22 @@
       "event": "JV Regionals"
     },
     {
+      "date": "2025-01-20",
+      "opponent_id": "30370422132",
+      "opponent_career_id": "career_001834",
+      "opponent_name": "Lucas Coy",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:46",
+      "event": "JV Regionals"
+    },
+    {
       "date": "2025-01-16",
       "opponent_id": "31126125132",
       "opponent_career_id": "career_001150",
@@ -97,11 +102,11 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. John Hardin"
+      "event": "vs. Hart County"
     },
     {
       "date": "2025-01-16",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_28470c03fea2",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Trinity",
@@ -145,7 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:32",
-      "event": "vs. John Hardin"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2025-01-10",
@@ -161,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. John Hardin"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2025-01-04",
@@ -209,7 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:45",
-      "event": "vs. John Hardin"
+      "event": "vs. Dixie Heights"
     },
     {
       "date": "2024-12-14",
@@ -225,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:31",
-      "event": "vs. John Hardin"
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2024-12-14",
@@ -241,7 +246,7 @@
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "vs. John Hardin"
+      "event": "vs. Great Crossing"
     },
     {
       "date": "2024-12-14",
@@ -261,22 +266,6 @@
     },
     {
       "date": "2024-12-07",
-      "opponent_id": "30370422132",
-      "opponent_career_id": "career_001834",
-      "opponent_name": "Lucas Coy",
-      "opponent_team": "Nelson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:32",
-      "event": "vs. Nelson County"
-    },
-    {
-      "date": "2024-12-07",
       "opponent_id": "29953283132",
       "opponent_career_id": "career_000375",
       "opponent_name": "Jonas Martin",
@@ -289,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:14",
-      "event": "vs. John Hardin"
+      "event": "vs. Caldwell County"
     },
     {
       "date": "2024-12-07",
@@ -305,7 +294,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:28",
-      "event": "vs. John Hardin"
+      "event": "vs. Franklin County"
+    },
+    {
+      "date": "2024-12-07",
+      "opponent_id": "30370422132",
+      "opponent_career_id": "career_001834",
+      "opponent_name": "Lucas Coy",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:32",
+      "event": "vs. Nelson County"
     },
     {
       "date": "2024-12-07",
@@ -328,6 +333,7 @@
     "career_id": "career_001338",
     "canonical_name": "Charles Tucker",
     "seasons": [
+      2026,
       2025,
       2024,
       2022,
@@ -339,10 +345,18 @@
   },
   "season_summary": [
     {
+      "season": 2026,
+      "grade": 12,
+      "team": "John Hardin",
+      "record": "5-4",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
       "season": 2025,
       "grade": 11,
       "team": "John Hardin",
-      "record": "6-11",
+      "record": "6-12",
       "regional_place": null,
       "state_place": null
     },
@@ -390,15 +404,15 @@
       "season": 2018,
       "grade": 8,
       "team": "John Hardin",
-      "record": "19-10",
+      "record": "19-11",
       "regional_place": 4,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 150,
-    "losses": 66,
-    "win_pct": 0.694
+    "wins": 155,
+    "losses": 72,
+    "win_pct": 0.683
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

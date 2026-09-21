@@ -5,10 +5,15 @@
   "team_slug": "henry_clay",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
-    "overall": "3-3",
+    "overall": "3-4",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -37,7 +42,7 @@
   "match_list": [
     {
       "date": "2025-01-22",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_931f1ed55205",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "West Jessamine",
@@ -52,20 +57,20 @@
       "event": "vs. West Jessamine"
     },
     {
-      "date": "2025-01-15",
-      "opponent_id": "30347079132",
-      "opponent_career_id": "career_002588",
-      "opponent_name": "Ely Bonds",
-      "opponent_team": "Southwestern",
+      "date": "2025-01-22",
+      "opponent_id": "OUTSTATE_e154a2d4e8e0",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "East Jessamine",
       "opponent_team_rank": null,
-      "opponent_weight": 120,
+      "opponent_weight": null,
       "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
+      "weight_class": "126",
+      "result": "W",
+      "method": "FF",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Southwestern"
+      "duration": "7:00",
+      "event": "vs. East Jessamine"
     },
     {
       "date": "2025-01-15",
@@ -100,8 +105,40 @@
       "event": "vs. Paul Laurence Dunbar"
     },
     {
+      "date": "2025-01-15",
+      "opponent_id": "30347079132",
+      "opponent_career_id": "career_002588",
+      "opponent_name": "Ely Bonds",
+      "opponent_team": "Southwestern",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Southwestern"
+    },
+    {
+      "date": "2025-01-15",
+      "opponent_id": "30414476132",
+      "opponent_career_id": "career_002103",
+      "opponent_name": "Zavier Castro",
+      "opponent_team": "Paul Laurence Dunbar",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Paul Laurence Dunbar"
+    },
+    {
       "date": "2024-12-11",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_31fbdaf5d8b7",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Tates Creek",
@@ -128,15 +165,15 @@
       "season": 2025,
       "grade": 10,
       "team": "Henry Clay",
-      "record": "3-3",
+      "record": "3-4",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 3,
-    "losses": 3,
-    "win_pct": 0.5
+    "losses": 4,
+    "win_pct": 0.429
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,11 +5,16 @@
   "team_slug": "bell_county",
   "team_rank": 58,
   "weight_class": 165,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
-  "current_rank": 143,
+  "current_rank": 144,
   "record": {
     "overall": "10-12",
-    "vs_ranked": "3-11",
+    "vs_ranked": "4-11",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -20,14 +25,14 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.667,
+    "pin_rate": 0.75,
+    "bonus_rate": 0.75,
     "majors": 0,
     "techs": 0,
-    "pins": 2
+    "pins": 3
   },
   "opponent_breakdown": {
-    "ranked_wins": 3,
+    "ranked_wins": 4,
     "ranked_losses": 11,
     "top10_wins": 0,
     "top10_losses": 0,
@@ -223,22 +228,6 @@
     },
     {
       "date": "2025-12-22",
-      "opponent_id": "35129264132",
-      "opponent_career_id": "career_004592",
-      "opponent_name": "Judson Miller",
-      "opponent_team": "Perry County Central",
-      "opponent_team_rank": 116,
-      "opponent_weight": 150,
-      "opponent_rank": 104,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Perry County Central"
-    },
-    {
-      "date": "2025-12-22",
       "opponent_id": "35420542132",
       "opponent_career_id": "career_003066",
       "opponent_name": "Issac Brown",
@@ -267,6 +256,22 @@
       "method": "FF",
       "score": null,
       "duration": "7:00",
+      "event": "vs. Perry County Central"
+    },
+    {
+      "date": "2025-12-22",
+      "opponent_id": "35129264132",
+      "opponent_career_id": "career_004592",
+      "opponent_name": "Judson Miller",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": 116,
+      "opponent_weight": 150,
+      "opponent_rank": 104,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
       "event": "vs. Perry County Central"
     },
     {
@@ -351,6 +356,22 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "35786423132",
+      "opponent_career_id": "career_005611",
+      "opponent_name": "Nathaniel Morrison",
+      "opponent_team": "Pike County Central",
+      "opponent_team_rank": 49,
+      "opponent_weight": 175,
+      "opponent_rank": 128,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:45",
+      "event": "Anchor Down Showdown"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35447491132",
       "opponent_career_id": "career_005145",
       "opponent_name": "Bentley Stevens",
@@ -404,5 +425,5 @@
     "losses": 12,
     "win_pct": 0.455
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

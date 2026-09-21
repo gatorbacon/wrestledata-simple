@@ -5,11 +5,16 @@
   "team_slug": "spring_valley",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "0-0",
-    "vs_ranked": "0-0",
+    "overall": "1-0",
+    "vs_ranked": "1-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -27,13 +32,30 @@
     "pins": 0
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": null,
     "worst_loss": null
   },
-  "match_list": [],
-  "profile_generated_at": "2026-04-16"
+  "match_list": [
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35635453132",
+      "opponent_career_id": "career_001075",
+      "opponent_name": "Derrick Taylor",
+      "opponent_team": "Greenup County",
+      "opponent_team_rank": 86,
+      "opponent_weight": 138,
+      "opponent_rank": 90,
+      "weight_class": "138",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Les Delong Memorial Tournament"
+    }
+  ],
+  "profile_generated_at": "2026-09-21"
 }

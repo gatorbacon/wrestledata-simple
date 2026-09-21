@@ -5,6 +5,11 @@
   "team_slug": "green_county",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -177,7 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:48",
-      "event": "vs. Green County"
+      "event": "vs. Bardstown"
     },
     {
       "date": "2025-01-18",
@@ -193,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:47",
-      "event": "vs. Green County"
+      "event": "vs. Bethlehem"
     },
     {
       "date": "2025-01-18",
@@ -213,7 +218,7 @@
     },
     {
       "date": "2025-01-16",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_262482545ab5",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Taylor County",
@@ -241,7 +246,39 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Green County"
+      "event": "vs. Campbellsville"
+    },
+    {
+      "date": "2025-01-04",
+      "opponent_id": "30036180132",
+      "opponent_career_id": "career_000408",
+      "opponent_name": "Mason Wyatt",
+      "opponent_team": "Campbell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "DEC",
+      "score": "13-11",
+      "duration": "7:00",
+      "event": "vs. Campbell County"
+    },
+    {
+      "date": "2025-01-04",
+      "opponent_id": "29923519132",
+      "opponent_career_id": "career_000832",
+      "opponent_name": "Bronson Hartel",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Fairdale"
     },
     {
       "date": "2025-01-04",
@@ -261,39 +298,7 @@
     },
     {
       "date": "2025-01-04",
-      "opponent_id": "30036180132",
-      "opponent_career_id": "career_000408",
-      "opponent_name": "Mason Wyatt",
-      "opponent_team": "Campbell County",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "DEC",
-      "score": "13-11",
-      "duration": "7:00",
-      "event": "vs. Green County"
-    },
-    {
-      "date": "2025-01-04",
-      "opponent_id": "29923519132",
-      "opponent_career_id": "career_000832",
-      "opponent_name": "Bronson Hartel",
-      "opponent_team": "Fairdale",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Green County"
-    },
-    {
-      "date": "2025-01-04",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_41aefcb082e1",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "West Carter",
@@ -373,7 +378,23 @@
     },
     {
       "date": "2024-12-14",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "29965270132",
+      "opponent_career_id": "career_001401",
+      "opponent_name": "Noah Foley",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. LaRue County"
+    },
+    {
+      "date": "2024-12-14",
+      "opponent_id": "OUTSTATE_d11d1b4317fe",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Thomas Nelson",
@@ -405,19 +426,35 @@
     },
     {
       "date": "2024-12-14",
-      "opponent_id": "29965270132",
-      "opponent_career_id": "career_001401",
-      "opponent_name": "Noah Foley",
-      "opponent_team": "LaRue County",
+      "opponent_id": "OUTSTATE_3a96223443a0",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "George Rogers Clark",
       "opponent_team_rank": null,
-      "opponent_weight": 132,
+      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
+      "result": "W",
+      "method": "FF",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. LaRue County"
+      "duration": "7:00",
+      "event": "vs. George Rogers Clark"
+    },
+    {
+      "date": "2024-12-14",
+      "opponent_id": "OUTSTATE_c4763ba75fbf",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Mccreary Central"
     },
     {
       "date": "2024-12-07",
@@ -469,7 +506,7 @@
     },
     {
       "date": "2024-12-07",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_5b24b29f3c88",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Whitley County",
@@ -524,5 +561,5 @@
     "losses": 27,
     "win_pct": 0.46
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

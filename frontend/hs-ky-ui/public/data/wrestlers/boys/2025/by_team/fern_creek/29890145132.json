@@ -5,6 +5,11 @@
   "team_slug": "fern_creek",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -21,8 +26,8 @@
     "df_plus": 100.0,
     "apr_plus": 100.0,
     "pin_rate": 0.5,
-    "bonus_rate": 0.727,
-    "majors": 1,
+    "bonus_rate": 0.773,
+    "majors": 2,
     "techs": 4,
     "pins": 11
   },
@@ -241,7 +246,7 @@
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
-      "event": "vs. Fern Creek"
+      "event": "vs. Doss"
     },
     {
       "date": "2025-01-25",
@@ -257,11 +262,11 @@
       "method": "TF",
       "score": "16-1",
       "duration": "0:00",
-      "event": "vs. Fern Creek"
+      "event": "vs. Fairdale"
     },
     {
       "date": "2025-01-25",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_f48309655a54",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Eastern",
@@ -274,6 +279,54 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Eastern"
+    },
+    {
+      "date": "2025-01-25",
+      "opponent_id": "OUTSTATE_3b9151ea3973",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Central",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Central"
+    },
+    {
+      "date": "2025-01-25",
+      "opponent_id": "OUTSTATE_26f66a856680",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Seneca",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Seneca"
+    },
+    {
+      "date": "2025-01-25",
+      "opponent_id": "OUTSTATE_f7a759a6e967",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Valley"
     },
     {
       "date": "2025-01-23",
@@ -289,11 +342,11 @@
       "method": "MD",
       "score": "13-5",
       "duration": "7:00",
-      "event": "vs. Fern Creek"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2025-01-23",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_26cae773bc06",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Pleasure Ridge Park",
@@ -385,23 +438,7 @@
       "method": "TF",
       "score": "17-2",
       "duration": "0:00",
-      "event": "vs. Fern Creek"
-    },
-    {
-      "date": "2025-01-04",
-      "opponent_id": "29864228132",
-      "opponent_career_id": "career_001549",
-      "opponent_name": "Braden Llaghno",
-      "opponent_team": "Male",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "TF",
-      "score": "17-2",
-      "duration": "0:00",
-      "event": "vs. Male"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2025-01-04",
@@ -418,6 +455,22 @@
       "score": "13-2",
       "duration": "7:00",
       "event": "vs. Meade County"
+    },
+    {
+      "date": "2025-01-04",
+      "opponent_id": "29864228132",
+      "opponent_career_id": "career_001549",
+      "opponent_name": "Braden Llaghno",
+      "opponent_team": "Male",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "0:00",
+      "event": "vs. Male"
     },
     {
       "date": "2025-01-04",
@@ -517,6 +570,22 @@
     },
     {
       "date": "2024-12-27",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "MD",
+      "score": "17-3",
+      "duration": "7:00",
+      "event": "vs. Jeffersonville B"
+    },
+    {
+      "date": "2024-12-27",
       "opponent_id": "29934556132",
       "opponent_career_id": "career_001296",
       "opponent_name": "Kaleb Brown",
@@ -597,22 +666,6 @@
     },
     {
       "date": "2024-12-14",
-      "opponent_id": "29790012132",
-      "opponent_career_id": "career_000494",
-      "opponent_name": "Kian Bradley",
-      "opponent_team": "Christian County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "DEC",
-      "score": "4-3",
-      "duration": "7:00",
-      "event": "King of the Bluegrass"
-    },
-    {
-      "date": "2024-12-14",
       "opponent_id": "29851887132",
       "opponent_career_id": "career_000093",
       "opponent_name": "Sasha Tabasinske",
@@ -625,6 +678,22 @@
       "method": "FALL",
       "score": null,
       "duration": "2:02",
+      "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2024-12-14",
+      "opponent_id": "29790012132",
+      "opponent_career_id": "career_000494",
+      "opponent_name": "Kian Bradley",
+      "opponent_team": "Christian County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
       "event": "King of the Bluegrass"
     },
     {
@@ -689,7 +758,7 @@
       "method": "MD",
       "score": "9-0",
       "duration": "7:00",
-      "event": "vs. Fern Creek"
+      "event": "vs. Atherton"
     },
     {
       "date": "2024-12-07",
@@ -705,7 +774,7 @@
       "method": "TF",
       "score": "25-6",
       "duration": "5:00",
-      "event": "vs. Fern Creek"
+      "event": "vs. Central"
     },
     {
       "date": "2024-12-07",
@@ -721,7 +790,7 @@
       "method": "DEC",
       "score": "10-5",
       "duration": "7:00",
-      "event": "vs. Fern Creek"
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2024-12-07",
@@ -741,7 +810,7 @@
     },
     {
       "date": "2024-12-07",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_3a96c7740796",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Doss",
@@ -787,5 +856,5 @@
     "losses": 26,
     "win_pct": 0.6
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

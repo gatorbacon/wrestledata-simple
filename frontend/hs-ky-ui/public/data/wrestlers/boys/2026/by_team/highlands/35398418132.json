@@ -5,6 +5,11 @@
   "team_slug": "highlands",
   "team_rank": 10,
   "weight_class": 126,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 43,
   "record": {
@@ -91,7 +96,7 @@
       "method": "TF",
       "score": "21-5",
       "duration": "2:33",
-      "event": "vs. Highlands"
+      "event": "vs. Boyd County"
     },
     {
       "date": "2026-02-07",
@@ -107,7 +112,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Highlands"
+      "event": "vs. Fairdale"
     },
     {
       "date": "2026-02-07",
@@ -139,7 +144,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Highlands"
+      "event": "vs. Covington Catholic"
     },
     {
       "date": "2026-01-22",
@@ -155,7 +160,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Highlands"
+      "event": "vs. Grant County"
     },
     {
       "date": "2026-01-17",
@@ -219,7 +224,55 @@
       "method": "FALL",
       "score": null,
       "duration": "1:33",
-      "event": "vs. Highlands"
+      "event": "vs. Boone County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35048604132",
+      "opponent_career_id": "career_000210",
+      "opponent_name": "Ty Blankenship",
+      "opponent_team": "Bourbon County",
+      "opponent_team_rank": 61,
+      "opponent_weight": 126,
+      "opponent_rank": 45,
+      "weight_class": "126",
+      "result": "W",
+      "method": "DEC",
+      "score": "18-11",
+      "duration": "7:00",
+      "event": "vs. Bourbon County"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35488119132",
+      "opponent_career_id": "career_000616",
+      "opponent_name": "Jake Adams",
+      "opponent_team": "Covington Catholic",
+      "opponent_team_rank": 41,
+      "opponent_weight": 132,
+      "opponent_rank": 36,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Covington Catholic"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34993749132",
+      "opponent_career_id": "career_001114",
+      "opponent_name": "Ford Furnish",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 3,
+      "opponent_weight": 126,
+      "opponent_rank": 96,
+      "weight_class": "126",
+      "result": "W",
+      "method": "TF",
+      "score": "21-5",
+      "duration": "0:00",
+      "event": "vs. Harrison County"
     },
     {
       "date": "2026-01-10",
@@ -236,54 +289,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Scott"
-    },
-    {
-      "date": "2026-01-10",
-      "opponent_id": "35048604132",
-      "opponent_career_id": "career_000210",
-      "opponent_name": "Ty Blankenship",
-      "opponent_team": "Bourbon County",
-      "opponent_team_rank": 61,
-      "opponent_weight": 126,
-      "opponent_rank": 45,
-      "weight_class": "126",
-      "result": "W",
-      "method": "DEC",
-      "score": "18-11",
-      "duration": "7:00",
-      "event": "vs. Highlands"
-    },
-    {
-      "date": "2026-01-10",
-      "opponent_id": "34993749132",
-      "opponent_career_id": "career_001114",
-      "opponent_name": "Ford Furnish",
-      "opponent_team": "Harrison County",
-      "opponent_team_rank": 3,
-      "opponent_weight": 126,
-      "opponent_rank": 96,
-      "weight_class": "126",
-      "result": "W",
-      "method": "TF",
-      "score": "21-5",
-      "duration": "0:00",
-      "event": "vs. Highlands"
-    },
-    {
-      "date": "2026-01-10",
-      "opponent_id": "35488119132",
-      "opponent_career_id": "career_000616",
-      "opponent_name": "Jake Adams",
-      "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 41,
-      "opponent_weight": 132,
-      "opponent_rank": 36,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Highlands"
     },
     {
       "date": "2026-01-03",
@@ -316,22 +321,6 @@
       "score": null,
       "duration": "0:00",
       "event": "Warhawk Classic"
-    },
-    {
-      "date": "2025-12-27",
-      "opponent_id": "35225217132",
-      "opponent_career_id": "career_002366",
-      "opponent_name": "Emmet Nunn",
-      "opponent_team": "Scott",
-      "opponent_team_rank": 125,
-      "opponent_weight": 120,
-      "opponent_rank": 89,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:47",
-      "event": "NKAC"
     },
     {
       "date": "2025-12-27",
@@ -395,6 +384,22 @@
       "method": "FALL",
       "score": null,
       "duration": "3:26",
+      "event": "NKAC"
+    },
+    {
+      "date": "2025-12-27",
+      "opponent_id": "35225217132",
+      "opponent_career_id": "career_002366",
+      "opponent_name": "Emmet Nunn",
+      "opponent_team": "Scott",
+      "opponent_team_rank": 125,
+      "opponent_weight": 120,
+      "opponent_rank": 89,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:47",
       "event": "NKAC"
     },
     {
@@ -605,5 +610,5 @@
     "losses": 33,
     "win_pct": 0.441
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

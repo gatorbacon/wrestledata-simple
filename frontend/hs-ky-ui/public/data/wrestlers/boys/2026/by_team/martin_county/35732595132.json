@@ -5,10 +5,15 @@
   "team_slug": "martin_county",
   "team_rank": 14,
   "weight_class": 175,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 25,
   "record": {
-    "overall": "29-15",
+    "overall": "29-17",
     "vs_ranked": "17-10",
     "vs_top10": "0-5",
     "vs_top25": "1-10"
@@ -80,7 +85,7 @@
     {
       "date": "2026-02-27",
       "opponent_id": "37429041132",
-      "opponent_career_id": null,
+      "opponent_career_id": "career_001306",
       "opponent_name": "Ali Arslanov",
       "opponent_team": "Jeffersontown",
       "opponent_team_rank": 26,
@@ -207,22 +212,6 @@
     },
     {
       "date": "2026-01-31",
-      "opponent_id": "OUTSTATE_eead225332bd",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": 35,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Simon Kenton"
-    },
-    {
-      "date": "2026-01-31",
       "opponent_id": "34988549132",
       "opponent_career_id": "career_000541",
       "opponent_name": "Rohaan Waraich",
@@ -235,7 +224,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:26",
-      "event": "vs. Martin County"
+      "event": "vs. Conner"
     },
     {
       "date": "2026-01-31",
@@ -251,7 +240,7 @@
       "method": "DEC",
       "score": "14-8",
       "duration": "7:00",
-      "event": "vs. Martin County"
+      "event": "vs. Cooper"
     },
     {
       "date": "2026-01-31",
@@ -267,7 +256,7 @@
       "method": "DEC",
       "score": "2-1",
       "duration": "7:00",
-      "event": "vs. Martin County"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2026-01-31",
@@ -283,7 +272,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Martin County"
+      "event": "vs. Lexington Christian"
+    },
+    {
+      "date": "2026-01-31",
+      "opponent_id": "OUTSTATE_eead225332bd",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": 35,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2026-01-17",
@@ -447,22 +452,6 @@
     },
     {
       "date": "2025-12-30",
-      "opponent_id": "35421161132",
-      "opponent_career_id": "career_003004",
-      "opponent_name": "Justin Brown",
-      "opponent_team": "Whitley County",
-      "opponent_team_rank": 16,
-      "opponent_weight": 165,
-      "opponent_rank": 132,
-      "weight_class": "175",
-      "result": "W",
-      "method": "TF",
-      "score": "17-2",
-      "duration": "5:00",
-      "event": "Boys Hatfield McCoy 32 2025"
-    },
-    {
-      "date": "2025-12-30",
       "opponent_id": "35017744132",
       "opponent_career_id": "career_000067",
       "opponent_name": "Nathaniel Williams",
@@ -555,6 +544,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:37",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35421161132",
+      "opponent_career_id": "career_003004",
+      "opponent_name": "Justin Brown",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 16,
+      "opponent_weight": 165,
+      "opponent_rank": 132,
+      "weight_class": "175",
+      "result": "W",
+      "method": "TF",
+      "score": "17-2",
+      "duration": "5:00",
       "event": "Boys Hatfield McCoy 32 2025"
     },
     {
@@ -735,22 +740,6 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "35753794132",
-      "opponent_career_id": "career_001444",
-      "opponent_name": "Gavin diamond",
-      "opponent_team": "Lawrence County",
-      "opponent_team_rank": 100,
-      "opponent_weight": 165,
-      "opponent_rank": 287,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:17",
-      "event": "AWC Invitational"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "35850458132",
       "opponent_career_id": "career_000252",
       "opponent_name": "Amos Blankenship",
@@ -780,6 +769,22 @@
       "score": null,
       "duration": "3:13",
       "event": "AWC Invitational"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35753794132",
+      "opponent_career_id": "career_001444",
+      "opponent_name": "Gavin diamond",
+      "opponent_team": "Lawrence County",
+      "opponent_team_rank": 100,
+      "opponent_weight": 165,
+      "opponent_rank": 287,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:17",
+      "event": "AWC Invitational"
     }
   ],
   "career": {
@@ -796,7 +801,7 @@
       "season": 2026,
       "grade": 10,
       "team": "Martin County",
-      "record": "29-15",
+      "record": "29-17",
       "regional_place": 2,
       "state_place": null
     },
@@ -812,15 +817,15 @@
       "season": 2024,
       "grade": 8,
       "team": "Martin County",
-      "record": "0-0",
+      "record": "8-5",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 41,
-    "losses": 33,
-    "win_pct": 0.554
+    "wins": 49,
+    "losses": 40,
+    "win_pct": 0.551
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

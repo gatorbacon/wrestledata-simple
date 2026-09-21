@@ -5,6 +5,11 @@
   "team_slug": "great_crossing",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.386,
+    "pin_rate": 0.364,
     "bonus_rate": 0.864,
-    "majors": 2,
+    "majors": 3,
     "techs": 19,
-    "pins": 17
+    "pins": 16
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -209,7 +214,7 @@
       "method": "TF",
       "score": "16-1",
       "duration": "0:00",
-      "event": "WSAZ Invitational"
+      "event": "WSAZ Invitational Tournament"
     },
     {
       "date": "2025-02-01",
@@ -277,22 +282,6 @@
     },
     {
       "date": "2025-01-16",
-      "opponent_id": "29935438132",
-      "opponent_career_id": "career_000531",
-      "opponent_name": "Griffin Ellis",
-      "opponent_team": "Conner",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:58",
-      "event": "vs. Great Crossing"
-    },
-    {
-      "date": "2025-01-16",
       "opponent_id": "30036001132",
       "opponent_career_id": "career_000412",
       "opponent_name": "Keegan Bruener",
@@ -305,7 +294,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Great Crossing"
+      "event": "vs. Campbell County"
+    },
+    {
+      "date": "2025-01-16",
+      "opponent_id": "29935438132",
+      "opponent_career_id": "career_000531",
+      "opponent_name": "Griffin Ellis",
+      "opponent_team": "Conner",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:58",
+      "event": "vs. Conner"
     },
     {
       "date": "2025-01-16",
@@ -322,22 +327,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Simon Kenton"
-    },
-    {
-      "date": "2025-01-15",
-      "opponent_id": "29995203132",
-      "opponent_career_id": "career_002465",
-      "opponent_name": "Elijah Mullins",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Great Crossing"
     },
     {
       "date": "2025-01-11",
@@ -421,38 +410,6 @@
     },
     {
       "date": "2025-01-04",
-      "opponent_id": "29858048132",
-      "opponent_career_id": "career_001227",
-      "opponent_name": "Kayson White",
-      "opponent_team": "Highlands",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "TF",
-      "score": "20-3",
-      "duration": "5:39",
-      "event": "2025 Warhawk Classic"
-    },
-    {
-      "date": "2025-01-04",
-      "opponent_id": "30398964132",
-      "opponent_career_id": "career_002065",
-      "opponent_name": "Jaylin Bellamy",
-      "opponent_team": "Paducah Tilghman",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "TF",
-      "score": "17-0",
-      "duration": "1:30",
-      "event": "2025 Warhawk Classic"
-    },
-    {
-      "date": "2025-01-04",
       "opponent_id": "30024813132",
       "opponent_career_id": "career_002396",
       "opponent_name": "Tabin Prine",
@@ -485,6 +442,22 @@
     },
     {
       "date": "2025-01-04",
+      "opponent_id": "29858048132",
+      "opponent_career_id": "career_001227",
+      "opponent_name": "Kayson White",
+      "opponent_team": "Highlands",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "TF",
+      "score": "20-3",
+      "duration": "5:39",
+      "event": "2025 Warhawk Classic"
+    },
+    {
+      "date": "2025-01-04",
       "opponent_id": "29789283132",
       "opponent_career_id": "career_001123",
       "opponent_name": "George Dennis",
@@ -496,6 +469,38 @@
       "result": "L",
       "method": "DEC",
       "score": "8-6",
+      "duration": "7:00",
+      "event": "2025 Warhawk Classic"
+    },
+    {
+      "date": "2025-01-04",
+      "opponent_id": "30398964132",
+      "opponent_career_id": "career_002065",
+      "opponent_name": "Jaylin Bellamy",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "TF",
+      "score": "17-0",
+      "duration": "1:30",
+      "event": "2025 Warhawk Classic"
+    },
+    {
+      "date": "2025-01-04",
+      "opponent_id": "29858048132",
+      "opponent_career_id": "career_001227",
+      "opponent_name": "Kayson White",
+      "opponent_team": "Highlands",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "MD",
+      "score": "10-2",
       "duration": "7:00",
       "event": "2025 Warhawk Classic"
     },
@@ -597,22 +602,6 @@
     },
     {
       "date": "2024-12-22",
-      "opponent_id": "30594818132",
-      "opponent_career_id": "career_002344",
-      "opponent_name": "Jagger Irvin",
-      "opponent_team": "Ryle",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "MD",
-      "score": "19-6",
-      "duration": "7:00",
-      "event": "SWOWCA"
-    },
-    {
-      "date": "2024-12-22",
       "opponent_id": "29858048132",
       "opponent_career_id": "career_001227",
       "opponent_name": "Kayson White",
@@ -641,6 +630,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:50",
+      "event": "SWOWCA"
+    },
+    {
+      "date": "2024-12-22",
+      "opponent_id": "30594818132",
+      "opponent_career_id": "career_002344",
+      "opponent_name": "Jagger Irvin",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "MD",
+      "score": "19-6",
+      "duration": "7:00",
       "event": "SWOWCA"
     },
     {
@@ -769,23 +774,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:31",
-      "event": "vs. Great Crossing"
-    },
-    {
-      "date": "2024-12-07",
-      "opponent_id": "30668718132",
-      "opponent_career_id": "career_001635",
-      "opponent_name": "Creston Fuller",
-      "opponent_team": "Mason County",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:37",
-      "event": "vs. Mason County"
+      "event": "vs. Covington Catholic"
     },
     {
       "date": "2024-12-07",
@@ -801,7 +790,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:34",
-      "event": "vs. Great Crossing"
+      "event": "vs. Fort Knox"
     },
     {
       "date": "2024-12-07",
@@ -821,7 +810,7 @@
     },
     {
       "date": "2024-12-07",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_3bedbf528daa",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Lafayette",
@@ -834,6 +823,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Lafayette"
+    },
+    {
+      "date": "2024-12-07",
+      "opponent_id": "30668718132",
+      "opponent_career_id": "career_001635",
+      "opponent_name": "Creston Fuller",
+      "opponent_team": "Mason County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:37",
+      "event": "vs. Mason County"
     }
   ],
   "career": {
@@ -859,7 +864,7 @@
       "season": 2024,
       "grade": 11,
       "team": "Great Crossing",
-      "record": "4-2",
+      "record": "21-3",
       "regional_place": null,
       "state_place": null
     },
@@ -867,7 +872,7 @@
       "season": 2023,
       "grade": 10,
       "team": "Great Crossing High School",
-      "record": "33-4",
+      "record": "34-4",
       "regional_place": 1,
       "state_place": 2
     },
@@ -881,9 +886,9 @@
     }
   ],
   "career_record": {
-    "wins": 104,
-    "losses": 14,
-    "win_pct": 0.881
+    "wins": 122,
+    "losses": 15,
+    "win_pct": 0.891
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

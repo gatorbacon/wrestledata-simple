@@ -5,10 +5,15 @@
   "team_slug": "st_xavier",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
-    "overall": "17-13",
+    "overall": "18-13",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.529,
-    "bonus_rate": 0.765,
+    "pin_rate": 0.6,
+    "bonus_rate": 0.867,
     "majors": 2,
     "techs": 2,
     "pins": 9
@@ -177,7 +182,7 @@
       "method": "MD",
       "score": "16-5",
       "duration": "7:00",
-      "event": "vs. St. Xavier"
+      "event": "vs. Spencer County"
     },
     {
       "date": "2025-01-25",
@@ -193,7 +198,7 @@
       "method": "TF",
       "score": "16-1",
       "duration": "2:00",
-      "event": "vs. St. Xavier"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2025-01-25",
@@ -209,7 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:42",
-      "event": "vs. St. Xavier"
+      "event": "vs. Male"
     },
     {
       "date": "2025-01-25",
@@ -225,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:50",
-      "event": "vs. St. Xavier"
+      "event": "vs. Oldham County"
     },
     {
       "date": "2025-01-25",
@@ -241,7 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:45",
-      "event": "vs. St. Xavier"
+      "event": "vs. Ryle"
     },
     {
       "date": "2025-01-18",
@@ -357,6 +362,22 @@
     },
     {
       "date": "2025-01-03",
+      "opponent_id": "29820235132",
+      "opponent_career_id": "career_000755",
+      "opponent_name": "Dawson Schroering",
+      "opponent_team": "Dupont Manual",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:33",
+      "event": "vs. Dupont Manual"
+    },
+    {
+      "date": "2025-01-03",
       "opponent_id": "29849823132",
       "opponent_career_id": "career_002207",
       "opponent_name": "Joel Vontae Stanley Jr.",
@@ -369,7 +390,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. St. Xavier"
+      "event": "vs. Pleasure Ridge Park"
     },
     {
       "date": "2025-01-03",
@@ -385,23 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. St. Xavier"
-    },
-    {
-      "date": "2025-01-03",
-      "opponent_id": "29820235132",
-      "opponent_career_id": "career_000755",
-      "opponent_name": "Dawson Schroering",
-      "opponent_team": "Dupont Manual",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:33",
-      "event": "vs. St. Xavier"
+      "event": "vs. Pleasure Ridge Park"
     },
     {
       "date": "2024-12-28",
@@ -437,22 +442,6 @@
     },
     {
       "date": "2024-12-21",
-      "opponent_id": "29916613132",
-      "opponent_career_id": "career_002526",
-      "opponent_name": "Shepard Greenfield",
-      "opponent_team": "South Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "MFF",
-      "score": null,
-      "duration": "7:00",
-      "event": "5 Star Classic"
-    },
-    {
-      "date": "2024-12-21",
       "opponent_id": "29982174132",
       "opponent_career_id": "career_000980",
       "opponent_name": "Dylan Neary",
@@ -481,6 +470,22 @@
       "method": "FALL",
       "score": null,
       "duration": "3:05",
+      "event": "5 Star Classic"
+    },
+    {
+      "date": "2024-12-21",
+      "opponent_id": "29916613132",
+      "opponent_career_id": "career_002526",
+      "opponent_name": "Shepard Greenfield",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
       "event": "5 Star Classic"
     },
     {
@@ -554,7 +559,7 @@
       "season": 2025,
       "grade": 10,
       "team": "St. Xavier",
-      "record": "17-13",
+      "record": "18-13",
       "regional_place": 3,
       "state_place": null
     },
@@ -562,15 +567,15 @@
       "season": 2024,
       "grade": 9,
       "team": "St. Xavier",
-      "record": "7-10",
+      "record": "10-11",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 25,
-    "losses": 25,
-    "win_pct": 0.5
+    "wins": 29,
+    "losses": 26,
+    "win_pct": 0.527
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,13 +5,18 @@
   "team_slug": "tug_valley",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": null,
   "record": {
-    "overall": "4-4",
-    "vs_ranked": "4-4",
+    "overall": "4-5",
+    "vs_ranked": "4-5",
     "vs_top10": "0-0",
-    "vs_top25": "0-3"
+    "vs_top25": "0-4"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,7 +33,7 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
-    "ranked_losses": 4,
+    "ranked_losses": 5,
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
@@ -143,6 +148,22 @@
     },
     {
       "date": "2025-12-30",
+      "opponent_id": "35144516132",
+      "opponent_career_id": "career_001395",
+      "opponent_name": "Liam Ditto",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": 98,
+      "opponent_weight": 120,
+      "opponent_rank": 17,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:20",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
       "opponent_id": "35122073132",
       "opponent_career_id": "career_001981",
       "opponent_name": "Xander Fontana",
@@ -174,5 +195,5 @@
       "event": "Boys Hatfield McCoy 32 2025"
     }
   ],
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

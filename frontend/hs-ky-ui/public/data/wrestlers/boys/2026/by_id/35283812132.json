@@ -5,11 +5,16 @@
   "team_slug": "eastern",
   "team_rank": 76,
   "weight_class": 157,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 49,
   "record": {
     "overall": "32-17",
-    "vs_ranked": "25-14",
+    "vs_ranked": "26-14",
     "vs_top10": "0-1",
     "vs_top25": "0-10"
   },
@@ -20,14 +25,14 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.679,
-    "bonus_rate": 0.929,
-    "majors": 2,
+    "pin_rate": 0.655,
+    "bonus_rate": 0.931,
+    "majors": 3,
     "techs": 5,
     "pins": 19
   },
   "opponent_breakdown": {
-    "ranked_wins": 25,
+    "ranked_wins": 26,
     "ranked_losses": 14,
     "top10_wins": 0,
     "top10_losses": 1,
@@ -223,6 +228,22 @@
     },
     {
       "date": "2026-01-17",
+      "opponent_id": "35205060132",
+      "opponent_career_id": "career_000344",
+      "opponent_name": "Brayden Norrick",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": 40,
+      "opponent_weight": 157,
+      "opponent_rank": 25,
+      "weight_class": "150",
+      "result": "L",
+      "method": "DEC",
+      "score": "2-0",
+      "duration": "7:00",
+      "event": "Dragon Invitational"
+    },
+    {
+      "date": "2026-01-17",
       "opponent_id": "37897575132",
       "opponent_career_id": null,
       "opponent_name": "Haskell Fuggett",
@@ -267,22 +288,6 @@
       "method": "FALL",
       "score": null,
       "duration": "1:26",
-      "event": "Dragon Invitational"
-    },
-    {
-      "date": "2026-01-17",
-      "opponent_id": "35205060132",
-      "opponent_career_id": "career_000344",
-      "opponent_name": "Brayden Norrick",
-      "opponent_team": "Bullitt East",
-      "opponent_team_rank": 40,
-      "opponent_weight": 157,
-      "opponent_rank": 25,
-      "weight_class": "150",
-      "result": "L",
-      "method": "DEC",
-      "score": "2-0",
-      "duration": "7:00",
       "event": "Dragon Invitational"
     },
     {
@@ -463,6 +468,22 @@
     },
     {
       "date": "2025-12-30",
+      "opponent_id": "-1",
+      "opponent_career_id": null,
+      "opponent_name": "Kalem Harris",
+      "opponent_team": "Mt. Vernon",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:48",
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2025-12-30",
       "opponent_id": "OUTSTATE_50851caaa142",
       "opponent_career_id": null,
       "opponent_name": "Caylen Scott",
@@ -476,6 +497,22 @@
       "score": null,
       "duration": "0:59",
       "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2025-12-29",
+      "opponent_id": "35144081132",
+      "opponent_career_id": "career_000671",
+      "opponent_name": "Gabreil Byrd",
+      "opponent_team": "Desales",
+      "opponent_team_rank": 70,
+      "opponent_weight": 157,
+      "opponent_rank": 108,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Desales"
     },
     {
       "date": "2025-12-29",
@@ -511,22 +548,6 @@
     },
     {
       "date": "2025-12-29",
-      "opponent_id": "35144081132",
-      "opponent_career_id": "career_000671",
-      "opponent_name": "Gabreil Byrd",
-      "opponent_team": "Desales",
-      "opponent_team_rank": 70,
-      "opponent_weight": 157,
-      "opponent_rank": 108,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Eastern"
-    },
-    {
-      "date": "2025-12-29",
       "opponent_id": "OUTSTATE_26cae773bc06",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -555,7 +576,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Eastern"
+      "event": "vs. Bell County"
     },
     {
       "date": "2025-12-20",
@@ -575,22 +596,6 @@
     },
     {
       "date": "2025-12-20",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Jeffersonville"
-    },
-    {
-      "date": "2025-12-20",
       "opponent_id": "35181630132",
       "opponent_career_id": "career_001304",
       "opponent_name": "Jordan Lawless",
@@ -604,6 +609,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Jeffersontown"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Jeffersonville"
     },
     {
       "date": "2025-12-20",
@@ -639,22 +660,6 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35565724132",
-      "opponent_career_id": "career_004401",
-      "opponent_name": "Grant Coons",
-      "opponent_team": "St. Xavier",
-      "opponent_team_rank": 15,
-      "opponent_weight": 150,
-      "opponent_rank": 32,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:02",
-      "event": "King of the Bluegrass"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35225681132",
       "opponent_career_id": "career_000788",
       "opponent_name": "Chris Burns",
@@ -683,6 +688,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:11",
+      "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35565724132",
+      "opponent_career_id": "career_004401",
+      "opponent_name": "Grant Coons",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": 15,
+      "opponent_weight": 150,
+      "opponent_rank": 32,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:02",
       "event": "King of the Bluegrass"
     },
     {
@@ -751,6 +772,22 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "35397665132",
+      "opponent_career_id": "career_001197",
+      "opponent_name": "Colt Klinksiek",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": 25,
+      "opponent_weight": 157,
+      "opponent_rank": 87,
+      "weight_class": "157",
+      "result": "W",
+      "method": "MD",
+      "score": "12-0",
+      "duration": "7:00",
+      "event": "The Beast of the East"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35040572132",
       "opponent_career_id": "career_001554",
       "opponent_name": "Caellum Kinsel",
@@ -767,22 +804,6 @@
     },
     {
       "date": "2025-12-03",
-      "opponent_id": "35122072132",
-      "opponent_career_id": "career_001980",
-      "opponent_name": "Jaxon Clary",
-      "opponent_team": "Oldham County",
-      "opponent_team_rank": 113,
-      "opponent_weight": 144,
-      "opponent_rank": 27,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Oldham County"
-    },
-    {
-      "date": "2025-12-03",
       "opponent_id": "OUTSTATE_26cae773bc06",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -796,6 +817,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Pleasure Ridge Park"
+    },
+    {
+      "date": "2025-12-03",
+      "opponent_id": "35122072132",
+      "opponent_career_id": "career_001980",
+      "opponent_name": "Jaxon Clary",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": 113,
+      "opponent_weight": 144,
+      "opponent_rank": 27,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Oldham County"
     }
   ],
   "career": {
@@ -820,7 +857,7 @@
       "season": 2025,
       "grade": 10,
       "team": "Eastern",
-      "record": "19-21",
+      "record": "18-21",
       "regional_place": null,
       "state_place": null
     },
@@ -834,9 +871,9 @@
     }
   ],
   "career_record": {
-    "wins": 54,
+    "wins": 53,
     "losses": 48,
-    "win_pct": 0.529
+    "win_pct": 0.525
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

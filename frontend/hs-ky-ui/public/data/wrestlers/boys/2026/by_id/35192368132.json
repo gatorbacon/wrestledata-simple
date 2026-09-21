@@ -5,10 +5,15 @@
   "team_slug": "logan_county",
   "team_rank": 104,
   "weight_class": 106,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 22,
   "record": {
-    "overall": "30-6",
+    "overall": "30-5",
     "vs_ranked": "12-4",
     "vs_top10": "0-1",
     "vs_top25": "2-4"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.8,
-    "bonus_rate": 0.933,
+    "pin_rate": 0.857,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 2,
     "pins": 12
@@ -287,6 +292,22 @@
     },
     {
       "date": "2026-01-15",
+      "opponent_id": "35002884132",
+      "opponent_career_id": "career_000889",
+      "opponent_name": "Ryker Kramer",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": 79,
+      "opponent_weight": 106,
+      "opponent_rank": 5,
+      "weight_class": "113",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "2:49",
+      "event": "vs. Fort Campbell"
+    },
+    {
+      "date": "2026-01-15",
       "opponent_id": "OUTSTATE_7202dbe62bd8",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -316,22 +337,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Fort Campbell"
-    },
-    {
-      "date": "2026-01-15",
-      "opponent_id": "35002884132",
-      "opponent_career_id": "career_000889",
-      "opponent_name": "Ryker Kramer",
-      "opponent_team": "Fort Campbell",
-      "opponent_team_rank": 79,
-      "opponent_weight": 106,
-      "opponent_rank": 5,
-      "weight_class": "113",
-      "result": "L",
-      "method": "TF",
-      "score": "15-0",
-      "duration": "2:49",
-      "event": "vs. Logan County"
     },
     {
       "date": "2026-01-10",
@@ -443,7 +448,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:52",
-      "event": "vs. Logan County"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2025-12-13",
@@ -459,7 +464,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:03",
-      "event": "vs. Logan County"
+      "event": "vs. Hart County"
     },
     {
       "date": "2025-12-13",
@@ -618,15 +623,15 @@
       "season": 2026,
       "grade": 11,
       "team": "Logan County",
-      "record": "30-6",
+      "record": "30-5",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 30,
-    "losses": 6,
-    "win_pct": 0.833
+    "losses": 5,
+    "win_pct": 0.857
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

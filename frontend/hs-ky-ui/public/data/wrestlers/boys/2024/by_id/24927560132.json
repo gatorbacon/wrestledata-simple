@@ -5,10 +5,15 @@
   "team_slug": "great_crossing",
   "team_rank": null,
   "weight_class": 215,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
-    "overall": "13-5",
+    "overall": "30-9",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.682,
-    "bonus_rate": 0.682,
+    "pin_rate": 0.69,
+    "bonus_rate": 0.69,
     "majors": 0,
     "techs": 0,
-    "pins": 15
+    "pins": 20
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -229,18 +234,18 @@
     },
     {
       "date": "2024-01-13",
-      "opponent_id": "24666622132",
-      "opponent_career_id": "career_003322",
-      "opponent_name": "Michael Williams",
-      "opponent_team": "Moore",
+      "opponent_id": "24662606132",
+      "opponent_career_id": "career_002530",
+      "opponent_name": "Brady Schadt",
+      "opponent_team": "South Oldham",
       "opponent_team_rank": null,
       "opponent_weight": 215,
       "opponent_rank": null,
       "weight_class": "215",
       "result": "W",
-      "method": "DEC",
-      "score": "4-1",
-      "duration": "7:00",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:54",
       "event": "Warhawk Classic"
     },
     {
@@ -261,18 +266,34 @@
     },
     {
       "date": "2024-01-13",
-      "opponent_id": "24662606132",
-      "opponent_career_id": "career_002530",
-      "opponent_name": "Brady Schadt",
-      "opponent_team": "South Oldham",
+      "opponent_id": "24666622132",
+      "opponent_career_id": "career_003322",
+      "opponent_name": "Michael Williams",
+      "opponent_team": "Moore",
       "opponent_team_rank": null,
       "opponent_weight": 215,
       "opponent_rank": null,
       "weight_class": "215",
       "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2024-01-13",
+      "opponent_id": "26069900132",
+      "opponent_career_id": "career_001487",
+      "opponent_name": "Mac Darland",
+      "opponent_team": "Lexington Christian",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "5:54",
+      "duration": "1:22",
       "event": "Warhawk Classic"
     },
     {
@@ -289,7 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Great Crossing High School"
+      "event": "vs. Ryle"
     },
     {
       "date": "2024-01-11",
@@ -305,7 +326,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Great Crossing High School"
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2024-01-06",
@@ -420,20 +441,68 @@
       "event": "Fern Creek Gladiator (Individual)"
     },
     {
-      "date": "2023-12-09",
-      "opponent_id": "25188620132",
-      "opponent_career_id": "career_001649",
-      "opponent_name": "Juan (Izley) Morales",
-      "opponent_team": "Mason County",
+      "date": "2023-12-16",
+      "opponent_id": "24888771132",
+      "opponent_career_id": null,
+      "opponent_name": "Alexander Bennett",
+      "opponent_team": "WILMINGTON",
       "opponent_team_rank": null,
-      "opponent_weight": 190,
+      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "215",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "1:56",
-      "event": "vs. Great Crossing High School"
+      "duration": "1:12",
+      "event": "Edgewood Invitational"
+    },
+    {
+      "date": "2023-12-16",
+      "opponent_id": "25172407132",
+      "opponent_career_id": null,
+      "opponent_name": "Theorie Troxell",
+      "opponent_team": "OAK HILLS",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:49",
+      "event": "Edgewood Invitational"
+    },
+    {
+      "date": "2023-12-16",
+      "opponent_id": "25532419132",
+      "opponent_career_id": null,
+      "opponent_name": "Josh Olsen",
+      "opponent_team": "MONROE",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:39",
+      "event": "Edgewood Invitational"
+    },
+    {
+      "date": "2023-12-16",
+      "opponent_id": "25239096132",
+      "opponent_career_id": null,
+      "opponent_name": "Cohen Reip",
+      "opponent_team": "LAKOTA EAST",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "DEC",
+      "score": "3-2",
+      "duration": "7:00",
+      "event": "Edgewood Invitational"
     },
     {
       "date": "2023-12-09",
@@ -449,7 +518,23 @@
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "vs. Great Crossing High School"
+      "event": "vs. Bullitt Central"
+    },
+    {
+      "date": "2023-12-09",
+      "opponent_id": "25188620132",
+      "opponent_career_id": "career_001649",
+      "opponent_name": "Juan (Izley) Morales",
+      "opponent_team": "Mason County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:56",
+      "event": "vs. Mason County"
     },
     {
       "date": "2023-12-09",
@@ -465,7 +550,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:28",
-      "event": "vs. Great Crossing High School"
+      "event": "vs. Scott County"
+    },
+    {
+      "date": "2023-12-09",
+      "opponent_id": "OUTSTATE_eead225332bd",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2023-12-09",
@@ -481,7 +582,87 @@
       "method": "FALL",
       "score": null,
       "duration": "2:50",
-      "event": "vs. Great Crossing High School"
+      "event": "vs. Western Hills"
+    },
+    {
+      "date": "2023-12-02",
+      "opponent_id": "25421877132",
+      "opponent_career_id": null,
+      "opponent_name": "Devyn Orman",
+      "opponent_team": "Northview",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "INJ",
+      "score": null,
+      "duration": "7:00",
+      "event": "old barn brawl"
+    },
+    {
+      "date": "2023-12-02",
+      "opponent_id": "25253761132",
+      "opponent_career_id": null,
+      "opponent_name": "Wyatt Bullock",
+      "opponent_team": "Liberty (Wentzville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:48",
+      "event": "old barn brawl"
+    },
+    {
+      "date": "2023-12-02",
+      "opponent_id": "25475169132",
+      "opponent_career_id": null,
+      "opponent_name": "Noah Owens",
+      "opponent_team": "Southridge",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "DEC",
+      "score": "1-0",
+      "duration": "7:00",
+      "event": "old barn brawl"
+    },
+    {
+      "date": "2023-12-02",
+      "opponent_id": "OUTSTATE_47651d1ffb82",
+      "opponent_career_id": null,
+      "opponent_name": "Zayven Kalisz",
+      "opponent_team": "Corydon Central",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:29",
+      "event": "old barn brawl"
+    },
+    {
+      "date": "2023-12-02",
+      "opponent_id": "25253767132",
+      "opponent_career_id": null,
+      "opponent_name": "Mason Huebner",
+      "opponent_team": "Liberty (Wentzville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:09",
+      "event": "old barn brawl"
     }
   ],
   "career": {
@@ -499,7 +680,7 @@
       "season": 2024,
       "grade": 12,
       "team": "Great Crossing",
-      "record": "13-5",
+      "record": "30-9",
       "regional_place": 2,
       "state_place": null
     },
@@ -507,7 +688,7 @@
       "season": 2023,
       "grade": 11,
       "team": "Great Crossing High School",
-      "record": "30-21",
+      "record": "31-21",
       "regional_place": 3,
       "state_place": null
     },
@@ -523,15 +704,15 @@
       "season": 2021,
       "grade": 9,
       "team": "Great Crossing High School",
-      "record": "11-12",
+      "record": "11-13",
       "regional_place": 3,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 74,
-    "losses": 59,
-    "win_pct": 0.556
+    "wins": 92,
+    "losses": 64,
+    "win_pct": 0.59
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

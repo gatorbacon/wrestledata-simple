@@ -5,10 +5,15 @@
   "team_slug": "oldham_county",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
-    "overall": "11-7",
+    "overall": "11-10",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.2,
-    "bonus_rate": 0.4,
+    "pin_rate": 0.182,
+    "bonus_rate": 0.364,
     "majors": 2,
     "techs": 0,
     "pins": 2
@@ -117,6 +122,22 @@
     },
     {
       "date": "2025-02-22",
+      "opponent_id": "30042234132",
+      "opponent_career_id": "career_000803",
+      "opponent_name": "Christopher Moore",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "DEC",
+      "score": "7-2",
+      "duration": "7:00",
+      "event": "KHSAA Region 4"
+    },
+    {
+      "date": "2025-02-22",
       "opponent_id": "29890145132",
       "opponent_career_id": "career_000859",
       "opponent_name": "Kaiden Newberry",
@@ -165,6 +186,22 @@
     },
     {
       "date": "2025-01-25",
+      "opponent_id": "29809614132",
+      "opponent_career_id": "career_001203",
+      "opponent_name": "Elliot Ortinski",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "MD",
+      "score": "14-3",
+      "duration": "7:00",
+      "event": "vs. Henry Clay"
+    },
+    {
+      "date": "2025-01-25",
       "opponent_id": "29813767132",
       "opponent_career_id": "career_002647",
       "opponent_name": "Joseph Jaso",
@@ -210,22 +247,6 @@
       "score": "9-5",
       "duration": "7:00",
       "event": "vs. Trinity (Louisville)"
-    },
-    {
-      "date": "2025-01-25",
-      "opponent_id": "29809614132",
-      "opponent_career_id": "career_001203",
-      "opponent_name": "Elliot Ortinski",
-      "opponent_team": "Henry Clay",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "MD",
-      "score": "14-3",
-      "duration": "7:00",
-      "event": "vs. Oldham County"
     },
     {
       "date": "2025-01-18",
@@ -305,7 +326,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:07",
-      "event": "vs. Oldham County"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2024-12-14",
@@ -353,7 +374,7 @@
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "vs. Oldham County"
+      "event": "vs. Trinity (Louisville)"
     }
   ],
   "career": {
@@ -370,7 +391,7 @@
       "season": 2025,
       "grade": 12,
       "team": "Oldham County",
-      "record": "11-7",
+      "record": "11-10",
       "regional_place": 3,
       "state_place": null
     },
@@ -393,8 +414,8 @@
   ],
   "career_record": {
     "wins": 55,
-    "losses": 32,
-    "win_pct": 0.632
+    "losses": 35,
+    "win_pct": 0.611
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

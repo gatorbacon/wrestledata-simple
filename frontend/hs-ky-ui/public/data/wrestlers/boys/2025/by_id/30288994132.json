@@ -5,6 +5,11 @@
   "team_slug": "owensboro",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.667,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
     "pins": 2
@@ -129,7 +134,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro"
+      "event": "vs. Apollo"
     },
     {
       "date": "2025-01-28",
@@ -145,11 +150,11 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2025-01-28",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_b6eedbd52fe2",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Fort Campbell",
@@ -177,23 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro"
-    },
-    {
-      "date": "2025-01-16",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Daviess County",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Daviess County"
+      "event": "vs. Apollo"
     },
     {
       "date": "2025-01-16",
@@ -209,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro"
+      "event": "vs. Apollo"
     },
     {
       "date": "2025-01-16",
@@ -228,27 +217,11 @@
       "event": "vs. Owensboro Catholic"
     },
     {
-      "date": "2025-01-03",
-      "opponent_id": "29828325132",
-      "opponent_career_id": "career_000184",
-      "opponent_name": "Max Brewer",
-      "opponent_team": "Bethlehem",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Owensboro"
-    },
-    {
-      "date": "2025-01-03",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "date": "2025-01-16",
+      "opponent_id": "OUTSTATE_8cc9e0bb0dcc",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
-      "opponent_team": "Trinity",
+      "opponent_team": "Daviess County",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -257,7 +230,7 @@
       "method": "FF",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Trinity (Whitesville)"
+      "event": "vs. Daviess County"
     },
     {
       "date": "2025-01-03",
@@ -273,7 +246,71 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro"
+      "event": "vs. Bardstown"
+    },
+    {
+      "date": "2025-01-03",
+      "opponent_id": "29828325132",
+      "opponent_career_id": "career_000184",
+      "opponent_name": "Max Brewer",
+      "opponent_team": "Bethlehem",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Bethlehem"
+    },
+    {
+      "date": "2025-01-03",
+      "opponent_id": "OUTSTATE_28470c03fea2",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Trinity",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Trinity (Whitesville)"
+    },
+    {
+      "date": "2025-01-03",
+      "opponent_id": "OUTSTATE_0d024306c254",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Calloway County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Calloway County"
+    },
+    {
+      "date": "2025-01-03",
+      "opponent_id": "OUTSTATE_f168e9c3cbeb",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Fort Knox",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Fort Knox"
     },
     {
       "date": "2024-12-28",
@@ -293,6 +330,22 @@
     },
     {
       "date": "2024-11-30",
+      "opponent_id": "OUTSTATE_50851caaa142",
+      "opponent_career_id": null,
+      "opponent_name": "Caylen Scott",
+      "opponent_team": "Evansville F.j. Reitz",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Evansville F.j. Reitz"
+    },
+    {
+      "date": "2024-11-30",
       "opponent_id": "30137165132",
       "opponent_career_id": null,
       "opponent_name": "Deicon Schurz",
@@ -306,22 +359,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Southridge"
-    },
-    {
-      "date": "2024-11-30",
-      "opponent_id": "OUTSTATE_50851caaa142",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Evansville F.j. Reitz"
     }
   ],
   "career": {
@@ -355,5 +392,5 @@
     "losses": 26,
     "win_pct": 0.447
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

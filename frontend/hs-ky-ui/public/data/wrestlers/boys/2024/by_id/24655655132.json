@@ -5,10 +5,15 @@
   "team_slug": "western",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
-    "overall": "25-16",
+    "overall": "28-16",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.789,
-    "bonus_rate": 0.789,
+    "pin_rate": 0.8,
+    "bonus_rate": 0.8,
     "majors": 0,
     "techs": 0,
-    "pins": 15
+    "pins": 16
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -85,6 +90,22 @@
     },
     {
       "date": "2024-02-10",
+      "opponent_id": "26403279132",
+      "opponent_career_id": "career_003433",
+      "opponent_name": "Gabriel Kays",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:55",
+      "event": "KHSAA Region 3"
+    },
+    {
+      "date": "2024-02-10",
       "opponent_id": "25336800132",
       "opponent_career_id": "career_002847",
       "opponent_name": "Billion Thornton",
@@ -113,7 +134,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:03",
-      "event": "vs. Western"
+      "event": "vs. Valley"
     },
     {
       "date": "2024-02-07",
@@ -288,8 +309,24 @@
       "result": "W",
       "method": "FALL",
       "score": null,
+      "duration": "1:31",
+      "event": "vs. Conner"
+    },
+    {
+      "date": "2024-01-13",
+      "opponent_id": "24793339132",
+      "opponent_career_id": "career_003997",
+      "opponent_name": "Jesse Barbour",
+      "opponent_team": "Conner",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
       "duration": "1:36",
-      "event": "vs. Western"
+      "event": "vs. Conner"
     },
     {
       "date": "2024-01-13",
@@ -305,7 +342,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:37",
-      "event": "vs. Western"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2024-01-13",
@@ -321,7 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:32",
-      "event": "vs. Western"
+      "event": "vs. Lafayette"
     },
     {
       "date": "2024-01-13",
@@ -337,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Western"
+      "event": "vs. West Jessamine"
     },
     {
       "date": "2024-01-10",
@@ -353,7 +390,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:07",
-      "event": "vs. Western"
+      "event": "vs. John Hardin"
     },
     {
       "date": "2024-01-10",
@@ -369,7 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:38",
-      "event": "vs. Western"
+      "event": "vs. Nelson County"
     },
     {
       "date": "2024-01-06",
@@ -385,39 +422,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:00",
-      "event": "vs. Western"
-    },
-    {
-      "date": "2024-01-06",
-      "opponent_id": "24864854132",
-      "opponent_career_id": "career_003349",
-      "opponent_name": "Dakota Blacklock",
-      "opponent_team": "Ohio County",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:55",
-      "event": "vs. Western"
-    },
-    {
-      "date": "2024-01-06",
-      "opponent_id": "27363823132",
-      "opponent_career_id": "career_002052",
-      "opponent_name": "Mauricio Santos",
-      "opponent_team": "Owensboro Catholic",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "L",
-      "method": "DEC",
-      "score": "7-4",
-      "duration": "7:00",
-      "event": "vs. Western"
+      "event": "vs. Daviess County"
     },
     {
       "date": "2024-01-06",
@@ -433,7 +438,39 @@
       "method": "FALL",
       "score": null,
       "duration": "1:44",
-      "event": "vs. Western"
+      "event": "vs. Montgomery County"
+    },
+    {
+      "date": "2024-01-06",
+      "opponent_id": "24864854132",
+      "opponent_career_id": "career_003349",
+      "opponent_name": "Dakota Blacklock",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:55",
+      "event": "vs. Ohio County"
+    },
+    {
+      "date": "2024-01-06",
+      "opponent_id": "27363823132",
+      "opponent_career_id": "career_002052",
+      "opponent_name": "Mauricio Santos",
+      "opponent_team": "Owensboro Catholic",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-4",
+      "duration": "7:00",
+      "event": "vs. Owensboro Catholic"
     },
     {
       "date": "2024-01-06",
@@ -481,7 +518,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:33",
-      "event": "vs. Western"
+      "event": "vs. Mason County"
     },
     {
       "date": "2023-12-30",
@@ -497,7 +534,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:33",
-      "event": "vs. Western"
+      "event": "vs. Paul Laurence Dunbar"
     },
     {
       "date": "2023-12-30",
@@ -529,23 +566,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:36",
-      "event": "vs. Western JV"
-    },
-    {
-      "date": "2023-12-09",
-      "opponent_id": "25256077132",
-      "opponent_career_id": "career_004302",
-      "opponent_name": "Juan Vargas",
-      "opponent_team": "Owensboro",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:49",
-      "event": "vs. Western"
+      "event": "vs. Seneca"
     },
     {
       "date": "2023-12-09",
@@ -561,7 +582,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:20",
-      "event": "vs. Western"
+      "event": "vs. Calloway County"
     },
     {
       "date": "2023-12-09",
@@ -577,7 +598,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Western"
+      "event": "vs. Henderson County"
+    },
+    {
+      "date": "2023-12-09",
+      "opponent_id": "25256077132",
+      "opponent_career_id": "career_004302",
+      "opponent_name": "Juan Vargas",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:49",
+      "event": "vs. Owensboro"
     },
     {
       "date": "2023-12-09",
@@ -609,7 +646,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:23",
-      "event": "vs. Western"
+      "event": "vs. Jeffersontown"
     },
     {
       "date": "2023-12-06",
@@ -625,7 +662,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:02",
-      "event": "vs. Western"
+      "event": "vs. Pleasure Ridge Park"
     },
     {
       "date": "2023-12-02",
@@ -641,7 +678,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:35",
-      "event": "vs. Western"
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2023-12-02",
@@ -657,7 +694,7 @@
       "method": "MD",
       "score": "16-2",
       "duration": "7:00",
-      "event": "vs. Western"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2023-12-02",
@@ -673,7 +710,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:24",
-      "event": "vs. Western"
+      "event": "vs. Pleasure Ridge Park"
     },
     {
       "date": "2023-12-02",
@@ -689,7 +726,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:22",
-      "event": "vs. Western"
+      "event": "vs. Southern"
     },
     {
       "date": "2023-12-02",
@@ -738,15 +775,15 @@
       "season": 2024,
       "grade": 10,
       "team": "Western",
-      "record": "25-16",
+      "record": "28-16",
       "regional_place": 4,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 96,
+    "wins": 99,
     "losses": 33,
-    "win_pct": 0.744
+    "win_pct": 0.75
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

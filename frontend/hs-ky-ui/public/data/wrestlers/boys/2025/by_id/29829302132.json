@@ -5,10 +5,15 @@
   "team_slug": "bethlehem",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
-    "overall": "8-17",
+    "overall": "8-16",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -197,7 +202,7 @@
     },
     {
       "date": "2025-01-18",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_f168e9c3cbeb",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Fort Knox",
@@ -261,7 +266,7 @@
     },
     {
       "date": "2025-01-17",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_17200c877caa",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Mercer County",
@@ -274,6 +279,54 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Mercer County"
+    },
+    {
+      "date": "2025-01-03",
+      "opponent_id": "OUTSTATE_fa707c1de75c",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Bardstown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Bardstown"
+    },
+    {
+      "date": "2025-01-03",
+      "opponent_id": "OUTSTATE_28470c03fea2",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Trinity",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Trinity (Whitesville)"
+    },
+    {
+      "date": "2025-01-03",
+      "opponent_id": "OUTSTATE_7ed63b73d691",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Owensboro"
     },
     {
       "date": "2025-01-03",
@@ -290,22 +343,6 @@
       "score": null,
       "duration": "3:26",
       "event": "vs. Fort Knox"
-    },
-    {
-      "date": "2025-01-03",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Bardstown",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Bardstown"
     },
     {
       "date": "2024-12-21",
@@ -357,6 +394,22 @@
     },
     {
       "date": "2024-12-06",
+      "opponent_id": "29985726132",
+      "opponent_career_id": "career_000120",
+      "opponent_name": "Lucas Wilcher",
+      "opponent_team": "Bardstown",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Bardstown"
+    },
+    {
+      "date": "2024-12-06",
       "opponent_id": "30370414132",
       "opponent_career_id": "career_001823",
       "opponent_name": "Bryce Alford",
@@ -370,22 +423,6 @@
       "score": null,
       "duration": "4:40",
       "event": "vs. Nelson County"
-    },
-    {
-      "date": "2024-12-06",
-      "opponent_id": "29985726132",
-      "opponent_career_id": "career_000120",
-      "opponent_name": "Lucas Wilcher",
-      "opponent_team": "Bardstown",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Bethlehem"
     }
   ],
   "career": {
@@ -400,15 +437,15 @@
       "season": 2025,
       "grade": 9,
       "team": "Bethlehem",
-      "record": "8-17",
+      "record": "8-16",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 8,
-    "losses": 17,
-    "win_pct": 0.32
+    "losses": 16,
+    "win_pct": 0.333
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

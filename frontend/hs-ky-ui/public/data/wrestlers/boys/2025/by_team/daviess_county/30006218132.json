@@ -5,6 +5,11 @@
   "team_slug": "daviess_county",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -21,8 +26,8 @@
     "df_plus": 100.0,
     "apr_plus": 100.0,
     "pin_rate": 0.542,
-    "bonus_rate": 0.75,
-    "majors": 3,
+    "bonus_rate": 0.792,
+    "majors": 4,
     "techs": 2,
     "pins": 13
   },
@@ -81,6 +86,22 @@
       "method": "FALL",
       "score": null,
       "duration": "3:46",
+      "event": "KHSAA Region 1"
+    },
+    {
+      "date": "2025-02-22",
+      "opponent_id": "30078321132",
+      "opponent_career_id": "career_001667",
+      "opponent_name": "Benjamin Kale",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DQ",
+      "score": null,
+      "duration": "7:00",
       "event": "KHSAA Region 1"
     },
     {
@@ -289,11 +310,11 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Daviess County"
+      "event": "vs. Apollo"
     },
     {
       "date": "2025-01-16",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_57e22c831057",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Owensboro Catholic",
@@ -325,7 +346,7 @@
     },
     {
       "date": "2025-01-15",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_ffe290adc6a5",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "South Warren",
@@ -338,6 +359,38 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. South Warren"
+    },
+    {
+      "date": "2025-01-15",
+      "opponent_id": "OUTSTATE_c11f13cdbeae",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Greenwood"
+    },
+    {
+      "date": "2025-01-15",
+      "opponent_id": "OUTSTATE_b33c2e25670f",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Warren Central",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Warren Central"
     },
     {
       "date": "2025-01-04",
@@ -389,18 +442,18 @@
     },
     {
       "date": "2024-12-28",
-      "opponent_id": "30223238132",
-      "opponent_career_id": "career_000897",
-      "opponent_name": "Gene Martin",
-      "opponent_team": "Fort Campbell",
+      "opponent_id": "29913641132",
+      "opponent_career_id": "career_000362",
+      "opponent_name": "Elijah Kirby",
+      "opponent_team": "Caldwell County",
       "opponent_team_rank": null,
-      "opponent_weight": 120,
+      "opponent_weight": 132,
       "opponent_rank": null,
       "weight_class": "132",
       "result": "W",
-      "method": "TF",
-      "score": "15-0",
-      "duration": "4:18",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:05",
       "event": "2024 Christian County Invitational"
     },
     {
@@ -414,9 +467,9 @@
       "opponent_rank": null,
       "weight_class": "132",
       "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:05",
+      "method": "MD",
+      "score": "13-1",
+      "duration": "7:00",
       "event": "2024 Christian County Invitational"
     },
     {
@@ -436,8 +489,24 @@
       "event": "2024 Christian County Invitational"
     },
     {
+      "date": "2024-12-28",
+      "opponent_id": "30223238132",
+      "opponent_career_id": "career_000897",
+      "opponent_name": "Gene Martin",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "4:18",
+      "event": "2024 Christian County Invitational"
+    },
+    {
       "date": "2024-12-17",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_0d024306c254",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Calloway County",
@@ -452,11 +521,11 @@
       "event": "vs. Calloway County"
     },
     {
-      "date": "2024-12-14",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "date": "2024-12-17",
+      "opponent_id": "OUTSTATE_ff7db33ebb7d",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
-      "opponent_team": "Trigg County",
+      "opponent_team": "Henderson County",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -465,7 +534,7 @@
       "method": "FF",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Trigg County"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2024-12-14",
@@ -484,6 +553,22 @@
       "event": "vs. Owensboro Catholic"
     },
     {
+      "date": "2024-12-14",
+      "opponent_id": "OUTSTATE_98a311a9229c",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Trigg County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Trigg County"
+    },
+    {
       "date": "2024-12-10",
       "opponent_id": "30053487132",
       "opponent_career_id": "career_000033",
@@ -497,7 +582,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Daviess County"
+      "event": "vs. Apollo"
     },
     {
       "date": "2024-12-10",
@@ -549,6 +634,22 @@
     },
     {
       "date": "2024-12-07",
+      "opponent_id": "29789300132",
+      "opponent_career_id": "career_001119",
+      "opponent_name": "Colton Ward",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Joe Cochran State Farm HCIWT"
+    },
+    {
+      "date": "2024-12-07",
       "opponent_id": "30398968132",
       "opponent_career_id": "career_002061",
       "opponent_name": "Dewayne Wills",
@@ -571,22 +672,6 @@
       "opponent_team": "Paducah Tilghman",
       "opponent_team_rank": null,
       "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Joe Cochran State Farm HCIWT"
-    },
-    {
-      "date": "2024-12-07",
-      "opponent_id": "29789300132",
-      "opponent_career_id": "career_001119",
-      "opponent_name": "Colton Ward",
-      "opponent_team": "Harrison County",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
       "opponent_rank": null,
       "weight_class": "132",
       "result": "W",
@@ -677,7 +762,7 @@
       "season": 2024,
       "grade": 10,
       "team": "Daviess County",
-      "record": "42-9",
+      "record": "41-9",
       "regional_place": 3,
       "state_place": null
     },
@@ -707,9 +792,9 @@
     }
   ],
   "career_record": {
-    "wins": 150,
+    "wins": 149,
     "losses": 66,
-    "win_pct": 0.694
+    "win_pct": 0.693
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

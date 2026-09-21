@@ -5,6 +5,11 @@
   "team_slug": "oldham_county",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
@@ -273,7 +278,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:29",
-      "event": "vs. Oldham County"
+      "event": "vs. Male"
+    },
+    {
+      "date": "2024-01-27",
+      "opponent_id": "25131995132",
+      "opponent_career_id": "career_003300",
+      "opponent_name": "Emanuele Messi",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:24",
+      "event": "vs. McCracken County"
     },
     {
       "date": "2024-01-27",
@@ -306,22 +327,6 @@
       "score": null,
       "duration": "0:51",
       "event": "vs. St. Xavier"
-    },
-    {
-      "date": "2024-01-27",
-      "opponent_id": "25131995132",
-      "opponent_career_id": "career_003300",
-      "opponent_name": "Emanuele Messi",
-      "opponent_team": "McCracken County",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:24",
-      "event": "vs. Oldham County"
     },
     {
       "date": "2024-01-20",
@@ -385,7 +390,7 @@
       "method": "DEC",
       "score": "12-11",
       "duration": "7:00",
-      "event": "vs. Oldham County"
+      "event": "vs. Conner"
     },
     {
       "date": "2024-01-13",
@@ -449,7 +454,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:04",
-      "event": "vs. Oldham County"
+      "event": "vs. North Hardin"
     },
     {
       "date": "2023-12-21",
@@ -469,38 +474,6 @@
     },
     {
       "date": "2023-12-20",
-      "opponent_id": "OUTSTATE_ed3605df2d4c",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Meade County"
-    },
-    {
-      "date": "2023-12-20",
-      "opponent_id": "25280310132",
-      "opponent_career_id": null,
-      "opponent_name": "Landen Adams",
-      "opponent_team": "Finneytown",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Finneytown"
-    },
-    {
-      "date": "2023-12-20",
       "opponent_id": "25452738132",
       "opponent_career_id": "career_004176",
       "opponent_name": "Shar`ron Walton",
@@ -513,7 +486,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Oldham County"
+      "event": "vs. John Hardin"
     },
     {
       "date": "2023-12-20",
@@ -529,7 +502,7 @@
       "method": "TF",
       "score": "15-0",
       "duration": "0:00",
-      "event": "vs. Oldham County"
+      "event": "vs. Nelson County"
     },
     {
       "date": "2023-12-20",
@@ -562,6 +535,38 @@
       "score": "12-4",
       "duration": "7:00",
       "event": "vs. Wayne County"
+    },
+    {
+      "date": "2023-12-20",
+      "opponent_id": "OUTSTATE_ed3605df2d4c",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Meade County"
+    },
+    {
+      "date": "2023-12-20",
+      "opponent_id": "25280310132",
+      "opponent_career_id": null,
+      "opponent_name": "Landen Adams",
+      "opponent_team": "Finneytown",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Finneytown"
     }
   ],
   "career": {
@@ -604,5 +609,5 @@
     "losses": 21,
     "win_pct": 0.734
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

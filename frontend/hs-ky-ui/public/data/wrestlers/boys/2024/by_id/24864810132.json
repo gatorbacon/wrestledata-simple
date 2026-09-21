@@ -5,6 +5,11 @@
   "team_slug": "ohio_county",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
@@ -20,9 +25,9 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.345,
-    "bonus_rate": 0.517,
-    "majors": 5,
+    "pin_rate": 0.357,
+    "bonus_rate": 0.5,
+    "majors": 4,
     "techs": 0,
     "pins": 10
   },
@@ -165,6 +170,22 @@
     },
     {
       "date": "2024-02-06",
+      "opponent_id": "25188722132",
+      "opponent_career_id": null,
+      "opponent_name": "Quentin Falls",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "North Oldham Mustang Classic"
+    },
+    {
+      "date": "2024-02-06",
       "opponent_id": "24655022132",
       "opponent_career_id": "career_004328",
       "opponent_name": "William Winn",
@@ -225,7 +246,7 @@
       "method": "DEC",
       "score": "7-6",
       "duration": "7:00",
-      "event": "vs. Ohio County"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2024-01-27",
@@ -241,7 +262,7 @@
       "method": "SV-1",
       "score": "9-7",
       "duration": "8:15",
-      "event": "vs. Ohio County"
+      "event": "vs. Moore"
     },
     {
       "date": "2024-01-27",
@@ -289,7 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:47",
-      "event": "vs. Ohio County"
+      "event": "vs. John Hardin"
     },
     {
       "date": "2024-01-06",
@@ -305,7 +326,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:12",
-      "event": "vs. Ohio County"
+      "event": "vs. Montgomery County"
     },
     {
       "date": "2024-01-06",
@@ -385,7 +406,39 @@
       "method": "DEC",
       "score": "8-3",
       "duration": "7:00",
-      "event": "vs. Ohio County"
+      "event": "vs. Henderson County"
+    },
+    {
+      "date": "2023-12-21",
+      "opponent_id": "25452597132",
+      "opponent_career_id": "career_001331",
+      "opponent_name": "Malcom Adams",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:33",
+      "event": "vs. John Hardin"
+    },
+    {
+      "date": "2023-12-21",
+      "opponent_id": "25298689132",
+      "opponent_career_id": "career_004254",
+      "opponent_name": "Conner Mercer",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:53",
+      "event": "vs. Nelson County"
     },
     {
       "date": "2023-12-21",
@@ -401,7 +454,7 @@
       "method": "DEC",
       "score": "6-1",
       "duration": "7:00",
-      "event": "vs. Ohio County"
+      "event": "vs. North Hardin"
     },
     {
       "date": "2023-12-21",
@@ -434,54 +487,6 @@
       "score": null,
       "duration": "1:43",
       "event": "vs. Thomas Nelson"
-    },
-    {
-      "date": "2023-12-21",
-      "opponent_id": "25452597132",
-      "opponent_career_id": "career_001331",
-      "opponent_name": "Malcom Adams",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:33",
-      "event": "vs. Ohio County"
-    },
-    {
-      "date": "2023-12-21",
-      "opponent_id": "25298689132",
-      "opponent_career_id": "career_004254",
-      "opponent_name": "Conner Mercer",
-      "opponent_team": "Nelson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:53",
-      "event": "vs. Ohio County"
-    },
-    {
-      "date": "2023-12-21",
-      "opponent_id": "24660011132",
-      "opponent_career_id": "career_003342",
-      "opponent_name": "Cole Hogan",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "MD",
-      "score": "16-4",
-      "duration": "7:00",
-      "event": "vs. North Oldham"
     },
     {
       "date": "2023-12-21",
@@ -529,7 +534,7 @@
       "method": "DEC",
       "score": "5-3",
       "duration": "7:00",
-      "event": "vs. Ohio County"
+      "event": "vs. Meade County"
     },
     {
       "date": "2023-12-20",
@@ -545,7 +550,23 @@
       "method": "MD",
       "score": "16-4",
       "duration": "7:00",
-      "event": "vs. Ohio County"
+      "event": "vs. North Oldham"
+    },
+    {
+      "date": "2023-12-09",
+      "opponent_id": "24694063132",
+      "opponent_career_id": "career_000049",
+      "opponent_name": "Colton Hardy",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-5",
+      "duration": "7:00",
+      "event": "king of the bluegrass"
     },
     {
       "date": "2023-12-09",
@@ -612,20 +633,20 @@
       "event": "king of the bluegrass"
     },
     {
-      "date": "2023-12-09",
-      "opponent_id": "24694063132",
-      "opponent_career_id": "career_000049",
-      "opponent_name": "Colton Hardy",
-      "opponent_team": "Apollo",
+      "date": "2023-12-02",
+      "opponent_id": "24882178132",
+      "opponent_career_id": "career_000374",
+      "opponent_name": "Cale Goodwin",
+      "opponent_team": "Caldwell County",
       "opponent_team_rank": null,
       "opponent_weight": 165,
       "opponent_rank": null,
       "weight_class": "165",
-      "result": "W",
-      "method": "DEC",
-      "score": "8-5",
-      "duration": "7:00",
-      "event": "king of the bluegrass"
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:32",
+      "event": "vs. Caldwell County"
     },
     {
       "date": "2023-12-02",
@@ -641,39 +662,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:29",
-      "event": "vs. Ohio County"
-    },
-    {
-      "date": "2023-12-02",
-      "opponent_id": "25261070132",
-      "opponent_career_id": "career_003333",
-      "opponent_name": "Joseph Estelita III",
-      "opponent_team": "North Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "DEC",
-      "score": "4-2",
-      "duration": "7:00",
-      "event": "vs. Ohio County"
-    },
-    {
-      "date": "2023-12-02",
-      "opponent_id": "24882178132",
-      "opponent_career_id": "career_000374",
-      "opponent_name": "Cale Goodwin",
-      "opponent_team": "Caldwell County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:22",
-      "event": "vs. Ohio County"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2023-12-02",
@@ -689,7 +678,23 @@
       "method": "DEC",
       "score": "12-10",
       "duration": "7:00",
-      "event": "vs. Ohio County"
+      "event": "vs. Meade County"
+    },
+    {
+      "date": "2023-12-02",
+      "opponent_id": "25261070132",
+      "opponent_career_id": "career_003333",
+      "opponent_name": "Joseph Estelita III",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
+      "duration": "7:00",
+      "event": "vs. North Hardin"
     },
     {
       "date": "2023-12-02",
@@ -721,23 +726,23 @@
       "method": "DEC",
       "score": "9-2",
       "duration": "7:00",
-      "event": "vs. Ohio County"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2023-11-25",
-      "opponent_id": "24661810132",
-      "opponent_career_id": "career_003473",
-      "opponent_name": "James Rhody",
-      "opponent_team": "Western Hills",
+      "opponent_id": "24658000132",
+      "opponent_career_id": "career_001537",
+      "opponent_name": "Grant Schnieder",
+      "opponent_team": "Madison Southern",
       "opponent_team_rank": null,
-      "opponent_weight": 157,
+      "opponent_weight": 175,
       "opponent_rank": null,
-      "weight_class": "165",
+      "weight_class": "175",
       "result": "L",
-      "method": "DEC",
-      "score": "9-7",
-      "duration": "7:00",
-      "event": "vs. Western Hills"
+      "method": "SV-1",
+      "score": "6-4",
+      "duration": "8:15",
+      "event": "vs. Madison Southern"
     },
     {
       "date": "2023-11-25",
@@ -757,6 +762,22 @@
     },
     {
       "date": "2023-11-25",
+      "opponent_id": "24661810132",
+      "opponent_career_id": "career_003473",
+      "opponent_name": "James Rhody",
+      "opponent_team": "Western Hills",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "9-7",
+      "duration": "7:00",
+      "event": "vs. Western Hills"
+    },
+    {
+      "date": "2023-11-25",
       "opponent_id": "25112239132",
       "opponent_career_id": "career_002470",
       "opponent_name": "Parker Smith",
@@ -770,22 +791,6 @@
       "score": "4-3",
       "duration": "7:00",
       "event": "vs. Simon Kenton"
-    },
-    {
-      "date": "2023-11-25",
-      "opponent_id": "24658000132",
-      "opponent_career_id": "career_001537",
-      "opponent_name": "Grant Schnieder",
-      "opponent_team": "Madison Southern",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "SV-1",
-      "score": "6-4",
-      "duration": "8:15",
-      "event": "vs. Ohio County"
     }
   ],
   "career": {
@@ -828,5 +833,5 @@
     "losses": 38,
     "win_pct": 0.648
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

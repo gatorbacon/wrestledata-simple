@@ -5,6 +5,11 @@
   "team_slug": "north_bullitt",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -53,7 +58,7 @@
     },
     {
       "date": "2025-02-05",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_e3abb11bd61d",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Shawnee",
@@ -66,6 +71,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Shawnee"
+    },
+    {
+      "date": "2025-02-05",
+      "opponent_id": "OUTSTATE_f7a759a6e967",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Valley"
     },
     {
       "date": "2025-02-01",
@@ -145,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. North Bullitt"
+      "event": "vs. Bullitt Central"
     },
     {
       "date": "2025-01-29",
@@ -161,7 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. North Bullitt"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2025-01-25",
@@ -177,11 +198,11 @@
       "method": "FALL",
       "score": null,
       "duration": "1:29",
-      "event": "vs. North Bullitt"
+      "event": "vs. Caldwell County"
     },
     {
       "date": "2025-01-25",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_3884a8e8baf5",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Pulaski County",
@@ -194,22 +215,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Pulaski County"
-    },
-    {
-      "date": "2025-01-22",
-      "opponent_id": "29905135132",
-      "opponent_career_id": "career_002629",
-      "opponent_name": "Aiden Trammell",
-      "opponent_team": "Spencer County",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Spencer County"
     },
     {
       "date": "2025-01-22",
@@ -228,6 +233,22 @@
       "event": "vs. Southern"
     },
     {
+      "date": "2025-01-22",
+      "opponent_id": "29905135132",
+      "opponent_career_id": "career_002629",
+      "opponent_name": "Aiden Trammell",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Spencer County"
+    },
+    {
       "date": "2025-01-17",
       "opponent_id": "29985727132",
       "opponent_career_id": "career_000123",
@@ -241,7 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. North Bullitt"
+      "event": "vs. Bardstown"
     },
     {
       "date": "2025-01-17",
@@ -257,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. North Bullitt"
+      "event": "vs. Bethlehem"
     },
     {
       "date": "2025-01-17",
@@ -277,22 +298,6 @@
     },
     {
       "date": "2024-12-14",
-      "opponent_id": "30370391132",
-      "opponent_career_id": "career_001833",
-      "opponent_name": "Jaxon Cox",
-      "opponent_team": "Nelson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:25",
-      "event": "King of the Bluegrass"
-    },
-    {
-      "date": "2024-12-14",
       "opponent_id": "30609832132",
       "opponent_career_id": "career_000871",
       "opponent_name": "James White",
@@ -305,6 +310,22 @@
       "method": "DQ",
       "score": null,
       "duration": "7:00",
+      "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2024-12-14",
+      "opponent_id": "30370391132",
+      "opponent_career_id": "career_001833",
+      "opponent_name": "Jaxon Cox",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:25",
       "event": "King of the Bluegrass"
     },
     {
@@ -337,11 +358,11 @@
       "method": "FALL",
       "score": null,
       "duration": "0:57",
-      "event": "vs. North Bullitt"
+      "event": "vs. Bardstown"
     },
     {
       "date": "2024-12-11",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_bddbdc615208",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Hart County",
@@ -369,7 +390,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. North Bullitt"
+      "event": "vs. Ballard"
     },
     {
       "date": "2024-12-07",
@@ -385,7 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:30",
-      "event": "vs. North Bullitt"
+      "event": "vs. Central"
     },
     {
       "date": "2024-12-07",
@@ -401,11 +422,11 @@
       "method": "FALL",
       "score": null,
       "duration": "1:21",
-      "event": "vs. North Bullitt"
+      "event": "vs. Male"
     },
     {
       "date": "2024-12-07",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_ab3b37a09a95",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Desales",
@@ -451,5 +472,5 @@
     "losses": 24,
     "win_pct": 0.385
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

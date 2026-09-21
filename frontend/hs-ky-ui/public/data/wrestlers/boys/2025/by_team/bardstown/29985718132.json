@@ -5,10 +5,15 @@
   "team_slug": "bardstown",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
-    "overall": "20-25",
+    "overall": "20-26",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.778,
+    "pin_rate": 0.75,
+    "bonus_rate": 0.875,
     "majors": 0,
     "techs": 1,
     "pins": 6
@@ -37,7 +42,7 @@
   "match_list": [
     {
       "date": "2025-01-28",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_6abc6a5a6886",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Danville",
@@ -69,7 +74,23 @@
     },
     {
       "date": "2025-01-25",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "30354986132",
+      "opponent_career_id": "career_002232",
+      "opponent_name": "Reego Cabrera",
+      "opponent_team": "Pulaski County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": "7-3",
+      "duration": "7:00",
+      "event": "vs. Pulaski County"
+    },
+    {
+      "date": "2025-01-25",
+      "opponent_id": "OUTSTATE_d11d1b4317fe",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Thomas Nelson",
@@ -101,19 +122,19 @@
     },
     {
       "date": "2025-01-25",
-      "opponent_id": "30354986132",
-      "opponent_career_id": "career_002232",
-      "opponent_name": "Reego Cabrera",
-      "opponent_team": "Pulaski County",
+      "opponent_id": "OUTSTATE_8f1cfecd6b5a",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Campbellsville",
       "opponent_team_rank": null,
-      "opponent_weight": 138,
+      "opponent_weight": null,
       "opponent_rank": null,
-      "weight_class": "138",
+      "weight_class": "132",
       "result": "W",
-      "method": "DEC",
-      "score": "7-3",
+      "method": "FF",
+      "score": null,
       "duration": "7:00",
-      "event": "vs. Pulaski County"
+      "event": "vs. Campbellsville"
     },
     {
       "date": "2025-01-23",
@@ -197,6 +218,22 @@
     },
     {
       "date": "2025-01-18",
+      "opponent_id": "OUTSTATE_f168e9c3cbeb",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Fort Knox",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Fort Knox"
+    },
+    {
+      "date": "2025-01-18",
       "opponent_id": "30216967132",
       "opponent_career_id": "career_001053",
       "opponent_name": "Hunter Lomas",
@@ -210,22 +247,6 @@
       "score": null,
       "duration": "1:20",
       "event": "vs. Green County"
-    },
-    {
-      "date": "2025-01-18",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Fort Knox",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Fort Knox"
     },
     {
       "date": "2025-01-18",
@@ -245,7 +266,7 @@
     },
     {
       "date": "2025-01-17",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_17200c877caa",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Mercer County",
@@ -293,22 +314,6 @@
     },
     {
       "date": "2025-01-14",
-      "opponent_id": "30159129132",
-      "opponent_career_id": "career_000634",
-      "opponent_name": "Nathan Myers",
-      "opponent_team": "Danville",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:22",
-      "event": "vs. Danville"
-    },
-    {
-      "date": "2025-01-14",
       "opponent_id": "30048916132",
       "opponent_career_id": "career_002412",
       "opponent_name": "Alejandro Marrero",
@@ -322,6 +327,22 @@
       "score": null,
       "duration": "0:17",
       "event": "vs. Seneca"
+    },
+    {
+      "date": "2025-01-14",
+      "opponent_id": "30159129132",
+      "opponent_career_id": "career_000634",
+      "opponent_name": "Nathan Myers",
+      "opponent_team": "Danville",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:22",
+      "event": "vs. Danville"
     },
     {
       "date": "2025-01-04",
@@ -341,7 +362,7 @@
     },
     {
       "date": "2025-01-04",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_41aefcb082e1",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "West Carter",
@@ -385,7 +406,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Bardstown"
+      "event": "vs. Nelson County"
+    },
+    {
+      "date": "2025-01-03",
+      "opponent_id": "OUTSTATE_0d024306c254",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Calloway County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Calloway County"
     },
     {
       "date": "2025-01-03",
@@ -402,22 +439,6 @@
       "score": null,
       "duration": "0:40",
       "event": "vs. Fort Knox"
-    },
-    {
-      "date": "2025-01-03",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Calloway County",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Calloway County"
     },
     {
       "date": "2025-01-03",
@@ -485,22 +506,6 @@
     },
     {
       "date": "2024-12-21",
-      "opponent_id": "-1",
-      "opponent_career_id": null,
-      "opponent_name": "Saint Louis",
-      "opponent_team": "Valley",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:42",
-      "event": "Jefff Classic"
-    },
-    {
-      "date": "2024-12-21",
       "opponent_id": "OUTSTATE_3428152a8181",
       "opponent_career_id": null,
       "opponent_name": "Forfeit Forfeit",
@@ -513,6 +518,22 @@
       "method": "FF",
       "score": null,
       "duration": "7:00",
+      "event": "Jefff Classic"
+    },
+    {
+      "date": "2024-12-21",
+      "opponent_id": "-1",
+      "opponent_career_id": null,
+      "opponent_name": "Saint Louis",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:42",
       "event": "Jefff Classic"
     },
     {
@@ -629,7 +650,7 @@
     },
     {
       "date": "2024-12-14",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_2c903e25261d",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Bourbon County",
@@ -661,7 +682,7 @@
     },
     {
       "date": "2024-12-11",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_bddbdc615208",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Hart County",
@@ -778,7 +799,7 @@
       "season": 2025,
       "grade": 10,
       "team": "Bardstown",
-      "record": "20-25",
+      "record": "20-26",
       "regional_place": null,
       "state_place": null
     },
@@ -793,8 +814,8 @@
   ],
   "career_record": {
     "wins": 42,
-    "losses": 51,
-    "win_pct": 0.452
+    "losses": 52,
+    "win_pct": 0.447
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

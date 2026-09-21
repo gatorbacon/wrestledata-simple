@@ -5,13 +5,18 @@
   "team_slug": "ohio_county",
   "team_rank": 48,
   "weight_class": 150,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 28,
   "record": {
     "overall": "24-11",
-    "vs_ranked": "20-10",
+    "vs_ranked": "20-11",
     "vs_top10": "0-3",
-    "vs_top25": "0-6"
+    "vs_top25": "0-7"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,7 +33,7 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 20,
-    "ranked_losses": 10,
+    "ranked_losses": 11,
     "top10_wins": 0,
     "top10_losses": 3,
     "win_over_highest_rank": {
@@ -107,7 +112,7 @@
       "method": "TF",
       "score": "18-3",
       "duration": "0:00",
-      "event": "vs. Ohio County"
+      "event": "vs. Christian County"
     },
     {
       "date": "2026-01-19",
@@ -175,22 +180,6 @@
     },
     {
       "date": "2026-01-17",
-      "opponent_id": "34989037132",
-      "opponent_career_id": "career_002065",
-      "opponent_name": "Jaylin Bellamy",
-      "opponent_team": "Paducah Tilghman",
-      "opponent_team_rank": 5,
-      "opponent_weight": 144,
-      "opponent_rank": 2,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:39",
-      "event": "Steve Johnston Memorial Invitational"
-    },
-    {
-      "date": "2026-01-17",
       "opponent_id": "35280104132",
       "opponent_career_id": "career_004751",
       "opponent_name": "Jackson Clark",
@@ -222,6 +211,22 @@
       "event": "Steve Johnston Memorial Invitational"
     },
     {
+      "date": "2026-01-17",
+      "opponent_id": "34989037132",
+      "opponent_career_id": "career_002065",
+      "opponent_name": "Jaylin Bellamy",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": 5,
+      "opponent_weight": 144,
+      "opponent_rank": 2,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:39",
+      "event": "Steve Johnston Memorial Invitational"
+    },
+    {
       "date": "2026-01-13",
       "opponent_id": "35133607132",
       "opponent_career_id": "career_001267",
@@ -235,7 +240,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:46",
-      "event": "vs. Ohio County"
+      "event": "vs. Hopkinsville"
     },
     {
       "date": "2026-01-10",
@@ -331,7 +336,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:20",
-      "event": "vs. Ohio County"
+      "event": "vs. Greenwood"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "36868040132",
+      "opponent_career_id": "career_005332",
+      "opponent_name": "Cameron McCord",
+      "opponent_team": "Danville",
+      "opponent_team_rank": 68,
+      "opponent_weight": 150,
+      "opponent_rank": 257,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:56",
+      "event": "Warhawk Classic"
     },
     {
       "date": "2026-01-03",
@@ -366,22 +387,6 @@
       "event": "Warhawk Classic"
     },
     {
-      "date": "2026-01-03",
-      "opponent_id": "36868040132",
-      "opponent_career_id": "career_005332",
-      "opponent_name": "Cameron McCord",
-      "opponent_team": "Danville",
-      "opponent_team_rank": 68,
-      "opponent_weight": 150,
-      "opponent_rank": 257,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:56",
-      "event": "Warhawk Classic"
-    },
-    {
       "date": "2025-12-13",
       "opponent_id": "35283899132",
       "opponent_career_id": "career_000813",
@@ -395,22 +400,6 @@
       "method": "FALL",
       "score": null,
       "duration": "1:42",
-      "event": "King of the Bluegrass"
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "35618246132",
-      "opponent_career_id": "career_002831",
-      "opponent_name": "Justyce Gullion",
-      "opponent_team": "Valley",
-      "opponent_team_rank": 135,
-      "opponent_weight": 144,
-      "opponent_rank": 65,
-      "weight_class": "150",
-      "result": "W",
-      "method": "TF",
-      "score": "18-3",
-      "duration": "2:50",
       "event": "King of the Bluegrass"
     },
     {
@@ -446,6 +435,38 @@
       "event": "King of the Bluegrass"
     },
     {
+      "date": "2025-12-13",
+      "opponent_id": "35618246132",
+      "opponent_career_id": "career_002831",
+      "opponent_name": "Justyce Gullion",
+      "opponent_team": "Valley",
+      "opponent_team_rank": 135,
+      "opponent_weight": 144,
+      "opponent_rank": 65,
+      "weight_class": "150",
+      "result": "W",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "2:50",
+      "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35284253132",
+      "opponent_career_id": "career_002759",
+      "opponent_name": "Hunter Kennedy",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": 134,
+      "opponent_weight": 150,
+      "opponent_rank": 15,
+      "weight_class": "150",
+      "result": "L",
+      "method": "TB-1",
+      "score": "8-7",
+      "duration": "10:00",
+      "event": "King of the Bluegrass"
+    },
+    {
       "date": "2025-12-04",
       "opponent_id": "35192414132",
       "opponent_career_id": "career_005510",
@@ -459,7 +480,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:48",
-      "event": "vs. Ohio County"
+      "event": "vs. Logan County"
     },
     {
       "date": "2025-11-29",
@@ -527,6 +548,22 @@
     },
     {
       "date": "2025-11-26",
+      "opponent_id": "35281689132",
+      "opponent_career_id": "career_001673",
+      "opponent_name": "Ethan Wilson",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": 108,
+      "opponent_weight": 157,
+      "opponent_rank": 72,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:53",
+      "event": "vs. McCracken County"
+    },
+    {
+      "date": "2025-11-26",
       "opponent_id": "35119928132",
       "opponent_career_id": null,
       "opponent_name": "Jacob Gorman",
@@ -540,22 +577,6 @@
       "score": "7-0",
       "duration": "7:00",
       "event": "vs. Rossview High School"
-    },
-    {
-      "date": "2025-11-26",
-      "opponent_id": "35661914132",
-      "opponent_career_id": null,
-      "opponent_name": "Brycen Riggan",
-      "opponent_team": "Mt. Vernon",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:20",
-      "event": "vs. Mt. Vernon"
     },
     {
       "date": "2025-11-26",
@@ -575,19 +596,19 @@
     },
     {
       "date": "2025-11-26",
-      "opponent_id": "35281689132",
-      "opponent_career_id": "career_001673",
-      "opponent_name": "Ethan Wilson",
-      "opponent_team": "McCracken County",
-      "opponent_team_rank": 108,
-      "opponent_weight": 157,
-      "opponent_rank": 72,
+      "opponent_id": "35661914132",
+      "opponent_career_id": null,
+      "opponent_name": "Brycen Riggan",
+      "opponent_team": "Mt. Vernon",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:53",
-      "event": "vs. Ohio County"
+      "duration": "3:20",
+      "event": "vs. Mt. Vernon"
     }
   ],
   "career": {
@@ -621,7 +642,7 @@
       "season": 2024,
       "grade": 8,
       "team": "Ohio County",
-      "record": "28-12",
+      "record": "28-14",
       "regional_place": null,
       "state_place": null
     },
@@ -629,15 +650,15 @@
       "season": 2023,
       "grade": 7,
       "team": "Ohio County",
-      "record": "13-11",
+      "record": "14-11",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 69,
-    "losses": 35,
-    "win_pct": 0.663
+    "wins": 70,
+    "losses": 37,
+    "win_pct": 0.654
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

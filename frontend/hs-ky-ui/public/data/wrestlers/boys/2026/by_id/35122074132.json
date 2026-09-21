@@ -5,13 +5,18 @@
   "team_slug": "oldham_county",
   "team_rank": 113,
   "weight_class": 165,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 42,
   "record": {
     "overall": "23-14",
-    "vs_ranked": "13-12",
-    "vs_top10": "0-4",
-    "vs_top25": "0-8"
+    "vs_ranked": "13-11",
+    "vs_top10": "0-3",
+    "vs_top25": "0-7"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,9 +33,9 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 13,
-    "ranked_losses": 12,
+    "ranked_losses": 11,
     "top10_wins": 0,
-    "top10_losses": 4,
+    "top10_losses": 3,
     "win_over_highest_rank": {
       "opponent_id": "35623017132",
       "opponent_rank": 47,
@@ -186,7 +191,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "1:00",
+      "duration": "0:45",
       "event": "vs. Union County"
     },
     {
@@ -219,12 +224,12 @@
       "method": "FALL",
       "score": null,
       "duration": "0:17",
-      "event": "vs. Oldham County"
+      "event": "vs. Moore"
     },
     {
       "date": "2026-01-14",
       "opponent_id": "35099627132",
-      "opponent_career_id": null,
+      "opponent_career_id": "career_007520",
       "opponent_name": "peyton knotts",
       "opponent_team": "Spencer County",
       "opponent_team_rank": 29,
@@ -251,7 +256,7 @@
       "method": "TF",
       "score": "19-3",
       "duration": "0:00",
-      "event": "vs. Oldham County"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2026-01-07",
@@ -303,38 +308,6 @@
     },
     {
       "date": "2025-12-30",
-      "opponent_id": "35773519132",
-      "opponent_career_id": "career_001350",
-      "opponent_name": "Zac Scott",
-      "opponent_team": "Johnson Central",
-      "opponent_team_rank": 2,
-      "opponent_weight": 157,
-      "opponent_rank": 5,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:20",
-      "event": "Boys Hatfield McCoy 32 2025"
-    },
-    {
-      "date": "2025-12-30",
-      "opponent_id": "35721995132",
-      "opponent_career_id": "career_002179",
-      "opponent_name": "Kameron Akers",
-      "opponent_team": "Prestonsburg",
-      "opponent_team_rank": 120,
-      "opponent_weight": 157,
-      "opponent_rank": 78,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:55",
-      "event": "Boys Hatfield McCoy 32 2025"
-    },
-    {
-      "date": "2025-12-30",
       "opponent_id": "35518109132",
       "opponent_career_id": "career_005217",
       "opponent_name": "Levi Gibbons",
@@ -363,6 +336,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:11",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35773519132",
+      "opponent_career_id": "career_001350",
+      "opponent_name": "Zac Scott",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": 2,
+      "opponent_weight": 157,
+      "opponent_rank": 5,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:20",
       "event": "Boys Hatfield McCoy 32 2025"
     },
     {
@@ -415,6 +404,22 @@
     },
     {
       "date": "2025-12-30",
+      "opponent_id": "35721995132",
+      "opponent_career_id": "career_002179",
+      "opponent_name": "Kameron Akers",
+      "opponent_team": "Prestonsburg",
+      "opponent_team_rank": 120,
+      "opponent_weight": 157,
+      "opponent_rank": 78,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:55",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
       "opponent_id": "35459311132",
       "opponent_career_id": "career_002281",
       "opponent_name": "Issac Clark",
@@ -428,22 +433,6 @@
       "score": null,
       "duration": "3:55",
       "event": "Boys Hatfield McCoy 32 2025"
-    },
-    {
-      "date": "2025-12-29",
-      "opponent_id": "35773519132",
-      "opponent_career_id": "career_001350",
-      "opponent_name": "Zac Scott",
-      "opponent_team": "Johnson Central",
-      "opponent_team_rank": 2,
-      "opponent_weight": 157,
-      "opponent_rank": 5,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "HATFIELD-MCCOY 32"
     },
     {
       "date": "2025-12-20",
@@ -555,7 +544,7 @@
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "vs. Oldham County"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2025-12-17",
@@ -587,23 +576,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Oldham County"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35226175132",
-      "opponent_career_id": "career_001833",
-      "opponent_name": "Jaxon Cox",
-      "opponent_team": "Nelson County",
-      "opponent_team_rank": 21,
-      "opponent_weight": 157,
-      "opponent_rank": 18,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Oldham County"
+      "event": "vs. Green County"
     },
     {
       "date": "2025-12-06",
@@ -619,7 +592,23 @@
       "method": "TF",
       "score": "24-9",
       "duration": "0:00",
-      "event": "vs. Oldham County"
+      "event": "vs. LaRue County"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35226175132",
+      "opponent_career_id": "career_001833",
+      "opponent_name": "Jaxon Cox",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 21,
+      "opponent_weight": 157,
+      "opponent_rank": 18,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Nelson County"
     },
     {
       "date": "2025-12-03",
@@ -694,5 +683,5 @@
     "losses": 35,
     "win_pct": 0.507
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,6 +5,11 @@
   "team_slug": "campbell_county",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.4,
-    "bonus_rate": 0.6,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.75,
     "majors": 1,
     "techs": 0,
     "pins": 2
@@ -165,7 +170,7 @@
     },
     {
       "date": "2025-01-21",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_2b0112c6bdd4",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Taylor High School",
@@ -241,23 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Campbell County"
-    },
-    {
-      "date": "2025-01-04",
-      "opponent_id": "29789141132",
-      "opponent_career_id": "career_000843",
-      "opponent_name": "zade alshabot",
-      "opponent_team": "Fairdale",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "DEC",
-      "score": "13-7",
-      "duration": "7:00",
-      "event": "vs. Fairdale"
+      "event": "vs. Bardstown"
     },
     {
       "date": "2025-01-04",
@@ -274,6 +263,22 @@
       "score": null,
       "duration": "0:50",
       "event": "vs. Mason County"
+    },
+    {
+      "date": "2025-01-04",
+      "opponent_id": "29789141132",
+      "opponent_career_id": "career_000843",
+      "opponent_name": "zade alshabot",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "13-7",
+      "duration": "7:00",
+      "event": "vs. Fairdale"
     },
     {
       "date": "2024-12-28",
@@ -357,22 +362,6 @@
     },
     {
       "date": "2024-12-20",
-      "opponent_id": "30239155132",
-      "opponent_career_id": null,
-      "opponent_name": "Ben Charles",
-      "opponent_team": "Eaton High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:34",
-      "event": "vs. Eaton High School"
-    },
-    {
-      "date": "2024-12-20",
       "opponent_id": "30524614132",
       "opponent_career_id": null,
       "opponent_name": "Finnegan Denehy",
@@ -386,6 +375,22 @@
       "score": null,
       "duration": "1:49",
       "event": "vs. Clinton-Massie High School"
+    },
+    {
+      "date": "2024-12-20",
+      "opponent_id": "30239155132",
+      "opponent_career_id": null,
+      "opponent_name": "Ben Charles",
+      "opponent_team": "Eaton High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:34",
+      "event": "vs. Eaton High School"
     },
     {
       "date": "2024-12-20",
@@ -405,7 +410,7 @@
     },
     {
       "date": "2024-12-20",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_9764653a1264",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Blanchester High School",
@@ -437,19 +442,19 @@
     },
     {
       "date": "2024-12-20",
-      "opponent_id": "30135278132",
+      "opponent_id": "OUTSTATE_746ca7f9001b",
       "opponent_career_id": null,
-      "opponent_name": "Ely Roetting",
-      "opponent_team": "Monroe High School",
+      "opponent_name": "Unknown",
+      "opponent_team": "Batavia High School",
       "opponent_team_rank": null,
-      "opponent_weight": 165,
+      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "165",
       "result": "W",
-      "method": "MD",
-      "score": "14-0",
+      "method": "FF",
+      "score": null,
       "duration": "7:00",
-      "event": "vs. Monroe High School"
+      "event": "vs. Batavia High School"
     },
     {
       "date": "2024-12-20",
@@ -468,20 +473,20 @@
       "event": "vs. Reading Jr./Sr. High School"
     },
     {
-      "date": "2024-12-14",
-      "opponent_id": "29788819132",
-      "opponent_career_id": "career_001800",
-      "opponent_name": "Brody McKune",
-      "opponent_team": "Moore",
+      "date": "2024-12-20",
+      "opponent_id": "30135278132",
+      "opponent_career_id": null,
+      "opponent_name": "Ely Roetting",
+      "opponent_team": "Monroe High School",
       "opponent_team_rank": null,
-      "opponent_weight": 157,
+      "opponent_weight": 165,
       "opponent_rank": null,
       "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:25",
-      "event": "2024 Ryle Raider Rumble"
+      "result": "W",
+      "method": "MD",
+      "score": "14-0",
+      "duration": "7:00",
+      "event": "vs. Monroe High School"
     },
     {
       "date": "2024-12-14",
@@ -497,6 +502,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:22",
+      "event": "2024 Ryle Raider Rumble"
+    },
+    {
+      "date": "2024-12-14",
+      "opponent_id": "29788819132",
+      "opponent_career_id": "career_001800",
+      "opponent_name": "Brody McKune",
+      "opponent_team": "Moore",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:25",
       "event": "2024 Ryle Raider Rumble"
     },
     {
@@ -533,7 +554,7 @@
     },
     {
       "date": "2024-12-07",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_b8d1490a1654",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Western Hills",
@@ -595,5 +616,5 @@
     "losses": 27,
     "win_pct": 0.25
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

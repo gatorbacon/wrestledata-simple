@@ -5,6 +5,11 @@
   "team_slug": "dupont_manual",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
@@ -177,7 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:52",
-      "event": "vs. Dupont Manual"
+      "event": "vs. Central"
     },
     {
       "date": "2024-01-31",
@@ -194,22 +199,6 @@
       "score": null,
       "duration": "0:32",
       "event": "vs. Shawnee"
-    },
-    {
-      "date": "2023-12-16",
-      "opponent_id": "25294258132",
-      "opponent_career_id": "career_004426",
-      "opponent_name": "Test Test1",
-      "opponent_team": "Test Team",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:25",
-      "event": "vs. Tournament Team 3"
     },
     {
       "date": "2023-12-16",
@@ -242,6 +231,22 @@
       "score": null,
       "duration": "1:03",
       "event": "vs. St. Xavier"
+    },
+    {
+      "date": "2023-12-16",
+      "opponent_id": "25294258132",
+      "opponent_career_id": "career_004426",
+      "opponent_name": "Test Test1",
+      "opponent_team": "Test Team",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:25",
+      "event": "vs. Tournament Team 3"
     },
     {
       "date": "2023-12-16",
@@ -280,12 +285,21 @@
     "career_id": "career_000761",
     "canonical_name": "Darien Allen",
     "seasons": [
+      2026,
       2025,
       2024,
       2023
     ]
   },
   "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Dupont Manual",
+      "record": "19-3",
+      "regional_place": 1,
+      "state_place": 5
+    },
     {
       "season": 2025,
       "grade": 11,
@@ -312,9 +326,9 @@
     }
   ],
   "career_record": {
-    "wins": 79,
-    "losses": 14,
-    "win_pct": 0.849
+    "wins": 98,
+    "losses": 17,
+    "win_pct": 0.852
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "lakota_east",
   "team_rank": null,
   "weight_class": 215,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
-    "overall": "3-0",
+    "overall": "4-0",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 1.0,
-    "bonus_rate": 1.0,
+    "pin_rate": 0.75,
+    "bonus_rate": 0.75,
     "majors": 0,
     "techs": 0,
     "pins": 3
@@ -49,7 +54,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. LAKOTA EAST"
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2024-01-13",
@@ -69,6 +74,22 @@
     },
     {
       "date": "2023-12-16",
+      "opponent_id": "24927560132",
+      "opponent_career_id": "career_003213",
+      "opponent_name": "Joaquin Solis",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "DEC",
+      "score": "3-2",
+      "duration": "7:00",
+      "event": "Edgewood Invitational"
+    },
+    {
+      "date": "2023-12-16",
       "opponent_id": "25112625132",
       "opponent_career_id": "career_003392",
       "opponent_name": "Steven Graham",
@@ -84,5 +105,5 @@
       "event": "Edgewood Invitational"
     }
   ],
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

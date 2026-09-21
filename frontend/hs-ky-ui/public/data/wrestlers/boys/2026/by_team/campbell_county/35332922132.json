@@ -5,6 +5,11 @@
   "team_slug": "campbell_county",
   "team_rank": 9,
   "weight_class": 157,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 99,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.75,
-    "bonus_rate": 0.75,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
     "pins": 3
@@ -79,22 +84,6 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "35122072132",
-      "opponent_career_id": "career_001980",
-      "opponent_name": "Jaxon Clary",
-      "opponent_team": "Oldham County",
-      "opponent_team_rank": 113,
-      "opponent_weight": 144,
-      "opponent_rank": 27,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Oldham County"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "34993874132",
       "opponent_career_id": "career_001059",
       "opponent_name": "Brendan Martin",
@@ -127,6 +116,22 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "35122072132",
+      "opponent_career_id": "career_001980",
+      "opponent_name": "Jaxon Clary",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": 113,
+      "opponent_weight": 144,
+      "opponent_rank": 27,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Oldham County"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "OUTSTATE_96f39b83cd37",
       "opponent_career_id": null,
       "opponent_name": "Boomer Hester",
@@ -140,22 +145,6 @@
       "score": null,
       "duration": "0:42",
       "event": "vs. Charlestown"
-    },
-    {
-      "date": "2025-11-29",
-      "opponent_id": "35181017132",
-      "opponent_career_id": "career_004756",
-      "opponent_name": "Nick Thomas",
-      "opponent_team": "Danville",
-      "opponent_team_rank": 68,
-      "opponent_weight": 150,
-      "opponent_rank": 228,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:30",
-      "event": "Tommy Castle Classic"
     },
     {
       "date": "2025-11-29",
@@ -203,6 +192,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:32",
+      "event": "Tommy Castle Classic"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35181017132",
+      "opponent_career_id": "career_004756",
+      "opponent_name": "Nick Thomas",
+      "opponent_team": "Danville",
+      "opponent_team_rank": 68,
+      "opponent_weight": 150,
+      "opponent_rank": 228,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:30",
       "event": "Tommy Castle Classic"
     },
     {
@@ -260,5 +265,5 @@
     "losses": 7,
     "win_pct": 0.417
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

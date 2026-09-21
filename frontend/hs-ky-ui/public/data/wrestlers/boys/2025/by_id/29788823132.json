@@ -5,6 +5,11 @@
   "team_slug": "moore",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,10 +25,10 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.167,
-    "bonus_rate": 0.933,
+    "pin_rate": 0.161,
+    "bonus_rate": 0.935,
     "majors": 3,
-    "techs": 20,
+    "techs": 21,
     "pins": 5
   },
   "opponent_breakdown": {
@@ -181,6 +186,22 @@
     },
     {
       "date": "2025-02-22",
+      "opponent_id": "29934552132",
+      "opponent_career_id": "career_001304",
+      "opponent_name": "Jordan Lawless",
+      "opponent_team": "Jeffersontown",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "2:03",
+      "event": "KHSAA Region 4"
+    },
+    {
+      "date": "2025-02-22",
       "opponent_id": "29804364132",
       "opponent_career_id": "career_001936",
       "opponent_name": "Jake Lutgen",
@@ -209,7 +230,7 @@
       "method": "DEC",
       "score": "7-1",
       "duration": "7:00",
-      "event": "vs. Moore"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2025-02-08",
@@ -225,11 +246,11 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Moore"
+      "event": "vs. Madison Central"
     },
     {
       "date": "2025-02-08",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_f168e9c3cbeb",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Fort Knox",
@@ -242,6 +263,54 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Fort Knox"
+    },
+    {
+      "date": "2025-02-08",
+      "opponent_id": "OUTSTATE_443ae202f765",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Rowan County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Rowan County"
+    },
+    {
+      "date": "2025-02-08",
+      "opponent_id": "OUTSTATE_b8d1490a1654",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Western Hills",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Western Hills"
+    },
+    {
+      "date": "2025-02-08",
+      "opponent_id": "OUTSTATE_f8e9576dd2c3",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Boyd County"
     },
     {
       "date": "2025-02-01",
@@ -257,23 +326,7 @@
       "method": "TF",
       "score": "17-2",
       "duration": "1:55",
-      "event": "vs. Moore"
-    },
-    {
-      "date": "2025-02-01",
-      "opponent_id": "29948516132",
-      "opponent_career_id": "career_000994",
-      "opponent_name": "Brock Heidle",
-      "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "TF",
-      "score": "15-0",
-      "duration": "0:00",
-      "event": "vs. Moore"
+      "event": "vs. Central"
     },
     {
       "date": "2025-02-01",
@@ -289,7 +342,23 @@
       "method": "TF",
       "score": "18-2",
       "duration": "3:39",
-      "event": "vs. Moore"
+      "event": "vs. Conner"
+    },
+    {
+      "date": "2025-02-01",
+      "opponent_id": "29948516132",
+      "opponent_career_id": "career_000994",
+      "opponent_name": "Brock Heidle",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "0:00",
+      "event": "vs. George Rogers Clark"
     },
     {
       "date": "2025-02-01",
@@ -321,7 +390,7 @@
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "vs. Moore"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2025-01-25",
@@ -337,7 +406,7 @@
       "method": "TF",
       "score": "17-2",
       "duration": "4:48",
-      "event": "vs. Moore"
+      "event": "vs. Christian County"
     },
     {
       "date": "2025-01-25",
@@ -353,7 +422,7 @@
       "method": "MD",
       "score": "14-5",
       "duration": "7:00",
-      "event": "vs. Moore"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2025-01-25",
@@ -385,7 +454,7 @@
       "method": "TF",
       "score": "17-2",
       "duration": "2:24",
-      "event": "vs. Moore"
+      "event": "vs. Central"
     },
     {
       "date": "2025-01-16",
@@ -709,5 +778,5 @@
     "losses": 27,
     "win_pct": 0.797
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

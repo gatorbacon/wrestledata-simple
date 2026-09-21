@@ -5,6 +5,11 @@
   "team_slug": "great_crossing",
   "team_rank": 43,
   "weight_class": 144,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 58,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.778,
-    "bonus_rate": 0.889,
+    "pin_rate": 0.875,
+    "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
     "pins": 7
@@ -207,22 +212,6 @@
     },
     {
       "date": "2026-01-03",
-      "opponent_id": "35064900132",
-      "opponent_career_id": "career_001325",
-      "opponent_name": "Evan Wilson",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 95,
-      "opponent_weight": 138,
-      "opponent_rank": 13,
-      "weight_class": "144",
-      "result": "L",
-      "method": "MD",
-      "score": "15-2",
-      "duration": "7:00",
-      "event": "Warhawk Classic"
-    },
-    {
-      "date": "2026-01-03",
       "opponent_id": "36647444132",
       "opponent_career_id": null,
       "opponent_name": "Cole Lewis",
@@ -251,6 +240,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35064900132",
+      "opponent_career_id": "career_001325",
+      "opponent_name": "Evan Wilson",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 95,
+      "opponent_weight": 138,
+      "opponent_rank": 13,
+      "weight_class": "144",
+      "result": "L",
+      "method": "MD",
+      "score": "15-2",
+      "duration": "7:00",
       "event": "Warhawk Classic"
     },
     {
@@ -351,6 +356,22 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "35034943132",
+      "opponent_career_id": "career_005404",
+      "opponent_name": "Kent Hitchcock",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": 82,
+      "opponent_weight": 150,
+      "opponent_rank": 131,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:36",
+      "event": "vs. Franklin County"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35081198132",
       "opponent_career_id": "career_001203",
       "opponent_name": "Elliot Ortinski",
@@ -364,22 +385,6 @@
       "score": "17-0",
       "duration": "2:28",
       "event": "vs. Henry Clay"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35034943132",
-      "opponent_career_id": "career_005404",
-      "opponent_name": "Kent Hitchcock",
-      "opponent_team": "Franklin County",
-      "opponent_team_rank": 82,
-      "opponent_weight": 150,
-      "opponent_rank": 131,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:36",
-      "event": "vs. Great Crossing"
     },
     {
       "date": "2025-12-06",
@@ -460,15 +465,15 @@
       "season": 2024,
       "grade": 9,
       "team": "Great Crossing",
-      "record": "5-2",
+      "record": "15-13",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 35,
-    "losses": 29,
-    "win_pct": 0.547
+    "wins": 45,
+    "losses": 40,
+    "win_pct": 0.529
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

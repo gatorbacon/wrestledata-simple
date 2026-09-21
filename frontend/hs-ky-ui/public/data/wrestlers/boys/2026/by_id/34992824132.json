@@ -5,6 +5,11 @@
   "team_slug": "boyle_county",
   "team_rank": 1,
   "weight_class": 120,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 72,
   "record": {
@@ -47,6 +52,23 @@
   "match_list": [
     {
       "date": "2026-01-10",
+      "opponent_id": "35420479132",
+      "opponent_career_id": "career_002992",
+      "opponent_name": "Gabe Woods",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": 16,
+      "opponent_weight": 126,
+      "opponent_rank": 128,
+      "weight_class": "126",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-5",
+      "duration": "7:00",
+      "event": "vs. Whitley County",
+      "mv_impact": 0.28
+    },
+    {
+      "date": "2026-01-10",
       "opponent_id": "35030252132",
       "opponent_career_id": "career_002228",
       "opponent_name": "Quentin Troxell",
@@ -78,23 +100,6 @@
       "duration": "0:00",
       "event": "vs. Corbin",
       "mv_impact": -3.92
-    },
-    {
-      "date": "2026-01-10",
-      "opponent_id": "35420479132",
-      "opponent_career_id": "career_002992",
-      "opponent_name": "Gabe Woods",
-      "opponent_team": "Whitley County",
-      "opponent_team_rank": 16,
-      "opponent_weight": 126,
-      "opponent_rank": 128,
-      "weight_class": "126",
-      "result": "W",
-      "method": "DEC",
-      "score": "8-5",
-      "duration": "7:00",
-      "event": "vs. Whitley County",
-      "mv_impact": 0.28
     }
   ],
   "career": {
@@ -128,5 +133,5 @@
     "losses": 9,
     "win_pct": 0.571
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

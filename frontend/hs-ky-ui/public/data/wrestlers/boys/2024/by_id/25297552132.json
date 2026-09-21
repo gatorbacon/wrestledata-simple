@@ -5,6 +5,11 @@
   "team_slug": "central",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
@@ -53,6 +58,22 @@
     },
     {
       "date": "2024-01-24",
+      "opponent_id": "26346428132",
+      "opponent_career_id": "career_003428",
+      "opponent_name": "Norman Blackburn",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:37",
+      "event": "JV Region 3 - 2024"
+    },
+    {
+      "date": "2024-01-24",
       "opponent_id": "25290022132",
       "opponent_career_id": "career_000755",
       "opponent_name": "Dawson Schroering",
@@ -97,7 +118,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Central"
+      "event": "vs. Ballard"
     },
     {
       "date": "2024-01-13",
@@ -357,22 +378,6 @@
     },
     {
       "date": "2023-12-09",
-      "opponent_id": "25122574132",
-      "opponent_career_id": "career_003140",
-      "opponent_name": "Rizwan Syed",
-      "opponent_team": "Cooper",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Derby City Classic"
-    },
-    {
-      "date": "2023-12-09",
       "opponent_id": "24983359132",
       "opponent_career_id": null,
       "opponent_name": "Derick Zetino",
@@ -398,6 +403,22 @@
       "opponent_rank": null,
       "weight_class": "165",
       "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Derby City Classic"
+    },
+    {
+      "date": "2023-12-09",
+      "opponent_id": "25122574132",
+      "opponent_career_id": "career_003140",
+      "opponent_name": "Rizwan Syed",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -459,7 +480,7 @@
       "season": 2025,
       "grade": 11,
       "team": "Central",
-      "record": "22-11",
+      "record": "23-11",
       "regional_place": 2,
       "state_place": null
     },
@@ -481,9 +502,9 @@
     }
   ],
   "career_record": {
-    "wins": 61,
+    "wins": 62,
     "losses": 43,
-    "win_pct": 0.587
+    "win_pct": 0.59
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

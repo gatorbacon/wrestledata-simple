@@ -5,6 +5,11 @@
   "team_slug": "john_hardin",
   "team_rank": 95,
   "weight_class": 138,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 13,
   "record": {
@@ -159,6 +164,22 @@
     },
     {
       "date": "2026-02-12",
+      "opponent_id": "35001142132",
+      "opponent_career_id": "career_000479",
+      "opponent_name": "CJ Hogan",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": 11,
+      "opponent_weight": 138,
+      "opponent_rank": 95,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Central Hardin"
+    },
+    {
+      "date": "2026-02-12",
       "opponent_id": "34989075132",
       "opponent_career_id": "career_001892",
       "opponent_name": "Johann Springer",
@@ -172,38 +193,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. North Hardin"
-    },
-    {
-      "date": "2026-02-12",
-      "opponent_id": "35001142132",
-      "opponent_career_id": "career_000479",
-      "opponent_name": "CJ Hogan",
-      "opponent_team": "Central Hardin",
-      "opponent_team_rank": 11,
-      "opponent_weight": 138,
-      "opponent_rank": 95,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. John Hardin"
-    },
-    {
-      "date": "2026-02-07",
-      "opponent_id": "35040589132",
-      "opponent_career_id": "career_001549",
-      "opponent_name": "Braden Llaghno",
-      "opponent_team": "Male",
-      "opponent_team_rank": 45,
-      "opponent_weight": 132,
-      "opponent_rank": 24,
-      "weight_class": "138",
-      "result": "W",
-      "method": "MD",
-      "score": "20-7",
-      "duration": "7:00",
-      "event": "Michael Herchenrader Jr Memorial Tournament"
     },
     {
       "date": "2026-02-07",
@@ -238,6 +227,22 @@
       "event": "Michael Herchenrader Jr Memorial Tournament"
     },
     {
+      "date": "2026-02-07",
+      "opponent_id": "35040589132",
+      "opponent_career_id": "career_001549",
+      "opponent_name": "Braden Llaghno",
+      "opponent_team": "Male",
+      "opponent_team_rank": 45,
+      "opponent_weight": 132,
+      "opponent_rank": 24,
+      "weight_class": "138",
+      "result": "W",
+      "method": "MD",
+      "score": "20-7",
+      "duration": "7:00",
+      "event": "Michael Herchenrader Jr Memorial Tournament"
+    },
+    {
       "date": "2026-01-17",
       "opponent_id": "35181249132",
       "opponent_career_id": "career_005331",
@@ -251,7 +256,7 @@
       "method": "TF",
       "score": "18-2",
       "duration": "0:00",
-      "event": "vs. John Hardin"
+      "event": "vs. Danville"
     },
     {
       "date": "2026-01-17",
@@ -267,7 +272,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. John Hardin"
+      "event": "vs. Henry Clay"
     },
     {
       "date": "2026-01-17",
@@ -315,7 +320,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:46",
-      "event": "vs. John Hardin"
+      "event": "vs. Christian Academy-Louisville"
     },
     {
       "date": "2026-01-14",
@@ -426,7 +431,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:28",
       "event": "vs. North Bullitt"
     },
     {
@@ -587,7 +592,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. John Hardin"
+      "event": "vs. Christian Academy-Louisville"
     },
     {
       "date": "2025-12-23",
@@ -655,22 +660,6 @@
     },
     {
       "date": "2025-12-22",
-      "opponent_id": "35674089132",
-      "opponent_career_id": "career_005598",
-      "opponent_name": "Ajontae Swanagan",
-      "opponent_team": "Owensboro",
-      "opponent_team_rank": 34,
-      "opponent_weight": 132,
-      "opponent_rank": 118,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Owensboro"
-    },
-    {
-      "date": "2025-12-22",
       "opponent_id": "35233666132",
       "opponent_career_id": "career_000032",
       "opponent_name": "Grayson West",
@@ -683,7 +672,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. John Hardin"
+      "event": "vs. Apollo"
     },
     {
       "date": "2025-12-22",
@@ -699,7 +688,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. John Hardin"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2025-12-22",
@@ -734,36 +723,20 @@
       "event": "vs. All-Stars"
     },
     {
-      "date": "2025-12-20",
-      "opponent_id": "35084075132",
-      "opponent_career_id": "career_005197",
-      "opponent_name": "Mohamad Addi",
-      "opponent_team": "Ballard",
-      "opponent_team_rank": 54,
+      "date": "2025-12-22",
+      "opponent_id": "35674089132",
+      "opponent_career_id": "career_005598",
+      "opponent_name": "Ajontae Swanagan",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": 34,
       "opponent_weight": 132,
-      "opponent_rank": 44,
-      "weight_class": "138",
+      "opponent_rank": 118,
+      "weight_class": "144",
       "result": "W",
-      "method": "TF",
-      "score": "19-4",
-      "duration": "2:48",
-      "event": "5th Annual Cardinal Clash"
-    },
-    {
-      "date": "2025-12-20",
-      "opponent_id": "35600410132",
-      "opponent_career_id": "career_005046",
-      "opponent_name": "Maddox King",
-      "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 109,
-      "opponent_weight": 132,
-      "opponent_rank": 77,
-      "weight_class": "138",
-      "result": "W",
-      "method": "TF",
-      "score": "18-3",
-      "duration": "1:27",
-      "event": "5th Annual Cardinal Clash"
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Owensboro"
     },
     {
       "date": "2025-12-20",
@@ -779,6 +752,22 @@
       "method": "FALL",
       "score": null,
       "duration": "3:32",
+      "event": "5th Annual Cardinal Clash"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35084075132",
+      "opponent_career_id": "career_005197",
+      "opponent_name": "Mohamad Addi",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": 54,
+      "opponent_weight": 132,
+      "opponent_rank": 44,
+      "weight_class": "138",
+      "result": "W",
+      "method": "TF",
+      "score": "19-4",
+      "duration": "2:48",
       "event": "5th Annual Cardinal Clash"
     },
     {
@@ -811,6 +800,22 @@
       "method": "FALL",
       "score": null,
       "duration": "2:34",
+      "event": "5th Annual Cardinal Clash"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35600410132",
+      "opponent_career_id": "career_005046",
+      "opponent_name": "Maddox King",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 109,
+      "opponent_weight": 132,
+      "opponent_rank": 77,
+      "weight_class": "138",
+      "result": "W",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "1:27",
       "event": "5th Annual Cardinal Clash"
     },
     {
@@ -879,22 +884,6 @@
     },
     {
       "date": "2025-11-29",
-      "opponent_id": "35007899132",
-      "opponent_career_id": "career_002536",
-      "opponent_name": "Daniel Carpenter",
-      "opponent_team": "South Warren",
-      "opponent_team_rank": 129,
-      "opponent_weight": 132,
-      "opponent_rank": 120,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:23",
-      "event": "vs. South Warren"
-    },
-    {
-      "date": "2025-11-29",
       "opponent_id": "35208265132",
       "opponent_career_id": "career_005440",
       "opponent_name": "Dylan Gentry",
@@ -907,7 +896,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:59",
-      "event": "vs. John Hardin"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2025-11-29",
@@ -940,6 +929,22 @@
       "score": null,
       "duration": "3:14",
       "event": "vs. Owensboro"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35007899132",
+      "opponent_career_id": "career_002536",
+      "opponent_name": "Daniel Carpenter",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 129,
+      "opponent_weight": 132,
+      "opponent_rank": 120,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:23",
+      "event": "vs. South Warren"
     },
     {
       "date": "2025-11-29",
@@ -996,7 +1001,7 @@
       "season": 2025,
       "grade": 11,
       "team": "John Hardin",
-      "record": "22-14",
+      "record": "22-15",
       "regional_place": null,
       "state_place": null
     },
@@ -1011,8 +1016,8 @@
   ],
   "career_record": {
     "wins": 80,
-    "losses": 48,
-    "win_pct": 0.625
+    "losses": 49,
+    "win_pct": 0.62
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "bardstown",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
-    "overall": "32-31",
+    "overall": "32-32",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.64,
-    "bonus_rate": 0.76,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.792,
     "majors": 2,
     "techs": 1,
     "pins": 16
@@ -277,7 +282,7 @@
     },
     {
       "date": "2025-02-05",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_c11f13cdbeae",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Greenwood",
@@ -290,6 +295,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Greenwood"
+    },
+    {
+      "date": "2025-02-05",
+      "opponent_id": "OUTSTATE_5339f1dd02cb",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Warren East",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Warren East"
     },
     {
       "date": "2025-02-01",
@@ -357,6 +378,22 @@
     },
     {
       "date": "2025-01-20",
+      "opponent_id": "29829326132",
+      "opponent_career_id": "career_000182",
+      "opponent_name": "Jeffrey Hughes",
+      "opponent_team": "Bethlehem",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "4:13",
+      "event": "JV Regionals"
+    },
+    {
+      "date": "2025-01-20",
       "opponent_id": "31860840132",
       "opponent_career_id": "career_002310",
       "opponent_name": "Anthony Lindquist",
@@ -389,19 +426,35 @@
     },
     {
       "date": "2025-01-20",
-      "opponent_id": "29829326132",
-      "opponent_career_id": "career_000182",
-      "opponent_name": "Jeffrey Hughes",
-      "opponent_team": "Bethlehem",
+      "opponent_id": "30020541132",
+      "opponent_career_id": "career_001722",
+      "opponent_name": "Liam Rairdon",
+      "opponent_team": "Meade County",
       "opponent_team_rank": null,
-      "opponent_weight": 144,
+      "opponent_weight": 138,
       "opponent_rank": null,
       "weight_class": "138",
       "result": "W",
-      "method": "TF",
-      "score": "17-1",
-      "duration": "4:13",
+      "method": "SV-1",
+      "score": "11-8",
+      "duration": "8:15",
       "event": "JV Regionals"
+    },
+    {
+      "date": "2025-01-18",
+      "opponent_id": "30238705132",
+      "opponent_career_id": "career_000934",
+      "opponent_name": "Robert Magalong",
+      "opponent_team": "Fort Knox",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:18",
+      "event": "vs. Fort Knox"
     },
     {
       "date": "2025-01-18",
@@ -434,22 +487,6 @@
       "score": null,
       "duration": "1:11",
       "event": "vs. Nelson County"
-    },
-    {
-      "date": "2025-01-18",
-      "opponent_id": "30238705132",
-      "opponent_career_id": "career_000934",
-      "opponent_name": "Robert Magalong",
-      "opponent_team": "Fort Knox",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:18",
-      "event": "vs. Fort Knox"
     },
     {
       "date": "2025-01-17",
@@ -549,22 +586,6 @@
     },
     {
       "date": "2025-01-04",
-      "opponent_id": "31222848132",
-      "opponent_career_id": "career_002918",
-      "opponent_name": "Ethan Swearingen",
-      "opponent_team": "West Carter",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "TF",
-      "score": "16-0",
-      "duration": "0:00",
-      "event": "vs. West Carter"
-    },
-    {
-      "date": "2025-01-04",
       "opponent_id": "30267940132",
       "opponent_career_id": "career_000406",
       "opponent_name": "Mason Skirvin",
@@ -578,6 +599,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Campbell County"
+    },
+    {
+      "date": "2025-01-04",
+      "opponent_id": "31222848132",
+      "opponent_career_id": "career_002918",
+      "opponent_name": "Ethan Swearingen",
+      "opponent_team": "West Carter",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "0:00",
+      "event": "vs. West Carter"
     },
     {
       "date": "2025-01-04",
@@ -609,27 +646,11 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Bardstown"
+      "event": "vs. Nelson County"
     },
     {
       "date": "2025-01-03",
-      "opponent_id": "30160530132",
-      "opponent_career_id": "career_002787",
-      "opponent_name": "John Hamilton",
-      "opponent_team": "Trinity (Whitesville)",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Trinity (Whitesville)"
-    },
-    {
-      "date": "2025-01-03",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_0d024306c254",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Calloway County",
@@ -658,6 +679,22 @@
       "score": null,
       "duration": "3:30",
       "event": "vs. Fort Knox"
+    },
+    {
+      "date": "2025-01-03",
+      "opponent_id": "30160530132",
+      "opponent_career_id": "career_002787",
+      "opponent_name": "John Hamilton",
+      "opponent_team": "Trinity (Whitesville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Trinity (Whitesville)"
     },
     {
       "date": "2025-01-03",
@@ -757,22 +794,6 @@
     },
     {
       "date": "2024-12-18",
-      "opponent_id": "30347076132",
-      "opponent_career_id": "career_002601",
-      "opponent_name": "Conner Perdue",
-      "opponent_team": "Southwestern",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:50",
-      "event": "vs. Southwestern"
-    },
-    {
-      "date": "2024-12-18",
       "opponent_id": "30370484132",
       "opponent_career_id": "career_001825",
       "opponent_name": "Nicholas Livers",
@@ -786,6 +807,22 @@
       "score": null,
       "duration": "1:39",
       "event": "vs. Nelson County"
+    },
+    {
+      "date": "2024-12-18",
+      "opponent_id": "30347076132",
+      "opponent_career_id": "career_002601",
+      "opponent_name": "Conner Perdue",
+      "opponent_team": "Southwestern",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:50",
+      "event": "vs. Southwestern"
     },
     {
       "date": "2024-12-18",
@@ -817,22 +854,6 @@
       "method": "FALL",
       "score": null,
       "duration": "0:30",
-      "event": "vs. Paul Laurence Dunbar"
-    },
-    {
-      "date": "2024-12-14",
-      "opponent_id": "30414475132",
-      "opponent_career_id": "career_002105",
-      "opponent_name": "Kage Shott",
-      "opponent_team": "Paul Laurence Dunbar",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:08",
       "event": "vs. Paul Laurence Dunbar"
     },
     {
@@ -884,6 +905,22 @@
       "event": "vs. Bourbon County"
     },
     {
+      "date": "2024-12-14",
+      "opponent_id": "30414475132",
+      "opponent_career_id": "career_002105",
+      "opponent_name": "Kage Shott",
+      "opponent_team": "Paul Laurence Dunbar",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:08",
+      "event": "vs. Paul Laurence Dunbar"
+    },
+    {
       "date": "2024-12-11",
       "opponent_id": "31126128132",
       "opponent_career_id": "career_001147",
@@ -901,7 +938,7 @@
     },
     {
       "date": "2024-12-11",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_580221d42b88",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "North Bullitt",
@@ -914,22 +951,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. North Bullitt"
-    },
-    {
-      "date": "2024-12-06",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Thomas Nelson",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Thomas Nelson"
     },
     {
       "date": "2024-12-06",
@@ -964,27 +985,11 @@
       "event": "vs. Bethlehem"
     },
     {
-      "date": "2024-11-30",
-      "opponent_id": "30053445132",
-      "opponent_career_id": "career_002514",
-      "opponent_name": "Tristan Delancey",
-      "opponent_team": "South Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:25",
-      "event": "The Tommy Castle Classic"
-    },
-    {
-      "date": "2024-11-30",
-      "opponent_id": "OUTSTATE_130988f5e9bd",
+      "date": "2024-12-06",
+      "opponent_id": "OUTSTATE_d11d1b4317fe",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_team": "Thomas Nelson",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -993,7 +998,7 @@
       "method": "FF",
       "score": null,
       "duration": "7:00",
-      "event": "The Tommy Castle Classic"
+      "event": "vs. Thomas Nelson"
     },
     {
       "date": "2024-11-30",
@@ -1009,6 +1014,38 @@
       "method": "FALL",
       "score": null,
       "duration": "0:20",
+      "event": "The Tommy Castle Classic"
+    },
+    {
+      "date": "2024-11-30",
+      "opponent_id": "OUTSTATE_130988f5e9bd",
+      "opponent_career_id": null,
+      "opponent_name": "Wesley Maxwell",
+      "opponent_team": "Lexington Christian",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "The Tommy Castle Classic"
+    },
+    {
+      "date": "2024-11-30",
+      "opponent_id": "30053445132",
+      "opponent_career_id": "career_002514",
+      "opponent_name": "Tristan Delancey",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:25",
       "event": "The Tommy Castle Classic"
     },
     {
@@ -1041,7 +1078,7 @@
       "season": 2025,
       "grade": 9,
       "team": "Bardstown",
-      "record": "32-31",
+      "record": "32-32",
       "regional_place": 4,
       "state_place": null
     },
@@ -1056,8 +1093,8 @@
   ],
   "career_record": {
     "wins": 35,
-    "losses": 34,
-    "win_pct": 0.507
+    "losses": 35,
+    "win_pct": 0.5
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

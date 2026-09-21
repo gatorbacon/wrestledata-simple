@@ -5,6 +5,11 @@
   "team_slug": "bethlehem",
   "team_rank": null,
   "weight_class": 106,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -133,22 +138,6 @@
     },
     {
       "date": "2025-02-13",
-      "opponent_id": "30080408132",
-      "opponent_career_id": "career_002638",
-      "opponent_name": "James Diaz",
-      "opponent_team": "St. Xavier",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. St. Xavier"
-    },
-    {
-      "date": "2025-02-13",
       "opponent_id": "29905108132",
       "opponent_career_id": "career_002614",
       "opponent_name": "Lucas Montgomery",
@@ -164,6 +153,22 @@
       "event": "vs. Spencer County"
     },
     {
+      "date": "2025-02-13",
+      "opponent_id": "30080408132",
+      "opponent_career_id": "career_002638",
+      "opponent_name": "James Diaz",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. St. Xavier"
+    },
+    {
       "date": "2025-01-25",
       "opponent_id": "30053658132",
       "opponent_career_id": "career_002501",
@@ -176,6 +181,22 @@
       "result": "W",
       "method": "MD",
       "score": "12-3",
+      "duration": "7:00",
+      "event": "Jessamine County Clash"
+    },
+    {
+      "date": "2025-01-25",
+      "opponent_id": "30053658132",
+      "opponent_career_id": "career_002501",
+      "opponent_name": "Charlie Benavidez",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "MD",
+      "score": "17-8",
       "duration": "7:00",
       "event": "Jessamine County Clash"
     },
@@ -277,7 +298,23 @@
     },
     {
       "date": "2025-01-18",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "29868618132",
+      "opponent_career_id": "career_000924",
+      "opponent_name": "Kadin Kemp",
+      "opponent_team": "Fort Knox",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:46",
+      "event": "vs. Fort Knox"
+    },
+    {
+      "date": "2025-01-18",
+      "opponent_id": "OUTSTATE_0ed4fad1f245",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Green County",
@@ -324,24 +361,8 @@
       "event": "vs. Thomas Nelson"
     },
     {
-      "date": "2025-01-18",
-      "opponent_id": "29868618132",
-      "opponent_career_id": "career_000924",
-      "opponent_name": "Kadin Kemp",
-      "opponent_team": "Fort Knox",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:46",
-      "event": "vs. Fort Knox"
-    },
-    {
       "date": "2025-01-17",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_fa707c1de75c",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Bardstown",
@@ -465,7 +486,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Bethlehem"
+      "event": "vs. Bardstown"
     },
     {
       "date": "2025-01-03",
@@ -549,7 +570,7 @@
     },
     {
       "date": "2024-12-28",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_3b9151ea3973",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Central",
@@ -562,6 +583,38 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Central"
+    },
+    {
+      "date": "2024-12-28",
+      "opponent_id": "OUTSTATE_ed3605df2d4c",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Meade County"
+    },
+    {
+      "date": "2024-12-28",
+      "opponent_id": "OUTSTATE_38f95cb97442",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2024-12-21",
@@ -645,7 +698,7 @@
     },
     {
       "date": "2024-12-18",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_5855457a7894",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Bullitt Central",
@@ -689,7 +742,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Bethlehem"
+      "event": "vs. Bardstown"
     },
     {
       "date": "2024-12-06",
@@ -730,5 +783,5 @@
     "losses": 18,
     "win_pct": 0.6
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

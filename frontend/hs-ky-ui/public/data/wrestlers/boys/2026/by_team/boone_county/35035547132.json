@@ -5,6 +5,11 @@
   "team_slug": "boone_county",
   "team_rank": 60,
   "weight_class": 215,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 160,
   "record": {
@@ -24,7 +29,7 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 10
+    "pins": 11
   },
   "opponent_breakdown": {
     "ranked_wins": 7,
@@ -255,6 +260,22 @@
     },
     {
       "date": "2026-01-03",
+      "opponent_id": "-1",
+      "opponent_career_id": null,
+      "opponent_name": "Kalem Harris",
+      "opponent_team": "Mt. Vernon",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:25",
+      "event": "Bob Kearns Invitational"
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "OUTSTATE_74d10adaf22b",
       "opponent_career_id": null,
       "opponent_name": "Jackson Brubaker",
@@ -463,22 +484,6 @@
     },
     {
       "date": "2025-12-12",
-      "opponent_id": "35488267132",
-      "opponent_career_id": "career_000628",
-      "opponent_name": "Wyatt Merk",
-      "opponent_team": "Covington Catholic",
-      "opponent_team_rank": 41,
-      "opponent_weight": 215,
-      "opponent_rank": 164,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:51",
-      "event": "2025 JV Ryle Raider Rumble"
-    },
-    {
-      "date": "2025-12-12",
       "opponent_id": "OUTSTATE_74046288d1a0",
       "opponent_career_id": null,
       "opponent_name": "Drake Davidson",
@@ -491,6 +496,22 @@
       "method": "FALL",
       "score": null,
       "duration": "2:52",
+      "event": "2025 JV Ryle Raider Rumble"
+    },
+    {
+      "date": "2025-12-12",
+      "opponent_id": "35488267132",
+      "opponent_career_id": "career_000628",
+      "opponent_name": "Wyatt Merk",
+      "opponent_team": "Covington Catholic",
+      "opponent_team_rank": 41,
+      "opponent_weight": 215,
+      "opponent_rank": 164,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:51",
       "event": "2025 JV Ryle Raider Rumble"
     },
     {
@@ -646,5 +667,5 @@
     "losses": 38,
     "win_pct": 0.345
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

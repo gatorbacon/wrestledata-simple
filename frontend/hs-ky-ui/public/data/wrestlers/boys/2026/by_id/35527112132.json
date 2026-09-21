@@ -5,6 +5,11 @@
   "team_slug": "anderson_county",
   "team_rank": 18,
   "weight_class": 157,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 8,
   "record": {
@@ -32,10 +37,10 @@
     "top10_wins": 7,
     "top10_losses": 2,
     "win_over_highest_rank": {
-      "opponent_id": "34992807132",
+      "opponent_id": "35045481132",
       "opponent_rank": 4,
-      "opponent_name": "Judah Carey",
-      "method": "MD 11-0"
+      "opponent_name": "Emory Dix",
+      "method": "SV-1 13-12"
     },
     "worst_loss": {
       "opponent_id": "35663757132",
@@ -351,6 +356,22 @@
     },
     {
       "date": "2025-12-20",
+      "opponent_id": "35045507132",
+      "opponent_career_id": "career_001499",
+      "opponent_name": "Jerry Fields",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": 12,
+      "opponent_weight": 157,
+      "opponent_rank": 219,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:36",
+      "event": "Lafayette 5 Star Tournament"
+    },
+    {
+      "date": "2025-12-20",
       "opponent_id": "34993741132",
       "opponent_career_id": "career_001121",
       "opponent_name": "Bracken King",
@@ -379,22 +400,6 @@
       "method": "FALL",
       "score": null,
       "duration": "4:44",
-      "event": "Lafayette 5 Star Tournament"
-    },
-    {
-      "date": "2025-12-20",
-      "opponent_id": "35045507132",
-      "opponent_career_id": "career_001499",
-      "opponent_name": "Jerry Fields",
-      "opponent_team": "Madison Central",
-      "opponent_team_rank": 12,
-      "opponent_weight": 157,
-      "opponent_rank": 219,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:36",
       "event": "Lafayette 5 Star Tournament"
     },
     {
@@ -511,22 +516,6 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "34992807132",
-      "opponent_career_id": "career_000275",
-      "opponent_name": "Judah Carey",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": 1,
-      "opponent_weight": 150,
-      "opponent_rank": 4,
-      "weight_class": "157",
-      "result": "W",
-      "method": "MD",
-      "score": "11-0",
-      "duration": "7:00",
-      "event": "Bearcat Brawl 2025"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "35045481132",
       "opponent_career_id": "career_001498",
       "opponent_name": "Emory Dix",
@@ -539,6 +528,22 @@
       "method": "SV-1",
       "score": "13-12",
       "duration": "8:15",
+      "event": "Bearcat Brawl 2025"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34992807132",
+      "opponent_career_id": "career_000275",
+      "opponent_name": "Judah Carey",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 150,
+      "opponent_rank": 4,
+      "weight_class": "157",
+      "result": "W",
+      "method": "MD",
+      "score": "11-0",
+      "duration": "7:00",
       "event": "Bearcat Brawl 2025"
     },
     {
@@ -614,5 +619,5 @@
     "losses": 17,
     "win_pct": 0.825
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

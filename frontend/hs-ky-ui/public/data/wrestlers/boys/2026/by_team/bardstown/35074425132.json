@@ -5,6 +5,11 @@
   "team_slug": "bardstown",
   "team_rank": 55,
   "weight_class": 175,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 194,
   "record": {
@@ -219,7 +224,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Bardstown"
+      "event": "vs. Adair County"
     },
     {
       "date": "2026-02-03",
@@ -271,6 +276,22 @@
     },
     {
       "date": "2026-01-17",
+      "opponent_id": "35223095132",
+      "opponent_career_id": "career_001151",
+      "opponent_name": "Cylas Reynolds",
+      "opponent_team": "Hart County",
+      "opponent_team_rank": 89,
+      "opponent_weight": 190,
+      "opponent_rank": 80,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Hart County"
+    },
+    {
+      "date": "2026-01-17",
       "opponent_id": "35226440132",
       "opponent_career_id": "career_004889",
       "opponent_name": "Joshua Bowman",
@@ -284,6 +305,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Nelson County"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "OUTSTATE_21b4a79b024a",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Bethlehem",
+      "opponent_team_rank": 59,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Bethlehem"
     },
     {
       "date": "2026-01-17",
@@ -316,38 +353,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Green County"
-    },
-    {
-      "date": "2026-01-17",
-      "opponent_id": "35223095132",
-      "opponent_career_id": "career_001151",
-      "opponent_name": "Cylas Reynolds",
-      "opponent_team": "Hart County",
-      "opponent_team_rank": 89,
-      "opponent_weight": 190,
-      "opponent_rank": 80,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Hart County"
-    },
-    {
-      "date": "2026-01-17",
-      "opponent_id": "OUTSTATE_21b4a79b024a",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Bethlehem",
-      "opponent_team_rank": 59,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Bethlehem"
     },
     {
       "date": "2026-01-15",
@@ -463,38 +468,6 @@
     },
     {
       "date": "2026-01-03",
-      "opponent_id": "35194012132",
-      "opponent_career_id": "career_002889",
-      "opponent_name": "Kaleb Lindsey",
-      "opponent_team": "Warren Central",
-      "opponent_team_rank": 137,
-      "opponent_weight": 165,
-      "opponent_rank": 55,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:47",
-      "event": "vs. Warren Central"
-    },
-    {
-      "date": "2026-01-03",
-      "opponent_id": "35137018132",
-      "opponent_career_id": "career_005693",
-      "opponent_name": "Blake Donnelly",
-      "opponent_team": "South Warren",
-      "opponent_team_rank": 129,
-      "opponent_weight": 165,
-      "opponent_rank": 71,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:20",
-      "event": "vs. South Warren"
-    },
-    {
-      "date": "2026-01-03",
       "opponent_id": "35205294132",
       "opponent_career_id": "career_001092",
       "opponent_name": "Maddox Tabor",
@@ -526,20 +499,36 @@
       "event": "vs. Christian Academy-Louisville"
     },
     {
-      "date": "2025-12-30",
-      "opponent_id": "34997573132",
-      "opponent_career_id": "career_000997",
-      "opponent_name": "Sam Allen",
-      "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 42,
+      "date": "2026-01-03",
+      "opponent_id": "35194012132",
+      "opponent_career_id": "career_002889",
+      "opponent_name": "Kaleb Lindsey",
+      "opponent_team": "Warren Central",
+      "opponent_team_rank": 137,
       "opponent_weight": 165,
-      "opponent_rank": 151,
+      "opponent_rank": 55,
       "weight_class": "175",
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:36",
-      "event": "Cardinal Invitational"
+      "duration": "0:47",
+      "event": "vs. Warren Central"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35137018132",
+      "opponent_career_id": "career_005693",
+      "opponent_name": "Blake Donnelly",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 129,
+      "opponent_weight": 165,
+      "opponent_rank": 71,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:20",
+      "event": "vs. South Warren"
     },
     {
       "date": "2025-12-30",
@@ -555,6 +544,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:35",
+      "event": "Cardinal Invitational"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "34997573132",
+      "opponent_career_id": "career_000997",
+      "opponent_name": "Sam Allen",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": 42,
+      "opponent_weight": 165,
+      "opponent_rank": 151,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:36",
       "event": "Cardinal Invitational"
     },
     {
@@ -703,22 +708,6 @@
     },
     {
       "date": "2025-12-02",
-      "opponent_id": "OUTSTATE_bddbdc615208",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Hart County",
-      "opponent_team_rank": 89,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Hart County"
-    },
-    {
-      "date": "2025-12-02",
       "opponent_id": "OUTSTATE_86b971b502a2",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -732,6 +721,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Spencer County"
+    },
+    {
+      "date": "2025-12-02",
+      "opponent_id": "OUTSTATE_bddbdc615208",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Hart County",
+      "opponent_team_rank": 89,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Hart County"
     }
   ],
   "career": {
@@ -756,5 +761,5 @@
     "losses": 36,
     "win_pct": 0.163
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

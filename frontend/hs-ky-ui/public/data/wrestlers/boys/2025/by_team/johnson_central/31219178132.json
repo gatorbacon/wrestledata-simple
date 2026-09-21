@@ -5,6 +5,11 @@
   "team_slug": "johnson_central",
   "team_rank": null,
   "weight_class": 106,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -53,7 +58,7 @@
     },
     {
       "date": "2025-01-03",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_a46f2f7c41af",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Meadow Bridge",
@@ -98,6 +103,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Greenbrier East"
+    },
+    {
+      "date": "2025-01-03",
+      "opponent_id": "OUTSTATE_d07544b0f72e",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Princeton",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Princeton"
     },
     {
       "date": "2025-01-03",
@@ -152,10 +173,19 @@
     "career_id": "career_001343",
     "canonical_name": "Heath May",
     "seasons": [
+      2026,
       2025
     ]
   },
   "season_summary": [
+    {
+      "season": 2026,
+      "grade": 9,
+      "team": "Johnson Central",
+      "record": "10-7",
+      "regional_place": 2,
+      "state_place": null
+    },
     {
       "season": 2025,
       "grade": 8,
@@ -166,9 +196,9 @@
     }
   ],
   "career_record": {
-    "wins": 6,
-    "losses": 2,
-    "win_pct": 0.75
+    "wins": 16,
+    "losses": 9,
+    "win_pct": 0.64
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

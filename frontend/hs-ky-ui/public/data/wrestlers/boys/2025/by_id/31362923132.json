@@ -5,6 +5,11 @@
   "team_slug": "daviess_county",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -24,7 +29,7 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 5
+    "pins": 6
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -35,6 +40,22 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2025-01-16",
+      "opponent_id": "30029282132",
+      "opponent_career_id": "career_000044",
+      "opponent_name": "Brayden Mattingly",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Apollo"
+    },
     {
       "date": "2025-01-16",
       "opponent_id": "30486178132",
@@ -50,22 +71,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Owensboro Catholic"
-    },
-    {
-      "date": "2025-01-16",
-      "opponent_id": "30029282132",
-      "opponent_career_id": "career_000044",
-      "opponent_name": "Brayden Mattingly",
-      "opponent_team": "Apollo",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Daviess County"
     },
     {
       "date": "2025-01-15",
@@ -85,7 +90,7 @@
     },
     {
       "date": "2025-01-15",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_c11f13cdbeae",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Greenwood",
@@ -114,6 +119,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Warren Central"
+    },
+    {
+      "date": "2025-01-04",
+      "opponent_id": "30684993132",
+      "opponent_career_id": "career_000221",
+      "opponent_name": "Tanner Lutz",
+      "opponent_team": "Bourbon County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Tates Creek Invitational"
     },
     {
       "date": "2025-01-04",
@@ -177,11 +198,11 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Daviess County"
+      "event": "vs. Calloway County"
     },
     {
       "date": "2024-12-17",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_ff7db33ebb7d",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Henderson County",
@@ -217,15 +238,15 @@
       "season": 2023,
       "grade": 9,
       "team": "Daviess County",
-      "record": "8-8",
+      "record": "8-9",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 16,
-    "losses": 11,
-    "win_pct": 0.593
+    "losses": 12,
+    "win_pct": 0.571
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

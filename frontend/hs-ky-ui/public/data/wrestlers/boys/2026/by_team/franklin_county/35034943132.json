@@ -5,6 +5,11 @@
   "team_slug": "franklin_county",
   "team_rank": 82,
   "weight_class": 150,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 137,
   "record": {
@@ -47,6 +52,22 @@
   "match_list": [
     {
       "date": "2026-01-31",
+      "opponent_id": "35216672132",
+      "opponent_career_id": "career_000555",
+      "opponent_name": "Liam Surber",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": 7,
+      "opponent_weight": 150,
+      "opponent_rank": 111,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:56",
+      "event": "vs. Cooper"
+    },
+    {
+      "date": "2026-01-31",
       "opponent_id": "OUTSTATE_3e7053701b0d",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -60,22 +81,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Bryan Station"
-    },
-    {
-      "date": "2026-01-31",
-      "opponent_id": "35216672132",
-      "opponent_career_id": "career_000555",
-      "opponent_name": "Liam Surber",
-      "opponent_team": "Cooper",
-      "opponent_team_rank": 7,
-      "opponent_weight": 150,
-      "opponent_rank": 111,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:56",
-      "event": "vs. Franklin County"
     },
     {
       "date": "2026-01-31",
@@ -139,7 +144,7 @@
       "method": "MD",
       "score": "18-5",
       "duration": "7:00",
-      "event": "vs. Franklin County"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2026-01-10",
@@ -191,22 +196,6 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35599171132",
-      "opponent_career_id": "career_001701",
-      "opponent_name": "Noah Metz",
-      "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 109,
-      "opponent_weight": 144,
-      "opponent_rank": 54,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:55",
-      "event": "vs. Mccreary Central"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35122061132",
       "opponent_career_id": "career_001992",
       "opponent_name": "Madden Brown",
@@ -236,6 +225,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Pineville"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35599171132",
+      "opponent_career_id": "career_001701",
+      "opponent_name": "Noah Metz",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 109,
+      "opponent_weight": 144,
+      "opponent_rank": 54,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:55",
+      "event": "vs. Mccreary Central"
     },
     {
       "date": "2025-12-06",
@@ -292,5 +297,5 @@
     "losses": 8,
     "win_pct": 0.429
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

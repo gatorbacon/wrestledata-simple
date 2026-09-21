@@ -5,10 +5,15 @@
   "team_slug": "greenwood",
   "team_rank": 87,
   "weight_class": 175,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 12,
   "record": {
-    "overall": "45-11",
+    "overall": "46-11",
     "vs_ranked": "30-5",
     "vs_top10": "0-2",
     "vs_top25": "3-4"
@@ -235,7 +240,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:23",
-      "event": "vs. Greenwood"
+      "event": "vs. Logan County"
     },
     {
       "date": "2026-01-21",
@@ -256,7 +261,7 @@
     {
       "date": "2026-01-17",
       "opponent_id": "38156835132",
-      "opponent_career_id": null,
+      "opponent_career_id": "career_000045",
       "opponent_name": "Isaac Skaggs",
       "opponent_team": "Apollo",
       "opponent_team_rank": 53,
@@ -267,39 +272,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:55",
-      "event": "vs. Greenwood"
-    },
-    {
-      "date": "2026-01-17",
-      "opponent_id": "35049804132",
-      "opponent_career_id": "career_002045",
-      "opponent_name": "Eric McCarthy",
-      "opponent_team": "Owensboro Catholic",
-      "opponent_team_rank": 28,
-      "opponent_weight": 165,
-      "opponent_rank": 92,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:07",
-      "event": "vs. Owensboro Catholic"
-    },
-    {
-      "date": "2026-01-17",
-      "opponent_id": "35194012132",
-      "opponent_career_id": "career_002889",
-      "opponent_name": "Kaleb Lindsey",
-      "opponent_team": "Warren Central",
-      "opponent_team_rank": 137,
-      "opponent_weight": 165,
-      "opponent_rank": 55,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:38",
-      "event": "vs. Warren Central"
+      "event": "vs. Apollo"
     },
     {
       "date": "2026-01-17",
@@ -348,6 +321,38 @@
       "score": null,
       "duration": "0:54",
       "event": "vs. North Hardin"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35049804132",
+      "opponent_career_id": "career_002045",
+      "opponent_name": "Eric McCarthy",
+      "opponent_team": "Owensboro Catholic",
+      "opponent_team_rank": 28,
+      "opponent_weight": 165,
+      "opponent_rank": 92,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:07",
+      "event": "vs. Owensboro Catholic"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35194012132",
+      "opponent_career_id": "career_002889",
+      "opponent_name": "Kaleb Lindsey",
+      "opponent_team": "Warren Central",
+      "opponent_team_rank": 137,
+      "opponent_weight": 165,
+      "opponent_rank": 55,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:38",
+      "event": "vs. Warren Central"
     },
     {
       "date": "2026-01-10",
@@ -447,19 +452,19 @@
     },
     {
       "date": "2026-01-03",
-      "opponent_id": "35049796132",
-      "opponent_career_id": "career_002041",
-      "opponent_name": "Thomas Brauer",
-      "opponent_team": "Owensboro Catholic",
-      "opponent_team_rank": 28,
-      "opponent_weight": 157,
-      "opponent_rank": 10,
+      "opponent_id": "35074425132",
+      "opponent_career_id": "career_005208",
+      "opponent_name": "Emmanuel Cortes",
+      "opponent_team": "Bardstown",
+      "opponent_team_rank": 55,
+      "opponent_weight": 175,
+      "opponent_rank": 179,
       "weight_class": "175",
-      "result": "L",
-      "method": "TF",
-      "score": "15-0",
-      "duration": "3:21",
-      "event": "vs. Owensboro Catholic"
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:50",
+      "event": "vs. Bardstown"
     },
     {
       "date": "2026-01-03",
@@ -495,19 +500,19 @@
     },
     {
       "date": "2026-01-03",
-      "opponent_id": "35074425132",
-      "opponent_career_id": "career_005208",
-      "opponent_name": "Emmanuel Cortes",
-      "opponent_team": "Bardstown",
-      "opponent_team_rank": 55,
-      "opponent_weight": 175,
-      "opponent_rank": 179,
+      "opponent_id": "35049796132",
+      "opponent_career_id": "career_002041",
+      "opponent_name": "Thomas Brauer",
+      "opponent_team": "Owensboro Catholic",
+      "opponent_team_rank": 28,
+      "opponent_weight": 157,
+      "opponent_rank": 10,
       "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:50",
-      "event": "vs. Greenwood"
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "3:21",
+      "event": "vs. Owensboro Catholic"
     },
     {
       "date": "2026-01-03",
@@ -575,22 +580,6 @@
     },
     {
       "date": "2025-12-29",
-      "opponent_id": "OUTSTATE_669fc4eee8c2",
-      "opponent_career_id": null,
-      "opponent_name": "Wyatt Hargett",
-      "opponent_team": "Evansville F.j. Reitz",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "DEC",
-      "score": "6-0",
-      "duration": "7:00",
-      "event": "vs. Evansville F.j. Reitz"
-    },
-    {
-      "date": "2025-12-29",
       "opponent_id": "35090033132",
       "opponent_career_id": "career_000873",
       "opponent_name": "Alan Rivera",
@@ -603,7 +592,7 @@
       "method": "SV-1",
       "score": "6-3",
       "duration": "8:15",
-      "event": "vs. Greenwood"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2025-12-29",
@@ -636,6 +625,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Jeffersonville"
+    },
+    {
+      "date": "2025-12-29",
+      "opponent_id": "OUTSTATE_669fc4eee8c2",
+      "opponent_career_id": null,
+      "opponent_name": "Wyatt Hargett",
+      "opponent_team": "Evansville F.j. Reitz",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "DEC",
+      "score": "6-0",
+      "duration": "7:00",
+      "event": "vs. Evansville F.j. Reitz"
     },
     {
       "date": "2025-12-20",
@@ -699,23 +704,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Greenwood"
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "35024618132",
-      "opponent_career_id": "career_005694",
-      "opponent_name": "Aiden Forbis",
-      "opponent_team": "South Warren",
-      "opponent_team_rank": 129,
-      "opponent_weight": 157,
-      "opponent_rank": 143,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:21",
-      "event": "vs. South Warren"
+      "event": "vs. Adair County"
     },
     {
       "date": "2025-12-13",
@@ -731,7 +720,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:15",
-      "event": "vs. Greenwood"
+      "event": "vs. Bethlehem"
     },
     {
       "date": "2025-12-13",
@@ -747,7 +736,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:38",
-      "event": "vs. Greenwood"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2025-12-13",
@@ -763,7 +752,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:40",
-      "event": "vs. Greenwood"
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2025-12-13",
@@ -782,6 +771,22 @@
       "event": "vs. Fort Knox"
     },
     {
+      "date": "2025-12-13",
+      "opponent_id": "35024618132",
+      "opponent_career_id": "career_005694",
+      "opponent_name": "Aiden Forbis",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 129,
+      "opponent_weight": 157,
+      "opponent_rank": 143,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:21",
+      "event": "vs. South Warren"
+    },
+    {
       "date": "2025-12-11",
       "opponent_id": "35007897132",
       "opponent_career_id": "career_002547",
@@ -796,22 +801,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. South Warren"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35364773132",
-      "opponent_career_id": "career_003588",
-      "opponent_name": "Carter Lawrence",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 95,
-      "opponent_weight": 165,
-      "opponent_rank": 79,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:29",
-      "event": "Coyote Classic Wrestling Invitational"
     },
     {
       "date": "2025-12-06",
@@ -863,6 +852,22 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "35364773132",
+      "opponent_career_id": "career_003588",
+      "opponent_name": "Carter Lawrence",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 95,
+      "opponent_weight": 165,
+      "opponent_rank": 79,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:29",
+      "event": "Coyote Classic Wrestling Invitational"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "35480910132",
       "opponent_career_id": null,
       "opponent_name": "Brayden Mapps",
@@ -892,22 +897,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Logan County"
-    },
-    {
-      "date": "2025-11-26",
-      "opponent_id": "34989006132",
-      "opponent_career_id": "career_001966",
-      "opponent_name": "Hunter Roberts",
-      "opponent_team": "Ohio County",
-      "opponent_team_rank": 48,
-      "opponent_weight": 165,
-      "opponent_rank": 22,
-      "weight_class": "175",
-      "result": "L",
-      "method": "MD",
-      "score": "9-0",
-      "duration": "7:00",
-      "event": "vs. Ohio County"
     },
     {
       "date": "2025-11-26",
@@ -956,6 +945,22 @@
       "score": null,
       "duration": "1:26",
       "event": "vs. McCracken County"
+    },
+    {
+      "date": "2025-11-26",
+      "opponent_id": "34989006132",
+      "opponent_career_id": "career_001966",
+      "opponent_name": "Hunter Roberts",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": 48,
+      "opponent_weight": 165,
+      "opponent_rank": 22,
+      "weight_class": "175",
+      "result": "L",
+      "method": "MD",
+      "score": "9-0",
+      "duration": "7:00",
+      "event": "vs. Ohio County"
     }
   ],
   "career": {
@@ -972,7 +977,7 @@
       "season": 2026,
       "grade": 11,
       "team": "Greenwood",
-      "record": "45-11",
+      "record": "46-11",
       "regional_place": 1,
       "state_place": null
     },
@@ -988,15 +993,15 @@
       "season": 2024,
       "grade": 9,
       "team": "Greenwood",
-      "record": "3-5",
+      "record": "22-24",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 79,
-    "losses": 31,
-    "win_pct": 0.718
+    "wins": 99,
+    "losses": 50,
+    "win_pct": 0.664
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

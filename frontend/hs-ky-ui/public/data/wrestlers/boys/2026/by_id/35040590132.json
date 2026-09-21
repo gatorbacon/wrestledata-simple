@@ -5,6 +5,11 @@
   "team_slug": "male",
   "team_rank": 45,
   "weight_class": 190,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 89,
   "record": {
@@ -96,7 +101,7 @@
     {
       "date": "2026-02-21",
       "opponent_id": "35338263132",
-      "opponent_career_id": null,
+      "opponent_career_id": "career_002776",
       "opponent_name": "Nick Wulkopf",
       "opponent_team": "Trinity (Louisville)",
       "opponent_team_rank": 134,
@@ -123,12 +128,12 @@
       "method": "FALL",
       "score": null,
       "duration": "3:00",
-      "event": "vs. Male"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2026-02-14",
       "opponent_id": "35127097132",
-      "opponent_career_id": null,
+      "opponent_career_id": "career_000761",
       "opponent_name": "Darien Allen",
       "opponent_team": "Dupont Manual",
       "opponent_team_rank": 32,
@@ -139,7 +144,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:38",
-      "event": "vs. Male"
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2026-02-14",
@@ -384,7 +389,7 @@
     {
       "date": "2026-01-07",
       "opponent_id": "35127097132",
-      "opponent_career_id": null,
+      "opponent_career_id": "career_000761",
       "opponent_name": "Darien Allen",
       "opponent_team": "Dupont Manual",
       "opponent_team_rank": 32,
@@ -395,24 +400,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:06",
-      "event": "vs. Male"
-    },
-    {
-      "date": "2026-01-03",
-      "opponent_id": "35090033132",
-      "opponent_career_id": "career_000873",
-      "opponent_name": "Alan Rivera",
-      "opponent_team": "Fern Creek",
-      "opponent_team_rank": 77,
-      "opponent_weight": 175,
-      "opponent_rank": 38,
-      "weight_class": "175",
-      "result": "L",
-      "method": "DEC",
-      "score": "7-1",
-      "duration": "7:00",
-      "event": "vs. Male",
-      "mv_impact": -2.41
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2026-01-03",
@@ -428,7 +416,24 @@
       "method": "FALL",
       "score": null,
       "duration": "0:49",
-      "event": "vs. Male"
+      "event": "vs. Bullitt East"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35090033132",
+      "opponent_career_id": "career_000873",
+      "opponent_name": "Alan Rivera",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": 77,
+      "opponent_weight": 175,
+      "opponent_rank": 38,
+      "weight_class": "175",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-1",
+      "duration": "7:00",
+      "event": "vs. Fern Creek",
+      "mv_impact": -2.41
     },
     {
       "date": "2026-01-03",
@@ -480,23 +485,6 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35337455132",
-      "opponent_career_id": "career_002769",
-      "opponent_name": "Michael Diffey",
-      "opponent_team": "Trinity (Louisville)",
-      "opponent_team_rank": 134,
-      "opponent_weight": 175,
-      "opponent_rank": 29,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:59",
-      "event": "King of the Bluegrass",
-      "mv_impact": -7.29
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35135148132",
       "opponent_career_id": "career_000846",
       "opponent_name": "johnny Tran",
@@ -511,6 +499,23 @@
       "duration": "4:34",
       "event": "King of the Bluegrass",
       "mv_impact": -6.66
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35337455132",
+      "opponent_career_id": "career_002769",
+      "opponent_name": "Michael Diffey",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": 134,
+      "opponent_weight": 175,
+      "opponent_rank": 29,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:59",
+      "event": "King of the Bluegrass",
+      "mv_impact": -7.29
     },
     {
       "date": "2025-12-10",
@@ -561,5 +566,5 @@
     "losses": 22,
     "win_pct": 0.476
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

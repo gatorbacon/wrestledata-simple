@@ -5,6 +5,11 @@
   "team_slug": "larue_county",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.714,
-    "bonus_rate": 0.714,
+    "pin_rate": 0.733,
+    "bonus_rate": 0.733,
     "majors": 0,
     "techs": 0,
-    "pins": 10
+    "pins": 11
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -273,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:33",
-      "event": "vs. LaRue County"
+      "event": "vs. Fort Campbell"
     },
     {
       "date": "2025-01-25",
@@ -289,23 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:39",
-      "event": "vs. LaRue County"
-    },
-    {
-      "date": "2025-01-20",
-      "opponent_id": "30370498132",
-      "opponent_career_id": "career_001835",
-      "opponent_name": "Aaron Thompson",
-      "opponent_team": "Nelson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:25",
-      "event": "JV Regionals"
+      "event": "vs. Green County"
     },
     {
       "date": "2025-01-20",
@@ -321,6 +310,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:43",
+      "event": "JV Regionals"
+    },
+    {
+      "date": "2025-01-20",
+      "opponent_id": "30370498132",
+      "opponent_career_id": "career_001835",
+      "opponent_name": "Aaron Thompson",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:25",
       "event": "JV Regionals"
     },
     {
@@ -354,6 +359,22 @@
       "score": "3-0",
       "duration": "7:00",
       "event": "JV Regionals"
+    },
+    {
+      "date": "2025-01-04",
+      "opponent_id": "29872620132",
+      "opponent_career_id": "career_000485",
+      "opponent_name": "Austin Bly",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Tates Creek Invitational"
     },
     {
       "date": "2025-01-04",
@@ -485,19 +506,19 @@
     },
     {
       "date": "2024-12-14",
-      "opponent_id": "29788803132",
-      "opponent_career_id": "career_001776",
-      "opponent_name": "Waylon Scott",
-      "opponent_team": "Montgomery County",
+      "opponent_id": "OUTSTATE_2f528488265f",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Boyle County",
       "opponent_team_rank": null,
-      "opponent_weight": 190,
+      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "215",
-      "result": "L",
-      "method": "FALL",
+      "result": "W",
+      "method": "FF",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Montgomery County"
+      "duration": "7:00",
+      "event": "vs. Boyle County"
     },
     {
       "date": "2024-12-14",
@@ -517,10 +538,10 @@
     },
     {
       "date": "2024-12-14",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_0ed4fad1f245",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
-      "opponent_team": "Boyle County",
+      "opponent_team": "Green County",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -529,7 +550,23 @@
       "method": "FF",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Boyle County"
+      "event": "vs. Green County"
+    },
+    {
+      "date": "2024-12-14",
+      "opponent_id": "29788803132",
+      "opponent_career_id": "career_001776",
+      "opponent_name": "Waylon Scott",
+      "opponent_team": "Montgomery County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Montgomery County"
     },
     {
       "date": "2024-12-14",
@@ -579,5 +616,5 @@
     "losses": 34,
     "win_pct": 0.585
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

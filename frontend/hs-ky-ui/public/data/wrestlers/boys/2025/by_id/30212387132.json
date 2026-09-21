@@ -5,6 +5,11 @@
   "team_slug": "wayne_county",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,10 +25,10 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "pin_rate": 0.333,
+    "bonus_rate": 0.667,
     "majors": 0,
-    "techs": 0,
+    "techs": 1,
     "pins": 1
   },
   "opponent_breakdown": {
@@ -100,6 +105,22 @@
       "event": "Rowan County Invitational"
     },
     {
+      "date": "2025-01-25",
+      "opponent_id": "31185012132",
+      "opponent_career_id": "career_002919",
+      "opponent_name": "Kendel Lunsford",
+      "opponent_team": "West Carter",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "TF",
+      "score": "20-3",
+      "duration": "0:00",
+      "event": "Rowan County Invitational"
+    },
+    {
       "date": "2025-01-15",
       "opponent_id": "30035599132",
       "opponent_career_id": "career_000587",
@@ -113,7 +134,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Wayne County"
+      "event": "vs. Corbin"
     },
     {
       "date": "2024-12-28",
@@ -129,39 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:30",
-      "event": "vs. Wayne County"
-    },
-    {
-      "date": "2024-12-28",
-      "opponent_id": "30371061132",
-      "opponent_career_id": "career_001697",
-      "opponent_name": "Kyree Giglio",
-      "opponent_team": "Mccreary Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:27",
-      "event": "vs. Wayne County"
-    },
-    {
-      "date": "2024-12-28",
-      "opponent_id": "30346838132",
-      "opponent_career_id": "career_002595",
-      "opponent_name": "Brendan Roach",
-      "opponent_team": "Southwestern",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:52",
-      "event": "vs. Wayne County"
+      "event": "vs. Bell County"
     },
     {
       "date": "2024-12-28",
@@ -178,6 +167,38 @@
       "score": null,
       "duration": "2:24",
       "event": "vs. Corbin"
+    },
+    {
+      "date": "2024-12-28",
+      "opponent_id": "30371061132",
+      "opponent_career_id": "career_001697",
+      "opponent_name": "Kyree Giglio",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:27",
+      "event": "vs. Mccreary Central"
+    },
+    {
+      "date": "2024-12-28",
+      "opponent_id": "30346838132",
+      "opponent_career_id": "career_002595",
+      "opponent_name": "Brendan Roach",
+      "opponent_team": "Southwestern",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:52",
+      "event": "vs. Southwestern"
     },
     {
       "date": "2024-12-13",
@@ -209,23 +230,7 @@
       "method": "DEC",
       "score": "14-8",
       "duration": "7:00",
-      "event": "vs. Wayne County"
-    },
-    {
-      "date": "2024-12-07",
-      "opponent_id": "30555172132",
-      "opponent_career_id": "career_001894",
-      "opponent_name": "Cisco Torres",
-      "opponent_team": "North Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "DEC",
-      "score": "12-6",
-      "duration": "7:00",
-      "event": "vs. Wayne County"
+      "event": "vs. Green County"
     },
     {
       "date": "2024-12-07",
@@ -241,7 +246,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:20",
-      "event": "vs. Wayne County"
+      "event": "vs. Mccreary Central"
+    },
+    {
+      "date": "2024-12-07",
+      "opponent_id": "30555172132",
+      "opponent_career_id": "career_001894",
+      "opponent_name": "Cisco Torres",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "DEC",
+      "score": "12-6",
+      "duration": "7:00",
+      "event": "vs. North Hardin"
     }
   ],
   "career": {
@@ -266,5 +287,5 @@
     "losses": 10,
     "win_pct": 0.286
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

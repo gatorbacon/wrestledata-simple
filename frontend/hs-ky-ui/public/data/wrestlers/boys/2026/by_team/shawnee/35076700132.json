@@ -5,6 +5,11 @@
   "team_slug": "shawnee",
   "team_rank": 128,
   "weight_class": 144,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 95,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.667,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
     "ranked_wins": 1,
@@ -48,7 +53,7 @@
     {
       "date": "2026-02-07",
       "opponent_id": "34993293132",
-      "opponent_career_id": null,
+      "opponent_career_id": "career_004019",
       "opponent_name": "Kaylee Klee",
       "opponent_team": "Daviess County",
       "opponent_team_rank": 69,
@@ -64,7 +69,7 @@
     {
       "date": "2026-02-07",
       "opponent_id": "34993293132",
-      "opponent_career_id": null,
+      "opponent_career_id": "career_004019",
       "opponent_name": "Kaylee Klee",
       "opponent_team": "Daviess County",
       "opponent_team_rank": 69,
@@ -140,6 +145,22 @@
       "score": null,
       "duration": "0:00",
       "event": "Screamin` Eagles Classic"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Screamin` Eagles Classic"
     }
   ],
   "career": {
@@ -164,5 +185,5 @@
     "losses": 3,
     "win_pct": 0.571
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

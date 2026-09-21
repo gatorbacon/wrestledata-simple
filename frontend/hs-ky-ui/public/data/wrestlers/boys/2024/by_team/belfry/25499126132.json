@@ -5,6 +5,11 @@
   "team_slug": "belfry",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.75,
-    "bonus_rate": 0.75,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
     "pins": 3
@@ -35,22 +40,6 @@
     "worst_loss": null
   },
   "match_list": [
-    {
-      "date": "2024-01-27",
-      "opponent_id": "24672165132",
-      "opponent_career_id": "career_003559",
-      "opponent_name": "Austin Clark",
-      "opponent_team": "Floyd Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:22",
-      "event": "vs. Floyd Central"
-    },
     {
       "date": "2024-01-27",
       "opponent_id": "24654343132",
@@ -68,6 +57,22 @@
       "event": "vs. Bell County"
     },
     {
+      "date": "2024-01-27",
+      "opponent_id": "24672165132",
+      "opponent_career_id": "career_003559",
+      "opponent_name": "Austin Clark",
+      "opponent_team": "Floyd Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:22",
+      "event": "vs. Floyd Central"
+    },
+    {
       "date": "2024-01-06",
       "opponent_id": "25292987132",
       "opponent_career_id": "career_000065",
@@ -81,7 +86,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:41",
-      "event": "vs. Belfry"
+      "event": "vs. Ashland Blazer"
     },
     {
       "date": "2023-12-29",
@@ -245,5 +250,5 @@
     "losses": 46,
     "win_pct": 0.387
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

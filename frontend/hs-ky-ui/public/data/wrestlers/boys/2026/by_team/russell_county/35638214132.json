@@ -5,6 +5,11 @@
   "team_slug": "russell_county",
   "team_rank": 123,
   "weight_class": 157,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 191,
   "record": {
@@ -42,23 +47,6 @@
   "match_list": [
     {
       "date": "2025-12-20",
-      "opponent_id": "35030260132",
-      "opponent_career_id": "career_002233",
-      "opponent_name": "Tucker Langford",
-      "opponent_team": "Pulaski County",
-      "opponent_team_rank": 50,
-      "opponent_weight": 150,
-      "opponent_rank": 63,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:33",
-      "event": "vs. Russell County",
-      "mv_impact": -6.4
-    },
-    {
-      "date": "2025-12-20",
       "opponent_id": "35206773132",
       "opponent_career_id": "career_004724",
       "opponent_name": "Ethan Howard",
@@ -71,8 +59,25 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Russell County",
+      "event": "vs. Adair County",
       "mv_impact": -7.6
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35030260132",
+      "opponent_career_id": "career_002233",
+      "opponent_name": "Tucker Langford",
+      "opponent_team": "Pulaski County",
+      "opponent_team_rank": 50,
+      "opponent_weight": 150,
+      "opponent_rank": 63,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:33",
+      "event": "vs. Pulaski County",
+      "mv_impact": -6.4
     },
     {
       "date": "2025-12-09",
@@ -88,25 +93,8 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Russell County",
+      "event": "vs. Adair County",
       "mv_impact": -8.31
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35384052132",
-      "opponent_career_id": "career_004794",
-      "opponent_name": "Dominic Hall",
-      "opponent_team": "Male",
-      "opponent_team_rank": 45,
-      "opponent_weight": 150,
-      "opponent_rank": 116,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:39",
-      "event": "The Beast of the East",
-      "mv_impact": -9.53
     },
     {
       "date": "2025-12-06",
@@ -124,6 +112,23 @@
       "duration": "0:28",
       "event": "The Beast of the East",
       "mv_impact": -5.34
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35384052132",
+      "opponent_career_id": "career_004794",
+      "opponent_name": "Dominic Hall",
+      "opponent_team": "Male",
+      "opponent_team_rank": 45,
+      "opponent_weight": 150,
+      "opponent_rank": 116,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:39",
+      "event": "The Beast of the East",
+      "mv_impact": -9.53
     }
   ],
   "career": {
@@ -148,5 +153,5 @@
     "losses": 5,
     "win_pct": 0.0
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

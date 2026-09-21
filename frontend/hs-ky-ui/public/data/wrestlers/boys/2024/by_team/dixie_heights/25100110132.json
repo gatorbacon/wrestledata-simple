@@ -5,6 +5,11 @@
   "team_slug": "dixie_heights",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
@@ -161,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:14",
-      "event": "vs. Dixie Heights"
+      "event": "vs. Boone County"
     },
     {
       "date": "2024-01-18",
@@ -181,6 +186,22 @@
     },
     {
       "date": "2024-01-17",
+      "opponent_id": "24954766132",
+      "opponent_career_id": "career_000606",
+      "opponent_name": "Emilio Rodriguez",
+      "opponent_team": "Covington Catholic",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Covington Catholic"
+    },
+    {
+      "date": "2024-01-17",
       "opponent_id": "25112772132",
       "opponent_career_id": "career_002448",
       "opponent_name": "Nathan Reusch",
@@ -194,22 +215,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Simon Kenton"
-    },
-    {
-      "date": "2024-01-17",
-      "opponent_id": "24954766132",
-      "opponent_career_id": "career_000606",
-      "opponent_name": "Emilio Rodriguez",
-      "opponent_team": "Covington Catholic",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Dixie Heights"
     },
     {
       "date": "2024-01-17",
@@ -241,7 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:04",
-      "event": "vs. Dixie Heights"
+      "event": "vs. Cooper"
     },
     {
       "date": "2024-01-09",
@@ -257,7 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Dixie Heights"
+      "event": "vs. Covington Catholic"
     },
     {
       "date": "2023-12-30",
@@ -309,22 +314,6 @@
     },
     {
       "date": "2023-12-13",
-      "opponent_id": "25284033132",
-      "opponent_career_id": "career_002366",
-      "opponent_name": "Emmett Nunn",
-      "opponent_team": "Scott",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "DEC",
-      "score": "6-4",
-      "duration": "7:00",
-      "event": "vs. Scott"
-    },
-    {
-      "date": "2023-12-13",
       "opponent_id": "OUTSTATE_ac4f5a15625b",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -340,7 +329,7 @@
       "event": "vs. MOUNT HEALTHY"
     },
     {
-      "date": "2023-12-02",
+      "date": "2023-12-13",
       "opponent_id": "25284033132",
       "opponent_career_id": "career_002366",
       "opponent_name": "Emmett Nunn",
@@ -349,11 +338,11 @@
       "opponent_weight": 106,
       "opponent_rank": null,
       "weight_class": "113",
-      "result": "W",
+      "result": "L",
       "method": "DEC",
-      "score": "10-8",
+      "score": "6-4",
       "duration": "7:00",
-      "event": "Battle for the Bone"
+      "event": "vs. Scott"
     },
     {
       "date": "2023-12-02",
@@ -404,6 +393,22 @@
       "event": "Battle for the Bone"
     },
     {
+      "date": "2023-12-02",
+      "opponent_id": "25284033132",
+      "opponent_career_id": "career_002366",
+      "opponent_name": "Emmett Nunn",
+      "opponent_team": "Scott",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "DEC",
+      "score": "10-8",
+      "duration": "7:00",
+      "event": "Battle for the Bone"
+    },
+    {
       "date": "2023-11-30",
       "opponent_id": "25122688132",
       "opponent_career_id": "career_000557",
@@ -417,7 +422,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:57",
-      "event": "vs. Dixie Heights"
+      "event": "vs. Cooper"
     },
     {
       "date": "2023-11-30",
@@ -467,5 +472,5 @@
     "losses": 25,
     "win_pct": 0.432
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

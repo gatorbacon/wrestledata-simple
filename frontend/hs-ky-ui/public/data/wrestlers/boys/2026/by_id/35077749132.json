@@ -5,13 +5,18 @@
   "team_slug": "north_oldham",
   "team_rank": 47,
   "weight_class": 157,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 19,
   "record": {
-    "overall": "13-7",
-    "vs_ranked": "12-5",
-    "vs_top10": "0-1",
-    "vs_top25": "4-2"
+    "overall": "13-6",
+    "vs_ranked": "12-6",
+    "vs_top10": "0-2",
+    "vs_top25": "4-3"
   },
   "metrics": {
     "pf7": 0.0,
@@ -28,9 +33,9 @@
   },
   "opponent_breakdown": {
     "ranked_wins": 12,
-    "ranked_losses": 5,
+    "ranked_losses": 6,
     "top10_wins": 0,
-    "top10_losses": 1,
+    "top10_losses": 2,
     "win_over_highest_rank": {
       "opponent_id": "35040567132",
       "opponent_rank": 21,
@@ -94,6 +99,22 @@
       "event": "Mustang Classic"
     },
     {
+      "date": "2026-02-07",
+      "opponent_id": "34994786132",
+      "opponent_career_id": "career_002627",
+      "opponent_name": "Riley Sanford",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": 29,
+      "opponent_weight": 157,
+      "opponent_rank": 9,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Mustang Classic"
+    },
+    {
       "date": "2026-01-21",
       "opponent_id": "35318029132",
       "opponent_career_id": "career_005465",
@@ -107,7 +128,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:51",
-      "event": "vs. North Oldham"
+      "event": "vs. Iroquois"
     },
     {
       "date": "2026-01-21",
@@ -127,22 +148,6 @@
     },
     {
       "date": "2026-01-17",
-      "opponent_id": "35565724132",
-      "opponent_career_id": "career_004401",
-      "opponent_name": "Grant Coons",
-      "opponent_team": "St. Xavier",
-      "opponent_team_rank": 15,
-      "opponent_weight": 150,
-      "opponent_rank": 32,
-      "weight_class": "157",
-      "result": "L",
-      "method": "MFF",
-      "score": null,
-      "duration": "7:00",
-      "event": "Dragon Invitational"
-    },
-    {
-      "date": "2026-01-17",
       "opponent_id": "35045481132",
       "opponent_career_id": "career_001498",
       "opponent_name": "Emory Dix",
@@ -154,6 +159,22 @@
       "result": "L",
       "method": "MD",
       "score": "13-0",
+      "duration": "7:00",
+      "event": "Dragon Invitational"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35565724132",
+      "opponent_career_id": "career_004401",
+      "opponent_name": "Grant Coons",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": 15,
+      "opponent_weight": 150,
+      "opponent_rank": 32,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MFF",
+      "score": null,
       "duration": "7:00",
       "event": "Dragon Invitational"
     },
@@ -171,7 +192,7 @@
       "method": "MD",
       "score": "14-2",
       "duration": "7:00",
-      "event": "vs. North Oldham"
+      "event": "vs. Fairdale"
     },
     {
       "date": "2025-12-20",
@@ -207,22 +228,6 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35135229132",
-      "opponent_career_id": "career_000712",
-      "opponent_name": "Bryce Hartel",
-      "opponent_team": "Fairdale",
-      "opponent_team_rank": 24,
-      "opponent_weight": 150,
-      "opponent_rank": 25,
-      "weight_class": "157",
-      "result": "W",
-      "method": "DEC",
-      "score": "4-1",
-      "duration": "7:00",
-      "event": "King of the Bluegrass"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35283812132",
       "opponent_career_id": "career_000814",
       "opponent_name": "Joseph Schack",
@@ -235,6 +240,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:11",
+      "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35135229132",
+      "opponent_career_id": "career_000712",
+      "opponent_name": "Bryce Hartel",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": 24,
+      "opponent_weight": 150,
+      "opponent_rank": 25,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": "4-1",
+      "duration": "7:00",
       "event": "King of the Bluegrass"
     },
     {
@@ -283,7 +304,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. North Oldham"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2025-12-06",
@@ -299,7 +320,7 @@
       "method": "TF",
       "score": "15-0",
       "duration": "0:00",
-      "event": "vs. North Oldham"
+      "event": "vs. LaRue County"
     },
     {
       "date": "2025-12-06",
@@ -315,7 +336,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. North Oldham"
+      "event": "vs. Meade County"
     },
     {
       "date": "2025-12-06",
@@ -351,7 +372,7 @@
       "season": 2026,
       "grade": 12,
       "team": "North Oldham",
-      "record": "13-7",
+      "record": "13-6",
       "regional_place": null,
       "state_place": null
     },
@@ -359,7 +380,7 @@
       "season": 2025,
       "grade": 11,
       "team": "North Oldham",
-      "record": "36-12",
+      "record": "37-12",
       "regional_place": 4,
       "state_place": null
     },
@@ -397,9 +418,9 @@
     }
   ],
   "career_record": {
-    "wins": 124,
-    "losses": 80,
-    "win_pct": 0.608
+    "wins": 125,
+    "losses": 79,
+    "win_pct": 0.613
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

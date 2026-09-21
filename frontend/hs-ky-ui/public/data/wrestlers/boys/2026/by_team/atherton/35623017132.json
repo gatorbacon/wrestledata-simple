@@ -5,10 +5,15 @@
   "team_slug": "atherton",
   "team_rank": 4,
   "weight_class": 165,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 47,
   "record": {
-    "overall": "14-17",
+    "overall": "14-18",
     "vs_ranked": "13-18",
     "vs_top10": "0-3",
     "vs_top25": "0-6"
@@ -176,7 +181,7 @@
     {
       "date": "2026-02-11",
       "opponent_id": "35077762132",
-      "opponent_career_id": null,
+      "opponent_career_id": "career_001933",
       "opponent_name": "Blake Copley",
       "opponent_team": "North Oldham",
       "opponent_team_rank": 47,
@@ -255,22 +260,6 @@
     },
     {
       "date": "2026-01-21",
-      "opponent_id": "35212701132",
-      "opponent_career_id": "career_002206",
-      "opponent_name": "Jack Ferguson",
-      "opponent_team": "Pleasure Ridge Park",
-      "opponent_team_rank": 119,
-      "opponent_weight": 150,
-      "opponent_rank": 14,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:24",
-      "event": "vs. Pleasure Ridge Park"
-    },
-    {
-      "date": "2026-01-21",
       "opponent_id": "OUTSTATE_3a96c7740796",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -284,6 +273,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Doss"
+    },
+    {
+      "date": "2026-01-21",
+      "opponent_id": "35212701132",
+      "opponent_career_id": "career_002206",
+      "opponent_name": "Jack Ferguson",
+      "opponent_team": "Pleasure Ridge Park",
+      "opponent_team_rank": 119,
+      "opponent_weight": 150,
+      "opponent_rank": 14,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:24",
+      "event": "vs. Pleasure Ridge Park"
     },
     {
       "date": "2026-01-17",
@@ -332,6 +337,22 @@
       "score": null,
       "duration": "0:00",
       "event": "Bear Brawl"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35181630132",
+      "opponent_career_id": "career_001304",
+      "opponent_name": "Jordan Lawless",
+      "opponent_team": "Jeffersontown",
+      "opponent_team_rank": 26,
+      "opponent_weight": 165,
+      "opponent_rank": 49,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:19",
+      "event": "2026 Lou City Wrestling"
     },
     {
       "date": "2026-01-10",
@@ -384,55 +405,6 @@
       "mv_impact": -2.34
     },
     {
-      "date": "2026-01-10",
-      "opponent_id": "35181630132",
-      "opponent_career_id": "career_001304",
-      "opponent_name": "Jordan Lawless",
-      "opponent_team": "Jeffersontown",
-      "opponent_team_rank": 26,
-      "opponent_weight": 165,
-      "opponent_rank": 49,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:19",
-      "event": "2026 Lou City Wrestling"
-    },
-    {
-      "date": "2025-12-30",
-      "opponent_id": "35182278132",
-      "opponent_career_id": "career_005575",
-      "opponent_name": "Nathan Demarsico",
-      "opponent_team": "North Hardin",
-      "opponent_team_rank": 27,
-      "opponent_weight": 150,
-      "opponent_rank": 165,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Boys Woodford County Invitational"
-    },
-    {
-      "date": "2025-12-30",
-      "opponent_id": "34994786132",
-      "opponent_career_id": "career_002627",
-      "opponent_name": "Riley Sanford",
-      "opponent_team": "Spencer County",
-      "opponent_team_rank": 29,
-      "opponent_weight": 157,
-      "opponent_rank": 9,
-      "weight_class": "157",
-      "result": "L",
-      "method": "TF",
-      "score": "21-4",
-      "duration": "3:44",
-      "event": "Boys Woodford County Invitational",
-      "mv_impact": -1.0
-    },
-    {
       "date": "2025-12-30",
       "opponent_id": "35225681132",
       "opponent_career_id": "career_000788",
@@ -465,6 +437,56 @@
       "duration": "2:12",
       "event": "Boys Woodford County Invitational",
       "mv_impact": 0.47
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "34994786132",
+      "opponent_career_id": "career_002627",
+      "opponent_name": "Riley Sanford",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": 29,
+      "opponent_weight": 157,
+      "opponent_rank": 9,
+      "weight_class": "157",
+      "result": "L",
+      "method": "TF",
+      "score": "21-4",
+      "duration": "3:44",
+      "event": "Boys Woodford County Invitational",
+      "mv_impact": -1.0
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35182278132",
+      "opponent_career_id": "career_005575",
+      "opponent_name": "Nathan Demarsico",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": 27,
+      "opponent_weight": 150,
+      "opponent_rank": 165,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Boys Woodford County Invitational"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35104950132",
+      "opponent_career_id": "career_005557",
+      "opponent_name": "marcus anthony",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 33,
+      "opponent_weight": 165,
+      "opponent_rank": 61,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:28",
+      "event": "vs. Moore",
+      "mv_impact": -6.66
     },
     {
       "date": "2025-12-20",
@@ -514,25 +536,8 @@
       "method": "TF",
       "score": "5-0",
       "duration": "0:00",
-      "event": "vs. Atherton",
+      "event": "vs. Eastern",
       "mv_impact": -4.34
-    },
-    {
-      "date": "2025-12-20",
-      "opponent_id": "35104950132",
-      "opponent_career_id": "career_005557",
-      "opponent_name": "marcus anthony",
-      "opponent_team": "Moore",
-      "opponent_team_rank": 33,
-      "opponent_weight": 165,
-      "opponent_rank": 61,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:28",
-      "event": "vs. Moore",
-      "mv_impact": -6.66
     },
     {
       "date": "2025-12-13",
@@ -582,7 +587,7 @@
       "season": 2026,
       "grade": 10,
       "team": "Atherton",
-      "record": "14-17",
+      "record": "14-18",
       "regional_place": null,
       "state_place": null
     },
@@ -597,8 +602,8 @@
   ],
   "career_record": {
     "wins": 18,
-    "losses": 28,
-    "win_pct": 0.391
+    "losses": 29,
+    "win_pct": 0.383
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

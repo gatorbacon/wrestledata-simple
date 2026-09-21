@@ -5,6 +5,11 @@
   "team_slug": "fairdale",
   "team_rank": null,
   "weight_class": 157,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.696,
-    "bonus_rate": 0.87,
+    "pin_rate": 0.708,
+    "bonus_rate": 0.875,
     "majors": 1,
     "techs": 3,
-    "pins": 16
+    "pins": 17
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -165,6 +170,22 @@
     },
     {
       "date": "2025-02-22",
+      "opponent_id": "29872738132",
+      "opponent_career_id": "career_001568",
+      "opponent_name": "Dallas Sullivan",
+      "opponent_team": "Male",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:50",
+      "event": "KHSAA Region 3"
+    },
+    {
+      "date": "2025-02-22",
       "opponent_id": "29813745132",
       "opponent_career_id": "career_002649",
       "opponent_name": "Maddox Reeves",
@@ -193,7 +214,39 @@
       "method": "FALL",
       "score": null,
       "duration": "2:21",
-      "event": "vs. Fairdale"
+      "event": "vs. Dupont Manual"
+    },
+    {
+      "date": "2025-01-25",
+      "opponent_id": "29993415132",
+      "opponent_career_id": "career_000444",
+      "opponent_name": "Evan Roe",
+      "opponent_team": "Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "3:00",
+      "event": "vs. Central"
+    },
+    {
+      "date": "2025-01-25",
+      "opponent_id": "30042406132",
+      "opponent_career_id": "career_000811",
+      "opponent_name": "Caleb Bobblett",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:36",
+      "event": "vs. Eastern"
     },
     {
       "date": "2025-01-25",
@@ -213,39 +266,7 @@
     },
     {
       "date": "2025-01-25",
-      "opponent_id": "29993415132",
-      "opponent_career_id": "career_000444",
-      "opponent_name": "Evan Roe",
-      "opponent_team": "Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "TF",
-      "score": "15-0",
-      "duration": "3:00",
-      "event": "vs. Fairdale"
-    },
-    {
-      "date": "2025-01-25",
-      "opponent_id": "30042406132",
-      "opponent_career_id": "career_000811",
-      "opponent_name": "Caleb Bobblett",
-      "opponent_team": "Eastern",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:36",
-      "event": "vs. Fairdale"
-    },
-    {
-      "date": "2025-01-25",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_1c4c0bbfe05e",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "North Hardin",
@@ -337,7 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:40",
-      "event": "vs. Fairdale"
+      "event": "vs. Central"
     },
     {
       "date": "2025-01-16",
@@ -389,7 +410,7 @@
     },
     {
       "date": "2025-01-04",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_ce3b8bde608e",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Campbell County",
@@ -468,6 +489,22 @@
       "event": "King of the Bluegrass"
     },
     {
+      "date": "2024-12-14",
+      "opponent_id": "29981969132",
+      "opponent_career_id": "career_000976",
+      "opponent_name": "Triton Moncrief",
+      "opponent_team": "Frederick Douglass",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-3",
+      "duration": "7:00",
+      "event": "King of the Bluegrass"
+    },
+    {
       "date": "2024-12-07",
       "opponent_id": "30042526132",
       "opponent_career_id": "career_000808",
@@ -481,7 +518,7 @@
       "method": "TF",
       "score": "18-0",
       "duration": "0:00",
-      "event": "vs. Fairdale"
+      "event": "vs. Eastern"
     },
     {
       "date": "2024-12-07",
@@ -554,6 +591,7 @@
     "seasons": [
       2026,
       2025,
+      2024,
       2023
     ]
   },
@@ -575,6 +613,14 @@
       "state_place": null
     },
     {
+      "season": 2024,
+      "grade": 8,
+      "team": "Fairdale",
+      "record": "15-12",
+      "regional_place": 4,
+      "state_place": null
+    },
+    {
       "season": 2023,
       "grade": 7,
       "team": "Fairdale",
@@ -584,9 +630,9 @@
     }
   ],
   "career_record": {
-    "wins": 55,
-    "losses": 22,
-    "win_pct": 0.714
+    "wins": 70,
+    "losses": 34,
+    "win_pct": 0.673
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,6 +5,11 @@
   "team_slug": "belfry",
   "team_rank": null,
   "weight_class": 215,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -181,7 +186,7 @@
     },
     {
       "date": "2025-01-25",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_c4763ba75fbf",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Mccreary Central",
@@ -210,6 +215,22 @@
       "score": null,
       "duration": "1:52",
       "event": "vs. Western"
+    },
+    {
+      "date": "2025-01-18",
+      "opponent_id": "OUTSTATE_06086783c52f",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Honaker",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Honaker"
     },
     {
       "date": "2025-01-18",
@@ -242,22 +263,6 @@
       "score": "9-1",
       "duration": "7:00",
       "event": "vs. Lord Botetourt"
-    },
-    {
-      "date": "2025-01-18",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Honaker",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Honaker"
     },
     {
       "date": "2025-01-15",
@@ -309,38 +314,6 @@
     },
     {
       "date": "2024-12-28",
-      "opponent_id": "30065894132",
-      "opponent_career_id": "career_000258",
-      "opponent_name": "Diesel Riggs",
-      "opponent_team": "Boyd County",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:17",
-      "event": "Hatfield-McCoy 32"
-    },
-    {
-      "date": "2024-12-28",
-      "opponent_id": "30065898132",
-      "opponent_career_id": "career_000256",
-      "opponent_name": "Landon Felix",
-      "opponent_team": "Boyd County",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "MD",
-      "score": "15-5",
-      "duration": "7:00",
-      "event": "Hatfield-McCoy 32"
-    },
-    {
-      "date": "2024-12-28",
       "opponent_id": "30888867132",
       "opponent_career_id": "career_000779",
       "opponent_name": "Christian Maddox",
@@ -368,6 +341,38 @@
       "result": "W",
       "method": "FF",
       "score": null,
+      "duration": "7:00",
+      "event": "Hatfield-McCoy 32"
+    },
+    {
+      "date": "2024-12-28",
+      "opponent_id": "30065894132",
+      "opponent_career_id": "career_000258",
+      "opponent_name": "Diesel Riggs",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:17",
+      "event": "Hatfield-McCoy 32"
+    },
+    {
+      "date": "2024-12-28",
+      "opponent_id": "30065898132",
+      "opponent_career_id": "career_000256",
+      "opponent_name": "Landon Felix",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "MD",
+      "score": "15-5",
       "duration": "7:00",
       "event": "Hatfield-McCoy 32"
     },
@@ -421,22 +426,6 @@
     },
     {
       "date": "2024-12-21",
-      "opponent_id": "30065898132",
-      "opponent_career_id": "career_000256",
-      "opponent_name": "Landon Felix",
-      "opponent_team": "Boyd County",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:54",
-      "event": "Bobby Bates Classic"
-    },
-    {
-      "date": "2024-12-21",
       "opponent_id": "31855939132",
       "opponent_career_id": null,
       "opponent_name": "Xayden Brown",
@@ -484,8 +473,24 @@
       "event": "Bobby Bates Classic"
     },
     {
+      "date": "2024-12-21",
+      "opponent_id": "30065898132",
+      "opponent_career_id": "career_000256",
+      "opponent_name": "Landon Felix",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:54",
+      "event": "Bobby Bates Classic"
+    },
+    {
       "date": "2024-12-14",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_4dc1e7a25749",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Hazard",
@@ -514,6 +519,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Knott County Central"
+    },
+    {
+      "date": "2024-12-14",
+      "opponent_id": "OUTSTATE_894249ca0b53",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Letcher County Central",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Letcher County Central"
     },
     {
       "date": "2024-12-14",
@@ -565,22 +586,6 @@
     },
     {
       "date": "2024-12-07",
-      "opponent_id": "29804855132",
-      "opponent_career_id": "career_000170",
-      "opponent_name": "Alexander Goodin",
-      "opponent_team": "Bell County",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:44",
-      "event": "Anchor Down Showdown"
-    },
-    {
-      "date": "2024-12-07",
       "opponent_id": "30386700132",
       "opponent_career_id": "career_000171",
       "opponent_name": "Tucker Hartman",
@@ -593,6 +598,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:51",
+      "event": "Anchor Down Showdown"
+    },
+    {
+      "date": "2024-12-07",
+      "opponent_id": "29804855132",
+      "opponent_career_id": "career_000170",
+      "opponent_name": "Alexander Goodin",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:44",
       "event": "Anchor Down Showdown"
     },
     {
@@ -643,5 +664,5 @@
     "losses": 24,
     "win_pct": 0.607
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

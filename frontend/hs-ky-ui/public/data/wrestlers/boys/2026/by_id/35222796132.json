@@ -5,6 +5,11 @@
   "team_slug": "mercer_county",
   "team_rank": 111,
   "weight_class": 132,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 165,
   "record": {
@@ -24,7 +29,7 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 5
+    "pins": 6
   },
   "opponent_breakdown": {
     "ranked_wins": 4,
@@ -47,24 +52,8 @@
   "match_list": [
     {
       "date": "2026-01-17",
-      "opponent_id": "35124870132",
-      "opponent_career_id": "career_001767",
-      "opponent_name": "Hunter Oakley",
-      "opponent_team": "Montgomery County",
-      "opponent_team_rank": 112,
-      "opponent_weight": 126,
-      "opponent_rank": 23,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:51",
-      "event": "Clash of the Vikings"
-    },
-    {
-      "date": "2026-01-17",
       "opponent_id": "35048614132",
-      "opponent_career_id": null,
+      "opponent_career_id": "career_000216",
       "opponent_name": "Elexis Herrington",
       "opponent_team": "Bourbon County",
       "opponent_team_rank": 61,
@@ -91,6 +80,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:55",
+      "event": "Clash of the Vikings"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35124870132",
+      "opponent_career_id": "career_001767",
+      "opponent_name": "Hunter Oakley",
+      "opponent_team": "Montgomery County",
+      "opponent_team_rank": 112,
+      "opponent_weight": 126,
+      "opponent_rank": 23,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:51",
       "event": "Clash of the Vikings"
     },
     {
@@ -155,7 +160,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Mercer County"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2026-01-07",
@@ -191,6 +196,22 @@
     },
     {
       "date": "2026-01-03",
+      "opponent_id": "36889937132",
+      "opponent_career_id": null,
+      "opponent_name": "Kevin Martinez",
+      "opponent_team": "Winton Woods High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:23",
+      "event": "Adam Cox Memorial 2026"
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "OUTSTATE_c85c6d23b088",
       "opponent_career_id": null,
       "opponent_name": "Cameron Sheppard",
@@ -207,22 +228,6 @@
     },
     {
       "date": "2026-01-03",
-      "opponent_id": "OUTSTATE_41ed1dc59eeb",
-      "opponent_career_id": null,
-      "opponent_name": "Lawrence Hawkins",
-      "opponent_team": "Princeton High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "TF",
-      "score": "19-3",
-      "duration": "0:00",
-      "event": "Adam Cox Memorial 2026"
-    },
-    {
-      "date": "2026-01-03",
       "opponent_id": "OUTSTATE_00e867b30874",
       "opponent_career_id": null,
       "opponent_name": "Ethan Davies",
@@ -235,6 +240,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:36",
+      "event": "Adam Cox Memorial 2026"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "OUTSTATE_41ed1dc59eeb",
+      "opponent_career_id": null,
+      "opponent_name": "Lawrence Hawkins",
+      "opponent_team": "Princeton High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "TF",
+      "score": "19-3",
+      "duration": "0:00",
       "event": "Adam Cox Memorial 2026"
     },
     {
@@ -267,7 +288,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:46",
-      "event": "vs. Mercer County"
+      "event": "vs. George Rogers Clark"
     },
     {
       "date": "2025-12-13",
@@ -372,5 +393,5 @@
     "losses": 13,
     "win_pct": 0.35
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

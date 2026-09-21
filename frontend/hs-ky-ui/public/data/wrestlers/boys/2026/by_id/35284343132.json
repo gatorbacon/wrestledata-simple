@@ -5,11 +5,16 @@
   "team_slug": "eastern",
   "team_rank": 76,
   "weight_class": 215,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 67,
   "record": {
     "overall": "2-0",
-    "vs_ranked": "1-0",
+    "vs_ranked": "2-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
   },
@@ -24,10 +29,10 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 0,
     "top10_wins": 0,
     "top10_losses": 0,
@@ -35,11 +40,27 @@
       "opponent_id": "35638841132",
       "opponent_rank": 279,
       "opponent_name": "Larhyia Thomas",
-      "method": "Fall 0:00"
+      "method": "Fall 0:23"
     },
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35638841132",
+      "opponent_career_id": "career_004833",
+      "opponent_name": "Larhyia Thomas",
+      "opponent_team": "Shawnee",
+      "opponent_team_rank": 128,
+      "opponent_weight": 215,
+      "opponent_rank": 279,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:23",
+      "event": "The Beast of the East"
+    },
     {
       "date": "2025-12-06",
       "opponent_id": "35638841132",
@@ -80,5 +101,5 @@
     "losses": 0,
     "win_pct": 1.0
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

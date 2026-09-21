@@ -5,6 +5,11 @@
   "team_slug": "corbin",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -53,7 +58,7 @@
     },
     {
       "date": "2025-01-09",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_0eea10e36b14",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Knox Central",
@@ -82,6 +87,22 @@
       "score": null,
       "duration": "1:56",
       "event": "vs. Mccreary Central"
+    },
+    {
+      "date": "2025-01-09",
+      "opponent_id": "OUTSTATE_9bb43a32352d",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Pineville",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Pineville"
     },
     {
       "date": "2025-01-04",
@@ -165,6 +186,38 @@
     },
     {
       "date": "2024-12-30",
+      "opponent_id": "29804840132",
+      "opponent_career_id": "career_000174",
+      "opponent_name": "Johnathan Tapp",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:47",
+      "event": "vs. Bell County"
+    },
+    {
+      "date": "2024-12-30",
+      "opponent_id": "OUTSTATE_d10736e8834f",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Claiborne High School",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Claiborne High School"
+    },
+    {
+      "date": "2024-12-30",
       "opponent_id": "30371032132",
       "opponent_career_id": "career_001713",
       "opponent_name": "Gavin Williams",
@@ -178,38 +231,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Mccreary Central"
-    },
-    {
-      "date": "2024-12-30",
-      "opponent_id": "29804840132",
-      "opponent_career_id": "career_000174",
-      "opponent_name": "Johnathan Tapp",
-      "opponent_team": "Bell County",
-      "opponent_team_rank": null,
-      "opponent_weight": 285,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:47",
-      "event": "vs. Corbin"
-    },
-    {
-      "date": "2024-12-30",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Claiborne High School",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Claiborne High School"
     },
     {
       "date": "2024-12-30",
@@ -245,22 +266,6 @@
     },
     {
       "date": "2024-12-28",
-      "opponent_id": "31799092132",
-      "opponent_career_id": "career_002609",
-      "opponent_name": "Daniel Costello",
-      "opponent_team": "Southwestern",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:31",
-      "event": "vs. Southwestern"
-    },
-    {
-      "date": "2024-12-28",
       "opponent_id": "29804840132",
       "opponent_career_id": "career_000174",
       "opponent_name": "Johnathan Tapp",
@@ -273,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:38",
-      "event": "vs. Corbin"
+      "event": "vs. Bell County"
     },
     {
       "date": "2024-12-28",
@@ -309,6 +314,22 @@
     },
     {
       "date": "2024-12-28",
+      "opponent_id": "31799092132",
+      "opponent_career_id": "career_002609",
+      "opponent_name": "Daniel Costello",
+      "opponent_team": "Southwestern",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:31",
+      "event": "vs. Southwestern"
+    },
+    {
+      "date": "2024-12-28",
       "opponent_id": "30212318132",
       "opponent_career_id": "career_002912",
       "opponent_name": "Carter Smith",
@@ -336,8 +357,8 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Corbin"
+      "duration": "3:32",
+      "event": "vs. Boyd County"
     },
     {
       "date": "2024-12-14",
@@ -353,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:20",
-      "event": "vs. Corbin"
+      "event": "vs. Bryan Station"
     },
     {
       "date": "2024-12-14",
@@ -368,8 +389,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Corbin"
+      "duration": "0:51",
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2024-12-14",
@@ -405,7 +426,7 @@
     },
     {
       "date": "2024-12-09",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_0eea10e36b14",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Knox Central",
@@ -421,22 +442,6 @@
     },
     {
       "date": "2024-12-07",
-      "opponent_id": "30035596132",
-      "opponent_career_id": "career_000602",
-      "opponent_name": "Seth Jones",
-      "opponent_team": "Corbin",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Joe Cochran State Farm HCIWT"
-    },
-    {
-      "date": "2024-12-07",
       "opponent_id": "30083205132",
       "opponent_career_id": "career_000231",
       "opponent_name": "Lucas Coleman",
@@ -446,6 +451,22 @@
       "opponent_rank": null,
       "weight_class": "285",
       "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Joe Cochran State Farm HCIWT"
+    },
+    {
+      "date": "2024-12-07",
+      "opponent_id": "30035596132",
+      "opponent_career_id": "career_000602",
+      "opponent_name": "Seth Jones",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -530,7 +551,7 @@
       "season": 2026,
       "grade": 10,
       "team": "Corbin",
-      "record": "39-10",
+      "record": "38-10",
       "regional_place": 1,
       "state_place": 8
     },
@@ -546,15 +567,15 @@
       "season": 2024,
       "grade": 8,
       "team": "Corbin",
-      "record": "12-7",
+      "record": "12-8",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 72,
-    "losses": 27,
-    "win_pct": 0.727
+    "wins": 71,
+    "losses": 28,
+    "win_pct": 0.717
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,6 +5,11 @@
   "team_slug": "east_carter",
   "team_rank": 73,
   "weight_class": 113,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 60,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.727,
-    "bonus_rate": 0.909,
+    "pin_rate": 0.8,
+    "bonus_rate": 1.0,
     "majors": 2,
     "techs": 0,
     "pins": 8
@@ -143,22 +148,6 @@
     },
     {
       "date": "2026-02-14",
-      "opponent_id": "35012794132",
-      "opponent_career_id": "career_005670",
-      "opponent_name": "Chuck Bentancourt",
-      "opponent_team": "Shawnee",
-      "opponent_team_rank": 128,
-      "opponent_weight": 106,
-      "opponent_rank": 27,
-      "weight_class": "113",
-      "result": "L",
-      "method": "DEC",
-      "score": "10-9",
-      "duration": "7:00",
-      "event": "2026 Kentucky JV State Tournament"
-    },
-    {
-      "date": "2026-02-14",
       "opponent_id": "35048601132",
       "opponent_career_id": "career_000209",
       "opponent_name": "Jayden Muratalla",
@@ -186,6 +175,22 @@
       "result": "W",
       "method": "MFF",
       "score": null,
+      "duration": "7:00",
+      "event": "2026 Kentucky JV State Tournament"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35012794132",
+      "opponent_career_id": "career_005670",
+      "opponent_name": "Chuck Bentancourt",
+      "opponent_team": "Shawnee",
+      "opponent_team_rank": 128,
+      "opponent_weight": 106,
+      "opponent_rank": 27,
+      "weight_class": "113",
+      "result": "L",
+      "method": "DEC",
+      "score": "10-9",
       "duration": "7:00",
       "event": "2026 Kentucky JV State Tournament"
     },
@@ -219,7 +224,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. East Carter"
+      "event": "vs. Belfry"
     },
     {
       "date": "2026-02-07",
@@ -272,7 +277,7 @@
     {
       "date": "2026-01-17",
       "opponent_id": "34993527132",
-      "opponent_career_id": null,
+      "opponent_career_id": "career_002392",
       "opponent_name": "Ava Castleman",
       "opponent_team": "Scott County",
       "opponent_team_rank": 126,
@@ -299,7 +304,7 @@
       "method": "MD",
       "score": "10-2",
       "duration": "7:00",
-      "event": "vs. East Carter"
+      "event": "vs. Boyd County"
     },
     {
       "date": "2026-01-06",
@@ -319,22 +324,6 @@
     },
     {
       "date": "2026-01-03",
-      "opponent_id": "35739743132",
-      "opponent_career_id": "career_005534",
-      "opponent_name": "Luke Delong",
-      "opponent_team": "Mason County",
-      "opponent_team_rank": 107,
-      "opponent_weight": 106,
-      "opponent_rank": 102,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Mason County"
-    },
-    {
-      "date": "2026-01-03",
       "opponent_id": "35754343132",
       "opponent_career_id": "career_001435",
       "opponent_name": "Bentley Fleming",
@@ -348,6 +337,22 @@
       "score": null,
       "duration": "3:49",
       "event": "vs. Lawrence County"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35739743132",
+      "opponent_career_id": "career_005534",
+      "opponent_name": "Luke Delong",
+      "opponent_team": "Mason County",
+      "opponent_team_rank": 107,
+      "opponent_weight": 106,
+      "opponent_rank": 102,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Mason County"
     },
     {
       "date": "2026-01-03",
@@ -573,5 +578,5 @@
     "losses": 20,
     "win_pct": 0.535
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

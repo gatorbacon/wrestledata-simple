@@ -5,10 +5,15 @@
   "team_slug": "pulaski_county",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
-    "overall": "35-6",
+    "overall": "35-7",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.963,
+    "pin_rate": 0.966,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 26
+    "pins": 28
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -35,6 +40,22 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2025-02-22",
+      "opponent_id": "29804841132",
+      "opponent_career_id": "career_000163",
+      "opponent_name": "Hunter Goodin",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "KHSAA Region 7"
+    },
     {
       "date": "2025-02-22",
       "opponent_id": "29804841132",
@@ -133,7 +154,7 @@
     },
     {
       "date": "2025-01-28",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_021f644ea71a",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Perry County Central",
@@ -177,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:33",
-      "event": "vs. Pulaski County"
+      "event": "vs. Bardstown"
     },
     {
       "date": "2025-01-25",
@@ -193,23 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:06",
-      "event": "vs. Pulaski County"
-    },
-    {
-      "date": "2025-01-25",
-      "opponent_id": "29835326132",
-      "opponent_career_id": "career_003024",
-      "opponent_name": "Isaac Johns",
-      "opponent_team": "Woodford County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:45",
-      "event": "vs. Woodford County"
+      "event": "vs. North Bullitt"
     },
     {
       "date": "2025-01-25",
@@ -228,6 +233,22 @@
       "event": "vs. Southwestern"
     },
     {
+      "date": "2025-01-25",
+      "opponent_id": "29835326132",
+      "opponent_career_id": "career_003024",
+      "opponent_name": "Isaac Johns",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:45",
+      "event": "vs. Woodford County"
+    },
+    {
       "date": "2025-01-15",
       "opponent_id": "29789444132",
       "opponent_career_id": "career_000278",
@@ -241,7 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Pulaski County"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2025-01-15",
@@ -257,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Pulaski County"
+      "event": "vs. Corbin"
     },
     {
       "date": "2025-01-15",
@@ -273,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:46",
-      "event": "vs. Pulaski County"
+      "event": "vs. Knox Central"
     },
     {
       "date": "2025-01-15",
@@ -325,7 +346,7 @@
     },
     {
       "date": "2025-01-04",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_efc7437b8406",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Southwestern",
@@ -337,38 +358,6 @@
       "method": "FF",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Southwestern"
-    },
-    {
-      "date": "2024-12-30",
-      "opponent_id": "30370896132",
-      "opponent_career_id": "career_001698",
-      "opponent_name": "Nathan Kramer",
-      "opponent_team": "Mccreary Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "TF",
-      "score": "19-3",
-      "duration": "0:00",
-      "event": "vs. Pulaski County"
-    },
-    {
-      "date": "2024-12-30",
-      "opponent_id": "30503245132",
-      "opponent_career_id": "career_002596",
-      "opponent_name": "Bryce Bateman",
-      "opponent_team": "Southwestern",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
       "event": "vs. Southwestern"
     },
     {
@@ -385,11 +374,27 @@
       "method": "DEC",
       "score": "5-3",
       "duration": "7:00",
-      "event": "vs. Pulaski County"
+      "event": "vs. Corbin"
     },
     {
       "date": "2024-12-30",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "30370896132",
+      "opponent_career_id": "career_001698",
+      "opponent_name": "Nathan Kramer",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "TF",
+      "score": "19-3",
+      "duration": "0:00",
+      "event": "vs. Mccreary Central"
+    },
+    {
+      "date": "2024-12-30",
+      "opponent_id": "OUTSTATE_021f644ea71a",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Perry County Central",
@@ -420,6 +425,22 @@
       "event": "vs. Claiborne High School"
     },
     {
+      "date": "2024-12-30",
+      "opponent_id": "30503245132",
+      "opponent_career_id": "career_002596",
+      "opponent_name": "Bryce Bateman",
+      "opponent_team": "Southwestern",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Southwestern"
+    },
+    {
       "date": "2024-12-21",
       "opponent_id": "30332354132",
       "opponent_career_id": "career_001381",
@@ -433,7 +454,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:43",
-      "event": "vs. Pulaski County"
+      "event": "vs. Knox Central"
     },
     {
       "date": "2024-12-21",
@@ -449,7 +470,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:31",
-      "event": "vs. Pulaski County"
+      "event": "vs. Pineville"
     },
     {
       "date": "2024-12-21",
@@ -481,7 +502,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:15",
-      "event": "vs. Pulaski County"
+      "event": "vs. Mccreary Central"
     },
     {
       "date": "2024-12-19",
@@ -501,7 +522,7 @@
     },
     {
       "date": "2024-12-19",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_efc7437b8406",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Southwestern",
@@ -529,7 +550,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:30",
-      "event": "vs. Pulaski County"
+      "event": "vs. Bardstown"
     },
     {
       "date": "2024-12-14",
@@ -545,7 +566,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:20",
-      "event": "vs. Pulaski County"
+      "event": "vs. Henry Clay"
     },
     {
       "date": "2024-12-14",
@@ -561,7 +582,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Pulaski County"
+      "event": "vs. Jeffersontown"
     },
     {
       "date": "2024-12-14",
@@ -577,7 +598,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:43",
-      "event": "vs. Pulaski County"
+      "event": "vs. Madison Southern"
     },
     {
       "date": "2024-12-14",
@@ -593,7 +614,39 @@
       "method": "FALL",
       "score": null,
       "duration": "3:33",
-      "event": "vs. Pulaski County"
+      "event": "vs. Paul Laurence Dunbar"
+    },
+    {
+      "date": "2024-11-30",
+      "opponent_id": "29804841132",
+      "opponent_career_id": "career_000163",
+      "opponent_name": "Hunter Goodin",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:37",
+      "event": "vs. Bell County"
+    },
+    {
+      "date": "2024-11-30",
+      "opponent_id": "30370968132",
+      "opponent_career_id": "career_001699",
+      "opponent_name": "Keegan Perry",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Mccreary Central"
     },
     {
       "date": "2024-11-30",
@@ -613,39 +666,7 @@
     },
     {
       "date": "2024-11-30",
-      "opponent_id": "29804841132",
-      "opponent_career_id": "career_000163",
-      "opponent_name": "Hunter Goodin",
-      "opponent_team": "Bell County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:37",
-      "event": "vs. Pulaski County"
-    },
-    {
-      "date": "2024-11-30",
-      "opponent_id": "30370968132",
-      "opponent_career_id": "career_001699",
-      "opponent_name": "Keegan Perry",
-      "opponent_team": "Mccreary Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Pulaski County"
-    },
-    {
-      "date": "2024-11-30",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_efc7437b8406",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Southwestern",
@@ -658,6 +679,38 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Southwestern"
+    },
+    {
+      "date": "2024-11-30",
+      "opponent_id": "OUTSTATE_9bb43a32352d",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Pineville",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Pineville"
+    },
+    {
+      "date": "2024-11-22",
+      "opponent_id": "29885541132",
+      "opponent_career_id": null,
+      "opponent_name": "Lucas Boles",
+      "opponent_team": "Scott High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Scott High School"
     }
   ],
   "career": {
@@ -673,7 +726,7 @@
       "season": 2025,
       "grade": 10,
       "team": "Pulaski County",
-      "record": "35-6",
+      "record": "35-7",
       "regional_place": null,
       "state_place": null
     },
@@ -688,8 +741,8 @@
   ],
   "career_record": {
     "wins": 44,
-    "losses": 12,
-    "win_pct": 0.786
+    "losses": 13,
+    "win_pct": 0.772
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

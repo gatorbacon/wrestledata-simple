@@ -5,6 +5,11 @@
   "team_slug": "west_jessamine",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,10 +25,10 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.75,
+    "pin_rate": 0.462,
+    "bonus_rate": 0.769,
     "majors": 3,
-    "techs": 0,
+    "techs": 1,
     "pins": 6
   },
   "opponent_breakdown": {
@@ -160,6 +165,22 @@
       "result": "W",
       "method": "FALL",
       "score": null,
+      "duration": "0:00",
+      "event": "2025 Eagles Invitational"
+    },
+    {
+      "date": "2025-02-08",
+      "opponent_id": "29893086132",
+      "opponent_career_id": "career_002710",
+      "opponent_name": "Max Kelsay",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "TF",
+      "score": "22-5",
       "duration": "0:00",
       "event": "2025 Eagles Invitational"
     },
@@ -389,6 +410,22 @@
     },
     {
       "date": "2024-12-14",
+      "opponent_id": "29820287132",
+      "opponent_career_id": "career_000749",
+      "opponent_name": "Tristan Meredith",
+      "opponent_team": "Dupont Manual",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "MD",
+      "score": "14-2",
+      "duration": "7:00",
+      "event": "vs. Dupont Manual"
+    },
+    {
+      "date": "2024-12-14",
       "opponent_id": "29982203132",
       "opponent_career_id": "career_000975",
       "opponent_name": "Joshua Sandifer",
@@ -401,7 +438,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. West Jessamine"
+      "event": "vs. Frederick Douglass"
     },
     {
       "date": "2024-12-14",
@@ -417,7 +454,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:41",
-      "event": "vs. West Jessamine"
+      "event": "vs. Trinity (Louisville)"
     },
     {
       "date": "2024-12-14",
@@ -436,22 +473,6 @@
       "event": "vs. Western Hills"
     },
     {
-      "date": "2024-12-14",
-      "opponent_id": "29820287132",
-      "opponent_career_id": "career_000749",
-      "opponent_name": "Tristan Meredith",
-      "opponent_team": "Dupont Manual",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "MD",
-      "score": "14-2",
-      "duration": "7:00",
-      "event": "vs. West Jessamine"
-    },
-    {
       "date": "2024-12-07",
       "opponent_id": "29788826132",
       "opponent_career_id": "career_001790",
@@ -465,7 +486,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. West Jessamine"
+      "event": "vs. Moore"
     },
     {
       "date": "2024-12-07",
@@ -481,23 +502,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. West Jessamine"
-    },
-    {
-      "date": "2024-11-30",
-      "opponent_id": "30176105132",
-      "opponent_career_id": "career_002279",
-      "opponent_name": "Taner Woodman",
-      "opponent_team": "Rowan County",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:13",
-      "event": "vs. West Jessamine"
+      "event": "vs. Tates Creek"
     },
     {
       "date": "2024-11-30",
@@ -513,7 +518,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:59",
-      "event": "vs. West Jessamine"
+      "event": "vs. Nelson County"
+    },
+    {
+      "date": "2024-11-30",
+      "opponent_id": "30176105132",
+      "opponent_career_id": "career_002279",
+      "opponent_name": "Taner Woodman",
+      "opponent_team": "Rowan County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:13",
+      "event": "vs. Rowan County"
     },
     {
       "date": "2024-11-30",
@@ -529,7 +550,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:35",
-      "event": "vs. West Jessamine"
+      "event": "vs. Spencer County"
     }
   ],
   "career": {
@@ -554,5 +575,5 @@
     "losses": 19,
     "win_pct": 0.406
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

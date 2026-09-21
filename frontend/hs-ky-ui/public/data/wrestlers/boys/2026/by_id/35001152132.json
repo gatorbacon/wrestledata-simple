@@ -5,6 +5,11 @@
   "team_slug": "central_hardin",
   "team_rank": 11,
   "weight_class": 215,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 55,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.84,
-    "bonus_rate": 0.84,
+    "pin_rate": 0.913,
+    "bonus_rate": 0.913,
     "majors": 0,
     "techs": 0,
     "pins": 21
@@ -191,22 +196,6 @@
     },
     {
       "date": "2026-02-07",
-      "opponent_id": "35045510132",
-      "opponent_career_id": "career_001512",
-      "opponent_name": "Cameron Hunt",
-      "opponent_team": "Madison Central",
-      "opponent_team_rank": 12,
-      "opponent_weight": 175,
-      "opponent_rank": 44,
-      "weight_class": "215",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Madison Central"
-    },
-    {
-      "date": "2026-02-07",
       "opponent_id": "35205220132",
       "opponent_career_id": "career_003960",
       "opponent_name": "Blake Vires",
@@ -219,7 +208,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Central Hardin"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2026-02-07",
@@ -252,6 +241,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Ryle"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35045510132",
+      "opponent_career_id": "career_001512",
+      "opponent_name": "Cameron Hunt",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": 12,
+      "opponent_weight": 175,
+      "opponent_rank": 44,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Madison Central"
     },
     {
       "date": "2026-01-20",
@@ -347,7 +352,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Central Hardin"
+      "event": "vs. Bullitt Central"
     },
     {
       "date": "2026-01-17",
@@ -463,22 +468,6 @@
     },
     {
       "date": "2026-01-10",
-      "opponent_id": "35700434132",
-      "opponent_career_id": "career_005023",
-      "opponent_name": "Lucas Shaheen",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 95,
-      "opponent_weight": 190,
-      "opponent_rank": 170,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:34",
-      "event": "Bear Down Invitational (Boys)"
-    },
-    {
-      "date": "2026-01-10",
       "opponent_id": "35207531132",
       "opponent_career_id": "career_004609",
       "opponent_name": "Joseph Chapman",
@@ -523,6 +512,22 @@
       "method": "MFF",
       "score": null,
       "duration": "7:00",
+      "event": "Bear Down Invitational (Boys)"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35700434132",
+      "opponent_career_id": "career_005023",
+      "opponent_name": "Lucas Shaheen",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 95,
+      "opponent_weight": 190,
+      "opponent_rank": 170,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:34",
       "event": "Bear Down Invitational (Boys)"
     },
     {
@@ -799,38 +804,6 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35520916132",
-      "opponent_career_id": "career_005544",
-      "opponent_name": "Isaac Mangin",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": 110,
-      "opponent_weight": 190,
-      "opponent_rank": 81,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:42",
-      "event": "vs. Meade County"
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "OUTSTATE_df019622d45a",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Somerset",
-      "opponent_team_rank": 36,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Somerset"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "OUTSTATE_bddbdc615208",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -860,6 +833,38 @@
       "score": null,
       "duration": "0:40",
       "event": "vs. Logan County"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35520916132",
+      "opponent_career_id": "career_005544",
+      "opponent_name": "Isaac Mangin",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": 110,
+      "opponent_weight": 190,
+      "opponent_rank": 81,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:42",
+      "event": "vs. Meade County"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "OUTSTATE_df019622d45a",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Somerset",
+      "opponent_team_rank": 36,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Somerset"
     },
     {
       "date": "2025-12-09",
@@ -988,15 +993,15 @@
       "season": 2024,
       "grade": 9,
       "team": "Central Hardin",
-      "record": "15-13",
+      "record": "13-11",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 52,
-    "losses": 42,
-    "win_pct": 0.553
+    "wins": 50,
+    "losses": 40,
+    "win_pct": 0.556
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

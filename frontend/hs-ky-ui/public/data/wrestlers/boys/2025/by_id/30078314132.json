@@ -5,6 +5,11 @@
   "team_slug": "mccracken_county",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -37,6 +42,22 @@
   "match_list": [
     {
       "date": "2025-01-15",
+      "opponent_id": "29882556132",
+      "opponent_career_id": "career_001180",
+      "opponent_name": "Vinson Embry",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "INJ",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Henderson County"
+    },
+    {
+      "date": "2025-01-15",
       "opponent_id": "30218894132",
       "opponent_career_id": "career_000037",
       "opponent_name": "Craig Bell",
@@ -50,22 +71,6 @@
       "score": null,
       "duration": "0:24",
       "event": "vs. Apollo"
-    },
-    {
-      "date": "2025-01-15",
-      "opponent_id": "29882556132",
-      "opponent_career_id": "career_001180",
-      "opponent_name": "Vinson Embry",
-      "opponent_team": "Henderson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "INJ",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. McCracken County"
     },
     {
       "date": "2025-01-14",
@@ -245,6 +250,38 @@
     },
     {
       "date": "2024-12-21",
+      "opponent_id": "30636818132",
+      "opponent_career_id": "career_000384",
+      "opponent_name": "Braylyn Stevens",
+      "opponent_team": "Calloway County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:53",
+      "event": "vs. Calloway County"
+    },
+    {
+      "date": "2024-12-21",
+      "opponent_id": "OUTSTATE_ff7db33ebb7d",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Henderson County"
+    },
+    {
+      "date": "2024-12-21",
       "opponent_id": "29815400132",
       "opponent_career_id": "career_002813",
       "opponent_name": "Thomas Meisel",
@@ -258,38 +295,6 @@
       "score": null,
       "duration": "0:35",
       "event": "vs. Union County"
-    },
-    {
-      "date": "2024-12-21",
-      "opponent_id": "30636818132",
-      "opponent_career_id": "career_000384",
-      "opponent_name": "Braylyn Stevens",
-      "opponent_team": "Calloway County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:53",
-      "event": "vs. McCracken County"
-    },
-    {
-      "date": "2024-12-21",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Henderson County",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Henderson County"
     },
     {
       "date": "2024-12-21",
@@ -321,7 +326,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:52",
-      "event": "vs. McCracken County"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2024-12-07",
@@ -341,22 +346,6 @@
     },
     {
       "date": "2024-12-07",
-      "opponent_id": "OUTSTATE_2f6659702bed",
-      "opponent_career_id": null,
-      "opponent_name": "Logan Wergel",
-      "opponent_team": "Evansville F.j. Reitz",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:14",
-      "event": "vs. Evansville F.j. Reitz"
-    },
-    {
-      "date": "2024-12-07",
       "opponent_id": "30486199132",
       "opponent_career_id": "career_002043",
       "opponent_name": "Eli Wimsatt",
@@ -370,6 +359,22 @@
       "score": null,
       "duration": "0:10",
       "event": "vs. Owensboro Catholic"
+    },
+    {
+      "date": "2024-12-07",
+      "opponent_id": "OUTSTATE_2f6659702bed",
+      "opponent_career_id": null,
+      "opponent_name": "Logan Wergel",
+      "opponent_team": "Evansville F.j. Reitz",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:14",
+      "event": "vs. Evansville F.j. Reitz"
     },
     {
       "date": "2024-12-07",
@@ -437,7 +442,7 @@
     },
     {
       "date": "2024-11-27",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_c11f13cdbeae",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Greenwood",
@@ -466,6 +471,22 @@
       "score": null,
       "duration": "0:41",
       "event": "vs. Rossview High School"
+    },
+    {
+      "date": "2024-11-27",
+      "opponent_id": "OUTSTATE_b33c2e25670f",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Warren Central",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Warren Central"
     },
     {
       "date": "2024-11-27",
@@ -525,7 +546,7 @@
       "season": 2022,
       "grade": 9,
       "team": "McCracken County",
-      "record": "27-10",
+      "record": "24-9",
       "regional_place": 3,
       "state_place": null
     },
@@ -541,15 +562,15 @@
       "season": 2020,
       "grade": 7,
       "team": "McCracken County",
-      "record": "2-2",
+      "record": "3-2",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 141,
-    "losses": 41,
-    "win_pct": 0.775
+    "wins": 139,
+    "losses": 40,
+    "win_pct": 0.777
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

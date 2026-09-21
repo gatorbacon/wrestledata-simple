@@ -5,10 +5,15 @@
   "team_slug": "apollo",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
-    "overall": "9-2",
+    "overall": "40-8",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.846,
-    "bonus_rate": 0.923,
-    "majors": 1,
+    "pin_rate": 0.818,
+    "bonus_rate": 0.909,
+    "majors": 2,
     "techs": 1,
-    "pins": 22
+    "pins": 27
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -35,22 +40,6 @@
     "worst_loss": null
   },
   "match_list": [
-    {
-      "date": "2024-02-16",
-      "opponent_id": "24972257132",
-      "opponent_career_id": "career_003104",
-      "opponent_name": "Trintin Baker",
-      "opponent_team": "Bullitt East",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "KHSAA State Championship"
-    },
     {
       "date": "2024-02-16",
       "opponent_id": "27855572132",
@@ -65,6 +54,22 @@
       "method": "FALL",
       "score": null,
       "duration": "3:21",
+      "event": "KHSAA State Championship"
+    },
+    {
+      "date": "2024-02-16",
+      "opponent_id": "24972257132",
+      "opponent_career_id": "career_003104",
+      "opponent_name": "Trintin Baker",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
       "event": "KHSAA State Championship"
     },
     {
@@ -193,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:41",
-      "event": "vs. Apollo High School"
+      "event": "vs. Daviess County"
     },
     {
       "date": "2024-01-25",
@@ -209,7 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Apollo High School"
+      "event": "vs. Owensboro"
     },
     {
       "date": "2024-01-25",
@@ -225,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Apollo High School"
+      "event": "vs. Owensboro Catholic"
     },
     {
       "date": "2024-01-24",
@@ -261,22 +266,6 @@
     },
     {
       "date": "2024-01-13",
-      "opponent_id": "25131982132",
-      "opponent_career_id": "career_003299",
-      "opponent_name": "Malachi Gray",
-      "opponent_team": "McCracken County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "DEC",
-      "score": "12-10",
-      "duration": "7:00",
-      "event": "vs. Apollo High School"
-    },
-    {
-      "date": "2024-01-13",
       "opponent_id": "24653906132",
       "opponent_career_id": "career_000655",
       "opponent_name": "Ollie Ezell",
@@ -289,23 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Apollo High School"
-    },
-    {
-      "date": "2024-01-13",
-      "opponent_id": "24713063132",
-      "opponent_career_id": "career_001187",
-      "opponent_name": "Ethan Peckenpaugh",
-      "opponent_team": "Henderson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "DEC",
-      "score": "9-7",
-      "duration": "7:00",
-      "event": "vs. Apollo High School"
+      "event": "vs. Daviess County"
     },
     {
       "date": "2024-01-13",
@@ -321,7 +294,39 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Apollo High School"
+      "event": "vs. Owensboro"
+    },
+    {
+      "date": "2024-01-13",
+      "opponent_id": "25131982132",
+      "opponent_career_id": "career_003299",
+      "opponent_name": "Malachi Gray",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "12-10",
+      "duration": "7:00",
+      "event": "vs. McCracken County"
+    },
+    {
+      "date": "2024-01-13",
+      "opponent_id": "24713063132",
+      "opponent_career_id": "career_001187",
+      "opponent_name": "Ethan Peckenpaugh",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-7",
+      "duration": "7:00",
+      "event": "vs. Henderson County"
     },
     {
       "date": "2024-01-03",
@@ -337,7 +342,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Apollo High School"
+      "event": "vs. Fort Campbell"
     },
     {
       "date": "2024-01-03",
@@ -353,7 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Apollo High School"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2024-01-03",
@@ -369,7 +374,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Apollo High School"
+      "event": "vs. Hopkinsville"
+    },
+    {
+      "date": "2023-12-29",
+      "opponent_id": "OUTSTATE_0ed4fad1f245",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Green County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Green County"
     },
     {
       "date": "2023-12-29",
@@ -385,7 +406,23 @@
       "method": "TF",
       "score": "20-4",
       "duration": "0:00",
-      "event": "vs. Apollo High School"
+      "event": "vs. Henderson County"
+    },
+    {
+      "date": "2023-12-29",
+      "opponent_id": "24801501132",
+      "opponent_career_id": "career_001091",
+      "opponent_name": "Tugra Semerci",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Greenwood High School"
     },
     {
       "date": "2023-12-29",
@@ -401,7 +438,103 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Apollo High School"
+      "event": "vs. Hopkinsville"
+    },
+    {
+      "date": "2023-12-29",
+      "opponent_id": "25475359132",
+      "opponent_career_id": null,
+      "opponent_name": "Chase Bowman",
+      "opponent_team": "Southridge",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "DEC",
+      "score": "6-4",
+      "duration": "7:00",
+      "event": "vs. Southridge"
+    },
+    {
+      "date": "2023-12-19",
+      "opponent_id": "OUTSTATE_36ad700e1cca",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "South Warren High School",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. South Warren High School"
+    },
+    {
+      "date": "2023-12-19",
+      "opponent_id": "24801501132",
+      "opponent_career_id": "career_001091",
+      "opponent_name": "Tugra Semerci",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Greenwood High School"
+    },
+    {
+      "date": "2023-12-19",
+      "opponent_id": "OUTSTATE_f9ef9ee34d01",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Warren Central HIgh School",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Warren Central HIgh School"
+    },
+    {
+      "date": "2023-12-19",
+      "opponent_id": "24681124132",
+      "opponent_career_id": null,
+      "opponent_name": "Nikolas Taylor",
+      "opponent_team": "White House Heritage",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. White House Heritage"
+    },
+    {
+      "date": "2023-12-19",
+      "opponent_id": "OUTSTATE_a1dcf137cf85",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Owensboro Catholic High School",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Owensboro Catholic High School"
     },
     {
       "date": "2023-12-09",
@@ -421,22 +554,6 @@
     },
     {
       "date": "2023-12-09",
-      "opponent_id": "25234066132",
-      "opponent_career_id": "career_003488",
-      "opponent_name": "Luke Jeziorski",
-      "opponent_team": "Atherton",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "TF",
-      "score": "15-0",
-      "duration": "3:33",
-      "event": "king of the bluegrass"
-    },
-    {
-      "date": "2023-12-09",
       "opponent_id": "24674702132",
       "opponent_career_id": "career_004510",
       "opponent_name": "Brandon Burchett",
@@ -449,6 +566,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:39",
+      "event": "king of the bluegrass"
+    },
+    {
+      "date": "2023-12-09",
+      "opponent_id": "25234066132",
+      "opponent_career_id": "career_003488",
+      "opponent_name": "Luke Jeziorski",
+      "opponent_team": "Atherton",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "3:33",
       "event": "king of the bluegrass"
     },
     {
@@ -469,6 +602,22 @@
     },
     {
       "date": "2023-12-02",
+      "opponent_id": "24664064132",
+      "opponent_career_id": null,
+      "opponent_name": "Jackson Wilson",
+      "opponent_team": "Ravenwood",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "V 175",
+      "result": "L",
+      "method": "DEC",
+      "score": "11-7",
+      "duration": "7:00",
+      "event": "2023 Christian County Scramble"
+    },
+    {
+      "date": "2023-12-02",
       "opponent_id": "25427432132",
       "opponent_career_id": "career_004301",
       "opponent_name": "Justin Woodrome",
@@ -485,18 +634,18 @@
     },
     {
       "date": "2023-12-02",
-      "opponent_id": "25114069132",
-      "opponent_career_id": "career_002608",
-      "opponent_name": "Aiden Whitson",
-      "opponent_team": "Southwestern",
+      "opponent_id": "25495243132",
+      "opponent_career_id": "career_004435",
+      "opponent_name": "Brody Calhoun",
+      "opponent_team": "Trigg County",
       "opponent_team_rank": null,
-      "opponent_weight": 165,
+      "opponent_weight": 175,
       "opponent_rank": null,
       "weight_class": "V 175",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:21",
       "event": "2023 Christian County Scramble"
     },
     {
@@ -517,19 +666,99 @@
     },
     {
       "date": "2023-12-02",
-      "opponent_id": "25495243132",
-      "opponent_career_id": "career_004435",
-      "opponent_name": "Brody Calhoun",
-      "opponent_team": "Trigg County",
+      "opponent_id": "25114069132",
+      "opponent_career_id": "career_002608",
+      "opponent_name": "Aiden Whitson",
+      "opponent_team": "Southwestern",
       "opponent_team_rank": null,
-      "opponent_weight": 175,
+      "opponent_weight": 165,
       "opponent_rank": null,
       "weight_class": "V 175",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "1:21",
+      "duration": "0:00",
       "event": "2023 Christian County Scramble"
+    },
+    {
+      "date": "2023-11-22",
+      "opponent_id": "25128219132",
+      "opponent_career_id": null,
+      "opponent_name": "Nathaniel Ellis",
+      "opponent_team": "West Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "MD",
+      "score": "19-9",
+      "duration": "7:00",
+      "event": "vs. West Creek"
+    },
+    {
+      "date": "2023-11-22",
+      "opponent_id": "24873524132",
+      "opponent_career_id": null,
+      "opponent_name": "Devin Otero",
+      "opponent_team": "Rossview",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:09",
+      "event": "vs. Rossview"
+    },
+    {
+      "date": "2023-11-22",
+      "opponent_id": "OUTSTATE_36ad700e1cca",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "South Warren High School",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. South Warren High School"
+    },
+    {
+      "date": "2023-11-22",
+      "opponent_id": "24801501132",
+      "opponent_career_id": "career_001091",
+      "opponent_name": "Tugra Semerci",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:51",
+      "event": "vs. Greenwood High School"
+    },
+    {
+      "date": "2023-11-22",
+      "opponent_id": "OUTSTATE_f9ef9ee34d01",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Warren Central HIgh School",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Warren Central HIgh School"
     },
     {
       "date": "2023-11-22",
@@ -545,7 +774,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:55",
-      "event": "vs. Apollo High School"
+      "event": "vs. McCracken County"
+    },
+    {
+      "date": "2023-11-20",
+      "opponent_id": "25332180132",
+      "opponent_career_id": null,
+      "opponent_name": "Nate Hatch",
+      "opponent_team": "Mt. Vernon",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Mt. Vernon"
     },
     {
       "date": "2023-11-20",
@@ -561,7 +806,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Apollo High School"
+      "event": "vs. Henderson County"
     }
   ],
   "career": {
@@ -586,7 +831,7 @@
       "season": 2024,
       "grade": 11,
       "team": "Apollo",
-      "record": "9-2",
+      "record": "40-8",
       "regional_place": 4,
       "state_place": null
     },
@@ -600,9 +845,9 @@
     }
   ],
   "career_record": {
-    "wins": 53,
-    "losses": 22,
-    "win_pct": 0.707
+    "wins": 84,
+    "losses": 28,
+    "win_pct": 0.75
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

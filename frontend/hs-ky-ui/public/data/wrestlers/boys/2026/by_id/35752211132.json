@@ -5,13 +5,18 @@
   "team_slug": "johnson_central",
   "team_rank": 2,
   "weight_class": 138,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 2,
   "record": {
-    "overall": "45-5",
-    "vs_ranked": "16-1",
+    "overall": "40-5",
+    "vs_ranked": "12-1",
     "vs_top10": "3-1",
-    "vs_top25": "11-1"
+    "vs_top25": "8-1"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,14 +25,14 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.6,
-    "bonus_rate": 0.875,
+    "pin_rate": 0.556,
+    "bonus_rate": 0.861,
     "majors": 2,
     "techs": 9,
-    "pins": 24
+    "pins": 20
   },
   "opponent_breakdown": {
-    "ranked_wins": 16,
+    "ranked_wins": 12,
     "ranked_losses": 1,
     "top10_wins": 3,
     "top10_losses": 1,
@@ -139,7 +144,7 @@
       "method": "SV-1",
       "score": "4-1",
       "duration": "8:15",
-      "event": "vs. Johnson Central"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2026-02-07",
@@ -175,6 +180,22 @@
     },
     {
       "date": "2026-01-23",
+      "opponent_id": "35850446132",
+      "opponent_career_id": "career_000239",
+      "opponent_name": "Kaiden Nottingham",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": 6,
+      "opponent_weight": 138,
+      "opponent_rank": 20,
+      "weight_class": "138",
+      "result": "W",
+      "method": "TF",
+      "score": "19-3",
+      "duration": "0:00",
+      "event": "vs. Boyd County"
+    },
+    {
+      "date": "2026-01-23",
       "opponent_id": "OUTSTATE_5f12fe12414a",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -188,22 +209,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Union"
-    },
-    {
-      "date": "2026-01-23",
-      "opponent_id": "35850446132",
-      "opponent_career_id": "career_000239",
-      "opponent_name": "Kaiden Nottingham",
-      "opponent_team": "Boyd County",
-      "opponent_team_rank": 6,
-      "opponent_weight": 138,
-      "opponent_rank": 20,
-      "weight_class": "138",
-      "result": "W",
-      "method": "TF",
-      "score": "19-3",
-      "duration": "0:00",
-      "event": "vs. Johnson Central"
     },
     {
       "date": "2026-01-17",
@@ -220,6 +225,22 @@
       "score": "17-1",
       "duration": "0:00",
       "event": "vs. John S. Battle"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35002850132",
+      "opponent_career_id": null,
+      "opponent_name": "Jaxon Anderson",
+      "opponent_team": "Union",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "MD",
+      "score": "10-0",
+      "duration": "7:00",
+      "event": "vs. Union"
     },
     {
       "date": "2026-01-17",
@@ -268,22 +289,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Virginia H.S."
-    },
-    {
-      "date": "2026-01-17",
-      "opponent_id": "35002850132",
-      "opponent_career_id": null,
-      "opponent_name": "Jaxon Anderson",
-      "opponent_team": "Union",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "MD",
-      "score": "10-0",
-      "duration": "7:00",
-      "event": "vs. Union"
     },
     {
       "date": "2026-01-09",
@@ -415,22 +420,6 @@
     },
     {
       "date": "2026-01-02",
-      "opponent_id": "OUTSTATE_ecb9670d40ca",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Winfield",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Winfield"
-    },
-    {
-      "date": "2026-01-02",
       "opponent_id": "35416204132",
       "opponent_career_id": null,
       "opponent_name": "Eithan Cordle",
@@ -444,6 +433,22 @@
       "score": null,
       "duration": "2:20",
       "event": "vs. Richlands"
+    },
+    {
+      "date": "2026-01-02",
+      "opponent_id": "OUTSTATE_ecb9670d40ca",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Winfield",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Winfield"
     },
     {
       "date": "2026-01-02",
@@ -556,70 +561,6 @@
       "score": null,
       "duration": "4:40",
       "event": "Boys Hatfield McCoy 32 2025"
-    },
-    {
-      "date": "2025-12-29",
-      "opponent_id": "35680323132",
-      "opponent_career_id": "career_004849",
-      "opponent_name": "Dalton Turner",
-      "opponent_team": "Whitley County",
-      "opponent_team_rank": 16,
-      "opponent_weight": 144,
-      "opponent_rank": 116,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "HATFIELD-MCCOY 32"
-    },
-    {
-      "date": "2025-12-29",
-      "opponent_id": "35420642132",
-      "opponent_career_id": "career_002996",
-      "opponent_name": "Channing Carte",
-      "opponent_team": "Whitley County",
-      "opponent_team_rank": 16,
-      "opponent_weight": 144,
-      "opponent_rank": 24,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "HATFIELD-MCCOY 32"
-    },
-    {
-      "date": "2025-12-29",
-      "opponent_id": "35144512132",
-      "opponent_career_id": "career_001403",
-      "opponent_name": "Joseph Kresel",
-      "opponent_team": "LaRue County",
-      "opponent_team_rank": 98,
-      "opponent_weight": 144,
-      "opponent_rank": 18,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "HATFIELD-MCCOY 32"
-    },
-    {
-      "date": "2025-12-29",
-      "opponent_id": "35732594132",
-      "opponent_career_id": "career_001607",
-      "opponent_name": "Jeremy Begley",
-      "opponent_team": "Martin County",
-      "opponent_team_rank": 14,
-      "opponent_weight": 150,
-      "opponent_rank": 18,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "HATFIELD-MCCOY 32"
     },
     {
       "date": "2025-12-20",
@@ -847,7 +788,7 @@
       "season": 2026,
       "grade": 12,
       "team": "Johnson Central",
-      "record": "45-5",
+      "record": "40-5",
       "regional_place": 1,
       "state_place": 2
     },
@@ -863,7 +804,7 @@
       "season": 2024,
       "grade": 10,
       "team": "Johnson Central",
-      "record": "35-12",
+      "record": "34-12",
       "regional_place": 1,
       "state_place": 8
     },
@@ -871,7 +812,7 @@
       "season": 2023,
       "grade": 9,
       "team": "Johnson Central",
-      "record": "49-9",
+      "record": "47-8",
       "regional_place": 1,
       "state_place": 6
     },
@@ -879,7 +820,7 @@
       "season": 2022,
       "grade": 8,
       "team": "Johnson Central",
-      "record": "43-4",
+      "record": "42-4",
       "regional_place": 1,
       "state_place": 4
     },
@@ -893,9 +834,9 @@
     }
   ],
   "career_record": {
-    "wins": 226,
-    "losses": 39,
-    "win_pct": 0.853
+    "wins": 217,
+    "losses": 38,
+    "win_pct": 0.851
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

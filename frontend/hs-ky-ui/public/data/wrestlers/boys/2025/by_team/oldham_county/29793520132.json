@@ -5,10 +5,15 @@
   "team_slug": "oldham_county",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
-    "overall": "15-14",
+    "overall": "18-15",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.8,
-    "bonus_rate": 0.933,
+    "pin_rate": 0.765,
+    "bonus_rate": 0.882,
     "majors": 1,
     "techs": 1,
-    "pins": 12
+    "pins": 13
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -113,7 +118,7 @@
       "method": "DEC",
       "score": "15-13",
       "duration": "7:00",
-      "event": "vs. Oldham County"
+      "event": "vs. Henry Clay"
     },
     {
       "date": "2025-01-18",
@@ -225,7 +230,7 @@
       "method": "TF",
       "score": "24-8",
       "duration": "5:00",
-      "event": "vs. Oldham County"
+      "event": "vs. Central"
     },
     {
       "date": "2024-12-28",
@@ -241,7 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:25",
-      "event": "vs. Oldham County"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2024-12-28",
@@ -257,7 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:33",
-      "event": "vs. Oldham County"
+      "event": "vs. Meade County"
     },
     {
       "date": "2024-12-28",
@@ -273,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Oldham County"
+      "event": "vs. North Hardin"
     },
     {
       "date": "2024-12-21",
@@ -341,6 +346,22 @@
     },
     {
       "date": "2024-12-21",
+      "opponent_id": "OUTSTATE_16d898c65f0d",
+      "opponent_career_id": null,
+      "opponent_name": "Ethan Elliott",
+      "opponent_team": "Greensburg",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "DEC",
+      "score": "17-15",
+      "duration": "7:00",
+      "event": "Jefff Classic"
+    },
+    {
+      "date": "2024-12-21",
       "opponent_id": "30136785132",
       "opponent_career_id": null,
       "opponent_name": "Brian Conley",
@@ -369,23 +390,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:35",
-      "event": "vs. Oldham County"
-    },
-    {
-      "date": "2024-12-14",
-      "opponent_id": "29806493132",
-      "opponent_career_id": "career_002800",
-      "opponent_name": "Brennen Clifford",
-      "opponent_team": "Union County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "TF",
-      "score": "18-2",
-      "duration": "0:00",
-      "event": "vs. Union County"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2024-12-14",
@@ -436,6 +441,22 @@
       "event": "vs. Trinity (Louisville)"
     },
     {
+      "date": "2024-12-14",
+      "opponent_id": "29806493132",
+      "opponent_career_id": "career_002800",
+      "opponent_name": "Brennen Clifford",
+      "opponent_team": "Union County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "TF",
+      "score": "18-2",
+      "duration": "0:00",
+      "event": "vs. Union County"
+    },
+    {
       "date": "2024-12-11",
       "opponent_id": "30293055132",
       "opponent_career_id": "career_000010",
@@ -449,7 +470,23 @@
       "method": "FALL",
       "score": null,
       "duration": "2:36",
-      "event": "vs. Oldham County High school"
+      "event": "vs. Anderson County"
+    },
+    {
+      "date": "2024-12-11",
+      "opponent_id": "29982152132",
+      "opponent_career_id": "career_000969",
+      "opponent_name": "Keith Johnson",
+      "opponent_team": "Frederick Douglass",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:55",
+      "event": "vs. Frederick Douglas High School"
     },
     {
       "date": "2024-12-07",
@@ -465,7 +502,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:42",
-      "event": "vs. Oldham County"
+      "event": "vs. LaRue County"
     },
     {
       "date": "2024-12-07",
@@ -553,15 +590,15 @@
       "season": 2025,
       "grade": 9,
       "team": "Oldham County",
-      "record": "15-14",
+      "record": "18-15",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 20,
-    "losses": 19,
-    "win_pct": 0.513
+    "wins": 23,
+    "losses": 20,
+    "win_pct": 0.535
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

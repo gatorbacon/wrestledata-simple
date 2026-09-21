@@ -5,6 +5,11 @@
   "team_slug": "bourbon_county",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.6,
-    "bonus_rate": 0.6,
+    "pin_rate": 0.75,
+    "bonus_rate": 0.75,
     "majors": 0,
     "techs": 0,
     "pins": 3
@@ -165,22 +170,6 @@
     },
     {
       "date": "2024-12-21",
-      "opponent_id": "29948521132",
-      "opponent_career_id": "career_001000",
-      "opponent_name": "Bryan Falls",
-      "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:00",
-      "event": "vs. George Rogers Clark"
-    },
-    {
-      "date": "2024-12-21",
       "opponent_id": "30625146132",
       "opponent_career_id": "career_000309",
       "opponent_name": "Fernando Cruz",
@@ -210,6 +199,22 @@
       "score": "3-2",
       "duration": "7:00",
       "event": "vs. Dixie Heights"
+    },
+    {
+      "date": "2024-12-21",
+      "opponent_id": "29948521132",
+      "opponent_career_id": "career_001000",
+      "opponent_name": "Bryan Falls",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "vs. George Rogers Clark"
     },
     {
       "date": "2024-12-21",
@@ -266,5 +271,5 @@
     "losses": 8,
     "win_pct": 0.385
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,6 +5,11 @@
   "team_slug": "male",
   "team_rank": null,
   "weight_class": 215,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.731,
+    "pin_rate": 0.52,
+    "bonus_rate": 0.76,
     "majors": 3,
     "techs": 3,
     "pins": 13
@@ -145,7 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:03",
-      "event": "vs. Male"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2025-01-25",
@@ -161,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:27",
-      "event": "vs. Male"
+      "event": "vs. Madison Central"
     },
     {
       "date": "2025-01-25",
@@ -209,7 +214,7 @@
       "method": "TF",
       "score": "18-0",
       "duration": "3:00",
-      "event": "vs. Male"
+      "event": "vs. Central"
     },
     {
       "date": "2025-01-18",
@@ -273,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:20",
-      "event": "vs. Male"
+      "event": "vs. Atherton"
     },
     {
       "date": "2025-01-15",
@@ -289,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:13",
-      "event": "vs. Male"
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2025-01-04",
@@ -305,7 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:49",
-      "event": "vs. Male"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2025-01-04",
@@ -321,7 +326,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Male"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2025-01-04",
@@ -357,7 +362,7 @@
     },
     {
       "date": "2025-01-04",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_5855457a7894",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Bullitt Central",
@@ -405,22 +410,6 @@
     },
     {
       "date": "2024-12-21",
-      "opponent_id": "OUTSTATE_12815e06321b",
-      "opponent_career_id": null,
-      "opponent_name": "Forfeit Forfeit",
-      "opponent_team": "New Washington",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "Jefff Classic"
-    },
-    {
-      "date": "2024-12-21",
       "opponent_id": "30136788132",
       "opponent_career_id": null,
       "opponent_name": "Mason Grubb",
@@ -433,6 +422,22 @@
       "method": "FALL",
       "score": null,
       "duration": "4:31",
+      "event": "Jefff Classic"
+    },
+    {
+      "date": "2024-12-21",
+      "opponent_id": "OUTSTATE_12815e06321b",
+      "opponent_career_id": null,
+      "opponent_name": "Forfeit Forfeit",
+      "opponent_team": "New Washington",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
       "event": "Jefff Classic"
     },
     {
@@ -517,22 +522,6 @@
     },
     {
       "date": "2024-12-14",
-      "opponent_id": "29804370132",
-      "opponent_career_id": "career_001943",
-      "opponent_name": "Steel Chandler",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:45",
-      "event": "King of the Bluegrass"
-    },
-    {
-      "date": "2024-12-14",
       "opponent_id": "29982149132",
       "opponent_career_id": "career_000984",
       "opponent_name": "Hunter Horton",
@@ -545,6 +534,22 @@
       "method": "MD",
       "score": "13-2",
       "duration": "7:00",
+      "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2024-12-14",
+      "opponent_id": "29804370132",
+      "opponent_career_id": "career_001943",
+      "opponent_name": "Steel Chandler",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:45",
       "event": "King of the Bluegrass"
     },
     {
@@ -561,7 +566,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:29",
-      "event": "vs. Male"
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2024-12-07",
@@ -577,7 +582,7 @@
       "method": "DEC",
       "score": "7-4",
       "duration": "7:00",
-      "event": "vs. Male"
+      "event": "vs. Fairdale"
     },
     {
       "date": "2024-12-07",
@@ -597,7 +602,7 @@
     },
     {
       "date": "2024-12-07",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_ab3b37a09a95",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Desales",
@@ -625,7 +630,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "vs. Male"
+      "event": "vs. Eastern"
     },
     {
       "date": "2024-12-04",
@@ -716,5 +721,5 @@
     "losses": 45,
     "win_pct": 0.694
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,11 +5,16 @@
   "team_slug": "bourbon_county",
   "team_rank": 61,
   "weight_class": 126,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 45,
   "record": {
-    "overall": "21-11",
-    "vs_ranked": "18-11",
+    "overall": "20-11",
+    "vs_ranked": "19-11",
     "vs_top10": "0-0",
     "vs_top25": "0-6"
   },
@@ -20,14 +25,14 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.833,
+    "pin_rate": 0.684,
+    "bonus_rate": 0.842,
     "majors": 0,
     "techs": 3,
-    "pins": 12
+    "pins": 13
   },
   "opponent_breakdown": {
-    "ranked_wins": 18,
+    "ranked_wins": 19,
     "ranked_losses": 11,
     "top10_wins": 0,
     "top10_losses": 0,
@@ -91,6 +96,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:23",
+      "event": "KHSAA Boys/Coed Region 6"
+    },
+    {
+      "date": "2026-02-21",
+      "opponent_id": "34999332132",
+      "opponent_career_id": "career_005410",
+      "opponent_name": "Zayne Foust",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": 42,
+      "opponent_weight": 126,
+      "opponent_rank": 61,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:14",
       "event": "KHSAA Boys/Coed Region 6"
     },
     {
@@ -207,6 +228,22 @@
     },
     {
       "date": "2026-02-11",
+      "opponent_id": "35033124132",
+      "opponent_career_id": "career_002679",
+      "opponent_name": "Grahame Herald",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": 132,
+      "opponent_weight": 132,
+      "opponent_rank": 75,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Tates Creek"
+    },
+    {
+      "date": "2026-02-11",
       "opponent_id": "OUTSTATE_f4528cea2848",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -238,22 +275,6 @@
       "event": "vs. Lexington Christian"
     },
     {
-      "date": "2026-02-11",
-      "opponent_id": "35033124132",
-      "opponent_career_id": "career_002679",
-      "opponent_name": "Grahame Herald",
-      "opponent_team": "Tates Creek",
-      "opponent_team_rank": 132,
-      "opponent_weight": 132,
-      "opponent_rank": 75,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Tates Creek"
-    },
-    {
       "date": "2026-01-22",
       "opponent_id": "35359588132",
       "opponent_career_id": "career_002100",
@@ -268,6 +289,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Paul Laurence Dunbar"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "35398418132",
+      "opponent_career_id": "career_001221",
+      "opponent_name": "Calvin Votel",
+      "opponent_team": "Highlands",
+      "opponent_team_rank": 10,
+      "opponent_weight": 126,
+      "opponent_rank": 43,
+      "weight_class": "126",
+      "result": "L",
+      "method": "DEC",
+      "score": "18-11",
+      "duration": "7:00",
+      "event": "vs. Highlands"
     },
     {
       "date": "2026-01-10",
@@ -302,22 +339,6 @@
       "duration": "0:00",
       "event": "vs. Covington Catholic",
       "mv_impact": -3.57
-    },
-    {
-      "date": "2026-01-10",
-      "opponent_id": "35398418132",
-      "opponent_career_id": "career_001221",
-      "opponent_name": "Calvin Votel",
-      "opponent_team": "Highlands",
-      "opponent_team_rank": 10,
-      "opponent_weight": 126,
-      "opponent_rank": 43,
-      "weight_class": "126",
-      "result": "L",
-      "method": "DEC",
-      "score": "18-11",
-      "duration": "7:00",
-      "event": "vs. Highlands"
     },
     {
       "date": "2026-01-10",
@@ -406,23 +427,6 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35359596132",
-      "opponent_career_id": "career_002102",
-      "opponent_name": "Matthew Glover",
-      "opponent_team": "Paul Laurence Dunbar",
-      "opponent_team_rank": 115,
-      "opponent_weight": 120,
-      "opponent_rank": 106,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Paul Laurence Dunbar",
-      "mv_impact": 3.88
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35402951132",
       "opponent_career_id": "career_005242",
       "opponent_name": "Brody Soards",
@@ -473,6 +477,23 @@
       "mv_impact": 4.15
     },
     {
+      "date": "2025-12-13",
+      "opponent_id": "35359596132",
+      "opponent_career_id": "career_002102",
+      "opponent_name": "Matthew Glover",
+      "opponent_team": "Paul Laurence Dunbar",
+      "opponent_team_rank": 115,
+      "opponent_weight": 120,
+      "opponent_rank": 106,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Paul Laurence Dunbar",
+      "mv_impact": 3.88
+    },
+    {
       "date": "2025-12-06",
       "opponent_id": "35359596132",
       "opponent_career_id": "career_002102",
@@ -491,23 +512,6 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "34997616132",
-      "opponent_career_id": "career_000573",
-      "opponent_name": "Hagen Anders",
-      "opponent_team": "Corbin",
-      "opponent_team_rank": 19,
-      "opponent_weight": 120,
-      "opponent_rank": 36,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Joe Cochran State Farm HCIWT",
-      "mv_impact": -4.92
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "34997611132",
       "opponent_career_id": "career_000576",
       "opponent_name": "Mason Dean",
@@ -522,6 +526,23 @@
       "duration": "0:00",
       "event": "Joe Cochran State Farm HCIWT",
       "mv_impact": 1.45
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "34997616132",
+      "opponent_career_id": "career_000573",
+      "opponent_name": "Hagen Anders",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": 19,
+      "opponent_weight": 120,
+      "opponent_rank": 36,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Joe Cochran State Farm HCIWT",
+      "mv_impact": -4.92
     },
     {
       "date": "2025-12-06",
@@ -554,7 +575,7 @@
       "season": 2026,
       "grade": 10,
       "team": "Bourbon County",
-      "record": "21-11",
+      "record": "20-11",
       "regional_place": 4,
       "state_place": null
     },
@@ -562,15 +583,15 @@
       "season": 2025,
       "grade": 9,
       "team": "Bourbon County",
-      "record": "1-8",
+      "record": "1-7",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 22,
-    "losses": 19,
-    "win_pct": 0.537
+    "wins": 21,
+    "losses": 18,
+    "win_pct": 0.538
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

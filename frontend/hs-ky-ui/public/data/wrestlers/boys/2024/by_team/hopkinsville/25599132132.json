@@ -5,6 +5,11 @@
   "team_slug": "hopkinsville",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
@@ -37,6 +42,22 @@
   "match_list": [
     {
       "date": "2023-12-29",
+      "opponent_id": "24803344132",
+      "opponent_career_id": "career_000032",
+      "opponent_name": "Grayson West",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Apollo High School"
+    },
+    {
+      "date": "2023-12-29",
       "opponent_id": "25555729132",
       "opponent_career_id": "career_004107",
       "opponent_name": "Lucian Amburgey",
@@ -49,7 +70,7 @@
       "method": "DEC",
       "score": "16-10",
       "duration": "7:00",
-      "event": "vs. Hopkinsville"
+      "event": "vs. Green County"
     },
     {
       "date": "2023-12-29",
@@ -82,22 +103,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Greenwood High School"
-    },
-    {
-      "date": "2023-12-29",
-      "opponent_id": "24803344132",
-      "opponent_career_id": "career_000032",
-      "opponent_name": "Grayson West",
-      "opponent_team": "Apollo",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Apollo High School"
     },
     {
       "date": "2023-12-29",
@@ -154,5 +159,5 @@
     "losses": 4,
     "win_pct": 0.333
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

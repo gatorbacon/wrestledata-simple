@@ -5,6 +5,11 @@
   "team_slug": "fort_campbell",
   "team_rank": null,
   "weight_class": 138,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
@@ -101,6 +106,22 @@
     },
     {
       "date": "2023-12-28",
+      "opponent_id": "25158084132",
+      "opponent_career_id": "career_003695",
+      "opponent_name": "Antonio Rodriguez",
+      "opponent_team": "Bardstown",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:33",
+      "event": "Ft. Campbell JV Tournament"
+    },
+    {
+      "date": "2023-12-28",
       "opponent_id": "24859298132",
       "opponent_career_id": null,
       "opponent_name": "Tommy Lacroix",
@@ -168,10 +189,19 @@
     "career_id": "career_004074",
     "canonical_name": "Seth Puraty",
     "seasons": [
+      2026,
       2024
     ]
   },
   "season_summary": [
+    {
+      "season": 2026,
+      "grade": 12,
+      "team": "Fort Campbell",
+      "record": "2-4",
+      "regional_place": null,
+      "state_place": null
+    },
     {
       "season": 2024,
       "grade": 10,
@@ -182,9 +212,9 @@
     }
   ],
   "career_record": {
-    "wins": 4,
-    "losses": 5,
-    "win_pct": 0.444
+    "wins": 6,
+    "losses": 9,
+    "win_pct": 0.4
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

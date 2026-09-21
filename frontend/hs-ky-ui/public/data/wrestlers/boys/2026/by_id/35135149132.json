@@ -5,6 +5,11 @@
   "team_slug": "fairdale",
   "team_rank": 24,
   "weight_class": 165,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 9,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.708,
-    "bonus_rate": 0.917,
+    "pin_rate": 0.739,
+    "bonus_rate": 0.957,
     "majors": 4,
     "techs": 1,
     "pins": 17
@@ -219,7 +224,7 @@
       "method": "TF",
       "score": "16-0",
       "duration": "0:00",
-      "event": "vs. Fairdale"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2026-02-07",
@@ -235,7 +240,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Fairdale"
+      "event": "vs. Christian County"
     },
     {
       "date": "2026-02-07",
@@ -251,7 +256,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:51",
-      "event": "vs. Fairdale"
+      "event": "vs. Corbin"
     },
     {
       "date": "2026-02-07",
@@ -466,6 +471,22 @@
     },
     {
       "date": "2026-01-03",
+      "opponent_id": "35640359132",
+      "opponent_career_id": "career_001043",
+      "opponent_name": "Jeremy Marks",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": 43,
+      "opponent_weight": 165,
+      "opponent_rank": 18,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "11-5",
+      "duration": "7:00",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "34997567132",
       "opponent_career_id": "career_000994",
       "opponent_name": "Brock Heidle",
@@ -480,22 +501,6 @@
       "duration": "3:19",
       "event": "Warhawk Classic",
       "mv_impact": 8.48
-    },
-    {
-      "date": "2026-01-03",
-      "opponent_id": "35640359132",
-      "opponent_career_id": "career_001043",
-      "opponent_name": "Jeremy Marks",
-      "opponent_team": "Great Crossing",
-      "opponent_team_rank": 43,
-      "opponent_weight": 165,
-      "opponent_rank": 18,
-      "weight_class": "165",
-      "result": "L",
-      "method": "DEC",
-      "score": "11-5",
-      "duration": "7:00",
-      "event": "Warhawk Classic"
     },
     {
       "date": "2026-01-03",
@@ -538,6 +543,7 @@
     "seasons": [
       2026,
       2025,
+      2024,
       2023
     ]
   },
@@ -559,6 +565,14 @@
       "state_place": null
     },
     {
+      "season": 2024,
+      "grade": 8,
+      "team": "Fairdale",
+      "record": "15-12",
+      "regional_place": 4,
+      "state_place": null
+    },
+    {
       "season": 2023,
       "grade": 7,
       "team": "Fairdale",
@@ -568,9 +582,9 @@
     }
   ],
   "career_record": {
-    "wins": 55,
-    "losses": 22,
-    "win_pct": 0.714
+    "wins": 70,
+    "losses": 34,
+    "win_pct": 0.673
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

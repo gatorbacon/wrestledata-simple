@@ -5,13 +5,18 @@
   "team_slug": "oldham_county",
   "team_rank": 113,
   "weight_class": 120,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 18,
   "record": {
     "overall": "35-10",
-    "vs_ranked": "24-9",
-    "vs_top10": "1-4",
-    "vs_top25": "4-8"
+    "vs_ranked": "24-8",
+    "vs_top10": "1-3",
+    "vs_top25": "4-7"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,17 +25,17 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.818,
+    "pin_rate": 0.647,
+    "bonus_rate": 0.794,
     "majors": 1,
     "techs": 4,
     "pins": 22
   },
   "opponent_breakdown": {
     "ranked_wins": 24,
-    "ranked_losses": 9,
+    "ranked_losses": 8,
     "top10_wins": 1,
-    "top10_losses": 4,
+    "top10_losses": 3,
     "win_over_highest_rank": {
       "opponent_id": "34988547132",
       "opponent_rank": 6,
@@ -159,6 +164,22 @@
     },
     {
       "date": "2026-02-07",
+      "opponent_id": "34988547132",
+      "opponent_career_id": "career_000518",
+      "opponent_name": "Keaton Dicken",
+      "opponent_team": "Conner",
+      "opponent_team_rank": 31,
+      "opponent_weight": 120,
+      "opponent_rank": 6,
+      "weight_class": "120",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-7",
+      "duration": "7:00",
+      "event": "vs. Conner"
+    },
+    {
+      "date": "2026-02-07",
       "opponent_id": "35338302132",
       "opponent_career_id": "career_005724",
       "opponent_name": "Eli Higdon",
@@ -174,22 +195,6 @@
       "event": "vs. Trinity (Louisville)"
     },
     {
-      "date": "2026-02-07",
-      "opponent_id": "34988547132",
-      "opponent_career_id": "career_000518",
-      "opponent_name": "Keaton Dicken",
-      "opponent_team": "Conner",
-      "opponent_team_rank": 31,
-      "opponent_weight": 120,
-      "opponent_rank": 6,
-      "weight_class": "120",
-      "result": "W",
-      "method": "DEC",
-      "score": "9-7",
-      "duration": "7:00",
-      "event": "vs. Oldham County"
-    },
-    {
       "date": "2026-01-17",
       "opponent_id": "35208147132",
       "opponent_career_id": "career_005016",
@@ -203,7 +208,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:08",
-      "event": "vs. Oldham County"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2026-01-17",
@@ -234,7 +239,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "4:24",
+      "duration": "3:42",
       "event": "vs. Union County"
     },
     {
@@ -267,7 +272,7 @@
       "method": "MD",
       "score": "17-6",
       "duration": "7:00",
-      "event": "vs. Oldham County"
+      "event": "vs. Moore"
     },
     {
       "date": "2026-01-14",
@@ -299,7 +304,7 @@
       "method": "DEC",
       "score": "13-7",
       "duration": "7:00",
-      "event": "vs. Oldham County"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2026-01-07",
@@ -478,22 +483,6 @@
       "event": "Boys Hatfield McCoy 32 2025"
     },
     {
-      "date": "2025-12-29",
-      "opponent_id": "35752489132",
-      "opponent_career_id": "career_001342",
-      "opponent_name": "Carson Matney",
-      "opponent_team": "Johnson Central",
-      "opponent_team_rank": 2,
-      "opponent_weight": 120,
-      "opponent_rank": 7,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "HATFIELD-MCCOY 32"
-    },
-    {
       "date": "2025-12-20",
       "opponent_id": "OUTSTATE_f0b623185274",
       "opponent_career_id": null,
@@ -507,22 +496,6 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Jeff Classic"
-    },
-    {
-      "date": "2025-12-20",
-      "opponent_id": "-1",
-      "opponent_career_id": null,
-      "opponent_name": "Kalem Harris",
-      "opponent_team": "Mt. Vernon",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "DEC",
-      "score": "7-0",
-      "duration": "7:00",
       "event": "Jeff Classic"
     },
     {
@@ -558,6 +531,38 @@
       "event": "Jeff Classic"
     },
     {
+      "date": "2025-12-20",
+      "opponent_id": "-1",
+      "opponent_career_id": null,
+      "opponent_name": "Kalem Harris",
+      "opponent_team": "Mt. Vernon",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "DEC",
+      "score": "7-0",
+      "duration": "7:00",
+      "event": "Jeff Classic"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "-1",
+      "opponent_career_id": null,
+      "opponent_name": "Kalem Harris",
+      "opponent_team": "Mt. Vernon",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-5",
+      "duration": "7:00",
+      "event": "Jeff Classic"
+    },
+    {
       "date": "2025-12-17",
       "opponent_id": "35217375132",
       "opponent_career_id": "career_004980",
@@ -571,7 +576,7 @@
       "method": "TF",
       "score": "15-0",
       "duration": "0:00",
-      "event": "vs. Oldham County"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2025-12-17",
@@ -603,7 +608,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Oldham County"
+      "event": "vs. Corbin"
     },
     {
       "date": "2025-12-13",
@@ -619,7 +624,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:07",
-      "event": "vs. Oldham County"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2025-12-13",
@@ -635,7 +640,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Oldham County"
+      "event": "vs. Mccreary Central"
     },
     {
       "date": "2025-12-13",
@@ -683,7 +688,7 @@
       "method": "DEC",
       "score": "7-1",
       "duration": "7:00",
-      "event": "vs. Oldham County"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2025-12-06",
@@ -699,7 +704,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Oldham County"
+      "event": "vs. Green County"
     },
     {
       "date": "2025-12-06",
@@ -715,7 +720,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Oldham County"
+      "event": "vs. LaRue County"
     },
     {
       "date": "2025-12-06",
@@ -731,7 +736,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Oldham County"
+      "event": "vs. Nelson County"
     },
     {
       "date": "2025-12-03",
@@ -747,7 +752,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Oldham County"
+      "event": "vs. Eastern"
     },
     {
       "date": "2025-12-03",
@@ -788,7 +793,7 @@
       "season": 2025,
       "grade": 9,
       "team": "Oldham County",
-      "record": "27-10",
+      "record": "31-10",
       "regional_place": 2,
       "state_place": null
     },
@@ -802,9 +807,9 @@
     }
   ],
   "career_record": {
-    "wins": 92,
+    "wins": 96,
     "losses": 31,
-    "win_pct": 0.748
+    "win_pct": 0.756
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

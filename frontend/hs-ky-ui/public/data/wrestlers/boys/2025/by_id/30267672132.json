@@ -5,6 +5,11 @@
   "team_slug": "campbell_county",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.714,
-    "bonus_rate": 0.714,
+    "pin_rate": 0.75,
+    "bonus_rate": 0.75,
     "majors": 0,
     "techs": 0,
-    "pins": 5
+    "pins": 6
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -94,6 +99,22 @@
       "opponent_rank": null,
       "weight_class": "285",
       "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "2025 Eagles Invitational"
+    },
+    {
+      "date": "2025-02-08",
+      "opponent_id": "31454826132",
+      "opponent_career_id": "career_002499",
+      "opponent_name": "Carter Lawless",
+      "opponent_team": "Somerset",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -357,7 +378,7 @@
     },
     {
       "date": "2024-12-21",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_d98249e46553",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Covington Catholic",
@@ -437,7 +458,7 @@
     },
     {
       "date": "2024-12-20",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_5388c82fde8a",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Madeira High School",
@@ -482,6 +503,22 @@
       "score": null,
       "duration": "6:20",
       "event": "vs. Reading Jr./Sr. High School"
+    },
+    {
+      "date": "2024-12-20",
+      "opponent_id": "OUTSTATE_3cbd0af2839a",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Monroe High School",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Monroe High School"
     },
     {
       "date": "2024-12-07",
@@ -570,5 +607,5 @@
     "losses": 23,
     "win_pct": 0.324
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

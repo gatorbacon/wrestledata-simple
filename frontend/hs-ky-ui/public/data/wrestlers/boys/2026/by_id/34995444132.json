@@ -5,6 +5,11 @@
   "team_slug": "lexington_christian",
   "team_rank": 103,
   "weight_class": 132,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 145,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.6,
-    "bonus_rate": 0.7,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.778,
     "majors": 1,
     "techs": 0,
     "pins": 6
@@ -95,6 +100,38 @@
     },
     {
       "date": "2026-02-12",
+      "opponent_id": "35074600132",
+      "opponent_career_id": "career_005205",
+      "opponent_name": "Luis Escobar",
+      "opponent_team": "Bardstown",
+      "opponent_team_rank": 55,
+      "opponent_weight": 138,
+      "opponent_rank": 186,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Bardstown"
+    },
+    {
+      "date": "2026-02-12",
+      "opponent_id": "35893459132",
+      "opponent_career_id": "career_004622",
+      "opponent_name": "Nicholas Thacker",
+      "opponent_team": "Christian Academy-Louisville",
+      "opponent_team_rank": 67,
+      "opponent_weight": 138,
+      "opponent_rank": 129,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Christian Academy-Louisville"
+    },
+    {
+      "date": "2026-02-12",
       "opponent_id": "OUTSTATE_d11d1b4317fe",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -124,38 +161,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Fort Knox"
-    },
-    {
-      "date": "2026-02-12",
-      "opponent_id": "35074600132",
-      "opponent_career_id": "career_005205",
-      "opponent_name": "Luis Escobar",
-      "opponent_team": "Bardstown",
-      "opponent_team_rank": 55,
-      "opponent_weight": 138,
-      "opponent_rank": 186,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Lexington Christian"
-    },
-    {
-      "date": "2026-02-12",
-      "opponent_id": "35893459132",
-      "opponent_career_id": "career_004622",
-      "opponent_name": "Nicholas Thacker",
-      "opponent_team": "Christian Academy-Louisville",
-      "opponent_team_rank": 67,
-      "opponent_weight": 138,
-      "opponent_rank": 129,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Lexington Christian"
     },
     {
       "date": "2026-02-11",
@@ -267,7 +272,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:21",
-      "event": "vs. Lexington Christian"
+      "event": "vs. Cooper"
     },
     {
       "date": "2026-01-31",
@@ -283,7 +288,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:51",
-      "event": "vs. Lexington Christian"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2026-01-31",
@@ -299,7 +304,7 @@
       "method": "INJ",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Lexington Christian"
+      "event": "vs. Holmes"
     },
     {
       "date": "2026-01-31",
@@ -335,24 +340,8 @@
     },
     {
       "date": "2026-01-17",
-      "opponent_id": "35124870132",
-      "opponent_career_id": "career_001767",
-      "opponent_name": "Hunter Oakley",
-      "opponent_team": "Montgomery County",
-      "opponent_team_rank": 112,
-      "opponent_weight": 126,
-      "opponent_rank": 23,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:35",
-      "event": "Clash of the Vikings"
-    },
-    {
-      "date": "2026-01-17",
       "opponent_id": "35048614132",
-      "opponent_career_id": null,
+      "opponent_career_id": "career_000216",
       "opponent_name": "Elexis Herrington",
       "opponent_team": "Bourbon County",
       "opponent_team_rank": 61,
@@ -395,6 +384,22 @@
       "method": "MFF",
       "score": null,
       "duration": "7:00",
+      "event": "Clash of the Vikings"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "35124870132",
+      "opponent_career_id": "career_001767",
+      "opponent_name": "Hunter Oakley",
+      "opponent_team": "Montgomery County",
+      "opponent_team_rank": 112,
+      "opponent_weight": 126,
+      "opponent_rank": 23,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:35",
       "event": "Clash of the Vikings"
     },
     {
@@ -463,22 +468,6 @@
     },
     {
       "date": "2025-12-30",
-      "opponent_id": "35433976132",
-      "opponent_career_id": "career_002589",
-      "opponent_name": "Josiah Marcum",
-      "opponent_team": "Southwestern",
-      "opponent_team_rank": 131,
-      "opponent_weight": 126,
-      "opponent_rank": 106,
-      "weight_class": "132",
-      "result": "W",
-      "method": "MD",
-      "score": "15-4",
-      "duration": "7:00",
-      "event": "Cardinal Invitational"
-    },
-    {
-      "date": "2025-12-30",
       "opponent_id": "34997611132",
       "opponent_career_id": "career_000576",
       "opponent_name": "Mason Dean",
@@ -539,6 +528,22 @@
       "method": "FALL",
       "score": null,
       "duration": "4:07",
+      "event": "Cardinal Invitational"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35433976132",
+      "opponent_career_id": "career_002589",
+      "opponent_name": "Josiah Marcum",
+      "opponent_team": "Southwestern",
+      "opponent_team_rank": 131,
+      "opponent_weight": 126,
+      "opponent_rank": 106,
+      "weight_class": "132",
+      "result": "W",
+      "method": "MD",
+      "score": "15-4",
+      "duration": "7:00",
       "event": "Cardinal Invitational"
     },
     {
@@ -740,5 +745,5 @@
     "losses": 26,
     "win_pct": 0.381
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

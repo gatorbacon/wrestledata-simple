@@ -5,10 +5,15 @@
   "team_slug": "highlands",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
-    "overall": "0-0",
+    "overall": "1-0",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -34,7 +39,24 @@
     "win_over_highest_rank": null,
     "worst_loss": null
   },
-  "match_list": [],
+  "match_list": [
+    {
+      "date": "2023-12-14",
+      "opponent_id": "24832289132",
+      "opponent_career_id": "career_003452",
+      "opponent_name": "Liam Bird",
+      "opponent_team": "Walton-Verona",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "DEC",
+      "score": "16-9",
+      "duration": "7:00",
+      "event": "vs. Walton Verona"
+    }
+  ],
   "career": {
     "career_id": "career_003235",
     "canonical_name": "Kinkade McQueen",
@@ -47,10 +69,15 @@
       "season": 2024,
       "grade": 12,
       "team": "Highlands",
-      "record": "0-0",
+      "record": "1-0",
       "regional_place": null,
       "state_place": null
     }
   ],
-  "profile_generated_at": "2026-04-16"
+  "career_record": {
+    "wins": 1,
+    "losses": 0,
+    "win_pct": 1.0
+  },
+  "profile_generated_at": "2026-09-21"
 }

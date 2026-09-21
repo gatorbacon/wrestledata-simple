@@ -5,6 +5,11 @@
   "team_slug": "dupont_manual",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
@@ -24,7 +29,7 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 12
+    "pins": 13
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -113,7 +118,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Dupont Manual"
+      "event": "vs. Central"
     },
     {
       "date": "2024-01-31",
@@ -145,6 +150,22 @@
       "method": "FALL",
       "score": null,
       "duration": "3:22",
+      "event": "Louisville City Championships"
+    },
+    {
+      "date": "2024-01-06",
+      "opponent_id": "24655018132",
+      "opponent_career_id": "career_002212",
+      "opponent_name": "Xavier Nolan",
+      "opponent_team": "Pleasure Ridge Park",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:07",
       "event": "Louisville City Championships"
     },
     {
@@ -309,22 +330,6 @@
     },
     {
       "date": "2023-12-02",
-      "opponent_id": "25259211132",
-      "opponent_career_id": "career_000807",
-      "opponent_name": "Juelz Griffin",
-      "opponent_team": "Eastern",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Eastern"
-    },
-    {
-      "date": "2023-12-02",
       "opponent_id": "24655609132",
       "opponent_career_id": "career_004478",
       "opponent_name": "Draden Levine",
@@ -386,6 +391,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. North Bullitt"
+    },
+    {
+      "date": "2023-12-02",
+      "opponent_id": "25259211132",
+      "opponent_career_id": "career_000807",
+      "opponent_name": "Juelz Griffin",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Eastern"
     }
   ],
   "career": {
@@ -437,5 +458,5 @@
     "losses": 29,
     "win_pct": 0.547
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

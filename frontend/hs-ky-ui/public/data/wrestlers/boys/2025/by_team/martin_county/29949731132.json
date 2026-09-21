@@ -5,6 +5,11 @@
   "team_slug": "martin_county",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.808,
-    "bonus_rate": 0.846,
-    "majors": 0,
+    "pin_rate": 0.793,
+    "bonus_rate": 0.862,
+    "majors": 1,
     "techs": 1,
-    "pins": 21
+    "pins": 23
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -145,7 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:33",
-      "event": "vs. Martin County"
+      "event": "vs. Conner"
     },
     {
       "date": "2025-02-15",
@@ -181,7 +186,7 @@
     },
     {
       "date": "2025-02-15",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_d268fa179a02",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Scott",
@@ -273,7 +278,7 @@
       "method": "SV-1",
       "score": "13-10",
       "duration": "8:15",
-      "event": "vs. Martin County"
+      "event": "vs. LaRue County"
     },
     {
       "date": "2025-01-25",
@@ -289,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:18",
-      "event": "vs. Martin County"
+      "event": "vs. Lawrence County"
     },
     {
       "date": "2025-01-25",
@@ -404,6 +409,22 @@
       "event": "South Oldham Dragon"
     },
     {
+      "date": "2025-01-18",
+      "opponent_id": "29813752132",
+      "opponent_career_id": "career_002652",
+      "opponent_name": "Brock Fernandez",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:59",
+      "event": "South Oldham Dragon"
+    },
+    {
       "date": "2025-01-15",
       "opponent_id": "31274293132",
       "opponent_career_id": "career_000135",
@@ -417,7 +438,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Martin County"
+      "event": "vs. Belfry"
     },
     {
       "date": "2025-01-15",
@@ -465,11 +486,11 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Martin County"
+      "event": "vs. Floyd Central"
     },
     {
       "date": "2025-01-04",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_7f935f5b3c09",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Ashland Blazer",
@@ -482,6 +503,86 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Ashland Blazer"
+    },
+    {
+      "date": "2025-01-04",
+      "opponent_id": "OUTSTATE_63a3af57e953",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Knott County Central",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Knott County Central"
+    },
+    {
+      "date": "2025-01-04",
+      "opponent_id": "OUTSTATE_970ac561a51a",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Eastside",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Eastside"
+    },
+    {
+      "date": "2025-01-04",
+      "opponent_id": "OUTSTATE_b0a5d84bb400",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Paintsville",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Paintsville"
+    },
+    {
+      "date": "2025-01-04",
+      "opponent_id": "OUTSTATE_b3844617670f",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Prestonsburg",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Prestonsburg"
+    },
+    {
+      "date": "2025-01-04",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Knott County Central"
     },
     {
       "date": "2024-12-28",
@@ -644,6 +745,22 @@
       "event": "Bobby Bates Classic"
     },
     {
+      "date": "2024-12-21",
+      "opponent_id": "29867805132",
+      "opponent_career_id": null,
+      "opponent_name": "Brayden Keen",
+      "opponent_team": "Lebanon",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "MD",
+      "score": "15-2",
+      "duration": "7:00",
+      "event": "Bobby Bates Classic"
+    },
+    {
       "date": "2024-12-13",
       "opponent_id": "29777870132",
       "opponent_career_id": null,
@@ -677,7 +794,23 @@
     },
     {
       "date": "2024-12-13",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_0c4fe2bbd893",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Gainesville",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Gainesville"
+    },
+    {
+      "date": "2024-12-13",
+      "opponent_id": "OUTSTATE_d87a0aa7c115",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Grundy",
@@ -757,6 +890,22 @@
     },
     {
       "date": "2024-12-07",
+      "opponent_id": "OUTSTATE_fa89a7506446",
+      "opponent_career_id": null,
+      "opponent_name": "Haskel Fugitt",
+      "opponent_team": "Martin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "AIT Invitational"
+    },
+    {
+      "date": "2024-12-07",
       "opponent_id": "30727396132",
       "opponent_career_id": "career_002300",
       "opponent_name": "Jack Madden",
@@ -786,22 +935,6 @@
       "score": null,
       "duration": "0:44",
       "event": "AIT Invitational"
-    },
-    {
-      "date": "2024-12-07",
-      "opponent_id": "OUTSTATE_fa89a7506446",
-      "opponent_career_id": null,
-      "opponent_name": "Haskel Fugitt",
-      "opponent_team": "Martin County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "AIT Invitational"
     }
   ],
   "career": {
@@ -827,7 +960,7 @@
       "season": 2024,
       "grade": 11,
       "team": "Martin County",
-      "record": "5-1",
+      "record": "22-11",
       "regional_place": null,
       "state_place": null
     },
@@ -835,7 +968,7 @@
       "season": 2023,
       "grade": 10,
       "team": "Martin County High School",
-      "record": "21-25",
+      "record": "21-26",
       "regional_place": null,
       "state_place": null
     },
@@ -843,15 +976,15 @@
       "season": 2022,
       "grade": 10,
       "team": "Martin County High School",
-      "record": "3-4",
+      "record": "4-4",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 68,
-    "losses": 47,
-    "win_pct": 0.591
+    "wins": 86,
+    "losses": 58,
+    "win_pct": 0.597
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

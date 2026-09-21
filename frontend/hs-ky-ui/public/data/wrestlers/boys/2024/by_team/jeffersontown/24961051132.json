@@ -5,6 +5,11 @@
   "team_slug": "jeffersontown",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
@@ -69,6 +74,22 @@
     },
     {
       "date": "2024-01-06",
+      "opponent_id": "24972247132",
+      "opponent_career_id": "career_003102",
+      "opponent_name": "Alex Sauss",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Bullitt East"
+    },
+    {
+      "date": "2024-01-06",
       "opponent_id": "24660010132",
       "opponent_career_id": "career_001936",
       "opponent_name": "Jake Lutgen",
@@ -82,22 +103,6 @@
       "score": null,
       "duration": "1:43",
       "event": "vs. North Oldham"
-    },
-    {
-      "date": "2024-01-06",
-      "opponent_id": "24972247132",
-      "opponent_career_id": "career_003102",
-      "opponent_name": "Alex Sauss",
-      "opponent_team": "Bullitt East",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Jeffersontown"
     },
     {
       "date": "2024-01-06",
@@ -145,7 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Jeffersontown"
+      "event": "vs. Central"
     },
     {
       "date": "2024-01-03",
@@ -161,7 +166,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Jeffersontown"
+      "event": "vs. Fairdale"
+    },
+    {
+      "date": "2023-12-09",
+      "opponent_id": "24657574132",
+      "opponent_career_id": "career_003409",
+      "opponent_name": "Animesh Bhujel",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": "1-0",
+      "duration": "7:00",
+      "event": "vs. Tates Creek"
     },
     {
       "date": "2023-12-09",
@@ -212,22 +233,6 @@
       "event": "vs. West Jessamine"
     },
     {
-      "date": "2023-12-09",
-      "opponent_id": "24657574132",
-      "opponent_career_id": "career_003409",
-      "opponent_name": "Animesh Bhujel",
-      "opponent_team": "Tates Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "DEC",
-      "score": "1-0",
-      "duration": "7:00",
-      "event": "vs. Tates Creek"
-    },
-    {
       "date": "2023-12-06",
       "opponent_id": "24655010132",
       "opponent_career_id": "career_002206",
@@ -273,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:58",
-      "event": "vs. Jeffersontown"
+      "event": "vs. Bardstown"
     },
     {
       "date": "2023-11-28",
@@ -314,5 +319,5 @@
     "losses": 12,
     "win_pct": 0.25
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

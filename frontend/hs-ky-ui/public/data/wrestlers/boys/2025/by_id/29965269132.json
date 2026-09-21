@@ -5,10 +5,15 @@
   "team_slug": "larue_county",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
-    "overall": "37-3",
+    "overall": "37-4",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.697,
-    "bonus_rate": 0.788,
+    "pin_rate": 0.688,
+    "bonus_rate": 0.781,
     "majors": 1,
     "techs": 2,
-    "pins": 23
+    "pins": 22
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -257,7 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:40",
-      "event": "vs. LaRue County"
+      "event": "vs. Belfry"
     },
     {
       "date": "2025-01-25",
@@ -273,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:49",
-      "event": "vs. LaRue County"
+      "event": "vs. Fort Campbell"
     },
     {
       "date": "2025-01-25",
@@ -289,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:33",
-      "event": "vs. LaRue County"
+      "event": "vs. Green County"
     },
     {
       "date": "2025-01-25",
@@ -321,11 +326,11 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. LaRue County"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2025-01-18",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_21b4a79b024a",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Bethlehem",
@@ -338,6 +343,38 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Bethlehem"
+    },
+    {
+      "date": "2025-01-18",
+      "opponent_id": "OUTSTATE_f168e9c3cbeb",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Fort Knox",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Fort Knox"
+    },
+    {
+      "date": "2025-01-18",
+      "opponent_id": "OUTSTATE_d11d1b4317fe",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Thomas Nelson",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Thomas Nelson"
     },
     {
       "date": "2025-01-18",
@@ -356,22 +393,6 @@
       "event": "vs. Nelson County"
     },
     {
-      "date": "2025-01-16",
-      "opponent_id": "29993430132",
-      "opponent_career_id": "career_000448",
-      "opponent_name": "Destin Basemore",
-      "opponent_team": "Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Central"
-    },
-    {
       "date": "2025-01-15",
       "opponent_id": "29993430132",
       "opponent_career_id": "career_000448",
@@ -385,23 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:03",
-      "event": "vs. LaRue County"
-    },
-    {
-      "date": "2024-12-28",
-      "opponent_id": "29856888132",
-      "opponent_career_id": "career_001012",
-      "opponent_name": "Thomas Macke",
-      "opponent_team": "Grant County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:12",
-      "event": "Woodford County Invitational - BOYS"
+      "event": "vs. Central"
     },
     {
       "date": "2024-12-28",
@@ -436,6 +441,22 @@
       "event": "Woodford County Invitational - BOYS"
     },
     {
+      "date": "2024-12-28",
+      "opponent_id": "29856888132",
+      "opponent_career_id": "career_001012",
+      "opponent_name": "Thomas Macke",
+      "opponent_team": "Grant County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:12",
+      "event": "Woodford County Invitational - BOYS"
+    },
+    {
       "date": "2024-12-21",
       "opponent_id": "30196843132",
       "opponent_career_id": "career_000565",
@@ -449,22 +470,6 @@
       "method": "FALL",
       "score": null,
       "duration": "2:24",
-      "event": "5 Star Classic"
-    },
-    {
-      "date": "2024-12-21",
-      "opponent_id": "29869154132",
-      "opponent_career_id": "career_003028",
-      "opponent_name": "Braylen Livingston",
-      "opponent_team": "Woodford County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "MD",
-      "score": "12-0",
-      "duration": "7:00",
       "event": "5 Star Classic"
     },
     {
@@ -500,6 +505,38 @@
       "event": "5 Star Classic"
     },
     {
+      "date": "2024-12-21",
+      "opponent_id": "29869154132",
+      "opponent_career_id": "career_003028",
+      "opponent_name": "Braylen Livingston",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "MD",
+      "score": "12-0",
+      "duration": "7:00",
+      "event": "5 Star Classic"
+    },
+    {
+      "date": "2024-12-14",
+      "opponent_id": "29789485132",
+      "opponent_career_id": "career_000285",
+      "opponent_name": "Gage Feltner",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "DEC",
+      "score": "7-4",
+      "duration": "7:00",
+      "event": "vs. Boyle County"
+    },
+    {
       "date": "2024-12-14",
       "opponent_id": "30067904132",
       "opponent_career_id": "career_001063",
@@ -513,7 +550,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. LaRue County"
+      "event": "vs. Green County"
     },
     {
       "date": "2024-12-14",
@@ -533,38 +570,6 @@
     },
     {
       "date": "2024-12-14",
-      "opponent_id": "30024913132",
-      "opponent_career_id": "career_002401",
-      "opponent_name": "Bailey Boyd",
-      "opponent_team": "Scott County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Scott County"
-    },
-    {
-      "date": "2024-12-14",
-      "opponent_id": "29789485132",
-      "opponent_career_id": "career_000285",
-      "opponent_name": "Gage Feltner",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "DEC",
-      "score": "7-4",
-      "duration": "7:00",
-      "event": "vs. LaRue County"
-    },
-    {
-      "date": "2024-12-14",
       "opponent_id": "29788804132",
       "opponent_career_id": null,
       "opponent_name": "Jonathon Greer Moore",
@@ -580,6 +585,22 @@
       "event": "vs. Montgomery County"
     },
     {
+      "date": "2024-12-14",
+      "opponent_id": "30024913132",
+      "opponent_career_id": "career_002401",
+      "opponent_name": "Bailey Boyd",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Scott County"
+    },
+    {
       "date": "2024-12-11",
       "opponent_id": "29993412132",
       "opponent_career_id": "career_000453",
@@ -593,11 +614,11 @@
       "method": "DEC",
       "score": "8-4",
       "duration": "7:00",
-      "event": "vs. LaRue County"
+      "event": "vs. Central"
     },
     {
       "date": "2024-12-11",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_5855457a7894",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Bullitt Central",
@@ -625,7 +646,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:53",
-      "event": "vs. LaRue County"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2024-12-07",
@@ -661,7 +682,7 @@
     },
     {
       "date": "2024-12-07",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_b8d1490a1654",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Western Hills",
@@ -691,7 +712,7 @@
       "season": 2025,
       "grade": 12,
       "team": "LaRue County",
-      "record": "37-3",
+      "record": "37-4",
       "regional_place": 1,
       "state_place": 4
     },
@@ -707,7 +728,7 @@
       "season": 2023,
       "grade": 10,
       "team": "LaRue County",
-      "record": "20-18",
+      "record": "22-18",
       "regional_place": null,
       "state_place": null
     },
@@ -721,9 +742,9 @@
     }
   ],
   "career_record": {
-    "wins": 83,
-    "losses": 40,
+    "wins": 85,
+    "losses": 41,
     "win_pct": 0.675
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

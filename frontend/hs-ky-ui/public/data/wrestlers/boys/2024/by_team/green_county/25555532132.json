@@ -5,6 +5,11 @@
   "team_slug": "green_county",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
@@ -85,22 +90,6 @@
     },
     {
       "date": "2024-01-31",
-      "opponent_id": "24801493132",
-      "opponent_career_id": "career_001089",
-      "opponent_name": "Hudson Smith",
-      "opponent_team": "Greenwood",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Greenwood High School"
-    },
-    {
-      "date": "2024-01-31",
       "opponent_id": "OUTSTATE_36ad700e1cca",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -114,6 +103,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. South Warren High School"
+    },
+    {
+      "date": "2024-01-31",
+      "opponent_id": "24801493132",
+      "opponent_career_id": "career_001089",
+      "opponent_name": "Hudson Smith",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Greenwood High School"
     },
     {
       "date": "2024-01-31",
@@ -145,7 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Green County"
+      "event": "vs. Bardstown"
     },
     {
       "date": "2024-01-13",
@@ -177,23 +182,7 @@
       "method": "DEC",
       "score": "11-9",
       "duration": "7:00",
-      "event": "vs. Green County"
-    },
-    {
-      "date": "2024-01-04",
-      "opponent_id": "24837272132",
-      "opponent_career_id": "career_003326",
-      "opponent_name": "Paul Briney",
-      "opponent_team": "Nelson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Nelson County"
+      "event": "vs. Campbellsville"
     },
     {
       "date": "2024-01-04",
@@ -212,52 +201,20 @@
       "event": "vs. Hart County"
     },
     {
-      "date": "2023-12-29",
-      "opponent_id": "24801500132",
-      "opponent_career_id": "career_001092",
-      "opponent_name": "Maddox Tabor",
-      "opponent_team": "Greenwood",
+      "date": "2024-01-04",
+      "opponent_id": "24837272132",
+      "opponent_career_id": "career_003326",
+      "opponent_name": "Paul Briney",
+      "opponent_team": "Nelson County",
       "opponent_team_rank": null,
-      "opponent_weight": 150,
+      "opponent_weight": 157,
       "opponent_rank": null,
       "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Greenwood High School"
-    },
-    {
-      "date": "2023-12-29",
-      "opponent_id": "25498065132",
-      "opponent_career_id": null,
-      "opponent_name": "Levi Wilkey",
-      "opponent_team": "Southridge",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:00",
-      "event": "vs. Southridge"
-    },
-    {
-      "date": "2023-12-29",
-      "opponent_id": "OUTSTATE_4e72d7e1dc98",
-      "opponent_career_id": null,
-      "opponent_name": "Jude unknown",
-      "opponent_team": "South Spencer",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:00",
-      "event": "vs. South Spencer"
+      "event": "vs. Nelson County"
     },
     {
       "date": "2023-12-29",
@@ -277,6 +234,22 @@
     },
     {
       "date": "2023-12-29",
+      "opponent_id": "25498065132",
+      "opponent_career_id": null,
+      "opponent_name": "Levi Wilkey",
+      "opponent_team": "Southridge",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "vs. Southridge"
+    },
+    {
+      "date": "2023-12-29",
       "opponent_id": "OUTSTATE_c530402c7e39",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -290,6 +263,54 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Apollo High School"
+    },
+    {
+      "date": "2023-12-29",
+      "opponent_id": "OUTSTATE_4e72d7e1dc98",
+      "opponent_career_id": null,
+      "opponent_name": "Jude unknown",
+      "opponent_team": "South Spencer",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:00",
+      "event": "vs. South Spencer"
+    },
+    {
+      "date": "2023-12-29",
+      "opponent_id": "24801500132",
+      "opponent_career_id": "career_001092",
+      "opponent_name": "Maddox Tabor",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Greenwood High School"
+    },
+    {
+      "date": "2023-12-16",
+      "opponent_id": "24892331132",
+      "opponent_career_id": "career_003183",
+      "opponent_name": "Dan Molowayi",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:30",
+      "event": "Taylor County Cardinal Clash"
     },
     {
       "date": "2023-12-16",
@@ -321,22 +342,6 @@
       "method": "FALL",
       "score": null,
       "duration": "2:52",
-      "event": "Taylor County Cardinal Clash"
-    },
-    {
-      "date": "2023-12-16",
-      "opponent_id": "24892331132",
-      "opponent_career_id": "career_003183",
-      "opponent_name": "Dan Molowayi",
-      "opponent_team": "Fern Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:30",
       "event": "Taylor County Cardinal Clash"
     },
     {
@@ -389,22 +394,6 @@
     },
     {
       "date": "2023-12-06",
-      "opponent_id": "25297662132",
-      "opponent_career_id": "career_003152",
-      "opponent_name": "Richard Norris",
-      "opponent_team": "Danville",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:00",
-      "event": "vs. Green County"
-    },
-    {
-      "date": "2023-12-06",
       "opponent_id": "24696381132",
       "opponent_career_id": "career_003096",
       "opponent_name": "Jaimen Carey",
@@ -417,7 +406,23 @@
       "method": "FALL",
       "score": null,
       "duration": "3:00",
-      "event": "vs. Green County"
+      "event": "vs. Boyle County"
+    },
+    {
+      "date": "2023-12-06",
+      "opponent_id": "25297662132",
+      "opponent_career_id": "career_003152",
+      "opponent_name": "Richard Norris",
+      "opponent_team": "Danville",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "vs. Danville"
     }
   ],
   "career": {
@@ -436,7 +441,7 @@
       "season": 2026,
       "grade": 12,
       "team": "Green County",
-      "record": "9-16",
+      "record": "9-15",
       "regional_place": null,
       "state_place": null
     },
@@ -468,15 +473,15 @@
       "season": 2022,
       "grade": 8,
       "team": "Green County",
-      "record": "2-5",
+      "record": "2-7",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 38,
-    "losses": 52,
-    "win_pct": 0.422
+    "losses": 53,
+    "win_pct": 0.418
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

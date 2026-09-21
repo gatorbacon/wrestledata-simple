@@ -5,6 +5,11 @@
   "team_slug": "north_oldham",
   "team_rank": 47,
   "weight_class": 165,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 78,
   "record": {
@@ -35,7 +40,7 @@
       "opponent_id": "34992811132",
       "opponent_rank": 41,
       "opponent_name": "Caden Wren",
-      "method": "Fall 0:00"
+      "method": "Fall 1:17"
     },
     "worst_loss": {
       "opponent_id": "35271153132",
@@ -45,6 +50,39 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-11-29",
+      "opponent_id": "34992811132",
+      "opponent_career_id": "career_000280",
+      "opponent_name": "Caden Wren",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": 1,
+      "opponent_weight": 175,
+      "opponent_rank": 41,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:17",
+      "event": "vs. Boyle County"
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "34997723132",
+      "opponent_career_id": "career_000955",
+      "opponent_name": "Colton Good",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": 82,
+      "opponent_weight": 157,
+      "opponent_rank": 161,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:50",
+      "event": "vs. Franklin County",
+      "mv_impact": 3.19
+    },
     {
       "date": "2025-11-29",
       "opponent_id": "35182278132",
@@ -59,7 +97,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:06",
-      "event": "vs. North Oldham",
+      "event": "vs. North Hardin",
       "mv_impact": 1.17
     },
     {
@@ -78,40 +116,6 @@
       "duration": "1:35",
       "event": "vs. Simon Kenton",
       "mv_impact": -4.51
-    },
-    {
-      "date": "2025-11-29",
-      "opponent_id": "34997723132",
-      "opponent_career_id": "career_000955",
-      "opponent_name": "Colton Good",
-      "opponent_team": "Franklin County",
-      "opponent_team_rank": 82,
-      "opponent_weight": 157,
-      "opponent_rank": 161,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:50",
-      "event": "vs. North Oldham",
-      "mv_impact": 3.19
-    },
-    {
-      "date": "2025-11-29",
-      "opponent_id": "34992811132",
-      "opponent_career_id": "career_000280",
-      "opponent_name": "Caden Wren",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": 1,
-      "opponent_weight": 175,
-      "opponent_rank": 41,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. North Oldham",
-      "mv_impact": 6.44
     }
   ],
   "career": {
@@ -145,5 +149,5 @@
     "losses": 11,
     "win_pct": 0.476
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

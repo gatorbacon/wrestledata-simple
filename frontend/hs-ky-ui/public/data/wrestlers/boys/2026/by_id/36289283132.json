@@ -5,6 +5,11 @@
   "team_slug": "west_carter",
   "team_rank": 138,
   "weight_class": 120,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 99,
   "record": {
@@ -45,23 +50,6 @@
     }
   },
   "match_list": [
-    {
-      "date": "2026-01-10",
-      "opponent_id": "34995408132",
-      "opponent_career_id": "career_005503",
-      "opponent_name": "Preston Grigsby",
-      "opponent_team": "Lexington Christian",
-      "opponent_team_rank": 103,
-      "opponent_weight": 113,
-      "opponent_rank": 50,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:26",
-      "event": "Bear Down Invitational (Boys)",
-      "mv_impact": -6.72
-    },
     {
       "date": "2026-01-10",
       "opponent_id": "34993289132",
@@ -112,6 +100,23 @@
       "duration": "0:43",
       "event": "Bear Down Invitational (Boys)",
       "mv_impact": -4.01
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34995408132",
+      "opponent_career_id": "career_005503",
+      "opponent_name": "Preston Grigsby",
+      "opponent_team": "Lexington Christian",
+      "opponent_team_rank": 103,
+      "opponent_weight": 113,
+      "opponent_rank": 50,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:26",
+      "event": "Bear Down Invitational (Boys)",
+      "mv_impact": -6.72
     },
     {
       "date": "2026-01-03",
@@ -212,42 +217,8 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. West Carter",
+      "event": "vs. Mercer County",
       "mv_impact": 1.93
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "35754343132",
-      "opponent_career_id": "career_001435",
-      "opponent_name": "Bentley Fleming",
-      "opponent_team": "Lawrence County",
-      "opponent_team_rank": 100,
-      "opponent_weight": 113,
-      "opponent_rank": 55,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:22",
-      "event": "Ashland blazer invitational",
-      "mv_impact": -5.22
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "35190747132",
-      "opponent_career_id": "career_005668",
-      "opponent_name": "Kenny Jay",
-      "opponent_team": "Scott County",
-      "opponent_team_rank": 126,
-      "opponent_weight": 113,
-      "opponent_rank": 61,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Ashland blazer invitational",
-      "mv_impact": 4.1
     },
     {
       "date": "2025-12-13",
@@ -299,6 +270,40 @@
       "duration": "0:00",
       "event": "Ashland Invitational Tournament",
       "mv_impact": -4.64
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35754343132",
+      "opponent_career_id": "career_001435",
+      "opponent_name": "Bentley Fleming",
+      "opponent_team": "Lawrence County",
+      "opponent_team_rank": 100,
+      "opponent_weight": 113,
+      "opponent_rank": 55,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:22",
+      "event": "Ashland Invitational Tournament",
+      "mv_impact": -5.22
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35190747132",
+      "opponent_career_id": "career_005668",
+      "opponent_name": "Kenny Jay",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 126,
+      "opponent_weight": 113,
+      "opponent_rank": 61,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Ashland Invitational Tournament",
+      "mv_impact": 4.1
     }
   ],
   "career": {
@@ -323,5 +328,5 @@
     "losses": 8,
     "win_pct": 0.467
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

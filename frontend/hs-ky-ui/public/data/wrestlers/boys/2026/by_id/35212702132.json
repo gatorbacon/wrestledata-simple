@@ -5,11 +5,16 @@
   "team_slug": "pleasure_ridge_park",
   "team_rank": 119,
   "weight_class": 165,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 44,
   "record": {
-    "overall": "37-15",
-    "vs_ranked": "26-13",
+    "overall": "35-15",
+    "vs_ranked": "27-13",
     "vs_top10": "0-3",
     "vs_top25": "0-7"
   },
@@ -20,14 +25,14 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.852,
+    "pin_rate": 0.679,
+    "bonus_rate": 0.857,
     "majors": 1,
     "techs": 4,
-    "pins": 18
+    "pins": 19
   },
   "opponent_breakdown": {
-    "ranked_wins": 26,
+    "ranked_wins": 27,
     "ranked_losses": 13,
     "top10_wins": 0,
     "top10_losses": 3,
@@ -95,22 +100,6 @@
     },
     {
       "date": "2026-02-14",
-      "opponent_id": "35639358132",
-      "opponent_career_id": "career_005678",
-      "opponent_name": "Derrick Simms",
-      "opponent_team": "Shawnee",
-      "opponent_team_rank": 128,
-      "opponent_weight": 150,
-      "opponent_rank": 136,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Shawnee"
-    },
-    {
-      "date": "2026-02-14",
       "opponent_id": "35205063132",
       "opponent_career_id": "career_000342",
       "opponent_name": "Jacob Tylutke",
@@ -123,7 +112,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Pleasure Ridge Park"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2026-02-14",
@@ -139,7 +128,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Pleasure Ridge Park"
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2026-02-14",
@@ -155,7 +144,23 @@
       "method": "TF",
       "score": "18-3",
       "duration": "0:00",
-      "event": "vs. Pleasure Ridge Park"
+      "event": "vs. Male"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35639358132",
+      "opponent_career_id": "career_005678",
+      "opponent_name": "Derrick Simms",
+      "opponent_team": "Shawnee",
+      "opponent_team_rank": 128,
+      "opponent_weight": 150,
+      "opponent_rank": 136,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Shawnee"
     },
     {
       "date": "2026-02-14",
@@ -187,7 +192,7 @@
       "method": "DEC",
       "score": "14-9",
       "duration": "7:00",
-      "event": "vs. Pleasure Ridge Park"
+      "event": "vs. Ballard"
     },
     {
       "date": "2026-02-10",
@@ -203,7 +208,7 @@
       "method": "TF",
       "score": "16-1",
       "duration": "2:48",
-      "event": "vs. Pleasure Ridge Park"
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2026-02-07",
@@ -267,7 +272,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:39",
-      "event": "vs. Pleasure Ridge Park"
+      "event": "vs. Atherton"
     },
     {
       "date": "2026-01-21",
@@ -283,23 +288,7 @@
       "method": "TF",
       "score": "15-0",
       "duration": "1:50",
-      "event": "vs. Pleasure Ridge Park"
-    },
-    {
-      "date": "2026-01-17",
-      "opponent_id": "34997567132",
-      "opponent_career_id": "career_000994",
-      "opponent_name": "Brock Heidle",
-      "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": 42,
-      "opponent_weight": 157,
-      "opponent_rank": 24,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Bear Brawl"
+      "event": "vs. Doss"
     },
     {
       "date": "2026-01-17",
@@ -328,6 +317,22 @@
       "opponent_rank": 106,
       "weight_class": "165",
       "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Bear Brawl"
+    },
+    {
+      "date": "2026-01-17",
+      "opponent_id": "34997567132",
+      "opponent_career_id": "career_000994",
+      "opponent_name": "Brock Heidle",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": 42,
+      "opponent_weight": 157,
+      "opponent_rank": 24,
+      "weight_class": "165",
+      "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -431,22 +436,6 @@
     },
     {
       "date": "2026-01-03",
-      "opponent_id": "35127112132",
-      "opponent_career_id": "career_000760",
-      "opponent_name": "Harrison Wilson",
-      "opponent_team": "Dupont Manual",
-      "opponent_team_rank": 32,
-      "opponent_weight": 157,
-      "opponent_rank": 135,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:46",
-      "event": "vs. Pleasure Ridge Park"
-    },
-    {
-      "date": "2026-01-03",
       "opponent_id": "35084252132",
       "opponent_career_id": "career_005200",
       "opponent_name": "Andrew Barger",
@@ -459,7 +448,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:32",
-      "event": "vs. Pleasure Ridge Park"
+      "event": "vs. Ballard"
+    },
+    {
+      "date": "2026-01-03",
+      "opponent_id": "35127112132",
+      "opponent_career_id": "career_000760",
+      "opponent_name": "Harrison Wilson",
+      "opponent_team": "Dupont Manual",
+      "opponent_team_rank": 32,
+      "opponent_weight": 157,
+      "opponent_rank": 135,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:46",
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2026-01-03",
@@ -527,6 +532,22 @@
     },
     {
       "date": "2025-12-30",
+      "opponent_id": "36784561132",
+      "opponent_career_id": "career_001805",
+      "opponent_name": "Grayson Smith",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 33,
+      "opponent_weight": 165,
+      "opponent_rank": 152,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:35",
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2025-12-30",
       "opponent_id": "OUTSTATE_ded8c89f65ee",
       "opponent_career_id": null,
       "opponent_name": "Bryan Scott",
@@ -571,7 +592,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:16",
-      "event": "vs. Pleasure Ridge Park"
+      "event": "vs. Desales"
     },
     {
       "date": "2025-12-29",
@@ -699,7 +720,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:26",
-      "event": "vs. Pleasure Ridge Park"
+      "event": "vs. Jeffersontown"
     },
     {
       "date": "2025-12-17",
@@ -811,7 +832,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:15",
-      "event": "vs. Pleasure Ridge Park"
+      "event": "vs. Eastern"
     },
     {
       "date": "2025-12-03",
@@ -827,7 +848,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Pleasure Ridge Park"
+      "event": "vs. Oldham County"
     }
   ],
   "career": {
@@ -845,7 +866,7 @@
       "season": 2026,
       "grade": 12,
       "team": "Pleasure Ridge Park",
-      "record": "37-15",
+      "record": "35-15",
       "regional_place": null,
       "state_place": null
     },
@@ -853,7 +874,7 @@
       "season": 2025,
       "grade": 11,
       "team": "Pleasure Ridge Park",
-      "record": "23-23",
+      "record": "24-25",
       "regional_place": null,
       "state_place": null
     },
@@ -861,7 +882,7 @@
       "season": 2024,
       "grade": 10,
       "team": "Pleasure Ridge Park",
-      "record": "12-8",
+      "record": "14-10",
       "regional_place": null,
       "state_place": null
     },
@@ -869,15 +890,15 @@
       "season": 2023,
       "grade": 9,
       "team": "Pleasure Ridge Park",
-      "record": "11-18",
+      "record": "11-23",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 83,
-    "losses": 64,
-    "win_pct": 0.565
+    "wins": 84,
+    "losses": 73,
+    "win_pct": 0.535
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

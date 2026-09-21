@@ -5,6 +5,11 @@
   "team_slug": "lafayette",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -37,6 +42,22 @@
   "match_list": [
     {
       "date": "2024-12-07",
+      "opponent_id": "30003176132",
+      "opponent_career_id": "career_000625",
+      "opponent_name": "David Dabkowski",
+      "opponent_team": "Covington Catholic",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "MD",
+      "score": "20-6",
+      "duration": "7:00",
+      "event": "vs. Covington Catholic"
+    },
+    {
+      "date": "2024-12-07",
       "opponent_id": "30099466132",
       "opponent_career_id": "career_001041",
       "opponent_name": "Clayton Shaddix",
@@ -49,11 +70,11 @@
       "method": "FALL",
       "score": null,
       "duration": "0:41",
-      "event": "vs. Lafayette"
+      "event": "vs. Great Crossing"
     },
     {
       "date": "2024-12-07",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_f168e9c3cbeb",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Fort Knox",
@@ -69,19 +90,19 @@
     },
     {
       "date": "2024-12-07",
-      "opponent_id": "30003176132",
-      "opponent_career_id": "career_000625",
-      "opponent_name": "David Dabkowski",
-      "opponent_team": "Covington Catholic",
+      "opponent_id": "OUTSTATE_d27877867b37",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Great Crossing",
       "opponent_team_rank": null,
-      "opponent_weight": 165,
+      "opponent_weight": null,
       "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "MD",
-      "score": "20-6",
+      "weight_class": "165",
+      "result": "W",
+      "method": "FF",
+      "score": null,
       "duration": "7:00",
-      "event": "vs. Lafayette"
+      "event": "vs. Great Crossing"
     }
   ],
   "career": {
@@ -106,5 +127,5 @@
     "losses": 2,
     "win_pct": 0.5
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

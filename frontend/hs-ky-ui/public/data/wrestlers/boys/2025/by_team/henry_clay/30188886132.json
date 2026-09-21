@@ -5,6 +5,11 @@
   "team_slug": "henry_clay",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -35,22 +40,6 @@
     "worst_loss": null
   },
   "match_list": [
-    {
-      "date": "2025-02-22",
-      "opponent_id": "30007833132",
-      "opponent_career_id": "career_002691",
-      "opponent_name": "Mohammad Al-Hassen",
-      "opponent_team": "Tates Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "KHSAA Region 6"
-    },
     {
       "date": "2025-02-22",
       "opponent_id": "29982159132",
@@ -96,6 +85,22 @@
       "result": "L",
       "method": "TF",
       "score": "17-2",
+      "duration": "0:00",
+      "event": "KHSAA Region 6"
+    },
+    {
+      "date": "2025-02-22",
+      "opponent_id": "30007833132",
+      "opponent_career_id": "career_002691",
+      "opponent_name": "Mohammad Al-Hassen",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
       "duration": "0:00",
       "event": "KHSAA Region 6"
     },
@@ -181,22 +186,6 @@
     },
     {
       "date": "2025-02-01",
-      "opponent_id": "29868881132",
-      "opponent_career_id": "career_003029",
-      "opponent_name": "Yordin Flores",
-      "opponent_team": "Woodford County",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:52",
-      "event": "vs. Woodford County"
-    },
-    {
-      "date": "2025-02-01",
       "opponent_id": "30537942132",
       "opponent_career_id": "career_002356",
       "opponent_name": "Anthony Kemper",
@@ -213,7 +202,23 @@
     },
     {
       "date": "2025-02-01",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "29868881132",
+      "opponent_career_id": "career_003029",
+      "opponent_name": "Yordin Flores",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:51",
+      "event": "vs. Woodford County"
+    },
+    {
+      "date": "2025-02-01",
+      "opponent_id": "OUTSTATE_86b971b502a2",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Spencer County",
@@ -229,7 +234,7 @@
     },
     {
       "date": "2025-01-29",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_3bedbf528daa",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Lafayette",
@@ -257,7 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:59",
-      "event": "vs. Henry Clay"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2025-01-25",
@@ -321,11 +326,11 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. East Jessamine"
     },
     {
       "date": "2025-01-22",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_931f1ed55205",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "West Jessamine",
@@ -512,7 +517,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "2:11",
       "event": "2025 Warhawk Classic"
     },
     {
@@ -645,6 +650,38 @@
     },
     {
       "date": "2024-12-14",
+      "opponent_id": "30414482132",
+      "opponent_career_id": "career_002122",
+      "opponent_name": "Jayden Roberts",
+      "opponent_team": "Paul Laurence Dunbar",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:09",
+      "event": "vs. Paul Laurence Dunbar"
+    },
+    {
+      "date": "2024-12-14",
+      "opponent_id": "OUTSTATE_3884a8e8baf5",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Pulaski County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Pulaski County"
+    },
+    {
+      "date": "2024-12-14",
       "opponent_id": "30414479132",
       "opponent_career_id": "career_002119",
       "opponent_name": "Nasser Qasem",
@@ -661,7 +698,7 @@
     },
     {
       "date": "2024-12-14",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_2c903e25261d",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Bourbon County",
@@ -692,24 +729,8 @@
       "event": "vs. Jeffersontown"
     },
     {
-      "date": "2024-12-14",
-      "opponent_id": "30414482132",
-      "opponent_career_id": "career_002122",
-      "opponent_name": "Jayden Roberts",
-      "opponent_team": "Paul Laurence Dunbar",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:09",
-      "event": "vs. Paul Laurence Dunbar"
-    },
-    {
       "date": "2024-12-11",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_31fbdaf5d8b7",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Tates Creek",
@@ -737,7 +758,7 @@
       "method": "DEC",
       "score": "11-7",
       "duration": "7:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Covington Catholic"
     },
     {
       "date": "2024-12-07",
@@ -753,7 +774,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:28",
-      "event": "vs. Henry Clay"
+      "event": "vs. Great Crossing"
     },
     {
       "date": "2024-12-07",
@@ -785,7 +806,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Henry Clay"
+      "event": "vs. Frederick Douglass"
     }
   ],
   "career": {
@@ -819,5 +840,5 @@
     "losses": 23,
     "win_pct": 0.723
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

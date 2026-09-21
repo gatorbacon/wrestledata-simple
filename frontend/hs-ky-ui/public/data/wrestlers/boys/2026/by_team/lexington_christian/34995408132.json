@@ -5,11 +5,16 @@
   "team_slug": "lexington_christian",
   "team_rank": 103,
   "weight_class": 113,
+  "grade": "7th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 50,
   "record": {
     "overall": "12-16",
-    "vs_ranked": "10-14",
+    "vs_ranked": "11-14",
     "vs_top10": "0-2",
     "vs_top25": "0-2"
   },
@@ -20,14 +25,14 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.818,
-    "bonus_rate": 0.909,
+    "pin_rate": 0.833,
+    "bonus_rate": 0.917,
     "majors": 0,
     "techs": 1,
-    "pins": 9
+    "pins": 10
   },
   "opponent_breakdown": {
-    "ranked_wins": 10,
+    "ranked_wins": 11,
     "ranked_losses": 14,
     "top10_wins": 0,
     "top10_losses": 2,
@@ -47,6 +52,22 @@
   "match_list": [
     {
       "date": "2026-02-11",
+      "opponent_id": "35048601132",
+      "opponent_career_id": "career_000209",
+      "opponent_name": "Jayden Muratalla",
+      "opponent_team": "Bourbon County",
+      "opponent_team_rank": 61,
+      "opponent_weight": 113,
+      "opponent_rank": 33,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Bourbon County"
+    },
+    {
+      "date": "2026-02-11",
       "opponent_id": "35040638132",
       "opponent_career_id": "career_005707",
       "opponent_name": "Logan Niece",
@@ -62,20 +83,20 @@
       "event": "vs. Tates Creek"
     },
     {
-      "date": "2026-02-11",
-      "opponent_id": "35048601132",
-      "opponent_career_id": "career_000209",
-      "opponent_name": "Jayden Muratalla",
-      "opponent_team": "Bourbon County",
-      "opponent_team_rank": 61,
+      "date": "2026-02-07",
+      "opponent_id": "35066005132",
+      "opponent_career_id": "career_002722",
+      "opponent_name": "Braxton Miller",
+      "opponent_team": "Bardstown",
+      "opponent_team_rank": 55,
       "opponent_weight": 113,
-      "opponent_rank": 33,
+      "opponent_rank": 48,
       "weight_class": "113",
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Lexington Christian"
+      "duration": "3:00",
+      "event": "Mustang Classic"
     },
     {
       "date": "2026-02-07",
@@ -91,22 +112,6 @@
       "method": "FALL",
       "score": null,
       "duration": "1:35",
-      "event": "Mustang Classic"
-    },
-    {
-      "date": "2026-02-07",
-      "opponent_id": "35066005132",
-      "opponent_career_id": "career_002722",
-      "opponent_name": "Braxton Miller",
-      "opponent_team": "Bardstown",
-      "opponent_team_rank": 55,
-      "opponent_weight": 113,
-      "opponent_rank": 48,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:00",
       "event": "Mustang Classic"
     },
     {
@@ -319,6 +324,22 @@
     },
     {
       "date": "2025-12-30",
+      "opponent_id": "35281276132",
+      "opponent_career_id": "career_000680",
+      "opponent_name": "Drew Blackburn",
+      "opponent_team": "Dixie Heights",
+      "opponent_team_rank": 71,
+      "opponent_weight": 120,
+      "opponent_rank": 81,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:29",
+      "event": "Cardinal Invitational"
+    },
+    {
+      "date": "2025-12-30",
       "opponent_id": "35651895132",
       "opponent_career_id": "career_005433",
       "opponent_name": "Landon Townsend",
@@ -335,22 +356,6 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35226227132",
-      "opponent_career_id": "career_001812",
-      "opponent_name": "Daniel Stark",
-      "opponent_team": "Nelson County",
-      "opponent_team_rank": 21,
-      "opponent_weight": 106,
-      "opponent_rank": 8,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:06",
-      "event": "King of the Bluegrass"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35623136132",
       "opponent_career_id": "career_005191",
       "opponent_name": "Marley Berhow",
@@ -363,6 +368,22 @@
       "method": "FALL",
       "score": null,
       "duration": "3:49",
+      "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35226227132",
+      "opponent_career_id": "career_001812",
+      "opponent_name": "Daniel Stark",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": 21,
+      "opponent_weight": 106,
+      "opponent_rank": 8,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:06",
       "event": "King of the Bluegrass"
     },
     {
@@ -500,5 +521,5 @@
     "losses": 16,
     "win_pct": 0.429
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

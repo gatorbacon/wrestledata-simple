@@ -5,6 +5,11 @@
   "team_slug": "bullitt_central",
   "team_rank": 62,
   "weight_class": 150,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 38,
   "record": {
@@ -47,22 +52,6 @@
   "match_list": [
     {
       "date": "2026-02-21",
-      "opponent_id": "36951568132",
-      "opponent_career_id": "career_005677",
-      "opponent_name": "Keyshaun Warren",
-      "opponent_team": "Shawnee",
-      "opponent_team_rank": 128,
-      "opponent_weight": 144,
-      "opponent_rank": 150,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:33",
-      "event": "KHSAA Boys/Coed Region 3"
-    },
-    {
-      "date": "2026-02-21",
       "opponent_id": "35212701132",
       "opponent_career_id": "career_002206",
       "opponent_name": "Jack Ferguson",
@@ -75,6 +64,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:48",
+      "event": "KHSAA Boys/Coed Region 3"
+    },
+    {
+      "date": "2026-02-21",
+      "opponent_id": "36951568132",
+      "opponent_career_id": "career_005677",
+      "opponent_name": "Keyshaun Warren",
+      "opponent_team": "Shawnee",
+      "opponent_team_rank": 128,
+      "opponent_weight": 144,
+      "opponent_rank": 150,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:33",
       "event": "KHSAA Boys/Coed Region 3"
     },
     {
@@ -351,22 +356,6 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35040599132",
-      "opponent_career_id": "career_005711",
-      "opponent_name": "Antar Sher",
-      "opponent_team": "Tates Creek",
-      "opponent_team_rank": 132,
-      "opponent_weight": 144,
-      "opponent_rank": 53,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Tates Creek"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "35460279132",
       "opponent_career_id": "career_005630",
       "opponent_name": "Ethan Pituch",
@@ -414,6 +403,22 @@
       "event": "vs. Mccreary Central"
     },
     {
+      "date": "2025-12-13",
+      "opponent_id": "35040599132",
+      "opponent_career_id": "career_005711",
+      "opponent_name": "Antar Sher",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": 132,
+      "opponent_weight": 144,
+      "opponent_rank": 53,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Tates Creek"
+    },
+    {
       "date": "2025-12-10",
       "opponent_id": "35215328132",
       "opponent_career_id": "career_004627",
@@ -428,38 +433,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Doss"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35135163132",
-      "opponent_career_id": "career_000832",
-      "opponent_name": "Bronson Hartel",
-      "opponent_team": "Fairdale",
-      "opponent_team_rank": 24,
-      "opponent_weight": 138,
-      "opponent_rank": 36,
-      "weight_class": "150",
-      "result": "L",
-      "method": "MD",
-      "score": "14-3",
-      "duration": "7:00",
-      "event": "vs. Fairdale"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35618246132",
-      "opponent_career_id": "career_002831",
-      "opponent_name": "Justyce Gullion",
-      "opponent_team": "Valley",
-      "opponent_team_rank": 135,
-      "opponent_weight": 144,
-      "opponent_rank": 65,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Valley"
     },
     {
       "date": "2025-12-06",
@@ -492,6 +465,38 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Desales"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35618246132",
+      "opponent_career_id": "career_002831",
+      "opponent_name": "Justyce Gullion",
+      "opponent_team": "Valley",
+      "opponent_team_rank": 135,
+      "opponent_weight": 144,
+      "opponent_rank": 65,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Valley"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35135163132",
+      "opponent_career_id": "career_000832",
+      "opponent_name": "Bronson Hartel",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": 24,
+      "opponent_weight": 138,
+      "opponent_rank": 36,
+      "weight_class": "150",
+      "result": "L",
+      "method": "MD",
+      "score": "14-3",
+      "duration": "7:00",
+      "event": "vs. Fairdale"
     },
     {
       "date": "2025-12-06",
@@ -611,15 +616,15 @@
       "season": 2025,
       "grade": 9,
       "team": "Bullitt Central",
-      "record": "20-17",
+      "record": "20-18",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 44,
-    "losses": 27,
-    "win_pct": 0.62
+    "losses": 28,
+    "win_pct": 0.611
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

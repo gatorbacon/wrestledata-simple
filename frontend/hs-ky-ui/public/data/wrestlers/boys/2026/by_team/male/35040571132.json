@@ -5,6 +5,11 @@
   "team_slug": "male",
   "team_rank": 45,
   "weight_class": 165,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 131,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.7,
-    "bonus_rate": 0.7,
+    "pin_rate": 0.778,
+    "bonus_rate": 0.778,
     "majors": 0,
     "techs": 0,
     "pins": 7
@@ -95,6 +100,22 @@
     },
     {
       "date": "2026-02-14",
+      "opponent_id": "35205067132",
+      "opponent_career_id": "career_000348",
+      "opponent_name": "Jaylen Hernandez",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": 40,
+      "opponent_weight": 165,
+      "opponent_rank": 81,
+      "weight_class": "175",
+      "result": "L",
+      "method": "MD",
+      "score": "11-3",
+      "duration": "7:00",
+      "event": "vs. Bullitt East"
+    },
+    {
+      "date": "2026-02-14",
       "opponent_id": "35127108132",
       "opponent_career_id": "career_000748",
       "opponent_name": "Michael Hardy",
@@ -107,7 +128,7 @@
       "method": "TF",
       "score": "19-3",
       "duration": "0:00",
-      "event": "vs. Male"
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2026-02-14",
@@ -127,38 +148,6 @@
     },
     {
       "date": "2026-02-14",
-      "opponent_id": "35281226132",
-      "opponent_career_id": "career_002558",
-      "opponent_name": "Ali Solom",
-      "opponent_team": "Southern",
-      "opponent_team_rank": 130,
-      "opponent_weight": 165,
-      "opponent_rank": 148,
-      "weight_class": "165",
-      "result": "W",
-      "method": "DEC",
-      "score": "8-4",
-      "duration": "7:00",
-      "event": "vs. Southern"
-    },
-    {
-      "date": "2026-02-14",
-      "opponent_id": "35205067132",
-      "opponent_career_id": "career_000348",
-      "opponent_name": "Jaylen Hernandez",
-      "opponent_team": "Bullitt East",
-      "opponent_team_rank": 40,
-      "opponent_weight": 165,
-      "opponent_rank": 81,
-      "weight_class": "175",
-      "result": "L",
-      "method": "MD",
-      "score": "11-3",
-      "duration": "7:00",
-      "event": "vs. Male"
-    },
-    {
-      "date": "2026-02-14",
       "opponent_id": "OUTSTATE_e3abb11bd61d",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -172,6 +161,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Shawnee"
+    },
+    {
+      "date": "2026-02-14",
+      "opponent_id": "35281226132",
+      "opponent_career_id": "career_002558",
+      "opponent_name": "Ali Solom",
+      "opponent_team": "Southern",
+      "opponent_team_rank": 130,
+      "opponent_weight": 165,
+      "opponent_rank": 148,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "8-4",
+      "duration": "7:00",
+      "event": "vs. Southern"
     },
     {
       "date": "2026-02-09",
@@ -188,22 +193,6 @@
       "score": null,
       "duration": "3:12",
       "event": "vs. St. Xavier"
-    },
-    {
-      "date": "2026-02-07",
-      "opponent_id": "35040594132",
-      "opponent_career_id": "career_001560",
-      "opponent_name": "Donovan Johnson",
-      "opponent_team": "Male",
-      "opponent_team_rank": 45,
-      "opponent_weight": 157,
-      "opponent_rank": 94,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Michael Herchenrader Jr Memorial Tournament"
     },
     {
       "date": "2026-02-07",
@@ -230,6 +219,22 @@
       "opponent_team_rank": 95,
       "opponent_weight": 165,
       "opponent_rank": 79,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:37",
+      "event": "Michael Herchenrader Jr Memorial Tournament"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35040594132",
+      "opponent_career_id": "career_001560",
+      "opponent_name": "Donovan Johnson",
+      "opponent_team": "Male",
+      "opponent_team_rank": 45,
+      "opponent_weight": 157,
+      "opponent_rank": 94,
       "weight_class": "165",
       "result": "W",
       "method": "FALL",
@@ -331,7 +336,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:19",
-      "event": "vs. Male"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2026-01-03",
@@ -459,23 +464,7 @@
       "method": "MD",
       "score": "13-4",
       "duration": "7:00",
-      "event": "vs. Male"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "OUTSTATE_79922d0d83bc",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "MFF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Jeffersontown"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2025-12-06",
@@ -492,6 +481,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Central"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "OUTSTATE_79922d0d83bc",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Jeffersontown",
+      "opponent_team_rank": 26,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Jeffersontown"
     },
     {
       "date": "2025-12-06",
@@ -549,15 +554,15 @@
       "season": 2023,
       "grade": 8,
       "team": "Male",
-      "record": "3-8",
+      "record": "3-6",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 32,
-    "losses": 47,
-    "win_pct": 0.405
+    "losses": 45,
+    "win_pct": 0.416
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

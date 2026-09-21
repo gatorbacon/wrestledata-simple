@@ -5,6 +5,11 @@
   "team_slug": "boyle_county",
   "team_rank": null,
   "weight_class": 106,
+  "grade": "7th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.7,
-    "bonus_rate": 0.9,
+    "pin_rate": 0.778,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 2,
     "pins": 7
@@ -213,6 +218,22 @@
     },
     {
       "date": "2024-12-07",
+      "opponent_id": "29999288132",
+      "opponent_career_id": "career_000989",
+      "opponent_name": "Gavin Clem",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Joe Cochran State Farm HCIWT"
+    },
+    {
+      "date": "2024-12-07",
       "opponent_id": "30414589132",
       "opponent_career_id": "career_002097",
       "opponent_name": "Khalid Khrais",
@@ -245,22 +266,6 @@
     },
     {
       "date": "2024-11-30",
-      "opponent_id": "30111748132",
-      "opponent_career_id": null,
-      "opponent_name": "Caleb Patterson",
-      "opponent_team": "Jasper",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:03",
-      "event": "The Tommy Castle Classic"
-    },
-    {
-      "date": "2024-11-30",
       "opponent_id": "30035616132",
       "opponent_career_id": "career_000573",
       "opponent_name": "Hagen Anders",
@@ -289,6 +294,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:52",
+      "event": "The Tommy Castle Classic"
+    },
+    {
+      "date": "2024-11-30",
+      "opponent_id": "30111748132",
+      "opponent_career_id": null,
+      "opponent_name": "Caleb Patterson",
+      "opponent_team": "Jasper",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:03",
       "event": "The Tommy Castle Classic"
     },
     {
@@ -339,5 +360,5 @@
     "losses": 23,
     "win_pct": 0.589
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

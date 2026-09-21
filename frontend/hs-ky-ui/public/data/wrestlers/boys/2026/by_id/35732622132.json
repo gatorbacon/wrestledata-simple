@@ -5,13 +5,18 @@
   "team_slug": "martin_county",
   "team_rank": 14,
   "weight_class": 138,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 24,
   "record": {
-    "overall": "26-12",
-    "vs_ranked": "16-10",
+    "overall": "26-14",
+    "vs_ranked": "15-10",
     "vs_top10": "1-2",
-    "vs_top25": "5-9"
+    "vs_top25": "4-9"
   },
   "metrics": {
     "pf7": 0.0,
@@ -20,14 +25,14 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.704,
-    "bonus_rate": 0.778,
+    "pin_rate": 0.731,
+    "bonus_rate": 0.808,
     "majors": 1,
     "techs": 1,
     "pins": 19
   },
   "opponent_breakdown": {
-    "ranked_wins": 16,
+    "ranked_wins": 15,
     "ranked_losses": 10,
     "top10_wins": 1,
     "top10_losses": 2,
@@ -47,22 +52,6 @@
   "match_list": [
     {
       "date": "2026-02-27",
-      "opponent_id": "35156196132",
-      "opponent_career_id": "career_002700",
-      "opponent_name": "Elijah Adams",
-      "opponent_team": "Taylor County",
-      "opponent_team_rank": 51,
-      "opponent_weight": 138,
-      "opponent_rank": 39,
-      "weight_class": "138",
-      "result": "L",
-      "method": "MFF",
-      "score": null,
-      "duration": "7:00",
-      "event": "KHSAA Boys/Coed State Championship"
-    },
-    {
-      "date": "2026-02-27",
       "opponent_id": "35051536132",
       "opponent_career_id": "career_003019",
       "opponent_name": "Isaac Richards",
@@ -74,6 +63,22 @@
       "result": "L",
       "method": "MD",
       "score": "16-8",
+      "duration": "7:00",
+      "event": "KHSAA Boys/Coed State Championship"
+    },
+    {
+      "date": "2026-02-27",
+      "opponent_id": "35156196132",
+      "opponent_career_id": "career_002700",
+      "opponent_name": "Elijah Adams",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": 51,
+      "opponent_weight": 138,
+      "opponent_rank": 39,
+      "weight_class": "138",
+      "result": "L",
+      "method": "MFF",
+      "score": null,
       "duration": "7:00",
       "event": "KHSAA Boys/Coed State Championship"
     },
@@ -187,7 +192,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:53",
-      "event": "vs. Martin County"
+      "event": "vs. Conner"
     },
     {
       "date": "2026-01-31",
@@ -203,7 +208,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:59",
-      "event": "vs. Martin County"
+      "event": "vs. Cooper"
     },
     {
       "date": "2026-01-31",
@@ -219,12 +224,12 @@
       "method": "FALL",
       "score": null,
       "duration": "1:40",
-      "event": "vs. Martin County"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2026-01-31",
       "opponent_id": "34995382132",
-      "opponent_career_id": null,
+      "opponent_career_id": "career_001481",
       "opponent_name": "Blake kelly",
       "opponent_team": "Lexington Christian",
       "opponent_team_rank": 103,
@@ -235,7 +240,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Martin County"
+      "event": "vs. Lexington Christian"
     },
     {
       "date": "2026-01-31",
@@ -383,22 +388,6 @@
     },
     {
       "date": "2025-12-30",
-      "opponent_id": "35752417132",
-      "opponent_career_id": "career_001345",
-      "opponent_name": "Landon Howard",
-      "opponent_team": "Johnson Central",
-      "opponent_team_rank": 2,
-      "opponent_weight": 132,
-      "opponent_rank": 25,
-      "weight_class": "138",
-      "result": "W",
-      "method": "DEC",
-      "score": "5-3",
-      "duration": "7:00",
-      "event": "Boys Hatfield McCoy 32 2025"
-    },
-    {
-      "date": "2025-12-30",
       "opponent_id": "35850446132",
       "opponent_career_id": "career_000239",
       "opponent_name": "Kaiden Nottingham",
@@ -410,6 +399,22 @@
       "result": "L",
       "method": "DEC",
       "score": "12-5",
+      "duration": "7:00",
+      "event": "Boys Hatfield McCoy 32 2025"
+    },
+    {
+      "date": "2025-12-30",
+      "opponent_id": "35752417132",
+      "opponent_career_id": "career_001345",
+      "opponent_name": "Landon Howard",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": 2,
+      "opponent_weight": 132,
+      "opponent_rank": 25,
+      "weight_class": "138",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-3",
       "duration": "7:00",
       "event": "Boys Hatfield McCoy 32 2025"
     },
@@ -444,22 +449,6 @@
       "score": null,
       "duration": "0:33",
       "event": "Boys Hatfield McCoy 32 2025"
-    },
-    {
-      "date": "2025-12-29",
-      "opponent_id": "35752417132",
-      "opponent_career_id": "career_001345",
-      "opponent_name": "Landon Howard",
-      "opponent_team": "Johnson Central",
-      "opponent_team_rank": 2,
-      "opponent_weight": 132,
-      "opponent_rank": 25,
-      "weight_class": "138",
-      "result": "W",
-      "method": "DEC",
-      "score": "5-3",
-      "duration": "7:00",
-      "event": "HATFIELD-MCCOY 32"
     },
     {
       "date": "2025-12-20",
@@ -714,15 +703,15 @@
       "season": 2026,
       "grade": 9,
       "team": "Martin County",
-      "record": "26-12",
+      "record": "26-14",
       "regional_place": 2,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 26,
-    "losses": 12,
-    "win_pct": 0.684
+    "losses": 14,
+    "win_pct": 0.65
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

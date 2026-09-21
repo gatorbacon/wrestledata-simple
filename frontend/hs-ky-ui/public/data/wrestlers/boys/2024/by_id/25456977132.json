@@ -5,6 +5,11 @@
   "team_slug": "southwestern",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
@@ -85,6 +90,22 @@
     },
     {
       "date": "2024-01-27",
+      "opponent_id": "24697686132",
+      "opponent_career_id": null,
+      "opponent_name": "Ean Baker",
+      "opponent_team": "Union",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Cumberland Gap Invitational Boys"
+    },
+    {
+      "date": "2024-01-27",
       "opponent_id": "25456695132",
       "opponent_career_id": "career_003062",
       "opponent_name": "Levi Jones",
@@ -116,22 +137,6 @@
       "event": "Cumberland Gap Invitational Boys"
     },
     {
-      "date": "2024-01-27",
-      "opponent_id": "24697686132",
-      "opponent_career_id": null,
-      "opponent_name": "Ean Baker",
-      "opponent_team": "Union",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Cumberland Gap Invitational Boys"
-    },
-    {
       "date": "2024-01-06",
       "opponent_id": "26269309132",
       "opponent_career_id": "career_003855",
@@ -145,7 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Southwestern"
+      "event": "vs. Somerset"
     },
     {
       "date": "2024-01-06",
@@ -177,7 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:35",
-      "event": "vs. Southwestern"
+      "event": "vs. Bell County"
     },
     {
       "date": "2023-12-26",
@@ -257,7 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Southwestern"
+      "event": "vs. Bell County"
     },
     {
       "date": "2023-12-19",
@@ -337,7 +342,39 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Southwestern"
+      "event": "vs. Corbin"
+    },
+    {
+      "date": "2023-12-02",
+      "opponent_id": "24984450132",
+      "opponent_career_id": "career_000044",
+      "opponent_name": "Brayden Mattingly",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "V 157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "2023 Christian County Scramble"
+    },
+    {
+      "date": "2023-12-02",
+      "opponent_id": "24694068132",
+      "opponent_career_id": "career_000047",
+      "opponent_name": "Josie Ellis",
+      "opponent_team": "Apollo High School",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "V 157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "2023 Christian County Scramble"
     },
     {
       "date": "2023-12-02",
@@ -386,38 +423,6 @@
       "score": null,
       "duration": "1:07",
       "event": "2023 Christian County Scramble"
-    },
-    {
-      "date": "2023-12-02",
-      "opponent_id": "24984450132",
-      "opponent_career_id": "career_000044",
-      "opponent_name": "Brayden Mattingly",
-      "opponent_team": "Apollo",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "V 157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "2023 Christian County Scramble"
-    },
-    {
-      "date": "2023-12-02",
-      "opponent_id": "24694068132",
-      "opponent_career_id": "career_000047",
-      "opponent_name": "Josie Ellis",
-      "opponent_team": "Apollo High School",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "V 157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "2023 Christian County Scramble"
     }
   ],
   "career": {
@@ -442,5 +447,5 @@
     "losses": 10,
     "win_pct": 0.583
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,6 +5,11 @@
   "team_slug": "hopkinsville",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -37,6 +42,22 @@
   "match_list": [
     {
       "date": "2024-12-05",
+      "opponent_id": "30223227132",
+      "opponent_career_id": "career_000907",
+      "opponent_name": "Tj Dixon",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:35",
+      "event": "vs. Fort Campbell"
+    },
+    {
+      "date": "2024-12-05",
       "opponent_id": "30507806132",
       "opponent_career_id": "career_002735",
       "opponent_name": "Connor Fitzhugh",
@@ -50,22 +71,6 @@
       "score": null,
       "duration": "0:10",
       "event": "vs. Trigg County"
-    },
-    {
-      "date": "2024-12-05",
-      "opponent_id": "30223227132",
-      "opponent_career_id": "career_000907",
-      "opponent_name": "Tj Dixon",
-      "opponent_team": "Fort Campbell",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:35",
-      "event": "vs. Hopkinsville"
     }
   ],
   "career": {
@@ -108,5 +113,5 @@
     "losses": 21,
     "win_pct": 0.533
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

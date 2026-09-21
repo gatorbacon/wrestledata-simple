@@ -5,6 +5,11 @@
   "team_slug": "central",
   "team_rank": null,
   "weight_class": 157,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -133,7 +138,7 @@
     },
     {
       "date": "2025-01-18",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_c781de39a30f",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Woodford County",
@@ -160,8 +165,24 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "1:00",
+      "duration": "0:20",
       "event": "vs. Male"
+    },
+    {
+      "date": "2025-01-18",
+      "opponent_id": "OUTSTATE_580221d42b88",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. North Bullitt"
     },
     {
       "date": "2025-01-18",
@@ -229,12 +250,12 @@
     },
     {
       "date": "2024-12-14",
-      "opponent_id": "30503686132",
-      "opponent_career_id": "career_001732",
-      "opponent_name": "Caleb Moran",
-      "opponent_team": "Meade County",
+      "opponent_id": "30255419132",
+      "opponent_career_id": "career_001428",
+      "opponent_name": "Raheem Radwan",
+      "opponent_team": "Lafayette",
       "opponent_team_rank": null,
-      "opponent_weight": 150,
+      "opponent_weight": 157,
       "opponent_rank": null,
       "weight_class": "157",
       "result": "L",
@@ -245,12 +266,12 @@
     },
     {
       "date": "2024-12-14",
-      "opponent_id": "30255419132",
-      "opponent_career_id": "career_001428",
-      "opponent_name": "Raheem Radwan",
-      "opponent_team": "Lafayette",
+      "opponent_id": "30503686132",
+      "opponent_career_id": "career_001732",
+      "opponent_name": "Caleb Moran",
+      "opponent_team": "Meade County",
       "opponent_team_rank": null,
-      "opponent_weight": 157,
+      "opponent_weight": 150,
       "opponent_rank": null,
       "weight_class": "157",
       "result": "L",
@@ -300,5 +321,5 @@
     "losses": 20,
     "win_pct": 0.429
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

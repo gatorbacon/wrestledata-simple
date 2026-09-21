@@ -5,11 +5,16 @@
   "team_slug": "bardstown",
   "team_rank": 55,
   "weight_class": 106,
+  "grade": "7th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 141,
   "record": {
     "overall": "2-4",
-    "vs_ranked": "1-4",
+    "vs_ranked": "2-4",
     "vs_top10": "0-0",
     "vs_top25": "0-1"
   },
@@ -24,10 +29,10 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
-    "ranked_wins": 1,
+    "ranked_wins": 2,
     "ranked_losses": 4,
     "top10_wins": 0,
     "top10_losses": 0,
@@ -45,6 +50,23 @@
     }
   },
   "match_list": [
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35461195132",
+      "opponent_career_id": "career_005133",
+      "opponent_name": "Jafar Price",
+      "opponent_team": "WEB DuBois",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": 144,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Derby City Classic",
+      "mv_impact": 0.84
+    },
     {
       "date": "2025-12-13",
       "opponent_id": "35461195132",
@@ -153,5 +175,5 @@
     "losses": 4,
     "win_pct": 0.333
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

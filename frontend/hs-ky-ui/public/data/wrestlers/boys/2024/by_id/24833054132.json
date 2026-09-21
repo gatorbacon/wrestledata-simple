@@ -5,10 +5,15 @@
   "team_slug": "frederick_douglass",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
-    "overall": "6-14",
+    "overall": "6-15",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -117,6 +122,22 @@
     },
     {
       "date": "2024-01-24",
+      "opponent_id": "24990188132",
+      "opponent_career_id": "career_004042",
+      "opponent_name": "Dakota Hatton",
+      "opponent_team": "East Jessamine",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. East Jessamine"
+    },
+    {
+      "date": "2024-01-24",
       "opponent_id": "24969818132",
       "opponent_career_id": "career_004473",
       "opponent_name": "Collin Quinn",
@@ -130,22 +151,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. West Jessamine"
-    },
-    {
-      "date": "2024-01-24",
-      "opponent_id": "24990188132",
-      "opponent_career_id": "career_004042",
-      "opponent_name": "Dakota Hatton",
-      "opponent_team": "East Jessamine",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Frederick Douglass"
     },
     {
       "date": "2024-01-17",
@@ -165,22 +170,6 @@
     },
     {
       "date": "2024-01-13",
-      "opponent_id": "25100310132",
-      "opponent_career_id": "career_001494",
-      "opponent_name": "GRAYSON SMITH",
-      "opponent_team": "Madison Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Frederick Douglass"
-    },
-    {
-      "date": "2024-01-13",
       "opponent_id": "OUTSTATE_60d9f28b334a",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -194,6 +183,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Henry Clay"
+    },
+    {
+      "date": "2024-01-13",
+      "opponent_id": "25100310132",
+      "opponent_career_id": "career_001494",
+      "opponent_name": "GRAYSON SMITH",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Madison Central"
     },
     {
       "date": "2023-12-30",
@@ -229,22 +234,6 @@
     },
     {
       "date": "2023-12-21",
-      "opponent_id": "24657573132",
-      "opponent_career_id": "career_002676",
-      "opponent_name": "Aidan Ruiz",
-      "opponent_team": "Tates Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Tates Creek"
-    },
-    {
-      "date": "2023-12-21",
       "opponent_id": "25302727132",
       "opponent_career_id": "career_001418",
       "opponent_name": "Axel Camacho",
@@ -276,6 +265,22 @@
       "event": "vs. Madison Central"
     },
     {
+      "date": "2023-12-21",
+      "opponent_id": "24657573132",
+      "opponent_career_id": "career_002676",
+      "opponent_name": "Aidan Ruiz",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Tates Creek"
+    },
+    {
       "date": "2023-12-16",
       "opponent_id": "26530104132",
       "opponent_career_id": "career_000457",
@@ -289,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:11",
-      "event": "vs. Frederick Douglass"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2023-12-16",
@@ -369,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Frederick Douglass"
+      "event": "vs. East Jessamine"
     }
   ],
   "career": {
@@ -385,7 +390,7 @@
       "season": 2026,
       "grade": 9,
       "team": "Frederick Douglass",
-      "record": "5-13",
+      "record": "5-11",
       "regional_place": null,
       "state_place": null
     },
@@ -393,15 +398,15 @@
       "season": 2024,
       "grade": 8,
       "team": "Frederick Douglass",
-      "record": "6-14",
+      "record": "6-15",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 11,
-    "losses": 27,
-    "win_pct": 0.289
+    "losses": 26,
+    "win_pct": 0.297
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

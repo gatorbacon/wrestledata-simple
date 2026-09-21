@@ -5,10 +5,15 @@
   "team_slug": "john_hardin",
   "team_rank": null,
   "weight_class": 157,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
-    "overall": "16-7",
+    "overall": "17-7",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.833,
-    "bonus_rate": 0.917,
+    "pin_rate": 0.846,
+    "bonus_rate": 0.923,
     "majors": 0,
     "techs": 1,
-    "pins": 10
+    "pins": 11
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -84,6 +89,22 @@
       "event": "Michael J. Herchenrader Jr. Memorial Tournament"
     },
     {
+      "date": "2025-02-01",
+      "opponent_id": "29872738132",
+      "opponent_career_id": "career_001568",
+      "opponent_name": "Dallas Sullivan",
+      "opponent_team": "Male",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:36",
+      "event": "Michael J. Herchenrader Jr. Memorial Tournament"
+    },
+    {
       "date": "2025-01-30",
       "opponent_id": "30370373132",
       "opponent_career_id": "career_001827",
@@ -95,13 +116,13 @@
       "weight_class": "157",
       "result": "L",
       "method": "TF",
-      "score": "20-4",
-      "duration": "0:00",
+      "score": "21-4",
+      "duration": "2:34",
       "event": "vs. Nelson County"
     },
     {
       "date": "2025-01-30",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_1c4c0bbfe05e",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "North Hardin",
@@ -117,22 +138,6 @@
     },
     {
       "date": "2025-01-20",
-      "opponent_id": "29872573132",
-      "opponent_career_id": "career_000472",
-      "opponent_name": "Giazzi Segarra",
-      "opponent_team": "Central Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:45",
-      "event": "JV Regionals"
-    },
-    {
-      "date": "2025-01-20",
       "opponent_id": "29828626132",
       "opponent_career_id": "career_000185",
       "opponent_name": "Deegan Brown",
@@ -145,6 +150,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:59",
+      "event": "JV Regionals"
+    },
+    {
+      "date": "2025-01-20",
+      "opponent_id": "29872573132",
+      "opponent_career_id": "career_000472",
+      "opponent_name": "Giazzi Segarra",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:45",
       "event": "JV Regionals"
     },
     {
@@ -181,7 +202,7 @@
     },
     {
       "date": "2025-01-16",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_28470c03fea2",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Trinity",
@@ -194,6 +215,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Trinity (Whitesville)"
+    },
+    {
+      "date": "2025-01-16",
+      "opponent_id": "OUTSTATE_bddbdc615208",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Hart County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Hart County"
     },
     {
       "date": "2025-01-14",
@@ -209,7 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:40",
-      "event": "vs. John Hardin"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2025-01-10",
@@ -225,7 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. John Hardin"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2024-12-21",
@@ -321,7 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:35",
-      "event": "vs. John Hardin"
+      "event": "vs. Dixie Heights"
     },
     {
       "date": "2024-12-14",
@@ -337,11 +374,11 @@
       "method": "FALL",
       "score": null,
       "duration": "3:02",
-      "event": "vs. John Hardin"
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2024-12-14",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_d27877867b37",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Great Crossing",
@@ -354,6 +391,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Great Crossing"
+    },
+    {
+      "date": "2024-12-14",
+      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:57",
+      "event": "vs. JV All Stars"
     },
     {
       "date": "2024-12-14",
@@ -376,6 +429,7 @@
     "career_id": "career_001329",
     "canonical_name": "Emari Simon",
     "seasons": [
+      2026,
       2025,
       2024,
       2023
@@ -383,10 +437,18 @@
   },
   "season_summary": [
     {
+      "season": 2026,
+      "grade": 12,
+      "team": "John Hardin",
+      "record": "1-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
       "season": 2025,
       "grade": 11,
       "team": "John Hardin",
-      "record": "16-7",
+      "record": "17-7",
       "regional_place": null,
       "state_place": null
     },
@@ -394,7 +456,7 @@
       "season": 2024,
       "grade": 10,
       "team": "John Hardin",
-      "record": "22-11",
+      "record": "23-11",
       "regional_place": null,
       "state_place": null
     },
@@ -402,15 +464,15 @@
       "season": 2023,
       "grade": 9,
       "team": "John Hardin",
-      "record": "24-18",
+      "record": "25-19",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 62,
-    "losses": 36,
-    "win_pct": 0.633
+    "wins": 66,
+    "losses": 39,
+    "win_pct": 0.629
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,6 +5,11 @@
   "team_slug": "ohio_county",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,9 +25,9 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.333,
-    "bonus_rate": 0.556,
-    "majors": 2,
+    "pin_rate": 0.316,
+    "bonus_rate": 0.579,
+    "majors": 3,
     "techs": 2,
     "pins": 6
   },
@@ -117,6 +122,22 @@
     },
     {
       "date": "2025-02-22",
+      "opponent_id": "29916537132",
+      "opponent_career_id": "career_001092",
+      "opponent_name": "Maddox Tabor",
+      "opponent_team": "Greenwood",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "MD",
+      "score": "15-5",
+      "duration": "7:00",
+      "event": "KHSAA Region 2"
+    },
+    {
+      "date": "2025-02-22",
       "opponent_id": "30020533132",
       "opponent_career_id": "career_001734",
       "opponent_name": "Adam Sanders",
@@ -149,7 +170,7 @@
     },
     {
       "date": "2025-02-13",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_8cc9e0bb0dcc",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Daviess County",
@@ -273,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:26",
-      "event": "vs. Ohio County"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2025-02-01",
@@ -341,7 +362,7 @@
     },
     {
       "date": "2025-01-30",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_7ed63b73d691",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Owensboro",
@@ -354,6 +375,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Owensboro"
+    },
+    {
+      "date": "2025-01-30",
+      "opponent_id": "OUTSTATE_3647f95e4c84",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Apollo"
     },
     {
       "date": "2025-01-04",
@@ -421,38 +458,6 @@
     },
     {
       "date": "2024-12-14",
-      "opponent_id": "30370370132",
-      "opponent_career_id": "career_001832",
-      "opponent_name": "Lincoln Boblitt",
-      "opponent_team": "Nelson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:25",
-      "event": "King of the Bluegrass"
-    },
-    {
-      "date": "2024-12-14",
-      "opponent_id": "29804365132",
-      "opponent_career_id": "career_001940",
-      "opponent_name": "Koa Tolley",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:30",
-      "event": "King of the Bluegrass"
-    },
-    {
-      "date": "2024-12-14",
       "opponent_id": "30275321132",
       "opponent_career_id": "career_000510",
       "opponent_name": "DeAsian Harris",
@@ -484,6 +489,38 @@
       "event": "King of the Bluegrass"
     },
     {
+      "date": "2024-12-14",
+      "opponent_id": "30370370132",
+      "opponent_career_id": "career_001832",
+      "opponent_name": "Lincoln Boblitt",
+      "opponent_team": "Nelson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:25",
+      "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2024-12-14",
+      "opponent_id": "29804365132",
+      "opponent_career_id": "career_001940",
+      "opponent_name": "Koa Tolley",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:30",
+      "event": "King of the Bluegrass"
+    },
+    {
       "date": "2024-12-12",
       "opponent_id": "29916537132",
       "opponent_career_id": "career_001092",
@@ -497,7 +534,7 @@
       "method": "DEC",
       "score": "12-7",
       "duration": "7:00",
-      "event": "vs. Ohio County"
+      "event": "vs. Greenwood"
     },
     {
       "date": "2024-12-12",
@@ -556,5 +593,5 @@
     "losses": 38,
     "win_pct": 0.648
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

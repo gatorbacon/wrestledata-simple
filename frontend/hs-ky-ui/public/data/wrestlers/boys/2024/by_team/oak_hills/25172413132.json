@@ -5,10 +5,15 @@
   "team_slug": "oak_hills",
   "team_rank": null,
   "weight_class": 106,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
-    "overall": "2-0",
+    "overall": "4-0",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,9 +25,9 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.5,
-    "bonus_rate": 1.0,
-    "majors": 1,
+    "pin_rate": 0.25,
+    "bonus_rate": 0.75,
+    "majors": 2,
     "techs": 0,
     "pins": 1
   },
@@ -49,7 +54,7 @@
       "method": "MD",
       "score": "11-3",
       "duration": "7:00",
-      "event": "vs. OAK HILLS"
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2023-12-23",
@@ -66,7 +71,39 @@
       "score": null,
       "duration": "1:52",
       "event": "SWOWCA Coaches Classic"
+    },
+    {
+      "date": "2023-12-16",
+      "opponent_id": "24927572132",
+      "opponent_career_id": "career_003203",
+      "opponent_name": "Aluma Enwa",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "DEC",
+      "score": "11-4",
+      "duration": "7:00",
+      "event": "Edgewood Invitational"
+    },
+    {
+      "date": "2023-12-16",
+      "opponent_id": "24927574132",
+      "opponent_career_id": "career_001027",
+      "opponent_name": "Blake Murdock",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "MD",
+      "score": "20-6",
+      "duration": "7:00",
+      "event": "Edgewood Invitational"
     }
   ],
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

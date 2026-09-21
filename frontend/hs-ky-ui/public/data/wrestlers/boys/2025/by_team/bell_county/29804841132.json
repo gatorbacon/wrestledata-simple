@@ -5,6 +5,11 @@
   "team_slug": "bell_county",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -35,6 +40,22 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2025-02-22",
+      "opponent_id": "30355280132",
+      "opponent_career_id": "career_002238",
+      "opponent_name": "Jack Furr",
+      "opponent_team": "Pulaski County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "KHSAA Region 7"
+    },
     {
       "date": "2025-02-22",
       "opponent_id": "30355280132",
@@ -341,22 +362,6 @@
     },
     {
       "date": "2024-12-30",
-      "opponent_id": "30503245132",
-      "opponent_career_id": "career_002596",
-      "opponent_name": "Bryce Bateman",
-      "opponent_team": "Southwestern",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Southwestern"
-    },
-    {
-      "date": "2024-12-30",
       "opponent_id": "30035599132",
       "opponent_career_id": "career_000587",
       "opponent_name": "Aiden Wilson",
@@ -420,7 +425,7 @@
       "event": "vs. Paul Laurence Dunbar"
     },
     {
-      "date": "2024-12-28",
+      "date": "2024-12-30",
       "opponent_id": "30503245132",
       "opponent_career_id": "career_002596",
       "opponent_name": "Bryce Bateman",
@@ -469,7 +474,7 @@
     },
     {
       "date": "2024-12-28",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_472e7299b903",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Wayne County",
@@ -482,6 +487,38 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Wayne County"
+    },
+    {
+      "date": "2024-12-28",
+      "opponent_id": "OUTSTATE_df019622d45a",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Somerset",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Somerset"
+    },
+    {
+      "date": "2024-12-28",
+      "opponent_id": "30503245132",
+      "opponent_career_id": "career_002596",
+      "opponent_name": "Bryce Bateman",
+      "opponent_team": "Southwestern",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Southwestern"
     },
     {
       "date": "2024-12-21",
@@ -498,6 +535,22 @@
       "score": null,
       "duration": "1:31",
       "event": "vs. Eastern"
+    },
+    {
+      "date": "2024-12-21",
+      "opponent_id": "30400715132",
+      "opponent_career_id": null,
+      "opponent_name": "Jaylen Howard",
+      "opponent_team": "Jeffersonville B",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "0:00",
+      "event": "vs. Jeffersonville"
     },
     {
       "date": "2024-12-21",
@@ -548,22 +601,6 @@
       "event": "vs. Doss"
     },
     {
-      "date": "2024-12-21",
-      "opponent_id": "30400715132",
-      "opponent_career_id": null,
-      "opponent_name": "Jaylen Howard",
-      "opponent_team": "Jeffersonville B",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "TF",
-      "score": "18-3",
-      "duration": "0:00",
-      "event": "vs. Jeffersonville"
-    },
-    {
       "date": "2024-12-14",
       "opponent_id": "30007836132",
       "opponent_career_id": "career_002680",
@@ -578,6 +615,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Tates Creek"
+    },
+    {
+      "date": "2024-12-14",
+      "opponent_id": "OUTSTATE_7f935f5b3c09",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Ashland Blazer",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Ashland Blazer"
     },
     {
       "date": "2024-12-14",
@@ -597,38 +650,6 @@
     },
     {
       "date": "2024-12-14",
-      "opponent_id": "30065882132",
-      "opponent_career_id": "career_000247",
-      "opponent_name": "Chase Gillum",
-      "opponent_team": "Boyd County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Boyd County"
-    },
-    {
-      "date": "2024-12-14",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Ashland Blazer"
-    },
-    {
-      "date": "2024-12-14",
       "opponent_id": "30202408132",
       "opponent_career_id": "career_001506",
       "opponent_name": "CHRIS HOLLINGSWORTH",
@@ -642,6 +663,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Madison Central"
+    },
+    {
+      "date": "2024-12-14",
+      "opponent_id": "30065882132",
+      "opponent_career_id": "career_000247",
+      "opponent_name": "Chase Gillum",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Boyd County"
     },
     {
       "date": "2024-12-07",
@@ -690,22 +727,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Perry County Central"
-    },
-    {
-      "date": "2024-11-30",
-      "opponent_id": "30151515132",
-      "opponent_career_id": "career_002999",
-      "opponent_name": "Kevin Brown",
-      "opponent_team": "Whitley County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:34",
-      "event": "vs. Whitley County"
     },
     {
       "date": "2024-11-30",
@@ -770,6 +791,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Mccreary Central"
+    },
+    {
+      "date": "2024-11-30",
+      "opponent_id": "30151515132",
+      "opponent_career_id": "career_002999",
+      "opponent_name": "Kevin Brown",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:34",
+      "event": "vs. Whitley County"
     },
     {
       "date": "2024-11-26",
@@ -837,5 +874,5 @@
     "losses": 41,
     "win_pct": 0.703
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

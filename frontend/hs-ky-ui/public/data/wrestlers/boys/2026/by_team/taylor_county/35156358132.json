@@ -5,6 +5,11 @@
   "team_slug": "taylor_county",
   "team_rank": 51,
   "weight_class": 190,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 159,
   "record": {
@@ -47,22 +52,6 @@
   "match_list": [
     {
       "date": "2026-02-21",
-      "opponent_id": "35886885132",
-      "opponent_career_id": "career_002905",
-      "opponent_name": "landon abner",
-      "opponent_team": "Wayne County",
-      "opponent_team_rank": 37,
-      "opponent_weight": 175,
-      "opponent_rank": 155,
-      "weight_class": "190",
-      "result": "W",
-      "method": "DEC",
-      "score": "5-3",
-      "duration": "7:00",
-      "event": "KHSAA Boys/Coed Region 7"
-    },
-    {
-      "date": "2026-02-21",
       "opponent_id": "35207469132",
       "opponent_career_id": "career_004608",
       "opponent_name": "Ryder Rogers",
@@ -91,6 +80,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:38",
+      "event": "KHSAA Boys/Coed Region 7"
+    },
+    {
+      "date": "2026-02-21",
+      "opponent_id": "35886885132",
+      "opponent_career_id": "career_002905",
+      "opponent_name": "landon abner",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": 37,
+      "opponent_weight": 175,
+      "opponent_rank": 155,
+      "weight_class": "190",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-3",
+      "duration": "7:00",
       "event": "KHSAA Boys/Coed Region 7"
     },
     {
@@ -155,7 +160,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Taylor County"
+      "event": "vs. Green County"
     },
     {
       "date": "2026-01-17",
@@ -203,24 +208,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Taylor County"
-    },
-    {
-      "date": "2026-01-10",
-      "opponent_id": "34994849132",
-      "opponent_career_id": "career_002626",
-      "opponent_name": "luke nelson",
-      "opponent_team": "Spencer County",
-      "opponent_team_rank": 29,
-      "opponent_weight": 165,
-      "opponent_rank": 126,
-      "weight_class": "190",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:45",
-      "event": "vs. Taylor County",
-      "mv_impact": 4.38
+      "event": "vs. Nelson County"
     },
     {
       "date": "2026-01-10",
@@ -236,7 +224,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Taylor County"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2026-01-10",
@@ -252,8 +240,25 @@
       "method": "FALL",
       "score": null,
       "duration": "1:48",
-      "event": "vs. Taylor County",
+      "event": "vs. Franklin County",
       "mv_impact": -4.18
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "34994849132",
+      "opponent_career_id": "career_002626",
+      "opponent_name": "luke nelson",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": 29,
+      "opponent_weight": 165,
+      "opponent_rank": 126,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:45",
+      "event": "vs. Spencer County",
+      "mv_impact": 4.38
     },
     {
       "date": "2026-01-10",
@@ -270,39 +275,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Western Hills"
-    },
-    {
-      "date": "2026-01-03",
-      "opponent_id": "35398396132",
-      "opponent_career_id": "career_001227",
-      "opponent_name": "Kayson White",
-      "opponent_team": "Highlands",
-      "opponent_team_rank": 10,
-      "opponent_weight": 157,
-      "opponent_rank": 3,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:07",
-      "event": "Warhawk Classic"
-    },
-    {
-      "date": "2026-01-03",
-      "opponent_id": "34993526132",
-      "opponent_career_id": "career_002396",
-      "opponent_name": "Tabin Prine",
-      "opponent_team": "Scott County",
-      "opponent_team_rank": 126,
-      "opponent_weight": 175,
-      "opponent_rank": 111,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Warhawk Classic",
-      "mv_impact": 6.02
     },
     {
       "date": "2026-01-03",
@@ -323,6 +295,22 @@
     },
     {
       "date": "2026-01-03",
+      "opponent_id": "35398396132",
+      "opponent_career_id": "career_001227",
+      "opponent_name": "Kayson White",
+      "opponent_team": "Highlands",
+      "opponent_team_rank": 10,
+      "opponent_weight": 157,
+      "opponent_rank": 3,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:07",
+      "event": "Warhawk Classic"
+    },
+    {
+      "date": "2026-01-03",
       "opponent_id": "35404979132",
       "opponent_career_id": "career_001430",
       "opponent_name": "Jeffrey Temprano",
@@ -339,21 +327,21 @@
       "mv_impact": -2.44
     },
     {
-      "date": "2025-12-13",
-      "opponent_id": "35033118132",
-      "opponent_career_id": "career_002690",
-      "opponent_name": "Wyatt Poynter",
-      "opponent_team": "Tates Creek",
-      "opponent_team_rank": 132,
-      "opponent_weight": 165,
-      "opponent_rank": 113,
+      "date": "2026-01-03",
+      "opponent_id": "34993526132",
+      "opponent_career_id": "career_002396",
+      "opponent_name": "Tabin Prine",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": 126,
+      "opponent_weight": 175,
+      "opponent_rank": 111,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Taylor County",
-      "mv_impact": 2.85
+      "event": "Warhawk Classic",
+      "mv_impact": 6.02
     },
     {
       "date": "2025-12-13",
@@ -369,8 +357,25 @@
       "method": "FALL",
       "score": null,
       "duration": "0:40",
-      "event": "vs. Taylor County",
+      "event": "vs. Franklin County",
       "mv_impact": 0.51
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35033118132",
+      "opponent_career_id": "career_002690",
+      "opponent_name": "Wyatt Poynter",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": 132,
+      "opponent_weight": 165,
+      "opponent_rank": 113,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Tates Creek",
+      "mv_impact": 2.85
     },
     {
       "date": "2025-12-13",
@@ -463,5 +468,5 @@
     "losses": 16,
     "win_pct": 0.333
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

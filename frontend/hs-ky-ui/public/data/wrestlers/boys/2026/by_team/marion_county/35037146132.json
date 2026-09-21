@@ -5,6 +5,11 @@
   "team_slug": "marion_county",
   "team_rank": 106,
   "weight_class": 190,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 148,
   "record": {
@@ -95,24 +100,8 @@
     },
     {
       "date": "2026-02-07",
-      "opponent_id": "35267058132",
-      "opponent_career_id": "career_002983",
-      "opponent_name": "Maddox Hammond",
-      "opponent_team": "Western Hills",
-      "opponent_team_rank": 140,
-      "opponent_weight": 175,
-      "opponent_rank": 56,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:23",
-      "event": "vs. Western Hills"
-    },
-    {
-      "date": "2026-02-07",
       "opponent_id": "37797369132",
-      "opponent_career_id": null,
+      "opponent_career_id": "career_004162",
       "opponent_name": "Elijah Ziegler",
       "opponent_team": "Hopkinsville",
       "opponent_team_rank": 93,
@@ -123,7 +112,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:29",
-      "event": "vs. Marion County"
+      "event": "vs. Hopkinsville"
     },
     {
       "date": "2026-02-07",
@@ -139,7 +128,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:51",
-      "event": "vs. Marion County"
+      "event": "vs. Logan County"
     },
     {
       "date": "2026-02-07",
@@ -188,7 +177,54 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Trinity (Whitesville)"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "35267058132",
+      "opponent_career_id": "career_002983",
+      "opponent_name": "Maddox Hammond",
+      "opponent_team": "Western Hills",
+      "opponent_team_rank": 140,
+      "opponent_weight": 175,
+      "opponent_rank": 56,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:23",
+      "event": "vs. Western Hills"
     }
   ],
-  "profile_generated_at": "2026-04-16"
+  "career": {
+    "career_id": "career_001593",
+    "canonical_name": "John Bickett",
+    "seasons": [
+      2026,
+      2025
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2026,
+      "grade": 10,
+      "team": "Marion County",
+      "record": "4-5",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
+      "season": 2025,
+      "grade": 9,
+      "team": "Marion County",
+      "record": "1-6",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 5,
+    "losses": 11,
+    "win_pct": 0.312
+  },
+  "profile_generated_at": "2026-09-21"
 }

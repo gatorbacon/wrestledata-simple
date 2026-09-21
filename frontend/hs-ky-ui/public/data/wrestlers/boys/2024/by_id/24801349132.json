@@ -5,10 +5,15 @@
   "team_slug": "south_warren",
   "team_rank": null,
   "weight_class": 106,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
-    "overall": "4-3",
+    "overall": "27-17",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.8,
-    "bonus_rate": 0.9,
+    "pin_rate": 0.722,
+    "bonus_rate": 0.833,
     "majors": 0,
-    "techs": 1,
-    "pins": 8
+    "techs": 2,
+    "pins": 13
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -148,6 +153,54 @@
       "event": "Commando Crush"
     },
     {
+      "date": "2024-01-13",
+      "opponent_id": "24897838132",
+      "opponent_career_id": null,
+      "opponent_name": "Carter Hostetler",
+      "opponent_team": "Spring Hill",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "SV-1",
+      "score": "11-9",
+      "duration": "8:15",
+      "event": "Commando Crush"
+    },
+    {
+      "date": "2024-01-13",
+      "opponent_id": "25213206132",
+      "opponent_career_id": null,
+      "opponent_name": "Mac Denton",
+      "opponent_team": "Hendersonville",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-4",
+      "duration": "7:00",
+      "event": "Commando Crush"
+    },
+    {
+      "date": "2024-01-13",
+      "opponent_id": "25155750132",
+      "opponent_career_id": null,
+      "opponent_name": "Donte Majors",
+      "opponent_team": "John Overton",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:23",
+      "event": "Commando Crush"
+    },
+    {
       "date": "2024-01-11",
       "opponent_id": "24653905132",
       "opponent_career_id": "career_000643",
@@ -161,7 +214,55 @@
       "method": "FALL",
       "score": null,
       "duration": "3:50",
-      "event": "vs. South Warren High School"
+      "event": "vs. Daviess County"
+    },
+    {
+      "date": "2024-01-05",
+      "opponent_id": "24914143132",
+      "opponent_career_id": "career_002035",
+      "opponent_name": "Logan Mongold",
+      "opponent_team": "Owensboro Catholic",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "TF",
+      "score": "17-0",
+      "duration": "5:00",
+      "event": "vs. Owensboro Catholic High School"
+    },
+    {
+      "date": "2024-01-05",
+      "opponent_id": "OUTSTATE_19e2237a6698",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Hopkinsville"
+    },
+    {
+      "date": "2024-01-05",
+      "opponent_id": "24814232132",
+      "opponent_career_id": null,
+      "opponent_name": "Josh Long",
+      "opponent_team": "East Robertson",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. East Robertson"
     },
     {
       "date": "2023-12-29",
@@ -177,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. South Warren High School"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2023-12-29",
@@ -193,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. South Warren High School"
+      "event": "vs. Owensboro"
     },
     {
       "date": "2023-12-29",
@@ -209,7 +310,39 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. South Warren High School"
+      "event": "vs. Owensboro Catholic"
+    },
+    {
+      "date": "2023-12-29",
+      "opponent_id": "OUTSTATE_d2c14af25c4d",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. John Hardin"
+    },
+    {
+      "date": "2023-12-29",
+      "opponent_id": "OUTSTATE_e00bfda8c1fc",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Jasper",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Jasper"
     },
     {
       "date": "2023-12-23",
@@ -228,6 +361,22 @@
       "event": "2023 Christian County Invitational"
     },
     {
+      "date": "2023-12-23",
+      "opponent_id": "25135945132",
+      "opponent_career_id": null,
+      "opponent_name": "Aiden Oswald",
+      "opponent_team": "Station Camp",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:32",
+      "event": "2023 Christian County Invitational"
+    },
+    {
       "date": "2023-12-20",
       "opponent_id": "24801517132",
       "opponent_career_id": "career_001087",
@@ -241,7 +390,55 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. South Warren"
+      "event": "vs. Greenwood"
+    },
+    {
+      "date": "2023-12-19",
+      "opponent_id": "24694073132",
+      "opponent_career_id": "career_000029",
+      "opponent_name": "Kevin Lopez",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "MD",
+      "score": "15-5",
+      "duration": "7:00",
+      "event": "vs. Apollo High School"
+    },
+    {
+      "date": "2023-12-19",
+      "opponent_id": "24914143132",
+      "opponent_career_id": "career_002035",
+      "opponent_name": "Logan Mongold",
+      "opponent_team": "Owensboro Catholic",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Owensboro Catholic High School"
+    },
+    {
+      "date": "2023-12-19",
+      "opponent_id": "OUTSTATE_a25c1ee64960",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "White House Heritage",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. White House Heritage"
     },
     {
       "date": "2023-12-16",
@@ -257,7 +454,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:42",
-      "event": "vs. South Warren High School"
+      "event": "vs. Frederick Douglass"
     },
     {
       "date": "2023-12-16",
@@ -273,7 +470,39 @@
       "method": "TF",
       "score": "17-2",
       "duration": "5:06",
-      "event": "vs. South Warren High School"
+      "event": "vs. Nelson County"
+    },
+    {
+      "date": "2023-12-16",
+      "opponent_id": "OUTSTATE_472d8610052b",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "East Carter",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. East Carter"
+    },
+    {
+      "date": "2023-12-16",
+      "opponent_id": "OUTSTATE_cf65b3a1b1aa",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Lexington Christian Academy",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Lexington Christian Academy"
     },
     {
       "date": "2023-12-12",
@@ -289,7 +518,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:46",
-      "event": "vs. South Warren High School"
+      "event": "vs. Daviess County"
     },
     {
       "date": "2023-12-09",
@@ -305,7 +534,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. South Warren High School"
+      "event": "vs. Henderson B"
     },
     {
       "date": "2023-12-09",
@@ -321,7 +550,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. South Warren High School"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2023-12-09",
@@ -337,7 +566,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. South Warren High School"
+      "event": "vs. John Hardin"
     },
     {
       "date": "2023-12-09",
@@ -353,7 +582,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. South Warren High School"
+      "event": "vs. Trigg County"
     },
     {
       "date": "2023-12-06",
@@ -369,7 +598,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. South Warren High School"
+      "event": "vs. Hart County"
     },
     {
       "date": "2023-12-02",
@@ -385,7 +614,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. South Warren High School"
+      "event": "vs. Bardstown"
     },
     {
       "date": "2023-12-02",
@@ -401,7 +630,71 @@
       "method": "FALL",
       "score": null,
       "duration": "1:08",
-      "event": "vs. South Warren High School"
+      "event": "vs. Caldwell County"
+    },
+    {
+      "date": "2023-12-02",
+      "opponent_id": "OUTSTATE_38f95cb97442",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Central Hardin"
+    },
+    {
+      "date": "2023-11-30",
+      "opponent_id": "24833717132",
+      "opponent_career_id": null,
+      "opponent_name": "Joseph Howell",
+      "opponent_team": "Fairview",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Fairview"
+    },
+    {
+      "date": "2023-11-30",
+      "opponent_id": "OUTSTATE_a25c1ee64960",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "White House Heritage",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. White House Heritage"
+    },
+    {
+      "date": "2023-11-22",
+      "opponent_id": "24694073132",
+      "opponent_career_id": "career_000029",
+      "opponent_name": "Kevin Lopez",
+      "opponent_team": "Apollo",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:52",
+      "event": "vs. Apollo High School"
     },
     {
       "date": "2023-11-22",
@@ -417,7 +710,39 @@
       "method": "FALL",
       "score": null,
       "duration": "1:24",
-      "event": "vs. South Warren High School"
+      "event": "vs. McCracken County"
+    },
+    {
+      "date": "2023-11-22",
+      "opponent_id": "24874509132",
+      "opponent_career_id": null,
+      "opponent_name": "Aiden Cano",
+      "opponent_team": "Rossview",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:58",
+      "event": "vs. Rossview"
+    },
+    {
+      "date": "2023-11-22",
+      "opponent_id": "OUTSTATE_da1f42a09752",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "West Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. West Creek"
     }
   ],
   "career": {
@@ -450,15 +775,15 @@
       "season": 2024,
       "grade": 8,
       "team": "South Warren",
-      "record": "4-3",
+      "record": "27-17",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 83,
-    "losses": 22,
-    "win_pct": 0.79
+    "wins": 106,
+    "losses": 36,
+    "win_pct": 0.746
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

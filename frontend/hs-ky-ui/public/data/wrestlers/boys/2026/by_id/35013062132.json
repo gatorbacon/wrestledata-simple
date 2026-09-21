@@ -5,6 +5,11 @@
   "team_slug": "perry_county_central",
   "team_rank": 116,
   "weight_class": 132,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 58,
   "record": {
@@ -32,10 +37,10 @@
     "top10_wins": 0,
     "top10_losses": 0,
     "win_over_highest_rank": {
-      "opponent_id": "35599167132",
+      "opponent_id": "35513069132",
       "opponent_rank": 56,
-      "opponent_name": "Nathan Tucker",
-      "method": "MD 14-0"
+      "opponent_name": "Kane Caudill",
+      "method": "Fall 0:00"
     },
     "worst_loss": {
       "opponent_id": "35247372132",
@@ -139,7 +144,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:27",
-      "event": "vs. Perry County Central"
+      "event": "vs. Belfry"
     },
     {
       "date": "2026-02-09",
@@ -299,7 +304,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Perry County Central"
+      "event": "vs. Knox Central"
     },
     {
       "date": "2025-12-22",
@@ -315,7 +320,7 @@
       "method": "TF",
       "score": "19-3",
       "duration": "0:00",
-      "event": "vs. Perry County Central"
+      "event": "vs. Mccreary Central"
     },
     {
       "date": "2025-12-22",
@@ -335,22 +340,6 @@
     },
     {
       "date": "2025-12-22",
-      "opponent_id": "OUTSTATE_f0a09df7a433",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Bell County",
-      "opponent_team_rank": 58,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Bell County"
-    },
-    {
-      "date": "2025-12-22",
       "opponent_id": "OUTSTATE_d10736e8834f",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -364,6 +353,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Claiborne High School"
+    },
+    {
+      "date": "2025-12-22",
+      "opponent_id": "OUTSTATE_f0a09df7a433",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": 58,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Bell County"
     },
     {
       "date": "2025-12-18",
@@ -399,22 +404,6 @@
     },
     {
       "date": "2025-12-16",
-      "opponent_id": "35893769132",
-      "opponent_career_id": "career_004818",
-      "opponent_name": "Brady Hamilton",
-      "opponent_team": "Pike County Central",
-      "opponent_team_rank": 49,
-      "opponent_weight": 126,
-      "opponent_rank": 161,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Pike County Central"
-    },
-    {
-      "date": "2025-12-16",
       "opponent_id": "35513069132",
       "opponent_career_id": "career_000133",
       "opponent_name": "Kane Caudill",
@@ -427,7 +416,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Perry County Central"
+      "event": "vs. Belfry"
     },
     {
       "date": "2025-12-16",
@@ -446,20 +435,20 @@
       "event": "vs. Pike County Central"
     },
     {
-      "date": "2025-12-13",
-      "opponent_id": "35703552132",
-      "opponent_career_id": "career_000879",
-      "opponent_name": "Jacob Boyd",
-      "opponent_team": "Floyd Central",
-      "opponent_team_rank": 78,
-      "opponent_weight": 120,
-      "opponent_rank": 132,
+      "date": "2025-12-16",
+      "opponent_id": "35893769132",
+      "opponent_career_id": "career_004818",
+      "opponent_name": "Brady Hamilton",
+      "opponent_team": "Pike County Central",
+      "opponent_team_rank": 49,
+      "opponent_weight": 126,
+      "opponent_rank": 161,
       "weight_class": "132",
       "result": "W",
-      "method": "TF",
-      "score": "17-0",
+      "method": "FALL",
+      "score": null,
       "duration": "0:00",
-      "event": "vs. Perry County Central"
+      "event": "vs. Pike County Central"
     },
     {
       "date": "2025-12-13",
@@ -475,7 +464,39 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Perry County Central"
+      "event": "vs. Belfry"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35703552132",
+      "opponent_career_id": "career_000879",
+      "opponent_name": "Jacob Boyd",
+      "opponent_team": "Floyd Central",
+      "opponent_team_rank": 78,
+      "opponent_weight": 120,
+      "opponent_rank": 132,
+      "weight_class": "132",
+      "result": "W",
+      "method": "TF",
+      "score": "17-0",
+      "duration": "0:00",
+      "event": "vs. Floyd Central"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35640192132",
+      "opponent_career_id": "career_005426",
+      "opponent_name": "Cameron Fortune",
+      "opponent_team": "Harlan County",
+      "opponent_team_rank": 88,
+      "opponent_weight": 138,
+      "opponent_rank": 116,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Harlan County"
     },
     {
       "date": "2025-12-13",
@@ -524,38 +545,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Letcher County Central"
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "35640192132",
-      "opponent_career_id": "career_005426",
-      "opponent_name": "Cameron Fortune",
-      "opponent_team": "Harlan County",
-      "opponent_team_rank": 88,
-      "opponent_weight": 138,
-      "opponent_rank": 116,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Perry County Central"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "35599167132",
-      "opponent_career_id": "career_001692",
-      "opponent_name": "Nathan Tucker",
-      "opponent_team": "Mccreary Central",
-      "opponent_team_rank": 109,
-      "opponent_weight": 126,
-      "opponent_rank": 56,
-      "weight_class": "132",
-      "result": "W",
-      "method": "MD",
-      "score": "14-0",
-      "duration": "7:00",
-      "event": "Anchor Down Showdown"
     },
     {
       "date": "2025-12-06",
@@ -622,6 +611,22 @@
       "event": "Anchor Down Showdown"
     },
     {
+      "date": "2025-12-06",
+      "opponent_id": "35599167132",
+      "opponent_career_id": "career_001692",
+      "opponent_name": "Nathan Tucker",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": 109,
+      "opponent_weight": 126,
+      "opponent_rank": 56,
+      "weight_class": "132",
+      "result": "W",
+      "method": "MD",
+      "score": "14-0",
+      "duration": "7:00",
+      "event": "Anchor Down Showdown"
+    },
+    {
       "date": "2025-12-02",
       "opponent_id": "34997608132",
       "opponent_career_id": "career_000581",
@@ -635,7 +640,7 @@
       "method": "MD",
       "score": "13-4",
       "duration": "7:00",
-      "event": "vs. Perry County Central"
+      "event": "vs. Corbin"
     },
     {
       "date": "2025-12-02",
@@ -685,5 +690,5 @@
     "losses": 24,
     "win_pct": 0.73
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,6 +5,11 @@
   "team_slug": "jeffersontown",
   "team_rank": 26,
   "weight_class": 215,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 186,
   "record": {
@@ -59,7 +64,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:49",
-      "event": "vs. Jeffersontown"
+      "event": "vs. Fairdale"
     },
     {
       "date": "2026-01-07",
@@ -76,6 +81,38 @@
       "score": null,
       "duration": "0:16",
       "event": "vs. Moore"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34988542132",
+      "opponent_career_id": "career_000729",
+      "opponent_name": "Pierson Ferguson",
+      "opponent_team": "Doss",
+      "opponent_team_rank": 72,
+      "opponent_weight": 215,
+      "opponent_rank": 67,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Doss"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35746100132",
+      "opponent_career_id": "career_000818",
+      "opponent_name": "Ayden Sorrels",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": 76,
+      "opponent_weight": 215,
+      "opponent_rank": 263,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Eastern"
     },
     {
       "date": "2025-12-20",
@@ -126,38 +163,6 @@
       "event": "vs. Meade County"
     },
     {
-      "date": "2025-12-20",
-      "opponent_id": "34988542132",
-      "opponent_career_id": "career_000729",
-      "opponent_name": "Pierson Ferguson",
-      "opponent_team": "Doss",
-      "opponent_team_rank": 72,
-      "opponent_weight": 215,
-      "opponent_rank": 67,
-      "weight_class": "215",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Jeffersontown"
-    },
-    {
-      "date": "2025-12-20",
-      "opponent_id": "35746100132",
-      "opponent_career_id": "career_000818",
-      "opponent_name": "Ayden Sorrels",
-      "opponent_team": "Eastern",
-      "opponent_team_rank": 76,
-      "opponent_weight": 215,
-      "opponent_rank": 263,
-      "weight_class": "215",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Jeffersontown"
-    },
-    {
       "date": "2025-12-17",
       "opponent_id": "OUTSTATE_26cae773bc06",
       "opponent_career_id": null,
@@ -175,22 +180,6 @@
     },
     {
       "date": "2025-12-03",
-      "opponent_id": "35321120132",
-      "opponent_career_id": "career_001880",
-      "opponent_name": "Luke Dalton",
-      "opponent_team": "North Bullitt",
-      "opponent_team_rank": 46,
-      "opponent_weight": 190,
-      "opponent_rank": 163,
-      "weight_class": "215",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "7:49",
-      "event": "vs. North Bullitt"
-    },
-    {
-      "date": "2025-12-03",
       "opponent_id": "35635839132",
       "opponent_career_id": "career_001879",
       "opponent_name": "David Voelker",
@@ -203,6 +192,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:20",
+      "event": "vs. North Bullitt"
+    },
+    {
+      "date": "2025-12-03",
+      "opponent_id": "35321120132",
+      "opponent_career_id": "career_001880",
+      "opponent_name": "Luke Dalton",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": 46,
+      "opponent_weight": 190,
+      "opponent_rank": 163,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "7:49",
       "event": "vs. North Bullitt"
     }
   ],
@@ -228,5 +233,5 @@
     "losses": 8,
     "win_pct": 0.2
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

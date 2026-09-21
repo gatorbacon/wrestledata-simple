@@ -5,6 +5,11 @@
   "team_slug": "paul_laurence_dunbar",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,10 +25,10 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.769,
-    "bonus_rate": 0.923,
+    "pin_rate": 0.741,
+    "bonus_rate": 0.926,
     "majors": 1,
-    "techs": 3,
+    "techs": 4,
     "pins": 20
   },
   "opponent_breakdown": {
@@ -100,6 +105,22 @@
       "event": "KHSAA Region 6"
     },
     {
+      "date": "2025-02-22",
+      "opponent_id": "29791717132",
+      "opponent_career_id": "career_002389",
+      "opponent_name": "AJ Falk",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "0:00",
+      "event": "KHSAA Region 6"
+    },
+    {
       "date": "2025-02-08",
       "opponent_id": "30625079132",
       "opponent_career_id": "career_000291",
@@ -133,7 +154,23 @@
     },
     {
       "date": "2025-02-01",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "29792350132",
+      "opponent_career_id": "career_000945",
+      "opponent_name": "Joseph Reed",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:37",
+      "event": "vs. Franklin County"
+    },
+    {
+      "date": "2025-02-01",
+      "opponent_id": "OUTSTATE_31fbdaf5d8b7",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Tates Creek",
@@ -149,19 +186,35 @@
     },
     {
       "date": "2025-02-01",
-      "opponent_id": "29792350132",
-      "opponent_career_id": "career_000945",
-      "opponent_name": "Joseph Reed",
-      "opponent_team": "Franklin County",
+      "opponent_id": "OUTSTATE_443ae202f765",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Rowan County",
       "opponent_team_rank": null,
-      "opponent_weight": 126,
+      "opponent_weight": null,
       "opponent_rank": null,
-      "weight_class": "126",
+      "weight_class": "120",
       "result": "W",
-      "method": "FALL",
+      "method": "FF",
       "score": null,
-      "duration": "3:37",
-      "event": "vs. Paul Laurence Dunbar"
+      "duration": "7:00",
+      "event": "vs. Rowan County"
+    },
+    {
+      "date": "2025-02-01",
+      "opponent_id": "OUTSTATE_d11d1b4317fe",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Thomas Nelson",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Thomas Nelson"
     },
     {
       "date": "2025-01-25",
@@ -289,7 +342,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Paul Laurence Dunbar"
+      "event": "vs. Henry Clay"
     },
     {
       "date": "2025-01-15",
@@ -309,22 +362,6 @@
     },
     {
       "date": "2024-12-30",
-      "opponent_id": "30330951132",
-      "opponent_career_id": "career_001374",
-      "opponent_name": "Nataya Litteral",
-      "opponent_team": "Knox Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:29",
-      "event": "vs. Paul Laurence Dunbar"
-    },
-    {
-      "date": "2024-12-30",
       "opponent_id": "29880448132",
       "opponent_career_id": "career_000150",
       "opponent_name": "Chris Baker",
@@ -337,7 +374,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Paul Laurence Dunbar"
+      "event": "vs. Bell County"
+    },
+    {
+      "date": "2024-12-30",
+      "opponent_id": "30330951132",
+      "opponent_career_id": "career_001374",
+      "opponent_name": "Nataya Litteral",
+      "opponent_team": "Knox Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:29",
+      "event": "vs. Knox Central"
     },
     {
       "date": "2024-12-30",
@@ -353,7 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Paul Laurence Dunbar"
+      "event": "vs. Mccreary Central"
     },
     {
       "date": "2024-12-30",
@@ -465,11 +518,11 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Paul Laurence Dunbar"
+      "event": "vs. Frederick Douglass"
     },
     {
       "date": "2024-12-18",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_3a96223443a0",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "George Rogers Clark",
@@ -485,22 +538,6 @@
     },
     {
       "date": "2024-12-14",
-      "opponent_id": "30039108132",
-      "opponent_career_id": "career_001521",
-      "opponent_name": "Jayden Williams",
-      "opponent_team": "Madison Southern",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:18",
-      "event": "vs. Paul Laurence Dunbar"
-    },
-    {
-      "date": "2024-12-14",
       "opponent_id": "30028536132",
       "opponent_career_id": "career_001294",
       "opponent_name": "Ubaidah Nguyen",
@@ -513,11 +550,27 @@
       "method": "FALL",
       "score": null,
       "duration": "0:43",
-      "event": "vs. Paul Laurence Dunbar"
+      "event": "vs. Jeffersontown"
     },
     {
       "date": "2024-12-14",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "30039108132",
+      "opponent_career_id": "career_001521",
+      "opponent_name": "Jayden Williams",
+      "opponent_team": "Madison Southern",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:18",
+      "event": "vs. Madison Southern"
+    },
+    {
+      "date": "2024-12-14",
+      "opponent_id": "OUTSTATE_fa707c1de75c",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Bardstown",
@@ -548,6 +601,22 @@
       "event": "vs. Pulaski County"
     },
     {
+      "date": "2024-12-14",
+      "opponent_id": "OUTSTATE_60d9f28b334a",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Henry Clay"
+    },
+    {
       "date": "2024-12-07",
       "opponent_id": "30006224132",
       "opponent_career_id": "career_000643",
@@ -560,6 +629,22 @@
       "result": "W",
       "method": "TF",
       "score": "17-1",
+      "duration": "0:00",
+      "event": "Joe Cochran State Farm HCIWT"
+    },
+    {
+      "date": "2024-12-07",
+      "opponent_id": "30006269132",
+      "opponent_career_id": "career_000645",
+      "opponent_name": "Aiden Tipton-McDaniel",
+      "opponent_team": "Daviess County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
       "duration": "0:00",
       "event": "Joe Cochran State Farm HCIWT"
     },
@@ -593,22 +678,6 @@
       "method": "MD",
       "score": "10-1",
       "duration": "7:00",
-      "event": "Joe Cochran State Farm HCIWT"
-    },
-    {
-      "date": "2024-12-07",
-      "opponent_id": "30006269132",
-      "opponent_career_id": "career_000645",
-      "opponent_name": "Aiden Tipton-McDaniel",
-      "opponent_team": "Daviess County",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
       "event": "Joe Cochran State Farm HCIWT"
     }
   ],
@@ -660,15 +729,15 @@
       "season": 2022,
       "grade": 7,
       "team": "Paul Laurence Dunbar",
-      "record": "10-9",
+      "record": "9-9",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 118,
+    "wins": 117,
     "losses": 32,
-    "win_pct": 0.787
+    "win_pct": 0.785
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,6 +5,11 @@
   "team_slug": "boone_county",
   "team_rank": 60,
   "weight_class": 132,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 194,
   "record": {
@@ -111,6 +116,22 @@
     },
     {
       "date": "2026-01-14",
+      "opponent_id": "35528663132",
+      "opponent_career_id": "career_002877",
+      "opponent_name": "Boone Sawyer",
+      "opponent_team": "Walton-Verona",
+      "opponent_team_rank": 136,
+      "opponent_weight": 144,
+      "opponent_rank": 33,
+      "weight_class": "144",
+      "result": "L",
+      "method": "TF",
+      "score": "19-3",
+      "duration": "0:00",
+      "event": "vs. Walton-Verona"
+    },
+    {
+      "date": "2026-01-14",
       "opponent_id": "35398418132",
       "opponent_career_id": "career_001221",
       "opponent_name": "Calvin Votel",
@@ -140,22 +161,6 @@
       "score": "17-2",
       "duration": "0:00",
       "event": "vs. Highlands"
-    },
-    {
-      "date": "2026-01-14",
-      "opponent_id": "35528663132",
-      "opponent_career_id": "career_002877",
-      "opponent_name": "Boone Sawyer",
-      "opponent_team": "Walton-Verona",
-      "opponent_team_rank": 136,
-      "opponent_weight": 144,
-      "opponent_rank": 33,
-      "weight_class": "144",
-      "result": "L",
-      "method": "TF",
-      "score": "19-3",
-      "duration": "0:00",
-      "event": "vs. Walton-Verona"
     },
     {
       "date": "2026-01-10",
@@ -271,22 +276,6 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "OUTSTATE_8913f7ba5343",
-      "opponent_career_id": null,
-      "opponent_name": "A Henry",
-      "opponent_team": "Indian Hill High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:06",
-      "event": "Bearcat Brawl 2025"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "35782900132",
       "opponent_career_id": "career_004644",
       "opponent_name": "Wyatt Owens",
@@ -331,6 +320,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:38",
+      "event": "Bearcat Brawl 2025"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "OUTSTATE_8913f7ba5343",
+      "opponent_career_id": null,
+      "opponent_name": "A Henry",
+      "opponent_team": "Indian Hill High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:06",
       "event": "Bearcat Brawl 2025"
     },
     {
@@ -404,5 +409,5 @@
     "losses": 18,
     "win_pct": 0.143
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

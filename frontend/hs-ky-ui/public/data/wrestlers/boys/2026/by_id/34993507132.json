@@ -5,10 +5,15 @@
   "team_slug": "scott_county",
   "team_rank": 126,
   "weight_class": 157,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 101,
   "record": {
-    "overall": "14-16",
+    "overall": "14-17",
     "vs_ranked": "9-10",
     "vs_top10": "0-2",
     "vs_top25": "0-2"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.923,
+    "pin_rate": 0.917,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 12
+    "pins": 11
   },
   "opponent_breakdown": {
     "ranked_wins": 9,
@@ -79,22 +84,6 @@
     },
     {
       "date": "2026-02-07",
-      "opponent_id": "34989007132",
-      "opponent_career_id": "career_001959",
-      "opponent_name": "Kaden Coy",
-      "opponent_team": "Ohio County",
-      "opponent_team_rank": 48,
-      "opponent_weight": 150,
-      "opponent_rank": 28,
-      "weight_class": "157",
-      "result": "W",
-      "method": "TF",
-      "score": "22-5",
-      "duration": "3:56",
-      "event": "Mustang Classic"
-    },
-    {
-      "date": "2026-02-07",
       "opponent_id": "35281290132",
       "opponent_career_id": "career_000696",
       "opponent_name": "Thomas Tilley",
@@ -123,6 +112,22 @@
       "method": "TF",
       "score": "22-4",
       "duration": "4:03",
+      "event": "Mustang Classic"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "34989007132",
+      "opponent_career_id": "career_001959",
+      "opponent_name": "Kaden Coy",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": 48,
+      "opponent_weight": 150,
+      "opponent_rank": 28,
+      "weight_class": "157",
+      "result": "W",
+      "method": "TF",
+      "score": "22-5",
+      "duration": "3:56",
       "event": "Mustang Classic"
     },
     {
@@ -172,22 +177,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Montgomery County"
-    },
-    {
-      "date": "2025-12-20",
-      "opponent_id": "35945542132",
-      "opponent_career_id": null,
-      "opponent_name": "Ethan Morrison",
-      "opponent_team": "Williamstown",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Fallen Heroes"
     },
     {
       "date": "2025-12-20",
@@ -271,6 +260,22 @@
     },
     {
       "date": "2025-12-20",
+      "opponent_id": "35945542132",
+      "opponent_career_id": null,
+      "opponent_name": "Ethan Morrison",
+      "opponent_team": "Williamstown",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Fallen Heroes"
+    },
+    {
+      "date": "2025-12-20",
       "opponent_id": "35143252132",
       "opponent_career_id": null,
       "opponent_name": "Christian Smith",
@@ -303,22 +308,6 @@
     },
     {
       "date": "2025-12-13",
-      "opponent_id": "35124935132",
-      "opponent_career_id": "career_001771",
-      "opponent_name": "Noah Weissbach",
-      "opponent_team": "Montgomery County",
-      "opponent_team_rank": 112,
-      "opponent_weight": 150,
-      "opponent_rank": 49,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Ashland blazer invitational"
-    },
-    {
-      "date": "2025-12-13",
       "opponent_id": "36004402132",
       "opponent_career_id": "career_004503",
       "opponent_name": "James McDaniels",
@@ -331,7 +320,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Ashland Invitational Tournament"
+      "event": "Ashland blazer invitational"
     },
     {
       "date": "2025-12-13",
@@ -348,6 +337,22 @@
       "score": null,
       "duration": "0:00",
       "event": "Ashland Invitational Tournament"
+    },
+    {
+      "date": "2025-12-13",
+      "opponent_id": "35124935132",
+      "opponent_career_id": "career_001771",
+      "opponent_name": "Noah Weissbach",
+      "opponent_team": "Montgomery County",
+      "opponent_team_rank": 112,
+      "opponent_weight": 150,
+      "opponent_rank": 49,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Ashland blazer invitational"
     },
     {
       "date": "2025-12-13",
@@ -495,13 +500,13 @@
     },
     {
       "date": "2025-11-29",
-      "opponent_id": "35225281132",
-      "opponent_career_id": "career_005665",
-      "opponent_name": "Nathan Cottengin",
-      "opponent_team": "Scott",
-      "opponent_team_rank": 125,
-      "opponent_weight": 150,
-      "opponent_rank": 78,
+      "opponent_id": "35405497132",
+      "opponent_career_id": "career_001010",
+      "opponent_name": "Jacob Isaacs",
+      "opponent_team": "Grant County",
+      "opponent_team_rank": 84,
+      "opponent_weight": 157,
+      "opponent_rank": 112,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -511,13 +516,13 @@
     },
     {
       "date": "2025-11-29",
-      "opponent_id": "35405497132",
-      "opponent_career_id": "career_001010",
-      "opponent_name": "Jacob Isaacs",
-      "opponent_team": "Grant County",
-      "opponent_team_rank": 84,
-      "opponent_weight": 157,
-      "opponent_rank": 112,
+      "opponent_id": "35225281132",
+      "opponent_career_id": "career_005665",
+      "opponent_name": "Nathan Cottengin",
+      "opponent_team": "Scott",
+      "opponent_team_rank": 125,
+      "opponent_weight": 150,
+      "opponent_rank": 78,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
@@ -540,22 +545,6 @@
       "score": null,
       "duration": "0:00",
       "event": "Tommy Castle Classic"
-    },
-    {
-      "date": "2025-11-29",
-      "opponent_id": "OUTSTATE_8bf70ad636d8",
-      "opponent_career_id": null,
-      "opponent_name": "Pierce Sorley",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Tommy Castle Classic"
     }
   ],
   "career": {
@@ -573,7 +562,7 @@
       "season": 2026,
       "grade": 12,
       "team": "Scott County",
-      "record": "14-16",
+      "record": "14-17",
       "regional_place": null,
       "state_place": null
     },
@@ -581,7 +570,7 @@
       "season": 2025,
       "grade": 11,
       "team": "Scott County",
-      "record": "17-21",
+      "record": "17-20",
       "regional_place": null,
       "state_place": null
     },
@@ -589,7 +578,7 @@
       "season": 2024,
       "grade": 10,
       "team": "Scott County",
-      "record": "7-19",
+      "record": "7-18",
       "regional_place": null,
       "state_place": null
     },
@@ -597,15 +586,15 @@
       "season": 2023,
       "grade": 9,
       "team": "Scott County",
-      "record": "1-15",
+      "record": "1-14",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 39,
-    "losses": 71,
-    "win_pct": 0.355
+    "losses": 69,
+    "win_pct": 0.361
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

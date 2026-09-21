@@ -5,11 +5,16 @@
   "team_slug": "southern",
   "team_rank": 130,
   "weight_class": 157,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 26,
   "record": {
-    "overall": "28-12",
-    "vs_ranked": "24-12",
+    "overall": "27-12",
+    "vs_ranked": "25-12",
     "vs_top10": "0-2",
     "vs_top25": "3-12"
   },
@@ -20,14 +25,14 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.75,
-    "bonus_rate": 0.833,
+    "pin_rate": 0.792,
+    "bonus_rate": 0.875,
     "majors": 0,
     "techs": 2,
-    "pins": 18
+    "pins": 19
   },
   "opponent_breakdown": {
-    "ranked_wins": 24,
+    "ranked_wins": 25,
     "ranked_losses": 12,
     "top10_wins": 0,
     "top10_losses": 2,
@@ -155,7 +160,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:19",
-      "event": "vs. Southern"
+      "event": "vs. Male"
     },
     {
       "date": "2026-02-14",
@@ -251,7 +256,7 @@
       "method": "TF",
       "score": "20-4",
       "duration": "0:00",
-      "event": "vs. Southern"
+      "event": "vs. Male"
     },
     {
       "date": "2026-01-17",
@@ -267,7 +272,7 @@
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "vs. Southern"
+      "event": "vs. North Bullitt"
     },
     {
       "date": "2026-01-10",
@@ -349,7 +354,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Southern",
+      "event": "vs. Bullitt East",
       "mv_impact": -4.58
     },
     {
@@ -366,7 +371,7 @@
       "method": "TF",
       "score": "19-3",
       "duration": "0:00",
-      "event": "vs. Southern",
+      "event": "vs. Fern Creek",
       "mv_impact": 1.8
     },
     {
@@ -383,7 +388,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:10",
-      "event": "vs. Southern"
+      "event": "vs. Male"
     },
     {
       "date": "2025-12-30",
@@ -501,7 +506,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Southern",
+      "event": "vs. Fern Creek",
       "mv_impact": 3.77
     },
     {
@@ -574,23 +579,6 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "35321134132",
-      "opponent_career_id": "career_004582",
-      "opponent_name": "Hunter Hammons",
-      "opponent_team": "North Bullitt",
-      "opponent_team_rank": 46,
-      "opponent_weight": 150,
-      "opponent_rank": 61,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:02",
-      "event": "vs. Southern",
-      "mv_impact": 4.3
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "35668057132",
       "opponent_career_id": "career_004747",
       "opponent_name": "Tyler Stone",
@@ -603,7 +591,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Southern",
+      "event": "vs. Central",
       "mv_impact": 1.31
     },
     {
@@ -620,7 +608,24 @@
       "method": "FALL",
       "score": null,
       "duration": "3:14",
-      "event": "vs. Southern"
+      "event": "vs. Male"
+    },
+    {
+      "date": "2025-12-06",
+      "opponent_id": "35321134132",
+      "opponent_career_id": "career_004582",
+      "opponent_name": "Hunter Hammons",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": 46,
+      "opponent_weight": 150,
+      "opponent_rank": 61,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:02",
+      "event": "vs. North Bullitt",
+      "mv_impact": 4.3
     },
     {
       "date": "2025-12-06",
@@ -672,6 +677,22 @@
       "duration": "5:29",
       "event": "Screamin` Eagles Classic",
       "mv_impact": 2.21
+    },
+    {
+      "date": "2025-11-29",
+      "opponent_id": "35051544132",
+      "opponent_career_id": "career_005161",
+      "opponent_name": "Ruddy Pittman",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": 13,
+      "opponent_weight": 165,
+      "opponent_rank": 167,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:22",
+      "event": "Screamin` Eagles Classic"
     }
   ],
   "career": {
@@ -687,7 +708,7 @@
       "season": 2026,
       "grade": 12,
       "team": "Southern",
-      "record": "28-12",
+      "record": "27-12",
       "regional_place": null,
       "state_place": null
     },
@@ -701,9 +722,9 @@
     }
   ],
   "career_record": {
-    "wins": 38,
+    "wins": 37,
     "losses": 34,
-    "win_pct": 0.528
+    "win_pct": 0.521
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

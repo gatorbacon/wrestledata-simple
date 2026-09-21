@@ -5,6 +5,11 @@
   "team_slug": "christian_county",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -96,6 +101,22 @@
       "result": "L",
       "method": "DEC",
       "score": "10-9",
+      "duration": "7:00",
+      "event": "KHSAA State Championship"
+    },
+    {
+      "date": "2025-03-01",
+      "opponent_id": "30048181132",
+      "opponent_career_id": "career_000690",
+      "opponent_name": "Xavier Montanez",
+      "opponent_team": "Dixie Heights",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-2",
       "duration": "7:00",
       "event": "KHSAA State Championship"
     },
@@ -321,7 +342,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:41",
-      "event": "vs. Christian County"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2025-01-25",
@@ -337,7 +358,7 @@
       "method": "TF",
       "score": "16-0",
       "duration": "4:08",
-      "event": "vs. Christian County"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2025-01-25",
@@ -453,22 +474,6 @@
     },
     {
       "date": "2025-01-16",
-      "opponent_id": "30398954132",
-      "opponent_career_id": "career_002064",
-      "opponent_name": "Jayven Williams",
-      "opponent_team": "Paducah Tilghman",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Paducah Tilghman"
-    },
-    {
-      "date": "2025-01-16",
       "opponent_id": "30636818132",
       "opponent_career_id": "career_000384",
       "opponent_name": "Braylyn Stevens",
@@ -481,7 +486,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Christian County"
+      "event": "vs. Calloway County"
+    },
+    {
+      "date": "2025-01-16",
+      "opponent_id": "30398954132",
+      "opponent_career_id": "career_002064",
+      "opponent_name": "Jayven Williams",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:22",
+      "event": "vs. Paducah Tilghman"
     },
     {
       "date": "2025-01-14",
@@ -565,7 +586,7 @@
     },
     {
       "date": "2025-01-04",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_472e7299b903",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Wayne County",
@@ -805,5 +826,5 @@
     "losses": 30,
     "win_pct": 0.771
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

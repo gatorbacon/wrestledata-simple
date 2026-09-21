@@ -5,6 +5,11 @@
   "team_slug": "cooper",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.833,
-    "bonus_rate": 0.833,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 5
+    "pins": 6
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -245,6 +250,22 @@
     },
     {
       "date": "2024-01-06",
+      "opponent_id": "24927685132",
+      "opponent_career_id": "career_001045",
+      "opponent_name": "Clayton Roberts",
+      "opponent_team": "Great Crossing",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:54",
+      "event": "2024 CIWT"
+    },
+    {
+      "date": "2024-01-06",
       "opponent_id": "25092518132",
       "opponent_career_id": "career_000683",
       "opponent_name": "Ethan Piasecki",
@@ -256,7 +277,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "3:54",
+      "duration": "4:54",
       "event": "2024 CIWT"
     },
     {
@@ -465,7 +486,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:54",
-      "event": "vs. Cooper"
+      "event": "vs. Boone County"
     },
     {
       "date": "2023-11-30",
@@ -488,6 +509,7 @@
     "career_id": "career_000551",
     "canonical_name": "Ryan Bergelt",
     "seasons": [
+      2026,
       2025,
       2024,
       2023,
@@ -496,10 +518,18 @@
   },
   "season_summary": [
     {
+      "season": 2026,
+      "grade": 12,
+      "team": "Cooper",
+      "record": "2-2",
+      "regional_place": null,
+      "state_place": null
+    },
+    {
       "season": 2025,
       "grade": 11,
       "team": "Cooper",
-      "record": "17-14",
+      "record": "16-14",
       "regional_place": null,
       "state_place": null
     },
@@ -523,15 +553,15 @@
       "season": 2022,
       "grade": 8,
       "team": "Cooper",
-      "record": "10-17",
+      "record": "10-18",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 38,
-    "losses": 60,
-    "win_pct": 0.388
+    "wins": 39,
+    "losses": 63,
+    "win_pct": 0.382
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

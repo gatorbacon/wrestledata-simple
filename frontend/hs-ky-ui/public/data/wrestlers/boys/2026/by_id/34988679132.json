@@ -5,11 +5,16 @@
   "team_slug": "christian_county",
   "team_rank": 23,
   "weight_class": 126,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 36,
   "record": {
     "overall": "12-14",
-    "vs_ranked": "8-10",
+    "vs_ranked": "9-10",
     "vs_top10": "0-2",
     "vs_top25": "1-5"
   },
@@ -20,14 +25,14 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.727,
-    "bonus_rate": 0.909,
+    "pin_rate": 0.75,
+    "bonus_rate": 0.917,
     "majors": 1,
     "techs": 1,
-    "pins": 8
+    "pins": 9
   },
   "opponent_breakdown": {
-    "ranked_wins": 8,
+    "ranked_wins": 9,
     "ranked_losses": 10,
     "top10_wins": 0,
     "top10_losses": 2,
@@ -154,7 +159,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "3:32",
       "event": "vs. Franklin County"
     },
     {
@@ -207,6 +212,22 @@
     },
     {
       "date": "2026-01-17",
+      "opponent_id": "OUTSTATE_4fcb9cf07e1f",
+      "opponent_career_id": null,
+      "opponent_name": "Ty Coyle",
+      "opponent_team": "Tell City",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:24",
+      "event": "Steve Johnston Memorial Invitational"
+    },
+    {
+      "date": "2026-01-17",
       "opponent_id": "34989043132",
       "opponent_career_id": "career_002057",
       "opponent_name": "Josh Waufle",
@@ -235,22 +256,6 @@
       "method": "MD",
       "score": "19-5",
       "duration": "7:00",
-      "event": "Steve Johnston Memorial Invitational"
-    },
-    {
-      "date": "2026-01-17",
-      "opponent_id": "OUTSTATE_4fcb9cf07e1f",
-      "opponent_career_id": null,
-      "opponent_name": "Ty Coyle",
-      "opponent_team": "Tell City",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:24",
       "event": "Steve Johnston Memorial Invitational"
     },
     {
@@ -303,22 +308,6 @@
     },
     {
       "date": "2025-12-23",
-      "opponent_id": "35007891132",
-      "opponent_career_id": "career_002533",
-      "opponent_name": "Garrett Johnson",
-      "opponent_team": "South Warren",
-      "opponent_team_rank": 129,
-      "opponent_weight": 113,
-      "opponent_rank": 25,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:36",
-      "event": "Christian County Invitational"
-    },
-    {
-      "date": "2025-12-23",
       "opponent_id": "35233667132",
       "opponent_career_id": "career_000031",
       "opponent_name": "Noah Pendley",
@@ -347,6 +336,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:13",
+      "event": "Christian County Invitational"
+    },
+    {
+      "date": "2025-12-23",
+      "opponent_id": "35007891132",
+      "opponent_career_id": "career_002533",
+      "opponent_name": "Garrett Johnson",
+      "opponent_team": "South Warren",
+      "opponent_team_rank": 129,
+      "opponent_weight": 113,
+      "opponent_rank": 25,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:36",
       "event": "Christian County Invitational"
     },
     {
@@ -395,6 +400,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:01",
+      "event": "Lafayette 5 Star Tournament"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "34993749132",
+      "opponent_career_id": "career_001114",
+      "opponent_name": "Ford Furnish",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": 3,
+      "opponent_weight": 126,
+      "opponent_rank": 96,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:54",
       "event": "Lafayette 5 Star Tournament"
     },
     {
@@ -486,5 +507,5 @@
     "losses": 46,
     "win_pct": 0.41
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

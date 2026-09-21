@@ -5,11 +5,16 @@
   "team_slug": "fairdale",
   "team_rank": 24,
   "weight_class": 126,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 32,
   "record": {
     "overall": "25-12",
-    "vs_ranked": "20-12",
+    "vs_ranked": "22-12",
     "vs_top10": "0-4",
     "vs_top25": "0-7"
   },
@@ -20,14 +25,14 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.9,
-    "bonus_rate": 0.95,
+    "pin_rate": 0.864,
+    "bonus_rate": 0.909,
     "majors": 1,
     "techs": 0,
-    "pins": 18
+    "pins": 19
   },
   "opponent_breakdown": {
-    "ranked_wins": 20,
+    "ranked_wins": 22,
     "ranked_losses": 12,
     "top10_wins": 0,
     "top10_losses": 4,
@@ -155,7 +160,7 @@
       "method": "TF",
       "score": "18-3",
       "duration": "0:00",
-      "event": "vs. Fairdale"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2026-02-07",
@@ -171,7 +176,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Fairdale"
+      "event": "vs. Christian County"
     },
     {
       "date": "2026-02-07",
@@ -187,7 +192,7 @@
       "method": "TF",
       "score": "23-7",
       "duration": "5:03",
-      "event": "vs. Fairdale"
+      "event": "vs. Corbin"
     },
     {
       "date": "2026-02-07",
@@ -351,6 +356,22 @@
     },
     {
       "date": "2026-01-10",
+      "opponent_id": "35542526132",
+      "opponent_career_id": "career_000438",
+      "opponent_name": "Marion Wardlaw",
+      "opponent_team": "Central",
+      "opponent_team_rank": 22,
+      "opponent_weight": 126,
+      "opponent_rank": 50,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:52",
+      "event": "2026 Lou City Wrestling"
+    },
+    {
+      "date": "2026-01-10",
       "opponent_id": "35698454132",
       "opponent_career_id": "career_005622",
       "opponent_name": "Dominik Vittitoe",
@@ -463,6 +484,22 @@
     },
     {
       "date": "2025-12-20",
+      "opponent_id": "35122084132",
+      "opponent_career_id": "career_001977",
+      "opponent_name": "Braelyn Jimenez",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": 113,
+      "opponent_weight": 126,
+      "opponent_rank": 41,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:59",
+      "event": "Phil Thrasher Tournament"
+    },
+    {
+      "date": "2025-12-20",
       "opponent_id": "35398391132",
       "opponent_career_id": "career_001223",
       "opponent_name": "Ryan Nickelman",
@@ -479,18 +516,18 @@
     },
     {
       "date": "2025-12-20",
-      "opponent_id": "35122084132",
-      "opponent_career_id": "career_001977",
-      "opponent_name": "Braelyn Jimenez",
-      "opponent_team": "Oldham County",
-      "opponent_team_rank": 113,
-      "opponent_weight": 126,
-      "opponent_rank": 41,
+      "opponent_id": "35398391132",
+      "opponent_career_id": "career_001223",
+      "opponent_name": "Ryan Nickelman",
+      "opponent_team": "Highlands",
+      "opponent_team_rank": 10,
+      "opponent_weight": 120,
+      "opponent_rank": 27,
       "weight_class": "126",
       "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:59",
+      "method": "DEC",
+      "score": "11-5",
+      "duration": "7:00",
       "event": "Phil Thrasher Tournament"
     },
     {
@@ -637,5 +674,5 @@
     "losses": 15,
     "win_pct": 0.651
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

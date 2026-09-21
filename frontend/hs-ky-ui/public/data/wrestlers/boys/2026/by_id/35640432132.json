@@ -5,11 +5,16 @@
   "team_slug": "great_crossing",
   "team_rank": 43,
   "weight_class": 120,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 20,
   "record": {
-    "overall": "22-18",
-    "vs_ranked": "15-7",
+    "overall": "22-19",
+    "vs_ranked": "14-8",
     "vs_top10": "0-4",
     "vs_top25": "4-7"
   },
@@ -20,15 +25,15 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.524,
-    "bonus_rate": 0.714,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.7,
     "majors": 2,
     "techs": 2,
-    "pins": 11
+    "pins": 10
   },
   "opponent_breakdown": {
-    "ranked_wins": 15,
-    "ranked_losses": 7,
+    "ranked_wins": 14,
+    "ranked_losses": 8,
     "top10_wins": 0,
     "top10_losses": 4,
     "win_over_highest_rank": {
@@ -38,10 +43,10 @@
       "method": "Dec 10-3"
     },
     "worst_loss": {
-      "opponent_id": "35144516132",
-      "opponent_rank": 17,
-      "opponent_name": "Liam Ditto",
-      "method": "Dec 12-11"
+      "opponent_id": "35778102132",
+      "opponent_rank": 48,
+      "opponent_name": "Gabriel Purtteman",
+      "method": "Fall 1:44"
     }
   },
   "match_list": [
@@ -303,6 +308,22 @@
     },
     {
       "date": "2026-01-17",
+      "opponent_id": "OUTSTATE_0f5983d6b0ca",
+      "opponent_career_id": null,
+      "opponent_name": "Colton Trochelman",
+      "opponent_team": "Troy High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:36",
+      "event": "Mason Comet Invite"
+    },
+    {
+      "date": "2026-01-17",
       "opponent_id": "OUTSTATE_bf22890beb12",
       "opponent_career_id": null,
       "opponent_name": "Brady Byler",
@@ -334,22 +355,6 @@
       "event": "Mason Comet Invite"
     },
     {
-      "date": "2026-01-17",
-      "opponent_id": "OUTSTATE_0f5983d6b0ca",
-      "opponent_career_id": null,
-      "opponent_name": "Colton Trochelman",
-      "opponent_team": "Troy High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:36",
-      "event": "Mason Comet Invite"
-    },
-    {
       "date": "2026-01-15",
       "opponent_id": "34989319132",
       "opponent_career_id": "career_004549",
@@ -363,7 +368,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Great Crossing"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2026-01-15",
@@ -379,7 +384,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:49",
-      "event": "vs. Great Crossing"
+      "event": "vs. Conner"
     },
     {
       "date": "2026-01-15",
@@ -439,10 +444,10 @@
       "opponent_weight": 120,
       "opponent_rank": 48,
       "weight_class": "120",
-      "result": "W",
+      "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:44",
       "event": "Warhawk Classic"
     },
     {
@@ -511,22 +516,6 @@
     },
     {
       "date": "2025-12-21",
-      "opponent_id": "OUTSTATE_42c2b96737e0",
-      "opponent_career_id": null,
-      "opponent_name": "Zach Rauen",
-      "opponent_team": "Reading Jr./Sr. High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "DEC",
-      "score": "10-7",
-      "duration": "7:00",
-      "event": "SWOWCA"
-    },
-    {
-      "date": "2025-12-21",
       "opponent_id": "OUTSTATE_a5f94f6656e9",
       "opponent_career_id": null,
       "opponent_name": "Connor Beech",
@@ -538,6 +527,22 @@
       "result": "W",
       "method": "DEC",
       "score": "18-17",
+      "duration": "7:00",
+      "event": "SWOWCA"
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "OUTSTATE_42c2b96737e0",
+      "opponent_career_id": null,
+      "opponent_name": "Zach Rauen",
+      "opponent_team": "Reading Jr./Sr. High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "DEC",
+      "score": "10-7",
       "duration": "7:00",
       "event": "SWOWCA"
     },
@@ -623,22 +628,6 @@
     },
     {
       "date": "2025-12-06",
-      "opponent_id": "35563002132",
-      "opponent_career_id": "career_002638",
-      "opponent_name": "James Diaz",
-      "opponent_team": "St. Xavier",
-      "opponent_team_rank": 15,
-      "opponent_weight": 113,
-      "opponent_rank": 70,
-      "weight_class": "120",
-      "result": "W",
-      "method": "TF",
-      "score": "15-0",
-      "duration": "5:22",
-      "event": "vs. St. Xavier"
-    },
-    {
-      "date": "2025-12-06",
       "opponent_id": "34997720132",
       "opponent_career_id": "career_000941",
       "opponent_name": "Jakobe Reed",
@@ -651,7 +640,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:14",
-      "event": "vs. Great Crossing"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2025-12-06",
@@ -687,6 +676,22 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "35563002132",
+      "opponent_career_id": "career_002638",
+      "opponent_name": "James Diaz",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": 15,
+      "opponent_weight": 113,
+      "opponent_rank": 70,
+      "weight_class": "120",
+      "result": "W",
+      "method": "TF",
+      "score": "15-0",
+      "duration": "5:22",
+      "event": "vs. St. Xavier"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "OUTSTATE_d11d1b4317fe",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -714,15 +719,15 @@
       "season": 2026,
       "grade": 9,
       "team": "Great Crossing",
-      "record": "22-18",
+      "record": "22-19",
       "regional_place": 3,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 22,
-    "losses": 18,
-    "win_pct": 0.55
+    "losses": 19,
+    "win_pct": 0.537
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

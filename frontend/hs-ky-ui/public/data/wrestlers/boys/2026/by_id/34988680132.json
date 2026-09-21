@@ -5,6 +5,11 @@
   "team_slug": "christian_county",
   "team_rank": 23,
   "weight_class": 150,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 24,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.474,
-    "bonus_rate": 0.789,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.833,
     "majors": 1,
     "techs": 5,
     "pins": 9
@@ -95,22 +100,6 @@
     },
     {
       "date": "2026-02-21",
-      "opponent_id": "35281674132",
-      "opponent_career_id": "career_001664",
-      "opponent_name": "Zaven Branch",
-      "opponent_team": "McCracken County",
-      "opponent_team_rank": 108,
-      "opponent_weight": 138,
-      "opponent_rank": 97,
-      "weight_class": "150",
-      "result": "W",
-      "method": "TF",
-      "score": "18-3",
-      "duration": "3:37",
-      "event": "KHSAA Boys/Coed Region 1"
-    },
-    {
-      "date": "2026-02-21",
       "opponent_id": "35233660132",
       "opponent_career_id": "career_000042",
       "opponent_name": "Clayton Pendley",
@@ -123,6 +112,22 @@
       "method": "MD",
       "score": "16-7",
       "duration": "7:00",
+      "event": "KHSAA Boys/Coed Region 1"
+    },
+    {
+      "date": "2026-02-21",
+      "opponent_id": "35281674132",
+      "opponent_career_id": "career_001664",
+      "opponent_name": "Zaven Branch",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": 108,
+      "opponent_weight": 138,
+      "opponent_rank": 97,
+      "weight_class": "150",
+      "result": "W",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "3:37",
       "event": "KHSAA Boys/Coed Region 1"
     },
     {
@@ -192,7 +197,7 @@
     {
       "date": "2026-02-07",
       "opponent_id": "34997719132",
-      "opponent_career_id": null,
+      "opponent_career_id": "career_000952",
       "opponent_name": "Elijah Tabor",
       "opponent_team": "Franklin County",
       "opponent_team_rank": 82,
@@ -202,7 +207,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "4:31",
       "event": "vs. Franklin County"
     },
     {
@@ -331,7 +336,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Christian County"
+      "event": "vs. Belfry"
     },
     {
       "date": "2026-01-03",
@@ -347,7 +352,7 @@
       "method": "TF",
       "score": "17-2",
       "duration": "0:00",
-      "event": "vs. Christian County"
+      "event": "vs. Bullitt Central"
     },
     {
       "date": "2026-01-03",
@@ -463,22 +468,6 @@
     },
     {
       "date": "2025-12-20",
-      "opponent_id": "35081197132",
-      "opponent_career_id": "career_001204",
-      "opponent_name": "Trae White",
-      "opponent_team": "Henry Clay",
-      "opponent_team_rank": 25,
-      "opponent_weight": 144,
-      "opponent_rank": 21,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:38",
-      "event": "Lafayette 5 Star Tournament"
-    },
-    {
-      "date": "2025-12-20",
       "opponent_id": "35045492132",
       "opponent_career_id": "career_001502",
       "opponent_name": "GAVYN KINLEY",
@@ -524,6 +513,22 @@
       "score": "13-6",
       "duration": "7:00",
       "event": "Lafayette 5 Star Tournament"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35081197132",
+      "opponent_career_id": "career_001204",
+      "opponent_name": "Trae White",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": 25,
+      "opponent_weight": 144,
+      "opponent_rank": 21,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:38",
+      "event": "Lafayette 5 Star Tournament"
     }
   ],
   "career": {
@@ -566,5 +571,5 @@
     "losses": 33,
     "win_pct": 0.529
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,6 +5,11 @@
   "team_slug": "hart_county",
   "team_rank": null,
   "weight_class": 157,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.6,
-    "bonus_rate": 0.8,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.833,
     "majors": 0,
     "techs": 1,
-    "pins": 3
+    "pins": 4
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -69,22 +74,6 @@
     },
     {
       "date": "2025-02-01",
-      "opponent_id": "29804374132",
-      "opponent_career_id": "career_001931",
-      "opponent_name": "Liam Calhoun",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:09",
-      "event": "King of the Mill"
-    },
-    {
-      "date": "2025-02-01",
       "opponent_id": "29953234132",
       "opponent_career_id": "career_000367",
       "opponent_name": "Jacob Forsythe",
@@ -117,6 +106,22 @@
     },
     {
       "date": "2025-02-01",
+      "opponent_id": "29804374132",
+      "opponent_career_id": "career_001931",
+      "opponent_name": "Liam Calhoun",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:09",
+      "event": "King of the Mill"
+    },
+    {
+      "date": "2025-02-01",
       "opponent_id": "29823645132",
       "opponent_career_id": "career_001965",
       "opponent_name": "Asher Mason",
@@ -129,6 +134,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:17",
+      "event": "King of the Mill"
+    },
+    {
+      "date": "2025-02-01",
+      "opponent_id": "29823645132",
+      "opponent_career_id": "career_001965",
+      "opponent_name": "Asher Mason",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:24",
       "event": "King of the Mill"
     },
     {
@@ -145,7 +166,23 @@
       "method": "TF",
       "score": "24-9",
       "duration": "0:00",
-      "event": "vs. Hart County"
+      "event": "vs. Green County"
+    },
+    {
+      "date": "2025-01-16",
+      "opponent_id": "OUTSTATE_28470c03fea2",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Trinity",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Trinity (Whitesville)"
     },
     {
       "date": "2025-01-16",
@@ -162,38 +199,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. John Hardin"
-    },
-    {
-      "date": "2025-01-16",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Trinity",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Trinity (Whitesville)"
-    },
-    {
-      "date": "2024-12-21",
-      "opponent_id": "30057492132",
-      "opponent_career_id": "career_002489",
-      "opponent_name": "Gavyn Kozak",
-      "opponent_team": "Somerset",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:35",
-      "event": "4th Annual Cardinal Clash Mens Tourn."
     },
     {
       "date": "2024-12-21",
@@ -228,6 +233,22 @@
       "event": "4th Annual Cardinal Clash Mens Tourn."
     },
     {
+      "date": "2024-12-21",
+      "opponent_id": "30057492132",
+      "opponent_career_id": "career_002489",
+      "opponent_name": "Gavyn Kozak",
+      "opponent_team": "Somerset",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:35",
+      "event": "4th Annual Cardinal Clash Mens Tourn."
+    },
+    {
       "date": "2024-12-20",
       "opponent_id": "29916503132",
       "opponent_career_id": "career_002538",
@@ -245,7 +266,7 @@
     },
     {
       "date": "2024-12-20",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_c11f13cdbeae",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Greenwood",
@@ -258,6 +279,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Greenwood"
+    },
+    {
+      "date": "2024-12-20",
+      "opponent_id": "OUTSTATE_b33c2e25670f",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Warren Central",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Warren Central"
     },
     {
       "date": "2024-12-20",
@@ -277,7 +314,7 @@
     },
     {
       "date": "2024-12-11",
-      "opponent_id": "OUTSTATE_18bdd1256c45",
+      "opponent_id": "OUTSTATE_fa707c1de75c",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
       "opponent_team": "Bardstown",
@@ -330,5 +367,5 @@
     "losses": 9,
     "win_pct": 0.526
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

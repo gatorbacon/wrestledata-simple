@@ -5,10 +5,15 @@
   "team_slug": "meade_county",
   "team_rank": 110,
   "weight_class": 165,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 57,
   "record": {
-    "overall": "29-12",
+    "overall": "27-12",
     "vs_ranked": "16-10",
     "vs_top10": "0-2",
     "vs_top25": "2-4"
@@ -79,22 +84,6 @@
     },
     {
       "date": "2026-02-07",
-      "opponent_id": "34994792132",
-      "opponent_career_id": "career_002629",
-      "opponent_name": "Aiden Trammell",
-      "opponent_team": "Spencer County",
-      "opponent_team_rank": 29,
-      "opponent_weight": 157,
-      "opponent_rank": 54,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Mustang Classic"
-    },
-    {
-      "date": "2026-02-07",
       "opponent_id": "35488272132",
       "opponent_career_id": "career_000615",
       "opponent_name": "Teddy Tapke",
@@ -139,6 +128,22 @@
       "method": "TF",
       "score": "18-1",
       "duration": "3:23",
+      "event": "Mustang Classic"
+    },
+    {
+      "date": "2026-02-07",
+      "opponent_id": "34994792132",
+      "opponent_career_id": "career_002629",
+      "opponent_name": "Aiden Trammell",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": 29,
+      "opponent_weight": 157,
+      "opponent_rank": 54,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
       "event": "Mustang Classic"
     },
     {
@@ -208,7 +213,7 @@
     {
       "date": "2026-01-17",
       "opponent_id": "38156835132",
-      "opponent_career_id": null,
+      "opponent_career_id": "career_000045",
       "opponent_name": "Isaac Skaggs",
       "opponent_team": "Apollo",
       "opponent_team_rank": 53,
@@ -219,23 +224,7 @@
       "method": "MD",
       "score": "10-2",
       "duration": "7:00",
-      "event": "vs. Meade County"
-    },
-    {
-      "date": "2026-01-17",
-      "opponent_id": "35193715132",
-      "opponent_career_id": "career_004694",
-      "opponent_name": "Wai Soe",
-      "opponent_team": "Warren Central",
-      "opponent_team_rank": 137,
-      "opponent_weight": 157,
-      "opponent_rank": 100,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:59",
-      "event": "vs. Warren Central"
+      "event": "vs. Apollo"
     },
     {
       "date": "2026-01-17",
@@ -251,7 +240,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:21",
-      "event": "vs. Meade County"
+      "event": "vs. Caldwell County"
     },
     {
       "date": "2026-01-17",
@@ -287,6 +276,22 @@
     },
     {
       "date": "2026-01-17",
+      "opponent_id": "35193715132",
+      "opponent_career_id": "career_004694",
+      "opponent_name": "Wai Soe",
+      "opponent_team": "Warren Central",
+      "opponent_team_rank": 137,
+      "opponent_weight": 157,
+      "opponent_rank": 100,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:59",
+      "event": "vs. Warren Central"
+    },
+    {
+      "date": "2026-01-17",
       "opponent_id": "OUTSTATE_931f1ed55205",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -300,6 +305,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. West Jessamine"
+    },
+    {
+      "date": "2026-01-10",
+      "opponent_id": "OUTSTATE_f9fd773cf34e",
+      "opponent_career_id": null,
+      "opponent_name": "I Fish",
+      "opponent_team": "Bedford North Lawrence",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DEC",
+      "score": "7-6",
+      "duration": "7:00",
+      "event": "Corydon Old Capital"
     },
     {
       "date": "2026-01-10",
@@ -334,22 +355,6 @@
       "event": "Corydon Old Capital"
     },
     {
-      "date": "2026-01-10",
-      "opponent_id": "OUTSTATE_f9fd773cf34e",
-      "opponent_career_id": null,
-      "opponent_name": "I Fish",
-      "opponent_team": "Bedford North Lawrence",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "DEC",
-      "score": "7-6",
-      "duration": "7:00",
-      "event": "Corydon Old Capital"
-    },
-    {
       "date": "2026-01-03",
       "opponent_id": "34997567132",
       "opponent_career_id": "career_000994",
@@ -363,7 +368,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:28",
-      "event": "Warhawk Classic"
+      "event": "Great Crossing Individual Tournament"
     },
     {
       "date": "2026-01-03",
@@ -379,7 +384,23 @@
       "method": "DEC",
       "score": "12-6",
       "duration": "7:00",
-      "event": "Warhawk Classic"
+      "event": "Great Crossing Individual Tournament"
+    },
+    {
+      "date": "2025-12-23",
+      "opponent_id": "35567794132",
+      "opponent_career_id": "career_004651",
+      "opponent_name": "Kaiden Puckett",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": 95,
+      "opponent_weight": 165,
+      "opponent_rank": 91,
+      "weight_class": "165",
+      "result": "W",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "0:00",
+      "event": "vs. John Hardin"
     },
     {
       "date": "2025-12-23",
@@ -415,22 +436,6 @@
     },
     {
       "date": "2025-12-23",
-      "opponent_id": "35567794132",
-      "opponent_career_id": "career_004651",
-      "opponent_name": "Kaiden Puckett",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": 95,
-      "opponent_weight": 165,
-      "opponent_rank": 91,
-      "weight_class": "165",
-      "result": "W",
-      "method": "TF",
-      "score": "16-0",
-      "duration": "0:00",
-      "event": "vs. Meade County"
-    },
-    {
-      "date": "2025-12-23",
       "opponent_id": "OUTSTATE_e3abb11bd61d",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -447,22 +452,6 @@
     },
     {
       "date": "2025-12-20",
-      "opponent_id": "35040594132",
-      "opponent_career_id": "career_001560",
-      "opponent_name": "Donovan Johnson",
-      "opponent_team": "Male",
-      "opponent_team_rank": 45,
-      "opponent_weight": 157,
-      "opponent_rank": 94,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Meade County"
-    },
-    {
-      "date": "2025-12-20",
       "opponent_id": "34995971132",
       "opponent_career_id": "career_000167",
       "opponent_name": "Nathan Ramsey",
@@ -475,7 +464,23 @@
       "method": "DEC",
       "score": "4-1",
       "duration": "7:00",
-      "event": "vs. Meade County"
+      "event": "vs. Bell County"
+    },
+    {
+      "date": "2025-12-20",
+      "opponent_id": "35040594132",
+      "opponent_career_id": "career_001560",
+      "opponent_name": "Donovan Johnson",
+      "opponent_team": "Male",
+      "opponent_team_rank": 45,
+      "opponent_weight": 157,
+      "opponent_rank": 94,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Male"
     },
     {
       "date": "2025-12-20",
@@ -527,6 +532,22 @@
     },
     {
       "date": "2025-12-13",
+      "opponent_id": "35441085132",
+      "opponent_career_id": "career_000474",
+      "opponent_name": "Samuelu Hazelwood",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": 11,
+      "opponent_weight": 165,
+      "opponent_rank": 4,
+      "weight_class": "165",
+      "result": "L",
+      "method": "TF",
+      "score": "18-2",
+      "duration": "5:47",
+      "event": "vs. Central Hardin"
+    },
+    {
+      "date": "2025-12-13",
       "opponent_id": "34993874132",
       "opponent_career_id": "career_001059",
       "opponent_name": "Brendan Martin",
@@ -539,7 +560,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:59",
-      "event": "vs. Meade County"
+      "event": "vs. Green County"
     },
     {
       "date": "2025-12-13",
@@ -556,22 +577,6 @@
       "score": "13-12",
       "duration": "8:15",
       "event": "vs. North Hardin"
-    },
-    {
-      "date": "2025-12-13",
-      "opponent_id": "35441085132",
-      "opponent_career_id": "career_000474",
-      "opponent_name": "Samuelu Hazelwood",
-      "opponent_team": "Central Hardin",
-      "opponent_team_rank": 11,
-      "opponent_weight": 165,
-      "opponent_rank": 4,
-      "weight_class": "165",
-      "result": "L",
-      "method": "TF",
-      "score": "18-2",
-      "duration": "5:47",
-      "event": "vs. Meade County"
     },
     {
       "date": "2025-12-13",
@@ -683,7 +688,7 @@
       "season": 2026,
       "grade": 11,
       "team": "Meade County",
-      "record": "29-12",
+      "record": "27-12",
       "regional_place": null,
       "state_place": null
     },
@@ -691,15 +696,15 @@
       "season": 2025,
       "grade": 10,
       "team": "Meade County",
-      "record": "15-16",
+      "record": "15-17",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 44,
-    "losses": 28,
-    "win_pct": 0.611
+    "wins": 42,
+    "losses": 29,
+    "win_pct": 0.592
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,6 +5,11 @@
   "team_slug": "lafayette",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2025,
   "current_rank": null,
   "record": {
@@ -37,6 +42,22 @@
   "match_list": [
     {
       "date": "2024-12-14",
+      "opponent_id": "29993414132",
+      "opponent_career_id": "career_000440",
+      "opponent_name": "Kevon Porter",
+      "opponent_team": "Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Derby City"
+    },
+    {
+      "date": "2024-12-14",
       "opponent_id": "30052760132",
       "opponent_career_id": "career_002512",
       "opponent_name": "Landon Gilkey",
@@ -52,11 +73,11 @@
       "event": "Derby City"
     },
     {
-      "date": "2024-12-14",
-      "opponent_id": "29993414132",
-      "opponent_career_id": "career_000440",
-      "opponent_name": "Kevon Porter",
-      "opponent_team": "Central",
+      "date": "2024-12-07",
+      "opponent_id": "30099480132",
+      "opponent_career_id": "career_001030",
+      "opponent_name": "Samuel Jasper",
+      "opponent_team": "Great Crossing",
       "opponent_team_rank": null,
       "opponent_weight": 132,
       "opponent_rank": null,
@@ -64,8 +85,8 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "Derby City"
+      "duration": "1:11",
+      "event": "vs. Great Crossing"
     },
     {
       "date": "2024-12-07",
@@ -82,22 +103,6 @@
       "score": null,
       "duration": "2:38",
       "event": "vs. Fort Knox"
-    },
-    {
-      "date": "2024-12-07",
-      "opponent_id": "30099480132",
-      "opponent_career_id": "career_001030",
-      "opponent_name": "Samuel Jasper",
-      "opponent_team": "Great Crossing",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:11",
-      "event": "vs. Lafayette"
     }
   ],
   "career": {
@@ -122,5 +127,5 @@
     "losses": 4,
     "win_pct": 0.0
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

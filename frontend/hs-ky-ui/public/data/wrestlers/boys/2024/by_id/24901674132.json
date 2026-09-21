@@ -5,6 +5,11 @@
   "team_slug": "franklin_county",
   "team_rank": null,
   "weight_class": 157,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2024,
   "current_rank": null,
   "record": {
@@ -213,22 +218,6 @@
     },
     {
       "date": "2023-11-25",
-      "opponent_id": "25268566132",
-      "opponent_career_id": "career_003391",
-      "opponent_name": "Frank Armstrong",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:51",
-      "event": "vs. Simon Kenton"
-    },
-    {
-      "date": "2023-11-25",
       "opponent_id": "OUTSTATE_21b4a79b024a",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -242,22 +231,47 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Bethlehem"
+    },
+    {
+      "date": "2023-11-25",
+      "opponent_id": "25268566132",
+      "opponent_career_id": "career_003391",
+      "opponent_name": "Frank Armstrong",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:51",
+      "event": "vs. Simon Kenton"
     }
   ],
   "career": {
     "career_id": "career_000952",
     "canonical_name": "Elijah Tabor",
     "seasons": [
+      2026,
       2025,
       2024
     ]
   },
   "season_summary": [
     {
+      "season": 2026,
+      "grade": 10,
+      "team": "Franklin County",
+      "record": "5-6",
+      "regional_place": 4,
+      "state_place": null
+    },
+    {
       "season": 2025,
       "grade": 9,
       "team": "Franklin County",
-      "record": "21-15",
+      "record": "22-15",
       "regional_place": null,
       "state_place": null
     },
@@ -271,9 +285,9 @@
     }
   ],
   "career_record": {
-    "wins": 28,
-    "losses": 21,
-    "win_pct": 0.571
+    "wins": 34,
+    "losses": 27,
+    "win_pct": 0.557
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

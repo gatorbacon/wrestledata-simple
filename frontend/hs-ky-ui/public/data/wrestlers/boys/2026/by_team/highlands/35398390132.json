@@ -5,10 +5,15 @@
   "team_slug": "highlands",
   "team_rank": 10,
   "weight_class": 106,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2026,
   "current_rank": 4,
   "record": {
-    "overall": "42-5",
+    "overall": "41-5",
     "vs_ranked": "30-3",
     "vs_top10": "3-3",
     "vs_top25": "11-3"
@@ -171,7 +176,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:33",
-      "event": "vs. Highlands"
+      "event": "vs. Boyd County"
     },
     {
       "date": "2026-02-07",
@@ -187,7 +192,7 @@
       "method": "TF",
       "score": "19-2",
       "duration": "0:00",
-      "event": "vs. Highlands"
+      "event": "vs. Fairdale"
     },
     {
       "date": "2026-02-07",
@@ -219,7 +224,7 @@
       "method": "TF",
       "score": "16-1",
       "duration": "3:00",
-      "event": "vs. Highlands"
+      "event": "vs. Conner"
     },
     {
       "date": "2026-01-22",
@@ -235,7 +240,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Highlands"
+      "event": "vs. Grant County"
     },
     {
       "date": "2026-01-22",
@@ -347,7 +352,7 @@
       "method": "TF",
       "score": "18-3",
       "duration": "0:00",
-      "event": "vs. Highlands"
+      "event": "vs. Bourbon County"
     },
     {
       "date": "2026-01-10",
@@ -363,7 +368,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Highlands"
+      "event": "vs. Covington Catholic"
     },
     {
       "date": "2026-01-10",
@@ -379,7 +384,7 @@
       "method": "TF",
       "score": "19-4",
       "duration": "0:00",
-      "event": "vs. Highlands"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2026-01-10",
@@ -545,8 +550,8 @@
       "date": "2025-12-21",
       "opponent_id": "OUTSTATE_e0cb11f1c668",
       "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_name": "Jaxon Farrington",
+      "opponent_team": "Lebanon High School",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -570,6 +575,22 @@
       "result": "W",
       "method": "MD",
       "score": "17-5",
+      "duration": "7:00",
+      "event": "SWOWCA"
+    },
+    {
+      "date": "2025-12-21",
+      "opponent_id": "OUTSTATE_af6c4d13f801",
+      "opponent_career_id": null,
+      "opponent_name": "Connor Denning",
+      "opponent_team": "Turpin High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "MD",
+      "score": "18-8",
       "duration": "7:00",
       "event": "SWOWCA"
     },
@@ -603,22 +624,6 @@
       "method": "FALL",
       "score": null,
       "duration": "4:25",
-      "event": "SWOWCA"
-    },
-    {
-      "date": "2025-12-21",
-      "opponent_id": "OUTSTATE_af6c4d13f801",
-      "opponent_career_id": null,
-      "opponent_name": "Connor Denning",
-      "opponent_team": "Turpin High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "W",
-      "method": "MD",
-      "score": "18-8",
-      "duration": "7:00",
       "event": "SWOWCA"
     },
     {
@@ -735,6 +740,22 @@
     },
     {
       "date": "2025-12-06",
+      "opponent_id": "34993548132",
+      "opponent_career_id": "career_001777",
+      "opponent_name": "Trenton Bratcher",
+      "opponent_team": "Moore",
+      "opponent_team_rank": 33,
+      "opponent_weight": 106,
+      "opponent_rank": 13,
+      "weight_class": "113",
+      "result": "W",
+      "method": "TF",
+      "score": "21-5",
+      "duration": "0:00",
+      "event": "vs. Moore"
+    },
+    {
+      "date": "2025-12-06",
       "opponent_id": "OUTSTATE_ec00d8a910b7",
       "opponent_career_id": null,
       "opponent_name": "Gabriel Joiner",
@@ -764,22 +785,6 @@
       "score": null,
       "duration": "0:56",
       "event": "vs. West Clermont High School"
-    },
-    {
-      "date": "2025-12-06",
-      "opponent_id": "34993548132",
-      "opponent_career_id": "career_001777",
-      "opponent_name": "Trenton Bratcher",
-      "opponent_team": "Moore",
-      "opponent_team_rank": 33,
-      "opponent_weight": 106,
-      "opponent_rank": 13,
-      "weight_class": "113",
-      "result": "W",
-      "method": "TF",
-      "score": "21-5",
-      "duration": "0:00",
-      "event": "vs. Moore"
     }
   ],
   "career": {
@@ -795,7 +800,7 @@
       "season": 2026,
       "grade": 10,
       "team": "Highlands",
-      "record": "42-5",
+      "record": "41-5",
       "regional_place": 2,
       "state_place": 2
     },
@@ -803,15 +808,15 @@
       "season": 2024,
       "grade": 8,
       "team": "Highlands",
-      "record": "0-2",
+      "record": "0-4",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 42,
-    "losses": 7,
-    "win_pct": 0.857
+    "wins": 41,
+    "losses": 9,
+    "win_pct": 0.82
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }
