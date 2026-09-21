@@ -5,6 +5,11 @@
   "team_slug": "somerset",
   "team_rank": null,
   "weight_class": 106,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
@@ -35,6 +40,38 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2023-01-28",
+      "opponent_id": "20374583132",
+      "opponent_career_id": "career_002471",
+      "opponent_name": "Benjamin Woosley",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Simon Kenton"
+    },
+    {
+      "date": "2023-01-28",
+      "opponent_id": "OUTSTATE_b8d1490a1654",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Western Hills",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Western Hills"
+    },
     {
       "date": "2023-01-28",
       "opponent_id": "OUTSTATE_e154a2d4e8e0",
@@ -84,38 +121,6 @@
       "event": "vs. Bethlehem"
     },
     {
-      "date": "2023-01-28",
-      "opponent_id": "20374583132",
-      "opponent_career_id": "career_002471",
-      "opponent_name": "Benjamin Woosley",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Somerset"
-    },
-    {
-      "date": "2023-01-28",
-      "opponent_id": "OUTSTATE_b8d1490a1654",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Western Hills",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Western Hills"
-    },
-    {
       "date": "2023-01-14",
       "opponent_id": "20165284132",
       "opponent_career_id": "career_006273",
@@ -129,7 +134,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:19",
-      "event": "vs. Somerset"
+      "event": "vs. Bell County"
     },
     {
       "date": "2023-01-14",
@@ -209,7 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Somerset"
+      "event": "vs. Nelson County"
     },
     {
       "date": "2022-12-17",
@@ -245,22 +250,6 @@
     },
     {
       "date": "2022-12-17",
-      "opponent_id": "OUTSTATE_890cb62f82e3",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "West Carter High School",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. West Carter High School"
-    },
-    {
-      "date": "2022-12-17",
       "opponent_id": "OUTSTATE_9b758125e724",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -276,6 +265,22 @@
       "event": "vs. Frederick Douglass B"
     },
     {
+      "date": "2022-12-17",
+      "opponent_id": "OUTSTATE_890cb62f82e3",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "West Carter High School",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. West Carter High School"
+    },
+    {
       "date": "2022-12-10",
       "opponent_id": "20301004132",
       "opponent_career_id": "career_001402",
@@ -289,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:54",
-      "event": "vs. Somerset"
+      "event": "vs. LaRue County"
     },
     {
       "date": "2022-12-10",
@@ -353,7 +358,7 @@
       "season": 2025,
       "grade": 9,
       "team": "Somerset",
-      "record": "7-11",
+      "record": "9-12",
       "regional_place": null,
       "state_place": null
     },
@@ -367,9 +372,9 @@
     }
   ],
   "career_record": {
-    "wins": 20,
-    "losses": 17,
-    "win_pct": 0.541
+    "wins": 22,
+    "losses": 18,
+    "win_pct": 0.55
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

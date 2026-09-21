@@ -5,6 +5,11 @@
   "team_slug": "danville",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.875,
-    "bonus_rate": 0.938,
+    "pin_rate": 0.882,
+    "bonus_rate": 0.941,
     "majors": 1,
     "techs": 0,
-    "pins": 14
+    "pins": 15
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -117,6 +122,22 @@
     },
     {
       "date": "2020-02-01",
+      "opponent_id": "10570921132",
+      "opponent_career_id": "career_009151",
+      "opponent_name": "Cole Cecil",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:17",
+      "event": "North Oldham Mustang"
+    },
+    {
+      "date": "2020-02-01",
       "opponent_id": "11266810132",
       "opponent_career_id": "career_007905",
       "opponent_name": "Cole Thomas",
@@ -146,6 +167,22 @@
       "score": null,
       "duration": "0:41",
       "event": "North Oldham Mustang"
+    },
+    {
+      "date": "2020-01-25",
+      "opponent_id": "10762246132",
+      "opponent_career_id": "career_005827",
+      "opponent_name": "Gus Roberts",
+      "opponent_team": "Great Crossing High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:22",
+      "event": "vs. Great Crossing High School"
     },
     {
       "date": "2020-01-25",
@@ -181,38 +218,6 @@
     },
     {
       "date": "2020-01-25",
-      "opponent_id": "10633709132",
-      "opponent_career_id": "career_010016",
-      "opponent_name": "Donnie Stephens",
-      "opponent_team": "Whitley County",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:16",
-      "event": "vs. Whitley County"
-    },
-    {
-      "date": "2020-01-25",
-      "opponent_id": "10762246132",
-      "opponent_career_id": "career_005827",
-      "opponent_name": "Gus Roberts",
-      "opponent_team": "Great Crossing High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:22",
-      "event": "vs. Great Crossing High School"
-    },
-    {
-      "date": "2020-01-25",
       "opponent_id": "OUTSTATE_5855457a7894",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -226,6 +231,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Bullitt Central"
+    },
+    {
+      "date": "2020-01-25",
+      "opponent_id": "10633709132",
+      "opponent_career_id": "career_010016",
+      "opponent_name": "Donnie Stephens",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:16",
+      "event": "vs. Whitley County"
     },
     {
       "date": "2020-01-18",
@@ -293,6 +314,22 @@
     },
     {
       "date": "2020-01-10",
+      "opponent_id": "10553660132",
+      "opponent_career_id": "career_003094",
+      "opponent_name": "Evan Browning",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "DEC",
+      "score": "9-4",
+      "duration": "7:00",
+      "event": "vs. Boyle County"
+    },
+    {
+      "date": "2020-01-10",
       "opponent_id": "11280497132",
       "opponent_career_id": "career_008942",
       "opponent_name": "Keelan Dick",
@@ -309,22 +346,6 @@
     },
     {
       "date": "2020-01-10",
-      "opponent_id": "10553660132",
-      "opponent_career_id": "career_003094",
-      "opponent_name": "Evan Browning",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "DEC",
-      "score": "9-4",
-      "duration": "7:00",
-      "event": "vs. Danville"
-    },
-    {
-      "date": "2020-01-10",
       "opponent_id": "10628138132",
       "opponent_career_id": "career_009399",
       "opponent_name": "Hank Baird",
@@ -336,7 +357,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:24",
+      "duration": "0:25",
       "event": "vs. Mccreary Central"
     },
     {
@@ -353,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:16",
-      "event": "vs. Danville"
+      "event": "vs. Perry County Central"
     },
     {
       "date": "2020-01-04",
@@ -400,24 +421,8 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "3:16",
       "event": "Commodore Classic"
-    },
-    {
-      "date": "2020-01-04",
-      "opponent_id": "10633709132",
-      "opponent_career_id": "career_010016",
-      "opponent_name": "Donnie Stephens",
-      "opponent_team": "Whitley County",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:24",
-      "event": "vs. Whitley County"
     },
     {
       "date": "2020-01-04",
@@ -436,6 +441,22 @@
       "event": "vs. Prestonsburg"
     },
     {
+      "date": "2020-01-04",
+      "opponent_id": "10633709132",
+      "opponent_career_id": "career_010016",
+      "opponent_name": "Donnie Stephens",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:53",
+      "event": "vs. Whitley County"
+    },
+    {
       "date": "2019-12-28",
       "opponent_id": "10712134132",
       "opponent_career_id": "career_009843",
@@ -448,7 +469,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "2:20",
       "event": "Woodford County Invitational"
     },
     {
@@ -480,7 +501,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "3:48",
+      "duration": "4:22",
       "event": "Woodford County Invitational"
     },
     {
@@ -734,5 +755,5 @@
     "losses": 40,
     "win_pct": 0.626
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "moore",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "4-12",
+    "overall": "5-13",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -116,22 +121,6 @@
       "event": "Michael Herschenrader"
     },
     {
-      "date": "2020-01-18",
-      "opponent_id": "10711640132",
-      "opponent_career_id": "career_007855",
-      "opponent_name": "Eh Keh John",
-      "opponent_team": "Male",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Moore"
-    },
-    {
       "date": "2020-01-17",
       "opponent_id": "11020075132",
       "opponent_career_id": "career_007669",
@@ -144,8 +133,8 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Moore"
+      "duration": "1:34",
+      "event": "vs. Central"
     },
     {
       "date": "2020-01-17",
@@ -229,22 +218,6 @@
     },
     {
       "date": "2019-12-28",
-      "opponent_id": "10720154132",
-      "opponent_career_id": "career_010290",
-      "opponent_name": "Anayah Rivas",
-      "opponent_team": "North Bullitt",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "Womens 107-119",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:19",
-      "event": "Fern Creek Gladiator"
-    },
-    {
-      "date": "2019-12-28",
       "opponent_id": "11353078132",
       "opponent_career_id": "career_009768",
       "opponent_name": "Lomdon Phillips",
@@ -257,6 +230,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:27",
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2019-12-28",
+      "opponent_id": "10720154132",
+      "opponent_career_id": "career_010290",
+      "opponent_name": "Anayah Rivas",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "Womens 107-119",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:19",
       "event": "Fern Creek Gladiator"
     },
     {
@@ -273,7 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:03",
-      "event": "vs. Moore"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2019-12-14",
@@ -354,7 +343,7 @@
       "season": 2023,
       "grade": 12,
       "team": "Doss",
-      "record": "0-2",
+      "record": "0-3",
       "regional_place": null,
       "state_place": null
     },
@@ -362,7 +351,7 @@
       "season": 2022,
       "grade": 11,
       "team": "Doss",
-      "record": "9-4",
+      "record": "8-4",
       "regional_place": null,
       "state_place": null
     },
@@ -370,15 +359,20 @@
       "season": 2020,
       "grade": 9,
       "team": "Moore",
-      "record": "4-12",
+      "record": "5-13",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 13,
-    "losses": 18,
-    "win_pct": 0.419
+    "losses": 20,
+    "win_pct": 0.394
   },
-  "profile_generated_at": "2026-04-16"
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  },
+  "profile_generated_at": "2026-09-21"
 }

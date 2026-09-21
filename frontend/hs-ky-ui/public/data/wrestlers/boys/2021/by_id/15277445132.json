@@ -5,6 +5,11 @@
   "team_slug": "ryle",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2021,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.844,
-    "bonus_rate": 0.938,
+    "pin_rate": 0.867,
+    "bonus_rate": 0.967,
     "majors": 2,
     "techs": 1,
-    "pins": 27
+    "pins": 26
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -35,38 +40,6 @@
     "worst_loss": null
   },
   "match_list": [
-    {
-      "date": "2021-03-27",
-      "opponent_id": "15323270132",
-      "opponent_career_id": "career_001355",
-      "opponent_name": "Caleb Barnes",
-      "opponent_team": "Johnson Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:48",
-      "event": "KHSAA State Final Round"
-    },
-    {
-      "date": "2021-03-27",
-      "opponent_id": "14893907132",
-      "opponent_career_id": "career_006130",
-      "opponent_name": "Jayden Frazier",
-      "opponent_team": "Paducah Tilghman",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "DEC",
-      "score": "12-7",
-      "duration": "7:00",
-      "event": "KHSAA State Final Round"
-    },
     {
       "date": "2021-03-27",
       "opponent_id": "15278492132",
@@ -305,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:51",
-      "event": "vs. Ryle"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2021-02-27",
@@ -321,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:35",
-      "event": "vs. Ryle"
+      "event": "vs. Johnson Central"
     },
     {
       "date": "2021-02-27",
@@ -337,7 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:33",
-      "event": "vs. Ryle"
+      "event": "vs. McCracken County"
     },
     {
       "date": "2021-02-27",
@@ -353,7 +326,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:29",
-      "event": "vs. Ryle"
+      "event": "vs. Meade County"
     },
     {
       "date": "2021-02-27",
@@ -385,7 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:36",
-      "event": "vs. Ryle"
+      "event": "vs. Conner"
     },
     {
       "date": "2021-02-12",
@@ -401,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:28",
-      "event": "vs. Ryle"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2021-02-12",
@@ -421,6 +394,22 @@
     },
     {
       "date": "2021-02-06",
+      "opponent_id": "15202456132",
+      "opponent_career_id": "career_006062",
+      "opponent_name": "Robert Nardelli",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:32",
+      "event": "vs. Madison Central"
+    },
+    {
+      "date": "2021-02-06",
       "opponent_id": "15323399132",
       "opponent_career_id": "career_006082",
       "opponent_name": "Chase Bowlin",
@@ -433,7 +422,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:03",
-      "event": "vs. Ryle"
+      "event": "vs. Mccreary Central"
     },
     {
       "date": "2021-02-06",
@@ -468,22 +457,6 @@
       "event": "vs. Wayne County"
     },
     {
-      "date": "2021-02-06",
-      "opponent_id": "15202456132",
-      "opponent_career_id": "career_006062",
-      "opponent_name": "Robert Nardelli",
-      "opponent_team": "Madison Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:32",
-      "event": "vs. Ryle"
-    },
-    {
       "date": "2021-01-30",
       "opponent_id": "14966007132",
       "opponent_career_id": null,
@@ -501,22 +474,6 @@
     },
     {
       "date": "2021-01-23",
-      "opponent_id": "14923281132",
-      "opponent_career_id": null,
-      "opponent_name": "Nolan Moore",
-      "opponent_team": "ARCHBISHOP MOELLER",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "MD",
-      "score": "14-3",
-      "duration": "7:00",
-      "event": "vs. ARCHBISHOP MOELLER"
-    },
-    {
-      "date": "2021-01-23",
       "opponent_id": "14893925132",
       "opponent_career_id": "career_007893",
       "opponent_name": "Eli Peyton",
@@ -529,7 +486,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:42",
-      "event": "vs. Ryle"
+      "event": "vs. Paducah Tilghman"
     },
     {
       "date": "2021-01-23",
@@ -546,6 +503,22 @@
       "score": null,
       "duration": "1:27",
       "event": "vs. PRINCETON"
+    },
+    {
+      "date": "2021-01-23",
+      "opponent_id": "14923281132",
+      "opponent_career_id": null,
+      "opponent_name": "Nolan Moore",
+      "opponent_team": "ARCHBISHOP MOELLER",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "MD",
+      "score": "14-3",
+      "duration": "7:00",
+      "event": "vs. ARCHBISHOP MOELLER"
     },
     {
       "date": "2021-01-19",
@@ -693,7 +666,7 @@
       "season": 2022,
       "grade": 12,
       "team": "Ryle",
-      "record": "52-1",
+      "record": "54-1",
       "regional_place": 1,
       "state_place": 1
     },
@@ -709,7 +682,7 @@
       "season": 2020,
       "grade": 10,
       "team": "Ryle",
-      "record": "54-0",
+      "record": "55-0",
       "regional_place": 1,
       "state_place": 1
     },
@@ -739,9 +712,9 @@
     }
   ],
   "career_record": {
-    "wins": 221,
+    "wins": 224,
     "losses": 12,
-    "win_pct": 0.948
+    "win_pct": 0.949
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "north_bullitt",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "9-14",
+    "overall": "8-17",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -48,6 +53,22 @@
       "result": "L",
       "method": "FALL",
       "score": null,
+      "duration": "0:59",
+      "event": "KHSAA Region 3"
+    },
+    {
+      "date": "2020-02-08",
+      "opponent_id": "10803815132",
+      "opponent_career_id": "career_005960",
+      "opponent_name": "Berechiah Hatchett",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
       "duration": "1:05",
       "event": "KHSAA Region 3"
     },
@@ -68,6 +89,22 @@
       "event": "KHSAA Region 3"
     },
     {
+      "date": "2020-02-08",
+      "opponent_id": "11914808132",
+      "opponent_career_id": "career_008649",
+      "opponent_name": "Elijah Dickerson",
+      "opponent_team": "Western",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:55",
+      "event": "KHSAA Region 3"
+    },
+    {
       "date": "2020-02-01",
       "opponent_id": "11003313132",
       "opponent_career_id": "career_007959",
@@ -81,6 +118,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:12",
+      "event": "North Oldham Mustang"
+    },
+    {
+      "date": "2020-02-01",
+      "opponent_id": "11003313132",
+      "opponent_career_id": "career_007959",
+      "opponent_name": "Mason Davis",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:14",
       "event": "North Oldham Mustang"
     },
     {
@@ -113,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:26",
-      "event": "vs. North Bullitt"
+      "event": "vs. Nelson County"
     },
     {
       "date": "2020-01-22",
@@ -241,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:42",
-      "event": "vs. North Bullitt"
+      "event": "vs. Iroquois"
     },
     {
       "date": "2019-12-17",
@@ -293,38 +346,6 @@
     },
     {
       "date": "2019-11-23",
-      "opponent_id": "11003313132",
-      "opponent_career_id": "career_007959",
-      "opponent_name": "Mason Davis",
-      "opponent_team": "Valley",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Valley"
-    },
-    {
-      "date": "2019-11-23",
-      "opponent_id": "OUTSTATE_466c9b03dcaf",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Waggener High School",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Waggener High School"
-    },
-    {
-      "date": "2019-11-23",
       "opponent_id": "10775503132",
       "opponent_career_id": "career_010276",
       "opponent_name": "Marcos Batista",
@@ -337,7 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:11",
-      "event": "vs. North Bullitt"
+      "event": "vs. Moore"
     },
     {
       "date": "2019-11-23",
@@ -370,6 +391,38 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Southern"
+    },
+    {
+      "date": "2019-11-23",
+      "opponent_id": "11003313132",
+      "opponent_career_id": "career_007959",
+      "opponent_name": "Mason Davis",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Valley"
+    },
+    {
+      "date": "2019-11-23",
+      "opponent_id": "OUTSTATE_466c9b03dcaf",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Waggener High School",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Waggener High School"
     },
     {
       "date": "2019-11-23",
@@ -427,15 +480,15 @@
       "season": 2020,
       "grade": 9,
       "team": "North Bullitt",
-      "record": "9-14",
+      "record": "8-17",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 45,
-    "losses": 52,
-    "win_pct": 0.464
+    "wins": 44,
+    "losses": 55,
+    "win_pct": 0.444
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

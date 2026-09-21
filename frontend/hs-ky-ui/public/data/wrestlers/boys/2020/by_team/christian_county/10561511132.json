@@ -5,6 +5,11 @@
   "team_slug": "christian_county",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.722,
-    "bonus_rate": 0.778,
+    "pin_rate": 0.765,
+    "bonus_rate": 0.824,
     "majors": 1,
     "techs": 0,
     "pins": 13
@@ -225,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:49",
-      "event": "vs. Christian County"
+      "event": "vs. Apollo High School"
     },
     {
       "date": "2020-01-11",
@@ -242,6 +247,22 @@
       "score": "7-4",
       "duration": "7:00",
       "event": "vs. Owensboro"
+    },
+    {
+      "date": "2020-01-11",
+      "opponent_id": "11308095132",
+      "opponent_career_id": "career_007863",
+      "opponent_name": "Parker McKee",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:11",
+      "event": "vs. McCracken County"
     },
     {
       "date": "2020-01-11",
@@ -274,22 +295,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Ohio County"
-    },
-    {
-      "date": "2020-01-11",
-      "opponent_id": "11308095132",
-      "opponent_career_id": "career_007863",
-      "opponent_name": "Parker McKee",
-      "opponent_team": "McCracken County",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:11",
-      "event": "vs. McCracken County"
     },
     {
       "date": "2020-01-04",
@@ -549,38 +554,6 @@
     },
     {
       "date": "2019-12-07",
-      "opponent_id": "11004659132",
-      "opponent_career_id": "career_010140",
-      "opponent_name": "Obaida Fatihallah",
-      "opponent_team": "Fern Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:48",
-      "event": "King of the Bluegrass"
-    },
-    {
-      "date": "2019-12-07",
-      "opponent_id": "10991461132",
-      "opponent_career_id": "career_005952",
-      "opponent_name": "Caeleb Jarvis",
-      "opponent_team": "Fairdale",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "DEC",
-      "score": "7-5",
-      "duration": "7:00",
-      "event": "King of the Bluegrass"
-    },
-    {
-      "date": "2019-12-07",
       "opponent_id": "10570951132",
       "opponent_career_id": "career_003100",
       "opponent_name": "Bryant Faucett",
@@ -597,6 +570,22 @@
     },
     {
       "date": "2019-12-07",
+      "opponent_id": "11004659132",
+      "opponent_career_id": "career_010140",
+      "opponent_name": "Obaida Fatihallah",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:48",
+      "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2019-12-07",
       "opponent_id": "10720139132",
       "opponent_career_id": "career_006102",
       "opponent_name": "Giovanni Rivas",
@@ -609,6 +598,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:22",
+      "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2019-12-07",
+      "opponent_id": "10991461132",
+      "opponent_career_id": "career_005952",
+      "opponent_name": "Caeleb Jarvis",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-5",
+      "duration": "7:00",
       "event": "King of the Bluegrass"
     },
     {
@@ -659,5 +664,5 @@
     "losses": 30,
     "win_pct": 0.538
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

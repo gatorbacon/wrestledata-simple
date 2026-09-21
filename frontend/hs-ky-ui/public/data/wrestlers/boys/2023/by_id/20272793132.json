@@ -5,10 +5,15 @@
   "team_slug": "wayne_county",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
-    "overall": "14-17",
+    "overall": "14-19",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.833,
+    "pin_rate": 0.8,
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 1,
-    "pins": 5
+    "pins": 4
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -49,7 +54,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:29",
-      "event": "vs. Wayne County"
+      "event": "vs. Corbin"
     },
     {
       "date": "2022-12-28",
@@ -65,7 +70,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Wayne County"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2022-12-28",
@@ -81,7 +86,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:44",
-      "event": "vs. Wayne County"
+      "event": "vs. Grant County"
     },
     {
       "date": "2022-12-28",
@@ -97,7 +102,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:07",
-      "event": "vs. Wayne County"
+      "event": "vs. Madison Central"
     },
     {
       "date": "2022-12-28",
@@ -129,23 +134,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:03",
-      "event": "vs. Wayne County"
-    },
-    {
-      "date": "2022-12-21",
-      "opponent_id": "20165562132",
-      "opponent_career_id": "career_005239",
-      "opponent_name": "Lyla Smith",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Wayne County"
+      "event": "vs. Meade County"
     },
     {
       "date": "2022-12-21",
@@ -161,54 +150,6 @@
       "method": "FALL",
       "score": null,
       "duration": "3:56",
-      "event": "vs. Wayne County"
-    },
-    {
-      "date": "2022-12-20",
-      "opponent_id": "20477958132",
-      "opponent_career_id": "career_007443",
-      "opponent_name": "Alexis LaGrone",
-      "opponent_team": "Ohio County",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:19",
-      "event": "vs. Wayne County"
-    },
-    {
-      "date": "2022-12-20",
-      "opponent_id": "20501175132",
-      "opponent_career_id": "career_003807",
-      "opponent_name": "Daylon Jones",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:20",
-      "event": "vs. Meade County"
-    },
-    {
-      "date": "2022-12-20",
-      "opponent_id": "20494174132",
-      "opponent_career_id": "career_001721",
-      "opponent_name": "Patrick Durbin",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:05",
       "event": "vs. Meade County"
     },
     {
@@ -225,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:54",
-      "event": "vs. Wayne County"
+      "event": "vs. Nelson County"
     },
     {
       "date": "2022-12-20",
@@ -241,7 +182,7 @@
       "method": "TF",
       "score": "21-5",
       "duration": "0:00",
-      "event": "vs. Wayne County"
+      "event": "vs. Nelson County"
     },
     {
       "date": "2022-12-20",
@@ -257,7 +198,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:10",
-      "event": "vs. Wayne County"
+      "event": "vs. North Hardin"
+    },
+    {
+      "date": "2022-12-20",
+      "opponent_id": "20477958132",
+      "opponent_career_id": "career_007443",
+      "opponent_name": "Alexis LaGrone",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:19",
+      "event": "vs. Ohio County"
     },
     {
       "date": "2022-12-20",
@@ -309,6 +266,22 @@
     },
     {
       "date": "2022-12-20",
+      "opponent_id": "20501175132",
+      "opponent_career_id": "career_003807",
+      "opponent_name": "Daylon Jones",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:20",
+      "event": "vs. Meade County"
+    },
+    {
+      "date": "2022-12-20",
       "opponent_id": "20165562132",
       "opponent_career_id": "career_005239",
       "opponent_name": "Lyla Smith",
@@ -322,6 +295,22 @@
       "score": null,
       "duration": "1:24",
       "event": "vs. Boyle County"
+    },
+    {
+      "date": "2022-12-20",
+      "opponent_id": "20494174132",
+      "opponent_career_id": "career_001721",
+      "opponent_name": "Patrick Durbin",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:05",
+      "event": "vs. Meade County"
     },
     {
       "date": "2022-12-17",
@@ -357,22 +346,6 @@
     },
     {
       "date": "2022-12-16",
-      "opponent_id": "OUTSTATE_cc90d195274a",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Christian Academy of Knoxville",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Christian Academy of Knoxville"
-    },
-    {
-      "date": "2022-12-16",
       "opponent_id": "20155146132",
       "opponent_career_id": null,
       "opponent_name": "Brock Connatser",
@@ -386,6 +359,22 @@
       "score": null,
       "duration": "1:38",
       "event": "vs. Hardin Valley Academy"
+    },
+    {
+      "date": "2022-12-16",
+      "opponent_id": "OUTSTATE_cc90d195274a",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Christian Academy of Knoxville",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Christian Academy of Knoxville"
     },
     {
       "date": "2022-12-16",
@@ -469,22 +458,6 @@
     },
     {
       "date": "2022-12-03",
-      "opponent_id": "OUTSTATE_95f954829f05",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Livingston Academy",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Livingston Academy"
-    },
-    {
-      "date": "2022-12-03",
       "opponent_id": "20164857132",
       "opponent_career_id": "career_004016",
       "opponent_name": "Luke McLamb",
@@ -497,7 +470,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:18",
-      "event": "vs. Wayne County"
+      "event": "vs. Daviess County"
     },
     {
       "date": "2022-12-03",
@@ -530,6 +503,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Knox Central High School"
+    },
+    {
+      "date": "2022-12-03",
+      "opponent_id": "OUTSTATE_95f954829f05",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Livingston Academy",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Livingston Academy"
     },
     {
       "date": "2022-11-19",
@@ -602,7 +591,7 @@
       "season": 2024,
       "grade": 9,
       "team": "Wayne County",
-      "record": "21-26",
+      "record": "21-28",
       "regional_place": null,
       "state_place": null
     },
@@ -610,15 +599,15 @@
       "season": 2023,
       "grade": 8,
       "team": "Wayne County",
-      "record": "14-17",
+      "record": "14-19",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 55,
-    "losses": 63,
-    "win_pct": 0.466
+    "losses": 67,
+    "win_pct": 0.451
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

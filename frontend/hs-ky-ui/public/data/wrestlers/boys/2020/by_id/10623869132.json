@@ -5,10 +5,15 @@
   "team_slug": "moore",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "14-11",
+    "overall": "14-12",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.75,
-    "bonus_rate": 0.75,
+    "pin_rate": 0.692,
+    "bonus_rate": 0.692,
     "majors": 0,
     "techs": 0,
     "pins": 9
@@ -96,6 +101,22 @@
       "result": "W",
       "method": "DEC",
       "score": "8-4",
+      "duration": "7:00",
+      "event": "KHSAA Region 4"
+    },
+    {
+      "date": "2020-02-08",
+      "opponent_id": "11003901132",
+      "opponent_career_id": "career_006644",
+      "opponent_name": "Matthew Goatley",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "DEC",
+      "score": "11-9",
       "duration": "7:00",
       "event": "KHSAA Region 4"
     },
@@ -229,22 +250,6 @@
     },
     {
       "date": "2020-01-04",
-      "opponent_id": "10698862132",
-      "opponent_career_id": "career_006108",
-      "opponent_name": "Braedon Herron",
-      "opponent_team": "North Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:00",
-      "event": "Valley Main Event"
-    },
-    {
-      "date": "2020-01-04",
       "opponent_id": "11045113132",
       "opponent_career_id": "career_009099",
       "opponent_name": "Jalenn Neal",
@@ -257,6 +262,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:37",
+      "event": "Valley Main Event"
+    },
+    {
+      "date": "2020-01-04",
+      "opponent_id": "10698862132",
+      "opponent_career_id": "career_006108",
+      "opponent_name": "Braedon Herron",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:00",
       "event": "Valley Main Event"
     },
     {
@@ -277,38 +298,6 @@
     },
     {
       "date": "2019-12-14",
-      "opponent_id": "11131301132",
-      "opponent_career_id": "career_008820",
-      "opponent_name": "Noah Stanley",
-      "opponent_team": "Holmes",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "SV-1",
-      "score": "11-9",
-      "duration": "8:15",
-      "event": "Derby City Classic"
-    },
-    {
-      "date": "2019-12-14",
-      "opponent_id": "10679705132",
-      "opponent_career_id": "career_006141",
-      "opponent_name": "Michael Reese",
-      "opponent_team": "Iroquois",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:51",
-      "event": "Derby City Classic"
-    },
-    {
-      "date": "2019-12-14",
       "opponent_id": "11304865132",
       "opponent_career_id": "career_008758",
       "opponent_name": "Lee Florexile",
@@ -321,6 +310,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:31",
+      "event": "Derby City Classic"
+    },
+    {
+      "date": "2019-12-14",
+      "opponent_id": "11131301132",
+      "opponent_career_id": "career_008820",
+      "opponent_name": "Noah Stanley",
+      "opponent_team": "Holmes",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "SV-1",
+      "score": "11-9",
+      "duration": "8:15",
       "event": "Derby City Classic"
     },
     {
@@ -356,11 +361,11 @@
       "event": "Derby City Classic"
     },
     {
-      "date": "2019-11-23",
-      "opponent_id": "10720153132",
-      "opponent_career_id": "career_010292",
-      "opponent_name": "Sianna Rivas",
-      "opponent_team": "North Bullitt",
+      "date": "2019-12-14",
+      "opponent_id": "10679705132",
+      "opponent_career_id": "career_006141",
+      "opponent_name": "Michael Reese",
+      "opponent_team": "Iroquois",
       "opponent_team_rank": null,
       "opponent_weight": 120,
       "opponent_rank": null,
@@ -368,8 +373,24 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "1:00",
-      "event": "vs. North Bullitt"
+      "duration": "4:51",
+      "event": "Derby City Classic"
+    },
+    {
+      "date": "2019-11-23",
+      "opponent_id": "10570923132",
+      "opponent_career_id": "career_007714",
+      "opponent_name": "Kyle Muoy",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:33",
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2019-11-23",
@@ -385,7 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Moore"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2019-11-23",
@@ -405,6 +426,22 @@
     },
     {
       "date": "2019-11-23",
+      "opponent_id": "10720153132",
+      "opponent_career_id": "career_010292",
+      "opponent_name": "Sianna Rivas",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "vs. North Bullitt"
+    },
+    {
+      "date": "2019-11-23",
       "opponent_id": "10900148132",
       "opponent_career_id": "career_009824",
       "opponent_name": "Christopher Lewis",
@@ -418,22 +455,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Southern"
-    },
-    {
-      "date": "2019-11-23",
-      "opponent_id": "10570923132",
-      "opponent_career_id": "career_007714",
-      "opponent_name": "Kyle Muoy",
-      "opponent_team": "Bullitt East",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:33",
-      "event": "vs. Moore"
     }
   ],
   "career": {
@@ -449,7 +470,7 @@
       "season": 2020,
       "grade": 10,
       "team": "Moore",
-      "record": "14-11",
+      "record": "14-12",
       "regional_place": 3,
       "state_place": null
     },
@@ -464,8 +485,8 @@
   ],
   "career_record": {
     "wins": 21,
-    "losses": 15,
-    "win_pct": 0.583
+    "losses": 16,
+    "win_pct": 0.568
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

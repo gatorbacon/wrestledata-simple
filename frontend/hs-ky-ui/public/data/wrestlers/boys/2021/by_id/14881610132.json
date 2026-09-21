@@ -5,6 +5,11 @@
   "team_slug": "christian_county",
   "team_rank": null,
   "weight_class": 215,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2021,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.75,
-    "bonus_rate": 0.875,
+    "pin_rate": 0.765,
+    "bonus_rate": 0.882,
     "majors": 2,
     "techs": 0,
-    "pins": 12
+    "pins": 13
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -129,6 +134,22 @@
       "method": "FALL",
       "score": null,
       "duration": "3:54",
+      "event": "KHSAA Region 1"
+    },
+    {
+      "date": "2021-03-13",
+      "opponent_id": "15416576132",
+      "opponent_career_id": "career_008815",
+      "opponent_name": "Rance Hawkins",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:15",
       "event": "KHSAA Region 1"
     },
     {
@@ -288,8 +309,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Christian County"
+      "duration": "0:15",
+      "event": "vs. Apollo High School"
     },
     {
       "date": "2021-02-25",
@@ -401,7 +422,7 @@
       "method": "DEC",
       "score": "7-5",
       "duration": "7:00",
-      "event": "vs. Christian County"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2021-01-30",
@@ -469,22 +490,6 @@
     },
     {
       "date": "2021-01-23",
-      "opponent_id": "15363885132",
-      "opponent_career_id": "career_008926",
-      "opponent_name": "Bryce Russell",
-      "opponent_team": "St. Xavier",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "L",
-      "method": "MD",
-      "score": "14-6",
-      "duration": "7:00",
-      "event": "vs. St. Xavier"
-    },
-    {
-      "date": "2021-01-23",
       "opponent_id": "15174923132",
       "opponent_career_id": "career_009084",
       "opponent_name": "Kevin Aguilar",
@@ -498,6 +503,22 @@
       "score": null,
       "duration": "1:11",
       "event": "vs. LaRue County"
+    },
+    {
+      "date": "2021-01-23",
+      "opponent_id": "15363885132",
+      "opponent_career_id": "career_008926",
+      "opponent_name": "Bryce Russell",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "MD",
+      "score": "14-6",
+      "duration": "7:00",
+      "event": "vs. St. Xavier"
     },
     {
       "date": "2021-01-23",
@@ -555,15 +576,15 @@
       "season": 2019,
       "grade": 9,
       "team": "Christian County",
-      "record": "18-9",
+      "record": "19-10",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 105,
-    "losses": 35,
-    "win_pct": 0.75
+    "wins": 106,
+    "losses": 36,
+    "win_pct": 0.746
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

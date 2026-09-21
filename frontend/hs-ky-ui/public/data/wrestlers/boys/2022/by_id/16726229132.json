@@ -5,6 +5,11 @@
   "team_slug": "bullitt_east",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2022,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.938,
-    "bonus_rate": 0.938,
+    "pin_rate": 0.941,
+    "bonus_rate": 0.941,
     "majors": 0,
     "techs": 0,
-    "pins": 15
+    "pins": 16
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -165,6 +170,22 @@
     },
     {
       "date": "2022-01-15",
+      "opponent_id": "16736767132",
+      "opponent_career_id": "career_001960",
+      "opponent_name": "Mason Taylor",
+      "opponent_team": "Ohio County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:18",
+      "event": "Cardinal Clash"
+    },
+    {
+      "date": "2022-01-15",
       "opponent_id": "16932136132",
       "opponent_career_id": "career_006532",
       "opponent_name": "Aden Walker",
@@ -245,22 +266,6 @@
     },
     {
       "date": "2021-12-22",
-      "opponent_id": "16955172132",
-      "opponent_career_id": "career_002748",
-      "opponent_name": "Declan Duncan",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:20",
-      "event": "Fern Creek Gladiator Tournament"
-    },
-    {
-      "date": "2021-12-22",
       "opponent_id": "16735360132",
       "opponent_career_id": "career_005828",
       "opponent_name": "Hannah Pittman",
@@ -273,6 +278,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:40",
+      "event": "Fern Creek Gladiator Tournament"
+    },
+    {
+      "date": "2021-12-22",
+      "opponent_id": "16955172132",
+      "opponent_career_id": "career_002748",
+      "opponent_name": "Declan Duncan",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:20",
       "event": "Fern Creek Gladiator Tournament"
     },
     {
@@ -309,38 +330,6 @@
     },
     {
       "date": "2021-12-21",
-      "opponent_id": "17415397132",
-      "opponent_career_id": "career_000076",
-      "opponent_name": "Benjamin Franz",
-      "opponent_team": "Atherton",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Atherton"
-    },
-    {
-      "date": "2021-12-21",
-      "opponent_id": "16929190132",
-      "opponent_career_id": "career_000974",
-      "opponent_name": "Liam Gutierrez",
-      "opponent_team": "Frederick Douglass",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Frederick Douglass"
-    },
-    {
-      "date": "2021-12-21",
       "opponent_id": "OUTSTATE_9f42b4602541",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -372,11 +361,11 @@
       "event": "vs. Fern Creek"
     },
     {
-      "date": "2021-12-18",
-      "opponent_id": "17086099132",
-      "opponent_career_id": "career_005809",
-      "opponent_name": "Malik Porter",
-      "opponent_team": "Central",
+      "date": "2021-12-21",
+      "opponent_id": "17415397132",
+      "opponent_career_id": "career_000076",
+      "opponent_name": "Benjamin Franz",
+      "opponent_team": "Atherton",
       "opponent_team_rank": null,
       "opponent_weight": 106,
       "opponent_rank": null,
@@ -385,7 +374,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Central"
+      "event": "vs. Atherton"
+    },
+    {
+      "date": "2021-12-21",
+      "opponent_id": "16929190132",
+      "opponent_career_id": "career_000974",
+      "opponent_name": "Liam Gutierrez",
+      "opponent_team": "Frederick Douglass",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Frederick Douglass"
     },
     {
       "date": "2021-12-18",
@@ -418,6 +423,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Southern"
+    },
+    {
+      "date": "2021-12-18",
+      "opponent_id": "17086099132",
+      "opponent_career_id": "career_005809",
+      "opponent_name": "Malik Porter",
+      "opponent_team": "Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Central"
     },
     {
       "date": "2021-12-18",
@@ -480,7 +501,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "2:32",
       "event": "King of the Bluegrass @ Fairdale"
     },
     {
@@ -498,22 +519,6 @@
       "score": null,
       "duration": "0:00",
       "event": "King of the Bluegrass @ Fairdale"
-    },
-    {
-      "date": "2021-12-04",
-      "opponent_id": "16809842132",
-      "opponent_career_id": "career_000664",
-      "opponent_name": "Shayne Stilts",
-      "opponent_team": "Desales",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Desales"
     },
     {
       "date": "2021-12-04",
@@ -546,6 +551,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Fern Creek"
+    },
+    {
+      "date": "2021-12-04",
+      "opponent_id": "16809842132",
+      "opponent_career_id": "career_000664",
+      "opponent_name": "Shayne Stilts",
+      "opponent_team": "Desales",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Desales"
     },
     {
       "date": "2021-12-04",
@@ -625,7 +646,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Bullitt East"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2021-11-27",
@@ -732,5 +753,5 @@
     "losses": 27,
     "win_pct": 0.654
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

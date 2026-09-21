@@ -5,6 +5,11 @@
   "team_slug": "daviess_county",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
@@ -113,7 +118,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Daviess County"
+      "event": "vs. Apollo High School"
     },
     {
       "date": "2023-01-24",
@@ -149,6 +154,22 @@
     },
     {
       "date": "2023-01-16",
+      "opponent_id": "20331227132",
+      "opponent_career_id": "career_000389",
+      "opponent_name": "Kenny Lira",
+      "opponent_team": "Calloway County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Calloway County"
+    },
+    {
+      "date": "2023-01-16",
       "opponent_id": "20596701132",
       "opponent_career_id": "career_005969",
       "opponent_name": "Hailey Hendrickson",
@@ -180,22 +201,6 @@
       "event": "vs. Trigg County"
     },
     {
-      "date": "2023-01-16",
-      "opponent_id": "20331227132",
-      "opponent_career_id": "career_000389",
-      "opponent_name": "Kenny Lira",
-      "opponent_team": "Calloway County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Daviess County"
-    },
-    {
       "date": "2023-01-14",
       "opponent_id": "20169258132",
       "opponent_career_id": "career_000040",
@@ -209,7 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Daviess County"
+      "event": "vs. Apollo High School"
     },
     {
       "date": "2023-01-14",
@@ -245,22 +250,6 @@
     },
     {
       "date": "2023-01-12",
-      "opponent_id": "20523058132",
-      "opponent_career_id": "career_004296",
-      "opponent_name": "Dayton Dowdy",
-      "opponent_team": "Owensboro",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:47",
-      "event": "vs. Owensboro"
-    },
-    {
-      "date": "2023-01-12",
       "opponent_id": "OUTSTATE_3286db6ab9d9",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -292,6 +281,22 @@
       "event": "vs. South Warren High School"
     },
     {
+      "date": "2023-01-12",
+      "opponent_id": "20523058132",
+      "opponent_career_id": "career_004296",
+      "opponent_name": "Dayton Dowdy",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:47",
+      "event": "vs. Owensboro"
+    },
+    {
       "date": "2023-01-07",
       "opponent_id": "20424051132",
       "opponent_career_id": "career_005869",
@@ -304,7 +309,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:15",
       "event": "Lady Eagles Invitational"
     },
     {
@@ -341,6 +346,22 @@
     },
     {
       "date": "2022-12-30",
+      "opponent_id": "20567245132",
+      "opponent_career_id": "career_001180",
+      "opponent_name": "Vinson Embry",
+      "opponent_team": "Henderson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Henderson County"
+    },
+    {
+      "date": "2022-12-30",
       "opponent_id": "21136001132",
       "opponent_career_id": "career_007511",
       "opponent_name": "Aiden Johnson",
@@ -370,22 +391,6 @@
       "score": null,
       "duration": "0:28",
       "event": "vs. Southridge"
-    },
-    {
-      "date": "2022-12-30",
-      "opponent_id": "20567245132",
-      "opponent_career_id": "career_001180",
-      "opponent_name": "Vinson Embry",
-      "opponent_team": "Henderson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Henderson County"
     },
     {
       "date": "2022-12-08",
@@ -440,11 +445,20 @@
     "career_id": "career_003546",
     "canonical_name": "Kali Nichols",
     "seasons": [
+      2026,
       2024,
       2023
     ]
   },
   "season_summary": [
+    {
+      "season": 2026,
+      "grade": 11,
+      "team": "Daviess County",
+      "record": "4-0",
+      "regional_place": null,
+      "state_place": null
+    },
     {
       "season": 2024,
       "grade": 9,
@@ -463,9 +477,9 @@
     }
   ],
   "career_record": {
-    "wins": 24,
+    "wins": 28,
     "losses": 21,
-    "win_pct": 0.533
+    "win_pct": 0.571
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

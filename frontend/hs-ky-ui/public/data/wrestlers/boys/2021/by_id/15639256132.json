@@ -5,10 +5,15 @@
   "team_slug": "fern_creek",
   "team_rank": null,
   "weight_class": 157,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2021,
   "current_rank": null,
   "record": {
-    "overall": "6-11",
+    "overall": "6-12",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.333,
-    "bonus_rate": 0.333,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.5,
     "majors": 0,
     "techs": 0,
-    "pins": 1
+    "pins": 2
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -117,6 +122,22 @@
     },
     {
       "date": "2021-02-27",
+      "opponent_id": "15707677132",
+      "opponent_career_id": "career_007755",
+      "opponent_name": "Sheadyn Kennedy",
+      "opponent_team": "Desales",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:17",
+      "event": "Call Me the Monster Invitational"
+    },
+    {
+      "date": "2021-02-27",
       "opponent_id": "15837870132",
       "opponent_career_id": "career_004510",
       "opponent_name": "Brandon Burchett",
@@ -129,6 +150,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:40",
+      "event": "Call Me the Monster Invitational"
+    },
+    {
+      "date": "2021-02-27",
+      "opponent_id": "15837870132",
+      "opponent_career_id": "career_004510",
+      "opponent_name": "Brandon Burchett",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:41",
       "event": "Call Me the Monster Invitational"
     },
     {
@@ -149,6 +186,38 @@
     },
     {
       "date": "2021-02-20",
+      "opponent_id": "14987738132",
+      "opponent_career_id": "career_008754",
+      "opponent_name": "Thomas Ketchen-Carter",
+      "opponent_team": "Campbell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:29",
+      "event": "vs. Campbell County"
+    },
+    {
+      "date": "2021-02-20",
+      "opponent_id": "15607147132",
+      "opponent_career_id": "career_007417",
+      "opponent_name": "D`von Titus",
+      "opponent_team": "Moore",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:55",
+      "event": "vs. Moore"
+    },
+    {
+      "date": "2021-02-20",
       "opponent_id": "15607147132",
       "opponent_career_id": "career_007417",
       "opponent_name": "D`von Titus",
@@ -162,22 +231,6 @@
       "score": null,
       "duration": "4:34",
       "event": "vs. Moore"
-    },
-    {
-      "date": "2021-02-20",
-      "opponent_id": "14987738132",
-      "opponent_career_id": "career_008754",
-      "opponent_name": "Thomas Ketchen-Carter",
-      "opponent_team": "Campbell County",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:29",
-      "event": "vs. Fern Creek"
     },
     {
       "date": "2021-02-20",
@@ -209,7 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Fern Creek"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2021-02-13",
@@ -225,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Fern Creek"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2021-02-13",
@@ -241,7 +294,7 @@
       "method": "MD",
       "score": "11-0",
       "duration": "7:00",
-      "event": "vs. Fern Creek"
+      "event": "vs. Fairdale"
     },
     {
       "date": "2021-02-03",
@@ -257,7 +310,7 @@
       "method": "DEC",
       "score": "11-6",
       "duration": "7:00",
-      "event": "vs. Fern Creek"
+      "event": "vs. Central"
     },
     {
       "date": "2021-02-03",
@@ -288,15 +341,15 @@
       "season": 2021,
       "grade": 11,
       "team": "Fern Creek",
-      "record": "6-11",
+      "record": "6-12",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 6,
-    "losses": 11,
-    "win_pct": 0.353
+    "losses": 12,
+    "win_pct": 0.333
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

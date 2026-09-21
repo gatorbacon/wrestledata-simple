@@ -5,10 +5,15 @@
   "team_slug": "moore",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "13-12",
+    "overall": "13-15",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -68,6 +73,22 @@
       "event": "vs. St. Xavier"
     },
     {
+      "date": "2020-01-17",
+      "opponent_id": "10899271132",
+      "opponent_career_id": "career_008920",
+      "opponent_name": "Eli Mattingly-Neal",
+      "opponent_team": "St. Xavier",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "vs. St. Xavier"
+    },
+    {
       "date": "2020-01-04",
       "opponent_id": "10570921132",
       "opponent_career_id": "career_009151",
@@ -81,6 +102,22 @@
       "method": "DEC",
       "score": "8-6",
       "duration": "7:00",
+      "event": "Valley Main Event"
+    },
+    {
+      "date": "2020-01-04",
+      "opponent_id": "10991513132",
+      "opponent_career_id": "career_006382",
+      "opponent_name": "Jude Powell",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:57",
       "event": "Valley Main Event"
     },
     {
@@ -161,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:42",
-      "event": "vs. Moore"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2019-12-21",
@@ -171,6 +208,22 @@
       "opponent_team": "Providence",
       "opponent_team_rank": null,
       "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "jeff classic 2019"
+    },
+    {
+      "date": "2019-12-21",
+      "opponent_id": "OUTSTATE_780bf9e98d36",
+      "opponent_career_id": null,
+      "opponent_name": "Forfeit Forfeit",
+      "opponent_team": "Unknown",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "120",
       "result": "W",
@@ -192,22 +245,6 @@
       "result": "L",
       "method": "DEC",
       "score": "5-0",
-      "duration": "7:00",
-      "event": "jeff classic 2019"
-    },
-    {
-      "date": "2019-12-21",
-      "opponent_id": "OUTSTATE_780bf9e98d36",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FF",
-      "score": null,
       "duration": "7:00",
       "event": "jeff classic 2019"
     },
@@ -373,22 +410,6 @@
     },
     {
       "date": "2019-11-23",
-      "opponent_id": "10803815132",
-      "opponent_career_id": "career_005960",
-      "opponent_name": "Berechiah Hatchett",
-      "opponent_team": "Fern Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Moore"
-    },
-    {
-      "date": "2019-11-23",
       "opponent_id": "10570943132",
       "opponent_career_id": "career_010067",
       "opponent_name": "Bowen Ben",
@@ -401,7 +422,7 @@
       "method": "DEC",
       "score": "4-2",
       "duration": "7:00",
-      "event": "vs. Moore"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2019-11-23",
@@ -417,7 +438,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Moore"
+      "event": "vs. Desales"
+    },
+    {
+      "date": "2019-11-23",
+      "opponent_id": "10803815132",
+      "opponent_career_id": "career_005960",
+      "opponent_name": "Berechiah Hatchett",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2019-11-23",
@@ -467,7 +504,7 @@
       "season": 2020,
       "grade": 12,
       "team": "Moore",
-      "record": "13-12",
+      "record": "13-15",
       "regional_place": null,
       "state_place": null
     },
@@ -475,7 +512,7 @@
       "season": 2019,
       "grade": 11,
       "team": "Moore",
-      "record": "26-23",
+      "record": "27-24",
       "regional_place": 3,
       "state_place": null
     },
@@ -491,15 +528,15 @@
       "season": 2017,
       "grade": 9,
       "team": "Moore",
-      "record": "3-5",
+      "record": "3-6",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 51,
-    "losses": 57,
-    "win_pct": 0.472
+    "wins": 52,
+    "losses": 62,
+    "win_pct": 0.456
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

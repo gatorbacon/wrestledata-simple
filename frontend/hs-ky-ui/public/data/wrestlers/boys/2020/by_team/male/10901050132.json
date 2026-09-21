@@ -5,10 +5,15 @@
   "team_slug": "male",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "14-23",
+    "overall": "14-24",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -129,7 +134,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:25",
-      "event": "vs. Male"
+      "event": "vs. Central"
     },
     {
       "date": "2020-01-25",
@@ -148,38 +153,6 @@
       "event": "Michael Herchenrader Jr. Memorial Tournament"
     },
     {
-      "date": "2020-01-18",
-      "opponent_id": "10899271132",
-      "opponent_career_id": "career_008920",
-      "opponent_name": "Eli Mattingly-Neal",
-      "opponent_team": "St. Xavier",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. St. Xavier"
-    },
-    {
-      "date": "2020-01-18",
-      "opponent_id": "10623876132",
-      "opponent_career_id": "career_003427",
-      "opponent_name": "Malachia Harris",
-      "opponent_team": "Moore",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Moore"
-    },
-    {
       "date": "2020-01-17",
       "opponent_id": "10623876132",
       "opponent_career_id": "career_003427",
@@ -193,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:50",
-      "event": "vs. Male"
+      "event": "vs. Moore"
     },
     {
       "date": "2020-01-17",
@@ -209,7 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "vs. Male"
+      "event": "vs. St. Xavier"
     },
     {
       "date": "2020-01-15",
@@ -225,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:40",
-      "event": "vs. Male"
+      "event": "vs. Central"
     },
     {
       "date": "2020-01-15",
@@ -357,22 +330,6 @@
     },
     {
       "date": "2019-12-27",
-      "opponent_id": "10549774132",
-      "opponent_career_id": "career_009493",
-      "opponent_name": "Field Johnson",
-      "opponent_team": "Desales",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Male"
-    },
-    {
-      "date": "2019-12-27",
       "opponent_id": "10553660132",
       "opponent_career_id": "career_003094",
       "opponent_name": "Evan Browning",
@@ -385,7 +342,23 @@
       "method": "MD",
       "score": "12-1",
       "duration": "7:00",
-      "event": "vs. Male"
+      "event": "vs. Boyle County"
+    },
+    {
+      "date": "2019-12-27",
+      "opponent_id": "10549774132",
+      "opponent_career_id": "career_009493",
+      "opponent_name": "Field Johnson",
+      "opponent_team": "Desales",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Desales"
     },
     {
       "date": "2019-12-27",
@@ -529,7 +502,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Male"
+      "event": "vs. Apollo High School"
     },
     {
       "date": "2019-12-07",
@@ -609,7 +582,7 @@
       "method": "MD",
       "score": "10-2",
       "duration": "7:00",
-      "event": "vs. Male"
+      "event": "vs. Bryan Station"
     },
     {
       "date": "2019-11-23",
@@ -656,7 +629,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:23",
       "event": "vs. Perry County Central"
     },
     {
@@ -706,15 +679,20 @@
       "season": 2020,
       "grade": 9,
       "team": "Male",
-      "record": "14-23",
+      "record": "14-24",
       "regional_place": 4,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 30,
-    "losses": 37,
-    "win_pct": 0.448
+    "losses": 38,
+    "win_pct": 0.441
   },
-  "profile_generated_at": "2026-04-16"
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  },
+  "profile_generated_at": "2026-09-21"
 }

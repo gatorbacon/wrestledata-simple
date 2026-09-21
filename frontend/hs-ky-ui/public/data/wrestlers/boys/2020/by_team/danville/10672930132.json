@@ -5,10 +5,15 @@
   "team_slug": "danville",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "10-13",
+    "overall": "11-13",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -37,22 +42,6 @@
   "match_list": [
     {
       "date": "2020-01-25",
-      "opponent_id": "10666677132",
-      "opponent_career_id": "career_009812",
-      "opponent_name": "Aaron Thomas",
-      "opponent_team": "Perry County Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:51",
-      "event": "vs. Perry County Central"
-    },
-    {
-      "date": "2020-01-25",
       "opponent_id": "10903836132",
       "opponent_career_id": "career_010063",
       "opponent_name": "Austin Buechele",
@@ -65,7 +54,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:51",
-      "event": "vs. Danville"
+      "event": "vs. Bullitt Central"
     },
     {
       "date": "2020-01-25",
@@ -98,6 +87,22 @@
       "score": null,
       "duration": "0:41",
       "event": "vs. Daviess County"
+    },
+    {
+      "date": "2020-01-25",
+      "opponent_id": "10666677132",
+      "opponent_career_id": "career_009812",
+      "opponent_name": "Aaron Thomas",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:51",
+      "event": "vs. Perry County Central"
     },
     {
       "date": "2020-01-25",
@@ -181,6 +186,22 @@
     },
     {
       "date": "2020-01-10",
+      "opponent_id": "10553662132",
+      "opponent_career_id": "career_007704",
+      "opponent_name": "Ethan Wheeler",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:37",
+      "event": "vs. Boyle County"
+    },
+    {
+      "date": "2020-01-10",
       "opponent_id": "11774121132",
       "opponent_career_id": "career_010413",
       "opponent_name": "Bryce Elam",
@@ -208,7 +229,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "1:05",
+      "duration": "1:06",
       "event": "vs. Mccreary Central"
     },
     {
@@ -225,23 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:56",
-      "event": "vs. Danville"
-    },
-    {
-      "date": "2020-01-10",
-      "opponent_id": "10553662132",
-      "opponent_career_id": "career_007704",
-      "opponent_name": "Ethan Wheeler",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:37",
-      "event": "vs. Danville"
+      "event": "vs. Perry County Central"
     },
     {
       "date": "2019-12-28",
@@ -256,7 +261,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "2:35",
       "event": "Woodford County Invitational"
     },
     {
@@ -352,7 +357,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:55",
+      "duration": "0:54",
       "event": "vs. Daviess County"
     },
     {
@@ -435,7 +440,7 @@
       "season": 2023,
       "grade": 12,
       "team": "Boyle County",
-      "record": "32-8",
+      "record": "32-9",
       "regional_place": 2,
       "state_place": null
     },
@@ -459,15 +464,20 @@
       "season": 2020,
       "grade": 9,
       "team": "Danville",
-      "record": "10-13",
+      "record": "11-13",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 88,
-    "losses": 46,
-    "win_pct": 0.657
+    "wins": 89,
+    "losses": 47,
+    "win_pct": 0.654
   },
-  "profile_generated_at": "2026-04-16"
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  },
+  "profile_generated_at": "2026-09-21"
 }

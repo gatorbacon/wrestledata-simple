@@ -5,10 +5,15 @@
   "team_slug": "holmes",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
-    "overall": "42-13",
+    "overall": "43-13",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.897,
-    "bonus_rate": 0.897,
+    "pin_rate": 0.9,
+    "bonus_rate": 0.9,
     "majors": 0,
     "techs": 0,
-    "pins": 35
+    "pins": 36
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -177,7 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Holmes"
+      "event": "vs. Boone County"
     },
     {
       "date": "2023-02-02",
@@ -209,7 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:39",
-      "event": "vs. Holmes"
+      "event": "vs. Boone County"
     },
     {
       "date": "2023-01-28",
@@ -225,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:16",
-      "event": "vs. Holmes"
+      "event": "vs. Belfry"
     },
     {
       "date": "2023-01-28",
@@ -241,7 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:17",
-      "event": "vs. Holmes"
+      "event": "vs. Bell County"
     },
     {
       "date": "2023-01-28",
@@ -257,7 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:44",
-      "event": "vs. Holmes"
+      "event": "vs. Fort Campbell"
     },
     {
       "date": "2023-01-28",
@@ -289,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Holmes"
+      "event": "vs. Covington Catholic"
     },
     {
       "date": "2023-01-24",
@@ -517,22 +522,6 @@
     },
     {
       "date": "2022-12-30",
-      "opponent_id": "20310870132",
-      "opponent_career_id": "career_003156",
-      "opponent_name": "Angel Montes",
-      "opponent_team": "Dixie Heights",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:38",
-      "event": "2022 NKAC"
-    },
-    {
-      "date": "2022-12-30",
       "opponent_id": "20326238132",
       "opponent_career_id": "career_000622",
       "opponent_name": "Kingston Dailey",
@@ -545,6 +534,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:37",
+      "event": "2022 NKAC"
+    },
+    {
+      "date": "2022-12-30",
+      "opponent_id": "20310870132",
+      "opponent_career_id": "career_003156",
+      "opponent_name": "Angel Montes",
+      "opponent_team": "Dixie Heights",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:38",
       "event": "2022 NKAC"
     },
     {
@@ -593,7 +598,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:51",
-      "event": "vs. Holmes"
+      "event": "vs. Cooper"
     },
     {
       "date": "2022-12-21",
@@ -613,22 +618,6 @@
     },
     {
       "date": "2022-12-17",
-      "opponent_id": "20164572132",
-      "opponent_career_id": "career_003993",
-      "opponent_name": "Cordion Abernathy",
-      "opponent_team": "Conner",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:08",
-      "event": "vs. Holmes"
-    },
-    {
-      "date": "2022-12-17",
       "opponent_id": "20786894132",
       "opponent_career_id": "career_005860",
       "opponent_name": "Owen Hartman",
@@ -641,7 +630,39 @@
       "method": "FALL",
       "score": null,
       "duration": "1:56",
-      "event": "vs. Holmes"
+      "event": "vs. Bourbon County"
+    },
+    {
+      "date": "2022-12-17",
+      "opponent_id": "20164572132",
+      "opponent_career_id": "career_003993",
+      "opponent_name": "Cordion Abernathy",
+      "opponent_team": "Conner",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:08",
+      "event": "vs. Conner"
+    },
+    {
+      "date": "2022-12-17",
+      "opponent_id": "20434378132",
+      "opponent_career_id": "career_003209",
+      "opponent_name": "Ethan Sentelle",
+      "opponent_team": "Great Crossing High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:58",
+      "event": "vs. Great Crossing High School"
     },
     {
       "date": "2022-12-17",
@@ -676,22 +697,6 @@
       "event": "vs. Raceland"
     },
     {
-      "date": "2022-12-17",
-      "opponent_id": "20434378132",
-      "opponent_career_id": "career_003209",
-      "opponent_name": "Ethan Sentelle",
-      "opponent_team": "Great Crossing High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:58",
-      "event": "vs. Holmes"
-    },
-    {
       "date": "2022-12-10",
       "opponent_id": "20164741132",
       "opponent_career_id": "career_006958",
@@ -699,22 +704,6 @@
       "opponent_team": "Doss",
       "opponent_team_rank": null,
       "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Derby City Classic"
-    },
-    {
-      "date": "2022-12-10",
-      "opponent_id": "20287627132",
-      "opponent_career_id": null,
-      "opponent_name": "Zeke Moon",
-      "opponent_team": "Jeffersonville",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "150",
       "result": "W",
@@ -757,6 +746,22 @@
     },
     {
       "date": "2022-12-10",
+      "opponent_id": "20287627132",
+      "opponent_career_id": null,
+      "opponent_name": "Zeke Moon",
+      "opponent_team": "Jeffersonville",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Derby City Classic"
+    },
+    {
+      "date": "2022-12-10",
       "opponent_id": "OUTSTATE_dbb87b1898d3",
       "opponent_career_id": null,
       "opponent_name": "Trey West",
@@ -773,12 +778,12 @@
     },
     {
       "date": "2022-12-03",
-      "opponent_id": "20455508132",
-      "opponent_career_id": "career_007061",
-      "opponent_name": "Jake Porter",
-      "opponent_team": "Newport",
+      "opponent_id": "20166505132",
+      "opponent_career_id": "career_006916",
+      "opponent_name": "Chris Gill",
+      "opponent_team": "Ashland Blazer",
       "opponent_team_rank": null,
-      "opponent_weight": 144,
+      "opponent_weight": 150,
       "opponent_rank": null,
       "weight_class": "150",
       "result": "W",
@@ -789,9 +794,9 @@
     },
     {
       "date": "2022-12-03",
-      "opponent_id": "20166505132",
-      "opponent_career_id": "career_006916",
-      "opponent_name": "Chris Gill",
+      "opponent_id": "20166499132",
+      "opponent_career_id": "career_000066",
+      "opponent_name": "Bryce Helms",
       "opponent_team": "Ashland Blazer",
       "opponent_team_rank": null,
       "opponent_weight": 150,
@@ -836,6 +841,38 @@
       "event": "Battle for the Bone"
     },
     {
+      "date": "2022-12-03",
+      "opponent_id": "20455508132",
+      "opponent_career_id": "career_007061",
+      "opponent_name": "Jake Porter",
+      "opponent_team": "Newport",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Battle for the Bone"
+    },
+    {
+      "date": "2022-11-26",
+      "opponent_id": "20253301132",
+      "opponent_career_id": "career_006065",
+      "opponent_name": "Navi Florez",
+      "opponent_team": "Male",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Male"
+    },
+    {
       "date": "2022-11-26",
       "opponent_id": "20571489132",
       "opponent_career_id": "career_004271",
@@ -850,6 +887,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. North Hardin"
+    },
+    {
+      "date": "2022-11-26",
+      "opponent_id": "20163678132",
+      "opponent_career_id": "career_002713",
+      "opponent_name": "Keenan Shively",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Taylor County"
     },
     {
       "date": "2022-11-26",
@@ -882,38 +935,6 @@
       "score": null,
       "duration": "0:28",
       "event": "vs. Ohio County"
-    },
-    {
-      "date": "2022-11-26",
-      "opponent_id": "20253301132",
-      "opponent_career_id": "career_006065",
-      "opponent_name": "Navi Florez",
-      "opponent_team": "Male",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Male"
-    },
-    {
-      "date": "2022-11-26",
-      "opponent_id": "20163678132",
-      "opponent_career_id": "career_002713",
-      "opponent_name": "Keenan Shively",
-      "opponent_team": "Taylor County",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Taylor County"
     }
   ],
   "career": {
@@ -938,7 +959,7 @@
       "season": 2023,
       "grade": 11,
       "team": "Holmes",
-      "record": "42-13",
+      "record": "43-13",
       "regional_place": 3,
       "state_place": null
     },
@@ -946,15 +967,15 @@
       "season": 2022,
       "grade": 10,
       "team": "Holmes",
-      "record": "22-15",
+      "record": "24-16",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 90,
-    "losses": 43,
-    "win_pct": 0.677
+    "wins": 93,
+    "losses": 44,
+    "win_pct": 0.679
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,6 +5,11 @@
   "team_slug": "christian_county",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2021,
   "current_rank": null,
   "record": {
@@ -37,6 +42,22 @@
   "match_list": [
     {
       "date": "2021-01-23",
+      "opponent_id": "14872730132",
+      "opponent_career_id": "career_003095",
+      "opponent_name": "Diego Montoya",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DEC",
+      "score": "11-4",
+      "duration": "7:00",
+      "event": "vs. Boyle County"
+    },
+    {
+      "date": "2021-01-23",
       "opponent_id": "15363948132",
       "opponent_career_id": "career_003403",
       "opponent_name": "Max Speaker",
@@ -50,22 +71,6 @@
       "score": null,
       "duration": "1:52",
       "event": "vs. St. Xavier"
-    },
-    {
-      "date": "2021-01-23",
-      "opponent_id": "14872730132",
-      "opponent_career_id": "career_003095",
-      "opponent_name": "Diego Montoya",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "DEC",
-      "score": "11-4",
-      "duration": "7:00",
-      "event": "vs. Christian County"
     }
   ],
   "career": {
@@ -126,5 +131,5 @@
     "losses": 27,
     "win_pct": 0.69
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "johnson_central",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "39-9",
+    "overall": "36-9",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.571,
-    "bonus_rate": 0.714,
+    "pin_rate": 0.545,
+    "bonus_rate": 0.697,
     "majors": 4,
     "techs": 1,
-    "pins": 20
+    "pins": 18
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -161,7 +166,7 @@
       "method": "TF",
       "score": "15-0",
       "duration": "0:00",
-      "event": "vs. Johnson Central"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2020-01-31",
@@ -194,22 +199,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Montgomery County"
-    },
-    {
-      "date": "2020-01-25",
-      "opponent_id": "10787628132",
-      "opponent_career_id": "career_009688",
-      "opponent_name": "Landon Lenhart",
-      "opponent_team": "Trinity (Louisville)",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "DEC",
-      "score": "4-0",
-      "duration": "7:00",
-      "event": "vs. Trinity (Louisville)"
     },
     {
       "date": "2020-01-25",
@@ -260,6 +249,22 @@
       "event": "vs. Simon Kenton"
     },
     {
+      "date": "2020-01-25",
+      "opponent_id": "10787628132",
+      "opponent_career_id": "career_009688",
+      "opponent_name": "Landon Lenhart",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "DEC",
+      "score": "4-0",
+      "duration": "7:00",
+      "event": "vs. Trinity (Louisville)"
+    },
+    {
       "date": "2020-01-18",
       "opponent_id": "10889854132",
       "opponent_career_id": "career_009548",
@@ -273,7 +278,7 @@
       "method": "DEC",
       "score": "9-2",
       "duration": "7:00",
-      "event": "vs. Johnson Central"
+      "event": "vs. Henry Clay"
     },
     {
       "date": "2020-01-18",
@@ -373,22 +378,6 @@
     },
     {
       "date": "2020-01-04",
-      "opponent_id": "OUTSTATE_49a963133843",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Clay County",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Clay County"
-    },
-    {
-      "date": "2020-01-04",
       "opponent_id": "11014281132",
       "opponent_career_id": null,
       "opponent_name": "Tayton Britton",
@@ -421,38 +410,6 @@
     },
     {
       "date": "2020-01-04",
-      "opponent_id": "10681698132",
-      "opponent_career_id": null,
-      "opponent_name": "Jacob Ellis",
-      "opponent_team": "Hurricane Hs",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Hurricane Hs"
-    },
-    {
-      "date": "2020-01-04",
-      "opponent_id": "11872790132",
-      "opponent_career_id": null,
-      "opponent_name": "Wayne Stephenson",
-      "opponent_team": "Ravenswood",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Ravenswood"
-    },
-    {
-      "date": "2020-01-04",
       "opponent_id": "11395563132",
       "opponent_career_id": null,
       "opponent_name": "Jon Parks",
@@ -466,6 +423,22 @@
       "score": "3-0",
       "duration": "7:00",
       "event": "vs. Greenbrier West Hs"
+    },
+    {
+      "date": "2020-01-04",
+      "opponent_id": "OUTSTATE_49a963133843",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Clay County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Clay County"
     },
     {
       "date": "2020-01-04",
@@ -721,7 +694,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Johnson Central"
+      "event": "vs. Belfry"
     },
     {
       "date": "2019-12-13",
@@ -803,7 +776,7 @@
       "season": 2021,
       "grade": 12,
       "team": "Johnson Central",
-      "record": "29-5",
+      "record": "27-5",
       "regional_place": 2,
       "state_place": null
     },
@@ -811,7 +784,7 @@
       "season": 2020,
       "grade": 11,
       "team": "Johnson Central",
-      "record": "39-9",
+      "record": "36-9",
       "regional_place": 1,
       "state_place": null
     },
@@ -819,7 +792,7 @@
       "season": 2019,
       "grade": 10,
       "team": "Johnson Central",
-      "record": "33-14",
+      "record": "31-14",
       "regional_place": 2,
       "state_place": null
     },
@@ -833,9 +806,14 @@
     }
   ],
   "career_record": {
-    "wins": 136,
+    "wins": 129,
     "losses": 46,
-    "win_pct": 0.747
+    "win_pct": 0.737
   },
-  "profile_generated_at": "2026-04-16"
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  },
+  "profile_generated_at": "2026-09-21"
 }

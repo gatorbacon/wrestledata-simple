@@ -5,10 +5,15 @@
   "team_slug": "frederick_douglass",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
-    "overall": "0-0",
+    "overall": "0-4",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -37,6 +42,22 @@
   "match_list": [
     {
       "date": "2022-12-17",
+      "opponent_id": "20169822132",
+      "opponent_career_id": "career_003476",
+      "opponent_name": "Mark Burns",
+      "opponent_team": "Western Hills",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:58",
+      "event": "vs. Western Hills"
+    },
+    {
+      "date": "2022-12-17",
       "opponent_id": "20568464132",
       "opponent_career_id": "career_006527",
       "opponent_name": "Aaron Goff",
@@ -49,23 +70,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Frederick Douglass B"
-    },
-    {
-      "date": "2022-12-17",
-      "opponent_id": "20955951132",
-      "opponent_career_id": "career_007509",
-      "opponent_name": "Zac Koger",
-      "opponent_team": "Somerset",
-      "opponent_team_rank": null,
-      "opponent_weight": 285,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Frederick Douglass B"
+      "event": "vs. Nelson County"
     },
     {
       "date": "2022-12-17",
@@ -81,14 +86,14 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Frederick Douglass B"
+      "event": "vs. Tates Creek"
     },
     {
       "date": "2022-12-17",
-      "opponent_id": "20169822132",
-      "opponent_career_id": "career_003476",
-      "opponent_name": "Mark Burns",
-      "opponent_team": "Western Hills",
+      "opponent_id": "20955951132",
+      "opponent_career_id": "career_007509",
+      "opponent_name": "Zac Koger",
+      "opponent_team": "Somerset",
       "opponent_team_rank": null,
       "opponent_weight": 285,
       "opponent_rank": null,
@@ -96,8 +101,8 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:58",
-      "event": "vs. Frederick Douglass B"
+      "duration": "0:00",
+      "event": "vs. Somerset"
     }
   ],
   "career": {
@@ -112,10 +117,15 @@
       "season": 2023,
       "grade": 10,
       "team": "Frederick Douglass",
-      "record": "0-0",
+      "record": "0-4",
       "regional_place": null,
       "state_place": null
     }
   ],
-  "profile_generated_at": "2026-04-16"
+  "career_record": {
+    "wins": 0,
+    "losses": 4,
+    "win_pct": 0.0
+  },
+  "profile_generated_at": "2026-09-21"
 }

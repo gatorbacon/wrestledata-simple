@@ -5,10 +5,15 @@
   "team_slug": "ohio_county",
   "team_rank": null,
   "weight_class": 157,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2022,
   "current_rank": null,
   "record": {
-    "overall": "33-18",
+    "overall": "34-19",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.917,
-    "bonus_rate": 0.958,
+    "pin_rate": 0.92,
+    "bonus_rate": 0.96,
     "majors": 0,
     "techs": 1,
-    "pins": 22
+    "pins": 23
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -145,7 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:17",
-      "event": "vs. Ohio County"
+      "event": "vs. Daviess County"
     },
     {
       "date": "2022-02-01",
@@ -353,7 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:49",
-      "event": "vs. Ohio County"
+      "event": "vs. Bardstown"
     },
     {
       "date": "2022-01-11",
@@ -369,7 +374,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:03",
-      "event": "vs. Ohio County"
+      "event": "vs. Daviess County"
+    },
+    {
+      "date": "2022-01-04",
+      "opponent_id": "16837540132",
+      "opponent_career_id": "career_007208",
+      "opponent_name": "Luke Watanabe",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:41",
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2022-01-04",
@@ -388,54 +409,6 @@
       "event": "vs. John Hardin"
     },
     {
-      "date": "2022-01-04",
-      "opponent_id": "16837540132",
-      "opponent_career_id": "career_007208",
-      "opponent_name": "Luke Watanabe",
-      "opponent_team": "Central Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:41",
-      "event": "vs. Ohio County"
-    },
-    {
-      "date": "2021-12-30",
-      "opponent_id": "17114762132",
-      "opponent_career_id": "career_001272",
-      "opponent_name": "Jaylin Littleton",
-      "opponent_team": "Hopkinsville",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:10",
-      "event": "vs. Ohio County"
-    },
-    {
-      "date": "2021-12-30",
-      "opponent_id": "17242331132",
-      "opponent_career_id": "career_001680",
-      "opponent_name": "isaiah harris",
-      "opponent_team": "McCracken County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:19",
-      "event": "vs. Ohio County"
-    },
-    {
       "date": "2021-12-30",
       "opponent_id": "16820995132",
       "opponent_career_id": "career_008336",
@@ -449,7 +422,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:54",
-      "event": "vs. Ohio County"
+      "event": "vs. Apollo High School"
     },
     {
       "date": "2021-12-30",
@@ -465,7 +438,55 @@
       "method": "FALL",
       "score": null,
       "duration": "0:58",
-      "event": "vs. Ohio County"
+      "event": "vs. Christian County"
+    },
+    {
+      "date": "2021-12-30",
+      "opponent_id": "17114762132",
+      "opponent_career_id": "career_001272",
+      "opponent_name": "Jaylin Littleton",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:10",
+      "event": "vs. Hopkinsville"
+    },
+    {
+      "date": "2021-12-30",
+      "opponent_id": "17114762132",
+      "opponent_career_id": "career_001272",
+      "opponent_name": "Jaylin Littleton",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:08",
+      "event": "vs. Hopkinsville"
+    },
+    {
+      "date": "2021-12-30",
+      "opponent_id": "17242331132",
+      "opponent_career_id": "career_001680",
+      "opponent_name": "isaiah harris",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:19",
+      "event": "vs. McCracken County"
     },
     {
       "date": "2021-12-30",
@@ -497,7 +518,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:26",
-      "event": "vs. Ohio County"
+      "event": "vs. Meade County"
     },
     {
       "date": "2021-12-22",
@@ -513,7 +534,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:33",
-      "event": "vs. Ohio County"
+      "event": "vs. North Hardin"
     },
     {
       "date": "2021-12-22",
@@ -560,24 +581,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Ohio County"
-    },
-    {
-      "date": "2021-12-21",
-      "opponent_id": "18022946132",
-      "opponent_career_id": "career_008647",
-      "opponent_name": "Xavier Tello",
-      "opponent_team": "Wayne County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:51",
-      "event": "vs. Wayne County"
+      "duration": "0:29",
+      "event": "vs. Boyle County"
     },
     {
       "date": "2021-12-21",
@@ -592,8 +597,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Ohio County"
+      "duration": "1:04",
+      "event": "vs. Central"
     },
     {
       "date": "2021-12-21",
@@ -609,7 +614,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:42",
-      "event": "vs. Ohio County"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2021-12-21",
@@ -628,6 +633,22 @@
       "event": "vs. Fort Knox"
     },
     {
+      "date": "2021-12-21",
+      "opponent_id": "18022946132",
+      "opponent_career_id": "career_008647",
+      "opponent_name": "Xavier Tello",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:51",
+      "event": "vs. Wayne County"
+    },
+    {
       "date": "2021-12-18",
       "opponent_id": "17152630132",
       "opponent_career_id": "career_007717",
@@ -641,7 +662,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:36",
-      "event": "vs. Ohio County"
+      "event": "vs. Caldwell County"
     },
     {
       "date": "2021-12-18",
@@ -657,7 +678,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:58",
-      "event": "vs. Ohio County"
+      "event": "vs. Hopkinsville"
     },
     {
       "date": "2021-12-18",
@@ -673,7 +694,7 @@
       "method": "DEC",
       "score": "12-11",
       "duration": "7:00",
-      "event": "vs. Ohio County"
+      "event": "vs. McCracken County"
     },
     {
       "date": "2021-12-18",
@@ -709,22 +730,6 @@
     },
     {
       "date": "2021-12-11",
-      "opponent_id": "16954046132",
-      "opponent_career_id": "career_006141",
-      "opponent_name": "Michael Reese",
-      "opponent_team": "Pleasure Ridge Park",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "MD",
-      "score": "18-5",
-      "duration": "7:00",
-      "event": "King of the Bluegrass @ Fairdale"
-    },
-    {
-      "date": "2021-12-11",
       "opponent_id": "16770667132",
       "opponent_career_id": "career_005866",
       "opponent_name": "Jerome Johnson",
@@ -756,6 +761,22 @@
       "event": "King of the Bluegrass @ Fairdale"
     },
     {
+      "date": "2021-12-11",
+      "opponent_id": "16954046132",
+      "opponent_career_id": "career_006141",
+      "opponent_name": "Michael Reese",
+      "opponent_team": "Pleasure Ridge Park",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MD",
+      "score": "18-5",
+      "duration": "7:00",
+      "event": "King of the Bluegrass @ Fairdale"
+    },
+    {
       "date": "2021-12-09",
       "opponent_id": "17463416132",
       "opponent_career_id": "career_006884",
@@ -769,7 +790,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:37",
-      "event": "vs. Ohio County"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2021-12-09",
@@ -789,19 +810,35 @@
     },
     {
       "date": "2021-12-04",
-      "opponent_id": "16748644132",
-      "opponent_career_id": "career_008102",
-      "opponent_name": "Tyler Williams",
-      "opponent_team": "Spencer County",
+      "opponent_id": "16978972132",
+      "opponent_career_id": "career_008371",
+      "opponent_name": "Christian McCintosh",
+      "opponent_team": "Calloway County",
       "opponent_team_rank": null,
-      "opponent_weight": 138,
+      "opponent_weight": 157,
       "opponent_rank": null,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:55",
-      "event": "vs. Spencer County"
+      "duration": "4:19",
+      "event": "vs. Calloway County"
+    },
+    {
+      "date": "2021-12-04",
+      "opponent_id": "17066789132",
+      "opponent_career_id": "career_007870",
+      "opponent_name": "Conner Geise",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:07",
+      "event": "vs. Meade County"
     },
     {
       "date": "2021-12-04",
@@ -817,7 +854,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:48",
-      "event": "vs. Ohio County"
+      "event": "vs. North Hardin"
     },
     {
       "date": "2021-12-04",
@@ -837,35 +874,19 @@
     },
     {
       "date": "2021-12-04",
-      "opponent_id": "16978972132",
-      "opponent_career_id": "career_008371",
-      "opponent_name": "Christian McCintosh",
-      "opponent_team": "Calloway County",
+      "opponent_id": "16748644132",
+      "opponent_career_id": "career_008102",
+      "opponent_name": "Tyler Williams",
+      "opponent_team": "Spencer County",
       "opponent_team_rank": null,
-      "opponent_weight": 157,
+      "opponent_weight": 138,
       "opponent_rank": null,
       "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "4:19",
-      "event": "vs. Ohio County"
-    },
-    {
-      "date": "2021-12-04",
-      "opponent_id": "17066789132",
-      "opponent_career_id": "career_007870",
-      "opponent_name": "Conner Geise",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:07",
-      "event": "vs. Ohio County"
+      "duration": "0:55",
+      "event": "vs. Spencer County"
     }
   ],
   "career": {
@@ -884,7 +905,7 @@
       "season": 2024,
       "grade": 12,
       "team": "Ohio County",
-      "record": "33-11",
+      "record": "33-12",
       "regional_place": 3,
       "state_place": null
     },
@@ -900,7 +921,7 @@
       "season": 2022,
       "grade": 10,
       "team": "Ohio County",
-      "record": "33-18",
+      "record": "34-19",
       "regional_place": 4,
       "state_place": null
     },
@@ -922,9 +943,9 @@
     }
   ],
   "career_record": {
-    "wins": 140,
-    "losses": 59,
-    "win_pct": 0.704
+    "wins": 141,
+    "losses": 61,
+    "win_pct": 0.698
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

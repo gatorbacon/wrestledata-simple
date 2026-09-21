@@ -5,6 +5,11 @@
   "team_slug": "boyle_county",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
@@ -53,6 +58,22 @@
     },
     {
       "date": "2020-01-08",
+      "opponent_id": "10762352132",
+      "opponent_career_id": "career_005987",
+      "opponent_name": "Malachi Young",
+      "opponent_team": "Great Crossing High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:07",
+      "event": "vs. Great Crossing High School"
+    },
+    {
+      "date": "2020-01-08",
       "opponent_id": "10679517132",
       "opponent_career_id": "career_009247",
       "opponent_name": "Ethan Riordan",
@@ -68,20 +89,20 @@
       "event": "vs. Oldham County"
     },
     {
-      "date": "2020-01-08",
-      "opponent_id": "10762352132",
-      "opponent_career_id": "career_005987",
-      "opponent_name": "Malachi Young",
-      "opponent_team": "Great Crossing High School",
+      "date": "2019-12-27",
+      "opponent_id": "11044072132",
+      "opponent_career_id": "career_005837",
+      "opponent_name": "Mason Shephard",
+      "opponent_team": "Apollo High School",
       "opponent_team_rank": null,
-      "opponent_weight": 132,
+      "opponent_weight": 138,
       "opponent_rank": null,
       "weight_class": "132",
-      "result": "L",
+      "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "3:07",
-      "event": "vs. Great Crossing High School"
+      "duration": "0:00",
+      "event": "vs. Apollo High School"
     },
     {
       "date": "2019-12-27",
@@ -132,22 +153,6 @@
       "event": "vs. Meade County"
     },
     {
-      "date": "2019-12-27",
-      "opponent_id": "11044072132",
-      "opponent_career_id": "career_005837",
-      "opponent_name": "Mason Shephard",
-      "opponent_team": "Apollo High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Boyle County"
-    },
-    {
       "date": "2019-12-14",
       "opponent_id": "10502908132",
       "opponent_career_id": "career_007235",
@@ -196,7 +201,7 @@
       "season": 2024,
       "grade": 12,
       "team": "Boyle County",
-      "record": "44-9",
+      "record": "45-9",
       "regional_place": 2,
       "state_place": 8
     },
@@ -204,7 +209,7 @@
       "season": 2023,
       "grade": 11,
       "team": "Boyle County",
-      "record": "44-13",
+      "record": "46-13",
       "regional_place": 1,
       "state_place": null
     },
@@ -212,7 +217,7 @@
       "season": 2022,
       "grade": 10,
       "team": "Boyle County",
-      "record": "36-10",
+      "record": "35-10",
       "regional_place": 2,
       "state_place": null
     },
@@ -220,7 +225,7 @@
       "season": 2021,
       "grade": 9,
       "team": "Boyle County",
-      "record": "15-10",
+      "record": "14-10",
       "regional_place": null,
       "state_place": null
     },
@@ -234,9 +239,14 @@
     }
   ],
   "career_record": {
-    "wins": 142,
+    "wins": 143,
     "losses": 48,
-    "win_pct": 0.747
+    "win_pct": 0.749
   },
-  "profile_generated_at": "2026-04-16"
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  },
+  "profile_generated_at": "2026-09-21"
 }

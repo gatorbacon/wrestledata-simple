@@ -5,6 +5,11 @@
   "team_slug": "bell_county",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.955,
-    "bonus_rate": 0.955,
+    "pin_rate": 0.977,
+    "bonus_rate": 0.977,
     "majors": 0,
     "techs": 0,
     "pins": 42
@@ -293,19 +298,19 @@
     },
     {
       "date": "2023-01-14",
-      "opponent_id": "OUTSTATE_6abc6a5a6886",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Danville",
+      "opponent_id": "20955940132",
+      "opponent_career_id": "career_007508",
+      "opponent_name": "Brayden McCrystal",
+      "opponent_team": "Somerset",
       "opponent_team_rank": null,
-      "opponent_weight": null,
+      "opponent_weight": 157,
       "opponent_rank": null,
       "weight_class": "157",
       "result": "W",
-      "method": "FF",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
-      "event": "vs. Danville"
+      "duration": "1:13",
+      "event": "vs. Somerset"
     },
     {
       "date": "2023-01-14",
@@ -325,19 +330,19 @@
     },
     {
       "date": "2023-01-14",
-      "opponent_id": "20955940132",
-      "opponent_career_id": "career_007508",
-      "opponent_name": "Brayden McCrystal",
-      "opponent_team": "Somerset",
+      "opponent_id": "OUTSTATE_6abc6a5a6886",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Danville",
       "opponent_team_rank": null,
-      "opponent_weight": 157,
+      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "157",
       "result": "W",
-      "method": "FALL",
+      "method": "FF",
       "score": null,
-      "duration": "1:13",
-      "event": "vs. Somerset"
+      "duration": "7:00",
+      "event": "vs. Danville"
     },
     {
       "date": "2023-01-13",
@@ -421,22 +426,6 @@
     },
     {
       "date": "2023-01-07",
-      "opponent_id": "OUTSTATE_9f1201b2c847",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Cocke County",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Cocke County"
-    },
-    {
-      "date": "2023-01-07",
       "opponent_id": "OUTSTATE_3c417c4e2f1a",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -450,6 +439,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Claiborne"
+    },
+    {
+      "date": "2023-01-07",
+      "opponent_id": "OUTSTATE_9f1201b2c847",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Cocke County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Cocke County"
     },
     {
       "date": "2023-01-07",
@@ -565,22 +570,6 @@
     },
     {
       "date": "2022-12-20",
-      "opponent_id": "OUTSTATE_8c2dc60868b7",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Barbourville",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Barbourville"
-    },
-    {
-      "date": "2022-12-20",
       "opponent_id": "20400260132",
       "opponent_career_id": "career_000594",
       "opponent_name": "Maddox Sizemore",
@@ -629,22 +618,6 @@
     },
     {
       "date": "2022-12-20",
-      "opponent_id": "20863984132",
-      "opponent_career_id": "career_001468",
-      "opponent_name": "Andrew Meade",
-      "opponent_team": "Letcher County Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:04",
-      "event": "vs. Letcher County Central"
-    },
-    {
-      "date": "2022-12-20",
       "opponent_id": "20668059132",
       "opponent_career_id": "career_003559",
       "opponent_name": "Austin Clark",
@@ -660,20 +633,36 @@
       "event": "vs. Floyd Central"
     },
     {
-      "date": "2022-12-17",
-      "opponent_id": "20503725132",
-      "opponent_career_id": "career_003172",
-      "opponent_name": "Aidan Caudill",
-      "opponent_team": "Eastern",
+      "date": "2022-12-20",
+      "opponent_id": "OUTSTATE_8c2dc60868b7",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Barbourville",
       "opponent_team_rank": null,
-      "opponent_weight": 138,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Barbourville"
+    },
+    {
+      "date": "2022-12-20",
+      "opponent_id": "20863984132",
+      "opponent_career_id": "career_001468",
+      "opponent_name": "Andrew Meade",
+      "opponent_team": "Letcher County Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
       "opponent_rank": null,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:34",
-      "event": "vs. Eastern"
+      "duration": "1:04",
+      "event": "vs. Letcher County Central"
     },
     {
       "date": "2022-12-17",
@@ -689,7 +678,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:55",
-      "event": "vs. Bell County"
+      "event": "vs. Atherton"
     },
     {
       "date": "2022-12-17",
@@ -725,6 +714,22 @@
     },
     {
       "date": "2022-12-17",
+      "opponent_id": "20503725132",
+      "opponent_career_id": "career_003172",
+      "opponent_name": "Aidan Caudill",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:34",
+      "event": "vs. Eastern"
+    },
+    {
+      "date": "2022-12-17",
       "opponent_id": "20500452132",
       "opponent_career_id": "career_007616",
       "opponent_name": "Killian Rairdon",
@@ -738,6 +743,22 @@
       "score": null,
       "duration": "1:18",
       "event": "vs. Meade County"
+    },
+    {
+      "date": "2022-12-14",
+      "opponent_id": "20635894132",
+      "opponent_career_id": null,
+      "opponent_name": "Jake Mullins",
+      "opponent_team": "Lee",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:54",
+      "event": "vs. Lee"
     },
     {
       "date": "2022-12-14",
@@ -772,20 +793,20 @@
       "event": "vs. Harlan County"
     },
     {
-      "date": "2022-12-14",
-      "opponent_id": "20635894132",
-      "opponent_career_id": null,
-      "opponent_name": "Jake Mullins",
-      "opponent_team": "Lee",
+      "date": "2022-12-10",
+      "opponent_id": "20701780132",
+      "opponent_career_id": "career_003693",
+      "opponent_name": "Aaden Sanchez",
+      "opponent_team": "Knox Central High School",
       "opponent_team_rank": null,
-      "opponent_weight": null,
+      "opponent_weight": 157,
       "opponent_rank": null,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:54",
-      "event": "vs. Lee"
+      "duration": "1:24",
+      "event": "Taylor Family Chiropractic Log Mountain Rumble"
     },
     {
       "date": "2022-12-10",
@@ -852,22 +873,6 @@
       "event": "Taylor Family Chiropractic Log Mountain Rumble"
     },
     {
-      "date": "2022-12-10",
-      "opponent_id": "20701780132",
-      "opponent_career_id": "career_003693",
-      "opponent_name": "Aaden Sanchez",
-      "opponent_team": "Knox Central High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:24",
-      "event": "Taylor Family Chiropractic Log Mountain Rumble"
-    },
-    {
       "date": "2022-12-07",
       "opponent_id": "20720539132",
       "opponent_career_id": "career_007647",
@@ -901,22 +906,6 @@
     },
     {
       "date": "2022-12-03",
-      "opponent_id": "OUTSTATE_e154a2d4e8e0",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "East Jessamine",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. East Jessamine"
-    },
-    {
-      "date": "2022-12-03",
       "opponent_id": "20424837132",
       "opponent_career_id": "career_007100",
       "opponent_name": "David Shelton",
@@ -930,6 +919,22 @@
       "score": null,
       "duration": "0:17",
       "event": "vs. Tates Creek"
+    },
+    {
+      "date": "2022-12-03",
+      "opponent_id": "OUTSTATE_e154a2d4e8e0",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "East Jessamine",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. East Jessamine"
     },
     {
       "date": "2022-12-03",
@@ -1077,7 +1082,7 @@
       "season": 2020,
       "grade": 8,
       "team": "Perry County Central",
-      "record": "33-9",
+      "record": "31-10",
       "regional_place": 2,
       "state_place": null
     },
@@ -1091,9 +1096,9 @@
     }
   ],
   "career_record": {
-    "wins": 219,
-    "losses": 52,
-    "win_pct": 0.808
+    "wins": 217,
+    "losses": 53,
+    "win_pct": 0.804
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

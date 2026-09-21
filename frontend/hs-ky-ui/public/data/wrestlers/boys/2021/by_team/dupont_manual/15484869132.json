@@ -5,6 +5,11 @@
   "team_slug": "dupont_manual",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2021,
   "current_rank": null,
   "record": {
@@ -129,7 +134,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Dupont Manual"
+      "event": "vs. Bullitt Central"
     },
     {
       "date": "2021-02-27",
@@ -181,6 +186,22 @@
     },
     {
       "date": "2021-02-03",
+      "opponent_id": "15799422132",
+      "opponent_career_id": "career_008040",
+      "opponent_name": "Andre Jackson",
+      "opponent_team": "Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "MD",
+      "score": "15-6",
+      "duration": "7:00",
+      "event": "vs. Central"
+    },
+    {
+      "date": "2021-02-03",
       "opponent_id": "15639263132",
       "opponent_career_id": "career_008799",
       "opponent_name": "Blade Sotelo",
@@ -210,22 +231,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Western"
-    },
-    {
-      "date": "2021-02-03",
-      "opponent_id": "15799422132",
-      "opponent_career_id": "career_008040",
-      "opponent_name": "Andre Jackson",
-      "opponent_team": "Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "MD",
-      "score": "15-6",
-      "duration": "7:00",
-      "event": "vs. Dupont Manual"
     }
   ],
   "career": {
@@ -250,5 +255,5 @@
     "losses": 7,
     "win_pct": 0.417
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

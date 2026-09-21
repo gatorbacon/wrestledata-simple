@@ -5,6 +5,11 @@
   "team_slug": "scott_county",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
@@ -24,7 +29,7 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 19
+    "pins": 20
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -148,6 +153,22 @@
       "event": "KHSAA First Round State Tournament 2"
     },
     {
+      "date": "2023-02-18",
+      "opponent_id": "20374560132",
+      "opponent_career_id": "career_006160",
+      "opponent_name": "Gaven Pugh",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:37",
+      "event": "KHSAA First Round State Tournament 2"
+    },
+    {
       "date": "2023-02-11",
       "opponent_id": "20308231132",
       "opponent_career_id": "career_006999",
@@ -197,22 +218,6 @@
     },
     {
       "date": "2023-02-04",
-      "opponent_id": "20263895132",
-      "opponent_career_id": "career_003682",
-      "opponent_name": "James Frazier",
-      "opponent_team": "Pleasure Ridge Park",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Mustang Classic @ NOHS"
-    },
-    {
-      "date": "2023-02-04",
       "opponent_id": "20494163132",
       "opponent_career_id": "career_006086",
       "opponent_name": "Bayden Wilkins",
@@ -257,6 +262,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:31",
+      "event": "Mustang Classic @ NOHS"
+    },
+    {
+      "date": "2023-02-04",
+      "opponent_id": "20263895132",
+      "opponent_career_id": "career_003682",
+      "opponent_name": "James Frazier",
+      "opponent_team": "Pleasure Ridge Park",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
       "event": "Mustang Classic @ NOHS"
     },
     {
@@ -513,7 +534,23 @@
       "method": "DEC",
       "score": "9-5",
       "duration": "7:00",
-      "event": "vs. Scott County"
+      "event": "vs. Bullitt Central"
+    },
+    {
+      "date": "2022-12-10",
+      "opponent_id": "20424760132",
+      "opponent_career_id": "career_006617",
+      "opponent_name": "Naser Eqal",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Tates Creek"
     },
     {
       "date": "2022-12-10",
@@ -564,22 +601,6 @@
       "event": "vs. Covington Catholic"
     },
     {
-      "date": "2022-12-10",
-      "opponent_id": "20424760132",
-      "opponent_career_id": "career_006617",
-      "opponent_name": "Naser Eqal",
-      "opponent_team": "Tates Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Tates Creek"
-    },
-    {
       "date": "2022-11-26",
       "opponent_id": "20311105132",
       "opponent_career_id": "career_005924",
@@ -613,6 +634,22 @@
     },
     {
       "date": "2022-11-26",
+      "opponent_id": "20249352132",
+      "opponent_career_id": "career_004278",
+      "opponent_name": "Jacob Gorden",
+      "opponent_team": "North Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:12",
+      "event": "Tommy Castle Classic"
+    },
+    {
+      "date": "2022-11-26",
       "opponent_id": "20550385132",
       "opponent_career_id": "career_003381",
       "opponent_name": "Charles Woodring",
@@ -642,22 +679,6 @@
       "score": null,
       "duration": "3:00",
       "event": "Tommy Castle Classic"
-    },
-    {
-      "date": "2022-11-26",
-      "opponent_id": "20249352132",
-      "opponent_career_id": "career_004278",
-      "opponent_name": "Jacob Gorden",
-      "opponent_team": "North Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:12",
-      "event": "Tommy Castle Classic"
     }
   ],
   "career": {
@@ -675,7 +696,7 @@
       "season": 2025,
       "grade": 12,
       "team": "Scott County",
-      "record": "36-12",
+      "record": "34-12",
       "regional_place": 4,
       "state_place": 5
     },
@@ -683,7 +704,7 @@
       "season": 2024,
       "grade": 11,
       "team": "Scott County",
-      "record": "31-17",
+      "record": "30-17",
       "regional_place": 3,
       "state_place": null
     },
@@ -699,15 +720,15 @@
       "season": 2022,
       "grade": 9,
       "team": "Scott County",
-      "record": "9-10",
+      "record": "9-8",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 99,
-    "losses": 56,
-    "win_pct": 0.639
+    "wins": 96,
+    "losses": 54,
+    "win_pct": 0.64
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

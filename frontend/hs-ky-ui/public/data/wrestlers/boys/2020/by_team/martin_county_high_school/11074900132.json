@@ -5,10 +5,15 @@
   "team_slug": "martin_county_high_school",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "7th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "9-9",
+    "overall": "7-9",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -111,7 +116,7 @@
       "weight_class": "132",
       "result": "W",
       "method": "MD",
-      "score": "11-3",
+      "score": "11-2",
       "duration": "7:00",
       "event": "KHSAA Region 8"
     },
@@ -149,6 +154,22 @@
     },
     {
       "date": "2020-01-25",
+      "opponent_id": "10661058132",
+      "opponent_career_id": "career_007808",
+      "opponent_name": "Alex Beam",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:19",
+      "event": "vs. Harrison County"
+    },
+    {
+      "date": "2020-01-25",
       "opponent_id": "10628038132",
       "opponent_career_id": "career_006163",
       "opponent_name": "Lee Felix",
@@ -162,22 +183,6 @@
       "score": "15-7",
       "duration": "7:00",
       "event": "vs. Mccreary Central"
-    },
-    {
-      "date": "2020-01-25",
-      "opponent_id": "10661058132",
-      "opponent_career_id": "career_007808",
-      "opponent_name": "Alex Beam",
-      "opponent_team": "Harrison County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:19",
-      "event": "vs. Martin County High School"
     },
     {
       "date": "2019-12-21",
@@ -317,7 +322,7 @@
       "season": 2024,
       "grade": 11,
       "team": "Johnson Central",
-      "record": "28-11",
+      "record": "24-10",
       "regional_place": null,
       "state_place": null
     },
@@ -341,7 +346,7 @@
       "season": 2021,
       "grade": 8,
       "team": "Martin County High School",
-      "record": "2-3",
+      "record": "2-4",
       "regional_place": null,
       "state_place": null
     },
@@ -349,15 +354,20 @@
       "season": 2020,
       "grade": 7,
       "team": "Martin County High School",
-      "record": "9-9",
+      "record": "7-9",
       "regional_place": 4,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 128,
+    "wins": 122,
     "losses": 49,
-    "win_pct": 0.723
+    "win_pct": 0.713
   },
-  "profile_generated_at": "2026-04-16"
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  },
+  "profile_generated_at": "2026-09-21"
 }

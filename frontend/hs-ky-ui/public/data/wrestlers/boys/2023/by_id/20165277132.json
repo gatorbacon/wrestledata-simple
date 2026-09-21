@@ -5,6 +5,11 @@
   "team_slug": "bell_county",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.889,
-    "bonus_rate": 0.889,
+    "pin_rate": 0.895,
+    "bonus_rate": 0.895,
     "majors": 0,
     "techs": 0,
-    "pins": 16
+    "pins": 17
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -324,6 +329,22 @@
       "event": "vs. Union Co. (Girls)"
     },
     {
+      "date": "2023-01-07",
+      "opponent_id": "20310892132",
+      "opponent_career_id": null,
+      "opponent_name": "brianna cook",
+      "opponent_team": "Union Co. (Girls)",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:24",
+      "event": "vs. Union Co. (Girls)"
+    },
+    {
       "date": "2022-12-27",
       "opponent_id": "21843787132",
       "opponent_career_id": "career_002164",
@@ -370,6 +391,22 @@
       "score": null,
       "duration": "3:48",
       "event": "Hatfield & McCoy Ladies Tournament"
+    },
+    {
+      "date": "2022-12-20",
+      "opponent_id": "20402843132",
+      "opponent_career_id": "career_006950",
+      "opponent_name": "Molly Brewer",
+      "opponent_team": "Corbin",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Corbin"
     },
     {
       "date": "2022-12-20",
@@ -421,22 +458,6 @@
     },
     {
       "date": "2022-12-20",
-      "opponent_id": "20402843132",
-      "opponent_career_id": "career_006950",
-      "opponent_name": "Molly Brewer",
-      "opponent_team": "Corbin",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Corbin"
-    },
-    {
-      "date": "2022-12-20",
       "opponent_id": "OUTSTATE_8c2dc60868b7",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -469,38 +490,6 @@
     },
     {
       "date": "2022-12-17",
-      "opponent_id": "20504044132",
-      "opponent_career_id": "career_004053",
-      "opponent_name": "Dillon Stanley",
-      "opponent_team": "Eastern",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:12",
-      "event": "vs. Eastern"
-    },
-    {
-      "date": "2022-12-17",
-      "opponent_id": "20494162132",
-      "opponent_career_id": "career_004532",
-      "opponent_name": "Elijah St. John",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Meade County"
-    },
-    {
-      "date": "2022-12-17",
       "opponent_id": "20232721132",
       "opponent_career_id": "career_003488",
       "opponent_name": "Luke Jeziorski",
@@ -513,7 +502,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:32",
-      "event": "vs. Bell County"
+      "event": "vs. Atherton"
     },
     {
       "date": "2022-12-17",
@@ -546,6 +535,38 @@
       "score": null,
       "duration": "5:01",
       "event": "vs. Pleasure Ridge Park"
+    },
+    {
+      "date": "2022-12-17",
+      "opponent_id": "20504044132",
+      "opponent_career_id": "career_004053",
+      "opponent_name": "Dillon Stanley",
+      "opponent_team": "Eastern",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:12",
+      "event": "vs. Eastern"
+    },
+    {
+      "date": "2022-12-17",
+      "opponent_id": "20494162132",
+      "opponent_career_id": "career_004532",
+      "opponent_name": "Elijah St. John",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Meade County"
     },
     {
       "date": "2022-12-14",
@@ -681,15 +702,15 @@
       "season": 2022,
       "grade": 9,
       "team": "Bell County",
-      "record": "28-13",
+      "record": "27-13",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 56,
+    "wins": 55,
     "losses": 25,
-    "win_pct": 0.691
+    "win_pct": 0.688
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

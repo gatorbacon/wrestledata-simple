@@ -5,6 +5,11 @@
   "team_slug": "fort_campbell",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.917,
-    "bonus_rate": 0.917,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
     "pins": 11
@@ -113,7 +118,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Fort Campbell"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2023-01-16",
@@ -129,7 +134,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:45",
-      "event": "vs. Fort Campbell"
+      "event": "vs. Daviess County"
     },
     {
       "date": "2023-01-16",
@@ -261,6 +266,22 @@
     },
     {
       "date": "2022-12-28",
+      "opponent_id": "20260358132",
+      "opponent_career_id": "career_007510",
+      "opponent_name": "Hunter Mosley",
+      "opponent_team": "South Warren High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Fort Campbell Girls Tournament"
+    },
+    {
+      "date": "2022-12-28",
       "opponent_id": "20572111132",
       "opponent_career_id": "career_007621",
       "opponent_name": "Eleyna Wood",
@@ -341,22 +362,6 @@
     },
     {
       "date": "2022-12-16",
-      "opponent_id": "20284862132",
-      "opponent_career_id": null,
-      "opponent_name": "Zammy Okoli",
-      "opponent_team": "Woodward Academy",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "Girls 126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:24",
-      "event": "vs. Woodward Academy"
-    },
-    {
-      "date": "2022-12-16",
       "opponent_id": "20167575132",
       "opponent_career_id": null,
       "opponent_name": "Elyse Poloni",
@@ -386,6 +391,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Tullahoma (Girls)"
+    },
+    {
+      "date": "2022-12-16",
+      "opponent_id": "20284862132",
+      "opponent_career_id": null,
+      "opponent_name": "Zammy Okoli",
+      "opponent_team": "Woodward Academy",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "Girls 126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:24",
+      "event": "vs. Woodward Academy"
     },
     {
       "date": "2022-12-10",
@@ -474,5 +495,5 @@
     "losses": 13,
     "win_pct": 0.519
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

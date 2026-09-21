@@ -5,10 +5,15 @@
   "team_slug": "corbin",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
-    "overall": "7-14",
+    "overall": "9-14",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -101,6 +106,22 @@
     },
     {
       "date": "2023-01-21",
+      "opponent_id": "20246496132",
+      "opponent_career_id": "career_006906",
+      "opponent_name": "Karleigh Oliver",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Harrison County Fillies Invitational (new)"
+    },
+    {
+      "date": "2023-01-21",
       "opponent_id": "20163672132",
       "opponent_career_id": "career_006196",
       "opponent_name": "Eden Doerr",
@@ -123,22 +144,6 @@
       "opponent_team": "Danville",
       "opponent_team_rank": null,
       "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Harrison County Fillies Invitational (new)"
-    },
-    {
-      "date": "2023-01-21",
-      "opponent_id": "20246496132",
-      "opponent_career_id": "career_006906",
-      "opponent_name": "Karleigh Oliver",
-      "opponent_team": "Taylor County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
       "opponent_rank": null,
       "weight_class": "144",
       "result": "L",
@@ -177,7 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:45",
-      "event": "vs. Corbin"
+      "event": "vs. Bell County"
     },
     {
       "date": "2022-12-20",
@@ -193,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Corbin"
+      "event": "vs. Bell County"
     },
     {
       "date": "2022-12-20",
@@ -210,22 +215,6 @@
       "score": null,
       "duration": "0:55",
       "event": "vs. Harlan County"
-    },
-    {
-      "date": "2022-12-17",
-      "opponent_id": "20163672132",
-      "opponent_career_id": "career_006196",
-      "opponent_name": "Eden Doerr",
-      "opponent_team": "Taylor County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:20",
-      "event": "2nd Annual Cardinal Clash Ladies"
     },
     {
       "date": "2022-12-17",
@@ -276,36 +265,20 @@
       "event": "2nd Annual Cardinal Clash Ladies"
     },
     {
-      "date": "2022-12-10",
-      "opponent_id": "OUTSTATE_51e78208cb1d",
-      "opponent_career_id": null,
-      "opponent_name": "Valora Sears",
-      "opponent_team": "Whitley County",
+      "date": "2022-12-17",
+      "opponent_id": "20163672132",
+      "opponent_career_id": "career_006196",
+      "opponent_name": "Eden Doerr",
+      "opponent_team": "Taylor County",
       "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "Taylor Family Chiropractic Log Mountain Rumble"
-    },
-    {
-      "date": "2022-12-10",
-      "opponent_id": "21145819132",
-      "opponent_career_id": "career_006990",
-      "opponent_name": "Alexis Wallace",
-      "opponent_team": "Harlan County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
+      "opponent_weight": 144,
       "opponent_rank": null,
       "weight_class": "150",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:36",
-      "event": "Taylor Family Chiropractic Log Mountain Rumble"
+      "duration": "0:20",
+      "event": "2nd Annual Cardinal Clash Ladies"
     },
     {
       "date": "2022-12-10",
@@ -340,6 +313,54 @@
       "event": "Taylor Family Chiropractic Log Mountain Rumble"
     },
     {
+      "date": "2022-12-10",
+      "opponent_id": "OUTSTATE_51e78208cb1d",
+      "opponent_career_id": null,
+      "opponent_name": "Valora Sears",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Taylor Family Chiropractic Log Mountain Rumble"
+    },
+    {
+      "date": "2022-12-10",
+      "opponent_id": "OUTSTATE_51e78208cb1d",
+      "opponent_career_id": null,
+      "opponent_name": "Valora Sears",
+      "opponent_team": "Whitley County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "152G",
+      "result": "L",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "Taylor Family Chiropractic Log Mountain Rumble"
+    },
+    {
+      "date": "2022-12-10",
+      "opponent_id": "21145819132",
+      "opponent_career_id": "career_006990",
+      "opponent_name": "Alexis Wallace",
+      "opponent_team": "Harlan County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:36",
+      "event": "Taylor Family Chiropractic Log Mountain Rumble"
+    },
+    {
       "date": "2022-11-29",
       "opponent_id": "20183649132",
       "opponent_career_id": "career_000166",
@@ -353,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:15",
-      "event": "vs. Corbin"
+      "event": "vs. Bell County"
     },
     {
       "date": "2022-11-29",
@@ -369,7 +390,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:50",
-      "event": "vs. Corbin"
+      "event": "vs. Bell County"
     },
     {
       "date": "2022-11-26",
@@ -400,15 +421,15 @@
       "season": 2023,
       "grade": 8,
       "team": "Corbin",
-      "record": "7-14",
+      "record": "9-14",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 7,
+    "wins": 9,
     "losses": 14,
-    "win_pct": 0.333
+    "win_pct": 0.391
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

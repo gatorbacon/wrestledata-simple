@@ -5,6 +5,11 @@
   "team_slug": "bell_county",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2022,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.941,
-    "bonus_rate": 0.971,
+    "pin_rate": 0.971,
+    "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 32
+    "pins": 33
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -293,38 +298,6 @@
     },
     {
       "date": "2022-01-13",
-      "opponent_id": "16971021132",
-      "opponent_career_id": "career_002154",
-      "opponent_name": "Keaton Blankenship",
-      "opponent_team": "Phelps",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:42",
-      "event": "vs. Phelps"
-    },
-    {
-      "date": "2022-01-13",
-      "opponent_id": "17971267132",
-      "opponent_career_id": "career_001108",
-      "opponent_name": "Ethan Williams",
-      "opponent_team": "Harlan County",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Harlan County"
-    },
-    {
-      "date": "2022-01-13",
       "opponent_id": "17369876132",
       "opponent_career_id": "career_008153",
       "opponent_name": "William Slone",
@@ -354,6 +327,38 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Phelps"
+    },
+    {
+      "date": "2022-01-13",
+      "opponent_id": "16971021132",
+      "opponent_career_id": "career_002154",
+      "opponent_name": "Keaton Blankenship",
+      "opponent_team": "Phelps",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:42",
+      "event": "vs. Phelps"
+    },
+    {
+      "date": "2022-01-13",
+      "opponent_id": "17971267132",
+      "opponent_career_id": "career_001108",
+      "opponent_name": "Ethan Williams",
+      "opponent_team": "Harlan County",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Harlan County"
     },
     {
       "date": "2022-01-11",
@@ -513,7 +518,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Bell County"
+      "event": "vs. Belfry"
     },
     {
       "date": "2021-12-28",
@@ -529,7 +534,7 @@
       "method": "MFF",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Bell County"
+      "event": "vs. Belfry"
     },
     {
       "date": "2021-12-28",
@@ -597,22 +602,6 @@
     },
     {
       "date": "2021-12-21",
-      "opponent_id": "17693731132",
-      "opponent_career_id": "career_008151",
-      "opponent_name": "Dalton Crawford",
-      "opponent_team": "Knox Central High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:31",
-      "event": "vs. Knox Central High School"
-    },
-    {
-      "date": "2021-12-21",
       "opponent_id": "17369876132",
       "opponent_career_id": "career_008153",
       "opponent_name": "William Slone",
@@ -626,6 +615,22 @@
       "score": null,
       "duration": "0:35",
       "event": "vs. Letcher County Central"
+    },
+    {
+      "date": "2021-12-21",
+      "opponent_id": "17693731132",
+      "opponent_career_id": "career_008151",
+      "opponent_name": "Dalton Crawford",
+      "opponent_team": "Knox Central High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:31",
+      "event": "vs. Knox Central High School"
     },
     {
       "date": "2021-12-18",
@@ -789,6 +794,22 @@
     },
     {
       "date": "2021-12-02",
+      "opponent_id": "16837818132",
+      "opponent_career_id": "career_008159",
+      "opponent_name": "Eric Moore",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:10",
+      "event": "vs. Perry County Central"
+    },
+    {
+      "date": "2021-12-02",
       "opponent_id": "16837531132",
       "opponent_career_id": "career_007898",
       "opponent_name": "Tim Allen",
@@ -883,5 +904,5 @@
     "losses": 10,
     "win_pct": 0.859
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,6 +5,11 @@
   "team_slug": "montgomery_county",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
@@ -37,6 +42,22 @@
   "match_list": [
     {
       "date": "2020-01-18",
+      "opponent_id": "10889852132",
+      "opponent_career_id": "career_006455",
+      "opponent_name": "Jadaan Hackney",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-4",
+      "duration": "7:00",
+      "event": "vs. Henry Clay"
+    },
+    {
+      "date": "2020-01-18",
       "opponent_id": "11232532132",
       "opponent_career_id": "career_009639",
       "opponent_name": "Christian Skinker",
@@ -50,22 +71,6 @@
       "score": null,
       "duration": "0:52",
       "event": "vs. Paul Laurence Dunbar"
-    },
-    {
-      "date": "2020-01-18",
-      "opponent_id": "10889852132",
-      "opponent_career_id": "career_006455",
-      "opponent_name": "Jadaan Hackney",
-      "opponent_team": "Henry Clay",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "DEC",
-      "score": "6-4",
-      "duration": "7:00",
-      "event": "vs. Montgomery County"
     },
     {
       "date": "2020-01-18",
@@ -97,7 +102,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Montgomery County"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2019-12-14",
@@ -113,7 +118,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Montgomery County"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2019-12-03",
@@ -154,5 +159,5 @@
     "losses": 3,
     "win_pct": 0.5
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

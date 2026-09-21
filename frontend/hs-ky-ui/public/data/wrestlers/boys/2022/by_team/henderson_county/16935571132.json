@@ -5,6 +5,11 @@
   "team_slug": "henderson_county",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2022,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.833,
-    "bonus_rate": 0.833,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
     "pins": 5
@@ -81,7 +86,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Henderson County"
+      "event": "vs. Apollo High School"
     },
     {
       "date": "2021-12-29",
@@ -149,6 +154,22 @@
     },
     {
       "date": "2021-12-23",
+      "opponent_id": "16726486132",
+      "opponent_career_id": "career_002081",
+      "opponent_name": "Jimmy Mooney",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:39",
+      "event": "Christian County Invitational"
+    },
+    {
+      "date": "2021-12-23",
       "opponent_id": "16827847132",
       "opponent_career_id": "career_008271",
       "opponent_name": "Noah Vaughn",
@@ -164,11 +185,11 @@
       "event": "Christian County Invitational"
     },
     {
-      "date": "2021-12-23",
-      "opponent_id": "16726486132",
-      "opponent_career_id": "career_002081",
-      "opponent_name": "Jimmy Mooney",
-      "opponent_team": "Paducah Tilghman",
+      "date": "2021-12-22",
+      "opponent_id": "16820990132",
+      "opponent_career_id": "career_007652",
+      "opponent_name": "Jarrod Gray",
+      "opponent_team": "Apollo High School",
       "opponent_team_rank": null,
       "opponent_weight": 190,
       "opponent_rank": null,
@@ -176,8 +197,8 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:39",
-      "event": "Christian County Invitational"
+      "duration": "0:00",
+      "event": "vs. Apollo High School"
     },
     {
       "date": "2021-12-22",
@@ -196,22 +217,6 @@
       "event": "vs. McCracken County"
     },
     {
-      "date": "2021-12-22",
-      "opponent_id": "16820990132",
-      "opponent_career_id": "career_007652",
-      "opponent_name": "Jarrod Gray",
-      "opponent_team": "Apollo High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Henderson County"
-    },
-    {
       "date": "2021-12-18",
       "opponent_id": "16820985132",
       "opponent_career_id": "career_007651",
@@ -225,23 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Henderson County"
-    },
-    {
-      "date": "2021-12-18",
-      "opponent_id": "OUTSTATE_1650348d12fa",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Southridge",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Southridge"
+      "event": "vs. Apollo High School"
     },
     {
       "date": "2021-12-18",
@@ -257,7 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Henderson County"
+      "event": "vs. Calloway County"
     },
     {
       "date": "2021-12-18",
@@ -276,6 +265,22 @@
       "event": "vs. Tecumseh"
     },
     {
+      "date": "2021-12-18",
+      "opponent_id": "OUTSTATE_1650348d12fa",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Southridge",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Southridge"
+    },
+    {
       "date": "2021-11-30",
       "opponent_id": "16726287132",
       "opponent_career_id": "career_005918",
@@ -289,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:06",
-      "event": "vs. Henderson County"
+      "event": "vs. Daviess County"
     },
     {
       "date": "2021-11-24",
@@ -355,5 +360,5 @@
     "losses": 19,
     "win_pct": 0.441
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

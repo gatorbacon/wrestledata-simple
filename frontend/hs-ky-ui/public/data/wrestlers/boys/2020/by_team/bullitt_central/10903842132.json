@@ -5,10 +5,15 @@
   "team_slug": "bullitt_central",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "32-13",
+    "overall": "31-13",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.964,
-    "bonus_rate": 0.964,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
     "pins": 27
@@ -80,7 +85,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:29",
       "event": "KHSAA State Championships"
     },
     {
@@ -149,6 +154,22 @@
     },
     {
       "date": "2020-01-25",
+      "opponent_id": "10569262132",
+      "opponent_career_id": "career_009179",
+      "opponent_name": "Alexander Elmore",
+      "opponent_team": "Daviess County",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:02",
+      "event": "vs. Daviess County"
+    },
+    {
+      "date": "2020-01-25",
       "opponent_id": "10762455132",
       "opponent_career_id": "career_010177",
       "opponent_name": "Caleb Wittry",
@@ -194,22 +215,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Whitley County"
-    },
-    {
-      "date": "2020-01-25",
-      "opponent_id": "10569262132",
-      "opponent_career_id": "career_009179",
-      "opponent_name": "Alexander Elmore",
-      "opponent_team": "Daviess County",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:02",
-      "event": "vs. Daviess County"
     },
     {
       "date": "2020-01-15",
@@ -449,39 +454,39 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Bullitt Central"
+      "event": "vs. Bardstown"
     },
     {
       "date": "2019-12-14",
-      "opponent_id": "11365485132",
-      "opponent_career_id": "career_009100",
-      "opponent_name": "Christopher Palmer",
-      "opponent_team": "Owensboro",
+      "opponent_id": "10676171132",
+      "opponent_career_id": "career_008744",
+      "opponent_name": "Daniel Estrada",
+      "opponent_team": "Bryan Station",
       "opponent_team_rank": null,
-      "opponent_weight": 138,
+      "opponent_weight": 150,
       "opponent_rank": null,
-      "weight_class": "150",
+      "weight_class": "157",
       "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Owensboro"
+      "event": "vs. Bryan Station"
     },
     {
       "date": "2019-12-14",
-      "opponent_id": "11300069132",
-      "opponent_career_id": "career_009530",
-      "opponent_name": "John Lowe",
-      "opponent_team": "Franklin County",
+      "opponent_id": "10649161132",
+      "opponent_career_id": "career_008795",
+      "opponent_name": "Melvin Call",
+      "opponent_team": "East Jessamine",
       "opponent_team_rank": null,
-      "opponent_weight": 144,
+      "opponent_weight": 157,
       "opponent_rank": null,
-      "weight_class": "150",
+      "weight_class": "157",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Franklin County"
+      "event": "vs. East Jessamine"
     },
     {
       "date": "2019-12-14",
@@ -501,35 +506,35 @@
     },
     {
       "date": "2019-12-14",
-      "opponent_id": "10676171132",
-      "opponent_career_id": "career_008744",
-      "opponent_name": "Daniel Estrada",
-      "opponent_team": "Bryan Station",
+      "opponent_id": "11300069132",
+      "opponent_career_id": "career_009530",
+      "opponent_name": "John Lowe",
+      "opponent_team": "Franklin County",
       "opponent_team_rank": null,
-      "opponent_weight": 150,
+      "opponent_weight": 144,
       "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Bullitt Central"
-    },
-    {
-      "date": "2019-12-14",
-      "opponent_id": "10649161132",
-      "opponent_career_id": "career_008795",
-      "opponent_name": "Melvin Call",
-      "opponent_team": "East Jessamine",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
+      "weight_class": "150",
       "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. East Jessamine"
+      "event": "vs. Franklin County"
+    },
+    {
+      "date": "2019-12-14",
+      "opponent_id": "11365485132",
+      "opponent_career_id": "career_009100",
+      "opponent_name": "Christopher Palmer",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Owensboro"
     },
     {
       "date": "2019-12-07",
@@ -613,22 +618,6 @@
     },
     {
       "date": "2019-11-27",
-      "opponent_id": "11021677132",
-      "opponent_career_id": "career_009562",
-      "opponent_name": "Josh Phinazee",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. John Hardin"
-    },
-    {
-      "date": "2019-11-27",
       "opponent_id": "10886907132",
       "opponent_career_id": "career_009790",
       "opponent_name": "Keaton Estes",
@@ -645,6 +634,22 @@
     },
     {
       "date": "2019-11-27",
+      "opponent_id": "11021677132",
+      "opponent_career_id": "career_009562",
+      "opponent_name": "Josh Phinazee",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. John Hardin"
+    },
+    {
+      "date": "2019-11-27",
       "opponent_id": "10901322132",
       "opponent_career_id": "career_010285",
       "opponent_name": "Nicholas Albasanz",
@@ -658,6 +663,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Nelson County"
+    },
+    {
+      "date": "2019-11-23",
+      "opponent_id": "10549773132",
+      "opponent_career_id": "career_008787",
+      "opponent_name": "Zach Harper",
+      "opponent_team": "Desales",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Desales"
     },
     {
       "date": "2019-11-23",
@@ -720,24 +741,8 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "4:44",
       "event": "vs. Fern Creek"
-    },
-    {
-      "date": "2019-11-23",
-      "opponent_id": "10549773132",
-      "opponent_career_id": "career_008787",
-      "opponent_name": "Zach Harper",
-      "opponent_team": "Desales",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Desales"
     }
   ],
   "career": {
@@ -763,7 +768,7 @@
       "season": 2020,
       "grade": 11,
       "team": "Bullitt Central",
-      "record": "32-13",
+      "record": "31-13",
       "regional_place": 2,
       "state_place": null
     },
@@ -771,7 +776,7 @@
       "season": 2019,
       "grade": 10,
       "team": "Bullitt Central",
-      "record": "27-11",
+      "record": "27-12",
       "regional_place": 2,
       "state_place": null
     },
@@ -785,9 +790,9 @@
     }
   ],
   "career_record": {
-    "wins": 93,
-    "losses": 47,
-    "win_pct": 0.664
+    "wins": 92,
+    "losses": 48,
+    "win_pct": 0.657
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

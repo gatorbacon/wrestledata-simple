@@ -5,6 +5,11 @@
   "team_slug": "fort_campbell",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2022,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.9,
-    "bonus_rate": 0.9,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
     "pins": 9
@@ -35,22 +40,6 @@
     "worst_loss": null
   },
   "match_list": [
-    {
-      "date": "2022-02-12",
-      "opponent_id": "17114744132",
-      "opponent_career_id": "career_003243",
-      "opponent_name": "Caleb Shull",
-      "opponent_team": "Hopkinsville",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:33",
-      "event": "KHSAA Region 1"
-    },
     {
       "date": "2022-02-12",
       "opponent_id": "16852611132",
@@ -69,6 +58,22 @@
     },
     {
       "date": "2022-02-12",
+      "opponent_id": "16852611132",
+      "opponent_career_id": "career_006127",
+      "opponent_name": "Devon Carr",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:55",
+      "event": "KHSAA Region 1"
+    },
+    {
+      "date": "2022-02-12",
       "opponent_id": "16726487132",
       "opponent_career_id": "career_002077",
       "opponent_name": "Jack James",
@@ -81,6 +86,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:42",
+      "event": "KHSAA Region 1"
+    },
+    {
+      "date": "2022-02-12",
+      "opponent_id": "17114744132",
+      "opponent_career_id": "career_003243",
+      "opponent_name": "Caleb Shull",
+      "opponent_team": "Hopkinsville",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:33",
       "event": "KHSAA Region 1"
     },
     {
@@ -129,7 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:27",
-      "event": "vs. Fort Campbell"
+      "event": "vs. Daviess County"
     },
     {
       "date": "2022-01-28",
@@ -404,7 +425,7 @@
       "season": 2026,
       "grade": 12,
       "team": "Fort Campbell",
-      "record": "14-4",
+      "record": "13-5",
       "regional_place": null,
       "state_place": null
     },
@@ -412,7 +433,7 @@
       "season": 2025,
       "grade": 11,
       "team": "Fort Campbell",
-      "record": "41-7",
+      "record": "37-7",
       "regional_place": null,
       "state_place": null
     },
@@ -442,9 +463,9 @@
     }
   ],
   "career_record": {
-    "wins": 140,
-    "losses": 53,
-    "win_pct": 0.725
+    "wins": 135,
+    "losses": 54,
+    "win_pct": 0.714
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

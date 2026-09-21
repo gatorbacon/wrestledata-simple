@@ -5,6 +5,11 @@
   "team_slug": "atherton",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
@@ -229,6 +234,22 @@
     },
     {
       "date": "2019-11-23",
+      "opponent_id": "10712128132",
+      "opponent_career_id": "career_009030",
+      "opponent_name": "Dawson Waller",
+      "opponent_team": "Anderson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Anderson County"
+    },
+    {
+      "date": "2019-11-23",
       "opponent_id": "OUTSTATE_90f04a742fd4",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -261,38 +282,6 @@
     },
     {
       "date": "2019-11-23",
-      "opponent_id": "10629413132",
-      "opponent_career_id": "career_009679",
-      "opponent_name": "Noah Lynn",
-      "opponent_team": "Tates Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "DEC",
-      "score": "11-8",
-      "duration": "7:00",
-      "event": "vs. Tates Creek"
-    },
-    {
-      "date": "2019-11-23",
-      "opponent_id": "10712128132",
-      "opponent_career_id": "career_009030",
-      "opponent_name": "Dawson Waller",
-      "opponent_team": "Anderson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 285,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Atherton"
-    },
-    {
-      "date": "2019-11-23",
       "opponent_id": "11034948132",
       "opponent_career_id": "career_010314",
       "opponent_name": "Xander Boak",
@@ -306,6 +295,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. North Oldham"
+    },
+    {
+      "date": "2019-11-23",
+      "opponent_id": "10629413132",
+      "opponent_career_id": "career_009679",
+      "opponent_name": "Noah Lynn",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "DEC",
+      "score": "11-8",
+      "duration": "7:00",
+      "event": "vs. Tates Creek"
     }
   ],
   "career": {
@@ -339,5 +344,5 @@
     "losses": 23,
     "win_pct": 0.343
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

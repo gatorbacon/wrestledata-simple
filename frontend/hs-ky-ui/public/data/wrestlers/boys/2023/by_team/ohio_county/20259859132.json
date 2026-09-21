@@ -5,6 +5,11 @@
   "team_slug": "ohio_county",
   "team_rank": null,
   "weight_class": 157,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.75,
-    "bonus_rate": 0.795,
+    "pin_rate": 0.744,
+    "bonus_rate": 0.791,
     "majors": 1,
     "techs": 1,
-    "pins": 33
+    "pins": 32
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -101,6 +106,22 @@
     },
     {
       "date": "2023-02-11",
+      "opponent_id": "20321021132",
+      "opponent_career_id": "career_005820",
+      "opponent_name": "Roques Wrenn",
+      "opponent_team": "Fort Knox",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "SV-1",
+      "score": "5-4",
+      "duration": "8:15",
+      "event": "KHSAA Region 2"
+    },
+    {
+      "date": "2023-02-11",
       "opponent_id": "20306690132",
       "opponent_career_id": "career_006883",
       "opponent_name": "Christian Martin",
@@ -129,7 +150,7 @@
       "method": "DEC",
       "score": "10-4",
       "duration": "7:00",
-      "event": "vs. Ohio County"
+      "event": "vs. Boyd County"
     },
     {
       "date": "2023-01-28",
@@ -145,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:44",
-      "event": "vs. Ohio County"
+      "event": "vs. Fairdale"
     },
     {
       "date": "2023-01-28",
@@ -161,7 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:22",
-      "event": "vs. Ohio County"
+      "event": "vs. Johnson Central"
     },
     {
       "date": "2023-01-28",
@@ -421,22 +442,6 @@
     },
     {
       "date": "2022-12-29",
-      "opponent_id": "20373730132",
-      "opponent_career_id": "career_007378",
-      "opponent_name": "Carson Hearbst",
-      "opponent_team": "Madison Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "MD",
-      "score": "12-0",
-      "duration": "7:00",
-      "event": "Woodford County Invitational"
-    },
-    {
-      "date": "2022-12-29",
       "opponent_id": "20922449132",
       "opponent_career_id": "career_003038",
       "opponent_name": "Gabe Gonzalez",
@@ -464,6 +469,22 @@
       "result": "W",
       "method": "DEC",
       "score": "10-6",
+      "duration": "7:00",
+      "event": "Woodford County Invitational"
+    },
+    {
+      "date": "2022-12-29",
+      "opponent_id": "20373730132",
+      "opponent_career_id": "career_007378",
+      "opponent_name": "Carson Hearbst",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "MD",
+      "score": "16-7",
       "duration": "7:00",
       "event": "Woodford County Invitational"
     },
@@ -500,54 +521,6 @@
       "event": "Woodford County Invitational"
     },
     {
-      "date": "2022-12-21",
-      "opponent_id": "20165383132",
-      "opponent_career_id": "career_003096",
-      "opponent_name": "Jaimen Carey",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "DEC",
-      "score": "9-6",
-      "duration": "7:00",
-      "event": "vs. Ohio County"
-    },
-    {
-      "date": "2022-12-21",
-      "opponent_id": "20494162132",
-      "opponent_career_id": "career_004532",
-      "opponent_name": "Elijah St. John",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Ohio County"
-    },
-    {
-      "date": "2022-12-20",
-      "opponent_id": "20272818132",
-      "opponent_career_id": "career_007120",
-      "opponent_name": "Christian Floyd",
-      "opponent_team": "Wayne County",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "DEC",
-      "score": "13-10",
-      "duration": "7:00",
-      "event": "vs. Wayne County"
-    },
-    {
       "date": "2022-12-20",
       "opponent_id": "21551623132",
       "opponent_career_id": "career_007204",
@@ -561,7 +534,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:31",
-      "event": "vs. Ohio County"
+      "event": "vs. Central"
     },
     {
       "date": "2022-12-20",
@@ -577,7 +550,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:14",
-      "event": "vs. Ohio County"
+      "event": "vs. Nelson County"
     },
     {
       "date": "2022-12-20",
@@ -594,6 +567,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. North Hardin"
+    },
+    {
+      "date": "2022-12-20",
+      "opponent_id": "20272818132",
+      "opponent_career_id": "career_007120",
+      "opponent_name": "Christian Floyd",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "DEC",
+      "score": "13-10",
+      "duration": "7:00",
+      "event": "vs. Wayne County"
     },
     {
       "date": "2022-12-20",
@@ -737,7 +726,7 @@
       "method": "INJ",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Ohio County"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2022-12-15",
@@ -753,7 +742,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:18",
-      "event": "vs. Ohio County"
+      "event": "vs. John Hardin"
     },
     {
       "date": "2022-12-10",
@@ -768,8 +757,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Ohio County"
+      "duration": "0:47",
+      "event": "vs. Boyle County"
     },
     {
       "date": "2022-12-10",
@@ -785,7 +774,7 @@
       "method": "DEC",
       "score": "12-8",
       "duration": "7:00",
-      "event": "vs. Ohio County"
+      "event": "vs. Montgomery County"
     },
     {
       "date": "2022-12-10",
@@ -833,7 +822,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:32",
-      "event": "vs. Ohio County"
+      "event": "vs. Apollo High School"
     },
     {
       "date": "2022-12-08",
@@ -849,7 +838,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:07",
-      "event": "vs. Ohio County"
+      "event": "vs. Daviess County"
     },
     {
       "date": "2022-12-08",
@@ -865,7 +854,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:42",
-      "event": "vs. Ohio County"
+      "event": "vs. North Hardin"
     },
     {
       "date": "2022-12-03",
@@ -881,7 +870,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:27",
-      "event": "vs. Ohio County"
+      "event": "vs. Caldwell County"
     },
     {
       "date": "2022-12-03",
@@ -897,7 +886,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:13",
-      "event": "vs. Ohio County"
+      "event": "vs. John Hardin"
     },
     {
       "date": "2022-12-03",
@@ -913,7 +902,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:54",
-      "event": "vs. Ohio County"
+      "event": "vs. McCracken County"
     },
     {
       "date": "2022-12-03",
@@ -929,7 +918,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:52",
-      "event": "vs. Ohio County"
+      "event": "vs. Meade County"
     },
     {
       "date": "2022-12-03",
@@ -949,22 +938,6 @@
     },
     {
       "date": "2022-11-26",
-      "opponent_id": "20571489132",
-      "opponent_career_id": "career_004271",
-      "opponent_name": "Joshua Colonna",
-      "opponent_team": "North Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:40",
-      "event": "vs. Ohio County"
-    },
-    {
-      "date": "2022-11-26",
       "opponent_id": "20165385132",
       "opponent_career_id": "career_003095",
       "opponent_name": "Diego Montoya",
@@ -977,7 +950,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:48",
-      "event": "vs. Ohio County"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2022-11-26",
@@ -993,7 +966,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:46",
-      "event": "vs. Ohio County"
+      "event": "vs. Holmes"
+    },
+    {
+      "date": "2022-11-26",
+      "opponent_id": "20571489132",
+      "opponent_career_id": "career_004271",
+      "opponent_name": "Joshua Colonna",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:40",
+      "event": "vs. North Hardin"
     },
     {
       "date": "2022-11-26",
@@ -1044,7 +1033,7 @@
       "season": 2024,
       "grade": 12,
       "team": "Ohio County",
-      "record": "33-11",
+      "record": "33-12",
       "regional_place": 3,
       "state_place": null
     },
@@ -1060,7 +1049,7 @@
       "season": 2022,
       "grade": 10,
       "team": "Ohio County",
-      "record": "33-18",
+      "record": "34-19",
       "regional_place": 4,
       "state_place": null
     },
@@ -1082,9 +1071,9 @@
     }
   ],
   "career_record": {
-    "wins": 140,
-    "losses": 59,
-    "win_pct": 0.704
+    "wins": 141,
+    "losses": 61,
+    "win_pct": 0.698
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

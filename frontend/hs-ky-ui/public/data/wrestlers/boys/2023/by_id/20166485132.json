@@ -5,6 +5,11 @@
   "team_slug": "ashland_blazer",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
@@ -20,10 +25,10 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.75,
-    "bonus_rate": 0.889,
+    "pin_rate": 0.73,
+    "bonus_rate": 0.892,
     "majors": 2,
-    "techs": 3,
+    "techs": 4,
     "pins": 27
   },
   "opponent_breakdown": {
@@ -140,7 +145,7 @@
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
-      "weight_class": "120",
+      "weight_class": "",
       "result": "W",
       "method": "FALL",
       "score": null,
@@ -261,6 +266,22 @@
     },
     {
       "date": "2023-01-28",
+      "opponent_id": "22151229132",
+      "opponent_career_id": "career_002082",
+      "opponent_name": "Cedrick Stewart",
+      "opponent_team": "Paintsville",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:25",
+      "event": "vs. Paintsville"
+    },
+    {
+      "date": "2023-01-28",
       "opponent_id": "OUTSTATE_31fbdaf5d8b7",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -274,6 +295,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Tates Creek"
+    },
+    {
+      "date": "2023-01-28",
+      "opponent_id": "20380800132",
+      "opponent_career_id": "career_006831",
+      "opponent_name": "Elijah Burton",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:16",
+      "event": "vs. Perry County Central"
     },
     {
       "date": "2023-01-28",
@@ -292,36 +329,20 @@
       "event": "vs. Woodford County"
     },
     {
-      "date": "2023-01-28",
-      "opponent_id": "22151229132",
-      "opponent_career_id": "career_002082",
-      "opponent_name": "Cedrick Stewart",
-      "opponent_team": "Paintsville",
+      "date": "2023-01-21",
+      "opponent_id": "20624258132",
+      "opponent_career_id": null,
+      "opponent_name": "Dylan Moss",
+      "opponent_team": "INDIAN VALLEY",
       "opponent_team_rank": null,
-      "opponent_weight": 120,
+      "opponent_weight": 113,
       "opponent_rank": null,
-      "weight_class": "120",
+      "weight_class": "113",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "3:25",
-      "event": "vs. Paintsville"
-    },
-    {
-      "date": "2023-01-28",
-      "opponent_id": "20380800132",
-      "opponent_career_id": "career_006831",
-      "opponent_name": "Elijah Burton",
-      "opponent_team": "Perry County Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:16",
-      "event": "vs. Perry County Central"
+      "duration": "2:32",
+      "event": "John Deno Invitational"
     },
     {
       "date": "2023-01-21",
@@ -341,19 +362,19 @@
     },
     {
       "date": "2023-01-21",
-      "opponent_id": "20624258132",
-      "opponent_career_id": null,
-      "opponent_name": "Dylan Moss",
-      "opponent_team": "INDIAN VALLEY",
+      "opponent_id": "21723228132",
+      "opponent_career_id": "career_007502",
+      "opponent_name": "Isaiah Laughlin",
+      "opponent_team": "Simon Kenton",
       "opponent_team_rank": null,
-      "opponent_weight": 113,
+      "opponent_weight": 106,
       "opponent_rank": null,
       "weight_class": "113",
       "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:32",
-      "event": "John Deno Invitational"
+      "method": "TF",
+      "score": "16-0",
+      "duration": "0:00",
+      "event": "John Deno Classic"
     },
     {
       "date": "2023-01-21",
@@ -804,7 +825,7 @@
       "season": 2021,
       "grade": 10,
       "team": "Ashland Blazer",
-      "record": "20-5",
+      "record": "18-6",
       "regional_place": 2,
       "state_place": null
     },
@@ -812,7 +833,7 @@
       "season": 2020,
       "grade": 9,
       "team": "Ashland Blazer",
-      "record": "34-18",
+      "record": "32-18",
       "regional_place": 3,
       "state_place": null
     },
@@ -826,9 +847,9 @@
     }
   ],
   "career_record": {
-    "wins": 122,
-    "losses": 36,
-    "win_pct": 0.772
+    "wins": 118,
+    "losses": 37,
+    "win_pct": 0.761
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

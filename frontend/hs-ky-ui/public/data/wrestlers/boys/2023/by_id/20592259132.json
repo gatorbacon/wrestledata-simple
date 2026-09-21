@@ -5,10 +5,15 @@
   "team_slug": "lafayette",
   "team_rank": null,
   "weight_class": 157,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
-    "overall": "14-5",
+    "overall": "13-5",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.778,
+    "pin_rate": 0.6,
+    "bonus_rate": 0.7,
     "majors": 0,
     "techs": 1,
     "pins": 6
@@ -65,7 +70,7 @@
       "method": "SV-1",
       "score": "6-4",
       "duration": "8:15",
-      "event": "vs. Lafayette"
+      "event": "vs. Frederick Douglass"
     },
     {
       "date": "2023-01-14",
@@ -114,6 +119,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Tates Creek"
+    },
+    {
+      "date": "2023-01-14",
+      "opponent_id": "20458530132",
+      "opponent_career_id": "career_006878",
+      "opponent_name": "Steffan Walker",
+      "opponent_team": "Frederick Douglass",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": "6-4",
+      "duration": "7:00",
+      "event": "vs. Frederick Douglass"
     },
     {
       "date": "2023-01-14",
@@ -257,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:14",
-      "event": "vs. Lafayette"
+      "event": "vs. Boone County"
     },
     {
       "date": "2022-12-03",
@@ -277,22 +298,6 @@
     },
     {
       "date": "2022-12-03",
-      "opponent_id": "20358740132",
-      "opponent_career_id": "career_003452",
-      "opponent_name": "Liam Bird",
-      "opponent_team": "Walton Verona",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:32",
-      "event": "vs. Walton Verona"
-    },
-    {
-      "date": "2022-12-03",
       "opponent_id": "OUTSTATE_2f528488265f",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -306,6 +311,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Boyle County"
+    },
+    {
+      "date": "2022-12-03",
+      "opponent_id": "20358740132",
+      "opponent_career_id": "career_003452",
+      "opponent_name": "Liam Bird",
+      "opponent_team": "Walton Verona",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:32",
+      "event": "vs. Walton Verona"
     }
   ],
   "career": {
@@ -347,15 +368,15 @@
       "season": 2023,
       "grade": 9,
       "team": "Lafayette",
-      "record": "14-5",
+      "record": "13-5",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 103,
+    "wins": 102,
     "losses": 33,
-    "win_pct": 0.757
+    "win_pct": 0.756
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

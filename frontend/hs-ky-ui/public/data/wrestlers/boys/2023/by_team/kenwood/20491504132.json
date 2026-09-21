@@ -5,10 +5,15 @@
   "team_slug": "kenwood",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
-    "overall": "3-2",
+    "overall": "3-3",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -37,6 +42,22 @@
   "match_list": [
     {
       "date": "2023-01-21",
+      "opponent_id": "20176867132",
+      "opponent_career_id": "career_005876",
+      "opponent_name": "BRADLEY PETERS",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "DEC",
+      "score": "11-4",
+      "duration": "7:00",
+      "event": "Laker Invitational"
+    },
+    {
+      "date": "2023-01-21",
       "opponent_id": "20407882132",
       "opponent_career_id": "career_004077",
       "opponent_name": "Jordan Gallahan",
@@ -53,35 +74,19 @@
     },
     {
       "date": "2023-01-21",
-      "opponent_id": "20176867132",
-      "opponent_career_id": "career_005876",
-      "opponent_name": "BRADLEY PETERS",
-      "opponent_team": "Caldwell County",
+      "opponent_id": "20616295132",
+      "opponent_career_id": "career_003356",
+      "opponent_name": "Cameron Devine",
+      "opponent_team": "Owensboro Catholic High School ",
       "opponent_team_rank": null,
-      "opponent_weight": 150,
+      "opponent_weight": 144,
       "opponent_rank": null,
       "weight_class": "144",
-      "result": "W",
-      "method": "DEC",
-      "score": "11-4",
+      "result": "L",
+      "method": "MD",
+      "score": "10-2",
       "duration": "7:00",
       "event": "Laker Invitational"
-    },
-    {
-      "date": "2023-01-13",
-      "opponent_id": "20320989132",
-      "opponent_career_id": "career_007288",
-      "opponent_name": "Nathan Arreguin",
-      "opponent_team": "Fort Knox",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:22",
-      "event": "vs. Kenwood"
     },
     {
       "date": "2023-01-13",
@@ -97,7 +102,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:35",
-      "event": "vs. Kenwood"
+      "event": "vs. Fort Campbell"
+    },
+    {
+      "date": "2023-01-13",
+      "opponent_id": "20320989132",
+      "opponent_career_id": "career_007288",
+      "opponent_name": "Nathan Arreguin",
+      "opponent_team": "Fort Knox",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:22",
+      "event": "vs. Fort Knox"
     },
     {
       "date": "2022-11-19",
@@ -116,5 +137,5 @@
       "event": "Blackman Earlybird"
     }
   ],
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

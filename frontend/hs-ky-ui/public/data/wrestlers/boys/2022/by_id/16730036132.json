@@ -5,10 +5,15 @@
   "team_slug": "bell_county",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2022,
   "current_rank": null,
   "record": {
-    "overall": "30-9",
+    "overall": "28-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.8,
-    "bonus_rate": 0.8,
+    "pin_rate": 0.833,
+    "bonus_rate": 0.833,
     "majors": 0,
     "techs": 0,
-    "pins": 8
+    "pins": 10
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -35,38 +40,6 @@
     "worst_loss": null
   },
   "match_list": [
-    {
-      "date": "2022-01-22",
-      "opponent_id": "17282556132",
-      "opponent_career_id": "career_002918",
-      "opponent_name": "Ethan Swearingen",
-      "opponent_team": "West Carter High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. West Carter High School"
-    },
-    {
-      "date": "2022-01-22",
-      "opponent_id": "18175829132",
-      "opponent_career_id": "career_001635",
-      "opponent_name": "Creston Fuller",
-      "opponent_team": "Mason County",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "DQ",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Mason County"
-    },
     {
       "date": "2022-01-22",
       "opponent_id": "OUTSTATE_890cb62f82e3",
@@ -81,6 +54,22 @@
       "method": "FF",
       "score": null,
       "duration": "7:00",
+      "event": "vs. West Carter High School"
+    },
+    {
+      "date": "2022-01-22",
+      "opponent_id": "17282556132",
+      "opponent_career_id": "career_002918",
+      "opponent_name": "Ethan Swearingen",
+      "opponent_team": "West Carter High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
       "event": "vs. West Carter High School"
     },
     {
@@ -111,6 +100,22 @@
       "weight_class": "113",
       "result": "W",
       "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Mason County"
+    },
+    {
+      "date": "2022-01-22",
+      "opponent_id": "18175829132",
+      "opponent_career_id": "career_001635",
+      "opponent_name": "Creston Fuller",
+      "opponent_team": "Mason County",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "DQ",
       "score": null,
       "duration": "7:00",
       "event": "vs. Mason County"
@@ -148,36 +153,52 @@
       "event": "vs. Lee"
     },
     {
-      "date": "2022-01-13",
-      "opponent_id": "17369589132",
-      "opponent_career_id": "career_004201",
-      "opponent_name": "Braxton Sexton",
-      "opponent_team": "Letcher County Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "L",
-      "method": "MD",
-      "score": "9-1",
-      "duration": "7:00",
-      "event": "vs. Letcher County Central"
-    },
-    {
-      "date": "2022-01-13",
-      "opponent_id": "OUTSTATE_eb106a579182",
+      "date": "2022-01-15",
+      "opponent_id": "17090332132",
       "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Harlan County",
+      "opponent_name": "Cresson Postlewaite",
+      "opponent_team": "Seymour (Girls)",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "106",
       "result": "W",
-      "method": "FF",
+      "method": "FALL",
       "score": null,
+      "duration": "1:28",
+      "event": "Girls Patriot Challenge (Union Co, TN)"
+    },
+    {
+      "date": "2022-01-15",
+      "opponent_id": "16942578132",
+      "opponent_career_id": null,
+      "opponent_name": "Jenna Baines",
+      "opponent_team": "Greeneville (Girls)",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:28",
+      "event": "Girls Patriot Challenge (Union Co, TN)"
+    },
+    {
+      "date": "2022-01-15",
+      "opponent_id": "16714631132",
+      "opponent_career_id": null,
+      "opponent_name": "Jaden Blanton",
+      "opponent_team": "Union Co. (Girls)",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "DEC",
+      "score": "14-11",
       "duration": "7:00",
-      "event": "vs. Harlan County"
+      "event": "Girls Patriot Challenge (Union Co, TN)"
     },
     {
       "date": "2022-01-13",
@@ -192,6 +213,22 @@
       "result": "W",
       "method": "FF",
       "score": null,
+      "duration": "7:00",
+      "event": "vs. Letcher County Central"
+    },
+    {
+      "date": "2022-01-13",
+      "opponent_id": "17369589132",
+      "opponent_career_id": "career_004201",
+      "opponent_name": "Braxton Sexton",
+      "opponent_team": "Letcher County Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
+      "method": "MD",
+      "score": "9-1",
       "duration": "7:00",
       "event": "vs. Letcher County Central"
     },
@@ -228,20 +265,20 @@
       "event": "vs. Harlan County"
     },
     {
-      "date": "2022-01-11",
-      "opponent_id": "OUTSTATE_3c417c4e2f1a",
+      "date": "2022-01-13",
+      "opponent_id": "OUTSTATE_eb106a579182",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
-      "opponent_team": "Claiborne",
+      "opponent_team": "Harlan County",
       "opponent_team_rank": null,
-      "opponent_weight": 106,
+      "opponent_weight": null,
       "opponent_rank": null,
-      "weight_class": "113",
+      "weight_class": "106",
       "result": "W",
       "method": "FF",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Claiborne"
+      "event": "vs. Harlan County"
     },
     {
       "date": "2022-01-11",
@@ -276,6 +313,22 @@
       "event": "vs. Union Co."
     },
     {
+      "date": "2022-01-11",
+      "opponent_id": "OUTSTATE_3c417c4e2f1a",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Claiborne",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Claiborne"
+    },
+    {
       "date": "2022-01-08",
       "opponent_id": "17068319132",
       "opponent_career_id": "career_008689",
@@ -289,6 +342,22 @@
       "method": "FALL",
       "score": null,
       "duration": "2:33",
+      "event": "Barbourville Individual"
+    },
+    {
+      "date": "2022-01-08",
+      "opponent_id": "17068319132",
+      "opponent_career_id": "career_008689",
+      "opponent_name": "Hailey Mills",
+      "opponent_team": "Knox Central High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:41",
       "event": "Barbourville Individual"
     },
     {
@@ -421,22 +490,6 @@
     },
     {
       "date": "2021-12-08",
-      "opponent_id": "17068319132",
-      "opponent_career_id": "career_008689",
-      "opponent_name": "Hailey Mills",
-      "opponent_team": "Knox Central High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Knox Central High School"
-    },
-    {
-      "date": "2021-12-08",
       "opponent_id": "OUTSTATE_8c2dc60868b7",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -450,6 +503,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Barbourville"
+    },
+    {
+      "date": "2021-12-08",
+      "opponent_id": "17068319132",
+      "opponent_career_id": "career_008689",
+      "opponent_name": "Hailey Mills",
+      "opponent_team": "Knox Central High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Knox Central High School"
     },
     {
       "date": "2021-12-08",
@@ -501,22 +570,6 @@
     },
     {
       "date": "2021-11-30",
-      "opponent_id": "17068319132",
-      "opponent_career_id": "career_008689",
-      "opponent_name": "Hailey Mills",
-      "opponent_team": "Knox Central High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:53",
-      "event": "vs. Knox Central High School"
-    },
-    {
-      "date": "2021-11-30",
       "opponent_id": "OUTSTATE_8c2dc60868b7",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -548,20 +601,20 @@
       "event": "vs. Harlan County"
     },
     {
-      "date": "2021-11-27",
-      "opponent_id": "16770676132",
-      "opponent_career_id": "career_008134",
-      "opponent_name": "Charlee Blevins",
-      "opponent_team": "Danville",
+      "date": "2021-11-30",
+      "opponent_id": "17068319132",
+      "opponent_career_id": "career_008689",
+      "opponent_name": "Hailey Mills",
+      "opponent_team": "Knox Central High School",
       "opponent_team_rank": null,
       "opponent_weight": 106,
       "opponent_rank": null,
-      "weight_class": "106",
-      "result": "L",
+      "weight_class": "113",
+      "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "The Centre Parkway Classic"
+      "duration": "4:53",
+      "event": "vs. Knox Central High School"
     },
     {
       "date": "2021-11-27",
@@ -574,6 +627,22 @@
       "opponent_rank": null,
       "weight_class": "113",
       "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "The Centre Parkway Classic"
+    },
+    {
+      "date": "2021-11-27",
+      "opponent_id": "16770676132",
+      "opponent_career_id": "career_008134",
+      "opponent_name": "Charlee Blevins",
+      "opponent_team": "Danville",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "L",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -626,15 +695,15 @@
       "season": 2022,
       "grade": 10,
       "team": "Bell County",
-      "record": "30-9",
+      "record": "28-11",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 91,
-    "losses": 33,
-    "win_pct": 0.734
+    "wins": 89,
+    "losses": 35,
+    "win_pct": 0.718
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

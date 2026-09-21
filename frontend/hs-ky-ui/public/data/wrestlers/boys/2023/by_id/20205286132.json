@@ -5,6 +5,11 @@
   "team_slug": "christian_county",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
@@ -35,6 +40,22 @@
     "worst_loss": null
   },
   "match_list": [
+    {
+      "date": "2022-12-28",
+      "opponent_id": "20251882132",
+      "opponent_career_id": null,
+      "opponent_name": "Jacoby Quijada",
+      "opponent_team": "Dickson Co.",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Fort Campbell JV Region 1 Tournament"
+    },
     {
       "date": "2022-12-28",
       "opponent_id": "20567415132",
@@ -100,22 +121,6 @@
       "event": "Fort Campbell JV Region 1 Tournament"
     },
     {
-      "date": "2022-12-28",
-      "opponent_id": "20251882132",
-      "opponent_career_id": null,
-      "opponent_name": "Jacoby Quijada",
-      "opponent_team": "Dickson Co.",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Fort Campbell JV Region 1 Tournament"
-    },
-    {
       "date": "2022-12-10",
       "opponent_id": "OUTSTATE_98a311a9229c",
       "opponent_career_id": null,
@@ -130,22 +135,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Trigg County"
-    },
-    {
-      "date": "2022-12-10",
-      "opponent_id": "OUTSTATE_7ed63b73d691",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Owensboro",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Owensboro"
     },
     {
       "date": "2022-12-10",
@@ -178,6 +167,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Southridge"
+    },
+    {
+      "date": "2022-12-10",
+      "opponent_id": "OUTSTATE_7ed63b73d691",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Owensboro"
     }
   ],
   "career": {
@@ -211,5 +216,5 @@
     "losses": 21,
     "win_pct": 0.611
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

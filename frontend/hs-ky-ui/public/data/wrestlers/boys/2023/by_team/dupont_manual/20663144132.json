@@ -5,6 +5,11 @@
   "team_slug": "dupont_manual",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.789,
-    "bonus_rate": 0.789,
+    "pin_rate": 0.8,
+    "bonus_rate": 0.8,
     "majors": 0,
     "techs": 0,
-    "pins": 15
+    "pins": 16
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -133,6 +138,22 @@
     },
     {
       "date": "2023-01-25",
+      "opponent_id": "20288275132",
+      "opponent_career_id": "career_003155",
+      "opponent_name": "Caden Sumner",
+      "opponent_team": "Desales",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:45",
+      "event": "JV Region 3"
+    },
+    {
+      "date": "2023-01-25",
       "opponent_id": "20253367132",
       "opponent_career_id": "career_007390",
       "opponent_name": "Kegan O?Neil",
@@ -181,22 +202,6 @@
     },
     {
       "date": "2023-01-21",
-      "opponent_id": "20787315132",
-      "opponent_career_id": "career_003565",
-      "opponent_name": "Max Perry",
-      "opponent_team": "Franklin County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:03",
-      "event": "Capital City Classic"
-    },
-    {
-      "date": "2023-01-21",
       "opponent_id": "21433391132",
       "opponent_career_id": "career_003882",
       "opponent_name": "Victor Pacheco",
@@ -209,6 +214,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:29",
+      "event": "Capital City Classic"
+    },
+    {
+      "date": "2023-01-21",
+      "opponent_id": "20787315132",
+      "opponent_career_id": "career_003565",
+      "opponent_name": "Max Perry",
+      "opponent_team": "Franklin County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:03",
       "event": "Capital City Classic"
     },
     {
@@ -239,9 +260,9 @@
       "weight_class": "150",
       "result": "L",
       "method": "DEC",
-      "score": "13-6",
+      "score": "13-7",
       "duration": "7:00",
-      "event": "vs. Dupont Manual"
+      "event": "vs. Central"
     },
     {
       "date": "2023-01-18",
@@ -273,23 +294,23 @@
       "method": "DEC",
       "score": "9-3",
       "duration": "7:00",
-      "event": "vs. Dupont Manual"
+      "event": "vs. Ballard"
     },
     {
       "date": "2023-01-14",
-      "opponent_id": "20166679132",
-      "opponent_career_id": "career_006598",
-      "opponent_name": "Jaden Schatt",
-      "opponent_team": "Southern",
+      "opponent_id": "OUTSTATE_69fe6abda901",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Butler",
       "opponent_team_rank": null,
-      "opponent_weight": 138,
+      "opponent_weight": null,
       "opponent_rank": null,
-      "weight_class": "138",
+      "weight_class": "144",
       "result": "W",
-      "method": "FALL",
+      "method": "FF",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Southern"
+      "duration": "7:00",
+      "event": "vs. Butler"
     },
     {
       "date": "2023-01-14",
@@ -309,19 +330,19 @@
     },
     {
       "date": "2023-01-14",
-      "opponent_id": "OUTSTATE_69fe6abda901",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Butler",
+      "opponent_id": "20166679132",
+      "opponent_career_id": "career_006598",
+      "opponent_name": "Jaden Schatt",
+      "opponent_team": "Southern",
       "opponent_team_rank": null,
-      "opponent_weight": null,
+      "opponent_weight": 138,
       "opponent_rank": null,
-      "weight_class": "144",
+      "weight_class": "138",
       "result": "W",
-      "method": "FF",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
-      "event": "vs. Butler"
+      "duration": "0:00",
+      "event": "vs. Southern"
     },
     {
       "date": "2023-01-14",
@@ -501,22 +522,6 @@
     },
     {
       "date": "2022-12-17",
-      "opponent_id": "20263944132",
-      "opponent_career_id": "career_002207",
-      "opponent_name": "Joel Vontae Stanley Jr.",
-      "opponent_team": "Pleasure Ridge Park",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:44",
-      "event": "vs. Pleasure Ridge Park"
-    },
-    {
-      "date": "2022-12-17",
       "opponent_id": "20272764132",
       "opponent_career_id": "career_007155",
       "opponent_name": "Milka Woodring",
@@ -529,7 +534,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:15",
-      "event": "vs. Dupont Manual"
+      "event": "vs. Bell County"
     },
     {
       "date": "2022-12-17",
@@ -546,6 +551,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Atherton"
+    },
+    {
+      "date": "2022-12-17",
+      "opponent_id": "20263944132",
+      "opponent_career_id": "career_002207",
+      "opponent_name": "Joel Vontae Stanley Jr.",
+      "opponent_team": "Pleasure Ridge Park",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:44",
+      "event": "vs. Pleasure Ridge Park"
     },
     {
       "date": "2022-12-17",
@@ -581,6 +602,22 @@
     },
     {
       "date": "2022-12-14",
+      "opponent_id": "20190776132",
+      "opponent_career_id": "career_000324",
+      "opponent_name": "Dallas Mitchell",
+      "opponent_team": "Bullitt Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Bullitt Central"
+    },
+    {
+      "date": "2022-12-14",
       "opponent_id": "OUTSTATE_21b4a79b024a",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -612,35 +649,19 @@
       "event": "vs. Bullitt East"
     },
     {
-      "date": "2022-12-14",
-      "opponent_id": "20190776132",
-      "opponent_career_id": "career_000324",
-      "opponent_name": "Dallas Mitchell",
-      "opponent_team": "Bullitt Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Dupont Manual"
-    },
-    {
       "date": "2022-12-10",
-      "opponent_id": "20253385132",
-      "opponent_career_id": "career_007607",
-      "opponent_name": "Jicobi Fields",
-      "opponent_team": "Male",
+      "opponent_id": "20656664132",
+      "opponent_career_id": "career_000100",
+      "opponent_name": "Toraze Davis",
+      "opponent_team": "Ballard",
       "opponent_team_rank": null,
-      "opponent_weight": 132,
+      "opponent_weight": 144,
       "opponent_rank": null,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:35",
+      "duration": "0:00",
       "event": "Derby City Classic"
     },
     {
@@ -661,22 +682,6 @@
     },
     {
       "date": "2022-12-10",
-      "opponent_id": "20656664132",
-      "opponent_career_id": "career_000100",
-      "opponent_name": "Toraze Davis",
-      "opponent_team": "Ballard",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Derby City Classic"
-    },
-    {
-      "date": "2022-12-10",
       "opponent_id": "20571833132",
       "opponent_career_id": "career_001900",
       "opponent_name": "Odysseus Springer",
@@ -689,6 +694,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
+      "event": "Derby City Classic"
+    },
+    {
+      "date": "2022-12-10",
+      "opponent_id": "20253385132",
+      "opponent_career_id": "career_007607",
+      "opponent_name": "Jicobi Fields",
+      "opponent_team": "Male",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:35",
       "event": "Derby City Classic"
     },
     {
@@ -725,6 +746,22 @@
     },
     {
       "date": "2022-12-03",
+      "opponent_id": "OUTSTATE_1151505a60f6",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Ballard"
+    },
+    {
+      "date": "2022-12-03",
       "opponent_id": "20241274132",
       "opponent_career_id": "career_003555",
       "opponent_name": "Mekhi Brown",
@@ -754,22 +791,6 @@
       "score": null,
       "duration": "1:33",
       "event": "vs. Male"
-    },
-    {
-      "date": "2022-12-03",
-      "opponent_id": "OUTSTATE_1151505a60f6",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Ballard",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Ballard"
     }
   ],
   "career": {
@@ -812,5 +833,5 @@
     "losses": 39,
     "win_pct": 0.524
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

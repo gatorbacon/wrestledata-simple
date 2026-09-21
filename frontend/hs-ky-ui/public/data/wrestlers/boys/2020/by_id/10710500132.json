@@ -5,6 +5,11 @@
   "team_slug": "boone_county",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
@@ -165,6 +170,22 @@
     },
     {
       "date": "2020-01-08",
+      "opponent_id": "10762011132",
+      "opponent_career_id": "career_010409",
+      "opponent_name": "Nathan Harward",
+      "opponent_team": "Walton Verona",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:09",
+      "event": "vs. Walton Verona"
+    },
+    {
+      "date": "2020-01-08",
       "opponent_id": "10754804132",
       "opponent_career_id": "career_007745",
       "opponent_name": "Joey Hunt",
@@ -194,22 +215,6 @@
       "score": "6-2",
       "duration": "7:00",
       "event": "vs. Covington Catholic"
-    },
-    {
-      "date": "2020-01-08",
-      "opponent_id": "10762011132",
-      "opponent_career_id": "career_010409",
-      "opponent_name": "Nathan Harward",
-      "opponent_team": "Walton Verona",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:09",
-      "event": "vs. Walton Verona"
     },
     {
       "date": "2019-12-21",
@@ -322,7 +327,7 @@
       "season": 2023,
       "grade": 12,
       "team": "Boone County",
-      "record": "17-26",
+      "record": "17-25",
       "regional_place": null,
       "state_place": null
     },
@@ -330,7 +335,7 @@
       "season": 2022,
       "grade": 11,
       "team": "Boone County",
-      "record": "8-11",
+      "record": "8-12",
       "regional_place": null,
       "state_place": null
     },
@@ -348,5 +353,10 @@
     "losses": 51,
     "win_pct": 0.354
   },
-  "profile_generated_at": "2026-04-16"
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  },
+  "profile_generated_at": "2026-09-21"
 }

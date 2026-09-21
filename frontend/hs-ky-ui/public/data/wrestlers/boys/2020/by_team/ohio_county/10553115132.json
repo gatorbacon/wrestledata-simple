@@ -5,10 +5,15 @@
   "team_slug": "ohio_county",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "47-10",
+    "overall": "48-10",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.706,
-    "bonus_rate": 0.824,
+    "pin_rate": 0.694,
+    "bonus_rate": 0.806,
     "majors": 2,
     "techs": 2,
-    "pins": 24
+    "pins": 25
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -117,6 +122,22 @@
     },
     {
       "date": "2020-02-08",
+      "opponent_id": "10690276132",
+      "opponent_career_id": "career_009884",
+      "opponent_name": "Blaine Hicks",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "DEC",
+      "score": "7-2",
+      "duration": "7:00",
+      "event": "KHSAA Region 1 @ Trigg County"
+    },
+    {
+      "date": "2020-02-08",
       "opponent_id": "10553035132",
       "opponent_career_id": "career_008821",
       "opponent_name": "Ronald McGee",
@@ -149,22 +170,6 @@
     },
     {
       "date": "2020-02-01",
-      "opponent_id": "11280860132",
-      "opponent_career_id": "career_006241",
-      "opponent_name": "Dakota Karr",
-      "opponent_team": "Wayne County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "TF",
-      "score": "16-1",
-      "duration": "4:00",
-      "event": "vs. Wayne County"
-    },
-    {
-      "date": "2020-02-01",
       "opponent_id": "10698939132",
       "opponent_career_id": "career_010301",
       "opponent_name": "Adam Gibbons",
@@ -177,7 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:24",
-      "event": "vs. Ohio County"
+      "event": "vs. North Hardin"
     },
     {
       "date": "2020-02-01",
@@ -210,6 +215,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. LaRue County"
+    },
+    {
+      "date": "2020-02-01",
+      "opponent_id": "11280860132",
+      "opponent_career_id": "career_006241",
+      "opponent_name": "Dakota Karr",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "TF",
+      "score": "16-1",
+      "duration": "4:00",
+      "event": "vs. Wayne County"
     },
     {
       "date": "2020-02-01",
@@ -385,7 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:35",
-      "event": "vs. Ohio County"
+      "event": "vs. Caldwell County"
     },
     {
       "date": "2020-01-16",
@@ -417,7 +438,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:37",
-      "event": "vs. Ohio County"
+      "event": "vs. Apollo High School"
     },
     {
       "date": "2020-01-11",
@@ -433,7 +454,7 @@
       "method": "DEC",
       "score": "9-4",
       "duration": "7:00",
-      "event": "vs. Ohio County"
+      "event": "vs. Christian County"
     },
     {
       "date": "2020-01-11",
@@ -449,7 +470,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:47",
-      "event": "vs. Ohio County"
+      "event": "vs. Hopkinsville"
     },
     {
       "date": "2020-01-11",
@@ -465,7 +486,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:57",
-      "event": "vs. Ohio County"
+      "event": "vs. McCracken County"
     },
     {
       "date": "2020-01-11",
@@ -629,38 +650,6 @@
     },
     {
       "date": "2019-12-21",
-      "opponent_id": "11095992132",
-      "opponent_career_id": "career_010093",
-      "opponent_name": "Gavin Stagner",
-      "opponent_team": "Christian County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:36",
-      "event": "vs. Ohio County"
-    },
-    {
-      "date": "2019-12-21",
-      "opponent_id": "10778927132",
-      "opponent_career_id": "career_010217",
-      "opponent_name": "Freddie Arnold",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:54",
-      "event": "vs. Ohio County"
-    },
-    {
-      "date": "2019-12-21",
       "opponent_id": "10676333132",
       "opponent_career_id": "career_009310",
       "opponent_name": "Caitlyn Powers",
@@ -673,7 +662,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:39",
-      "event": "vs. Ohio County"
+      "event": "vs. Calloway County"
+    },
+    {
+      "date": "2019-12-21",
+      "opponent_id": "11095992132",
+      "opponent_career_id": "career_010093",
+      "opponent_name": "Gavin Stagner",
+      "opponent_team": "Christian County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:36",
+      "event": "vs. Christian County"
     },
     {
       "date": "2019-12-21",
@@ -689,7 +694,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:44",
-      "event": "vs. Ohio County"
+      "event": "vs. Hopkinsville"
+    },
+    {
+      "date": "2019-12-21",
+      "opponent_id": "10778927132",
+      "opponent_career_id": "career_010217",
+      "opponent_name": "Freddie Arnold",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:54",
+      "event": "vs. John Hardin"
     },
     {
       "date": "2019-12-21",
@@ -709,22 +730,6 @@
     },
     {
       "date": "2019-12-14",
-      "opponent_id": "10553688132",
-      "opponent_career_id": "career_007965",
-      "opponent_name": "Isaac Thornton",
-      "opponent_team": "Grant County",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "DEC",
-      "score": "6-0",
-      "duration": "7:00",
-      "event": "vs. Ohio County"
-    },
-    {
-      "date": "2019-12-14",
       "opponent_id": "11465639132",
       "opponent_career_id": "career_008673",
       "opponent_name": "Memphis Martin",
@@ -737,7 +742,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:12",
-      "event": "vs. Ohio County"
+      "event": "vs. Franklin County"
+    },
+    {
+      "date": "2019-12-14",
+      "opponent_id": "10553688132",
+      "opponent_career_id": "career_007965",
+      "opponent_name": "Isaac Thornton",
+      "opponent_team": "Grant County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-0",
+      "duration": "7:00",
+      "event": "vs. Grant County"
     },
     {
       "date": "2019-12-14",
@@ -801,7 +822,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:24",
-      "event": "vs. Ohio County"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2019-12-12",
@@ -837,22 +858,6 @@
     },
     {
       "date": "2019-12-07",
-      "opponent_id": "10784146132",
-      "opponent_career_id": "career_006358",
-      "opponent_name": "Ayden Puckett",
-      "opponent_team": "Doss",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:02",
-      "event": "King of the Bluegrass"
-    },
-    {
-      "date": "2019-12-07",
       "opponent_id": "10549784132",
       "opponent_career_id": "career_009495",
       "opponent_name": "Jalen Polin",
@@ -865,6 +870,38 @@
       "method": "FALL",
       "score": null,
       "duration": "5:03",
+      "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2019-12-07",
+      "opponent_id": "10784146132",
+      "opponent_career_id": "career_006358",
+      "opponent_name": "Ayden Puckett",
+      "opponent_team": "Doss",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:09",
+      "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2019-12-07",
+      "opponent_id": "10784146132",
+      "opponent_career_id": "career_006358",
+      "opponent_name": "Ayden Puckett",
+      "opponent_team": "Doss",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:02",
       "event": "King of the Bluegrass"
     },
     {
@@ -897,7 +934,7 @@
       "method": "DEC",
       "score": "4-0",
       "duration": "7:00",
-      "event": "vs. Ohio County"
+      "event": "vs. Apollo High School"
     },
     {
       "date": "2019-12-05",
@@ -948,7 +985,7 @@
       "season": 2020,
       "grade": 12,
       "team": "Ohio County",
-      "record": "47-10",
+      "record": "48-10",
       "regional_place": 3,
       "state_place": null
     },
@@ -964,7 +1001,7 @@
       "season": 2018,
       "grade": 10,
       "team": "Ohio County",
-      "record": "14-7",
+      "record": "16-7",
       "regional_place": null,
       "state_place": null
     },
@@ -972,7 +1009,7 @@
       "season": 2017,
       "grade": 9,
       "team": "Ohio County",
-      "record": "36-12",
+      "record": "36-10",
       "regional_place": 3,
       "state_place": null
     },
@@ -980,15 +1017,15 @@
       "season": 2016,
       "grade": 8,
       "team": "Ohio County",
-      "record": "23-13",
+      "record": "25-14",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 160,
-    "losses": 53,
-    "win_pct": 0.751
+    "wins": 165,
+    "losses": 52,
+    "win_pct": 0.76
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

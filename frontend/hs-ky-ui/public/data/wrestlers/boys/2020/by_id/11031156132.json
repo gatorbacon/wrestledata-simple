@@ -5,6 +5,11 @@
   "team_slug": "cooper",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
@@ -145,7 +150,7 @@
       "method": "MD",
       "score": "10-0",
       "duration": "7:00",
-      "event": "vs. Cooper"
+      "event": "vs. Conner"
     },
     {
       "date": "2020-01-15",
@@ -213,22 +218,6 @@
     },
     {
       "date": "2019-12-21",
-      "opponent_id": "11000002132",
-      "opponent_career_id": null,
-      "opponent_name": "Isaac Dane",
-      "opponent_team": "HAMILTON",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "L",
-      "method": "DEC",
-      "score": "11-7",
-      "duration": "7:00",
-      "event": "Xenia Invitational"
-    },
-    {
-      "date": "2019-12-21",
       "opponent_id": "10880281132",
       "opponent_career_id": null,
       "opponent_name": "Evan Davis",
@@ -256,6 +245,22 @@
       "result": "L",
       "method": "DEC",
       "score": "12-6",
+      "duration": "7:00",
+      "event": "Xenia Invitational"
+    },
+    {
+      "date": "2019-12-21",
+      "opponent_id": "11000002132",
+      "opponent_career_id": null,
+      "opponent_name": "Isaac Dane",
+      "opponent_team": "HAMILTON",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "L",
+      "method": "DEC",
+      "score": "11-7",
       "duration": "7:00",
       "event": "Xenia Invitational"
     },
@@ -309,6 +314,22 @@
     },
     {
       "date": "2019-12-07",
+      "opponent_id": "10680485132",
+      "opponent_career_id": "career_006271",
+      "opponent_name": "Andre Sizemore",
+      "opponent_team": "Bardstown",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:16",
+      "event": "vs. Bardstown"
+    },
+    {
+      "date": "2019-12-07",
       "opponent_id": "10553683132",
       "opponent_career_id": "career_006738",
       "opponent_name": "Ethan Montgomery",
@@ -321,23 +342,7 @@
       "method": "DEC",
       "score": "8-5",
       "duration": "7:00",
-      "event": "vs. Cooper"
-    },
-    {
-      "date": "2019-12-07",
-      "opponent_id": "10680485132",
-      "opponent_career_id": "career_006271",
-      "opponent_name": "Andre Sizemore",
-      "opponent_team": "Bardstown",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Cooper"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2019-12-07",
@@ -357,22 +362,6 @@
     },
     {
       "date": "2019-12-07",
-      "opponent_id": "10670904132",
-      "opponent_career_id": "career_010173",
-      "opponent_name": "Dylan Williams",
-      "opponent_team": "Grant County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:34",
-      "event": "vs. Grant County"
-    },
-    {
-      "date": "2019-12-07",
       "opponent_id": "OUTSTATE_0534094d0eee",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -386,6 +375,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Boone County"
+    },
+    {
+      "date": "2019-12-07",
+      "opponent_id": "10670904132",
+      "opponent_career_id": "career_010173",
+      "opponent_name": "Dylan Williams",
+      "opponent_team": "Grant County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "vs. Grant County"
     }
   ],
   "career": {
@@ -428,5 +433,5 @@
     "losses": 44,
     "win_pct": 0.371
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

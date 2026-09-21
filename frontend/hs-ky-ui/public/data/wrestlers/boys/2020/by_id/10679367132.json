@@ -5,6 +5,11 @@
   "team_slug": "oldham_county",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
@@ -101,22 +106,6 @@
     },
     {
       "date": "2020-01-25",
-      "opponent_id": "10561505132",
-      "opponent_career_id": "career_008769",
-      "opponent_name": "TyDarius Kelly",
-      "opponent_team": "Christian County",
-      "opponent_team_rank": null,
-      "opponent_weight": 285,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:00",
-      "event": "vs. Oldham County"
-    },
-    {
-      "date": "2020-01-25",
       "opponent_id": "11972127132",
       "opponent_career_id": "career_009893",
       "opponent_name": "brock Burton",
@@ -129,7 +118,23 @@
       "method": "FALL",
       "score": null,
       "duration": "1:09",
-      "event": "vs. Oldham County"
+      "event": "vs. Central"
+    },
+    {
+      "date": "2020-01-25",
+      "opponent_id": "10561505132",
+      "opponent_career_id": "career_008769",
+      "opponent_name": "TyDarius Kelly",
+      "opponent_team": "Christian County",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:00",
+      "event": "vs. Christian County"
     },
     {
       "date": "2020-01-25",
@@ -145,7 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:09",
-      "event": "vs. Oldham County"
+      "event": "vs. Johnson Central"
     },
     {
       "date": "2020-01-18",
@@ -197,6 +202,22 @@
     },
     {
       "date": "2020-01-11",
+      "opponent_id": "10712128132",
+      "opponent_career_id": "career_009030",
+      "opponent_name": "Dawson Waller",
+      "opponent_team": "Anderson County",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:36",
+      "event": "vs. Anderson County"
+    },
+    {
+      "date": "2020-01-11",
       "opponent_id": "OUTSTATE_7168a7a0389b",
       "opponent_career_id": null,
       "opponent_name": "John Doe",
@@ -210,23 +231,38 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Central Hardin"
-    },
-    {
-      "date": "2020-01-11",
-      "opponent_id": "10712128132",
-      "opponent_career_id": "career_009030",
-      "opponent_name": "Dawson Waller",
-      "opponent_team": "Anderson County",
-      "opponent_team_rank": null,
-      "opponent_weight": 285,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:36",
-      "event": "vs. Oldham County"
     }
   ],
-  "profile_generated_at": "2026-04-16"
+  "career": {
+    "career_id": "career_007890",
+    "canonical_name": "Issac Meyer",
+    "seasons": [
+      2022,
+      2020
+    ]
+  },
+  "season_summary": [
+    {
+      "season": 2022,
+      "grade": 12,
+      "team": "Oldham County",
+      "record": "21-15",
+      "regional_place": 1,
+      "state_place": null
+    },
+    {
+      "season": 2020,
+      "grade": 10,
+      "team": "Oldham County",
+      "record": "7-5",
+      "regional_place": null,
+      "state_place": null
+    }
+  ],
+  "career_record": {
+    "wins": 28,
+    "losses": 20,
+    "win_pct": 0.583
+  },
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "central_hardin",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2022,
   "current_rank": null,
   "record": {
-    "overall": "22-13",
+    "overall": "24-14",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.944,
+    "pin_rate": 0.947,
     "bonus_rate": 1.0,
     "majors": 1,
     "techs": 0,
-    "pins": 17
+    "pins": 18
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -161,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:39",
-      "event": "vs. Central Hardin"
+      "event": "vs. Central"
     },
     {
       "date": "2022-01-26",
@@ -213,6 +218,22 @@
     },
     {
       "date": "2022-01-22",
+      "opponent_id": "16852548132",
+      "opponent_career_id": "career_004297",
+      "opponent_name": "Jaxon Weissend",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:46",
+      "event": "Capital City Classic"
+    },
+    {
+      "date": "2022-01-22",
       "opponent_id": "17060018132",
       "opponent_career_id": "career_000690",
       "opponent_name": "Xavier Montanez",
@@ -224,6 +245,22 @@
       "result": "W",
       "method": "MD",
       "score": "14-5",
+      "duration": "7:00",
+      "event": "Capital City Classic"
+    },
+    {
+      "date": "2022-01-22",
+      "opponent_id": "17060018132",
+      "opponent_career_id": "career_000690",
+      "opponent_name": "Xavier Montanez",
+      "opponent_team": "Dixie Heights",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "MD",
+      "score": "15-6",
       "duration": "7:00",
       "event": "Capital City Classic"
     },
@@ -305,7 +342,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:37",
-      "event": "vs. Central Hardin"
+      "event": "vs. Ohio County"
     },
     {
       "date": "2021-12-21",
@@ -321,39 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:52",
-      "event": "vs. Central Hardin"
-    },
-    {
-      "date": "2021-12-21",
-      "opponent_id": "17066795132",
-      "opponent_career_id": "career_004531",
-      "opponent_name": "Payton Durbin",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "TF",
-      "score": "18-3",
-      "duration": "0:00",
-      "event": "vs. Meade County"
-    },
-    {
-      "date": "2021-12-21",
-      "opponent_id": "16736767132",
-      "opponent_career_id": "career_001960",
-      "opponent_name": "Mason Taylor",
-      "opponent_team": "Ohio County",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:35",
-      "event": "vs. Ohio County"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2021-12-21",
@@ -369,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:31",
-      "event": "vs. Central Hardin"
+      "event": "vs. Central"
     },
     {
       "date": "2021-12-21",
@@ -389,6 +394,38 @@
     },
     {
       "date": "2021-12-21",
+      "opponent_id": "17197384132",
+      "opponent_career_id": "career_008228",
+      "opponent_name": "Kobe Dye",
+      "opponent_team": "Fort Knox",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:27",
+      "event": "vs. Fort Knox"
+    },
+    {
+      "date": "2021-12-21",
+      "opponent_id": "17066795132",
+      "opponent_career_id": "career_004531",
+      "opponent_name": "Payton Durbin",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "TF",
+      "score": "18-3",
+      "duration": "0:00",
+      "event": "vs. Meade County"
+    },
+    {
+      "date": "2021-12-21",
       "opponent_id": "16987809132",
       "opponent_career_id": "career_003331",
       "opponent_name": "Johnathan Stewart",
@@ -405,28 +442,28 @@
     },
     {
       "date": "2021-12-21",
-      "opponent_id": "17197384132",
-      "opponent_career_id": "career_008228",
-      "opponent_name": "Kobe Dye",
-      "opponent_team": "Fort Knox",
+      "opponent_id": "16736767132",
+      "opponent_career_id": "career_001960",
+      "opponent_name": "Mason Taylor",
+      "opponent_team": "Ohio County",
       "opponent_team_rank": null,
-      "opponent_weight": 126,
+      "opponent_weight": 113,
       "opponent_rank": null,
-      "weight_class": "126",
+      "weight_class": "120",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:27",
-      "event": "vs. Fort Knox"
+      "duration": "0:35",
+      "event": "vs. Ohio County"
     },
     {
       "date": "2021-12-18",
-      "opponent_id": "16932136132",
-      "opponent_career_id": "career_006532",
-      "opponent_name": "Aden Walker",
-      "opponent_team": "North Hardin",
+      "opponent_id": "16855999132",
+      "opponent_career_id": "career_007177",
+      "opponent_name": "Corey Payton",
+      "opponent_team": "Bullitt Central",
       "opponent_team_rank": null,
-      "opponent_weight": 113,
+      "opponent_weight": 120,
       "opponent_rank": null,
       "weight_class": "120",
       "result": "W",
@@ -437,12 +474,12 @@
     },
     {
       "date": "2021-12-18",
-      "opponent_id": "16855999132",
-      "opponent_career_id": "career_007177",
-      "opponent_name": "Corey Payton",
-      "opponent_team": "Bullitt Central",
+      "opponent_id": "16932136132",
+      "opponent_career_id": "career_006532",
+      "opponent_name": "Aden Walker",
+      "opponent_team": "North Hardin",
       "opponent_team_rank": null,
-      "opponent_weight": 120,
+      "opponent_weight": 113,
       "opponent_rank": null,
       "weight_class": "120",
       "result": "W",
@@ -469,6 +506,22 @@
     },
     {
       "date": "2021-12-11",
+      "opponent_id": "16735672132",
+      "opponent_career_id": "career_003703",
+      "opponent_name": "Cruz Reynolds",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Boyle County"
+    },
+    {
+      "date": "2021-12-11",
       "opponent_id": "16729601132",
       "opponent_career_id": "career_001399",
       "opponent_name": "Landon Packard",
@@ -482,22 +535,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. LaRue County"
-    },
-    {
-      "date": "2021-12-11",
-      "opponent_id": "16735672132",
-      "opponent_career_id": "career_003703",
-      "opponent_name": "Cruz Reynolds",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Central Hardin"
     },
     {
       "date": "2021-12-11",
@@ -533,22 +570,6 @@
     },
     {
       "date": "2021-12-04",
-      "opponent_id": "16929145132",
-      "opponent_career_id": "career_000973",
-      "opponent_name": "Anthony Condi",
-      "opponent_team": "Frederick Douglass",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "TF",
-      "score": "16-0",
-      "duration": "0:00",
-      "event": "vs. Frederick Douglass"
-    },
-    {
-      "date": "2021-12-04",
       "opponent_id": "16735363132",
       "opponent_career_id": "career_005829",
       "opponent_name": "Cole Harrod",
@@ -561,7 +582,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:48",
-      "event": "vs. Central Hardin"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2021-12-04",
@@ -610,6 +631,22 @@
       "score": null,
       "duration": "1:51",
       "event": "vs. Taylor County"
+    },
+    {
+      "date": "2021-12-04",
+      "opponent_id": "16929145132",
+      "opponent_career_id": "career_000973",
+      "opponent_name": "Anthony Condi",
+      "opponent_team": "Frederick Douglass",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "0:00",
+      "event": "vs. Frederick Douglass"
     }
   ],
   "career": {
@@ -644,7 +681,7 @@
       "season": 2024,
       "grade": 10,
       "team": "Central Hardin",
-      "record": "20-7",
+      "record": "19-7",
       "regional_place": 4,
       "state_place": null
     },
@@ -652,7 +689,7 @@
       "season": 2023,
       "grade": 9,
       "team": "Central Hardin",
-      "record": "23-12",
+      "record": "24-12",
       "regional_place": 3,
       "state_place": null
     },
@@ -660,15 +697,15 @@
       "season": 2022,
       "grade": 8,
       "team": "Central Hardin",
-      "record": "22-13",
+      "record": "24-14",
       "regional_place": 4,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 150,
-    "losses": 43,
-    "win_pct": 0.777
+    "wins": 152,
+    "losses": 44,
+    "win_pct": 0.776
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

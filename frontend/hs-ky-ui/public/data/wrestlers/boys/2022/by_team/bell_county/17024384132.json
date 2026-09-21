@@ -5,6 +5,11 @@
   "team_slug": "bell_county",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2022,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.882,
-    "bonus_rate": 0.882,
+    "pin_rate": 0.895,
+    "bonus_rate": 0.895,
     "majors": 0,
     "techs": 0,
-    "pins": 15
+    "pins": 17
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -46,6 +51,22 @@
       "opponent_rank": null,
       "weight_class": "144",
       "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "KYWCA Kentucky Girls State Championships"
+    },
+    {
+      "date": "2022-02-21",
+      "opponent_id": "16963345132",
+      "opponent_career_id": "career_007656",
+      "opponent_name": "Camryn Williams",
+      "opponent_team": "Bardstown",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
       "method": "FALL",
       "score": null,
       "duration": "0:00",
@@ -117,22 +138,6 @@
     },
     {
       "date": "2022-01-22",
-      "opponent_id": "17288411132",
-      "opponent_career_id": "career_002921",
-      "opponent_name": "Peyton Walker",
-      "opponent_team": "West Carter High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:57",
-      "event": "vs. West Carter High School"
-    },
-    {
-      "date": "2022-01-22",
       "opponent_id": "OUTSTATE_890cb62f82e3",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -145,6 +150,22 @@
       "method": "FF",
       "score": null,
       "duration": "7:00",
+      "event": "vs. West Carter High School"
+    },
+    {
+      "date": "2022-01-22",
+      "opponent_id": "17288411132",
+      "opponent_career_id": "career_002921",
+      "opponent_name": "Peyton Walker",
+      "opponent_team": "West Carter High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:57",
       "event": "vs. West Carter High School"
     },
     {
@@ -197,22 +218,6 @@
     },
     {
       "date": "2022-01-20",
-      "opponent_id": "OUTSTATE_ea882ff073d2",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Lee",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Lee"
-    },
-    {
-      "date": "2022-01-20",
       "opponent_id": "18858786132",
       "opponent_career_id": "career_003921",
       "opponent_name": "Grace Helton",
@@ -226,6 +231,22 @@
       "score": null,
       "duration": "0:00",
       "event": "Extra matches Bell Co Tri"
+    },
+    {
+      "date": "2022-01-20",
+      "opponent_id": "OUTSTATE_ea882ff073d2",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Lee",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Lee"
     },
     {
       "date": "2022-01-08",
@@ -372,6 +393,22 @@
       "event": "vs. Perry County Central"
     },
     {
+      "date": "2021-12-02",
+      "opponent_id": "16837832132",
+      "opponent_career_id": "career_006832",
+      "opponent_name": "Andrea Lewis",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:23",
+      "event": "vs. Perry County Central"
+    },
+    {
       "date": "2021-11-30",
       "opponent_id": "OUTSTATE_eb106a579182",
       "opponent_career_id": null,
@@ -467,5 +504,5 @@
     "losses": 13,
     "win_pct": 0.803
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

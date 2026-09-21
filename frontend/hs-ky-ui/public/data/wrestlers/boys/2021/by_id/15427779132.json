@@ -5,10 +5,15 @@
   "team_slug": "male",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2021,
   "current_rank": null,
   "record": {
-    "overall": "23-5",
+    "overall": "23-4",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.643,
-    "bonus_rate": 0.714,
+    "pin_rate": 0.667,
+    "bonus_rate": 0.733,
     "majors": 0,
     "techs": 1,
-    "pins": 9
+    "pins": 10
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -46,9 +51,9 @@
       "opponent_rank": null,
       "weight_class": "120",
       "result": "L",
-      "method": "DEC",
-      "score": "8-1",
-      "duration": "7:00",
+      "method": "SV-1",
+      "score": "2-0",
+      "duration": "8:15",
       "event": "KHSAA State Final Round"
     },
     {
@@ -133,6 +138,22 @@
     },
     {
       "date": "2021-03-20",
+      "opponent_id": "15323404132",
+      "opponent_career_id": "career_008545",
+      "opponent_name": "Elijah Baird",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:22",
+      "event": "KHSAA State First Round - 1"
+    },
+    {
+      "date": "2021-03-20",
       "opponent_id": "15277435132",
       "opponent_career_id": "career_007904",
       "opponent_name": "Joseph Sander",
@@ -193,7 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:56",
-      "event": "vs. Male"
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2021-02-24",
@@ -241,7 +262,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Male"
+      "event": "vs. Conner"
+    },
+    {
+      "date": "2021-02-20",
+      "opponent_id": "15202465132",
+      "opponent_career_id": "career_008842",
+      "opponent_name": "Landon Crafton",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "DEC",
+      "score": "13-7",
+      "duration": "7:00",
+      "event": "vs. Madison Central"
     },
     {
       "date": "2021-02-20",
@@ -274,22 +311,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Montgomery County"
-    },
-    {
-      "date": "2021-02-20",
-      "opponent_id": "15202465132",
-      "opponent_career_id": "career_008842",
-      "opponent_name": "Landon Crafton",
-      "opponent_team": "Madison Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "DEC",
-      "score": "13-7",
-      "duration": "7:00",
-      "event": "vs. Male"
     },
     {
       "date": "2021-02-13",
@@ -401,7 +422,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:57",
-      "event": "vs. Male"
+      "event": "vs. Fairdale"
     },
     {
       "date": "2021-02-06",
@@ -474,7 +495,7 @@
       "season": 2022,
       "grade": 9,
       "team": "Male",
-      "record": "21-9",
+      "record": "20-8",
       "regional_place": 1,
       "state_place": null
     },
@@ -482,15 +503,15 @@
       "season": 2021,
       "grade": 8,
       "team": "Male",
-      "record": "23-5",
+      "record": "23-4",
       "regional_place": 2,
       "state_place": 5
     }
   ],
   "career_record": {
-    "wins": 63,
-    "losses": 22,
-    "win_pct": 0.741
+    "wins": 62,
+    "losses": 20,
+    "win_pct": 0.756
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

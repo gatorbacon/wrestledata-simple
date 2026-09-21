@@ -5,6 +5,11 @@
   "team_slug": "covington_catholic",
   "team_rank": null,
   "weight_class": 215,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2021,
   "current_rank": null,
   "record": {
@@ -24,7 +29,7 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 7
+    "pins": 8
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -35,22 +40,6 @@
     "worst_loss": null
   },
   "match_list": [
-    {
-      "date": "2021-03-13",
-      "opponent_id": "15295276132",
-      "opponent_career_id": "career_009011",
-      "opponent_name": "Elizah White",
-      "opponent_team": "Newport",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:30",
-      "event": "KHSAA Region 6"
-    },
     {
       "date": "2021-03-13",
       "opponent_id": "15244903132",
@@ -101,6 +90,22 @@
     },
     {
       "date": "2021-03-13",
+      "opponent_id": "15295276132",
+      "opponent_career_id": "career_009011",
+      "opponent_name": "Elizah White",
+      "opponent_team": "Newport",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:30",
+      "event": "KHSAA Region 6"
+    },
+    {
+      "date": "2021-03-13",
       "opponent_id": "15316890132",
       "opponent_career_id": "career_006036",
       "opponent_name": "Emauryon Arnold",
@@ -128,7 +133,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "0:20",
       "event": "Tomcat Inv"
     },
     {
@@ -244,20 +249,20 @@
       "event": "Highlands"
     },
     {
-      "date": "2021-01-06",
-      "opponent_id": "OUTSTATE_65eac1286d88",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "MADEIRA",
+      "date": "2021-02-13",
+      "opponent_id": "15365691132",
+      "opponent_career_id": "career_009210",
+      "opponent_name": "Logan Iacona",
+      "opponent_team": "Highlands High School",
       "opponent_team_rank": null,
-      "opponent_weight": 113,
+      "opponent_weight": 215,
       "opponent_rank": null,
       "weight_class": "215",
       "result": "W",
-      "method": "FF",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
-      "event": "vs. MADEIRA"
+      "duration": "1:29",
+      "event": "Highlands"
     },
     {
       "date": "2021-01-06",
@@ -290,6 +295,22 @@
       "score": null,
       "duration": "4:00",
       "event": "vs. BETHEL-TATE"
+    },
+    {
+      "date": "2021-01-06",
+      "opponent_id": "OUTSTATE_65eac1286d88",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "MADEIRA",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. MADEIRA"
     }
   ],
   "career": {
@@ -341,5 +362,5 @@
     "losses": 65,
     "win_pct": 0.5
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

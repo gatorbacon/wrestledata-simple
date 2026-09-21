@@ -5,10 +5,15 @@
   "team_slug": "franklin_county",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
-    "overall": "6-22",
+    "overall": "6-23",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -85,6 +90,22 @@
     },
     {
       "date": "2023-01-21",
+      "opponent_id": "20287630132",
+      "opponent_career_id": null,
+      "opponent_name": "Montana Northern",
+      "opponent_team": "Jeffersonville",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:15",
+      "event": "Capital City Classic"
+    },
+    {
+      "date": "2023-01-21",
       "opponent_id": "22784260132",
       "opponent_career_id": "career_007576",
       "opponent_name": "Gregory Meyer",
@@ -97,6 +118,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:58",
+      "event": "Capital City Classic"
+    },
+    {
+      "date": "2023-01-21",
+      "opponent_id": "22784260132",
+      "opponent_career_id": "career_007576",
+      "opponent_name": "Gregory Meyer",
+      "opponent_team": "Western Hills",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:53",
       "event": "Capital City Classic"
     },
     {
@@ -161,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:54",
-      "event": "vs. Franklin County"
+      "event": "vs. Taylor County"
     },
     {
       "date": "2023-01-11",
@@ -245,22 +282,6 @@
     },
     {
       "date": "2022-12-28",
-      "opponent_id": "20625326132",
-      "opponent_career_id": "career_006773",
-      "opponent_name": "Sean Rogers",
-      "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:01",
-      "event": "vs. George Rogers Clark"
-    },
-    {
-      "date": "2022-12-28",
       "opponent_id": "20525997132",
       "opponent_career_id": null,
       "opponent_name": "Ahmad Al-Shaweily",
@@ -290,6 +311,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Bourbon County"
+    },
+    {
+      "date": "2022-12-28",
+      "opponent_id": "20625326132",
+      "opponent_career_id": "career_006773",
+      "opponent_name": "Sean Rogers",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:01",
+      "event": "vs. George Rogers Clark"
     },
     {
       "date": "2022-12-28",
@@ -337,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:16",
-      "event": "vs. Franklin County"
+      "event": "vs. Dupont Manual"
     },
     {
       "date": "2022-12-17",
@@ -353,7 +390,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:34",
-      "event": "vs. Franklin County"
+      "event": "vs. Fairdale"
     },
     {
       "date": "2022-12-17",
@@ -389,22 +426,6 @@
     },
     {
       "date": "2022-12-10",
-      "opponent_id": "OUTSTATE_9f42b4602541",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Moore",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Moore"
-    },
-    {
-      "date": "2022-12-10",
       "opponent_id": "20548863132",
       "opponent_career_id": "career_000791",
       "opponent_name": "Tyler Pittman",
@@ -417,7 +438,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:43",
-      "event": "vs. Franklin County"
+      "event": "vs. East Jessamine"
     },
     {
       "date": "2022-12-10",
@@ -466,6 +487,22 @@
       "score": null,
       "duration": "5:27",
       "event": "vs. West Jessamine"
+    },
+    {
+      "date": "2022-12-10",
+      "opponent_id": "OUTSTATE_9f42b4602541",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Moore",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Moore"
     }
   ],
   "career": {
@@ -480,15 +517,15 @@
       "season": 2023,
       "grade": 10,
       "team": "Franklin County",
-      "record": "6-22",
+      "record": "6-23",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 6,
-    "losses": 22,
-    "win_pct": 0.214
+    "losses": 23,
+    "win_pct": 0.207
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

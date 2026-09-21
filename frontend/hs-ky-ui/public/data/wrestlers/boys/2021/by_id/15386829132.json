@@ -5,6 +5,11 @@
   "team_slug": "western",
   "team_rank": null,
   "weight_class": 215,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2021,
   "current_rank": null,
   "record": {
@@ -24,7 +29,7 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 5
+    "pins": 6
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -49,6 +54,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:03",
+      "event": "KHSAA Region 3"
+    },
+    {
+      "date": "2021-03-13",
+      "opponent_id": "15265621132",
+      "opponent_career_id": "career_007881",
+      "opponent_name": "Brett Sizemore",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:58",
       "event": "KHSAA Region 3"
     },
     {
@@ -133,6 +154,22 @@
     },
     {
       "date": "2021-03-06",
+      "opponent_id": "15843128132",
+      "opponent_career_id": "career_007962",
+      "opponent_name": "Nathan Milburn",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:58",
+      "event": "Waggener Final Fray!"
+    },
+    {
+      "date": "2021-03-06",
       "opponent_id": "15265621132",
       "opponent_career_id": "career_007881",
       "opponent_name": "Brett Sizemore",
@@ -161,39 +198,7 @@
       "method": "MD",
       "score": "12-1",
       "duration": "7:00",
-      "event": "vs. Western"
-    },
-    {
-      "date": "2021-02-03",
-      "opponent_id": "14884820132",
-      "opponent_career_id": "career_009183",
-      "opponent_name": "Jacob Mann",
-      "opponent_team": "Dupont Manual",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "L",
-      "method": "MD",
-      "score": "13-0",
-      "duration": "7:00",
-      "event": "vs. Western"
-    },
-    {
-      "date": "2021-02-03",
-      "opponent_id": "15639055132",
-      "opponent_career_id": "career_008667",
-      "opponent_name": "Joel Hatchett",
-      "opponent_team": "Fern Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "L",
-      "method": "MD",
-      "score": "10-1",
-      "duration": "7:00",
-      "event": "vs. Western"
+      "event": "vs. Iroquois"
     },
     {
       "date": "2021-02-03",
@@ -209,7 +214,39 @@
       "method": "FALL",
       "score": null,
       "duration": "2:00",
-      "event": "vs. Western"
+      "event": "vs. Central"
+    },
+    {
+      "date": "2021-02-03",
+      "opponent_id": "14884820132",
+      "opponent_career_id": "career_009183",
+      "opponent_name": "Jacob Mann",
+      "opponent_team": "Dupont Manual",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "MD",
+      "score": "13-0",
+      "duration": "7:00",
+      "event": "vs. Dupont Manual"
+    },
+    {
+      "date": "2021-02-03",
+      "opponent_id": "15639055132",
+      "opponent_career_id": "career_008667",
+      "opponent_name": "Joel Hatchett",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "MD",
+      "score": "10-1",
+      "duration": "7:00",
+      "event": "vs. Fern Creek"
     }
   ],
   "career": {
@@ -227,7 +264,7 @@
       "season": 2023,
       "grade": 12,
       "team": "Western",
-      "record": "31-11",
+      "record": "30-11",
       "regional_place": null,
       "state_place": null
     },
@@ -235,7 +272,7 @@
       "season": 2022,
       "grade": 11,
       "team": "Western",
-      "record": "19-4",
+      "record": "21-5",
       "regional_place": 2,
       "state_place": null
     },
@@ -251,15 +288,15 @@
       "season": 2020,
       "grade": 9,
       "team": "Western",
-      "record": "13-5",
+      "record": "13-6",
       "regional_place": 4,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 69,
-    "losses": 27,
-    "win_pct": 0.719
+    "wins": 70,
+    "losses": 29,
+    "win_pct": 0.707
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,6 +5,11 @@
   "team_slug": "frederick_douglass",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.571,
-    "bonus_rate": 0.714,
+    "pin_rate": 0.552,
+    "bonus_rate": 0.69,
     "majors": 4,
     "techs": 0,
     "pins": 16
@@ -112,6 +117,22 @@
       "result": "L",
       "method": "DEC",
       "score": "5-1",
+      "duration": "7:00",
+      "event": "KHSAA First Round State Tournament 2"
+    },
+    {
+      "date": "2023-02-18",
+      "opponent_id": "20164565132",
+      "opponent_career_id": "career_003132",
+      "opponent_name": "Maalik Washington",
+      "opponent_team": "Conner",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "DEC",
+      "score": "3-2",
       "duration": "7:00",
       "event": "KHSAA First Round State Tournament 2"
     },
@@ -432,7 +453,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "0:56",
       "event": "Capital City Classic"
     },
     {
@@ -469,38 +490,6 @@
     },
     {
       "date": "2023-01-14",
-      "opponent_id": "20425043132",
-      "opponent_career_id": "career_007523",
-      "opponent_name": "Samueli Kaneke",
-      "opponent_team": "Tates Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Tates Creek"
-    },
-    {
-      "date": "2023-01-14",
-      "opponent_id": "20166736132",
-      "opponent_career_id": "career_006023",
-      "opponent_name": "Luis Cruz",
-      "opponent_team": "Henry Clay",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Henry Clay"
-    },
-    {
-      "date": "2023-01-14",
       "opponent_id": "20307885132",
       "opponent_career_id": "career_001771",
       "opponent_name": "Noah Weissbach",
@@ -530,6 +519,38 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Lafayette"
+    },
+    {
+      "date": "2023-01-14",
+      "opponent_id": "20425043132",
+      "opponent_career_id": "career_007523",
+      "opponent_name": "Samueli Kaneke",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Tates Creek"
+    },
+    {
+      "date": "2023-01-14",
+      "opponent_id": "20166736132",
+      "opponent_career_id": "career_006023",
+      "opponent_name": "Luis Cruz",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Henry Clay"
     },
     {
       "date": "2023-01-14",
@@ -693,22 +714,6 @@
     },
     {
       "date": "2022-12-21",
-      "opponent_id": "20662910132",
-      "opponent_career_id": "career_007253",
-      "opponent_name": "Thomas Fridell6",
-      "opponent_team": "Dupont Manual",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:30",
-      "event": "Fern Creek Gladiator"
-    },
-    {
-      "date": "2022-12-21",
       "opponent_id": "20288272132",
       "opponent_career_id": "career_006347",
       "opponent_name": "Hunter Pendley",
@@ -721,6 +726,22 @@
       "method": "DEC",
       "score": "7-4",
       "duration": "7:00",
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2022-12-21",
+      "opponent_id": "20662910132",
+      "opponent_career_id": "career_007253",
+      "opponent_name": "Thomas Fridell6",
+      "opponent_team": "Dupont Manual",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
       "event": "Fern Creek Gladiator"
     },
     {
@@ -754,22 +775,6 @@
       "score": "6-0",
       "duration": "7:00",
       "event": "Fern Creek Gladiator"
-    },
-    {
-      "date": "2022-12-17",
-      "opponent_id": "21225162132",
-      "opponent_career_id": "career_002257",
-      "opponent_name": "Braden Nickell",
-      "opponent_team": "Raceland",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Raceland"
     },
     {
       "date": "2022-12-17",
@@ -834,6 +839,22 @@
       "score": "5-3",
       "duration": "7:00",
       "event": "vs. Simon Kenton"
+    },
+    {
+      "date": "2022-12-17",
+      "opponent_id": "21225162132",
+      "opponent_career_id": "career_002257",
+      "opponent_name": "Braden Nickell",
+      "opponent_team": "Raceland",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Raceland"
     },
     {
       "date": "2022-12-10",
@@ -933,22 +954,6 @@
     },
     {
       "date": "2022-12-03",
-      "opponent_id": "20662066132",
-      "opponent_career_id": "career_001608",
-      "opponent_name": "Julian Stafford",
-      "opponent_team": "Martin County High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "DEC",
-      "score": "11-4",
-      "duration": "7:00",
-      "event": "Bruce Niday Classic"
-    },
-    {
-      "date": "2022-12-03",
       "opponent_id": "20703372132",
       "opponent_career_id": null,
       "opponent_name": "Zane Minger",
@@ -960,6 +965,22 @@
       "result": "L",
       "method": "MD",
       "score": "14-0",
+      "duration": "7:00",
+      "event": "Bruce Niday Classic"
+    },
+    {
+      "date": "2022-12-03",
+      "opponent_id": "20662066132",
+      "opponent_career_id": "career_001608",
+      "opponent_name": "Julian Stafford",
+      "opponent_team": "Martin County High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "DEC",
+      "score": "11-4",
       "duration": "7:00",
       "event": "Bruce Niday Classic"
     }
@@ -979,7 +1000,7 @@
       "season": 2025,
       "grade": 12,
       "team": "Frederick Douglass",
-      "record": "38-12",
+      "record": "40-13",
       "regional_place": 2,
       "state_place": 7
     },
@@ -1009,9 +1030,9 @@
     }
   ],
   "career_record": {
-    "wins": 137,
-    "losses": 56,
-    "win_pct": 0.71
+    "wins": 139,
+    "losses": 57,
+    "win_pct": 0.709
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

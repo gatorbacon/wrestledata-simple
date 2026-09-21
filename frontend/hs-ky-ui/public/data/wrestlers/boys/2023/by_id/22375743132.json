@@ -5,10 +5,15 @@
   "team_slug": "boyle_county",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
-    "overall": "11-6",
+    "overall": "14-8",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.8,
-    "bonus_rate": 0.8,
+    "pin_rate": 0.818,
+    "bonus_rate": 0.818,
     "majors": 0,
     "techs": 0,
-    "pins": 8
+    "pins": 9
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -37,10 +42,42 @@
   "match_list": [
     {
       "date": "2023-02-25",
-      "opponent_id": "20326215132",
-      "opponent_career_id": "career_003148",
-      "opponent_name": "Willie Rodriguez",
-      "opponent_team": "Covington Catholic",
+      "opponent_id": "20163859132",
+      "opponent_career_id": "career_002013",
+      "opponent_name": "Joe Scarborough",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:42",
+      "event": "KHSAA Final Round State Championship"
+    },
+    {
+      "date": "2023-02-25",
+      "opponent_id": "20163859132",
+      "opponent_career_id": "career_002013",
+      "opponent_name": "Joe Scarborough",
+      "opponent_team": "Oldham County",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:58",
+      "event": "KHSAA Final Round State Championship"
+    },
+    {
+      "date": "2023-02-25",
+      "opponent_id": "20263908132",
+      "opponent_career_id": "career_003846",
+      "opponent_name": "Colton Lewis",
+      "opponent_team": "Pleasure Ridge Park",
       "opponent_team_rank": null,
       "opponent_weight": 285,
       "opponent_rank": null,
@@ -48,7 +85,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:28",
+      "duration": "2:53",
       "event": "KHSAA Final Round State Championship"
     },
     {
@@ -69,26 +106,10 @@
     },
     {
       "date": "2023-02-25",
-      "opponent_id": "20163859132",
-      "opponent_career_id": "career_002013",
-      "opponent_name": "Joe Scarborough",
-      "opponent_team": "Oldham County",
-      "opponent_team_rank": null,
-      "opponent_weight": 285,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "5:42",
-      "event": "KHSAA Final Round State Championship"
-    },
-    {
-      "date": "2023-02-25",
-      "opponent_id": "20263908132",
-      "opponent_career_id": "career_003846",
-      "opponent_name": "Colton Lewis",
-      "opponent_team": "Pleasure Ridge Park",
+      "opponent_id": "20326215132",
+      "opponent_career_id": "career_003148",
+      "opponent_name": "Willie Rodriguez",
+      "opponent_team": "Covington Catholic",
       "opponent_team_rank": null,
       "opponent_weight": 285,
       "opponent_rank": null,
@@ -96,7 +117,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "2:53",
+      "duration": "0:28",
       "event": "KHSAA Final Round State Championship"
     },
     {
@@ -245,22 +266,6 @@
     },
     {
       "date": "2023-01-28",
-      "opponent_id": "OUTSTATE_d96249071cc2",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Johnson Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Johnson Central"
-    },
-    {
-      "date": "2023-01-28",
       "opponent_id": "20170064132",
       "opponent_career_id": "career_006012",
       "opponent_name": "Paul Robert Copes",
@@ -274,6 +279,22 @@
       "score": null,
       "duration": "0:37",
       "event": "vs. Harrison County"
+    },
+    {
+      "date": "2023-01-28",
+      "opponent_id": "OUTSTATE_d96249071cc2",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Johnson Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Johnson Central"
     },
     {
       "date": "2023-01-28",
@@ -402,15 +423,15 @@
       "season": 2023,
       "grade": 10,
       "team": "Boyle County",
-      "record": "11-6",
+      "record": "14-8",
       "regional_place": 2,
       "state_place": 7
     }
   ],
   "career_record": {
-    "wins": 98,
-    "losses": 16,
-    "win_pct": 0.86
+    "wins": 101,
+    "losses": 18,
+    "win_pct": 0.849
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

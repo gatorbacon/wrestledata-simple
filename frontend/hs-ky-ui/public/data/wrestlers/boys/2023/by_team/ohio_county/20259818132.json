@@ -5,6 +5,11 @@
   "team_slug": "ohio_county",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.774,
-    "bonus_rate": 0.83,
+    "pin_rate": 0.769,
+    "bonus_rate": 0.827,
     "majors": 2,
     "techs": 1,
-    "pins": 41
+    "pins": 40
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -289,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:41",
-      "event": "vs. Ohio County"
+      "event": "vs. Fairdale"
     },
     {
       "date": "2023-01-28",
@@ -305,7 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:32",
-      "event": "vs. Ohio County"
+      "event": "vs. Johnson Central"
     },
     {
       "date": "2023-01-28",
@@ -373,22 +378,6 @@
     },
     {
       "date": "2023-01-21",
-      "opponent_id": "20169819132",
-      "opponent_career_id": "career_003473",
-      "opponent_name": "James Rhody",
-      "opponent_team": "Western Hills",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:36",
-      "event": "Capital City Classic"
-    },
-    {
-      "date": "2023-01-21",
       "opponent_id": "20180679132",
       "opponent_career_id": "career_003253",
       "opponent_name": "Connor Metcalf",
@@ -401,6 +390,22 @@
       "method": "MD",
       "score": "8-0",
       "duration": "7:00",
+      "event": "Capital City Classic"
+    },
+    {
+      "date": "2023-01-21",
+      "opponent_id": "20169819132",
+      "opponent_career_id": "career_003473",
+      "opponent_name": "James Rhody",
+      "opponent_team": "Western Hills",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:36",
       "event": "Capital City Classic"
     },
     {
@@ -628,11 +633,11 @@
       "event": "Woodford County Invitational"
     },
     {
-      "date": "2022-12-21",
-      "opponent_id": "20501372132",
-      "opponent_career_id": "career_001735",
-      "opponent_name": "Braylen Pruitt",
-      "opponent_team": "Meade County",
+      "date": "2022-12-20",
+      "opponent_id": "20568543132",
+      "opponent_career_id": "career_003496",
+      "opponent_name": "Aiden Watson",
+      "opponent_team": "Nelson County",
       "opponent_team_rank": null,
       "opponent_weight": 157,
       "opponent_rank": null,
@@ -640,8 +645,24 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Ohio County"
+      "duration": "0:23",
+      "event": "vs. Nelson County"
+    },
+    {
+      "date": "2022-12-20",
+      "opponent_id": "20638916132",
+      "opponent_career_id": "career_003051",
+      "opponent_name": "Kingston Lewis",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:35",
+      "event": "vs. North Hardin"
     },
     {
       "date": "2022-12-20",
@@ -658,54 +679,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. North Hardin"
-    },
-    {
-      "date": "2022-12-20",
-      "opponent_id": "OUTSTATE_2f528488265f",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Boyle County"
-    },
-    {
-      "date": "2022-12-20",
-      "opponent_id": "OUTSTATE_3b9151ea3973",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Central",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Central"
-    },
-    {
-      "date": "2022-12-20",
-      "opponent_id": "20494163132",
-      "opponent_career_id": "career_006086",
-      "opponent_name": "Bayden Wilkins",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:45",
-      "event": "vs. Meade County"
     },
     {
       "date": "2022-12-20",
@@ -741,35 +714,19 @@
     },
     {
       "date": "2022-12-20",
-      "opponent_id": "20568543132",
-      "opponent_career_id": "career_003496",
-      "opponent_name": "Aiden Watson",
-      "opponent_team": "Nelson County",
+      "opponent_id": "OUTSTATE_2f528488265f",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Boyle County",
       "opponent_team_rank": null,
-      "opponent_weight": 157,
+      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "157",
       "result": "W",
-      "method": "FALL",
+      "method": "FF",
       "score": null,
-      "duration": "0:23",
-      "event": "vs. Ohio County"
-    },
-    {
-      "date": "2022-12-20",
-      "opponent_id": "20638916132",
-      "opponent_career_id": "career_003051",
-      "opponent_name": "Kingston Lewis",
-      "opponent_team": "North Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:35",
-      "event": "vs. Ohio County"
+      "duration": "7:00",
+      "event": "vs. Boyle County"
     },
     {
       "date": "2022-12-20",
@@ -788,20 +745,36 @@
       "event": "vs. Meade County"
     },
     {
-      "date": "2022-12-17",
-      "opponent_id": "20163750132",
-      "opponent_career_id": "career_006200",
-      "opponent_name": "Cael Miracle",
-      "opponent_team": "Taylor County",
+      "date": "2022-12-20",
+      "opponent_id": "OUTSTATE_3b9151ea3973",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Central",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Central"
+    },
+    {
+      "date": "2022-12-20",
+      "opponent_id": "20494163132",
+      "opponent_career_id": "career_006086",
+      "opponent_name": "Bayden Wilkins",
+      "opponent_team": "Meade County",
       "opponent_team_rank": null,
       "opponent_weight": 150,
       "opponent_rank": null,
       "weight_class": "157",
       "result": "W",
-      "method": "SV-1",
-      "score": "2-0",
-      "duration": "8:15",
-      "event": "2nd Annual Cardinal Clash"
+      "method": "FALL",
+      "score": null,
+      "duration": "1:45",
+      "event": "vs. Meade County"
     },
     {
       "date": "2022-12-17",
@@ -837,6 +810,22 @@
     },
     {
       "date": "2022-12-17",
+      "opponent_id": "20163750132",
+      "opponent_career_id": "career_006200",
+      "opponent_name": "Cael Miracle",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "SV-1",
+      "score": "2-0",
+      "duration": "8:15",
+      "event": "2nd Annual Cardinal Clash"
+    },
+    {
+      "date": "2022-12-17",
       "opponent_id": "20163678132",
       "opponent_career_id": "career_002713",
       "opponent_name": "Keenan Shively",
@@ -865,7 +854,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:32",
-      "event": "vs. Ohio County"
+      "event": "vs. Henderson County"
     },
     {
       "date": "2022-12-15",
@@ -881,7 +870,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:24",
-      "event": "vs. Ohio County"
+      "event": "vs. John Hardin"
     },
     {
       "date": "2022-12-10",
@@ -897,7 +886,7 @@
       "method": "DEC",
       "score": "5-2",
       "duration": "7:00",
-      "event": "vs. Ohio County"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2022-12-10",
@@ -913,7 +902,7 @@
       "method": "DEC",
       "score": "6-5",
       "duration": "7:00",
-      "event": "vs. Ohio County"
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2022-12-10",
@@ -929,7 +918,7 @@
       "method": "DEC",
       "score": "6-4",
       "duration": "7:00",
-      "event": "vs. Ohio County"
+      "event": "vs. Montgomery County"
     },
     {
       "date": "2022-12-10",
@@ -946,6 +935,22 @@
       "score": null,
       "duration": "4:38",
       "event": "vs. Oldham County"
+    },
+    {
+      "date": "2022-12-08",
+      "opponent_id": "20571563132",
+      "opponent_career_id": "career_006536",
+      "opponent_name": "Braedon Herron",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "DEC",
+      "score": "9-3",
+      "duration": "7:00",
+      "event": "vs. North Hardin"
     },
     {
       "date": "2022-12-08",
@@ -980,22 +985,6 @@
       "event": "vs. Daviess County"
     },
     {
-      "date": "2022-12-08",
-      "opponent_id": "20571563132",
-      "opponent_career_id": "career_006536",
-      "opponent_name": "Braedon Herron",
-      "opponent_team": "North Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "DEC",
-      "score": "9-3",
-      "duration": "7:00",
-      "event": "vs. Ohio County"
-    },
-    {
       "date": "2022-12-06",
       "opponent_id": "20641721132",
       "opponent_career_id": null,
@@ -1010,6 +999,70 @@
       "score": null,
       "duration": "2:16",
       "event": "vs. Southridge"
+    },
+    {
+      "date": "2022-12-03",
+      "opponent_id": "20176870132",
+      "opponent_career_id": "career_006868",
+      "opponent_name": "JACKSON RILEY",
+      "opponent_team": "Caldwell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:49",
+      "event": "vs. Caldwell County"
+    },
+    {
+      "date": "2022-12-03",
+      "opponent_id": "20438169132",
+      "opponent_career_id": "career_001330",
+      "opponent_name": "Jakobri Linton",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:30",
+      "event": "vs. John Hardin"
+    },
+    {
+      "date": "2022-12-03",
+      "opponent_id": "20429087132",
+      "opponent_career_id": "career_001671",
+      "opponent_name": "James Barragan",
+      "opponent_team": "McCracken County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-2",
+      "duration": "7:00",
+      "event": "vs. McCracken County"
+    },
+    {
+      "date": "2022-12-03",
+      "opponent_id": "20494163132",
+      "opponent_career_id": "career_006086",
+      "opponent_name": "Bayden Wilkins",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:33",
+      "event": "vs. Meade County"
     },
     {
       "date": "2022-12-03",
@@ -1028,70 +1081,6 @@
       "event": "vs. Spencer County"
     },
     {
-      "date": "2022-12-03",
-      "opponent_id": "20429087132",
-      "opponent_career_id": "career_001671",
-      "opponent_name": "James Barragan",
-      "opponent_team": "McCracken County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "DEC",
-      "score": "5-2",
-      "duration": "7:00",
-      "event": "vs. Ohio County"
-    },
-    {
-      "date": "2022-12-03",
-      "opponent_id": "20494163132",
-      "opponent_career_id": "career_006086",
-      "opponent_name": "Bayden Wilkins",
-      "opponent_team": "Meade County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:33",
-      "event": "vs. Ohio County"
-    },
-    {
-      "date": "2022-12-03",
-      "opponent_id": "20176870132",
-      "opponent_career_id": "career_006868",
-      "opponent_name": "JACKSON RILEY",
-      "opponent_team": "Caldwell County",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:49",
-      "event": "vs. Ohio County"
-    },
-    {
-      "date": "2022-12-03",
-      "opponent_id": "20438169132",
-      "opponent_career_id": "career_001330",
-      "opponent_name": "Jakobri Linton",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:30",
-      "event": "vs. Ohio County"
-    },
-    {
       "date": "2022-11-26",
       "opponent_id": "20165383132",
       "opponent_career_id": "career_003096",
@@ -1105,7 +1094,7 @@
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "vs. Ohio County"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2022-11-26",
@@ -1121,23 +1110,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:28",
-      "event": "vs. Ohio County"
-    },
-    {
-      "date": "2022-11-26",
-      "opponent_id": "20169819132",
-      "opponent_career_id": "career_003473",
-      "opponent_name": "James Rhody",
-      "opponent_team": "Western Hills",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:28",
-      "event": "vs. Western Hills"
+      "event": "vs. Holmes"
     },
     {
       "date": "2022-11-26",
@@ -1153,7 +1126,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:13",
-      "event": "vs. Ohio County"
+      "event": "vs. North Hardin"
     },
     {
       "date": "2022-11-26",
@@ -1170,6 +1143,22 @@
       "score": "7-4",
       "duration": "7:00",
       "event": "vs. Taylor County"
+    },
+    {
+      "date": "2022-11-26",
+      "opponent_id": "20169819132",
+      "opponent_career_id": "career_003473",
+      "opponent_name": "James Rhody",
+      "opponent_team": "Western Hills",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:28",
+      "event": "vs. Western Hills"
     }
   ],
   "career": {
@@ -1197,7 +1186,7 @@
       "season": 2022,
       "grade": 11,
       "team": "Ohio County",
-      "record": "52-12",
+      "record": "53-13",
       "regional_place": 2,
       "state_place": null
     },
@@ -1213,7 +1202,7 @@
       "season": 2020,
       "grade": 9,
       "team": "Ohio County",
-      "record": "41-18",
+      "record": "42-18",
       "regional_place": 4,
       "state_place": null
     },
@@ -1221,7 +1210,7 @@
       "season": 2019,
       "grade": 8,
       "team": "Ohio County",
-      "record": "26-17",
+      "record": "27-18",
       "regional_place": 3,
       "state_place": null
     },
@@ -1229,15 +1218,15 @@
       "season": 2018,
       "grade": 7,
       "team": "Ohio County",
-      "record": "20-14",
+      "record": "21-14",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 223,
-    "losses": 87,
-    "win_pct": 0.719
+    "wins": 227,
+    "losses": 89,
+    "win_pct": 0.718
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

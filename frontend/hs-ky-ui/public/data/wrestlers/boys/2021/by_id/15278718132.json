@@ -5,6 +5,11 @@
   "team_slug": "trinity_louisville",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2021,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.846,
-    "bonus_rate": 0.846,
+    "pin_rate": 0.833,
+    "bonus_rate": 0.833,
     "majors": 0,
     "techs": 0,
-    "pins": 11
+    "pins": 10
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -113,7 +118,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:59",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Great Crossing High School"
     },
     {
       "date": "2021-02-25",
@@ -145,7 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:13",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. St. Xavier"
     },
     {
       "date": "2021-02-12",
@@ -161,7 +166,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Male"
+    },
+    {
+      "date": "2021-02-12",
+      "opponent_id": "15606470132",
+      "opponent_career_id": "career_001800",
+      "opponent_name": "Brody McKune",
+      "opponent_team": "Moore",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "DEC",
+      "score": "7-5",
+      "duration": "7:00",
+      "event": "vs. Moore"
     },
     {
       "date": "2021-02-12",
@@ -180,38 +201,6 @@
       "event": "vs. Central"
     },
     {
-      "date": "2021-02-12",
-      "opponent_id": "15606470132",
-      "opponent_career_id": "career_001800",
-      "opponent_name": "Brody McKune",
-      "opponent_team": "Moore",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "DEC",
-      "score": "7-5",
-      "duration": "7:00",
-      "event": "vs. Trinity (Louisville)"
-    },
-    {
-      "date": "2021-02-06",
-      "opponent_id": "15312346132",
-      "opponent_career_id": "career_002064",
-      "opponent_name": "Jayven Williams",
-      "opponent_team": "Paducah Tilghman",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Trinity (Louisville)"
-    },
-    {
       "date": "2021-02-06",
       "opponent_id": "14880283132",
       "opponent_career_id": "career_006324",
@@ -225,23 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Trinity (Louisville)"
-    },
-    {
-      "date": "2021-02-06",
-      "opponent_id": "OUTSTATE_c781de39a30f",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Woodford County",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Woodford County"
+      "event": "vs. Conner"
     },
     {
       "date": "2021-02-06",
@@ -257,7 +230,23 @@
       "method": "SV-1",
       "score": "10-8",
       "duration": "8:15",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. LaRue County"
+    },
+    {
+      "date": "2021-02-06",
+      "opponent_id": "15312346132",
+      "opponent_career_id": "career_002064",
+      "opponent_name": "Jayven Williams",
+      "opponent_team": "Paducah Tilghman",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Paducah Tilghman"
     },
     {
       "date": "2021-02-06",
@@ -276,6 +265,38 @@
       "event": "vs. Owensboro"
     },
     {
+      "date": "2021-02-06",
+      "opponent_id": "OUTSTATE_c781de39a30f",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Woodford County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Woodford County"
+    },
+    {
+      "date": "2021-01-30",
+      "opponent_id": "14987757132",
+      "opponent_career_id": "career_008128",
+      "opponent_name": "Brayden Wells",
+      "opponent_team": "Campbell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:47",
+      "event": "vs. Campbell County"
+    },
+    {
       "date": "2021-01-30",
       "opponent_id": "14881601132",
       "opponent_career_id": "career_008767",
@@ -289,7 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "2:44",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Christian County"
     },
     {
       "date": "2021-01-30",
@@ -305,7 +326,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Johnson Central"
+    },
+    {
+      "date": "2021-01-30",
+      "opponent_id": "14936250132",
+      "opponent_career_id": "career_007027",
+      "opponent_name": "John `Trey` West",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Lafayette"
     },
     {
       "date": "2021-01-30",
@@ -324,38 +361,6 @@
       "event": "vs. Union County"
     },
     {
-      "date": "2021-01-30",
-      "opponent_id": "14987757132",
-      "opponent_career_id": "career_008128",
-      "opponent_name": "Brayden Wells",
-      "opponent_team": "Campbell County",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:47",
-      "event": "vs. Trinity (Louisville)"
-    },
-    {
-      "date": "2021-01-30",
-      "opponent_id": "14936250132",
-      "opponent_career_id": "career_007027",
-      "opponent_name": "John `Trey` West",
-      "opponent_team": "Lafayette",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Trinity (Louisville)"
-    },
-    {
       "date": "2021-01-23",
       "opponent_id": "14916433132",
       "opponent_career_id": "career_003102",
@@ -369,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2021-01-23",
@@ -385,7 +390,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:30",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Dixie Heights"
     },
     {
       "date": "2021-01-23",
@@ -404,22 +409,6 @@
       "event": "vs. Scott County"
     },
     {
-      "date": "2021-01-22",
-      "opponent_id": "15244859132",
-      "opponent_career_id": "career_003383",
-      "opponent_name": "JONAH BAYSINGER",
-      "opponent_team": "Scott County",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Trinity (Louisville)"
-    },
-    {
       "date": "2021-01-16",
       "opponent_id": "15277430132",
       "opponent_career_id": "career_005984",
@@ -433,7 +422,7 @@
       "method": "SV-1",
       "score": "7-2",
       "duration": "8:15",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Ryle"
     },
     {
       "date": "2021-01-16",
@@ -514,7 +503,7 @@
       "season": 2023,
       "grade": 12,
       "team": "Trinity (Louisville)",
-      "record": "35-16",
+      "record": "35-15",
       "regional_place": 1,
       "state_place": 8
     },
@@ -537,8 +526,8 @@
   ],
   "career_record": {
     "wins": 81,
-    "losses": 39,
-    "win_pct": 0.675
+    "losses": 38,
+    "win_pct": 0.681
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

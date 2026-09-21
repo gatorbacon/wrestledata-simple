@@ -5,6 +5,11 @@
   "team_slug": "frederick_douglass",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "7th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2022,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.889,
-    "bonus_rate": 0.889,
+    "pin_rate": 0.893,
+    "bonus_rate": 0.893,
     "majors": 0,
     "techs": 0,
-    "pins": 24
+    "pins": 25
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -129,7 +134,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Frederick Douglass"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2022-01-26",
@@ -229,6 +234,22 @@
     },
     {
       "date": "2022-01-15",
+      "opponent_id": "17275457132",
+      "opponent_career_id": "career_000260",
+      "opponent_name": "Nate Manning",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "2022 Warhawk Classic"
+    },
+    {
+      "date": "2022-01-15",
       "opponent_id": "17275456132",
       "opponent_career_id": "career_006293",
       "opponent_name": "Skyeler Tallent",
@@ -273,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Frederick Douglass"
+      "event": "vs. Danville"
     },
     {
       "date": "2022-01-12",
@@ -625,23 +646,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:20",
-      "event": "vs. Frederick Douglass"
-    },
-    {
-      "date": "2021-12-04",
-      "opponent_id": "16837557132",
-      "opponent_career_id": "career_007733",
-      "opponent_name": "Clayton Hockman",
-      "opponent_team": "Central Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:42",
-      "event": "vs. Frederick Douglass"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2021-12-04",
@@ -657,7 +662,23 @@
       "method": "DEC",
       "score": "12-9",
       "duration": "7:00",
-      "event": "vs. Frederick Douglass"
+      "event": "vs. Central"
+    },
+    {
+      "date": "2021-12-04",
+      "opponent_id": "16837557132",
+      "opponent_career_id": "career_007733",
+      "opponent_name": "Clayton Hockman",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:42",
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2021-12-04",
@@ -723,5 +744,5 @@
     "losses": 17,
     "win_pct": 0.785
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

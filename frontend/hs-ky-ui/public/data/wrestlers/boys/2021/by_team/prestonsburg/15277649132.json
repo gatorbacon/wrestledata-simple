@@ -5,6 +5,11 @@
   "team_slug": "prestonsburg",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2021,
   "current_rank": null,
   "record": {
@@ -85,6 +90,38 @@
     },
     {
       "date": "2021-01-30",
+      "opponent_id": "15295480132",
+      "opponent_career_id": "career_007702",
+      "opponent_name": "Dean Martin",
+      "opponent_team": "Boyd County",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Boyd County"
+    },
+    {
+      "date": "2021-01-30",
+      "opponent_id": "15323404132",
+      "opponent_career_id": "career_008545",
+      "opponent_name": "Elijah Baird",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Mccreary Central"
+    },
+    {
+      "date": "2021-01-30",
       "opponent_id": "15317293132",
       "opponent_career_id": "career_003460",
       "opponent_name": "Davin Skinner",
@@ -101,22 +138,6 @@
     },
     {
       "date": "2021-01-30",
-      "opponent_id": "15323404132",
-      "opponent_career_id": "career_008545",
-      "opponent_name": "Elijah Baird",
-      "opponent_team": "Mccreary Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Prestonsburg"
-    },
-    {
-      "date": "2021-01-30",
       "opponent_id": "OUTSTATE_c37d8d033e51",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -130,22 +151,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Knox Central High School"
-    },
-    {
-      "date": "2021-01-30",
-      "opponent_id": "15295480132",
-      "opponent_career_id": "career_007702",
-      "opponent_name": "Dean Martin",
-      "opponent_team": "Boyd County",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Prestonsburg"
     },
     {
       "date": "2021-01-23",
@@ -193,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Prestonsburg"
+      "event": "vs. Johnson Central"
     },
     {
       "date": "2021-01-16",
@@ -209,7 +214,7 @@
       "method": "TF",
       "score": "17-2",
       "duration": "0:00",
-      "event": "vs. Prestonsburg"
+      "event": "vs. Martin County High School"
     },
     {
       "date": "2021-01-16",
@@ -241,7 +246,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Prestonsburg"
+      "event": "vs. Boyd County"
     },
     {
       "date": "2021-01-08",
@@ -257,23 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:30",
-      "event": "vs. Prestonsburg"
-    },
-    {
-      "date": "2021-01-04",
-      "opponent_id": "15236985132",
-      "opponent_career_id": "career_009259",
-      "opponent_name": "Landon Scroggins",
-      "opponent_team": "Perry County Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:12",
-      "event": "vs. Prestonsburg"
+      "event": "vs. Perry County Central"
     },
     {
       "date": "2021-01-04",
@@ -289,7 +278,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Prestonsburg"
+      "event": "vs. Boyd County"
+    },
+    {
+      "date": "2021-01-04",
+      "opponent_id": "15236985132",
+      "opponent_career_id": "career_009259",
+      "opponent_name": "Landon Scroggins",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:12",
+      "event": "vs. Perry County Central"
     }
   ],
   "career": {
@@ -323,5 +328,5 @@
     "losses": 10,
     "win_pct": 0.412
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

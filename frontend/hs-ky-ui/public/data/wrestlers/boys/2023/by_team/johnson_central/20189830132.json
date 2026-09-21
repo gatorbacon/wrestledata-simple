@@ -5,10 +5,15 @@
   "team_slug": "johnson_central",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
-    "overall": "41-4",
+    "overall": "38-4",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -209,7 +214,7 @@
       "method": "DEC",
       "score": "5-0",
       "duration": "7:00",
-      "event": "vs. Johnson Central"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2023-01-28",
@@ -225,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Johnson Central"
+      "event": "vs. Fairdale"
     },
     {
       "date": "2023-01-28",
@@ -273,7 +278,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Johnson Central"
+      "event": "vs. Boyd County"
+    },
+    {
+      "date": "2023-01-21",
+      "opponent_id": "20262725132",
+      "opponent_career_id": "career_007364",
+      "opponent_name": "Brendan Nagle",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:35",
+      "event": "vs. John Hardin"
     },
     {
       "date": "2023-01-21",
@@ -322,22 +343,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Saint Albans Hs"
-    },
-    {
-      "date": "2023-01-21",
-      "opponent_id": "20262725132",
-      "opponent_career_id": "career_007364",
-      "opponent_name": "Brendan Nagle",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:35",
-      "event": "vs. Johnson Central"
     },
     {
       "date": "2023-01-14",
@@ -485,22 +490,6 @@
     },
     {
       "date": "2023-01-06",
-      "opponent_id": "20390082132",
-      "opponent_career_id": null,
-      "opponent_name": "Tyler Roark",
-      "opponent_team": "Woodrow Wilson",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Woodrow Wilson"
-    },
-    {
-      "date": "2023-01-06",
       "opponent_id": "20492541132",
       "opponent_career_id": null,
       "opponent_name": "Hunter Whittaker",
@@ -516,6 +505,22 @@
       "event": "vs. Independence H.S."
     },
     {
+      "date": "2023-01-06",
+      "opponent_id": "20390082132",
+      "opponent_career_id": null,
+      "opponent_name": "Tyler Roark",
+      "opponent_team": "Woodrow Wilson",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Woodrow Wilson"
+    },
+    {
       "date": "2022-12-29",
       "opponent_id": "20837774132",
       "opponent_career_id": "career_006911",
@@ -529,7 +534,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:24",
-      "event": "Woodford County Invitational"
+      "event": "WCI"
     },
     {
       "date": "2022-12-29",
@@ -545,7 +550,7 @@
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "Woodford County Invitational"
+      "event": "WCI"
     },
     {
       "date": "2022-12-29",
@@ -561,7 +566,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "Woodford County Invitational"
+      "event": "WCI"
     },
     {
       "date": "2022-12-29",
@@ -645,22 +650,6 @@
     },
     {
       "date": "2022-12-17",
-      "opponent_id": "20662066132",
-      "opponent_career_id": "career_001608",
-      "opponent_name": "Julian Stafford",
-      "opponent_team": "Martin County High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Bobby Bates"
-    },
-    {
-      "date": "2022-12-17",
       "opponent_id": "20741114132",
       "opponent_career_id": null,
       "opponent_name": "Daylen Stapleton",
@@ -673,6 +662,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
+      "event": "Bobby Bates"
+    },
+    {
+      "date": "2022-12-17",
+      "opponent_id": "20662066132",
+      "opponent_career_id": "career_001608",
+      "opponent_name": "Julian Stafford",
+      "opponent_team": "Martin County High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:07",
       "event": "Bobby Bates"
     },
     {
@@ -725,7 +730,7 @@
       "season": 2026,
       "grade": 12,
       "team": "Johnson Central",
-      "record": "52-6",
+      "record": "45-6",
       "regional_place": 1,
       "state_place": 3
     },
@@ -741,7 +746,7 @@
       "season": 2024,
       "grade": 10,
       "team": "Johnson Central",
-      "record": "35-9",
+      "record": "33-9",
       "regional_place": 1,
       "state_place": 5
     },
@@ -749,7 +754,7 @@
       "season": 2023,
       "grade": 9,
       "team": "Johnson Central",
-      "record": "41-4",
+      "record": "38-4",
       "regional_place": 1,
       "state_place": 3
     },
@@ -757,7 +762,7 @@
       "season": 2022,
       "grade": 9,
       "team": "Johnson Central",
-      "record": "36-4",
+      "record": "35-4",
       "regional_place": 1,
       "state_place": 3
     },
@@ -765,15 +770,15 @@
       "season": 2021,
       "grade": 8,
       "team": "Johnson Central",
-      "record": "40-8",
+      "record": "36-8",
       "regional_place": 1,
       "state_place": 4
     }
   ],
   "career_record": {
-    "wins": 245,
+    "wins": 228,
     "losses": 35,
-    "win_pct": 0.875
+    "win_pct": 0.867
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "apollo_high_school",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2021,
   "current_rank": null,
   "record": {
-    "overall": "8-16",
+    "overall": "11-17",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.5,
-    "bonus_rate": 0.5,
+    "pin_rate": 0.571,
+    "bonus_rate": 0.571,
     "majors": 0,
     "techs": 0,
-    "pins": 3
+    "pins": 4
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -81,6 +86,22 @@
       "method": "FALL",
       "score": null,
       "duration": "2:24",
+      "event": "KHSAA Region 2"
+    },
+    {
+      "date": "2021-03-13",
+      "opponent_id": "15254630132",
+      "opponent_career_id": "career_003054",
+      "opponent_name": "Andrew Brauer",
+      "opponent_team": "Owensboro Catholic High School ",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
       "event": "KHSAA Region 2"
     },
     {
@@ -197,6 +218,22 @@
     },
     {
       "date": "2021-02-25",
+      "opponent_id": "14881603132",
+      "opponent_career_id": "career_006133",
+      "opponent_name": "Oscar (J.T.) Adams",
+      "opponent_team": "Christian County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:21",
+      "event": "vs. Christian County"
+    },
+    {
+      "date": "2021-02-25",
       "opponent_id": "15203821132",
       "opponent_career_id": "career_003299",
       "opponent_name": "Malachi Gray",
@@ -213,22 +250,6 @@
     },
     {
       "date": "2021-02-25",
-      "opponent_id": "14881603132",
-      "opponent_career_id": "career_006133",
-      "opponent_name": "Oscar (J.T.) Adams",
-      "opponent_team": "Christian County",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Christian County"
-    },
-    {
-      "date": "2021-02-25",
       "opponent_id": "14915049132",
       "opponent_career_id": "career_003154",
       "opponent_name": "Gillam Nicodemus",
@@ -240,7 +261,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "1:18",
       "event": "vs. Ohio County"
     },
     {
@@ -489,15 +510,15 @@
       "season": 2021,
       "grade": 9,
       "team": "Apollo High School",
-      "record": "8-16",
+      "record": "11-17",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 21,
-    "losses": 25,
-    "win_pct": 0.457
+    "wins": 24,
+    "losses": 26,
+    "win_pct": 0.48
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

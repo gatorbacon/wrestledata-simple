@@ -5,10 +5,15 @@
   "team_slug": "mccreary_central",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "45-5",
+    "overall": "49-5",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.718,
-    "bonus_rate": 0.795,
+    "pin_rate": 0.744,
+    "bonus_rate": 0.821,
     "majors": 1,
     "techs": 2,
-    "pins": 28
+    "pins": 29
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -149,6 +154,22 @@
     },
     {
       "date": "2020-02-08",
+      "opponent_id": "11804674132",
+      "opponent_career_id": "career_008802",
+      "opponent_name": "Bryce Towle",
+      "opponent_team": "Frederick Douglas ",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "TF",
+      "score": "17-1",
+      "duration": "0:00",
+      "event": "KHSAA Region 7"
+    },
+    {
+      "date": "2020-02-08",
       "opponent_id": "10646268132",
       "opponent_career_id": "career_008693",
       "opponent_name": "Jeffrey Kinley",
@@ -164,20 +185,52 @@
       "event": "KHSAA Region 7"
     },
     {
-      "date": "2020-02-08",
-      "opponent_id": "11804674132",
-      "opponent_career_id": "career_008802",
-      "opponent_name": "Bryce Towle",
-      "opponent_team": "Frederick Douglas ",
+      "date": "2020-01-25",
+      "opponent_id": "10720383132",
+      "opponent_career_id": "career_010031",
+      "opponent_name": "Kaleb Lovins",
+      "opponent_team": "Ashland Blazer",
       "opponent_team_rank": null,
       "opponent_weight": 126,
       "opponent_rank": null,
       "weight_class": "126",
       "result": "W",
-      "method": "TF",
-      "score": "17-1",
-      "duration": "0:00",
-      "event": "KHSAA Region 7"
+      "method": "FALL",
+      "score": null,
+      "duration": "4:07",
+      "event": "vs. Ashland Blazer"
+    },
+    {
+      "date": "2020-01-25",
+      "opponent_id": "11106820132",
+      "opponent_career_id": "career_010151",
+      "opponent_name": "Landon Rhodd",
+      "opponent_team": "Fort Campbell",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:50",
+      "event": "vs. Fort Campbell"
+    },
+    {
+      "date": "2020-01-25",
+      "opponent_id": "11074969132",
+      "opponent_career_id": "career_006071",
+      "opponent_name": "Braxton Smith",
+      "opponent_team": "Martin County High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:35",
+      "event": "vs. Martin County High School"
     },
     {
       "date": "2020-01-25",
@@ -194,54 +247,6 @@
       "score": null,
       "duration": "2:43",
       "event": "vs. Walton Verona"
-    },
-    {
-      "date": "2020-01-25",
-      "opponent_id": "10720383132",
-      "opponent_career_id": "career_010031",
-      "opponent_name": "Kaleb Lovins",
-      "opponent_team": "Ashland Blazer",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:07",
-      "event": "vs. Mccreary Central"
-    },
-    {
-      "date": "2020-01-25",
-      "opponent_id": "11106820132",
-      "opponent_career_id": "career_010151",
-      "opponent_name": "Landon Rhodd",
-      "opponent_team": "Fort Campbell",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:50",
-      "event": "vs. Mccreary Central"
-    },
-    {
-      "date": "2020-01-25",
-      "opponent_id": "11074969132",
-      "opponent_career_id": "career_006071",
-      "opponent_name": "Braxton Smith",
-      "opponent_team": "Martin County High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:35",
-      "event": "vs. Mccreary Central"
     },
     {
       "date": "2020-01-18",
@@ -369,7 +374,23 @@
       "method": "TF",
       "score": "16-0",
       "duration": "2:30",
-      "event": "vs. Mccreary Central"
+      "event": "vs. Boyle County"
+    },
+    {
+      "date": "2020-01-10",
+      "opponent_id": "10672927132",
+      "opponent_career_id": "career_010114",
+      "opponent_name": "Ethan Updike",
+      "opponent_team": "Danville",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:32",
+      "event": "vs. Danville"
     },
     {
       "date": "2020-01-10",
@@ -385,7 +406,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:27",
-      "event": "vs. Mccreary Central"
+      "event": "vs. Knox Central High School"
     },
     {
       "date": "2020-01-10",
@@ -417,23 +438,55 @@
       "method": "FALL",
       "score": null,
       "duration": "0:14",
-      "event": "vs. Mccreary Central"
+      "event": "vs. Perry County Central"
     },
     {
       "date": "2020-01-10",
-      "opponent_id": "10672927132",
-      "opponent_career_id": "career_010114",
-      "opponent_name": "Ethan Updike",
-      "opponent_team": "Danville",
+      "opponent_id": "12260875132",
+      "opponent_career_id": "career_010333",
+      "opponent_name": "Elizabeth Browning",
+      "opponent_team": "Perry County Central",
       "opponent_team_rank": null,
-      "opponent_weight": 132,
+      "opponent_weight": 126,
       "opponent_rank": null,
-      "weight_class": "132",
+      "weight_class": "126",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:31",
-      "event": "vs. Mccreary Central"
+      "duration": "0:13",
+      "event": "vs. Perry County Central"
+    },
+    {
+      "date": "2020-01-04",
+      "opponent_id": "10779006132",
+      "opponent_career_id": "career_010216",
+      "opponent_name": "Taylor Murphey",
+      "opponent_team": "John Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. John Hardin"
+    },
+    {
+      "date": "2020-01-04",
+      "opponent_id": "10806211132",
+      "opponent_career_id": "career_008964",
+      "opponent_name": "Luke Chapman",
+      "opponent_team": "Lafayette",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "DEC",
+      "score": "9-5",
+      "duration": "7:00",
+      "event": "vs. Lafayette"
     },
     {
       "date": "2020-01-04",
@@ -450,38 +503,6 @@
       "score": null,
       "duration": "1:37",
       "event": "vs. Walton Verona"
-    },
-    {
-      "date": "2020-01-04",
-      "opponent_id": "10779006132",
-      "opponent_career_id": "career_010216",
-      "opponent_name": "Taylor Murphey",
-      "opponent_team": "John Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Mccreary Central"
-    },
-    {
-      "date": "2020-01-04",
-      "opponent_id": "10806211132",
-      "opponent_career_id": "career_008964",
-      "opponent_name": "Luke Chapman",
-      "opponent_team": "Lafayette",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "DEC",
-      "score": "9-5",
-      "duration": "7:00",
-      "event": "vs. Mccreary Central"
     },
     {
       "date": "2020-01-04",
@@ -577,7 +598,7 @@
       "method": "DEC",
       "score": "9-6",
       "duration": "7:00",
-      "event": "vs. Mccreary Central"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2019-12-21",
@@ -593,7 +614,7 @@
       "method": "DFLT",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Mccreary Central"
+      "event": "vs. Central"
     },
     {
       "date": "2019-12-21",
@@ -673,7 +694,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Mccreary Central"
+      "event": "vs. Knox Central High School"
     },
     {
       "date": "2019-12-18",
@@ -693,22 +714,6 @@
     },
     {
       "date": "2019-12-14",
-      "opponent_id": "10553677132",
-      "opponent_career_id": "career_010051",
-      "opponent_name": "Randi Hukle",
-      "opponent_team": "Boyle County",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Boyle County"
-    },
-    {
-      "date": "2019-12-14",
       "opponent_id": "10553660132",
       "opponent_career_id": "career_003094",
       "opponent_name": "Evan Browning",
@@ -721,7 +726,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Mccreary Central"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2019-12-14",
@@ -737,7 +742,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:19",
-      "event": "vs. Mccreary Central"
+      "event": "vs. Danville"
     },
     {
       "date": "2019-12-14",
@@ -753,7 +758,23 @@
       "method": "DEC",
       "score": "13-12",
       "duration": "7:00",
-      "event": "vs. Mccreary Central"
+      "event": "vs. LaRue County"
+    },
+    {
+      "date": "2019-12-14",
+      "opponent_id": "10553677132",
+      "opponent_career_id": "career_010051",
+      "opponent_name": "Randi Hukle",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Boyle County"
     },
     {
       "date": "2019-12-14",
@@ -786,6 +807,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Taylor County"
+    },
+    {
+      "date": "2019-12-07",
+      "opponent_id": "11113903132",
+      "opponent_career_id": "career_007730",
+      "opponent_name": "Devavion Armstard",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Central Hardin"
     },
     {
       "date": "2019-12-07",
@@ -836,22 +873,6 @@
       "event": "vs. Nelson County"
     },
     {
-      "date": "2019-12-07",
-      "opponent_id": "11113903132",
-      "opponent_career_id": "career_007730",
-      "opponent_name": "Devavion Armstard",
-      "opponent_team": "Central Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Mccreary Central"
-    },
-    {
       "date": "2019-12-04",
       "opponent_id": "10704425132",
       "opponent_career_id": "career_010245",
@@ -865,7 +886,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Mccreary Central"
+      "event": "vs. Madison Central"
     },
     {
       "date": "2019-12-04",
@@ -907,7 +928,7 @@
       "season": 2021,
       "grade": 11,
       "team": "Mccreary Central",
-      "record": "10-13",
+      "record": "10-14",
       "regional_place": null,
       "state_place": null
     },
@@ -915,7 +936,7 @@
       "season": 2020,
       "grade": 12,
       "team": "Mccreary Central",
-      "record": "45-5",
+      "record": "49-5",
       "regional_place": 2,
       "state_place": 5
     },
@@ -929,9 +950,9 @@
     }
   ],
   "career_record": {
-    "wins": 63,
-    "losses": 24,
-    "win_pct": 0.724
+    "wins": 67,
+    "losses": 25,
+    "win_pct": 0.728
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

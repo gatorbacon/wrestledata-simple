@@ -5,10 +5,15 @@
   "team_slug": "east_jessamine",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2022,
   "current_rank": null,
   "record": {
-    "overall": "5-10",
+    "overall": "5-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -181,6 +186,22 @@
     },
     {
       "date": "2021-12-11",
+      "opponent_id": "16732856132",
+      "opponent_career_id": "career_008043",
+      "opponent_name": "John Freeman",
+      "opponent_team": "Covington Catholic",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "L",
+      "method": "DEC",
+      "score": "6-0",
+      "duration": "7:00",
+      "event": "vs. Covington Catholic"
+    },
+    {
+      "date": "2021-12-11",
       "opponent_id": "16735454132",
       "opponent_career_id": "career_006783",
       "opponent_name": "Logan Baker",
@@ -197,38 +218,6 @@
     },
     {
       "date": "2021-12-11",
-      "opponent_id": "16998630132",
-      "opponent_career_id": "career_008452",
-      "opponent_name": "Anthony Spencer",
-      "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. George Rogers Clark"
-    },
-    {
-      "date": "2021-12-11",
-      "opponent_id": "16732856132",
-      "opponent_career_id": "career_008043",
-      "opponent_name": "John Freeman",
-      "opponent_team": "Covington Catholic",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "138",
-      "result": "L",
-      "method": "DEC",
-      "score": "6-0",
-      "duration": "7:00",
-      "event": "vs. East Jessamine"
-    },
-    {
-      "date": "2021-12-11",
       "opponent_id": "16845369132",
       "opponent_career_id": "career_006631",
       "opponent_name": "Devin Willett",
@@ -242,6 +231,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Thomas Nelson"
+    },
+    {
+      "date": "2021-12-11",
+      "opponent_id": "16998630132",
+      "opponent_career_id": "career_008452",
+      "opponent_name": "Anthony Spencer",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "138",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. George Rogers Clark"
     },
     {
       "date": "2021-12-04",
@@ -313,15 +318,15 @@
       "season": 2022,
       "grade": 11,
       "team": "East Jessamine",
-      "record": "5-10",
+      "record": "5-11",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 15,
-    "losses": 17,
-    "win_pct": 0.469
+    "losses": 18,
+    "win_pct": 0.455
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

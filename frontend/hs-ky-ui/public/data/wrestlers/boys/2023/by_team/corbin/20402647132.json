@@ -5,10 +5,15 @@
   "team_slug": "corbin",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
-    "overall": "34-9",
+    "overall": "34-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.75,
-    "bonus_rate": 0.792,
+    "pin_rate": 0.792,
+    "bonus_rate": 0.833,
     "majors": 0,
     "techs": 1,
-    "pins": 18
+    "pins": 19
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -49,6 +54,22 @@
       "method": "FALL",
       "score": null,
       "duration": "3:14",
+      "event": "KHSAA Region 7"
+    },
+    {
+      "date": "2023-02-11",
+      "opponent_id": "20648787132",
+      "opponent_career_id": "career_006164",
+      "opponent_name": "marcus mills",
+      "opponent_team": "Somerset",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:55",
       "event": "KHSAA Region 7"
     },
     {
@@ -101,38 +122,6 @@
     },
     {
       "date": "2023-01-28",
-      "opponent_id": "20195591132",
-      "opponent_career_id": "career_006602",
-      "opponent_name": "Braydon Kessinger",
-      "opponent_team": "Spencer County",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "DEC",
-      "score": "12-8",
-      "duration": "7:00",
-      "event": "vs. Spencer County"
-    },
-    {
-      "date": "2023-01-28",
-      "opponent_id": "20374576132",
-      "opponent_career_id": "career_003852",
-      "opponent_name": "Blake Taylor",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:35",
-      "event": "vs. Simon Kenton"
-    },
-    {
-      "date": "2023-01-28",
       "opponent_id": "OUTSTATE_ce3b8bde608e",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -146,6 +135,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Campbell County"
+    },
+    {
+      "date": "2023-01-28",
+      "opponent_id": "20195591132",
+      "opponent_career_id": "career_006602",
+      "opponent_name": "Braydon Kessinger",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "DEC",
+      "score": "12-8",
+      "duration": "7:00",
+      "event": "vs. Spencer County"
     },
     {
       "date": "2023-01-28",
@@ -180,6 +185,22 @@
       "event": "vs. Newport"
     },
     {
+      "date": "2023-01-28",
+      "opponent_id": "20374576132",
+      "opponent_career_id": "career_003852",
+      "opponent_name": "Blake Taylor",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:35",
+      "event": "vs. Simon Kenton"
+    },
+    {
       "date": "2023-01-25",
       "opponent_id": "20458786132",
       "opponent_career_id": "career_007294",
@@ -209,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:59",
-      "event": "vs. Corbin"
+      "event": "vs. Bell County"
     },
     {
       "date": "2023-01-19",
@@ -229,19 +250,19 @@
     },
     {
       "date": "2023-01-17",
-      "opponent_id": "20909120132",
-      "opponent_career_id": "career_003592",
-      "opponent_name": "Jayden Caldwell",
-      "opponent_team": "Knox Central High School",
+      "opponent_id": "OUTSTATE_8c2dc60868b7",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Barbourville",
       "opponent_team_rank": null,
-      "opponent_weight": 132,
+      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "144",
       "result": "W",
-      "method": "FALL",
+      "method": "FF",
       "score": null,
-      "duration": "1:00",
-      "event": "vs. Knox Central High School"
+      "duration": "7:00",
+      "event": "vs. Barbourville"
     },
     {
       "date": "2023-01-17",
@@ -261,19 +282,19 @@
     },
     {
       "date": "2023-01-17",
-      "opponent_id": "OUTSTATE_8c2dc60868b7",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Barbourville",
+      "opponent_id": "20909120132",
+      "opponent_career_id": "career_003592",
+      "opponent_name": "Jayden Caldwell",
+      "opponent_team": "Knox Central High School",
       "opponent_team_rank": null,
-      "opponent_weight": null,
+      "opponent_weight": 132,
       "opponent_rank": null,
       "weight_class": "144",
       "result": "W",
-      "method": "FF",
+      "method": "FALL",
       "score": null,
-      "duration": "7:00",
-      "event": "vs. Barbourville"
+      "duration": "1:00",
+      "event": "vs. Knox Central High School"
     },
     {
       "date": "2023-01-14",
@@ -289,7 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Corbin"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2023-01-14",
@@ -369,7 +390,7 @@
       "method": "DEC",
       "score": "6-2",
       "duration": "7:00",
-      "event": "vs. Corbin"
+      "event": "vs. Bell County"
     },
     {
       "date": "2023-01-11",
@@ -401,7 +422,7 @@
       "method": "DEC",
       "score": "6-3",
       "duration": "7:00",
-      "event": "vs. Corbin"
+      "event": "vs. Boyd County"
     },
     {
       "date": "2023-01-07",
@@ -418,22 +439,6 @@
       "score": null,
       "duration": "3:17",
       "event": "vs. Mason County"
-    },
-    {
-      "date": "2022-12-20",
-      "opponent_id": "20700030132",
-      "opponent_career_id": "career_007602",
-      "opponent_name": "Cody Hammons",
-      "opponent_team": "Knox Central High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 138,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "6:27",
-      "event": "vs. Knox Central High School"
     },
     {
       "date": "2022-12-20",
@@ -500,19 +505,35 @@
       "event": "vs. Knott County Central"
     },
     {
-      "date": "2022-12-17",
-      "opponent_id": "20410846132",
-      "opponent_career_id": "career_006509",
-      "opponent_name": "cameron burke",
-      "opponent_team": "Mccreary Central",
+      "date": "2022-12-20",
+      "opponent_id": "20700030132",
+      "opponent_career_id": "career_007602",
+      "opponent_name": "Cody Hammons",
+      "opponent_team": "Knox Central High School",
       "opponent_team_rank": null,
-      "opponent_weight": 132,
+      "opponent_weight": 138,
       "opponent_rank": null,
       "weight_class": "144",
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "2:06",
+      "duration": "6:27",
+      "event": "vs. Knox Central High School"
+    },
+    {
+      "date": "2022-12-17",
+      "opponent_id": "20656664132",
+      "opponent_career_id": "career_000100",
+      "opponent_name": "Toraze Davis",
+      "opponent_team": "Ballard",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "MFF",
+      "score": null,
+      "duration": "7:00",
       "event": "2nd Annual Cardinal Clash"
     },
     {
@@ -533,22 +554,6 @@
     },
     {
       "date": "2022-12-17",
-      "opponent_id": "20656664132",
-      "opponent_career_id": "career_000100",
-      "opponent_name": "Toraze Davis",
-      "opponent_team": "Ballard",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "MFF",
-      "score": null,
-      "duration": "7:00",
-      "event": "2nd Annual Cardinal Clash"
-    },
-    {
-      "date": "2022-12-17",
       "opponent_id": "20163682132",
       "opponent_career_id": "career_003419",
       "opponent_name": "Aden Ritchie",
@@ -561,6 +566,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:42",
+      "event": "2nd Annual Cardinal Clash"
+    },
+    {
+      "date": "2022-12-17",
+      "opponent_id": "20410846132",
+      "opponent_career_id": "career_006509",
+      "opponent_name": "cameron burke",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:06",
       "event": "2nd Annual Cardinal Clash"
     },
     {
@@ -645,22 +666,6 @@
     },
     {
       "date": "2022-12-10",
-      "opponent_id": "20606182132",
-      "opponent_career_id": "career_007322",
-      "opponent_name": "Brayden Fultz",
-      "opponent_team": "Harlan County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:32",
-      "event": "Taylor Family Chiropractic Log Mountain Rumble"
-    },
-    {
-      "date": "2022-12-10",
       "opponent_id": "20400260132",
       "opponent_career_id": "career_000594",
       "opponent_name": "Maddox Sizemore",
@@ -692,6 +697,22 @@
       "event": "Taylor Family Chiropractic Log Mountain Rumble"
     },
     {
+      "date": "2022-12-10",
+      "opponent_id": "20606182132",
+      "opponent_career_id": "career_007322",
+      "opponent_name": "Brayden Fultz",
+      "opponent_team": "Harlan County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:32",
+      "event": "Taylor Family Chiropractic Log Mountain Rumble"
+    },
+    {
       "date": "2022-12-07",
       "opponent_id": "20410846132",
       "opponent_career_id": "career_006509",
@@ -709,6 +730,22 @@
     },
     {
       "date": "2022-11-29",
+      "opponent_id": "20272764132",
+      "opponent_career_id": "career_007155",
+      "opponent_name": "Milka Woodring",
+      "opponent_team": "Bell County",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "144",
+      "result": "W",
+      "method": "DEC",
+      "score": "6-4",
+      "duration": "7:00",
+      "event": "vs. Bell County"
+    },
+    {
+      "date": "2022-11-29",
       "opponent_id": "20700030132",
       "opponent_career_id": "career_007602",
       "opponent_name": "Cody Hammons",
@@ -722,22 +759,6 @@
       "score": null,
       "duration": "0:57",
       "event": "vs. Knox Central High School"
-    },
-    {
-      "date": "2022-11-29",
-      "opponent_id": "20272764132",
-      "opponent_career_id": "career_007155",
-      "opponent_name": "Milka Woodring",
-      "opponent_team": "Bell County",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "144",
-      "result": "W",
-      "method": "DEC",
-      "score": "6-4",
-      "duration": "7:00",
-      "event": "vs. Corbin"
     }
   ],
   "career": {
@@ -763,7 +784,7 @@
       "season": 2025,
       "grade": 10,
       "team": "Corbin",
-      "record": "52-9",
+      "record": "51-9",
       "regional_place": 2,
       "state_place": null
     },
@@ -779,15 +800,15 @@
       "season": 2023,
       "grade": 8,
       "team": "Corbin",
-      "record": "34-9",
+      "record": "34-11",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 167,
-    "losses": 34,
-    "win_pct": 0.831
+    "wins": 166,
+    "losses": 36,
+    "win_pct": 0.822
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

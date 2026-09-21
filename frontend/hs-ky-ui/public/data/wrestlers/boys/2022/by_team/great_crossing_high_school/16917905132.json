@@ -5,6 +5,11 @@
   "team_slug": "great_crossing_high_school",
   "team_rank": null,
   "weight_class": 175,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2022,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.895,
-    "bonus_rate": 0.895,
+    "pin_rate": 0.9,
+    "bonus_rate": 0.9,
     "majors": 0,
     "techs": 0,
-    "pins": 17
+    "pins": 18
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -64,7 +69,7 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
+      "duration": "0:41",
       "event": "KHSAA Region 6"
     },
     {
@@ -101,22 +106,6 @@
     },
     {
       "date": "2022-01-29",
-      "opponent_id": "17324032132",
-      "opponent_career_id": "career_003429",
-      "opponent_name": "Lane Kiser",
-      "opponent_team": "Trinity (Louisville)",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:30",
-      "event": "vs. Trinity (Louisville)"
-    },
-    {
-      "date": "2022-01-29",
       "opponent_id": "OUTSTATE_ed3605df2d4c",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -146,6 +135,22 @@
       "score": null,
       "duration": "1:18",
       "event": "vs. St. Xavier"
+    },
+    {
+      "date": "2022-01-29",
+      "opponent_id": "17324032132",
+      "opponent_career_id": "career_003429",
+      "opponent_name": "Lane Kiser",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:30",
+      "event": "vs. Trinity (Louisville)"
     },
     {
       "date": "2022-01-22",
@@ -353,7 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:26",
-      "event": "vs. Great Crossing High School"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2022-01-04",
@@ -369,23 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:15",
-      "event": "vs. Great Crossing High School"
-    },
-    {
-      "date": "2021-12-29",
-      "opponent_id": "16763686132",
-      "opponent_career_id": "career_003395",
-      "opponent_name": "Logan Robertson",
-      "opponent_team": "South Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:52",
-      "event": "Woodford County Invitational"
+      "event": "vs. Dixie Heights"
     },
     {
       "date": "2021-12-29",
@@ -420,10 +409,10 @@
       "event": "Woodford County Invitational"
     },
     {
-      "date": "2021-12-28",
-      "opponent_id": "16763674132",
-      "opponent_career_id": "career_007930",
-      "opponent_name": "Nicholas Hom",
+      "date": "2021-12-29",
+      "opponent_id": "16763686132",
+      "opponent_career_id": "career_003395",
+      "opponent_name": "Logan Robertson",
       "opponent_team": "South Oldham",
       "opponent_team_rank": null,
       "opponent_weight": 165,
@@ -432,8 +421,8 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. South Oldham"
+      "duration": "1:52",
+      "event": "Woodford County Invitational"
     },
     {
       "date": "2021-12-28",
@@ -466,6 +455,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Mccreary Central"
+    },
+    {
+      "date": "2021-12-28",
+      "opponent_id": "16763674132",
+      "opponent_career_id": "career_007930",
+      "opponent_name": "Nicholas Hom",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. South Oldham"
     },
     {
       "date": "2021-12-28",
@@ -613,6 +618,22 @@
     },
     {
       "date": "2021-12-04",
+      "opponent_id": "16725498132",
+      "opponent_career_id": "career_006155",
+      "opponent_name": "CODY DAVIS",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "HCIWT"
+    },
+    {
+      "date": "2021-12-04",
       "opponent_id": "16761384132",
       "opponent_career_id": "career_001537",
       "opponent_name": "Geffory(Grant) Schneider",
@@ -675,7 +696,7 @@
       "season": 2021,
       "grade": 10,
       "team": "Great Crossing High School",
-      "record": "10-19",
+      "record": "10-21",
       "regional_place": null,
       "state_place": null
     },
@@ -690,8 +711,8 @@
   ],
   "career_record": {
     "wins": 68,
-    "losses": 70,
-    "win_pct": 0.493
+    "losses": 72,
+    "win_pct": 0.486
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

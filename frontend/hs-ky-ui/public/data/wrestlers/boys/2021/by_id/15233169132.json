@@ -5,6 +5,11 @@
   "team_slug": "male",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2021,
   "current_rank": null,
   "record": {
@@ -145,7 +150,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Male"
+      "event": "vs. Dupont Manual"
+    },
+    {
+      "date": "2021-02-24",
+      "opponent_id": "15832894132",
+      "opponent_career_id": "career_008420",
+      "opponent_name": "Mazen Kurdi",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:04",
+      "event": "vs. Fern Creek"
     },
     {
       "date": "2021-02-24",
@@ -180,22 +201,6 @@
       "event": "vs. North Oldham"
     },
     {
-      "date": "2021-02-24",
-      "opponent_id": "15832894132",
-      "opponent_career_id": "career_008420",
-      "opponent_name": "Mazen Kurdi",
-      "opponent_team": "Fern Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:04",
-      "event": "vs. Male"
-    },
-    {
       "date": "2021-02-20",
       "opponent_id": "14872742132",
       "opponent_career_id": "career_005802",
@@ -209,7 +214,7 @@
       "method": "DEC",
       "score": "4-3",
       "duration": "7:00",
-      "event": "vs. Male"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2021-02-20",
@@ -225,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Male"
+      "event": "vs. Conner"
     },
     {
       "date": "2021-02-20",
@@ -241,7 +246,7 @@
       "method": "DEC",
       "score": "6-1",
       "duration": "7:00",
-      "event": "vs. Male"
+      "event": "vs. Madison Central"
     },
     {
       "date": "2021-02-20",
@@ -273,7 +278,7 @@
       "method": "DEC",
       "score": "10-4",
       "duration": "7:00",
-      "event": "vs. Male"
+      "event": "vs. Desales"
     },
     {
       "date": "2021-02-13",
@@ -309,6 +314,22 @@
     },
     {
       "date": "2021-02-12",
+      "opponent_id": "15799398132",
+      "opponent_career_id": "career_006315",
+      "opponent_name": "Deandrell Mattison",
+      "opponent_team": "Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "DEC",
+      "score": "9-5",
+      "duration": "7:00",
+      "event": "vs. Central"
+    },
+    {
+      "date": "2021-02-12",
       "opponent_id": "15521570132",
       "opponent_career_id": "career_007947",
       "opponent_name": "Kyle Rufra",
@@ -325,22 +346,6 @@
     },
     {
       "date": "2021-02-12",
-      "opponent_id": "15799398132",
-      "opponent_career_id": "career_006315",
-      "opponent_name": "Deandrell Mattison",
-      "opponent_team": "Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "DEC",
-      "score": "9-5",
-      "duration": "7:00",
-      "event": "vs. Male"
-    },
-    {
-      "date": "2021-02-12",
       "opponent_id": "15606460132",
       "opponent_career_id": "career_009238",
       "opponent_name": "Seth Gerald",
@@ -354,6 +359,22 @@
       "score": "4-2",
       "duration": "7:00",
       "event": "vs. Moore"
+    },
+    {
+      "date": "2021-02-06",
+      "opponent_id": "15841573132",
+      "opponent_career_id": "career_009184",
+      "opponent_name": "Marcus Battle",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:00",
+      "event": "vs. Fairdale"
     },
     {
       "date": "2021-02-06",
@@ -386,22 +407,6 @@
       "score": "6-3",
       "duration": "7:00",
       "event": "vs. St. Xavier"
-    },
-    {
-      "date": "2021-02-06",
-      "opponent_id": "15841573132",
-      "opponent_career_id": "career_009184",
-      "opponent_name": "Marcus Battle",
-      "opponent_team": "Fairdale",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:00",
-      "event": "vs. Male"
     },
     {
       "date": "2021-02-06",
@@ -441,15 +446,15 @@
       "season": 2020,
       "grade": 11,
       "team": "Male",
-      "record": "14-27",
+      "record": "14-28",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 25,
-    "losses": 40,
-    "win_pct": 0.385
+    "losses": 41,
+    "win_pct": 0.379
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

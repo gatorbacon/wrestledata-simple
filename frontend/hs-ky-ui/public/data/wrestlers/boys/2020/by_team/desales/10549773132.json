@@ -5,6 +5,11 @@
   "team_slug": "desales",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.909,
-    "bonus_rate": 0.909,
+    "pin_rate": 1.0,
+    "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
     "pins": 10
@@ -35,22 +40,6 @@
     "worst_loss": null
   },
   "match_list": [
-    {
-      "date": "2020-01-25",
-      "opponent_id": "10661069132",
-      "opponent_career_id": "career_006439",
-      "opponent_name": "Jacobie White",
-      "opponent_team": "Harrison County",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:00",
-      "event": "vs. Harrison County"
-    },
     {
       "date": "2020-01-25",
       "opponent_id": "10788563132",
@@ -68,20 +57,20 @@
       "event": "vs. Frederick Douglass"
     },
     {
-      "date": "2020-01-22",
-      "opponent_id": "11003544132",
-      "opponent_career_id": "career_009699",
-      "opponent_name": "Jadavin Bradley",
-      "opponent_team": "Valley",
+      "date": "2020-01-25",
+      "opponent_id": "10661069132",
+      "opponent_career_id": "career_006439",
+      "opponent_name": "Jacobie White",
+      "opponent_team": "Harrison County",
       "opponent_team_rank": null,
-      "opponent_weight": 138,
+      "opponent_weight": 157,
       "opponent_rank": null,
       "weight_class": "165",
-      "result": "W",
+      "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. valley"
+      "duration": "4:00",
+      "event": "vs. Harrison County"
     },
     {
       "date": "2020-01-22",
@@ -114,6 +103,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Atherton"
+    },
+    {
+      "date": "2020-01-22",
+      "opponent_id": "11003544132",
+      "opponent_career_id": "career_009699",
+      "opponent_name": "Jadavin Bradley",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 138,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. valley"
     },
     {
       "date": "2020-01-22",
@@ -389,22 +394,6 @@
     },
     {
       "date": "2019-12-07",
-      "opponent_id": "10549783132",
-      "opponent_career_id": "career_008788",
-      "opponent_name": "Hayden Hartlage",
-      "opponent_team": "Desales",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:20",
-      "event": "King of the Bluegrass"
-    },
-    {
-      "date": "2019-12-07",
       "opponent_id": "10899991132",
       "opponent_career_id": "career_010360",
       "opponent_name": "Hunter Leharke",
@@ -417,6 +406,22 @@
       "method": "FALL",
       "score": null,
       "duration": "2:32",
+      "event": "King of the Bluegrass"
+    },
+    {
+      "date": "2019-12-07",
+      "opponent_id": "10549783132",
+      "opponent_career_id": "career_008788",
+      "opponent_name": "Hayden Hartlage",
+      "opponent_team": "Desales",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:20",
       "event": "King of the Bluegrass"
     },
     {
@@ -433,23 +438,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Desales"
-    },
-    {
-      "date": "2019-11-23",
-      "opponent_id": "10720145132",
-      "opponent_career_id": "career_007880",
-      "opponent_name": "Chris Cordoba",
-      "opponent_team": "North Bullitt",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. North Bullitt"
+      "event": "vs. Bullitt Central"
     },
     {
       "date": "2019-11-23",
@@ -482,6 +471,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Moore"
+    },
+    {
+      "date": "2019-11-23",
+      "opponent_id": "10720145132",
+      "opponent_career_id": "career_007880",
+      "opponent_name": "Chris Cordoba",
+      "opponent_team": "North Bullitt",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. North Bullitt"
     },
     {
       "date": "2019-11-23",
@@ -531,7 +536,7 @@
       "season": 2019,
       "grade": 10,
       "team": "Desales",
-      "record": "13-21",
+      "record": "12-20",
       "regional_place": 4,
       "state_place": null
     },
@@ -545,9 +550,9 @@
     }
   ],
   "career_record": {
-    "wins": 43,
-    "losses": 51,
+    "wins": 42,
+    "losses": 50,
     "win_pct": 0.457
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

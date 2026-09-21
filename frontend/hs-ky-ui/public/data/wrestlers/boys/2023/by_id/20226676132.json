@@ -5,10 +5,15 @@
   "team_slug": "paul_laurence_dunbar",
   "team_rank": null,
   "weight_class": 113,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
-    "overall": "11-10",
+    "overall": "12-13",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.4,
-    "bonus_rate": 0.6,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.75,
     "majors": 0,
     "techs": 1,
     "pins": 2
@@ -117,6 +122,22 @@
     },
     {
       "date": "2023-01-21",
+      "opponent_id": "20787084132",
+      "opponent_career_id": "career_003490",
+      "opponent_name": "Daniel Carpenter",
+      "opponent_team": "Bourbon County",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Bourbon County"
+    },
+    {
+      "date": "2023-01-21",
       "opponent_id": "20606176132",
       "opponent_career_id": "career_001096",
       "opponent_name": "Jason Maggard",
@@ -129,23 +150,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Paul Laurence Dunbar"
-    },
-    {
-      "date": "2023-01-21",
-      "opponent_id": "20164102132",
-      "opponent_career_id": "career_004476",
-      "opponent_name": "Kannan Stoner",
-      "opponent_team": "Western",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:10",
-      "event": "vs. Western"
+      "event": "vs. Harlan County"
     },
     {
       "date": "2023-01-21",
@@ -165,19 +170,19 @@
     },
     {
       "date": "2023-01-21",
-      "opponent_id": "20787084132",
-      "opponent_career_id": "career_003490",
-      "opponent_name": "Daniel Carpenter",
-      "opponent_team": "Bourbon County",
+      "opponent_id": "20164102132",
+      "opponent_career_id": "career_004476",
+      "opponent_name": "Kannan Stoner",
+      "opponent_team": "Western",
       "opponent_team_rank": null,
-      "opponent_weight": 113,
+      "opponent_weight": 106,
       "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
+      "weight_class": "106",
+      "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Paul Laurence Dunbar"
+      "duration": "3:10",
+      "event": "vs. Western"
     },
     {
       "date": "2023-01-14",
@@ -193,14 +198,14 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Paul Laurence Dunbar"
+      "event": "vs. Bryan Station"
     },
     {
       "date": "2023-01-14",
       "opponent_id": "OUTSTATE_31fbdaf5d8b7",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
-      "opponent_team": "Unknown",
+      "opponent_team": "Tates Creek",
       "opponent_team_rank": null,
       "opponent_weight": null,
       "opponent_rank": null,
@@ -321,39 +326,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:33",
-      "event": "vs. Paul Laurence Dunbar"
-    },
-    {
-      "date": "2022-12-10",
-      "opponent_id": "OUTSTATE_60d9f28b334a",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Henry Clay",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Henry Clay"
-    },
-    {
-      "date": "2022-12-10",
-      "opponent_id": "OUTSTATE_2c903e25261d",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Bourbon County",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "113",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Bourbon County"
+      "event": "vs. Bryan Station"
     },
     {
       "date": "2022-12-10",
@@ -386,6 +359,38 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Tates Creek"
+    },
+    {
+      "date": "2022-12-10",
+      "opponent_id": "OUTSTATE_60d9f28b334a",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Henry Clay",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Henry Clay"
+    },
+    {
+      "date": "2022-12-10",
+      "opponent_id": "OUTSTATE_2c903e25261d",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Bourbon County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Bourbon County"
     },
     {
       "date": "2022-12-07",
@@ -450,7 +455,7 @@
       "season": 2025,
       "grade": 12,
       "team": "Paul Laurence Dunbar",
-      "record": "13-13",
+      "record": "14-13",
       "regional_place": null,
       "state_place": null
     },
@@ -458,7 +463,7 @@
       "season": 2024,
       "grade": 11,
       "team": "Paul Laurence Dunbar",
-      "record": "19-10",
+      "record": "19-11",
       "regional_place": null,
       "state_place": null
     },
@@ -466,15 +471,15 @@
       "season": 2023,
       "grade": 10,
       "team": "Paul Laurence Dunbar",
-      "record": "11-10",
+      "record": "12-13",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 43,
-    "losses": 33,
-    "win_pct": 0.566
+    "wins": 45,
+    "losses": 37,
+    "win_pct": 0.549
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

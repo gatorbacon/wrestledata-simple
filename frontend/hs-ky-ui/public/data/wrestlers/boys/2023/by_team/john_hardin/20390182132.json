@@ -5,6 +5,11 @@
   "team_slug": "john_hardin",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
@@ -37,22 +42,6 @@
   "match_list": [
     {
       "date": "2022-12-10",
-      "opponent_id": "20424760132",
-      "opponent_career_id": "career_006617",
-      "opponent_name": "Naser Eqal",
-      "opponent_team": "Tates Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:31",
-      "event": "vs. Tates Creek"
-    },
-    {
-      "date": "2022-12-10",
       "opponent_id": "20190816132",
       "opponent_career_id": "career_003100",
       "opponent_name": "Bryant Faucett",
@@ -65,7 +54,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. John Hardin"
+      "event": "vs. Bullitt Central"
+    },
+    {
+      "date": "2022-12-10",
+      "opponent_id": "20317454132",
+      "opponent_career_id": "career_007495",
+      "opponent_name": "Eli Smith",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Scott County"
     },
     {
       "date": "2022-12-10",
@@ -101,19 +106,19 @@
     },
     {
       "date": "2022-12-10",
-      "opponent_id": "20317454132",
-      "opponent_career_id": "career_007495",
-      "opponent_name": "Eli Smith",
-      "opponent_team": "Scott County",
+      "opponent_id": "20424760132",
+      "opponent_career_id": "career_006617",
+      "opponent_name": "Naser Eqal",
+      "opponent_team": "Tates Creek",
       "opponent_team_rank": null,
-      "opponent_weight": 175,
+      "opponent_weight": 157,
       "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
+      "weight_class": "165",
+      "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Scott County"
+      "duration": "1:31",
+      "event": "vs. Tates Creek"
     }
   ],
   "career": {
@@ -138,5 +143,5 @@
     "losses": 3,
     "win_pct": 0.4
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

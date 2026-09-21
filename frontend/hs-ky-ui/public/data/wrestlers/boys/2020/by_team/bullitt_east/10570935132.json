@@ -5,6 +5,11 @@
   "team_slug": "bullitt_east",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
@@ -24,7 +29,7 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 7
+    "pins": 8
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -181,6 +186,22 @@
     },
     {
       "date": "2020-01-04",
+      "opponent_id": "10625017132",
+      "opponent_career_id": "career_010282",
+      "opponent_name": "Zechariah Harlan",
+      "opponent_team": "Moore",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:11",
+      "event": "Valley Main Event"
+    },
+    {
+      "date": "2020-01-04",
       "opponent_id": "11045114132",
       "opponent_career_id": "career_007891",
       "opponent_name": "Braxton Edge",
@@ -213,22 +234,6 @@
     },
     {
       "date": "2019-12-28",
-      "opponent_id": "11131270132",
-      "opponent_career_id": "career_010208",
-      "opponent_name": "Mathieu Girton",
-      "opponent_team": "Holmes",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:02",
-      "event": "Fern Creek Gladiator"
-    },
-    {
-      "date": "2019-12-28",
       "opponent_id": "11079132132",
       "opponent_career_id": null,
       "opponent_name": "Aiden Doorman",
@@ -258,6 +263,38 @@
       "score": null,
       "duration": "1:00",
       "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2019-12-28",
+      "opponent_id": "11131270132",
+      "opponent_career_id": "career_010208",
+      "opponent_name": "Mathieu Girton",
+      "opponent_team": "Holmes",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:02",
+      "event": "Fern Creek Gladiator"
+    },
+    {
+      "date": "2019-12-27",
+      "opponent_id": "10991586132",
+      "opponent_career_id": "career_008798",
+      "opponent_name": "Jerry Simpson",
+      "opponent_team": "Fairdale",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:11",
+      "event": "vs. Fairdale"
     },
     {
       "date": "2019-12-27",
@@ -306,22 +343,6 @@
       "score": null,
       "duration": "0:26",
       "event": "vs. South Oldham"
-    },
-    {
-      "date": "2019-12-27",
-      "opponent_id": "10991586132",
-      "opponent_career_id": "career_008798",
-      "opponent_name": "Jerry Simpson",
-      "opponent_team": "Fairdale",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:11",
-      "event": "vs. Fairdale"
     },
     {
       "date": "2019-12-21",
@@ -437,22 +458,6 @@
     },
     {
       "date": "2019-12-04",
-      "opponent_id": "10803713132",
-      "opponent_career_id": "career_009520",
-      "opponent_name": "Trevon Warren",
-      "opponent_team": "Fern Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:26",
-      "event": "vs. Fern Creek"
-    },
-    {
-      "date": "2019-12-04",
       "opponent_id": "OUTSTATE_3b9151ea3973",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -469,6 +474,22 @@
     },
     {
       "date": "2019-12-04",
+      "opponent_id": "10803713132",
+      "opponent_career_id": "career_009520",
+      "opponent_name": "Trevon Warren",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:26",
+      "event": "vs. Fern Creek"
+    },
+    {
+      "date": "2019-12-04",
       "opponent_id": "10991593132",
       "opponent_career_id": "career_009373",
       "opponent_name": "Simon Powell",
@@ -482,22 +503,6 @@
       "score": null,
       "duration": "1:10",
       "event": "vs. Fairdale"
-    },
-    {
-      "date": "2019-11-23",
-      "opponent_id": "11003919132",
-      "opponent_career_id": "career_009686",
-      "opponent_name": "Brendan Corley",
-      "opponent_team": "Trinity (Louisville)",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:28",
-      "event": "vs. Trinity (Louisville)"
     },
     {
       "date": "2019-11-23",
@@ -530,6 +535,22 @@
       "score": null,
       "duration": "1:26",
       "event": "vs. Moore"
+    },
+    {
+      "date": "2019-11-23",
+      "opponent_id": "11003919132",
+      "opponent_career_id": "career_009686",
+      "opponent_name": "Brendan Corley",
+      "opponent_team": "Trinity (Louisville)",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:28",
+      "event": "vs. Trinity (Louisville)"
     }
   ],
   "career": {
@@ -563,5 +584,5 @@
     "losses": 23,
     "win_pct": 0.361
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,6 +5,11 @@
   "team_slug": "green_county",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "Fr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
@@ -65,7 +70,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:40",
-      "event": "vs. Green County"
+      "event": "vs. Daviess County"
     },
     {
       "date": "2020-01-04",
@@ -117,6 +122,22 @@
     },
     {
       "date": "2019-12-27",
+      "opponent_id": "11648812132",
+      "opponent_career_id": "career_010231",
+      "opponent_name": "Bryce Firquin",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. LaRue County"
+    },
+    {
+      "date": "2019-12-27",
       "opponent_id": "10901067132",
       "opponent_career_id": "career_008851",
       "opponent_name": "Jaystin Johnson",
@@ -132,20 +153,20 @@
       "event": "vs. Male"
     },
     {
-      "date": "2019-12-27",
-      "opponent_id": "11648812132",
-      "opponent_career_id": "career_010231",
-      "opponent_name": "Bryce Firquin",
-      "opponent_team": "LaRue County",
+      "date": "2019-11-27",
+      "opponent_id": "OUTSTATE_5855457a7894",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Bullitt Central",
       "opponent_team_rank": null,
-      "opponent_weight": 215,
+      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
+      "result": "W",
+      "method": "FF",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. LaRue County"
+      "duration": "7:00",
+      "event": "vs. Bullitt Central"
     },
     {
       "date": "2019-11-27",
@@ -178,22 +199,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Nelson County"
-    },
-    {
-      "date": "2019-11-27",
-      "opponent_id": "OUTSTATE_5855457a7894",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Bullitt Central",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Bullitt Central"
     }
   ],
   "career": {
@@ -218,5 +223,5 @@
     "losses": 7,
     "win_pct": 0.3
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

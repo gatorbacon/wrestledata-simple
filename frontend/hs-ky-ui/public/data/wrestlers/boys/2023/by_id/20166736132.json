@@ -5,10 +5,15 @@
   "team_slug": "henry_clay",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
-    "overall": "16-10",
+    "overall": "16-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -181,6 +186,22 @@
     },
     {
       "date": "2023-01-14",
+      "opponent_id": "20456829132",
+      "opponent_career_id": "career_000974",
+      "opponent_name": "Liam Gutierrez",
+      "opponent_team": "Frederick Douglass",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Frederick Douglass"
+    },
+    {
+      "date": "2023-01-14",
       "opponent_id": "OUTSTATE_4f9bea7ad3f0",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -244,22 +265,6 @@
       "event": "vs. Montgomery County"
     },
     {
-      "date": "2023-01-14",
-      "opponent_id": "20456829132",
-      "opponent_career_id": "career_000974",
-      "opponent_name": "Liam Gutierrez",
-      "opponent_team": "Frederick Douglass",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Henry Clay"
-    },
-    {
       "date": "2023-01-11",
       "opponent_id": "20425043132",
       "opponent_career_id": "career_007523",
@@ -289,22 +294,6 @@
       "method": "FALL",
       "score": null,
       "duration": "1:49",
-      "event": "Lafayette 5-Star Classic"
-    },
-    {
-      "date": "2022-12-17",
-      "opponent_id": "20230723132",
-      "opponent_career_id": "career_002509",
-      "opponent_name": "Blaine Kimery",
-      "opponent_team": "South Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:59",
       "event": "Lafayette 5-Star Classic"
     },
     {
@@ -353,6 +342,38 @@
       "method": "FALL",
       "score": null,
       "duration": "0:58",
+      "event": "Lafayette 5-Star Classic"
+    },
+    {
+      "date": "2022-12-17",
+      "opponent_id": "20230723132",
+      "opponent_career_id": "career_002509",
+      "opponent_name": "Blaine Kimery",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:59",
+      "event": "Lafayette 5-Star Classic"
+    },
+    {
+      "date": "2022-12-17",
+      "opponent_id": "20230723132",
+      "opponent_career_id": "career_002509",
+      "opponent_name": "Blaine Kimery",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:32",
       "event": "Lafayette 5-Star Classic"
     },
     {
@@ -465,7 +486,7 @@
       "season": 2023,
       "grade": 12,
       "team": "Henry Clay",
-      "record": "16-10",
+      "record": "16-11",
       "regional_place": null,
       "state_place": null
     },
@@ -480,8 +501,8 @@
   ],
   "career_record": {
     "wins": 28,
-    "losses": 25,
-    "win_pct": 0.528
+    "losses": 26,
+    "win_pct": 0.519
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

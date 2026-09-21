@@ -5,6 +5,11 @@
   "team_slug": "dixie_heights",
   "team_rank": null,
   "weight_class": 165,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.667,
-    "bonus_rate": 0.778,
+    "pin_rate": 0.676,
+    "bonus_rate": 0.784,
     "majors": 3,
     "techs": 1,
-    "pins": 24
+    "pins": 25
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -229,6 +234,22 @@
     },
     {
       "date": "2023-02-04",
+      "opponent_id": "20241268132",
+      "opponent_career_id": "career_005961",
+      "opponent_name": "Isaiah Murphy",
+      "opponent_team": "Fern Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:54",
+      "event": "Mustang Classic @ NOHS"
+    },
+    {
+      "date": "2023-02-04",
       "opponent_id": "22555482132",
       "opponent_career_id": "career_004368",
       "opponent_name": "Julian Saylor",
@@ -257,7 +278,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:44",
-      "event": "vs. Dixie Heights"
+      "event": "vs. Cooper"
     },
     {
       "date": "2023-01-30",
@@ -417,7 +438,7 @@
       "method": "MD",
       "score": "10-2",
       "duration": "7:00",
-      "event": "vs. Dixie Heights"
+      "event": "vs. Covington Catholic"
     },
     {
       "date": "2023-01-10",
@@ -433,7 +454,7 @@
       "method": "DEC",
       "score": "9-3",
       "duration": "7:00",
-      "event": "vs. Dixie Heights"
+      "event": "vs. Campbell County"
     },
     {
       "date": "2023-01-07",
@@ -517,22 +538,6 @@
     },
     {
       "date": "2022-12-30",
-      "opponent_id": "20616626132",
-      "opponent_career_id": "career_006576",
-      "opponent_name": "Colin Ross",
-      "opponent_team": "Ryle",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "DQ",
-      "score": null,
-      "duration": "7:00",
-      "event": "2022 NKAC"
-    },
-    {
-      "date": "2022-12-30",
       "opponent_id": "20192047132",
       "opponent_career_id": "career_003116",
       "opponent_name": "Bryce Dennemann",
@@ -561,6 +566,22 @@
       "method": "FALL",
       "score": null,
       "duration": "3:05",
+      "event": "2022 NKAC"
+    },
+    {
+      "date": "2022-12-30",
+      "opponent_id": "20616626132",
+      "opponent_career_id": "career_006576",
+      "opponent_name": "Colin Ross",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "DQ",
+      "score": null,
+      "duration": "7:00",
       "event": "2022 NKAC"
     },
     {
@@ -641,23 +662,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Dixie Heights"
-    },
-    {
-      "date": "2022-12-10",
-      "opponent_id": "20211080132",
-      "opponent_career_id": "career_003818",
-      "opponent_name": "Landon Reed",
-      "opponent_team": "Moore",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "165",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Moore"
+      "event": "vs. Bullitt East"
     },
     {
       "date": "2022-12-10",
@@ -706,6 +711,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. West Jessamine"
+    },
+    {
+      "date": "2022-12-10",
+      "opponent_id": "20211080132",
+      "opponent_career_id": "career_003818",
+      "opponent_name": "Landon Reed",
+      "opponent_team": "Moore",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "165",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Moore"
     },
     {
       "date": "2022-12-03",
@@ -785,7 +806,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Dixie Heights"
+      "event": "vs. Boone County"
     },
     {
       "date": "2022-11-30",
@@ -874,5 +895,5 @@
     "losses": 10,
     "win_pct": 0.808
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

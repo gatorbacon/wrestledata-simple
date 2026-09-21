@@ -5,10 +5,15 @@
   "team_slug": "mccracken_county",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "19-0",
+    "overall": "25-1",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.714,
-    "bonus_rate": 0.857,
+    "pin_rate": 0.682,
+    "bonus_rate": 0.818,
     "majors": 2,
     "techs": 1,
     "pins": 15
@@ -149,22 +154,6 @@
     },
     {
       "date": "2020-01-15",
-      "opponent_id": "10887533132",
-      "opponent_career_id": null,
-      "opponent_name": "Ryan Criddle",
-      "opponent_team": "Central (Cape Girardeau)",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "MD",
-      "score": "10-2",
-      "duration": "7:00",
-      "event": "vs. Central (Cape Girardeau)"
-    },
-    {
-      "date": "2020-01-15",
       "opponent_id": "10806377132",
       "opponent_career_id": null,
       "opponent_name": "Henry Kennedy",
@@ -180,6 +169,22 @@
       "event": "vs. Notre Dame (Cape Girardeau)"
     },
     {
+      "date": "2020-01-15",
+      "opponent_id": "10887533132",
+      "opponent_career_id": null,
+      "opponent_name": "Ryan Criddle",
+      "opponent_team": "Central (Cape Girardeau)",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "MD",
+      "score": "10-2",
+      "duration": "7:00",
+      "event": "vs. Central (Cape Girardeau)"
+    },
+    {
       "date": "2020-01-11",
       "opponent_id": "11043958132",
       "opponent_career_id": "career_009136",
@@ -193,7 +198,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. McCracken County"
+      "event": "vs. Apollo High School"
+    },
+    {
+      "date": "2020-01-11",
+      "opponent_id": "10561511132",
+      "opponent_career_id": "career_009894",
+      "opponent_name": "Nathan Hale",
+      "opponent_team": "Christian County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "113",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:11",
+      "event": "vs. Christian County"
     },
     {
       "date": "2020-01-11",
@@ -228,36 +249,20 @@
       "event": "vs. Owensboro"
     },
     {
-      "date": "2020-01-11",
-      "opponent_id": "10561511132",
-      "opponent_career_id": "career_009894",
-      "opponent_name": "Nathan Hale",
-      "opponent_team": "Christian County",
+      "date": "2020-01-07",
+      "opponent_id": "10643379132",
+      "opponent_career_id": "career_006018",
+      "opponent_name": "Jermaine Poynter Jr.",
+      "opponent_team": "Henderson County",
       "opponent_team_rank": null,
-      "opponent_weight": 120,
+      "opponent_weight": 126,
       "opponent_rank": null,
-      "weight_class": "113",
+      "weight_class": "126",
       "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:11",
-      "event": "vs. McCracken County"
-    },
-    {
-      "date": "2019-12-28",
-      "opponent_id": "10698911132",
-      "opponent_career_id": "career_009615",
-      "opponent_name": "Robert McKinney",
-      "opponent_team": "North Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 113,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Christian County Invitational"
+      "method": "DEC",
+      "score": "13-7",
+      "duration": "7:00",
+      "event": "vs. Henderson"
     },
     {
       "date": "2019-12-28",
@@ -292,6 +297,22 @@
       "event": "Toyota of Hopkinsville Christian County Invitational"
     },
     {
+      "date": "2019-12-28",
+      "opponent_id": "10698911132",
+      "opponent_career_id": "career_009615",
+      "opponent_name": "Robert McKinney",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 113,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Christian County Invitational"
+    },
+    {
       "date": "2019-12-21",
       "opponent_id": "10690304132",
       "opponent_career_id": "career_007716",
@@ -305,7 +326,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. McCracken County"
+      "event": "vs. Caldwell County"
     },
     {
       "date": "2019-12-21",
@@ -450,7 +471,7 @@
       "season": 2022,
       "grade": 12,
       "team": "McCracken County",
-      "record": "29-9",
+      "record": "25-9",
       "regional_place": 2,
       "state_place": null
     },
@@ -466,15 +487,15 @@
       "season": 2020,
       "grade": 11,
       "team": "McCracken County",
-      "record": "19-0",
+      "record": "25-1",
       "regional_place": 2,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 69,
-    "losses": 16,
-    "win_pct": 0.812
+    "wins": 71,
+    "losses": 17,
+    "win_pct": 0.807
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

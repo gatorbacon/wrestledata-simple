@@ -5,10 +5,15 @@
   "team_slug": "central_hardin",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2022,
   "current_rank": null,
   "record": {
-    "overall": "13-12",
+    "overall": "13-14",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -149,6 +154,22 @@
     },
     {
       "date": "2022-01-26",
+      "opponent_id": "17086449132",
+      "opponent_career_id": "career_007669",
+      "opponent_name": "Aiden Roe",
+      "opponent_team": "Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:53",
+      "event": "vs. Central"
+    },
+    {
+      "date": "2022-01-26",
       "opponent_id": "16746445132",
       "opponent_career_id": "career_003421",
       "opponent_name": "Jacob McDonald",
@@ -162,22 +183,6 @@
       "score": null,
       "duration": "2:00",
       "event": "vs. Taylor County"
-    },
-    {
-      "date": "2022-01-26",
-      "opponent_id": "17086449132",
-      "opponent_career_id": "career_007669",
-      "opponent_name": "Aiden Roe",
-      "opponent_team": "Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 132,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:53",
-      "event": "vs. Central Hardin"
     },
     {
       "date": "2022-01-26",
@@ -289,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Central Hardin"
+      "event": "vs. Boyle County"
     },
     {
       "date": "2021-12-11",
@@ -305,6 +310,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:50",
+      "event": "vs. LaRue County"
+    },
+    {
+      "date": "2021-12-11",
+      "opponent_id": "16729537132",
+      "opponent_career_id": "career_003253",
+      "opponent_name": "Connor Metcalf",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:45",
       "event": "vs. LaRue County"
     },
     {
@@ -353,39 +374,7 @@
       "method": "TF",
       "score": "15-0",
       "duration": "0:00",
-      "event": "vs. Central Hardin"
-    },
-    {
-      "date": "2021-12-04",
-      "opponent_id": "16746445132",
-      "opponent_career_id": "career_003421",
-      "opponent_name": "Jacob McDonald",
-      "opponent_team": "Taylor County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:25",
-      "event": "vs. Taylor County"
-    },
-    {
-      "date": "2021-12-04",
-      "opponent_id": "16929211132",
-      "opponent_career_id": "career_008444",
-      "opponent_name": "Maximus Moncrief",
-      "opponent_team": "Frederick Douglass",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:36",
-      "event": "vs. Frederick Douglass"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2021-12-04",
@@ -418,6 +407,38 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Waggener High School"
+    },
+    {
+      "date": "2021-12-04",
+      "opponent_id": "16746445132",
+      "opponent_career_id": "career_003421",
+      "opponent_name": "Jacob McDonald",
+      "opponent_team": "Taylor County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:25",
+      "event": "vs. Taylor County"
+    },
+    {
+      "date": "2021-12-04",
+      "opponent_id": "16929211132",
+      "opponent_career_id": "career_008444",
+      "opponent_name": "Maximus Moncrief",
+      "opponent_team": "Frederick Douglass",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:36",
+      "event": "vs. Frederick Douglass"
     },
     {
       "date": "2021-12-01",
@@ -466,7 +487,7 @@
       "season": 2022,
       "grade": 12,
       "team": "Central Hardin",
-      "record": "13-12",
+      "record": "13-14",
       "regional_place": 4,
       "state_place": null
     },
@@ -489,8 +510,8 @@
   ],
   "career_record": {
     "wins": 27,
-    "losses": 28,
-    "win_pct": 0.491
+    "losses": 30,
+    "win_pct": 0.474
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

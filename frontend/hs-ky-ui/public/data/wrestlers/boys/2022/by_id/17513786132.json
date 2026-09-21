@@ -5,6 +5,11 @@
   "team_slug": "scott",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2022,
   "current_rank": null,
   "record": {
@@ -37,6 +42,22 @@
   "match_list": [
     {
       "date": "2021-12-15",
+      "opponent_id": "17035165132",
+      "opponent_career_id": "career_007740",
+      "opponent_name": "Joseph Robinson",
+      "opponent_team": "Cooper",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "vs. Cooper"
+    },
+    {
+      "date": "2021-12-15",
       "opponent_id": "OUTSTATE_e5c74b759956",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -52,22 +73,6 @@
       "event": "vs. KINGS"
     },
     {
-      "date": "2021-12-15",
-      "opponent_id": "17035165132",
-      "opponent_career_id": "career_007740",
-      "opponent_name": "Joseph Robinson",
-      "opponent_team": "Cooper",
-      "opponent_team_rank": null,
-      "opponent_weight": 285,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:00",
-      "event": "vs. Scott"
-    },
-    {
       "date": "2021-12-08",
       "opponent_id": "17118804132",
       "opponent_career_id": "career_007828",
@@ -81,7 +86,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Scott"
+      "event": "vs. Holmes"
     }
   ],
   "career": {
@@ -106,5 +111,5 @@
     "losses": 2,
     "win_pct": 0.333
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

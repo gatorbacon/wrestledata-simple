@@ -5,6 +5,11 @@
   "team_slug": "southern",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.692,
-    "bonus_rate": 0.769,
+    "pin_rate": 0.75,
+    "bonus_rate": 0.833,
     "majors": 0,
     "techs": 1,
     "pins": 9
@@ -165,6 +170,22 @@
     },
     {
       "date": "2020-01-11",
+      "opponent_id": "10549784132",
+      "opponent_career_id": "career_009495",
+      "opponent_name": "Jalen Polin",
+      "opponent_team": "Desales",
+      "opponent_team_rank": null,
+      "opponent_weight": 132,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "5:03",
+      "event": "Louisville City Championship"
+    },
+    {
+      "date": "2020-01-11",
       "opponent_id": "10901080132",
       "opponent_career_id": "career_006494",
       "opponent_name": "Trevor Vilums",
@@ -178,22 +199,6 @@
       "score": "11-8",
       "duration": "7:00",
       "event": "Louisville City Championship"
-    },
-    {
-      "date": "2020-01-04",
-      "opponent_id": "10698858132",
-      "opponent_career_id": "career_008702",
-      "opponent_name": "Devon Herron",
-      "opponent_team": "North Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "MD",
-      "score": "12-1",
-      "duration": "7:00",
-      "event": "Valley Main Event"
     },
     {
       "date": "2020-01-04",
@@ -225,6 +230,22 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
+      "event": "Valley Main Event"
+    },
+    {
+      "date": "2020-01-04",
+      "opponent_id": "10698858132",
+      "opponent_career_id": "career_008702",
+      "opponent_name": "Devon Herron",
+      "opponent_team": "North Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "MD",
+      "score": "12-1",
+      "duration": "7:00",
       "event": "Valley Main Event"
     },
     {
@@ -261,22 +282,6 @@
     },
     {
       "date": "2019-12-14",
-      "opponent_id": "10711635132",
-      "opponent_career_id": "career_009394",
-      "opponent_name": "Virgil Garcia",
-      "opponent_team": "Male",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "4:19",
-      "event": "Derby City Classic"
-    },
-    {
-      "date": "2019-12-14",
       "opponent_id": "11019663132",
       "opponent_career_id": "career_008037",
       "opponent_name": "Keith Williams",
@@ -289,6 +294,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:37",
+      "event": "Derby City Classic"
+    },
+    {
+      "date": "2019-12-14",
+      "opponent_id": "10711635132",
+      "opponent_career_id": "career_009394",
+      "opponent_name": "Virgil Garcia",
+      "opponent_team": "Male",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "4:19",
       "event": "Derby City Classic"
     },
     {
@@ -357,22 +378,6 @@
     },
     {
       "date": "2019-11-23",
-      "opponent_id": "10623864132",
-      "opponent_career_id": "career_008870",
-      "opponent_name": "Harrison Turrey",
-      "opponent_team": "Moore",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "DEC",
-      "score": "8-7",
-      "duration": "7:00",
-      "event": "vs. Southern"
-    },
-    {
-      "date": "2019-11-23",
       "opponent_id": "10549784132",
       "opponent_career_id": "career_009495",
       "opponent_name": "Jalen Polin",
@@ -385,7 +390,23 @@
       "method": "DEC",
       "score": "13-11",
       "duration": "7:00",
-      "event": "vs. Southern"
+      "event": "vs. Desales"
+    },
+    {
+      "date": "2019-11-23",
+      "opponent_id": "10623864132",
+      "opponent_career_id": "career_008870",
+      "opponent_name": "Harrison Turrey",
+      "opponent_team": "Moore",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "DEC",
+      "score": "8-7",
+      "duration": "7:00",
+      "event": "vs. Moore"
     },
     {
       "date": "2019-11-23",
@@ -401,7 +422,7 @@
       "method": "TF",
       "score": "26-7",
       "duration": "0:00",
-      "event": "vs. Southern"
+      "event": "vs. North Bullitt"
     }
   ],
   "career": {
@@ -427,7 +448,7 @@
       "season": 2019,
       "grade": 11,
       "team": "Southern",
-      "record": "23-15",
+      "record": "23-14",
       "regional_place": 1,
       "state_place": null
     },
@@ -435,7 +456,7 @@
       "season": 2018,
       "grade": 10,
       "team": "Southern",
-      "record": "14-11",
+      "record": "13-11",
       "regional_place": 4,
       "state_place": null
     },
@@ -443,15 +464,15 @@
       "season": 2017,
       "grade": 9,
       "team": "Southern",
-      "record": "4-12",
+      "record": "4-13",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 54,
+    "wins": 53,
     "losses": 49,
-    "win_pct": 0.524
+    "win_pct": 0.52
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

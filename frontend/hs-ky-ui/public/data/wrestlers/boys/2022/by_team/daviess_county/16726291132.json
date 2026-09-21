@@ -5,6 +5,11 @@
   "team_slug": "daviess_county",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2022,
   "current_rank": null,
   "record": {
@@ -35,22 +40,6 @@
     "worst_loss": null
   },
   "match_list": [
-    {
-      "date": "2021-12-20",
-      "opponent_id": "OUTSTATE_5f7b96c91c58",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Niceville",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Niceville"
-    },
     {
       "date": "2021-12-20",
       "opponent_id": "16721667132",
@@ -98,6 +87,22 @@
       "score": null,
       "duration": "1:03",
       "event": "vs. Gulf Breeze"
+    },
+    {
+      "date": "2021-12-20",
+      "opponent_id": "OUTSTATE_5f7b96c91c58",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Niceville",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Niceville"
     },
     {
       "date": "2021-12-20",
@@ -161,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "3:41",
-      "event": "vs. Daviess County"
+      "event": "vs. Caldwell County"
     },
     {
       "date": "2021-12-16",
@@ -178,22 +183,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. John Hardin"
-    },
-    {
-      "date": "2021-12-11",
-      "opponent_id": "OUTSTATE_1931198c3113",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Creek Wood",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Creek Wood"
     },
     {
       "date": "2021-12-11",
@@ -244,6 +233,54 @@
       "event": "vs. Harpeth"
     },
     {
+      "date": "2021-12-11",
+      "opponent_id": "OUTSTATE_1931198c3113",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Creek Wood",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Creek Wood"
+    },
+    {
+      "date": "2021-12-04",
+      "opponent_id": "17277843132",
+      "opponent_career_id": "career_006880",
+      "opponent_name": "Jones Howard",
+      "opponent_team": "George Rogers Clark",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:32",
+      "event": "vs. George Rogers Clark"
+    },
+    {
+      "date": "2021-12-04",
+      "opponent_id": "OUTSTATE_c4763ba75fbf",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Mccreary Central",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Mccreary Central"
+    },
+    {
       "date": "2021-12-04",
       "opponent_id": "17074229132",
       "opponent_career_id": "career_003215",
@@ -290,38 +327,6 @@
       "score": null,
       "duration": "0:45",
       "event": "vs. Madison Central"
-    },
-    {
-      "date": "2021-12-04",
-      "opponent_id": "17277843132",
-      "opponent_career_id": "career_006880",
-      "opponent_name": "Jones Howard",
-      "opponent_team": "George Rogers Clark",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:32",
-      "event": "vs. George Rogers Clark"
-    },
-    {
-      "date": "2021-12-04",
-      "opponent_id": "OUTSTATE_c4763ba75fbf",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Mccreary Central",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Mccreary Central"
     }
   ],
   "career": {
@@ -364,7 +369,7 @@
       "season": 2020,
       "grade": 8,
       "team": "Daviess County",
-      "record": "26-19",
+      "record": "26-20",
       "regional_place": null,
       "state_place": null
     },
@@ -379,8 +384,8 @@
   ],
   "career_record": {
     "wins": 79,
-    "losses": 61,
-    "win_pct": 0.564
+    "losses": 62,
+    "win_pct": 0.56
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

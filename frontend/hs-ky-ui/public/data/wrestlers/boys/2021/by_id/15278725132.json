@@ -5,6 +5,11 @@
   "team_slug": "bullitt_central",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2021,
   "current_rank": null,
   "record": {
@@ -241,7 +246,7 @@
       "method": "DEC",
       "score": "6-2",
       "duration": "7:00",
-      "event": "vs. Bullitt Central"
+      "event": "vs. Anderson County"
     },
     {
       "date": "2021-01-30",
@@ -258,6 +263,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. North Bullitt"
+    },
+    {
+      "date": "2021-01-30",
+      "opponent_id": "15339097132",
+      "opponent_career_id": "career_006174",
+      "opponent_name": "Braydon Kessinger",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "MD",
+      "score": "14-3",
+      "duration": "7:00",
+      "event": "vs. Spencer County"
     },
     {
       "date": "2021-01-30",
@@ -290,22 +311,6 @@
       "score": "8-7",
       "duration": "7:00",
       "event": "vs. South Oldham"
-    },
-    {
-      "date": "2021-01-30",
-      "opponent_id": "15339097132",
-      "opponent_career_id": "career_006174",
-      "opponent_name": "Braydon Kessinger",
-      "opponent_team": "Spencer County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "MD",
-      "score": "14-3",
-      "duration": "7:00",
-      "event": "vs. Spencer County"
     },
     {
       "date": "2021-01-20",
@@ -341,6 +346,22 @@
     },
     {
       "date": "2021-01-13",
+      "opponent_id": "15147567132",
+      "opponent_career_id": "career_003304",
+      "opponent_name": "Tyler Lattin",
+      "opponent_team": "Meade County",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:25",
+      "event": "vs. Meade County"
+    },
+    {
+      "date": "2021-01-13",
       "opponent_id": "14929078132",
       "opponent_career_id": "career_006041",
       "opponent_name": "Amari Hardin",
@@ -356,20 +377,20 @@
       "event": "vs. John Hardin"
     },
     {
-      "date": "2021-01-13",
-      "opponent_id": "15147567132",
-      "opponent_career_id": "career_003304",
-      "opponent_name": "Tyler Lattin",
-      "opponent_team": "Meade County",
+      "date": "2021-01-06",
+      "opponent_id": "14894775132",
+      "opponent_career_id": "career_000123",
+      "opponent_name": "John Floyd",
+      "opponent_team": "Bardstown",
       "opponent_team_rank": null,
-      "opponent_weight": 120,
+      "opponent_weight": 126,
       "opponent_rank": null,
-      "weight_class": "120",
-      "result": "L",
+      "weight_class": "126",
+      "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:25",
-      "event": "vs. Meade County"
+      "duration": "0:00",
+      "event": "vs. Bardstown"
     },
     {
       "date": "2021-01-06",
@@ -386,22 +407,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Taylor County"
-    },
-    {
-      "date": "2021-01-06",
-      "opponent_id": "14894775132",
-      "opponent_career_id": "career_000123",
-      "opponent_name": "John Floyd",
-      "opponent_team": "Bardstown",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Bullitt Central"
     }
   ],
   "career": {
@@ -444,5 +449,5 @@
     "losses": 45,
     "win_pct": 0.531
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

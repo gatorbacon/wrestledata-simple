@@ -5,10 +5,15 @@
   "team_slug": "st_xavier",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "16-15",
+    "overall": "16-14",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.846,
-    "bonus_rate": 0.923,
+    "pin_rate": 0.857,
+    "bonus_rate": 0.929,
     "majors": 1,
     "techs": 0,
-    "pins": 11
+    "pins": 12
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -97,7 +102,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:11",
-      "event": "vs. St. Xavier"
+      "event": "vs. Christian County"
     },
     {
       "date": "2020-01-25",
@@ -113,7 +118,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:48",
-      "event": "vs. St. Xavier"
+      "event": "vs. Fairdale"
     },
     {
       "date": "2020-01-25",
@@ -148,22 +153,6 @@
       "event": "vs. Woodford County"
     },
     {
-      "date": "2020-01-18",
-      "opponent_id": "10901050132",
-      "opponent_career_id": "career_006166",
-      "opponent_name": "Dawson Mattingly",
-      "opponent_team": "Male",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. St. Xavier"
-    },
-    {
       "date": "2020-01-17",
       "opponent_id": "12690754132",
       "opponent_career_id": "career_009887",
@@ -176,8 +165,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "1:09",
-      "event": "vs. St. Xavier"
+      "duration": "1:00",
+      "event": "vs. Central"
     },
     {
       "date": "2020-01-17",
@@ -193,7 +182,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:49",
-      "event": "vs. St. Xavier"
+      "event": "vs. Moore"
+    },
+    {
+      "date": "2020-01-17",
+      "opponent_id": "10623861132",
+      "opponent_career_id": "career_009600",
+      "opponent_name": "Jakari Speaks",
+      "opponent_team": "Moore",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:00",
+      "event": "vs. Moore"
     },
     {
       "date": "2020-01-17",
@@ -257,6 +262,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:56",
+      "event": "Louisville City Championship"
+    },
+    {
+      "date": "2020-01-11",
+      "opponent_id": "10623876132",
+      "opponent_career_id": "career_003427",
+      "opponent_name": "Malachia Harris",
+      "opponent_team": "Moore",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "120",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:11",
       "event": "Louisville City Championship"
     },
     {
@@ -522,7 +543,7 @@
       "season": 2020,
       "grade": 11,
       "team": "St. Xavier",
-      "record": "16-15",
+      "record": "16-14",
       "regional_place": 2,
       "state_place": null
     },
@@ -530,15 +551,20 @@
       "season": 2019,
       "grade": 10,
       "team": "St. Xavier",
-      "record": "12-9",
+      "record": "11-9",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 38,
-    "losses": 37,
+    "wins": 37,
+    "losses": 36,
     "win_pct": 0.507
   },
-  "profile_generated_at": "2026-04-16"
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  },
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "frederick_douglas_",
   "team_rank": null,
   "weight_class": 215,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "0-0",
+    "overall": "8-6",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,8 +25,8 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.667,
-    "bonus_rate": 1.0,
+    "pin_rate": 0.5,
+    "bonus_rate": 0.75,
     "majors": 1,
     "techs": 0,
     "pins": 2
@@ -49,7 +54,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:08",
-      "event": "vs. Frederick Douglass"
+      "event": "vs. Desales"
     },
     {
       "date": "2020-01-11",
@@ -101,6 +106,22 @@
     },
     {
       "date": "2019-12-07",
+      "opponent_id": "10629350132",
+      "opponent_career_id": "career_010381",
+      "opponent_name": "Anthony Shadeh",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Jessamine County Clash"
+    },
+    {
+      "date": "2019-12-07",
       "opponent_id": "11381290132",
       "opponent_career_id": "career_010244",
       "opponent_name": "Jesse Quillen",
@@ -113,6 +134,22 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
+      "event": "Jessamine County Clash"
+    },
+    {
+      "date": "2019-12-07",
+      "opponent_id": "11154475132",
+      "opponent_career_id": "career_010169",
+      "opponent_name": "Colbert Brown",
+      "opponent_team": "Frederick Douglas ",
+      "opponent_team_rank": null,
+      "opponent_weight": 285,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "DEC",
+      "score": "9-4",
+      "duration": "7:00",
       "event": "Jessamine County Clash"
     },
     {
@@ -132,20 +169,20 @@
       "event": "Jessamine County Clash"
     },
     {
-      "date": "2019-12-07",
-      "opponent_id": "10629350132",
-      "opponent_career_id": "career_010381",
-      "opponent_name": "Anthony Shadeh",
-      "opponent_team": "Tates Creek",
+      "date": "2019-12-04",
+      "opponent_id": "OUTSTATE_e154a2d4e8e0",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "East Jessamine",
       "opponent_team_rank": null,
-      "opponent_weight": 285,
+      "opponent_weight": null,
       "opponent_rank": null,
       "weight_class": "285",
       "result": "W",
-      "method": "FALL",
+      "method": "FF",
       "score": null,
-      "duration": "0:00",
-      "event": "Jessamine County Clash"
+      "duration": "7:00",
+      "event": "vs. East Jessamine"
     },
     {
       "date": "2019-12-04",
@@ -161,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Frederick Douglas"
+      "event": "vs. West Jessamine"
     },
     {
       "date": "2019-11-30",
@@ -177,7 +214,55 @@
       "method": "FALL",
       "score": null,
       "duration": "1:27",
-      "event": "vs. Frederick Douglas"
+      "event": "vs. Campbell County"
+    },
+    {
+      "date": "2019-11-30",
+      "opponent_id": "OUTSTATE_2f528488265f",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Boyle County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Boyle County"
+    },
+    {
+      "date": "2019-11-30",
+      "opponent_id": "OUTSTATE_40501eb234a9",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Scott County",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Scott County"
+    },
+    {
+      "date": "2019-11-30",
+      "opponent_id": "OUTSTATE_7ed63b73d691",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Owensboro",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "285",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Owensboro"
     }
   ],
   "career": {
@@ -193,7 +278,7 @@
       "season": 2020,
       "grade": 12,
       "team": "Frederick Douglas ",
-      "record": "0-0",
+      "record": "8-6",
       "regional_place": null,
       "state_place": null
     },
@@ -201,10 +286,15 @@
       "season": 2018,
       "grade": 10,
       "team": "Frederick Douglas ",
-      "record": "0-0",
+      "record": "7-18",
       "regional_place": null,
       "state_place": null
     }
   ],
-  "profile_generated_at": "2026-04-16"
+  "career_record": {
+    "wins": 15,
+    "losses": 24,
+    "win_pct": 0.385
+  },
+  "profile_generated_at": "2026-09-21"
 }

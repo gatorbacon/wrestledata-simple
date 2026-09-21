@@ -5,6 +5,11 @@
   "team_slug": "boyle_county",
   "team_rank": null,
   "weight_class": 132,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
@@ -85,22 +90,6 @@
     },
     {
       "date": "2019-12-27",
-      "opponent_id": "10559043132",
-      "opponent_career_id": "career_008833",
-      "opponent_name": "Thomas Hoppes",
-      "opponent_team": "LaRue County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "132",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. LaRue County"
-    },
-    {
-      "date": "2019-12-27",
       "opponent_id": "10679268132",
       "opponent_career_id": "career_009631",
       "opponent_name": "Nick Favorite",
@@ -130,6 +119,22 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Central"
+    },
+    {
+      "date": "2019-12-27",
+      "opponent_id": "10559043132",
+      "opponent_career_id": "career_008833",
+      "opponent_name": "Thomas Hoppes",
+      "opponent_team": "LaRue County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "132",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. LaRue County"
     },
     {
       "date": "2019-12-27",
@@ -252,7 +257,7 @@
       "season": 2023,
       "grade": 11,
       "team": "Boyle County",
-      "record": "29-13",
+      "record": "29-12",
       "regional_place": 3,
       "state_place": null
     },
@@ -260,7 +265,7 @@
       "season": 2022,
       "grade": 10,
       "team": "Boyle County",
-      "record": "25-10",
+      "record": "26-10",
       "regional_place": null,
       "state_place": null
     },
@@ -282,9 +287,14 @@
     }
   ],
   "career_record": {
-    "wins": 92,
-    "losses": 45,
-    "win_pct": 0.672
+    "wins": 93,
+    "losses": 44,
+    "win_pct": 0.679
   },
-  "profile_generated_at": "2026-04-16"
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  },
+  "profile_generated_at": "2026-09-21"
 }

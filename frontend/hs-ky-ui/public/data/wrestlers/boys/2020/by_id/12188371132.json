@@ -5,10 +5,15 @@
   "team_slug": "male",
   "team_rank": null,
   "weight_class": 285,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "2-8",
+    "overall": "2-9",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -54,7 +59,7 @@
     {
       "date": "2020-02-01",
       "opponent_id": "10679367132",
-      "opponent_career_id": null,
+      "opponent_career_id": "career_007890",
       "opponent_name": "Isaac Meyer",
       "opponent_team": "Oldham County",
       "opponent_team_rank": null,
@@ -81,7 +86,7 @@
       "method": "FALL",
       "score": null,
       "duration": "4:52",
-      "event": "Michael Herchenrader Jr. Memorial Tournament"
+      "event": "Michael Herschenrader"
     },
     {
       "date": "2020-01-25",
@@ -148,22 +153,6 @@
       "event": "vs. St. Xavier"
     },
     {
-      "date": "2020-01-18",
-      "opponent_id": "10623862132",
-      "opponent_career_id": "career_008871",
-      "opponent_name": "Neal White",
-      "opponent_team": "Moore",
-      "opponent_team_rank": null,
-      "opponent_weight": 285,
-      "opponent_rank": null,
-      "weight_class": "285",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Moore"
-    },
-    {
       "date": "2020-01-17",
       "opponent_id": "10623862132",
       "opponent_career_id": "career_008871",
@@ -177,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:28",
-      "event": "vs. Male"
+      "event": "vs. Moore"
     },
     {
       "date": "2020-01-17",
@@ -193,7 +182,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "vs. Male"
+      "event": "vs. St. Xavier"
     },
     {
       "date": "2020-01-15",
@@ -209,7 +198,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:14",
-      "event": "vs. Male"
+      "event": "vs. Central"
     },
     {
       "date": "2020-01-15",
@@ -258,15 +247,20 @@
       "season": 2020,
       "grade": 10,
       "team": "Male",
-      "record": "2-8",
+      "record": "2-9",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 11,
-    "losses": 14,
-    "win_pct": 0.44
+    "losses": 15,
+    "win_pct": 0.423
   },
-  "profile_generated_at": "2026-04-16"
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  },
+  "profile_generated_at": "2026-09-21"
 }

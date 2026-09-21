@@ -5,6 +5,11 @@
   "team_slug": "wayne_county",
   "team_rank": null,
   "weight_class": 144,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
@@ -37,6 +42,22 @@
   "match_list": [
     {
       "date": "2022-12-03",
+      "opponent_id": "20699936132",
+      "opponent_career_id": "career_007603",
+      "opponent_name": "Tyson Price",
+      "opponent_team": "Knox Central High School",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:29",
+      "event": "vs. Knox Central High School"
+    },
+    {
+      "date": "2022-12-03",
       "opponent_id": "OUTSTATE_8cc9e0bb0dcc",
       "opponent_career_id": null,
       "opponent_name": "Unknown",
@@ -53,38 +74,6 @@
     },
     {
       "date": "2022-12-03",
-      "opponent_id": "OUTSTATE_021f644ea71a",
-      "opponent_career_id": null,
-      "opponent_name": "Unknown",
-      "opponent_team": "Perry County Central",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FF",
-      "score": null,
-      "duration": "7:00",
-      "event": "vs. Perry County Central"
-    },
-    {
-      "date": "2022-12-03",
-      "opponent_id": "20699936132",
-      "opponent_career_id": "career_007603",
-      "opponent_name": "Tyson Price",
-      "opponent_team": "Knox Central High School",
-      "opponent_team_rank": null,
-      "opponent_weight": 157,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:29",
-      "event": "vs. Wayne County"
-    },
-    {
-      "date": "2022-12-03",
       "opponent_id": "20451945132",
       "opponent_career_id": null,
       "opponent_name": "Beau McFarland",
@@ -98,6 +87,22 @@
       "score": null,
       "duration": "0:36",
       "event": "vs. Livingston Academy"
+    },
+    {
+      "date": "2022-12-03",
+      "opponent_id": "OUTSTATE_021f644ea71a",
+      "opponent_career_id": null,
+      "opponent_name": "Unknown",
+      "opponent_team": "Perry County Central",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FF",
+      "score": null,
+      "duration": "7:00",
+      "event": "vs. Perry County Central"
     },
     {
       "date": "2022-11-19",
@@ -179,5 +184,5 @@
     "losses": 8,
     "win_pct": 0.636
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

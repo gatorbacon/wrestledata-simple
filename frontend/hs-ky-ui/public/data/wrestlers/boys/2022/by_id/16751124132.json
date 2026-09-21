@@ -5,6 +5,11 @@
   "team_slug": "fort_campbell",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2022,
   "current_rank": null,
   "record": {
@@ -81,7 +86,7 @@
       "method": "FALL",
       "score": null,
       "duration": "5:00",
-      "event": "vs. Fort Campbell"
+      "event": "vs. Daviess County"
     },
     {
       "date": "2022-01-28",
@@ -433,7 +438,23 @@
       "method": "DFLT",
       "score": null,
       "duration": "7:00",
-      "event": "vs. Fort Campbell"
+      "event": "vs. Apollo High School"
+    },
+    {
+      "date": "2021-12-18",
+      "opponent_id": "16978775132",
+      "opponent_career_id": "career_000389",
+      "opponent_name": "Kenny Lira",
+      "opponent_team": "Calloway County",
+      "opponent_team_rank": null,
+      "opponent_weight": 165,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Calloway County"
     },
     {
       "date": "2021-12-18",
@@ -450,22 +471,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Tecumseh"
-    },
-    {
-      "date": "2021-12-18",
-      "opponent_id": "16978775132",
-      "opponent_career_id": "career_000389",
-      "opponent_name": "Kenny Lira",
-      "opponent_team": "Calloway County",
-      "opponent_team_rank": null,
-      "opponent_weight": 165,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Fort Campbell"
     },
     {
       "date": "2021-12-18",
@@ -597,22 +602,6 @@
     },
     {
       "date": "2021-12-04",
-      "opponent_id": "16832651132",
-      "opponent_career_id": null,
-      "opponent_name": "spencer potter",
-      "opponent_team": "Rossview",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:36",
-      "event": "Coyote Classic"
-    },
-    {
-      "date": "2021-12-04",
       "opponent_id": "17152630132",
       "opponent_career_id": "career_007717",
       "opponent_name": "Ethan Newsom",
@@ -641,6 +630,22 @@
       "method": "TF",
       "score": "16-0",
       "duration": "3:14",
+      "event": "Coyote Classic"
+    },
+    {
+      "date": "2021-12-04",
+      "opponent_id": "16832651132",
+      "opponent_career_id": null,
+      "opponent_name": "spencer potter",
+      "opponent_team": "Rossview",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:36",
       "event": "Coyote Classic"
     },
     {
@@ -732,5 +737,5 @@
     "losses": 48,
     "win_pct": 0.422
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,6 +5,11 @@
   "team_slug": "caldwell_county",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2023,
   "current_rank": null,
   "record": {
@@ -133,6 +138,22 @@
     },
     {
       "date": "2022-12-10",
+      "opponent_id": "-1",
+      "opponent_career_id": null,
+      "opponent_name": "Alex Juarez",
+      "opponent_team": "Jeffersonville",
+      "opponent_team_rank": null,
+      "opponent_weight": null,
+      "opponent_rank": null,
+      "weight_class": "175",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:15",
+      "event": "vs. Camp Point (Central)"
+    },
+    {
+      "date": "2022-12-10",
       "opponent_id": "OUTSTATE_0d06ffc7c915",
       "opponent_career_id": null,
       "opponent_name": "J Heines",
@@ -196,22 +217,6 @@
       "event": "vs. Fairfield"
     },
     {
-      "date": "2022-12-10",
-      "opponent_id": "-1",
-      "opponent_career_id": null,
-      "opponent_name": "Alex Juarez",
-      "opponent_team": "Jeffersonville",
-      "opponent_team_rank": null,
-      "opponent_weight": null,
-      "opponent_rank": null,
-      "weight_class": "175",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:15",
-      "event": "vs. Camp Point (Central)"
-    },
-    {
       "date": "2022-12-03",
       "opponent_id": "20476379132",
       "opponent_career_id": "career_000048",
@@ -225,23 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:39",
-      "event": "vs. Caldwell County"
-    },
-    {
-      "date": "2022-12-03",
-      "opponent_id": "20195588132",
-      "opponent_career_id": "career_003644",
-      "opponent_name": "Riley Burton",
-      "opponent_team": "Spencer County",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:34",
-      "event": "vs. Spencer County"
+      "event": "vs. Apollo High School"
     },
     {
       "date": "2022-12-03",
@@ -258,6 +247,22 @@
       "score": null,
       "duration": "1:30",
       "event": "vs. Meade County"
+    },
+    {
+      "date": "2022-12-03",
+      "opponent_id": "20195588132",
+      "opponent_career_id": "career_003644",
+      "opponent_name": "Riley Burton",
+      "opponent_team": "Spencer County",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:34",
+      "event": "vs. Spencer County"
     },
     {
       "date": "2022-12-03",
@@ -330,5 +335,5 @@
     "losses": 6,
     "win_pct": 0.647
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

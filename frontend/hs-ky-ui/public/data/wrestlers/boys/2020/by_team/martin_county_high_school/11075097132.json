@@ -5,10 +5,15 @@
   "team_slug": "martin_county_high_school",
   "team_rank": null,
   "weight_class": 157,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "32-11",
+    "overall": "31-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -145,7 +150,7 @@
       "method": "DEC",
       "score": "9-4",
       "duration": "7:00",
-      "event": "vs. Martin County High School"
+      "event": "vs. Johnson Central"
     },
     {
       "date": "2020-01-31",
@@ -181,22 +186,6 @@
     },
     {
       "date": "2020-01-25",
-      "opponent_id": "10661049132",
-      "opponent_career_id": "career_009543",
-      "opponent_name": "Tyler Hudgins",
-      "opponent_team": "Harrison County",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:33",
-      "event": "vs. Martin County High School"
-    },
-    {
-      "date": "2020-01-25",
       "opponent_id": "10788574132",
       "opponent_career_id": "career_008675",
       "opponent_name": "Lawson Hill",
@@ -210,6 +199,22 @@
       "score": "12-1",
       "duration": "7:00",
       "event": "vs. Frederick Douglass"
+    },
+    {
+      "date": "2020-01-25",
+      "opponent_id": "10661049132",
+      "opponent_career_id": "career_009543",
+      "opponent_name": "Tyler Hudgins",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:33",
+      "event": "vs. Harrison County"
     },
     {
       "date": "2020-01-25",
@@ -257,7 +262,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Martin County High School"
+      "event": "vs. Harrison County"
     },
     {
       "date": "2020-01-18",
@@ -337,7 +342,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:09",
-      "event": "vs. Martin County High School"
+      "event": "vs. Ashland Blazer"
     },
     {
       "date": "2020-01-11",
@@ -353,7 +358,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Martin County High School"
+      "event": "vs. Belfry"
     },
     {
       "date": "2020-01-11",
@@ -369,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Martin County High School"
+      "event": "vs. Boyd County"
     },
     {
       "date": "2020-01-11",
@@ -405,22 +410,6 @@
     },
     {
       "date": "2020-01-04",
-      "opponent_id": "10914971132",
-      "opponent_career_id": "career_010056",
-      "opponent_name": "Jahvon Fraizer",
-      "opponent_team": "Bryan Station",
-      "opponent_team_rank": null,
-      "opponent_weight": 150,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:48",
-      "event": "Commodore Classic"
-    },
-    {
-      "date": "2020-01-04",
       "opponent_id": "10917284132",
       "opponent_career_id": "career_009437",
       "opponent_name": "Nathaniel West",
@@ -433,7 +422,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Martin County High School"
+      "event": "vs. Belfry"
+    },
+    {
+      "date": "2020-01-04",
+      "opponent_id": "10914971132",
+      "opponent_career_id": "career_010056",
+      "opponent_name": "Jahvon Fraizer",
+      "opponent_team": "Bryan Station",
+      "opponent_team_rank": null,
+      "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:48",
+      "event": "vs. Bryan Station"
     },
     {
       "date": "2020-01-04",
@@ -723,7 +728,7 @@
       "season": 2021,
       "grade": 12,
       "team": "Martin County High School",
-      "record": "30-5",
+      "record": "32-6",
       "regional_place": 1,
       "state_place": 5
     },
@@ -731,7 +736,7 @@
       "season": 2020,
       "grade": 11,
       "team": "Martin County High School",
-      "record": "32-11",
+      "record": "31-11",
       "regional_place": 1,
       "state_place": null
     },
@@ -739,7 +744,7 @@
       "season": 2019,
       "grade": 10,
       "team": "Sheldon Clark",
-      "record": "17-20",
+      "record": "17-22",
       "regional_place": 4,
       "state_place": null
     },
@@ -753,9 +758,14 @@
     }
   ],
   "career_record": {
-    "wins": 84,
-    "losses": 42,
-    "win_pct": 0.667
+    "wins": 85,
+    "losses": 45,
+    "win_pct": 0.654
   },
-  "profile_generated_at": "2026-04-16"
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  },
+  "profile_generated_at": "2026-09-21"
 }

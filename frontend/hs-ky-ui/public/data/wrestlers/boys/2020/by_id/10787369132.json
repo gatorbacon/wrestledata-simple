@@ -5,10 +5,15 @@
   "team_slug": "trinity_louisville",
   "team_rank": null,
   "weight_class": 190,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "27-13",
+    "overall": "26-13",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -54,7 +59,7 @@
     {
       "date": "2020-02-15",
       "opponent_id": "10679289132",
-      "opponent_career_id": null,
+      "opponent_career_id": "career_008886",
       "opponent_name": "Blake Fox",
       "opponent_team": "Oldham County",
       "opponent_team_rank": null,
@@ -129,7 +134,55 @@
       "method": "DEC",
       "score": "5-1",
       "duration": "7:00",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. St. Xavier"
+    },
+    {
+      "date": "2020-01-25",
+      "opponent_id": "10622202132",
+      "opponent_career_id": "career_009469",
+      "opponent_name": "Kyler Lee",
+      "opponent_team": "Central Hardin",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "DEC",
+      "score": "5-0",
+      "duration": "7:00",
+      "event": "vs. Central"
+    },
+    {
+      "date": "2020-01-25",
+      "opponent_id": "11571794132",
+      "opponent_career_id": "career_010250",
+      "opponent_name": "Noah Shipley",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:46",
+      "event": "vs. Madison Central"
+    },
+    {
+      "date": "2020-01-25",
+      "opponent_id": "11068239132",
+      "opponent_career_id": "career_010353",
+      "opponent_name": "Joseph Vormbrock",
+      "opponent_team": "Simon Kenton",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "3:49",
+      "event": "vs. Simon Kenton"
     },
     {
       "date": "2020-01-25",
@@ -148,54 +201,6 @@
       "event": "vs. Johnson Central"
     },
     {
-      "date": "2020-01-25",
-      "opponent_id": "10622202132",
-      "opponent_career_id": "career_009469",
-      "opponent_name": "Kyler Lee",
-      "opponent_team": "Central Hardin",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "DEC",
-      "score": "5-0",
-      "duration": "7:00",
-      "event": "vs. Trinity (Louisville)"
-    },
-    {
-      "date": "2020-01-25",
-      "opponent_id": "11068239132",
-      "opponent_career_id": "career_010353",
-      "opponent_name": "Joseph Vormbrock",
-      "opponent_team": "Simon Kenton",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "3:49",
-      "event": "vs. Trinity (Louisville)"
-    },
-    {
-      "date": "2020-01-25",
-      "opponent_id": "11571794132",
-      "opponent_career_id": "career_010250",
-      "opponent_name": "Noah Shipley",
-      "opponent_team": "Madison Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:46",
-      "event": "vs. Trinity (Louisville)"
-    },
-    {
       "date": "2020-01-17",
       "opponent_id": "10623875132",
       "opponent_career_id": "career_009960",
@@ -209,7 +214,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:50",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Moore"
     },
     {
       "date": "2020-01-17",
@@ -223,25 +228,9 @@
       "weight_class": "190",
       "result": "W",
       "method": "DEC",
-      "score": "6-1",
+      "score": "1-0",
       "duration": "7:00",
-      "event": "vs. Trinity (Louisville)"
-    },
-    {
-      "date": "2020-01-15",
-      "opponent_id": "10901067132",
-      "opponent_career_id": "career_008851",
-      "opponent_name": "Jaystin Johnson",
-      "opponent_team": "Male",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:12",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. St. Xavier"
     },
     {
       "date": "2020-01-15",
@@ -257,7 +246,23 @@
       "method": "DEC",
       "score": "5-4",
       "duration": "7:00",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Central"
+    },
+    {
+      "date": "2020-01-15",
+      "opponent_id": "10901067132",
+      "opponent_career_id": "career_008851",
+      "opponent_name": "Jaystin Johnson",
+      "opponent_team": "Male",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:12",
+      "event": "vs. Male"
     },
     {
       "date": "2020-01-11",
@@ -453,22 +458,6 @@
     },
     {
       "date": "2019-12-21",
-      "opponent_id": "10646332132",
-      "opponent_career_id": "career_009943",
-      "opponent_name": "Wyatt Allen",
-      "opponent_team": "Madison Central",
-      "opponent_team_rank": null,
-      "opponent_weight": 175,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "DEC",
-      "score": "3-1",
-      "duration": "7:00",
-      "event": "5 Star Tourney"
-    },
-    {
-      "date": "2019-12-21",
       "opponent_id": "10622202132",
       "opponent_career_id": "career_009469",
       "opponent_name": "Kyler Lee",
@@ -480,6 +469,22 @@
       "result": "W",
       "method": "DEC",
       "score": "5-2",
+      "duration": "7:00",
+      "event": "5 Star Tourney"
+    },
+    {
+      "date": "2019-12-21",
+      "opponent_id": "10646332132",
+      "opponent_career_id": "career_009943",
+      "opponent_name": "Wyatt Allen",
+      "opponent_team": "Madison Central",
+      "opponent_team_rank": null,
+      "opponent_weight": 175,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "DEC",
+      "score": "3-1",
       "duration": "7:00",
       "event": "5 Star Tourney"
     },
@@ -581,6 +586,22 @@
     },
     {
       "date": "2019-11-23",
+      "opponent_id": "10570926132",
+      "opponent_career_id": "career_010070",
+      "opponent_name": "Jakob Jones",
+      "opponent_team": "Bullitt East",
+      "opponent_team_rank": null,
+      "opponent_weight": 215,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:28",
+      "event": "vs. Bullitt East"
+    },
+    {
+      "date": "2019-11-23",
       "opponent_id": "10991641132",
       "opponent_career_id": "career_007618",
       "opponent_name": "Tyler Votaw",
@@ -593,7 +614,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Fairdale"
     },
     {
       "date": "2019-11-23",
@@ -609,7 +630,23 @@
       "method": "FALL",
       "score": null,
       "duration": "0:32",
-      "event": "vs. Trinity (Louisville)"
+      "event": "vs. Fern Creek"
+    },
+    {
+      "date": "2019-11-23",
+      "opponent_id": "10769619132",
+      "opponent_career_id": "career_009110",
+      "opponent_name": "Clayton Shearer",
+      "opponent_team": "Pleasure Ridge Park",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "190",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Pleasure Ridge Park"
     },
     {
       "date": "2019-11-23",
@@ -626,38 +663,6 @@
       "score": null,
       "duration": "0:00",
       "event": "vs. Waggener High School"
-    },
-    {
-      "date": "2019-11-23",
-      "opponent_id": "10769619132",
-      "opponent_career_id": "career_009110",
-      "opponent_name": "Clayton Shearer",
-      "opponent_team": "Pleasure Ridge Park",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "190",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Trinity (Louisville)"
-    },
-    {
-      "date": "2019-11-23",
-      "opponent_id": "10570926132",
-      "opponent_career_id": "career_010070",
-      "opponent_name": "Jakob Jones",
-      "opponent_team": "Bullitt East",
-      "opponent_team_rank": null,
-      "opponent_weight": 215,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "1:28",
-      "event": "vs. Trinity (Louisville)"
     }
   ],
   "career": {
@@ -675,7 +680,7 @@
       "season": 2021,
       "grade": 12,
       "team": "Trinity (Louisville)",
-      "record": "21-7",
+      "record": "22-9",
       "regional_place": 1,
       "state_place": 7
     },
@@ -683,7 +688,7 @@
       "season": 2020,
       "grade": 11,
       "team": "Trinity (Louisville)",
-      "record": "27-13",
+      "record": "26-13",
       "regional_place": 2,
       "state_place": null
     },
@@ -691,7 +696,7 @@
       "season": 2019,
       "grade": 10,
       "team": "Trinity (Louisville)",
-      "record": "13-13",
+      "record": "13-15",
       "regional_place": 4,
       "state_place": null
     },
@@ -699,15 +704,15 @@
       "season": 2018,
       "grade": 9,
       "team": "Trinity (Louisville)",
-      "record": "7-12",
+      "record": "7-13",
       "regional_place": null,
       "state_place": null
     }
   ],
   "career_record": {
     "wins": 68,
-    "losses": 45,
-    "win_pct": 0.602
+    "losses": 50,
+    "win_pct": 0.576
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

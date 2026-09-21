@@ -5,10 +5,15 @@
   "team_slug": "moore",
   "team_rank": null,
   "weight_class": 106,
+  "grade": "7th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "16-11",
+    "overall": "17-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.692,
-    "bonus_rate": 0.769,
+    "pin_rate": 0.714,
+    "bonus_rate": 0.786,
     "majors": 1,
     "techs": 0,
-    "pins": 9
+    "pins": 10
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -129,7 +134,7 @@
       "method": "MD",
       "score": "9-0",
       "duration": "7:00",
-      "event": "Michael Herschenrader"
+      "event": "Michael Herchenrader Jr. Memorial Tournament"
     },
     {
       "date": "2020-01-25",
@@ -164,22 +169,6 @@
       "event": "Michael Herchenrader Jr. Memorial Tournament"
     },
     {
-      "date": "2020-01-18",
-      "opponent_id": "10901056132",
-      "opponent_career_id": "career_007608",
-      "opponent_name": "Korrey Mattingly",
-      "opponent_team": "Male",
-      "opponent_team_rank": null,
-      "opponent_weight": 106,
-      "opponent_rank": null,
-      "weight_class": "106",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Moore"
-    },
-    {
       "date": "2020-01-17",
       "opponent_id": "11020040132",
       "opponent_career_id": "career_005809",
@@ -192,8 +181,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "vs. Moore"
+      "duration": "0:36",
+      "event": "vs. Central"
     },
     {
       "date": "2020-01-17",
@@ -357,6 +346,22 @@
     },
     {
       "date": "2020-01-04",
+      "opponent_id": "11003566132",
+      "opponent_career_id": "career_007960",
+      "opponent_name": "Simon Scheidel",
+      "opponent_team": "Valley",
+      "opponent_team_rank": null,
+      "opponent_weight": 106,
+      "opponent_rank": null,
+      "weight_class": "106",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "1:25",
+      "event": "Valley Main Event"
+    },
+    {
+      "date": "2020-01-04",
       "opponent_id": "11229865132",
       "opponent_career_id": "career_010298",
       "opponent_name": "Jaquar Williams",
@@ -509,7 +514,7 @@
       "season": 2024,
       "grade": 11,
       "team": "Moore",
-      "record": "27-11",
+      "record": "27-12",
       "regional_place": 3,
       "state_place": null
     },
@@ -533,7 +538,7 @@
       "season": 2021,
       "grade": 8,
       "team": "Moore",
-      "record": "12-10",
+      "record": "12-11",
       "regional_place": null,
       "state_place": null
     },
@@ -541,15 +546,20 @@
       "season": 2020,
       "grade": 7,
       "team": "Moore",
-      "record": "16-11",
+      "record": "17-11",
       "regional_place": 2,
       "state_place": null
     }
   ],
   "career_record": {
-    "wins": 138,
-    "losses": 76,
-    "win_pct": 0.645
+    "wins": 139,
+    "losses": 78,
+    "win_pct": 0.641
   },
-  "profile_generated_at": "2026-04-16"
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  },
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,6 +5,11 @@
   "team_slug": "scott",
   "team_rank": null,
   "weight_class": 126,
+  "grade": "Jr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
@@ -245,6 +250,22 @@
     },
     {
       "date": "2020-01-11",
+      "opponent_id": "10661053132",
+      "opponent_career_id": "career_009315",
+      "opponent_name": "Bryce Zumwalt",
+      "opponent_team": "Harrison County",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "vs. Harrison County"
+    },
+    {
+      "date": "2020-01-11",
       "opponent_id": "10761939132",
       "opponent_career_id": "career_006665",
       "opponent_name": "Hunter Isaacs",
@@ -258,22 +279,6 @@
       "score": "4-3",
       "duration": "7:00",
       "event": "vs. Walton Verona"
-    },
-    {
-      "date": "2020-01-11",
-      "opponent_id": "10661053132",
-      "opponent_career_id": "career_009315",
-      "opponent_name": "Bryce Zumwalt",
-      "opponent_team": "Harrison County",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Scott"
     },
     {
       "date": "2020-01-11",
@@ -480,7 +485,7 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "2:48",
+      "duration": "2:50",
       "event": "2019 Ryle Raider Rumble"
     },
     {
@@ -498,22 +503,6 @@
       "score": "8-3",
       "duration": "7:00",
       "event": "2019 Ryle Raider Rumble"
-    },
-    {
-      "date": "2019-12-07",
-      "opponent_id": "11131301132",
-      "opponent_career_id": "career_008820",
-      "opponent_name": "Noah Stanley",
-      "opponent_team": "Holmes",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "W",
-      "method": "TF",
-      "score": "16-0",
-      "duration": "0:00",
-      "event": "Bulldog Battle for the Bone"
     },
     {
       "date": "2019-12-07",
@@ -565,6 +554,22 @@
     },
     {
       "date": "2019-12-07",
+      "opponent_id": "11131301132",
+      "opponent_career_id": "career_008820",
+      "opponent_name": "Noah Stanley",
+      "opponent_team": "Holmes",
+      "opponent_team_rank": null,
+      "opponent_weight": 120,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "W",
+      "method": "TF",
+      "score": "16-0",
+      "duration": "0:00",
+      "event": "Bulldog Battle for the Bone"
+    },
+    {
+      "date": "2019-12-07",
       "opponent_id": "OUTSTATE_5898c9221477",
       "opponent_career_id": null,
       "opponent_name": "Cooper Brun",
@@ -594,7 +599,7 @@
       "season": 2021,
       "grade": 12,
       "team": "Scott",
-      "record": "5-12",
+      "record": "5-11",
       "regional_place": null,
       "state_place": null
     },
@@ -617,8 +622,13 @@
   ],
   "career_record": {
     "wins": 24,
-    "losses": 29,
-    "win_pct": 0.453
+    "losses": 28,
+    "win_pct": 0.462
   },
-  "profile_generated_at": "2026-04-16"
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  },
+  "profile_generated_at": "2026-09-21"
 }

@@ -5,10 +5,15 @@
   "team_slug": "prestonsburg",
   "team_rank": null,
   "weight_class": 150,
+  "grade": "So.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "28-11",
+    "overall": "26-11",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -24,7 +29,7 @@
     "bonus_rate": 1.0,
     "majors": 0,
     "techs": 0,
-    "pins": 23
+    "pins": 24
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -181,22 +186,6 @@
     },
     {
       "date": "2020-01-25",
-      "opponent_id": "10652274132",
-      "opponent_career_id": "career_007930",
-      "opponent_name": "Nick Hom",
-      "opponent_team": "South Oldham",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "150",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Michael Herchenrader Jr. Memorial Tournament"
-    },
-    {
-      "date": "2020-01-25",
       "opponent_id": "10901142132",
       "opponent_career_id": "career_010037",
       "opponent_name": "Henry Marchal",
@@ -235,6 +224,22 @@
       "opponent_team": "Moore",
       "opponent_team_rank": null,
       "opponent_weight": 150,
+      "opponent_rank": null,
+      "weight_class": "150",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Michael Herchenrader Jr. Memorial Tournament"
+    },
+    {
+      "date": "2020-01-25",
+      "opponent_id": "10652274132",
+      "opponent_career_id": "career_007930",
+      "opponent_name": "Nick Hom",
+      "opponent_team": "South Oldham",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
       "opponent_rank": null,
       "weight_class": "150",
       "result": "W",
@@ -289,7 +294,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:29",
-      "event": "vs. Prestonsburg"
+      "event": "vs. Ashland Blazer"
     },
     {
       "date": "2020-01-11",
@@ -305,7 +310,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Prestonsburg"
+      "event": "vs. Boyd County"
     },
     {
       "date": "2020-01-11",
@@ -369,7 +374,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:11",
-      "event": "vs. Prestonsburg"
+      "event": "Perry Central Tournament"
     },
     {
       "date": "2020-01-04",
@@ -400,8 +405,8 @@
       "result": "L",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "Perry Central Tournament"
+      "duration": "1:30",
+      "event": "vs. Perry County Central"
     },
     {
       "date": "2020-01-04",
@@ -549,38 +554,6 @@
     },
     {
       "date": "2019-12-07",
-      "opponent_id": "10629367132",
-      "opponent_career_id": "career_009023",
-      "opponent_name": "Andrew Stewart",
-      "opponent_team": "Tates Creek",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "Jessamine County Clash"
-    },
-    {
-      "date": "2019-12-07",
-      "opponent_id": "10716175132",
-      "opponent_career_id": "career_009835",
-      "opponent_name": "Alex Roberts",
-      "opponent_team": "West Jessamine",
-      "opponent_team_rank": null,
-      "opponent_weight": 144,
-      "opponent_rank": null,
-      "weight_class": "157",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:31",
-      "event": "Jessamine County Clash"
-    },
-    {
-      "date": "2019-12-07",
       "opponent_id": "10649161132",
       "opponent_career_id": "career_008795",
       "opponent_name": "Melvin Call",
@@ -609,6 +582,54 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
+      "event": "Jessamine County Clash"
+    },
+    {
+      "date": "2019-12-07",
+      "opponent_id": "10629410132",
+      "opponent_career_id": "career_009282",
+      "opponent_name": "Dominic Savage",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 157,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Jessamine County Clash"
+    },
+    {
+      "date": "2019-12-07",
+      "opponent_id": "10629367132",
+      "opponent_career_id": "career_009023",
+      "opponent_name": "Andrew Stewart",
+      "opponent_team": "Tates Creek",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:00",
+      "event": "Jessamine County Clash"
+    },
+    {
+      "date": "2019-12-07",
+      "opponent_id": "10716175132",
+      "opponent_career_id": "career_009835",
+      "opponent_name": "Alex Roberts",
+      "opponent_team": "West Jessamine",
+      "opponent_team_rank": null,
+      "opponent_weight": 144,
+      "opponent_rank": null,
+      "weight_class": "157",
+      "result": "W",
+      "method": "FALL",
+      "score": null,
+      "duration": "0:31",
       "event": "Jessamine County Clash"
     }
   ],
@@ -645,7 +666,7 @@
       "season": 2020,
       "grade": 10,
       "team": "Prestonsburg",
-      "record": "28-11",
+      "record": "26-11",
       "regional_place": null,
       "state_place": null
     },
@@ -653,7 +674,7 @@
       "season": 2019,
       "grade": 9,
       "team": "Prestonsburg",
-      "record": "24-11",
+      "record": "23-12",
       "regional_place": null,
       "state_place": null
     },
@@ -675,9 +696,9 @@
     }
   ],
   "career_record": {
-    "wins": 115,
-    "losses": 49,
-    "win_pct": 0.701
+    "wins": 112,
+    "losses": 50,
+    "win_pct": 0.691
   },
-  "profile_generated_at": "2026-04-16"
+  "profile_generated_at": "2026-09-21"
 }

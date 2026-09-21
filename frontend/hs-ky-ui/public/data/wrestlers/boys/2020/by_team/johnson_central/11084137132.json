@@ -5,10 +5,15 @@
   "team_slug": "johnson_central",
   "team_rank": null,
   "weight_class": 120,
+  "grade": "Sr.",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
-    "overall": "39-5",
+    "overall": "36-5",
     "vs_ranked": "0-0",
     "vs_top10": "0-0",
     "vs_top25": "0-0"
@@ -20,11 +25,11 @@
     "si_plus": 100.0,
     "df_plus": 100.0,
     "apr_plus": 100.0,
-    "pin_rate": 0.559,
-    "bonus_rate": 0.676,
+    "pin_rate": 0.562,
+    "bonus_rate": 0.688,
     "majors": 3,
     "techs": 1,
-    "pins": 19
+    "pins": 18
   },
   "opponent_breakdown": {
     "ranked_wins": 0,
@@ -113,7 +118,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Johnson Central"
+      "event": "vs. Franklin County"
     },
     {
       "date": "2020-01-31",
@@ -165,6 +170,22 @@
     },
     {
       "date": "2020-01-25",
+      "opponent_id": "11266766132",
+      "opponent_career_id": "career_007906",
+      "opponent_name": "Jameson Smith",
+      "opponent_team": "Ryle",
+      "opponent_team_rank": null,
+      "opponent_weight": 126,
+      "opponent_rank": null,
+      "weight_class": "126",
+      "result": "L",
+      "method": "DEC",
+      "score": "7-3",
+      "duration": "7:00",
+      "event": "vs. Ryle"
+    },
+    {
+      "date": "2020-01-25",
       "opponent_id": "11068222132",
       "opponent_career_id": "career_009861",
       "opponent_name": "Landon Meadors",
@@ -196,22 +217,6 @@
       "event": "vs. Trinity (Louisville)"
     },
     {
-      "date": "2020-01-25",
-      "opponent_id": "11266766132",
-      "opponent_career_id": "career_007906",
-      "opponent_name": "Jameson Smith",
-      "opponent_team": "Ryle",
-      "opponent_team_rank": null,
-      "opponent_weight": 126,
-      "opponent_rank": null,
-      "weight_class": "126",
-      "result": "L",
-      "method": "DEC",
-      "score": "7-3",
-      "duration": "7:00",
-      "event": "vs. Ryle"
-    },
-    {
       "date": "2020-01-18",
       "opponent_id": "10889853132",
       "opponent_career_id": "career_003409",
@@ -225,7 +230,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Johnson Central"
+      "event": "vs. Henry Clay"
     },
     {
       "date": "2020-01-18",
@@ -354,38 +359,6 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. PikeView"
-    },
-    {
-      "date": "2020-01-04",
-      "opponent_id": "10910468132",
-      "opponent_career_id": null,
-      "opponent_name": "Tristen Scott",
-      "opponent_team": "Hurricane Hs",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "FALL",
-      "score": null,
-      "duration": "0:00",
-      "event": "vs. Hurricane Hs"
-    },
-    {
-      "date": "2020-01-04",
-      "opponent_id": "10778650132",
-      "opponent_career_id": null,
-      "opponent_name": "Ethan Tanner",
-      "opponent_team": "Ravenswood",
-      "opponent_team_rank": null,
-      "opponent_weight": 120,
-      "opponent_rank": null,
-      "weight_class": "120",
-      "result": "W",
-      "method": "DEC",
-      "score": "4-1",
-      "duration": "7:00",
-      "event": "vs. Ravenswood"
     },
     {
       "date": "2020-01-04",
@@ -657,7 +630,7 @@
       "method": "FALL",
       "score": null,
       "duration": "0:00",
-      "event": "vs. Johnson Central"
+      "event": "vs. Belfry"
     },
     {
       "date": "2019-12-13",
@@ -740,7 +713,7 @@
       "season": 2020,
       "grade": 12,
       "team": "Johnson Central",
-      "record": "39-5",
+      "record": "36-5",
       "regional_place": 1,
       "state_place": 3
     },
@@ -748,7 +721,7 @@
       "season": 2019,
       "grade": 11,
       "team": "Johnson Central",
-      "record": "30-4",
+      "record": "31-4",
       "regional_place": 1,
       "state_place": 3
     },
@@ -764,7 +737,7 @@
       "season": 2017,
       "grade": 9,
       "team": "Johnson Central",
-      "record": "31-12",
+      "record": "35-14",
       "regional_place": 1,
       "state_place": null
     },
@@ -778,9 +751,14 @@
     }
   ],
   "career_record": {
-    "wins": 162,
-    "losses": 35,
-    "win_pct": 0.822
+    "wins": 164,
+    "losses": 37,
+    "win_pct": 0.816
   },
-  "profile_generated_at": "2026-04-16"
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  },
+  "profile_generated_at": "2026-09-21"
 }

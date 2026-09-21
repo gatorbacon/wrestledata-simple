@@ -5,6 +5,11 @@
   "team_slug": "ohio_county",
   "team_rank": null,
   "weight_class": 215,
+  "grade": "8th",
+  "hometown": null,
+  "high_school": null,
+  "photo_url": null,
+  "previous_school": null,
   "year": 2020,
   "current_rank": null,
   "record": {
@@ -80,24 +85,8 @@
       "result": "W",
       "method": "FALL",
       "score": null,
-      "duration": "0:00",
-      "event": "Daviess County"
-    },
-    {
-      "date": "2020-02-01",
-      "opponent_id": "11280572132",
-      "opponent_career_id": "career_009428",
-      "opponent_name": "Andrew Sanders",
-      "opponent_team": "Wayne County",
-      "opponent_team_rank": null,
-      "opponent_weight": 190,
-      "opponent_rank": null,
-      "weight_class": "215",
-      "result": "L",
-      "method": "FALL",
-      "score": null,
-      "duration": "2:00",
-      "event": "vs. Wayne County"
+      "duration": "1:50",
+      "event": "vs. LaRue County"
     },
     {
       "date": "2020-02-01",
@@ -114,6 +103,22 @@
       "score": null,
       "duration": "7:00",
       "event": "vs. Bardstown"
+    },
+    {
+      "date": "2020-02-01",
+      "opponent_id": "11280572132",
+      "opponent_career_id": "career_009428",
+      "opponent_name": "Andrew Sanders",
+      "opponent_team": "Wayne County",
+      "opponent_team_rank": null,
+      "opponent_weight": 190,
+      "opponent_rank": null,
+      "weight_class": "215",
+      "result": "L",
+      "method": "FALL",
+      "score": null,
+      "duration": "2:00",
+      "event": "vs. Wayne County"
     },
     {
       "date": "2020-02-01",
@@ -161,7 +166,7 @@
       "method": "FALL",
       "score": null,
       "duration": "1:00",
-      "event": "vs. Ohio County"
+      "event": "vs. Hopkinsville"
     },
     {
       "date": "2020-01-11",
@@ -302,5 +307,10 @@
     "losses": 43,
     "win_pct": 0.377
   },
-  "profile_generated_at": "2026-04-16"
+  "bonus": {
+    "top33_wins": 0,
+    "top33_bonus_ev_raw": null,
+    "top33_bonus_ev_shrunk": 0.0
+  },
+  "profile_generated_at": "2026-09-21"
 }
