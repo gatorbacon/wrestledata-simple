@@ -17,6 +17,8 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
+from duplicate_events import match_ident, processed_drop_idents  # scripts/rankings/ (same dir as this script)
+
 
 def league_dir_key(league: str, gender: str, state: str = None) -> str:
     if league == 'hs':
@@ -348,12 +350,27 @@ def load_all_matches(season: int, state: str = 'ky', gender: str = 'boys', leagu
                         "opponent_team": opponent_team,
                         "team": team_name
                     }
+                    if league == 'hs':
+                        # Bout identity shared with load_data.py / duplicate_events.py, used below to drop the
+                        # approved duplicate events (this loader reads raw processed_data, not weight_class files).
+                        match_dict["_bout"] = match_ident(match, wrestler_id)
                     all_matches.append(match_dict)
         
         except Exception as e:
             print(f"Warning: Error loading {team_file}: {e}")
             continue
     
+    if league == 'hs':
+        # Remove the extra copy of every bout in the human-APPROVED duplicated events (CLAUDE.md Known Gotcha 9),
+        # exactly as load_data.py does for the weight_class files -- otherwise ELO would still count them.
+        drop = processed_drop_idents(gender, season, state=state)
+        if drop:
+            before = len(all_matches)
+            all_matches = [m for m in all_matches if m.get("_bout") not in drop]
+            print(f"Dropped {before - len(all_matches)} match rows ({len(drop)} bouts) from approved duplicate events")
+        for m in all_matches:
+            m.pop("_bout", None)
+
     print(f"Loaded {len(all_matches)} total matches")
     return all_matches
 
@@ -1220,7 +1237,10 @@ def main():
     if args.output:
         output_path = Path(args.output)
     else:
-        key = league_dir_key(args.league, args.gender, args.state)
+        # HS keeps the legacy mt/elo_ratings/{boys|girls}/{season}/ location: every HS reader
+        # (build_wrestler_profiles, generate_dual_predictor_data, create_rankings_release, generate_elo_report)
+        # looks there. (Writing to hs_ky_{gender}/ since 2026-06 meant nothing ever read the fresh output.)
+        key = args.gender if args.league == 'hs' else league_dir_key(args.league, args.gender, args.state)
         output_path = Path(f"mt/elo_ratings/{key}/{args.season}/elo_ratings.json")
     
     output_path.parent.mkdir(parents=True, exist_ok=True)

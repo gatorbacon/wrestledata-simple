@@ -1,0 +1,13 @@
+{
+  "_readme": "Edit this file when the leaderboard script reports name variants. 'aliases' maps a variant spelling (any case; 'Last, First' is fine) to the ONE canonical display name to use everywhere. 'exclude' lists placeholder rows that are not real wrestlers. 'not_same' lists pairs the script suggested that you confirmed are DIFFERENT people, so it stops suggesting them. See README.md.",
+  "aliases": {
+    "Balylee Reynolds": "Baylee Reynolds",
+    "Nate Rush": "Nathaniel Rush",
+    "Phebe Smith": "Phoebe Smith",
+    "Arubrey White": "Aubrey White"
+  },
+  "exclude": [
+    "Our Wrestler"
+  ],
+  "not_same": []
+}

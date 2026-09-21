@@ -126,10 +126,21 @@ def extract_conference(division: str) -> Optional[str]:
 
 
 def load_teams_list(teams_list_path: str) -> List[Dict]:
-    """Load team list JSON file."""
+    """Load team list JSON file.
+
+    Entries that slugify to the same team_id (e.g. "Waggener" and "Waggener " with a stray trailing space, which the
+    TrackWrestling scrape can list twice) are collapsed to ONE entry -- the one that has a region, else the first --
+    so a team never gets two rows/files under the same id.
+    """
     with open(teams_list_path, "r", encoding="utf-8") as f:
         teams = json.load(f)
-    return teams
+    by_id: Dict[str, Dict] = {}
+    for team in teams:
+        tid = slugify_team_name(team.get("name", ""))
+        kept = by_id.get(tid)
+        if kept is None or (team.get("region") and not kept.get("region")):
+            by_id[tid] = team
+    return list(by_id.values()) if len(by_id) != len(teams) else teams
 
 
 def load_boys_inactive_mask(season: int, rankings_dir: Path) -> Set[str]:
@@ -241,15 +252,57 @@ def _days_since(date_str: Optional[str], as_of: Optional[date] = None) -> Option
     return ((as_of or datetime.now().date()) - d).days
 
 
+def resolve_starters_for_team_hs(
+    team_id: str,
+    rankings_by_weight: Dict[str, List[Dict]],
+    force_backup_ids: Set[str],
+    weight_classes: List[str],
+) -> Dict[str, Optional[str]]:
+    """
+    HS (Kentucky) starter resolution -- the original rank-based logic.
+
+    HS rankings entries (rankings_<weight>.json from the manual matrix) carry `rank` and `is_starter`, but NOT the
+    NCAA-only `flo_ranked` / `match_count` / `last_match_date` fields resolve_starters_for_team() needs. Running the
+    NCAA logic on HS data excludes every candidate (missing match_count is treated as 0), which silently produced
+    "0 starters" for almost every HS team from 2026-06 until this was split out (2026-09-20).
+
+    For each weight: the team's best-ranked entry marked is_starter (force_backup_ids override that flag to False);
+    if none is marked, the team's lowest-ranked entry; None if the team has nobody ranked at that weight.
+    """
+    starters: Dict[str, Optional[str]] = {}
+    for weight in weight_classes:
+        team_entries = []
+        for entry in rankings_by_weight.get(weight, []):
+            if slugify_team_name(entry.get("team", "")) != team_id:
+                continue
+            is_starter = entry.get("is_starter", True)
+            if entry.get("wrestler_id") in force_backup_ids:
+                is_starter = False
+            team_entries.append({**entry, "is_starter": is_starter})
+
+        if not team_entries:
+            starters[weight] = None
+            continue
+
+        team_entries.sort(key=_rank_value)
+        starter = next((e for e in team_entries if e.get("is_starter", False)), team_entries[0])
+        starters[weight] = starter.get("wrestler_id")
+    return starters
+
+
 def resolve_starters_for_team(
     team_id: str,
     rankings_by_weight: Dict[str, List[Dict]],
     force_backup_ids: Set[str],
     weight_classes: List[str] = None,
     as_of_date: Optional[date] = None,
+    league: str = "ncaa",
 ) -> Dict[str, Optional[str]]:
     """
     Resolve starters for a team across all weights.
+
+    league="hs" uses resolve_starters_for_team_hs (the rules below are NCAA-only: they need Flo/match-count fields
+    that HS rankings don't have).
 
     Priority:
       1. Any Flo-ranked candidate on the roster at that weight is the
@@ -283,6 +336,8 @@ def resolve_starters_for_team(
 
     Returns: dict mapping weight -> wrestler_id (or None)
     """
+    if league == "hs":
+        return resolve_starters_for_team_hs(team_id, rankings_by_weight, force_backup_ids, weight_classes or [])
     starters = {}
     if weight_classes is None:
         weight_classes = ["125", "133", "141", "149", "157", "165", "174", "184", "197", "285"]
@@ -793,7 +848,7 @@ def process_league(season: int, league: str, state: str, gender: str, args: argp
         team_id = slugify_team_name(team_name)
         
         # Resolve starters
-        starters = resolve_starters_for_team(team_id, rankings_by_weight, force_backup_ids, weight_classes=weight_strs, as_of_date=as_of_date)
+        starters = resolve_starters_for_team(team_id, rankings_by_weight, force_backup_ids, weight_classes=weight_strs, as_of_date=as_of_date, league=league)
         
         # Build base team data
         team_data = {

@@ -42,7 +42,10 @@ class CustomHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
 if __name__ == "__main__":
     os.chdir(PUBLIC_DIR)
     
-    with socketserver.TCPServer(("", PORT), CustomHTTPRequestHandler) as httpd:
+    # ThreadingHTTPServer, not TCPServer: TCPServer handles ONE connection at a time, so a browser's idle
+    # "speculative" connection (Chrome opens one when you type a URL) blocks every real request behind it and
+    # the page just hangs. (Reproduced 2026-09-20: a single idle connection -> no response at all.)
+    with http.server.ThreadingHTTPServer(("", PORT), CustomHTTPRequestHandler) as httpd:
         print(f"Server running at http://localhost:{PORT}/")
         print(f"Serving files from: {PUBLIC_DIR}")
         try:

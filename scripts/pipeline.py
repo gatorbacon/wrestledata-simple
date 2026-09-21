@@ -123,6 +123,16 @@ def build_steps(track, season):
         },
     ]
 
+    # HS only. The Load Data step above already removes human-approved duplicated events (load_data.py default;
+    # opt out with --no-dedupe-events). This read-only step lists any NEW likely duplicates so they can be reviewed and
+    # approved (audit_duplicate_events.py --approve-confirmed / --approve-ids), then Load Data re-run.
+    if track["league"] == "hs":
+        idx = next(i for i, st in enumerate(steps) if st["name"] == "Load Data for Ranking")
+        steps.insert(idx + 1, {
+            "name": "Audit Duplicate Events (approve new ones, then re-run Load Data)",
+            "cmds": [[py, "scripts/rankings/audit_duplicate_events.py", "-gender", track["gender"], "-season", season]],
+        })
+
     if track["league"] == "ncaa":
         steps.append({
             "name": "Import Flo Rankings",
@@ -169,9 +179,17 @@ def build_steps(track, season):
     # call covers both HS genders, matching the script's own design.
     if is_ncaa:
         mv_cmd = [py, "scripts/mat_value/compute_all_mat_values.py", "--season", season, "-league", "ncaa", "-gender", "men"]
+        steps.append({"name": "Compute Mat Value (DPG)", "cmds": [mv_cmd]})
     else:
-        mv_cmd = [py, "scripts/mat_value/compute_all_mat_values.py", "--season", season, "-league", "hs", "-state", state]
-    steps.append({"name": "Compute Mat Value (DPG)", "cmds": [mv_cmd]})
+        # KentuckyMat doesn't use Mat Value anywhere (checked 2026-09-20): the MV profile section is NCAA-only in
+        # app.js, mat_value.html is an unlinked orphan, the homepage's MV loader is in an unloaded script, and every
+        # committed HS `mv` value is null. The HS script has also been failing (hundreds of "Failed to find opponent"
+        # errors) and would overwrite the committed files with a smaller, worse set. Re-enable only if HS MV returns.
+        steps.append({
+            "name": "Compute Mat Value (DPG)", "cmds": [], "disabled": True,
+            "note": "Skipped for HS -- KentuckyMat doesn't use Mat Value and the HS script is currently broken "
+                    "(CLAUDE.md Known Gotcha 11).",
+        })
 
     # Rolling per-date DPG trajectory for the profile page's chart trendline
     # + hover. Reads only weight_class_<weight>.json (already produced by

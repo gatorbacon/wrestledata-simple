@@ -104,10 +104,21 @@ def extract_conference(division: str) -> Optional[str]:
 
 
 def load_teams_list(teams_list_path: str) -> List[Dict]:
-    """Load team list JSON file."""
+    """Load team list JSON file.
+
+    Entries that slugify to the same team_id (e.g. "Waggener" and "Waggener " with a stray trailing space, which the
+    TrackWrestling scrape can list twice) are collapsed to ONE entry -- the one that has a region, else the first --
+    so a team never gets two rows/files under the same id.
+    """
     with open(teams_list_path, "r", encoding="utf-8") as f:
         teams = json.load(f)
-    return teams
+    by_id: Dict[str, Dict] = {}
+    for team in teams:
+        tid = slugify_team_name(team.get("name", ""))
+        kept = by_id.get(tid)
+        if kept is None or (team.get("region") and not kept.get("region")):
+            by_id[tid] = team
+    return list(by_id.values()) if len(by_id) != len(teams) else teams
 
 
 def load_starter_overrides(overrides_path: Optional[str]) -> Set[str]:

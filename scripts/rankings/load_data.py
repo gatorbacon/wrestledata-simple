@@ -1445,7 +1445,8 @@ def dedupe_matches_across_weights(data: Dict[str, Dict]) -> None:
         wc_data["matches"] = new_matches
 
 
-def save_loaded_data(data: Dict[str, Dict], season: int, output_dir: str = "mt/rankings_data", league: str = 'ncaa', state: str = None, gender: str = None):
+def save_loaded_data(data: Dict[str, Dict], season: int, output_dir: str = "mt/rankings_data", league: str = 'ncaa', state: str = None, gender: str = None,
+                     dedupe_events: bool = False, approved_events_file: str = None):
     """
     Save the loaded data to JSON files for inspection.
     
@@ -1456,6 +1457,12 @@ def save_loaded_data(data: Dict[str, Dict], season: int, output_dir: str = "mt/r
         league: League type ('ncaa' or 'hs')
         state: State code (required for HS)
         gender: Gender ('boys' or 'girls', required for HS)
+        dedupe_events: HS only. When True, remove the extra copy of every bout in the human-APPROVED duplicated
+            events (see duplicate_events.py / CLAUDE.md Known Gotcha 9) and print a notice about any new,
+            unapproved likely duplicates. Nothing is removed unless an event pair was approved in
+            data/duplicate_events/approved_duplicate_events.json. The function default is False so other callers
+            are unaffected; the load_data.py command line passes True unless --no-dedupe-events is given.
+        approved_events_file: Override the approved-decisions file (testing).
     """
     output_path = Path(output_dir) / league_dir_key(league, gender, state) / str(season)
     output_path.mkdir(parents=True, exist_ok=True)
@@ -1463,7 +1470,13 @@ def save_loaded_data(data: Dict[str, Dict], season: int, output_dir: str = "mt/r
     # First, de-duplicate matches across all weight classes so that any given
     # bout only appears once in the weight_class_*.json files.
     dedupe_matches_across_weights(data)
-    
+
+    # Remove approved duplicated events (same bouts listed twice under different dates/names).
+    # Runs after the date-keyed de-dupe above and BEFORE overrides, so overrides apply to the surviving copies.
+    if dedupe_events:
+        from duplicate_events import apply_approved_duplicate_events
+        apply_approved_duplicate_events(data, season, league, state, gender, approved_file=approved_events_file)
+
     # Apply match overrides AFTER deduplication
     # This ensures overrides are applied to the final deduplicated matches
     apply_match_overrides(data, season, output_dir, league=league, state=state, gender=gender)
@@ -1513,6 +1526,12 @@ if __name__ == "__main__":
     parser.add_argument('-state', type=str, help='State code (required when league=hs, currently only KY supported)')
     parser.add_argument('-gender', type=str, choices=['boys', 'girls', 'men', 'women'],
                         help='Gender: boys/girls (HS) or men/women (NCAA)')
+    parser.add_argument('--no-dedupe-events', action='store_true',
+                        help='HS: do NOT remove human-approved duplicated events. By default (with -save) the extra copy '
+                             'of every bout in the events approved in data/duplicate_events/'
+                             'approved_duplicate_events.json is removed, and a notice lists any NEW likely duplicates.')
+    parser.add_argument('--approved-events-file', type=str, default=None,
+                        help='Override the approved duplicate-events file (testing)')
     args = parser.parse_args()
 
     if args.league == 'hs':
@@ -1563,5 +1582,6 @@ if __name__ == "__main__":
     
     # Save data if requested
     if args.save:
-        save_loaded_data(data, args.season, league=args.league, state=args.state, gender=args.gender)
+        save_loaded_data(data, args.season, league=args.league, state=args.state, gender=args.gender,
+                         dedupe_events=not args.no_dedupe_events, approved_events_file=args.approved_events_file)
 

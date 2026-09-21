@@ -343,8 +343,10 @@ def main():
     parser.add_argument(
         "--output-dir",
         type=str,
-        default="frontend/wrestledata-ui/public/data/leaderboards",
-        help="Output directory for JSON files",
+        default=None,
+        help=("Output directory for JSON files (default: NCAA -> frontend/wrestledata-ui/public/data/leaderboards; "
+              "HS -> frontend/hs-ky-ui/public/data/leaderboards/{gender}/{season}). It used to default to the NCAA path "
+              "for both, so every HS run silently overwrote MatSavant's leaderboards."),
     )
     parser.add_argument(
         "--rankings-dir",
@@ -414,7 +416,7 @@ def main():
         print(f"Found {len(all_stats)} unique wrestlers")
         
         # Generate JSON files
-        output_path = Path(args.output_dir)
+        output_path = Path(args.output_dir or "frontend/wrestledata-ui/public/data/leaderboards")
         output_path.mkdir(parents=True, exist_ok=True)
         
         stat_types = ["pins", "techs", "majors", "wins"]

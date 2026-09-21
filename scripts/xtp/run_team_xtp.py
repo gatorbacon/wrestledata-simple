@@ -420,7 +420,7 @@ def main():
             else:
                 base_data_dir = Path("frontend/hs-ky-ui/public/data/xtp") / gender
             
-            if args.rankings_dir != "mt/rankings_data":
+            if args.rankings_dir is not None:   # (default is None since 2026-06; was compared to a stale string default -> crash)
                 rankings_dir = Path(args.rankings_dir)
             else:
                 rankings_dir = Path("frontend/hs-ky-ui/public/data/rankings") / gender / str(args.season)

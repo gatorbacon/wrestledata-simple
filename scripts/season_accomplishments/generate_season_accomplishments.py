@@ -12,10 +12,16 @@ Output: data/season_accomplishments/{gender}/{season}/season_accomplishments.jso
 import json
 import argparse
 import re
+import sys
 from pathlib import Path
 from typing import Dict, List, Optional, Set
 from collections import defaultdict
 from datetime import datetime
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "rankings"))
+from duplicate_events import match_ident, processed_drop_idents  # noqa: E402
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "records"))
+from canonical_bouts import build_season as build_canonical_season  # noqa: E402
 
 # Team name aliases: any variant in the list maps to the canonical (first) form.
 _TEAM_ALIASES: list[tuple[str, ...]] = [
@@ -955,17 +961,16 @@ def check_postseason_qualification_and_placement(matches: List[Dict], wrestler_n
     }
 
 
-def process_season(season: int, gender: str, state: str = 'ky') -> Dict:
+def collect_wrestlers(season: int, gender: str, state: str = 'ky', dedupe_events: bool = True, canonical: bool = True) -> Dict[str, Dict]:
     """
-    Process a season and generate accomplishment records.
-    
-    Args:
-        season: Season year (e.g., 2025)
-        gender: Gender ('boys' or 'girls')
-        state: State code (default 'ky')
-        
-    Returns:
-        Dictionary with season, gender, and wrestlers list
+    Per-wrestler accomplishment records (record, final weight, grade, post-season flags) from mt/processed_data,
+    WITHOUT the state/regional placement matching that process_season applies afterwards.
+
+    dedupe_events: drop the extra copy of every bout in the human-APPROVED duplicated events first
+    (data/duplicate_events/approved_duplicate_events.json, CLAUDE.md Known Gotcha 9) so records aren't inflated.
+
+    canonical: the `record` W-L comes from the canonical bout list (scripts/records/canonical_bouts.py, CLAUDE.md Known Gotcha 15) -- the same
+    numbers the wrestler profiles, match lists and career records use. False = the legacy per-row count (calculate_record), kept only for comparison.
     """
     # Setup paths - use processed data as single source of truth
     state_lower = state.lower()
@@ -973,6 +978,11 @@ def process_season(season: int, gender: str, state: str = 'ky') -> Dict:
     
     if not data_dir.exists():
         raise FileNotFoundError(f"Processed data directory not found: {data_dir}")
+
+    drop = processed_drop_idents(gender, season, state=state_lower) if dedupe_events else set()
+    canon = build_canonical_season(gender, season, state=state_lower) if canonical else None
+    if drop:
+        print(f"Dropping {len(drop)} bouts from approved duplicate events before counting records")
     
     # Track wrestlers by ID (in case they appear on multiple teams)
     wrestlers_by_id: Dict[str, Dict] = {}
@@ -997,6 +1007,8 @@ def process_season(season: int, gender: str, state: str = 'ky') -> Dict:
             wrestler_name = wrestler.get('name', 'Unknown')
             grade_str = wrestler.get('grade', '')
             matches = wrestler.get('matches', [])
+            if drop:
+                matches = [m for m in matches if match_ident(m, wrestler_id) not in drop]
             
             # Skip wrestlers without IDs
             if not wrestler_id:
@@ -1020,6 +1032,9 @@ def process_season(season: int, gender: str, state: str = 'ky') -> Dict:
             
             # Calculate record
             record = calculate_record(matches, wrestler_name, team_name)
+            if canon is not None:
+                cr = canon.record(str(wrestler_id))
+                record = {'wins': cr['W'], 'losses': cr['L']}
             
             # Get final weight
             final_weight = get_final_weight(matches, wrestler_name, team_name)
@@ -1052,6 +1067,24 @@ def process_season(season: int, gender: str, state: str = 'ky') -> Dict:
             wrestler_match_counts[wrestler_id] = valid_match_count
     
     print(f"Found {len(wrestlers_by_id)} wrestlers with at least one match")
+    return wrestlers_by_id
+
+
+def process_season(season: int, gender: str, state: str = 'ky', dedupe_events: bool = True, canonical: bool = True) -> Dict:
+    """
+    Process a season and generate accomplishment records.
+    
+    Args:
+        season: Season year (e.g., 2025)
+        gender: Gender ('boys' or 'girls')
+        state: State code (default 'ky')
+        dedupe_events: drop approved duplicate-event bouts before counting (default on; see collect_wrestlers)
+        
+    Returns:
+        Dictionary with season, gender, and wrestlers list
+    """
+    state_lower = state.lower()
+    wrestlers_by_id = collect_wrestlers(season, gender, state, dedupe_events=dedupe_events, canonical=canonical)
     
     accomplishments = {
         'season': season,
@@ -1063,7 +1096,6 @@ def process_season(season: int, gender: str, state: str = 'ky') -> Dict:
     match_cache = _load_match_cache(gender, season)
 
     # Apply state placements from placement file
-    state_lower = state.lower()
     placement_file_path = Path(f"data/hs_{state_lower}_{gender}/{season}/placement.txt")
     if not placement_file_path.exists():
         placement_file_path = Path(f"data/hs_{state_lower}_{gender}/{season}/placement.md")
@@ -1076,6 +1108,39 @@ def process_season(season: int, gender: str, state: str = 'ky') -> Dict:
     )
 
     return accomplishments
+
+
+def records_only(args) -> int:
+    """Correct only `record` in an existing season_accomplishments.json (see --records-only)."""
+    path = Path(args.output_dir) / args.gender / str(args.season) / "season_accomplishments.json"
+    if not path.exists():
+        print(f"❌ {path} not found")
+        return 1
+    existing = json.load(open(path, encoding="utf-8"))
+    fresh = collect_wrestlers(args.season, args.gender, args.state, dedupe_events=not args.no_dedupe_events, canonical=not args.legacy_records)
+    canon = build_canonical_season(args.gender, args.season, state=args.state.lower()) if not args.legacy_records else None
+    changed, missing, deltas = 0, 0, [0, 0]
+    for w in existing["wrestlers"]:
+        new = fresh.get(w["season_wrestler_id"])
+        if not new and canon is not None and canon.wrestler_bouts(w["season_wrestler_id"]):
+            # no file of their own in processed data, but opponents' files record their bouts -> the canonical list still knows their record
+            cr = canon.record(str(w["season_wrestler_id"]))
+            new = {"record": {"wins": cr["W"], "losses": cr["L"]}}
+        if not new:
+            missing += 1
+            continue
+        if new["record"] != w["record"]:
+            deltas[0] += new["record"]["wins"] - w["record"]["wins"]
+            deltas[1] += new["record"]["losses"] - w["record"]["losses"]
+            changed += 1
+            w["record"] = new["record"]
+    print(f"{args.gender} {args.season}: {changed} wrestler record(s) changed (wins {deltas[0]:+d}, losses {deltas[1]:+d}); "
+          f"{missing} existing wrestler(s) not found in processed data (left as-is)")
+    if not args.dry_run and changed:
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(existing, f, indent=2, ensure_ascii=False)
+        print(f"✅ updated {path}")
+    return 0
 
 
 def main():
@@ -1108,7 +1173,30 @@ def main():
         help='Output directory (default: data/season_accomplishments)'
     )
     
+    parser.add_argument(
+        '--no-dedupe-events',
+        action='store_true',
+        help='Do NOT drop approved duplicate-event bouts before counting records (default: drop them)'
+    )
+    parser.add_argument(
+        '--records-only',
+        action='store_true',
+        help=('Do not regenerate the file: keep the existing data/season_accomplishments file (incl. its placement '
+              'matching) and only correct each wrestler\'s `record` from the de-duplicated processed data. Use for '
+              'past seasons after approving duplicate events (add --dry-run to preview).')
+    )
+    parser.add_argument(
+        '--legacy-records',
+        action='store_true',
+        help=('Count `record` the old per-row way (calculate_record) instead of from the canonical bout list '
+              '(scripts/records/canonical_bouts.py). Only for comparison; the site now uses the canonical list.')
+    )
+    parser.add_argument('--dry-run', action='store_true', help='With --records-only: report changes, write nothing')
+    
     args = parser.parse_args()
+
+    if args.records_only:
+        return records_only(args)
     
     print(f"\n{'='*60}")
     print(f"Generating Season Accomplishments")
@@ -1119,7 +1207,7 @@ def main():
     
     # Process season
     try:
-        accomplishments = process_season(args.season, args.gender, args.state)
+        accomplishments = process_season(args.season, args.gender, args.state, dedupe_events=not args.no_dedupe_events, canonical=not args.legacy_records)
     except Exception as e:
         print(f"❌ Error processing season: {e}")
         return 1

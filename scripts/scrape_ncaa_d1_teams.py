@@ -14,8 +14,8 @@ Usage:
 Output paths:
   data/team_lists/ncaa_men/{season}/teams.json
   data/team_lists/ncaa_women/{season}/teams.json
-  data/team_lists/hs_ky_boys/{season}/teams.json
-  data/team_lists/hs_ky_girls/{season}/teams.json
+  data/team_lists/hs_ky_boys/teams.json   (flat, no season -- see get_output_path)
+  data/team_lists/hs_ky_girls/teams.json
 """
 
 import argparse
@@ -65,10 +65,12 @@ def parse_args():
 def get_output_path(league: str, gender: str, state: str, season: int) -> Path:
     """Return the output JSON path for this league/gender/season combination."""
     if league == 'hs':
-        key = f"hs_{state.lower()}_{gender}"
-    else:
-        key = f"ncaa_{gender}"
-    return DATA_DIR / "team_lists" / key / str(season) / "teams.json"
+        # HS keeps ONE flat, season-less list: data/team_lists/hs_ky_{gender}/teams.json. Every HS reader
+        # (build_team_profiles, calculate_region_points, create_rankings_release, create_baseline_archive,
+        # generate_match_highlights, enter_bracket) reads that exact path. (Writing {season}/teams.json here since
+        # 2026-06 meant a new scrape never reached any of them.)
+        return DATA_DIR / "team_lists" / f"hs_{state.lower()}_{gender}" / "teams.json"
+    return DATA_DIR / "team_lists" / f"ncaa_{gender}" / str(season) / "teams.json"
 
 
 class WrestlingScraper:
@@ -406,6 +408,11 @@ class WrestlingScraper:
         for name, team in existing.items():
             if name not in merged:
                 merged[name] = team
+            elif team.get('region') and not merged[name].get('region'):
+                # HS: TrackWrestling only lists "Region N" in the leagues column during the season; an off-season
+                # re-scrape returns none and used to wipe every region (team pages then read "Kentucky High School"
+                # instead of "Region 4"). A region we already know is kept unless the new scrape supplies one.
+                merged[name]['region'] = team['region']
 
         result = sorted(merged.values(), key=lambda t: t['name'])
 

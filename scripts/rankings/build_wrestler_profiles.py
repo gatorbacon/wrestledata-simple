@@ -26,6 +26,7 @@ import argparse
 import json
 import re
 import shutil
+import sys
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
@@ -37,6 +38,10 @@ from normalized_scoring import (
 )
 from matches_and_diff_by_rank import estimate_match_duration_seconds
 from scoringbyrank import _parse_score_from_result
+
+# Canonical bout list (HS): one answer for "which bouts exist and who won" -- see CLAUDE.md Known Gotcha 15 and scripts/records/canonical_bouts.py
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "records"))
+from canonical_bouts import build_season as _build_canonical_season, matches_by_wrestler as _canonical_matches_by_wrestler  # noqa: E402
 
 
 def _load_full_rank_map(season: int, data_dir: str = "mt/rankings_data", league: str = 'ncaa', gender: str = None) -> Dict[str, int]:
@@ -213,6 +218,15 @@ def parse_args() -> argparse.Namespace:
         default=None,
         help="Output directory for wrestler profiles (auto-determined if not specified)",
     )
+    parser.add_argument(
+        "-match_source",
+        type=str,
+        choices=["canonical", "weight_classes"],
+        default="canonical",
+        help=("HS only: where each wrestler's bouts come from. 'canonical' (default) = the canonical bout list "
+              "(scripts/records/canonical_bouts.py) so record, match list and stats agree everywhere; 'weight_classes' = the legacy "
+              "merged mt/rankings_data weight_class files (kept for comparison only)."),
+    )
     return parser.parse_args()
 
 
@@ -370,6 +384,37 @@ def load_all_matches_from_weight_classes(
     return dict(matches_by_wrestler)
 
 
+def load_canonical_matches(season: int, gender: str, data_dir: str):
+    """HS: (matches_by_wrestler, synthetic_opponent_info) from the canonical bout list, in the weight_class-file match shape.
+    A known pair's `weight_class` is taken from the merged ranking files when the pair appears there (they hold the weight-change
+    decisions); otherwise the raw row's weight is used."""
+    sb = _build_canonical_season(gender, season)
+    wc_weight = {}
+    for wc_file in sorted((Path(data_dir) / str(season)).glob("weight_class_*.json")):
+        try:
+            with wc_file.open("r", encoding="utf-8") as f:
+                wc_data = json.load(f)
+        except Exception:
+            continue
+        for m in wc_data.get("matches", []):
+            a, b = m.get("wrestler1_id"), m.get("wrestler2_id")
+            if a and b and m.get("date"):
+                mo, d, y = (m["date"].split("/") + [None, None])[:3] if "/" in m["date"] else (None, None, None)
+                if y:
+                    wc_weight.setdefault((tuple(sorted([str(a), str(b)])), f"{y}-{mo.zfill(2)}-{d.zfill(2)}"), m.get("weight_class"))
+
+    from load_data import normalize_weight_class  # same normalisation load_data applies to a raw row's weight ("152 Girls", "JV 150" -> a standard class)
+
+    def weight_of(bout):
+        w = wc_weight.get((tuple(sorted(bout["ids"])), bout["date"])) if len(bout["ids"]) == 2 else None
+        if w:
+            return w
+        raw = bout.get("weight")
+        return (normalize_weight_class(raw, "hs", "KY", gender) if raw else None) or raw
+
+    return _canonical_matches_by_wrestler(sb, weight_of=weight_of)
+
+
 def classify_result_type(result: str) -> str:
     """Classify match result type: D, MD, TF, F, INJ, etc."""
     if not result:
@@ -459,10 +504,15 @@ def calculate_records(
     matches: List[Dict],
     wrestler_id: str,
     rank_by_id: Dict[str, int],
+    include_mff: bool = False,
 ) -> Dict[str, any]:
-    """Calculate win/loss records (overall, vs_ranked, vs_top10, vs_top25)."""
+    """Calculate win/loss records (overall, vs_ranked, vs_top10, vs_top25).
+
+    include_mff: count medical forfeits (MFF / "M. For.") as wins/losses (canonical HS rule; CLAUDE.md Known Gotcha 15). They are still
+    excluded from bonus/pin rates via `mff_wins` (like forfeit wins)."""
     wins = 0
     forfeit_wins = 0
+    mff_wins = 0
     losses = 0
     ranked_wins = 0
     ranked_losses = 0
@@ -474,8 +524,8 @@ def calculate_records(
     for match in matches:
         result = match.get("result", "") or ""
         
-        # Skip MFF and invalid results
-        if is_mff_result(result):
+        # Skip MFF and invalid results (unless the canonical rule counts MFF)
+        if is_mff_result(result) and not include_mff:
             continue
         
         w1_id = match.get("wrestler1_id")
@@ -497,6 +547,8 @@ def calculate_records(
             wins += 1
             if classify_result_type(result) == "FF":
                 forfeit_wins += 1
+            if include_mff and (is_mff_result(result) or classify_result_type(result) == "MFF"):
+                mff_wins += 1      # canonical (HS) mode only: NCAA/legacy rates are unchanged
             opp_rank = rank_by_id.get(opp_id)
             if opp_rank:
                 ranked_wins += 1
@@ -521,6 +573,7 @@ def calculate_records(
         "vs_top25": f"{top25_wins}-{top25_losses}",
         "wins": wins,
         "forfeit_wins": forfeit_wins,
+        "mff_wins": mff_wins,
         "losses": losses,
         "ranked_wins": ranked_wins,
         "ranked_losses": ranked_losses,
@@ -647,8 +700,13 @@ def build_match_list(
     match_mv_impact_lookup: Optional[Dict] = None,
     supplemental_opponent_info: Optional[Dict] = None,
     career_lookup: Optional[Dict[str, str]] = None,
+    dedupe: bool = True,
+    include_mff: bool = False,
 ) -> List[Dict]:
-    """Build formatted match list for JSON output."""
+    """Build formatted match list for JSON output.
+
+    dedupe=False / include_mff=True is the canonical-bout mode: the list is already one entry per real bout (so no second de-dupe, which would
+    merge two same-day forfeits vs "Unknown" or two same-result rematches) and medical forfeits are listed."""
     match_list = []
     seen_match_keys = set()
     
@@ -658,7 +716,7 @@ def build_match_list(
         event = match.get("event")
         
         # Skip MFF and invalid results
-        if is_mff_result(result):
+        if is_mff_result(result) and not include_mff:
             continue
         
         w1_id = match.get("wrestler1_id")
@@ -674,11 +732,12 @@ def build_match_list(
             continue
         
         # De-duplicate
-        w1, w2 = sorted([wrestler_id, opp_id])
-        match_key = (w1, w2, date, result)
-        if match_key in seen_match_keys:
-            continue
-        seen_match_keys.add(match_key)
+        if dedupe:
+            w1, w2 = sorted([wrestler_id, opp_id])
+            match_key = (w1, w2, date, result)
+            if match_key in seen_match_keys:
+                continue
+            seen_match_keys.add(match_key)
         
         opp_info = all_wrestlers.get(opp_id, {})
         if not opp_info and supplemental_opponent_info:
@@ -1173,6 +1232,9 @@ def build_season_summary(
     return season_summary
 
 
+ACC_MISMATCHES: List[Tuple] = []   # (season, wrestler_id, accomplishments record, canonical record) -- printed at the end of main()
+
+
 def build_wrestler_profile(
     wrestler_id: str,
     season: int,
@@ -1188,8 +1250,12 @@ def build_wrestler_profile(
     careers_dir: Optional[Path] = None,
     hybrid_rank_by_id: Optional[Dict[str, int]] = None,
     supplemental_opponent_info: Optional[Dict] = None,
+    canonical: bool = False,
 ) -> Dict:
-    """Build complete wrestler profile JSON."""
+    """Build complete wrestler profile JSON.
+
+    canonical=True (HS default): `matches` is the canonical bout list (one entry per real bout, MFF included), so the record, the match
+    list and every stat derived from them agree by construction (CLAUDE.md Known Gotcha 15)."""
     wrestler_info = all_wrestlers.get(wrestler_id, {})
     name = wrestler_info.get("name", "Unknown")
     team = wrestler_info.get("team", "Unknown")
@@ -1225,7 +1291,7 @@ def build_wrestler_profile(
     apr_plus = metrics_data.get("PE_plus", 100.0)  # PE+ is APR+
     
     # Calculate records
-    records = calculate_records(matches, wrestler_id, rank_by_id)
+    records = calculate_records(matches, wrestler_id, rank_by_id, include_mff=canonical)
     
     # Calculate bonus stats
     bonus_stats = calculate_bonus_stats(matches, wrestler_id)
@@ -1238,7 +1304,7 @@ def build_wrestler_profile(
     forfeit_wins = records.get("forfeit_wins", 0)
     bonus_wins = majors + techs + pins
     # Bonus/pin rate: exclude forfeit wins from denominator (you can't earn bonus in a forfeit)
-    wins_actual = max(0, wins - forfeit_wins)
+    wins_actual = max(0, wins - forfeit_wins - records.get("mff_wins", 0))
     bonus_rate = (bonus_wins / wins_actual) if wins_actual > 0 else 0.0
     pin_rate = (pins / wins_actual) if wins_actual > 0 else 0.0
     
@@ -1252,6 +1318,8 @@ def build_wrestler_profile(
         matches, wrestler_id, rank_by_id, all_wrestlers, team_rank_by_name, match_mv_impact_lookup,
         supplemental_opponent_info=supplemental_opponent_info,
         career_lookup=career_lookup,
+        dedupe=not canonical,
+        include_mff=canonical,
     )
     
     # Get Mat Value data if available
@@ -1350,13 +1418,17 @@ def build_wrestler_profile(
                     if career_record:
                         profile["career_record"] = career_record
 
-                    # Use season accomplishments record for current season so it matches
-                    # Career Summary and is consistent everywhere (Season Stats, leaderboards).
+                    # The season record shown in Career Summary comes from season_accomplishments. With canonical bouts both are the SAME
+                    # number, so nothing is overridden; a difference means data/season_accomplishments is stale (re-run
+                    # generate_season_accomplishments.py). Legacy weight_class mode keeps the old override so its numbers still agree.
                     for entry in season_summary:
                         if entry.get("season") == season:
                             acc_record = entry.get("record", "").strip()
-                            if acc_record:
-                                profile["record"]["overall"] = acc_record
+                            if acc_record and acc_record != profile["record"]["overall"]:
+                                if canonical:
+                                    ACC_MISMATCHES.append((season, wrestler_id, acc_record, profile["record"]["overall"]))
+                                else:
+                                    profile["record"]["overall"] = acc_record
                             break
     return profile
 
@@ -1431,8 +1503,14 @@ def main() -> None:
             print("\nSkipping advanced metrics calculation for HS (SI+, DF+, PE+ not used)...")
             metrics_by_id = {}  # Empty dict - defaults will be used (100.0 for SI+/DF+/PE+, 0.0 for PF7/PA7)
             
-            print("\nLoading matches from weight class files...")
-            matches_by_wrestler = load_all_matches_from_weight_classes(season, data_dir)
+            use_canonical = args.match_source == "canonical"
+            synthetic_info = {}
+            if use_canonical:
+                print("\nLoading matches from the canonical bout list (scripts/records/canonical_bouts.py)...")
+                matches_by_wrestler, synthetic_info = load_canonical_matches(season, gender, data_dir)
+            else:
+                print("\nLoading matches from weight class files (LEGACY -match_source weight_classes)...")
+                matches_by_wrestler = load_all_matches_from_weight_classes(season, data_dir)
             print(f"Loaded matches for {len(matches_by_wrestler)} wrestlers")
             
             # Load Mat Value data if available
@@ -1478,6 +1556,8 @@ def main() -> None:
             # Load supplemental opponent info (names/teams for out-of-state opponents)
             print("\nLoading supplemental opponent info from processed data...")
             supplemental_opponent_info = load_supplemental_opponent_info(season, gender)
+            for sid, sinfo in synthetic_info.items():       # opponents without an id (forfeits vs "Unknown", out-of-state) get the same synthetic id load_data uses
+                supplemental_opponent_info.setdefault(sid, sinfo)
             print(f"Loaded supplemental info for {len(supplemental_opponent_info)} opponent IDs")
 
             # Create output directories
@@ -1485,6 +1565,19 @@ def main() -> None:
             by_id_dir = season_dir / "by_id"
             by_team_dir = season_dir / "by_team"
             
+            # Keep each wrestler's existing `bonus` block (compute_all_top33_bonus.py writes it; the rebuild below starts from an empty
+            # directory, so without this every rebuild silently drops it -- Known Gotcha 13)
+            existing_bonus_by_id = {}
+            if by_id_dir.exists():
+                for old_file in by_id_dir.glob("*.json"):
+                    try:
+                        with old_file.open("r", encoding="utf-8") as f:
+                            b = json.load(f).get("bonus")
+                        if b:
+                            existing_bonus_by_id[old_file.stem] = b
+                    except Exception:
+                        pass
+
             # Delete existing directories
             if by_id_dir.exists():
                 shutil.rmtree(by_id_dir)
@@ -1525,20 +1618,13 @@ def main() -> None:
                     careers_dir=careers_dir,
                     hybrid_rank_by_id=hybrid_rank_by_id,
                     supplemental_opponent_info=supplemental_opponent_info,
+                    canonical=use_canonical,
                 )
                 
-                # Preserve existing bonus data if it exists
+                # Preserve existing bonus data if it existed before this rebuild
                 output_file = by_id_dir / f"{wrestler_id}.json"
-                if output_file.exists():
-                    try:
-                        with output_file.open("r", encoding="utf-8") as f:
-                            existing_profile = json.load(f)
-                            existing_bonus = existing_profile.get("bonus")
-                            if existing_bonus:
-                                profile["bonus"] = existing_bonus
-                    except Exception:
-                        # If we can't read existing file, continue without preserving bonus
-                        pass
+                if str(wrestler_id) in existing_bonus_by_id:
+                    profile["bonus"] = existing_bonus_by_id[str(wrestler_id)]
                 
                 # Timestamp when this profile was generated (for "last updated" note on profile page)
                 profile["profile_generated_at"] = datetime.now().strftime("%Y-%m-%d")
@@ -1582,6 +1668,11 @@ def main() -> None:
                 processed += 1
             
             print(f"\nProcessed {processed} wrestlers")
+            if ACC_MISMATCHES:
+                print(f"\n⚠️  {len(ACC_MISMATCHES)} profile(s) whose data/season_accomplishments record differs from the canonical record "
+                      f"(season_accomplishments is stale -- run generate_season_accomplishments.py --season {season} --gender {gender} "
+                      f"[--records-only]). First few: {ACC_MISMATCHES[:5]}")
+                ACC_MISMATCHES.clear()
             
             # Build team index
             print("\nBuilding index files...")
