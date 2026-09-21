@@ -3,8 +3,8 @@
   "canonical_name": "Yasmine Legendre",
   "career_record": {
     "wins": 1,
-    "losses": 5,
-    "win_pct": 0.167
+    "losses": 6,
+    "win_pct": 0.143
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 12,
       "team": "Seneca",
       "weight_class": 165,
-      "record": "1-5",
+      "record": "1-6",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 59,
       "matches": [
@@ -110,25 +111,6 @@
         },
         {
           "date": "2026-01-10",
-          "opponent_id": "35668840132",
-          "opponent_career_id": "career_000160",
-          "opponent_name": "Alaina May",
-          "opponent_team": "Central",
-          "opponent_team_rank": 14,
-          "opponent_weight": 152,
-          "opponent_rank": 37,
-          "weight_class": "165",
-          "result": "L",
-          "method": "DEC",
-          "score": "19-17",
-          "duration": "7:00",
-          "event": "Queen of the City Wrestling",
-          "mv_impact": -3.73,
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2026-01-10",
           "opponent_id": "35333672132",
           "opponent_career_id": "career_000124",
           "opponent_name": "Aria McFarland",
@@ -143,6 +125,25 @@
           "duration": "0:18",
           "event": "Queen of the City Wrestling",
           "mv_impact": -3.24,
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2026-01-10",
+          "opponent_id": "35668840132",
+          "opponent_career_id": "career_000160",
+          "opponent_name": "Alaina May",
+          "opponent_team": "Central",
+          "opponent_team_rank": 14,
+          "opponent_weight": 152,
+          "opponent_rank": 37,
+          "weight_class": "165",
+          "result": "L",
+          "method": "DEC",
+          "score": "19-17",
+          "duration": "7:00",
+          "event": "Queen of the City Wrestling",
+          "mv_impact": -3.73,
           "season": 2026,
           "opponent_ky": true
         }

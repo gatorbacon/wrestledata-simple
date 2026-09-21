@@ -2,9 +2,9 @@
   "career_id": "career_001205",
   "canonical_name": "Abby Ellis",
   "career_record": {
-    "wins": 22,
+    "wins": 20,
     "losses": 8,
-    "win_pct": 0.733
+    "win_pct": 0.714
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 12,
       "team": "McCracken County",
       "weight_class": 145,
-      "record": "22-8",
+      "record": "20-8",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -140,7 +141,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:44",
-          "event": "vs. McCracken County",
+          "event": "vs. Fort Campbell",
           "season": 2024,
           "opponent_ky": true
         },
@@ -161,6 +162,42 @@
           "event": "Girls` Murdale",
           "season": 2024,
           "opponent_ky": false
+        },
+        {
+          "date": "2024-01-06",
+          "opponent_id": "25129832132",
+          "opponent_career_id": null,
+          "opponent_name": "Daisjha Cooper",
+          "opponent_team": "Marion (H.S.)",
+          "opponent_team_rank": null,
+          "opponent_weight": null,
+          "opponent_rank": null,
+          "weight_class": "138",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:38",
+          "event": "Girls` Murdale",
+          "season": 2024,
+          "opponent_ky": false
+        },
+        {
+          "date": "2023-12-30",
+          "opponent_id": "25184425132",
+          "opponent_career_id": "career_001174",
+          "opponent_name": "Lydia Gardner",
+          "opponent_team": "Apollo",
+          "opponent_team_rank": null,
+          "opponent_weight": 145,
+          "opponent_rank": null,
+          "weight_class": "145",
+          "result": "L",
+          "method": "DEC",
+          "score": "4-3",
+          "duration": "7:00",
+          "event": "Lady Eagle Invitational",
+          "season": 2024,
+          "opponent_ky": true
         },
         {
           "date": "2023-12-30",
@@ -194,24 +231,6 @@
           "method": "FALL",
           "score": null,
           "duration": "1:28",
-          "event": "Lady Eagle Invitational",
-          "season": 2024,
-          "opponent_ky": true
-        },
-        {
-          "date": "2023-12-30",
-          "opponent_id": "25184425132",
-          "opponent_career_id": "career_001174",
-          "opponent_name": "Lydia Gardner",
-          "opponent_team": "Apollo",
-          "opponent_team_rank": null,
-          "opponent_weight": 145,
-          "opponent_rank": null,
-          "weight_class": "145",
-          "result": "L",
-          "method": "DEC",
-          "score": "4-3",
-          "duration": "7:00",
           "event": "Lady Eagle Invitational",
           "season": 2024,
           "opponent_ky": true
@@ -470,24 +489,6 @@
         },
         {
           "date": "2023-11-22",
-          "opponent_id": "24849144132",
-          "opponent_career_id": null,
-          "opponent_name": "Estefonia Resendiz Vazquez",
-          "opponent_team": "Rossview (Girls)",
-          "opponent_team_rank": null,
-          "opponent_weight": 145,
-          "opponent_rank": null,
-          "weight_class": "152",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:42",
-          "event": "vs. Rossview (Girls)",
-          "season": 2024,
-          "opponent_ky": false
-        },
-        {
-          "date": "2023-11-22",
           "opponent_id": "25184430132",
           "opponent_career_id": "career_001000",
           "opponent_name": "Josie Ellis",
@@ -503,6 +504,24 @@
           "event": "vs. Apollo High School",
           "season": 2024,
           "opponent_ky": true
+        },
+        {
+          "date": "2023-11-22",
+          "opponent_id": "24849144132",
+          "opponent_career_id": null,
+          "opponent_name": "Estefonia Resendiz Vazquez",
+          "opponent_team": "Rossview (Girls)",
+          "opponent_team_rank": null,
+          "opponent_weight": 145,
+          "opponent_rank": null,
+          "weight_class": "152",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:42",
+          "event": "vs. Rossview (Girls)",
+          "season": 2024,
+          "opponent_ky": false
         }
       ]
     }

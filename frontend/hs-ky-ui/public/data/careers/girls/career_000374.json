@@ -3,8 +3,8 @@
   "canonical_name": "Serenity Decker",
   "career_record": {
     "wins": 1,
-    "losses": 6,
-    "win_pct": 0.143
+    "losses": 8,
+    "win_pct": 0.111
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 7,
       "team": "Holmes",
       "weight_class": 132,
-      "record": "1-6",
+      "record": "1-8",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 65,
       "matches": [
@@ -148,25 +149,6 @@
         },
         {
           "date": "2025-11-29",
-          "opponent_id": "35510579132",
-          "opponent_career_id": "career_000373",
-          "opponent_name": "Kenyana Johnson",
-          "opponent_team": "Holmes",
-          "opponent_team_rank": null,
-          "opponent_weight": 126,
-          "opponent_rank": 47,
-          "weight_class": "132",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "Tommy Castle Classic",
-          "mv_impact": -5.51,
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2025-11-29",
           "opponent_id": "35436574132",
           "opponent_career_id": "career_000331",
           "opponent_name": "Brannan Ransom",
@@ -181,6 +163,25 @@
           "duration": "0:09",
           "event": "Tommy Castle Classic",
           "mv_impact": -4.5,
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2025-11-29",
+          "opponent_id": "35510579132",
+          "opponent_career_id": "career_000373",
+          "opponent_name": "Kenyana Johnson",
+          "opponent_team": "Holmes",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": 47,
+          "weight_class": "132",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "Tommy Castle Classic",
+          "mv_impact": -5.51,
           "season": 2026,
           "opponent_ky": true
         }

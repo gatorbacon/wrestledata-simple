@@ -3,8 +3,8 @@
   "canonical_name": "Jade Antle",
   "career_record": {
     "wins": 1,
-    "losses": 7,
-    "win_pct": 0.125
+    "losses": 6,
+    "win_pct": 0.143
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 8,
       "team": "Adair County",
       "weight_class": 185,
-      "record": "1-7",
+      "record": "1-6",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 56,
       "matches": [
@@ -74,24 +75,6 @@
         },
         {
           "date": "2025-12-13",
-          "opponent_id": "35689043132",
-          "opponent_career_id": "career_000530",
-          "opponent_name": "Madison Cannon",
-          "opponent_team": "Meade County",
-          "opponent_team_rank": 9,
-          "opponent_weight": 165,
-          "opponent_rank": 12,
-          "weight_class": "185",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Meade County",
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2025-12-13",
           "opponent_id": "OUTSTATE_ffe290adc6a5",
           "opponent_career_id": null,
           "opponent_name": "Unknown",
@@ -141,6 +124,24 @@
           "score": null,
           "duration": "0:00",
           "event": "vs. Harrison County",
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2025-12-13",
+          "opponent_id": "35689043132",
+          "opponent_career_id": "career_000530",
+          "opponent_name": "Madison Cannon",
+          "opponent_team": "Meade County",
+          "opponent_team_rank": 9,
+          "opponent_weight": 165,
+          "opponent_rank": 12,
+          "weight_class": "185",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Meade County",
           "season": 2026,
           "opponent_ky": true
         }

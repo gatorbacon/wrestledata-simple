@@ -3,8 +3,8 @@
   "canonical_name": "Aniya Bryant",
   "career_record": {
     "wins": 16,
-    "losses": 13,
-    "win_pct": 0.552
+    "losses": 11,
+    "win_pct": 0.593
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 10,
       "team": "Male",
       "weight_class": 152,
-      "record": "14-11",
+      "record": "14-9",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": 6,
       "current_rank": 11,
       "matches": [
@@ -451,27 +452,10 @@
       "weight_class": 165,
       "record": "2-2",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
-        {
-          "date": "2024-12-14",
-          "opponent_id": "30115377132",
-          "opponent_career_id": "career_000875",
-          "opponent_name": "Elena Verdejo Luce",
-          "opponent_team": "Eastern",
-          "opponent_team_rank": null,
-          "opponent_weight": 152,
-          "opponent_rank": null,
-          "weight_class": "165",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "2024 Derby City Girls Tournament",
-          "season": 2025,
-          "opponent_ky": true
-        },
         {
           "date": "2024-12-14",
           "opponent_id": "30159242132",
@@ -483,6 +467,24 @@
           "opponent_rank": null,
           "weight_class": "165",
           "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "2024 Derby City Girls Tournament",
+          "season": 2025,
+          "opponent_ky": true
+        },
+        {
+          "date": "2024-12-14",
+          "opponent_id": "30115377132",
+          "opponent_career_id": "career_000875",
+          "opponent_name": "Elena Verdejo Luce",
+          "opponent_team": "Eastern",
+          "opponent_team_rank": null,
+          "opponent_weight": 152,
+          "opponent_rank": null,
+          "weight_class": "165",
+          "result": "W",
           "method": "FALL",
           "score": null,
           "duration": "0:00",

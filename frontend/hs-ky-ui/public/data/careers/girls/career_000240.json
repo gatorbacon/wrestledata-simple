@@ -2,9 +2,9 @@
   "career_id": "career_000240",
   "canonical_name": "Jaycee Bolen",
   "career_record": {
-    "wins": 17,
+    "wins": 16,
     "losses": 20,
-    "win_pct": 0.459
+    "win_pct": 0.444
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 7,
       "team": "Fort Campbell",
       "weight_class": 100,
-      "record": "17-20",
+      "record": "16-20",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 46,
       "matches": [
@@ -32,27 +33,9 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Fort Campbell",
+          "event": "vs. Apollo",
           "season": 2026,
           "opponent_ky": true
-        },
-        {
-          "date": "2026-01-19",
-          "opponent_id": "35225068132",
-          "opponent_career_id": null,
-          "opponent_name": "Isabella Salazar",
-          "opponent_team": "Northwest High School Girls",
-          "opponent_team_rank": null,
-          "opponent_weight": 107,
-          "opponent_rank": null,
-          "weight_class": "107",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:21",
-          "event": "vs. Northwest High School Girls",
-          "season": 2026,
-          "opponent_ky": false
         },
         {
           "date": "2026-01-19",
@@ -87,6 +70,24 @@
           "score": null,
           "duration": "7:00",
           "event": "vs. Portland High School Girls",
+          "season": 2026,
+          "opponent_ky": false
+        },
+        {
+          "date": "2026-01-19",
+          "opponent_id": "35225068132",
+          "opponent_career_id": null,
+          "opponent_name": "Isabella Salazar",
+          "opponent_team": "Northwest High School Girls",
+          "opponent_team_rank": null,
+          "opponent_weight": 107,
+          "opponent_rank": null,
+          "weight_class": "107",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:21",
+          "event": "vs. Northwest High School Girls",
           "season": 2026,
           "opponent_ky": false
         },

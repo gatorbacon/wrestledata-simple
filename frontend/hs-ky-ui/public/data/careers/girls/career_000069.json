@@ -2,9 +2,9 @@
   "career_id": "career_000069",
   "canonical_name": "Adalyn Perry",
   "career_record": {
-    "wins": 21,
-    "losses": 14,
-    "win_pct": 0.6
+    "wins": 20,
+    "losses": 12,
+    "win_pct": 0.625
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 9,
       "team": "Bethlehem",
       "weight_class": 107,
-      "record": "21-14",
+      "record": "20-12",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 14,
       "matches": [
@@ -200,6 +201,24 @@
         },
         {
           "date": "2026-01-03",
+          "opponent_id": "35427617132",
+          "opponent_career_id": "career_000826",
+          "opponent_name": "Ashlen Douglas",
+          "opponent_team": "Whitley County",
+          "opponent_team_rank": 12,
+          "opponent_weight": 120,
+          "opponent_rank": 34,
+          "weight_class": "114",
+          "result": "W",
+          "method": "DEC",
+          "score": "3-0",
+          "duration": "7:00",
+          "event": "Maroon`s New Year Ladies Brawl",
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2026-01-03",
           "opponent_id": "35643505132",
           "opponent_career_id": "career_000145",
           "opponent_name": "Ava Hunter",
@@ -319,7 +338,7 @@
           "result": "L",
           "method": "FALL",
           "score": null,
-          "duration": "0:00",
+          "duration": "2:05",
           "event": "Lady Cardinal Invitational",
           "season": 2026,
           "opponent_ky": true

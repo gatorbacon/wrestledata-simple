@@ -2,9 +2,9 @@
   "career_id": "career_001013",
   "canonical_name": "Ember Gulley",
   "career_record": {
-    "wins": 6,
+    "wins": 5,
     "losses": 7,
-    "win_pct": 0.462
+    "win_pct": 0.417
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 152,
       "record": "2-1",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -80,11 +81,30 @@
       "grade": 7,
       "team": "Campbell County",
       "weight_class": 152,
-      "record": "4-6",
+      "record": "3-6",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
+        {
+          "date": "2024-02-03",
+          "opponent_id": "25189086132",
+          "opponent_career_id": "career_000299",
+          "opponent_name": "Nayeli Solis",
+          "opponent_team": "Great Crossing",
+          "opponent_team_rank": null,
+          "opponent_weight": 152,
+          "opponent_rank": null,
+          "weight_class": "152",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "KHSAA Girls Region 3",
+          "season": 2024,
+          "opponent_ky": true
+        },
         {
           "date": "2024-02-03",
           "opponent_id": "25189086132",
@@ -195,24 +215,6 @@
         },
         {
           "date": "2023-12-14",
-          "opponent_id": "25184462132",
-          "opponent_career_id": "career_000366",
-          "opponent_name": "Emma Hood",
-          "opponent_team": "Highlands",
-          "opponent_team_rank": null,
-          "opponent_weight": 152,
-          "opponent_rank": null,
-          "weight_class": "152",
-          "result": "L",
-          "method": "DEC",
-          "score": "1-0",
-          "duration": "7:00",
-          "event": "vs. Highlands High School",
-          "season": 2024,
-          "opponent_ky": true
-        },
-        {
-          "date": "2023-12-14",
           "opponent_id": "OUTSTATE_bee9535d143f",
           "opponent_career_id": null,
           "opponent_name": "Unknown",
@@ -228,6 +230,24 @@
           "event": "vs. Walton Verona",
           "season": 2024,
           "opponent_ky": false
+        },
+        {
+          "date": "2023-12-14",
+          "opponent_id": "25184462132",
+          "opponent_career_id": "career_000366",
+          "opponent_name": "Emma Hood",
+          "opponent_team": "Highlands",
+          "opponent_team_rank": null,
+          "opponent_weight": 152,
+          "opponent_rank": null,
+          "weight_class": "152",
+          "result": "L",
+          "method": "DEC",
+          "score": "1-0",
+          "duration": "7:00",
+          "event": "vs. Highlands High School",
+          "season": 2024,
+          "opponent_ky": true
         }
       ]
     }

@@ -2,9 +2,9 @@
   "career_id": "career_001222",
   "canonical_name": "Drew Sprague",
   "career_record": {
-    "wins": 25,
+    "wins": 24,
     "losses": 4,
-    "win_pct": 0.862
+    "win_pct": 0.857
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 12,
       "team": "Union County",
       "weight_class": 132,
-      "record": "25-4",
+      "record": "24-4",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 2,
       "current_rank": null,
       "matches": [
@@ -218,24 +219,6 @@
         },
         {
           "date": "2023-12-30",
-          "opponent_id": "25191530132",
-          "opponent_career_id": "career_001308",
-          "opponent_name": "Rylie Bruce",
-          "opponent_team": "Caldwell County",
-          "opponent_team_rank": null,
-          "opponent_weight": 126,
-          "opponent_rank": null,
-          "weight_class": "132",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "1:05",
-          "event": "Lady Eagle Invitational",
-          "season": 2024,
-          "opponent_ky": true
-        },
-        {
-          "date": "2023-12-30",
           "opponent_id": "25336575132",
           "opponent_career_id": "career_001180",
           "opponent_name": "Sophia Walls",
@@ -248,6 +231,24 @@
           "method": "DEC",
           "score": "9-2",
           "duration": "7:00",
+          "event": "Lady Eagle Invitational",
+          "season": 2024,
+          "opponent_ky": true
+        },
+        {
+          "date": "2023-12-30",
+          "opponent_id": "25191530132",
+          "opponent_career_id": "career_001308",
+          "opponent_name": "Rylie Bruce",
+          "opponent_team": "Caldwell County",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "132",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:05",
           "event": "Lady Eagle Invitational",
           "season": 2024,
           "opponent_ky": true
@@ -290,24 +291,6 @@
         },
         {
           "date": "2023-12-28",
-          "opponent_id": "24827530132",
-          "opponent_career_id": null,
-          "opponent_name": "Malaya Howie",
-          "opponent_team": "Clarksville (Girls)",
-          "opponent_team_rank": null,
-          "opponent_weight": null,
-          "opponent_rank": null,
-          "weight_class": "132",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "3:40",
-          "event": "Ft. Campbell Girls Tournament, Ky",
-          "season": 2024,
-          "opponent_ky": false
-        },
-        {
-          "date": "2023-12-28",
           "opponent_id": "25184468132",
           "opponent_career_id": "career_001218",
           "opponent_name": "Hunter Mosley",
@@ -323,6 +306,24 @@
           "event": "Ft. Campbell Girls Tournament, Ky",
           "season": 2024,
           "opponent_ky": true
+        },
+        {
+          "date": "2023-12-28",
+          "opponent_id": "24827530132",
+          "opponent_career_id": null,
+          "opponent_name": "Malaya Howie",
+          "opponent_team": "Clarksville (Girls)",
+          "opponent_team_rank": null,
+          "opponent_weight": null,
+          "opponent_rank": null,
+          "weight_class": "132",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "3:40",
+          "event": "Ft. Campbell Girls Tournament, Ky",
+          "season": 2024,
+          "opponent_ky": false
         },
         {
           "date": "2023-12-19",
@@ -392,7 +393,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Union County",
+          "event": "vs. Henderson County",
           "season": 2024,
           "opponent_ky": true
         },
@@ -488,24 +489,6 @@
         },
         {
           "date": "2023-11-28",
-          "opponent_id": "25497964132",
-          "opponent_career_id": null,
-          "opponent_name": "Sereniti McFarland",
-          "opponent_team": "Evansville F.j. Reitz",
-          "opponent_team_rank": null,
-          "opponent_weight": 138,
-          "opponent_rank": null,
-          "weight_class": "138",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Evansville F.j. Reitz",
-          "season": 2024,
-          "opponent_ky": false
-        },
-        {
-          "date": "2023-11-28",
           "opponent_id": "26998582132",
           "opponent_career_id": null,
           "opponent_name": "Natalie Kahn",
@@ -519,6 +502,24 @@
           "score": null,
           "duration": "0:00",
           "event": "vs. Mt. Vernon",
+          "season": 2024,
+          "opponent_ky": false
+        },
+        {
+          "date": "2023-11-28",
+          "opponent_id": "25497964132",
+          "opponent_career_id": null,
+          "opponent_name": "Sereniti McFarland",
+          "opponent_team": "Evansville F.j. Reitz",
+          "opponent_team_rank": null,
+          "opponent_weight": 138,
+          "opponent_rank": null,
+          "weight_class": "138",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Evansville F.j. Reitz",
           "season": 2024,
           "opponent_ky": false
         }

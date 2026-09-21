@@ -3,8 +3,8 @@
   "canonical_name": "Lizeth Diaz",
   "career_record": {
     "wins": 5,
-    "losses": 4,
-    "win_pct": 0.556
+    "losses": 5,
+    "win_pct": 0.5
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 10,
       "team": "Green County",
       "weight_class": 132,
-      "record": "5-4",
+      "record": "5-5",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 25,
       "matches": [
@@ -92,25 +93,6 @@
         },
         {
           "date": "2026-01-10",
-          "opponent_id": "35510582132",
-          "opponent_career_id": "career_000395",
-          "opponent_name": "April Haisma",
-          "opponent_team": "John Hardin",
-          "opponent_team_rank": 5,
-          "opponent_weight": 126,
-          "opponent_rank": 11,
-          "weight_class": "132",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "1:09",
-          "event": "Lady Bruin Invitational 2026",
-          "mv_impact": -3.55,
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2026-01-10",
           "opponent_id": "35471179132",
           "opponent_career_id": "career_000004",
           "opponent_name": "Angela Mejia",
@@ -144,6 +126,25 @@
           "duration": "2:00",
           "event": "Lady Bruin Invitational 2026",
           "mv_impact": 5.72,
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2026-01-10",
+          "opponent_id": "35510582132",
+          "opponent_career_id": "career_000395",
+          "opponent_name": "April Haisma",
+          "opponent_team": "John Hardin",
+          "opponent_team_rank": 5,
+          "opponent_weight": 126,
+          "opponent_rank": 11,
+          "weight_class": "132",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:09",
+          "event": "Lady Bruin Invitational 2026",
+          "mv_impact": -3.55,
           "season": 2026,
           "opponent_ky": true
         },
@@ -199,7 +200,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Green County",
+          "event": "vs. Russell County",
           "mv_impact": -6.72,
           "season": 2026,
           "opponent_ky": true

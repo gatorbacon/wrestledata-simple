@@ -2,9 +2,9 @@
   "career_id": "career_000949",
   "canonical_name": "Jahzara Johnson",
   "career_record": {
-    "wins": 16,
+    "wins": 13,
     "losses": 10,
-    "win_pct": 0.615
+    "win_pct": 0.565
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 126,
       "record": "2-3",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -116,8 +117,9 @@
       "grade": 10,
       "team": "North Bullitt",
       "weight_class": 132,
-      "record": "14-7",
+      "record": "11-7",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -321,6 +323,24 @@
         },
         {
           "date": "2023-12-16",
+          "opponent_id": "25413353132",
+          "opponent_career_id": "career_001369",
+          "opponent_name": "Avery Perkins",
+          "opponent_team": "Simon Kenton",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "132",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:26",
+          "event": "Taylor County Women`s Cardinal Clash",
+          "season": 2024,
+          "opponent_ky": true
+        },
+        {
+          "date": "2023-12-16",
           "opponent_id": "25184449132",
           "opponent_career_id": "career_000918",
           "opponent_name": "Alyvia Cutler",
@@ -375,24 +395,6 @@
         },
         {
           "date": "2023-12-01",
-          "opponent_id": "24891156132",
-          "opponent_career_id": null,
-          "opponent_name": "Sian Rogers",
-          "opponent_team": "Jeffersonville",
-          "opponent_team_rank": null,
-          "opponent_weight": 138,
-          "opponent_rank": null,
-          "weight_class": "138",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Jeffersonville",
-          "season": 2024,
-          "opponent_ky": false
-        },
-        {
-          "date": "2023-12-01",
           "opponent_id": "24891439132",
           "opponent_career_id": null,
           "opponent_name": "Abril Andres",
@@ -420,6 +422,24 @@
           "opponent_rank": null,
           "weight_class": "132",
           "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Jeffersonville",
+          "season": 2024,
+          "opponent_ky": false
+        },
+        {
+          "date": "2023-12-01",
+          "opponent_id": "24891156132",
+          "opponent_career_id": null,
+          "opponent_name": "Sian Rogers",
+          "opponent_team": "Jeffersonville",
+          "opponent_team_rank": null,
+          "opponent_weight": 138,
+          "opponent_rank": null,
+          "weight_class": "138",
+          "result": "L",
           "method": "FALL",
           "score": null,
           "duration": "0:00",

@@ -2,9 +2,9 @@
   "career_id": "career_001192",
   "canonical_name": "Victoria Day",
   "career_record": {
-    "wins": 14,
+    "wins": 15,
     "losses": 4,
-    "win_pct": 0.778
+    "win_pct": 0.789
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 12,
       "team": "Harlan County",
       "weight_class": 120,
-      "record": "14-4",
+      "record": "15-4",
       "regional_place": 4,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -254,24 +255,6 @@
         },
         {
           "date": "2023-12-29",
-          "opponent_id": "27023305132",
-          "opponent_career_id": "career_001287",
-          "opponent_name": "Jenna Perry",
-          "opponent_team": "Perry County Central",
-          "opponent_team_rank": null,
-          "opponent_weight": 114,
-          "opponent_rank": null,
-          "weight_class": "120",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:26",
-          "event": "Hatfield & McCoy Ladies Tournament",
-          "season": 2024,
-          "opponent_ky": true
-        },
-        {
-          "date": "2023-12-29",
           "opponent_id": "24873625132",
           "opponent_career_id": null,
           "opponent_name": "Kierstyn Poyner",
@@ -301,7 +284,25 @@
           "result": "W",
           "method": "FALL",
           "score": null,
-          "duration": "0:00",
+          "duration": "0:43",
+          "event": "Hatfield & McCoy Ladies Tournament",
+          "season": 2024,
+          "opponent_ky": true
+        },
+        {
+          "date": "2023-12-29",
+          "opponent_id": "27023305132",
+          "opponent_career_id": "career_001287",
+          "opponent_name": "Jenna Perry",
+          "opponent_team": "Perry County Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 114,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:26",
           "event": "Hatfield & McCoy Ladies Tournament",
           "season": 2024,
           "opponent_ky": true

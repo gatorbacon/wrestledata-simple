@@ -3,8 +3,8 @@
   "canonical_name": "Zoey Jeffries",
   "career_record": {
     "wins": 5,
-    "losses": 5,
-    "win_pct": 0.5
+    "losses": 6,
+    "win_pct": 0.455
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 9,
       "team": "Valley",
       "weight_class": 132,
-      "record": "5-5",
+      "record": "5-6",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 52,
       "matches": [
@@ -56,24 +57,6 @@
         },
         {
           "date": "2026-02-12",
-          "opponent_id": "35333652132",
-          "opponent_career_id": "career_000219",
-          "opponent_name": "Coryell Clayton",
-          "opponent_team": "Doss",
-          "opponent_team_rank": null,
-          "opponent_weight": 126,
-          "opponent_rank": 55,
-          "weight_class": "126",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Valley",
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2026-02-12",
           "opponent_id": "38073012132",
           "opponent_career_id": "career_000156",
           "opponent_name": "Puja Gurung",
@@ -86,7 +69,25 @@
           "method": "FALL",
           "score": null,
           "duration": "0:17",
-          "event": "vs. Valley",
+          "event": "vs. Central",
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2026-02-12",
+          "opponent_id": "35333652132",
+          "opponent_career_id": "career_000219",
+          "opponent_name": "Coryell Clayton",
+          "opponent_team": "Doss",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": 55,
+          "weight_class": "126",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Doss",
           "season": 2026,
           "opponent_ky": true
         },
@@ -104,7 +105,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:28",
-          "event": "vs. Valley",
+          "event": "vs. Central Hardin",
           "season": 2026,
           "opponent_ky": true
         },
@@ -122,7 +123,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Valley",
+          "event": "vs. Hopkinsville",
           "season": 2026,
           "opponent_ky": true
         },
@@ -140,7 +141,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:17",
-          "event": "vs. Valley",
+          "event": "vs. Logan County",
           "season": 2026,
           "opponent_ky": true
         },
@@ -164,25 +165,6 @@
         },
         {
           "date": "2025-12-30",
-          "opponent_id": "35424936132",
-          "opponent_career_id": "career_000316",
-          "opponent_name": "Niang Nuam",
-          "opponent_team": "Greenwood",
-          "opponent_team_rank": null,
-          "opponent_weight": 126,
-          "opponent_rank": 70,
-          "weight_class": "132",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "4:21",
-          "event": "Fern Creek Gladiator Ladies",
-          "mv_impact": -7.26,
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2025-12-30",
           "opponent_id": "35424935132",
           "opponent_career_id": "career_000315",
           "opponent_name": "Michaela Harmon",
@@ -197,6 +179,25 @@
           "duration": "7:00",
           "event": "Fern Creek Gladiator Ladies",
           "mv_impact": 0.98,
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2025-12-30",
+          "opponent_id": "35424936132",
+          "opponent_career_id": "career_000316",
+          "opponent_name": "Niang Nuam",
+          "opponent_team": "Greenwood",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": 70,
+          "weight_class": "132",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "4:21",
+          "event": "Fern Creek Gladiator Ladies",
+          "mv_impact": -7.26,
           "season": 2026,
           "opponent_ky": true
         },

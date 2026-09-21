@@ -2,9 +2,9 @@
   "career_id": "career_000219",
   "canonical_name": "Coryell Clayton",
   "career_record": {
-    "wins": 7,
+    "wins": 6,
     "losses": 11,
-    "win_pct": 0.389
+    "win_pct": 0.353
   },
   "seasons": [
     {
@@ -13,11 +13,30 @@
       "grade": 10,
       "team": "Doss",
       "weight_class": 126,
-      "record": "7-11",
+      "record": "6-11",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 47,
       "matches": [
+        {
+          "date": "2026-02-12",
+          "opponent_id": "38073012132",
+          "opponent_career_id": "career_000156",
+          "opponent_name": "Puja Gurung",
+          "opponent_team": "Central",
+          "opponent_team_rank": 14,
+          "opponent_weight": 132,
+          "opponent_rank": 63,
+          "weight_class": "132",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:23",
+          "event": "vs. Central",
+          "season": 2026,
+          "opponent_ky": true
+        },
         {
           "date": "2026-02-12",
           "opponent_id": "36783354132",
@@ -53,24 +72,6 @@
           "event": "vs. Central",
           "season": 2026,
           "opponent_ky": false
-        },
-        {
-          "date": "2026-02-12",
-          "opponent_id": "38073012132",
-          "opponent_career_id": "career_000156",
-          "opponent_name": "Puja Gurung",
-          "opponent_team": "Central",
-          "opponent_team_rank": 14,
-          "opponent_weight": 132,
-          "opponent_rank": 63,
-          "weight_class": "132",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:23",
-          "event": "vs. Doss",
-          "season": 2026,
-          "opponent_ky": true
         },
         {
           "date": "2026-01-17",
@@ -148,8 +149,8 @@
           "date": "2025-12-30",
           "opponent_id": "OUTSTATE_b6a6ae0f226d",
           "opponent_career_id": null,
-          "opponent_name": "Unknown",
-          "opponent_team": "Unknown",
+          "opponent_name": "Mackenna Flenner",
+          "opponent_team": "Evansville F.J. Reitz",
           "opponent_team_rank": null,
           "opponent_weight": null,
           "opponent_rank": null,
@@ -200,24 +201,6 @@
         },
         {
           "date": "2025-12-20",
-          "opponent_id": "35563153132",
-          "opponent_career_id": "career_000525",
-          "opponent_name": "Brooklyn Barrett",
-          "opponent_team": "Meade County",
-          "opponent_team_rank": 9,
-          "opponent_weight": 126,
-          "opponent_rank": 71,
-          "weight_class": "126",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "3:40",
-          "event": "Seneca Girls Invitational",
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2025-12-20",
           "opponent_id": "OUTSTATE_cc180ba0cfde",
           "opponent_career_id": null,
           "opponent_name": "Wynter Workman",
@@ -233,6 +216,24 @@
           "event": "Seneca Girls Invitational",
           "season": 2026,
           "opponent_ky": false
+        },
+        {
+          "date": "2025-12-20",
+          "opponent_id": "35563153132",
+          "opponent_career_id": "career_000525",
+          "opponent_name": "Brooklyn Barrett",
+          "opponent_team": "Meade County",
+          "opponent_team_rank": 9,
+          "opponent_weight": 126,
+          "opponent_rank": 71,
+          "weight_class": "126",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "3:40",
+          "event": "Seneca Girls Invitational",
+          "season": 2026,
+          "opponent_ky": true
         },
         {
           "date": "2025-12-13",
@@ -320,7 +321,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Doss",
+          "event": "vs. Bullitt Central",
           "season": 2026,
           "opponent_ky": true
         }

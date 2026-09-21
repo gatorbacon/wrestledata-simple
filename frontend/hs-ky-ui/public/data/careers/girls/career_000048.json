@@ -2,9 +2,9 @@
   "career_id": "career_000048",
   "canonical_name": "Mia Barnett",
   "career_record": {
-    "wins": 28,
+    "wins": 26,
     "losses": 25,
-    "win_pct": 0.528
+    "win_pct": 0.51
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 9,
       "team": "Bell County",
       "weight_class": 100,
-      "record": "20-11",
+      "record": "18-10",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 37,
       "matches": [
@@ -110,6 +111,24 @@
         },
         {
           "date": "2026-01-03",
+          "opponent_id": "OUTSTATE_61219d47c435",
+          "opponent_career_id": null,
+          "opponent_name": "Unknown",
+          "opponent_team": "Union Co. High School Girls",
+          "opponent_team_rank": null,
+          "opponent_weight": null,
+          "opponent_rank": null,
+          "weight_class": "100",
+          "result": "W",
+          "method": "FF",
+          "score": null,
+          "duration": "7:00",
+          "event": "vs. Union Co. High School Girls",
+          "season": 2026,
+          "opponent_ky": false
+        },
+        {
+          "date": "2026-01-03",
           "opponent_id": "35003105132",
           "opponent_career_id": null,
           "opponent_name": "Amilia Grainger",
@@ -141,24 +160,6 @@
           "score": null,
           "duration": "7:00",
           "event": "vs. Claiborne High School Girls",
-          "season": 2026,
-          "opponent_ky": false
-        },
-        {
-          "date": "2026-01-03",
-          "opponent_id": "OUTSTATE_61219d47c435",
-          "opponent_career_id": null,
-          "opponent_name": "Unknown",
-          "opponent_team": "Union Co. High School Girls",
-          "opponent_team_rank": null,
-          "opponent_weight": null,
-          "opponent_rank": null,
-          "weight_class": "100",
-          "result": "W",
-          "method": "FF",
-          "score": null,
-          "duration": "7:00",
-          "event": "vs. Union Co. High School Girls",
           "season": 2026,
           "opponent_ky": false
         },
@@ -230,6 +231,24 @@
           "method": "FALL",
           "score": null,
           "duration": "1:56",
+          "event": "Girls Hatfield McCoy 32 2025",
+          "season": 2026,
+          "opponent_ky": false
+        },
+        {
+          "date": "2025-12-30",
+          "opponent_id": "36316068132",
+          "opponent_career_id": null,
+          "opponent_name": "Alissa Workman",
+          "opponent_team": "Tug Valley",
+          "opponent_team_rank": null,
+          "opponent_weight": 100,
+          "opponent_rank": null,
+          "weight_class": "100",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:53",
           "event": "Girls Hatfield McCoy 32 2025",
           "season": 2026,
           "opponent_ky": false
@@ -512,8 +531,9 @@
       "grade": 8,
       "team": "Bell County",
       "weight_class": 100,
-      "record": "8-14",
+      "record": "8-15",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [

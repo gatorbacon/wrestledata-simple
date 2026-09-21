@@ -3,8 +3,8 @@
   "canonical_name": "Rylee Grayson",
   "career_record": {
     "wins": 3,
-    "losses": 8,
-    "win_pct": 0.273
+    "losses": 7,
+    "win_pct": 0.3
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 9,
       "team": "Russellville",
       "weight_class": 145,
-      "record": "3-8",
+      "record": "3-7",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -101,24 +102,6 @@
           "opponent_rank": null,
           "weight_class": "132",
           "result": "L",
-          "method": "TF",
-          "score": "17-1",
-          "duration": "0:33",
-          "event": "vs. South Warren",
-          "season": 2025,
-          "opponent_ky": true
-        },
-        {
-          "date": "2025-01-18",
-          "opponent_id": "30115217132",
-          "opponent_career_id": "career_000721",
-          "opponent_name": "Lizzie Ward",
-          "opponent_team": "South Warren",
-          "opponent_team_rank": null,
-          "opponent_weight": 114,
-          "opponent_rank": null,
-          "weight_class": "138",
-          "result": "L",
           "method": "FALL",
           "score": null,
           "duration": "1:51",
@@ -145,6 +128,24 @@
           "opponent_ky": true
         },
         {
+          "date": "2025-01-18",
+          "opponent_id": "30115217132",
+          "opponent_career_id": "career_000721",
+          "opponent_name": "Lizzie Ward",
+          "opponent_team": "South Warren",
+          "opponent_team_rank": null,
+          "opponent_weight": 114,
+          "opponent_rank": null,
+          "weight_class": "132",
+          "result": "L",
+          "method": "TF",
+          "score": "17-1",
+          "duration": "0:33",
+          "event": "vs. South Warren",
+          "season": 2025,
+          "opponent_ky": true
+        },
+        {
           "date": "2025-01-14",
           "opponent_id": "32669598132",
           "opponent_career_id": "career_000263",
@@ -158,7 +159,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:50",
-          "event": "vs. Russellville",
+          "event": "vs. Fort Campbell",
           "season": 2025,
           "opponent_ky": true
         },
@@ -176,7 +177,7 @@
           "method": "TF",
           "score": "21-4",
           "duration": "4:10",
-          "event": "vs. Russellville",
+          "event": "vs. Fort Campbell",
           "season": 2025,
           "opponent_ky": true
         },
@@ -194,7 +195,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:24",
-          "event": "vs. Russellville",
+          "event": "vs. Fort Campbell",
           "season": 2025,
           "opponent_ky": true
         }

@@ -2,9 +2,9 @@
   "career_id": "career_000025",
   "canonical_name": "Vivian Moyer",
   "career_record": {
-    "wins": 30,
-    "losses": 12,
-    "win_pct": 0.714
+    "wins": 31,
+    "losses": 13,
+    "win_pct": 0.705
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 132,
       "record": "20-5",
       "regional_place": 3,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 10,
       "matches": [
@@ -476,8 +477,9 @@
       "grade": 7,
       "team": "Ashland Blazer",
       "weight_class": 145,
-      "record": "10-7",
+      "record": "11-8",
       "regional_place": 3,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -608,6 +610,24 @@
           "opponent_ky": true
         },
         {
+          "date": "2025-02-08",
+          "opponent_id": "30115104132",
+          "opponent_career_id": "career_000625",
+          "opponent_name": "Brianna Slone",
+          "opponent_team": "Perry County Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 138,
+          "opponent_rank": null,
+          "weight_class": "138",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:04",
+          "event": "Clipson Jones Memorial Ladies Open",
+          "season": 2025,
+          "opponent_ky": true
+        },
+        {
           "date": "2025-01-22",
           "opponent_id": "OUTSTATE_18bdd1256c45",
           "opponent_career_id": null,
@@ -699,24 +719,6 @@
         },
         {
           "date": "2024-12-07",
-          "opponent_id": "33824699132",
-          "opponent_career_id": "career_000226",
-          "opponent_name": "Keiona Skaggs",
-          "opponent_team": "East Carter",
-          "opponent_team_rank": null,
-          "opponent_weight": 138,
-          "opponent_rank": null,
-          "weight_class": "152",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "Ashland Blazer invitational",
-          "season": 2025,
-          "opponent_ky": true
-        },
-        {
-          "date": "2024-12-07",
           "opponent_id": "OUTSTATE_18bdd1256c45",
           "opponent_career_id": null,
           "opponent_name": "Unknown",
@@ -786,6 +788,24 @@
           "event": "Ladies AIT",
           "season": 2025,
           "opponent_ky": false
+        },
+        {
+          "date": "2024-12-07",
+          "opponent_id": "33824699132",
+          "opponent_career_id": "career_000226",
+          "opponent_name": "Keiona Skaggs",
+          "opponent_team": "East Carter",
+          "opponent_team_rank": null,
+          "opponent_weight": 138,
+          "opponent_rank": null,
+          "weight_class": "152",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "Ashland Blazer invitational",
+          "season": 2025,
+          "opponent_ky": true
         },
         {
           "date": "2024-12-07",

@@ -2,9 +2,9 @@
   "career_id": "career_000235",
   "canonical_name": "Aaliyah Bronger",
   "career_record": {
-    "wins": 15,
+    "wins": 14,
     "losses": 12,
-    "win_pct": 0.556
+    "win_pct": 0.538
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 10,
       "team": "Fern Creek",
       "weight_class": 107,
-      "record": "15-12",
+      "record": "14-12",
       "regional_place": 3,
+      "regional_data_tracked": true,
       "state_place": 6,
       "current_rank": 18,
       "matches": [
@@ -254,6 +255,24 @@
         },
         {
           "date": "2026-01-10",
+          "opponent_id": "35333574132",
+          "opponent_career_id": "career_000544",
+          "opponent_name": "Bertina Karnwea",
+          "opponent_team": "Moore",
+          "opponent_team_rank": 49,
+          "opponent_weight": 107,
+          "opponent_rank": 10,
+          "weight_class": "107",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "3:02",
+          "event": "Queen of the City Wrestling",
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2026-01-10",
           "opponent_id": "35902229132",
           "opponent_career_id": "career_000794",
           "opponent_name": "Natalie Mitchell",
@@ -445,8 +464,8 @@
           "result": "W",
           "method": "FALL",
           "score": null,
-          "duration": "1:37",
-          "event": "The Beast of the East",
+          "duration": "2:37",
+          "event": "beast of the east",
           "season": 2026,
           "opponent_ky": true
         },

@@ -2,9 +2,9 @@
   "career_id": "career_000035",
   "canonical_name": "Abigail Liberal",
   "career_record": {
-    "wins": 16,
+    "wins": 17,
     "losses": 14,
-    "win_pct": 0.533
+    "win_pct": 0.548
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 11,
       "team": "Ballard",
       "weight_class": 185,
-      "record": "16-14",
+      "record": "17-14",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 17,
       "matches": [
@@ -416,6 +417,24 @@
         },
         {
           "date": "2025-12-27",
+          "opponent_id": "OUTSTATE_be336d6338a5",
+          "opponent_career_id": null,
+          "opponent_name": "Kailin Longwell",
+          "opponent_team": "Hammond Clark",
+          "opponent_team_rank": null,
+          "opponent_weight": 185,
+          "opponent_rank": null,
+          "weight_class": "185",
+          "result": "L",
+          "method": "FF",
+          "score": null,
+          "duration": "7:00",
+          "event": "New Albany`s Holiday Invite",
+          "season": 2026,
+          "opponent_ky": false
+        },
+        {
+          "date": "2025-12-27",
           "opponent_id": "OUTSTATE_f64cd061465c",
           "opponent_career_id": null,
           "opponent_name": "Larissa Ahmodu",
@@ -469,22 +488,22 @@
           "opponent_ky": false
         },
         {
-          "date": "2025-12-27",
-          "opponent_id": "OUTSTATE_be336d6338a5",
-          "opponent_career_id": null,
-          "opponent_name": "Kailin Longwell",
-          "opponent_team": "Hammond Clark",
-          "opponent_team_rank": null,
+          "date": "2025-12-20",
+          "opponent_id": "35333555132",
+          "opponent_career_id": "career_000406",
+          "opponent_name": "Kaylin Alfred",
+          "opponent_team": "John Hardin",
+          "opponent_team_rank": 5,
           "opponent_weight": 185,
-          "opponent_rank": null,
+          "opponent_rank": 31,
           "weight_class": "185",
-          "result": "L",
-          "method": "FF",
+          "result": "W",
+          "method": "FALL",
           "score": null,
-          "duration": "7:00",
-          "event": "New Albany`s Holiday Invite",
+          "duration": "1:55",
+          "event": "5th Annual Cardinal Clash Ladies Tourn",
           "season": 2026,
-          "opponent_ky": false
+          "opponent_ky": true
         },
         {
           "date": "2025-12-20",
@@ -518,24 +537,6 @@
           "method": "FALL",
           "score": null,
           "duration": "1:18",
-          "event": "5th Annual Cardinal Clash Ladies Tourn",
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2025-12-20",
-          "opponent_id": "35333555132",
-          "opponent_career_id": "career_000406",
-          "opponent_name": "Kaylin Alfred",
-          "opponent_team": "John Hardin",
-          "opponent_team_rank": 5,
-          "opponent_weight": 185,
-          "opponent_rank": 31,
-          "weight_class": "185",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "1:55",
           "event": "5th Annual Cardinal Clash Ladies Tourn",
           "season": 2026,
           "opponent_ky": true

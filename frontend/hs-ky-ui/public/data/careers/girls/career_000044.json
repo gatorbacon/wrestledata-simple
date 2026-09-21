@@ -2,9 +2,9 @@
   "career_id": "career_000044",
   "canonical_name": "Aaliyah Hackney",
   "career_record": {
-    "wins": 11,
+    "wins": 10,
     "losses": 5,
-    "win_pct": 0.688
+    "win_pct": 0.667
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 7,
       "team": "Belfry",
       "weight_class": 107,
-      "record": "11-5",
+      "record": "10-5",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 38,
       "matches": [
@@ -56,24 +57,6 @@
         },
         {
           "date": "2026-02-09",
-          "opponent_id": "35333603132",
-          "opponent_career_id": "career_000619",
-          "opponent_name": "Madison Strunk",
-          "opponent_team": "Perry County Central",
-          "opponent_team_rank": 50,
-          "opponent_weight": 107,
-          "opponent_rank": 49,
-          "weight_class": "107",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "1:32",
-          "event": "vs. Perry County Central",
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2026-02-09",
           "opponent_id": "OUTSTATE_021f644ea71a",
           "opponent_career_id": null,
           "opponent_name": "Unknown",
@@ -89,6 +72,24 @@
           "event": "vs. Perry County Central",
           "season": 2026,
           "opponent_ky": false
+        },
+        {
+          "date": "2026-02-09",
+          "opponent_id": "35333603132",
+          "opponent_career_id": "career_000619",
+          "opponent_name": "Madison Strunk",
+          "opponent_team": "Perry County Central",
+          "opponent_team_rank": 50,
+          "opponent_weight": 107,
+          "opponent_rank": 49,
+          "weight_class": "107",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:32",
+          "event": "vs. Perry County Central",
+          "season": 2026,
+          "opponent_ky": true
         },
         {
           "date": "2026-01-10",
@@ -218,24 +219,6 @@
         },
         {
           "date": "2025-12-06",
-          "opponent_id": "35457159132",
-          "opponent_career_id": "career_000824",
-          "opponent_name": "Izabella Herndon",
-          "opponent_team": "Whitley County",
-          "opponent_team_rank": 12,
-          "opponent_weight": 100,
-          "opponent_rank": 18,
-          "weight_class": "107",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "3:56",
-          "event": "2025 Anchor Down Showdown (Ladies)",
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2025-12-06",
           "opponent_id": "35640495132",
           "opponent_career_id": "career_000319",
           "opponent_name": "Kristina Boggs",
@@ -266,6 +249,24 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
+          "event": "2025 Anchor Down Showdown (Ladies)",
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2025-12-06",
+          "opponent_id": "35457159132",
+          "opponent_career_id": "career_000824",
+          "opponent_name": "Izabella Herndon",
+          "opponent_team": "Whitley County",
+          "opponent_team_rank": 12,
+          "opponent_weight": 100,
+          "opponent_rank": 18,
+          "weight_class": "107",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "3:56",
           "event": "2025 Anchor Down Showdown (Ladies)",
           "season": 2026,
           "opponent_ky": true

@@ -3,8 +3,8 @@
   "canonical_name": "Juliette Aguero",
   "career_record": {
     "wins": 7,
-    "losses": 13,
-    "win_pct": 0.35
+    "losses": 12,
+    "win_pct": 0.368
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 9,
       "team": "Hopkinsville",
       "weight_class": 132,
-      "record": "7-13",
+      "record": "7-12",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 62,
       "matches": [
@@ -92,24 +93,6 @@
         },
         {
           "date": "2026-01-17",
-          "opponent_id": "35424936132",
-          "opponent_career_id": "career_000316",
-          "opponent_name": "Niang Nuam",
-          "opponent_team": "Greenwood",
-          "opponent_team_rank": null,
-          "opponent_weight": 126,
-          "opponent_rank": 70,
-          "weight_class": "132",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Hopkinsville",
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2026-01-17",
           "opponent_id": "35347721132",
           "opponent_career_id": "career_000179",
           "opponent_name": "Samantha Ives",
@@ -122,7 +105,25 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Hopkinsville",
+          "event": "vs. Central Hardin",
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2026-01-17",
+          "opponent_id": "35424936132",
+          "opponent_career_id": "career_000316",
+          "opponent_name": "Niang Nuam",
+          "opponent_team": "Greenwood",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": 70,
+          "weight_class": "132",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Greenwood",
           "season": 2026,
           "opponent_ky": true
         },
@@ -302,7 +303,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:51",
-          "event": "Coyote Classic Wrestling Invitational",
+          "event": "Coyote Classic",
           "season": 2026,
           "opponent_ky": false
         },

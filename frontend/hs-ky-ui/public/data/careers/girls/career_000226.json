@@ -2,9 +2,9 @@
   "career_id": "career_000226",
   "canonical_name": "Keiona Skaggs",
   "career_record": {
-    "wins": 23,
+    "wins": 24,
     "losses": 7,
-    "win_pct": 0.767
+    "win_pct": 0.774
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 145,
       "record": "11-5",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 12,
       "matches": [
@@ -122,7 +123,7 @@
           "method": "DEC",
           "score": "8-5",
           "duration": "7:00",
-          "event": "vs. East Carter",
+          "event": "vs. Ashland Blazer",
           "season": 2026,
           "opponent_ky": true
         },
@@ -314,8 +315,9 @@
       "grade": 9,
       "team": "East Carter",
       "weight_class": 138,
-      "record": "12-2",
+      "record": "13-2",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 7,
       "current_rank": null,
       "matches": [
@@ -333,6 +335,24 @@
           "method": "FALL",
           "score": null,
           "duration": "5:50",
+          "event": "KHSAA Girls State Championship",
+          "season": 2025,
+          "opponent_ky": true
+        },
+        {
+          "date": "2025-02-27",
+          "opponent_id": "30116225132",
+          "opponent_career_id": "career_000348",
+          "opponent_name": "Lexi Gobin",
+          "opponent_team": "Caldwell County",
+          "opponent_team_rank": null,
+          "opponent_weight": 138,
+          "opponent_rank": null,
+          "weight_class": "138",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "2:47",
           "event": "KHSAA Girls State Championship",
           "season": 2025,
           "opponent_ky": true
@@ -465,24 +485,6 @@
         },
         {
           "date": "2024-12-28",
-          "opponent_id": "30886228132",
-          "opponent_career_id": "career_000877",
-          "opponent_name": "Killian Harrison",
-          "opponent_team": "Floyd Central",
-          "opponent_team_rank": null,
-          "opponent_weight": 138,
-          "opponent_rank": null,
-          "weight_class": "138",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "1:14",
-          "event": "Hatfield & McCoy Ladies Tournament",
-          "season": 2025,
-          "opponent_ky": true
-        },
-        {
-          "date": "2024-12-28",
           "opponent_id": "30115104132",
           "opponent_career_id": "career_000625",
           "opponent_name": "Brianna Slone",
@@ -495,6 +497,24 @@
           "method": "FALL",
           "score": null,
           "duration": "0:55",
+          "event": "Hatfield & McCoy Ladies Tournament",
+          "season": 2025,
+          "opponent_ky": true
+        },
+        {
+          "date": "2024-12-28",
+          "opponent_id": "30886228132",
+          "opponent_career_id": "career_000877",
+          "opponent_name": "Killian Harrison",
+          "opponent_team": "Floyd Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 138,
+          "opponent_rank": null,
+          "weight_class": "138",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:14",
           "event": "Hatfield & McCoy Ladies Tournament",
           "season": 2025,
           "opponent_ky": true

@@ -3,8 +3,8 @@
   "canonical_name": "Hannah Matias",
   "career_record": {
     "wins": 3,
-    "losses": 8,
-    "win_pct": 0.273
+    "losses": 9,
+    "win_pct": 0.25
   },
   "seasons": [
     {
@@ -13,29 +13,12 @@
       "grade": 9,
       "team": "Taylor County",
       "weight_class": 107,
-      "record": "3-8",
+      "record": "3-9",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 59,
       "matches": [
-        {
-          "date": "2026-02-07",
-          "opponent_id": "35427617132",
-          "opponent_career_id": "career_000826",
-          "opponent_name": "Ashlen Douglas",
-          "opponent_team": "Whitley County",
-          "opponent_team_rank": 12,
-          "opponent_weight": 120,
-          "opponent_rank": 34,
-          "weight_class": "114",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Whitley County",
-          "season": 2026,
-          "opponent_ky": true
-        },
         {
           "date": "2026-02-07",
           "opponent_id": "OUTSTATE_72b4c9a7dea7",
@@ -53,6 +36,24 @@
           "event": "vs. Madison Central",
           "season": 2026,
           "opponent_ky": false
+        },
+        {
+          "date": "2026-02-07",
+          "opponent_id": "35427617132",
+          "opponent_career_id": "career_000826",
+          "opponent_name": "Ashlen Douglas",
+          "opponent_team": "Whitley County",
+          "opponent_team_rank": 12,
+          "opponent_weight": 120,
+          "opponent_rank": 34,
+          "weight_class": "114",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Whitley County",
+          "season": 2026,
+          "opponent_ky": true
         },
         {
           "date": "2026-02-05",
@@ -110,25 +111,6 @@
         },
         {
           "date": "2025-12-13",
-          "opponent_id": "35333574132",
-          "opponent_career_id": "career_000544",
-          "opponent_name": "Bertina Karnwea",
-          "opponent_team": "Moore",
-          "opponent_team_rank": 49,
-          "opponent_weight": 107,
-          "opponent_rank": 10,
-          "weight_class": "107",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:22",
-          "event": "vs. Taylor County",
-          "mv_impact": -4.25,
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2025-12-13",
           "opponent_id": "35333371132",
           "opponent_career_id": "career_000095",
           "opponent_name": "Aubrey White",
@@ -141,8 +123,27 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Taylor County",
+          "event": "vs. Boyle County",
           "mv_impact": -2.02,
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2025-12-13",
+          "opponent_id": "35333574132",
+          "opponent_career_id": "career_000544",
+          "opponent_name": "Bertina Karnwea",
+          "opponent_team": "Moore",
+          "opponent_team_rank": 49,
+          "opponent_weight": 107,
+          "opponent_rank": 10,
+          "weight_class": "107",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:22",
+          "event": "vs. Moore",
+          "mv_impact": -4.25,
           "season": 2026,
           "opponent_ky": true
         },
@@ -160,7 +161,7 @@
           "method": "FALL",
           "score": null,
           "duration": "3:33",
-          "event": "vs. Taylor County",
+          "event": "vs. Moore",
           "mv_impact": -7.48,
           "season": 2026,
           "opponent_ky": true
@@ -198,7 +199,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Taylor County",
+          "event": "vs. Whitley County",
           "mv_impact": -6.05,
           "season": 2026,
           "opponent_ky": true

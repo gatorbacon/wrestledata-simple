@@ -2,9 +2,9 @@
   "career_id": "career_000113",
   "canonical_name": "Shelby Bowersox",
   "career_record": {
-    "wins": 31,
+    "wins": 33,
     "losses": 10,
-    "win_pct": 0.756
+    "win_pct": 0.767
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 10,
       "team": "Bullitt Central",
       "weight_class": 120,
-      "record": "31-10",
+      "record": "33-10",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": 6,
       "current_rank": 9,
       "matches": [
@@ -427,7 +428,7 @@
           "result": "W",
           "method": "FALL",
           "score": null,
-          "duration": "0:00",
+          "duration": "1:06",
           "event": "Maroon`s New Year Ladies Brawl",
           "season": 2026,
           "opponent_ky": true
@@ -488,24 +489,6 @@
         },
         {
           "date": "2025-12-20",
-          "opponent_id": "35347691132",
-          "opponent_career_id": "career_000173",
-          "opponent_name": "Jennifer Bardales Lopez",
-          "opponent_team": "Central Hardin",
-          "opponent_team_rank": 34,
-          "opponent_weight": 114,
-          "opponent_rank": 26,
-          "weight_class": "120",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:55",
-          "event": "Henderson County Lady Colonel Wrestling Invitational",
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2025-12-20",
           "opponent_id": "35345019132",
           "opponent_career_id": "career_000011",
           "opponent_name": "Winified Simon",
@@ -518,6 +501,24 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
+          "event": "Henderson County Lady Colonel Wrestling Invitational",
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2025-12-20",
+          "opponent_id": "35347691132",
+          "opponent_career_id": "career_000173",
+          "opponent_name": "Jennifer Bardales Lopez",
+          "opponent_team": "Central Hardin",
+          "opponent_team_rank": 34,
+          "opponent_weight": 114,
+          "opponent_rank": 26,
+          "weight_class": "120",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:55",
           "event": "Henderson County Lady Colonel Wrestling Invitational",
           "season": 2026,
           "opponent_ky": true
@@ -577,22 +578,22 @@
           "opponent_ky": false
         },
         {
-          "date": "2025-12-13",
-          "opponent_id": "35333389132",
-          "opponent_career_id": "career_000677",
-          "opponent_name": "Ava Castleman",
-          "opponent_team": "Scott County",
-          "opponent_team_rank": 10,
-          "opponent_weight": 114,
-          "opponent_rank": 3,
+          "date": "2025-12-20",
+          "opponent_id": "OUTSTATE_023a76df6fbb",
+          "opponent_career_id": null,
+          "opponent_name": "Ava Crews",
+          "opponent_team": "Pike Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
           "weight_class": "120",
-          "result": "L",
-          "method": "DEC",
-          "score": "14-10",
-          "duration": "7:00",
-          "event": "Lady Indians Tomahawk Classic",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "Henderson County Lady Colonel Wrestling Invitational",
           "season": 2026,
-          "opponent_ky": true
+          "opponent_ky": false
         },
         {
           "date": "2025-12-13",
@@ -608,6 +609,24 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
+          "event": "Lady Indians Tomahawk Classic",
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2025-12-13",
+          "opponent_id": "35333389132",
+          "opponent_career_id": "career_000677",
+          "opponent_name": "Ava Castleman",
+          "opponent_team": "Scott County",
+          "opponent_team_rank": 10,
+          "opponent_weight": 114,
+          "opponent_rank": 3,
+          "weight_class": "120",
+          "result": "L",
+          "method": "DEC",
+          "score": "14-10",
+          "duration": "7:00",
           "event": "Lady Indians Tomahawk Classic",
           "season": 2026,
           "opponent_ky": true
@@ -662,7 +681,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Bullitt Central",
+          "event": "vs. Doss",
           "season": 2026,
           "opponent_ky": true
         },

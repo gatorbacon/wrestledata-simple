@@ -2,9 +2,9 @@
   "career_id": "career_001202",
   "canonical_name": "Haley Young",
   "career_record": {
-    "wins": 18,
+    "wins": 16,
     "losses": 3,
-    "win_pct": 0.857
+    "win_pct": 0.842
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 12,
       "team": "Madison Southern",
       "weight_class": 235,
-      "record": "18-3",
+      "record": "16-3",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 3,
       "current_rank": null,
       "matches": [
@@ -140,7 +141,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Madison Southern",
+          "event": "vs. Madison Central",
           "season": 2024,
           "opponent_ky": true
         },
@@ -230,7 +231,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:25",
-          "event": "vs. Madison Southern",
+          "event": "vs. Madison Central",
           "season": 2024,
           "opponent_ky": true
         },
@@ -272,24 +273,6 @@
         },
         {
           "date": "2023-12-02",
-          "opponent_id": "25294766132",
-          "opponent_career_id": "career_000433",
-          "opponent_name": "Elene Niyogoshima",
-          "opponent_team": "Lafayette",
-          "opponent_team_rank": null,
-          "opponent_weight": 185,
-          "opponent_rank": null,
-          "weight_class": "235",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "Lady Indians Tomahawk Classic",
-          "season": 2024,
-          "opponent_ky": true
-        },
-        {
-          "date": "2023-12-02",
           "opponent_id": "25187217132",
           "opponent_career_id": "career_000352",
           "opponent_name": "Evelyn Estes",
@@ -302,6 +285,24 @@
           "method": "FALL",
           "score": null,
           "duration": "0:19",
+          "event": "Lady Indians Tomahawk Classic",
+          "season": 2024,
+          "opponent_ky": true
+        },
+        {
+          "date": "2023-12-02",
+          "opponent_id": "25294766132",
+          "opponent_career_id": "career_000433",
+          "opponent_name": "Elene Niyogoshima",
+          "opponent_team": "Lafayette",
+          "opponent_team_rank": null,
+          "opponent_weight": 185,
+          "opponent_rank": null,
+          "weight_class": "235",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
           "event": "Lady Indians Tomahawk Classic",
           "season": 2024,
           "opponent_ky": true

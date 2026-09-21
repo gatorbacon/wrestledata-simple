@@ -2,9 +2,9 @@
   "career_id": "career_000644",
   "canonical_name": "Bralyn Maynard",
   "career_record": {
-    "wins": 72,
-    "losses": 8,
-    "win_pct": 0.9
+    "wins": 71,
+    "losses": 7,
+    "win_pct": 0.91
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 152,
       "record": "22-1",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 2,
       "current_rank": 1,
       "matches": [
@@ -442,6 +443,7 @@
       "weight_class": 152,
       "record": "30-1",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 1,
       "current_rank": null,
       "matches": [
@@ -609,6 +611,24 @@
         },
         {
           "date": "2025-02-08",
+          "opponent_id": "30572540132",
+          "opponent_career_id": "career_000855",
+          "opponent_name": "Angelina Parks",
+          "opponent_team": "Boyd County",
+          "opponent_team_rank": null,
+          "opponent_weight": 165,
+          "opponent_rank": null,
+          "weight_class": "165",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:52",
+          "event": "Clipson Jones Memorial Ladies Open",
+          "season": 2025,
+          "opponent_ky": true
+        },
+        {
+          "date": "2025-02-08",
           "opponent_id": "30115339132",
           "opponent_career_id": "career_000541",
           "opponent_name": "Maddison Miles",
@@ -660,24 +680,6 @@
           "event": "Clipson Jones Memorial Ladies Open",
           "season": 2025,
           "opponent_ky": false
-        },
-        {
-          "date": "2025-02-08",
-          "opponent_id": "30572540132",
-          "opponent_career_id": "career_000855",
-          "opponent_name": "Angelina Parks",
-          "opponent_team": "Boyd County",
-          "opponent_team_rank": null,
-          "opponent_weight": 165,
-          "opponent_rank": null,
-          "weight_class": "165",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:52",
-          "event": "Clipson Jones Memorial Ladies Open",
-          "season": 2025,
-          "opponent_ky": true
         },
         {
           "date": "2025-02-08",
@@ -1011,8 +1013,9 @@
       "grade": 9,
       "team": "Pike County Central",
       "weight_class": 152,
-      "record": "20-6",
+      "record": "19-5",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": 3,
       "current_rank": null,
       "matches": [
@@ -1396,24 +1399,6 @@
         },
         {
           "date": "2023-11-25",
-          "opponent_id": "25212719132",
-          "opponent_career_id": "career_000457",
-          "opponent_name": "ERYAH REESE",
-          "opponent_team": "Madison Central",
-          "opponent_team_rank": null,
-          "opponent_weight": 165,
-          "opponent_rank": null,
-          "weight_class": "165",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "Centre Pkwy Classic",
-          "season": 2024,
-          "opponent_ky": true
-        },
-        {
-          "date": "2023-11-25",
           "opponent_id": "25189149132",
           "opponent_career_id": "career_001191",
           "opponent_name": "Anna Ruiz",
@@ -1426,6 +1411,24 @@
           "method": "DEC",
           "score": "9-3",
           "duration": "7:00",
+          "event": "Centre Pkwy Classic",
+          "season": 2024,
+          "opponent_ky": true
+        },
+        {
+          "date": "2023-11-25",
+          "opponent_id": "25212719132",
+          "opponent_career_id": "career_000457",
+          "opponent_name": "ERYAH REESE",
+          "opponent_team": "Madison Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 165,
+          "opponent_rank": null,
+          "weight_class": "165",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
           "event": "Centre Pkwy Classic",
           "season": 2024,
           "opponent_ky": true

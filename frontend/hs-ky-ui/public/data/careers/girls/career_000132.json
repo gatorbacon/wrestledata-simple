@@ -3,8 +3,8 @@
   "canonical_name": "Serenity Oliver",
   "career_record": {
     "wins": 8,
-    "losses": 11,
-    "win_pct": 0.421
+    "losses": 12,
+    "win_pct": 0.4
   },
   "seasons": [
     {
@@ -13,29 +13,12 @@
       "grade": 11,
       "team": "Caldwell County",
       "weight_class": 152,
-      "record": "8-11",
+      "record": "8-12",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 43,
       "matches": [
-        {
-          "date": "2026-02-14",
-          "opponent_id": "35337121132",
-          "opponent_career_id": "career_000666",
-          "opponent_name": "Gwendolyn Darden",
-          "opponent_team": "Russellville",
-          "opponent_team_rank": 52,
-          "opponent_weight": 145,
-          "opponent_rank": 48,
-          "weight_class": "152",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "3:36",
-          "event": "KHSAA Girls Region 1",
-          "season": 2026,
-          "opponent_ky": true
-        },
         {
           "date": "2026-02-14",
           "opponent_id": "35598139132",
@@ -56,6 +39,24 @@
         },
         {
           "date": "2026-02-14",
+          "opponent_id": "35337121132",
+          "opponent_career_id": "career_000666",
+          "opponent_name": "Gwendolyn Darden",
+          "opponent_team": "Russellville",
+          "opponent_team_rank": 52,
+          "opponent_weight": 145,
+          "opponent_rank": 48,
+          "weight_class": "152",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "3:36",
+          "event": "KHSAA Girls Region 1",
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2026-02-14",
           "opponent_id": "35333642132",
           "opponent_career_id": "career_000815",
           "opponent_name": "Natalie Tardy",
@@ -69,24 +70,6 @@
           "score": null,
           "duration": "2:49",
           "event": "KHSAA Girls Region 1",
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2026-01-31",
-          "opponent_id": "35635778132",
-          "opponent_career_id": "career_000715",
-          "opponent_name": "Cristina Miralda",
-          "opponent_team": "South Warren",
-          "opponent_team_rank": null,
-          "opponent_weight": 100,
-          "opponent_rank": 21,
-          "weight_class": "152",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "5:31",
-          "event": "vs. South Warren",
           "season": 2026,
           "opponent_ky": true
         },
@@ -125,6 +108,24 @@
           "event": "vs. Greenwood",
           "season": 2026,
           "opponent_ky": false
+        },
+        {
+          "date": "2026-01-31",
+          "opponent_id": "35635778132",
+          "opponent_career_id": "career_000715",
+          "opponent_name": "Cristina Miralda",
+          "opponent_team": "South Warren",
+          "opponent_team_rank": null,
+          "opponent_weight": 100,
+          "opponent_rank": 21,
+          "weight_class": "152",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "5:31",
+          "event": "vs. South Warren",
+          "season": 2026,
+          "opponent_ky": true
         },
         {
           "date": "2026-01-31",
@@ -248,7 +249,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Caldwell County",
+          "event": "vs. Hopkinsville",
           "season": 2026,
           "opponent_ky": true
         },

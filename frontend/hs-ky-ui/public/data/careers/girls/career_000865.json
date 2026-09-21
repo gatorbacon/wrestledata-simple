@@ -2,9 +2,9 @@
   "career_id": "career_000865",
   "canonical_name": "Rose Thomas",
   "career_record": {
-    "wins": 25,
+    "wins": 26,
     "losses": 6,
-    "win_pct": 0.806
+    "win_pct": 0.812
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 126,
       "record": "19-6",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 7,
       "current_rank": null,
       "matches": [
@@ -158,7 +159,7 @@
           "method": "DEC",
           "score": "5-3",
           "duration": "7:00",
-          "event": "vs. Conner",
+          "event": "vs. Bullitt East",
           "season": 2025,
           "opponent_ky": true
         },
@@ -476,8 +477,9 @@
       "grade": 11,
       "team": "Conner",
       "weight_class": 132,
-      "record": "6-0",
+      "record": "7-0",
       "regional_place": 1,
+      "regional_data_tracked": true,
       "state_place": 7,
       "current_rank": null,
       "matches": [
@@ -537,24 +539,6 @@
         },
         {
           "date": "2023-12-30",
-          "opponent_id": "25184461132",
-          "opponent_career_id": "career_001342",
-          "opponent_name": "Laila Pinkston",
-          "opponent_team": "Highlands",
-          "opponent_team_rank": null,
-          "opponent_weight": 120,
-          "opponent_rank": null,
-          "weight_class": "132",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:47",
-          "event": "2023 Girls NKAC",
-          "season": 2024,
-          "opponent_ky": true
-        },
-        {
-          "date": "2023-12-30",
           "opponent_id": "27976952132",
           "opponent_career_id": "career_000142",
           "opponent_name": "Mariah Koch",
@@ -606,6 +590,24 @@
           "event": "2023 Girls NKAC",
           "season": 2024,
           "opponent_ky": false
+        },
+        {
+          "date": "2023-12-30",
+          "opponent_id": "25184461132",
+          "opponent_career_id": "career_001342",
+          "opponent_name": "Laila Pinkston",
+          "opponent_team": "Highlands",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "132",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:47",
+          "event": "2023 Girls NKAC",
+          "season": 2024,
+          "opponent_ky": true
         }
       ]
     }

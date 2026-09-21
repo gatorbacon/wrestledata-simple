@@ -3,7 +3,7 @@
   "canonical_name": "Mayley Helton",
   "career_record": {
     "wins": 0,
-    "losses": 0,
+    "losses": 2,
     "win_pct": 0.0
   },
   "seasons": [
@@ -13,11 +13,30 @@
       "grade": 9,
       "team": "Lynn Camp",
       "weight_class": 235,
-      "record": "0-0",
+      "record": "0-2",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
+        {
+          "date": "2023-12-02",
+          "opponent_id": "24975710132",
+          "opponent_career_id": null,
+          "opponent_name": "Abril Dimas",
+          "opponent_team": "Livingston Academy (Girls)",
+          "opponent_team_rank": null,
+          "opponent_weight": null,
+          "opponent_rank": null,
+          "weight_class": "235",
+          "result": "L",
+          "method": "DEC",
+          "score": "13-11",
+          "duration": "7:00",
+          "event": "vs. Livingston Academy (Girls)",
+          "season": 2024,
+          "opponent_ky": false
+        },
         {
           "date": "2023-11-28",
           "opponent_id": "25184502132",
@@ -32,7 +51,7 @@
           "method": "FALL",
           "score": null,
           "duration": "4:32",
-          "event": "vs. Lynn Camp High School",
+          "event": "vs. Bell County",
           "season": 2024,
           "opponent_ky": true
         }

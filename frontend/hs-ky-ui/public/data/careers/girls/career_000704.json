@@ -3,8 +3,8 @@
   "canonical_name": "Sophie Haught",
   "career_record": {
     "wins": 6,
-    "losses": 15,
-    "win_pct": 0.286
+    "losses": 17,
+    "win_pct": 0.261
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 9,
       "team": "Simon Kenton",
       "weight_class": 132,
-      "record": "6-15",
+      "record": "6-17",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 35,
       "matches": [
@@ -110,6 +111,24 @@
         },
         {
           "date": "2026-01-31",
+          "opponent_id": "35375761132",
+          "opponent_career_id": "career_000193",
+          "opponent_name": "Cambri Parker",
+          "opponent_team": "Conner",
+          "opponent_team_rank": null,
+          "opponent_weight": 132,
+          "opponent_rank": 36,
+          "weight_class": "132",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:41",
+          "event": "North College Hill Invite",
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2026-01-31",
           "opponent_id": "OUTSTATE_5bfc2679eb0a",
           "opponent_career_id": null,
           "opponent_name": "Izabella DeMaris",
@@ -140,7 +159,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Simon Kenton",
+          "event": "vs. Highlands",
           "season": 2026,
           "opponent_ky": true
         },
@@ -200,24 +219,6 @@
         },
         {
           "date": "2026-01-14",
-          "opponent_id": "35352432132",
-          "opponent_career_id": "career_000811",
-          "opponent_name": "Dezeray Morris",
-          "opponent_team": "Walton-Verona",
-          "opponent_team_rank": null,
-          "opponent_weight": 126,
-          "opponent_rank": 48,
-          "weight_class": "132",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Simon Kenton",
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2026-01-14",
           "opponent_id": "35615707132",
           "opponent_career_id": "career_000364",
           "opponent_name": "Lorelai Manning",
@@ -230,7 +231,25 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Simon Kenton",
+          "event": "vs. Highlands",
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2026-01-14",
+          "opponent_id": "35352432132",
+          "opponent_career_id": "career_000811",
+          "opponent_name": "Dezeray Morris",
+          "opponent_team": "Walton-Verona",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": 48,
+          "weight_class": "132",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Walton-Verona",
           "season": 2026,
           "opponent_ky": true
         },
@@ -419,7 +438,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Simon Kenton",
+          "event": "vs. Boyle County",
           "mv_impact": -2.59,
           "season": 2026,
           "opponent_ky": true

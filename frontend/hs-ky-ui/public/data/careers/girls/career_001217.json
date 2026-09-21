@@ -2,9 +2,9 @@
   "career_id": "career_001217",
   "canonical_name": "Caroline Calloway",
   "career_record": {
-    "wins": 0,
-    "losses": 0,
-    "win_pct": 0.0
+    "wins": 1,
+    "losses": 2,
+    "win_pct": 0.333
   },
   "seasons": [
     {
@@ -13,11 +13,67 @@
       "grade": 12,
       "team": "South Warren",
       "weight_class": 126,
-      "record": "0-0",
+      "record": "1-2",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
-      "matches": []
+      "matches": [
+        {
+          "date": "2023-11-22",
+          "opponent_id": "25184472132",
+          "opponent_career_id": "career_000011",
+          "opponent_name": "Winified Simon",
+          "opponent_team": "Apollo",
+          "opponent_team_rank": null,
+          "opponent_weight": 114,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:48",
+          "event": "vs. Apollo High School",
+          "season": 2024,
+          "opponent_ky": true
+        },
+        {
+          "date": "2023-11-22",
+          "opponent_id": "24849002132",
+          "opponent_career_id": null,
+          "opponent_name": "Kaelyn Sproles",
+          "opponent_team": "Rossview (Girls)",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "4:00",
+          "event": "vs. Rossview (Girls)",
+          "season": 2024,
+          "opponent_ky": false
+        },
+        {
+          "date": "2023-11-22",
+          "opponent_id": "24844482132",
+          "opponent_career_id": null,
+          "opponent_name": "Eleasa Renken",
+          "opponent_team": "West Creek (Girls)",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:50",
+          "event": "vs. West Creek (Girls)",
+          "season": 2024,
+          "opponent_ky": false
+        }
+      ]
     }
   ]
 }

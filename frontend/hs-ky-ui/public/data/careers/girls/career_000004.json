@@ -3,8 +3,8 @@
   "canonical_name": "Angela Mejia",
   "career_record": {
     "wins": 3,
-    "losses": 9,
-    "win_pct": 0.25
+    "losses": 8,
+    "win_pct": 0.273
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 10,
       "team": "Adair County",
       "weight_class": 132,
-      "record": "3-9",
+      "record": "3-8",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 63,
       "matches": [
@@ -146,24 +147,6 @@
         },
         {
           "date": "2025-12-13",
-          "opponent_id": "35563309132",
-          "opponent_career_id": "career_000527",
-          "opponent_name": "Evelyn Rugama",
-          "opponent_team": "Meade County",
-          "opponent_team_rank": 9,
-          "opponent_weight": 132,
-          "opponent_rank": 37,
-          "weight_class": "138",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Meade County",
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2025-12-13",
           "opponent_id": "OUTSTATE_ffe290adc6a5",
           "opponent_career_id": null,
           "opponent_name": "Unknown",
@@ -213,6 +196,24 @@
           "score": null,
           "duration": "0:00",
           "event": "vs. Harrison County",
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2025-12-13",
+          "opponent_id": "35563309132",
+          "opponent_career_id": "career_000527",
+          "opponent_name": "Evelyn Rugama",
+          "opponent_team": "Meade County",
+          "opponent_team_rank": 9,
+          "opponent_weight": 132,
+          "opponent_rank": 37,
+          "weight_class": "138",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Meade County",
           "season": 2026,
           "opponent_ky": true
         }

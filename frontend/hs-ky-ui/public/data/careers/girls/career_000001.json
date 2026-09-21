@@ -2,9 +2,9 @@
   "career_id": "career_000001",
   "canonical_name": "Charisma Kunkel",
   "career_record": {
-    "wins": 9,
+    "wins": 8,
     "losses": 8,
-    "win_pct": 0.529
+    "win_pct": 0.5
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 7,
       "team": "Adair County",
       "weight_class": 114,
-      "record": "9-8",
+      "record": "8-8",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 34,
       "matches": [
@@ -242,25 +243,6 @@
         },
         {
           "date": "2025-12-13",
-          "opponent_id": "35436776132",
-          "opponent_career_id": "career_000325",
-          "opponent_name": "Isabella Vidoni",
-          "opponent_team": "Harrison County",
-          "opponent_team_rank": 20,
-          "opponent_weight": 107,
-          "opponent_rank": 59,
-          "weight_class": "114",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Harrison County",
-          "mv_impact": 1.26,
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2025-12-13",
           "opponent_id": "35635701132",
           "opponent_career_id": "career_000717",
           "opponent_name": "LaNeyah Crowder",
@@ -294,6 +276,25 @@
           "duration": "0:00",
           "event": "vs. John Hardin",
           "mv_impact": -6.94,
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2025-12-13",
+          "opponent_id": "35436776132",
+          "opponent_career_id": "career_000325",
+          "opponent_name": "Isabella Vidoni",
+          "opponent_team": "Harrison County",
+          "opponent_team_rank": 20,
+          "opponent_weight": 107,
+          "opponent_rank": 59,
+          "weight_class": "114",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Harrison County",
+          "mv_impact": 1.26,
           "season": 2026,
           "opponent_ky": true
         },

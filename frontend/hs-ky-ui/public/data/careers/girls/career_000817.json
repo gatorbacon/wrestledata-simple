@@ -3,8 +3,8 @@
   "canonical_name": "Maylee Whitney",
   "career_record": {
     "wins": 1,
-    "losses": 9,
-    "win_pct": 0.1
+    "losses": 8,
+    "win_pct": 0.111
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 9,
       "team": "West Carter",
       "weight_class": 107,
-      "record": "1-9",
+      "record": "1-8",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 60,
       "matches": [
@@ -151,25 +152,6 @@
         },
         {
           "date": "2025-12-06",
-          "opponent_id": "35739869132",
-          "opponent_career_id": "career_000479",
-          "opponent_name": "Paige Collins",
-          "opponent_team": "Mason County",
-          "opponent_team_rank": null,
-          "opponent_weight": 100,
-          "opponent_rank": 60,
-          "weight_class": "107",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "2:00",
-          "event": "2025 Anchor Down Showdown (Ladies)",
-          "mv_impact": -9.19,
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2025-12-06",
           "opponent_id": "35333537132",
           "opponent_career_id": "career_000450",
           "opponent_name": "Esther Wernersbach",
@@ -184,6 +166,25 @@
           "duration": "1:14",
           "event": "2025 Anchor Down Showdown (Ladies)",
           "mv_impact": -6.24,
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2025-12-06",
+          "opponent_id": "35739869132",
+          "opponent_career_id": "career_000479",
+          "opponent_name": "Paige Collins",
+          "opponent_team": "Mason County",
+          "opponent_team_rank": null,
+          "opponent_weight": 100,
+          "opponent_rank": 60,
+          "weight_class": "107",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "2:00",
+          "event": "2025 Anchor Down Showdown (Ladies)",
+          "mv_impact": -9.19,
           "season": 2026,
           "opponent_ky": true
         }

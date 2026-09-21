@@ -3,8 +3,8 @@
   "canonical_name": "Carlee Blair",
   "career_record": {
     "wins": 11,
-    "losses": 12,
-    "win_pct": 0.478
+    "losses": 13,
+    "win_pct": 0.458
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 12,
       "team": "Fort Campbell",
       "weight_class": 126,
-      "record": "11-12",
+      "record": "11-13",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -50,6 +51,42 @@
           "method": "FALL",
           "score": null,
           "duration": "1:02",
+          "event": "Steve Johnston Memorial Invitational",
+          "season": 2025,
+          "opponent_ky": false
+        },
+        {
+          "date": "2025-02-08",
+          "opponent_id": "-1",
+          "opponent_career_id": null,
+          "opponent_name": "Addi Swanson",
+          "opponent_team": "Evansville F.j. Reitz",
+          "opponent_team_rank": null,
+          "opponent_weight": null,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:01",
+          "event": "Steve Johnston Memorial Invitational",
+          "season": 2025,
+          "opponent_ky": false
+        },
+        {
+          "date": "2025-02-08",
+          "opponent_id": "-1",
+          "opponent_career_id": null,
+          "opponent_name": "Addi Swanson",
+          "opponent_team": "Evansville F.j. Reitz",
+          "opponent_team_rank": null,
+          "opponent_weight": null,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:33",
           "event": "Steve Johnston Memorial Invitational",
           "season": 2025,
           "opponent_ky": false
@@ -104,7 +141,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Fort Campbell",
+          "event": "vs. Apollo",
           "season": 2025,
           "opponent_ky": true
         },
@@ -362,24 +399,6 @@
         },
         {
           "date": "2024-12-05",
-          "opponent_id": "30336708132",
-          "opponent_career_id": "career_001069",
-          "opponent_name": "Monique Carlos",
-          "opponent_team": "Hopkinsville",
-          "opponent_team_rank": null,
-          "opponent_weight": 138,
-          "opponent_rank": null,
-          "weight_class": "132",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:31",
-          "event": "vs. Hopkinsville",
-          "season": 2025,
-          "opponent_ky": true
-        },
-        {
-          "date": "2024-12-05",
           "opponent_id": "30507287132",
           "opponent_career_id": "career_000777",
           "opponent_name": "Bryonah Mayes",
@@ -413,6 +432,24 @@
           "event": "vs. Hopkinsville",
           "season": 2025,
           "opponent_ky": false
+        },
+        {
+          "date": "2024-12-05",
+          "opponent_id": "30336708132",
+          "opponent_career_id": "career_001069",
+          "opponent_name": "Monique Carlos",
+          "opponent_team": "Hopkinsville",
+          "opponent_team_rank": null,
+          "opponent_weight": 138,
+          "opponent_rank": null,
+          "weight_class": "132",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:31",
+          "event": "vs. Hopkinsville",
+          "season": 2025,
+          "opponent_ky": true
         }
       ]
     }

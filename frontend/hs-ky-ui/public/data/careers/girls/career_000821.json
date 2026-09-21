@@ -3,8 +3,8 @@
   "canonical_name": "Sunai Barney",
   "career_record": {
     "wins": 5,
-    "losses": 7,
-    "win_pct": 0.417
+    "losses": 8,
+    "win_pct": 0.385
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 10,
       "team": "Western",
       "weight_class": 235,
-      "record": "5-7",
+      "record": "5-8",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 23,
       "matches": [
@@ -150,6 +151,24 @@
         },
         {
           "date": "2025-12-20",
+          "opponent_id": "35343290132",
+          "opponent_career_id": "career_000353",
+          "opponent_name": "Addilyn Leslie",
+          "opponent_team": "Henderson County",
+          "opponent_team_rank": null,
+          "opponent_weight": 185,
+          "opponent_rank": 7,
+          "weight_class": "235",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:27",
+          "event": "Henderson County Lady Colonel Wrestling Invitational",
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2025-12-20",
           "opponent_id": "35598126132",
           "opponent_career_id": "career_000781",
           "opponent_name": "Brianna Rice",
@@ -163,25 +182,6 @@
           "score": null,
           "duration": "3:22",
           "event": "Henderson County Lady Colonel Wrestling Invitational",
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2025-12-06",
-          "opponent_id": "35333620132",
-          "opponent_career_id": "career_000765",
-          "opponent_name": "Addysen Dotson",
-          "opponent_team": "Taylor County",
-          "opponent_team_rank": 58,
-          "opponent_weight": 185,
-          "opponent_rank": 10,
-          "weight_class": "235",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:25",
-          "event": "2025 Ohio County Girls` Invitational",
-          "mv_impact": 3.56,
           "season": 2026,
           "opponent_ky": true
         },
@@ -201,6 +201,25 @@
           "duration": "1:59",
           "event": "2025 Ohio County Girls` Invitational",
           "mv_impact": -7.16,
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2025-12-06",
+          "opponent_id": "35333620132",
+          "opponent_career_id": "career_000765",
+          "opponent_name": "Addysen Dotson",
+          "opponent_team": "Taylor County",
+          "opponent_team_rank": 58,
+          "opponent_weight": 185,
+          "opponent_rank": 10,
+          "weight_class": "235",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:25",
+          "event": "2025 Ohio County Girls` Invitational",
+          "mv_impact": 3.56,
           "season": 2026,
           "opponent_ky": true
         },
@@ -237,7 +256,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:14",
-          "event": "vs. Western",
+          "event": "vs. Male",
           "season": 2026,
           "opponent_ky": true
         }

@@ -2,9 +2,9 @@
   "career_id": "career_001027",
   "canonical_name": "Holly Wright",
   "career_record": {
-    "wins": 15,
+    "wins": 14,
     "losses": 8,
-    "win_pct": 0.652
+    "win_pct": 0.636
   },
   "seasons": [
     {
@@ -15,6 +15,7 @@
       "weight_class": 120,
       "record": "0-2",
       "regional_place": null,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
@@ -62,8 +63,9 @@
       "grade": 9,
       "team": "Harlan County",
       "weight_class": 107,
-      "record": "15-6",
+      "record": "14-6",
       "regional_place": 3,
+      "regional_data_tracked": true,
       "state_place": 7,
       "current_rank": null,
       "matches": [
@@ -81,6 +83,24 @@
           "method": "FALL",
           "score": null,
           "duration": "0:35",
+          "event": "KHSAA Girls State Tournament",
+          "season": 2024,
+          "opponent_ky": true
+        },
+        {
+          "date": "2024-02-17",
+          "opponent_id": "25184520132",
+          "opponent_career_id": "career_000713",
+          "opponent_name": "Lexi Proudfoot",
+          "opponent_team": "South Oldham",
+          "opponent_team_rank": null,
+          "opponent_weight": 107,
+          "opponent_rank": null,
+          "weight_class": "107",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:40",
           "event": "KHSAA Girls State Tournament",
           "season": 2024,
           "opponent_ky": true
@@ -243,7 +263,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Harlan County",
+          "event": "vs. Bell County",
           "season": 2024,
           "opponent_ky": true
         },
@@ -375,24 +395,6 @@
         },
         {
           "date": "2023-12-09",
-          "opponent_id": "25184454132",
-          "opponent_career_id": "career_001206",
-          "opponent_name": "Haley Yancey",
-          "opponent_team": "Mccreary Central",
-          "opponent_team_rank": null,
-          "opponent_weight": 100,
-          "opponent_rank": null,
-          "weight_class": "107",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "Knox Central Girls Invitational",
-          "season": 2024,
-          "opponent_ky": true
-        },
-        {
-          "date": "2023-12-09",
           "opponent_id": "25860173132",
           "opponent_career_id": "career_000504",
           "opponent_name": "Brooklynn Sammons",
@@ -402,6 +404,24 @@
           "opponent_rank": null,
           "weight_class": "107",
           "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "Knox Central Girls Invitational",
+          "season": 2024,
+          "opponent_ky": true
+        },
+        {
+          "date": "2023-12-09",
+          "opponent_id": "25184454132",
+          "opponent_career_id": "career_001206",
+          "opponent_name": "Haley Yancey",
+          "opponent_team": "Mccreary Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 100,
+          "opponent_rank": null,
+          "weight_class": "107",
+          "result": "W",
           "method": "FALL",
           "score": null,
           "duration": "0:00",

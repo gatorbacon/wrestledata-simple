@@ -3,8 +3,8 @@
   "canonical_name": "Evalee Brewer",
   "career_record": {
     "wins": 15,
-    "losses": 10,
-    "win_pct": 0.6
+    "losses": 9,
+    "win_pct": 0.625
   },
   "seasons": [
     {
@@ -13,8 +13,9 @@
       "grade": 9,
       "team": "Bath County",
       "weight_class": 235,
-      "record": "15-10",
+      "record": "15-9",
       "regional_place": 2,
+      "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 11,
       "matches": [
@@ -344,24 +345,6 @@
         },
         {
           "date": "2025-12-29",
-          "opponent_id": "35457269132",
-          "opponent_career_id": "career_000840",
-          "opponent_name": "Makenna Sulfridge",
-          "opponent_team": "Whitley County",
-          "opponent_team_rank": 12,
-          "opponent_weight": 185,
-          "opponent_rank": 33,
-          "weight_class": "235",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "1:56",
-          "event": "Lady Cardinal Invitational",
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2025-12-29",
           "opponent_id": "35333407132",
           "opponent_career_id": "career_000822",
           "opponent_name": "Sandra Francis",
@@ -392,6 +375,24 @@
           "method": "FALL",
           "score": null,
           "duration": "0:51",
+          "event": "Lady Cardinal Invitational",
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2025-12-29",
+          "opponent_id": "35457269132",
+          "opponent_career_id": "career_000840",
+          "opponent_name": "Makenna Sulfridge",
+          "opponent_team": "Whitley County",
+          "opponent_team_rank": 12,
+          "opponent_weight": 185,
+          "opponent_rank": 33,
+          "weight_class": "235",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:56",
           "event": "Lady Cardinal Invitational",
           "season": 2026,
           "opponent_ky": true
