@@ -2,9 +2,9 @@
   "career_id": "career_004462",
   "canonical_name": "Caleb Kirby",
   "career_record": {
-    "wins": 0,
-    "losses": 4,
-    "win_pct": 0.0
+    "wins": 1,
+    "losses": 7,
+    "win_pct": 0.125
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 7,
       "team": "Walton-Verona",
       "weight_class": 144,
-      "record": "0-4",
+      "record": "1-7",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -69,9 +69,27 @@
           "method": "FALL",
           "score": null,
           "duration": "0:24",
-          "event": "vs. Walton Verona",
+          "event": "vs. Holmes",
           "season": 2024,
           "opponent_ky": true
+        },
+        {
+          "date": "2024-01-04",
+          "opponent_id": "OUTSTATE_846550724ea1",
+          "opponent_career_id": null,
+          "opponent_name": "Unknown",
+          "opponent_team": "Newport",
+          "opponent_team_rank": null,
+          "opponent_weight": null,
+          "opponent_rank": null,
+          "weight_class": "144",
+          "result": "W",
+          "method": "FF",
+          "score": null,
+          "duration": "7:00",
+          "event": "vs. Newport",
+          "season": 2024,
+          "opponent_ky": false
         },
         {
           "date": "2023-12-29",
@@ -126,6 +144,24 @@
           "event": "JV Raider Rumble",
           "season": 2024,
           "opponent_ky": true
+        },
+        {
+          "date": "2023-12-08",
+          "opponent_id": "24833154132",
+          "opponent_career_id": null,
+          "opponent_name": "Jackson Runyon",
+          "opponent_team": "TAYLOR",
+          "opponent_team_rank": null,
+          "opponent_weight": 144,
+          "opponent_rank": null,
+          "weight_class": "150",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:41",
+          "event": "JV Raider Rumble",
+          "season": 2024,
+          "opponent_ky": false
         }
       ]
     }

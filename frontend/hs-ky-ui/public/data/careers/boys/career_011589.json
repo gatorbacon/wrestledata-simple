@@ -3,7 +3,7 @@
   "canonical_name": "Cassandra Cothren",
   "career_record": {
     "wins": 0,
-    "losses": 0,
+    "losses": 5,
     "win_pct": 0.0
   },
   "seasons": [
@@ -13,30 +13,12 @@
       "grade": 12,
       "team": "Waggener ",
       "weight_class": 165,
-      "record": "0-0",
+      "record": "0-5",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
-        {
-          "date": "2017-12-16",
-          "opponent_id": "12195581009",
-          "opponent_career_id": "career_011587",
-          "opponent_name": "Tyjeric Williams",
-          "opponent_team": "Valley",
-          "opponent_team_rank": null,
-          "opponent_weight": 157,
-          "opponent_rank": null,
-          "weight_class": "165",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "2:49",
-          "event": "vs. Waggener",
-          "season": 2018,
-          "opponent_ky": true
-        },
         {
           "date": "2017-12-16",
           "opponent_id": "11683161009",
@@ -51,7 +33,25 @@
           "method": "FALL",
           "score": null,
           "duration": "1:03",
-          "event": "vs. Waggener",
+          "event": "vs. Spencer County",
+          "season": 2018,
+          "opponent_ky": true
+        },
+        {
+          "date": "2017-12-16",
+          "opponent_id": "12195581009",
+          "opponent_career_id": "career_011587",
+          "opponent_name": "Tyjeric Williams",
+          "opponent_team": "Valley",
+          "opponent_team_rank": null,
+          "opponent_weight": 157,
+          "opponent_rank": null,
+          "weight_class": "165",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "2:49",
+          "event": "vs. Valley",
           "season": 2018,
           "opponent_ky": true
         },
@@ -74,6 +74,24 @@
           "opponent_ky": true
         },
         {
+          "date": "2017-12-09",
+          "opponent_id": "OUTSTATE_533cde9f64ef",
+          "opponent_career_id": null,
+          "opponent_name": "TyDarius Kelly",
+          "opponent_team": "Christian County",
+          "opponent_team_rank": null,
+          "opponent_weight": null,
+          "opponent_rank": null,
+          "weight_class": "165",
+          "result": "L",
+          "method": "FF",
+          "score": null,
+          "duration": "7:00",
+          "event": "King of the Bluegrass @ Fairdale",
+          "season": 2018,
+          "opponent_ky": false
+        },
+        {
           "date": "2017-12-02",
           "opponent_id": "12209626009",
           "opponent_career_id": "career_011380",
@@ -87,7 +105,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Waggener",
+          "event": "vs. Bullitt Central",
           "season": 2018,
           "opponent_ky": true
         }

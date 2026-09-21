@@ -3,8 +3,8 @@
   "canonical_name": "Matthew Klabel",
   "career_record": {
     "wins": 5,
-    "losses": 15,
-    "win_pct": 0.25
+    "losses": 16,
+    "win_pct": 0.238
   },
   "seasons": [
     {
@@ -19,6 +19,24 @@
       "state_place": null,
       "current_rank": null,
       "matches": [
+        {
+          "date": "2021-01-12",
+          "opponent_id": "15234723132",
+          "opponent_career_id": "career_007742",
+          "opponent_name": "Seth Huff",
+          "opponent_team": "Knox Central High School",
+          "opponent_team_rank": null,
+          "opponent_weight": 215,
+          "opponent_rank": null,
+          "weight_class": "215",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Knox Central High School",
+          "season": 2021,
+          "opponent_ky": true
+        },
         {
           "date": "2021-01-12",
           "opponent_id": "15236981132",
@@ -36,24 +54,6 @@
           "event": "vs. Perry County Central",
           "season": 2021,
           "opponent_ky": true
-        },
-        {
-          "date": "2021-01-12",
-          "opponent_id": "15234723132",
-          "opponent_career_id": "career_007742",
-          "opponent_name": "Seth Huff",
-          "opponent_team": "Knox Central High School",
-          "opponent_team_rank": null,
-          "opponent_weight": 215,
-          "opponent_rank": null,
-          "weight_class": "215",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Letcher County Central",
-          "season": 2021,
-          "opponent_ky": true
         }
       ]
     },
@@ -63,30 +63,12 @@
       "grade": 11,
       "team": "Letcher County Central",
       "weight_class": 190,
-      "record": "4-14",
+      "record": "4-15",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
-        {
-          "date": "2020-01-18",
-          "opponent_id": "10921264132",
-          "opponent_career_id": null,
-          "opponent_name": "Tielor Horne",
-          "opponent_team": "John S. Battle",
-          "opponent_team_rank": null,
-          "opponent_weight": 190,
-          "opponent_rank": null,
-          "weight_class": "165",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "Bear Den Brawl",
-          "season": 2020,
-          "opponent_ky": false
-        },
         {
           "date": "2020-01-18",
           "opponent_id": "10917282132",
@@ -161,6 +143,24 @@
         },
         {
           "date": "2020-01-18",
+          "opponent_id": "10921264132",
+          "opponent_career_id": null,
+          "opponent_name": "Tielor Horne",
+          "opponent_team": "John S. Battle",
+          "opponent_team_rank": null,
+          "opponent_weight": 190,
+          "opponent_rank": null,
+          "weight_class": "165",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "Bear Den Brawl",
+          "season": 2020,
+          "opponent_ky": false
+        },
+        {
+          "date": "2020-01-18",
           "opponent_id": "11309239132",
           "opponent_career_id": null,
           "opponent_name": "Jacob Phillips",
@@ -191,7 +191,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Letcher County Central",
+          "event": "vs. Belfry",
           "season": 2020,
           "opponent_ky": true
         },
@@ -377,24 +377,6 @@
         },
         {
           "date": "2019-12-07",
-          "opponent_id": "10629347132",
-          "opponent_career_id": "career_006192",
-          "opponent_name": "Adam Lynch",
-          "opponent_team": "Tates Creek",
-          "opponent_team_rank": null,
-          "opponent_weight": 190,
-          "opponent_rank": null,
-          "weight_class": "190",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "Jessamine County Clash",
-          "season": 2020,
-          "opponent_ky": true
-        },
-        {
-          "date": "2019-12-07",
           "opponent_id": "11154483132",
           "opponent_career_id": "career_010168",
           "opponent_name": "Jerry Tubbs-Summers",
@@ -410,6 +392,24 @@
           "event": "Jessamine County Clash",
           "season": 2020,
           "opponent_ky": false
+        },
+        {
+          "date": "2019-12-07",
+          "opponent_id": "10629347132",
+          "opponent_career_id": "career_006192",
+          "opponent_name": "Adam Lynch",
+          "opponent_team": "Tates Creek",
+          "opponent_team_rank": null,
+          "opponent_weight": 190,
+          "opponent_rank": null,
+          "weight_class": "190",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "Jessamine County Clash",
+          "season": 2020,
+          "opponent_ky": true
         }
       ]
     }

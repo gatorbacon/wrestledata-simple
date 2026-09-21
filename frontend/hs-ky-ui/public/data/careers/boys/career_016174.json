@@ -3,8 +3,8 @@
   "canonical_name": "Dakota Jones",
   "career_record": {
     "wins": 1,
-    "losses": 3,
-    "win_pct": 0.25
+    "losses": 5,
+    "win_pct": 0.167
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": null,
       "team": "Bullitt Central",
       "weight_class": 157,
-      "record": "1-3",
+      "record": "1-5",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -39,6 +39,24 @@
         },
         {
           "date": "2012-12-29",
+          "opponent_id": "1274175009",
+          "opponent_career_id": "career_016261",
+          "opponent_name": "Tyler Erhard",
+          "opponent_team": "Desales",
+          "opponent_team_rank": null,
+          "opponent_weight": 157,
+          "opponent_rank": null,
+          "weight_class": "157",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:49",
+          "event": "Fern Creek Invitational",
+          "season": 2013,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-12-29",
           "opponent_id": "1291475009",
           "opponent_career_id": "career_016292",
           "opponent_name": "Michael Kollar",
@@ -51,7 +69,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:36",
-          "event": "vs. Bullitt Central",
+          "event": "vs. Fern Creek",
           "season": 2013,
           "opponent_ky": true
         },
@@ -69,25 +87,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:00",
-          "event": "vs. Bullitt Central",
-          "season": 2013,
-          "opponent_ky": true
-        },
-        {
-          "date": "2012-12-29",
-          "opponent_id": "1274175009",
-          "opponent_career_id": "career_016261",
-          "opponent_name": "Tyler Erhard",
-          "opponent_team": "Desales",
-          "opponent_team_rank": null,
-          "opponent_weight": 157,
-          "opponent_rank": null,
-          "weight_class": "157",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:49",
-          "event": "Fern Creek Invitational",
+          "event": "vs. Jeffersontown",
           "season": 2013,
           "opponent_ky": true
         },
@@ -111,24 +111,6 @@
         },
         {
           "date": "2012-12-28",
-          "opponent_id": "1291475009",
-          "opponent_career_id": "career_016292",
-          "opponent_name": "Michael Kollar",
-          "opponent_team": "Fern Creek",
-          "opponent_team_rank": null,
-          "opponent_weight": 157,
-          "opponent_rank": null,
-          "weight_class": "165",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "Fern Creek Invitational",
-          "season": 2013,
-          "opponent_ky": true
-        },
-        {
-          "date": "2012-12-28",
           "opponent_id": "1276412009",
           "opponent_career_id": "career_013937",
           "opponent_name": "Thomas Ray",
@@ -141,7 +123,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:28",
-          "event": "vs. Bullitt Central",
+          "event": "vs. Doss",
           "season": 2013,
           "opponent_ky": true
         }

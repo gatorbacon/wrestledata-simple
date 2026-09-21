@@ -3,8 +3,8 @@
   "canonical_name": "John Stork",
   "career_record": {
     "wins": 8,
-    "losses": 20,
-    "win_pct": 0.286
+    "losses": 19,
+    "win_pct": 0.296
   },
   "seasons": [
     {
@@ -57,6 +57,24 @@
         },
         {
           "date": "2017-12-02",
+          "opponent_id": "12197219009",
+          "opponent_career_id": "career_008756",
+          "opponent_name": "Michael Leicht",
+          "opponent_team": "Campbell County",
+          "opponent_team_rank": null,
+          "opponent_weight": 190,
+          "opponent_rank": null,
+          "weight_class": "190",
+          "result": "W",
+          "method": "DEC",
+          "score": "3-2",
+          "duration": "7:00",
+          "event": "Rumble on the Hilltop",
+          "season": 2018,
+          "opponent_ky": true
+        },
+        {
+          "date": "2017-12-02",
           "opponent_id": "143710132",
           "opponent_career_id": "career_007861",
           "opponent_name": "Branson Smith",
@@ -93,24 +111,6 @@
         },
         {
           "date": "2017-12-02",
-          "opponent_id": "12197219009",
-          "opponent_career_id": "career_008756",
-          "opponent_name": "Michael Leicht",
-          "opponent_team": "Campbell County",
-          "opponent_team_rank": null,
-          "opponent_weight": 190,
-          "opponent_rank": null,
-          "weight_class": "190",
-          "result": "W",
-          "method": "DEC",
-          "score": "3-2",
-          "duration": "7:00",
-          "event": "Rumble on the Hilltop",
-          "season": 2018,
-          "opponent_ky": true
-        },
-        {
-          "date": "2017-12-02",
           "opponent_id": "143734132",
           "opponent_career_id": "career_010703",
           "opponent_name": "Austin Borders",
@@ -135,7 +135,7 @@
       "grade": 10,
       "team": "Woodford County",
       "weight_class": 165,
-      "record": "4-10",
+      "record": "4-9",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -409,24 +409,6 @@
         },
         {
           "date": "2016-01-12",
-          "opponent_id": "285522013",
-          "opponent_career_id": "career_013604",
-          "opponent_name": "Tres Davis",
-          "opponent_team": "Danville",
-          "opponent_team_rank": null,
-          "opponent_weight": 150,
-          "opponent_rank": null,
-          "weight_class": "157",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "2:30",
-          "event": "vs. Woodford County",
-          "season": 2016,
-          "opponent_ky": true
-        },
-        {
-          "date": "2016-01-12",
           "opponent_id": "439814076",
           "opponent_career_id": "career_012991",
           "opponent_name": "Cruz Murphy",
@@ -439,7 +421,25 @@
           "method": "FALL",
           "score": null,
           "duration": "0:43",
-          "event": "vs. Woodford County",
+          "event": "vs. Boyle County",
+          "season": 2016,
+          "opponent_ky": true
+        },
+        {
+          "date": "2016-01-12",
+          "opponent_id": "285522013",
+          "opponent_career_id": "career_013604",
+          "opponent_name": "Tres Davis",
+          "opponent_team": "Danville",
+          "opponent_team_rank": null,
+          "opponent_weight": 150,
+          "opponent_rank": null,
+          "weight_class": "157",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "2:30",
+          "event": "vs. Danville",
           "season": 2016,
           "opponent_ky": true
         },
@@ -457,7 +457,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Woodford County",
+          "event": "vs. Nelson County",
           "season": 2016,
           "opponent_ky": true
         },
@@ -475,7 +475,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:33",
-          "event": "vs. Woodford County",
+          "event": "vs. Madison Southern",
           "season": 2016,
           "opponent_ky": true
         },
@@ -493,7 +493,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Woodford County",
+          "event": "vs. North Oldham",
           "season": 2016,
           "opponent_ky": true
         },
@@ -511,7 +511,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:57",
-          "event": "vs. Woodford County",
+          "event": "vs. Whitley County",
           "season": 2016,
           "opponent_ky": true
         },

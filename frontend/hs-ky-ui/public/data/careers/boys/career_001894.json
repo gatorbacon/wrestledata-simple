@@ -3,8 +3,8 @@
   "canonical_name": "Cisco Torres",
   "career_record": {
     "wins": 22,
-    "losses": 26,
-    "win_pct": 0.458
+    "losses": 24,
+    "win_pct": 0.478
   },
   "seasons": [
     {
@@ -13,30 +13,12 @@
       "grade": 10,
       "team": "North Hardin",
       "weight_class": 150,
-      "record": "15-13",
+      "record": "15-12",
       "regional_place": 4,
       "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 52,
       "matches": [
-        {
-          "date": "2026-02-27",
-          "opponent_id": "35212701132",
-          "opponent_career_id": "career_002206",
-          "opponent_name": "Jack Ferguson",
-          "opponent_team": "Pleasure Ridge Park",
-          "opponent_team_rank": 119,
-          "opponent_weight": 150,
-          "opponent_rank": 14,
-          "weight_class": "150",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "4:49",
-          "event": "KHSAA Boys/Coed State Championship",
-          "season": 2026,
-          "opponent_ky": true
-        },
         {
           "date": "2026-02-27",
           "opponent_id": "35732594132",
@@ -51,6 +33,24 @@
           "method": "FALL",
           "score": null,
           "duration": "4:20",
+          "event": "KHSAA Boys/Coed State Championship",
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2026-02-27",
+          "opponent_id": "35212701132",
+          "opponent_career_id": "career_002206",
+          "opponent_name": "Jack Ferguson",
+          "opponent_team": "Pleasure Ridge Park",
+          "opponent_team_rank": 119,
+          "opponent_weight": 150,
+          "opponent_rank": 14,
+          "weight_class": "150",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "4:49",
           "event": "KHSAA Boys/Coed State Championship",
           "season": 2026,
           "opponent_ky": true
@@ -147,6 +147,24 @@
         },
         {
           "date": "2026-02-12",
+          "opponent_id": "35001149132",
+          "opponent_career_id": "career_000473",
+          "opponent_name": "Jackson Holly",
+          "opponent_team": "Central Hardin",
+          "opponent_team_rank": 11,
+          "opponent_weight": 157,
+          "opponent_rank": 17,
+          "weight_class": "157",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Central Hardin",
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2026-02-12",
           "opponent_id": "OUTSTATE_d2c14af25c4d",
           "opponent_career_id": null,
           "opponent_name": "Unknown",
@@ -164,24 +182,6 @@
           "opponent_ky": false
         },
         {
-          "date": "2026-02-12",
-          "opponent_id": "35001149132",
-          "opponent_career_id": "career_000473",
-          "opponent_name": "Jackson Holly",
-          "opponent_team": "Central Hardin",
-          "opponent_team_rank": 11,
-          "opponent_weight": 157,
-          "opponent_rank": 17,
-          "weight_class": "157",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. North Hardin",
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
           "date": "2026-02-11",
           "opponent_id": "35226259132",
           "opponent_career_id": "career_001831",
@@ -195,7 +195,7 @@
           "method": "TF",
           "score": "18-1",
           "duration": "0:00",
-          "event": "vs. North Hardin",
+          "event": "vs. Nelson County",
           "season": 2026,
           "opponent_ky": true
         },
@@ -363,24 +363,6 @@
         },
         {
           "date": "2025-12-20",
-          "opponent_id": "34993868132",
-          "opponent_career_id": "career_001062",
-          "opponent_name": "Tristin Davis",
-          "opponent_team": "Green County",
-          "opponent_team_rank": 85,
-          "opponent_weight": 144,
-          "opponent_rank": 164,
-          "weight_class": "157",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "5:48",
-          "event": "5th Annual Cardinal Clash",
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2025-12-20",
           "opponent_id": "35090032132",
           "opponent_career_id": "career_000867",
           "opponent_name": "Robbie Ellis",
@@ -393,6 +375,24 @@
           "method": "FALL",
           "score": null,
           "duration": "1:31",
+          "event": "5th Annual Cardinal Clash",
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2025-12-20",
+          "opponent_id": "34993868132",
+          "opponent_career_id": "career_001062",
+          "opponent_name": "Tristin Davis",
+          "opponent_team": "Green County",
+          "opponent_team_rank": 85,
+          "opponent_weight": 144,
+          "opponent_rank": 164,
+          "weight_class": "157",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "5:48",
           "event": "5th Annual Cardinal Clash",
           "season": 2026,
           "opponent_ky": true
@@ -465,7 +465,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. North Hardin",
+          "event": "vs. Boyle County",
           "season": 2026,
           "opponent_ky": true
         },
@@ -483,7 +483,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:29",
-          "event": "vs. North Hardin",
+          "event": "vs. Franklin County",
           "season": 2026,
           "opponent_ky": true
         },
@@ -513,7 +513,7 @@
       "grade": 9,
       "team": "North Hardin",
       "weight_class": 132,
-      "record": "7-13",
+      "record": "7-12",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -629,7 +629,7 @@
         },
         {
           "date": "2025-01-30",
-          "opponent_id": "OUTSTATE_18bdd1256c45",
+          "opponent_id": "OUTSTATE_d2c14af25c4d",
           "opponent_career_id": null,
           "opponent_name": "Unknown",
           "opponent_team": "John Hardin",
@@ -659,7 +659,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. North Hardin",
+          "event": "vs. Doss",
           "season": 2025,
           "opponent_ky": true
         },
@@ -677,7 +677,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. North Hardin",
+          "event": "vs. Fairdale",
           "season": 2025,
           "opponent_ky": true
         },
@@ -713,7 +713,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. North Hardin",
+          "event": "vs. John Hardin",
           "season": 2025,
           "opponent_ky": true
         },
@@ -731,7 +731,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. North Hardin",
+          "event": "vs. Bethlehem",
           "season": 2025,
           "opponent_ky": true
         },
@@ -749,7 +749,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:49",
-          "event": "vs. North Hardin",
+          "event": "vs. Central",
           "season": 2025,
           "opponent_ky": true
         },
@@ -767,7 +767,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. North Hardin",
+          "event": "vs. Central Hardin",
           "season": 2025,
           "opponent_ky": true
         },
@@ -785,7 +785,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. North Hardin",
+          "event": "vs. Meade County",
           "season": 2025,
           "opponent_ky": true
         },
@@ -809,7 +809,7 @@
         },
         {
           "date": "2024-12-28",
-          "opponent_id": "OUTSTATE_18bdd1256c45",
+          "opponent_id": "OUTSTATE_90f04a742fd4",
           "opponent_career_id": null,
           "opponent_name": "Unknown",
           "opponent_team": "Ohio County",

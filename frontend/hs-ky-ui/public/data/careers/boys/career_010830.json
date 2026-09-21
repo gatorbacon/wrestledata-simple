@@ -3,8 +3,8 @@
   "canonical_name": "Jordan Adams",
   "career_record": {
     "wins": 13,
-    "losses": 19,
-    "win_pct": 0.406
+    "losses": 17,
+    "win_pct": 0.433
   },
   "seasons": [
     {
@@ -21,6 +21,24 @@
       "matches": [
         {
           "date": "2019-01-26",
+          "opponent_id": "5231433132",
+          "opponent_career_id": "career_010063",
+          "opponent_name": "Austin Buechele",
+          "opponent_team": "Bullitt Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 144,
+          "opponent_rank": null,
+          "weight_class": "144",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Bullitt Central",
+          "season": 2019,
+          "opponent_ky": true
+        },
+        {
+          "date": "2019-01-26",
           "opponent_id": "4927289132",
           "opponent_career_id": "career_009490",
           "opponent_name": "Landen Boone",
@@ -34,24 +52,6 @@
           "score": null,
           "duration": "0:00",
           "event": "vs. Daviess County",
-          "season": 2019,
-          "opponent_ky": true
-        },
-        {
-          "date": "2019-01-26",
-          "opponent_id": "5231433132",
-          "opponent_career_id": "career_010063",
-          "opponent_name": "Austin Buechele",
-          "opponent_team": "Bullitt Central",
-          "opponent_team_rank": null,
-          "opponent_weight": 144,
-          "opponent_rank": null,
-          "weight_class": "144",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Danville",
           "season": 2019,
           "opponent_ky": true
         },
@@ -122,7 +122,7 @@
           "result": "L",
           "method": "FALL",
           "score": null,
-          "duration": "0:00",
+          "duration": "1:48",
           "event": "Dragon Invitational",
           "season": 2019,
           "opponent_ky": true
@@ -159,25 +159,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Danville",
-          "season": 2019,
-          "opponent_ky": true
-        },
-        {
-          "date": "2018-12-01",
-          "opponent_id": "5401920132",
-          "opponent_career_id": "career_011336",
-          "opponent_name": "Brandon Ridner",
-          "opponent_team": "Wayne County",
-          "opponent_team_rank": null,
-          "opponent_weight": 138,
-          "opponent_rank": null,
-          "weight_class": "144",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "1:57",
-          "event": "vs. Wayne County",
+          "event": "vs. Boyle County",
           "season": 2019,
           "opponent_ky": true
         },
@@ -216,6 +198,24 @@
           "event": "vs. Madison Central",
           "season": 2019,
           "opponent_ky": true
+        },
+        {
+          "date": "2018-12-01",
+          "opponent_id": "5401920132",
+          "opponent_career_id": "career_011336",
+          "opponent_name": "Brandon Ridner",
+          "opponent_team": "Wayne County",
+          "opponent_team_rank": null,
+          "opponent_weight": 138,
+          "opponent_rank": null,
+          "weight_class": "144",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:57",
+          "event": "vs. Wayne County",
+          "season": 2019,
+          "opponent_ky": true
         }
       ]
     },
@@ -225,7 +225,7 @@
       "grade": 9,
       "team": "Danville",
       "weight_class": 126,
-      "record": "7-14",
+      "record": "7-12",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -335,7 +335,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Danville",
+          "event": "vs. Anderson County",
           "season": 2017,
           "opponent_ky": true
         },
@@ -461,7 +461,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Danville",
+          "event": "vs. Bullitt Central",
           "season": 2017,
           "opponent_ky": true
         },
@@ -478,7 +478,7 @@
           "result": "L",
           "method": "FALL",
           "score": null,
-          "duration": "0:00",
+          "duration": "1:34",
           "event": "vs. Daviess County",
           "season": 2017,
           "opponent_ky": true

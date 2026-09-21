@@ -2,9 +2,9 @@
   "career_id": "career_000578",
   "canonical_name": "Ethan Gatlin",
   "career_record": {
-    "wins": 24,
+    "wins": 25,
     "losses": 16,
-    "win_pct": 0.6
+    "win_pct": 0.61
   },
   "seasons": [
     {
@@ -93,6 +93,24 @@
         },
         {
           "date": "2025-01-16",
+          "opponent_id": "OUTSTATE_df019622d45a",
+          "opponent_career_id": null,
+          "opponent_name": "Unknown",
+          "opponent_team": "Somerset",
+          "opponent_team_rank": null,
+          "opponent_weight": null,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "W",
+          "method": "FF",
+          "score": null,
+          "duration": "7:00",
+          "event": "vs. Somerset",
+          "season": 2025,
+          "opponent_ky": false
+        },
+        {
+          "date": "2025-01-16",
           "opponent_id": "29838927132",
           "opponent_career_id": "career_002126",
           "opponent_name": "Katie Smith",
@@ -110,26 +128,8 @@
           "opponent_ky": true
         },
         {
-          "date": "2025-01-16",
-          "opponent_id": "OUTSTATE_18bdd1256c45",
-          "opponent_career_id": null,
-          "opponent_name": "Unknown",
-          "opponent_team": "Somerset",
-          "opponent_team_rank": null,
-          "opponent_weight": null,
-          "opponent_rank": null,
-          "weight_class": "126",
-          "result": "W",
-          "method": "FF",
-          "score": null,
-          "duration": "7:00",
-          "event": "vs. Somerset",
-          "season": 2025,
-          "opponent_ky": false
-        },
-        {
           "date": "2025-01-09",
-          "opponent_id": "OUTSTATE_18bdd1256c45",
+          "opponent_id": "OUTSTATE_9bb43a32352d",
           "opponent_career_id": null,
           "opponent_name": "Unknown",
           "opponent_team": "Pineville",
@@ -225,7 +225,7 @@
       "grade": 8,
       "team": "Corbin",
       "weight_class": 126,
-      "record": "17-12",
+      "record": "18-12",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -317,7 +317,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Corbin",
+          "event": "vs. Boyle County",
           "season": 2024,
           "opponent_ky": true
         },
@@ -407,7 +407,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Corbin",
+          "event": "vs. Bell County",
           "season": 2024,
           "opponent_ky": true
         },
@@ -623,7 +623,7 @@
           "method": "FALL",
           "score": null,
           "duration": "2:17",
-          "event": "vs. Corbin",
+          "event": "vs. Bell County",
           "season": 2024,
           "opponent_ky": true
         },
@@ -701,24 +701,6 @@
         },
         {
           "date": "2023-12-16",
-          "opponent_id": "25249396132",
-          "opponent_career_id": "career_004383",
-          "opponent_name": "Adolf Ndayishimiye",
-          "opponent_team": "Southern",
-          "opponent_team_rank": null,
-          "opponent_weight": 120,
-          "opponent_rank": null,
-          "weight_class": "126",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:50",
-          "event": "Taylor County Cardinal Clash",
-          "season": 2024,
-          "opponent_ky": true
-        },
-        {
-          "date": "2023-12-16",
           "opponent_id": "25086000132",
           "opponent_career_id": "career_001871",
           "opponent_name": "Liam Sharpe",
@@ -731,6 +713,24 @@
           "method": "FALL",
           "score": null,
           "duration": "5:15",
+          "event": "Taylor County Cardinal Clash",
+          "season": 2024,
+          "opponent_ky": true
+        },
+        {
+          "date": "2023-12-16",
+          "opponent_id": "25249396132",
+          "opponent_career_id": "career_004383",
+          "opponent_name": "Adolf Ndayishimiye",
+          "opponent_team": "Southern",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:50",
           "event": "Taylor County Cardinal Clash",
           "season": 2024,
           "opponent_ky": true

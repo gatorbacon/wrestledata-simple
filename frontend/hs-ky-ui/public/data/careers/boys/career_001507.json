@@ -2,9 +2,9 @@
   "career_id": "career_001507",
   "canonical_name": "Ryan Bell",
   "career_record": {
-    "wins": 6,
+    "wins": 7,
     "losses": 6,
-    "win_pct": 0.5
+    "win_pct": 0.538
   },
   "seasons": [
     {
@@ -19,44 +19,6 @@
       "state_place": null,
       "current_rank": 100,
       "matches": [
-        {
-          "date": "2025-12-06",
-          "opponent_id": "35284604132",
-          "opponent_career_id": "career_005128",
-          "opponent_name": "Bryce Taylor",
-          "opponent_team": "Trinity (Louisville)",
-          "opponent_team_rank": 134,
-          "opponent_weight": 157,
-          "opponent_rank": 114,
-          "weight_class": "175",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:19",
-          "event": "The Beast of the East",
-          "mv_impact": 1.95,
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2025-12-06",
-          "opponent_id": "35212702132",
-          "opponent_career_id": "career_002212",
-          "opponent_name": "Xavier Nolan",
-          "opponent_team": "Pleasure Ridge Park",
-          "opponent_team_rank": 119,
-          "opponent_weight": 165,
-          "opponent_rank": 44,
-          "weight_class": "175",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "4:38",
-          "event": "The Beast of the East",
-          "mv_impact": -3.24,
-          "season": 2026,
-          "opponent_ky": true
-        },
         {
           "date": "2025-12-06",
           "opponent_id": "35920579132",
@@ -94,6 +56,44 @@
           "mv_impact": -0.73,
           "season": 2026,
           "opponent_ky": true
+        },
+        {
+          "date": "2025-12-06",
+          "opponent_id": "35212702132",
+          "opponent_career_id": "career_002212",
+          "opponent_name": "Xavier Nolan",
+          "opponent_team": "Pleasure Ridge Park",
+          "opponent_team_rank": 119,
+          "opponent_weight": 165,
+          "opponent_rank": 44,
+          "weight_class": "175",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "4:38",
+          "event": "The Beast of the East",
+          "mv_impact": -3.24,
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2025-12-06",
+          "opponent_id": "35284604132",
+          "opponent_career_id": "career_005128",
+          "opponent_name": "Bryce Taylor",
+          "opponent_team": "Trinity (Louisville)",
+          "opponent_team_rank": 134,
+          "opponent_weight": 157,
+          "opponent_rank": 114,
+          "weight_class": "175",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:19",
+          "event": "The Beast of the East",
+          "mv_impact": 1.95,
+          "season": 2026,
+          "opponent_ky": true
         }
       ]
     },
@@ -103,7 +103,7 @@
       "grade": 11,
       "team": "Madison Central",
       "weight_class": 157,
-      "record": "4-4",
+      "record": "5-4",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -201,24 +201,6 @@
         },
         {
           "date": "2024-12-14",
-          "opponent_id": "OUTSTATE_18bdd1256c45",
-          "opponent_career_id": null,
-          "opponent_name": "Unknown",
-          "opponent_team": "Mccreary Central",
-          "opponent_team_rank": null,
-          "opponent_weight": null,
-          "opponent_rank": null,
-          "weight_class": "157",
-          "result": "W",
-          "method": "FF",
-          "score": null,
-          "duration": "7:00",
-          "event": "vs. Mccreary Central",
-          "season": 2025,
-          "opponent_ky": false
-        },
-        {
-          "date": "2024-12-14",
           "opponent_id": "29805656132",
           "opponent_career_id": "career_000065",
           "opponent_name": "Aiden Friley",
@@ -231,7 +213,7 @@
           "method": "FALL",
           "score": null,
           "duration": "3:13",
-          "event": "vs. Madison Central",
+          "event": "vs. Ashland Blazer",
           "season": 2025,
           "opponent_ky": true
         },
@@ -249,9 +231,27 @@
           "method": "DEC",
           "score": "14-9",
           "duration": "7:00",
-          "event": "vs. Madison Central",
+          "event": "vs. Bell County",
           "season": 2025,
           "opponent_ky": true
+        },
+        {
+          "date": "2024-12-14",
+          "opponent_id": "OUTSTATE_c4763ba75fbf",
+          "opponent_career_id": null,
+          "opponent_name": "Unknown",
+          "opponent_team": "Mccreary Central",
+          "opponent_team_rank": null,
+          "opponent_weight": null,
+          "opponent_rank": null,
+          "weight_class": "157",
+          "result": "W",
+          "method": "FF",
+          "score": null,
+          "duration": "7:00",
+          "event": "vs. Mccreary Central",
+          "season": 2025,
+          "opponent_ky": false
         },
         {
           "date": "2024-12-14",
@@ -267,7 +267,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Madison Central",
+          "event": "vs. Southwestern",
           "season": 2025,
           "opponent_ky": true
         }

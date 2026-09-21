@@ -3,8 +3,8 @@
   "canonical_name": "tenner smith",
   "career_record": {
     "wins": 2,
-    "losses": 4,
-    "win_pct": 0.333
+    "losses": 6,
+    "win_pct": 0.25
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 8,
       "team": "Somerset",
       "weight_class": 132,
-      "record": "2-4",
+      "record": "2-6",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -57,24 +57,6 @@
         },
         {
           "date": "2022-01-15",
-          "opponent_id": "16755590132",
-          "opponent_career_id": "career_003005",
-          "opponent_name": "Jackson Sutton",
-          "opponent_team": "Whitley County",
-          "opponent_team_rank": null,
-          "opponent_weight": 126,
-          "opponent_rank": null,
-          "weight_class": "126",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Whitley County",
-          "season": 2022,
-          "opponent_ky": true
-        },
-        {
-          "date": "2022-01-15",
           "opponent_id": "OUTSTATE_021f644ea71a",
           "opponent_career_id": null,
           "opponent_name": "Unknown",
@@ -90,6 +72,24 @@
           "event": "vs. Perry County Central",
           "season": 2022,
           "opponent_ky": false
+        },
+        {
+          "date": "2022-01-15",
+          "opponent_id": "16755590132",
+          "opponent_career_id": "career_003005",
+          "opponent_name": "Jackson Sutton",
+          "opponent_team": "Whitley County",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Whitley County",
+          "season": 2022,
+          "opponent_ky": true
         },
         {
           "date": "2021-12-23",
@@ -159,7 +159,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Somerset",
+          "event": "vs. Mccreary Central",
           "season": 2022,
           "opponent_ky": true
         }

@@ -3,8 +3,8 @@
   "canonical_name": "Chris Stutz",
   "career_record": {
     "wins": 7,
-    "losses": 12,
-    "win_pct": 0.368
+    "losses": 13,
+    "win_pct": 0.35
   },
   "seasons": [
     {
@@ -19,6 +19,24 @@
       "state_place": null,
       "current_rank": null,
       "matches": [
+        {
+          "date": "2018-12-22",
+          "opponent_id": "5388757132",
+          "opponent_career_id": "career_010580",
+          "opponent_name": "Diontae Rone",
+          "opponent_team": "Holmes",
+          "opponent_team_rank": null,
+          "opponent_weight": 144,
+          "opponent_rank": null,
+          "weight_class": "144",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "3:06",
+          "event": "2018 NKAC",
+          "season": 2019,
+          "opponent_ky": true
+        },
         {
           "date": "2018-12-22",
           "opponent_id": "5310259132",
@@ -51,24 +69,6 @@
           "method": "DEC",
           "score": "10-8",
           "duration": "7:00",
-          "event": "2018 NKAC",
-          "season": 2019,
-          "opponent_ky": true
-        },
-        {
-          "date": "2018-12-22",
-          "opponent_id": "5388757132",
-          "opponent_career_id": "career_010580",
-          "opponent_name": "Diontae Rone",
-          "opponent_team": "Holmes",
-          "opponent_team_rank": null,
-          "opponent_weight": 144,
-          "opponent_rank": null,
-          "weight_class": "144",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "3:06",
           "event": "2018 NKAC",
           "season": 2019,
           "opponent_ky": true
@@ -201,24 +201,6 @@
         },
         {
           "date": "2018-12-08",
-          "opponent_id": "5487291132",
-          "opponent_career_id": "career_009890",
-          "opponent_name": "Domingo Mitchell",
-          "opponent_team": "Central",
-          "opponent_team_rank": null,
-          "opponent_weight": 138,
-          "opponent_rank": null,
-          "weight_class": "144",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "2:29",
-          "event": "Derby City Classic",
-          "season": 2019,
-          "opponent_ky": true
-        },
-        {
-          "date": "2018-12-08",
           "opponent_id": "5204960132",
           "opponent_career_id": null,
           "opponent_name": "Ethan Fox",
@@ -234,6 +216,24 @@
           "event": "Derby City Classic",
           "season": 2019,
           "opponent_ky": false
+        },
+        {
+          "date": "2018-12-08",
+          "opponent_id": "5487291132",
+          "opponent_career_id": "career_009890",
+          "opponent_name": "Domingo Mitchell",
+          "opponent_team": "Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 138,
+          "opponent_rank": null,
+          "weight_class": "144",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "2:31",
+          "event": "Derby City Classic",
+          "season": 2019,
+          "opponent_ky": true
         },
         {
           "date": "2018-12-08",
@@ -267,7 +267,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:40",
-          "event": "vs. Boone County",
+          "event": "vs. Bardstown",
           "season": 2019,
           "opponent_ky": true
         },
@@ -333,7 +333,7 @@
       "grade": null,
       "team": "Boone County",
       "weight_class": 144,
-      "record": "0-2",
+      "record": "0-3",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,

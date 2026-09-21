@@ -2,9 +2,9 @@
   "career_id": "career_003045",
   "canonical_name": "Landon Clark",
   "career_record": {
-    "wins": 1,
-    "losses": 0,
-    "win_pct": 1.0
+    "wins": 2,
+    "losses": 4,
+    "win_pct": 0.333
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 7,
       "team": "Apollo",
       "weight_class": 113,
-      "record": "1-0",
+      "record": "2-4",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -39,6 +39,24 @@
         },
         {
           "date": "2023-12-02",
+          "opponent_id": "OUTSTATE_3fb2dd61623b",
+          "opponent_career_id": null,
+          "opponent_name": "Chastelyn Mata Meza",
+          "opponent_team": "Owensboro",
+          "opponent_team_rank": null,
+          "opponent_weight": null,
+          "opponent_rank": null,
+          "weight_class": "JV 106",
+          "result": "L",
+          "method": "FF",
+          "score": null,
+          "duration": "7:00",
+          "event": "2023 Christian County Scramble",
+          "season": 2024,
+          "opponent_ky": false
+        },
+        {
+          "date": "2023-12-02",
           "opponent_id": "25457398132",
           "opponent_career_id": "career_003856",
           "opponent_name": "Weston Coffey",
@@ -54,6 +72,60 @@
           "event": "2023 Christian County Scramble",
           "season": 2024,
           "opponent_ky": true
+        },
+        {
+          "date": "2023-11-22",
+          "opponent_id": "25166401132",
+          "opponent_career_id": null,
+          "opponent_name": "Kaleb Parker",
+          "opponent_team": "Rossview",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:39",
+          "event": "vs. Rossview",
+          "season": 2024,
+          "opponent_ky": false
+        },
+        {
+          "date": "2023-11-22",
+          "opponent_id": "24801355132",
+          "opponent_career_id": "career_002534",
+          "opponent_name": "Caleb Evans",
+          "opponent_team": "South Warren",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:28",
+          "event": "vs. South Warren High School",
+          "season": 2024,
+          "opponent_ky": true
+        },
+        {
+          "date": "2023-11-20",
+          "opponent_id": "25306838132",
+          "opponent_career_id": null,
+          "opponent_name": "Maddox Suits",
+          "opponent_team": "Mt. Vernon",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Mt. Vernon",
+          "season": 2024,
+          "opponent_ky": false
         }
       ]
     }

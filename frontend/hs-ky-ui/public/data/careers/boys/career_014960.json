@@ -3,8 +3,8 @@
   "canonical_name": "Drew Charles",
   "career_record": {
     "wins": 1,
-    "losses": 1,
-    "win_pct": 0.5
+    "losses": 2,
+    "win_pct": 0.333
   },
   "seasons": [
     {
@@ -13,30 +13,12 @@
       "grade": null,
       "team": "Belfry",
       "weight_class": 215,
-      "record": "1-1",
+      "record": "1-2",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
-        {
-          "date": "2013-12-14",
-          "opponent_id": "2886804009",
-          "opponent_career_id": "career_015107",
-          "opponent_name": "Colton Collins",
-          "opponent_team": "Montgomery County",
-          "opponent_team_rank": null,
-          "opponent_weight": 190,
-          "opponent_rank": null,
-          "weight_class": "215",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Montgomery County",
-          "season": 2014,
-          "opponent_ky": true
-        },
         {
           "date": "2013-12-14",
           "opponent_id": "OUTSTATE_a0c25b87df30",
@@ -56,6 +38,24 @@
           "opponent_ky": false
         },
         {
+          "date": "2013-12-14",
+          "opponent_id": "2886804009",
+          "opponent_career_id": "career_015107",
+          "opponent_name": "Colton Collins",
+          "opponent_team": "Montgomery County",
+          "opponent_team_rank": null,
+          "opponent_weight": 190,
+          "opponent_rank": null,
+          "weight_class": "215",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Montgomery County",
+          "season": 2014,
+          "opponent_ky": true
+        },
+        {
           "date": "2013-12-13",
           "opponent_id": "2886340009",
           "opponent_career_id": "career_013073",
@@ -69,7 +69,7 @@
           "method": "FALL",
           "score": null,
           "duration": "2:10",
-          "event": "vs. Belfry",
+          "event": "vs. Harrison County",
           "season": 2014,
           "opponent_ky": true
         }

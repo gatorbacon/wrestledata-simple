@@ -3,8 +3,8 @@
   "canonical_name": "Justice Williams",
   "career_record": {
     "wins": 3,
-    "losses": 4,
-    "win_pct": 0.429
+    "losses": 6,
+    "win_pct": 0.333
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": null,
       "team": "Madison Southern",
       "weight_class": 190,
-      "record": "3-4",
+      "record": "3-6",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -57,24 +57,6 @@
         },
         {
           "date": "2012-12-29",
-          "opponent_id": "1480233009",
-          "opponent_career_id": "career_014893",
-          "opponent_name": "Coty Curry",
-          "opponent_team": "Woodford County",
-          "opponent_team_rank": null,
-          "opponent_weight": 175,
-          "opponent_rank": null,
-          "weight_class": "190",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "Woodford Co.",
-          "season": 2013,
-          "opponent_ky": true
-        },
-        {
-          "date": "2012-12-29",
           "opponent_id": "1251854009",
           "opponent_career_id": "career_016217",
           "opponent_name": "Charles Saling",
@@ -87,7 +69,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "Woodford County Invitational",
+          "event": "Woodford Co.",
           "season": 2013,
           "opponent_ky": true
         },
@@ -110,6 +92,24 @@
           "opponent_ky": false
         },
         {
+          "date": "2012-12-29",
+          "opponent_id": "1480233009",
+          "opponent_career_id": "career_014893",
+          "opponent_name": "Coty Curry",
+          "opponent_team": "Woodford County",
+          "opponent_team_rank": null,
+          "opponent_weight": 175,
+          "opponent_rank": null,
+          "weight_class": "190",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:37",
+          "event": "Woodford Co.",
+          "season": 2013,
+          "opponent_ky": true
+        },
+        {
           "date": "2012-11-28",
           "opponent_id": "1369124009",
           "opponent_career_id": "career_015509",
@@ -129,24 +129,6 @@
         },
         {
           "date": "2012-11-24",
-          "opponent_id": "1240033009",
-          "opponent_career_id": "career_015254",
-          "opponent_name": "Shane Tellman",
-          "opponent_team": "Bryan Station",
-          "opponent_team_rank": null,
-          "opponent_weight": 175,
-          "opponent_rank": null,
-          "weight_class": "190",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "1:17",
-          "event": "vs. Bryan Station",
-          "season": 2013,
-          "opponent_ky": true
-        },
-        {
-          "date": "2012-11-24",
           "opponent_id": "1216540009",
           "opponent_career_id": "career_015859",
           "opponent_name": "Nathan Cox",
@@ -159,7 +141,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:44",
-          "event": "vs. Madison Southern",
+          "event": "vs. Anderson County",
           "season": 2013,
           "opponent_ky": true
         },
@@ -177,7 +159,25 @@
           "method": "FALL",
           "score": null,
           "duration": "1:32",
-          "event": "vs. Madison Southern",
+          "event": "vs. Bourbon County",
+          "season": 2013,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-11-24",
+          "opponent_id": "1240033009",
+          "opponent_career_id": "career_015254",
+          "opponent_name": "Shane Tellman",
+          "opponent_team": "Bryan Station",
+          "opponent_team_rank": null,
+          "opponent_weight": 175,
+          "opponent_rank": null,
+          "weight_class": "190",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:17",
+          "event": "vs. Bryan Station",
           "season": 2013,
           "opponent_ky": true
         }

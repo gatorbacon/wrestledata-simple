@@ -3,8 +3,8 @@
   "canonical_name": "Jacob Olin",
   "career_record": {
     "wins": 1,
-    "losses": 2,
-    "win_pct": 0.333
+    "losses": 3,
+    "win_pct": 0.25
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 11,
       "team": "West Carter",
       "weight_class": 150,
-      "record": "1-2",
+      "record": "1-3",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -39,24 +39,6 @@
         },
         {
           "date": "2025-12-01",
-          "opponent_id": "35635496132",
-          "opponent_career_id": "career_001078",
-          "opponent_name": "David Craig",
-          "opponent_team": "Greenup County",
-          "opponent_team_rank": 86,
-          "opponent_weight": 138,
-          "opponent_rank": 30,
-          "weight_class": "150",
-          "result": "L",
-          "method": "TF",
-          "score": "19-4",
-          "duration": "0:00",
-          "event": "vs. West Carter",
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2025-12-01",
           "opponent_id": "35724486132",
           "opponent_career_id": "career_000769",
           "opponent_name": "Parker Fouch",
@@ -69,7 +51,25 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. West Carter",
+          "event": "vs. East Carter",
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2025-12-01",
+          "opponent_id": "35635496132",
+          "opponent_career_id": "career_001078",
+          "opponent_name": "David Craig",
+          "opponent_team": "Greenup County",
+          "opponent_team_rank": 86,
+          "opponent_weight": 138,
+          "opponent_rank": 30,
+          "weight_class": "150",
+          "result": "L",
+          "method": "TF",
+          "score": "19-4",
+          "duration": "0:00",
+          "event": "vs. Greenup County",
           "season": 2026,
           "opponent_ky": true
         },
@@ -87,7 +87,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:00",
-          "event": "vs. West Carter",
+          "event": "vs. Lawrence County",
           "season": 2026,
           "opponent_ky": true
         }

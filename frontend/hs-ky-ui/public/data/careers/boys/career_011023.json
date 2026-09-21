@@ -3,8 +3,8 @@
   "canonical_name": "Jackson Gordon",
   "career_record": {
     "wins": 5,
-    "losses": 5,
-    "win_pct": 0.5
+    "losses": 6,
+    "win_pct": 0.455
   },
   "seasons": [
     {
@@ -13,12 +13,30 @@
       "grade": 9,
       "team": "Woodford County",
       "weight_class": 120,
-      "record": "5-5",
+      "record": "5-6",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
+        {
+          "date": "2019-01-05",
+          "opponent_id": "5288203132",
+          "opponent_career_id": "career_009533",
+          "opponent_name": "Emanuel Chenault",
+          "opponent_team": "Frederick Douglass ",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "L",
+          "method": "DEC",
+          "score": "8-5",
+          "duration": "7:00",
+          "event": "Tates Creek Invitational",
+          "season": 2019,
+          "opponent_ky": true
+        },
         {
           "date": "2019-01-05",
           "opponent_id": "5072253132",
@@ -69,24 +87,6 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "Tates Creek Invitational",
-          "season": 2019,
-          "opponent_ky": true
-        },
-        {
-          "date": "2019-01-05",
-          "opponent_id": "5288203132",
-          "opponent_career_id": "career_009533",
-          "opponent_name": "Emanuel Chenault",
-          "opponent_team": "Frederick Douglass ",
-          "opponent_team_rank": null,
-          "opponent_weight": 120,
-          "opponent_rank": null,
-          "weight_class": "120",
-          "result": "L",
-          "method": "DEC",
-          "score": "8-5",
-          "duration": "7:00",
           "event": "Tates Creek Invitational",
           "season": 2019,
           "opponent_ky": true
@@ -195,7 +195,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:40",
-          "event": "vs. Woodford County",
+          "event": "vs. Conner",
           "season": 2019,
           "opponent_ky": true
         },
@@ -213,7 +213,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Woodford County",
+          "event": "vs. La Rue County",
           "season": 2019,
           "opponent_ky": false
         }

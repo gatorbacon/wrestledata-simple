@@ -3,8 +3,8 @@
   "canonical_name": "Harley Bruin",
   "career_record": {
     "wins": 2,
-    "losses": 5,
-    "win_pct": 0.286
+    "losses": 4,
+    "win_pct": 0.333
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 12,
       "team": "Harrison County",
       "weight_class": 175,
-      "record": "2-5",
+      "record": "2-4",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -93,24 +93,6 @@
         },
         {
           "date": "2014-12-06",
-          "opponent_id": "50063071",
-          "opponent_career_id": "career_013160",
-          "opponent_name": "Zack Smith",
-          "opponent_team": "Perry County Central",
-          "opponent_team_rank": null,
-          "opponent_weight": 165,
-          "opponent_rank": null,
-          "weight_class": "175",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "1:06",
-          "event": "Rumble on the Hilltop",
-          "season": 2015,
-          "opponent_ky": true
-        },
-        {
-          "date": "2014-12-06",
           "opponent_id": "-1",
           "opponent_career_id": null,
           "opponent_name": "Kelsey Smith",
@@ -126,6 +108,24 @@
           "event": "Rumble on the Hilltop",
           "season": 2015,
           "opponent_ky": false
+        },
+        {
+          "date": "2014-12-06",
+          "opponent_id": "50063071",
+          "opponent_career_id": "career_013160",
+          "opponent_name": "Zack Smith",
+          "opponent_team": "Perry County Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 165,
+          "opponent_rank": null,
+          "weight_class": "175",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:06",
+          "event": "Rumble on the Hilltop",
+          "season": 2015,
+          "opponent_ky": true
         }
       ]
     }

@@ -2,9 +2,9 @@
   "career_id": "career_004787",
   "canonical_name": "Brady Baker",
   "career_record": {
-    "wins": 3,
+    "wins": 2,
     "losses": 10,
-    "win_pct": 0.231
+    "win_pct": 0.167
   },
   "seasons": [
     {
@@ -13,30 +13,12 @@
       "grade": 9,
       "team": "Letcher County Central",
       "weight_class": 138,
-      "record": "3-10",
+      "record": "2-10",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 188,
       "matches": [
-        {
-          "date": "2026-02-21",
-          "opponent_id": "35615678132",
-          "opponent_career_id": "career_004819",
-          "opponent_name": "Caiden Hamilton",
-          "opponent_team": "Pike County Central",
-          "opponent_team_rank": 49,
-          "opponent_weight": 132,
-          "opponent_rank": 152,
-          "weight_class": "138",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:39",
-          "event": "KHSAA Boys/Coed Region 8",
-          "season": 2026,
-          "opponent_ky": true
-        },
         {
           "date": "2026-02-21",
           "opponent_id": "36642358132",
@@ -72,6 +54,24 @@
           "event": "KHSAA Boys/Coed Region 8",
           "season": 2026,
           "opponent_ky": false
+        },
+        {
+          "date": "2026-02-21",
+          "opponent_id": "35615678132",
+          "opponent_career_id": "career_004819",
+          "opponent_name": "Caiden Hamilton",
+          "opponent_team": "Pike County Central",
+          "opponent_team_rank": 49,
+          "opponent_weight": 132,
+          "opponent_rank": 152,
+          "weight_class": "138",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:39",
+          "event": "KHSAA Boys/Coed Region 8",
+          "season": 2026,
+          "opponent_ky": true
         },
         {
           "date": "2026-02-21",
@@ -112,25 +112,6 @@
         },
         {
           "date": "2026-01-10",
-          "opponent_id": "35513062132",
-          "opponent_career_id": "career_000130",
-          "opponent_name": "Jayden Tilley",
-          "opponent_team": "Belfry",
-          "opponent_team_rank": 57,
-          "opponent_weight": 126,
-          "opponent_rank": 151,
-          "weight_class": "132",
-          "result": "L",
-          "method": "MD",
-          "score": "17-4",
-          "duration": "7:00",
-          "event": "Clipson Jones Classic 2026",
-          "mv_impact": -6.88,
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2026-01-10",
           "opponent_id": "35017751132",
           "opponent_career_id": "career_000060",
           "opponent_name": "Harrison Groves",
@@ -145,6 +126,25 @@
           "duration": "1:51",
           "event": "Clipson Jones Classic 2026",
           "mv_impact": -7.07,
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2026-01-10",
+          "opponent_id": "35513062132",
+          "opponent_career_id": "career_000130",
+          "opponent_name": "Jayden Tilley",
+          "opponent_team": "Belfry",
+          "opponent_team_rank": 57,
+          "opponent_weight": 126,
+          "opponent_rank": 151,
+          "weight_class": "132",
+          "result": "L",
+          "method": "MD",
+          "score": "17-4",
+          "duration": "7:00",
+          "event": "Clipson Jones Classic 2026",
+          "mv_impact": -6.88,
           "season": 2026,
           "opponent_ky": true
         },
@@ -200,7 +200,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Letcher County Central",
+          "event": "vs. Belfry",
           "mv_impact": -5.83,
           "season": 2026,
           "opponent_ky": true
@@ -219,7 +219,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Letcher County Central",
+          "event": "vs. Harlan County",
           "mv_impact": -8.73,
           "season": 2026,
           "opponent_ky": true

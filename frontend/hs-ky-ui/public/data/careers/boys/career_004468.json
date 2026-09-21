@@ -3,8 +3,8 @@
   "canonical_name": "Wyatt Stinson",
   "career_record": {
     "wins": 3,
-    "losses": 2,
-    "win_pct": 0.6
+    "losses": 3,
+    "win_pct": 0.5
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 11,
       "team": "Wayne County",
       "weight_class": 126,
-      "record": "3-2",
+      "record": "3-3",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -69,7 +69,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:56",
-          "event": "vs. Wayne County",
+          "event": "vs. Ohio County",
           "season": 2024,
           "opponent_ky": true
         },
@@ -87,7 +87,25 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Wayne County",
+          "event": "vs. Meade County",
+          "season": 2024,
+          "opponent_ky": true
+        },
+        {
+          "date": "2023-12-20",
+          "opponent_id": "24654842132",
+          "opponent_career_id": "career_001984",
+          "opponent_name": "Aeson Springer",
+          "opponent_team": "Oldham County",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "MD",
+          "score": "18-6",
+          "duration": "7:00",
+          "event": "vs. Oldham County",
           "season": 2024,
           "opponent_ky": true
         },
@@ -108,24 +126,6 @@
           "event": "vs. Thomas Nelson",
           "season": 2024,
           "opponent_ky": false
-        },
-        {
-          "date": "2023-12-20",
-          "opponent_id": "24654842132",
-          "opponent_career_id": "career_001984",
-          "opponent_name": "Aeson Springer",
-          "opponent_team": "Oldham County",
-          "opponent_team_rank": null,
-          "opponent_weight": 126,
-          "opponent_rank": null,
-          "weight_class": "126",
-          "result": "L",
-          "method": "MD",
-          "score": "18-6",
-          "duration": "7:00",
-          "event": "vs. Wayne County",
-          "season": 2024,
-          "opponent_ky": true
         }
       ]
     }

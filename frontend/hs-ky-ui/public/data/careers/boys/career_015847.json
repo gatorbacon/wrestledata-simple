@@ -2,9 +2,9 @@
   "career_id": "career_015847",
   "canonical_name": "Tyler Sanders",
   "career_record": {
-    "wins": 0,
+    "wins": 1,
     "losses": 1,
-    "win_pct": 0.0
+    "win_pct": 0.5
   },
   "seasons": [
     {
@@ -13,12 +13,30 @@
       "grade": null,
       "team": "Southern",
       "weight_class": 150,
-      "record": "0-1",
+      "record": "1-1",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
+        {
+          "date": "2012-12-12",
+          "opponent_id": "1240924009",
+          "opponent_career_id": "career_013901",
+          "opponent_name": "Gabrielle Childress",
+          "opponent_team": "Bullitt East",
+          "opponent_team_rank": null,
+          "opponent_weight": 150,
+          "opponent_rank": null,
+          "weight_class": "150",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:03",
+          "event": "vs. Bullitt East",
+          "season": 2013,
+          "opponent_ky": true
+        },
         {
           "date": "2012-12-12",
           "opponent_id": "1291471009",
@@ -34,24 +52,6 @@
           "score": null,
           "duration": "3:53",
           "event": "vs. Fern Creek",
-          "season": 2013,
-          "opponent_ky": true
-        },
-        {
-          "date": "2012-12-12",
-          "opponent_id": "1240924009",
-          "opponent_career_id": "career_013901",
-          "opponent_name": "Gabrielle Childress",
-          "opponent_team": "Bullitt East",
-          "opponent_team_rank": null,
-          "opponent_weight": 150,
-          "opponent_rank": null,
-          "weight_class": "150",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "1:03",
-          "event": "vs. Southern",
           "season": 2013,
           "opponent_ky": true
         }

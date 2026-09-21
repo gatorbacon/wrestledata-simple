@@ -3,8 +3,8 @@
   "canonical_name": "Connor Caskey",
   "career_record": {
     "wins": 1,
-    "losses": 8,
-    "win_pct": 0.111
+    "losses": 7,
+    "win_pct": 0.125
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": null,
       "team": "Madison Central",
       "weight_class": 138,
-      "record": "1-8",
+      "record": "1-7",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -111,6 +111,24 @@
         },
         {
           "date": "2013-01-19",
+          "opponent_id": "1338249009",
+          "opponent_career_id": "career_013104",
+          "opponent_name": "Jacob Dawson",
+          "opponent_team": "Lafayette",
+          "opponent_team_rank": null,
+          "opponent_weight": 138,
+          "opponent_rank": null,
+          "weight_class": "138",
+          "result": "L",
+          "method": "DEC",
+          "score": "4-2",
+          "duration": "7:00",
+          "event": "vs. Lafayette",
+          "season": 2013,
+          "opponent_ky": true
+        },
+        {
+          "date": "2013-01-19",
           "opponent_id": "1302049009",
           "opponent_career_id": null,
           "opponent_name": "Wilson McAuley",
@@ -144,24 +162,6 @@
           "event": "vs. Paul Dunbar",
           "season": 2013,
           "opponent_ky": false
-        },
-        {
-          "date": "2013-01-19",
-          "opponent_id": "1338249009",
-          "opponent_career_id": "career_013104",
-          "opponent_name": "Jacob Dawson",
-          "opponent_team": "Lafayette",
-          "opponent_team_rank": null,
-          "opponent_weight": 138,
-          "opponent_rank": null,
-          "weight_class": "138",
-          "result": "L",
-          "method": "DEC",
-          "score": "4-2",
-          "duration": "7:00",
-          "event": "vs. Madison Central",
-          "season": 2013,
-          "opponent_ky": true
         }
       ]
     }

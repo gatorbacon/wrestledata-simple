@@ -2,9 +2,9 @@
   "career_id": "career_011440",
   "canonical_name": "Isiah Riddick",
   "career_record": {
-    "wins": 7,
-    "losses": 20,
-    "win_pct": 0.259
+    "wins": 8,
+    "losses": 23,
+    "win_pct": 0.258
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 12,
       "team": "Hopkinsville",
       "weight_class": 157,
-      "record": "3-11",
+      "record": "4-14",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -93,6 +93,24 @@
         },
         {
           "date": "2018-01-27",
+          "opponent_id": "11935404009",
+          "opponent_career_id": "career_011790",
+          "opponent_name": "Elijah Day",
+          "opponent_team": "Fort Knox",
+          "opponent_team_rank": null,
+          "opponent_weight": 157,
+          "opponent_rank": null,
+          "weight_class": "157",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:50",
+          "event": "2018 Fort Knox Invitational",
+          "season": 2018,
+          "opponent_ky": true
+        },
+        {
+          "date": "2018-01-27",
           "opponent_id": "12074339009",
           "opponent_career_id": "career_010637",
           "opponent_name": "Collin Cornish",
@@ -105,24 +123,6 @@
           "method": "FALL",
           "score": null,
           "duration": "1:46",
-          "event": "2018 Fort Knox Invitational",
-          "season": 2018,
-          "opponent_ky": true
-        },
-        {
-          "date": "2018-01-27",
-          "opponent_id": "11935404009",
-          "opponent_career_id": "career_011790",
-          "opponent_name": "Elijah Day",
-          "opponent_team": "Fort Knox",
-          "opponent_team_rank": null,
-          "opponent_weight": 157,
-          "opponent_rank": null,
-          "weight_class": "157",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
           "event": "2018 Fort Knox Invitational",
           "season": 2018,
           "opponent_ky": true
@@ -201,24 +201,6 @@
         },
         {
           "date": "2017-12-09",
-          "opponent_id": "11862097009",
-          "opponent_career_id": null,
-          "opponent_name": "Caleb Poston",
-          "opponent_team": "Houston",
-          "opponent_team_rank": null,
-          "opponent_weight": 150,
-          "opponent_rank": null,
-          "weight_class": "157",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "2:35",
-          "event": "vs. Houston",
-          "season": 2018,
-          "opponent_ky": false
-        },
-        {
-          "date": "2017-12-09",
           "opponent_id": "OUTSTATE_ec394935e8ad",
           "opponent_career_id": null,
           "opponent_name": "River Flute",
@@ -232,6 +214,24 @@
           "score": null,
           "duration": "0:00",
           "event": "vs. Marion",
+          "season": 2018,
+          "opponent_ky": false
+        },
+        {
+          "date": "2017-12-09",
+          "opponent_id": "11862097009",
+          "opponent_career_id": null,
+          "opponent_name": "Caleb Poston",
+          "opponent_team": "Houston",
+          "opponent_team_rank": null,
+          "opponent_weight": 150,
+          "opponent_rank": null,
+          "weight_class": "157",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "2:35",
+          "event": "vs. Houston",
           "season": 2018,
           "opponent_ky": false
         },
@@ -252,24 +252,6 @@
           "event": "vs. Rossview",
           "season": 2018,
           "opponent_ky": false
-        },
-        {
-          "date": "2017-12-02",
-          "opponent_id": "11591615009",
-          "opponent_career_id": "career_012027",
-          "opponent_name": "Jackson Grueber",
-          "opponent_team": "McCracken County",
-          "opponent_team_rank": null,
-          "opponent_weight": 150,
-          "opponent_rank": null,
-          "weight_class": "157",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "2017 Reitz Hill Classic",
-          "season": 2018,
-          "opponent_ky": true
         },
         {
           "date": "2017-12-02",
@@ -342,6 +324,24 @@
           "event": "2017 Reitz Hill Classic",
           "season": 2018,
           "opponent_ky": false
+        },
+        {
+          "date": "2017-12-02",
+          "opponent_id": "11591615009",
+          "opponent_career_id": "career_012027",
+          "opponent_name": "Jackson Grueber",
+          "opponent_team": "McCracken County",
+          "opponent_team_rank": null,
+          "opponent_weight": 150,
+          "opponent_rank": null,
+          "weight_class": "157",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "2017 Reitz Hill Classic",
+          "season": 2018,
+          "opponent_ky": true
         }
       ]
     },
@@ -425,7 +425,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:31",
-          "event": "vs. Hopkinsville",
+          "event": "vs. Daviess County",
           "season": 2017,
           "opponent_ky": true
         },

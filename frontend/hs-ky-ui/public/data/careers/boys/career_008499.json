@@ -2,9 +2,9 @@
   "career_id": "career_008499",
   "canonical_name": "Konner Atwood",
   "career_record": {
-    "wins": 6,
+    "wins": 5,
     "losses": 7,
-    "win_pct": 0.462
+    "win_pct": 0.417
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 11,
       "team": "John Hardin",
       "weight_class": 138,
-      "record": "6-7",
+      "record": "5-7",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -33,7 +33,7 @@
           "method": "FALL",
           "score": null,
           "duration": "3:26",
-          "event": "vs. John Hardin",
+          "event": "vs. Fort Knox",
           "season": 2022,
           "opponent_ky": true
         },
@@ -51,7 +51,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:57",
-          "event": "vs. John Hardin",
+          "event": "vs. Central Hardin",
           "season": 2022,
           "opponent_ky": true
         },
@@ -111,24 +111,6 @@
         },
         {
           "date": "2021-12-16",
-          "opponent_id": "16726294132",
-          "opponent_career_id": "career_008404",
-          "opponent_name": "Carson Hendrix",
-          "opponent_team": "Daviess County",
-          "opponent_team_rank": null,
-          "opponent_weight": 126,
-          "opponent_rank": null,
-          "weight_class": "132",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:41",
-          "event": "vs. John Hardin",
-          "season": 2022,
-          "opponent_ky": true
-        },
-        {
-          "date": "2021-12-16",
           "opponent_id": "17152632132",
           "opponent_career_id": "career_007716",
           "opponent_name": "Riley Johnson",
@@ -141,7 +123,25 @@
           "method": "FALL",
           "score": null,
           "duration": "1:29",
-          "event": "vs. John Hardin",
+          "event": "vs. Caldwell County",
+          "season": 2022,
+          "opponent_ky": true
+        },
+        {
+          "date": "2021-12-16",
+          "opponent_id": "16726294132",
+          "opponent_career_id": "career_008404",
+          "opponent_name": "Carson Hendrix",
+          "opponent_team": "Daviess County",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "132",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:41",
+          "event": "vs. Daviess County",
           "season": 2022,
           "opponent_ky": true
         },
@@ -183,21 +183,21 @@
         },
         {
           "date": "2021-12-04",
-          "opponent_id": "16839957132",
-          "opponent_career_id": "career_007510",
-          "opponent_name": "Hunter Mosley",
-          "opponent_team": "Warren Central HIgh School",
+          "opponent_id": "OUTSTATE_fa3b9ed3be03",
+          "opponent_career_id": null,
+          "opponent_name": "Unknown",
+          "opponent_team": "McCracken County",
           "opponent_team_rank": null,
-          "opponent_weight": 126,
+          "opponent_weight": null,
           "opponent_rank": null,
-          "weight_class": "132",
+          "weight_class": "138",
           "result": "W",
-          "method": "DEC",
-          "score": "10-8",
+          "method": "FF",
+          "score": null,
           "duration": "7:00",
-          "event": "vs. Warren Central HIgh School",
+          "event": "vs. McCracken County",
           "season": 2022,
-          "opponent_ky": true
+          "opponent_ky": false
         },
         {
           "date": "2021-12-04",
@@ -219,21 +219,21 @@
         },
         {
           "date": "2021-12-04",
-          "opponent_id": "OUTSTATE_fa3b9ed3be03",
-          "opponent_career_id": null,
-          "opponent_name": "Unknown",
-          "opponent_team": "McCracken County",
+          "opponent_id": "16839957132",
+          "opponent_career_id": "career_007510",
+          "opponent_name": "Hunter Mosley",
+          "opponent_team": "Warren Central HIgh School",
           "opponent_team_rank": null,
-          "opponent_weight": null,
+          "opponent_weight": 126,
           "opponent_rank": null,
-          "weight_class": "138",
+          "weight_class": "132",
           "result": "W",
-          "method": "FF",
-          "score": null,
+          "method": "DEC",
+          "score": "10-8",
           "duration": "7:00",
-          "event": "vs. McCracken County",
+          "event": "vs. Warren Central HIgh School",
           "season": 2022,
-          "opponent_ky": false
+          "opponent_ky": true
         }
       ]
     }

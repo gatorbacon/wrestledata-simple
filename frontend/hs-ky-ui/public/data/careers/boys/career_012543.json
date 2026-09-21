@@ -2,9 +2,9 @@
   "career_id": "career_012543",
   "canonical_name": "Zachary Martin",
   "career_record": {
-    "wins": 5,
-    "losses": 7,
-    "win_pct": 0.417
+    "wins": 4,
+    "losses": 10,
+    "win_pct": 0.286
   },
   "seasons": [
     {
@@ -13,12 +13,30 @@
       "grade": 9,
       "team": "Taylor County",
       "weight_class": 157,
-      "record": "4-3",
+      "record": "3-6",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
+        {
+          "date": "2016-12-14",
+          "opponent_id": "872237076",
+          "opponent_career_id": "career_011999",
+          "opponent_name": "Trever Nelsen",
+          "opponent_team": "John Hardin",
+          "opponent_team_rank": null,
+          "opponent_weight": 165,
+          "opponent_rank": null,
+          "weight_class": "165",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:15",
+          "event": "vs. John Hardin",
+          "season": 2017,
+          "opponent_ky": true
+        },
         {
           "date": "2016-12-14",
           "opponent_id": "OUTSTATE_f168e9c3cbeb",
@@ -36,24 +54,6 @@
           "event": "vs. Fort Knox",
           "season": 2017,
           "opponent_ky": false
-        },
-        {
-          "date": "2016-12-14",
-          "opponent_id": "872237076",
-          "opponent_career_id": "career_011999",
-          "opponent_name": "Trever Nelsen",
-          "opponent_team": "John Hardin",
-          "opponent_team_rank": null,
-          "opponent_weight": 165,
-          "opponent_rank": null,
-          "weight_class": "165",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "1:15",
-          "event": "vs. Taylor County",
-          "season": 2017,
-          "opponent_ky": true
         },
         {
           "date": "2016-12-14",
@@ -87,7 +87,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:44",
-          "event": "vs. Taylor County",
+          "event": "vs. Apollo",
           "season": 2017,
           "opponent_ky": true
         },
@@ -105,7 +105,7 @@
           "method": "FALL",
           "score": null,
           "duration": "3:28",
-          "event": "vs. Taylor County",
+          "event": "vs. Central Hardin",
           "season": 2017,
           "opponent_ky": true
         },
@@ -123,7 +123,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:11",
-          "event": "vs. Taylor County",
+          "event": "vs. John Hardin",
           "season": 2017,
           "opponent_ky": true
         },
@@ -141,7 +141,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Taylor County",
+          "event": "vs. Oldham County",
           "season": 2017,
           "opponent_ky": true
         },
@@ -159,7 +159,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:30",
-          "event": "vs. Taylor County",
+          "event": "vs. South Oldham",
           "season": 2017,
           "opponent_ky": true
         },
@@ -177,7 +177,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Taylor County",
+          "event": "vs. La Rue County",
           "season": 2017,
           "opponent_ky": false
         }
@@ -209,25 +209,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:47",
-          "event": "vs. Taylor County",
-          "season": 2016,
-          "opponent_ky": true
-        },
-        {
-          "date": "2015-12-05",
-          "opponent_id": "286098013",
-          "opponent_career_id": "career_010650",
-          "opponent_name": "Myles Nelson",
-          "opponent_team": "North Hardin",
-          "opponent_team_rank": null,
-          "opponent_weight": 144,
-          "opponent_rank": null,
-          "weight_class": "150",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:33",
-          "event": "vs. North Hardin",
+          "event": "vs. Central Hardin",
           "season": 2016,
           "opponent_ky": true
         },
@@ -245,7 +227,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:30",
-          "event": "vs. Taylor County",
+          "event": "vs. Oldham County",
           "season": 2016,
           "opponent_ky": true
         },
@@ -284,6 +266,24 @@
           "event": "vs. John Hardin",
           "season": 2016,
           "opponent_ky": false
+        },
+        {
+          "date": "2015-12-05",
+          "opponent_id": "286098013",
+          "opponent_career_id": "career_010650",
+          "opponent_name": "Myles Nelson",
+          "opponent_team": "North Hardin",
+          "opponent_team_rank": null,
+          "opponent_weight": 144,
+          "opponent_rank": null,
+          "weight_class": "150",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:33",
+          "event": "vs. North Hardin",
+          "season": 2016,
+          "opponent_ky": true
         }
       ]
     }

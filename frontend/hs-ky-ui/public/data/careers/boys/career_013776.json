@@ -3,8 +3,8 @@
   "canonical_name": "Brandon Hardesty",
   "career_record": {
     "wins": 10,
-    "losses": 6,
-    "win_pct": 0.625
+    "losses": 5,
+    "win_pct": 0.667
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 10,
       "team": "Pleasure Ridge Park",
       "weight_class": 165,
-      "record": "10-6",
+      "record": "10-5",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -165,6 +165,24 @@
         },
         {
           "date": "2016-01-02",
+          "opponent_id": "352393094",
+          "opponent_career_id": "career_012638",
+          "opponent_name": "Ian Wade",
+          "opponent_team": "St. Xavier",
+          "opponent_team_rank": null,
+          "opponent_weight": 165,
+          "opponent_rank": null,
+          "weight_class": "165",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "2:17",
+          "event": "Valley Invitational",
+          "season": 2016,
+          "opponent_ky": true
+        },
+        {
+          "date": "2016-01-02",
           "opponent_id": "427880076",
           "opponent_career_id": null,
           "opponent_name": "Humberto Pulido",
@@ -183,24 +201,6 @@
         },
         {
           "date": "2015-12-05",
-          "opponent_id": "320087107",
-          "opponent_career_id": "career_012357",
-          "opponent_name": "Devin Bradley",
-          "opponent_team": "St. Xavier",
-          "opponent_team_rank": null,
-          "opponent_weight": 157,
-          "opponent_rank": null,
-          "weight_class": "165",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "1:38",
-          "event": "vs. St. Xavier",
-          "season": 2016,
-          "opponent_ky": true
-        },
-        {
-          "date": "2015-12-05",
           "opponent_id": "310776107",
           "opponent_career_id": "career_013045",
           "opponent_name": "James Wharton",
@@ -213,7 +213,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:18",
-          "event": "vs. Pleasure Ridge Park",
+          "event": "vs. Doss",
           "season": 2016,
           "opponent_ky": true
         },
@@ -252,6 +252,24 @@
           "event": "vs. Bullitt Central",
           "season": 2016,
           "opponent_ky": false
+        },
+        {
+          "date": "2015-12-05",
+          "opponent_id": "320087107",
+          "opponent_career_id": "career_012357",
+          "opponent_name": "Devin Bradley",
+          "opponent_team": "St. Xavier",
+          "opponent_team_rank": null,
+          "opponent_weight": 157,
+          "opponent_rank": null,
+          "weight_class": "165",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:38",
+          "event": "vs. St. Xavier",
+          "season": 2016,
+          "opponent_ky": true
         },
         {
           "date": "2015-12-05",

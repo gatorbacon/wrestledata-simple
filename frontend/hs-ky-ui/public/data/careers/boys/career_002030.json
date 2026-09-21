@@ -2,9 +2,9 @@
   "career_id": "career_002030",
   "canonical_name": "Isaac Mattingly",
   "career_record": {
-    "wins": 16,
-    "losses": 16,
-    "win_pct": 0.5
+    "wins": 17,
+    "losses": 19,
+    "win_pct": 0.472
   },
   "seasons": [
     {
@@ -21,25 +21,6 @@
       "matches": [
         {
           "date": "2025-12-13",
-          "opponent_id": "35180955132",
-          "opponent_career_id": "career_000639",
-          "opponent_name": "Bryston Caldwell",
-          "opponent_team": "Danville",
-          "opponent_team_rank": 68,
-          "opponent_weight": 190,
-          "opponent_rank": 61,
-          "weight_class": "215",
-          "result": "L",
-          "method": "MD",
-          "score": "11-3",
-          "duration": "7:00",
-          "event": "vs. Owensboro",
-          "mv_impact": -2.59,
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2025-12-13",
           "opponent_id": "35207531132",
           "opponent_career_id": "career_004609",
           "opponent_name": "Joseph Chapman",
@@ -52,8 +33,27 @@
           "method": "FALL",
           "score": null,
           "duration": "3:54",
-          "event": "vs. Owensboro",
+          "event": "vs. Adair County",
           "mv_impact": 3.72,
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2025-12-13",
+          "opponent_id": "35180955132",
+          "opponent_career_id": "career_000639",
+          "opponent_name": "Bryston Caldwell",
+          "opponent_team": "Danville",
+          "opponent_team_rank": 68,
+          "opponent_weight": 190,
+          "opponent_rank": 61,
+          "weight_class": "215",
+          "result": "L",
+          "method": "MD",
+          "score": "11-3",
+          "duration": "7:00",
+          "event": "vs. Danville",
+          "mv_impact": -2.59,
           "season": 2026,
           "opponent_ky": true
         },
@@ -71,7 +71,7 @@
           "method": "INJ",
           "score": null,
           "duration": "7:00",
-          "event": "vs. Owensboro",
+          "event": "vs. North Hardin",
           "mv_impact": -2.62,
           "season": 2026,
           "opponent_ky": true
@@ -122,7 +122,7 @@
       "grade": 10,
       "team": "Owensboro",
       "weight_class": 190,
-      "record": "12-9",
+      "record": "13-12",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -214,7 +214,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Owensboro",
+          "event": "vs. Apollo",
           "season": 2025,
           "opponent_ky": true
         },
@@ -232,7 +232,7 @@
           "method": "FALL",
           "score": null,
           "duration": "3:17",
-          "event": "vs. Owensboro",
+          "event": "vs. Ohio County",
           "season": 2025,
           "opponent_ky": true
         },
@@ -268,7 +268,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Owensboro",
+          "event": "vs. Apollo",
           "season": 2025,
           "opponent_ky": true
         },
@@ -286,7 +286,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Owensboro",
+          "event": "vs. Fort Campbell",
           "season": 2025,
           "opponent_ky": true
         },
@@ -304,7 +304,7 @@
           "method": "TF",
           "score": "18-1",
           "duration": "0:00",
-          "event": "vs. Owensboro",
+          "event": "vs. Henderson County",
           "season": 2025,
           "opponent_ky": true
         },
@@ -322,7 +322,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Owensboro",
+          "event": "vs. Apollo",
           "season": 2025,
           "opponent_ky": true
         },
@@ -340,7 +340,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Owensboro",
+          "event": "vs. Daviess County",
           "season": 2025,
           "opponent_ky": true
         },
@@ -376,13 +376,13 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Owensboro",
+          "event": "vs. Bardstown",
           "season": 2025,
           "opponent_ky": true
         },
         {
           "date": "2025-01-03",
-          "opponent_id": "OUTSTATE_18bdd1256c45",
+          "opponent_id": "OUTSTATE_28470c03fea2",
           "opponent_career_id": null,
           "opponent_name": "Unknown",
           "opponent_team": "Trinity",
@@ -395,6 +395,24 @@
           "score": null,
           "duration": "7:00",
           "event": "vs. Trinity (Whitesville)",
+          "season": 2025,
+          "opponent_ky": false
+        },
+        {
+          "date": "2025-01-03",
+          "opponent_id": "OUTSTATE_21b4a79b024a",
+          "opponent_career_id": null,
+          "opponent_name": "Unknown",
+          "opponent_team": "Bethlehem",
+          "opponent_team_rank": null,
+          "opponent_weight": null,
+          "opponent_rank": null,
+          "weight_class": "190",
+          "result": "W",
+          "method": "FF",
+          "score": null,
+          "duration": "7:00",
+          "event": "vs. Bethlehem",
           "season": 2025,
           "opponent_ky": false
         },
@@ -417,8 +435,26 @@
           "opponent_ky": true
         },
         {
+          "date": "2025-01-03",
+          "opponent_id": "OUTSTATE_f168e9c3cbeb",
+          "opponent_career_id": null,
+          "opponent_name": "Unknown",
+          "opponent_team": "Fort Knox",
+          "opponent_team_rank": null,
+          "opponent_weight": null,
+          "opponent_rank": null,
+          "weight_class": "190",
+          "result": "W",
+          "method": "FF",
+          "score": null,
+          "duration": "7:00",
+          "event": "vs. Fort Knox",
+          "season": 2025,
+          "opponent_ky": false
+        },
+        {
           "date": "2024-12-21",
-          "opponent_id": "OUTSTATE_18bdd1256c45",
+          "opponent_id": "OUTSTATE_d15a1656df7c",
           "opponent_career_id": null,
           "opponent_name": "Unknown",
           "opponent_team": "Caldwell County",
@@ -448,7 +484,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Owensboro",
+          "event": "vs. Apollo",
           "season": 2025,
           "opponent_ky": true
         },
@@ -466,7 +502,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Owensboro",
+          "event": "vs. Daviess County",
           "season": 2025,
           "opponent_ky": true
         },
@@ -484,7 +520,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Owensboro",
+          "event": "vs. Apollo",
           "season": 2025,
           "opponent_ky": true
         },
@@ -502,7 +538,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Owensboro",
+          "event": "vs. North Hardin",
           "season": 2025,
           "opponent_ky": true
         },
@@ -510,8 +546,8 @@
           "date": "2024-11-30",
           "opponent_id": "OUTSTATE_ca72e99cd1e5",
           "opponent_career_id": null,
-          "opponent_name": "Unknown",
-          "opponent_team": "Unknown",
+          "opponent_name": "Kingston Russell",
+          "opponent_team": "Evansville F.j. Reitz",
           "opponent_team_rank": null,
           "opponent_weight": null,
           "opponent_rank": null,
@@ -526,7 +562,7 @@
         },
         {
           "date": "2024-11-30",
-          "opponent_id": "OUTSTATE_18bdd1256c45",
+          "opponent_id": "OUTSTATE_1650348d12fa",
           "opponent_career_id": null,
           "opponent_name": "Unknown",
           "opponent_team": "Southridge",
@@ -588,7 +624,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Owensboro",
+          "event": "vs. Henderson County",
           "season": 2024,
           "opponent_ky": true
         },
@@ -606,7 +642,7 @@
           "method": "FALL",
           "score": null,
           "duration": "3:00",
-          "event": "vs. Owensboro",
+          "event": "vs. Hopkinsville",
           "season": 2024,
           "opponent_ky": true
         },

@@ -3,8 +3,8 @@
   "canonical_name": "Kobe Dye",
   "career_record": {
     "wins": 4,
-    "losses": 6,
-    "win_pct": 0.4
+    "losses": 7,
+    "win_pct": 0.364
   },
   "seasons": [
     {
@@ -13,30 +13,12 @@
       "grade": 11,
       "team": "Fort Knox",
       "weight_class": 126,
-      "record": "4-6",
+      "record": "4-7",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
-        {
-          "date": "2021-12-21",
-          "opponent_id": "17197583132",
-          "opponent_career_id": "career_000465",
-          "opponent_name": "Derrick Johnson",
-          "opponent_team": "Central Hardin",
-          "opponent_team_rank": null,
-          "opponent_weight": 120,
-          "opponent_rank": null,
-          "weight_class": "126",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:27",
-          "event": "vs. Fort Knox",
-          "season": 2022,
-          "opponent_ky": true
-        },
         {
           "date": "2021-12-21",
           "opponent_id": "17112942132",
@@ -51,7 +33,25 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Fort Knox",
+          "event": "vs. Central",
+          "season": 2022,
+          "opponent_ky": true
+        },
+        {
+          "date": "2021-12-21",
+          "opponent_id": "17197583132",
+          "opponent_career_id": "career_000465",
+          "opponent_name": "Derrick Johnson",
+          "opponent_team": "Central Hardin",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:27",
+          "event": "vs. Central Hardin",
           "season": 2022,
           "opponent_ky": true
         },
@@ -123,7 +123,7 @@
           "method": "INJ",
           "score": null,
           "duration": "7:00",
-          "event": "vs. Fort Knox",
+          "event": "vs. Nelson County",
           "season": 2022,
           "opponent_ky": true
         },

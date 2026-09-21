@@ -3,8 +3,8 @@
   "canonical_name": "Carter Casson",
   "career_record": {
     "wins": 13,
-    "losses": 13,
-    "win_pct": 0.5
+    "losses": 12,
+    "win_pct": 0.52
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 9,
       "team": "Ryle",
       "weight_class": 144,
-      "record": "13-13",
+      "record": "13-12",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -40,7 +40,7 @@
         {
           "date": "2026-02-14",
           "opponent_id": "35135165132",
-          "opponent_career_id": null,
+          "opponent_career_id": "career_000834",
           "opponent_name": "Brayden Mullins",
           "opponent_team": "Fairdale",
           "opponent_team_rank": 24,
@@ -123,7 +123,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Ryle",
+          "event": "vs. Covington Catholic",
           "season": 2026,
           "opponent_ky": true
         },
@@ -255,24 +255,6 @@
         },
         {
           "date": "2026-01-03",
-          "opponent_id": "OUTSTATE_861ee94d4118",
-          "opponent_career_id": null,
-          "opponent_name": "JACK WILLIAMS",
-          "opponent_team": "Carroll High School",
-          "opponent_team_rank": null,
-          "opponent_weight": 144,
-          "opponent_rank": null,
-          "weight_class": "144",
-          "result": "W",
-          "method": "DEC",
-          "score": "8-1",
-          "duration": "7:00",
-          "event": "Valley View",
-          "season": 2026,
-          "opponent_ky": false
-        },
-        {
-          "date": "2026-01-03",
           "opponent_id": "OUTSTATE_97ce5489efe7",
           "opponent_career_id": null,
           "opponent_name": "CALEB DUNN",
@@ -303,6 +285,24 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
+          "event": "Valley View",
+          "season": 2026,
+          "opponent_ky": false
+        },
+        {
+          "date": "2026-01-03",
+          "opponent_id": "OUTSTATE_861ee94d4118",
+          "opponent_career_id": null,
+          "opponent_name": "JACK WILLIAMS",
+          "opponent_team": "Carroll High School",
+          "opponent_team_rank": null,
+          "opponent_weight": 144,
+          "opponent_rank": null,
+          "weight_class": "144",
+          "result": "W",
+          "method": "DEC",
+          "score": "8-1",
+          "duration": "7:00",
           "event": "Valley View",
           "season": 2026,
           "opponent_ky": false
@@ -435,24 +435,6 @@
         },
         {
           "date": "2025-12-12",
-          "opponent_id": "35271612132",
-          "opponent_career_id": "career_002458",
-          "opponent_name": "Haelan Robles",
-          "opponent_team": "Simon Kenton",
-          "opponent_team_rank": 35,
-          "opponent_weight": 138,
-          "opponent_rank": 43,
-          "weight_class": "144",
-          "result": "L",
-          "method": "DEC",
-          "score": "10-3",
-          "duration": "7:00",
-          "event": "2025 JV Ryle Raider Rumble",
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2025-12-12",
           "opponent_id": "OUTSTATE_b88f146a8c28",
           "opponent_career_id": null,
           "opponent_name": "Carter Lindsley",
@@ -468,6 +450,24 @@
           "event": "2025 JV Ryle Raider Rumble",
           "season": 2026,
           "opponent_ky": false
+        },
+        {
+          "date": "2025-12-12",
+          "opponent_id": "35271612132",
+          "opponent_career_id": "career_002458",
+          "opponent_name": "Haelan Robles",
+          "opponent_team": "Simon Kenton",
+          "opponent_team_rank": 35,
+          "opponent_weight": 138,
+          "opponent_rank": 43,
+          "weight_class": "144",
+          "result": "L",
+          "method": "DEC",
+          "score": "10-3",
+          "duration": "7:00",
+          "event": "2025 JV Ryle Raider Rumble",
+          "season": 2026,
+          "opponent_ky": true
         }
       ]
     }

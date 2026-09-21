@@ -2,9 +2,9 @@
   "career_id": "career_004940",
   "canonical_name": "Izayah Mason",
   "career_record": {
-    "wins": 2,
-    "losses": 8,
-    "win_pct": 0.2
+    "wins": 3,
+    "losses": 9,
+    "win_pct": 0.25
   },
   "seasons": [
     {
@@ -13,30 +13,12 @@
       "grade": 11,
       "team": "Bryan Station",
       "weight_class": 285,
-      "record": "2-8",
+      "record": "3-9",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 176,
       "matches": [
-        {
-          "date": "2026-02-12",
-          "opponent_id": "35081203132",
-          "opponent_career_id": "career_001215",
-          "opponent_name": "Jackson Kincer",
-          "opponent_team": "Henry Clay",
-          "opponent_team_rank": 25,
-          "opponent_weight": 215,
-          "opponent_rank": 22,
-          "weight_class": "285",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "Lexington City Tournament",
-          "season": 2026,
-          "opponent_ky": true
-        },
         {
           "date": "2026-02-12",
           "opponent_id": "35402555132",
@@ -48,6 +30,24 @@
           "opponent_rank": 87,
           "weight_class": "285",
           "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "Lexington City Tournament",
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2026-02-12",
+          "opponent_id": "35081203132",
+          "opponent_career_id": "career_001215",
+          "opponent_name": "Jackson Kincer",
+          "opponent_team": "Henry Clay",
+          "opponent_team_rank": 25,
+          "opponent_weight": 215,
+          "opponent_rank": 22,
+          "weight_class": "285",
+          "result": "L",
           "method": "FALL",
           "score": null,
           "duration": "0:00",
@@ -150,7 +150,7 @@
         {
           "date": "2025-12-23",
           "opponent_id": "36098205132",
-          "opponent_career_id": null,
+          "opponent_career_id": "career_000232",
           "opponent_name": "cam caudill",
           "opponent_team": "Bourbon County",
           "opponent_team_rank": 61,
@@ -235,7 +235,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Bryan Station",
+          "event": "vs. Bell County",
           "mv_impact": -5.01,
           "season": 2026,
           "opponent_ky": true

@@ -3,8 +3,8 @@
   "canonical_name": "Waylon Hall",
   "career_record": {
     "wins": 8,
-    "losses": 23,
-    "win_pct": 0.258
+    "losses": 22,
+    "win_pct": 0.267
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 9,
       "team": "Greenup County",
       "weight_class": 113,
-      "record": "8-23",
+      "record": "8-22",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -69,7 +69,7 @@
           "method": "TF",
           "score": "20-3",
           "duration": "0:00",
-          "event": "vs. Greenup County",
+          "event": "vs. Boyd County",
           "season": 2026,
           "opponent_ky": true
         },
@@ -184,7 +184,7 @@
         {
           "date": "2026-01-10",
           "opponent_id": "35750783132",
-          "opponent_career_id": null,
+          "opponent_career_id": "career_004178",
           "opponent_name": "Christian Piedad",
           "opponent_team": "Johnson Central",
           "opponent_team_rank": 2,
@@ -303,7 +303,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Greenup County",
+          "event": "vs. East Carter",
           "season": 2026,
           "opponent_ky": true
         },
@@ -519,25 +519,7 @@
           "method": "DEC",
           "score": "13-9",
           "duration": "7:00",
-          "event": "vs. Greenup County",
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2025-12-01",
-          "opponent_id": "35772088132",
-          "opponent_career_id": "career_005755",
-          "opponent_name": "Tabitha McGuire",
-          "opponent_team": "West Carter",
-          "opponent_team_rank": 138,
-          "opponent_weight": 106,
-          "opponent_rank": 123,
-          "weight_class": "106",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. West Carter",
+          "event": "vs. East Carter",
           "season": 2026,
           "opponent_ky": true
         },
@@ -558,6 +540,24 @@
           "event": "vs. Lawrence County",
           "season": 2026,
           "opponent_ky": false
+        },
+        {
+          "date": "2025-12-01",
+          "opponent_id": "35772088132",
+          "opponent_career_id": "career_005755",
+          "opponent_name": "Tabitha McGuire",
+          "opponent_team": "West Carter",
+          "opponent_team_rank": 138,
+          "opponent_weight": 106,
+          "opponent_rank": 123,
+          "weight_class": "106",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. West Carter",
+          "season": 2026,
+          "opponent_ky": true
         }
       ]
     }

@@ -2,9 +2,9 @@
   "career_id": "career_005418",
   "canonical_name": "Cooper Jobe",
   "career_record": {
-    "wins": 1,
+    "wins": 2,
     "losses": 1,
-    "win_pct": 0.5
+    "win_pct": 0.667
   },
   "seasons": [
     {
@@ -13,31 +13,12 @@
       "grade": 8,
       "team": "Greenup County",
       "weight_class": 157,
-      "record": "1-1",
+      "record": "2-1",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 86,
       "matches": [
-        {
-          "date": "2025-12-01",
-          "opponent_id": "35752575132",
-          "opponent_career_id": "career_001441",
-          "opponent_name": "Jordan Baker",
-          "opponent_team": "Lawrence County",
-          "opponent_team_rank": 100,
-          "opponent_weight": 150,
-          "opponent_rank": 255,
-          "weight_class": "157",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Greenup County",
-          "mv_impact": 0.97,
-          "season": 2026,
-          "opponent_ky": true
-        },
         {
           "date": "2025-12-01",
           "opponent_id": "35724490132",
@@ -52,7 +33,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Greenup County",
+          "event": "vs. East Carter",
           "mv_impact": 1.97,
           "season": 2026,
           "opponent_ky": true
@@ -73,6 +54,25 @@
           "duration": "0:00",
           "event": "vs. West Carter",
           "mv_impact": -7.71,
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2025-12-01",
+          "opponent_id": "35752575132",
+          "opponent_career_id": "career_001441",
+          "opponent_name": "Jordan Baker",
+          "opponent_team": "Lawrence County",
+          "opponent_team_rank": 100,
+          "opponent_weight": 150,
+          "opponent_rank": 255,
+          "weight_class": "157",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Lawrence County",
+          "mv_impact": 0.97,
           "season": 2026,
           "opponent_ky": true
         }

@@ -3,8 +3,8 @@
   "canonical_name": "Richard Willouby",
   "career_record": {
     "wins": 3,
-    "losses": 23,
-    "win_pct": 0.115
+    "losses": 33,
+    "win_pct": 0.083
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": null,
       "team": "Madison Southern",
       "weight_class": 144,
-      "record": "3-20",
+      "record": "3-23",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -33,7 +33,7 @@
           "method": "FALL",
           "score": null,
           "duration": "7:54",
-          "event": "KHSAA Region 7",
+          "event": "REGIONALS",
           "season": 2014,
           "opponent_ky": true
         },
@@ -87,7 +87,7 @@
           "method": "DEC",
           "score": "16-9",
           "duration": "7:00",
-          "event": "Western Hills Invitational",
+          "event": "Wolverine Invitational",
           "season": 2014,
           "opponent_ky": true
         },
@@ -123,7 +123,7 @@
           "method": "TF",
           "score": "18-2",
           "duration": "0:00",
-          "event": "vs. Madison Southern",
+          "event": "vs. Madison Central",
           "season": 2014,
           "opponent_ky": true
         },
@@ -159,7 +159,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:43",
-          "event": "vs. Madison Southern",
+          "event": "vs. Wayne County",
           "season": 2014,
           "opponent_ky": true
         },
@@ -177,7 +177,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:26",
-          "event": "vs. Madison Southern",
+          "event": "vs. Bryan Station",
           "season": 2014,
           "opponent_ky": true
         },
@@ -219,24 +219,6 @@
         },
         {
           "date": "2014-01-04",
-          "opponent_id": "2887442009",
-          "opponent_career_id": "career_015166",
-          "opponent_name": "Ethan Newton",
-          "opponent_team": "Tates Creek",
-          "opponent_team_rank": null,
-          "opponent_weight": 132,
-          "opponent_rank": null,
-          "weight_class": "144",
-          "result": "W",
-          "method": "DEC",
-          "score": "11-5",
-          "duration": "7:00",
-          "event": "TCI",
-          "season": 2014,
-          "opponent_ky": true
-        },
-        {
-          "date": "2014-01-04",
           "opponent_id": "2885568009",
           "opponent_career_id": "career_013885",
           "opponent_name": "Alex Wright",
@@ -249,7 +231,7 @@
           "method": "FALL",
           "score": null,
           "duration": "3:06",
-          "event": "Tates Creek Invitational",
+          "event": "TCI",
           "season": 2014,
           "opponent_ky": true
         },
@@ -308,6 +290,24 @@
           "opponent_ky": false
         },
         {
+          "date": "2014-01-04",
+          "opponent_id": "2887442009",
+          "opponent_career_id": "career_015166",
+          "opponent_name": "Ethan Newton",
+          "opponent_team": "Tates Creek",
+          "opponent_team_rank": null,
+          "opponent_weight": 132,
+          "opponent_rank": null,
+          "weight_class": "144",
+          "result": "W",
+          "method": "DEC",
+          "score": "11-5",
+          "duration": "7:00",
+          "event": "TCI",
+          "season": 2014,
+          "opponent_ky": true
+        },
+        {
           "date": "2013-12-28",
           "opponent_id": "2886328009",
           "opponent_career_id": "career_013980",
@@ -321,7 +321,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:22",
-          "event": "WCI",
+          "event": "Woodford Co Invitational",
           "season": 2014,
           "opponent_ky": true
         },
@@ -357,7 +357,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:28",
-          "event": "Rumble on the Hilltop",
+          "event": "Rumble On Hilltop",
           "season": 2014,
           "opponent_ky": true
         },
@@ -394,24 +394,6 @@
           "score": null,
           "duration": "0:00",
           "event": "Rumble On Hilltop",
-          "season": 2014,
-          "opponent_ky": true
-        },
-        {
-          "date": "2013-11-30",
-          "opponent_id": "2887722009",
-          "opponent_career_id": "career_014808",
-          "opponent_name": "Hunter Berry",
-          "opponent_team": "Woodford County",
-          "opponent_team_rank": null,
-          "opponent_weight": 132,
-          "opponent_rank": null,
-          "weight_class": "144",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "1:10",
-          "event": "vs. Madison Southern",
           "season": 2014,
           "opponent_ky": true
         },
@@ -486,6 +468,24 @@
           "event": "vs. Spencer County",
           "season": 2014,
           "opponent_ky": true
+        },
+        {
+          "date": "2013-11-30",
+          "opponent_id": "2887722009",
+          "opponent_career_id": "career_014808",
+          "opponent_name": "Hunter Berry",
+          "opponent_team": "Woodford County",
+          "opponent_team_rank": null,
+          "opponent_weight": 132,
+          "opponent_rank": null,
+          "weight_class": "144",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:10",
+          "event": "vs. Woodford County",
+          "season": 2014,
+          "opponent_ky": true
         }
       ]
     },
@@ -495,7 +495,7 @@
       "grade": null,
       "team": "Madison Southern",
       "weight_class": 132,
-      "record": "0-3",
+      "record": "0-10",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -521,6 +521,24 @@
         },
         {
           "date": "2013-01-26",
+          "opponent_id": "1236115009",
+          "opponent_career_id": "career_014963",
+          "opponent_name": "Terrell Roberts",
+          "opponent_team": "Bourbon County",
+          "opponent_team_rank": null,
+          "opponent_weight": 132,
+          "opponent_rank": null,
+          "weight_class": "132",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:20",
+          "event": "vs. Bourbon County",
+          "season": 2013,
+          "opponent_ky": true
+        },
+        {
+          "date": "2013-01-26",
           "opponent_id": "1352776009",
           "opponent_career_id": "career_013115",
           "opponent_name": "Christopher Morrow",
@@ -533,7 +551,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:51",
-          "event": "vs. Madison Southern",
+          "event": "vs. Madison Central",
           "season": 2013,
           "opponent_ky": true
         },
@@ -551,27 +569,9 @@
           "method": "FALL",
           "score": null,
           "duration": "0:42",
-          "event": "vs. Madison Southern",
+          "event": "vs. Paul Dunbar",
           "season": 2013,
           "opponent_ky": false
-        },
-        {
-          "date": "2013-01-26",
-          "opponent_id": "1236115009",
-          "opponent_career_id": "career_014963",
-          "opponent_name": "Terrell Roberts",
-          "opponent_team": "Bourbon County",
-          "opponent_team_rank": null,
-          "opponent_weight": 132,
-          "opponent_rank": null,
-          "weight_class": "132",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:20",
-          "event": "vs. Madison Southern",
-          "season": 2013,
-          "opponent_ky": true
         },
         {
           "date": "2013-01-12",
@@ -587,7 +587,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Madison Southern",
+          "event": "vs. Mccreary Central",
           "season": 2013,
           "opponent_ky": true
         },
@@ -605,7 +605,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:12",
-          "event": "vs. Madison Southern",
+          "event": "vs. Perry County Central",
           "season": 2013,
           "opponent_ky": true
         },
@@ -623,7 +623,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:24",
-          "event": "vs. Madison Southern",
+          "event": "vs. Wayne County",
           "season": 2013,
           "opponent_ky": true
         },

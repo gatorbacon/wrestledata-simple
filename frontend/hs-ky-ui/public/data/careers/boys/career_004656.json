@@ -2,9 +2,9 @@
   "career_id": "career_004656",
   "canonical_name": "Eric Blount",
   "career_record": {
-    "wins": 10,
+    "wins": 9,
     "losses": 9,
-    "win_pct": 0.526
+    "win_pct": 0.5
   },
   "seasons": [
     {
@@ -13,12 +13,30 @@
       "grade": 12,
       "team": "Logan County",
       "weight_class": 120,
-      "record": "10-9",
+      "record": "9-9",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
       "current_rank": 88,
       "matches": [
+        {
+          "date": "2026-02-07",
+          "opponent_id": "35049056132",
+          "opponent_career_id": "career_004877",
+          "opponent_name": "Harrison Davis",
+          "opponent_team": "Greenwood",
+          "opponent_team_rank": 87,
+          "opponent_weight": 120,
+          "opponent_rank": 78,
+          "weight_class": "120",
+          "result": "L",
+          "method": "DEC",
+          "score": "4-3",
+          "duration": "7:00",
+          "event": "vs. Greenwood",
+          "season": 2026,
+          "opponent_ky": true
+        },
         {
           "date": "2026-02-07",
           "opponent_id": "OUTSTATE_06988205b75c",
@@ -36,24 +54,6 @@
           "event": "vs. Logan County",
           "season": 2026,
           "opponent_ky": false
-        },
-        {
-          "date": "2026-02-07",
-          "opponent_id": "35049056132",
-          "opponent_career_id": "career_004877",
-          "opponent_name": "Harrison Davis",
-          "opponent_team": "Greenwood",
-          "opponent_team_rank": 87,
-          "opponent_weight": 120,
-          "opponent_rank": 78,
-          "weight_class": "120",
-          "result": "L",
-          "method": "DEC",
-          "score": "4-3",
-          "duration": "7:00",
-          "event": "vs. Logan County",
-          "season": 2026,
-          "opponent_ky": true
         },
         {
           "date": "2026-02-07",
@@ -195,7 +195,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:08",
-          "event": "vs. Logan County",
+          "event": "vs. Greenwood",
           "season": 2026,
           "opponent_ky": true
         },
@@ -213,7 +213,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:18",
-          "event": "vs. Logan County",
+          "event": "vs. Fort Campbell",
           "season": 2026,
           "opponent_ky": true
         },
@@ -231,7 +231,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:08",
-          "event": "vs. Logan County",
+          "event": "vs. Fort Campbell",
           "season": 2026,
           "opponent_ky": true
         },

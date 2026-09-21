@@ -3,8 +3,8 @@
   "canonical_name": "Hayden Bennett",
   "career_record": {
     "wins": 1,
-    "losses": 9,
-    "win_pct": 0.1
+    "losses": 10,
+    "win_pct": 0.091
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 12,
       "team": "Meade County",
       "weight_class": 165,
-      "record": "1-9",
+      "record": "1-10",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -33,25 +33,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:01",
-          "event": "vs. Meade County",
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2026-01-19",
-          "opponent_id": "35193715132",
-          "opponent_career_id": "career_004694",
-          "opponent_name": "Wai Soe",
-          "opponent_team": "Warren Central",
-          "opponent_team_rank": 137,
-          "opponent_weight": 157,
-          "opponent_rank": 100,
-          "weight_class": "165",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "4:35",
-          "event": "2026 Region 2 JV Tournament",
+          "event": "vs. Central Hardin",
           "season": 2026,
           "opponent_ky": true
         },
@@ -74,6 +56,24 @@
           "opponent_ky": true
         },
         {
+          "date": "2026-01-19",
+          "opponent_id": "35193715132",
+          "opponent_career_id": "career_004694",
+          "opponent_name": "Wai Soe",
+          "opponent_team": "Warren Central",
+          "opponent_team_rank": 137,
+          "opponent_weight": 157,
+          "opponent_rank": 100,
+          "weight_class": "165",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "4:35",
+          "event": "2026 Region 2 JV Tournament",
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
           "date": "2025-12-23",
           "opponent_id": "35226402132",
           "opponent_career_id": "career_001837",
@@ -87,27 +87,8 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Meade County",
+          "event": "vs. Nelson County",
           "mv_impact": -6.17,
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2025-12-13",
-          "opponent_id": "35024618132",
-          "opponent_career_id": "career_005694",
-          "opponent_name": "Aiden Forbis",
-          "opponent_team": "South Warren",
-          "opponent_team_rank": 129,
-          "opponent_weight": 157,
-          "opponent_rank": 143,
-          "weight_class": "175",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:11",
-          "event": "vs. South Warren",
-          "mv_impact": 1.99,
           "season": 2026,
           "opponent_ky": true
         },
@@ -125,7 +106,7 @@
           "method": "FALL",
           "score": null,
           "duration": "4:36",
-          "event": "vs. Meade County",
+          "event": "vs. Central Hardin",
           "mv_impact": -7.83,
           "season": 2026,
           "opponent_ky": true
@@ -144,7 +125,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:20",
-          "event": "vs. Meade County",
+          "event": "vs. Green County",
           "mv_impact": -4.82,
           "season": 2026,
           "opponent_ky": true
@@ -170,6 +151,25 @@
         },
         {
           "date": "2025-12-13",
+          "opponent_id": "35024618132",
+          "opponent_career_id": "career_005694",
+          "opponent_name": "Aiden Forbis",
+          "opponent_team": "South Warren",
+          "opponent_team_rank": 129,
+          "opponent_weight": 157,
+          "opponent_rank": 143,
+          "weight_class": "175",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:11",
+          "event": "vs. South Warren",
+          "mv_impact": 1.99,
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2025-12-13",
           "opponent_id": "34988577132",
           "opponent_career_id": "career_002726",
           "opponent_name": "Payton Thompson",
@@ -184,25 +184,6 @@
           "duration": "1:53",
           "event": "vs. Thomas Nelson",
           "mv_impact": -4.83,
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2025-12-06",
-          "opponent_id": "35267058132",
-          "opponent_career_id": "career_002983",
-          "opponent_name": "Maddox Hammond",
-          "opponent_team": "Western Hills",
-          "opponent_team_rank": 140,
-          "opponent_weight": 175,
-          "opponent_rank": 56,
-          "weight_class": "175",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Western Hills",
-          "mv_impact": -4.61,
           "season": 2026,
           "opponent_ky": true
         },
@@ -223,6 +204,25 @@
           "event": "vs. Charlestown",
           "season": 2026,
           "opponent_ky": false
+        },
+        {
+          "date": "2025-12-06",
+          "opponent_id": "35267058132",
+          "opponent_career_id": "career_002983",
+          "opponent_name": "Maddox Hammond",
+          "opponent_team": "Western Hills",
+          "opponent_team_rank": 140,
+          "opponent_weight": 175,
+          "opponent_rank": 56,
+          "weight_class": "175",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Western Hills",
+          "mv_impact": -4.61,
+          "season": 2026,
+          "opponent_ky": true
         }
       ]
     }

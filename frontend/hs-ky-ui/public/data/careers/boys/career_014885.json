@@ -3,8 +3,8 @@
   "canonical_name": "Zack Taylor",
   "career_record": {
     "wins": 4,
-    "losses": 4,
-    "win_pct": 0.5
+    "losses": 5,
+    "win_pct": 0.444
   },
   "seasons": [
     {
@@ -21,12 +21,12 @@
       "matches": [
         {
           "date": "2013-12-20",
-          "opponent_id": "3023252009",
+          "opponent_id": "3017498009",
           "opponent_career_id": null,
-          "opponent_name": "Scott Everding",
-          "opponent_team": "Richlands",
+          "opponent_name": "Jonathon Evans",
+          "opponent_team": "Abingdon",
           "opponent_team_rank": null,
-          "opponent_weight": 113,
+          "opponent_weight": 120,
           "opponent_rank": null,
           "weight_class": "120",
           "result": "W",
@@ -39,12 +39,12 @@
         },
         {
           "date": "2013-12-20",
-          "opponent_id": "3017498009",
+          "opponent_id": "3023252009",
           "opponent_career_id": null,
-          "opponent_name": "Jonathon Evans",
-          "opponent_team": "Abingdon",
+          "opponent_name": "Scott Everding",
+          "opponent_team": "Richlands",
           "opponent_team_rank": null,
-          "opponent_weight": 120,
+          "opponent_weight": 113,
           "opponent_rank": null,
           "weight_class": "120",
           "result": "W",
@@ -135,7 +135,7 @@
       "grade": null,
       "team": "Belfry",
       "weight_class": 120,
-      "record": "1-1",
+      "record": "1-2",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -161,24 +161,6 @@
         },
         {
           "date": "2012-12-08",
-          "opponent_id": "1429550009",
-          "opponent_career_id": "career_013256",
-          "opponent_name": "Braden Mills",
-          "opponent_team": "Sheldon Clark",
-          "opponent_team_rank": null,
-          "opponent_weight": 113,
-          "opponent_rank": null,
-          "weight_class": "120",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "Ben Fisher Memorial Tournament",
-          "season": 2013,
-          "opponent_ky": false
-        },
-        {
-          "date": "2012-12-08",
           "opponent_id": "1328532009",
           "opponent_career_id": null,
           "opponent_name": "Colton McIntosh",
@@ -192,6 +174,24 @@
           "score": null,
           "duration": "0:00",
           "event": "Ben Fisher Memorial",
+          "season": 2013,
+          "opponent_ky": false
+        },
+        {
+          "date": "2012-12-08",
+          "opponent_id": "1429550009",
+          "opponent_career_id": "career_013256",
+          "opponent_name": "Braden Mills",
+          "opponent_team": "Sheldon Clark",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "Ben Fisher Memorial Tournament",
           "season": 2013,
           "opponent_ky": false
         }

@@ -2,9 +2,9 @@
   "career_id": "career_007362",
   "canonical_name": "Gus Marble",
   "career_record": {
-    "wins": 7,
-    "losses": 15,
-    "win_pct": 0.318
+    "wins": 8,
+    "losses": 17,
+    "win_pct": 0.32
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 10,
       "team": "Jeffersontown",
       "weight_class": 215,
-      "record": "7-15",
+      "record": "8-17",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -111,6 +111,24 @@
         },
         {
           "date": "2023-01-25",
+          "opponent_id": "20412850132",
+          "opponent_career_id": "career_007150",
+          "opponent_name": "Lucas Butler",
+          "opponent_team": "Bardstown",
+          "opponent_team_rank": null,
+          "opponent_weight": 215,
+          "opponent_rank": null,
+          "weight_class": "215",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Bardstown",
+          "season": 2023,
+          "opponent_ky": true
+        },
+        {
+          "date": "2023-01-25",
           "opponent_id": "20164713132",
           "opponent_career_id": "career_006206",
           "opponent_name": "Brentin Stevenson",
@@ -124,24 +142,6 @@
           "score": null,
           "duration": "0:00",
           "event": "vs. Thomas Nelson",
-          "season": 2023,
-          "opponent_ky": true
-        },
-        {
-          "date": "2023-01-25",
-          "opponent_id": "20412850132",
-          "opponent_career_id": "career_007150",
-          "opponent_name": "Lucas Butler",
-          "opponent_team": "Bardstown",
-          "opponent_team_rank": null,
-          "opponent_weight": 215,
-          "opponent_rank": null,
-          "weight_class": "215",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Jeffersontown",
           "season": 2023,
           "opponent_ky": true
         },
@@ -165,24 +165,6 @@
         },
         {
           "date": "2023-01-21",
-          "opponent_id": "20164713132",
-          "opponent_career_id": "career_006206",
-          "opponent_name": "Brentin Stevenson",
-          "opponent_team": "Thomas Nelson",
-          "opponent_team_rank": null,
-          "opponent_weight": 175,
-          "opponent_rank": null,
-          "weight_class": "215",
-          "result": "W",
-          "method": "DEC",
-          "score": "10-9",
-          "duration": "7:00",
-          "event": "vs. Thomas Nelson",
-          "season": 2023,
-          "opponent_ky": true
-        },
-        {
-          "date": "2023-01-21",
           "opponent_id": "20306686132",
           "opponent_career_id": "career_007003",
           "opponent_name": "Logan Garrett",
@@ -195,7 +177,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Jeffersontown",
+          "event": "vs. Hart County",
           "season": 2023,
           "opponent_ky": true
         },
@@ -232,6 +214,24 @@
           "score": null,
           "duration": "2:15",
           "event": "vs. Wayne County",
+          "season": 2023,
+          "opponent_ky": true
+        },
+        {
+          "date": "2023-01-21",
+          "opponent_id": "20164713132",
+          "opponent_career_id": "career_006206",
+          "opponent_name": "Brentin Stevenson",
+          "opponent_team": "Thomas Nelson",
+          "opponent_team_rank": null,
+          "opponent_weight": 175,
+          "opponent_rank": null,
+          "weight_class": "215",
+          "result": "W",
+          "method": "DEC",
+          "score": "10-9",
+          "duration": "7:00",
+          "event": "vs. Thomas Nelson",
           "season": 2023,
           "opponent_ky": true
         },
@@ -357,7 +357,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:31",
-          "event": "vs. Jeffersontown",
+          "event": "vs. Ballard",
           "season": 2023,
           "opponent_ky": true
         },
@@ -375,7 +375,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Jeffersontown",
+          "event": "vs. Eastern",
           "season": 2023,
           "opponent_ky": true
         },
@@ -465,7 +465,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Jeffersontown",
+          "event": "vs. Central Hardin",
           "season": 2023,
           "opponent_ky": true
         }

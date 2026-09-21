@@ -2,11 +2,61 @@
   "career_id": "career_001330",
   "canonical_name": "Jakobri Linton",
   "career_record": {
-    "wins": 45,
+    "wins": 47,
     "losses": 31,
-    "win_pct": 0.592
+    "win_pct": 0.603
   },
   "seasons": [
+    {
+      "season": 2026,
+      "wrestler_id": "35064899132",
+      "grade": 12,
+      "team": "John Hardin",
+      "weight_class": 165,
+      "record": "2-0",
+      "regional_place": null,
+      "regional_data_tracked": true,
+      "state_place": null,
+      "current_rank": 74,
+      "matches": [
+        {
+          "date": "2026-01-17",
+          "opponent_id": "35057212132",
+          "opponent_career_id": "career_005247",
+          "opponent_name": "Matthew Russle",
+          "opponent_team": "Bullitt Central",
+          "opponent_team_rank": 62,
+          "opponent_weight": 190,
+          "opponent_rank": 164,
+          "weight_class": "165",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Bullitt Central",
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2026-01-17",
+          "opponent_id": "35180871132",
+          "opponent_career_id": "career_000637",
+          "opponent_name": "Ismael Rivera-Santos",
+          "opponent_team": "Danville",
+          "opponent_team_rank": 68,
+          "opponent_weight": 165,
+          "opponent_rank": 141,
+          "weight_class": "165",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Danville",
+          "season": 2026,
+          "opponent_ky": true
+        }
+      ]
+    },
     {
       "season": 2025,
       "wrestler_id": "30080471132",
@@ -33,7 +83,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:14",
-          "event": "vs. John Hardin",
+          "event": "vs. Caldwell County",
           "season": 2025,
           "opponent_ky": true
         },
@@ -51,7 +101,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:53",
-          "event": "vs. John Hardin",
+          "event": "vs. Franklin County",
           "season": 2025,
           "opponent_ky": true
         },
@@ -105,7 +155,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. John Hardin",
+          "event": "vs. Bullitt East",
           "season": 2025,
           "opponent_ky": true
         },
@@ -263,7 +313,7 @@
           "method": "MD",
           "score": "18-8",
           "duration": "7:00",
-          "event": "vs. John Hardin",
+          "event": "vs. Central Hardin",
           "season": 2024,
           "opponent_ky": true
         },
@@ -449,24 +499,6 @@
         },
         {
           "date": "2023-12-16",
-          "opponent_id": "24664237132",
-          "opponent_career_id": "career_002399",
-          "opponent_name": "KAYNE GARRETT",
-          "opponent_team": "Scott County",
-          "opponent_team_rank": null,
-          "opponent_weight": 150,
-          "opponent_rank": null,
-          "weight_class": "157",
-          "result": "L",
-          "method": "TF",
-          "score": "17-1",
-          "duration": "3:50",
-          "event": "Taylor County Cardinal Clash",
-          "season": 2024,
-          "opponent_ky": true
-        },
-        {
-          "date": "2023-12-16",
           "opponent_id": "25456689132",
           "opponent_career_id": "career_004100",
           "opponent_name": "Nathan Hannan",
@@ -502,20 +534,20 @@
           "opponent_ky": true
         },
         {
-          "date": "2023-12-09",
-          "opponent_id": "24864718132",
-          "opponent_career_id": null,
-          "opponent_name": "Aydan Farris",
-          "opponent_team": "Ohio County",
+          "date": "2023-12-16",
+          "opponent_id": "24664237132",
+          "opponent_career_id": "career_002399",
+          "opponent_name": "KAYNE GARRETT",
+          "opponent_team": "Scott County",
           "opponent_team_rank": null,
           "opponent_weight": 150,
           "opponent_rank": null,
           "weight_class": "157",
           "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Ohio County",
+          "method": "TF",
+          "score": "17-1",
+          "duration": "3:50",
+          "event": "Taylor County Cardinal Clash",
           "season": 2024,
           "opponent_ky": true
         },
@@ -552,6 +584,24 @@
           "score": null,
           "duration": "0:00",
           "event": "vs. Owensboro Catholic High School",
+          "season": 2024,
+          "opponent_ky": true
+        },
+        {
+          "date": "2023-12-09",
+          "opponent_id": "24864718132",
+          "opponent_career_id": null,
+          "opponent_name": "Aydan Farris",
+          "opponent_team": "Ohio County",
+          "opponent_team_rank": null,
+          "opponent_weight": 150,
+          "opponent_rank": null,
+          "weight_class": "157",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Ohio County",
           "season": 2024,
           "opponent_ky": true
         },
@@ -835,7 +885,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. John Hardin",
+          "event": "vs. Bethlehem",
           "season": 2023,
           "opponent_ky": true
         },
@@ -853,7 +903,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. John Hardin",
+          "event": "vs. Jeffersontown",
           "season": 2023,
           "opponent_ky": true
         },
@@ -907,7 +957,7 @@
           "method": "DEC",
           "score": "11-4",
           "duration": "7:00",
-          "event": "vs. John Hardin",
+          "event": "vs. Boyd County",
           "season": 2023,
           "opponent_ky": true
         },
@@ -997,7 +1047,7 @@
           "method": "FALL",
           "score": null,
           "duration": "3:23",
-          "event": "vs. John Hardin",
+          "event": "vs. Anderson County",
           "season": 2023,
           "opponent_ky": true
         },
@@ -1015,7 +1065,7 @@
           "method": "DEC",
           "score": "6-2",
           "duration": "7:00",
-          "event": "vs. John Hardin",
+          "event": "vs. Franklin County",
           "season": 2023,
           "opponent_ky": true
         },
@@ -1177,7 +1227,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. John Hardin",
+          "event": "vs. Green County",
           "season": 2023,
           "opponent_ky": true
         },
@@ -1267,7 +1317,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. John Hardin",
+          "event": "vs. Henderson County",
           "season": 2023,
           "opponent_ky": true
         },
@@ -1303,7 +1353,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. John Hardin",
+          "event": "vs. Apollo High School",
           "season": 2023,
           "opponent_ky": true
         },

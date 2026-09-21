@@ -3,8 +3,8 @@
   "canonical_name": "Zachary Lacy",
   "career_record": {
     "wins": 8,
-    "losses": 12,
-    "win_pct": 0.4
+    "losses": 13,
+    "win_pct": 0.381
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 9,
       "team": "WEB DuBois",
       "weight_class": 138,
-      "record": "7-8",
+      "record": "7-9",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -40,7 +40,7 @@
         {
           "date": "2026-02-21",
           "opponent_id": "38333845132",
-          "opponent_career_id": null,
+          "opponent_career_id": "career_002972",
           "opponent_name": "Kane Minnick",
           "opponent_team": "Western Hills",
           "opponent_team_rank": 140,
@@ -75,6 +75,24 @@
         },
         {
           "date": "2025-12-20",
+          "opponent_id": "35073272132",
+          "opponent_career_id": "career_005553",
+          "opponent_name": "Marco Abella Acosta",
+          "opponent_team": "Moore",
+          "opponent_team_rank": 33,
+          "opponent_weight": 144,
+          "opponent_rank": 109,
+          "weight_class": "144",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:21",
+          "event": "vs. Moore",
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2025-12-20",
           "opponent_id": "35563011132",
           "opponent_career_id": "career_002640",
           "opponent_name": "Caleb Quirino",
@@ -87,7 +105,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:27",
-          "event": "vs. WEB DuBois",
+          "event": "vs. St. Xavier",
           "season": 2026,
           "opponent_ky": true
         },
@@ -108,24 +126,6 @@
           "event": "vs. Doss",
           "season": 2026,
           "opponent_ky": false
-        },
-        {
-          "date": "2025-12-20",
-          "opponent_id": "35073272132",
-          "opponent_career_id": "career_005553",
-          "opponent_name": "Marco Abella Acosta",
-          "opponent_team": "Moore",
-          "opponent_team_rank": 33,
-          "opponent_weight": 144,
-          "opponent_rank": 109,
-          "weight_class": "144",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "1:21",
-          "event": "vs. WEB DuBois",
-          "season": 2026,
-          "opponent_ky": true
         },
         {
           "date": "2025-12-13",
@@ -213,7 +213,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. WEB DuBois",
+          "event": "vs. Pulaski County",
           "season": 2026,
           "opponent_ky": true
         },
@@ -231,7 +231,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. WEB DuBois",
+          "event": "vs. Pulaski County",
           "season": 2026,
           "opponent_ky": true
         },
@@ -303,7 +303,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. WEB DuBois",
+          "event": "vs. Shawnee",
           "season": 2026,
           "opponent_ky": true
         }
@@ -335,7 +335,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. WEB DuBois",
+          "event": "vs. Atherton",
           "season": 2025,
           "opponent_ky": true
         },
@@ -353,7 +353,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. WEB DuBois",
+          "event": "vs. Atherton",
           "season": 2025,
           "opponent_ky": true
         },

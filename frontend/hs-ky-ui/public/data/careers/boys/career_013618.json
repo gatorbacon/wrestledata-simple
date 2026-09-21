@@ -3,8 +3,8 @@
   "canonical_name": "Elijah Sloss",
   "career_record": {
     "wins": 5,
-    "losses": 7,
-    "win_pct": 0.417
+    "losses": 6,
+    "win_pct": 0.455
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 10,
       "team": "Doss",
       "weight_class": 165,
-      "record": "5-7",
+      "record": "5-6",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -69,7 +69,25 @@
           "method": "DEC",
           "score": "8-6",
           "duration": "7:00",
-          "event": "vs. Doss",
+          "event": "vs. Central",
+          "season": 2016,
+          "opponent_ky": true
+        },
+        {
+          "date": "2016-01-13",
+          "opponent_id": "305916013",
+          "opponent_career_id": "career_013581",
+          "opponent_name": "Javon Buford",
+          "opponent_team": "Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 175,
+          "opponent_rank": null,
+          "weight_class": "165",
+          "result": "L",
+          "method": "DEC",
+          "score": "7-6",
+          "duration": "7:00",
+          "event": "vs. Central",
           "season": 2016,
           "opponent_ky": true
         },
@@ -111,24 +129,6 @@
         },
         {
           "date": "2015-12-19",
-          "opponent_id": "350319107",
-          "opponent_career_id": "career_012602",
-          "opponent_name": "Donovan Lay",
-          "opponent_team": "Mccreary Central",
-          "opponent_team_rank": null,
-          "opponent_weight": 157,
-          "opponent_rank": null,
-          "weight_class": "165",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Mccreary Central",
-          "season": 2016,
-          "opponent_ky": true
-        },
-        {
-          "date": "2015-12-19",
           "opponent_id": "432574076",
           "opponent_career_id": "career_013284",
           "opponent_name": "Colin Coy",
@@ -142,6 +142,24 @@
           "score": null,
           "duration": "1:59",
           "event": "Rumble in the Hive.2",
+          "season": 2016,
+          "opponent_ky": true
+        },
+        {
+          "date": "2015-12-19",
+          "opponent_id": "350319107",
+          "opponent_career_id": "career_012602",
+          "opponent_name": "Donovan Lay",
+          "opponent_team": "Mccreary Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 157,
+          "opponent_rank": null,
+          "weight_class": "165",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Mccreary Central",
           "season": 2016,
           "opponent_ky": true
         },

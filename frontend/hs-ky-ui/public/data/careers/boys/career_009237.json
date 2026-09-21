@@ -3,8 +3,8 @@
   "canonical_name": "Eli Schuyler",
   "career_record": {
     "wins": 3,
-    "losses": 11,
-    "win_pct": 0.214
+    "losses": 13,
+    "win_pct": 0.188
   },
   "seasons": [
     {
@@ -33,7 +33,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Moore",
+          "event": "vs. Anderson County",
           "season": 2021,
           "opponent_ky": true
         },
@@ -51,7 +51,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:55",
-          "event": "vs. Moore",
+          "event": "vs. Conner",
           "season": 2021,
           "opponent_ky": true
         },
@@ -105,7 +105,7 @@
           "method": "DEC",
           "score": "4-0",
           "duration": "7:00",
-          "event": "vs. Moore",
+          "event": "vs. LaRue County",
           "season": 2021,
           "opponent_ky": true
         },
@@ -140,8 +140,8 @@
           "result": "L",
           "method": "FALL",
           "score": null,
-          "duration": "0:00",
-          "event": "vs. Moore",
+          "duration": "3:04",
+          "event": "vs. Holmes",
           "season": 2021,
           "opponent_ky": true
         },
@@ -177,7 +177,25 @@
           "method": "FALL",
           "score": null,
           "duration": "4:19",
-          "event": "vs. Moore",
+          "event": "vs. Central",
+          "season": 2021,
+          "opponent_ky": true
+        },
+        {
+          "date": "2021-02-12",
+          "opponent_id": "15233168132",
+          "opponent_career_id": "career_008850",
+          "opponent_name": "Elijah Phan",
+          "opponent_team": "Male",
+          "opponent_team_rank": null,
+          "opponent_weight": 144,
+          "opponent_rank": null,
+          "weight_class": "150",
+          "result": "L",
+          "method": "DEC",
+          "score": "8-1",
+          "duration": "7:00",
+          "event": "vs. Male",
           "season": 2021,
           "opponent_ky": true
         },
@@ -198,24 +216,6 @@
           "event": "vs. Trinity (Louisville)",
           "season": 2021,
           "opponent_ky": true
-        },
-        {
-          "date": "2021-02-12",
-          "opponent_id": "15233168132",
-          "opponent_career_id": "career_008850",
-          "opponent_name": "Elijah Phan",
-          "opponent_team": "Male",
-          "opponent_team_rank": null,
-          "opponent_weight": 144,
-          "opponent_rank": null,
-          "weight_class": "150",
-          "result": "L",
-          "method": "DEC",
-          "score": "8-1",
-          "duration": "7:00",
-          "event": "vs. Moore",
-          "season": 2021,
-          "opponent_ky": true
         }
       ]
     },
@@ -225,30 +225,12 @@
       "grade": 9,
       "team": "Moore",
       "weight_class": 138,
-      "record": "1-2",
+      "record": "1-4",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
-        {
-          "date": "2020-01-04",
-          "opponent_id": "11648767132",
-          "opponent_career_id": "career_006483",
-          "opponent_name": "Ayden Johnson",
-          "opponent_team": "LaRue County",
-          "opponent_team_rank": null,
-          "opponent_weight": 132,
-          "opponent_rank": null,
-          "weight_class": "138",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "3:23",
-          "event": "Valley Main Event",
-          "season": 2020,
-          "opponent_ky": true
-        },
         {
           "date": "2020-01-04",
           "opponent_id": "10803705132",
@@ -280,7 +262,43 @@
           "result": "L",
           "method": "FALL",
           "score": null,
+          "duration": "1:36",
+          "event": "Valley Main Event",
+          "season": 2020,
+          "opponent_ky": true
+        },
+        {
+          "date": "2020-01-04",
+          "opponent_id": "10803705132",
+          "opponent_career_id": "career_007771",
+          "opponent_name": "Jayden Grays",
+          "opponent_team": "Fern Creek",
+          "opponent_team_rank": null,
+          "opponent_weight": 138,
+          "opponent_rank": null,
+          "weight_class": "138",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
           "duration": "1:31",
+          "event": "Valley Main Event",
+          "season": 2020,
+          "opponent_ky": true
+        },
+        {
+          "date": "2020-01-04",
+          "opponent_id": "11648767132",
+          "opponent_career_id": "career_006483",
+          "opponent_name": "Ayden Johnson",
+          "opponent_team": "LaRue County",
+          "opponent_team_rank": null,
+          "opponent_weight": 132,
+          "opponent_rank": null,
+          "weight_class": "138",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "3:23",
           "event": "Valley Main Event",
           "season": 2020,
           "opponent_ky": true

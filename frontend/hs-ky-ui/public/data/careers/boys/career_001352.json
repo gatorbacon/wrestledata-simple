@@ -3,10 +3,60 @@
   "canonical_name": "Gunner Taylor",
   "career_record": {
     "wins": 2,
-    "losses": 0,
-    "win_pct": 1.0
+    "losses": 2,
+    "win_pct": 0.5
   },
   "seasons": [
+    {
+      "season": 2026,
+      "wrestler_id": "37574100132",
+      "grade": 10,
+      "team": "Johnson Central",
+      "weight_class": 157,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": true,
+      "state_place": null,
+      "current_rank": 181,
+      "matches": [
+        {
+          "date": "2026-01-10",
+          "opponent_id": "OUTSTATE_ca5715401caa",
+          "opponent_career_id": null,
+          "opponent_name": "Parker Maynard",
+          "opponent_team": "Martin County",
+          "opponent_team_rank": 14,
+          "opponent_weight": 157,
+          "opponent_rank": null,
+          "weight_class": "157",
+          "result": "L",
+          "method": "FF",
+          "score": null,
+          "duration": "7:00",
+          "event": "Clipson Jones Classic 2026",
+          "season": 2026,
+          "opponent_ky": false
+        },
+        {
+          "date": "2026-01-10",
+          "opponent_id": "OUTSTATE_465122097bf9",
+          "opponent_career_id": null,
+          "opponent_name": "Jaxson Baldwin",
+          "opponent_team": "Belfry",
+          "opponent_team_rank": 57,
+          "opponent_weight": 157,
+          "opponent_rank": null,
+          "weight_class": "157",
+          "result": "L",
+          "method": "FF",
+          "score": null,
+          "duration": "7:00",
+          "event": "Clipson Jones Classic 2026",
+          "season": 2026,
+          "opponent_ky": false
+        }
+      ]
+    },
     {
       "season": 2025,
       "wrestler_id": "30594730132",

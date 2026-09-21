@@ -2,9 +2,9 @@
   "career_id": "career_013935",
   "canonical_name": "Andre Watkins Jr.",
   "career_record": {
-    "wins": 18,
+    "wins": 17,
     "losses": 16,
-    "win_pct": 0.529
+    "win_pct": 0.515
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 12,
       "team": "Doss",
       "weight_class": 144,
-      "record": "18-16",
+      "record": "17-16",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -75,6 +75,24 @@
         },
         {
           "date": "2015-01-31",
+          "opponent_id": "72574076",
+          "opponent_career_id": "career_012244",
+          "opponent_name": "Malcolm Walker",
+          "opponent_team": "Harrison County",
+          "opponent_team_rank": null,
+          "opponent_weight": 150,
+          "opponent_rank": null,
+          "weight_class": "150",
+          "result": "L",
+          "method": "DEC",
+          "score": "11-8",
+          "duration": "7:00",
+          "event": "vs. Harrison County",
+          "season": 2015,
+          "opponent_ky": true
+        },
+        {
+          "date": "2015-01-31",
           "opponent_id": "28267071",
           "opponent_career_id": "career_014223",
           "opponent_name": "Wesley Sanders",
@@ -128,24 +146,6 @@
           "opponent_ky": false
         },
         {
-          "date": "2015-01-31",
-          "opponent_id": "72574076",
-          "opponent_career_id": "career_012244",
-          "opponent_name": "Malcolm Walker",
-          "opponent_team": "Harrison County",
-          "opponent_team_rank": null,
-          "opponent_weight": 150,
-          "opponent_rank": null,
-          "weight_class": "150",
-          "result": "L",
-          "method": "DEC",
-          "score": "11-8",
-          "duration": "7:00",
-          "event": "vs. Harrison County",
-          "season": 2015,
-          "opponent_ky": true
-        },
-        {
           "date": "2015-01-28",
           "opponent_id": "43401071",
           "opponent_career_id": "career_014069",
@@ -177,7 +177,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Doss",
+          "event": "vs. Central",
           "season": 2015,
           "opponent_ky": true
         },
@@ -213,7 +213,7 @@
           "method": "MD",
           "score": "17-8",
           "duration": "7:00",
-          "event": "vs. Doss",
+          "event": "vs. Desales",
           "season": 2015,
           "opponent_ky": true
         },
@@ -411,7 +411,25 @@
           "method": "DEC",
           "score": "9-5",
           "duration": "7:00",
-          "event": "vs. Doss",
+          "event": "vs. Atherton",
+          "season": 2015,
+          "opponent_ky": true
+        },
+        {
+          "date": "2014-12-20",
+          "opponent_id": "32188010",
+          "opponent_career_id": "career_012439",
+          "opponent_name": "Johnny Lee",
+          "opponent_team": "Meade County",
+          "opponent_team_rank": null,
+          "opponent_weight": 157,
+          "opponent_rank": null,
+          "weight_class": "157",
+          "result": "L",
+          "method": "MD",
+          "score": "12-2",
+          "duration": "7:00",
+          "event": "vs. Meade County",
           "season": 2015,
           "opponent_ky": true
         },
@@ -453,24 +471,6 @@
         },
         {
           "date": "2014-12-20",
-          "opponent_id": "32188010",
-          "opponent_career_id": "career_012439",
-          "opponent_name": "Johnny Lee",
-          "opponent_team": "Meade County",
-          "opponent_team_rank": null,
-          "opponent_weight": 157,
-          "opponent_rank": null,
-          "weight_class": "157",
-          "result": "L",
-          "method": "MD",
-          "score": "12-2",
-          "duration": "7:00",
-          "event": "vs. Meade County",
-          "season": 2015,
-          "opponent_ky": true
-        },
-        {
-          "date": "2014-12-20",
           "opponent_id": "OUTSTATE_f168e9c3cbeb",
           "opponent_career_id": null,
           "opponent_name": "Unknown",
@@ -484,24 +484,6 @@
           "score": null,
           "duration": "7:00",
           "event": "vs. Fort Knox",
-          "season": 2015,
-          "opponent_ky": false
-        },
-        {
-          "date": "2014-12-10",
-          "opponent_id": "OUTSTATE_ab3b37a09a95",
-          "opponent_career_id": null,
-          "opponent_name": "Unknown",
-          "opponent_team": "Desales",
-          "opponent_team_rank": null,
-          "opponent_weight": null,
-          "opponent_rank": null,
-          "weight_class": "157",
-          "result": "W",
-          "method": "FF",
-          "score": null,
-          "duration": "7:00",
-          "event": "vs. Desales",
           "season": 2015,
           "opponent_ky": false
         },
@@ -524,6 +506,24 @@
           "opponent_ky": true
         },
         {
+          "date": "2014-12-10",
+          "opponent_id": "OUTSTATE_ab3b37a09a95",
+          "opponent_career_id": null,
+          "opponent_name": "Unknown",
+          "opponent_team": "Desales",
+          "opponent_team_rank": null,
+          "opponent_weight": null,
+          "opponent_rank": null,
+          "weight_class": "157",
+          "result": "W",
+          "method": "FF",
+          "score": null,
+          "duration": "7:00",
+          "event": "vs. Desales",
+          "season": 2015,
+          "opponent_ky": false
+        },
+        {
           "date": "2014-12-06",
           "opponent_id": "53277076",
           "opponent_career_id": "career_014335",
@@ -537,7 +537,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:30",
-          "event": "vs. Doss",
+          "event": "vs. Central",
           "season": 2015,
           "opponent_ky": true
         },
@@ -591,7 +591,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Doss",
+          "event": "vs. Bullitt East",
           "season": 2015,
           "opponent_ky": true
         },

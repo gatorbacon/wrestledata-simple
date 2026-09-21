@@ -3,8 +3,8 @@
   "canonical_name": "Nick Flint",
   "career_record": {
     "wins": 8,
-    "losses": 18,
-    "win_pct": 0.308
+    "losses": 19,
+    "win_pct": 0.296
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 10,
       "team": "Atherton",
       "weight_class": 138,
-      "record": "8-18",
+      "record": "8-19",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -111,6 +111,24 @@
         },
         {
           "date": "2017-01-14",
+          "opponent_id": "753110094",
+          "opponent_career_id": "career_010632",
+          "opponent_name": "Isaiah Newberry",
+          "opponent_team": "Moore",
+          "opponent_team_rank": null,
+          "opponent_weight": 138,
+          "opponent_rank": null,
+          "weight_class": "138",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "4:33",
+          "event": "vs. Moore",
+          "season": 2017,
+          "opponent_ky": true
+        },
+        {
+          "date": "2017-01-14",
           "opponent_id": "9739191009",
           "opponent_career_id": "career_012370",
           "opponent_name": "Matthew Smith",
@@ -165,24 +183,6 @@
         },
         {
           "date": "2017-01-07",
-          "opponent_id": "9837263009",
-          "opponent_career_id": "career_012458",
-          "opponent_name": "Nathan Wright",
-          "opponent_team": "Jeffersontown",
-          "opponent_team_rank": null,
-          "opponent_weight": 126,
-          "opponent_rank": null,
-          "weight_class": "138",
-          "result": "W",
-          "method": "DEC",
-          "score": "7-6",
-          "duration": "7:00",
-          "event": "Jefferson County Tournament of Champions",
-          "season": 2017,
-          "opponent_ky": true
-        },
-        {
-          "date": "2017-01-07",
           "opponent_id": "576220013",
           "opponent_career_id": "career_012332",
           "opponent_name": "Gavin Foushee",
@@ -195,6 +195,24 @@
           "method": "FALL",
           "score": null,
           "duration": "1:11",
+          "event": "Jefferson County Tournament of Champions",
+          "season": 2017,
+          "opponent_ky": true
+        },
+        {
+          "date": "2017-01-07",
+          "opponent_id": "9837263009",
+          "opponent_career_id": "career_012458",
+          "opponent_name": "Nathan Wright",
+          "opponent_team": "Jeffersontown",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "138",
+          "result": "W",
+          "method": "DEC",
+          "score": "7-6",
+          "duration": "7:00",
           "event": "Jefferson County Tournament of Champions",
           "season": 2017,
           "opponent_ky": true
@@ -273,24 +291,6 @@
         },
         {
           "date": "2016-12-22",
-          "opponent_id": "954671076",
-          "opponent_career_id": "career_010888",
-          "opponent_name": "Jacob Brock",
-          "opponent_team": "Franklin County",
-          "opponent_team_rank": null,
-          "opponent_weight": 126,
-          "opponent_rank": null,
-          "weight_class": "144",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Franklin County",
-          "season": 2017,
-          "opponent_ky": true
-        },
-        {
-          "date": "2016-12-22",
           "opponent_id": "OUTSTATE_5855457a7894",
           "opponent_career_id": null,
           "opponent_name": "Unknown",
@@ -306,6 +306,24 @@
           "event": "vs. Bullitt Central",
           "season": 2017,
           "opponent_ky": false
+        },
+        {
+          "date": "2016-12-22",
+          "opponent_id": "954671076",
+          "opponent_career_id": "career_010888",
+          "opponent_name": "Jacob Brock",
+          "opponent_team": "Franklin County",
+          "opponent_team_rank": null,
+          "opponent_weight": 126,
+          "opponent_rank": null,
+          "weight_class": "144",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Franklin County",
+          "season": 2017,
+          "opponent_ky": true
         },
         {
           "date": "2016-12-17",
@@ -483,7 +501,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Atherton",
+          "event": "vs. Bullitt East",
           "season": 2017,
           "opponent_ky": true
         }

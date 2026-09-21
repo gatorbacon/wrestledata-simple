@@ -3,8 +3,8 @@
   "canonical_name": "Joseph Burke",
   "career_record": {
     "wins": 1,
-    "losses": 6,
-    "win_pct": 0.143
+    "losses": 11,
+    "win_pct": 0.083
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": null,
       "team": "Jeffersontown",
       "weight_class": 157,
-      "record": "1-6",
+      "record": "1-11",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -33,7 +33,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:44",
-          "event": "vs. Jeffersontown",
+          "event": "vs. Eastern",
           "season": 2013,
           "opponent_ky": true
         },
@@ -87,7 +87,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:35",
-          "event": "vs. Jeffersontown",
+          "event": "vs. Moore",
           "season": 2013,
           "opponent_ky": true
         },
@@ -105,7 +105,7 @@
           "method": "FALL",
           "score": null,
           "duration": "2:57",
-          "event": "vs. Jeffersontown",
+          "event": "vs. Pleasure Ridge Park",
           "season": 2013,
           "opponent_ky": true
         },
@@ -123,7 +123,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Jeffersontown",
+          "event": "vs. Valley",
           "season": 2013,
           "opponent_ky": true
         },
@@ -177,7 +177,7 @@
           "method": "FALL",
           "score": null,
           "duration": "4:30",
-          "event": "vs. Jeffersontown",
+          "event": "vs. Doss",
           "season": 2013,
           "opponent_ky": true
         },
@@ -201,6 +201,24 @@
         },
         {
           "date": "2012-11-24",
+          "opponent_id": "1325554009",
+          "opponent_career_id": "career_016366",
+          "opponent_name": "Hanh Son",
+          "opponent_team": "Iroquois",
+          "opponent_team_rank": null,
+          "opponent_weight": 165,
+          "opponent_rank": null,
+          "weight_class": "150",
+          "result": "L",
+          "method": "TF",
+          "score": "18-3",
+          "duration": "0:00",
+          "event": "vs. Iroquois",
+          "season": 2013,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-11-24",
           "opponent_id": "OUTSTATE_846550724ea1",
           "opponent_career_id": null,
           "opponent_name": "Unknown",
@@ -216,24 +234,6 @@
           "event": "vs. Newport",
           "season": 2013,
           "opponent_ky": false
-        },
-        {
-          "date": "2012-11-24",
-          "opponent_id": "1325554009",
-          "opponent_career_id": "career_016366",
-          "opponent_name": "Hanh Son",
-          "opponent_team": "Iroquois",
-          "opponent_team_rank": null,
-          "opponent_weight": 165,
-          "opponent_rank": null,
-          "weight_class": "150",
-          "result": "L",
-          "method": "TF",
-          "score": "18-3",
-          "duration": "0:00",
-          "event": "vs. Jeffersontown",
-          "season": 2013,
-          "opponent_ky": true
         }
       ]
     }

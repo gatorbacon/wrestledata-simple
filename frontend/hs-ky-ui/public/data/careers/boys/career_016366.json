@@ -3,8 +3,8 @@
   "canonical_name": "Hanh Son",
   "career_record": {
     "wins": 3,
-    "losses": 0,
-    "win_pct": 1.0
+    "losses": 1,
+    "win_pct": 0.75
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": null,
       "team": "Iroquois",
       "weight_class": 165,
-      "record": "3-0",
+      "record": "3-1",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -33,7 +33,25 @@
           "method": "FALL",
           "score": null,
           "duration": "0:24",
-          "event": "vs. Iroquois",
+          "event": "vs. Central",
+          "season": 2013,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-11-24",
+          "opponent_id": "1328371009",
+          "opponent_career_id": "career_015972",
+          "opponent_name": "Joseph Burke",
+          "opponent_team": "Jeffersontown",
+          "opponent_team_rank": null,
+          "opponent_weight": 157,
+          "opponent_rank": null,
+          "weight_class": "150",
+          "result": "W",
+          "method": "TF",
+          "score": "18-3",
+          "duration": "0:00",
+          "event": "vs. Jeffersontown",
           "season": 2013,
           "opponent_ky": true
         },
@@ -69,25 +87,7 @@
           "method": "FALL",
           "score": null,
           "duration": "3:06",
-          "event": "vs. Iroquois",
-          "season": 2013,
-          "opponent_ky": true
-        },
-        {
-          "date": "2012-11-24",
-          "opponent_id": "1328371009",
-          "opponent_career_id": "career_015972",
-          "opponent_name": "Joseph Burke",
-          "opponent_team": "Jeffersontown",
-          "opponent_team_rank": null,
-          "opponent_weight": 157,
-          "opponent_rank": null,
-          "weight_class": "150",
-          "result": "W",
-          "method": "TF",
-          "score": "18-3",
-          "duration": "0:00",
-          "event": "vs. Jeffersontown",
+          "event": "vs. Trigg County",
           "season": 2013,
           "opponent_ky": true
         }

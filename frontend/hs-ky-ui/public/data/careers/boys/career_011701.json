@@ -2,9 +2,9 @@
   "career_id": "career_011701",
   "canonical_name": "Josiah Garcia",
   "career_record": {
-    "wins": 0,
-    "losses": 0,
-    "win_pct": 0.0
+    "wins": 1,
+    "losses": 5,
+    "win_pct": 0.167
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 9,
       "team": "Frederick Douglas ",
       "weight_class": 215,
-      "record": "0-0",
+      "record": "1-5",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -33,9 +33,27 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Frederick Douglas",
+          "event": "vs. Scott County",
           "season": 2018,
           "opponent_ky": true
+        },
+        {
+          "date": "2018-01-10",
+          "opponent_id": "OUTSTATE_2c903e25261d",
+          "opponent_career_id": null,
+          "opponent_name": "Unknown",
+          "opponent_team": "Bourbon County",
+          "opponent_team_rank": null,
+          "opponent_weight": null,
+          "opponent_rank": null,
+          "weight_class": "215",
+          "result": "W",
+          "method": "FF",
+          "score": null,
+          "duration": "7:00",
+          "event": "vs. Bourbon County",
+          "season": 2018,
+          "opponent_ky": false
         },
         {
           "date": "2018-01-06",
@@ -75,24 +93,6 @@
         },
         {
           "date": "2017-12-02",
-          "opponent_id": "143726132",
-          "opponent_career_id": "career_008854",
-          "opponent_name": "Randy Kinser",
-          "opponent_team": "Sheldon Clark",
-          "opponent_team_rank": null,
-          "opponent_weight": 175,
-          "opponent_rank": null,
-          "weight_class": "190",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "Rumble on the Hilltop",
-          "season": 2018,
-          "opponent_ky": false
-        },
-        {
-          "date": "2017-12-02",
           "opponent_id": "12197219009",
           "opponent_career_id": "career_008756",
           "opponent_name": "Michael Leicht",
@@ -108,6 +108,24 @@
           "event": "Rumble on the Hilltop",
           "season": 2018,
           "opponent_ky": true
+        },
+        {
+          "date": "2017-12-02",
+          "opponent_id": "143726132",
+          "opponent_career_id": "career_008854",
+          "opponent_name": "Randy Kinser",
+          "opponent_team": "Sheldon Clark",
+          "opponent_team_rank": null,
+          "opponent_weight": 175,
+          "opponent_rank": null,
+          "weight_class": "190",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "Rumble on the Hilltop",
+          "season": 2018,
+          "opponent_ky": false
         }
       ]
     }

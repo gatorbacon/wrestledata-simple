@@ -3,8 +3,8 @@
   "canonical_name": "Gardner Mariah",
   "career_record": {
     "wins": 15,
-    "losses": 7,
-    "win_pct": 0.682
+    "losses": 8,
+    "win_pct": 0.652
   },
   "seasons": [
     {
@@ -19,6 +19,24 @@
       "state_place": null,
       "current_rank": null,
       "matches": [
+        {
+          "date": "2022-01-15",
+          "opponent_id": "16860586132",
+          "opponent_career_id": "career_007712",
+          "opponent_name": "Natalie Schenk",
+          "opponent_team": "Bullitt Central",
+          "opponent_team_rank": null,
+          "opponent_weight": 150,
+          "opponent_rank": null,
+          "weight_class": "144",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:22",
+          "event": "Cardinal Clash",
+          "season": 2022,
+          "opponent_ky": true
+        },
         {
           "date": "2022-01-15",
           "opponent_id": "16811378132",
@@ -52,42 +70,6 @@
           "score": null,
           "duration": "1:10",
           "event": "Cardinal Clash",
-          "season": 2022,
-          "opponent_ky": true
-        },
-        {
-          "date": "2022-01-15",
-          "opponent_id": "16860586132",
-          "opponent_career_id": "career_007712",
-          "opponent_name": "Natalie Schenk",
-          "opponent_team": "Bullitt Central",
-          "opponent_team_rank": null,
-          "opponent_weight": 150,
-          "opponent_rank": null,
-          "weight_class": "144",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "Cardinal Clash",
-          "season": 2022,
-          "opponent_ky": true
-        },
-        {
-          "date": "2021-12-18",
-          "opponent_id": "16796491132",
-          "opponent_career_id": "career_007771",
-          "opponent_name": "Jayden Grays",
-          "opponent_team": "Fern Creek",
-          "opponent_team_rank": null,
-          "opponent_weight": 150,
-          "opponent_rank": null,
-          "weight_class": "157",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Fern Creek",
           "season": 2022,
           "opponent_ky": true
         },
@@ -126,6 +108,24 @@
           "event": "vs. Southern",
           "season": 2022,
           "opponent_ky": false
+        },
+        {
+          "date": "2021-12-18",
+          "opponent_id": "16796491132",
+          "opponent_career_id": "career_007771",
+          "opponent_name": "Jayden Grays",
+          "opponent_team": "Fern Creek",
+          "opponent_team_rank": null,
+          "opponent_weight": 150,
+          "opponent_rank": null,
+          "weight_class": "157",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Fern Creek",
+          "season": 2022,
+          "opponent_ky": true
         },
         {
           "date": "2021-12-04",
@@ -179,24 +179,6 @@
       "matches": [
         {
           "date": "2021-02-27",
-          "opponent_id": "16194678132",
-          "opponent_career_id": "career_008986",
-          "opponent_name": "Travon Miller",
-          "opponent_team": "Fern Creek",
-          "opponent_team_rank": null,
-          "opponent_weight": 132,
-          "opponent_rank": null,
-          "weight_class": "138",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "4:44",
-          "event": "Call Me the Monster Invitational",
-          "season": 2021,
-          "opponent_ky": true
-        },
-        {
-          "date": "2021-02-27",
           "opponent_id": "14916460132",
           "opponent_career_id": "career_009152",
           "opponent_name": "Mason Janes",
@@ -209,6 +191,24 @@
           "method": "DEC",
           "score": "5-2",
           "duration": "7:00",
+          "event": "Call Me the Monster Invitational",
+          "season": 2021,
+          "opponent_ky": true
+        },
+        {
+          "date": "2021-02-27",
+          "opponent_id": "16194678132",
+          "opponent_career_id": "career_008986",
+          "opponent_name": "Travon Miller",
+          "opponent_team": "Fern Creek",
+          "opponent_team_rank": null,
+          "opponent_weight": 132,
+          "opponent_rank": null,
+          "weight_class": "138",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "4:44",
           "event": "Call Me the Monster Invitational",
           "season": 2021,
           "opponent_ky": true
@@ -263,7 +263,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Bullitt East",
+          "event": "vs. Anderson County",
           "season": 2021,
           "opponent_ky": true
         },
@@ -383,7 +383,7 @@
       "grade": 9,
       "team": "Bullitt East",
       "weight_class": 144,
-      "record": "2-1",
+      "record": "2-2",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -457,7 +457,7 @@
           "method": "DEC",
           "score": "4-2",
           "duration": "7:00",
-          "event": "vs. Bullitt East",
+          "event": "vs. Fern Creek",
           "season": 2020,
           "opponent_ky": true
         }

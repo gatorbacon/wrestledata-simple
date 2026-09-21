@@ -3,8 +3,8 @@
   "canonical_name": "Logan Halbrook",
   "career_record": {
     "wins": 3,
-    "losses": 4,
-    "win_pct": 0.429
+    "losses": 12,
+    "win_pct": 0.2
   },
   "seasons": [
     {
@@ -13,30 +13,12 @@
       "grade": null,
       "team": "Spencer County",
       "weight_class": 150,
-      "record": "3-4",
+      "record": "3-12",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
-        {
-          "date": "2013-01-19",
-          "opponent_id": "1396593009",
-          "opponent_career_id": "career_014693",
-          "opponent_name": "Tanner Stuart",
-          "opponent_team": "Paul Dunbar",
-          "opponent_team_rank": null,
-          "opponent_weight": 138,
-          "opponent_rank": null,
-          "weight_class": "150",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "1:50",
-          "event": "vs. Spencer County",
-          "season": 2013,
-          "opponent_ky": false
-        },
         {
           "date": "2013-01-19",
           "opponent_id": "1240022009",
@@ -51,7 +33,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:54",
-          "event": "vs. Spencer County",
+          "event": "vs. Bryan Station",
           "season": 2013,
           "opponent_ky": true
         },
@@ -69,9 +51,27 @@
           "method": "FALL",
           "score": null,
           "duration": "1:38",
-          "event": "vs. Spencer County",
+          "event": "vs. Conner",
           "season": 2013,
           "opponent_ky": true
+        },
+        {
+          "date": "2013-01-19",
+          "opponent_id": "1396593009",
+          "opponent_career_id": "career_014693",
+          "opponent_name": "Tanner Stuart",
+          "opponent_team": "Paul Dunbar",
+          "opponent_team_rank": null,
+          "opponent_weight": 138,
+          "opponent_rank": null,
+          "weight_class": "150",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:50",
+          "event": "vs. Paul Dunbar",
+          "season": 2013,
+          "opponent_ky": false
         },
         {
           "date": "2013-01-12",
@@ -87,25 +87,7 @@
           "method": "FALL",
           "score": null,
           "duration": "2:32",
-          "event": "vs. Spencer County",
-          "season": 2013,
-          "opponent_ky": true
-        },
-        {
-          "date": "2013-01-12",
-          "opponent_id": "1473345009",
-          "opponent_career_id": "career_014153",
-          "opponent_name": "Joshua Morris",
-          "opponent_team": "Western Hills",
-          "opponent_team_rank": null,
-          "opponent_weight": 144,
-          "opponent_rank": null,
-          "weight_class": "150",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Spencer County",
+          "event": "vs. Moore",
           "season": 2013,
           "opponent_ky": true
         },
@@ -123,7 +105,25 @@
           "method": "FALL",
           "score": null,
           "duration": "1:03",
-          "event": "vs. Spencer County",
+          "event": "vs. North Oldham",
+          "season": 2013,
+          "opponent_ky": true
+        },
+        {
+          "date": "2013-01-12",
+          "opponent_id": "1473345009",
+          "opponent_career_id": "career_014153",
+          "opponent_name": "Joshua Morris",
+          "opponent_team": "Western Hills",
+          "opponent_team_rank": null,
+          "opponent_weight": 144,
+          "opponent_rank": null,
+          "weight_class": "150",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Western Hills",
           "season": 2013,
           "opponent_ky": true
         },
@@ -141,7 +141,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Spencer County",
+          "event": "vs. Oldham County",
           "season": 2013,
           "opponent_ky": true
         },

@@ -3,8 +3,8 @@
   "canonical_name": "Jeremy Walters",
   "career_record": {
     "wins": 8,
-    "losses": 10,
-    "win_pct": 0.444
+    "losses": 11,
+    "win_pct": 0.421
   },
   "seasons": [
     {
@@ -57,6 +57,24 @@
         },
         {
           "date": "2021-01-23",
+          "opponent_id": "15390518132",
+          "opponent_career_id": "career_008961",
+          "opponent_name": "Malik Livingston",
+          "opponent_team": "Franklin County",
+          "opponent_team_rank": null,
+          "opponent_weight": 138,
+          "opponent_rank": null,
+          "weight_class": "144",
+          "result": "L",
+          "method": "DEC",
+          "score": "1-0",
+          "duration": "7:00",
+          "event": "Capital City Classic @ Franklin Co.",
+          "season": 2021,
+          "opponent_ky": true
+        },
+        {
+          "date": "2021-01-23",
           "opponent_id": "14915044132",
           "opponent_career_id": "career_006120",
           "opponent_name": "Gunnar Arnold",
@@ -92,24 +110,6 @@
           "opponent_ky": true
         },
         {
-          "date": "2021-01-23",
-          "opponent_id": "15390518132",
-          "opponent_career_id": "career_008961",
-          "opponent_name": "Malik Livingston",
-          "opponent_team": "Franklin County",
-          "opponent_team_rank": null,
-          "opponent_weight": 138,
-          "opponent_rank": null,
-          "weight_class": "144",
-          "result": "L",
-          "method": "DEC",
-          "score": "1-0",
-          "duration": "7:00",
-          "event": "Capital City Classic @ Franklin Co.",
-          "season": 2021,
-          "opponent_ky": true
-        },
-        {
           "date": "2021-01-13",
           "opponent_id": "15138178132",
           "opponent_career_id": "career_009146",
@@ -123,7 +123,7 @@
           "method": "FALL",
           "score": null,
           "duration": "2:57",
-          "event": "vs. Franklin County",
+          "event": "vs. Bryan Station",
           "season": 2021,
           "opponent_ky": true
         },
@@ -189,7 +189,7 @@
       "grade": 7,
       "team": "Franklin County",
       "weight_class": 113,
-      "record": "6-3",
+      "record": "6-4",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -299,7 +299,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Franklin County",
+          "event": "vs. Bullitt Central",
           "season": 2020,
           "opponent_ky": true
         },
@@ -317,25 +317,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Franklin County",
-          "season": 2020,
-          "opponent_ky": true
-        },
-        {
-          "date": "2019-12-14",
-          "opponent_id": "10995733132",
-          "opponent_career_id": "career_008689",
-          "opponent_name": "haley mills",
-          "opponent_team": "Knox Central High School",
-          "opponent_team_rank": null,
-          "opponent_weight": 106,
-          "opponent_rank": null,
-          "weight_class": "113",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Knox Central High School",
+          "event": "vs. Fairdale",
           "season": 2020,
           "opponent_ky": true
         },
@@ -374,6 +356,24 @@
           "event": "vs. East Jessamine",
           "season": 2020,
           "opponent_ky": false
+        },
+        {
+          "date": "2019-12-14",
+          "opponent_id": "10995733132",
+          "opponent_career_id": "career_008689",
+          "opponent_name": "haley mills",
+          "opponent_team": "Knox Central High School",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Knox Central High School",
+          "season": 2020,
+          "opponent_ky": true
         }
       ]
     }

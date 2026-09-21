@@ -3,8 +3,8 @@
   "canonical_name": "Noah Autry",
   "career_record": {
     "wins": 1,
-    "losses": 5,
-    "win_pct": 0.167
+    "losses": 6,
+    "win_pct": 0.143
   },
   "seasons": [
     {
@@ -13,12 +13,30 @@
       "grade": 10,
       "team": "Moore",
       "weight_class": 157,
-      "record": "1-5",
+      "record": "1-6",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
+        {
+          "date": "2019-12-21",
+          "opponent_id": "10661069132",
+          "opponent_career_id": "career_006439",
+          "opponent_name": "Jacobie White",
+          "opponent_team": "Harrison County",
+          "opponent_team_rank": null,
+          "opponent_weight": 157,
+          "opponent_rank": null,
+          "weight_class": "165",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:45",
+          "event": "vs. Harrison County",
+          "season": 2020,
+          "opponent_ky": true
+        },
         {
           "date": "2019-12-21",
           "opponent_id": "OUTSTATE_f7a759a6e967",
@@ -36,24 +54,6 @@
           "event": "vs. Valley",
           "season": 2020,
           "opponent_ky": false
-        },
-        {
-          "date": "2019-12-21",
-          "opponent_id": "10661069132",
-          "opponent_career_id": "career_006439",
-          "opponent_name": "Jacobie White",
-          "opponent_team": "Harrison County",
-          "opponent_team_rank": null,
-          "opponent_weight": 157,
-          "opponent_rank": null,
-          "weight_class": "165",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:45",
-          "event": "vs. Moore",
-          "season": 2020,
-          "opponent_ky": true
         },
         {
           "date": "2019-12-18",
@@ -141,7 +141,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Moore",
+          "event": "vs. Desales",
           "season": 2020,
           "opponent_ky": true
         }

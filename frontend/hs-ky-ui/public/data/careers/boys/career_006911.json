@@ -3,8 +3,8 @@
   "canonical_name": "Dalton Green",
   "career_record": {
     "wins": 3,
-    "losses": 20,
-    "win_pct": 0.13
+    "losses": 21,
+    "win_pct": 0.125
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 11,
       "team": "Anderson County",
       "weight_class": 126,
-      "record": "3-20",
+      "record": "3-21",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -57,6 +57,24 @@
         },
         {
           "date": "2023-01-14",
+          "opponent_id": "OUTSTATE_fa7f930d70be",
+          "opponent_career_id": null,
+          "opponent_name": "Unknown",
+          "opponent_team": "Franklin County",
+          "opponent_team_rank": null,
+          "opponent_weight": null,
+          "opponent_rank": null,
+          "weight_class": "132",
+          "result": "W",
+          "method": "FF",
+          "score": null,
+          "duration": "7:00",
+          "event": "vs. Franklin County",
+          "season": 2023,
+          "opponent_ky": false
+        },
+        {
+          "date": "2023-01-14",
           "opponent_id": "20262724132",
           "opponent_career_id": "career_006469",
           "opponent_name": "Amari Hardin",
@@ -70,24 +88,6 @@
           "score": null,
           "duration": "0:38",
           "event": "vs. John Hardin",
-          "season": 2023,
-          "opponent_ky": true
-        },
-        {
-          "date": "2023-01-14",
-          "opponent_id": "20169817132",
-          "opponent_career_id": "career_003470",
-          "opponent_name": "Kelton Baily",
-          "opponent_team": "Western Hills",
-          "opponent_team_rank": null,
-          "opponent_weight": 120,
-          "opponent_rank": null,
-          "weight_class": "126",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:39",
-          "event": "vs. Western Hills",
           "season": 2023,
           "opponent_ky": true
         },
@@ -111,21 +111,21 @@
         },
         {
           "date": "2023-01-14",
-          "opponent_id": "OUTSTATE_fa7f930d70be",
-          "opponent_career_id": null,
-          "opponent_name": "Unknown",
-          "opponent_team": "Franklin County",
+          "opponent_id": "20169817132",
+          "opponent_career_id": "career_003470",
+          "opponent_name": "Kelton Baily",
+          "opponent_team": "Western Hills",
           "opponent_team_rank": null,
-          "opponent_weight": null,
+          "opponent_weight": 120,
           "opponent_rank": null,
-          "weight_class": "132",
-          "result": "W",
-          "method": "FF",
+          "weight_class": "126",
+          "result": "L",
+          "method": "FALL",
           "score": null,
-          "duration": "7:00",
-          "event": "vs. Franklin County",
+          "duration": "0:39",
+          "event": "vs. Western Hills",
           "season": 2023,
-          "opponent_ky": false
+          "opponent_ky": true
         },
         {
           "date": "2023-01-05",
@@ -309,24 +309,6 @@
         },
         {
           "date": "2022-12-10",
-          "opponent_id": "20358883132",
-          "opponent_career_id": "career_002878",
-          "opponent_name": "TJ Meyer",
-          "opponent_team": "Walton Verona",
-          "opponent_team_rank": null,
-          "opponent_weight": 120,
-          "opponent_rank": null,
-          "weight_class": "126",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:33",
-          "event": "2022 Ryle Raider Rumble",
-          "season": 2023,
-          "opponent_ky": true
-        },
-        {
-          "date": "2022-12-10",
           "opponent_id": "20731342132",
           "opponent_career_id": null,
           "opponent_name": "Casey Jones",
@@ -344,6 +326,24 @@
           "opponent_ky": false
         },
         {
+          "date": "2022-12-10",
+          "opponent_id": "20358883132",
+          "opponent_career_id": "career_002878",
+          "opponent_name": "TJ Meyer",
+          "opponent_team": "Walton Verona",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:33",
+          "event": "2022 Ryle Raider Rumble",
+          "season": 2023,
+          "opponent_ky": true
+        },
+        {
           "date": "2022-12-03",
           "opponent_id": "20625432132",
           "opponent_career_id": "career_007299",
@@ -358,24 +358,6 @@
           "score": "8-0",
           "duration": "7:00",
           "event": "vs. George Rogers Clark",
-          "season": 2023,
-          "opponent_ky": true
-        },
-        {
-          "date": "2022-12-03",
-          "opponent_id": "20412934132",
-          "opponent_career_id": "career_003981",
-          "opponent_name": "Noah Mueller",
-          "opponent_team": "Central Hardin",
-          "opponent_team_rank": null,
-          "opponent_weight": 120,
-          "opponent_rank": null,
-          "weight_class": "126",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:10",
-          "event": "vs. Anderson County",
           "season": 2023,
           "opponent_ky": true
         },
@@ -450,6 +432,24 @@
           "event": "vs. Green County",
           "season": 2023,
           "opponent_ky": false
+        },
+        {
+          "date": "2022-12-03",
+          "opponent_id": "20412934132",
+          "opponent_career_id": "career_003981",
+          "opponent_name": "Noah Mueller",
+          "opponent_team": "Central Hardin",
+          "opponent_team_rank": null,
+          "opponent_weight": 120,
+          "opponent_rank": null,
+          "weight_class": "126",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:10",
+          "event": "vs. Central Hardin",
+          "season": 2023,
+          "opponent_ky": true
         }
       ]
     }

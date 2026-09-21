@@ -3,8 +3,8 @@
   "canonical_name": "Alex Reyes",
   "career_record": {
     "wins": 6,
-    "losses": 10,
-    "win_pct": 0.375
+    "losses": 13,
+    "win_pct": 0.316
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 11,
       "team": "Bryan Station",
       "weight_class": 165,
-      "record": "6-10",
+      "record": "6-13",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -75,6 +75,24 @@
         },
         {
           "date": "2015-01-28",
+          "opponent_id": "100624071",
+          "opponent_career_id": "career_010458",
+          "opponent_name": "Will Baber",
+          "opponent_team": "Bourbon County",
+          "opponent_team_rank": null,
+          "opponent_weight": 165,
+          "opponent_rank": null,
+          "weight_class": "165",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Bourbon County",
+          "season": 2015,
+          "opponent_ky": true
+        },
+        {
+          "date": "2015-01-28",
           "opponent_id": "48092013",
           "opponent_career_id": "career_014374",
           "opponent_name": "Colin Hunt",
@@ -88,24 +106,6 @@
           "score": null,
           "duration": "0:48",
           "event": "vs. Lexington Catholic",
-          "season": 2015,
-          "opponent_ky": true
-        },
-        {
-          "date": "2015-01-28",
-          "opponent_id": "100624071",
-          "opponent_career_id": "career_010458",
-          "opponent_name": "Will Baber",
-          "opponent_team": "Bourbon County",
-          "opponent_team_rank": null,
-          "opponent_weight": 165,
-          "opponent_rank": null,
-          "weight_class": "165",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Bryan Station",
           "season": 2015,
           "opponent_ky": true
         },
@@ -177,7 +177,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Bryan Station",
+          "event": "vs. Johnson Central",
           "season": 2015,
           "opponent_ky": true
         },
@@ -195,7 +195,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Bryan Station",
+          "event": "vs. Montgomery County",
           "season": 2015,
           "opponent_ky": true
         },
@@ -213,7 +213,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:20",
-          "event": "vs. Bryan Station",
+          "event": "vs. Phelps",
           "season": 2015,
           "opponent_ky": true
         },
@@ -268,6 +268,24 @@
           "score": null,
           "duration": "1:00",
           "event": "Rumble on the Hilltop",
+          "season": 2015,
+          "opponent_ky": true
+        },
+        {
+          "date": "2014-11-29",
+          "opponent_id": "72019076",
+          "opponent_career_id": "career_014007",
+          "opponent_name": "Louis Hollings",
+          "opponent_team": "John Hardin",
+          "opponent_team_rank": null,
+          "opponent_weight": 175,
+          "opponent_rank": null,
+          "weight_class": "190",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "2:12",
+          "event": "vs. John Hardin",
           "season": 2015,
           "opponent_ky": true
         },
@@ -342,24 +360,6 @@
           "event": "vs. Whitley County",
           "season": 2015,
           "opponent_ky": false
-        },
-        {
-          "date": "2014-11-29",
-          "opponent_id": "72019076",
-          "opponent_career_id": "career_014007",
-          "opponent_name": "Louis Hollings",
-          "opponent_team": "John Hardin",
-          "opponent_team_rank": null,
-          "opponent_weight": 175,
-          "opponent_rank": null,
-          "weight_class": "190",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "2:12",
-          "event": "vs. John Hardin",
-          "season": 2015,
-          "opponent_ky": true
         }
       ]
     }

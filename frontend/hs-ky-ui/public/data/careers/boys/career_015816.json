@@ -3,8 +3,8 @@
   "canonical_name": "Noah Morgan",
   "career_record": {
     "wins": 1,
-    "losses": 2,
-    "win_pct": 0.333
+    "losses": 5,
+    "win_pct": 0.167
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": null,
       "team": "Eastern",
       "weight_class": 113,
-      "record": "1-2",
+      "record": "1-5",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -39,6 +39,24 @@
         },
         {
           "date": "2012-12-01",
+          "opponent_id": "1296582009",
+          "opponent_career_id": "career_016316",
+          "opponent_name": "Zach Mans",
+          "opponent_team": "Franklin County",
+          "opponent_team_rank": null,
+          "opponent_weight": 113,
+          "opponent_rank": null,
+          "weight_class": "113",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:30",
+          "event": "vs. Franklin County",
+          "season": 2013,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-12-01",
           "opponent_id": "1431421009",
           "opponent_career_id": "career_015626",
           "opponent_name": "thomas kloentrup",
@@ -51,7 +69,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:30",
-          "event": "vs. Eastern",
+          "event": "vs. Simon Kenton",
           "season": 2013,
           "opponent_ky": true
         },
@@ -105,7 +123,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:41",
-          "event": "vs. Eastern",
+          "event": "vs. South Oldham",
           "season": 2013,
           "opponent_ky": true
         }

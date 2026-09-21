@@ -3,8 +3,8 @@
   "canonical_name": "Austin Loechel",
   "career_record": {
     "wins": 3,
-    "losses": 5,
-    "win_pct": 0.375
+    "losses": 6,
+    "win_pct": 0.333
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 7,
       "team": "Boone County",
       "weight_class": 106,
-      "record": "3-5",
+      "record": "3-6",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -141,7 +141,25 @@
           "method": "FALL",
           "score": null,
           "duration": "1:03",
-          "event": "vs. Boone County",
+          "event": "vs. Henry Clay",
+          "season": 2017,
+          "opponent_ky": true
+        },
+        {
+          "date": "2016-11-30",
+          "opponent_id": "9874751009",
+          "opponent_career_id": "career_007792",
+          "opponent_name": "Noah Toomey",
+          "opponent_team": "Grant County",
+          "opponent_team_rank": null,
+          "opponent_weight": 106,
+          "opponent_rank": null,
+          "weight_class": "106",
+          "result": "W",
+          "method": "DEC",
+          "score": "6-4",
+          "duration": "7:00",
+          "event": "vs. Grant County",
           "season": 2017,
           "opponent_ky": true
         },
@@ -162,24 +180,6 @@
           "event": "vs. Newport",
           "season": 2017,
           "opponent_ky": false
-        },
-        {
-          "date": "2016-11-30",
-          "opponent_id": "9874751009",
-          "opponent_career_id": "career_007792",
-          "opponent_name": "Noah Toomey",
-          "opponent_team": "Grant County",
-          "opponent_team_rank": null,
-          "opponent_weight": 106,
-          "opponent_rank": null,
-          "weight_class": "106",
-          "result": "W",
-          "method": "DEC",
-          "score": "6-4",
-          "duration": "7:00",
-          "event": "vs. Grant County",
-          "season": 2017,
-          "opponent_ky": true
         }
       ]
     }

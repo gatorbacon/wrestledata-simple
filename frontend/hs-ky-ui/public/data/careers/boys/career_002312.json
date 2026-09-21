@@ -3,10 +3,62 @@
   "canonical_name": "Trevon Covington",
   "career_record": {
     "wins": 0,
-    "losses": 7,
+    "losses": 9,
     "win_pct": 0.0
   },
   "seasons": [
+    {
+      "season": 2026,
+      "wrestler_id": "36503560132",
+      "grade": 11,
+      "team": "Russellville",
+      "weight_class": 157,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": true,
+      "state_place": null,
+      "current_rank": 183,
+      "matches": [
+        {
+          "date": "2026-01-13",
+          "opponent_id": "35024706132",
+          "opponent_career_id": null,
+          "opponent_name": "Dillon Bowers",
+          "opponent_team": "South Warren",
+          "opponent_team_rank": 129,
+          "opponent_weight": 157,
+          "opponent_rank": 124,
+          "weight_class": "157",
+          "result": "L",
+          "method": "DQ",
+          "score": null,
+          "duration": "7:00",
+          "event": "vs. South Warren",
+          "mv_impact": -8.94,
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2026-01-08",
+          "opponent_id": "35598005132",
+          "opponent_career_id": "career_002731",
+          "opponent_name": "Cooper Adams",
+          "opponent_team": "Trigg County",
+          "opponent_team_rank": 133,
+          "opponent_weight": 144,
+          "opponent_rank": 25,
+          "weight_class": "144",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Trigg County",
+          "mv_impact": -2.67,
+          "season": 2026,
+          "opponent_ky": true
+        }
+      ]
+    },
     {
       "season": 2025,
       "wrestler_id": "30241479132",
@@ -123,7 +175,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:39",
-          "event": "vs. Russellville",
+          "event": "vs. Fort Campbell",
           "season": 2025,
           "opponent_ky": true
         },
@@ -141,7 +193,7 @@
           "method": "FALL",
           "score": null,
           "duration": "2:47",
-          "event": "vs. Russellville",
+          "event": "vs. Fort Knox",
           "season": 2025,
           "opponent_ky": true
         }

@@ -3,8 +3,8 @@
   "canonical_name": "Shakien Boyd",
   "career_record": {
     "wins": 30,
-    "losses": 19,
-    "win_pct": 0.612
+    "losses": 20,
+    "win_pct": 0.6
   },
   "seasons": [
     {
@@ -13,30 +13,12 @@
       "grade": 12,
       "team": "Iroquois",
       "weight_class": 285,
-      "record": "10-4",
+      "record": "10-3",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
-        {
-          "date": "2016-01-30",
-          "opponent_id": "8274428009",
-          "opponent_career_id": "career_013272",
-          "opponent_name": "Hayden Polston",
-          "opponent_team": "Central Hardin",
-          "opponent_team_rank": null,
-          "opponent_weight": 215,
-          "opponent_rank": null,
-          "weight_class": "285",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "5:00",
-          "event": "Ft. Knox Invitational",
-          "season": 2016,
-          "opponent_ky": true
-        },
         {
           "date": "2016-01-30",
           "opponent_id": "317219010",
@@ -69,6 +51,24 @@
           "method": "FALL",
           "score": null,
           "duration": "3:34",
+          "event": "Ft. Knox Invitational",
+          "season": 2016,
+          "opponent_ky": true
+        },
+        {
+          "date": "2016-01-30",
+          "opponent_id": "8274428009",
+          "opponent_career_id": "career_013272",
+          "opponent_name": "Hayden Polston",
+          "opponent_team": "Central Hardin",
+          "opponent_team_rank": null,
+          "opponent_weight": 215,
+          "opponent_rank": null,
+          "weight_class": "285",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "5:00",
           "event": "Ft. Knox Invitational",
           "season": 2016,
           "opponent_ky": true
@@ -111,6 +111,24 @@
         },
         {
           "date": "2016-01-30",
+          "opponent_id": "562828094",
+          "opponent_career_id": "career_013106",
+          "opponent_name": "Landon Young",
+          "opponent_team": "Lafayette",
+          "opponent_team_rank": null,
+          "opponent_weight": 285,
+          "opponent_rank": null,
+          "weight_class": "285",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:30",
+          "event": "Ft. Knox Invitational",
+          "season": 2016,
+          "opponent_ky": true
+        },
+        {
+          "date": "2016-01-30",
           "opponent_id": "OUTSTATE_e6a7451944c7",
           "opponent_career_id": null,
           "opponent_name": "Logan Thomas",
@@ -147,24 +165,6 @@
         },
         {
           "date": "2015-12-12",
-          "opponent_id": "301033013",
-          "opponent_career_id": "career_013097",
-          "opponent_name": "Stephen Kaiser",
-          "opponent_team": "John Hardin",
-          "opponent_team_rank": null,
-          "opponent_weight": 215,
-          "opponent_rank": null,
-          "weight_class": "285",
-          "result": "W",
-          "method": "DEC",
-          "score": "3-2",
-          "duration": "7:00",
-          "event": "King of the Bluegrass@ Fairdale",
-          "season": 2016,
-          "opponent_ky": true
-        },
-        {
-          "date": "2015-12-12",
           "opponent_id": "493514071",
           "opponent_career_id": "career_012262",
           "opponent_name": "Trevon Wright",
@@ -177,6 +177,24 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
+          "event": "King of the Bluegrass@ Fairdale",
+          "season": 2016,
+          "opponent_ky": true
+        },
+        {
+          "date": "2015-12-12",
+          "opponent_id": "301033013",
+          "opponent_career_id": "career_013097",
+          "opponent_name": "Stephen Kaiser",
+          "opponent_team": "John Hardin",
+          "opponent_team_rank": null,
+          "opponent_weight": 215,
+          "opponent_rank": null,
+          "weight_class": "285",
+          "result": "W",
+          "method": "DEC",
+          "score": "3-2",
+          "duration": "7:00",
           "event": "King of the Bluegrass@ Fairdale",
           "season": 2016,
           "opponent_ky": true
@@ -195,25 +213,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:07",
-          "event": "vs. Iroquois",
-          "season": 2016,
-          "opponent_ky": true
-        },
-        {
-          "date": "2015-12-05",
-          "opponent_id": "295171013",
-          "opponent_career_id": "career_010737",
-          "opponent_name": "Caleb Mills",
-          "opponent_team": "Trinity (Whitesville)",
-          "opponent_team_rank": null,
-          "opponent_weight": 215,
-          "opponent_rank": null,
-          "weight_class": "285",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:56",
-          "event": "vs. Trinity (Whitesville)",
+          "event": "vs. Desales",
           "season": 2016,
           "opponent_ky": true
         },
@@ -234,6 +234,24 @@
           "event": "vs. La Rue County",
           "season": 2016,
           "opponent_ky": false
+        },
+        {
+          "date": "2015-12-05",
+          "opponent_id": "295171013",
+          "opponent_career_id": "career_010737",
+          "opponent_name": "Caleb Mills",
+          "opponent_team": "Trinity (Whitesville)",
+          "opponent_team_rank": null,
+          "opponent_weight": 215,
+          "opponent_rank": null,
+          "weight_class": "285",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:56",
+          "event": "vs. Trinity (Whitesville)",
+          "season": 2016,
+          "opponent_ky": true
         }
       ]
     },
@@ -243,7 +261,7 @@
       "grade": 11,
       "team": "Iroquois",
       "weight_class": 285,
-      "record": "19-12",
+      "record": "18-11",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -317,7 +335,7 @@
           "method": "FALL",
           "score": null,
           "duration": "3:00",
-          "event": "vs. Iroquois",
+          "event": "vs. Bullitt Central",
           "season": 2015,
           "opponent_ky": true
         },
@@ -335,7 +353,7 @@
           "method": "DEC",
           "score": "4-2",
           "duration": "7:00",
-          "event": "vs. Iroquois",
+          "event": "vs. Danville",
           "season": 2015,
           "opponent_ky": true
         },
@@ -623,7 +641,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:23",
-          "event": "vs. Iroquois",
+          "event": "vs. Apollo",
           "season": 2015,
           "opponent_ky": true
         },
@@ -641,7 +659,7 @@
           "method": "FALL",
           "score": null,
           "duration": "3:00",
-          "event": "vs. Iroquois",
+          "event": "vs. Central",
           "season": 2015,
           "opponent_ky": true
         },
@@ -659,7 +677,7 @@
           "method": "FALL",
           "score": null,
           "duration": "2:10",
-          "event": "vs. Iroquois",
+          "event": "vs. Central Hardin",
           "season": 2015,
           "opponent_ky": true
         },
@@ -779,7 +797,7 @@
       "grade": null,
       "team": "Iroquois",
       "weight_class": 285,
-      "record": "1-1",
+      "record": "2-3",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -871,7 +889,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:50",
-          "event": "vs. Iroquois",
+          "event": "vs. Eastern",
           "season": 2014,
           "opponent_ky": true
         }
@@ -883,7 +901,7 @@
       "grade": null,
       "team": "Iroquois",
       "weight_class": 190,
-      "record": "0-2",
+      "record": "0-3",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -903,7 +921,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "KHSAA Region 3",
+          "event": "Regionals",
           "season": 2013,
           "opponent_ky": true
         },
@@ -939,7 +957,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:30",
-          "event": "vs. Iroquois",
+          "event": "vs. North Oldham",
           "season": 2013,
           "opponent_ky": true
         }

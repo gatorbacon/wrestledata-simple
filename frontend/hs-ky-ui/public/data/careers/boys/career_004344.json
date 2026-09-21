@@ -2,9 +2,9 @@
   "career_id": "career_004344",
   "canonical_name": "Hunter Woster",
   "career_record": {
-    "wins": 1,
+    "wins": 3,
     "losses": 3,
-    "win_pct": 0.25
+    "win_pct": 0.5
   },
   "seasons": [
     {
@@ -13,30 +13,12 @@
       "grade": 9,
       "team": "Pulaski County",
       "weight_class": 285,
-      "record": "1-3",
+      "record": "3-3",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
-        {
-          "date": "2024-01-13",
-          "opponent_id": "25407248132",
-          "opponent_career_id": "career_003458",
-          "opponent_name": "Bailey Jones",
-          "opponent_team": "Wayne County",
-          "opponent_team_rank": null,
-          "opponent_weight": 215,
-          "opponent_rank": null,
-          "weight_class": "285",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "1:19",
-          "event": "vs. Wayne County",
-          "season": 2024,
-          "opponent_ky": true
-        },
         {
           "date": "2024-01-13",
           "opponent_id": "OUTSTATE_da57d6ecb7ed",
@@ -54,6 +36,24 @@
           "event": "vs. Corbin",
           "season": 2024,
           "opponent_ky": false
+        },
+        {
+          "date": "2024-01-13",
+          "opponent_id": "25407248132",
+          "opponent_career_id": "career_003458",
+          "opponent_name": "Bailey Jones",
+          "opponent_team": "Wayne County",
+          "opponent_team_rank": null,
+          "opponent_weight": 215,
+          "opponent_rank": null,
+          "weight_class": "285",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:19",
+          "event": "vs. Wayne County",
+          "season": 2024,
+          "opponent_ky": true
         },
         {
           "date": "2023-12-19",
@@ -123,7 +123,7 @@
           "method": "FALL",
           "score": null,
           "duration": "2:57",
-          "event": "vs. Pulaski County",
+          "event": "vs. Daviess County",
           "season": 2024,
           "opponent_ky": true
         }

@@ -3,8 +3,8 @@
   "canonical_name": "John Lennon",
   "career_record": {
     "wins": 3,
-    "losses": 2,
-    "win_pct": 0.6
+    "losses": 3,
+    "win_pct": 0.5
   },
   "seasons": [
     {
@@ -13,30 +13,12 @@
       "grade": 11,
       "team": "Atherton",
       "weight_class": 165,
-      "record": "3-2",
+      "record": "3-3",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
-        {
-          "date": "2016-12-17",
-          "opponent_id": "951455076",
-          "opponent_career_id": "career_012648",
-          "opponent_name": "Derrick Carter",
-          "opponent_team": "Valley",
-          "opponent_team_rank": null,
-          "opponent_weight": 157,
-          "opponent_rank": null,
-          "weight_class": "165",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Valley",
-          "season": 2017,
-          "opponent_ky": true
-        },
         {
           "date": "2016-12-17",
           "opponent_id": "862348076",
@@ -72,6 +54,24 @@
           "event": "vs. North Oldham",
           "season": 2017,
           "opponent_ky": false
+        },
+        {
+          "date": "2016-12-17",
+          "opponent_id": "951455076",
+          "opponent_career_id": "career_012648",
+          "opponent_name": "Derrick Carter",
+          "opponent_team": "Valley",
+          "opponent_team_rank": null,
+          "opponent_weight": 157,
+          "opponent_rank": null,
+          "weight_class": "165",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Valley",
+          "season": 2017,
+          "opponent_ky": true
         },
         {
           "date": "2016-12-17",
@@ -123,7 +123,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Atherton",
+          "event": "vs. Bullitt East",
           "season": 2017,
           "opponent_ky": true
         }

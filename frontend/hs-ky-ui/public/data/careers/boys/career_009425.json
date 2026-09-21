@@ -3,8 +3,8 @@
   "canonical_name": "Justin Muncy",
   "career_record": {
     "wins": 6,
-    "losses": 20,
-    "win_pct": 0.231
+    "losses": 18,
+    "win_pct": 0.25
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 12,
       "team": "Valley",
       "weight_class": 165,
-      "record": "6-20",
+      "record": "6-18",
       "regional_place": 4,
       "regional_data_tracked": true,
       "state_place": null,
@@ -159,9 +159,27 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. valley",
+          "event": "vs. Desales",
           "season": 2020,
           "opponent_ky": true
+        },
+        {
+          "date": "2020-01-22",
+          "opponent_id": "OUTSTATE_b70f86745ea9",
+          "opponent_career_id": null,
+          "opponent_name": "Unknown",
+          "opponent_team": "Iroquois",
+          "opponent_team_rank": null,
+          "opponent_weight": null,
+          "opponent_rank": null,
+          "weight_class": "165",
+          "result": "W",
+          "method": "FF",
+          "score": null,
+          "duration": "7:00",
+          "event": "vs. Iroquois",
+          "season": 2020,
+          "opponent_ky": false
         },
         {
           "date": "2020-01-18",
@@ -303,7 +321,7 @@
           "method": "FALL",
           "score": null,
           "duration": "1:43",
-          "event": "vs. Valley",
+          "event": "vs. Harrison County",
           "season": 2020,
           "opponent_ky": true
         },
@@ -321,7 +339,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Valley",
+          "event": "vs. Pleasure Ridge Park",
           "season": 2020,
           "opponent_ky": true
         },
@@ -363,24 +381,6 @@
         },
         {
           "date": "2019-11-23",
-          "opponent_id": "10720145132",
-          "opponent_career_id": "career_007880",
-          "opponent_name": "Chris Cordoba",
-          "opponent_team": "North Bullitt",
-          "opponent_team_rank": null,
-          "opponent_weight": 157,
-          "opponent_rank": null,
-          "weight_class": "175",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Valley",
-          "season": 2020,
-          "opponent_ky": true
-        },
-        {
-          "date": "2019-11-23",
           "opponent_id": "10903936132",
           "opponent_career_id": "career_009449",
           "opponent_name": "Brandon Vaughn",
@@ -393,7 +393,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Valley",
+          "event": "vs. Bullitt Central",
           "season": 2020,
           "opponent_ky": true
         },
@@ -411,7 +411,25 @@
           "method": "FALL",
           "score": null,
           "duration": "1:56",
-          "event": "vs. Valley",
+          "event": "vs. Fern Creek",
+          "season": 2020,
+          "opponent_ky": true
+        },
+        {
+          "date": "2019-11-23",
+          "opponent_id": "10720145132",
+          "opponent_career_id": "career_007880",
+          "opponent_name": "Chris Cordoba",
+          "opponent_team": "North Bullitt",
+          "opponent_team_rank": null,
+          "opponent_weight": 157,
+          "opponent_rank": null,
+          "weight_class": "175",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. North Bullitt",
           "season": 2020,
           "opponent_ky": true
         },

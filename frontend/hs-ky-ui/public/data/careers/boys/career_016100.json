@@ -2,9 +2,9 @@
   "career_id": "career_016100",
   "canonical_name": "Jonathan Schmidt",
   "career_record": {
-    "wins": 0,
+    "wins": 1,
     "losses": 3,
-    "win_pct": 0.0
+    "win_pct": 0.25
   },
   "seasons": [
     {
@@ -13,30 +13,12 @@
       "grade": null,
       "team": "Trinity (Louisville)",
       "weight_class": 165,
-      "record": "0-3",
+      "record": "1-3",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
-        {
-          "date": "2012-12-01",
-          "opponent_id": "1473335009",
-          "opponent_career_id": "career_012397",
-          "opponent_name": "Jacob Smith",
-          "opponent_team": "Western Hills",
-          "opponent_team_rank": null,
-          "opponent_weight": 157,
-          "opponent_rank": null,
-          "weight_class": "165",
-          "result": "W",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:00",
-          "event": "vs. Trinity (Louisville)",
-          "season": 2013,
-          "opponent_ky": true
-        },
         {
           "date": "2012-12-01",
           "opponent_id": "1264230009",
@@ -51,7 +33,7 @@
           "method": "FALL",
           "score": null,
           "duration": "2:28",
-          "event": "vs. Trinity (Louisville)",
+          "event": "vs. Conner",
           "season": 2013,
           "opponent_ky": true
         },
@@ -69,7 +51,7 @@
           "method": "FALL",
           "score": null,
           "duration": "2:40",
-          "event": "vs. Trinity (Louisville)",
+          "event": "vs. North Hardin",
           "season": 2013,
           "opponent_ky": true
         },
@@ -87,7 +69,25 @@
           "method": "FALL",
           "score": null,
           "duration": "0:32",
-          "event": "vs. Trinity (Louisville)",
+          "event": "vs. Tates Creek",
+          "season": 2013,
+          "opponent_ky": true
+        },
+        {
+          "date": "2012-12-01",
+          "opponent_id": "1473335009",
+          "opponent_career_id": "career_012397",
+          "opponent_name": "Jacob Smith",
+          "opponent_team": "Western Hills",
+          "opponent_team_rank": null,
+          "opponent_weight": 157,
+          "opponent_rank": null,
+          "weight_class": "165",
+          "result": "W",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "vs. Western Hills",
           "season": 2013,
           "opponent_ky": true
         }

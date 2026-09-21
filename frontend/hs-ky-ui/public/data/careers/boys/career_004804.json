@@ -3,8 +3,8 @@
   "canonical_name": "Gage Williams",
   "career_record": {
     "wins": 1,
-    "losses": 7,
-    "win_pct": 0.125
+    "losses": 9,
+    "win_pct": 0.1
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 9,
       "team": "Montgomery County",
       "weight_class": 144,
-      "record": "1-7",
+      "record": "1-9",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -57,25 +57,6 @@
         },
         {
           "date": "2026-01-07",
-          "opponent_id": "35223401132",
-          "opponent_career_id": "career_005053",
-          "opponent_name": "Elijah Davidson",
-          "opponent_team": "Mercer County",
-          "opponent_team_rank": 111,
-          "opponent_weight": 138,
-          "opponent_rank": 108,
-          "weight_class": "144",
-          "result": "L",
-          "method": "DEC",
-          "score": "11-7",
-          "duration": "7:00",
-          "event": "vs. Montgomery County",
-          "mv_impact": -6.92,
-          "season": 2026,
-          "opponent_ky": true
-        },
-        {
-          "date": "2026-01-07",
           "opponent_id": "34992810132",
           "opponent_career_id": "career_000274",
           "opponent_name": "Kamarius Ziesmer",
@@ -88,8 +69,27 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Montgomery County",
+          "event": "vs. Boyle County",
           "mv_impact": -3.58,
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2026-01-07",
+          "opponent_id": "35223401132",
+          "opponent_career_id": "career_005053",
+          "opponent_name": "Elijah Davidson",
+          "opponent_team": "Mercer County",
+          "opponent_team_rank": 111,
+          "opponent_weight": 138,
+          "opponent_rank": 108,
+          "weight_class": "144",
+          "result": "L",
+          "method": "DEC",
+          "score": "11-7",
+          "duration": "7:00",
+          "event": "vs. Mercer County",
+          "mv_impact": -6.92,
           "season": 2026,
           "opponent_ky": true
         },

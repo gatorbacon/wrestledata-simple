@@ -2,23 +2,129 @@
   "career_id": "career_001953",
   "canonical_name": "Taylor Evans",
   "career_record": {
-    "wins": 0,
-    "losses": 0,
-    "win_pct": 0.0
+    "wins": 1,
+    "losses": 4,
+    "win_pct": 0.2
   },
   "seasons": [
+    {
+      "season": 2026,
+      "wrestler_id": "34989018132",
+      "grade": 8,
+      "team": "Ohio County",
+      "weight_class": 120,
+      "record": "0-2",
+      "regional_place": null,
+      "regional_data_tracked": true,
+      "state_place": null,
+      "current_rank": 186,
+      "matches": [
+        {
+          "date": "2026-01-22",
+          "opponent_id": "34988688132",
+          "opponent_career_id": "career_000490",
+          "opponent_name": "Anthony Velasco",
+          "opponent_team": "Christian County",
+          "opponent_team_rank": 23,
+          "opponent_weight": 113,
+          "opponent_rank": 11,
+          "weight_class": "120",
+          "result": "L",
+          "method": "TF",
+          "score": "17-2",
+          "duration": "0:00",
+          "event": "vs. Christian County",
+          "season": 2026,
+          "opponent_ky": true
+        },
+        {
+          "date": "2026-01-13",
+          "opponent_id": "35133611132",
+          "opponent_career_id": "career_001259",
+          "opponent_name": "Christon Johnson",
+          "opponent_team": "Hopkinsville",
+          "opponent_team_rank": 93,
+          "opponent_weight": 120,
+          "opponent_rank": 26,
+          "weight_class": "120",
+          "result": "L",
+          "method": "TF",
+          "score": "18-2",
+          "duration": "3:21",
+          "event": "vs. Hopkinsville",
+          "mv_impact": -4.55,
+          "season": 2026,
+          "opponent_ky": true
+        }
+      ]
+    },
     {
       "season": 2025,
       "wrestler_id": "29863264132",
       "grade": 7,
       "team": "Ohio County",
       "weight_class": 120,
-      "record": "0-0",
+      "record": "1-2",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
-      "matches": []
+      "matches": [
+        {
+          "date": "2024-11-23",
+          "opponent_id": "OUTSTATE_e94eba160bb9",
+          "opponent_career_id": null,
+          "opponent_name": "Benjamin Voltz",
+          "opponent_team": "Central Hardin Middle School",
+          "opponent_team_rank": null,
+          "opponent_weight": null,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "1:11",
+          "event": "Bruin Brawl",
+          "season": 2025,
+          "opponent_ky": false
+        },
+        {
+          "date": "2024-11-23",
+          "opponent_id": "30271153132",
+          "opponent_career_id": null,
+          "opponent_name": "Asher Hallmark",
+          "opponent_team": "Henderson",
+          "opponent_team_rank": null,
+          "opponent_weight": null,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "W",
+          "method": "MD",
+          "score": "16-5",
+          "duration": "7:00",
+          "event": "Bruin Brawl",
+          "season": 2025,
+          "opponent_ky": false
+        },
+        {
+          "date": "2024-11-23",
+          "opponent_id": "30230734132",
+          "opponent_career_id": null,
+          "opponent_name": "Riley Jones",
+          "opponent_team": "Holmes Middle School",
+          "opponent_team_rank": null,
+          "opponent_weight": null,
+          "opponent_rank": null,
+          "weight_class": "120",
+          "result": "L",
+          "method": "TF",
+          "score": "15-0",
+          "duration": "1:34",
+          "event": "Bruin Brawl",
+          "season": 2025,
+          "opponent_ky": false
+        }
+      ]
     }
   ]
 }

@@ -3,8 +3,8 @@
   "canonical_name": "Ubaldo Perez",
   "career_record": {
     "wins": 9,
-    "losses": 21,
-    "win_pct": 0.3
+    "losses": 26,
+    "win_pct": 0.257
   },
   "seasons": [
     {
@@ -13,7 +13,7 @@
       "grade": 11,
       "team": "Fairdale",
       "weight_class": 285,
-      "record": "8-14",
+      "record": "8-15",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
@@ -213,7 +213,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:46",
-          "event": "vs. Fairdale",
+          "event": "vs. Bullitt East",
           "season": 2020,
           "opponent_ky": true
         },
@@ -249,7 +249,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Fairdale",
+          "event": "vs. Anderson County",
           "season": 2020,
           "opponent_ky": true
         },
@@ -375,7 +375,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:29",
-          "event": "vs. Fairdale",
+          "event": "vs. Bullitt East",
           "season": 2020,
           "opponent_ky": true
         },
@@ -441,12 +441,30 @@
       "grade": 9,
       "team": "Fairdale",
       "weight_class": 215,
-      "record": "1-7",
+      "record": "1-11",
       "regional_place": null,
       "regional_data_tracked": true,
       "state_place": null,
       "current_rank": null,
       "matches": [
+        {
+          "date": "2017-01-24",
+          "opponent_id": "558502010",
+          "opponent_career_id": "career_012181",
+          "opponent_name": "Austin Miller",
+          "opponent_team": "Bullitt East",
+          "opponent_team_rank": null,
+          "opponent_weight": 215,
+          "opponent_rank": null,
+          "weight_class": "215",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:00",
+          "event": "JV Regionl 3 Desales",
+          "season": 2017,
+          "opponent_ky": true
+        },
         {
           "date": "2017-01-24",
           "opponent_id": "558502010",
@@ -479,7 +497,7 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Fairdale",
+          "event": "vs. Valley",
           "season": 2017,
           "opponent_ky": true
         },
@@ -611,24 +629,6 @@
         },
         {
           "date": "2016-12-07",
-          "opponent_id": "983349076",
-          "opponent_career_id": "career_010588",
-          "opponent_name": "Dominic Hope",
-          "opponent_team": "John Hardin",
-          "opponent_team_rank": null,
-          "opponent_weight": 190,
-          "opponent_rank": null,
-          "weight_class": "215",
-          "result": "L",
-          "method": "FALL",
-          "score": null,
-          "duration": "0:53",
-          "event": "vs. Fairdale",
-          "season": 2017,
-          "opponent_ky": true
-        },
-        {
-          "date": "2016-12-07",
           "opponent_id": "558502010",
           "opponent_career_id": "career_012181",
           "opponent_name": "Austin Miller",
@@ -641,7 +641,25 @@
           "method": "FALL",
           "score": null,
           "duration": "0:00",
-          "event": "vs. Fairdale",
+          "event": "vs. Bullitt East",
+          "season": 2017,
+          "opponent_ky": true
+        },
+        {
+          "date": "2016-12-07",
+          "opponent_id": "983349076",
+          "opponent_career_id": "career_010588",
+          "opponent_name": "Dominic Hope",
+          "opponent_team": "John Hardin",
+          "opponent_team_rank": null,
+          "opponent_weight": 190,
+          "opponent_rank": null,
+          "weight_class": "215",
+          "result": "L",
+          "method": "FALL",
+          "score": null,
+          "duration": "0:53",
+          "event": "vs. John Hardin",
           "season": 2017,
           "opponent_ky": true
         }
