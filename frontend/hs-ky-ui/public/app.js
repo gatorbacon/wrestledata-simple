@@ -540,7 +540,7 @@ function safe(value, formatter) {
         const rank = m.opponent_rank;
         if (rank && rank <= 25) isWin ? vsTop25W++ : vsTop25L++;
         if (rank && rank <= 10) isWin ? vsTop10W++ : vsTop10L++;
-        if (isWin && (m.method === "FF" || isForfeitMatch(m))) { forfeitWins++; return; }
+        if (isWin && (m.method === "FF" || m.method === "MFF" || isForfeitMatch(m))) { forfeitWins++; return; }   // FF and medical forfeits count as wins but not toward pin/bonus rates
         if (isWin && m.method === "FALL") falls++;
         if (isWin && m.method === "TF") techs++;
         if (isWin && m.method === "MD") mds++;
