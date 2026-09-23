@@ -724,7 +724,20 @@ async function initRankings() {
   
   // Load weight-specific content (notes + rankings)
   await loadAndRenderWeight(gender, season, weight, dropId, isBaseline);
-  
+
+  // Place the rankings-top ad once. Weight-tab clicks only re-render
+  // #rankings-table's tbody (see loadAndRenderWeight/renderRankings) — this
+  // container is never touched by that, so the ad is requested exactly once
+  // per page load, not on every weight switch.
+  const adAnchor = document.getElementById('ad-rankings-top-container');
+  if (adAnchor && window.KM_ADS) {
+    const slotEl = window.KM_ADS.createAdSlotElement('rankings-top');
+    if (slotEl) {
+      adAnchor.replaceWith(slotEl);
+      window.KM_ADS.placeAd(slotEl, 'rankings-top');
+    }
+  }
+
   // Set up weight tab click handlers to reload notes and rankings
   const weightTabs = document.querySelectorAll('.weight-tab');
   weightTabs.forEach(tab => {

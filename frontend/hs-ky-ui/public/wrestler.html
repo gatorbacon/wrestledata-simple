@@ -79,19 +79,11 @@
       </div>
     </section>
 
-    <!-- AdSense ad block commented out until approved (verification script in head remains)
-    <div class="ad-container" id="wrestler-ad-container">
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-6991551662268186"
-           data-ad-slot="9357300909"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
-    </div>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    -->
+    <!-- Season-view ad slot, filled by app.js (KM-Profile-Top). Also used by
+         renderSimplifiedSeasonStats() in app.js as a positioning anchor for
+         the Season Stats section (inserted immediately before this). Not
+         used on the career_id view — see renderCareerProfile in app.js. -->
+    <div id="wrestler-ad-container"></div>
 
     <!-- MATCH HISTORY -->
     <section class="section section--match-history">
@@ -115,9 +107,15 @@
       </div>
       <div id="match-data-note" class="system-notice" style="display: none;" role="status"></div>
     </section>
+
+    <!-- Season-view ad slot, filled by app.js (KM-Profile-Bottom), only for
+         wrestlers with a long enough history (see KM_ADS.LONG_HISTORY_THRESHOLD).
+         Not used on the career_id view — see renderCareerProfile in app.js. -->
+    <div id="wrestler-ad-container-bottom"></div>
   </div>
 
   <script src="/hs_config.js"></script>
+  <script src="/js/ads.js"></script>
   <script src="/app.js"></script>
   <script src="/tooltips.js"></script>
 

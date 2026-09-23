@@ -315,7 +315,11 @@ function safe(value, formatter) {
     metaEl.innerHTML = "";
 
     // === Hide NCAA/unused sections === (xtp-section removed from wrestler.html 2026-09-23, was NCAA-only)
-    ["mv-section", "match-impact-section", "skill-section", "mv-context-section"].forEach(id => {
+    // wrestler-ad-container(-bottom) are the season-view ad anchors (used by
+    // renderSimplifiedSeasonStats/renderWrestlerProfile below) — this
+    // (career_id) view builds its own ad slots inside #career-profile-section
+    // instead, so hide the static ones to avoid a stray empty gap.
+    ["mv-section", "match-impact-section", "skill-section", "mv-context-section", "wrestler-ad-container", "wrestler-ad-container-bottom"].forEach(id => {
       const el = document.getElementById(id);
       if (el) el.style.display = "none";
     });
@@ -486,6 +490,17 @@ function safe(value, formatter) {
       section.appendChild(summaryCards);
     }
 
+    // Ad slot (KM-Profile-Top) — below the career summary, above the season
+    // tabs. Inserted once here; stable across season-tab clicks since those
+    // only touch panelDiv below, not this section-level placement.
+    if (window.KM_ADS) {
+      const adTop = window.KM_ADS.createAdSlotElement("profile-top");
+      if (adTop) {
+        section.appendChild(adTop);
+        window.KM_ADS.placeAd(adTop, "profile-top");
+      }
+    }
+
     // Season tabs — desktop only (mobile tabs are injected inside the panel)
     if (seasons.length > 0) {
       const tabsDiv = document.createElement("div");
@@ -505,6 +520,17 @@ function safe(value, formatter) {
     const panelDiv = document.createElement("div");
     panelDiv.id = "season-panel";
     section.appendChild(panelDiv);
+
+    // Ad slot (KM-Profile-Bottom) — after the match history panel, only for
+    // wrestlers with a long enough career (a short/new profile shouldn't
+    // feel ad-heavy relative to its content).
+    if (window.KM_ADS && (_crWins + _crLosses) >= window.KM_ADS.LONG_HISTORY_THRESHOLD) {
+      const adBottom = window.KM_ADS.createAdSlotElement("profile-bottom");
+      if (adBottom) {
+        section.appendChild(adBottom);
+        window.KM_ADS.placeAd(adBottom, "profile-bottom");
+      }
+    }
 
     // Activate default (most recent) season
     if (seasons.length > 0) activateSeason(0);
@@ -923,6 +949,35 @@ function safe(value, formatter) {
       // Render simplified Season Stats for HS
       console.log("[HS Profile] Calling renderSimplifiedSeasonStats");
       renderSimplifiedSeasonStats(data);
+
+      // Ad slots (KM-Profile-Top / KM-Profile-Bottom) — top sits between
+      // Season Stats and Match History (renderSimplifiedSeasonStats already
+      // positions itself before #wrestler-ad-container); bottom is after
+      // Match History, only for wrestlers with a long enough career.
+      if (window.KM_ADS) {
+        const adTopContainer = document.getElementById("wrestler-ad-container");
+        if (adTopContainer) {
+          adTopContainer.style.display = "";
+          const adTop = window.KM_ADS.createAdSlotElement("profile-top");
+          if (adTop) {
+            adTopContainer.appendChild(adTop);
+            window.KM_ADS.placeAd(adTop, "profile-top");
+          }
+        }
+        const cr = data.career_record || {};
+        const totalMatches = (cr.wins || 0) + (cr.losses || 0);
+        if (totalMatches >= window.KM_ADS.LONG_HISTORY_THRESHOLD) {
+          const adBottomContainer = document.getElementById("wrestler-ad-container-bottom");
+          if (adBottomContainer) {
+            adBottomContainer.style.display = "";
+            const adBottom = window.KM_ADS.createAdSlotElement("profile-bottom");
+            if (adBottom) {
+              adBottomContainer.appendChild(adBottom);
+              window.KM_ADS.placeAd(adBottom, "profile-bottom");
+            }
+          }
+        }
+      }
     } else {
     // ========================================
       // MV SECTION (DataGolf-style, no card) - NCAA only

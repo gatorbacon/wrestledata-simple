@@ -93,23 +93,50 @@
 }
 
 /* ========================================
-   Ad Container (AdSense)
+   Ad Slots (AdSense) — see docs/kentuckymat_ads_phase3.md
+   Each slot reserves its own space up front so the page never jumps
+   when the ad fills in (or doesn't).
    ======================================== */
-.ad-container {
+.ad-slot {
   margin: 24px auto;
   padding: 8px 0;
   text-align: center;
   max-width: 100%;
-  /* No min-height: container collapses when no ad loads (pre-verification).
-     After ads are live, you can add min-height: 120px to reduce layout shift. */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.ad-container ins {
+.ad-slot ins.adsbygoogle {
   margin: 0 auto;
+  width: 100%;
+}
+
+.ad-label {
+  font-size: 0.7em;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.ad-slot--horizontal {
+  min-height: 100px;
+}
+
+.ad-slot--rectangle {
+  min-height: 250px;
+}
+
+/* Once AdSense marks a slot unfilled, collapse the reserved space and label
+   rather than showing an empty box. */
+.ad-slot:has(ins.adsbygoogle[data-ad-status="unfilled"]) {
+  display: none;
 }
 
 @media (min-width: 768px) {
-  .ad-container {
+  .ad-slot {
     margin: 32px auto;
   }
 }
