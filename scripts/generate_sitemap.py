@@ -34,7 +34,9 @@ STATIC_PAGES = [
     ("dual_predictor.html", "0.6", "monthly"),
     ("compare.html", "0.5", "monthly"),
     ("about.html", "0.4", "monthly"),
+    ("methodology.html", "0.4", "monthly"),
     ("report.html", "0.3", "monthly"),
+    ("privacy.html", "0.2", "yearly"),
 ]
 
 

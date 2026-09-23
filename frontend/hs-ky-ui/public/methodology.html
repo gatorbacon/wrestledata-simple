@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Methodology — KentuckyMat</title>
+  <meta name="description" content="How KentuckyMat builds Kentucky high school wrestling rankings, season and career records, stat definitions, and team point projections." />
+  <link rel="canonical" href="https://www.kentuckymat.com/methodology.html" />
+  <meta property="og:title" content="Methodology — KentuckyMat" />
+  <meta property="og:description" content="How KentuckyMat builds Kentucky high school wrestling rankings, season and career records, stat definitions, and team point projections." />
+  <meta property="og:url" content="https://www.kentuckymat.com/methodology.html" />
+  <meta property="og:site_name" content="KentuckyMat" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.kentuckymat.com/images/og-kentuckymat.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+  <script src="/js/analytics.js"></script>
+</head>
+<body>
+  <script src="/header.js"></script>
+  <div class="page-container">
+    <header class="header">
+      <h1>Methodology</h1>
+    </header>
+
+    <section class="section">
+      <div class="longform-page">
+        <p>
+          This page covers the mechanics behind KentuckyMat's rankings and stats — where the data comes from and
+          exactly how each number is calculated. For the philosophy behind the rankings, see the
+          <a href="/about.html">About</a> page.
+        </p>
+
+        <h2>Data Source</h2>
+        <p>
+          Every match result on KentuckyMat comes from TrackWrestling, the platform Kentucky high schools use to
+          run tournaments and duals. Results are pulled and processed regularly throughout the season. If a match
+          isn't entered into TrackWrestling, it isn't reflected on the site.
+        </p>
+
+        <h2>Rankings</h2>
+        <p>
+          Rankings are built from head-to-head results, margin of victory (falls, tech falls, major decisions vs.
+          regular decisions), and common opponents across the season. That data is assembled into a weekly ranking
+          matrix, which is then reviewed and finalized by hand before publication — combining the computed results
+          with a manual check for accuracy, not published as a raw algorithmic output.
+        </p>
+        <p>
+          Girls rankings are updated every Wednesday and boys rankings every Thursday during the season. Every
+          weekly release is archived, so past rankings remain viewable going forward.
+        </p>
+
+        <h2>Season Records (Win-Loss)</h2>
+        <p>
+          Each wrestler's season record counts every decided bout: regular decisions, falls, tech falls, major
+          decisions, forfeits, medical forfeits, injury defaults, and disqualifications. Byes and no-results (a
+          scheduled match that never happened) are excluded. A bout is credited to a wrestler even if only their
+          opponent's TrackWrestling entry recorded it, and duplicate entries for the same bout (a tournament
+          occasionally gets listed twice under a different name or date) are identified and removed so a single
+          bout is never counted twice.
+        </p>
+
+        <h2>Career Records</h2>
+        <p>
+          A wrestler's career record is the sum of their linked seasons. Seasons are linked across years by
+          matching a wrestler's TrackWrestling ID history to a single career record; this linking is checked and
+          corrected by hand when a wrestler's name changes or a link is missed.
+        </p>
+
+        <h2>Bonus Rate</h2>
+        <p>
+          Bonus Rate is the percentage of a wrestler's non-forfeit wins that came by fall, tech fall, or major
+          decision. Forfeit wins count toward the season record but are excluded from both the numerator and
+          denominator of Bonus Rate, since no bonus points are actually scored in a forfeit.
+        </p>
+
+        <h2>Team Points Projection</h2>
+        <p>
+          On team pages, "Projected State Tournament Points" estimates each starter's expected scoring at the
+          state tournament based on their current statewide rank, summed across the team's lineup. It's a
+          projection based on rank, not a guarantee — actual state tournament results depend on the bracket and
+          how the season plays out.
+        </p>
+
+        <h2>Data History</h2>
+        <p>
+          Boys data goes back to 2013. Girls wrestling was sanctioned by the KHSAA in 2024, so girls data begins
+          that season.
+        </p>
+
+        <p>
+          If something looks wrong, the <a href="/report.html">contact page</a> is the fastest way to flag it.
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <script src="/footer.js"></script>
+</body>
+</html>

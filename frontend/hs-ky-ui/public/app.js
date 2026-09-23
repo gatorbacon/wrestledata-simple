@@ -314,8 +314,8 @@ function safe(value, formatter) {
     const metaEl = document.getElementById("wrestler-meta");
     metaEl.innerHTML = "";
 
-    // === Hide NCAA/unused sections ===
-    ["mv-section", "match-impact-section", "skill-section", "mv-context-section", "xtp-section"].forEach(id => {
+    // === Hide NCAA/unused sections === (xtp-section removed from wrestler.html 2026-09-23, was NCAA-only)
+    ["mv-section", "match-impact-section", "skill-section", "mv-context-section"].forEach(id => {
       const el = document.getElementById(id);
       if (el) el.style.display = "none";
     });
@@ -1182,14 +1182,12 @@ function safe(value, formatter) {
     }
     
     // ========================================
-    // EXPECTED NCAA IMPACT (xTP)
+    // EXPECTED NCAA IMPACT (xTP) - section removed from wrestler.html 2026-09-23
+    // (was NCAA-only, dead for HS - see CLAUDE.md AdSense doc). Guard kept here
+    // in case this render path is ever reused; no-op if the element is gone.
     // ========================================
-    // Note: xTP data may need to be loaded separately from team xTP file
-    // For now, hide the section if data is not available
-    // TODO: Load xTP data from team xTP file if needed
     const xtpSection = document.getElementById("xtp-section");
-    // Hide xTP section for now - will be populated when xTP data is available
-    xtpSection.style.display = "none";
+    if (xtpSection) xtpSection.style.display = "none";
     
     // ========================================
     // MATCH HISTORY

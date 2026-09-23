@@ -89,6 +89,11 @@
             <div class="nav-item">
               <a href="/about.html" class="nav-link">About</a>
             </div>
+
+            <!-- Methodology -->
+            <div class="nav-item">
+              <a href="/methodology.html" class="nav-link">Methodology</a>
+            </div>
           </div>
 
           <!-- Search (Center-Right) -->
@@ -198,6 +203,9 @@
 
             <!-- About (Non-expandable link) -->
             <a href="/about.html" class="mobile-menu-item">About</a>
+
+            <!-- Methodology (Non-expandable link) -->
+            <a href="/methodology.html" class="mobile-menu-item">Methodology</a>
           </nav>
         </div>
       </div>

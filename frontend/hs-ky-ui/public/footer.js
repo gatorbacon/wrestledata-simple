@@ -11,6 +11,10 @@
       <footer class="site-footer">
         <div class="footer-content">
           <p class="footer-text">
+            <a href="/about.html" class="footer-report-link footer-report-link--muted">About</a>
+            &nbsp;·&nbsp;
+            <a href="/methodology.html" class="footer-report-link footer-report-link--muted">Methodology</a>
+            &nbsp;·&nbsp;
             <a href="/report.html" class="footer-report-link footer-report-link--muted">Contact Us</a>
             &nbsp;·&nbsp;
             <a href="/privacy.html" class="footer-report-link footer-report-link--muted">Privacy Policy</a>
