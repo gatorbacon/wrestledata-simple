@@ -1,1 +1,4 @@
-# No forced redirects — index.html is the landing page
+# Send the Netlify subdomain to the canonical host so crawlers don't index a duplicate copy.
+# (matsavant.com -> www is already handled by Netlify's domain settings.)
+https://matsavant.netlify.app/* https://www.matsavant.com/:splat 301!
+http://matsavant.netlify.app/*  https://www.matsavant.com/:splat 301!
