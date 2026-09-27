@@ -1,9 +1,10 @@
 # MatSavant (www.matsavant.com). Netlify's base directory is frontend/wrestledata-ui/public,
 # which has no netlify.toml of its own, so Netlify falls back to this file. Paths here are
 # relative to that base directory. (KentuckyMat uses frontend/hs-ky-ui/netlify.toml instead.)
+# Edge functions live in the default netlify/edge-functions/ under the base directory; the
+# bundler can't reach anything outside it (a "../" path failed the 2026-09-27 build).
 [build]
   publish = "."
-  edge_functions = "../netlify/edge-functions"
 
 # 403 known scrapers before any file is served (saves bandwidth). robots.txt stays reachable
 # so polite bots can read their Disallow and stop on their own.
