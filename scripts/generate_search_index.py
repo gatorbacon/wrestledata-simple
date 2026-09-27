@@ -36,6 +36,16 @@ def generate_search_tokens(name, for_wrestler=False):
     return sorted(list(tokens))
 
 
+# Team slugs that are confirmed duplicates of a still-active slug -- the
+# underlying scrape renamed these teams (e.g. "Pennsylvania" -> "Penn" for
+# the 2026 season) without any team-level equivalent of apply_name_aliases.py
+# to reconcile old vs. new identities. Left in, the old slug still shows up
+# in search (from historical seasons) pointing at a team.html page with no
+# current-season team_metrics entry, which crashes the page. See
+# docs/matsavant.md "Known Data Quirks" for the full writeup.
+RETIRED_NCAA_TEAM_SLUGS = {"pennsylvania"}  # duplicate of "penn"
+
+
 def team_slug_to_url(team_slug, gender=None):
     if gender:
         return f"/team.html?team={team_slug}&gender={gender}"
@@ -48,7 +58,44 @@ def wrestler_id_to_url(wrestler_id, gender=None):
     return f"/wrestler.html?id={wrestler_id}"
 
 
-def _wrestler_search_item(name, wrestler_id, team, weight):
+def load_ncaa_placement_tiers(script_dir):
+    """Returns {name_lower: tier}, tier 0 = ever an NCAA D1 national champion
+    (best placement == 1), tier 1 = ever an All-American (best placement 2-8).
+    Sourced from data/ncaa-tourney-parsed/all_wrestlers.json, built by
+    scripts/ncaa/parse_ncaa_results.py from every tournament 2013-2026
+    (excluding 2020, cancelled) -- see that script's docstring for the raw
+    data source. Matched by name only (that file has no wrestler_id), so a
+    same-name collision between two different real people would incorrectly
+    boost the wrong one -- same class of risk as the name-based matching
+    documented elsewhere in this repo (e.g. career linking's "name changed
+    between seasons" gotcha in CLAUDE.md); acceptable given how few people
+    share an exact full name at this population size, but worth knowing if a
+    search result's boost ever looks wrong.
+    """
+    path = script_dir / "data/ncaa-tourney-parsed/all_wrestlers.json"
+    if not path.exists():
+        print(f"  Warning: {path} not found -- champion/AA search priority will be unavailable")
+        return {}
+    with open(path, "r", encoding="utf-8") as f:
+        rows = json.load(f)
+    best_placement = {}
+    for row in rows:
+        name_lower = (row.get("name") or "").strip().lower()
+        placement = row.get("placement")
+        if not name_lower or not placement:
+            continue
+        if name_lower not in best_placement or placement < best_placement[name_lower]:
+            best_placement[name_lower] = placement
+    tiers = {}
+    for name_lower, placement in best_placement.items():
+        if placement == 1:
+            tiers[name_lower] = 0
+        elif placement <= 8:
+            tiers[name_lower] = 1
+    return tiers
+
+
+def _wrestler_search_item(name, wrestler_id, team, weight, priority=3, rank=None):
     name_parts = name.split()
     secondary_parts = []
     if team:
@@ -63,10 +110,16 @@ def _wrestler_search_item(name, wrestler_id, team, weight):
         "secondary": " · ".join(secondary_parts),
         "url": wrestler_id_to_url(wrestler_id),
         "searchTokens": generate_search_tokens(name, for_wrestler=True),
+        # Search-ranking tiebreak (see header.js): 0 = ever a national
+        # champion, 1 = ever an All-American, 2 = active this season
+        # (ranked or not), 3 = everyone else. `rank` (current-season rank,
+        # nullable) breaks ties within tier 2.
+        "priority": priority,
+        "rank": rank,
     }
 
 
-def load_ncaa_career_wrestlers(script_dir, seasons):
+def load_ncaa_career_wrestlers(script_dir, seasons, current_season):
     """Returns [search-item, ...], one entry per real person (career), not
     one per season. Career-linking (data/careers/ncaa_men/career_*.json)
     already maps every season_wrestler_id to the one real person it belongs
@@ -74,9 +127,16 @@ def load_ncaa_career_wrestlers(script_dir, seasons):
     season among `seasons` -- wrestler.html's own season-selector table
     (built from season_summary) is what surfaces a person's other linked
     seasons once you're on their page, so search itself no longer needs a
-    separate row per season the way index_wrestlers.json alone would give."""
+    separate row per season the way index_wrestlers.json alone would give.
+
+    `current_season` (always the live/default season, even when `seasons`
+    spans the full historical backfill via --all-seasons) determines who
+    counts as "active this season" for priority tier 2 -- see
+    load_ncaa_placement_tiers for tiers 0/1."""
     careers_dir = script_dir / "data/careers/ncaa_men"
     career_files = sorted(careers_dir.glob("career_*.json")) if careers_dir.exists() else []
+    placement_tiers = load_ncaa_placement_tiers(script_dir)
+    current_season = str(current_season)
 
     # season -> {wrestler_id: {name, team, weight_class}}, for secondary-field lookups
     season_index = {}
@@ -91,8 +151,17 @@ def load_ncaa_career_wrestlers(script_dir, seasons):
                         lookup[str(wid)] = w
         season_index[str(season)] = lookup
 
+    def priority_and_rank(name, latest_season, w):
+        tier = placement_tiers.get(name.strip().lower())
+        if tier is not None:
+            return tier, None
+        if latest_season == current_season:
+            return 2, w.get("current_rank")
+        return 3, None
+
     claimed = set()  # (season, wrestler_id) already represented by a career entry
     items = []
+    champion_count = aa_count = current_count = other_count = 0
     for cf in career_files:
         try:
             career = json.loads(cf.read_text(encoding="utf-8"))
@@ -112,7 +181,12 @@ def load_ncaa_career_wrestlers(script_dir, seasons):
 
         wrestler_id = str(career_seasons[latest_season])
         w = season_index[latest_season].get(wrestler_id, {})
-        items.append(_wrestler_search_item(name, wrestler_id, w.get("team", ""), w.get("weight_class")))
+        priority, rank = priority_and_rank(name, latest_season, w)
+        champion_count += priority == 0
+        aa_count += priority == 1
+        current_count += priority == 2
+        other_count += priority == 3
+        items.append(_wrestler_search_item(name, wrestler_id, w.get("team", ""), w.get("weight_class"), priority, rank))
 
     # Orphans: entries in a season index not covered by any career file at
     # all (should be rare -- every new wrestler gets a career via Tier 3b in
@@ -123,10 +197,12 @@ def load_ncaa_career_wrestlers(script_dir, seasons):
         for wid, w in lookup.items():
             if (season, wid) in claimed:
                 continue
-            items.append(_wrestler_search_item(w.get("name", "Unknown"), wid, w.get("team", ""), w.get("weight_class")))
+            priority, rank = priority_and_rank(w.get("name", ""), season, w)
+            items.append(_wrestler_search_item(w.get("name", "Unknown"), wid, w.get("team", ""), w.get("weight_class"), priority, rank))
             orphan_count += 1
 
     print(f"  Careers: {len(items) - orphan_count} wrestlers (1 entry per person), {orphan_count} orphans with no career file")
+    print(f"  Priority tiers: {champion_count} champions, {aa_count} All-Americans, {current_count} active {current_season}, {other_count} everyone else")
     return items
 
 
@@ -143,7 +219,7 @@ def load_ncaa_season_teams(script_dir, season):
     for team_data in teams:
         team_name = team_data.get("team", "Unknown")
         team_slug = team_data.get("team_slug", "")
-        if not team_slug:
+        if not team_slug or team_slug in RETIRED_NCAA_TEAM_SLUGS:
             continue
         items.append({
             "type": "team",
@@ -151,6 +227,7 @@ def load_ncaa_season_teams(script_dir, season):
             "secondary": "D1",
             "url": team_slug_to_url(team_slug),
             "searchTokens": generate_search_tokens(team_name),
+            "priority": 4,  # below every wrestler tier, matching the HS index's convention
             "_slug": team_slug,  # only used for de-duping across seasons, stripped before writing
         })
     return items
@@ -416,7 +493,7 @@ def main():
         else:
             seasons = [args.season]
 
-        search_index.extend(load_ncaa_career_wrestlers(script_dir, seasons))
+        search_index.extend(load_ncaa_career_wrestlers(script_dir, seasons, args.season))
 
         teams_by_slug = {}  # dedupe across seasons -- team pages aren't season-specific
         for season in seasons:
