@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/styles.css?v=20260921" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-  <script src="/search_index.js"></script>
+  <script src="/search_index.js?v=20260913"></script>
 </head>
 
 <body>
@@ -38,12 +38,12 @@
         <table id="starting-roster-table" class="tp2-roster-table">
           <thead>
             <tr>
-              <th style="width: 48px;">Weight</th>
+              <th class="tp2-col-weight" style="width: 48px;"><span class="tp2-th-full">Weight</span><span class="tp2-th-short">Wt</span></th>
               <th>Wrestler</th>
-              <th>Record</th>
-              <th class="num" data-tooltip="mv">DPG</th>
-              <th class="num">Points</th>
-              <th>Seed risk</th>
+              <th class="tp2-col-record"><span class="tp2-th-full">Record</span><span class="tp2-th-short">Rec</span></th>
+              <th class="num tp2-col-dpg" data-tooltip="mv">DPG</th>
+              <th class="num tp2-col-points"><span class="tp2-th-full">Points</span><span class="tp2-th-short">Pts</span></th>
+              <th class="tp2-col-risk">Seed risk</th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -64,10 +64,10 @@
         <table class="tp2-roster-table" id="remaining-roster-table">
           <thead>
             <tr>
-              <th style="width: 48px;">Weight</th>
+              <th class="tp2-col-weight" style="width: 48px;"><span class="tp2-th-full">Weight</span><span class="tp2-th-short">Wt</span></th>
               <th>Wrestler</th>
-              <th>Record</th>
-              <th class="num">DPG</th>
+              <th class="tp2-col-record"><span class="tp2-th-full">Record</span><span class="tp2-th-short">Rec</span></th>
+              <th class="num tp2-col-dpg">DPG</th>
             </tr>
           </thead>
           <tbody id="roster-body"></tbody>
@@ -77,7 +77,7 @@
 
   </div>
 
-  <script src="/team.js?v=20260916"></script>
+  <script src="/team.js?v=20260919"></script>
   <script src="/tooltips.js"></script>
 
   <script>

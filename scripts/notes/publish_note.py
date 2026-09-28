@@ -22,6 +22,9 @@ Draft format (frontend/wrestledata-ui/notes_drafts/<slug>/note.md):
 
     Paragraph text. **Bold**, *italic*, `code`, and [links](https://x.com) work.
 
+    - Bullet lists work too, with the same inline formatting
+    - One item per line, starting with "-" or "*"
+
     ![Alt text](screenshot1.png)
     *Optional caption*
 
@@ -54,6 +57,7 @@ IMAGES_ROOT = PUBLIC_DIR / "data/notes/images"
 
 IMG_LINE_RE = re.compile(r"^!\[([^\]]*)\]\(([^\s)]+)\)\s*$")
 CAPTION_LINE_RE = re.compile(r"^\*([^*].*)\*$")
+LIST_ITEM_RE = re.compile(r"^[-*]\s+(.+)$")
 
 LINK_RE = re.compile(r"\[([^\]]+)\]\((https?://[^\s)]+)\)")
 BOLD_RE = re.compile(r"\*\*(.+?)\*\*")
@@ -105,6 +109,7 @@ def parse_body(body: str, slug: str, draft_dir: Path):
     all_images = []
     copied_images = []
     paragraph_buf = []
+    list_buf = []
 
     def flush_paragraph():
         if paragraph_buf:
@@ -112,12 +117,19 @@ def parse_body(body: str, slug: str, draft_dir: Path):
             blocks.append({"type": "p", "html": render_inline(text)})
             paragraph_buf.clear()
 
+    def flush_list():
+        if list_buf:
+            blocks.append({"type": "ul", "items": [render_inline(item) for item in list_buf]})
+            list_buf.clear()
+
     i = 0
     while i < len(lines):
         line = lines[i].strip()
         img_match = IMG_LINE_RE.match(line) if line else None
+        list_match = LIST_ITEM_RE.match(line) if line else None
         if img_match:
             flush_paragraph()
+            flush_list()
             alt, src_ref = img_match.groups()
             caption = None
             if i + 1 < len(lines):
@@ -149,13 +161,19 @@ def parse_body(body: str, slug: str, draft_dir: Path):
             if caption:
                 block["caption"] = caption
             blocks.append(block)
+        elif list_match:
+            flush_paragraph()
+            list_buf.append(list_match.group(1))
         elif line:
+            flush_list()
             paragraph_buf.append(line)
         else:
             flush_paragraph()
+            flush_list()
         i += 1
 
     flush_paragraph()
+    flush_list()
     return blocks, all_images, copied_images
 
 

@@ -38,6 +38,16 @@ reused across P4P and all 10 weight classes -- one homepage widget with
 tabs, per the site's usual weight-tab convention (see e.g. the DPG Leaders
 panel already on the homepage).
 
+Also overlays InterMat's own rank (added 2026-09-18) onto each row as
+`intermat_rank`, purely additive -- Flo's `rank` field (the row's own
+position/order in this file) is untouched, so this stays backward
+compatible for anything that only reads `rank`. Joined by wrestler_id
+against the latest scripts/rankings/correlate_intermat_rankings.py output
+(data/{season}/intermat-preseason-rankings/{date}_matched.json) -- if that
+file doesn't exist yet (InterMat hasn't been correlated for this season),
+every row's intermat_rank is just null rather than the whole build failing,
+since InterMat is a comparison overlay, not a required input.
+
 Usage:
   .venv/bin/python scripts/rankings/build_p4p_rankings.py
 """
@@ -63,6 +73,7 @@ DATE_FILENAME = re.compile(r"^\d{4}-\d{2}-\d{2}\.json$")
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 FLO_DIR = PROJECT_ROOT / "data" / "2027" / "flo-preseason-rankings"
+INTERMAT_DIR = PROJECT_ROOT / "data" / "2027" / "intermat-preseason-rankings"
 WRESTLERS_DIR = PROJECT_ROOT / "frontend" / "wrestledata-ui" / "public" / "data" / "wrestlers" / "2026"
 WRESTLERS_ROOT = PROJECT_ROOT / "frontend" / "wrestledata-ui" / "public" / "data" / "wrestlers"
 CAREERS_DIR = PROJECT_ROOT / "data" / "careers" / "ncaa_men"
@@ -196,7 +207,66 @@ def team_abbr(team_slug):
     return abbr
 
 
-def enrich_entries(entries, wrestler_index, unmatched_out, wid_to_career):
+def resolve_wrestler_id(name, school, wrestler_index):
+    """(name, school) -> wrestler_id via last season's completed index, same
+    3-tier fallback used for every external rankings source this script
+    joins against (originally Flo-only, now shared with InterMat below):
+    exact (name, school) -> name-only if unambiguous (transfers) ->
+    last-name+first-initial if unambiguous, narrowed by school when needed
+    (nickname/spelling mismatches). Returns None if no tier resolves."""
+    by_name_school, by_name_only, by_lastname, _ = wrestler_index
+    resolved_school = SCHOOL_ALIASES.get(school.strip().lower(), school.strip().lower())
+    name_key = normalize_name(name)
+
+    wrestler_id = by_name_school.get((name_key, resolved_school))
+    if wrestler_id:
+        return wrestler_id
+
+    candidates = by_name_only.get(name_key, [])
+    if len(candidates) == 1:
+        return candidates[0]
+
+    parts = name_key.split()
+    if len(parts) >= 2:
+        candidates = by_lastname.get((parts[-1], parts[0][0]), [])
+        if len(candidates) == 1:
+            return candidates[0][0]
+        if len(candidates) > 1:
+            same_school = [wid for wid, team in candidates if team == resolved_school]
+            if len(same_school) == 1:
+                return same_school[0]
+    return None
+
+
+def load_intermat_ranks(wrestler_index) -> dict:
+    """wrestler_id -> InterMat's own rank, resolved via the SAME name/school
+    matching used for Flo's entries above (against last season's completed
+    wrestler index) -- deliberately NOT correlate_intermat_rankings.py's
+    roster-based matcher, which needs THIS season's
+    mt/rankings_data/ncaa_men/{season}/rankings_{weight}.json to already
+    exist (bootstrapped by the weekly pipeline's build_starter_rankings.py).
+    In the preseason, before any current-season pipeline run has happened,
+    that file doesn't exist yet -- a chicken-and-egg problem this script
+    sidesteps entirely, since it already resolves wrestler_id from last
+    season's index for Flo the same way. Returns {} (every row's
+    intermat_rank ends up null) if InterMat hasn't been scraped for this
+    season yet -- this overlay is optional, never a hard dependency."""
+    if not INTERMAT_DIR.exists():
+        return {}
+    files = sorted(f for f in INTERMAT_DIR.glob("*.json") if DATE_FILENAME.match(f.name))
+    if not files:
+        return {}
+    intermat_data = json.loads(files[-1].read_text())
+    out = {}
+    for entries in intermat_data.get("weights", {}).values():
+        for e in entries:
+            wid = resolve_wrestler_id(e["name"], e.get("school", ""), wrestler_index)
+            if wid:
+                out[wid] = e["rank"]
+    return out
+
+
+def enrich_entries(entries, wrestler_index, unmatched_out, wid_to_career, wid_to_intermat_rank):
     by_name_school, by_name_only, by_lastname, slug_to_display = wrestler_index
     out = []
     for entry in entries:
@@ -206,30 +276,7 @@ def enrich_entries(entries, wrestler_index, unmatched_out, wid_to_career):
         name_key = normalize_name(name)
         team_slug = frontend_slug(resolved_school)
 
-        wrestler_id = by_name_school.get((name_key, resolved_school))
-        if not wrestler_id:
-            # Transfer: last season's record lives under a DIFFERENT school
-            # string than their current one, so no school-name alias could
-            # ever bridge it. Fall back to name-only, but only when that
-            # name is unambiguous across the whole index.
-            candidates = by_name_only.get(name_key, [])
-            if len(candidates) == 1:
-                wrestler_id = candidates[0]
-        if not wrestler_id:
-            # Nickname/spelling mismatch (Flo's "Cam Catrabone" vs our own
-            # roster's "Cameron Catrabone") -- last-name + first-initial.
-            # If that alone is ambiguous (e.g. two different "M. Botello"s
-            # at different schools), narrow by school before giving up --
-            # only when narrowing lands on exactly one candidate.
-            parts = name_key.split()
-            if len(parts) >= 2:
-                candidates = by_lastname.get((parts[-1], parts[0][0]), [])
-                if len(candidates) == 1:
-                    wrestler_id = candidates[0][0]
-                elif len(candidates) > 1:
-                    same_school = [wid for wid, team in candidates if team == resolved_school]
-                    if len(same_school) == 1:
-                        wrestler_id = same_school[0]
+        wrestler_id = resolve_wrestler_id(name, school, wrestler_index)
 
         profile = load_profile(wrestler_id) if wrestler_id else None
         metrics = (profile or {}).get("metrics", {})
@@ -257,6 +304,7 @@ def enrich_entries(entries, wrestler_index, unmatched_out, wid_to_career):
             "prior_record": prior_record,
             "prior_season": PRIOR_SEASON_LABEL if prior_record else None,
             "photo_url": (profile or {}).get("photo_url"),
+            "intermat_rank": wid_to_intermat_rank.get(wrestler_id) if wrestler_id else None,
         })
         if not profile:
             unmatched_out.append(f"{name} ({school})")
@@ -273,13 +321,14 @@ def main():
 
     wrestler_index = build_wrestler_index()
     wid_to_career = build_wid_to_career_index()
+    wid_to_intermat_rank = load_intermat_ranks(wrestler_index)
     unmatched = []
 
-    p4p_out = enrich_entries(p4p, wrestler_index, unmatched, wid_to_career)
+    p4p_out = enrich_entries(p4p, wrestler_index, unmatched, wid_to_career, wid_to_intermat_rank)
     weights_out = {}
     for w in WEIGHT_ORDER:
         entries = weights_raw.get(str(w), [])
-        weights_out[str(w)] = enrich_entries(entries, wrestler_index, unmatched, wid_to_career)
+        weights_out[str(w)] = enrich_entries(entries, wrestler_index, unmatched, wid_to_career, wid_to_intermat_rank)
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(json.dumps({
@@ -294,6 +343,12 @@ def main():
           f"({total} total) to {OUT_PATH.relative_to(PROJECT_ROOT)} (from {flo_path.name})")
     if unmatched:
         print(f"No prior-season stats found for {len(unmatched)}: {', '.join(unmatched)}")
+    if wid_to_intermat_rank:
+        overlaid = sum(1 for e in p4p_out if e["intermat_rank"] is not None)
+        print(f"InterMat overlay: {overlaid}/{len(p4p_out)} P4P rows have an intermat_rank "
+              f"({len(wid_to_intermat_rank)} wrestler_ids in the correlated snapshot)")
+    else:
+        print("InterMat overlay: no correlated snapshot found -- every row's intermat_rank is null")
 
 
 if __name__ == "__main__":

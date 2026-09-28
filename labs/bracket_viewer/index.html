@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bracket Viewer (Lab)</title>
+  <link rel="stylesheet" href="bracket.css">
+</head>
+<body>
+  <main class="bv">
+    <header class="bv-head">
+      <span class="lab-stamp">🧪 Lab · experiment · not a ranking</span>
+      <h1 id="title">Bracket Viewer</h1>
+      <label class="bv-year">Tournament
+        <select id="event" aria-label="Tournament"></select>
+      </label>
+    </header>
+
+    <div id="weights" class="bv-tabs" role="tablist" aria-label="Weight class"></div>
+
+    <div class="bv-navwrap">
+      <div class="bv-navlabel">Rounds shown <span class="bv-hint">drag the window · drag its edges to widen</span></div>
+      <div id="nav" class="bv-nav"></div>
+    </div>
+
+    <div id="bracket" class="bv-bracket" aria-live="polite"></div>
+    <p class="bv-foot">Hover a wrestler to trace their path; tap to pin it. Faded left edge = dropped in from the championship bracket.</p>
+  </main>
+  <script src="bracket_engine.js"></script>
+  <script src="viewer.js"></script>
+</body>
+</html>

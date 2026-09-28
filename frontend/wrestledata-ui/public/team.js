@@ -106,33 +106,42 @@ function seedRisk(aaProb) {
 
 // Photo + rank pill + name (+ class year) cell, same crop convention as the
 // rest of the site's headshot rows, just smaller (32-40px here vs 64px
-// elsewhere). Photo is omitted entirely (no crest/placeholder fallback)
-// when missing. Rank pill sits between the photo and the name -- no
-// separate Rank column, and never folded into the name text itself.
+// elsewhere). The photo slot is always reserved at a fixed size -- a blank
+// placeholder circle (.tp2-headshot's own background/border) stands in
+// when there's no photo_url or the image 404s -- so the rank pill and name
+// stay aligned to the same column on every row instead of creeping left
+// whenever a photo is missing. Rank pill sits between the photo and the
+// name -- no separate Rank column, and never folded into the name text
+// itself.
 function renderWrestlerCell(profile, rank) {
   const wrap = document.createElement("div");
   wrap.className = "tp2-wrestler-cell";
 
+  const img = document.createElement("img");
+  img.className = "tp2-headshot";
+  img.alt = "";
+  img.loading = "lazy";
   if (profile?.photo_url) {
-    const img = document.createElement("img");
-    img.className = "tp2-headshot";
     img.src = profile.photo_url;
-    img.alt = "";
-    img.loading = "lazy";
-    img.onerror = () => { img.remove(); };
-    wrap.appendChild(img);
   }
+  img.onerror = () => { img.removeAttribute("src"); };
+  wrap.appendChild(img);
 
   wrap.appendChild(createRankBadge(rank));
 
   const textWrap = document.createElement("div");
+  textWrap.className = "tp2-wrestler-text";
   if (profile?.wrestler_id) {
     const a = document.createElement("a");
+    a.className = "tp2-wrestler-name";
     a.href = `/wrestler.html?id=${profile.wrestler_id}`;
     a.textContent = profile.name || "Unknown";
     textWrap.appendChild(a);
   } else {
-    textWrap.appendChild(document.createTextNode(safe(profile?.name)));
+    const span = document.createElement("span");
+    span.className = "tp2-wrestler-name";
+    span.textContent = safe(profile?.name);
+    textWrap.appendChild(span);
   }
   const grade = abbrevGrade(profile?.grade);
   if (grade) {
@@ -158,18 +167,23 @@ function buildRosterRow(weight, profile, wd, { withPoints }) {
   const tr = document.createElement("tr");
 
   const weightTd = document.createElement("td");
+  weightTd.className = "tp2-col-weight";
   weightTd.textContent = weight;
   tr.appendChild(weightTd);
 
   // Empty slot: weight + dashes across every other column, no fake data.
+  // Column classes must match the real-row cells below 1:1 so mobile's
+  // column hiding (by class) lines up regardless of whether a slot is filled.
   if (!profile) {
-    const colCount = withPoints ? 5 : 3;
-    for (let i = 0; i < colCount; i++) {
+    const dashCols = withPoints
+      ? [null, "tp2-col-record", "tp2-col-dpg", "tp2-col-points", "tp2-col-risk"]
+      : [null, "tp2-col-record", "tp2-col-dpg"];
+    dashCols.forEach(cls => {
       const dashTd = document.createElement("td");
-      dashTd.className = "tp2-empty-slot";
+      dashTd.className = cls ? `tp2-empty-slot ${cls}` : "tp2-empty-slot";
       dashTd.textContent = "—";
       tr.appendChild(dashTd);
-    }
+    });
     return tr;
   }
 
@@ -181,22 +195,24 @@ function buildRosterRow(weight, profile, wd, { withPoints }) {
   tr.appendChild(nameTd);
 
   const recordTd = document.createElement("td");
+  recordTd.className = "tp2-col-record";
   recordTd.textContent = seasonRecord(profile);
   tr.appendChild(recordTd);
 
   const dpgTd = document.createElement("td");
-  dpgTd.className = "num";
+  dpgTd.className = "num tp2-col-dpg";
   const dpgVal = fmtDpg(profile?.metrics?.mat_value?.mv_avg);
   dpgTd.textContent = dpgVal !== null ? dpgVal : "—";
   tr.appendChild(dpgTd);
 
   if (withPoints) {
     const pointsTd = document.createElement("td");
-    pointsTd.className = "num tp2-proj-cell";
+    pointsTd.className = "num tp2-proj-cell tp2-col-points";
     pointsTd.textContent = wd && wd.xTP !== null && wd.xTP !== undefined ? fmtDecimal(wd.xTP) : "—";
     tr.appendChild(pointsTd);
 
     const riskTd = document.createElement("td");
+    riskTd.className = "tp2-col-risk";
     const risk = wd ? seedRisk(wd.aa_prob) : null;
     if (risk) {
       const chip = document.createElement("span");
@@ -223,6 +239,9 @@ async function loadTeam(teamId) {
 
     const metricsFile = await fetchJSON(`/data/team_metrics/${SEASON}/team_metrics.json`);
     const metrics = metricsFile.teams.find(t => t.team_id === teamId);
+    if (!metrics) {
+      throw new Error(`No ${SEASON} season data for this team.`);
+    }
 
     const xtpFile = await fetchJSON(`/data/xtp/${SEASON}/xtp_teams_${SEASON}.json`).catch(() => null);
     const xtpTeams = xtpFile ? (Array.isArray(xtpFile) ? xtpFile : (xtpFile.teams || [])) : [];

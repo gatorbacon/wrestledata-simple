@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Takedown Patterns Compared</title>
+<style>
+:root{
+  color-scheme: light;
+  --surface:#fcfcfb; --page:#f9f9f7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+  --grid:#e1e0d9; --axis:#c3c2b7; --border:rgba(11,11,11,.10); --wash:rgba(11,11,11,.045);
+  --ncaa:#2a78d6; --conf:#eb6834;
+  --ncaa-1:#86b6ef; --ncaa-2:#5598e7; --ncaa-3:#2a78d6; --ncaa-4:#184f95;
+  --conf-1:#f2996c; --conf-2:#ee7f4a; --conf-3:#d4581f; --conf-4:#8a3410;
+  --seg-reg:#1baf7a; --seg-ot:#4a3aa7; --seg-fall:#eda100; --seg-other:#a9a8a0;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --surface:#1a1a19; --page:#0d0d0d; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781;
+    --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10); --wash:rgba(255,255,255,.06);
+    --ncaa:#3987e5; --conf:#d95926;
+    --ncaa-1:#184f95; --ncaa-2:#2a78d6; --ncaa-3:#5598e7; --ncaa-4:#86b6ef;
+    --conf-1:#8a3410; --conf-2:#d4581f; --conf-3:#ee7f4a; --conf-4:#f2996c;
+    --seg-reg:#199e70; --seg-ot:#9085e9; --seg-fall:#c98500; --seg-other:#5c5b56;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --surface:#1a1a19; --page:#0d0d0d; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781;
+  --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10); --wash:rgba(255,255,255,.06);
+  --ncaa:#3987e5; --conf:#d95926;
+  --ncaa-1:#184f95; --ncaa-2:#2a78d6; --ncaa-3:#5598e7; --ncaa-4:#86b6ef;
+  --conf-1:#8a3410; --conf-2:#d4581f; --conf-3:#ee7f4a; --conf-4:#f2996c;
+  --seg-reg:#199e70; --seg-ot:#9085e9; --seg-fall:#c98500; --seg-other:#5c5b56;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px 80px}
+header.top{padding:32px 0 8px}
+h1{font-size:28px;line-height:1.2;margin:0 0 6px;letter-spacing:-.01em}
+h2{font-size:21px;line-height:1.25;margin:0 0 4px}
+h3{font-size:15px;margin:22px 0 4px}
+p{margin:6px 0}
+.sub{color:var(--ink2);max-width:75ch}
+.muted{color:var(--muted)}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin:14px 0}
+section.sec{margin-top:44px}
+.secno{display:inline-block;font-size:12px;font-weight:600;color:var(--ink2);border:1px solid var(--border);border-radius:99px;padding:1px 9px;margin-bottom:6px;background:var(--surface)}
+.filters{position:sticky;top:0;z-index:20;background:var(--page);border-bottom:1px solid var(--border);padding:10px 0;margin:14px 0 0;display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center}
+.fg{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--ink2)}
+.seg{display:inline-flex;border:1px solid var(--border);border-radius:8px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:13px;border:0;background:transparent;color:var(--ink2);padding:6px 12px;cursor:pointer}
+.seg button+button{border-left:1px solid var(--border)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--surface);font-weight:600}
+.seg button:focus-visible{outline:2px solid var(--ncaa);outline-offset:-2px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--ink2);align-items:center}
+.legend .it{display:inline-flex;align-items:center;gap:6px}
+.sw{width:12px;height:12px;border-radius:3px;display:inline-block}
+.sw.dot{border-radius:50%}
+.ramp{display:inline-flex;gap:2px;align-items:center}
+.ramp i{width:11px;height:11px;border-radius:50%;display:inline-block}
+.glance{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:14px}
+.glance .g{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
+.glance .g b.k{display:block;font-size:12px;color:var(--ink2);text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px}
+.glance .g .big{font-size:17px;font-weight:650;line-height:1.3;margin-bottom:4px}
+.glance .g p{font-size:13.5px;color:var(--ink2);margin:0}
+.takeaways{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin:14px 0}
+.takeaways .t{border-left:3px solid var(--axis);padding:2px 0 2px 12px;font-size:14px}
+.takeaways .t b{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink2);margin-bottom:2px}
+.panels{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+.panel{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px 12px 8px}
+.panel h4{margin:0;font-size:14px;line-height:1.3}
+.panel .pn{font-size:12px;color:var(--ink2);margin:2px 0 4px;min-height:46px}
+.badge{display:inline-block;font-size:11.5px;border:1px solid var(--border);border-radius:99px;padding:0 8px;margin-right:4px;color:var(--ink2);background:var(--wash);white-space:nowrap}
+.badge .d{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px}
+svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{font-family:inherit;fill:var(--ink2);font-size:11px}
+svg text.tk{fill:var(--muted)}
+svg text.ink{fill:var(--ink)}
+svg .hit{fill:transparent;cursor:default}
+svg .hit:focus{outline:none}
+svg .col .xh{opacity:0;stroke:var(--axis);stroke-width:1}
+svg .col:hover .xh, svg .col:focus-within .xh{opacity:1}
+svg g.dotg:hover .vis, svg g.dotg:focus-within .vis{stroke:var(--ink);stroke-width:2}
+.cap{font-size:12.5px;color:var(--ink2);margin:8px 2px 0}
+.tabwrap{overflow-x:auto;margin-top:10px;background:var(--surface);border:1px solid var(--border);border-radius:12px}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:6px 8px;text-align:right;border-bottom:1px solid var(--border);white-space:nowrap}
+th{font-weight:600;color:var(--ink2);background:var(--surface);position:sticky;top:0}
+td.l,th.l{text-align:left;white-space:normal;min-width:190px}
+tr.gr td{background:var(--wash);font-weight:600;text-align:left;color:var(--ink2)}
+td small{display:block;color:var(--muted);font-size:11px}
+th.sep,td.sep{border-left:2px solid var(--axis)}
+.tt{position:fixed;z-index:50;pointer-events:none;background:var(--ink);color:var(--surface);border-radius:8px;padding:8px 10px;font-size:12.5px;line-height:1.35;max-width:280px;box-shadow:0 4px 18px rgba(0,0,0,.25);opacity:0;transition:opacity .08s}
+.tt .th{font-weight:650;margin-bottom:2px}.tt .tv{font-size:17px;font-weight:700}
+.tt .muted{color:inherit;opacity:.7}
+.tt .r{display:flex;gap:8px;align-items:center}
+.tt .r i{width:9px;height:9px;border-radius:50%;display:inline-block;flex:none}
+.view-charts .tablewrap-sec{display:none}
+.view-tables .chartwrap{display:none}
+.scope{width:100%;font-size:13px}
+.scope th,.scope td{text-align:right}
+.scope td.l,.scope th.l{text-align:left}
+.names td.l{white-space:normal}
+.names td{white-space:normal;text-align:left;vertical-align:top}
+.ladder td{text-align:center;font-weight:600;font-variant-numeric:tabular-nums}
+.ladder td.l{text-align:left;font-weight:400}
+.foot{font-size:12.5px;color:var(--ink2)}
+.foot li{margin:3px 0}
+@media (max-width:600px){h1{font-size:23px}.filters{gap:8px 14px}.card{padding:12px 12px}}
+@media (forced-colors:active){svg .vis{stroke:CanvasText}}
+</style>
+</head>
+<body class="view-charts">
+<div class="wrap">
+
+<header class="top">
+  <h1>Takedowns and winning: how consistent is the pattern?</h1>
+  <p class="sub">The same four analyses, run on the NCAA Championships and on six conference tournaments (Big Ten, Big 12, ACC, MAC, Pac-12, SoCon), across four time windows. The question in every chart: <b>does the pattern hold from one window to the next, and does it hold in both kinds of tournament?</b></p>
+</header>
+
+<div class="glance" id="glance"></div>
+
+<div class="card" id="scopecard"></div>
+
+<div class="filters" role="toolbar" aria-label="Chart filters">
+  <div class="fg"><span>Basis (sections 1–2)</span>
+    <div class="seg" id="f-basis"><button data-v="all" aria-pressed="true">All bouts</button><button data-v="pts" aria-pressed="false">Decided by points</button></div></div>
+  <div class="fg"><span>View</span>
+    <div class="seg" id="f-view"><button data-v="charts" aria-pressed="true">Charts</button><button data-v="tables" aria-pressed="false">Tables</button></div></div>
+  <div class="fg"><span>Theme</span>
+    <div class="seg" id="f-theme"><button data-v="auto" aria-pressed="true">Auto</button><button data-v="light" aria-pressed="false">Light</button><button data-v="dark" aria-pressed="false">Dark</button></div></div>
+  <div class="legend" aria-label="Legend">
+    <span class="it"><span class="sw dot" style="background:var(--ncaa)"></span>NCAA Championships</span>
+    <span class="it"><span class="sw dot" style="background:var(--conf)"></span>Conference tournaments</span>
+    <span class="it muted">Where shade is used, it steps oldest → newest:
+      <span class="ramp" id="rampN"></span><span class="ramp" id="rampC"></span></span>
+  </div>
+</div>
+
+<!-- SECTION 1 -->
+<section class="sec" id="s1">
+  <span class="secno">Section 1</span>
+  <h2>Takedown differential → win %</h2>
+  <p class="sub">When one wrestler scores more takedowns than the other, how often does that wrestler win? Each panel is one size of takedown edge; lines run across the four windows; whiskers are 95% confidence intervals.</p>
+  <div class="takeaways" id="s1-take"></div>
+  <div class="chartwrap"><div class="panels" id="s1-panels"></div>
+    <p class="cap" id="s1-cap"></p>
+    <h3>Is the NCAA–conference difference consistent?</h3>
+    <div class="card" style="padding:12px 8px 8px"><div id="s1-gap"></div></div></div>
+  <div class="tablewrap-sec" id="s1-table"></div>
+</section>
+
+<!-- SECTION 2 -->
+<section class="sec" id="s2">
+  <span class="secno">Section 2</span>
+  <h2>Win % by scenario</h2>
+  <p class="sub">Each row is a situation a wrestler can be in, counted from that wrestler's own point of view. Every dot is one window; the line joins the lowest and highest. A short line means the number barely moved across eras. Where the blue and orange lanes sit apart, the two kinds of tournament differ.</p>
+  <div class="takeaways" id="s2-take"></div>
+  <div class="chartwrap"><div class="card" style="padding:12px 8px 8px"><div id="s2-strip"></div></div>
+    <p class="cap" id="s2-cap"></p>
+    <h3>Is the NCAA–conference difference consistent?</h3>
+    <div class="card" style="padding:12px 8px 8px"><div id="s2-gap"></div></div></div>
+  <div class="tablewrap-sec" id="s2-table"></div>
+</section>
+
+<!-- SECTION 3 -->
+<section class="sec" id="s3">
+  <span class="secno">Section 3</span>
+  <h2>When takedowns are tied: what decides the bout?</h2>
+  <p class="sub">Roughly one bout in six is tied on takedowns (0-0 counts). These charts ask whether the way those bouts get decided is stable across windows and across tournament types.</p>
+  <div class="takeaways" id="s3-take"></div>
+  <div class="chartwrap">
+    <h3>How often it happens, and how often it is a one-point bout</h3>
+    <div class="panels" id="s3-lines"></div>
+    <h3>How tied bouts ended</h3>
+    <div class="card" style="padding:12px 8px 8px"><div id="s3-comp"></div></div>
+    <p class="cap" id="s3-comp-cap"></p>
+    <h3>Which scoring category the winner was ahead in (regulation, decided by points)</h3>
+    <div class="card" style="padding:12px 8px 8px"><div id="s3-heat"></div></div>
+    <p class="cap">Cell = share of those bouts in which the eventual winner out-scored the loser in that category. A bout can count in several rows, so rows do not sum to 100%.</p>
+    <h3>Is the NCAA–conference difference consistent?</h3>
+    <div class="card" style="padding:12px 8px 8px"><div id="s3-gap"></div></div>
+    <h3>How reliable is a lead in each category?</h3>
+    <div class="card" style="padding:12px 8px 8px"><div id="s3-edge"></div></div>
+    <p class="cap">Win % of the wrestler holding the edge, on a 40–100% axis. Nearfall leads of 3+ points are almost never overcome; a 1-point penalty lead is the least reliable.</p>
+    <h3>How overtime was settled</h3>
+    <div class="card" style="padding:12px 8px 8px"><div id="s3-ot"></div></div>
+    <p class="cap">Sudden victory (Overtime 1) is first score wins; the tiebreakers (Overtime 2 and 3) give each wrestler a 30-second turn on bottom. Only 24–62 overtime bouts per cell, so single percentages are noisy.</p>
+  </div>
+  <div class="tablewrap-sec" id="s3-table"></div>
+</section>
+
+<!-- SECTION 4 -->
+<section class="sec" id="s4">
+  <span class="secno">Section 4</span>
+  <h2>Most wins without scoring a takedown</h2>
+  <p class="sub">For each window, how many wins in a single tournament did the most extreme wrestler get without scoring one takedown? The ladder counts wrestlers at each level. NCAA counts All-Americans only; conference counts every wrestler in the tournament, so the populations differ.</p>
+  <div class="takeaways" id="s4-take"></div>
+  <div class="card" style="padding:12px 12px 6px"><div id="s4-ladder" style="overflow-x:auto"></div>
+    <p class="cap">Number of wrestlers who reached at least that many no-takedown wins in one tournament (exact level shown, not cumulative). Shading is scaled within each row and tournament type, so the numbers, not the colors, carry the comparison across rows.</p></div>
+  <h3>Everyone at the top of each window</h3>
+  <div class="tabwrap"><div id="s4-names"></div></div>
+</section>
+
+<section class="sec">
+  <h2>Data notes</h2>
+  <ul class="foot" id="notes"></ul>
+</section>
+
+</div>
+<div class="tt" id="tt" role="tooltip"></div>
+
+<script>
+const D = /*DATA*/;
+const W  = ["2014-2016","2017-2019","2021-2023","2024-2026"];
+const WL = ["2014–16","2017–19","2021–23","2024–26"];
+const T  = [{k:"ncaa",name:"NCAA Championships",short:"NCAA",v:"--ncaa"},{k:"conf",name:"Conference tournaments",short:"Conf",v:"--conf"}];
+const S = {basis:"all", view:"charts", theme:"auto"};
+const get=(t,i)=>D[t+"|"+W[i]];
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const f1=v=>(v==null||isNaN(v))?"–":v.toFixed(1);
+const f0=v=>(v==null||isNaN(v))?"–":Math.round(v).toString();
+const nf=n=>n.toLocaleString("en-US");
+const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+function wilson(w,n,z=1.96){const p=w/n,d=1+z*z/n,c=p+z*z/(2*n),a=z*Math.sqrt(p*(1-p)/n+z*z/(4*n*n));return[100*(c-a)/d,100*(c+a)/d]}
+
+/* ---------- metric rows: one row = one measurement across 2 types x 4 windows ---------- */
+function metric(label, fn, o={}){
+  const cells={};
+  T.forEach(t=>{cells[t.k]=[0,1,2,3].map(i=>{const c=fn(get(t.k,i),t.k,i);return c});});
+  return Object.assign({label,cells,unit:"%",noun:"bouts"},o);
+}
+function fromCount(won,n){const [lo,hi]=wilson(won,n);return{v:100*won/n,won,n,lo,hi}}
+function tipCell(m,t,i){
+  const c=m.cells[t][i]; const tt=T.find(x=>x.k===t);
+  if(!c||c.v==null) return `<div class="th">${esc(m.label)}</div><div>${tt.short} · ${WL[i]}</div><div class="muted">no data</div>`;
+  let s=`<div class="th">${esc(m.label)}</div><div class="r"><i style="background:${css(tt.v)}"></i>${tt.name} · ${WL[i]}</div><div class="tv">${f1(c.v)}${m.unit}</div>`;
+  if(c.won!=null) s+=`<div>${nf(c.won)} of ${nf(c.n)} ${m.noun}</div>`; else if(c.n!=null) s+=`<div>n = ${nf(c.n)}</div>`;
+  if(c.lo!=null) s+=`<div class="muted">95% CI ${f1(c.lo)}–${f1(c.hi)}</div>`;
+  if(c.n!=null && c.n<100) s+=`<div class="muted">thin data (n&lt;100)</div>`;
+  return s;
+}
+function tipCol(m,i){
+  let s=`<div class="th">${esc(m.label)}</div><div class="muted">${WL[i]}</div>`;
+  T.forEach(t=>{const c=m.cells[t.k][i]; s+=`<div class="r"><i style="background:${css(t.v)}"></i><b>${c?f1(c.v)+m.unit:"–"}</b> ${t.short}${c&&c.n!=null?` <span class="muted">(${c.won!=null?nf(c.won)+"/":"n="}${nf(c.n)})</span>`:""}</div>`});
+  return s;
+}
+/* consistency: how much did each type move, and did 2024-26 step away from the earlier windows? */
+function consist(m){
+  const out={};
+  T.forEach(t=>{
+    const v=m.cells[t.k].map(c=>c&&c.v);
+    if(v.some(x=>x==null||isNaN(x))){out[t.k]=null;return}
+    const pre=v.slice(0,3), mean=pre.reduce((a,b)=>a+b)/3;
+    const range=Math.max(...v)-Math.min(...v), preR=Math.max(...pre)-Math.min(...pre), shift=v[3]-mean;
+    const thr=mean<10?1.5:3; const thin=m.cells[t.k].some(c=>c.n!=null&&c.n<100);
+    let verdict,glyph;
+    if(Math.abs(shift)>=thr && Math.abs(shift)>=1.5*preR){verdict=shift>0?"step up in 2024–26":"step down in 2024–26";glyph=shift>0?"▲":"▼"}
+    else if(range<=4){verdict="steady";glyph="="} else {verdict="varies window to window";glyph="~"}
+    out[t.k]={range,preR,shift,verdict,glyph,thin};
+  });
+  const gaps=[0,1,2,3].map(i=>{const a=m.cells.ncaa[i],b=m.cells.conf[i];return a&&b?b.v-a.v:null});
+  if(gaps.some(g=>g==null)) out.cross=null; else {
+    const hi=gaps.filter(g=>g>0).length, lo=gaps.filter(g=>g<0).length, mean=gaps.reduce((a,b)=>a+b)/4;
+    let txt,sub;
+    if(hi>=3){txt="Conf higher";sub=`${hi} of 4 windows`} else if(lo>=3){txt="NCAA higher";sub=`${lo} of 4 windows`} else {txt="No steady gap";sub=`conf higher in ${hi} of 4`}
+    out.cross={txt,sub,mean,hi,lo,gaps};
+  }
+  return out;
+}
+const gTxt={"▲":"step up in 2024–26","▼":"step down in 2024–26","=":"steady (range ≤ 4 pts)","~":"varies window to window"};
+function badge(t,c){ if(!c) return ""; return `<span class="badge"><span class="d" style="background:var(${t.v})"></span>${t.short}: ${c.glyph} ${c.verdict}${c.thin?" · thin":""}</span>`}
+
+/* ---------- tooltip ---------- */
+const tt=$("tt");
+function showTip(html,x,y){tt.innerHTML=html;tt.style.opacity=1;const r=tt.getBoundingClientRect();let L=x+14,Tp=y+14;if(L+r.width>innerWidth-8)L=x-r.width-14;if(L<8)L=8;if(Tp+r.height>innerHeight-8)Tp=y-r.height-14;if(Tp<8)Tp=8;tt.style.left=L+"px";tt.style.top=Tp+"px"}
+function hideTip(){tt.style.opacity=0}
+document.addEventListener("pointermove",e=>{const el=e.target.closest&&e.target.closest("[data-tip]");if(el)showTip(el.getAttribute("data-tip"),e.clientX,e.clientY);else hideTip()});
+document.addEventListener("focusin",e=>{const el=e.target.closest&&e.target.closest("[data-tip]");if(el){const r=el.getBoundingClientRect();showTip(el.getAttribute("data-tip"),r.left+r.width/2,r.top)}});
+document.addEventListener("focusout",hideTip);
+document.addEventListener("scroll",hideTip,{passive:true});
+
+/* ---------- SVG helpers ---------- */
+const NS='http://www.w3.org/2000/svg';
+function ramp(t,i){return `var(--${t}-${i+1})`}
+function blend(hex,surf,a){const p=h=>{h=h.replace("#","");return[0,2,4].map(i=>parseInt(h.substr(i,2),16))};const c=p(hex),s=p(surf);
+  const m=c.map((x,i)=>Math.round(x*a+s[i]*(1-a)));return "#"+m.map(x=>x.toString(16).padStart(2,"0")).join("")}
+function lum(hex){hex=hex.replace("#","");const c=[0,2,4].map(i=>parseInt(hex.substr(i,2),16)/255).map(x=>x<=.03928?x/12.92:Math.pow((x+.055)/1.055,2.4));return .2126*c[0]+.7152*c[1]+.0722*c[2]}
+function textOn(hex){const l=lum(hex);return (1.05/(l+.05))>=((l+.05)/.05)?"#ffffff":"#0b0b0b"}
+const cv=x=>x.indexOf('var(')===0?css(x.slice(4,-1)):x;
+const ww=host=>Math.max(280,Math.floor(host.clientWidth||host.parentNode.clientWidth||600));
+
+/* ---------- line panel (one metric, two types across 4 windows) ---------- */
+function linePanel(host,m,dom,ticks,h=176){
+  const w=ww(host),ml=34,mr=12,mt=14,mb=22; const pw=w-ml-mr, ph=h-mt-mb;
+  const X=i=>ml+pw*(0.08+0.84*i/3), Y=v=>mt+ph*(1-(Math.min(Math.max(v,dom[0]),dom[1])-dom[0])/(dom[1]-dom[0]));
+  let s=`<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(m.label)} across windows">`;
+  ticks.forEach(t=>{s+=`<line x1="${ml}" x2="${w-mr}" y1="${Y(t)}" y2="${Y(t)}" stroke="var(--grid)"/><text class="tk" x="${ml-6}" y="${Y(t)+4}" text-anchor="end">${t}</text>`});
+  WL.forEach((l,i)=>{s+=`<text class="tk" x="${X(i)}" y="${h-6}" text-anchor="middle">${l}</text>`});
+  const dx={ncaa:-4,conf:4};
+  // whiskers + lines + dots
+  T.forEach(t=>{
+    const pts=m.cells[t.k].map((c,i)=>c?[X(i)+dx[t.k],Y(c.v),c]:null);
+    const col=`var(${t.v})`;
+    pts.forEach(p=>{if(p&&p[2].lo!=null)s+=`<line x1="${p[0]}" x2="${p[0]}" y1="${Y(p[2].lo)}" y2="${Y(p[2].hi)}" stroke="${col}" stroke-opacity=".45" stroke-width="1.5"/>`});
+    s+=`<polyline fill="none" stroke="${col}" stroke-width="2" points="${pts.filter(Boolean).map(p=>p[0]+","+p[1]).join(" ")}"/>`;
+    pts.forEach(p=>{if(p)s+=`<circle cx="${p[0]}" cy="${p[1]}" r="4.5" fill="${col}" stroke="var(--surface)" stroke-width="2"/>`});
+  });
+  // direct value labels on the newest window: higher above, lower below
+  const last=T.map(t=>({t,c:m.cells[t.k][3],y:m.cells[t.k][3]?Y(m.cells[t.k][3].v):0})).filter(o=>o.c).sort((a,b)=>a.y-b.y);
+  last.forEach((o,idx)=>{const up=(idx===0&&last.length>1)||last.length===1;const x=X(3)+dx[o.t.k]; s+=`<text class="ink" font-weight="650" x="${x}" y="${o.y+(up?-9:16)}" text-anchor="middle">${f1(o.c.v)}</text>`});
+  // hover columns
+  WL.forEach((l,i)=>{const x0=i===0?ml:(X(i-1)+X(i))/2, x1=i===3?w-mr:(X(i)+X(i+1))/2;
+    s+=`<g class="col"><line class="xh" x1="${X(i)}" x2="${X(i)}" y1="${mt}" y2="${mt+ph}"/><rect class="hit" x="${x0}" y="${mt}" width="${x1-x0}" height="${ph}" tabindex="0" data-tip="${esc(tipCol(m,i))}" aria-label="${esc(m.label+", "+WL[i])}"/></g>`});
+  s+=`</svg>`; host.innerHTML=s;
+}
+
+/* ---------- strip / range chart ---------- */
+function stripChart(host,rows,o){
+  const w=ww(host), wide=w>=760, dom=o.dom, ticks=o.ticks;
+  const C1=84, C3=128, LW=wide?232:14, RC=wide?2*C1+C3:0, mr=wide?10:14, ml=wide?LW:14;
+  const pl=ml, pr=w-RC-mr, pw=pr-pl, X=v=>pl+pw*(v-dom[0])/(dom[1]-dom[0]);
+  const laneGap=8, rowH=wide?42:64, grpH=26, top=30;
+  let y=top, body="", grid="";
+  const yy=[];rows.forEach(r=>{if(r.group){yy.push({g:r.group,y});y+=grpH}else{yy.push({r,y});y+=rowH}});
+  const H=y+8;
+  ticks.forEach(t=>{grid+=`<line x1="${X(t)}" x2="${X(t)}" y1="${top-6}" y2="${H-8}" stroke="${t===o.ref?"var(--axis)":"var(--grid)"}" ${t===o.ref?'stroke-width="1.5" stroke-dasharray="3 3"':""}/><text class="tk" x="${X(t)}" y="${top-12}" text-anchor="middle">${t}%</text>`});
+  if(wide){grid+=`<text class="tk" x="${w-RC+C1/2}" y="${top-12}" text-anchor="middle">NCAA</text><text class="tk" x="${w-RC+C1*1.5}" y="${top-12}" text-anchor="middle">Conf</text><text class="tk" x="${w-RC+2*C1+C3/2}" y="${top-12}" text-anchor="middle">Conf vs NCAA</text><text class="tk" x="${w-RC+C1}" y="${top-24}" text-anchor="middle">spread across windows</text>`}
+  yy.forEach(o2=>{
+    if(o2.g){body+=`<text class="ink" font-weight="650" x="${wide?4:14}" y="${o2.y+17}">${esc(o2.g)}</text><line x1="4" x2="${w-4}" y1="${o2.y+22}" y2="${o2.y+22}" stroke="var(--border)"/>`;return}
+    const r=o2.r, m=r, cy=o2.y+rowH/2, c=consist(m);
+    const labelTip=`<div class="th">${esc(m.label)}</div>`+T.map(t=>c[t.k]?`<div class="r"><i style="background:${css(t.v)}"></i>${t.short}: spread ${f1(c[t.k].range)} pts · ${c[t.k].verdict}${c[t.k].thin?" · thin data":""}</div>`:"").join("")+(c.cross?`<div class="muted">${c.cross.txt} (${c.cross.sub}); avg gap conf − NCAA ${c.cross.mean>=0?"+":""}${f1(c.cross.mean)} pts</div>`:"");
+    if(wide) body+=`<text class="ink" x="4" y="${cy+4}" data-tip="${esc(labelTip)}" tabindex="0">${esc(m.label)}</text>`;
+    else body+=`<text class="ink" x="14" y="${o2.y+13}" data-tip="${esc(labelTip)}" tabindex="0">${esc(m.label)}</text>`;
+    const laneY={ncaa:(wide?cy-laneGap:o2.y+30),conf:(wide?cy+laneGap:o2.y+30+laneGap*2)};
+    T.forEach(t=>{
+      const cs=m.cells[t.k]; const ly=laneY[t.k];
+      const vs=cs.filter(Boolean).map(c=>c.v); if(!vs.length) return; const a=Math.min(...vs), b=Math.max(...vs);
+      body+=`<line x1="${X(a)}" x2="${X(b)}" y1="${ly}" y2="${ly}" stroke="var(--${t.k})" stroke-opacity=".5" stroke-width="3" stroke-linecap="round"/>`;
+      cs.forEach((cc,i)=>{if(!cc)return;body+=`<g class="dotg"><circle class="vis" cx="${X(cc.v)}" cy="${ly}" r="4.5" fill="${ramp(t.k,i)}" stroke="var(--surface)" stroke-width="2"/><circle class="hit" cx="${X(cc.v)}" cy="${ly}" r="9" tabindex="0" data-tip="${esc(tipCell(m,t.k,i))}" aria-label="${esc(m.label+", "+t.short+" "+WL[i]+": "+f1(cc.v)+"%")}"/></g>`});
+    });
+    if(wide){
+      const cx=[w-RC+C1/2,w-RC+C1*1.5];
+      T.forEach((t,ti)=>{const q=c[t.k]; if(q) body+=`<text class="ink" x="${cx[ti]}" y="${cy+4}" text-anchor="middle" data-tip="${esc(labelTip)}">${f1(q.range)} <tspan font-weight="700">${q.glyph}</tspan></text>`});
+      if(c.cross) body+=`<text class="ink" x="${w-RC+2*C1+C3/2}" y="${cy-1}" text-anchor="middle" font-weight="600">${esc(c.cross.txt)}</text><text class="tk" x="${w-RC+2*C1+C3/2}" y="${cy+12}" text-anchor="middle">${esc(c.cross.sub)}</text>`;
+    }
+    body+=`<line x1="4" x2="${w-4}" y1="${o2.y+rowH}" y2="${o2.y+rowH}" stroke="var(--border)" stroke-opacity=".5"/>`;
+  });
+  host.innerHTML=`<svg viewBox="0 0 ${w} ${H}" role="img" aria-label="${esc(o.aria)}">${grid}${body}</svg><p class="cap" style="padding:0 10px">${wide?"Spread = highest minus lowest of the four windows, in percentage points. <b>=</b> steady (spread ≤ 4 pts) · <b>▲ ▼</b> 2024–26 stepped away from the earlier three windows · <b>~</b> moves around without a pattern. ":"Spread and pattern columns appear on wider screens and in the table view. "}Dotted line = 50%. Lighter dots = older windows.</p>`;
+}
+
+/* ---------- stacked 100% bars: segRows = [{label,color,alpha,cells}] ---------- */
+function stackedBars(host,segRows,o){
+  const w=ww(host),H=o.h||300,mt=30,mb=44,ml=36,mr=10,pw=w-ml-mr,ph=H-mt-mb;
+  const surf=css('--surface'); const gW=pw/2, gapG=10, bw=(gW-gapG*2)/4*0.72, step=(gW-gapG*2)/4;
+  const Y=v=>mt+ph*(1-v/100);
+  let s=`<svg viewBox="0 0 ${w} ${H}" role="img" aria-label="${esc(o.aria)}">`;
+  [0,25,50,75,100].forEach(t=>{s+=`<line x1="${ml}" x2="${w-mr}" y1="${Y(t)}" y2="${Y(t)}" stroke="var(--grid)"/><text class="tk" x="${ml-6}" y="${Y(t)+4}" text-anchor="end">${t}%</text>`});
+  T.forEach((t,ti)=>{
+    const gx=ml+ti*gW;
+    s+=`<text class="ink" font-weight="650" x="${gx+gW/2}" y="${12}" text-anchor="middle">${t.name}</text><rect x="${gx+gapG}" y="${18}" width="${gW-2*gapG}" height="3" rx="1.5" fill="var(${t.v})"/>`;
+    for(let i=0;i<4;i++){
+      const cx=gx+gapG+step*(i+.5), x0=cx-bw/2; let acc=0;
+      s+=`<text class="tk" x="${cx}" y="${H-mb+16}" text-anchor="middle">${WL[i]}</text>`;
+      segRows.forEach(sr=>{
+        const c=sr.cells[t.k][i]; if(!c||!c.v) return;
+        const y1=Y(acc+c.v), y0=Y(acc), hh=Math.max(0,y0-y1-2);
+        const tip=`<div class="th">${esc(sr.label)}</div><div>${t.name} · ${WL[i]}</div><div class="tv">${f1(c.v)}%</div><div>${nf(c.won)} of ${nf(c.n)} ${sr.noun||"bouts"}</div>`;
+        const fillc=blend(cv(sr.color),surf,sr.alpha||1);
+        s+=`<rect x="${x0}" y="${y1+1}" width="${bw}" height="${hh}" rx="2" fill="${fillc}" tabindex="0" data-tip="${esc(tip)}" aria-label="${esc(sr.label+", "+t.short+" "+WL[i]+": "+f1(c.v)+"%")}" class="seg"/>`;
+        if(hh>=15) s+=`<text x="${cx}" y="${y1+1+hh/2+4}" text-anchor="middle" font-weight="650" style="fill:${textOn(fillc)}" pointer-events="none">${f0(c.v)}</text>`;
+        acc+=c.v;
+      });
+    }
+  });
+  s+=`</svg><div class="legend" style="padding:0 10px 4px;margin-top:2px">${segRows.map(sr=>`<span class="it"><span class="sw" style="background:${blend(cv(sr.color),surf,sr.alpha||1)}"></span>${esc(sr.label)}</span>`).join("")}</div>`;
+  host.innerHTML=s;
+}
+
+/* ---------- heatmap: rows = metrics, 8 columns; each type uses its own hue ---------- */
+function heatmap(host,rows,o){
+  const w=ww(host),wide=w>=640, LW=wide?150:96, ml=LW, mr=6, pw=w-ml-mr, cw=pw/8, ch=34, top=48;
+  const dom=o.dom; const surf=css("--surface");
+  const H=top+rows.length*ch+8;
+  let s=`<svg viewBox="0 0 ${w} ${H}" role="img" aria-label="${esc(o.aria)}">`;
+  T.forEach((t,ti)=>{const x=ml+ti*4*cw; s+=`<text class="ink" font-weight="650" x="${x+2*cw}" y="12" text-anchor="middle">${wide?t.name:t.short}</text><rect x="${x+3}" y="17" width="${4*cw-6}" height="3" rx="1.5" fill="var(${t.v})"/>`;
+    for(let i=0;i<4;i++)s+=`<text class="tk" x="${x+cw*(i+.5)}" y="${top-8}" text-anchor="middle">${wide?WL[i]:"’"+WL[i].slice(2,4)+"–"+WL[i].slice(-2)}</text>`});
+  rows.forEach((r,ri)=>{
+    const y=top+ri*ch; s+=`<text class="ink" x="4" y="${y+ch/2+4}">${esc(r.label)}</text>`;
+    T.forEach((t,ti)=>{for(let i=0;i<4;i++){
+      const c=r.cells[t.k][i]; const x=ml+(ti*4+i)*cw;
+      const a=Math.min(.95,Math.max(.10,.10+.85*(c.v-dom[0])/(dom[1]-dom[0])));
+      const fill=blend(css(t.v),surf,a);
+      s+=`<rect x="${x+1}" y="${y+1}" width="${cw-2}" height="${ch-2}" rx="4" fill="${fill}" tabindex="0" data-tip="${esc(tipCell(r,t.k,i))}" aria-label="${esc(r.label+", "+t.short+" "+WL[i]+": "+f1(c.v)+"%")}"/><text x="${x+cw/2}" y="${y+ch/2+4}" text-anchor="middle" font-weight="650" style="fill:${textOn(fill)}" pointer-events="none">${f1(c.v)}</text>`}});
+  });
+  s+=`</svg>`; host.innerHTML=s;
+}
+
+
+/* ---------- gap chart: conference minus NCAA, per window ---------- */
+function gapChart(host,rows,o){
+  const w=ww(host), wide=w>=680, LW=wide?(o.lw||250):14, RC=wide?128:0, mr=10;
+  const pl=LW, pr=w-RC-mr, pw=pr-pl, M=o.m, X=v=>pl+pw*(v+M)/(2*M);
+  const rowH=wide?30:50, grpH=26, top=44; let y=top; const yy=[];
+  rows.forEach(r=>{if(r.group){yy.push({g:r.group,y});y+=grpH}else{yy.push({r,y});y+=rowH}});
+  const H=y+8, alpha=[.3,.5,.75,1], sg=x=>(x>=0?"+":"")+f1(x);
+  let s=`<svg viewBox="0 0 ${w} ${H}" role="img" aria-label="${esc(o.aria)}">`;
+  s+=`<rect x="${X(-M)}" y="${top-8}" width="${X(0)-X(-M)}" height="${H-top}" fill="var(--ncaa)" fill-opacity=".08"/><rect x="${X(0)}" y="${top-8}" width="${X(M)-X(0)}" height="${H-top}" fill="var(--conf)" fill-opacity=".08"/>`;
+  s+=`<text class="ink" font-weight="650" x="${X(0)-8}" y="12" text-anchor="end">← NCAA higher</text><text class="ink" font-weight="650" x="${X(0)+8}" y="12" text-anchor="start">Conference higher →</text>`;
+  const step=o.step; for(let t=-M;t<=M;t+=step){s+=`<line x1="${X(t)}" x2="${X(t)}" y1="${top-8}" y2="${H-8}" stroke="${t===0?"var(--ink2)":"var(--grid)"}" ${t===0?'stroke-width="1.5"':""}/><text class="tk" x="${X(t)}" y="${top-14}" text-anchor="middle">${t>0?"+":t<0?"−":""}${Math.abs(t)}</text>`}
+  if(wide) s+=`<text class="tk" x="${w-RC+RC/2}" y="${top-14}" text-anchor="middle">Sign of the gap</text>`;
+  yy.forEach(o2=>{
+    if(o2.g){s+=`<text class="ink" font-weight="650" x="${wide?4:14}" y="${o2.y+17}">${esc(o2.g)}</text>`;return}
+    const m=o2.r, c=consist(m).cross, cy=o2.y+(wide?rowH/2:36);
+    if(!c) return;
+    s+=`<text class="ink" x="${wide?4:14}" y="${wide?cy+4:o2.y+14}">${esc(m.label)}</text>`;
+    const g=c.gaps, a=Math.min(...g), b=Math.max(...g);
+    s+=`<line x1="${X(a)}" x2="${X(b)}" y1="${cy}" y2="${cy}" stroke="var(--ink2)" stroke-opacity=".45" stroke-width="3" stroke-linecap="round"/>`;
+    g.forEach((v,i)=>{const nc=m.cells.ncaa[i],cc=m.cells.conf[i];
+      const tip=`<div class="th">${esc(m.label)}</div><div class="muted">${WL[i]}</div><div class="r"><i style="background:${css("--conf")}"></i>Conf ${f1(cc.v)}${m.unit}</div><div class="r"><i style="background:${css("--ncaa")}"></i>NCAA ${f1(nc.v)}${m.unit}</div><div class="tv">${sg(v)} pts</div>`;
+      s+=`<g class="dotg"><circle class="vis" cx="${X(v)}" cy="${cy}" r="4.5" fill="var(--ink)" fill-opacity="${alpha[i]}" stroke="var(--surface)" stroke-width="2"/><circle class="hit" cx="${X(v)}" cy="${cy}" r="9" tabindex="0" data-tip="${esc(tip)}" aria-label="${esc(m.label+", "+WL[i]+": conference minus NCAA "+sg(v)+" points")}"/></g>`});
+    if(wide){const solid=c.hi===4||c.lo===4;s+=`<text class="ink" x="${w-RC+RC/2}" y="${cy+4}" text-anchor="middle" ${solid?'font-weight="700"':""}>${c.hi===4?"conf higher 4/4":c.lo===4?"NCAA higher 4/4":`mixed (${c.hi} conf / ${c.lo} NCAA)`}</text>`}
+    s+=`<line x1="4" x2="${w-4}" y1="${o2.y+rowH}" y2="${o2.y+rowH}" stroke="var(--border)" stroke-opacity=".5"/>`;
+  });
+  host.innerHTML=s+`</svg><p class="cap" style="padding:0 10px">Each dot is one window (${[0,1,2,3].map(i=>`<span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--ink);opacity:${alpha[i]};vertical-align:-1px"></span>`).join(" ")} = oldest → newest). Units are percentage points, conference minus NCAA. Dots on one side of the line in every window mean the difference between tournament types keeps its sign; dots on both sides mean no consistent difference.</p>`;
+}
+
+/* ---------- generic metric table ---------- */
+function metricTable(rows,o={}){
+  let h=`<div class="tabwrap"><table><thead><tr><th class="l" rowspan="2">Measure</th>`;
+  T.forEach((t,ti)=>h+=`<th colspan="4" class="${ti?"sep":""}">${t.name}</th>`);
+  h+=`<th colspan="3" class="sep">Consistency</th></tr><tr>`;
+  T.forEach((t,ti)=>WL.forEach((l,i)=>h+=`<th class="${ti&&i===0?"sep":""}">${l}</th>`));
+  h+=`<th class="sep">NCAA</th><th>Conf</th><th>Conf vs NCAA</th></tr></thead><tbody>`;
+  rows.forEach(r=>{
+    if(r.group){h+=`<tr class="gr"><td colspan="12">${esc(r.group)}</td></tr>`;return}
+    const c=r.noPattern?{}:consist(r);
+    h+=`<tr><td class="l">${esc(r.label)}</td>`;
+    T.forEach((t,ti)=>r.cells[t.k].forEach((cc,i)=>{h+=`<td class="${ti&&i===0?"sep":""}">${cc&&cc.v!=null?f1(cc.v)+(r.unit==="%"?"%":""):"–"}<small>${cc&&cc.n!=null?(cc.won!=null?nf(cc.won)+" / ":"n=")+nf(cc.n):""}</small></td>`}));
+    h+=`<td class="sep">${c.ncaa?c.ncaa.glyph+" "+f1(c.ncaa.range):""}<small>${c.ncaa?c.ncaa.verdict:""}</small></td><td>${c.conf?c.conf.glyph+" "+f1(c.conf.range):""}<small>${c.conf?c.conf.verdict:""}</small></td><td>${c.cross?esc(c.cross.txt):""}<small>${c.cross?esc(c.cross.sub):""}</small></td></tr>`;
+  });
+  return h+`</tbody></table></div><p class="cap">Consistency columns: spread = highest − lowest of the four windows (pts). Glyphs: = steady, ▲/▼ step in 2024–26, ~ varies.</p>`;
+}
+
+/* ============================ DATA -> METRIC ROWS ============================ */
+const EDGE=[["1","+1 takedown edge"],["2","+2 takedown edge"],["3","+3 takedown edge"],["4","+4 or more takedown edge"]];
+function s1Rows(b){
+  const r=[];
+  r.push(metric("Wrestler with more takedowns won",d=>{const[w,n]=d["more_td_"+b];return fromCount(w,n)},{id:"head"}));
+  EDGE.forEach(([k,l])=>r.push(metric(l,d=>{const x=d.diff[k][b];return{v:x.pct,won:x.won,n:x.n,lo:x.lo,hi:x.hi}},{id:"e"+k})));
+  return r;
+}
+const s1Fall=()=>metric("Share of upsets won by fall",d=>{let f=0,t=0;for(const k of["1","2","3","4"]){f+=d.upsets[k].fall;t+=d.upsets[k].total}return{v:100*f/t,won:f,n:t}},{noun:"upsets (fewer takedowns, still won)"});
+const s1Upset=b=>metric("Upset rate: fewer takedowns, still won",d=>{const[w,n]=d["more_td_"+b];const c=fromCount(n-w,n);return c},{noun:"bouts with a takedown edge"});
+function s2Rows(b){
+  const S2=(i,label)=>metric(label,d=>{const x=d.scen[i][b];return{v:x.pct,won:x.won,n:x.n,lo:x.lo,hi:x.hi}});
+  return [
+    {group:"Who scores the first takedown"},
+    S2(0,"Scored the first takedown (any time)"),
+    S2(1,"…first takedown in period 1"),
+    S2(2,"…first takedown in period 2 (none in period 1)"),
+    S2(3,"…first takedown in period 3 (none earlier)"),
+    {group:"Nearfall"},
+    S2(5,"Scored nearfall points (any time)"),
+    {group:"Gave up the first takedown"},
+    S2(6,"…then scored the 2nd takedown"),
+    S2(7,"…then scored any later takedown"),
+    S2(8,"…and never scored a takedown"),
+    {group:"How many takedowns a wrestler scored"},
+    S2(11,"Exactly 1 takedown"),
+    S2(9,"Exactly 2 takedowns"),
+    S2(10,"Exactly 3 takedowns"),
+    S2(12,"4 or more takedowns"),
+  ];
+}
+const pctOf=(k)=>d=>({v:100*d.tied_how[k]/d.tied_n,won:d.tied_how[k],n:d.tied_n});
+const COMP=()=>[
+  Object.assign(metric("Decided by points in regulation",pctOf("reg")),{color:"var(--seg-reg)",txt:"#0b0b0b"}),
+  Object.assign(metric("Went to overtime",pctOf("ot")),{color:"var(--seg-ot)",txt:"#fff"}),
+  Object.assign(metric("Fall in regulation",pctOf("fall")),{color:"var(--seg-fall)",txt:"#0b0b0b"}),
+  Object.assign(metric("Forfeit / injury / DQ / no official result",pctOf("other")),{color:"var(--seg-other)",txt:"#0b0b0b"}),
+];
+const tiedShare=()=>metric("Bouts tied on takedowns (% of all bouts)",d=>({v:100*d.tied/d.bouts,won:d.tied,n:d.bouts}));
+const oneShare=()=>metric("Regulation tied bouts decided by exactly 1 point",d=>({v:d.margin.one_pct,won:d.margin.one,n:d.margin.of}),{noun:"regulation tied bouts"});
+const AHEAD=()=>["Escape","Riding time","Nearfall","Reversal","Penalty"].map(c=>metric("Winner ahead in "+c.toLowerCase(),d=>({v:d.ahead[c].pct,won:d.ahead[c].n,n:d.ahead[c].of}),{short:c,noun:"regulation tied bouts"}));
+const EDGES=[["Escape",0,"Escape lead of 1 pt"],["Escape",1,"Escape lead of 2 pts"],["Reversal",1,"Reversal lead of 2 pts"],["Nearfall",2,"Nearfall lead of 3+ pts"],["Penalty",0,"Penalty lead of 1 pt"],["Riding time",0,"Riding-time lead of 1 pt"]];
+const edgeRows=()=>EDGES.map(([c,bi,l])=>metric(l,d=>{const x=d.cat_edge[c]&&d.cat_edge[c][bi];return x&&x.n>0?fromCount(x.won,x.n):null}));
+function otBuckets(d){
+  const b={sv:0,esc:0,fast:0,other:0};
+  d.ot_kinds.forEach(o=>{
+    if(o.kind==="Sudden victory")b.sv+=o.n;
+    else if(o.detail==="scored more tiebreak points (escape)")b.esc+=o.n;
+    else if(o.detail.indexOf("FASTER")>=0)b.fast+=o.n;
+    else b.other+=o.n;
+  });return b;
+}
+const otm=(k,label,color,alpha,txt)=>Object.assign(metric(label,d=>{const b=otBuckets(d);return{v:100*b[k]/d.ot_n,won:b[k],n:d.ot_n}},{noun:"overtime bouts"}),{color,alpha,txt});
+const OTROWS=()=>[
+  otm("sv","Sudden victory (first score wins)","var(--seg-ot)",1,"#fff"),
+  otm("esc","Tiebreak: more escape points","var(--seg-ot)",.76,"#fff"),
+  otm("fast","Tiebreak: both escaped, faster escape won","var(--seg-ot)",.56,"#0b0b0b"),
+  otm("other","Tiebreak: other (riding, reversal, penalty, ride-out)","var(--seg-ot)",.38,"#0b0b0b"),
+];
+
+/* ============================ RENDER ============================ */
+function render(){
+  const b=S.basis;
+  document.body.className="view-"+S.view;
+  $("rampN").innerHTML=[0,1,2,3].map(i=>`<i style="background:${ramp("ncaa",i)}"></i>`).join("");
+  $("rampC").innerHTML=[0,1,2,3].map(i=>`<i style="background:${ramp("conf",i)}"></i>`).join("");
+
+  /* ---- S1 ---- */
+  const r1=s1Rows(b), fall=s1Fall();
+  const panels=[[r1[0],"Wrestler with more takedowns won","Everyone with a takedown edge, any size"],[r1[1],"+1 takedown edge","Ahead by exactly one takedown"],[r1[2],"+2 takedown edge","Ahead by exactly two"],[r1[3],"+3 takedown edge","Ahead by exactly three"],[r1[4],"+4 or more","Ahead by four or more"]];
+  let ph="";
+  panels.forEach(([m,t,sub],i)=>{const c=consist(m);ph+=`<div class="panel"><h4>${t}</h4><div class="pn">${T.map(tt=>badge(tt,c[tt.k])).join("")}</div><div id="s1p${i}"></div></div>`});
+  const cf=consist(fall);
+  ph+=`<div class="panel"><h4>Upsets that were falls</h4><div class="pn">${T.map(tt=>badge(tt,cf[tt.k])).join("")}</div><div id="s1p5"></div></div>`;
+  $("s1-panels").innerHTML=ph;
+  panels.forEach(([m],i)=>linePanel($("s1p"+i),m,[84,100],[85,90,95,100]));
+  linePanel($("s1p5"),fall,[0,45],[0,15,30,45]);
+  $("s1-cap").innerHTML=`Panels 1–5 share one axis (84–100%) so the size of every movement is comparable. The mirror image is the upset rate: a wrestler with fewer takedowns wins ${f1(100-r1[0].cells.ncaa[3].v)}% of NCAA bouts and ${f1(100-r1[0].cells.conf[3].v)}% of conference bouts in 2024–26, versus ${f1(100-r1[0].cells.ncaa[2].v)}% and ${f1(100-r1[0].cells.conf[2].v)}% in 2021–23. The last panel uses a 0–45% axis: it counts upsets (as few as ${Math.min(...fall.cells.ncaa.concat(fall.cells.conf).map(c=>c.n))} in a cell), so it is directional only.`;
+  gapChart($("s1-gap"),r1,{m:6,step:2,aria:"Conference minus NCAA win percentage by takedown edge"});
+  const upsetRow=s1Upset(b);
+  $("s1-table").innerHTML=metricTable(r1.concat([{group:"Upsets"},upsetRow,fall]));
+
+  /* ---- S2 ---- */
+  const r2=s2Rows(b);
+  stripChart($("s2-strip"),r2,{dom:[0,100],ticks:[0,25,50,75,100],ref:50,aria:"Win percentage by scenario across windows, NCAA and conference"});
+  $("s2-cap").innerHTML=`Memo rows not drawn: a first takedown scored in overtime ends a sudden-victory bout, so it wins 98–100% by rule. Cells with fewer than 100 bouts show "thin" in their tooltip (period-3 first takedowns in NCAA 2014–16 is the clearest case).`;
+  gapChart($("s2-gap"),r2,{m:10,step:5,aria:"Conference minus NCAA win percentage by scenario"});
+  $("s2-table").innerHTML=metricTable(r2);
+
+  /* ---- S3 ---- */
+  const ts=tiedShare(), os=oneShare();
+  $("s3-lines").innerHTML=[ts,os].map((m,i)=>{const c=consist(m);return `<div class="panel"><h4>${m.label}</h4><div class="pn">${T.map(tt=>badge(tt,c[tt.k])).join("")}</div><div id="s3l${i}"></div></div>`}).join("");
+  linePanel($("s3l0"),ts,[0,30],[0,10,20,30]);
+  linePanel($("s3l1"),os,[0,60],[0,20,40,60]);
+  const comp=COMP();
+  stackedBars($("s3-comp"),comp.map(r=>({label:r.label,color:r.color,txt:r.txt,cells:r.cells})),{aria:"How bouts tied on takedowns ended",h:300});
+  $("s3-comp-cap").innerHTML=`The grey segment is largest in conference 2017–19 (${f1(get("conf",1).tied_how.other/get("conf",1).tied_n*100)}%) because that window has the lowest share of bouts matched to an official result (${f1(100*get("conf",1).matched/get("conf",1).bouts)}%); unmatched bouts land there.`;
+  const ah=AHEAD();
+  heatmap($("s3-heat"),ah,{dom:[10,65],aria:"Share of tied-takedown regulation bouts in which the winner was ahead in each scoring category"});
+  gapChart($("s3-gap"),[ts,os].concat(comp,ah),{m:15,step:5,lw:290,aria:"Conference minus NCAA share, tied-takedown bouts"});
+  const er=edgeRows();
+  stripChart($("s3-edge"),er,{dom:[40,100],ticks:[40,50,60,70,80,90,100],ref:50,aria:"Win percentage of the wrestler holding a scoring-category edge"});
+  const ot=OTROWS();
+  stackedBars($("s3-ot"),ot.map(r=>({label:r.label,color:r.color,alpha:r.alpha,txt:r.txt,cells:r.cells,noun:"overtime bouts"})),{aria:"How overtime was decided",h:280});
+  $("s3-table").innerHTML=
+    metricTable([{group:"How often tied"},ts,os,{group:"How tied bouts ended (% of tied bouts)"}].concat(comp.map(r=>Object.assign({},r,{noPattern:false})),[{group:"Winner was ahead in… (% of regulation tied bouts decided by points)"}],ah,[{group:"Win % of the wrestler with the edge"}],er,[{group:"How overtime was settled (% of overtime bouts)"}],ot));
+
+  /* ---- S4 ---- */
+  renderS4();
+  renderTakeaways();
+}
+
+function renderS4(){
+  const levels=[["4+","4 or more"],["3","3 wins"],["2","2 wins"],["1","1 win"]];
+  const key=(t,i)=>t+"|"+W[i];
+  const val=(t,i,l)=>{const L=D[key(t,i)].ladder;return l==="4+"?(L["4"]||0):(L[l]||0)};
+  let h=`<table class="ladder" style="min-width:640px"><thead><tr><th class="l" rowspan="2">Reached exactly…</th>`;
+  T.forEach((t,ti)=>h+=`<th colspan="4" class="${ti?"sep":""}">${t.name}</th>`);
+  h+=`</tr><tr>`;T.forEach((t,ti)=>WL.forEach((l,i)=>h+=`<th class="${ti&&i===0?"sep":""}">${l}</th>`));
+  h+=`</tr></thead><tbody>`;
+  const surf=css("--surface");
+  levels.forEach(([l,name])=>{
+    h+=`<tr><td class="l">${name} without a takedown</td>`;
+    T.forEach((t,ti)=>{const mx=Math.max(1,...[0,1,2,3].map(i=>val(t.k,i,l)));
+      [0,1,2,3].forEach(i=>{const v=val(t.k,i,l);const a=v===0?0:.15+.8*(v/mx);const fill=v===0?"transparent":blend(css(t.v),surf,a);
+        h+=`<td class="${ti&&i===0?"sep":""}" style="background:${fill};color:${v===0?"var(--muted)":textOn(fill)}" data-tip="${esc(`<div class='th'>${name} without a takedown</div><div>${t.name} · ${WL[i]}</div><div class='tv'>${v} ${t.k==="ncaa"?"All-Americans":"wrestlers"}</div>`)}" tabindex="0">${v}</td>`});});
+    h+=`</tr>`;
+  });
+  h+=`</tbody></table>`;
+  $("s4-ladder").innerHTML=h;
+  let n=`<table class="names"><thead><tr><th class="l">Wrestler (school)</th><th>Tournament, weight</th><th>Place</th><th>No-TD wins</th><th>Who they beat</th></tr></thead><tbody>`;
+  T.forEach(t=>{[0,1,2,3].forEach(i=>{const d=get(t.k,i);
+    n+=`<tr class="gr"><td colspan="5">${t.name} · ${WL[i]} — ${d.nd_top} wins is the maximum${d.nd_rows.length>8?`; ${d.nd_rows.length} All-Americans tied at ${d.nd_top} (list omitted)`:""}</td></tr>`;
+    if(d.nd_rows.length<=8) d.nd_rows.forEach(r=>{n+=`<tr><td class="l">${esc(r.name)}</td><td>${esc(r.where)}</td><td>${esc(r.place||"—")}</td><td>${esc(r.wins)}</td><td>${esc(r.beat)}</td></tr>`});
+  })});
+  n+=`</tbody></table>`;$("s4-names").innerHTML=n;
+}
+
+function renderTakeaways(){
+  const P=(m,t,i)=>m.cells[t][i].v;
+  const all=(m)=>T.flatMap(t=>m.cells[t.k].map(c=>c.v));
+  const rng=(m,tk)=>{const v=(tk?m.cells[tk]:null)?m.cells[tk].map(c=>c.v):all(m);return[Math.min(...v),Math.max(...v)]};
+  const nRange=(m)=>{const v=T.flatMap(t=>m.cells[t.k].map(c=>c.n));return[Math.min(...v),Math.max(...v)]};
+  const sg=x=>(x>=0?"+":"")+f1(x);
+  /* section 1 */
+  const r1=s1Rows(S.basis), e1=r1[1], c1=consist(e1);
+  const big=[2,3,4].flatMap(k=>all(r1[k]));
+  const pre1=T.flatMap(t=>[0,1,2].map(i=>P(e1,t.k,i)));
+  $("s1-take").innerHTML=`
+   <div class="t"><b>What holds</b>A lead of two or more takedowns wins at least ${Math.floor(Math.min(...big))}% of the time in every window and in both tournament types. The +3 and +4 lines sit against the ceiling.</div>
+   <div class="t"><b>What moved</b>The one-takedown edge. The six cells before 2024 sit between ${f1(Math.min(...pre1))}% and ${f1(Math.max(...pre1))}%; in 2024–26 it is ${f1(P(e1,"ncaa",3))}% at the NCAAs and ${f1(P(e1,"conf",3))}% in conference tournaments. Both types stepped up in the same window, by similar amounts (${sg(c1.ncaa.shift)} and ${sg(c1.conf.shift)} pts vs. their earlier average).</div>
+   <div class="t"><b>NCAA vs conference</b>At +1 the gap changes sign from window to window (${c1.cross.gaps.map(sg).join(", ")} pts, conf minus NCAA), so neither type systematically rewards a takedown edge more. Falls make up a growing share of the few upsets that remain, in both types.</div>`;
+  /* section 2 */
+  const r2=s2Rows(S.basis).filter(r=>!r.group);
+  const by=l=>r2.find(r=>r.label.startsWith(l));
+  const first=by("Scored the first"), p1=by("…first takedown in period 1"), p2=by("…first takedown in period 2"), p3=by("…first takedown in period 3"),
+        gave=by("…then scored any later"), nfm=by("Scored nearfall"), never=by("…and never");
+  let p2gt=0,p3gt=0;T.forEach(t=>[0,1,2,3].forEach(i=>{if(P(p2,t.k,i)>P(p1,t.k,i))p2gt++;if(P(p3,t.k,i)>P(p2,t.k,i))p3gt++}));
+  const cf=consist(first).cross, cg=consist(gave).cross, cp1=consist(p1).cross, c3=consist(p3);
+  const n3=nRange(p3);
+  $("s2-take").innerHTML=`
+   <div class="t"><b>What holds</b>The shape of the table repeats. Waiting longer to score first is worth more: a period-2 first takedown beats period 1 in ${p2gt} of 8 cells and period 3 beats period 2 in ${p3gt} of 8. Nearfall scorers win ${f0(rng(nfm)[0])}–${f0(rng(nfm)[1])}% everywhere; a wrestler who gives up the first takedown and never scores wins only ${f1(rng(never)[0])}–${f1(rng(never)[1])}%.</div>
+   <div class="t"><b>NCAA vs conference</b>The gap keeps its sign. Scoring first is worth more in conference tournaments than at the NCAAs (${cf.txt.toLowerCase()}, ${cf.sub}; average ${sg(cf.mean)} pts conf minus NCAA). After giving up the first takedown and scoring a later one, the NCAA wrestler does better (${cg.txt}, ${cg.sub}). One reading is that NCAA fields are more evenly matched; this data can't test that.</div>
+   <div class="t"><b>What moved</b>Scoring first is worth more in 2024–26 in both types (${sg(consist(first).ncaa.shift)} NCAA, ${sg(consist(first).conf.shift)} conf vs. earlier windows). The noisiest row is a period-3 first takedown (NCAA ${[0,1,2,3].map(i=>f1(P(p3,"ncaa",i))).join(" → ")}), with ${nf(n3[0])}–${nf(n3[1])} bouts per cell.</div>`;
+  /* section 3 */
+  const comp=COMP(), ah=AHEAD();
+  const esc_=rng(ah[0]), oc=comp[1].cells.conf, on=comp[1].cells.ncaa.map(c=>c.v);
+  const escCells=T.flatMap(t=>[0,1,2,3].map(i=>P(ah[0],t.k,i))).filter(v=>v>=55);
+  $("s3-take").innerHTML=`
+   <div class="t"><b>What holds</b>The mix. In every window about ${f0(Math.min(...comp[0].cells.ncaa.map(c=>c.v)))}–${f0(Math.max(...comp[0].cells.ncaa.map(c=>c.v)))}% of NCAA tied bouts end on points in regulation, ${f0(Math.min(...on))}–${f0(Math.max(...on))}% go to overtime and ${f0(Math.min(...comp[2].cells.ncaa.map(c=>c.v)))}–${f0(Math.max(...comp[2].cells.ncaa.map(c=>c.v)))}% end in a fall. Escape is the category the winner most often led (${escCells.length} of 8 cells at ${f0(Math.min(...escCells))}–${f0(Math.max(...escCells))}%), riding time next (about half).</div>
+   <div class="t"><b>What moved</b>Nearfall leads fell after 2019 in both types (NCAA ${f0(P(ah[2],"ncaa",1))}% → ${f0(P(ah[2],"ncaa",2))}%, conference ${f0(P(ah[2],"conf",1))}% → ${f0(P(ah[2],"conf",2))}%). Riding-time leads declined in conference bouts (${f0(P(ah[1],"conf",0))}% → ${f0(P(ah[1],"conf",3))}%) but not at the NCAAs. NCAA 2014–16 is the outlier for escapes (${f0(P(ah[0],"ncaa",0))}%).</div>
+   <div class="t"><b>NCAA vs conference</b>Overtime is rarer in conference tournaments in all four windows (${f0(oc[0].v)}% → ${f0(oc[3].v)}% vs. a steady ${f0(Math.min(...on))}–${f0(Math.max(...on))}% at the NCAAs), closing over time. The 2017–19 spike in penalty leads (${f0(P(ah[4],"ncaa",1))}% NCAA, ${f0(P(ah[4],"conf",1))}% conf) appears in both types at once.</div>`;
+  /* section 4 */
+  const L=(t,i)=>get(t,i).ladder;
+  $("s4-take").innerHTML=`
+   <div class="t"><b>What holds</b>The ceiling. No wrestler in any window, in either tournament type, won four bouts in one tournament without a takedown. Three is the most, and it is rare: ${T.map(t=>`${t.short} ${[0,1,2,3].map(i=>L(t.k,i)["3"]||0).join(" / ")}`).join("; ")} wrestlers per window (oldest to newest).</div>
+   <div class="t"><b>What moved</b>NCAA 2021–23 topped out at two (${L("ncaa",2)["2"]} All-Americans tied there, none at three). Pins count as no-takedown wins, so one win by fall can push a wrestler to three.</div>
+   <div class="t"><b>NCAA vs conference</b>The populations differ. NCAA rows count top-eight finishers only (${get("ncaa",3).aa_pop} All-American seasons in 2024–26); conference rows count every wrestler in six tournaments. Raw counts are not comparable, but the ceiling is.</div>`;
+}
+
+/* ---------- glance + scope + notes (static composition from data) ---------- */
+function buildStatic(){
+  const r1=s1Rows("all"), r2=s2Rows("all").filter(r=>!r.group);
+  const P=(m,t,i)=>m.cells[t][i].v;
+  const e1=r1[1];
+  const pre1=T.flatMap(t=>[0,1,2].map(i=>P(e1,t.k,i))), big=[2,3,4].flatMap(k=>T.flatMap(t=>r1[k].cells[t.k].map(c=>c.v)));
+  const fs=consist(r2[0]);
+  $("glance").innerHTML=`
+   <div class="g"><b class="k">1 · Takedown differential</b><div class="big">Steady, with one step</div><p>A lead of 2+ takedowns wins at least ${Math.floor(Math.min(...big))}% everywhere. The +1 edge sat at ${f0(Math.min(...pre1))}–${f0(Math.max(...pre1))}% until 2024–26, then jumped to ${f0(P(e1,"ncaa",3))}% (NCAA) and ${f0(P(e1,"conf",3))}% (conf) together.</p></div>
+   <div class="g"><b class="k">2 · Scenarios</b><div class="big">Same shape, steady tournament gap</div><p>Scoring first is worth ${f1(Math.min(...fs.cross.gaps.map(Math.abs)))}–${f1(Math.max(...fs.cross.gaps.map(Math.abs)))} more points in conference tournaments than at the NCAAs, in all four windows. Both types moved up in 2024–26.</p></div>
+   <div class="g"><b class="k">3 · Tied on takedowns</b><div class="big">Same mix, shifting details</div><p>Roughly 1 bout in 6. About three-quarters end on points in regulation, led by escapes. Nearfall leads shrank after 2019 in both types.</p></div>
+   <div class="g"><b class="k">4 · No-takedown wins</b><div class="big">A hard ceiling at three</div><p>Never four, in any window or tournament type. Three is reached by 0–5 wrestlers per window.</p></div>`;
+  let sc=`<h3 style="margin-top:0">What is in each window</h3><div style="overflow-x:auto"><table class="scope"><thead><tr><th class="l">Window</th><th>NCAA seasons</th><th>NCAA bouts</th><th>Conference seasons</th><th>Conference bouts</th><th>Matched to official result</th></tr></thead><tbody>`;
+  W.forEach((w,i)=>{const a=get("ncaa",i),c=get("conf",i);sc+=`<tr><td class="l">${WL[i]}${i===0?" (2015–16 only)":""}</td><td>${a.seasons.join(", ")}</td><td>${nf(a.bouts)}</td><td>${c.seasons.join(", ")}</td><td>${nf(c.bouts)}</td><td>${f1(100*c.matched/c.bouts)}%</td></tr>`});
+  sc+=`</tbody></table></div><p class="cap">Bouts = bouts with play-by-play. 2020 had no tournament. 2024–26 is the 3-point-takedown era (the play-by-play logs takedowns as “Takedown 3” from 2024). Only one window falls in that era, so the data can’t separate a scoring effect from anything else that changed at the same time.</p>`;
+  $("scopecard").innerHTML=sc;
+  $("notes").innerHTML=`
+   <li>Sources: NCAA play-by-play and official results (<code>data/{year}/ncaa-tourney</code>); conference play-by-play (<code>{conf}-tourney/bout_detail</code>) joined to official results extracted from the team scrapes. Eight text reports in <code>data/analysis/</code> hold the same numbers; this page was parsed from them.</li>
+   <li>“Decided by points” excludes falls, forfeits, injury defaults, DQs and bouts with no official result. “All bouts” includes everything with play-by-play; in conference data, unmatched bouts count only there.</li>
+   <li>${[0,1,2,3].map(i=>get("conf",i).swapped).reduce((a,b)=>a+b,0)+[0,1,2,3].map(i=>get("ncaa",i).swapped).reduce((a,b)=>a+b,0)} bouts had sides swapped in the source (winner’s events and score logged under the loser); they were detected against the official score and corrected.</li>
+   <li>EIWA is not included (no play-by-play). 2014–16 is really 2015–16. Conference tournaments 2015 onward, where the source has them.</li>
+   <li>Small-sample cells (n &lt; 100) are flagged “thin” in tooltips; single-digit differences between individual cells are often inside the 95% interval.</li>`;
+}
+
+/* ---------- controls ---------- */
+function bindSeg(id,key,after){const box=$(id);box.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;S[key]=b.dataset.v;[...box.children].forEach(x=>x.setAttribute("aria-pressed",x===b));after()})}
+function applyTheme(){const r=document.documentElement;if(S.theme==="auto")r.removeAttribute("data-theme");else r.setAttribute("data-theme",S.theme)}
+bindSeg("f-basis","basis",render);
+bindSeg("f-view","view",render);
+bindSeg("f-theme","theme",()=>{applyTheme();render()});
+let rt;const rerender=()=>{clearTimeout(rt);rt=setTimeout(render,120)};
+window.addEventListener("resize",rerender);
+matchMedia("(prefers-color-scheme: dark)").addEventListener&&matchMedia("(prefers-color-scheme: dark)").addEventListener("change",rerender);
+buildStatic();render();
+</script>
+</body>
+</html>

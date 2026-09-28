@@ -54,32 +54,94 @@ CONFERENCE_TOURNAMENT_IDS = {
         2026: 964607132,  # Bryce Jordan Center, State College PA, 03/07-03/08/2026
         2025: 911000132,  # Welsh Ryan Arena, Evanston IL, 03/08-03/09/2025
         2024: 825871132,  # XFINITY Center, College Park MD, 03/09-03/10/2024
+        2023: 720278132,
+        2022: 659853132,
+        2021: 627927132,
+        2019: 376962132,
+        2018: 45444132,
+        2017: 1510076,
+        2016: 226034009,
+        2015: 179825009,
+        # 2020 cancelled (COVID).
     },
     "big_12": {
         2026: 974060132,  # BOK Center, Tulsa OK, 03/06-03/07/2026
         2025: 900890132,  # BOK Center, Tulsa OK, 03/08-03/09/2025
         2024: 848140132,  # BOK Center, Tulsa OK, 03/09-03/10/2024
+        2023: 724521132,
+        2022: 663928132,
+        2021: 623655132,
+        2020: 579474132,
+        2019: 340409132,
+        2015: 178809009,
+        # 2016-2018 searched extensively (2026-09-15: "Big 12", "Big 12
+        # Wrestling", "Big XII", "Cowboy", year-prefixed variants -- all with
+        # a full-year date range) and not found on TrackWrestling Classic
+        # under any tried name. Every "Big 12"/"Big XII" hit those years
+        # resolved to an unrelated Illinois/Indiana high-school conference
+        # ("NI Big 12", "Big XII Freshman/Sophomore"). Worth another look
+        # with a specific host-school/venue name before concluding absent.
     },
     "acc": {
         2026: 948555132,  # Cassell Coliseum, Blacksburg VA, 03/08/2026
         2025: 882841132,  # Cameron Indoor Stadium, Durham NC, 03/09/2025
         2024: 815457132,  # Carmichael Arena, Chapel Hill NC, 03/10/2024
+        2023: 696489132,
+        2022: 653309132,
+        2021: 618503132,
+        2020: 545193132,
+        2019: 291455132,
+        2018: 45559132,
+        2017: 260564009,
+        2016: 228041009,
+        2015: 128107,
     },
     "mac": {
         2026: 964861132,  # Alumni Arena, Buffalo NY, 03/06-03/07/2026
         2025: 911012132,  # CURE Insurance Arena, Trenton NJ, 03/07-03/08/2025
         2024: 830507132,  # Memorial Athletic and Convocation Center, Kent OH, 03/08-03/09/2024
+        2022: 655295132,
+        2020: 596502132,
+        2018: 55261132,
+        2017: 1517076,
+        2016: 227036009,
+        2015: 180829009,
+        # 2019 (368799132) and 2021 (619497132) candidates are the correct
+        # tournament by name/date but VerifyPassword's anonymous-viewer login
+        # doesn't work on them (MainFrame.jsp comes back as a bare
+        # GoToLogin.js redirect, unlike every working ID above) -- these two
+        # editions appear to be password-protected on TrackWrestling itself,
+        # not a wrong-ID problem. 2023's only found candidate (740818132,
+        # "2023 MAC Wrestling Championship") resolved to a youth tournament
+        # (weights 75-200) when verified -- wrong tournament, real one not
+        # found under any tried name.
     },
     "pac_12": {
         2026: 974263132,  # Cal Poly, San Luis Obispo CA, 03/06/2026
+        2023: 724583132,
+        2022: 659781132,
+        2021: 623766132,
+        2020: 580101132,
+        2019: 291172132,
+        2018: 46882132,
         # 2024/2025 don't exist on TrackWrestling -- conference realignment
-        # turmoil (most Pac-12 schools left in 2024); only 2026, 2023, and
-        # 2018 editions were found. 2026 is the only one in our current
-        # scoring-era window.
+        # turmoil (most Pac-12 schools left in 2024).
+        # 2015-2017 searched ("Pac-12", "Pac 12", "Pac12", "PAC-12", full
+        # year range) and not found -- likely pre-dates Pac-12's
+        # TrackWrestling adoption.
     },
     "socon": {
         2025: 896232132,  # Kimmel Arena, Asheville NC, 03/07-03/08/2025
         2024: 794933132,  # Holmes Convocation Center, Boone NC, 03/09/2024
+        2023: 711986132,
+        2022: 648217132,
+        2021: 618689132,
+        2020: 578857132,
+        2019: 389127132,
+        2018: 4805132,
+        2017: 253335009,
+        2016: 220835009,
+        2015: 180832009,
         # 2026 not found on TrackWrestling under this or related names --
         # confirmed absent via a full-year 2026 date-range search, not just
         # an untried search term.

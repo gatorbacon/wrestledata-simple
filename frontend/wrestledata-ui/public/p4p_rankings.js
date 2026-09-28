@@ -109,6 +109,14 @@ function sortedList(weight, sort) {
       return b.dpg - a.dpg;
     });
   }
+  if (sort === "intermat") {
+    return [...list].sort((a, b) => {
+      if (a.intermat_rank === null && b.intermat_rank === null) return 0;
+      if (a.intermat_rank === null || a.intermat_rank === undefined) return 1;
+      if (b.intermat_rank === null || b.intermat_rank === undefined) return -1;
+      return a.intermat_rank - b.intermat_rank;
+    });
+  }
   return [...list].sort((a, b) => a.rank - b.rank);
 }
 
@@ -208,6 +216,23 @@ function rankGapInfo(w) {
   return null;
 }
 
+// Which rank number a row displays/badges depends on the active sort: Flo's
+// own rank under "rank"/"dpg" (DPG sort re-orders rows but still shows the
+// editorial rank, same as before -- that's what makes the DPG-vs-rank gap
+// highlighting below meaningful), InterMat's own rank when sorted by it, so
+// the badge always matches the number the list is actually ordered by.
+function displayRankFor(w, sort) {
+  return sort === "intermat" ? w.intermat_rank : w.rank;
+}
+
+function renderRankBadge(rank) {
+  if (rank === null || rank === undefined) {
+    return `<span class="rank-badge standard">—</span>`;
+  }
+  const medal = rank <= 3 ? `medal-${["gold", "silver", "bronze"][rank - 1]}` : "standard";
+  return `<span class="rank-badge ${medal}">#${rank}</span>`;
+}
+
 function renderP4PTable(weight, sort) {
   const tbody = document.querySelector("#p4p-table tbody");
   if (!tbody) return;
@@ -220,7 +245,7 @@ function renderP4PTable(weight, sort) {
 
     return (
       `<tr class="${rowCls}">` +
-      `<td class="rank-cell"><span class="rank-badge ${w.rank <= 3 ? `medal-${["gold", "silver", "bronze"][w.rank - 1]}` : "standard"}">#${w.rank}</span></td>` +
+      `<td class="rank-cell">${renderRankBadge(displayRankFor(w, sort))}</td>` +
       `<td class="name">${renderWrestlerCell(w)}</td>` +
       `<td>${renderTeamCell(w)}</td>` +
       `<td class="num">${renderDpgCell(w, band)}</td>` +
@@ -244,7 +269,7 @@ function renderP4PMobileList(weight, sort) {
     const gap = rankGapInfo(w);
     const gapCls = gap === "above" ? "dpg-row-gap-above" : gap === "below" ? "dpg-row-gap-below" : "";
     return renderMobileRankRow({
-      rank: w.rank,
+      rank: displayRankFor(w, sort),
       wrestlerId: w.wrestler_id,
       name: w.name,
       team: w.team,
@@ -264,12 +289,42 @@ function renderP4P(weight, sort) {
   renderP4PMobileList(weight, sort);
 }
 
+// InterMat doesn't publish a pound-for-pound (cross-weight) list -- only
+// per-weight rankings, confirmed when the scraper was built (no P4P tab on
+// their page at all). So intermat_rank on the P4P tab is really just each
+// wrestler's own single-weight rank, not a true cross-weight order -- e.g.
+// every weight's #1 would show as "#1" here, which reads as broken, not
+// informative.
+//
+// Rather than grey out the InterMat sort option whenever P4P happens to be
+// selected (P4P is the default landing view, so that greyed it out far too
+// often for a wrestler who just wants to see InterMat's numbers) -- picking
+// "InterMat Rank" while on the P4P tab jumps the weight tab to 125 instead,
+// so it's always one click away. The P4P tab itself is what gets disabled,
+// but only while InterMat sort is actually active, since that's the one
+// combination with no real data behind it.
+const INTERMAT_DEFAULT_WEIGHT = "125";
+
+function updateP4PTabAvailability() {
+  const disabled = currentSort === "intermat";
+  const p4pTab = document.querySelector('#p4p-weight-tabs .hp-tab[data-weight="p4p"]');
+  if (!p4pTab) return;
+  p4pTab.disabled = disabled;
+  p4pTab.classList.toggle("hp-tab-disabled", disabled);
+  p4pTab.title = disabled ? "InterMat doesn't publish a pound-for-pound list -- pick a weight class" : "";
+}
+
+function setActiveWeightTab(weight) {
+  document.querySelectorAll("#p4p-weight-tabs .hp-tab").forEach(t => {
+    t.classList.toggle("active", t.dataset.weight === weight);
+  });
+}
+
 function setupP4PTabs() {
   document.querySelectorAll("#p4p-weight-tabs .hp-tab").forEach(tab => {
     tab.addEventListener("click", () => {
-      document.querySelectorAll("#p4p-weight-tabs .hp-tab").forEach(t => t.classList.remove("active"));
-      tab.classList.add("active");
       currentWeight = tab.dataset.weight;
+      setActiveWeightTab(currentWeight);
       renderP4P(currentWeight, currentSort);
     });
   });
@@ -277,6 +332,7 @@ function setupP4PTabs() {
 
 const SORT_SUBTEXT = {
   rank: "Rankings provided by FloWrestling",
+  intermat: "Rankings provided by InterMat — a second editorial source, tracked in parallel for comparison. FloWrestling's rank stays the site's official rank everywhere else.",
   dpg: "Dual Points Gained - Measures how many extra dual points a wrestler adds or subtracts each time they wrestle, compared with what a typical wrestler gets against that same opponent.",
 };
 
@@ -286,25 +342,32 @@ function updateSortSubtext(sort) {
   el.textContent = SORT_SUBTEXT[sort] || "";
 }
 
+function applySortChange(sort) {
+  currentSort = sort;
+  if (currentSort === "intermat" && currentWeight === "p4p") {
+    currentWeight = INTERMAT_DEFAULT_WEIGHT;
+    setActiveWeightTab(currentWeight);
+  }
+
+  document.querySelectorAll(".sort-pill[data-sort]").forEach(p => p.classList.toggle("active", p.dataset.sort === currentSort));
+  const select = document.getElementById("p4p-sort-select");
+  if (select) select.value = currentSort;
+
+  updateSortSubtext(currentSort);
+  updateP4PTabAvailability();
+  renderP4P(currentWeight, currentSort);
+}
+
 function setupSortControl() {
   // Homepage widget: dropdown.
   const select = document.getElementById("p4p-sort-select");
   if (select) {
-    select.addEventListener("change", () => {
-      currentSort = select.value;
-      renderP4P(currentWeight, currentSort);
-    });
+    select.addEventListener("change", () => applySortChange(select.value));
   }
 
   // Rankings page: "Sort by" pills.
-  const pills = document.querySelectorAll(".sort-pill[data-sort]");
-  pills.forEach(pill => {
-    pill.addEventListener("click", () => {
-      currentSort = pill.dataset.sort;
-      pills.forEach(p => p.classList.toggle("active", p === pill));
-      updateSortSubtext(currentSort);
-      renderP4P(currentWeight, currentSort);
-    });
+  document.querySelectorAll(".sort-pill[data-sort]").forEach(pill => {
+    pill.addEventListener("click", () => applySortChange(pill.dataset.sort));
   });
 
   updateSortSubtext(currentSort);
@@ -343,6 +406,7 @@ function renderP4PRankings(data) {
   });
   setupP4PTabs();
   setupSortControl();
+  updateP4PTabAvailability();
   renderP4P(currentWeight, currentSort);
 }
 

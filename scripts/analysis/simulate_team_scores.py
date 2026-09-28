@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """
-Monte Carlo team-score simulation for NCAA D1 wrestling, driven by FloWrestling
-rankings + the empirical per-(rank, month) score distributions built by
+Monte Carlo team-score simulation for NCAA D1 wrestling, driven by a scraped
+rankings snapshot (FloWrestling or InterMat -- both produce the same
+{rank, name, school} shape per weight, see SOURCE_SLUGS below) + the
+empirical per-(rank, month) score distributions built by
 build_rank_score_distributions.py.
 
 For a given scraped rankings file (one season, one date/touch-point month):
@@ -39,6 +41,7 @@ Usage:
 import argparse
 import json
 import random
+import re
 import statistics
 from collections import defaultdict
 from pathlib import Path
@@ -50,6 +53,27 @@ COMBINED_DIR = DATA_DIR / "ncaa-tourney-parsed"
 WEIGHTS = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
 FALLBACK_RANK_RANGE = range(25, 34)  # deepest tier we have data for -- stand-in for "unranked"
 MIN_POSSIBLE_POINTS, MAX_POSSIBLE_POINTS = 0.0, 30.0
+
+# rankings_data["source"] -> short slug used in the output filename and
+# published site path, so multiple ranking sources (FloWrestling, InterMat)
+# can be simulated for the same date without overwriting each other. Add an
+# entry here whenever a new rankings source is wired into this pipeline.
+SOURCE_SLUGS = {
+    "FloWrestling": "flo",
+    "InterMat": "intermat",
+}
+
+
+def source_slug(rankings_data: dict) -> str:
+    source = rankings_data.get("source", "")
+    if source in SOURCE_SLUGS:
+        return SOURCE_SLUGS[source]
+    # Unknown source -- fall back to a sanitized version of the raw string
+    # rather than crashing, but this should be treated as a signal to add a
+    # real entry to SOURCE_SLUGS above.
+    slug = re.sub(r"[^a-z0-9]+", "", source.lower()) or "unknown"
+    print(f"WARNING: no SOURCE_SLUGS entry for source '{source}' -- using '{slug}'. Add it to SOURCE_SLUGS.")
+    return slug
 
 
 def clip(x):
@@ -235,13 +259,18 @@ def main():
         print(f"{s['team']:<20}{s['lineup_size']:>7}{s['min']:>7.1f}{s['max']:>7.1f}{s['expected']:>10.1f}"
               f"{s['p_1st']:>8.1f}%{s['p_top3']:>8.1f}%{s['p_top5']:>8.1f}%{s['p_top10']:>9.1f}%")
 
-    # Date-stamped filename (not a fixed name) so results from multiple ranking
-    # snapshots over a season can coexist -- the results page discovers all of
-    # them and offers a date dropdown, defaulting to the newest.
+    # Date-AND-source-stamped filename (not a fixed name) so results from
+    # multiple ranking snapshots -- and multiple ranking SOURCES landing on
+    # the same date -- can coexist without overwriting each other. The
+    # results page discovers all of them per source and offers a date
+    # dropdown, defaulting to the newest.
     ranking_date = rankings_data["ranking_date"]
-    out_path = COMBINED_DIR / f"team_score_simulation{args.out_suffix}_{ranking_date}.json"
+    slug = source_slug(rankings_data)
+    out_path = COMBINED_DIR / f"team_score_simulation{args.out_suffix}_{slug}_{ranking_date}.json"
     out_path.write_text(json.dumps({
         "rankings_file": args.rankings_file,
+        "source": rankings_data.get("source", ""),
+        "source_slug": slug,
         "ranking_date": ranking_date,
         "month": args.month,
         "trials": args.trials,

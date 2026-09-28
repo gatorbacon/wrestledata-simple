@@ -27,8 +27,15 @@ from xtp.engine.bracket_schema import get_all_slots
 # xTP_simple scoring tables (KHSAA-style, rank-based)
 # "Projected points are based on statewide rank."
 
-# BOYS xTP_simple (32-man bracket)
-XTP_SIMPLE_POINTS_BOYS = {
+# --- HS LEGACY tables: seasons 2013-2026 (KHSAA HS existed before this) ---
+# Hand-built assuming seeds hold exactly (rank 1 = 1st-place points, rank 2 = 2nd, etc, with
+# a flat tail and a hard cliff to 0 past rank 24/16). Checked against real 2026 results
+# 2026-09-22 and found miscalibrated at both ends - see XTP_SIMPLE_POINTS_{BOYS,GIRLS}_FROM_2027
+# below for the replacement. Kept here, unchanged, because 2013-2026 HS xTP data was built
+# with these values and TJ does not want 2026 (or earlier) retroactively changed.
+
+# BOYS xTP_simple (32-man bracket) - LEGACY, seasons through 2026
+XTP_SIMPLE_POINTS_BOYS_THROUGH_2026 = {
     1: 30.0,
     2: 24.0,
     3: 21.0,
@@ -55,8 +62,8 @@ XTP_SIMPLE_POINTS_BOYS = {
     24: 0.5,
 }
 
-# GIRLS xTP_simple (16-man bracket)
-XTP_SIMPLE_POINTS_GIRLS = {
+# GIRLS xTP_simple (16-man bracket) - LEGACY, seasons through 2026
+XTP_SIMPLE_POINTS_GIRLS_THROUGH_2026 = {
     1: 28.0,
     2: 24.0,
     3: 20.0,
@@ -74,6 +81,47 @@ XTP_SIMPLE_POINTS_GIRLS = {
     15: 0.5,
     16: 0.5,
 }
+
+# Old names kept as aliases so any other caller that imports XTP_SIMPLE_POINTS_BOYS/GIRLS
+# directly (rather than through get_xtp_simple) keeps working unchanged.
+XTP_SIMPLE_POINTS_BOYS = XTP_SIMPLE_POINTS_BOYS_THROUGH_2026
+XTP_SIMPLE_POINTS_GIRLS = XTP_SIMPLE_POINTS_GIRLS_THROUGH_2026
+
+# --- HS tables: seasons 2027 onward ---
+# Built 2026-09-22 by scripts/xtp/build_xtp_simple_hybrid.py from real 2026 KHSAA state
+# results: 0.8 x (actual points scored, by finishing spot) + 0.2 x (actual points scored, by
+# pre-state rank), Pchip-interpolated onto the rank axis, forced monotonic non-increasing,
+# rounded to nearest 0.5. Full methodology, every bug found while building it, and the "why
+# 0.8/0.2" reasoning are documented in that script's docstring and in CLAUDE.md Known Gotcha
+# 17 - read those before changing these numbers.
+#
+# TJ's call (2026-09-22): use this starting with the 2027 season; do not retroactively apply
+# to 2013-2026 (see the LEGACY tables above). Fixes two problems the legacy table had: it
+# overpriced rank 1 (assumed the #1 seed always wins - 3 of 14 real 2026 boys #1 seeds scored
+# under 5 points) and underpriced/hard-cliffed the mid-to-late ranks (boys 9-24, girls 9-12
+# all score real points in reality; the legacy table gave them a flat near-zero or literal 0).
+#
+# THIS IS BUILT FROM ONE SEASON (2026 is the only year with a dated rankings archive to
+# compute "rank before state" from) - TJ wants to refine it again after the 2027 season, once
+# there's a second season of real outcomes to check it against: re-run
+# `build_xtp_simple_hybrid.py --season 2027 -gender both`, compare its 2027 rank-vs-points
+# reconciliation against this table's implied predictions, and decide whether to refit
+# (e.g. average the two seasons' finishing-spot series before building the next hybrid) or
+# hold. Do this before the 2028 season starts.
+XTP_SIMPLE_POINTS_BOYS_FROM_2027 = {
+    1: 29.0, 2: 24.0, 3: 20.0, 4: 17.5, 5: 14.5, 6: 12.5, 7: 11.0, 8: 8.0,
+    9: 6.5, 10: 5.0, 11: 4.5, 12: 4.0, 13: 3.5, 14: 3.5, 15: 3.0, 16: 2.5,
+    17: 2.5, 18: 2.0, 19: 2.0, 20: 2.0, 21: 1.5, 22: 1.5, 23: 1.0, 24: 1.0,
+    25: 1.0, 26: 0.5, 27: 0.5, 28: 0.5, 29: 0.5, 30: 0.5, 31: 0.5, 32: 0.5,
+    33: 0.5, 34: 0.5, 35: 0.5,
+}
+
+XTP_SIMPLE_POINTS_GIRLS_FROM_2027 = {
+    1: 28.5, 2: 23.5, 3: 19.5, 4: 16.5, 5: 14.5, 6: 11.5, 7: 9.0, 8: 6.5,
+    9: 4.5, 10: 3.0, 11: 2.0, 12: 1.0, 13: 0.5, 14: 0.5,
+}
+
+FIRST_HYBRID_SEASON = 2027  # first season get_xtp_simple() uses the FROM_2027 tables for HS
 
 # NCAA xTP_simple (FlowWrestling rank-based scoring, includes bonus)
 XTP_SIMPLE_POINTS_NCAA = {
@@ -104,19 +152,27 @@ XTP_SIMPLE_POINTS_NCAA = {
 }
 
 
-def get_xtp_simple(rank: int, gender: str = None, league: str = 'ncaa') -> float:
+def get_xtp_simple(rank: int, gender: str = None, league: str = 'ncaa', season: int = None) -> float:
     """
     Get xTP_simple points for a given starter rank.
 
     Uses league/gender-specific scoring tables:
-    - NCAA (33-man bracket): Rank 1 = 16.0, Rank 2 = 12.0, etc.
-    - HS Boys (32-man bracket): Rank 1 = 30.0, Rank 2 = 24.0, etc.
-    - HS Girls (16-man bracket): Rank 1 = 28.0, Rank 2 = 24.0, etc.
+    - NCAA (33-man bracket): Rank 1 = 16.0, Rank 2 = 12.0, etc. NEVER affected by `season` -
+      MatSavant/NCAA is untouched by the 2026-09-22 HS recalibration (TJ confirmed explicitly:
+      this is a KY high school-only change). See CLAUDE.md Known Gotcha 17.
+    - HS Boys (32-man bracket) and HS Girls (16-man bracket): for `season < FIRST_HYBRID_SEASON`
+      (2027), uses the original hand-built seed-holds tables unchanged (2013-2026 HS xTP data
+      was built with these and TJ does not want it retroactively changed). For
+      `season >= FIRST_HYBRID_SEASON`, uses the hybrid tables built from real 2026 results -
+      see XTP_SIMPLE_POINTS_{BOYS,GIRLS}_FROM_2027 above for the full derivation.
 
     Args:
         rank: Starter-only rank (1-based)
         gender: Gender ('boys' or 'girls'). Used for HS only.
         league: League type ('ncaa' or 'hs'). Defaults to 'ncaa'.
+        season: Season year. Used for HS only, to pick legacy vs. hybrid table. If omitted
+            for an HS call, defaults to the legacy (pre-2027) table - callers that care about
+            getting the new table MUST pass season explicitly.
 
     Returns:
         xTP_simple points
@@ -124,20 +180,22 @@ def get_xtp_simple(rank: int, gender: str = None, league: str = 'ncaa') -> float
     if rank is None or rank < 1:
         return 0.0
 
-    # Select scoring table based on league and gender
+    # Select scoring table based on league, gender, and (HS only) season
     if league == 'ncaa':
         points_table = XTP_SIMPLE_POINTS_NCAA
-        max_rank = 24
     elif gender == 'girls':
-        points_table = XTP_SIMPLE_POINTS_GIRLS
-        max_rank = 16
+        points_table = (XTP_SIMPLE_POINTS_GIRLS_FROM_2027
+                         if season is not None and season >= FIRST_HYBRID_SEASON
+                         else XTP_SIMPLE_POINTS_GIRLS_THROUGH_2026)
     else:
-        points_table = XTP_SIMPLE_POINTS_BOYS
-        max_rank = 24
-    
+        points_table = (XTP_SIMPLE_POINTS_BOYS_FROM_2027
+                         if season is not None and season >= FIRST_HYBRID_SEASON
+                         else XTP_SIMPLE_POINTS_BOYS_THROUGH_2026)
+
+    max_rank = max(points_table)
     if rank > max_rank:
         return 0.0
-    
+
     return points_table.get(rank, 0.0)
 
 
@@ -439,9 +497,10 @@ def compute_xtp_for_weight(
         champ_prob = round(comps.get("champion_probability", 0.0), 3)
         final_prob = round(comps.get("finalist_probability", 0.0), 3)
         
-        # Calculate xTP_simple based on starter rank, league, and gender
+        # Calculate xTP_simple based on starter rank, league, gender, and (HS only) season -
+        # season picks legacy vs. hybrid table per FIRST_HYBRID_SEASON, see get_xtp_simple()
         rank = data["rank"]
-        xTP_simple = get_xtp_simple(rank, gender=gender, league=league)
+        xTP_simple = get_xtp_simple(rank, gender=gender, league=league, season=season)
         
         results.append({
             "wrestler_id": wrestler_id,

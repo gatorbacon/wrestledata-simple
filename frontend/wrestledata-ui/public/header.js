@@ -356,20 +356,85 @@
       return;
     }
     
-    // Initialize Fuse.js
-    const fuse = new Fuse(window.SEARCH_INDEX, {
+    // Two separate Fuse instances (wrestlers, teams) rather than one over the
+    // whole index -- searching everything together and taking a single top-10
+    // slice let a pile of loosely-matched wrestlers crowd out an exact team
+    // match (e.g. "Penn State" wouldn't surface at all for "penn s"), since
+    // there are ~30x more wrestler entries than team entries competing for
+    // the same 10 slots. Each type now gets its own guaranteed slots.
+    const fuseOptions = {
       keys: [
         { name: 'name', weight: 0.6 },
         { name: 'searchTokens', weight: 0.4 }
       ],
       threshold: 0.4,
       ignoreLocation: true,
-      minMatchCharLength: 2
-    });
-    
+      minMatchCharLength: 2,
+      includeScore: true,
+    };
+    const fuseWrestlers = new Fuse(window.SEARCH_INDEX.filter(i => i.type === 'wrestler'), fuseOptions);
+    const fuseTeams = new Fuse(window.SEARCH_INDEX.filter(i => i.type === 'team'), fuseOptions);
+
+    // Fuse's own fuzzy score alone doesn't reliably rank an exact/prefix
+    // match above a merely-fuzzy one (e.g. "penn s" scored some unrelated
+    // wrestlers as good as or better than "Penn State"). This computes a
+    // coarse match-quality tier up front so real prefix matches always win,
+    // then breaks ties using each item's `priority` (national champion > AA
+    // > active this season > everyone else -- see generate_search_index.py)
+    // and finally `rank` / Fuse's score.
+    function tokenMatchTier(query, name) {
+      const q = query.toLowerCase().trim();
+      const nameLower = name.toLowerCase();
+      if (nameLower === q) return 0;
+      if (nameLower.startsWith(q)) return 1;
+      // Every query word is a prefix of some distinct word in the name, in
+      // any order/position -- catches "mitch mes" -> "Mitchell Mesenbrink"
+      // and "penn s" -> "Penn State" even though neither is a literal
+      // whole-string prefix.
+      const qWords = q.split(/\s+/).filter(Boolean);
+      const nameWords = nameLower.split(/\s+/).filter(Boolean);
+      const used = new Array(nameWords.length).fill(false);
+      const allMatched = qWords.length > 0 && qWords.every(qw => {
+        const i = nameWords.findIndex((nw, idx) => !used[idx] && nw.startsWith(qw));
+        if (i === -1) return false;
+        used[i] = true;
+        return true;
+      });
+      return allMatched ? 2 : 3;
+    }
+
+    // Fuse's `threshold` option doesn't bound the combined score it hands
+    // back when multiple weighted keys are in play (name + searchTokens
+    // here) -- e.g. "Penn state" returns "Carter Tate" et al at score ~0.68,
+    // nowhere near the 0.4 threshold that was supposed to gate this. Since
+    // tiers 0-2 are already validated by our own prefix/token logic above
+    // (trustworthy regardless of Fuse's score), this quality floor only
+    // needs to apply to tier 3 (pure fuzzy, no prefix signal at all) --
+    // genuine typo matches like "mesenrbink" -> Mesenbrink score ~0.27, well
+    // under this, so real fuzzy tolerance is untouched.
+    const FUZZY_SCORE_FLOOR = 0.5;
+
+    function rankResults(query, fuseResults) {
+      return fuseResults
+        .map(r => ({
+          item: r.item,
+          tier: tokenMatchTier(query, r.item.name),
+          priority: r.item.priority ?? 0,
+          rank: r.item.rank ?? Infinity,
+          score: r.score ?? 1,
+        }))
+        .filter(r => r.tier < 3 || r.score < FUZZY_SCORE_FLOOR)
+        .sort((a, b) => (
+          a.tier - b.tier ||
+          a.priority - b.priority ||
+          a.rank - b.rank ||
+          a.score - b.score
+        ));
+    }
+
     let activeIndex = -1;
     let currentResults = [];
-    
+
     // Render search results
     function renderResults(query) {
       if (query.length < 2) {
@@ -377,11 +442,15 @@
         activeIndex = -1;
         return;
       }
-      
-      // Perform search
-      const results = fuse.search(query);
-      currentResults = results.slice(0, 10).map(r => r.item);
-      
+
+      // Perform search -- 6 wrestler slots + 4 team slots, each ranked (and
+      // capped) independently so neither type can crowd out the other.
+      const wrestlerMatches = rankResults(query, fuseWrestlers.search(query)).slice(0, 6);
+      const teamMatches = rankResults(query, fuseTeams.search(query)).slice(0, 4);
+      const wrestlers = wrestlerMatches.map(r => r.item);
+      const teams = teamMatches.map(r => r.item);
+      currentResults = [...wrestlers, ...teams];
+
       if (currentResults.length === 0) {
         searchDropdown.innerHTML = `
           <div class="search-result-item search-result-empty">No results found</div>
@@ -390,18 +459,13 @@
         activeIndex = -1;
         return;
       }
-      
-      // Group by type
-      const wrestlers = currentResults.filter(r => r.type === 'wrestler');
-      const teams = currentResults.filter(r => r.type === 'team');
-      
-      let html = '';
-      
-      if (wrestlers.length > 0) {
-        html += '<div class="search-section">';
-        html += '<div class="search-section-label">Wrestlers</div>';
+
+      function sectionHtml(label, items) {
+        if (items.length === 0) return '';
+        let html = '<div class="search-section">';
+        html += `<div class="search-section-label">${label}</div>`;
         html += '<div class="search-results">';
-        wrestlers.forEach((item, idx) => {
+        items.forEach(item => {
           const globalIdx = currentResults.indexOf(item);
           html += `
             <div class="search-result" data-url="${item.url}" data-index="${globalIdx}">
@@ -411,24 +475,23 @@
           `;
         });
         html += '</div></div>';
+        return html;
       }
-      
-      if (teams.length > 0) {
-        html += '<div class="search-section">';
-        html += '<div class="search-section-label">Teams</div>';
-        html += '<div class="search-results">';
-        teams.forEach((item, idx) => {
-          const globalIdx = currentResults.indexOf(item);
-          html += `
-            <div class="search-result" data-url="${item.url}" data-index="${globalIdx}">
-              <div class="search-name">${escapeHtml(item.name)}</div>
-              <div class="search-secondary">${escapeHtml(item.secondary)}</div>
-            </div>
-          `;
-        });
-        html += '</div></div>';
-      }
-      
+
+      // An exact/near-exact team match (e.g. "Penn State") should lead the
+      // whole dropdown, not just win within its own section -- otherwise a
+      // pile of merely-decent wrestler matches still visually outrank the
+      // one thing the query was clearly asking for. Sections are ordered by
+      // whichever type's best result has the better (lower) match tier;
+      // Wrestlers keeps its usual first position on a tie or when empty.
+      const bestWrestlerTier = wrestlerMatches.length ? wrestlerMatches[0].tier : Infinity;
+      const bestTeamTier = teamMatches.length ? teamMatches[0].tier : Infinity;
+      const teamsFirst = bestTeamTier < bestWrestlerTier;
+
+      const html = teamsFirst
+        ? sectionHtml('Teams', teams) + sectionHtml('Wrestlers', wrestlers)
+        : sectionHtml('Wrestlers', wrestlers) + sectionHtml('Teams', teams);
+
       searchDropdown.innerHTML = html;
       searchDropdown.style.display = 'block';
       activeIndex = -1;

@@ -1,0 +1,86 @@
+:root {
+  --bg: #f6f7f9; --panel: #fff; --panel-2: #eef0f4; --border: #d5d9e0; --text: #1b1f27;
+  --muted: #6b7280; --accent: #1d4ed8; --accent-soft: #dbe6ff; --win: #0f7a3d; --hl: #f59e0b;
+  --line: #9aa3b2;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0f1216; --panel: #181c22; --panel-2: #222831; --border: #333b47; --text: #e7eaf0;
+    --muted: #8b94a3; --accent: #7aa2ff; --accent-soft: #24345c; --win: #4ade80; --hl: #fbbf24; --line: #5b6473; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 14px/1.35 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+.bv { max-width: 1200px; margin: 0 auto; padding: 14px 16px 40px; }
+.bv-head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; }
+.bv-head h1 { font-size: 1.15rem; margin: 0; flex: 1 1 260px; }
+.lab-stamp { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--muted);
+  background: var(--panel-2); border: 1px solid var(--border); border-radius: 999px; padding: 4px 10px; }
+.bv-year { font-size: .75rem; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+.bv-year select { font: inherit; padding: 5px 8px; border-radius: 6px; border: 1px solid var(--border);
+  background: var(--panel); color: var(--text); }
+
+/* weight tabs */
+.bv-tabs { display: flex; gap: 4px; overflow-x: auto; margin: 14px 0 12px; padding-bottom: 2px; }
+.bv-tabs button { flex: 0 0 auto; min-width: 48px; padding: 7px 12px; font: inherit; font-weight: 600; cursor: pointer;
+  border: 1px solid var(--border); background: var(--panel); color: var(--text); border-radius: 8px; }
+.bv-tabs button[aria-selected="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+/* round navigator */
+.bv-navwrap { display: flex; flex-direction: column; gap: 4px; margin-bottom: 14px; }
+.bv-navlabel { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+.bv-hint { font-weight: 400; text-transform: none; letter-spacing: 0; margin-left: 6px; }
+.bv-nav { display: flex; gap: 8px; align-items: stretch; }
+.nav-track { position: relative; flex: 1; display: flex; background: var(--panel); border: 1px solid var(--border);
+  border-radius: 10px; overflow: hidden; touch-action: none; user-select: none; outline-offset: 2px; }
+.nav-cell { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; justify-content: center; gap: 2px;
+  padding: 7px 3px; border: 0; border-right: 1px solid var(--border); background: transparent; color: var(--muted);
+  font: inherit; text-align: center; cursor: pointer; }
+.nav-cell:last-of-type { border-right: 0; }
+.nav-cell.in { color: var(--text); }
+.nav-lbl { font-size: .68rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.nav-consol { opacity: .8; border-top: 1px dashed var(--border); padding-top: 2px; }
+.nav-none { opacity: .35; }
+.nav-win { position: absolute; top: 0; bottom: 0; background: var(--accent-soft); opacity: .35; cursor: grab;
+  border: 2px solid var(--accent); border-radius: 9px; transition: left .12s ease, width .12s ease; }
+.nav-win.dragging { cursor: grabbing; transition: none; }
+.nav-h { position: absolute; top: 0; bottom: 0; width: 14px; cursor: ew-resize; }
+.nav-h-l { left: -2px; } .nav-h-r { right: -2px; }
+.nav-h::after { content: ""; position: absolute; top: 30%; bottom: 30%; left: 5px; width: 3px; border-radius: 2px; background: var(--accent); }
+.nav-btns { display: flex; flex-direction: column; gap: 4px; }
+.nav-btns { flex-direction: row; }
+.nav-btns button { min-width: 34px; padding: 0 8px; font: inherit; font-weight: 700; cursor: pointer;
+  border: 1px solid var(--border); background: var(--panel); color: var(--text); border-radius: 8px; }
+
+/* bracket */
+.bv-bracket { overflow-x: auto; padding-bottom: 6px; }
+.brk-section { margin-bottom: 26px; }
+.brk-section h3 { margin: 0 0 4px; font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.brk-stage { position: relative; }
+.brk-colhead { position: absolute; top: 0; height: 22px; font-size: .72rem; font-weight: 700; color: var(--muted);
+  border-bottom: 1px solid var(--border); text-transform: uppercase; letter-spacing: .03em; white-space: nowrap; }
+.brk-plane { position: absolute; left: 0; }
+.brk-edges { position: absolute; left: 0; top: 0; pointer-events: none; overflow: visible; }
+.brk-edge { fill: none; stroke: var(--line); stroke-width: 1.5; }
+.brk-edge.loser { stroke-dasharray: 4 3; }
+.brk-match { position: absolute; height: 64px; background: var(--panel); border: 1px solid var(--border);
+  border-radius: 6px; overflow: hidden; }
+.brk-lbl { position: absolute; right: 6px; bottom: 1px; font-size: .62rem; font-weight: 700; color: var(--accent); text-transform: uppercase; }
+.brk-row { position: absolute; left: 0; right: 0; height: 24px; display: flex; align-items: center; gap: 6px; padding: 0 8px;
+  color: var(--muted); cursor: default; }
+.brk-row + .brk-row { border-top: 1px solid var(--border); }
+.brk-row.win { color: var(--text); font-weight: 700; background: color-mix(in srgb, var(--win) 9%, transparent); }
+.brk-row.drop { box-shadow: inset 3px 0 0 var(--line); }
+.brk-seed { flex: 0 0 22px; text-align: right; font-size: .72rem; font-weight: 400; color: var(--muted); }
+.brk-name { flex: 0 1 auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.brk-team { flex: 1 1 0; min-width: 0; font-size: .72rem; font-weight: 400; color: var(--muted); white-space: nowrap;
+  overflow: hidden; text-overflow: ellipsis; }
+.brk-res { position: absolute; left: 30px; bottom: 0; height: 16px; font-size: .68rem; color: var(--muted); border-top: 1px solid var(--border);
+  right: 0; padding: 1px 8px 0 30px; background: var(--panel-2); }
+
+/* path highlight */
+.has-hl .brk-row:not(.hl) { opacity: .3; }
+.has-hl .brk-edge:not(.hl) { opacity: .12; }
+.brk-row.hl { color: var(--text); background: color-mix(in srgb, var(--hl) 28%, transparent); }
+.brk-edge.hl { stroke: var(--hl); stroke-width: 3; }
+.brk-empty, .bv-foot { color: var(--muted); font-size: .78rem; }
+@media (max-width: 600px) { .bv-hint { display: none; } .nav-lbl { font-size: .6rem; } }

@@ -1,9 +1,9 @@
 // ========================================
 // Dual Schedule page: every upcoming dual, grouped by date. Same data
-// source, rank lookup, and team-abbreviation reuse as the homepage
-// ticker (dual_ticker.js) -- kept as its own self-contained page script
-// rather than sharing that file, so this page doesn't also fire (and
-// silently no-op) the ticker's own homepage-only render pass.
+// source and rank lookup as the homepage ticker (dual_ticker.js) -- kept
+// as its own self-contained page script rather than sharing that file, so
+// this page doesn't also fire (and silently no-op) the ticker's own
+// homepage-only render pass.
 // ========================================
 
 const SCHEDULE_XTP_SEASON = "2026";
@@ -44,13 +44,16 @@ async function loadScheduleRanks() {
   }
 }
 
-async function loadTeamAbbreviations() {
+async function loadTeamColors() {
   try {
-    const res = await fetch("/data/teams/abbreviations.json");
-    if (!res.ok) return {};
+    // no-cache: this file changes occasionally (e.g. nicknames added
+    // 2026-09-13) and has no cache-busting query param -- without this a
+    // browser that already cached an old response never sees the update.
+    const res = await fetch("/data/team_colors.json", { cache: "no-cache" });
+    if (!res.ok) return { teams: {}, default: { hex: "#6b6153", stroke: false } };
     return await res.json();
   } catch {
-    return {};
+    return { teams: {}, default: { hex: "#6b6153", stroke: false } };
   }
 }
 
@@ -60,35 +63,54 @@ function formatScheduleDate(dateStr) {
   return date.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
 }
 
-// Same crest+rank+name markup/behavior as the homepage ticker (full name
-// on desktop, official abbreviation on mobile -- same <768px swap rule).
-function renderScheduleTeam(team, ranks, abbrevs, side) {
+// Darkens/lightens a #rrggbb hex by `percent` (-1..1, negative = darker) --
+// used to build the two-tone gradient behind each mobile matchup-card half
+// from a single team hex.
+function shadeHex(hex, percent) {
+  const n = parseInt(hex.replace("#", ""), 16);
+  const clamp = v => Math.round(Math.max(0, Math.min(255, v)));
+  const r = clamp(((n >> 16) & 0xff) + 255 * percent);
+  const g = clamp(((n >> 8) & 0xff) + 255 * percent);
+  const b = clamp((n & 0xff) + 255 * percent);
+  return `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`;
+}
+
+// Same crest+rank+name markup as the homepage ticker (.dual-ticker-team/
+// -crest/-rank/-name-full). Also carries team-color CSS vars and the
+// school's nickname (from data/team_colors.json) so the <768px CSS can
+// turn this same element into the diagonal gradient "matchup card" half
+// -- full school name + nickname stacked -- without any separate
+// mobile-only markup.
+function renderScheduleTeam(team, ranks, colors, side) {
   const rank = ranks[team.slug];
-  const abbr = abbrevs[team.slug] || team.name;
+  const colorInfo = (colors.teams && colors.teams[team.slug]) || colors.default || { hex: "#6b6153", stroke: false };
+  const hex = colorInfo.hex || "#6b6153";
+  const dark = shadeHex(hex, -0.45);
+  const style = `--team-color:${hex};--team-color-dark:${dark};`;
   const fallback =
     `if(!this.dataset.fallback){this.dataset.fallback=1;this.src='/assets/team_logos/${team.slug}.png';}` +
     `else{this.remove();}`;
   return (
-    `<a class="dual-ticker-team schedule-team schedule-team--${side}" href="/team.html?team=${team.slug}">` +
+    `<a class="dual-ticker-team schedule-team schedule-team--${side}" data-stroke="${colorInfo.stroke ? "1" : "0"}" style="${style}" href="/team.html?team=${team.slug}">` +
     `<img class="dual-ticker-crest" src="/assets/team_logos/${team.slug}.svg" alt="" onerror="${fallback}">` +
     (rank ? `<span class="dual-ticker-rank">#${rank}</span>` : "") +
     `<span class="dual-ticker-name-full">${team.name}</span>` +
-    `<span class="dual-ticker-name-abbr">${abbr}</span>` +
+    (colorInfo.nickname ? `<span class="schedule-team-nickname">${colorInfo.nickname}</span>` : "") +
     `</a>`
   );
 }
 
-function renderScheduleRow(dual, ranks, abbrevs) {
+function renderScheduleRow(dual, ranks, colors) {
   return (
     `<div class="schedule-dual-row">` +
-    renderScheduleTeam(dual.team_a, ranks, abbrevs, "a") +
+    renderScheduleTeam(dual.team_a, ranks, colors, "a") +
     `<span class="schedule-vs">vs</span>` +
-    renderScheduleTeam(dual.team_b, ranks, abbrevs, "b") +
+    renderScheduleTeam(dual.team_b, ranks, colors, "b") +
     `</div>`
   );
 }
 
-function renderSchedule(duals, ranks, abbrevs) {
+function renderSchedule(duals, ranks, colors) {
   const list = document.getElementById("schedule-list");
   const countEl = document.getElementById("schedule-count");
   if (!list) return;
@@ -116,12 +138,14 @@ function renderSchedule(duals, ranks, abbrevs) {
   list.innerHTML = groups.map(g => (
     `<div class="schedule-date-group">` +
     `<div class="schedule-date-heading">${formatScheduleDate(g.date)}</div>` +
-    g.duals.map(d => renderScheduleRow(d, ranks, abbrevs)).join("") +
+    g.duals.map(d => renderScheduleRow(d, ranks, colors)).join("") +
     `</div>`
   )).join("");
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const [duals, ranks, abbrevs] = await Promise.all([loadSchedule(), loadScheduleRanks(), loadTeamAbbreviations()]);
-  renderSchedule(duals, ranks, abbrevs);
+  const [duals, ranks, colors] = await Promise.all([
+    loadSchedule(), loadScheduleRanks(), loadTeamColors()
+  ]);
+  renderSchedule(duals, ranks, colors);
 });

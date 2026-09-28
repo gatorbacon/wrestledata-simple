@@ -1,0 +1,219 @@
+====================================================================================================
+NCAA TOURNAMENT TAKEDOWN-DIFFERENTIAL REPORT  |  2024-2026
+====================================================================================================
+
+Scope        NCAA Division I Championships only. Seasons included: 2024, 2025, 2026.
+Bouts        1,845 bouts with play-by-play data (15 more had none - all forfeits/injury defaults - and are left out).
+Source       data/{year}/ncaa-tourney/bout_detail (events) + parsed/matches.json (official result).
+
+HOW TO READ THIS REPORT
+  - 'Bouts' = wrestler-bouts. Most scenarios count BOTH wrestlers in a bout, each from their own
+    point of view, so a scenario like 'scored nearfall points' can include the winner and the loser
+    of the same bout. 'Won' = how many of those wrestlers won the bout.
+  - Every table has two blocks: ALL BOUTS, and DECIDED BY POINTS ONLY. 'Decided by points' means
+    the official result was a decision, major decision, tech fall, or a sudden-victory / tiebreaker
+    overtime. It EXCLUDES pins (falls), forfeits, injury defaults, disqualifications, and 1 bout
+    whose official result could not be matched.
+  - Takedown differential = takedowns scored minus takedowns allowed in the bout (overtime
+    included). Reversals, escapes and nearfall are NOT takedowns.
+  - 95% CI = Wilson 95% confidence interval on the win %. Small samples have wide intervals; don't
+    read much into gaps that fit inside each other's intervals.
+  - A pin is not logged as a scoring event, so 'nearfall points' only counts nearfall that was
+    actually awarded points before the match ended.
+
+====================================================================================================
+AT A GLANCE
+====================================================================================================
+  * 81.8% of bouts (1,509 of 1,845) had a takedown differential; 18.2% (336) were tied on takedowns
+    (0-0 counts as tied).
+  * When there was a differential, the wrestler with MORE takedowns won 1,478 of 1,509 bouts
+    (97.9%).
+  * Counting only bouts decided by points, that figure is 1,348 of 1,369 (98.5%).
+  * How the 1,845 bouts ended: 1,678 by points (90.9%), 155 by fall (8.4%), 11 forfeit/injury/DQ, 1
+    unmatched.
+
+====================================================================================================
+1. TAKEDOWN DIFFERENTIAL -> WIN %
+====================================================================================================
+For each differential, the wrestler on the + side is shown. The wrestler on the - side has the
+mirror result (100% minus the win % shown), since it is the same bouts from the other side.
+At 0 the win % is 50% by construction (both wrestlers are at 0 in the same bout) so only the
+bout count is meaningful there.
+
+TD differential   |             ALL BOUTS             |      DECIDED BY POINTS ONLY      
+                  | Bouts   Won  Win %      95% CI | Bouts   Won  Win %      95% CI
+----------------------------------------------------------------------------------------------------
+0 (tied)          |   336     -  50.0% (by constr.) |   309     -  50.0% (by constr.)
++1                |   771   745  96.6%  95.1-97.7  |   686   667  97.2%  95.7-98.2 
++2                |   350   347  99.1%  97.5-99.7  |   319   318  99.7%  98.2-99.9 
++3                |   190   188  98.9%  96.2-99.7  |   178   177  99.4%  96.9-99.9 
++4 or more        |   198   198 100.0%  98.1-100.0 |   186   186 100.0%  98.0-100.0
+----------------------------------------------------------------------------------------------------
+
+Upsets: bouts where the wrestler with FEWER takedowns won, by how the bout ended
+
+Winner was behind by   Dec/MD/TF  OT dec.  Fall  For/Inj/DQ  Unmatched  Total  Bouts w/ that edge
+----------------------------------------------------------------------------------------------------
+1 takedown                    16        3     7           0          0     26                 771
+2 takedowns                    1        0     2           0          0      3                 350
+3 takedowns                    1        0     1           0          0      2                 190
+4+ takedowns                   0        0     0           0          0      0                 198
+----------------------------------------------------------------------------------------------------
+
+Every upset where the winner was behind by 2 or more takedowns (5 bouts):
+
+  2024 165 C_R1  Holden Heller (Pittsburgh) def. Stoney Buell (Purdue)
+        Fall (score at pin 3-6)  |  takedowns 0-2 (behind by 2)
+  2024 165 C_R1  Domonic Baker (Campbell) def. Derek Fields (NC State)
+        Fall (score at pin 4-10)  |  takedowns 0-2 (behind by 2)
+  2024 165 R32   Noah Mulvaney (Bucknell) def. Andrew Cerniglia (Navy)
+        Dec 10-9  |  takedowns 0-3 (behind by 3)
+  2025 141 C_R2  Danny Pucino (Illinois) def. Dylan Cedeno (Virginia)
+        Fall (score at pin 4-10)  |  takedowns 0-3 (behind by 3)
+  2025 197 R16   Seth Shumate (Ohio State) def. Brock Zurawski (Rider)
+        Dec 11-6  |  takedowns 0-2 (behind by 2)
+
+====================================================================================================
+2. WIN % BY SCENARIO (each wrestler counted from their own point of view)
+====================================================================================================
+Scenarios 1-3 split the first takedown by the period it happened in. Scenarios 5-7 look at
+the wrestler who gave up the first takedown. Scenarios overlap (e.g. a wrestler with nearfall
+points usually also has the first takedown), so rows do not add up to the bout total.
+
+Scenario                                                |             ALL BOUTS             |      DECIDED BY POINTS ONLY      
+                                                        | Bouts   Won  Win %      95% CI | Bouts   Won  Win %      95% CI
+------------------------------------------------------------------------------------------------------------------------------------
+Scored the first takedown (any time)                    | 1,667 1,437  86.2%  84.5-87.8  | 1,513 1,317  87.0%  85.3-88.6 
+1. First takedown in period 1                           | 1,184   985  83.2%  81.0-85.2  | 1,050   880  83.8%  81.5-85.9 
+2. First takedown in period 2 (none in period 1)        |   222   198  89.2%  84.4-92.6  |   210   190  90.5%  85.7-93.8 
+3. First takedown in period 3 (none earlier)            |   162   155  95.7%  91.4-97.9  |   156   150  96.2%  91.9-98.2 
+   (memo) first takedown came in overtime               |    99    99 100.0%  96.3-100.0 |    97    97 100.0%  96.2-100.0
+4. Scored nearfall points (any time)                    |   391   359  91.8%  88.7-94.1  |   359   335  93.3%  90.2-95.5 
+5. Gave up 1st takedown, then scored the 2nd takedown   |   308   186  60.4%  54.8-65.7  |   281   163  58.0%  52.2-63.6 
+6. Gave up 1st takedown, then scored any later takedown |   427   208  48.7%  44.0-53.4  |   395   182  46.1%  41.2-51.0 
+7. Gave up 1st takedown, never scored a takedown        | 1,240    22   1.8%   1.2-2.7   | 1,118    14   1.3%   0.7-2.1  
+8. Scored exactly 2 takedowns in the match              |   556   495  89.0%  86.2-91.4  |   506   453  89.5%  86.6-91.9 
+9. Scored exactly 3 takedowns in the match              |   235   229  97.4%  94.5-98.8  |   221   216  97.7%  94.8-99.0 
+   (memo) scored exactly 1 takedown                     | 1,081   699  64.7%  61.8-67.5  |   972   621  63.9%  60.8-66.8 
+   (memo) scored 4 or more takedowns                    |   222   222 100.0%  98.3-100.0 |   209   209 100.0%  98.2-100.0
+------------------------------------------------------------------------------------------------------------------------------------
+A first takedown in overtime ends a sudden-victory bout, so that memo row is 100% by rule.
+
+====================================================================================================
+3. WHEN TAKEDOWNS ARE TIED: WHAT DECIDES THE BOUT
+====================================================================================================
+336 bouts (18.2%) were tied on takedowns (including 0-0).
+
+  Decided by points in regulation     254  (75.6%)
+  Went to overtime                     56  (16.7%)
+  Ended in a fall (regulation)         20  (6.0%)
+  Forfeit / injury / DQ / unmatched     6  (1.8%)
+
+3a. REGULATION, decided by points -- win % by scoring-category edge
+----------------------------------------------------------------------------------------------------
+254 bouts. Since takedowns cancel out, the winner is whoever is ahead in the other
+categories combined. Edges are measured in POINTS (escape 1, reversal 2, nearfall 2-4,
+penalty as awarded, riding time 1). The + wrestler's win % is shown; the - wrestler's is the
+mirror.
+Check: in 254 of these 254 bouts the scoring events add up exactly to the final score.
+
+Category edge                      +1 pt          +2 pts      +3 or more
+------------------------------------------------------------------------
+Escape                     127/145 = 88%     30/38 = 79%      4/4 = 100%
+Reversal                               -     41/48 = 85%      3/3 = 100%
+Nearfall                      1/1 = 100%    15/15 = 100%     47/48 = 98%
+Penalty                      28/43 = 65%      8/8 = 100%        0/1 = 0%
+Riding time                127/131 = 97%               -               -
+------------------------------------------------------------------------
+(cell = bouts won / bouts with that edge = win %; '-' = never happened or not possible)
+
+How often the eventual winner was AHEAD in each category:
+  Escape        161  (63.4% of 254 bouts)
+  Riding time   127  (50.0% of 254 bouts)
+  Nearfall       63  (24.8% of 254 bouts)
+  Reversal       44  (17.3% of 254 bouts)
+  Penalty        36  (14.2% of 254 bouts)
+
+Most common combinations of categories in which the winner was ahead:
+    62   24.4%  escape
+    50   19.7%  escape + riding time
+    21    8.3%  riding time
+    15    5.9%  penalty
+    13    5.1%  nearfall + riding time
+    12    4.7%  escape + nearfall + riding time
+    12    4.7%  escape + nearfall
+    10    3.9%  reversal + riding time
+
+Margin of victory: 107 of 254 (42.1%) were decided by 1 point; 70 (27.6%) by 2.
+
+3b. OVERTIME -- how tied-on-takedowns bouts that went to overtime were decided
+----------------------------------------------------------------------------------------------------
+56 bouts. Regulation was tied on points in 56 of them.
+Sudden victory (Overtime 1) is first-score-wins; the tiebreakers (Overtime 2/3) give each wrestler a
+turn on bottom for 30 seconds.
+
+    18  Tiebreaker: scored more tiebreak points (escape)
+     8  Sudden victory: takedown (winner's total only reached even because the opponent had scored earlier)
+     8  Tiebreaker: both escaped, tied on points -> the FASTER escape won
+     6  Tiebreaker: scored more tiebreak points (reversal)
+     5  Tiebreaker: tied on tiebreak points, other (ride-out / riding time / criteria not in data)
+     3  Tiebreaker: scored more tiebreak points (riding)
+     3  Tiebreaker: scored more tiebreak points (escape+riding)
+     2  Tiebreaker: scored more tiebreak points (penalty)
+     1  Sudden victory: non-takedown score (Penalty 1)
+     1  Tiebreaker: scored more tiebreak points (penalty+riding)
+     1  Tiebreaker: scored more tiebreak points (reversal+nearfall+penalty)
+
+  Overtime winner had MORE overtime points in 43 bouts, FEWER in 0, equal in 13 (decided by escape time / ride-out).
+
+3c. OTHER ENDINGS WHEN TAKEDOWNS WERE TIED
+----------------------------------------------------------------------------------------------------
+  Falls in regulation: 20   Forfeit/injury/DQ: 6   Unmatched: 0
+
+====================================================================================================
+4. ALL-AMERICANS WITH THE MOST WINS WITHOUT A TAKEDOWN
+====================================================================================================
+All-Americans (top 8 finishers) in 2024-2026 with the most wins in which they scored NOT ONE
+takedown: 3 such wins. Everyone tied at that number is listed.
+'X of Y' = wins with no takedown out of all of that wrestler's wins at that tournament. Pins count.
+Wins by forfeit, injury default or DQ are not counted.
+
++-----------------------------+-------------+--------+------------+--------------------------------------------+
+| Wrestler (school)           | Year, wt    | Place  | No-TD wins | Who they beat                              |
++-----------------------------+-------------+--------+------------+--------------------------------------------+
+| Peyten Kellar (Ohio)        | 2024, 157   | 5th    | 3 of 6     | Johnny Lovett (Central Michigan) 1-0;      |
+|                             |             |        |            | Cael Swensen (South Dakota State) 1-0;     |
+|                             |             |        |            | Bryce Andonian (Virginia Tech) by fall     |
++-----------------------------+-------------+--------+------------+--------------------------------------------+
+| Zach Elam (Missouri)        | 2024, 285   | 4th    | 3 of 5     | Hunter Catka (Virginia Tech) 1-0;          |
+|                             |             |        |            | Yaraslau Slavikouski (Rutgers) 2-0;        |
+|                             |             |        |            | Cohlton Schultz (Arizona State) 1-0        |
++-----------------------------+-------------+--------+------------+--------------------------------------------+
+| Lucas Byrd (Illinois)       | 2025, 133   | 1st    | 3 of 5     | Hunter Leake (California Baptist) 3-2;     |
+|                             |             |        |            | Zeth Romney (Cal Poly) 2-0; Drake Ayala    |
+|                             |             |        |            | (Iowa) 3-2 in the final (tiebreaker)       |
++-----------------------------+-------------+--------+------------+--------------------------------------------+
+| Nicco Ruiz (Arizona State)  | 2026, 165   | 4th    | 3 of 5     | Andrew Sparks (Minnesota) 2-1              |
+|                             |             |        |            | (tiebreaker); Bryce Hepner (North          |
+|                             |             |        |            | Carolina) 2-0; Joey Blaze (Purdue) 2-1     |
++-----------------------------+-------------+--------+------------+--------------------------------------------+
+| Konner Doucet (Oklahoma     | 2026, 285   | 4th    | 3 of 4     | Luke Luffman (Illinois) 2-1; Dayton        |
+| State)                      |             |        |            | Pitzer (Pittsburgh) by fall; Christian     |
+|                             |             |        |            | Carroll (Wyoming) 1-0                      |
++-----------------------------+-------------+--------+------------+--------------------------------------------+
+
+For comparison: 18 All-Americans had 2 such wins; 59 All-Americans had 1 such win.
+(All-Americans in the window: 240 wrestler-seasons.)
+
+====================================================================================================
+DATA NOTES
+====================================================================================================
+  - Bouts with no play-by-play (15) are forfeits/injury defaults (checked against the official
+    results) and are left out.
+  - Rematch pairs (same two wrestlers meeting twice in one tournament) can't always be matched to
+    an official result. Where they can't, the bout counts in ALL BOUTS but not in DECIDED BY
+    POINTS. Currently unmatched: 1.
+  - Play-by-play sides/scores that were swapped in the source file and corrected here:
+      * 2026 174 C_R1: Brody Baumann (Purdue) defeated Collin Carrigan (North Carolina) (file says 8-15, official 15-8)
+  - Falls are not logged as events, so scoring context (e.g. nearfall) before a pin may be incomplete.
+

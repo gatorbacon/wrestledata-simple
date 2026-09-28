@@ -1,0 +1,30 @@
+SEED-CONTROL TEST: do pins go to the takedown leader because takedowns matter, or because the better wrestler
+gets both? NCAA Championships 2015-2026 (no 2020), matches with a takedown differential of 1+.
+
+Matches with a takedown edge: 5,600.  Both wrestlers seeded: 5,547 (99%).
+Unseeded or unmatched-to-results bouts are left out of the seed-controlled rows.
+
+A. ALL matches with an edge (as in report 3c, forfeit-free), any seeding
+All windows, any seeding            5600 matches | pins  572 | pinner ahead  506 behind  66 | behind =  11.5%  (95% CI  9.2-14.4) | leader pins   9.0%  trailer pins   1.2% of matches
+
+B. Both wrestlers seeded, by SEED GAP (|winner seed - loser seed|; 1 = adjacent seeds, nearly equal skill)
+gap 0-1 (near-equal)                 626 matches | pins   61 | pinner ahead   49 behind  12 | behind =  19.7%  (95% CI 11.6-31.3) | leader pins   7.8%  trailer pins   1.9% of matches
+gap 2-3                              737 matches | pins   70 | pinner ahead   54 behind  16 | behind =  22.9%  (95% CI 14.6-34.0) | leader pins   7.3%  trailer pins   2.2% of matches
+gap 4-7                             1065 matches | pins   88 | pinner ahead   81 behind   7 | behind =   8.0%  (95% CI  3.9-15.5) | leader pins   7.6%  trailer pins   0.7% of matches
+gap 8-15                            1555 matches | pins  162 | pinner ahead  145 behind  17 | behind =  10.5%  (95% CI  6.7-16.2) | leader pins   9.3%  trailer pins   1.1% of matches
+gap 16+                             1564 matches | pins  183 | pinner ahead  172 behind  11 | behind =   6.0%  (95% CI  3.4-10.4) | leader pins  11.0%  trailer pins   0.7% of matches
+Both seeded, all gaps               5547 matches | pins  564 | pinner ahead  501 behind  63 | behind =  11.2%  (95% CI  8.8-14.0) | leader pins   9.0%  trailer pins   1.1% of matches
+
+C. Near-equal skill, wider net: gap <= 3 (seeds within 3 places)
+gap <= 3                            1363 matches | pins  131 | pinner ahead  103 behind  28 | behind =  21.4%  (95% CI 15.2-29.2) | leader pins   7.6%  trailer pins   2.1% of matches
+
+D. Same rows, but who was the BETTER SEED, and did the better seed lead on takedowns?
+   (skill-only would say the better seed leads AND pins; a takedown effect shows up when the
+    WORSE seed leads on takedowns and still gets the pins)
+   gap <= 3: better seed pinned, behind on TDs: 10; better seed pinned, led TDs: 65; worse seed pinned, behind on TDs: 18; worse seed pinned, led TDs: 38
+   both seeded, all: better seed pinned, behind on TDs: 28; better seed pinned, led TDs: 406; worse seed pinned, behind on TDs: 35; worse seed pinned, led TDs: 95
+
+E. Only matches where the WORSE seed led on takedowns (skill and takedowns point opposite ways)
+   gap <= 3     525 matches | takedown leader (worse seed) won 484 ( 92.2%); pins 48: leader pinned 38, better seed pinned from behind 10
+   gap 4+       871 matches | takedown leader (worse seed) won 770 ( 88.4%); pins 75: leader pinned 57, better seed pinned from behind 18
+   all seeded  1396 matches | takedown leader (worse seed) won 1254 ( 89.8%); pins 123: leader pinned 95, better seed pinned from behind 28

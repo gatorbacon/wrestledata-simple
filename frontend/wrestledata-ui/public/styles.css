@@ -2756,6 +2756,14 @@ th.tooltip-trigger .tooltip {
   margin-top: 20px;
   align-items: flex-start;
 }
+/* Any author rule setting `display` on this element -- desktop's `grid`
+   above, mobile's `contents` below -- wins the cascade over the browser's
+   default [hidden] rule regardless of specificity (author origin always
+   beats user-agent origin for normal declarations), so a plain
+   `.hidden = true` from JS silently no-ops without this. */
+.profile-summary-grid[hidden] {
+  display: none !important;
+}
 
 /* Sitewide default "content card" look: white box, border, rounded corners
    -- same treatment as .hp-panel on the homepage. Applied here to the 3
@@ -4090,6 +4098,17 @@ th.tooltip-trigger .tooltip {
   color: var(--bg);
 }
 
+.hp-tab:disabled,
+.hp-tab.hp-tab-disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.hp-tab:disabled:hover,
+.hp-tab.hp-tab-disabled:hover {
+  background: none;
+  color: var(--muted);
+}
+
 .hp-tab--static {
   cursor: default;
   background: var(--accent);
@@ -5110,6 +5129,10 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   text-align: center;
 }
 
+.tp2-th-short {
+  display: none;
+}
+
 .tp2-risk-chip {
   display: inline-block;
   padding: 2px 8px;
@@ -5120,6 +5143,74 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
 .tp2-risk-lock   { background: rgba(56,161,105,0.15); color: #2f855a; }
 .tp2-risk-flip   { background: rgba(200,150,40,0.15); color: #97690f; }
 .tp2-risk-bubble { background: rgba(197,48,48,0.15); color: #c53030; }
+
+/* --- Mobile: condense roster rows to Wt / photo / name+grade / record /
+   points -- Starting Roster's DPG + Seed risk columns and Remaining
+   Roster's DPG column are dropped, and the freed width goes to the
+   Wrestler column (table-layout: fixed with explicit widths on every
+   other column) so the name renders on one line -- ellipsis if it's still
+   too long -- with the class year on a second. Two lines per wrestler,
+   never three. */
+@media (max-width: 767px) {
+  #starting-roster-table,
+  #remaining-roster-table {
+    table-layout: fixed;
+  }
+  .tp2-col-dpg,
+  .tp2-col-risk {
+    display: none;
+  }
+  #starting-roster-table .tp2-col-weight,
+  #remaining-roster-table .tp2-col-weight {
+    width: 32px;
+  }
+  #starting-roster-table .tp2-col-record,
+  #remaining-roster-table .tp2-col-record {
+    width: 52px;
+  }
+  #starting-roster-table .tp2-col-points {
+    width: 48px;
+  }
+  #starting-roster-table th,
+  #starting-roster-table td,
+  #remaining-roster-table th,
+  #remaining-roster-table td {
+    padding: 6px 4px;
+    font-size: 0.82rem;
+  }
+  .tp2-wrestler-cell {
+    gap: 6px;
+    min-width: 0;
+  }
+  .tp2-wrestler-cell .tp2-headshot {
+    width: 28px;
+    height: 28px;
+  }
+  .tp2-wrestler-cell .rank-badge {
+    min-width: 0;
+    padding: 1px 5px;
+    font-size: 0.72rem;
+  }
+  .tp2-wrestler-text {
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+  .tp2-wrestler-name {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .tp2-name-sub {
+    font-size: 0.68rem;
+  }
+  /* Column headers are too narrow at their squeezed mobile widths for the
+     full words -- swap to short labels rather than let text bleed into the
+     next header (weight/record/points values themselves are plenty
+     unambiguous at 2-3 chars without the full word). */
+  .tp2-th-full { display: none; }
+  .tp2-th-short { display: inline; }
+}
 
 /* --- Scoring per 7 Minutes / How they finish: side-by-side cards --- */
 
@@ -6196,16 +6287,22 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   .wp2m-reorder > .wp2m-identity { order: 2; display: flex; }
   .wp2m-reorder > .wp2m-season-block { order: 3; display: block; }
   .wp2m-reorder > .wp2m-dpg-strip { order: 4; display: block; }
+  /* Same [hidden]-losing-to-`display:block` cascade issue as the grid fix
+     above: renderSeasonBody() hides this strip entirely (not just clears
+     its content) when there's no season data, and needs this to actually
+     take effect at this breakpoint. */
+  .wp2m-reorder > .wp2m-dpg-strip[hidden] { display: none !important; }
   .wp2m-reorder > .season-selector-section { display: none; }
+  .wp2m-reorder > #season-empty-state { order: 5; }
 
   .wp2m-reorder > .profile-summary-grid {
     display: contents;
   }
   .profile-summary-col--mv { display: none; }
-  .profile-summary-col--timeline { order: 5; }
-  .profile-summary-col--skill { order: 7; }
+  .profile-summary-col--timeline { order: 6; }
+  .profile-summary-col--skill { order: 8; }
 
-  .wp2m-reorder > .section--match-history { order: 6; }
+  .wp2m-reorder > .section--match-history { order: 7; }
 
   /* Trajectory chart: shorter, tighter -- not the tall desktop card. The
      SVG itself is now built at this height in JS (renderRollingMbtTimeline),
@@ -6290,19 +6387,253 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   color: var(--muted-2);
 }
 
+/* Mobile-only "matchup card": same row/team markup as desktop (see
+   schedule.js renderScheduleTeam/-Row), just restyled below 768px into a
+   diagonal two-tone banner using the --team-color/--team-color-dark vars
+   schedule.js sets inline from data/team_colors.json. The diagonal seam is
+   a clip-path overlap trick: .schedule-team--a is a plain rectangle behind,
+   .schedule-team--b sits on top with its left edge clipped at an angle so
+   --a's color shows through the cut. Both halves are the same width (54%)
+   and meet in a band centered on the card's true midpoint, so the seam
+   crosses dead center rather than drifting toward one side as it slants.
+   The crest is pulled out of the grid and positioned absolutely so it can
+   be sized larger than the card and bleed off the outer edge/top/bottom
+   (cropped by the card's own overflow:hidden) without shifting the text --
+   see renderScheduleTeam's comment in schedule.js. */
 @media (max-width: 767px) {
   .schedule-page {
     padding: 4px 16px 12px;
   }
+
   .schedule-dual-row {
-    gap: 6px;
-    padding: 10px 0;
+    display: block;
+    position: relative;
+    height: 70px;
+    padding: 0;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   }
-  .schedule-dual-row .dual-ticker-crest {
-    width: 14px;
-    height: 14px;
+  .schedule-date-group:last-child .schedule-dual-row:last-child {
+    border-bottom: none;
   }
+
+  .schedule-vs {
+    display: none;
+  }
+
   .dual-ticker-team.schedule-team {
-    font-size: 0.8rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    row-gap: 2px;
+    align-content: center;
+    align-items: center;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  .schedule-team--a {
+    width: 54%;
+    left: 0;
+    z-index: 1;
+    padding-left: 66px;
+    background: linear-gradient(120deg, var(--team-color-dark), var(--team-color) 85%);
+  }
+  .schedule-team--b {
+    width: 54%;
+    left: 46%;
+    z-index: 2;
+    padding-right: 66px;
+    text-align: right;
+    justify-items: end;
+    /* 15% of this box's own 54%-row width = ~8% of the row -- the cut
+       spans roughly 46%-54% of the row, centered on the card's midpoint. */
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+    background: linear-gradient(120deg, var(--team-color-dark), var(--team-color) 85%);
+  }
+
+  /* Light team colors (gold, sky blue, etc.) get dark text instead of
+     white -- see the `stroke` flag in data/team_colors.json. */
+  .schedule-team--a[data-stroke="1"],
+  .schedule-team--b[data-stroke="1"] {
+    color: #16140f;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.4);
+  }
+
+  /* Sized well past the card's own height/edge on purpose -- overflow:hidden
+     on .schedule-team--a/--b (the crest's containing block) crops it, so it
+     bleeds off the top, bottom, and outer side edge like the reference
+     graphic instead of sitting fully inside a little box. */
+  .schedule-dual-row .dual-ticker-crest {
+    position: absolute;
+    top: 50%;
+    width: 88px;
+    height: 88px;
+    transform: translateY(-50%);
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.4));
+  }
+  .schedule-team--a .dual-ticker-crest { left: -26px; }
+  .schedule-team--b .dual-ticker-crest { right: -26px; }
+
+  .schedule-dual-row .dual-ticker-rank {
+    grid-row: 1;
+    color: inherit;
+    opacity: 0.85;
+    font-size: 0.56rem;
+  }
+
+  /* School name -- smaller "subtitle" line above the nickname, matching
+     the reference banner (e.g. "PENN STATE" over "NITTANY LIONS"). Capped
+     to a fixed px width (rather than 100% of the flexible grid column) so
+     a long name ellipsizes cleanly instead of running past the diagonal
+     seam and getting visually sliced/hidden by the other team's card. */
+  .schedule-dual-row .dual-ticker-name-full {
+    display: block;
+    grid-row: 2;
+    max-width: 108px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.56rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    opacity: 0.85;
+    line-height: 1.1;
+  }
+
+  .schedule-dual-row .schedule-team-nickname {
+    display: block;
+    grid-row: 3;
+    max-width: 122px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    line-height: 1.1;
+  }
+}
+
+/* Desktop version of the same matchup card (see the mobile block above for
+   how the diagonal/crest-bleed trick works -- this duplicates that
+   structure rather than sharing rules with it, since nearly every size
+   value differs). Desktop is landscape, so instead of a fixed height the
+   card uses aspect-ratio: a typical mobile card is ~5:1 (content width
+   ~358px / height 70px) -- 50% wider relative to height is ~7.5:1 here,
+   and aspect-ratio keeps that ratio correct as the desktop window (and so
+   .schedule-page's width) changes, instead of only being right at one
+   specific width. Pixel sizes (crest, padding, max-widths, fonts) are the
+   mobile values scaled ~1.9x to match the physically larger card. */
+@media (min-width: 768px) {
+  .schedule-dual-row {
+    display: block;
+    position: relative;
+    aspect-ratio: 7.5;
+    padding: 0;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .schedule-vs {
+    display: none;
+  }
+
+  .dual-ticker-team.schedule-team {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    row-gap: 4px;
+    align-content: center;
+    align-items: center;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #fff;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  }
+  .schedule-team--a {
+    width: 54%;
+    left: 0;
+    z-index: 1;
+    padding-left: 126px;
+    justify-content: normal;
+    background: linear-gradient(120deg, var(--team-color-dark), var(--team-color) 85%);
+  }
+  .schedule-team--b {
+    width: 54%;
+    left: 46%;
+    z-index: 2;
+    padding-right: 126px;
+    justify-content: normal;
+    text-align: right;
+    justify-items: end;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+    background: linear-gradient(120deg, var(--team-color-dark), var(--team-color) 85%);
+  }
+
+  .schedule-team--a[data-stroke="1"],
+  .schedule-team--b[data-stroke="1"] {
+    color: #16140f;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.4);
+  }
+
+  .schedule-dual-row .dual-ticker-crest {
+    position: absolute;
+    top: 50%;
+    width: 168px;
+    height: 168px;
+    transform: translateY(-50%);
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.4));
+  }
+  .schedule-team--a .dual-ticker-crest { left: -50px; }
+  .schedule-team--b .dual-ticker-crest { right: -50px; }
+
+  .schedule-dual-row .dual-ticker-rank {
+    grid-row: 1;
+    color: inherit;
+    opacity: 0.85;
+    font-size: 1.05rem;
+  }
+
+  .schedule-dual-row .dual-ticker-name-full {
+    display: block;
+    grid-row: 2;
+    max-width: 205px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    opacity: 0.85;
+    line-height: 1.1;
+  }
+
+  .schedule-dual-row .schedule-team-nickname {
+    display: block;
+    grid-row: 3;
+    max-width: 232px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.45rem;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    line-height: 1.1;
   }
 }

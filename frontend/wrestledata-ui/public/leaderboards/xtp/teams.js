@@ -34,6 +34,22 @@ const TR_SCALE_MAX = 200; // fixed domain for the per-team range bar, matches te
 const TR_NAVY_FALLBACK = "#2c5c8f"; // solid navy fallback when a team has no entry in team_colors.json
 const WEIGHTS = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285];
 
+// Ranking sources this simulation can run against -- same list/shape as
+// team_odds.js's TO_SOURCES, since both pages read the identical
+// /data/team_odds/{season}/... feed (see module comment above). Flo
+// publishes at the season root with no subfolder; every other source gets
+// its own slug-named subfolder (see simulate_team_scores.py's SOURCE_SLUGS
+// and publish_team_odds_to_site.py's SOURCE_SUBDIR).
+const TR_SOURCES = [
+  { key: "flo", label: "FloWrestling", subdir: "" },
+  { key: "intermat", label: "InterMat", subdir: "intermat" },
+];
+
+function trSourceBasePath(sourceKey) {
+  const src = TR_SOURCES.find((s) => s.key === sourceKey) || TR_SOURCES[0];
+  return src.subdir ? `${src.subdir}/` : "";
+}
+
 // team_odds' own team names use short scrape-convention abbreviations for a
 // handful of teams that don't match the frontend's fuller team-page slugs
 // -- same alias table already used by team_odds.js/championship_widgets.js.
@@ -48,6 +64,7 @@ const TR_SLUG_ALIASES = {
   "n. colorado": "northern_colorado",
 };
 
+let currentSource = TR_SOURCES[0].key;
 let teamData = [];
 let teamColors = {}; // slug -> { hex, stroke }
 let expandedTeam = null; // single team name, or null -- only one open at a time, none by default
@@ -159,10 +176,30 @@ function sortedTeams() {
   });
 }
 
-async function loadLeaderboard() {
+function renderSourceTabs() {
+  const container = document.getElementById("source-tabs");
+  if (!container) return;
+  container.innerHTML = "";
+  TR_SOURCES.forEach((src) => {
+    const btn = document.createElement("button");
+    btn.className = "weight-tab" + (src.key === currentSource ? " active" : "");
+    btn.textContent = src.label;
+    btn.addEventListener("click", () => {
+      if (src.key === currentSource) return;
+      currentSource = src.key;
+      expandedTeam = null;
+      renderSourceTabs();
+      loadLeaderboard(currentSource);
+    });
+    container.appendChild(btn);
+  });
+}
+
+async function loadLeaderboard(sourceKey) {
   try {
+    const basePath = trSourceBasePath(sourceKey);
     const [idxRes, colors] = await Promise.all([
-      fetch(`/data/team_odds/${TR_SEASON}/index.json`),
+      fetch(`/data/team_odds/${TR_SEASON}/${basePath}index.json`),
       loadTeamColors(),
     ]);
     if (!idxRes.ok) throw new Error("Failed to load team_odds index");
@@ -170,19 +207,21 @@ async function loadLeaderboard() {
     const date = (idx.dates || [])[0]; // index.json is newest-first
     if (!date) throw new Error("No team_odds dates available");
 
-    const res = await fetch(`/data/team_odds/${TR_SEASON}/${date}.json`);
+    const res = await fetch(`/data/team_odds/${TR_SEASON}/${basePath}${date}.json`);
     if (!res.ok) throw new Error(`Failed to load ${date}`);
     const data = await res.json();
 
     teamColors = colors;
     teamData = data.teams || [];
 
-    document.getElementById("season-info").textContent = `${formatDateLabel(date)} rankings`;
+    const sourceLabel = (TR_SOURCES.find((s) => s.key === sourceKey) || TR_SOURCES[0]).label;
+    document.getElementById("season-info").textContent = `${sourceLabel} · ${formatDateLabel(date)} rankings`;
 
     renderLeaderboard();
   } catch (err) {
     console.error("Error loading leaderboard:", err);
-    document.getElementById("season-info").textContent = "Error loading data";
+    document.getElementById("season-info").textContent = "No data available for this source yet";
+    teamData = [];
     const tbody = document.querySelector("#team-race-table tbody");
     if (tbody) tbody.innerHTML = "";
   }
@@ -414,5 +453,6 @@ function renderExpandedRow(team, color) {
 
 // Initialize
 document.addEventListener("DOMContentLoaded", () => {
-  loadLeaderboard();
+  renderSourceTabs();
+  loadLeaderboard(currentSource);
 });

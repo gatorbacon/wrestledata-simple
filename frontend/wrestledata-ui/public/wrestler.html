@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/styles.css?v=20260921" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-  <script src="/search_index.js"></script>
+  <script src="/search_index.js?v=20260913"></script>
 </head>
 
 <body>
@@ -79,8 +79,14 @@
       </div>
     </section>
 
+    <!-- Shown instead of the whole DPG/trajectory/skill/matches grid below
+         when the wrestler has no matches yet for the selected season (a
+         season stat cluster of empty boxes reads as broken, not "no data
+         yet") -- see renderSeasonBody(). -->
+    <div class="profile-section" id="season-empty-state" hidden></div>
+
     <!-- DPG (hero only) | DPG Trajectory | Season box score + Skill Profile -->
-    <section class="profile-summary-grid">
+    <section class="profile-summary-grid" id="profile-summary-grid">
       <div class="profile-summary-col profile-summary-col--mv">
         <div class="profile-section" id="dpg-card"></div>
       </div>
@@ -113,7 +119,7 @@
     </section>
 
     <!-- MATCH HISTORY -->
-    <section class="section section--match-history">
+    <section class="section section--match-history" id="match-history-section">
       <h2 class="wp2m-desktop-only">Match History</h2>
       <div class="wp2m-matches-header" id="wp2m-matches-header">
         <span>Matches</span>
@@ -141,7 +147,7 @@
   </div>
 
   <script src="/mobile_rank_row.js?v=20260907"></script>
-  <script src="/app.js?v=20260913"></script>
+  <script src="/app.js?v=20260922"></script>
   <script src="/tooltips.js"></script>
 
   <script>

@@ -27,6 +27,23 @@
       background: transparent;
     }
 
+    .tr-header-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 1em;
+    }
+    .tr-source-tabs {
+      margin-bottom: 0;
+      border-bottom: none;
+      justify-content: flex-end;
+    }
+    .tr-source-tabs .weight-tab {
+      padding: 0.3em 0.9em;
+      font-size: 0.8rem;
+    }
+
     /* Every header on this table is left-aligned, including the numeric
        "Projected Team Points" column -- overrides the sitewide th:has()
        right-align rule for xtp/mv tooltip columns, since here the bar+gap
@@ -249,11 +266,16 @@
   <script src="/header.js?v=20260908"></script>
   <div class="page-container">
     <header class="header">
-      <h1>
-        Team Race
-        <span class="tooltip-icon" data-tooltip="xtp">→</span>
-      </h1>
-      <div class="header-subline" id="season-info"></div>
+      <div class="tr-header-row">
+        <div>
+          <h1>
+            Team Race
+            <span class="tooltip-icon" data-tooltip="xtp">→</span>
+          </h1>
+          <div class="header-subline" id="season-info"></div>
+        </div>
+        <div id="source-tabs" class="weight-tabs-container tr-source-tabs" role="tablist" aria-label="Rankings source"></div>
+      </div>
     </header>
 
     <section class="section" id="team-race-section">
@@ -274,6 +296,6 @@
   </div>
 
   <script src="/tooltips.js"></script>
-  <script src="/leaderboards/xtp/teams.js?v=20260911"></script>
+  <script src="/leaderboards/xtp/teams.js?v=20260918"></script>
 </body>
 </html>

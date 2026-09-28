@@ -5,6 +5,22 @@
 const TO_SEASON = "2027"; // 2026-27 season -- independent of the site's resolveSeason() (still "2026")
 const SCALE_MAX = 200; // fixed domain for the scoring-range bar, shared across every team
 
+// Ranking sources this simulation can run against (see
+// scripts/analysis/simulate_team_scores.py's SOURCE_SLUGS and
+// scripts/analysis/publish_team_odds_to_site.py's SOURCE_SUBDIR). Flo
+// publishes at the season root with no subfolder (it's the original/only
+// source before InterMat was added, so this keeps its URL unchanged);
+// every other source gets its own slug-named subfolder.
+const TO_SOURCES = [
+  { key: "flo", label: "FloWrestling", subdir: "" },
+  { key: "intermat", label: "InterMat", subdir: "intermat" },
+];
+
+function toSourceBasePath(sourceKey) {
+  const src = TO_SOURCES.find((s) => s.key === sourceKey) || TO_SOURCES[0];
+  return src.subdir ? `${src.subdir}/` : "";
+}
+
 // team_odds' own team names use short scrape-convention abbreviations for a
 // handful of teams (e.g. "OK State", "N. Colorado") that don't match the
 // frontend's fuller team-page slugs (oklahoma_state, northern_colorado) --
@@ -150,14 +166,15 @@ function createRangeBar(t, scaleMax = SCALE_MAX) {
   return wrap;
 }
 
+let currentSource = TO_SOURCES[0].key;
 let allDates = [];
 let currentDate = null;
 let teamData = [];
 let expandedTeam = null;
 
-async function loadDateIndex() {
+async function loadDateIndex(sourceKey) {
   try {
-    const res = await fetch(`/data/team_odds/${TO_SEASON}/index.json`);
+    const res = await fetch(`/data/team_odds/${TO_SEASON}/${toSourceBasePath(sourceKey)}index.json`);
     if (!res.ok) throw new Error("no index");
     const data = await res.json();
     return data.dates || [];
@@ -169,6 +186,21 @@ async function loadDateIndex() {
 function formatDateLabel(iso) {
   const d = new Date(iso + "T00:00:00");
   return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+}
+
+function renderSourceTabs() {
+  const container = document.getElementById("source-tabs");
+  container.innerHTML = "";
+  TO_SOURCES.forEach((src) => {
+    const btn = document.createElement("button");
+    btn.className = "weight-tab" + (src.key === currentSource ? " active" : "");
+    btn.textContent = src.label;
+    btn.addEventListener("click", () => {
+      if (src.key === currentSource) return;
+      switchSource(src.key);
+    });
+    container.appendChild(btn);
+  });
 }
 
 function renderDateTabs() {
@@ -183,21 +215,40 @@ function renderDateTabs() {
       currentDate = date;
       expandedTeam = null;
       renderDateTabs();
-      loadTeamData(currentDate);
+      loadTeamData(currentSource, currentDate);
     });
     container.appendChild(btn);
   });
 }
 
-async function loadTeamData(date) {
+async function switchSource(sourceKey) {
+  currentSource = sourceKey;
+  expandedTeam = null;
+  renderSourceTabs();
+
+  allDates = await loadDateIndex(currentSource);
+  if (allDates.length === 0) {
+    currentDate = null;
+    document.getElementById("date-tabs").innerHTML = "";
+    document.getElementById("season-info").textContent = "No data available for this source yet";
+    document.querySelector("#team-odds-table tbody").innerHTML = "";
+    return;
+  }
+  currentDate = allDates[0]; // index.json is newest-first
+  renderDateTabs();
+  await loadTeamData(currentSource, currentDate);
+}
+
+async function loadTeamData(sourceKey, date) {
   document.getElementById("season-info").textContent = "Loading…";
   try {
-    const res = await fetch(`/data/team_odds/${TO_SEASON}/${date}.json`);
+    const res = await fetch(`/data/team_odds/${TO_SEASON}/${toSourceBasePath(sourceKey)}${date}.json`);
     if (!res.ok) throw new Error(`Failed to load ${date}`);
     const data = await res.json();
     teamData = data.teams || [];
+    const sourceLabel = (TO_SOURCES.find((s) => s.key === sourceKey) || TO_SOURCES[0]).label;
     document.getElementById("season-info").textContent =
-      `${formatDateLabel(date)} rankings · ${data.trials.toLocaleString()} simulated trials · ${teamData.length} teams`;
+      `${sourceLabel} · ${formatDateLabel(date)} rankings · ${data.trials.toLocaleString()} simulated trials · ${teamData.length} teams`;
     renderLeaderboard();
   } catch (err) {
     console.error(err);
@@ -309,14 +360,15 @@ function renderLeaderboard() {
 }
 
 async function init() {
-  allDates = await loadDateIndex();
+  renderSourceTabs();
+  allDates = await loadDateIndex(currentSource);
   if (allDates.length === 0) {
     document.getElementById("season-info").textContent = "No data available";
     return;
   }
   currentDate = allDates[0]; // index.json is newest-first
   renderDateTabs();
-  await loadTeamData(currentDate);
+  await loadTeamData(currentSource, currentDate);
 }
 
 document.addEventListener("DOMContentLoaded", init);

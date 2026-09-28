@@ -233,7 +233,11 @@ def build_steps(track, season):
         })
     else:
         if is_ncaa:
-            search_cmd = [py, "scripts/generate_search_index.py", "-league", "ncaa", "-season", season]
+            # --all-seasons is required here: the priority-tier scheme (champions/
+            # AAs/active/everyone else) is built from career-wide placement data
+            # across all seasons, and omitting it silently drops every historical
+            # wrestler from search, including past national champions.
+            search_cmd = [py, "scripts/generate_search_index.py", "-league", "ncaa", "-season", season, "--all-seasons"]
         else:
             search_cmd = [py, "scripts/generate_search_index.py", "-league", "hs", "-gender", "both", "-season", season]
         steps.append({"name": "Build Search Index", "cmds": [search_cmd]})

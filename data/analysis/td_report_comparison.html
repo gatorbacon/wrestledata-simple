@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Takedown Patterns Compared</title>
+<style>
+:root{
+  color-scheme: light;
+  --surface:#fcfcfb; --page:#f9f9f7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+  --grid:#e1e0d9; --axis:#c3c2b7; --border:rgba(11,11,11,.10); --wash:rgba(11,11,11,.045);
+  --ncaa:#2a78d6; --conf:#eb6834;
+  --ncaa-1:#86b6ef; --ncaa-2:#5598e7; --ncaa-3:#2a78d6; --ncaa-4:#184f95;
+  --conf-1:#f2996c; --conf-2:#ee7f4a; --conf-3:#d4581f; --conf-4:#8a3410;
+  --seg-reg:#1baf7a; --seg-ot:#4a3aa7; --seg-fall:#eda100; --seg-other:#a9a8a0;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --surface:#1a1a19; --page:#0d0d0d; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781;
+    --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10); --wash:rgba(255,255,255,.06);
+    --ncaa:#3987e5; --conf:#d95926;
+    --ncaa-1:#184f95; --ncaa-2:#2a78d6; --ncaa-3:#5598e7; --ncaa-4:#86b6ef;
+    --conf-1:#8a3410; --conf-2:#d4581f; --conf-3:#ee7f4a; --conf-4:#f2996c;
+    --seg-reg:#199e70; --seg-ot:#9085e9; --seg-fall:#c98500; --seg-other:#5c5b56;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --surface:#1a1a19; --page:#0d0d0d; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781;
+  --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10); --wash:rgba(255,255,255,.06);
+  --ncaa:#3987e5; --conf:#d95926;
+  --ncaa-1:#184f95; --ncaa-2:#2a78d6; --ncaa-3:#5598e7; --ncaa-4:#86b6ef;
+  --conf-1:#8a3410; --conf-2:#d4581f; --conf-3:#ee7f4a; --conf-4:#f2996c;
+  --seg-reg:#199e70; --seg-ot:#9085e9; --seg-fall:#c98500; --seg-other:#5c5b56;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px 80px}
+header.top{padding:32px 0 8px}
+h1{font-size:28px;line-height:1.2;margin:0 0 6px;letter-spacing:-.01em}
+h2{font-size:21px;line-height:1.25;margin:0 0 4px}
+h3{font-size:15px;margin:22px 0 4px}
+p{margin:6px 0}
+.sub{color:var(--ink2);max-width:75ch}
+.muted{color:var(--muted)}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin:14px 0}
+section.sec{margin-top:44px}
+.secno{display:inline-block;font-size:12px;font-weight:600;color:var(--ink2);border:1px solid var(--border);border-radius:99px;padding:1px 9px;margin-bottom:6px;background:var(--surface)}
+.filters{position:sticky;top:0;z-index:20;background:var(--page);border-bottom:1px solid var(--border);padding:10px 0;margin:14px 0 0;display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center}
+.fg{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--ink2)}
+.seg{display:inline-flex;border:1px solid var(--border);border-radius:8px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:13px;border:0;background:transparent;color:var(--ink2);padding:6px 12px;cursor:pointer}
+.seg button+button{border-left:1px solid var(--border)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--surface);font-weight:600}
+.seg button:focus-visible{outline:2px solid var(--ncaa);outline-offset:-2px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--ink2);align-items:center}
+.legend .it{display:inline-flex;align-items:center;gap:6px}
+.sw{width:12px;height:12px;border-radius:3px;display:inline-block}
+.sw.dot{border-radius:50%}
+.ramp{display:inline-flex;gap:2px;align-items:center}
+.ramp i{width:11px;height:11px;border-radius:50%;display:inline-block}
+.glance{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:14px}
+.glance .g{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
+.glance .g b.k{display:block;font-size:12px;color:var(--ink2);text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px}
+.glance .g .big{font-size:17px;font-weight:650;line-height:1.3;margin-bottom:4px}
+.glance .g p{font-size:13.5px;color:var(--ink2);margin:0}
+.takeaways{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin:14px 0}
+.takeaways .t{border-left:3px solid var(--axis);padding:2px 0 2px 12px;font-size:14px}
+.takeaways .t b{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink2);margin-bottom:2px}
+.panels{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+.panel{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px 12px 8px}
+.panel h4{margin:0;font-size:14px;line-height:1.3}
+.panel .pn{font-size:12px;color:var(--ink2);margin:2px 0 4px;min-height:46px}
+.badge{display:inline-block;font-size:11.5px;border:1px solid var(--border);border-radius:99px;padding:0 8px;margin-right:4px;color:var(--ink2);background:var(--wash);white-space:nowrap}
+.badge .d{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px}
+svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{font-family:inherit;fill:var(--ink2);font-size:11px}
+svg text.tk{fill:var(--muted)}
+svg text.ink{fill:var(--ink)}
+svg .hit{fill:transparent;cursor:default}
+svg .hit:focus{outline:none}
+svg .col .xh{opacity:0;stroke:var(--axis);stroke-width:1}
+svg .col:hover .xh, svg .col:focus-within .xh{opacity:1}
+svg g.dotg:hover .vis, svg g.dotg:focus-within .vis{stroke:var(--ink);stroke-width:2}
+.cap{font-size:12.5px;color:var(--ink2);margin:8px 2px 0}
+.tabwrap{overflow-x:auto;margin-top:10px;background:var(--surface);border:1px solid var(--border);border-radius:12px}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:6px 8px;text-align:right;border-bottom:1px solid var(--border);white-space:nowrap}
+th{font-weight:600;color:var(--ink2);background:var(--surface);position:sticky;top:0}
+td.l,th.l{text-align:left;white-space:normal;min-width:190px}
+tr.gr td{background:var(--wash);font-weight:600;text-align:left;color:var(--ink2)}
+td small{display:block;color:var(--muted);font-size:11px}
+th.sep,td.sep{border-left:2px solid var(--axis)}
+.tt{position:fixed;z-index:50;pointer-events:none;background:var(--ink);color:var(--surface);border-radius:8px;padding:8px 10px;font-size:12.5px;line-height:1.35;max-width:280px;box-shadow:0 4px 18px rgba(0,0,0,.25);opacity:0;transition:opacity .08s}
+.tt .th{font-weight:650;margin-bottom:2px}.tt .tv{font-size:17px;font-weight:700}
+.tt .muted{color:inherit;opacity:.7}
+.tt .r{display:flex;gap:8px;align-items:center}
+.tt .r i{width:9px;height:9px;border-radius:50%;display:inline-block;flex:none}
+.view-charts .tablewrap-sec{display:none}
+.view-tables .chartwrap{display:none}
+.scope{width:100%;font-size:13px}
+.scope th,.scope td{text-align:right}
+.scope td.l,.scope th.l{text-align:left}
+.names td.l{white-space:normal}
+.names td{white-space:normal;text-align:left;vertical-align:top}
+.ladder td{text-align:center;font-weight:600;font-variant-numeric:tabular-nums}
+.ladder td.l{text-align:left;font-weight:400}
+.foot{font-size:12.5px;color:var(--ink2)}
+.foot li{margin:3px 0}
+@media (max-width:600px){h1{font-size:23px}.filters{gap:8px 14px}.card{padding:12px 12px}}
+@media (forced-colors:active){svg .vis{stroke:CanvasText}}
+</style>
+</head>
+<body class="view-charts">
+<div class="wrap">
+
+<header class="top">
+  <h1>Takedowns and winning: how consistent is the pattern?</h1>
+  <p class="sub">The same four analyses, run on the NCAA Championships and on six conference tournaments (Big Ten, Big 12, ACC, MAC, Pac-12, SoCon), across four time windows. The question in every chart: <b>does the pattern hold from one window to the next, and does it hold in both kinds of tournament?</b></p>
+</header>
+
+<div class="glance" id="glance"></div>
+
+<div class="card" id="scopecard"></div>
+
+<div class="filters" role="toolbar" aria-label="Chart filters">
+  <div class="fg"><span>Basis (sections 1–2)</span>
+    <div class="seg" id="f-basis"><button data-v="all" aria-pressed="true">All bouts</button><button data-v="pts" aria-pressed="false">Decided by points</button></div></div>
+  <div class="fg"><span>View</span>
+    <div class="seg" id="f-view"><button data-v="charts" aria-pressed="true">Charts</button><button data-v="tables" aria-pressed="false">Tables</button></div></div>
+  <div class="fg"><span>Theme</span>
+    <div class="seg" id="f-theme"><button data-v="auto" aria-pressed="true">Auto</button><button data-v="light" aria-pressed="false">Light</button><button data-v="dark" aria-pressed="false">Dark</button></div></div>
+  <div class="legend" aria-label="Legend">
+    <span class="it"><span class="sw dot" style="background:var(--ncaa)"></span>NCAA Championships</span>
+    <span class="it"><span class="sw dot" style="background:var(--conf)"></span>Conference tournaments</span>
+    <span class="it muted">Where shade is used, it steps oldest → newest:
+      <span class="ramp" id="rampN"></span><span class="ramp" id="rampC"></span></span>
+  </div>
+</div>
+
+<!-- SECTION 1 -->
+<section class="sec" id="s1">
+  <span class="secno">Section 1</span>
+  <h2>Takedown differential → win %</h2>
+  <p class="sub">When one wrestler scores more takedowns than the other, how often does that wrestler win? Each panel is one size of takedown edge; lines run across the four windows; whiskers are 95% confidence intervals.</p>
+  <div class="takeaways" id="s1-take"></div>
+  <div class="chartwrap"><div class="panels" id="s1-panels"></div>
+    <p class="cap" id="s1-cap"></p>
+    <h3>Is the NCAA–conference difference consistent?</h3>
+    <div class="card" style="padding:12px 8px 8px"><div id="s1-gap"></div></div></div>
+  <div class="tablewrap-sec" id="s1-table"></div>
+</section>
+
+<!-- SECTION 2 -->
+<section class="sec" id="s2">
+  <span class="secno">Section 2</span>
+  <h2>Win % by scenario</h2>
+  <p class="sub">Each row is a situation a wrestler can be in, counted from that wrestler's own point of view. Every dot is one window; the line joins the lowest and highest. A short line means the number barely moved across eras. Where the blue and orange lanes sit apart, the two kinds of tournament differ.</p>
+  <div class="takeaways" id="s2-take"></div>
+  <div class="chartwrap"><div class="card" style="padding:12px 8px 8px"><div id="s2-strip"></div></div>
+    <p class="cap" id="s2-cap"></p>
+    <h3>Is the NCAA–conference difference consistent?</h3>
+    <div class="card" style="padding:12px 8px 8px"><div id="s2-gap"></div></div></div>
+  <div class="tablewrap-sec" id="s2-table"></div>
+</section>
+
+<!-- SECTION 3 -->
+<section class="sec" id="s3">
+  <span class="secno">Section 3</span>
+  <h2>When takedowns are tied: what decides the bout?</h2>
+  <p class="sub">Roughly one bout in six is tied on takedowns (0-0 counts). These charts ask whether the way those bouts get decided is stable across windows and across tournament types.</p>
+  <div class="takeaways" id="s3-take"></div>
+  <div class="chartwrap">
+    <h3>How often it happens, and how often it is a one-point bout</h3>
+    <div class="panels" id="s3-lines"></div>
+    <h3>How tied bouts ended</h3>
+    <div class="card" style="padding:12px 8px 8px"><div id="s3-comp"></div></div>
+    <p class="cap" id="s3-comp-cap"></p>
+    <h3>Which scoring category the winner was ahead in (regulation, decided by points)</h3>
+    <div class="card" style="padding:12px 8px 8px"><div id="s3-heat"></div></div>
+    <p class="cap">Cell = share of those bouts in which the eventual winner out-scored the loser in that category. A bout can count in several rows, so rows do not sum to 100%.</p>
+    <h3>Is the NCAA–conference difference consistent?</h3>
+    <div class="card" style="padding:12px 8px 8px"><div id="s3-gap"></div></div>
+    <h3>How reliable is a lead in each category?</h3>
+    <div class="card" style="padding:12px 8px 8px"><div id="s3-edge"></div></div>
+    <p class="cap">Win % of the wrestler holding the edge, on a 40–100% axis. Nearfall leads of 3+ points are almost never overcome; a 1-point penalty lead is the least reliable.</p>
+    <h3>How overtime was settled</h3>
+    <div class="card" style="padding:12px 8px 8px"><div id="s3-ot"></div></div>
+    <p class="cap">Sudden victory (Overtime 1) is first score wins; the tiebreakers (Overtime 2 and 3) give each wrestler a 30-second turn on bottom. Only 24–62 overtime bouts per cell, so single percentages are noisy.</p>
+  </div>
+  <div class="tablewrap-sec" id="s3-table"></div>
+</section>
+
+<!-- SECTION 4 -->
+<section class="sec" id="s4">
+  <span class="secno">Section 4</span>
+  <h2>Most wins without scoring a takedown</h2>
+  <p class="sub">For each window, how many wins in a single tournament did the most extreme wrestler get without scoring one takedown? The ladder counts wrestlers at each level. NCAA counts All-Americans only; conference counts every wrestler in the tournament, so the populations differ.</p>
+  <div class="takeaways" id="s4-take"></div>
+  <div class="card" style="padding:12px 12px 6px"><div id="s4-ladder" style="overflow-x:auto"></div>
+    <p class="cap">Number of wrestlers who reached at least that many no-takedown wins in one tournament (exact level shown, not cumulative). Shading is scaled within each row and tournament type, so the numbers, not the colors, carry the comparison across rows.</p></div>
+  <h3>Everyone at the top of each window</h3>
+  <div class="tabwrap"><div id="s4-names"></div></div>
+</section>
+
+<section class="sec">
+  <h2>Data notes</h2>
+  <ul class="foot" id="notes"></ul>
+</section>
+
+</div>
+<div class="tt" id="tt" role="tooltip"></div>
+
+<script>
+const D = {"ncaa|2014-2016":{"seasons":[2015,2016],"bouts":1227,"no_pbp":12,"with_diff":1016,"tied":211,"more_td_all":[957,1016],"more_td_pts":[851,897],"ended":{"points":1085,"fall":127,"forfeit":13,"unmatched":2},"matched":null,"swapped":0,"diff":{"0":{"all":{"n":211,"won":null,"pct":50.0,"lo":null,"hi":null},"pts":{"n":188,"won":null,"pct":50.0,"lo":null,"hi":null}},"1":{"all":{"n":468,"won":422,"pct":90.2,"lo":87.1,"hi":92.5},"pts":{"n":398,"won":364,"pct":91.5,"lo":88.3,"hi":93.8}},"2":{"all":{"n":272,"won":260,"pct":95.6,"lo":92.4,"hi":97.5},"pts":{"n":242,"won":231,"pct":95.5,"lo":92.0,"hi":97.4}},"3":{"all":{"n":134,"won":133,"pct":99.3,"lo":95.9,"hi":99.9},"pts":{"n":126,"won":125,"pct":99.2,"lo":95.6,"hi":99.9}},"4":{"all":{"n":142,"won":142,"pct":100.0,"lo":97.4,"hi":100.0},"pts":{"n":131,"won":131,"pct":100.0,"lo":97.2,"hi":100.0}}},"upsets":{"1":{"points":27,"ot":7,"fall":12,"forfeit":0,"unknown":0,"total":46,"of":468},"2":{"points":9,"ot":2,"fall":1,"forfeit":0,"unknown":0,"total":12,"of":272},"3":{"points":1,"ot":0,"fall":0,"forfeit":0,"unknown":0,"total":1,"of":134},"4":{"points":0,"ot":0,"fall":0,"forfeit":0,"unknown":0,"total":0,"of":142}},"big_upsets":13,"scen":[{"label":"Scored the first takedown (any time)","all":{"n":1145,"won":948,"pct":82.8,"lo":80.5,"hi":84.9},"pts":{"n":1016,"won":848,"pct":83.5,"lo":81.1,"hi":85.6}},{"label":"1. First takedown in period 1","all":{"n":866,"won":696,"pct":80.4,"lo":77.6,"hi":82.9},"pts":{"n":752,"won":607,"pct":80.7,"lo":77.7,"hi":83.4}},{"label":"2. First takedown in period 2 (none in period 1)","all":{"n":126,"won":105,"pct":83.3,"lo":75.9,"hi":88.8},"pts":{"n":117,"won":100,"pct":85.5,"lo":78.0,"hi":90.7}},{"label":"3. First takedown in period 3 (none earlier)","all":{"n":109,"won":103,"pct":94.5,"lo":88.5,"hi":97.5},"pts":{"n":106,"won":100,"pct":94.3,"lo":88.2,"hi":97.4}},{"label":"(memo) first takedown came in overtime","all":{"n":44,"won":44,"pct":100.0,"lo":92.0,"hi":100.0},"pts":{"n":41,"won":41,"pct":100.0,"lo":91.4,"hi":100.0}},{"label":"4. Scored nearfall points (any time)","all":{"n":370,"won":340,"pct":91.9,"lo":88.7,"hi":94.3},"pts":{"n":336,"won":311,"pct":92.6,"lo":89.2,"hi":94.9}},{"label":"5. Gave up 1st takedown, then scored the 2nd takedown","all":{"n":236,"won":140,"pct":59.3,"lo":53.0,"hi":65.4},"pts":{"n":219,"won":125,"pct":57.1,"lo":50.5,"hi":63.5}},{"label":"6. Gave up 1st takedown, then scored any later takedown","all":{"n":337,"won":168,"pct":49.9,"lo":44.5,"hi":55.2},"pts":{"n":313,"won":147,"pct":47.0,"lo":41.5,"hi":52.5}},{"label":"7. Gave up 1st takedown, never scored a takedown","all":{"n":808,"won":29,"pct":3.6,"lo":2.5,"hi":5.1},"pts":{"n":703,"won":21,"pct":3.0,"lo":2.0,"hi":4.5}},{"label":"8. Scored exactly 2 takedowns in the match","all":{"n":410,"won":344,"pct":83.9,"lo":80.0,"hi":87.1},"pts":{"n":370,"won":310,"pct":83.8,"lo":79.7,"hi":87.2}},{"label":"9. Scored exactly 3 takedowns in the match","all":{"n":187,"won":172,"pct":92.0,"lo":87.2,"hi":95.1},"pts":{"n":178,"won":164,"pct":92.1,"lo":87.2,"hi":95.3}},{"label":"(memo) scored exactly 1 takedown","all":{"n":725,"won":440,"pct":60.7,"lo":57.1,"hi":64.2},"pts":{"n":634,"won":374,"pct":59.0,"lo":55.1,"hi":62.8}},{"label":"(memo) scored 4 or more takedowns","all":{"n":160,"won":160,"pct":100.0,"lo":97.7,"hi":100.0},"pts":{"n":147,"won":147,"pct":100.0,"lo":97.5,"hi":100.0}}],"tied_n":211,"tied_how":{"reg":154,"ot":35,"fall":16,"other":6},"cat_edge":{"Escape":[{"won":50,"n":58,"pct":86},{"won":23,"n":31,"pct":74},{"won":3,"n":7,"pct":43}],"Reversal":[null,{"won":24,"n":35,"pct":69},{"won":9,"n":9,"pct":100}],"Nearfall":[null,{"won":18,"n":19,"pct":95},{"won":28,"n":28,"pct":100}],"Penalty":[{"won":17,"n":24,"pct":71},{"won":2,"n":3,"pct":67},{"won":1,"n":1,"pct":100}],"Riding time":[{"won":79,"n":88,"pct":90},null,null]},"ahead":{"Riding time":{"n":79,"pct":51.3,"of":154},"Escape":{"n":76,"pct":49.4,"of":154},"Nearfall":{"n":46,"pct":29.9,"of":154},"Reversal":{"n":33,"pct":21.4,"of":154},"Penalty":{"n":20,"pct":13.0,"of":154}},"combos":[{"n":30,"pct":19.5,"combo":"escape"},{"n":24,"pct":15.6,"combo":"escape + riding time"},{"n":16,"pct":10.4,"combo":"riding time"},{"n":13,"pct":8.4,"combo":"nearfall"},{"n":13,"pct":8.4,"combo":"reversal + riding time"},{"n":9,"pct":5.8,"combo":"reversal"},{"n":7,"pct":4.5,"combo":"escape + nearfall"},{"n":7,"pct":4.5,"combo":"escape + nearfall + riding time"}],"margin":{"one":61,"of":154,"one_pct":39.6,"two_pct":27.3},"ot_n":35,"ot_kinds":[{"n":11,"kind":"Sudden victory","detail":"takedown (winner's total only reached even because the opponent had scored earlier)"},{"n":9,"kind":"Tiebreaker","detail":"scored more tiebreak points (escape)"},{"n":4,"kind":"Tiebreaker","detail":"scored more tiebreak points (riding)"},{"n":2,"kind":"Tiebreaker","detail":"scored more tiebreak points (reversal)"},{"n":2,"kind":"Tiebreaker","detail":"tied on tiebreak points, other (ride-out / riding time / criteria not in data)"},{"n":2,"kind":"Tiebreaker","detail":"scored more tiebreak points (escape+riding)"},{"n":1,"kind":"Tiebreaker","detail":"scored more tiebreak points (nearfall)"},{"n":1,"kind":"Tiebreaker","detail":"scored more tiebreak points (escape+nearfall)"},{"n":1,"kind":"Tiebreaker","detail":"both escaped, tied on points -> the FASTER escape won"},{"n":1,"kind":"Tiebreaker","detail":"scored more tiebreak points (penalty)"},{"n":1,"kind":"Tiebreaker","detail":"scored more tiebreak points (escape+penalty)"}],"ot_pts":{"more":32,"fewer":0,"equal":3},"nd_top":3,"nd_rows":[{"name":"A.J. Schopp (Edinboro)","where":"2015, 133","place":"3rd","wins":"3 of 7","beat":"George DiCamillo (Virginia) by fall; Rossi Bruno (Michigan) 7-2; James Gulibon (Penn St.) by fall"},{"name":"Jason Tsirtsis (Northwestern)","where":"2015, 149","place":"3rd","wins":"3 of 5","beat":"Bryant Clagon (Rider) 2-1; Bryant Clagon (Rider) 2-1; Sal Mastriani (Virginia Tech) 2-0"},{"name":"Connor Schram (Stanford)","where":"2016, 125","place":"8th","wins":"3 of 3","beat":"Lorenzo Bentley (Pittsburgh) 5-2; Darian Cruz (Lehigh) 3-1; Ronnie Bresser (Oregon St.) 3-1"},{"name":"Eric Montoya (Nebraska)","where":"2016, 133","place":"5th","wins":"3 of 5","beat":"Johnni DiJulius (Ohio St.) 2-0; Ryan Taylor (Wisconsin) by fall; Jordan Conaway (Penn State) 7-4"}],"nd_more":0,"nd_compare":"8 All-Americans had 2 such wins; 33 All-Americans had 1 such win","aa_pop":160,"ladder":{"3":4,"2":8,"1":33,"4":0}},"ncaa|2017-2019":{"seasons":[2017,2018,2019],"bouts":1851,"no_pbp":9,"with_diff":1561,"tied":290,"more_td_all":[1456,1561],"more_td_pts":[1303,1388],"ended":{"points":1640,"fall":198,"forfeit":13,"unmatched":0},"matched":null,"swapped":0,"diff":{"0":{"all":{"n":290,"won":null,"pct":50.0,"lo":null,"hi":null},"pts":{"n":252,"won":null,"pct":50.0,"lo":null,"hi":null}},"1":{"all":{"n":640,"won":564,"pct":88.1,"lo":85.4,"hi":90.4},"pts":{"n":536,"won":475,"pct":88.6,"lo":85.7,"hi":91.0}},"2":{"all":{"n":452,"won":432,"pct":95.6,"lo":93.3,"hi":97.1},"pts":{"n":406,"won":390,"pct":96.1,"lo":93.7,"hi":97.6}},"3":{"all":{"n":233,"won":228,"pct":97.9,"lo":95.1,"hi":99.1},"pts":{"n":220,"won":215,"pct":97.7,"lo":94.8,"hi":99.0}},"4":{"all":{"n":236,"won":232,"pct":98.3,"lo":95.7,"hi":99.3},"pts":{"n":226,"won":223,"pct":98.7,"lo":96.2,"hi":99.5}}},"upsets":{"1":{"points":54,"ot":7,"fall":15,"forfeit":0,"unknown":0,"total":76,"of":640},"2":{"points":14,"ot":2,"fall":4,"forfeit":0,"unknown":0,"total":20,"of":452},"3":{"points":3,"ot":2,"fall":0,"forfeit":0,"unknown":0,"total":5,"of":233},"4":{"points":2,"ot":1,"fall":1,"forfeit":0,"unknown":0,"total":4,"of":236}},"big_upsets":29,"scen":[{"label":"Scored the first takedown (any time)","all":{"n":1732,"won":1432,"pct":82.7,"lo":80.8,"hi":84.4},"pts":{"n":1544,"won":1279,"pct":82.8,"lo":80.9,"hi":84.6}},{"label":"1. First takedown in period 1","all":{"n":1419,"won":1159,"pct":81.7,"lo":79.6,"hi":83.6},"pts":{"n":1248,"won":1020,"pct":81.7,"lo":79.5,"hi":83.8}},{"label":"2. First takedown in period 2 (none in period 1)","all":{"n":141,"won":121,"pct":85.8,"lo":79.1,"hi":90.6},"pts":{"n":129,"won":111,"pct":86.0,"lo":79.0,"hi":91.0}},{"label":"3. First takedown in period 3 (none earlier)","all":{"n":124,"won":105,"pct":84.7,"lo":77.3,"hi":90.0},"pts":{"n":122,"won":104,"pct":85.2,"lo":77.9,"hi":90.5}},{"label":"(memo) first takedown came in overtime","all":{"n":48,"won":47,"pct":97.9,"lo":89.1,"hi":99.6},"pts":{"n":45,"won":44,"pct":97.8,"lo":88.4,"hi":99.6}},{"label":"4. Scored nearfall points (any time)","all":{"n":605,"won":560,"pct":92.6,"lo":90.2,"hi":94.4},"pts":{"n":547,"won":507,"pct":92.7,"lo":90.2,"hi":94.6}},{"label":"5. Gave up 1st takedown, then scored the 2nd takedown","all":{"n":351,"won":209,"pct":59.5,"lo":54.3,"hi":64.5},"pts":{"n":325,"won":191,"pct":58.8,"lo":53.3,"hi":64.0}},{"label":"6. Gave up 1st takedown, then scored any later takedown","all":{"n":513,"won":245,"pct":47.8,"lo":43.5,"hi":52.1},"pts":{"n":483,"won":224,"pct":46.4,"lo":42.0,"hi":50.8}},{"label":"7. Gave up 1st takedown, never scored a takedown","all":{"n":1219,"won":55,"pct":4.5,"lo":3.5,"hi":5.8},"pts":{"n":1061,"won":41,"pct":3.9,"lo":2.9,"hi":5.2}},{"label":"8. Scored exactly 2 takedowns in the match","all":{"n":654,"won":549,"pct":83.9,"lo":80.9,"hi":86.6},"pts":{"n":601,"won":501,"pct":83.4,"lo":80.2,"hi":86.1}},{"label":"9. Scored exactly 3 takedowns in the match","all":{"n":307,"won":289,"pct":94.1,"lo":90.9,"hi":96.3},"pts":{"n":291,"won":275,"pct":94.5,"lo":91.3,"hi":96.6}},{"label":"(memo) scored exactly 1 takedown","all":{"n":1005,"won":570,"pct":56.7,"lo":53.6,"hi":59.7},"pts":{"n":866,"won":467,"pct":53.9,"lo":50.6,"hi":57.2}},{"label":"(memo) scored 4 or more takedowns","all":{"n":279,"won":269,"pct":96.4,"lo":93.5,"hi":98.0},"pts":{"n":269,"won":260,"pct":96.7,"lo":93.8,"hi":98.2}}],"tied_n":290,"tied_how":{"reg":208,"ot":46,"fall":27,"other":9},"cat_edge":{"Escape":[{"won":90,"n":112,"pct":80},{"won":35,"n":41,"pct":85},{"won":4,"n":4,"pct":100}],"Reversal":[null,{"won":49,"n":62,"pct":79},{"won":7,"n":7,"pct":100}],"Nearfall":[null,{"won":20,"n":21,"pct":95},{"won":45,"n":46,"pct":98}],"Penalty":[{"won":36,"n":44,"pct":82},{"won":8,"n":10,"pct":80},null],"Riding time":[{"won":104,"n":112,"pct":93},null,null]},"ahead":{"Escape":{"n":129,"pct":62.0,"of":208},"Riding time":{"n":104,"pct":50.0,"of":208},"Nearfall":{"n":65,"pct":31.2,"of":208},"Reversal":{"n":56,"pct":26.9,"of":208},"Penalty":{"n":44,"pct":21.2,"of":208}},"combos":[{"n":41,"pct":19.7,"combo":"escape"},{"n":31,"pct":14.9,"combo":"escape + riding time"},{"n":15,"pct":7.2,"combo":"reversal + riding time"},{"n":14,"pct":6.7,"combo":"escape + nearfall + riding time"},{"n":14,"pct":6.7,"combo":"reversal"},{"n":12,"pct":5.8,"combo":"escape + penalty"},{"n":10,"pct":4.8,"combo":"escape + nearfall"},{"n":9,"pct":4.3,"combo":"penalty"}],"margin":{"one":67,"of":208,"one_pct":32.2,"two_pct":24.0},"ot_n":46,"ot_kinds":[{"n":18,"kind":"Sudden victory","detail":"takedown (winner's total only reached even because the opponent had scored earlier)"},{"n":16,"kind":"Tiebreaker","detail":"scored more tiebreak points (escape)"},{"n":2,"kind":"Tiebreaker","detail":"both escaped, but the slower escape won (unexplained)"},{"n":2,"kind":"Tiebreaker","detail":"scored more tiebreak points (reversal)"},{"n":1,"kind":"Tiebreaker","detail":"tied on tiebreak points, other (ride-out / riding time / criteria not in data)"},{"n":1,"kind":"Tiebreaker","detail":"scored more tiebreak points (escape+penalty)"},{"n":1,"kind":"Tiebreaker","detail":"both escaped, tied on points -> the FASTER escape won"},{"n":1,"kind":"Sudden victory","detail":"non-takedown score (Escape)"},{"n":1,"kind":"Sudden victory","detail":"non-takedown score (Penalty 1)"},{"n":1,"kind":"Tiebreaker","detail":"scored more tiebreak points (escape+riding)"},{"n":1,"kind":"Tiebreaker","detail":"scored more tiebreak points (riding)"},{"n":1,"kind":"Tiebreaker","detail":"scored more tiebreak points (reversal+nearfall)"}],"ot_pts":{"more":42,"fewer":0,"equal":4},"nd_top":3,"nd_rows":[{"name":"Aaron Studebaker (Nebraska)","where":"2017, 197","place":"5th","wins":"3 of 6","beat":"Nate Rotert (South Dakota State) 2-0; Brad Johnson (Oklahoma) 2-0; Preston Weigel (Oklahoma State) 9-0 (major decision)"},{"name":"Darian Cruz (Lehigh)","where":"2018, 125","place":"5th","wins":"3 of 4","beat":"Drew Mattin (Michigan) 1-0; Ronnie Bresser (Oregon State) 2-0; Sebastian Rivera (Northwestern) 7-4"},{"name":"Jacob Holschlag (Northern Iowa)","where":"2018, 197","place":"5th","wins":"3 of 6","beat":"Eric Schultz (Nebraska) 3-2; Chris Weiler (Lehigh) 3-2; Willie Miklus (Missouri) 7-5"},{"name":"David McFadden (Virginia Tech)","where":"2019, 174","place":"5th","wins":"3 of 6","beat":"Vincent Deprez (Binghamton) 4-0; Jordan Kutler (Lehigh) 2-0; Mikey Labriola (Nebraska) 4-3"}],"nd_more":0,"nd_compare":"5 All-Americans had 2 such wins; 60 All-Americans had 1 such win","aa_pop":240,"ladder":{"3":4,"2":5,"1":60,"4":0}},"ncaa|2021-2023":{"seasons":[2021,2022,2023],"bouts":1843,"no_pbp":17,"with_diff":1539,"tied":304,"more_td_all":[1451,1539],"more_td_pts":[1307,1372],"ended":{"points":1648,"fall":175,"forfeit":20,"unmatched":0},"matched":null,"swapped":0,"diff":{"0":{"all":{"n":304,"won":null,"pct":50.0,"lo":null,"hi":null},"pts":{"n":276,"won":null,"pct":50.0,"lo":null,"hi":null}},"1":{"all":{"n":705,"won":632,"pct":89.6,"lo":87.2,"hi":91.7},"pts":{"n":600,"won":547,"pct":91.2,"lo":88.6,"hi":93.2}},"2":{"all":{"n":426,"won":414,"pct":97.2,"lo":95.1,"hi":98.4},"pts":{"n":380,"won":370,"pct":97.4,"lo":95.2,"hi":98.6}},"3":{"all":{"n":219,"won":217,"pct":99.1,"lo":96.7,"hi":99.7},"pts":{"n":209,"won":208,"pct":99.5,"lo":97.3,"hi":99.9}},"4":{"all":{"n":189,"won":188,"pct":99.5,"lo":97.1,"hi":99.9},"pts":{"n":183,"won":182,"pct":99.5,"lo":97.0,"hi":99.9}}},"upsets":{"1":{"points":48,"ot":5,"fall":20,"forfeit":0,"unknown":0,"total":73,"of":705},"2":{"points":10,"ot":0,"fall":2,"forfeit":0,"unknown":0,"total":12,"of":426},"3":{"points":1,"ot":0,"fall":1,"forfeit":0,"unknown":0,"total":2,"of":219},"4":{"points":1,"ot":0,"fall":0,"forfeit":0,"unknown":0,"total":1,"of":189}},"big_upsets":15,"scen":[{"label":"Scored the first takedown (any time)","all":{"n":1709,"won":1407,"pct":82.3,"lo":80.4,"hi":84.1},"pts":{"n":1527,"won":1270,"pct":83.2,"lo":81.2,"hi":85.0}},{"label":"1. First takedown in period 1","all":{"n":1338,"won":1075,"pct":80.3,"lo":78.1,"hi":82.4},"pts":{"n":1169,"won":950,"pct":81.3,"lo":78.9,"hi":83.4}},{"label":"2. First takedown in period 2 (none in period 1)","all":{"n":174,"won":152,"pct":87.4,"lo":81.6,"hi":91.5},"pts":{"n":167,"won":146,"pct":87.4,"lo":81.5,"hi":91.6}},{"label":"3. First takedown in period 3 (none earlier)","all":{"n":127,"won":110,"pct":86.6,"lo":79.6,"hi":91.5},"pts":{"n":123,"won":106,"pct":86.2,"lo":79.0,"hi":91.2}},{"label":"(memo) first takedown came in overtime","all":{"n":70,"won":70,"pct":100.0,"lo":94.8,"hi":100.0},"pts":{"n":68,"won":68,"pct":100.0,"lo":94.7,"hi":100.0}},{"label":"4. Scored nearfall points (any time)","all":{"n":475,"won":426,"pct":89.7,"lo":86.6,"hi":92.1},"pts":{"n":424,"won":390,"pct":92.0,"lo":89.0,"hi":94.2}},{"label":"5. Gave up 1st takedown, then scored the 2nd takedown","all":{"n":354,"won":219,"pct":61.9,"lo":56.7,"hi":66.8},"pts":{"n":324,"won":197,"pct":60.8,"lo":55.4,"hi":66.0}},{"label":"6. Gave up 1st takedown, then scored any later takedown","all":{"n":506,"won":258,"pct":51.0,"lo":46.6,"hi":55.3},"pts":{"n":468,"won":230,"pct":49.1,"lo":44.6,"hi":53.7}},{"label":"7. Gave up 1st takedown, never scored a takedown","all":{"n":1203,"won":44,"pct":3.7,"lo":2.7,"hi":4.9},"pts":{"n":1059,"won":27,"pct":2.5,"lo":1.8,"hi":3.7}},{"label":"8. Scored exactly 2 takedowns in the match","all":{"n":630,"won":539,"pct":85.6,"lo":82.6,"hi":88.1},"pts":{"n":577,"won":495,"pct":85.8,"lo":82.7,"hi":88.4}},{"label":"9. Scored exactly 3 takedowns in the match","all":{"n":294,"won":278,"pct":94.6,"lo":91.3,"hi":96.6},"pts":{"n":279,"won":265,"pct":95.0,"lo":91.8,"hi":97.0}},{"label":"(memo) scored exactly 1 takedown","all":{"n":1063,"won":625,"pct":58.8,"lo":55.8,"hi":61.7},"pts":{"n":921,"won":527,"pct":57.2,"lo":54.0,"hi":60.4}},{"label":"(memo) scored 4 or more takedowns","all":{"n":228,"won":223,"pct":97.8,"lo":95.0,"hi":99.1},"pts":{"n":218,"won":213,"pct":97.7,"lo":94.7,"hi":99.0}}],"tied_n":304,"tied_how":{"reg":225,"ot":52,"fall":16,"other":11},"cat_edge":{"Escape":[{"won":94,"n":120,"pct":78},{"won":36,"n":46,"pct":78},{"won":11,"n":12,"pct":92}],"Reversal":[null,{"won":49,"n":57,"pct":86},{"won":2,"n":2,"pct":100}],"Nearfall":[null,{"won":21,"n":24,"pct":88},{"won":28,"n":28,"pct":100}],"Penalty":[{"won":24,"n":38,"pct":63},{"won":2,"n":3,"pct":67},null],"Riding time":[{"won":119,"n":122,"pct":98},null,null]},"ahead":{"Escape":{"n":141,"pct":62.7,"of":225},"Riding time":{"n":119,"pct":52.9,"of":225},"Reversal":{"n":51,"pct":22.7,"of":225},"Nearfall":{"n":49,"pct":21.8,"of":225},"Penalty":{"n":26,"pct":11.6,"of":225}},"combos":[{"n":53,"pct":23.6,"combo":"escape"},{"n":45,"pct":20.0,"combo":"escape + riding time"},{"n":22,"pct":9.8,"combo":"reversal + riding time"},{"n":19,"pct":8.4,"combo":"riding time"},{"n":13,"pct":5.8,"combo":"escape + nearfall"},{"n":12,"pct":5.3,"combo":"escape + nearfall + riding time"},{"n":11,"pct":4.9,"combo":"reversal"},{"n":8,"pct":3.6,"combo":"penalty"}],"margin":{"one":96,"of":225,"one_pct":42.7,"two_pct":23.1},"ot_n":52,"ot_kinds":[{"n":17,"kind":"Tiebreaker","detail":"scored more tiebreak points (escape)"},{"n":16,"kind":"Sudden victory","detail":"takedown (winner's total only reached even because the opponent had scored earlier)"},{"n":5,"kind":"Tiebreaker","detail":"scored more tiebreak points (riding)"},{"n":4,"kind":"Tiebreaker","detail":"tied on tiebreak points, other (ride-out / riding time / criteria not in data)"},{"n":3,"kind":"Tiebreaker","detail":"both escaped, tied on points -> the FASTER escape won"},{"n":2,"kind":"Tiebreaker","detail":"scored more tiebreak points (reversal)"},{"n":2,"kind":"Sudden victory","detail":"non-takedown score (Penalty 1)"},{"n":2,"kind":"Tiebreaker","detail":"scored more tiebreak points (escape+riding)"},{"n":1,"kind":"Tiebreaker","detail":"scored more tiebreak points (escape+penalty)"}],"ot_pts":{"more":45,"fewer":1,"equal":6},"nd_top":2,"nd_rows":[{"name":"Chad Red (Nebraska)","where":"2021, 141","place":"6th","wins":"2 of 5","beat":"Allan Hart (Missouri) 8-7; Zachary Sherman (North Carolina) 5-4 (tiebreaker)"},{"name":"Dylan Duncan (Illinois)","where":"2021, 141","place":"5th","wins":"2 of 6","beat":"Grant Willits (Oregon State) 3-2; Chad Red (Nebraska) 3-0"},{"name":"Zachary Sherman (North Carolina)","where":"2021, 141","place":"7th","wins":"2 of 4","beat":"Saul Ervin (SIU Edwardsville) 2-0; Dom Demas (Oklahoma) 2-1 (tiebreaker)"},{"name":"Jesse Dellavecchia (Rider)","where":"2021, 157","place":"2nd","wins":"2 of 3","beat":"Hunter Willits (Oregon State) 4-2; Ryan Deakin (Northwestern) by fall"},{"name":"Jake Wentzel (Pittsburgh)","where":"2021, 165","place":"2nd","wins":"2 of 4","beat":"Evan Barczak (Drexel) 1-0; Ethan Smith (Ohio State) 4-2"},{"name":"Gannon Gremmel (Iowa State)","where":"2021, 285","place":"5th","wins":"2 of 4","beat":"Zach Elam (Missouri) 3-1; Trent Hillger (Wisconsin) 2-1 (tiebreaker)"},{"name":"Tate Orndorff (Ohio State)","where":"2021, 285","place":"8th","wins":"2 of 4","beat":"Christian Lance (Nebraska) 2-1; Brian Andrews (Wyoming) 2-1 (tiebreaker)"},{"name":"Lucas Byrd (Illinois)","where":"2022, 133","place":"5th","wins":"2 of 6","beat":"Anthony Madrigal (Oklahoma) 3-1; Chris Cannon (Northwestern) 2-1"},{"name":"Grant Willits (Oregon State)","where":"2022, 141","place":"4th","wins":"2 of 5","beat":"Allan Hart (Missouri) 3-1 (tiebreaker); Chad Red (Nebraska) by fall"},{"name":"Ridge Lovett (Nebraska)","where":"2022, 149","place":"2nd","wins":"2 of 4","beat":"Joshua Heil (Campbell) 8-1; Tariq Wilson (NC State) by fall"},{"name":"Hunter Willits (Oregon State)","where":"2022, 157","place":"7th","wins":"2 of 3","beat":"Brady Berge (Penn State) 2-1; David Carr (Iowa State) 2-1 (tiebreaker)"},{"name":"Jacob Warner (Iowa)","where":"2022, 197","place":"2nd","wins":"2 of 4","beat":"Eric Schultz (Nebraska) 2-0; Stephen Buchanan (Wyoming) 6-4"},{"name":"Stephen Buchanan (Wyoming)","where":"2022, 197","place":"3rd","wins":"2 of 5","beat":"JT Brown (Army West Point) 2-0; Rocky Elam (Missouri) 1-0"},{"name":"Jordan Wood (Lehigh)","where":"2022, 285","place":"3rd","wins":"2 of 4","beat":"Michael Wolfgram (West Virginia) 1-0; Gary Traub (Oregon State) 6-0"},{"name":"Daton Fix (Oklahoma State)","where":"2023, 133","place":"4th","wins":"2 of 4","beat":"Lucas Byrd (Illinois) 3-2; Aaron Nagao (Minnesota) 6-4"},{"name":"Jesse Mendez (Ohio State)","where":"2023, 133","place":"6th","wins":"2 of 5","beat":"Dylan Ragusin (Michigan) 1-1 (tiebreaker); Sam Latona (Virginia Tech) 1-1 (tiebreaker)"},{"name":"Chris Foca (Cornell)","where":"2023, 174","place":"3rd","wins":"2 of 5","beat":"Nelson Brands (Iowa) 7-2; Mekhi Lewis (Virginia Tech) 3-2 (tiebreaker)"},{"name":"Mekhi Lewis (Virginia Tech)","where":"2023, 174","place":"4th","wins":"2 of 4","beat":"Jackson Turley (Rutgers) 2-1; Nelson Brands (Iowa) 2-0"},{"name":"Trent Hillger (Wisconsin)","where":"2023, 285","place":"8th","wins":"2 of 3","beat":"Hunter Catka (Virginia Tech) 2-0; Yaraslau Slavikouski (Harvard) 1-0"},{"name":"Zach Elam (Missouri)","where":"2023, 285","place":"6th","wins":"2 of 4","beat":"Jacob Bullock (Indiana) 4-1; Trent Hillger (Wisconsin) 2-0"}],"nd_more":0,"nd_compare":"60 All-Americans had 1 such win","aa_pop":240,"ladder":{"2":20,"1":60,"3":0,"4":0}},"ncaa|2024-2026":{"seasons":[2024,2025,2026],"bouts":1845,"no_pbp":15,"with_diff":1509,"tied":336,"more_td_all":[1478,1509],"more_td_pts":[1348,1369],"ended":{"points":1678,"fall":155,"forfeit":11,"unmatched":1},"matched":null,"swapped":1,"diff":{"0":{"all":{"n":336,"won":null,"pct":50.0,"lo":null,"hi":null},"pts":{"n":309,"won":null,"pct":50.0,"lo":null,"hi":null}},"1":{"all":{"n":771,"won":745,"pct":96.6,"lo":95.1,"hi":97.7},"pts":{"n":686,"won":667,"pct":97.2,"lo":95.7,"hi":98.2}},"2":{"all":{"n":350,"won":347,"pct":99.1,"lo":97.5,"hi":99.7},"pts":{"n":319,"won":318,"pct":99.7,"lo":98.2,"hi":99.9}},"3":{"all":{"n":190,"won":188,"pct":98.9,"lo":96.2,"hi":99.7},"pts":{"n":178,"won":177,"pct":99.4,"lo":96.9,"hi":99.9}},"4":{"all":{"n":198,"won":198,"pct":100.0,"lo":98.1,"hi":100.0},"pts":{"n":186,"won":186,"pct":100.0,"lo":98.0,"hi":100.0}}},"upsets":{"1":{"points":16,"ot":3,"fall":7,"forfeit":0,"unknown":0,"total":26,"of":771},"2":{"points":1,"ot":0,"fall":2,"forfeit":0,"unknown":0,"total":3,"of":350},"3":{"points":1,"ot":0,"fall":1,"forfeit":0,"unknown":0,"total":2,"of":190},"4":{"points":0,"ot":0,"fall":0,"forfeit":0,"unknown":0,"total":0,"of":198}},"big_upsets":5,"scen":[{"label":"Scored the first takedown (any time)","all":{"n":1667,"won":1437,"pct":86.2,"lo":84.5,"hi":87.8},"pts":{"n":1513,"won":1317,"pct":87.0,"lo":85.3,"hi":88.6}},{"label":"1. First takedown in period 1","all":{"n":1184,"won":985,"pct":83.2,"lo":81.0,"hi":85.2},"pts":{"n":1050,"won":880,"pct":83.8,"lo":81.5,"hi":85.9}},{"label":"2. First takedown in period 2 (none in period 1)","all":{"n":222,"won":198,"pct":89.2,"lo":84.4,"hi":92.6},"pts":{"n":210,"won":190,"pct":90.5,"lo":85.7,"hi":93.8}},{"label":"3. First takedown in period 3 (none earlier)","all":{"n":162,"won":155,"pct":95.7,"lo":91.4,"hi":97.9},"pts":{"n":156,"won":150,"pct":96.2,"lo":91.9,"hi":98.2}},{"label":"(memo) first takedown came in overtime","all":{"n":99,"won":99,"pct":100.0,"lo":96.3,"hi":100.0},"pts":{"n":97,"won":97,"pct":100.0,"lo":96.2,"hi":100.0}},{"label":"4. Scored nearfall points (any time)","all":{"n":391,"won":359,"pct":91.8,"lo":88.7,"hi":94.1},"pts":{"n":359,"won":335,"pct":93.3,"lo":90.2,"hi":95.5}},{"label":"5. Gave up 1st takedown, then scored the 2nd takedown","all":{"n":308,"won":186,"pct":60.4,"lo":54.8,"hi":65.7},"pts":{"n":281,"won":163,"pct":58.0,"lo":52.2,"hi":63.6}},{"label":"6. Gave up 1st takedown, then scored any later takedown","all":{"n":427,"won":208,"pct":48.7,"lo":44.0,"hi":53.4},"pts":{"n":395,"won":182,"pct":46.1,"lo":41.2,"hi":51.0}},{"label":"7. Gave up 1st takedown, never scored a takedown","all":{"n":1240,"won":22,"pct":1.8,"lo":1.2,"hi":2.7},"pts":{"n":1118,"won":14,"pct":1.3,"lo":0.7,"hi":2.1}},{"label":"8. Scored exactly 2 takedowns in the match","all":{"n":556,"won":495,"pct":89.0,"lo":86.2,"hi":91.4},"pts":{"n":506,"won":453,"pct":89.5,"lo":86.6,"hi":91.9}},{"label":"9. Scored exactly 3 takedowns in the match","all":{"n":235,"won":229,"pct":97.4,"lo":94.5,"hi":98.8},"pts":{"n":221,"won":216,"pct":97.7,"lo":94.8,"hi":99.0}},{"label":"(memo) scored exactly 1 takedown","all":{"n":1081,"won":699,"pct":64.7,"lo":61.8,"hi":67.5},"pts":{"n":972,"won":621,"pct":63.9,"lo":60.8,"hi":66.8}},{"label":"(memo) scored 4 or more takedowns","all":{"n":222,"won":222,"pct":100.0,"lo":98.3,"hi":100.0},"pts":{"n":209,"won":209,"pct":100.0,"lo":98.2,"hi":100.0}}],"tied_n":336,"tied_how":{"reg":254,"ot":56,"fall":20,"other":6},"cat_edge":{"Escape":[{"won":127,"n":145,"pct":88},{"won":30,"n":38,"pct":79},{"won":4,"n":4,"pct":100}],"Reversal":[null,{"won":41,"n":48,"pct":85},{"won":3,"n":3,"pct":100}],"Nearfall":[{"won":1,"n":1,"pct":100},{"won":15,"n":15,"pct":100},{"won":47,"n":48,"pct":98}],"Penalty":[{"won":28,"n":43,"pct":65},{"won":8,"n":8,"pct":100},{"won":0,"n":1,"pct":0}],"Riding time":[{"won":127,"n":131,"pct":97},null,null]},"ahead":{"Escape":{"n":161,"pct":63.4,"of":254},"Riding time":{"n":127,"pct":50.0,"of":254},"Nearfall":{"n":63,"pct":24.8,"of":254},"Reversal":{"n":44,"pct":17.3,"of":254},"Penalty":{"n":36,"pct":14.2,"of":254}},"combos":[{"n":62,"pct":24.4,"combo":"escape"},{"n":50,"pct":19.7,"combo":"escape + riding time"},{"n":21,"pct":8.3,"combo":"riding time"},{"n":15,"pct":5.9,"combo":"penalty"},{"n":13,"pct":5.1,"combo":"nearfall + riding time"},{"n":12,"pct":4.7,"combo":"escape + nearfall + riding time"},{"n":12,"pct":4.7,"combo":"escape + nearfall"},{"n":10,"pct":3.9,"combo":"reversal + riding time"}],"margin":{"one":107,"of":254,"one_pct":42.1,"two_pct":27.6},"ot_n":56,"ot_kinds":[{"n":18,"kind":"Tiebreaker","detail":"scored more tiebreak points (escape)"},{"n":8,"kind":"Sudden victory","detail":"takedown (winner's total only reached even because the opponent had scored earlier)"},{"n":8,"kind":"Tiebreaker","detail":"both escaped, tied on points -> the FASTER escape won"},{"n":6,"kind":"Tiebreaker","detail":"scored more tiebreak points (reversal)"},{"n":5,"kind":"Tiebreaker","detail":"tied on tiebreak points, other (ride-out / riding time / criteria not in data)"},{"n":3,"kind":"Tiebreaker","detail":"scored more tiebreak points (riding)"},{"n":3,"kind":"Tiebreaker","detail":"scored more tiebreak points (escape+riding)"},{"n":2,"kind":"Tiebreaker","detail":"scored more tiebreak points (penalty)"},{"n":1,"kind":"Sudden victory","detail":"non-takedown score (Penalty 1)"},{"n":1,"kind":"Tiebreaker","detail":"scored more tiebreak points (penalty+riding)"},{"n":1,"kind":"Tiebreaker","detail":"scored more tiebreak points (reversal+nearfall+penalty)"}],"ot_pts":{"more":43,"fewer":0,"equal":13},"nd_top":3,"nd_rows":[{"name":"Peyten Kellar (Ohio)","where":"2024, 157","place":"5th","wins":"3 of 6","beat":"Johnny Lovett (Central Michigan) 1-0; Cael Swensen (South Dakota State) 1-0; Bryce Andonian (Virginia Tech) by fall"},{"name":"Zach Elam (Missouri)","where":"2024, 285","place":"4th","wins":"3 of 5","beat":"Hunter Catka (Virginia Tech) 1-0; Yaraslau Slavikouski (Rutgers) 2-0; Cohlton Schultz (Arizona State) 1-0"},{"name":"Lucas Byrd (Illinois)","where":"2025, 133","place":"1st","wins":"3 of 5","beat":"Hunter Leake (California Baptist) 3-2; Zeth Romney (Cal Poly) 2-0; Drake Ayala (Iowa) 3-2 in the final (tiebreaker)"},{"name":"Nicco Ruiz (Arizona State)","where":"2026, 165","place":"4th","wins":"3 of 5","beat":"Andrew Sparks (Minnesota) 2-1 (tiebreaker); Bryce Hepner (North Carolina) 2-0; Joey Blaze (Purdue) 2-1"},{"name":"Konner Doucet (Oklahoma State)","where":"2026, 285","place":"4th","wins":"3 of 4","beat":"Luke Luffman (Illinois) 2-1; Dayton Pitzer (Pittsburgh) by fall; Christian Carroll (Wyoming) 1-0"}],"nd_more":0,"nd_compare":"18 All-Americans had 2 such wins; 59 All-Americans had 1 such win","aa_pop":240,"ladder":{"3":5,"2":18,"1":59,"4":0}},"conf|2014-2016":{"seasons":[2015,2016],"bouts":1052,"no_pbp":292,"with_diff":866,"tied":186,"more_td_all":[825,866],"more_td_pts":[709,737],"ended":{"points":899,"fall":111,"forfeit":7,"unmatched":35},"matched":1017,"swapped":3,"diff":{"0":{"all":{"n":186,"won":null,"pct":50.0,"lo":null,"hi":null},"pts":{"n":162,"won":null,"pct":50.0,"lo":null,"hi":null}},"1":{"all":{"n":365,"won":325,"pct":89.0,"lo":85.4,"hi":91.8},"pts":{"n":295,"won":267,"pct":90.5,"lo":86.6,"hi":93.4}},"2":{"all":{"n":235,"won":235,"pct":100.0,"lo":98.4,"hi":100.0},"pts":{"n":202,"won":202,"pct":100.0,"lo":98.1,"hi":100.0}},"3":{"all":{"n":136,"won":135,"pct":99.3,"lo":96.0,"hi":99.9},"pts":{"n":120,"won":120,"pct":100.0,"lo":96.9,"hi":100.0}},"4":{"all":{"n":130,"won":130,"pct":100.0,"lo":97.1,"hi":100.0},"pts":{"n":120,"won":120,"pct":100.0,"lo":96.9,"hi":100.0}}},"upsets":{"1":{"points":24,"ot":4,"fall":8,"forfeit":0,"unknown":4,"total":40,"of":365},"2":{"points":0,"ot":0,"fall":0,"forfeit":0,"unknown":0,"total":0,"of":235},"3":{"points":0,"ot":0,"fall":1,"forfeit":0,"unknown":0,"total":1,"of":136},"4":{"points":0,"ot":0,"fall":0,"forfeit":0,"unknown":0,"total":0,"of":130}},"big_upsets":1,"scen":[{"label":"Scored the first takedown (any time)","all":{"n":953,"won":806,"pct":84.6,"lo":82.1,"hi":86.7},"pts":{"n":812,"won":693,"pct":85.3,"lo":82.7,"hi":87.6}},{"label":"1. First takedown in period 1","all":{"n":769,"won":641,"pct":83.4,"lo":80.6,"hi":85.8},"pts":{"n":640,"won":534,"pct":83.4,"lo":80.4,"hi":86.1}},{"label":"2. First takedown in period 2 (none in period 1)","all":{"n":90,"won":78,"pct":86.7,"lo":78.1,"hi":92.2},"pts":{"n":80,"won":73,"pct":91.2,"lo":83.0,"hi":95.7}},{"label":"3. First takedown in period 3 (none earlier)","all":{"n":72,"won":65,"pct":90.3,"lo":81.3,"hi":95.2},"pts":{"n":70,"won":64,"pct":91.4,"lo":82.5,"hi":96.0}},{"label":"(memo) first takedown came in overtime","all":{"n":22,"won":22,"pct":100.0,"lo":85.1,"hi":100.0},"pts":{"n":22,"won":22,"pct":100.0,"lo":85.1,"hi":100.0}},{"label":"4. Scored nearfall points (any time)","all":{"n":354,"won":327,"pct":92.4,"lo":89.1,"hi":94.7},"pts":{"n":308,"won":288,"pct":93.5,"lo":90.2,"hi":95.8}},{"label":"5. Gave up 1st takedown, then scored the 2nd takedown","all":{"n":182,"won":106,"pct":58.2,"lo":51.0,"hi":65.2},"pts":{"n":160,"won":91,"pct":56.9,"lo":49.1,"hi":64.3}},{"label":"6. Gave up 1st takedown, then scored any later takedown","all":{"n":251,"won":122,"pct":48.6,"lo":42.5,"hi":54.8},"pts":{"n":223,"won":103,"pct":46.2,"lo":39.8,"hi":52.7}},{"label":"7. Gave up 1st takedown, never scored a takedown","all":{"n":702,"won":25,"pct":3.6,"lo":2.4,"hi":5.2},"pts":{"n":589,"won":16,"pct":2.7,"lo":1.7,"hi":4.4}},{"label":"8. Scored exactly 2 takedowns in the match","all":{"n":312,"won":280,"pct":89.7,"lo":85.9,"hi":92.6},"pts":{"n":265,"won":237,"pct":89.4,"lo":85.2,"hi":92.6}},{"label":"9. Scored exactly 3 takedowns in the match","all":{"n":171,"won":165,"pct":96.5,"lo":92.6,"hi":98.4},"pts":{"n":154,"won":149,"pct":96.8,"lo":92.6,"hi":98.6}},{"label":"(memo) scored exactly 1 takedown","all":{"n":571,"won":334,"pct":58.5,"lo":54.4,"hi":62.5},"pts":{"n":478,"won":272,"pct":56.9,"lo":52.4,"hi":61.3}},{"label":"(memo) scored 4 or more takedowns","all":{"n":150,"won":149,"pct":99.3,"lo":96.3,"hi":99.9},"pts":{"n":138,"won":138,"pct":100.0,"lo":97.3,"hi":100.0}}],"tied_n":186,"tied_how":{"reg":141,"ot":24,"fall":13,"other":8},"cat_edge":{"Escape":[{"won":65,"n":82,"pct":79},{"won":19,"n":25,"pct":76},{"won":2,"n":3,"pct":67}],"Reversal":[null,{"won":32,"n":40,"pct":80},{"won":1,"n":1,"pct":100}],"Nearfall":[{"won":1,"n":1,"pct":100},{"won":14,"n":14,"pct":100},{"won":26,"n":26,"pct":100}],"Penalty":[{"won":14,"n":20,"pct":70},{"won":3,"n":3,"pct":100},null],"Riding time":[{"won":73,"n":75,"pct":97},null,null]},"ahead":{"Escape":{"n":86,"pct":61.0,"of":141},"Riding time":{"n":73,"pct":51.8,"of":141},"Nearfall":{"n":41,"pct":29.1,"of":141},"Reversal":{"n":33,"pct":23.4,"of":141},"Penalty":{"n":17,"pct":12.1,"of":141}},"combos":[{"n":27,"pct":19.1,"combo":"escape"},{"n":26,"pct":18.4,"combo":"escape + riding time"},{"n":12,"pct":8.5,"combo":"escape + nearfall"},{"n":11,"pct":7.8,"combo":"reversal + riding time"},{"n":9,"pct":6.4,"combo":"riding time"},{"n":9,"pct":6.4,"combo":"escape + nearfall + riding time"},{"n":7,"pct":5.0,"combo":"penalty"},{"n":6,"pct":4.3,"combo":"reversal"}],"margin":{"one":51,"of":141,"one_pct":36.2,"two_pct":28.4},"ot_n":24,"ot_kinds":[{"n":13,"kind":"Tiebreaker","detail":"scored more tiebreak points (escape)"},{"n":2,"kind":"Sudden victory","detail":"takedown (winner's total only reached even because the opponent had scored earlier)"},{"n":2,"kind":"Tiebreaker","detail":"both escaped, tied on points -> the FASTER escape won"},{"n":1,"kind":"Tiebreaker","detail":"scored more tiebreak points (riding)"},{"n":1,"kind":"Tiebreaker","detail":"scored more tiebreak points (escape+nearfall)"},{"n":1,"kind":"Tiebreaker","detail":"tied on tiebreak points, other (ride-out / riding time / criteria not in data)"},{"n":1,"kind":"Tiebreaker","detail":"scored more tiebreak points (reversal)"},{"n":1,"kind":"Sudden victory","detail":"non-takedown score (Penalty 1)"},{"n":1,"kind":"Tiebreaker","detail":"both escaped, but the slower escape won (unexplained)"},{"n":1,"kind":"Tiebreaker","detail":"scored more tiebreak points (penalty)"}],"ot_pts":{"more":20,"fewer":0,"equal":4},"nd_top":3,"nd_rows":[{"name":"Mike Evans (Iowa)","where":"2015 Big Ten, 174","place":null,"wins":"3 of 3","beat":"Mark Martin (Ohio State) 2-0; Zach Brunson (Illinois) 1-0; Logan Storley (Minnesota) 2-1 (tiebreaker)"},{"name":"Denzel Dejournette (Appalachian State)","where":"2015 SoCon, 285","place":null,"wins":"3 of 3","beat":"Chris Johnson (Southern Illinois Edwardsville) 2-0; Jared Johnson (Chattanooga) 3-2; Joseph Bexley (The Citadel) 1-0"},{"name":"Brian Murphy (Michigan)","where":"2016 Big Ten, 157","place":null,"wins":"3 of 4","beat":"Richie Lewis (Rutgers) 2-1 (tiebreaker); Jake Ryan (Ohio State) by fall; Edwin Cooper, Jr. (Iowa) 2-1 (tiebreaker)"}],"nd_more":0,"nd_compare":"10 wrestlers had 2 such wins; 89 wrestlers had 1 such win","aa_pop":null,"ladder":{"3":3,"2":10,"1":89,"4":0}},"conf|2017-2019":{"seasons":[2017,2018,2019],"bouts":1598,"no_pbp":535,"with_diff":1369,"tied":229,"more_td_all":[1313,1369],"more_td_pts":[1043,1085],"ended":{"points":1260,"fall":202,"forfeit":21,"unmatched":115},"matched":1483,"swapped":0,"diff":{"0":{"all":{"n":229,"won":null,"pct":50.0,"lo":null,"hi":null},"pts":{"n":175,"won":null,"pct":50.0,"lo":null,"hi":null}},"1":{"all":{"n":558,"won":508,"pct":91.0,"lo":88.4,"hi":93.1},"pts":{"n":427,"won":389,"pct":91.1,"lo":88.0,"hi":93.4}},"2":{"all":{"n":342,"won":336,"pct":98.2,"lo":96.2,"hi":99.2},"pts":{"n":267,"won":263,"pct":98.5,"lo":96.2,"hi":99.4}},"3":{"all":{"n":215,"won":215,"pct":100.0,"lo":98.2,"hi":100.0},"pts":{"n":180,"won":180,"pct":100.0,"lo":97.9,"hi":100.0}},"4":{"all":{"n":254,"won":254,"pct":100.0,"lo":98.5,"hi":100.0},"pts":{"n":211,"won":211,"pct":100.0,"lo":98.2,"hi":100.0}}},"upsets":{"1":{"points":35,"ot":3,"fall":8,"forfeit":0,"unknown":4,"total":50,"of":558},"2":{"points":3,"ot":1,"fall":2,"forfeit":0,"unknown":0,"total":6,"of":342},"3":{"points":0,"ot":0,"fall":0,"forfeit":0,"unknown":0,"total":0,"of":215},"4":{"points":0,"ot":0,"fall":0,"forfeit":0,"unknown":0,"total":0,"of":254}},"big_upsets":6,"scen":[{"label":"Scored the first takedown (any time)","all":{"n":1484,"won":1292,"pct":87.1,"lo":85.3,"hi":88.7},"pts":{"n":1177,"won":1030,"pct":87.5,"lo":85.5,"hi":89.3}},{"label":"1. First takedown in period 1","all":{"n":1218,"won":1047,"pct":86.0,"lo":83.9,"hi":87.8},"pts":{"n":938,"won":808,"pct":86.1,"lo":83.8,"hi":88.2}},{"label":"2. First takedown in period 2 (none in period 1)","all":{"n":116,"won":103,"pct":88.8,"lo":81.8,"hi":93.3},"pts":{"n":104,"won":94,"pct":90.4,"lo":83.2,"hi":94.7}},{"label":"3. First takedown in period 3 (none earlier)","all":{"n":117,"won":109,"pct":93.2,"lo":87.1,"hi":96.5},"pts":{"n":104,"won":97,"pct":93.3,"lo":86.8,"hi":96.7}},{"label":"(memo) first takedown came in overtime","all":{"n":33,"won":33,"pct":100.0,"lo":89.6,"hi":100.0},"pts":{"n":31,"won":31,"pct":100.0,"lo":89.0,"hi":100.0}},{"label":"4. Scored nearfall points (any time)","all":{"n":539,"won":507,"pct":94.1,"lo":91.7,"hi":95.8},"pts":{"n":438,"won":414,"pct":94.5,"lo":92.0,"hi":96.3}},{"label":"5. Gave up 1st takedown, then scored the 2nd takedown","all":{"n":267,"won":143,"pct":53.6,"lo":47.6,"hi":59.4},"pts":{"n":227,"won":111,"pct":48.9,"lo":42.5,"hi":55.4}},{"label":"6. Gave up 1st takedown, then scored any later takedown","all":{"n":397,"won":166,"pct":41.8,"lo":37.1,"hi":46.7},"pts":{"n":341,"won":127,"pct":37.2,"lo":32.3,"hi":42.5}},{"label":"7. Gave up 1st takedown, never scored a takedown","all":{"n":1087,"won":26,"pct":2.4,"lo":1.6,"hi":3.5},"pts":{"n":836,"won":20,"pct":2.4,"lo":1.6,"hi":3.7}},{"label":"8. Scored exactly 2 takedowns in the match","all":{"n":469,"won":410,"pct":87.4,"lo":84.1,"hi":90.1},"pts":{"n":388,"won":338,"pct":87.1,"lo":83.4,"hi":90.1}},{"label":"9. Scored exactly 3 takedowns in the match","all":{"n":277,"won":260,"pct":93.9,"lo":90.4,"hi":96.1},"pts":{"n":230,"won":217,"pct":94.3,"lo":90.6,"hi":96.7}},{"label":"(memo) scored exactly 1 takedown","all":{"n":841,"won":494,"pct":58.7,"lo":55.4,"hi":62.0},"pts":{"n":654,"won":356,"pct":54.4,"lo":50.6,"hi":58.2}},{"label":"(memo) scored 4 or more takedowns","all":{"n":294,"won":294,"pct":100.0,"lo":98.7,"hi":100.0},"pts":{"n":246,"won":246,"pct":100.0,"lo":98.5,"hi":100.0}}],"tied_n":229,"tied_how":{"reg":149,"ot":31,"fall":19,"other":30},"cat_edge":{"Escape":[{"won":62,"n":76,"pct":82},{"won":18,"n":18,"pct":100},{"won":6,"n":6,"pct":100}],"Reversal":[null,{"won":24,"n":30,"pct":80},{"won":3,"n":4,"pct":75}],"Nearfall":[null,{"won":18,"n":18,"pct":100},{"won":33,"n":33,"pct":100}],"Penalty":[{"won":26,"n":32,"pct":81},{"won":5,"n":7,"pct":71},{"won":1,"n":1,"pct":100}],"Riding time":[{"won":66,"n":73,"pct":90},null,null]},"ahead":{"Escape":{"n":86,"pct":57.7,"of":149},"Riding time":{"n":66,"pct":44.3,"of":149},"Nearfall":{"n":51,"pct":34.2,"of":149},"Penalty":{"n":32,"pct":21.5,"of":149},"Reversal":{"n":27,"pct":18.1,"of":149}},"combos":[{"n":23,"pct":15.4,"combo":"escape"},{"n":21,"pct":14.1,"combo":"escape + riding time"},{"n":16,"pct":10.7,"combo":"escape + nearfall"},{"n":11,"pct":7.4,"combo":"nearfall"},{"n":11,"pct":7.4,"combo":"riding time"},{"n":9,"pct":6.0,"combo":"escape + penalty + riding time"},{"n":8,"pct":5.4,"combo":"penalty"},{"n":7,"pct":4.7,"combo":"reversal"}],"margin":{"one":47,"of":149,"one_pct":31.5,"two_pct":23.5},"ot_n":31,"ot_kinds":[{"n":11,"kind":"Tiebreaker","detail":"scored more tiebreak points (escape)"},{"n":7,"kind":"Sudden victory","detail":"takedown (winner's total only reached even because the opponent had scored earlier)"},{"n":4,"kind":"Tiebreaker","detail":"scored more tiebreak points (reversal)"},{"n":3,"kind":"Tiebreaker","detail":"scored more tiebreak points (riding)"},{"n":2,"kind":"Tiebreaker","detail":"scored more tiebreak points (escape+nearfall)"},{"n":1,"kind":"Tiebreaker","detail":"scored more tiebreak points (reversal+nearfall)"},{"n":1,"kind":"Tiebreaker","detail":"both escaped, but the slower escape won (unexplained)"},{"n":1,"kind":"Tiebreaker","detail":"both escaped, tied on points -> the FASTER escape won"},{"n":1,"kind":"Tiebreaker","detail":"tied on tiebreak points, other (ride-out / riding time / criteria not in data)"}],"ot_pts":{"more":28,"fewer":0,"equal":3},"nd_top":3,"nd_rows":[{"name":"Drew Hughes (Michigan State)","where":"2017 Big Ten, 165","place":null,"wins":"3 of 4","beat":"Dylan Painton (Rutgers) 1-0; Cody Burcher (Ohio State) 1-0; Nick Wanzek (Minnesota) 3-2"},{"name":"Conan Jennings (Northwestern)","where":"2018 Big Ten, 285","place":null,"wins":"3 of 4","beat":"David Jensen (Nebraska) 2-0; Ben Stone (Wisconsin) 16-0 (tech fall); Youssif Hemida (Maryland) 3-2"}],"nd_more":0,"nd_compare":"14 wrestlers had 2 such wins; 89 wrestlers had 1 such win","aa_pop":null,"ladder":{"3":2,"2":14,"1":89,"4":0}},"conf|2021-2023":{"seasons":[2021,2022,2023],"bouts":2445,"no_pbp":609,"with_diff":2048,"tied":397,"more_td_all":[1949,2048],"more_td_pts":[1679,1747],"ended":{"points":2101,"fall":266,"forfeit":22,"unmatched":56},"matched":2389,"swapped":4,"diff":{"0":{"all":{"n":397,"won":null,"pct":50.0,"lo":null,"hi":null},"pts":{"n":354,"won":null,"pct":50.0,"lo":null,"hi":null}},"1":{"all":{"n":927,"won":850,"pct":91.7,"lo":89.7,"hi":93.3},"pts":{"n":744,"won":693,"pct":93.1,"lo":91.1,"hi":94.7}},"2":{"all":{"n":545,"won":527,"pct":96.7,"lo":94.8,"hi":97.9},"pts":{"n":476,"won":462,"pct":97.1,"lo":95.1,"hi":98.2}},"3":{"all":{"n":285,"won":281,"pct":98.6,"lo":96.4,"hi":99.5},"pts":{"n":258,"won":255,"pct":98.8,"lo":96.6,"hi":99.6}},"4":{"all":{"n":291,"won":291,"pct":100.0,"lo":98.7,"hi":100.0},"pts":{"n":269,"won":269,"pct":100.0,"lo":98.6,"hi":100.0}}},"upsets":{"1":{"points":45,"ot":6,"fall":19,"forfeit":3,"unknown":4,"total":77,"of":927},"2":{"points":13,"ot":1,"fall":2,"forfeit":1,"unknown":1,"total":18,"of":545},"3":{"points":3,"ot":0,"fall":1,"forfeit":0,"unknown":0,"total":4,"of":285},"4":{"points":0,"ot":0,"fall":0,"forfeit":0,"unknown":0,"total":0,"of":291}},"big_upsets":22,"scen":[{"label":"Scored the first takedown (any time)","all":{"n":2267,"won":1923,"pct":84.8,"lo":83.3,"hi":86.2},"pts":{"n":1948,"won":1655,"pct":85.0,"lo":83.3,"hi":86.5}},{"label":"1. First takedown in period 1","all":{"n":1746,"won":1455,"pct":83.3,"lo":81.5,"hi":85.0},"pts":{"n":1463,"won":1215,"pct":83.0,"lo":81.0,"hi":84.9}},{"label":"2. First takedown in period 2 (none in period 1)","all":{"n":241,"won":204,"pct":84.6,"lo":79.6,"hi":88.7},"pts":{"n":219,"won":189,"pct":86.3,"lo":81.1,"hi":90.2}},{"label":"3. First takedown in period 3 (none earlier)","all":{"n":198,"won":183,"pct":92.4,"lo":87.9,"hi":95.4},"pts":{"n":187,"won":173,"pct":92.5,"lo":87.8,"hi":95.5}},{"label":"(memo) first takedown came in overtime","all":{"n":82,"won":81,"pct":98.8,"lo":93.4,"hi":99.8},"pts":{"n":79,"won":78,"pct":98.7,"lo":93.2,"hi":99.8}},{"label":"4. Scored nearfall points (any time)","all":{"n":631,"won":575,"pct":91.1,"lo":88.7,"hi":93.1},"pts":{"n":542,"won":495,"pct":91.3,"lo":88.7,"hi":93.4}},{"label":"5. Gave up 1st takedown, then scored the 2nd takedown","all":{"n":423,"won":258,"pct":61.0,"lo":56.3,"hi":65.5},"pts":{"n":386,"won":236,"pct":61.1,"lo":56.2,"hi":65.9}},{"label":"6. Gave up 1st takedown, then scored any later takedown","all":{"n":578,"won":290,"pct":50.2,"lo":46.1,"hi":54.2},"pts":{"n":532,"won":261,"pct":49.1,"lo":44.8,"hi":53.3}},{"label":"7. Gave up 1st takedown, never scored a takedown","all":{"n":1689,"won":54,"pct":3.2,"lo":2.5,"hi":4.1},"pts":{"n":1416,"won":32,"pct":2.3,"lo":1.6,"hi":3.2}},{"label":"8. Scored exactly 2 takedowns in the match","all":{"n":735,"won":639,"pct":86.9,"lo":84.3,"hi":89.2},"pts":{"n":644,"won":561,"pct":87.1,"lo":84.3,"hi":89.5}},{"label":"9. Scored exactly 3 takedowns in the match","all":{"n":371,"won":353,"pct":95.1,"lo":92.5,"hi":96.9},"pts":{"n":335,"won":321,"pct":95.8,"lo":93.1,"hi":97.5}},{"label":"(memo) scored exactly 1 takedown","all":{"n":1399,"won":888,"pct":63.5,"lo":60.9,"hi":66.0},"pts":{"n":1187,"won":725,"pct":61.1,"lo":58.3,"hi":63.8}},{"label":"(memo) scored 4 or more takedowns","all":{"n":340,"won":333,"pct":97.9,"lo":95.8,"hi":99.0},"pts":{"n":314,"won":309,"pct":98.4,"lo":96.3,"hi":99.3}}],"tied_n":397,"tied_how":{"reg":299,"ot":60,"fall":21,"other":17},"cat_edge":{"Escape":[{"won":135,"n":156,"pct":87},{"won":36,"n":43,"pct":84},{"won":10,"n":12,"pct":83}],"Reversal":[null,{"won":50,"n":63,"pct":79},{"won":9,"n":9,"pct":100}],"Nearfall":[null,{"won":24,"n":27,"pct":89},{"won":42,"n":42,"pct":100}],"Penalty":[{"won":39,"n":53,"pct":74},{"won":9,"n":9,"pct":100},{"won":1,"n":1,"pct":100}],"Riding time":[{"won":150,"n":153,"pct":98},null,null]},"ahead":{"Escape":{"n":181,"pct":60.5,"of":299},"Riding time":{"n":150,"pct":50.2,"of":299},"Nearfall":{"n":66,"pct":22.1,"of":299},"Reversal":{"n":59,"pct":19.7,"of":299},"Penalty":{"n":49,"pct":16.4,"of":299}},"combos":[{"n":74,"pct":24.7,"combo":"escape"},{"n":57,"pct":19.1,"combo":"escape + riding time"},{"n":25,"pct":8.4,"combo":"riding time"},{"n":22,"pct":7.4,"combo":"penalty"},{"n":19,"pct":6.4,"combo":"reversal + riding time"},{"n":13,"pct":4.3,"combo":"reversal + nearfall + riding time"},{"n":13,"pct":4.3,"combo":"nearfall"},{"n":11,"pct":3.7,"combo":"escape + nearfall"}],"margin":{"one":125,"of":299,"one_pct":41.8,"two_pct":28.4},"ot_n":60,"ot_kinds":[{"n":19,"kind":"Sudden victory","detail":"takedown (winner's total only reached even because the opponent had scored earlier)"},{"n":14,"kind":"Tiebreaker","detail":"scored more tiebreak points (escape)"},{"n":9,"kind":"Tiebreaker","detail":"scored more tiebreak points (riding)"},{"n":4,"kind":"Tiebreaker","detail":"scored more tiebreak points (reversal)"},{"n":3,"kind":"Tiebreaker","detail":"both escaped, tied on points -> the FASTER escape won"},{"n":2,"kind":"Tiebreaker","detail":"scored more tiebreak points (escape+riding)"},{"n":2,"kind":"Tiebreaker","detail":"scored more tiebreak points (penalty)"},{"n":2,"kind":"Sudden victory","detail":"non-takedown score (Penalty 1)"},{"n":2,"kind":"Tiebreaker","detail":"tied on tiebreak points, other (ride-out / riding time / criteria not in data)"},{"n":1,"kind":"Tiebreaker","detail":"scored more tiebreak points (reversal+nearfall)"},{"n":1,"kind":"Tiebreaker","detail":"scored more tiebreak points (escape+penalty)"},{"n":1,"kind":"Tiebreaker","detail":"scored more tiebreak points (escape+nearfall)"}],"ot_pts":{"more":55,"fewer":0,"equal":5},"nd_top":3,"nd_rows":[{"name":"Mike Van Brill (Rutgers)","where":"2021 Big Ten, 149","place":null,"wins":"3 of 4","beat":"Griffin Parriott (Purdue) 7-2 (tiebreaker); Kanen Storr (Michigan) 6-1; Michael Blockhus (Minnesota) 2-1 (tiebreaker)"},{"name":"Aaron Bolo (Central Michigan)","where":"2022 MAC, 197","place":null,"wins":"3 of 5","beat":"Jon List (George Mason) 5-4; Parker McClellan (Lock Haven) 6-0; Cody Mulligan (Edinboro) 3-2 (tiebreaker)"},{"name":"Mitch Moore (Oklahoma)","where":"2023 Big 12, 149","place":null,"wins":"3 of 5","beat":"Chase Zollmann (Wyoming) 1-0; Victor Voinovich (OK State) 4-1; Kellyn March (N. Dakota State) 5-0"}],"nd_more":0,"nd_compare":"18 wrestlers had 2 such wins; 175 wrestlers had 1 such win","aa_pop":null,"ladder":{"3":3,"2":18,"1":175,"4":0}},"conf|2024-2026":{"seasons":[2024,2025,2026],"bouts":2680,"no_pbp":660,"with_diff":2280,"tied":400,"more_td_all":[2224,2280],"more_td_pts":[1946,1979],"ended":{"points":2344,"fall":279,"forfeit":33,"unmatched":24},"matched":2656,"swapped":4,"diff":{"0":{"all":{"n":400,"won":null,"pct":50.0,"lo":null,"hi":null},"pts":{"n":365,"won":null,"pct":50.0,"lo":null,"hi":null}},"1":{"all":{"n":1115,"won":1068,"pct":95.8,"lo":94.4,"hi":96.8},"pts":{"n":936,"won":909,"pct":97.1,"lo":95.8,"hi":98.0}},"2":{"all":{"n":547,"won":540,"pct":98.7,"lo":97.4,"hi":99.4},"pts":{"n":481,"won":476,"pct":99.0,"lo":97.6,"hi":99.6}},"3":{"all":{"n":308,"won":306,"pct":99.4,"lo":97.7,"hi":99.8},"pts":{"n":276,"won":275,"pct":99.6,"lo":98.0,"hi":99.9}},"4":{"all":{"n":310,"won":310,"pct":100.0,"lo":98.8,"hi":100.0},"pts":{"n":286,"won":286,"pct":100.0,"lo":98.7,"hi":100.0}}},"upsets":{"1":{"points":26,"ot":1,"fall":15,"forfeit":3,"unknown":2,"total":47,"of":1115},"2":{"points":4,"ot":1,"fall":2,"forfeit":0,"unknown":0,"total":7,"of":547},"3":{"points":1,"ot":0,"fall":1,"forfeit":0,"unknown":0,"total":2,"of":308},"4":{"points":0,"ot":0,"fall":0,"forfeit":0,"unknown":0,"total":0,"of":310}},"big_upsets":9,"scen":[{"label":"Scored the first takedown (any time)","all":{"n":2458,"won":2195,"pct":89.3,"lo":88.0,"hi":90.5},"pts":{"n":2138,"won":1919,"pct":89.8,"lo":88.4,"hi":91.0}},{"label":"1. First takedown in period 1","all":{"n":1787,"won":1563,"pct":87.5,"lo":85.8,"hi":88.9},"pts":{"n":1502,"won":1318,"pct":87.7,"lo":86.0,"hi":89.3}},{"label":"2. First takedown in period 2 (none in period 1)","all":{"n":283,"won":252,"pct":89.0,"lo":84.9,"hi":92.2},"pts":{"n":263,"won":235,"pct":89.4,"lo":85.0,"hi":92.5}},{"label":"3. First takedown in period 3 (none earlier)","all":{"n":247,"won":239,"pct":96.8,"lo":93.7,"hi":98.3},"pts":{"n":237,"won":230,"pct":97.0,"lo":94.0,"hi":98.6}},{"label":"(memo) first takedown came in overtime","all":{"n":141,"won":141,"pct":100.0,"lo":97.3,"hi":100.0},"pts":{"n":136,"won":136,"pct":100.0,"lo":97.3,"hi":100.0}},{"label":"4. Scored nearfall points (any time)","all":{"n":643,"won":591,"pct":91.9,"lo":89.5,"hi":93.8},"pts":{"n":562,"won":523,"pct":93.1,"lo":90.7,"hi":94.9}},{"label":"5. Gave up 1st takedown, then scored the 2nd takedown","all":{"n":378,"won":214,"pct":56.6,"lo":51.6,"hi":61.5},"pts":{"n":344,"won":193,"pct":56.1,"lo":50.8,"hi":61.3}},{"label":"6. Gave up 1st takedown, then scored any later takedown","all":{"n":504,"won":232,"pct":46.0,"lo":41.7,"hi":50.4},"pts":{"n":465,"won":207,"pct":44.5,"lo":40.1,"hi":49.1}},{"label":"7. Gave up 1st takedown, never scored a takedown","all":{"n":1954,"won":31,"pct":1.6,"lo":1.1,"hi":2.2},"pts":{"n":1673,"won":12,"pct":0.7,"lo":0.4,"hi":1.2}},{"label":"8. Scored exactly 2 takedowns in the match","all":{"n":764,"won":698,"pct":91.4,"lo":89.2,"hi":93.2},"pts":{"n":673,"won":616,"pct":91.5,"lo":89.2,"hi":93.4}},{"label":"9. Scored exactly 3 takedowns in the match","all":{"n":358,"won":350,"pct":97.8,"lo":95.7,"hi":98.9},"pts":{"n":327,"won":320,"pct":97.9,"lo":95.6,"hi":99.0}},{"label":"(memo) scored exactly 1 takedown","all":{"n":1495,"won":1037,"pct":69.4,"lo":67.0,"hi":71.6},"pts":{"n":1283,"won":873,"pct":68.0,"lo":65.4,"hi":70.5}},{"label":"(memo) scored 4 or more takedowns","all":{"n":345,"won":342,"pct":99.1,"lo":97.5,"hi":99.7},"pts":{"n":320,"won":317,"pct":99.1,"lo":97.3,"hi":99.7}}],"tied_n":400,"tied_how":{"reg":306,"ot":62,"fall":23,"other":9},"cat_edge":{"Escape":[{"won":149,"n":177,"pct":84},{"won":28,"n":35,"pct":80},{"won":7,"n":10,"pct":70}],"Reversal":[null,{"won":49,"n":60,"pct":82},{"won":5,"n":5,"pct":100}],"Nearfall":[{"won":1,"n":1,"pct":100},{"won":15,"n":16,"pct":94},{"won":41,"n":41,"pct":100}],"Penalty":[{"won":44,"n":71,"pct":62},{"won":11,"n":12,"pct":92},{"won":2,"n":2,"pct":100}],"Riding time":[{"won":132,"n":138,"pct":96},null,null]},"ahead":{"Escape":{"n":184,"pct":60.1,"of":306},"Riding time":{"n":132,"pct":43.1,"of":306},"Nearfall":{"n":57,"pct":18.6,"of":306},"Penalty":{"n":57,"pct":18.6,"of":306},"Reversal":{"n":54,"pct":17.6,"of":306}},"combos":[{"n":76,"pct":24.8,"combo":"escape"},{"n":62,"pct":20.3,"combo":"escape + riding time"},{"n":27,"pct":8.8,"combo":"penalty"},{"n":23,"pct":7.5,"combo":"riding time"},{"n":18,"pct":5.9,"combo":"reversal"},{"n":17,"pct":5.6,"combo":"escape + nearfall"},{"n":13,"pct":4.2,"combo":"reversal + riding time"},{"n":9,"pct":2.9,"combo":"escape + penalty"}],"margin":{"one":149,"of":306,"one_pct":48.7,"two_pct":26.1},"ot_n":62,"ot_kinds":[{"n":19,"kind":"Tiebreaker","detail":"scored more tiebreak points (escape)"},{"n":8,"kind":"Tiebreaker","detail":"scored more tiebreak points (riding)"},{"n":7,"kind":"Sudden victory","detail":"non-takedown score (Penalty 1)"},{"n":7,"kind":"Tiebreaker","detail":"tied on tiebreak points, other (ride-out / riding time / criteria not in data)"},{"n":6,"kind":"Sudden victory","detail":"takedown (winner's total only reached even because the opponent had scored earlier)"},{"n":4,"kind":"Tiebreaker","detail":"scored more tiebreak points (reversal)"},{"n":3,"kind":"Sudden victory","detail":"non-takedown score (Escape)"},{"n":2,"kind":"Tiebreaker","detail":"both escaped, tied on points -> the FASTER escape won"},{"n":2,"kind":"Tiebreaker","detail":"scored more tiebreak points (escape+penalty)"},{"n":1,"kind":"Tiebreaker","detail":"scored more tiebreak points (escape+riding)"},{"n":1,"kind":"Tiebreaker","detail":"scored more tiebreak points (penalty)"},{"n":1,"kind":"Sudden victory","detail":"non-takedown score (Reversal)"},{"n":1,"kind":"Tiebreaker","detail":"scored more tiebreak points (reversal+penalty)"}],"ot_pts":{"more":53,"fewer":0,"equal":9},"nd_top":3,"nd_rows":[{"name":"Terrell Barraclough (Utah Valley)","where":"2025 Big 12, 165","place":null,"wins":"3 of 4","beat":"Aiden Riggins (Iowa State) 2-0; Cameron Amine (Oklahoma State) 2-1; Aiden Riggins (Iowa State) 1-0"},{"name":"Caden Dobbins (Lock Haven)","where":"2025 MAC, 165","place":null,"wins":"3 of 5","beat":"Bradley Gillum (SIU Edwardsville) 5-2; Tate Geiser (Cleveland State) 1-0; Maxwell Kirby (Edinboro) 1-0"}],"nd_more":0,"nd_compare":"27 wrestlers had 2 such wins; 182 wrestlers had 1 such win","aa_pop":null,"ladder":{"3":2,"2":27,"1":182,"4":0}}};
+const W  = ["2014-2016","2017-2019","2021-2023","2024-2026"];
+const WL = ["2014–16","2017–19","2021–23","2024–26"];
+const T  = [{k:"ncaa",name:"NCAA Championships",short:"NCAA",v:"--ncaa"},{k:"conf",name:"Conference tournaments",short:"Conf",v:"--conf"}];
+const S = {basis:"all", view:"charts", theme:"auto"};
+const get=(t,i)=>D[t+"|"+W[i]];
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const f1=v=>(v==null||isNaN(v))?"–":v.toFixed(1);
+const f0=v=>(v==null||isNaN(v))?"–":Math.round(v).toString();
+const nf=n=>n.toLocaleString("en-US");
+const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+function wilson(w,n,z=1.96){const p=w/n,d=1+z*z/n,c=p+z*z/(2*n),a=z*Math.sqrt(p*(1-p)/n+z*z/(4*n*n));return[100*(c-a)/d,100*(c+a)/d]}
+
+/* ---------- metric rows: one row = one measurement across 2 types x 4 windows ---------- */
+function metric(label, fn, o={}){
+  const cells={};
+  T.forEach(t=>{cells[t.k]=[0,1,2,3].map(i=>{const c=fn(get(t.k,i),t.k,i);return c});});
+  return Object.assign({label,cells,unit:"%",noun:"bouts"},o);
+}
+function fromCount(won,n){const [lo,hi]=wilson(won,n);return{v:100*won/n,won,n,lo,hi}}
+function tipCell(m,t,i){
+  const c=m.cells[t][i]; const tt=T.find(x=>x.k===t);
+  if(!c||c.v==null) return `<div class="th">${esc(m.label)}</div><div>${tt.short} · ${WL[i]}</div><div class="muted">no data</div>`;
+  let s=`<div class="th">${esc(m.label)}</div><div class="r"><i style="background:${css(tt.v)}"></i>${tt.name} · ${WL[i]}</div><div class="tv">${f1(c.v)}${m.unit}</div>`;
+  if(c.won!=null) s+=`<div>${nf(c.won)} of ${nf(c.n)} ${m.noun}</div>`; else if(c.n!=null) s+=`<div>n = ${nf(c.n)}</div>`;
+  if(c.lo!=null) s+=`<div class="muted">95% CI ${f1(c.lo)}–${f1(c.hi)}</div>`;
+  if(c.n!=null && c.n<100) s+=`<div class="muted">thin data (n&lt;100)</div>`;
+  return s;
+}
+function tipCol(m,i){
+  let s=`<div class="th">${esc(m.label)}</div><div class="muted">${WL[i]}</div>`;
+  T.forEach(t=>{const c=m.cells[t.k][i]; s+=`<div class="r"><i style="background:${css(t.v)}"></i><b>${c?f1(c.v)+m.unit:"–"}</b> ${t.short}${c&&c.n!=null?` <span class="muted">(${c.won!=null?nf(c.won)+"/":"n="}${nf(c.n)})</span>`:""}</div>`});
+  return s;
+}
+/* consistency: how much did each type move, and did 2024-26 step away from the earlier windows? */
+function consist(m){
+  const out={};
+  T.forEach(t=>{
+    const v=m.cells[t.k].map(c=>c&&c.v);
+    if(v.some(x=>x==null||isNaN(x))){out[t.k]=null;return}
+    const pre=v.slice(0,3), mean=pre.reduce((a,b)=>a+b)/3;
+    const range=Math.max(...v)-Math.min(...v), preR=Math.max(...pre)-Math.min(...pre), shift=v[3]-mean;
+    const thr=mean<10?1.5:3; const thin=m.cells[t.k].some(c=>c.n!=null&&c.n<100);
+    let verdict,glyph;
+    if(Math.abs(shift)>=thr && Math.abs(shift)>=1.5*preR){verdict=shift>0?"step up in 2024–26":"step down in 2024–26";glyph=shift>0?"▲":"▼"}
+    else if(range<=4){verdict="steady";glyph="="} else {verdict="varies window to window";glyph="~"}
+    out[t.k]={range,preR,shift,verdict,glyph,thin};
+  });
+  const gaps=[0,1,2,3].map(i=>{const a=m.cells.ncaa[i],b=m.cells.conf[i];return a&&b?b.v-a.v:null});
+  if(gaps.some(g=>g==null)) out.cross=null; else {
+    const hi=gaps.filter(g=>g>0).length, lo=gaps.filter(g=>g<0).length, mean=gaps.reduce((a,b)=>a+b)/4;
+    let txt,sub;
+    if(hi>=3){txt="Conf higher";sub=`${hi} of 4 windows`} else if(lo>=3){txt="NCAA higher";sub=`${lo} of 4 windows`} else {txt="No steady gap";sub=`conf higher in ${hi} of 4`}
+    out.cross={txt,sub,mean,hi,lo,gaps};
+  }
+  return out;
+}
+const gTxt={"▲":"step up in 2024–26","▼":"step down in 2024–26","=":"steady (range ≤ 4 pts)","~":"varies window to window"};
+function badge(t,c){ if(!c) return ""; return `<span class="badge"><span class="d" style="background:var(${t.v})"></span>${t.short}: ${c.glyph} ${c.verdict}${c.thin?" · thin":""}</span>`}
+
+/* ---------- tooltip ---------- */
+const tt=$("tt");
+function showTip(html,x,y){tt.innerHTML=html;tt.style.opacity=1;const r=tt.getBoundingClientRect();let L=x+14,Tp=y+14;if(L+r.width>innerWidth-8)L=x-r.width-14;if(L<8)L=8;if(Tp+r.height>innerHeight-8)Tp=y-r.height-14;if(Tp<8)Tp=8;tt.style.left=L+"px";tt.style.top=Tp+"px"}
+function hideTip(){tt.style.opacity=0}
+document.addEventListener("pointermove",e=>{const el=e.target.closest&&e.target.closest("[data-tip]");if(el)showTip(el.getAttribute("data-tip"),e.clientX,e.clientY);else hideTip()});
+document.addEventListener("focusin",e=>{const el=e.target.closest&&e.target.closest("[data-tip]");if(el){const r=el.getBoundingClientRect();showTip(el.getAttribute("data-tip"),r.left+r.width/2,r.top)}});
+document.addEventListener("focusout",hideTip);
+document.addEventListener("scroll",hideTip,{passive:true});
+
+/* ---------- SVG helpers ---------- */
+const NS='http://www.w3.org/2000/svg';
+function ramp(t,i){return `var(--${t}-${i+1})`}
+function blend(hex,surf,a){const p=h=>{h=h.replace("#","");return[0,2,4].map(i=>parseInt(h.substr(i,2),16))};const c=p(hex),s=p(surf);
+  const m=c.map((x,i)=>Math.round(x*a+s[i]*(1-a)));return "#"+m.map(x=>x.toString(16).padStart(2,"0")).join("")}
+function lum(hex){hex=hex.replace("#","");const c=[0,2,4].map(i=>parseInt(hex.substr(i,2),16)/255).map(x=>x<=.03928?x/12.92:Math.pow((x+.055)/1.055,2.4));return .2126*c[0]+.7152*c[1]+.0722*c[2]}
+function textOn(hex){const l=lum(hex);return (1.05/(l+.05))>=((l+.05)/.05)?"#ffffff":"#0b0b0b"}
+const cv=x=>x.indexOf('var(')===0?css(x.slice(4,-1)):x;
+const ww=host=>Math.max(280,Math.floor(host.clientWidth||host.parentNode.clientWidth||600));
+
+/* ---------- line panel (one metric, two types across 4 windows) ---------- */
+function linePanel(host,m,dom,ticks,h=176){
+  const w=ww(host),ml=34,mr=12,mt=14,mb=22; const pw=w-ml-mr, ph=h-mt-mb;
+  const X=i=>ml+pw*(0.08+0.84*i/3), Y=v=>mt+ph*(1-(Math.min(Math.max(v,dom[0]),dom[1])-dom[0])/(dom[1]-dom[0]));
+  let s=`<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(m.label)} across windows">`;
+  ticks.forEach(t=>{s+=`<line x1="${ml}" x2="${w-mr}" y1="${Y(t)}" y2="${Y(t)}" stroke="var(--grid)"/><text class="tk" x="${ml-6}" y="${Y(t)+4}" text-anchor="end">${t}</text>`});
+  WL.forEach((l,i)=>{s+=`<text class="tk" x="${X(i)}" y="${h-6}" text-anchor="middle">${l}</text>`});
+  const dx={ncaa:-4,conf:4};
+  // whiskers + lines + dots
+  T.forEach(t=>{
+    const pts=m.cells[t.k].map((c,i)=>c?[X(i)+dx[t.k],Y(c.v),c]:null);
+    const col=`var(${t.v})`;
+    pts.forEach(p=>{if(p&&p[2].lo!=null)s+=`<line x1="${p[0]}" x2="${p[0]}" y1="${Y(p[2].lo)}" y2="${Y(p[2].hi)}" stroke="${col}" stroke-opacity=".45" stroke-width="1.5"/>`});
+    s+=`<polyline fill="none" stroke="${col}" stroke-width="2" points="${pts.filter(Boolean).map(p=>p[0]+","+p[1]).join(" ")}"/>`;
+    pts.forEach(p=>{if(p)s+=`<circle cx="${p[0]}" cy="${p[1]}" r="4.5" fill="${col}" stroke="var(--surface)" stroke-width="2"/>`});
+  });
+  // direct value labels on the newest window: higher above, lower below
+  const last=T.map(t=>({t,c:m.cells[t.k][3],y:m.cells[t.k][3]?Y(m.cells[t.k][3].v):0})).filter(o=>o.c).sort((a,b)=>a.y-b.y);
+  last.forEach((o,idx)=>{const up=(idx===0&&last.length>1)||last.length===1;const x=X(3)+dx[o.t.k]; s+=`<text class="ink" font-weight="650" x="${x}" y="${o.y+(up?-9:16)}" text-anchor="middle">${f1(o.c.v)}</text>`});
+  // hover columns
+  WL.forEach((l,i)=>{const x0=i===0?ml:(X(i-1)+X(i))/2, x1=i===3?w-mr:(X(i)+X(i+1))/2;
+    s+=`<g class="col"><line class="xh" x1="${X(i)}" x2="${X(i)}" y1="${mt}" y2="${mt+ph}"/><rect class="hit" x="${x0}" y="${mt}" width="${x1-x0}" height="${ph}" tabindex="0" data-tip="${esc(tipCol(m,i))}" aria-label="${esc(m.label+", "+WL[i])}"/></g>`});
+  s+=`</svg>`; host.innerHTML=s;
+}
+
+/* ---------- strip / range chart ---------- */
+function stripChart(host,rows,o){
+  const w=ww(host), wide=w>=760, dom=o.dom, ticks=o.ticks;
+  const C1=84, C3=128, LW=wide?232:14, RC=wide?2*C1+C3:0, mr=wide?10:14, ml=wide?LW:14;
+  const pl=ml, pr=w-RC-mr, pw=pr-pl, X=v=>pl+pw*(v-dom[0])/(dom[1]-dom[0]);
+  const laneGap=8, rowH=wide?42:64, grpH=26, top=30;
+  let y=top, body="", grid="";
+  const yy=[];rows.forEach(r=>{if(r.group){yy.push({g:r.group,y});y+=grpH}else{yy.push({r,y});y+=rowH}});
+  const H=y+8;
+  ticks.forEach(t=>{grid+=`<line x1="${X(t)}" x2="${X(t)}" y1="${top-6}" y2="${H-8}" stroke="${t===o.ref?"var(--axis)":"var(--grid)"}" ${t===o.ref?'stroke-width="1.5" stroke-dasharray="3 3"':""}/><text class="tk" x="${X(t)}" y="${top-12}" text-anchor="middle">${t}%</text>`});
+  if(wide){grid+=`<text class="tk" x="${w-RC+C1/2}" y="${top-12}" text-anchor="middle">NCAA</text><text class="tk" x="${w-RC+C1*1.5}" y="${top-12}" text-anchor="middle">Conf</text><text class="tk" x="${w-RC+2*C1+C3/2}" y="${top-12}" text-anchor="middle">Conf vs NCAA</text><text class="tk" x="${w-RC+C1}" y="${top-24}" text-anchor="middle">spread across windows</text>`}
+  yy.forEach(o2=>{
+    if(o2.g){body+=`<text class="ink" font-weight="650" x="${wide?4:14}" y="${o2.y+17}">${esc(o2.g)}</text><line x1="4" x2="${w-4}" y1="${o2.y+22}" y2="${o2.y+22}" stroke="var(--border)"/>`;return}
+    const r=o2.r, m=r, cy=o2.y+rowH/2, c=consist(m);
+    const labelTip=`<div class="th">${esc(m.label)}</div>`+T.map(t=>c[t.k]?`<div class="r"><i style="background:${css(t.v)}"></i>${t.short}: spread ${f1(c[t.k].range)} pts · ${c[t.k].verdict}${c[t.k].thin?" · thin data":""}</div>`:"").join("")+(c.cross?`<div class="muted">${c.cross.txt} (${c.cross.sub}); avg gap conf − NCAA ${c.cross.mean>=0?"+":""}${f1(c.cross.mean)} pts</div>`:"");
+    if(wide) body+=`<text class="ink" x="4" y="${cy+4}" data-tip="${esc(labelTip)}" tabindex="0">${esc(m.label)}</text>`;
+    else body+=`<text class="ink" x="14" y="${o2.y+13}" data-tip="${esc(labelTip)}" tabindex="0">${esc(m.label)}</text>`;
+    const laneY={ncaa:(wide?cy-laneGap:o2.y+30),conf:(wide?cy+laneGap:o2.y+30+laneGap*2)};
+    T.forEach(t=>{
+      const cs=m.cells[t.k]; const ly=laneY[t.k];
+      const vs=cs.filter(Boolean).map(c=>c.v); if(!vs.length) return; const a=Math.min(...vs), b=Math.max(...vs);
+      body+=`<line x1="${X(a)}" x2="${X(b)}" y1="${ly}" y2="${ly}" stroke="var(--${t.k})" stroke-opacity=".5" stroke-width="3" stroke-linecap="round"/>`;
+      cs.forEach((cc,i)=>{if(!cc)return;body+=`<g class="dotg"><circle class="vis" cx="${X(cc.v)}" cy="${ly}" r="4.5" fill="${ramp(t.k,i)}" stroke="var(--surface)" stroke-width="2"/><circle class="hit" cx="${X(cc.v)}" cy="${ly}" r="9" tabindex="0" data-tip="${esc(tipCell(m,t.k,i))}" aria-label="${esc(m.label+", "+t.short+" "+WL[i]+": "+f1(cc.v)+"%")}"/></g>`});
+    });
+    if(wide){
+      const cx=[w-RC+C1/2,w-RC+C1*1.5];
+      T.forEach((t,ti)=>{const q=c[t.k]; if(q) body+=`<text class="ink" x="${cx[ti]}" y="${cy+4}" text-anchor="middle" data-tip="${esc(labelTip)}">${f1(q.range)} <tspan font-weight="700">${q.glyph}</tspan></text>`});
+      if(c.cross) body+=`<text class="ink" x="${w-RC+2*C1+C3/2}" y="${cy-1}" text-anchor="middle" font-weight="600">${esc(c.cross.txt)}</text><text class="tk" x="${w-RC+2*C1+C3/2}" y="${cy+12}" text-anchor="middle">${esc(c.cross.sub)}</text>`;
+    }
+    body+=`<line x1="4" x2="${w-4}" y1="${o2.y+rowH}" y2="${o2.y+rowH}" stroke="var(--border)" stroke-opacity=".5"/>`;
+  });
+  host.innerHTML=`<svg viewBox="0 0 ${w} ${H}" role="img" aria-label="${esc(o.aria)}">${grid}${body}</svg><p class="cap" style="padding:0 10px">${wide?"Spread = highest minus lowest of the four windows, in percentage points. <b>=</b> steady (spread ≤ 4 pts) · <b>▲ ▼</b> 2024–26 stepped away from the earlier three windows · <b>~</b> moves around without a pattern. ":"Spread and pattern columns appear on wider screens and in the table view. "}Dotted line = 50%. Lighter dots = older windows.</p>`;
+}
+
+/* ---------- stacked 100% bars: segRows = [{label,color,alpha,cells}] ---------- */
+function stackedBars(host,segRows,o){
+  const w=ww(host),H=o.h||300,mt=30,mb=44,ml=36,mr=10,pw=w-ml-mr,ph=H-mt-mb;
+  const surf=css('--surface'); const gW=pw/2, gapG=10, bw=(gW-gapG*2)/4*0.72, step=(gW-gapG*2)/4;
+  const Y=v=>mt+ph*(1-v/100);
+  let s=`<svg viewBox="0 0 ${w} ${H}" role="img" aria-label="${esc(o.aria)}">`;
+  [0,25,50,75,100].forEach(t=>{s+=`<line x1="${ml}" x2="${w-mr}" y1="${Y(t)}" y2="${Y(t)}" stroke="var(--grid)"/><text class="tk" x="${ml-6}" y="${Y(t)+4}" text-anchor="end">${t}%</text>`});
+  T.forEach((t,ti)=>{
+    const gx=ml+ti*gW;
+    s+=`<text class="ink" font-weight="650" x="${gx+gW/2}" y="${12}" text-anchor="middle">${t.name}</text><rect x="${gx+gapG}" y="${18}" width="${gW-2*gapG}" height="3" rx="1.5" fill="var(${t.v})"/>`;
+    for(let i=0;i<4;i++){
+      const cx=gx+gapG+step*(i+.5), x0=cx-bw/2; let acc=0;
+      s+=`<text class="tk" x="${cx}" y="${H-mb+16}" text-anchor="middle">${WL[i]}</text>`;
+      segRows.forEach(sr=>{
+        const c=sr.cells[t.k][i]; if(!c||!c.v) return;
+        const y1=Y(acc+c.v), y0=Y(acc), hh=Math.max(0,y0-y1-2);
+        const tip=`<div class="th">${esc(sr.label)}</div><div>${t.name} · ${WL[i]}</div><div class="tv">${f1(c.v)}%</div><div>${nf(c.won)} of ${nf(c.n)} ${sr.noun||"bouts"}</div>`;
+        const fillc=blend(cv(sr.color),surf,sr.alpha||1);
+        s+=`<rect x="${x0}" y="${y1+1}" width="${bw}" height="${hh}" rx="2" fill="${fillc}" tabindex="0" data-tip="${esc(tip)}" aria-label="${esc(sr.label+", "+t.short+" "+WL[i]+": "+f1(c.v)+"%")}" class="seg"/>`;
+        if(hh>=15) s+=`<text x="${cx}" y="${y1+1+hh/2+4}" text-anchor="middle" font-weight="650" style="fill:${textOn(fillc)}" pointer-events="none">${f0(c.v)}</text>`;
+        acc+=c.v;
+      });
+    }
+  });
+  s+=`</svg><div class="legend" style="padding:0 10px 4px;margin-top:2px">${segRows.map(sr=>`<span class="it"><span class="sw" style="background:${blend(cv(sr.color),surf,sr.alpha||1)}"></span>${esc(sr.label)}</span>`).join("")}</div>`;
+  host.innerHTML=s;
+}
+
+/* ---------- heatmap: rows = metrics, 8 columns; each type uses its own hue ---------- */
+function heatmap(host,rows,o){
+  const w=ww(host),wide=w>=640, LW=wide?150:96, ml=LW, mr=6, pw=w-ml-mr, cw=pw/8, ch=34, top=48;
+  const dom=o.dom; const surf=css("--surface");
+  const H=top+rows.length*ch+8;
+  let s=`<svg viewBox="0 0 ${w} ${H}" role="img" aria-label="${esc(o.aria)}">`;
+  T.forEach((t,ti)=>{const x=ml+ti*4*cw; s+=`<text class="ink" font-weight="650" x="${x+2*cw}" y="12" text-anchor="middle">${wide?t.name:t.short}</text><rect x="${x+3}" y="17" width="${4*cw-6}" height="3" rx="1.5" fill="var(${t.v})"/>`;
+    for(let i=0;i<4;i++)s+=`<text class="tk" x="${x+cw*(i+.5)}" y="${top-8}" text-anchor="middle">${wide?WL[i]:"’"+WL[i].slice(2,4)+"–"+WL[i].slice(-2)}</text>`});
+  rows.forEach((r,ri)=>{
+    const y=top+ri*ch; s+=`<text class="ink" x="4" y="${y+ch/2+4}">${esc(r.label)}</text>`;
+    T.forEach((t,ti)=>{for(let i=0;i<4;i++){
+      const c=r.cells[t.k][i]; const x=ml+(ti*4+i)*cw;
+      const a=Math.min(.95,Math.max(.10,.10+.85*(c.v-dom[0])/(dom[1]-dom[0])));
+      const fill=blend(css(t.v),surf,a);
+      s+=`<rect x="${x+1}" y="${y+1}" width="${cw-2}" height="${ch-2}" rx="4" fill="${fill}" tabindex="0" data-tip="${esc(tipCell(r,t.k,i))}" aria-label="${esc(r.label+", "+t.short+" "+WL[i]+": "+f1(c.v)+"%")}"/><text x="${x+cw/2}" y="${y+ch/2+4}" text-anchor="middle" font-weight="650" style="fill:${textOn(fill)}" pointer-events="none">${f1(c.v)}</text>`}});
+  });
+  s+=`</svg>`; host.innerHTML=s;
+}
+
+
+/* ---------- gap chart: conference minus NCAA, per window ---------- */
+function gapChart(host,rows,o){
+  const w=ww(host), wide=w>=680, LW=wide?(o.lw||250):14, RC=wide?128:0, mr=10;
+  const pl=LW, pr=w-RC-mr, pw=pr-pl, M=o.m, X=v=>pl+pw*(v+M)/(2*M);
+  const rowH=wide?30:50, grpH=26, top=44; let y=top; const yy=[];
+  rows.forEach(r=>{if(r.group){yy.push({g:r.group,y});y+=grpH}else{yy.push({r,y});y+=rowH}});
+  const H=y+8, alpha=[.3,.5,.75,1], sg=x=>(x>=0?"+":"")+f1(x);
+  let s=`<svg viewBox="0 0 ${w} ${H}" role="img" aria-label="${esc(o.aria)}">`;
+  s+=`<rect x="${X(-M)}" y="${top-8}" width="${X(0)-X(-M)}" height="${H-top}" fill="var(--ncaa)" fill-opacity=".08"/><rect x="${X(0)}" y="${top-8}" width="${X(M)-X(0)}" height="${H-top}" fill="var(--conf)" fill-opacity=".08"/>`;
+  s+=`<text class="ink" font-weight="650" x="${X(0)-8}" y="12" text-anchor="end">← NCAA higher</text><text class="ink" font-weight="650" x="${X(0)+8}" y="12" text-anchor="start">Conference higher →</text>`;
+  const step=o.step; for(let t=-M;t<=M;t+=step){s+=`<line x1="${X(t)}" x2="${X(t)}" y1="${top-8}" y2="${H-8}" stroke="${t===0?"var(--ink2)":"var(--grid)"}" ${t===0?'stroke-width="1.5"':""}/><text class="tk" x="${X(t)}" y="${top-14}" text-anchor="middle">${t>0?"+":t<0?"−":""}${Math.abs(t)}</text>`}
+  if(wide) s+=`<text class="tk" x="${w-RC+RC/2}" y="${top-14}" text-anchor="middle">Sign of the gap</text>`;
+  yy.forEach(o2=>{
+    if(o2.g){s+=`<text class="ink" font-weight="650" x="${wide?4:14}" y="${o2.y+17}">${esc(o2.g)}</text>`;return}
+    const m=o2.r, c=consist(m).cross, cy=o2.y+(wide?rowH/2:36);
+    if(!c) return;
+    s+=`<text class="ink" x="${wide?4:14}" y="${wide?cy+4:o2.y+14}">${esc(m.label)}</text>`;
+    const g=c.gaps, a=Math.min(...g), b=Math.max(...g);
+    s+=`<line x1="${X(a)}" x2="${X(b)}" y1="${cy}" y2="${cy}" stroke="var(--ink2)" stroke-opacity=".45" stroke-width="3" stroke-linecap="round"/>`;
+    g.forEach((v,i)=>{const nc=m.cells.ncaa[i],cc=m.cells.conf[i];
+      const tip=`<div class="th">${esc(m.label)}</div><div class="muted">${WL[i]}</div><div class="r"><i style="background:${css("--conf")}"></i>Conf ${f1(cc.v)}${m.unit}</div><div class="r"><i style="background:${css("--ncaa")}"></i>NCAA ${f1(nc.v)}${m.unit}</div><div class="tv">${sg(v)} pts</div>`;
+      s+=`<g class="dotg"><circle class="vis" cx="${X(v)}" cy="${cy}" r="4.5" fill="var(--ink)" fill-opacity="${alpha[i]}" stroke="var(--surface)" stroke-width="2"/><circle class="hit" cx="${X(v)}" cy="${cy}" r="9" tabindex="0" data-tip="${esc(tip)}" aria-label="${esc(m.label+", "+WL[i]+": conference minus NCAA "+sg(v)+" points")}"/></g>`});
+    if(wide){const solid=c.hi===4||c.lo===4;s+=`<text class="ink" x="${w-RC+RC/2}" y="${cy+4}" text-anchor="middle" ${solid?'font-weight="700"':""}>${c.hi===4?"conf higher 4/4":c.lo===4?"NCAA higher 4/4":`mixed (${c.hi} conf / ${c.lo} NCAA)`}</text>`}
+    s+=`<line x1="4" x2="${w-4}" y1="${o2.y+rowH}" y2="${o2.y+rowH}" stroke="var(--border)" stroke-opacity=".5"/>`;
+  });
+  host.innerHTML=s+`</svg><p class="cap" style="padding:0 10px">Each dot is one window (${[0,1,2,3].map(i=>`<span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--ink);opacity:${alpha[i]};vertical-align:-1px"></span>`).join(" ")} = oldest → newest). Units are percentage points, conference minus NCAA. Dots on one side of the line in every window mean the difference between tournament types keeps its sign; dots on both sides mean no consistent difference.</p>`;
+}
+
+/* ---------- generic metric table ---------- */
+function metricTable(rows,o={}){
+  let h=`<div class="tabwrap"><table><thead><tr><th class="l" rowspan="2">Measure</th>`;
+  T.forEach((t,ti)=>h+=`<th colspan="4" class="${ti?"sep":""}">${t.name}</th>`);
+  h+=`<th colspan="3" class="sep">Consistency</th></tr><tr>`;
+  T.forEach((t,ti)=>WL.forEach((l,i)=>h+=`<th class="${ti&&i===0?"sep":""}">${l}</th>`));
+  h+=`<th class="sep">NCAA</th><th>Conf</th><th>Conf vs NCAA</th></tr></thead><tbody>`;
+  rows.forEach(r=>{
+    if(r.group){h+=`<tr class="gr"><td colspan="12">${esc(r.group)}</td></tr>`;return}
+    const c=r.noPattern?{}:consist(r);
+    h+=`<tr><td class="l">${esc(r.label)}</td>`;
+    T.forEach((t,ti)=>r.cells[t.k].forEach((cc,i)=>{h+=`<td class="${ti&&i===0?"sep":""}">${cc&&cc.v!=null?f1(cc.v)+(r.unit==="%"?"%":""):"–"}<small>${cc&&cc.n!=null?(cc.won!=null?nf(cc.won)+" / ":"n=")+nf(cc.n):""}</small></td>`}));
+    h+=`<td class="sep">${c.ncaa?c.ncaa.glyph+" "+f1(c.ncaa.range):""}<small>${c.ncaa?c.ncaa.verdict:""}</small></td><td>${c.conf?c.conf.glyph+" "+f1(c.conf.range):""}<small>${c.conf?c.conf.verdict:""}</small></td><td>${c.cross?esc(c.cross.txt):""}<small>${c.cross?esc(c.cross.sub):""}</small></td></tr>`;
+  });
+  return h+`</tbody></table></div><p class="cap">Consistency columns: spread = highest − lowest of the four windows (pts). Glyphs: = steady, ▲/▼ step in 2024–26, ~ varies.</p>`;
+}
+
+/* ============================ DATA -> METRIC ROWS ============================ */
+const EDGE=[["1","+1 takedown edge"],["2","+2 takedown edge"],["3","+3 takedown edge"],["4","+4 or more takedown edge"]];
+function s1Rows(b){
+  const r=[];
+  r.push(metric("Wrestler with more takedowns won",d=>{const[w,n]=d["more_td_"+b];return fromCount(w,n)},{id:"head"}));
+  EDGE.forEach(([k,l])=>r.push(metric(l,d=>{const x=d.diff[k][b];return{v:x.pct,won:x.won,n:x.n,lo:x.lo,hi:x.hi}},{id:"e"+k})));
+  return r;
+}
+const s1Fall=()=>metric("Share of upsets won by fall",d=>{let f=0,t=0;for(const k of["1","2","3","4"]){f+=d.upsets[k].fall;t+=d.upsets[k].total}return{v:100*f/t,won:f,n:t}},{noun:"upsets (fewer takedowns, still won)"});
+const s1Upset=b=>metric("Upset rate: fewer takedowns, still won",d=>{const[w,n]=d["more_td_"+b];const c=fromCount(n-w,n);return c},{noun:"bouts with a takedown edge"});
+function s2Rows(b){
+  const S2=(i,label)=>metric(label,d=>{const x=d.scen[i][b];return{v:x.pct,won:x.won,n:x.n,lo:x.lo,hi:x.hi}});
+  return [
+    {group:"Who scores the first takedown"},
+    S2(0,"Scored the first takedown (any time)"),
+    S2(1,"…first takedown in period 1"),
+    S2(2,"…first takedown in period 2 (none in period 1)"),
+    S2(3,"…first takedown in period 3 (none earlier)"),
+    {group:"Nearfall"},
+    S2(5,"Scored nearfall points (any time)"),
+    {group:"Gave up the first takedown"},
+    S2(6,"…then scored the 2nd takedown"),
+    S2(7,"…then scored any later takedown"),
+    S2(8,"…and never scored a takedown"),
+    {group:"How many takedowns a wrestler scored"},
+    S2(11,"Exactly 1 takedown"),
+    S2(9,"Exactly 2 takedowns"),
+    S2(10,"Exactly 3 takedowns"),
+    S2(12,"4 or more takedowns"),
+  ];
+}
+const pctOf=(k)=>d=>({v:100*d.tied_how[k]/d.tied_n,won:d.tied_how[k],n:d.tied_n});
+const COMP=()=>[
+  Object.assign(metric("Decided by points in regulation",pctOf("reg")),{color:"var(--seg-reg)",txt:"#0b0b0b"}),
+  Object.assign(metric("Went to overtime",pctOf("ot")),{color:"var(--seg-ot)",txt:"#fff"}),
+  Object.assign(metric("Fall in regulation",pctOf("fall")),{color:"var(--seg-fall)",txt:"#0b0b0b"}),
+  Object.assign(metric("Forfeit / injury / DQ / no official result",pctOf("other")),{color:"var(--seg-other)",txt:"#0b0b0b"}),
+];
+const tiedShare=()=>metric("Bouts tied on takedowns (% of all bouts)",d=>({v:100*d.tied/d.bouts,won:d.tied,n:d.bouts}));
+const oneShare=()=>metric("Regulation tied bouts decided by exactly 1 point",d=>({v:d.margin.one_pct,won:d.margin.one,n:d.margin.of}),{noun:"regulation tied bouts"});
+const AHEAD=()=>["Escape","Riding time","Nearfall","Reversal","Penalty"].map(c=>metric("Winner ahead in "+c.toLowerCase(),d=>({v:d.ahead[c].pct,won:d.ahead[c].n,n:d.ahead[c].of}),{short:c,noun:"regulation tied bouts"}));
+const EDGES=[["Escape",0,"Escape lead of 1 pt"],["Escape",1,"Escape lead of 2 pts"],["Reversal",1,"Reversal lead of 2 pts"],["Nearfall",2,"Nearfall lead of 3+ pts"],["Penalty",0,"Penalty lead of 1 pt"],["Riding time",0,"Riding-time lead of 1 pt"]];
+const edgeRows=()=>EDGES.map(([c,bi,l])=>metric(l,d=>{const x=d.cat_edge[c]&&d.cat_edge[c][bi];return x&&x.n>0?fromCount(x.won,x.n):null}));
+function otBuckets(d){
+  const b={sv:0,esc:0,fast:0,other:0};
+  d.ot_kinds.forEach(o=>{
+    if(o.kind==="Sudden victory")b.sv+=o.n;
+    else if(o.detail==="scored more tiebreak points (escape)")b.esc+=o.n;
+    else if(o.detail.indexOf("FASTER")>=0)b.fast+=o.n;
+    else b.other+=o.n;
+  });return b;
+}
+const otm=(k,label,color,alpha,txt)=>Object.assign(metric(label,d=>{const b=otBuckets(d);return{v:100*b[k]/d.ot_n,won:b[k],n:d.ot_n}},{noun:"overtime bouts"}),{color,alpha,txt});
+const OTROWS=()=>[
+  otm("sv","Sudden victory (first score wins)","var(--seg-ot)",1,"#fff"),
+  otm("esc","Tiebreak: more escape points","var(--seg-ot)",.76,"#fff"),
+  otm("fast","Tiebreak: both escaped, faster escape won","var(--seg-ot)",.56,"#0b0b0b"),
+  otm("other","Tiebreak: other (riding, reversal, penalty, ride-out)","var(--seg-ot)",.38,"#0b0b0b"),
+];
+
+/* ============================ RENDER ============================ */
+function render(){
+  const b=S.basis;
+  document.body.className="view-"+S.view;
+  $("rampN").innerHTML=[0,1,2,3].map(i=>`<i style="background:${ramp("ncaa",i)}"></i>`).join("");
+  $("rampC").innerHTML=[0,1,2,3].map(i=>`<i style="background:${ramp("conf",i)}"></i>`).join("");
+
+  /* ---- S1 ---- */
+  const r1=s1Rows(b), fall=s1Fall();
+  const panels=[[r1[0],"Wrestler with more takedowns won","Everyone with a takedown edge, any size"],[r1[1],"+1 takedown edge","Ahead by exactly one takedown"],[r1[2],"+2 takedown edge","Ahead by exactly two"],[r1[3],"+3 takedown edge","Ahead by exactly three"],[r1[4],"+4 or more","Ahead by four or more"]];
+  let ph="";
+  panels.forEach(([m,t,sub],i)=>{const c=consist(m);ph+=`<div class="panel"><h4>${t}</h4><div class="pn">${T.map(tt=>badge(tt,c[tt.k])).join("")}</div><div id="s1p${i}"></div></div>`});
+  const cf=consist(fall);
+  ph+=`<div class="panel"><h4>Upsets that were falls</h4><div class="pn">${T.map(tt=>badge(tt,cf[tt.k])).join("")}</div><div id="s1p5"></div></div>`;
+  $("s1-panels").innerHTML=ph;
+  panels.forEach(([m],i)=>linePanel($("s1p"+i),m,[84,100],[85,90,95,100]));
+  linePanel($("s1p5"),fall,[0,45],[0,15,30,45]);
+  $("s1-cap").innerHTML=`Panels 1–5 share one axis (84–100%) so the size of every movement is comparable. The mirror image is the upset rate: a wrestler with fewer takedowns wins ${f1(100-r1[0].cells.ncaa[3].v)}% of NCAA bouts and ${f1(100-r1[0].cells.conf[3].v)}% of conference bouts in 2024–26, versus ${f1(100-r1[0].cells.ncaa[2].v)}% and ${f1(100-r1[0].cells.conf[2].v)}% in 2021–23. The last panel uses a 0–45% axis: it counts upsets (as few as ${Math.min(...fall.cells.ncaa.concat(fall.cells.conf).map(c=>c.n))} in a cell), so it is directional only.`;
+  gapChart($("s1-gap"),r1,{m:6,step:2,aria:"Conference minus NCAA win percentage by takedown edge"});
+  const upsetRow=s1Upset(b);
+  $("s1-table").innerHTML=metricTable(r1.concat([{group:"Upsets"},upsetRow,fall]));
+
+  /* ---- S2 ---- */
+  const r2=s2Rows(b);
+  stripChart($("s2-strip"),r2,{dom:[0,100],ticks:[0,25,50,75,100],ref:50,aria:"Win percentage by scenario across windows, NCAA and conference"});
+  $("s2-cap").innerHTML=`Memo rows not drawn: a first takedown scored in overtime ends a sudden-victory bout, so it wins 98–100% by rule. Cells with fewer than 100 bouts show "thin" in their tooltip (period-3 first takedowns in NCAA 2014–16 is the clearest case).`;
+  gapChart($("s2-gap"),r2,{m:10,step:5,aria:"Conference minus NCAA win percentage by scenario"});
+  $("s2-table").innerHTML=metricTable(r2);
+
+  /* ---- S3 ---- */
+  const ts=tiedShare(), os=oneShare();
+  $("s3-lines").innerHTML=[ts,os].map((m,i)=>{const c=consist(m);return `<div class="panel"><h4>${m.label}</h4><div class="pn">${T.map(tt=>badge(tt,c[tt.k])).join("")}</div><div id="s3l${i}"></div></div>`}).join("");
+  linePanel($("s3l0"),ts,[0,30],[0,10,20,30]);
+  linePanel($("s3l1"),os,[0,60],[0,20,40,60]);
+  const comp=COMP();
+  stackedBars($("s3-comp"),comp.map(r=>({label:r.label,color:r.color,txt:r.txt,cells:r.cells})),{aria:"How bouts tied on takedowns ended",h:300});
+  $("s3-comp-cap").innerHTML=`The grey segment is largest in conference 2017–19 (${f1(get("conf",1).tied_how.other/get("conf",1).tied_n*100)}%) because that window has the lowest share of bouts matched to an official result (${f1(100*get("conf",1).matched/get("conf",1).bouts)}%); unmatched bouts land there.`;
+  const ah=AHEAD();
+  heatmap($("s3-heat"),ah,{dom:[10,65],aria:"Share of tied-takedown regulation bouts in which the winner was ahead in each scoring category"});
+  gapChart($("s3-gap"),[ts,os].concat(comp,ah),{m:15,step:5,lw:290,aria:"Conference minus NCAA share, tied-takedown bouts"});
+  const er=edgeRows();
+  stripChart($("s3-edge"),er,{dom:[40,100],ticks:[40,50,60,70,80,90,100],ref:50,aria:"Win percentage of the wrestler holding a scoring-category edge"});
+  const ot=OTROWS();
+  stackedBars($("s3-ot"),ot.map(r=>({label:r.label,color:r.color,alpha:r.alpha,txt:r.txt,cells:r.cells,noun:"overtime bouts"})),{aria:"How overtime was decided",h:280});
+  $("s3-table").innerHTML=
+    metricTable([{group:"How often tied"},ts,os,{group:"How tied bouts ended (% of tied bouts)"}].concat(comp.map(r=>Object.assign({},r,{noPattern:false})),[{group:"Winner was ahead in… (% of regulation tied bouts decided by points)"}],ah,[{group:"Win % of the wrestler with the edge"}],er,[{group:"How overtime was settled (% of overtime bouts)"}],ot));
+
+  /* ---- S4 ---- */
+  renderS4();
+  renderTakeaways();
+}
+
+function renderS4(){
+  const levels=[["4+","4 or more"],["3","3 wins"],["2","2 wins"],["1","1 win"]];
+  const key=(t,i)=>t+"|"+W[i];
+  const val=(t,i,l)=>{const L=D[key(t,i)].ladder;return l==="4+"?(L["4"]||0):(L[l]||0)};
+  let h=`<table class="ladder" style="min-width:640px"><thead><tr><th class="l" rowspan="2">Reached exactly…</th>`;
+  T.forEach((t,ti)=>h+=`<th colspan="4" class="${ti?"sep":""}">${t.name}</th>`);
+  h+=`</tr><tr>`;T.forEach((t,ti)=>WL.forEach((l,i)=>h+=`<th class="${ti&&i===0?"sep":""}">${l}</th>`));
+  h+=`</tr></thead><tbody>`;
+  const surf=css("--surface");
+  levels.forEach(([l,name])=>{
+    h+=`<tr><td class="l">${name} without a takedown</td>`;
+    T.forEach((t,ti)=>{const mx=Math.max(1,...[0,1,2,3].map(i=>val(t.k,i,l)));
+      [0,1,2,3].forEach(i=>{const v=val(t.k,i,l);const a=v===0?0:.15+.8*(v/mx);const fill=v===0?"transparent":blend(css(t.v),surf,a);
+        h+=`<td class="${ti&&i===0?"sep":""}" style="background:${fill};color:${v===0?"var(--muted)":textOn(fill)}" data-tip="${esc(`<div class='th'>${name} without a takedown</div><div>${t.name} · ${WL[i]}</div><div class='tv'>${v} ${t.k==="ncaa"?"All-Americans":"wrestlers"}</div>`)}" tabindex="0">${v}</td>`});});
+    h+=`</tr>`;
+  });
+  h+=`</tbody></table>`;
+  $("s4-ladder").innerHTML=h;
+  let n=`<table class="names"><thead><tr><th class="l">Wrestler (school)</th><th>Tournament, weight</th><th>Place</th><th>No-TD wins</th><th>Who they beat</th></tr></thead><tbody>`;
+  T.forEach(t=>{[0,1,2,3].forEach(i=>{const d=get(t.k,i);
+    n+=`<tr class="gr"><td colspan="5">${t.name} · ${WL[i]} — ${d.nd_top} wins is the maximum${d.nd_rows.length>8?`; ${d.nd_rows.length} All-Americans tied at ${d.nd_top} (list omitted)`:""}</td></tr>`;
+    if(d.nd_rows.length<=8) d.nd_rows.forEach(r=>{n+=`<tr><td class="l">${esc(r.name)}</td><td>${esc(r.where)}</td><td>${esc(r.place||"—")}</td><td>${esc(r.wins)}</td><td>${esc(r.beat)}</td></tr>`});
+  })});
+  n+=`</tbody></table>`;$("s4-names").innerHTML=n;
+}
+
+function renderTakeaways(){
+  const P=(m,t,i)=>m.cells[t][i].v;
+  const all=(m)=>T.flatMap(t=>m.cells[t.k].map(c=>c.v));
+  const rng=(m,tk)=>{const v=(tk?m.cells[tk]:null)?m.cells[tk].map(c=>c.v):all(m);return[Math.min(...v),Math.max(...v)]};
+  const nRange=(m)=>{const v=T.flatMap(t=>m.cells[t.k].map(c=>c.n));return[Math.min(...v),Math.max(...v)]};
+  const sg=x=>(x>=0?"+":"")+f1(x);
+  /* section 1 */
+  const r1=s1Rows(S.basis), e1=r1[1], c1=consist(e1);
+  const big=[2,3,4].flatMap(k=>all(r1[k]));
+  const pre1=T.flatMap(t=>[0,1,2].map(i=>P(e1,t.k,i)));
+  $("s1-take").innerHTML=`
+   <div class="t"><b>What holds</b>A lead of two or more takedowns wins at least ${Math.floor(Math.min(...big))}% of the time in every window and in both tournament types. The +3 and +4 lines sit against the ceiling.</div>
+   <div class="t"><b>What moved</b>The one-takedown edge. The six cells before 2024 sit between ${f1(Math.min(...pre1))}% and ${f1(Math.max(...pre1))}%; in 2024–26 it is ${f1(P(e1,"ncaa",3))}% at the NCAAs and ${f1(P(e1,"conf",3))}% in conference tournaments. Both types stepped up in the same window, by similar amounts (${sg(c1.ncaa.shift)} and ${sg(c1.conf.shift)} pts vs. their earlier average).</div>
+   <div class="t"><b>NCAA vs conference</b>At +1 the gap changes sign from window to window (${c1.cross.gaps.map(sg).join(", ")} pts, conf minus NCAA), so neither type systematically rewards a takedown edge more. Falls make up a growing share of the few upsets that remain, in both types.</div>`;
+  /* section 2 */
+  const r2=s2Rows(S.basis).filter(r=>!r.group);
+  const by=l=>r2.find(r=>r.label.startsWith(l));
+  const first=by("Scored the first"), p1=by("…first takedown in period 1"), p2=by("…first takedown in period 2"), p3=by("…first takedown in period 3"),
+        gave=by("…then scored any later"), nfm=by("Scored nearfall"), never=by("…and never");
+  let p2gt=0,p3gt=0;T.forEach(t=>[0,1,2,3].forEach(i=>{if(P(p2,t.k,i)>P(p1,t.k,i))p2gt++;if(P(p3,t.k,i)>P(p2,t.k,i))p3gt++}));
+  const cf=consist(first).cross, cg=consist(gave).cross, cp1=consist(p1).cross, c3=consist(p3);
+  const n3=nRange(p3);
+  $("s2-take").innerHTML=`
+   <div class="t"><b>What holds</b>The shape of the table repeats. Waiting longer to score first is worth more: a period-2 first takedown beats period 1 in ${p2gt} of 8 cells and period 3 beats period 2 in ${p3gt} of 8. Nearfall scorers win ${f0(rng(nfm)[0])}–${f0(rng(nfm)[1])}% everywhere; a wrestler who gives up the first takedown and never scores wins only ${f1(rng(never)[0])}–${f1(rng(never)[1])}%.</div>
+   <div class="t"><b>NCAA vs conference</b>The gap keeps its sign. Scoring first is worth more in conference tournaments than at the NCAAs (${cf.txt.toLowerCase()}, ${cf.sub}; average ${sg(cf.mean)} pts conf minus NCAA). After giving up the first takedown and scoring a later one, the NCAA wrestler does better (${cg.txt}, ${cg.sub}). One reading is that NCAA fields are more evenly matched; this data can't test that.</div>
+   <div class="t"><b>What moved</b>Scoring first is worth more in 2024–26 in both types (${sg(consist(first).ncaa.shift)} NCAA, ${sg(consist(first).conf.shift)} conf vs. earlier windows). The noisiest row is a period-3 first takedown (NCAA ${[0,1,2,3].map(i=>f1(P(p3,"ncaa",i))).join(" → ")}), with ${nf(n3[0])}–${nf(n3[1])} bouts per cell.</div>`;
+  /* section 3 */
+  const comp=COMP(), ah=AHEAD();
+  const esc_=rng(ah[0]), oc=comp[1].cells.conf, on=comp[1].cells.ncaa.map(c=>c.v);
+  const escCells=T.flatMap(t=>[0,1,2,3].map(i=>P(ah[0],t.k,i))).filter(v=>v>=55);
+  $("s3-take").innerHTML=`
+   <div class="t"><b>What holds</b>The mix. In every window about ${f0(Math.min(...comp[0].cells.ncaa.map(c=>c.v)))}–${f0(Math.max(...comp[0].cells.ncaa.map(c=>c.v)))}% of NCAA tied bouts end on points in regulation, ${f0(Math.min(...on))}–${f0(Math.max(...on))}% go to overtime and ${f0(Math.min(...comp[2].cells.ncaa.map(c=>c.v)))}–${f0(Math.max(...comp[2].cells.ncaa.map(c=>c.v)))}% end in a fall. Escape is the category the winner most often led (${escCells.length} of 8 cells at ${f0(Math.min(...escCells))}–${f0(Math.max(...escCells))}%), riding time next (about half).</div>
+   <div class="t"><b>What moved</b>Nearfall leads fell after 2019 in both types (NCAA ${f0(P(ah[2],"ncaa",1))}% → ${f0(P(ah[2],"ncaa",2))}%, conference ${f0(P(ah[2],"conf",1))}% → ${f0(P(ah[2],"conf",2))}%). Riding-time leads declined in conference bouts (${f0(P(ah[1],"conf",0))}% → ${f0(P(ah[1],"conf",3))}%) but not at the NCAAs. NCAA 2014–16 is the outlier for escapes (${f0(P(ah[0],"ncaa",0))}%).</div>
+   <div class="t"><b>NCAA vs conference</b>Overtime is rarer in conference tournaments in all four windows (${f0(oc[0].v)}% → ${f0(oc[3].v)}% vs. a steady ${f0(Math.min(...on))}–${f0(Math.max(...on))}% at the NCAAs), closing over time. The 2017–19 spike in penalty leads (${f0(P(ah[4],"ncaa",1))}% NCAA, ${f0(P(ah[4],"conf",1))}% conf) appears in both types at once.</div>`;
+  /* section 4 */
+  const L=(t,i)=>get(t,i).ladder;
+  $("s4-take").innerHTML=`
+   <div class="t"><b>What holds</b>The ceiling. No wrestler in any window, in either tournament type, won four bouts in one tournament without a takedown. Three is the most, and it is rare: ${T.map(t=>`${t.short} ${[0,1,2,3].map(i=>L(t.k,i)["3"]||0).join(" / ")}`).join("; ")} wrestlers per window (oldest to newest).</div>
+   <div class="t"><b>What moved</b>NCAA 2021–23 topped out at two (${L("ncaa",2)["2"]} All-Americans tied there, none at three). Pins count as no-takedown wins, so one win by fall can push a wrestler to three.</div>
+   <div class="t"><b>NCAA vs conference</b>The populations differ. NCAA rows count top-eight finishers only (${get("ncaa",3).aa_pop} All-American seasons in 2024–26); conference rows count every wrestler in six tournaments. Raw counts are not comparable, but the ceiling is.</div>`;
+}
+
+/* ---------- glance + scope + notes (static composition from data) ---------- */
+function buildStatic(){
+  const r1=s1Rows("all"), r2=s2Rows("all").filter(r=>!r.group);
+  const P=(m,t,i)=>m.cells[t][i].v;
+  const e1=r1[1];
+  const pre1=T.flatMap(t=>[0,1,2].map(i=>P(e1,t.k,i))), big=[2,3,4].flatMap(k=>T.flatMap(t=>r1[k].cells[t.k].map(c=>c.v)));
+  const fs=consist(r2[0]);
+  $("glance").innerHTML=`
+   <div class="g"><b class="k">1 · Takedown differential</b><div class="big">Steady, with one step</div><p>A lead of 2+ takedowns wins at least ${Math.floor(Math.min(...big))}% everywhere. The +1 edge sat at ${f0(Math.min(...pre1))}–${f0(Math.max(...pre1))}% until 2024–26, then jumped to ${f0(P(e1,"ncaa",3))}% (NCAA) and ${f0(P(e1,"conf",3))}% (conf) together.</p></div>
+   <div class="g"><b class="k">2 · Scenarios</b><div class="big">Same shape, steady tournament gap</div><p>Scoring first is worth ${f1(Math.min(...fs.cross.gaps.map(Math.abs)))}–${f1(Math.max(...fs.cross.gaps.map(Math.abs)))} more points in conference tournaments than at the NCAAs, in all four windows. Both types moved up in 2024–26.</p></div>
+   <div class="g"><b class="k">3 · Tied on takedowns</b><div class="big">Same mix, shifting details</div><p>Roughly 1 bout in 6. About three-quarters end on points in regulation, led by escapes. Nearfall leads shrank after 2019 in both types.</p></div>
+   <div class="g"><b class="k">4 · No-takedown wins</b><div class="big">A hard ceiling at three</div><p>Never four, in any window or tournament type. Three is reached by 0–5 wrestlers per window.</p></div>`;
+  let sc=`<h3 style="margin-top:0">What is in each window</h3><div style="overflow-x:auto"><table class="scope"><thead><tr><th class="l">Window</th><th>NCAA seasons</th><th>NCAA bouts</th><th>Conference seasons</th><th>Conference bouts</th><th>Matched to official result</th></tr></thead><tbody>`;
+  W.forEach((w,i)=>{const a=get("ncaa",i),c=get("conf",i);sc+=`<tr><td class="l">${WL[i]}${i===0?" (2015–16 only)":""}</td><td>${a.seasons.join(", ")}</td><td>${nf(a.bouts)}</td><td>${c.seasons.join(", ")}</td><td>${nf(c.bouts)}</td><td>${f1(100*c.matched/c.bouts)}%</td></tr>`});
+  sc+=`</tbody></table></div><p class="cap">Bouts = bouts with play-by-play. 2020 had no tournament. 2024–26 is the 3-point-takedown era (the play-by-play logs takedowns as “Takedown 3” from 2024). Only one window falls in that era, so the data can’t separate a scoring effect from anything else that changed at the same time.</p>`;
+  $("scopecard").innerHTML=sc;
+  $("notes").innerHTML=`
+   <li>Sources: NCAA play-by-play and official results (<code>data/{year}/ncaa-tourney</code>); conference play-by-play (<code>{conf}-tourney/bout_detail</code>) joined to official results extracted from the team scrapes. Eight text reports in <code>data/analysis/</code> hold the same numbers; this page was parsed from them.</li>
+   <li>“Decided by points” excludes falls, forfeits, injury defaults, DQs and bouts with no official result. “All bouts” includes everything with play-by-play; in conference data, unmatched bouts count only there.</li>
+   <li>${[0,1,2,3].map(i=>get("conf",i).swapped).reduce((a,b)=>a+b,0)+[0,1,2,3].map(i=>get("ncaa",i).swapped).reduce((a,b)=>a+b,0)} bouts had sides swapped in the source (winner’s events and score logged under the loser); they were detected against the official score and corrected.</li>
+   <li>EIWA is not included (no play-by-play). 2014–16 is really 2015–16. Conference tournaments 2015 onward, where the source has them.</li>
+   <li>Small-sample cells (n &lt; 100) are flagged “thin” in tooltips; single-digit differences between individual cells are often inside the 95% interval.</li>`;
+}
+
+/* ---------- controls ---------- */
+function bindSeg(id,key,after){const box=$(id);box.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;S[key]=b.dataset.v;[...box.children].forEach(x=>x.setAttribute("aria-pressed",x===b));after()})}
+function applyTheme(){const r=document.documentElement;if(S.theme==="auto")r.removeAttribute("data-theme");else r.setAttribute("data-theme",S.theme)}
+bindSeg("f-basis","basis",render);
+bindSeg("f-view","view",render);
+bindSeg("f-theme","theme",()=>{applyTheme();render()});
+let rt;const rerender=()=>{clearTimeout(rt);rt=setTimeout(render,120)};
+window.addEventListener("resize",rerender);
+matchMedia("(prefers-color-scheme: dark)").addEventListener&&matchMedia("(prefers-color-scheme: dark)").addEventListener("change",rerender);
+buildStatic();render();
+</script>
+</body>
+</html>

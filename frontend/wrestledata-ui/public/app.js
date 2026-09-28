@@ -641,9 +641,45 @@ async function renderSeasonSelector(data) {
 // Season body: DPG card, box score, skill, trajectory, match history
 // ===============================
 
+// A wrestler with zero matches in the selected season (hasn't debuted yet,
+// redshirting, injured, etc.) has nothing real to show in the DPG card,
+// trajectory chart, skill profile, or match list -- rendering all four as
+// separate "not available"/all-zero boxes reads as broken. Show one plain
+// message where that whole cluster would go instead. Distinguishes an
+// ongoing season (wrestler just hasn't wrestled *yet*) from a past,
+// already-completed one (didn't compete at all that season) using
+// _knownSeasonsCache[0], the most recent season in available_seasons.json
+// -- already populated by the time this runs, since loadWrestlerProfile
+// awaits getKnownSeasons() before the first render.
 function renderSeasonBody(data) {
   const season = safe(data.year);
   const mv = (data.metrics || {}).mat_value || {};
+  const hasMatches = Array.isArray(data.match_list) && data.match_list.length > 0;
+
+  const emptyEl = document.getElementById("season-empty-state");
+  const grid = document.getElementById("profile-summary-grid");
+  const matchHistorySection = document.getElementById("match-history-section");
+  const dpgStrip = document.getElementById("wp2m-dpg-strip");
+
+  if (!hasMatches) {
+    const isCurrentSeason = _knownSeasonsCache && _knownSeasonsCache[0] === String(season);
+    if (emptyEl) {
+      emptyEl.hidden = false;
+      emptyEl.innerHTML = `<p class="section-empty-state">${
+        isCurrentSeason ? "No matches recorded yet this season." : "Did not compete this season."
+      }</p>`;
+    }
+    if (dpgStrip) { dpgStrip.innerHTML = ""; dpgStrip.hidden = true; }
+    if (grid) grid.hidden = true;
+    if (matchHistorySection) matchHistorySection.hidden = true;
+    return;
+  }
+
+  if (emptyEl) emptyEl.hidden = true;
+  if (dpgStrip) dpgStrip.hidden = false;
+  if (grid) grid.hidden = false;
+  if (matchHistorySection) matchHistorySection.hidden = false;
+
   renderDpgCard(data, mv, season);
   renderMobileDpgStrip(data, mv, season);
   renderBoxScoreCard(data);

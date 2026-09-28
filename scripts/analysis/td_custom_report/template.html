@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Takedown Report</title>
+<style>
+:root{
+  color-scheme: light;
+  --surface:#fcfcfb; --page:#f9f9f7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+  --grid:#e1e0d9; --axis:#c3c2b7; --border:rgba(11,11,11,.10); --wash:rgba(11,11,11,.045);
+  --ncaa:#2a78d6; --conf:#eb6834; --pool:#4a3aa7; --pool-soft:#dedaf3;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --surface:#1a1a19; --page:#0d0d0d; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781;
+    --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10); --wash:rgba(255,255,255,.06);
+    --ncaa:#3987e5; --conf:#d95926; --pool:#9085e9; --pool-soft:#33305a;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --surface:#1a1a19; --page:#0d0d0d; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781;
+  --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10); --wash:rgba(255,255,255,.06);
+  --ncaa:#3987e5; --conf:#d95926; --pool:#9085e9; --pool-soft:#33305a;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:1000px;margin:0 auto;padding:0 16px 80px}
+header.top{padding:32px 0 6px}
+h1{font-size:28px;line-height:1.2;margin:0 0 6px;letter-spacing:-.01em}
+h2{font-size:21px;line-height:1.25;margin:0 0 4px}
+h3{font-size:15px;margin:20px 0 6px}
+p{margin:6px 0}
+.sub{color:var(--ink2);max-width:72ch}
+.muted{color:var(--muted)}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin:12px 0}
+section.sec{margin-top:44px}
+.num{display:inline-block;min-width:26px;height:26px;padding:0 6px;line-height:26px;text-align:center;font-size:13px;font-weight:700;color:var(--surface);background:var(--ink);border-radius:13px;margin-right:8px;vertical-align:2px}
+.bar{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);margin-top:12px}
+.fg{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--ink2)}
+.seg{display:inline-flex;border:1px solid var(--border);border-radius:8px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:13px;border:0;background:transparent;color:var(--ink2);padding:6px 12px;cursor:pointer}
+.seg button+button{border-left:1px solid var(--border)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--surface);font-weight:600}
+.seg button:focus-visible{outline:2px solid var(--ncaa);outline-offset:-2px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--ink2);align-items:center}
+.legend .it{display:inline-flex;align-items:center;gap:6px}
+.sw{width:12px;height:12px;border-radius:3px;display:inline-block}
+svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{font-family:inherit;fill:var(--ink2);font-size:11px}
+svg text.tk{fill:var(--muted)}
+svg text.ink{fill:var(--ink)}
+svg .hit{cursor:default}
+svg .b:hover,svg .b:focus{stroke:var(--ink);stroke-width:2;outline:none}
+.cap{font-size:12.5px;color:var(--ink2);margin:8px 2px 0}
+.panels{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.panel{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px 12px 6px}
+.panel h4{margin:0 0 2px;font-size:14px}
+.panel .pn{font-size:12px;color:var(--ink2);margin-bottom:4px}
+details.tw{margin-top:8px}
+details.tw summary{cursor:pointer;font-size:13px;color:var(--ink2)}
+.tabwrap{overflow-x:auto;background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-top:8px}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:7px 9px;text-align:right;border-bottom:1px solid var(--border);white-space:nowrap;vertical-align:top}
+th{font-weight:600;color:var(--ink2)}
+td.l,th.l{text-align:left;white-space:normal}
+td small{display:block;color:var(--muted);font-size:11px}
+tr:last-child td{border-bottom:0}
+/* infographic */
+.info{display:grid;grid-template-columns:minmax(0,640px);gap:14px;margin-top:10px}
+.ig{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:22px 22px 18px;display:grid;grid-template-columns:1fr auto;gap:8px 22px;align-items:center}
+.ig .kicker{grid-column:1/-1;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2)}
+.ig .big{font-size:64px;line-height:1;font-weight:750;letter-spacing:-.03em;color:var(--ink)}
+.ig .big small{font-size:34px;font-weight:700;letter-spacing:0}
+.ig .say{font-size:16px;line-height:1.45;margin-top:10px;color:var(--ink)}
+.ig .say b{font-weight:700}
+.ig .foot{grid-column:1/-1;font-size:12.5px;color:var(--ink2);border-top:1px solid var(--border);padding-top:10px;margin-top:4px}
+.waffle{display:grid;grid-template-columns:repeat(10,13px);gap:3px}
+.waffle i{width:13px;height:13px;border-radius:3px;background:var(--pool-soft);display:block}
+.waffle i.on{background:var(--pool)}
+@media (max-width:560px){.ig{grid-template-columns:1fr}.ig .big{font-size:52px}.waffle{justify-self:start}}
+/* tables for lists */
+.list td.l b{font-weight:650}
+.list .beat{white-space:normal;text-align:left;min-width:220px;line-height:1.35}
+.list .beat div{margin:1px 0}
+.place{font-weight:650}
+.mini{display:inline-flex;height:14px;border-radius:3px;overflow:hidden;vertical-align:middle;gap:2px}
+.mini i{display:block;height:100%}
+.btn{font:inherit;font-size:12.5px;border:1px solid var(--border);background:var(--surface);color:var(--ink2);border-radius:6px;padding:2px 8px;cursor:pointer}
+.btn:focus-visible{outline:2px solid var(--ncaa)}
+tr.exp td{background:var(--wash);white-space:normal;text-align:left}
+.tt{position:fixed;z-index:50;pointer-events:none;background:var(--ink);color:var(--surface);border-radius:8px;padding:8px 10px;font-size:12.5px;line-height:1.35;max-width:280px;box-shadow:0 4px 18px rgba(0,0,0,.25);opacity:0;transition:opacity .08s}
+.tt .th{font-weight:650;margin-bottom:2px}.tt .tv{font-size:17px;font-weight:700}.tt .m{opacity:.7}
+.foot2{font-size:13px;color:var(--ink2)}
+.foot2 li{margin:4px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <h1>Takedowns and winning: a custom report</h1>
+  <p class="sub">NCAA Championships plus six conference tournaments (Big Ten, Big 12, ACC, MAC, Pac-12, SoCon), 2015–2026. Every number is computed from play-by-play, bout by bout.</p>
+</header>
+<div class="bar">
+  <div class="fg"><span>Theme</span><div class="seg" id="f-theme"><button data-v="auto" aria-pressed="true">Auto</button><button data-v="light" aria-pressed="false">Light</button><button data-v="dark" aria-pressed="false">Dark</button></div></div>
+  <div class="legend"><span class="it"><span class="sw" style="background:var(--ncaa)"></span>NCAA Championships</span><span class="it"><span class="sw" style="background:var(--conf)"></span>Conference tournaments</span><span class="it"><span class="sw" style="background:var(--pool)"></span>Both combined</span></div>
+</div>
+
+<section class="sec" id="s1">
+  <h2><span class="num">1</span>How often is there a takedown differential?</h2>
+  <p class="sub">Share of matches in which the two wrestlers did <b>not</b> finish level on takedowns. The rest (0–0 or equal takedowns) are decided by escapes, riding time, nearfall and the like.</p>
+  <div class="card" style="padding:12px 8px 8px"><div id="c1"></div></div>
+  <p class="cap" id="c1cap"></p>
+  <details class="tw"><summary>Show as table</summary><div id="t1"></div></details>
+</section>
+
+<section class="sec" id="s2">
+  <h2><span class="num">2</span>Does winning the takedown battle win the match?</h2>
+  <div class="info" id="info2"></div>
+</section>
+
+<section class="sec" id="s3">
+  <h2><span class="num">3</span>Same question, matches that ended on points only</h2>
+  <div class="info" id="info3"></div>
+  <details class="tw"><summary>Show the numbers for 2 and 3 by window and tournament type</summary><div id="t23"></div></details>
+</section>
+
+<section class="sec" id="s3b">
+  <h2><span class="num">3b</span>When the wrestler behind on takedowns wins by pin</h2>
+  <p class="sub">The other side of parts 2 and 3: how often did the wrestler who lost the takedown battle turn the match around with a pin?</p>
+  <div class="info" id="info3b"></div>
+  <div class="panels" id="c3b" style="margin-top:14px"></div>
+  <p class="cap" id="c3bcap"></p>
+  <details class="tw"><summary>Show as table (with NCAA and conference split)</summary><div id="t3b"></div></details>
+</section>
+
+<section class="sec" id="s3c">
+  <h2><span class="num">3c</span>Among matches that ended in a pin: how often was the pinner behind on takedowns?</h2>
+  <p class="sub">The same pins as 3b, but with a different base: 3b divides by all matches with a takedown edge; this divides by only the matches that ended in a pin.</p>
+  <div class="info" id="info3c"></div>
+  <div class="panels" id="c3c" style="margin-top:14px"></div>
+  <p class="cap" id="c3ccap"></p>
+  <details class="tw"><summary>Show as table (with NCAA and conference split)</summary><div id="t3c"></div></details>
+</section>
+
+<section class="sec" id="s3d">
+  <h2><span class="num">3d</span>Pins by seed gap: is it the takedowns or the better wrestler?</h2>
+  <p class="sub">NCAA Championships only (conference results carry no seeds). Matches with a takedown differential that ended in a pin, both wrestlers seeded. <b>Seed gap</b> = the seed of the wrestler behind on takedowns minus the seed of the wrestler ahead: <b>+32</b> means the 1 seed led on takedowns against the 33 seed; <b>−32</b> means the 33 seed led against the 1 seed. Bars show how often the <b>takedown leader</b> got the pin, in buckets sized so each holds a similar number of pins.</p>
+  <div class="card" style="padding:12px 8px 8px"><div id="c3d"></div></div>
+  <p class="cap" id="c3dcap"></p>
+  <details class="tw"><summary>Show as table</summary><div id="t3d"></div></details>
+</section>
+
+<section class="sec" id="s4">
+  <h2><span class="num">4</span>Win % by size of the takedown edge</h2>
+  <p class="sub">The wrestler with the takedown edge, by how big the edge was, for each time window. NCAA and conference matches combined.</p>
+  <div class="bar" style="border:0;padding-top:0"><div class="fg"><span>Matches</span><div class="seg" id="f-basis"><button data-v="all" aria-pressed="true">All matches</button><button data-v="pts" aria-pressed="false">Ended on points only</button></div></div></div>
+  <div class="panels" id="c4"></div>
+  <p class="cap">Bars start at zero on a shared 0–100% axis so heights compare across panels. The label under each window is the number of matches with that edge.</p>
+  <details class="tw"><summary>Show as table (with NCAA and conference split)</summary><div id="t4"></div></details>
+</section>
+
+<section class="sec" id="s5">
+  <h2><span class="num">5</span>All-Americans with the most wins in one tournament without a takedown</h2>
+  <p class="sub" id="s5sub"></p>
+  <div class="tabwrap"><div id="t5"></div></div>
+  <p class="cap" id="s5cap"></p>
+</section>
+
+<section class="sec" id="s6">
+  <h2><span class="num">6</span>Most wins without a takedown, all-time</h2>
+  <p class="sub">Every win at the NCAA Championships and the six conference tournaments (2015–2026) in which the winner scored not one takedown, added up across each wrestler's seasons. Pins count. Forfeits, injury defaults and DQs do not.</p>
+  <div class="bar" style="border:0;padding-top:4px"><div class="fg"><span>Count</span><div class="seg" id="f-scope"><button data-v="both" aria-pressed="true">NCAA + conference</button><button data-v="ncaa" aria-pressed="false">NCAA only</button></div></div></div>
+  <div class="tabwrap"><div id="t6"></div></div>
+  <p class="cap" id="s6cap"></p>
+</section>
+
+<section class="sec">
+  <h2>Definitions and caveats</h2>
+  <ul class="foot2" id="notes"></ul>
+</section>
+</div>
+<div class="tt" id="tt" role="tooltip"></div>
+
+<script>
+const D=/*DATA*/;
+const WL=D.windows;
+const T=[{k:"ncaa",name:"NCAA Championships",short:"NCAA",v:"--ncaa"},{k:"conf",name:"Conference tournaments",short:"Conference",v:"--conf"}];
+const S={basis:"all",scope:"both",theme:"auto"};
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const f1=v=>v.toFixed(1), nf=n=>n.toLocaleString("en-US");
+const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const ww=h=>Math.max(280,Math.floor(h.clientWidth||h.parentNode.clientWidth||600));
+function wilson(w,n,z=1.96){const p=w/n,d=1+z*z/n,c=p+z*z/(2*n),a=z*Math.sqrt(p*(1-p)/n+z*z/(4*n*n));return[100*(c-a)/d,100*(c+a)/d]}
+
+/* tooltip */
+const tt=$("tt");
+function showTip(h,x,y){tt.innerHTML=h;tt.style.opacity=1;const r=tt.getBoundingClientRect();let L=x+14,Tp=y+14;if(L+r.width>innerWidth-8)L=x-r.width-14;if(L<8)L=8;if(Tp+r.height>innerHeight-8)Tp=y-r.height-14;if(Tp<8)Tp=8;tt.style.left=L+"px";tt.style.top=Tp+"px"}
+document.addEventListener("pointermove",e=>{const el=e.target.closest&&e.target.closest("[data-tip]");if(el)showTip(el.getAttribute("data-tip"),e.clientX,e.clientY);else tt.style.opacity=0});
+document.addEventListener("focusin",e=>{const el=e.target.closest&&e.target.closest("[data-tip]");if(el){const r=el.getBoundingClientRect();showTip(el.getAttribute("data-tip"),r.left+r.width/2,r.top)}});
+document.addEventListener("focusout",()=>tt.style.opacity=0);
+document.addEventListener("scroll",()=>tt.style.opacity=0,{passive:true});
+
+/* bar with only its top corners rounded, anchored to the baseline */
+function barPath(x,y,w,h,r){r=Math.min(r,h,w/2);return `M${x},${y+h}V${y+r}a${r},${r} 0 0 1 ${r},${-r}H${x+w-r}a${r},${r} 0 0 1 ${r},${r}V${y+h}Z`}
+
+/* one series of bars over the four windows. opt: max (axis top, default 100), H, maxBw, ci (95% Wilson in tip), unit */
+function singleBars(host,items,aria,opt={}){
+  const max=opt.max||100,w=ww(host),H=opt.H||230,ml=opt.max&&opt.max<10?36:(opt.ml||32),mr=4,mt=22,mb=44,pw=w-ml-mr,ph=H-mt-mb,gW=pw/items.length,bw=Math.min(opt.maxBw||44,gW*.62),Y=v=>mt+ph*(1-v/max);
+  const ticks=max===100?[0,50,100]:[0,max/2,max];
+  const narrow=w<420&&opt.dec!==0;
+  let s=`<svg viewBox="0 0 ${w} ${H}" role="img" aria-label="${esc(aria)}">`;
+  ticks.forEach(t=>s+=`<line x1="${ml}" x2="${w-mr}" y1="${Y(t)}" y2="${Y(t)}" stroke="var(--grid)"/><text class="tk" x="${ml-5}" y="${Y(t)+4}" text-anchor="end">${t}${max===100?"":"%"}</text>`);
+  items.forEach((c,i)=>{
+    const cx=ml+gW*(i+.5),x=cx-bw/2,y=Y(c.v),h=Math.max(1,Y(0)-y);
+    const [lo,hi]=wilson(c.won,c.n);
+    const tip=`<div class="th">${esc(c.title)} · ${c.label}</div><div class="tv">${c.v.toFixed(opt.dp==null?1:opt.dp)}%</div><div>${nf(c.won)} of ${nf(c.n)} ${opt.noun||"matches"}</div>${c.extra||""}${opt.ci===false?"":`<div class="m">95% CI ${f1(lo)}–${f1(hi)}</div>`}`;
+    s+=`<path class="b" d="${barPath(x,y,bw,h,4)}" fill="var(--pool)" tabindex="0" data-tip="${esc(tip)}" aria-label="${esc(c.title+" "+c.label+": "+c.v.toFixed(opt.dp==null?1:opt.dp)+"%")}"/>`;
+    s+=`<text class="ink" font-weight="650" x="${cx}" y="${y-6}" text-anchor="middle">${c.v.toFixed(opt.dp==null?1:opt.dp)}${opt.pct?"%":""}</text><text class="tk" x="${cx}" y="${H-24}" text-anchor="middle">${c.label}</text><text class="tk" x="${cx}" y="${H-10}" text-anchor="middle">n=${nf(c.n)}</text>`;
+  });
+  host.innerHTML=s+`</svg>`;
+}
+function tbl(head,rows,cls){return `<table class="${cls||""}"><thead><tr>${head.map((h,i)=>`<th class="${i?"":"l"}">${h}</th>`).join("")}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map((c,i)=>`<td class="${i?"":"l"}">${c}</td>`).join("")}</tr>`).join("")}</tbody></table>`}
+const cellOf=(w)=>D.cells[w];
+
+/* ---------------- section 1 ---------------- */
+function s1(){
+  const items=WL.map(w=>{const c=cellOf(w);const n=c.ncaa.bouts+c.conf.bouts,e=c.ncaa.edge_n+c.conf.edge_n;
+    const line=(t,x)=>`<div class="m">${t}: ${nf(x.edge_n)} of ${nf(x.bouts)} (${f1(100*x.edge_n/x.bouts)}%)</div>`;
+    return{label:w,title:"NCAA + conference",n,won:e,v:100*e/n,extra:line("NCAA",c.ncaa)+line("Conference",c.conf)}});
+  singleBars($("c1"),items,"Share of matches with a takedown differential, NCAA and conference combined, by window",{H:320,maxBw:96,ml:40,ci:false,pct:true});
+  const v=items.map(i=>i.v);
+  $("c1cap").innerHTML=`NCAA Championships and conference tournaments combined. Between ${f1(Math.min(...v))}% and ${f1(Math.max(...v))}% of matches had a differential in every window: ${v.map(f1).join("% → ")}%. The label under each bar is the number of matches.`;
+  $("t1").innerHTML=`<div class="tabwrap">`+tbl(["Window","NCAA matches","NCAA with differential","NCAA %","Conf matches","Conf with differential","Conf %","Combined %"],
+    WL.map((w,i)=>{const c=cellOf(w),a=c.ncaa,b=c.conf;return[w,nf(a.bouts),nf(a.edge_n),f1(100*a.edge_n/a.bouts)+"%",nf(b.bouts),nf(b.edge_n),f1(100*b.edge_n/b.bouts)+"%",f1(items[i].v)+"%"]}))+`</div>`;
+}
+
+/* ---------------- sections 2 & 3: infographics ---------------- */
+function totals(){
+  let en=0,ew=0,pn=0,pw=0,bouts=0;
+  WL.forEach(w=>T.forEach(t=>{const c=cellOf(w)[t.k];en+=c.edge_n;ew+=c.edge_won;pn+=c.pts_n;pw+=c.pts_won;bouts+=c.bouts}));
+  return{en,ew,pn,pw,bouts};
+}
+function info(){
+  const t=totals(); const ep=100*t.ew/t.en, pp=100*t.pw/t.pn;
+  const waffle=p=>{const on=Math.round(p);let h="";for(let i=0;i<100;i++)h+=`<i class="${i<on?"on":""}"></i>`;return `<div class="waffle" role="img" aria-label="${on} of 100 squares filled">${h}</div>`};
+  const card=(k,n,p,say,foot)=>`<div class="ig"><div class="kicker">${k}</div><div><div class="big">${f1(p)}<small>%</small></div><div class="say">${say}</div></div>${waffle(p)}<div class="foot">${foot}</div></div>`;
+  $("info2").innerHTML=
+   card("Any match with a takedown edge",t.en,ep,`In <b>${nf(t.en)}</b> matches where one wrestler scored more takedowns than the other, the wrestler who won the takedown battle won the match <b>${f1(ep)}%</b> of the time.`,
+     `All NCAA Championships and conference-tournament matches, 2015–2026, with a takedown differential of 1 or more. Includes pins, injury defaults and DQs. Each square is 1% of matches (rounded).`);
+  $("info3").innerHTML=
+   card("Matches that ended on points",t.pn,pp,`In <b>${nf(t.pn)}</b> matches that ended on points, the wrestler who won the takedown battle won <b>${f1(pp)}%</b> of the time.`,
+     `Same matches, but only those decided by decision, major decision, tech fall, tiebreaker or sudden victory. Pins, forfeits, injury defaults, DQs and bouts with no official result are removed. Each square is 1% of matches (rounded).`);
+  const rows=WL.map(w=>{const c=cellOf(w);const a=c.ncaa,b=c.conf;
+    return[w,`${nf(a.edge_won)} / ${nf(a.edge_n)} (${f1(100*a.edge_won/a.edge_n)}%)`,`${nf(b.edge_won)} / ${nf(b.edge_n)} (${f1(100*b.edge_won/b.edge_n)}%)`,`${nf(a.pts_won)} / ${nf(a.pts_n)} (${f1(100*a.pts_won/a.pts_n)}%)`,`${nf(b.pts_won)} / ${nf(b.pts_n)} (${f1(100*b.pts_won/b.pts_n)}%)`]});
+  rows.push(["All windows",`${nf(T2("edge_won","ncaa"))} / ${nf(T2("edge_n","ncaa"))}`,`${nf(T2("edge_won","conf"))} / ${nf(T2("edge_n","conf"))}`,`${nf(T2("pts_won","ncaa"))} / ${nf(T2("pts_n","ncaa"))}`,`${nf(T2("pts_won","conf"))} / ${nf(T2("pts_n","conf"))}`]);
+  $("t23").innerHTML=`<div class="tabwrap">`+tbl(["Window","NCAA · all matches","Conf · all matches","NCAA · ended on points","Conf · ended on points"],rows)+`</div><p class="cap">Cells are “takedown-battle winner won the match / matches with a takedown edge”.</p>`;
+}
+const T2=(k,t)=>WL.reduce((a,w)=>a+cellOf(w)[t][k],0);
+
+/* ---------------- section 3b: trailing wrestler wins by pin ---------------- */
+function s3b(){
+  let en=0,fu=0,up=0,unk=0;
+  WL.forEach(w=>T.forEach(t=>{const c=cellOf(w)[t.k];en+=c.edge_n;fu+=c.fall_up;up+=c.upsets;unk+=c.up_unknown}));
+  const p=100*fu/en;
+  const on=Math.max(1,Math.round(p));let wf="";for(let i=0;i<100;i++)wf+=`<i class="${i<on?"on":""}"></i>`;
+  $("info3b").innerHTML=`<div class="ig"><div class="kicker">Behind on takedowns, won by pin</div><div><div class="big">${f1(p)}<small>%</small></div><div class="say">In <b>${nf(en)}</b> matches with a takedown edge, the wrestler who trailed on takedowns won by pin <b>${nf(fu)}</b> times, or <b>${f1(p)}%</b> of the time.</div><div class="say" style="font-size:14px;color:var(--ink2)">Pins made up ${Math.round(100*fu/up)}% of all wins by the wrestler behind on takedowns (${nf(up)} in total).</div></div><div class="waffle" role="img" aria-label="${on} of 100 squares filled">${wf}</div><div class="foot">All NCAA Championships and conference-tournament matches, 2015–2026, with a takedown differential of 1 or more. A pin means an official result of Fall, including falls in sudden victory. ${unk} conference matches won by the trailing wrestler have no official result on file, so the true count could be up to ${unk} higher. One square is 1% of matches.</div></div>`;
+  const byW=WL.map(w=>{const c=cellOf(w);const n=c.ncaa.edge_n+c.conf.edge_n,f=c.ncaa.fall_up+c.conf.fall_up;return{label:w,title:"Trailing wrestler won by pin",n,won:f,v:100*f/n,extra:`<div class="m">NCAA: ${c.ncaa.fall_up} of ${nf(c.ncaa.edge_n)}</div><div class="m">Conference: ${c.conf.fall_up} of ${nf(c.conf.edge_n)}</div>`}});
+  const byE=EDGE.map(([k,title])=>{let n=0,f=0;WL.forEach(w=>T.forEach(t=>{const x=cellOf(w)[t.k].by_edge[k].all;n+=x.n;f+=x.fall_up}));return{label:title.replace(" takedown edge","").replace("+4 or more","+4 or more"),title:"Trailing wrestler won by pin, edge "+title,n,won:f,v:100*f/n}});
+  $("c3b").innerHTML=`<div class="panel"><h4>By time window</h4><div class="pn">% of matches with a takedown edge</div><div id="c3b1"></div></div><div class="panel"><h4>By size of the edge</h4><div class="pn">All windows combined</div><div id="c3b2"></div></div>`;
+  singleBars($("c3b1"),byW,"Percent of matches in which the trailing wrestler won by pin, by window",{max:3,H:230,ml:40,pct:true,noun:"matches with a takedown edge",dp:2});
+  singleBars($("c3b2"),byE,"Percent of matches in which the trailing wrestler won by pin, by edge size",{max:3,H:230,ml:40,pct:true,noun:"matches with that edge",dp:2});
+  $("c3bcap").innerHTML=`Axes run 0–3%. A pin is by far most likely when the wrestler is behind by just one takedown (${byE[0].v.toFixed(1)}%) and almost never when the deficit is four or more (${byE[3].won} of ${nf(byE[3].n)}).`;
+  const rows=WL.map(w=>{const c=cellOf(w),a=c.ncaa,b=c.conf;const f=x=>`${x.fall_up} / ${nf(x.edge_n)} (${(100*x.fall_up/x.edge_n).toFixed(2)}%)`;return[w,f(a),f(b),`${a.upsets+b.upsets}`,`${a.fall_up+b.fall_up}`]});
+  $("t3b").innerHTML=`<div class="tabwrap">`+tbl(["Window","NCAA: pins by trailing wrestler / edge matches","Conf: pins by trailing wrestler / edge matches","All wins by trailing wrestler","of which pins"],rows)+`</div>`;
+}
+
+/* ---------------- section 3c: among pins, the pinner was behind on takedowns ---------------- */
+function s3c(){
+  let pins=0,up=0,unk=0,unkUp=0;
+  WL.forEach(w=>T.forEach(t=>{const c=cellOf(w)[t.k];pins+=c.fall_n;up+=c.fall_up;unk+=c.edge_unknown;unkUp+=c.up_unknown}));
+  const p=100*up/pins, lo=100*up/(pins+unk), hi=100*(up+unkUp)/(pins+unkUp);
+  const on=Math.max(1,Math.round(p));let wf="";for(let i=0;i<100;i++)wf+=`<i class="${i<on?"on":""}"></i>`;
+  $("info3c").innerHTML=`<div class="ig"><div class="kicker">Pins won by the wrestler behind on takedowns</div><div><div class="big">${f1(p)}<small>%</small></div><div class="say">Of <b>${nf(pins)}</b> matches that ended in a pin and had a takedown differential, the pinner was the wrestler <b>behind</b> on takedowns <b>${nf(up)}</b> times (<b>${f1(p)}%</b>).</div><div class="say" style="font-size:14px;color:var(--ink2)">About 1 pin in ${Math.round(100/p)} came from the wrestler who lost the takedown battle. In the other ${f1(100-p)}% the pinner had scored more takedowns.</div></div><div class="waffle" role="img" aria-label="${on} of 100 squares filled">${wf}</div><div class="foot">All NCAA Championships and conference-tournament matches, 2015–2026. A pin means an official result of Fall, including falls in sudden victory. ${nf(unk)} conference matches with a takedown edge have no official result, so they can't be classified; counting them the other way, the figure would sit between ${f1(lo)}% and ${f1(hi)}%. One square is 1% of pins.</div></div>`;
+  const byW=WL.map(w=>{const c=cellOf(w);const n=c.ncaa.fall_n+c.conf.fall_n,f=c.ncaa.fall_up+c.conf.fall_up;return{label:w,title:"Pinner was behind on takedowns",n,won:f,v:100*f/n,extra:`<div class="m">NCAA: ${c.ncaa.fall_up} of ${c.ncaa.fall_n} pins</div><div class="m">Conference: ${c.conf.fall_up} of ${c.conf.fall_n} pins</div>`}});
+  const byE=EDGE.map(([k,title])=>{let n=0,f=0;WL.forEach(w=>T.forEach(t=>{const x=cellOf(w)[t.k].by_edge[k].all;n+=x.fall_n;f+=x.fall_up}));return{label:title.replace(" takedown edge",""),title:"Pinner was behind on takedowns, edge "+title,n,won:f,v:100*f/n}});
+  $("c3c").innerHTML=`<div class="panel"><h4>By time window</h4><div class="pn">% of pins won by the wrestler behind</div><div id="c3c1"></div></div><div class="panel"><h4>By size of the takedown gap</h4><div class="pn">All windows combined</div><div id="c3c2"></div></div>`;
+  singleBars($("c3c1"),byW,"Percent of pins won by the wrestler behind on takedowns, by window",{max:20,H:230,ml:42,pct:true,noun:"pins",dp:1});
+  singleBars($("c3c2"),byE,"Percent of pins won by the wrestler behind on takedowns, by gap size",{max:20,H:230,ml:42,pct:true,noun:"pins",dp:1});
+  $("c3ccap").innerHTML=`n under each bar is the number of pins. Axes run 0–20%. When the takedown gap is one, ${byE[0].v.toFixed(0)}% of pins came from the wrestler behind; at a gap of four or more it is ${byE[3].won} of ${nf(byE[3].n)}.`;
+  const rows=WL.map(w=>{const c=cellOf(w),a=c.ncaa,b=c.conf;const f=x=>`${x.fall_up} / ${x.fall_n} (${(100*x.fall_up/x.fall_n).toFixed(1)}%)`;return[w,f(a),f(b),b.edge_unknown]});
+  $("t3c").innerHTML=`<div class="tabwrap">`+tbl(["Window","NCAA: pinner behind / all pins","Conf: pinner behind / all pins","Conf matches with a TD edge and no official result"],rows)+`</div>`;
+}
+
+/* ---------------- section 3d: seed gap vs pins ---------------- */
+function s3d(){
+  const bins=D.seed_bins, fit=D.seed_fit, host=$("c3d");
+  const w=ww(host),H=424,ml=40,mr=8,mt=46,mb=78,pw=w-ml-mr,ph=H-mt-mb,Y=v=>mt+ph*(1-v/100),X=g=>ml+pw*(g+32.5)/65;
+  const sgn=g=>(g>0?"+":g<0?"−":"")+Math.abs(g), rng=b=>`${sgn(b.lo)} to ${sgn(b.hi)}`;
+  let s=`<svg viewBox="0 0 ${w} ${H}" role="img" aria-label="Share of pins won by the takedown leader by seed gap, with a fitted curve">`;
+  [0,25,50,75,100].forEach(t=>s+=`<line x1="${ml}" x2="${w-mr}" y1="${Y(t)}" y2="${Y(t)}" stroke="${t===50?"var(--axis)":"var(--grid)"}" ${t===50?'stroke-width="1.5" stroke-dasharray="4 3"':""}/><text class="tk" x="${ml-6}" y="${Y(t)+4}" text-anchor="end">${t}%</text>`);
+  for(let g=-30;g<=30;g+=10)s+=`<line x1="${X(g)}" x2="${X(g)}" y1="${mt+ph}" y2="${mt+ph+4}" stroke="var(--axis)"/><text class="tk" x="${X(g)}" y="${mt+ph+16}" text-anchor="middle">${sgn(g)}</text>`;
+  s+=`<line x1="${X(0)}" x2="${X(0)}" y1="${mt-6}" y2="${mt+ph}" stroke="var(--axis)"/><text class="ink" font-weight="650" x="${X(0)-8}" y="14" text-anchor="end">← takedown leader is the WORSE seed</text><text class="ink" font-weight="650" x="${X(0)+8}" y="14" text-anchor="start">takedown leader is the BETTER seed →</text>`;
+  bins.forEach(b=>{
+    const x0=X(b.lo-.5)+1,x1=X(b.hi+.5)-1,bw=x1-x0,cx=(x0+x1)/2,n=b.pins,v=100*b.lead_pins/n,[lo,hi]=wilson(b.lead_pins,n),y=Y(v);
+    const tip=`<div class="th">Seed gap ${rng(b)}</div><div class="tv">${f1(v)}%</div><div>Takedown leader got the pin in ${b.lead_pins} of ${n} pins</div><div class="m">95% CI ${f1(lo)}–${f1(hi)}</div><div class="m">All matches in this bin with a takedown edge: ${nf(b.edge)}; leader won ${f1(100*b.lead_won/b.edge)}%</div>`;
+    s+=`<path class="b" d="${barPath(x0,y,bw,Math.max(1,Y(0)-y),4)}" fill="var(--pool)" fill-opacity=".72" tabindex="0" data-tip="${esc(tip)}" aria-label="${esc("Seed gap "+rng(b)+": "+f1(v)+"% of pins won by the takedown leader ("+b.lead_pins+" of "+n+")")}"/>`;
+    s+=`<line x1="${cx}" x2="${cx}" y1="${Y(hi)}" y2="${Y(lo)}" stroke="var(--surface)" stroke-width="4" stroke-linecap="round" pointer-events="none"/><line x1="${cx}" x2="${cx}" y1="${Y(hi)}" y2="${Y(lo)}" stroke="var(--ink)" stroke-width="1.5" pointer-events="none"/>`;
+    s+=`<text class="ink" font-weight="650" x="${cx}" y="${Math.max(mt-8,Y(hi)-5)}" text-anchor="middle" pointer-events="none" style="font-size:11px">${Math.round(v)}</text>`;
+    const label=bw>=64?rng(b):`${sgn(b.lo)}…${sgn(b.hi)}`;
+    s+=`<text class="tk" x="${cx}" y="${mt+ph+32}" text-anchor="middle" style="font-size:${bw>=64?11:9.5}px">${label}</text><text class="tk" x="${cx}" y="${mt+ph+46}" text-anchor="middle" style="font-size:10px">n=${n}</text>`;
+  });
+  // fitted logistic curve with its 95% band, drawn over the bars
+  const c=fit.curve, top=c.map(q=>`${X(q.g)},${Y(q.hi)}`), bot=c.slice().reverse().map(q=>`${X(q.g)},${Y(q.lo)}`);
+  s+=`<polygon points="${top.concat(bot).join(" ")}" fill="var(--ink)" fill-opacity=".10" pointer-events="none"/>`;
+  const line=c.map(q=>`${X(q.g)},${Y(q.p)}`).join(" ");
+  s+=`<polyline points="${line}" fill="none" stroke="var(--surface)" stroke-width="5" stroke-linejoin="round" pointer-events="none"/><polyline points="${line}" fill="none" stroke="var(--ink)" stroke-width="2.2" stroke-linejoin="round" pointer-events="none"/>`;
+  s+=`<text class="tk" x="${ml+pw/2}" y="${H-4}" text-anchor="middle">Seed gap (seed of the wrestler behind on takedowns minus seed of the wrestler ahead)</text></svg>`;
+  host.innerHTML=`<div class="legend" style="padding:0 10px 6px"><span class="it"><span class="sw" style="background:var(--pool);opacity:.72"></span>Share of pins won by the takedown leader (equal-count bins; bar width = seed-gap range)</span><span class="it"><svg width="26" height="10" style="display:inline-block;width:26px;overflow:visible"><line x1="0" x2="26" y1="5" y2="5" stroke="var(--ink)" stroke-width="2.2"/></svg>Fitted curve with 95% band (all ${fit.n} pins)</span></div>`+s;
+  const sum=(f)=>{let p=0,l=0;bins.filter(f).forEach(b=>{p+=b.pins;l+=b.lead_pins});return{p,l,v:100*l/p}};
+  const neg=sum(b=>b.hi<0),pos=sum(b=>b.lo>0),b0=bins[0],b1=bins[1];
+  const pv=fit.p_value<0.001?"p < 0.001":"p = "+fit.p_value.toFixed(3);
+  $("c3dcap").innerHTML=`Dashed line = 50%, what you'd expect if the takedown leader had no edge for pins and the two were equally good. Each bar holds about the same number of pins (${Math.min(...bins.map(b=>b.pins))}–${Math.max(...bins.map(b=>b.pins))}), so bars are wide where pins are rare. <b>The far-left tail split in two:</b> when a much lower seed (${rng(b0)}) led on takedowns he got <b>${f1(100*b0.lead_pins/b0.pins)}%</b> of the pins (${b0.lead_pins} of ${b0.pins}); for a moderately lower seed (${rng(b1)}) it was <b>${f1(100*b1.lead_pins/b1.pins)}%</b> (${b1.lead_pins} of ${b1.pins}). Those two intervals overlap heavily, so the data can't tell them apart. <b>Fitted curve:</b> at equal seeds the leader gets ${f1(fit.at0.p)}% of pins (95% CI ${f1(fit.at0.lo)}–${f1(fit.at0.hi)}), and each 10 places of seed advantage multiplies the odds by ${fit.or10.toFixed(1)} (${fit.or10_lo.toFixed(1)}–${fit.or10_hi.toFixed(1)}; ${pv}). Whiskers are 95% intervals for each bar.`;
+  const rows=bins.map(b=>{const v=100*b.lead_pins/b.pins,[lo,hi]=wilson(b.lead_pins,b.pins);return[rng(b),nf(b.pins),b.lead_pins,f1(v)+"%",`${f1(lo)}–${f1(hi)}`,nf(b.edge),f1(100*b.lead_won/b.edge)+"%"]});
+  $("t3d").innerHTML=`<div class="tabwrap">`+tbl(["Seed gap (behind minus ahead)","Pins","Takedown leader got the pin","Leader's share of pins","95% CI","All matches with an edge","Leader won (any way)"],rows)+`</div>`;
+}
+
+/* ---------------- section 4 ---------------- */
+const EDGE=[["1","+1 takedown edge","Ahead by exactly one takedown"],["2","+2 takedown edge","Ahead by exactly two"],["3","+3 takedown edge","Ahead by exactly three"],["4+","+4 or more","Ahead by four or more"]];
+function s4(){
+  const b=S.basis;
+  let h="",tr=[];
+  EDGE.forEach(([k,title,sub],ei)=>{h+=`<div class="panel"><h4>${title}</h4><div class="pn">${sub}</div><div id="c4-${ei}"></div></div>`});
+  $("c4").innerHTML=h;
+  EDGE.forEach(([k,title],ei)=>{
+    const items=WL.map(w=>{const c=cellOf(w);let n=0,won=0;T.forEach(t=>{const x=c[t.k].by_edge[k][b];n+=x.n;won+=x.won});return{label:w,title,n,won,v:100*won/n}});
+    singleBars($("c4-"+ei),items,title+" win percentage by window");
+    WL.forEach((w,i)=>{const c=cellOf(w),x=items[i];const a=c.ncaa.by_edge[k][b],q=c.conf.by_edge[k][b];
+      tr.push([title,w,f1(x.v)+"%",`${nf(x.won)} / ${nf(x.n)}`,`${f1(100*a.won/a.n)}% (${nf(a.won)} / ${nf(a.n)})`,`${f1(100*q.won/q.n)}% (${nf(q.won)} / ${nf(q.n)})`])});
+  });
+  $("t4").innerHTML=`<div class="tabwrap">`+tbl(["Edge","Window","Combined win %","Won / matches","NCAA","Conference"],tr)+`</div>`;
+}
+
+/* ---------------- section 5 ---------------- */
+function s5(){
+  const rows=D.aa_rows, cnt=D.aa_counts, bw=D.aa_counts_by_window;
+  const perW=WL.map(w=>`${w}: ${(bw[w]&&bw[w][String(D.aa_top)])||0}`).join(" · ");
+  $("s5sub").innerHTML=`All-Americans (top-8 finishers) at the NCAA Championships, 2015–2026. The most anyone has won at one tournament without scoring a takedown is <b>${D.aa_top}</b>; ${rows.length} All-Americans reached it. Pins count; forfeit, injury-default and DQ wins do not. “X of Y” is no-takedown wins out of all of that wrestler's wins at the tournament.`;
+  const body=rows.map(r=>[`<b>${esc(r.name)}</b><small>${esc(r.team)}</small>`,`${r.year}, ${r.weight}`,`<span class="place">${r.place}</span>`,`${r.n} of ${r.wins}`,
+    `<div class="beat">${r.beat.map(b=>`<div>${esc(b.opp)} (${esc(b.team)}) ${esc(b.how)}</div>`).join("")}</div>`]);
+  $("t5").innerHTML=tbl(["Wrestler (school)","Year, weight","Place","No-TD wins","Who they beat"],body,"list").replace("<th class=\"\">Who they beat","<th class=\"l\">Who they beat");
+  const two=cnt["2"]||0, one=cnt["1"]||0;
+  $("s5cap").innerHTML=`By window, wrestlers at ${D.aa_top} wins: ${perW}. No one reached ${D.aa_top} in 2021–23 (${(bw["2021–23"]||{})["2"]||0} All-Americans stopped at 2). Across all windows ${two} All-Americans had 2 such wins and ${one} had 1.`;
+}
+
+/* ---------------- section 6 ---------------- */
+function s6(){
+  const both=S.scope==="both";
+  let rows=D.career_candidates.map(r=>{const sc=both?r.total:r.ncaa, wins=both?r.wins:r.wins_ncaa;return Object.assign({},r,{sc,wn:wins,share:wins?sc/wins:0})}).filter(r=>r.sc>0);
+  rows.sort((a,b)=>b.sc-a.sc||b.share-a.share||a.name.localeCompare(b.name));
+  const top=rows.slice(0,10), cut=top[9].sc, tied=rows.slice(10).filter(r=>r.sc===cut);
+  const mc=Math.max(...top.map(r=>r.sc));
+  let h=`<table class="list"><thead><tr><th class="l">#</th><th class="l">Wrestler</th><th class="l">No-takedown wins</th><th>Of all wins</th><th>Seasons</th><th></th></tr></thead><tbody>`;
+  top.forEach((r,i)=>{
+    const ws=both?r.list:r.list.filter(x=>x[1]==="ncaa");
+    const teams=Object.keys(r.teams).join(" / ");
+    const bar=both?`<span class="mini"><i style="width:${r.ncaa*18}px;background:var(--ncaa)"></i><i style="width:${r.conf*18}px;background:var(--conf)"></i></span> <b>${r.sc}</b> <small style="display:inline">(${r.ncaa} NCAA${r.conf?` + ${r.conf} conf`:""})</small>`:`<span class="mini"><i style="width:${r.ncaa*18}px;background:var(--ncaa)"></i></span> <b>${r.sc}</b>`;
+    const yrs=r.years, wts=Object.keys(r.weights).sort((a,b)=>a-b).join("/");
+    h+=`<tr><td class="l">${i+1}</td><td class="l"><b>${esc(r.name)}</b><small>${esc(teams)} · ${wts} lbs</small></td><td class="l">${bar}</td><td>${r.sc} of ${r.wn}<small>${f1(100*r.share)}%</small></td><td>${yrs[0]}–${yrs[yrs.length-1]}<small>${yrs.length} tournament years</small></td><td><button class="btn" data-x="${i}" aria-expanded="false">Wins</button></td></tr>`;
+    const lines=ws.slice().sort((a,b)=>a[0]-b[0]||a[1].localeCompare(b[1])).map(x=>`${x[0]} ${esc(x[3])} (${x[2]} lbs): ${esc(x[4])} (${esc(x[5])}) ${esc(x[6])}`);
+    h+=`<tr class="exp" id="x${i}" hidden><td></td><td colspan="5">${lines.map(l=>`<div>${l}</div>`).join("")}</td></tr>`;
+  });
+  $("t6").innerHTML=h+`</tbody></table>`;
+  document.querySelectorAll("#t6 .btn").forEach(b=>b.onclick=()=>{const e=$("x"+b.dataset.x);e.hidden=!e.hidden;b.setAttribute("aria-expanded",!e.hidden)});
+  const sameAsCut=top.filter(r=>r.sc===cut).length;
+  $("s6cap").innerHTML=`Ranked by no-takedown wins; ties are ordered by the share of the wrestler's wins that came without a takedown. ${tied.length?`<b>${tied.length} more wrestler${tied.length>1?"s":""} also have ${cut}</b> (${tied.map(r=>esc(r.name)+" "+r.sc+" of "+r.wn).join("; ")}), so the cutoff is not a clean line.`:`No one outside the list has ${cut}.`} Counts cover only tournament wins with play-by-play, 2015–2026, not full careers.`;
+}
+
+/* ---------------- notes ---------------- */
+function notes(){
+  const t=totals();
+  $("notes").innerHTML=`
+   <li><b>Matches counted:</b> ${nf(t.bouts)} bouts with play-by-play (NCAA Championships 2015–2026 excluding the cancelled 2020 tournament, plus Big Ten, Big 12, ACC, MAC, Pac-12 and SoCon championships where the play-by-play was scraped). There is no play-by-play before 2015, so the first window is 2015–16. Forfeits and defaults that were never wrestled (0–0, nothing logged) are dropped.</li>
+   <li><b>Takedown differential:</b> the winner's takedowns minus the loser's, including overtime takedowns. “Won the takedown battle” means a differential of 1 or more for the match winner.</li>
+   <li><b>Ended on points:</b> official result Decision, Major Decision, Tech Fall, Tiebreaker or Sudden Victory. Conference results come from the team scrapes; about 1–7% of conference bouts couldn't be matched to an official result and are left out of this view only.</li>
+   <li><b>Sides swapped in the source:</b> a handful of bouts have the winner's and loser's events logged under the wrong wrestler. They are detected against the official score (or a 15+ point deficit for the winner) and corrected.</li>
+   <li><b>All-time list (section 6):</b> wrestlers are matched across years by surname plus first initial, because conference files spell first names differently from NCAA files (Timmy/Timothy). The top of the list was checked by hand for two people sharing a name. EIWA and regular-season matches are not included, so these are tournament-only counts.</li>
+   <li><b>Windows:</b> 2021–23 includes the COVID-shortened 2021 season; 2024–26 is the 3-point-takedown era. The two windows before that use the older scoring.</li>`;
+}
+
+function render(){s1();info();s3b();s3c();s3d();s4();s5();s6();notes()}
+function bindSeg(id,key,after){$(id).addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;S[key]=b.dataset.v;[...$(id).children].forEach(x=>x.setAttribute("aria-pressed",x===b));after()})}
+bindSeg("f-basis","basis",s4);bindSeg("f-scope","scope",s6);
+bindSeg("f-theme","theme",()=>{if(S.theme==="auto")document.documentElement.removeAttribute("data-theme");else document.documentElement.setAttribute("data-theme",S.theme);render()});
+let rt;addEventListener("resize",()=>{clearTimeout(rt);rt=setTimeout(render,120)});
+render();
+</script>
+</body>
+</html>

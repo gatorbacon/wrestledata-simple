@@ -1,0 +1,233 @@
+====================================================================================================
+CONFERENCE TOURNAMENT TAKEDOWN-DIFFERENTIAL REPORT  |  2017-2019
+====================================================================================================
+
+Scope        Conference championships pooled: Big Ten, Big 12, ACC, MAC, Pac-12 and SoCon (only the
+             tournaments that are on file for each year - see coverage below). Seasons included:
+             2017, 2018, 2019.
+Bouts        1,598 bouts with play-by-play data (535 more had none - byes, forfeits and injury
+             defaults - and are left out).
+Source       data/{year}/{conference}-tourney/bout_detail (events) + parsed/matches.json (official
+             results, built from the team scrapes by build_conference_results.py). Matched to an
+             official result: 1,483 of 1,598 bouts (92.8%).
+
+Coverage    bouts with play-by-play, by conference and year ('-' = no tournament on file)
+
+  Conference     2017   2018   2019    Total
+  Big Ten         254    249    249      752
+  ACC              80     77     80      237
+  MAC              30    139      -      169
+  Pac-12            -     58     56      114
+  SoCon           118    116     92      326
+  All             482    639    477    1,598
+
+HOW TO READ THIS REPORT
+  - 'Bouts' = wrestler-bouts. Most scenarios count BOTH wrestlers in a bout, each from their own
+    point of view, so a scenario like 'scored nearfall points' can include the winner and the loser
+    of the same bout. 'Won' = how many of those wrestlers won the bout.
+  - Every table has two blocks: ALL BOUTS, and DECIDED BY POINTS ONLY. 'Decided by points' means
+    the official result was a decision, major decision, tech fall, or a sudden-victory / tiebreaker
+    overtime. It EXCLUDES pins (falls), forfeits, injury defaults, disqualifications, and 115 bouts
+    whose official result could not be matched.
+  - Takedown differential = takedowns scored minus takedowns allowed in the bout (overtime
+    included). Reversals, escapes and nearfall are NOT takedowns.
+  - 95% CI = Wilson 95% confidence interval on the win %. Small samples have wide intervals; don't
+    read much into gaps that fit inside each other's intervals.
+  - A pin is not logged as a scoring event, so 'nearfall points' only counts nearfall that was
+    actually awarded points before the match ended.
+
+====================================================================================================
+AT A GLANCE
+====================================================================================================
+  * 85.7% of bouts (1,369 of 1,598) had a takedown differential; 14.3% (229) were tied on takedowns
+    (0-0 counts as tied).
+  * When there was a differential, the wrestler with MORE takedowns won 1,313 of 1,369 bouts
+    (95.9%).
+  * Counting only bouts decided by points, that figure is 1,043 of 1,085 (96.1%).
+  * How the 1,598 bouts ended: 1,260 by points (78.8%), 202 by fall (12.6%), 21 forfeit/injury/DQ,
+    115 unmatched.
+
+====================================================================================================
+1. TAKEDOWN DIFFERENTIAL -> WIN %
+====================================================================================================
+For each differential, the wrestler on the + side is shown. The wrestler on the - side has the
+mirror result (100% minus the win % shown), since it is the same bouts from the other side.
+At 0 the win % is 50% by construction (both wrestlers are at 0 in the same bout) so only the
+bout count is meaningful there.
+
+TD differential   |             ALL BOUTS             |      DECIDED BY POINTS ONLY      
+                  | Bouts   Won  Win %      95% CI | Bouts   Won  Win %      95% CI
+----------------------------------------------------------------------------------------------------
+0 (tied)          |   229     -  50.0% (by constr.) |   175     -  50.0% (by constr.)
++1                |   558   508  91.0%  88.4-93.1  |   427   389  91.1%  88.0-93.4 
++2                |   342   336  98.2%  96.2-99.2  |   267   263  98.5%  96.2-99.4 
++3                |   215   215 100.0%  98.2-100.0 |   180   180 100.0%  97.9-100.0
++4 or more        |   254   254 100.0%  98.5-100.0 |   211   211 100.0%  98.2-100.0
+----------------------------------------------------------------------------------------------------
+
+Upsets: bouts where the wrestler with FEWER takedowns won, by how the bout ended
+
+Winner was behind by   Dec/MD/TF  OT dec.  Fall  For/Inj/DQ  Unmatched  Total  Bouts w/ that edge
+----------------------------------------------------------------------------------------------------
+1 takedown                    35        3     8           0          4     50                 558
+2 takedowns                    3        1     2           0          0      6                 342
+3 takedowns                    0        0     0           0          0      0                 215
+4+ takedowns                   0        0     0           0          0      0                 254
+----------------------------------------------------------------------------------------------------
+
+Every upset where the winner was behind by 2 or more takedowns (6 bouts):
+
+  2017 Big Ten 141 Ryan Diehl (Maryland) def. Christopher Carton (Iowa) [Cons. Round 2]
+        Dec 11-9  |  takedowns 0-2 (behind by 2)
+  2017 SoCon 157 Austin Kraisser (Campbell) def. Neal Richards (Vmi)
+        TB-1 7-5  |  takedowns 0-2 (behind by 2)
+  2018 Big Ten 174 Ryan Christensen (Wisconsin) def. Devin Skatzka (Indiana) [7th Place Match]
+        Dec 10-7  |  takedowns 0-2 (behind by 2)
+  2018 Big Ten 184 Brandon Krone (Minnesota) def. Max Lyon (Purdue) [Cons. Round 2]
+        MD 16-7  |  takedowns 1-3 (behind by 2)
+  2019 ACC 157 Ben Anderson (Duke) def. Jake Keating (Virginia) [Cons. Semis]
+        Fall (score at pin 5-11)  |  takedowns 1-3 (behind by 2)
+  2019 SoCon 157 Ryan Resnick (Chattanooga) def. Angel Najar (Appalachian State)
+        Fall (score at pin 4-13)  |  takedowns 1-3 (behind by 2)
+
+====================================================================================================
+2. WIN % BY SCENARIO (each wrestler counted from their own point of view)
+====================================================================================================
+Scenarios 1-3 split the first takedown by the period it happened in. Scenarios 5-7 look at
+the wrestler who gave up the first takedown. Scenarios overlap (e.g. a wrestler with nearfall
+points usually also has the first takedown), so rows do not add up to the bout total.
+
+Scenario                                                |             ALL BOUTS             |      DECIDED BY POINTS ONLY      
+                                                        | Bouts   Won  Win %      95% CI | Bouts   Won  Win %      95% CI
+------------------------------------------------------------------------------------------------------------------------------------
+Scored the first takedown (any time)                    | 1,484 1,292  87.1%  85.3-88.7  | 1,177 1,030  87.5%  85.5-89.3 
+1. First takedown in period 1                           | 1,218 1,047  86.0%  83.9-87.8  |   938   808  86.1%  83.8-88.2 
+2. First takedown in period 2 (none in period 1)        |   116   103  88.8%  81.8-93.3  |   104    94  90.4%  83.2-94.7 
+3. First takedown in period 3 (none earlier)            |   117   109  93.2%  87.1-96.5  |   104    97  93.3%  86.8-96.7 
+   (memo) first takedown came in overtime               |    33    33 100.0%  89.6-100.0 |    31    31 100.0%  89.0-100.0
+4. Scored nearfall points (any time)                    |   539   507  94.1%  91.7-95.8  |   438   414  94.5%  92.0-96.3 
+5. Gave up 1st takedown, then scored the 2nd takedown   |   267   143  53.6%  47.6-59.4  |   227   111  48.9%  42.5-55.4 
+6. Gave up 1st takedown, then scored any later takedown |   397   166  41.8%  37.1-46.7  |   341   127  37.2%  32.3-42.5 
+7. Gave up 1st takedown, never scored a takedown        | 1,087    26   2.4%   1.6-3.5   |   836    20   2.4%   1.6-3.7  
+8. Scored exactly 2 takedowns in the match              |   469   410  87.4%  84.1-90.1  |   388   338  87.1%  83.4-90.1 
+9. Scored exactly 3 takedowns in the match              |   277   260  93.9%  90.4-96.1  |   230   217  94.3%  90.6-96.7 
+   (memo) scored exactly 1 takedown                     |   841   494  58.7%  55.4-62.0  |   654   356  54.4%  50.6-58.2 
+   (memo) scored 4 or more takedowns                    |   294   294 100.0%  98.7-100.0 |   246   246 100.0%  98.5-100.0
+------------------------------------------------------------------------------------------------------------------------------------
+A first takedown in overtime ends a sudden-victory bout, so that memo row is 100% by rule.
+
+====================================================================================================
+3. WHEN TAKEDOWNS ARE TIED: WHAT DECIDES THE BOUT
+====================================================================================================
+229 bouts (14.3%) were tied on takedowns (including 0-0).
+
+  Decided by points in regulation     149  (65.1%)
+  Went to overtime                     31  (13.5%)
+  Ended in a fall (regulation)         19  (8.3%)
+  Forfeit / injury / DQ / unmatched    30  (13.1%)
+
+3a. REGULATION, decided by points -- win % by scoring-category edge
+----------------------------------------------------------------------------------------------------
+149 bouts. Since takedowns cancel out, the winner is whoever is ahead in the other
+categories combined. Edges are measured in POINTS (escape 1, reversal 2, nearfall 2-4,
+penalty as awarded, riding time 1). The + wrestler's win % is shown; the - wrestler's is the
+mirror.
+Check: in 149 of these 149 bouts the scoring events add up exactly to the final score.
+
+Category edge                      +1 pt          +2 pts      +3 or more
+------------------------------------------------------------------------
+Escape                       62/76 = 82%    18/18 = 100%      6/6 = 100%
+Reversal                               -     24/30 = 80%       3/4 = 75%
+Nearfall                               -    18/18 = 100%    33/33 = 100%
+Penalty                      26/32 = 81%       5/7 = 71%      1/1 = 100%
+Riding time                  66/73 = 90%               -               -
+------------------------------------------------------------------------
+(cell = bouts won / bouts with that edge = win %; '-' = never happened or not possible)
+
+How often the eventual winner was AHEAD in each category:
+  Escape         86  (57.7% of 149 bouts)
+  Riding time    66  (44.3% of 149 bouts)
+  Nearfall       51  (34.2% of 149 bouts)
+  Penalty        32  (21.5% of 149 bouts)
+  Reversal       27  (18.1% of 149 bouts)
+
+Most common combinations of categories in which the winner was ahead:
+    23   15.4%  escape
+    21   14.1%  escape + riding time
+    16   10.7%  escape + nearfall
+    11    7.4%  nearfall
+    11    7.4%  riding time
+     9    6.0%  escape + penalty + riding time
+     8    5.4%  penalty
+     7    4.7%  reversal
+
+Margin of victory: 47 of 149 (31.5%) were decided by 1 point; 35 (23.5%) by 2.
+
+3b. OVERTIME -- how tied-on-takedowns bouts that went to overtime were decided
+----------------------------------------------------------------------------------------------------
+31 bouts. Regulation was tied on points in 31 of them.
+Sudden victory (Overtime 1) is first-score-wins; the tiebreakers (Overtime 2/3) give each wrestler a
+turn on bottom for 30 seconds.
+
+    11  Tiebreaker: scored more tiebreak points (escape)
+     7  Sudden victory: takedown (winner's total only reached even because the opponent had scored earlier)
+     4  Tiebreaker: scored more tiebreak points (reversal)
+     3  Tiebreaker: scored more tiebreak points (riding)
+     2  Tiebreaker: scored more tiebreak points (escape+nearfall)
+     1  Tiebreaker: scored more tiebreak points (reversal+nearfall)
+     1  Tiebreaker: both escaped, but the slower escape won (unexplained)
+     1  Tiebreaker: both escaped, tied on points -> the FASTER escape won
+     1  Tiebreaker: tied on tiebreak points, other (ride-out / riding time / criteria not in data)
+
+  Overtime winner had MORE overtime points in 28 bouts, FEWER in 0, equal in 3 (decided by escape time / ride-out).
+
+3c. OTHER ENDINGS WHEN TAKEDOWNS WERE TIED
+----------------------------------------------------------------------------------------------------
+  Falls in regulation: 19   Forfeit/injury/DQ: 12   Unmatched: 18
+
+====================================================================================================
+4. WRESTLERS WITH THE MOST WINS WITHOUT A TAKEDOWN AT A SINGLE CONFERENCE TOURNAMENT
+====================================================================================================
+Conference data has no placements, so instead of All-Americans this lists every wrestler who, at
+one conference tournament in 2017-2019, had the most wins in which they scored NOT ONE takedown: 3
+such wins. Everyone tied at that number is listed (first 15 shown if more).
+'X of Y' = wins with no takedown out of all of that wrestler's wins at that tournament. Pins count.
+Wins by forfeit, injury default or DQ are not counted (results are the official ones; a bout with
+no official match shows its finish score).
+
++-----------------------------+----------------------+------------+--------------------------------------------+
+| Wrestler (school)           | Tournament, wt       | No-TD wins | Who they beat                              |
++-----------------------------+----------------------+------------+--------------------------------------------+
+| Drew Hughes (Michigan       | 2017 Big Ten, 165    | 3 of 4     | Dylan Painton (Rutgers) 1-0; Cody Burcher  |
+| State)                      |                      |            | (Ohio State) 1-0; Nick Wanzek (Minnesota)  |
+|                             |                      |            | 3-2                                        |
++-----------------------------+----------------------+------------+--------------------------------------------+
+| Conan Jennings              | 2018 Big Ten, 285    | 3 of 4     | David Jensen (Nebraska) 2-0; Ben Stone     |
+| (Northwestern)              |                      |            | (Wisconsin) 16-0 (tech fall); Youssif      |
+|                             |                      |            | Hemida (Maryland) 3-2                      |
++-----------------------------+----------------------+------------+--------------------------------------------+
+
+For comparison: 14 wrestlers had 2 such wins; 89 wrestlers had 1 such win.
+
+====================================================================================================
+DATA NOTES
+====================================================================================================
+  - Bouts with no play-by-play (535) are byes (opponent 'Unknown'), forfeits and injury defaults,
+    and are left out.
+  - Official results come from the team scrapes (mt/processed_data/ncaa_men), extracted by
+    build_conference_results.py and matched to each bout by last name + first initial + weight
+    (Timmy/Timothy McCall are the same wrestler): 1,483 of 1,598 bouts matched (92.8%). Unmatched
+    bouts (115) count in ALL BOUTS but not in DECIDED BY POINTS. The usual reasons are a wrestler
+    or event missing from a team scrape, or a rematch that can't be paired.
+  - A swapped-sides bout is detected against the official score (winner's score lower than the
+    loser's and equal to the official score reversed). For unmatched bouts only the impossible
+    case, a winner trailing by 15+, is caught.
+  - Header scores in the play-by-play file sometimes differ from the official score by 1 point
+    (usually the riding-time point); those bouts are still matched.
+  - Only tournaments that TrackWrestling has, and that were scraped complete, are included - see
+    the coverage table. Known real gaps: Big Ten 2020, Big 12 2016-18, MAC 2019/2021/2023, Pac-12
+    2015-17 and 2024-25, SoCon 2026. (Official results for some of those tournaments exist in the
+    team scrapes and are saved in parsed/matches.json, but there is no play-by-play to analyze.)
+  - No swapped-side bouts were detected in this window.
+  - Falls are not logged as events, so scoring context (e.g. nearfall) before a pin may be incomplete.
+
