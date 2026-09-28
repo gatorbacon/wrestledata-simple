@@ -876,6 +876,14 @@ Copies every `team_score_simulation_adjusted_*.json` found in `data/ncaa-tourney
 
 ---
 
+## Compare Wrestlers Tool (added 2026-09-28)
+
+`/tools/compare.html` (linked from the Tools page): pick any two wrestlers, see every head-to-head bout and each wrestler's results against the opponents they share, across whole careers, with a season filter. Ported from KentuckyMat's compare page; the comparison logic is the same `compare_core.js` (copied unchanged to `frontend/wrestledata-ui/public/compare_core.js`; opponent-matching rules are in root `CLAUDE.md` → "Compare page"). `tools/compare.js` is the MatSavant UI and data loading. URL: `/tools/compare.html?a={wrestler_id}&b={wrestler_id}[&season=YYYY]` (any season's id of a wrestler works).
+
+**Data source:** NCAA has no frontend career files, and profile `match_list` rows carry `opponent_career_id = null`. So the page loads **`data/careers/career_seasons.json`** (`{"careers": {"<career number>": {"<season>": "<wrestler_id>"}}}`, ~890 KB raw / ~180 KB gzipped, only fetched on this page), built by `scripts/reports/build_career_seasons.py` from the backend career links in `data/careers/ncaa_men/`. The page inverts it to wrestler_id → (career, season) and uses it to (1) find every season of a picked wrestler and fetch those `data/wrestlers/{season}/by_id/{id}.json` profiles, and (2) set each match's `opponent_career_id`, so an opponent faced in two seasons (even on two teams, e.g. Cameron Amine Michigan 2024 → Oklahoma State 2025) is one common opponent. Opponents not in any career fall back to name+team matching. A wrestler not in the file falls back to its own profile's `season_summary`. Career W-L is the sum of each season profile's `record.overall`.
+
+**Keep it fresh:** the script only writes season ids whose profile is **committed** (`git ls-files`), so it never points at an undeployed file. Re-run it after career linking or after a new season's profiles are committed: `.venv/bin/python scripts/reports/build_career_seasons.py`. The picker uses the header search's ranking (match tier → champion/AA/active `priority` → rank).
+
 ## NCAA Tournament Tracker
 
 **Page:** `ncaa_live.html`
@@ -1195,6 +1203,7 @@ Three schools (Wyoming, Little Rock, George Mason) have no live-scrapable roster
 | `scripts/analysis/publish_team_odds_to_site.py` | Publishes team odds simulation output to the frontend data dir |
 | `scripts/reports/build_transfer_dpg_report.py` | Builds one team's transfer-window report JSON; shared base module the other `scripts/reports/` scripts import |
 | `scripts/reports/build_wrestler_view.py` | Builds one chart-ready JSON per career-linked wrestler (backfill or `--season`-scoped); also rebuilds `wrestler_index.json`, the reports hub's name-search index |
+| `scripts/reports/build_career_seasons.py` | Builds `data/careers/career_seasons.json` (career → season wrestler_ids) for the Compare Wrestlers tool. Re-run after career linking or a new season's profiles are committed — see "Compare Wrestlers Tool" |
 | `scripts/reports/build_team_roster_view.py` | Builds one team+season roster JSON by reading already-built `build_wrestler_view.py` output |
 | `scripts/reports/build_aa_dpg_band.py` | Builds the AA DPG range band + champion line shown on every report chart — see [AA DPG Range](#5-aa-dpg-range-reports-pages-only) |
 | `scripts/generate_matsavant_sitemap.py` | Regenerates `frontend/wrestledata-ui/public/sitemap.xml` — see SEO Setup below. Re-run after any wrestler/team profile rebuild or new Note |
