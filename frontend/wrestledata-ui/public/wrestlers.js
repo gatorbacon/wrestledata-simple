@@ -26,15 +26,22 @@
     if (!input || !dropdown) return;
     if (typeof Fuse === "undefined" || !window.SEARCH_INDEX) return;
 
-    const fuse = new Fuse(window.SEARCH_INDEX.filter(r => r.type === "wrestler"), {
-      keys: [
-        { name: "name", weight: 0.6 },
-        { name: "searchTokens", weight: 0.4 },
-      ],
-      threshold: 0.4,
-      ignoreLocation: true,
-      minMatchCharLength: 2,
-    });
+    // Same ranking as the header search (window.MatSavantSearch, header.js):
+    // exact/prefix matches first, then champions > AAs > active wrestlers.
+    // Wrestlers only -- teams are left out of this box.
+    const ranking = window.MatSavantSearch;
+    const fuse = new Fuse(
+      window.SEARCH_INDEX.filter(r => r.type === "wrestler"),
+      ranking ? ranking.fuseOptions : {
+        keys: [
+          { name: "name", weight: 0.6 },
+          { name: "searchTokens", weight: 0.4 },
+        ],
+        threshold: 0.4,
+        ignoreLocation: true,
+        minMatchCharLength: 2,
+      }
+    );
 
     input.addEventListener("input", () => {
       const query = input.value.trim();
@@ -42,7 +49,10 @@
         dropdown.style.display = "none";
         return;
       }
-      const results = fuse.search(query).slice(0, 10).map(r => r.item);
+      const matches = fuse.search(query);
+      const results = (ranking ? ranking.rankResults(query, matches) : matches)
+        .slice(0, 10)
+        .map(r => r.item);
       if (results.length === 0) {
         dropdown.innerHTML = '<div class="search-result-item search-result-empty">No results found</div>';
         dropdown.style.display = "block";

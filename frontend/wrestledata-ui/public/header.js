@@ -8,6 +8,80 @@
   const SEARCH_ICON_SVG = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>`;
   const MENU_ICON_SVG = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>`;
 
+  // ---------- Shared search ranking ----------
+  // Used by the header search below and exported as window.MatSavantSearch so
+  // other wrestler pickers (wrestlers.html directory search, tools/compare.js)
+  // rank results the same way instead of keeping their own copies.
+  const fuseOptions = {
+    keys: [
+      { name: 'name', weight: 0.6 },
+      { name: 'searchTokens', weight: 0.4 }
+    ],
+    threshold: 0.4,
+    ignoreLocation: true,
+    minMatchCharLength: 2,
+    includeScore: true,
+  };
+
+  // Fuse's own fuzzy score alone doesn't reliably rank an exact/prefix
+  // match above a merely-fuzzy one (e.g. "penn s" scored some unrelated
+  // wrestlers as good as or better than "Penn State"). This computes a
+  // coarse match-quality tier up front so real prefix matches always win,
+  // then breaks ties using each item's `priority` (national champion > AA
+  // > active this season > everyone else -- see generate_search_index.py)
+  // and finally `rank` / Fuse's score.
+  function tokenMatchTier(query, name) {
+    const q = query.toLowerCase().trim();
+    const nameLower = name.toLowerCase();
+    if (nameLower === q) return 0;
+    if (nameLower.startsWith(q)) return 1;
+    // Every query word is a prefix of some distinct word in the name, in
+    // any order/position -- catches "mitch mes" -> "Mitchell Mesenbrink"
+    // and "penn s" -> "Penn State" even though neither is a literal
+    // whole-string prefix.
+    const qWords = q.split(/\s+/).filter(Boolean);
+    const nameWords = nameLower.split(/\s+/).filter(Boolean);
+    const used = new Array(nameWords.length).fill(false);
+    const allMatched = qWords.length > 0 && qWords.every(qw => {
+      const i = nameWords.findIndex((nw, idx) => !used[idx] && nw.startsWith(qw));
+      if (i === -1) return false;
+      used[i] = true;
+      return true;
+    });
+    return allMatched ? 2 : 3;
+  }
+
+  // Fuse's `threshold` option doesn't bound the combined score it hands
+  // back when multiple weighted keys are in play (name + searchTokens
+  // here) -- e.g. "Penn state" returns "Carter Tate" et al at score ~0.68,
+  // nowhere near the 0.4 threshold that was supposed to gate this. Since
+  // tiers 0-2 are already validated by our own prefix/token logic above
+  // (trustworthy regardless of Fuse's score), this quality floor only
+  // needs to apply to tier 3 (pure fuzzy, no prefix signal at all) --
+  // genuine typo matches like "mesenrbink" -> Mesenbrink score ~0.27, well
+  // under this, so real fuzzy tolerance is untouched.
+  const FUZZY_SCORE_FLOOR = 0.5;
+
+  function rankResults(query, fuseResults) {
+    return fuseResults
+      .map(r => ({
+        item: r.item,
+        tier: tokenMatchTier(query, r.item.name),
+        priority: r.item.priority ?? 0,
+        rank: r.item.rank ?? Infinity,
+        score: r.score ?? 1,
+      }))
+      .filter(r => r.tier < 3 || r.score < FUZZY_SCORE_FLOOR)
+      .sort((a, b) => (
+        a.tier - b.tier ||
+        a.priority - b.priority ||
+        a.rank - b.rank ||
+        a.score - b.score
+      ));
+  }
+
+  window.MatSavantSearch = { fuseOptions, tokenMatchTier, rankResults };
+
   // Create header HTML structure
   function createHeaderHTML() {
     return `
@@ -362,75 +436,8 @@
     // match (e.g. "Penn State" wouldn't surface at all for "penn s"), since
     // there are ~30x more wrestler entries than team entries competing for
     // the same 10 slots. Each type now gets its own guaranteed slots.
-    const fuseOptions = {
-      keys: [
-        { name: 'name', weight: 0.6 },
-        { name: 'searchTokens', weight: 0.4 }
-      ],
-      threshold: 0.4,
-      ignoreLocation: true,
-      minMatchCharLength: 2,
-      includeScore: true,
-    };
     const fuseWrestlers = new Fuse(window.SEARCH_INDEX.filter(i => i.type === 'wrestler'), fuseOptions);
     const fuseTeams = new Fuse(window.SEARCH_INDEX.filter(i => i.type === 'team'), fuseOptions);
-
-    // Fuse's own fuzzy score alone doesn't reliably rank an exact/prefix
-    // match above a merely-fuzzy one (e.g. "penn s" scored some unrelated
-    // wrestlers as good as or better than "Penn State"). This computes a
-    // coarse match-quality tier up front so real prefix matches always win,
-    // then breaks ties using each item's `priority` (national champion > AA
-    // > active this season > everyone else -- see generate_search_index.py)
-    // and finally `rank` / Fuse's score.
-    function tokenMatchTier(query, name) {
-      const q = query.toLowerCase().trim();
-      const nameLower = name.toLowerCase();
-      if (nameLower === q) return 0;
-      if (nameLower.startsWith(q)) return 1;
-      // Every query word is a prefix of some distinct word in the name, in
-      // any order/position -- catches "mitch mes" -> "Mitchell Mesenbrink"
-      // and "penn s" -> "Penn State" even though neither is a literal
-      // whole-string prefix.
-      const qWords = q.split(/\s+/).filter(Boolean);
-      const nameWords = nameLower.split(/\s+/).filter(Boolean);
-      const used = new Array(nameWords.length).fill(false);
-      const allMatched = qWords.length > 0 && qWords.every(qw => {
-        const i = nameWords.findIndex((nw, idx) => !used[idx] && nw.startsWith(qw));
-        if (i === -1) return false;
-        used[i] = true;
-        return true;
-      });
-      return allMatched ? 2 : 3;
-    }
-
-    // Fuse's `threshold` option doesn't bound the combined score it hands
-    // back when multiple weighted keys are in play (name + searchTokens
-    // here) -- e.g. "Penn state" returns "Carter Tate" et al at score ~0.68,
-    // nowhere near the 0.4 threshold that was supposed to gate this. Since
-    // tiers 0-2 are already validated by our own prefix/token logic above
-    // (trustworthy regardless of Fuse's score), this quality floor only
-    // needs to apply to tier 3 (pure fuzzy, no prefix signal at all) --
-    // genuine typo matches like "mesenrbink" -> Mesenbrink score ~0.27, well
-    // under this, so real fuzzy tolerance is untouched.
-    const FUZZY_SCORE_FLOOR = 0.5;
-
-    function rankResults(query, fuseResults) {
-      return fuseResults
-        .map(r => ({
-          item: r.item,
-          tier: tokenMatchTier(query, r.item.name),
-          priority: r.item.priority ?? 0,
-          rank: r.item.rank ?? Infinity,
-          score: r.score ?? 1,
-        }))
-        .filter(r => r.tier < 3 || r.score < FUZZY_SCORE_FLOOR)
-        .sort((a, b) => (
-          a.tier - b.tier ||
-          a.priority - b.priority ||
-          a.rank - b.rank ||
-          a.score - b.score
-        ));
-    }
 
     let activeIndex = -1;
     let currentResults = [];

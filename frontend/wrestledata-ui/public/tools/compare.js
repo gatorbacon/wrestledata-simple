@@ -168,37 +168,14 @@
     return careerCache.get(id);
   }
 
-  // ---------- search (same ranking as the header search in header.js) ----------
+  // ---------- search (shared ranking from header.js: window.MatSavantSearch) ----------
   let FUSE = null;
   function getFuse() {
     if (!FUSE) {
-      FUSE = new Fuse((window.SEARCH_INDEX || []).filter(function (i) { return i.type === 'wrestler'; }), {
-        keys: [{ name: 'name', weight: 0.6 }, { name: 'searchTokens', weight: 0.4 }],
-        threshold: 0.4,
-        ignoreLocation: true,
-        minMatchCharLength: 2,
-        includeScore: true
-      });
+      FUSE = new Fuse((window.SEARCH_INDEX || []).filter(function (i) { return i.type === 'wrestler'; }),
+        window.MatSavantSearch.fuseOptions);
     }
     return FUSE;
-  }
-
-  // Exact > prefix > every query word prefixes a name word > fuzzy (see header.js tokenMatchTier).
-  function tokenMatchTier(query, name) {
-    const q = query.toLowerCase().trim();
-    const nameLower = (name || '').toLowerCase();
-    if (nameLower === q) return 0;
-    if (nameLower.startsWith(q)) return 1;
-    const qWords = q.split(/\s+/).filter(Boolean);
-    const nameWords = nameLower.split(/\s+/).filter(Boolean);
-    const used = new Array(nameWords.length).fill(false);
-    const all = qWords.length > 0 && qWords.every(function (qw) {
-      const i = nameWords.findIndex(function (nw, idx) { return !used[idx] && nw.startsWith(qw); });
-      if (i === -1) return false;
-      used[i] = true;
-      return true;
-    });
-    return all ? 2 : 3;
   }
 
   function idFromItem(item) {
@@ -206,21 +183,9 @@
   }
 
   function searchWrestlers(query, excludeId) {
-    return getFuse().search(query)
-      .map(function (r) {
-        return {
-          item: r.item,
-          id: idFromItem(r.item),
-          tier: tokenMatchTier(query, r.item.name),
-          priority: r.item.priority != null ? r.item.priority : 3,
-          rank: r.item.rank != null ? r.item.rank : Infinity,
-          score: r.score != null ? r.score : 1
-        };
-      })
-      .filter(function (r) { return r.id && r.id !== excludeId && (r.tier < 3 || r.score < 0.5); })
-      .sort(function (a, b) {
-        return a.tier - b.tier || a.priority - b.priority || a.rank - b.rank || a.score - b.score;
-      })
+    return window.MatSavantSearch.rankResults(query, getFuse().search(query))
+      .map(function (r) { return Object.assign(r, { id: idFromItem(r.item) }); })
+      .filter(function (r) { return r.id && r.id !== excludeId; })
       .slice(0, MAX_RESULTS);
   }
 
@@ -289,7 +254,7 @@
       const q = input.value.trim();
       if (q.length < MIN_CHARS) { hide(); return; }
       dropdown.textContent = '';
-      if (typeof Fuse === 'undefined' || !window.SEARCH_INDEX) {
+      if (typeof Fuse === 'undefined' || !window.SEARCH_INDEX || !window.MatSavantSearch) {
         dropdown.appendChild(el('div', 'search-result-item search-result-empty', 'Search is unavailable right now.'));
         dropdown.style.display = 'block';
         return;
