@@ -1,8 +1,48 @@
+# MatSavant (www.matsavant.com). Netlify's base directory is frontend/wrestledata-ui/public,
+# which has no netlify.toml of its own, so Netlify falls back to this file. Paths here are
+# relative to that base directory. (KentuckyMat uses frontend/hs-ky-ui/netlify.toml instead.)
+# Edge functions live in the default netlify/edge-functions/ under the base directory; the
+# bundler can't reach anything outside it (a "../" path failed the 2026-09-27 build).
 [build]
   publish = "."
 
-# Cache historical replay data for 1 hour (never changes)
+# 403 known scrapers before any file is served (saves bandwidth). robots.txt stays reachable
+# so polite bots can read their Disallow and stop on their own.
+[[edge_functions]]
+  function = "block-bots"
+  path = "/*"
+  excludedPath = ["/robots.txt"]
+
+# Data JSON is static per deploy: cache for 1 hour
 [[headers]]
   for = "/data/*"
   [headers.values]
     Cache-Control = "public, max-age=3600"
+
+# 4 MB search index, only changes on deploy
+[[headers]]
+  for = "/search_index.js"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+# Images and fonts (not fingerprinted, so 30 days rather than immutable)
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+[[headers]]
+  for = "/*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+[[headers]]
+  for = "/*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+[[headers]]
+  for = "/*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
