@@ -17,7 +17,8 @@ outcome flipped -- keyed by the spec's state tuple:
                is locked the exact differential no longer matters)
 
 Observations (spec 3.1): the state every 10 s of regulation (fixed cadence, so quiet stretches count) plus the state
-before and after every regulation event. Not included: end-of-regulation states (t_rem 0 -- terminal, value set by
+before and after every regulation event. All three are written here (column `source`); the model uses a subset --
+step 8 found the in-period "just before an event" states are a biased sample (fit_state_model.ROW_SETS / model_rows). Not included: end-of-regulation states (t_rem 0 -- terminal, value set by
 the result / overtime), tech-fall states (|margin| >= 15, terminal), and the instant before a fall / injury default
 (sampled only because the bout ended there).
 

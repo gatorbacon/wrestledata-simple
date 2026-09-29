@@ -7,8 +7,9 @@ builds both perspectives with wpa_common.perspective / mirror):
 
   data/wpa/states/{kind}_bouts.csv    one row per bout: ids, era, seeds, result, flags, reconstruction checks
   data/wpa/states/{kind}_events.csv   one row per event, with the full state BEFORE and AFTER it (b_* / a_*)
-  data/wpa/states/{kind}_samples.csv  the state every 10 s of regulation time (t_rem 420, 410, ... 10) -- the
-                                      fixed-cadence samples spec 3.1 asks for, so quiet stretches are represented
+  data/wpa/states/{kind}_samples.csv  the state every 10 s of regulation time (t_rem 420, then 415, 405, ... 5 =
+                                      the middle of every 10-s bin) -- the fixed-cadence samples spec 3.1 asks for,
+                                      so quiet stretches are represented
   data/wpa/reports/state_reconstruction.md   what was done and how well it checks out
 
 State (spec Section 2): score (margin excludes the pending riding-time point), t_rem = seconds left in the whole
@@ -50,7 +51,10 @@ import wpa_common as C      # noqa: E402
 
 OUT_DIR = ROOT / "data/wpa/states"
 REPORT = ROOT / "data/wpa/reports/state_reconstruction.md"
-SAMPLE_TIMES = list(range(C.T_TOTAL, 0, -10))  # 420, 410, ... 10
+# the opening whistle, then the MIDDLE of every 10-second bin (415, 405, ... 5): every bin -- including the last 10
+# seconds, which the old grid (420, 410, ... 10) never sampled -- gets one fixed-cadence sample at its centre, so a
+# bin's value is estimated at its average moment, not its edge (changed 2026-09-29 in step 8; see validation.md)
+SAMPLE_TIMES = [C.T_TOTAL] + list(range(C.T_TOTAL - 5, 0, -10))
 
 
 def other(s):
@@ -735,8 +739,9 @@ def report(results):
       "score, `margin`, `pos` (`neutral`/`w_top`/`l_top`/`pending`), `choice`, `rt_diff` (winner minus loser, "
       "seconds), `rt_status`. Includes the break events (`toss`, `defer`, `choose`), `regulation_end` (where the "
       "riding-time point is applied) and overtime events (`section = ot`).")
-    A("- `{kind}_samples.csv` — the state every 10 s of regulation (`t_rem` 420 … 10), for spec 3.1's fixed-cadence "
-      "samples. A bout that ended early (fall, tech fall, injury, DQ) has samples only before its last logged event.\n")
+    A("- `{kind}_samples.csv` — the state every 10 s of regulation (`t_rem` 420, then 415, 405 … 5: the middle of "
+      "every 10-second bin, so the last 10 seconds are sampled too), for spec 3.1's fixed-cadence samples. A bout that "
+      "ended early (fall, tech fall, injury, DQ) has samples only before it ended.\n")
 
     for res in results:
         kind = res["kind"]

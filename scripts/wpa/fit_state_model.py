@@ -25,12 +25,19 @@ WPA steps 5-6 -- the state model: smoothing / shrinkage of the empirical table (
     the same model on the mirrored state. Locked states are exact (a point out of reach gets probability 0). Fitted
     on all eras (the rule hasn't changed), bouts whose rebuilt riding time matches the actual point only.
   * Step 6: isotonic regression along margin for every (era, time, period, position, choice, r) slice.
+  * Which moments feed the table and the models (ROW_SETS; added in step 8, 2026-09-29): the state just BEFORE an
+    in-period event is a biased moment -- it was picked because something was about to happen, and late in close
+    bouts that something is usually the trailing wrestler scoring (in the same cells, leaders won 7-8 points less
+    often in those moments than at the 10-second samples in the last minute). The state just after an event and the
+    break states (toss / defer / pick, where the next event is scheduled, not random) are kept. The row set is chosen
+    on held-out log loss like everything else: all rows (spec 3.1 as written) vs no in-period "before" rows vs
+    samples + break states only.
 
 Validation / tuning (TJ): rotate within E3 -- train on two of 2024/2025/2026 (all E12 data is always in training),
 test on the third year's NCAA bouts; all three rotations; nothing from the test year (NCAA or conference) is used in
 training. Objective = log loss on the test bouts' 10-second samples, both wrestlers' sides, pooled over rotations;
-k / k2 and the table variant (margin and r apart vs pooled; E3 table from NCAA + conference vs NCAA only) are
-chosen by it.
+k / k2, the row set, and the table variant (margin and r apart vs pooled; E3 table from NCAA + conference vs NCAA
+only) are chosen by it -- the row set first (on the step-5 variant), then the table variants on that row set.
 
 Outputs: data/wpa/model/state_table.parquet (final table: n_obs, n_matches, p_emp, p_smooth, w, p_state),
 data/wpa/model/rt_model.joblib, data/wpa/model/backstop.joblib, data/wpa/model/model_params.json,
@@ -68,6 +75,23 @@ M = 15
 SHAPE = (2, 2 * M + 1, 42, 3, len(POS), len(CH))
 TEST_YEARS = [2024, 2025, 2026]
 EPS = 1e-6
+RTL = {"live": 0, "locked_in": 1, "locked_out": 2, "locked_none": 3}  # riding-time lock as a category
+ROW_SETS = {
+    "all": "10-s samples + the state just before and just after every event (spec 3.1 as written)",
+    "no_pre": "10-s samples + the state just after every event + break states; in-period 'just before' states dropped",
+    "samples": "10-s samples + break states only",
+}
+
+
+def model_rows(d, rows):
+    """The moments the table and the models are fitted on (ROW_SETS). Break states (pos pending_*) are always kept:
+    they exist only at the breaks, and the event that follows them is scheduled, not a selection."""
+    if rows == "all":
+        return d
+    brk = d["pos"].str.startswith("pending")
+    if rows == "no_pre":
+        return d[(d["source"] != "event_before") | brk]
+    return d[(d["source"] == "sample") | brk]
 
 
 # ---------------------------------------------------------------------------------------------------------------
@@ -87,35 +111,81 @@ def load():
     two["posc"] = np.select([two["pos"] == "A_top", two["pos"] == "A_bottom"], [1, -1], 0)
     two["chc"] = np.select([two["choice"] == "A", two["choice"] == "B"], [1, -1], 0)
     two["meff"] = (two["margin"] + two["r"]).clip(-M, M).astype(int)
+    two["rtl"] = two["rt_status"].map(RTL).astype(int)
     return two, int(bad.sum())
+
+
+def pre_event_bias(two):
+    """How far the leader's win rate at 'just before' / 'just after' event moments sits from the 10-second samples
+    in the SAME cell (era, margin, time bin, position, eventual riding-time point, lock status). Leaders up 1-3."""
+    key = ["era_group", "margin", "t_bin", "pos", "r", "rt_status"]
+    d0 = two[(two["margin"] > 0) & (two["margin"] <= 3)]
+    out = []
+    for lo, hi, lab in [(1, 2, "0:10–0:29"), (3, 6, "0:30–1:09"), (7, 12, "1:10–2:09"), (13, 41, "periods 1–2")]:
+        d = d0[(d0["t_bin"] >= lo) & (d0["t_bin"] <= hi)]
+        g = d.groupby(key + ["source"])["win"].agg(["mean", "size"]).unstack("source")
+        row = {"Time left": lab}
+        for src, name in (("event_before", "Just before an event"), ("event_after", "Just after an event")):
+            both = g[[("mean", "sample"), ("mean", src), ("size", src), ("size", "sample")]].dropna()
+            w = np.minimum(both[("size", src)], both[("size", "sample")])
+            row[name] = float(np.average(both[("mean", src)] - both[("mean", "sample")], weights=w)) if len(w) else np.nan
+        out.append(row)
+    b0 = d0[d0["t_bin"] == 0]["source"].value_counts()
+    return out, b0
 
 
 # ---------------------------------------------------------------------------------------------------------------
 # riding-time point model
 # ---------------------------------------------------------------------------------------------------------------
-RT_FEATS = ["rt_diff", "t_rem", "posc", "margin", "ei"]
+# Step-8 version (2026-09-29). a_need / b_need = share of the remaining time A / B must still spend on top to reach
+# 1:00 (the knife edge: "A on top, 5 s left, needs all 5" -- the first version, without them, said 58% against 89-96%
+# in the data); chc = who holds the next period choice (+1 A / -1 B); pend = a break state (position not chosen yet).
+# Monotone: increasing in rt_diff and in A being on top; decreasing in a_need and increasing in b_need (the harder
+# the point is for B, the likelier for A -- unconstrained, B's probability could rise with A's own riding-time lead).
+# Margin: two variants, chosen on held-out WIN probability (what the model is for). Monotone in margin keeps
+# WP(S) = sum_r P(r | S) T(S, r) increasing in margin (a leading wrestler rides, a trailing one cuts); free in margin
+# fits the point itself better -- a big lead often ends in a tech fall with no point awarded (r = 0): up 8+, the
+# monotone version says 73% for A's point against 40% in the data -- but lets WP fall as the margin grows.
+RT_FEATS = ["rt_diff", "t_rem", "posc", "margin", "ei", "a_need", "b_need", "chc", "pend"]
+RT_CST_BY = {"monotone in margin": [1, 0, 1, 1, 0, -1, 1, 0, 0], "free in margin": [1, 0, 1, 0, 0, -1, 1, 0, 0]}
+RT_CST = RT_CST_BY["monotone in margin"]
+RT_FEATS_V1, RT_CST_V1 = ["rt_diff", "t_rem", "posc", "margin", "ei"], [1, 0, 1, 0, 0]  # steps 5-7 version
+RT_NEED = C.RT_THRESHOLD
 
 
-def fit_rt(train):
+def rt_frame(df, feats=RT_FEATS):
+    """Feature matrix for A's point, and the mirrored one (B's point)."""
+    t = np.maximum(df["t_rem"].to_numpy(float), 1.0)
+    rt = df["rt_diff"].to_numpy(float)
+    c = {"rt_diff": rt, "t_rem": df["t_rem"].to_numpy(float), "posc": df["posc"].to_numpy(float),
+         "margin": df["margin"].to_numpy(float), "ei": df["ei"].to_numpy(float),
+         "a_need": np.clip((RT_NEED - rt) / t, -3, 3), "b_need": np.clip((RT_NEED + rt) / t, -3, 3),
+         "chc": df["chc"].to_numpy(float), "pend": df["pos"].str.startswith("pending").to_numpy(float)}
+    mir = {"rt_diff": -c["rt_diff"], "posc": -c["posc"], "margin": -c["margin"], "a_need": c["b_need"],
+           "b_need": c["a_need"], "chc": -c["chc"]}
+    return np.column_stack([c[f] for f in feats]), np.column_stack([mir.get(f, c[f]) for f in feats])
+
+
+def fit_rt(train, feats=RT_FEATS, cst=RT_CST):
     d = train[train["rt_model_ok"] == True]  # noqa: E712
     clf = HistGradientBoostingClassifier(max_iter=300, learning_rate=0.08, max_leaf_nodes=31, min_samples_leaf=200,
-                                         monotonic_cst=[1, 0, 1, 0, 0], random_state=0)
-    clf.fit(d[RT_FEATS].to_numpy(float), (d["r"] == 1).to_numpy(int))
+                                         monotonic_cst=cst, random_state=0)
+    clf.fit(rt_frame(d, feats)[0], (d["r"] == 1).to_numpy(int))
+    clf.wpa_feats = feats
     return clf
 
 
 def rt_probs(clf, df):
-    """(pA, pN, pB) for each row: pA from the model, pB from the model on the mirrored state; locked outcomes exact."""
-    X = df[RT_FEATS].to_numpy(float)
-    Xm = X.copy()
-    Xm[:, 0] *= -1  # rt_diff
-    Xm[:, 2] *= -1  # position
-    Xm[:, 3] *= -1  # margin
+    """(pA, pN, pB) for each row: pA from the model, pB from the model on the mirrored state. Exact wherever the
+    clock decides it, per wrestler: 0 when he can no longer reach 1:00 even riding every remaining second, 1 when he
+    keeps it even if ridden every remaining second (spec 2.3's four-way status is coarser: 'live' also covers states
+    where only ONE wrestler can still reach it)."""
+    X, Xm = rt_frame(df, getattr(clf, "wpa_feats", RT_FEATS_V1))
     pa = clf.predict_proba(X)[:, 1]
     pb = clf.predict_proba(Xm)[:, 1]
-    rs = df["rt_status"].to_numpy()
-    pa = np.where(np.isin(rs, ["locked_none", "locked_out"]), 0.0, pa)
-    pb = np.where(np.isin(rs, ["locked_none", "locked_in"]), 0.0, pb)
+    rt, t = df["rt_diff"].to_numpy(float), df["t_rem"].to_numpy(float)
+    pa = np.where(rt - t >= RT_NEED, 1.0, np.where(rt + t >= RT_NEED, pa, 0.0))
+    pb = np.where(rt + t <= -RT_NEED, 1.0, np.where(rt - t <= -RT_NEED, pb, 0.0))
     s = pa + pb
     scale = np.where(s > 1, 1 / np.maximum(s, EPS), 1.0)
     pa, pb = pa * scale, pb * scale
@@ -219,17 +289,73 @@ def mirror_table(P):
 # ---------------------------------------------------------------------------------------------------------------
 # isotonic (step 6)
 # ---------------------------------------------------------------------------------------------------------------
-def isotonic(P, N):
+def isotonic_margin(P, N):
     """Non-decreasing in margin within every slice (spec 3.5), weighted PAV (weights = bouts + 1)."""
     out = P.copy()
     iso = IsotonicRegression(increasing=True, y_min=0, y_max=1)
     x = np.arange(P.shape[1])
     for ix in np.ndindex(P.shape[0], *P.shape[2:]):
         sl = (ix[0], slice(None)) + ix[1:]
-        y = P[sl]
+        y = out[sl]
         if np.all(np.diff(y) >= -1e-12):
             continue
         out[sl] = iso.fit_transform(x, y, sample_weight=N[sl] + 1)
+    return out
+
+
+def isotonic_r(P, N):
+    """Non-decreasing in the eventual riding-time point (B's point <= none <= A's point) in every cell -- the last
+    axis, 3 values; weighted pool-adjacent-violators done in closed form."""
+    out = P.copy()
+    w = N + 1.0
+    for _ in range(2):
+        for i in (0, 1):
+            a, b = out[..., i], out[..., i + 1]
+            bad = a > b + 1e-12
+            if bad.any():
+                avg = (a * w[..., i] + b * w[..., i + 1]) / (w[..., i] + w[..., i + 1])
+                out[..., i] = np.where(bad, avg, a)
+                out[..., i + 1] = np.where(bad, avg, b)
+    return out
+
+
+def isotonic_release(P, N):
+    """The top wrestler can always let his man go (the bottom man is awarded an escape), so being on top at margin m
+    is worth at least being in neutral at m - 1: T(neutral, m - 1) <= T(A_top, m). Its mirror -- the opponent can let
+    A go -- is T(A_bottom, m) <= T(neutral, m + 1): an escape can't lower the escaper's WP. With margin monotonicity
+    this also makes takedowns (neutral m -> top m + 2/3) and reversals (bottom m -> top m + 2) non-negative. Pairwise
+    pooling of the violating pairs (weights = bouts + 1), same period / time / choice / riding-time point."""
+    out = P.copy()
+    w = N + 1.0
+    i_n, i_t, i_b = POS.index("neutral"), POS.index("A_top"), POS.index("A_bottom")
+    for lo_p, hi_p in ((i_n, i_t), (i_b, i_n)):  # lo cell at margin m must not exceed hi cell at margin m + 1
+        lo, hi = out[:, :-1, :, :, lo_p], out[:, 1:, :, :, hi_p]
+        wl, wh = w[:, :-1, :, :, lo_p], w[:, 1:, :, :, hi_p]
+        bad = lo > hi + 1e-12
+        if bad.any():
+            avg = (lo * wl + hi * wh) / (wl + wh)
+            out[:, :-1, :, :, lo_p] = np.where(bad, avg, lo)
+            out[:, 1:, :, :, hi_p] = np.where(bad, avg, hi)
+    return out
+
+
+def release_violations(P):
+    i_n, i_t, i_b = POS.index("neutral"), POS.index("A_top"), POS.index("A_bottom")
+    v = np.concatenate([(P[:, :-1, :, :, lo] - P[:, 1:, :, :, hi]).ravel() for lo, hi in ((i_n, i_t), (i_b, i_n))])
+    return v
+
+
+def isotonic(P, N, rounds=6):
+    """Step 6: monotone in margin, and (m_r table) in the eventual riding-time point and the release option, by
+    alternating the projections, ending on margin; then averaged with its mirror so WP(S) = 1 - WP(mirror S) stays
+    exact (every constraint set is closed under mirroring, so the average still satisfies them). Step 8 added the
+    riding-time point (out-of-order cells let WP fall as a riding-time lead grew) and the release option (escapes
+    with negative WPA)."""
+    out = isotonic_margin(P, N)
+    if P.shape[-1] == 3:
+        for _ in range(rounds):
+            out = isotonic_margin(isotonic_release(isotonic_r(out, N), N), N)
+        out = (out + 1 - mirror_table(out)) / 2
     return out
 
 
@@ -295,50 +421,118 @@ def main():
       "table (TJ, after the sparsity audit): **WP = Σ over r ∈ {A's point, none, B's point} of P(r | state) × "
       "T(state, r)**.\n")
     nb = two.groupby("bout_key")["kind"].first()
+    src_n = two["source"].value_counts()
     A(f"Observations: {len(nb):,} bouts ({(nb == 'ncaa').sum():,} NCAA, {(nb == 'conf').sum():,} conference), "
-      f"{len(two):,} moments counting both sides; {n_bad:,} moments with an undetermined choice holder dropped.\n")
+      f"{len(two):,} moments counting both sides ({src_n.get('sample', 0):,} ten-second samples, "
+      f"{src_n.get('event_before', 0):,} just before an event, {src_n.get('event_after', 0):,} just after); "
+      f"{n_bad:,} moments with an undetermined choice holder dropped. Samples are taken at the opening whistle and "
+      "then at the centre of every 10-second bin (415, 405 … 5 s left).\n")
+    bias, bin0 = pre_event_bias(two)
 
-    scores = {}   # (key, src, k, k2) -> [(ll, n)]
+    scores = {}   # (key, src, rows, k, k2) -> [(ll, n)]
     rot = []
     for Y in TEST_YEARS:
         test = two[(two["year"] == Y) & (two["kind"] == "ncaa") & (two["era_group"] == "E3")]
-        train = two[two["year"] != Y]
         ts = test[test["source"] == "sample"]
-        y = ts["win"].to_numpy()
-        rtm = fit_rt(train)
-        probs = rt_probs(rtm, ts)
-        tt = ts[ts["rt_model_ok"] == True]  # noqa: E712
-        base = (train.loc[train["rt_model_ok"] == True, "r"] == 1).mean()  # noqa: E712
-        res = {"year": Y, "ts": ts, "probs": probs, "n_bouts": ts["bout_key"].nunique(),
-               "rt_ll": logloss(rt_probs(rtm, tt)[0], (tt["r"] == 1).to_numpy()),
-               "rt_base": logloss(np.full(len(tt), base), (tt["r"] == 1).to_numpy()),
-               "margin_only": margin_only(train, ts)}
-        for key, src in VARIANTS:
-            td = table_data(train, src)
+        rot.append({"year": Y, "tr": (two["year"] != Y).to_numpy(), "ts": ts, "y": ts["win"].to_numpy(),
+                    "n_bouts": ts["bout_key"].nunique(), "rt": {}, "fits": {}})
+
+    def rt_for(res, rows, var="monotone in margin"):
+        if (rows, var) not in res["rt"]:
+            rtm = fit_rt(model_rows(two[res["tr"]], rows), cst=RT_CST_BY[var])
+            res["rt"][(rows, var)] = (rtm, rt_probs(rtm, res["ts"]))
+        return res["rt"][(rows, var)]
+
+    def run(key, src, rows):
+        for res in rot:
+            td = table_data(model_rows(two[res["tr"]], rows), src)
             arr = table_arrays(td, key)
             pbs = backstop_grid(fit_backstop(td, key), key)
-            res[(key, src)] = (arr, pbs)
+            res["fits"][(key, src, rows)] = (arr, pbs)
+            probs = rt_for(res, rows)[1]
             for k in K_GRID:
                 for k2 in K2_GRID:
-                    ll = logloss(wp_mixture(blend(arr, pbs, k, k2)[0], ts, probs, key), y)
-                    scores.setdefault((key, src, k, k2), []).append((ll, len(ts)))
-        # riding time ignored altogether: table on current margin only, no split
-        td = table_data(train, "ncaa+conf")
-        arr0 = table_arrays(td.assign(r=0, meff=td["margin"].clip(-M, M)), "meff")
-        pbs0 = backstop_grid(fit_backstop(td.assign(r=0, meff=td["margin"].clip(-M, M)), "meff"), "meff")
-        res["ignore"] = (arr0, pbs0)
-        rot.append(res)
-        print(f"rotation {Y} done {time.time() - t0:.0f}s", flush=True)
+                    ll = logloss(wp_mixture(blend(arr, pbs, k, k2)[0], res["ts"], probs, key), res["y"])
+                    scores.setdefault((key, src, rows, k, k2), []).append((ll, len(res["ts"])))
+        print(f"variant {key} / {src} / {rows} done {time.time() - t0:.0f}s", flush=True)
 
-    pooled = {kk: sum(a * n for a, n in v) / sum(n for _, n in v) for kk, v in scores.items()}
-    best_by_variant = {v: min((pooled[kk], kk) for kk in pooled if kk[:2] == v) for v in VARIANTS}
-    key, src, k, k2 = min(best_by_variant.values())[1]
+    def pooled():
+        return {kk: sum(a * n for a, n in v) / sum(n for _, n in v) for kk, v in scores.items()}
+
+    # stage 1: which moments (on the step-5 table variant); stage 2: table variants on the chosen moments
+    for rows in ROW_SETS:
+        run("m_r", "ncaa+conf", rows)
+    pl = pooled()
+    best_rows = {r: min((pl[kk], kk) for kk in pl if kk[2] == r) for r in ROW_SETS}
+    rows = min(best_rows.values())[1][2]
+    for key_, src_ in VARIANTS[1:]:
+        run(key_, src_, rows)
+    pl = pooled()
+    best_by_variant = {v: min((pl[kk], kk) for kk in pl if kk[:2] == v and kk[2] == rows) for v in VARIANTS}
+    # the k grid is scored BEFORE the step-6 projections (too slow to project every grid point), and the projections
+    # improve some variants more than others -- so variants within 0.001 of the best are scored again after them, at
+    # their best k / k2, and the final choice is made on the model that is actually used (step 8: without this the
+    # pooled key won by 0.0001 before projection and lost clearly after it)
+    best_pre = min(v[0] for v in best_by_variant.values())
+    post = {}
+    for v in VARIANTS:
+        if best_by_variant[v][0] > best_pre + 0.001:
+            continue
+        kk = best_by_variant[v][1]
+        tot = n = 0
+        for res in rot:
+            arr, pbs = res["fits"][(v[0], v[1], rows)]
+            Pi_ = isotonic(blend(arr, pbs, kk[3], kk[4])[0], arr["N"])
+            tot += logloss(wp_mixture(Pi_, res["ts"], rt_for(res, rows)[1], v[0]), res["y"]) * len(res["ts"])
+            n += len(res["ts"])
+        post[v] = tot / n
+    key, src = min(post, key=post.get)
+    _, _, _, k, k2 = best_by_variant[(key, src)][1]
+    print(f"after projections: {post}", flush=True)
+
+    # riding-time model: margin-monotone or free, judged on held-out WP of the chosen table (and on the point itself)
+    rt_cmp = {}
+    for var in RT_CST_BY:
+        tot = tot_rt = n = n_rt = 0
+        for res in rot:
+            if "Pi" not in res:
+                arr, pbs = res["fits"][(key, src, rows)]
+                res["Pi"] = isotonic(blend(arr, pbs, k, k2)[0], arr["N"])
+            rtm_, pr_ = rt_for(res, rows, var)
+            tot += logloss(wp_mixture(res["Pi"], res["ts"], pr_, key), res["y"]) * len(res["ts"])
+            n += len(res["ts"])
+            tt_ = res["ts"][res["ts"]["rt_model_ok"] == True]  # noqa: E712
+            tot_rt += logloss(rt_probs(rtm_, tt_)[0], (tt_["r"] == 1).to_numpy()) * len(tt_)
+            n_rt += len(tt_)
+        rt_cmp[var] = (tot / n, tot_rt / n_rt)
+    rt_var = min(rt_cmp, key=lambda v_: rt_cmp[v_][0])
+    print(f"riding-time model: {rt_cmp} -> {rt_var}", flush=True)
+
+    for res in rot:
+        train = model_rows(two[res["tr"]], rows)
+        ts = res["ts"]
+        rtm, probs = rt_for(res, rows, rt_var)
+        res["probs"] = probs
+        tt = ts[ts["rt_model_ok"] == True]  # noqa: E712
+        base = (train.loc[train["rt_model_ok"] == True, "r"] == 1).mean()  # noqa: E712
+        res["rt_ll"] = logloss(rt_probs(rtm, tt)[0], (tt["r"] == 1).to_numpy())
+        res["rt_base"] = logloss(np.full(len(tt), base), (tt["r"] == 1).to_numpy())
+        rt1 = fit_rt(train, RT_FEATS_V1, RT_CST_V1)  # the steps 5-7 riding-time model, for comparison
+        res["rt_ll_v1"] = logloss(rt_probs(rt1, tt)[0], (tt["r"] == 1).to_numpy())
+        ko = tt[(tt["pos"] == "A_top") & (tt["t_rem"] <= 15) & (RT_NEED - tt["rt_diff"] > 0)
+                & (RT_NEED - tt["rt_diff"] <= tt["t_rem"])]  # A on top, can still reach 1:00, last 15 s
+        res["ride_out"] = ko.assign(p_new=rt_probs(rtm, ko)[0], p_old=rt_probs(rt1, ko)[0])
+        res["margin_only"] = margin_only(train, ts)
+        # riding time ignored altogether: table on current margin only, no split
+        td = table_data(train, "ncaa+conf").assign(r=0)
+        td["meff"] = td["margin"].clip(-M, M)
+        res["ignore"] = (table_arrays(td, "meff"), backstop_grid(fit_backstop(td, "meff"), "meff"))
 
     comp, iso_n, preds = [], [], []
     for res in rot:
         ts, probs = res["ts"], res["probs"]
         y = ts["win"].to_numpy()
-        arr, pbs = res[(key, src)]
+        arr, pbs = res["fits"][(key, src, rows)]
         P = blend(arr, pbs, k, k2)[0]
         Pi = isotonic(P, arr["N"])
         p = wp_mixture(Pi, ts, probs, key)
@@ -357,8 +551,9 @@ def main():
     hp = pd.concat(preds, ignore_index=True)
 
     # ---- final fit on all data
-    rtm = fit_rt(two)
-    td = table_data(two, src)
+    mr = model_rows(two, rows)
+    rtm = fit_rt(mr, cst=RT_CST_BY[rt_var])
+    td = table_data(mr, src)
     bs = fit_backstop(td, key)
     pbs = backstop_grid(bs, key)
     arr = table_arrays(td, key)
@@ -366,6 +561,7 @@ def main():
     Pi = isotonic(P, arr["N"])
     adj = np.abs(Pi - P)
     sym_err = float(np.max(np.abs(Pi + mirror_table(Pi) - 1)))
+    rel_before, rel_after = release_violations(P), release_violations(Pi)
     MODEL.mkdir(parents=True, exist_ok=True)
     g = grid_frame(key)
     tabdf = pd.DataFrame({"era_group": np.array(ERA)[g["ei"]], "margin": g["m"], "t_bin": g["ti"],
@@ -379,11 +575,13 @@ def main():
     tabdf.to_parquet(MODEL / "state_table.parquet", index=False)
     joblib.dump(rtm, MODEL / "rt_model.joblib")
     joblib.dump(bs, MODEL / "backstop.joblib")
-    params = {"table_key": key, "table_data": src, "k": k, "k2": k2, "p_emp_weighting": "per moment",
+    params = {"table_key": key, "table_data": src, "table_rows": rows, "table_rows_desc": ROW_SETS[rows],
+              "k": k, "k2": k2, "p_emp_weighting": "per moment",
               "backstop": "gradient boosted, monotone in margin and riding-time point, symmetrised",
-              "margin_clamp": M, "t_bin_sec": 10, "neighbours": "margin +/-1, t_bin +/-1, diagonal weight 0.5",
+              "margin_clamp": M, "t_bin_sec": 10, "sample_times": "420, then 415, 405, ... 5 (bin centres)",
+              "neighbours": "margin +/-1, t_bin +/-1, diagonal weight 0.5",
               "eras": "E12 = 2015-2023, E3 = 2024-2026", "rt_threshold_sec": C.RT_THRESHOLD,
-              "rt_model_features": RT_FEATS,
+              "rt_model_features": RT_FEATS, "rt_model_variant": rt_var, "rt_model_monotone": RT_CST_BY[rt_var],
               "validation": "rotate within E3: train on two of 2024-26 (+ all E12), test on the third year's NCAA bouts",
               "built": time.strftime("%Y-%m-%d")}
     (MODEL / "model_params.json").write_text(json.dumps(params, indent=2))
@@ -398,9 +596,33 @@ def main():
     A("## Riding-time point model\n")
     A("Boosted trees on riding-time differential, time left, position, margin and era; monotone in the differential "
       "and in A being on top; B's probability = the model on the mirrored state; locked states exact. Fitted on all "
-      "eras, bouts whose rebuilt riding time matches the actual point. Held-out log loss for \"does A get the point\" "
+      "eras (chosen moments, below), bouts whose rebuilt riding time matches the actual point. Held-out log loss for "
+      "\"does A get the point\" "
       "vs a constant base rate: " + ", ".join(f"{r['year']}: {r['rt_ll']:.3f} vs {r['rt_base']:.3f}" for r in rot) +
       ".\n")
+    A("Step 8 revised it (features: the share of the remaining time each wrestler must still ride to reach 1:00, who "
+      "holds the next choice, break state; exact per wrestler whenever the clock decides it; monotone in the riding-time "
+      f"differential and in both wrestlers' remaining need; {rt_var}, chosen on held-out WP below). "
+      "Held-out log loss, steps 5–7 version → now: " + ", ".join(
+          f"{r['year']}: {r['rt_ll_v1']:.4f} → {r['rt_ll']:.4f}" for r in rot) + "."
+      + (" The steps 5–7 version was free in margin, so it fits the point itself better; the margin constraint "
+         "costs that accuracy and buys held-out WP." if rt_var == "monotone in margin" else "")
+      + " The knife edge it was missing — "
+      "A on top in the last 15 s, still able to reach 1:00 only by riding most of what's left:\n")
+    ko = pd.concat([r["ride_out"] for r in rot], ignore_index=True)
+    ko["need"] = pd.cut((RT_NEED - ko["rt_diff"]) / ko["t_rem"], [0, 0.5, 0.8, 1.0],
+                        labels=["under half", "half to 80%", "80% to all of it"])
+    A("| Share of remaining time A must ride | Samples | Actual share with A's point | Steps 5–7 model | Now |")
+    A("|---|---:|---:|---:|---:|")
+    for lab, d in ko.groupby("need", observed=True):
+        A(f"| {lab} | {len(d):,} | {100 * (d['r'] == 1).mean():.0f}% | {100 * d['p_old'].mean():.0f}% | "
+          f"{100 * d['p_new'].mean():.0f}% |")
+    A("\nMonotone in margin or not? Free fits the point itself better (a big lead often ends in a tech fall with no "
+      "point awarded), monotone keeps WP increasing in margin. Judged on held-out WP of the chosen table:\n")
+    A("| Riding-time model | Held-out WP log loss | Held-out log loss, the point itself |\n|---|---:|---:|")
+    for v_, (a_, b_) in rt_cmp.items():
+        A(f"| {v_} | {a_:.4f} | {b_:.4f} |")
+    A(f"\n**Chosen:** {rt_var}.\n")
     hp["t_grp"] = pd.cut(hp["t_rem"], [0, 30, 60, 120, 240, 420],
                          labels=["0:01–0:30", "0:31–1:00", "1:01–2:00", "period 2", "period 1"])
     A("| Time left | Samples | Predicted share with A's point | Actual |\n|---|---:|---:|---:|")
@@ -408,17 +630,44 @@ def main():
         A(f"| {grp} | {len(d):,} | {100 * d['pa'].mean():.1f}% | {100 * (d['r'] == 1).mean():.1f}% |")
     A("")
 
+    A("## Which moments feed the model (added in step 8)\n")
+    A("Spec 3.1 builds the table from the 10-second samples plus the state just before and just after every event. "
+      "Validation (step 8) found the \"just before\" moments are biased: a moment picked because something is about "
+      "to happen is not a typical moment in that state. Leader's win rate at event moments minus the 10-second "
+      "samples' in the same cell (era, margin, time bin, position, eventual riding-time point, lock status), leaders "
+      "up 1–3:\n")
+    A("| Time left | Just before an event | Just after an event |\n|---|---:|---:|")
+    for b in bias:
+        A(f"| {b['Time left']} | {100 * b['Just before an event']:+.1f} pts | {100 * b['Just after an event']:+.1f} pts |")
+    A("\nLate in close bouts the event that is about to happen is usually the trailing wrestler scoring, so those "
+      "moments understate the leader. The old sample grid (420, 410 … 10) also never sampled the last 10 seconds, so "
+      "that bin was built from event moments only — about half of them \"just before\". Samples now sit at the centre "
+      f"of every bin (the last bin now has {int(bin0.get('sample', 0)):,} sample moments with a leader up 1–3), and "
+      "the row set is chosen on held-out log loss (break states — toss, defer, pick — are always kept: they only exist "
+      "at the breaks and what follows them is scheduled, not a selection):\n")
+    A("| Moments used | Best k | Best k2 | Held-out log loss |\n|---|---:|---:|---:|")
+    for r_ in ROW_SETS:
+        ll, kk = best_rows[r_]
+        A(f"| {ROW_SETS[r_]} | {kk[3]} | {kk[4]} | {ll:.4f} |")
+    A(f"\n**Chosen:** {ROW_SETS[rows]}. The same moments train the riding-time model, the backstop and (step 7) the "
+      "tie model.\n")
+
     A("## Table design: which variant\n")
     A("First run keyed the table on margin + eventual riding-time point pooled. That fails: tied with 0:30 left and A "
       "on bottom, A won 70% of E3 bouts where nobody got the point (21 bouts) but 17% where A was up 1 and B got the "
       "point (11) — pooling those as 'effectively tied' gave 49%. Keeping current margin and the point apart makes the "
       "split exact up to one assumption (given the eventual point, the exact riding-time differential adds nothing). "
       "Conference E3 leads also held a little more often than NCAA E3 leads (up 1 in neutral, last minute: 86% vs 81%), "
-      "so conference-in vs NCAA-only was tested too. Best pooled held-out log loss per variant:\n")
-    A("| Table key | Table data | Best k | Best k2 | Log loss |\n|---|---|---:|---:|---:|")
+      "so conference-in vs NCAA-only was tested too. Best pooled held-out log loss per variant (on the chosen "
+      "moments):\n")
+    A("| Table key | Table data | Best k | Best k2 | Log loss (before the step-6 projections) | After them |\n"
+      "|---|---|---:|---:|---:|---:|")
     for v in VARIANTS:
         ll, kk = best_by_variant[v]
-        A(f"| {VLABEL[v[0]]} | {v[1]} | {kk[2]} | {kk[3]} | {ll:.4f} |")
+        A(f"| {VLABEL[v[0]]} | {v[1]} | {kk[3]} | {kk[4]} | {ll:.4f} | "
+          + (f"{post[v]:.4f}" if v in post else "—") + " |")
+    A("\nThe k grid is scored before the projections (too slow to project every grid point); variants within 0.001 "
+      "of the best are scored again after them and the choice is made there, on the model actually used.")
     A(f"\n**Chosen:** {VLABEL[key]}, table from {src}, k = {k} (bouts at which a cell is half its own data), "
       f"k2 = {k2} (pseudo-bouts of backstop in the neighbour estimate).\n")
 
@@ -470,6 +719,9 @@ def main():
       f"({int(((adj > 1e-9) & live).sum()):,} of them cells with data); largest change {adj.max():.3f}, mean change "
       f"among adjusted {adj[adj > 1e-9].mean() if (adj > 1e-9).any() else 0:.4f}. Held-out rotations: "
       + ", ".join(f"{n:,}" for n in iso_n) + " cells adjusted; effect on held-out log loss in the table above.")
+    A(f"- **Release option (step 8):** before the projection {int((rel_before > 1e-9).sum()):,} (neutral m − 1, top m) "
+      f"/ (bottom m, neutral m + 1) pairs out of order, largest {rel_before.max():.3f}; after: "
+      f"{int((rel_after > 1e-6).sum()):,} above 0.000001, largest {max(rel_after.max(), 0):.2e}.")
     A(f"- Symmetry: max |WP(S) + WP(mirror S) − 1| over the whole table = {sym_err:.2e}.")
     A("- Files: `data/wpa/model/state_table.parquet` (every cell: `n_obs`, `n_matches`, `p_emp`, `p_emp_match`, "
       "`p_backstop`, `p_smooth` = neighbours + backstop, `w`, `p_blend`, `p_state` = after monotonicity; `rt_point` = "
@@ -489,14 +741,15 @@ def main():
     A("| State | Era | P(A point) | P(B point) | WP |\n|---|---|---:|---:|---:|")
     for lab, mg, t, per, pos, rt, era in ex:
         df = pd.DataFrame([{"rt_diff": rt, "t_rem": t, "posc": 1 if pos == "A_top" else -1 if pos == "A_bottom" else 0,
-                            "margin": mg, "ei": 1 if era == "E3" else 0, "rt_status": C.rt_status(rt, t),
-                            "ti": min(41, t // 10), "pi": per - 1, "posi": POS.index(pos), "chi": CH.index("none")}])
+                            "margin": mg, "ei": 1 if era == "E3" else 0, "rt_status": C.rt_status(rt, t), "pos": pos,
+                            "chc": 0, "ti": min(41, t // 10), "pi": per - 1, "posi": POS.index(pos),
+                            "chi": CH.index("none")}])
         pr = rt_probs(rtm, df)
         A(f"| {lab} | {era} | {100 * pr[0][0]:.0f}% | {100 * pr[2][0]:.0f}% | "
           f"{100 * wp_mixture(Pi, df, pr, key)[0]:.1f}% |")
     A("\n(Step 8 runs the spec's full list of hand-checked states, with the strength layer.)\n")
     REP.write_text("\n".join(L) + "\n")
-    print("wrote", REP, f"({time.time() - t0:.0f}s)", "chosen", key, src, k, k2)
+    print("wrote", REP, f"({time.time() - t0:.0f}s)", "chosen", key, src, rows, k, k2)
 
 
 if __name__ == "__main__":
