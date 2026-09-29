@@ -1102,7 +1102,7 @@ then read the numeric ID out of the matching result's `eventSelected(ID, 'name',
   - Byes are not credited, so a few totals may be ½–1 low.
   - Points are recomputed from `matches.json` rather than read from `parsed/wrestlers.json`. That file is keyed by seed and silently drops entrants whose name doesn't match the seeds file (e.g. 2018 197 Kyle Conel, 3rd). The script prints a cross-check against it; first build: 0 differences for every wrestler it contains.
 - **Wrestler identity** across the two sources is (year, weight, surname + first initial). If two entrants in one bracket share that key (2017 125 Jose/Joshua Rodriguez), the script switches to full name for them and prints them as "ambiguous".
-- **Left off the chart:** wrestlers with no takedowns either way (share undefined; 7 at first build) and wrestlers with no play-by-play for any wrestled match (81, nearly all 0-point entrants). Both counts are shown in the page note.
+- **Left off the chart:** wrestlers with no takedowns either way (share undefined; 7 at first build) and wrestlers with no play-by-play for any wrestled match (81, nearly all 0-point entrants). The page no longer shows these counts (note removed 2026-09-29); the build script prints them.
 - **Falls:** the play-by-play doesn't log falls, but the official result does, and points use the official result. Seth Gross's 2018 semifinal was a real fall in overtime after his sudden-victory takedown, so he gets 2 bonus points for it.
 
 **Rebuilding after a new season (e.g. 2027):**

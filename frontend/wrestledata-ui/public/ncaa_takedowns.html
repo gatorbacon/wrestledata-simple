@@ -40,7 +40,6 @@
 }
 #td-tip .n { font-weight: 600; }
 #td-tip .m { color: var(--muted); }
-.td-note { color: var(--muted-2); font-size: 0.8rem; margin: 12px 0 0; }
 .td-findings { margin: 0; padding-left: 20px; color: var(--text); font-size: 0.92rem; }
 .td-findings li { margin-bottom: 6px; }
 .data-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
@@ -73,7 +72,6 @@ details summary { cursor: pointer; color: var(--muted); font-size: 0.9rem; margi
     <svg id="td-svg" role="img" aria-label="Scatter plot of takedown share against NCAA team points"></svg>
     <div id="td-tip"></div>
   </div>
-  <p class="td-note" id="td-note"></p>
   <details>
     <summary>Table view</summary>
     <div class="td-tbl"><table class="data-table"><thead><tr id="td-thead"></tr></thead><tbody id="td-tbody"></tbody></table></div>
@@ -238,10 +236,6 @@ details summary { cursor: pointer; color: var(--muted); font-size: 0.9rem; margi
       Y1 = Math.max(30, Math.ceil(Math.max(...ALL.map(r => r.pts)) / 5) * 5);
       const yrs = META.years;
       document.getElementById("td-sub").textContent = `Every wrestler at every NCAA Championships, ${yrs[0]}–${yrs[yrs.length - 1]} (no 2020 tournament). Across: the share of all takedowns in their matches that they scored. Up: the team points they scored (advancement + bonus + placement).`;
-      document.getElementById("td-note").textContent =
-        `Line with diamonds: average team points in each 10%-wide band of takedown share (bands under 5 wrestlers skipped); most wrestlers in every band score 0–3 points, and those dots stack on top of each other, which is why the average sits below most visible dots. ` +
-        `Team points use the NCAA tables (advancement 1 / ½, bonus 1 / 1½ / 2, placement 16-12-10-9-7-6-4-3); bye points are not counted. Takedowns come from play-by-play. ` +
-        `Not plotted: ${META.no_td} wrestlers with no takedowns either way and ${META.no_pbp} with no play-by-play for any match.`;
       bandTable(); draw();
       let t; window.addEventListener("resize", () => { clearTimeout(t); t = setTimeout(draw, 120); });
     })
