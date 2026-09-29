@@ -1027,6 +1027,13 @@ The replay is also used to build the seed analysis report (`generate_report.py`)
 
 **This is raw, not parsed** at the source — each event is free text with an embedded clock time (e.g. `"Takedown 3 (0:47)"`). It IS parsed downstream now: `scripts/analysis/parse_bout_pbp.py` turns this into clean per-event rows (running score, position, time-remaining, stalling state) — see [Live Win-Probability Model](#live-win-probability-model-lab) below for the full pipeline built on top of it.
 
+**Structural facts found by the WPA build (2026-09-29, `scripts/wpa/`):**
+- **A period with no events and no notes has no column at all.** `['Choice 1', 'Period 2', ...]` = a scoreless period 1; `[..., 'Choice 2']` as the last column = period 3 was reached but nothing was scored in it. Which periods a bout reached comes from the `Choice N` columns and the result type, not from which `Period N` columns exist. Same for overtime: a scoreless sudden victory has no `Overtime 1` column before `Choice 3`/`Overtime 2`.
+- **Fall time is in the official results, not the play-by-play:** NCAA `parsed/matches.json` puts it in `score` as elapsed match time (`"6:37"`; `"7:37"` = a fall in sudden victory), conference results in `time`. Every fall in both has one.
+- **The end-of-regulation riding-time point** is an unclocked `Riding Time` event in the `Period 3` column (occasionally in another column, incl. `Overtime 1` — sudden victory has no riding time, so it's the regulation point). In ~80 conference bouts the scorekeeper didn't log it at all: the official score is exactly one point higher for one side. Some conference tournaments don't have riding time recorded reliably (ACC 2024/2025, Pac-12 2020/2026, MAC 2017, Big 12 2020 — see `data/wpa/reports/state_reconstruction.md`).
+- **`Choice 3`** (before tiebreaker periods) can hold one pick or both (`Bottom`, `Bottom`); **position declarations also appear inside period columns** (`Bottom (1:50)`) — restarts after a stoppage, or a period's choice logged in the wrong column.
+- **Round labels can be wrong for rematch pairs** (2019 125 bout 61 is labelled `QF` but is the 5th-place fall) — see the rematch gotcha below.
+
 **Known gotcha (winner/loser column order):** the two wrestler columns in the underlying play-by-play tables are NOT consistently ordered winner-then-loser — position (left/right) reflects TrackWrestling's own display assignment, not who won. `scrape_ncaa_bout_detail.py` resolves this by matching the "X defeated Y" headline against each column's name, which is already handled in the `winner`/`loser` split above — but any new code parsing `columns[].events[].side` must trust the `side` field, not column position, since `side` was already resolved correctly against the headline at scrape time (it's not raw column order).
 
 ### Conference championships (2026-09-11): same source, more data, lower-DPG wrestlers too
@@ -1196,6 +1203,23 @@ Answers "given the match state right now (score, clock, position, DPG, riding ti
 - **DPG resolution failures silently drop whole bouts** from training (Known Gotcha #14) — a real pipeline fragility upstream of this model, not something fixed here.
 
 ---
+
+## Win Probability + WPA Model (spec build, started 2026-09-29)
+
+A rebuild of the win-probability idea above, done properly to TJ's spec (`wrestling_wpa_spec.md`: empirical state table with shrinkage, seed/rank strength layer that fades with the clock, WPA per event). **Separate from the Lab model above** — nothing here touches `data/pbp/`, `scripts/win_prob/` or the site. Code in `scripts/wpa/`, everything it writes under `data/wpa/`; each step writes a report to `data/wpa/reports/`.
+
+| Step | Script | Output |
+|---|---|---|
+| 1. Data audit | `scripts/wpa/audit_data.py` | `data/wpa/reports/data_audit.md` |
+| 2. State reconstruction | `scripts/wpa/build_states.py --kind ncaa\|conf\|both` (shared definitions: `scripts/wpa/wpa_common.py`) | `data/wpa/states/{ncaa,conf}_{bouts,events,samples}.csv`, `data/wpa/reports/state_reconstruction.md` |
+| 3. Empirical state table | `scripts/wpa/build_table.py` | `data/wpa/table/{ncaa,conf}_obs.csv.gz` (winner-side observations), `{ncaa,conf}_table.csv` (cells: n_obs, n_matches, wins, p_emp, p_emp_match) |
+| 4. Sparsity audit | `scripts/wpa/sparsity_audit.py` | `data/wpa/reports/sparsity_audit.md` + `img/` heatmaps — finding: the spec key is too fine (56% of E3 NCAA moments in cells with < 50 bouts, mostly from riding-time bins); backstop needed; conference E3 matches NCAA E3 and is the best way to thicken E3 |
+
+**Decisions (TJ, 2026-09-29):** riding time rebuilt from position; unclocked events placed between clocked neighbours (fraction fitted per event type, validated on held-out years); pre-2019 NCAA seeds 17–33 = unseeded; rules eras E1 2015 / E2 2016–23 / E3 2024–26 with **E3 as the anchor** (older eras fill gaps, validation judged on E3); conference rank leakage accepted with a caveat; falls end at their official time. **Choice encoding:** the disk toss is at the start of period 2, so nobody holds a choice during period 1 (the spec's wording would put a future coin flip into period-1 states); the toss, defer and pick are separate events at the break.
+
+**Decisions after the sparsity audit (TJ, 2026-09-29):** (1) **riding time is factored out of the state table** — WP = Σ P(riding-time point: A / none / B) × WP_table(margin + that point, time, period, position, choice); the point probability is its own model (riding-time differential, time left, position, margin), fitted on all eras since the riding-time rule hasn't changed; this replaces the spec's riding-time bins as a table dimension (the spec key left 56% of E3 moments in cells with < 50 bouts; factored out, E3 NCAA + conference: 12%); (2) conference 2024–26 states go into the table now (conference rank still waits for step 10); (3) validation rotates within E3 — train on two of 2024/2025/2026, test on the third NCAA year, all three rotations; (4) the 214 NCAA bouts set aside for riding-time reconstruction errors go back into the table, but not into the riding-time model; (5) the seed effect is fit on all NCAA years (2015–18 seeds 17–33 unseeded), then checked for E3; (6) a tie at the end of regulation is worth the overtime win rate, with the seed effect in overtime fit on all overtime bouts; (7) injury defaults / DQs stay in; (8) outputs as parquet (pyarrow installed in `.venv`); (9) `data/wpa/states/` and `data/wpa/table/` are gitignored (rebuild in about a minute with steps 2–3).
+
+**Storage:** each bout once, from the winner's side (`w`/`l`); `wpa_common.perspective()` / `mirror()` produce the two A-relative views. `rt_status()` is the spec's riding-time lock (threshold `>= 60` s). Step 3 filters on the bouts file's `state_table_ok` (NCAA 96.8% of bouts, conference 89.3%; reasons in `state_table_reason`).
 
 ## Official Team Schedule Scraping (Source of Truth)
 
