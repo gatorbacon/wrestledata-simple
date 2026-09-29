@@ -52,6 +52,7 @@ Everything the frontend reads lives under `frontend/wrestledata-ui/public/data/`
 | Team Analysis | `ncaa_team_report.html` | Per-team deep-dive with dual meet stats |
 | Conference Analysis | `ncaa_conf_analysis.html` | Conference-level aggregated stats |
 | Takedowns & Team Points | `ncaa_takedowns.html` | Scatter of every NCAA entrant since 2015: takedown share vs. team points. Rebuild steps: "NCAA Takedowns & Team Points page" below |
+| Career Takedowns | `ncaa_career_takedowns.html` | Scatter of every wrestler with 5+ NCAA + conference-tournament matches: career takedown share vs. career win %. Rebuild steps: "NCAA Career Takedowns page" below |
 | DPG Leaderboard | `leaderboards/mat_value.html` | Full DPG rankings by weight |
 
 ### Core JS Files
@@ -1118,6 +1119,46 @@ then read the numeric ID out of the matching result's `eventSelected(ID, 'name',
 3. Preview locally: `cd frontend/wrestledata-ui/public && python3 -m http.server 8792`, then open `http://127.0.0.1:8792/ncaa_takedowns.html`.
 4. Deploy like any MatSavant change: the `matsavant-dev` branch gives a free preview, and merging to `main` is a paid production deploy. Only the JSON changes on a normal rebuild.
 5. Optional: add a call-out for a notable new dot in `CALLOUTS` in `ncaa_takedowns.html`, and update the "first build" numbers in this section.
+
+### NCAA Career Takedowns page (`ncaa_career_takedowns.html`, added 2026-09-29)
+
+**What it is:** a live MatSavant page under Events → NCAA Championships → Archive → "Career Takedowns" (also a card on `events/ncaa.html`). It sits under NCAA but deliberately includes conference tournaments too (TJ, 2026-09-29).
+- **What's plotted:** one dot per wrestler, pooling every NCAA-tournament AND conference-tournament match we have play-by-play for, 2015 onward. Only wrestlers with at least 5 such matches (`MIN_MATCHES`) are shown.
+- **Axes:** x = career takedown share (takedowns scored ÷ scored + allowed). y = career win % in the same matches.
+- **Colors:** best NCAA finish in those years: champion / All-American (2nd–8th) / NCAA qualifier / conference only. Chips toggle each group.
+- **Band line:** the line with diamonds is the average win % per 10% band of takedown share. The band table also shows the pooled win % (all the band's matches added together).
+- **Other features:** sortable per-wrestler table (first 500 rows), hover tooltips.
+- **Styling:** light theme only; redraws at the real container width. No call-outs and no footnote (removed at TJ's request).
+- **First build:** 1,879 wrestlers, r = 0.79, 90–100% band averages 85.1% wins. Of the 991 wrestlers under 50% share, 146 have a winning record. Seth Gross is the only one of 72 champions under 50% (25-27 takedowns, 12-3).
+
+**Files:**
+| File | Role |
+|---|---|
+| `scripts/analysis/career_td_share/build_data.py` | Builds the data; the only thing to run |
+| `frontend/wrestledata-ui/public/data/reports/ncaa_career_td_share.json` | Output: `{meta: {years, min, plotted, few, no_td, linked_pct, built}, rows: [...]}`. Each row: `name`, `team` (up to two teams, e.g. transfers), `yrs` [first, last], `best` NCAA place 1-8 or null, `ncaa` number of NCAA tournaments, `linked` (matched to a career file), `r` = [wins, losses, TDs for, TDs against] |
+| `frontend/wrestledata-ui/public/ncaa_career_takedowns.html` | The page. Self-contained script; all text and tables are computed from the JSON |
+| `event-tabs.js`, `events/ncaa.html`, `sitemap.xml`, `scripts/generate_matsavant_sitemap.py` | Tab, landing card, sitemap entry |
+
+**Inputs:**
+- **NCAA play-by-play:** `data/{year}/ncaa-tourney/bout_detail/`.
+- **Conference play-by-play:** `data/{year}/{conf}-tourney/bout_detail/` (ACC, Big Ten, Big 12, MAC, Pac-12, SoCon where they exist; complete brackets only; no EIWA). Both are loaded through `scripts/analysis/td_differential_report.py` (`R.load`, `R.load_conf`), and never-wrestled forfeits are dropped.
+- **NCAA placements:** from `data/{year}/ncaa-tourney/parsed/matches.json` (Final/3rd/5th/7th matches).
+
+**Linking matches to one wrestler (career identity):** a play-by-play bout names a wrestler only as (year, name, team).
+1. **Name to season ID:** each (year, name, team) is matched to a `season_wrestler_id` through the season rosters in `mt/processed_data/ncaa_men/{year}/{Team}.json`. Same surname + first initial first; then team (normalized, with "University/State/St./of" etc. ignored); then weight; then exact full name to break ties.
+2. **Season ID to career:** that ID is mapped to a career through `data/careers/ncaa_men/career_*.json` (`seasons` dict).
+3. **Fallback:** anything that can't be linked is grouped by (surname + first initial, normalized team) instead.
+
+First build linked 99.5% of match sides. About 10 names appear as two dots: real different people, or careers the career files already split (e.g. Zeke Moisey has two career files). Fixing those is a career-merge job, not a change to this script.
+
+**Rebuilding after a new season (e.g. 2027):**
+1. The new year's NCAA play-by-play (`data/2027/ncaa-tourney/bout_detail/`) and NCAA results (`parsed/matches.json`, for placements) must exist. Conference `bout_detail` for 2027 is picked up wherever it exists.
+2. **Link the new season into the NCAA career files first** (`data/careers/ncaa_men/`, the normal NCAA career-linking pipeline). The new season's rosters must also be in `mt/processed_data/ncaa_men/2027/`. Otherwise 2027 wrestlers fall back to name+team grouping. Returning wrestlers still get split into two dots, and the printed "mapped to a career" rate drops below ~99%.
+3. Run `.venv/bin/python scripts/analysis/career_td_share/build_data.py`. Years are detected automatically, with no code change. Check the printout: linked rate ~99%+, and the number of "unlinked plotted" wrestlers stays small.
+4. Preview: `cd frontend/wrestledata-ui/public && python3 -m http.server 8795`, then open `http://127.0.0.1:8795/ncaa_career_takedowns.html`.
+5. Deploy like any MatSavant change (`matsavant-dev` preview, or `main` = paid production deploy). Only the JSON changes on a normal rebuild.
+
+It's natural to rebuild this together with "NCAA Takedowns & Team Points" above; they share the takedown loaders.
 
 ### Conference-tournament official results (built from team scrapes, 2026-09-19)
 

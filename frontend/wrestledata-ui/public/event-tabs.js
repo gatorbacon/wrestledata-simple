@@ -17,6 +17,7 @@
     { label: "Conference Leaderboard", url: "/ncaa_conf_leaderboard.html" },
     { label: "Conference Analysis", url: "/ncaa_conf_analysis.html" },
     { label: "Takedowns", url: "/ncaa_takedowns.html" },
+    { label: "Career Takedowns", url: "/ncaa_career_takedowns.html" },
   ];
   const NCAA_LIVE_URL = "/ncaa_live.html";
   const NCAA_HUB_URL = "/events/ncaa.html";

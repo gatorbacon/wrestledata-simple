@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NCAA Championships — Career Takedowns | MatSavant</title>
+  <meta name="description" content="Career takedown share vs. career win percentage for every wrestler with 5+ NCAA and conference-tournament matches since 2015.">
+  <link rel="stylesheet" href="/styles.css?v=20260921" />
+  <!-- Data: /data/reports/ncaa_career_td_share.json, built by
+       scripts/analysis/career_td_share/build_data.py. How to rebuild: docs/matsavant.md,
+       "NCAA Career Takedowns page". -->
+  <style>
+.report-header { text-align: center; margin-bottom: 28px; }
+.report-header h1 { font-size: 2rem; font-weight: 700; color: var(--text); letter-spacing: -0.5px; }
+.report-header p { color: var(--muted); margin: 6px auto 0; font-size: 0.95rem; max-width: 780px; }
+.section { background: var(--panel); border: 1px solid var(--border); border-radius: var(--r-md); padding: 24px 28px; margin: 0 auto 32px; max-width: 1100px; }
+@media (max-width: 640px) { .section { padding: 16px 12px; } .report-header h1 { font-size: 1.5rem; } }
+.td-viz { --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s0: #b5b3aa; --grid: #ece7dc; --axis: #cfc7b8; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--border); border-radius: 999px; background: var(--panel); color: var(--text); padding: 4px 11px; font: inherit; font-size: .85rem; cursor: pointer; }
+.chip[aria-pressed="false"] { color: var(--muted-2); opacity: .6; }
+.dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.stats { display: flex; flex-wrap: wrap; gap: 6px 22px; color: var(--muted); font-size: .85rem; margin-bottom: 4px; }
+.stats b { color: var(--text); font-size: .95rem; }
+.chart { position: relative; }
+.chart svg { display: block; width: 100%; touch-action: pan-y; }
+#tip { position: absolute; pointer-events: none; background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: .82rem; box-shadow: 0 4px 16px rgba(0,0,0,.10); display: none; min-width: 200px; max-width: 270px; z-index: 2; color: var(--text); }
+#tip .n { font-weight: 600; } #tip .m { color: var(--muted); }
+.data-table { width: 100%; border-collapse: collapse; font-size: .85rem; }
+.data-table th { background: var(--panel-2); color: var(--muted); padding: 8px 12px; text-align: left; font-weight: 600; text-transform: uppercase; font-size: .72rem; letter-spacing: .3px; border-bottom: 1px solid var(--border); position: sticky; top: 0; cursor: pointer; white-space: nowrap; }
+.data-table td { padding: 6px 12px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+.r, .data-table th.r { text-align: right; font-variant-numeric: tabular-nums; }
+.tbl { max-height: 440px; overflow: auto; border: 1px solid var(--border); border-radius: 8px; margin-top: 10px; }
+details summary { cursor: pointer; color: var(--muted); font-size: .9rem; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <script src="/analytics.js?v=20260911"></script>
+  <script src="/header.js?v=20260908"></script>
+  <script src="/event-tabs.js?v=20260929b"></script>
+  <div class="page-container">
+
+<div class="report-header">
+  <h1>Career Takedowns &amp; Winning</h1>
+  <p id="sub">Every wrestler with 5+ NCAA and conference-tournament matches since 2015: career takedown share vs. career win percentage.</p>
+</div>
+
+<div class="section td-viz">
+  <div class="chips" id="chips"></div>
+  <div class="stats" id="stats"></div>
+  <div class="chart" id="chart"><svg id="svg" role="img" aria-label="Scatter plot of career takedown share against career win percentage"></svg><div id="tip"></div></div>
+  <details><summary>Table view</summary><div class="tbl"><table class="data-table"><thead><tr id="thead"></tr></thead><tbody id="tbody"></tbody></table></div></details>
+</div>
+
+<div class="section">
+  <h2 style="font-size:1.2rem;margin:0 0 10px">By takedown share</h2>
+  <div style="overflow-x:auto"><table class="data-table" id="bands"></table></div>
+</div>
+
+  </div>
+<script>
+(function(){
+"use strict";
+const GROUPS = [
+  {key:"champ", label:"NCAA champion",       color:"--s1", test:r=>r.best===1},
+  {key:"aa",    label:"All-American (2nd–8th)", color:"--s2", test:r=>r.best>=2},
+  {key:"qual",  label:"NCAA qualifier",       color:"--s3", test:r=>!r.best&&r.ncaa>0},
+  {key:"conf",  label:"Conference only",      color:"--s0", test:r=>!r.best&&!r.ncaa},
+];
+const ORD=["","NCAA champion","2nd","3rd","4th","5th","6th","7th","8th"];
+const on={champ:true,aa:true,qual:true,conf:true};
+const svg=document.getElementById("svg"), tip=document.getElementById("tip");
+const viz=document.querySelector(".td-viz");
+const css=n=>getComputedStyle(viz).getPropertyValue(n).trim();
+const el=(t,a,p)=>{const e=document.createElementNS("http://www.w3.org/2000/svg",t);for(const k in a)e.setAttribute(k,a[k]);p&&p.appendChild(e);return e;};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let ALL=[],M0={};
+let shown=[],hits=[],W=900,H=540;
+function bands(pts){const out=[];for(let lo=0;lo<100;lo+=10){const s=pts.filter(p=>p.td>=lo&&(p.td<lo+10||(lo===90&&p.td===100)));
+  if(s.length>=5){const w=s.reduce((t,p)=>t+p.w,0),n=s.reduce((t,p)=>t+p.n,0);out.push({lo,k:s.length,avg:s.reduce((t,p)=>t+p.wp,0)/s.length,pooled:100*w/n,
+  aa:s.filter(p=>p.best).length});}}return out;}
+function pearson(p){const n=p.length,mx=p.reduce((s,q)=>s+q.td,0)/n,my=p.reduce((s,q)=>s+q.wp,0)/n;let a=0,b=0,c=0;for(const q of p){a+=(q.td-mx)*(q.wp-my);b+=(q.td-mx)**2;c+=(q.wp-my)**2;}return a/Math.sqrt(b*c);}
+function draw(){
+  W=document.getElementById("chart").clientWidth||900; const small=W<560;
+  H=Math.round(Math.max(360,Math.min(560,W*.62)));
+  const M={l:small?44:60,r:small?18:26,t:16,b:small?48:56};
+  const sx=v=>M.l+v/100*(W-M.l-M.r), sy=v=>H-M.b-v/100*(H-M.t-M.b);
+  svg.setAttribute("viewBox",`0 0 ${W} ${H}`);svg.setAttribute("height",H);svg.innerHTML="";
+  shown=ALL.filter(r=>on[r.g.key]);
+  const txt=(x,y,s,a)=>{const t=el("text",Object.assign({x,y,fill:css("--muted-2"),"font-size":12},a||{}),svg);t.textContent=s;return t;};
+  for(let y=0;y<=100;y+=10){el("line",{x1:M.l,x2:W-M.r,y1:sy(y),y2:sy(y),stroke:css("--grid")},svg);txt(M.l-8,sy(y)+4,y+"%",{"text-anchor":"end"});}
+  for(let x=0;x<=100;x+=small?20:10)txt(sx(x),H-M.b+18,x+"%",{"text-anchor":"middle"});
+  el("line",{x1:M.l,x2:W-M.r,y1:H-M.b,y2:H-M.b,stroke:css("--axis")},svg);
+  el("line",{x1:sx(50),x2:sx(50),y1:M.t,y2:H-M.b,stroke:css("--axis"),"stroke-dasharray":"4 4"},svg);
+  el("line",{x1:M.l,x2:W-M.r,y1:sy(50),y2:sy(50),stroke:css("--axis"),"stroke-dasharray":"4 4"},svg);
+  txt(sx(50)+6,H-M.b-6,"even on takedowns");
+  txt((M.l+W-M.r)/2,H-10,small?"Career takedown share":"Career takedown share (scored ÷ all takedowns in their matches)",{"text-anchor":"middle",fill:css("--muted"),"font-size":13});
+  txt(-(M.t+H-M.b)/2,14,"Career win percentage",{transform:"rotate(-90)","text-anchor":"middle",fill:css("--muted"),"font-size":13});
+  const order={conf:0,qual:1,aa:2,champ:3}, rad=small?3:4;
+  for(const r of [...shown].sort((a,b)=>order[a.g.key]-order[b.g.key])){
+    r.cx=sx(r.td);r.cy=sy(r.wp);
+    el("circle",{cx:r.cx,cy:r.cy,r:rad,fill:css(r.g.color),"fill-opacity":r.g.key==="conf"?.6:.85,stroke:"#ffffff","stroke-width":1.2},svg);
+  }
+  const B=bands(shown);hits=[];
+  if(B.length>1){const d=B.map((b,i)=>`${i?"L":"M"}${sx(b.lo+5)},${sy(b.avg)}`).join("");
+    el("path",{d,fill:"none",stroke:"#ffffff","stroke-width":5},svg);el("path",{d,fill:"none",stroke:css("--text"),"stroke-width":2},svg);
+    for(const b of B){const cx=sx(b.lo+5),cy=sy(b.avg);el("rect",{x:cx-4,y:cy-4,width:8,height:8,fill:css("--text"),stroke:"#fff","stroke-width":2,transform:`rotate(45 ${cx} ${cy})`},svg);hits.push(Object.assign({},b,{cx,cy}));}}
+  const avg=a=>a.length?(a.reduce((s,r)=>s+r.wp,0)/a.length).toFixed(1)+"%":"–";
+  document.getElementById("stats").innerHTML=`<span><b>${shown.length.toLocaleString()}</b> wrestlers</span>`+(shown.length>2?
+    `<span>correlation <b>r = ${pearson(shown).toFixed(2)}</b></span><span>under 50% share: <b>${shown.filter(r=>r.td<50).length}</b> wrestlers, avg win <b>${avg(shown.filter(r=>r.td<50))}</b></span><span>winning record while under 50%: <b>${shown.filter(r=>r.td<50&&r.w>r.l).length}</b></span>`:"");
+  table();
+}
+function place(cx,cy){let left=cx+14;tip.style.display="block";if(left+tip.offsetWidth>W)left=Math.max(0,cx-14-tip.offsetWidth);tip.style.left=left+"px";tip.style.top=Math.max(0,cy-10)+"px";}
+function hover(ev){
+  const b=svg.getBoundingClientRect(),px=ev.clientX-b.left,py=ev.clientY-b.top;
+  const bh=hits.find(h=>(h.cx-px)**2+(h.cy-py)**2<100);
+  if(bh){tip.innerHTML=`<div class="n">${bh.lo}–${bh.lo+10}% takedown share</div><div>${bh.k} wrestlers, ${bh.aa} All-Americans</div><div>Average win % ${bh.avg.toFixed(1)}%</div><div class="m">All their matches pooled: ${bh.pooled.toFixed(1)}%</div>`;return place(bh.cx,bh.cy);}
+  let best=null,bd=196;for(const r of shown){const d=(r.cx-px)**2+(r.cy-py)**2;if(d<bd){bd=d;best=r;}}
+  if(!best){tip.style.display="none";return;}
+  const same=shown.filter(r=>r!==best&&Math.abs(r.cx-best.cx)<1&&Math.abs(r.cy-best.cy)<1).length;
+  const yrs=best.yrs[0]===best.yrs[1]?best.yrs[0]:`${best.yrs[0]}–${best.yrs[1]}`;
+  tip.innerHTML=`<div class="n">${esc(best.name)}</div><div class="m">${esc(best.team)} · ${yrs}</div>`+
+    `<div>Record ${best.w}-${best.l} (${best.wp.toFixed(1)}%)</div><div>Takedowns ${best.f}-${best.a} (${best.td.toFixed(1)}%)</div>`+
+    `<div class="m">${best.best?"Best NCAA finish: "+ORD[best.best]:best.ncaa?"NCAA qualifier, didn't place":"No NCAA matches in our data"}${best.ncaa?` · ${best.ncaa} NCAA tournament${best.ncaa>1?"s":""}`:""}</div>`+
+    (same?`<div class="m">+${same} more at this exact spot</div>`:"");
+  place(best.cx,best.cy);
+}
+svg.addEventListener("pointermove",hover);svg.addEventListener("pointerdown",hover);svg.addEventListener("pointerleave",()=>tip.style.display="none");
+const COLS=[["name","Wrestler"],["team","Team"],["yrs","Years"],["best","Best NCAA"],["n","Matches"],["rec","Record"],["wp","Win %"],["tds","TDs"],["td","TD share"]];
+let sk="wp",sd=-1;
+function table(){
+  document.getElementById("thead").innerHTML=COLS.map(([k,l])=>`<th data-k="${k}" class="${["best","n","wp","td"].includes(k)?"r":""}">${l}${sk===k?(sd>0?" ▲":" ▼"):""}</th>`).join("");
+  document.querySelectorAll("#thead th").forEach(th=>th.onclick=()=>{const k=th.dataset.k;if(["rec","tds","team"].includes(k))return;sd=sk===k?-sd:1;sk=k;table();});
+  const v=r=>sk==="best"?(r.best||99):sk==="yrs"?r.yrs[0]:r[sk];
+  const s=[...shown].sort((a,b)=>(v(a)>v(b)?1:v(a)<v(b)?-1:0)*sd).slice(0,500);
+  document.getElementById("tbody").innerHTML=s.map(r=>`<tr><td>${esc(r.name)}</td><td>${esc(r.team)}</td><td>${r.yrs[0]===r.yrs[1]?r.yrs[0]:r.yrs[0]+"–"+r.yrs[1]}</td><td class="r">${r.best?(r.best===1?"1st":ORD[r.best]):r.ncaa?"Qual.":"–"}</td><td class="r">${r.n}</td><td>${r.w}-${r.l}</td><td class="r">${r.wp.toFixed(1)}%</td><td>${r.f}-${r.a}</td><td class="r">${r.td.toFixed(1)}%</td></tr>`).join("")+
+    (shown.length>500?`<tr><td colspan="9" style="color:var(--muted-2)">Showing the first 500 of ${shown.length.toLocaleString()} by the current sort.</td></tr>`:"");
+}
+function bandTable(){const B=bands(ALL);document.getElementById("bands").innerHTML=`<thead><tr><th>Takedown share</th><th class="r">Wrestlers</th><th class="r">Avg win %</th><th class="r">Pooled win %</th><th class="r">All-Americans</th></tr></thead><tbody>`+
+  B.map(b=>`<tr><td>${b.lo}–${b.lo+10}%</td><td class="r">${b.k}</td><td class="r">${b.avg.toFixed(1)}%</td><td class="r">${b.pooled.toFixed(1)}%</td><td class="r">${b.aa}</td></tr>`).join("")+"</tbody>";}
+const chips=document.getElementById("chips");
+for(const g of GROUPS){const b=document.createElement("button");b.className="chip";b.setAttribute("aria-pressed","true");
+  b.innerHTML=`<span class="dot" style="background:var(${g.color})"></span>${g.label}`;b.onclick=()=>{on[g.key]=!on[g.key];b.setAttribute("aria-pressed",on[g.key]);draw();};chips.appendChild(b);}
+fetch("/data/reports/ncaa_career_td_share.json?v="+Date.now().toString().slice(0,7)).then(r=>r.json()).then(D=>{
+  M0=D.meta;
+  ALL=D.rows.map(x=>{const [w,l,f,a]=x.r;return Object.assign({},x,{w,l,f,a,n:w+l,td:100*f/(f+a),wp:100*w/(w+l),g:GROUPS.find(g=>g.test(x))});});
+  const y=M0.years;
+  document.getElementById("sub").textContent=`One dot per wrestler: every NCAA and conference-tournament match we have play-by-play for, ${y[0]}–${y[y.length-1]}, combined across his career. Across: share of all takedowns in those matches that he scored. Up: his win percentage in those same matches. Wrestlers with at least ${M0.min} matches.`;
+  bandTable();draw();
+  let t;window.addEventListener("resize",()=>{clearTimeout(t);t=setTimeout(draw,120);});
+}).catch(()=>{document.getElementById("stats").textContent="Could not load the data.";});
+})();
+</script>
+</body>
+</html>
