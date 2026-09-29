@@ -48,6 +48,7 @@ STATIC_PAGES = [
     ("ncaa_team_report.html", "0.5", "monthly"),
     ("ncaa_conf_leaderboard.html", "0.5", "monthly"),
     ("ncaa_conf_analysis.html", "0.5", "monthly"),
+    ("ncaa_takedowns.html", "0.5", "monthly"),
     ("leaderboards/dpg.html", "0.5", "weekly"),
     ("leaderboards/leaderboard_wins.html", "0.4", "weekly"),
     ("leaderboards/leaderboard_pins.html", "0.4", "weekly"),

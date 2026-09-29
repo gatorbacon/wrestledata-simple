@@ -51,6 +51,7 @@ Everything the frontend reads lives under `frontend/wrestledata-ui/public/data/`
 | Team Leaderboard | `ncaa_team_leaderboard.html` | xTP-ranked team table |
 | Team Analysis | `ncaa_team_report.html` | Per-team deep-dive with dual meet stats |
 | Conference Analysis | `ncaa_conf_analysis.html` | Conference-level aggregated stats |
+| Takedowns & Team Points | `ncaa_takedowns.html` | Scatter of every NCAA entrant since 2015: takedown share vs. team points. Rebuild steps: "NCAA Takedowns & Team Points page" below |
 | DPG Leaderboard | `leaderboards/mat_value.html` | Full DPG rankings by weight |
 
 ### Core JS Files
@@ -1075,6 +1076,41 @@ then read the numeric ID out of the matching result's `eventSelected(ID, 'name',
 ### Takedown-report comparison page (2026-09-19)
 
 `scripts/analysis/td_comparison_viz/build_comparison.py` → `data/analysis/td_report_comparison.html`: one self-contained page comparing the four report sections across the four windows and NCAA vs conference (line panels, range/strip plot, NCAA-vs-conf gap chart, stacked/heat charts, no-takedown-wins ladder; every chart has a table twin). It parses the 8 text reports (`parse_reports.py`, so the reports are the single source of numbers — rerun them first) into `reports.json` (git-ignored) and embeds that into `template.html`. Consistency labels (= steady, ▲/▼ step in 2024-26, ~ varies) use fixed rules in the template's `consist()`. Headline findings at build time: +2/+3/+4 TD edges win ≥95% everywhere; the +1 edge jumped from 88-92% to ~96% in 2024-26 in both tournament types together; conference wrestlers who score first win 1.8-4.4 pts more than NCAA ones in all four windows; nobody has ever had 4 no-takedown wins in one tournament.
+
+### NCAA Takedowns & Team Points page (`ncaa_takedowns.html`, added 2026-09-29)
+
+**What it is:** a live MatSavant page under Events → NCAA Championships → Archive → "Takedowns" (also a card on `events/ncaa.html`). One dot per wrestler per NCAA tournament, every entrant (not just All-Americans), 2015 onward. **x = takedown share** = takedowns he scored ÷ (scored + allowed) over his NCAA matches. **y = NCAA team points** he scored (advancement + bonus + placement). Dots are colored Champion / 2nd–4th / 5th–8th / Did not place (chips toggle each group). The black line with diamonds is the **average team points per 10%-wide band of takedown share** (bands with <5 wrestlers skipped). It sits below most visible dots because the 0–3-point non-placers stack on top of each other. There is also a band table (wrestlers, average points, number and % who placed), a sortable per-wrestler table (first 500 rows), and hover tooltips with the points breakdown. Light theme only (uses the site's `styles.css` variables). The chart redraws at the container's real width, so it stays readable on phones. First build: 3,540 wrestlers plotted, r = 0.65, 90–100% band averages 18.0 pts with 87% placing, and Seth Gross 2018 (11-12 takedowns, 24 pts) is the only champion under 50% takedown share. He's called out on the chart via `CALLOUTS` in the page script.
+
+**Files:**
+| File | Role |
+|---|---|
+| `scripts/analysis/td_share_team_points/build_data.py` | Builds the data; the only thing to run |
+| `frontend/wrestledata-ui/public/data/reports/ncaa_td_share_team_points.json` | Output: `{meta: {years, entrants, plotted, no_td, no_pbp, built}, rows: [...]}`. Each row: `y` year, `wt`, `name`, `team`, `p` place 1-8 or null, `pts`, `adv`, `bonus`, `r` = [wins, losses, TDs for, TDs against] |
+| `frontend/wrestledata-ui/public/ncaa_takedowns.html` | The page. Self-contained script, no chart library; all text (year range, notes, band table, stats) is computed from the JSON |
+| `frontend/wrestledata-ui/public/event-tabs.js` | `NCAA_ARCHIVE_TABS` entry "Takedowns" |
+| `frontend/wrestledata-ui/public/events/ncaa.html` | Landing-page card |
+
+**Inputs:**
+- **Official results:** `data/{year}/ncaa-tourney/parsed/matches.json`, built by `scripts/ncaa/parse_ncaa_results.py`. Used for team points and placements.
+- **Play-by-play:** `data/{year}/ncaa-tourney/bout_detail/{weight}.json`. Used for takedowns, read through the loaders in `scripts/analysis/td_differential_report.py` (`R.load`), with never-wrestled 0-0 forfeits/defaults dropped (`build_data.wrestled` from the takedown report).
+
+**How the numbers are computed:**
+- **Team points** use the point tables imported from `parse_ncaa_results.py`:
+  - Advancement: 1 per championship-bracket win, ½ per consolation win, 0 for Final/3rd/5th/7th matches.
+  - Bonus: MD 1, TF 1½, Fall/Forfeit/Inj./DQ 2.
+  - Placement: 16-12-10-9-7-6-4-3.
+  - Byes are not credited, so a few totals may be ½–1 low.
+  - Points are recomputed from `matches.json` rather than read from `parsed/wrestlers.json`. That file is keyed by seed and silently drops entrants whose name doesn't match the seeds file (e.g. 2018 197 Kyle Conel, 3rd). The script prints a cross-check against it; first build: 0 differences for every wrestler it contains.
+- **Wrestler identity** across the two sources is (year, weight, surname + first initial). If two entrants in one bracket share that key (2017 125 Jose/Joshua Rodriguez), the script switches to full name for them and prints them as "ambiguous".
+- **Left off the chart:** wrestlers with no takedowns either way (share undefined; 7 at first build) and wrestlers with no play-by-play for any wrestled match (81, nearly all 0-point entrants). Both counts are shown in the page note.
+- **Falls:** the play-by-play doesn't log falls, but the official result does, and points use the official result. Seth Gross's 2018 semifinal was a real fall in overtime after his sudden-victory takedown, so he gets 2 bonus points for it.
+
+**Rebuilding after a new season (e.g. 2027):**
+1. Make sure the new year's NCAA data exists, the same inputs every NCAA analysis uses: `data/2027/ncaa-tourney/parsed/matches.json` (run `scripts/ncaa/parse_ncaa_results.py` after the results are scraped) and `data/2027/ncaa-tourney/bout_detail/*.json` (the play-by-play scrape).
+2. Run `.venv/bin/python scripts/analysis/td_share_team_points/build_data.py`. Years are detected automatically: every year ≥ 2015 with both inputs is included, with no code change. Check the printout: the year range should end in 2027, "differences vs parsed/wrestlers.json" should be 0 or only explainable name issues, and the not-plotted counts should be small.
+3. Preview locally: `cd frontend/wrestledata-ui/public && python3 -m http.server 8792`, then open `http://127.0.0.1:8792/ncaa_takedowns.html`.
+4. Deploy like any MatSavant change: the `matsavant-dev` branch gives a free preview, and merging to `main` is a paid production deploy. Only the JSON changes on a normal rebuild.
+5. Optional: add a call-out for a notable new dot in `CALLOUTS` in `ncaa_takedowns.html`, and update the "first build" numbers in this section.
 
 ### Conference-tournament official results (built from team scrapes, 2026-09-19)
 

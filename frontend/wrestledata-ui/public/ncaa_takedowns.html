@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NCAA Championships — Takedowns &amp; Team Points | MatSavant</title>
+  <meta name="description" content="Every NCAA tournament wrestler since 2015: share of takedowns scored vs. team points scored.">
+  <link rel="stylesheet" href="/styles.css?v=20260921" />
+  <!-- Data: /data/reports/ncaa_td_share_team_points.json, built by
+       scripts/analysis/td_share_team_points/build_data.py. How to rebuild: docs/matsavant.md,
+       "NCAA Takedowns & Team Points page". -->
+  <style>
+.report-header { text-align: center; margin-bottom: 28px; }
+.report-header h1 { font-size: 2rem; font-weight: 700; color: var(--text); letter-spacing: -0.5px; }
+.report-header p { color: var(--muted); margin: 6px auto 0; font-size: 0.95rem; max-width: 760px; }
+.section {
+  background: var(--panel); border: 1px solid var(--border); border-radius: var(--r-md);
+  padding: 24px 28px; margin: 0 auto 32px; max-width: 1100px;
+}
+@media (max-width: 640px) { .section { padding: 16px 12px; } .report-header h1 { font-size: 1.5rem; } }
+.td-viz {
+  --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s0: #b5b3aa;
+  --fit: var(--text); --grid: #ece7dc; --axis: #cfc7b8;
+}
+.td-controls { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.td-chip {
+  display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--border); border-radius: 999px;
+  background: var(--panel); color: var(--text); padding: 4px 11px; font: inherit; font-size: 0.85rem; cursor: pointer;
+}
+.td-chip[aria-pressed="false"] { color: var(--muted-2); opacity: .6; }
+.td-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.td-stats { display: flex; flex-wrap: wrap; gap: 6px 22px; color: var(--muted); font-size: 0.85rem; margin-bottom: 4px; }
+.td-stats b { color: var(--text); font-size: 0.95rem; }
+.td-chart { position: relative; }
+.td-chart svg { display: block; width: 100%; touch-action: pan-y; }
+#td-tip {
+  position: absolute; pointer-events: none; background: var(--panel); border: 1px solid var(--border);
+  border-radius: 8px; padding: 8px 10px; font-size: 0.82rem; box-shadow: 0 4px 16px rgba(0,0,0,.10);
+  display: none; min-width: 190px; max-width: 260px; z-index: 2; color: var(--text);
+}
+#td-tip .n { font-weight: 600; }
+#td-tip .m { color: var(--muted); }
+.td-note { color: var(--muted-2); font-size: 0.8rem; margin: 12px 0 0; }
+.td-findings { margin: 0; padding-left: 20px; color: var(--text); font-size: 0.92rem; }
+.td-findings li { margin-bottom: 6px; }
+.data-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.data-table thead th {
+  background: var(--panel-2); color: var(--muted); padding: 8px 12px; text-align: left; font-weight: 600;
+  text-transform: uppercase; font-size: 0.72rem; letter-spacing: .3px; border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; cursor: pointer; white-space: nowrap;
+}
+.data-table td { padding: 6px 12px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+.data-table .r { text-align: right; font-variant-numeric: tabular-nums; }
+.td-tbl { max-height: 440px; overflow: auto; border: 1px solid var(--border); border-radius: 8px; margin-top: 10px; }
+details summary { cursor: pointer; color: var(--muted); font-size: 0.9rem; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <script src="/analytics.js?v=20260911"></script>
+  <script src="/header.js?v=20260908"></script>
+  <script src="/event-tabs.js?v=20260929"></script>
+  <div class="page-container">
+
+<div class="report-header">
+  <h1>Takedowns &amp; Team Points</h1>
+  <p id="td-sub">Every wrestler at every NCAA Championships since 2015. Across: the share of all takedowns in their matches that they scored. Up: the team points they scored.</p>
+</div>
+
+<div class="section td-viz">
+  <div class="td-controls" id="td-chips"></div>
+  <div class="td-stats" id="td-stats"></div>
+  <div class="td-chart" id="td-chart">
+    <svg id="td-svg" role="img" aria-label="Scatter plot of takedown share against NCAA team points"></svg>
+    <div id="td-tip"></div>
+  </div>
+  <p class="td-note" id="td-note"></p>
+  <details>
+    <summary>Table view</summary>
+    <div class="td-tbl"><table class="data-table"><thead><tr id="td-thead"></tr></thead><tbody id="td-tbody"></tbody></table></div>
+  </details>
+</div>
+
+<div class="section">
+  <h2 style="font-size:1.2rem;margin:0 0 10px">By takedown share</h2>
+  <div style="overflow-x:auto">
+    <table class="data-table" id="td-bands"></table>
+  </div>
+</div>
+
+  </div>
+<script>
+(function () {
+  "use strict";
+  const GROUPS = [
+    { key: "champ", label: "Champion",      color: "--s1", test: p => p === 1 },
+    { key: "top4",  label: "2nd–4th",       color: "--s2", test: p => p >= 2 && p <= 4 },
+    { key: "low8",  label: "5th–8th",       color: "--s3", test: p => p >= 5 && p <= 8 },
+    { key: "none",  label: "Did not place", color: "--s0", test: p => !p },
+  ];
+  const ORD = ["", "1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th"];
+  const on = { champ: true, top4: true, low8: true, none: true };
+  // Labelled dots (historical call-outs). Add more here as {name, y}.
+  const CALLOUTS = [{ name: "Seth Gross", y: 2018 }];
+
+  const svgEl = document.getElementById("td-svg"), tip = document.getElementById("td-tip");
+  const viz = document.querySelector(".td-viz");
+  const css = n => getComputedStyle(viz).getPropertyValue(n).trim();
+  const el = (t, a, p) => { const e = document.createElementNS("http://www.w3.org/2000/svg", t); for (const k in a) e.setAttribute(k, a[k]); p && p.appendChild(e); return e; };
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  let ALL = [], META = {}, shown = [], bandHits = [], W = 900, H = 540, Y1 = 30;
+
+  function bands(pts) {
+    const out = [];
+    for (let lo = 0; lo < 100; lo += 10) {
+      const s = pts.filter(p => p.td >= lo && (p.td < lo + 10 || (lo === 90 && p.td === 100)));
+      if (s.length >= 5) out.push({ lo, n: s.length, avg: s.reduce((t, p) => t + p.pts, 0) / s.length, aa: s.filter(p => p.p).length });
+    }
+    return out;
+  }
+  function pearson(pts) {
+    const n = pts.length, mx = pts.reduce((s, p) => s + p.td, 0) / n, my = pts.reduce((s, p) => s + p.pts, 0) / n;
+    let sxy = 0, sxx = 0, syy = 0;
+    for (const p of pts) { sxy += (p.td - mx) * (p.pts - my); sxx += (p.td - mx) ** 2; syy += (p.pts - my) ** 2; }
+    return sxy / Math.sqrt(sxx * syy);
+  }
+
+  function draw() {
+    W = document.getElementById("td-chart").clientWidth || 900;
+    const small = W < 560;
+    H = Math.round(Math.max(360, Math.min(560, W * 0.62)));
+    const M = { l: small ? 40 : 56, r: small ? 18 : 26, t: 16, b: small ? 48 : 56 };
+    const sx = v => M.l + v / 100 * (W - M.l - M.r);
+    const sy = v => H - M.b - v / Y1 * (H - M.t - M.b);
+    svgEl.setAttribute("viewBox", `0 0 ${W} ${H}`); svgEl.setAttribute("height", H); svgEl.innerHTML = "";
+    shown = ALL.filter(r => on[r.g.key]);
+    const txt = (x, y, s, a) => { const t = el("text", Object.assign({ x, y, fill: css("--muted-2") || "#8f8574", "font-size": 12 }, a || {}), svgEl); t.textContent = s; return t; };
+    for (let y = 0; y <= Y1; y += 5) {
+      el("line", { x1: M.l, x2: W - M.r, y1: sy(y), y2: sy(y), stroke: css("--grid") }, svgEl);
+      txt(M.l - 8, sy(y) + 4, y, { "text-anchor": "end" });
+    }
+    for (let x = 0; x <= 100; x += small ? 20 : 10) txt(sx(x), H - M.b + 18, x + "%", { "text-anchor": "middle" });
+    el("line", { x1: M.l, x2: W - M.r, y1: H - M.b, y2: H - M.b, stroke: css("--axis") }, svgEl);
+    el("line", { x1: sx(50), x2: sx(50), y1: M.t, y2: H - M.b, stroke: css("--axis"), "stroke-dasharray": "4 4" }, svgEl);
+    txt(sx(50) + 6, M.t + 12, "even on takedowns");
+    txt((M.l + W - M.r) / 2, H - 10, small ? "Takedown share" : "Takedown share (scored ÷ all takedowns in their matches)", { "text-anchor": "middle", fill: css("--muted"), "font-size": 13 });
+    txt(-(M.t + H - M.b) / 2, 14, "NCAA team points scored", { transform: "rotate(-90)", "text-anchor": "middle", fill: css("--muted"), "font-size": 13 });
+
+    const rank = r => r.p ? 9 - r.p : 0;  // non-placers underneath, champions on top
+    const rad = small ? 3 : 4;
+    for (const r of [...shown].sort((a, b) => rank(a) - rank(b))) {
+      r.cx = sx(r.td); r.cy = sy(r.pts);
+      el("circle", { cx: r.cx, cy: r.cy, r: rad, fill: css(r.g.color), "fill-opacity": r.p ? .85 : .6, stroke: "#ffffff", "stroke-width": 1.2 }, svgEl);
+    }
+    const B = bands(shown); bandHits = [];
+    if (B.length > 1) {
+      const d = B.map((b, i) => `${i ? "L" : "M"}${sx(b.lo + 5)},${sy(b.avg)}`).join("");
+      el("path", { d, fill: "none", stroke: "#ffffff", "stroke-width": 5 }, svgEl);
+      el("path", { d, fill: "none", stroke: css("--fit"), "stroke-width": 2 }, svgEl);
+      for (const b of B) {
+        const cx = sx(b.lo + 5), cy = sy(b.avg);
+        el("rect", { x: cx - 4, y: cy - 4, width: 8, height: 8, fill: css("--fit"), stroke: "#ffffff", "stroke-width": 2, transform: `rotate(45 ${cx} ${cy})` }, svgEl);
+        bandHits.push(Object.assign({}, b, { cx, cy }));
+      }
+    }
+    for (const c of CALLOUTS) {
+      const g = shown.find(r => r.name === c.name && r.y === c.y);
+      if (!g) continue;
+      el("line", { x1: g.cx - 5, y1: g.cy - 3, x2: g.cx - 30, y2: g.cy - 20, stroke: css("--muted"), "stroke-width": 1 }, svgEl);
+      txt(g.cx - 34, g.cy - 24, `${g.name} ${g.y} (${g.f}-${g.a} TDs, ${g.pts} pts)`, { "text-anchor": "end", fill: css("--text"), "font-size": small ? 11 : 12.5, "font-weight": 600 });
+    }
+    const stats = document.getElementById("td-stats");
+    const avg = a => a.length ? (a.reduce((s, r) => s + r.pts, 0) / a.length).toFixed(1) : "–";
+    stats.innerHTML = `<span><b>${shown.length.toLocaleString()}</b> wrestlers</span>` +
+      (shown.length > 2 ? `<span>correlation <b>r = ${pearson(shown).toFixed(2)}</b></span>` +
+        `<span>avg points under 50% share: <b>${avg(shown.filter(r => r.td < 50))}</b></span>` +
+        `<span>75%+ share: <b>${avg(shown.filter(r => r.td >= 75))}</b></span>` : "");
+    table();
+  }
+
+  function place(cx, cy) {
+    let left = cx + 14; tip.style.display = "block";
+    if (left + tip.offsetWidth > W) left = Math.max(0, cx - 14 - tip.offsetWidth);
+    tip.style.left = left + "px"; tip.style.top = Math.max(0, cy - 10) + "px";
+  }
+  function hover(ev) {
+    const box = svgEl.getBoundingClientRect(), px = ev.clientX - box.left, py = ev.clientY - box.top;
+    const bh = bandHits.find(b => (b.cx - px) ** 2 + (b.cy - py) ** 2 < 100);
+    if (bh) {
+      tip.innerHTML = `<div class="n">${bh.lo}–${bh.lo + 10}% takedown share</div><div>${bh.n} wrestlers, ${bh.aa} All-Americans</div><div>Average ${bh.avg.toFixed(1)} team points</div>`;
+      return place(bh.cx, bh.cy);
+    }
+    let best = null, bd = 14 * 14;
+    for (const r of shown) { const d = (r.cx - px) ** 2 + (r.cy - py) ** 2; if (d < bd) { bd = d; best = r; } }
+    if (!best) { tip.style.display = "none"; return; }
+    const same = shown.filter(r => r !== best && Math.abs(r.cx - best.cx) < 1 && Math.abs(r.cy - best.cy) < 1).length;
+    const placePts = +(best.pts - best.adv - best.bonus).toFixed(1);
+    tip.innerHTML = `<div class="n">${esc(best.name)}</div><div class="m">${esc(best.team)} · ${best.y} · ${best.wt} lbs · ${best.p ? ORD[best.p] : "did not place"}</div>` +
+      `<div>${best.pts} team points <span class="m">(adv ${best.adv}, bonus ${best.bonus}${best.p ? `, place ${placePts}` : ""})</span></div>` +
+      `<div>Record ${best.w}-${best.l} · takedowns ${best.f}-${best.a} (${best.td.toFixed(1)}%)</div>` +
+      (same ? `<div class="m">+${same} more at this exact spot</div>` : "");
+    place(best.cx, best.cy);
+  }
+  svgEl.addEventListener("pointermove", hover);
+  svgEl.addEventListener("pointerdown", hover);
+  svgEl.addEventListener("pointerleave", () => tip.style.display = "none");
+
+  const COLS = [["name", "Wrestler"], ["team", "Team"], ["y", "Year"], ["wt", "Wt"], ["p", "Place"], ["rec", "Record"], ["tds", "TDs"], ["td", "TD share"], ["pts", "Team pts"]];
+  let sortK = "pts", sortD = -1;
+  function table() {
+    document.getElementById("td-thead").innerHTML = COLS.map(([k, l]) => `<th data-k="${k}" class="${["y", "wt", "p", "td", "pts"].includes(k) ? "r" : ""}">${l}${sortK === k ? (sortD > 0 ? " ▲" : " ▼") : ""}</th>`).join("");
+    document.querySelectorAll("#td-thead th").forEach(th => th.onclick = () => { const k = th.dataset.k; if (k === "rec" || k === "tds") return; sortD = sortK === k ? -sortD : 1; sortK = k; table(); });
+    const v = r => sortK === "p" ? (r.p || 99) : r[sortK];
+    const s = [...shown].sort((a, b) => (v(a) > v(b) ? 1 : v(a) < v(b) ? -1 : 0) * sortD).slice(0, 500);
+    document.getElementById("td-tbody").innerHTML = s.map(r => `<tr><td>${esc(r.name)}</td><td>${esc(r.team)}</td><td class="r">${r.y}</td><td class="r">${r.wt}</td><td class="r">${r.p ? ORD[r.p] : "–"}</td><td>${r.w}-${r.l}</td><td>${r.f}-${r.a}</td><td class="r">${r.td.toFixed(1)}%</td><td class="r">${r.pts}</td></tr>`).join("") +
+      (shown.length > 500 ? `<tr><td colspan="9" style="color:var(--muted-2)">Showing the first 500 of ${shown.length.toLocaleString()} by the current sort.</td></tr>` : "");
+  }
+
+  function bandTable() {
+    const B = bands(ALL);
+    document.getElementById("td-bands").innerHTML =
+      `<thead><tr><th>Takedown share</th><th class="r">Wrestlers</th><th class="r">Avg team pts</th><th class="r">Placed</th><th class="r">% placed</th></tr></thead><tbody>` +
+      B.map(b => `<tr><td>${b.lo}–${b.lo + 10}%</td><td class="r">${b.n}</td><td class="r">${b.avg.toFixed(1)}</td><td class="r">${b.aa}</td><td class="r">${Math.round(100 * b.aa / b.n)}%</td></tr>`).join("") + "</tbody>";
+  }
+
+  const chips = document.getElementById("td-chips");
+  for (const g of GROUPS) {
+    const b = document.createElement("button"); b.className = "td-chip"; b.setAttribute("aria-pressed", "true");
+    b.innerHTML = `<span class="td-dot" style="background:var(${g.color})"></span>${g.label}`;
+    b.onclick = () => { on[g.key] = !on[g.key]; b.setAttribute("aria-pressed", on[g.key]); draw(); };
+    chips.appendChild(b);
+  }
+
+  fetch("/data/reports/ncaa_td_share_team_points.json?v=" + Date.now().toString().slice(0, 7))
+    .then(r => r.json())
+    .then(d => {
+      META = d.meta;
+      ALL = d.rows.map(x => { const [w, l, f, a] = x.r; return Object.assign({}, x, { w, l, f, a, td: 100 * f / (f + a), g: GROUPS.find(g => g.test(x.p)) }); });
+      Y1 = Math.max(30, Math.ceil(Math.max(...ALL.map(r => r.pts)) / 5) * 5);
+      const yrs = META.years;
+      document.getElementById("td-sub").textContent = `Every wrestler at every NCAA Championships, ${yrs[0]}–${yrs[yrs.length - 1]} (no 2020 tournament). Across: the share of all takedowns in their matches that they scored. Up: the team points they scored (advancement + bonus + placement).`;
+      document.getElementById("td-note").textContent =
+        `Line with diamonds: average team points in each 10%-wide band of takedown share (bands under 5 wrestlers skipped); most wrestlers in every band score 0–3 points, and those dots stack on top of each other, which is why the average sits below most visible dots. ` +
+        `Team points use the NCAA tables (advancement 1 / ½, bonus 1 / 1½ / 2, placement 16-12-10-9-7-6-4-3); bye points are not counted. Takedowns come from play-by-play. ` +
+        `Not plotted: ${META.no_td} wrestlers with no takedowns either way and ${META.no_pbp} with no play-by-play for any match.`;
+      bandTable(); draw();
+      let t; window.addEventListener("resize", () => { clearTimeout(t); t = setTimeout(draw, 120); });
+    })
+    .catch(() => { document.getElementById("td-stats").textContent = "Could not load the data."; });
+})();
+</script>
+</body>
+</html>
