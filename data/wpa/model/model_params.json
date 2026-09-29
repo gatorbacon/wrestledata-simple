@@ -1,0 +1,22 @@
+{
+  "table_key": "m_r",
+  "table_data": "ncaa+conf",
+  "k": 160,
+  "k2": 80,
+  "p_emp_weighting": "per moment",
+  "backstop": "gradient boosted, monotone in margin and riding-time point, symmetrised",
+  "margin_clamp": 15,
+  "t_bin_sec": 10,
+  "neighbours": "margin +/-1, t_bin +/-1, diagonal weight 0.5",
+  "eras": "E12 = 2015-2023, E3 = 2024-2026",
+  "rt_threshold_sec": 60,
+  "rt_model_features": [
+    "rt_diff",
+    "t_rem",
+    "posc",
+    "margin",
+    "ei"
+  ],
+  "validation": "rotate within E3: train on two of 2024-26 (+ all E12), test on the third year's NCAA bouts",
+  "built": "2026-09-29"
+}

@@ -669,6 +669,7 @@ def run(kind):
     for b in bouts:
         if not b["included"]:
             b["state_table_ok"], b["state_table_reason"] = False, "excluded"
+            b["table_ok"] = b["rt_model_ok"] = False
             continue
         b["rt_tournament_ok"] = (b["tournament"], b["year"]) not in bad_t
         rc = b["result_class"]
@@ -689,6 +690,11 @@ def run(kind):
             why.append("rebuilt riding-time point != actual")
         b["state_table_ok"] = not why
         b["state_table_reason"] = "; ".join(why)
+        # After the sparsity audit riding time left the state table (TJ 2026-09-29): a bout whose rebuilt
+        # riding-time point is wrong is still fine for the table (score, position, choice, actual point), just not
+        # for fitting the riding-time model. table_ok = everything but that reason; rt_model_ok = state_table_ok.
+        b["table_ok"] = not [w for w in why if w != "rebuilt riding-time point != actual"]
+        b["rt_model_ok"] = b["state_table_ok"]
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     for name, rows in (("bouts", bouts), ("events", events), ("samples", samples)):

@@ -60,3 +60,5 @@ scripts/analysis/td_custom_report/data.json
 # WPA model intermediates (rebuild: scripts/wpa/build_states.py --kind both, build_table.py)
 data/wpa/states/
 data/wpa/table/
+data/wpa/model/*.parquet
+data/wpa/model/*.joblib

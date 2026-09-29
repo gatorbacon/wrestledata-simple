@@ -2,7 +2,7 @@
 """
 WPA step 3 -- empirical state table (spec 3.1) with mirrored perspectives (spec 2.1).
 
-Reads the step-2 states (data/wpa/states/, built by build_states.py) for bouts with state_table_ok and turns every
+Reads the step-2 states (data/wpa/states/, built by build_states.py) for bouts with table_ok and turns every
 observed moment into two observations -- one from each wrestler's side, the second the mirror of the first with the
 outcome flipped -- keyed by the spec's state tuple:
 
@@ -29,6 +29,12 @@ Outputs (data/wpa/table/):
                         bouts dominating a cell)
 Names: ncaa (NCAA clean bouts), conf (conference clean bouts).
 
+Each observation also carries `r`: the riding-time point actually awarded in that bout, from A's side (+1 A, -1 B, 0
+none -- including bouts that ended early). After the sparsity audit riding time was factored out of the table (TJ,
+2026-09-29): step 5 keys the table on margin + r and models r separately (fit_state_model.py). `rt_model_ok` marks
+bouts whose rebuilt riding time matches the actual point (usable for fitting that model). The step-4 audit was run
+on the earlier state_table_ok filter (slightly fewer bouts); rerunning it now gives marginally different numbers.
+
 Usage: .venv/bin/python scripts/wpa/build_table.py
 """
 import sys
@@ -50,8 +56,9 @@ TERMINAL_EVENTS = {"regulation_end", "fall", "tech_fall", "injury", "dq"}
 def load_obs(kind):
     """Winner-side observations for bouts with state_table_ok."""
     bouts = pd.read_csv(STATES / f"{kind}_bouts.csv", low_memory=False)
-    ok = bouts[bouts["state_table_ok"] == True]  # noqa: E712
-    meta = ok.set_index("bout_key")[["year", "era", "tournament", "weight"]]
+    ok = bouts[bouts["table_ok"] == True].copy()  # noqa: E712
+    ok["r"] = ok["rt_point_logged"].map({"w": 1, "l": -1}).fillna(0).astype(int)
+    meta = ok.set_index("bout_key")[["year", "era", "tournament", "weight", "r", "rt_model_ok"]]
 
     s = pd.read_csv(STATES / f"{kind}_samples.csv")
     s = s[s["bout_key"].isin(meta.index)].copy()
@@ -81,7 +88,8 @@ def load_obs(kind):
     obs["rt_bin"] = np.where(obs["rt_status"] == "live", np.sign(obs["rt_diff"]).astype(int) * b, 0)
     obs["margin"] = obs["margin"].astype(int)
     obs["kind"] = kind
-    return obs[["bout_key", "kind", "tournament", "year", "weight", "era", "source"] + KEY + ["rt_diff", "t_rem"]]
+    return obs[["bout_key", "kind", "tournament", "year", "weight", "era", "source"] + KEY
+               + ["rt_diff", "t_rem", "r", "rt_model_ok"]]
 
 
 def both_sides(obs):
@@ -96,6 +104,8 @@ def both_sides(obs):
     m["rt_status"] = m["rt_status"].replace({"locked_in": "locked_out", "locked_out": "locked_in"})
     m["rt_bin"] = -m["rt_bin"]
     m["rt_diff"] = -m["rt_diff"]
+    if "r" in m:
+        m["r"] = -m["r"]
     return pd.concat([a, m], ignore_index=True)
 
 
