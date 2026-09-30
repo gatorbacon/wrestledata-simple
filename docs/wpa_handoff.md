@@ -43,6 +43,7 @@ its design. Claude Code memory: `~/.claude/projects/-Users-tjthompson-Documents-
 | 10 conference ranks | `scripts/wpa/conf_ranks.py` (run before `fit_strength`) | `data/wpa/states/conf_ranks.csv` (gitignored), `reports/conf_ranks.md` | <1 min |
 | OT overtime model | `scripts/wpa/ot_model.py` (run before `compute_wpa`) | `data/wpa/model/ot_params.json`, `data/wpa/states/ot_bouts.csv` (gitignored), `reports/ot_model.md` | ~2.5 min |
 | 11 outputs | `scripts/wpa/build_outputs.py` (after `compute_wpa`) | `data/wpa/output/{state_table,match_wp_curves}.parquet` (gitignored), `data/wpa/output/model_params.json` | ~1 min |
+| bracket viewer | `build_bracket_view.py --year Y --weight W` (template `bracket_view_template.html`; bracket slots from `labs/bracket_viewer/data/ncaa/{Y}.json`) | `data/wpa/reports/bracket_{Y}_{W}.html` — self-contained page: click a bout → ESPN-style WP chart (hover = crosshair / event tooltips) + every non-clock WPA link by wrestler; reads only `match_wp_curves` + `events_wpa`, checks running score = official score | seconds |
 | charts | `plot_examples.py [--bout KEY ...]`, `plot_wp_cards.py --year Y \| --wrestler NAME`, `plot_ot_flow.py --year Y` | `data/wpa/reports/img/` | seconds |
 
 Shared predictor used by steps 8 and 9 and everything after: `scripts/wpa/wp_model.py`. `WPModel().wp(df)` or `.parts(df)`
