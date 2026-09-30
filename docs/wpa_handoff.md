@@ -178,21 +178,12 @@ as the average of A / B holding it. Full record: `docs/matsavant.md` step table 
 the ride-2 habit is bottom) are in `docs/matsavant.md` "Overtime model" and the script's docstring. Season flow charts: `scripts/wpa/plot_ot_flow.py --year Y` →
 `data/wpa/reports/img/ot_flow_{Y}.png`.
 
-**Next: step 11.**
+## 7. DONE (2026-09-30): step 11 — final outputs (spec Section 8)
 
-## 7. Then step 11 — final outputs (spec Section 8)
-
-(Example charts started: `scripts/wpa/plot_wp_cards.py`, ESPN-style cards — finals by year or one wrestler's run.)
-
-The spec wants, in "outputs/" (we use `data/wpa/output/`):
-- `state_table.parquet` — exists in `data/wpa/model/`; copy or link it.
-- `model_params.json` — exists (plus `strength_params.json`).
-- `events_wpa.parquet` — exists.
-- `wrestler_wpa.csv` — exists.
-- **Still to do:** `match_wp_curves.parquet` (WP over time for every match, for charting: the chain points plus 10-s samples)
-  and **example charts** — a step plot per match with events annotated for a handful of matches. Include at least one big
-  upset (e.g. 2018 197 QF Conel over #1 Moore, or 2021 197 R32 Pentz #31 over Schultz #2) and one late riding-time decision
-  (search `events_wpa` for large `rt_lock` rows).
-- Reports: `data_audit.md`, `sparsity_audit.md`, `validation.md` (all exist; re-run after step 10).
-- Finish with an answer to the spec's Section 11 open questions (most were answered in the audit and the sparsity report),
-  and a final summary for TJ.
+`scripts/wpa/build_outputs.py` (after `compute_wpa.py`, ~1 min) writes `data/wpa/output/state_table.parquet` (copy),
+`model_params.json` (all four `*_params.json` merged, tracked) and `match_wp_curves.parquet` (chain points + 10-s model
+samples, overtime on one clock: SV 420–540, TB-1 540–570, TB-2 570–600; pre-2022 OT 420–480; a sample at an event's
+second is the post-event state; samples after a bout ends are dropped). `scripts/wpa/plot_examples.py [--bout KEY ...]`
+→ `data/wpa/reports/img/examples/` (upset, comeback, riding time, tiebreaker). Spec Section 11 answers + final summary:
+`data/wpa/reports/final_summary.md`. **The spec's build order is complete.** Anything further (site integration, more
+charts) is new work — ask TJ.

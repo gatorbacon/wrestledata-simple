@@ -1,0 +1,289 @@
+{
+ "_note": "Merged by scripts/wpa/build_outputs.py from data/wpa/model/*_params.json; each block as fitted. Meaning of every parameter: docs/matsavant.md (WPA section) and the fitting scripts' docstrings.",
+ "state_model": {
+  "table_key": "m_r",
+  "table_data": "ncaa+conf",
+  "table_rows": "no_pre",
+  "table_rows_desc": "10-s samples + the state just after every event + break states; in-period 'just before' states dropped",
+  "k": 80,
+  "k2": 80,
+  "p_emp_weighting": "per moment",
+  "backstop": "gradient boosted, monotone in margin and riding-time point, symmetrised",
+  "margin_clamp": 15,
+  "t_bin_sec": 10,
+  "sample_times": "420, then 415, 405, ... 5 (bin centres)",
+  "neighbours": "margin +/-1, t_bin +/-1, diagonal weight 0.5",
+  "eras": "E12 = 2015-2023, E3 = 2024-2026",
+  "rt_threshold_sec": 60,
+  "rt_model": "blend: step-8 boosted trees until 1:30 left, linear handoff, rate model (rt_hazard.py, parameters in rt_params.json) alone from 0:30; rt_model.joblib holds both",
+  "rt_blend_seconds": [
+   90,
+   30
+  ],
+  "rt_model_variant": "trees, handing off to the rate model 1:30 \u2192 0:30",
+  "validation": "rotate within E3: train on two of 2024-26 (+ all E12), test on the third year's NCAA bouts",
+  "built": "2026-09-29"
+ },
+ "riding_time_rate_model": {
+  "levels": null,
+  "margin_edges": {
+   "size": [
+    4
+   ],
+   "size3": [
+    4,
+    8
+   ]
+  },
+  "rt_edges": [
+   15,
+   60
+  ],
+  "rt_threshold": 60,
+  "tech_fall": 15,
+  "lead_buckets": [
+   0,
+   4,
+   8
+  ],
+  "nf_points": [
+   2,
+   3,
+   4
+  ],
+  "eras": {
+   "E12": {
+    "td_points": 2,
+    "takedown": {
+     "0": 0.004726520008624564
+    },
+    "escape": {
+     "0": 0.017518726927098584
+    },
+    "reversal": {
+     "0": 0.002004888979711647
+    },
+    "near_fall": {
+     "0": 0.00292622500121136
+    },
+    "nf_share": [
+     0.3875689944804416,
+     0.06095512359011279,
+     0.5514758819294456
+    ],
+    "end": {
+     "neutral": [
+      4.0176035687402736e-05,
+      5.220736766436285e-05,
+      8.690815546130849e-05
+     ],
+     "mat": [
+      0.0006952774937936724,
+      0.0007507592584198359,
+      0.0012173348482389223
+     ]
+    },
+    "picks": {
+     "2+0": [
+      0.02106276061156848,
+      0.8888057307815674,
+      0.0901315086068641
+     ],
+     "3+0": [
+      0.04717832957110609,
+      0.7281038374717833,
+      0.2247178329571106
+     ]
+    },
+    "defer": {
+     "0": 0.4843365764995189
+    },
+    "exposure_min": {
+     "top": 23733.65,
+     "neutral": 41200.15
+    }
+   },
+   "E3": {
+    "td_points": 3,
+    "takedown": {
+     "0": 0.0038612831880278204
+    },
+    "escape": {
+     "0": 0.020558039155233545
+    },
+    "reversal": {
+     "0": 0.0019608447664559887
+    },
+    "near_fall": {
+     "0": 0.0024788037613688915
+    },
+    "nf_share": [
+     0.24792703150912107,
+     0.1310116086235489,
+     0.62106135986733
+    ],
+    "end": {
+     "neutral": [
+      2.417630238839889e-05,
+      4.536411180309383e-05,
+      6.195275070213117e-05
+     ],
+     "mat": [
+      0.0006734909043466609,
+      0.0009875595910508628,
+      0.0014474805796355565
+     ]
+    },
+    "picks": {
+     "2+0": [
+      0.01239989666752777,
+      0.917592353397055,
+      0.0700077499354172
+     ],
+     "3+0": [
+      0.02481389578163772,
+      0.7320099255583126,
+      0.24317617866004962
+     ]
+    },
+    "defer": {
+     "0": 0.42739231364457053
+    },
+    "exposure_min": {
+     "top": 8108.75,
+     "neutral": 18545.216666666667
+    }
+   }
+  },
+  "variant": "hazard, era only"
+ },
+ "strength_layer": {
+  "scale": "normal",
+  "N": 50,
+  "unseeded_equiv_seed": 22,
+  "beta0": 1.555818298267168,
+  "gamma": 0.6134196328088986,
+  "beta_ot": 0.5052065511743858,
+  "e3_beta0_multiplier": 0.8715340385368522,
+  "alpha_form": "time",
+  "alpha0": 0.6413940301924197,
+  "alpha_time": 0.32804935830199183,
+  "loto_logloss": 0.3927558594500111,
+  "state_only_logloss": 0.44579271983220914,
+  "tie_model": "sum over r of P(r | S) * P(tie | margin, time, position, era, break, r); symmetrised",
+  "conf": {
+   "scale": "normal",
+   "N": 200,
+   "unranked_equiv_rank": 60,
+   "rank_multiplier": 1.4470991232152108,
+   "alpha_multiplier": 1.1393658097340988,
+   "fit_years": [
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "loyo_logloss": 0.37918771541830854,
+   "state_only_logloss": 0.4354576636640069,
+   "rank_source": "Flo snapshot before Feb 15 (2023+); end-of-season current_rank before 2023 (leaks, WPA only) -- data/wpa/states/conf_ranks.csv"
+  },
+  "built": "2026-09-29"
+ },
+ "overtime_model": {
+  "sv_edges": [
+   0,
+   30,
+   60,
+   90,
+   120
+  ],
+  "sv_hazard": [
+   0.00618139187892998,
+   0.011687671618672112,
+   0.011848589703260984,
+   0.013501483679525222
+  ],
+  "tb_rates": {
+   "esc": 0.020560747663551402,
+   "rev": 0.0032285471537807984,
+   "nf": 0.0005097706032285472,
+   "fall": 0.0,
+   "pen_bot": 0.0015293118096856414,
+   "pen_top": 0.0001699235344095157,
+   "td_trail": 0.002271436683702442,
+   "td_lead": 0.0036910846110164677,
+   "td_even": 0.002981260647359455,
+   "pen_trail": 0.002271436683702442,
+   "pen_lead": 0.001135718341851221,
+   "pen_even": 0.0017035775127768314
+  },
+  "q_holder_bottom": 0.6666666666666666,
+  "nf_points": 3,
+  "ride2_policy": {
+   "behind": {
+    "bottom": 0.6894409937888198,
+    "neutral": 0.30434782608695654,
+    "top": 0.006211180124223602,
+    "n": 79
+   },
+   "tied, riding-time lead": {
+    "bottom": 0.7622377622377622,
+    "neutral": 0.23076923076923078,
+    "top": 0.006993006993006993,
+    "n": 70
+   }
+  },
+  "fit_years": [
+   2022,
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "counts": {
+   "exposure_seconds": {
+    "bottom": 5885.0,
+    "neutral": 3522.0,
+    "neutral_uneven": 3522.0,
+    "neutral_even": 0.0
+   },
+   "events": {
+    "esc": 121,
+    "rev": 19,
+    "nf": 3,
+    "fall": 0,
+    "pen_bot": 9,
+    "pen_top": 1,
+    "td_trail": 8,
+    "td_lead": 13,
+    "td_even": 0,
+    "pen_trail": 8,
+    "pen_lead": 4,
+    "pen_even": 0
+   },
+   "holder_known": 28
+  },
+  "k_sv": 0.7659732075622029,
+  "k_tb": 0.8,
+  "k_tb_grid_nll": {
+   "0.0": 114.30591346158224,
+   "0.1": 113.36723018412309,
+   "0.2": 112.56902902617276,
+   "0.3": 111.9076984905295,
+   "0.4": 111.38006081982212,
+   "0.5": 110.98332085710075,
+   "0.6": 110.71499024975518,
+   "0.7": 110.57278777592892,
+   "0.8": 110.55452445108364,
+   "0.9": 110.6579798592496,
+   "1.0": 110.8808152170385,
+   "1.1": 111.22030649301229,
+   "1.2": 111.67321469683054,
+   "1.3": 112.23576908343324,
+   "1.4": 112.9036063915745,
+   "1.5": 113.67170703324982,
+   "1.6": 114.53455101098251
+  },
+  "alpha_tb": 0.6409880126702879
+ }
+}
