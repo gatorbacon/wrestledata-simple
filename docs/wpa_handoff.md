@@ -167,22 +167,18 @@ structurally when it briefly won). Full record: `docs/matsavant.md`, "Changes af
 holds the blend (a dict: tree + rate params + handoff seconds); `rt_params.json` is the rate model alone. Chain time is
 ~35 min now (the trees are refit in every seed-layer fold). Example charts: `scripts/wpa/plot_wp_cards.py`.
 
-## 6. Then step 10 — conference tournaments (spec Section 9, step 10)
+## 6. DONE (2026-09-29): step 10 — conference tournaments
 
-- Conference data is already reconstructed: `data/wpa/states/conf_*.csv`, 58 tournaments (Big Ten, Big 12, ACC, MAC,
-  Pac-12, SoCon, EIWA, etc.; see the audit). Conference E3 states **already feed the state table** (TJ decision). Step 10
-  adds the conference bouts to the **seed layer, validation and WPA**.
-- Strength input = **national rank, not conference seed** (spec). Unranked get a tunable tail value, like unseeded for NCAA.
-  - The rank source needs care; follow the repo's Documentation Standard in CLAUDE.md. `docs/matsavant.md` "NCAA Ranking
-    Methodology (Source of Truth)" and memory `project_ncaa_ranking_methodology_2026_09` describe `current_rank`.
-  - End-of-season rank leaks later NCAA results. TJ accepted that with a caveat (decision E); state it in the report.
-  - Only ~34% of conference bouts have both wrestlers ranked (audit). Flo ranks exist from 2023, and InterMat ranks are
-    also scraped (memory `project_intermat_rankings_tracking`).
-- Rerun the sparsity audit and validation including conference, and check whether conference bouts need their own β0
-  (spec). Six conference tournaments have unreliable riding time (ACC 2024/25, Pac-12 2020/26, MAC 2017, Big 12 2020); they
-  are already flagged via `rt_tournament_ok`.
-- `compute_wpa.py` is NCAA-only right now: it reads `ncaa_bouts.csv` / `ncaa_events.csv`, and seeds come from `w_seed`.
-  Generalise it to `--kind conf|both`, with rank in place of seed for conference.
+`scripts/wpa/conf_ranks.py` gives each conference bout a national rank: leak-free Flo snapshots before Feb 15 for
+2023–26; the leaky end-of-season `current_rank` before that (decision E, caveated). `fit_strength.py` fits the
+conference rank scale (N 200, unranked ≈ rank 60), a rank multiplier (1.45 — the spec's "own β0") and an α multiplier
+(1.14) leave-one-season-out on 2023–26 only; NCAA parameters unchanged. Held out: 0.4355 → 0.3792, slope 0.997.
+`wp_model` reads conference rows via `kind == "conf"` (ranks go in the seed columns). `compute_wpa.py --kind both`
+(default) covers 14,656 bouts; `wrestler_wpa.csv` is now per wrestler per TOURNAMENT (columns `kind`, `tournament`).
+A few conference bouts lack the period-2 choice entry (`choice == "unknown"`); `compute_wpa.wp_of` values those states
+as the average of A / B holding it. Full record: `docs/matsavant.md` step table row 10 and "Conference rank source".
+
+**Next: the overtime model (section 4), then step 11.**
 
 ## 7. Then step 11 — final outputs (spec Section 8)
 

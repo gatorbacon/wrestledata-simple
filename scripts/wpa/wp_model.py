@@ -19,6 +19,7 @@ Input: A-relative REGULATION states (t_rem > 0), one per DataFrame row, with col
     rt_diff     A's riding-time advantage in seconds
     era_group   E12 (2015-2023) | E3 (2024-2026)
     seed_a, seed_b   strength seeds (wpa_common.strength_seed; NaN = unseeded). Optional: without them rs = 0.
+    kind        optional; 'conf' = a conference-tournament bout: seed_a / seed_b are then NATIONAL RANKS (step 10)
 End-of-regulation and terminal states (fall, tech fall, ...) are not model states -- their value is the result.
 
 Usage:
@@ -88,7 +89,15 @@ class WPModel:
                     "a0": sp.get("alpha0", 1.0), "a2": sp.get("alpha_time", 0.0)}
 
     def rank_signal(self, d):
-        return S.rank_signal(d, self.sp["scale"], self.sp["N"], self.sp["unseeded_equiv_seed"])
+        """NCAA rows: committee seeds. Rows with kind == 'conf' (conference tournaments, step 10): seed_a / seed_b hold
+        NATIONAL RANKS (conf_ranks.py; NaN = unranked), on the conference scale and multiplier."""
+        rs = S.rank_signal(d, self.sp["scale"], self.sp["N"], self.sp["unseeded_equiv_seed"])
+        c = self.sp.get("conf")
+        if c and "kind" in d:
+            m = (d["kind"] == "conf").to_numpy()
+            if m.any():
+                rs[m] = c["rank_multiplier"] * S.rank_signal(d[m], "normal", c["N"], c["unranked_equiv_rank"])
+        return rs
 
     def parts(self, df):
         d = prep(df)
@@ -97,7 +106,9 @@ class WPModel:
         d["p_rt_a"], d["p_rt_b"] = pa, pb
         d["p_tie"] = S.tie_prob(self.tie, d)
         rs = self.rank_signal(d)
-        wp = S.predict(d, rs, self.prm)
+        c = self.sp.get("conf") or {}
+        am = np.where((d["kind"] == "conf").to_numpy(), c.get("alpha_multiplier", 1.0), 1.0) if "kind" in d else 1.0
+        wp = S.predict(d, rs, self.prm, am)
         return pd.DataFrame({"p_state": d["p_state"].to_numpy(), "p_rt_a": pa, "p_rt_none": pn, "p_rt_b": pb,
                              "p_tie": d["p_tie"].to_numpy(), "rs": rs, "wp": wp}, index=df.index)
 

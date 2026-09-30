@@ -847,6 +847,37 @@ def main():
             A(f"| 0:{t_:02d} | {pos} | {n_:,} | {pct(p_)} | {pct(a_)} |")
     A("")
 
+    # ------------------------------------------------------------ 9. conference tournaments (step 10)
+    cf = MODEL / "conf_heldout.parquet"
+    if cf.exists():
+        cd = pd.read_parquet(cf)
+        cy_ = cd["win"].to_numpy()
+        ra, rb = cd["seed_a"].notna(), cd["seed_b"].notna()
+        grp = np.select([ra & rb, ra | rb], ["Both ranked", "One ranked"], "Neither ranked")
+        A("## 9. Conference tournaments, national rank (step 10)\n")
+        A("Held out by season, leak-free seasons only (" + ", ".join(map(str, S.CONF_FIT_YEARS)) + "; Flo rank "
+          "snapshot from before the conference tournaments — `conf_ranks.md`). State model out of fold; the rank "
+          "layer's conference parameters refitted without the held-out season (`strength_layer.md`).\n")
+        A("| Slice | Samples | Bouts | Log loss, state model | Log loss, with ranks | Calibration slope |\n"
+          "|---|---:|---:|---:|---:|---:|")
+        for lab, msk in [("All", np.ones(len(cd), bool))] + [(g_, grp == g_) for g_ in
+                                                            ("Both ranked", "One ranked", "Neither ranked")]:
+            d_ = cd[msk]
+            A(f"| {lab} | {len(d_):,} | {d_['bout_key'].nunique():,} | {ll(d_['p_state'], d_['win']):.4f} | "
+              f"{ll(d_['p_full'], d_['win']):.4f} | {S.cal_slope(d_['p_full'].to_numpy(), d_['win'].to_numpy()):.3f} |")
+        fc = folded(cd.assign(y=cy_), "p_full")
+        A("\nFavourite's side, held out:\n")
+        A("| Predicted | Samples | Mean predicted | Actual |\n|---|---:|---:|---:|")
+        for r in fc.itertuples():
+            A(f"| {50 + 10 * int(r.group)}–{60 + 10 * int(r.group)}% | {int(r.samples):,} | {pct(r.pred)} | "
+              f"{pct(r.actual)} (90% {pct(r.lo)}–{pct(r.hi)}) |")
+        A("")
+        conf_summary = (f"- **Conference tournaments (step 10), held out, leak-free seasons:** log loss "
+                        f"{ll(cd['p_state'], cd['win']):.3f} state model → **{ll(cd['p_full'], cd['win']):.3f}** with "
+                        f"national rank; calibration slope {S.cal_slope(cd['p_full'].to_numpy(), cy_):.3f} (section 9).")
+        L.insert(L.index("## 1. Holdout by tournament year (spec 7.1) and log loss / Brier vs the baselines (7.3)\n"),
+                 conf_summary + "\n")
+
     A("## Rules eras side by side (spec Section 4)\n")
     A("State model, no seeds. The 3-point takedown (2024–26) makes the same lead worth less.\n")
     A("| State | 2015–23 | 2024–26 | Difference |\n|---|---:|---:|---:|")

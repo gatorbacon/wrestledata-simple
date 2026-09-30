@@ -41,8 +41,9 @@ Outputs:
                                        vs opponent's actions, and by position (top / bottom / neutral / break / OT)
   data/wpa/reports/wpa.md              sanity checks (sum rule, negative scoring WPA) + what the numbers say
 
-Usage: .venv/bin/python scripts/wpa/compute_wpa.py
+Usage: .venv/bin/python scripts/wpa/compute_wpa.py [--kind ncaa|conf|both]   (default both; conference = step 10)
 """
+import argparse
 import sys
 import time
 from pathlib import Path
@@ -84,7 +85,8 @@ def w_states(ev, p, nb):
                          "period": per, "pos": posA, "choice": chA, "rt_diff": ev[p + "rt_diff"].to_numpy(float),
                          "era_group": np.where(yr >= 2024, "E3", "E12"),
                          "seed_a": ev["bout_key"].map(nb["w_seed"]).astype(float).to_numpy(),
-                         "seed_b": ev["bout_key"].map(nb["l_seed"]).astype(float).to_numpy()}, index=ev.index)
+                         "seed_b": ev["bout_key"].map(nb["l_seed"]).astype(float).to_numpy(),
+                         "kind": ev["bout_key"].map(nb["kind"]).to_numpy()}, index=ev.index)
 
 
 def ints(d):
@@ -93,7 +95,20 @@ def ints(d):
 
 def modelable(s, section):
     return ((section == "reg") & (s["t_rem"] > 0) & s["period"].isin([1, 2, 3]) & s["pos"].isin(F.POS)
-            & s["choice"].isin(F.CH)).to_numpy()
+            & s["choice"].isin(F.CH + ["unknown"])).to_numpy()
+
+
+def wp_of(m, X):
+    """m.wp, except a state whose choice holder wasn't recorded (choice 'unknown': some conference bouts lack the
+    period-2 choice entry) is valued as the average of 'A holds it' and 'B holds it'."""
+    X = ints(X)
+    unk = (X["choice"] == "unknown").to_numpy()
+    out = np.empty(len(X))
+    if (~unk).any():
+        out[~unk] = m.wp(X[~unk])
+    if unk.any():
+        out[unk] = 0.5 * (m.wp(X[unk].assign(choice="A")) + m.wp(X[unk].assign(choice="B")))
+    return out
 
 
 def end_value(margin, rt_diff, wp_ot):
@@ -115,12 +130,12 @@ def build(m, nb, ev):
     sec = ev["section"].to_numpy()
     mb, ma = modelable(bf, sec), modelable(af, sec)
     wp_b, wp_a = np.full(len(ev), np.nan), np.full(len(ev), np.nan)
-    wp_b[mb], wp_a[ma] = m.wp(ints(bf[mb])), m.wp(ints(af[ma]))
+    wp_b[mb], wp_a[ma] = wp_of(m, bf[mb]), wp_of(m, af[ma])
 
     start = pd.DataFrame({"margin": 0, "t_rem": float(C.T_TOTAL), "period": 1, "pos": "neutral", "choice": "none",
                           "rt_diff": 0.0, "era_group": np.where(nb["year"] >= 2024, "E3", "E12"),
-                          "seed_a": nb["w_seed"].astype(float), "seed_b": nb["l_seed"].astype(float)},
-                         index=nb.index)
+                          "seed_a": nb["w_seed"].astype(float), "seed_b": nb["l_seed"].astype(float),
+                          "kind": nb["kind"]}, index=nb.index)
     sp = m.parts(start)
     wp_start = sp["wp"]
     wp_ot = pd.Series(expit(m.sp["beta_ot"] * sp["rs"].to_numpy()), index=nb.index)
@@ -251,7 +266,8 @@ def build(m, nb, ev):
         X["era_group"] = np.where(nb.loc[bk_, "year"].to_numpy() >= 2024, "E3", "E12")
         X["seed_a"] = nb.loc[bk_, "w_seed"].astype(float).to_numpy()
         X["seed_b"] = nb.loc[bk_, "l_seed"].astype(float).to_numpy()
-        for p_, v in zip(pending, m.wp(ints(X))):
+        X["kind"] = nb.loc[bk_, "kind"].to_numpy()
+        for p_, v in zip(pending, wp_of(m, X)):
             p_["v"] = float(v)
     for r in rows:
         pa_, pb_ = r.pop("_pa"), r.pop("_pb")
@@ -297,10 +313,10 @@ def credit(out, nb):
     o["choice_before"] = [c if w else flip_ch.get(c, c) for c, w in zip(o["choice_w_before"], aw)]
     o["beneficiary"] = np.where(o["beneficiary"] == "w", b["w_name"], np.where(o["beneficiary"] == "l",
                                                                                 b["l_name"], ""))
-    for c in ("tournament", "year", "weight", "round", "bracket", "match_id", "result_class", "rt_consistent"):
+    for c in ("kind", "tournament", "year", "weight", "round", "bracket", "match_id", "result_class", "rt_consistent"):
         o[c] = b[c].to_numpy()
     o["side"] = np.where(aw, "w", "l")
-    keep = ["bout_key", "tournament", "year", "weight", "round", "bracket", "match_id", "seq", "event_type",
+    keep = ["bout_key", "kind", "tournament", "year", "weight", "round", "bracket", "match_id", "seq", "event_type",
             "subtype", "category", "wrestler", "team", "seed", "opponent", "opponent_team", "opponent_seed", "side",
             "won", "beneficiary", "period", "t_before", "t_after", "margin_before", "margin_after", "pos_before",
             "pos_after", "choice_before", "rt_before", "rt_after", "wp_before", "wp_after", "wpa", "wp_w_before",
@@ -309,8 +325,9 @@ def credit(out, nb):
 
 
 def wrestler_table(o, nb, wp_start):
-    """Per wrestler per NCAA tournament, both sides of every link (zero-sum within a bout)."""
-    base = o[["bout_key", "year", "weight", "category", "event_type", "side", "wpa_w", "pos_before",
+    """Per wrestler per tournament, both sides of every link (zero-sum within a bout). `seed` is the NCAA seed, or
+    the national rank for a conference tournament (kind = conf)."""
+    base = o[["bout_key", "kind", "tournament", "year", "weight", "category", "event_type", "side", "wpa_w", "pos_before",
               "wrestler"]].copy()
     parts = []
     for side, sg in (("w", 1.0), ("l", -1.0)):
@@ -328,7 +345,7 @@ def wrestler_table(o, nb, wp_start):
                               ["ot", "top", "bottom", "neutral"], "break")
         parts.append(d)
     d = pd.concat(parts, ignore_index=True)
-    g = ["year", "weight", "name", "team_"]
+    g = ["kind", "tournament", "year", "weight", "name", "team_"]
     res = d.groupby(g).agg(seed=("seed_", "first"), wpa_total=("v", "sum")).reset_index()
     by = lambda col, pre: d.pivot_table(index=g, columns=col, values="v", aggfunc="sum", fill_value=0.0)\
         .add_prefix(pre).reset_index()
@@ -340,10 +357,11 @@ def wrestler_table(o, nb, wp_start):
                                                                                  "wpa_scoring_opponent": 0.0})
     # bouts, wins, expected wins at the opening whistle
     bw = nb[nb.index.isin(o["bout_key"].unique())]
-    rec = pd.concat([pd.DataFrame({"year": bw["year"], "weight": bw["weight"], "name": bw["w_name"],
-                                   "team_": bw["w_team"], "win": 1, "wp0": wp_start.loc[bw.index]}),
-                     pd.DataFrame({"year": bw["year"], "weight": bw["weight"], "name": bw["l_name"],
-                                   "team_": bw["l_team"], "win": 0, "wp0": 1 - wp_start.loc[bw.index]})])
+    kt = {"kind": bw["kind"], "tournament": bw["tournament"], "year": bw["year"], "weight": bw["weight"]}
+    rec = pd.concat([pd.DataFrame(kt | {"name": bw["w_name"], "team_": bw["w_team"], "win": 1,
+                                        "wp0": wp_start.loc[bw.index]}),
+                     pd.DataFrame(kt | {"name": bw["l_name"], "team_": bw["l_team"], "win": 0,
+                                        "wp0": 1 - wp_start.loc[bw.index]})])
     rec = rec.groupby(g).agg(bouts=("win", "size"), wins=("win", "sum"), expected_wins=("wp0", "sum")).reset_index()
     res = rec.merge(res, on=g).rename(columns={"team_": "team"})
     res["wins_minus_expected"] = res["wins"] - res["expected_wins"]
@@ -351,12 +369,32 @@ def wrestler_table(o, nb, wp_start):
 
 
 # ---------------------------------------------------------------------------------------------------------------
+def load_bouts(kind):
+    """Bouts + events of one kind. Conference bouts carry NATIONAL RANK in the seed columns (step 10, conf_ranks.py;
+    NaN = unranked); wp_model reads them on the conference scale because kind == 'conf'."""
+    nb = pd.read_csv(STATES / f"{kind}_bouts.csv", low_memory=False).set_index("bout_key")
+    nb["kind"] = kind
+    if kind == "conf":
+        cr = pd.read_csv(STATES / "conf_ranks.csv").set_index("bout_key")
+        for side in ("w", "l"):
+            nb[f"{side}_seed"] = cr[f"{side}_rank"].reindex(nb.index)
+            nb[f"{side}_seed_raw"] = nb[f"{side}_seed"]
+        nb["rank_leak_free"] = cr["leak_free"].reindex(nb.index)
+    # NCAA: w_seed / l_seed in the bouts file are already strength seeds (wpa_common.strength_seed: pre-2019 17-33 = NaN)
+    ev = pd.read_csv(STATES / f"{kind}_events.csv", low_memory=False)
+    return nb, ev
+
+
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--kind", default="both", choices=["ncaa", "conf", "both"])
+    args = ap.parse_args()
     t0 = time.time()
-    nb = pd.read_csv(STATES / "ncaa_bouts.csv", low_memory=False).set_index("bout_key")
-    # w_seed / l_seed in the bouts file are already strength seeds (wpa_common.strength_seed: pre-2019 17-33 = NaN)
+    kinds = ["ncaa", "conf"] if args.kind == "both" else [args.kind]
+    parts = [load_bouts(k) for k in kinds]
+    nb = pd.concat([p_[0] for p_ in parts])
+    ev = pd.concat([p_[1] for p_ in parts], ignore_index=True)
     ok = nb.index[nb["table_ok"] == True]  # noqa: E712
-    ev = pd.read_csv(STATES / "ncaa_events.csv", low_memory=False)
     ev = ev[ev["bout_key"].isin(ok)]
     m = W.WPModel()
     out, wp_start, wp_ot, n_noflip = build(m, nb.loc[ok], ev)
@@ -367,8 +405,44 @@ def main():
     o.to_parquet(OUT / "events_wpa.parquet", index=False)
     wt = wrestler_table(o, nb, wp_start)
     wt.to_csv(OUT / "wrestler_wpa.csv", index=False, float_format="%.4f")
-    report(o, wt, nb.loc[ok], wp_start, wp_ot, n_noflip)
+    nk = nb.loc[ok, "kind"]
+    if "ncaa" in kinds:
+        n_ok = nk.index[nk == "ncaa"]
+        report(o[o["kind"] == "ncaa"], wt[wt["kind"] == "ncaa"], nb.loc[n_ok], wp_start.loc[n_ok], wp_ot.loc[n_ok],
+               n_noflip)
+    if "conf" in kinds:
+        c_ok = nk.index[nk == "conf"]
+        L = conf_report(o[o["kind"] == "conf"], wt[wt["kind"] == "conf"], nb.loc[c_ok])
+        with open(REP, "a") as f:
+            f.write("\n".join(L) + "\n")
     print(f"wrote {OUT}/events_wpa.parquet, wrestler_wpa.csv, {REP} ({time.time() - t0:.0f}s)")
+
+
+def conf_report(o, wt, nb):
+    """Conference section of wpa.md (step 10)."""
+    L = ["\n## Conference tournaments (step 10)\n",
+         f"{nb.shape[0]:,} conference bouts ({', '.join(f'{k} {v}' for k, v in nb['tournament'].value_counts().items())}), "
+         "same chain and crediting as NCAA. Strength input = national rank (`conf_ranks.py`): leak-free Flo snapshots "
+         "from 2023; **before 2023 the end-of-season rank, which leaks NCAA results (TJ decision E) — opening WPs and "
+         "expected wins for those seasons are sharper than a live model could have been.** Riding time is unreliable "
+         "in six conference tournaments (ACC 2024/25, Pac-12 2020/26, MAC 2017, Big 12 2020); their bouts are left out "
+         "of the state table (`table_ok`) and so of this chain.\n"]
+    sc = o[o["category"] == "scoring"]
+    neg = sc[(sc["wpa"] < -1e-9) & (sc["event_type"] != "penalty")]
+    L.append(f"- Negative scoring WPA: {len(neg):,} of {len(sc):,} scoring events; largest {(-neg['wpa']).max() if len(neg) else 0:.4f}.")
+    td = sc[sc["event_type"] == "takedown"]
+    L.append("- Mean WPA of a takedown: " + ", ".join(
+        f"{lab} {100 * td.loc[m_, 'wpa'].mean():+.1f} pts" for lab, m_ in
+        (("2015–23", td["year"] < 2024), ("2024–26", td["year"] >= 2024))) + " (NCAA figures above).\n")
+    lf = wt[wt["year"] >= 2023].sort_values("wins_minus_expected", ascending=False)
+    L.append("**Most wins above expectation in one conference tournament, leak-free seasons (2023+):**\n")
+    L.append("| Year | Tournament | Weight | Wrestler | Team | Rank | Bouts | Wins | Expected | WPA |\n"
+             "|---:|---|---:|---|---|---:|---:|---:|---:|---:|")
+    for r in lf.head(10).itertuples():
+        rk = "—" if pd.isna(r.seed) else int(r.seed)
+        L.append(f"| {r.year} | {r.tournament} | {r.weight} | {r.name} | {r.team} | {rk} | {r.bouts} | {r.wins} | "
+                 f"{r.expected_wins:.2f} | {r.wpa_total:+.2f} |")
+    return L
 
 
 def pct(x, d=1):

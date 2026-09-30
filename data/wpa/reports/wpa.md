@@ -15,7 +15,7 @@ Crediting (spec 6): scores go to the scorer; a penalty or stalling point goes to
   - ncaa|NCAA|2019|184|35 escape at 72 s left, margin -8, A_bottom → neutral, riding time -159: 0.05% → 0.02%.
   - ncaa|NCAA|2019|184|35 takedown at 61 s left, margin +7, neutral → A_top, riding time +159: 99.97% → 99.95%.
 - **Riding-time point at the end of regulation:** the lock logic prices the point in before the buzzer, so applying it adds nothing — except in 22 bouts whose rebuilt riding time disagrees with the official point (all flagged `rt_consistent = False`); there the official point is applied at the buzzer and carries the correction.
-- Riding-time locks found inside clock stretches: 5,992; 0 stretches where the status changed across a period break without a break event were left whole (their lock stays in the clock row).
+- Riding-time locks found inside clock stretches: 5,992; 5 stretches where the status changed across a period break without a break event were left whole (their lock stays in the clock row).
 
 ## What each event is worth
 
@@ -176,3 +176,25 @@ Per wrestler per tournament, total WPA = wins − expected wins at the opening w
 
 NCAA 2018 197 lbs has two bouts listed as "QF, Kyle Conel over Kollin Moore": the real one (Dec 5-3) and a two-event "Fall 2-0" (match 8962577104); a similar two-event "Fall 2-0" is listed for Conel over Jacob Holschlag (C_SF). They come from the scraped bracket, not this step — worth checking against the official bracket before anything here is published.
 
+
+## Conference tournaments (step 10)
+
+7,917 conference bouts (Big Ten 2709, MAC 1438, Big 12 1403, SoCon 1198, ACC 804, Pac-12 365), same chain and crediting as NCAA. Strength input = national rank (`conf_ranks.py`): leak-free Flo snapshots from 2023; **before 2023 the end-of-season rank, which leaks NCAA results (TJ decision E) — opening WPs and expected wins for those seasons are sharper than a live model could have been.** Riding time is unreliable in six conference tournaments (ACC 2024/25, Pac-12 2020/26, MAC 2017, Big 12 2020); their bouts are left out of the state table (`table_ok`) and so of this chain.
+
+- Negative scoring WPA: 174 of 44,746 scoring events; largest 0.0024.
+- Mean WPA of a takedown: 2015–23 +13.3 pts, 2024–26 +15.8 pts (NCAA figures above).
+
+**Most wins above expectation in one conference tournament, leak-free seasons (2023+):**
+
+| Year | Tournament | Weight | Wrestler | Team | Rank | Bouts | Wins | Expected | WPA |
+|---:|---|---:|---|---|---:|---:|---:|---:|---:|
+| 2023 | Big 12 | 197 | Luke Surber | OK State | — | 5 | 4 | 0.91 | +3.09 |
+| 2024 | Big 12 | 125 | Jett Strickenberger | West Virginia | — | 5 | 4 | 1.15 | +2.85 |
+| 2026 | Big 12 | 141 | Carter Nogle | Air Force | — | 5 | 4 | 1.16 | +2.84 |
+| 2023 | Big 12 | 133 | Wyatt Henson | Oklahoma | — | 6 | 5 | 2.28 | +2.72 |
+| 2025 | Big Ten | 157 | Brandon Cannon | Ohio State | — | 4 | 3 | 0.29 | +2.71 |
+| 2024 | MAC | 149 | Quinn Kinner | Rider | — | 4 | 4 | 1.37 | +2.63 |
+| 2024 | MAC | 184 | Malachi DuVall | George Mason | — | 4 | 4 | 1.54 | +2.46 |
+| 2026 | ACC | 174 | Collin Carrigan | North Carolina | — | 4 | 3 | 0.66 | +2.34 |
+| 2024 | MAC | 174 | John Worthing | Clarion | — | 4 | 4 | 1.67 | +2.33 |
+| 2025 | MAC | 165 | Caden Dobbins | Lock Haven | — | 6 | 5 | 2.73 | +2.27 |

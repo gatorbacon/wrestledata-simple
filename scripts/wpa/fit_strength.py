@@ -34,7 +34,12 @@ WPA step 7 -- strength layer on NCAA seeds (spec Section 5), revised in step 8.
   * Fitting: maximum likelihood on the 10-second samples. Validation: leave one NCAA tournament (= year) out;
     scale / N / R_tail chosen with the spec's form, then the alpha form, then whether E3 wants its own beta0.
 
-Outputs: data/wpa/model/strength_params.json, tie_model.joblib, data/wpa/reports/strength_layer.md.
+  * Conference bouts (step 10): NATIONAL RANK in place of a seed (conf_ranks.py; leak-free Flo snapshots, 2023+).
+    Same form and NCAA parameters; conference gets its own rank scale (N, unranked value) and a multiplier on the
+    rank signal, fitted leave-one-season-out on the leak-free seasons (the spec's "own beta0" question).
+
+Outputs: data/wpa/model/strength_params.json (conference under "conf"), tie_model.joblib, conf_heldout.parquet
+(held-out conference predictions for validate.py), data/wpa/reports/strength_layer.md.
 Usage: .venv/bin/python scripts/wpa/fit_strength.py [--refresh]
 """
 import argparse
@@ -63,6 +68,8 @@ OOF_VERSION = 2  # 2 = with the riding-time probabilities
 EPS = 1e-6
 N_GRID = [40, 50, 60, 80, 100, 130]
 TAIL_GRID = [17, 20, 22, 25, 28, 33, 40, 50, 60]
+CONF_N_GRID = [33, 40, 50, 60, 80, 130, 200]
+CONF_TAIL_GRID = [20, 25, 30, 34, 40, 50, 60, 80]
 ALPHA_FORMS = {"none": "none (spec 5.4 as written)", "const": "one constant α",
                "time": "α changes with the clock: a0 + a2·(share of regulation elapsed)"}
 
@@ -88,40 +95,54 @@ OOF_COLS = ["bout_key", "persp", "source", "year", "era_group", "t_rem", "period
             "chc", "rt_diff", "rt_status", "ei", "win", "went_to_ot"]
 
 
+CONF_OOF = MODEL / "conf_oof_state.parquet"
+CONF_FIT_YEARS = [2023, 2024, 2025, 2026]   # conference seasons with a leak-free national rank (conf_ranks.py)
+
+
+def oof_years(two, kind):
+    return sorted(two.loc[two["kind"] == kind, "year"].unique()) if kind == "ncaa" else CONF_FIT_YEARS
+
+
+def rows_in_oof_order(two, kind="ncaa"):
+    """Rows of `two` of that kind in the order build_oof writes them."""
+    return pd.concat([two[(two["year"] == Y) & (two["kind"] == kind)] for Y in oof_years(two, kind)],
+                     ignore_index=True)
+
+
 def ncaa_in_oof_order(two):
-    """NCAA rows of `two` in the order build_oof writes them."""
-    years = sorted(two.loc[two["kind"] == "ncaa", "year"].unique())
-    return pd.concat([two[(two["year"] == Y) & (two["kind"] == "ncaa")] for Y in years], ignore_index=True)
+    return rows_in_oof_order(two, "ncaa")
 
 
-def build_oof(two, params):
+def build_oof(two, params, kind="ncaa"):
+    """Each year's bouts of `kind` scored by a state model built without that year (NCAA or conference)."""
     parts = []
     t0 = time.time()
-    for Y in sorted(two.loc[two["kind"] == "ncaa", "year"].unique()):
-        test = two[(two["year"] == Y) & (two["kind"] == "ncaa")]
+    for Y in oof_years(two, kind):
+        test = two[(two["year"] == Y) & (two["kind"] == kind)]
         p, (pa, _, pb) = state_model_wp(two[two["year"] != Y], test, params, return_probs=True)
         parts.append(test[OOF_COLS].assign(p_state=p, p_rt_a=pa, p_rt_b=pb))
-        print(f"  out-of-fold state model {Y} done ({time.time() - t0:.0f}s)", flush=True)
+        print(f"  out-of-fold state model {kind} {Y} done ({time.time() - t0:.0f}s)", flush=True)
     return pd.concat(parts, ignore_index=True)
 
 
-def load_oof(two, params, refresh=False):
+def load_oof(two, params, refresh=False, kind="ncaa"):
     """The out-of-fold state probabilities, rebuilt when the cache was made with other model settings or other rows
     (e.g. after the states were rebuilt)."""
-    meta_f = OOF.with_suffix(".json")
+    path = OOF if kind == "ncaa" else CONF_OOF
+    meta_f = path.with_suffix(".json")
     # the state model's own settings, plus when it was last fitted (a refit with unchanged settings -- e.g. a code
     # change -- must still invalidate the cache)
     want = {k: params.get(k) for k in OOF_KEYS} | {"oof_version": OOF_VERSION,
                                                    "state_table_mtime": int((MODEL / "state_table.parquet").stat().st_mtime)}
-    if not refresh and OOF.exists() and meta_f.exists() and json.loads(meta_f.read_text()) == want:
-        oof = pd.read_parquet(OOF)
-        nr = ncaa_in_oof_order(two)
+    if not refresh and path.exists() and meta_f.exists() and json.loads(meta_f.read_text()) == want:
+        oof = pd.read_parquet(path)
+        nr = rows_in_oof_order(two, kind)
         if len(oof) == len(nr) and all((oof[c].to_numpy() == nr[c].to_numpy()).all()
                                        for c in ("bout_key", "persp", "source", "t_rem", "margin", "win")):
             return oof
-    print("building the out-of-fold state probabilities (~6 min)", flush=True)
-    oof = build_oof(two, params)
-    oof.to_parquet(OOF, index=False)
+    print(f"building the out-of-fold state probabilities, {kind}", flush=True)
+    oof = build_oof(two, params, kind)
+    oof.to_parquet(path, index=False)
     meta_f.write_text(json.dumps(want))
     return oof
 
@@ -189,11 +210,12 @@ def alpha(t_share, prm):
     return prm.get("a0", 1.0) + prm.get("a2", 0.0) * (1 - t_share)
 
 
-def predict(d, rs, prm):
-    """prm: b0, g, b_ot, e3m (default 1), a0 (default 1), a2 (default 0)."""
+def predict(d, rs, prm, amult=1.0):
+    """prm: b0, g, b_ot, e3m (default 1), a0 (default 1), a2 (default 0). amult: per-row multiplier on alpha
+    (conference bouts, step 10)."""
     t = d["t_rem"].to_numpy(float) / 420
     b = prm["b0"] * t ** prm["g"] * np.where(d["ei"].to_numpy() == 1, prm.get("e3m", 1.0), 1.0)
-    z = (alpha(t, prm) * logit(np.clip(d["p_state"].to_numpy(), EPS, 1 - EPS)) + b * rs
+    z = (amult * alpha(t, prm) * logit(np.clip(d["p_state"].to_numpy(), EPS, 1 - EPS)) + b * rs
          + prm["b_ot"] * d["p_tie"].to_numpy() * rs)
     return expit(z)
 
@@ -392,6 +414,84 @@ def main():
     A(f"| **All** | {base:.4f} | **{nll(final_pred, y):.4f}** |\n")
     A("Full calibration, by bucket and by slice: `validation.md` (step 8).\n")
 
+    # ------------------------------------------------------------------ step 10: conference bouts, national rank
+    cr = pd.read_csv(STATES / "conf_ranks.csv").set_index("bout_key")
+    coof = load_oof(two, params, args.refresh, kind="conf")
+    coof["p_tie"] = tie_prob(tie, coof)
+    wr_, lr_ = coof["bout_key"].map(cr["w_rank"]), coof["bout_key"].map(cr["l_rank"])
+    coof["seed_a"] = np.where(coof["persp"] == "w", wr_, lr_)
+    coof["seed_b"] = np.where(coof["persp"] == "w", lr_, wr_)
+    cs = coof[coof["source"] == "sample"].reset_index(drop=True)
+    cy = cs["win"].to_numpy()
+
+    def conf_fit(d, yy, base_rs, fit_m, fit_a):
+        """(rank multiplier, alpha multiplier) by maximum likelihood; the NCAA parameters stay fixed"""
+        names = [n_ for n_, f_ in (("m", fit_m), ("a", fit_a)) if f_]
+        if not names:
+            return 1.0, 1.0
+
+        def obj(th):
+            v = dict(m=1.0, a=1.0) | dict(zip(names, th))
+            return nll(predict(d, v["m"] * base_rs, prm, v["a"]), yy)
+        r = minimize(obj, [1.0] * len(names), bounds=[(0, 3) if n_ == "m" else (0.3, 2) for n_ in names],
+                     method="L-BFGS-B")
+        v = dict(m=1.0, a=1.0) | dict(zip(names, map(float, r.x)))
+        return v["m"], v["a"]
+
+    def conf_loyo(N_, tl_, fit_m=True, fit_a=False):
+        """leave one conference season out"""
+        base_rs = rank_signal(cs, "normal", N_, tl_)
+        pred, ms = np.empty(len(cs)), {}
+        for Y in CONF_FIT_YEARS:
+            tr, te = (cs["year"] != Y).to_numpy(), (cs["year"] == Y).to_numpy()
+            mm, aa = conf_fit(cs[tr], cy[tr], base_rs[tr], fit_m, fit_a)
+            pred[te], ms[Y] = predict(cs[te], mm * base_rs[te], prm, aa), (mm, aa)
+        return pred, ms
+    cres = {(N_, tl_): nll(conf_loyo(N_, tl_)[0], cy) for N_ in CONF_N_GRID for tl_ in CONF_TAIL_GRID if tl_ <= N_}
+    cN, ctl = min(cres, key=cres.get)
+    c_m1 = conf_loyo(cN, ctl, fit_m=False)[0]
+    c_pred, c_ms = conf_loyo(cN, ctl)
+    c_pa, c_msa = conf_loyo(cN, ctl, fit_a=True)
+    c_seed = conf_loyo(N or 50, tl, fit_m=False)[0]
+    c_state = cs["p_state"].to_numpy()
+    own_mult = nll(c_pred, cy) < nll(c_m1, cy) - 1e-4
+    own_alpha = own_mult and nll(c_pa, cy) < nll(c_pred, cy) - 1e-4
+    rs_c_all = rank_signal(cs, "normal", cN, ctl)
+    c_mult, c_amult = conf_fit(cs, cy, rs_c_all, own_mult, own_alpha)
+    c_final = c_pa if own_alpha else c_pred if own_mult else c_m1
+    print(f"conference: N {cN}, unranked = rank {ctl}, multiplier {c_mult:.2f}, alpha x {c_amult:.2f} "
+          f"({time.time() - t0:.0f}s)", flush=True)
+
+    A("## Conference bouts: national rank (step 10)\n")
+    A("Conference-tournament bouts use **national rank** in place of a seed (spec): the FloWrestling snapshot dated "
+      "before Feb 15 of the season, i.e. before the conference tournaments — leak-free (`conf_ranks.py`, "
+      "`conf_ranks.md`). Fitted and validated on those seasons only, " + ", ".join(map(str, CONF_FIT_YEARS)) +
+      f" ({cs['bout_key'].nunique():,} bouts, {len(cs):,} samples); each season held out in turn, state model out of "
+      "fold as for NCAA. The NCAA parameters (β0, γ, α, β_ot, the E3 multiplier) stay as fitted on NCAA; conference "
+      "bouts get their own rank scale (N, the value of an unranked wrestler), a multiplier on the rank signal — "
+      "the spec's \"do conference bouts need their own β0\" — and, if held-out log loss says so, a multiplier on α "
+      "(the weight on the state model). Pre-2023 conference bouts only have the end-of-season "
+      "rank, which leaks NCAA results (TJ decision E): they use these parameters for WPA but are not fitted on.\n")
+    A("| Conference, held out by season | Log loss | Calibration slope |\n|---|---:|---:|")
+    for lab, pr_ in (("State model alone (no ranks)", c_state), ("Rank used as a seed (NCAA scale, no refit)", c_seed),
+                     (f"Rank, own scale (N = {cN}, unranked = rank {ctl}), multiplier 1", c_m1),
+                     ("Rank, own scale + fitted multiplier", c_pred),
+                     ("Rank, own scale + multiplier + α multiplier", c_pa)):
+        A(f"| {lab} | {nll(pr_, cy):.4f} | {cal_slope(pr_, cy):.3f} |")
+    A("\nFitted per held-out season (rank multiplier, α multiplier): " + ", ".join(
+        f"{Y} {m_:.2f} / {a_:.2f}" for Y, (m_, a_) in c_msa.items()) + ". Any N from 80 up scores within 0.0001.\n")
+    A(("**Conference bouts get their own multiplier" if own_mult else "**One β0 serves both: the multiplier stays 1")
+      + f"** (final: {c_mult:.2f})" + (f"; the state part's α is scaled × {c_amult:.2f} for conference bouts "
+      "(without it the held-out predictions are underconfident, slope > 1)" if own_alpha else "") + ". Rank signal examples: #1 vs #16 = "
+      f"{c_mult * rank_signal(pd.DataFrame({'seed_a': [1.0], 'seed_b': [16.0]}), 'normal', cN, ctl)[0]:.2f}, "
+      f"#5 vs unranked = {c_mult * rank_signal(pd.DataFrame({'seed_a': [5.0], 'seed_b': [np.nan]}), 'normal', cN, ctl)[0]:.2f}.\n")
+    A("| Season | Bouts | State model alone | With ranks |\n|---|---:|---:|---:|")
+    for Y in CONF_FIT_YEARS:
+        te = (cs["year"] == Y).to_numpy()
+        A(f"| {Y} | {cs.loc[te, 'bout_key'].nunique():,} | {nll(c_state[te], cy[te]):.4f} | {nll(c_final[te], cy[te]):.4f} |")
+    A("")
+    cs.assign(p_full=c_final).to_parquet(MODEL / "conf_heldout.parquet", index=False)   # for validate.py
+
     A("## Spot checks\n")
     tab = pd.read_parquet(MODEL / "state_table.parquet")
     key = params["table_key"]
@@ -419,6 +519,10 @@ def main():
            "e3_beta0_multiplier": prm["e3m"] if use_e3 else 1.0, "alpha_form": form, "alpha0": prm["a0"],
            "alpha_time": prm["a2"], "loto_logloss": nll(final_pred, y), "state_only_logloss": base,
            "tie_model": "sum over r of P(r | S) * P(tie | margin, time, position, era, break, r); symmetrised",
+           "conf": {"scale": "normal", "N": cN, "unranked_equiv_rank": ctl, "rank_multiplier": c_mult, "alpha_multiplier": c_amult,
+                    "fit_years": CONF_FIT_YEARS, "loyo_logloss": nll(c_final, cy), "state_only_logloss": nll(c_state, cy),
+                    "rank_source": "Flo snapshot before Feb 15 (2023+); end-of-season current_rank before 2023 "
+                                   "(leaks, WPA only) -- data/wpa/states/conf_ranks.csv"},
            "built": time.strftime("%Y-%m-%d")}
     (MODEL / "strength_params.json").write_text(json.dumps(out, indent=2))
     joblib.dump(tie, MODEL / "tie_model.joblib")

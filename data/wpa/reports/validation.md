@@ -25,6 +25,8 @@ Steps 2–7 were re-run with these changes; `state_model.md` and `strength_layer
 - **Monotonicity:** 10,784 table cells with data adjusted by the projections (max 0.149); final WP (with seeds) falling as the margin grows: 4 grid steps; as a riding-time lead grows: 0; as the seed advantage grows: 0.
 - **Negative scoring WPA (preliminary):** 198 of 38,547 NCAA scoring events (0.51%) lower the scorer's WP; largest 0.001.
 
+- **Conference tournaments (step 10), held out, leak-free seasons:** log loss 0.435 state model → **0.379** with national rank; calibration slope 0.997 (section 9).
+
 ## 1. Holdout by tournament year (spec 7.1) and log loss / Brier vs the baselines (7.3)
 
 **Leave one tournament out.** Every model piece refitted without the held-out year (NCAA and conference). The 2024–26 rows are TJ's rotation.
@@ -233,6 +235,27 @@ Tied late with nobody able to reach 1:00 of riding time (the case the first vers
 | 0:25 | neutral | 996 | 77.9% | 80.7% |
 | 0:25 | A_top | 22 | 51.4% | 45.5% |
 | 0:55 | neutral | 358 | 63.6% | 69.3% |
+
+## 9. Conference tournaments, national rank (step 10)
+
+Held out by season, leak-free seasons only (2023, 2024, 2025, 2026; Flo rank snapshot from before the conference tournaments — `conf_ranks.md`). State model out of fold; the rank layer's conference parameters refitted without the held-out season (`strength_layer.md`).
+
+| Slice | Samples | Bouts | Log loss, state model | Log loss, with ranks | Calibration slope |
+|---|---:|---:|---:|---:|---:|
+| All | 252,298 | 3,197 | 0.4355 | 0.3792 | 0.997 |
+| Both ranked | 80,530 | 984 | 0.4730 | 0.4265 | 0.961 |
+| One ranked | 89,526 | 1,181 | 0.3799 | 0.2628 | 1.050 |
+| Neither ranked | 82,242 | 1,032 | 0.4591 | 0.4596 | 0.959 |
+
+Favourite's side, held out:
+
+| Predicted | Samples | Mean predicted | Actual |
+|---|---:|---:|---:|
+| 50–60% | 13,939 | 54.0% | 55.5% (90% 53.6%–57.3%) |
+| 60–70% | 11,393 | 64.9% | 64.4% (90% 62.0%–67.0%) |
+| 70–80% | 15,368 | 75.2% | 75.4% (90% 73.8%–77.6%) |
+| 80–90% | 21,508 | 85.2% | 86.2% (90% 84.8%–87.5%) |
+| 90–100% | 54,214 | 96.9% | 96.7% (90% 96.2%–97.2%) |
 
 ## Rules eras side by side (spec Section 4)
 

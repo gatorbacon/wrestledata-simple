@@ -77,6 +77,29 @@ Each E3 year held out; fitted on the rest with one β0 for all years vs an extra
 
 Full calibration, by bucket and by slice: `validation.md` (step 8).
 
+## Conference bouts: national rank (step 10)
+
+Conference-tournament bouts use **national rank** in place of a seed (spec): the FloWrestling snapshot dated before Feb 15 of the season, i.e. before the conference tournaments — leak-free (`conf_ranks.py`, `conf_ranks.md`). Fitted and validated on those seasons only, 2023, 2024, 2025, 2026 (3,197 bouts, 252,298 samples); each season held out in turn, state model out of fold as for NCAA. The NCAA parameters (β0, γ, α, β_ot, the E3 multiplier) stay as fitted on NCAA; conference bouts get their own rank scale (N, the value of an unranked wrestler), a multiplier on the rank signal — the spec's "do conference bouts need their own β0" — and, if held-out log loss says so, a multiplier on α (the weight on the state model). Pre-2023 conference bouts only have the end-of-season rank, which leaks NCAA results (TJ decision E): they use these parameters for WPA but are not fitted on.
+
+| Conference, held out by season | Log loss | Calibration slope |
+|---|---:|---:|
+| State model alone (no ranks) | 0.4355 | 1.033 |
+| Rank used as a seed (NCAA scale, no refit) | 0.4063 | 1.175 |
+| Rank, own scale (N = 200, unranked = rank 60), multiplier 1 | 0.3842 | 1.234 |
+| Rank, own scale + fitted multiplier | 0.3800 | 1.077 |
+| Rank, own scale + multiplier + α multiplier | 0.3792 | 0.997 |
+
+Fitted per held-out season (rank multiplier, α multiplier): 2023 1.46 / 1.12, 2024 1.42 / 1.12, 2025 1.52 / 1.19, 2026 1.40 / 1.14. Any N from 80 up scores within 0.0001.
+
+**Conference bouts get their own multiplier** (final: 1.45); the state part's α is scaled × 1.14 for conference bouts (without it the held-out predictions are underconfident, slope > 1). Rank signal examples: #1 vs #16 = 2.00, #5 vs unranked = 2.13.
+
+| Season | Bouts | State model alone | With ranks |
+|---|---:|---:|---:|
+| 2023 | 748 | 0.4222 | 0.3526 |
+| 2024 | 830 | 0.4275 | 0.3762 |
+| 2025 | 827 | 0.4469 | 0.4078 |
+| 2026 | 792 | 0.4446 | 0.3786 |
+
 ## Spot checks
 
 | State | WP_state | P(tied at the buzzer) | With seeds |
