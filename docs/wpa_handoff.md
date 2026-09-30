@@ -1,9 +1,10 @@
 # WPA model — handoff for a new session
 
-Read this first. Written 2026-09-29 at the end of the session that built steps 1–9, so a fresh Claude Code session
-(any account, **same Mac, same repo folder**) can finish the job without re-deriving anything.
+Read this first. Started 2026-09-29, updated 2026-09-30 when the build finished: **all 11 spec steps + the overtime model
+are done.** A fresh Claude Code session (any account, **same Mac, same repo folder**) should be able to re-run or extend it
+from this file alone. To score new matches (e.g. the 2027 NCAAs) go straight to section 8.
 
-**Where the rest lives:** the spec is `/Users/tjthompson/Downloads/wrestling_wpa_spec.md` (the 11-step build order is
+**Where the rest lives:** the spec is `docs/wpa_spec.md` (copied from `~/Downloads/wrestling_wpa_spec.md`) (the 11-step build order is
 its Section 9). The full design record is `docs/matsavant.md`, section "WPA model (TJ's spec)", which has the step table,
 every TJ decision and the step-8 changes. Per-step reports are in `data/wpa/reports/`. Every script's docstring explains
 its design. Claude Code memory: `~/.claude/projects/-Users-tjthompson-Documents-Cursor-wrestledata-simple/memory/project_wpa_spec_build.md`.
@@ -12,8 +13,8 @@ its design. Claude Code memory: `~/.claude/projects/-Users-tjthompson-Documents-
 
 ## 0. Standing rules (TJ)
 
-- **Never push** to any branch without TJ's explicit OK. Commit locally only. All WPA commits so far are local and unpushed:
-  `c83f75ae02` (steps 1–4), `367f01a53c` (5–7), `175f127d88` (8), `1c8c0497ba` (9), plus the commit that adds this file.
+- **Never push** to any branch without TJ's explicit OK. Commit locally only. As of 2026-09-30 every WPA commit is local and
+  unpushed (`git log --oneline -- scripts/wpa docs/wpa_handoff.md` lists them; the last is step 11, `fef3440306`).
 - **Keep WPA commits clean.** Unrelated uncommitted files sit in the tree: `data/analysis/td_custom_report.html`,
   `scripts/analysis/td_custom_report/{build_data.py,template.html}` and `data/analysis/nf_by_year.html`. Those belong to
   the takedown-report work, so don't `git add -A`; add WPA paths explicitly.
@@ -27,7 +28,7 @@ its design. Claude Code memory: `~/.claude/projects/-Users-tjthompson-Documents-
 
 ---
 
-## 1. What exists (steps 1–9 done)
+## 1. What exists (all steps done)
 
 | Step | Script | Writes | Time |
 |---|---|---|---|
@@ -38,14 +39,19 @@ its design. Claude Code memory: `~/.claude/projects/-Users-tjthompson-Documents-
 | 5–6 state model | `scripts/wpa/fit_state_model.py` | `data/wpa/model/state_table.parquet`, `rt_model.joblib`, `backstop.joblib` (all gitignored), `model_params.json`, `reports/state_model.md` | ~9 min |
 | 7 seed layer | `scripts/wpa/fit_strength.py [--refresh]` | `strength_params.json`, `tie_model.joblib`, `ncaa_oof_state.parquet` (auto-rebuilt when the state table changes, +6 min), `reports/strength_layer.md` | ~5–11 min |
 | 8 validation | `scripts/wpa/validate.py [--reuse]` | `reports/validation.md` + `reports/img/validation_*.png` (cache `data/wpa/model/validation_cache.*`, gitignored) | ~6 min (`--reuse` 20 s) |
-| 9 WPA | `scripts/wpa/compute_wpa.py` | `data/wpa/output/events_wpa.parquet` (gitignored), `data/wpa/output/wrestler_wpa.csv`, `reports/wpa.md` | ~10 s |
+| 9 WPA | `scripts/wpa/compute_wpa.py [--kind ncaa\|conf\|both]` | `data/wpa/output/events_wpa.parquet` (gitignored), `data/wpa/output/wrestler_wpa.csv`, `reports/wpa.md` | ~10 s |
+| 10 conference ranks | `scripts/wpa/conf_ranks.py` (run before `fit_strength`) | `data/wpa/states/conf_ranks.csv` (gitignored), `reports/conf_ranks.md` | <1 min |
+| OT overtime model | `scripts/wpa/ot_model.py` (run before `compute_wpa`) | `data/wpa/model/ot_params.json`, `data/wpa/states/ot_bouts.csv` (gitignored), `reports/ot_model.md` | ~2.5 min |
+| 11 outputs | `scripts/wpa/build_outputs.py` (after `compute_wpa`) | `data/wpa/output/{state_table,match_wp_curves}.parquet` (gitignored), `data/wpa/output/model_params.json` | ~1 min |
+| charts | `plot_examples.py [--bout KEY ...]`, `plot_wp_cards.py --year Y \| --wrestler NAME`, `plot_ot_flow.py --year Y` | `data/wpa/reports/img/` | seconds |
 
 Shared predictor used by steps 8 and 9 and everything after: `scripts/wpa/wp_model.py`. `WPModel().wp(df)` or `.parts(df)`
 takes A-relative regulation states: margin, t_rem, period, pos, choice, rt_diff, era_group, seed_a, seed_b.
 
 **Full rebuild chain** (run from the repo root, in the background, with a log to the scratchpad):
-`.venv/bin/python scripts/wpa/fit_state_model.py && .venv/bin/python scripts/wpa/fit_strength.py && .venv/bin/python scripts/wpa/validate.py && .venv/bin/python scripts/wpa/compute_wpa.py`
-(~30 min). Steps 2–3 only need rerunning if the state reconstruction changes. Everything is deterministic (`random_state=0`),
+`.venv/bin/python scripts/wpa/build_states.py --kind both && for s in build_table conf_ranks fit_state_model fit_strength validate ot_model compute_wpa build_outputs; do .venv/bin/python scripts/wpa/$s.py || break; done`
+(~35 min). Gitignored intermediates (states CSVs, `.joblib` models, parquet tables) live only on this Mac's disk; if they're
+lost, this chain recreates them exactly. Everything is deterministic (`random_state=0`),
 so a rerun with no code change gives identical params.
 
 ---
@@ -187,3 +193,33 @@ second is the post-event state; samples after a bout ends are dropped). `scripts
 → `data/wpa/reports/img/examples/` (upset, comeback, riding time, tiebreaker). Spec Section 11 answers + final summary:
 `data/wpa/reports/final_summary.md`. **The spec's build order is complete.** Anything further (site integration, more
 charts) is new work — ask TJ.
+
+## 8. Running WPA on new matches (e.g. the 2027 NCAAs or conference tournaments)
+
+**Input data** (scrapers documented in `docs/matsavant.md`, "Bout detail" sections): NCAA play-by-play in
+`data/{year}/ncaa-tourney/bout_detail/{weight}.json` (`scripts/scraping/scrape_ncaa_bout_detail.py`, then
+`scripts/ncaa/reconcile_bout_detail.py`, which needs `data/{year}/ncaa-tourney/parsed/matches.json`); conference in
+`data/{year}/{conf}-tourney/bout_detail/` (`scripts/scraping/scrape_conference_bout_detail.py`). Seeds come from the NCAA
+parsed data; conference strength comes from the latest Flo snapshot before Feb 15 in
+`data/{year}/flo-preseason-rankings/` (`conf_ranks.py` picks it automatically for 2023+). New years are found
+automatically (`wpa_common.py` scans `data/{year}/`), and any year ≥ 2024 is rules era E3.
+
+**A. Score new matches with the current model (no refit, a few minutes)** — the normal case:
+1. Scrape + reconcile the bout detail (above).
+2. `.venv/bin/python scripts/wpa/build_states.py --kind both` (reads every year, so the new one is included; check
+   `reports/state_reconstruction.md` for the new year's usable share).
+3. `.venv/bin/python scripts/wpa/conf_ranks.py` (only if conference bouts were added).
+4. `.venv/bin/python scripts/wpa/compute_wpa.py` → `events_wpa.parquet`, `wrestler_wpa.csv`, `reports/wpa.md`.
+5. `.venv/bin/python scripts/wpa/build_outputs.py` → `match_wp_curves.parquet`.
+6. Charts: `plot_wp_cards.py --year 2027` (finals), `plot_wp_cards.py --wrestler "Name"`, `plot_examples.py --bout
+   "ncaa|NCAA|2027|157|39"` (bout keys = `kind|tournament|year|weight|bout number`, see `data/wpa/states/ncaa_bouts.csv`),
+   `plot_ot_flow.py --year 2027`.
+This needs the fitted model files on disk (`data/wpa/model/*.joblib`, `state_table.parquet`); if they're missing, run
+the full chain in section 1 first.
+
+**B. Refit with the new season in the training data** (once a year, after the season; ~35 min, full chain in section 1).
+First extend the hard-coded year lists: `ot_model.py` `FIT_YEARS`, `fit_strength.py` `CONF_FIT_YEARS`,
+`validate.py` `FORWARD` (the 2024–26 rotation). Then compare the new `validation.md` against the committed one before
+keeping it. **Rule changes** (a new scoring value, overtime format, period length): check the NCAA rules-change PDF
+first. A scoring change needs a new rules era (`wpa_common.py` era function, plus the `year >= 2024` checks in
+`compute_wpa.py` / `ot_model.py`); an overtime change needs `ot_model.py` rethought (it is current-rules-only).

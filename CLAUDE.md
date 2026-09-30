@@ -404,6 +404,7 @@ All pages share `hs_config.js` which is loaded first and provides:
 
 ## Standalone Tools (not part of either website)
 
+- **WPA / win-probability model (NCAA + conference, from TJ's spec)** — `scripts/wpa/`, `data/wpa/`. Not on either site yet. **Read [`docs/wpa_handoff.md`](docs/wpa_handoff.md) first** (section 8 = how to score new matches); spec in `docs/wpa_spec.md`, results in `data/wpa/reports/final_summary.md`.
 - **Bracket viewer** — `labs/bracket_viewer/` (side project, undeployed; NCAA 33-man first, schema is format-agnostic). See its `README.md`.
 - **Team record-book leaderboards** — `scripts/team_records/`. Reads the team's season-stats Google Sheet
   (season tabs like `2024-2025`) and writes `scripts/team_records/output/leaderboards.html` (Boys/Girls × Pins/Wins/Takedowns ×
