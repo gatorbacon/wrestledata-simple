@@ -140,7 +140,18 @@ spec 3.1, and TJ was told.
   (match 8962976104). The other is a two-event "Fall 2-0" (match 8962577104). There's also a two-event "Fall 2-0" Conel over
   Jacob Holschlag in the C_SF. These come from the scraped bracket and should be checked against the official bracket
   before anything is published. They are noted in `reports/wpa.md`.
-- **Overtime model:** not built. Offer it; TJ hasn't decided.
+- **Overtime model — TJ decided 2026-09-29: build it AFTER step 10, BEFORE step 11.** Rules-based, reusing the rate
+  model (`rt_hazard.py`) and its exact second-by-second machinery, not an empirical table. TJ's requirements:
+  (1) **SV-1 and the tiebreakers get separate rules** — sudden victory = first score wins (takedown race, drifting
+  toward the tiebreaker as the clock runs); tiebreakers = 30-s rides each (escapes / reversals / riding time, who
+  chooses). (2) **Only data from the current OT rules** (sudden victory 2:00 since 2022; `ot_rules == "SV120"` in the
+  bouts files): 307 NCAA OT bouts (2022–26) + 367 conference = 674. Per-second escape / takedown rates may still come
+  from regulation wrestling (plentiful); the small pool is for the OT structure, the OT seed effect, and a check of
+  whether OT rates differ from regulation (if they do, use OT rates). Confirm the tiebreaker riding-time rule from the
+  recorded OT events (`ot_period` 1 = SV, 2–3 = the two 30-s rides; `ot_riding_time` events), not from memory.
+  Why it matters: 620 of 6,739 NCAA bouts went to OT (13 finals; 3 of 10 in 2025); 175 ended in tiebreakers, where
+  the current flat line is visibly wrong (e.g. 2025 125 final: 100% after Robinson's TB escape though Spratley still
+  had his ride); in 98 OT bouts the eventual loser scored in OT and gets no WPA credit.
 - **Takedown report section 3e** (published artifact TtL2sMVbLwUazwBoNfeyZG, `scripts/analysis/td_custom_report/`) used
   2015–18 seeds 17–32 as real seeds. It needs a fix: restrict to 2019+ or treat 17+ as unseeded. It's queued, separate from
   WPA, and its files are the uncommitted ones mentioned above.
