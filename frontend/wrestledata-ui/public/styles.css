@@ -5856,13 +5856,16 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   .app-home {
     display: block;
   }
-  #dual-ticker-section,
-  #p4p-section,
-  #ncaa-outlook-section,
-  .positioning-statement,
-  .hp-grid,
-  #latest-note-section,
-  .homepage-featured {
+  /* Homepage only (the mobile .app-home block replaces these). Scoped with
+     ".app-home ~" because rankings.html reuses #p4p-section -- unscoped, this
+     hid the whole rankings page on phones (fixed 2026-09-30). */
+  .app-home ~ #dual-ticker-section,
+  .app-home ~ #p4p-section,
+  .app-home ~ #ncaa-outlook-section,
+  .app-home ~ .positioning-statement,
+  .app-home ~ .hp-grid,
+  .app-home ~ #latest-note-section,
+  .app-home ~ .homepage-featured {
     display: none;
   }
 }
