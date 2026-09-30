@@ -49,6 +49,10 @@ Yes, for regulation. A 2-point lead with 1:00 left held 93% of the time in 2015�
 
 Overtime also needs its own rules. Sudden victory was 1:00 through 2021 and 2:00 from 2022, and the tiebreaker riding time has only broken a points tie (1 second) since 2022. The overtime model is fitted only on 2022+ bouts (674). Earlier overtimes keep the simple strength-based value.
 
+## Change after the build (2026-09-30)
+
+Break states (before the toss, toss won, about to pick) are now composed from the regulation states they lead to, weighted by observed choice shares, instead of their own noisy table cells (TJ spotted a −1.5 coin toss). Toss WPA is now 0 to +0.75 at every margin, the usual pick ≈0; deferring stays about −2 and a check against real results says that is real (docs/matsavant.md, "Break states").
+
 ## Known soft spots
 
 - **Riding-time knife edge** ("up 1, 0:05 left, on top, needs the last 5 s for 1:00"): the model is now right on the hand check. The data there is 1–5 held-out moments a year, so it stays uncertain.

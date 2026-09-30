@@ -41,6 +41,7 @@ its design. Claude Code memory: `~/.claude/projects/-Users-tjthompson-Documents-
 | 8 validation | `scripts/wpa/validate.py [--reuse]` | `reports/validation.md` + `reports/img/validation_*.png` (cache `data/wpa/model/validation_cache.*`, gitignored) | ~6 min (`--reuse` 20 s) |
 | 9 WPA | `scripts/wpa/compute_wpa.py [--kind ncaa\|conf\|both]` | `data/wpa/output/events_wpa.parquet` (gitignored), `data/wpa/output/wrestler_wpa.csv`, `reports/wpa.md` | ~10 s |
 | 10 conference ranks | `scripts/wpa/conf_ranks.py` (run before `fit_strength`) | `data/wpa/states/conf_ranks.csv` (gitignored), `reports/conf_ranks.md` | <1 min |
+| choices | `scripts/wpa/fit_choice_shares.py` (needs step 2; run before `compute_wpa`) | `data/wpa/model/choice_shares.json` (tracked) — `WPModel` composes the break states from it (docs/matsavant.md "Break states") | seconds |
 | OT overtime model | `scripts/wpa/ot_model.py` (run before `compute_wpa`) | `data/wpa/model/ot_params.json`, `data/wpa/states/ot_bouts.csv` (gitignored), `reports/ot_model.md` | ~2.5 min |
 | 11 outputs | `scripts/wpa/build_outputs.py` (after `compute_wpa`) | `data/wpa/output/{state_table,match_wp_curves}.parquet` (gitignored), `data/wpa/output/model_params.json` | ~1 min |
 | bracket viewer | `build_bracket_view.py --year Y --weight W` (template `bracket_view_template.html`; bracket slots from `labs/bracket_viewer/data/ncaa/{Y}.json`) | `data/wpa/reports/bracket_{Y}_{W}.html` — self-contained page: click a bout → ESPN-style WP chart (hover = crosshair / event tooltips) + every non-clock WPA link by wrestler; reads only `match_wp_curves` + `events_wpa`, checks running score = official score | seconds |
@@ -50,7 +51,7 @@ Shared predictor used by steps 8 and 9 and everything after: `scripts/wpa/wp_mod
 takes A-relative regulation states: margin, t_rem, period, pos, choice, rt_diff, era_group, seed_a, seed_b.
 
 **Full rebuild chain** (run from the repo root, in the background, with a log to the scratchpad):
-`.venv/bin/python scripts/wpa/build_states.py --kind both && for s in build_table conf_ranks fit_state_model fit_strength validate ot_model compute_wpa build_outputs; do .venv/bin/python scripts/wpa/$s.py || break; done`
+`.venv/bin/python scripts/wpa/build_states.py --kind both && for s in build_table fit_choice_shares conf_ranks fit_state_model fit_strength validate ot_model compute_wpa build_outputs; do .venv/bin/python scripts/wpa/$s.py || break; done`
 (~35 min). Gitignored intermediates (states CSVs, `.joblib` models, parquet tables) live only on this Mac's disk; if they're
 lost, this chain recreates them exactly. Everything is deterministic (`random_state=0`),
 so a rerun with no code change gives identical params.

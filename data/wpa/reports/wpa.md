@@ -49,28 +49,28 @@ WPA points = percentage points of win probability. A fall's WPA is whatever was 
 
 ## Choices (spec 6.1)
 
-- **Winning the coin toss** (at the start of period 2): mean +0.31 WPA points (6,395 tosses).
-- **Deferring** (toss winner takes the period-3 choice instead): mean -1.89; by era 2015–23 -1.77, 2024–26 -2.25 (3,102 defers of 6,395 tosses). Negative = on average the state after deferring was worth less than the toss winner's state before deciding (which averages over the wrestlers who picked right away).
+- **Winning the coin toss** (at the start of period 2): mean +0.19 WPA points (6,395 tosses).
+- **Deferring** (toss winner takes the period-3 choice instead): mean -1.90; by era 2015–23 -1.77, 2024–26 -2.29 (3,102 defers of 6,395 tosses). Negative = on average the state after deferring was worth less than the toss winner's state before deciding (which averages over the wrestlers who picked right away).
 
 **Period-2 choice** (mean WPA of the pick, count in brackets; all years):
 
 | Chooser's margin | Picks bottom | Picks top | Picks neutral |
 |---|---:|---|---:|
-| down 2+ | +1.1 (1,015) | +1.6 (81) | -0.3 (208) |
-| down 1 | +0.4 (541) | — | -4.0 (13) |
-| tied | +1.6 (1,956) | -0.7 (16) | -4.3 (85) |
-| up 1 | +2.1 (590) | — | -2.1 (41) |
-| up 2+ | +0.6 (1,616) | -0.2 (26) | -0.9 (200) |
+| down 2+ | +0.9 (1,015) | +1.5 (81) | -0.3 (208) |
+| down 1 | +1.2 (541) | — | -2.1 (13) |
+| tied | +1.6 (1,956) | -0.4 (16) | -4.1 (85) |
+| up 1 | +1.0 (590) | — | -4.0 (41) |
+| up 2+ | +0.6 (1,616) | -0.3 (26) | -1.0 (200) |
 
 **Period-3 choice** (mean WPA of the pick, count in brackets; all years):
 
 | Chooser's margin | Picks bottom | Picks top | Picks neutral |
 |---|---:|---|---:|
-| down 2+ | -0.1 (1,624) | +0.3 (192) | +0.4 (850) |
-| down 1 | +0.8 (1,030) | — | -5.3 (118) |
-| tied | +0.9 (516) | -9.3 (11) | -5.4 (81) |
-| up 1 | +0.1 (410) | — | -2.3 (66) |
-| up 2+ | -0.2 (844) | +0.2 (67) | -0.2 (309) |
+| down 2+ | -0.2 (1,624) | +0.2 (192) | +0.3 (850) |
+| down 1 | +1.0 (1,030) | — | -4.8 (118) |
+| tied | +0.9 (516) | -9.2 (11) | -5.3 (81) |
+| up 1 | +0.4 (410) | — | -2.4 (66) |
+| up 2+ | -0.0 (844) | +0.3 (67) | -0.1 (309) |
 
 The WPA of a pick compares it with the average of what choosers in that state actually did, so a strongly negative cell means that pick is usually the wrong one there.
 
@@ -84,11 +84,11 @@ Per wrestler per tournament, total WPA = wins − expected wins at the opening w
 
 | Position | Mean |WPA| per wrestler-tournament |
 |---|---:|
-| bottom | 0.275 |
-| break | 0.043 |
+| bottom | 0.274 |
+| break | 0.041 |
 | neutral | 0.527 |
 | ot | 0.145 |
-| top | 0.287 |
+| top | 0.286 |
 
 (top / bottom / neutral = WPA from events and clock that START in that position, from the wrestler's side; break = coin toss and period choices; ot = overtime.)
 
@@ -98,36 +98,36 @@ Per wrestler per tournament, total WPA = wins − expected wins at the opening w
 
 | year | weight | name | team | seed | bouts | wins | expected | WPA | own scoring | top | bottom | neutral |
 |---:|---:|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2021 | 149 | Yahya Thomas | Northwestern | 25 | 7 | 6 | 0.96 | +5.04 | +3.23 | +1.20 | -1.39 | +5.03 |
-| 2015 | 157 | Nick Brascetta | Virginia Tech | 24 | 7 | 5 | 1.08 | +3.92 | +2.49 | +0.51 | -0.50 | +3.83 |
-| 2018 | 197 | Kyle Conel | Kent State | — | 6 | 5 | 1.10 | +3.90 | +2.66 | +1.95 | -0.29 | +2.33 |
-| 2021 | 125 | Patrick McKee | Minnesota | 15 | 8 | 7 | 3.14 | +3.86 | +3.97 | +1.86 | -0.01 | +2.12 |
-| 2019 | 184 | Dakota Geer | Oklahoma State | 26 | 7 | 5 | 1.32 | +3.68 | +3.27 | +1.61 | -0.14 | +2.67 |
-| 2018 | 133 | Tariq Wilson | NC State | 28 | 6 | 5 | 1.37 | +3.63 | +3.84 | +1.93 | -1.05 | +3.14 |
-| 2016 | 174 | Casey Kent | Pennsylvania | 25 | 8 | 6 | 2.47 | +3.53 | +2.29 | +2.26 | +1.11 | +0.25 |
-| 2015 | 133 | Cody Brewer | Oklahoma | 13 | 5 | 5 | 1.62 | +3.38 | +3.51 | +1.46 | -0.49 | +2.42 |
-| 2015 | 184 | Victor Avery | Edinboro | 13 | 6 | 5 | 1.70 | +3.30 | +1.91 | +0.95 | -0.24 | +2.39 |
-| 2015 | 125 | Conor Youtsey | Michigan | 17 | 8 | 5 | 1.77 | +3.23 | +3.52 | +0.25 | -0.26 | +2.05 |
-| 2023 | 197 | Jacob Warner | Iowa | 14 | 8 | 6 | 2.77 | +3.23 | +2.11 | +1.21 | -0.26 | +2.05 |
-| 2015 | 125 | Zeke Moisey | West Virginia | 18 | 5 | 4 | 0.86 | +3.14 | +1.91 | +1.87 | -0.35 | +1.54 |
-| 2018 | 197 | Jacob Holschlag | Northern Iowa | 27 | 8 | 6 | 2.88 | +3.12 | +2.93 | +2.13 | +0.80 | +0.26 |
-| 2015 | 184 | Willie Miklus | Missouri | 23 | 7 | 5 | 1.88 | +3.12 | +4.39 | +1.36 | +0.45 | +1.22 |
-| 2016 | 184 | Pete Renda | NC State | 13 | 6 | 5 | 1.98 | +3.02 | +2.90 | +0.53 | +0.51 | +1.43 |
+| 2021 | 149 | Yahya Thomas | Northwestern | 25 | 7 | 6 | 0.96 | +5.04 | +3.23 | +1.20 | -1.39 | +5.02 |
+| 2015 | 157 | Nick Brascetta | Virginia Tech | 24 | 7 | 5 | 1.08 | +3.92 | +2.49 | +0.49 | -0.50 | +3.77 |
+| 2018 | 197 | Kyle Conel | Kent State | — | 6 | 5 | 1.10 | +3.90 | +2.66 | +1.97 | -0.29 | +2.32 |
+| 2021 | 125 | Patrick McKee | Minnesota | 15 | 8 | 7 | 3.14 | +3.86 | +3.97 | +1.84 | +0.01 | +2.11 |
+| 2019 | 184 | Dakota Geer | Oklahoma State | 26 | 7 | 5 | 1.32 | +3.68 | +3.27 | +1.59 | -0.14 | +2.66 |
+| 2018 | 133 | Tariq Wilson | NC State | 28 | 6 | 5 | 1.37 | +3.63 | +3.84 | +1.95 | -1.05 | +3.12 |
+| 2016 | 174 | Casey Kent | Pennsylvania | 25 | 8 | 6 | 2.47 | +3.53 | +2.29 | +2.26 | +1.10 | +0.20 |
+| 2015 | 133 | Cody Brewer | Oklahoma | 13 | 5 | 5 | 1.62 | +3.38 | +3.51 | +1.44 | -0.49 | +2.42 |
+| 2015 | 184 | Victor Avery | Edinboro | 13 | 6 | 5 | 1.70 | +3.30 | +1.91 | +0.94 | -0.24 | +2.38 |
+| 2015 | 125 | Conor Youtsey | Michigan | 17 | 8 | 5 | 1.77 | +3.23 | +3.52 | +0.25 | -0.27 | +2.01 |
+| 2023 | 197 | Jacob Warner | Iowa | 14 | 8 | 6 | 2.77 | +3.23 | +2.11 | +1.19 | -0.26 | +2.05 |
+| 2015 | 125 | Zeke Moisey | West Virginia | 18 | 5 | 4 | 0.86 | +3.14 | +1.91 | +1.87 | -0.36 | +1.54 |
+| 2018 | 197 | Jacob Holschlag | Northern Iowa | 27 | 8 | 6 | 2.88 | +3.12 | +2.93 | +2.13 | +0.78 | +0.25 |
+| 2015 | 184 | Willie Miklus | Missouri | 23 | 7 | 5 | 1.88 | +3.12 | +4.39 | +1.36 | +0.45 | +1.20 |
+| 2016 | 184 | Pete Renda | NC State | 13 | 6 | 5 | 1.98 | +3.02 | +2.90 | +0.54 | +0.51 | +1.45 |
 
 **2026**:
 
 | year | weight | name | team | seed | bouts | wins | expected | WPA | own scoring | top | bottom | neutral |
 |---:|---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2026 | 149 | Aden Valencia | Stanford | 10 | 5 | 5 | 1.99 | +3.01 | +2.93 | +0.49 | -0.33 | +2.19 |
+| 2026 | 149 | Aden Valencia | Stanford | 10 | 5 | 5 | 1.99 | +3.01 | +2.93 | +0.48 | -0.33 | +2.19 |
 | 2026 | 197 | Gabe Arnold | Iowa | 27 | 7 | 5 | 2.05 | +2.95 | +2.87 | +0.52 | -0.01 | +2.63 |
-| 2026 | 165 | Cesar Alvan | Columbia | 12 | 6 | 5 | 2.12 | +2.88 | +1.71 | +0.37 | -0.39 | +2.22 |
-| 2026 | 149 | Chance Lamer | Nebraska | 20 | 6 | 4 | 1.40 | +2.60 | +2.29 | +0.24 | -0.59 | +3.05 |
-| 2026 | 125 | Vincent Robinson | NC State | 12 | 8 | 6 | 3.42 | +2.58 | +1.77 | -0.11 | -0.29 | +1.09 |
-| 2026 | 157 | Landon Robideau | Oklahoma State | 5 | 5 | 5 | 2.69 | +2.31 | +1.51 | +0.54 | -0.15 | +0.70 |
-| 2026 | 133 | Tyler Knox | Stanford | 15 | 8 | 5 | 3.02 | +1.98 | +3.44 | +0.25 | +0.74 | +0.36 |
-| 2026 | 149 | Lachlan McNeil | Michigan | 11 | 6 | 5 | 3.04 | +1.96 | +2.69 | +1.10 | +0.08 | +0.73 |
-| 2026 | 125 | Marc-Anthony McGowan | Princeton | 10 | 5 | 4 | 2.06 | +1.94 | +1.16 | +0.23 | -0.23 | +1.27 |
-| 2026 | 141 | Carter Nogle | Air Force | 18 | 7 | 5 | 3.07 | +1.93 | +2.20 | +1.13 | +0.03 | +0.90 |
+| 2026 | 165 | Cesar Alvan | Columbia | 12 | 6 | 5 | 2.12 | +2.88 | +1.71 | +0.37 | -0.40 | +2.26 |
+| 2026 | 149 | Chance Lamer | Nebraska | 20 | 6 | 4 | 1.40 | +2.60 | +2.29 | +0.25 | -0.59 | +3.11 |
+| 2026 | 125 | Vincent Robinson | NC State | 12 | 8 | 6 | 3.42 | +2.58 | +1.77 | -0.11 | -0.28 | +1.07 |
+| 2026 | 157 | Landon Robideau | Oklahoma State | 5 | 5 | 5 | 2.69 | +2.31 | +1.51 | +0.54 | -0.15 | +0.74 |
+| 2026 | 133 | Tyler Knox | Stanford | 15 | 8 | 5 | 3.02 | +1.98 | +3.44 | +0.26 | +0.74 | +0.36 |
+| 2026 | 149 | Lachlan McNeil | Michigan | 11 | 6 | 5 | 3.04 | +1.96 | +2.69 | +1.10 | +0.10 | +0.72 |
+| 2026 | 125 | Marc-Anthony McGowan | Princeton | 10 | 5 | 4 | 2.06 | +1.94 | +1.16 | +0.23 | -0.23 | +1.26 |
+| 2026 | 141 | Carter Nogle | Air Force | 18 | 7 | 5 | 3.07 | +1.93 | +2.20 | +1.13 | +0.03 | +0.87 |
 
 **Biggest single plays** (all years):
 

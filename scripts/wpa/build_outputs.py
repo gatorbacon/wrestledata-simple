@@ -7,7 +7,7 @@ WPA step 11 -- the spec's final outputs (Section 8) in data/wpa/output/:
                           pos, choice, rt_point = the eventual riding-time point -- see docs/matsavant.md, WPA section)
   model_params.json       every fitted parameter in one file: state model (model_params.json), riding-time rate model
                           (rt_params.json), strength layer incl. the conference scale (strength_params.json) and the
-                          overtime model (ot_params.json), each under its own key, as fitted
+                          overtime model (ot_params.json) and the choice shares that value the break states (choice_shares.json), each under its own key
   events_wpa.parquet      (compute_wpa.py) one row per link of each bout's WP chain
   wrestler_wpa.csv        (compute_wpa.py) per wrestler per tournament
   match_wp_curves.parquet WP over time for every bout in the chain, for charting (this script):
@@ -45,7 +45,8 @@ def params():
     out = {"_note": "Merged by scripts/wpa/build_outputs.py from data/wpa/model/*_params.json; each block as fitted. "
                     "Meaning of every parameter: docs/matsavant.md (WPA section) and the fitting scripts' docstrings."}
     for key, f in (("state_model", "model_params.json"), ("riding_time_rate_model", "rt_params.json"),
-                   ("strength_layer", "strength_params.json"), ("overtime_model", "ot_params.json")):
+                   ("strength_layer", "strength_params.json"), ("overtime_model", "ot_params.json"),
+                   ("choice_shares", "choice_shares.json")):
         out[key] = json.loads((MODEL / f).read_text())
     (OUT / "model_params.json").write_text(json.dumps(out, indent=1))
 

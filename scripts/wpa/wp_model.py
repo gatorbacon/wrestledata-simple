@@ -22,6 +22,14 @@ Input: A-relative REGULATION states (t_rem > 0), one per DataFrame row, with col
     kind        optional; 'conf' = a conference-tournament bout: seed_a / seed_b are then NATIONAL RANKS (step 10)
 End-of-regulation and terminal states (fall, tech fall, ...) are not model states -- their value is the result.
 
+Break states (pos pending_*) are NOT read from their own table cells (TJ, 2026-09-30): each is valued from the
+regulation states it leads to, weighted by how often wrestlers make each choice (fit_choice_shares.py ->
+choice_shares.json). A wrestler about to pick = share-weighted average over bottom / top / neutral; the toss winner =
+defer share x (opponent about to pick P2) + (1 - defer share) x (himself about to pick P2); before the toss = the
+50/50 average of either wrestler winning it. So winning a toss is worth half the gap between holding and not holding
+the choice, and a choice's WPA = the option taken minus the average of the options wrestlers there actually take.
+The old cells (independent, ~100-200 bouts per margin) had toss values from -2.1 to +1.6 points depending on margin.
+
 Usage:
     m = WPModel()
     m.wp(df)          -> final WP (np.ndarray)
@@ -42,6 +50,9 @@ import fit_strength as S     # noqa: E402
 import wpa_common as C       # noqa: E402
 
 MODEL = ROOT / "data/wpa/model"
+PICK_POS = {"A": {"bottom": "A_bottom", "top": "A_top", "neutral": "neutral"},
+            "B": {"bottom": "A_top", "top": "A_bottom", "neutral": "neutral"}}
+OTHER = {"A": "B", "B": "A"}
 
 
 def rt_status_vec(rt_diff, t_rem):
@@ -85,6 +96,9 @@ class WPModel:
         self.rtm = joblib.load(model_dir / "rt_model.joblib")
         self.tie = joblib.load(model_dir / "tie_model.joblib")
         sp = self.sp
+        self.shares = json.loads((model_dir.parent / "model" / "choice_shares.json").read_text()
+                                 if not (model_dir / "choice_shares.json").exists()
+                                 else (model_dir / "choice_shares.json").read_text())
         self.prm = {"b0": sp["beta0"], "g": sp["gamma"], "b_ot": sp["beta_ot"], "e3m": sp["e3_beta0_multiplier"],
                     "a0": sp.get("alpha0", 1.0), "a2": sp.get("alpha_time", 0.0)}
 
@@ -99,7 +113,51 @@ class WPModel:
                 rs[m] = c["rank_multiplier"] * S.rank_signal(d[m], "normal", c["N"], c["unranked_equiv_rank"])
         return rs
 
+    def _pick(self, era, period, m_a, X, w):
+        """[(weight, pos, choice after)] for wrestler X ('A'/'B') about to pick at the start of `period`."""
+        mX = int(np.clip(m_a if X == "A" else -m_a, -6, 6))
+        after = OTHER[X] if period == 2 else "none"
+        return [(w * s_, PICK_POS[X][o], after) for o, s_ in self.shares[era]["pick"][str(period)][str(mX)].items()]
+
+    def _children(self, pos, choice, period, era, m):
+        who = [choice] if choice in ("A", "B") else ["A", "B"]
+        f = 1.0 / len(who)
+        if pos == "pending_pick":
+            return [c for X in who for c in self._pick(era, period, m, X, f)]
+        if pos == "pending_pre_toss":
+            who, f = ["A", "B"], 0.5
+        out = []                                             # pending_defer_option / pending_pre_toss (period 2)
+        for H in who:
+            dl = self.shares[era]["defer"][str(int(np.clip(m if H == "A" else -m, -6, 6)))]
+            out += self._pick(era, 2, m, OTHER[H], f * dl) + self._pick(era, 2, m, H, f * (1 - dl))
+        return out
+
     def parts(self, df):
+        pend = df["pos"].astype(str).str.startswith("pending").to_numpy()
+        if not pend.any():
+            return self._parts(df)
+        rows, par, wts = [], [], []
+        sub = df[pend]
+        for i, (pos, ch, per, era, m) in enumerate(zip(sub["pos"], sub["choice"], sub["period"].astype(int),
+                                                       sub["era_group"], sub["margin"])):
+            for w_, p_, c_ in self._children(pos, ch, per, era, m):
+                rows.append(i); par.append((p_, c_)); wts.append(w_)
+        kids = sub.iloc[rows].copy()
+        kids["pos"] = [p_ for p_, _ in par]
+        kids["choice"] = [c_ for _, c_ in par]
+        kids.index = pd.RangeIndex(len(kids))
+        pk = self._parts(kids)
+        cols = ["p_state", "p_rt_a", "p_rt_none", "p_rt_b", "p_tie", "wp"]
+        agg = (pk[cols].mul(np.asarray(wts), axis=0).groupby(np.asarray(rows)).sum()
+               .div(pd.Series(wts).groupby(np.asarray(rows)).sum(), axis=0))
+        out = pd.DataFrame(index=df.index, columns=cols + ["rs"], dtype=float)
+        if (~pend).any():
+            out.loc[~pend] = self._parts(df[~pend])[cols + ["rs"]].to_numpy()
+        out.loc[pend, cols] = agg.sort_index()[cols].to_numpy()
+        out.loc[pend, "rs"] = pk["rs"].groupby(np.asarray(rows)).first().sort_index().to_numpy()
+        return out[["p_state", "p_rt_a", "p_rt_none", "p_rt_b", "p_tie", "rs", "wp"]]
+
+    def _parts(self, df):
         d = prep(df)
         pa, pn, pb = F.rt_probs(self.rtm, d)
         d["p_state"] = F.wp_mixture(self.P, d, (pa, pn, pb), self.key)

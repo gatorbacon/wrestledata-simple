@@ -61,9 +61,13 @@
   table.ev td { padding: 5px 6px; border-bottom: 1px solid #f0f0ee; vertical-align: middle; }
   table.ev tr.zero td { color: var(--ink3); }
   table.ev tr:hover td, table.ev tr.hot td { background: var(--hi); }
-  table.ev td.t, table.ev td.sc, table.ev td.wp { white-space: nowrap; font-variant-numeric: tabular-nums; }
-  table.ev td.sc { text-align: center; font-weight: 600; }
-  table.ev td.wp { text-align: right; color: var(--ink2); }
+  table.ev td.sc, table.ev td.wp { white-space: nowrap; font-variant-numeric: tabular-nums; }
+  table.ev td.sc { text-align: center; }
+  table.ev td.sc .tm { display: block; font-size: 11px; color: var(--ink3); }
+  table.ev td.sc b { font-weight: 700; }
+  table.ev td.wp { color: var(--ink2); width: 92px; }
+  table.ev td.wp.l, table.ev th.l { text-align: right; }
+  table.ev td.wp .up { color: var(--ink); font-weight: 600; }
   .cell { display: flex; align-items: center; gap: 8px; }
   .cell .txt { flex: 1; }
   .wpa { font-variant-numeric: tabular-nums; font-weight: 700; min-width: 44px; text-align: right; }
@@ -218,7 +222,7 @@ function openBout(key) {
     tip.innerHTML = `<div class="h">${e.text} · ${last(who.name)} (${who.abbr})</div>` +
       `<div class="d">${e.t} · score ${last(b.w.name)} ${e.sw}–${e.sl} ${last(b.l.name)}</div>` +
       `<div class="d">${last(b.w.name)} win prob ${pct(e.wb)} → ${pct(e.wa)}</div>` +
-      `<div><b>WPA ${pts(e.wpa)}</b> for ${last(who.name)}</div>`; };
+      `<div><b>WPA ${wpaTxt(e)}</b> for ${last(who.name)}</div>`; };
   const hot = i => { const e = b.events[i]; cross(e.x); evTip(i); place(X(e.x), Y(e.wa));
     document.querySelectorAll('tr.hot').forEach(r => r.classList.remove('hot'));
     const tr = document.querySelector(`tr[data-i="${i}"]`); if (tr) tr.classList.add('hot');
@@ -234,25 +238,28 @@ function openBout(key) {
   /* event table */
   const tot = s => b.events.filter(e => e.side === s).reduce((a, e) => a + e.wpa, 0);
   const maxA = Math.max(0.05, ...b.events.map(e => Math.abs(e.wpa)));
+  const CHOICES = ['toss', 'defer', 'choose', 'ot_choice', 'choice'];
+  const wpaTxt = e => CHOICES.includes(e.type) && Math.abs(e.wpa) < 0.005 ? '≈0' : pts(e.wpa);
   const cell = (e, s) => e.side !== s ? '<td></td>' : `<td><div class="cell"><span class="txt">${e.text}${e.pts > 0 ? ` <span style="color:var(--ink3)">(+${e.pts})</span>` : ''}</span>` +
     `<span class="bar" style="width:${Math.round(60 * Math.abs(e.wpa) / maxA)}px;background:${b[s].color};opacity:${e.wpa < 0 ? .35 : .85}"></span>` +
-    `<span class="wpa">${pts(e.wpa)}</span></div></td>`;
-  let h = `<thead><tr><th style="width:74px">Time</th><th>${b.w.name} <small>${b.w.team} · events ${pts(tot('w'))}</small></th>` +
-    `<th style="width:64px;text-align:center">Score</th><th>${b.l.name} <small>${b.l.team} · events ${pts(tot('l'))}</small></th>` +
-    `<th style="width:110px;text-align:right">${last(b.w.name)} WP</th></tr></thead><tbody>`;
+    `<span class="wpa">${wpaTxt(e)}</span></div></td>`;
+  const wpc = (a, z, cls) => { const up = z > a + 0.0005; return `<td class="wp ${cls}">${pct(a)} → <span class="${up ? 'up' : ''}">${pct(z)}</span></td>`; };
+  let h = `<thead><tr><th>${last(b.w.name)}<small>win prob</small></th><th>${b.w.name} <small>${b.w.team} · events ${pts(tot('w'))}</small></th>` +
+    `<th style="width:92px;text-align:center">Score<small>time</small></th><th>${b.l.name} <small>${b.l.team} · events ${pts(tot('l'))}</small></th>` +
+    `<th class="l">${last(b.l.name)}<small>win prob</small></th></tr></thead><tbody>`;
   let ph = null;
   b.events.forEach((e, i) => {
     const p = e.t.split(' ')[0];
     if (p !== ph) { ph = p; h += `<tr class="phase"><td colspan="5">${{P1:'1st period',P2:'2nd period',P3:'3rd period',SV:'Sudden victory',TB1:'Tiebreaker ride 1',TB2:'Tiebreaker ride 2'}[p] || 'Overtime'}</td></tr>`; }
-    h += `<tr data-i="${i}" class="${Math.abs(e.wpa) < 0.0005 ? 'zero' : ''}"><td class="t">${e.t}</td>${cell(e, 'w')}<td class="sc">${e.sw}–${e.sl}</td>${cell(e, 'l')}` +
-      `<td class="wp">${pct(e.wb)} → ${pct(e.wa)}</td></tr>`;
+    h += `<tr data-i="${i}" class="${Math.abs(e.wpa) < 0.0005 ? 'zero' : ''}">${wpc(e.wb, e.wa, '')}${cell(e, 'w')}` +
+      `<td class="sc"><span class="tm">${e.t}</span><b>${e.sw}–${e.sl}</b></td>${cell(e, 'l')}${wpc(1 - e.wb, 1 - e.wa, 'l')}</tr>`;
   });
   $('ev').innerHTML = h + '</tbody>';
   $('ev').querySelectorAll('tr[data-i]').forEach(tr => { tr.addEventListener('mouseenter', () => hot(+tr.dataset.i)); tr.addEventListener('mouseleave', hide); });
   const evW = b.events.reduce((a, e) => a + (e.wa - e.wb), 0), clkW = b.clock.w - b.clock.l;
   $('recon').innerHTML = `Clock time between events: ${last(b.w.name)} ${pts(b.clock.w)}, ${last(b.l.name)} ${pts(b.clock.l)} (the leader is credited while time runs). ` +
     `Check, from ${last(b.w.name)}'s side: opening ${(100 * b.open).toFixed(1)}% ${pts(evW)} (events) ${pts(clkW)} (clock) = ${(100 * (b.open + evW + clkW)).toFixed(1)}%. ` +
-    `WPA = change in the credited wrestler's win probability, in percentage points.`;
+    `WPA = change in the credited wrestler's win probability, in percentage points. A choice is measured against what wrestlers in that spot usually pick, so the usual pick shows ≈0; the value of holding a choice is credited when it is won (the coin toss) or handed over (deferring).`;
   $('dlg').showModal(); $('dlg').scrollTop = 0;
 }
 </script>

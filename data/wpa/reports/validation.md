@@ -144,11 +144,11 @@ Final model (fitted on all data), 2024–26 rules; no seeds unless stated (equal
 | Tied, 7:00 left, neutral, equal seeds | ≈ 50% | 19% | 19% | 50.0% | 50.0% | ✓ |
 | Tied, 0:30 left, A on bottom (riding time: nobody can reach 1:00) | modestly above 50% | 0% | 0% | 51.2% | 51.1% | ✓ |
 |   … same, but B has +0:45 riding time (B can still earn the point) | (below the row above) | 0% | 70% | 21.5% | 22.7% |  |
-| A down 1, start of period 3, A holds the choice | close to a coin flip | 2% | 18% | 34.9% | 36.7% | ✓ |
+| A down 1, start of period 3, A holds the choice | close to a coin flip | 2% | 19% | 34.9% | 36.7% | ✓ |
 |   … A picks bottom |  | 2% | 21% | 35.8% | 37.5% |  |
 |   … A picks top |  | 8% | 5% | 26.2% | 28.7% |  |
 |   … A picks neutral |  | 3% | 7% | 28.3% | 30.7% |  |
-|   … same, B holds the choice |  | 8% | 5% | 27.0% | 29.5% |  |
+|   … same, B holds the choice |  | 8% | 6% | 26.6% | 29.1% |  |
 | A up 1, 0:05 left, A on top, A +0:55 riding time (live) | A likely secures the point | 89% | 0% | 98.7% | 98.4% | ✓ |
 | A up 1, 0:04 left, A on top, A +0:55 riding time (out of reach) | noticeably different | 0% | 0% | 93.2% | 92.6% | ✓ |
 |   tied, 0:05 left, A on top, A +0:55 (live) |  | 89% | 0% | 93.6% | 93.0% |  |
