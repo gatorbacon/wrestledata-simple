@@ -1,0 +1,48 @@
+{
+  "_note": "Pages the smoke test opens (scripts/site_checks/smoke_test.py). Each page is checked at desktop (1280x900) and phone (390x844) width. 'expect' = CSS selectors that must be VISIBLE (optionally a minimum count of visible matches); 'desktop' / 'mobile' limit an expect to one width. 'min_text' = minimum visible text (document.body.innerText, which skips hidden elements) -- the blank rankings page of 2026-09-30 had its rows built but hidden, so it would fail both checks. 'known_overflow' = the page already scrolls sideways on phones (reported as a warning, not a failure). Broken images are also warnings; missing data / scripts / pages, JS errors and hidden content are failures). Add pages freely.",
+  "sites": {
+    "matsavant": {
+      "live": "https://www.matsavant.com",
+      "local_dir": "frontend/wrestledata-ui/public",
+      "pages": [
+        {"name": "home", "path": "/", "min_text": 400,
+         "expect": [{"sel": "#p4p-section", "desktop": true}, {"sel": "#app-home-section", "mobile": true}]},
+        {"name": "rankings", "path": "/rankings.html", "min_text": 800,
+         "expect": [{"sel": ".sort-by-row"}, {"sel": "#p4p-weight-tabs"},
+                    {"sel": "#p4p-table tbody tr", "min": 10, "desktop": true},
+                    {"sel": "#p4p-mobile-list > *", "min": 10, "mobile": true}]},
+        {"name": "wrestler", "path": "/wrestler.html?id=34939015132", "min_text": 800},
+        {"name": "team", "path": "/team.html?team=penn_state", "min_text": 800},
+        {"name": "wrestlers", "path": "/wrestlers.html", "min_text": 300},
+        {"name": "teams", "path": "/teams.html", "min_text": 600},
+        {"name": "compare", "path": "/tools/compare.html?a=34939015132&b=34943458132", "min_text": 400},
+        {"name": "tools", "path": "/tools/index.html", "min_text": 200},
+        {"name": "leaderboard-dpg", "path": "/leaderboards/dpg.html", "min_text": 800},
+        {"name": "leaderboard-tpar", "path": "/leaderboards/tpar.html", "min_text": 800},
+        {"name": "events-ncaa", "path": "/events/ncaa.html", "min_text": 400},
+        {"name": "schedule", "path": "/schedule.html", "min_text": 300},
+        {"name": "team-odds", "path": "/team_odds.html", "min_text": 400},
+        {"name": "notes", "path": "/notes/index.html", "min_text": 120},
+        {"name": "about", "path": "/about.html", "min_text": 300}
+      ]
+    },
+    "kentuckymat": {
+      "live": "https://www.kentuckymat.com",
+      "local_dir": "frontend/hs-ky-ui/public",
+      "pages": [
+        {"name": "home", "path": "/", "min_text": 400},
+        {"name": "rankings-boys", "path": "/rankings.html?gender=boys", "min_text": 800},
+        {"name": "rankings-girls", "path": "/rankings.html?gender=girls", "min_text": 800},
+        {"name": "career-profile", "path": "/wrestler.html?gender=boys&career_id=career_000042", "min_text": 800},
+        {"name": "team", "path": "/team.html?gender=boys&team=boyle_county&season=2026", "min_text": 800},
+        {"name": "leaderboards", "path": "/leaderboards.html?gender=boys", "min_text": 600},
+        {"name": "recruiting", "path": "/recruiting.html?gender=boys", "min_text": 400},
+        {"name": "compare", "path": "/compare.html?gender=boys&a=career_000042&b=career_000025", "min_text": 400},
+        {"name": "dual-predictor", "path": "/dual_predictor.html", "min_text": 120},
+        {"name": "xtp-teams", "path": "/leaderboards/xtp/teams.html", "min_text": 600},
+        {"name": "methodology", "path": "/methodology.html", "min_text": 400},
+        {"name": "about", "path": "/about.html", "min_text": 300}
+      ]
+    }
+  }
+}
