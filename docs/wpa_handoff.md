@@ -175,9 +175,8 @@ as the average of A / B holding it. Full record: `docs/matsavant.md` step table 
 `plot_wp_cards.py` draws overtime from `events_wpa.parquet` (run compute_wpa first). Held out: 0.662 → 0.646 (tiebreaker
 0.666 → 0.561), every season better. Data facts that were NOT what we assumed (riding time only breaks a points tie;
 `Choice 3` = the ride-1 bottom man; defers are common; scoreless rides aren't logged, so TB-2 bouts show only TB-2;
-the ride-2 habit is bottom) are in `docs/matsavant.md` "Overtime model" and the script's docstring. TJ's 2026 flow chart:
-`data/wpa/reports/img/ot_flow_2026.png` (built from scratch scripts, not in the repo — rebuild from the facts above if
-asked for another year).
+the ride-2 habit is bottom) are in `docs/matsavant.md` "Overtime model" and the script's docstring. Season flow charts: `scripts/wpa/plot_ot_flow.py --year Y` →
+`data/wpa/reports/img/ot_flow_{Y}.png`.
 
 **Next: step 11.**
 
