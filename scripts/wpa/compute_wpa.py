@@ -23,11 +23,15 @@ Rows (event_type / category):
     point, because the lock already priced it in).
   * terminal -- fall, tech_fall, injury, dq: whatever was left to reach 1. A tech fall is two rows: the score that
     reached 15 (valued as a state, like any score) and the tech_fall row (the remainder to 1).
-  * overtime -- tied at the end of regulation = the overtime win rate (expit(beta_ot * rank signal), spec 2.4). The
-    spec's option of a separate overtime model is not built (602 NCAA overtime bouts over 11 years, split over
-    sudden victory / tiebreaker / ultimate-tiebreaker periods): every overtime row keeps that value except the
-    winner's LAST scoring event in overtime (the winning score), which takes the jump to 1. If overtime has no
-    winner's score, a synthetic `overtime` row does.
+  * overtime -- current rules (SV120, 2022+): the overtime model (ot_model.py). Tied at the end of regulation = its
+    start value (sudden victory + tiebreaker, with the tiebreaker choice holder from regulation); every overtime
+    event is valued (sudden victory by the clock, tiebreaker rides by position / points / tiebreaker riding time);
+    `ot_choice` rows = the ride-1 / ride-2 position picks (credited to the chooser); a TB-1 that ended scoreless and
+    tied is rebuilt (ride-out, bottom, ride-out) and the later rounds are one value until the winner's last overtime
+    score. Earlier rules (SV60, before 2022): tied = the overtime win rate expit(beta_ot * rank signal), flat until
+    the winner's LAST scoring event in overtime. If overtime has no winner's score, a synthetic `overtime` row takes
+    the value to 1. Overtime rows: period = NaN, subtype = the phase (SV1 / TB1 / TB2 / later), margin = overtime
+    points, rt = tiebreaker riding time.
   * clock -- time running between events (spec 6.1 "time decay"), credited to the leader at the start of the stretch
     (tied: the wrestler the model favours). Riding-time locks inside a stretch are split out as `rt_lock` rows.
   * other -- caution, stalling warnings, misconduct, score adjustments (no state change -> ~0 WPA).
@@ -55,6 +59,7 @@ from scipy.special import expit
 ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ROOT / "scripts/wpa"))
 import fit_state_model as F  # noqa: E402
+import ot_model as OM        # noqa: E402
 import wp_model as W         # noqa: E402
 import wpa_common as C       # noqa: E402
 
@@ -139,9 +144,25 @@ def build(m, nb, ev):
     sp = m.parts(start)
     wp_start = sp["wp"]
     wp_ot = pd.Series(expit(m.sp["beta_ot"] * sp["rs"].to_numpy()), index=nb.index)
+    # current overtime rules: the overtime model's start value (tiebreaker holder = first takedown / near fall)
+    otm = OM.OTModel() if OM.PRM_FILE.exists() else None
+    sv120 = (nb["ot_rules"] == "SV120").to_numpy() & (otm is not None)
+    reg_off = ev[(ev["section"] == "reg") & ev["event"].isin(["takedown", "near_fall"]) & (ev["points"] > 0)]
+    holder = reg_off.groupby("bout_key")["actor"].first().reindex(nb.index).fillna("")
+    tdp = np.where(nb["year"] >= 2024, 3, 2)
+    if sv120.any():
+        wp_ot[sv120] = otm.start_values(sp["rs"].to_numpy()[sv120], holder.to_numpy()[sv120], tdp[sv120])
+    oti = pd.read_csv(STATES / "ot_bouts.csv", keep_default_na=False).set_index("bout_key") if otm is not None else None
+    if oti is not None:
+        for c in ("clean", "tie_tb1"):
+            oti[c] = oti[c].astype(str) == "True"
+    rs_ = pd.Series(sp["rs"].to_numpy(), index=nb.index)
 
     rows, pending = [], []      # pending: points whose WP needs the model (inside clock stretches)
     E = ev[["bout_key", "event", "actor", "points", "section", "seq", "time_src", "b_t_rem"]]
+    OTP = [None if x != x else int(x) for x in ev["ot_period"]]
+    OTC = [None if x != x else float(x) for x in ev["ot_clock"]]
+    RAW = ev["raw_text"].tolist()
     BF, AF = bf.to_dict("records"), af.to_dict("records")
     bouts = ev["bout_key"].to_numpy()
     starts = np.flatnonzero(np.r_[True, bouts[1:] != bouts[:-1]])
@@ -164,6 +185,8 @@ def build(m, nb, ev):
         cur = pt({"margin": 0.0, "t_rem": float(C.T_TOTAL), "period": 1, "pos": "neutral", "choice": "none",
                   "rt_diff": 0.0}, float(wp_start[bk]))
         prev_sec, done = "reg", False
+        use_otm = bool(sv120[nb.index.get_loc(bk)]) and bk in oti.index if otm is not None else False
+        ot_rows = []
         ot_win = None           # the winner's last scoring event in overtime = the winning score
         for i in range(s0, e0):
             if E.at[i, "section"] == "ot" and E.at[i, "actor"] == "w" and (E.at[i, "points"] > 0
@@ -173,6 +196,9 @@ def build(m, nb, ev):
             et, secn, seq = E.at[i, "event"], E.at[i, "section"], E.at[i, "seq"]
             actor = E.at[i, "actor"] if isinstance(E.at[i, "actor"], str) else ""
             sb, sa = BF[i], AF[i]
+            if use_otm and secn == "ot":
+                ot_rows.append(i)
+                continue
             # ---- WP before / after (winner's side)
             if done:
                 wb = wa = 1.0
@@ -253,6 +279,24 @@ def build(m, nb, ev):
             cur, prev_sec = pa_, secn
             if wa == 1.0 and (et in TERMINAL or et == "regulation_end" or secn == "ot"):
                 done = True
+        if use_otm and ot_rows and not done:
+            evs = [{"seq": E.at[i, "seq"], "event": E.at[i, "event"],
+                    "actor": E.at[i, "actor"] if isinstance(E.at[i, "actor"], str) else "",
+                    "points": E.at[i, "points"], "ot_period": OTP[i], "ot_clock": OTC[i], "raw_text": RAW[i]}
+                   for i in ot_rows]
+            if abs(cur["v"] - wot) > 1e-9:
+                raise ValueError(f"{bk}: regulation ends at {cur['v']:.4f}, overtime starts at {wot:.4f}")
+            for lk in otm.chain(evs, oti.loc[bk].to_dict(), float(rs_[bk]), int(tdp[nb.index.get_loc(bk)]),
+                                holder[bk], wot):
+                st2 = dict(lk["sa"], period=np.nan)
+                nxt = pt(st2, lk["va"])
+                et, act = lk["etype"], lk["actor"]
+                bene, cred = "", act
+                if et == "penalty":
+                    bene, cred = act, ("l" if act == "w" else "w")
+                link(bk, lk["seq"], et, "overtime", cred, cur, nxt, sub=lk["sa"]["period"], bene=bene)
+                cur = nxt
+            done = cur["v"] >= 1 - 1e-12
         if not done:
             if abs(cur["v"] - wot) < 1e-12:
                 link(bk, E.at[e0 - 1, "seq"] + 0.5, "overtime", "overtime", "w", cur, pt(cur["s"], 1.0))
@@ -488,9 +532,10 @@ def report(o, wt, nb, wp_start, wp_ot, n_noflip):
       "it (negative), with the beneficiary recorded; choices to the chooser; clock stretches to the leader at the "
       "start of the stretch; a riding-time lock to the wrestler with the riding-time advantage. A tech fall is two "
       "rows (the score that reached 15, valued like any score, then the remainder to 1). **Overtime** (spec 2.4): "
-      "tied at the end of regulation is worth the overtime win rate (with the seed term); no separate overtime model "
-      "was built, so every overtime row keeps that value except the winner's last score in overtime, which takes "
-      "the jump to 1.\n")
+      "current rules (2022+) use the overtime model (`ot_model.py`, report `ot_model.md`): sudden victory by the "
+      "clock, tiebreaker rides by position / points / tiebreaker riding time, `ot_choice` rows for the ride picks, "
+      "later rounds one value. Before 2022, tied = the overtime win rate (with the seed term), flat until the "
+      "winner's last score in overtime.\n")
 
     A("## Sanity checks (spec 6.2)\n")
     A(f"- **Sum rule:** each bout's WPA sums to result − WP at the opening whistle for both wrestlers: largest "

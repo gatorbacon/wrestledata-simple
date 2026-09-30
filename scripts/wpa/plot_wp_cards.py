@@ -2,8 +2,10 @@
 """
 ESPN-style win-probability cards (WPA step 11 example charts): one card per bout -- the winner's win probability
 through the bout, the winner's side dotted in his team colour above 50, the loser's solid below, the winner's lowest
-point ringed; overtime drawn on the same clock (sudden victory 2:00, tiebreaker rides 0:30 each), flat at the overtime
-win rate until the winner's last overtime score (no separate overtime model). Uses the fitted model (wp_model.WPModel).
+point ringed; overtime drawn on the same clock (sudden victory 2:00, tiebreaker rides 0:30 each). Regulation uses the
+fitted model (wp_model.WPModel); overtime under the current rules (2022+) is the overtime model's chain as stored by
+compute_wpa.py (data/wpa/output/events_wpa.parquet -- run that first), later rounds one step at the end; earlier seasons
+are flat at the overtime win rate until the winner's last overtime score.
 
 Usage (repo root):
   .venv/bin/python scripts/wpa/plot_wp_cards.py --year 2025                         # that year's 10 finals, 2 columns
@@ -39,10 +41,33 @@ TEAM = {'Stanford': ('STAN', '#8C1515'), 'North Dakota State': ('NDSU', '#0A5640
         'Iowa': ('IOWA', BLACK), 'Nebraska': ('NEB', '#E41C38'), 'Virginia Tech': ('VT', '#630031'),
         'Purdue': ('PUR', BLACK), 'Missouri': ('MIZZ', BLACK), 'Northern Iowa': ('UNI', '#4B116F'),
         'Minnesota': ('MINN', '#7A0019'), 'Arizona State': ('ASU', '#8C1D40'), 'Virginia': ('UVA', '#232D4B')}
+def team(t):
+    """(abbreviation, colour); a team missing from TEAM gets its initials in black."""
+    return TEAM.get(t) or (''.join(w[0] for w in t.split() if w[0].isupper())[:4] or t[:4].upper(), BLACK)
 INK, INK2, GRID, SURF, MID = '#111111', '#6b6b6b', '#c9c9c9', '#ffffff', '#b8b8b8'
 TERM = ['fall', 'tech_fall', 'injury', 'dq', 'misconduct', 'regulation_end']
 
 OT_LEN = {1: 120, 2: 30, 3: 30, 4: 60, 5: 30, 6: 30}
+OTX = {'SV1': (420, 120), 'TB1': (540, 30), 'TB2': (570, 30)}      # phase -> (x at its start, length)
+O = pd.read_parquet('data/wpa/output/events_wpa.parquet',
+                    columns=['bout_key', 'kind', 'seq', 'category', 'event_type', 'subtype', 't_after', 'wp_w_before',
+                             'wp_w_after'])
+O = O[(O.kind == 'ncaa') & (O.category == 'overtime')]
+
+
+def ot_series(k):
+    """(xs, ys) of the overtime model's chain for bout k (current rules), or None."""
+    oc = O[O.bout_key == k].sort_values('seq')
+    if not len(oc) or not oc.subtype.isin(OTX.keys()).any():
+        return None
+    xs, ys = [420.0], [100 * oc.wp_w_before.iloc[0]]
+    for r in oc.itertuples():
+        x0, L = OTX.get(r.subtype, (600, 0))
+        x = x0 + L - r.t_after if r.subtype in OTX else max(xs[-1], 600)
+        if r.event_type != 'clock':
+            xs.append(x); ys.append(ys[-1])          # a score / a choice is a jump
+        xs.append(x); ys.append(100 * r.wp_w_after)
+    return np.array(xs), np.array(ys)
 def wp_series(bb):
     wp_series.ot_end = 420
     k = bb.bout_key
@@ -67,6 +92,11 @@ def wp_series(bb):
         xs.append(el); ys.append(wp); prev = wp
     xs.append(420); ys.append(prev)
     end = 420
+    oxy = ot_series(k) if bb.went_to_ot else None
+    if oxy is not None:
+        xs += list(oxy[0]); ys += list(oxy[1])
+        wp_series.ot_end = max(oxy[0].max(), 540)
+        return np.array(xs, float), np.array(ys, float), x
     if bb.went_to_ot:
         ot = e[(e.bout_key == k) & (e.section == 'ot')]
         per = pd.to_numeric(ot.ot_period, errors='coerce').fillna(1).astype(int)
@@ -111,7 +141,7 @@ for i, (_, bb) in enumerate(V.iterrows()):
     ax = fig.add_axes([0.045, 0.20, 0.79, 0.56]); ax.set_facecolor(SURF)
     xs, ys, x = wp_series(bb)
     X, Y = split50(xs, ys)
-    ta, ca = TEAM[bb.w_team]; tb, cb = TEAM[bb.l_team]
+    ta, ca = team(bb.w_team); tb, cb = team(bb.l_team)
     if np.linalg.norm(np.array(to_rgb(ca)) - np.array(to_rgb(cb))) < 0.4:
         cb = '#8a8a8a' if np.mean(to_rgb(ca)) < 0.35 else '#3a3a3a'   # colours too close: opponent goes gray
     xmax = max(wp_series.ot_end, 420)
@@ -132,7 +162,8 @@ for i, (_, bb) in enumerate(V.iterrows()):
     ax.yaxis.tick_right(); ax.set_yticks([0, 50, 100]); ax.set_yticklabels(['100', '50', '100'], fontsize=12, color=INK2)
     ax.tick_params(length=0, pad=8)
     for sp_ in ax.spines.values(): sp_.set_visible(False)
-    lo = x.loc[x.wp.idxmin()]
+    i_lo = int(np.argmin(ys))                        # the whole line, overtime included
+    lo = pd.Series({'el': xs[i_lo], 'wp': ys[i_lo]})
     ax.scatter(lo.el, lo.wp, s=50, facecolor=SURF, edgecolor=INK, lw=1.4, zorder=5, clip_on=False)
     ax.annotate(f"{lo.wp:.1f}%", (lo.el, lo.wp), xytext=(0, -15 if lo.wp > 14 else 10), textcoords='offset points',
                 ha='center', fontsize=10, color=INK, family='Arial', fontweight='bold')
