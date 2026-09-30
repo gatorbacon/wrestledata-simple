@@ -637,7 +637,11 @@ def main():
       "four-way status calls a state \"live\" when only one wrestler can still reach 1:00, and the model was left "
       "guessing for the other). Whether it's also monotone in margin is chosen on held-out WP (`state_model.md`): "
       "free fits the point better (a big lead often ends in a tech fall with no point), monotone keeps WP rising "
-      "with the margin.")
+      "with the margin. "
+      "**After step 9** (TJ): the trees still missed this edge (69%). A simple rate model with an exact dynamic "
+      "program (`scripts/wpa/rt_hazard.py`) gets it right but gives worse WP early in bouts, so the riding-time model "
+      "is now a blend: the trees until 1:30 left, a linear handoff, the rate model alone from 0:30 "
+      "(`state_model.md`, \"Riding-time point model\").")
     A("5. **The table is now also monotone in the eventual riding-time point** (B's point ≤ nobody's ≤ A's point), "
       "alternated with the margin projection.")
     A("6. **The seed layer double-counted strength.** The state table already builds in that leaders are usually the "
@@ -771,12 +775,19 @@ def main():
       "choice between 35% and 60%; 0:05 riding-time state: P(A's point) > 75% and WP above the 0:04 state; 0:04: "
       "P(A's point) = 0 (out of reach) and WP lower; 1 v 16 start > 85%; 1 seed down 3 at 0:10: seeds move WP by "
       "less than 3 points, and not below the equal-seeds value.\n")
-    A("The 0:05 riding-time state is the thinnest in the data: A on top, needing every one of the last few seconds to "
-      "reach 1:00. Each held-out year has 1–5 such moments (A got the point in all of them), and refits of the "
-      "riding-time model put this state anywhere from 53% to 78% depending on the training years and on whether the "
-      "model is monotone in margin. Training only on moments where A's point is still undecided by the clock "
-      "didn't steady it. At 69% instead of ~90%, WP is ~1 point low when A is up 1 and ~6 points low when tied. "
-      "These moments are rare (a few per tournament), so this is left as a known soft spot, not tuned by hand.\n")
+    a5 = next(r for r in hc if r["State"] == HC_05)
+    if a5["ok"]:
+        A(f"The 0:05 riding-time state (A on top, needing every one of the last seconds to reach 1:00) is the thinnest "
+          f"in the data: 1–5 held-out moments a year, A got the point in all of them. The step-8 trees put it anywhere "
+          f"from 53% to 78% depending on the training years; the blend (the rate model alone at 0:05) gives {pct(a5['P(A pt)'], 0)} — the "
+          "chance of no escape, reversal or early end in 5 seconds — which is what the data says.\n")
+    else:
+        A("The 0:05 riding-time state is the thinnest in the data: A on top, needing every one of the last few seconds to "
+          "reach 1:00. Each held-out year has 1–5 such moments (A got the point in all of them), and refits of the "
+          "riding-time model put this state anywhere from 53% to 78% depending on the training years and on whether the "
+          "model is monotone in margin. Training only on moments where A's point is still undecided by the clock "
+          "didn't steady it. At 69% instead of ~90%, WP is ~1 point low when A is up 1 and ~6 points low when tied. "
+          "These moments are rare (a few per tournament), so this is left as a known soft spot, not tuned by hand.\n")
 
     A("## 7. Monotonicity (spec 3.5 / 7.7)\n")
     A(f"- **Table projections (step 6: margin, riding-time point, release option):** {mono['iso_adj']:,} of {mono['cells']:,} grid cells adjusted "

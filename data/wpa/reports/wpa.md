@@ -7,13 +7,13 @@ Crediting (spec 6): scores go to the scorer; a penalty or stalling point goes to
 ## Sanity checks (spec 6.2)
 
 - **Sum rule:** each bout's WPA sums to result − WP at the opening whistle for both wrestlers: largest error 2.2e-16 over 6,739 bouts; consecutive links meet exactly (largest gap 0.0e+00); per wrestler per tournament, total WPA = wins − expected wins (largest error 6.7e-16).
-- **Negative scoring WPA:** 38 of 36,700 scoring events (penalty points excluded — those are credited to the offender) lower the scorer's WP; largest 0.0006.
-  All are 0.06 WP points or less, and 37 of the 38 are in bouts already decided (the scorer below 1% or above 99%): rounding-level moves where the seed layer and the table's projections meet, not wrong-way values. Worst five:
+- **Negative scoring WPA:** 104 of 36,700 scoring events (penalty points excluded — those are credited to the offender) lower the scorer's WP; largest 0.0006.
+  All are 0.06 WP points or less, and 104 of the 104 are in bouts already decided (the scorer below 1% or above 99%): rounding-level moves where the seed layer and the table's projections meet, not wrong-way values. Worst five:
   - ncaa|NCAA|2023|285|8 escape at 100 s left, margin +5, A_top → neutral, riding time +133: 99.84% → 99.78%.
-  - ncaa|NCAA|2022|197|42 escape at 114 s left, margin +2, A_bottom → neutral, riding time +186: 99.40% → 99.40%.
-  - ncaa|NCAA|2026|285|39 escape at 110 s left, margin +3, A_bottom → neutral, riding time +178: 99.52% → 99.52%.
-  - ncaa|NCAA|2021|141|23 escape at 43 s left, margin +2, A_bottom → neutral, riding time +112: 99.42% → 99.42%.
-  - ncaa|NCAA|2018|133|17 escape at 133 s left, margin -4, A_bottom → neutral, riding time -194: 0.15% → 0.15%.
+  - ncaa|NCAA|2021|165|18 escape at 60 s left, margin -9, A_bottom → neutral, riding time -163: 0.07% → 0.03%.
+  - ncaa|NCAA|2021|165|18 takedown at 72 s left, margin +7, neutral → A_top, riding time +151: 99.96% → 99.94%.
+  - ncaa|NCAA|2019|184|35 escape at 72 s left, margin -8, A_bottom → neutral, riding time -159: 0.05% → 0.02%.
+  - ncaa|NCAA|2019|184|35 takedown at 61 s left, margin +7, neutral → A_top, riding time +159: 99.97% → 99.95%.
 - **Riding-time point at the end of regulation:** the lock logic prices the point in before the buzzer, so applying it adds nothing — except in 22 bouts whose rebuilt riding time disagrees with the official point (all flagged `rt_consistent = False`); there the official point is applied at the buzzer and carries the correction.
 - Riding-time locks found inside clock stretches: 5,992; 0 stretches where the status changed across a period break without a break event were left whole (their lock stays in the clock row).
 
@@ -25,16 +25,16 @@ Mean WPA to the credited wrestler, by rules era (the 3-point takedown arrived in
 |---|---:|---:|---:|---:|
 | takedown | 11,525 | +13.7 | 3,817 | +15.7 |
 | escape | 12,494 | +6.5 | 4,557 | +5.3 |
-| reversal | 1,508 | +16.9 | 416 | +13.8 |
+| reversal | 1,508 | +17.1 | 416 | +13.9 |
 | near fall 2 | 795 | +6.8 | 132 | +6.5 |
-| near fall 3 | 124 | +7.9 | 65 | +7.1 |
-| near fall 4 | 1,000 | +9.1 | 267 | +9.1 |
+| near fall 3 | 124 | +7.8 | 65 | +7.1 |
+| near fall 4 | 1,000 | +9.1 | 267 | +9.0 |
 | stalling point (offender) | 970 | -4.1 | 417 | -4.6 |
 | penalty point (offender) | 331 | -6.4 | 89 | -4.8 |
 | fall | 484 | +16.4 | 151 | +16.3 |
 | tech_fall | 130 | +0.0 | 135 | +0.0 |
 | injury | 22 | +17.9 | 6 | +10.6 |
-| dq | 4 | +1.8 | 2 | +4.2 |
+| dq | 4 | +1.8 | 2 | +4.1 |
 
 WPA points = percentage points of win probability. A fall's WPA is whatever was left to reach 100%; a tech fall row is only the remainder after the score that reached 15.
 
@@ -43,9 +43,9 @@ WPA points = percentage points of win probability. A fall's WPA is whatever was 
 | When | ≤ -4 | -3 | -2 | -1 | tied | +1 | +2 | +3 | ≥ +4 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | period 1 | +12 | +26 | +31 | +35 | +20 | +12 | +10 | +6 | +2 |
-| period 2 | +9 | +29 | +30 | +36 | +25 | +20 | +13 | +9 | +2 |
-| period 3, before the last minute | +5 | +29 | +39 | +44 | +30 | +15 | +16 | +6 | +1 |
-| last minute | +4 | +38 | +65 | +65 | +45 | +20 | +7 | +4 | +0 |
+| period 2 | +9 | +29 | +30 | +37 | +25 | +20 | +13 | +9 | +2 |
+| period 3, before the last minute | +6 | +29 | +39 | +44 | +30 | +15 | +16 | +6 | +1 |
+| last minute | +5 | +40 | +65 | +65 | +45 | +20 | +7 | +4 | +0 |
 
 ## Choices (spec 6.1)
 
@@ -76,7 +76,7 @@ The WPA of a pick compares it with the average of what choosers in that state ac
 
 ## Riding time
 
-5,992 riding-time locks (the second the point stops being live). Mean |WPA| +0.38, largest +18.1 points. Riding out a period shows up mostly as top-position clock WPA (below), not in the lock itself: the point's chance is priced continuously as time passes.
+5,992 riding-time locks (the second the point stops being live). Mean |WPA| +0.24, largest +13.7 points. Riding out a period shows up mostly as top-position clock WPA (below), not in the lock itself: the point's chance is priced continuously as time passes.
 
 ## Where a wrestler's WPA comes from
 
@@ -99,33 +99,33 @@ Per wrestler per tournament, total WPA = wins − expected wins at the opening w
 | year | weight | name | team | seed | bouts | wins | expected | WPA | own scoring | top | bottom | neutral |
 |---:|---:|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2021 | 149 | Yahya Thomas | Northwestern | 25 | 7 | 6 | 0.96 | +5.04 | +3.23 | +1.20 | -1.39 | +5.03 |
-| 2015 | 157 | Nick Brascetta | Virginia Tech | 24 | 7 | 5 | 1.08 | +3.92 | +2.48 | +0.51 | -0.49 | +3.82 |
+| 2015 | 157 | Nick Brascetta | Virginia Tech | 24 | 7 | 5 | 1.08 | +3.92 | +2.49 | +0.51 | -0.50 | +3.83 |
 | 2018 | 197 | Kyle Conel | Kent State | — | 6 | 5 | 1.10 | +3.90 | +2.66 | +1.95 | -0.29 | +2.33 |
-| 2021 | 125 | Patrick McKee | Minnesota | 15 | 8 | 7 | 3.14 | +3.86 | +3.99 | +1.86 | -0.02 | +2.13 |
-| 2019 | 184 | Dakota Geer | Oklahoma State | 26 | 7 | 5 | 1.32 | +3.68 | +3.25 | +1.63 | -0.15 | +2.65 |
-| 2018 | 133 | Tariq Wilson | NC State | 28 | 6 | 5 | 1.37 | +3.63 | +3.83 | +1.93 | -1.05 | +3.14 |
+| 2021 | 125 | Patrick McKee | Minnesota | 15 | 8 | 7 | 3.14 | +3.86 | +3.97 | +1.86 | -0.01 | +2.12 |
+| 2019 | 184 | Dakota Geer | Oklahoma State | 26 | 7 | 5 | 1.32 | +3.68 | +3.27 | +1.61 | -0.14 | +2.67 |
+| 2018 | 133 | Tariq Wilson | NC State | 28 | 6 | 5 | 1.37 | +3.63 | +3.84 | +1.93 | -1.05 | +3.14 |
 | 2016 | 174 | Casey Kent | Pennsylvania | 25 | 8 | 6 | 2.47 | +3.53 | +2.29 | +2.26 | +1.11 | +0.25 |
-| 2015 | 133 | Cody Brewer | Oklahoma | 13 | 5 | 5 | 1.62 | +3.38 | +3.52 | +1.46 | -0.49 | +2.42 |
+| 2015 | 133 | Cody Brewer | Oklahoma | 13 | 5 | 5 | 1.62 | +3.38 | +3.51 | +1.46 | -0.49 | +2.42 |
 | 2015 | 184 | Victor Avery | Edinboro | 13 | 6 | 5 | 1.70 | +3.30 | +1.91 | +0.95 | -0.24 | +2.39 |
 | 2015 | 125 | Conor Youtsey | Michigan | 17 | 8 | 5 | 1.77 | +3.23 | +3.52 | +0.25 | -0.26 | +2.05 |
 | 2023 | 197 | Jacob Warner | Iowa | 14 | 8 | 6 | 2.77 | +3.23 | +2.11 | +1.21 | -0.26 | +2.05 |
 | 2015 | 125 | Zeke Moisey | West Virginia | 18 | 5 | 4 | 0.86 | +3.14 | +1.91 | +1.87 | -0.35 | +1.54 |
-| 2018 | 197 | Jacob Holschlag | Northern Iowa | 27 | 8 | 6 | 2.88 | +3.12 | +2.90 | +2.13 | +0.77 | +0.28 |
-| 2015 | 184 | Willie Miklus | Missouri | 23 | 7 | 5 | 1.88 | +3.12 | +4.38 | +1.36 | +0.44 | +1.22 |
-| 2016 | 184 | Pete Renda | NC State | 13 | 6 | 5 | 1.98 | +3.02 | +2.86 | +0.57 | +0.47 | +1.43 |
+| 2018 | 197 | Jacob Holschlag | Northern Iowa | 27 | 8 | 6 | 2.88 | +3.12 | +2.93 | +2.13 | +0.80 | +0.26 |
+| 2015 | 184 | Willie Miklus | Missouri | 23 | 7 | 5 | 1.88 | +3.12 | +4.39 | +1.36 | +0.45 | +1.22 |
+| 2016 | 184 | Pete Renda | NC State | 13 | 6 | 5 | 1.98 | +3.02 | +2.90 | +0.53 | +0.51 | +1.43 |
 
 **2026**:
 
 | year | weight | name | team | seed | bouts | wins | expected | WPA | own scoring | top | bottom | neutral |
 |---:|---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2026 | 149 | Aden Valencia | Stanford | 10 | 5 | 5 | 1.99 | +3.01 | +2.91 | +0.50 | -0.33 | +2.23 |
-| 2026 | 197 | Gabe Arnold | Iowa | 27 | 7 | 5 | 2.05 | +2.95 | +2.87 | +0.53 | -0.01 | +2.68 |
+| 2026 | 149 | Aden Valencia | Stanford | 10 | 5 | 5 | 1.99 | +3.01 | +2.93 | +0.49 | -0.33 | +2.24 |
+| 2026 | 197 | Gabe Arnold | Iowa | 27 | 7 | 5 | 2.05 | +2.95 | +2.87 | +0.52 | -0.01 | +2.68 |
 | 2026 | 165 | Cesar Alvan | Columbia | 12 | 6 | 5 | 2.12 | +2.88 | +1.71 | +0.37 | -0.39 | +2.25 |
-| 2026 | 149 | Chance Lamer | Nebraska | 20 | 6 | 4 | 1.40 | +2.60 | +2.29 | +0.24 | -0.59 | +3.06 |
-| 2026 | 125 | Vincent Robinson | NC State | 12 | 8 | 6 | 3.42 | +2.58 | +1.78 | -0.11 | -0.29 | +1.19 |
-| 2026 | 157 | Landon Robideau | Oklahoma State | 5 | 5 | 5 | 2.69 | +2.31 | +1.50 | +0.53 | -0.14 | +0.74 |
+| 2026 | 149 | Chance Lamer | Nebraska | 20 | 6 | 4 | 1.40 | +2.60 | +2.29 | +0.24 | -0.59 | +3.05 |
+| 2026 | 125 | Vincent Robinson | NC State | 12 | 8 | 6 | 3.42 | +2.58 | +1.77 | -0.11 | -0.29 | +1.18 |
+| 2026 | 157 | Landon Robideau | Oklahoma State | 5 | 5 | 5 | 2.69 | +2.31 | +1.51 | +0.54 | -0.15 | +0.74 |
 | 2026 | 133 | Tyler Knox | Stanford | 15 | 8 | 5 | 3.02 | +1.98 | +3.44 | +0.25 | +0.74 | +0.36 |
-| 2026 | 149 | Lachlan McNeil | Michigan | 11 | 6 | 5 | 3.04 | +1.96 | +2.67 | +1.11 | +0.08 | +0.73 |
+| 2026 | 149 | Lachlan McNeil | Michigan | 11 | 6 | 5 | 3.04 | +1.96 | +2.69 | +1.10 | +0.08 | +0.73 |
 | 2026 | 125 | Marc-Anthony McGowan | Princeton | 10 | 5 | 4 | 2.06 | +1.94 | +1.16 | +0.23 | -0.23 | +1.31 |
 | 2026 | 141 | Carter Nogle | Air Force | 18 | 7 | 5 | 3.07 | +1.93 | +2.20 | +1.13 | +0.03 | +0.90 |
 
@@ -135,12 +135,12 @@ Per wrestler per tournament, total WPA = wins − expected wins at the opening w
 |---|---|---|---|---|
 | 2026 125 C_R3 | Tyler Klinsky (Rider) | fall | P3 0:15, margin -3 | 0% → 100% |
 | 2023 141 C_R2 | Casey Swiderski (Iowa State) | fall | P3 0:12, margin -4 | 0% → 100% |
-| 2025 141 C_R3 | Dylan Chappell (Bucknell) | fall | P3 0:42, margin -3 | 1% → 100% |
+| 2025 141 C_R3 | Dylan Chappell (Bucknell) | fall | P3 0:42, margin -3 | 2% → 100% |
 | 2021 174 C_R2 | Peyton Mocco (Missouri) | fall | P3 0:35, margin -4 | 3% → 100% |
 | 2016 174 C_R3 | Casey Kent (Pennsylvania) | fall | P3 1:30, margin -5 | 3% → 100% |
 | 2025 141 C_R2 | Danny Pucino (Illinois) | fall | P2 2:45, margin -6 | 3% → 100% |
 | 2024 165 C_R1 | Domonic Baker (Campbell) | fall | P2 3:37, margin -6 | 3% → 100% |
-| 2023 149 R32 | Shayne Van Ness (Penn State) | fall | P3 0:34, margin -2 | 5% → 100% |
+| 2026 165 R32 | EJ Parco (Stanford) | takedown | P3 0:02, margin -1 | 3% → 98% |
 | 2016 285 C_R1 | Joe Stolfi (Bucknell) | fall | P3 1:36, margin -5 | 5% → 100% |
 | 2017 141 R32 | Johnathan Hathaway (Oregon State) | fall | P2 3:32, margin -2 | 6% → 100% |
 | 2018 125 R32 | Drew Mattin (Michigan) | fall | P2 3:10, margin -3 | 6% → 100% |
@@ -166,11 +166,11 @@ Per wrestler per tournament, total WPA = wins − expected wins at the opening w
 | 2023 141 C_R2 | Casey Swiderski (Iowa State) | Vince Cornella (Cornell) | Fall 3-7 | 0.00% |
 | 2019 157 C_R1 | Chase Straw (Iowa State) | Quincy Monday (Princeton) | TB-1 13-12 | 0.03% |
 | 2018 125 R16 | Louie Hayes (Virginia) | Sean Fausz (NC State) | SV-1 10-4 | 0.04% |
-| 2026 125 C_R3 | Tyler Klinsky (Rider) | Nic Bouzakis (Ohio State) | Fall 8-11 | 0.11% |
+| 2026 125 C_R3 | Tyler Klinsky (Rider) | Nic Bouzakis (Ohio State) | Fall 8-11 | 0.13% |
 | 2015 157 R32 | Louis Mascola (Maryland) | Cody Pack (South Dakota St.) | Dec 10-9 | 0.13% |
 | 2025 141 C_R3 | Dylan Chappell (Bucknell) | Mosha Schwartz (Oklahoma) | Fall 11-14 | 0.19% |
-| 2023 125 SF | Matt Ramos (Purdue) | Spencer Lee (Iowa) | Fall 7-7 | 0.22% |
-| 2015 157 QF | Brian Realbuto (Cornell) | Ian Miller (Kent St.) | SV-1 11-9 | 0.29% |
+| 2023 125 SF | Matt Ramos (Purdue) | Spencer Lee (Iowa) | Fall 7-7 | 0.28% |
+| 2015 157 QF | Brian Realbuto (Cornell) | Ian Miller (Kent St.) | SV-1 11-9 | 0.30% |
 
 ## Known data issue
 

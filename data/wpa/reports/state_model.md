@@ -10,32 +10,41 @@ Rotate within E3 (TJ): train on two of 2024 / 2025 / 2026 plus all of 2015–23,
 
 ## Riding-time point model
 
-Boosted trees on riding-time differential, time left, position, margin and era; monotone in the differential and in A being on top; B's probability = the model on the mirrored state; locked states exact. Fitted on all eras (chosen moments, below), bouts whose rebuilt riding time matches the actual point. Held-out log loss for "does A get the point" vs a constant base rate: 2024: 0.384 vs 0.526, 2025: 0.366 vs 0.525, 2026: 0.350 vs 0.521.
+**A blend (TJ, after step 9):** the step-8 boosted trees until 1:30 left in the bout, a linear handoff, and the rate model alone from 0:30. The rate model (`scripts/wpa/rt_hazard.py`): per second, the bottom man escapes (+1) or reverses (+2), the top man scores near-fall points, either wrestler takes the other down in neutral (+2, +3 from 2024), or the bout ends by fall / injury / DQ; a margin of 15 is a tech fall. Rates come from the play-by-play (events ÷ seconds in that position), by era; period picks and the toss winner's defer share the same way. An exact dynamic program over the rest of regulation (position × margin × riding-time differential, second by second) gives P(A's point), P(nobody), P(B's point) — monotone and exact at the locks by construction.
 
-Step 8 revised it (features: the share of the remaining time each wrestler must still ride to reach 1:00, who holds the next choice, break state; exact per wrestler whenever the clock decides it; monotone in the riding-time differential and in both wrestlers' remaining need; monotone in margin, chosen on held-out WP below). Held-out log loss, steps 5–7 version → now: 2024: 0.3707 → 0.3843, 2025: 0.3574 → 0.3658, 2026: 0.3416 → 0.3503. The steps 5–7 version was free in margin, so it fits the point itself better; the margin constraint costs that accuracy and buys held-out WP. The knife edge it was missing — A on top in the last 15 s, still able to reach 1:00 only by riding most of what's left:
-
-| Share of remaining time A must ride | Samples | Actual share with A's point | Steps 5–7 model | Now |
-|---|---:|---:|---:|---:|
-| under half | 15 | 93% | 83% | 83% |
-| half to 80% | 12 | 92% | 73% | 83% |
-| 80% to all of it | 5 | 100% | 50% | 61% |
-
-Monotone in margin or not? Free fits the point itself better (a big lead often ends in a tech fall with no point awarded), monotone keeps WP increasing in margin. Judged on held-out WP of the chosen table:
+Why a blend: the rate model predicts the point itself better, but the trees give the better held-out WIN probability overall — every rate-model variant tried (era only, by margin, by riding-time lead) lost WP accuracy early in bouts. In the last minute the two are equally accurate on WP, and the rate model gets the late states a fan can check by hand right (tied 2-2, 0:43 left, +1:01 riding time: trees 58% for the point, rate model 89%; the "must ride all of the last 5 s" knife edge). The gradual handoff avoids a jump in the line at a fixed second. Held-out log loss for "does A get the point" (blend) vs a constant base rate: 2024: 0.365 vs 0.526, 2025: 0.354 vs 0.525, 2026: 0.343 vs 0.521.
 
 | Riding-time model | Held-out WP log loss | Held-out log loss, the point itself |
 |---|---:|---:|
-| monotone in margin | 0.4659 | 0.3669 |
-| free in margin | 0.4669 | 0.3541 |
+| **trees, handing off to the rate model 1:30 → 0:30** (used) | 0.4659 | 0.3538 |
+| boosted trees (step 8) | 0.4659 | 0.3669 |
+| hazard, era only | 0.4666 | 0.3448 |
+| hazard, riding-time lead | 0.4684 | 0.3421 |
+| hazard, lead 1-3 / 4-7 / 8+ | 0.4690 | 0.3419 |
 
-**Chosen:** monotone in margin.
+The knife edge the trees kept missing — A on top in the last 15 s, still able to reach 1:00 only by riding most of what's left (held out):
 
+| Share of remaining time A must ride | Samples | Actual share with A's point | Step-8 trees | Blend (= rate model here) |
+|---|---:|---:|---:|---:|
+| under half | 15 | 93% | 83% | 88% |
+| half to 80% | 12 | 92% | 83% | 84% |
+| 80% to all of it | 5 | 100% | 61% | 75% |
 | Time left | Samples | Predicted share with A's point | Actual |
 |---|---:|---:|---:|
-| 0:01–0:30 | 9,384 | 24.2% | 23.6% |
-| 0:31–1:00 | 9,576 | 23.6% | 23.2% |
+| 0:01–0:30 | 9,384 | 23.9% | 23.6% |
+| 0:31–1:00 | 9,576 | 23.2% | 23.2% |
 | 1:01–2:00 | 19,772 | 22.4% | 22.4% |
 | period 2 | 41,398 | 21.1% | 21.4% |
 | period 1 | 68,948 | 19.8% | 20.4% |
+
+Rate model, fitted rates (final fit, per minute of wrestling in that position):
+
+| Era | Escape | Reversal | Near fall | Takedown (per wrestler) |
+|---|---:|---:|---:|---:|
+| E12 | 1.05 | 0.12 | 0.18 | 0.28 |
+| E3 | 1.23 | 0.12 | 0.15 | 0.23 |
+
+Period picks, the defer share and early-end rates are in `rt_params.json`.
 
 ## Which moments feed the model (added in step 8)
 
@@ -53,7 +62,7 @@ Late in close bouts the event that is about to happen is usually the trailing wr
 | Moments used | Best k | Best k2 | Held-out log loss |
 |---|---:|---:|---:|
 | 10-s samples + the state just before and just after every event (spec 3.1 as written) | 80 | 80 | 0.4665 |
-| 10-s samples + the state just after every event + break states; in-period 'just before' states dropped | 80 | 80 | 0.4662 |
+| 10-s samples + the state just after every event + break states; in-period 'just before' states dropped | 80 | 80 | 0.4663 |
 | 10-s samples + break states only | 80 | 80 | 0.4664 |
 
 **Chosen:** 10-s samples + the state just after every event + break states; in-period 'just before' states dropped. The same moments train the riding-time model, the backstop and (step 7) the tie model.
@@ -64,9 +73,9 @@ First run keyed the table on margin + eventual riding-time point pooled. That fa
 
 | Table key | Table data | Best k | Best k2 | Log loss (before the step-6 projections) | After them |
 |---|---|---:|---:|---:|---:|
-| margin and point kept apart | ncaa+conf | 80 | 80 | 0.4662 | 0.4659 |
-| margin and point kept apart | ncaa | 160 | 80 | 0.4668 | 0.4666 |
-| margin + point pooled | ncaa+conf | 160 | 5 | 0.4675 | — |
+| margin and point kept apart | ncaa+conf | 80 | 80 | 0.4663 | 0.4659 |
+| margin and point kept apart | ncaa | 160 | 80 | 0.4669 | 0.4666 |
+| margin + point pooled | ncaa+conf | 160 | 5 | 0.4674 | — |
 | margin + point pooled | ncaa | 80 | 20 | 0.4679 | — |
 
 The k grid is scored before the projections (too slow to project every grid point); variants within 0.001 of the best are scored again after them and the choice is made there, on the model actually used.
@@ -77,19 +86,19 @@ The k grid is scored before the projections (too slow to project every grid poin
 
 | Test year | Test bouts | Margin + time only | Table, riding time ignored | Model before monotonicity | **Model** | Brier, model |
 |---:|---:|---:|---:|---:|---:|---:|
-| 2024 | 617 | 0.4718 | 0.4680 | 0.4653 | 0.4647 | 0.1577 |
-| 2025 | 616 | 0.4743 | 0.4708 | 0.4698 | 0.4697 | 0.1580 |
-| 2026 | 608 | 0.4703 | 0.4655 | 0.4635 | 0.4632 | 0.1564 |
+| 2024 | 617 | 0.4718 | 0.4680 | 0.4653 | 0.4646 | 0.1577 |
+| 2025 | 616 | 0.4743 | 0.4708 | 0.4699 | 0.4698 | 0.1581 |
+| 2026 | 608 | 0.4703 | 0.4655 | 0.4636 | 0.4633 | 0.1564 |
 
 ## Where it matters: slices of the held-out samples
 
 | Slice | Samples | Margin + time only | Table, riding time ignored | Model |
 |---|---:|---:|---:|---:|
 | All | 149,078 | 0.4721 | 0.4681 | 0.4659 |
-| Period 3, within 3 | 21,798 | 0.4771 | 0.4669 | 0.4534 |
-| Last 30 s, within 2 | 3,934 | 0.4305 | 0.4156 | 0.3719 |
-| Riding time live, last 60 s | 7,460 | 0.2601 | 0.2485 | 0.2373 |
-| Riding time live, last 60 s, margin within 1 | 1,980 | 0.5630 | 0.5427 | 0.4981 |
+| Period 3, within 3 | 21,798 | 0.4771 | 0.4669 | 0.4536 |
+| Last 30 s, within 2 | 3,934 | 0.4305 | 0.4156 | 0.3720 |
+| Riding time live, last 60 s | 7,460 | 0.2601 | 0.2485 | 0.2379 |
+| Riding time live, last 60 s, margin within 1 | 1,980 | 0.5630 | 0.5427 | 0.4996 |
 
 ## Calibration (held-out)
 
@@ -97,27 +106,27 @@ Whole held-out set, deciles of predicted win probability:
 
 | Predicted | Samples | Mean predicted | Actual win rate |
 |---|---:|---:|---:|
-| (-0.001, 0.1] | 24,320 | 3.2% | 3.9% |
-| (0.1, 0.2] | 11,701 | 14.3% | 16.7% |
-| (0.2, 0.3] | 5,482 | 24.0% | 25.2% |
-| (0.3, 0.4] | 5,211 | 35.8% | 39.2% |
-| (0.4, 0.5] | 47,892 | 49.6% | 49.5% |
-| (0.5, 0.6] | 7,758 | 52.4% | 53.4% |
-| (0.6, 0.7] | 5,211 | 64.2% | 60.8% |
-| (0.7, 0.8] | 5,482 | 76.0% | 74.8% |
-| (0.8, 0.9] | 11,701 | 85.7% | 83.3% |
-| (0.9, 1.0] | 24,320 | 96.8% | 96.1% |
+| (-0.001, 0.1] | 24,308 | 3.2% | 3.9% |
+| (0.1, 0.2] | 11,695 | 14.3% | 16.7% |
+| (0.2, 0.3] | 5,496 | 24.0% | 25.3% |
+| (0.3, 0.4] | 5,201 | 35.8% | 39.1% |
+| (0.4, 0.5] | 47,914 | 49.6% | 49.4% |
+| (0.5, 0.6] | 7,764 | 52.4% | 53.4% |
+| (0.6, 0.7] | 5,201 | 64.2% | 60.9% |
+| (0.7, 0.8] | 5,496 | 76.0% | 74.7% |
+| (0.8, 0.9] | 11,695 | 85.7% | 83.3% |
+| (0.9, 1.0] | 24,308 | 96.8% | 96.1% |
 
 The independence check — riding time still live, 60 s or less left (where riding it out and the opponent escaping are the same event):
 
 | Predicted | Samples | Mean predicted | Actual win rate |
 |---|---:|---:|---:|
-| (-0.001, 0.1] | 2,515 | 2.0% | 2.7% |
-| (0.1, 0.3] | 785 | 16.9% | 14.8% |
-| (0.3, 0.5] | 430 | 45.9% | 42.8% |
-| (0.5, 0.7] | 430 | 54.1% | 57.2% |
-| (0.7, 0.9] | 785 | 83.1% | 85.2% |
-| (0.9, 1.0] | 2,515 | 98.0% | 97.3% |
+| (-0.001, 0.1] | 2,508 | 2.0% | 2.6% |
+| (0.1, 0.3] | 795 | 16.9% | 15.3% |
+| (0.3, 0.5] | 427 | 46.6% | 42.6% |
+| (0.5, 0.7] | 427 | 53.4% | 57.4% |
+| (0.7, 0.9] | 795 | 83.1% | 84.7% |
+| (0.9, 1.0] | 2,508 | 98.0% | 97.4% |
 
 ## Final table (fitted on all data)
 
@@ -126,7 +135,7 @@ The independence check — riding time still live, 60 s or less left (where ridi
 - **Monotonicity (step 6):** 89,028 of 421,848 grid cells adjusted (10,784 of them cells with data); largest change 0.149, mean change among adjusted 0.0056. Held-out rotations: 81,536, 80,954, 79,426 cells adjusted; effect on held-out log loss in the table above.
 - **Release option (step 8):** before the projection 42,082 (neutral m − 1, top m) / (bottom m, neutral m + 1) pairs out of order, largest 0.199; after: 7,488 above 0.000001, largest 7.32e-03.
 - Symmetry: max |WP(S) + WP(mirror S) − 1| over the whole table = 1.11e-16.
-- Files: `data/wpa/model/state_table.parquet` (every cell: `n_obs`, `n_matches`, `p_emp`, `p_emp_match`, `p_backstop`, `p_smooth` = neighbours + backstop, `w`, `p_blend`, `p_state` = after monotonicity; `rt_point` = the eventual riding-time point the cell is conditioned on), `rt_model.joblib`, `backstop.joblib`, `model_params.json`.
+- Files: `data/wpa/model/state_table.parquet` (every cell: `n_obs`, `n_matches`, `p_emp`, `p_emp_match`, `p_backstop`, `p_smooth` = neighbours + backstop, `w`, `p_blend`, `p_state` = after monotonicity; `rt_point` = the eventual riding-time point the cell is conditioned on), `rt_model.joblib` (the blend), `rt_params.json` (its rate model), `backstop.joblib`, `model_params.json`.
 
 ## A few states (final model, no strength layer)
 
@@ -135,12 +144,12 @@ The independence check — riding time still live, 60 s or less left (where ridi
 | Tied, 7:00 left | E3 | 19% | 19% | 50.0% |
 | Tied, 0:30 left, A on bottom | E3 | 0% | 0% | 51.2% |
 | Down 1, start of P3, A on bottom | E3 | 2% | 21% | 35.8% |
-| Up 1, 0:05 left, A on top, A +55 s riding | E3 | 69% | 0% | 97.5% |
+| Up 1, 0:05 left, A on top, A +55 s riding | E3 | 89% | 0% | 98.7% |
 | Up 1, 0:04 left, A on top, A +55 s riding | E3 | 0% | 0% | 93.2% |
-| Tied, 0:05 left, A on top, A +55 s riding | E3 | 68% | 0% | 88.1% |
+| Tied, 0:05 left, A on top, A +55 s riding | E3 | 89% | 0% | 93.6% |
 | Tied, 0:04 left, A on top, A +55 s riding | E3 | 0% | 0% | 70.1% |
-| Up 2, 1:00 left, neutral | E12 | 1% | 1% | 91.5% |
-| Up 2, 1:00 left, neutral | E3 | 1% | 0% | 83.5% |
+| Up 2, 1:00 left, neutral | E12 | 1% | 0% | 91.6% |
+| Up 2, 1:00 left, neutral | E3 | 0% | 0% | 83.5% |
 
 (Step 8 runs the spec's full list of hand-checked states, with the strength layer.)
 

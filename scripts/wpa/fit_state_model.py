@@ -20,10 +20,11 @@ WPA steps 5-6 -- the state model: smoothing / shrinkage of the empirical table (
   * Backstop: gradient-boosted model on all eras (era as a feature), monotone increasing in margin and in r,
     symmetrised so WP(S) = 1 - WP(mirror S) exactly. (A no-intercept logistic regression on mirror-odd features was
     compared in the first run: 0.4689 vs 0.4687 held-out.)
-  * Riding-time point model: gradient-boosted classifier for "A gets the point" on (riding-time differential, time
-    left, position, margin, era), monotone increasing in the differential and in A being on top; B's probability is
-    the same model on the mirrored state. Locked states are exact (a point out of reach gets probability 0). Fitted
-    on all eras (the rule hasn't changed), bouts whose rebuilt riding time matches the actual point only.
+  * Riding-time point model (replaced 2026-09-29, after step 9): a simple rate model with an exact dynamic program
+    (rt_hazard.py -- per-second escape / reversal / near-fall / takedown / early-end rates and period-pick shares by
+    era and by how far the wrestler concerned leads or trails; P(point) computed exactly over the rest of regulation).
+    Variants (how finely the rates depend on the margin) are chosen on held-out WP; the step-8 boosted-tree classifier
+    is kept as a comparison row only. Fitted on bouts whose rebuilt riding time matches the actual point.
   * Step 6: isotonic regression along margin for every (era, time, period, position, choice, r) slice.
   * Which moments feed the table and the models (ROW_SETS; added in step 8, 2026-09-29): the state just BEFORE an
     in-period event is a biased moment -- it was picked because something was about to happen, and late in close
@@ -40,7 +41,7 @@ k / k2, the row set, and the table variant (margin and r apart vs pooled; E3 tab
 only) are chosen by it -- the row set first (on the step-5 variant), then the table variants on that row set.
 
 Outputs: data/wpa/model/state_table.parquet (final table: n_obs, n_matches, p_emp, p_smooth, w, p_state),
-data/wpa/model/rt_model.joblib, data/wpa/model/backstop.joblib, data/wpa/model/model_params.json,
+data/wpa/model/rt_params.json, data/wpa/model/backstop.joblib, data/wpa/model/model_params.json,
 data/wpa/reports/state_model.md.
 
 Usage: .venv/bin/python scripts/wpa/fit_state_model.py
@@ -60,6 +61,7 @@ from sklearn.linear_model import LogisticRegression
 ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ROOT / "scripts/wpa"))
 import build_table as BT  # noqa: E402
+import rt_hazard as H     # noqa: E402
 import wpa_common as C    # noqa: E402
 
 TAB = ROOT / "data/wpa/table"
@@ -137,24 +139,28 @@ def pre_event_bias(two):
 # ---------------------------------------------------------------------------------------------------------------
 # riding-time point model
 # ---------------------------------------------------------------------------------------------------------------
-# Step-8 version (2026-09-29). a_need / b_need = share of the remaining time A / B must still spend on top to reach
-# 1:00 (the knife edge: "A on top, 5 s left, needs all 5" -- the first version, without them, said 58% against 89-96%
-# in the data); chc = who holds the next period choice (+1 A / -1 B); pend = a break state (position not chosen yet).
-# Monotone: increasing in rt_diff and in A being on top; decreasing in a_need and increasing in b_need (the harder
-# the point is for B, the likelier for A -- unconstrained, B's probability could rise with A's own riding-time lead).
-# Margin: two variants, chosen on held-out WIN probability (what the model is for). Monotone in margin keeps
-# WP(S) = sum_r P(r | S) T(S, r) increasing in margin (a leading wrestler rides, a trailing one cuts); free in margin
-# fits the point itself better -- a big lead often ends in a tech fall with no point awarded (r = 0): up 8+, the
-# monotone version says 73% for A's point against 40% in the data -- but lets WP fall as the margin grows.
+# Since 2026-09-29 (after step 9, TJ): a BLEND. The step-8 boosted trees give the better held-out WIN probability
+# (2026: 0.4634 vs 0.4651 for the best rate model) although the rate model (rt_hazard.py: per-second escape /
+# reversal / near-fall / takedown / early-end rates + an exact dynamic program) predicts the point itself better
+# (0.338 vs 0.350) and gets the late, fan-checkable states right (tied 2-2, 0:43 left, +1:01 riding time: trees 58%
+# for the point, rate model 89%; the "must ride all of the last 5 s" knife edge). Late in the bout the two are
+# equally accurate on WP (last minute 0.2250 vs 0.2242), so TJ chose: trees until 1:30 left, a linear handoff, the
+# rate model alone from 0:30 -- no jump in the line at a fixed second.
+RT_VARIANTS = {"hazard, era only": None, "hazard, riding-time lead": "rt", "hazard, lead 1-3 / 4-7 / 8+": "size3"}
+RT_TREE = "boosted trees (step 8)"
+RT_BLEND_RATE = "hazard, era only"
+BLEND_T = (90, 30)   # seconds left: the handoff starts / ends
+RT_BLEND = "trees, handing off to the rate model 1:30 → 0:30"
+RT_DEFAULT = RT_BLEND
+# step-8 trees: a_need / b_need = share of the remaining time A / B must still ride to reach 1:00; chc = who holds
+# the next choice; pend = a break state; monotone in rt_diff, A on top, margin and both needs
 RT_FEATS = ["rt_diff", "t_rem", "posc", "margin", "ei", "a_need", "b_need", "chc", "pend"]
-RT_CST_BY = {"monotone in margin": [1, 0, 1, 1, 0, -1, 1, 0, 0], "free in margin": [1, 0, 1, 0, 0, -1, 1, 0, 0]}
-RT_CST = RT_CST_BY["monotone in margin"]
-RT_FEATS_V1, RT_CST_V1 = ["rt_diff", "t_rem", "posc", "margin", "ei"], [1, 0, 1, 0, 0]  # steps 5-7 version
+RT_CST = [1, 0, 1, 1, 0, -1, 1, 0, 0]
 RT_NEED = C.RT_THRESHOLD
 
 
 def rt_frame(df, feats=RT_FEATS):
-    """Feature matrix for A's point, and the mirrored one (B's point)."""
+    """Feature matrix for A's point, and the mirrored one (B's point) -- step-8 trees only."""
     t = np.maximum(df["t_rem"].to_numpy(float), 1.0)
     rt = df["rt_diff"].to_numpy(float)
     c = {"rt_diff": rt, "t_rem": df["t_rem"].to_numpy(float), "posc": df["posc"].to_numpy(float),
@@ -166,23 +172,40 @@ def rt_frame(df, feats=RT_FEATS):
     return np.column_stack([c[f] for f in feats]), np.column_stack([mir.get(f, c[f]) for f in feats])
 
 
-def fit_rt(train, feats=RT_FEATS, cst=RT_CST):
+def make_blend(tree, rate):
+    return {"kind": "blend", "tree": tree, "rate": rate, "t_hi": BLEND_T[0], "t_lo": BLEND_T[1]}
+
+
+def fit_rt(train, variant=RT_DEFAULT):
+    """Fitted on the training bouts whose rebuilt riding time matches the official point."""
+    if variant == RT_BLEND:
+        return make_blend(fit_rt(train, RT_TREE), fit_rt(train, RT_BLEND_RATE))
     d = train[train["rt_model_ok"] == True]  # noqa: E712
+    if variant != RT_TREE:
+        prm = H.fit(d["bout_key"].unique(), RT_VARIANTS[variant])
+        prm["variant"] = variant
+        return prm
     clf = HistGradientBoostingClassifier(max_iter=300, learning_rate=0.08, max_leaf_nodes=31, min_samples_leaf=200,
-                                         monotonic_cst=cst, random_state=0)
-    clf.fit(rt_frame(d, feats)[0], (d["r"] == 1).to_numpy(int))
-    clf.wpa_feats = feats
+                                         monotonic_cst=RT_CST, random_state=0)
+    clf.fit(rt_frame(d)[0], (d["r"] == 1).to_numpy(int))
     return clf
 
 
-def rt_probs(clf, df):
-    """(pA, pN, pB) for each row: pA from the model, pB from the model on the mirrored state. Exact wherever the
-    clock decides it, per wrestler: 0 when he can no longer reach 1:00 even riding every remaining second, 1 when he
-    keeps it even if ridden every remaining second (spec 2.3's four-way status is coarser: 'live' also covers states
-    where only ONE wrestler can still reach it)."""
-    X, Xm = rt_frame(df, getattr(clf, "wpa_feats", RT_FEATS_V1))
-    pa = clf.predict_proba(X)[:, 1]
-    pb = clf.predict_proba(Xm)[:, 1]
+def rt_probs(model, df):
+    """(pA, pN, pB) for each row. Rate model (a params dict): exact by construction. Trees: pB = the model on the
+    mirrored state; exact wherever the clock decides it, per wrestler (0 when he can't reach 1:00 even riding every
+    remaining second, 1 when he keeps it even if ridden every remaining second)."""
+    if isinstance(model, dict) and model.get("kind") == "blend":
+        ta, _, tb = rt_probs(model["tree"], df)
+        ra, _, rb = rt_probs(model["rate"], df)
+        w = np.clip((model["t_hi"] - df["t_rem"].to_numpy(float)) / (model["t_hi"] - model["t_lo"]), 0, 1)
+        pa, pb = (1 - w) * ta + w * ra, (1 - w) * tb + w * rb
+        return pa, 1 - pa - pb, pb
+    if isinstance(model, dict):
+        return H.probs(model, df)
+    X, Xm = rt_frame(df)
+    pa = model.predict_proba(X)[:, 1]
+    pb = model.predict_proba(Xm)[:, 1]
     rt, t = df["rt_diff"].to_numpy(float), df["t_rem"].to_numpy(float)
     pa = np.where(rt - t >= RT_NEED, 1.0, np.where(rt + t >= RT_NEED, pa, 0.0))
     pb = np.where(rt + t <= -RT_NEED, 1.0, np.where(rt - t <= -RT_NEED, pb, 0.0))
@@ -437,9 +460,12 @@ def main():
         rot.append({"year": Y, "tr": (two["year"] != Y).to_numpy(), "ts": ts, "y": ts["win"].to_numpy(),
                     "n_bouts": ts["bout_key"].nunique(), "rt": {}, "fits": {}})
 
-    def rt_for(res, rows, var="monotone in margin"):
+    def rt_for(res, rows, var=RT_DEFAULT):
         if (rows, var) not in res["rt"]:
-            rtm = fit_rt(model_rows(two[res["tr"]], rows), cst=RT_CST_BY[var])
+            if var == RT_BLEND:
+                rtm = make_blend(rt_for(res, rows, RT_TREE)[0], rt_for(res, rows, RT_BLEND_RATE)[0])
+            else:
+                rtm = fit_rt(model_rows(two[res["tr"]], rows), var)
             res["rt"][(rows, var)] = (rtm, rt_probs(rtm, res["ts"]))
         return res["rt"][(rows, var)]
 
@@ -473,10 +499,13 @@ def main():
     # improve some variants more than others -- so variants within 0.001 of the best are scored again after them, at
     # their best k / k2, and the final choice is made on the model that is actually used (step 8: without this the
     # pooled key won by 0.0001 before projection and lost clearly after it)
+    # TJ (2026-09-29): only "margin and point kept apart" is eligible. The pooled key (margin + point) won held-out
+    # log loss by 0.001 in one rebuild and broke structurally (tied 0:30 on bottom -> 41%, 4.2% of scoring events
+    # lowering the scorer's WP), so it is scored for the report only
     best_pre = min(v[0] for v in best_by_variant.values())
     post = {}
     for v in VARIANTS:
-        if best_by_variant[v][0] > best_pre + 0.001:
+        if best_by_variant[v][0] > best_pre + 0.001 and v[0] != "m_r":
             continue
         kk = best_by_variant[v][1]
         tot = n = 0
@@ -486,13 +515,14 @@ def main():
             tot += logloss(wp_mixture(Pi_, res["ts"], rt_for(res, rows)[1], v[0]), res["y"]) * len(res["ts"])
             n += len(res["ts"])
         post[v] = tot / n
-    key, src = min(post, key=post.get)
+    key, src = min((v for v in post if v[0] == "m_r"), key=post.get)
     _, _, _, k, k2 = best_by_variant[(key, src)][1]
     print(f"after projections: {post}", flush=True)
 
-    # riding-time model: margin-monotone or free, judged on held-out WP of the chosen table (and on the point itself)
+    # riding-time model: the rate-model variants (and the step-8 trees for comparison), judged on held-out WP of the
+    # chosen table (and on the point itself); the choice is among the rate models -- the trees are reported only
     rt_cmp = {}
-    for var in RT_CST_BY:
+    for var in [RT_BLEND, RT_TREE] + list(RT_VARIANTS):
         tot = tot_rt = n = n_rt = 0
         for res in rot:
             if "Pi" not in res:
@@ -505,7 +535,7 @@ def main():
             tot_rt += logloss(rt_probs(rtm_, tt_)[0], (tt_["r"] == 1).to_numpy()) * len(tt_)
             n_rt += len(tt_)
         rt_cmp[var] = (tot / n, tot_rt / n_rt)
-    rt_var = min(rt_cmp, key=lambda v_: rt_cmp[v_][0])
+    rt_var = RT_BLEND   # TJ's choice (above); the table reports how it compares
     print(f"riding-time model: {rt_cmp} -> {rt_var}", flush=True)
 
     for res in rot:
@@ -517,7 +547,7 @@ def main():
         base = (train.loc[train["rt_model_ok"] == True, "r"] == 1).mean()  # noqa: E712
         res["rt_ll"] = logloss(rt_probs(rtm, tt)[0], (tt["r"] == 1).to_numpy())
         res["rt_base"] = logloss(np.full(len(tt), base), (tt["r"] == 1).to_numpy())
-        rt1 = fit_rt(train, RT_FEATS_V1, RT_CST_V1)  # the steps 5-7 riding-time model, for comparison
+        rt1 = rt_for(res, rows, RT_TREE)[0]  # the step-8 trees, for comparison
         res["rt_ll_v1"] = logloss(rt_probs(rt1, tt)[0], (tt["r"] == 1).to_numpy())
         ko = tt[(tt["pos"] == "A_top") & (tt["t_rem"] <= 15) & (RT_NEED - tt["rt_diff"] > 0)
                 & (RT_NEED - tt["rt_diff"] <= tt["t_rem"])]  # A on top, can still reach 1:00, last 15 s
@@ -552,7 +582,7 @@ def main():
 
     # ---- final fit on all data
     mr = model_rows(two, rows)
-    rtm = fit_rt(mr, cst=RT_CST_BY[rt_var])
+    rtm = fit_rt(mr, rt_var)
     td = table_data(mr, src)
     bs = fit_backstop(td, key)
     pbs = backstop_grid(bs, key)
@@ -573,7 +603,8 @@ def main():
                           "p_backstop": pbs.ravel(), "p_smooth": p_nb.ravel(), "w": w.ravel(),
                           "p_blend": P.ravel(), "p_state": Pi.ravel()})
     tabdf.to_parquet(MODEL / "state_table.parquet", index=False)
-    joblib.dump(rtm, MODEL / "rt_model.joblib")
+    joblib.dump(rtm, MODEL / "rt_model.joblib")                            # the blend (trees + rate parameters)
+    (MODEL / "rt_params.json").write_text(json.dumps(rtm["rate"], indent=1))  # the rate model, readable
     joblib.dump(bs, MODEL / "backstop.joblib")
     params = {"table_key": key, "table_data": src, "table_rows": rows, "table_rows_desc": ROW_SETS[rows],
               "k": k, "k2": k2, "p_emp_weighting": "per moment",
@@ -581,7 +612,10 @@ def main():
               "margin_clamp": M, "t_bin_sec": 10, "sample_times": "420, then 415, 405, ... 5 (bin centres)",
               "neighbours": "margin +/-1, t_bin +/-1, diagonal weight 0.5",
               "eras": "E12 = 2015-2023, E3 = 2024-2026", "rt_threshold_sec": C.RT_THRESHOLD,
-              "rt_model_features": RT_FEATS, "rt_model_variant": rt_var, "rt_model_monotone": RT_CST_BY[rt_var],
+              "rt_model": "blend: step-8 boosted trees until 1:30 left, linear handoff, rate model (rt_hazard.py, "
+                          "parameters in rt_params.json) alone from 0:30; rt_model.joblib holds both",
+              "rt_blend_seconds": list(BLEND_T),
+              "rt_model_variant": rt_var,
               "validation": "rotate within E3: train on two of 2024-26 (+ all E12), test on the third year's NCAA bouts",
               "built": time.strftime("%Y-%m-%d")}
     (MODEL / "model_params.json").write_text(json.dumps(params, indent=2))
@@ -594,41 +628,48 @@ def main():
       "scores 0.693). No strength layer yet (step 7): every number here uses the match state alone.\n")
 
     A("## Riding-time point model\n")
-    A("Boosted trees on riding-time differential, time left, position, margin and era; monotone in the differential "
-      "and in A being on top; B's probability = the model on the mirrored state; locked states exact. Fitted on all "
-      "eras (chosen moments, below), bouts whose rebuilt riding time matches the actual point. Held-out log loss for "
-      "\"does A get the point\" "
-      "vs a constant base rate: " + ", ".join(f"{r['year']}: {r['rt_ll']:.3f} vs {r['rt_base']:.3f}" for r in rot) +
-      ".\n")
-    A("Step 8 revised it (features: the share of the remaining time each wrestler must still ride to reach 1:00, who "
-      "holds the next choice, break state; exact per wrestler whenever the clock decides it; monotone in the riding-time "
-      f"differential and in both wrestlers' remaining need; {rt_var}, chosen on held-out WP below). "
-      "Held-out log loss, steps 5–7 version → now: " + ", ".join(
-          f"{r['year']}: {r['rt_ll_v1']:.4f} → {r['rt_ll']:.4f}" for r in rot) + "."
-      + (" The steps 5–7 version was free in margin, so it fits the point itself better; the margin constraint "
-         "costs that accuracy and buys held-out WP." if rt_var == "monotone in margin" else "")
-      + " The knife edge it was missing — "
-      "A on top in the last 15 s, still able to reach 1:00 only by riding most of what's left:\n")
+    A("**A blend (TJ, after step 9):** the step-8 boosted trees until 1:30 left in the bout, a linear handoff, and the "
+      "rate model alone from 0:30. The rate model (`scripts/wpa/rt_hazard.py`): per second, the bottom man escapes "
+      "(+1) or reverses (+2), the top man scores near-fall points, either wrestler takes the other down in neutral "
+      "(+2, +3 from 2024), or the bout ends by fall / injury / DQ; a margin of 15 is a tech fall. Rates come from the "
+      "play-by-play (events ÷ seconds in that position), by era; period picks and the toss winner's defer share the "
+      "same way. An exact dynamic program over the rest of regulation (position × margin × riding-time differential, "
+      "second by second) gives P(A's point), P(nobody), P(B's point) — monotone and exact at the locks by "
+      "construction.\n")
+    A("Why a blend: the rate model predicts the point itself better, but the trees give the better held-out WIN "
+      "probability overall — every rate-model variant tried (era only, by margin, by riding-time lead) lost WP accuracy "
+      "early in bouts. In the last minute the two are equally accurate on WP, and the rate model gets the late states "
+      "a fan can check by hand right (tied 2-2, 0:43 left, +1:01 riding time: trees 58% for the point, rate model "
+      "89%; the \"must ride all of the last 5 s\" knife edge). The gradual handoff avoids a jump in the line at a "
+      "fixed second. Held-out log loss for \"does A get the point\" (blend) vs a constant base rate: "
+      + ", ".join(f"{r['year']}: {r['rt_ll']:.3f} vs {r['rt_base']:.3f}" for r in rot) + ".\n")
+    A("| Riding-time model | Held-out WP log loss | Held-out log loss, the point itself |\n|---|---:|---:|")
+    for v_, (a_, b_) in rt_cmp.items():
+        A(f"| {'**' + v_ + '** (used)' if v_ == rt_var else v_} | {a_:.4f} | {b_:.4f} |")
+    A("")
+    A("The knife edge the trees kept missing — A on top in the last 15 s, still able to reach 1:00 only by riding "
+      "most of what's left (held out):\n")
     ko = pd.concat([r["ride_out"] for r in rot], ignore_index=True)
     ko["need"] = pd.cut((RT_NEED - ko["rt_diff"]) / ko["t_rem"], [0, 0.5, 0.8, 1.0],
                         labels=["under half", "half to 80%", "80% to all of it"])
-    A("| Share of remaining time A must ride | Samples | Actual share with A's point | Steps 5–7 model | Now |")
+    A("| Share of remaining time A must ride | Samples | Actual share with A's point | Step-8 trees | Blend (= rate model here) |")
     A("|---|---:|---:|---:|---:|")
     for lab, d in ko.groupby("need", observed=True):
         A(f"| {lab} | {len(d):,} | {100 * (d['r'] == 1).mean():.0f}% | {100 * d['p_old'].mean():.0f}% | "
           f"{100 * d['p_new'].mean():.0f}% |")
-    A("\nMonotone in margin or not? Free fits the point itself better (a big lead often ends in a tech fall with no "
-      "point awarded), monotone keeps WP increasing in margin. Judged on held-out WP of the chosen table:\n")
-    A("| Riding-time model | Held-out WP log loss | Held-out log loss, the point itself |\n|---|---:|---:|")
-    for v_, (a_, b_) in rt_cmp.items():
-        A(f"| {v_} | {a_:.4f} | {b_:.4f} |")
-    A(f"\n**Chosen:** {rt_var}.\n")
     hp["t_grp"] = pd.cut(hp["t_rem"], [0, 30, 60, 120, 240, 420],
                          labels=["0:01–0:30", "0:31–1:00", "1:01–2:00", "period 2", "period 1"])
     A("| Time left | Samples | Predicted share with A's point | Actual |\n|---|---:|---:|---:|")
     for grp, d in hp.groupby("t_grp", observed=True):
         A(f"| {grp} | {len(d):,} | {100 * d['pa'].mean():.1f}% | {100 * (d['r'] == 1).mean():.1f}% |")
     A("")
+    A("Rate model, fitted rates (final fit, per minute of wrestling in that position):\n")
+    A("| Era | Escape | Reversal | Near fall | Takedown (per wrestler) |\n|---|---:|---:|---:|---:|")
+    for eg in H.ERAS:
+        pe_ = rtm["rate"]["eras"][eg]
+        A(f"| {eg} | " + " | ".join(f"{60 * pe_[x]['0']:.2f}" for x in ("escape", "reversal", "near_fall", "takedown"))
+          + " |")
+    A("\nPeriod picks, the defer share and early-end rates are in `rt_params.json`.\n")
 
     A("## Which moments feed the model (added in step 8)\n")
     A("Spec 3.1 builds the table from the 10-second samples plus the state just before and just after every event. "
@@ -725,7 +766,7 @@ def main():
     A(f"- Symmetry: max |WP(S) + WP(mirror S) − 1| over the whole table = {sym_err:.2e}.")
     A("- Files: `data/wpa/model/state_table.parquet` (every cell: `n_obs`, `n_matches`, `p_emp`, `p_emp_match`, "
       "`p_backstop`, `p_smooth` = neighbours + backstop, `w`, `p_blend`, `p_state` = after monotonicity; `rt_point` = "
-      "the eventual riding-time point the cell is conditioned on), `rt_model.joblib`, `backstop.joblib`, "
+      "the eventual riding-time point the cell is conditioned on), `rt_model.joblib` (the blend), `rt_params.json` (its rate model), `backstop.joblib`, "
       "`model_params.json`.\n")
 
     A("## A few states (final model, no strength layer)\n")

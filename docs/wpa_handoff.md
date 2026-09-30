@@ -147,35 +147,14 @@ spec 3.1, and TJ was told.
 
 ---
 
-## 5. NEXT: simplify the riding-time point model (TJ said go, before step 10)
+## 5. DONE (2026-09-29): riding-time point model = trees + rate-model blend
 
-**Why:** `fit_state_model.fit_rt` / `rt_probs` is a boosted-tree classifier on 9 features: rt_diff, t_rem, posc, margin,
-ei, a_need, b_need, chc, pend. It uses monotone constraints (`RT_CST_BY`), and `RT_FEATS_V1` is the old version kept for
-comparison. The trees don't know the physics, so they needed patch after patch and still miss the knife edge. TJ wants it
-simple and explainable.
-
-**Build:** compute P(A gets the point), P(nobody), P(B gets the point) from a few per-era rates:
-- Per-second hazards: bottom man escapes, bottom man reversed-to-top, neutral → takedown (by either wrestler). Estimate
-  them from `data/wpa/states/*_events.csv` + samples, as event counts ÷ seconds in that position, by era (E12 / E3).
-  Consider letting them vary mildly with margin sign (a leader rides harder, a trailer cuts), but only if held-out WP says so.
-- Period breaks: the share of each pick (top / bottom / neutral) by the chooser's margin, or use the recorded choice when
-  the state already knows it (choice holder `chc`, break states `pending_*`).
-- Then P(final rt_diff ≥ 60) and P(≤ −60) by exact dynamic programming over the remaining seconds (positions × rt_diff on a
-  1-s grid) or a fast closed-form approximation. The lock logic stays exact: already locked means 0 or 1. This makes it
-  monotone by construction and gets the knife edge right ("ride 5 more seconds" ≈ P(no escape in 5 s)).
-- Caveat: bouts that end early (fall or tech fall) are labelled r = none in the data. T(S, r) cells already absorb this;
-  check that the simple model's "nobody" share at big leads isn't badly off. If it is, fold in an early-end rate by margin.
-
-**Wire it in:** keep the same interface, `rt_probs(model, df) -> (pA, pN, pB)`, so `wp_mixture`, `fit_strength.state_model_wp`,
-the tie model, `wp_model.WPModel` and `compute_wpa` all keep working. Save the parameters in a small JSON, not a joblib.
-
-**Test:** a head-to-head in `fit_state_model` using the existing held-out WP comparison (the same place "monotone in margin"
-vs "free in margin" is compared now; see `rt_cmp` in `main()`), plus the knife-edge table and the step-8 hand checks.
-Keep the simple one if held-out WP is equal or only slightly worse; TJ prefers simple and explainable. Then rerun the full
-chain (~30 min), check `validation.md` (hand checks, monotonicity, negative WPA) and `wpa.md`, update the "Changes made in
-step 8" paragraph and step table in `docs/matsavant.md`, and commit locally.
-
----
+Built `scripts/wpa/rt_hazard.py` (rate model + exact dynamic program). It predicts the point better but the WINNER
+worse than the trees early in bouts, so TJ chose a blend: trees until 1:30 left, linear handoff, rate model alone from
+0:30. Held-out WP equal to the trees, 7 of 7 hand checks, no seam. The pooled table key is no longer eligible (it broke
+structurally when it briefly won). Full record: `docs/matsavant.md`, "Changes after step 9". `rt_model.joblib` now
+holds the blend (a dict: tree + rate params + handoff seconds); `rt_params.json` is the rate model alone. Chain time is
+~35 min now (the trees are refit in every seed-layer fold). Example charts: `scripts/wpa/plot_wp_cards.py`.
 
 ## 6. Then step 10 — conference tournaments (spec Section 9, step 10)
 
@@ -195,6 +174,8 @@ step 8" paragraph and step table in `docs/matsavant.md`, and commit locally.
   Generalise it to `--kind conf|both`, with rank in place of seed for conference.
 
 ## 7. Then step 11 — final outputs (spec Section 8)
+
+(Example charts started: `scripts/wpa/plot_wp_cards.py`, ESPN-style cards — finals by year or one wrestler's run.)
 
 The spec wants, in "outputs/" (we use `data/wpa/output/`):
 - `state_table.parquet` — exists in `data/wpa/model/`; copy or link it.

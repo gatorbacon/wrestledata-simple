@@ -13,29 +13,12 @@
   "neighbours": "margin +/-1, t_bin +/-1, diagonal weight 0.5",
   "eras": "E12 = 2015-2023, E3 = 2024-2026",
   "rt_threshold_sec": 60,
-  "rt_model_features": [
-    "rt_diff",
-    "t_rem",
-    "posc",
-    "margin",
-    "ei",
-    "a_need",
-    "b_need",
-    "chc",
-    "pend"
+  "rt_model": "blend: step-8 boosted trees until 1:30 left, linear handoff, rate model (rt_hazard.py, parameters in rt_params.json) alone from 0:30; rt_model.joblib holds both",
+  "rt_blend_seconds": [
+    90,
+    30
   ],
-  "rt_model_variant": "monotone in margin",
-  "rt_model_monotone": [
-    1,
-    0,
-    1,
-    1,
-    0,
-    -1,
-    1,
-    0,
-    0
-  ],
+  "rt_model_variant": "trees, handing off to the rate model 1:30 \u2192 0:30",
   "validation": "rotate within E3: train on two of 2024-26 (+ all E12), test on the third year's NCAA bouts",
   "built": "2026-09-29"
 }

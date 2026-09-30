@@ -73,7 +73,7 @@ ALPHA_FORMS = {"none": "none (spec 5.4 as written)", "const": "one constant α",
 def state_model_wp(train, test, params, return_probs=False):
     key, src, k, k2 = params["table_key"], params["table_data"], params["k"], params["k2"]
     train = F.model_rows(train, params.get("table_rows", "all"))
-    rtm = F.fit_rt(train, cst=params.get("rt_model_monotone", F.RT_CST))
+    rtm = F.fit_rt(train, params.get("rt_model_variant", F.RT_DEFAULT))
     td = F.table_data(train, src)
     arr = F.table_arrays(td, key)
     pbs = F.backstop_grid(F.fit_backstop(td, key), key)
@@ -83,7 +83,7 @@ def state_model_wp(train, test, params, return_probs=False):
     return (p, probs) if return_probs else p
 
 
-OOF_KEYS = ["table_key", "table_data", "table_rows", "k", "k2"]
+OOF_KEYS = ["table_key", "table_data", "table_rows", "k", "k2", "rt_model_variant"]
 OOF_COLS = ["bout_key", "persp", "source", "year", "era_group", "t_rem", "period", "margin", "pos", "choice", "posc",
             "chc", "rt_diff", "rt_status", "ei", "win", "went_to_ot"]
 

@@ -10,16 +10,16 @@ Leave-one-tournament-out (each NCAA year held out in turn; β0, γ and β_ot ref
 
 | Scale | Pool size N | Unseeded = seed | Held-out log loss |
 |---|---:|---:|---:|
-| normal quantile | 50 | 22 | 0.3959 |
-| normal quantile | 60 | 22 | 0.3959 |
-| normal quantile | 80 | 22 | 0.3960 |
+| normal quantile | 50 | 22 | 0.3958 |
+| normal quantile | 60 | 22 | 0.3958 |
+| normal quantile | 80 | 22 | 0.3959 |
 | normal quantile | 50 | 20 | 0.3960 |
 | normal quantile | 60 | 20 | 0.3960 |
 | normal quantile | 60 | 25 | 0.3960 |
-| normal quantile | 100 | 22 | 0.3961 |
-| normal quantile | 80 | 25 | 0.3961 |
+| normal quantile | 100 | 22 | 0.3960 |
+| normal quantile | 80 | 25 | 0.3960 |
 
-Best normal quantile: 0.3959 (N = 50, unseeded = 22).
+Best normal quantile: 0.3958 (N = 50, unseeded = 22).
 
 Best log rank: 0.3968 (N = —, unseeded = 25).
 
@@ -33,9 +33,9 @@ The state table is learned from all bouts, and in them the wrestler who leads is
 
 | α | Held-out log loss | 2024–26 | Slope, all | Slope, both unseeded | Slope, small gap | Slope, big gap |
 |---|---:|---:|---:|---:|---:|---:|
-| none (spec 5.4 as written) | 0.3959 | 0.4191 | 0.885 | 0.769 | 0.809 | 0.960 |
-| one constant α | 0.3934 | 0.4155 | 0.997 | 0.934 | 0.949 | 1.039 |
-| α changes with the clock: a0 + a2·(share of regulation elapsed) | 0.3928 | 0.4145 | 0.997 | 0.943 | 0.949 | 1.037 |
+| none (spec 5.4 as written) | 0.3958 | 0.4192 | 0.886 | 0.769 | 0.810 | 0.961 |
+| one constant α | 0.3934 | 0.4155 | 0.997 | 0.933 | 0.949 | 1.039 |
+| α changes with the clock: a0 + a2·(share of regulation elapsed) | 0.3928 | 0.4146 | 0.997 | 0.942 | 0.949 | 1.037 |
 
 **Chosen:** α changes with the clock: a0 + a2·(share of regulation elapsed).
 
@@ -45,34 +45,34 @@ Each E3 year held out; fitted on the rest with one β0 for all years vs an extra
 
 | Held-out year | One β0 | E3 multiplier | Multiplier fitted |
 |---|---:|---:|---:|
-| 2024 | 0.4126 | 0.4120 | 0.88 |
-| 2025 | 0.4109 | 0.4116 | 0.83 |
-| 2026 | 0.4201 | 0.4192 | 0.90 |
+| 2024 | 0.4125 | 0.4119 | 0.88 |
+| 2025 | 0.4110 | 0.4117 | 0.83 |
+| 2026 | 0.4203 | 0.4193 | 0.90 |
 
 **It helps on held-out E3 years, so E3 gets its own β0.**
 
 ## Fitted parameters (all NCAA years)
 
-- β0 = 1.556, γ = 0.613 (spec expected γ near 1), β_ot = 0.505; E3 (2024–26) seed effect × 0.87 (one β0 for all years would be 1.498, γ 0.618); α = 0.644 + 0.320·(share of regulation elapsed).
+- β0 = 1.556, γ = 0.613 (spec expected γ near 1), β_ot = 0.505; E3 (2024–26) seed effect × 0.87 (one β0 for all years would be 1.498, γ 0.618); α = 0.641 + 0.328·(share of regulation elapsed).
 - Rank signal examples: 1 vs 16 = 1.83, 1 vs 33 = 2.71, 8 vs 9 = 0.08, 16 vs unseeded = 0.32.
-- α (weight on the state model's log-odds): 7:00 left 0.64, 4:00 0.78, 2:00 0.87, 0:00 0.96.
+- α (weight on the state model's log-odds): 7:00 left 0.64, 4:00 0.78, 2:00 0.88, 0:00 0.97.
 - Seed effect in log-odds as the clock runs, 1 vs 16 in 2024–26: 7:00 2.48, 4:00 1.76, 2:00 1.15, 1:00 0.75, 0:10 0.25.
 
 ## Held out by year
 
 | Year | State model alone | With seeds (final form) |
 |---|---:|---:|
-| 2015 | 0.4508 | 0.4074 |
-| 2016 | 0.4489 | 0.4044 |
+| 2015 | 0.4505 | 0.4071 |
+| 2016 | 0.4490 | 0.4045 |
 | 2017 | 0.4133 | 0.3609 |
 | 2018 | 0.4154 | 0.3727 |
-| 2019 | 0.4234 | 0.3720 |
-| 2021 | 0.4350 | 0.3902 |
-| 2022 | 0.4662 | 0.3852 |
-| 2023 | 0.4530 | 0.3850 |
-| 2024 | 0.4647 | 0.4120 |
-| 2025 | 0.4697 | 0.4116 |
-| 2026 | 0.4632 | 0.4192 |
+| 2019 | 0.4233 | 0.3719 |
+| 2021 | 0.4349 | 0.3902 |
+| 2022 | 0.4661 | 0.3852 |
+| 2023 | 0.4528 | 0.3848 |
+| 2024 | 0.4646 | 0.4119 |
+| 2025 | 0.4698 | 0.4117 |
+| 2026 | 0.4633 | 0.4193 |
 | **All** | 0.4458 | **0.3928** |
 
 Full calibration, by bucket and by slice: `validation.md` (step 8).
@@ -83,7 +83,7 @@ Full calibration, by bucket and by slice: `validation.md` (step 8).
 |---|---:|---:|---:|
 | 1 seed vs 16 seed, tied, 7:00 left | 50.0% | 9.8% | 92.9% |
 | 8 vs 9, tied, 7:00 left | 50.0% | 9.8% | 52.9% |
-| 1 seed vs 16 seed, 1 seed down 3, 0:10 left, neutral | 3.3% | 0.9% | 4.8% |
+| 1 seed vs 16 seed, 1 seed down 3, 0:10 left, neutral | 3.3% | 0.9% | 4.7% |
 | 1 seed vs 16 seed, tied, 0:05 left, neutral | 50.0% | 94.1% | 73.8% |
-| Both unseeded, A up 3, 1:00 left, neutral | 90.4% | 4.3% | 88.7% |
+| Both unseeded, A up 3, 1:00 left, neutral | 90.4% | 4.3% | 88.8% |
 
