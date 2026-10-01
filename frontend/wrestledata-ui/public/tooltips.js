@@ -69,12 +69,12 @@ function addTooltip(element, text) {
 // Tooltip definitions
 const TOOLTIPS = {
   'xtp': 'Expected NCAA tournament points from a 10,000-trial Monte Carlo simulation of the bracket.',
-  'mv': 'DPG — extra dual points per match vs what a typical wrestler gets against that same opponent.',
+  'mv': 'DPG (Dual Points Gained): the extra dual points per match vs. what a typical wrestler gets against that same opponent.',
   'xtp-p': 'Expected placement points.',
   'xtp-a': 'Expected advancement points.',
   'xtp-b': 'Expected bonus points.',
   'threshold': 'Minimum match threshold increases as the season progresses to ensure ranking stability.',
-  'dpg-trajectory': 'Each bar is one match: the extra dual points scored vs. what a typical wrestler gets against that same opponent. Green = won and beat that benchmark, red = lost and fell short of it, grey = won but fell short, or lost but beat it. The solid line is the average of the last 5 matches; the dashed line is the season (or career) average.',
+  'dpg-trajectory': 'Dual Points Gained, match by match. Each bar is one match: the extra dual points scored vs. what a typical wrestler gets against that same opponent. Green = won and beat that benchmark, red = lost and fell short of it, grey = won but fell short, or lost but beat it. The solid line is the average of the last 5 matches; the dashed line is the season (or career) average.',
   'hodge': 'Blends win record, quality of competition, dominance (avg team points per match), and pin rate into one score. Eligibility requires a top-3 weight-class rank and a strong win percentage.'
 };
 
