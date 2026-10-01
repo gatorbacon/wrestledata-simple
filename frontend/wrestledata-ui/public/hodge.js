@@ -180,7 +180,7 @@ function renderRowInto(tbody, row) {
   const nameEl = row.wrestler_id
     ? Object.assign(document.createElement("a"), {
         className: "hg-wrestler-name",
-        href: `/wrestler.html?id=${row.wrestler_id}`,
+        href: `/wrestler.html?id=${row.wrestler_id}&view=season`,
         textContent: row.name,
       })
     : Object.assign(document.createElement("span"), {

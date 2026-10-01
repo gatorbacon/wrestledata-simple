@@ -6669,3 +6669,10 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
 .wp2m-chip--career {
   font-weight: 700;
 }
+
+/* Desktop header career line under the season line (2026-10-01). */
+.wp2-career-line {
+  margin-top: 2px;
+  font-size: 0.92em;
+  opacity: 0.8;
+}

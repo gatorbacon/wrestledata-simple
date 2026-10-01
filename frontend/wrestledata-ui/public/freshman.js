@@ -131,7 +131,7 @@ async function renderFreshmanTable(data) {
     // Name link (teal, already styled)
     if (row.wrestler_id) {
       const nameLink = document.createElement("a");
-      nameLink.href = `/wrestler.html?id=${row.wrestler_id}`;
+      nameLink.href = `/wrestler.html?id=${row.wrestler_id}&view=season`;
       nameLink.textContent = safe(row.name);
       nameTd.appendChild(nameLink);
     } else {

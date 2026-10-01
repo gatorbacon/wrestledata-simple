@@ -368,7 +368,7 @@ function renderLeaderboard(data) {
     const nameTd = document.createElement("td");
     nameTd.className = "name";
     const a = document.createElement("a");
-    a.href = `/wrestler.html?id=${entry.wrestler_id}`;
+    a.href = `/wrestler.html?id=${entry.wrestler_id}&view=season`;
     a.textContent = entry.name;
     nameTd.appendChild(a);
     tr.appendChild(nameTd);

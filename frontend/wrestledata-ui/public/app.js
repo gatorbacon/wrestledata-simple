@@ -319,13 +319,57 @@ function showCareer(data) {
   });
 }
 
+// Which view the page opens on (TJ, 2026-10-01):
+//   ?view=career / ?view=season   -> that view (season-scoped lists -- match
+//                                     histories, team rosters, leaderboards --
+//                                     link with view=season)
+//   otherwise: career if the wrestler's career is over (his latest season is
+//   before the site's current season) and the link points at that latest
+//   season; else the linked season. Active wrestlers open on their season.
+// Needs 2+ seasons for a career view.
+let _initialView = "season";
+
+function pickInitialView(data) {
+  const summary = data.season_summary || [];
+  if (summary.length < 2) return "season";
+  const view = new URLSearchParams(location.search).get("view");
+  if (view === "career" || view === "season") return view;
+  const latest = Math.max(...summary.map(s => Number(s.season)));
+  const current = Number((_knownSeasonsCache || [])[0] || latest);
+  return latest < current && Number(data.year) === latest ? "career" : "season";
+}
+
 function renderProfile(data) {
+  _initialView = pickInitialView(data);
   renderHeader(data);
+  renderCareerHeaderLine(data);
   renderMobileIdentity(data);
   renderMobileSeasonChips(data);
   _currentSeasonProfile = data;
   renderSeasonSelector(data);
-  renderSeasonBody(data);
+  if (_initialView === "career") {
+    buildCareerProfile(data).then(cp => cp ? showCareer(data) : renderSeasonBody(data));
+  } else {
+    renderSeasonBody(data);
+  }
+}
+
+// Desktop header: one career line under the season line (phones already have
+// their own, wp2m-career-line). Only for 2+ seasons.
+function renderCareerHeaderLine(data) {
+  const el = document.getElementById("wrestler-career-line");
+  if (!el) return;
+  el.hidden = true;
+  buildCareerProfile(data).then(cp => {
+    if (!cp) return;
+    const m = cp.metrics;
+    const parts = [`Career: ${cp.record.overall.replace("-", "–")}`];
+    if (m.mat_value.mv_avg !== null) parts.push(`${fmtDpg(m.mat_value.mv_avg)} DPG`);
+    if (m.bonus_rate !== null) parts.push(`${Math.round(m.bonus_rate * 100)}% bonus`);
+    parts.push(`${cp.seasons.length} seasons`);
+    el.textContent = parts.join(" · ");
+    el.hidden = false;
+  });
 }
 
 // ===============================
@@ -489,7 +533,7 @@ function renderMobileSeasonChips(data) {
     chip.className = "wp2m-chip";
     chip.dataset.wrestlerId = String(s.wrestler_id);
     chip.textContent = safe(s.season);
-    if (String(s.wrestler_id) === String(data.wrestler_id)) chip.classList.add("active");
+    if (_initialView !== "career" && String(s.wrestler_id) === String(data.wrestler_id)) chip.classList.add("active");
     chip.addEventListener("click", () => {
       if (chip.classList.contains("active")) return;
       fetchSeasonProfile(s.season, s.wrestler_id).then(seasonData => {
@@ -511,6 +555,7 @@ function renderMobileSeasonChips(data) {
     chip.className = "wp2m-chip wp2m-chip--career";
     chip.dataset.wrestlerId = "career";
     chip.textContent = "Career";
+    if (_initialView === "career" && _currentSeasonProfile && _currentSeasonProfile._career) chip.classList.add("active");
     chip.addEventListener("click", () => { if (!chip.classList.contains("active")) showCareer(data); });
     row.appendChild(chip);
   });
@@ -664,7 +709,7 @@ async function renderSeasonSelector(data) {
     const tr = document.createElement("tr");
     tr.className = "season-row";
     tr.dataset.wrestlerId = String(s.wrestler_id);
-    if (String(s.wrestler_id) === String(data.wrestler_id)) tr.classList.add("season-row--active");
+    if (_initialView !== "career" && String(s.wrestler_id) === String(data.wrestler_id)) tr.classList.add("season-row--active");
 
     const cells = [
       safe(s.season),
@@ -736,6 +781,7 @@ async function renderSeasonSelector(data) {
   if (cp) {
     const tr = document.createElement("tr");
     tr.className = "season-row season-row--career";
+    if (_currentSeasonProfile && _currentSeasonProfile._career) tr.classList.add("season-row--active");
     tr.dataset.wrestlerId = "career";
     const m = cp.metrics;
     [["Career", ""], [`${cp.seasons.length} seasons (${cp.yearsLabel})`, ""], ["", ""], ["", "num"],
@@ -1428,7 +1474,7 @@ function renderMatchHistory(matches, seasons) {
     oppTd.className = "name-cell";
     if (match.opponent_id) {
       const a = document.createElement("a");
-      a.href = `/wrestler.html?id=${match.opponent_id}`;
+      a.href = `/wrestler.html?id=${match.opponent_id}&view=season`;
       a.textContent = safe(match.opponent_name);
       oppTd.appendChild(a);
     } else {
@@ -1538,7 +1584,7 @@ function renderMobileMatchList(matches, season, seasons) {
     const fullName = safe(match.opponent_name);
     const rankHtml = match.opponent_rank ? `<span class="wp2m-match-rank">#${match.opponent_rank}</span> ` : "";
 
-    const href = match.opponent_id ? `/wrestler.html?id=${match.opponent_id}` : null;
+    const href = match.opponent_id ? `/wrestler.html?id=${match.opponent_id}&view=season` : null;
     const tag = href ? "a" : "div";
     const hrefAttr = href ? ` href="${href}"` : "";
 

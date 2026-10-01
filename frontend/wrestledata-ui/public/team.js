@@ -134,7 +134,7 @@ function renderWrestlerCell(profile, rank) {
   if (profile?.wrestler_id) {
     const a = document.createElement("a");
     a.className = "tp2-wrestler-name";
-    a.href = `/wrestler.html?id=${profile.wrestler_id}`;
+    a.href = `/wrestler.html?id=${profile.wrestler_id}&view=season`;
     a.textContent = profile.name || "Unknown";
     textWrap.appendChild(a);
   } else {
