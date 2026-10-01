@@ -37,6 +37,13 @@ function hideTooltip(tooltipEl) {
 
 function addTooltip(element, text) {
   if (!element || !text) return;
+
+  // Info icons are handled by the tap/click popover below (works on touch
+  // screens and for icons rendered after page load). Just remember the text.
+  if (element.classList.contains('tooltip-icon')) {
+    element.dataset.tooltipText = text;
+    return;
+  }
   
   // Don't add if already has tooltip
   if (element.querySelector('.tooltip')) return;
@@ -67,25 +74,128 @@ const TOOLTIPS = {
   'xtp-a': 'Expected advancement points.',
   'xtp-b': 'Expected bonus points.',
   'threshold': 'Minimum match threshold increases as the season progresses to ensure ranking stability.',
+  'dpg-trajectory': 'Each bar is one match: the extra dual points scored vs. what a typical wrestler gets against that same opponent. Green = won and beat that benchmark, red = lost and fell short of it, grey = won but fell short, or lost but beat it. The solid line is the average of the last 5 matches; the dashed line is the season (or career) average.',
   'hodge': 'Blends win record, quality of competition, dominance (avg team points per match), and pin rate into one score. Eligibility requires a top-3 weight-class rank and a strong win percentage.'
 };
 
-// Initialize tooltips on page load
-document.addEventListener('DOMContentLoaded', () => {
-  // Handle tooltip icons - these are the primary trigger pattern
-  document.querySelectorAll('.tooltip-icon[data-tooltip]').forEach(icon => {
-    const key = icon.getAttribute('data-tooltip');
-    if (TOOLTIPS[key]) {
-      addTooltip(icon, TOOLTIPS[key]);
-    }
-  });
-  
-  // Handle elements with data-tooltip attribute (legacy support, should be converted to icons)
-  document.querySelectorAll('[data-tooltip]:not(.tooltip-icon)').forEach(el => {
-    const key = el.getAttribute('data-tooltip');
-    if (TOOLTIPS[key] && !el.closest('.tooltip-icon')) {
-      addTooltip(el, TOOLTIPS[key]);
-    }
-  });
-});
+// Info-icon popover (2026-10-01). Every `.tooltip-icon[data-tooltip]` on
+// the page -- including ones a page script renders later (the profile's DPG
+// icons) -- opens one shared popover: tap/click toggles it (phones have no
+// hover), hover previews it on mouse devices, Escape / tapping elsewhere /
+// scrolling closes it. Text: the icon's data-tooltip-text (set by
+// addTooltip, e.g. page-specific keys) or TOOLTIPS[data-tooltip].
+(function () {
+  let pop = null;
+  let current = null;
+  let pinned = false;
+  const canHover = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
+  function iconFrom(target) {
+    const icon = target && target.closest ? target.closest('.tooltip-icon[data-tooltip]') : null;
+    return icon && textFor(icon) ? icon : null;
+  }
+  function textFor(icon) {
+    return icon.dataset.tooltipText || TOOLTIPS[icon.getAttribute('data-tooltip')] || '';
+  }
+  function prepare(icon) {
+    if (icon.dataset.tooltipReady) return;
+    icon.dataset.tooltipReady = '1';
+    icon.setAttribute('role', 'button');
+    icon.setAttribute('tabindex', '0');
+    icon.setAttribute('aria-label', 'What is this?');
+    icon.setAttribute('aria-expanded', 'false');
+  }
+  function open(icon, pin) {
+    if (!pop) {
+      pop = document.createElement('div');
+      pop.className = 'tooltip-popover';
+      pop.id = 'tooltip-popover';
+      pop.setAttribute('role', 'tooltip');
+      document.body.appendChild(pop);
+    }
+    if (current && current !== icon) current.setAttribute('aria-expanded', 'false');
+    current = icon;
+    pinned = pin;
+    pop.textContent = textFor(icon);
+    pop.style.display = 'block';
+    icon.setAttribute('aria-expanded', 'true');
+    icon.setAttribute('aria-describedby', 'tooltip-popover');
+    place(icon);
+  }
+  function place(icon) {
+    const r = icon.getBoundingClientRect();
+    const vw = document.documentElement.clientWidth;
+    const vh = window.innerHeight;
+    pop.style.left = '0px';
+    pop.style.top = '0px';
+    const w = pop.offsetWidth;
+    const h = pop.offsetHeight;
+    const left = Math.min(Math.max(8, r.left + r.width / 2 - w / 2), vw - w - 8);
+    const below = r.bottom + 8;
+    const top = (below + h > vh - 8 && r.top - 8 - h > 8) ? r.top - 8 - h : below;
+    pop.style.left = left + 'px';
+    pop.style.top = top + 'px';
+  }
+  function close() {
+    if (pop) pop.style.display = 'none';
+    if (current) {
+      current.setAttribute('aria-expanded', 'false');
+      current.removeAttribute('aria-describedby');
+    }
+    current = null;
+    pinned = false;
+  }
+
+  document.addEventListener('click', e => {
+    const icon = iconFrom(e.target);
+    if (!icon) {
+      if (current && !(pop && pop.contains(e.target))) close();
+      return;
+    }
+    // Icons sit inside sortable headers and clickable rows: don't trigger those.
+    e.preventDefault();
+    e.stopPropagation();
+    prepare(icon);
+    if (current === icon && pinned) close();
+    else open(icon, true);
+  }, true);
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { close(); return; }
+    const icon = iconFrom(e.target);
+    if (icon && (e.key === 'Enter' || e.key === ' ')) {
+      e.preventDefault();
+      if (current === icon && pinned) close();
+      else open(icon, true);
+    }
+  });
+
+  if (canHover) {
+    document.addEventListener('mouseover', e => {
+      const icon = iconFrom(e.target);
+      if (!icon) return;
+      prepare(icon);
+      if (!pinned) open(icon, false);
+    });
+    document.addEventListener('mouseout', e => {
+      const icon = iconFrom(e.target);
+      if (icon && icon === current && !pinned && !icon.contains(e.relatedTarget)) close();
+    });
+  }
+
+  window.addEventListener('scroll', () => { if (current) close(); }, { passive: true, capture: true });
+  window.addEventListener('resize', () => { if (current) close(); });
+
+  // Make icons focusable/announced up front (keyboard users can't hover).
+  function prepareAll(root) {
+    (root || document).querySelectorAll('.tooltip-icon[data-tooltip]').forEach(icon => { if (textFor(icon)) prepare(icon); });
+  }
+  document.addEventListener('DOMContentLoaded', () => {
+    prepareAll();
+    // Legacy: non-icon elements with data-tooltip keep the inline hover tooltip.
+    document.querySelectorAll('[data-tooltip]:not(.tooltip-icon)').forEach(el => {
+      const key = el.getAttribute('data-tooltip');
+      if (TOOLTIPS[key] && !el.closest('.tooltip-icon')) addTooltip(el, TOOLTIPS[key]);
+    });
+  });
+})();
