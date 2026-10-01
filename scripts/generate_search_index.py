@@ -7,6 +7,9 @@ file with searchable data for Fuse.js autocomplete.
 
 Supports both NCAA and HS modes.
 
+NCAA: indexes EVERY season in available_seasons.json by default (TJ, 2026-10-01); -season only
+sets the "current" season used for priority/rank. --single-season restricts to -season (testing only).
+
 For HS, wrestlers are indexed from career profiles (one entry per career),
 prioritized as:
   0 = ranked in current season (sorted by rank ascending)
@@ -457,11 +460,13 @@ def main():
     parser.add_argument("-season", type=int, default=2026)
     parser.add_argument(
         "--all-seasons", action="store_true",
-        help="NCAA only: merge every season listed in available_seasons.json into one "
-             "combined index instead of just -season. Use this after backfilling older "
-             "seasons so their wrestlers become searchable alongside the current one -- "
-             "running with a single -season would otherwise overwrite the whole index "
-             "with just that one season, wiping out every other season's entries.",
+        help="NCAA: no-op, kept so older commands still work -- every season in "
+             "available_seasons.json is now the DEFAULT (TJ, 2026-10-01).",
+    )
+    parser.add_argument(
+        "--single-season", action="store_true",
+        help="NCAA only: index ONLY -season. This OVERWRITES the live index with one season "
+             "(~2.7k of ~15k entries), so it's for testing only -- never deploy its output.",
     )
     args = parser.parse_args()
 
@@ -485,13 +490,17 @@ def main():
     else:  # ncaa
         output_file = script_dir / "frontend/wrestledata-ui/public/search_index.js"
 
-        if args.all_seasons:
+        # Default = every season (since 2026-10-01). The old default (just -season) silently
+        # shrank the site's search to one season whenever --all-seasons was forgotten.
+        if not args.single_season:
             seasons_path = script_dir / "frontend/wrestledata-ui/public/data/wrestlers/available_seasons.json"
             with open(seasons_path, "r", encoding="utf-8") as f:
                 seasons = json.load(f)
             print(f"Merging {len(seasons)} seasons: {seasons}")
         else:
             seasons = [args.season]
+            print(f"WARNING: --single-season: indexing only {args.season}; this replaces the full "
+                  f"all-season index -- don't deploy it.")
 
         search_index.extend(load_ncaa_career_wrestlers(script_dir, seasons, args.season))
 
