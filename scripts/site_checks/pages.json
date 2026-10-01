@@ -21,7 +21,8 @@
         {"name": "leaderboard-dpg", "path": "/leaderboards/dpg.html", "min_text": 800},
         {"name": "leaderboard-tpar", "path": "/leaderboards/tpar.html", "min_text": 800},
         {"name": "events-ncaa", "path": "/events/ncaa.html", "min_text": 400},
-        {"name": "schedule", "path": "/schedule.html", "min_text": 300},
+        {"name": "schedule", "path": "/schedule.html", "min_text": 300, "expect": [{"sel": "#schedule-search-input"}, {"sel": "#schedule-text-toggle"}, {"sel": ".schedule-dual-row", "min": 10}]},
+        {"name": "schedule-text-team", "path": "/schedule.html?team=penn_state&view=text", "min_text": 200, "expect": [{"sel": ".schedule-selected"}, {"sel": ".schedule-text-row", "min": 5}]},
         {"name": "team-odds", "path": "/team_odds.html", "min_text": 400},
         {"name": "notes", "path": "/notes/index.html", "min_text": 120},
         {"name": "about", "path": "/about.html", "min_text": 300}

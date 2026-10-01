@@ -6445,6 +6445,120 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   padding: 8px 20px 16px;
 }
 
+/* Toolbar: team filter (search -> chip) + "Text only" toggle */
+.schedule-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 12px;
+}
+.schedule-search {
+  position: relative;
+  flex: 1 1 260px;
+  max-width: 420px;
+  min-width: 0;
+}
+.schedule-search .search-input {
+  padding: 9px 14px;
+  font-size: 0.95rem;
+}
+.schedule-search .search-dropdown { z-index: 20; }
+.schedule-search .search-result.is-active { background: var(--panel-2); }
+.schedule-selected {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 6px 5px 10px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: var(--panel);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.schedule-selected[hidden] { display: none; }
+.schedule-selected-crest { width: 22px; height: 22px; object-fit: contain; }
+.schedule-selected-clear {
+  border: none;
+  background: var(--panel-2);
+  color: var(--muted);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.schedule-selected-clear:hover { color: var(--text); }
+.schedule-view-toggle {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.schedule-view-toggle:hover { color: var(--text); }
+.schedule-view-toggle.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* "Text only" view: a dense table -- date column (first dual of each day
+   only), then "Team vs Team" on one left-aligned line */
+.schedule-text-row {
+  display: grid;
+  grid-template-columns: 104px minmax(0, 1fr);
+  align-items: baseline;
+  gap: 12px;
+  padding: 4px 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.schedule-text-row.is-first { border-top: 1px solid var(--border); padding-top: 8px; }
+.schedule-text-row.is-first:first-child { border-top: none; padding-top: 4px; }
+.schedule-text-date {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+.schedule-text-match { min-width: 0; }
+.schedule-text-team {
+  color: var(--text);
+  text-decoration: none;
+}
+.schedule-text-team:hover { color: var(--accent); text-decoration: none; }
+.schedule-text-team.is-selected { font-weight: 700; }
+.schedule-text-vs {
+  margin: 0 8px;
+  font-size: 0.75em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--muted-2);
+}
+.schedule-text-rank {
+  color: var(--muted);
+  font-size: 0.8em;
+  font-weight: 600;
+  margin-right: 3px;
+}
+.schedule-page--text { padding-top: 10px; padding-bottom: 10px; }
+@media (max-width: 767px) {
+  .schedule-text-row { grid-template-columns: 76px minmax(0, 1fr); gap: 8px; font-size: 0.86rem; }
+  .schedule-text-date { font-size: 0.68rem; }
+  .schedule-search { flex: 1 1 0; min-width: 0; }
+}
+
 .schedule-date-group:first-child .schedule-date-heading {
   padding-top: 0;
 }

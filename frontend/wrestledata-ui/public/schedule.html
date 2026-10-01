@@ -17,9 +17,19 @@
       <div class="header-subline" id="schedule-count"></div>
     </header>
 
+    <div class="schedule-toolbar">
+      <div class="schedule-search" id="schedule-search">
+        <input type="text" class="search-input" id="schedule-search-input"
+               placeholder="Filter by team…" autocomplete="off" aria-label="Filter duals by team" />
+        <div class="search-dropdown" id="schedule-search-dropdown" style="display: none;"></div>
+        <div class="schedule-selected" id="schedule-selected" hidden></div>
+      </div>
+      <button type="button" class="schedule-view-toggle" id="schedule-text-toggle" aria-pressed="false">Text only</button>
+    </div>
+
     <section class="section schedule-page" id="schedule-list"></section>
   </div>
 
-  <script src="/schedule.js?v=20260913"></script>
+  <script src="/schedule.js?v=20261001"></script>
 </body>
 </html>

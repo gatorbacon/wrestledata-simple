@@ -1343,6 +1343,8 @@ None of these vendor pages print a year on the event card, only "Mon DD" — the
    .venv/bin/python scripts/scraping/dedupe_events.py
    ```
 
+**The Dual Schedule page** (`schedule.html` + `schedule.js`) reads only `data/schedule/duals_2026-27.json` (written by step 5), plus 2026 xTP for the top-25 rank badges and `team_colors.json` for the cards. Since 2026-10-01 it has a team filter, built on the Teams page's search (same Fuse options over the search index's team entries, limited to teams that appear in the schedule; picking one filters the list instead of opening the team page, with the picked team always shown on the left), and a **Text only** toggle (off by default) for a dense date-column list. Both are kept in the URL: `?team=<slug>`, `?view=text`.
+
 **Status as of 2026-09-13:** 24 of 79 D1 teams successfully pulled for 2026-27 (added Buffalo, Duke, Little Rock, North Dakota State, SIU Edwardsville, Wisconsin this run); the rest still show `wrong_season_not_posted_yet`. Re-running `batch_scrape_schedules.py` periodically through the fall is expected and safe.
 
 ---
