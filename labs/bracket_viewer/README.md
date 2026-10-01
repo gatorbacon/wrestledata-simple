@@ -19,6 +19,28 @@ Design (TJ's spec): weight tabs on top, bracket below, first weight default. The
 
 Limits: connectors are drawn only between adjacent visible columns; consolation drop-ins from the championship bracket and the 7th-place match have no line (drop-ins get a left-edge marker).
 
+## Historical data 1928-2016 — RECEIVED 2026-10-01 (supersedes the parsing plan below)
+
+The wrestlingstats.com PDFs were parsed in a separate project and delivered as `NCAA_1928-2016_v2.zip`, now stored
+unchanged at **`data/ncaa_historical_brackets/`** (source data, not a website folder). Start with its `SPEC.md`
+(every field + the rebuild procedure per bracket model) and `README.md`; `render_bracket.py` is the reference
+program; `AUDIT.md` lists every problem in the source sheets year by year; `validation/` holds the cold-start
+rebuild test (819/819 weights) and the comparison with our own 2013/2014/2016 data. `scripts/` is their
+PDF → JSON pipeline; it needs the source PDFs in `pdf/` to re-run (not stored here).
+
+- 86 tournament files (1928-2016; none held 1943-45), 33,412 bouts, 819 weights, 7 bracket models
+  (`bergman`, `bad_points`, `summary_only`, `wrestleback_finalists/semifinalists/quarterfinalists/all`).
+- Checked independently on 2026-10-01: every `from`/`to` link resolves, all 778 championship brackets rebuild
+  to the listed champion, every consolation slot matches its bout row — 0 problems.
+- No bouts at all for 1934 and 1938 (summary page only in the source) or 2015 (we have 2015 from TrackWrestling).
+- Team scores: the printed top ten only (`team_scores/`), not full standings. The sheets don't mark major
+  decisions (scores are printed, so margin is known where a score exists).
+- Team names are as printed: 339 distinct names, 62 match a current D1 team exactly; the rest are older
+  spellings (Cal Poly-SLO, Ohio University, Brigham Young) or programs that no longer exist (Oregon, Syracuse).
+- **Source rule (TJ, 2026-10-01):** 2013 onward comes from our own TrackWrestling data
+  (`data/ncaa-tourney-parsed/all_matches.json`); this set is used for 1928-2012. Its 2013/2014/2016 files are a
+  cross-check only.
+
 ## Next project: historical brackets (pre-2013) from wrestlingstats.com
 
 **Source:** `https://www.wrestlingstats.com/ncaa/brackets.htm` links one PDF per year, 1928-2026, at `/ncaa/pdf/brackets/NCAA{year}.pdf` (some older ones `NCAA%20{year}.pdf`, with a space). No robots.txt (404). Missing: 1943-45, 2020 (the 2020 link is broken); 1934/1938 are 1-page stubs; 2022/2023 link to NCAA session PDFs. Nothing is archived in the repo yet (downloaded to scratch only).

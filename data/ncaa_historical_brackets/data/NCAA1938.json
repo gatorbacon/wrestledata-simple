@@ -1,0 +1,639 @@
+{
+ "schema": {
+  "name": "ncaa-wrestling-bracket",
+  "version": "2.0",
+  "spec": "SPEC.md",
+  "read_me_first": "model.bracket_model says which rebuild procedure in SPEC.md applies to this file."
+ },
+ "tournament": {
+  "year": 1938,
+  "edition": 11,
+  "event": "NCAA Wrestling Championships",
+  "host": "Penn State",
+  "dates": [
+   "1938-03-25",
+   "1938-03-26"
+  ],
+  "team_champion": "Oklahoma State",
+  "team_champion_label": "Team Champion",
+  "outstanding_wrestler": "Joe McDaniel - Oklahoma State",
+  "source": {
+   "url": "https://www.wrestlingstats.com/ncaa/pdf/brackets/NCAA%201938.pdf",
+   "compiled_by": "wrestlingstats.com",
+   "incomplete_consolations": true
+  }
+ },
+ "model": {
+  "bracket_model": "summary_only",
+  "championship": "not_available",
+  "consolation": "not_available",
+  "model_years": "1934, 1938, 2015",
+  "placements_awarded": 3,
+  "bout_order_known": false,
+  "description": "The source has only the summary page (place winners, team scores); no bouts."
+ },
+ "codes": {
+  "rounds": {},
+  "result_types": {}
+ },
+ "team_scores": {
+  "official": true,
+  "scope": "Top ten as printed on the summary page (more than ten rows when teams tie)",
+  "scores": [
+   {
+    "rank": 1,
+    "tied": false,
+    "team": "Oklahoma State",
+    "points": 19,
+    "champions": 3
+   },
+   {
+    "rank": 2,
+    "tied": false,
+    "team": "Illinois",
+    "points": 15,
+    "champions": 2
+   },
+   {
+    "rank": 3,
+    "tied": false,
+    "team": "Indiana",
+    "points": 12,
+    "champions": 1
+   },
+   {
+    "rank": 4,
+    "tied": true,
+    "team": "Southwestern Oklahoma",
+    "points": 8,
+    "champions": 0
+   },
+   {
+    "rank": 4,
+    "tied": true,
+    "team": "Oklahoma",
+    "points": 8,
+    "champions": 1
+   },
+   {
+    "rank": 6,
+    "tied": false,
+    "team": "Minnesota",
+    "points": 6,
+    "champions": 0
+   },
+   {
+    "rank": 7,
+    "tied": true,
+    "team": "Lehigh",
+    "points": 5,
+    "champions": 0
+   },
+   {
+    "rank": 7,
+    "tied": true,
+    "team": "Harvard",
+    "points": 5,
+    "champions": 1
+   },
+   {
+    "rank": 7,
+    "tied": true,
+    "team": "Cornell Iowa",
+    "points": 5,
+    "champions": 0
+   },
+   {
+    "rank": 10,
+    "tied": false,
+    "team": "Chicago University",
+    "points": 4,
+    "champions": 0
+   }
+  ],
+  "notes": []
+ },
+ "weights": [
+  {
+   "weight": 118,
+   "draw_lines": null,
+   "entrant_count": 3,
+   "entrants": [
+    {
+     "id": "118-S01",
+     "line": null,
+     "seed": null,
+     "name": "Joe McDaniel",
+     "team": "Oklahoma State",
+     "entered_via": "summary"
+    },
+    {
+     "id": "118-S02",
+     "line": null,
+     "seed": null,
+     "name": "Willard Duffy",
+     "team": "Indiana",
+     "entered_via": "summary"
+    },
+    {
+     "id": "118-S03",
+     "line": null,
+     "seed": null,
+     "name": "Davis Natvig",
+     "team": "Northern Iowa",
+     "entered_via": "summary"
+    }
+   ],
+   "consolation_sheet": null,
+   "placements": [
+    {
+     "place": 1,
+     "wrestler_id": "118-S01",
+     "name": "Joe McDaniel",
+     "team": "Oklahoma State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 2,
+     "wrestler_id": "118-S02",
+     "name": "Willard Duffy",
+     "team": "Indiana",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 3,
+     "wrestler_id": "118-S03",
+     "name": "Davis Natvig",
+     "team": "Northern Iowa",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    }
+   ],
+   "notes": [
+    "summary page only; brackets not available in source"
+   ],
+   "source_discrepancies": []
+  },
+  {
+   "weight": 126,
+   "draw_lines": null,
+   "entrant_count": 3,
+   "entrants": [
+    {
+     "id": "126-S01",
+     "line": null,
+     "seed": null,
+     "name": "Allen Sapora",
+     "team": "Illinois",
+     "entered_via": "summary"
+    },
+    {
+     "id": "126-S02",
+     "line": null,
+     "seed": null,
+     "name": "Robert Murray",
+     "team": "Cornell Iowa",
+     "entered_via": "summary"
+    },
+    {
+     "id": "126-S03",
+     "line": null,
+     "seed": null,
+     "name": "Hoy Stone",
+     "team": "Oklahoma",
+     "entered_via": "summary"
+    }
+   ],
+   "consolation_sheet": null,
+   "placements": [
+    {
+     "place": 1,
+     "wrestler_id": "126-S01",
+     "name": "Allen Sapora",
+     "team": "Illinois",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 2,
+     "wrestler_id": "126-S02",
+     "name": "Robert Murray",
+     "team": "Cornell Iowa",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 3,
+     "wrestler_id": "126-S03",
+     "name": "Hoy Stone",
+     "team": "Oklahoma",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    }
+   ],
+   "notes": [
+    "summary page only; brackets not available in source"
+   ],
+   "source_discrepancies": []
+  },
+  {
+   "weight": 135,
+   "draw_lines": null,
+   "entrant_count": 3,
+   "entrants": [
+    {
+     "id": "135-S01",
+     "line": null,
+     "seed": null,
+     "name": "David Matthews",
+     "team": "Oklahoma",
+     "entered_via": "summary"
+    },
+    {
+     "id": "135-S02",
+     "line": null,
+     "seed": null,
+     "name": "Archie Deutschman",
+     "team": "Illinois",
+     "entered_via": "summary"
+    },
+    {
+     "id": "135-S03",
+     "line": null,
+     "seed": null,
+     "name": "Fred Parkey",
+     "team": "Oklahoma State",
+     "entered_via": "summary"
+    }
+   ],
+   "consolation_sheet": null,
+   "placements": [
+    {
+     "place": 1,
+     "wrestler_id": "135-S01",
+     "name": "David Matthews",
+     "team": "Oklahoma",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 2,
+     "wrestler_id": "135-S02",
+     "name": "Archie Deutschman",
+     "team": "Illinois",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 3,
+     "wrestler_id": "135-S03",
+     "name": "Fred Parkey",
+     "team": "Oklahoma State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    }
+   ],
+   "notes": [
+    "summary page only; brackets not available in source"
+   ],
+   "source_discrepancies": []
+  },
+  {
+   "weight": 145,
+   "draw_lines": null,
+   "entrant_count": 3,
+   "entrants": [
+    {
+     "id": "145-S01",
+     "line": null,
+     "seed": null,
+     "name": "Stanley Henson",
+     "team": "Oklahoma State",
+     "entered_via": "summary"
+    },
+    {
+     "id": "145-S02",
+     "line": null,
+     "seed": null,
+     "name": "Robert Finwall",
+     "team": "Chicago University",
+     "entered_via": "summary"
+    },
+    {
+     "id": "145-S03",
+     "line": null,
+     "seed": null,
+     "name": "Frank Linn",
+     "team": "Iowa State",
+     "entered_via": "summary"
+    }
+   ],
+   "consolation_sheet": null,
+   "placements": [
+    {
+     "place": 1,
+     "wrestler_id": "145-S01",
+     "name": "Stanley Henson",
+     "team": "Oklahoma State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 2,
+     "wrestler_id": "145-S02",
+     "name": "Robert Finwall",
+     "team": "Chicago University",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 3,
+     "wrestler_id": "145-S03",
+     "name": "Frank Linn",
+     "team": "Iowa State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    }
+   ],
+   "notes": [
+    "summary page only; brackets not available in source"
+   ],
+   "source_discrepancies": []
+  },
+  {
+   "weight": 155,
+   "draw_lines": null,
+   "entrant_count": 3,
+   "entrants": [
+    {
+     "id": "155-S01",
+     "line": null,
+     "seed": null,
+     "name": "Dale Scrivens",
+     "team": "Oklahoma State",
+     "entered_via": "summary"
+    },
+    {
+     "id": "155-S02",
+     "line": null,
+     "seed": null,
+     "name": "Ken Knight",
+     "team": "Southwestern Oklahoma",
+     "entered_via": "summary"
+    },
+    {
+     "id": "155-S03",
+     "line": null,
+     "seed": null,
+     "name": "Joe Loucks",
+     "team": "Iowa State",
+     "entered_via": "summary"
+    }
+   ],
+   "consolation_sheet": null,
+   "placements": [
+    {
+     "place": 1,
+     "wrestler_id": "155-S01",
+     "name": "Dale Scrivens",
+     "team": "Oklahoma State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 2,
+     "wrestler_id": "155-S02",
+     "name": "Ken Knight",
+     "team": "Southwestern Oklahoma",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 3,
+     "wrestler_id": "155-S03",
+     "name": "Joe Loucks",
+     "team": "Iowa State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    }
+   ],
+   "notes": [
+    "summary page only; brackets not available in source"
+   ],
+   "source_discrepancies": []
+  },
+  {
+   "weight": 165,
+   "draw_lines": null,
+   "entrant_count": 3,
+   "entrants": [
+    {
+     "id": "165-S01",
+     "line": null,
+     "seed": null,
+     "name": "John Ginay",
+     "team": "Illinois",
+     "entered_via": "summary"
+    },
+    {
+     "id": "165-S02",
+     "line": null,
+     "seed": null,
+     "name": "Curt Ford",
+     "team": "Lehigh",
+     "entered_via": "summary"
+    },
+    {
+     "id": "165-S03",
+     "line": null,
+     "seed": null,
+     "name": "Henry Wittenberg",
+     "team": "CCNY",
+     "entered_via": "summary"
+    }
+   ],
+   "consolation_sheet": null,
+   "placements": [
+    {
+     "place": 1,
+     "wrestler_id": "165-S01",
+     "name": "John Ginay",
+     "team": "Illinois",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 2,
+     "wrestler_id": "165-S02",
+     "name": "Curt Ford",
+     "team": "Lehigh",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 3,
+     "wrestler_id": "165-S03",
+     "name": "Henry Wittenberg",
+     "team": "CCNY",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    }
+   ],
+   "notes": [
+    "summary page only; brackets not available in source"
+   ],
+   "source_discrepancies": []
+  },
+  {
+   "weight": 175,
+   "draw_lines": null,
+   "entrant_count": 3,
+   "entrants": [
+    {
+     "id": "175-S01",
+     "line": null,
+     "seed": null,
+     "name": "John Harkness",
+     "team": "Harvard",
+     "entered_via": "summary"
+    },
+    {
+     "id": "175-S02",
+     "line": null,
+     "seed": null,
+     "name": "Swede Olsen",
+     "team": "Southwestern Oklahoma",
+     "entered_via": "summary"
+    },
+    {
+     "id": "175-S03",
+     "line": null,
+     "seed": null,
+     "name": "Chris Traicoff",
+     "team": "Indiana",
+     "entered_via": "summary"
+    }
+   ],
+   "consolation_sheet": null,
+   "placements": [
+    {
+     "place": 1,
+     "wrestler_id": "175-S01",
+     "name": "John Harkness",
+     "team": "Harvard",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 2,
+     "wrestler_id": "175-S02",
+     "name": "Swede Olsen",
+     "team": "Southwestern Oklahoma",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 3,
+     "wrestler_id": "175-S03",
+     "name": "Chris Traicoff",
+     "team": "Indiana",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    }
+   ],
+   "notes": [
+    "summary page only; brackets not available in source"
+   ],
+   "source_discrepancies": []
+  },
+  {
+   "weight": "UNL",
+   "draw_lines": null,
+   "entrant_count": 3,
+   "entrants": [
+    {
+     "id": "UNL-S01",
+     "line": null,
+     "seed": null,
+     "name": "Charles McDaniel",
+     "team": "Indiana",
+     "entered_via": "summary"
+    },
+    {
+     "id": "UNL-S02",
+     "line": null,
+     "seed": null,
+     "name": "Clifton Gustafson",
+     "team": "Minnesota",
+     "entered_via": "summary"
+    },
+    {
+     "id": "UNL-S03",
+     "line": null,
+     "seed": null,
+     "name": "Robert Kygar",
+     "team": "Southwestern Oklahoma",
+     "entered_via": "summary"
+    }
+   ],
+   "consolation_sheet": null,
+   "placements": [
+    {
+     "place": 1,
+     "wrestler_id": "UNL-S01",
+     "name": "Charles McDaniel",
+     "team": "Indiana",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 2,
+     "wrestler_id": "UNL-S02",
+     "name": "Clifton Gustafson",
+     "team": "Minnesota",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 3,
+     "wrestler_id": "UNL-S03",
+     "name": "Robert Kygar",
+     "team": "Southwestern Oklahoma",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    }
+   ],
+   "notes": [
+    "summary page only; brackets not available in source"
+   ],
+   "source_discrepancies": []
+  }
+ ],
+ "matches": []
+}

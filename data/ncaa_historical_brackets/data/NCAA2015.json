@@ -1,0 +1,1622 @@
+{
+ "schema": {
+  "name": "ncaa-wrestling-bracket",
+  "version": "2.0",
+  "spec": "SPEC.md",
+  "read_me_first": "model.bracket_model says which rebuild procedure in SPEC.md applies to this file."
+ },
+ "tournament": {
+  "year": 2015,
+  "edition": 85,
+  "event": "NCAA Wrestling Championships",
+  "host": "St Louis",
+  "dates": [
+   "2015-03-19",
+   "2015-03-21"
+  ],
+  "team_champion": "Ohio State",
+  "team_champion_label": "Team Champion",
+  "outstanding_wrestler": "Logan Stieber - Ohio State",
+  "gorriaran_award": "Aaron Schopp - Edinboro",
+  "source": {
+   "url": "https://www.wrestlingstats.com/ncaa/pdf/brackets/NCAA%202015.pdf",
+   "compiled_by": "wrestlingstats.com",
+   "incomplete_consolations": false
+  }
+ },
+ "model": {
+  "bracket_model": "summary_only",
+  "championship": "not_available",
+  "consolation": "not_available",
+  "model_years": "1934, 1938, 2015",
+  "placements_awarded": 8,
+  "bout_order_known": false,
+  "description": "The source has only the summary page (place winners, team scores); no bouts."
+ },
+ "codes": {
+  "rounds": {},
+  "result_types": {}
+ },
+ "team_scores": {
+  "official": true,
+  "scope": "Top ten as printed on the summary page (more than ten rows when teams tie)",
+  "scores": [
+   {
+    "rank": 1,
+    "tied": false,
+    "team": "Ohio State",
+    "points": 102,
+    "champions": 2
+   },
+   {
+    "rank": 2,
+    "tied": false,
+    "team": "Iowa",
+    "points": 84,
+    "champions": 0
+   },
+   {
+    "rank": 3,
+    "tied": false,
+    "team": "Edinboro",
+    "points": 75.5,
+    "champions": 0
+   },
+   {
+    "rank": 4,
+    "tied": false,
+    "team": "Missouri",
+    "points": 73.5,
+    "champions": 1
+   },
+   {
+    "rank": 5,
+    "tied": false,
+    "team": "Cornell",
+    "points": 71.5,
+    "champions": 1
+   },
+   {
+    "rank": 6,
+    "tied": false,
+    "team": "Penn State",
+    "points": 67.5,
+    "champions": 1
+   },
+   {
+    "rank": 7,
+    "tied": false,
+    "team": "Oklahoma State",
+    "points": 65,
+    "champions": 0
+   },
+   {
+    "rank": 8,
+    "tied": false,
+    "team": "Minnesota",
+    "points": 59.5,
+    "champions": 0
+   },
+   {
+    "rank": 9,
+    "tied": false,
+    "team": "Nebraska",
+    "points": 59,
+    "champions": 0
+   },
+   {
+    "rank": 10,
+    "tied": false,
+    "team": "Virginia Tech",
+    "points": 56,
+    "champions": 0
+   }
+  ],
+  "notes": [
+   "Oklahoma State: table shows 0 individual champion(s) but the place winners include 1"
+  ]
+ },
+ "weights": [
+  {
+   "weight": 125,
+   "draw_lines": null,
+   "entrant_count": 8,
+   "entrants": [
+    {
+     "id": "125-S01",
+     "line": null,
+     "seed": null,
+     "name": "Nathan Tomasello",
+     "team": "Ohio State",
+     "entered_via": "summary"
+    },
+    {
+     "id": "125-S02",
+     "line": null,
+     "seed": null,
+     "name": "Zeke Moisey",
+     "team": "West Virginia",
+     "entered_via": "summary"
+    },
+    {
+     "id": "125-S03",
+     "line": null,
+     "seed": null,
+     "name": "Alan Waters",
+     "team": "Missouri",
+     "entered_via": "summary"
+    },
+    {
+     "id": "125-S04",
+     "line": null,
+     "seed": null,
+     "name": "Thomas Gilman",
+     "team": "Iowa",
+     "entered_via": "summary"
+    },
+    {
+     "id": "125-S05",
+     "line": null,
+     "seed": null,
+     "name": "Nahshon Garrett",
+     "team": "Cornell",
+     "entered_via": "summary"
+    },
+    {
+     "id": "125-S06",
+     "line": null,
+     "seed": null,
+     "name": "Connor Youtsey",
+     "team": "Michigan",
+     "entered_via": "summary"
+    },
+    {
+     "id": "125-S07",
+     "line": null,
+     "seed": null,
+     "name": "Edward Klimara",
+     "team": "Oklahoma State",
+     "entered_via": "summary"
+    },
+    {
+     "id": "125-S08",
+     "line": null,
+     "seed": null,
+     "name": "Jordan Conaway",
+     "team": "Penn State",
+     "entered_via": "summary"
+    }
+   ],
+   "consolation_sheet": null,
+   "placements": [
+    {
+     "place": 1,
+     "wrestler_id": "125-S01",
+     "name": "Nathan Tomasello",
+     "team": "Ohio State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 2,
+     "wrestler_id": "125-S02",
+     "name": "Zeke Moisey",
+     "team": "West Virginia",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 3,
+     "wrestler_id": "125-S03",
+     "name": "Alan Waters",
+     "team": "Missouri",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 4,
+     "wrestler_id": "125-S04",
+     "name": "Thomas Gilman",
+     "team": "Iowa",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 5,
+     "wrestler_id": "125-S05",
+     "name": "Nahshon Garrett",
+     "team": "Cornell",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 6,
+     "wrestler_id": "125-S06",
+     "name": "Connor Youtsey",
+     "team": "Michigan",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 7,
+     "wrestler_id": "125-S07",
+     "name": "Edward Klimara",
+     "team": "Oklahoma State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 8,
+     "wrestler_id": "125-S08",
+     "name": "Jordan Conaway",
+     "team": "Penn State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    }
+   ],
+   "notes": [
+    "bracket pages have no text layer in the source; placements from summary page only"
+   ],
+   "source_discrepancies": []
+  },
+  {
+   "weight": 133,
+   "draw_lines": null,
+   "entrant_count": 8,
+   "entrants": [
+    {
+     "id": "133-S01",
+     "line": null,
+     "seed": null,
+     "name": "Cody Brewer",
+     "team": "Oklahoma",
+     "entered_via": "summary"
+    },
+    {
+     "id": "133-S02",
+     "line": null,
+     "seed": null,
+     "name": "Cory Clark",
+     "team": "Iowa",
+     "entered_via": "summary"
+    },
+    {
+     "id": "133-S03",
+     "line": null,
+     "seed": null,
+     "name": "Aaron Schopp",
+     "team": "Edinboro",
+     "entered_via": "summary"
+    },
+    {
+     "id": "133-S04",
+     "line": null,
+     "seed": null,
+     "name": "Chris Dardanes",
+     "team": "Minnesota",
+     "entered_via": "summary"
+    },
+    {
+     "id": "133-S05",
+     "line": null,
+     "seed": null,
+     "name": "James Gulibon",
+     "team": "Penn State",
+     "entered_via": "summary"
+    },
+    {
+     "id": "133-S06",
+     "line": null,
+     "seed": null,
+     "name": "Mason Beckman",
+     "team": "Lehigh",
+     "entered_via": "summary"
+    },
+    {
+     "id": "133-S07",
+     "line": null,
+     "seed": null,
+     "name": "Bradley Taylor",
+     "team": "Wisconsin",
+     "entered_via": "summary"
+    },
+    {
+     "id": "133-S08",
+     "line": null,
+     "seed": null,
+     "name": "Rossi Bruno",
+     "team": "Michigan",
+     "entered_via": "summary"
+    }
+   ],
+   "consolation_sheet": null,
+   "placements": [
+    {
+     "place": 1,
+     "wrestler_id": "133-S01",
+     "name": "Cody Brewer",
+     "team": "Oklahoma",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 2,
+     "wrestler_id": "133-S02",
+     "name": "Cory Clark",
+     "team": "Iowa",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 3,
+     "wrestler_id": "133-S03",
+     "name": "Aaron Schopp",
+     "team": "Edinboro",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 4,
+     "wrestler_id": "133-S04",
+     "name": "Chris Dardanes",
+     "team": "Minnesota",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 5,
+     "wrestler_id": "133-S05",
+     "name": "James Gulibon",
+     "team": "Penn State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 6,
+     "wrestler_id": "133-S06",
+     "name": "Mason Beckman",
+     "team": "Lehigh",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 7,
+     "wrestler_id": "133-S07",
+     "name": "Bradley Taylor",
+     "team": "Wisconsin",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 8,
+     "wrestler_id": "133-S08",
+     "name": "Rossi Bruno",
+     "team": "Michigan",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    }
+   ],
+   "notes": [
+    "bracket pages have no text layer in the source; placements from summary page only"
+   ],
+   "source_discrepancies": []
+  },
+  {
+   "weight": 141,
+   "draw_lines": null,
+   "entrant_count": 8,
+   "entrants": [
+    {
+     "id": "141-S01",
+     "line": null,
+     "seed": null,
+     "name": "Logan Stieber",
+     "team": "Ohio State",
+     "entered_via": "summary"
+    },
+    {
+     "id": "141-S02",
+     "line": null,
+     "seed": null,
+     "name": "Mitchell Port",
+     "team": "Edinboro",
+     "entered_via": "summary"
+    },
+    {
+     "id": "141-S03",
+     "line": null,
+     "seed": null,
+     "name": "Devin Carter",
+     "team": "Virginia Tech",
+     "entered_via": "summary"
+    },
+    {
+     "id": "141-S04",
+     "line": null,
+     "seed": null,
+     "name": "Dean Heil",
+     "team": "Oklahoma State",
+     "entered_via": "summary"
+    },
+    {
+     "id": "141-S05",
+     "line": null,
+     "seed": null,
+     "name": "Kevin Jack",
+     "team": "North Carolina State",
+     "entered_via": "summary"
+    },
+    {
+     "id": "141-S06",
+     "line": null,
+     "seed": null,
+     "name": "Chris Mecate",
+     "team": "Old Dominion",
+     "entered_via": "summary"
+    },
+    {
+     "id": "141-S07",
+     "line": null,
+     "seed": null,
+     "name": "Lavion Mayes",
+     "team": "Missouri",
+     "entered_via": "summary"
+    },
+    {
+     "id": "141-S08",
+     "line": null,
+     "seed": null,
+     "name": "Anthony Ashnault",
+     "team": "Rutgers",
+     "entered_via": "summary"
+    }
+   ],
+   "consolation_sheet": null,
+   "placements": [
+    {
+     "place": 1,
+     "wrestler_id": "141-S01",
+     "name": "Logan Stieber",
+     "team": "Ohio State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 2,
+     "wrestler_id": "141-S02",
+     "name": "Mitchell Port",
+     "team": "Edinboro",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 3,
+     "wrestler_id": "141-S03",
+     "name": "Devin Carter",
+     "team": "Virginia Tech",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 4,
+     "wrestler_id": "141-S04",
+     "name": "Dean Heil",
+     "team": "Oklahoma State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 5,
+     "wrestler_id": "141-S05",
+     "name": "Kevin Jack",
+     "team": "North Carolina State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 6,
+     "wrestler_id": "141-S06",
+     "name": "Chris Mecate",
+     "team": "Old Dominion",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 7,
+     "wrestler_id": "141-S07",
+     "name": "Lavion Mayes",
+     "team": "Missouri",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 8,
+     "wrestler_id": "141-S08",
+     "name": "Anthony Ashnault",
+     "team": "Rutgers",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    }
+   ],
+   "notes": [
+    "bracket pages have no text layer in the source; placements from summary page only"
+   ],
+   "source_discrepancies": []
+  },
+  {
+   "weight": 149,
+   "draw_lines": null,
+   "entrant_count": 8,
+   "entrants": [
+    {
+     "id": "149-S01",
+     "line": null,
+     "seed": null,
+     "name": "Drake Houdashelt",
+     "team": "Missouri",
+     "entered_via": "summary"
+    },
+    {
+     "id": "149-S02",
+     "line": null,
+     "seed": null,
+     "name": "David Habat",
+     "team": "Edinboro",
+     "entered_via": "summary"
+    },
+    {
+     "id": "149-S03",
+     "line": null,
+     "seed": null,
+     "name": "Jason Tsirtsis",
+     "team": "Northwestern",
+     "entered_via": "summary"
+    },
+    {
+     "id": "149-S04",
+     "line": null,
+     "seed": null,
+     "name": "Brandon Sorensen",
+     "team": "Iowa",
+     "entered_via": "summary"
+    },
+    {
+     "id": "149-S05",
+     "line": null,
+     "seed": null,
+     "name": "Bryant Clagon",
+     "team": "Rider",
+     "entered_via": "summary"
+    },
+    {
+     "id": "149-S06",
+     "line": null,
+     "seed": null,
+     "name": "Chris Villalonga",
+     "team": "Cornell",
+     "entered_via": "summary"
+    },
+    {
+     "id": "149-S07",
+     "line": null,
+     "seed": null,
+     "name": "Alexander Richardson",
+     "team": "Old Dominion",
+     "entered_via": "summary"
+    },
+    {
+     "id": "149-S08",
+     "line": null,
+     "seed": null,
+     "name": "Daniel Neff",
+     "team": "Lock Haven",
+     "entered_via": "summary"
+    }
+   ],
+   "consolation_sheet": null,
+   "placements": [
+    {
+     "place": 1,
+     "wrestler_id": "149-S01",
+     "name": "Drake Houdashelt",
+     "team": "Missouri",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 2,
+     "wrestler_id": "149-S02",
+     "name": "David Habat",
+     "team": "Edinboro",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 3,
+     "wrestler_id": "149-S03",
+     "name": "Jason Tsirtsis",
+     "team": "Northwestern",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 4,
+     "wrestler_id": "149-S04",
+     "name": "Brandon Sorensen",
+     "team": "Iowa",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 5,
+     "wrestler_id": "149-S05",
+     "name": "Bryant Clagon",
+     "team": "Rider",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 6,
+     "wrestler_id": "149-S06",
+     "name": "Chris Villalonga",
+     "team": "Cornell",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 7,
+     "wrestler_id": "149-S07",
+     "name": "Alexander Richardson",
+     "team": "Old Dominion",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 8,
+     "wrestler_id": "149-S08",
+     "name": "Daniel Neff",
+     "team": "Lock Haven",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    }
+   ],
+   "notes": [
+    "bracket pages have no text layer in the source; placements from summary page only"
+   ],
+   "source_discrepancies": []
+  },
+  {
+   "weight": 157,
+   "draw_lines": null,
+   "entrant_count": 8,
+   "entrants": [
+    {
+     "id": "157-S01",
+     "line": null,
+     "seed": null,
+     "name": "Isaiah Martinez",
+     "team": "Illinois",
+     "entered_via": "summary"
+    },
+    {
+     "id": "157-S02",
+     "line": null,
+     "seed": null,
+     "name": "Brian Realbuto",
+     "team": "Cornell",
+     "entered_via": "summary"
+    },
+    {
+     "id": "157-S03",
+     "line": null,
+     "seed": null,
+     "name": "James Green",
+     "team": "Nebraska",
+     "entered_via": "summary"
+    },
+    {
+     "id": "157-S04",
+     "line": null,
+     "seed": null,
+     "name": "Nick Brascetta",
+     "team": "Virginia Tech",
+     "entered_via": "summary"
+    },
+    {
+     "id": "157-S05",
+     "line": null,
+     "seed": null,
+     "name": "Ian Miller",
+     "team": "Kent State",
+     "entered_via": "summary"
+    },
+    {
+     "id": "157-S06",
+     "line": null,
+     "seed": null,
+     "name": "Dylan Ness",
+     "team": "Minnesota",
+     "entered_via": "summary"
+    },
+    {
+     "id": "157-S07",
+     "line": null,
+     "seed": null,
+     "name": "Brian Murphy",
+     "team": "Michigan",
+     "entered_via": "summary"
+    },
+    {
+     "id": "157-S08",
+     "line": null,
+     "seed": null,
+     "name": "Mitch Minotti",
+     "team": "Lehigh",
+     "entered_via": "summary"
+    }
+   ],
+   "consolation_sheet": null,
+   "placements": [
+    {
+     "place": 1,
+     "wrestler_id": "157-S01",
+     "name": "Isaiah Martinez",
+     "team": "Illinois",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 2,
+     "wrestler_id": "157-S02",
+     "name": "Brian Realbuto",
+     "team": "Cornell",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 3,
+     "wrestler_id": "157-S03",
+     "name": "James Green",
+     "team": "Nebraska",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 4,
+     "wrestler_id": "157-S04",
+     "name": "Nick Brascetta",
+     "team": "Virginia Tech",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 5,
+     "wrestler_id": "157-S05",
+     "name": "Ian Miller",
+     "team": "Kent State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 6,
+     "wrestler_id": "157-S06",
+     "name": "Dylan Ness",
+     "team": "Minnesota",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 7,
+     "wrestler_id": "157-S07",
+     "name": "Brian Murphy",
+     "team": "Michigan",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 8,
+     "wrestler_id": "157-S08",
+     "name": "Mitch Minotti",
+     "team": "Lehigh",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    }
+   ],
+   "notes": [
+    "bracket pages have no text layer in the source; placements from summary page only"
+   ],
+   "source_discrepancies": []
+  },
+  {
+   "weight": 165,
+   "draw_lines": null,
+   "entrant_count": 8,
+   "entrants": [
+    {
+     "id": "165-S01",
+     "line": null,
+     "seed": null,
+     "name": "Alex Dieringer",
+     "team": "Oklahoma State",
+     "entered_via": "summary"
+    },
+    {
+     "id": "165-S02",
+     "line": null,
+     "seed": null,
+     "name": "Taylor Walsh",
+     "team": "Indiana",
+     "entered_via": "summary"
+    },
+    {
+     "id": "165-S03",
+     "line": null,
+     "seed": null,
+     "name": "Bo Jordan",
+     "team": "Ohio State",
+     "entered_via": "summary"
+    },
+    {
+     "id": "165-S04",
+     "line": null,
+     "seed": null,
+     "name": "Jackson Morse",
+     "team": "Illinois",
+     "entered_via": "summary"
+    },
+    {
+     "id": "165-S05",
+     "line": null,
+     "seed": null,
+     "name": "Nick Sulzer",
+     "team": "Virginia",
+     "entered_via": "summary"
+    },
+    {
+     "id": "165-S06",
+     "line": null,
+     "seed": null,
+     "name": "Ethan Ramos",
+     "team": "North Carolina",
+     "entered_via": "summary"
+    },
+    {
+     "id": "165-S07",
+     "line": null,
+     "seed": null,
+     "name": "Isaac Jordan",
+     "team": "Wisconsin",
+     "entered_via": "summary"
+    },
+    {
+     "id": "165-S08",
+     "line": null,
+     "seed": null,
+     "name": "Jim Wilson",
+     "team": "Stanford",
+     "entered_via": "summary"
+    }
+   ],
+   "consolation_sheet": null,
+   "placements": [
+    {
+     "place": 1,
+     "wrestler_id": "165-S01",
+     "name": "Alex Dieringer",
+     "team": "Oklahoma State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 2,
+     "wrestler_id": "165-S02",
+     "name": "Taylor Walsh",
+     "team": "Indiana",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 3,
+     "wrestler_id": "165-S03",
+     "name": "Bo Jordan",
+     "team": "Ohio State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 4,
+     "wrestler_id": "165-S04",
+     "name": "Jackson Morse",
+     "team": "Illinois",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 5,
+     "wrestler_id": "165-S05",
+     "name": "Nick Sulzer",
+     "team": "Virginia",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 6,
+     "wrestler_id": "165-S06",
+     "name": "Ethan Ramos",
+     "team": "North Carolina",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 7,
+     "wrestler_id": "165-S07",
+     "name": "Isaac Jordan",
+     "team": "Wisconsin",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 8,
+     "wrestler_id": "165-S08",
+     "name": "Jim Wilson",
+     "team": "Stanford",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    }
+   ],
+   "notes": [
+    "bracket pages have no text layer in the source; placements from summary page only"
+   ],
+   "source_discrepancies": []
+  },
+  {
+   "weight": 174,
+   "draw_lines": null,
+   "entrant_count": 8,
+   "entrants": [
+    {
+     "id": "174-S01",
+     "line": null,
+     "seed": null,
+     "name": "Matt Brown",
+     "team": "Penn State",
+     "entered_via": "summary"
+    },
+    {
+     "id": "174-S02",
+     "line": null,
+     "seed": null,
+     "name": "Tyler Wilps",
+     "team": "Pittsburgh",
+     "entered_via": "summary"
+    },
+    {
+     "id": "174-S03",
+     "line": null,
+     "seed": null,
+     "name": "Robert Kokesh",
+     "team": "Nebraska",
+     "entered_via": "summary"
+    },
+    {
+     "id": "174-S04",
+     "line": null,
+     "seed": null,
+     "name": "Logan Storley",
+     "team": "Minnesota",
+     "entered_via": "summary"
+    },
+    {
+     "id": "174-S05",
+     "line": null,
+     "seed": null,
+     "name": "Kyle Crutchmer",
+     "team": "Oklahoma State",
+     "entered_via": "summary"
+    },
+    {
+     "id": "174-S06",
+     "line": null,
+     "seed": null,
+     "name": "Michael Evans",
+     "team": "Iowa",
+     "entered_via": "summary"
+    },
+    {
+     "id": "174-S07",
+     "line": null,
+     "seed": null,
+     "name": "Zach Epperly",
+     "team": "Virginia Tech",
+     "entered_via": "summary"
+    },
+    {
+     "id": "174-S08",
+     "line": null,
+     "seed": null,
+     "name": "Kurtis Julson",
+     "team": "North Dakota State",
+     "entered_via": "summary"
+    }
+   ],
+   "consolation_sheet": null,
+   "placements": [
+    {
+     "place": 1,
+     "wrestler_id": "174-S01",
+     "name": "Matt Brown",
+     "team": "Penn State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 2,
+     "wrestler_id": "174-S02",
+     "name": "Tyler Wilps",
+     "team": "Pittsburgh",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 3,
+     "wrestler_id": "174-S03",
+     "name": "Robert Kokesh",
+     "team": "Nebraska",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 4,
+     "wrestler_id": "174-S04",
+     "name": "Logan Storley",
+     "team": "Minnesota",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 5,
+     "wrestler_id": "174-S05",
+     "name": "Kyle Crutchmer",
+     "team": "Oklahoma State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 6,
+     "wrestler_id": "174-S06",
+     "name": "Michael Evans",
+     "team": "Iowa",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 7,
+     "wrestler_id": "174-S07",
+     "name": "Zach Epperly",
+     "team": "Virginia Tech",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 8,
+     "wrestler_id": "174-S08",
+     "name": "Kurtis Julson",
+     "team": "North Dakota State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    }
+   ],
+   "notes": [
+    "bracket pages have no text layer in the source; placements from summary page only"
+   ],
+   "source_discrepancies": []
+  },
+  {
+   "weight": 184,
+   "draw_lines": null,
+   "entrant_count": 8,
+   "entrants": [
+    {
+     "id": "184-S01",
+     "line": null,
+     "seed": null,
+     "name": "Gabe Dean",
+     "team": "Cornell",
+     "entered_via": "summary"
+    },
+    {
+     "id": "184-S02",
+     "line": null,
+     "seed": null,
+     "name": "Nathaniel Brown",
+     "team": "Lehigh",
+     "entered_via": "summary"
+    },
+    {
+     "id": "184-S03",
+     "line": null,
+     "seed": null,
+     "name": "Victor Avery",
+     "team": "Edinboro",
+     "entered_via": "summary"
+    },
+    {
+     "id": "184-S04",
+     "line": null,
+     "seed": null,
+     "name": "Blake Stauffer",
+     "team": "Arizona State",
+     "entered_via": "summary"
+    },
+    {
+     "id": "184-S05",
+     "line": null,
+     "seed": null,
+     "name": "Kenny Courts",
+     "team": "Ohio State",
+     "entered_via": "summary"
+    },
+    {
+     "id": "184-S06",
+     "line": null,
+     "seed": null,
+     "name": "Hayden Zillmer",
+     "team": "North Dakota State",
+     "entered_via": "summary"
+    },
+    {
+     "id": "184-S07",
+     "line": null,
+     "seed": null,
+     "name": "Willie Miklus",
+     "team": "Missouri",
+     "entered_via": "summary"
+    },
+    {
+     "id": "184-S08",
+     "line": null,
+     "seed": null,
+     "name": "Timothy Dudley",
+     "team": "Nebraska",
+     "entered_via": "summary"
+    }
+   ],
+   "consolation_sheet": null,
+   "placements": [
+    {
+     "place": 1,
+     "wrestler_id": "184-S01",
+     "name": "Gabe Dean",
+     "team": "Cornell",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 2,
+     "wrestler_id": "184-S02",
+     "name": "Nathaniel Brown",
+     "team": "Lehigh",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 3,
+     "wrestler_id": "184-S03",
+     "name": "Victor Avery",
+     "team": "Edinboro",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 4,
+     "wrestler_id": "184-S04",
+     "name": "Blake Stauffer",
+     "team": "Arizona State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 5,
+     "wrestler_id": "184-S05",
+     "name": "Kenny Courts",
+     "team": "Ohio State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 6,
+     "wrestler_id": "184-S06",
+     "name": "Hayden Zillmer",
+     "team": "North Dakota State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 7,
+     "wrestler_id": "184-S07",
+     "name": "Willie Miklus",
+     "team": "Missouri",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 8,
+     "wrestler_id": "184-S08",
+     "name": "Timothy Dudley",
+     "team": "Nebraska",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    }
+   ],
+   "notes": [
+    "bracket pages have no text layer in the source; placements from summary page only"
+   ],
+   "source_discrepancies": []
+  },
+  {
+   "weight": 197,
+   "draw_lines": null,
+   "entrant_count": 8,
+   "entrants": [
+    {
+     "id": "197-S01",
+     "line": null,
+     "seed": null,
+     "name": "Kyven Gadson",
+     "team": "Iowa State",
+     "entered_via": "summary"
+    },
+    {
+     "id": "197-S02",
+     "line": null,
+     "seed": null,
+     "name": "Kyle Snyder",
+     "team": "Ohio State",
+     "entered_via": "summary"
+    },
+    {
+     "id": "197-S03",
+     "line": null,
+     "seed": null,
+     "name": "Morgan McIntosh",
+     "team": "Penn State",
+     "entered_via": "summary"
+    },
+    {
+     "id": "197-S04",
+     "line": null,
+     "seed": null,
+     "name": "Scott Schiller",
+     "team": "Minnesota",
+     "entered_via": "summary"
+    },
+    {
+     "id": "197-S05",
+     "line": null,
+     "seed": null,
+     "name": "J'den Cox",
+     "team": "Missouri",
+     "entered_via": "summary"
+    },
+    {
+     "id": "197-S06",
+     "line": null,
+     "seed": null,
+     "name": "Conner Hartmann",
+     "team": "Duke",
+     "entered_via": "summary"
+    },
+    {
+     "id": "197-S07",
+     "line": null,
+     "seed": null,
+     "name": "Nathan Burak",
+     "team": "Iowa",
+     "entered_via": "summary"
+    },
+    {
+     "id": "197-S08",
+     "line": null,
+     "seed": null,
+     "name": "Max Huntley",
+     "team": "Michigan",
+     "entered_via": "summary"
+    }
+   ],
+   "consolation_sheet": null,
+   "placements": [
+    {
+     "place": 1,
+     "wrestler_id": "197-S01",
+     "name": "Kyven Gadson",
+     "team": "Iowa State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 2,
+     "wrestler_id": "197-S02",
+     "name": "Kyle Snyder",
+     "team": "Ohio State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 3,
+     "wrestler_id": "197-S03",
+     "name": "Morgan McIntosh",
+     "team": "Penn State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 4,
+     "wrestler_id": "197-S04",
+     "name": "Scott Schiller",
+     "team": "Minnesota",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 5,
+     "wrestler_id": "197-S05",
+     "name": "J'den Cox",
+     "team": "Missouri",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 6,
+     "wrestler_id": "197-S06",
+     "name": "Conner Hartmann",
+     "team": "Duke",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 7,
+     "wrestler_id": "197-S07",
+     "name": "Nathan Burak",
+     "team": "Iowa",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 8,
+     "wrestler_id": "197-S08",
+     "name": "Max Huntley",
+     "team": "Michigan",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    }
+   ],
+   "notes": [
+    "bracket pages have no text layer in the source; placements from summary page only"
+   ],
+   "source_discrepancies": []
+  },
+  {
+   "weight": 285,
+   "draw_lines": null,
+   "entrant_count": 8,
+   "entrants": [
+    {
+     "id": "285-S01",
+     "line": null,
+     "seed": null,
+     "name": "Nick Gwiazdowski",
+     "team": "North Carolina State",
+     "entered_via": "summary"
+    },
+    {
+     "id": "285-S02",
+     "line": null,
+     "seed": null,
+     "name": "Adam Coon",
+     "team": "Michigan",
+     "entered_via": "summary"
+    },
+    {
+     "id": "285-S03",
+     "line": null,
+     "seed": null,
+     "name": "Michael McMullan",
+     "team": "Northwestern",
+     "entered_via": "summary"
+    },
+    {
+     "id": "285-S04",
+     "line": null,
+     "seed": null,
+     "name": "Connor Medbery",
+     "team": "Wisconsin",
+     "entered_via": "summary"
+    },
+    {
+     "id": "285-S05",
+     "line": null,
+     "seed": null,
+     "name": "Bobby Telford",
+     "team": "Iowa",
+     "entered_via": "summary"
+    },
+    {
+     "id": "285-S06",
+     "line": null,
+     "seed": null,
+     "name": "Jimmy Lawson",
+     "team": "Penn State",
+     "entered_via": "summary"
+    },
+    {
+     "id": "285-S07",
+     "line": null,
+     "seed": null,
+     "name": "Ty Walz",
+     "team": "Virginia Tech",
+     "entered_via": "summary"
+    },
+    {
+     "id": "285-S08",
+     "line": null,
+     "seed": null,
+     "name": "Michael Kroelis",
+     "team": "Minnesota",
+     "entered_via": "summary"
+    }
+   ],
+   "consolation_sheet": null,
+   "placements": [
+    {
+     "place": 1,
+     "wrestler_id": "285-S01",
+     "name": "Nick Gwiazdowski",
+     "team": "North Carolina State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 2,
+     "wrestler_id": "285-S02",
+     "name": "Adam Coon",
+     "team": "Michigan",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 3,
+     "wrestler_id": "285-S03",
+     "name": "Michael McMullan",
+     "team": "Northwestern",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 4,
+     "wrestler_id": "285-S04",
+     "name": "Connor Medbery",
+     "team": "Wisconsin",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 5,
+     "wrestler_id": "285-S05",
+     "name": "Bobby Telford",
+     "team": "Iowa",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 6,
+     "wrestler_id": "285-S06",
+     "name": "Jimmy Lawson",
+     "team": "Penn State",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 7,
+     "wrestler_id": "285-S07",
+     "name": "Ty Walz",
+     "team": "Virginia Tech",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    },
+    {
+     "place": 8,
+     "wrestler_id": "285-S08",
+     "name": "Michael Kroelis",
+     "team": "Minnesota",
+     "match_id": null,
+     "as": null,
+     "method": "summary_only"
+    }
+   ],
+   "notes": [
+    "bracket pages have no text layer in the source; placements from summary page only"
+   ],
+   "source_discrepancies": []
+  }
+ ],
+ "matches": []
+}

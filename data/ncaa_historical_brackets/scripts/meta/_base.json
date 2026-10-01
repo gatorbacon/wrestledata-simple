@@ -1,0 +1,38 @@
+{
+ "schema_version": "hist-1.0",
+ "event": "NCAA Wrestling Championships",
+ "source": {
+  "url_pattern": "https://www.wrestlingstats.com/ncaa/pdf/brackets/NCAA%20{year}.pdf",
+  "compiled_by": "wrestlingstats.com",
+  "incomplete_consolation_years": [
+   1929,
+   1932,
+   1934,
+   1937,
+   1938,
+   1941
+  ]
+ },
+ "format": {
+  "consolation_system": "bergman",
+  "consolation_rules": "After the final, every wrestler who lost to the champion is eligible for 2nd. They wrestle back in the order they lost (earliest loser first, 'WRB' bouts); the survivor meets the finalist loser in the 'Second' bout. For 3rd, the loser of the Second bout meets anyone who lost to the 2nd-place winner and has not already been eliminated; if nobody is eligible the Second-bout loser is awarded 3rd automatically (no bout).",
+  "bout_order_known": false
+ },
+ "result_legend": {
+  "FALL": "Fall (pin). Bracket shows 'Fall m:ss'; summary page sometimes writes 'WBF m:ss' for the same bout",
+  "TA": "Time-advantage decision (riding-time era; time shown is the winner's net advantage)",
+  "DEC": "Referee's decision",
+  "MFF": "Medical forfeit ('Med FFT')",
+  "DEF": "Win by default ('WDF')",
+  "BYE": "Advanced on a bye (one side of the pairing empty)",
+  "AUTO": "Place awarded automatically, no bout",
+  "ot": "true when the result text carries 'OT' (overtime period)"
+ },
+ "id_conventions": {
+  "wrestler": "<weight>-<nn> numbered top to bottom of the draw",
+  "championship_match": "<weight>-<round>-<bout#> numbered top to bottom; the final is <weight>-F",
+  "consolation_match": "<weight>-P<place>-<stage>[-nn], e.g. 145-P2-SF-01 (wrestle-back semi for 2nd), 145-P2-F (Second-place bout), 145-P3-F (Third-place bout)",
+  "from": "{line:n} = draw line; {winner_of:id} / {loser_of:id} = participant came from that bout",
+  "winner_to/loser_to": "where that wrestler appeared next (null = done). Filled from what actually happened, since Bergman wrestle-backs are only determined after the final"
+ }
+}
