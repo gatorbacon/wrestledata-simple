@@ -44,7 +44,7 @@ Everything the frontend reads lives under `frontend/wrestledata-ui/public/data/`
 | Page | File | Description |
 |---|---|---|
 | Homepage | `index.html` | Weight selector, DPG leaders, xTP team rankings, stat leaders (pins/techs/majors/wins), Hodge watch |
-| Wrestler Profile | `wrestler.html` | Per-wrestler DPG, skill indices, match impact timeline, full match history |
+| Wrestler Profile | `wrestler.html` | Per-wrestler DPG, skill indices, match impact timeline, full match history. **Career view** (2026-10-01): a Career row under the season table / Career chip on phones (2+ seasons only) switches everything below to career numbers, computed in the browser by `buildCareerProfile()` in `app.js` from the per-season profiles the season table already fetches (no extra file). Record / vs Top 10 / pins / techs / majors = sums; bonus % = (pins+techs+majors)/wins; DPG = Σ(season DPG × `mat_value.matches`)/Σ matches (same counts as the season rows); SI+/DF+/APR+ = match-weighted season values (labelled); no national percentile for a career; trajectory chart joins the seasons with a divider + year label; match list = newest season first with a divider per season |
 | NCAA Live Tracker | `ncaa_live.html` | Tournament bracket replay — team leaderboard, projection history chart, big moments feed, by-weight cards, Lazarus Award |
 | Seed Analysis | `ncaa_report.html` | Historical seeding vs. performance report |
 | Scoring Trends | `ncaa_scoring_trends.html` | Bonus and scoring pattern analysis across rounds/years |

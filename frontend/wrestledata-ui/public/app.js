@@ -251,6 +251,74 @@ async function loadWrestlerProfile(id) {
 // showing, not just the season the page loaded with.
 let _currentSeasonProfile = null;
 
+// ===============================
+// Career view (TJ, 2026-10-01): a "Career" row under the season table (and a
+// "Career" chip on phones) switches everything below to career numbers. Built
+// in the browser from the per-season profiles the season table already
+// fetches for its DPG / Bonus % columns (shared fetchSeasonProfile cache), so
+// it costs no extra download. Exact, not estimated:
+//   record / vs Top 10 / pins / techs / majors  = sums over seasons
+//   bonus % = (pins + techs + majors) / wins,  pin % = pins / wins
+//   DPG = average over every DPG match = sum(season DPG x season DPG matches) /
+//         sum(DPG matches) -- the same match counts the season rows use
+//   SI+ / DF+ / APR+ = season values weighted by matches (a summary, labelled)
+//   matches = every season's match list, tagged with its season
+// Only shown when the wrestler has 2+ seasons.
+// ===============================
+const _careerCache = {};
+
+function buildCareerProfile(data) {
+  const key = String(data.wrestler_id);
+  if (!_careerCache[key]) _careerCache[key] = (async () => {
+    const summary = data.season_summary || [];
+    if (summary.length < 2) return null;
+    const profiles = (await Promise.all(summary.map(s => fetchSeasonProfile(s.season, s.wrestler_id)))).filter(Boolean);
+    if (profiles.length < 2) return null;
+    let w = 0, l = 0, tw = 0, tl = 0, hasTop = false, pins = 0, techs = 0, majors = 0, mvSum = 0, mvN = 0;
+    const skill = { si_plus: [0, 0], df_plus: [0, 0], apr_plus: [0, 0] };
+    const matches = [], seasons = [];
+    profiles.forEach(p => {
+      const rec = parseRecord((p.record || {}).overall);
+      if (rec) { w += rec.wins; l += rec.losses; }
+      const top = parseRecord((p.record || {}).vs_top10);
+      if (top) { tw += top.wins; tl += top.losses; hasTop = true; }
+      const m = p.metrics || {};
+      pins += m.pins || 0; techs += m.techs || 0; majors += m.majors || 0;
+      const mv = m.mat_value || {};
+      const ml = p.match_list || [];
+      const n = mv.matches || ml.filter(x => (x.mv_impact_v1 ?? x.mv_impact) != null).length;
+      if (mv.mv_avg !== null && mv.mv_avg !== undefined && n) { mvSum += mv.mv_avg * n; mvN += n; }
+      Object.keys(skill).forEach(k => { if (m[k] != null && ml.length) { skill[k][0] += m[k] * ml.length; skill[k][1] += ml.length; } });
+      ml.forEach(x => matches.push({ ...x, _season: p.year }));
+      seasons.push({ year: p.year, team: p.team, record: (p.record || {}).overall });
+    });
+    seasons.sort((a, b) => b.year - a.year);
+    const years = seasons.map(x => x.year);
+    const teams = [...new Set(seasons.map(x => x.team).filter(Boolean))];
+    const metrics = { pins, techs, majors,
+      bonus_rate: w ? (pins + techs + majors) / w : null, pin_rate: w ? pins / w : null,
+      mat_value: { mv_avg: mvN ? mvSum / mvN : null, matches: mvN } };
+    Object.keys(skill).forEach(k => { metrics[k] = skill[k][1] ? skill[k][0] / skill[k][1] : null; });
+    return { _career: true, year: "Career", name: data.name, wrestler_id: data.wrestler_id,
+      weight_class: data.weight_class, team: teams.join(", "), teams, grade: "",
+      yearsLabel: `${Math.min(...years)}–${Math.max(...years)}`, seasons,
+      record: { overall: `${w}-${l}`, vs_top10: hasTop ? `${tw}-${tl}` : null },
+      metrics, match_list: matches };
+  })();
+  return _careerCache[key];
+}
+
+function showCareer(data) {
+  buildCareerProfile(data).then(cp => {
+    if (!cp) return;
+    _currentSeasonProfile = cp;
+    renderSeasonBody(cp);
+    renderMobileChipSubtitle(cp);
+    selectMobileSeasonChip("career");
+    selectDesktopSeasonRow("career");
+  });
+}
+
 function renderProfile(data) {
   renderHeader(data);
   renderMobileIdentity(data);
@@ -436,6 +504,17 @@ function renderMobileSeasonChips(data) {
     row.appendChild(chip);
   });
 
+  buildCareerProfile(data).then(cp => {
+    if (!cp) return;
+    const chip = document.createElement("button");
+    chip.type = "button";
+    chip.className = "wp2m-chip wp2m-chip--career";
+    chip.dataset.wrestlerId = "career";
+    chip.textContent = "Career";
+    chip.addEventListener("click", () => { if (!chip.classList.contains("active")) showCareer(data); });
+    row.appendChild(chip);
+  });
+
   renderMobileChipSubtitle(data);
 }
 
@@ -456,6 +535,12 @@ function selectDesktopSeasonRow(wrestlerId) {
 function renderMobileChipSubtitle(profile) {
   const el = document.getElementById("wp2m-chip-subtitle");
   if (!el) return;
+  if (profile._career) {
+    el.innerHTML = `<span class="wp2m-chip-record">${safe(profile.record.overall)}</span> · ` +
+      `${profile.seasons.length} seasons (${profile.yearsLabel}) · ${safe(profile.team)}`;
+    if (_sheetOpen) renderMobileSeasonSheet(profile);
+    return;
+  }
   const record = safe((profile.record || {}).overall);
   const team = safe(profile.team);
   const grade = abbrevGrade(profile.grade) || "";
@@ -477,14 +562,25 @@ function renderMobileSeasonSheet(profile) {
   const body = document.getElementById("wp2m-sheet-body");
   if (!title || !body) return;
 
-  title.textContent = `${safe(profile.year)} season`;
+  title.textContent = profile._career ? `Career (${profile.yearsLabel})` : `${safe(profile.year)} season`;
 
   const record = profile.record || {};
   const m = profile.metrics || {};
   const mv = m.mat_value || {};
   const location = formatLocation(profile.hometown, profile.high_school);
 
-  const rows = [
+  const rows = profile._career ? [
+    ["Record", safe(record.overall)],
+    ["Seasons", `${profile.seasons.length} (${profile.yearsLabel})`],
+    ["Team", safe(profile.team)],
+    ["DPG", fmtDpg(mv.mv_avg)],
+    ["Bonus %", m.bonus_rate !== null && m.bonus_rate !== undefined ? percentFormatter(m.bonus_rate) : "—"],
+    ["Pin %", m.pin_rate !== null && m.pin_rate !== undefined ? percentFormatter(m.pin_rate) : "—"],
+    ["Pins", safe(m.pins)],
+    ["Tech falls", safe(m.techs)],
+    ["Majors", safe(m.majors)],
+    ["vs Top 10", safe(record.vs_top10)],
+  ] : [
     ["Record", safe(record.overall)],
     ["Rank / weight", profile.current_rank && profile.weight_class ? `#${profile.current_rank} at ${profile.weight_class}` : safe(profile.current_rank)],
     ["Team", safe(profile.team)],
@@ -635,6 +731,24 @@ async function renderSeasonSelector(data) {
 
     tbody.appendChild(tr);
   });
+
+  const cp = await buildCareerProfile(data);
+  if (cp) {
+    const tr = document.createElement("tr");
+    tr.className = "season-row season-row--career";
+    tr.dataset.wrestlerId = "career";
+    const m = cp.metrics;
+    [["Career", ""], [`${cp.seasons.length} seasons (${cp.yearsLabel})`, ""], ["", ""], ["", "num"],
+     [safe(cp.record.overall), "num"], [fmtDpg(m.mat_value.mv_avg), "num"],
+     [m.bonus_rate !== null ? percentFormatter(m.bonus_rate) : "—", "num"]].forEach(([text, cls]) => {
+      const td = document.createElement("td");
+      if (cls) td.className = cls;
+      td.textContent = text;
+      tr.appendChild(td);
+    });
+    tr.addEventListener("click", () => { if (!tr.classList.contains("season-row--active")) showCareer(data); });
+    tbody.appendChild(tr);
+  }
 }
 
 // ===============================
@@ -685,8 +799,8 @@ function renderSeasonBody(data) {
   renderBoxScoreCard(data);
   renderSkillCard(data);
   renderRollingMbtTimeline(data, mv.mv_avg);
-  renderMatchHistory(data.match_list || []);
-  renderMobileMatchList(data.match_list || [], season);
+  renderMatchHistory(data.match_list || [], data._career ? data.seasons : null);
+  renderMobileMatchList(data.match_list || [], season, data._career ? data.seasons : null);
 }
 
 // ===============================
@@ -708,6 +822,19 @@ function renderMobileDpgStrip(data, mv, season) {
   const weightClass = data.weight_class;
   const isElite = mv.mv_avg >= 5.5;
   const leaderboardUrl = weightClass ? `/leaderboards/dpg.html?weight=${weightClass}` : "/leaderboards/dpg.html";
+
+  if (data._career) {      // no national percentile for a career -- number + match count only
+    strip.innerHTML =
+      `<div class="wp2m-dpg-row">` +
+      `<span class="wp2m-dpg-label">Career DPG<span class="tooltip-icon" data-tooltip="mv">ⓘ</span></span>` +
+      `<span class="wp2m-dpg-percentile-label">${mv.matches} matches</span>` +
+      `</div>` +
+      `<div class="wp2m-dpg-row wp2m-dpg-row--main"><span class="wp2m-dpg-number-group">` +
+      `<span class="wp2m-dpg-number">${fmtDpg(mv.mv_avg)}</span>` +
+      (isElite ? `<span class="dpg-elite-badge">Elite</span>` : "") +
+      `</span></div>`;
+    return;
+  }
 
   strip.innerHTML =
     `<div class="wp2m-dpg-row">` +
@@ -780,6 +907,18 @@ function renderDpgCard(data, mv, season) {
   heroNumber.className = "wp2-dpg-hero";
   heroNumber.textContent = fmtDpg(mv.mv_avg);
   card.appendChild(heroNumber);
+
+  if (data._career) {      // no national percentile for a career -- label + match count only
+    const lbl = document.createElement("div");
+    lbl.className = "wp2-dpg-rank-label";
+    lbl.textContent = `Career · ${data.yearsLabel} · ${mv.matches} matches`;
+    card.appendChild(lbl);
+    const def = document.createElement("p");
+    def.className = "wp2-dpg-definition";
+    def.textContent = "Extra dual points per match vs. what a typical wrestler gets against that same opponent, averaged over every match of his career.";
+    card.appendChild(def);
+    return;
+  }
 
   const rankLabel = document.createElement("div");
   rankLabel.className = "wp2-dpg-rank-label";
@@ -860,7 +999,7 @@ function renderBoxScoreCard(data) {
   card.innerHTML = "";
   const headerRow = document.createElement("div");
   headerRow.className = "wp2-subhead";
-  headerRow.textContent = "Season box score";
+  headerRow.textContent = data._career ? "Career box score" : "Season box score";
   card.appendChild(headerRow);
 
   const record = data.record || {};
@@ -947,7 +1086,9 @@ function renderSkillCard(data) {
 
   const caption = document.createElement("p");
   caption.className = "wp2-skill-caption";
-  caption.textContent = `100 = D1 ${safe(data.weight_class)}-lb average`;
+  caption.textContent = data._career
+    ? "Career: each season's value, weighted by matches · 100 = D1 average at his weight that season"
+    : `100 = D1 ${safe(data.weight_class)}-lb average`;
   card.appendChild(caption);
 }
 
@@ -969,8 +1110,9 @@ function renderRollingMbtTimeline(data, seasonMV) {
 
   const avgLabel = document.getElementById("match-impact-avg-label");
   const avgSuffix = seasonMV !== null && seasonMV !== undefined ? ` (${fmtDpg(seasonMV)})` : "";
+  const avgWord = data._career ? "Career" : "Season";
   avgLabel.innerHTML =
-    `<span class="wp2m-label-full">Season avg${avgSuffix}</span>` +
+    `<span class="wp2m-label-full">${avgWord} avg${avgSuffix}</span>` +
     `<span class="wp2m-label-short">Avg${avgSuffix}</span>`;
 
   const season = String(data.year || "2026");
@@ -979,7 +1121,7 @@ function renderRollingMbtTimeline(data, seasonMV) {
   const matches = (data.match_list || [])
     .map(m => {
       const impact = m.mv_impact_v1 !== undefined ? m.mv_impact_v1 : m.mv_impact;
-      return { date: m.date || "", mvImpact: impact, opponent: m.opponent_name, opponentRank: m.opponent_rank, result: m.result, method: m.method };
+      return { date: m.date || "", mvImpact: impact, opponent: m.opponent_name, opponentRank: m.opponent_rank, result: m.result, method: m.method, season: m._season };
     })
     .filter(m => m.mvImpact !== null && m.mvImpact !== undefined)
     .sort((a, b) => (a.date || "").localeCompare(b.date || ""));
@@ -993,7 +1135,7 @@ function renderRollingMbtTimeline(data, seasonMV) {
     return;
   }
 
-  fetchRollingMbt(season).then(allTimelines => {
+  (data._career ? Promise.resolve({}) : fetchRollingMbt(season)).then(allTimelines => {
     container.innerHTML = "";
     const toISO = s => { if (!s) return s; if (s.includes('-')) return s; const [m, d, y] = s.split('/'); return `${y}-${m.padStart(2,'0')}-${d.padStart(2,'0')}`; };
     const mbtByDate = {};
@@ -1042,6 +1184,33 @@ function renderRollingMbtTimeline(data, seasonMV) {
       gl.setAttribute("stroke-width", "1");
       svg.appendChild(gl);
     });
+
+    // Career: a thin divider + year label where each season starts.
+    if (data._career) {
+      const starts = matches.map((m, i) => i).filter(i => i === 0 || matches[i].season !== matches[i - 1].season);
+      const startX = i => i === 0 ? padding.left : (xOf(i - 1) + xOf(i)) / 2;
+      starts.forEach((i, k) => {
+        const m = matches[i];
+        const x = startX(i);
+        const nextX = k + 1 < starts.length ? startX(starts[k + 1]) : padding.left + plotWidth;
+        const roomForLabel = nextX - x >= (isMobileChart ? 26 : 34);   // a 1-2 match season: divider only
+        if (i > 0) {
+          const vl = document.createElementNS("http://www.w3.org/2000/svg", "line");
+          vl.setAttribute("x1", x); vl.setAttribute("x2", x);
+          vl.setAttribute("y1", padding.top - (isMobileChart ? 4 : 10)); vl.setAttribute("y2", padding.top + plotHeight);
+          vl.setAttribute("stroke", "rgba(33,28,22,0.28)"); vl.setAttribute("stroke-width", "1");
+          vl.setAttribute("stroke-dasharray", "3 3");
+          svg.appendChild(vl);
+        }
+        if (!roomForLabel) return;
+        const tx = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        tx.setAttribute("x", x + 4); tx.setAttribute("y", padding.top - (isMobileChart ? 3 : 12));
+        tx.setAttribute("font-size", isMobileChart ? "9" : "11"); tx.setAttribute("font-weight", "600");
+        tx.setAttribute("fill", "rgba(33,28,22,0.55)");
+        tx.textContent = m.season;
+        svg.appendChild(tx);
+      });
+    }
 
     if (seasonMV !== null && seasonMV !== undefined) {
       const flatY = yOf(seasonMV);
@@ -1118,7 +1287,7 @@ function renderRollingMbtTimeline(data, seasonMV) {
         m.date, m.opponent || "",
         `DPG Impact: ${fmtImpact(m.mvImpact)}`,
         `5-match avg DPG: ${rollingVal !== null ? fmtImpact(rollingVal) : "—"}`,
-        `Season DPG: ${seasonMV !== null && seasonMV !== undefined ? fmtDpg(seasonMV) : "—"}`,
+        `${avgWord} DPG: ${seasonMV !== null && seasonMV !== undefined ? fmtDpg(seasonMV) : "—"}`,
       ];
       const tooltipY = b.isPositive ? zeroY - b.barHeight - 12 : zeroY + b.barHeight + 12;
       showChartTooltip(e, tooltipLines.join('\n'), svg, b.x, tooltipY, m.mvImpact);
@@ -1219,13 +1388,36 @@ function formatDateMMDDYY(dateStr) {
   return `${month}-${day}-${year}`;
 }
 
-function renderMatchHistory(matches) {
+// Career (seasons given): newest season first, a divider row per season,
+// matches in date order within each season (same as a single season).
+function careerSort(matches) {
+  return [...matches].sort((a, b) => (b._season - a._season) || (a.date || "").localeCompare(b.date || ""));
+}
+
+function seasonDividerText(seasons, year) {
+  const s = (seasons || []).find(x => String(x.year) === String(year)) || {};
+  return [year, s.team, s.record].filter(Boolean).join(" · ");
+}
+
+function renderMatchHistory(matches, seasons) {
   const tbody = document.querySelector("#match-table tbody");
   tbody.innerHTML = "";
 
-  const sortedMatches = [...matches].sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+  const sortedMatches = seasons ? careerSort(matches)
+    : [...matches].sort((a, b) => (a.date || "").localeCompare(b.date || ""));
 
+  let lastSeason = null;
   sortedMatches.forEach((match) => {
+    if (seasons && match._season !== lastSeason) {
+      lastSeason = match._season;
+      const dr = document.createElement("tr");
+      dr.className = "match-season-divider";
+      const td = document.createElement("td");
+      td.colSpan = 7;
+      td.textContent = seasonDividerText(seasons, match._season);
+      dr.appendChild(td);
+      tbody.appendChild(dr);
+    }
     const tr = document.createElement("tr");
 
     const dateTd = document.createElement("td");
@@ -1297,7 +1489,7 @@ function formatDateShort(dateStr) {
   return date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
 }
 
-function renderMobileMatchList(matches, season) {
+function renderMobileMatchList(matches, season, seasons) {
   const list = document.getElementById("wp2m-match-list");
   const yearEl = document.getElementById("wp2m-matches-year");
   if (yearEl) yearEl.textContent = safe(season);
@@ -1308,9 +1500,16 @@ function renderMobileMatchList(matches, season) {
     return;
   }
 
-  const sortedMatches = [...matches].sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+  const sortedMatches = seasons ? careerSort(matches)
+    : [...matches].sort((a, b) => (a.date || "").localeCompare(b.date || ""));
 
+  let lastSeason = null;
   list.innerHTML = sortedMatches.map(match => {
+    let divider = "";
+    if (seasons && match._season !== lastSeason) {
+      lastSeason = match._season;
+      divider = `<div class="wp2m-match-season-divider">${seasonDividerText(seasons, match._season)}</div>`;
+    }
     const isWin = match.result === "W";
     const { code } = matchMethodCode(match.result, match.method);
     const pillLabel = code === "FALL" ? "F" : code;
@@ -1343,7 +1542,7 @@ function renderMobileMatchList(matches, season) {
     const tag = href ? "a" : "div";
     const hrefAttr = href ? ` href="${href}"` : "";
 
-    return (
+    return divider + (
       `<${tag} class="wp2m-match-row"${hrefAttr}>` +
       `<div class="wp2m-match-date">${formatDateShort(match.date)}</div>` +
       `<div class="wp2m-match-opponent">` +
