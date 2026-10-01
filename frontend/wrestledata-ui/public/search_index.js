@@ -66487,21 +66487,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Michael Caliendo III",
-    "first_name": "Michael",
-    "last_name": "Caliendo III",
-    "secondary": "North Dakota State · 165",
-    "url": "/wrestler.html?id=20122596132",
-    "searchTokens": [
-      "caliendo",
-      "iii",
-      "michael"
-    ],
-    "priority": 1,
-    "rank": null
-  },
-  {
-    "type": "wrestler",
     "name": "Alex Kowalchyk",
     "first_name": "Alex",
     "last_name": "Kowalchyk",
