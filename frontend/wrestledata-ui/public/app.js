@@ -408,9 +408,14 @@ function renderHeader(data) {
     chipsEl.appendChild(locChip);
   }
 
-  // Compare pill: opens the Compare tool with this wrestler filled in as "A"
-  // (any season's id works there). Mobile gets its own in renderMobileIdentity.
-  if (data.wrestler_id) chipsEl.appendChild(compareLink(data, "wp2-chip wp2-chip--compare"));
+  // Compare button: opens the Compare tool with this wrestler filled in as "A"
+  // (any season's id works there). A filled button at the right edge of the
+  // header -- an action, so it doesn't sit among the fact chips. Mobile gets
+  // its own in renderMobileIdentity.
+  const headerRow = chipsEl.closest(".header-row");
+  if (headerRow && data.wrestler_id && !headerRow.querySelector(".wp2-compare-btn")) {
+    headerRow.appendChild(compareLink(data, "wp2-compare-btn"));
+  }
 
   const photoEl = document.getElementById("wrestler-photo");
   if (data.photo_url) {
@@ -492,7 +497,7 @@ function compareLink(data, className) {
   const a = document.createElement("a");
   a.className = className;
   a.href = `/tools/compare.html?a=${encodeURIComponent(data.wrestler_id)}`;
-  a.textContent = "Compare ⇄";
+  a.innerHTML = `<span class="compare-btn-icon" aria-hidden="true">⇄</span>Compare`;
   a.title = `Compare ${safe(data.name)} with another wrestler`;
   return a;
 }
