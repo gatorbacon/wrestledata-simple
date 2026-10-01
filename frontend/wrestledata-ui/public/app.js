@@ -409,12 +409,12 @@ function renderHeader(data) {
   }
 
   // Compare button: opens the Compare tool with this wrestler filled in as "A"
-  // (any season's id works there). A filled button at the right edge of the
-  // header -- an action, so it doesn't sit among the fact chips. Mobile gets
-  // its own in renderMobileIdentity.
-  const headerRow = chipsEl.closest(".header-row");
-  if (headerRow && data.wrestler_id && !headerRow.querySelector(".wp2-compare-btn")) {
-    headerRow.appendChild(compareLink(data, "wp2-compare-btn"));
+  // (any season's id works there). A filled button right after the name --
+  // an action, so it doesn't sit among the fact chips. Mobile gets its own
+  // in renderMobileIdentity.
+  const nameRow = document.getElementById("wrestler-name-row");
+  if (nameRow && data.wrestler_id && !nameRow.querySelector(".wp2-compare-btn")) {
+    nameRow.appendChild(compareLink(data, "wp2-compare-btn"));
   }
 
   const photoEl = document.getElementById("wrestler-photo");
@@ -485,9 +485,9 @@ function renderMobileIdentity(data) {
     }
   }
 
-  const identityEl = document.getElementById("wp2m-identity");
-  if (identityEl && data.wrestler_id && !identityEl.querySelector(".wp2m-compare")) {
-    identityEl.appendChild(compareLink(data, "wp2m-compare"));
+  const nameRowEl = document.getElementById("wp2m-name-row");
+  if (nameRowEl && data.wrestler_id && !nameRowEl.querySelector(".wp2m-compare")) {
+    nameRowEl.appendChild(compareLink(data, "wp2m-compare"));
   }
 
   renderMobileCareerLine(data);
