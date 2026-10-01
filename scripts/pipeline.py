@@ -214,7 +214,46 @@ def build_steps(track, season):
             [py, "scripts/rankings/build_wrestler_profiles.py", "-season", season, "-league", "hs", "-state", state, "-gender", "boys"],
             [py, "scripts/rankings/build_wrestler_profiles.py", "-season", season, "-league", "hs", "-state", state, "-gender", "girls"],
         ]
+    # NCAA careers (data/careers/ncaa_men/): a season's wrestlers only join
+    # their careers when link_ncaa_season.py runs, and the profile page's
+    # season table, Career view and active/retired default all read those
+    # links (docs/matsavant.md, "Starting a New NCAA Season"). Linking runs
+    # BEFORE the profile build so the new season's own profiles get the full
+    # season_summary. Safe to re-run every week: wrestlers already linked to
+    # this season are skipped, and new roster additions get linked. Transfers
+    # are never auto-linked -- they're printed and written to
+    # data/career_linking_logs/ncaa_men_transfer_candidates_{season}.json for
+    # review (review_ncaa_transfer_candidates.py, then merge_careers.py).
+    # Current season only: for an older season the lookback finds no earlier
+    # career, so every wrestler would get a brand-new duplicate career.
+    if is_ncaa and season == DEFAULT_SEASON:
+        steps.append({
+            "name": "Link Season into Careers (review any flagged transfers)",
+            "cmds": [[py, "scripts/careers/link_ncaa_season.py", "--season", season,
+                      "--anchor-season", str(int(season) - 1)]],
+        })
+    elif is_ncaa:
+        steps.append({
+            "name": "Link Season into Careers", "cmds": [], "disabled": True,
+            "note": f"Skipped for backfill season {season} -- link_ncaa_season.py only links a season onto "
+                    f"EARLIER careers; for a backfill it would create a duplicate career for every wrestler.",
+        })
+
     steps.append({"name": "Build Wrestler Profiles", "cmds": wrestler_profiles_cmds()})
+
+    # season_summary (the profile's season table, and what decides the
+    # Career-vs-season default view) is baked into every season's profile
+    # files at build time. After linking, the OTHER seasons of each newly
+    # linked career still hold the old summary until this patches them
+    # (only that key is touched). Then the Compare tool's career map.
+    if is_ncaa:
+        steps.append({
+            "name": "Refresh season_summary (all seasons) + Career Seasons Map",
+            "cmds": [
+                [py, "scripts/rankings/refresh_season_summary.py"],
+                [py, "scripts/reports/build_career_seasons.py"],
+            ],
+        })
 
     # NCAA's search index is a single shared, non-season-scoped file
     # (frontend/wrestledata-ui/public/search_index.js) -- it always represents
@@ -233,9 +272,10 @@ def build_steps(track, season):
         })
     else:
         if is_ncaa:
-            # --all-seasons is required here: the priority-tier scheme (champions/
-            # AAs/active/everyone else) is built from career-wide placement data
-            # across all seasons, and omitting it silently drops every historical
+            # All seasons is the default since 2026-09-30 (--single-season is the
+            # testing-only override); --all-seasons is kept as a harmless no-op.
+            # The priority tiers (champions/AAs/active/everyone else) need every
+            # season's data -- a single-season index drops every historical
             # wrestler from search, including past national champions.
             search_cmd = [py, "scripts/generate_search_index.py", "-league", "ncaa", "-season", season, "--all-seasons"]
         else:

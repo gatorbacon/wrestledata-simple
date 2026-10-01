@@ -1386,6 +1386,39 @@ Three schools (Wyoming, Little Rock, George Mason) have no live-scrapable roster
 
 ---
 
+## Starting a New NCAA Season (e.g. 2027) — checklist
+
+Written 2026-10-01. The profile page decides **retired vs. active** from data, not from a list. Several steps have to happen for that to work, and the weekly NCAA pipeline (`scripts/pipeline.py ncaa 2027`) now runs most of them. Do these once, at the start of the season:
+
+1. **Bump `DEFAULT_SEASON` in `scripts/pipeline.py`** to `"2027"`. Career linking, the search index, team profiles and leaderboards only run for `DEFAULT_SEASON`; on any other season they show as `[off]` (backfill protection).
+2. **Make sure the 2027 rosters exist.** The pipeline's Get Teams → Season Scraper → Rebuild Official Roster Links steps write `mt/data/ncaa_men/2027/` and `mt/data/roster_links/`. Official rosters (see "Official Team Roster Scraping") make linking deterministic. Without them, linking falls back to same team + exact name.
+3. **Run the pipeline.** These steps are in the NCAA run, in this order:
+   - **Link Season into Careers** — `link_ncaa_season.py --season 2027 --anchor-season 2026`.
+     - Returning wrestlers are added to their careers (same school by roster `player_id`, else by same-team exact name). The lookback is 5 seasons, so redshirt and injury gaps are covered.
+     - Everyone else gets a new career.
+     - **Transfers are never auto-linked.** They are printed and written to `data/career_linking_logs/ncaa_men_transfer_candidates_2027.json`.
+     - Safe to re-run weekly: already-linked wrestlers are skipped, and wrestlers added to a roster mid-season get linked the next week.
+   - **Build Wrestler Profiles** — 2027's profiles are built with the full `season_summary`. It also rewrites `data/wrestlers/available_seasons.json` from the season folders on disk, so 2027 becomes its top entry automatically.
+   - **Refresh season_summary + Career Seasons Map** — `refresh_season_summary.py` patches `season_summary` on the 2015–2026 profiles of every career that just gained a 2027 season (only that key changes). Then `build_career_seasons.py` runs for the Compare tool. Note that it only writes profiles already committed to git, so the first week's 2027 ids appear after the next run following a commit.
+   - **Build Search Index** — all seasons by default.
+4. **Review the flagged transfers** whenever the link step lists any:
+   - run `.venv/bin/python scripts/careers/review_ncaa_transfer_candidates.py --season 2027`; it classifies them as CONFIRMED / CONTRADICTED / UNKNOWN and prints a merge command for each CONFIRMED;
+   - merge each real transfer with the steps in Known Gotcha 17 (merge, rebuild the affected profiles, refresh, search, reports).
+5. **Smoke test, then push** (CLAUDE.md hard rule).
+
+**How the profile picks its default view** (`pickInitialView` in `app.js`; full rules in the Wrestler Profile row under Pages):
+- The "current season" is the top entry of `available_seasons.json`.
+- A wrestler whose latest season in `season_summary` is older than that, opened on that latest season, is **retired** and opens on Career.
+- A wrestler with a 2027 season in their career is **active** and opens on 2027. That includes a wrestler on a 2027 roster with 0 matches: a 0-match roster wrestler still gets a profile, and once linked, 2027 is in their `season_summary`.
+- `view=career` / `view=season` in the URL override this. One-season wrestlers always show the season.
+
+**What goes wrong if a step is skipped:**
+- **Not linked:** a returning wrestler's 2027 profile stands alone, and their older profiles open on Career as if they had retired.
+- **Linked but not refreshed:** opening an older season shows a season table without 2027, and the profile still treats them as retired. This is the stale-`season_summary` problem fixed for 3,884 profiles on 2026-10-01.
+- **`DEFAULT_SEASON` not bumped:** the link step is `[off]` for 2027, so nothing links.
+
+---
+
 ## Key Scripts (NCAA / MatSavant Pipeline)
 
 | Script | Purpose |
