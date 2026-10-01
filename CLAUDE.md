@@ -15,6 +15,8 @@ This repo contains **two separate websites** that share a codebase and now both 
 
 **KentuckyMat AdSense/monetization reference:** See [`docs/kentuckymat_edge_function_plan.md`](docs/kentuckymat_edge_function_plan.md) for the AdSense-approval project (diagnosis, trust pages, share-tag fixes) and [`docs/kentuckymat_ads_phase3.md`](docs/kentuckymat_ads_phase3.md) for ad placement — both live on production as of 2026-09-23; see Known Gotcha 18.
 
+**Open items / half-finished work:** [`docs/TODO.md`](docs/TODO.md) is the single to-do list for both sites and the side projects. Read it at the start of work; when something is finished, parked or newly found, update it in the same piece of work (tick it and move it to Done, or add it).
+
 **Architecture: 100% static.** No backend, no API, no DynamoDB. Everything is pre-computed JSON files served to plain HTML/JS pages. The DynamoDB/Heroku/`api/` infrastructure is legacy and unused — do not reference it as active.
 
 ---
