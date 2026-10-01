@@ -4783,6 +4783,10 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   color: var(--muted);
 }
 
+/* "Compare ⇄" pill -> tools/compare.html?a=<wrestler_id> */
+a.wp2-chip--compare { color: var(--accent); }
+a.wp2-chip--compare:hover { background: var(--accent-soft, var(--panel-2)); }
+
 .wp2-chip-crest {
   height: 18px;
   width: auto;
@@ -5945,6 +5949,22 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   object-fit: contain;
   margin-left: 2px;
 }
+
+/* "Compare ⇄" pill, right side of the mobile identity row */
+.wp2m-compare {
+  flex: 0 0 auto;
+  align-self: center;
+  padding: 5px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--panel);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.wp2m-compare:hover { border-color: var(--accent); text-decoration: none; }
 
 .wp2m-career-line {
   font-size: 0.75rem;

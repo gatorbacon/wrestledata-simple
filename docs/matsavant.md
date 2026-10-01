@@ -113,7 +113,7 @@ RACES
   Hodge              Season P4P award
 ```
 
-- Header **Rankings** click goes to **By weight**.
+- Clicking **Rankings** in the header only opens the menu (dropdown headers are buttons, and there is no hover menu, by design). Every dropdown therefore costs one extra click, so don't turn a plain link (Wrestlers, Teams) into a dropdown for a single new page (TJ, 2026-10-01).
 - Page title stays `Rankings` / `2027 Rankings` (season year). Do not call it Board.
 - **Matrix** is hidden on mobile (menu row omitted or routed to By weight).
 - Do not add a separate "DPG rankings" clone of By weight. DPG is a column + sort on By weight.
@@ -126,6 +126,7 @@ Landing page, not a dropdown.
 - Search first.
 - Weight pills: All · 125 · 133 · 141 · 149 · 157 · 165 · 174 · 184 · 197 · 285.
 - **Spotlight · season DPG**: All = top 3 per weight; one weight = top 8. Names link to profiles.
+- **Compare two wrestlers** link under the search (to `/tools/compare.html`). This is the menu-reachable way into Compare; it is not in the header menu (see the click-cost rule under Rankings).
 - Link: `Full rankings →` (By weight). Do not dump the full 33-deep table here.
 
 #### Teams
@@ -164,7 +165,7 @@ List **events**, not analysis page types.
   Lab            experiments
 ```
 
-- Header **Field Notes** click goes to `/notes`.
+- Clicking **Field Notes** in the header opens the menu; Field Notes (`/notes`) is its first row.
 - Tools and Lab are findable here, not only in a footer link.
 - Career DPG and other experiments are cards *on* `/lab`, not extra menu rows.
 
@@ -885,7 +886,9 @@ Copies every `team_score_simulation_adjusted_{slug}_*.json` found in `data/ncaa-
 
 ## Compare Wrestlers Tool (added 2026-09-28)
 
-`/tools/compare.html` (linked from the Tools page): pick any two wrestlers, see every head-to-head bout and each wrestler's results against the opponents they share, across whole careers, with a season filter. Ported from KentuckyMat's compare page; the comparison logic is the same `compare_core.js` (copied unchanged to `frontend/wrestledata-ui/public/compare_core.js`; opponent-matching rules are in root `CLAUDE.md` → "Compare page"). `tools/compare.js` is the MatSavant UI and data loading. URL: `/tools/compare.html?a={wrestler_id}&b={wrestler_id}[&season=YYYY]` (any season's id of a wrestler works).
+`/tools/compare.html`. **Entry points (2026-10-01):** a **Compare ⇄** pill on every wrestler profile (desktop chip row; on mobile, the right side of the identity row) opens it with that wrestler filled in as `a=` and the cursor already in the second box; a "Compare two wrestlers" link under the search on the Wrestlers page; the Tools page card. Deliberately not in the header menu. A future team compare / dual preview should follow the same pattern (team profile + Teams page), not a menu row.
+
+What it does: pick any two wrestlers, see every head-to-head bout and each wrestler's results against the opponents they share, across whole careers, with a season filter. Ported from KentuckyMat's compare page; the comparison logic is the same `compare_core.js` (copied unchanged to `frontend/wrestledata-ui/public/compare_core.js`; opponent-matching rules are in root `CLAUDE.md` → "Compare page"). `tools/compare.js` is the MatSavant UI and data loading. URL: `/tools/compare.html?a={wrestler_id}&b={wrestler_id}[&season=YYYY]` (any season's id of a wrestler works).
 
 **Data source:** NCAA has no frontend career files, and profile `match_list` rows carry `opponent_career_id = null`. So the page loads **`data/careers/career_seasons.json`** (`{"careers": {"<career number>": {"<season>": "<wrestler_id>"}}}`, ~890 KB raw / ~180 KB gzipped, only fetched on this page), built by `scripts/reports/build_career_seasons.py` from the backend career links in `data/careers/ncaa_men/`. The page inverts it to wrestler_id → (career, season) and uses it to (1) find every season of a picked wrestler and fetch those `data/wrestlers/{season}/by_id/{id}.json` profiles, and (2) set each match's `opponent_career_id`, so an opponent faced in two seasons (even on two teams, e.g. Cameron Amine Michigan 2024 → Oklahoma State 2025) is one common opponent. Opponents not in any career fall back to name+team matching. A wrestler not in the file falls back to its own profile's `season_summary`. Career W-L is the sum of each season profile's `record.overall`.
 

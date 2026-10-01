@@ -408,6 +408,10 @@ function renderHeader(data) {
     chipsEl.appendChild(locChip);
   }
 
+  // Compare pill: opens the Compare tool with this wrestler filled in as "A"
+  // (any season's id works there). Mobile gets its own in renderMobileIdentity.
+  if (data.wrestler_id) chipsEl.appendChild(compareLink(data, "wp2-chip wp2-chip--compare"));
+
   const photoEl = document.getElementById("wrestler-photo");
   if (data.photo_url) {
     photoEl.src = data.photo_url;
@@ -476,7 +480,21 @@ function renderMobileIdentity(data) {
     }
   }
 
+  const identityEl = document.getElementById("wp2m-identity");
+  if (identityEl && data.wrestler_id && !identityEl.querySelector(".wp2m-compare")) {
+    identityEl.appendChild(compareLink(data, "wp2m-compare"));
+  }
+
   renderMobileCareerLine(data);
+}
+
+function compareLink(data, className) {
+  const a = document.createElement("a");
+  a.className = className;
+  a.href = `/tools/compare.html?a=${encodeURIComponent(data.wrestler_id)}`;
+  a.textContent = "Compare ⇄";
+  a.title = `Compare ${safe(data.name)} with another wrestler`;
+  return a;
 }
 
 async function renderMobileCareerLine(data) {

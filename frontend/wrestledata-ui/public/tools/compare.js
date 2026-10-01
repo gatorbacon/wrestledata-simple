@@ -293,6 +293,7 @@
     clearBtn.addEventListener('click', function () { onPick(which, null); input.focus(); });
 
     return {
+      focus: function () { input.focus(); },
       show: function (pick) {
         chip.classList.remove('has-detail');
         chipDetail.textContent = '';
@@ -643,6 +644,9 @@
     });
     if (state.a && state.b && state.a.id === state.b.id) { state.b = null; slots.b.show(null); }
     update();
+    // Arrived with one wrestler filled in (the profile's Compare pill): put the cursor in the other box.
+    if (state.a && !state.b) slots.b.focus();
+    else if (state.b && !state.a) slots.a.focus();
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
