@@ -22290,20 +22290,6 @@ window.SEARCH_INDEX = [
   },
   {
     "type": "wrestler",
-    "name": "Leandro Araujo",
-    "first_name": "Leandro",
-    "last_name": "Araujo",
-    "secondary": "Nebraska · 174",
-    "url": "/wrestler.html?id=29673848132",
-    "searchTokens": [
-      "araujo",
-      "leandro"
-    ],
-    "priority": 3,
-    "rank": null
-  },
-  {
-    "type": "wrestler",
     "name": "Cooper French",
     "first_name": "Cooper",
     "last_name": "French",
