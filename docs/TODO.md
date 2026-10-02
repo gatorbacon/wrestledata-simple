@@ -21,6 +21,7 @@ One list for both sites and the side projects, so nothing gets lost between sess
 ## Ready to ship (committed locally, not pushed)
 
 - [ ] **Dual Schedule: team filter + Text only view** (commit `0ebfa76024`). TJ is holding it to group with the next push. *(added 2026-10-01)*
+- [ ] **Freshman of the Year Watch restyle + DPG column + rebuilt on final 2026 data** (builder moved off the frozen matrix-rank files). *(added 2026-10-02)*
 
 ## Uncommitted local work
 
@@ -41,6 +42,8 @@ One list for both sites and the side projects, so nothing gets lost between sess
 - [ ] **Lazarus Award page** (awards/trivia tab): the script `scripts/ncaa/lazarus_award.py` exists; check whether a page ever shipped (it's referenced in `ncaa_live.html`). *(memory: pending UI changes)*
 
 ## MatSavant data (NCAA pipeline)
+
+- [ ] **Per-match DPG files have exact duplicate rows**: `match_mv_impact_{year}.json` repeats about 11% of bouts (same opponent, date and result; 2026: 4,152 of 37,767 rows, 1,433 of 2,288 wrestlers; 2024 and 2025 similar), where the profile lists the bout once (e.g. Marcus Blaze 11/23 TF 17-1 vs the same opponent twice; profile 28 bouts, `mat_value.matches` 29). Likely inflates or deflates season DPG slightly and counts. Find where `compute_all_mat_values.py` picks up the second copy, fix, rebuild DPG. The "DPG going in" analyses (`dpg_vs_ncaa_points.py`, `dpg_vs_seed_bracket_sim.py`) read the same file. *(found 2026-10-02)*
 
 - [ ] **Rosters not posted yet for 2026-27**: 10 of 79 teams. Penn State, Northwestern, Virginia Tech and Little Rock returned "not found". Re-run `batch_scrape_current_rosters.py --mode all` every couple of weeks through the fall. *(checked 2026-10-01)*
 - [ ] **Schedules not posted yet for 2026-27**: 19 of 79 teams; Chattanooga and Virginia Tech showed no events. Re-run `batch_scrape_schedules.py --season 2026-27`, accept parked changes, then run `dedupe_events.py` so the Schedule page updates. *(checked 2026-10-01)*

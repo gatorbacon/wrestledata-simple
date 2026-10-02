@@ -7,6 +7,71 @@
   <link rel="stylesheet" href="/styles.css?v=20260921" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   <script src="/search_index.js?v=20260913"></script>
+  <style>
+    /* Same table language as the Rankings page (dpg-table / dpg-* classes in styles.css);
+       fr- classes are only the bits this page adds. */
+    #freshman-table th, #freshman-table td { text-align: left; vertical-align: middle; }
+    #freshman-table .num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+    #freshman-table th.num { white-space: normal; }
+    #freshman-table .dpg-wrestler-name,
+    #freshman-table .dpg-wrestler-sub,
+    #freshman-table .dpg-team-name { white-space: nowrap; }
+    #freshman-table .dpg-headshot { width: 48px; height: 48px; }
+    #freshman-table .dpg-headshot--crest { padding: 6px; }
+    #freshman-table .dpg-team-icon-slot { width: 40px; }
+    #freshman-table .dpg-team-crest { height: 30px; max-width: 40px; }
+    #freshman-table .dpg-dpg-value { font-size: 1.2rem; }
+    #freshman-table .dpg-meter-track { width: 76px; }
+    #freshman-table th.fr-group { border-left: 1px solid var(--border); }
+    #freshman-table td.fr-group { border-left: 1px solid var(--border); }
+
+    .fr-score-value {
+      font-size: 1.45rem;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      line-height: 1.1;
+      color: var(--text);
+    }
+    .fr-score-fill { background: var(--accent); }
+    .fr-muted { color: var(--muted); }
+    .fr-strong { font-weight: 700; color: var(--text); }
+
+    .fr-key {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 18px;
+      margin: 0 0 12px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .fr-key strong { color: var(--text); }
+
+    .fr-mobile-right {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 1px;
+      min-width: 56px;
+    }
+    .fr-mobile-score {
+      font-size: 20px;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      color: var(--text);
+    }
+    .fr-mobile-dpg {
+      font-size: 12px;
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+    }
+    .fr-mobile-dpg .fr-muted { font-weight: 400; }
+
+    @media (max-width: 767px) {
+      #freshman-table-wrapper { display: none; }
+      #freshman-mobile-list { display: block; }
+    }
+  </style>
 </head>
 <body>
   <script src="/analytics.js?v=20260911"></script>
@@ -15,35 +80,40 @@
   <div class="page-container">
     <header class="header">
       <h1>Freshman of the Year Watch</h1>
-      <div class="header-subline" id="season-info">Season 2026</div>
+      <div class="header-subline" id="season-info"></div>
       <div class="header-explainer" id="description"></div>
     </header>
 
     <section class="section">
-      <div class="table-wrapper">
-        <table id="freshman-table">
+      <div class="fr-key">
+        <span><strong>Fresh Score</strong>: 20% each win %, bonus %, pin %, ranked bonus %; 10% each ranked wins, top-10 wins</span>
+        <span><strong>DPG</strong>: season Dual Points Gained (not part of Fresh Score)</span>
+      </div>
+      <div class="table-wrapper" id="freshman-table-wrapper">
+        <table id="freshman-table" class="dpg-table">
           <thead>
             <tr>
-              <th>Rank</th>
-              <th>Name</th>
-              <th>Wt</th>
-              <th>W–L</th>
-              <th class="score-col">Win%</th>
-              <th class="score-col">Bonus%</th>
-              <th class="score-col">Pin%</th>
-              <th class="score-col"># Ranked<br/>Wins</th>
-              <th class="score-col"># Top 10<br/>Wins</th>
-              <th class="score-col">Ranked<br/>Bonus%</th>
-              <th class="score-col">Fresh<br/>Score</th>
+              <th style="width: 32px;">Rank</th>
+              <th>Wrestler</th>
+              <th>Team</th>
+              <th>Fresh Score</th>
+              <th title="Dual Points Gained. Your dual-point result (DEC 3, MD 4, TF 5, F 6) minus what a typical wrestler gets against that same opponent.">DPG ⓘ</th>
+              <th class="fr-group">Record</th>
+              <th class="num">Bonus %</th>
+              <th class="num">Pin %</th>
+              <th class="num fr-group" title="Wins over opponents ranked in the top 33">Ranked W</th>
+              <th class="num" title="Wins over opponents ranked in the top 10">Top-10 W</th>
+              <th class="num" title="Share of ranked wins that were bonus-point wins">Ranked Bonus %</th>
             </tr>
           </thead>
           <tbody></tbody>
         </table>
       </div>
+      <div class="dpg-mobile-list" id="freshman-mobile-list"></div>
     </section>
   </div>
 
-  <script src="/freshman.js"></script>
+  <script src="/mobile_rank_row.js?v=20260907"></script>
+  <script src="/freshman.js?v=20261002"></script>
 </body>
 </html>
-

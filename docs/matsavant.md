@@ -421,6 +421,7 @@ scripts/rankings/calculate_elo_ratings.py -season {year} --league ncaa --gender 
 scripts/rankings/build_wrestler_profiles.py -season {year}     # writes current_rank into that season's own profiles
 scripts/mat_value/compute_all_mat_values.py --season {year}    # writes current_rank into mat_value_{year}.json
 scripts/rankings/hodge_candidates.py -season {year}             # rebuilds Hodge Watch off the now-current rank/profile data
+scripts/rankings/freshman_of_year.py -season {year}            # rebuilds Freshman of the Year Watch (same sources as Hodge)
 ```
 `calculate_elo_ratings.py` must run after `apply_flo_rankings.py` in the *same* pass — it reads `rankings_<weight>.json`'s `flo_ranked` tags to build `hybrid_rank`, and a stale/missing tag silently falls the wrestler to the Elo tier instead of trusting Flo. Do this for every season whose underlying rank data changed before moving to Step 2 — don't interleave.
 
@@ -437,6 +438,14 @@ scripts/rankings/hodge_candidates.py -season {year}             # rebuilds Hodge
 **Data sources:** candidate pool (top-N by weight) comes from `mt/elo_ratings/ncaa_men/{season}/elo_ratings.json`'s `hybrid_rank_by_weight` — the same rank-of-record described above, not the banned matrix rank. Per-candidate stats (win/loss, bonus/fall rate, quality-of-competition, dominance) are computed by reading that candidate's own already-published `frontend/wrestledata-ui/public/data/wrestlers/{season}/by_id/{wrestler_id}.json` and iterating its `match_list` (`result`, `method`, `opponent_rank` are all already resolved there — no separate opponent lookup needed).
 
 **Incident (found + fixed 2026-09-11):** this script previously read `mt/rankings_data/{season}/rankings_{weight}.json` + `weight_class_{weight}.json` for both rank *and* match data. Two independent problems: (1) that's the internal matrix-rank source this doc bans from ever feeding a public JSON, predating the 2026-09-09 rank fix and never brought into compliance with it; (2) separately from the rank-source issue, that specific data directory had simply stopped being regenerated mid-season (last touched Dec 2025, an abandoned earlier rankings pipeline run) — so even the win/loss counts themselves were frozen mid-season (e.g. the reigning #1 candidate showing 10-0 instead of his real final 26-0). Rewritten to read the current-methodology sources above; also wasn't listed anywhere as a step to re-run after a ranking change (this section) or in the Key Scripts table (below) — both fixed at the same time. Was not previously part of any documented weekly/rebuild procedure; **now it is** — see Step 1 above, chain order matters (it needs `calculate_elo_ratings.py` and `build_wrestler_profiles.py` to have already run for that season).
+
+### Freshman of the Year Watch
+
+**Script:** `scripts/rankings/freshman_of_year.py -season {year}` — writes `frontend/wrestledata-ui/public/data/awards/freshman/{season}/freshman_{season}.json`, read by `freshman.html`/`freshman.js` (linked from the homepage and the Lab index; styled like the Rankings page — `dpg-table` classes, DPG bands, `mobile_rank_row.js` helpers for phone rows).
+
+**Data sources:** imports `hodge_candidates.py`'s functions, so the pool and stats come from the same places: wrestlers with `hybrid_rank_by_weight` ≤ 10 at a weight, stats from each profile's `match_list` (ranked win = opponent rank ≤ 33). Freshman = the profile's `grade` (official-roster text, normalised so `Fr.`, `Freshman`, `R-Fr.`, `RS Fr.`, `RFr.`, `Redshirt Freshman`, `Fy.`, `First-Year` all count), after grade overrides from `mt/rankings_data/grade_overrides.json` (legacy location, holds the existing overrides) and `mt/rankings_data/ncaa_men/grade_overrides.json` (where `manage_grade_overrides.py -league ncaa -gender men` writes now; wins over the legacy file). DPG column = profile `metrics.mat_value.mv_avg` (season DPG, same as the Rankings page) — shown only, not part of FreshScore. FreshScore = 20% each win %, bonus %, pin %, ranked bonus % + 10% each ranked wins and top-10 wins (scaled to the best freshman's count).
+
+**Incident (found + fixed 2026-10-02):** same as the Hodge incident above — this script still read the matrix-rank `mt/rankings_data/{season}/` files, frozen at 12/22/2025 (the page showed Marcus Blaze 10-0 instead of 25-3), and its grade check only knew `Fr.`/`RS Fr.`, so most freshmen in the roster-scraped data (`Freshman`, `R-Fr.`) were silently dropped (e.g. Jax Forrest, Aaron Seidel, Ben Davino). Rewritten to the Hodge sources; now in Step 1's rebuild list above.
 
 ---
 
@@ -1524,6 +1533,7 @@ Written 2026-10-01. The profile page decides **retired vs. active** from data, n
 | `scripts/rankings/build_wrestler_profiles.py` | Writes each wrestler profile's `current_rank` — NCAA branch currently sources this incorrectly, see Known Compliance Gaps |
 | `scripts/awards/build_hodge_dpg_history.py` | Once a year, after the Hodge is announced: builds `lab/hodge/hodge_dpg.json` (top 5 DPG each season + Hodge winner/runner-up) from `data/awards/hodge_trophy_history.json` + `mat_value_{year}.json`. See "DPG and the Hodge Trophy (Lab)" |
 | `scripts/rankings/hodge_candidates.py` | Builds the Hodge Watch (`data/awards/hodge/{season}/hodge_{season}.json`) from `elo_ratings.json`'s `hybrid_rank_by_weight` + each candidate's wrestler-profile `match_list`. Run after `calculate_elo_ratings.py` + `build_wrestler_profiles.py` — see [Rebuild order](#rebuild-order-after-any-ranking-affecting-change) |
+| `scripts/rankings/freshman_of_year.py` | Builds the Freshman of the Year Watch (`data/awards/freshman/{season}/freshman_{season}.json`) — same pool/stat sources as `hodge_candidates.py` (imports it) plus grade from the profile + grade overrides, DPG from the profile's `mat_value`. Run right after `hodge_candidates.py` — see [Freshman of the Year Watch](#freshman-of-the-year-watch) |
 | `scripts/mat_value/compute_mat_value.py` | DPG for a single wrestler (CLI) |
 | `scripts/mat_value/compute_all_mat_values.py` | Batch DPG for all wrestlers, builds leaderboards |
 | `scripts/bonus/compute_top33_bonus.py` | Top-33 bonus EV for a single wrestler |
