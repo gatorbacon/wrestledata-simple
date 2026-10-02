@@ -21,7 +21,7 @@ One list for both sites and the side projects, so nothing gets lost between sess
 ## Ready to ship (committed locally, not pushed)
 
 - [ ] **Dual Schedule: team filter + Text only view** (commit `0ebfa76024`). TJ is holding it to group with the next push. *(added 2026-10-01)*
-- [ ] **Freshman of the Year Watch restyle + DPG column + rebuilt on final 2026 data** (builder moved off the frozen matrix-rank files). *(added 2026-10-02)*
+- [ ] **Freshman of the Year Watch**: restyled, ordered by DPG (FreshScore dropped), NCAAs finish column, rebuilt on final 2026 data (builder moved off the frozen matrix-rank files). *(added 2026-10-02)*
 
 ## Uncommitted local work
 
@@ -71,6 +71,7 @@ One list for both sites and the side projects, so nothing gets lost between sess
 - [ ] **MatSavant**: follow the checklist in docs/matsavant.md "Starting a New NCAA Season": bump `DEFAULT_SEASON` in `scripts/pipeline.py`, scrape rosters, run the pipeline (career linking is built in), review flagged transfers.
 - [ ] **KentuckyMat**: update `defaultSeason` in `hs_config.js` (CLAUDE.md gotcha 6).
 - [ ] **Every year, once the NCAA season is over and the Hodge Trophy is announced** (next: spring 2027): add the season to `data/awards/hodge_trophy_history.json` and run `.venv/bin/python scripts/awards/build_hodge_dpg_history.py` to update the Lab page `/lab/hodge/`. *(docs/matsavant.md "DPG and the Hodge Trophy")*
+- [ ] **Every year after the NCAAs**, once the bracket archive has the new year (`scripts/brackets/build_ncaa_bracket_archive.py`): rerun `.venv/bin/python scripts/rankings/freshman_of_year.py -season {year}` so the Freshman Watch's NCAAs column fills in. *(docs/matsavant.md "Freshman of the Year Watch")*
 
 ## Side projects
 

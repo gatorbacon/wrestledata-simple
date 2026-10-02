@@ -3,7 +3,9 @@
 // ========================================
 // Data: data/awards/freshman/{season}/freshman_{season}.json, built by
 // scripts/rankings/freshman_of_year.py (ranked freshmen, stats from each
-// wrestler's profile, DPG = season mat_value.mv_avg). Styled like the
+// wrestler's profile, DPG = season mat_value.mv_avg, rows ordered by DPG;
+// ncaa = NCAA finish, null for everyone until the NCAAs are done -- then the
+// NCAAs column is hidden). Styled like the
 // Rankings page: same dpg-* table classes, DPG bands and mobile rows
 // (mobile_rank_row.js helpers).
 
@@ -85,12 +87,31 @@ function frTeamCell(row) {
   );
 }
 
-function frScoreCell(row, maxScore) {
-  const pct = maxScore > 0 ? Math.max(0, Math.min(1, row.fresh_score / maxScore)) * 100 : 0;
-  return (
-    `<div class="fr-score-value">${frSafe(row.fresh_score, v => v.toFixed(1))}</div>` +
-    `<div class="dpg-meter-track"><div class="dpg-meter-fill fr-score-fill" style="width:${pct.toFixed(0)}%"></div></div>`
-  );
+function frOrdinal(n) {
+  const s = ["th", "st", "nd", "rd"], v = n % 100;
+  return n + (s[(v - 20) % 10] || s[v] || s[0]);
+}
+
+function frNcaaSub(n) {
+  const parts = [];
+  if (n.seed) parts.push(`#${n.seed} seed`);
+  parts.push(`${n.wins}-${n.losses}`);
+  return parts.join(" · ");
+}
+
+function frNcaaCell(n) {
+  if (!n) return "—";
+  if (n.dnq) return `<span class="fr-place-dnp">Did not qualify</span>`;
+  const main = n.place
+    ? `<div class="fr-place">${frOrdinal(n.place)}</div>`
+    : `<div class="fr-place fr-place-dnp">Did not place</div>`;
+  return main + `<div class="fr-place-sub">${frNcaaSub(n)}</div>`;
+}
+
+function frNcaaShort(n) {
+  if (!n) return "";
+  if (n.dnq) return "NCAA: DNQ";
+  return n.place ? `NCAA <strong>${frOrdinal(n.place)}</strong>` : "NCAA: DNP";
 }
 
 function frDpgCell(dpg) {
@@ -108,7 +129,6 @@ function frDpgCell(dpg) {
 
 function renderFreshmanTable(rows) {
   const tbody = document.querySelector("#freshman-table tbody");
-  const maxScore = Math.max(...rows.map(r => r.fresh_score || 0));
   tbody.innerHTML = rows.map(row => {
     const m = row.metrics || {};
     return (
@@ -116,8 +136,8 @@ function renderFreshmanTable(rows) {
       `<td class="rank-cell">${frRankBadge(row.rank)}</td>` +
       `<td class="name">${frWrestlerCell(row)}</td>` +
       `<td>${frTeamCell(row)}</td>` +
-      `<td>${frScoreCell(row, maxScore)}</td>` +
       `<td>${frDpgCell(m.dpg)}</td>` +
+      `<td class="fr-ncaa-col">${frNcaaCell(row.ncaa)}</td>` +
       `<td class="num fr-group fr-strong">${frEsc(frSafe(row.record))}</td>` +
       `<td class="num">${frPct(m.bonus_pct)}</td>` +
       `<td class="num">${frPct(m.fall_pct)}</td>` +
@@ -130,7 +150,7 @@ function renderFreshmanTable(rows) {
 }
 
 // Phone rows: same shell as the Rankings page's mobile rows (dpg-mobile-*),
-// with Fresh Score as the big number and DPG under it.
+// with DPG as the big number and the NCAA finish under it.
 function renderFreshmanMobile(rows) {
   const list = document.getElementById("freshman-mobile-list");
   list.innerHTML = rows.map(row => {
@@ -146,8 +166,9 @@ function renderFreshmanMobile(rows) {
       ? `<img class="dpg-mobile-avatar" src="${frEsc(row.photo_url)}" alt="" loading="lazy" onerror="this.style.display='none'">`
       : "";
     const dpg = band
-      ? `<span class="fr-mobile-dpg ${band.cls}"><span class="fr-muted">DPG</span> ${m.dpg.toFixed(1)}</span>`
-      : `<span class="fr-mobile-dpg fr-muted">DPG —</span>`;
+      ? `<span class="dpg-mobile-dpg ${band.cls}">${m.dpg.toFixed(1)}</span>`
+      : `<span class="dpg-mobile-dpg dpg-band-nodata">—</span>`;
+    const place = row.ncaa ? `<span class="fr-mobile-place">${frNcaaShort(row.ncaa)}</span>` : "";
     return (
       `<a class="dpg-mobile-row" href="${frProfileHref(row)}">` +
       `<span class="dpg-mobile-rank ${rankCls}">${row.rank}</span>` +
@@ -156,7 +177,7 @@ function renderFreshmanMobile(rows) {
       `<span class="dpg-mobile-name">${frEsc(row.name)}</span>` +
       `<span class="dpg-mobile-meta">${frEsc(meta)}${crest}</span>` +
       `</span>` +
-      `<span class="fr-mobile-right"><span class="fr-mobile-score">${frSafe(row.fresh_score, v => v.toFixed(1))}</span>${dpg}</span>` +
+      `<span class="fr-mobile-right">${dpg}${place}</span>` +
       `</a>`
     );
   }).join("");
@@ -181,6 +202,7 @@ async function init() {
       renderMessage("No data available");
       return;
     }
+    document.body.classList.toggle("fr-no-ncaa", !data.rows.some(r => r.ncaa));
     renderFreshmanTable(data.rows);
     renderFreshmanMobile(data.rows);
   } catch (error) {

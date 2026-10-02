@@ -14,10 +14,12 @@ Same sources and stat code as hodge_candidates.py (this script imports them):
     `mt/rankings_data/ncaa_men/grade_overrides.json` (where manage_grade_overrides.py writes now); the second wins.
     True and redshirt freshmen count (incl. Ivy "first-year").
   - DPG: the profile's `metrics.mat_value.mv_avg` -- the same season DPG the rankings page and profile show.
-    Shown on the page for reference only; it is not part of FreshScore.
-
-FreshScore (unchanged): 20% each win %, bonus %, pin %, ranked bonus % (0-100), plus 10% each ranked wins and
-top-10 wins scaled to the best freshman's count.
+    The list is sorted by it (TJ 2026-10-02: a weighted "FreshScore" of win/bonus/pin %/ranked wins was tried
+    and dropped -- it didn't put the best freshmen on top; DPG did).
+  - NCAA finish: the bracket archive's `frontend/wrestledata-ui/public/lab/brackets/data/{season}.json`
+    (built from data/{season}/ncaa-tourney/ by scripts/brackets/build_ncaa_bracket_archive.py) -- place 1-8,
+    seed and NCAA bout record, matched on name + team at the candidate's weight (then name only at that weight).
+    Before the NCAAs (no archive file / weight) every row's `ncaa` is null and the page hides the column.
 
 Rebuilt 2026-10-02: this used to read `mt/rankings_data/{season}/rankings_{weight}.json` + `weight_class_*.json`
 -- the same banned matrix-rank source the Hodge Watch was moved off on 2026-09-11, and that folder stopped
@@ -56,6 +58,50 @@ def is_freshman(grade: str) -> bool:
     return re.sub(r"[^a-z]", "", (grade or "").lower()) in FRESHMAN_KEYS
 
 
+BRACKET_DIR = Path("frontend/wrestledata-ui/public/lab/brackets/data")
+
+
+def _k(text: str) -> str:
+    return re.sub(r"[^a-z]", "", (text or "").lower())
+
+
+def load_ncaa_results(season: int) -> Dict[str, Dict[tuple, dict]]:
+    """weight -> {(name key, team key): {"place", "seed", "wins", "losses"}} for everyone in that bracket."""
+    path = BRACKET_DIR / f"{season}.json"
+    if not path.exists():
+        return {}
+    out: Dict[str, Dict[tuple, dict]] = {}
+    for w in json.loads(path.read_text(encoding="utf-8")).get("weights", []):
+        if w.get("kind") != "bracket":
+            continue
+        people: Dict[tuple, dict] = {}
+
+        def get(side):
+            key = (_k(side.get("n")), _k(side.get("t")))
+            return people.setdefault(key, {"place": None, "seed": side.get("s"), "wins": 0, "losses": 0})
+        for m in w.get("matches", []):
+            a, b, win = m.get("a"), m.get("b"), m.get("w")
+            if not a or not b or not a.get("n") or not b.get("n") or win not in ("a", "b"):
+                continue
+            get(a)["wins" if win == "a" else "losses"] += 1
+            get(b)["wins" if win == "b" else "losses"] += 1
+        for pl in w.get("placements", []):
+            get(pl)["place"] = pl.get("place")
+        out[str(w.get("id"))] = people
+    return out
+
+
+def find_ncaa(results: Dict[str, Dict[tuple, dict]], weight: str, name: str, team: str):
+    people = results.get(weight)
+    if not people:
+        return None
+    hit = people.get((_k(name), _k(team)))
+    if hit is None:
+        same_name = [v for (n, _), v in people.items() if n == _k(name)]
+        hit = same_name[0] if len(same_name) == 1 else None
+    return hit if hit is not None else {"place": None, "seed": None, "wins": 0, "losses": 0, "dnq": True}
+
+
 def load_grade_overrides() -> Dict[str, str]:
     out: Dict[str, str] = {}
     for p in OVERRIDE_FILES:
@@ -83,6 +129,7 @@ def main() -> None:
 
     pool = build_candidate_pool(load_elo_ratings(season, args.elo_path), args.top_n)
     overrides = load_grade_overrides()
+    ncaa_results = load_ncaa_results(season)
 
     cands: List[dict] = []
     missing: List[str] = []
@@ -100,30 +147,24 @@ def main() -> None:
                 continue
             mv = (profile.get("metrics") or {}).get("mat_value") or {}
             cands.append({"s": s, "grade": grade, "dpg": mv.get("mv_avg"),
+                          "ncaa": find_ncaa(ncaa_results, weight, s.name, s.team) if ncaa_results else None,
                           "team_slug": profile.get("team_slug"), "photo_url": profile.get("photo_url") or None})
     if missing:
         print(f"Warning: {len(missing)} candidate(s) had no profile file, skipped: " + "; ".join(missing))
 
-    max_rw = max((c["s"].ranked_wins for c in cands), default=0)
-    max_t10 = max((c["s"].top10_wins for c in cands), default=0)
-    for c in cands:
-        s = c["s"]
-        c["score"] = (
-            s.win_pct * 100 * 0.20 + s.bonus_pct * 100 * 0.20 + s.fall_pct * 100 * 0.20
-            + s.ranked_bonus_pct * 100 * 0.20
-            + (s.ranked_wins / max_rw * 100 if max_rw else 0) * 0.10
-            + (s.top10_wins / max_t10 * 100 if max_t10 else 0) * 0.10
-        )
-    cands.sort(key=lambda c: -c["score"])
+    cands.sort(key=lambda c: (c["dpg"] is None, -(c["dpg"] or 0)))
 
-    print(f"\nFreshman of the Year Watch {season} (top {args.top_n} per weight, sorted by FreshScore):\n")
-    print(f"{'#':>3}  {'Name':<24} {'Team':<18} {'Wt':>4} {'Rk':>3} {'W-L':>6} {'DPG':>6} {'Fresh':>6}")
+    print(f"\nFreshman of the Year Watch {season} (top {args.top_n} per weight, sorted by DPG):\n")
+    print(f"{'#':>3}  {'Name':<24} {'Team':<18} {'Wt':>4} {'Rk':>3} {'W-L':>6} {'DPG':>6}  NCAA")
     rows = []
     for i, c in enumerate(cands, start=1):
         s = c["s"]
         dpg = round(c["dpg"], 2) if c["dpg"] is not None else None
+        n = c["ncaa"]
+        ncaa_txt = "-" if n is None else "DNQ" if n.get("dnq") else \
+            f"{n['place'] or 'DNP'} (seed {n['seed']}, {n['wins']}-{n['losses']})"
         print(f"{i:>3}  {s.name:<24.24} {s.team:<18.18} {s.weight_class:>4} {s.weight_rank:>3} "
-              f"{s.wins}-{s.losses:<3} {dpg if dpg is not None else '-':>6} {c['score']:6.2f}")
+              f"{s.wins}-{s.losses:<3} {dpg if dpg is not None else '-':>6}  {ncaa_txt}")
         rows.append({
             "rank": i,
             "wrestler_id": s.wrestler_id,
@@ -146,7 +187,7 @@ def main() -> None:
                 "ranked_bonus_pct": round(s.ranked_bonus_pct, 3),
                 "dpg": dpg,
             },
-            "fresh_score": round(c["score"], 2),
+            "ncaa": c["ncaa"],
         })
 
     out_dir = Path(args.output_dir) / str(season)
@@ -156,7 +197,7 @@ def main() -> None:
         "season": season,
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "description": (
-            f"True and redshirt freshmen ranked in the top {args.top_n} at their weight. "
+            f"True and redshirt freshmen ranked in the top {args.top_n} at their weight, ordered by DPG. "
             "Ranked wins are wins over top-33 opponents."
         ),
         "rows": rows,

@@ -13,6 +13,7 @@
     #freshman-table th, #freshman-table td { text-align: left; vertical-align: middle; }
     #freshman-table .num { font-variant-numeric: tabular-nums; white-space: nowrap; }
     #freshman-table th.num { white-space: normal; }
+    #freshman-table th, #freshman-table td { padding-left: 8px; padding-right: 8px; }
     #freshman-table .dpg-wrestler-name,
     #freshman-table .dpg-wrestler-sub,
     #freshman-table .dpg-team-name { white-space: nowrap; }
@@ -20,19 +21,15 @@
     #freshman-table .dpg-headshot--crest { padding: 6px; }
     #freshman-table .dpg-team-icon-slot { width: 40px; }
     #freshman-table .dpg-team-crest { height: 30px; max-width: 40px; }
-    #freshman-table .dpg-dpg-value { font-size: 1.2rem; }
     #freshman-table .dpg-meter-track { width: 76px; }
     #freshman-table th.fr-group { border-left: 1px solid var(--border); }
     #freshman-table td.fr-group { border-left: 1px solid var(--border); }
 
-    .fr-score-value {
-      font-size: 1.45rem;
-      font-weight: 700;
-      font-variant-numeric: tabular-nums;
-      line-height: 1.1;
-      color: var(--text);
-    }
-    .fr-score-fill { background: var(--accent); }
+    #freshman-table .dpg-dpg-value { font-size: 1.45rem; }
+    .fr-place { font-size: 1.05rem; font-weight: 700; color: var(--text); white-space: nowrap; }
+    .fr-place-sub { font-size: 0.72rem; color: var(--muted-2); white-space: nowrap; margin-top: 1px; }
+    .fr-place-dnp { font-size: 0.95rem; font-weight: 600; color: var(--muted); }
+    body.fr-no-ncaa .fr-ncaa-col { display: none; }
     .fr-muted { color: var(--muted); }
     .fr-strong { font-weight: 700; color: var(--text); }
 
@@ -54,18 +51,12 @@
       gap: 1px;
       min-width: 56px;
     }
-    .fr-mobile-score {
-      font-size: 20px;
-      font-weight: 700;
-      font-variant-numeric: tabular-nums;
-      color: var(--text);
-    }
-    .fr-mobile-dpg {
+    .fr-mobile-place {
       font-size: 12px;
-      font-weight: 600;
-      font-variant-numeric: tabular-nums;
+      color: var(--muted);
+      white-space: nowrap;
     }
-    .fr-mobile-dpg .fr-muted { font-weight: 400; }
+    .fr-mobile-place strong { color: var(--text); }
 
     @media (max-width: 767px) {
       #freshman-table-wrapper { display: none; }
@@ -86,8 +77,7 @@
 
     <section class="section">
       <div class="fr-key">
-        <span><strong>Fresh Score</strong>: 20% each win %, bonus %, pin %, ranked bonus %; 10% each ranked wins, top-10 wins</span>
-        <span><strong>DPG</strong>: season Dual Points Gained (not part of Fresh Score)</span>
+        <span class="fr-ncaa-col"><strong>NCAAs</strong>: finish at the NCAA Championships, with seed and bout record</span>
       </div>
       <div class="table-wrapper" id="freshman-table-wrapper">
         <table id="freshman-table" class="dpg-table">
@@ -96,8 +86,8 @@
               <th style="width: 32px;">Rank</th>
               <th>Wrestler</th>
               <th>Team</th>
-              <th>Fresh Score</th>
               <th title="Dual Points Gained. Your dual-point result (DEC 3, MD 4, TF 5, F 6) minus what a typical wrestler gets against that same opponent.">DPG ⓘ</th>
+              <th class="fr-ncaa-col" title="NCAA Championships finish, with seed and NCAA bout record">NCAAs</th>
               <th class="fr-group">Record</th>
               <th class="num">Bonus %</th>
               <th class="num">Pin %</th>
@@ -114,6 +104,6 @@
   </div>
 
   <script src="/mobile_rank_row.js?v=20260907"></script>
-  <script src="/freshman.js?v=20261002"></script>
+  <script src="/freshman.js?v=20261002b"></script>
 </body>
 </html>
