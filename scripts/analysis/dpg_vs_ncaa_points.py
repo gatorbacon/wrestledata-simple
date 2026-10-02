@@ -345,7 +345,7 @@ function drawInfo(f){
   const top = R.filter((d)=>d.d>=4), aaTop = top.filter((d)=>d.pl).length;
   $("info").innerHTML =
     `<div class="ig"><div class="kicker">DPG vs. points</div><div class="big">r = ${f.r.toFixed(2)}</div><div class="say">A real but loose link: DPG explains about <b>${Math.round(f.r*f.r*100)}%</b> of the spread in points.</div></div>` +
-    `<div class="ig"><div class="kicker">Seed vs. points</div><div class="big">r = ${seedFit.r.toFixed(2)}</div><div class="say">${Math.abs(seedFit.r) > Math.abs(f.r) ? "The seed tracks points <b>more closely</b> than DPG does." : "DPG tracks points <b>at least as well</b> as the seed does."}</div></div>` +
+    `<div class="ig"><div class="kicker">Seed vs. points</div><div class="big">r = ${seedFit.r.toFixed(2)}</div><div class="say">About the same as DPG, but that's not a fair fight: seed points drop off in steps, not a straight line. Ranked by order (rank correlation), the seed comes out ahead, 0.68 to 0.63 for all three years, and DPG adds almost nothing once you know the seed.</div></div>` +
     `<div class="ig"><div class="kicker">DPG +4 or better going in</div><div class="big">${top.length ? Math.round(aaTop/top.length*100) : 0}%</div><div class="say">became All-Americans (${aaTop} of ${top.length}).</div></div>`;
 }
 
