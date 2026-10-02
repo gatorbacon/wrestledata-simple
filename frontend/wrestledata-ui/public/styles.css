@@ -3491,6 +3491,18 @@ th.tooltip-trigger .tooltip {
   font-weight: 500;
 }
 
+/* Weight the bout was wrestled at: small semibold text in the body color
+   (not the accent -- blue reads as a link here), so it sits between the date
+   and the name as a label without competing with either. Deliberately not a
+   pill: rank and result are already pills, and a "149" pill next to a
+   "#149" rank badge would be easy to misread. */
+#match-table td.match-weight {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+
 #match-table td.name-cell a {
   color: var(--text);
   text-decoration: none;
@@ -6275,9 +6287,9 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   overflow-x: hidden;
 }
 
-/* 4 columns: date | opponent (rank+name / team) | result (pill+score) |
-   impact. Fixed-width outer columns, opponent flexes, nothing here ever
-   stacks three lines in one cell. */
+/* 4 columns: date (+ weight under it) | opponent (rank+name / team) |
+   result (pill+score) | impact. Fixed-width outer columns, opponent flexes,
+   nothing here ever stacks three lines in one cell. */
 .wp2m-match-row {
   display: grid;
   grid-template-columns: 50px 1fr 60px 50px;
@@ -6327,6 +6339,19 @@ a.wp2-chip:hover { border-color: var(--accent); color: var(--accent); }
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* Weight the bout was wrestled at, on its own line under the date: small
+   semibold body-color text (same treatment as the desktop table's Wt
+   column) -- darker and heavier than the muted date above it, so it reads
+   apart without looking like a link. */
+.wp2m-match-weight {
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
 }
 
 /* Col 3: result -- pill (method code only) + score/time, stacked as one

@@ -1482,7 +1482,7 @@ function renderMatchHistory(matches, seasons) {
       const dr = document.createElement("tr");
       dr.className = "match-season-divider";
       const td = document.createElement("td");
-      td.colSpan = 7;
+      td.colSpan = 8;
       td.textContent = seasonDividerText(seasons, match._season);
       dr.appendChild(td);
       tbody.appendChild(dr);
@@ -1492,6 +1492,13 @@ function renderMatchHistory(matches, seasons) {
     const dateTd = document.createElement("td");
     dateTd.textContent = formatDateMMDDYY(match.date);
     tr.appendChild(dateTd);
+
+    // Weight the bout was wrestled at (match_list[].weight_class, set per
+    // match -- not opponent_weight, which is the opponent's season weight).
+    const weightTd = document.createElement("td");
+    weightTd.className = "match-weight";
+    weightTd.textContent = safe(match.weight_class);
+    tr.appendChild(weightTd);
 
     const oppTd = document.createElement("td");
     oppTd.className = "name-cell";
@@ -1547,8 +1554,8 @@ function renderMatchHistory(matches, seasons) {
 }
 
 // ===============================
-// Mobile match list: 4 columns (date | rank+name/team | result pill+score |
-// impact), one row each, no stacked run-on line, no initials.
+// Mobile match list: 4 columns (date+weight | rank+name/team | result
+// pill+score | impact), one row each, no stacked run-on line, no initials.
 // ===============================
 
 function formatDateShort(dateStr) {
@@ -1613,7 +1620,8 @@ function renderMobileMatchList(matches, season, seasons) {
 
     return divider + (
       `<${tag} class="wp2m-match-row"${hrefAttr}>` +
-      `<div class="wp2m-match-date">${formatDateShort(match.date)}</div>` +
+      `<div class="wp2m-match-date">${formatDateShort(match.date)}` +
+      `<span class="wp2m-match-weight">${safe(match.weight_class)}</span></div>` +
       `<div class="wp2m-match-opponent">` +
       `<div class="wp2m-match-opp-name">${rankHtml}${fullName}</div>` +
       `<div class="wp2m-match-opp-team">${safe(match.opponent_team)}</div>` +
