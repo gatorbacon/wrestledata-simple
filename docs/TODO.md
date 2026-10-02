@@ -21,6 +21,7 @@ One list for both sites and the side projects, so nothing gets lost between sess
 ## Ready to ship (committed locally, not pushed)
 
 - [ ] **Dual Schedule: team filter + Text only view** (commit `0ebfa76024`). TJ is holding it to group with the next push. *(added 2026-10-01)*
+- [ ] **Also unpushed (2026-10-01/02)**: historical brackets data + Lab NCAA Bracket Archive (`f666135bbe`, `5e9c41c04c`, `7a34d182ff`), About page DPG formula (`dc352dcc52`), DPG-vs-NCAA analyses (`9af5bb9554`, `668562d21f`, `631db41587`, `0de4e80f3a`), Lab "DPG and the Hodge Trophy" page (`a8b0e501b5`), TODO list (`2f9cf91eca`). Run the smoke test before and after the push; the Freshman page's NCAAs column needs the bracket archive commits to go up with it. *(added 2026-10-02)*
 - [ ] **Freshman of the Year Watch**: restyled, ordered by DPG (FreshScore dropped), NCAAs finish column, rebuilt on final 2026 data (builder moved off the frozen matrix-rank files). *(added 2026-10-02)*
 
 ## Uncommitted local work
