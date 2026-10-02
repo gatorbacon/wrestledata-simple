@@ -58,31 +58,6 @@ a.bk-tile:hover { border-color: var(--accent); }
 .bk-wnotes { font-size: .78rem; color: var(--muted); margin: -6px 0 12px; padding: 0; list-style: none; }
 .bk-wnotes li::before { content: "ⓘ "; }
 
-/* round navigator */
-.bv-navwrap { display: flex; flex-direction: column; gap: 4px; margin-bottom: 14px; }
-.bv-navlabel { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
-.bv-hint { font-weight: 400; text-transform: none; letter-spacing: 0; margin-left: 6px; }
-.bv-nav { display: flex; gap: 8px; align-items: stretch; }
-.nav-track { position: relative; flex: 1; display: flex; background: var(--panel); border: 1px solid var(--border);
-  border-radius: 10px; overflow: hidden; touch-action: none; user-select: none; outline-offset: 2px; }
-.nav-cell { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; justify-content: center; gap: 2px;
-  padding: 7px 3px; border: 0; border-right: 1px solid var(--border); background: transparent; color: var(--muted);
-  font: inherit; text-align: center; cursor: pointer; }
-.nav-cell:last-of-type { border-right: 0; }
-.nav-cell.in { color: var(--text); }
-.nav-lbl { font-size: .68rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.nav-lbl + .nav-lbl { opacity: .8; border-top: 1px dashed var(--border); padding-top: 2px; }
-.nav-none { opacity: .35; }
-.nav-win { position: absolute; top: 0; bottom: 0; background: var(--accent-soft); opacity: .35; cursor: grab;
-  border: 2px solid var(--accent); border-radius: 9px; transition: left .12s ease, width .12s ease; }
-.nav-win.dragging { cursor: grabbing; transition: none; }
-.nav-h { position: absolute; top: 0; bottom: 0; width: 14px; cursor: ew-resize; }
-.nav-h-l { left: -2px; } .nav-h-r { right: -2px; }
-.nav-h::after { content: ""; position: absolute; top: 30%; bottom: 30%; left: 5px; width: 3px; border-radius: 2px; background: var(--accent); }
-.nav-btns { display: flex; flex-direction: row; gap: 4px; }
-.nav-btns button { min-width: 34px; padding: 0 8px; font: inherit; font-weight: 700; cursor: pointer;
-  border: 1px solid var(--border); background: var(--panel); color: var(--text); border-radius: 8px; }
-
 /* bracket */
 .bv-bracket { overflow-x: auto; padding-bottom: 6px; }
 .brk-section { margin-bottom: 26px; }
@@ -96,7 +71,7 @@ a.bk-tile:hover { border-color: var(--accent); }
 .brk-edge.loser { stroke-dasharray: 4 3; }
 .brk-match { position: absolute; height: 64px; background: var(--panel); border: 1px solid var(--border);
   border-radius: 6px; overflow: hidden; }
-.brk-lbl { position: absolute; right: 6px; bottom: 1px; font-size: .62rem; font-weight: 700; color: var(--accent); text-transform: uppercase; z-index: 1; }
+.brk-lbl { flex: 0 0 auto; font-size: .62rem; font-weight: 700; color: var(--accent); text-transform: uppercase; }
 .brk-row { position: absolute; left: 0; right: 0; height: 24px; display: flex; align-items: center; gap: 6px; padding: 0 8px;
   color: var(--muted); cursor: pointer; font-size: .85rem; }
 .brk-row + .brk-row { border-top: 1px solid var(--border); }
@@ -106,8 +81,9 @@ a.bk-tile:hover { border-color: var(--accent); }
 .brk-name { flex: 0 1 auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .brk-team { flex: 1 1 0; min-width: 0; font-size: .72rem; font-weight: 400; color: var(--muted); white-space: nowrap;
   overflow: hidden; text-overflow: ellipsis; }
-.brk-res { position: absolute; left: 30px; bottom: 0; height: 16px; font-size: .68rem; color: var(--muted); border-top: 1px solid var(--border);
-  right: 0; padding: 1px 8px 0 30px; background: var(--panel-2); white-space: nowrap; overflow: hidden; }
+.brk-res { position: absolute; left: 0; right: 0; bottom: 0; height: 16px; display: flex; align-items: center; gap: 8px;
+  padding: 0 8px 0 36px; font-size: .68rem; color: var(--muted); border-top: 1px solid var(--border); background: var(--panel-2); }
+.brk-res-t { flex: 1 1 auto; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .has-hl .brk-row:not(.hl) { opacity: .3; }
 .has-hl .brk-edge:not(.hl) { opacity: .12; }
 .brk-row.hl { color: var(--text); background: color-mix(in srgb, var(--hl) 28%, transparent); }
@@ -132,7 +108,6 @@ a.bk-tile:hover { border-color: var(--accent); }
 .bk-bp-w { font-weight: 700; }
 
 @media (max-width: 600px) {
-  .bv-hint { display: none; } .nav-lbl { font-size: .6rem; }
   .bk-title h1 { font-size: 1.15rem; }
   .bk-yearnav { margin-left: 0; }
   .bk-table th, .bk-table td { padding: 5px 6px; }

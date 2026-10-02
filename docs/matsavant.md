@@ -1223,7 +1223,9 @@ Every NCAA championship 1928-2026 at `/lab/brackets/` (directory) and `/lab/brac
   rounds as tables (1936, 1948), drawn consolation brackets (1941 on). Bouts whose winner the sheet doesn't show
   appear with no winner ("result not recorded").
 - **Viewer:** `lab/brackets/bracket_engine.js` is a copy of `labs/bracket_viewer/bracket_engine.js`, extended (wrestler key
-  `k`, no-winner bouts). Keep the two in step if the engine changes.
+  `k`, no-winner bouts, each section starts at its own first round, place label inside the result line). No rounds
+  navigator (TJ, 2026-10-01): every round is shown and the bracket scrolls sideways inside its box when it's wider
+  than the screen.
 - **Team names:** shown as printed at the time, with spelling fixes only (`TEAM_FIXES` in the build script:
   PDF-truncated names, TrackWrestling's mixed "Penn St."/"Penn State", "UNI"/"Northern Iowa"). Linking old names
   to today's programs (team history) is **not built yet**.

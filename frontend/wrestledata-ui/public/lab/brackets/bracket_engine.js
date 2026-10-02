@@ -20,7 +20,7 @@
   const GAP_Y = 14;            // min vertical gap between boxes in a column
   const HEAD_H = 30;           // section heading
   const MAX_BOX_W = 330;
-  const MIN_BOX_W = 150;
+  const MIN_BOX_W = 185;       // below this, names and teams get cut off
   const MAX_STEP_EXTRA = 110;  // extra connector room beyond the box when there's spare width
 
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) =>
@@ -158,18 +158,25 @@
       if (!st.ev) return;
       const W = Math.max(280, bracketEl.clientWidth);
       const c0 = st.start, c1 = st.start + st.count - 1;
-      const n = st.count;
+      // Each section starts at its own first round (the consolation bracket doesn't sit under empty
+      // championship columns); box size comes from the widest section so all sections share one scale.
+      const spans = st.ev.sections.map((sec) => {
+        const cs = st.matches.filter((m) => m.s === sec.id && m.c >= c0 && m.c <= c1).map((m) => m.c);
+        return cs.length ? Math.max(...cs) - Math.min(...cs) + 1 : 0;
+      });
+      const n = Math.max(1, ...spans);
       const boxW = Math.max(MIN_BOX_W, Math.min(MAX_BOX_W, (W - (n - 1) * 26) / n));
       let step = n > 1 ? Math.max(boxW + 26, Math.min((W - boxW) / (n - 1), boxW + MAX_STEP_EXTRA)) : 0;
       const totalW = boxW + (n - 1) * step;
-      const left0 = Math.max(0, (W - totalW) / 2);
       const planeW = Math.max(W, totalW);
-      const xOf = (c) => left0 + (c - c0) * step;
+      let xOf = null;
 
       let html = "";
       for (const sec of st.ev.sections) {
         const vis = st.matches.filter((m) => m.s === sec.id && m.c >= c0 && m.c <= c1);
         if (!vis.length) continue;
+        const sc0 = Math.min(...vis.map((m) => m.c));
+        xOf = (c) => (c - sc0) * step;
 
         // vertical scale: tightest visible column decides px per unit
         const cols = new Map();
@@ -217,10 +224,10 @@
           const dropA = m.a.f && st.byId.get(m.a.f[0]) && st.byId.get(m.a.f[0]).s !== m.s;
           const dropB = m.b.f && st.byId.get(m.b.f[0]) && st.byId.get(m.b.f[0]).s !== m.s;
           boxes += `<div class="brk-match" style="left:${xOf(m.c)}px;top:${t}px;width:${boxW}px" data-id="${esc(m.id)}">` +
-            (m.lbl ? `<div class="brk-lbl">${esc(m.lbl)}</div>` : "") +
             rowHTML(m.a, m.w === "a", 0, dropA) +
             rowHTML(m.b, m.w === "b", ROW_H, dropB) +
-            `<div class="brk-res">${esc(m.res || (m.w ? "" : "result not recorded"))}</div></div>`;
+            `<div class="brk-res"><span class="brk-res-t">${esc(m.res || (m.w ? "" : "result not recorded"))}</span>` +
+            (m.lbl ? `<span class="brk-lbl">${esc(m.lbl)}</span>` : "") + `</div></div>`;
         }
 
         html += `<section class="brk-section"><h3>${esc(sec.label)}</h3>` +

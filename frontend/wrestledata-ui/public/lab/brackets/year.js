@@ -1,21 +1,20 @@
 // NCAA Bracket Archive, one tournament year: weight tabs (bracket, bad-point table or placewinners only)
 // plus a Team Scores tab. Data: data/{year}.json from scripts/brackets/build_ncaa_bracket_archive.py.
-// URL state: ?y=1979&w=150 (w=team for the Team Scores tab) &from=&n= (rounds window).
+// URL state: ?y=1979&w=150 (w=team for the Team Scores tab). Every round is always shown (TJ, 2026-10-01: no
+// rounds navigator); on narrow screens the bracket scrolls sideways inside its own box.
 (function () {
   "use strict";
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const params = new URLSearchParams(location.search);
-  const view = BracketEngine.mount({ bracketEl: $("bracket"), navEl: $("nav") });
+  // the engine still builds its navigator strip; give it a detached element so nothing shows
+  const view = BracketEngine.mount({ bracketEl: $("bracket"), navEl: document.createElement("div") });
   const PLACE = ["", "1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th"];
-  let doc = null, current = null, year = null, wantWin = { start: 0, count: 5 };
+  let doc = null, current = null, year = null;
 
-  const defaultCount = () => { const w = window.innerWidth; return w < 600 ? 2 : w < 900 ? 3 : 5; };
   function syncURL() {
     const p = new URLSearchParams({ y: year, w: current });
-    const wt = doc && doc.weights.find((x) => x.id === current);
-    if (wt && wt.kind === "bracket") { const v = view.getWindow(); p.set("from", v.start); p.set("n", v.count); }
     history.replaceState(null, "", "?" + p.toString());
   }
 
@@ -97,8 +96,7 @@
       : w.kind === "summary" ? `<p class="bk-ts-note">Only the placewinners survive for this year; the source has no bouts.</p>` : "";
     if (isBracket) {
       view.load({ sections: w.sections, columns: w.columns }, { matches: w.matches });
-      // the engine can only clamp a window once it knows the column count, so apply the wanted one after load
-      view.setWindow(wantWin.start, wantWin.count, true);
+      view.setWindow(0, w.columns.length, true);   // all rounds
       view.rerender();
     }
     syncURL();
@@ -164,7 +162,6 @@
     const i = ids.indexOf(current) + (e.key === "ArrowRight" ? 1 : -1);
     if (i >= 0 && i < ids.length) { selectTab(ids[i]); document.querySelector(`#tabs [data-id="${ids[i]}"]`).focus(); }
   });
-  view.onWindowChange = (start, count) => { wantWin = { start, count }; syncURL(); };
 
   fetch("data/index.json").then((r) => r.json()).then(async (idx) => {
     const ys = idx.years.map((y) => y.year);
@@ -173,7 +170,6 @@
     doc = await fetch(`data/${year}.json`).then((r) => r.json());
     header(idx);
     tabs();
-    wantWin = { start: +params.get("from") || 0, count: +params.get("n") || defaultCount() };
     const want = params.get("w");
     selectTab(want === "team" || doc.weights.some((w) => w.id === want) ? want : doc.weights[0].id);
   }).catch((err) => {
