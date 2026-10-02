@@ -30,7 +30,7 @@
         {"name": "lab-bracket-1979-team", "path": "/lab/brackets/year.html?y=1979&w=team", "min_text": 200, "expect": [{"sel": ".bk-table tbody tr", "min": 10}]},
         {"name": "lab-bracket-1936-badpoints", "path": "/lab/brackets/year.html?y=1936&w=126", "min_text": 400, "expect": [{"sel": ".bk-bp-round", "min": 3}]},
         {"name": "notes", "path": "/notes/index.html", "min_text": 120},
-        {"name": "about", "path": "/about.html", "min_text": 300}
+        {"name": "about", "path": "/about.html", "min_text": 300, "expect": [{"sel": ".dpg-formula img"}]}
       ]
     },
     "kentuckymat": {

@@ -7,6 +7,12 @@
   <link rel="stylesheet" href="/styles.css?v=20260921" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   <script src="/search_index.js?v=20260913"></script>
+  <style>
+    .dpg-formula { margin: 12px 0 18px; max-width: 760px; }
+    .dpg-formula img { display: block; width: 100%; height: auto; background: #fff;
+      border: 1px solid var(--border); border-radius: var(--r-md); }
+    .dpg-formula figcaption { margin-top: 6px; font-size: .8rem; color: var(--muted); }
+  </style>
 </head>
 
 <body>
@@ -25,6 +31,13 @@
       <h2>Core Metrics</h2>
       <ul>
         <li><strong>DPG</strong> — Dual Points Gained. Your dual-point result (DEC 3, MD 4, TF 5, F 6) minus what a typical wrestler gets against that same opponent. Beat a #10 by major and you get a lot. Tech a #200 and you get a little. Season DPG is the average of those matches, not a total.
+          <figure class="dpg-formula">
+            <a href="/assets/dpg_equation.svg" target="_blank" rel="noopener">
+              <img src="/assets/dpg_equation.svg" width="1100" height="820" loading="lazy"
+                   alt="DPG formula: the season average, over a wrestler's matches, of his signed result (plus or minus 3 for a decision, 4 major, 5 tech fall, 6 fall) minus the expected result against that opponent. The opponent's strength is his average result shrunk toward the average for his rank (k = 20), and the rank average is interpolated between rank bands 1, 10, 30, 50, 100, 150 and 200." />
+            </a>
+            <figcaption>The full calculation. Tap to enlarge.</figcaption>
+          </figure>
         </li>
         <li><strong>xTP</strong> – Expected team points at the NCAA Tournament based on advancement, placement, and bonus</li>
       </ul>
