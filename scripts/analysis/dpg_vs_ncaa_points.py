@@ -114,7 +114,10 @@ def main():
         d, miss = build_year(y, allm)
         data += d
         missing += miss
+    sim_path = ROOT / "data" / "analysis" / "dpg_vs_seed_bracket_sim.json"   # from dpg_vs_seed_bracket_sim.py
+    sim = json.loads(sim_path.read_text()) if sim_path.exists() else None
     tpl = TEMPLATE.replace("__DATA__", json.dumps(data, separators=(",", ":"))) \
+                  .replace("__SIM__", json.dumps(sim)) \
                   .replace("__MISSING__", json.dumps(missing))
     OUT.write_text(tpl)
     print(f"{len(data)} wrestlers, {len(missing)} not matched -> {OUT}")
@@ -233,6 +236,14 @@ tr:last-child td{border-bottom:0}
   <div class="two" id="t3"></div>
 </section>
 
+<section class="sec" id="s4">
+  <h2><span class="num">4</span>Fair fight: both get the real bracket</h2>
+  <p class="sub">A raw correlation flatters the seed, because the seed also builds the bracket: a 5 seed has to go through the 1 in the semifinals, a 3 seed only the 2. So here each model predicts every match <b>inside the bracket as it was actually drawn</b>. Win chances come from DPG alone or the seed alone, tuned on the 2015–2023 tournaments. Each 2024–26 bracket is then played out 20,000 times to get every wrestler's expected points. Bonus points are left out of both sides, since neither model tries to predict them. This section always covers all three years.</p>
+  <div class="info" id="info4"></div>
+  <div class="tabwrap" id="t4"></div>
+  <p class="cap" id="c4cap"></p>
+</section>
+
 <section class="sec">
   <h2>How this was built</h2>
   <ul class="foot2">
@@ -247,6 +258,7 @@ tr:last-child td{border-bottom:0}
 <script>
 const DATA = __DATA__;
 const MISSING = __MISSING__;
+const SIM = __SIM__;
 (function(){
 "use strict";
 const $ = (id) => document.getElementById(id);
@@ -388,12 +400,27 @@ function drawResid(f){
   $("t3").innerHTML = tbl("Beat their DPG", s.slice(0,10)) + tbl("Fell short of it", s.slice(-10).reverse());
 }
 
+function drawSim(){
+  if (!SIM) { $("s4").hidden = true; return; }
+  const S = SIM.summary, D = S.disagreements, pct = (v) => (v*100).toFixed(1) + "%";
+  $("info4").innerHTML =
+    `<div class="ig"><div class="kicker">Points forecast, same bracket</div><div class="big">${S.dpg.pearson.toFixed(2)} vs ${S.seed.pearson.toFixed(2)}</div><div class="say">DPG vs. seed. <b>Dead even</b>: once both know the bracket, neither predicts who scores points better.</div></div>` +
+    `<div class="ig"><div class="kicker">Picking match winners</div><div class="big">${pct(S.dpg.accuracy)}</div><div class="say">DPG picked the winner of ${pct(S.dpg.accuracy)} of the ${SIM.test_bouts.toLocaleString()} matches; the seed picked <b>${pct(S.seed.accuracy)}</b>.</div></div>` +
+    `<div class="ig"><div class="kicker">When they disagree</div><div class="big">${D.seed_right} of ${D.bouts}</div><div class="say">times the seed was right (${Math.round(D.seed_right/D.bouts*100)}%), DPG ${D.dpg_right}. That edge is probably real, not luck.</div></div>`;
+  const row = (lbl, m, hl) => `<tr${hl?' style="font-weight:650"':""}><td class="l">${lbl}</td><td>${m.pearson.toFixed(3)}</td><td>${m.spearman.toFixed(3)}</td><td>${m.rmse.toFixed(2)}</td><td>${pct(m.accuracy)}</td><td>${m.log_loss.toFixed(3)}</td></tr>`;
+  $("t4").innerHTML = `<table><thead><tr><th class="l">Model (tuned on 2015–23, tested on 2024–26)</th><th>Points r</th><th>Points rank r</th><th>Points error (RMSE)</th><th>Matches picked</th><th>Log loss</th></tr></thead><tbody>` +
+    row("DPG only", S.dpg) + row("Seed only", S.seed) + row("DPG + seed together", S.both, true) + `</tbody></table>`;
+  $("c4cap").innerHTML = `Higher r and match %, lower error and log loss = better. <b>The best forecast uses both:</b> adding DPG to the seed makes the win chances more accurate (lower log loss, by more than chance would explain), so DPG knows something the seed doesn't, even though the combination picks slightly fewer winners outright than the seed alone. ` +
+    `Points columns: expected points from ${SIM.n_sims.toLocaleString()} simulated tournaments per bracket vs. actual points without bonus, ${S.dpg.n} wrestlers.`;
+}
+
 function render(){ const f = drawScatter(); drawInfo(f); drawBands(); drawResid(f); }
 
 function seg(id, cb){ $(id).addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return;
   $(id).querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", x === b)); cb(b.dataset.v); }); }
 seg("f-year", (v) => { year = v; render(); });
 seg("f-theme", (v) => { if (v === "auto") document.documentElement.removeAttribute("data-theme"); else document.documentElement.setAttribute("data-theme", v); });
+drawSim();
 $("missing").innerHTML = MISSING.length ? `<b>Left out</b> (no DPG match found): ${MISSING.map(esc).join("; ")}.` : "Every qualifier was matched to his DPG.";
 render();
 })();
