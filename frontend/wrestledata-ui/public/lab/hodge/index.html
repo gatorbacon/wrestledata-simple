@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DPG and the Hodge Trophy (Lab) — MatSavant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The five best DPG seasons each year since 2012, with the Hodge Trophy winner and runner-up marked." />
+  <link rel="stylesheet" href="/styles.css?v=20260921" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+  <style>
+    /* Data: hodge_dpg.json, built once a year by scripts/awards/build_hodge_dpg_history.py */
+    .hd { --gold: #a8790a; --gold-soft: #f8ecc9; --gold-line: #dcb24a;
+          --silver: #5f6b78; --silver-soft: #e9edf2; --silver-line: #aeb8c4;
+          padding: 0 0 40px; }
+    .hd-crumb { font-size: .8rem; color: var(--muted); margin: 0 0 4px; }
+    .hd-crumb a { text-decoration: none; }
+    .hd-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: .85rem; color: var(--muted); margin: 4px 0 0; }
+    .hd-legend span { display: inline-flex; align-items: center; gap: 6px; }
+    .hd-sw { width: 14px; height: 14px; border-radius: 4px; border: 1.5px solid; display: inline-block; }
+    .hd-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 16px 0 6px; }
+    .hd-card { background: var(--panel); border: 1px solid var(--border); border-radius: var(--r-md); padding: 14px 16px 12px; }
+    .hd-card .k { font-size: .72rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
+    .hd-card .big { font-size: 2.4rem; line-height: 1.1; font-weight: 800; letter-spacing: -.02em; margin-top: 4px; }
+    .hd-card .big small { font-size: 1.2rem; font-weight: 650; color: var(--muted); letter-spacing: 0; }
+    .hd-card .say { font-size: .88rem; margin-top: 4px; }
+
+    .hd-board { margin-top: 16px; background: var(--panel); border: 1px solid var(--border); border-radius: var(--r-md); overflow: hidden; }
+    .hd-hdr, .hd-yr { display: grid; grid-template-columns: 64px repeat(5, minmax(0, 1fr)) minmax(0, 1.05fr); }
+    .hd-hdr { font-size: .7rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--muted);
+              border-bottom: 1px solid var(--border); background: var(--panel-2); }
+    .hd-hdr div { padding: 8px 10px; }
+    .hd-yr { border-bottom: 1px solid var(--border); }
+    .hd-yr:last-child { border-bottom: 0; }
+    .hd-ylab { display: flex; flex-direction: column; justify-content: center; padding: 8px 10px; font-weight: 800; font-size: 1.05rem; }
+    .hd-ylab small { font-size: .68rem; font-weight: 600; color: var(--muted); }
+    .hd-cell { padding: 6px 5px; min-width: 0; }
+    .hd-c { height: 100%; border-radius: 8px; padding: 7px 9px 8px; border: 1.5px solid transparent;
+            display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .hd-c .nm { font-weight: 650; font-size: .85rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .hd-c .nm a { color: var(--text); text-decoration: none; }
+    .hd-c .nm a:hover { color: var(--accent); text-decoration: underline; }
+    .hd-c .tl { display: flex; align-items: center; gap: 6px; min-width: 0; }
+    .hd-c .tm { flex: 1 1 auto; min-width: 0; font-size: .72rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .hd-c .rk { font-weight: 700; color: var(--text); }
+    .hd-c .row { display: flex; align-items: center; gap: 7px; margin-top: 3px; }
+    .hd-c .val { font-variant-numeric: tabular-nums; font-weight: 700; font-size: .82rem; min-width: 34px; }
+    .hd-c .trk { flex: 1; height: 5px; border-radius: 3px; background: var(--panel-2); overflow: hidden; }
+    .hd-c .trk i { display: block; height: 100%; border-radius: 3px; background: #c9c1b1; }
+    .hd-c.win { background: var(--gold-soft); border-color: var(--gold-line); }
+    .hd-c.win .trk { background: rgba(255,255,255,.6); }
+    .hd-c.win .trk i { background: var(--gold); }
+    .hd-c.ru { background: var(--silver-soft); border-color: var(--silver-line); }
+    .hd-c.ru .trk { background: rgba(255,255,255,.7); }
+    .hd-c.ru .trk i { background: var(--silver); }
+    .hd-badge { flex: 0 0 auto; font-size: .62rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
+                border-radius: 999px; padding: 1px 7px; color: #fff; }
+    .hd-c.win .hd-badge { background: var(--gold); }
+    .hd-c.ru .hd-badge { background: var(--silver); }
+    .hd-out { display: flex; flex-direction: column; gap: 6px; justify-content: center; }
+    .hd-out .hd-c { height: auto; }
+    .hd-none { display: flex; align-items: center; height: 100%; padding: 0 8px; font-size: .75rem; color: var(--muted); }
+    .hd-rkm { display: none; font-size: .7rem; font-weight: 700; color: var(--muted); }
+    .hd-cap { font-size: .78rem; color: var(--muted); margin: 8px 2px 0; }
+    .hd-notes { font-size: .82rem; color: var(--muted); margin-top: 18px; padding-left: 18px; }
+    .hd-notes li { margin: 4px 0; }
+    @media (max-width: 820px) {
+      .hd-hdr { display: none; }
+      .hd-yr { grid-template-columns: 1fr; padding: 4px 0 10px; }
+      .hd-ylab { flex-direction: row; justify-content: flex-start; align-items: baseline; gap: 8px; padding: 8px 12px 2px; }
+      .hd-cell, .hd-out { padding: 3px 10px; }
+      .hd-c { flex-direction: row; align-items: center; flex-wrap: wrap; gap: 2px 10px; padding: 7px 10px; }
+      .hd-c .nm { flex: 1 1 auto; }
+      .hd-c .tl { flex: 1 1 100%; order: 3; }
+      .hd-c .row { margin: 0; flex: 0 0 130px; }
+      .hd-rkm { display: inline; }
+    }
+  </style>
+</head>
+<body>
+  <script src="/analytics.js?v=20260911"></script>
+  <script src="/header.js?v=20260908"></script>
+  <div class="page-container">
+    <header class="header">
+      <h1>🧪 DPG and the Hodge Trophy</h1>
+      <div class="header-explainer">
+        The five best DPG seasons each year since 2012, with the Hodge Trophy winner and the runner-up in the vote marked. When the voters picked someone outside the top five, he's shown at the end of that year's row with his DPG rank.
+      </div>
+    </header>
+    <main class="hd">
+      <p class="hd-crumb"><a href="/lab/index.html">Lab</a> › DPG and the Hodge</p>
+      <div class="hd-legend">
+        <span><span class="hd-sw" style="background:var(--gold-soft);border-color:var(--gold-line)"></span>Hodge winner</span>
+        <span><span class="hd-sw" style="background:var(--silver-soft);border-color:var(--silver-line)"></span>Runner-up in the vote</span>
+        <span>Number on the badge = first-place votes</span>
+      </div>
+      <div class="hd-cards" id="cards"></div>
+      <div class="hd-board" role="table" aria-label="Top five DPG per season with the Hodge winner and runner-up">
+        <div class="hd-hdr" role="row"><div>Year</div><div>#1 DPG</div><div>#2</div><div>#3</div><div>#4</div><div>#5</div><div>Hodge pick outside the top 5</div></div>
+        <div id="rows"><p class="hd-none" style="padding:14px">Loading…</p></div>
+      </div>
+      <p class="hd-cap" id="cap"></p>
+      <ul class="hd-notes">
+        <li><b>DPG</b> here is the full season, including the NCAA Championships, because the Hodge is voted on after them.</li>
+        <li><b>Runner-up</b> = second in the published vote. 2021 was a shared award (Spencer Lee and Gable Steveson) with no runner-up; 2012 has no published vote counts.</li>
+        <li>Winners and votes: <a href="https://en.wikipedia.org/wiki/Dan_Hodge_Trophy" target="_blank" rel="noopener">Wikipedia, Dan Hodge Trophy</a>.</li>
+      </ul>
+    </main>
+  </div>
+  <script>
+  (function () {
+    "use strict";
+    const $ = (id) => document.getElementById(id);
+    const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) =>
+      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+    fetch("hodge_dpg.json").then((r) => r.json()).then((doc) => {
+      const S = doc.seasons;
+      const all = S.flatMap((y) => [...y.top, ...y.extra]);
+      const lo = 4.5, hi = Math.max(...all.map((e) => e.d));
+      const pct = (d) => Math.max(3, Math.min(100, (d - lo) / (hi - lo) * 100));
+
+      function card(e, showRank) {
+        const badge = e.tag === "win" ? "Hodge" : e.tag === "ru" ? "2nd" : "";
+        const tip = `${e.n} · ${e.t} · ${e.w} lbs · ${e.m} matches` + (e.votes != null ? ` · ${e.votes} first-place votes` : "");
+        return `<div class="hd-c ${e.tag || ""}" title="${esc(tip)}">` +
+          `<div class="nm"><span class="hd-rkm">${e.rank}</span> <a href="/wrestler.html?id=${encodeURIComponent(e.id)}&view=season">${esc(e.n)}</a></div>` +
+          `<div class="tl"><span class="tm">${showRank ? `<span class="rk">#${e.rank} in DPG · </span>` : ""}${esc(e.t)} · ${e.w}</span>` +
+          (badge ? `<span class="hd-badge">${badge}${e.votes != null ? ` · ${e.votes}` : ""}</span>` : "") + `</div>` +
+          `<div class="row"><span class="val">${e.d.toFixed(2)}</span><span class="trk"><i style="width:${pct(e.d).toFixed(1)}%"></i></span></div></div>`;
+      }
+
+      $("rows").innerHTML = S.slice().reverse().map((y) => {
+        const out = y.extra.length ? `<div class="hd-out">${y.extra.map((e) => card(e, true)).join("")}</div>`
+          : `<div class="hd-none">${y.shared ? "Shared award, no runner-up" : y.no_votes ? "Vote counts not published" : ""}</div>`;
+        return `<div class="hd-yr" role="row"><div class="hd-ylab">${y.y}${y.top[0].tag === "win" ? "<small>DPG #1 won</small>" : ""}</div>` +
+          y.top.map((e) => `<div class="hd-cell">${card(e)}</div>`).join("") + `<div class="hd-cell">${out}</div></div>`;
+      }).join("");
+
+      const n = S.length;
+      const leadWon = S.filter((y) => y.top[0].tag === "win").length;
+      const winTop5 = S.filter((y) => y.top.some((e) => e.tag === "win")).length;
+      const ruYears = S.filter((y) => [...y.top, ...y.extra].some((e) => e.tag === "ru"));
+      const ruTop5 = ruYears.filter((y) => y.top.some((e) => e.tag === "ru")).length;
+      const lowestWin = S.flatMap((y) => [...y.top, ...y.extra].filter((e) => e.tag === "win").map((e) => ({ ...e, y: y.y })))
+        .sort((a, b) => b.rank - a.rank)[0];
+      const ruRanks = ruYears.map((y) => [...y.top, ...y.extra].find((e) => e.tag === "ru").rank);
+      $("cards").innerHTML =
+        `<div class="hd-card"><div class="k">DPG leader won the Hodge</div><div class="big">${leadWon}<small> of ${n}</small></div><div class="say">seasons, counting 2021's shared award.</div></div>` +
+        `<div class="hd-card"><div class="k">Hodge winner in the DPG top 5</div><div class="big">${winTop5}<small> of ${n}</small></div><div class="say">The lowest-ranked winner: ${esc(lowestWin.n)}, #${lowestWin.rank} in ${lowestWin.y}.</div></div>` +
+        `<div class="hd-card"><div class="k">Runner-up in the DPG top 5</div><div class="big">${ruTop5}<small> of ${ruYears.length}</small></div><div class="say">Second place is looser: from #${Math.min(...ruRanks)} to #${Math.max(...ruRanks)} in DPG.</div></div>`;
+      $("cap").textContent = `Bars run from DPG 4.5 to the best season shown. Only wrestlers with ${doc.min_matches} or more matches count. Tap a name for that season's profile.`;
+    }).catch(() => { $("rows").innerHTML = `<p class="hd-none" style="padding:14px">Couldn't load the data.</p>`; });
+  })();
+  </script>
+</body>
+</html>

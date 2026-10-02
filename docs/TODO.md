@@ -67,6 +67,7 @@ One list for both sites and the side projects, so nothing gets lost between sess
 
 - [ ] **MatSavant**: follow the checklist in docs/matsavant.md "Starting a New NCAA Season": bump `DEFAULT_SEASON` in `scripts/pipeline.py`, scrape rosters, run the pipeline (career linking is built in), review flagged transfers.
 - [ ] **KentuckyMat**: update `defaultSeason` in `hs_config.js` (CLAUDE.md gotcha 6).
+- [ ] **Every year, once the NCAA season is over and the Hodge Trophy is announced** (next: spring 2027): add the season to `data/awards/hodge_trophy_history.json` and run `.venv/bin/python scripts/awards/build_hodge_dpg_history.py` to update the Lab page `/lab/hodge/`. *(docs/matsavant.md "DPG and the Hodge Trophy")*
 
 ## Side projects
 

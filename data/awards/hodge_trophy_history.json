@@ -1,0 +1,20 @@
+{
+  "_about": "Dan Hodge Trophy winners and the vote runner-up, one entry per season. Source of truth for the Lab page /lab/hodge/ (built by scripts/awards/build_hodge_dpg_history.py). Add each new season after the Hodge is announced. 'votes' = first-place votes as published; leave it {} when no counts were published. 'runner_up' = second in the vote, null when there was none (shared award) or it wasn't published. Names must match our wrestler data (see 'aliases' in the build script for exceptions). Source through 2026: https://en.wikipedia.org/wiki/Dan_Hodge_Trophy (fetched 2026-10-02).",
+  "seasons": {
+    "2012": {"winners": ["David Taylor"], "runner_up": null, "votes": {}},
+    "2013": {"winners": ["Kyle Dake"], "runner_up": "Ed Ruth", "votes": {"Kyle Dake": 39, "Ed Ruth": 4}},
+    "2014": {"winners": ["David Taylor"], "runner_up": "Logan Stieber", "votes": {"David Taylor": 38, "Logan Stieber": 3}},
+    "2015": {"winners": ["Logan Stieber"], "runner_up": "Alex Dieringer", "votes": {"Logan Stieber": 38, "Alex Dieringer": 3}},
+    "2016": {"winners": ["Alex Dieringer"], "runner_up": "Zain Retherford", "votes": {"Alex Dieringer": 27, "Zain Retherford": 14}},
+    "2017": {"winners": ["Zain Retherford"], "runner_up": "J'Den Cox", "votes": {"Zain Retherford": 33, "J'Den Cox": 5}},
+    "2018": {"winners": ["Zain Retherford"], "runner_up": "Bo Nickal", "votes": {"Zain Retherford": 35, "Bo Nickal": 6}},
+    "2019": {"winners": ["Bo Nickal"], "runner_up": "Jason Nolf", "votes": {"Bo Nickal": 37, "Jason Nolf": 10}},
+    "2020": {"winners": ["Spencer Lee"], "runner_up": "Kollin Moore", "votes": {"Spencer Lee": 52, "Kollin Moore": 3}},
+    "2021": {"winners": ["Spencer Lee", "Gable Steveson"], "runner_up": null, "votes": {}, "note": "Shared award"},
+    "2022": {"winners": ["Gable Steveson"], "runner_up": "Yianni Diakomihalis", "votes": {"Gable Steveson": 49, "Yianni Diakomihalis": 5}},
+    "2023": {"winners": ["Mason Parris"], "runner_up": "Carter Starocci", "votes": {"Mason Parris": 38, "Carter Starocci": 14}},
+    "2024": {"winners": ["Aaron Brooks"], "runner_up": "Parker Keckeisen", "votes": {"Aaron Brooks": 48, "Parker Keckeisen": 8}},
+    "2025": {"winners": ["Wyatt Hendrickson"], "runner_up": "Carter Starocci", "votes": {"Wyatt Hendrickson": 30, "Carter Starocci": 26}},
+    "2026": {"winners": ["Mitchell Mesenbrink"], "runner_up": "Jax Forrest", "votes": {"Mitchell Mesenbrink": 66, "Jax Forrest": 4}}
+  }
+}

@@ -1208,6 +1208,33 @@ It's natural to rebuild this together with "NCAA Takedowns & Team Points" above;
 
 ---
 
+## DPG and the Hodge Trophy (Lab, built 2026-10-02)
+
+Page: `/lab/hodge/` (`frontend/wrestledata-ui/public/lab/hodge/index.html`, Lab card on `/lab/`). For each season since 2012 it shows the five best DPG seasons, with the Hodge winner (gold) and the vote runner-up (silver) marked. A winner or runner-up outside the top five appears at the end of that year's row with his DPG rank.
+
+- **Data:**
+  - `lab/hodge/hodge_dpg.json` is built by **`scripts/awards/build_hodge_dpg_history.py`**.
+  - Inputs:
+    - **`data/awards/hodge_trophy_history.json`**, the source of truth for winners, runner-up and first-place votes. It's hand-kept; values through 2026 are from Wikipedia "Dan Hodge Trophy".
+    - Each season's `mat_value_{year}.json`: full-season DPG, NCAAs included, because the vote comes after them.
+- **Rules:**
+  - Only wrestlers with 10+ matches count.
+  - Names match on letters only; the script's `ALIASES` handles spellings our data has differently, e.g. Ed Ruth = "Edward Ruth".
+  - The build **stops** if a winner or runner-up isn't found in that season's DPG list, so a typo can't silently drop a highlight.
+- **Not the same thing as the Hodge Watch** (`hodge_candidates.py`, `/rankings/hodge`), which is the in-season front-runner list.
+- **What it showed (2012–2026):**
+  - The DPG leader won the Hodge in 11 of 15 seasons, counting 2021's shared award.
+  - Every winner was in the DPG top 5; the lowest was Dake, #4 in 2013.
+  - The runner-up was in the top 5 in 9 of 13 seasons.
+- **Every year, after the season is over and the Hodge has been announced** (also in the new-season checklist below and in `docs/TODO.md`):
+  1. Add the season to `hodge_trophy_history.json`.
+  2. Make sure that season's DPG is final.
+  3. Run `.venv/bin/python scripts/awards/build_hodge_dpg_history.py`.
+  4. Check `/lab/hodge/` locally.
+  5. Smoke test and push.
+
+---
+
 ## NCAA Bracket Archive (Lab, built 2026-10-01)
 
 Every NCAA championship 1928-2026 at `/lab/brackets/` (directory) and `/lab/brackets/year.html?y=1979&w=150`
@@ -1454,6 +1481,8 @@ Written 2026-10-01. The profile page decides **retired vs. active** from data, n
    - merge each real transfer with the steps in Known Gotcha 17 (merge, rebuild the affected profiles, refresh, search, reports).
 5. **Smoke test, then push** (CLAUDE.md hard rule).
 
+**At the end of each season** (after the NCAAs and the Hodge announcement), update the Lab page "DPG and the Hodge Trophy": add the season to `data/awards/hodge_trophy_history.json`, then run `.venv/bin/python scripts/awards/build_hodge_dpg_history.py`. Details are in the "DPG and the Hodge Trophy" section.
+
 **How the profile picks its default view** (`pickInitialView` in `app.js`; full rules in the Wrestler Profile row under Pages):
 - The "current season" is the top entry of `available_seasons.json`.
 - A wrestler whose latest season in `season_summary` is older than that, opened on that latest season, is **retired** and opens on Career.
@@ -1493,6 +1522,7 @@ Written 2026-10-01. The profile page decides **retired vs. active** from data, n
 | `scripts/scraping/batch_scrape_current_rosters.py` | Batch roster scrape for the current season (`--mode missing`\|`all`) |
 | `scripts/rankings/calculate_elo_ratings.py` | Builds `mt/elo_ratings/ncaa_men/{season}/elo_ratings.json` (`elo_rank`, `matrix_rank`, `hybrid_rank`) |
 | `scripts/rankings/build_wrestler_profiles.py` | Writes each wrestler profile's `current_rank` — NCAA branch currently sources this incorrectly, see Known Compliance Gaps |
+| `scripts/awards/build_hodge_dpg_history.py` | Once a year, after the Hodge is announced: builds `lab/hodge/hodge_dpg.json` (top 5 DPG each season + Hodge winner/runner-up) from `data/awards/hodge_trophy_history.json` + `mat_value_{year}.json`. See "DPG and the Hodge Trophy (Lab)" |
 | `scripts/rankings/hodge_candidates.py` | Builds the Hodge Watch (`data/awards/hodge/{season}/hodge_{season}.json`) from `elo_ratings.json`'s `hybrid_rank_by_weight` + each candidate's wrestler-profile `match_list`. Run after `calculate_elo_ratings.py` + `build_wrestler_profiles.py` — see [Rebuild order](#rebuild-order-after-any-ranking-affecting-change) |
 | `scripts/mat_value/compute_mat_value.py` | DPG for a single wrestler (CLI) |
 | `scripts/mat_value/compute_all_mat_values.py` | Batch DPG for all wrestlers, builds leaderboards |
