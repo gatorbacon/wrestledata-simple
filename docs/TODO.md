@@ -71,7 +71,7 @@ One list for both sites and the side projects, so nothing gets lost between sess
 ## Side projects
 
 - [ ] **Wrestling program directory** (`~/Documents/Cursor/wrestling-recruit`): 345 programs onboarded; site build (M7) unfinished; commits are local only, nothing pushed. Read that repo's CLAUDE.md "RESUME HERE". *(memory: wrestling directory site)*
-- [ ] **Bracket viewer lab** (`labs/bracket_viewer/`): goal is a Lab directory of every NCAA tournament 1928-2026 — brackets by weight, team scores, team history — then WPA charts on 2013+ bouts. The 1928-2016 data arrived 2026-10-01 and checks out (`data/ncaa_historical_brackets/`, see the lab README); 2013+ comes from our TrackWrestling data. Next: TJ's answers on team scores and team-name history, then build. v1 viewer still not visually checked. *(resumed 2026-10-01)*
+- [ ] **NCAA Bracket Archive (Lab)** — built 2026-10-01, local only (`/lab/brackets/`, docs/matsavant.md "NCAA Bracket Archive"). Open: (1) TJ review; (2) scoring rules for the years before 2013 so 1933 and the old years' full standings can be calculated (the 1930s fit about half the rows); (3) team-name map from old names to today's programs, then team history pages; (4) WPA charts on 2013+ bouts; (5) the round strip is hard to read on phones. *(updated 2026-10-01)*
 - [ ] **Repo separation** (KentuckyMat and MatSavant in one repo): open question, no plan yet. *(CLAUDE.md "Future Plans")*
 
 ---

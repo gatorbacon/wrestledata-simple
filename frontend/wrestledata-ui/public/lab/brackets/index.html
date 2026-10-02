@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NCAA Bracket Archive (Lab) — MatSavant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Every NCAA wrestling championship from 1928 on: brackets by weight class, placewinners and team scores." />
+  <link rel="stylesheet" href="/styles.css?v=20260921" />
+  <link rel="stylesheet" href="brackets.css?v=20261001" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/search_index.js"></script>
+</head>
+<body>
+  <script src="/analytics.js?v=20260911"></script>
+  <script src="/header.js?v=20260908"></script>
+  <div class="page-container">
+    <header class="header">
+      <h1>🧪 NCAA Bracket Archive</h1>
+      <div class="header-explainer">
+        Every NCAA wrestling championship since the first one in 1928: the bracket for each weight, the placewinners and the team scores.
+      </div>
+    </header>
+    <main class="bk">
+      <p class="bk-intro">
+        1928–2012 come from the wrestlingstats.com bracket sheets; 2013 on from TrackWrestling.
+        The format changed many times (Bergman wrestle-backs, bad-point rounds, and consolation brackets that grew from finalists' victims to every loser), so each year is shown in its own format.
+      </p>
+      <div id="dir"><p class="brk-empty">Loading…</p></div>
+    </main>
+  </div>
+  <script>
+  (function () {
+    "use strict";
+    const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) =>
+      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    // Years with no tournament
+    const OFF = { 1943: "Not held (World War II)", 1944: "Not held (World War II)", 1945: "Not held (World War II)",
+                  2020: "Cancelled (COVID-19)" };
+    const BADGE = { summary_only: "places only", bad_points: "bad points" };
+    fetch("data/index.json").then((r) => r.json()).then((idx) => {
+      const by = new Map(idx.years.map((y) => [y.year, y]));
+      const first = idx.years[0].year, last = idx.years[idx.years.length - 1].year;
+      let html = "";
+      for (let d = Math.floor(last / 10) * 10; d >= Math.floor(first / 10) * 10; d -= 10) {
+        let tiles = "";
+        for (let y = Math.min(d + 9, last); y >= Math.max(d, first); y--) {
+          const e = by.get(y);
+          if (e) {
+            const badge = BADGE[e.model] ? `<span class="bk-badge">${BADGE[e.model]}</span>` : "";
+            tiles += `<a class="bk-tile" href="year.html?y=${y}"><div class="bk-tile-year">${y}${badge}</div>` +
+              `<div class="bk-tile-champ">${esc(e.team_champion || "No team title")}</div>` +
+              `<div class="bk-tile-sub">${esc(e.host || "")}</div></a>`;
+          } else if (OFF[y]) {
+            tiles += `<div class="bk-tile off"><div class="bk-tile-year">${y}</div><div class="bk-tile-champ">${OFF[y]}</div></div>`;
+          }
+        }
+        if (tiles) html += `<section class="bk-decade"><h2>${d}s</h2><div class="bk-years">${tiles}</div></section>`;
+      }
+      document.getElementById("dir").innerHTML = html;
+    }).catch(() => {
+      document.getElementById("dir").innerHTML = `<p class="brk-empty">Couldn't load the archive index.</p>`;
+    });
+  })();
+  </script>
+</body>
+</html>

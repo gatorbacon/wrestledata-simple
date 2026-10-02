@@ -1208,6 +1208,45 @@ It's natural to rebuild this together with "NCAA Takedowns & Team Points" above;
 
 ---
 
+## NCAA Bracket Archive (Lab, built 2026-10-01)
+
+Every NCAA championship 1928-2026 at `/lab/brackets/` (directory) and `/lab/brackets/year.html?y=1979&w=150`
+(`w=team` = Team Scores tab). Linked from the Lab page only.
+
+- **Build:** `.venv/bin/python scripts/brackets/build_ncaa_bracket_archive.py [--year N]` writes
+  `frontend/wrestledata-ui/public/lab/brackets/data/{year}.json` + `index.json` (~11 MB total). The script's docstring
+  documents the output format and layout rules. Re-run after a new NCAA tournament is parsed into `all_matches.json`.
+- **Sources (TJ's rule):** 1928-2012 = `data/ncaa_historical_brackets/` (wrestlingstats.com sheets; read its `SPEC.md`).
+  2013 on = `data/ncaa-tourney-parsed/all_matches.json` (TrackWrestling); 2013-2016 hosts/dates/awards still come
+  from the sheet files. No tournament 1943-45 or 2020. 1934 and 1938 are placewinners only (no bouts exist in the source).
+- **Formats shown as they were:** Bergman wrestle-backs (1928-40: "for 2nd" / "for 3rd" sections), bad-point
+  rounds as tables (1936, 1948), drawn consolation brackets (1941 on). Bouts whose winner the sheet doesn't show
+  appear with no winner ("result not recorded").
+- **Viewer:** `lab/brackets/bracket_engine.js` is a copy of `labs/bracket_viewer/bracket_engine.js`, extended (wrestler key
+  `k`, no-winner bouts). Keep the two in step if the engine changes.
+- **Team names:** shown as printed at the time, with spelling fixes only (`TEAM_FIXES` in the build script:
+  PDF-truncated names, TrackWrestling's mixed "Penn St."/"Penn State", "UNI"/"Northern Iowa"). Linking old names
+  to today's programs (team history) is **not built yet**.
+- **Team scores:**
+  - The printed top ten is used wherever it exists (1929-2016 except 1933).
+  - 2013 on is calculated from the bouts with NCAA D1 scoring: advancement 1 per championship win (pigtail to
+    semifinal) and 0.5 per consolation win before the place bouts; placement 16-12-10-9-7-6-4-3; bonus 2 fall /
+    forfeit / default / DQ, 1.5 tech fall, 1 major. Deductions come from `data/{year}/ncaa-tourney/team_penalties.json`
+    (only 2024 and 2026 exist).
+  - Check against the printed 2013/2014/2016 top tens: 25 of 30 teams are exact. The rest are off by 1, except
+    2013 Minnesota (printed 110.5, bouts 103). The likely causes are unrecorded team deductions and 2016 tech falls
+    (back then a tech fall without near-fall points may have been worth 1, not 1.5).
+  - For 2013, 2014 and 2016 the page shows the printed top ten and the calculated rest of the field. A ⚑ flag marks
+    rows where the print and the bouts disagree.
+  - The 2014 summary prints "Northern Iowa" in 9th. The bouts give Northwestern exactly 46 and Northern Iowa 40, so
+    `PRINTED_TEAM_CORRECTIONS` shows Northwestern, with a flag.
+- **Not done:** scoring rules for the eras before 2013 (needed for 1933, the missing 10th rows in 1931 and 1972,
+  and full standings in old years). The 1930s fit about half the printed rows with 5-3-1 for places plus 1 per fall.
+  It isn't exact, partly because many 1930s bouts are time-advantage results or have no result on the sheet. Also
+  not done: team history pages, and WPA charts on 2013+ bouts.
+
+---
+
 ## Live Win-Probability Model (Lab)
 
 Answers "given the match state right now (score, clock, position, DPG, riding time, stalling), what's the win probability?" for a specific real bout — analogous to an ESPN win-probability chart, or NFL EPA/DataGolf Strokes Gained. **Not the same thing as the xTP engine's "win probability model"** above — that one is pre-match rank+DPG only, this one runs on real in-match play-by-play. Live on the site at `/win_probability.html` (linked from `/lab/index.html`), currently showing the 10 2026 NCAA finals.
