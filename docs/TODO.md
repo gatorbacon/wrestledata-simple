@@ -17,12 +17,11 @@ One list for both sites and the side projects, so nothing gets lost between sess
 - [ ] **Cloudflare in front of matsavant.com**: optional bot protection; only needed if another scraper burst gets past Netlify's bot blocking. Needs DNS and email forwarding moved from Namecheap. *(since 2026-09-27; memory: MatSavant bot mitigation)*
 - [ ] **KentuckyMat split careers**: 73 boys 2023 season IDs are linked to two same-name careers (e.g. Wade Mettling). TJ chose to leave them for now. *(since 2026-09-21; CLAUDE.md gotcha 14)*
 - [ ] **KentuckyMat career-linking review list**: about 10 REVIEW cases plus 166 wrestlers with no career (mostly first-year wrestlers who need new careers). *(since 2026-09-21; CLAUDE.md gotcha 13)*
+- [ ] **Move both sites to AWS** (S3 + CloudFront on a flat-rate plan so there's no surprise bill; billing alert first). Discussed 2026-10-02: KentuckyMat first because of the forum (Discourse on Lightsail, ~$12-15/mo; maybe start on Discourse's free hosted plan to test interest), then MatSavant, whose live tracker would move off Railway to a scheduled Lambda writing `live_data.json` to S3 (CloudFront compression must be on: the 2026 replay file is 1.28 MB raw / 83 KB gzipped). Check Netlify's usage page for real monthly bandwidth/requests before choosing the Free vs $15 Pro plan. Not started. *(added 2026-10-02)*
 
 ## Ready to ship (committed locally, not pushed)
 
-- [ ] **Dual Schedule: team filter + Text only view** (commit `0ebfa76024`). TJ is holding it to group with the next push. *(added 2026-10-01)*
-- [ ] **Also unpushed (2026-10-01/02)**: historical brackets data + Lab NCAA Bracket Archive (`f666135bbe`, `5e9c41c04c`, `7a34d182ff`), About page DPG formula (`dc352dcc52`), DPG-vs-NCAA analyses (`9af5bb9554`, `668562d21f`, `631db41587`, `0de4e80f3a`), Lab "DPG and the Hodge Trophy" page (`a8b0e501b5`), TODO list (`2f9cf91eca`). Run the smoke test before and after the push; the Freshman page's NCAAs column needs the bracket archive commits to go up with it. *(added 2026-10-02)*
-- [ ] **Freshman of the Year Watch**: restyled, ordered by DPG (FreshScore dropped), NCAAs finish column, rebuilt on final 2026 data (builder moved off the frozen matrix-rank files). *(added 2026-10-02)*
+- [ ] **KentuckyMat: search index loads in the background** (uncommitted; same change MatSavant shipped 2026-10-02). `header.js` + the `search_index.js`/Fuse.js tags removed from 21 pages; `compare.html` keeps both, `dual_predictor.html` keeps Fuse. Not measured yet: a Lighthouse before/after (desktop, phone on good LTE, phone on slow 4G) — the 2026-10-02 mobile baseline on a wrestler page was score 42-51, first paint 8-11 s, ~5.5 s of it the search index. *(added 2026-10-02)*
 
 ## Uncommitted local work
 
@@ -84,6 +83,8 @@ One list for both sites and the side projects, so nothing gets lost between sess
 
 ## Done
 
+- [x] 2026-10-02 — MatSavant: search index loads in the background after the page loads (no longer blocks first paint); match history shows the weight each bout was wrestled at (desktop Wt column, under the date on phones) (pushed).
+- [x] 2026-10-02 — Pushed the held MatSavant/analysis commits: Dual Schedule team filter + Text only view, historical brackets data + Lab NCAA Bracket Archive, About page DPG formula, DPG-vs-NCAA analyses, Lab "DPG and the Hodge Trophy", Freshman of the Year Watch rework, this TODO list.
 - [x] 2026-10-01 — Compare button next to the wrestler's name, Compare link on the Wrestlers page (pushed).
 - [x] 2026-10-01 — Info icons work on phones and DPG Trajectory has one; "Dual Points Gained" wording (pushed).
 - [x] 2026-10-01 — 2026 profile DPG matches the DPG file again; P4P feed and rankings DPG refreshed (pushed).
