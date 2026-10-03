@@ -432,7 +432,7 @@ class OTModel:
         rest = [e for e in tb_ev if e["ot_period"] not in (2, 3)]
         for ride in (1, 2):
             t = float(RIDE)
-            if ride == 2:
+            if ride == 2 and not done():  # (a fall in ride 1 ended the bout: no ride 2, e.g. 2022 149 bout 44)
                 p2 = info.get("start2") or ("A_bottom" if c2 == "w" else "A_top")
                 seq2 = rows[2][0]["seq"] - 0.5 if rows[2] else (rest[0]["seq"] - 0.6 if rest else cur_seq + 0.3)
                 go(seq2, "ot_choice", c2, val(2, RIDE, p2, m_, r_), tstate(2, RIDE, p2), sub="ride 2")

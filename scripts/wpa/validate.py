@@ -46,6 +46,7 @@ from scipy.special import expit, logit  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ROOT / "scripts/wpa"))
+import fit_pin_floor as PF   # noqa: E402
 import fit_state_model as F  # noqa: E402
 import fit_strength as S     # noqa: E402
 import wp_model as W         # noqa: E402
@@ -64,6 +65,7 @@ FORWARD = [2024, 2025, 2026]
 COL = {"full": "#1f4e79", "e3": "#c55a11", "state": "#8a8a8a"}
 DROP = 1e-4  # a "drop" = WP falling by more than 0.01 points (smaller ones are floating-point noise)
 TERMINAL = {"regulation_end", "fall", "tech_fall", "injury", "dq", "overtime", "decision"}
+FLOOR = json.loads((MODEL / "pin_floor.json").read_text())
 
 
 # ---------------------------------------------------------------------------------------------------------------
@@ -181,8 +183,25 @@ def fit_layer(train_rows, st_rows, ot, sp, use_e3):
 
 
 def apply_layer(L, d):
+    """The seed layer, then the comeback floor (as in wp_model.WPModel)."""
     p_tie = S.tie_prob(L["tie"], d)
-    return S.predict(d.assign(p_tie=p_tie), L["rsf"](d), L["prm"]), p_tie
+    f = PF.floor(d["t_rem"].to_numpy(float), FLOOR)
+    return np.clip(S.predict(d.assign(p_tie=p_tie), L["rsf"](d), L["prm"]), f, 1 - f), p_tie
+
+
+TAIL_X = [0.0001, 0.0003, 0.001, 0.003, 0.01, 0.03]
+
+
+def tail_check(d, pcol):
+    """Comebacks from long odds: for each wrestler-bout whose WP ever fell to x or below, the WP at the first such
+    moment is his chance from there, so the sum of those WPs is the number of comebacks a calibrated model expects.
+    -> [(x, wrestler-bouts, expected, actual comebacks)]"""
+    d = d.sort_values(["bout_key", "persp", "t_rem"], ascending=[True, True, False])
+    out = []
+    for x in TAIL_X:
+        h = d[d[pcol] <= x].groupby(["bout_key", "persp"], sort=False).head(1)
+        out.append((x, len(h), float(h[pcol].sum()), int(h["y"].sum())))
+    return out
 
 
 def ot_table(nb):
@@ -760,6 +779,17 @@ def main():
             else:
                 cells.append("—")
         A(f"| {50 + 10 * b_}–{60 + 10 * b_}% | " + " | ".join(cells) + " |")
+    A("")
+
+    A("## 5b. Long-odds comebacks (the tail; added 2026-10-03)\n")
+    A("Every wrestler-bout whose held-out WP ever fell to the threshold or below, at the 10-second samples. Expected = "
+      "the sum of their WPs at the first such moment (what a calibrated model predicts); actual = how many won. "
+      "The full model includes the comeback floor (`reports/pin_floor.md`); the state model alone has no floor and "
+      "no seeds.\n")
+    A("| WP fell to | Wrestler-bouts | Expected comebacks | **Actual** | State model alone: bouts / expected / actual |")
+    A("|---|---:|---:|---:|---:|")
+    for (x, n, e_, a_), (_, n2, e2, a2) in zip(tail_check(hp, "p_full"), tail_check(hp, "p_state")):
+        A(f"| ≤ {100 * x:g}% | {n:,} | {e_:.1f} | **{a_}** | {n2:,} / {e2:.1f} / {a2} |")
     A("")
 
     A("## 6. Hand-checked states (spec 7.6)\n")

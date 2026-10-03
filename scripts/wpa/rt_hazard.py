@@ -27,7 +27,8 @@ margin; a margin of 15 = tech fall = value 0), then the second's riding time goe
 (2:00 and 4:00 left) replace position with the pick distribution of whoever holds the choice -- recorded in the state
 when it's known (period 2: the period-3 chooser; break states: the toss winner / the chooser), 50/50 before the toss.
 B's point is the same program on the mirrored state. Locked states come out exact by construction (0 when the clock
-rules the point out; P(no early end) when it can't be lost), and the result is monotone in the differential and in A
+rules the point out; P(no early end) when it can't be lost -- fit_state_model.rt_probs then sets that to 1, since the
+table counts a locked point as scored), and the result is monotone in the differential and in A
 being on top without any constraint. Penalty / stalling points are left out of the margin moves (rare).
 
 Parameters are a small JSON (data/wpa/model/rt_params.json). Interface (used by fit_state_model.fit_rt / rt_probs):

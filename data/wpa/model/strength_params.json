@@ -2,31 +2,31 @@
   "scale": "normal",
   "N": 50,
   "unseeded_equiv_seed": 22,
-  "beta0": 1.555818298267168,
-  "gamma": 0.6134196328088986,
+  "beta0": 1.5562031349968577,
+  "gamma": 0.6150780359730769,
   "beta_ot": 0.5052065511743858,
-  "e3_beta0_multiplier": 0.8715340385368522,
+  "e3_beta0_multiplier": 0.8716996707999061,
   "alpha_form": "time",
-  "alpha0": 0.6413940301924197,
-  "alpha_time": 0.32804935830199183,
-  "loto_logloss": 0.3927558594500111,
-  "state_only_logloss": 0.44579271983220914,
+  "alpha0": 0.6405134662642129,
+  "alpha_time": 0.33082596221311333,
+  "loto_logloss": 0.39272627324475645,
+  "state_only_logloss": 0.4457289534724291,
   "tie_model": "sum over r of P(r | S) * P(tie | margin, time, position, era, break, r); symmetrised",
   "conf": {
     "scale": "normal",
     "N": 200,
     "unranked_equiv_rank": 60,
-    "rank_multiplier": 1.4470991232152108,
-    "alpha_multiplier": 1.1393658097340988,
+    "rank_multiplier": 1.447258320757507,
+    "alpha_multiplier": 1.1413730803675957,
     "fit_years": [
       2023,
       2024,
       2025,
       2026
     ],
-    "loyo_logloss": 0.37918771541830854,
-    "state_only_logloss": 0.4354576636640069,
+    "loyo_logloss": 0.3787749031062102,
+    "state_only_logloss": 0.435025555606933,
     "rank_source": "Flo snapshot before Feb 15 (2023+); end-of-season current_rank before 2023 (leaks, WPA only) -- data/wpa/states/conf_ranks.csv"
   },
-  "built": "2026-09-29"
+  "built": "2026-10-03"
 }

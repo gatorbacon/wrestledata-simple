@@ -6,7 +6,9 @@ WPA steps 5-6 -- the state model: smoothing / shrinkage of the empirical table (
     WP_state(S) = sum over r in {A's point, none, B's point} of  P(r | S) * T(S, r)
 
   * T = empirical table keyed on (era_group, current margin, t_bin, period, position, choice, r), r = the riding-time
-    point actually awarded in that bout (0 if none, or if the bout ended early). Margin and r are kept APART: a first
+    point actually awarded in that bout (0 if none, or if the bout ended early; in a LOCKED state r = the locked side
+    whatever happened next, and P(r | S) = 1 -- the point counts as scored, so pins from behind stay in those cells;
+    TJ 2026-10-03). Margin and r are kept APART: a first
     version pooled them (key = margin + r) and got "tied, 0:30 left, A on bottom" badly wrong -- A won 70% of E3
     bouts where nobody got the point but 17% where A was up 1 and B got it. The only assumption left: given the
     eventual point, the exact riding-time differential adds nothing. E3 cells come from E3 bouts (NCAA + conference
@@ -192,12 +194,23 @@ def fit_rt(train, variant=RT_DEFAULT):
 
 
 def rt_probs(model, df):
-    """(pA, pN, pB) for each row. Rate model (a params dict): exact by construction. Trees: pB = the model on the
-    mirrored state; exact wherever the clock decides it, per wrestler (0 when he can't reach 1:00 even riding every
-    remaining second, 1 when he keeps it even if ridden every remaining second)."""
+    """(pA, pN, pB) for each row. Rate model (a params dict): the dynamic program. Trees: pB = the model on the
+    mirrored state. Every model is exact wherever the clock decides it, per wrestler: 0 when he can't reach 1:00 even
+    riding every remaining second, 1 when he keeps it even if ridden every remaining second -- a locked point counts as
+    scored, matching the table's r for locked states (build_table.py; TJ 2026-10-03)."""
+    p = _rt_probs(model, df)
+    rt, t = df["rt_diff"].to_numpy(float), df["t_rem"].to_numpy(float)
+    a_in, b_in = rt - t >= RT_NEED, rt + t <= -RT_NEED
+    a_out, b_out = rt + t < RT_NEED, rt - t > -RT_NEED
+    pa = np.where(a_in, 1.0, np.where(a_out | b_in, 0.0, p[0]))
+    pb = np.where(b_in, 1.0, np.where(b_out | a_in, 0.0, p[2]))
+    return pa, 1 - pa - pb, pb
+
+
+def _rt_probs(model, df):
     if isinstance(model, dict) and model.get("kind") == "blend":
-        ta, _, tb = rt_probs(model["tree"], df)
-        ra, _, rb = rt_probs(model["rate"], df)
+        ta, _, tb = _rt_probs(model["tree"], df)
+        ra, _, rb = _rt_probs(model["rate"], df)
         w = np.clip((model["t_hi"] - df["t_rem"].to_numpy(float)) / (model["t_hi"] - model["t_lo"]), 0, 1)
         pa, pb = (1 - w) * ta + w * ra, (1 - w) * tb + w * rb
         return pa, 1 - pa - pb, pb

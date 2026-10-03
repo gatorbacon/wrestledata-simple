@@ -35,6 +35,7 @@ its design. Claude Code memory: `~/.claude/projects/-Users-tjthompson-Documents-
 | 1 audit | `scripts/wpa/audit_data.py` | `reports/data_audit.md` | — |
 | 2 states | `scripts/wpa/build_states.py --kind both` (+ shared `wpa_common.py`) | `data/wpa/states/{ncaa,conf}_{bouts,events,samples}.csv` (gitignored) + `reports/state_reconstruction.md` | ~1 min |
 | 3 table | `scripts/wpa/build_table.py` | `data/wpa/table/` (gitignored) | <1 min |
+| floor | `scripts/wpa/fit_pin_floor.py` (needs step 2; run before `fit_strength`) | `data/wpa/model/pin_floor.json` (tracked), `reports/pin_floor.md` | seconds |
 | 4 sparsity | `scripts/wpa/sparsity_audit.py` | `reports/sparsity_audit.md` | — |
 | 5–6 state model | `scripts/wpa/fit_state_model.py` | `data/wpa/model/state_table.parquet`, `rt_model.joblib`, `backstop.joblib` (all gitignored), `model_params.json`, `reports/state_model.md` | ~9 min |
 | 7 seed layer | `scripts/wpa/fit_strength.py [--refresh]` | `strength_params.json`, `tie_model.joblib`, `ncaa_oof_state.parquet` (auto-rebuilt when the state table changes, +6 min), `reports/strength_layer.md` | ~5–11 min |
@@ -51,7 +52,7 @@ Shared predictor used by steps 8 and 9 and everything after: `scripts/wpa/wp_mod
 takes A-relative regulation states: margin, t_rem, period, pos, choice, rt_diff, era_group, seed_a, seed_b.
 
 **Full rebuild chain** (run from the repo root, in the background, with a log to the scratchpad):
-`.venv/bin/python scripts/wpa/build_states.py --kind both && for s in build_table fit_choice_shares conf_ranks fit_state_model fit_strength validate ot_model compute_wpa build_outputs; do .venv/bin/python scripts/wpa/$s.py || break; done`
+`.venv/bin/python scripts/wpa/build_states.py --kind both && for s in build_table fit_pin_floor fit_choice_shares conf_ranks fit_state_model fit_strength validate ot_model compute_wpa build_outputs; do .venv/bin/python scripts/wpa/$s.py || break; done`
 (~35 min). Gitignored intermediates (states CSVs, `.joblib` models, parquet tables) live only on this Mac's disk; if they're
 lost, this chain recreates them exactly. Everything is deterministic (`random_state=0`),
 so a rerun with no code change gives identical params.
@@ -75,12 +76,24 @@ older eras fill gaps, and validation is judged on E3.
 - `P(r | S)` = the riding-time point model (see section 5: **this is the piece to simplify next**). It is exact whenever
   the clock decides the point (per wrestler: 0 if he can't reach 1:00 even riding every remaining second, 1 if he keeps it
   even if ridden out).
+- **A locked point is already on the board (TJ, 2026-10-03).** In a locked state the table's r is the locked side however
+  the bout ended (`build_table.load_obs`), and `rt_probs` returns exactly 1 for it. Before, r was the point actually
+  AWARDED, and a bout the trailing wrestler won by pin awards no point, so "down 7 + B's locked point" cells held no pin
+  comebacks at all; above 1:30 left the tree part of the riding-time model also gave P = 1, so the pins (filed under
+  "none") were never read. Swiderski 2023 (down 7 + locked point, 1:38 left, pinned Cornella at 0:12) came out 1 in 22,000.
 - Lock logic per spec 2.3: `wpa_common.rt_status` / `wp_model.rt_status_vec`, threshold `>= 60` s, with 4 states:
   locked_in / locked_out / locked_none / live.
 
 **Step-6 projections on T** (alternated 6 rounds, then symmetrised): monotone in margin; monotone in r (B pt ≤ none ≤ A pt);
 and the **release option** (the top man can let his man go, so A_top at m ≥ neutral at m−1, and mirrored, an escape can't
 lower the escaper's WP).
+
+**Comeback floor (TJ, 2026-10-03; `fit_pin_floor.py` → `model/pin_floor.json`, `reports/pin_floor.md`):** the last step
+in `WPModel` (and `validate.apply_layer`): floor(t) ≤ WP ≤ 1 − floor(t), floor = the chance a wrestler 6+ behind (locked
+point counted) wins by pin in the time left, fitted as a·(min(t, 180)/60)^b ≈ 0.74% from 3:00 on, 0.39% at 2:00, 0.13% at
+1:00, 0.05% at 0:30, 0.01% at 0:10. Seed-independent and capped at 3:00 so it doesn't override the opening odds of big
+mismatches. Overtime is not floored. `validation.md` section 5b ("Long-odds comebacks") checks the tail: expected vs actual
+comebacks among wrestlers whose WP fell to ≤ 0.01% … 3%.
 
 **Rows that feed the model:** 10-s samples at bin centres (420, then 415, 405 … 5), the state just AFTER each event, and
 break states. The spec's "state just before each event" rows are **dropped on purpose**: they are biased because the
@@ -126,7 +139,17 @@ spec 3.1, and TJ was told.
    every seed. That happened once in step 9 and every opening WP came out 50%.
 2. Bouts file filters: `table_ok` = what the table and WPA use (NCAA 6,739 bouts; includes 213 riding-time-mismatch bouts).
    `rt_model_ok` = rows the riding-time model trains on. `rt_consistent = False` = rebuilt riding time disagrees with the
-   official point. In WPA those bouts carry the correction at the buzzer, and 22 show a jump there.
+   official point (the RAW rebuild; still keeps the bout out of the riding-time model's training).
+   **Since 2026-10-03 `build_states.py` corrects those bouts** (`build_bout` docstring): the riding time is re-walked
+   with the gap spread over every riding second so it ends just past 1:00 on the side the officials actually gave
+   (`rt_adjust_s`, `rt_adjust_rate`). Before this, the lock states could be false, e.g. 2025 125 Caleb Smith over
+   Tanner Jordan: rebuilt +0:53, so with 16 s left the model "knew" Smith couldn't get the point and his WP hit 0%;
+   the officials then gave him the point and the bout went to SV. Exception (`rt_adjust_skipped`): no point logged
+   in a regulation decision with a rebuilt advantage of 80 s+ = a point the scorekeeper didn't log (common in 2018
+   NCAA, e.g. Nickal +4:30, "none"), left as rebuilt. `compute_wpa.check_chains` now STOPS the run if any winner's
+   chain reaches 0% or drops after reaching 100%. If it fires on new data, find the cause (riding time, overtime
+   chain) instead of loosening the check. The same day `ot_model.py` stopped starting TB ride 2 after a fall in
+   ride 1 (2022 149 McDougald over Blockhus).
 3. The model needs **int** margin and period (`compute_wpa.ints()`), or `F.lookup` fails with "arrays used as indices must
    be of integer type".
 4. Changing anything in `fit_state_model.py` changes the state table's mtime, so `fit_strength` rebuilds the out-of-fold
@@ -212,6 +235,9 @@ automatically (`wpa_common.py` scans `data/{year}/`), and any year ≥ 2024 is r
    `reports/state_reconstruction.md` for the new year's usable share).
 3. `.venv/bin/python scripts/wpa/conf_ranks.py` (only if conference bouts were added).
 4. `.venv/bin/python scripts/wpa/compute_wpa.py` → `events_wpa.parquet`, `wrestler_wpa.csv`, `reports/wpa.md`.
+   It stops with "WP chain check failed" if a winner ever hits 0% or drops after 100% (gotcha 2). Riding-time
+   mismatches are corrected automatically in step 2; check `state_reconstruction.md`'s "Corrected to the official
+   point" line for the new year (a big jump in corrections or skips means the scorekeeping changed).
 5. `.venv/bin/python scripts/wpa/build_outputs.py` → `match_wp_curves.parquet`.
 6. Charts: `plot_wp_cards.py --year 2027` (finals), `plot_wp_cards.py --wrestler "Name"`, `plot_examples.py --bout
    "ncaa|NCAA|2027|157|39"` (bout keys = `kind|tournament|year|weight|bout number`, see `data/wpa/states/ncaa_bouts.csv`),

@@ -55,6 +55,10 @@ REPORT = ROOT / "data/wpa/reports/state_reconstruction.md"
 # seconds, which the old grid (420, 410, ... 10) never sampled -- gets one fixed-cadence sample at its centre, so a
 # bin's value is estimated at its average moment, not its edge (changed 2026-09-29 in step 8; see validation.md)
 SAMPLE_TIMES = [C.T_TOTAL] + list(range(C.T_TOTAL - 5, 0, -10))
+# rebuilt riding-time advantage (s) beyond which "no point logged" in a regulation decision is read as a point the
+# scorekeeper didn't log rather than a rebuild error (build_bout's riding-time correction; same 80 s line as the
+# unreliable-tournament check in run())
+RT_UNLOGGED = 80
 
 
 def other(s):
@@ -182,7 +186,49 @@ STATE_KEYS = ["t_rem", "period", "score_w", "score_l", "margin", "pos", "choice"
 
 
 def build_bout(rec, alpha, S):
-    """Returns (bout_row, event_rows, sample_rows) or (bout_row, [], []) for an excluded bout."""
+    """Returns (bout_row, event_rows, sample_rows) or (bout_row, [], []) for an excluded bout.
+
+    Riding-time correction (TJ 2026-10-03): the rebuilt riding time sometimes ends on the wrong side of the 1:00 line
+    for the point the officials actually gave (~3% of full-regulation NCAA bouts, mostly an unclocked event whose
+    time had to be guessed). Left alone, the lock states then tell the model something false -- e.g. "the winner can
+    no longer reach 1:00" with 16 s left, so a winner down 1 who then gets the point sits at 0% WP. The official
+    result is the truth, so such a bout is walked a second time with the gap spread evenly over every second
+    somebody was riding (rt_k seconds per riding second), landing the final riding time just past the line on the
+    actual side (60.5 / -60.5, or +/-59.5 for no point).
+    One exception: no point logged, decided in regulation, and a rebuilt advantage of 80 s or more (the leader gets
+    the point in ~98% of such NCAA bouts) is taken to be a point the scorekeeper never logged (e.g. 2018 NCAA, Nickal
+    +4:30 over Mueller, "none") and left as rebuilt (`rt_adjust_skipped`); it can't produce a false 0%/100%, because
+    the winner won in regulation by at least one point without it. The bouts file keeps the RAW rebuild (`rt_final_recon`,
+    `rt_point_recon`, `rt_consistent`, which feed the report and keep these bouts out of the riding-time model's
+    training via `rt_model_ok`) plus `rt_adjust_s` (seconds added, winner's side) and `rt_adjust_rate`; the events
+    and samples carry the corrected riding time."""
+    b, ev, sm = _build_bout(rec, alpha, S, 0.0)
+    if not (b.get("full_regulation") and b.get("rt_consistent") is False):
+        return b, ev, sm
+    raw, actual, secs = b["rt_final_recon"], b["rt_point_logged"], b["ride_secs"]
+    if actual == "none" and not b["went_to_ot"] and abs(raw) >= RT_UNLOGGED:
+        b["rt_adjust_skipped"] = "presumed unlogged point"
+        S["rt_adjust"]["skipped: presumed unlogged point"] += 1
+        return b, ev, sm
+    target = (C.RT_THRESHOLD + 0.5 if actual == "w" else -C.RT_THRESHOLD - 0.5 if actual == "l"
+              else (C.RT_THRESHOLD - 0.5 if raw > 0 else -C.RT_THRESHOLD + 0.5))
+    if secs <= 0:  # nobody rode, so there is nothing to spread the gap over (left as rebuilt)
+        S["flag"]["riding-time point disagrees but no riding time to correct"] += 1
+        return b, ev, sm
+    k = (target - raw) / secs
+    b2, ev2, sm2 = _build_bout(rec, alpha, defaultdict(Counter), k)  # stats come from the raw pass only
+    if b2["rt_point_recon"] != actual:
+        raise ValueError(f"{b['bout_key']}: riding-time correction missed ({b2['rt_final_recon']} vs {actual})")
+    for f in ("rt_final_recon", "rt_point_recon", "rt_consistent"):
+        b2[f] = b[f]
+    b2["rt_adjust_s"], b2["rt_adjust_rate"] = round(target - raw, 1), round(k, 4)
+    S["rt_adjust"]["bouts"] += 1
+    S["rt_adjust_size"][min(int(abs(target - raw)) // 10 * 10, 100)] += 1
+    S["rt_adjust_rate"]["|rate| > 1"] += abs(k) > 1
+    return b2, ev2, sm2
+
+
+def _build_bout(rec, alpha, S, rt_k):
     m, y, sw_flag = rec["bout"], rec["year"], rec["swapped"]
     off = rec["official"]
     rtype = off.get("result_type") if off else None
@@ -295,7 +341,7 @@ def build_bout(rec, alpha, S):
 
     # ------------------------------------------------------------- walk
     st_ = {"sw": 0, "sl": 0, "pos": "neutral", "rt": 0.0, "t": C.T_TOTAL, "period": 1, "choice": "none",
-           "break_step": None, "section": "reg", "unknown_secs": 0, "conflicts": 0}
+           "break_step": None, "section": "reg", "unknown_secs": 0, "conflicts": 0, "ride_secs": 0.0}
     stalls = {"w": 0, "l": 0}
     events, samples = [], []
     probes = [(s, "sample") for s in SAMPLE_TIMES]
@@ -323,9 +369,11 @@ def build_bout(rec, alpha, S):
         t_new = min(t_new, st_["t"])
         d = st_["t"] - t_new
         if st_["pos"] == "w_top":
-            st_["rt"] += d
+            st_["rt"] += d + rt_k * d
+            st_["ride_secs"] += d
         elif st_["pos"] == "l_top":
-            st_["rt"] -= d
+            st_["rt"] -= d - rt_k * d
+            st_["ride_secs"] += d
         elif st_["pos"] == "unknown":
             st_["unknown_secs"] += d
         st_["t"] = t_new
@@ -336,13 +384,13 @@ def build_bout(rec, alpha, S):
         while si[1] < len(notes) and notes[si[1]][0] >= t_ev:
             tt, reported, p = notes[si[1]]
             if tt <= st_["t"]:
-                save = (st_["rt"], st_["t"], st_["unknown_secs"])
+                save = (st_["rt"], st_["t"], st_["unknown_secs"], st_["ride_secs"])
                 advance(tt)
                 S["rt_note"]["n"] += 1
                 err = abs(abs(st_["rt"]) - reported)
                 S["rt_note"]["within5"] += err <= 5
                 S["rt_note_err"][min(int(err), 30)] += 1
-                st_["rt"], st_["t"], st_["unknown_secs"] = save
+                st_["rt"], st_["t"], st_["unknown_secs"], st_["ride_secs"] = save
             si[1] += 1
         # (the opening-whistle sample, t_rem 420, always comes before any event: nothing can have happened yet,
         # even when a scorekeeper's clock reads 3:00 on an early takedown)
@@ -595,6 +643,7 @@ def build_bout(rec, alpha, S):
     bout.update(n_events=len(events), n_samples=len(samples), n_time_estimated=n_est,
                 n_scoring_time_estimated=n_est_scoring, max_scoring_gap=max_gap,
                 position_conflicts=st_["conflicts"], unknown_position_secs=st_["unknown_secs"],
+                ride_secs=round(st_["ride_secs"], 1),
                 p3_choice_holder=p3_holder or "",
                 score_check=(st_["sw"], st_["sl"]) == (ws, ls) or (st_["sw"], st_["sl"]) == (ws + (off_diff or (0, 0))[0], ls + (off_diff or (0, 0))[1]))
     return bout, events, samples
@@ -666,7 +715,7 @@ def run(kind):
     # official score). Flagged when that share is 20%+ over at least 10 such bouts.
     g = defaultdict(lambda: [0, 0])
     for b in bouts:
-        if b.get("full_regulation") and not b.get("went_to_ot") and abs(b.get("rt_final_recon", 0)) >= 80:
+        if b.get("full_regulation") and not b.get("went_to_ot") and abs(b.get("rt_final_recon", 0)) >= RT_UNLOGGED:
             g[(b["tournament"], b["year"])][0] += 1
             g[(b["tournament"], b["year"])][1] += b["rt_point_logged"] == "none"
     bad_t = {k: v for k, v in g.items() if v[0] >= 10 and v[1] / v[0] >= 0.2}
@@ -897,6 +946,16 @@ def report(results):
         wrong_side = conf[("w", "l")] + conf[("l", "w")]
         A(f"\n  Opposite-side disagreements (rebuilt says one wrestler, the other got it): {wrong_side}. The rest "
           f"sit near the line — a few seconds of reconstruction error either way.")
+        ra, rs_ = S["rt_adjust"], S["rt_adjust_size"]
+        A(f"\n  **Corrected to the official point (since 2026-10-03):** {ra['bouts']:,} inconsistent bouts get their "
+          f"riding time re-walked with the gap spread over every riding second, ending just past the line on the "
+          f"actual side, so the lock states agree with what the officials gave (`rt_adjust_s`, `rt_adjust_rate` in the "
+          f"bouts file; the events and samples carry the corrected value, the columns above stay raw). Size of the "
+          f"correction: " + ", ".join(f"{k}–{k + 9} s {v:,}" if k < 100 else f"100+ s {v:,}" for k, v in
+                                    sorted(rs_.items())) +
+          f". {S['rt_adjust_rate']['|rate| > 1']:,} needed more than one second per riding second. Left as rebuilt: "
+          f"{ra['skipped: presumed unlogged point']:,} regulation decisions with no point logged and a rebuilt "
+          f"advantage of {RT_UNLOGGED}+ s (read as a point the scorekeeper didn't log; `rt_adjust_skipped`).")
         smp = samples
         stat_p = Counter((s["period"], s["rt_status"]) for s in smp)
         A("- `rt_status` in the 10-second samples, by period: " + "; ".join(

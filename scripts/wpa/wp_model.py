@@ -9,6 +9,8 @@ The fitted win-probability model (WPA steps 5-7) as one predictor, so validation
     P(tie | S) = sum over r of P(r | S) * P(tie | S, r)   -- the same riding-time split as WP_state
 
 rs = strength(A) - strength(B) from NCAA seeds (normal-quantile scale; unseeded = one tail value; both unseeded -> 0).
+Last, the comeback floor (fit_pin_floor.py, TJ 2026-10-03): floor(t) <= WP <= 1 - floor(t), floor = the chance a
+wrestler 6+ behind wins by pin in the time left (0.74% from 3:00 on, 0.13% at 1:00, 0.05% at 0:30).
 
 Input: A-relative REGULATION states (t_rem > 0), one per DataFrame row, with columns
     margin      A - B, excluding the pending riding-time point
@@ -45,6 +47,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ROOT / "scripts/wpa"))
+import fit_pin_floor as PF   # noqa: E402
 import fit_state_model as F  # noqa: E402
 import fit_strength as S     # noqa: E402
 import wpa_common as C       # noqa: E402
@@ -89,6 +92,7 @@ class WPModel:
     def __init__(self, model_dir=MODEL):
         self.params = json.loads((model_dir / "model_params.json").read_text())
         self.sp = json.loads((model_dir / "strength_params.json").read_text())
+        self.floor = json.loads((model_dir / "pin_floor.json").read_text())
         self.key = self.params["table_key"]
         tab = pd.read_parquet(model_dir / "state_table.parquet")
         self.P = tab["p_state"].to_numpy().reshape(F.shape(self.key))
@@ -166,7 +170,8 @@ class WPModel:
         rs = self.rank_signal(d)
         c = self.sp.get("conf") or {}
         am = np.where((d["kind"] == "conf").to_numpy(), c.get("alpha_multiplier", 1.0), 1.0) if "kind" in d else 1.0
-        wp = S.predict(d, rs, self.prm, am)
+        f = PF.floor(d["t_rem"].to_numpy(float), self.floor)
+        wp = np.clip(S.predict(d, rs, self.prm, am), f, 1 - f)
         return pd.DataFrame({"p_state": d["p_state"].to_numpy(), "p_rt_a": pa, "p_rt_none": pn, "p_rt_b": pb,
                              "p_tie": d["p_tie"].to_numpy(), "rs": rs, "wp": wp}, index=df.index)
 

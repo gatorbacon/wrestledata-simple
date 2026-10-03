@@ -31,7 +31,8 @@ Outputs (data/wpa/table/):
 Names: ncaa (NCAA clean bouts), conf (conference clean bouts).
 
 Each observation also carries `r`: the riding-time point actually awarded in that bout, from A's side (+1 A, -1 B, 0
-none -- including bouts that ended early). After the sparsity audit riding time was factored out of the table (TJ,
+none -- including bouts that ended early) -- except in a LOCKED state, where r = the locked side whatever happened next
+(the point counts as scored; TJ 2026-10-03). After the sparsity audit riding time was factored out of the table (TJ,
 2026-09-29): step 5 keys the table on margin + r and models r separately (fit_state_model.py). `rt_model_ok` marks
 bouts whose rebuilt riding time matches the actual point (usable for fitting that model). The step-4 audit was run
 on the earlier state_table_ok filter (slightly fewer bouts); rerunning it now gives marginally different numbers.
@@ -76,6 +77,10 @@ def load_obs(kind):
         parts.append(x)
     obs = pd.concat(parts, ignore_index=True)
     obs = obs.join(meta, on="bout_key")
+    # a locked riding-time point is already on the board (TJ, 2026-10-03): r = the locked side however the bout ended.
+    # Labelled by the eventual award, a bout the trailing wrestler won by pin got r = none, so the "down 7 + B's point"
+    # cells held no pin comebacks at all (Swiderski 2023: 0 wins in 151 bouts, 1 in 22,000).
+    obs["r"] = np.select([obs["rt_status"] == "locked_in", obs["rt_status"] == "locked_out"], [1, -1], obs["r"])
     obs = obs[(obs["t_rem"] > 0) & (obs["margin"].abs() < 15)].copy()
 
     obs["era_group"] = np.where(obs["era"] == "E3", "E3", "E12")

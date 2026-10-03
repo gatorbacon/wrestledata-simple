@@ -368,6 +368,23 @@ def credit(out, nb):
     return o[keep].sort_values(["bout_key", "seq"]).reset_index(drop=True)
 
 
+def check_chains(o):
+    """Two things a winner's chain can never do (added 2026-10-03 after both showed up in the top-comeback list):
+    reach 0% (the model said he could not win, and he won), or drop after reaching 100% (the bout was already
+    decided). Either one means the input disagrees with the result -- e.g. rebuilt riding time on the wrong side of
+    1:00 for the point the officials gave (fixed in build_states.py), or a tiebreaker chain that kept going after a
+    fall (fixed in ot_model.py). Stops the run so new seasons can't slip one through."""
+    o = o.sort_values(["bout_key", "seq"])
+    lo = np.minimum(o["wp_w_before"], o["wp_w_after"]) <= 1e-9
+    hit = (o["wp_w_after"] >= 1 - 1e-12).groupby(o["bout_key"]).cummax()
+    drop = hit.groupby(o["bout_key"]).shift(fill_value=False) & (o["wp_w_after"] < 1 - 1e-9)
+    bad = {"winner at 0%": sorted(o.loc[lo, "bout_key"].unique()),
+           "winner below 100% after reaching it": sorted(o.loc[drop, "bout_key"].unique())}
+    if any(bad.values()):
+        raise ValueError("WP chain check failed: " + "; ".join(f"{k}: {len(v)} bouts, e.g. {v[:5]}"
+                                                                for k, v in bad.items() if v))
+
+
 def wrestler_table(o, nb, wp_start):
     """Per wrestler per tournament, both sides of every link (zero-sum within a bout). `seed` is the NCAA seed, or
     the national rank for a conference tournament (kind = conf)."""
@@ -445,6 +462,7 @@ def main():
     print(f"chain built: {len(out):,} links, {out['bout_key'].nunique():,} bouts ({time.time() - t0:.0f}s)",
           flush=True)
     o = credit(out, nb)
+    check_chains(o)
     OUT.mkdir(parents=True, exist_ok=True)
     o.to_parquet(OUT / "events_wpa.parquet", index=False)
     wt = wrestler_table(o, nb, wp_start)
