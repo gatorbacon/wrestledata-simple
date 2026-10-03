@@ -8,6 +8,7 @@ wrestlers and matches by weight class for ranking purposes.
 
 import json
 import os
+import sys
 from pathlib import Path
 from typing import Dict, List, Set, Tuple, Optional
 from collections import defaultdict
@@ -482,11 +483,17 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
     
     # Track which matches we've already processed for stats (to avoid double-counting)
     processed_matches_for_stats = set()  # match_key -> already processed
-    
-    for team in teams:
+
+    # NCAA bout identity (TJ, 2026-10-03): the canonical bout list decides which raw rows are the same bout -- a different
+    # result is a different bout unless no wrestler's own file lists both versions (scripts/records/canonical_bouts.py).
+    # The old key (pair, date, result TYPE) merged same-day rematches: every NCAA bout is dated the tournament's last day,
+    # and TB-1 2-1 / Dec 9-6 are both "Dec", so Kennedy-Kharchla's 2026 3rd-place bout vanished behind their quarterfinal.
+    row_bout = ncaa_row_bout(season, gender) if league == 'ncaa' and season else {}
+
+    for ti, team in enumerate(teams):
         team_name = team.get('team_name', 'Unknown')
         
-        for wrestler in team.get('roster', []):
+        for ri, wrestler in enumerate(team.get('roster', [])):
             wrestler_id = wrestler.get('season_wrestler_id')
             
             # Skip if wrestler doesn't have valid ID or isn't in our list
@@ -498,7 +505,7 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
             primary_weight_class = wrestler_info['weight_class']
             
             # Process matches for this wrestler
-            for match in wrestler.get('matches', []):
+            for mi, match in enumerate(wrestler.get('matches', [])):
                 # Skip matches that don't have parsed winner/loser info
                 if 'winner_name' not in match or 'loser_name' not in match:
                     continue
@@ -683,6 +690,10 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
                 # with minor time/score differences (e.g., "Fall 4:45" vs "Fall 4:54")
                 normalized_result = normalize_result_type(result)
                 match_identity_key = (w1_id_normalized, w2_id_normalized, match_date, normalized_result)
+                bout_idx = row_bout.get((ti, ri, mi))
+                if bout_idx is not None:
+                    match_identity_key = (w1_id_normalized, w2_id_normalized, match_date, ('bout', bout_idx))
+                    match_record['_bout'] = bout_idx
                 
                 # Store match by key to avoid duplicates
                 if match_weight not in weight_classes:
@@ -1287,7 +1298,8 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
             # Create unique key for deduplication across weight classes
             # Use normalized result type to allow different result types while deduplicating minor variations
             normalized_result = normalize_result_type(match.get('result', ''))
-            match_key = (match['wrestler1_id'], match['wrestler2_id'], match['date'], normalized_result)
+            match_key = (match['wrestler1_id'], match['wrestler2_id'], match['date'],
+                         ('bout', match['_bout']) if '_bout' in match else normalized_result)
             
             # Only add if we haven't seen this match before
             if match_key not in all_matches_unique:
@@ -1320,7 +1332,7 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
                     # Use normalized IDs (min/max) to match the format used when storing matches
                     w1_norm = min(w1_id, w2_id)
                     w2_norm = max(w1_id, w2_id)
-                    match_id = f"{w1_norm}_{w2_norm}_{match.get('date', '')}_{match.get('result', '')}"
+                    match_id = f"{w1_norm}_{w2_norm}_{match.get('date', '')}_{match.get('result', '')}_{match.get('_bout', '')}"
                     
                     if match_id not in seen_match_ids:
                         filtered_weight_classes[assigned_wc]['matches'].append(match)
@@ -1365,6 +1377,20 @@ def extract_wrestlers_and_matches(teams: List[Dict], season: int = None, data_di
         print(f"  {wc}: {wrestler_count} wrestlers, {match_count} matches")
     
     return result
+
+
+TWO_WAYS = "bouts where the two wrestlers' files record different results (counted once)"
+
+
+def ncaa_row_bout(season: int, gender: str = 'men') -> Dict[Tuple[int, int, int], int]:
+    """(file index, roster index, raw match index) -> canonical bout index for an NCAA season (see the call site)."""
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "records"))
+    from canonical_bouts import build_season
+    sb = build_season(gender or 'men', season, league='ncaa', apply_overrides=False)
+    st = sb.stats
+    print(f"Canonical NCAA bouts: {st['canonical bouts']:,} ({st['same-day rematch groups (distinct round labels)']} same-day "
+          f"rematch groups, {st[TWO_WAYS]} bouts the two teams recorded differently, counted once)")
+    return sb.row_bout
 
 
 def load_season_data(season: int, league: str = 'ncaa', state: str = None, gender: str = None) -> Dict[str, Dict]:
@@ -1436,7 +1462,7 @@ def dedupe_matches_across_weights(data: Dict[str, Dict]) -> None:
             key = (
                 m.get("date"),
                 pair,
-                normalized_result,
+                ("bout", m["_bout"]) if "_bout" in m else normalized_result,   # NCAA: canonical bout identity
             )
             if key in seen:
                 continue  # Skip duplicate within this weight class
@@ -1483,6 +1509,10 @@ def save_loaded_data(data: Dict[str, Dict], season: int, output_dir: str = "mt/r
     # Remove matches that have a removal override (so they disappear from matrix and profiles)
     removal_specs = load_match_removal_specs(season, output_dir, league=league, state=state, gender=gender)
     apply_match_removals(data, removal_specs)
+
+    for wc_data in data.values():          # the canonical bout index is internal to this run; keep the saved file format unchanged
+        for m in wc_data.get("matches", []):
+            m.pop("_bout", None)
 
     # Save summary file
     summary = {

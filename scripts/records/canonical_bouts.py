@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Canonical bout list for HS seasons: ONE place that decides which bouts exist and who won, so that every season
+Canonical bout list for HS seasons (and, since 2026-10-03, the NCAA bout identity used by load_data.py): ONE place that decides which bouts exist and who won, so that every season
 record on the site (header record, career summary, Season Stats box, match history, leaderboards) can be derived
 from the same list instead of being counted separately by five different scripts (see CLAUDE.md Known Gotcha 15).
 
@@ -31,6 +31,12 @@ Known Gotcha 9) and mt/rankings_data/.../match_overrides.json (removals + result
 NOT applied: manual_matches.json (only build_relationships uses it, for head-to-head; never part of a displayed record).
 Proposed but NOT decided (needs TJ): bouts labeled "Exhibition" are counted by default (as today); pass
 exclude_exhibitions=True to drop them.
+
+NCAA (TJ 2026-10-03): build_season("men", 2026, league="ncaa", apply_overrides=False) runs the same rules on
+mt/processed_data/ncaa_men/{season}/ (no approved duplicate events there). load_data.py uses `sb.row_bout` -- raw row
+(file index, roster index, match index) -> canonical bout -- as its de-dupe key, so a same-day rematch with a different
+result (e.g. 2026 NCAA 174: Kennedy over Kharchla TB-1 2-1 in the quarters and Dec 9-6 for 3rd, both dated 03/21) is
+two bouts, while one bout listed by both teams (or recorded 11-2 by one and 10-2 by the other) stays one.
 
 Public API:
     sb = build_season("boys", 2025)         -> SeasonBouts
@@ -135,7 +141,7 @@ def _conflict(sc1, tm1, sc2, tm2):
 
 class Row:
     __slots__ = ("owner", "entry", "idx", "date", "event", "rnd", "rtype", "owner_won", "opp", "summary", "result",
-                 "acc_counted", "drop_reason", "bout", "opp_name", "opp_team", "weight")
+                 "acc_counted", "drop_reason", "bout", "opp_name", "opp_team", "weight", "src")
 
     def __init__(self, **kw):
         for k in self.__slots__:
@@ -152,6 +158,7 @@ class SeasonBouts:
         self.rows = []                   # every parsed raw row (with .bout / .drop_reason)
         self.stats = collections.Counter()
         self.rematch_round_pairs = collections.Counter()
+        self.row_bout = {}               # (file index, roster index, raw match index) -> canonical bout index
 
     def wrestler_bouts(self, wid):
         return [self.bouts[i] for i in self.by_wrestler.get(str(wid), [])]
@@ -193,48 +200,57 @@ def _load_overrides(gender, season, state):
     return removals, overrides
 
 
-def build_season(gender, season, state="ky", exclude_exhibitions=False, apply_overrides=True, same_round_is_one_bout=True):
+def build_season(gender, season, state="ky", exclude_exhibitions=False, apply_overrides=True, same_round_is_one_bout=True,
+                 league="hs"):
     sb = SeasonBouts(gender, season)
-    data_dir = ROOT / "mt" / "processed_data" / f"hs_{state}_{gender}" / str(season)
-    drop = processed_drop_idents(gender, season, state=state)
+    if league == "ncaa":
+        data_dir = ROOT / "mt" / "processed_data" / f"ncaa_{gender}" / str(season)
+        drop = set()      # approved duplicate events are an HS-only list (Known Gotcha 9)
+    else:
+        data_dir = ROOT / "mt" / "processed_data" / f"hs_{state}_{gender}" / str(season)
+        drop = processed_drop_idents(gender, season, state=state)
 
     # ---- load every roster entry ("view") ----
-    entries = []      # (team_name, wrestler dict, matches after dup-event drop)
+    # files in the same order as load_data.load_team_data (sorted, unreadable files skipped), so src = (file index, roster index,
+    # raw match index) names the same raw row there
+    entries = []      # (team_name, wrestler dict, [(raw match index, match)] after dup-event drop, (file index, roster index))
+    fi = -1
     for f in sorted(data_dir.glob("*.json")):
         try:
             d = json.load(open(f, encoding="utf-8"))
         except Exception:  # noqa: BLE001
             continue
+        fi += 1
         team = d.get("team_name", "Unknown")
-        for w in d.get("roster", []):
+        for ri, w in enumerate(d.get("roster", [])):
             wid = w.get("season_wrestler_id")
             if not wid:
                 continue
-            ms = [m for m in w.get("matches", []) if match_ident(m, wid) not in drop]
-            entries.append((team, w, ms))
+            ms = [(mi, m) for mi, m in enumerate(w.get("matches", [])) if match_ident(m, wid) not in drop]
+            entries.append((team, w, ms, (fi, ri)))
     # roster: keep the entry with the most valid matches per id (first wins ties) - same choice the accomplishments script makes
     best = {}
-    for ei, (team, w, ms) in enumerate(entries):
+    for ei, (team, w, ms, _) in enumerate(entries):
         wid = str(w["season_wrestler_id"])
-        valid = sum(1 for m in ms if not (m.get("result") == "BYE" or "received a bye" in (m.get("summary") or "").lower()
+        valid = sum(1 for _, m in ms if not (m.get("result") == "BYE" or "received a bye" in (m.get("summary") or "").lower()
                                           or m.get("result") == "NoResult"))
         if valid == 0:
             continue
         if wid not in best or valid > best[wid][0]:
             best[wid] = (valid, ei)
     for wid, (_, ei) in best.items():
-        team, w, _ = entries[ei]
+        team, w, _, _ = entries[ei]
         sb.roster[wid] = dict(name=w.get("name", ""), team=team, grade=w.get("grade"), weight=w.get("weight_class"), entry=ei)
     id_name = {}
-    for team, w, _ in entries:
+    for team, w, _, _ in entries:
         id_name.setdefault(str(w["season_wrestler_id"]), (w.get("name", ""), team))
 
     # ---- parse rows ----
     groups = collections.defaultdict(list)
-    for ei, (team, w, ms) in enumerate(entries):
+    for ei, (team, w, ms, (fi, ri)) in enumerate(entries):
         owner = str(w["season_wrestler_id"])
         oname = norm_name(w.get("name"))
-        for idx, m in enumerate(ms):
+        for idx, m in ms:
             res = m.get("result")
             rt = result_type(res)
             summ = m.get("summary") or ""
@@ -263,7 +279,7 @@ def build_season(gender, season, state="ky", exclude_exhibitions=False, apply_ov
                       acc_counted=acc_counted, drop_reason=None, bout=None,
                       opp_name=((m.get("loser_name") if won else m.get("winner_name")) if won is not None else None),
                       opp_team=((m.get("loser_team") if won else m.get("winner_team")) if won is not None else None),
-                      weight=m.get("weight"))
+                      weight=m.get("weight"), src=(fi, ri, idx))
             sb.rows.append(row)
             sb.stats["rows"] += 1
             if rt in EXCLUDED_TYPES:
@@ -407,6 +423,7 @@ def build_season(gender, season, state="ky", exclude_exhibitions=False, apply_ov
             sb.bouts.append(bout)
             for r in cl:
                 r.bout = bout["idx"]
+                sb.row_bout[r.src] = bout["idx"]
 
     # ---- match overrides (same keys/semantics as load_data.py) ----
     if apply_overrides:

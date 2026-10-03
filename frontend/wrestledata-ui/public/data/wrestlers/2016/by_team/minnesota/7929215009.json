@@ -13,8 +13,8 @@
   "year": 2016,
   "current_rank": 250,
   "record": {
-    "overall": "0-10",
-    "vs_ranked": "0-10",
+    "overall": "1-10",
+    "vs_ranked": "1-10",
     "vs_top10": "0-1",
     "vs_top25": "0-2"
   },
@@ -31,19 +31,24 @@
     "techs": 0,
     "pins": 0,
     "mat_value": {
-      "mv_avg": -3.309,
-      "matches": 12,
-      "rank_weight": 211,
-      "rank_overall": 1721,
+      "mv_avg": -2.838,
+      "matches": 13,
+      "rank_weight": 202,
+      "rank_overall": 1618,
       "version": "v1"
     }
   },
   "opponent_breakdown": {
-    "ranked_wins": 0,
+    "ranked_wins": 1,
     "ranked_losses": 10,
     "top10_wins": 0,
     "top10_losses": 1,
-    "win_over_highest_rank": null,
+    "win_over_highest_rank": {
+      "opponent_id": "7929228009",
+      "opponent_rank": 69,
+      "opponent_name": "Peter Stewart",
+      "method": "Dec 3-2"
+    },
     "worst_loss": {
       "opponent_id": "416246071",
       "opponent_rank": 137,
@@ -67,7 +72,24 @@
       "score": "7-6",
       "duration": "7:00",
       "event": "Buena Vista Open",
-      "mv_impact": -2.9
+      "mv_impact": -3.01
+    },
+    {
+      "date": "2015-12-05",
+      "opponent_id": "7929228009",
+      "opponent_career_id": null,
+      "opponent_name": "Peter Stewart",
+      "opponent_team": "Northern Iowa",
+      "opponent_team_rank": 29,
+      "opponent_weight": 149,
+      "opponent_rank": 69,
+      "weight_class": "149",
+      "result": "W",
+      "method": "DEC",
+      "score": "3-2",
+      "duration": "7:00",
+      "event": "Buena Vista Open",
+      "mv_impact": 2.99
     },
     {
       "date": "2015-11-21",
@@ -84,7 +106,7 @@
       "score": "8-3",
       "duration": "7:00",
       "event": "vs. Minnesota",
-      "mv_impact": -3.63
+      "mv_impact": -3.62
     },
     {
       "date": "2015-11-15",
@@ -101,7 +123,7 @@
       "score": "12-3",
       "duration": "7:00",
       "event": "vs. Minnesota",
-      "mv_impact": -2.65
+      "mv_impact": -2.73
     },
     {
       "date": "2015-11-15",
@@ -118,7 +140,7 @@
       "score": "8-4",
       "duration": "7:00",
       "event": "vs. North Carolina State",
-      "mv_impact": -3.27
+      "mv_impact": -3.28
     },
     {
       "date": "2015-11-15",
@@ -152,7 +174,7 @@
       "score": "8-3",
       "duration": "7:00",
       "event": "vs. Minnesota",
-      "mv_impact": -4.06
+      "mv_impact": -4.05
     },
     {
       "date": "2015-11-07",
@@ -203,7 +225,7 @@
       "score": "14-5",
       "duration": "7:00",
       "event": "Daktronics Open",
-      "mv_impact": -1.84
+      "mv_impact": -1.85
     },
     {
       "date": "2015-11-01",
@@ -223,7 +245,7 @@
       "mv_impact": -5.47
     }
   ],
-  "profile_generated_at": "2026-09-09",
+  "profile_generated_at": "2026-10-03",
   "season_summary": [
     {
       "season": 2019,
@@ -263,7 +285,7 @@
       "weight_class": 149,
       "grade": "Fr.",
       "current_rank": 250,
-      "record": "0-10"
+      "record": "1-10"
     }
   ]
 }

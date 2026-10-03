@@ -11,7 +11,11 @@ existing round vocabulary: PIG, R32, R16, QF, SF, Final, C_PIG, C_R1-C_R4,
 C_QF, C_SF, 3rd, 5th, 7th.
 
 This script joins the two sources by (weight, winner_name, loser_name) and
-writes the round/bracket back onto each bout-detail record in place.
+writes the round/bracket back onto each bout-detail record in place. When the
+same winner beat the same loser twice (a same-day rematch, e.g. 2026 174:
+Kennedy over Kharchla in the quarters and again for 3rd), the bouts are paired
+in order: the lower bout number gets the earlier round (ROUND_ORDER). Before
+2026-10-03 both got the same round (the last one in matches.json).
 
 Known gap: TrackWrestling's classic bracket viewer's boutNumber sequence
 (what scrape_ncaa_bout_detail.py walks) does not appear to include pigtail
@@ -34,18 +38,25 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
 
 WEIGHT_CLASSES = [125, 133, 141, 149, 157, 165, 174, 184, 197, 285]
+# tournament order of the rounds (only the order between two rounds the same pair can meet in matters: a championship round
+# always comes before a consolation / placement round, and the consolation rounds run left to right)
+ROUND_ORDER = ["PIG", "C_PIG", "R32", "R16", "C_R1", "C_R2", "QF", "C_R3", "C_R4", "SF", "C_QF", "C_SF",
+               "7th", "5th", "3rd", "Final"]
 
 
-def load_matches_lookup(year: int, weight: int) -> dict[tuple[str, str], dict]:
+def load_matches_lookup(year: int, weight: int) -> dict[tuple[str, str], list[dict]]:
+    """(winner, loser) -> that pair's matches in tournament order (more than one = a rematch with the same winner)."""
     matches_path = DATA_DIR / str(year) / "ncaa-tourney" / "parsed" / "matches.json"
     if not matches_path.exists():
         return {}
-    matches = json.loads(matches_path.read_text())
-    return {
-        (m["winner_name"], m["loser_name"]): m
-        for m in matches
-        if m["weight"] == weight
-    }
+    out: dict[tuple[str, str], list[dict]] = {}
+    for m in json.loads(matches_path.read_text()):
+        if m["weight"] == weight:
+            out.setdefault((m["winner_name"], m["loser_name"]), []).append(m)
+    rank = {r: i for i, r in enumerate(ROUND_ORDER)}
+    for ms in out.values():
+        ms.sort(key=lambda m: rank.get(m["round"], len(rank)))
+    return out
 
 
 def reconcile_weight(year: int, weight: int, dry_run: bool = False) -> tuple[int, int]:
@@ -65,9 +76,12 @@ def reconcile_weight(year: int, weight: int, dry_run: bool = False) -> tuple[int
 
     matched = 0
     unmatched = []
-    for bout in bouts:
+    used: dict[tuple[str, str], int] = {}
+    for bout in sorted(bouts, key=lambda b: b["bout_number"]):
         key = (bout["winner"]["name"], bout["loser"]["name"])
-        m = lookup.get(key)
+        cands = lookup.get(key, [])
+        m = cands[min(used.get(key, 0), len(cands) - 1)] if cands else None
+        used[key] = used.get(key, 0) + 1
         if m is None:
             unmatched.append(bout)
             bout["round"] = None
@@ -82,14 +96,11 @@ def reconcile_weight(year: int, weight: int, dry_run: bool = False) -> tuple[int
         for b in unmatched:
             print(f"       bout {b['bout_number']}: {b['winner']['name']} def. {b['loser']['name']} ({b['winner']['score']}-{b['loser']['score']})")
 
-    unmatched_match_keys = set(lookup) - {
-        (b["winner"]["name"], b["loser"]["name"]) for b in bouts
-    }
-    if unmatched_match_keys:
-        print(f"   [INFO] weight {weight}: {len(unmatched_match_keys)} round(s) in matches.json have no scraped bout-detail counterpart:")
-        for k in unmatched_match_keys:
-            m = lookup[k]
-            print(f"       {m['round']} | {k[0]} def. {k[1]} ({m['score']})")
+    unmatched_matches = [m for k, ms in lookup.items() for m in ms[used.get(k, 0):]]
+    if unmatched_matches:
+        print(f"   [INFO] weight {weight}: {len(unmatched_matches)} round(s) in matches.json have no scraped bout-detail counterpart:")
+        for m in unmatched_matches:
+            print(f"       {m['round']} | {m['winner_name']} def. {m['loser_name']} ({m['score']})")
 
     if not dry_run:
         bout_path.write_text(json.dumps(bouts, indent=2, ensure_ascii=False))
