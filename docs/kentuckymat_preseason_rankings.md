@@ -47,7 +47,7 @@ TJ chose to rank those boys weights deeper in the preseason matrix before publis
 
 ### Status / still to do (2027)
 
-**RESUME HERE (updated 2026-10-07): ranking, page decisions and the BUILD are all done locally (local smoke test 84/84). NEXT: TJ reviews locally → commit + push with approval (Publish item below). Before the first in-season drop, read "Switching to the in-season phase".**
+**RESUME HERE (updated 2026-10-07): PUBLISHED — the 2027 preseason site went live 2026-10-07 (commit 4cfd4ca3d7; live smoke test 88/88). Next KentuckyMat preseason work: before the first in-season drop (early December) flip `siteSeason.phase` to 'season' per "Switching to the in-season phase", run 2027 career linking early, and build the Part 2 prior-season H2H matrix layer.**
 
 - [x] Boys and girls inputs staged; boys matrices built (2026-10-05).
 - [x] **Boys DONE.** TJ re-ranked all 14 boys weights. His saves were copied from `~/Downloads` into `mt/preseason_2027/rankings_data/hs_ky_boys/2027/rankings_{w}.json`; the starting orders are kept as `rankings_{w}.start.json`. For 126 the later save `rankings_126-2.json` (3:28 pm) was used; it ranks the whole weight and has the same top 40 as the first save.
@@ -106,7 +106,7 @@ TJ chose to rank those boys weights deeper in the preseason matrix before publis
   - **Stat Leaders**: "2026 Season · Final", "2026 Rank" column (cards: "2026 #8"); Career Wins pills measured against the site season (Class of 2026 outlined); "Active only" toggle (default off).
   - **Recruiting**: `build_recruiting_data.py` reads `siteSeason` from hs_config.js (override `--site-season/--phase`): classes 2027–2030 + "2026 · Graduated"; rank = published preseason rank (graduated class: its 2026 rank); new `8th` placement (counts toward ordering only for a class with no HS seasons yet); the "this year" swap rule uses the stats-season placement instead of always `Sr`. recruiting.js builds tabs/columns from the JSON. `manage_commitments.py` also reads the stats season from hs_config.js.
   - `scripts/site_checks/pages.json`: added rankings 2026 (boys/girls), a returner's profile, preseason team pages (boys/girls), dual rankings, girls recruiting.
-- [ ] **Publish**: TJ reviews locally, then commit + push to `main` (approval needed; smoke test `--target live --wait-deploy` after). The push will also carry the other uncommitted KentuckyMat work already in the tree (background search index — `docs/TODO.md`, and the All Star banner removal).
+- [x] **Published 2026-10-07** (commit 4cfd4ca3d7, pushed with TJ's MatSavant schedule commit 36e3bb5a1f; live smoke test 88/88). Was: TJ reviews locally, then commit + push to `main` (approval needed; smoke test `--target live --wait-deploy` after). The push will also carry the other uncommitted KentuckyMat work already in the tree (background search index — `docs/TODO.md`, and the All Star banner removal).
 
 ### Switching to the in-season phase (first in-season 2027 ranking, early December)
 
