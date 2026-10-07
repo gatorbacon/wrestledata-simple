@@ -15,6 +15,8 @@ This repo contains **two separate websites** that share a codebase and now both 
 
 **KentuckyMat AdSense/monetization reference:** See [`docs/kentuckymat_edge_function_plan.md`](docs/kentuckymat_edge_function_plan.md) for the AdSense-approval project (diagnosis, trust pages, share-tag fixes) and [`docs/kentuckymat_ads_phase3.md`](docs/kentuckymat_ads_phase3.md) for ad placement — both live on production as of 2026-09-23; see Known Gotcha 18.
 
+**KentuckyMat preseason rankings + prior-season head-to-head design:** See [`docs/kentuckymat_preseason_rankings.md`](docs/kentuckymat_preseason_rankings.md) — how the new-season starting order is built (`scripts/rankings/build_preseason_matrix_inputs.py`, staged in `mt/preseason_{season}/`), and the approved light-blue prior-season head-to-head matrix layer that must be built before the first in-season ranking.
+
 **Open items / half-finished work:** [`docs/TODO.md`](docs/TODO.md) is the single to-do list for both sites and the side projects. Read it at the start of work; when something is finished, parked or newly found, update it in the same piece of work (tick it and move it to Done, or add it).
 
 **Architecture: 100% static.** No backend, no API, no DynamoDB. Everything is pre-computed JSON files served to plain HTML/JS pages. The DynamoDB/Heroku/`api/` infrastructure is legacy and unused — do not reference it as active.
@@ -221,6 +223,11 @@ Run from repo root with `.venv/bin/python`. Both genders run for most steps.
 # Rankings matrix — save new ranking order as output after running
 .venv/bin/python scripts/rankings/generate_matrix.py -season 2026 -league hs -state KY -gender boys
 .venv/bin/python scripts/rankings/generate_matrix.py -season 2026 -league hs -state KY -gender girls
+
+# Import the matrix Save-button downloads (rankings_{gender}_{season}_{w}_{timestamp}.json in ~/Downloads)
+# into mt/rankings_data/ — newest save per weight, checked and backed up (add --dry-run to preview)
+.venv/bin/python scripts/rankings/import_matrix_saves.py -season 2026 -gender boys
+.venv/bin/python scripts/rankings/import_matrix_saves.py -season 2026 -gender girls
 ```
 
 ### Overrides (only when needed)
@@ -338,6 +345,8 @@ python scripts/recruiting/manage_commitments.py --gender girls
 | `scripts/rankings/load_data.py` | Loads processed data into rankings system |
 | `scripts/rankings/build_relationships.py` | Builds head-to-head relationship data |
 | `scripts/rankings/generate_matrix.py` | Generates rankings matrix (save output as new rank order) |
+| `scripts/rankings/import_matrix_saves.py` | Imports the matrix's Save-button downloads from `~/Downloads` (named `rankings_{gender}_{season}_{w}_{timestamp}.json` since 2026-10-06): newest save per weight, blocks a save missing a wrestler or containing one not in the matrix, reports movement in the published range, backs up the replaced file, archives the used saves |
+| `scripts/rankings/build_preseason_matrix_inputs.py` | Stages next season's preseason matrix inputs (last season's final order minus seniors, senior-free relationships, new 1-8/BR/Q notes from last season's state tournament) in `mt/preseason_{season}/` — see `docs/kentuckymat_preseason_rankings.md` |
 | `scripts/rankings/build_starter_rankings.py` | Creates starter-only rankings (must run before profiles) |
 | `scripts/rankings/calculate_elo_ratings.py` | ELO hybrid ranks for dual predictions |
 | `scripts/rankings/build_wrestler_profiles.py` | Builds wrestler JSON profiles for frontend |

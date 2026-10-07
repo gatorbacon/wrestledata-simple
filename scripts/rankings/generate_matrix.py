@@ -540,6 +540,7 @@ def generate_html_matrix(
     season: int,
     force_backup_ids: Optional[List[str]] = None,
     ranking_bands_map: Optional[Dict[str, Dict[str, int]]] = None,
+    gender: Optional[str] = None,
 ) -> str:
     """
     Generate HTML for editable ranking matrix.
@@ -548,6 +549,8 @@ def generate_html_matrix(
         matrix_data: Dictionary with wrestlers and matrix data
         weight_class: Weight class string
         season: Season year
+        gender: Written into the Save button's filename and JSON so saves
+            from different genders can't overwrite or be mistaken for each other
         
     Returns:
         HTML string
@@ -1207,6 +1210,7 @@ def generate_html_matrix(
         console.log('Script starting to execute...'); // Debug
         const weightClass = """ + json.dumps(weight_class) + """;
         const season = """ + str(season) + """;
+        const matrixGender = """ + json.dumps(gender) + """;
         const wrestlers = """ + json.dumps(wrestlers) + """;
         const forceBackupIds = new Set(""" + json.dumps(force_backup_ids or []) + """);
         console.log('Variables initialized, wrestlers count:', wrestlers.length); // Debug
@@ -1333,9 +1337,12 @@ def generate_html_matrix(
             const rows = Array.from(tbody.querySelectorAll('tr'));
             const rowIndex = rows.indexOf(row);
             
-            const colIndex = parseInt(cell.getAttribute('data-col-index'), 10);
-            
-            if (rowIndex < 0 || isNaN(colIndex)) return;
+            // Current column from the cell's live position in its row (skip rank + wrestler
+            // cells). NOT data-col-index: that is fixed at build time, but swapRows moves
+            // whole columns, so after any reorder it points at the column's ORIGINAL rank.
+            const colIndex = Array.from(row.querySelectorAll('td')).slice(2).indexOf(cell);
+
+            if (rowIndex < 0 || colIndex < 0) return;
             
             // Check if this is the same cell as last click
             if (lastClickedCell === cell) {
@@ -1422,7 +1429,14 @@ def generate_html_matrix(
             const row1 = rows[index1];
             const row2 = rows[index2];
             if (!row1 || !row2) return;
-            
+
+            // Any reorder (arrows, Set, double-click) cancels a pending first click, so a
+            // later single click on that same cell can't trigger a surprise move.
+            if (lastClickedCell) {
+                lastClickedCell.classList.remove('cell-highlighted');
+                lastClickedCell = null;
+            }
+
             if (index1 < index2) {
                 // Moving down: place row1 after row2
             tbody.insertBefore(row1, row2.nextSibling);
@@ -1648,9 +1662,12 @@ def generate_html_matrix(
             status.className = 'save-status';
             
             const rankings = getCurrentRankings();
+            const now = new Date();
             const data = {
                 weight_class: weightClass,
                 season: season,
+                gender: matrixGender,
+                saved_at: now.toISOString(),
                 rankings: rankings
             };
             
@@ -1659,20 +1676,26 @@ def generate_html_matrix(
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = `rankings_${weightClass}.json`;
+            // e.g. rankings_girls_2027_120_2026-10-06_143210.json -- every save is its own
+            // file; scripts/rankings/import_matrix_saves.py picks the newest per weight.
+            const pad = n => String(n).padStart(2, '0');
+            const stamp = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}_` +
+                `${pad(now.getHours())}${pad(now.getMinutes())}${pad(now.getSeconds())}`;
+            const prefix = matrixGender ? `rankings_${matrixGender}_${season}` : `rankings_${season}`;
+            a.download = `${prefix}_${weightClass}_${stamp}.json`;
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
             
-            status.textContent = 'Downloaded rankings JSON file';
+            status.textContent = `Downloaded ${a.download}`;
             status.className = 'save-status save-success';
             
             button.disabled = false;
             
             setTimeout(() => {
                 status.textContent = '';
-            }, 3000);
+            }, 8000);
         }
     </script>
 </body>
@@ -1863,6 +1886,7 @@ def generate_matrix_for_weight_class(
         season,
         force_backup_ids=list(force_backup_ids),
         ranking_bands_map=ranking_bands_map,
+        gender=gender,
     )
     
     output_path = Path(output_dir) / league_dir_key(league, gender, state) / str(season)
