@@ -29,6 +29,7 @@ This repo contains **two separate websites** that share a codebase and now both 
 - **Every push to `main` runs the site smoke test (TJ, 2026-09-30).** Before pushing: `.venv/bin/python scripts/site_checks/smoke_test.py --target local` — if anything FAILs, stop and show TJ instead of pushing. After pushing: `.venv/bin/python scripts/site_checks/smoke_test.py --target live --wait-deploy <old>..<new>` (`<old>` = `origin/main` before the push; it waits for Netlify to serve the changed files, then tests) and report the result to TJ. It opens every page in `scripts/site_checks/pages.json` (both sites) in headless Chrome at desktop and phone width and fails on: page not loading, JS errors, missing data/scripts, content not visible (catches "built but hidden", like the 2026-09-30 blank mobile rankings page), sideways scrolling on phones. Warnings (don't block): broken images, a Netlify bot challenge the test browser passed. Ads/analytics are blocked during tests (no fake AdSense impressions or GA visits). Screenshots + report go to `mt/site_checks/` (gitignored). **When adding a new page to either site, add it to `pages.json`.** Runs take ~2 min per target.
 - Everything else is recoverable (user backs up regularly).
 - **`dev` branch (added 2026-09-23, KentuckyMat-only)**: used for free Netlify branch-deploy previews while building the AdSense/edge-function work (see `docs/kentuckymat_edge_function_plan.md`). Code and content work for that project happens on `dev`; merge to `main` only when TJ explicitly says to go live (each merge-to-main is a paid production deploy — batch changes, don't merge per-commit). This is unrelated to the retired `hsky-dev` branch above — `dev` is short-lived, scoped to one Netlify project (KentuckyMat only), and not a general parallel-development branch for both sites. The weekly data pipeline has no git commit/push logic of its own (confirmed 2026-09-23), so it doesn't interact with this workflow. **Only touch `frontend/hs-ky-ui/` and KentuckyMat-specific scripts on `dev`** — never `frontend/wrestledata-ui/` or shared MatSavant code, to keep this branch's changes isolated to KentuckyMat.
+  - **State of `dev` as of 2026-10-07:** it was used again for the 2027 preseason preview (preview commits built from a temporary index on top of `main`, so local `main` stayed untouched). Those preview commits are NOT ancestors of `main` (the same content went to `main` as its own commit `4cfd4ca3d7`), so `dev` has diverged. Before the next preview, reset it to `main`: `git push --force origin main:dev` (it holds nothing that isn't on `main`).
 
 ---
 
@@ -183,6 +184,8 @@ Team slugs are lowercase, underscored (e.g. `boyle_county`, `anderson_county`). 
 ## Weekly Pipeline (Full Order)
 
 Run from repo root with `.venv/bin/python`. Both genders run for most steps.
+
+**Season phase first:** the site is in a preseason phase between the preseason rankings drop and the first in-season ranking (`hs_config.js` `siteSeason`, Known Gotcha 6). The weekly pipeline below is the IN-SEASON flow; before the first in-season run of a new season, follow "Switching to the in-season phase" in `docs/kentuckymat_preseason_rankings.md` (flip the phase in the same push as the first in-season drop and 2027 team profiles). The preseason drop itself is `create_rankings_release.py --preseason` (Part 1 of that doc).
 
 ### Data Scraping
 
@@ -372,7 +375,7 @@ python scripts/recruiting/manage_commitments.py --gender girls
 | `scripts/records/canonical_bouts.py` | **The one place season W-L is decided** (canonical bout list per season; rules in its header; used by accomplishments + profile builder — Known Gotcha 15). Helpers: `verify_consistency.py`, `compare_season_records.py`, `show_wrestler.py`, `career_wins_preview.py` |
 | `scripts/careers/link_seasons_batch.py` | Applies an explicit list of `season -> season_wrestler_id` links to existing careers (non-interactive); validates, logs to `data/career_linking_logs/batch_links_log.json` |
 | `scripts/rankings/manage_career_record_overrides.py` | Interactive CLI to set a **career-total** W-L override (`data/career_record_overrides/{gender}.json`), read by `build_career_profiles.py` and applied on top of the computed career record. Only the total is overridden — the year-by-year season rows are NOT adjusted to match, so a wrestler under override will show season rows that don't sum to the career total (expected; e.g. Blake Luttrell 200-45, Branson Smith 218-27 as of 2026-09-21). Separate from `manage_match_overrides_hs.py`, which overrides one match's result and does feed into the canonical bout list (Known Gotcha 15). |
-| `scripts/recruiting/build_recruiting_data.py` | Builds recruiting page data |
+| `scripts/recruiting/build_recruiting_data.py` | Builds recruiting page data. Classes, ranks and the stats season follow `hs_config.js` `siteSeason` (current class + 3 more, plus last year's seniors as "Graduated"; preseason ranks during the preseason). `--rebuild` = both genders |
 | `scripts/recruiting/manage_commitments.py` | Interactive CLI to manage college commitments |
 
 ---
@@ -380,10 +383,15 @@ python scripts/recruiting/manage_commitments.py --gender girls
 ## Frontend JS Architecture
 
 All pages share `hs_config.js` which is loaded first and provides:
-- `HS_CONFIG` — weight classes, default season/gender, data paths
+- `HS_CONFIG` — weight classes, default season/gender, data paths; `HS_CONFIG.siteSeason` = the yearly season/phase switch (Known Gotcha 6)
 - `getGenderFromURL()`, `getSeasonFromURL()`, `getQueryParam()`
+- `getSiteSeason()`, `getStatsSeason()`, `isPreseason()` — which season the site is in vs. which season has match data
+- `renderSeasonContext()` — the "Past seasons: 2026" links / "(past season)" banner + back link (Rankings, Team Tournament, Team Duals); `?season=YYYY` opens a past season
+- `createComingSoonBlock()` / `renderPreseasonStandingsNote()` — the preseason "Coming Soon · Expected in early December" placeholders (Team Tournament, Team Duals, team page projection, Dual Predictor)
 - `buildPageURL()` — builds `page.html?gender=X&...` links
 - `setMetaDescription()` — sets/updates meta description tag for SEO
+
+`displayName()` (wrestler name display rule) lives in `header.js`, not `hs_config.js`, because a few pages (about, methodology, recruiting) don't load hs_config.js — see "Wrestler name display" below.
 
 **Key JS files per page:**
 

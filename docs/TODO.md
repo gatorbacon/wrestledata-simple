@@ -12,6 +12,8 @@ One list for both sites and the side projects, so nothing gets lost between sess
 
 ## Waiting on TJ (decisions)
 
+- [ ] **Mac disk is nearly full** (433 of 460 GB used on 2026-10-07; it hit 194 MB free mid-session and commands started failing). A runaway loop in another Claude session had written a 4.75 GB log to `/private/tmp/claude-501/…/tasks/` (deleted). Worth clearing space before the next big rebuild. *(added 2026-10-07)*
+
 - [ ] **2026 NCAA rankings page files (`data/public_rankings/2026/`)**: these still hold the ranks and records as built on 2026-09-03, before the ranking-method change of 2026-09-09; only their DPG was refreshed. Regenerating them (`generate_public_rankings.py --season 2026 -league ncaa`) would change last season's displayed ranks, e.g. 125: Spratley #6 → #2. Regenerate or leave as a snapshot? *(added 2026-10-01; docs/matsavant.md gotcha 18)*
 - [ ] **2026 NCAA xTP files**: built with the old (stale) 2026 profile DPG as an input. Rerun xTP for 2026, or leave as is? *(added 2026-10-01; gotcha 18)*
 - [ ] **Cloudflare in front of matsavant.com**: optional bot protection; only needed if another scraper burst gets past Netlify's bot blocking. Needs DNS and email forwarding moved from Namecheap. *(since 2026-09-27; memory: MatSavant bot mitigation)*
@@ -21,7 +23,8 @@ One list for both sites and the side projects, so nothing gets lost between sess
 
 ## Ready to ship (committed locally, not pushed)
 
-- [ ] **KentuckyMat: search index loads in the background** (uncommitted; same change MatSavant shipped 2026-10-02). `header.js` + the `search_index.js`/Fuse.js tags removed from 21 pages; `compare.html` keeps both, `dual_predictor.html` keeps Fuse. Not measured yet: a Lighthouse before/after (desktop, phone on good LTE, phone on slow 4G) — the 2026-10-02 mobile baseline on a wrestler page was score 42-51, first paint 8-11 s, ~5.5 s of it the search index. *(added 2026-10-02)*
+- [ ] **Docs-only commits on local `main`**: `06502353a8` (preseason published / next steps) and the 2026-10-07 documentation pass (CLAUDE.md, this file, the preseason doc). No site changes, so no rush; they go out with the next push. *(added 2026-10-07)*
+
 
 ## Uncommitted local work
 
@@ -58,6 +61,12 @@ One list for both sites and the side projects, so nothing gets lost between sess
 
 ## KentuckyMat (kentuckymat.com)
 
+- [ ] **Lighthouse before/after for the background search index** (shipped 2026-10-07): desktop, phone on good LTE, phone on slow 4G. The 2026-10-02 mobile baseline on a wrestler page was score 42-51, first paint 8-11 s, ~5.5 s of it the search index. *(added 2026-10-02)*
+- [ ] **Teams with no region in the team list** show region "-" in the rankings and graphics: boys Logan County, Christian Academy-Louisville, Adair County; girls Russell County, East Jessamine, Atherton, Pineville, Boone County, Martin County, Logan County (seen in the 2027 preseason drop). The scraped `data/team_lists/hs_ky_{gender}/teams.json` has no region for them (TrackWrestling lists regions only in-season, CLAUDE.md gotcha 11). Add them by hand or rescrape in-season. *(added 2026-10-07)*
+- [ ] **Pages that never send a Google Analytics page view**: `analytics.js` sets `send_page_view: false`, and only pages that load `hs_config.js` (or call `sendPageView()`) send one. About, Methodology, Recruiting and the other static pages don't. Home started counting on 2026-10-07 (it now loads hs_config.js for the preseason tag), so Home's numbers jump from that date. *(added 2026-10-07)*
+- [ ] **Leftover files in the rankings archive**: `data/rankings/girls/2026/team/dual/drops/2026-mm-dd.json` (a placeholder-named drop) and `data/rankings/boys/2026/2026-02-03 copy/`. Probably safe to delete; check nothing lists them first. *(added 2026-10-07)*
+- [ ] **Orphan pages still hardcode 2026** (`index.js`, `leaderboards/simple_leaderboard.js`, `career_wins_leaderboard.js`, `mat_value.js`, `odds-stacked.js`): none are loaded by a linked page, so they were left out of the `siteSeason` switch. Only matters if one is revived. *(added 2026-10-07)*
+
 - [ ] **AdSense check-in, about 2026-10-23**: per-ad-unit earnings (Part D of `docs/kentuckymat_ads_phase3.md`); drop a bottom/mid slot that earns almost nothing. First look is informational; Dec–Feb is the real test. *(due 2026-10-23)*
 - [ ] **AdSense project, phases still open**: Phase 2 (edge function) not started; Phase 4 (port to MatSavant) later. *(docs/kentuckymat_edge_function_plan.md)*
 - [ ] **Before the 2027 HS season: smoke-test the HS pipeline steps** that regressed during the NCAA rework (CLAUDE.md gotcha 11). *(due before the 2027 season)*
@@ -72,7 +81,6 @@ One list for both sites and the side projects, so nothing gets lost between sess
 ## New season (2027) — when it starts
 
 - [ ] **MatSavant**: follow the checklist in docs/matsavant.md "Starting a New NCAA Season": bump `DEFAULT_SEASON` in `scripts/pipeline.py`, scrape rosters, run the pipeline (career linking is built in), review flagged transfers.
-- [ ] **KentuckyMat**: update `defaultSeason` in `hs_config.js` (CLAUDE.md gotcha 6).
 - [ ] **KentuckyMat 2027 in-season switch (early December)**: preseason site PUBLISHED 2026-10-07. Before the first in-season drop: flip `hs_config.js` `siteSeason.phase` to 'season' (checklist in the doc), run 2027 career linking early, build the Part 2 prior-season H2H matrix layer. *(docs/kentuckymat_preseason_rankings.md, "RESUME HERE")*
 - [ ] **KentuckyMat: build the prior-season head-to-head layer in the matrix BEFORE the first in-season 2027 ranking** (light-blue, winner's cell only, head-to-head only, replaced by any current head-to-head or common-opponent result, display only). Needs 2027 career links done early in the season. *(approved 2026-10-05; docs/kentuckymat_preseason_rankings.md Part 2)*
 - [ ] **KentuckyMat `data/hs_ky_{boys,girls}/bloodround.txt` are stale** (not 2026 state bouts despite an April 2026 save date); replace before using `manage_placement_notes.py -import-bloodround`. *(found 2026-10-05)*
@@ -88,6 +96,8 @@ One list for both sites and the side projects, so nothing gets lost between sess
 ---
 
 ## Done
+
+- [x] 2026-10-07 — **KentuckyMat 2027 preseason site published** (`4cfd4ca3d7`, live smoke test 88/88): preseason rankings for both genders + girls 2026 Final drop, `siteSeason` phase switch, season-labeled rank pills, team pages with returning wrestlers, "Coming Soon" for team projections / duals / Dual Predictor, recruiting classes 2027–2030, Stat Leaders labels + Career Wins "Active only", `displayName()` name rule, Nance and Woosley to Georgetown College, and the background search index. Everything is in `docs/kentuckymat_preseason_rankings.md`.
 
 - [x] 2026-10-07 — Roster and schedule rescan: new rosters The Citadel and Virginia Tech, Navy +19, Northern Colorado +16, Columbia +9; Lock Haven and Cal Poly now on their real 2026-27 rosters; new schedules Columbia, CSU Bakersfield, Oklahoma. All 16 parked changes accepted (TJ). Schedule page 490 → 501 duals (two duals that showed on two dates now show once). Leftover Clarion pending file deleted. (committed, not pushed)
 - [x] 2026-10-05 — KentuckyMat ranking matrix: double-click-to-move now uses the cell's current column (it used the column from when the page was built, so it went wrong after any reorder); a pending first click is cleared by any move. Tested in headless Chrome. (`generate_matrix.py`, uncommitted)

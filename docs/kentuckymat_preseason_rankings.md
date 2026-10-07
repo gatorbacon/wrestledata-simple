@@ -117,7 +117,22 @@ One line in `hs_config.js`: `siteSeason: { season: 2027, phase: 'season' }`. In 
 - Profile pills switch to `#3 · 2027` automatically.
 - Next summer: `{season: 2028, phase: 'preseason'}` and repeat Part 1.
 
-**Uncommitted repo changes from this work** (none committed yet): `scripts/rankings/build_preseason_matrix_inputs.py` (new), `scripts/rankings/generate_matrix.py` (double-click fix; new Save filename with gender/season/timestamp), `scripts/rankings/import_matrix_saves.py` (new), this doc (new), pointer lines in `CLAUDE.md` and `docs/TODO.md`, and the `mt/preseason_*/` line in `.gitignore`. Everything under `mt/preseason_2027/` is gitignored local data. Don't lose it, and don't rerun `build_preseason_matrix_inputs.py` (it would overwrite TJ's saved rankings).
+### Next summer: the 2028 preseason, step by step
+
+What 2027 took, in order (details in the sections above):
+
+1. **Stage the matrix inputs** (once; never rerun after TJ starts saving): `.venv/bin/python scripts/rankings/build_preseason_matrix_inputs.py --from-season 2027 --gender {boys,girls}`. Check the "ELO wrestlers in published range" table and that every ranked wrestler is in that weight's relationships file (the Herron lesson).
+2. **Build the matrices**: `generate_matrix.py -season 2028 -league hs -state KY -gender {g} -data-dir mt/preseason_2028/rankings_data -output-dir mt/preseason_2028/rankings_html`. TJ re-ranks and saves each weight.
+3. **Import the saves**: `import_matrix_saves.py -season 2028 -gender {g} -data-dir mt/preseason_2028/rankings_data`, then rebuild only the matrices.
+4. **Last season's final drop**: if a gender was re-ranked after its last weekly drop, publish a normal drop of the final order (2026 girls needed one; boys didn't).
+5. **Preseason drops**: `create_rankings_release.py -season 2028 -gender {g} -drop-id <publish date> --preseason --archive --pdf --jpg`.
+6. **Team rosters**: `scripts/teams/build_preseason_team_rosters.py --season 2028 --gender both`.
+7. **Flip the site**: `hs_config.js` `siteSeason: { season: 2028, phase: 'preseason' }`, then `build_recruiting_data.py --rebuild` (it reads the phase from hs_config.js).
+8. **Check**: `smoke_test.py --target local`, preview on `dev` (reset `dev` to `main` first — see CLAUDE.md), then push with TJ's approval and run the live smoke test.
+
+The page behavior for the preseason is already built and driven by the phase, so no page code should need changing; only the decisions in "Site 'preseason state'" if TJ wants something different.
+
+**Where the work lives:** all code, site data and docs are committed and live (commits `11846b7d80` tooling, `4cfd4ca3d7` site). Only `mt/preseason_2027/` stays local (gitignored staging data: TJ's saved rankings, `.start.json` starting orders, relationships, placement notes, backups in `rankings_archive/`). Don't lose it, and don't rerun `build_preseason_matrix_inputs.py` (it would overwrite TJ's saved rankings). Graphics are in `mt/graphics/2027/`; the used matrix saves are in `~/Downloads/kentuckymat_matrix_saves/` and `~/Downloads/kentuckymat_preseason_2027_boys/`.
 
 ---
 
