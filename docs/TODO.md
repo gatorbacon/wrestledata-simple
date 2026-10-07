@@ -73,6 +73,7 @@ One list for both sites and the side projects, so nothing gets lost between sess
 - [ ] **2026 HS profiles have no `bonus` block.** Doesn't affect the site; if `compute_all_top33_bonus.py` is rerun for 2026, rerun xTP right after. *(CLAUDE.md gotchas 13/15)*
 - [ ] **Re-tune the xTP_simple table after the 2027 season** with `build_xtp_simple_hybrid.py --season 2027`, before 2028. *(CLAUDE.md gotcha 17)*
 - [ ] **`evaluate_state_predictions.py` bugs not fixed**: drops forfeit placements (needs an opponent ID) and its default processed-data folder is stale for girls 2026. *(CLAUDE.md gotcha 17)*
+- [ ] **3 state bracket lines couldn't be added** (wrestlers not in the scraped data): 2018 boys 5th Noah Davis over Anthony Pierce, 2021 boys 7th Slayton/Giannone double forfeit, 2024 girls 7th Macey Shipp over Sonia Tarley. *(found 2026-10-07; CLAUDE.md gotcha 19)*
 - [ ] **HS Mat Value is broken**, deliberately not fixed because KentuckyMat doesn't use it. *(CLAUDE.md gotcha 11)*
 - [ ] **Matrix ranking assistant**: paused. Restart as a helper for TJ's weekly walk-through (surface conflicts and evidence), not a replacement. Read TJ's resume notes first. *(paused 2026-09-13; memory: matrix ranking automation)*
 - [ ] **Historical state brackets**: 2012, 2011, 2010 boys done; next is 2009, working backward. *(memory: historical bracket transcription)*
@@ -97,6 +98,7 @@ One list for both sites and the side projects, so nothing gets lost between sess
 
 ## Done
 
+- [x] 2026-10-07 — **KentuckyMat: missing state placement bouts added from the bracket results** (72 bouts, mostly girls 2024 and boys 2015/2020/2024, e.g. Lyla Smith's 2024 final; nothing duplicated; CLAUDE.md gotcha 19). Also merged Naiya Delos Santos's 2024 career (`career_001235`, "Naiya Marie Debs Santos", John Hardin) into `career_000752`. Not pushed yet.
 - [x] 2026-10-07 — **KentuckyMat 2027 preseason site published** (`4cfd4ca3d7`, live smoke test 88/88): preseason rankings for both genders + girls 2026 Final drop, `siteSeason` phase switch, season-labeled rank pills, team pages with returning wrestlers, "Coming Soon" for team projections / duals / Dual Predictor, recruiting classes 2027–2030, Stat Leaders labels + Career Wins "Active only", `displayName()` name rule, Nance and Woosley to Georgetown College, and the background search index. Everything is in `docs/kentuckymat_preseason_rankings.md`.
 
 - [x] 2026-10-07 — Roster and schedule rescan: new rosters The Citadel and Virginia Tech, Navy +19, Northern Colorado +16, Columbia +9; Lock Haven and Cal Poly now on their real 2026-27 rosters; new schedules Columbia, CSU Bakersfield, Oklahoma. All 16 parked changes accepted (TJ). Schedule page 490 → 501 duals (two duals that showed on two dates now show once). Leftover Clarion pending file deleted. (committed, not pushed)

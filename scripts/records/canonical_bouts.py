@@ -29,6 +29,9 @@ Rules (approved by TJ 2026-09-21):
 Also applied, exactly as the existing pipeline does: approved duplicate-event removals (data/duplicate_events/,
 Known Gotcha 9) and mt/rankings_data/.../match_overrides.json (removals + result/winner overrides).
 NOT applied: manual_matches.json (only build_relationships uses it, for head-to-head; never part of a displayed record).
+STATE BRACKET BOUTS (TJ 2026-10-07): the state placement matches from the bracket results (data/state_bracket_bouts/{gender}/{season}.json,
+built from placement.txt by build_state_bracket_bouts.py) are added when the scrape doesn't have them -- coaches didn't always enter
+state bouts in TrackWrestling (2024 girls especially). Never duplicates a scraped bout; see apply_state_bracket_bouts().
 Proposed but NOT decided (needs TJ): bouts labeled "Exhibition" are counted by default (as today); pass
 exclude_exhibitions=True to drop them.
 
@@ -159,6 +162,7 @@ class SeasonBouts:
         self.stats = collections.Counter()
         self.rematch_round_pairs = collections.Counter()
         self.row_bout = {}               # (file index, roster index, raw match index) -> canonical bout index
+        self.bracket_status = []         # [(state bracket bout, status)] -- see apply_state_bracket_bouts()
 
     def wrestler_bouts(self, wid):
         return [self.bouts[i] for i in self.by_wrestler.get(str(wid), [])]
@@ -201,7 +205,7 @@ def _load_overrides(gender, season, state):
 
 
 def build_season(gender, season, state="ky", exclude_exhibitions=False, apply_overrides=True, same_round_is_one_bout=True,
-                 league="hs"):
+                 league="hs", apply_bracket=True):
     sb = SeasonBouts(gender, season)
     if league == "ncaa":
         data_dir = ROOT / "mt" / "processed_data" / f"ncaa_{gender}" / str(season)
@@ -425,6 +429,9 @@ def build_season(gender, season, state="ky", exclude_exhibitions=False, apply_ov
                 r.bout = bout["idx"]
                 sb.row_bout[r.src] = bout["idx"]
 
+    if apply_bracket and league == "hs":
+        apply_state_bracket_bouts(sb, gender, season, state)
+
     # ---- match overrides (same keys/semantics as load_data.py) ----
     if apply_overrides:
         removals, overrides = _load_overrides(gender, season, state)
@@ -456,6 +463,86 @@ def build_season(gender, season, state="ky", exclude_exhibitions=False, apply_ov
             sb.by_wrestler[wid].append(b["idx"])
     sb.stats["canonical bouts"] = sum(1 for b in sb.bouts if b["rtype"] in COUNTED_TYPES)
     return sb
+
+
+def _days(a, b):
+    from datetime import date
+    try:
+        return abs((date.fromisoformat(a) - date.fromisoformat(b)).days)
+    except ValueError:
+        return 9999
+
+
+def apply_state_bracket_bouts(sb, gender, season, state="ky", window_days=30):
+    """Add the state bracket's placement bouts (data/state_bracket_bouts/) that the scraped data doesn't have.
+
+    A bracket bout is NOT added (no duplicates -- TJ 2026-10-07) when, within `window_days` of the state date:
+      - "in scrape": the two wrestlers already have a bout together at the state event, or one with a compatible result
+        (same type, no score/time conflict) under any event name or date;
+      - "in scrape (unknown opponent)": either wrestler has a state bout with the same round label vs an unidentified opponent;
+      - "review: met nearby, different result": they have a bout together nearby that is neither -- left alone, report only;
+      - "review: round already wrestled": either wrestler already has a bout in that same placement round (vs someone else) at
+        the state event -- the scrape and the bracket disagree on the opponent, left alone;
+      - "wrestler not in scraped data": one side has no season profile to attach it to.
+    Otherwise status "ADDED": a new bout with no raw rows (bout["source"] == "state_bracket").
+    Runs on every build, so once a re-scrape picks a bout up it is matched instead of added."""
+    p = ROOT / "data" / "state_bracket_bouts" / gender / f"{season}.json"
+    if not p.exists():
+        return
+    data = json.load(open(p, encoding="utf-8"))
+    sdate, sevent = iso(data.get("date")), data.get("event") or ""
+
+    def state_ish(ev):
+        el = (ev or "").lower()
+        return ev == sevent or ("state" in el and "jv" not in el and "semi" not in el and "first round" not in el
+                                and (gender == "girls" or "girls" not in el))
+
+    live = [b for b in sb.bouts if b["rtype"] not in EXCLUDED_TYPES]
+    near = [b for b in live if _days(b["date"], sdate) <= window_days]
+    for bb in data.get("bouts", []):
+        w, l, rnd = str(bb["winner_id"]), str(bb["loser_id"]), bb["round"].lower()
+        rtype = result_type(bb["result"])
+        sc, tm = _score_time(bb["result"])
+        if not sdate or not sevent:
+            status = "no state event found in scrape"          # can't check for duplicates -> never add
+        elif w not in sb.roster or l not in sb.roster:
+            status = "wrestler not in scraped data"
+        else:
+            pair = [b for b in live if set(b["ids"]) == {w, l}]
+            # same bout: at the state event within the window, or the same result (type, no score/time conflict) on ANY date
+            same = [b for b in pair if (state_ish(b["event"]) and _days(b["date"], sdate) <= window_days) or
+                    (b["rtype"] == rtype and not _conflict(sc, tm, *_score_time(b["result"])))]
+            # a meeting within a day of state under another event name could be this bout recorded oddly -> hold for review.
+            # Earlier meetings (duals, regionals, 2021's "First Round" semi-state) are other bouts.
+            pair_near = [b for b in pair if _days(b["date"], sdate) <= 1 and not state_ish(b["event"])]
+            # the bout listed by one wrestler vs an unidentified opponent (forfeits often have no opponent id): same round label,
+            # or the opponent's name matches the other wrestler's
+            other_names = {w: {norm_name(bb["loser_name"]), norm_name(sb.roster[l]["name"])},
+                           l: {norm_name(bb["winner_name"]), norm_name(sb.roster[w]["name"])}}
+            unk = [b for b in near if b["unknown_opp"] and b["ids"][0] in (w, l) and state_ish(b["event"]) and
+                   ((rnd and b["round"] == rnd) or norm_name(b.get("opp_name")) in other_names[b["ids"][0]])]
+            taken = [b for b in near if (w in b["ids"] or l in b["ids"]) and b["round"] == rnd and state_ish(b["event"])]
+            if same:
+                status = "in scrape"
+            elif unk:
+                status = "in scrape (unknown opponent)"
+            elif pair_near:
+                status = "review: met nearby, different result"
+            elif taken:
+                status = "review: round already wrestled"
+            else:
+                status = "ADDED"
+        sb.bracket_status.append((bb, status))
+        sb.stats["state bracket bouts: " + status] += 1
+        if status != "ADDED":
+            continue
+        summary = f"{bb['round']} - {bb['winner_name']} ({bb['winner_team']}) over {bb['loser_name']} ({bb['loser_team']}) ({bb['result']})"
+        b = dict(idx=len(sb.bouts), date=sdate, event=sevent, round=rnd, rtype=rtype, result=bb["result"], ids=sorted([w, l]), winner=w,
+                 rows=[], rematch=False, override=None, owners=[], n_rows=0, unknown_opp=False, weight=str(bb["weight"]),
+                 opp_name=None, opp_team=None, summaries={summary}, source="state_bracket")
+        sb.bouts.append(b)
+        live.append(b)
+        near.append(b)
 
 
 # ---------------------------------------------------------------------------------------------------------------------------------------
