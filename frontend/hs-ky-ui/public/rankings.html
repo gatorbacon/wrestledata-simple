@@ -21,8 +21,6 @@
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6991551662268186"
       crossorigin="anonymous">
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-  <script src="/search_index.js"></script>
   <script src="/js/analytics.js"></script>
 </head>
 <body>
@@ -30,7 +28,9 @@
   <div class="page-container">
     <header class="header">
       <h1 id="rankings-title">Rankings</h1>
-      <div class="header-subline" id="season-info">Season 2026</div>
+      <div class="header-subline" id="season-info"></div>
+      <!-- Preseason note / past-season banner + "Past seasons" links (rankings.js) -->
+      <div id="rankings-context" class="rankings-context" style="display: none;"></div>
       <!-- Drop selector (hidden if only one drop) -->
       <div id="drop-selector-container" style="display: none; margin-top: 0.5em;">
         <label for="drop-selector" style="margin-right: 0.5em; color: var(--text-secondary);">Rankings Drop:</label>
@@ -69,8 +69,8 @@
               <th>Team</th>
               <th class="grade-col">Grade</th>
               <th>Reg</th>
-              <th>W–L</th>
-              <th>Bonus %</th>
+              <th id="wl-header">W–L</th>
+              <th id="bonus-header">Bonus %</th>
             </tr>
           </thead>
           <tbody></tbody>

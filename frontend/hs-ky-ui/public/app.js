@@ -172,8 +172,52 @@ function safe(value, formatter) {
     return bar;
   }
   
-  function resolveSeason() {
-    return "2026"; // Or make dynamic later
+  // Header rank pill: the rank always carries its season ("#3 · 2027",
+  // "#5 · 2026"); in the preseason a returner shows his published preseason rank
+  // ("#3 · 2027 Preseason") or no pill if he's outside it (TJ, 2026-10-07).
+  function createSeasonRankPill(rank, label) {
+    const pill = document.createElement("span");
+    pill.className = "career-header-rank-pill";
+    pill.appendChild(document.createTextNode(`#${rank}`));
+    const seasonSpan = document.createElement("span");
+    seasonSpan.className = "rank-pill-season";
+    seasonSpan.textContent = ` · ${label}`;
+    pill.appendChild(seasonSpan);
+    return pill;
+  }
+
+  // Preseason drop rank for a wrestler, matched on his last-season ID at his
+  // last-season weight (preseason rankings keep everyone at last year's weight).
+  async function lookupPreseasonRank(gender, wrestlerId, weight) {
+    try {
+      const base = `${HS_CONFIG.dataPaths.rankingsArchive}/${gender}/${getSiteSeason()}`;
+      const idxResp = await fetch(`${base}/index.json`);
+      if (!idxResp.ok) return null;
+      const idx = await idxResp.json();
+      const resp = await fetch(`${base}/${idx.latest}/${weight}.json`);
+      if (!resp.ok) return null;
+      const drop = await resp.json();
+      const hit = (drop.wrestlers || []).find(w => String(w.wrestler_id) === String(wrestlerId));
+      return hit ? hit.rank : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  // Resolves to the header pill for a career's most recent season, or null.
+  async function buildCareerRankPill(gender, mostRecent) {
+    const season = Number(mostRecent.season);
+    const isReturner = season === Number(getStatsSeason()) && mostRecent.grade !== 12;
+    if (isPreseason() && isReturner) {
+      const rank = mostRecent.weight_class
+        ? await lookupPreseasonRank(gender, mostRecent.wrestler_id, mostRecent.weight_class)
+        : null;
+      return rank != null ? createSeasonRankPill(rank, `${getSiteSeason()} Preseason`) : null;
+    }
+    if (mostRecent.current_rank != null) {
+      return createSeasonRankPill(mostRecent.current_rank, String(season));
+    }
+    return null;
   }
   
   function teamNameToSlug(teamName) {
@@ -257,12 +301,13 @@ function safe(value, formatter) {
     const mostRecent = seasons[0]; // sorted newest first
 
     // === Header ===
-    document.getElementById("wrestler-name").textContent = data.canonical_name || "—";
+    const _careerName = displayName(data.canonical_name);
+    document.getElementById("wrestler-name").textContent = _careerName || "—";
     const _titleTeam = (mostRecent && mostRecent.team) ? mostRecent.team : null;
     const _titleGenderLabel = gender === "girls" ? "Kentucky Girls High School Wrestling" : "Kentucky High School Wrestling";
     document.title = _titleTeam
-      ? `${data.canonical_name} | ${_titleGenderLabel} | ${_titleTeam} | KentuckyMat`
-      : `${data.canonical_name} | ${_titleGenderLabel} | KentuckyMat`;
+      ? `${_careerName} | ${_titleGenderLabel} | ${_titleTeam} | KentuckyMat`
+      : `${_careerName} | ${_titleGenderLabel} | KentuckyMat`;
     sendPageView();
     const _cr = data.career_record || {};
     const _crWins = _cr.wins ?? 0;
@@ -271,20 +316,22 @@ function safe(value, formatter) {
     const _crRecord = `${_crWins}-${_crLosses} ${_crPct}`.trim();
     const _metaTeamPart = _titleTeam ? `, ${_titleTeam}` : "";
     const _metaGenderPart = gender === "girls" ? "Kentucky girls high school wrestling" : "Kentucky high school wrestling";
-    setMetaDescription(`${data.canonical_name} career record ${_crRecord}, ${_metaGenderPart}${_metaTeamPart}. Full match history, stats, and season breakdowns on KentuckyMat.`);
+    setMetaDescription(`${_careerName} career record ${_crRecord}, ${_metaGenderPart}${_metaTeamPart}. Full match history, stats, and season breakdowns on KentuckyMat.`);
     setCanonicalURL(window.location.href);
 
     const taglineEl = document.getElementById("wrestler-tagline");
     taglineEl.innerHTML = "";
     if (mostRecent) {
-      // Rank pill — most important secondary info, visually dominant
-      if (mostRecent.current_rank != null) {
-        const rankPill = document.createElement("span");
-        rankPill.className = "career-header-rank-pill";
-        rankPill.textContent = `#${mostRecent.current_rank}`;
-        taglineEl.appendChild(rankPill);
-        taglineEl.appendChild(document.createTextNode(" "));
-      }
+      // Rank pill — most important secondary info, visually dominant. Filled
+      // in once known (the preseason rank needs one fetch); the slot keeps it first.
+      const pillSlot = document.createElement("span");
+      taglineEl.appendChild(pillSlot);
+      buildCareerRankPill(gender, mostRecent).then(pill => {
+        if (pill) {
+          pillSlot.appendChild(pill);
+          pillSlot.appendChild(document.createTextNode(" "));
+        }
+      });
       // Weight · Team on same line, muted
       const infoSpan = document.createElement("span");
       infoSpan.className = "career-header-info";
@@ -305,7 +352,7 @@ function safe(value, formatter) {
       compareLink.className = "career-compare-link";
       compareLink.href = buildPageURL("compare.html", gender, { a: data.career_id });
       compareLink.textContent = "Compare ⇄";
-      compareLink.title = `Compare ${data.canonical_name || "this wrestler"} with another wrestler`;
+      compareLink.title = `Compare ${_careerName || "this wrestler"} with another wrestler`;
       taglineEl.appendChild(document.createTextNode(" "));
       taglineEl.appendChild(compareLink);
     }
@@ -689,10 +736,10 @@ function safe(value, formatter) {
           a.href = match.opponent_career_id
             ? buildPageURL("wrestler.html", gender, { career_id: match.opponent_career_id })
             : buildPageURL("wrestler.html", gender, { id: match.opponent_id, season: match.season });
-          a.textContent = safe(match.opponent_name || "Unknown");
+          a.textContent = safe(displayName(match.opponent_name) || "Unknown");
           oppTd.appendChild(a);
         } else {
-          oppTd.textContent = safe(match.opponent_name || "Unknown");
+          oppTd.textContent = safe(displayName(match.opponent_name) || "Unknown");
         }
         tr.appendChild(oppTd);
 
@@ -781,10 +828,10 @@ function safe(value, formatter) {
           a.href = match.opponent_career_id
             ? buildPageURL("wrestler.html", gender, { career_id: match.opponent_career_id })
             : buildPageURL("wrestler.html", gender, { id: match.opponent_id, season: match.season });
-          a.textContent = safe(match.opponent_name || "Unknown");
+          a.textContent = safe(displayName(match.opponent_name) || "Unknown");
           nameSpan.appendChild(a);
         } else {
-          nameSpan.textContent = safe(match.opponent_name || "Unknown");
+          nameSpan.textContent = safe(displayName(match.opponent_name) || "Unknown");
         }
         line1.appendChild(nameSpan);
 
@@ -881,24 +928,27 @@ function safe(value, formatter) {
     const isHS = isHSSite();
     console.log("[RENDER] isHS =", isHS, "HS_CONFIG =", typeof HS_CONFIG);
     
-    document.getElementById("wrestler-name").textContent = safe(data.name);
+    const _seasonName = displayName(data.name);
+    document.getElementById("wrestler-name").textContent = safe(_seasonName);
     const _wsGender = getGenderFromURL();
     const _wsGenderLabel = _wsGender === "girls" ? "Kentucky Girls High School Wrestling" : "Kentucky High School Wrestling";
     const _wsTeam = safe(data.team);
     document.title = _wsTeam
-      ? `${safe(data.name)} | ${_wsGenderLabel} | ${_wsTeam} | KentuckyMat`
-      : `${safe(data.name)} | ${_wsGenderLabel} | KentuckyMat`;
+      ? `${safe(_seasonName)} | ${_wsGenderLabel} | ${_wsTeam} | KentuckyMat`
+      : `${safe(_seasonName)} | ${_wsGenderLabel} | KentuckyMat`;
     sendPageView();
     const _wsMetaGender = _wsGender === "girls" ? "Kentucky girls high school wrestling" : "Kentucky high school wrestling";
     const _wsTeamPart = _wsTeam ? `, ${_wsTeam}` : "";
-    setMetaDescription(`${safe(data.name)}, ${_wsMetaGender}${_wsTeamPart}. Full match history, stats, and season breakdowns on KentuckyMat.`);
+    setMetaDescription(`${safe(_seasonName)}, ${_wsMetaGender}${_wsTeamPart}. Full match history, stats, and season breakdowns on KentuckyMat.`);
     setCanonicalURL(window.location.href);
 
     // Wrestler tagline with rank badge
     const taglineEl = document.getElementById("wrestler-tagline");
     taglineEl.innerHTML = "";
     if (data.current_rank) {
-      taglineEl.appendChild(createRankBadge(data.current_rank));
+      const badge = createRankBadge(data.current_rank);
+      if (data.year) badge.textContent += ` · ${data.year}`;
+      taglineEl.appendChild(badge);
       taglineEl.appendChild(document.createTextNode(` at ${safe(data.weight_class)} lbs`));
     } else {
       taglineEl.textContent = `${safe(data.weight_class)} lbs`;
@@ -1708,14 +1758,14 @@ function safe(value, formatter) {
     if (ob.win_over_highest_rank) {
       const w = ob.win_over_highest_rank;
       lines.push(
-        `Best Win: #${safe(w.opponent_rank)} ${safe(w.opponent_name)} (${safe(w.method)})`
+        `Best Win: #${safe(w.opponent_rank)} ${safe(displayName(w.opponent_name))} (${safe(w.method)})`
       );
     }
   
     if (ob.worst_loss) {
       const l = ob.worst_loss;
       lines.push(
-        `Worst Loss: #${safe(l.opponent_rank)} ${safe(l.opponent_name)} (${safe(l.method)})`
+        `Worst Loss: #${safe(l.opponent_rank)} ${safe(displayName(l.opponent_name))} (${safe(l.method)})`
       );
     }
   
@@ -2256,7 +2306,7 @@ function safe(value, formatter) {
       let displayOpponent, displayOpponentTeam, displayOpponentRank, displayResult, displayMethod, displayMVImpact;
       
       // Use match data directly, but override method to "FF" if it's a forfeit
-      displayOpponent = match.opponent_name || "Unknown";
+      displayOpponent = displayName(match.opponent_name) || "Unknown";
       displayOpponentTeam = match.opponent_team || "Unknown";
       displayOpponentRank = match.opponent_rank;
       displayResult = match.result; // Preserve W/L from match data

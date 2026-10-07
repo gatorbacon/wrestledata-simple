@@ -14,8 +14,11 @@
   const GRADE_LABELS = ['Fr', 'So', 'Jr', 'Sr'];
 
   let recruitingData = null;
-  let currentClass = '2026';
+  // Classes, phase and seasons come from recruiting.json (build_recruiting_data.py
+  // follows hs_config.js siteSeason); the first current class opens by default.
+  let currentClass = null;
   let showAll = false;
+  let currentLabels = GRADE_LABELS;
 
   // ---- Init ----
 
@@ -44,11 +47,28 @@
   document.addEventListener('DOMContentLoaded', () => {
     applyLayout();
     window.addEventListener('resize', applyLayout);
-    setupTabs();
+    setupShowMore();
     loadData();
   });
 
-  function setupTabs() {
+  function buildTabs() {
+    const tabs = document.getElementById('class-tabs');
+    tabs.innerHTML = '';
+    const order = recruitingData.class_order || Object.keys(recruitingData.classes).sort();
+    const graduated = recruitingData.graduated_class;
+    const all = graduated && recruitingData.classes[graduated] ? order.concat([graduated]) : order;
+    const requested = params.get('class');
+    currentClass = all.includes(requested) ? requested : order[0];
+    all.forEach(cls => {
+      const btn = document.createElement('button');
+      btn.className = 'class-tab' + (cls === currentClass ? ' active' : '');
+      btn.dataset.class = cls;
+      const isGrad = cls === graduated;
+      btn.innerHTML = `<span class="tab-label-full">Class of ${cls}${isGrad ? ' · Graduated' : ''}</span>` +
+        `<span class="tab-label-short">${cls}${isGrad ? ' Grad' : ''}</span>`;
+      tabs.appendChild(btn);
+    });
+    applyLayout();
     document.querySelectorAll('.class-tab').forEach(btn => {
       btn.addEventListener('click', () => {
         document.querySelectorAll('.class-tab').forEach(b => b.classList.remove('active'));
@@ -58,7 +78,9 @@
         if (recruitingData) renderTable();
       });
     });
+  }
 
+  function setupShowMore() {
     document.getElementById('show-more-btn').addEventListener('click', () => {
       showAll = true;
       document.getElementById('show-more-btn').style.display = 'none';
@@ -71,6 +93,7 @@
       const res = await fetch(DATA_URL);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       recruitingData = await res.json();
+      buildTabs();
       renderTable();
     } catch (e) {
       document.getElementById('recruiting-tbody').innerHTML =
@@ -81,8 +104,32 @@
 
   // ---- Render ----
 
+  // Grade columns for the current class: "8th" only when someone in it placed as an 8th grader
+  function gradeLabelsFor(entries) {
+    const has8th = entries.some(e => e.placements && e.placements['8th']);
+    return has8th ? ['8th'].concat(GRADE_LABELS) : GRADE_LABELS;
+  }
+
+  // Rank column: preseason rank for current classes, last season's rank for the graduated class
+  function rankLabel() {
+    if (currentClass === recruitingData.graduated_class) return `${recruitingData.stats_season} Rank`;
+    if (recruitingData.phase === 'preseason') return `${recruitingData.site_season} Pre. Rank`;
+    return 'Rank';
+  }
+
+  function renderHead(labels) {
+    const row = document.getElementById('recruiting-head-row');
+    if (!row) return;
+    row.innerHTML = `<th class="row-num" style="text-align:right;">#</th>
+      <th>Name</th><th>Weight</th><th class="rank-col">${rankLabel()}</th><th>School</th>
+      ${labels.map(l => `<th class="grade-col">${l}</th>`).join('')}
+      <th>Committed To</th>`;
+  }
+
   function renderTable() {
     const allEntries = (recruitingData.classes[currentClass] || []);
+    currentLabels = gradeLabelsFor(allEntries);
+    renderHead(currentLabels);
     const ranked = allEntries.slice(0, MAX_SHOW);
     const bonusCommitted = allEntries.slice(MAX_SHOW); // committed-only entries appended by build script
     const visible = showAll ? ranked : ranked.slice(0, DEFAULT_SHOW);
@@ -153,7 +200,7 @@
       ? `#${entry.rank}`
       : `<span style="color:var(--muted)">—</span>`;
 
-    const gradesCells = GRADE_LABELS.map(label => {
+    const gradesCells = currentLabels.map(label => {
       const place = entry.placements ? entry.placements[label] : null;
       return `<td class="grade-col">${formatPlace(place)}</td>`;
     }).join('');
@@ -164,7 +211,7 @@
 
     return `
       <td class="row-num">${num !== null ? num : ''}</td>
-      <td><a href="${nameHref}">${escapeHtml(entry.name)}</a></td>
+      <td><a href="${nameHref}">${escapeHtml(displayName(entry.name))}</a></td>
       <td>${entry.weight || '—'}</td>
       <td class="rank-col">${rankCell}</td>
       <td><a href="${teamHref}">${escapeHtml(entry.team || '—')}</a></td>
@@ -176,9 +223,12 @@
   function buildCard(entry, num) {
     const nameHref = `/wrestler.html?career_id=${encodeURIComponent(entry.career_id)}&gender=${GENDER}`;
     const teamHref = `/team.html?team=${encodeURIComponent(entry.team_slug)}&gender=${GENDER}`;
-    const rankStr = entry.rank ? `#${entry.rank}` : '—';
+    const rankStr = !entry.rank ? '—'
+      : currentClass === recruitingData.graduated_class ? `#${entry.rank} · ${recruitingData.stats_season}`
+      : recruitingData.phase === 'preseason' ? `#${entry.rank} Pre.`
+      : `#${entry.rank}`;
 
-    const medalCells = GRADE_LABELS.map(label => {
+    const medalCells = currentLabels.map(label => {
       const place = entry.placements ? entry.placements[label] : null;
       return `<div class="recruit-card-medal-cell">
         <span class="recruit-card-medal-label">${label}</span>
@@ -194,7 +244,7 @@
       <div class="recruit-card-left">
         <div class="recruit-card-top">
           <span class="recruit-card-num">${num !== null ? num : ''}</span>
-          <a href="${nameHref}" class="recruit-card-name">${escapeHtml(entry.name)}</a>
+          <a href="${nameHref}" class="recruit-card-name">${escapeHtml(displayName(entry.name))}</a>
           <span class="recruit-card-rank">${rankStr}</span>
         </div>
         <div class="recruit-card-meta">

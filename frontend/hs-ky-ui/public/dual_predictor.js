@@ -15,7 +15,20 @@ let fuse = null;
 // Initialize
 // ========================================
 
+// Preseason (hs_config.js): the predictor is off until real 2027 lineups exist
+// (TJ, 2026-10-07). The page shows a note instead of the controls.
+function showPreseasonNote() {
+  const section = document.querySelector('.page-container > section.section');
+  if (!section) return;
+  section.innerHTML = '';
+  section.appendChild(createComingSoonBlock());
+}
+
 async function init() {
+  if (isPreseason()) {
+    showPreseasonNote();
+    return;
+  }
   currentGender = getGenderFromURL();
   
   // Setup gender toggle
@@ -670,7 +683,7 @@ function createWrestlerSelect(weight, wrestlers, team, onChange) {
       const rankText = rank ? `#${rank}` : 'Unranked';
       
       // Add asterisk and grey out if unavailable
-      let nameText = wrestler.name;
+      let nameText = displayName(wrestler.name);
       if (isUnavailable) {
         nameText += ' *';
         option.style.color = '#999';
@@ -724,7 +737,7 @@ function createWrestlerSelect(weight, wrestlers, team, onChange) {
         const rankText = rank ? `#${rank} @ ${wWeight}` : `Unranked @ ${wWeight}`;
         
         // Add asterisk and grey out if unavailable
-        let nameText = wrestler.name;
+        let nameText = displayName(wrestler.name);
         if (isUnavailable) {
           nameText += ' *';
           option.style.color = '#999';

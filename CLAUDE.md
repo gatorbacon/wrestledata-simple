@@ -351,7 +351,8 @@ python scripts/recruiting/manage_commitments.py --gender girls
 | `scripts/rankings/calculate_elo_ratings.py` | ELO hybrid ranks for dual predictions |
 | `scripts/rankings/build_wrestler_profiles.py` | Builds wrestler JSON profiles for frontend |
 | `scripts/rankings/build_career_profiles.py` | Builds enriched career profiles for frontend |
-| `scripts/rankings/create_rankings_release.py` | Official weekly drop (archive + PDF + JPG) |
+| `scripts/rankings/create_rankings_release.py` | Official weekly drop (archive + PDF + JPG). `--preseason` = the preseason drop (order from `mt/preseason_{season}/`, last season's records, grades +1, no movement/team/dual archives). Every `--archive` run writes `data/rankings/{gender}/seasons.json` (the rankings page's "Past seasons" links). Drops labeled "Preseason" are never used as the previous drop |
+| `scripts/teams/build_preseason_team_rosters.py` | Preseason only: each team's returning wrestlers (`data/teams/{gender}/{season}/{slug}.json`, `schema_version: preseason-1`) for the preseason team page. Overwritten by `build_team_profiles.py` once the season starts |
 | `scripts/teams/build_team_profiles.py` | Builds team JSON profiles for frontend |
 | `scripts/team_metrics/build_team_metrics.py` | Computes team strength metrics |
 | `scripts/bonus/compute_all_top33_bonus.py` | Adds bonus data to wrestler profiles |
@@ -406,6 +407,8 @@ All pages share `hs_config.js` which is loaded first and provides:
 - Boys and girls are compared separately (career IDs overlap between the two dirs — always key on `gender + career_id`). A wrestler can have both a boys and a girls career (e.g. a girl wrestling on the boys team).
 - **MatSavant port (done 2026-09-28):** `frontend/wrestledata-ui/public/tools/compare.html` (+ `tools/compare.js`, linked from the Tools page). `compare_core.js` is copied unchanged to `frontend/wrestledata-ui/public/compare_core.js` — two separate publish dirs, so it's a copy; keep them in sync. NCAA profiles still ship `opponent_career_id = null` (`build_wrestler_profiles.py` passes `career_lookup=None`), so instead the page loads `data/careers/career_seasons.json` (built by `scripts/reports/build_career_seasons.py` from `data/careers/ncaa_men/`) and fills it in client-side, and uses the same file to assemble a career from the per-season profiles. Details in `docs/matsavant.md` → "Compare Wrestlers Tool".
 
+**Wrestler name display (TJ, 2026-10-07):** names stay exactly as scraped in all data; they're cleaned only when shown. `displayName()` (global, defined at the top of `header.js`, which every page loads first) turns a name typed ALL CAPS or all lowercase into capitalized words ("NARAE COMPTON" → "Narae Compton", also after `-`/`'`/`(`, II/III/IV kept uppercase) and leaves any mixed-case name alone ("McKenzie", "JJ Smith"). Use it wherever a page shows a wrestler or opponent name (incl. titles/meta). The graphics/PDF use the same rule: `display_name()` in `create_rankings_release.py`. (≈400 of ~18.5k career names are all-caps/all-lowercase.)
+
 **SEO title templates:**
 - Boys career: `{Name} | Kentucky High School Wrestling | {Team} | KentuckyMat`
 - Girls career: `{Name} | Kentucky Girls High School Wrestling | {Team} | KentuckyMat`
@@ -438,7 +441,7 @@ All pages share `hs_config.js` which is loaded first and provides:
 
 5. **`build_starter_rankings.py` must run before `build_wrestler_profiles.py`**: Profiles use starter rankings for opponent rank determination.
 
-6. **`defaultSeason` in `hs_config.js`**: Must be updated to the current season each year.
+6. **The yearly season switch is `siteSeason` in `hs_config.js`** (since 2026-10-07): `{season: 2027, phase: 'preseason'}` from the preseason rankings drop until the first in-season ranking, then `phase: 'season'` through the summer, then `{season: 2028, phase: 'preseason'}`. `getSiteSeason()` / `getStatsSeason()` (last season while in preseason) / `isPreseason()`; `HS_CONFIG.defaultSeason` is derived from it, and `build_recruiting_data.py` / `manage_commitments.py` read it too. What every page does in each phase, and the checklist for flipping the phase: `docs/kentuckymat_preseason_rankings.md` ("Site 'preseason state'", "Switching to the in-season phase").
 
 7. **Name changes break career linking**: If a wrestler's name changed between seasons, two separate career files will be created. Use `merge_careers.py` to fix — always keep the career ID the current season profile already points to.
 

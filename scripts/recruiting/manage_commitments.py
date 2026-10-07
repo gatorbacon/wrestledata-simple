@@ -17,7 +17,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
-from scripts.recruiting.build_recruiting_data import build as build_recruiting
+from scripts.recruiting.build_recruiting_data import build as build_recruiting, read_site_season
 
 REPO_ROOT = Path(__file__).parent.parent.parent
 
@@ -25,7 +25,9 @@ CAREERS_DIR: Path = None
 COMMITMENTS_FILE: Path = None
 COLLEGES_FILE: Path = None
 
-CURRENT_SEASON = 2026
+# Season with match data (hs_config.js siteSeason: last season during the preseason)
+_site_season, _phase = read_site_season()
+CURRENT_SEASON = _site_season - 1 if _phase == "preseason" else _site_season
 
 
 def load_json(path: Path, default):

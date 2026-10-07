@@ -16,8 +16,6 @@
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="/styles.css" />
-  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-  <script src="/search_index.js"></script>
   <script src="/js/analytics.js"></script>
   <style>
     /* Class tabs */
@@ -283,24 +281,8 @@
       <!-- Class tabs — desktop shows full label, mobile shows year only -->
       <div class="class-tabs-wrapper">
         <span class="class-tabs-prefix">Class of:</span>
-        <div class="class-tabs" id="class-tabs">
-          <button class="class-tab active" data-class="2026">
-            <span class="tab-label-full">Class of 2026</span>
-            <span class="tab-label-short">2026</span>
-          </button>
-          <button class="class-tab" data-class="2027">
-            <span class="tab-label-full">Class of 2027</span>
-            <span class="tab-label-short">2027</span>
-          </button>
-          <button class="class-tab" data-class="2028">
-            <span class="tab-label-full">Class of 2028</span>
-            <span class="tab-label-short">2028</span>
-          </button>
-          <button class="class-tab" data-class="2029">
-            <span class="tab-label-full">Class of 2029</span>
-            <span class="tab-label-short">2029</span>
-          </button>
-        </div>
+        <!-- Tabs built by recruiting.js from recruiting.json (class_order + graduated_class) -->
+        <div class="class-tabs" id="class-tabs"></div>
       </div>
 
       <div class="class-summary" id="class-summary"></div>
@@ -309,7 +291,7 @@
       <div class="table-wrapper recruiting-desktop">
         <table id="recruiting-table">
           <thead>
-            <tr>
+            <tr id="recruiting-head-row">
               <th class="row-num" style="text-align:right;">#</th>
               <th>Name</th>
               <th>Weight</th>

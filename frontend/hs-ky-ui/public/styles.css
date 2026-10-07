@@ -6153,6 +6153,15 @@ table a:hover {
   justify-content: center;
   flex-wrap: wrap;
 }
+.home-rank-phase {
+  margin: 0.6em 0 0;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
 .home-rank-btn {
   flex: 1 1 200px;
   max-width: 280px;
@@ -6463,6 +6472,13 @@ table a:hover {
   border-radius: 6px;
   letter-spacing: 0.01em;
   vertical-align: middle;
+}
+
+/* Season label inside the rank pill ("#3 · 2027 Preseason") */
+.career-header-rank-pill .rank-pill-season {
+  font-weight: 500;
+  font-size: 0.8em;
+  opacity: 0.85;
 }
 
 /* ============================================
@@ -6864,6 +6880,25 @@ table a:hover {
   font-weight: 500;
 }
 
+/* Rankings page: preseason note, past-season banner, "Past seasons" links */
+.rankings-context {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  color: var(--text-secondary);
+}
+.rankings-context .rankings-context-line + .rankings-context-line {
+  margin-top: 0.25em;
+}
+.rankings-context .past-season-banner {
+  display: inline-block;
+  padding: 0.3em 0.7em;
+  border-radius: 4px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  color: var(--text-main);
+  font-weight: 600;
+}
+
 /* =====================================================
    RANKINGS TABLE — MOBILE COMPACT SINGLE-LINE
    Matches the PDF layout: rank · movement · name · team · region
@@ -6976,3 +7011,96 @@ table a:hover {
   }
 }
 /* END MOBILE COMPACT */
+
+/* =====================================================
+   PRESEASON (hs_config.js siteSeason phase 'preseason')
+   ===================================================== */
+.preseason-note-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  padding: var(--pad-lg, 1.25em);
+  height: 100%;
+  box-sizing: border-box;
+}
+.preseason-note-box p {
+  margin: 0.5em 0 0;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+.returning-intro {
+  margin: -0.25em 0 0.75em;
+  color: var(--text-secondary);
+  font-size: 0.9em;
+}
+.returning-roster-table {
+  width: 100%;
+}
+.returning-roster-table th,
+.returning-roster-table td {
+  white-space: nowrap;
+}
+.returning-roster-table .text-center {
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .returning-roster-table {
+    font-size: 0.8em;
+  }
+  .returning-roster-table th,
+  .returning-roster-table td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+  }
+  .returning-roster-table td:nth-child(2) {
+    white-space: normal;
+  }
+}
+
+.career-active-toggle {
+  align-items: center;
+  gap: 0.4em;
+  margin: 0 0 0.5em 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-main);
+  cursor: pointer;
+}
+
+/* Team page: stack the summary boxes on phones (the inline 1fr 1fr grid
+   clipped the "Team Overview" box off the right edge) */
+@media (max-width: 768px) {
+  #top-summary-row {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* "Coming Soon" (preseason features waiting for real lineups) */
+.coming-soon-block {
+  padding: 1.5em 0 0.5em;
+}
+.coming-soon-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 0.4em;
+}
+.coming-soon-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--text-main);
+}
+.coming-soon-sub {
+  margin-top: 0.4em;
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+}
+.coming-soon-link {
+  margin-top: 1em;
+  font-size: 1rem;
+}
+.preseason-note-box.coming-soon-block {
+  padding: var(--pad-lg, 1.25em);
+}

@@ -159,7 +159,7 @@ async function loadTeamTournamentRankings(gender, season, dropId) {
   return null;
 }
 
-function renderDropSelector(drops, currentDrop, gender, season) {
+function renderDropSelector(drops, currentDrop, gender, season, latestId) {
   const selectorContainer = document.getElementById('drop-selector-container');
   if (!selectorContainer) return;
   
@@ -178,7 +178,9 @@ function renderDropSelector(drops, currentDrop, gender, season) {
     const option = document.createElement('option');
     option.value = drop.id;
     // Use id field for display to avoid timezone conversion issues
-    option.textContent = formatDateFromId(drop.id);
+    option.textContent = (String(season) !== getSiteSeason() && drop.id === latestId)
+      ? `Final (${formatDateFromId(drop.id)})`
+      : formatDateFromId(drop.id);
     if (drop.id === currentDrop) {
       option.selected = true;
     }
@@ -203,12 +205,33 @@ function formatDelta(delta) {
 async function loadLeaderboard() {
   // Get context from URL
   currentGender = getGenderFromURL();
-  const season = getSeasonFromURL();
+  // Preseason: no 2027 team projection until real lineups exist (TJ, 2026-10-07);
+  // the page shows last season's final team standings under a note. ?season=YYYY
+  // opens a past season with its full drop list.
+  const explicitSeason = getQueryParam('season');
+  const preseasonView = isPreseason() && !explicitSeason;
+  const season = explicitSeason || getStatsSeason();
+  const isPast = !!explicitSeason && explicitSeason !== getSiteSeason();
   currentWeights = getWeightsForGender(currentGender);
-  const dropIdParam = getQueryParam('drop');
+  const dropIdParam = preseasonView ? null : getQueryParam('drop');
+
+  if (preseasonView) {
+    renderPreseasonStandingsNote(document.getElementById('xtp-season-context'), {
+      page: '/leaderboards/xtp/teams.html', gender: currentGender, what: 'projected team standings',
+      hideSelectors: ['.page-container > section.section', '.header-explainer', '#drop-selector-container']
+    });
+    return;
+  }
+
+  renderSeasonContext(document.getElementById('xtp-season-context'), {
+    page: '/leaderboards/xtp/teams.html', gender: currentGender, season, what: 'team standings',
+    isPast
+  });
   
   // Load archive index to determine which drop to use
   const index = await loadTeamRankingsArchiveIndex(currentGender, season);
+  // The preseason drop has no team standings
+  if (index) index.drops = (index.drops || []).filter(d => d.label !== 'Preseason');
   const dropId = dropIdParam || (index?.latest) || null;
   currentDrop = dropId;
   
@@ -266,12 +289,15 @@ async function loadLeaderboard() {
     if (seasonEl) {
       // Use dropId for display to avoid timezone conversion issues
       const publishedDate = formatDateFromId(dropId);
-      seasonEl.textContent = `Published ${publishedDate} — ${currentGender.charAt(0).toUpperCase() + currentGender.slice(1)}`;
+      const genderLabel = currentGender.charAt(0).toUpperCase() + currentGender.slice(1);
+      seasonEl.textContent = preseasonView
+        ? `${season} Final — ${genderLabel}`
+        : `Published ${publishedDate} — ${genderLabel}`;
     }
     
-    // Render drop selector
-    if (index) {
-      renderDropSelector(index.drops, dropId, currentGender, season);
+    // Render drop selector (preseason: just the final standings, older drops via "Past seasons")
+    if (index && !preseasonView) {
+      renderDropSelector(index.drops, dropId, currentGender, season, index.latest);
     }
   }
   
@@ -486,7 +512,7 @@ function renderLeaderboard() {
           const wrestlerLink = document.createElement("a");
           const wrestlerURL = buildPageURL('wrestler.html', currentGender, { id: weightData.wrestler_id });
           wrestlerLink.href = wrestlerURL.startsWith('/') ? wrestlerURL : `/${wrestlerURL}`;
-          wrestlerLink.textContent = weightData.name || "Unknown";
+          wrestlerLink.textContent = displayName(weightData.name) || "Unknown";
           wrestlerTd.appendChild(wrestlerLink);
           row.appendChild(wrestlerTd);
           

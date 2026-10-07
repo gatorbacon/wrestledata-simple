@@ -26,6 +26,15 @@ Usage:
     
     # Generate just PDF and JPG
     python scripts/rankings/create_rankings_release.py -season 2026 -gender boys --pdf --jpg
+
+    # Preseason drop (docs/kentuckymat_preseason_rankings.md): order from
+    # mt/preseason_{season}/rankings_data/, records/grades/profiles from the season
+    # before (grade moved up a year), no movement, no team/dual archives.
+    python scripts/rankings/create_rankings_release.py -season 2027 -gender boys -drop-id 2026-10-07 --preseason --archive --pdf --jpg
+
+Every --archive run also rewrites {archive-base}/{gender}/seasons.json (the
+seasons that have published drops), which the rankings page uses for its
+"Past seasons" links.
 """
 
 import argparse
@@ -74,6 +83,47 @@ RANKING_POINTS = {
 def get_points_for_rank(rank: int) -> float:
     """Get points for a given ranking."""
     return RANKING_POINTS.get(rank, 0.0)
+
+
+# Preseason mode (set by main() from --preseason). The drop belongs to `season`,
+# but its order comes from the preseason staging tree and every record, grade
+# and profile comes from the season before (no matches exist yet).
+PRESEASON = False
+PRESEASON_SEASON: Optional[int] = None
+
+GRADE_NEXT_YEAR = {"7th": "8th", "8th": "Fr.", "Fr.": "So.", "So.": "Jr.", "Jr.": "Sr."}
+
+
+def rankings_source_dir(gender: str, season: int) -> Path:
+    """Directory holding rankings_{w}.json and placement_notes.json for this release."""
+    if PRESEASON:
+        return Path(f"mt/preseason_{season}/rankings_data/hs_ky_{gender}") / str(season)
+    return Path(f"mt/rankings_data/hs_ky_{gender}") / str(season)
+
+
+def stats_season(season: int) -> int:
+    """Season whose profiles, records and grades describe the wrestlers in this release."""
+    return season - 1 if PRESEASON else season
+
+
+def write_seasons_manifest(archive_base: Path, gender: str) -> None:
+    """Write {archive_base}/{gender}/seasons.json: every season with published drops, newest first."""
+    gender_dir = archive_base / gender
+    seasons = []
+    for index_file in sorted(gender_dir.glob("*/index.json")):
+        try:
+            with index_file.open("r", encoding="utf-8") as f:
+                index_data = json.load(f)
+        except Exception:
+            continue
+        if not index_data.get("drops"):
+            continue
+        seasons.append({"season": int(index_file.parent.name), "latest": index_data.get("latest")})
+    seasons.sort(key=lambda x: x["season"], reverse=True)
+    out = gender_dir / "seasons.json"
+    with out.open("w", encoding="utf-8") as f:
+        json.dump({"seasons": seasons}, f, indent=2)
+    print(f"✓ Updated {out} ({', '.join(str(s['season']) for s in seasons)})")
 
 
 def load_rankings(rankings_path: Path) -> Dict:
@@ -226,7 +276,7 @@ def load_placement_notes(season: int, gender: str) -> Dict[str, str]:
     Returns:
         Dictionary mapping wrestler_id -> placement note (e.g., "1", "3", "BR", "Q")
     """
-    notes_path = Path("mt/rankings_data") / f"hs_ky_{gender}" / str(season) / "placement_notes.json"
+    notes_path = rankings_source_dir(gender, season) / "placement_notes.json"
     
     if not notes_path.exists():
         return {}
@@ -284,6 +334,8 @@ def load_grade_lookup(season: int, gender: str) -> Dict[str, str]:
         Dictionary mapping wrestler_id -> grade display (Sr., Jr., So., Fr., 8th, 7th)
     """
     grade_lookup: Dict[str, str] = {}
+    preseason_target = season if PRESEASON else None
+    season = stats_season(season)
     
     # Primary: team profiles (works for boys; girls often have grade: null)
     teams_dir = Path(f"frontend/hs-ky-ui/public/data/teams/{gender}") / str(season)
@@ -327,6 +379,11 @@ def load_grade_lookup(season: int, gender: str) -> Dict[str, str]:
                                 grade_lookup[wid] = disp
             except Exception:
                 continue
+    
+    if preseason_target is not None:
+        # Next year's grade; a senior would graduate out (none should be ranked).
+        grade_lookup = {wid: GRADE_NEXT_YEAR.get(g, "") for wid, g in grade_lookup.items()}
+        print(f"Preseason {preseason_target}: grades moved up a year from {season}")
     
     return grade_lookup
 
@@ -538,7 +595,7 @@ def enrich_rankings_with_region_data(
         team = entry.get('team', '')
         
         # Load wrestler profile for record and bonus_pct
-        profile = load_wrestler_profile(wid, season, gender)
+        profile = load_wrestler_profile(wid, stats_season(season), gender)
         
         # Use record only from wrestler profile (deduplicated, correct). Do NOT fall back to
         # the ranking entry's record — that can come from matrix/ELO and may count matches twice.
@@ -732,7 +789,9 @@ def fill_svg_template(
     # Update date elements
     # Girls template: format mm.dd.yyyy
     # Boys template: format yyyy.mm.dd
-    if gender == 'girls':
+    if PRESEASON:
+        date_str = f"PRE. {PRESEASON_SEASON}"
+    elif gender == 'girls':
         date_str = datetime.now().strftime("%m.%d.%Y")
     elif gender == 'boys':
         date_str = datetime.now().strftime("%Y.%m.%d")
@@ -764,7 +823,7 @@ def fill_svg_template(
             is_new = entry.get('is_new', False)
             region = get_region_for_team(team, region_mapping)
             region_place = region_places1.get(wid, 'N/A')
-            grade = grade_info1.get(wid, '')
+            grade = grade_info1.get(wid) or entry.get('grade', '')
             
             # Format rank with movement indicator
             rank_display = format_rank_with_movement(rank, movement, is_new)
@@ -862,7 +921,7 @@ def fill_svg_template(
             is_new = entry.get('is_new', False)
             region = get_region_for_team(team, region_mapping)
             region_place = region_places2.get(wid, 'N/A')
-            grade = grade_info2.get(wid, '')
+            grade = grade_info2.get(wid) or entry.get('grade', '')
             
             # Format rank with movement indicator
             rank_display = format_rank_with_movement(rank, movement, is_new)
@@ -1051,7 +1110,7 @@ def get_weight_class_data(
         Tuple of (wrestlers, region_places, team_best_wrestler)
     """
     # Load rankings file
-    rankings_path = Path(f"mt/rankings_data/hs_ky_{gender}") / str(season) / f"rankings_{weight_class}.json"
+    rankings_path = rankings_source_dir(gender, season) / f"rankings_{weight_class}.json"
     
     if not rankings_path.exists():
         raise FileNotFoundError(f"Rankings file not found: {rankings_path}")
@@ -1129,6 +1188,23 @@ def truncate_text(text: str, max_length: int) -> str:
     return text
 
 
+def display_name(name: str) -> str:
+    """
+    Display form of a wrestler's name (TJ, 2026-10-07; same rule as displayName()
+    in frontend/hs-ky-ui/public/header.js): a name typed ALL CAPS or all lowercase
+    gets each word capitalized (also after a hyphen, apostrophe or parenthesis;
+    II/III/IV stay uppercase). A mixed-case name is assumed correct and left alone.
+    """
+    if not name:
+        return ""
+    name = name.strip()
+    letters = re.sub(r"[^A-Za-z]", "", name)
+    if not letters or (not letters.isupper() and not letters.islower()):
+        return name
+    out = normalize_name_for_svg(name)
+    return re.sub(r"\b(Ii|Iii|Iv)\b", lambda m: m.group(1).upper(), out)
+
+
 def normalize_name_for_svg(name: str) -> str:
     """
     Normalize name for SVG display: title case with proper handling of spaces, hyphens, apostrophes, and parentheses.
@@ -1183,8 +1259,8 @@ def truncate_name_for_svg(name: str, max_length: int = 20) -> str:
     if not name:
         return ""
     
-    # First normalize the name
-    normalized = normalize_name_for_svg(name)
+    # First normalize the name (ALL CAPS / all lowercase only; mixed case kept)
+    normalized = display_name(name)
     
     # Then truncate if needed
     if len(normalized) > max_length:
@@ -1216,7 +1292,7 @@ def build_rankings_table_data(
         wid = entry.get('wrestler_id', '')
         
         # Truncate long names/teams with ellipsis (only if max_len is reasonable)
-        name = truncate_text(name, name_max_len)
+        name = truncate_text(display_name(name), name_max_len)
         team = truncate_text(team, school_max_len)
         
         # Get region
@@ -1545,7 +1621,7 @@ def create_baseline_archive(
     grade_lookup = load_grade_lookup(season, gender)
     
     # Load ELO data for hybrid_rank per weight (for rankings page display)
-    elo_by_id = load_elo_by_id(season, gender)
+    elo_by_id = {} if PRESEASON else load_elo_by_id(season, gender)
     if elo_by_id:
         print(f"Loaded ELO data for {len(elo_by_id)} wrestlers (hybrid_rank in archive)")
     else:
@@ -1563,7 +1639,10 @@ def create_baseline_archive(
                 index_data = json.load(f)
             
             # Check if this drop already exists (updating existing)
-            existing_drops = [d for d in index_data.get("drops", []) if d.get("id") != drop_id]
+            # The preseason drop is never "previous": the first in-season drop is a
+            # fresh baseline with no movement arrows (TJ, 2026-10-06)
+            existing_drops = [d for d in index_data.get("drops", [])
+                              if d.get("id") != drop_id and d.get("label") != "Preseason"]
             
             if existing_drops:
                 # Not baseline - find most recent previous drop
@@ -1578,7 +1657,7 @@ def create_baseline_archive(
             print("Treating as baseline drop")
     
     # Setup source directory
-    source_dir = Path(f"mt/rankings_data/hs_ky_{gender}") / str(season)
+    source_dir = rankings_source_dir(gender, season)
     if not source_dir.exists():
         raise ValueError(f"Source directory not found: {source_dir}")
     
@@ -1639,6 +1718,7 @@ def create_baseline_archive(
             output_data = {
                 "season": season,
                 "weight": weight,
+                "record_season": stats_season(season),
                 "generated_at": datetime.now(timezone.utc).isoformat(),
                 "source": f"rankings_{weight}.json",
                 "wrestlers": enriched_rankings
@@ -1675,8 +1755,12 @@ def create_baseline_archive(
         "season": season,
         "gender": gender,
         "published_at": f"{drop_id}T00:00:00Z",
-        "baseline": is_baseline
+        "baseline": is_baseline,
+        "record_season": stats_season(season),
     }
+    if PRESEASON:
+        meta["phase"] = "preseason"
+        meta["label"] = "Preseason"
     
     meta_file = archive_dir / "meta.json"
     with meta_file.open("w", encoding="utf-8") as f:
@@ -1714,10 +1798,13 @@ def create_baseline_archive(
     # Add this drop to the registry if not already present
     drop_exists = any(d["id"] == drop_id for d in index_data["drops"])
     if not drop_exists:
-        index_data["drops"].append({
+        entry = {
             "id": drop_id,
             "published_at": f"{drop_id}T00:00:00Z"
-        })
+        }
+        if PRESEASON:
+            entry["label"] = "Preseason"
+        index_data["drops"].append(entry)
         # Sort drops by published_at (newest first)
         index_data["drops"].sort(key=lambda x: x["published_at"], reverse=True)
         index_data["latest"] = drop_id
@@ -2100,6 +2187,16 @@ def generate_pdf_report(
         
         story.append(PageBreak())
     
+    if PRESEASON:
+        # No team page in the preseason: lineups aren't set, so a team
+        # projection would mostly be guesswork (TJ, 2026-10-07).
+        if story and isinstance(story[-1], PageBreak):
+            story.pop()
+        print(f"\nGenerating PDF (preseason, no team page): {output_path}")
+        doc.build(story)
+        print(f"✓ PDF generated: {output_path}")
+        return
+    
     # Team report page
     team_title_style = ParagraphStyle(
         'TeamTitle',
@@ -2233,8 +2330,21 @@ def main():
         action="store_true",
         help="Proceed even if rankings files appear stale"
     )
+    parser.add_argument(
+        "--preseason",
+        action="store_true",
+        help="Preseason drop for -season: order from mt/preseason_{season}/rankings_data/, "
+             "records/grades from the season before, no movement, no team/dual archives"
+    )
     
     args = parser.parse_args()
+    
+    global PRESEASON, PRESEASON_SEASON
+    PRESEASON = args.preseason
+    PRESEASON_SEASON = args.season if args.preseason else None
+    if PRESEASON:
+        print(f"PRESEASON drop for {args.season}: order from {rankings_source_dir(args.gender, args.season)}, "
+              f"records/grades from {stats_season(args.season)}")
     
     # Validate arguments
     if args.archive and not args.drop_id:
@@ -2271,7 +2381,8 @@ def main():
                 index_data = json.load(f)
             
             # Find most recent drop (for JPG) or previous drop (for archive)
-            existing_drops = index_data.get("drops", [])
+            # Preseason drops are never "previous" (first in-season drop = fresh baseline)
+            existing_drops = [d for d in index_data.get("drops", []) if d.get("label") != "Preseason"]
             if existing_drops:
                 # Exclude current drop_id if provided (for both archive and JPG)
                 if args.drop_id:
@@ -2316,29 +2427,34 @@ def main():
             force=args.force
         )
         
-        # Generate team tournament rankings archive
-        print(f"\n{'='*60}")
-        print(f"Creating Team Tournament Rankings archive...")
-        print(f"{'='*60}")
-        generate_team_tournament_rankings(
-            season=args.season,
-            gender=args.gender,
-            drop_id=args.drop_id,
-            archive_base=archive_base,
-            previous_drop_id=previous_drop_id
-        )
+        if PRESEASON:
+            print("\nPreseason: skipping Team Tournament and Dual Rankings archives (no lineups yet)")
+        else:
+            # Generate team tournament rankings archive
+            print(f"\n{'='*60}")
+            print(f"Creating Team Tournament Rankings archive...")
+            print(f"{'='*60}")
+            generate_team_tournament_rankings(
+                season=args.season,
+                gender=args.gender,
+                drop_id=args.drop_id,
+                archive_base=archive_base,
+                previous_drop_id=previous_drop_id
+            )
+            
+            # Generate dual rankings archive
+            print(f"\n{'='*60}")
+            print(f"Creating Dual Rankings archive...")
+            print(f"{'='*60}")
+            generate_dual_rankings(
+                season=args.season,
+                gender=args.gender,
+                drop_id=args.drop_id,
+                archive_base=archive_base,
+                previous_drop_id=previous_drop_id
+            )
         
-        # Generate dual rankings archive
-        print(f"\n{'='*60}")
-        print(f"Creating Dual Rankings archive...")
-        print(f"{'='*60}")
-        generate_dual_rankings(
-            season=args.season,
-            gender=args.gender,
-            drop_id=args.drop_id,
-            archive_base=archive_base,
-            previous_drop_id=previous_drop_id
-        )
+        write_seasons_manifest(archive_base, args.gender)
     
     # Load weight class data (shared for PDF and JPG)
     all_weight_data = None
@@ -2401,7 +2517,8 @@ def main():
             print(f"{'='*60}")
             output_dir = Path(f"mt/graphics/{args.season}")
             output_dir.mkdir(parents=True, exist_ok=True)
-            output_path = output_dir / f"hs_rankings_{args.gender}_{args.season}.pdf"
+            suffix = "_preseason" if PRESEASON else ""
+            output_path = output_dir / f"hs_rankings_{args.gender}_{args.season}{suffix}.pdf"
             
             generate_pdf_report(
                 season=args.season,

@@ -2,8 +2,122 @@
 // Site-wide Header Component
 // ========================================
 
+// Display form of a wrestler's name (TJ, 2026-10-07). Names stay as scraped in
+// the data; a name typed ALL CAPS or all lowercase is shown with each word
+// capitalized ("NARAE COMPTON" / "sutton fuller" -> "Narae Compton" / "Sutton
+// Fuller", also after a hyphen or apostrophe: "o'brien-smith" -> "O'Brien-Smith";
+// suffixes II/III/IV stay uppercase). A name with mixed case is assumed to be
+// right and is left alone ("McKenzie", "JJ Smith"). Global: header.js loads first
+// on every page. scripts/rankings/create_rankings_release.py has the same rule
+// for the graphics/PDF (display_name()).
+function displayName(name) {
+  if (!name) return name;
+  const letters = String(name).replace(/[^A-Za-z]/g, '');
+  if (!letters || (letters !== letters.toUpperCase() && letters !== letters.toLowerCase())) return name;
+  return String(name).toLowerCase()
+    .replace(/(^|[\s\-'(])([a-z])/g, (m, before, c) => before + c.toUpperCase())
+    .replace(/\b(Ii|Iii|Iv)\b/g, s => s.toUpperCase());
+}
+
 (function() {
   'use strict';
+
+  // ---------- Search data, loaded in the background ----------
+  // Fuse.js and search_index.js (~6 MB, ~430 KB compressed) used to be
+  // <script> tags in every page's <head>, which held up the whole page on
+  // phones (2026-10-02 Lighthouse, slow 4G: ~5.5 s of an 8-11 s first paint).
+  // They now load after the page has finished loading, so the page shows up
+  // first and autocomplete is still ready by the time most people search.
+  // Pages that use the index for their own content (compare.html) still load
+  // it up front, and loadSearchData() then finds it already there.
+  const FUSE_SRC = 'https://cdn.jsdelivr.net/npm/fuse.js@6.6.2';
+  const SEARCH_INDEX_SRC = '/search_index.js';
+  let searchDataPromise = null;
+
+  function loadScript(src) {
+    return new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = src;
+      script.async = true;
+      script.onload = resolve;
+      script.onerror = () => {
+        script.remove();
+        reject(new Error('Failed to load ' + src));
+      };
+      document.head.appendChild(script);
+    });
+  }
+
+  function loadSearchData() {
+    if (!searchDataPromise) {
+      searchDataPromise = Promise.all([
+        typeof Fuse === 'undefined' ? loadScript(FUSE_SRC) : null,
+        Array.isArray(window.SEARCH_INDEX) ? null : loadScript(SEARCH_INDEX_SRC)
+      ]).catch((err) => {
+        searchDataPromise = null; // let the next hover/tap retry
+        throw err;
+      });
+    }
+    return searchDataPromise;
+  }
+
+  // Calls fn once the page has finished loading and the browser is idle.
+  function afterPageLoad(fn) {
+    const whenIdle = () => ('requestIdleCallback' in window)
+      ? requestIdleCallback(() => fn(), { timeout: 2000 })
+      : setTimeout(fn, 200);
+    if (document.readyState === 'complete') whenIdle();
+    else window.addEventListener('load', whenIdle, { once: true });
+  }
+
+  // Runs `setup` (builds the Fuse instances, attaches the real handlers) once
+  // the search data has loaded. Loading starts in the background after the
+  // page has loaded, or sooner on the first hover, touch or focus of any
+  // element in `triggers`; anything typed before it arrives shows
+  // "Loading search…" and is searched as soon as the data is there.
+  function initBackgroundSearch(searchInput, searchDropdown, triggers, setup) {
+    let ready = false;
+    let showingMessage = false;
+
+    function showMessage(text) {
+      searchDropdown.innerHTML = `<div class="search-result-item search-result-empty">${text}</div>`;
+      searchDropdown.style.display = 'block';
+      showingMessage = true;
+    }
+
+    function start() {
+      loadSearchData().then(() => {
+        if (ready) return;
+        ready = true;
+        setup();
+        if (document.activeElement === searchInput && searchInput.value.trim().length >= 2) {
+          searchInput.dispatchEvent(new Event('input'));
+        } else if (showingMessage) {
+          searchDropdown.style.display = 'none';
+        }
+      }).catch((err) => {
+        console.warn('Search unavailable:', err.message);
+        if (searchInput.value.trim().length >= 2) showMessage('Search is unavailable right now');
+      });
+    }
+
+    triggers.forEach((el) => {
+      ['pointerenter', 'touchstart', 'focus'].forEach((type) => {
+        el.addEventListener(type, start, { passive: true });
+      });
+    });
+    afterPageLoad(start);
+
+    searchInput.addEventListener('input', () => {
+      if (ready) return;
+      if (searchInput.value.trim().length >= 2) {
+        showMessage('Loading search…');
+      } else {
+        searchDropdown.style.display = 'none';
+      }
+      start();
+    });
+  }
 
   // Create header HTML structure
   function createHeaderHTML() {
@@ -397,8 +511,14 @@
       }
     });
     
-    // Initialize search functionality for mobile input
-    if (typeof Fuse !== 'undefined' && window.SEARCH_INDEX && Array.isArray(window.SEARCH_INDEX)) {
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeSearch();
+      }
+    });
+
+    // Initialize search functionality for mobile input (once the data loads)
+    initBackgroundSearch(searchInput, searchDropdown, [searchBtn, searchInput], () => {
       const fuse = new Fuse(window.SEARCH_INDEX, {
         keys: [
           { name: 'name', weight: 0.6 },
@@ -485,8 +605,8 @@
             const globalIdx = currentResults.indexOf(item);
             // Add female symbol if gender is 'girls'
             const nameDisplay = item.gender === 'girls' 
-              ? `${escapeHtml(item.name)} <span style="color: #ff69b4;">♀</span>`
-              : escapeHtml(item.name);
+              ? `${escapeHtml(displayName(item.name))} <span style="color: #ff69b4;">♀</span>`
+              : escapeHtml(displayName(item.name));
             html += `
               <div class="search-result" data-url="${item.url}" data-index="${globalIdx}">
                 <div class="search-name">${nameDisplay}</div>
@@ -504,7 +624,7 @@
           teams.forEach((item) => {
             const globalIdx = currentResults.indexOf(item);
             // Add gender symbol: blue ♂ for boys, pink ♀ for girls
-            let nameDisplay = escapeHtml(item.name);
+            let nameDisplay = escapeHtml(displayName(item.name));
             if (item.gender === 'boys') {
               nameDisplay += ' <span style="color: #0066cc;">♂</span>';
             } else if (item.gender === 'girls') {
@@ -539,13 +659,7 @@
         const query = e.target.value.trim();
         renderResults(query);
       });
-      
-      searchInput.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-          closeSearch();
-        }
-      });
-    }
+    });
   }
 
   // Initialize dropdown menus
@@ -599,24 +713,17 @@
     });
   }
 
-  // Initialize search functionality with Fuse.js
+  // Initialize search functionality with Fuse.js (once the data loads)
   function initSearch() {
     const searchInput = document.getElementById('header-search-input');
     const searchDropdown = document.getElementById('search-dropdown');
-    
+
     if (!searchInput || !searchDropdown) return;
-    
-    // Check if Fuse.js and search index are available
-    if (typeof Fuse === 'undefined') {
-      console.warn('Fuse.js not loaded');
-      return;
-    }
-    
-    if (!window.SEARCH_INDEX || !Array.isArray(window.SEARCH_INDEX)) {
-      console.warn('SEARCH_INDEX not available');
-      return;
-    }
-    
+
+    initBackgroundSearch(searchInput, searchDropdown, [searchInput], () => setupSearch(searchInput, searchDropdown));
+  }
+
+  function setupSearch(searchInput, searchDropdown) {
     // Initialize Fuse.js with separate configurations for wrestlers and teams
     // Wrestlers: search only name fields (first_name, last_name, name)
     // Teams: search name and searchTokens
@@ -727,8 +834,8 @@
           const globalIdx = currentResults.indexOf(item);
           // Add female symbol if gender is 'girls'
           const nameDisplay = item.gender === 'girls' 
-            ? `${escapeHtml(item.name)} <span style="color: #ff69b4;">♀</span>`
-            : escapeHtml(item.name);
+            ? `${escapeHtml(displayName(item.name))} <span style="color: #ff69b4;">♀</span>`
+            : escapeHtml(displayName(item.name));
           html += `
             <div class="search-result" data-url="${item.url}" data-index="${globalIdx}">
               <div class="search-name">${nameDisplay}</div>
@@ -746,7 +853,7 @@
         teams.forEach((item, idx) => {
           const globalIdx = currentResults.indexOf(item);
           // Add gender symbol: blue ♂ for boys, pink ♀ for girls
-          let nameDisplay = escapeHtml(item.name);
+          let nameDisplay = escapeHtml(displayName(item.name));
           if (item.gender === 'boys') {
             nameDisplay += ' <span style="color: #0066cc;">♂</span>';
           } else if (item.gender === 'girls') {

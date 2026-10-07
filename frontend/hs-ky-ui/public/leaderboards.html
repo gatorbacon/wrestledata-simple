@@ -16,8 +16,6 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/styles.css" />
-  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-  <script src="/search_index.js"></script>
   <script src="/js/analytics.js"></script>
 </head>
 <body>
@@ -27,7 +25,7 @@
   <div class="page-container">
     <header class="header">
       <h1>Leaderboards</h1>
-      <div class="header-subline" id="season-info">Season 2026</div>
+      <div class="header-subline" id="season-info"></div>
     </header>
 
     <section class="section">
@@ -50,6 +48,10 @@
 
       <!-- Career Wins only: data coverage note (above table) -->
       <p id="career-wins-note" class="career-wins-note" style="display: none; margin: 0 0 0.5em 0; font-size: 0.875rem; color: var(--text-secondary);"></p>
+      <!-- Career Wins only: "Active only" toggle (default off) -->
+      <label id="career-active-toggle" class="career-active-toggle" style="display: none;">
+        <input type="checkbox" id="career-active-only"> Active only
+      </label>
       <!-- Career Wins only: graduation pill legend -->
       <p id="career-wins-legend" class="career-wins-legend" style="display: none; margin: 0 0 0.75em 0; font-size: 0.8125rem; color: var(--text-muted);"></p>
 

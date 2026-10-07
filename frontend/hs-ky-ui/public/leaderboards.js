@@ -9,6 +9,29 @@ let leaderboardData = {
   boys: null,
   girls: null
 };
+let careerActiveOnly = false; // Career Wins "Active only" toggle (default off: show all)
+
+/**
+ * Season the class-year pills are measured against: the site season (2027 in its
+ * preseason too, so the Class of 2026 shows as graduated), or an explicit ?season=.
+ */
+function pillSeasonYear() {
+  const explicit = new URLSearchParams(window.location.search).get('season');
+  return parseInt(explicit || getSiteSeason(), 10);
+}
+
+/** Entries for the current tab (Career Wins honors the "Active only" toggle). */
+function currentEntries(data) {
+  const entries = data[currentStat] || [];
+  if (currentStat !== 'career_wins' || !careerActiveOnly) return entries;
+  const seasonYear = pillSeasonYear();
+  return entries.filter(e => e.graduation_year == null || parseInt(e.graduation_year, 10) >= seasonYear);
+}
+
+/** Preseason: the stat tabs show last season's final numbers. */
+function statsAreLastSeason() {
+  return isPreseason() && !new URLSearchParams(window.location.search).get('season');
+}
 
 /**
  * Load leaderboard data for a gender
@@ -82,8 +105,10 @@ function renderLeaderboard() {
       legendEl.style.display = 'none';
     }
   }
+  const toggleEl = document.getElementById('career-active-toggle');
+  if (toggleEl) toggleEl.style.display = currentStat === 'career_wins' ? 'flex' : 'none';
 
-  const entries = data[currentStat] || [];
+  const entries = currentEntries(data);
   const tbody = document.getElementById('leaderboard-tbody');
   
   const colCount = currentStat === 'career_wins' ? 6 : 6;
@@ -108,7 +133,7 @@ function renderLeaderboard() {
     // Name (linked to wrestler profile only when profile exists; Career Wins inactive = no link)
     const nameTd = document.createElement('td');
     nameTd.className = 'name';
-    const seasonYear = parseInt(getSeasonFromURL(), 10) || 2026;
+    const seasonYear = pillSeasonYear();
     const gradYear = entry.graduation_year != null ? parseInt(entry.graduation_year, 10) : null;
     const isActive = currentStat !== 'career_wins' || gradYear == null || gradYear >= seasonYear;
     if (isActive) {
@@ -118,16 +143,16 @@ function renderLeaderboard() {
       } else {
         nameLink.href = buildPageURL('wrestler.html', currentGender, { id: entry.wrestler_id });
       }
-      nameLink.textContent = entry.name;
+      nameLink.textContent = displayName(entry.name);
       nameTd.appendChild(nameLink);
     } else if (currentStat === 'career_wins' && entry.career_id) {
       // Graduated wrestler — still link to career profile
       const nameLink = document.createElement('a');
       nameLink.href = buildPageURL('wrestler.html', currentGender, { career_id: entry.career_id });
-      nameLink.textContent = entry.name;
+      nameLink.textContent = displayName(entry.name);
       nameTd.appendChild(nameLink);
     } else {
-      nameTd.textContent = entry.name;
+      nameTd.textContent = displayName(entry.name);
     }
     if (currentStat === 'career_wins' && entry.state_medals && entry.state_medals.length > 0) {
       const medalMap = { 1: '🥇', 2: '🥈', 3: '🥉' };
@@ -166,7 +191,7 @@ function renderLeaderboard() {
       // Graduation year pill (active = filled by class; inactive = outlined)
       const gradTd = document.createElement('td');
       gradTd.style.textAlign = 'center';
-      const seasonYear = parseInt(getSeasonFromURL(), 10) || 2026;
+      const seasonYear = pillSeasonYear();
       const gradYear = entry.graduation_year != null ? parseInt(entry.graduation_year, 10) : null;
       if (gradYear == null) {
         gradTd.textContent = '—';
@@ -230,8 +255,8 @@ function renderLeaderboardCards() {
   const data = leaderboardData[currentGender];
   if (!data) { container.innerHTML = ''; return; }
 
-  const entries = data[currentStat] || [];
-  const seasonYear = parseInt(getSeasonFromURL(), 10) || 2026;
+  const entries = currentEntries(data);
+  const seasonYear = pillSeasonYear();
   container.innerHTML = '';
 
   entries.forEach((entry, index) => {
@@ -261,7 +286,7 @@ function renderLeaderboardCards() {
       nameEl.removeAttribute('href');
       nameEl.style.cursor = 'default';
     }
-    nameEl.textContent = entry.name;
+    nameEl.textContent = displayName(entry.name);
 
     // State medals for career wins
     if (currentStat === 'career_wins' && entry.state_medals && entry.state_medals.length > 0) {
@@ -291,7 +316,8 @@ function renderLeaderboardCards() {
         meta.appendChild(pill);
       }
     } else {
-      const rankStr = entry.rank && entry.rank !== 999 ? `#${entry.rank}` : '';
+      const rankStr = entry.rank && entry.rank !== 999
+        ? (statsAreLastSeason() ? `${getStatsSeason()} #${entry.rank}` : `#${entry.rank}`) : '';
       const wl = `${entry.wins}–${entry.losses}`;
       meta.textContent = [entry.team, rankStr, wl].filter(Boolean).join(' · ');
     }
@@ -343,7 +369,7 @@ function updateTableHeaders() {
     });
   } else {
     // Regular stats headers: #, Name, Team, Rank, W–L, Stat
-    const headers = ['#', 'Name', 'Team', 'Rank', 'W–L', 'Wins'];
+    const headers = ['#', 'Name', 'Team', statsAreLastSeason() ? `${getStatsSeason()} Rank` : 'Rank', 'W–L', 'Wins'];
     thead.innerHTML = '';
     headers.forEach((headerText, index) => {
       const th = document.createElement('th');
@@ -427,7 +453,18 @@ function setupStatTabs() {
 async function init() {
   // Set season info
   const season = getSeasonFromURL();
-  document.getElementById('season-info').textContent = `Season ${season}`;
+  document.getElementById('season-info').textContent = statsAreLastSeason()
+    ? `${season} Season · Final`
+    : `Season ${season}`;
+
+  const activeToggle = document.getElementById('career-active-only');
+  if (activeToggle) {
+    activeToggle.checked = careerActiveOnly;
+    activeToggle.addEventListener('change', () => {
+      careerActiveOnly = activeToggle.checked;
+      renderLeaderboard();
+    });
+  }
   document.title = `Kentucky High School Wrestling Stat Leaders ${season} | KentuckyMat`;
   sendPageView();
   setMetaDescription(`Kentucky high school wrestling stat leaders for ${season}. Top wrestlers by wins, pins, tech falls, and career wins on KentuckyMat.`);

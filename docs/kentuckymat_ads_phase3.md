@@ -240,7 +240,7 @@ Publisher ID `ca-pub-6991551662268186`. All four are wired into `js/ads.js`'s `S
 
 ### Open items
 
-- **A4 (ads.txt "Authorized" status in the AdSense dashboard)** showed "Not found" as of the last check, attributed to Google-side propagation lag since the file itself was already verified correctly served (Phase 1). Not reconfirmed as resolved — doesn't block anything already shipped, but worth a glance next time TJ is in the AdSense dashboard.
+- **A4 (ads.txt "Authorized" status in the AdSense dashboard)** showed "Not found" as of the last check, attributed to Google-side propagation lag since the file itself was already verified correctly served (Phase 1). **Resolved 2026-10-03**: the AdSense Sites page now shows kentuckymat.com as Approval status **Ready**, Ads.txt **Authorized** (both last updated 2026-10-03 6:12 AM EDT). No ads were visible on the first page load right after that, which is expected while Google ramps up serving.
 - **A6 (EU consent message)** — TJ's call, explicitly optional, not done.
 - **Part D (after-launch checklist)** — now active now that this is live; see above. D3 (compare per-unit earnings, consider dropping a weak slot) and D5 (spring mobile-anchor-ad decision, only if revenue doesn't cover costs) are the two that need a decision later, not just a look.
 

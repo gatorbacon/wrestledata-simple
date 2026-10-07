@@ -12,6 +12,16 @@ function getQueryParam(key) {
   return new URLSearchParams(window.location.search).get(key);
 }
 
+// The rankings page belongs to the site season (2027 from its preseason drop on);
+// ?season=2026 opens a past season (TJ, 2026-10-06).
+function getRankingsSeason() {
+  return getQueryParam('season') || getSiteSeason();
+}
+
+function isPastRankingsSeason(season) {
+  return String(season) !== getSiteSeason();
+}
+
 // ========================================
 // Archive State
 // ========================================
@@ -319,7 +329,15 @@ function renderNotes(notesText) {
 // ========================================
 // Render Drop Selector
 // ========================================
-function renderDropSelector(drops, currentDrop, gender, season, weight) {
+// Dropdown label: "Preseason" for the preseason drop, "Final" for a past
+// season's last drop, otherwise the drop date.
+function dropLabel(drop, season, latestId) {
+  if (drop.label) return drop.label;
+  if (isPastRankingsSeason(season) && drop.id === latestId) return `Final (${formatDateFromId(drop.id)})`;
+  return formatDateFromId(drop.id);
+}
+
+function renderDropSelector(drops, currentDrop, gender, season, weight, latestId) {
   const selectorContainer = document.getElementById('drop-selector-container');
   if (!selectorContainer) return;
   
@@ -338,7 +356,7 @@ function renderDropSelector(drops, currentDrop, gender, season, weight) {
     const option = document.createElement('option');
     option.value = drop.id;
     // Use id field for display to avoid timezone conversion issues
-    option.textContent = formatDateFromId(drop.id);
+    option.textContent = dropLabel(drop, season, latestId);
     if (drop.id === currentDrop) {
       option.selected = true;
     }
@@ -458,6 +476,16 @@ function renderRankings(data, gender, weight, isBaseline, season) {
   
   // Wrestlers are already in correct order from rankings file
   let wrestlers = data.wrestlers;
+
+  // Preseason drops carry last season's records: label the columns with that season
+  const recordSeason = data.record_season && String(data.record_season) !== String(season)
+    ? String(data.record_season) : null;
+  const wlHeader = document.getElementById('wl-header');
+  const bonusHeader = document.getElementById('bonus-header');
+  if (wlHeader) wlHeader.textContent = recordSeason ? `${recordSeason} W–L` : 'W–L';
+  if (bonusHeader) bonusHeader.textContent = recordSeason ? `${recordSeason} Bonus %` : 'Bonus %';
+  // Profiles live under the season the records come from
+  const profileSeason = data.record_season || season;
   
   const tbody = document.querySelector("#rankings-table tbody");
   tbody.innerHTML = "";
@@ -531,8 +559,8 @@ function renderRankings(data, gender, weight, isBaseline, season) {
     nameTd.className = "name";
     if (wrestler.wrestler_id) {
       const nameLink = document.createElement("a");
-      nameLink.href = `/wrestler.html?id=${wrestler.wrestler_id}&gender=${gender}`;
-      nameLink.textContent = safe(wrestler.name);
+      nameLink.href = `/wrestler.html?id=${wrestler.wrestler_id}&gender=${gender}&season=${profileSeason}`;
+      nameLink.textContent = safe(displayName(wrestler.name));
       nameTd.appendChild(nameLink);
       
       // Add previous placement micro-pill if available (before Jan 20)
@@ -541,7 +569,7 @@ function renderRankings(data, gender, weight, isBaseline, season) {
         nameTd.appendChild(pill);
       }
     } else {
-      nameTd.textContent = safe(wrestler.name);
+      nameTd.textContent = safe(displayName(wrestler.name));
       
       // Add previous placement micro-pill if available (before Jan 20)
       const pill = createPreviousPlacementPill(wrestler.placement_note, season);
@@ -610,7 +638,7 @@ function renderRankings(data, gender, weight, isBaseline, season) {
 // ========================================
 // Generate Weight Tabs
 // ========================================
-function generateWeightTabs(gender, weights, dropId) {
+function generateWeightTabs(gender, weights, dropId, season) {
   const container = document.getElementById('weight-tabs');
   if (!container) return;
   
@@ -624,6 +652,9 @@ function generateWeightTabs(gender, weights, dropId) {
     params.set('weight', weight);
     if (dropId) {
       params.set('drop', dropId);
+    }
+    if (season && isPastRankingsSeason(season)) {
+      params.set('season', season);
     }
     tab.href = `rankings.html?${params.toString()}`;
     tab.textContent = weight.toString();
@@ -663,21 +694,33 @@ async function loadAndRenderWeight(gender, season, weight, dropId, isBaseline) {
 }
 
 // ========================================
+// Preseason note / past-season banner + "Past seasons" links
+// ========================================
+function renderRankingsContext(gender, season, meta) {
+  const lines = [];
+  if (meta && meta.phase === 'preseason') {
+    // Shown on phones too (#season-info is hidden there)
+    lines.push(`${season} Preseason rankings · records and stats are from the ${meta.record_season || Number(season) - 1} season.`);
+  }
+  return renderSeasonContext(document.getElementById('rankings-context'), {
+    page: '/rankings.html', gender, season, what: 'rankings',
+    isPast: isPastRankingsSeason(season), lines
+  });
+}
+
+// ========================================
 // Initialize Rankings Page
 // ========================================
 async function initRankings() {
   // Get context from URL
   const gender = getGenderFromURL();
-  const season = getSeasonFromURL();
+  const season = getRankingsSeason();
   const weight = getWeightFromURL(gender);
   const weights = getWeightsForGender(gender);
   const dropIdParam = getQueryParam('drop');
   
   console.log(`[HS Rankings] Initializing: gender=${gender}, season=${season}, weight=${weight}, drop=${dropIdParam || 'latest'}`);
   const _rankGenderLabel = gender === "girls" ? "Kentucky Girls" : "Kentucky Boys";
-  document.title = `${season} ${_rankGenderLabel} High School Wrestling Rankings | KentuckyMat`;
-  sendPageView();
-  setMetaDescription(`${season} ${_rankGenderLabel} high school wrestling rankings by weight class. Updated weekly with full stats, records, and match data on KentuckyMat.`);
   
   // Load archive index to determine which drop to use
   const index = await loadArchiveIndex(gender, season);
@@ -693,9 +736,16 @@ async function initRankings() {
   // Load drop meta
   const meta = await loadDropMeta(gender, season, dropId);
   const isBaseline = meta?.baseline === true;
+  const isPreseasonDrop = meta?.phase === 'preseason';
+
+  const _seasonLabel = isPreseasonDrop ? `${season} Preseason` : season;
+  document.title = `${_seasonLabel} ${_rankGenderLabel} High School Wrestling Rankings | KentuckyMat`;
+  sendPageView();
+  setMetaDescription(`${_seasonLabel} ${_rankGenderLabel} high school wrestling rankings by weight class. Updated weekly with full stats, records, and match data on KentuckyMat.`);
+  renderRankingsContext(gender, season, meta);
   
   // Generate weight tabs dynamically
-  generateWeightTabs(gender, weights, dropId);
+  generateWeightTabs(gender, weights, dropId, season);
   
   // Update title
   const titleEl = document.getElementById("rankings-title");
@@ -708,13 +758,15 @@ async function initRankings() {
   if (seasonEl && meta) {
     // Use dropId for display to avoid timezone conversion issues
     const publishedDate = formatDateFromId(dropId);
-    seasonEl.textContent = `Published ${publishedDate}`;
+    seasonEl.textContent = isPreseasonDrop
+      ? `${season} Preseason · Published ${publishedDate}`
+      : `Published ${publishedDate}`;
   } else {
     seasonEl.textContent = `Season ${season}`;
   }
   
   // Render drop selector
-  renderDropSelector(index.drops, dropId, gender, season, weight);
+  renderDropSelector(index.drops, dropId, gender, season, weight, index.latest);
   
   // Check for PDF and render download link
   renderPdfDownloadLink(gender, season, dropId);
@@ -777,7 +829,7 @@ async function initRankings() {
 // Handle browser back/forward navigation
 window.addEventListener('popstate', async () => {
   const gender = getGenderFromURL();
-  const season = getSeasonFromURL();
+  const season = getRankingsSeason();
   const weight = getWeightFromURL(gender);
   const dropIdParam = getQueryParam('drop');
   

@@ -21,7 +21,7 @@
 
   function nameNode(name, gender) {
     const frag = document.createDocumentFragment();
-    frag.appendChild(document.createTextNode(name));
+    frag.appendChild(document.createTextNode(displayName(name)));
     if (gender === 'girls') {
       const s = el('span', null, ' ♀');
       s.style.color = '#ff69b4';
@@ -375,8 +375,8 @@
       setMetaDescription('Compare any two Kentucky high school wrestlers. See every head-to-head match and common-opponent result between them on KentuckyMat.');
       return;
     }
-    document.title = `${A.canonical_name} vs ${B.canonical_name} | Wrestling Head-to-Head & Common Opponents | KentuckyMat`;
-    setMetaDescription(`${A.canonical_name} vs ${B.canonical_name}: head-to-head matches and common-opponent results for Kentucky high school wrestling on KentuckyMat.`);
+    document.title = `${displayName(A.canonical_name)} vs ${displayName(B.canonical_name)} | Wrestling Head-to-Head & Common Opponents | KentuckyMat`;
+    setMetaDescription(`${displayName(A.canonical_name)} vs ${displayName(B.canonical_name)}: head-to-head matches and common-opponent results for Kentucky high school wrestling on KentuckyMat.`);
   }
 
   // ---------- rendering ----------
@@ -409,7 +409,7 @@
   function wrestlerCard(career, gender) {
     const card = el('div', 'cmp-card');
     const nm = el('div', 'cmp-card-name');
-    const a = el('a', null, career.canonical_name || '—');
+    const a = el('a', null, displayName(career.canonical_name) || '—');
     a.href = profileHref(gender, career.career_id);
     nm.appendChild(a);
     card.appendChild(nm);
@@ -463,7 +463,7 @@
       return sec;
     }
     const series = el('div', 'cmp-series');
-    const nA = A.canonical_name, nB = B.canonical_name;
+    const nA = displayName(A.canonical_name), nB = displayName(B.canonical_name);
     if (h2h.aWins === h2h.bWins) series.appendChild(document.createTextNode('Series tied '));
     else series.appendChild(document.createTextNode((h2h.aWins > h2h.bWins ? nA : nB) + ' leads '));
     series.appendChild(el('span', 'cmp-score', Math.max(h2h.aWins, h2h.bWins) + '–' + Math.min(h2h.aWins, h2h.bWins)));
@@ -496,7 +496,7 @@
         (state.season !== 'all' ? ' in ' + state.season : '') + '.'));
       return sec;
     }
-    const nA = A.canonical_name, nB = B.canonical_name;
+    const nA = displayName(A.canonical_name), nB = displayName(B.canonical_name);
     const rec = function (r) { return `${r.wins}–${r.losses}` + (r.pins ? ` (${r.pins} pin${r.pins === 1 ? '' : 's'})` : ''); };
 
     const recLine = el('div', 'cmp-tally');
@@ -536,11 +536,11 @@
       const opp = el('div');
       const nm = el('div', 'cmp-opp-name');
       if (r.careerId) {
-        const a = el('a', null, r.name);
+        const a = el('a', null, displayName(r.name));
         a.href = profileHref(gender, r.careerId);
         nm.appendChild(a);
       } else {
-        nm.textContent = r.name;
+        nm.textContent = displayName(r.name);
       }
       opp.appendChild(nm);
       opp.appendChild(el('div', 'cmp-opp-team', r.team));

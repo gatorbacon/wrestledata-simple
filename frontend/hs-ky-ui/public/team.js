@@ -224,8 +224,19 @@ async function loadTeam(teamSlug) {
         }
       }
       
+      // Preseason (hs_config.js): returning wrestlers instead of a projected
+      // lineup. ?season=YYYY opens that season's normal page (the "2026 season" link).
+      let preseasonData = null;
+      if (isPreseason() && !getQueryParam('season')) {
+        try {
+          preseasonData = await fetchJSON(`/data/teams/${gender}/${getSiteSeason()}/${teamSlug}.json`);
+        } catch (err) {
+          preseasonData = { returning: [], record_season: Number(season) };
+        }
+      }
+
       // Render the page with loaded data (pass rank to avoid re-fetching)
-      await renderTeamPage(teamProfile, wrappedMetrics, starterProfiles, remainingProfiles, xtpData, xtpRank);
+      await renderTeamPage(teamProfile, wrappedMetrics, starterProfiles, remainingProfiles, xtpData, xtpRank, preseasonData);
     } else {
       // Old structure: Fallback to old loading logic (for backward compatibility)
       console.log(`[HS Team] Using legacy team profile structure, falling back to old loading`);
@@ -415,7 +426,7 @@ function renderTeamProfileMetrics(metrics, starters, isHS) {
 }
 
 // Render top summary row (Team Profile + xTP) for HS
-async function renderTopSummaryRow(metrics, starters, xtpData, teamName, xtpRank = null) {
+async function renderTopSummaryRow(metrics, starters, xtpData, teamName, xtpRank = null, preseasonData = null) {
   // Create or get the top summary container
   let topSummaryContainer = document.getElementById("top-summary-row");
   if (!topSummaryContainer) {
@@ -439,7 +450,16 @@ async function renderTopSummaryRow(metrics, starters, xtpData, teamName, xtpRank
   const leftCol = document.createElement("div");
   leftCol.className = "xtp-headline-summary";
   
-  if (xtpData) {
+  if (preseasonData) {
+    // No team projection in the preseason (TJ, 2026-10-07)
+    const note = createComingSoonBlock();
+    const label = document.createElement("div");
+    label.className = "coming-soon-label";
+    label.textContent = "Projected State Tournament Points";
+    note.insertBefore(label, note.firstChild);
+    note.classList.add("preseason-note-box");
+    leftCol.appendChild(note);
+  } else if (xtpData) {
     await renderXTPHeadline(xtpData, teamName, xtpRank);
     const xtpSection = document.getElementById("xtp-headline-section");
     if (xtpSection) {
@@ -462,7 +482,9 @@ async function renderTopSummaryRow(metrics, starters, xtpData, teamName, xtpRank
   
   const rightHeader = document.createElement("h3");
   rightHeader.className = "metrics-section-title";
-  rightHeader.textContent = "Team Overview";
+  rightHeader.textContent = preseasonData
+    ? `${preseasonData.record_season || Number(getSiteSeason()) - 1} Season`
+    : "Team Overview";
   rightCol.appendChild(rightHeader);
   
   const rightGrid = document.createElement("div");
@@ -507,20 +529,29 @@ async function renderTopSummaryRow(metrics, starters, xtpData, teamName, xtpRank
   topSummaryContainer.appendChild(rightCol);
 }
 
-async function renderTeamPage(team, metrics, starters, remaining, xtpData, xtpRank = null) {
+async function renderTeamPage(team, metrics, starters, remaining, xtpData, xtpRank = null, preseasonData = null) {
   const isHS = isHSSite();
   
   // Header
   const teamName = team.team_name || team.name;
   const gender = getGenderFromURL();
   document.getElementById("team-name").textContent = teamName;
-  const _teamSeason = getSeasonFromURL();
+  const _teamSeason = preseasonData ? `${getSiteSeason()} Preseason` : getSeasonFromURL();
   const _teamGenderLabel = gender === "girls" ? "Kentucky Girls High School" : "Kentucky High School";
   document.title = `${teamName} Wrestling ${_teamSeason} | ${_teamGenderLabel} | KentuckyMat`;
   sendPageView();
   setMetaDescription(`${teamName} ${_teamSeason} Kentucky high school wrestling. Full roster, rankings, match results, and team stats on KentuckyMat.`);
-  document.getElementById("team-meta").textContent =
-    `${team.conference} · ${team.division} · Season ${getSeasonFromURL()}`;
+  const metaEl = document.getElementById("team-meta");
+  if (preseasonData) {
+    const recordSeason = preseasonData.record_season || Number(getSiteSeason()) - 1;
+    metaEl.textContent = `${team.conference} · ${team.division} · ${getSiteSeason()} Preseason · `;
+    const pastLink = document.createElement("a");
+    pastLink.href = buildPageURL("team.html", gender, { team: getQueryParam("team"), season: recordSeason });
+    pastLink.textContent = `${recordSeason} season →`;
+    metaEl.appendChild(pastLink);
+  } else {
+    metaEl.textContent = `${team.conference} · ${team.division} · Season ${getSeasonFromURL()}`;
+  }
 
   // Update section header for HS
   const startingRosterHeader = document.querySelector("#starting-roster-section h2");
@@ -534,7 +565,7 @@ async function renderTeamPage(team, metrics, starters, remaining, xtpData, xtpRa
 
   // Create top summary row (Team Profile stats + xTP) for HS
   if (isHS) {
-    await renderTopSummaryRow(metrics, starters, xtpData, teamName, xtpRank);
+    await renderTopSummaryRow(metrics, starters, xtpData, teamName, xtpRank, preseasonData);
     // Hide old Team Profile section for HS (we moved it to top)
     const oldTeamProfileSection = document.getElementById("team-profile-metrics-section");
     if (oldTeamProfileSection) {
@@ -564,6 +595,13 @@ async function renderTeamPage(team, metrics, starters, remaining, xtpData, xtpRa
   const advancedMetricsSection = document.getElementById("advanced-metrics-section");
   if (advancedMetricsSection) {
     advancedMetricsSection.style.display = isHS ? "none" : "block";
+  }
+
+  if (preseasonData) {
+    renderReturningTable(preseasonData, gender);
+    const remainingSection = document.querySelector(".section--remaining-roster");
+    if (remainingSection) remainingSection.style.display = "none";
+    return;
   }
 
   renderStartersTable(starters, xtpData);
@@ -644,7 +682,7 @@ async function renderXTPHeadline(xtpData, teamName, xtpRank = null) {
 }
 
 function resolveSeason() {
-  return "2026"; // Or make dynamic later
+  return getSeasonFromURL();
 }
 
 function createMVRankBadge(rank) {
@@ -797,7 +835,7 @@ function renderStartersTable(starters, xtpData) {
     if (profile && profile.wrestler_id) {
       const wrestlerLink = document.createElement("a");
       wrestlerLink.href = buildPageURL('wrestler.html', gender, { id: profile.wrestler_id });
-      wrestlerLink.textContent = profile.name || "Unknown";
+      wrestlerLink.textContent = displayName(profile.name) || "Unknown";
       wrestlerTd.appendChild(wrestlerLink);
     } else {
       wrestlerTd.textContent = "—";
@@ -1052,7 +1090,7 @@ function renderRemainingRosterTable(remaining) {
     if (profile && profile.wrestler_id) {
       const a = document.createElement("a");
       a.href = buildPageURL('wrestler.html', gender, { id: profile.wrestler_id });
-      a.textContent = profile.name || "Unknown";
+      a.textContent = displayName(profile.name) || "Unknown";
       nameTd.appendChild(a);
     } else {
       nameTd.textContent = "—";
@@ -1083,6 +1121,77 @@ function renderRemainingRosterTable(remaining) {
 
     tbody.appendChild(tr);
   });
+}
+
+const STATE_NOTE_LABELS = { "1": "1st", "2": "2nd", "3": "3rd", "4": "4th", "5": "5th", "6": "6th", "7": "7th", "8": "8th", "BR": "Blood round", "Q": "Qualified" };
+
+// Preseason: every returning wrestler (last season's roster minus seniors and
+// 0-0 listings) at last season's weight, next year's grade, last season's record.
+function renderReturningTable(preseasonData, gender) {
+  const section = document.getElementById("starting-roster-section");
+  const recordSeason = preseasonData.record_season || Number(getSiteSeason()) - 1;
+  section.querySelector("h2").textContent = "Returning Wrestlers";
+  const wrapper = section.querySelector(".table-wrapper");
+  wrapper.innerHTML = "";
+
+  const intro = document.createElement("p");
+  intro.className = "returning-intro";
+  intro.textContent = `Everyone back from the ${recordSeason} roster, at last season's weight. ` +
+    `Rank = ${getSiteSeason()} preseason rank.`;
+  section.insertBefore(intro, wrapper);
+
+  const rows = preseasonData.returning || [];
+  const table = document.createElement("table");
+  table.id = "returning-roster-table";
+  table.className = "returning-roster-table";
+  table.innerHTML = `<thead><tr>
+      <th>Wt</th><th>Wrestler</th><th>Gr</th><th class="text-center">Rank</th>
+      <th class="text-center">${recordSeason} W–L</th><th class="returning-state">${recordSeason} State</th>
+    </tr></thead><tbody></tbody>`;
+  const tbody = table.querySelector("tbody");
+
+  if (rows.length === 0) {
+    const tr = document.createElement("tr");
+    const td = document.createElement("td");
+    td.colSpan = 6;
+    td.textContent = `No returning wrestlers with ${recordSeason} matches`;
+    td.style.cssText = "text-align: center; padding: 2em; color: var(--muted);";
+    tr.appendChild(td);
+    tbody.appendChild(tr);
+  }
+
+  rows.forEach(r => {
+    const tr = document.createElement("tr");
+    const cells = [];
+    const wt = document.createElement("td");
+    wt.textContent = r.weight;
+    cells.push(wt);
+    const name = document.createElement("td");
+    const a = document.createElement("a");
+    a.href = buildPageURL("wrestler.html", gender, { id: r.wrestler_id, season: recordSeason });
+    a.textContent = displayName(r.name);
+    name.appendChild(a);
+    cells.push(name);
+    const gr = document.createElement("td");
+    gr.textContent = r.grade || "—";
+    cells.push(gr);
+    const rank = document.createElement("td");
+    rank.className = "text-center";
+    rank.appendChild(r.preseason_rank != null ? createRankBadge(r.preseason_rank) : document.createTextNode("—"));
+    cells.push(rank);
+    const wl = document.createElement("td");
+    wl.className = "text-center";
+    wl.textContent = (r.wins != null && r.losses != null) ? `${r.wins}–${r.losses}` : "—";
+    cells.push(wl);
+    const st = document.createElement("td");
+    st.className = "returning-state";
+    st.textContent = r.state_note ? (STATE_NOTE_LABELS[r.state_note] || r.state_note) : "—";
+    cells.push(st);
+    cells.forEach(c => tr.appendChild(c));
+    tbody.appendChild(tr);
+  });
+
+  wrapper.appendChild(table);
 }
 
 function createRankBadge(rank) {

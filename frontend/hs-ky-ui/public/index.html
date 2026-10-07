@@ -16,8 +16,6 @@
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="/styles.css" />
-  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-  <script src="/search_index.js"></script>
   <script src="/js/analytics.js"></script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6991551662268186"
      crossorigin="anonymous"></script>
@@ -40,6 +38,8 @@
         <a href="/rankings.html?gender=boys" class="home-rank-btn home-rank-btn--boys">Boys Rankings</a>
         <a href="/rankings.html?gender=girls" class="home-rank-btn home-rank-btn--girls">Girls Rankings</a>
       </div>
+      <!-- Shown only in the preseason phase (hs_config.js siteSeason) -->
+      <p class="home-rank-phase" id="home-rank-phase" hidden></p>
     </section>
 
     <!-- Tier 2: Team Rankings -->
@@ -82,6 +82,14 @@
 
   </div>
 
+  <script src="/hs_config.js"></script>
+  <script>
+    if (isPreseason()) {
+      const tag = document.getElementById('home-rank-phase');
+      tag.textContent = `${getSiteSeason()} Preseason`;
+      tag.hidden = false;
+    }
+  </script>
   <script src="/footer.js"></script>
 </body>
 </html>
