@@ -23,8 +23,6 @@ One list for both sites and the side projects, so nothing gets lost between sess
 
 ## Ready to ship (committed locally, not pushed)
 
-- [ ] **On `dev`, not yet on `main`: `7aa35af07a` state placement bouts from the bracket results + Naiya Delos Santos career merge** (KentuckyMat data only; CLAUDE.md gotcha 19). Pushed to `dev` 2026-10-07 for a Netlify preview. Going live = push local `main` (fast-forward, includes the two docs commits below), with the smoke test before and after. *(added 2026-10-07)*
-- [ ] **Docs-only commits on local `main`**: `06502353a8` (preseason published / next steps) and the 2026-10-07 documentation pass (CLAUDE.md, this file, the preseason doc). No site changes, so no rush; they go out with the next push. *(added 2026-10-07)*
 
 
 ## Uncommitted local work
@@ -99,7 +97,7 @@ One list for both sites and the side projects, so nothing gets lost between sess
 
 ## Done
 
-- [x] 2026-10-07 — **KentuckyMat: missing state placement bouts added from the bracket results** (72 bouts, mostly girls 2024 and boys 2015/2020/2024, e.g. Lyla Smith's 2024 final; nothing duplicated; CLAUDE.md gotcha 19). Also merged Naiya Delos Santos's 2024 career (`career_001235`, "Naiya Marie Debs Santos", John Hardin) into `career_000752`. On `dev` (`7aa35af07a`), not on `main` yet.
+- [x] 2026-10-07 — **KentuckyMat: missing state placement bouts added from the bracket results** (72 bouts, mostly girls 2024 and boys 2015/2020/2024, e.g. Lyla Smith's 2024 final; nothing duplicated; CLAUDE.md gotcha 19). Also merged Naiya Delos Santos's 2024 career (`career_001235`, "Naiya Marie Debs Santos", John Hardin) into `career_000752`. Live 2026-10-07 (`7aa35af07a`, main at `dfd52a6d35`; live smoke test 88/88).
 - [x] 2026-10-07 — **KentuckyMat 2027 preseason site published** (`4cfd4ca3d7`, live smoke test 88/88): preseason rankings for both genders + girls 2026 Final drop, `siteSeason` phase switch, season-labeled rank pills, team pages with returning wrestlers, "Coming Soon" for team projections / duals / Dual Predictor, recruiting classes 2027–2030, Stat Leaders labels + Career Wins "Active only", `displayName()` name rule, Nance and Woosley to Georgetown College, and the background search index. Everything is in `docs/kentuckymat_preseason_rankings.md`.
 
 - [x] 2026-10-07 — Roster and schedule rescan: new rosters The Citadel and Virginia Tech, Navy +19, Northern Colorado +16, Columbia +9; Lock Haven and Cal Poly now on their real 2026-27 rosters; new schedules Columbia, CSU Bakersfield, Oklahoma. All 16 parked changes accepted (TJ). Schedule page 490 → 501 duals (two duals that showed on two dates now show once). Leftover Clarion pending file deleted. (committed, not pushed)
