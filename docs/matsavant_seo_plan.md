@@ -138,6 +138,11 @@ Personal plan allows 2 code-based rules per project. Before settling the number,
 
 ## Step 6 — Test on `matsavant-dev`, then one production deploy
 
+**Preview results (2026-10-07, matsavant-dev 266ce42dc1 + fix):**
+- (1) `/wrestler/<slug>` and `/team/<slug>`: the `_redirects` rewrite works behind the edge function — 200 with the function's title, canonical, pre-filled name/season line; unknown → 404 + noindex. (2) block-bots still runs on these paths: fake `OAI-SearchBot` from a non-OpenAI IP, GPTBot, python-requests → 403 on pages and `/data/`; Googlebot UA → 200; the function's own `/seo/` lookups go through. (3) Caching: responses `stored`, repeat requests `hit`. (4) Same-site `fetch()` from the function works.
+- Rate limit: 700 quick `/data/` requests from one IP → all 200, then 429 within ~12 s (Netlify's documented enforcement lag); pages unaffected.
+- **Netlify re-appends the request's query string to any redirect whose target has none** (known CDN behavior; happens after the edge function, can't be stripped there): `wrestler.html?id=X` → `/wrestler/levi-haines?id=X`. Fix: old-id redirects always carry `?season=YYYY` (Netlify leaves targets with a query alone; it's also the season the old link meant). Old `team.html?team=x` links land on `/team/<name>?team=x` — accepted (works, canonical is clean, ~90 such URLs).
+
 On the preview (free branch deploy; see memory "MatSavant preview branch" for the temp-index build-commit method):
 1. `curl -s {preview}/wrestler/levi-haines | grep -E "<title>|description|canonical|og:"` → per-wrestler values in raw HTML. Same for a team and a no-career profile.
 2. `{preview}/wrestler.html?id={old season id}` → 301 to `/wrestler/{slug}?season=YYYY`; latest id → bare slug; garbage id → 404.

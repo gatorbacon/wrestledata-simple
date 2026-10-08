@@ -155,13 +155,16 @@ async function wrestlerById(url: URL, context: Context) {
     if (html === null) return res;
     return htmlResponse(setHead(html, headTags({ title: "Wrestler Not Found | MatSavant", noindex: true })), res, 404, "query=id");
   }
-  const [slug, season, isLatest] = hit;
-  const q = new URLSearchParams();
-  if (!isLatest) q.set("season", String(season));
+  const [slug, season] = hit;
+  // Always name the season: Netlify appends the request's own query string to
+  // any redirect whose target has none (seen on the 2026-10-07 preview:
+  // ?id=X -> /wrestler/levi-haines?id=X), and it leaves targets that have one
+  // alone. ?season= is also exactly the season the old link pointed at. The
+  // page's canonical stays the bare /wrestler/<slug>.
+  const q = new URLSearchParams({ season: String(season) });
   const view = url.searchParams.get("view");
   if (view) q.set("view", view);
-  const qs = q.toString();
-  return redirect(`/wrestler/${slug}${qs ? `?${qs}` : ""}`, "query=id|view");
+  return redirect(`/wrestler/${slug}?${q}`, "query=id|view");
 }
 
 // ---------------------------------------------------------------- teams
@@ -202,6 +205,8 @@ export default async (request: Request, context: Context) => {
   if (m) return teamBySlug(url, context, decodeURIComponent(m[1]));
   if (path === "/team.html" || path === "/team") {
     const team = url.searchParams.get("team");
+    // Netlify re-appends ?team=<old> to this target (see wrestlerById); harmless --
+    // the page reads the path, and its canonical is the clean /team/<name>.
     return team && /^[a-z0-9_&-]+$/i.test(team) ? redirect(SEO.teamPath(team.toLowerCase())) : context.next();
   }
   return context.next();
