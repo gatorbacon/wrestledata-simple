@@ -229,8 +229,11 @@ function createResultBadge(result, method) {
 // Fetch + top-level orchestration
 // ===============================
 
-async function loadWrestlerProfile(id) {
-  const seasons = await getKnownSeasons();
+async function loadWrestlerProfile(id, seasonHint) {
+  // seasonHint (from a /wrestler/<slug> address) is tried first, so the page
+  // doesn't 404 its way through newer seasons' folders to find an old profile.
+  const known = await getKnownSeasons();
+  const seasons = seasonHint ? [String(seasonHint), ...known.filter(s => String(s) !== String(seasonHint))] : known;
   for (const season of seasons) {
     try {
       const res = await fetch(`/data/wrestlers/${season}/by_id/${id}.json`);
@@ -241,8 +244,65 @@ async function loadWrestlerProfile(id) {
     } catch (err) { /* try next season */ }
   }
   console.error("Wrestler not found in any known season", id);
+  showWrestlerNotFound();
+}
+
+function showWrestlerNotFound() {
   document.getElementById("wrestler-name").textContent = "Not Found";
   document.getElementById("wrestler-resume").textContent = "Could not load wrestler JSON";
+  if (window.MatSavantSEO) MatSavantSEO.applyHead({ title: "Wrestler Not Found | MatSavant", noindex: true });
+}
+
+// ===============================
+// Name-based address /wrestler/levi-haines[?season=2024] (docs/matsavant_seo_plan.md).
+// /seo/wrestlers/<slug>.json (scripts/seo/build_url_slugs.py) says
+// which season profile to open and carries the title/description fields. The
+// edge function may already have put that record in the page as JSON.
+// ===============================
+let _pageSlugInfo = null;
+
+async function fetchSlugInfo(slug) {
+  const res = await fetch(`/seo/wrestlers/${encodeURIComponent(slug)}.json`);
+  return res.ok ? res.json() : null;
+}
+
+async function loadWrestlerFromSlug(slug, params) {
+  let info = null;
+  const inline = document.getElementById("wrestler-slug-data");
+  if (inline) { try { info = JSON.parse(inline.textContent); } catch (e) { info = null; } }
+  if (!info || info.slug !== slug) info = await fetchSlugInfo(slug).catch(() => null);
+  if (info && info.alias_of) {
+    // Retired slug (careers merged): the edge function normally 301s this first.
+    location.replace(`/wrestler/${info.alias_of}${location.search}`);
+    return;
+  }
+  if (!info) { showWrestlerNotFound(); return; }
+  _pageSlugInfo = info;
+  const asked = params.get("season");
+  const season = asked && info.seasons[asked] ? asked : String(info.latest_season);
+  loadWrestlerProfile(info.seasons[season] || info.latest_id, season);
+}
+
+// Title/description/canonical: always the wrestler's latest-season summary
+// (same as the edge function), whichever season is on screen.
+function setWrestlerHead(data) {
+  const SEO = window.MatSavantSEO;
+  if (!SEO) return;
+  const apply = info => SEO.applyHead({
+    title: SEO.wrestlerTitle(info),
+    description: SEO.wrestlerDescription(info),
+    canonical: info.slug ? SEO.SITE + SEO.wrestlerPath(info.slug) : null,
+  });
+  if (_pageSlugInfo) { apply(_pageSlugInfo); return; }
+  // Opened by an old ?id= link: this profile's own fields now, the career summary once fetched.
+  const own = (data.season_summary || []).find(s => String(s.wrestler_id) === String(data.wrestler_id)) || {};
+  apply({ name: data.name, team: data.team, weight: data.weight_class,
+          season_record: (data.record || {}).overall, latest_season: own.season, seasons: {} });
+  if (data.url_slug) {
+    fetchSlugInfo(data.url_slug)
+      .then(info => { if (info && !info.alias_of) { _pageSlugInfo = info; apply(info); } })
+      .catch(() => {});
+  }
 }
 
 // Tracks whichever season is currently on screen (desktop dpg-card,
@@ -340,6 +400,7 @@ function pickInitialView(data) {
 }
 
 function renderProfile(data) {
+  setWrestlerHead(data);
   _initialView = pickInitialView(data);
   renderHeader(data);
   renderCareerHeaderLine(data);
@@ -385,7 +446,7 @@ function renderHeader(data) {
   if (data.team) {
     const teamChip = document.createElement("a");
     teamChip.className = "wp2-chip wp2-chip--team";
-    teamChip.href = `/team.html?team=${data.team_slug || teamNameToSlug(data.team)}`;
+    teamChip.href = teamHref(data.team_slug || teamNameToSlug(data.team));
     const slug = data.team_slug || teamNameToSlug(data.team);
     teamChip.innerHTML =
       `<img class="wp2-chip-crest" src="/assets/team_logos/${slug}.svg" alt="" ` +
@@ -476,7 +537,7 @@ function renderMobileIdentity(data) {
       const abbr = typeof mobileTeamAbbr === "function" ? mobileTeamAbbr(data.team) : data.team;
       const teamLink = document.createElement("a");
       teamLink.className = "wp2m-meta-team";
-      teamLink.href = `/team.html?team=${slug}`;
+      teamLink.href = teamHref(slug);
       teamLink.innerHTML =
         ` · ${abbr} ` +
         `<img class="wp2m-meta-crest" src="/assets/team_logos/${slug}.svg" alt="" ` +
@@ -751,7 +812,7 @@ async function renderSeasonSelector(data) {
     const teamTd = document.createElement("td");
     if (s.team) {
       const teamLink = document.createElement("a");
-      teamLink.href = `/team.html?team=${s.team_slug || teamNameToSlug(s.team)}`;
+      teamLink.href = teamHref(s.team_slug || teamNameToSlug(s.team));
       teamLink.textContent = s.team;
       teamLink.addEventListener("click", ev => ev.stopPropagation());
       teamTd.appendChild(teamLink);
@@ -1504,7 +1565,7 @@ function renderMatchHistory(matches, seasons) {
     oppTd.className = "name-cell";
     if (match.opponent_id) {
       const a = document.createElement("a");
-      a.href = `/wrestler.html?id=${match.opponent_id}&view=season`;
+      a.href = wrestlerHref(match.opponent_url_path, match.opponent_id, { view: "season" });
       a.textContent = safe(match.opponent_name);
       oppTd.appendChild(a);
     } else {
@@ -1517,7 +1578,7 @@ function renderMatchHistory(matches, seasons) {
     const oppTeamName = safe(match.opponent_team);
     if (oppTeamName && oppTeamName !== "—") {
       const teamLink = document.createElement("a");
-      teamLink.href = `/team.html?team=${teamNameToSlug(oppTeamName)}`;
+      teamLink.href = teamHref(teamNameToSlug(oppTeamName));
       teamLink.textContent = oppTeamName;
       oppTeamTd.appendChild(teamLink);
     } else {
@@ -1614,7 +1675,7 @@ function renderMobileMatchList(matches, season, seasons) {
     const fullName = safe(match.opponent_name);
     const rankHtml = match.opponent_rank ? `<span class="wp2m-match-rank">#${match.opponent_rank}</span> ` : "";
 
-    const href = match.opponent_id ? `/wrestler.html?id=${match.opponent_id}&view=season` : null;
+    const href = match.opponent_id ? wrestlerHref(match.opponent_url_path, match.opponent_id, { view: "season" }) : null;
     const tag = href ? "a" : "div";
     const hrefAttr = href ? ` href="${href}"` : "";
 

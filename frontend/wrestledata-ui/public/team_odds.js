@@ -281,7 +281,7 @@ function renderLeaderboard() {
     const teamTd = document.createElement("td");
     teamTd.className = "name";
     const teamLink = document.createElement("a");
-    teamLink.href = `/team.html?team=${toTeamNameToSlug(team.team)}`;
+    teamLink.href = teamHref(toTeamNameToSlug(team.team));
     teamLink.textContent = team.team;
     teamTd.appendChild(teamLink);
     tr.appendChild(teamTd);

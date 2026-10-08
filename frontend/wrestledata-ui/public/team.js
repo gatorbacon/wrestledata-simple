@@ -134,7 +134,7 @@ function renderWrestlerCell(profile, rank) {
   if (profile?.wrestler_id) {
     const a = document.createElement("a");
     a.className = "tp2-wrestler-name";
-    a.href = `/wrestler.html?id=${profile.wrestler_id}&view=season`;
+    a.href = wrestlerHref(profile.url_path, profile.wrestler_id, { view: "season" });
     a.textContent = profile.name || "Unknown";
     textWrap.appendChild(a);
   } else {
@@ -233,12 +233,24 @@ function buildRosterRow(weight, profile, wd, { withPoints }) {
 // ===============================
 
 async function loadTeam(teamId) {
+  // Old team id (army, north_carolina_state, ...): go to today's team page.
+  // The edge function normally 301s these before the page loads.
+  const SEO = window.MatSavantSEO;
+  if (SEO && SEO.TEAM_SLUG_ALIASES[teamId]) {
+    location.replace(SEO.teamPath(teamId));
+    return;
+  }
   try {
     const team = await fetchJSON(`/data/teams/${teamId}.json`);
     const teamName = team.team_name || team.name;
 
     const metricsFile = await fetchJSON(`/data/team_metrics/${SEASON}/team_metrics.json`);
-    const metrics = metricsFile.teams.find(t => t.team_id === teamId);
+    // team_metrics ids don't always match the team file name (franklin_&_marshall
+    // vs franklin_marshall, gardner-webb vs gardnerwebb -- those two pages showed
+    // "Team Not Found" until 2026-10-07), so fall back to ignoring punctuation.
+    const bare = s => String(s).toLowerCase().replace(/[^a-z0-9]/g, "");
+    const metrics = metricsFile.teams.find(t => t.team_id === teamId)
+      || metricsFile.teams.find(t => bare(t.team_id) === bare(teamId));
     if (!metrics) {
       throw new Error(`No ${SEASON} season data for this team.`);
     }
@@ -277,6 +289,7 @@ async function loadTeam(teamId) {
     console.error(err);
     document.getElementById("team-name").textContent = "Team Not Found";
     document.getElementById("team-subline").textContent = err.message;
+    if (SEO) SEO.applyHead({ title: "Team Not Found | MatSavant", noindex: true });
   }
 }
 
@@ -311,6 +324,13 @@ function renderTeamPage({ team, teamName, metrics, xtpData, xtpTeams, starterPro
 function renderHeader(team, rank, xtpData) {
   const teamName = team.team_name || team.name;
   document.getElementById("team-name").textContent = teamName;
+  if (window.MatSavantSEO) {
+    MatSavantSEO.applyHead({
+      title: MatSavantSEO.teamTitle(teamName, SEASON),
+      description: MatSavantSEO.teamDescription(teamName, SEASON),
+      canonical: MatSavantSEO.SITE + MatSavantSEO.teamPath(team.team_id),
+    });
+  }
 
   const logo = document.getElementById("team-logo");
   const slug = team.team_id;

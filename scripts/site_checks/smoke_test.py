@@ -65,6 +65,7 @@ THIRD_PARTY_ERR = re.compile(r"googlesyndication|googletagmanager|google-analyti
 # ---------------------------------------------------------------- local server
 class Quiet(http.server.SimpleHTTPRequestHandler):
     overrides = {}
+    rewrites = []  # [(prefix, target)] from the site's _redirects "200" splat rules
 
     def log_message(self, *a):
         pass
@@ -77,11 +78,27 @@ class Quiet(http.server.SimpleHTTPRequestHandler):
         p = path.split("?", 1)[0].split("#", 1)[0]
         if p in self.overrides:
             return str(self.overrides[p])
+        for prefix, target in self.rewrites:
+            if p.startswith(prefix):
+                return super().translate_path(target)
         return super().translate_path(path)
 
 
+def redirect_rewrites(directory):
+    """Netlify rewrites like "/wrestler/*  /wrestler.html  200" from the site's _redirects,
+    so the local server serves name-based addresses the way Netlify does."""
+    f = Path(directory) / "_redirects"
+    out = []
+    for line in (f.read_text().splitlines() if f.exists() else []):
+        parts = line.split()
+        if len(parts) == 3 and parts[2] == "200" and parts[0].startswith("/") and parts[0].endswith("/*"):
+            out.append((parts[0][:-1], parts[1]))
+    return out
+
+
 def serve(directory, overrides):
-    handler = partial(type("H", (Quiet,), {"overrides": overrides}), directory=str(directory))
+    handler = partial(type("H", (Quiet,), {"overrides": overrides, "rewrites": redirect_rewrites(directory)}),
+                      directory=str(directory))
     srv = socketserver.ThreadingTCPServer(("127.0.0.1", 0), handler)
     srv.daemon_threads = True
     threading.Thread(target=srv.serve_forever, daemon=True).start()

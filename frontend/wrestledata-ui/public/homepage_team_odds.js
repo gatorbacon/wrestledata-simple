@@ -179,7 +179,7 @@ function htoRenderTable() {
     const teamTd = document.createElement("td");
     teamTd.className = "name";
     const teamLink = document.createElement("a");
-    teamLink.href = `/team.html?team=${htoTeamNameToSlug(team.team)}`;
+    teamLink.href = teamHref(htoTeamNameToSlug(team.team));
     teamLink.textContent = team.team;
     teamTd.appendChild(teamLink);
     tr.appendChild(teamTd);

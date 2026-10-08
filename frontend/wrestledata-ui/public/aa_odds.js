@@ -311,7 +311,7 @@ function renderTableView(data) {
     // Name (linked to wrestler profile)
     const nameTd = document.createElement("td");
     const nameLink = document.createElement("a");
-    nameLink.href = `/wrestler.html?id=${entry.wrestler_id}&view=season`;
+    nameLink.href = wrestlerHref(entry.url_path, entry.wrestler_id, { view: "season" });
     nameLink.textContent = entry.name || "Unknown";
     nameLink.className = "wrestler-link";
     nameTd.appendChild(nameLink);
@@ -322,7 +322,7 @@ function renderTableView(data) {
     const teamSlug = teamNameToSlug(entry.team);
     if (teamSlug) {
       const teamLink = document.createElement("a");
-      teamLink.href = `/team.html?team=${teamSlug}`;
+      teamLink.href = teamHref(teamSlug);
       teamLink.textContent = entry.team || "Unknown";
       teamLink.className = "team-link";
       teamTd.appendChild(teamLink);
@@ -392,7 +392,7 @@ function renderStackedView(data) {
     // Name (linked to wrestler profile)
     const nameTd = document.createElement("td");
     const nameLink = document.createElement("a");
-    nameLink.href = `/wrestler.html?id=${entry.wrestler_id}&view=season`;
+    nameLink.href = wrestlerHref(entry.url_path, entry.wrestler_id, { view: "season" });
     nameLink.textContent = entry.name || "Unknown";
     nameLink.className = "wrestler-link";
     nameTd.appendChild(nameLink);
@@ -403,7 +403,7 @@ function renderStackedView(data) {
     const teamSlug = teamNameToSlug(entry.team);
     if (teamSlug) {
       const teamLink = document.createElement("a");
-      teamLink.href = `/team.html?team=${teamSlug}`;
+      teamLink.href = teamHref(teamSlug);
       teamLink.textContent = entry.team || "Unknown";
       teamLink.className = "team-link";
       teamTd.appendChild(teamLink);

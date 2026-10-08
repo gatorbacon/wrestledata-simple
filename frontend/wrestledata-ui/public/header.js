@@ -2,6 +2,32 @@
 // Site-wide Header Component
 // ========================================
 
+// ---------- Links to wrestler and team pages (docs/matsavant_seo_plan.md) ----------
+// Defined here because every page loads header.js first. urlPath is the
+// ready-made name address that scripts/seo/build_url_slugs.py writes into the
+// data ("url_path" / "opponent_url_path": /wrestler/levi-haines, plus
+// ?season=2024 when that id isn't the wrestler's latest season). Without it,
+// the old ?id= form, which the edge function 301s to the same page.
+// params: {view} ("season" / "career").
+function wrestlerHref(urlPath, id, params) {
+  const view = params && params.view;
+  if (urlPath) {
+    if (!view) return urlPath;
+    return urlPath + (urlPath.includes("?") ? "&" : "?") + "view=" + encodeURIComponent(view);
+  }
+  return `/wrestler.html?id=${encodeURIComponent(id)}` + (view ? `&view=${encodeURIComponent(view)}` : "");
+}
+
+// team id (penn_state) -> /team/penn-state. Old ids (army, north_carolina_state)
+// go straight to today's team when seo_text.js is loaded; otherwise the edge
+// function 301s them.
+function teamHref(teamId) {
+  const id = String(teamId || "").toLowerCase();
+  const seo = window.MatSavantSEO;
+  if (seo) return seo.teamPath(id);
+  return `/team/${id.replace(/_/g, "-")}`;
+}
+
 (function() {
   'use strict';
 

@@ -134,7 +134,7 @@ function renderWrestlerCell(w) {
       : `<span class="dpg-headshot dpg-headshot--blank"></span>`;
 
   const nameCell = w.wrestler_id
-    ? `<a href="/wrestler.html?id=${w.wrestler_id}">${w.name}</a>`
+    ? `<a href="${wrestlerHref(w.url_path, w.wrestler_id)}">${w.name}</a>`
     : w.name;
 
   const subParts = [];
@@ -154,7 +154,7 @@ function renderWrestlerCell(w) {
 function renderTeamCell(w) {
   if (!w.team_slug) return w.team;
   return (
-    `<a class="dpg-team-cell" href="/team.html?team=${w.team_slug}">` +
+    `<a class="dpg-team-cell" href="${teamHref(w.team_slug)}">` +
     `<span class="dpg-team-icon-slot">` +
     `<img class="dpg-team-crest" src="/assets/team_logos/${w.team_slug}.svg" alt="" ` +
     `onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='/assets/team_logos/${w.team_slug}.png';}else{this.remove();}">` +
@@ -271,6 +271,7 @@ function renderP4PMobileList(weight, sort) {
     return renderMobileRankRow({
       rank: displayRankFor(w, sort),
       wrestlerId: w.wrestler_id,
+      urlPath: w.url_path,
       name: w.name,
       team: w.team,
       teamSlug: w.team_slug,

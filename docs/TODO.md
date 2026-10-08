@@ -31,6 +31,10 @@ One list for both sites and the side projects, so nothing gets lost between sess
 
 ## MatSavant (matsavant.com)
 
+- [ ] **139 same-name, same-school NCAA career pairs** (`mt/audits/url_slugs/same_name_same_school.csv`): some are different people, some look like one wrestler split over two career files. Review and merge the real splits (the URL slug becomes a redirect automatically). *(found 2026-10-07)*
+
+- [ ] **MatSavant search (SEO) project — Steps 1–5 built and tested locally 2026-10-07; next: push to the `matsavant-dev` preview (needs TJ's OK), check the 4 preview-only items in the plan, then ONE production deploy + Search Console resubmit.** Build plan with TJ's decisions, Search Console baseline and test steps: [`docs/matsavant_seo_plan.md`](matsavant_seo_plan.md). Short version: per-wrestler/team titles + descriptions via edge function, name URLs (`/wrestler/levi-haines`, `/team/penn-state`), one URL per wrestler, fix soft-404 team links, sitemap ~40.4K → ~14.9K URLs, ChatGPT/Perplexity allowed from their published IPs (pages only), per-IP rate limit on `/data/*`. Ship as ONE production deploy before the season (~Nov 1). *(planned 2026-10-07)*
+
 - [ ] **Tablet width scrolls sideways**: at about 820 px wide, every page scrolls sideways because the top menu bar plus search box is wider than the screen. Phones and desktops are fine. *(found 2026-10-01)*
 - [ ] **Compare page labels misaligned**: once Wrestler A is picked, the "Wrestler A" and "Wrestler B" labels sit at different heights. *(found 2026-10-01)*
 - [ ] **Compare ideas not built** (TJ picked only the button restyle): suggested opponents on the Compare page when one wrestler is filled in (rivals, neighbours in the rankings), a head-to-head link on repeat opponents in match history, and a Google Analytics click event on the Compare button to measure use. *(discussed 2026-10-01)*
@@ -45,7 +49,6 @@ One list for both sites and the side projects, so nothing gets lost between sess
 
 ## MatSavant data (NCAA pipeline)
 
-- [ ] **4,535 junk "(1).json" duplicate profiles are committed in `frontend/wrestledata-ui/public/data/wrestlers/2020/`** (e.g. `10430251132 (1).json`; nothing links to them). Any rebuild of 2020 profiles deletes them (the builder clears the folder); they were restored during the 2026-10-03 rematch fix to keep that commit focused. Delete them in their own commit. *(found 2026-10-03)*
 - [ ] **iCloud seems to sync this repo (it lives in ~/Documents)**: during the 2026-10-03 bulk profile rebuild, 40 "(1).json" conflict copies appeared in `2026/by_team/` (moved out, not committed). Probably the source of the 2020 junk above too. Consider moving the repo out of iCloud-synced Documents; after any bulk rebuild, check `git status` for new " (1)" files before committing. *(found 2026-10-03)*
 - [ ] **Hodge Watch 2026 is stale**: rerunning `hodge_candidates.py -season 2026` on the committed profiles gives 91 rows instead of the committed 100 (file from 2026-09-13; eligibility/weight-rank changes). Left as committed during the 2026-10-03 rematch fix; decide whether to regenerate. *(found 2026-10-03)*
 - [ ] **NCAA `elo_ratings.json` has drifted from what the code makes today**: rerunning `calculate_elo_ratings.py -season 2026` (data unchanged) changes `hybrid_rank` for ~2,075 of 2,582 wrestlers and `matrix_rank` for ~2,174 (wins/losses identical). Profiles read `current_rank` from it, so the next NCAA pipeline run would move hundreds of displayed ranks. Find why (rankings_<weight>.json / Flo tags changed since the 2026-09-28 commit?) before rerunning Elo for any season. *(found 2026-10-03; docs/matsavant.md gotcha 19)*
@@ -97,6 +100,7 @@ One list for both sites and the side projects, so nothing gets lost between sess
 
 ## Done
 
+- [x] 2026-10-07 — MatSavant: deleted 4,535 stale duplicate 2020 files (`data/wrestlers/2020/by_id/<id> (1).json` ×2,336, `by_team/… (1).json` ×2,199), committed by accident 2026-09-10 in `8ee6c9a209`; all were older copies of real files. Staged with `git rm`, not pushed yet (goes out with the SEO deploy).
 - [x] 2026-10-07 — **KentuckyMat: missing state placement bouts added from the bracket results** (72 bouts, mostly girls 2024 and boys 2015/2020/2024, e.g. Lyla Smith's 2024 final; nothing duplicated; CLAUDE.md gotcha 19). Also merged Naiya Delos Santos's 2024 career (`career_001235`, "Naiya Marie Debs Santos", John Hardin) into `career_000752`. Live 2026-10-07 (`7aa35af07a`, main at `dfd52a6d35`; live smoke test 88/88).
 - [x] 2026-10-07 — **KentuckyMat 2027 preseason site published** (`4cfd4ca3d7`, live smoke test 88/88): preseason rankings for both genders + girls 2026 Final drop, `siteSeason` phase switch, season-labeled rank pills, team pages with returning wrestlers, "Coming Soon" for team projections / duals / Dual Predictor, recruiting classes 2027–2030, Stat Leaders labels + Career Wins "Active only", `displayName()` name rule, Nance and Woosley to Georgetown College, and the background search index. Everything is in `docs/kentuckymat_preseason_rankings.md`.
 

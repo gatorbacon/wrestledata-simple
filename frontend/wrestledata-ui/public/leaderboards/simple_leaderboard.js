@@ -191,7 +191,7 @@ function renderLeaderboard(data, config) {
     const nameTd = document.createElement("td");
     nameTd.className = "name";
     const a = document.createElement("a");
-    a.href = `/wrestler.html?id=${entry.wrestler_id}&view=season`;
+    a.href = wrestlerHref(entry.url_path, entry.wrestler_id, { view: "season" });
     a.textContent = entry.name;
     nameTd.appendChild(a);
     tr.appendChild(nameTd);
@@ -205,7 +205,7 @@ function renderLeaderboard(data, config) {
     teamSlug = teamSlug.replace(/[^\w_]/g, '');
     teamSlug = teamSlug.replace(/_+/g, '_');
     teamSlug = teamSlug.replace(/^_+|_+$/g, '');
-    teamLink.href = `/team.html?team=${teamSlug}`;
+    teamLink.href = teamHref(teamSlug);
     teamLink.textContent = entry.team;
     teamTd.appendChild(teamLink);
     tr.appendChild(teamTd);

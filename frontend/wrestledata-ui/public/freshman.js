@@ -39,7 +39,7 @@ function frDpgBand(dpg) {
 }
 
 function frProfileHref(row) {
-  return `/wrestler.html?id=${encodeURIComponent(row.wrestler_id)}&view=season`;
+  return wrestlerHref(row.url_path, row.wrestler_id, { view: "season" });
 }
 
 function frRankBadge(rank) {
@@ -80,7 +80,7 @@ function frWrestlerCell(row) {
 function frTeamCell(row) {
   if (!row.team_slug) return frEsc(row.team);
   return (
-    `<a class="dpg-team-cell" href="/team.html?team=${row.team_slug}">` +
+    `<a class="dpg-team-cell" href="${teamHref(row.team_slug)}">` +
     `<span class="dpg-team-icon-slot"><img class="dpg-team-crest" src="/assets/team_logos/${row.team_slug}.svg" alt="" ` +
     `onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='/assets/team_logos/${row.team_slug}.png';}else{this.remove();}"></span>` +
     `<span class="dpg-team-name">${frEsc(row.team)}</span></a>`

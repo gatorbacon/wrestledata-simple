@@ -180,7 +180,7 @@ function renderRowInto(tbody, row) {
   const nameEl = row.wrestler_id
     ? Object.assign(document.createElement("a"), {
         className: "hg-wrestler-name",
-        href: `/wrestler.html?id=${row.wrestler_id}&view=season`,
+        href: wrestlerHref(row.url_path, row.wrestler_id, { view: "season" }),
         textContent: row.name,
       })
     : Object.assign(document.createElement("span"), {
@@ -192,7 +192,7 @@ function renderRowInto(tbody, row) {
   const sub = document.createElement("div");
   sub.className = "hg-wrestler-sub";
   const teamLink = document.createElement("a");
-  teamLink.href = `/team.html?team=${slug}`;
+  teamLink.href = teamHref(slug);
   teamLink.textContent = row.team;
   sub.appendChild(teamLink);
   sub.appendChild(document.createTextNode(` · ${row.weight} lbs · Wt #${row.weight_rank}`));

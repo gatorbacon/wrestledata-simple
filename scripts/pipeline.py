@@ -484,6 +484,15 @@ def build_steps(track, season):
         # NCAA equivalent since matsavant.com content isn't included at all.
         steps.append({"name": "Generate Sitemap", "cmds": [[py, "scripts/generate_sitemap.py"]]})
 
+    # Name-based URLs (/wrestler/levi-haines; docs/matsavant_seo_plan.md). LAST
+    # on purpose: it assigns slugs to new wrestlers (existing ones never change)
+    # and writes url_slug / url_path / opponent_url_path into profiles, url_path
+    # into the rankings / P4P / leaderboard / award / xTP / Mat Value files, and
+    # name addresses into search_index.js -- all of which earlier steps rebuild
+    # without them (incl. the 2nd profile pass).
+    if is_ncaa:
+        steps.append({"name": "Build URL Slugs", "cmds": [[py, "scripts/seo/build_url_slugs.py"]]})
+
     return steps
 
 

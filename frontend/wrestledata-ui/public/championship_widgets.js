@@ -85,7 +85,7 @@ function renderTitleContenders(teams) {
   const cards = top3.map((t, i) => {
     const slug = cwSlug(t.team);
     return (
-      `<a class="contender-card contender-${medals[i]}" href="/team.html?team=${slug}">` +
+      `<a class="contender-card contender-${medals[i]}" href="${teamHref(slug)}">` +
       `<div class="contender-rank">#${i + 1}</div>` +
       cwCrestImg(slug, "contender-crest") +
       `<div class="contender-name">${t.team}</div>` +
@@ -119,7 +119,7 @@ function renderTrophyChances(teams) {
     const slug = cwSlug(t.team);
     const pct = Math.max(0, Math.min(100, t._top4));
     return (
-      `<a class="trophy-col" href="/team.html?team=${slug}">` +
+      `<a class="trophy-col" href="${teamHref(slug)}">` +
       `<div class="trophy-rank">#${i + 1}</div>` +
       cwCrestImg(slug, "trophy-crest") +
       `<div class="trophy-name">${t.team}</div>` +

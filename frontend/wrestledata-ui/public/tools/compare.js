@@ -179,6 +179,8 @@
   }
 
   function idFromItem(item) {
+    // wrestler_id since 2026-10-07 (urls became /wrestler/<name>); older index: parse ?id=
+    if (item.wrestler_id) return String(item.wrestler_id);
     try { return new URL(item.url, location.origin).searchParams.get('id'); } catch (e) { return null; }
   }
 
@@ -421,8 +423,11 @@
     setMetaDescription(`${A.canonical_name} vs ${B.canonical_name}: NCAA wrestling head-to-head matches and common-opponent results on MatSavant.`);
   }
 
+  // The search index knows each wrestler's name address (latest-season id); any
+  // other id gets the old ?id= form, which the edge function 301s.
   function profileHref(wrestlerId) {
-    return '/wrestler.html?id=' + encodeURIComponent(wrestlerId);
+    const hit = (window.SEARCH_INDEX || []).find(r => r.type === 'wrestler' && String(r.wrestler_id) === String(wrestlerId));
+    return wrestlerHref(hit && hit.url, wrestlerId);
   }
 
   // "Team · 165 · #1 · 2026" and "93–1 (.989) career" — shared by the desktop cards and the mobile chips.

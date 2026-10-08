@@ -5,11 +5,20 @@ User-agent: DuckDuckBot
 User-agent: Applebot
 Allow: /
 
-# AI training/answer crawlers and SEO scrapers: no access
+# AI answer engines (ChatGPT search, Perplexity): may read pages so they can cite
+# MatSavant, but not the raw data. block-bots.ts also checks they come from the
+# IP ranges OpenAI / Perplexity publish.
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+Disallow: /data/
+Disallow: /search_index.js
+Allow: /
+
+# AI training crawlers and SEO scrapers: no access
 # (the ones that ignore this are hard-blocked by the block-bots edge function)
 User-agent: GPTBot
-User-agent: ChatGPT-User
-User-agent: OAI-SearchBot
 User-agent: ClaudeBot
 User-agent: Claude-Web
 User-agent: anthropic-ai
@@ -18,7 +27,6 @@ User-agent: Bytespider
 User-agent: Amazonbot
 User-agent: meta-externalagent
 User-agent: FacebookBot
-User-agent: PerplexityBot
 User-agent: Google-Extended
 User-agent: Applebot-Extended
 User-agent: cohere-ai

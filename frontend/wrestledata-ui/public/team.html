@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Team Profile</title>
+  <!--EDGE:HEAD--><title>Team Profile</title><!--/EDGE:HEAD-->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/styles.css?v=20260921" />
 </head>
@@ -75,12 +75,17 @@
 
   </div>
 
-  <script src="/team.js?v=20260919"></script>
+  <script src="/seo_text.js?v=20261007"></script>
+  <script src="/team.js?v=20261007"></script>
   <script src="/tooltips.js"></script>
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      const teamId = new URLSearchParams(window.location.search).get("team");
+      // Name-based address /team/penn-state (served by the _redirects rewrite), or the old ?team=penn_state
+      const pathMatch = window.location.pathname.match(/^\/team\/([^/]+)\/?$/);
+      const teamId = pathMatch
+        ? MatSavantSEO.teamIdFromPath(decodeURIComponent(pathMatch[1]))
+        : new URLSearchParams(window.location.search).get("team");
       if (!teamId) {
         document.getElementById("team-name").textContent = "No team selected";
         return;

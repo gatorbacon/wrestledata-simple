@@ -207,6 +207,7 @@ function renderRankingsMobileList(wrestlers) {
   list.innerHTML = wrestlers.map(w => renderMobileRankRow({
     rank: w.rank,
     wrestlerId: w.wrestler_id,
+    urlPath: w.url_path,
     name: w.name,
     team: w.team,
     teamSlug: w.team ? teamNameToSlug(w.team) : null,
@@ -252,7 +253,7 @@ function renderRankings(data) {
     nameTd.className = "name";
     if (wrestler.wrestler_id) {
       const nameLink = document.createElement("a");
-      nameLink.href = `/wrestler.html?id=${wrestler.wrestler_id}`;
+      nameLink.href = wrestlerHref(wrestler.url_path, wrestler.wrestler_id);
       nameLink.textContent = safe(wrestler.name);
       nameTd.appendChild(nameLink);
     } else {
@@ -266,7 +267,7 @@ function renderRankings(data) {
     if (wrestler.team) {
       const teamLink = document.createElement("a");
       const teamSlug = teamNameToSlug(wrestler.team);
-      teamLink.href = `/team.html?team=${teamSlug}`;
+      teamLink.href = teamHref(teamSlug);
       teamLink.textContent = wrestler.team;
       teamTd.appendChild(teamLink);
     } else {

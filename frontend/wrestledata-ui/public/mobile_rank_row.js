@@ -109,7 +109,7 @@ function renderMobileRankRow(row) {
     : `<span class="dpg-mobile-dpg ${band.cls}">${row.dpg.toFixed(1)}</span>` +
       (band.elite ? `<span class="dpg-mobile-elite-pill">ELITE</span>` : "");
 
-  const href = row.wrestlerId ? `/wrestler.html?id=${row.wrestlerId}` : "#";
+  const href = row.wrestlerId ? wrestlerHref(row.urlPath, row.wrestlerId) : "#";
   const gapCls = row.gapCls || "";
 
   return (

@@ -268,7 +268,7 @@ function renderLeaderboard() {
     teamWrap.appendChild(createTeamMark(team.team, slug));
     const teamLink = document.createElement("a");
     teamLink.className = "tr-team-name";
-    teamLink.href = `/team.html?team=${slug}`;
+    teamLink.href = teamHref(slug);
     teamLink.textContent = team.team;
     teamWrap.appendChild(teamLink);
     teamTd.appendChild(teamWrap);

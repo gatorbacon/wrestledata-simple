@@ -75,7 +75,7 @@ function renderDualTickerTeam(team, ranks, abbrevs, extraClass) {
     `if(!this.dataset.fallback){this.dataset.fallback=1;this.src='/assets/team_logos/${team.slug}.png';}` +
     `else{this.remove();}`;
   return (
-    `<a class="dual-ticker-team${extraClass ? " " + extraClass : ""}" href="/team.html?team=${team.slug}">` +
+    `<a class="dual-ticker-team${extraClass ? " " + extraClass : ""}" href="${teamHref(team.slug)}">` +
     `<img class="dual-ticker-crest" src="/assets/team_logos/${team.slug}.svg" alt="" ` +
     `onerror="${fallback}">` +
     (rank ? `<span class="dual-ticker-rank">#${rank}</span>` : "") +

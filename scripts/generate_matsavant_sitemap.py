@@ -6,10 +6,16 @@ Includes:
   - Static pages (homepage, rankings, wrestlers/teams landing, events,
     notes, lab, tools, leaderboards, reports, about, etc.)
   - Individual notes (from data/notes/notes.json)
-  - Wrestler profile pages, every season 2012-2026 (each season's
-    wrestler_id is its own crawlable entry point into that person's career
-    page -- see season_summary in the wrestler JSON)
-  - Team profile pages (current roster snapshot, one per team)
+  - Wrestler pages: ONE name address per wrestler (/wrestler/levi-haines), from
+    public/seo/wrestlers/*.json (scripts/seo/build_url_slugs.py; aliases left out).
+    Until 2026-10-07 this listed every season's wrestler.html?id= (40,429 URLs for
+    ~14,800 wrestlers, which Google flagged as duplicates) -- see
+    docs/matsavant_seo_plan.md.
+  - Team pages: /team/<name> for the teams in public/seo/teams.json (pages that
+    actually have data; the edge function 404s the rest).
+  - lastmod = when the content really changed: the latest profile's
+    profile_generated_at, the team file's generated_at_utc, a static page's last
+    git commit (today if it has uncommitted changes).
 
 Excludes the two /leaderboards/tpar.html and /leaderboards/mat_value.html
 files -- both are pure <meta refresh> redirects to dpg.html, not real pages.
@@ -19,6 +25,7 @@ Usage:
 """
 
 import json
+import subprocess
 from datetime import date, datetime
 from pathlib import Path
 from xml.etree.ElementTree import Element, SubElement, ElementTree, indent
@@ -71,6 +78,16 @@ STATIC_PAGES = [
 ]
 
 
+def page_lastmod(rel_path):
+    """Last git commit date of a static page; today if it has uncommitted changes."""
+    f = PUBLIC_DIR / (rel_path or "index.html")
+    if subprocess.run(["git", "diff", "--quiet", "HEAD", "--", str(f)], cwd=REPO_ROOT).returncode != 0:
+        return TODAY
+    out = subprocess.run(["git", "log", "-1", "--format=%cs", "--", str(f)],
+                         capture_output=True, text=True, cwd=REPO_ROOT).stdout.strip()
+    return out or TODAY
+
+
 def add_url(urlset, loc, lastmod, priority, changefreq):
     url = SubElement(urlset, "url")
     SubElement(url, "loc").text = loc
@@ -89,38 +106,30 @@ def notes_entries():
 
 def wrestler_entries():
     entries = []
-    wrestlers_dir = PUBLIC_DIR / "data/wrestlers"
-    for season_dir in sorted(wrestlers_dir.iterdir()):
-        if not season_dir.is_dir() or not season_dir.name.isdigit():
+    for f in sorted((PUBLIC_DIR / "seo/wrestlers").glob("*.json")):
+        info = json.loads(f.read_text())
+        if info.get("alias_of"):
             continue
-        season = int(season_dir.name)
-        by_id_dir = season_dir / "by_id"
-        if not by_id_dir.exists():
-            continue
-        priority = "0.5" if season == CURRENT_SEASON else "0.3"
-        for f in by_id_dir.glob("*.json"):
-            wrestler_id = f.stem
-            try:
-                data = json.loads(f.read_text())
-                lastmod = data.get("profile_generated_at", TODAY)
-            except (json.JSONDecodeError, OSError):
-                lastmod = TODAY
-            entries.append((f"wrestler.html?id={wrestler_id}", lastmod, priority, "yearly"))
+        profile = PUBLIC_DIR / f"data/wrestlers/{info['latest_season']}/by_id/{info['latest_id']}.json"
+        try:
+            lastmod = json.loads(profile.read_text()).get("profile_generated_at") or TODAY
+        except (json.JSONDecodeError, OSError):
+            lastmod = TODAY
+        priority = "0.6" if info["latest_season"] >= CURRENT_SEASON else "0.4"
+        entries.append((f"wrestler/{info['slug']}", lastmod[:10], priority, "weekly" if priority == "0.6" else "yearly"))
     return entries
 
 
 def team_entries():
     entries = []
-    teams_dir = PUBLIC_DIR / "data/teams"
-    for f in teams_dir.glob("*.json"):
-        if f.stem == "abbreviations":
-            continue
+    teams = json.loads((PUBLIC_DIR / "seo/teams.json").read_text())
+    for team_id in sorted(teams):
         try:
-            data = json.loads(f.read_text())
-            lastmod = data.get("generated_at_utc", TODAY)[:10]
+            data = json.loads((PUBLIC_DIR / f"data/teams/{team_id}.json").read_text())
+            lastmod = (data.get("generated_at_utc") or TODAY)[:10]
         except (json.JSONDecodeError, OSError):
             lastmod = TODAY
-        entries.append((f"team.html?team={f.stem}", lastmod, "0.5", "weekly"))
+        entries.append((f"team/{team_id.replace('_', '-')}", lastmod, "0.6", "weekly"))
     return entries
 
 
@@ -128,7 +137,7 @@ def main():
     urlset = Element("urlset", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
 
     for path, priority, changefreq in STATIC_PAGES:
-        add_url(urlset, f"{BASE_URL}/{path}", TODAY, priority, changefreq)
+        add_url(urlset, f"{BASE_URL}/{path}", page_lastmod(path), priority, changefreq)
 
     for path, lastmod, priority, changefreq in notes_entries():
         add_url(urlset, f"{BASE_URL}/{path}", lastmod, priority, changefreq)

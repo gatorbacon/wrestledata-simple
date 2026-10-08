@@ -126,7 +126,7 @@ function tileHtml(slug, team) {
   const color = TEAM_COLORS[slug];
   const style = color ? ` style="--team-accent:${color}"` : "";
   return `
-    <a class="team-tile" href="/team.html?team=${encodeURIComponent(slug)}"${style}>
+    <a class="team-tile" href="${teamHref(slug)}"${style}>
       <img class="team-tile-logo" src="/assets/team_logos/${slug}.svg" alt=""
            onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='/assets/team_logos/${slug}.png';}else{this.style.display='none';}" />
       <div class="team-tile-body">

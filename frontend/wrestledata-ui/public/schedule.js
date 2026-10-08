@@ -91,7 +91,7 @@ function renderScheduleTeam(team, ranks, colors, side) {
     `if(!this.dataset.fallback){this.dataset.fallback=1;this.src='/assets/team_logos/${team.slug}.png';}` +
     `else{this.remove();}`;
   return (
-    `<a class="dual-ticker-team schedule-team schedule-team--${side}" data-stroke="${colorInfo.stroke ? "1" : "0"}" style="${style}" href="/team.html?team=${team.slug}">` +
+    `<a class="dual-ticker-team schedule-team schedule-team--${side}" data-stroke="${colorInfo.stroke ? "1" : "0"}" style="${style}" href="${teamHref(team.slug)}">` +
     `<img class="dual-ticker-crest" src="/assets/team_logos/${team.slug}.svg" alt="" onerror="${fallback}">` +
     (rank ? `<span class="dual-ticker-rank">#${rank}</span>` : "") +
     `<span class="dual-ticker-name-full">${team.name}</span>` +
@@ -116,7 +116,7 @@ function renderScheduleTextTeam(team, ranks, side) {
   const rank = ranks[team.slug];
   const isSel = scheduleState.team === team.slug;
   return (
-    `<a class="schedule-text-team schedule-text-team--${side}${isSel ? " is-selected" : ""}" href="/team.html?team=${team.slug}">` +
+    `<a class="schedule-text-team schedule-text-team--${side}${isSel ? " is-selected" : ""}" href="${teamHref(team.slug)}">` +
     (rank ? `<span class="schedule-text-rank">#${rank}</span>` : "") +
     `${escapeScheduleHtml(team.name)}</a>`
   );
@@ -233,8 +233,9 @@ function initScheduleSearch() {
 
   const tokensBySlug = {};
   (window.SEARCH_INDEX || []).forEach(r => {
-    if (r.type !== "team" || !r.url) return;
-    const m = r.url.match(/[?&]team=([^&]+)/);
+    if (r.type !== "team") return;
+    // team_id since 2026-10-07 (urls became /team/<name>); older index: parse ?team=
+    const m = r.team_id ? [null, r.team_id] : (r.url || "").match(/[?&]team=([^&]+)/);
     if (m) tokensBySlug[decodeURIComponent(m[1])] = r.searchTokens || "";
   });
   const items = Object.entries(SCHEDULE_DATA.teams)

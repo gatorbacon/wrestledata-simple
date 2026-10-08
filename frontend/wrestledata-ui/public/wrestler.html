@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Wrestler Profile</title>
+  <!--EDGE:HEAD--><title>Wrestler Profile</title><!--/EDGE:HEAD-->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/styles.css?v=20260921" />
 </head>
@@ -147,12 +147,21 @@
   </div>
 
   <script src="/mobile_rank_row.js?v=20260907"></script>
-  <script src="/app.js?v=20260922"></script>
+  <script src="/seo_text.js?v=20261007"></script>
+  <script src="/app.js?v=20261007"></script>
   <script src="/tooltips.js"></script>
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const params = new URLSearchParams(window.location.search);
+
+      // Name-based address: /wrestler/levi-haines (served by the _redirects rewrite)
+      const slugMatch = window.location.pathname.match(/^\/wrestler\/([^/]+)\/?$/);
+      if (slugMatch) {
+        loadWrestlerFromSlug(decodeURIComponent(slugMatch[1]).toLowerCase(), params);
+        return;
+      }
+
       const wrestlerId = params.get("id");
 
       if (!wrestlerId) {

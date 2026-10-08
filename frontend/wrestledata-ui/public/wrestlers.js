@@ -113,14 +113,19 @@
     const img = w.photo_url
       ? `<img class="team-tile-logo" src="${w.photo_url}" alt="" onerror="this.style.display='none';" />`
       : "";
+    // Incoming wrestlers with no profile yet (wrestler_id null in the P4P file,
+    // e.g. freshmen) get a plain tile instead of a dead ?id=null link.
+    const open = w.wrestler_id
+      ? `<a class="team-tile" href="${wrestlerHref(w.url_path, w.wrestler_id)}"${style}>`
+      : `<div class="team-tile"${style}>`;
     return `
-      <a class="team-tile" href="/wrestler.html?id=${w.wrestler_id}"${style}>
+      ${open}
         ${img}
         <div class="team-tile-body">
           <div class="team-tile-name">${escapeHtml(w.name)}</div>
           <div class="team-tile-stat">${escapeHtml(w.team || "")}</div>
         </div>
-      </a>`;
+      ${w.wrestler_id ? "</a>" : "</div>"}`;
   }
 
   function renderSpotlight() {

@@ -6,3 +6,9 @@ http://matsavant.netlify.app/*  https://www.matsavant.com/:splat 301!
 # The edge function source sits inside the publish dir (Netlify requires it under the base
 # directory); don't serve it as a static file.
 /netlify/*  /not-found  404!
+
+# Name-based addresses (docs/matsavant_seo_plan.md): /wrestler/levi-haines and
+# /team/penn-state serve the normal page; its JS reads the name from the address.
+# (scripts/site_checks/smoke_test.py's local server applies these same rewrites.)
+/wrestler/*  /wrestler.html  200
+/team/*      /team.html      200

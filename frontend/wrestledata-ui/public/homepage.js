@@ -122,7 +122,7 @@ function renderXTPTeams(data) {
     row.className = 'analytics-row xtp-team-row';
     row.innerHTML =
       `<div class="row-rank ${rankCls(t.rank)}">${t.rank}</div>` +
-      `<div class="row-name"><a href="/team.html?team=${teamNameToSlug(t.team)}">${t.team}</a></div>` +
+      `<div class="row-name"><a href="${teamHref(teamNameToSlug(t.team))}">${t.team}</a></div>` +
       `<div class="row-value">${t.score.toFixed(1)}</div>`;
     container.appendChild(row);
   });
@@ -145,7 +145,7 @@ function renderDpgList(data) {
     const valClass = entry.mv_avg >= 0 ? 'dpg-value-pos' : 'dpg-value-neg';
     row.innerHTML =
       `<div class="row-rank">${i + 1}</div>` +
-      `<div class="row-name"><a href="/wrestler.html?id=${entry.wrestler_id}">${entry.name}</a></div>` +
+      `<div class="row-name"><a href="${wrestlerHref(entry.url_path, entry.wrestler_id)}">${entry.name}</a></div>` +
       `<div class="row-team">${entry.team || '—'}</div>` +
       `<div class="row-value ${valClass}">${sign}${entry.mv_avg.toFixed(2)}</div>`;
     container.appendChild(row);
@@ -177,7 +177,7 @@ function renderRankingsPanel(data, weight) {
       : `<div class="row-value row-record">${entry.record || '—'}</div>`;
     row.innerHTML =
       `<div class="row-rank">${displayRank}</div>` +
-      `<div class="row-name"><a href="/wrestler.html?id=${entry.wrestler_id}">${entry.name}</a></div>` +
+      `<div class="row-name"><a href="${wrestlerHref(entry.url_path, entry.wrestler_id)}">${entry.name}</a></div>` +
       `<div class="row-team">${entry.team || '—'}</div>` +
       rightCol;
     container.appendChild(row);
@@ -209,7 +209,7 @@ function renderStatLeaders(data, stat) {
     const tr = document.createElement('tr');
     tr.innerHTML =
       `<td>${i + 1}</td>` +
-      `<td class="name"><a href="/wrestler.html?id=${entry.wrestler_id}">${entry.name}</a></td>` +
+      `<td class="name"><a href="${wrestlerHref(entry.url_path, entry.wrestler_id)}">${entry.name}</a></td>` +
       `<td>${entry.team || '—'}</td>` +
       `<td class="num">${entry.count || '—'}</td>`;
     tbody.appendChild(tr);

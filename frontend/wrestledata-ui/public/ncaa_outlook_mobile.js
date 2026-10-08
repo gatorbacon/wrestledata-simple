@@ -122,7 +122,7 @@ function outlookRowHTML(row, tab, maxXTP) {
     `onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='/assets/team_logos/${row.slug}.png';}else{this.style.visibility='hidden';}">`;
 
   return (
-    `<a class="outlook-row" href="/team.html?team=${row.slug}">` +
+    `<a class="outlook-row" href="${teamHref(row.slug)}">` +
     crest +
     `<span class="outlook-main">` +
     `<span class="outlook-name-hero">` +
